@@ -285,7 +285,7 @@ const classData = {
       spec: '파괴',
       color: classColors.warlock,
       icon: '🔥',
-      ready: false,
+      ready: true,
       path: '/guide/warlock/destruction'
     },
     {
