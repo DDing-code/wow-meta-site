@@ -50,8 +50,26 @@ const TitleWrapper = styled.div`
   padding: 2rem;
 `;
 
-const MainTitle = styled(motion.h1)`
-  font-size: clamp(4rem, 12vw, 8rem);
+const LogoContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+const ShieldLogo = styled.div`
+  width: clamp(120px, 20vw, 200px);
+  height: clamp(140px, 24vw, 240px);
+
+  svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 30px rgba(243, 139, 168, 0.4));
+  }
+`;
+
+const MainTitle = styled.h1`
+  font-size: clamp(3rem, 10vw, 6rem);
   font-weight: 900;
   background: ${props => props.theme.gradients.accent};
   -webkit-background-clip: text;
@@ -60,17 +78,16 @@ const MainTitle = styled(motion.h1)`
   font-family: ${props => props.theme.fonts.heading};
   letter-spacing: -0.03em;
   margin: 0;
-  text-shadow: 0 0 60px rgba(243, 139, 168, 0.3);
   position: relative;
 
   &::after {
     content: '';
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
+    width: 80px;
+    height: 3px;
     background: ${props => props.theme.gradients.accent};
     border-radius: 2px;
     box-shadow: 0 0 20px rgba(243, 139, 168, 0.5);
@@ -211,13 +228,34 @@ function HomePage() {
     <Container>
       <HeroSection>
         <TitleWrapper>
-          <MainTitle
+          <LogoContainer
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            WoW Meta
-          </MainTitle>
+            <ShieldLogo>
+              <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="mainShieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#F38BA8" />
+                    <stop offset="50%" stopColor="#CBA6F7" />
+                    <stop offset="100%" stopColor="#A78BFA" />
+                  </linearGradient>
+                </defs>
+                <path d="M50 5 L90 20 L90 55 Q90 85 50 115 Q10 85 10 55 L10 20 Z"
+                      stroke="url(#mainShieldGradient)"
+                      strokeWidth="5"
+                      fill="none"/>
+                <text x="50" y="75"
+                      fontFamily="Arial, sans-serif"
+                      fontSize="48"
+                      fontWeight="bold"
+                      textAnchor="middle"
+                      fill="url(#mainShieldGradient)">W</text>
+              </svg>
+            </ShieldLogo>
+            <MainTitle>WoW Meta</MainTitle>
+          </LogoContainer>
         </TitleWrapper>
       </HeroSection>
 

@@ -30,37 +30,38 @@ const NavContainer = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 900;
-  font-family: ${props => props.theme.fonts.heading};
-  background: ${props => props.theme.gradients.accent};
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   display: flex;
   align-items: center;
-  gap: ${props => props.theme.spacing.sm};
+  gap: 0.75rem;
   transition: ${props => props.theme.transitions.spring};
   position: relative;
 
   &:hover {
     transform: scale(1.05);
   }
+`;
 
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: ${props => props.theme.gradients.accent};
-    transition: ${props => props.theme.transitions.default};
-  }
+const LogoIcon = styled.div`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &:hover:after {
+  svg {
     width: 100%;
+    height: 100%;
   }
+`;
+
+const LogoText = styled.span`
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 900;
+  font-family: ${props => props.theme.fonts.heading};
+  background: ${props => props.theme.gradients.accent};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 `;
 
 const NavLinks = styled.div`
@@ -179,7 +180,28 @@ function Navigation() {
     <Nav>
       <NavContainer>
         <Logo to="/">
-          WoW Meta
+          <LogoIcon>
+            <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#F38BA8" />
+                  <stop offset="50%" stopColor="#CBA6F7" />
+                  <stop offset="100%" stopColor="#A78BFA" />
+                </linearGradient>
+              </defs>
+              <path d="M50 5 L90 20 L90 55 Q90 85 50 115 Q10 85 10 55 L10 20 Z"
+                    stroke="url(#shieldGradient)"
+                    strokeWidth="6"
+                    fill="none"/>
+              <text x="50" y="75"
+                    fontFamily="Arial, sans-serif"
+                    fontSize="48"
+                    fontWeight="bold"
+                    textAnchor="middle"
+                    fill="url(#shieldGradient)">W</text>
+            </svg>
+          </LogoIcon>
+          <LogoText>WoW Meta</LogoText>
           <PatchBadge>11.2</PatchBadge>
         </Logo>
 
