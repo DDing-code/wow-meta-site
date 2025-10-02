@@ -1583,7 +1583,7 @@ const FuryWarriorGuide = () => {
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li><strong style={{ color: '#ff6b6b' }}>사용 조건:</strong> 대상 생명력 20% 이하 (학살자 특성으로 35%까지 확장)</li>
                     <li><strong style={{ color: '#ffa500' }}>분노 소모:</strong> 20-40 분노 (많을수록 강력)</li>
-                    <li><strong style={{ color: '#C69B6D' }}>티어 2세트:</strong> 무모한 희생 중 격노 지속시간 연장</li>
+                    <li><strong style={{ color: '#C69B6D' }}>티어 2세트:</strong> {renderTextWithSkillIcons('무모한 희생 중 격노 지속시간 연장')}</li>
                     <li><strong style={{ color: '#FFD700' }}>연계:</strong> 분노 최대 → <SkillIcon skill={skillData.execute} textOnly={true} /> 연타로 폭발적 피해</li>
                   </ul>
                   <p style={{ color: '#e0e0e0', fontSize: '0.95rem' }}>
@@ -1613,7 +1613,7 @@ const FuryWarriorGuide = () => {
                     </li>
                   </ul>
                   <p style={{ color: '#ffa500', fontSize: '0.95rem', fontWeight: 'bold' }}>
-                    💡 프로 팁: 티어 4세트로 격노 중 광란 피해가 추가로 8% 증가하므로 격노 유지가 매우 중요합니다.
+                    💡 프로 팁: {renderTextWithSkillIcons('티어 4세트로 격노 중 광란 피해가 추가로 8% 증가하므로 격노 유지가 매우 중요합니다.')}
                   </p>
                 </div>
 
@@ -1659,7 +1659,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#4ECDC4' }}>티어 2세트:</strong> 천둥 공격 시 분노 추가 생성
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>티어 4세트:</strong> 우레 작렬 피해 증가
+                      <strong style={{ color: '#ffa500' }}>티어 4세트:</strong> {renderTextWithSkillIcons('우레 작렬 피해 증가')}
                     </li>
                     <li>
                       <strong style={{ color: '#FFD700' }}>광역 효과:</strong> 8미터 내 모든 적에게 폭풍충격 피해
@@ -1669,7 +1669,7 @@ const FuryWarriorGuide = () => {
                     </li>
                   </ul>
                   <p style={{ color: '#ffa500', fontSize: '0.95rem', fontWeight: 'bold' }}>
-                    💡 프로 팁: 우레 작렬은 재사용 대기시간마다 즉시 사용하여 분노 수급과 광역 딜을 극대화하세요.
+                    💡 프로 팁: {renderTextWithSkillIcons('우레 작렬은 재사용 대기시간마다 즉시 사용하여 분노 수급과 광역 딜을 극대화하세요.')}
                   </p>
                 </div>
 
@@ -1745,7 +1745,7 @@ const FuryWarriorGuide = () => {
               <p style={{ fontSize: '0.9rem', color: '#ccc', marginBottom: '10px' }}>
                 {selectedTier === 'slayer' ?
                   '⏱️ 전투 직전: 분노 생성 후 쿨다운과 함께 폭발적인 딜 준비' :
-                  '⏱️ 전투 직전: 우레 작렬을 위한 분노 확보'}
+                  renderTextWithSkillIcons('⏱️ 전투 직전: 우레 작렬을 위한 분노 확보')}
               </p>
               <div className={styles.skillSequence}>
                 {currentContent.singleTarget.opener.map((skill, index, arr) => (
@@ -1757,7 +1757,7 @@ const FuryWarriorGuide = () => {
               </div>
               {selectedTier === 'slayer' && (
                 <p style={{ fontSize: '0.85rem', color: '#C69B6D', marginTop: '10px' }}>
-                  💡 팁: 무모한 희생과 투신은 항상 함께 사용하여 버스트 극대화
+                  💡 팁: {renderTextWithSkillIcons('무모한 희생과 투신은 항상 함께 사용하여 버스트 극대화')}
                 </p>
               )}
             </div>
@@ -2717,14 +2717,14 @@ const FuryWarriorGuide = () => {
                 </h5>
                 <ul style={{ lineHeight: '1.7', fontSize: '0.9rem', marginBottom: '10px' }}>
                   <li>
-                    <strong style={{ color: '#ffa500' }}>0% 가속:</strong> <span style={{ color: '#ccc' }}>GCD 1.5초 / 피의 갈증 4.5초 쿨</span>
+                    <strong style={{ color: '#ffa500' }}>0% 가속:</strong> <span style={{ color: '#ccc' }}>{renderTextWithSkillIcons('GCD 1.5초 / 피의 갈증 4.5초 쿨')}</span>
                   </li>
                   <li>
-                    <strong style={{ color: '#28a745' }}>20% 가속:</strong> <span style={{ color: '#ccc' }}>GCD 1.25초 / 피의 갈증 3.75초 쿨 (권장 최소치)</span>
+                    <strong style={{ color: '#28a745' }}>20% 가속:</strong> <span style={{ color: '#ccc' }}>{renderTextWithSkillIcons('GCD 1.25초 / 피의 갈증 3.75초 쿨 (권장 최소치)')}</span>
                   </li>
                   {selectedTier === 'mountainThane' && (
                     <li>
-                      <strong style={{ color: '#4ECDC4' }}>30% 가속:</strong> <span style={{ color: '#ccc' }}>우레 작렬 4.6초 쿨 → 격노 버프(12초) 중 2-3회 사용</span>
+                      <strong style={{ color: '#4ECDC4' }}>30% 가속:</strong> <span style={{ color: '#ccc' }}>{renderTextWithSkillIcons('우레 작렬 4.6초 쿨 → 격노 버프(12초) 중 2-3회 사용')}</span>
                     </li>
                   )}
                   <li>
@@ -2732,7 +2732,7 @@ const FuryWarriorGuide = () => {
                   </li>
                 </ul>
                 <p style={{ fontSize: '0.85rem', color: '#888', fontStyle: 'italic' }}>
-                  💡 {selectedTier === 'slayer' ? '학살자는 20-25% 가속 확보 후 치명타 집중' : '산왕은 25-30% 가속으로 우레 작렬 빈도 극대화'}
+                  💡 {selectedTier === 'slayer' ? '학살자는 20-25% 가속 확보 후 치명타 집중' : renderTextWithSkillIcons('산왕은 25-30% 가속으로 우레 작렬 빈도 극대화')}
                 </p>
               </div>
 
@@ -2753,7 +2753,7 @@ const FuryWarriorGuide = () => {
                   <p style={{ color: '#ccc', marginBottom: '15px' }}>
                     • 목표: 90%+ 유지 (DPS 18-20% 증가)<br/>
                     • 실제 계산: 600초 전투 → 540초 이상 격노 유지 필요<br/>
-                    • 광란 평균 8초마다 1회 → 75회 사용 → 900초 버프 (150% 달성)
+                    • {renderTextWithSkillIcons('광란 평균 8초마다 1회 → 75회 사용 → 900초 버프 (150% 달성)')}
                   </p>
 
                   {selectedTier === 'slayer' ? (
@@ -2762,7 +2762,7 @@ const FuryWarriorGuide = () => {
                         <strong style={{ color: '#9482C9' }}>학살의 일격 DPS 기여도</strong>
                       </p>
                       <p style={{ color: '#ccc', marginBottom: '10px' }}>
-                        • 5중첩 광란 피해: 기본 광란 대비 +20%<br/>
+                        • {renderTextWithSkillIcons('5중첩 광란 피해: 기본 광란 대비 +20%')}<br/>
                         • 전투 중 평균 5중첩 횟수: 30-40회 (600초 기준)<br/>
                         • 예상 DPS 증가: 전체 딜의 3-5%
                       </p>
@@ -2770,11 +2770,11 @@ const FuryWarriorGuide = () => {
                   ) : (
                     <>
                       <p style={{ marginBottom: '10px' }}>
-                        <strong style={{ color: '#32CD32' }}>우레 작렬 DPS 기여도 (산왕)</strong>
+                        <strong style={{ color: '#32CD32' }}>{renderTextWithSkillIcons('우레 작렬 DPS 기여도 (산왕)')}</strong>
                       </p>
                       <p style={{ color: '#ccc', marginBottom: '10px' }}>
                         • 6초 쿨: 600초 전투 → 100회 사용<br/>
-                        • 티어 2세트(천둥의 포효): +10회 추가 (쿨감 6초)<br/>
+                        • {renderTextWithSkillIcons('티어 2세트(천둥의 포효): +10회 추가 (쿨감 6초)')}<br/>
                         • 티어 4세트(5명 타격): 공격력 +10% 지속<br/>
                         • 예상 DPS 증가: 전체 딜의 15-18%
                       </p>
@@ -2785,9 +2785,9 @@ const FuryWarriorGuide = () => {
                     <strong style={{ color: '#28a745' }}>분노 생성 효율</strong>
                   </p>
                   <p style={{ color: '#ccc' }}>
-                    • 피의 갈증(4.5초): 8 분노/회 → 106 분노/분<br/>
-                    • 분노의 강타: 12 분노/회 → GCD마다 가능<br/>
-                    • 돌진: 20 분노 (재사용 20초) → 60 분노/분<br/>
+                    • {renderTextWithSkillIcons('피의 갈증(4.5초): 8 분노/회 → 106 분노/분')}<br/>
+                    • {renderTextWithSkillIcons('분노의 강타: 12 분노/회 → GCD마다 가능')}<br/>
+                    • {renderTextWithSkillIcons('돌진: 20 분노 (재사용 20초) → 60 분노/분')}<br/>
                     • <strong style={{ color: '#ffa500' }}>평균 분노 생성: 180-220 분노/분</strong>
                   </p>
                 </div>
@@ -2819,33 +2819,33 @@ const FuryWarriorGuide = () => {
                 </h5>
                 <ul style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#ccc' }}>
                   <li>
-                    <strong style={{ color: '#ff6b6b' }}>격노 버프 끊김:</strong> 광란 사용을 미루다가 격노 버프 만료 → DPS 20% 손실
+                    <strong style={{ color: '#ff6b6b' }}>격노 버프 끊김:</strong> {renderTextWithSkillIcons('광란 사용을 미루다가 격노 버프 만료 → DPS 20% 손실')}
                   </li>
                   <li>
-                    <strong style={{ color: '#ff6b6b' }}>분노 120 초과:</strong> 분노 낭비 발생 → 광란 즉시 사용 필요
+                    <strong style={{ color: '#ff6b6b' }}>분노 120 초과:</strong> {renderTextWithSkillIcons('분노 낭비 발생 → 광란 즉시 사용 필요')}
                   </li>
                   {selectedTier === 'slayer' && (
                     <>
                       <li>
-                        <strong style={{ color: '#ff6b6b' }}>처형 표식 2중첩 무시:</strong> 2중첩 시 마무리 일격 20% 피해 증가 효과 낭비
+                        <strong style={{ color: '#ff6b6b' }}>처형 표식 2중첩 무시:</strong> {renderTextWithSkillIcons('2중첩 시 마무리 일격 20% 피해 증가 효과 낭비')}
                       </li>
                       <li>
-                        <strong style={{ color: '#ff6b6b' }}>학살의 일격 6중첩:</strong> 5중첩 초과분은 손실 → 즉시 광란 사용
+                        <strong style={{ color: '#ff6b6b' }}>학살의 일격 6중첩:</strong> {renderTextWithSkillIcons('5중첩 초과분은 손실 → 즉시 광란 사용')}
                       </li>
                     </>
                   )}
                   {selectedTier === 'mountainThane' && (
                     <>
                       <li>
-                        <strong style={{ color: '#ff6b6b' }}>우레 작렬 쿨 낭비:</strong> 6초마다 즉시 사용 필수 → 1회 누락 시 DPS 1-2% 손실
+                        <strong style={{ color: '#ff6b6b' }}>우레 작렬 쿨 낭비:</strong> {renderTextWithSkillIcons('6초마다 즉시 사용 필수 → 1회 누락 시 DPS 1-2% 손실')}
                       </li>
                       <li>
-                        <strong style={{ color: '#ff6b6b' }}>분노 30 미만 상태:</strong> 우레 작렬 쿨 시 분노 부족 → 타이밍 손실
+                        <strong style={{ color: '#ff6b6b' }}>분노 30 미만 상태:</strong> {renderTextWithSkillIcons('우레 작렬 쿨 시 분노 부족 → 타이밍 손실')}
                       </li>
                     </>
                   )}
                   <li>
-                    <strong style={{ color: '#ff6b6b' }}>광역 소용돌이 버프 끊김:</strong> 버프 없이 단일 스킬 사용 → 광역 피해 손실
+                    <strong style={{ color: '#ff6b6b' }}>광역 소용돌이 버프 끊김:</strong> {renderTextWithSkillIcons('버프 없이 단일 스킬 사용 → 광역 피해 손실')}
                   </li>
                 </ul>
               </div>
@@ -2865,25 +2865,25 @@ const FuryWarriorGuide = () => {
                     <strong style={{ color: '#28a745' }}>Spell Queue Window 활용:</strong> GCD 종료 0.25초 전 다음 스킬 입력 → 즉시 발동
                   </li>
                   <li>
-                    <strong style={{ color: '#28a745' }}>Pandemic 메커니즘:</strong> 천둥의 포효 DoT 2-3초 남았을 때 재시전 → 지속시간 추가
+                    <strong style={{ color: '#28a745' }}>Pandemic 메커니즘:</strong> {renderTextWithSkillIcons('천둥의 포효 DoT 2-3초 남았을 때 재시전 → 지속시간 추가')}
                   </li>
                   {selectedTier === 'slayer' && (
                     <>
                       <li>
-                        <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> 무모한 희생 + 투신 + 5중첩 광란 동시 → 최대 DPS
+                        <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> {renderTextWithSkillIcons('무모한 희생 + 투신 + 5중첩 광란 동시 → 최대 DPS')}
                       </li>
                       <li>
-                        <strong style={{ color: '#28a745' }}>마무리 일격 구간 최적화:</strong> 처형 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜
+                        <strong style={{ color: '#28a745' }}>마무리 일격 구간 최적화:</strong> {renderTextWithSkillIcons('처형 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜')}
                       </li>
                     </>
                   )}
                   {selectedTier === 'mountainThane' && (
                     <>
                       <li>
-                        <strong style={{ color: '#28a745' }}>티어 세트 시너지:</strong> 천둥의 포효 → 우레 작렬 즉시 2회 → 폭발 딜
+                        <strong style={{ color: '#28a745' }}>티어 세트 시너지:</strong> {renderTextWithSkillIcons('천둥의 포효 → 우레 작렬 즉시 2회 → 폭발 딜')}
                       </li>
                       <li>
-                        <strong style={{ color: '#28a745' }}>광역 최적화:</strong> 천둥의 포효 → 우레 작렬(5명 타격) → 공격력 +10% 버프 활용
+                        <strong style={{ color: '#28a745' }}>광역 최적화:</strong> {renderTextWithSkillIcons('천둥의 포효 → 우레 작렬(5명 타격) → 공격력 +10% 버프 활용')}
                       </li>
                     </>
                   )}
@@ -2891,7 +2891,7 @@ const FuryWarriorGuide = () => {
                     <strong style={{ color: '#28a745' }}>분노 예측 관리:</strong> 쿨기 타이밍 10초 전 분노 80+ 확보 → 버스트 준비
                   </li>
                   <li>
-                    <strong style={{ color: '#28a745' }}>WeakAura 설정:</strong> 격노 버프, {selectedTier === 'slayer' ? '학살의 일격 중첩' : '우레 작렬 쿨'}, 분노 게이지 추적 필수
+                    <strong style={{ color: '#28a745' }}>WeakAura 설정:</strong> 격노 버프, {selectedTier === 'slayer' ? '학살의 일격 중첩' : renderTextWithSkillIcons('우레 작렬 쿨')}, 분노 게이지 추적 필수
                   </li>
                 </ul>
               </div>
@@ -2907,7 +2907,7 @@ const FuryWarriorGuide = () => {
     slayer: {  // 학살자 (Slayer)
       'raid-single': {
         name: '레이드 단일 대상',
-        description: '학살자를 활용한 단일 대상 빌드입니다. 출혈 피해와 마무리 일격 강화로 보스전에 특화되어 있습니다.',
+        description: renderTextWithSkillIcons('학살자를 활용한 단일 대상 빌드입니다. 출혈 피해와 마무리 일격 강화로 보스전에 특화되어 있습니다.'),
         code: 'CwQAqjLKv2qfbjSJolSCJSkkSSJJJJJJAAAAAAAAAAAASSSikEJSSiQJJhEJSA',  // Slayer 레이드 단일
         icon: '⚔️'
       },
@@ -3345,7 +3345,7 @@ const FuryWarriorGuide = () => {
             },
             mastery: {
               breakpoints: [],
-              note: '무모한 희생 중 피해 증가, 학살자 특성과 시너지'
+              note: renderTextWithSkillIcons('무모한 희생 중 피해 증가, 학살자 특성과 시너지')
             },
             versatility: {
               breakpoints: [],
@@ -3384,7 +3384,7 @@ const FuryWarriorGuide = () => {
                 { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
                 { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
               ],
-              note: '우레 작렬 빈도 증가와 분노 생성 속도 향상'
+              note: renderTextWithSkillIcons('우레 작렬 빈도 증가와 분노 생성 속도 향상')
             },
             crit: {
               softcap: '특정 소프트캡 없음',
@@ -3393,7 +3393,7 @@ const FuryWarriorGuide = () => {
             },
             mastery: {
               breakpoints: [],
-              note: '우레 작렬 피해 증가, 천둥 효과 강화'
+              note: renderTextWithSkillIcons('우레 작렬 피해 증가, 천둥 효과 강화')
             },
             versatility: {
               breakpoints: [],
@@ -3407,7 +3407,7 @@ const FuryWarriorGuide = () => {
                 { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
                 { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
               ],
-              note: '최우선 스탯, 우레 작렬 빈도와 광역 딜 극대화'
+              note: renderTextWithSkillIcons('최우선 스탯, 우레 작렬 빈도와 광역 딜 극대화')
             },
             crit: {
               softcap: '특정 소프트캡 없음',
@@ -3416,7 +3416,7 @@ const FuryWarriorGuide = () => {
             },
             mastery: {
               breakpoints: [],
-              note: '우레 작렬과 천둥 피해 증가'
+              note: renderTextWithSkillIcons('우레 작렬과 천둥 피해 증가')
             },
             versatility: {
               breakpoints: [],
