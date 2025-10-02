@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { WowIcon, classIcons } from '../utils/wowIcons';
+import { getRecentGuides } from '../data/guidesMetadata';
 
 const Section = styled.section`
   margin: 4rem 0;
@@ -38,8 +39,12 @@ const ViewAllLink = styled(Link)`
 
 const GuidesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -113,34 +118,8 @@ const GuideSpec = styled.div`
 const GuideMeta = styled.div`
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
   flex-wrap: wrap;
-`;
-
-const MetaBadge = styled.span`
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  background: ${props => props.theme.colors.secondary};
-  color: ${props => props.theme.colors.subtext};
-`;
-
-const GuideExcerpt = styled.p`
-  color: ${props => props.theme.colors.subtext};
-  line-height: 1.6;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-`;
-
-const GuideFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
 `;
 
 const UpdateDate = styled.span`
@@ -148,92 +127,9 @@ const UpdateDate = styled.span`
   font-size: 0.85rem;
 `;
 
-const ReadButton = styled.span`
-  color: ${props => props.classColor || props.theme.colors.accent};
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: gap 0.3s ease;
-
-  ${GuideCard}:hover & {
-    gap: 1rem;
-  }
-`;
-
 function RecentGuidesSection() {
-  const recentGuides = [
-    {
-      id: 1,
-      class: '흑마법사',
-      classEng: 'warlock',
-      spec: '고통',
-      specEng: 'affliction',
-      title: '고통 흑마법사',
-      excerpt: '시들기 기반 빌드와 로테이션, 영웅 특성 선택 가이드',
-      patch: '11.2',
-      difficulty: '중급',
-      updateDate: '2025-10-02',
-      link: '/guide/warlock/affliction',
-      classColor: '#8788EE'
-    },
-    {
-      id: 2,
-      class: '흑마법사',
-      classEng: 'warlock',
-      spec: '악마',
-      specEng: 'demonology',
-      title: '악마 흑마법사',
-      excerpt: '악마 소환 최적화와 티란의 권능 활용법',
-      patch: '11.2',
-      difficulty: '고급',
-      updateDate: '2025-10-02',
-      link: '/guide/warlock/demonology',
-      classColor: '#8788EE'
-    },
-    {
-      id: 3,
-      class: '사냥꾼',
-      classEng: 'hunter',
-      spec: '야수',
-      specEng: 'beast-mastery',
-      title: '야수 사냥꾼',
-      excerpt: '펫 관리와 광기 스택 최적화 전략',
-      patch: '11.2',
-      difficulty: '초급',
-      updateDate: '2025-10-02',
-      link: '/guide/hunter/beast-mastery',
-      classColor: '#AAD372'
-    },
-    {
-      id: 4,
-      class: '기원사',
-      classEng: 'evoker',
-      spec: '황폐',
-      specEng: 'devastation',
-      title: '황폐 기원사',
-      excerpt: '정수 폭발 타이밍과 화염의 숨결 활용법',
-      patch: '11.2',
-      difficulty: '중급',
-      updateDate: '2025-10-02',
-      link: '/guide/evoker/devastation',
-      classColor: '#33937F'
-    },
-    {
-      id: 5,
-      class: '주술사',
-      classEng: 'shaman',
-      spec: '정기',
-      specEng: 'elemental',
-      title: '정기 주술사',
-      excerpt: '번개 화살과 용암 폭발 우선순위 가이드',
-      patch: '11.2',
-      difficulty: '중급',
-      updateDate: '2025-10-02',
-      link: '/guide/shaman/elemental',
-      classColor: '#0070DD'
-    }
-  ];
+  // 자동으로 최신 4개 가이드를 가져옵니다
+  const recentGuides = getRecentGuides(4);
 
   return (
     <Section>
@@ -266,18 +162,8 @@ function RecentGuidesSection() {
             </GuideHeader>
 
             <GuideMeta>
-              <MetaBadge>📌 패치 {guide.patch}</MetaBadge>
-              <MetaBadge>⭐ {guide.difficulty}</MetaBadge>
-            </GuideMeta>
-
-            <GuideExcerpt>{guide.excerpt}</GuideExcerpt>
-
-            <GuideFooter>
               <UpdateDate>📅 {guide.updateDate}</UpdateDate>
-              <ReadButton classColor={guide.classColor}>
-                읽기 →
-              </ReadButton>
-            </GuideFooter>
+            </GuideMeta>
           </GuideCard>
         ))}
       </GuidesGrid>

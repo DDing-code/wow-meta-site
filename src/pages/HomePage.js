@@ -186,24 +186,24 @@ const FeatureTitle = styled.h3`
 function HomePage() {
   const features = [
     {
+      iconUrl: gameIcons.legendary,
+      title: "뉴스",
+      link: "/news"
+    },
+    {
       iconUrl: gameIcons.raid,
-      title: "직업 공략",
-      link: "/classes"
+      title: "직업 가이드",
+      link: "/guide"
+    },
+    {
+      iconUrl: gameIcons.instant,
+      title: "스킬 DB",
+      link: "/spells"
     },
     {
       iconUrl: gameIcons.achievement,
       title: "로그 분석",
       link: "/log-analyzer"
-    },
-    {
-      iconUrl: gameIcons.instant,
-      title: "스킬 데이터베이스",
-      link: "/spells"
-    },
-    {
-      iconUrl: gameIcons.legendary,
-      title: "티어 리스트",
-      link: "/tier-list"
     }
   ];
 
