@@ -1522,7 +1522,7 @@ const FuryWarriorGuide = () => {
                   gap: '0.3rem',
                   flexWrap: 'wrap'
                 }}>
-                  {currentContent.tierSet['2set']}
+                  {renderTextWithSkillIcons(currentContent.tierSet['2set'])}
                 </span>
               </div>
               <div className={styles.bonusItem} style={{
@@ -1543,7 +1543,7 @@ const FuryWarriorGuide = () => {
                   gap: '0.3rem',
                   flexWrap: 'wrap'
                 }}>
-                  {currentContent.tierSet['4set']}
+                  {renderTextWithSkillIcons(currentContent.tierSet['4set'])}
                 </span>
               </div>
             </div>
@@ -1744,8 +1744,8 @@ const FuryWarriorGuide = () => {
             }}>
               <p style={{ fontSize: '0.9rem', color: '#ccc', marginBottom: '10px' }}>
                 {selectedTier === 'slayer' ?
-                  '⏱️ 전투 직전: 악마 소환 후 굴단의 손으로 버스트 준비' :
-                  '⏱️ 전투 직전: 핵심 메커니즘로 악마 강화 준비'}
+                  '⏱️ 전투 직전: 분노 생성 후 쿨다운과 함께 폭발적인 딜 준비' :
+                  '⏱️ 전투 직전: 우레 작렬을 위한 분노 확보'}
               </p>
               <div className={styles.skillSequence}>
                 {currentContent.singleTarget.opener.map((skill, index, arr) => (
@@ -1756,8 +1756,8 @@ const FuryWarriorGuide = () => {
                 ))}
               </div>
               {selectedTier === 'slayer' && (
-                <p style={{ fontSize: '0.85rem', color: '#9482C9', marginTop: '10px' }}>
-                  💡 팁: 악마 폭군은 가능한 많은 악마를 소환한 후 사용
+                <p style={{ fontSize: '0.85rem', color: '#C69B6D', marginTop: '10px' }}>
+                  💡 팁: 무모한 희생과 투신은 항상 함께 사용하여 버스트 극대화
                 </p>
               )}
             </div>
@@ -2039,7 +2039,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>최우선 규칙:</strong> 2중첩 이상 시 다른 스킬보다 <SkillIcon skill={skillData.execute} textOnly={true} /> 우선
                     </li>
                     <li>
-                      <strong>Execute 구간 (20% 이하):</strong> <SkillIcon skill={skillData.execute} textOnly={true} />가 <SkillIcon skill={skillData.rampage} textOnly={true} />보다 우선순위 높음
+                      <strong>마무리 일격 구간 (20% 이하):</strong> <SkillIcon skill={skillData.execute} textOnly={true} />가 <SkillIcon skill={skillData.rampage} textOnly={true} />보다 우선순위 높음
                     </li>
                     <li>
                       <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
@@ -2082,7 +2082,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>최우선 사용:</strong> 버프 활성 시 즉시 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 (버프 낭비 방지)
                     </li>
                     <li>
-                      <strong>Execute 구간:</strong> 잔혹한 마무리 > 처형 표식 2중첩 <SkillIcon skill={skillData.execute} textOnly={true} />
+                      <strong>마무리 일격 구간:</strong> 잔혹한 마무리 > 처형 표식 2중첩 <SkillIcon skill={skillData.execute} textOnly={true} />
                     </li>
                   </ul>
                 </div>
@@ -2273,7 +2273,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>120 이상:</strong> 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (낭비 방지)
                     </li>
                     <li>
-                      <strong>Execute 구간:</strong> 분노 20-40으로 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 (분노 소모량 조절 가능)
+                      <strong>마무리 일격 구간:</strong> 분노 20-40으로 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 (분노 소모량 조절 가능)
                     </li>
                     <li>
                       <strong><SkillIcon skill={skillData.recklessness} textOnly={true} /> 중:</strong> 분노 생성 100% 증가 - 적극적 소비 필요
@@ -2293,7 +2293,7 @@ const FuryWarriorGuide = () => {
                       <strong>활용 순서:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> → <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> → <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> (각각 광역화)
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>Execute 구간:</strong> 소용돌이 버프로 <SkillIcon skill={skillData.execute} textOnly={true} />를 광역화하여 여러 적 동시 처형
+                      <strong style={{ color: '#32CD32' }}>마무리 일격 구간:</strong> 소용돌이 버프로 <SkillIcon skill={skillData.execute} textOnly={true} />를 광역화하여 여러 적 동시 처형
                     </li>
                     <li>
                       <strong><SkillIcon skill={skillData.thunderousRoar} textOnly={true} />:</strong> 12미터 광역 피해 + 8초 출혈 DoT (1.5분 쿨)
@@ -2615,7 +2615,7 @@ const FuryWarriorGuide = () => {
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 처형 표식 & Execute 최적화
+                    🎯 처형 표식 & 마무리 일격 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
@@ -2628,7 +2628,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
                     </li>
                     <li>
-                      <strong>Execute 구간:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.rampage} textOnly={true} />
+                      <strong>마무리 일격 구간:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.rampage} textOnly={true} />
                     </li>
                   </ul>
                 </div>
@@ -2873,7 +2873,7 @@ const FuryWarriorGuide = () => {
                         <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> 무모한 희생 + 투신 + 5중첩 광란 동시 → 최대 DPS
                       </li>
                       <li>
-                        <strong style={{ color: '#28a745' }}>Execute 구간 최적화:</strong> 처형 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜
+                        <strong style={{ color: '#28a745' }}>마무리 일격 구간 최적화:</strong> 처형 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜
                       </li>
                     </>
                   )}
@@ -2907,7 +2907,7 @@ const FuryWarriorGuide = () => {
     slayer: {  // 학살자 (Slayer)
       'raid-single': {
         name: '레이드 단일 대상',
-        description: '학살자를 활용한 단일 대상 빌드입니다. 출혈 피해와 Execute 강화로 보스전에 특화되어 있습니다.',
+        description: '학살자를 활용한 단일 대상 빌드입니다. 출혈 피해와 마무리 일격 강화로 보스전에 특화되어 있습니다.',
         code: 'CwQAqjLKv2qfbjSJolSCJSkkSSJJJJJJAAAAAAAAAAAASSSikEJSSiQJJhEJSA',  // Slayer 레이드 단일
         icon: '⚔️'
       },
@@ -3758,21 +3758,22 @@ const FuryWarriorGuide = () => {
                 </h4>
 
                 <div style={{ marginBottom: '15px' }}>
-                  <h5 style={{ color: '#AAD372', marginBottom: '10px' }}>
-                    불꽃형성자 (Flameshaper)
+                  <h5 style={{ color: '#C69B6D', marginBottom: '10px' }}>
+                    학살자 (Slayer)
                   </h5>
                   <ul style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.8' }}>
-                    <li><strong>단일:</strong> 가속 30-35% > 치명타 = 특화 > 유연</li>
-                    <li><strong>광역:</strong> 가속 30-40% > 치명타 > 특화 > 유연</li>
+                    <li><strong>단일:</strong> 가속 25-30% > 치명타 ≈ 특화 > 유연</li>
+                    <li><strong>광역:</strong> 가속 25-30% > 특화 > 치명타 > 유연</li>
                   </ul>
                 </div>
 
                 <div>
-                  <h5 style={{ color: '#DC3545', marginBottom: '10px' }}>
-                    비늘사령관 (Chronowarden)
+                  <h5 style={{ color: '#4ECDC4', marginBottom: '10px' }}>
+                    산왕 (Mountain Thane)
                   </h5>
                   <ul style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.8' }}>
-                    <li><strong>단일/광역:</strong> 가속 30-40% > 치명타 > 유연 > 특화</li>
+                    <li><strong>단일:</strong> 가속 25-30% > 특화 ≈ 치명타 > 유연</li>
+                    <li><strong>광역:</strong> 가속 25-30% > 특화 > 치명타 > 유연</li>
                   </ul>
                 </div>
 
@@ -3782,7 +3783,7 @@ const FuryWarriorGuide = () => {
                   borderTop: '1px solid rgba(255, 255, 255, 0.1)'
                 }}>
                   <p style={{ color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic' }}>
-                    ⚠️ 가속은 30%부터 소프트캡 시작, 40%에서 효율 크게 감소
+                    ⚠️ 가속은 25%부터 소프트캡 시작, 30%에서 효율 감소. 격노 유지율이 핵심
                   </p>
                 </div>
               </div>
