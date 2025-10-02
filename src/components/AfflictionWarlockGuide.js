@@ -1368,7 +1368,7 @@ const AfflictionWarlockGuide = () => {
               </div>
               {selectedTier === 'hellcaller' && (
                 <p style={{ fontSize: '0.85rem', color: '#9482C9', marginTop: '10px' }}>
-                  💡 팁: 악마 폭군은 가능한 많은 악마를 소환한 후 사용
+                  💡 팁: 시들기 스택을 최대로 유지하여 악의 버프를 발동시키는 것이 핵심입니다
                 </p>
               )}
             </div>
