@@ -284,8 +284,8 @@ const getHeroContent = (SkillIcon) => ({
     name: '영혼 수확자',
     icon: '💀',
     tierSet: {
-      '2set': '죽음의 그림자 능력이 강화됩니다. DoT가 걸린 적이 죽을 때 추가 영혼의 조각를 생성합니다.',
-      '4set': '악마의 영혼 피해가 45% 증가합니다. 야밤의 징조 발동 시 추가 효과를 제공합니다.'
+      '2set': <><SkillIcon skill={skillData.shadowEmbrace} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.shadowEmbrace} textOnly={true} /> 능력이 강화됩니다. 지속 피해 효과가 걸린 적이 죽을 때 추가 영혼의 조각을 생성합니다.</>,
+      '4set': <><SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 피해가 45% 증가합니다. <SkillIcon skill={skillData.nightfall} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.nightfall} textOnly={true} /> 발동 시 추가 효과를 제공합니다.</>
     },
     singleTarget: {
       opener: [
@@ -336,8 +336,8 @@ const getHeroContent = (SkillIcon) => ({
     name: '지옥소환사',
     icon: '🔥',
     tierSet: {
-      '2set': '시들기 (Corruption 대체) 피해가 증가하고, 스택 효과를 제공합니다.',
-      '4set': '시들기 스택이 최대일 때 추가 효과가 발동하며, 영혼의 조각 생성 효율이 증가합니다.'
+      '2set': <>시들기 피해가 증가하고, 대상에게 중첩되는 스택 효과를 제공합니다. (부패를 대체하는 강화 효과)</>,
+      '4set': <>시들기 스택이 최대일 때 추가 효과가 발동하며, <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 사용 시 영혼의 조각 생성 효율이 증가합니다.</>
     },
     singleTarget: {
       opener: [
@@ -1430,98 +1430,98 @@ const AfflictionWarlockGuide = () => {
               <>
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#8B00FF', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 리소스 효율
+                    <SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} />
+                    <SkillIcon skill={skillData.wither} textOnly={true} /> 메커니즘 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>리소스 3개 소비:</strong> 날뛰는 임프 3마리 소환 (최대 효율)
+                      <strong style={{ color: '#ff6b6b' }}>자동 변환:</strong> {' '}
+                      <SkillIcon skill={skillData.corruption} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.corruption} textOnly={true} />이 자동으로 {' '}
+                      <SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.wither} textOnly={true} />로 변환됩니다
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>2개 소비:</strong> 임프 2마리 - 효율 낮음, 비추천
+                      <strong style={{ color: '#ffa500' }}>스택 관리:</strong> 대상에게 중첩 효과 부여 (최대 8중첩)
                     </li>
                     <li>
-                      <strong style={{ color: '#9482C9' }}>1개 소비:</strong> 임프 1마리 - 리소스 손실 위험 시에만
+                      <strong style={{ color: '#9482C9' }}>피해 증가:</strong> 스택당 피해량 증가
                     </li>
                     <li>
-                      <strong style={{ color: '#FFD700' }}>핵심:</strong> 항상 3개 단위로 사용하여 효율 극대화
+                      <strong style={{ color: '#FFD700' }}>핵심:</strong> 최대 중첩 유지가 딜 극대화의 핵심
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 {' '}
-                    <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> vs {' '}
-                    <SkillIcon skill={skillData.demonbolt} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 결정 가이드
+                    🎯 악의 버프 관리
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>스킬 강화 5중첩:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li>
-                          <SkillIcon skill={skillData.demonbolt} size="small" className={styles.inlineIcon} />
-                          <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선 사용 (리소스 2개 + 강화 피해)
-                        </li>
-                        <li>버스트 윈도우에서 특히 중요</li>
-                      </ul>
+                      <strong style={{ color: '#ffa500' }}>버프 발동:</strong> {' '}
+                      <SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.wither} textOnly={true} /> 스택 최대 시 악의 버프 획득
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>스킬 강화 5중첩 미만:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li>
-                          <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} />
-                          <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 사용 (시전 시간 짧음)
-                        </li>
-                        <li>빠른 리소스 생성이 목표</li>
-                      </ul>
+                      <strong>버프 효과:</strong> 모든 지속 피해 효과 피해량 증가
+                    </li>
+                    <li>
+                      <strong style={{ color: '#32CD32' }}>활용:</strong> 버프 활성 중 {' '}
+                      <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 연속 사용
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#28a745', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🔥 악마 폭군 타이밍 최적화
+                    🔥 {' '}
+                    <SkillIcon skill={skillData.summonDarkglare} size="small" className={styles.inlineIcon} />
+                    <SkillIcon skill={skillData.summonDarkglare} textOnly={true} /> 타이밍 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>준비 단계:</strong> 공포사냥개 소환 → 임프 8~10마리 생성
+                      <strong>준비 단계:</strong> 모든 DoT 최대 중첩 유지
                     </li>
                     <li>
-                      <strong>지옥수호병 강화:</strong> {' '}
-                      <SkillIcon skill={skillData.demonicStrength} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.demonicStrength} textOnly={true} /> 사용 (1분 쿨기)
+                      <strong style={{ color: '#ffa500' }}>최적 타이밍:</strong> {' '}
+                      <SkillIcon skill={skillData.agony} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.agony} textOnly={true} />, {' '}
+                      <SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.wither} textOnly={true} />, {' '}
+                      <SkillIcon skill={skillData.unstableAffliction} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.unstableAffliction} textOnly={true} /> 모두 활성 상태
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>폭군 소환:</strong> 모든 악마 지속시간 15초 연장 + 공격력 25% 증가
+                      <strong>DoT 연장:</strong> 모든 지속 피해 효과 지속시간 8초 연장
                     </li>
                     <li>
-                      <strong>장신구 조합:</strong> 폭군과 함께 쿨기 장신구/물약 사용
+                      <strong>장신구 조합:</strong> 쿨기 장신구/물약과 함께 사용
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚠️ 리소스 낭비 방지
+                    ⚠️ 영혼의 조각 효율 관리
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>5개 상태:</strong> 즉시 {' '}
-                      <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용 (3개 소비)
+                      <strong style={{ color: '#ff6b6b' }}>5개 상태:</strong> {' '}
+                      <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 즉시 사용 (손실 방지)
                     </li>
                     <li>
-                      <strong>4개 상태:</strong> {' '}
-                      <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 대신 {' '}
-                      <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 우선
+                      <strong>환희 구간:</strong> 60초마다 조각 5개 모아서 연속 사용
                     </li>
                     <li>
                       <strong style={{ color: '#ffa500' }}>이상적 유지:</strong> 2~3개 구간에서 관리
+                    </li>
+                    <li>
+                      <strong>티어 4세트:</strong> {' '}
+                      <SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.wither} textOnly={true} /> 최대 중첩 시 조각 생성 효율 증가
                     </li>
                   </ul>
                 </div>
@@ -1529,35 +1529,34 @@ const AfflictionWarlockGuide = () => {
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
                     💨 {' '}
-                    <SkillIcon skill={skillData.grimoireFelguard} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.grimoireFelguard} textOnly={true} /> 활용 (선택 특성)
+                    <SkillIcon skill={skillData.haunt} size="small" className={styles.inlineIcon} />
+                    <SkillIcon skill={skillData.haunt} textOnly={true} /> 활용 (핵심 스킬)
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
-                    <li>재사용 대기시간: 2분</li>
-                    <li>대상 피해 증가: 125% (17초)</li>
-                    <li>시전 시 대상 기절 (인터럽트 가능)</li>
-                    <li><strong style={{ color: '#ffa500' }}>추천 사용:</strong> 버스트 윈도우나 인터럽트 필요 시</li>
+                    <li>재사용 대기시간: 15초</li>
+                    <li>대상 피해 증가: 12% (18초)</li>
+                    <li>영혼의 조각 1개 생성</li>
+                    <li><strong style={{ color: '#ffa500' }}>추천:</strong> 재사용 대기시간마다 즉시 사용</li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚡ 버스트 윈도우 극대화 (고급)
+                    ⚡ 버스트 윈도우 극대화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>타이밍 순서:</strong> 공포사냥개 → 임프 최대 생성 → 지옥수호병 강화 → 폭군
+                      <strong>타이밍 순서:</strong> 모든 DoT 최대 → {' '}
+                      <SkillIcon skill={skillData.summonDarkglare} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.summonDarkglare} textOnly={true} /> → 악의 버프 획득
                     </li>
                     <li>
-                      <strong>티어 4세트 활용:</strong> 폭군 사용 시 리소스 2개 추가 획득
+                      <strong>환희 버스트:</strong> 영혼의 조각 5개 모아서 {' '}
+                      <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 연속 사용
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>즉시 후속:</strong> 획득한 조각으로 즉시 임프 추가 소환
-                    </li>
-                    <li>
-                      <strong>폭군 버프 중:</strong> 스킬 강화 5중첩 {' '}
-                      <SkillIcon skill={skillData.demonbolt} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선
+                      <strong style={{ color: '#ffa500' }}>DoT 폭발:</strong> 각 DoT가 걸린 대상마다 피해 증가
                     </li>
                   </ul>
                 </div>
@@ -1575,65 +1574,54 @@ const AfflictionWarlockGuide = () => {
                       <strong style={{ color: '#ffa500' }}>최우선 쿨기:</strong> 재사용 대기시간마다 즉시 사용 (1분)
                     </li>
                     <li>
-                      <strong>티어 2세트:</strong> 활성 중 악마 공격력 20% 증가 (8초)
-                    </li>
-                    <li>
-                      <strong>티어 4세트:</strong> 리소스 1개 추가 생성
+                      <strong>영혼 수확자 특화:</strong> 3개 영혼의 조각 즉시 생성
                     </li>
                     <li>
                       <strong style={{ color: '#32CD32' }}>광역 효과:</strong> 최대 5 타겟 동시 피해
                     </li>
                     <li>
-                      <strong>생존력:</strong> 입힌 피해의 50% 회복
+                      <strong>생존력:</strong> 입힌 피해의 50% 생명력 회복
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#DC3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.implosion} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.implosion} textOnly={true} /> 타이밍 최적화
+                    <SkillIcon skill={skillData.summonDarkglare} size="small" className={styles.inlineIcon} />
+                    <SkillIcon skill={skillData.summonDarkglare} textOnly={true} /> 타이밍 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>최소 임프 수:</strong> 6마리 이상 (효율적)
+                      <strong style={{ color: '#ffa500' }}>준비:</strong> 모든 DoT 최대 중첩 유지
                     </li>
                     <li>
-                      <strong>최적:</strong> 8~10마리 시 사용
+                      <strong>DoT 연장:</strong> 모든 지속 피해 효과 8초 추가
                     </li>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>주의:</strong> 악마 폭군 직전에는 사용 금지
-                    </li>
-                    <li>
-                      3+ 타겟 광역 구간에서 지속적으로 순환
+                      <strong style={{ color: '#ff6b6b' }}>핵심:</strong> {' '}
+                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.soulRot} textOnly={true} />와 조합하여 극대화
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#9b59b6', fontSize: '1.2rem', marginBottom: '15px' }}>
-                    ⚡ 핵심 메커니즘 버프 관리 (고급)
+                    ⚡ {' '}
+                    <SkillIcon skill={skillData.nightfall} size="small" className={styles.inlineIcon} />
+                    <SkillIcon skill={skillData.nightfall} textOnly={true} /> 프락 활용
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>버프 유지:</strong> {' '}
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활성 중 최대 악마 소환
+                      <strong style={{ color: '#ffa500' }}>발동 조건:</strong> DoT 틱마다 발동 확률
                     </li>
                     <li>
-                      <strong>공포사냥개:</strong> {' '}
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> 사용 직후 소환
+                      <strong>즉시 시전:</strong> 프락 발동 시 {' '}
+                      <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} />
+                      <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 즉시 시전
                     </li>
                     <li>
-                      <strong>리소스 생성:</strong> 버프 중 {' '}
-                      <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 2회 사용
-                    </li>
-                    <li>
-                      <strong>악마 폭군:</strong> {' '}
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> 버프 종료 전 사용
+                      <strong>티어 4세트:</strong> 프락 발동 시 추가 효과 부여
                     </li>
                   </ul>
                 </div>
@@ -1646,7 +1634,7 @@ const AfflictionWarlockGuide = () => {
                     <li>
                       <strong style={{ color: '#ff6b6b' }}>4+ 타겟:</strong> {' '}
                       <SkillIcon skill={skillData.seedOfCorruption} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.seedOfCorruption} textOnly={true} />로 지속 피해빠르게 확산
+                      <SkillIcon skill={skillData.seedOfCorruption} textOnly={true} />로 DoT 빠르게 확산
                     </li>
                     <li>
                       <strong>DoT 우선순위:</strong> {' '}
@@ -1692,46 +1680,6 @@ const AfflictionWarlockGuide = () => {
                 </div>
               </>
             )}
-
-            <div style={{ marginBottom: '20px' }}>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>
-                <SkillIcon skill={skillData.summonDemonicTyrant} size="small" className={styles.inlineIcon} />
-                <SkillIcon skill={skillData.summonDemonicTyrant} textOnly={true} /> 버스트 최적화
-              </h4>
-              <ul style={{ lineHeight: '1.8' }}>
-                <li>악마 최대 소환 후 사용 - 날뛰는 임프 8~10마리 + 공포사냥개</li>
-                <li>모든 악마 지속시간 15초 연장 + 공격력 25% 증가</li>
-                <li>장신구/물약과 함께 사용하여 딜 극대화</li>
-                <li>버스트 윈도우 동안 {' '}
-                  <SkillIcon skill={skillData.demonbolt} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.demonbolt} textOnly={true} /> (스킬 강화 5중첩) 우선 사용
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>리소스 관리</h4>
-              <ul style={{ lineHeight: '1.8' }}>
-                <li>이상적 유지: 2~3개 (최대 5개)</li>
-                <li>
-                  <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.shadowBolt} textOnly={true} />로 +1 조각 생성 (2초 시전)
-                </li>
-                <li>
-                  <SkillIcon skill={skillData.demonbolt} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.demonbolt} textOnly={true} />로 +2 조각 생성 (4.5초 시전, 스킬 강화 5중첩 시)
-                </li>
-                <li>
-                  <SkillIcon skill={skillData.soulStrike} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.soulStrike} textOnly={true} />로 +1 조각 생성 (10초 재사용)
-                </li>
-                <li>
-                  <strong style={{ color: '#ff6b6b' }}>주의:</strong> 5개 상태에서 추가 생성 시 손실 - 즉시 {' '}
-                  <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </HeroCard>
