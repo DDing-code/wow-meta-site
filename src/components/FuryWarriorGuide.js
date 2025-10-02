@@ -288,26 +288,31 @@ const getHeroContent = (SkillIcon) => ({
     },
     singleTarget: {
       opener: [
+        skillData.charge,
         skillData.recklessness,
         skillData.avatar,
         skillData.championsSpear,
         skillData.rampage,
         skillData.ragingBlow,
-        skillData.bloodthirst,
-        skillData.execute
+        skillData.bloodthirst
       ],
       priority: [
-        { skill: skillData.execute, desc: '적 생명력 20% 이하 시 최우선으로 사용' },
-        { skill: skillData.rampage, desc: '분노 80 이상일 때 사용하여 격노 유지' },
-        { skill: skillData.recklessness, desc: '재사용 대기시간마다 사용' },
-        { skill: skillData.avatar, desc: '재사용 대기시간마다 사용' },
-        { skill: skillData.championsSpear, desc: '쿨다운마다 사용하여 추가 분노 획득' },
-        { skill: skillData.ragingBlow, desc: '분노가 충분할 때 사용' },
-        { skill: skillData.bloodthirst, desc: '쿨다운마다 사용하여 분노 생성 및 생명력 회복' }
+        { skill: skillData.rampage, desc: '격노 버프가 없거나 곧 만료될 때 최우선 사용 (격노 유지율 90%+ 목표)' },
+        { skill: skillData.execute, desc: '처형 표식 2중첩 이상 OR 갑작스런 죽음 2중첩 OR 갑작스런 죽음 버프 만료 직전 시 사용' },
+        { skill: skillData.rampage, desc: '학살의 일격 5중첩 시 즉시 사용하여 중첩 소모' },
+        { skill: skillData.ragingBlow, desc: '잔혹한 마무리 버프 활성 시 최우선 사용' },
+        { skill: skillData.ragingBlow, desc: '2 충전 보유 시 즉시 사용 (충전 낭비 방지)' },
+        { skill: skillData.rampage, desc: '분노 120 이상 시 사용 (분노 낭비 방지)' },
+        { skill: skillData.execute, desc: '대상 생명력 20% 이하 시 사용' },
+        { skill: skillData.ragingBlow, desc: '기본 분노 소모 스킬' },
+        { skill: skillData.rampage, desc: '분노 80 이상 시 사용' },
+        { skill: skillData.bloodthirst, desc: '재사용 대기시간마다 사용 (분노 8 생성 + 생명력 회복)' },
+        { skill: skillData.execute, desc: '다른 스킬 사용 불가 시 필러로 사용' }
       ]
     },
     aoe: {
       opener: [
+        skillData.charge,
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderousRoar,
@@ -315,12 +320,13 @@ const getHeroContent = (SkillIcon) => ({
         skillData.rampage
       ],
       priority: [
-        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선 사용' },
-        { skill: skillData.rampage, desc: '분노 80 이상일 때 사용' },
-        { skill: skillData.thunderousRoar, desc: '광역 딜 및 출혈 DoT 적용' },
-        { skill: skillData.whirlwind, desc: '다음 2번 공격 광역화' },
-        { skill: skillData.bloodthirst, desc: '분노 생성 및 생명력 회복' },
-        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모' }
+        { skill: skillData.whirlwind, desc: '개선된 소용돌이 버프 유지 (다음 2번 공격 광역화)' },
+        { skill: skillData.rampage, desc: '격노 버프 유지 최우선' },
+        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선 사용 (소용돌이 버프로 광역 처형)' },
+        { skill: skillData.thunderousRoar, desc: '재사용 대기시간마다 사용 (광역 출혈 DoT)' },
+        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모하여 광역 피해' },
+        { skill: skillData.bloodthirst, desc: '분노 생성 및 소용돌이 버프로 광역 피해' },
+        { skill: skillData.whirlwind, desc: '소용돌이 버프 재적용' }
       ]
     }
   },
@@ -333,6 +339,7 @@ const getHeroContent = (SkillIcon) => ({
     },
     singleTarget: {
       opener: [
+        skillData.charge,
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderBlast,
@@ -342,18 +349,22 @@ const getHeroContent = (SkillIcon) => ({
         skillData.bloodthirst
       ],
       priority: [
-        { skill: skillData.execute, desc: '적 생명력 20% 이하 시 최우선' },
-        { skill: skillData.rampage, desc: '분노 80 이상일 때 사용' },
-        { skill: skillData.thunderBlast, desc: '우레 작렬을 쿨다운마다 사용하여 번개 피해' },
-        { skill: skillData.recklessness, desc: '재사용 대기시간마다 사용' },
-        { skill: skillData.avatar, desc: '재사용 대기시간마다 사용' },
-        { skill: skillData.championsSpear, desc: '추가 분노 획득 및 속박' },
-        { skill: skillData.ragingBlow, desc: '분노 생성용' },
-        { skill: skillData.bloodthirst, desc: '쿨다운마다 사용' }
+        { skill: skillData.rampage, desc: '격노 버프가 없거나 곧 만료될 때 최우선 사용' },
+        { skill: skillData.thunderBlast, desc: '재사용 대기시간마다 즉시 사용 (분노 30 소모, 천둥 피해)' },
+        { skill: skillData.execute, desc: '처형 표식 2중첩 이상 OR 갑작스런 죽음 2중첩 OR 버프 만료 직전 시 사용' },
+        { skill: skillData.rampage, desc: '학살의 일격 5중첩 시 즉시 사용' },
+        { skill: skillData.ragingBlow, desc: '잔혹한 마무리 버프 활성 시 최우선 사용' },
+        { skill: skillData.ragingBlow, desc: '2 충전 보유 시 즉시 사용' },
+        { skill: skillData.rampage, desc: '분노 120 이상 시 사용 (낭비 방지)' },
+        { skill: skillData.execute, desc: '대상 생명력 20% 이하 시 사용' },
+        { skill: skillData.ragingBlow, desc: '기본 분노 소모 스킬' },
+        { skill: skillData.rampage, desc: '분노 80 이상 시 사용' },
+        { skill: skillData.bloodthirst, desc: '재사용 대기시간마다 사용 (분노 생성)' }
       ]
     },
     aoe: {
       opener: [
+        skillData.charge,
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderBlast,
@@ -362,13 +373,14 @@ const getHeroContent = (SkillIcon) => ({
         skillData.rampage
       ],
       priority: [
-        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선' },
-        { skill: skillData.thunderBlast, desc: '광역 번개 피해 및 감속' },
-        { skill: skillData.rampage, desc: '분노 80 이상일 때 사용' },
-        { skill: skillData.thunderousRoar, desc: '광역 딜 및 출혈 DoT' },
-        { skill: skillData.whirlwind, desc: '다음 2번 공격 광역화' },
-        { skill: skillData.bloodthirst, desc: '분노 생성 및 생명력 회복' },
-        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모' }
+        { skill: skillData.whirlwind, desc: '개선된 소용돌이 버프 유지 필수' },
+        { skill: skillData.rampage, desc: '격노 버프 유지 최우선' },
+        { skill: skillData.thunderBlast, desc: '재사용 대기시간마다 사용 (8미터 광역 번개 피해 + 20% 감속)' },
+        { skill: skillData.thunderousRoar, desc: '재사용 대기시간마다 사용 (2세트로 우레 작렬 쿨감)' },
+        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선 사용' },
+        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모하여 광역 피해' },
+        { skill: skillData.bloodthirst, desc: '분노 생성 및 광역 피해' },
+        { skill: skillData.whirlwind, desc: '소용돌이 버프 재적용' }
       ]
     }
   }
@@ -1322,113 +1334,153 @@ const FuryWarriorGuide = () => {
             {selectedTier === 'slayer' ? (
               <>
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#8B00FF', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 리소스 효율
+                  <h4 style={{ color: '#ff6b6b', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ 격노 버프 유지율 극대화 (90%+ 목표)
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>리소스 3개 소비:</strong> 날뛰는 임프 3마리 소환 (최대 효율)
+                      <strong style={{ color: '#ffa500' }}>격노 지속시간:</strong> 12초 (가속 25% + 피해 20% 증가)
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>2개 소비:</strong> 임프 2마리 - 효율 낮음, 비추천
+                      <strong>트리거 스킬:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> (4.5초 쿨) 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 치명타
                     </li>
                     <li>
-                      <strong style={{ color: '#9482C9' }}>1개 소비:</strong> 임프 1마리 - 리소스 손실 위험 시에만
+                      <strong style={{ color: '#ff6b6b' }}>핵심 원칙:</strong> 격노 버프가 없으면 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (분노 80)
                     </li>
                     <li>
-                      <strong style={{ color: '#FFD700' }}>핵심:</strong> 항상 3개 단위로 사용하여 효율 극대화
+                      <strong>효율 관리:</strong> 격노 버프 3초 이하 남았을 때 <SkillIcon skill={skillData.rampage} textOnly={true} /> 재사용 준비
+                    </li>
+                    <li>
+                      <strong style={{ color: '#FFD700' }}>티어 2세트:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 사용 시 격노 3초 연장
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> vs <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 결정 가이드
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🎯 처형 표식 시스템 (학살자 핵심)
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>스킬 강화 5중첩:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li><SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선 사용 (리소스 2개 + 강화 피해)</li>
-                        <li>버스트 윈도우에서 특히 중요</li>
-                      </ul>
+                      <strong style={{ color: '#ffa500' }}>처형 표식 획득:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 시 1중첩 (최대 3중첩)
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>스킬 강화 5중첩 미만:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li><SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 사용 (시전 시간 짧음)</li>
-                        <li>빠른 리소스 생성이 목표</li>
-                      </ul>
+                      <strong>2중첩 이상 효과:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 피해 20% 증가
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ff6b6b' }}>최우선 규칙:</strong> 2중첩 이상 시 다른 스킬보다 <SkillIcon skill={skillData.execute} textOnly={true} /> 우선
+                    </li>
+                    <li>
+                      <strong>Execute 구간 (20% 이하):</strong> <SkillIcon skill={skillData.execute} textOnly={true} />가 <SkillIcon skill={skillData.rampage} textOnly={true} />보다 우선순위 높음
+                    </li>
+                    <li>
+                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프락:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#28a745', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🔥 악마 폭군 타이밍 최적화
+                    💥 학살의 일격 중첩 관리
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>준비 단계:</strong> 공포사냥개 소환 → 임프 8~10마리 생성
+                      <strong>중첩 획득:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 시 1중첩
                     </li>
                     <li>
-                      <strong>지옥수호병 강화:</strong> <SkillIcon skill={skillData.demonicStrength} textOnly={true} /> 사용 (1분 쿨기)
+                      <strong style={{ color: '#ffa500' }}>5중첩 효과:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 20% 증가
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>폭군 소환:</strong> 모든 악마 지속시간 15초 연장 + 공격력 25% 증가
+                      <strong style={{ color: '#ff6b6b' }}>핵심 타이밍:</strong> 5중첩 도달 시 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용하여 중첩 소모
                     </li>
                     <li>
-                      <strong>장신구 조합:</strong> 폭군과 함께 쿨기 장신구/물약 사용
-                    </li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚠️ 리소스 낭비 방지
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <strong style={{ color: '#ff6b6b' }}>5개 상태:</strong> 즉시 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용 (3개 소비)
-                    </li>
-                    <li>
-                      <strong>4개 상태:</strong> <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 대신 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 우선
-                    </li>
-                    <li>
-                      <strong style={{ color: '#ffa500' }}>이상적 유지:</strong> 2~3개 구간에서 관리
+                      <strong>버스트 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> 중 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> 우선
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    💨 <SkillIcon skill={skillData.grimoireFelguard} textOnly={true} /> 활용 (선택 특성)
+                    ⚔️ 잔혹한 마무리 프락 활용
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
-                    <li>재사용 대기시간: 2분</li>
-                    <li>대상 피해 증가: 125% (17초)</li>
-                    <li>시전 시 대상 기절 (인터럽트 가능)</li>
-                    <li><strong style={{ color: '#ffa500' }}>추천 사용:</strong> 버스트 윈도우나 인터럽트 필요 시</li>
+                    <li>
+                      <strong>프락 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>효과:</strong> 다음 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 피해 크게 증가 + 재사용 대기시간 초기화
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ff6b6b' }}>최우선 사용:</strong> 버프 활성 시 즉시 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 (버프 낭비 방지)
+                    </li>
+                    <li>
+                      <strong>Execute 구간:</strong> 잔혹한 마무리 > 처형 표식 2중첩 <SkillIcon skill={skillData.execute} textOnly={true} />
+                    </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚡ 버스트 윈도우 극대화 (고급)
+                  <h4 style={{ color: '#9b59b6', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🔥 쿨기 동기화 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>타이밍 순서:</strong> 공포사냥개 → 임프 최대 생성 → 지옥수호병 강화 → 폭군
+                      <strong style={{ color: '#ffa500' }}>표준 버스트:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> 동시 사용
                     </li>
                     <li>
-                      <strong>티어 4세트 활용:</strong> 폭군 사용 시 리소스 2개 추가 획득
+                      <strong>쿨기 지속시간:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 12초 / <SkillIcon skill={skillData.avatar} textOnly={true} /> 20초
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>즉시 후속:</strong> 획득한 조각으로 즉시 임프 추가 소환
+                      <strong>버스트 중 우선순위:</strong> 학살의 일격 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.ragingBlow} textOnly={true} />
                     </li>
                     <li>
-                      <strong>폭군 버프 중:</strong> 스킬 강화 5중첩 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선
+                      <strong style={{ color: '#32CD32' }}><SkillIcon skill={skillData.championsSpear} textOnly={true} /> 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 직후 사용 (분노 10 생성 + 4초 DoT)
+                    </li>
+                    <li>
+                      <strong>티어 4세트:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 격노 중 공격력 추가 8% 증가
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚠️ 분노 관리 전략
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>이상적 범위:</strong> 40-60 분노 유지 (유연성 확보)
+                    </li>
+                    <li>
+                      <strong>분노 생성:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 8 / <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 12 / <SkillIcon skill={skillData.charge} textOnly={true} /> 20
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ff6b6b' }}>120 이상:</strong> 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (낭비 방지)
+                    </li>
+                    <li>
+                      <strong>Execute 구간:</strong> 분노 20-40으로 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 (분노 소모량 조절 가능)
+                    </li>
+                    <li>
+                      <strong><SkillIcon skill={skillData.recklessness} textOnly={true} /> 중:</strong> 분노 생성 100% 증가 - 적극적 소비 필요
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🌪️ 광역 전투 학살자 메커니즘
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명 추가 타격
+                    </li>
+                    <li>
+                      <strong>활용 순서:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> → <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> → <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> (각각 광역화)
+                    </li>
+                    <li>
+                      <strong style={{ color: '#32CD32' }}>Execute 구간:</strong> 소용돌이 버프로 <SkillIcon skill={skillData.execute} textOnly={true} />를 광역화하여 여러 적 동시 처형
+                    </li>
+                    <li>
+                      <strong><SkillIcon skill={skillData.thunderousRoar} textOnly={true} />:</strong> 12미터 광역 피해 + 8초 출혈 DoT (1.5분 쿨)
                     </li>
                   </ul>
                 </div>
@@ -1436,130 +1488,188 @@ const FuryWarriorGuide = () => {
             ) : (
               <>
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#32CD32', fontSize: '1.2rem', marginBottom: '15px' }}>
-                    🔥 <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활용 메커니즘
+                  <h4 style={{ color: '#4ECDC4', fontSize: '1.2rem', marginBottom: '15px' }}>
+                    ⚡ <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨다운 관리 (산왕 핵심)
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>최우선 쿨기:</strong> 재사용 대기시간마다 즉시 사용 (1분)
+                      <strong style={{ color: '#ffa500' }}>재사용 대기시간:</strong> 6초 (분노 30 소모)
                     </li>
                     <li>
-                      <strong>티어 2세트:</strong> 활성 중 악마 공격력 20% 증가 (8초)
+                      <strong>효과:</strong> 8미터 반경 번개 피해 + 20% 감속 10초
                     </li>
                     <li>
-                      <strong>티어 4세트:</strong> 리소스 1개 추가 생성
+                      <strong style={{ color: '#ff6b6b' }}>최우선 사용:</strong> 쿨다운 돌 때마다 즉시 사용 (딜 손실 최소화)
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>광역 효과:</strong> 최대 5 타겟 동시 피해
+                      <strong>티어 2세트:</strong> <SkillIcon skill={skillData.thunderousRoar} textOnly={true} /> 사용 시 <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨다운 6초 감소
                     </li>
                     <li>
-                      <strong>생존력:</strong> 입힌 피해의 50% 회복
+                      <strong style={{ color: '#32CD32' }}>티어 4세트:</strong> 타격한 적 1명당 공격력 2% 증가 (최대 10%, 5명 타격 시)
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#DC3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.implosion} textOnly={true} /> 타이밍 최적화
+                  <h4 style={{ color: '#ff6b6b', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ 격노 버프 유지율 극대화 (90%+ 목표)
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>최소 임프 수:</strong> 6마리 이상 (효율적)
+                      <strong style={{ color: '#ffa500' }}>격노 지속시간:</strong> 12초 (가속 25% + 피해 20% 증가)
                     </li>
                     <li>
-                      <strong>최적:</strong> 8~10마리 시 사용
+                      <strong>트리거 스킬:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> (4.5초 쿨) 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 치명타
                     </li>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>주의:</strong> 악마 폭군 직전에는 사용 금지
+                      <strong style={{ color: '#ff6b6b' }}>핵심 원칙:</strong> 격노 버프가 없으면 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (분노 80)
                     </li>
                     <li>
-                      3+ 타겟 광역 구간에서 지속적으로 순환
+                      <strong>산왕 특화:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 사용으로 분노 빠르게 소모 → 격노 유지에 유리
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#9b59b6', fontSize: '1.2rem', marginBottom: '15px' }}>
-                    ⚡ 핵심 메커니즘 버프 관리 (고급)
+                  <h4 style={{ color: '#28a745', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    💥 학살의 일격 중첩 관리
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>버프 유지:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활성 중 최대 악마 소환
+                      <strong>중첩 획득:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 시 1중첩
                     </li>
                     <li>
-                      <strong>공포사냥개:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 사용 직후 소환
+                      <strong style={{ color: '#ffa500' }}>5중첩 효과:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 20% 증가
                     </li>
                     <li>
-                      <strong>리소스 생성:</strong> 버프 중 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 2회 사용
+                      <strong style={{ color: '#ff6b6b' }}>핵심 타이밍:</strong> 5중첩 도달 시 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용하여 중첩 소모
                     </li>
                     <li>
-                      <strong>악마 폭군:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 버프 종료 전 사용
-                    </li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 광역 전투 최적화 (영웅특성2)
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <strong style={{ color: '#ff6b6b' }}>4+ 타겟:</strong> <SkillIcon skill={skillData.implosion} textOnly={true} /> 우선 순환
-                    </li>
-                    <li>
-                      <strong>리소스 생성:</strong> <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> → <SkillIcon skill={skillData.implosion} textOnly={true} /> 반복
-                    </li>
-                    <li>
-                      <strong style={{ color: '#32CD32' }}>핵심 메커니즘:</strong> 광역 구간 시작 시 최우선 사용
-                    </li>
-                    <li>
-                      <SkillIcon skill={skillData.doom} textOnly={true} /> DoT 유지 (30초 재사용)
+                      <strong>산왕 전략:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 동안 중첩 쌓기 → 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> 폭발
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🛡️ 생존력 활용
+                    ⚔️ 잔혹한 마무리 프락 활용
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> - 피해의 50% 생명력 회복
+                      <strong>프락 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
                     </li>
                     <li>
-                      <SkillIcon skill={skillData.darkPact} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.darkPact} textOnly={true} /> - 생명력 20% 희생하여 400% 보호막 (1분 쿨기)
+                      <strong style={{ color: '#ffa500' }}>효과:</strong> 다음 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 피해 크게 증가 + 재사용 대기시간 초기화
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>추천:</strong> 큰 피해 예상 시 미리 사용
+                      <strong style={{ color: '#ff6b6b' }}>최우선 사용:</strong> 버프 활성 시 즉시 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 (버프 낭비 방지)
+                    </li>
+                    <li>
+                      <strong>우선순위:</strong> 잔혹한 마무리 > <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > 다른 스킬
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#9b59b6', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🔥 쿨기 동기화 최적화 (산왕)
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>표준 버스트:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> + <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 동시
+                    </li>
+                    <li>
+                      <strong><SkillIcon skill={skillData.championsSpear} textOnly={true} /> 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 직후 사용 (분노 10 생성 + 4초 DoT)
+                    </li>
+                    <li>
+                      <strong style={{ color: '#4ECDC4' }}>티어 세트 시너지:</strong> <SkillIcon skill={skillData.thunderousRoar} textOnly={true} /> → <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 6초 감소 → 즉시 재사용
+                    </li>
+                    <li>
+                      <strong>버스트 중 우선순위:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > 학살의 일격 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} />
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚠️ 분노 관리 전략 (산왕)
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>이상적 범위:</strong> 50-70 분노 유지 (<SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 30 + <SkillIcon skill={skillData.rampage} textOnly={true} /> 80)
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ff6b6b' }}>분노 부족 방지:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 시 분노 30 이상 확보 필수
+                    </li>
+                    <li>
+                      <strong>우선순위:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 유지 > 분노 낭비 방지 (120+)
+                    </li>
+                    <li>
+                      <strong><SkillIcon skill={skillData.recklessness} textOnly={true} /> 중:</strong> 분노 생성 100% 증가 - <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 2-3회 사용 가능
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🌪️ 광역 전투 산왕 메커니즘
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#4ECDC4' }}><SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 광역:</strong> 8미터 반경 모든 적 타격 (5명 타격 시 티어 4세트 최대 효과)
+                    </li>
+                    <li>
+                      <strong>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명 추가 타격
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>광역 순환:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> → <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> → <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> → <SkillIcon skill={skillData.bloodthirst} textOnly={true} />
+                    </li>
+                    <li>
+                      <strong><SkillIcon skill={skillData.thunderousRoar} textOnly={true} />:</strong> 광역 DoT + <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 6초 감소 (즉시 재사용)
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🎯 처형 표식 & Execute 최적화
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>처형 표식:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 시 1중첩 (최대 3중첩)
+                    </li>
+                    <li>
+                      <strong>2중첩 이상:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 피해 20% 증가
+                    </li>
+                    <li>
+                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프락:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
+                    </li>
+                    <li>
+                      <strong>Execute 구간:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.rampage} textOnly={true} />
                     </li>
                   </ul>
                 </div>
               </>
             )}
 
-            <div style={{ marginBottom: '20px' }}>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>
-                <SkillIcon skill={skillData.summonDemonicTyrant} size="small" className={styles.inlineIcon} />
-                <SkillIcon skill={skillData.summonDemonicTyrant} textOnly={true} /> 버스트 최적화
-              </h4>
-              <ul style={{ lineHeight: '1.8' }}>
-                <li>악마 최대 소환 후 사용 - 날뛰는 임프 8~10마리 + 공포사냥개</li>
-                <li>모든 악마 지속시간 15초 연장 + 공격력 25% 증가</li>
-                <li>장신구/물약과 함께 사용하여 딜 극대화</li>
-                <li>버스트 윈도우 동안 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> (스킬 강화 5중첩) 우선 사용</li>
-              </ul>
-            </div>
-
             <div>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>리소스 관리</h4>
+              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>공통 생존 메커니즘</h4>
               <ul style={{ lineHeight: '1.8' }}>
-                <li>이상적 유지: 2~3개 (최대 5개)</li>
-                <li><SkillIcon skill={skillData.shadowBolt} textOnly={true} />로 +1 조각 생성 (2초 시전)</li>
-                <li><SkillIcon skill={skillData.demonbolt} textOnly={true} />로 +2 조각 생성 (4.5초 시전, 스킬 강화 5중첩 시)</li>
-                <li><SkillIcon skill={skillData.soulStrike} textOnly={true} />로 +1 조각 생성 (10초 재사용)</li>
-                <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 5개 상태에서 추가 생성 시 손실 - 즉시 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용</li>
+                <li>
+                  <SkillIcon skill={skillData.diebytheSword} size="small" className={styles.inlineIcon} />
+                  <SkillIcon skill={skillData.diebytheSword} textOnly={true} /> - 8초간 받는 피해 30% 감소 + 100% 무기 막기 (2분 쿨)
+                </li>
+                <li>
+                  <SkillIcon skill={skillData.rallyingCry} size="small" className={styles.inlineIcon} />
+                  <SkillIcon skill={skillData.rallyingCry} textOnly={true} /> - 파티 전체 최대 생명력 10% 증가 10초 (3분 쿨)
+                </li>
+                <li>
+                  <SkillIcon skill={skillData.berserkerRage} size="small" className={styles.inlineIcon} />
+                  <SkillIcon skill={skillData.berserkerRage} textOnly={true} /> - 공포/혼절 해제 및 면역 6초 (1분 쿨)
+                </li>
+                <li>
+                  <strong style={{ color: '#ffa500' }}>생명력 회복:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 사용 시 생명력 3% 회복
+                </li>
               </ul>
             </div>
           </div>
