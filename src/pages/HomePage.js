@@ -45,20 +45,13 @@ const ShieldLogo = styled.div`
 
   @keyframes floatGlow {
     0%, 100% {
-      transform: translateY(0) scale(1);
-      filter: drop-shadow(0 0 20px rgba(243, 139, 168, 0.3));
+      filter: drop-shadow(0 0 20px rgba(243, 139, 168, 0.4));
     }
-    25% {
-      transform: translateY(-8px) scale(1.02);
-      filter: drop-shadow(0 0 30px rgba(243, 139, 168, 0.5));
+    33% {
+      filter: drop-shadow(0 0 25px rgba(203, 166, 247, 0.5));
     }
-    50% {
-      transform: translateY(0) scale(1);
-      filter: drop-shadow(0 0 25px rgba(203, 166, 247, 0.4));
-    }
-    75% {
-      transform: translateY(-8px) scale(1.02);
-      filter: drop-shadow(0 0 30px rgba(167, 139, 250, 0.5));
+    66% {
+      filter: drop-shadow(0 0 25px rgba(167, 139, 250, 0.5));
     }
   }
 
