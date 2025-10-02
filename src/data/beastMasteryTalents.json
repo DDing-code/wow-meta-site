@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "class": "사냥꾼",
+    "spec": "야수",
+    "version": "11.0.5",
+    "lastUpdated": "2024-12-26T00:00:00Z"
+  },
+  "classTalentTree": {
+    "nodes": [
+      {
+        "id": "class_193530",
+        "spellId": 193530,
+        "name": "야생의 상",
+        "description": "야생의 상 효과가 활성화되어 있는 동안 너와 너의 야수의 이동 속도가 30% 증가합니다.",
+        "icon": "spell_druid_mastershapeshifter",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 0 },
+        "shape": "circle",
+        "type": "passive",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_109215",
+        "spellId": 109215,
+        "name": "신비한 사격",
+        "description": "20의 집중을 생성하고 신비 피해를 입힙니다.",
+        "icon": "ability_hunter_markedfordeath",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 1 },
+        "shape": "circle",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_186265",
+        "spellId": 186265,
+        "name": "거북의 상",
+        "description": "8초 동안 받는 모든 피해를 30% 감소시킵니다.",
+        "icon": "ability_hunter_pet_turtle",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 1 },
+        "shape": "circle",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_109304",
+        "spellId": 109304,
+        "name": "활기",
+        "description": "너와 너의 야수를 즉시 치유하고 3초 동안 추가로 치유합니다.",
+        "icon": "ability_hunter_cat",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 2 },
+        "shape": "circle",
+        "type": "active",
+        "prerequisites": ["class_193530"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "class_260331",
+        "spellId": 260331,
+        "name": "이동 공격",
+        "description": "이동하면서 모든 사격 기술을 사용할 수 있습니다.",
+        "icon": "ability_hunter_snipershot",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 3 },
+        "shape": "square",
+        "type": "passive",
+        "prerequisites": ["class_109215"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "class_264656",
+        "spellId": 264656,
+        "name": "길잡이",
+        "description": "이동 속도가 5% 증가합니다.",
+        "icon": "ability_hunter_pathfinding",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 3 },
+        "shape": "square",
+        "type": "passive",
+        "prerequisites": ["class_186265"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "class_53271",
+        "spellId": 53271,
+        "name": "사냥꾼의 징표",
+        "description": "대상을 표시하여 너와 너의 야수가 입히는 피해를 5% 증가시킵니다.",
+        "icon": "ability_hunter_markedfordeath",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 4 },
+        "shape": "circle",
+        "type": "active",
+        "prerequisites": ["class_109304"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "class_264332",
+        "spellId": 264332,
+        "name": "타고난 리더",
+        "description": "소환수의 최대 생명력이 10% 증가합니다.",
+        "icon": "ability_hunter_separationanxiety",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 5 },
+        "shape": "square",
+        "type": "passive",
+        "prerequisites": ["class_260331"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "class_109248",
+        "spellId": 109248,
+        "name": "속박의 사격",
+        "description": "대상을 5초 동안 속박합니다.",
+        "icon": "spell_shaman_bindelemental",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 5 },
+        "shape": "circle",
+        "type": "active",
+        "prerequisites": ["class_264656"],
+        "locked": false,
+        "available": false
+      }
+    ],
+    "edges": [
+      { "from": "class_193530", "to": "class_109304", "type": "normal" },
+      { "from": "class_109215", "to": "class_260331", "type": "normal" },
+      { "from": "class_186265", "to": "class_264656", "type": "normal" },
+      { "from": "class_109304", "to": "class_53271", "type": "normal" },
+      { "from": "class_260331", "to": "class_264332", "type": "normal" },
+      { "from": "class_264656", "to": "class_109248", "type": "normal" }
+    ],
+    "config": {
+      "gridSize": { "rows": 10, "cols": 3 },
+      "maxPoints": 31,
+      "requiredLevel": 10
+    }
+  },
+  "specTalentTree": {
+    "nodes": [
+      {
+        "id": "spec_217200",
+        "spellId": 217200,
+        "name": "날카로운 사격",
+        "description": "대상에게 날카로운 화살을 발사하여 피해를 입히고 8초 동안 지속되는 중첩을 남깁니다.",
+        "icon": "ability_hunter_barbedshot",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 0 },
+        "shape": "hex",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "spec_34026",
+        "spellId": 34026,
+        "name": "처치 명령",
+        "description": "너의 야수에게 대상을 공격하도록 명령하여 큰 피해를 입힙니다.",
+        "icon": "ability_hunter_killcommand",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 1 },
+        "shape": "hex",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "spec_193532",
+        "spellId": 193532,
+        "name": "광기",
+        "description": "야수가 4회의 추가 공격을 가합니다.",
+        "icon": "ability_hunter_bestialdiscipline",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 1 },
+        "shape": "hex",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "spec_19574",
+        "spellId": 19574,
+        "name": "야수의 격노",
+        "description": "15초 동안 너와 너의 야수의 가속이 30% 증가하고 집중 소비량이 50% 감소합니다.",
+        "icon": "ability_druid_ferociousbite",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 2 },
+        "shape": "hex",
+        "type": "active",
+        "prerequisites": ["spec_217200"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "spec_321530",
+        "spellId": 321530,
+        "name": "붉은피",
+        "description": "처치 명령이 출혈 효과를 남겁니다.",
+        "icon": "ability_hunter_bloodshed",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 3 },
+        "shape": "hex",
+        "type": "passive",
+        "prerequisites": ["spec_34026"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "spec_120679",
+        "spellId": 120679,
+        "name": "광포한 야수",
+        "description": "야수의 격노가 추가 야수를 소환합니다.",
+        "icon": "spell_druid_primaltenacity",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 3 },
+        "shape": "hex",
+        "type": "passive",
+        "prerequisites": ["spec_193532"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "spec_270323",
+        "spellId": 270323,
+        "name": "야생의 부름",
+        "description": "2분 동안 여러 야수를 소환하여 싸우게 합니다.",
+        "icon": "ability_hunter_callofthewild",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 5 },
+        "shape": "star",
+        "type": "active",
+        "prerequisites": ["spec_19574"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "spec_359844",
+        "spellId": 359844,
+        "name": "무리의 리더",
+        "description": "날카로운 사격이 추가로 1초씩 야수의 격노 지속시간을 증가시킵니다.",
+        "icon": "ability_hunter_longevity",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 6 },
+        "shape": "square",
+        "type": "passive",
+        "prerequisites": ["spec_321530"],
+        "locked": false,
+        "available": false
+      },
+      {
+        "id": "spec_378007",
+        "spellId": 378007,
+        "name": "피의 광분",
+        "description": "야수의 격노 동안 날카로운 사격의 재사용 대기시간이 20% 감소합니다.",
+        "icon": "ability_druid_primalagression",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 6 },
+        "shape": "circle",
+        "type": "passive",
+        "prerequisites": ["spec_120679"],
+        "locked": false,
+        "available": false
+      }
+    ],
+    "edges": [
+      { "from": "spec_217200", "to": "spec_19574", "type": "normal" },
+      { "from": "spec_34026", "to": "spec_321530", "type": "normal" },
+      { "from": "spec_193532", "to": "spec_120679", "type": "normal" },
+      { "from": "spec_19574", "to": "spec_270323", "type": "normal" },
+      { "from": "spec_321530", "to": "spec_359844", "type": "normal" },
+      { "from": "spec_120679", "to": "spec_378007", "type": "normal" }
+    ],
+    "config": {
+      "gridSize": { "rows": 10, "cols": 3 },
+      "maxPoints": 30,
+      "requiredLevel": 10
+    }
+  },
+  "heroTalentTrees": {
+    "pack_leader": {
+      "name": "무리의 지도자",
+      "nodes": [
+        {
+          "id": "hero_pl_1",
+          "name": "우두머리의 포효",
+          "description": "야수의 격노 사용 시 모든 소환수가 15% 추가 피해를 입힙니다.",
+          "icon": "ability_hunter_longevity",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 1, "y": 0 },
+          "shape": "star",
+          "type": "passive",
+          "prerequisites": [],
+          "locked": false,
+          "available": true
+        },
+        {
+          "id": "hero_pl_2",
+          "name": "무리 전술",
+          "description": "소환수가 3마리 이상일 때 가속이 5% 증가합니다.",
+          "icon": "ability_hunter_catlikereflexes",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 0, "y": 1 },
+          "shape": "diamond",
+          "type": "passive",
+          "prerequisites": ["hero_pl_1"],
+          "locked": false,
+          "available": false
+        },
+        {
+          "id": "hero_pl_3",
+          "name": "야생의 심장",
+          "description": "야수의 최대 생명력이 20% 증가합니다.",
+          "icon": "spell_nature_shamanrage",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 2, "y": 1 },
+          "shape": "diamond",
+          "type": "passive",
+          "prerequisites": ["hero_pl_1"],
+          "locked": false,
+          "available": false
+        }
+      ],
+      "edges": [
+        { "from": "hero_pl_1", "to": "hero_pl_2", "type": "normal" },
+        { "from": "hero_pl_1", "to": "hero_pl_3", "type": "normal" }
+      ],
+      "config": {
+        "gridSize": { "rows": 4, "cols": 3 },
+        "maxPoints": 10
+      }
+    },
+    "dark_ranger": {
+      "name": "어둠 순찰자",
+      "nodes": [
+        {
+          "id": "hero_dr_1",
+          "name": "검은 화살",
+          "description": "사격 계열 기술이 암흑 피해를 추가로 입힙니다.",
+          "icon": "ability_theblackarrow",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 1, "y": 0 },
+          "shape": "diamond",
+          "type": "passive",
+          "prerequisites": [],
+          "locked": false,
+          "available": true
+        },
+        {
+          "id": "hero_dr_2",
+          "name": "그림자 야수",
+          "description": "날카로운 사격이 그림자 야수를 소환할 확률이 10% 있습니다.",
+          "icon": "ability_warlock_soulburn",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 0, "y": 1 },
+          "shape": "star",
+          "type": "passive",
+          "prerequisites": ["hero_dr_1"],
+          "locked": false,
+          "available": false
+        }
+      ],
+      "edges": [
+        { "from": "hero_dr_1", "to": "hero_dr_2", "type": "normal" }
+      ],
+      "config": {
+        "gridSize": { "rows": 4, "cols": 3 },
+        "maxPoints": 10
+      }
+    }
+  }
+}

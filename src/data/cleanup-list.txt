@@ -1,0 +1,25 @@
+# 삭제할 중복 데이터베이스 파일 목록
+
+## 중복 스킬 데이터베이스 (twwS3FinalCleanedDatabase.js 유지)
+- twwS3SkillDatabase.js
+- twwS3RefinedSkillDatabase.js
+- twwS3ImprovedSkillDatabase.js
+- twwS3AccurateSkillDatabase.js
+- twwS3ManualEnhancedDatabase.js
+- twwS3EnhancedFinalDatabase.js
+- twwS3TalentEnhancedDatabase.js
+- twwS3FinalFixedDatabase.js
+- twwS3CleanedDatabase.js
+- finalSkillDatabase.js
+
+## 중복 가이드 템플릿 컴포넌트
+- src/components/MaxrollGuideTemplate.js
+- src/components/ImprovedMaxrollGuide.js
+- src/components/FinalMaxrollGuide.js
+- src/components/WowheadStyleGuide.js
+- src/components/ModernGuideTemplate.js
+
+## 유지할 파일
+- twwS3FinalCleanedDatabase.js (최종 사용 중)
+- GuideTemplate.js (통합 템플릿)
+- BeastMasteryGuideRestructured.js (AI 통합됨)

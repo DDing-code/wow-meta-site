@@ -1,0 +1,443 @@
+/* BeastMasteryGuide.module.css - CSS Module for Beast Mastery Hunter Guide */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.guideContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #0f1419;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 헤더 섹션 */
+.guideHeader {
+  background: linear-gradient(135deg, #1a1f2e 0%, #0a0e1a 100%);
+  padding: 40px;
+  text-align: center;
+  border-bottom: 3px solid #AAD372;
+  position: relative;
+}
+
+.guideTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+  background: linear-gradient(135deg, #AAD372 0%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.guideSubtitle {
+  font-size: 1.8rem;
+  color: #ffa500;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.patchInfo {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* 섹션 스타일 */
+.section {
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #AAD372;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #AAD372, transparent);
+}
+
+.sectionDescription {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+/* Tier Set 섹션 */
+.tierSetSection {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.tierTabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tierTab {
+  flex: 1;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tierTab:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: rgba(255, 107, 53, 0.3);
+}
+
+.tierTab.active {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #AAD372;
+  color: #ffa500;
+}
+
+.tierIcon {
+  font-size: 1.3rem;
+}
+
+.tierBonuses {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bonusItem {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.bonusItem:last-child {
+  margin-bottom: 0;
+}
+
+.bonusLabel {
+  color: #AAD372;
+  font-weight: 700;
+  min-width: 60px;
+}
+
+.bonusDescription {
+  color: #e2e8f0;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Subsection 스타일 */
+.subsection {
+  margin-bottom: 35px;
+}
+
+.subsectionTitle {
+  font-size: 1.5rem;
+  color: #AAD372;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Opener 섹션 */
+.openerNote {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.openerSequence {
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  padding: 15px 20px;
+}
+
+.sequenceLabel {
+  color: #ffa500;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* 로테이션 시퀀스 */
+.rotationSequence {
+  margin: 20px 0;
+}
+
+.skillSequence {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  color: #AAD372;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+/* Priority List */
+.priorityListWow {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.priorityListWow li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid #AAD372;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.priorityListWow li:hover {
+  background: rgba(255, 107, 53, 0.1);
+  transform: translateX(5px);
+}
+
+.priorityListWow li:last-child {
+  margin-bottom: 0;
+}
+
+.priorityNumber {
+  color: #AAD372;
+  font-weight: 700;
+  font-size: 1.2rem;
+  min-width: 25px;
+}
+
+.priorityDescription {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.skillText {
+  color: #ffa500;
+  font-weight: 600;
+}
+
+/* Deep Dive 섹션 */
+.deepDiveSection {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+  padding-top: 40px;
+}
+
+.deepDiveSubtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.deepDiveTitle {
+  font-size: 1.3rem;
+  color: #ffa500;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.deepDiveList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.deepDiveList li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: #e2e8f0;
+  line-height: 1.8;
+}
+
+.deepDiveList li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #AAD372;
+  font-size: 1.2rem;
+}
+
+.subList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 20px;
+}
+
+.subList li::before {
+  content: '◦';
+  color: #ffa500;
+}
+
+.exampleLabel {
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* 스킬 아이콘 */
+.skillIconWrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skillIconWrapper.inlineIcon {
+  margin: 0 4px;
+}
+
+.inlineIcon {
+  display: inline-flex !important;
+  vertical-align: middle;
+  margin: 0 4px;
+  align-items: center;
+}
+
+.skillIconWrapper img {
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inlineIcon img {
+  vertical-align: middle;
+}
+
+/* 스킬 텍스트 링크 스타일 */
+.skillTextLink {
+  transition: all 0.2s ease;
+}
+
+.skillTextLink:hover {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.passiveSkillBadge {
+  display: inline-block;
+  background: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-left: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 스킬 툴팁 */
+.skillTooltipWow {
+  min-width: 280px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .guideHeader {
+    padding: 30px 20px;
+  }
+
+  .guideTitle {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    padding: 25px 20px;
+  }
+
+  .rotationSequence {
+    padding-left: 0;
+  }
+
+  .sequenceLabel {
+    position: static;
+    margin-bottom: 10px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .guideTitle {
+    font-size: 2rem;
+  }
+
+  .guideSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .tierTabs {
+    flex-direction: column;
+  }
+
+  .skillSequence {
+    padding: 10px;
+  }
+
+  .skillTooltipWow {
+    min-width: 280px;
+  }
+}

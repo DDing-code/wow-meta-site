@@ -1,0 +1,413 @@
+{
+  "날카로운 사격": {
+    "id": 217200,
+    "koreanName": "날카로운 사격",
+    "englishName": "Barbed Shot",
+    "description": "대상에게 날카로운 화살을 발사하여 물리 피해를 입히고 8초 동안 지속 피해를 입힙니다. 펫의 공격 속도가 30% 증가합니다.",
+    "cooldown": "12초 (충전 2개)",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "resourceGain": "집중 20",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "광분": {
+    "id": 272790,
+    "koreanName": "광분",
+    "englishName": "Frenzy",
+    "description": "날카로운 사격이 펫에게 중첩 가능한 8초 동안 공격 속도를 8% 증가시키는 효과를 부여합니다. 최대 3중첩.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "야수의 격노": {
+    "id": 19574,
+    "koreanName": "야수의 격노",
+    "englishName": "Bestial Wrath",
+    "description": "15초 동안 사냥꾼과 펫의 피해량이 25% 증가하고 펫의 집중 소모량이 50% 감소합니다.",
+    "cooldown": "1.5분",
+    "castTime": "즉시 시전",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "살상 명령": {
+    "id": 34026,
+    "koreanName": "살상 명령",
+    "englishName": "Kill Command",
+    "description": "펫에게 대상을 즉시 공격하도록 명령하여 물리 피해를 입힙니다.",
+    "cooldown": "7.5초",
+    "castTime": "즉시 시전",
+    "range": "50미터",
+    "resourceCost": "집중 30",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "독사 쐐기": {
+    "id": 259491,
+    "koreanName": "독사 쐐기",
+    "englishName": "Cobra Shot",
+    "description": "대상에게 빠른 사격을 가해 물리 피해를 입힙니다. 살상 명령의 재사용 대기시간을 1초 감소시킵니다.",
+    "castTime": "1.8초",
+    "range": "40미터",
+    "resourceCost": "집중 35",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "야생의 상": {
+    "id": 359844,
+    "koreanName": "야생의 상",
+    "englishName": "Call of the Wild",
+    "description": "20초 동안 추가 펫을 소환하여 함께 전투에 참여시킵니다.",
+    "cooldown": "3분",
+    "castTime": "즉시 시전",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "유혈": {
+    "id": 321530,
+    "koreanName": "유혈",
+    "englishName": "Bloodshed",
+    "description": "펫의 다음 3회 공격이 추가 출혈 피해를 입힙니다.",
+    "cooldown": "1분",
+    "castTime": "즉시 시전",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "무리의 울부짖음": {
+    "id": 387110,
+    "koreanName": "무리의 울부짖음",
+    "englishName": "Howl of the Pack",
+    "description": "야생의 상 사용 시 추가로 2마리의 펫을 소환합니다.",
+    "type": "지속 효과",
+    "spec": "야수 (무리의 지도자)"
+  },
+  "게임을 앞서다": {
+    "id": 378944,
+    "koreanName": "게임을 앞서다",
+    "englishName": "Ahead of the Game",
+    "description": "날카로운 사격 사용 시 일정 확률로 다음 독사 쐐기가 즉시 시전됩니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "검은 화살": {
+    "id": 392061,
+    "koreanName": "검은 화살",
+    "englishName": "Black Arrow",
+    "description": "어둠 순찰자 표식을 남기는 강력한 암흑 화살을 발사합니다.",
+    "cooldown": "30초",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "type": "액티브",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "어둠 순찰자 표식": {
+    "id": 430703,
+    "koreanName": "어둠 순찰자 표식",
+    "englishName": "Dark Ranger's Mark",
+    "description": "대상에 어둠 표식을 남겨 받는 피해를 증가시킵니다.",
+    "type": "디버프",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "적막한 화살": {
+    "id": 430709,
+    "koreanName": "적막한 화살",
+    "englishName": "Bleak Arrows",
+    "description": "모든 화살 공격이 어둠 피해를 추가로 입힙니다.",
+    "type": "지속 효과",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "다이어 야수": {
+    "id": 120679,
+    "koreanName": "다이어 야수",
+    "englishName": "Dire Beast",
+    "description": "야생의 야수를 소환하여 8초 동안 적을 공격하게 합니다.",
+    "cooldown": "20초",
+    "castTime": "즉시 시전",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "살육": {
+    "id": 378016,
+    "koreanName": "살육",
+    "englishName": "Kill Cleave",
+    "description": "살상 명령이 대상 주위의 적들에게도 피해를 입힙니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "야수 군주": {
+    "id": 378007,
+    "koreanName": "야수 군주",
+    "englishName": "Beast Lord",
+    "description": "야생의 상이 추가 펫을 소환하고 지속시간이 증가합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "뱀 수렁": {
+    "id": 271788,
+    "koreanName": "뱀 수렁",
+    "englishName": "Serpent Sting",
+    "description": "대상에게 독을 주입하여 12초 동안 자연 피해를 입힙니다.",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "resourceCost": "집중 10",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "본능의 사격": {
+    "id": 378783,
+    "koreanName": "본능의 사격",
+    "englishName": "Instinctive Shot",
+    "description": "대상에게 빠른 사격을 가합니다. 광분 중첩마다 피해량이 증가합니다.",
+    "cooldown": "15초",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "resourceCost": "집중 20",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "사냥의 전율": {
+    "id": 257944,
+    "koreanName": "사냥의 전율",
+    "englishName": "Thrill of the Hunt",
+    "description": "날카로운 사격이 치명타로 적중하면 다음 살상 명령의 집중 소모가 10 감소합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "광야의 부름": {
+    "id": 378280,
+    "koreanName": "광야의 부름",
+    "englishName": "Call of the Alpha",
+    "description": "야수의 격노가 활성화되어 있는 동안 자동 사격이 20% 확률로 날카로운 사격의 재사용 대기시간을 초기화합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+
+  "사냥꾼의 징표": {
+    "id": 257284,
+    "koreanName": "사냥꾼의 징표",
+    "englishName": "Hunter's Mark",
+    "description": "대상을 표시하여 20초 동안 받는 피해를 5% 증가시킵니다.",
+    "cooldown": "없음",
+    "castTime": "즉시 시전",
+    "range": "100미터",
+    "type": "액티브",
+    "spec": "공용"
+  },
+  "마무리 사격": {
+    "id": 53351,
+    "koreanName": "마무리 사격",
+    "englishName": "Kill Shot",
+    "description": "체력이 20% 이하인 적에게 막대한 물리 피해를 입힙니다.",
+    "cooldown": "20초",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "resourceCost": "집중 10",
+    "type": "액티브",
+    "spec": "공용"
+  },
+  "야생 생존": {
+    "id": 281036,
+    "koreanName": "야생 생존",
+    "englishName": "Wilderness Survival",
+    "description": "엑실레이션 치유의 효과가 20% 증가합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "속보": {
+    "id": 109215,
+    "koreanName": "속보",
+    "englishName": "Posthaste",
+    "description": "후퇴 사용 후 4초간 이동 속도가 50% 증가합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "자연 치유": {
+    "id": 270581,
+    "koreanName": "자연 치유",
+    "englishName": "Natural Mending",
+    "description": "집중이 10 이하일 때 초당 2%의 생명력을 회복합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "타르 덫": {
+    "id": 187698,
+    "koreanName": "타르 덫",
+    "englishName": "Tar Trap",
+    "description": "타르를 뿌려 8초간 적의 이동 속도를 50% 감소시킵니다.",
+    "cooldown": "30초",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "type": "액티브",
+    "spec": "공용"
+  },
+  "향상된 덫": {
+    "id": 343247,
+    "koreanName": "향상된 덫",
+    "englishName": "Improved Traps",
+    "description": "덫의 발동 시간이 2초 감소합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "명사수": {
+    "id": 260309,
+    "koreanName": "명사수",
+    "englishName": "Master Marksman",
+    "description": "자동 사격이 10%의 확률로 집중을 5 생성합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "독사 쐐기": {
+    "id": 271788,
+    "koreanName": "독사 쐐기",
+    "englishName": "Serpent Sting",
+    "description": "대상에게 독을 주입하여 12초간 자연 피해를 입힙니다.",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "resourceCost": "집중 10",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "위협": {
+    "id": 19577,
+    "koreanName": "위협",
+    "englishName": "Intimidation",
+    "description": "펫이 대상을 5초간 기절시킵니다.",
+    "cooldown": "1분",
+    "castTime": "즉시 시전",
+    "range": "100미터",
+    "type": "액티브",
+    "spec": "야수"
+  },
+  "얼음 덫": {
+    "id": 187650,
+    "koreanName": "얼음 덫",
+    "englishName": "Freezing Trap",
+    "description": "대상을 최대 10초간 얼음에 가둡니다.",
+    "cooldown": "30초",
+    "castTime": "즉시 시전",
+    "range": "40미터",
+    "type": "액티브",
+    "spec": "공용"
+  },
+  "향상된 마무리 사격": {
+    "id": 343248,
+    "koreanName": "향상된 마무리 사격",
+    "englishName": "Improved Kill Shot",
+    "description": "마무리 사격의 재사용 대기시간이 60초 감소합니다.",
+    "type": "지속 효과",
+    "spec": "공용"
+  },
+  "적자생존": {
+    "id": 264735,
+    "koreanName": "적자생존",
+    "englishName": "Survival of the Fittest",
+    "description": "모든 피해를 20% 감소시킵니다.",
+    "cooldown": "3분",
+    "castTime": "즉시 시전",
+    "type": "액티브",
+    "spec": "공용"
+  },
+  "동물 동료": {
+    "id": 267116,
+    "koreanName": "동물 동료",
+    "englishName": "Animal Companion",
+    "description": "두 번째 펫을 소환하여 함께 전투합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "무리 지도자": {
+    "id": 378017,
+    "koreanName": "무리 지도자",
+    "englishName": "Pack Leader",
+    "description": "날카로운 사격의 재충전 속도가 20% 증가합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "피의 냄새": {
+    "id": 193532,
+    "koreanName": "피의 냄새",
+    "englishName": "Scent of Blood",
+    "description": "야수의 격노가 활성화되어 있는 동안 날카로운 사격이 2개 충전됩니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "치명적인 코브라": {
+    "id": 378244,
+    "koreanName": "치명적인 코브라",
+    "englishName": "Killer Cobra",
+    "description": "야수의 격노 동안 코브라 사격이 살상 명령의 재사용 대기시간을 2초 감소시킵니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "다이어 명령": {
+    "id": 378743,
+    "koreanName": "다이어 명령",
+    "englishName": "Dire Command",
+    "description": "살상 명령이 20% 확률로 5초 동안 다이어 야수를 소환합니다.",
+    "type": "지속 효과",
+    "spec": "야수"
+  },
+  "악독한 사냥": {
+    "id": 447262,
+    "koreanName": "악독한 사냥",
+    "englishName": "Vicious Hunt",
+    "description": "살상 명령이 2초간 대상의 이동 속도를 30% 감소시킵니다.",
+    "type": "지속 효과",
+    "spec": "야수 (무리의 지도자)"
+  },
+  "무리 조율": {
+    "id": 447265,
+    "koreanName": "무리 조율",
+    "englishName": "Pack Coordination",
+    "description": "날카로운 사격이 펫의 기본 집중 재생량을 100% 증가시킵니다.",
+    "type": "지속 효과",
+    "spec": "야수 (무리의 지도자)"
+  },
+  "야생 공격": {
+    "id": 447270,
+    "koreanName": "야생 공격",
+    "englishName": "Wild Attacks",
+    "description": "펫의 자동 공격이 5% 확률로 다음 살상 명령의 재사용 대기시간을 1초 감소시킵니다.",
+    "type": "지속 효과",
+    "spec": "야수 (무리의 지도자)"
+  },
+  "격렬한 공격": {
+    "id": 447273,
+    "koreanName": "격렬한 공격",
+    "englishName": "Furious Assault",
+    "description": "야수의 격노 동안 날카로운 사격의 피해가 60% 증가합니다.",
+    "type": "지속 효과",
+    "spec": "야수 (무리의 지도자)"
+  },
+  "그림자 사냥개": {
+    "id": 447415,
+    "koreanName": "그림자 사냥개",
+    "englishName": "Shadow Hounds",
+    "description": "검은 화살이 그림자 사냥개를 소환합니다.",
+    "type": "지속 효과",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "어둠의 부름": {
+    "id": 447418,
+    "koreanName": "어둠의 부름",
+    "englishName": "Darkness Calls",
+    "description": "살상 명령이 어둠 피해를 추가로 입힙니다.",
+    "type": "지속 효과",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "그림자 쇄도": {
+    "id": 447421,
+    "koreanName": "그림자 쇄도",
+    "englishName": "Shadow Surge",
+    "description": "날카로운 사격이 30% 확률로 어둠 순찰자 표식을 남깁니다.",
+    "type": "지속 효과",
+    "spec": "야수 (어둠 순찰자)"
+  },
+  "시들게 하는 사격": {
+    "id": 447424,
+    "koreanName": "시들게 하는 사격",
+    "englishName": "Withering Fire",
+    "description": "어둠 순찰자 표식이 있는 대상에 대한 모든 피해가 10% 증가합니다.",
+    "type": "지속 효과",
+    "spec": "야수 (어둠 순찰자)"
+  }
+}

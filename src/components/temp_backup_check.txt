@@ -1,0 +1,500 @@
+﻿import React, { useState, useEffect, useRef } from 'react';
+import ReactDOM from 'react-dom';
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { motion } from 'framer-motion';
+import { elementalShamanSkills } from '../data/elementalShamanSkillData';
+import styles from './DevastationEvokerGuide.module.css';
+import moduleEventBus from '../services/ModuleEventBus';
+import aiFeedbackService from '../services/AIFeedbackService';
+import externalGuideCollector from '../services/ExternalGuideCollector';
+import realtimeGuideUpdater from '../services/RealtimeGuideUpdater';
+import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import wowheadDescriptions from '../data/wowhead-descriptions.json';
+
+// ============================================================================
+// 🎯 가이드 설정
+// ============================================================================
+
+const GUIDE_CONFIG = {
+  // 기본 정보
+  className: '주술사',
+  classNameEn: 'Shaman',
+  specName: '정기',
+  specNameEn: 'Elemental',
+  specKey: 'elemental',
+
+  // 색상 테마
+  colors: {
+    primary: '#0070DE',              // 주술사 블루
+    secondary: '#1a1a2e',
+    background: '#0a0a0f',
+    surface: '#15151f',
+    text: '#e0e0e0',
+    subtext: '#a0a0a0',
+    accent: '#1E90FF',
+    border: '#2a2a3e',
+    hover: 'rgba(0, 112, 222, 0.1)',
+    success: '#4caf50',
+    danger: '#f44336',
+    warning: '#ff9800',
+  },
+
+  // 영웅특성 설정
+  heroTalents: {
+    farseer: {
+      key: 'farseer',
+      name: '선견자',
+      nameEn: 'Farseer',
+      icon: '🔮',
+      primaryColor: '#4fc3f7',
+      secondaryColor: '#29b6f6',
+      borderColor: 'rgba(79, 195, 247, 0.3)',
+      gradientStart: '#4fc3f7',
+      gradientEnd: '#29b6f6',
+    },
+    stormbringer: {
+      key: 'stormbringer',
+      name: '폭풍인도자',
+      nameEn: 'Stormbringer',
+      icon: '⚡',
+      primaryColor: '#ffeb3b',
+      secondaryColor: '#fbc02d',
+      borderColor: 'rgba(255, 235, 59, 0.3)',
+      gradientStart: '#ffeb3b',
+      gradientEnd: '#fbc02d',
+    }
+  },
+
+  // 리소스 시스템 정보
+  resource: {
+    name: '소용돌이',
+    nameEn: 'Maelstrom',
+    max: 100,
+    color: '#4fc3f7',
+  },
+
+  // 메타 정보
+  meta: {
+    patch: '11.2',
+    season: 'TWW 시즌3',
+    tier: 'A-Tier',
+    difficulty: '중급',
+    lastUpdate: '2025.09.29',
+    reviewer: '',
+  }
+};
+
+// ============================================================================
+// 🎨 스타일 컴포넌트
+// ============================================================================
+
+const unifiedTheme = {
+  colors: GUIDE_CONFIG.colors,
+  spacing: {
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    xxl: '3rem',
+  }
+};
+
+const UpdateToast = styled(motion.div)`
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: linear-gradient(135deg, ${props => props.theme.colors.primary} 0%, ${props => props.theme.colors.accent} 100%);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 112, 222, 0.4);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+
+  &::before {
+    content: '🔄';
+    font-size: 1.5rem;
+  }
+`;
+
+const PageWrapper = styled.div`
+  min-height: 100vh;
+  color: ${props => props.theme.colors.text};
+  display: flex;
+`;
+
+const Sidebar = styled.nav`
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  max-height: 80vh;
+  background: ${props => props.theme.colors.surface};
+  border-right: 1px solid ${props => props.theme.colors.border};
+  border-radius: 0 8px 8px 0;
+  overflow-y: auto;
+  padding: ${props => props.theme.spacing.lg} 0;
+  z-index: 100;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${props => props.theme.colors.secondary};
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.colors.primary};
+    border-radius: 3px;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const NavSection = styled.div`
+  padding: 0 ${props => props.theme.spacing.lg};
+`;
+
+const NavItem = styled.a`
+  display: block;
+  padding: ${props => props.theme.spacing.md};
+  margin: 0.2rem 0;
+  color: ${props => props.active ? props.theme.colors.primary : props.theme.colors.text};
+  text-decoration: none;
+  border-left: 3px solid ${props => props.active ? props.theme.colors.primary : 'transparent'};
+  background: ${props => props.active ? props.theme.colors.hover : 'transparent'};
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: ${props => props.active ? '600' : '400'};
+
+  &:hover {
+    background: ${props => props.theme.colors.hover};
+    color: ${props => props.theme.colors.primary};
+  }
+`;
+
+const SubNavItem = styled.a`
+  display: block;
+  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
+  padding-left: ${props => props.theme.spacing.xxl};
+  margin: 0.1rem 0;
+  color: ${props => props.active ? props.theme.colors.accent : props.theme.colors.subtext};
+  text-decoration: none;
+  border-left: 2px solid ${props => props.active ? props.theme.colors.accent : 'transparent'};
+  background: ${props => props.active ? 'rgba(30, 144, 255, 0.05)' : 'transparent'};
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: ${props => props.active ? '500' : '400'};
+
+  &:hover {
+    background: rgba(30, 144, 255, 0.05);
+    color: ${props => props.theme.colors.accent};
+  }
+`;
+
+const MainContent = styled.main`
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: ${props => props.theme.spacing.md} 0;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+    padding: ${props => props.theme.spacing.sm} 0;
+  }
+`;
+
+const ContentContainer = styled.div`
+  width: 100%;
+  max-width: 3000px;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+`;
+
+const Section = styled.section`
+  width: 100%;
+  margin-bottom: 1rem;
+  scroll-margin-top: 120px;
+`;
+
+const SectionHeader = styled.div`
+  background: linear-gradient(to right, ${props => props.theme.colors.hover}, transparent);
+  border-left: 4px solid ${props => props.theme.colors.primary};
+  padding: ${props => props.theme.spacing.md} ${props => props.theme.spacing.lg};
+  margin-bottom: 0.75rem;
+`;
+
+const SectionTitle = styled.h2`
+  font-size: 1.8rem;
+  color: ${props => props.theme.colors.primary};
+  margin: 0;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+`;
+
+const Card = styled.div`
+  background: ${props => props.theme.colors.surface};
+  border: 1px solid ${props => props.theme.colors.border};
+  border-radius: 8px;
+  padding: ${props => props.theme.spacing.lg} ${props => props.theme.spacing.xl};
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    padding: ${props => props.theme.spacing.md} ${props => props.theme.spacing.lg};
+    border-radius: 4px;
+  }
+`;
+
+const HeroCard = styled(Card)`
+  background: ${props => {
+    const heroType = props.heroType;
+    if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
+      const color = GUIDE_CONFIG.heroTalents.farseer.primaryColor;
+      const hex = color.replace('#', '');
+      const r = parseInt(hex.substring(0, 2), 16);
+      const g = parseInt(hex.substring(2, 4), 16);
+      const b = parseInt(hex.substring(4, 6), 16);
+      return `linear-gradient(135deg, rgba(${r}, ${g}, ${b}, 0.05), rgba(${r}, ${g}, ${b}, 0.02))`;
+    } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
+      const color = GUIDE_CONFIG.heroTalents.stormbringer.primaryColor;
+      const hex = color.replace('#', '');
+      const r = parseInt(hex.substring(0, 2), 16);
+      const g = parseInt(hex.substring(2, 4), 16);
+      const b = parseInt(hex.substring(4, 6), 16);
+      return `linear-gradient(135deg, rgba(${r}, ${g}, ${b}, 0.05), rgba(${r}, ${g}, ${b}, 0.02))`;
+    }
+    return props.theme.colors.surface;
+  }};
+  border: 2px solid ${props => {
+    const heroType = props.heroType;
+    if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
+      return GUIDE_CONFIG.heroTalents.farseer.borderColor;
+    } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
+      return GUIDE_CONFIG.heroTalents.stormbringer.borderColor;
+    }
+    return props.theme.colors.border;
+  }};
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: ${props => {
+      const heroType = props.heroType;
+      if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
+        return `linear-gradient(90deg, ${GUIDE_CONFIG.heroTalents.farseer.gradientStart}, ${GUIDE_CONFIG.heroTalents.farseer.gradientEnd})`;
+      } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
+        return `linear-gradient(90deg, ${GUIDE_CONFIG.heroTalents.stormbringer.gradientStart}, ${GUIDE_CONFIG.heroTalents.stormbringer.gradientEnd})`;
+      }
+      return 'transparent';
+    }};
+  }
+`;
+
+const GlobalStyle = createGlobalStyle`
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+// ============================================================================
+// 📦 스킬 아이콘 컴포넌트
+// ============================================================================
+
+const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, className = '', textOnly = false }) => {
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+  const iconRef = useRef(null);
+
+  const getEnhancedSkillData = () => {
+    if (!skill) return null;
+
+    const wowheadInfo = wowheadDescriptions[skill.id] ||
+                        wowheadDescriptions[skill.koreanName] ||
+                        wowheadDescriptions[skill.englishName];
+
+    return {
+      ...skill,
+      koreanName: skill.koreanName || skill.name,
+      englishName: skill.englishName,
+      description: wowheadInfo?.description || skill.description,
+      cooldown: wowheadInfo?.cooldown || skill.cooldown,
+      castTime: wowheadInfo?.castTime || skill.castTime,
+      range: wowheadInfo?.range || skill.range,
+      resourceCost: wowheadInfo?.resourceCost || skill.resourceCost,
+      resourceGain: wowheadInfo?.resourceGain || skill.resourceGain,
+      type: wowheadInfo?.type || skill.type,
+      spec: wowheadInfo?.spec || skill.spec
+    };
+  };
+
+  const enhancedSkill = getEnhancedSkillData();
+  if (!enhancedSkill) return null;
+
+  const sizeMap = {
+    small: '24px',
+    medium: '36px',
+    large: '48px'
+  };
+
+  const getSkillColor = () => {
+    if (enhancedSkill.type === 'passive' || enhancedSkill.type === '지속 효과' || enhancedSkill.type === '특성 패시브') {
+      return '#94a3b8';
+    } else if (enhancedSkill.type === 'talent' || enhancedSkill.type === '특성') {
+      return '#22c55e';
+    }
+    return '#4fc3f7';
+  };
+
+  const getTooltipPortal = () => {
+    let portal = document.getElementById('tooltip-portal');
+    if (!portal) {
+      portal = document.createElement('div');
+      portal.id = 'tooltip-portal';
+      document.body.appendChild(portal);
+    }
+    return portal;
+  };
+
+  const Tooltip = () => {
+    if (!isTooltipVisible || !iconRef.current) return null;
+
+    const rect = iconRef.current.getBoundingClientRect();
+    const tooltipWidth = 350;
+    const tooltipHeight = 280;
+
+    let top = rect.top - tooltipHeight - 10;
+    let left = rect.left + rect.width / 2 - tooltipWidth / 2;
+
+    if (top < 10) {
+      top = rect.bottom + 10;
+    }
+
+    if (left < 10) {
+      left = 10;
+    } else if (left + tooltipWidth > window.innerWidth - 10) {
+      left = window.innerWidth - tooltipWidth - 10;
+    }
+
+    const tooltipStyle = {
+      position: 'fixed',
+      top: `${top}px`,
+      left: `${left}px`,
+      backgroundColor: 'rgba(26, 26, 46, 0.98)',
+      backgroundImage: 'linear-gradient(135deg, rgba(79, 195, 247, 0.1) 0%, transparent 50%)',
+      border: '2px solid #4fc3f7',
+      borderRadius: '10px',
+      padding: '16px',
+      zIndex: 10000,
+      width: `${tooltipWidth}px`,
+      pointerEvents: 'none',
+      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(79, 195, 247, 0.2)',
+      animation: 'fadeIn 0.2s ease-in-out'
+    };
+
+    return ReactDOM.createPortal(
+      <div style={tooltipStyle}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          marginBottom: '12px',
+          paddingBottom: '12px',
+          borderBottom: '1px solid rgba(79, 195, 247, 0.2)'
+        }}>
+          <div style={{
+            padding: '4px',
+            background: 'linear-gradient(135deg, rgba(79, 195, 247, 0.2), transparent)',
+            borderRadius: '8px',
+            border: '1px solid rgba(79, 195, 247, 0.3)'
+          }}>
+            <img
+              src={`https://wow.zamimg.com/images/wow/icons/large/${enhancedSkill.icon}.jpg`}
+              alt={enhancedSkill.koreanName}
+              style={{
+                width: '44px',
+                height: '44px',
+                borderRadius: '6px',
+                display: 'block'
+              }}
+              onError={(e) => {
+                e.target.src = 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
+              }}
+            />
+          </div>
+          <div style={{ flex: 1 }}>
+            <div style={{
+              color: '#4fc3f7',
+              fontWeight: 'bold',
+              fontSize: '18px',
+              marginBottom: '2px',
+              textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)'
+            }}>
+              {enhancedSkill.koreanName}
+            </div>
+            {enhancedSkill.englishName && (
+              <div style={{ color: '#999', fontSize: '12px', fontStyle: 'italic' }}>
+                {enhancedSkill.englishName}
+              </div>
+            )}
+            {enhancedSkill.type && (
+              <div style={{
+                color: getSkillColor(),
+                fontSize: '11px',
+                marginTop: '2px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px'
+              }}>
+                {enhancedSkill.type} {enhancedSkill.spec && enhancedSkill.spec !== '공용' && `• ${enhancedSkill.spec}`}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {enhancedSkill.description && (
+          <div style={{
+            color: '#d8d8d8',
+            fontSize: '13px',

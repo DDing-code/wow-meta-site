@@ -1,0 +1,905 @@
+/* AdvancedSpellDatabasePage.css */
+
+/* 메인 컨테이너 */
+.advanced-spell-database-page {
+  padding: 20px;
+  background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* 테이블 스타일 */
+.skill-table-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.skill-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.skill-table thead {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.skill-table th {
+  padding: 15px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.skill-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.skill-table th.sortable:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-table tbody tr {
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.skill-table tbody tr:hover {
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.skill-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.skill-table td {
+  padding: 12px 15px;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* 아이콘 셀 */
+.icon-cell {
+  text-align: center;
+}
+
+.skill-icon-small {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-table tbody tr:hover .skill-icon-small {
+  transform: scale(1.1);
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* 이름 셀 */
+.skill-name-korean {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.skill-name-english {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* ID 셀 */
+.skill-id-badge {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 클래스 배지 */
+.class-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* 상세 버튼 */
+.detail-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.detail-button:active {
+  transform: scale(0.98);
+}
+
+/* 통계 바 */
+.stats-bar {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.stats-bar span {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.page-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  min-width: 45px;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* 로딩 상태 */
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  font-size: 18px;
+}
+
+/* 반응형 테이블 */
+@media (max-width: 1024px) {
+  .skill-table {
+    font-size: 12px;
+  }
+
+  .skill-table th,
+  .skill-table td {
+    padding: 8px 10px;
+  }
+
+  .skill-icon-small {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-table-container {
+    overflow-x: auto;
+  }
+
+  .skill-table {
+    min-width: 600px;
+  }
+}
+
+/* 헤더 */
+.database-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.database-header h1 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+}
+
+.subtitle {
+  color: #bbb;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* 고급 컨트롤 패널 */
+.advanced-control-panel {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 검색 섹션 */
+.search-section {
+  margin-bottom: 20px;
+}
+
+.advanced-search-input {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #444;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.advanced-search-input:focus {
+  border-color: #ffd700;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  outline: none;
+}
+
+.advanced-search-input::placeholder {
+  color: #888;
+}
+
+/* 필터 섹션 */
+.filter-section {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-select:hover {
+  border-color: #666;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.filter-select:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+.filter-select option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+/* 정렬 및 뷰 옵션 */
+.sort-view-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-btn {
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.sort-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.sort-btn.active {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+.view-options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.view-btn {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+
+.view-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.view-btn.active {
+  background: rgba(100, 200, 255, 0.2);
+  border-color: #64c8ff;
+  color: #64c8ff;
+}
+
+.detail-toggle {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.detail-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.detail-toggle.active {
+  background: rgba(0, 255, 150, 0.2);
+  border-color: #00ff96;
+  color: #00ff96;
+}
+
+/* 통계 바 */
+.stats-bar {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stat-item {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.stat-item strong {
+  color: #ffd700;
+  margin-right: 5px;
+}
+
+/* 스킬 컨테이너 */
+.skills-container {
+  margin-top: 20px;
+}
+
+/* 그리드 뷰 */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+/* 리스트 뷰 */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 컴팩트 뷰 */
+.skills-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+/* 스킬 카드 */
+.skill-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: #666;
+}
+
+/* 클래스별 카드 색상 (호버시) - 한글 클래스명 사용 */
+.skill-card.class-전사:hover { border-color: #C79C6E; box-shadow: 0 10px 30px rgba(199, 156, 110, 0.3); }
+.skill-card.class-성기사:hover { border-color: #F58CBA; box-shadow: 0 10px 30px rgba(245, 140, 186, 0.3); }
+.skill-card.class-사냥꾼:hover { border-color: #ABD473; box-shadow: 0 10px 30px rgba(171, 212, 115, 0.3); }
+.skill-card.class-도적:hover { border-color: #FFF569; box-shadow: 0 10px 30px rgba(255, 245, 105, 0.3); }
+.skill-card.class-사제:hover { border-color: #FFFFFF; box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3); }
+.skill-card.class-주술사:hover { border-color: #0070DE; box-shadow: 0 10px 30px rgba(0, 112, 222, 0.3); }
+.skill-card.class-마법사:hover { border-color: #69CCF0; box-shadow: 0 10px 30px rgba(105, 204, 240, 0.3); }
+.skill-card.class-흑마법사:hover { border-color: #9482C9; box-shadow: 0 10px 30px rgba(148, 130, 201, 0.3); }
+.skill-card.class-수도사:hover { border-color: #00FF96; box-shadow: 0 10px 30px rgba(0, 255, 150, 0.3); }
+.skill-card.class-드루이드:hover { border-color: #FF7D0A; box-shadow: 0 10px 30px rgba(255, 125, 10, 0.3); }
+.skill-card.class-악마사냥꾼:hover { border-color: #A330C9; box-shadow: 0 10px 30px rgba(163, 48, 201, 0.3); }
+.skill-card.class-죽음의기사:hover { border-color: #C41E3A; box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3); }
+.skill-card.class-기원사:hover { border-color: #33937F; box-shadow: 0 10px 30px rgba(51, 147, 127, 0.3); }
+
+/* 밝은 직업 클래스 카드 - 텍스트 가독성 향상 */
+.skill-card.class-성기사 .skill-name,
+.skill-card.class-사제 .skill-name,
+.skill-card.class-도적 .skill-name,
+.skill-card.class-수도사 .skill-name {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card.class-성기사 .skill-class,
+.skill-card.class-사제 .skill-class,
+.skill-card.class-도적 .skill-class,
+.skill-card.class-수도사 .skill-class,
+.skill-card.class-마법사 .skill-class {
+  background: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* 리스트 뷰 카드 */
+.skill-card.view-list {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.skill-card.view-list .skill-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.skill-card.view-list .skill-meta {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+/* 컴팩트 뷰 카드 */
+.skill-card.view-compact {
+  padding: 12px 15px;
+}
+
+.skill-card.view-compact .skill-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* 스킬 헤더 - 개선된 레이아웃 */
+.skill-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  position: relative;
+}
+
+/* 아이콘 영역 */
+.skill-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.skill-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  object-fit: cover;
+}
+
+.skill-icon-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+/* 스킬 정보 영역 */
+.skill-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.skill-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.skill-id {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: normal;
+}
+
+.skill-name-en {
+  font-size: 0.95rem;
+  color: #999;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.skill-class-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.95;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 스킬 메타 정보 */
+.skill-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.skill-type,
+.skill-spec,
+.skill-hero-talent {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.skill-type.type-기본 {
+  background: rgba(100, 100, 100, 0.3);
+  border: 1px solid #666;
+  color: #ccc;
+}
+
+.skill-type.type-특성 {
+  background: rgba(0, 150, 0, 0.3);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+.skill-type.type-영웅특성,
+.skill-type.type-영웅-특성 {
+  background: rgba(150, 0, 150, 0.3);
+  border: 1px solid #ff00ff;
+  color: #ff00ff;
+}
+
+.skill-type.type-pvp {
+  background: rgba(255, 0, 0, 0.3);
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.skill-spec {
+  background: rgba(0, 100, 200, 0.3);
+  border: 1px solid #0064c8;
+  color: #64c8ff;
+}
+
+.skill-hero-talent {
+  background: rgba(255, 150, 0, 0.3);
+  border: 1px solid #ff9600;
+  color: #ffb347;
+}
+
+/* 스킬 상세 정보 - 개선된 레이아웃 */
+.skill-details-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.skill-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+}
+
+.detail-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.detail-text {
+  font-size: 0.9rem;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skill-cooldown .detail-text {
+  color: #60a5fa;
+}
+
+.skill-range .detail-text {
+  color: #34d399;
+}
+
+.skill-cast-time .detail-text {
+  color: #a78bfa;
+}
+
+.skill-resource .detail-text {
+  color: #f472b6;
+}
+
+.skill-description {
+  color: #ddd;
+  line-height: 1.7;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+/* 로딩 스피너 */
+.loading-spinner {
+  text-align: center;
+  padding: 50px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #444;
+  border-top-color: #ffd700;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 결과 없음 */
+.no-results {
+  text-align: center;
+  padding: 50px;
+  color: #888;
+}
+
+.no-results p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.no-results-hint {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* 위로 가기 버튼 */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 18px;
+  background: rgba(255, 215, 0, 0.9);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover {
+  background: #ffd700;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .database-header h1 {
+    font-size: 2rem;
+  }
+
+  .advanced-control-panel {
+    padding: 15px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .sort-view-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sort-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .view-options {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-compact {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

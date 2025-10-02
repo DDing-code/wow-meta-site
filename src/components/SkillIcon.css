@@ -1,0 +1,251 @@
+/* 스킬 아이콘 스타일 */
+
+.skill-icon {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.skill-icon.bordered {
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
+    linear-gradient(135deg, #f4c430 0%, #ff6b6b 50%, #c084fc 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.skill-icon:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(244, 196, 48, 0.4);
+  z-index: 10;
+}
+
+.skill-icon img {
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* 로딩 상태 */
+.skill-icon.loading {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+}
+
+.skill-icon-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-top: 2px solid #f4c430;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 에러 상태 */
+.skill-icon-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #999;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 툴팁 */
+.skill-icon-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1000;
+  border: 1px solid #444;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+}
+
+/* 스킬 아이콘 그룹 */
+.skill-icon-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.skill-icon-group .skill-icon {
+  margin: 0;
+}
+
+.skill-icon-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #444;
+  border-radius: 4px;
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.skill-icon-more:hover {
+  border-color: #f4c430;
+  color: #f4c430;
+  background: rgba(244, 196, 48, 0.1);
+}
+
+/* 클래스 아이콘 */
+.class-icon {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.class-icon.bordered {
+  border: 2px solid #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.class-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(244, 196, 48, 0.3);
+}
+
+.class-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 품질별 테두리 색상 */
+.skill-icon.quality-poor { border-color: #9d9d9d; }
+.skill-icon.quality-common { border-color: #ffffff; }
+.skill-icon.quality-uncommon { border-color: #1eff00; }
+.skill-icon.quality-rare { border-color: #0070dd; }
+.skill-icon.quality-epic { border-color: #a335ee; }
+.skill-icon.quality-legendary { border-color: #ff8000; }
+.skill-icon.quality-artifact { border-color: #e6cc80; }
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .skill-icon-group {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .skill-icon-tooltip {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* 다크 테마 지원 */
+@media (prefers-color-scheme: dark) {
+  .skill-icon {
+    background: #0a0a0a;
+  }
+
+  .skill-icon.bordered {
+    border-color: #333;
+  }
+
+  .skill-icon-error {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* 애니메이션 효과 */
+.skill-icon.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 196, 48, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(244, 196, 48, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(244, 196, 48, 0);
+  }
+}
+
+/* 쿨다운 오버레이 */
+.skill-icon-cooldown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* 스택 카운터 */
+.skill-icon-stack {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f4c430;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  min-width: 14px;
+  text-align: center;
+}

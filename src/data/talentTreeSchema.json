@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "class": "Hunter",
+    "spec": "Beast Mastery",
+    "version": "11.0.5",
+    "lastUpdated": "2024-12-26T00:00:00Z"
+  },
+  "classTalentTree": {
+    "nodes": [
+      {
+        "id": "class_node_1",
+        "name": "Sample Talent 1",
+        "description": "This is a placeholder talent. TODO: Load actual talent data from game files",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 0 },
+        "shape": "circle",
+        "type": "passive",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_node_2",
+        "name": "Sample Talent 2",
+        "description": "Another placeholder talent. TODO: Implement data loading",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 2,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 0 },
+        "shape": "square",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_node_3",
+        "name": "Sample Talent 3",
+        "description": "Choice node example. TODO: Connect to actual talent database",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 0 },
+        "shape": "circle",
+        "type": "choice",
+        "prerequisites": [],
+        "choiceOf": ["class_node_3", "class_node_4"],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "class_node_4",
+        "name": "Sample Talent 4",
+        "description": "Alternative choice. TODO: Load from external source",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 2, "y": 0 },
+        "shape": "circle",
+        "type": "choice",
+        "prerequisites": [],
+        "choiceOf": ["class_node_3", "class_node_4"],
+        "locked": false,
+        "available": false
+      }
+    ],
+    "edges": [
+      {
+        "from": "class_node_1",
+        "to": "class_node_2",
+        "type": "normal"
+      }
+    ],
+    "config": {
+      "gridSize": { "rows": 11, "cols": 3 },
+      "maxPoints": 31,
+      "requiredLevel": 10
+    }
+  },
+  "specTalentTree": {
+    "nodes": [
+      {
+        "id": "spec_node_1",
+        "name": "Spec Talent 1",
+        "description": "Specialization talent placeholder. TODO: Import real talent data",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 1,
+        "currentRank": 0,
+        "position": { "x": 1, "y": 0 },
+        "shape": "hex",
+        "type": "active",
+        "prerequisites": [],
+        "locked": false,
+        "available": true
+      },
+      {
+        "id": "spec_node_2",
+        "name": "Spec Talent 2",
+        "description": "Another spec talent. TODO: Connect to data source",
+        "icon": "inv_misc_questionmark",
+        "maxRank": 3,
+        "currentRank": 0,
+        "position": { "x": 0, "y": 1 },
+        "shape": "hex",
+        "type": "passive",
+        "prerequisites": ["spec_node_1"],
+        "requiredPoints": 1,
+        "locked": true,
+        "available": false
+      }
+    ],
+    "edges": [
+      {
+        "from": "spec_node_1",
+        "to": "spec_node_2",
+        "type": "normal",
+        "requiredRank": 1
+      }
+    ],
+    "config": {
+      "gridSize": { "rows": 11, "cols": 3 },
+      "maxPoints": 30,
+      "requiredLevel": 10
+    }
+  },
+  "heroTalentTrees": {
+    "pack_leader": {
+      "name": "Pack Leader",
+      "nodes": [
+        {
+          "id": "hero_pl_1",
+          "name": "Hero Talent 1",
+          "description": "Hero talent for Pack Leader. TODO: Load actual hero talents",
+          "icon": "inv_misc_questionmark",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 1, "y": 0 },
+          "shape": "star",
+          "type": "passive",
+          "prerequisites": [],
+          "locked": false,
+          "available": true
+        }
+      ],
+      "edges": [],
+      "config": {
+        "gridSize": { "rows": 4, "cols": 3 },
+        "maxPoints": 10
+      }
+    },
+    "dark_ranger": {
+      "name": "Dark Ranger",
+      "nodes": [
+        {
+          "id": "hero_dr_1",
+          "name": "Dark Ranger Talent",
+          "description": "Dark Ranger hero talent. TODO: Import from game data",
+          "icon": "inv_misc_questionmark",
+          "maxRank": 1,
+          "currentRank": 0,
+          "position": { "x": 1, "y": 0 },
+          "shape": "diamond",
+          "type": "passive",
+          "prerequisites": [],
+          "locked": false,
+          "available": true
+        }
+      ],
+      "edges": [],
+      "config": {
+        "gridSize": { "rows": 4, "cols": 3 },
+        "maxPoints": 10
+      }
+    }
+  }
+}

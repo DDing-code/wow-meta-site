@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "totalSkills": 70,
+    "validatedCount": 70,
+    "errorCount": 0,
+    "warningCount": 1,
+    "successRate": "100.00%",
+    "patch": "11.2.0",
+    "season": "TWW Season 3",
+    "validationDate": "2025-09-22T00:49:37.683Z"
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "skillId": "46968",
+      "skillName": "칼날폭풍",
+      "warnings": [
+        "잘못된 시전 시간 형식: 채널링"
+      ]
+    }
+  ]
+}
