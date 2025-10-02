@@ -24,7 +24,7 @@ export const guidesMetadata = [
     title: '악마 흑마법사',
     patch: '11.2',
     difficulty: '고급',
-    updateDate: '2025-10-02',
+    updateDate: '2025-10-01',
     link: '/guide/warlock/demonology',
     classColor: '#8788EE'
   },
@@ -37,7 +37,7 @@ export const guidesMetadata = [
     title: '야수 사냥꾼',
     patch: '11.2',
     difficulty: '초급',
-    updateDate: '2025-10-02',
+    updateDate: '2025-09-29',
     link: '/guide/hunter/beast-mastery',
     classColor: '#AAD372'
   },
@@ -50,7 +50,7 @@ export const guidesMetadata = [
     title: '황폐 기원사',
     patch: '11.2',
     difficulty: '중급',
-    updateDate: '2025-10-02',
+    updateDate: '2025-09-29',
     link: '/guide/evoker/devastation',
     classColor: '#33937F'
   },
@@ -63,7 +63,7 @@ export const guidesMetadata = [
     title: '정기 주술사',
     patch: '11.2',
     difficulty: '중급',
-    updateDate: '2025-10-02',
+    updateDate: '2025-10-01',
     link: '/guide/shaman/elemental',
     classColor: '#0070DD'
   }
