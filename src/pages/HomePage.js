@@ -40,6 +40,32 @@ const ShieldLogo = styled.div`
     width: 100%;
     height: 100%;
     filter: drop-shadow(0 0 20px rgba(243, 139, 168, 0.3));
+    animation: floatGlow 6s ease-in-out infinite;
+  }
+
+  @keyframes floatGlow {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      filter: drop-shadow(0 0 20px rgba(243, 139, 168, 0.3));
+    }
+    25% {
+      transform: translateY(-8px) scale(1.02);
+      filter: drop-shadow(0 0 30px rgba(243, 139, 168, 0.5));
+    }
+    50% {
+      transform: translateY(0) scale(1);
+      filter: drop-shadow(0 0 25px rgba(203, 166, 247, 0.4));
+    }
+    75% {
+      transform: translateY(-8px) scale(1.02);
+      filter: drop-shadow(0 0 30px rgba(167, 139, 250, 0.5));
+    }
+  }
+
+  &:hover svg {
+    animation-play-state: paused;
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 40px rgba(243, 139, 168, 0.7));
   }
 `;
 
