@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { gameIcons, classIcons, WowIcon } from '../utils/wowIcons';
+import NewsSection from '../components/NewsSection';
+import RecentGuidesSection from '../components/RecentGuidesSection';
 
 const Container = styled.div`
   padding: 2rem 0;
@@ -291,6 +293,10 @@ function HomePage() {
           </PatchItem>
         </PatchContent>
       </PatchSection>
+
+      <RecentGuidesSection />
+
+      <NewsSection />
 
       <section>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>클래스 선택</h2>

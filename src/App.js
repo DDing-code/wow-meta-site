@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage';
 import LogAnalyzerPage from './pages/LogAnalyzerPage';
 import GuidePage from './pages/GuidePage';
+import NewsPage from './pages/NewsPage';
 import BeastMasteryGuideRestructured from './components/BeastMasteryGuideRestructured';
 import BeastMasteryIntegratedGuide from './components/BeastMasteryIntegratedGuide';
 import BeastMasteryLayoutIntegrated from './components/BeastMasteryLayoutIntegrated';
@@ -84,6 +85,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/guide" element={<GuidePage />} />
+              <Route path="/news" element={<NewsPage />} />
               <Route path="/class/hunter/beast-mastery" element={<BeastMasteryGuideRestructured />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/log-analyzer" element={<LogAnalyzerPage />} />
