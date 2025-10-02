@@ -39,7 +39,8 @@ export const guidesMetadata = [
     difficulty: '중급',
     updateDate: '2025-10-03',
     link: '/guide/warlock/destruction',
-    classColor: '#8788EE'
+    classColor: '#8788EE',
+    description: '강력한 직접 피해와 보장된 극대화를 활용한 대규모 공격 특화 전문화'
   },
   {
     id: 'hunter-beast-mastery',

@@ -122,9 +122,9 @@ export const destructionWarlockSkills = {
 
   cataclysm: {
     id: "152108",
-    koreanName: "대격변",
+    koreanName: "대재앙",
     englishName: "Cataclysm",
-    icon: "spell_fire_felrainoffire",
+    icon: "achievement_zone_cataclysm",
     description: "대상 지역에 암흑불길 피해를 입히고, 모든 적에게 제물 효과를 적용합니다.",
     cooldown: "30 초",
     castTime: "즉시",
@@ -139,18 +139,18 @@ export const destructionWarlockSkills = {
 
   channelDemonfire: {
     id: "196447",
-    koreanName: "악마불길 경로",
+    koreanName: "악마불 집중",
     englishName: "Channel Demonfire",
-    icon: "spell_fire_ragnaros_lavaboltwhirl",
-    description: "3초에 걸쳐 악마불길을 발사하여 대상에게 암흑불길 피해를 입힙니다. 제물에 걸린 대상을 우선적으로 공격합니다.",
+    icon: "spell_fire_ragnaros_lavaboltgreen",
+    description: "3초에 걸쳐 40미터 내 자신의 제물(지옥소환사 사용 시 쇠퇴)에 걸린 무작위 대상에게 15발의 지옥불 화살을 발사합니다. 화살은 각각 대상에게 화염 피해를 입히고, 주위의 적에게도 화염 피해를 입힙니다.",
     cooldown: "25 초",
-    castTime: "3 초 (경로)",
-    resourceCost: "해당 없음",
+    castTime: "집중 (3 초)",
+    resourceCost: "1.5% (기본 마나 중)",
     resourceGain: "없음",
     type: "특성",
     spec: "파괴",
     range: "40 야드",
-    school: "암흑불길"
+    school: "화염"
   },
 
   // === 주요 쿨다운 ===
@@ -191,7 +191,7 @@ export const destructionWarlockSkills = {
     id: "80240",
     koreanName: "대혼란",
     englishName: "Havoc",
-    icon: "spell_shadow_demoniccircleteleport",
+    icon: "ability_warlock_baneofhavoc",
     description: "대상에게 12초 동안 대혼란을 시전합니다. 다른 대상에게 사용한 단일 대상 주문이 대혼란에 걸린 대상에게도 60%의 피해를 입힙니다.",
     cooldown: "30 초",
     castTime: "즉시",
@@ -247,6 +247,44 @@ export const destructionWarlockSkills = {
     maxStacks: 8
   },
 
+  blackenedSoul: {
+    id: "440043",
+    koreanName: "그을린 영혼",
+    englishName: "Blackened Soul",
+    icon: "spell_shadow_shadesofdarkness",
+    description: "쇠퇴의 피해가 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  malevolence: {
+    id: "442726",
+    koreanName: "악의",
+    englishName: "Malevolence",
+    icon: "spell_shadow_antishadow",
+    description: "다음 쇠퇴의 중첩 수를 크게 증가시킵니다.",
+    cooldown: "60 초",
+    castTime: "즉시",
+    resourceCost: "해당 없음",
+    resourceGain: "없음",
+    type: "영웅 특성",
+    spec: "파괴"
+  },
+
+  xalansCruelty: {
+    id: "440040",
+    koreanName: "자란의 잔혹함",
+    englishName: "Xalan's Cruelty",
+    icon: "spell_fire_twilightcano",
+    description: "화염 및 암흑 피해가 증폭됩니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
   // === 악마학자 영웅 특성 관련 ===
   motherOfChaos: {
     id: "432794",
@@ -269,6 +307,134 @@ export const destructionWarlockSkills = {
     cooldown: "해당 없음",
     castTime: "패시브",
     type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  demonicArt: {
+    id: "432794",
+    koreanName: "악마의 예술",
+    englishName: "Demonic Art",
+    icon: "spell_warlock_demonsoul",
+    description: "악마학자 영웅 특성의 핵심 패시브입니다. 영혼의 조각을 소비하면 악마의 예술 효과가 발동되어 다음 혼돈의 화살의 피해가 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  diabolicRitual: {
+    id: "428514",
+    koreanName: "악마의 의식",
+    englishName: "Diabolic Ritual",
+    icon: "spell_shadow_demonicempathy",
+    description: "악마학자의 핵심 메커니즘입니다. 특정 주문을 시전하면 악마의 의식 진행도가 쌓이며, 완료 시 강력한 악마 효과를 발동합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  touchOfRancora: {
+    id: "429893",
+    koreanName: "원한의 손길",
+    englishName: "Touch of Rancora",
+    icon: "spell_shadow_ritualofsacrifice",
+    description: "주문 피해가 증가하고 시전 시간이 감소합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  abyssalDominion: {
+    id: "429798",
+    koreanName: "심연의 지배",
+    englishName: "Abyssal Dominion",
+    icon: "spell_fire_felflamering",
+    description: "지옥불정령이 강화되어 더 강력한 피해를 입힙니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "영웅 특성 (패시브)",
+    spec: "파괴"
+  },
+
+  // === 주요 패시브 특성 ===
+  roaringBlaze: {
+    id: "205184",
+    koreanName: "울부짖는 불길",
+    englishName: "Roaring Blaze",
+    icon: "inv_infernalbrimstone",
+    description: "점화가 3초 동안 대상에게 울부짖는 불길 효과를 적용합니다. 울부짖는 불길에 걸린 대상에게 제물 또는 쇠퇴의 피해가 25%만큼 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "특성 (패시브)",
+    spec: "파괴",
+    duration: "3초"
+  },
+
+  eradication: {
+    id: "196412",
+    koreanName: "파멸",
+    englishName: "Eradication",
+    icon: "spell_shadow_shadowfury",
+    description: "혼돈의 화살 또는 그림자 화상이 6초 동안 대상에게 파멸 효과를 적용합니다. 파멸에 걸린 대상에게 시전하는 주문의 시전 속도가 10%만큼 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "특성 (패시브)",
+    spec: "파괴",
+    duration: "6초"
+  },
+
+  ritualOfRuin: {
+    id: "387156",
+    koreanName: "파멸의 의식",
+    englishName: "Ritual of Ruin",
+    icon: "spell_shadow_twilight",
+    description: "영혼의 조각을 15개 소비할 때마다 다음 혼돈의 화살 또는 불의 비가 영혼의 조각을 소비하지 않고 피해가 50%만큼 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "특성 (패시브)",
+    spec: "파괴"
+  },
+
+  infernalBolt: {
+    id: "434506",
+    koreanName: "지옥불 화살",
+    englishName: "Infernal Bolt",
+    icon: "spell_fel_firebolt",
+    description: "심연의 지옥불로 타오르는 화살을 날려 적 대상에게 화염 피해를 입히고 영혼의 조각 3개를 생성합니다. 혼돈의 어머니가 소각을 강화하여 지옥불 화살로 전환시킵니다.",
+    cooldown: "해당 없음",
+    castTime: "즉시",
+    resourceCost: "해당 없음",
+    resourceGain: "영혼의 조각 3개",
+    type: "특성 (지옥불정령 강화)",
+    spec: "파괴",
+    range: "40 야드",
+    school: "화염",
+    condition: "영혼의 조각이 3개 미만일 때 사용 가능"
+  },
+
+  demonfireInfusion: {
+    id: "456946",
+    koreanName: "악마불 주입",
+    englishName: "Demonfire Infusion",
+    icon: "spell_fire_ragnaros_lavaboltwhirl",
+    description: "악마불 집중의 효과가 강화됩니다. 발사되는 화살의 수가 증가하고 피해가 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "특성 (패시브)",
+    spec: "파괴"
+  },
+
+  decimation: {
+    id: "457555",
+    koreanName: "섬멸",
+    englishName: "Decimation",
+    icon: "spell_fire_felflamebolt",
+    description: "대상의 생명력이 50% 이하일 때 영혼의 불꽃이 즉시 시전되며 피해가 증가합니다.",
+    cooldown: "해당 없음",
+    castTime: "패시브",
+    type: "특성 (패시브)",
     spec: "파괴"
   },
 
