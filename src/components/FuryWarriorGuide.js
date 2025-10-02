@@ -1137,6 +1137,65 @@ const FuryWarriorGuide = () => {
   // SkillIcon을 내부에서 사용할 수 있도록 설정
   const SkillIcon = SkillIconComponent;
 
+  // 텍스트에서 스킬명을 찾아 SkillIcon으로 교체하는 헬퍼 함수
+  const renderTextWithSkillIcons = (text) => {
+    if (!text) return text;
+
+    // 스킬명과 스킬 데이터 매핑
+    const skillNameMap = {
+      '광란': skillData.rampage,
+      '피의 갈증': skillData.bloodthirst,
+      '분노의 강타': skillData.ragingBlow,
+      '마무리 일격': skillData.execute,
+      '소용돌이': skillData.whirlwind,
+      '천둥의 포효': skillData.thunderousRoar,
+      '용사의 창': skillData.championsSpear,
+      '우레 작렬': skillData.thunderBlast,
+      '무모한 희생': skillData.recklessness,
+      '투신': skillData.avatar,
+      '돌진': skillData.charge,
+      '분노의 베기': skillData.furiousSlash,
+      '영웅의 도약': skillData.heroicLeap,
+      '들이치기': skillData.pummel,
+      '투사의 혼': skillData.diebytheSword
+    };
+
+    // 정규식 패턴 생성 (긴 스킬명부터 매칭되도록 정렬)
+    const skillNames = Object.keys(skillNameMap).sort((a, b) => b.length - a.length);
+    const skillPattern = new RegExp(skillNames.join('|'), 'g');
+
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+    let matchIndex = 0;
+
+    while ((match = skillPattern.exec(text)) !== null) {
+      // 스킬명 이전 텍스트
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+
+      // SkillIcon 추가
+      const skillName = match[0];
+      const skillObj = skillNameMap[skillName];
+      parts.push(
+        <React.Fragment key={`skill-${matchIndex}`}>
+          <SkillIcon skill={skillObj} textOnly />
+        </React.Fragment>
+      );
+
+      lastIndex = match.index + skillName.length;
+      matchIndex++;
+    }
+
+    // 나머지 텍스트
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? <>{parts}</> : text;
+  };
+
   const sectionRefs = {
     overview: useRef(null),
     rotation: useRef(null),
@@ -1732,7 +1791,7 @@ const FuryWarriorGuide = () => {
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <SkillIcon skill={item.skill} textOnly={true} />
-                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {item.desc}</span>
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {renderTextWithSkillIcons(item.desc)}</span>
                       </div>
                     </div>
                   </div>
@@ -1743,7 +1802,7 @@ const FuryWarriorGuide = () => {
                       <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
                       <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
                         {item.conditions.map((condition, idx) => (
-                          <li key={idx} style={{ color: '#ccc' }}>{condition}</li>
+                          <li key={idx} style={{ color: '#ccc' }}>{renderTextWithSkillIcons(condition)}</li>
                         ))}
                       </ul>
                     </div>
@@ -1759,7 +1818,7 @@ const FuryWarriorGuide = () => {
                       fontSize: '0.85rem',
                       color: '#ffa500'
                     }}>
-                      💡 {item.why}
+                      💡 {renderTextWithSkillIcons(item.why)}
                     </div>
                   )}
                 </div>
@@ -1815,7 +1874,7 @@ const FuryWarriorGuide = () => {
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <SkillIcon skill={item.skill} textOnly={true} />
-                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {item.desc}</span>
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {renderTextWithSkillIcons(item.desc)}</span>
                       </div>
                     </div>
                   </div>
@@ -1826,7 +1885,7 @@ const FuryWarriorGuide = () => {
                       <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
                       <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
                         {item.conditions.map((condition, idx) => (
-                          <li key={idx} style={{ color: '#ccc' }}>{condition}</li>
+                          <li key={idx} style={{ color: '#ccc' }}>{renderTextWithSkillIcons(condition)}</li>
                         ))}
                       </ul>
                     </div>
@@ -1842,7 +1901,7 @@ const FuryWarriorGuide = () => {
                       fontSize: '0.85rem',
                       color: '#ffa500'
                     }}>
-                      💡 {item.why}
+                      💡 {renderTextWithSkillIcons(item.why)}
                     </div>
                   )}
                 </div>
@@ -1897,7 +1956,7 @@ const FuryWarriorGuide = () => {
                     marginBottom: '12px',
                     lineHeight: '1.6'
                   }}>
-                    {mechanic.desc}
+                    {renderTextWithSkillIcons(mechanic.desc)}
                   </p>
 
                   {/* 세부 사항 */}
@@ -1909,7 +1968,7 @@ const FuryWarriorGuide = () => {
                   }}>
                     {mechanic.details.map((detail, idx) => (
                       <li key={idx} style={{ color: '#aaa', marginBottom: '6px' }}>
-                        {detail}
+                        {renderTextWithSkillIcons(detail)}
                       </li>
                     ))}
                   </ul>
@@ -1923,7 +1982,7 @@ const FuryWarriorGuide = () => {
                     color: '#64c8ff',
                     fontStyle: 'italic'
                   }}>
-                    💡 {mechanic.why}
+                    💡 {renderTextWithSkillIcons(mechanic.why)}
                   </div>
                 </div>
               ))}
@@ -1983,7 +2042,7 @@ const FuryWarriorGuide = () => {
                       <strong>Execute 구간 (20% 이하):</strong> <SkillIcon skill={skillData.execute} textOnly={true} />가 <SkillIcon skill={skillData.rampage} textOnly={true} />보다 우선순위 높음
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프락:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
+                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
                     </li>
                   </ul>
                 </div>
@@ -2010,11 +2069,11 @@ const FuryWarriorGuide = () => {
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚔️ 잔혹한 마무리 프락 활용
+                    ⚔️ 잔혹한 마무리 프록 활용
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>프락 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
+                      <strong>프록 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
                     </li>
                     <li>
                       <strong style={{ color: '#ffa500' }}>효과:</strong> 다음 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 피해 크게 증가 + 재사용 대기시간 초기화
@@ -2309,11 +2368,11 @@ const FuryWarriorGuide = () => {
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚔️ 잔혹한 마무리 프락 활용
+                    ⚔️ 잔혹한 마무리 프록 활용
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>프락 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
+                      <strong>프록 조건:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 확률로 발동
                     </li>
                     <li>
                       <strong style={{ color: '#ffa500' }}>효과:</strong> 다음 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 피해 크게 증가 + 재사용 대기시간 초기화
@@ -2566,7 +2625,7 @@ const FuryWarriorGuide = () => {
                       <strong>2중첩 이상:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 피해 20% 증가
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프락:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
+                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
                     </li>
                     <li>
                       <strong>Execute 구간:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.rampage} textOnly={true} />
