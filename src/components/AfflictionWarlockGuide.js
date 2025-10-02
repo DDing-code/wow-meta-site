@@ -284,8 +284,8 @@ const getHeroContent = (SkillIcon) => ({
     name: '영혼 수확자',
     icon: '💀',
     tierSet: {
-      '2set': <><SkillIcon skill={skillData.shadowEmbrace} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.shadowEmbrace} textOnly={true} /> 능력이 강화됩니다. 지속 피해 효과가 걸린 적이 죽을 때 추가 영혼의 조각을 생성합니다.</>,
-      '4set': <><SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 피해가 45% 증가합니다. <SkillIcon skill={skillData.nightfall} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.nightfall} textOnly={true} /> 발동 시 추가 효과를 제공합니다.</>
+      '2set': <><SkillIcon skill={skillData.shadowEmbrace} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.shadowEmbrace} textOnly={true} /> 능력이 강화됩니다. 지속 피해 효과가 걸린 적이 죽을 때 추가 <SkillIcon skill={skillData.soulShard} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.soulShard} textOnly={true} />을 생성합니다.</>,
+      '4set': <><SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 피해가 45% 증가합니다. <SkillIcon skill={skillData.nightfall} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.nightfall} textOnly={true} /> 발동 시 <SkillIcon skill={skillData.shadowBolt} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.shadowBolt} textOnly={true} />가 즉시 시전되며 추가 피해를 입힙니다.</>
     },
     singleTarget: {
       opener: [
@@ -336,8 +336,8 @@ const getHeroContent = (SkillIcon) => ({
     name: '지옥소환사',
     icon: '🔥',
     tierSet: {
-      '2set': <>시들기 피해가 증가하고, 대상에게 중첩되는 스택 효과를 제공합니다. (부패를 대체하는 강화 효과)</>,
-      '4set': <>시들기 스택이 최대일 때 추가 효과가 발동하며, <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 사용 시 영혼의 조각 생성 효율이 증가합니다.</>
+      '2set': <><SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.wither} textOnly={true} /> 피해가 증가하고, 대상에게 중첩되는 스택 효과를 제공합니다. (<SkillIcon skill={skillData.corruption} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.corruption} textOnly={true} />를 대체하는 강화 효과)</>,
+      '4set': <><SkillIcon skill={skillData.wither} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.wither} textOnly={true} /> 스택이 최대일 때 추가 효과가 발동하며, <SkillIcon skill={skillData.maleficRapture} size="small" className={styles.inlineIcon} /><SkillIcon skill={skillData.maleficRapture} textOnly={true} /> 사용 시 영혼의 조각 생성 효율이 증가합니다.</>
     },
     singleTarget: {
       opener: [
@@ -359,7 +359,7 @@ const getHeroContent = (SkillIcon) => ({
         { skill: skillData.soulRot, desc: '영혼 부식을 재사용 대기시간마다 사용합니다 (1분)' },
         { skill: skillData.phantomSingularity, desc: '유령 특이점을 재사용 대기시간마다 사용합니다 (45초)' },
         { skill: skillData.summonDarkglare, desc: '암흑시선 소환을 DoT가 최대일 때 사용합니다 (2분, 지속 피해지속시간 8초 연장)' },
-        { skill: skillData.maleficRapture, desc: '환희 구간 (60초마다)에 영혼의 조각 5개를 모아 연속 사용합니다. 지옥소환사는 특정 버스트 윈도우에 저장해서 사용합니다.' },
+        { skill: skillData.maleficRapture, desc: '환희 구간(60초)에 영혼의 조각 5개 모아 연속 사용 (지옥소환사는 버스트 윈도우 저장)' },
         { skill: skillData.drainSoul, desc: '영혼 흡수를 필러로 사용합니다 (20% 이하에서 피해 2배)' }
       ]
     },
