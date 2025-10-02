@@ -12,35 +12,10 @@ const Container = styled.div`
 
 const HeroSection = styled.div`
   position: relative;
-  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,
-    rgba(243, 139, 168, 0.1) 0%,
-    rgba(203, 166, 247, 0.1) 50%,
-    rgba(137, 180, 250, 0.1) 100%
-  );
-  overflow: hidden;
-  margin-bottom: 4rem;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-      radial-gradient(circle at 20% 50%, rgba(243, 139, 168, 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 50%, rgba(203, 166, 247, 0.15) 0%, transparent 50%);
-    animation: pulse 8s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-  }
+  padding: 3rem 2rem 2rem;
 `;
 
 const TitleWrapper = styled.div`
@@ -54,22 +29,22 @@ const LogoContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 `;
 
 const ShieldLogo = styled.div`
-  width: clamp(120px, 20vw, 200px);
-  height: clamp(140px, 24vw, 240px);
+  width: clamp(100px, 15vw, 150px);
+  height: clamp(120px, 18vw, 180px);
 
   svg {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0 0 30px rgba(243, 139, 168, 0.4));
+    filter: drop-shadow(0 0 20px rgba(243, 139, 168, 0.3));
   }
 `;
 
 const MainTitle = styled.h1`
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
   background: ${props => props.theme.gradients.accent};
   -webkit-background-clip: text;
@@ -78,33 +53,19 @@ const MainTitle = styled.h1`
   font-family: ${props => props.theme.fonts.heading};
   letter-spacing: -0.03em;
   margin: 0;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: ${props => props.theme.gradients.accent};
-    border-radius: 2px;
-    box-shadow: 0 0 20px rgba(243, 139, 168, 0.5);
-  }
 `;
 
 const ContentSection = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem 4rem;
+  padding: 1rem 2rem 4rem;
 `;
 
 const FeaturesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 `;
 
 const FeatureCard = styled(motion.div)`
