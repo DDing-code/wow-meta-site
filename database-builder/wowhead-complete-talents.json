@@ -1,0 +1,1767 @@
+{
+  "metadata": {
+    "scrapedAt": "2025-09-26T19:13:05.848Z",
+    "url": "https://www.wowhead.com/talent-calc/hunter/beast-mastery",
+    "totalTalents": 197,
+    "enhancedCount": 10
+  },
+  "talents": {
+    "class": [
+      {
+        "id": "270581",
+        "name": "Natural Mending",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=270581/natural-mending",
+        "position": {
+          "x": 173,
+          "y": 713,
+          "absoluteX": 173,
+          "absoluteY": 913
+        },
+        "treeType": "class",
+        "index": 0,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Natural Mending\nTalent\nRequires Hunter\nRequires level 30\n\nEvery 10 Focus you spend reduces the remaining cooldown on Exhilaration by 1.0 sec.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "109215",
+        "name": "Posthaste",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=109215/posthaste",
+        "position": {
+          "x": 303,
+          "y": 713,
+          "absoluteX": 303,
+          "absoluteY": 913
+        },
+        "treeType": "class",
+        "index": 1,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Posthaste\nTalent\nRequires Hunter\nRequires level 40\n\nDisengage also frees you from all movement impairing effects and increases your movement speed by 50% for 4 sec.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "53351",
+        "name": "Kill Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=53351/kill-shot",
+        "position": {
+          "x": 434,
+          "y": 713,
+          "absoluteX": 434,
+          "absoluteY": 913
+        },
+        "treeType": "class",
+        "index": 2,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Kill Shot\nTalent\n10 Focus\t40 yd range\nInstant\t10 sec cooldown\n1 Charge\nRequires Hunter\nRequires Ranged Weapon\nYou attempt to finish off a wounded target, dealing (320% of Attack Power) Physical damage. Only usable on enemies with less than 20% health.\nThis talent is granted to your specialization for free and can't be unlearned\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "385539",
+        "name": "Rejuvenating Wind",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=385539/rejuvenating-wind",
+        "position": {
+          "x": 173,
+          "y": 778,
+          "absoluteX": 173,
+          "absoluteY": 978
+        },
+        "treeType": "class",
+        "index": 3,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Rejuvenating Wind\nTalent\nRequires Hunter\nMaximum health increased by 8%, and Exhilaration now also heals you for an additional 12.0% of your maximum health over 8 sec.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "384799",
+        "name": "Hunter's Avoidance",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=384799/hunters-avoidance",
+        "position": {
+          "x": 303,
+          "y": 778,
+          "absoluteX": 303,
+          "absoluteY": 978
+        },
+        "treeType": "class",
+        "index": 4,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Hunter's Avoidance\nTalent\nRequires Hunter\nDamage taken from area of effect attacks reduced by 5%.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "343248",
+        "name": "Deathblow",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=343248/deathblow?spellModifier=137015",
+        "position": {
+          "x": 434,
+          "y": 778,
+          "absoluteX": 434,
+          "absoluteY": 978
+        },
+        "treeType": "class",
+        "index": 5,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Deathblow\nTalent\nRequires Hunter\nKill Command has a 20% chance to grant Deathblow.\n\n Deathblow\nThe cooldown of Kill Shot is reset. Your next Kill Shot can be used on any target, regardless of their current health.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "343242",
+        "name": "Wilderness Medicine",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=343242/wilderness-medicine",
+        "position": {
+          "x": 108,
+          "y": 843,
+          "absoluteX": 108,
+          "absoluteY": 1043
+        },
+        "treeType": "class",
+        "index": 6,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Wilderness Medicine\nTalent\nRequires Hunter\nNatural Mending now reduces the cooldown of Exhilaration by an additional 0.5 sec\n\nMend Pet heals for an additional 25% of your pet's health over its duration, and has a 25% chance to dispel a magic effect each time it heals your pet.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "187698",
+        "name": "Tar Trap",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=187698/tar-trap",
+        "position": {
+          "x": 238,
+          "y": 843,
+          "absoluteX": 238,
+          "absoluteY": 1043
+        },
+        "treeType": "class",
+        "index": 7,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Tar Trap\nTalent\n40 yd range\nInstant\t30 sec cooldown\nRequires Hunter\nHurls a tar trap to the target location that creates a 8 yd radius pool of tar around itself for 30 sec when the first enemy approaches. All enemies have 50% reduced movement speed while in the area of effect. Limit 1. Trap will exist for 1 min.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "19801",
+        "name": "Tranquilizing Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=19801/tranquilizing-shot",
+        "position": {
+          "x": 369,
+          "y": 843,
+          "absoluteX": 369,
+          "absoluteY": 1043
+        },
+        "treeType": "class",
+        "index": 8,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Tranquilizing Shot\nTalent\n40 yd range\nInstant\t10 sec cooldown\nRequires Hunter\nRemoves 1 Enrage and 1 Magic effect from an enemy target. [Disruptive Rounds: Successfully dispelling an effect generates 10 Focus]\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "5116",
+        "name": "Concussive Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=5116/concussive-shot",
+        "position": {
+          "x": 499,
+          "y": 843,
+          "absoluteX": 499,
+          "absoluteY": 1043
+        },
+        "treeType": "class",
+        "index": 9,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        },
+        "tooltipContent": "Concussive Shot\nTalent\n40 yd range\nInstant\t5 sec cooldown\nRequires Hunter\nDazes the target, slowing movement speed by 50% for 6 sec.\n\n[Cobra Shot / Steady Shot] will increase the duration of Concussive Shot on the target by 3.0 sec.\n\t\n\t",
+        "tooltipSelector": ".wowhead-tooltip"
+      },
+      {
+        "id": "264735",
+        "name": "Survival of the Fittest",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=264735/survival-of-the-fittest",
+        "position": {
+          "x": 173,
+          "y": 908,
+          "absoluteX": 173,
+          "absoluteY": 1108
+        },
+        "treeType": "class",
+        "index": 10,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "393344",
+        "name": "Entrapment",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=393344/entrapment",
+        "position": {
+          "x": 238,
+          "y": 908,
+          "absoluteX": 238,
+          "absoluteY": 1108
+        },
+        "treeType": "class",
+        "index": 11,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "147362",
+        "name": "Counter Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=147362/counter-shot",
+        "position": {
+          "x": 303,
+          "y": 908,
+          "absoluteX": 303,
+          "absoluteY": 1108
+        },
+        "treeType": "class",
+        "index": 12,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "34477",
+        "name": "Misdirection",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=34477/misdirection",
+        "position": {
+          "x": 434,
+          "y": 908,
+          "absoluteX": 434,
+          "absoluteY": 1108
+        },
+        "treeType": "class",
+        "index": 13,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459455",
+        "name": "Scout's Instincts",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459455/scouts-instincts",
+        "position": {
+          "x": 108,
+          "y": 973,
+          "absoluteX": 108,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 14,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459450",
+        "name": "Padded Armor",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459450/padded-armor",
+        "position": {
+          "x": 173,
+          "y": 973,
+          "absoluteX": 173,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 15,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "388039",
+        "name": "Lone Survivor",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=388039/lone-survivor?spellModifier=137015",
+        "position": {
+          "x": 238,
+          "y": 973,
+          "absoluteX": 238,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 16,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459542",
+        "name": "Specialized Arsenal",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459542/specialized-arsenal?spellModifier=137015",
+        "position": {
+          "x": 303,
+          "y": 973,
+          "absoluteX": 303,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 17,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "343244",
+        "name": "Disruptive Rounds",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=343244/disruptive-rounds?spellModifier=137015",
+        "position": {
+          "x": 369,
+          "y": 973,
+          "absoluteX": 369,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 18,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459546",
+        "name": "No Hard Feelings",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459546/no-hard-feelings",
+        "position": {
+          "x": 434,
+          "y": 973,
+          "absoluteX": 434,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 19,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "1513",
+        "name": "Scare Beast",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=1513/scare-beast",
+        "position": {
+          "x": 499,
+          "y": 973,
+          "absoluteX": 499,
+          "absoluteY": 1173
+        },
+        "treeType": "class",
+        "index": 20,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "19577",
+        "name": "Intimidation",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=19577/intimidation",
+        "position": {
+          "x": 173,
+          "y": 1038,
+          "absoluteX": 173,
+          "absoluteY": 1238
+        },
+        "treeType": "class",
+        "index": 21,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "109248",
+        "name": "Binding Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=109248/binding-shot",
+        "position": {
+          "x": 434,
+          "y": 1038,
+          "absoluteX": 434,
+          "absoluteY": 1238
+        },
+        "treeType": "class",
+        "index": 22,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459507",
+        "name": "Territorial Instincts",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459507/territorial-instincts",
+        "position": {
+          "x": 173,
+          "y": 1103,
+          "absoluteX": 173,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 23,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459534",
+        "name": "Trigger Finger",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459534/trigger-finger?def=131286&rank=1",
+        "position": {
+          "x": 238,
+          "y": 1103,
+          "absoluteX": 238,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 24,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "462036",
+        "name": "Blackrock Munitions",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=462036/blackrock-munitions",
+        "position": {
+          "x": 303,
+          "y": 1103,
+          "absoluteX": 303,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 25,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378004",
+        "name": "Keen Eyesight",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378004/keen-eyesight?def=131299&rank=1",
+        "position": {
+          "x": 369,
+          "y": 1103,
+          "absoluteX": 369,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 26,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459460",
+        "name": "Tar-Coated Bindings",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459460/tar-coated-bindings",
+        "position": {
+          "x": 434,
+          "y": 1103,
+          "absoluteX": 434,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 27,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459533",
+        "name": "Scrappy",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459533/scrappy?spellModifier=137015",
+        "position": {
+          "x": 499,
+          "y": 1103,
+          "absoluteX": 499,
+          "absoluteY": 1303
+        },
+        "treeType": "class",
+        "index": 28,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378771",
+        "name": "Quick Load",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378771/quick-load",
+        "position": {
+          "x": 108,
+          "y": 1168,
+          "absoluteX": 108,
+          "absoluteY": 1368
+        },
+        "treeType": "class",
+        "index": 29,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378002",
+        "name": "Pathfinding",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378002/pathfinding",
+        "position": {
+          "x": 173,
+          "y": 1168,
+          "absoluteX": 173,
+          "absoluteY": 1368
+        },
+        "treeType": "class",
+        "index": 30,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "321468",
+        "name": "Binding Shackles",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=321468/binding-shackles",
+        "position": {
+          "x": 303,
+          "y": 1168,
+          "absoluteX": 303,
+          "absoluteY": 1368
+        },
+        "treeType": "class",
+        "index": 31,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "199483",
+        "name": "Camouflage",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=199483/camouflage",
+        "position": {
+          "x": 434,
+          "y": 1168,
+          "absoluteX": 434,
+          "absoluteY": 1368
+        },
+        "treeType": "class",
+        "index": 32,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459506",
+        "name": "Kindling Flare",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459506/kindling-flare",
+        "position": {
+          "x": 499,
+          "y": 1168,
+          "absoluteX": 499,
+          "absoluteY": 1368
+        },
+        "treeType": "class",
+        "index": 33,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "199921",
+        "name": "Trailblazer",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=199921/trailblazer",
+        "position": {
+          "x": 108,
+          "y": 1233,
+          "absoluteX": 108,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 34,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "53480",
+        "name": "Roar of Sacrifice",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=53480/roar-of-sacrifice?spellModifier=137015",
+        "position": {
+          "x": 173,
+          "y": 1233,
+          "absoluteX": 173,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 35,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459502",
+        "name": "Serrated Tips",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459502/serrated-tips",
+        "position": {
+          "x": 238,
+          "y": 1233,
+          "absoluteX": 238,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 36,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459488",
+        "name": "Moment of Opportunity",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459488/moment-of-opportunity",
+        "position": {
+          "x": 303,
+          "y": 1233,
+          "absoluteX": 303,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 37,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "266921",
+        "name": "Born To Be Wild",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=266921/born-to-be-wild?spellModifier=137015",
+        "position": {
+          "x": 369,
+          "y": 1233,
+          "absoluteX": 369,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 38,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459466",
+        "name": "Ghillie Suit",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459466/ghillie-suit",
+        "position": {
+          "x": 434,
+          "y": 1233,
+          "absoluteX": 434,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 39,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "343247",
+        "name": "Improved Traps",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=343247/improved-traps",
+        "position": {
+          "x": 499,
+          "y": 1233,
+          "absoluteX": 499,
+          "absoluteY": 1433
+        },
+        "treeType": "class",
+        "index": 40,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459517",
+        "name": "Emergency Salve",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459517/emergency-salve",
+        "position": {
+          "x": 173,
+          "y": 1298,
+          "absoluteX": 173,
+          "absoluteY": 1498
+        },
+        "treeType": "class",
+        "index": 41,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459527",
+        "name": "Unnatural Causes",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459527/unnatural-causes",
+        "position": {
+          "x": 434,
+          "y": 1298,
+          "absoluteX": 434,
+          "absoluteY": 1498
+        },
+        "treeType": "class",
+        "index": 42,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      }
+    ],
+    "specialization": [
+      {
+        "id": "34026",
+        "name": "Kill Command",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=34026/kill-command",
+        "position": {
+          "x": 1222,
+          "y": 713,
+          "absoluteX": 1222,
+          "absoluteY": 913
+        },
+        "treeType": "spec",
+        "index": 43,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "193455",
+        "name": "Cobra Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=193455/cobra-shot",
+        "position": {
+          "x": 1157,
+          "y": 778,
+          "absoluteX": 1157,
+          "absoluteY": 978
+        },
+        "treeType": "spec",
+        "index": 44,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "217200",
+        "name": "Barbed Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=217200/barbed-shot",
+        "position": {
+          "x": 1287,
+          "y": 778,
+          "absoluteX": 1287,
+          "absoluteY": 978
+        },
+        "treeType": "spec",
+        "index": 45,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "321014",
+        "name": "Pack Tactics",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=321014/pack-tactics",
+        "position": {
+          "x": 1092,
+          "y": 843,
+          "absoluteX": 1092,
+          "absoluteY": 1043
+        },
+        "treeType": "spec",
+        "index": 46,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "191384",
+        "name": "Aspect of the Beast",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=191384/aspect-of-the-beast",
+        "position": {
+          "x": 1157,
+          "y": 843,
+          "absoluteX": 1157,
+          "absoluteY": 1043
+        },
+        "treeType": "spec",
+        "index": 47,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "393933",
+        "name": "War Orders",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=393933/war-orders",
+        "position": {
+          "x": 1287,
+          "y": 843,
+          "absoluteX": 1287,
+          "absoluteY": 1043
+        },
+        "treeType": "spec",
+        "index": 48,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "257944",
+        "name": "Thrill of the Hunt",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=257944/thrill-of-the-hunt",
+        "position": {
+          "x": 1353,
+          "y": 843,
+          "absoluteX": 1353,
+          "absoluteY": 1043
+        },
+        "treeType": "spec",
+        "index": 49,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459550",
+        "name": "Go for the Throat",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459550/go-for-the-throat",
+        "position": {
+          "x": 1092,
+          "y": 908,
+          "absoluteX": 1092,
+          "absoluteY": 1108
+        },
+        "treeType": "spec",
+        "index": 50,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "2643",
+        "name": "Multi-Shot",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=2643/multi-shot",
+        "position": {
+          "x": 1222,
+          "y": 908,
+          "absoluteX": 1222,
+          "absoluteY": 1108
+        },
+        "treeType": "spec",
+        "index": 51,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459552",
+        "name": "Laceration",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459552/laceration",
+        "position": {
+          "x": 1353,
+          "y": 908,
+          "absoluteX": 1353,
+          "absoluteY": 1108
+        },
+        "treeType": "spec",
+        "index": 52,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "269737",
+        "name": "Alpha Predator",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=269737/alpha-predator",
+        "position": {
+          "x": 1157,
+          "y": 973,
+          "absoluteX": 1157,
+          "absoluteY": 1173
+        },
+        "treeType": "spec",
+        "index": 53,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "115939",
+        "name": "Beast Cleave",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=115939/beast-cleave",
+        "position": {
+          "x": 1222,
+          "y": 973,
+          "absoluteX": 1222,
+          "absoluteY": 1173
+        },
+        "treeType": "spec",
+        "index": 54,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378209",
+        "name": "Training Expert",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378209/training-expert",
+        "position": {
+          "x": 1287,
+          "y": 973,
+          "absoluteX": 1287,
+          "absoluteY": 1173
+        },
+        "treeType": "spec",
+        "index": 55,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378210",
+        "name": "Hunter's Prey",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378210/hunters-prey",
+        "position": {
+          "x": 1418,
+          "y": 973,
+          "absoluteX": 1418,
+          "absoluteY": 1173
+        },
+        "treeType": "spec",
+        "index": 56,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "199530",
+        "name": "Stomp",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=199530/stomp",
+        "position": {
+          "x": 1092,
+          "y": 1038,
+          "absoluteX": 1092,
+          "absoluteY": 1238
+        },
+        "treeType": "spec",
+        "index": 57,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "424558",
+        "name": "Master Handler",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=424558/master-handler",
+        "position": {
+          "x": 1157,
+          "y": 1038,
+          "absoluteX": 1157,
+          "absoluteY": 1238
+        },
+        "treeType": "spec",
+        "index": 58,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378207",
+        "name": "Kill Cleave",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378207/kill-cleave",
+        "position": {
+          "x": 1222,
+          "y": 1038,
+          "absoluteX": 1222,
+          "absoluteY": 1238
+        },
+        "treeType": "spec",
+        "index": 59,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "185789",
+        "name": "Wild Call",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=185789/wild-call",
+        "position": {
+          "x": 1287,
+          "y": 1038,
+          "absoluteX": 1287,
+          "absoluteY": 1238
+        },
+        "treeType": "spec",
+        "index": 60,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "120679",
+        "name": "Dire Beast",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=120679/dire-beast",
+        "position": {
+          "x": 1353,
+          "y": 1038,
+          "absoluteX": 1353,
+          "absoluteY": 1238
+        },
+        "treeType": "spec",
+        "index": 61,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "424557",
+        "name": "Savagery",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=424557/savagery",
+        "position": {
+          "x": 1027,
+          "y": 1103,
+          "absoluteX": 1027,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 62,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "321530",
+        "name": "Bloodshed",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=321530/bloodshed",
+        "position": {
+          "x": 1092,
+          "y": 1103,
+          "absoluteX": 1092,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 63,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "469880",
+        "name": "Barbed Scales",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=469880/barbed-scales",
+        "position": {
+          "x": 1157,
+          "y": 1103,
+          "absoluteX": 1157,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 64,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "19574",
+        "name": "Bestial Wrath",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=19574/bestial-wrath",
+        "position": {
+          "x": 1222,
+          "y": 1103,
+          "absoluteX": 1222,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 65,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "1217535",
+        "name": "Poisoned Barbs",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=1217535/poisoned-barbs",
+        "position": {
+          "x": 1287,
+          "y": 1103,
+          "absoluteX": 1287,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 66,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "378743",
+        "name": "Dire Command",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=378743/dire-command",
+        "position": {
+          "x": 1353,
+          "y": 1103,
+          "absoluteX": 1353,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 67,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "1217524",
+        "name": "Dire Cleave",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=1217524/dire-cleave",
+        "position": {
+          "x": 1418,
+          "y": 1103,
+          "absoluteX": 1418,
+          "absoluteY": 1303
+        },
+        "treeType": "spec",
+        "index": 68,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "273887",
+        "name": "Killer Instinct",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=273887/killer-instinct?def=131252&rank=1",
+        "position": {
+          "x": 1092,
+          "y": 1168,
+          "absoluteX": 1092,
+          "absoluteY": 1368
+        },
+        "treeType": "spec",
+        "index": 69,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "468701",
+        "name": "Serpentine Rhythm",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=468701/serpentine-rhythm",
+        "position": {
+          "x": 1157,
+          "y": 1168,
+          "absoluteX": 1157,
+          "absoluteY": 1368
+        },
+        "treeType": "spec",
+        "index": 70,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "231548",
+        "name": "Barbed Wrath",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=231548/barbed-wrath",
+        "position": {
+          "x": 1222,
+          "y": 1168,
+          "absoluteX": 1222,
+          "absoluteY": 1368
+        },
+        "treeType": "spec",
+        "index": 71,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459693",
+        "name": "Thundering Hooves",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459693/thundering-hooves",
+        "position": {
+          "x": 1287,
+          "y": 1168,
+          "absoluteX": 1287,
+          "absoluteY": 1368
+        },
+        "treeType": "spec",
+        "index": 72,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "385810",
+        "name": "Dire Frenzy",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=385810/dire-frenzy?def=131256&rank=1",
+        "position": {
+          "x": 1353,
+          "y": 1168,
+          "absoluteX": 1353,
+          "absoluteY": 1368
+        },
+        "treeType": "spec",
+        "index": 73,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "359844",
+        "name": "Call of the Wild",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=359844/call-of-the-wild",
+        "position": {
+          "x": 1092,
+          "y": 1233,
+          "absoluteX": 1092,
+          "absoluteY": 1433
+        },
+        "treeType": "spec",
+        "index": 74,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "199532",
+        "name": "Killer Cobra",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=199532/killer-cobra",
+        "position": {
+          "x": 1157,
+          "y": 1233,
+          "absoluteX": 1157,
+          "absoluteY": 1433
+        },
+        "treeType": "spec",
+        "index": 75,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "193532",
+        "name": "Scent of Blood",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=193532/scent-of-blood?def=131230&rank=1",
+        "position": {
+          "x": 1222,
+          "y": 1233,
+          "absoluteX": 1222,
+          "absoluteY": 1433
+        },
+        "treeType": "spec",
+        "index": 76,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "386870",
+        "name": "Brutal Companion",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=386870/brutal-companion",
+        "position": {
+          "x": 1287,
+          "y": 1233,
+          "absoluteX": 1287,
+          "absoluteY": 1433
+        },
+        "treeType": "spec",
+        "index": 77,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "459730",
+        "name": "Huntmaster's Call",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=459730/huntmasters-call",
+        "position": {
+          "x": 1353,
+          "y": 1233,
+          "absoluteX": 1353,
+          "absoluteY": 1433
+        },
+        "treeType": "spec",
+        "index": 78,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "392053",
+        "name": "Piercing Fangs",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=392053/piercing-fangs",
+        "position": {
+          "x": 1222,
+          "y": 1298,
+          "absoluteX": 1222,
+          "absoluteY": 1498
+        },
+        "treeType": "spec",
+        "index": 79,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      },
+      {
+        "id": "1232739",
+        "name": "Wildspeaker",
+        "description": "",
+        "href": "https://www.wowhead.com/spell=1232739/wildspeaker",
+        "position": {
+          "x": 1353,
+          "y": 1298,
+          "absoluteX": 1353,
+          "absoluteY": 1498
+        },
+        "treeType": "spec",
+        "index": 80,
+        "hasIcon": false,
+        "iconSrc": "",
+        "dataAttributes": {
+          "wowhead": null,
+          "whTooltip": null,
+          "name": null
+        }
+      }
+    ],
+    "hero": {
+      "packLeader": [],
+      "darkRanger": []
+    }
+  },
+  "stats": {
+    "classTalents": 43,
+    "specTalents": 38,
+    "packLeaderTalents": 0,
+    "darkRangerTalents": 0
+  },
+  "errors": [],
+  "debug": {
+    "totalNodesFound": 197,
+    "selectorsUsed": {
+      "talentNodes": "a[href*=\"/spell=\"]",
+      "talentNames": [
+        ".talent-name",
+        ".spell-name",
+        ".icon-name",
+        "[data-spell-name]",
+        "a[href*=\"/spell=\"] > span",
+        "a[href*=\"/spell=\"]"
+      ],
+      "tooltips": [
+        ".wowhead-tooltip",
+        ".whtt-text",
+        "[data-wowhead]",
+        "[data-wh-tooltip]",
+        ".tooltip-content"
+      ]
+    }
+  }
+}

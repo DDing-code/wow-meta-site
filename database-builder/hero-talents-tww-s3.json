@@ -1,0 +1,301 @@
+{
+  "heroTalents": {
+    "warrior": {
+      "className": "전사",
+      "classNameEn": "Warrior",
+      "talents": [
+        {
+          "korean": "거신",
+          "english": "Colossus",
+          "specs": ["무기", "방어"]
+        },
+        {
+          "korean": "산왕",
+          "english": "Mountain Thane",
+          "specs": ["분노", "방어"]
+        },
+        {
+          "korean": "학살자",
+          "english": "Slayer",
+          "specs": ["무기", "분노"]
+        }
+      ]
+    },
+    "hunter": {
+      "className": "사냥꾼",
+      "classNameEn": "Hunter",
+      "talents": [
+        {
+          "korean": "파수꾼",
+          "english": "Sentinel",
+          "specs": ["사격", "생존"]
+        },
+        {
+          "korean": "어둠 순찰자",
+          "english": "Dark Ranger",
+          "specs": ["사격", "야수"]
+        },
+        {
+          "korean": "무리의 지도자",
+          "english": "Pack Leader",
+          "specs": ["야수", "생존"]
+        }
+      ]
+    },
+    "mage": {
+      "className": "마법사",
+      "classNameEn": "Mage",
+      "talents": [
+        {
+          "korean": "성난태양",
+          "english": "Sunfury",
+          "specs": ["비전", "화염"]
+        },
+        {
+          "korean": "서리불꽃",
+          "english": "Frostfire",
+          "specs": ["화염", "냉기"]
+        },
+        {
+          "korean": "주문술사",
+          "english": "Spellslinger",
+          "specs": ["비전", "냉기"]
+        }
+      ]
+    },
+    "rogue": {
+      "className": "도적",
+      "classNameEn": "Rogue",
+      "talents": [
+        {
+          "korean": "기만자",
+          "english": "Trickster",
+          "specs": ["무법", "잠행"]
+        },
+        {
+          "korean": "운명결속",
+          "english": "Fatebound",
+          "specs": ["암살", "무법"]
+        },
+        {
+          "korean": "죽음추적자",
+          "english": "Deathstalker",
+          "specs": ["암살", "잠행"]
+        }
+      ]
+    },
+    "priest": {
+      "className": "사제",
+      "classNameEn": "Priest",
+      "talents": [
+        {
+          "korean": "예언자",
+          "english": "Oracle",
+          "specs": ["수양", "신성"]
+        },
+        {
+          "korean": "집정관",
+          "english": "Archon",
+          "specs": ["신성", "암흑"]
+        },
+        {
+          "korean": "공허술사",
+          "english": "Voidweaver",
+          "specs": ["수양", "암흑"]
+        }
+      ]
+    },
+    "warlock": {
+      "className": "흑마법사",
+      "classNameEn": "Warlock",
+      "talents": [
+        {
+          "korean": "악마학자",
+          "english": "Diabolist",
+          "specs": ["악마", "파괴"]
+        },
+        {
+          "korean": "지옥소환사",
+          "english": "Hellcaller",
+          "specs": ["파괴", "고통"]
+        },
+        {
+          "korean": "영혼 수확자",
+          "english": "Soul Harvester",
+          "specs": ["고통", "악마"]
+        }
+      ]
+    },
+    "druid": {
+      "className": "드루이드",
+      "classNameEn": "Druid",
+      "talents": [
+        {
+          "korean": "야생추적자",
+          "english": "Wildstalker",
+          "specs": ["야성", "회복"]
+        },
+        {
+          "korean": "숲의 수호자",
+          "english": "Keeper of the Grove",
+          "specs": ["조화", "회복"]
+        },
+        {
+          "korean": "엘룬의 대변자",
+          "english": "Elune's Chosen",
+          "specs": ["조화", "수호"]
+        },
+        {
+          "korean": "발톱의 드루이드",
+          "english": "Druid of the Claw",
+          "specs": ["야성", "수호"]
+        }
+      ]
+    },
+    "shaman": {
+      "className": "주술사",
+      "classNameEn": "Shaman",
+      "talents": [
+        {
+          "korean": "선견자",
+          "english": "Farseer",
+          "specs": ["정기", "복원"]
+        },
+        {
+          "korean": "토템술사",
+          "english": "Totemic",
+          "specs": ["복원", "고양"]
+        },
+        {
+          "korean": "폭풍인도자",
+          "english": "Stormbringer",
+          "specs": ["고양", "정기"]
+        }
+      ]
+    },
+    "paladin": {
+      "className": "성기사",
+      "classNameEn": "Paladin",
+      "talents": [
+        {
+          "korean": "기사단",
+          "english": "Templar",
+          "specs": ["징벌", "보호"]
+        },
+        {
+          "korean": "태양의 사자",
+          "english": "Herald of the Sun",
+          "specs": ["신성", "징벌"]
+        },
+        {
+          "korean": "빛의 대장장이",
+          "english": "Lightsmith",
+          "specs": ["보호", "신성"]
+        }
+      ]
+    },
+    "deathKnight": {
+      "className": "죽음의 기사",
+      "classNameEn": "Death Knight",
+      "talents": [
+        {
+          "korean": "산레인",
+          "english": "San'layn",
+          "specs": ["혈기", "부정"]
+        },
+        {
+          "korean": "종말의 기수",
+          "english": "Rider of the Apocalypse",
+          "specs": ["냉기", "부정"]
+        },
+        {
+          "korean": "죽음의 인도자",
+          "english": "Deathbringer",
+          "specs": ["혈기", "냉기"]
+        }
+      ]
+    },
+    "monk": {
+      "className": "수도사",
+      "classNameEn": "Monk",
+      "talents": [
+        {
+          "korean": "음영파",
+          "english": "Shado-Pan",
+          "specs": ["양조", "풍운"]
+        },
+        {
+          "korean": "조화의 종사",
+          "english": "Master of Harmony",
+          "specs": ["양조", "운무"]
+        },
+        {
+          "korean": "천신의 대변자",
+          "english": "Conduit of the Celestials",
+          "specs": ["운무", "풍운"]
+        }
+      ]
+    },
+    "demonHunter": {
+      "className": "악마사냥꾼",
+      "classNameEn": "Demon Hunter",
+      "talents": [
+        {
+          "korean": "지옥살흔",
+          "english": "Fel-Scarred",
+          "specs": ["파멸", "복수"]
+        },
+        {
+          "korean": "알드라치 파괴자",
+          "english": "Aldrachi Reaver",
+          "specs": ["파멸", "복수"]
+        }
+      ]
+    },
+    "evoker": {
+      "className": "기원사",
+      "classNameEn": "Evoker",
+      "talents": [
+        {
+          "korean": "불꽃형성자",
+          "english": "Flameshaper",
+          "specs": ["황폐", "보존"]
+        },
+        {
+          "korean": "비늘사령관",
+          "english": "Scalecommander",
+          "specs": ["증강", "황폐"]
+        },
+        {
+          "korean": "시간 감시자",
+          "english": "Chronowarden",
+          "specs": ["증강", "보존"]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "11.2 TWW Season 3",
+    "lastUpdated": "2024-12-26",
+    "source": {
+      "english": "https://www.wowhead.com/guide/classes/hero-talents",
+      "korean": "In-game TWW S3 UI screenshot"
+    },
+    "notes": {
+      "important": "각 영웅 특성은 2개의 전문화에서만 선택 가능",
+      "druid": "드루이드는 4개의 전문화로 인해 4개의 영웅 특성 보유",
+      "corrections": {
+        "warrior": "거인 → 거신",
+        "mage": "태양분노 → 성난태양, 주문투척자 → 주문술사",
+        "rogue": "운명결속자 → 운명결속",
+        "priest": "공허인도자 → 공허술사",
+        "warlock": "악마숭배자 → 악마학자, 영혼수확자 → 영혼 수확자",
+        "shaman": "토템숭배자 → 토템술사",
+        "deathKnight": "죽음인도자 → 죽음의 인도자",
+        "monk": "조화의 대가 → 조화의 종사",
+        "demonHunter": "지옥상흔 → 지옥살흔",
+        "evoker": "시간의 감시자 → 시간 감시자"
+      }
+    }
+  }
+}

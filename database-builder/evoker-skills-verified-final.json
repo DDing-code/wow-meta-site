@@ -1,0 +1,415 @@
+{
+  "collectedAt": "2025-09-28",
+  "source": "ko.wowhead.com - Manual Verification",
+  "patch": "11.2 TWW Season 3",
+  "translations": {
+    "devastation": {
+      "356995": {
+        "id": "356995",
+        "englishName": "Disintegrate",
+        "koreanName": "파열",
+        "verified": true
+      },
+      "357208": {
+        "id": "357208",
+        "englishName": "Fire Breath",
+        "koreanName": "불의 숨결",
+        "verified": true
+      },
+      "357211": {
+        "id": "357211",
+        "englishName": "Pyre",
+        "koreanName": "기염",
+        "verified": true
+      },
+      "359073": {
+        "id": "359073",
+        "englishName": "Eternity Surge",
+        "koreanName": "영원의 쇄도",
+        "verified": true
+      },
+      "361500": {
+        "id": "361500",
+        "englishName": "Living Flame",
+        "koreanName": "살아있는 불꽃",
+        "verified": true
+      },
+      "362969": {
+        "id": "362969",
+        "englishName": "Azure Strike",
+        "koreanName": "하늘빛 일격",
+        "verified": true
+      },
+      "375087": {
+        "id": "375087",
+        "englishName": "Dragonrage",
+        "koreanName": "용의 분노",
+        "verified": true
+      },
+      "357210": {
+        "id": "357210",
+        "englishName": "Deep Breath",
+        "koreanName": "깊은 숨결",
+        "verified": true
+      },
+      "370452": {
+        "id": "370452",
+        "englishName": "Shattering Star",
+        "koreanName": "산산이 부서지는 별",
+        "verified": true
+      },
+      "443328": {
+        "id": "443328",
+        "englishName": "Engulf",
+        "koreanName": "업화",
+        "verified": true
+      },
+      "408092": {
+        "id": "408092",
+        "englishName": "Essence Burst",
+        "koreanName": "정수 폭발",
+        "verified": true,
+        "notes": "지각 변동은 다른 스킬"
+      },
+      "370960": {
+        "id": "370960",
+        "englishName": "Emerald Communion",
+        "koreanName": "에메랄드 교감",
+        "verified": true
+      }
+    },
+    "preservation": {
+      "355913": {
+        "id": "355913",
+        "englishName": "Emerald Blossom",
+        "koreanName": "에메랄드 꽃",
+        "verified": true
+      },
+      "366155": {
+        "id": "366155",
+        "englishName": "Reversion",
+        "koreanName": "되돌리기",
+        "verified": true,
+        "notes": "되감기가 아님"
+      },
+      "367226": {
+        "id": "367226",
+        "englishName": "Spiritbloom",
+        "koreanName": "영혼 만개",
+        "verified": true,
+        "notes": "영혼꽃이나 정령의 꽃이 아님"
+      },
+      "363534": {
+        "id": "363534",
+        "englishName": "Dream Flight",
+        "koreanName": "꿈 비행",
+        "verified": true
+      },
+      "360827": {
+        "id": "360827",
+        "englishName": "Verdant Embrace",
+        "koreanName": "신록의 품",
+        "verified": true,
+        "notes": "끓어오르는 비늘은 다른 스킬"
+      },
+      "364343": {
+        "id": "364343",
+        "englishName": "Echo",
+        "koreanName": "메아리",
+        "verified": true,
+        "notes": "반향이 아님"
+      },
+      "373861": {
+        "id": "373861",
+        "englishName": "Temporal Anomaly",
+        "koreanName": "시간 변칙",
+        "verified": true
+      },
+      "357170": {
+        "id": "357170",
+        "englishName": "Time Dilation",
+        "koreanName": "시간 팽창",
+        "verified": true
+      },
+      "374939": {
+        "id": "374939",
+        "englishName": "Lifebind",
+        "koreanName": "생명 결속",
+        "verified": true,
+        "notes": "지각의 화신은 다른 스킬"
+      },
+      "370537": {
+        "id": "370537",
+        "englishName": "Stasis",
+        "koreanName": "정지장",
+        "verified": true,
+        "notes": "ko.wowhead.com 확인 완료"
+      },
+      "374227": {
+        "id": "374227",
+        "englishName": "Rewind",
+        "koreanName": "되감기",
+        "verified": true,
+        "notes": "보존 특성"
+      },
+      "359816": {
+        "id": "359816",
+        "englishName": "Dream Breath",
+        "koreanName": "꿈의 숨결",
+        "verified": true
+      }
+    },
+    "augmentation": {
+      "395160": {
+        "id": "395160",
+        "englishName": "Ebon Might",
+        "koreanName": "칠흑의 힘",
+        "verified": true
+      },
+      "404972": {
+        "id": "404972",
+        "englishName": "Eruption",
+        "koreanName": "분출",
+        "verified": true
+      },
+      "409311": {
+        "id": "409311",
+        "englishName": "Prescience",
+        "koreanName": "예지",
+        "verified": true,
+        "notes": "선제의 일격이 아님"
+      },
+      "403631": {
+        "id": "403631",
+        "englishName": "Breath of Eons",
+        "koreanName": "영겁의 숨결",
+        "verified": true,
+        "notes": "운명의 숨결이 아님"
+      },
+      "396286": {
+        "id": "396286",
+        "englishName": "Upheaval",
+        "koreanName": "대격변",
+        "verified": true,
+        "notes": "대변동이 아님"
+      },
+      "410256": {
+        "id": "410256",
+        "englishName": "Aspects' Favor",
+        "koreanName": "위상의 은총",
+        "verified": true
+      },
+      "404977": {
+        "id": "404977",
+        "englishName": "Time Skip",
+        "koreanName": "시간 건너뛰기",
+        "verified": true
+      },
+      "406732": {
+        "id": "406732",
+        "englishName": "Spatial Paradox",
+        "koreanName": "공간 역설",
+        "verified": true
+      },
+      "403299": {
+        "id": "403299",
+        "englishName": "Interwoven Threads",
+        "koreanName": "뒤엉킨 실타래",
+        "verified": true
+      },
+      "395152": {
+        "id": "395152",
+        "englishName": "Fate Mirror",
+        "koreanName": "운명의 거울",
+        "verified": true
+      },
+      "360806": {
+        "id": "360806",
+        "englishName": "Blistering Scales",
+        "koreanName": "타오르는 비늘",
+        "verified": true
+      }
+    },
+    "common": {
+      "358267": {
+        "id": "358267",
+        "englishName": "Hover",
+        "koreanName": "부양",
+        "verified": true
+      },
+      "363916": {
+        "id": "363916",
+        "englishName": "Obsidian Scales",
+        "koreanName": "흑요석 비늘",
+        "verified": true
+      },
+      "374348": {
+        "id": "374348",
+        "englishName": "Renewing Blaze",
+        "koreanName": "소생의 불길",
+        "verified": true,
+        "notes": "소생의 화염이 아님, 쇄신도 아님"
+      },
+      "364342": {
+        "id": "364342",
+        "englishName": "Blessing of the Bronze",
+        "koreanName": "청동용의 축복",
+        "verified": true
+      },
+      "357214": {
+        "id": "357214",
+        "englishName": "Wing Buffet",
+        "koreanName": "날개 치기",
+        "verified": true
+      },
+      "374251": {
+        "id": "374251",
+        "englishName": "Cauterizing Flame",
+        "koreanName": "소작의 불꽃",
+        "verified": true
+      },
+      "360995": {
+        "id": "360995",
+        "englishName": "Verdant Embrace",
+        "koreanName": "신록의 품",
+        "verified": true,
+        "notes": "360827과 동일한 스킬명"
+      },
+      "351338": {
+        "id": "351338",
+        "englishName": "Quell",
+        "koreanName": "진압",
+        "verified": true
+      },
+      "365585": {
+        "id": "365585",
+        "englishName": "Expunge",
+        "koreanName": "제거",
+        "verified": true
+      },
+      "370665": {
+        "id": "370665",
+        "englishName": "Rescue",
+        "koreanName": "구조",
+        "verified": true
+      },
+      "360823": {
+        "id": "360823",
+        "englishName": "Naturalize",
+        "koreanName": "자연화",
+        "verified": true
+      },
+      "378441": {
+        "id": "378441",
+        "englishName": "Time Spiral",
+        "koreanName": "시간의 나선",
+        "verified": true
+      },
+      "378464": {
+        "id": "378464",
+        "englishName": "Zephyr",
+        "koreanName": "서풍",
+        "verified": true
+      },
+      "370553": {
+        "id": "370553",
+        "englishName": "Tip the Scales",
+        "koreanName": "균형 붕괴",
+        "verified": true
+      },
+      "368970": {
+        "id": "368970",
+        "englishName": "Tail Swipe",
+        "koreanName": "꼬리 휘둘러치기",
+        "verified": true,
+        "notes": "Firestorm이 아님"
+      }
+    },
+    "missing_skills": {
+      "description": "추가로 확인이 필요한 스킬들",
+      "skills": [
+        {
+          "englishName": "Firestorm",
+          "koreanName": "화염 폭풍",
+          "notes": "실제 ID 확인 필요"
+        },
+        {
+          "englishName": "Ruby Essence Burst",
+          "koreanName": "루비 정수 폭발",
+          "notes": "ID 369297 확인 필요"
+        },
+        {
+          "englishName": "Iridescence",
+          "koreanName": "무지갯빛",
+          "notes": "ID 396006 확인 필요"
+        },
+        {
+          "englishName": "Cycle of Life",
+          "koreanName": "생명의 순환",
+          "notes": "ID 376788 확인 필요"
+        },
+        {
+          "englishName": "Dream Projection",
+          "koreanName": "꿈 투영",
+          "notes": "ID 377509 확인 필요"
+        }
+      ]
+    }
+  },
+  "translation_map": {
+    "disintegrate": "파열",
+    "fire_breath": "불의 숨결",
+    "pyre": "기염",
+    "eternity_surge": "영원의 쇄도",
+    "living_flame": "살아있는 불꽃",
+    "azure_strike": "하늘빛 일격",
+    "dragonrage": "용의 분노",
+    "deep_breath": "깊은 숨결",
+    "shattering_star": "산산이 부서지는 별",
+    "engulf": "업화",
+    "essence_burst": "정수 폭발",
+    "emerald_communion": "에메랄드 교감",
+    "emerald_blossom": "에메랄드 꽃",
+    "reversion": "되돌리기",
+    "spiritbloom": "영혼 만개",
+    "dream_flight": "꿈 비행",
+    "verdant_embrace": "신록의 품",
+    "echo": "메아리",
+    "temporal_anomaly": "시간 변칙",
+    "time_dilation": "시간 팽창",
+    "lifebind": "생명 결속",
+    "stasis": "정지장",
+    "rewind": "되감기",
+    "dream_breath": "꿈의 숨결",
+    "ebon_might": "칠흑의 힘",
+    "eruption": "분출",
+    "prescience": "예지",
+    "breath_of_eons": "영겁의 숨결",
+    "upheaval": "대격변",
+    "aspects_favor": "위상의 은총",
+    "time_skip": "시간 건너뛰기",
+    "spatial_paradox": "공간 역설",
+    "interwoven_threads": "뒤엉킨 실타래",
+    "fate_mirror": "운명의 거울",
+    "blistering_scales": "타오르는 비늘",
+    "hover": "부양",
+    "obsidian_scales": "흑요석 비늘",
+    "renewing_blaze": "소생의 불길",
+    "blessing_of_the_bronze": "청동용의 축복",
+    "wing_buffet": "날개 치기",
+    "cauterizing_flame": "소작의 불꽃",
+    "quell": "진압",
+    "expunge": "제거",
+    "rescue": "구조",
+    "naturalize": "자연화",
+    "time_spiral": "시간의 나선",
+    "zephyr": "서풍",
+    "tip_the_scales": "균형 붕괴",
+    "tail_swipe": "꼬리 휘둘러치기"
+  },
+  "summary": {
+    "verified": 47,
+    "needsCheck": 5,
+    "total": 52
+  }
+}

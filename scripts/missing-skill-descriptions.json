@@ -1,0 +1,2817 @@
+[
+  {
+    "id": "168",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "528",
+    "krName": "마법 무효화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "546",
+    "krName": "수면 걷기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "552",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "586",
+    "krName": "소실",
+    "enName": "Unknown"
+  },
+  {
+    "id": "588",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "603",
+    "krName": "파멸",
+    "enName": "Unknown"
+  },
+  {
+    "id": "605",
+    "krName": "정신 지배",
+    "enName": "Unknown"
+  },
+  {
+    "id": "688",
+    "krName": "임프 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "691",
+    "krName": "지옥사냥개 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "697",
+    "krName": "공허방랑자 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "698",
+    "krName": "소환 의식",
+    "enName": "Unknown"
+  },
+  {
+    "id": "703",
+    "krName": "목조르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "710",
+    "krName": "추방",
+    "enName": "Unknown"
+  },
+  {
+    "id": "712",
+    "krName": "서큐버스 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1329",
+    "krName": "절단",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1459",
+    "krName": "신비한 지능",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1463",
+    "krName": "주문술사의 흐름",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1706",
+    "krName": "공중 부양",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1725",
+    "krName": "혼란",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1776",
+    "krName": "후려치기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1804",
+    "krName": "자물쇠 따기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1842",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1850",
+    "krName": "질주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1943",
+    "krName": "파열",
+    "enName": "Unknown"
+  },
+  {
+    "id": "1966",
+    "krName": "교란",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2006",
+    "krName": "부활",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2008",
+    "krName": "고대의 영혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2050",
+    "krName": "빛의 권능: 평온",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2139",
+    "krName": "마법 차단",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2645",
+    "krName": "늑대 정령",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2823",
+    "krName": "맹독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2825",
+    "krName": "피의 욕망",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2836",
+    "krName": "함정 감지",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2855",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2912",
+    "krName": "별빛섬광",
+    "enName": "Unknown"
+  },
+  {
+    "id": "2983",
+    "krName": "전력 질주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "3561",
+    "krName": "순간이동: 스톰윈드",
+    "enName": "Unknown"
+  },
+  {
+    "id": "3714",
+    "krName": "얼음길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "5143",
+    "krName": "신비한 화살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "5217",
+    "krName": "호랑이의 분노",
+    "enName": "Unknown"
+  },
+  {
+    "id": "5384",
+    "krName": "죽은 척하기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "5740",
+    "krName": "불의 비",
+    "enName": "Unknown"
+  },
+  {
+    "id": "5782",
+    "krName": "공포",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6117",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6196",
+    "krName": "천리안",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6201",
+    "krName": "생명석 창조",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6229",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6770",
+    "krName": "혼절시키기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "6789",
+    "krName": "필멸의 고리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "8122",
+    "krName": "영혼의 절규",
+    "enName": "Unknown"
+  },
+  {
+    "id": "8143",
+    "krName": "진동의 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "8512",
+    "krName": "질풍의 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "8647",
+    "krName": "신비한 손길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "10059",
+    "krName": "차원문: 스톰윈드",
+    "enName": "Unknown"
+  },
+  {
+    "id": "11170",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "11366",
+    "krName": "불덩이 작렬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "12654",
+    "krName": "작열",
+    "enName": "Unknown"
+  },
+  {
+    "id": "12975",
+    "krName": "최후의 저항",
+    "enName": "Unknown"
+  },
+  {
+    "id": "13750",
+    "krName": "아드레날린 촉진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "13877",
+    "krName": "폭풍의 칼날",
+    "enName": "Unknown"
+  },
+  {
+    "id": "14892",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "15237",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "15407",
+    "krName": "정신의 채찍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "15487",
+    "krName": "침묵",
+    "enName": "Unknown"
+  },
+  {
+    "id": "16164",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "16166",
+    "krName": "원소의 대가",
+    "enName": "Unknown"
+  },
+  {
+    "id": "16196",
+    "krName": "회생",
+    "enName": "Unknown"
+  },
+  {
+    "id": "16213",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "17877",
+    "krName": "어둠의 연소",
+    "enName": "Unknown"
+  },
+  {
+    "id": "17962",
+    "krName": "점화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "19236",
+    "krName": "구원의 기도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "20711",
+    "krName": "구원의 영혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "21562",
+    "krName": "신의 권능: 인내",
+    "enName": "Unknown"
+  },
+  {
+    "id": "23920",
+    "krName": "주문 반사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "27243",
+    "krName": "부패의 씨앗",
+    "enName": "Unknown"
+  },
+  {
+    "id": "30449",
+    "krName": "마법 훔치기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "30455",
+    "krName": "얼음창",
+    "enName": "Unknown"
+  },
+  {
+    "id": "31589",
+    "krName": "감속",
+    "enName": "Unknown"
+  },
+  {
+    "id": "31661",
+    "krName": "용의 숨결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "31687",
+    "krName": "물의 정령 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "32182",
+    "krName": "영웅심",
+    "enName": "Unknown"
+  },
+  {
+    "id": "32379",
+    "krName": "어둠의 권능: 죽음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "32645",
+    "krName": "독살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "33206",
+    "krName": "고통 억제",
+    "enName": "Unknown"
+  },
+  {
+    "id": "33757",
+    "krName": "질풍의 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "33763",
+    "krName": "피어나는 생명",
+    "enName": "Unknown"
+  },
+  {
+    "id": "34914",
+    "krName": "흡혈의 손길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "36032",
+    "krName": "비전 충전물",
+    "enName": "Unknown"
+  },
+  {
+    "id": "42650",
+    "krName": "사자의 군대",
+    "enName": "Unknown"
+  },
+  {
+    "id": "44457",
+    "krName": "살아있는 폭탄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "44544",
+    "krName": "서리의 손가락",
+    "enName": "Unknown"
+  },
+  {
+    "id": "45462",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "45477",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "46584",
+    "krName": "시체 되살리기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "47536",
+    "krName": "환희",
+    "enName": "Unknown"
+  },
+  {
+    "id": "47540",
+    "krName": "회개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "47585",
+    "krName": "분산",
+    "enName": "Unknown"
+  },
+  {
+    "id": "47788",
+    "krName": "수호 영혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "48018",
+    "krName": "악마의 마법진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "48181",
+    "krName": "유령 출몰",
+    "enName": "Unknown"
+  },
+  {
+    "id": "48517",
+    "krName": "일식",
+    "enName": "Unknown"
+  },
+  {
+    "id": "48518",
+    "krName": "월식",
+    "enName": "Unknown"
+  },
+  {
+    "id": "49028",
+    "krName": "춤추는 룬 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "49222",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "49530",
+    "krName": "불시의 파멸",
+    "enName": "Unknown"
+  },
+  {
+    "id": "50842",
+    "krName": "피의 소용돌이",
+    "enName": "Unknown"
+  },
+  {
+    "id": "51128",
+    "krName": "도살기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "51533",
+    "krName": "야수 정령",
+    "enName": "Unknown"
+  },
+  {
+    "id": "51564",
+    "krName": "굽이치는 물결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "53376",
+    "krName": "축성의 분노",
+    "enName": "Unknown"
+  },
+  {
+    "id": "53385",
+    "krName": "천상의 폭풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "53480",
+    "krName": "희생의 포효",
+    "enName": "Unknown"
+  },
+  {
+    "id": "57755",
+    "krName": "영웅의 투척",
+    "enName": "Unknown"
+  },
+  {
+    "id": "57994",
+    "krName": "날카로운 바람",
+    "enName": "Unknown"
+  },
+  {
+    "id": "58875",
+    "krName": "정령의 걸음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "58984",
+    "krName": "그림자 숨기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "59057",
+    "krName": "단단한 얼음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "61882",
+    "krName": "지진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "62618",
+    "krName": "신의 권능: 방벽",
+    "enName": "Unknown"
+  },
+  {
+    "id": "63106",
+    "krName": "생명력 착취",
+    "enName": "Unknown"
+  },
+  {
+    "id": "63560",
+    "krName": "어둠의 변신",
+    "enName": "Unknown"
+  },
+  {
+    "id": "64044",
+    "krName": "정신적 두려움",
+    "enName": "Unknown"
+  },
+  {
+    "id": "64129",
+    "krName": "육체와 영혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "64843",
+    "krName": "천상의 찬가",
+    "enName": "Unknown"
+  },
+  {
+    "id": "74434",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "76657",
+    "krName": "특화: 야수의 왕",
+    "enName": "Unknown"
+  },
+  {
+    "id": "76671",
+    "krName": "특화: 천상의 보루",
+    "enName": "Unknown"
+  },
+  {
+    "id": "76838",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "77489",
+    "krName": "빛의 반향",
+    "enName": "Unknown"
+  },
+  {
+    "id": "77756",
+    "krName": "용암 쇄도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "77758",
+    "krName": "휩쓸기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "78674",
+    "krName": "별빛쇄도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "79096",
+    "krName": "잠들지 않는 칼날",
+    "enName": "Unknown"
+  },
+  {
+    "id": "79140",
+    "krName": "원한",
+    "enName": "Unknown"
+  },
+  {
+    "id": "80240",
+    "krName": "대혼란",
+    "enName": "Unknown"
+  },
+  {
+    "id": "80353",
+    "krName": "시간 왜곡",
+    "enName": "Unknown"
+  },
+  {
+    "id": "81141",
+    "krName": "진홍빛 스컬지",
+    "enName": "Unknown"
+  },
+  {
+    "id": "81751",
+    "krName": "속죄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "82731",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "84714",
+    "krName": "얼어붙은 구슬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "85043",
+    "krName": "위대한 성전사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "86121",
+    "krName": "영혼 바꾸기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "97462",
+    "krName": "재집결의 함성",
+    "enName": "Unknown"
+  },
+  {
+    "id": "98008",
+    "krName": "정신의 고리 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "101545",
+    "krName": "비룡차기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "101546",
+    "krName": "회전 학다리차기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "101643",
+    "krName": "해탈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "102359",
+    "krName": "대규모 휘감기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "103827",
+    "krName": "연속 돌진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "104316",
+    "krName": "공포사냥개 부르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "104773",
+    "krName": "영원한 결의",
+    "enName": "Unknown"
+  },
+  {
+    "id": "105174",
+    "krName": "굴단의 손",
+    "enName": "Unknown"
+  },
+  {
+    "id": "106951",
+    "krName": "광폭화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "107570",
+    "krName": "폭풍망치",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108216",
+    "krName": "비열한 수법",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108238",
+    "krName": "재활",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108281",
+    "krName": "고대의 인도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108416",
+    "krName": "어둠의 서약",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108558",
+    "krName": "일몰",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108843",
+    "krName": "타오르는 속도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108920",
+    "krName": "공허의 촉수",
+    "enName": "Unknown"
+  },
+  {
+    "id": "108968",
+    "krName": "공허의 전환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "109132",
+    "krName": "구르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "109142",
+    "krName": "뒤틀린 운명",
+    "enName": "Unknown"
+  },
+  {
+    "id": "109215",
+    "krName": "급가속",
+    "enName": "Unknown"
+  },
+  {
+    "id": "109964",
+    "krName": "혼의 너울",
+    "enName": "Unknown"
+  },
+  {
+    "id": "110959",
+    "krName": "상급 투명화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "111673",
+    "krName": "언데드 지배",
+    "enName": "Unknown"
+  },
+  {
+    "id": "112870",
+    "krName": "격노수호병 소환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "113656",
+    "krName": "분노의 주먹",
+    "enName": "Unknown"
+  },
+  {
+    "id": "113724",
+    "krName": "서리 고리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "113860",
+    "krName": "악마의 영혼: 불행",
+    "enName": "Unknown"
+  },
+  {
+    "id": "114014",
+    "krName": "표창 투척",
+    "enName": "Unknown"
+  },
+  {
+    "id": "114018",
+    "krName": "은폐의 장막",
+    "enName": "Unknown"
+  },
+  {
+    "id": "114154",
+    "krName": "불굴의 정신력",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115069",
+    "krName": "시간차",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115078",
+    "krName": "마비",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115098",
+    "krName": "기의 물결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115151",
+    "krName": "소생의 안개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115175",
+    "krName": "위안의 안개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115176",
+    "krName": "명상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115308",
+    "krName": "무쇠가죽주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115310",
+    "krName": "재활",
+    "enName": "Unknown"
+  },
+  {
+    "id": "115546",
+    "krName": "조롱",
+    "enName": "Unknown"
+  },
+  {
+    "id": "116680",
+    "krName": "집중의 천둥 차",
+    "enName": "Unknown"
+  },
+  {
+    "id": "116849",
+    "krName": "기의 고치",
+    "enName": "Unknown"
+  },
+  {
+    "id": "116858",
+    "krName": "혼돈의 화살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "117014",
+    "krName": "정기 작렬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "117216",
+    "krName": "임계 질량",
+    "enName": "Unknown"
+  },
+  {
+    "id": "117906",
+    "krName": "특화: 교묘한 투사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "117907",
+    "krName": "특화: 안개 돌풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "118000",
+    "krName": "용의 포효",
+    "enName": "Unknown"
+  },
+  {
+    "id": "118038",
+    "krName": "투사의 혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "119381",
+    "krName": "팽이 차기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "119582",
+    "krName": "정화주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "120360",
+    "krName": "탄막",
+    "enName": "Unknown"
+  },
+  {
+    "id": "121253",
+    "krName": "맥주통 휘두르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "122470",
+    "krName": "업보의 손아귀",
+    "enName": "Unknown"
+  },
+  {
+    "id": "122783",
+    "krName": "마법 해소",
+    "enName": "Unknown"
+  },
+  {
+    "id": "124502",
+    "krName": "소의 선물",
+    "enName": "Unknown"
+  },
+  {
+    "id": "124682",
+    "krName": "포용의 안개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "124974",
+    "krName": "자연의 경계",
+    "enName": "Unknown"
+  },
+  {
+    "id": "125883",
+    "krName": "참선 비행",
+    "enName": "Unknown"
+  },
+  {
+    "id": "131347",
+    "krName": "활공",
+    "enName": "Unknown"
+  },
+  {
+    "id": "131894",
+    "krName": "저승까마귀",
+    "enName": "Unknown"
+  },
+  {
+    "id": "137639",
+    "krName": "폭풍과 대지와 불",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152108",
+    "krName": "대재앙",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152173",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152175",
+    "krName": "소용돌이 용의 주먹",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152262",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152278",
+    "krName": "분노 제어",
+    "enName": "Unknown"
+  },
+  {
+    "id": "152279",
+    "krName": "신드라고사의 숨결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "153561",
+    "krName": "유성",
+    "enName": "Unknown"
+  },
+  {
+    "id": "154436",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "156910",
+    "krName": "신념의 봉화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "162243",
+    "krName": "악마의 이빨",
+    "enName": "Unknown"
+  },
+  {
+    "id": "168534",
+    "krName": "특화: 정기 과부하",
+    "enName": "Unknown"
+  },
+  {
+    "id": "178740",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "179057",
+    "krName": "혼돈의 회오리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "183997",
+    "krName": "특화: 빛의 수호자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "184361",
+    "krName": "격노",
+    "enName": "Unknown"
+  },
+  {
+    "id": "184364",
+    "krName": "격노의 재생력",
+    "enName": "Unknown"
+  },
+  {
+    "id": "184367",
+    "krName": "광란",
+    "enName": "Unknown"
+  },
+  {
+    "id": "185123",
+    "krName": "글레이브 투척",
+    "enName": "Unknown"
+  },
+  {
+    "id": "185245",
+    "krName": "고문",
+    "enName": "Unknown"
+  },
+  {
+    "id": "185313",
+    "krName": "어둠의 춤",
+    "enName": "Unknown"
+  },
+  {
+    "id": "186257",
+    "krName": "치타의 상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "186263",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187650",
+    "krName": "빙결 덫",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187698",
+    "krName": "타르 덫",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187707",
+    "krName": "재갈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187708",
+    "krName": "저미기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187874",
+    "krName": "낙뢰",
+    "enName": "Unknown"
+  },
+  {
+    "id": "187880",
+    "krName": "소용돌이치는 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "188499",
+    "krName": "칼춤",
+    "enName": "Unknown"
+  },
+  {
+    "id": "188501",
+    "krName": "영혼 시야",
+    "enName": "Unknown"
+  },
+  {
+    "id": "190356",
+    "krName": "눈보라",
+    "enName": "Unknown"
+  },
+  {
+    "id": "190447",
+    "krName": "두뇌 빙결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "190456",
+    "krName": "고통 감내",
+    "enName": "Unknown"
+  },
+  {
+    "id": "190740",
+    "krName": "특화: 학자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "191334",
+    "krName": "특화: 사냥의 동반자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "191384",
+    "krName": "야수의 상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "191837",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "192077",
+    "krName": "바람 질주 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "192081",
+    "krName": "무쇠가죽",
+    "enName": "Unknown"
+  },
+  {
+    "id": "192249",
+    "krName": "폭풍의 정령",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193155",
+    "krName": "깨달음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193157",
+    "krName": "축도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193357",
+    "krName": "무자비한 정밀함",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193396",
+    "krName": "악마의 권능",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193468",
+    "krName": "특화: 저격 훈련",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193531",
+    "krName": "심오한 책략",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193532",
+    "krName": "피의 향기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193539",
+    "krName": "기민함",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193786",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "193876",
+    "krName": "주술의 힘",
+    "enName": "Unknown"
+  },
+  {
+    "id": "194223",
+    "krName": "천공의 정렬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "194384",
+    "krName": "속죄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "194679",
+    "krName": "룬 전환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "194844",
+    "krName": "뼈폭풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "194909",
+    "krName": "얼어붙은 파동",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195072",
+    "krName": "지옥 돌진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195182",
+    "krName": "골수분쇄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195283",
+    "krName": "몰아치는 열기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195457",
+    "krName": "갈고리 던지기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195627",
+    "krName": "기회",
+    "enName": "Unknown"
+  },
+  {
+    "id": "195679",
+    "krName": "피구더기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196055",
+    "krName": "이중 도약",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196105",
+    "krName": "전염",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196277",
+    "krName": "파열",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196406",
+    "krName": "역류",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196447",
+    "krName": "악마불 집중",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196718",
+    "krName": "어둠",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196740",
+    "krName": "타격 연계",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196770",
+    "krName": "냉혹한 겨울",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196911",
+    "krName": "그림자 기술",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196917",
+    "krName": "순교자의 빛",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196976",
+    "krName": "어둠의 대가",
+    "enName": "Unknown"
+  },
+  {
+    "id": "196985",
+    "krName": "나루의 빛",
+    "enName": "Unknown"
+  },
+  {
+    "id": "197214",
+    "krName": "세계의 분리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "197535",
+    "krName": "굳건한 정신",
+    "enName": "Unknown"
+  },
+  {
+    "id": "197835",
+    "krName": "표창 폭풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198100",
+    "krName": "도벽",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198123",
+    "krName": "깊은 갈라짐",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198158",
+    "krName": "대규모 투명화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198793",
+    "krName": "복수의 퇴각",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198817",
+    "krName": "무기 연마",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198838",
+    "krName": "대지의 벽 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "198952",
+    "krName": "한밤의 장막",
+    "enName": "Unknown"
+  },
+  {
+    "id": "199445",
+    "krName": "정신적 외상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "199528",
+    "krName": "무리와 하나",
+    "enName": "Unknown"
+  },
+  {
+    "id": "200025",
+    "krName": "고결의 봉화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "200128",
+    "krName": "빛의 흔적",
+    "enName": "Unknown"
+  },
+  {
+    "id": "200174",
+    "krName": "환각의 마귀",
+    "enName": "Unknown"
+  },
+  {
+    "id": "200183",
+    "krName": "절정",
+    "enName": "Unknown"
+  },
+  {
+    "id": "200209",
+    "krName": "수호 천사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "201430",
+    "krName": "쇄도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "201996",
+    "krName": "감시자 부르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "202090",
+    "krName": "수도원의 가르침",
+    "enName": "Unknown"
+  },
+  {
+    "id": "202168",
+    "krName": "예견된 승리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "202751",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "202914",
+    "krName": "거미 쐐기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203177",
+    "krName": "묵직한 반격",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203235",
+    "krName": "사냥하는 무리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203513",
+    "krName": "악마의 수호",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203538",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203539",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203555",
+    "krName": "악마 칼날",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203650",
+    "krName": "준비",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203704",
+    "krName": "마나 파괴",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203720",
+    "krName": "악마 쐐기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "203981",
+    "krName": "영혼 파편",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204021",
+    "krName": "불타는 낙인",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204074",
+    "krName": "정의로운 수호자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204197",
+    "krName": "사악의 정화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204254",
+    "krName": "조각난 영혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204261",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204330",
+    "krName": "격노의 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204331",
+    "krName": "반격 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204393",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "204596",
+    "krName": "불꽃의 인장",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205021",
+    "krName": "서리 광선",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205025",
+    "krName": "냉정",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205148",
+    "krName": "불확실성 역전",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205184",
+    "krName": "울부짖는 불길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205448",
+    "krName": "공허의 화살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205596",
+    "krName": "억류",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205604",
+    "krName": "마법 역전",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205625",
+    "krName": "불로 정화하리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "205729",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "206416",
+    "krName": "첫 번째 피",
+    "enName": "Unknown"
+  },
+  {
+    "id": "206478",
+    "krName": "악마의 식탐",
+    "enName": "Unknown"
+  },
+  {
+    "id": "206491",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "206931",
+    "krName": "피 들이키기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "206967",
+    "krName": "죽음의 요새의 결의",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207104",
+    "krName": "룬 감쇠",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207167",
+    "krName": "눈부신 진눈깨비",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207230",
+    "krName": "서리낫",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207289",
+    "krName": "부정의 습격",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207317",
+    "krName": "전염병",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207387",
+    "krName": "고통 인도자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207736",
+    "krName": "어둠의 결투",
+    "enName": "Unknown"
+  },
+  {
+    "id": "207777",
+    "krName": "장비 분해",
+    "enName": "Unknown"
+  },
+  {
+    "id": "210128",
+    "krName": "되살리기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "210152",
+    "krName": "죽음의 휩쓸기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "210824",
+    "krName": "비전의 여파",
+    "enName": "Unknown"
+  },
+  {
+    "id": "212182",
+    "krName": "연막탄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "212283",
+    "krName": "죽음의 상징",
+    "enName": "Unknown"
+  },
+  {
+    "id": "212552",
+    "krName": "망령 걸음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "212619",
+    "krName": "지옥사냥개 부르기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "212628",
+    "krName": "소환의 대가",
+    "enName": "Unknown"
+  },
+  {
+    "id": "215864",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "215941",
+    "krName": "영혼 전도체",
+    "enName": "Unknown"
+  },
+  {
+    "id": "217832",
+    "krName": "감금",
+    "enName": "Unknown"
+  },
+  {
+    "id": "218164",
+    "krName": "해독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "219786",
+    "krName": "납골당",
+    "enName": "Unknown"
+  },
+  {
+    "id": "221622",
+    "krName": "도둑의 배짱",
+    "enName": "Unknown"
+  },
+  {
+    "id": "221703",
+    "krName": "시전 마법진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "221711",
+    "krName": "정수 흡수",
+    "enName": "Unknown"
+  },
+  {
+    "id": "227635",
+    "krName": "어둠의 위장",
+    "enName": "Unknown"
+  },
+  {
+    "id": "227847",
+    "krName": "칼날폭풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "228260",
+    "krName": "공허 방출",
+    "enName": "Unknown"
+  },
+  {
+    "id": "228477",
+    "krName": "영혼 베어내기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "228920",
+    "krName": "쇠날발톱",
+    "enName": "Unknown"
+  },
+  {
+    "id": "230332",
+    "krName": "기병",
+    "enName": "Unknown"
+  },
+  {
+    "id": "231895",
+    "krName": "성전",
+    "enName": "Unknown"
+  },
+  {
+    "id": "233759",
+    "krName": "갈고리 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "234153",
+    "krName": "생명력 흡수",
+    "enName": "Unknown"
+  },
+  {
+    "id": "234877",
+    "krName": "어둠의 약점",
+    "enName": "Unknown"
+  },
+  {
+    "id": "235219",
+    "krName": "매서운 한파",
+    "enName": "Unknown"
+  },
+  {
+    "id": "235893",
+    "krName": "일리다리의 정점",
+    "enName": "Unknown"
+  },
+  {
+    "id": "236077",
+    "krName": "무장 해제",
+    "enName": "Unknown"
+  },
+  {
+    "id": "236273",
+    "krName": "결투",
+    "enName": "Unknown"
+  },
+  {
+    "id": "236320",
+    "krName": "전투 깃발",
+    "enName": "Unknown"
+  },
+  {
+    "id": "236696",
+    "krName": "가시",
+    "enName": "Unknown"
+  },
+  {
+    "id": "246287",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "247454",
+    "krName": "영혼 폭탄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "255545",
+    "krName": "독폭탄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "257284",
+    "krName": "사냥꾼의 징표",
+    "enName": "Unknown"
+  },
+  {
+    "id": "257541",
+    "krName": "불사조의 불길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "258876",
+    "krName": "끝없는 허기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "258925",
+    "krName": "지옥 포화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "259387",
+    "krName": "살쾡이의 이빨",
+    "enName": "Unknown"
+  },
+  {
+    "id": "259489",
+    "krName": "살상 명령",
+    "enName": "Unknown"
+  },
+  {
+    "id": "259495",
+    "krName": "야생불 폭탄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "260878",
+    "krName": "늑대 정령",
+    "enName": "Unknown"
+  },
+  {
+    "id": "263648",
+    "krName": "영혼 방벽",
+    "enName": "Unknown"
+  },
+  {
+    "id": "263725",
+    "krName": "번뜩임",
+    "enName": "Unknown"
+  },
+  {
+    "id": "264173",
+    "krName": "악마의 핵",
+    "enName": "Unknown"
+  },
+  {
+    "id": "264178",
+    "krName": "악마 화살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "265202",
+    "krName": "빛의 권능: 구원",
+    "enName": "Unknown"
+  },
+  {
+    "id": "266779",
+    "krName": "협공",
+    "enName": "Unknown"
+  },
+  {
+    "id": "266921",
+    "krName": "타고난 야성",
+    "enName": "Unknown"
+  },
+  {
+    "id": "267102",
+    "krName": "악마의 핵",
+    "enName": "Unknown"
+  },
+  {
+    "id": "267116",
+    "krName": "동물 친구",
+    "enName": "Unknown"
+  },
+  {
+    "id": "267344",
+    "krName": "전쟁의 기술",
+    "enName": "Unknown"
+  },
+  {
+    "id": "269737",
+    "krName": "우두머리 포식자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "271534",
+    "krName": "특화: 은총",
+    "enName": "Unknown"
+  },
+  {
+    "id": "273887",
+    "krName": "살수의 본능",
+    "enName": "Unknown"
+  },
+  {
+    "id": "274156",
+    "krName": "섭취",
+    "enName": "Unknown"
+  },
+  {
+    "id": "275699",
+    "krName": "대재앙",
+    "enName": "Unknown"
+  },
+  {
+    "id": "278326",
+    "krName": "마법 삼키기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "280776",
+    "krName": "급살",
+    "enName": "Unknown"
+  },
+  {
+    "id": "287081",
+    "krName": "리치의 혼",
+    "enName": "Unknown"
+  },
+  {
+    "id": "287503",
+    "krName": "범의 수장",
+    "enName": "Unknown"
+  },
+  {
+    "id": "287506",
+    "krName": "바람의 기상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "287681",
+    "krName": "쾌속의 주먹",
+    "enName": "Unknown"
+  },
+  {
+    "id": "288613",
+    "krName": "정조준",
+    "enName": "Unknown"
+  },
+  {
+    "id": "288853",
+    "krName": "누더기골렘 되살리기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "288977",
+    "krName": "투입",
+    "enName": "Unknown"
+  },
+  {
+    "id": "315341",
+    "krName": "미간 적중",
+    "enName": "Unknown"
+  },
+  {
+    "id": "315496",
+    "krName": "난도질",
+    "enName": "Unknown"
+  },
+  {
+    "id": "315508",
+    "krName": "뼈주사위",
+    "enName": "Unknown"
+  },
+  {
+    "id": "318038",
+    "krName": "불꽃혓바닥 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "319175",
+    "krName": "검은 화약",
+    "enName": "Unknown"
+  },
+  {
+    "id": "319952",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "320413",
+    "krName": "치명적 혼돈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "321530",
+    "krName": "유혈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "322120",
+    "krName": "건들건들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "322507",
+    "krName": "천신주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "324536",
+    "krName": "사악한 환희",
+    "enName": "Unknown"
+  },
+  {
+    "id": "325201",
+    "krName": "츠지의 춤",
+    "enName": "Unknown"
+  },
+  {
+    "id": "327193",
+    "krName": "영광의 순간",
+    "enName": "Unknown"
+  },
+  {
+    "id": "327574",
+    "krName": "희생의 서약",
+    "enName": "Unknown"
+  },
+  {
+    "id": "328529",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "334033",
+    "krName": "용암 공세",
+    "enName": "Unknown"
+  },
+  {
+    "id": "334319",
+    "krName": "피할 수 없는 죽음",
+    "enName": "Unknown"
+  },
+  {
+    "id": "335467",
+    "krName": "파멸의 역병",
+    "enName": "Unknown"
+  },
+  {
+    "id": "342817",
+    "krName": "글레이브의 폭풍",
+    "enName": "Unknown"
+  },
+  {
+    "id": "342928",
+    "krName": "해악 역전",
+    "enName": "Unknown"
+  },
+  {
+    "id": "343527",
+    "krName": "사형 선고",
+    "enName": "Unknown"
+  },
+  {
+    "id": "343721",
+    "krName": "최후의 집행",
+    "enName": "Unknown"
+  },
+  {
+    "id": "346002",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "347462",
+    "krName": "풀려난 혼돈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "351338",
+    "krName": "진압",
+    "enName": "Unknown"
+  },
+  {
+    "id": "353319",
+    "krName": "평화의 수사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "355455",
+    "krName": "천상의 공명",
+    "enName": "Unknown"
+  },
+  {
+    "id": "355936",
+    "krName": "꿈의 숨결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "356995",
+    "krName": "파열",
+    "enName": "Unknown"
+  },
+  {
+    "id": "357170",
+    "krName": "시간 팽창",
+    "enName": "Unknown"
+  },
+  {
+    "id": "357211",
+    "krName": "기염",
+    "enName": "Unknown"
+  },
+  {
+    "id": "357214",
+    "krName": "폭풍 날개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "358267",
+    "krName": "부양",
+    "enName": "Unknown"
+  },
+  {
+    "id": "358385",
+    "krName": "산사태",
+    "enName": "Unknown"
+  },
+  {
+    "id": "359073",
+    "krName": "영원의 쇄도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "360806",
+    "krName": "몽유병",
+    "enName": "Unknown"
+  },
+  {
+    "id": "360827",
+    "krName": "끓어오르는 비늘",
+    "enName": "Unknown"
+  },
+  {
+    "id": "360995",
+    "krName": "신록의 품",
+    "enName": "Unknown"
+  },
+  {
+    "id": "361021",
+    "krName": "능력 감응",
+    "enName": "Unknown"
+  },
+  {
+    "id": "361227",
+    "krName": "회귀",
+    "enName": "Unknown"
+  },
+  {
+    "id": "361500",
+    "krName": "살아있는 불꽃",
+    "enName": "Unknown"
+  },
+  {
+    "id": "363510",
+    "krName": "특화: 생명술사",
+    "enName": "Unknown"
+  },
+  {
+    "id": "363534",
+    "krName": "되돌리기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "364343",
+    "krName": "메아리",
+    "enName": "Unknown"
+  },
+  {
+    "id": "365585",
+    "krName": "말소",
+    "enName": "Unknown"
+  },
+  {
+    "id": "366155",
+    "krName": "되감기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "367226",
+    "krName": "영혼 만개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "368970",
+    "krName": "꼬리 휘둘러치기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "369459",
+    "krName": "마법의 원천",
+    "enName": "Unknown"
+  },
+  {
+    "id": "369536",
+    "krName": "비상",
+    "enName": "Unknown"
+  },
+  {
+    "id": "369990",
+    "krName": "고대 불꽃",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370432",
+    "krName": "Collapsing Army Trigger",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370452",
+    "krName": "산산이 부서지는 별",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370537",
+    "krName": "정지장",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370553",
+    "krName": "전세역전",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370665",
+    "krName": "구출",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370783",
+    "krName": "찰나의 불꽃",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370818",
+    "krName": "찰나의 불꽃",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370960",
+    "krName": "에메랄드 교감",
+    "enName": "Unknown"
+  },
+  {
+    "id": "370965",
+    "krName": "사냥",
+    "enName": "Unknown"
+  },
+  {
+    "id": "373861",
+    "krName": "시간 변칙",
+    "enName": "Unknown"
+  },
+  {
+    "id": "374348",
+    "krName": "소생의 불길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "375087",
+    "krName": "용의 분노",
+    "enName": "Unknown"
+  },
+  {
+    "id": "375618",
+    "krName": "비전 격화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "375725",
+    "krName": "열기의 파도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "375801",
+    "krName": "불태움",
+    "enName": "Unknown"
+  },
+  {
+    "id": "376895",
+    "krName": "대지의 수호자의 금고 사슬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378076",
+    "krName": "천둥발",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378081",
+    "krName": "자연의 신속함",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378269",
+    "krName": "바람예언자의 부활하는 용암",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378277",
+    "krName": "정기의 평형",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378285",
+    "krName": "티르의 집행자",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378291",
+    "krName": "Hunting Party 004 Aura",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378298",
+    "krName": "Hunting Party 011 Aura",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378433",
+    "krName": "차디찬 추진력",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378437",
+    "krName": "굴레를 벗어난 날개",
+    "enName": "Unknown"
+  },
+  {
+    "id": "378464",
+    "krName": "무효화의 장막",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381623",
+    "krName": "엉겅퀴 차",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381632",
+    "krName": "목조르기 연마",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381634",
+    "krName": "흉악한 맹독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381761",
+    "krName": "태고의 유대",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381773",
+    "krName": "꿰뚫는 한기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381777",
+    "krName": "녹아내리는 용제",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381802",
+    "krName": "무차별 살육",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381869",
+    "krName": "[DNT] Pulling Wiggly Plant Pully Thing",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381877",
+    "krName": "전투 체력",
+    "enName": "Unknown"
+  },
+  {
+    "id": "381878",
+    "krName": "날렵한 몸놀림",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382103",
+    "krName": "얼어붙는 바람",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382106",
+    "krName": "얼어붙는 바람",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382113",
+    "krName": "한랭 전선",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382130",
+    "krName": "수정 거미줄",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382245",
+    "krName": "냉혈",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382267",
+    "krName": "격렬한 돌진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382290",
+    "krName": "폭풍우 방벽",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382440",
+    "krName": "힘의 전환",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382513",
+    "krName": "흔적도 없이",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382721",
+    "krName": "복원의 룬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382824",
+    "krName": "시간의 속도",
+    "enName": "Unknown"
+  },
+  {
+    "id": "382917",
+    "krName": "Transform: Visage -> Dragon (Black) [DNT]",
+    "enName": "Unknown"
+  },
+  {
+    "id": "383005",
+    "krName": "시간의 굴레",
+    "enName": "Unknown"
+  },
+  {
+    "id": "383013",
+    "krName": "독 정화 토템",
+    "enName": "Unknown"
+  },
+  {
+    "id": "384100",
+    "krName": "광전사의 외침",
+    "enName": "Unknown"
+  },
+  {
+    "id": "384352",
+    "krName": "파멸의 바람",
+    "enName": "Unknown"
+  },
+  {
+    "id": "384355",
+    "krName": "자연의 무기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "384631",
+    "krName": "채찍질",
+    "enName": "Unknown"
+  },
+  {
+    "id": "384689",
+    "krName": "분할 통치",
+    "enName": "Unknown"
+  },
+  {
+    "id": "387847",
+    "krName": "마의 갑옷",
+    "enName": "Unknown"
+  },
+  {
+    "id": "387865",
+    "krName": "불안정한 정령 동화체",
+    "enName": "Unknown"
+  },
+  {
+    "id": "387899",
+    "krName": "수호물",
+    "enName": "Unknown"
+  },
+  {
+    "id": "387925",
+    "krName": "[DNT]Warding Console Activation",
+    "enName": "Unknown"
+  },
+  {
+    "id": "387946",
+    "krName": "건물",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388108",
+    "krName": "자주성",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388663",
+    "krName": "원령술사의 향락",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388664",
+    "krName": "안정의 존재",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388668",
+    "krName": "선의 파동",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388679",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388812",
+    "krName": "쾌활한 생기화",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388845",
+    "krName": "태고의 분노",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388847",
+    "krName": "급속 확산",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388849",
+    "krName": "떠오르는 별",
+    "enName": "Unknown"
+  },
+  {
+    "id": "388856",
+    "krName": "호랑이의 손길",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389687",
+    "krName": "혼돈 이론",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389688",
+    "krName": "전략적 후퇴",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389693",
+    "krName": "내면의 악마",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389713",
+    "krName": "변위",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389715",
+    "krName": "분노의 사슬",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389730",
+    "krName": "Cosmetic - SitHigh and Drink Breakable (10.0 Explorers Tankard)",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389732",
+    "krName": "불꽃의 잠식",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389734",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "389794",
+    "krName": "눈더미",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390155",
+    "krName": "톱니날 글레이브",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390163",
+    "krName": "원한의 인장",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390756",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390785",
+    "krName": "원시 거북이 등껍질",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390933",
+    "krName": "독신자의 진언",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390978",
+    "krName": "뒤틀린 운명",
+    "enName": "Unknown"
+  },
+  {
+    "id": "390986",
+    "krName": "원시의 기원",
+    "enName": "Unknown"
+  },
+  {
+    "id": "391165",
+    "krName": "영혼의 용광로",
+    "enName": "Unknown"
+  },
+  {
+    "id": "391171",
+    "krName": "석회 쐐기",
+    "enName": "Unknown"
+  },
+  {
+    "id": "394324",
+    "krName": "맹독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "394327",
+    "krName": "상처 감염 독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "394328",
+    "krName": "증폭의 독",
+    "enName": "Unknown"
+  },
+  {
+    "id": "395152",
+    "krName": "칠흑의 힘",
+    "enName": "Unknown"
+  },
+  {
+    "id": "395160",
+    "krName": "분출",
+    "enName": "Unknown"
+  },
+  {
+    "id": "395238",
+    "krName": "영혼의 돌진",
+    "enName": "Unknown"
+  },
+  {
+    "id": "396286",
+    "krName": "지각 변동",
+    "enName": "Unknown"
+  },
+  {
+    "id": "401150",
+    "krName": "주문들",
+    "enName": "Unknown"
+  },
+  {
+    "id": "403631",
+    "krName": "영겁의 숨결",
+    "enName": "Unknown"
+  },
+  {
+    "id": "406264",
+    "krName": "경주",
+    "enName": "Unknown"
+  },
+  {
+    "id": "406659",
+    "krName": "튕기는 화산 쇄설암",
+    "enName": "Unknown"
+  },
+  {
+    "id": "409311",
+    "krName": "예지",
+    "enName": "Unknown"
+  },
+  {
+    "id": "413984",
+    "krName": "흐르는 모래",
+    "enName": "Unknown"
+  }
+]

@@ -173,7 +173,7 @@ function RecentGuidesSection() {
       excerpt: '시들기 기반 빌드와 로테이션, 영웅 특성 선택 가이드',
       patch: '11.2',
       difficulty: '중급',
-      updateDate: '2025-01-15',
+      updateDate: '2025-10-02',
       link: '/guide/warlock/affliction',
       classColor: '#8788EE'
     },
@@ -187,7 +187,7 @@ function RecentGuidesSection() {
       excerpt: '악마 소환 최적화와 티란의 권능 활용법',
       patch: '11.2',
       difficulty: '고급',
-      updateDate: '2025-01-14',
+      updateDate: '2025-10-02',
       link: '/guide/warlock/demonology',
       classColor: '#8788EE'
     },
@@ -201,7 +201,7 @@ function RecentGuidesSection() {
       excerpt: '펫 관리와 광기 스택 최적화 전략',
       patch: '11.2',
       difficulty: '초급',
-      updateDate: '2025-01-13',
+      updateDate: '2025-10-02',
       link: '/guide/hunter/beast-mastery',
       classColor: '#AAD372'
     },
@@ -215,7 +215,7 @@ function RecentGuidesSection() {
       excerpt: '정수 폭발 타이밍과 화염의 숨결 활용법',
       patch: '11.2',
       difficulty: '중급',
-      updateDate: '2025-01-12',
+      updateDate: '2025-10-02',
       link: '/guide/evoker/devastation',
       classColor: '#33937F'
     },
@@ -229,7 +229,7 @@ function RecentGuidesSection() {
       excerpt: '번개 화살과 용암 폭발 우선순위 가이드',
       patch: '11.2',
       difficulty: '중급',
-      updateDate: '2025-01-11',
+      updateDate: '2025-10-02',
       link: '/guide/shaman/elemental',
       classColor: '#0070DD'
     }

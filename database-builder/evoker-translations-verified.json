@@ -1,0 +1,370 @@
+{
+  "collectedAt": "2025-09-28",
+  "source": "ko.wowhead.com - Manual Verification",
+  "patch": "11.2 TWW Season 3",
+  "translations": {
+    "devastation": {
+      "356995": {
+        "englishName": "Disintegrate",
+        "koreanName": "파열",
+        "verified": true,
+        "notes": "정확한 번역 확인됨"
+      },
+      "357208": {
+        "englishName": "Fire Breath",
+        "koreanName": "불의 숨결",
+        "verified": true
+      },
+      "357211": {
+        "englishName": "Pyre",
+        "koreanName": "기염",
+        "verified": true
+      },
+      "359073": {
+        "englishName": "Eternity Surge",
+        "koreanName": "영원의 쇄도",
+        "verified": false,
+        "needsCheck": true
+      },
+      "361500": {
+        "englishName": "Living Flame",
+        "koreanName": "살아있는 불꽃",
+        "verified": false,
+        "needsCheck": true
+      },
+      "362969": {
+        "englishName": "Azure Strike",
+        "koreanName": "하늘빛 일격",
+        "verified": true
+      },
+      "368970": {
+        "englishName": "Firestorm",
+        "koreanName": "화염 폭풍",
+        "verified": false,
+        "needsCheck": true
+      },
+      "375087": {
+        "englishName": "Dragonrage",
+        "koreanName": "용의 분노",
+        "verified": false,
+        "needsCheck": true
+      },
+      "357210": {
+        "englishName": "Deep Breath",
+        "koreanName": "깊은 숨결",
+        "verified": false,
+        "needsCheck": true
+      },
+      "370452": {
+        "englishName": "Shattering Star",
+        "koreanName": "산산이 부서지는 별",
+        "verified": false,
+        "needsCheck": true
+      },
+      "443328": {
+        "englishName": "Engulf",
+        "koreanName": "휩싸기",
+        "verified": false,
+        "needsCheck": true
+      },
+      "408092": {
+        "englishName": "Essence Burst",
+        "koreanName": "정수 폭발",
+        "verified": false,
+        "needsCheck": true
+      },
+      "369297": {
+        "englishName": "Ruby Essence Burst",
+        "koreanName": "루비 정수 폭발",
+        "verified": false,
+        "needsCheck": true
+      },
+      "396006": {
+        "englishName": "Iridescence",
+        "koreanName": "무지갯빛",
+        "verified": false,
+        "needsCheck": true
+      },
+      "370960": {
+        "englishName": "Emerald Communion",
+        "koreanName": "에메랄드 교감",
+        "verified": false,
+        "needsCheck": true
+      }
+    },
+    "preservation": {
+      "355913": {
+        "englishName": "Emerald Blossom",
+        "koreanName": "에메랄드 꽃",
+        "verified": true
+      },
+      "366155": {
+        "englishName": "Reversion",
+        "koreanName": "역행",
+        "verified": false,
+        "needsCheck": true
+      },
+      "367226": {
+        "englishName": "Spiritbloom",
+        "koreanName": "영혼꽃",
+        "verified": false,
+        "needsCheck": true
+      },
+      "363534": {
+        "englishName": "Dream Flight",
+        "koreanName": "꿈 비행",
+        "verified": false,
+        "needsCheck": true
+      },
+      "360827": {
+        "englishName": "Verdant Embrace",
+        "koreanName": "신록의 품",
+        "verified": false,
+        "needsCheck": true
+      },
+      "364343": {
+        "englishName": "Echo",
+        "koreanName": "메아리",
+        "verified": false,
+        "needsCheck": true
+      },
+      "373861": {
+        "englishName": "Temporal Anomaly",
+        "koreanName": "시간의 변칙",
+        "verified": false,
+        "needsCheck": true
+      },
+      "357170": {
+        "englishName": "Time Dilation",
+        "koreanName": "시간 팽창",
+        "verified": false,
+        "needsCheck": true
+      },
+      "374939": {
+        "englishName": "Lifebind",
+        "koreanName": "생명 결속",
+        "verified": false,
+        "needsCheck": true
+      },
+      "376788": {
+        "englishName": "Cycle of Life",
+        "koreanName": "생명의 순환",
+        "verified": false,
+        "needsCheck": true
+      },
+      "370537": {
+        "englishName": "Stasis",
+        "koreanName": "정체",
+        "verified": false,
+        "needsCheck": true
+      },
+      "374227": {
+        "englishName": "Rewind",
+        "koreanName": "되감기",
+        "verified": false,
+        "needsCheck": true
+      },
+      "359816": {
+        "englishName": "Dream Breath",
+        "koreanName": "꿈의 숨결",
+        "verified": false,
+        "needsCheck": true
+      },
+      "377509": {
+        "englishName": "Dream Projection",
+        "koreanName": "꿈 투영",
+        "verified": false,
+        "needsCheck": true
+      }
+    },
+    "augmentation": {
+      "395160": {
+        "englishName": "Ebon Might",
+        "koreanName": "칠흑의 힘",
+        "verified": true,
+        "notes": "영웅 특성 페이지에서는 '칠흑의 힘'으로 표시, 실제 스킬은 ID가 다를 수 있음"
+      },
+      "404972": {
+        "englishName": "Eruption",
+        "koreanName": "분출",
+        "verified": true,
+        "notes": "wowhead에서는 '분출'로 표시"
+      },
+      "409311": {
+        "englishName": "Prescience",
+        "koreanName": "예지",
+        "verified": false,
+        "needsCheck": true
+      },
+      "403631": {
+        "englishName": "Breath of Eons",
+        "koreanName": "영겁의 숨결",
+        "verified": false,
+        "needsCheck": true
+      },
+      "396286": {
+        "englishName": "Upheaval",
+        "koreanName": "대격변",
+        "verified": false,
+        "needsCheck": true
+      },
+      "410256": {
+        "englishName": "Aspects' Favor",
+        "koreanName": "위상의 은총",
+        "verified": false,
+        "needsCheck": true
+      },
+      "404977": {
+        "englishName": "Time Skip",
+        "koreanName": "시간 도약",
+        "verified": false,
+        "needsCheck": true
+      },
+      "406732": {
+        "englishName": "Spatial Paradox",
+        "koreanName": "공간의 역설",
+        "verified": false,
+        "needsCheck": true
+      },
+      "403299": {
+        "englishName": "Interwoven Threads",
+        "koreanName": "뒤엉킨 실타래",
+        "verified": false,
+        "needsCheck": true
+      },
+      "395152": {
+        "englishName": "Fate Mirror",
+        "koreanName": "운명의 거울",
+        "verified": false,
+        "needsCheck": true
+      },
+      "360806": {
+        "englishName": "Blistering Scales",
+        "koreanName": "타오르는 비늘",
+        "verified": false,
+        "needsCheck": true
+      },
+      "404269": {
+        "englishName": "Pupil of Alexstrasza",
+        "koreanName": "알렉스트라자의 제자",
+        "verified": false,
+        "needsCheck": true
+      },
+      "407837": {
+        "englishName": "Overlord",
+        "koreanName": "대군주",
+        "verified": false,
+        "needsCheck": true
+      },
+      "443204": {
+        "englishName": "Mass Eruption",
+        "koreanName": "대규모 분출",
+        "verified": false,
+        "needsCheck": true
+      },
+      "409423": {
+        "englishName": "Molten Embers",
+        "koreanName": "녹아내린 불씨",
+        "verified": false,
+        "needsCheck": true
+      }
+    },
+    "common": {
+      "358267": {
+        "englishName": "Hover",
+        "koreanName": "부양",
+        "verified": false,
+        "needsCheck": true
+      },
+      "363916": {
+        "englishName": "Obsidian Scales",
+        "koreanName": "흑요석 비늘",
+        "verified": false,
+        "needsCheck": true
+      },
+      "374348": {
+        "englishName": "Renewing Blaze",
+        "koreanName": "소생의 화염",
+        "verified": false,
+        "needsCheck": true
+      },
+      "364342": {
+        "englishName": "Blessing of the Bronze",
+        "koreanName": "청동용의 축복",
+        "verified": false,
+        "needsCheck": true
+      },
+      "357214": {
+        "englishName": "Wing Buffet",
+        "koreanName": "날개 치기",
+        "verified": false,
+        "needsCheck": true
+      },
+      "374251": {
+        "englishName": "Cauterizing Flame",
+        "koreanName": "소작의 불꽃",
+        "verified": false,
+        "needsCheck": true
+      },
+      "360995": {
+        "englishName": "Verdant Embrace",
+        "koreanName": "신록의 품",
+        "verified": false,
+        "needsCheck": true
+      },
+      "351338": {
+        "englishName": "Quell",
+        "koreanName": "진압",
+        "verified": false,
+        "needsCheck": true
+      },
+      "365585": {
+        "englishName": "Expunge",
+        "koreanName": "제거",
+        "verified": false,
+        "needsCheck": true
+      },
+      "370665": {
+        "englishName": "Rescue",
+        "koreanName": "구조",
+        "verified": false,
+        "needsCheck": true
+      },
+      "360823": {
+        "englishName": "Naturalize",
+        "koreanName": "자연화",
+        "verified": false,
+        "needsCheck": true
+      },
+      "378441": {
+        "englishName": "Time Spiral",
+        "koreanName": "시간의 나선",
+        "verified": false,
+        "needsCheck": true
+      },
+      "378464": {
+        "englishName": "Zephyr",
+        "koreanName": "서풍",
+        "verified": false,
+        "needsCheck": true
+      },
+      "374227": {
+        "englishName": "Landslide",
+        "koreanName": "산사태",
+        "verified": false,
+        "needsCheck": true
+      },
+      "370553": {
+        "englishName": "Tip the Scales",
+        "koreanName": "균형 붕괴",
+        "verified": false,
+        "needsCheck": true
+      }
+    }
+  },
+  "summary": {
+    "verified": 7,
+    "needsCheck": 53,
+    "total": 60
+  }
+}

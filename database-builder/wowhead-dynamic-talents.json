@@ -1,0 +1,1407 @@
+{
+  "pageInfo": {
+    "title": "Beast Mastery Hunter The War Within Talent Calculator - World of Warcraft",
+    "url": "https://www.wowhead.com/talent-calc/hunter/beast-mastery",
+    "hasWH": true,
+    "hasTalentCalc": false
+  },
+  "trees": [],
+  "nodes": [
+    {
+      "id": "270581",
+      "name": "Natural Mending",
+      "icon": null,
+      "row": "1",
+      "col": null,
+      "cell": "4",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "109215",
+      "name": "Posthaste",
+      "icon": null,
+      "row": "1",
+      "col": null,
+      "cell": "8",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "53351",
+      "name": "Kill Shot",
+      "icon": null,
+      "row": "1",
+      "col": null,
+      "cell": "12",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "385539",
+      "name": "Rejuvenating Wind",
+      "icon": null,
+      "row": "2",
+      "col": null,
+      "cell": "21",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "384799",
+      "name": "Hunter's Avoidance",
+      "icon": null,
+      "row": "2",
+      "col": null,
+      "cell": "25",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "343248",
+      "name": "Deathblow",
+      "icon": null,
+      "row": "2",
+      "col": null,
+      "cell": "29",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "343242",
+      "name": "Wilderness Medicine",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "36",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "187698",
+      "name": "Tar Trap",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "40",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "19801",
+      "name": "Tranquilizing Shot",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "44",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "5116",
+      "name": "Concussive Shot",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "48",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "264735",
+      "name": "Survival of the Fittest",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "55",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "393344",
+      "name": "Entrapment",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "57",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "147362",
+      "name": "Counter Shot",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "59",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "34477",
+      "name": "Misdirection",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "63",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459455",
+      "name": "Scout's Instincts",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "70",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459450",
+      "name": "Padded Armor",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "72",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "388039",
+      "name": "Lone Survivor",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "74",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459542",
+      "name": "Specialized Arsenal",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "76",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "343244",
+      "name": "Disruptive Rounds",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "78",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459546",
+      "name": "No Hard Feelings",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "80",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "1513",
+      "name": "Scare Beast",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "82",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "19577",
+      "name": "Intimidation",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "89",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "109248",
+      "name": "Binding Shot",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "97",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459507",
+      "name": "Territorial Instincts",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "106",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459534",
+      "name": "Trigger Finger",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "108",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "462036",
+      "name": "Blackrock Munitions",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "110",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378004",
+      "name": "Keen Eyesight",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "112",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459460",
+      "name": "Tar-Coated Bindings",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "114",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459533",
+      "name": "Scrappy",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "116",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378771",
+      "name": "Quick Load",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "121",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378002",
+      "name": "Pathfinding",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "123",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "321468",
+      "name": "Binding Shackles",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "127",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "199483",
+      "name": "Camouflage",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "131",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459506",
+      "name": "Kindling Flare",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "133",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "199921",
+      "name": "Trailblazer",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "138",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "53480",
+      "name": "Roar of Sacrifice",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "140",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459502",
+      "name": "Serrated Tips",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "142",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459488",
+      "name": "Moment of Opportunity",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "144",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "266921",
+      "name": "Born To Be Wild",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "146",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459466",
+      "name": "Ghillie Suit",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "148",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "343247",
+      "name": "Improved Traps",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "150",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459517",
+      "name": "Emergency Salve",
+      "icon": null,
+      "row": "10",
+      "col": null,
+      "cell": "157",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459527",
+      "name": "Unnatural Causes",
+      "icon": null,
+      "row": "10",
+      "col": null,
+      "cell": "165",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "34026",
+      "name": "Kill Command",
+      "icon": null,
+      "row": "1",
+      "col": null,
+      "cell": "8",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "193455",
+      "name": "Cobra Shot",
+      "icon": null,
+      "row": "2",
+      "col": null,
+      "cell": "23",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "217200",
+      "name": "Barbed Shot",
+      "icon": null,
+      "row": "2",
+      "col": null,
+      "cell": "27",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "321014",
+      "name": "Pack Tactics",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "38",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "191384",
+      "name": "Aspect of the Beast",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "40",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "393933",
+      "name": "War Orders",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "44",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "257944",
+      "name": "Thrill of the Hunt",
+      "icon": null,
+      "row": "3",
+      "col": null,
+      "cell": "46",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459550",
+      "name": "Go for the Throat",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "55",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "2643",
+      "name": "Multi-Shot",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "59",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459552",
+      "name": "Laceration",
+      "icon": null,
+      "row": "4",
+      "col": null,
+      "cell": "63",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "269737",
+      "name": "Alpha Predator",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "74",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "115939",
+      "name": "Beast Cleave",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "76",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378209",
+      "name": "Training Expert",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "78",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378210",
+      "name": "Hunter's Prey",
+      "icon": null,
+      "row": "5",
+      "col": null,
+      "cell": "82",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "199530",
+      "name": "Stomp",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "89",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "424558",
+      "name": "Master Handler",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "91",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378207",
+      "name": "Kill Cleave",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "93",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "185789",
+      "name": "Wild Call",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "95",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "120679",
+      "name": "Dire Beast",
+      "icon": null,
+      "row": "6",
+      "col": null,
+      "cell": "97",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "424557",
+      "name": "Savagery",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "104",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "321530",
+      "name": "Bloodshed",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "106",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "469880",
+      "name": "Barbed Scales",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "108",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "19574",
+      "name": "Bestial Wrath",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "110",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "1217535",
+      "name": "Poisoned Barbs",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "112",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "378743",
+      "name": "Dire Command",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "114",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "1217524",
+      "name": "Dire Cleave",
+      "icon": null,
+      "row": "7",
+      "col": null,
+      "cell": "116",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "273887",
+      "name": "Killer Instinct",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "123",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "468701",
+      "name": "Serpentine Rhythm",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "125",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "231548",
+      "name": "Barbed Wrath",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "127",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459693",
+      "name": "Thundering Hooves",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "129",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "385810",
+      "name": "Dire Frenzy",
+      "icon": null,
+      "row": "8",
+      "col": null,
+      "cell": "131",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "359844",
+      "name": "Call of the Wild",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "140",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "199532",
+      "name": "Killer Cobra",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "142",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "193532",
+      "name": "Scent of Blood",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "144",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "386870",
+      "name": "Brutal Companion",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "146",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "459730",
+      "name": "Huntmaster's Call",
+      "icon": null,
+      "row": "9",
+      "col": null,
+      "cell": "148",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "392053",
+      "name": "Piercing Fangs",
+      "icon": null,
+      "row": "10",
+      "col": null,
+      "cell": "161",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "1232739",
+      "name": "Wildspeaker",
+      "icon": null,
+      "row": "10",
+      "col": null,
+      "cell": "165",
+      "selector": "a[href*=\"/spell=\"]",
+      "className": "dragonflight-talent-tree-talent"
+    },
+    {
+      "id": "137015",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "462079",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "344572",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "157443",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212407",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "440261",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "304039",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "57870",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212410",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212462",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "219183",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212451",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212358",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212354",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "1234337",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "212339",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "462080",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "137014",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "76657",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "1229376",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "56641",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "162487",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "185358",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "195645",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "781",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "186257",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "1462",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "883",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "2641",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "6991",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "136",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "982",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "1515",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "5384",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "210000",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "257284",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "186265",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "109304",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "61648",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "83242",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "93321",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "53270",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "125050",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "127933",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "187650",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "209997",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "259398",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "83243",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "1543",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "272651",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "321297",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "83244",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "343241",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "83245",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "325028",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "325037",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "355589",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    },
+    {
+      "id": "355596",
+      "name": "",
+      "icon": null,
+      "row": null,
+      "col": null,
+      "cell": null,
+      "selector": "a[href*=\"/spell=\"]",
+      "className": ""
+    }
+  ],
+  "raw": {},
+  "treeTypes": {
+    "class": 0,
+    "spec": 0,
+    "hero": 0
+  }
+}

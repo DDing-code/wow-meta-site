@@ -1,0 +1,298 @@
+{
+  "100": {
+    "krName": "돌진",
+    "description": "해당 없음",
+    "originalName": "Charge",
+    "class": "warrior"
+  },
+  "355": {
+    "krName": "도발",
+    "description": "해당 없음",
+    "originalName": "Taunt",
+    "class": "warrior"
+  },
+  "845": {
+    "krName": "회전베기",
+    "description": "특성",
+    "originalName": "Cleave",
+    "class": "warrior"
+  },
+  "871": {
+    "krName": "방패의 벽",
+    "description": "특성",
+    "originalName": "Shield Wall",
+    "class": "warrior"
+  },
+  "1160": {
+    "krName": "사기의 외침",
+    "description": "특성",
+    "originalName": "Demoralizing Shout",
+    "class": "warrior"
+  },
+  "1464": {
+    "krName": "격돌",
+    "description": "해당 없음",
+    "originalName": "Slam",
+    "class": "warrior"
+  },
+  "1680": {
+    "krName": "소용돌이",
+    "description": "해당 없음",
+    "originalName": "Whirlwind",
+    "class": "warrior"
+  },
+  "1715": {
+    "krName": "무력화",
+    "description": "해당 없음",
+    "originalName": "Hamstring",
+    "class": "warrior"
+  },
+  "1719": {
+    "krName": "무모한 희생",
+    "description": "특성",
+    "originalName": "Recklessness",
+    "class": "warrior"
+  },
+  "2565": {
+    "krName": "방패 올리기",
+    "description": "해당 없음",
+    "originalName": "Shield Block",
+    "class": "warrior"
+  },
+  "5308": {
+    "krName": "마무리 일격",
+    "description": "해당 없음",
+    "originalName": "Execute",
+    "class": "warrior"
+  },
+  "6343": {
+    "krName": "천둥벼락",
+    "description": "특성",
+    "originalName": "Thunder Clap",
+    "class": "warrior"
+  },
+  "6544": {
+    "krName": "영웅의 도약",
+    "description": "특성",
+    "originalName": "Heroic Leap",
+    "class": "warrior"
+  },
+  "6552": {
+    "krName": "들이치기",
+    "description": "해당 없음",
+    "originalName": "Pummel",
+    "class": "warrior"
+  },
+  "6572": {
+    "krName": "복수",
+    "description": "특성",
+    "originalName": "Revenge",
+    "class": "warrior"
+  },
+  "6673": {
+    "krName": "전투의 외침",
+    "description": "해당 없음",
+    "originalName": "Battle Shout",
+    "class": "warrior"
+  },
+  "7384": {
+    "krName": "제압",
+    "description": "특성",
+    "originalName": "Overpower",
+    "class": "warrior"
+  },
+  "12294": {
+    "krName": "필사의 일격",
+    "description": "특성",
+    "originalName": "Mortal Strike",
+    "class": "warrior"
+  },
+  "12975": {
+    "krName": "최후의 저항",
+    "description": "특성",
+    "originalName": "Last Stand",
+    "class": "warrior"
+  },
+  "23881": {
+    "krName": "피의 갈증",
+    "description": "특성",
+    "originalName": "Bloodthirst",
+    "class": "warrior"
+  },
+  "23920": {
+    "krName": "주문 반사",
+    "description": "특성",
+    "originalName": "Spell Reflection",
+    "class": "warrior"
+  },
+  "23922": {
+    "krName": "방패 밀쳐내기",
+    "description": "해당 없음",
+    "originalName": "Shield Slam",
+    "class": "warrior"
+  },
+  "34428": {
+    "krName": "연전연승",
+    "description": "해당 없음",
+    "originalName": "Victory Rush",
+    "class": "warrior"
+  },
+  "57755": {
+    "krName": "영웅의 투척",
+    "description": "해당 없음",
+    "originalName": "Heroic Throw",
+    "class": "warrior"
+  },
+  "76838": {
+    "krName": "특화: 엄청난 완력",
+    "originalName": "Mastery: Colossal Might",
+    "class": "warrior"
+  },
+  "85288": {
+    "krName": "분노의 강타",
+    "description": "특성",
+    "originalName": "Raging Blow",
+    "class": "warrior"
+  },
+  "97462": {
+    "krName": "재집결의 함성",
+    "description": "특성",
+    "originalName": "Rallying Cry",
+    "class": "warrior"
+  },
+  "103827": {
+    "krName": "연속 돌진",
+    "description": "특성",
+    "originalName": "Double Time",
+    "class": "warrior"
+  },
+  "107570": {
+    "krName": "폭풍망치",
+    "description": "특성",
+    "originalName": "Storm Bolt",
+    "class": "warrior"
+  },
+  "118000": {
+    "krName": "용의 포효",
+    "description": "특성",
+    "originalName": "Dragon Roar",
+    "class": "warrior"
+  },
+  "118038": {
+    "krName": "투사의 혼",
+    "description": "해당 없음",
+    "originalName": "Die by the Sword",
+    "class": "warrior"
+  },
+  "152278": {
+    "krName": "분노 제어",
+    "description": "특성",
+    "originalName": "Anger Management",
+    "class": "warrior"
+  },
+  "167105": {
+    "krName": "거인의 강타",
+    "description": "특성",
+    "originalName": "Colossus Smash",
+    "class": "warrior"
+  },
+  "184361": {
+    "krName": "격노",
+    "description": "해당 없음",
+    "originalName": "Enrage",
+    "class": "warrior"
+  },
+  "184364": {
+    "krName": "격노의 재생력",
+    "description": "특성",
+    "originalName": "Enraged Regeneration",
+    "class": "warrior"
+  },
+  "184367": {
+    "krName": "광란",
+    "description": "특성",
+    "originalName": "Rampage",
+    "class": "warrior"
+  },
+  "190456": {
+    "krName": "고통 감내",
+    "description": "특성",
+    "originalName": "Ignore Pain",
+    "class": "warrior"
+  },
+  "198817": {
+    "krName": "무기 연마",
+    "description": "해당 없음",
+    "originalName": "Sharpen Blade",
+    "class": "warrior"
+  },
+  "202168": {
+    "krName": "예견된 승리",
+    "description": "특성",
+    "originalName": "Impending Victory",
+    "class": "warrior"
+  },
+  "202751": {
+    "krName": "무모한 포기",
+    "originalName": "Reckless Abandon",
+    "class": "warrior"
+  },
+  "203177": {
+    "krName": "묵직한 반격",
+    "description": "특성",
+    "originalName": "Heavy Repercussions",
+    "class": "warrior"
+  },
+  "227847": {
+    "krName": "칼날폭풍",
+    "description": "특성",
+    "originalName": "Bladestorm",
+    "class": "warrior"
+  },
+  "228920": {
+    "krName": "쇠날발톱",
+    "description": "특성",
+    "originalName": "Ravager",
+    "class": "warrior"
+  },
+  "236077": {
+    "krName": "무장 해제",
+    "description": "탱커 스펙 – 1열 PvP 특성",
+    "originalName": "Disarm",
+    "class": "warrior"
+  },
+  "236320": {
+    "krName": "전투 깃발",
+    "description": "해당 없음",
+    "originalName": "War Banner",
+    "class": "warrior"
+  },
+  "260708": {
+    "krName": "휩쓸기 일격",
+    "description": "해당 없음",
+    "originalName": "Sweeping Strikes",
+    "class": "warrior"
+  },
+  "280776": {
+    "krName": "급살",
+    "description": "해당 없음",
+    "originalName": "Sudden Death",
+    "class": "warrior"
+  },
+  "346002": {
+    "krName": "전쟁 기계",
+    "originalName": "War Machine",
+    "class": "warrior"
+  },
+  "383155": {
+    "krName": "휩쓸기 일격 연마",
+    "description": "특성",
+    "originalName": "Improved Sweeping Strikes",
+    "class": "warrior"
+  },
+  "401150": {
+    "krName": "화신",
+    "originalName": "Avatar",
+    "class": "warrior"
+  }
+}

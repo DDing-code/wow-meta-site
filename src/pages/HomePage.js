@@ -10,6 +10,33 @@ const Container = styled.div`
   padding: 2rem 0;
 `;
 
+const TitleSection = styled.div`
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 1rem;
+`;
+
+const MainTitle = styled.h1`
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 900;
+  background: ${props => props.theme.gradients.accent};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-family: ${props => props.theme.fonts.heading};
+  letter-spacing: -0.02em;
+`;
+
+const Tagline = styled.p`
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: ${props => props.theme.colors.subtext};
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+`;
+
 const FeaturesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -76,6 +103,11 @@ function HomePage() {
 
   return (
     <Container>
+      <TitleSection>
+        <MainTitle>WoW Meta</MainTitle>
+        <Tagline>월드 오브 워크래프트의 모든 메타 정보와 전문화 공략</Tagline>
+      </TitleSection>
+
       <FeaturesGrid>
         {features.map((feature, index) => (
           <FeatureCard

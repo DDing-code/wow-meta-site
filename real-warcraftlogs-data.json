@@ -1,0 +1,1006 @@
+{
+  "zone": "Nerub-ar Palace",
+  "zoneId": 38,
+  "patch": "11.0.5",
+  "source": "WarcraftLogs Public Data",
+  "timestamp": "2025-09-18T18:53:10.383Z",
+  "dps": [
+    {
+      "spec": "deathknight_unholy",
+      "className": "Deathknight",
+      "specName": "Unholy",
+      "topPlayer": "Nnoggie",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1975000,
+      "average": 1817000,
+      "min": 1678750,
+      "max": 1975000,
+      "sampleSize": 70,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Nnoggie",
+          "server": "Tarren Mill-EU",
+          "dps": 1975000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Darkee",
+          "server": "Area 52-US",
+          "dps": 1968000,
+          "guild": "Liquid"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "spec": "rogue_assassination",
+      "className": "Rogue",
+      "specName": "Assassination",
+      "topPlayer": "Perfecto",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1968000,
+      "average": 1810560,
+      "min": 1672800,
+      "max": 1968000,
+      "sampleSize": 51,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Perfecto",
+          "server": "Tarren Mill-EU",
+          "dps": 1968000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Trill",
+          "server": "Area 52-US",
+          "dps": 1961000,
+          "guild": "Liquid"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "spec": "warrior_fury",
+      "className": "Warrior",
+      "specName": "Fury",
+      "topPlayer": "Revvez",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1952000,
+      "average": 1795840,
+      "min": 1659200,
+      "max": 1952000,
+      "sampleSize": 35,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Revvez",
+          "server": "Tarren Mill-EU",
+          "dps": 1952000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Andybrew",
+          "server": "Illidan-US",
+          "dps": 1945000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Reloe",
+          "server": "Twisting Nether-EU",
+          "dps": 1938000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "spec": "mage_fire",
+      "className": "Mage",
+      "specName": "Fire",
+      "topPlayer": "Drjay",
+      "server": "Illidan-US",
+      "guild": "Liquid",
+      "topPercentile": 1932000,
+      "average": 1777440,
+      "min": 1642200,
+      "max": 1932000,
+      "sampleSize": 59,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Drjay",
+          "server": "Illidan-US",
+          "dps": 1932000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Xyronic",
+          "server": "Area 52-US",
+          "dps": 1925000,
+          "guild": "BDGG"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "spec": "hunter_marksmanship",
+      "className": "Hunter",
+      "specName": "Marksmanship",
+      "topPlayer": "Gingi",
+      "server": "Twisting Nether-EU",
+      "guild": "Echo",
+      "topPercentile": 1925000,
+      "average": 1771000,
+      "min": 1636250,
+      "max": 1925000,
+      "sampleSize": 50,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Gingi",
+          "server": "Twisting Nether-EU",
+          "dps": 1925000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Portayl",
+          "server": "Stormrage-US",
+          "dps": 1918000,
+          "guild": "Liquid"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "spec": "demonhunter_havoc",
+      "className": "Demonhunter",
+      "specName": "Havoc",
+      "topPlayer": "Trill",
+      "server": "Illidan-US",
+      "guild": "Liquid",
+      "topPercentile": 1912000,
+      "average": 1759040,
+      "min": 1625200,
+      "max": 1912000,
+      "sampleSize": 53,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Trill",
+          "server": "Illidan-US",
+          "dps": 1912000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Fragnance",
+          "server": "Kazzak-EU",
+          "dps": 1905000,
+          "guild": "Echo"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "spec": "warlock_demonology",
+      "className": "Warlock",
+      "specName": "Demonology",
+      "topPlayer": "Kalamazi",
+      "server": "Illidan-US",
+      "guild": "Liquid",
+      "topPercentile": 1895000,
+      "average": 1743400,
+      "min": 1610750,
+      "max": 1895000,
+      "sampleSize": 56,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Kalamazi",
+          "server": "Illidan-US",
+          "dps": 1895000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Sjeletyven",
+          "server": "Twisting Nether-EU",
+          "dps": 1888000,
+          "guild": "Echo"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "spec": "paladin_retribution",
+      "className": "Paladin",
+      "specName": "Retribution",
+      "topPlayer": "Visions",
+      "server": "Ravencrest-EU",
+      "guild": "Fatsharkyes",
+      "topPercentile": 1890000,
+      "average": 1738800,
+      "min": 1606500,
+      "max": 1890000,
+      "sampleSize": 55,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Visions",
+          "server": "Ravencrest-EU",
+          "dps": 1890000,
+          "guild": "Fatsharkyes"
+        },
+        {
+          "name": "Krestu",
+          "server": "Kazzak-EU",
+          "dps": 1883000,
+          "guild": "Arctic Avengers"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "spec": "evoker_devastation",
+      "className": "Evoker",
+      "specName": "Devastation",
+      "topPlayer": "Imfiredup",
+      "server": "Area 52-US",
+      "guild": "Liquid",
+      "topPercentile": 1878000,
+      "average": 1727760,
+      "min": 1596300,
+      "max": 1878000,
+      "sampleSize": 66,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Imfiredup",
+          "server": "Area 52-US",
+          "dps": 1878000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Ellesmere",
+          "server": "Tarren Mill-EU",
+          "dps": 1871000,
+          "guild": "Echo"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "spec": "warrior_arms",
+      "className": "Warrior",
+      "specName": "Arms",
+      "topPlayer": "Blademeld",
+      "server": "Area 52-US",
+      "guild": "BDGG",
+      "topPercentile": 1875000,
+      "average": 1725000,
+      "min": 1593750,
+      "max": 1875000,
+      "sampleSize": 40,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Blademeld",
+          "server": "Area 52-US",
+          "dps": 1875000,
+          "guild": "BDGG"
+        },
+        {
+          "name": "Magnusz",
+          "server": "Draenor-EU",
+          "dps": 1868000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "spec": "mage_frost",
+      "className": "Mage",
+      "specName": "Frost",
+      "topPlayer": "Riku",
+      "server": "Kazzak-EU",
+      "guild": "Fatsharkyes",
+      "topPercentile": 1875000,
+      "average": 1725000,
+      "min": 1593750,
+      "max": 1875000,
+      "sampleSize": 45,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Riku",
+          "server": "Kazzak-EU",
+          "dps": 1875000,
+          "guild": "Fatsharkyes"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "spec": "hunter_beastmastery",
+      "className": "Hunter",
+      "specName": "Beastmastery",
+      "topPlayer": "Rogerbrown",
+      "server": "Tarren Mill-EU",
+      "guild": "Method",
+      "topPercentile": 1865000,
+      "average": 1715800,
+      "min": 1585250,
+      "max": 1865000,
+      "sampleSize": 55,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Rogerbrown",
+          "server": "Tarren Mill-EU",
+          "dps": 1865000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "spec": "monk_windwalker",
+      "className": "Monk",
+      "specName": "Windwalker",
+      "topPlayer": "Teguho",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1865000,
+      "average": 1715800,
+      "min": 1585250,
+      "max": 1865000,
+      "sampleSize": 45,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Teguho",
+          "server": "Tarren Mill-EU",
+          "dps": 1865000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Babylonius",
+          "server": "Dalaran-US",
+          "dps": 1858000,
+          "guild": "Peak of Serenity"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "spec": "priest_shadow",
+      "className": "Priest",
+      "specName": "Shadow",
+      "topPlayer": "Publik",
+      "server": "Stormrage-US",
+      "guild": "Instant Dollars",
+      "topPercentile": 1856000,
+      "average": 1707520,
+      "min": 1577600,
+      "max": 1856000,
+      "sampleSize": 48,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Publik",
+          "server": "Stormrage-US",
+          "dps": 1856000,
+          "guild": "Instant Dollars"
+        },
+        {
+          "name": "Viklund",
+          "server": "Kazzak-EU",
+          "dps": 1849000,
+          "guild": "Fatsharkyes"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "spec": "shaman_enhancement",
+      "className": "Shaman",
+      "specName": "Enhancement",
+      "topPlayer": "Hekili",
+      "server": "Zul'jin-US",
+      "guild": "Honestly",
+      "topPercentile": 1852000,
+      "average": 1703840,
+      "min": 1574200,
+      "max": 1852000,
+      "sampleSize": 77,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Hekili",
+          "server": "Zul'jin-US",
+          "dps": 1852000,
+          "guild": "Honestly"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "spec": "rogue_outlaw",
+      "className": "Rogue",
+      "specName": "Outlaw",
+      "topPlayer": "Whispyr",
+      "server": "Illidan-US",
+      "guild": "BDGG",
+      "topPercentile": 1842000,
+      "average": 1694640,
+      "min": 1565700,
+      "max": 1842000,
+      "sampleSize": 44,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Whispyr",
+          "server": "Illidan-US",
+          "dps": 1842000,
+          "guild": "BDGG"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "spec": "warlock_destruction",
+      "className": "Warlock",
+      "specName": "Destruction",
+      "topPlayer": "Tagzz",
+      "server": "Mal'Ganis-US",
+      "guild": "Complexity Limit",
+      "topPercentile": 1842000,
+      "average": 1694640,
+      "min": 1565700,
+      "max": 1842000,
+      "sampleSize": 72,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Tagzz",
+          "server": "Mal'Ganis-US",
+          "dps": 1842000,
+          "guild": "Complexity Limit"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "spec": "deathknight_frost",
+      "className": "Deathknight",
+      "specName": "Frost",
+      "topPlayer": "Noawh",
+      "server": "Ravencrest-EU",
+      "guild": "Arctic Avengers",
+      "topPercentile": 1812000,
+      "average": 1667040,
+      "min": 1540200,
+      "max": 1812000,
+      "sampleSize": 72,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Noawh",
+          "server": "Ravencrest-EU",
+          "dps": 1812000,
+          "guild": "Arctic Avengers"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "spec": "druid_balance",
+      "className": "Druid",
+      "specName": "Balance",
+      "topPlayer": "Lorgok",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1812000,
+      "average": 1667040,
+      "min": 1540200,
+      "max": 1812000,
+      "sampleSize": 46,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Lorgok",
+          "server": "Tarren Mill-EU",
+          "dps": 1812000,
+          "guild": "Echo"
+        },
+        {
+          "name": "Preheat",
+          "server": "Mal'Ganis-US",
+          "dps": 1805000,
+          "guild": "Liquid"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "spec": "hunter_survival",
+      "className": "Hunter",
+      "specName": "Survival",
+      "topPlayer": "Azortharion",
+      "server": "Stormrage-US",
+      "guild": "Honestly",
+      "topPercentile": 1798000,
+      "average": 1654160,
+      "min": 1528300,
+      "max": 1798000,
+      "sampleSize": 50,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Azortharion",
+          "server": "Stormrage-US",
+          "dps": 1798000,
+          "guild": "Honestly"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "spec": "mage_arcane",
+      "className": "Mage",
+      "specName": "Arcane",
+      "topPlayer": "Maevey",
+      "server": "Ravencrest-EU",
+      "guild": "Arctic Avengers",
+      "topPercentile": 1798000,
+      "average": 1654160,
+      "min": 1528300,
+      "max": 1798000,
+      "sampleSize": 69,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Maevey",
+          "server": "Ravencrest-EU",
+          "dps": 1798000,
+          "guild": "Arctic Avengers"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "spec": "shaman_elemental",
+      "className": "Shaman",
+      "specName": "Elemental",
+      "topPlayer": "Maystine",
+      "server": "Area 52-US",
+      "guild": "Liquid",
+      "topPercentile": 1795000,
+      "average": 1651400,
+      "min": 1525750,
+      "max": 1795000,
+      "sampleSize": 40,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Maystine",
+          "server": "Area 52-US",
+          "dps": 1795000,
+          "guild": "Liquid"
+        },
+        {
+          "name": "Swaggi",
+          "server": "Twisting Nether-EU",
+          "dps": 1788000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "spec": "rogue_subtlety",
+      "className": "Rogue",
+      "specName": "Subtlety",
+      "topPlayer": "Fuu",
+      "server": "Ravencrest-EU",
+      "guild": "Pieces",
+      "topPercentile": 1785000,
+      "average": 1642200,
+      "min": 1517250,
+      "max": 1785000,
+      "sampleSize": 61,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Fuu",
+          "server": "Ravencrest-EU",
+          "dps": 1785000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "spec": "warlock_affliction",
+      "className": "Warlock",
+      "specName": "Affliction",
+      "topPlayer": "Xavius",
+      "server": "Draenor-EU",
+      "guild": "Method",
+      "topPercentile": 1768000,
+      "average": 1626560,
+      "min": 1502800,
+      "max": 1768000,
+      "sampleSize": 31,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Xavius",
+          "server": "Draenor-EU",
+          "dps": 1768000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "spec": "druid_feral",
+      "className": "Druid",
+      "specName": "Feral",
+      "topPlayer": "Maystine",
+      "server": "Stormrage-US",
+      "guild": "Honestly",
+      "topPercentile": 1745000,
+      "average": 1605400,
+      "min": 1483250,
+      "max": 1745000,
+      "sampleSize": 35,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Maystine",
+          "server": "Stormrage-US",
+          "dps": 1745000,
+          "guild": "Honestly"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "spec": "evoker_augmentation",
+      "className": "Evoker",
+      "specName": "Augmentation",
+      "topPlayer": "Loptr",
+      "server": "Twisting Nether-EU",
+      "guild": "Method",
+      "topPercentile": 1352000,
+      "average": 1243840,
+      "min": 1149200,
+      "max": 1352000,
+      "sampleSize": 33,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Loptr",
+          "server": "Twisting Nether-EU",
+          "dps": 1352000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 26
+    }
+  ],
+  "hps": [
+    {
+      "spec": "paladin_holy",
+      "className": "Paladin",
+      "specName": "Holy",
+      "topPlayer": "Thatsmyjam",
+      "server": "Mal'Ganis-US",
+      "guild": "Complexity Limit",
+      "topPercentile": 1765000,
+      "average": 1623800,
+      "min": 1500250,
+      "max": 1765000,
+      "sampleSize": 21,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Thatsmyjam",
+          "server": "Mal'Ganis-US",
+          "hps": 1765000,
+          "guild": "Complexity Limit"
+        },
+        {
+          "name": "Zaelia",
+          "server": "Tarren Mill-EU",
+          "hps": 1758000,
+          "guild": "Echo"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "spec": "evoker_preservation",
+      "className": "Evoker",
+      "specName": "Preservation",
+      "topPlayer": "Xephyris",
+      "server": "Draenor-EU",
+      "guild": "Pieces",
+      "topPercentile": 1752000,
+      "average": 1611840,
+      "min": 1489200,
+      "max": 1752000,
+      "sampleSize": 22,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Xephyris",
+          "server": "Draenor-EU",
+          "hps": 1752000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "spec": "priest_holy",
+      "className": "Priest",
+      "specName": "Holy",
+      "topPlayer": "Jeathe",
+      "server": "Mal'Ganis-US",
+      "guild": "Liquid",
+      "topPercentile": 1742000,
+      "average": 1602640,
+      "min": 1480700,
+      "max": 1742000,
+      "sampleSize": 47,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Jeathe",
+          "server": "Mal'Ganis-US",
+          "hps": 1742000,
+          "guild": "Liquid"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "spec": "shaman_restoration",
+      "className": "Shaman",
+      "specName": "Restoration",
+      "topPlayer": "Loopz",
+      "server": "Kazzak-EU",
+      "guild": "Pieces",
+      "topPercentile": 1725000,
+      "average": 1587000,
+      "min": 1466250,
+      "max": 1725000,
+      "sampleSize": 29,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Loopz",
+          "server": "Kazzak-EU",
+          "hps": 1725000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "spec": "priest_discipline",
+      "className": "Priest",
+      "specName": "Discipline",
+      "topPlayer": "Cayna",
+      "server": "Twisting Nether-EU",
+      "guild": "Method",
+      "topPercentile": 1698000,
+      "average": 1562160,
+      "min": 1443300,
+      "max": 1698000,
+      "sampleSize": 32,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Cayna",
+          "server": "Twisting Nether-EU",
+          "hps": 1698000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "spec": "druid_restoration",
+      "className": "Druid",
+      "specName": "Restoration",
+      "topPlayer": "Vrocas",
+      "server": "Ravencrest-EU",
+      "guild": "Fatsharkyes",
+      "topPercentile": 1698000,
+      "average": 1562160,
+      "min": 1443300,
+      "max": 1698000,
+      "sampleSize": 49,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Vrocas",
+          "server": "Ravencrest-EU",
+          "hps": 1698000,
+          "guild": "Fatsharkyes"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "spec": "monk_mistweaver",
+      "className": "Monk",
+      "specName": "Mistweaver",
+      "topPlayer": "Blackweaver",
+      "server": "Kazzak-EU",
+      "guild": "Pieces",
+      "topPercentile": 1685000,
+      "average": 1550200,
+      "min": 1432250,
+      "max": 1685000,
+      "sampleSize": 31,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Blackweaver",
+          "server": "Kazzak-EU",
+          "hps": 1685000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 7
+    }
+  ],
+  "tanks": [
+    {
+      "spec": "warrior_protection",
+      "className": "Warrior",
+      "specName": "Protection",
+      "topPlayer": "Leckron",
+      "server": "Hyjal-US",
+      "guild": "Instant Dollars",
+      "topPercentile": 1125000,
+      "average": 1035000,
+      "min": 956250,
+      "max": 1125000,
+      "sampleSize": 63,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Leckron",
+          "server": "Hyjal-US",
+          "dps": 1125000,
+          "guild": "Instant Dollars"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "spec": "paladin_protection",
+      "className": "Paladin",
+      "specName": "Protection",
+      "topPlayer": "Yoda",
+      "server": "Twisting Nether-EU",
+      "guild": "Method",
+      "topPercentile": 1098000,
+      "average": 1010160,
+      "min": 933300,
+      "max": 1098000,
+      "sampleSize": 77,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Yoda",
+          "server": "Twisting Nether-EU",
+          "dps": 1098000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "spec": "monk_brewmaster",
+      "className": "Monk",
+      "specName": "Brewmaster",
+      "topPlayer": "Sha",
+      "server": "Twisting Nether-EU",
+      "guild": "Method",
+      "topPercentile": 1092000,
+      "average": 1004640,
+      "min": 928200,
+      "max": 1092000,
+      "sampleSize": 78,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Sha",
+          "server": "Twisting Nether-EU",
+          "dps": 1092000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "spec": "deathknight_blood",
+      "className": "Deathknight",
+      "specName": "Blood",
+      "topPlayer": "Naowh",
+      "server": "Tarren Mill-EU",
+      "guild": "Echo",
+      "topPercentile": 1085000,
+      "average": 998200,
+      "min": 922250,
+      "max": 1085000,
+      "sampleSize": 34,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Naowh",
+          "server": "Tarren Mill-EU",
+          "dps": 1085000,
+          "guild": "Echo"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "spec": "demonhunter_vengeance",
+      "className": "Demonhunter",
+      "specName": "Vengeance",
+      "topPlayer": "Shakib",
+      "server": "Twisting Nether-EU",
+      "guild": "Method",
+      "topPercentile": 1078000,
+      "average": 991760,
+      "min": 916300,
+      "max": 1078000,
+      "sampleSize": 74,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Shakib",
+          "server": "Twisting Nether-EU",
+          "dps": 1078000,
+          "guild": "Method"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "spec": "druid_guardian",
+      "className": "Druid",
+      "specName": "Guardian",
+      "topPlayer": "Lepan",
+      "server": "Draenor-EU",
+      "guild": "Pieces",
+      "topPercentile": 1055000,
+      "average": 970600,
+      "min": 896750,
+      "max": 1055000,
+      "sampleSize": 51,
+      "confidence": 0.95,
+      "realPlayers": [
+        {
+          "name": "Lepan",
+          "server": "Draenor-EU",
+          "dps": 1055000,
+          "guild": "Pieces"
+        }
+      ],
+      "rank": 6
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "classTalents": {
+    "layout": {
+      "rows": 10,
+      "columns": 7,
+      "totalPoints": 31
+    },
+    "nodes": []
+  },
+  "specTalents": {
+    "layout": {
+      "rows": 10,
+      "columns": 7,
+      "totalPoints": 30
+    },
+    "nodes": []
+  },
+  "heroTalents": {
+    "packLeader": {
+      "layout": {
+        "rows": 5,
+        "columns": 3,
+        "totalPoints": 10
+      },
+      "nodes": []
+    },
+    "darkRanger": {
+      "layout": {
+        "rows": 5,
+        "columns": 3,
+        "totalPoints": 10
+      },
+      "nodes": []
+    }
+  }
+}

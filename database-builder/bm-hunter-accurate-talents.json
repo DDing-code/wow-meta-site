@@ -1,0 +1,1124 @@
+{
+  "classTalents": [
+    {
+      "id": 270581,
+      "name": "Natural Mending",
+      "position": {
+        "screenX": 173,
+        "screenY": 235,
+        "absoluteX": 173,
+        "absoluteY": 913
+      },
+      "tree": "class",
+      "gridRow": 1,
+      "gridCol": 1
+    },
+    {
+      "id": 109215,
+      "name": "Posthaste",
+      "position": {
+        "screenX": 303,
+        "screenY": 235,
+        "absoluteX": 303,
+        "absoluteY": 913
+      },
+      "tree": "class",
+      "gridRow": 1,
+      "gridCol": 2
+    },
+    {
+      "id": 53351,
+      "name": "Kill Shot",
+      "position": {
+        "screenX": 434,
+        "screenY": 235,
+        "absoluteX": 434,
+        "absoluteY": 913
+      },
+      "tree": "class",
+      "gridRow": 1,
+      "gridCol": 3
+    },
+    {
+      "id": 385539,
+      "name": "Rejuvenating Wind",
+      "position": {
+        "screenX": 173,
+        "screenY": 300,
+        "absoluteX": 173,
+        "absoluteY": 978
+      },
+      "tree": "class",
+      "gridRow": 2,
+      "gridCol": 1
+    },
+    {
+      "id": 384799,
+      "name": "Hunter's Avoidance",
+      "position": {
+        "screenX": 303,
+        "screenY": 300,
+        "absoluteX": 303,
+        "absoluteY": 978
+      },
+      "tree": "class",
+      "gridRow": 2,
+      "gridCol": 2
+    },
+    {
+      "id": 343248,
+      "name": "Deathblow",
+      "position": {
+        "screenX": 434,
+        "screenY": 300,
+        "absoluteX": 434,
+        "absoluteY": 978
+      },
+      "tree": "class",
+      "gridRow": 2,
+      "gridCol": 3
+    },
+    {
+      "id": 343242,
+      "name": "Wilderness Medicine",
+      "position": {
+        "screenX": 108,
+        "screenY": 365,
+        "absoluteX": 108,
+        "absoluteY": 1043
+      },
+      "tree": "class",
+      "gridRow": 3,
+      "gridCol": 1
+    },
+    {
+      "id": 187698,
+      "name": "Tar Trap",
+      "position": {
+        "screenX": 238,
+        "screenY": 365,
+        "absoluteX": 238,
+        "absoluteY": 1043
+      },
+      "tree": "class",
+      "gridRow": 3,
+      "gridCol": 2
+    },
+    {
+      "id": 19801,
+      "name": "Tranquilizing Shot",
+      "position": {
+        "screenX": 369,
+        "screenY": 365,
+        "absoluteX": 369,
+        "absoluteY": 1043
+      },
+      "tree": "class",
+      "gridRow": 3,
+      "gridCol": 2
+    },
+    {
+      "id": 5116,
+      "name": "Concussive Shot",
+      "position": {
+        "screenX": 499,
+        "screenY": 365,
+        "absoluteX": 499,
+        "absoluteY": 1043
+      },
+      "tree": "class",
+      "gridRow": 3,
+      "gridCol": 3
+    },
+    {
+      "id": 264735,
+      "name": "Survival of the Fittest",
+      "position": {
+        "screenX": 173,
+        "screenY": 430,
+        "absoluteX": 173,
+        "absoluteY": 1108
+      },
+      "tree": "class",
+      "gridRow": 4,
+      "gridCol": 1
+    },
+    {
+      "id": 393344,
+      "name": "Entrapment",
+      "position": {
+        "screenX": 238,
+        "screenY": 430,
+        "absoluteX": 238,
+        "absoluteY": 1108
+      },
+      "tree": "class",
+      "gridRow": 4,
+      "gridCol": 1
+    },
+    {
+      "id": 147362,
+      "name": "Counter Shot",
+      "position": {
+        "screenX": 303,
+        "screenY": 430,
+        "absoluteX": 303,
+        "absoluteY": 1108
+      },
+      "tree": "class",
+      "gridRow": 4,
+      "gridCol": 2
+    },
+    {
+      "id": 34477,
+      "name": "Misdirection",
+      "position": {
+        "screenX": 434,
+        "screenY": 430,
+        "absoluteX": 434,
+        "absoluteY": 1108
+      },
+      "tree": "class",
+      "gridRow": 4,
+      "gridCol": 3
+    },
+    {
+      "id": 459455,
+      "name": "Scout's Instincts",
+      "position": {
+        "screenX": 108,
+        "screenY": 495,
+        "absoluteX": 108,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 1
+    },
+    {
+      "id": 459450,
+      "name": "Padded Armor",
+      "position": {
+        "screenX": 173,
+        "screenY": 495,
+        "absoluteX": 173,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 1
+    },
+    {
+      "id": 388039,
+      "name": "Lone Survivor",
+      "position": {
+        "screenX": 238,
+        "screenY": 495,
+        "absoluteX": 238,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 2
+    },
+    {
+      "id": 459542,
+      "name": "Specialized Arsenal",
+      "position": {
+        "screenX": 303,
+        "screenY": 495,
+        "absoluteX": 303,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 2
+    },
+    {
+      "id": 343244,
+      "name": "Disruptive Rounds",
+      "position": {
+        "screenX": 369,
+        "screenY": 495,
+        "absoluteX": 369,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 2
+    },
+    {
+      "id": 459546,
+      "name": "No Hard Feelings",
+      "position": {
+        "screenX": 434,
+        "screenY": 495,
+        "absoluteX": 434,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 3
+    },
+    {
+      "id": 1513,
+      "name": "Scare Beast",
+      "position": {
+        "screenX": 499,
+        "screenY": 495,
+        "absoluteX": 499,
+        "absoluteY": 1173
+      },
+      "tree": "class",
+      "gridRow": 5,
+      "gridCol": 3
+    },
+    {
+      "id": 19577,
+      "name": "Intimidation",
+      "position": {
+        "screenX": 173,
+        "screenY": 560,
+        "absoluteX": 173,
+        "absoluteY": 1238
+      },
+      "tree": "class",
+      "gridRow": 6,
+      "gridCol": 1
+    },
+    {
+      "id": 109248,
+      "name": "Binding Shot",
+      "position": {
+        "screenX": 434,
+        "screenY": 560,
+        "absoluteX": 434,
+        "absoluteY": 1238
+      },
+      "tree": "class",
+      "gridRow": 6,
+      "gridCol": 3
+    },
+    {
+      "id": 459507,
+      "name": "Territorial Instincts",
+      "position": {
+        "screenX": 173,
+        "screenY": 626,
+        "absoluteX": 173,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 1
+    },
+    {
+      "id": 459534,
+      "name": "Trigger Finger",
+      "position": {
+        "screenX": 238,
+        "screenY": 626,
+        "absoluteX": 238,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 1
+    },
+    {
+      "id": 462036,
+      "name": "Blackrock Munitions",
+      "position": {
+        "screenX": 303,
+        "screenY": 626,
+        "absoluteX": 303,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 2
+    },
+    {
+      "id": 378004,
+      "name": "Keen Eyesight",
+      "position": {
+        "screenX": 369,
+        "screenY": 626,
+        "absoluteX": 369,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 2
+    },
+    {
+      "id": 459460,
+      "name": "Tar-Coated Bindings",
+      "position": {
+        "screenX": 434,
+        "screenY": 626,
+        "absoluteX": 434,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 3
+    },
+    {
+      "id": 459533,
+      "name": "Scrappy",
+      "position": {
+        "screenX": 499,
+        "screenY": 626,
+        "absoluteX": 499,
+        "absoluteY": 1303
+      },
+      "tree": "class",
+      "gridRow": 7,
+      "gridCol": 3
+    },
+    {
+      "id": 378771,
+      "name": "Quick Load",
+      "position": {
+        "screenX": 108,
+        "screenY": 691,
+        "absoluteX": 108,
+        "absoluteY": 1368
+      },
+      "tree": "class",
+      "gridRow": 8,
+      "gridCol": 1
+    },
+    {
+      "id": 378002,
+      "name": "Pathfinding",
+      "position": {
+        "screenX": 173,
+        "screenY": 691,
+        "absoluteX": 173,
+        "absoluteY": 1368
+      },
+      "tree": "class",
+      "gridRow": 8,
+      "gridCol": 1
+    },
+    {
+      "id": 321468,
+      "name": "Binding Shackles",
+      "position": {
+        "screenX": 303,
+        "screenY": 691,
+        "absoluteX": 303,
+        "absoluteY": 1368
+      },
+      "tree": "class",
+      "gridRow": 8,
+      "gridCol": 2
+    },
+    {
+      "id": 199483,
+      "name": "Camouflage",
+      "position": {
+        "screenX": 434,
+        "screenY": 691,
+        "absoluteX": 434,
+        "absoluteY": 1368
+      },
+      "tree": "class",
+      "gridRow": 8,
+      "gridCol": 3
+    },
+    {
+      "id": 459506,
+      "name": "Kindling Flare",
+      "position": {
+        "screenX": 499,
+        "screenY": 691,
+        "absoluteX": 499,
+        "absoluteY": 1368
+      },
+      "tree": "class",
+      "gridRow": 8,
+      "gridCol": 3
+    },
+    {
+      "id": 199921,
+      "name": "Trailblazer",
+      "position": {
+        "screenX": 108,
+        "screenY": 756,
+        "absoluteX": 108,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 1
+    },
+    {
+      "id": 53480,
+      "name": "Roar of Sacrifice",
+      "position": {
+        "screenX": 173,
+        "screenY": 756,
+        "absoluteX": 173,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 1
+    },
+    {
+      "id": 459502,
+      "name": "Serrated Tips",
+      "position": {
+        "screenX": 238,
+        "screenY": 756,
+        "absoluteX": 238,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 2
+    },
+    {
+      "id": 459488,
+      "name": "Moment of Opportunity",
+      "position": {
+        "screenX": 303,
+        "screenY": 756,
+        "absoluteX": 303,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 2
+    },
+    {
+      "id": 266921,
+      "name": "Born To Be Wild",
+      "position": {
+        "screenX": 369,
+        "screenY": 756,
+        "absoluteX": 369,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 2
+    },
+    {
+      "id": 459466,
+      "name": "Ghillie Suit",
+      "position": {
+        "screenX": 434,
+        "screenY": 756,
+        "absoluteX": 434,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 3
+    },
+    {
+      "id": 343247,
+      "name": "Improved Traps",
+      "position": {
+        "screenX": 499,
+        "screenY": 756,
+        "absoluteX": 499,
+        "absoluteY": 1433
+      },
+      "tree": "class",
+      "gridRow": 9,
+      "gridCol": 3
+    },
+    {
+      "id": 459517,
+      "name": "Emergency Salve",
+      "position": {
+        "screenX": 173,
+        "screenY": 821,
+        "absoluteX": 173,
+        "absoluteY": 1498
+      },
+      "tree": "class",
+      "gridRow": 10,
+      "gridCol": 1
+    },
+    {
+      "id": 459527,
+      "name": "Unnatural Causes",
+      "position": {
+        "screenX": 434,
+        "screenY": 821,
+        "absoluteX": 434,
+        "absoluteY": 1498
+      },
+      "tree": "class",
+      "gridRow": 10,
+      "gridCol": 3
+    }
+  ],
+  "specTalents": [
+    {
+      "id": 34026,
+      "name": "Kill Command",
+      "position": {
+        "screenX": 1222,
+        "screenY": 235,
+        "absoluteX": 1222,
+        "absoluteY": 913
+      },
+      "tree": "spec",
+      "gridRow": 1,
+      "gridCol": 2
+    },
+    {
+      "id": 193455,
+      "name": "Cobra Shot",
+      "position": {
+        "screenX": 1157,
+        "screenY": 300,
+        "absoluteX": 1157,
+        "absoluteY": 978
+      },
+      "tree": "spec",
+      "gridRow": 2,
+      "gridCol": 1
+    },
+    {
+      "id": 217200,
+      "name": "Barbed Shot",
+      "position": {
+        "screenX": 1287,
+        "screenY": 300,
+        "absoluteX": 1287,
+        "absoluteY": 978
+      },
+      "tree": "spec",
+      "gridRow": 2,
+      "gridCol": 3
+    },
+    {
+      "id": 321014,
+      "name": "Pack Tactics",
+      "position": {
+        "screenX": 1092,
+        "screenY": 365,
+        "absoluteX": 1092,
+        "absoluteY": 1043
+      },
+      "tree": "spec",
+      "gridRow": 3,
+      "gridCol": 1
+    },
+    {
+      "id": 191384,
+      "name": "Aspect of the Beast",
+      "position": {
+        "screenX": 1157,
+        "screenY": 365,
+        "absoluteX": 1157,
+        "absoluteY": 1043
+      },
+      "tree": "spec",
+      "gridRow": 3,
+      "gridCol": 1
+    },
+    {
+      "id": 393933,
+      "name": "War Orders",
+      "position": {
+        "screenX": 1287,
+        "screenY": 365,
+        "absoluteX": 1287,
+        "absoluteY": 1043
+      },
+      "tree": "spec",
+      "gridRow": 3,
+      "gridCol": 3
+    },
+    {
+      "id": 257944,
+      "name": "Thrill of the Hunt",
+      "position": {
+        "screenX": 1353,
+        "screenY": 365,
+        "absoluteX": 1353,
+        "absoluteY": 1043
+      },
+      "tree": "spec",
+      "gridRow": 3,
+      "gridCol": 3
+    },
+    {
+      "id": 459550,
+      "name": "Go for the Throat",
+      "position": {
+        "screenX": 1092,
+        "screenY": 430,
+        "absoluteX": 1092,
+        "absoluteY": 1108
+      },
+      "tree": "spec",
+      "gridRow": 4,
+      "gridCol": 1
+    },
+    {
+      "id": 2643,
+      "name": "Multi-Shot",
+      "position": {
+        "screenX": 1222,
+        "screenY": 430,
+        "absoluteX": 1222,
+        "absoluteY": 1108
+      },
+      "tree": "spec",
+      "gridRow": 4,
+      "gridCol": 2
+    },
+    {
+      "id": 459552,
+      "name": "Laceration",
+      "position": {
+        "screenX": 1353,
+        "screenY": 430,
+        "absoluteX": 1353,
+        "absoluteY": 1108
+      },
+      "tree": "spec",
+      "gridRow": 4,
+      "gridCol": 3
+    },
+    {
+      "id": 269737,
+      "name": "Alpha Predator",
+      "position": {
+        "screenX": 1157,
+        "screenY": 495,
+        "absoluteX": 1157,
+        "absoluteY": 1173
+      },
+      "tree": "spec",
+      "gridRow": 5,
+      "gridCol": 1
+    },
+    {
+      "id": 115939,
+      "name": "Beast Cleave",
+      "position": {
+        "screenX": 1222,
+        "screenY": 495,
+        "absoluteX": 1222,
+        "absoluteY": 1173
+      },
+      "tree": "spec",
+      "gridRow": 5,
+      "gridCol": 1
+    },
+    {
+      "id": 378209,
+      "name": "Training Expert",
+      "position": {
+        "screenX": 1287,
+        "screenY": 495,
+        "absoluteX": 1287,
+        "absoluteY": 1173
+      },
+      "tree": "spec",
+      "gridRow": 5,
+      "gridCol": 2
+    },
+    {
+      "id": 378210,
+      "name": "Hunter's Prey",
+      "position": {
+        "screenX": 1418,
+        "screenY": 495,
+        "absoluteX": 1418,
+        "absoluteY": 1173
+      },
+      "tree": "spec",
+      "gridRow": 5,
+      "gridCol": 3
+    },
+    {
+      "id": 199530,
+      "name": "Stomp",
+      "position": {
+        "screenX": 1092,
+        "screenY": 560,
+        "absoluteX": 1092,
+        "absoluteY": 1238
+      },
+      "tree": "spec",
+      "gridRow": 6,
+      "gridCol": 1
+    },
+    {
+      "id": 424558,
+      "name": "Master Handler",
+      "position": {
+        "screenX": 1157,
+        "screenY": 560,
+        "absoluteX": 1157,
+        "absoluteY": 1238
+      },
+      "tree": "spec",
+      "gridRow": 6,
+      "gridCol": 1
+    },
+    {
+      "id": 378207,
+      "name": "Kill Cleave",
+      "position": {
+        "screenX": 1222,
+        "screenY": 560,
+        "absoluteX": 1222,
+        "absoluteY": 1238
+      },
+      "tree": "spec",
+      "gridRow": 6,
+      "gridCol": 2
+    },
+    {
+      "id": 185789,
+      "name": "Wild Call",
+      "position": {
+        "screenX": 1287,
+        "screenY": 560,
+        "absoluteX": 1287,
+        "absoluteY": 1238
+      },
+      "tree": "spec",
+      "gridRow": 6,
+      "gridCol": 3
+    },
+    {
+      "id": 120679,
+      "name": "Dire Beast",
+      "position": {
+        "screenX": 1353,
+        "screenY": 560,
+        "absoluteX": 1353,
+        "absoluteY": 1238
+      },
+      "tree": "spec",
+      "gridRow": 6,
+      "gridCol": 3
+    },
+    {
+      "id": 424557,
+      "name": "Savagery",
+      "position": {
+        "screenX": 1027,
+        "screenY": 626,
+        "absoluteX": 1027,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 1
+    },
+    {
+      "id": 321530,
+      "name": "Bloodshed",
+      "position": {
+        "screenX": 1092,
+        "screenY": 626,
+        "absoluteX": 1092,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 1
+    },
+    {
+      "id": 469880,
+      "name": "Barbed Scales",
+      "position": {
+        "screenX": 1157,
+        "screenY": 626,
+        "absoluteX": 1157,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 2
+    },
+    {
+      "id": 19574,
+      "name": "Bestial Wrath",
+      "position": {
+        "screenX": 1222,
+        "screenY": 626,
+        "absoluteX": 1222,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 2
+    },
+    {
+      "id": 1217535,
+      "name": "Poisoned Barbs",
+      "position": {
+        "screenX": 1287,
+        "screenY": 626,
+        "absoluteX": 1287,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 2
+    },
+    {
+      "id": 378743,
+      "name": "Dire Command",
+      "position": {
+        "screenX": 1353,
+        "screenY": 626,
+        "absoluteX": 1353,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 3
+    },
+    {
+      "id": 1217524,
+      "name": "Dire Cleave",
+      "position": {
+        "screenX": 1418,
+        "screenY": 626,
+        "absoluteX": 1418,
+        "absoluteY": 1303
+      },
+      "tree": "spec",
+      "gridRow": 7,
+      "gridCol": 3
+    },
+    {
+      "id": 273887,
+      "name": "Killer Instinct",
+      "position": {
+        "screenX": 1092,
+        "screenY": 691,
+        "absoluteX": 1092,
+        "absoluteY": 1368
+      },
+      "tree": "spec",
+      "gridRow": 8,
+      "gridCol": 1
+    },
+    {
+      "id": 468701,
+      "name": "Serpentine Rhythm",
+      "position": {
+        "screenX": 1157,
+        "screenY": 691,
+        "absoluteX": 1157,
+        "absoluteY": 1368
+      },
+      "tree": "spec",
+      "gridRow": 8,
+      "gridCol": 1
+    },
+    {
+      "id": 231548,
+      "name": "Barbed Wrath",
+      "position": {
+        "screenX": 1222,
+        "screenY": 691,
+        "absoluteX": 1222,
+        "absoluteY": 1368
+      },
+      "tree": "spec",
+      "gridRow": 8,
+      "gridCol": 2
+    },
+    {
+      "id": 459693,
+      "name": "Thundering Hooves",
+      "position": {
+        "screenX": 1287,
+        "screenY": 691,
+        "absoluteX": 1287,
+        "absoluteY": 1368
+      },
+      "tree": "spec",
+      "gridRow": 8,
+      "gridCol": 3
+    },
+    {
+      "id": 385810,
+      "name": "Dire Frenzy",
+      "position": {
+        "screenX": 1353,
+        "screenY": 691,
+        "absoluteX": 1353,
+        "absoluteY": 1368
+      },
+      "tree": "spec",
+      "gridRow": 8,
+      "gridCol": 3
+    },
+    {
+      "id": 359844,
+      "name": "Call of the Wild",
+      "position": {
+        "screenX": 1092,
+        "screenY": 756,
+        "absoluteX": 1092,
+        "absoluteY": 1433
+      },
+      "tree": "spec",
+      "gridRow": 9,
+      "gridCol": 1
+    },
+    {
+      "id": 199532,
+      "name": "Killer Cobra",
+      "position": {
+        "screenX": 1157,
+        "screenY": 756,
+        "absoluteX": 1157,
+        "absoluteY": 1433
+      },
+      "tree": "spec",
+      "gridRow": 9,
+      "gridCol": 1
+    },
+    {
+      "id": 193532,
+      "name": "Scent of Blood",
+      "position": {
+        "screenX": 1222,
+        "screenY": 756,
+        "absoluteX": 1222,
+        "absoluteY": 1433
+      },
+      "tree": "spec",
+      "gridRow": 9,
+      "gridCol": 2
+    },
+    {
+      "id": 386870,
+      "name": "Brutal Companion",
+      "position": {
+        "screenX": 1287,
+        "screenY": 756,
+        "absoluteX": 1287,
+        "absoluteY": 1433
+      },
+      "tree": "spec",
+      "gridRow": 9,
+      "gridCol": 3
+    },
+    {
+      "id": 459730,
+      "name": "Huntmaster's Call",
+      "position": {
+        "screenX": 1353,
+        "screenY": 756,
+        "absoluteX": 1353,
+        "absoluteY": 1433
+      },
+      "tree": "spec",
+      "gridRow": 9,
+      "gridCol": 3
+    },
+    {
+      "id": 392053,
+      "name": "Piercing Fangs",
+      "position": {
+        "screenX": 1222,
+        "screenY": 821,
+        "absoluteX": 1222,
+        "absoluteY": 1498
+      },
+      "tree": "spec",
+      "gridRow": 10,
+      "gridCol": 1
+    },
+    {
+      "id": 1232739,
+      "name": "Wildspeaker",
+      "position": {
+        "screenX": 1353,
+        "screenY": 821,
+        "absoluteX": 1353,
+        "absoluteY": 1498
+      },
+      "tree": "spec",
+      "gridRow": 10,
+      "gridCol": 3
+    }
+  ],
+  "heroTalents": [],
+  "debug": {
+    "totalLinks": 197,
+    "uniqueTalents": 81,
+    "duplicates": [
+      "137015",
+      "462079",
+      "344572",
+      "157443",
+      "212407",
+      "440261",
+      "304039",
+      "57870",
+      "212410",
+      "212462",
+      "219183",
+      "212451",
+      "212358",
+      "212354",
+      "1234337",
+      "212339",
+      "462080",
+      "137014",
+      "76657",
+      "1229376",
+      "56641",
+      "162487",
+      "185358",
+      "195645",
+      "781",
+      "186257",
+      "1462",
+      "883",
+      "2641",
+      "6991",
+      "136",
+      "982",
+      "1515",
+      "5384",
+      "210000",
+      "257284",
+      "186265",
+      "109304",
+      "61648",
+      "83242",
+      "93321",
+      "53270",
+      "125050",
+      "127933",
+      "187650",
+      "209997",
+      "259398",
+      "83243",
+      "1543",
+      "272651",
+      "321297",
+      "83244",
+      "343241",
+      "83245",
+      "325028",
+      "325037",
+      "355589",
+      "355596"
+    ]
+  }
+}

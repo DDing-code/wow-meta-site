@@ -1,0 +1,352 @@
+{
+  "classTalents": {
+    "layout": {
+      "rows": 10,
+      "columns": 7,
+      "totalPoints": 31
+    },
+    "nodes": {
+      "5116": {
+        "id": 5116,
+        "name": "충격포",
+        "englishName": "Concussive Shot",
+        "position": {
+          "row": 3,
+          "col": 2
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "19801": {
+        "id": 19801,
+        "name": "평정의 사격",
+        "englishName": "Tranquilizing Shot",
+        "position": {
+          "row": 3,
+          "col": 6
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "53351": {
+        "id": 53351,
+        "name": "마무리 사격",
+        "englishName": "Kill Shot",
+        "position": {
+          "row": 1,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "109215": {
+        "id": 109215,
+        "name": "성급함",
+        "englishName": "Posthaste",
+        "position": {
+          "row": 5,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "109248": {
+        "id": 109248,
+        "name": "구속 사격",
+        "englishName": "Binding Shot",
+        "position": {
+          "row": 4,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "185358": {
+        "id": 185358,
+        "name": "신비한 사격",
+        "englishName": "",
+        "position": {
+          "row": 1,
+          "col": 7
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "187698": {
+        "id": 187698,
+        "name": "타르 덫",
+        "englishName": "Tar Trap",
+        "position": {
+          "row": 3,
+          "col": 6
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "199483": {
+        "id": 199483,
+        "name": "위장",
+        "englishName": "Camouflage",
+        "position": {
+          "row": 5,
+          "col": 5
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "257284": {
+        "id": 257284,
+        "name": "사냥꾼의 징표",
+        "englishName": "",
+        "position": {
+          "row": 1,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "266921": {
+        "id": 266921,
+        "name": "타고난 야생",
+        "englishName": "Born To Be Wild",
+        "position": {
+          "row": 5,
+          "col": 3
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "270581": {
+        "id": 270581,
+        "name": "자연 치유",
+        "englishName": "Natural Mending",
+        "position": {
+          "row": 4,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "343248": {
+        "id": 343248,
+        "name": "강화된 마무리 사격",
+        "englishName": "Deathblow",
+        "position": {
+          "row": 2,
+          "col": 5
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      }
+    }
+  },
+  "specTalents": {
+    "layout": {
+      "rows": 10,
+      "columns": 7,
+      "totalPoints": 30
+    },
+    "nodes": {
+      "2643": {
+        "id": 2643,
+        "name": "일제 사격",
+        "englishName": "Multi-Shot",
+        "position": {
+          "row": 5,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "19574": {
+        "id": 19574,
+        "name": "야수의 격노",
+        "englishName": "Bestial Wrath",
+        "position": {
+          "row": 3,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "34026": {
+        "id": 34026,
+        "name": "살상 명령",
+        "englishName": "Kill Command",
+        "position": {
+          "row": 1,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "115939": {
+        "id": 115939,
+        "name": "야수 절단",
+        "englishName": "Beast Cleave",
+        "position": {
+          "row": 4,
+          "col": 1
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "120679": {
+        "id": 120679,
+        "name": "광포한 야수",
+        "englishName": "Dire Beast",
+        "position": {
+          "row": 5,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "185789": {
+        "id": 185789,
+        "name": "야생의 부름",
+        "englishName": "Wild Call",
+        "position": {
+          "row": 2,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "191384": {
+        "id": 191384,
+        "name": "야수의 상",
+        "englishName": "Aspect of the Beast",
+        "position": {
+          "row": 2,
+          "col": 7
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "193455": {
+        "id": 193455,
+        "name": "코브라 사격",
+        "englishName": "Cobra Shot",
+        "position": {
+          "row": 3,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "199532": {
+        "id": 199532,
+        "name": "살인 코브라",
+        "englishName": "Killer Cobra",
+        "position": {
+          "row": 4,
+          "col": 5
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "217200": {
+        "id": 217200,
+        "name": "날카로운 사격",
+        "englishName": "Barbed Shot",
+        "position": {
+          "row": 1,
+          "col": 4
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "231548": {
+        "id": 231548,
+        "name": "날카로운 격노",
+        "englishName": "Barbed Wrath",
+        "position": {
+          "row": 2,
+          "col": 5
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "321530": {
+        "id": 321530,
+        "name": "유혈",
+        "englishName": "Bloodshed",
+        "position": {
+          "row": 5,
+          "col": 6
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "359844": {
+        "id": 359844,
+        "name": "야생의 부름",
+        "englishName": "Call of the Wild",
+        "position": {
+          "row": 3,
+          "col": 7
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      },
+      "378743": {
+        "id": 378743,
+        "name": "쇄도",
+        "englishName": "Dire Command",
+        "position": {
+          "row": 6,
+          "col": 6
+        },
+        "maxRank": 1,
+        "type": "active",
+        "connections": []
+      }
+    }
+  },
+  "heroTalents": {
+    "packLeader": {
+      "name": "무리의 지도자",
+      "layout": {
+        "rows": 5,
+        "columns": 3,
+        "totalPoints": 10
+      },
+      "nodes": {}
+    },
+    "darkRanger": {
+      "name": "어둠 순찰자",
+      "layout": {
+        "rows": 5,
+        "columns": 3,
+        "totalPoints": 10
+      },
+      "nodes": {}
+    }
+  }
+}

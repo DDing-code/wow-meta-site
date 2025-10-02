@@ -1,0 +1,2033 @@
+{
+  "metadata": {
+    "scrapedAt": "2025-09-26T19:18:32.320Z",
+    "source": "WoWHead EN",
+    "class": "Hunter",
+    "spec": "Beast Mastery"
+  },
+  "talents": {
+    "class": [
+      {
+        "id": 270581,
+        "name": "Natural Mending",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 863
+        },
+        "tree": "class"
+      },
+      {
+        "id": 109215,
+        "name": "Posthaste",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 863
+        },
+        "tree": "class"
+      },
+      {
+        "id": 53351,
+        "name": "Kill Shot",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 863
+        },
+        "tree": "class"
+      },
+      {
+        "id": 385539,
+        "name": "Rejuvenating Wind",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 928
+        },
+        "tree": "class"
+      },
+      {
+        "id": 384799,
+        "name": "Hunter's Avoidance",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 928
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343248,
+        "name": "Deathblow",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 928
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343242,
+        "name": "Wilderness Medicine",
+        "icon": "",
+        "position": {
+          "x": 108,
+          "y": 993
+        },
+        "tree": "class"
+      },
+      {
+        "id": 187698,
+        "name": "Tar Trap",
+        "icon": "",
+        "position": {
+          "x": 238,
+          "y": 993
+        },
+        "tree": "class"
+      },
+      {
+        "id": 19801,
+        "name": "Tranquilizing Shot",
+        "icon": "",
+        "position": {
+          "x": 369,
+          "y": 993
+        },
+        "tree": "class"
+      },
+      {
+        "id": 5116,
+        "name": "Concussive Shot",
+        "icon": "",
+        "position": {
+          "x": 499,
+          "y": 993
+        },
+        "tree": "class"
+      },
+      {
+        "id": 264735,
+        "name": "Survival of the Fittest",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1058
+        },
+        "tree": "class"
+      },
+      {
+        "id": 393344,
+        "name": "Entrapment",
+        "icon": "",
+        "position": {
+          "x": 238,
+          "y": 1058
+        },
+        "tree": "class"
+      },
+      {
+        "id": 147362,
+        "name": "Counter Shot",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 1058
+        },
+        "tree": "class"
+      },
+      {
+        "id": 34477,
+        "name": "Misdirection",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1058
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459455,
+        "name": "Scout's Instincts",
+        "icon": "",
+        "position": {
+          "x": 108,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459450,
+        "name": "Padded Armor",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 388039,
+        "name": "Lone Survivor",
+        "icon": "",
+        "position": {
+          "x": 238,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459542,
+        "name": "Specialized Arsenal",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343244,
+        "name": "Disruptive Rounds",
+        "icon": "",
+        "position": {
+          "x": 369,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459546,
+        "name": "No Hard Feelings",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1513,
+        "name": "Scare Beast",
+        "icon": "",
+        "position": {
+          "x": 499,
+          "y": 1123
+        },
+        "tree": "class"
+      },
+      {
+        "id": 19577,
+        "name": "Intimidation",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1188
+        },
+        "tree": "class"
+      },
+      {
+        "id": 109248,
+        "name": "Binding Shot",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1188
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459507,
+        "name": "Territorial Instincts",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459534,
+        "name": "Trigger Finger",
+        "icon": "",
+        "position": {
+          "x": 238,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 462036,
+        "name": "Blackrock Munitions",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 378004,
+        "name": "Keen Eyesight",
+        "icon": "",
+        "position": {
+          "x": 369,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459460,
+        "name": "Tar-Coated Bindings",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459533,
+        "name": "Scrappy",
+        "icon": "",
+        "position": {
+          "x": 499,
+          "y": 1253
+        },
+        "tree": "class"
+      },
+      {
+        "id": 378771,
+        "name": "Quick Load",
+        "icon": "",
+        "position": {
+          "x": 108,
+          "y": 1318
+        },
+        "tree": "class"
+      },
+      {
+        "id": 378002,
+        "name": "Pathfinding",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1318
+        },
+        "tree": "class"
+      },
+      {
+        "id": 321468,
+        "name": "Binding Shackles",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 1318
+        },
+        "tree": "class"
+      },
+      {
+        "id": 199483,
+        "name": "Camouflage",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1318
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459506,
+        "name": "Kindling Flare",
+        "icon": "",
+        "position": {
+          "x": 499,
+          "y": 1318
+        },
+        "tree": "class"
+      },
+      {
+        "id": 199921,
+        "name": "Trailblazer",
+        "icon": "",
+        "position": {
+          "x": 108,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 53480,
+        "name": "Roar of Sacrifice",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459502,
+        "name": "Serrated Tips",
+        "icon": "",
+        "position": {
+          "x": 238,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459488,
+        "name": "Moment of Opportunity",
+        "icon": "",
+        "position": {
+          "x": 303,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 266921,
+        "name": "Born To Be Wild",
+        "icon": "",
+        "position": {
+          "x": 369,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459466,
+        "name": "Ghillie Suit",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343247,
+        "name": "Improved Traps",
+        "icon": "",
+        "position": {
+          "x": 499,
+          "y": 1383
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459517,
+        "name": "Emergency Salve",
+        "icon": "",
+        "position": {
+          "x": 173,
+          "y": 1448
+        },
+        "tree": "class"
+      },
+      {
+        "id": 459527,
+        "name": "Unnatural Causes",
+        "icon": "",
+        "position": {
+          "x": 434,
+          "y": 1448
+        },
+        "tree": "class"
+      },
+      {
+        "id": 137015,
+        "name": "Spell 137015",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2001
+        },
+        "tree": "class"
+      },
+      {
+        "id": 137015,
+        "name": "Beast Mastery Hunter",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2012
+        },
+        "tree": "class"
+      },
+      {
+        "id": 462079,
+        "name": "Spell 462079",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2067
+        },
+        "tree": "class"
+      },
+      {
+        "id": 462079,
+        "name": "Beast Mastery Hunter",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2078
+        },
+        "tree": "class"
+      },
+      {
+        "id": 344572,
+        "name": "Spell 344572",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2134
+        },
+        "tree": "class"
+      },
+      {
+        "id": 344572,
+        "name": "Bestial Wrath",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2144
+        },
+        "tree": "class"
+      },
+      {
+        "id": 157443,
+        "name": "Spell 157443",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2200
+        },
+        "tree": "class"
+      },
+      {
+        "id": 157443,
+        "name": "Critical Strikes",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2211
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212407,
+        "name": "Spell 212407",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2266
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212407,
+        "name": "Glyph of Arachnophobia",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2277
+        },
+        "tree": "class"
+      },
+      {
+        "id": 440261,
+        "name": "Spell 440261",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2333
+        },
+        "tree": "class"
+      },
+      {
+        "id": 440261,
+        "name": "Glyph of Death Chakram",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2344
+        },
+        "tree": "class"
+      },
+      {
+        "id": 304039,
+        "name": "Spell 304039",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2399
+        },
+        "tree": "class"
+      },
+      {
+        "id": 304039,
+        "name": "Glyph of Dire Bees",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2410
+        },
+        "tree": "class"
+      },
+      {
+        "id": 57870,
+        "name": "Spell 57870",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2466
+        },
+        "tree": "class"
+      },
+      {
+        "id": 57870,
+        "name": "Glyph of Lesser Proportion",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2476
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212410,
+        "name": "Spell 212410",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2532
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212410,
+        "name": "Glyph of Nesingwary's Nemeses",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2543
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212462,
+        "name": "Spell 212462",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2598
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212462,
+        "name": "Glyph of Stellar Flare",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2609
+        },
+        "tree": "class"
+      },
+      {
+        "id": 219183,
+        "name": "Spell 219183",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2665
+        },
+        "tree": "class"
+      },
+      {
+        "id": 219183,
+        "name": "Glyph of the Dire Stable",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2676
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212451,
+        "name": "Spell 212451",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2731
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212451,
+        "name": "Glyph of the Goblin Anti-Grav Flare",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2742
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212358,
+        "name": "Spell 212358",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2798
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212358,
+        "name": "Glyph of the Headhunter",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2808
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212354,
+        "name": "Spell 212354",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2864
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212354,
+        "name": "Glyph of the Hook",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2875
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1234337,
+        "name": "Spell 1234337",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2930
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1234337,
+        "name": "Glyph of the Strix",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 2941
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212339,
+        "name": "Spell 212339",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 2997
+        },
+        "tree": "class"
+      },
+      {
+        "id": 212339,
+        "name": "Glyph of the Trident",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3008
+        },
+        "tree": "class"
+      },
+      {
+        "id": 462080,
+        "name": "Spell 462080",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3063
+        },
+        "tree": "class"
+      },
+      {
+        "id": 462080,
+        "name": "Hunter",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3074
+        },
+        "tree": "class"
+      },
+      {
+        "id": 137014,
+        "name": "Spell 137014",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3130
+        },
+        "tree": "class"
+      },
+      {
+        "id": 137014,
+        "name": "Hunter",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3140
+        },
+        "tree": "class"
+      },
+      {
+        "id": 76657,
+        "name": "Spell 76657",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3196
+        },
+        "tree": "class"
+      },
+      {
+        "id": 76657,
+        "name": "Mastery: Master of Beasts",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3207
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1229376,
+        "name": "Spell 1229376",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3262
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1229376,
+        "name": "Single-Button Assistant",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3273
+        },
+        "tree": "class"
+      },
+      {
+        "id": 56641,
+        "name": "Spell 56641",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3329
+        },
+        "tree": "class"
+      },
+      {
+        "id": 56641,
+        "name": "Steady Shot",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3340
+        },
+        "tree": "class"
+      },
+      {
+        "id": 162487,
+        "name": "Spell 162487",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3395
+        },
+        "tree": "class"
+      },
+      {
+        "id": 162487,
+        "name": "Steel Trap",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3406
+        },
+        "tree": "class"
+      },
+      {
+        "id": 185358,
+        "name": "Spell 185358",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3462
+        },
+        "tree": "class"
+      },
+      {
+        "id": 185358,
+        "name": "Arcane Shot",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3472
+        },
+        "tree": "class"
+      },
+      {
+        "id": 195645,
+        "name": "Spell 195645",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3528
+        },
+        "tree": "class"
+      },
+      {
+        "id": 195645,
+        "name": "Wing Clip",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3539
+        },
+        "tree": "class"
+      },
+      {
+        "id": 781,
+        "name": "Spell 781",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3594
+        },
+        "tree": "class"
+      },
+      {
+        "id": 781,
+        "name": "Disengage",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3605
+        },
+        "tree": "class"
+      },
+      {
+        "id": 186257,
+        "name": "Spell 186257",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3661
+        },
+        "tree": "class"
+      },
+      {
+        "id": 186257,
+        "name": "Aspect of the Cheetah",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3672
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1462,
+        "name": "Spell 1462",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3727
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1462,
+        "name": "Beast Lore",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3738
+        },
+        "tree": "class"
+      },
+      {
+        "id": 883,
+        "name": "Spell 883",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3794
+        },
+        "tree": "class"
+      },
+      {
+        "id": 883,
+        "name": "Call Pet 1",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3804
+        },
+        "tree": "class"
+      },
+      {
+        "id": 2641,
+        "name": "Spell 2641",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3860
+        },
+        "tree": "class"
+      },
+      {
+        "id": 2641,
+        "name": "Dismiss Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3871
+        },
+        "tree": "class"
+      },
+      {
+        "id": 6991,
+        "name": "Spell 6991",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3926
+        },
+        "tree": "class"
+      },
+      {
+        "id": 6991,
+        "name": "Feed Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 3937
+        },
+        "tree": "class"
+      },
+      {
+        "id": 136,
+        "name": "Spell 136",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 3993
+        },
+        "tree": "class"
+      },
+      {
+        "id": 136,
+        "name": "Mend Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4004
+        },
+        "tree": "class"
+      },
+      {
+        "id": 982,
+        "name": "Spell 982",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4059
+        },
+        "tree": "class"
+      },
+      {
+        "id": 982,
+        "name": "Revive Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4070
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1515,
+        "name": "Spell 1515",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4126
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1515,
+        "name": "Tame Beast",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4136
+        },
+        "tree": "class"
+      },
+      {
+        "id": 5384,
+        "name": "Spell 5384",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4192
+        },
+        "tree": "class"
+      },
+      {
+        "id": 5384,
+        "name": "Feign Death",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4203
+        },
+        "tree": "class"
+      },
+      {
+        "id": 210000,
+        "name": "Spell 210000",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4258
+        },
+        "tree": "class"
+      },
+      {
+        "id": 210000,
+        "name": "Wake Up",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4269
+        },
+        "tree": "class"
+      },
+      {
+        "id": 257284,
+        "name": "Spell 257284",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4325
+        },
+        "tree": "class"
+      },
+      {
+        "id": 257284,
+        "name": "Hunter's Mark",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4336
+        },
+        "tree": "class"
+      },
+      {
+        "id": 186265,
+        "name": "Spell 186265",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4391
+        },
+        "tree": "class"
+      },
+      {
+        "id": 186265,
+        "name": "Aspect of the Turtle",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4402
+        },
+        "tree": "class"
+      },
+      {
+        "id": 109304,
+        "name": "Spell 109304",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4458
+        },
+        "tree": "class"
+      },
+      {
+        "id": 109304,
+        "name": "Exhilaration",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4468
+        },
+        "tree": "class"
+      },
+      {
+        "id": 61648,
+        "name": "Spell 61648",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4524
+        },
+        "tree": "class"
+      },
+      {
+        "id": 61648,
+        "name": "Aspect of the Chameleon",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4535
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83242,
+        "name": "Spell 83242",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4590
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83242,
+        "name": "Call Pet 2",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4601
+        },
+        "tree": "class"
+      },
+      {
+        "id": 93321,
+        "name": "Spell 93321",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4657
+        },
+        "tree": "class"
+      },
+      {
+        "id": 93321,
+        "name": "Control Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4668
+        },
+        "tree": "class"
+      },
+      {
+        "id": 53270,
+        "name": "Spell 53270",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4723
+        },
+        "tree": "class"
+      },
+      {
+        "id": 53270,
+        "name": "Exotic Beasts",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4734
+        },
+        "tree": "class"
+      },
+      {
+        "id": 125050,
+        "name": "Spell 125050",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4790
+        },
+        "tree": "class"
+      },
+      {
+        "id": 125050,
+        "name": "Fetch",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4800
+        },
+        "tree": "class"
+      },
+      {
+        "id": 127933,
+        "name": "Spell 127933",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4856
+        },
+        "tree": "class"
+      },
+      {
+        "id": 127933,
+        "name": "Fireworks",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4867
+        },
+        "tree": "class"
+      },
+      {
+        "id": 187650,
+        "name": "Spell 187650",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4922
+        },
+        "tree": "class"
+      },
+      {
+        "id": 187650,
+        "name": "Freezing Trap",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 4933
+        },
+        "tree": "class"
+      },
+      {
+        "id": 209997,
+        "name": "Spell 209997",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 4989
+        },
+        "tree": "class"
+      },
+      {
+        "id": 209997,
+        "name": "Play Dead",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5000
+        },
+        "tree": "class"
+      },
+      {
+        "id": 259398,
+        "name": "Spell 259398",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5055
+        },
+        "tree": "class"
+      },
+      {
+        "id": 259398,
+        "name": "Chakrams",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5066
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83243,
+        "name": "Spell 83243",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5122
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83243,
+        "name": "Call Pet 3",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5132
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1543,
+        "name": "Spell 1543",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5188
+        },
+        "tree": "class"
+      },
+      {
+        "id": 1543,
+        "name": "Flare",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5199
+        },
+        "tree": "class"
+      },
+      {
+        "id": 272651,
+        "name": "Spell 272651",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5254
+        },
+        "tree": "class"
+      },
+      {
+        "id": 272651,
+        "name": "Command Pet",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5265
+        },
+        "tree": "class"
+      },
+      {
+        "id": 321297,
+        "name": "Spell 321297",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5321
+        },
+        "tree": "class"
+      },
+      {
+        "id": 321297,
+        "name": "Eyes of the Beast",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5332
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83244,
+        "name": "Spell 83244",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5387
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83244,
+        "name": "Call Pet 4",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5398
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343241,
+        "name": "Spell 343241",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5454
+        },
+        "tree": "class"
+      },
+      {
+        "id": 343241,
+        "name": "Aspect of the Cheetah",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5464
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83245,
+        "name": "Spell 83245",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5520
+        },
+        "tree": "class"
+      },
+      {
+        "id": 83245,
+        "name": "Call Pet 5",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5531
+        },
+        "tree": "class"
+      },
+      {
+        "id": 325028,
+        "name": "Spell 325028",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5586
+        },
+        "tree": "class"
+      },
+      {
+        "id": 325028,
+        "name": "Death Chakram",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5597
+        },
+        "tree": "class"
+      },
+      {
+        "id": 325037,
+        "name": "Spell 325037",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5653
+        },
+        "tree": "class"
+      },
+      {
+        "id": 325037,
+        "name": "Death Chakram",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5664
+        },
+        "tree": "class"
+      },
+      {
+        "id": 355589,
+        "name": "Spell 355589",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5719
+        },
+        "tree": "class"
+      },
+      {
+        "id": 355589,
+        "name": "Wailing Arrow",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5730
+        },
+        "tree": "class"
+      },
+      {
+        "id": 355596,
+        "name": "Spell 355596",
+        "icon": "",
+        "position": {
+          "x": 34,
+          "y": 5786
+        },
+        "tree": "class"
+      },
+      {
+        "id": 355596,
+        "name": "Wailing Arrow",
+        "icon": "",
+        "position": {
+          "x": 96,
+          "y": 5796
+        },
+        "tree": "class"
+      }
+    ],
+    "spec": [
+      {
+        "id": 34026,
+        "name": "Kill Command",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 863
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 193455,
+        "name": "Cobra Shot",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 928
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 217200,
+        "name": "Barbed Shot",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 928
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 321014,
+        "name": "Pack Tactics",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 993
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 191384,
+        "name": "Aspect of the Beast",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 993
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 393933,
+        "name": "War Orders",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 993
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 257944,
+        "name": "Thrill of the Hunt",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 993
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 459550,
+        "name": "Go for the Throat",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 1058
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 2643,
+        "name": "Multi-Shot",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1058
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 459552,
+        "name": "Laceration",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1058
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 269737,
+        "name": "Alpha Predator",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 1123
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 115939,
+        "name": "Beast Cleave",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1123
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 378209,
+        "name": "Training Expert",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 1123
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 378210,
+        "name": "Hunter's Prey",
+        "icon": "",
+        "position": {
+          "x": 1418,
+          "y": 1123
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 199530,
+        "name": "Stomp",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 1188
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 424558,
+        "name": "Master Handler",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 1188
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 378207,
+        "name": "Kill Cleave",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1188
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 185789,
+        "name": "Wild Call",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 1188
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 120679,
+        "name": "Dire Beast",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1188
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 424557,
+        "name": "Savagery",
+        "icon": "",
+        "position": {
+          "x": 1027,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 321530,
+        "name": "Bloodshed",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 469880,
+        "name": "Barbed Scales",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 19574,
+        "name": "Bestial Wrath",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 1217535,
+        "name": "Poisoned Barbs",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 378743,
+        "name": "Dire Command",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 1217524,
+        "name": "Dire Cleave",
+        "icon": "",
+        "position": {
+          "x": 1418,
+          "y": 1253
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 273887,
+        "name": "Killer Instinct",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 1318
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 468701,
+        "name": "Serpentine Rhythm",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 1318
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 231548,
+        "name": "Barbed Wrath",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1318
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 459693,
+        "name": "Thundering Hooves",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 1318
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 385810,
+        "name": "Dire Frenzy",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1318
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 359844,
+        "name": "Call of the Wild",
+        "icon": "",
+        "position": {
+          "x": 1092,
+          "y": 1383
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 199532,
+        "name": "Killer Cobra",
+        "icon": "",
+        "position": {
+          "x": 1157,
+          "y": 1383
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 193532,
+        "name": "Scent of Blood",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1383
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 386870,
+        "name": "Brutal Companion",
+        "icon": "",
+        "position": {
+          "x": 1287,
+          "y": 1383
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 459730,
+        "name": "Huntmaster's Call",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1383
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 392053,
+        "name": "Piercing Fangs",
+        "icon": "",
+        "position": {
+          "x": 1222,
+          "y": 1448
+        },
+        "tree": "spec"
+      },
+      {
+        "id": 1232739,
+        "name": "Wildspeaker",
+        "icon": "",
+        "position": {
+          "x": 1353,
+          "y": 1448
+        },
+        "tree": "spec"
+      }
+    ],
+    "hero": {
+      "packLeader": [],
+      "darkRanger": []
+    }
+  },
+  "tooltips": [
+    {
+      "id": 270581,
+      "tooltip": "Natural Mending\nTalent\nRequires Hunter\nRequires level 30\n\nEvery 10 Focus you spend reduces the remaining cooldown on Exhilaration by 1.0 sec.\n\t\n\t"
+    },
+    {
+      "id": 109215,
+      "tooltip": "PosthasteTalentRequires HunterRequires level 40Disengage also frees you from all movement impairing effects and increases your movement speed by 50% for 4 sec."
+    },
+    {
+      "id": 53351,
+      "tooltip": "Kill Shot\nTalent\n10 Focus\t40 yd range\nInstant\t10 sec cooldown\n1 Charge\nRequires Hunter\nRequires Ranged Weapon\nYou attempt to finish off a wounded target, dealing (320% of Attack Power) Physical damage. Only usable on enemies with less than 20% health.\nThis talent is granted to your specialization for free and can't be unlearned\n\t\n\t"
+    },
+    {
+      "id": 385539,
+      "tooltip": "Rejuvenating Wind\nTalent\nRequires Hunter\nMaximum health increased by 8%, and Exhilaration now also heals you for an additional 12.0% of your maximum health over 8 sec.\n\t\n\t"
+    },
+    {
+      "id": 384799,
+      "tooltip": "Hunter's Avoidance\nTalent\nRequires Hunter\nDamage taken from area of effect attacks reduced by 5%.\n\t\n\t"
+    },
+    {
+      "id": 343248,
+      "tooltip": "DeathblowTalentRequires HunterKill Command has a 20% chance to grant Deathblow. DeathblowThe cooldown of Kill Shot is reset. Your next Kill Shot can be used on any target, regardless of their current health."
+    },
+    {
+      "id": 343242,
+      "tooltip": "Wilderness MedicineTalentRequires HunterNatural Mending now reduces the cooldown of Exhilaration by an additional 0.5 secMend Pet heals for an additional 25% of your pet's health over its duration, and has a 25% chance to dispel a magic effect each time it heals your pet."
+    },
+    {
+      "id": 187698,
+      "tooltip": "Wilderness MedicineTalentRequires HunterNatural Mending now reduces the cooldown of Exhilaration by an additional 0.5 secMend Pet heals for an additional 25% of your pet's health over its duration, and has a 25% chance to dispel a magic effect each time it heals your pet."
+    },
+    {
+      "id": 19801,
+      "tooltip": "Tranquilizing ShotTalent40 yd rangeInstant10 sec cooldownRequires HunterRemoves 1 Enrage and 1 Magic effect from an enemy target. [Disruptive Rounds: Successfully dispelling an effect generates 10 Focus]"
+    }
+  ],
+  "stats": {
+    "classTalents": 159,
+    "specTalents": 38,
+    "packLeaderTalents": 0,
+    "darkRangerTalents": 0,
+    "total": 197
+  }
+}

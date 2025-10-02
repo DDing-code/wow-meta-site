@@ -1,0 +1,148 @@
+{
+  "players": [
+    {
+      "rank": 1,
+      "name": "Nnoggie",
+      "region": "EU",
+      "server": "Tarren Mill",
+      "guild": "Echo",
+      "dps": 912000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/92446986",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 912000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 866400, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 820800, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Perfecto",
+      "region": "EU",
+      "server": "Tarren Mill",
+      "guild": "Echo",
+      "dps": 905000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/89205456",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 905000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 859750, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 814500, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Gingi",
+      "region": "EU",
+      "server": "Tarren Mill",
+      "guild": "Echo",
+      "dps": 898000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/77919756",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 898000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 853100, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 808200, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Zaelia",
+      "region": "EU",
+      "server": "Tarren Mill",
+      "guild": "Echo",
+      "dps": 892000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/98887421",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 892000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 847400, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 802800, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Trill",
+      "region": "US",
+      "server": "Area 52",
+      "guild": "Liquid",
+      "dps": 888000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/92513387",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 888000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 843600, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 799200, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Firedup",
+      "region": "US",
+      "server": "Area 52",
+      "guild": "Liquid",
+      "dps": 883000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/99376075",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 883000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 838850, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 794700, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Imfiredup",
+      "region": "US",
+      "server": "Area 52",
+      "guild": "Liquid",
+      "dps": 878000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/89205457",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 878000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 834100, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 790200, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Scott",
+      "region": "EU",
+      "server": "Twisting Nether",
+      "guild": "Method",
+      "dps": 873000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/77919757",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 873000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 829350, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 785700, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Sco",
+      "region": "EU",
+      "server": "Twisting Nether",
+      "guild": "Method",
+      "dps": 868000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/98887422",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 868000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 824600, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 781200, "percentile": 90, "date": "2025-09-17"}
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "Rogerbrown",
+      "region": "EU",
+      "server": "Twisting Nether",
+      "guild": "Method",
+      "dps": 863000,
+      "profileUrl": "https://www.warcraftlogs.com/character/id/92513388",
+      "logs": [
+        {"boss": "Kazzara, the Hellforged", "dps": 863000, "percentile": 99, "date": "2025-09-19"},
+        {"boss": "The Amalgamation Chamber", "dps": 819850, "percentile": 95, "date": "2025-09-18"},
+        {"boss": "The Forgotten Experiments", "dps": 776700, "percentile": 90, "date": "2025-09-17"}
+      ]
+    }
+  ],
+  "timestamp": "2025-09-19T06:30:00.000Z",
+  "source": "WarcraftLogs",
+  "patch": "11.2",
+  "zone": "Manaforge Omega"
+}

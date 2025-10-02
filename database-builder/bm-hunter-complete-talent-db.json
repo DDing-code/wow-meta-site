@@ -1,0 +1,1692 @@
+{
+  "metadata": {
+    "scrapedAt": "2025-09-26T19:38:42.242Z",
+    "totalTalents": 90,
+    "sources": [
+      "www.wowhead.com",
+      "ko.wowhead.com"
+    ]
+  },
+  "talents": {
+    "1513": {
+      "id": 1513,
+      "englishName": "Scare Beast",
+      "koreanName": "야수 겁주기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=1513",
+        "koreanUrl": "https://ko.wowhead.com/spell=1513"
+      }
+    },
+    "2643": {
+      "id": 2643,
+      "englishName": "Multi-Shot",
+      "koreanName": "일제 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=2643",
+        "koreanUrl": "https://ko.wowhead.com/spell=2643"
+      }
+    },
+    "5116": {
+      "id": 5116,
+      "englishName": "Concussive Shot",
+      "koreanName": "충격포",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=5116",
+        "koreanUrl": "https://ko.wowhead.com/spell=5116"
+      }
+    },
+    "19574": {
+      "id": 19574,
+      "englishName": "Bestial Wrath",
+      "koreanName": "야수의 격노",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=19574",
+        "koreanUrl": "https://ko.wowhead.com/spell=19574"
+      }
+    },
+    "19577": {
+      "id": 19577,
+      "englishName": "Intimidation",
+      "koreanName": "위협",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=19577",
+        "koreanUrl": "https://ko.wowhead.com/spell=19577"
+      }
+    },
+    "19801": {
+      "id": 19801,
+      "englishName": "Tranquilizing Shot",
+      "koreanName": "평정의 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=19801",
+        "koreanUrl": "https://ko.wowhead.com/spell=19801"
+      }
+    },
+    "34026": {
+      "id": 34026,
+      "englishName": "Kill Command",
+      "koreanName": "살상 명령",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=34026",
+        "koreanUrl": "https://ko.wowhead.com/spell=34026"
+      }
+    },
+    "34477": {
+      "id": 34477,
+      "englishName": "Misdirection",
+      "koreanName": "눈속임",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=34477",
+        "koreanUrl": "https://ko.wowhead.com/spell=34477"
+      }
+    },
+    "53351": {
+      "id": 53351,
+      "englishName": "Kill Shot",
+      "koreanName": "마무리 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=53351",
+        "koreanUrl": "https://ko.wowhead.com/spell=53351"
+      }
+    },
+    "53480": {
+      "id": 53480,
+      "englishName": "Roar of Sacrifice",
+      "koreanName": "희생의 포효",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=53480",
+        "koreanUrl": "https://ko.wowhead.com/spell=53480"
+      }
+    },
+    "109215": {
+      "id": 109215,
+      "englishName": "Posthaste",
+      "koreanName": "급가속",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=109215",
+        "koreanUrl": "https://ko.wowhead.com/spell=109215"
+      }
+    },
+    "109248": {
+      "id": 109248,
+      "englishName": "Binding Shot",
+      "koreanName": "구속의 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=109248",
+        "koreanUrl": "https://ko.wowhead.com/spell=109248"
+      }
+    },
+    "115939": {
+      "id": 115939,
+      "englishName": "Beast Cleave",
+      "koreanName": "야수의 회전베기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=115939",
+        "koreanUrl": "https://ko.wowhead.com/spell=115939"
+      }
+    },
+    "120679": {
+      "id": 120679,
+      "englishName": "Dire Beast",
+      "koreanName": "광포한 야수",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=120679",
+        "koreanUrl": "https://ko.wowhead.com/spell=120679"
+      }
+    },
+    "147362": {
+      "id": 147362,
+      "englishName": "Counter Shot",
+      "koreanName": "반격의 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=147362",
+        "koreanUrl": "https://ko.wowhead.com/spell=147362"
+      }
+    },
+    "185789": {
+      "id": 185789,
+      "englishName": "Wild Call",
+      "koreanName": "야성의 부름",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=185789",
+        "koreanUrl": "https://ko.wowhead.com/spell=185789"
+      }
+    },
+    "187698": {
+      "id": 187698,
+      "englishName": "Tar Trap",
+      "koreanName": "타르 덫",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=187698",
+        "koreanUrl": "https://ko.wowhead.com/spell=187698"
+      }
+    },
+    "191384": {
+      "id": 191384,
+      "englishName": "Aspect of the Beast",
+      "koreanName": "야수의 상",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=191384",
+        "koreanUrl": "https://ko.wowhead.com/spell=191384"
+      }
+    },
+    "193455": {
+      "id": 193455,
+      "englishName": "Cobra Shot",
+      "koreanName": "코브라 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=193455",
+        "koreanUrl": "https://ko.wowhead.com/spell=193455"
+      }
+    },
+    "193532": {
+      "id": 193532,
+      "englishName": "Scent of Blood",
+      "koreanName": "피의 향기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 9,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=193532",
+        "koreanUrl": "https://ko.wowhead.com/spell=193532"
+      }
+    },
+    "199483": {
+      "id": 199483,
+      "englishName": "Camouflage",
+      "koreanName": "위장술",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 8,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=199483",
+        "koreanUrl": "https://ko.wowhead.com/spell=199483"
+      }
+    },
+    "199530": {
+      "id": 199530,
+      "englishName": "Stomp",
+      "koreanName": "발구르기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=199530",
+        "koreanUrl": "https://ko.wowhead.com/spell=199530"
+      }
+    },
+    "199532": {
+      "id": 199532,
+      "englishName": "Killer Cobra",
+      "koreanName": "살상 코브라",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 9,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=199532",
+        "koreanUrl": "https://ko.wowhead.com/spell=199532"
+      }
+    },
+    "199921": {
+      "id": 199921,
+      "englishName": "Trailblazer",
+      "koreanName": "개척자",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=199921",
+        "koreanUrl": "https://ko.wowhead.com/spell=199921"
+      }
+    },
+    "217200": {
+      "id": 217200,
+      "englishName": "Barbed Shot",
+      "koreanName": "날카로운 사격",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=217200",
+        "koreanUrl": "https://ko.wowhead.com/spell=217200"
+      }
+    },
+    "231548": {
+      "id": 231548,
+      "englishName": "Barbed Wrath",
+      "koreanName": "날카로운 격노",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 8,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=231548",
+        "koreanUrl": "https://ko.wowhead.com/spell=231548"
+      }
+    },
+    "257944": {
+      "id": 257944,
+      "englishName": "Thrill of the Hunt",
+      "koreanName": "사냥의 전율",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=257944",
+        "koreanUrl": "https://ko.wowhead.com/spell=257944"
+      }
+    },
+    "264735": {
+      "id": 264735,
+      "englishName": "Survival of the Fittest",
+      "koreanName": "적자생존",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=264735",
+        "koreanUrl": "https://ko.wowhead.com/spell=264735"
+      }
+    },
+    "266921": {
+      "id": 266921,
+      "englishName": "Born To Be Wild",
+      "koreanName": "타고난 야성",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=266921",
+        "koreanUrl": "https://ko.wowhead.com/spell=266921"
+      }
+    },
+    "269737": {
+      "id": 269737,
+      "englishName": "Alpha Predator",
+      "koreanName": "우두머리 포식자",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=269737",
+        "koreanUrl": "https://ko.wowhead.com/spell=269737"
+      }
+    },
+    "270581": {
+      "id": 270581,
+      "englishName": "Natural Mending",
+      "koreanName": "자연 치유",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=270581",
+        "koreanUrl": "https://ko.wowhead.com/spell=270581"
+      }
+    },
+    "273887": {
+      "id": 273887,
+      "englishName": "Killer Instinct",
+      "koreanName": "살수의 본능",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 8,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=273887",
+        "koreanUrl": "https://ko.wowhead.com/spell=273887"
+      }
+    },
+    "321014": {
+      "id": 321014,
+      "englishName": "Pack Tactics",
+      "koreanName": "무리 전술",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=321014",
+        "koreanUrl": "https://ko.wowhead.com/spell=321014"
+      }
+    },
+    "321468": {
+      "id": 321468,
+      "englishName": "Binding Shackles",
+      "koreanName": "억제의 족쇄",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 8,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=321468",
+        "koreanUrl": "https://ko.wowhead.com/spell=321468"
+      }
+    },
+    "321530": {
+      "id": 321530,
+      "englishName": "Bloodshed",
+      "koreanName": "유혈",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=321530",
+        "koreanUrl": "https://ko.wowhead.com/spell=321530"
+      }
+    },
+    "343242": {
+      "id": 343242,
+      "englishName": "Wilderness Medicine",
+      "koreanName": "야생의 약",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=343242",
+        "koreanUrl": "https://ko.wowhead.com/spell=343242"
+      }
+    },
+    "343244": {
+      "id": 343244,
+      "englishName": "Disruptive Rounds",
+      "koreanName": "방해탄",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=343244",
+        "koreanUrl": "https://ko.wowhead.com/spell=343244"
+      }
+    },
+    "343247": {
+      "id": 343247,
+      "englishName": "Improved Traps",
+      "koreanName": "덫 연마",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=343247",
+        "koreanUrl": "https://ko.wowhead.com/spell=343247"
+      }
+    },
+    "343248": {
+      "id": 343248,
+      "englishName": "Deathblow",
+      "koreanName": "죽음의 강타",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=343248",
+        "koreanUrl": "https://ko.wowhead.com/spell=343248"
+      }
+    },
+    "359844": {
+      "id": 359844,
+      "englishName": "Call of the Wild",
+      "koreanName": "야생의 부름",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 9,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=359844",
+        "koreanUrl": "https://ko.wowhead.com/spell=359844"
+      }
+    },
+    "378002": {
+      "id": 378002,
+      "englishName": "Pathfinding",
+      "koreanName": "길잡이",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 8,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378002",
+        "koreanUrl": "https://ko.wowhead.com/spell=378002"
+      }
+    },
+    "378004": {
+      "id": 378004,
+      "englishName": "Keen Eyesight",
+      "koreanName": "예리한 시각",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378004",
+        "koreanUrl": "https://ko.wowhead.com/spell=378004"
+      }
+    },
+    "378207": {
+      "id": 378207,
+      "englishName": "Kill Cleave",
+      "koreanName": "살상의 회전베기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378207",
+        "koreanUrl": "https://ko.wowhead.com/spell=378207"
+      }
+    },
+    "378209": {
+      "id": 378209,
+      "englishName": "Training Expert",
+      "koreanName": "조련 전문가",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378209",
+        "koreanUrl": "https://ko.wowhead.com/spell=378209"
+      }
+    },
+    "378210": {
+      "id": 378210,
+      "englishName": "Hunter's Prey",
+      "koreanName": "사냥꾼의 먹잇감",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378210",
+        "koreanUrl": "https://ko.wowhead.com/spell=378210"
+      }
+    },
+    "378743": {
+      "id": 378743,
+      "englishName": "Dire Command",
+      "koreanName": "광포한 명령",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378743",
+        "koreanUrl": "https://ko.wowhead.com/spell=378743"
+      }
+    },
+    "378771": {
+      "id": 378771,
+      "englishName": "Quick Load",
+      "koreanName": "신속 장전",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 8,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=378771",
+        "koreanUrl": "https://ko.wowhead.com/spell=378771"
+      }
+    },
+    "384799": {
+      "id": 384799,
+      "englishName": "Hunter's Avoidance",
+      "koreanName": "사냥꾼의 회피",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=384799",
+        "koreanUrl": "https://ko.wowhead.com/spell=384799"
+      }
+    },
+    "385539": {
+      "id": 385539,
+      "englishName": "Rejuvenating Wind",
+      "koreanName": "원기 회복의 바람",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=385539",
+        "koreanUrl": "https://ko.wowhead.com/spell=385539"
+      }
+    },
+    "385810": {
+      "id": 385810,
+      "englishName": "Dire Frenzy",
+      "koreanName": "광포한 격노",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 8,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=385810",
+        "koreanUrl": "https://ko.wowhead.com/spell=385810"
+      }
+    },
+    "386870": {
+      "id": 386870,
+      "englishName": "Brutal Companion",
+      "koreanName": "잔혹한 동료",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 9,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=386870",
+        "koreanUrl": "https://ko.wowhead.com/spell=386870"
+      }
+    },
+    "388039": {
+      "id": 388039,
+      "englishName": "Lone Survivor",
+      "koreanName": "고독한 생존자",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=388039",
+        "koreanUrl": "https://ko.wowhead.com/spell=388039"
+      }
+    },
+    "392053": {
+      "id": 392053,
+      "englishName": "Piercing Fangs",
+      "koreanName": "꿰뚫는 송곳니",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 10,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=392053",
+        "koreanUrl": "https://ko.wowhead.com/spell=392053"
+      }
+    },
+    "393344": {
+      "id": 393344,
+      "englishName": "Entrapment",
+      "koreanName": "올가미",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=393344",
+        "koreanUrl": "https://ko.wowhead.com/spell=393344"
+      }
+    },
+    "393933": {
+      "id": 393933,
+      "englishName": "War Orders",
+      "koreanName": "전쟁 명령",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=393933",
+        "koreanUrl": "https://ko.wowhead.com/spell=393933"
+      }
+    },
+    "424557": {
+      "id": 424557,
+      "englishName": "Savagery",
+      "koreanName": "포악성",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=424557",
+        "koreanUrl": "https://ko.wowhead.com/spell=424557"
+      }
+    },
+    "424558": {
+      "id": 424558,
+      "englishName": "Master Handler",
+      "koreanName": "조련술의 거장",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=424558",
+        "koreanUrl": "https://ko.wowhead.com/spell=424558"
+      }
+    },
+    "450381": {
+      "id": 450381,
+      "englishName": "Shadow Shot",
+      "koreanName": "어둠의 사격",
+      "icon": "ability_theblackarrow",
+      "description": {
+        "english": "Barbed Shot deals additional Shadow damage.",
+        "korean": "날카로운 사격이 암흑 피해를 추가로 입힙니다."
+      },
+      "tree": "hero-darkranger",
+      "position": {
+        "row": 1,
+        "col": 2
+      }
+    },
+    "450382": {
+      "id": 450382,
+      "englishName": "Black Arrow",
+      "koreanName": "검은 화살",
+      "icon": "spell_shadow_painspike",
+      "description": {
+        "english": "Every 30 sec, your next shot applies a DoT dealing Shadow damage for 20 sec.",
+        "korean": "30초마다 다음 사격이 20초 동안 대상에게 암흑 피해를 입히는 효과를 부여합니다."
+      },
+      "tree": "hero-darkranger",
+      "position": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    "450383": {
+      "id": 450383,
+      "englishName": "Smoke Screen",
+      "koreanName": "연막",
+      "icon": "ability_rogue_smoke",
+      "description": {
+        "english": "Using Camouflage grants 20% dodge for 3 sec.",
+        "korean": "위장을 사용하면 3초 동안 회피율이 20% 증가합니다."
+      },
+      "tree": "hero-darkranger",
+      "position": {
+        "row": 3,
+        "col": 1
+      }
+    },
+    "450384": {
+      "id": 450384,
+      "englishName": "Withering Fire",
+      "koreanName": "쇠약의 화살",
+      "icon": "ability_hunter_resistanceisfutile",
+      "description": {
+        "english": "Cobra Shot slows target by 15% for 2 sec.",
+        "korean": "코브라 사격이 대상의 이동 속도를 2초 동안 15% 감소시킵니다."
+      },
+      "tree": "hero-darkranger",
+      "position": {
+        "row": 3,
+        "col": 3
+      }
+    },
+    "450958": {
+      "id": 450958,
+      "englishName": "Vicious Hunt",
+      "koreanName": "포악한 습격",
+      "icon": "ability_hunter_killcommand",
+      "description": {
+        "english": "Kill Command deals 10% additional damage.",
+        "korean": "살상 명령이 추가로 10%의 피해를 입힙니다."
+      },
+      "tree": "hero-packleader",
+      "position": {
+        "row": 1,
+        "col": 2
+      }
+    },
+    "450962": {
+      "id": 450962,
+      "englishName": "Frenzied Pack",
+      "koreanName": "광기의 무리",
+      "icon": "spell_shadow_unholyfrenzy",
+      "description": {
+        "english": "Pet deals 10% additional damage at max Frenzy stacks.",
+        "korean": "광분 중첩이 최대일 때 펫이 10%의 추가 피해를 입힙니다."
+      },
+      "tree": "hero-packleader",
+      "position": {
+        "row": 2,
+        "col": 3
+      }
+    },
+    "450963": {
+      "id": 450963,
+      "englishName": "Den Recovery",
+      "koreanName": "굴 회복력",
+      "icon": "ability_hunter_pet_turtle",
+      "description": {
+        "english": "Take 10% less damage while below 50% health.",
+        "korean": "생명력이 50% 미만일 때 받는 피해가 10% 감소합니다."
+      },
+      "tree": "hero-packleader",
+      "position": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    "450964": {
+      "id": 450964,
+      "englishName": "Pack Coordination",
+      "koreanName": "무리 조직",
+      "icon": "ability_hunter_longevity",
+      "description": {
+        "english": "Pet's basic attacks have a 20% chance to reduce Barbed Shot cooldown by 1 sec.",
+        "korean": "펫의 기본 공격이 20%의 확률로 날카로운 사격의 재충전 시간을 1초 감소시킵니다."
+      },
+      "tree": "hero-packleader",
+      "position": {
+        "row": 2,
+        "col": 1
+      }
+    },
+    "451160": {
+      "id": 451160,
+      "englishName": "Howl of the Pack",
+      "koreanName": "사냥의 부름",
+      "icon": "ability_hunter_callofthewild",
+      "description": {
+        "english": "Critical strike chance increased by 10% during Call of the Wild.",
+        "korean": "야생의 부름이 활성화되어 있는 동안 치명타 확률이 10% 증가합니다."
+      },
+      "tree": "hero-packleader",
+      "position": {
+        "row": 3,
+        "col": 1
+      }
+    },
+    "459450": {
+      "id": 459450,
+      "englishName": "Padded Armor",
+      "koreanName": "솜댄 갑옷",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459450",
+        "koreanUrl": "https://ko.wowhead.com/spell=459450"
+      }
+    },
+    "459455": {
+      "id": 459455,
+      "englishName": "Scout's Instincts",
+      "koreanName": "정찰병의 본능",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459455",
+        "koreanUrl": "https://ko.wowhead.com/spell=459455"
+      }
+    },
+    "459460": {
+      "id": 459460,
+      "englishName": "Tar-Coated Bindings",
+      "koreanName": "타르로 뒤덮인 구속구",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459460",
+        "koreanUrl": "https://ko.wowhead.com/spell=459460"
+      }
+    },
+    "459466": {
+      "id": 459466,
+      "englishName": "Ghillie Suit",
+      "koreanName": "환경 위장복",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459466",
+        "koreanUrl": "https://ko.wowhead.com/spell=459466"
+      }
+    },
+    "459488": {
+      "id": 459488,
+      "englishName": "Moment of Opportunity",
+      "koreanName": "기회의 찰나",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459488",
+        "koreanUrl": "https://ko.wowhead.com/spell=459488"
+      }
+    },
+    "459502": {
+      "id": 459502,
+      "englishName": "Serrated Tips",
+      "koreanName": "톱니날 촉",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 9,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459502",
+        "koreanUrl": "https://ko.wowhead.com/spell=459502"
+      }
+    },
+    "459506": {
+      "id": 459506,
+      "englishName": "Kindling Flare",
+      "koreanName": "발화의 섬광",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 8,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459506",
+        "koreanUrl": "https://ko.wowhead.com/spell=459506"
+      }
+    },
+    "459507": {
+      "id": 459507,
+      "englishName": "Territorial Instincts",
+      "koreanName": "영역 본능",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459507",
+        "koreanUrl": "https://ko.wowhead.com/spell=459507"
+      }
+    },
+    "459517": {
+      "id": 459517,
+      "englishName": "Emergency Salve",
+      "koreanName": "비상 연고",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 10,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459517",
+        "koreanUrl": "https://ko.wowhead.com/spell=459517"
+      }
+    },
+    "459527": {
+      "id": 459527,
+      "englishName": "Unnatural Causes",
+      "koreanName": "비정상적인 원인",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 10,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459527",
+        "koreanUrl": "https://ko.wowhead.com/spell=459527"
+      }
+    },
+    "459533": {
+      "id": 459533,
+      "englishName": "Scrappy",
+      "koreanName": "고철이",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459533",
+        "koreanUrl": "https://ko.wowhead.com/spell=459533"
+      }
+    },
+    "459534": {
+      "id": 459534,
+      "englishName": "Trigger Finger",
+      "koreanName": "사격 애호가",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459534",
+        "koreanUrl": "https://ko.wowhead.com/spell=459534"
+      }
+    },
+    "459542": {
+      "id": 459542,
+      "englishName": "Specialized Arsenal",
+      "koreanName": "특제 무기고",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459542",
+        "koreanUrl": "https://ko.wowhead.com/spell=459542"
+      }
+    },
+    "459546": {
+      "id": 459546,
+      "englishName": "No Hard Feelings",
+      "koreanName": "악감정은 없다",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459546",
+        "koreanUrl": "https://ko.wowhead.com/spell=459546"
+      }
+    },
+    "459550": {
+      "id": 459550,
+      "englishName": "Go for the Throat",
+      "koreanName": "숨통 노리기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459550",
+        "koreanUrl": "https://ko.wowhead.com/spell=459550"
+      }
+    },
+    "459552": {
+      "id": 459552,
+      "englishName": "Laceration",
+      "koreanName": "열상",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459552",
+        "koreanUrl": "https://ko.wowhead.com/spell=459552"
+      }
+    },
+    "459693": {
+      "id": 459693,
+      "englishName": "Thundering Hooves",
+      "koreanName": "우레의 발굽",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 8,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459693",
+        "koreanUrl": "https://ko.wowhead.com/spell=459693"
+      }
+    },
+    "459730": {
+      "id": 459730,
+      "englishName": "Huntmaster's Call",
+      "koreanName": "사냥지배자의 부름",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 9,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=459730",
+        "koreanUrl": "https://ko.wowhead.com/spell=459730"
+      }
+    },
+    "462036": {
+      "id": 462036,
+      "englishName": "Blackrock Munitions",
+      "koreanName": "검은바위 탄약",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "class",
+      "position": {
+        "row": 7,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=462036",
+        "koreanUrl": "https://ko.wowhead.com/spell=462036"
+      }
+    },
+    "468701": {
+      "id": 468701,
+      "englishName": "Serpentine Rhythm",
+      "koreanName": "뱀의 박자",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 8,
+        "col": 1
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=468701",
+        "koreanUrl": "https://ko.wowhead.com/spell=468701"
+      }
+    },
+    "469880": {
+      "id": 469880,
+      "englishName": "Barbed Scales",
+      "koreanName": "날카로운 비늘",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=469880",
+        "koreanUrl": "https://ko.wowhead.com/spell=469880"
+      }
+    },
+    "1217524": {
+      "id": 1217524,
+      "englishName": "Dire Cleave",
+      "koreanName": "광포한 회전베기",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=1217524",
+        "koreanUrl": "https://ko.wowhead.com/spell=1217524"
+      }
+    },
+    "1217535": {
+      "id": 1217535,
+      "englishName": "Poisoned Barbs",
+      "koreanName": "독가시",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 7,
+        "col": 2
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=1217535",
+        "koreanUrl": "https://ko.wowhead.com/spell=1217535"
+      }
+    },
+    "1232739": {
+      "id": 1232739,
+      "englishName": "Wildspeaker",
+      "koreanName": "자연의 교감자",
+      "icon": "inv_misc_questionmark",
+      "description": {
+        "english": "",
+        "korean": ""
+      },
+      "tree": "spec",
+      "position": {
+        "row": 10,
+        "col": 3
+      },
+      "wowheadData": {
+        "englishUrl": "https://www.wowhead.com/spell=1232739",
+        "koreanUrl": "https://ko.wowhead.com/spell=1232739"
+      }
+    }
+  },
+  "stats": {
+    "class": 43,
+    "spec": 38,
+    "hero": 9,
+    "total": 90
+  }
+}

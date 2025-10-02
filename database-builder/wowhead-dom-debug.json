@@ -1,0 +1,1998 @@
+{
+  "possibleSelectors": [
+    {
+      "selector": "[data-cell]",
+      "count": 264,
+      "sample": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"5\" data-cell=\"4\" data-talent-type=\"2\" data-tooltip-mode=\"icon\" data-no-touch-lightbox=\"true\" href=\"https://www.wowhead.com/spell=27"
+    },
+    {
+      "selector": "a[href*=\"/spell=\"]",
+      "count": 197,
+      "sample": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"5\" data-cell=\"4\" data-talent-type=\"2\" data-tooltip-mode=\"icon\" data-no-touch-lightbox=\"true\" href=\"https://www.wowhead.com/spell=27"
+    },
+    {
+      "selector": "[class*=\"talent\"]",
+      "count": 1547,
+      "sample": "<div class=\"dragonflight-talent-page-header\">\n            <div><h1 id=\"dragonflight-talent-page-heading\" style=\"margin: 0\" class=\"heading-size-1\">Beast Mastery Hunter The War Within Talent Calculator<"
+    }
+  ],
+  "talentNodes": [
+    {
+      "index": 0,
+      "spellId": "270581",
+      "href": "https://www.wowhead.com/spell=270581/natural-mending",
+      "text": "Natural Mending",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"5\" data-cell=\"4\" data-talent-ty",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 1,
+      "spellId": "109215",
+      "href": "https://www.wowhead.com/spell=109215/posthaste",
+      "text": "Posthaste",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"9\" data-cell=\"8\" data-talent-ty",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 2,
+      "spellId": "53351",
+      "href": "https://www.wowhead.com/spell=53351/kill-shot",
+      "text": "Kill Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"13\" data-cell=\"12\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 3,
+      "spellId": "385539",
+      "href": "https://www.wowhead.com/spell=385539/rejuvenating-wind",
+      "text": "Rejuvenating Wind",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"2\" data-column=\"5\" data-cell=\"21\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 4,
+      "spellId": "384799",
+      "href": "https://www.wowhead.com/spell=384799/hunters-avoidance",
+      "text": "Hunter's Avoidance",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"2\" data-column=\"9\" data-cell=\"25\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 5,
+      "spellId": "343248",
+      "href": "https://www.wowhead.com/spell=343248/deathblow?spellModifier=137015",
+      "text": "Deathblow",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"2\" data-column=\"13\" data-cell=\"29\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 6,
+      "spellId": "343242",
+      "href": "https://www.wowhead.com/spell=343242/wilderness-medicine",
+      "text": "Wilderness Medicine",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"3\" data-cell=\"36\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 7,
+      "spellId": "187698",
+      "href": "https://www.wowhead.com/spell=187698/tar-trap",
+      "text": "Tar Trap",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"7\" data-cell=\"40\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 8,
+      "spellId": "19801",
+      "href": "https://www.wowhead.com/spell=19801/tranquilizing-shot",
+      "text": "Tranquilizing Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"11\" data-cell=\"44\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 9,
+      "spellId": "5116",
+      "href": "https://www.wowhead.com/spell=5116/concussive-shot",
+      "text": "Concussive Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"15\" data-cell=\"48\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 10,
+      "spellId": "264735",
+      "href": "https://www.wowhead.com/spell=264735/survival-of-the-fittest",
+      "text": "Survival of the Fittest",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"5\" data-cell=\"55\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 11,
+      "spellId": "393344",
+      "href": "https://www.wowhead.com/spell=393344/entrapment",
+      "text": "Entrapment",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"7\" data-cell=\"57\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 12,
+      "spellId": "147362",
+      "href": "https://www.wowhead.com/spell=147362/counter-shot",
+      "text": "Counter Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"9\" data-cell=\"59\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 13,
+      "spellId": "34477",
+      "href": "https://www.wowhead.com/spell=34477/misdirection",
+      "text": "Misdirection",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"13\" data-cell=\"63\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 14,
+      "spellId": "459455",
+      "href": "https://www.wowhead.com/spell=459455/scouts-instincts",
+      "text": "Scout's Instincts",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"3\" data-cell=\"70\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 15,
+      "spellId": "459450",
+      "href": "https://www.wowhead.com/spell=459450/padded-armor",
+      "text": "Padded Armor",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"5\" data-cell=\"72\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 16,
+      "spellId": "388039",
+      "href": "https://www.wowhead.com/spell=388039/lone-survivor?spellModifier=137015",
+      "text": "Lone Survivor",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"7\" data-cell=\"74\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 17,
+      "spellId": "459542",
+      "href": "https://www.wowhead.com/spell=459542/specialized-arsenal?spellModifier=137015",
+      "text": "Specialized Arsenal",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"9\" data-cell=\"76\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 18,
+      "spellId": "343244",
+      "href": "https://www.wowhead.com/spell=343244/disruptive-rounds?spellModifier=137015",
+      "text": "Disruptive Rounds",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"11\" data-cell=\"78\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 19,
+      "spellId": "459546",
+      "href": "https://www.wowhead.com/spell=459546/no-hard-feelings",
+      "text": "No Hard Feelings",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"13\" data-cell=\"80\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 20,
+      "spellId": "1513",
+      "href": "https://www.wowhead.com/spell=1513/scare-beast",
+      "text": "Scare Beast",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"15\" data-cell=\"82\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 21,
+      "spellId": "19577",
+      "href": "https://www.wowhead.com/spell=19577/intimidation",
+      "text": "Intimidation",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"5\" data-cell=\"89\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 22,
+      "spellId": "109248",
+      "href": "https://www.wowhead.com/spell=109248/binding-shot",
+      "text": "Binding Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"13\" data-cell=\"97\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 23,
+      "spellId": "459507",
+      "href": "https://www.wowhead.com/spell=459507/territorial-instincts",
+      "text": "Territorial Instincts",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"5\" data-cell=\"106\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 24,
+      "spellId": "459534",
+      "href": "https://www.wowhead.com/spell=459534/trigger-finger?def=131286&rank=1",
+      "text": "Trigger Finger",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"7\" data-cell=\"108\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 25,
+      "spellId": "462036",
+      "href": "https://www.wowhead.com/spell=462036/blackrock-munitions",
+      "text": "Blackrock Munitions",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"9\" data-cell=\"110\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 26,
+      "spellId": "378004",
+      "href": "https://www.wowhead.com/spell=378004/keen-eyesight?def=131299&rank=1",
+      "text": "Keen Eyesight",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"11\" data-cell=\"112\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 27,
+      "spellId": "459460",
+      "href": "https://www.wowhead.com/spell=459460/tar-coated-bindings",
+      "text": "Tar-Coated Bindings",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"13\" data-cell=\"114\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 28,
+      "spellId": "459533",
+      "href": "https://www.wowhead.com/spell=459533/scrappy?spellModifier=137015",
+      "text": "Scrappy",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"15\" data-cell=\"116\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 29,
+      "spellId": "378771",
+      "href": "https://www.wowhead.com/spell=378771/quick-load",
+      "text": "Quick Load",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"3\" data-cell=\"121\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 30,
+      "spellId": "378002",
+      "href": "https://www.wowhead.com/spell=378002/pathfinding",
+      "text": "Pathfinding",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"5\" data-cell=\"123\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 31,
+      "spellId": "321468",
+      "href": "https://www.wowhead.com/spell=321468/binding-shackles",
+      "text": "Binding Shackles",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"9\" data-cell=\"127\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 32,
+      "spellId": "199483",
+      "href": "https://www.wowhead.com/spell=199483/camouflage",
+      "text": "Camouflage",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"13\" data-cell=\"131\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 33,
+      "spellId": "459506",
+      "href": "https://www.wowhead.com/spell=459506/kindling-flare",
+      "text": "Kindling Flare",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"15\" data-cell=\"133\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 34,
+      "spellId": "199921",
+      "href": "https://www.wowhead.com/spell=199921/trailblazer",
+      "text": "Trailblazer",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"3\" data-cell=\"138\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 35,
+      "spellId": "53480",
+      "href": "https://www.wowhead.com/spell=53480/roar-of-sacrifice?spellModifier=137015",
+      "text": "Roar of Sacrifice",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"5\" data-cell=\"140\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 36,
+      "spellId": "459502",
+      "href": "https://www.wowhead.com/spell=459502/serrated-tips",
+      "text": "Serrated Tips",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"7\" data-cell=\"142\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 37,
+      "spellId": "459488",
+      "href": "https://www.wowhead.com/spell=459488/moment-of-opportunity",
+      "text": "Moment of Opportunity",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"9\" data-cell=\"144\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 38,
+      "spellId": "266921",
+      "href": "https://www.wowhead.com/spell=266921/born-to-be-wild?spellModifier=137015",
+      "text": "Born To Be Wild",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"11\" data-cell=\"146\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 39,
+      "spellId": "459466",
+      "href": "https://www.wowhead.com/spell=459466/ghillie-suit",
+      "text": "Ghillie Suit",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"13\" data-cell=\"148\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 40,
+      "spellId": "343247",
+      "href": "https://www.wowhead.com/spell=343247/improved-traps",
+      "text": "Improved Traps",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"15\" data-cell=\"150\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 41,
+      "spellId": "459517",
+      "href": "https://www.wowhead.com/spell=459517/emergency-salve",
+      "text": "Emergency Salve",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"10\" data-column=\"5\" data-cell=\"157\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 42,
+      "spellId": "459527",
+      "href": "https://www.wowhead.com/spell=459527/unnatural-causes",
+      "text": "Unnatural Causes",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"10\" data-column=\"13\" data-cell=\"165\" data-talen",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 43,
+      "spellId": "34026",
+      "href": "https://www.wowhead.com/spell=34026/kill-command",
+      "text": "Kill Command",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"1\" data-column=\"9\" data-cell=\"8\" data-talent-ty",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 44,
+      "spellId": "193455",
+      "href": "https://www.wowhead.com/spell=193455/cobra-shot",
+      "text": "Cobra Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"2\" data-column=\"7\" data-cell=\"23\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 45,
+      "spellId": "217200",
+      "href": "https://www.wowhead.com/spell=217200/barbed-shot",
+      "text": "Barbed Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"2\" data-column=\"11\" data-cell=\"27\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 46,
+      "spellId": "321014",
+      "href": "https://www.wowhead.com/spell=321014/pack-tactics",
+      "text": "Pack Tactics",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"5\" data-cell=\"38\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 47,
+      "spellId": "191384",
+      "href": "https://www.wowhead.com/spell=191384/aspect-of-the-beast",
+      "text": "Aspect of the Beast",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"7\" data-cell=\"40\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 48,
+      "spellId": "393933",
+      "href": "https://www.wowhead.com/spell=393933/war-orders",
+      "text": "War Orders",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"11\" data-cell=\"44\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 49,
+      "spellId": "257944",
+      "href": "https://www.wowhead.com/spell=257944/thrill-of-the-hunt",
+      "text": "Thrill of the Hunt",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"3\" data-column=\"13\" data-cell=\"46\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 50,
+      "spellId": "459550",
+      "href": "https://www.wowhead.com/spell=459550/go-for-the-throat",
+      "text": "Go for the Throat",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"5\" data-cell=\"55\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 51,
+      "spellId": "2643",
+      "href": "https://www.wowhead.com/spell=2643/multi-shot",
+      "text": "Multi-Shot",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"9\" data-cell=\"59\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 52,
+      "spellId": "459552",
+      "href": "https://www.wowhead.com/spell=459552/laceration",
+      "text": "Laceration",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"4\" data-column=\"13\" data-cell=\"63\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 53,
+      "spellId": "269737",
+      "href": "https://www.wowhead.com/spell=269737/alpha-predator",
+      "text": "Alpha Predator",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"7\" data-cell=\"74\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 54,
+      "spellId": "115939",
+      "href": "https://www.wowhead.com/spell=115939/beast-cleave",
+      "text": "Beast Cleave",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"9\" data-cell=\"76\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 55,
+      "spellId": "378209",
+      "href": "https://www.wowhead.com/spell=378209/training-expert",
+      "text": "Training Expert",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"11\" data-cell=\"78\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 56,
+      "spellId": "378210",
+      "href": "https://www.wowhead.com/spell=378210/hunters-prey",
+      "text": "Hunter's Prey",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"5\" data-column=\"15\" data-cell=\"82\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 57,
+      "spellId": "199530",
+      "href": "https://www.wowhead.com/spell=199530/stomp",
+      "text": "Stomp",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"5\" data-cell=\"89\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 58,
+      "spellId": "424558",
+      "href": "https://www.wowhead.com/spell=424558/master-handler",
+      "text": "Master Handler",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"7\" data-cell=\"91\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 59,
+      "spellId": "378207",
+      "href": "https://www.wowhead.com/spell=378207/kill-cleave",
+      "text": "Kill Cleave",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"9\" data-cell=\"93\" data-talent-t",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 60,
+      "spellId": "185789",
+      "href": "https://www.wowhead.com/spell=185789/wild-call",
+      "text": "Wild Call",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"11\" data-cell=\"95\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 61,
+      "spellId": "120679",
+      "href": "https://www.wowhead.com/spell=120679/dire-beast",
+      "text": "Dire Beast",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"6\" data-column=\"13\" data-cell=\"97\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 62,
+      "spellId": "424557",
+      "href": "https://www.wowhead.com/spell=424557/savagery",
+      "text": "Savagery",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"3\" data-cell=\"104\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 63,
+      "spellId": "321530",
+      "href": "https://www.wowhead.com/spell=321530/bloodshed",
+      "text": "Bloodshed",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"5\" data-cell=\"106\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 64,
+      "spellId": "469880",
+      "href": "https://www.wowhead.com/spell=469880/barbed-scales",
+      "text": "Barbed Scales",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"7\" data-cell=\"108\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 65,
+      "spellId": "19574",
+      "href": "https://www.wowhead.com/spell=19574/bestial-wrath",
+      "text": "Bestial Wrath",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"9\" data-cell=\"110\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 66,
+      "spellId": "1217535",
+      "href": "https://www.wowhead.com/spell=1217535/poisoned-barbs",
+      "text": "Poisoned Barbs",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"11\" data-cell=\"112\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 67,
+      "spellId": "378743",
+      "href": "https://www.wowhead.com/spell=378743/dire-command",
+      "text": "Dire Command",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"13\" data-cell=\"114\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 68,
+      "spellId": "1217524",
+      "href": "https://www.wowhead.com/spell=1217524/dire-cleave",
+      "text": "Dire Cleave",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"7\" data-column=\"15\" data-cell=\"116\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 69,
+      "spellId": "273887",
+      "href": "https://www.wowhead.com/spell=273887/killer-instinct?def=131252&rank=1",
+      "text": "Killer Instinct",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"5\" data-cell=\"123\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 70,
+      "spellId": "468701",
+      "href": "https://www.wowhead.com/spell=468701/serpentine-rhythm",
+      "text": "Serpentine Rhythm",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"7\" data-cell=\"125\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 71,
+      "spellId": "231548",
+      "href": "https://www.wowhead.com/spell=231548/barbed-wrath",
+      "text": "Barbed Wrath",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"9\" data-cell=\"127\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 72,
+      "spellId": "459693",
+      "href": "https://www.wowhead.com/spell=459693/thundering-hooves",
+      "text": "Thundering Hooves",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"11\" data-cell=\"129\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 73,
+      "spellId": "385810",
+      "href": "https://www.wowhead.com/spell=385810/dire-frenzy?def=131256&rank=1",
+      "text": "Dire Frenzy",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"8\" data-column=\"13\" data-cell=\"131\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 74,
+      "spellId": "359844",
+      "href": "https://www.wowhead.com/spell=359844/call-of-the-wild",
+      "text": "Call of the Wild",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"5\" data-cell=\"140\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 75,
+      "spellId": "199532",
+      "href": "https://www.wowhead.com/spell=199532/killer-cobra",
+      "text": "Killer Cobra",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"7\" data-cell=\"142\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 76,
+      "spellId": "193532",
+      "href": "https://www.wowhead.com/spell=193532/scent-of-blood?def=131230&rank=1",
+      "text": "Scent of Blood",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"9\" data-cell=\"144\" data-talent-",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 77,
+      "spellId": "386870",
+      "href": "https://www.wowhead.com/spell=386870/brutal-companion",
+      "text": "Brutal Companion",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"11\" data-cell=\"146\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 78,
+      "spellId": "459730",
+      "href": "https://www.wowhead.com/spell=459730/huntmasters-call",
+      "text": "Huntmaster's Call",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"9\" data-column=\"13\" data-cell=\"148\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 79,
+      "spellId": "392053",
+      "href": "https://www.wowhead.com/spell=392053/piercing-fangs",
+      "text": "Piercing Fangs",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"10\" data-column=\"9\" data-cell=\"161\" data-talent",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 80,
+      "spellId": "1232739",
+      "href": "https://www.wowhead.com/spell=1232739/wildspeaker",
+      "text": "Wildspeaker",
+      "parentClass": "dragonflight-talent-tree-talent",
+      "parentHTML": "<a class=\"dragonflight-talent-tree-talent\" data-row=\"10\" data-column=\"13\" data-cell=\"165\" data-talen",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 81,
+      "spellId": "137015",
+      "href": "https://www.wowhead.com/spell=137015/beast-mastery-hunter",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 82,
+      "spellId": "137015",
+      "href": "https://www.wowhead.com/spell=137015/beast-mastery-hunter",
+      "text": "Beast Mastery Hunter",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 83,
+      "spellId": "462079",
+      "href": "https://www.wowhead.com/spell=462079/beast-mastery-hunter",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 84,
+      "spellId": "462079",
+      "href": "https://www.wowhead.com/spell=462079/beast-mastery-hunter",
+      "text": "Beast Mastery Hunter",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 85,
+      "spellId": "344572",
+      "href": "https://www.wowhead.com/spell=344572/bestial-wrath",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 86,
+      "spellId": "344572",
+      "href": "https://www.wowhead.com/spell=344572/bestial-wrath",
+      "text": "Bestial Wrath",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 87,
+      "spellId": "157443",
+      "href": "https://www.wowhead.com/spell=157443/critical-strikes",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 88,
+      "spellId": "157443",
+      "href": "https://www.wowhead.com/spell=157443/critical-strikes",
+      "text": "Critical Strikes",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 89,
+      "spellId": "212407",
+      "href": "https://www.wowhead.com/spell=212407/glyph-of-arachnophobia",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 90,
+      "spellId": "212407",
+      "href": "https://www.wowhead.com/spell=212407/glyph-of-arachnophobia",
+      "text": "Glyph of Arachnophobia",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 91,
+      "spellId": "440261",
+      "href": "https://www.wowhead.com/spell=440261/glyph-of-death-chakram",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 92,
+      "spellId": "440261",
+      "href": "https://www.wowhead.com/spell=440261/glyph-of-death-chakram",
+      "text": "Glyph of Death Chakram",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 93,
+      "spellId": "304039",
+      "href": "https://www.wowhead.com/spell=304039/glyph-of-dire-bees",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 94,
+      "spellId": "304039",
+      "href": "https://www.wowhead.com/spell=304039/glyph-of-dire-bees",
+      "text": "Glyph of Dire Bees",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 95,
+      "spellId": "57870",
+      "href": "https://www.wowhead.com/spell=57870/glyph-of-lesser-proportion",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 96,
+      "spellId": "57870",
+      "href": "https://www.wowhead.com/spell=57870/glyph-of-lesser-proportion",
+      "text": "Glyph of Lesser Proportion",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 97,
+      "spellId": "212410",
+      "href": "https://www.wowhead.com/spell=212410/glyph-of-nesingwarys-nemeses",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 98,
+      "spellId": "212410",
+      "href": "https://www.wowhead.com/spell=212410/glyph-of-nesingwarys-nemeses",
+      "text": "Glyph of Nesingwary's Nemeses",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 99,
+      "spellId": "212462",
+      "href": "https://www.wowhead.com/spell=212462/glyph-of-stellar-flare",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 100,
+      "spellId": "212462",
+      "href": "https://www.wowhead.com/spell=212462/glyph-of-stellar-flare",
+      "text": "Glyph of Stellar Flare",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 101,
+      "spellId": "219183",
+      "href": "https://www.wowhead.com/spell=219183/glyph-of-the-dire-stable",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 102,
+      "spellId": "219183",
+      "href": "https://www.wowhead.com/spell=219183/glyph-of-the-dire-stable",
+      "text": "Glyph of the Dire Stable",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 103,
+      "spellId": "212451",
+      "href": "https://www.wowhead.com/spell=212451/glyph-of-the-goblin-anti-grav-flare",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 104,
+      "spellId": "212451",
+      "href": "https://www.wowhead.com/spell=212451/glyph-of-the-goblin-anti-grav-flare",
+      "text": "Glyph of the Goblin Anti-Grav Flare",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 105,
+      "spellId": "212358",
+      "href": "https://www.wowhead.com/spell=212358/glyph-of-the-headhunter",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 106,
+      "spellId": "212358",
+      "href": "https://www.wowhead.com/spell=212358/glyph-of-the-headhunter",
+      "text": "Glyph of the Headhunter",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 107,
+      "spellId": "212354",
+      "href": "https://www.wowhead.com/spell=212354/glyph-of-the-hook",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 108,
+      "spellId": "212354",
+      "href": "https://www.wowhead.com/spell=212354/glyph-of-the-hook",
+      "text": "Glyph of the Hook",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 109,
+      "spellId": "1234337",
+      "href": "https://www.wowhead.com/spell=1234337/glyph-of-the-strix",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 110,
+      "spellId": "1234337",
+      "href": "https://www.wowhead.com/spell=1234337/glyph-of-the-strix",
+      "text": "Glyph of the Strix",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 111,
+      "spellId": "212339",
+      "href": "https://www.wowhead.com/spell=212339/glyph-of-the-trident",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 112,
+      "spellId": "212339",
+      "href": "https://www.wowhead.com/spell=212339/glyph-of-the-trident",
+      "text": "Glyph of the Trident",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 113,
+      "spellId": "462080",
+      "href": "https://www.wowhead.com/spell=462080/hunter",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 114,
+      "spellId": "462080",
+      "href": "https://www.wowhead.com/spell=462080/hunter",
+      "text": "Hunter",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 115,
+      "spellId": "137014",
+      "href": "https://www.wowhead.com/spell=137014/hunter",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 116,
+      "spellId": "137014",
+      "href": "https://www.wowhead.com/spell=137014/hunter",
+      "text": "Hunter",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 117,
+      "spellId": "76657",
+      "href": "https://www.wowhead.com/spell=76657/mastery-master-of-beasts",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 118,
+      "spellId": "76657",
+      "href": "https://www.wowhead.com/spell=76657/mastery-master-of-beasts",
+      "text": "Mastery: Master of Beasts",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 119,
+      "spellId": "1229376",
+      "href": "https://www.wowhead.com/spell=1229376/single-button-assistant",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 120,
+      "spellId": "1229376",
+      "href": "https://www.wowhead.com/spell=1229376/single-button-assistant",
+      "text": "Single-Button Assistant",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 121,
+      "spellId": "56641",
+      "href": "https://www.wowhead.com/spell=56641/steady-shot",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 122,
+      "spellId": "56641",
+      "href": "https://www.wowhead.com/spell=56641/steady-shot",
+      "text": "Steady Shot",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 123,
+      "spellId": "162487",
+      "href": "https://www.wowhead.com/spell=162487/steel-trap",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 124,
+      "spellId": "162487",
+      "href": "https://www.wowhead.com/spell=162487/steel-trap",
+      "text": "Steel Trap",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 125,
+      "spellId": "185358",
+      "href": "https://www.wowhead.com/spell=185358/arcane-shot",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 126,
+      "spellId": "185358",
+      "href": "https://www.wowhead.com/spell=185358/arcane-shot",
+      "text": "Arcane Shot",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 127,
+      "spellId": "195645",
+      "href": "https://www.wowhead.com/spell=195645/wing-clip",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 128,
+      "spellId": "195645",
+      "href": "https://www.wowhead.com/spell=195645/wing-clip",
+      "text": "Wing Clip",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 129,
+      "spellId": "781",
+      "href": "https://www.wowhead.com/spell=781/disengage",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 130,
+      "spellId": "781",
+      "href": "https://www.wowhead.com/spell=781/disengage",
+      "text": "Disengage",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 131,
+      "spellId": "186257",
+      "href": "https://www.wowhead.com/spell=186257/aspect-of-the-cheetah",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 132,
+      "spellId": "186257",
+      "href": "https://www.wowhead.com/spell=186257/aspect-of-the-cheetah",
+      "text": "Aspect of the Cheetah",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 133,
+      "spellId": "1462",
+      "href": "https://www.wowhead.com/spell=1462/beast-lore",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 134,
+      "spellId": "1462",
+      "href": "https://www.wowhead.com/spell=1462/beast-lore",
+      "text": "Beast Lore",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 135,
+      "spellId": "883",
+      "href": "https://www.wowhead.com/spell=883/call-pet-1",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 136,
+      "spellId": "883",
+      "href": "https://www.wowhead.com/spell=883/call-pet-1",
+      "text": "Call Pet 1",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 137,
+      "spellId": "2641",
+      "href": "https://www.wowhead.com/spell=2641/dismiss-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 138,
+      "spellId": "2641",
+      "href": "https://www.wowhead.com/spell=2641/dismiss-pet",
+      "text": "Dismiss Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 139,
+      "spellId": "6991",
+      "href": "https://www.wowhead.com/spell=6991/feed-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 140,
+      "spellId": "6991",
+      "href": "https://www.wowhead.com/spell=6991/feed-pet",
+      "text": "Feed Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 141,
+      "spellId": "136",
+      "href": "https://www.wowhead.com/spell=136/mend-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 142,
+      "spellId": "136",
+      "href": "https://www.wowhead.com/spell=136/mend-pet",
+      "text": "Mend Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 143,
+      "spellId": "982",
+      "href": "https://www.wowhead.com/spell=982/revive-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 144,
+      "spellId": "982",
+      "href": "https://www.wowhead.com/spell=982/revive-pet",
+      "text": "Revive Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 145,
+      "spellId": "1515",
+      "href": "https://www.wowhead.com/spell=1515/tame-beast",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 146,
+      "spellId": "1515",
+      "href": "https://www.wowhead.com/spell=1515/tame-beast",
+      "text": "Tame Beast",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 147,
+      "spellId": "5384",
+      "href": "https://www.wowhead.com/spell=5384/feign-death",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 148,
+      "spellId": "5384",
+      "href": "https://www.wowhead.com/spell=5384/feign-death",
+      "text": "Feign Death",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 149,
+      "spellId": "210000",
+      "href": "https://www.wowhead.com/spell=210000/wake-up",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 150,
+      "spellId": "210000",
+      "href": "https://www.wowhead.com/spell=210000/wake-up",
+      "text": "Wake Up",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 151,
+      "spellId": "257284",
+      "href": "https://www.wowhead.com/spell=257284/hunters-mark",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 152,
+      "spellId": "257284",
+      "href": "https://www.wowhead.com/spell=257284/hunters-mark",
+      "text": "Hunter's Mark",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 153,
+      "spellId": "186265",
+      "href": "https://www.wowhead.com/spell=186265/aspect-of-the-turtle",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 154,
+      "spellId": "186265",
+      "href": "https://www.wowhead.com/spell=186265/aspect-of-the-turtle",
+      "text": "Aspect of the Turtle",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 155,
+      "spellId": "109304",
+      "href": "https://www.wowhead.com/spell=109304/exhilaration",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 156,
+      "spellId": "109304",
+      "href": "https://www.wowhead.com/spell=109304/exhilaration",
+      "text": "Exhilaration",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 157,
+      "spellId": "61648",
+      "href": "https://www.wowhead.com/spell=61648/aspect-of-the-chameleon",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 158,
+      "spellId": "61648",
+      "href": "https://www.wowhead.com/spell=61648/aspect-of-the-chameleon",
+      "text": "Aspect of the Chameleon",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 159,
+      "spellId": "83242",
+      "href": "https://www.wowhead.com/spell=83242/call-pet-2",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 160,
+      "spellId": "83242",
+      "href": "https://www.wowhead.com/spell=83242/call-pet-2",
+      "text": "Call Pet 2",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 161,
+      "spellId": "93321",
+      "href": "https://www.wowhead.com/spell=93321/control-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 162,
+      "spellId": "93321",
+      "href": "https://www.wowhead.com/spell=93321/control-pet",
+      "text": "Control Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 163,
+      "spellId": "53270",
+      "href": "https://www.wowhead.com/spell=53270/exotic-beasts",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 164,
+      "spellId": "53270",
+      "href": "https://www.wowhead.com/spell=53270/exotic-beasts",
+      "text": "Exotic Beasts",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 165,
+      "spellId": "125050",
+      "href": "https://www.wowhead.com/spell=125050/fetch",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 166,
+      "spellId": "125050",
+      "href": "https://www.wowhead.com/spell=125050/fetch",
+      "text": "Fetch",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 167,
+      "spellId": "127933",
+      "href": "https://www.wowhead.com/spell=127933/fireworks",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 168,
+      "spellId": "127933",
+      "href": "https://www.wowhead.com/spell=127933/fireworks",
+      "text": "Fireworks",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 169,
+      "spellId": "187650",
+      "href": "https://www.wowhead.com/spell=187650/freezing-trap",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 170,
+      "spellId": "187650",
+      "href": "https://www.wowhead.com/spell=187650/freezing-trap",
+      "text": "Freezing Trap",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 171,
+      "spellId": "209997",
+      "href": "https://www.wowhead.com/spell=209997/play-dead",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 172,
+      "spellId": "209997",
+      "href": "https://www.wowhead.com/spell=209997/play-dead",
+      "text": "Play Dead",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 173,
+      "spellId": "259398",
+      "href": "https://www.wowhead.com/spell=259398/chakrams",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 174,
+      "spellId": "259398",
+      "href": "https://www.wowhead.com/spell=259398/chakrams",
+      "text": "Chakrams",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 175,
+      "spellId": "83243",
+      "href": "https://www.wowhead.com/spell=83243/call-pet-3",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 176,
+      "spellId": "83243",
+      "href": "https://www.wowhead.com/spell=83243/call-pet-3",
+      "text": "Call Pet 3",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 177,
+      "spellId": "1543",
+      "href": "https://www.wowhead.com/spell=1543/flare",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 178,
+      "spellId": "1543",
+      "href": "https://www.wowhead.com/spell=1543/flare",
+      "text": "Flare",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 179,
+      "spellId": "272651",
+      "href": "https://www.wowhead.com/spell=272651/command-pet",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 180,
+      "spellId": "272651",
+      "href": "https://www.wowhead.com/spell=272651/command-pet",
+      "text": "Command Pet",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 181,
+      "spellId": "321297",
+      "href": "https://www.wowhead.com/spell=321297/eyes-of-the-beast",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 182,
+      "spellId": "321297",
+      "href": "https://www.wowhead.com/spell=321297/eyes-of-the-beast",
+      "text": "Eyes of the Beast",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 183,
+      "spellId": "83244",
+      "href": "https://www.wowhead.com/spell=83244/call-pet-4",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 184,
+      "spellId": "83244",
+      "href": "https://www.wowhead.com/spell=83244/call-pet-4",
+      "text": "Call Pet 4",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 185,
+      "spellId": "343241",
+      "href": "https://www.wowhead.com/spell=343241/aspect-of-the-cheetah",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 186,
+      "spellId": "343241",
+      "href": "https://www.wowhead.com/spell=343241/aspect-of-the-cheetah",
+      "text": "Aspect of the Cheetah",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 187,
+      "spellId": "83245",
+      "href": "https://www.wowhead.com/spell=83245/call-pet-5",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 188,
+      "spellId": "83245",
+      "href": "https://www.wowhead.com/spell=83245/call-pet-5",
+      "text": "Call Pet 5",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 189,
+      "spellId": "325028",
+      "href": "https://www.wowhead.com/spell=325028/death-chakram",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 190,
+      "spellId": "325028",
+      "href": "https://www.wowhead.com/spell=325028/death-chakram",
+      "text": "Death Chakram",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 191,
+      "spellId": "325037",
+      "href": "https://www.wowhead.com/spell=325037/death-chakram",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 192,
+      "spellId": "325037",
+      "href": "https://www.wowhead.com/spell=325037/death-chakram",
+      "text": "Death Chakram",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 193,
+      "spellId": "355589",
+      "href": "https://www.wowhead.com/spell=355589/wailing-arrow",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 194,
+      "spellId": "355589",
+      "href": "https://www.wowhead.com/spell=355589/wailing-arrow",
+      "text": "Wailing Arrow",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 195,
+      "spellId": "355596",
+      "href": "https://www.wowhead.com/spell=355596/wailing-arrow",
+      "text": "",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-icon",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-icon\"><span class=\"iconmedium\" data-env=\"liv",
+      "hasImage": false,
+      "imageUrl": ""
+    },
+    {
+      "index": 196,
+      "spellId": "355596",
+      "href": "https://www.wowhead.com/spell=355596/wailing-arrow",
+      "text": "Wailing Arrow",
+      "parentClass": "dragonflight-talent-abilities-list-table-row-name",
+      "parentHTML": "<td class=\"dragonflight-talent-abilities-list-table-row-name\"><a href=\"https://www.wowhead.com/spell",
+      "hasImage": false,
+      "imageUrl": ""
+    }
+  ],
+  "debugInfo": {
+    "[class*=\"tree\"]": {
+      "count": 1215,
+      "html": "<div class=\"data-trees\"><a data-current=\"true\" data-tree=\"live\" data-prevent-select-start=\"true\"><img alt=\"Retail\">Retail</a><a data-current=\"false\" data-tree=\"classic\" href=\"https://www.wowhead.com/classic/talent-calc/hunter/beast-mastery\"><img alt=\"Classic\">Classic</a><a data-current=\"false\" data-"
+    },
+    "dataAttributeElements": 0
+  }
+}

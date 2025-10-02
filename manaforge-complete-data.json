@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "zone": "Manaforge Omega",
+    "zoneId": 44,
+    "patch": "11.2",
+    "fetchedAt": "2025-09-18T13:33:46.496Z",
+    "bosses": [
+      {
+        "id": 3131,
+        "name": "Plexus Sentinel"
+      },
+      {
+        "id": 3132,
+        "name": "Loomithar"
+      },
+      {
+        "id": 3133,
+        "name": "Keeper Artificer Xy'mox"
+      },
+      {
+        "id": 3134,
+        "name": "Nexus-King Zalazar"
+      },
+      {
+        "id": 3135,
+        "name": "Dimensius, the All-Devouring"
+      }
+    ]
+  },
+  "rankings": {
+    "dps": [],
+    "hps": [],
+    "tanks": [],
+    "overall": []
+  },
+  "summary": {
+    "totalDPSSpecs": 0,
+    "totalHPSSpecs": 0
+  }
+}

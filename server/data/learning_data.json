@@ -1,0 +1,45 @@
+[
+  {
+    "playerName": "Rogerbrown",
+    "guildName": "Method",
+    "percentile": 99,
+    "dps": 855430,
+    "hps": 0,
+    "metricType": "dps",
+    "timestamp": "2025-09-24T05:58:48.078Z",
+    "targetHealthPercent": 50,
+    "playerHealthPercent": 90,
+    "enemyCount": 1,
+    "combatTime": 180,
+    "raidBuffs": true,
+    "bloodlust": true,
+    "resources": {
+      "primary": 80,
+      "secondary": 60
+    },
+    "cooldowns": {
+      "recklessness": 0,
+      "avatar": 1,
+      "bladestorm": 0
+    },
+    "buffs": {
+      "enrage": 1,
+      "recklessness": 0,
+      "whirlwind": 1
+    },
+    "nextSkill": "auto_attack",
+    "dpsEfficiency": 0.99,
+    "majorCooldownsActive": true,
+    "targetDebuffs": 3,
+    "playerBuffCount": 5,
+    "combatPhase": "execute",
+    "bossName": "The Soul Hunters",
+    "reportUrl": "https://www.warcraftlogs.com/reports/manaforge",
+    "date": "2025-09-18T23:12:25.266Z",
+    "fightDuration": "3:30",
+    "totalDamage": 179640300,
+    "topSkills": [],
+    "_id": "1758341627968_mx8sg1fjs",
+    "createdAt": "2025-09-20T04:13:47.968Z"
+  }
+]

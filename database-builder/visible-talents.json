@@ -1,0 +1,2794 @@
+{
+  "classTalents": [
+    {
+      "id": "270581",
+      "name": "Natural Mending",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 173,
+        "absoluteTop": 913,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "109215",
+      "name": "Posthaste",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 303,
+        "absoluteTop": 913,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "53351",
+      "name": "Kill Shot",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 434,
+        "absoluteTop": 913,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "385539",
+      "name": "Rejuvenating Wind",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 173,
+        "absoluteTop": 978,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "384799",
+      "name": "Hunter's Avoidance",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 303,
+        "absoluteTop": 978,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "343248",
+      "name": "Deathblow",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 434,
+        "absoluteTop": 978,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "343242",
+      "name": "Wilderness Medicine",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 108,
+        "absoluteTop": 1043,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "187698",
+      "name": "Tar Trap",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 238,
+        "absoluteTop": 1043,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "19801",
+      "name": "Tranquilizing Shot",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 369,
+        "absoluteTop": 1043,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "5116",
+      "name": "Concussive Shot",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 499,
+        "absoluteTop": 1043,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "264735",
+      "name": "Survival of the Fittest",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 173,
+        "absoluteTop": 1108,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "393344",
+      "name": "Entrapment",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 238,
+        "absoluteTop": 1108,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "147362",
+      "name": "Counter Shot",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 303,
+        "absoluteTop": 1108,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "34477",
+      "name": "Misdirection",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 434,
+        "absoluteTop": 1108,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459455",
+      "name": "Scout's Instincts",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 108,
+        "absoluteTop": 1173,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "459450",
+      "name": "Padded Armor",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 173,
+        "absoluteTop": 1173,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "388039",
+      "name": "Lone Survivor",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 238,
+        "absoluteTop": 1173,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "459542",
+      "name": "Specialized Arsenal",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 303,
+        "absoluteTop": 1173,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "343244",
+      "name": "Disruptive Rounds",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 369,
+        "absoluteTop": 1173,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459546",
+      "name": "No Hard Feelings",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 434,
+        "absoluteTop": 1173,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "1513",
+      "name": "Scare Beast",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 499,
+        "absoluteTop": 1173,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "19577",
+      "name": "Intimidation",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 173,
+        "absoluteTop": 1238,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "109248",
+      "name": "Binding Shot",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 434,
+        "absoluteTop": 1238,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459507",
+      "name": "Territorial Instincts",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 173,
+        "absoluteTop": 1303,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459534",
+      "name": "Trigger Finger",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 238,
+        "absoluteTop": 1303,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "462036",
+      "name": "Blackrock Munitions",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 303,
+        "absoluteTop": 1303,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "378004",
+      "name": "Keen Eyesight",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 369,
+        "absoluteTop": 1303,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459460",
+      "name": "Tar-Coated Bindings",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 434,
+        "absoluteTop": 1303,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459533",
+      "name": "Scrappy",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 499,
+        "absoluteTop": 1303,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "378771",
+      "name": "Quick Load",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 108,
+        "absoluteTop": 1368,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "378002",
+      "name": "Pathfinding",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 173,
+        "absoluteTop": 1368,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "321468",
+      "name": "Binding Shackles",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 303,
+        "absoluteTop": 1368,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "199483",
+      "name": "Camouflage",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 434,
+        "absoluteTop": 1368,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459506",
+      "name": "Kindling Flare",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 499,
+        "absoluteTop": 1368,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "199921",
+      "name": "Trailblazer",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 108,
+        "absoluteTop": 1433,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "53480",
+      "name": "Roar of Sacrifice",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 173,
+        "absoluteTop": 1433,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459502",
+      "name": "Serrated Tips",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 238,
+        "absoluteTop": 1433,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "459488",
+      "name": "Moment of Opportunity",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 303,
+        "absoluteTop": 1433,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "266921",
+      "name": "Born To Be Wild",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 369,
+        "absoluteTop": 1433,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459466",
+      "name": "Ghillie Suit",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 434,
+        "absoluteTop": 1433,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "343247",
+      "name": "Improved Traps",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 499,
+        "absoluteTop": 1433,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "459517",
+      "name": "Emergency Salve",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 173,
+        "absoluteTop": 1498,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459527",
+      "name": "Unnatural Causes",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 434,
+        "absoluteTop": 1498,
+        "absoluteLeft": 434
+      }
+    }
+  ],
+  "specTalents": [
+    {
+      "id": "34026",
+      "name": "Kill Command",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 1222,
+        "absoluteTop": 913,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "193455",
+      "name": "Cobra Shot",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 1157,
+        "absoluteTop": 978,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "217200",
+      "name": "Barbed Shot",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 1287,
+        "absoluteTop": 978,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "321014",
+      "name": "Pack Tactics",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1092,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "191384",
+      "name": "Aspect of the Beast",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1157,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "393933",
+      "name": "War Orders",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1287,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "257944",
+      "name": "Thrill of the Hunt",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1353,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "459550",
+      "name": "Go for the Throat",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1092,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "2643",
+      "name": "Multi-Shot",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1222,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "459552",
+      "name": "Laceration",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1353,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "269737",
+      "name": "Alpha Predator",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1157,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "115939",
+      "name": "Beast Cleave",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1222,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "378209",
+      "name": "Training Expert",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1287,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "378210",
+      "name": "Hunter's Prey",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1418,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1418
+      }
+    },
+    {
+      "id": "199530",
+      "name": "Stomp",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1092,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "424558",
+      "name": "Master Handler",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1157,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "378207",
+      "name": "Kill Cleave",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1222,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "185789",
+      "name": "Wild Call",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1287,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "120679",
+      "name": "Dire Beast",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1353,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "424557",
+      "name": "Savagery",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1027,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1027
+      }
+    },
+    {
+      "id": "321530",
+      "name": "Bloodshed",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1092,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "469880",
+      "name": "Barbed Scales",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1157,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "19574",
+      "name": "Bestial Wrath",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1222,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "1217535",
+      "name": "Poisoned Barbs",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1287,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "378743",
+      "name": "Dire Command",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1353,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "1217524",
+      "name": "Dire Cleave",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1418,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1418
+      }
+    },
+    {
+      "id": "273887",
+      "name": "Killer Instinct",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1092,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "468701",
+      "name": "Serpentine Rhythm",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1157,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "231548",
+      "name": "Barbed Wrath",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1222,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "459693",
+      "name": "Thundering Hooves",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1287,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "385810",
+      "name": "Dire Frenzy",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1353,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "359844",
+      "name": "Call of the Wild",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1092,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "199532",
+      "name": "Killer Cobra",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1157,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "193532",
+      "name": "Scent of Blood",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1222,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "386870",
+      "name": "Brutal Companion",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1287,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "459730",
+      "name": "Huntmaster's Call",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1353,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "392053",
+      "name": "Piercing Fangs",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 1222,
+        "absoluteTop": 1498,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "1232739",
+      "name": "Wildspeaker",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 1353,
+        "absoluteTop": 1498,
+        "absoluteLeft": 1353
+      }
+    }
+  ],
+  "heroTalents": [],
+  "totalCount": 81,
+  "viewport": {
+    "scrollY": 677.5999755859375,
+    "innerHeight": 1080
+  },
+  "debug": [
+    {
+      "id": "270581",
+      "name": "Natural Mending",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 173,
+        "absoluteTop": 913,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "109215",
+      "name": "Posthaste",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 303,
+        "absoluteTop": 913,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "53351",
+      "name": "Kill Shot",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 434,
+        "absoluteTop": 913,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "385539",
+      "name": "Rejuvenating Wind",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 173,
+        "absoluteTop": 978,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "384799",
+      "name": "Hunter's Avoidance",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 303,
+        "absoluteTop": 978,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "343248",
+      "name": "Deathblow",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 434,
+        "absoluteTop": 978,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "343242",
+      "name": "Wilderness Medicine",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 108,
+        "absoluteTop": 1043,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "187698",
+      "name": "Tar Trap",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 238,
+        "absoluteTop": 1043,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "19801",
+      "name": "Tranquilizing Shot",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 369,
+        "absoluteTop": 1043,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "5116",
+      "name": "Concussive Shot",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 499,
+        "absoluteTop": 1043,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "264735",
+      "name": "Survival of the Fittest",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 173,
+        "absoluteTop": 1108,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "393344",
+      "name": "Entrapment",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 238,
+        "absoluteTop": 1108,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "147362",
+      "name": "Counter Shot",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 303,
+        "absoluteTop": 1108,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "34477",
+      "name": "Misdirection",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 434,
+        "absoluteTop": 1108,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459455",
+      "name": "Scout's Instincts",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 108,
+        "absoluteTop": 1173,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "459450",
+      "name": "Padded Armor",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 173,
+        "absoluteTop": 1173,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "388039",
+      "name": "Lone Survivor",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 238,
+        "absoluteTop": 1173,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "459542",
+      "name": "Specialized Arsenal",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 303,
+        "absoluteTop": 1173,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "343244",
+      "name": "Disruptive Rounds",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 369,
+        "absoluteTop": 1173,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459546",
+      "name": "No Hard Feelings",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 434,
+        "absoluteTop": 1173,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "1513",
+      "name": "Scare Beast",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 499,
+        "absoluteTop": 1173,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "19577",
+      "name": "Intimidation",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 173,
+        "absoluteTop": 1238,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "109248",
+      "name": "Binding Shot",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 434,
+        "absoluteTop": 1238,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459507",
+      "name": "Territorial Instincts",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 173,
+        "absoluteTop": 1303,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459534",
+      "name": "Trigger Finger",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 238,
+        "absoluteTop": 1303,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "462036",
+      "name": "Blackrock Munitions",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 303,
+        "absoluteTop": 1303,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "378004",
+      "name": "Keen Eyesight",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 369,
+        "absoluteTop": 1303,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459460",
+      "name": "Tar-Coated Bindings",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 434,
+        "absoluteTop": 1303,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459533",
+      "name": "Scrappy",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 499,
+        "absoluteTop": 1303,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "378771",
+      "name": "Quick Load",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 108,
+        "absoluteTop": 1368,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "378002",
+      "name": "Pathfinding",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 173,
+        "absoluteTop": 1368,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "321468",
+      "name": "Binding Shackles",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 303,
+        "absoluteTop": 1368,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "199483",
+      "name": "Camouflage",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 434,
+        "absoluteTop": 1368,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "459506",
+      "name": "Kindling Flare",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 499,
+        "absoluteTop": 1368,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "199921",
+      "name": "Trailblazer",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 108,
+        "absoluteTop": 1433,
+        "absoluteLeft": 108
+      }
+    },
+    {
+      "id": "53480",
+      "name": "Roar of Sacrifice",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 173,
+        "absoluteTop": 1433,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459502",
+      "name": "Serrated Tips",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 238,
+        "absoluteTop": 1433,
+        "absoluteLeft": 238
+      }
+    },
+    {
+      "id": "459488",
+      "name": "Moment of Opportunity",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 303,
+        "absoluteTop": 1433,
+        "absoluteLeft": 303
+      }
+    },
+    {
+      "id": "266921",
+      "name": "Born To Be Wild",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 369,
+        "absoluteTop": 1433,
+        "absoluteLeft": 369
+      }
+    },
+    {
+      "id": "459466",
+      "name": "Ghillie Suit",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 434,
+        "absoluteTop": 1433,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "343247",
+      "name": "Improved Traps",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 499,
+        "absoluteTop": 1433,
+        "absoluteLeft": 499
+      }
+    },
+    {
+      "id": "459517",
+      "name": "Emergency Salve",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 173,
+        "absoluteTop": 1498,
+        "absoluteLeft": 173
+      }
+    },
+    {
+      "id": "459527",
+      "name": "Unnatural Causes",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 434,
+        "absoluteTop": 1498,
+        "absoluteLeft": 434
+      }
+    },
+    {
+      "id": "34026",
+      "name": "Kill Command",
+      "position": {
+        "screenTop": 235,
+        "screenLeft": 1222,
+        "absoluteTop": 913,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "193455",
+      "name": "Cobra Shot",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 1157,
+        "absoluteTop": 978,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "217200",
+      "name": "Barbed Shot",
+      "position": {
+        "screenTop": 300,
+        "screenLeft": 1287,
+        "absoluteTop": 978,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "321014",
+      "name": "Pack Tactics",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1092,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "191384",
+      "name": "Aspect of the Beast",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1157,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "393933",
+      "name": "War Orders",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1287,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "257944",
+      "name": "Thrill of the Hunt",
+      "position": {
+        "screenTop": 365,
+        "screenLeft": 1353,
+        "absoluteTop": 1043,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "459550",
+      "name": "Go for the Throat",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1092,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "2643",
+      "name": "Multi-Shot",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1222,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "459552",
+      "name": "Laceration",
+      "position": {
+        "screenTop": 430,
+        "screenLeft": 1353,
+        "absoluteTop": 1108,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "269737",
+      "name": "Alpha Predator",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1157,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "115939",
+      "name": "Beast Cleave",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1222,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "378209",
+      "name": "Training Expert",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1287,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "378210",
+      "name": "Hunter's Prey",
+      "position": {
+        "screenTop": 495,
+        "screenLeft": 1418,
+        "absoluteTop": 1173,
+        "absoluteLeft": 1418
+      }
+    },
+    {
+      "id": "199530",
+      "name": "Stomp",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1092,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "424558",
+      "name": "Master Handler",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1157,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "378207",
+      "name": "Kill Cleave",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1222,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "185789",
+      "name": "Wild Call",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1287,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "120679",
+      "name": "Dire Beast",
+      "position": {
+        "screenTop": 560,
+        "screenLeft": 1353,
+        "absoluteTop": 1238,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "424557",
+      "name": "Savagery",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1027,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1027
+      }
+    },
+    {
+      "id": "321530",
+      "name": "Bloodshed",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1092,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "469880",
+      "name": "Barbed Scales",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1157,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "19574",
+      "name": "Bestial Wrath",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1222,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "1217535",
+      "name": "Poisoned Barbs",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1287,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "378743",
+      "name": "Dire Command",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1353,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "1217524",
+      "name": "Dire Cleave",
+      "position": {
+        "screenTop": 626,
+        "screenLeft": 1418,
+        "absoluteTop": 1303,
+        "absoluteLeft": 1418
+      }
+    },
+    {
+      "id": "273887",
+      "name": "Killer Instinct",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1092,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "468701",
+      "name": "Serpentine Rhythm",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1157,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "231548",
+      "name": "Barbed Wrath",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1222,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "459693",
+      "name": "Thundering Hooves",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1287,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "385810",
+      "name": "Dire Frenzy",
+      "position": {
+        "screenTop": 691,
+        "screenLeft": 1353,
+        "absoluteTop": 1368,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "359844",
+      "name": "Call of the Wild",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1092,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1092
+      }
+    },
+    {
+      "id": "199532",
+      "name": "Killer Cobra",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1157,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1157
+      }
+    },
+    {
+      "id": "193532",
+      "name": "Scent of Blood",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1222,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "386870",
+      "name": "Brutal Companion",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1287,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1287
+      }
+    },
+    {
+      "id": "459730",
+      "name": "Huntmaster's Call",
+      "position": {
+        "screenTop": 756,
+        "screenLeft": 1353,
+        "absoluteTop": 1433,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "392053",
+      "name": "Piercing Fangs",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 1222,
+        "absoluteTop": 1498,
+        "absoluteLeft": 1222
+      }
+    },
+    {
+      "id": "1232739",
+      "name": "Wildspeaker",
+      "position": {
+        "screenTop": 821,
+        "screenLeft": 1353,
+        "absoluteTop": 1498,
+        "absoluteLeft": 1353
+      }
+    },
+    {
+      "id": "137015",
+      "name": "",
+      "position": {
+        "screenTop": 1373,
+        "screenLeft": 34,
+        "absoluteTop": 2051,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "137015",
+      "name": "Beast Mastery Hunter",
+      "position": {
+        "screenTop": 1382,
+        "screenLeft": 96,
+        "absoluteTop": 2060,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "462079",
+      "name": "",
+      "position": {
+        "screenTop": 1440,
+        "screenLeft": 34,
+        "absoluteTop": 2117,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "462079",
+      "name": "Beast Mastery Hunter",
+      "position": {
+        "screenTop": 1449,
+        "screenLeft": 96,
+        "absoluteTop": 2126,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "344572",
+      "name": "",
+      "position": {
+        "screenTop": 1506,
+        "screenLeft": 34,
+        "absoluteTop": 2184,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "344572",
+      "name": "Bestial Wrath",
+      "position": {
+        "screenTop": 1515,
+        "screenLeft": 96,
+        "absoluteTop": 2193,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "157443",
+      "name": "",
+      "position": {
+        "screenTop": 1572,
+        "screenLeft": 34,
+        "absoluteTop": 2250,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "157443",
+      "name": "Critical Strikes",
+      "position": {
+        "screenTop": 1582,
+        "screenLeft": 96,
+        "absoluteTop": 2259,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212407",
+      "name": "",
+      "position": {
+        "screenTop": 1639,
+        "screenLeft": 34,
+        "absoluteTop": 2316,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212407",
+      "name": "Glyph of Arachnophobia",
+      "position": {
+        "screenTop": 1648,
+        "screenLeft": 96,
+        "absoluteTop": 2326,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "440261",
+      "name": "",
+      "position": {
+        "screenTop": 1705,
+        "screenLeft": 34,
+        "absoluteTop": 2383,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "440261",
+      "name": "Glyph of Death Chakram",
+      "position": {
+        "screenTop": 1714,
+        "screenLeft": 96,
+        "absoluteTop": 2392,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "304039",
+      "name": "",
+      "position": {
+        "screenTop": 1772,
+        "screenLeft": 34,
+        "absoluteTop": 2449,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "304039",
+      "name": "Glyph of Dire Bees",
+      "position": {
+        "screenTop": 1781,
+        "screenLeft": 96,
+        "absoluteTop": 2458,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "57870",
+      "name": "",
+      "position": {
+        "screenTop": 1838,
+        "screenLeft": 34,
+        "absoluteTop": 2516,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "57870",
+      "name": "Glyph of Lesser Proportion",
+      "position": {
+        "screenTop": 1847,
+        "screenLeft": 96,
+        "absoluteTop": 2525,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212410",
+      "name": "",
+      "position": {
+        "screenTop": 1904,
+        "screenLeft": 34,
+        "absoluteTop": 2582,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212410",
+      "name": "Glyph of Nesingwary's Nemeses",
+      "position": {
+        "screenTop": 1914,
+        "screenLeft": 96,
+        "absoluteTop": 2591,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212462",
+      "name": "",
+      "position": {
+        "screenTop": 1971,
+        "screenLeft": 34,
+        "absoluteTop": 2648,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212462",
+      "name": "Glyph of Stellar Flare",
+      "position": {
+        "screenTop": 1980,
+        "screenLeft": 96,
+        "absoluteTop": 2658,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "219183",
+      "name": "",
+      "position": {
+        "screenTop": 2037,
+        "screenLeft": 34,
+        "absoluteTop": 2715,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "219183",
+      "name": "Glyph of the Dire Stable",
+      "position": {
+        "screenTop": 2046,
+        "screenLeft": 96,
+        "absoluteTop": 2724,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212451",
+      "name": "",
+      "position": {
+        "screenTop": 2104,
+        "screenLeft": 34,
+        "absoluteTop": 2781,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212451",
+      "name": "Glyph of the Goblin Anti-Grav Flare",
+      "position": {
+        "screenTop": 2113,
+        "screenLeft": 96,
+        "absoluteTop": 2790,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212358",
+      "name": "",
+      "position": {
+        "screenTop": 2170,
+        "screenLeft": 34,
+        "absoluteTop": 2848,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212358",
+      "name": "Glyph of the Headhunter",
+      "position": {
+        "screenTop": 2179,
+        "screenLeft": 96,
+        "absoluteTop": 2857,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212354",
+      "name": "",
+      "position": {
+        "screenTop": 2236,
+        "screenLeft": 34,
+        "absoluteTop": 2914,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212354",
+      "name": "Glyph of the Hook",
+      "position": {
+        "screenTop": 2246,
+        "screenLeft": 96,
+        "absoluteTop": 2923,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "1234337",
+      "name": "",
+      "position": {
+        "screenTop": 2303,
+        "screenLeft": 34,
+        "absoluteTop": 2980,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "1234337",
+      "name": "Glyph of the Strix",
+      "position": {
+        "screenTop": 2312,
+        "screenLeft": 96,
+        "absoluteTop": 2990,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "212339",
+      "name": "",
+      "position": {
+        "screenTop": 2369,
+        "screenLeft": 34,
+        "absoluteTop": 3047,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "212339",
+      "name": "Glyph of the Trident",
+      "position": {
+        "screenTop": 2378,
+        "screenLeft": 96,
+        "absoluteTop": 3056,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "462080",
+      "name": "",
+      "position": {
+        "screenTop": 2436,
+        "screenLeft": 34,
+        "absoluteTop": 3113,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "462080",
+      "name": "Hunter",
+      "position": {
+        "screenTop": 2445,
+        "screenLeft": 96,
+        "absoluteTop": 3122,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "137014",
+      "name": "",
+      "position": {
+        "screenTop": 2502,
+        "screenLeft": 34,
+        "absoluteTop": 3180,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "137014",
+      "name": "Hunter",
+      "position": {
+        "screenTop": 2511,
+        "screenLeft": 96,
+        "absoluteTop": 3189,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "76657",
+      "name": "",
+      "position": {
+        "screenTop": 2568,
+        "screenLeft": 34,
+        "absoluteTop": 3246,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "76657",
+      "name": "Mastery: Master of Beasts",
+      "position": {
+        "screenTop": 2578,
+        "screenLeft": 96,
+        "absoluteTop": 3255,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "1229376",
+      "name": "",
+      "position": {
+        "screenTop": 2635,
+        "screenLeft": 34,
+        "absoluteTop": 3312,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "1229376",
+      "name": "Single-Button Assistant",
+      "position": {
+        "screenTop": 2644,
+        "screenLeft": 96,
+        "absoluteTop": 3322,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "56641",
+      "name": "",
+      "position": {
+        "screenTop": 2701,
+        "screenLeft": 34,
+        "absoluteTop": 3379,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "56641",
+      "name": "Steady Shot",
+      "position": {
+        "screenTop": 2710,
+        "screenLeft": 96,
+        "absoluteTop": 3388,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "162487",
+      "name": "",
+      "position": {
+        "screenTop": 2768,
+        "screenLeft": 34,
+        "absoluteTop": 3445,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "162487",
+      "name": "Steel Trap",
+      "position": {
+        "screenTop": 2777,
+        "screenLeft": 96,
+        "absoluteTop": 3454,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "185358",
+      "name": "",
+      "position": {
+        "screenTop": 2834,
+        "screenLeft": 34,
+        "absoluteTop": 3512,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "185358",
+      "name": "Arcane Shot",
+      "position": {
+        "screenTop": 2843,
+        "screenLeft": 96,
+        "absoluteTop": 3521,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "195645",
+      "name": "",
+      "position": {
+        "screenTop": 2900,
+        "screenLeft": 34,
+        "absoluteTop": 3578,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "195645",
+      "name": "Wing Clip",
+      "position": {
+        "screenTop": 2910,
+        "screenLeft": 96,
+        "absoluteTop": 3587,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "781",
+      "name": "",
+      "position": {
+        "screenTop": 2967,
+        "screenLeft": 34,
+        "absoluteTop": 3644,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "781",
+      "name": "Disengage",
+      "position": {
+        "screenTop": 2976,
+        "screenLeft": 96,
+        "absoluteTop": 3654,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "186257",
+      "name": "",
+      "position": {
+        "screenTop": 3033,
+        "screenLeft": 34,
+        "absoluteTop": 3711,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "186257",
+      "name": "Aspect of the Cheetah",
+      "position": {
+        "screenTop": 3042,
+        "screenLeft": 96,
+        "absoluteTop": 3720,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "1462",
+      "name": "",
+      "position": {
+        "screenTop": 3100,
+        "screenLeft": 34,
+        "absoluteTop": 3777,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "1462",
+      "name": "Beast Lore",
+      "position": {
+        "screenTop": 3109,
+        "screenLeft": 96,
+        "absoluteTop": 3786,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "883",
+      "name": "",
+      "position": {
+        "screenTop": 3166,
+        "screenLeft": 34,
+        "absoluteTop": 3844,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "883",
+      "name": "Call Pet 1",
+      "position": {
+        "screenTop": 3175,
+        "screenLeft": 96,
+        "absoluteTop": 3853,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "2641",
+      "name": "",
+      "position": {
+        "screenTop": 3232,
+        "screenLeft": 34,
+        "absoluteTop": 3910,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "2641",
+      "name": "Dismiss Pet",
+      "position": {
+        "screenTop": 3242,
+        "screenLeft": 96,
+        "absoluteTop": 3919,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "6991",
+      "name": "",
+      "position": {
+        "screenTop": 3299,
+        "screenLeft": 34,
+        "absoluteTop": 3976,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "6991",
+      "name": "Feed Pet",
+      "position": {
+        "screenTop": 3308,
+        "screenLeft": 96,
+        "absoluteTop": 3986,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "136",
+      "name": "",
+      "position": {
+        "screenTop": 3365,
+        "screenLeft": 34,
+        "absoluteTop": 4043,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "136",
+      "name": "Mend Pet",
+      "position": {
+        "screenTop": 3374,
+        "screenLeft": 96,
+        "absoluteTop": 4052,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "982",
+      "name": "",
+      "position": {
+        "screenTop": 3432,
+        "screenLeft": 34,
+        "absoluteTop": 4109,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "982",
+      "name": "Revive Pet",
+      "position": {
+        "screenTop": 3441,
+        "screenLeft": 96,
+        "absoluteTop": 4118,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "1515",
+      "name": "",
+      "position": {
+        "screenTop": 3498,
+        "screenLeft": 34,
+        "absoluteTop": 4176,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "1515",
+      "name": "Tame Beast",
+      "position": {
+        "screenTop": 3507,
+        "screenLeft": 96,
+        "absoluteTop": 4185,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "5384",
+      "name": "",
+      "position": {
+        "screenTop": 3564,
+        "screenLeft": 34,
+        "absoluteTop": 4242,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "5384",
+      "name": "Feign Death",
+      "position": {
+        "screenTop": 3574,
+        "screenLeft": 96,
+        "absoluteTop": 4251,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "210000",
+      "name": "",
+      "position": {
+        "screenTop": 3631,
+        "screenLeft": 34,
+        "absoluteTop": 4308,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "210000",
+      "name": "Wake Up",
+      "position": {
+        "screenTop": 3640,
+        "screenLeft": 96,
+        "absoluteTop": 4318,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "257284",
+      "name": "",
+      "position": {
+        "screenTop": 3697,
+        "screenLeft": 34,
+        "absoluteTop": 4375,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "257284",
+      "name": "Hunter's Mark",
+      "position": {
+        "screenTop": 3706,
+        "screenLeft": 96,
+        "absoluteTop": 4384,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "186265",
+      "name": "",
+      "position": {
+        "screenTop": 3764,
+        "screenLeft": 34,
+        "absoluteTop": 4441,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "186265",
+      "name": "Aspect of the Turtle",
+      "position": {
+        "screenTop": 3773,
+        "screenLeft": 96,
+        "absoluteTop": 4450,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "109304",
+      "name": "",
+      "position": {
+        "screenTop": 3830,
+        "screenLeft": 34,
+        "absoluteTop": 4508,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "109304",
+      "name": "Exhilaration",
+      "position": {
+        "screenTop": 3839,
+        "screenLeft": 96,
+        "absoluteTop": 4517,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "61648",
+      "name": "",
+      "position": {
+        "screenTop": 3896,
+        "screenLeft": 34,
+        "absoluteTop": 4574,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "61648",
+      "name": "Aspect of the Chameleon",
+      "position": {
+        "screenTop": 3906,
+        "screenLeft": 96,
+        "absoluteTop": 4583,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "83242",
+      "name": "",
+      "position": {
+        "screenTop": 3963,
+        "screenLeft": 34,
+        "absoluteTop": 4640,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "83242",
+      "name": "Call Pet 2",
+      "position": {
+        "screenTop": 3972,
+        "screenLeft": 96,
+        "absoluteTop": 4650,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "93321",
+      "name": "",
+      "position": {
+        "screenTop": 4029,
+        "screenLeft": 34,
+        "absoluteTop": 4707,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "93321",
+      "name": "Control Pet",
+      "position": {
+        "screenTop": 4038,
+        "screenLeft": 96,
+        "absoluteTop": 4716,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "53270",
+      "name": "",
+      "position": {
+        "screenTop": 4096,
+        "screenLeft": 34,
+        "absoluteTop": 4773,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "53270",
+      "name": "Exotic Beasts",
+      "position": {
+        "screenTop": 4105,
+        "screenLeft": 96,
+        "absoluteTop": 4782,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "125050",
+      "name": "",
+      "position": {
+        "screenTop": 4162,
+        "screenLeft": 34,
+        "absoluteTop": 4840,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "125050",
+      "name": "Fetch",
+      "position": {
+        "screenTop": 4171,
+        "screenLeft": 96,
+        "absoluteTop": 4849,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "127933",
+      "name": "",
+      "position": {
+        "screenTop": 4228,
+        "screenLeft": 34,
+        "absoluteTop": 4906,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "127933",
+      "name": "Fireworks",
+      "position": {
+        "screenTop": 4238,
+        "screenLeft": 96,
+        "absoluteTop": 4915,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "187650",
+      "name": "",
+      "position": {
+        "screenTop": 4295,
+        "screenLeft": 34,
+        "absoluteTop": 4972,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "187650",
+      "name": "Freezing Trap",
+      "position": {
+        "screenTop": 4304,
+        "screenLeft": 96,
+        "absoluteTop": 4982,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "209997",
+      "name": "",
+      "position": {
+        "screenTop": 4361,
+        "screenLeft": 34,
+        "absoluteTop": 5039,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "209997",
+      "name": "Play Dead",
+      "position": {
+        "screenTop": 4370,
+        "screenLeft": 96,
+        "absoluteTop": 5048,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "259398",
+      "name": "",
+      "position": {
+        "screenTop": 4428,
+        "screenLeft": 34,
+        "absoluteTop": 5105,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "259398",
+      "name": "Chakrams",
+      "position": {
+        "screenTop": 4437,
+        "screenLeft": 96,
+        "absoluteTop": 5114,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "83243",
+      "name": "",
+      "position": {
+        "screenTop": 4494,
+        "screenLeft": 34,
+        "absoluteTop": 5172,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "83243",
+      "name": "Call Pet 3",
+      "position": {
+        "screenTop": 4503,
+        "screenLeft": 96,
+        "absoluteTop": 5181,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "1543",
+      "name": "",
+      "position": {
+        "screenTop": 4560,
+        "screenLeft": 34,
+        "absoluteTop": 5238,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "1543",
+      "name": "Flare",
+      "position": {
+        "screenTop": 4570,
+        "screenLeft": 96,
+        "absoluteTop": 5247,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "272651",
+      "name": "",
+      "position": {
+        "screenTop": 4627,
+        "screenLeft": 34,
+        "absoluteTop": 5304,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "272651",
+      "name": "Command Pet",
+      "position": {
+        "screenTop": 4636,
+        "screenLeft": 96,
+        "absoluteTop": 5314,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "321297",
+      "name": "",
+      "position": {
+        "screenTop": 4693,
+        "screenLeft": 34,
+        "absoluteTop": 5371,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "321297",
+      "name": "Eyes of the Beast",
+      "position": {
+        "screenTop": 4702,
+        "screenLeft": 96,
+        "absoluteTop": 5380,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "83244",
+      "name": "",
+      "position": {
+        "screenTop": 4760,
+        "screenLeft": 34,
+        "absoluteTop": 5437,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "83244",
+      "name": "Call Pet 4",
+      "position": {
+        "screenTop": 4769,
+        "screenLeft": 96,
+        "absoluteTop": 5446,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "343241",
+      "name": "",
+      "position": {
+        "screenTop": 4826,
+        "screenLeft": 34,
+        "absoluteTop": 5504,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "343241",
+      "name": "Aspect of the Cheetah",
+      "position": {
+        "screenTop": 4835,
+        "screenLeft": 96,
+        "absoluteTop": 5513,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "83245",
+      "name": "",
+      "position": {
+        "screenTop": 4892,
+        "screenLeft": 34,
+        "absoluteTop": 5570,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "83245",
+      "name": "Call Pet 5",
+      "position": {
+        "screenTop": 4902,
+        "screenLeft": 96,
+        "absoluteTop": 5579,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "325028",
+      "name": "",
+      "position": {
+        "screenTop": 4959,
+        "screenLeft": 34,
+        "absoluteTop": 5636,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "325028",
+      "name": "Death Chakram",
+      "position": {
+        "screenTop": 4968,
+        "screenLeft": 96,
+        "absoluteTop": 5646,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "325037",
+      "name": "",
+      "position": {
+        "screenTop": 5025,
+        "screenLeft": 34,
+        "absoluteTop": 5703,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "325037",
+      "name": "Death Chakram",
+      "position": {
+        "screenTop": 5034,
+        "screenLeft": 96,
+        "absoluteTop": 5712,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "355589",
+      "name": "",
+      "position": {
+        "screenTop": 5092,
+        "screenLeft": 34,
+        "absoluteTop": 5769,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "355589",
+      "name": "Wailing Arrow",
+      "position": {
+        "screenTop": 5101,
+        "screenLeft": 96,
+        "absoluteTop": 5778,
+        "absoluteLeft": 96
+      }
+    },
+    {
+      "id": "355596",
+      "name": "",
+      "position": {
+        "screenTop": 5158,
+        "screenLeft": 34,
+        "absoluteTop": 5836,
+        "absoluteLeft": 34
+      }
+    },
+    {
+      "id": "355596",
+      "name": "Wailing Arrow",
+      "position": {
+        "screenTop": 5167,
+        "screenLeft": 96,
+        "absoluteTop": 5845,
+        "absoluteLeft": 96
+      }
+    }
+  ]
+}
