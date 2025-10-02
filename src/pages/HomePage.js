@@ -186,12 +186,12 @@ const FeatureTitle = styled.h3`
 function HomePage() {
   const features = [
     {
-      iconUrl: gameIcons.legendary,
+      iconUrl: gameIcons.info,
       title: "뉴스",
       link: "/news"
     },
     {
-      iconUrl: gameIcons.raid,
+      iconUrl: gameIcons.sword,
       title: "직업 가이드",
       link: "/guide"
     },
@@ -201,7 +201,7 @@ function HomePage() {
       link: "/spells"
     },
     {
-      iconUrl: gameIcons.achievement,
+      iconUrl: gameIcons.search,
       title: "로그 분석",
       link: "/log-analyzer"
     }

@@ -169,10 +169,10 @@ function Navigation() {
 
   const navItems = [
     { path: '/', iconUrl: gameIcons.quest, label: '홈' },
-    { path: '/news', iconUrl: gameIcons.legendary, label: '뉴스' },
-    { path: '/guide', iconUrl: gameIcons.raid, label: '직업 가이드' },
-    { path: '/spells', iconUrl: gameIcons.spell, label: '스킬 DB' },
-    { path: '/log-analyzer', iconUrl: gameIcons.achievement, label: '로그 분석' }
+    { path: '/news', iconUrl: gameIcons.info, label: '뉴스' },
+    { path: '/guide', iconUrl: gameIcons.sword, label: '직업 가이드' },
+    { path: '/spells', iconUrl: gameIcons.instant, label: '스킬 DB' },
+    { path: '/log-analyzer', iconUrl: gameIcons.search, label: '로그 분석' }
   ];
 
   return (
