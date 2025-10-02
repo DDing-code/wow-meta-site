@@ -292,9 +292,12 @@ const getHeroContent = (SkillIcon) => ({
         skillData.recklessness,
         skillData.avatar,
         skillData.championsSpear,
+        skillData.thunderousRoar,
         skillData.rampage,
         skillData.ragingBlow,
-        skillData.bloodthirst
+        skillData.bloodthirst,
+        skillData.ragingBlow,
+        skillData.execute
       ],
       priority: [
         {
@@ -405,9 +408,13 @@ const getHeroContent = (SkillIcon) => ({
         skillData.charge,
         skillData.recklessness,
         skillData.avatar,
+        skillData.championsSpear,
         skillData.thunderousRoar,
         skillData.whirlwind,
-        skillData.rampage
+        skillData.rampage,
+        skillData.ragingBlow,
+        skillData.bloodthirst,
+        skillData.whirlwind
       ],
       priority: [
         {
@@ -543,9 +550,12 @@ const getHeroContent = (SkillIcon) => ({
         skillData.avatar,
         skillData.thunderBlast,
         skillData.championsSpear,
+        skillData.thunderousRoar,
+        skillData.thunderBlast,
         skillData.rampage,
         skillData.ragingBlow,
-        skillData.bloodthirst
+        skillData.bloodthirst,
+        skillData.thunderBlast
       ],
       priority: [
         {
@@ -658,9 +668,14 @@ const getHeroContent = (SkillIcon) => ({
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderBlast,
+        skillData.championsSpear,
         skillData.thunderousRoar,
+        skillData.thunderBlast,  // 천둥의 포효 후 재사용
         skillData.whirlwind,
-        skillData.rampage
+        skillData.rampage,
+        skillData.ragingBlow,
+        skillData.bloodthirst,
+        skillData.thunderBlast  // 추가 사용
       ],
       priority: [
         {
