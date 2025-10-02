@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { gameIcons, WowIcon } from '../utils/wowIcons';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = styled.nav`
@@ -108,9 +107,10 @@ const NavLink = styled(Link)`
     z-index: -1;
   }
 
-  img {
+  span {
     opacity: 0.8;
     transition: ${props => props.theme.transitions.fast};
+    font-size: 1.2rem;
   }
 
   &:hover {
@@ -121,7 +121,7 @@ const NavLink = styled(Link)`
       opacity: 0.1;
     }
 
-    img {
+    span {
       opacity: 1;
       transform: scale(1.1);
     }
@@ -168,11 +168,11 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { path: '/', iconUrl: gameIcons.quest, label: '홈' },
-    { path: '/news', iconUrl: gameIcons.info, label: '뉴스' },
-    { path: '/guide', iconUrl: gameIcons.sword, label: '직업 가이드' },
-    { path: '/spells', iconUrl: gameIcons.instant, label: '스킬 DB' },
-    { path: '/log-analyzer', iconUrl: gameIcons.search, label: '로그 분석' }
+    { path: '/', emoji: '🏠', label: '홈' },
+    { path: '/news', emoji: '📰', label: '뉴스' },
+    { path: '/guide', emoji: '⚔️', label: '직업 가이드' },
+    { path: '/spells', emoji: '⚡', label: '스킬 DB' },
+    { path: '/log-analyzer', emoji: '📊', label: '로그 분석' }
   ];
 
   return (
@@ -191,7 +191,7 @@ function Navigation() {
               active={location.pathname === item.path}
               onClick={() => setIsOpen(false)}
             >
-              <WowIcon icon={item.iconUrl} size={20} />
+              <span>{item.emoji}</span>
               {item.label}
             </NavLink>
           ))}

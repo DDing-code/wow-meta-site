@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { gameIcons, WowIcon } from '../utils/wowIcons';
 import NewsSection from '../components/NewsSection';
 import RecentGuidesSection from '../components/RecentGuidesSection';
 
@@ -158,6 +157,7 @@ const IconWrapper = styled(motion.div)`
     rgba(203, 166, 247, 0.2) 100%
   );
   transition: all 0.4s ease;
+  font-size: 3rem;
 
   ${FeatureCard}:hover & {
     transform: scale(1.1) rotate(5deg);
@@ -186,22 +186,22 @@ const FeatureTitle = styled.h3`
 function HomePage() {
   const features = [
     {
-      iconUrl: gameIcons.info,
+      emoji: "📰",
       title: "뉴스",
       link: "/news"
     },
     {
-      iconUrl: gameIcons.sword,
+      emoji: "⚔️",
       title: "직업 가이드",
       link: "/guide"
     },
     {
-      iconUrl: gameIcons.instant,
+      emoji: "⚡",
       title: "스킬 DB",
       link: "/spells"
     },
     {
-      iconUrl: gameIcons.search,
+      emoji: "📊",
       title: "로그 분석",
       link: "/log-analyzer"
     }
@@ -239,7 +239,7 @@ function HomePage() {
               style={{ textDecoration: 'none' }}
             >
               <IconWrapper>
-                <WowIcon icon={feature.iconUrl} size={50} />
+                {feature.emoji}
               </IconWrapper>
               <FeatureTitle>{feature.title}</FeatureTitle>
             </FeatureCard>
