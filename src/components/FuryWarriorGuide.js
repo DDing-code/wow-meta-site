@@ -297,17 +297,107 @@ const getHeroContent = (SkillIcon) => ({
         skillData.bloodthirst
       ],
       priority: [
-        { skill: skillData.rampage, desc: '격노 버프가 없거나 곧 만료될 때 최우선 사용 (격노 유지율 90%+ 목표)' },
-        { skill: skillData.execute, desc: '처형 표식 2중첩 이상 OR 갑작스런 죽음 2중첩 OR 갑작스런 죽음 버프 만료 직전 시 사용' },
-        { skill: skillData.rampage, desc: '학살의 일격 5중첩 시 즉시 사용하여 중첩 소모' },
-        { skill: skillData.ragingBlow, desc: '잔혹한 마무리 버프 활성 시 최우선 사용' },
-        { skill: skillData.ragingBlow, desc: '2 충전 보유 시 즉시 사용 (충전 낭비 방지)' },
-        { skill: skillData.rampage, desc: '분노 120 이상 시 사용 (분노 낭비 방지)' },
-        { skill: skillData.execute, desc: '대상 생명력 20% 이하 시 사용' },
-        { skill: skillData.ragingBlow, desc: '기본 분노 소모 스킬' },
-        { skill: skillData.rampage, desc: '분노 80 이상 시 사용' },
-        { skill: skillData.bloodthirst, desc: '재사용 대기시간마다 사용 (분노 8 생성 + 생명력 회복)' },
-        { skill: skillData.execute, desc: '다른 스킬 사용 불가 시 필러로 사용' }
+        {
+          skill: skillData.rampage,
+          desc: '격노 버프 유지 (최우선)',
+          conditions: [
+            '격노 버프 없음',
+            'OR 격노 버프 1 GCD(1.5초) 내 만료',
+            '분노 80 이상 보유'
+          ],
+          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 20% 증가 버프'
+        },
+        {
+          skill: skillData.execute,
+          desc: '처형 표식 활용',
+          conditions: [
+            '처형 표식 2중첩 이상 (피해 20% 증가)',
+            'OR 갑작스런 죽음 2중첩',
+            'OR 갑작스런 죽음 버프 5초 내 만료'
+          ],
+          why: '처형 표식 2중첩 시 마무리 일격 피해 20% 증가'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '학살의 일격 중첩 소모',
+          conditions: [
+            '학살의 일격 5중첩',
+            '분노 80 이상'
+          ],
+          why: '5중첩 시 광란 피해 25% 증가 효과 활용'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '잔혹한 마무리 버프 활용',
+          conditions: [
+            '잔혹한 마무리 버프 활성',
+            '재사용 대기시간 초기화됨'
+          ],
+          why: '버프 활성 시 분노의 강타 피해 20% 증가'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '충전 관리',
+          conditions: [
+            '2 충전 보유',
+            '다음 충전까지 3초 이하'
+          ],
+          why: '충전 낭비 방지 - 최대 효율 유지'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '분노 낭비 방지',
+          conditions: [
+            '분노 120 이상',
+            '격노 버프 활성 중'
+          ],
+          why: '분노 최대치 120 - 초과분 낭비 방지'
+        },
+        {
+          skill: skillData.execute,
+          desc: '처형 구간 (20% 이하)',
+          conditions: [
+            '대상 생명력 20% 이하',
+            '분노 20-40 사용 (소모량 조절)'
+          ],
+          why: '처형 구간에서 마무리 일격이 광란보다 우선'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '기본 분노 소모',
+          conditions: [
+            '재사용 대기시간 없음',
+            '분노 12 소모'
+          ],
+          why: '안정적인 분노 소모 + 격노 트리거 가능'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '분노 80+ 소모',
+          conditions: [
+            '분노 80 이상',
+            '다른 우선순위 스킬 사용 불가'
+          ],
+          why: '격노 버프 유지 + 분노 효율 관리'
+        },
+        {
+          skill: skillData.bloodthirst,
+          desc: '분노 생성 + 회복',
+          conditions: [
+            '재사용 대기시간마다 사용 (4.5초)',
+            '분노 8 생성 + 생명력 3% 회복'
+          ],
+          why: '주요 분노 생성 스킬 - 격노 트리거 가능'
+        },
+        {
+          skill: skillData.execute,
+          desc: '필러 스킬',
+          conditions: [
+            '다른 모든 스킬 사용 불가',
+            '분노 20 이상'
+          ],
+          why: '분노 소모 + 처형 표식 중첩 생성'
+        }
       ]
     },
     aoe: {
@@ -320,15 +410,124 @@ const getHeroContent = (SkillIcon) => ({
         skillData.rampage
       ],
       priority: [
-        { skill: skillData.whirlwind, desc: '개선된 소용돌이 버프 유지 (다음 2번 공격 광역화)' },
-        { skill: skillData.rampage, desc: '격노 버프 유지 최우선' },
-        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선 사용 (소용돌이 버프로 광역 처형)' },
-        { skill: skillData.thunderousRoar, desc: '재사용 대기시간마다 사용 (광역 출혈 DoT)' },
-        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모하여 광역 피해' },
-        { skill: skillData.bloodthirst, desc: '분노 생성 및 소용돌이 버프로 광역 피해' },
-        { skill: skillData.whirlwind, desc: '소용돌이 버프 재적용' }
+        {
+          skill: skillData.whirlwind,
+          desc: '개선된 소용돌이 유지 (최우선)',
+          conditions: [
+            '소용돌이 버프 없음 OR 1중첩 이하',
+            '다음 2번 공격 광역화',
+            '3명 이상 대상에 4% 피해'
+          ],
+          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '격노 버프 유지',
+          conditions: [
+            '격노 버프 없음',
+            'OR 격노 1 GCD 내 만료',
+            '분노 80 이상'
+          ],
+          why: '가속 25% + 피해 20% 증가 - 광역에서도 필수'
+        },
+        {
+          skill: skillData.execute,
+          desc: '광역 처형 (3+ 적 20% 이하)',
+          conditions: [
+            '3명 이상 대상 생명력 20% 이하',
+            '소용돌이 버프 활성',
+            '분노 20-40 사용'
+          ],
+          why: '소용돌이 버프로 여러 적 동시 처형 - 폭발적 광역 딜'
+        },
+        {
+          skill: skillData.thunderousRoar,
+          desc: '광역 출혈 DoT',
+          conditions: [
+            '재사용 대기시간마다 (1.5분)',
+            '12미터 반경 광역',
+            '8초 출혈 DoT'
+          ],
+          why: '광역 즉시 피해 + 지속 피해 - 쐐기 핵심 쿨기'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '소용돌이 버프 소모',
+          conditions: [
+            '소용돌이 버프 활성 (2중첩)',
+            '분노 12 소모',
+            '최대 4명 추가 타격'
+          ],
+          why: '분노 효율적 소모 + 광역 피해'
+        },
+        {
+          skill: skillData.bloodthirst,
+          desc: '분노 생성 + 광역',
+          conditions: [
+            '재사용 대기시간마다 (4.5초)',
+            '소용돌이 버프로 광역화',
+            '분노 8 생성'
+          ],
+          why: '안정적 분노 생성 + 생명력 회복'
+        },
+        {
+          skill: skillData.whirlwind,
+          desc: '소용돌이 버프 갱신',
+          conditions: [
+            '소용돌이 버프 곧 만료',
+            '다른 스킬 재사용 대기 중'
+          ],
+          why: '버프 유지 - 광역 딜 지속'
+        }
       ]
-    }
+    },
+    mechanics: [
+      {
+        title: 'Pandemic 메커니즘',
+        icon: '🔄',
+        desc: '지속 효과(DoT)를 조기 갱신 시 남은 시간이 추가되는 시스템',
+        details: [
+          '천둥의 포효 출혈: 8초 지속 → 2.4초(30%) 이내 재사용 시 남은 시간 추가',
+          '예시: 3초 남았을 때 재시전 → 8초 + 3초 = 11초 지속',
+          '최적 타이밍: 2-3초 남았을 때 재시전 (시너지 극대화)'
+        ],
+        why: 'DoT 지속시간을 최대한 활용하여 DPS 극대화'
+      },
+      {
+        title: 'Spell Queue Window',
+        icon: '⏱️',
+        desc: '스킬을 미리 입력할 수 있는 0.25초 시스템',
+        details: [
+          'GCD(1.5초) 종료 0.25초 전부터 다음 스킬 입력 가능',
+          '즉시 시전: GCD 종료와 동시에 발동 (딜레이 0초)',
+          '학살자 핵심: 광란 → 분노의 강타 빠른 연계 (처형 표식 2중첩 활용)'
+        ],
+        why: 'APM 향상 및 격노 버프 시간 효율 극대화 (12초 버프)'
+      },
+      {
+        title: '격노 버프 관리',
+        icon: '🔥',
+        desc: '12초 지속 격노 버프 90%+ 유지율 달성',
+        details: [
+          '버프 만료 1 GCD(1.5초) 전 광란 준비 필수',
+          '분노 80+ 유지로 광란 즉시 사용 가능 상태 유지',
+          '무모한 희생 사용 시: 2세트 효과로 3초 연장 (총 15초)'
+        ],
+        why: '가속 25% + 피해 20% 증가 - 분노 전사 핵심 버프'
+      },
+      {
+        title: '처형 표식 시스템',
+        icon: '💀',
+        desc: '마무리 일격 사용 시 2중첩 시 피해 20% 증가',
+        details: [
+          '1중첩: 마무리 일격 피해 10% 증가',
+          '2중첩: 마무리 일격 피해 20% 증가 (최대)',
+          '우선순위: 2중첩 시 즉시 마무리 일격 사용',
+          '갑작스런 죽음 버프: 5초 내 마무리 일격 사용 권장'
+        ],
+        why: '처형 구간 DPS 극대화 - 학살자 핵심 메커니즘'
+      }
+    ]
   },
   mountainThane: {
     name: '산왕',
@@ -349,17 +548,108 @@ const getHeroContent = (SkillIcon) => ({
         skillData.bloodthirst
       ],
       priority: [
-        { skill: skillData.rampage, desc: '격노 버프가 없거나 곧 만료될 때 최우선 사용' },
-        { skill: skillData.thunderBlast, desc: '재사용 대기시간마다 즉시 사용 (분노 30 소모, 천둥 피해)' },
-        { skill: skillData.execute, desc: '처형 표식 2중첩 이상 OR 갑작스런 죽음 2중첩 OR 버프 만료 직전 시 사용' },
-        { skill: skillData.rampage, desc: '학살의 일격 5중첩 시 즉시 사용' },
-        { skill: skillData.ragingBlow, desc: '잔혹한 마무리 버프 활성 시 최우선 사용' },
-        { skill: skillData.ragingBlow, desc: '2 충전 보유 시 즉시 사용' },
-        { skill: skillData.rampage, desc: '분노 120 이상 시 사용 (낭비 방지)' },
-        { skill: skillData.execute, desc: '대상 생명력 20% 이하 시 사용' },
-        { skill: skillData.ragingBlow, desc: '기본 분노 소모 스킬' },
-        { skill: skillData.rampage, desc: '분노 80 이상 시 사용' },
-        { skill: skillData.bloodthirst, desc: '재사용 대기시간마다 사용 (분노 생성)' }
+        {
+          skill: skillData.rampage,
+          desc: '격노 버프 유지 (최우선)',
+          conditions: [
+            '격노 버프 없음',
+            'OR 격노 버프 1 GCD 내 만료',
+            '분노 80 이상 보유'
+          ],
+          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 20% 증가'
+        },
+        {
+          skill: skillData.thunderBlast,
+          desc: '우레 작렬 (산왕 핵심)',
+          conditions: [
+            '재사용 대기시간마다 즉시 (6초)',
+            '분노 30 소모',
+            '8미터 반경 번개 피해 + 20% 감속'
+          ],
+          why: '산왕 주력 스킬 - 티어 세트 시너지 최대 활용'
+        },
+        {
+          skill: skillData.execute,
+          desc: '처형 표식 활용',
+          conditions: [
+            '처형 표식 2중첩 이상',
+            'OR 갑작스런 죽음 2중첩',
+            'OR 버프 5초 내 만료'
+          ],
+          why: '처형 표식 2중첩 시 피해 20% 증가'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '학살의 일격 중첩 소모',
+          conditions: [
+            '학살의 일격 5중첩',
+            '분노 80 이상'
+          ],
+          why: '5중첩 시 광란 피해 25% 증가'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '잔혹한 마무리 버프 활용',
+          conditions: [
+            '잔혹한 마무리 버프 활성',
+            '재사용 대기시간 초기화'
+          ],
+          why: '버프 활성 시 피해 20% 증가'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '충전 관리',
+          conditions: [
+            '2 충전 보유',
+            '다음 충전까지 3초 이하'
+          ],
+          why: '충전 낭비 방지'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '분노 낭비 방지',
+          conditions: [
+            '분노 120 이상',
+            '우레 작렬 분노 30 확보'
+          ],
+          why: '분노 최대치 120 - 우레 작렬 우선 고려'
+        },
+        {
+          skill: skillData.execute,
+          desc: '처형 구간 (20% 이하)',
+          conditions: [
+            '대상 생명력 20% 이하',
+            '분노 20-40 사용'
+          ],
+          why: '처형 구간에서 우선 사용'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '기본 분노 소모',
+          conditions: [
+            '재사용 대기시간 없음',
+            '분노 12 소모'
+          ],
+          why: '안정적 분노 소모'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '분노 80+ 소모',
+          conditions: [
+            '분노 80 이상',
+            '우레 작렬 재사용 대기 중'
+          ],
+          why: '격노 유지 + 분노 효율 관리'
+        },
+        {
+          skill: skillData.bloodthirst,
+          desc: '분노 생성',
+          conditions: [
+            '재사용 대기시간마다 (4.5초)',
+            '분노 8 생성'
+          ],
+          why: '우레 작렬 사용을 위한 분노 생성'
+        }
       ]
     },
     aoe: {
@@ -373,16 +663,136 @@ const getHeroContent = (SkillIcon) => ({
         skillData.rampage
       ],
       priority: [
-        { skill: skillData.whirlwind, desc: '개선된 소용돌이 버프 유지 필수' },
-        { skill: skillData.rampage, desc: '격노 버프 유지 최우선' },
-        { skill: skillData.thunderBlast, desc: '재사용 대기시간마다 사용 (8미터 광역 번개 피해 + 20% 감속)' },
-        { skill: skillData.thunderousRoar, desc: '재사용 대기시간마다 사용 (2세트로 우레 작렬 쿨감)' },
-        { skill: skillData.execute, desc: '여러 적이 20% 이하 시 우선 사용' },
-        { skill: skillData.ragingBlow, desc: '소용돌이 버프 소모하여 광역 피해' },
-        { skill: skillData.bloodthirst, desc: '분노 생성 및 광역 피해' },
-        { skill: skillData.whirlwind, desc: '소용돌이 버프 재적용' }
+        {
+          skill: skillData.whirlwind,
+          desc: '개선된 소용돌이 유지 (최우선)',
+          conditions: [
+            '소용돌이 버프 없음 OR 1중첩 이하',
+            '다음 2번 공격 광역화',
+            '3명 이상 대상에 4% 피해'
+          ],
+          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
+        },
+        {
+          skill: skillData.rampage,
+          desc: '격노 버프 유지',
+          conditions: [
+            '격노 버프 없음',
+            'OR 격노 버프 1 GCD 내 만료',
+            '분노 80 이상 보유'
+          ],
+          why: '격노 유지율 90%+ - 가속 25% + 피해 20% 증가'
+        },
+        {
+          skill: skillData.thunderBlast,
+          desc: '우레 작렬 (산왕 핵심)',
+          conditions: [
+            '재사용 대기시간마다 즉시 (6초)',
+            '분노 30 소모',
+            '8미터 반경 광역 번개 피해',
+            '10초간 20% 감속 효과'
+          ],
+          why: '산왕 주력 광역 스킬 - 티어 세트로 쿨감 받음'
+        },
+        {
+          skill: skillData.thunderousRoar,
+          desc: '천둥의 포효',
+          conditions: [
+            '재사용 대기시간마다 (1.5분)',
+            '티어 세트 2세트: 우레 작렬 쿨감 3초',
+            '12미터 광역 + 8초 출혈 도트'
+          ],
+          why: '티어 세트 시너지로 우레 작렬 쿨타임 단축'
+        },
+        {
+          skill: skillData.execute,
+          desc: '마무리 일격 (처형 구간)',
+          conditions: [
+            '여러 적이 생명력 20% 이하',
+            '분노 20-40 소모',
+            '소용돌이 버프로 광역화'
+          ],
+          why: '처형 구간 최고 DPS - 소용돌이로 광역 적중'
+        },
+        {
+          skill: skillData.ragingBlow,
+          desc: '분노의 강타',
+          conditions: [
+            '소용돌이 버프 2중첩 보유',
+            '광역 적중을 위해 버프 소모',
+            '분노 12 생성'
+          ],
+          why: '소용돌이 버프 소모로 광역 피해 - 분노 생성'
+        },
+        {
+          skill: skillData.bloodthirst,
+          desc: '피의 갈증',
+          conditions: [
+            '재사용 대기시간마다 (4.5초)',
+            '분노 8 생성',
+            '생명력 3% 회복'
+          ],
+          why: '우레 작렬 사용을 위한 분노 생성 + 생존력'
+        },
+        {
+          skill: skillData.whirlwind,
+          desc: '소용돌이 재사용',
+          conditions: [
+            '소용돌이 버프 1중첩 이하일 때',
+            '버프 유지를 위한 재적용',
+            '분노 3+ 생성 (적 수만큼)'
+          ],
+          why: '광역 버프 재충전 - 지속적인 광역화 유지'
+        }
       ]
-    }
+    },
+    mechanics: [
+      {
+        title: 'Pandemic 메커니즘',
+        icon: '🔄',
+        desc: '지속 효과(DoT)를 조기 갱신 시 남은 시간이 추가되는 시스템',
+        details: [
+          '천둥의 포효 출혈: 8초 지속 → 2.4초(30%) 이내 재사용 시 남은 시간 추가',
+          '예시: 3초 남았을 때 재시전 → 8초 + 3초 = 11초 지속',
+          '산왕 최적화: 천둥의 포효 → 우레 작렬 6초 쿨감 → Pandemic 갱신 사이클'
+        ],
+        why: 'DoT 지속시간 극대화 + 티어 세트 시너지'
+      },
+      {
+        title: 'Spell Queue Window',
+        icon: '⏱️',
+        desc: '스킬을 미리 입력할 수 있는 0.25초 시스템',
+        details: [
+          'GCD(1.5초) 종료 0.25초 전부터 다음 스킬 입력 가능',
+          '즉시 시전: GCD 종료와 동시에 발동 (딜레이 0초)',
+          '산왕 핵심: 우레 작렬(6초 쿨) 재사용 대기 완료 즉시 시전'
+        ],
+        why: 'APM 향상 및 우레 작렬 사용 빈도 극대화'
+      },
+      {
+        title: '격노 버프 관리',
+        icon: '🔥',
+        desc: '12초 지속 격노 버프 90%+ 유지율 달성',
+        details: [
+          '버프 만료 1 GCD(1.5초) 전 광란 준비 필수',
+          '분노 80+ 유지로 광란 즉시 사용 가능 상태 유지',
+          '무모한 희생 사용 시: 2세트 효과로 3초 연장 (총 15초)'
+        ],
+        why: '가속 25% + 피해 20% 증가 - 분노 전사 핵심 버프'
+      },
+      {
+        title: '우레 작렬 티어 세트 시너지',
+        icon: '⚡',
+        desc: '산왕 핵심 - 천둥의 포효와 우레 작렬 연계',
+        details: [
+          '2세트: 천둥의 포효 → 우레 작렬 쿨타임 6초 감소',
+          '4세트: 우레 작렬 적중 대상당 공격력 2% (최대 10%)',
+          '최적 사이클: 천둥의 포효(1.5분) → 우레 작렬(6초→즉시) 반복',
+          '분노 관리: 30 분노 소모 → 우레 작렬 지속 사용 위해 분노 생성 최적화'
+        ],
+        why: '산왕 특화 DPS 극대화 - 2/4세트 풀 시너지'
+      }
+    ]
   }
 });
 
@@ -1279,15 +1689,67 @@ const FuryWarriorGuide = () => {
             </div>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.singleTarget.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  background: 'rgba(0, 0, 0, 0.3)',
+                  padding: '12px 15px',
+                  borderRadius: '8px',
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`
+                }}>
+                  {/* 우선순위 번호 + 스킬명 */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                    <span style={{
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
+                      color: '#fff',
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '0.85rem',
+                      fontWeight: 'bold'
+                    }}>
+                      {index + 1}
+                    </span>
+                    <SkillIcon skill={item.skill} size="small" />
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <SkillIcon skill={item.skill} textOnly={true} />
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {item.desc}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건 */}
+                  {item.conditions && (
+                    <div style={{ marginLeft: '34px', marginBottom: '8px' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
+                      <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                        {item.conditions.map((condition, idx) => (
+                          <li key={idx} style={{ color: '#ccc' }}>{condition}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 이유 */}
+                  {item.why && (
+                    <div style={{
+                      marginLeft: '34px',
+                      padding: '6px 10px',
+                      background: 'rgba(255, 165, 0, 0.1)',
+                      borderRadius: '4px',
+                      fontSize: '0.85rem',
+                      color: '#ffa500'
+                    }}>
+                      💡 {item.why}
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+            </div>
           </div>
 
           {/* 광역 대상 */}
@@ -1310,15 +1772,147 @@ const FuryWarriorGuide = () => {
             </div>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.aoe.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  background: 'rgba(0, 0, 0, 0.3)',
+                  padding: '12px 15px',
+                  borderRadius: '8px',
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`
+                }}>
+                  {/* 우선순위 번호 + 스킬명 */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                    <span style={{
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
+                      color: '#fff',
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '0.85rem',
+                      fontWeight: 'bold'
+                    }}>
+                      {index + 1}
+                    </span>
+                    <SkillIcon skill={item.skill} size="small" />
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <SkillIcon skill={item.skill} textOnly={true} />
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {item.desc}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건 */}
+                  {item.conditions && (
+                    <div style={{ marginLeft: '34px', marginBottom: '8px' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
+                      <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                        {item.conditions.map((condition, idx) => (
+                          <li key={idx} style={{ color: '#ccc' }}>{condition}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 이유 */}
+                  {item.why && (
+                    <div style={{
+                      marginLeft: '34px',
+                      padding: '6px 10px',
+                      background: 'rgba(255, 165, 0, 0.1)',
+                      borderRadius: '4px',
+                      fontSize: '0.85rem',
+                      color: '#ffa500'
+                    }}>
+                      💡 {item.why}
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+            </div>
+          </div>
+
+          {/* 게임 메커니즘 섹션 */}
+          <div className={styles.subsection} style={{
+            background: 'rgba(0, 0, 0, 0.3)',
+            padding: '1.5rem',
+            borderRadius: '8px',
+            marginTop: '1.5rem',
+            border: '1px solid rgba(100, 200, 255, 0.3)'
+          }}>
+            <h3 className={styles.subsectionTitle} style={{
+              color: selectedTier === 'slayer' ? '#9482C9' : '#32CD32',
+              marginBottom: '1.5rem'
+            }}>
+              🎮 게임 메커니즘
+            </h3>
+
+            <div style={{ display: 'grid', gap: '20px' }}>
+              {currentContent.mechanics.map((mechanic, index) => (
+                <div key={index} style={{
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  padding: '15px',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid rgba(100, 200, 255, 0.5)'
+                }}>
+                  {/* 메커니즘 제목 */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    marginBottom: '12px'
+                  }}>
+                    <span style={{ fontSize: '1.5rem' }}>{mechanic.icon}</span>
+                    <h4 style={{
+                      color: '#64c8ff',
+                      fontSize: '1.1rem',
+                      margin: 0
+                    }}>
+                      {mechanic.title}
+                    </h4>
+                  </div>
+
+                  {/* 설명 */}
+                  <p style={{
+                    color: '#ccc',
+                    fontSize: '0.95rem',
+                    marginBottom: '12px',
+                    lineHeight: '1.6'
+                  }}>
+                    {mechanic.desc}
+                  </p>
+
+                  {/* 세부 사항 */}
+                  <ul style={{
+                    margin: '0 0 12px 0',
+                    paddingLeft: '20px',
+                    fontSize: '0.9rem',
+                    lineHeight: '1.7'
+                  }}>
+                    {mechanic.details.map((detail, idx) => (
+                      <li key={idx} style={{ color: '#aaa', marginBottom: '6px' }}>
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* 중요도 */}
+                  <div style={{
+                    padding: '8px 12px',
+                    background: 'rgba(100, 200, 255, 0.1)',
+                    borderRadius: '4px',
+                    fontSize: '0.85rem',
+                    color: '#64c8ff',
+                    fontStyle: 'italic'
+                  }}>
+                    💡 {mechanic.why}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* 심화 분석 섹션 추가 */}
@@ -1986,6 +2580,247 @@ const FuryWarriorGuide = () => {
                   <strong style={{ color: '#ffa500' }}>생명력 회복:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 사용 시 생명력 3% 회복
                 </li>
               </ul>
+            </div>
+
+            {/* 수치 계산 및 브레이크포인트 */}
+            <div style={{ marginTop: '30px', marginBottom: '25px' }}>
+              <h4 style={{
+                color: selectedTier === 'slayer' ? '#9482C9' : '#32CD32',
+                fontSize: '1.2rem',
+                marginBottom: '20px',
+                borderBottom: '2px solid rgba(170, 211, 114, 0.3)',
+                paddingBottom: '10px'
+              }}>
+                📊 수치 계산 및 최적화
+              </h4>
+
+              {/* 스탯 가중치 */}
+              <div style={{
+                background: 'rgba(0, 0, 0, 0.4)',
+                padding: '15px',
+                borderRadius: '8px',
+                marginBottom: '20px',
+                border: '1px solid rgba(170, 211, 114, 0.2)'
+              }}>
+                <h5 style={{ color: '#ffa500', fontSize: '1.05rem', marginBottom: '12px' }}>
+                  💎 스탯 가중치 (1 힘 = 1.00 기준)
+                </h5>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', fontSize: '0.9rem' }}>
+                  <div style={{ padding: '8px', background: 'rgba(255, 107, 107, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#ff6b6b' }}>힘:</strong> <span style={{ color: '#ccc' }}>1.00 (기준)</span>
+                  </div>
+                  <div style={{ padding: '8px', background: 'rgba(255, 165, 0, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#ffa500' }}>무기 DPS:</strong> <span style={{ color: '#ccc' }}>6.50-7.00</span>
+                  </div>
+                  <div style={{ padding: '8px', background: 'rgba(40, 167, 69, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#28a745' }}>치명타:</strong> <span style={{ color: '#ccc' }}>0.85-0.95</span>
+                  </div>
+                  <div style={{ padding: '8px', background: 'rgba(78, 205, 196, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#4ECDC4' }}>가속:</strong> <span style={{ color: '#ccc' }}>0.80-0.90</span>
+                  </div>
+                  <div style={{ padding: '8px', background: 'rgba(155, 89, 182, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#9b59b6' }}>특화:</strong> <span style={{ color: '#ccc' }}>0.75-0.85</span>
+                  </div>
+                  <div style={{ padding: '8px', background: 'rgba(255, 193, 7, 0.1)', borderRadius: '4px' }}>
+                    <strong style={{ color: '#ffc107' }}>유연:</strong> <span style={{ color: '#ccc' }}>0.70-0.80</span>
+                  </div>
+                </div>
+                <p style={{ fontSize: '0.85rem', color: '#888', marginTop: '12px', fontStyle: 'italic' }}>
+                  ※ 스탯 가중치는 현재 장비와 특성에 따라 변동됩니다. SimulationCraft로 정확한 가중치 확인 권장
+                </p>
+              </div>
+
+              {/* 가속 브레이크포인트 */}
+              <div style={{
+                background: 'rgba(0, 0, 0, 0.4)',
+                padding: '15px',
+                borderRadius: '8px',
+                marginBottom: '20px',
+                border: '1px solid rgba(78, 205, 196, 0.3)'
+              }}>
+                <h5 style={{ color: '#4ECDC4', fontSize: '1.05rem', marginBottom: '12px' }}>
+                  ⏱️ 가속 브레이크포인트 {selectedTier === 'mountainThane' && '(산왕 특화)'}
+                </h5>
+                <ul style={{ lineHeight: '1.7', fontSize: '0.9rem', marginBottom: '10px' }}>
+                  <li>
+                    <strong style={{ color: '#ffa500' }}>0% 가속:</strong> <span style={{ color: '#ccc' }}>GCD 1.5초 / 피의 갈증 4.5초 쿨</span>
+                  </li>
+                  <li>
+                    <strong style={{ color: '#28a745' }}>20% 가속:</strong> <span style={{ color: '#ccc' }}>GCD 1.25초 / 피의 갈증 3.75초 쿨 (권장 최소치)</span>
+                  </li>
+                  {selectedTier === 'mountainThane' && (
+                    <li>
+                      <strong style={{ color: '#4ECDC4' }}>30% 가속:</strong> <span style={{ color: '#ccc' }}>우레 작렬 4.6초 쿨 → 격노 버프(12초) 중 2-3회 사용</span>
+                    </li>
+                  )}
+                  <li>
+                    <strong style={{ color: '#ff6b6b' }}>35%+ 가속:</strong> <span style={{ color: '#ccc' }}>과잉 투자 - 치명타/특화 우선 권장</span>
+                  </li>
+                </ul>
+                <p style={{ fontSize: '0.85rem', color: '#888', fontStyle: 'italic' }}>
+                  💡 {selectedTier === 'slayer' ? '학살자는 20-25% 가속 확보 후 치명타 집중' : '산왕은 25-30% 가속으로 우레 작렬 빈도 극대화'}
+                </p>
+              </div>
+
+              {/* DPS 계산 공식 */}
+              <div style={{
+                background: 'rgba(0, 0, 0, 0.4)',
+                padding: '15px',
+                borderRadius: '8px',
+                border: '1px solid rgba(255, 165, 0, 0.2)'
+              }}>
+                <h5 style={{ color: '#ffa500', fontSize: '1.05rem', marginBottom: '12px' }}>
+                  🧮 DPS 최적화 계산
+                </h5>
+                <div style={{ fontSize: '0.9rem', lineHeight: '1.7' }}>
+                  <p style={{ marginBottom: '10px' }}>
+                    <strong style={{ color: '#ff6b6b' }}>격노 유지율 = (격노 활성 시간 / 전투 시간) × 100</strong>
+                  </p>
+                  <p style={{ color: '#ccc', marginBottom: '15px' }}>
+                    • 목표: 90%+ 유지 (DPS 18-20% 증가)<br/>
+                    • 실제 계산: 600초 전투 → 540초 이상 격노 유지 필요<br/>
+                    • 광란 평균 8초마다 1회 → 75회 사용 → 900초 버프 (150% 달성)
+                  </p>
+
+                  {selectedTier === 'slayer' ? (
+                    <>
+                      <p style={{ marginBottom: '10px' }}>
+                        <strong style={{ color: '#9482C9' }}>학살의 일격 DPS 기여도</strong>
+                      </p>
+                      <p style={{ color: '#ccc', marginBottom: '10px' }}>
+                        • 5중첩 광란 피해: 기본 광란 대비 +20%<br/>
+                        • 전투 중 평균 5중첩 횟수: 30-40회 (600초 기준)<br/>
+                        • 예상 DPS 증가: 전체 딜의 3-5%
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p style={{ marginBottom: '10px' }}>
+                        <strong style={{ color: '#32CD32' }}>우레 작렬 DPS 기여도 (산왕)</strong>
+                      </p>
+                      <p style={{ color: '#ccc', marginBottom: '10px' }}>
+                        • 6초 쿨: 600초 전투 → 100회 사용<br/>
+                        • 티어 2세트(천둥의 포효): +10회 추가 (쿨감 6초)<br/>
+                        • 티어 4세트(5명 타격): 공격력 +10% 지속<br/>
+                        • 예상 DPS 증가: 전체 딜의 15-18%
+                      </p>
+                    </>
+                  )}
+
+                  <p style={{ marginBottom: '10px' }}>
+                    <strong style={{ color: '#28a745' }}>분노 생성 효율</strong>
+                  </p>
+                  <p style={{ color: '#ccc' }}>
+                    • 피의 갈증(4.5초): 8 분노/회 → 106 분노/분<br/>
+                    • 분노의 강타: 12 분노/회 → GCD마다 가능<br/>
+                    • 돌진: 20 분노 (재사용 20초) → 60 분노/분<br/>
+                    • <strong style={{ color: '#ffa500' }}>평균 분노 생성: 180-220 분노/분</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 실전 팁 */}
+            <div style={{ marginTop: '30px' }}>
+              <h4 style={{
+                color: selectedTier === 'slayer' ? '#9482C9' : '#32CD32',
+                fontSize: '1.2rem',
+                marginBottom: '20px',
+                borderBottom: '2px solid rgba(170, 211, 114, 0.3)',
+                paddingBottom: '10px'
+              }}>
+                💡 실전 팁 & 주의사항
+              </h4>
+
+              {/* 흔한 실수 */}
+              <div style={{
+                background: 'rgba(220, 53, 69, 0.15)',
+                padding: '15px',
+                borderRadius: '8px',
+                marginBottom: '20px',
+                border: '1px solid rgba(220, 53, 69, 0.3)'
+              }}>
+                <h5 style={{ color: '#dc3545', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  ❌ 흔한 실수 (Common Mistakes)
+                </h5>
+                <ul style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#ccc' }}>
+                  <li>
+                    <strong style={{ color: '#ff6b6b' }}>격노 버프 끊김:</strong> 광란 사용을 미루다가 격노 버프 만료 → DPS 20% 손실
+                  </li>
+                  <li>
+                    <strong style={{ color: '#ff6b6b' }}>분노 120 초과:</strong> 분노 낭비 발생 → 광란 즉시 사용 필요
+                  </li>
+                  {selectedTier === 'slayer' && (
+                    <>
+                      <li>
+                        <strong style={{ color: '#ff6b6b' }}>처형 표식 2중첩 무시:</strong> 2중첩 시 마무리 일격 20% 피해 증가 효과 낭비
+                      </li>
+                      <li>
+                        <strong style={{ color: '#ff6b6b' }}>학살의 일격 6중첩:</strong> 5중첩 초과분은 손실 → 즉시 광란 사용
+                      </li>
+                    </>
+                  )}
+                  {selectedTier === 'mountainThane' && (
+                    <>
+                      <li>
+                        <strong style={{ color: '#ff6b6b' }}>우레 작렬 쿨 낭비:</strong> 6초마다 즉시 사용 필수 → 1회 누락 시 DPS 1-2% 손실
+                      </li>
+                      <li>
+                        <strong style={{ color: '#ff6b6b' }}>분노 30 미만 상태:</strong> 우레 작렬 쿨 시 분노 부족 → 타이밍 손실
+                      </li>
+                    </>
+                  )}
+                  <li>
+                    <strong style={{ color: '#ff6b6b' }}>광역 소용돌이 버프 끊김:</strong> 버프 없이 단일 스킬 사용 → 광역 피해 손실
+                  </li>
+                </ul>
+              </div>
+
+              {/* 고급 팁 */}
+              <div style={{
+                background: 'rgba(40, 167, 69, 0.15)',
+                padding: '15px',
+                borderRadius: '8px',
+                border: '1px solid rgba(40, 167, 69, 0.3)'
+              }}>
+                <h5 style={{ color: '#28a745', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  ✅ 고급 팁 (Pro Tips)
+                </h5>
+                <ul style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#ccc' }}>
+                  <li>
+                    <strong style={{ color: '#28a745' }}>Spell Queue Window 활용:</strong> GCD 종료 0.25초 전 다음 스킬 입력 → 즉시 발동
+                  </li>
+                  <li>
+                    <strong style={{ color: '#28a745' }}>Pandemic 메커니즘:</strong> 천둥의 포효 DoT 2-3초 남았을 때 재시전 → 지속시간 추가
+                  </li>
+                  {selectedTier === 'slayer' && (
+                    <>
+                      <li>
+                        <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> 무모한 희생 + 투신 + 5중첩 광란 동시 → 최대 DPS
+                      </li>
+                      <li>
+                        <strong style={{ color: '#28a745' }}>Execute 구간 최적화:</strong> 처형 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜
+                      </li>
+                    </>
+                  )}
+                  {selectedTier === 'mountainThane' && (
+                    <>
+                      <li>
+                        <strong style={{ color: '#28a745' }}>티어 세트 시너지:</strong> 천둥의 포효 → 우레 작렬 즉시 2회 → 폭발 딜
+                      </li>
+                      <li>
+                        <strong style={{ color: '#28a745' }}>광역 최적화:</strong> 천둥의 포효 → 우레 작렬(5명 타격) → 공격력 +10% 버프 활용
+                      </li>
+                    </>
+                  )}
+                  <li>
+                    <strong style={{ color: '#28a745' }}>분노 예측 관리:</strong> 쿨기 타이밍 10초 전 분노 80+ 확보 → 버스트 준비
+                  </li>
+                  <li>
+                    <strong style={{ color: '#28a745' }}>WeakAura 설정:</strong> 격노 버프, {selectedTier === 'slayer' ? '학살의 일격 중첩' : '우레 작렬 쿨'}, 분노 게이지 추적 필수
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
