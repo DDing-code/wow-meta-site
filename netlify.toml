@@ -7,6 +7,23 @@
   NODE_VERSION = "20.11.0"
   NPM_VERSION = "10.2.4"
 
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[context.production.environment]
+  BUILD_IMAGE = "focal"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
