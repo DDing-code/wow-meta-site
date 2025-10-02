@@ -15,6 +15,7 @@ import BeastMasteryLayoutIntegrated from './components/BeastMasteryLayoutIntegra
 import DevastationEvokerLayoutIntegrated from './components/DevastationEvokerLayoutIntegrated';
 import DemonologyWarlockGuide from './components/DemonologyWarlockGuide';
 import AfflictionWarlockGuide from './components/AfflictionWarlockGuide';
+import DestructionWarlockGuide from './components/DestructionWarlockGuide';
 import ElementalShamanGuide from './components/ElementalShamanGuide';
 import GuideTemplate from './components/GuideTemplate';
 // 황폐 기원사 가이드 - 새로운 통합 버전
@@ -97,6 +98,8 @@ function App() {
               <Route path="/guide/warlock/demonology" element={<DemonologyWarlockGuide />} />
               {/* 고통 흑마법사 가이드 - 통합 버전 */}
               <Route path="/guide/warlock/affliction" element={<AfflictionWarlockGuide />} />
+              {/* 파괴 흑마법사 가이드 - 통합 버전 */}
+              <Route path="/guide/warlock/destruction" element={<DestructionWarlockGuide />} />
               {/* 정기 주술사 가이드 - 통합 버전 */}
               <Route path="/guide/shaman/elemental" element={<ElementalShamanGuide />} />
               {/* 가이드 템플릿 - 테스트용 */}

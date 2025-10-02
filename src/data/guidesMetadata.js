@@ -29,6 +29,19 @@ export const guidesMetadata = [
     classColor: '#8788EE'
   },
   {
+    id: 'warlock-destruction',
+    class: '흑마법사',
+    classEng: 'warlock',
+    spec: '파괴',
+    specEng: 'destruction',
+    title: '파괴 흑마법사',
+    patch: '11.2',
+    difficulty: '중급',
+    updateDate: '2025-10-03',
+    link: '/guide/warlock/destruction',
+    classColor: '#8788EE'
+  },
+  {
     id: 'hunter-beast-mastery',
     class: '사냥꾼',
     classEng: 'hunter',
