@@ -94,7 +94,7 @@ const classData = {
       spec: '분노',
       color: classColors.warrior,
       icon: '⚔️',
-      ready: false,
+      ready: true,
       path: '/guide/warrior/fury'
     },
     {

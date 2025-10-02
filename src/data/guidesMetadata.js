@@ -80,6 +80,20 @@ export const guidesMetadata = [
     updateDate: '2025-10-01',
     link: '/guide/shaman/elemental',
     classColor: '#0070DD'
+  },
+  {
+    id: 'warrior-fury',
+    class: '전사',
+    classEng: 'warrior',
+    spec: '분노',
+    specEng: 'fury',
+    title: '분노 전사',
+    patch: '11.2',
+    difficulty: '중급',
+    updateDate: '2025-10-03',
+    link: '/guide/warrior/fury',
+    classColor: '#C69B6D',
+    description: '양손 무기를 휘둘러 폭발적인 피해를 입히는 근접 DPS 전문화'
   }
 ];
 
