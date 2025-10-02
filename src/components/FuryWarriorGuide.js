@@ -1251,43 +1251,201 @@ const FuryWarriorGuide = () => {
               marginTop: '1.5rem'
             }}>단일 대상</h3>
 
-            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>오프닝 시퀀스</h4>
+            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>⏱️ 오프닝 시퀀스 (타임라인)</h4>
             <div style={{
               background: 'rgba(0, 0, 0, 0.3)',
-              padding: '15px',
-              borderRadius: '8px',
-              marginBottom: '15px'
+              padding: '20px',
+              borderRadius: '12px',
+              marginBottom: '20px',
+              border: '1px solid rgba(255, 165, 0, 0.2)'
             }}>
-              <p style={{ fontSize: '0.9rem', color: '#ccc', marginBottom: '10px' }}>
+              <p style={{ fontSize: '0.95rem', color: '#ffa500', marginBottom: '15px', fontWeight: 'bold' }}>
                 {selectedTier === 'slayer' ?
-                  '⏱️ 전투 직전: 악마 소환 후 굴단의 손으로 버스트 준비' :
-                  '⏱️ 전투 직전: 핵심 메커니즘로 악마 강화 준비'}
+                  '🎯 전투 시작 (0-10초): 쿨기 동기화로 폭발적 딜 시작' :
+                  '⚡ 전투 시작 (0-10초): 우레 작렬 중심 버스트 시작'}
               </p>
-              <div className={styles.skillSequence}>
-                {currentContent.singleTarget.opener.map((skill, index, arr) => (
-                  <React.Fragment key={index}>
-                    <SkillIcon skill={skill} size="medium" />
-                    {index < arr.length - 1 && <span className={styles.arrow}>→</span>}
-                  </React.Fragment>
+
+              {/* 타임라인 스타일 스킬 시퀀스 */}
+              <div style={{ position: 'relative', paddingLeft: '40px' }}>
+                {/* 타임라인 라인 */}
+                <div style={{
+                  position: 'absolute',
+                  left: '15px',
+                  top: '0',
+                  bottom: '0',
+                  width: '3px',
+                  background: 'linear-gradient(to bottom, #ffa500, #C69B6D)',
+                  borderRadius: '2px'
+                }} />
+
+                {currentContent.singleTarget.opener.map((skill, index) => (
+                  <div key={index} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: index < currentContent.singleTarget.opener.length - 1 ? '12px' : '0',
+                    position: 'relative'
+                  }}>
+                    {/* 타임라인 도트 */}
+                    <div style={{
+                      position: 'absolute',
+                      left: '-33px',
+                      width: '10px',
+                      height: '10px',
+                      borderRadius: '50%',
+                      background: index === 0 ? '#ffa500' : index === 1 || index === 2 ? '#ff6b6b' : '#C69B6D',
+                      border: '2px solid rgba(0, 0, 0, 0.5)',
+                      zIndex: 1
+                    }} />
+
+                    {/* 스킬 아이콘 및 설명 */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: 1 }}>
+                      <SkillIcon skill={skill} size="medium" />
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <SkillIcon skill={skill} textOnly={true} />
+                          <span style={{
+                            fontSize: '0.8rem',
+                            color: '#888',
+                            fontWeight: 'normal'
+                          }}>
+                            {index === 0 && '(시작)'}
+                            {index === 1 && selectedTier === 'slayer' && '(12초 버스트)'}
+                            {index === 1 && selectedTier === 'mountainThane' && '(12초 버스트)'}
+                            {index === 2 && selectedTier === 'slayer' && '(20초 버스트)'}
+                            {index === 2 && selectedTier === 'mountainThane' && '(20초 버스트)'}
+                            {index === 3 && selectedTier === 'slayer' && '(분노 10 + DoT)'}
+                            {index === 3 && selectedTier === 'mountainThane' && '(광역 번개)'}
+                            {index === 4 && selectedTier === 'slayer' && '(분노 80 소비)'}
+                            {index === 4 && selectedTier === 'mountainThane' && '(분노 10 + DoT)'}
+                            {index === 5 && selectedTier === 'slayer' && '(분노 생성)'}
+                            {index === 5 && selectedTier === 'mountainThane' && '(분노 80 소비)'}
+                            {index === 6 && selectedTier === 'slayer' && '(분노 생성)'}
+                            {index === 6 && selectedTier === 'mountainThane' && '(분노 생성)'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 ))}
               </div>
-              {selectedTier === 'slayer' && (
-                <p style={{ fontSize: '0.85rem', color: '#9482C9', marginTop: '10px' }}>
-                  💡 팁: 악마 폭군은 가능한 많은 악마를 소환한 후 사용
+
+              <div style={{
+                marginTop: '15px',
+                padding: '10px',
+                background: 'rgba(255, 165, 0, 0.1)',
+                borderRadius: '6px',
+                borderLeft: '3px solid #ffa500'
+              }}>
+                <p style={{ fontSize: '0.85rem', color: '#ffa500', margin: 0 }}>
+                  💡 <strong>핵심:</strong> {' '}
+                  {selectedTier === 'slayer' ?
+                    '무모한 희생 + 투신을 동시에 사용하여 12초 동안 치명타 20% + 공격력 20% 증가' :
+                    '우레 작렬은 쿨마다 즉시 사용하며, 천둥의 포효 사용 시 쿨다운 6초 감소'}
                 </p>
-              )}
+              </div>
             </div>
 
-            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>🔄 스킬 우선순위 (플로우차트)</h4>
+
+            {/* 우선순위 플로우차트 스타일 */}
+            <div style={{
+              background: 'rgba(0, 0, 0, 0.3)',
+              padding: '20px',
+              borderRadius: '12px',
+              marginBottom: '20px',
+              border: '1px solid rgba(198, 155, 109, 0.2)'
+            }}>
               {currentContent.singleTarget.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  marginBottom: index < currentContent.singleTarget.priority.length - 1 ? '15px' : '0'
+                }}>
+                  {/* 우선순위 카드 */}
+                  <div style={{
+                    background: index === 0 ? 'rgba(255, 107, 107, 0.15)' :
+                               index === 1 ? 'rgba(255, 165, 0, 0.15)' :
+                               index === 2 ? 'rgba(198, 155, 109, 0.15)' : 'rgba(100, 100, 100, 0.1)',
+                    padding: '12px 15px',
+                    borderRadius: '8px',
+                    border: `1px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? '#C69B6D' : '#666'}`,
+                    position: 'relative'
+                  }}>
+                    {/* 우선순위 번호 배지 */}
+                    <div style={{
+                      position: 'absolute',
+                      left: '-10px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? '#C69B6D' : '#666',
+                      color: '#fff',
+                      width: '28px',
+                      height: '28px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '0.85rem',
+                      fontWeight: 'bold',
+                      border: '2px solid rgba(0, 0, 0, 0.5)'
+                    }}>
+                      {index + 1}
+                    </div>
+
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                      marginLeft: '20px'
+                    }}>
+                      <SkillIcon skill={item.skill} size="small" />
+                      <div style={{ flex: 1 }}>
+                        <div style={{
+                          fontSize: '0.95rem',
+                          fontWeight: 'bold',
+                          marginBottom: '4px',
+                          color: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? '#C69B6D' : '#ccc'
+                        }}>
+                          <SkillIcon skill={item.skill} textOnly={true} />
+                        </div>
+                        <div style={{
+                          fontSize: '0.85rem',
+                          color: '#ccc',
+                          lineHeight: '1.5'
+                        }}>
+                          {item.desc}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건부 화살표 */}
+                  {index < currentContent.singleTarget.priority.length - 1 && (
+                    <div style={{
+                      textAlign: 'center',
+                      padding: '5px 0',
+                      color: '#666',
+                      fontSize: '1.2rem'
+                    }}>
+                      ↓
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+
+              <div style={{
+                marginTop: '15px',
+                padding: '10px',
+                background: 'rgba(198, 155, 109, 0.1)',
+                borderRadius: '6px',
+                borderLeft: '3px solid #C69B6D'
+              }}>
+                <p style={{ fontSize: '0.85rem', color: '#C69B6D', margin: 0 }}>
+                  🎯 <strong>목표:</strong> {' '}
+                  {selectedTier === 'slayer' ?
+                    '격노 버프 유지율 90%+ 유지, 처형 표식 2중첩 시 마무리 일격 최우선' :
+                    '우레 작렬 쿨다운 낭비 방지, 분노 50-70 범위 유지'}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* 광역 대상 */}
@@ -1297,28 +1455,202 @@ const FuryWarriorGuide = () => {
               marginTop: '1.5rem'
             }}>광역 대상 (3+ 타겟)</h3>
 
-            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>오프닝 시퀀스</h4>
-            <div className={styles.openerSequence}>
-              <div className={styles.skillSequence}>
-                {currentContent.aoe.opener.map((skill, index, arr) => (
-                  <React.Fragment key={index}>
-                    <SkillIcon skill={skill} size="medium" />
-                    {index < arr.length - 1 && <span className={styles.arrow}>→</span>}
-                  </React.Fragment>
+            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>⏱️ 오프닝 시퀀스 (타임라인)</h4>
+            <div style={{
+              background: 'rgba(0, 0, 0, 0.3)',
+              padding: '20px',
+              borderRadius: '12px',
+              marginBottom: '20px',
+              border: '1px solid rgba(255, 165, 0, 0.2)'
+            }}>
+              <p style={{ fontSize: '0.95rem', color: '#ffa500', marginBottom: '15px', fontWeight: 'bold' }}>
+                {selectedTier === 'slayer' ?
+                  '💥 광역 시작 (0-10초): 출혈 확산 + 개선된 소용돌이 활용' :
+                  '⚡ 광역 시작 (0-10초): 우레 작렬 + 광역 출혈로 지속 딜'}
+              </p>
+
+              {/* 타임라인 스타일 스킬 시퀀스 */}
+              <div style={{ position: 'relative', paddingLeft: '40px' }}>
+                {/* 타임라인 라인 */}
+                <div style={{
+                  position: 'absolute',
+                  left: '15px',
+                  top: '0',
+                  bottom: '0',
+                  width: '3px',
+                  background: selectedTier === 'slayer' ?
+                    'linear-gradient(to bottom, #ffa500, #9482C9)' :
+                    'linear-gradient(to bottom, #ffa500, #32CD32)',
+                  borderRadius: '2px'
+                }} />
+
+                {currentContent.aoe.opener.map((skill, index) => (
+                  <div key={index} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: index < currentContent.aoe.opener.length - 1 ? '12px' : '0',
+                    position: 'relative'
+                  }}>
+                    {/* 타임라인 도트 */}
+                    <div style={{
+                      position: 'absolute',
+                      left: '-33px',
+                      width: '10px',
+                      height: '10px',
+                      borderRadius: '50%',
+                      background: index === 0 ? '#ffa500' : index === 1 || index === 2 ? '#ff6b6b' : selectedTier === 'slayer' ? '#9482C9' : '#32CD32',
+                      border: '2px solid rgba(0, 0, 0, 0.5)',
+                      zIndex: 1
+                    }} />
+
+                    {/* 스킬 아이콘 및 설명 */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: 1 }}>
+                      <SkillIcon skill={skill} size="medium" />
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <SkillIcon skill={skill} textOnly={true} />
+                          <span style={{
+                            fontSize: '0.8rem',
+                            color: '#888',
+                            fontWeight: 'normal'
+                          }}>
+                            {index === 0 && '(시작)'}
+                            {index === 1 && selectedTier === 'slayer' && '(12초 버스트)'}
+                            {index === 1 && selectedTier === 'mountainThane' && '(12초 버스트)'}
+                            {index === 2 && selectedTier === 'slayer' && '(20초 버스트)'}
+                            {index === 2 && selectedTier === 'mountainThane' && '(20초 버스트)'}
+                            {index === 3 && selectedTier === 'slayer' && '(광역 출혈 DoT)'}
+                            {index === 3 && selectedTier === 'mountainThane' && '(광역 번개)'}
+                            {index === 4 && selectedTier === 'slayer' && '(개선된 소용돌이)'}
+                            {index === 4 && selectedTier === 'mountainThane' && '(광역 출혈 DoT)'}
+                            {index === 5 && selectedTier === 'slayer' && '(분노 80 소비)'}
+                            {index === 5 && selectedTier === 'mountainThane' && '(개선된 소용돌이)'}
+                            {index === 6 && selectedTier === 'mountainThane' && '(분노 80 소비)'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 ))}
+              </div>
+
+              <div style={{
+                marginTop: '15px',
+                padding: '10px',
+                background: 'rgba(255, 165, 0, 0.1)',
+                borderRadius: '6px',
+                borderLeft: '3px solid #ffa500'
+              }}>
+                <p style={{ fontSize: '0.85rem', color: '#ffa500', margin: 0 }}>
+                  💡 <strong>핵심:</strong> {' '}
+                  {selectedTier === 'slayer' ?
+                    '천둥의 포효로 광역 출혈 적용 후 소용돌이로 광역 딜 확산' :
+                    '우레 작렬 + 천둥의 포효 조합으로 티어 세트 시너지 극대화 (쿨 6초 감소)'}
+                </p>
               </div>
             </div>
 
-            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>🔄 스킬 우선순위 (플로우차트)</h4>
+
+            {/* 우선순위 플로우차트 스타일 */}
+            <div style={{
+              background: 'rgba(0, 0, 0, 0.3)',
+              padding: '20px',
+              borderRadius: '12px',
+              marginBottom: '20px',
+              border: `1px solid ${selectedTier === 'slayer' ? 'rgba(148, 130, 201, 0.2)' : 'rgba(50, 205, 50, 0.2)'}`
+            }}>
               {currentContent.aoe.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  marginBottom: index < currentContent.aoe.priority.length - 1 ? '15px' : '0'
+                }}>
+                  {/* 우선순위 카드 */}
+                  <div style={{
+                    background: index === 0 ? 'rgba(255, 107, 107, 0.15)' :
+                               index === 1 ? 'rgba(255, 165, 0, 0.15)' :
+                               index === 2 ? selectedTier === 'slayer' ? 'rgba(148, 130, 201, 0.15)' : 'rgba(50, 205, 50, 0.15)' : 'rgba(100, 100, 100, 0.1)',
+                    padding: '12px 15px',
+                    borderRadius: '8px',
+                    border: `1px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? (selectedTier === 'slayer' ? '#9482C9' : '#32CD32') : '#666'}`,
+                    position: 'relative'
+                  }}>
+                    {/* 우선순위 번호 배지 */}
+                    <div style={{
+                      position: 'absolute',
+                      left: '-10px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? (selectedTier === 'slayer' ? '#9482C9' : '#32CD32') : '#666',
+                      color: '#fff',
+                      width: '28px',
+                      height: '28px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '0.85rem',
+                      fontWeight: 'bold',
+                      border: '2px solid rgba(0, 0, 0, 0.5)'
+                    }}>
+                      {index + 1}
+                    </div>
+
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                      marginLeft: '20px'
+                    }}>
+                      <SkillIcon skill={item.skill} size="small" />
+                      <div style={{ flex: 1 }}>
+                        <div style={{
+                          fontSize: '0.95rem',
+                          fontWeight: 'bold',
+                          marginBottom: '4px',
+                          color: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : index === 2 ? (selectedTier === 'slayer' ? '#9482C9' : '#32CD32') : '#ccc'
+                        }}>
+                          <SkillIcon skill={item.skill} textOnly={true} />
+                        </div>
+                        <div style={{
+                          fontSize: '0.85rem',
+                          color: '#ccc',
+                          lineHeight: '1.5'
+                        }}>
+                          {item.desc}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건부 화살표 */}
+                  {index < currentContent.aoe.priority.length - 1 && (
+                    <div style={{
+                      textAlign: 'center',
+                      padding: '5px 0',
+                      color: '#666',
+                      fontSize: '1.2rem'
+                    }}>
+                      ↓
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+
+              <div style={{
+                marginTop: '15px',
+                padding: '10px',
+                background: selectedTier === 'slayer' ? 'rgba(148, 130, 201, 0.1)' : 'rgba(50, 205, 50, 0.1)',
+                borderRadius: '6px',
+                borderLeft: `3px solid ${selectedTier === 'slayer' ? '#9482C9' : '#32CD32'}`
+              }}>
+                <p style={{ fontSize: '0.85rem', color: selectedTier === 'slayer' ? '#9482C9' : '#32CD32', margin: 0 }}>
+                  🎯 <strong>목표:</strong> {' '}
+                  {selectedTier === 'slayer' ?
+                    '개선된 소용돌이 버프 유지, Execute 광역화로 여러 적 동시 처형' :
+                    '우레 작렬 광역 피해 극대화 (5명 타격 시 티어 4세트 10% 공격력)'}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* 심화 분석 섹션 추가 */}
@@ -1446,6 +1778,154 @@ const FuryWarriorGuide = () => {
                   <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
                     ⚠️ 분노 관리 전략
                   </h4>
+
+                  {/* 분노 게이지 시각화 */}
+                  <div style={{
+                    background: 'rgba(0, 0, 0, 0.4)',
+                    padding: '15px',
+                    borderRadius: '8px',
+                    marginBottom: '15px',
+                    border: '1px solid rgba(255, 152, 0, 0.3)'
+                  }}>
+                    <p style={{ fontSize: '0.9rem', color: '#ffa500', marginBottom: '12px', fontWeight: 'bold' }}>
+                      📊 분노 게이지 관리
+                    </p>
+
+                    {/* 게이지 바 */}
+                    <div style={{
+                      position: 'relative',
+                      height: '40px',
+                      background: 'rgba(0, 0, 0, 0.5)',
+                      borderRadius: '20px',
+                      overflow: 'hidden',
+                      border: '2px solid rgba(255, 152, 0, 0.5)',
+                      marginBottom: '15px'
+                    }}>
+                      {/* 위험 구간 (0-40) - 빨간색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '0',
+                        bottom: '0',
+                        width: '33.3%',
+                        background: 'linear-gradient(90deg, rgba(220, 53, 69, 0.3), rgba(220, 53, 69, 0.2))'
+                      }} />
+
+                      {/* 이상적 구간 (40-60) - 초록색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '33.3%',
+                        top: '0',
+                        bottom: '0',
+                        width: '16.7%',
+                        background: 'linear-gradient(90deg, rgba(40, 167, 69, 0.4), rgba(40, 167, 69, 0.3))'
+                      }} />
+
+                      {/* 안전 구간 (60-80) - 노란색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '50%',
+                        top: '0',
+                        bottom: '0',
+                        width: '16.7%',
+                        background: 'linear-gradient(90deg, rgba(255, 193, 7, 0.3), rgba(255, 193, 7, 0.2))'
+                      }} />
+
+                      {/* 광란 사용 (80-120) - 주황색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '66.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '33.3%',
+                        background: 'linear-gradient(90deg, rgba(255, 165, 0, 0.4), rgba(255, 107, 107, 0.4))'
+                      }} />
+
+                      {/* 구간 표시선 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '33.3%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#dc3545'
+                      }} />
+                      <div style={{
+                        position: 'absolute',
+                        left: '50%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#28a745'
+                      }} />
+                      <div style={{
+                        position: 'absolute',
+                        left: '66.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#ffc107'
+                      }} />
+
+                      {/* 수치 표시 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        width: '100%',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        padding: '0 10px',
+                        fontSize: '0.75rem',
+                        fontWeight: 'bold',
+                        color: '#fff'
+                      }}>
+                        <span>0</span>
+                        <span style={{ color: '#dc3545' }}>40</span>
+                        <span style={{ color: '#28a745' }}>60</span>
+                        <span style={{ color: '#ffc107' }}>80</span>
+                        <span>120</span>
+                      </div>
+                    </div>
+
+                    {/* 구간별 설명 */}
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px', fontSize: '0.8rem' }}>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(220, 53, 69, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(220, 53, 69, 0.3)'
+                      }}>
+                        <strong style={{ color: '#dc3545' }}>0-40:</strong> <span style={{ color: '#ccc' }}>위험 (격노 끊김)</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(40, 167, 69, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(40, 167, 69, 0.3)'
+                      }}>
+                        <strong style={{ color: '#28a745' }}>40-60:</strong> <span style={{ color: '#ccc' }}>이상적 범위</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(255, 193, 7, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(255, 193, 7, 0.3)'
+                      }}>
+                        <strong style={{ color: '#ffc107' }}>60-80:</strong> <span style={{ color: '#ccc' }}>광란 준비</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(255, 165, 0, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(255, 165, 0, 0.3)'
+                      }}>
+                        <strong style={{ color: '#ffa500' }}>80-120:</strong> <span style={{ color: '#ccc' }}>즉시 광란 사용</span>
+                      </div>
+                    </div>
+                  </div>
+
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
                       <strong style={{ color: '#ffa500' }}>이상적 범위:</strong> 40-60 분노 유지 (유연성 확보)
@@ -1594,6 +2074,173 @@ const FuryWarriorGuide = () => {
                   <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
                     ⚠️ 분노 관리 전략 (산왕)
                   </h4>
+
+                  {/* 분노 게이지 시각화 - 산왕 */}
+                  <div style={{
+                    background: 'rgba(0, 0, 0, 0.4)',
+                    padding: '15px',
+                    borderRadius: '8px',
+                    marginBottom: '15px',
+                    border: '1px solid rgba(78, 205, 196, 0.3)'
+                  }}>
+                    <p style={{ fontSize: '0.9rem', color: '#4ECDC4', marginBottom: '12px', fontWeight: 'bold' }}>
+                      📊 분노 게이지 관리 (산왕)
+                    </p>
+
+                    {/* 게이지 바 */}
+                    <div style={{
+                      position: 'relative',
+                      height: '40px',
+                      background: 'rgba(0, 0, 0, 0.5)',
+                      borderRadius: '20px',
+                      overflow: 'hidden',
+                      border: '2px solid rgba(78, 205, 196, 0.5)',
+                      marginBottom: '15px'
+                    }}>
+                      {/* 위험 구간 (0-30) - 빨간색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '0',
+                        bottom: '0',
+                        width: '25%',
+                        background: 'linear-gradient(90deg, rgba(220, 53, 69, 0.3), rgba(220, 53, 69, 0.2))'
+                      }} />
+
+                      {/* 우레 작렬 준비 (30-50) - 청록색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '25%',
+                        top: '0',
+                        bottom: '0',
+                        width: '16.7%',
+                        background: 'linear-gradient(90deg, rgba(78, 205, 196, 0.4), rgba(78, 205, 196, 0.3))'
+                      }} />
+
+                      {/* 이상적 구간 (50-70) - 초록색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '41.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '16.7%',
+                        background: 'linear-gradient(90deg, rgba(40, 167, 69, 0.4), rgba(40, 167, 69, 0.3))'
+                      }} />
+
+                      {/* 광란 준비 (70-80) - 노란색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '58.3%',
+                        top: '0',
+                        bottom: '0',
+                        width: '8.3%',
+                        background: 'linear-gradient(90deg, rgba(255, 193, 7, 0.3), rgba(255, 193, 7, 0.2))'
+                      }} />
+
+                      {/* 광란 사용 (80-120) - 주황색 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '66.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '33.3%',
+                        background: 'linear-gradient(90deg, rgba(255, 165, 0, 0.4), rgba(255, 107, 107, 0.4))'
+                      }} />
+
+                      {/* 구간 표시선 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '25%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#dc3545'
+                      }} />
+                      <div style={{
+                        position: 'absolute',
+                        left: '41.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#4ECDC4'
+                      }} />
+                      <div style={{
+                        position: 'absolute',
+                        left: '58.3%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#28a745'
+                      }} />
+                      <div style={{
+                        position: 'absolute',
+                        left: '66.7%',
+                        top: '0',
+                        bottom: '0',
+                        width: '2px',
+                        background: '#ffc107'
+                      }} />
+
+                      {/* 수치 표시 */}
+                      <div style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        width: '100%',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        padding: '0 10px',
+                        fontSize: '0.75rem',
+                        fontWeight: 'bold',
+                        color: '#fff'
+                      }}>
+                        <span>0</span>
+                        <span style={{ color: '#dc3545' }}>30</span>
+                        <span style={{ color: '#4ECDC4' }}>50</span>
+                        <span style={{ color: '#28a745' }}>70</span>
+                        <span style={{ color: '#ffc107' }}>80</span>
+                        <span>120</span>
+                      </div>
+                    </div>
+
+                    {/* 구간별 설명 */}
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px', fontSize: '0.8rem' }}>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(220, 53, 69, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(220, 53, 69, 0.3)'
+                      }}>
+                        <strong style={{ color: '#dc3545' }}>0-30:</strong> <span style={{ color: '#ccc' }}>위험 (우레 작렬 사용 불가)</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(78, 205, 196, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(78, 205, 196, 0.3)'
+                      }}>
+                        <strong style={{ color: '#4ECDC4' }}>30-50:</strong> <span style={{ color: '#ccc' }}>우레 작렬 준비</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(40, 167, 69, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(40, 167, 69, 0.3)'
+                      }}>
+                        <strong style={{ color: '#28a745' }}>50-70:</strong> <span style={{ color: '#ccc' }}>이상적 범위</span>
+                      </div>
+                      <div style={{
+                        padding: '6px 10px',
+                        background: 'rgba(255, 165, 0, 0.15)',
+                        borderRadius: '4px',
+                        border: '1px solid rgba(255, 165, 0, 0.3)'
+                      }}>
+                        <strong style={{ color: '#ffa500' }}>80-120:</strong> <span style={{ color: '#ccc' }}>즉시 광란 사용</span>
+                      </div>
+                    </div>
+                  </div>
+
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
                       <strong style={{ color: '#ffa500' }}>이상적 범위:</strong> 50-70 분노 유지 (<SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 30 + <SkillIcon skill={skillData.rampage} textOnly={true} /> 80)
