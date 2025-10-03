@@ -47,11 +47,11 @@ export const furyWarriorSkills = {
     koreanName: "마무리 일격",
     englishName: "Execute",
     icon: "inv_sword_48",
-    description: "상처 입은 적에게 마무리 일격을 시도하여 [(전투력의 321.057%) + (전투력의 321.057%)]의 물리 피해를 입힙니다. 생명력이 20% 미만인 적에게만 사용할 수 있습니다. [마무리 일격 연마: 0의 분노를 생성합니다.]",
+    description: "상처 입은 적에게 마무리 일격을 시도하여 [(전투력의 321.057%) + (전투력의 321.057%)]의 물리 피해를 입힙니다. 생명력이 20% 미만인 적에게만 사용할 수 있습니다. 분노를 20 생성합니다.",
     cooldown: "6 초",
     castTime: "즉시",
-    resourceCost: "분노 20-40",
-    resourceGain: "없음",
+    resourceCost: "없음",
+    resourceGain: "분노 20",
     type: "기본",
     spec: "분노"
   },
@@ -60,7 +60,7 @@ export const furyWarriorSkills = {
     koreanName: "소용돌이",
     englishName: "Whirlwind",
     icon: "ability_whirlwind",
-    description: "강철의 소용돌이를 내뿜어 주위 모든 적을 강타하고 [(전투력의 41.9991%) + (전투력의 41.9991%) + (2 * ((전투력의 41.9991%) + (전투력의 41.9991%)))]의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다. [소용돌이 연마: 다음 2번의 단일 대상 공격이 최대 4명의 대상에게 추가로 적중하여 4%만큼의 피해를 입힙니다] [3의 분노를 생성하며, 적중한 대상 하나당 1의 분노를 추가로 생성합니다.]",
+    description: "강철의 소용돌이를 내뿜어 주위 모든 적을 강타하고 [(전투력의 41.9991%) + (전투력의 41.9991%) + (2 * ((전투력의 41.9991%) + (전투력의 41.9991%)))]의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다. [개선된 소용돌이: 다음 2번의 단일 대상 공격이 최대 4명의 대상에게 추가로 적중하여 65%만큼의 피해를 입힙니다] [3의 분노를 생성하며, 적중한 대상 하나당 1의 분노를 추가로 생성합니다.]",
     cooldown: "없음",
     castTime: "즉시",
     resourceCost: "없음",
@@ -96,19 +96,6 @@ export const furyWarriorSkills = {
     type: "기본",
     spec: "분노"
   },
-  championsSpear: {
-    id: "376079",
-    koreanName: "용사의 창",
-    englishName: "Champion's Spear",
-    icon: "inv_ability_warrior_championsspear",
-    description: "대상 위치에 창을 던져 즉시 (전투력의 239.25%)의 물리 피해를 입히고 4초에 걸쳐 (전투력의 217.5%)의 추가 피해를 입힙니다. 5명을 초과하는 대상에게는 감소된 피해를 입힙니다.적중당한 적은 지속시간 동안 창의 위치에 사슬로 속박됩니다.10의 분노를 생성합니다.",
-    cooldown: "1.5 분",
-    castTime: "즉시",
-    resourceCost: "없음",
-    resourceGain: "분노 10",
-    type: "기본",
-    spec: "분노"
-  },
   thunderousRoar: {
     id: "384318",
     koreanName: "천둥의 포효",
@@ -120,6 +107,19 @@ export const furyWarriorSkills = {
     resourceCost: "없음",
     resourceGain: "없음",
     type: "기본",
+    spec: "분노"
+  },
+  bladestorm: {
+    id: "227847",
+    koreanName: "칼날폭풍",
+    englishName: "Bladestorm",
+    icon: "ability_warrior_bladestorm",
+    description: "4초 동안 회오리바람이 되어 주위의 모든 적에게 물리 피해를 입힙니다.",
+    cooldown: "1.5 분",
+    castTime: "즉시",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "특성",
     spec: "분노"
   },
 
@@ -177,6 +177,20 @@ export const furyWarriorSkills = {
     resourceCost: "없음",
     resourceGain: "분노 4",
     type: "기본",
+    spec: "분노"
+  },
+  stormBolt: {
+    id: "427114",
+    koreanName: "폭풍망치",
+    englishName: "Storm Bolt",
+    icon: "warrior_talent_icon_stormbolt",
+    description: "적에게 무기를 던져 (전투력의 28.5%)의 물리 피해를 입히고 4초 동안 기절시킵니다.",
+    cooldown: "30 초",
+    castTime: "즉시",
+    range: "20 야드",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "특성",
     spec: "분노"
   },
 
@@ -273,5 +287,78 @@ export const furyWarriorSkills = {
     resourceGain: "없음",
     type: "기본",
     spec: "분노"
+  },
+
+  // ===== 특성 =====
+  suddenDeath: {
+    id: "29725",
+    koreanName: "급살",
+    englishName: "Sudden Death",
+    icon: "ability_warrior_improveddisciplines",
+    description: "자동 공격이 대상의 생명력에 관계없이 마무리 일격을 사용할 수 있게 합니다. 최대 2회까지 중첩됩니다.",
+    cooldown: "없음",
+    castTime: "패시브",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "특성",
+    spec: "분노"
+  },
+  enrage: {
+    id: "184362",
+    koreanName: "격노",
+    englishName: "Enrage",
+    icon: "spell_shadow_unholyfrenzy",
+    description: "분노 생성량이 100% 증가합니다. 가속이 25% 증가, 피해가 15%만큼 증가합니다. 4초 동안 지속됩니다. 광란 사용 시 격노가 자동으로 발동됩니다.",
+    cooldown: "없음",
+    castTime: "패시브",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "버프",
+    spec: "분노",
+    duration: "4초"
+  },
+
+  // ===== 영웅 특성 - 학살자 =====
+  slayersStrike: {
+    id: "445579",
+    koreanName: "학살자의 일격",
+    englishName: "Slayer's Strike",
+    icon: "inv_ability_slayerwarrior_slayersdominance",
+    description: "주 대상에게 공격 시 높은 확률로 대상의 방어를 압도하고 학살자의 일격을 발동시켜 (전투력의 333.5%)의 물리 피해를 입히고 사형의 징표를 부여합니다. 사형의 징표는 대상이 다음 마무리 일격으로 받는 피해를 15%만큼 증가시킵니다. 최대 3번까지 중첩됩니다.",
+    cooldown: "없음",
+    castTime: "즉시",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "영웅특성",
+    spec: "분노",
+    heroTalent: "학살자"
+  },
+  reapTheStorm: {
+    id: "444775",
+    koreanName: "폭풍을 거두는 자",
+    englishName: "Reap the Storm",
+    icon: "ability_arakkoa_spinning_blade",
+    description: "피의 갈증 사용 시 20%의 확률로 강철의 질풍을 방출하여 주위의 모든 적을 공격해 (전투력의 371.11%)의 물리 피해를 입히고 압도당함 효과를 부여합니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+    cooldown: "없음",
+    castTime: "패시브",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "영웅특성",
+    spec: "분노",
+    heroTalent: "학살자"
+  },
+  brutalFinish: {
+    id: "446085",
+    koreanName: "잔혹한 마무리",
+    englishName: "Brutal Finish",
+    icon: "ability_revendreth_warrior",
+    description: "칼날폭풍이 끝난 후에 사용하는 다음 광란의 공격력이 50%만큼 증가합니다.",
+    cooldown: "없음",
+    castTime: "패시브",
+    resourceCost: "없음",
+    resourceGain: "없음",
+    type: "영웅특성",
+    spec: "분노",
+    heroTalent: "학살자"
   }
 };

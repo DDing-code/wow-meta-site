@@ -283,21 +283,21 @@ const getHeroContent = (SkillIcon) => ({
     name: '학살자',
     icon: '⚔️',
     tierSet: {
-      '2set': '2세트: 무모한 희생 사용 시 격노 상태를 3초 연장합니다.',
-      '4set': '4세트: 격노 상태에서 광란 사용 시 공격력이 추가로 8% 증가합니다.'
+      '2set': '2세트: 마무리 일격 피해가 20% 증가하고, 급살의 마무리 일격이 대상의 압도 중첩당 10% 확률로 학살자의 일격을 100% 효과로 발동합니다.',
+      '4set': '4세트: 분노의 강타 피해가 20% 증가하고, 분노의 강타가 대상의 압도 중첩당 2% 확률로 폭풍 수확을 100% 효과로 발동합니다.'
     },
     singleTarget: {
       opener: [
         skillData.charge,
+        skillData.bloodthirst,
+        // 격노가 안 뜨면: ragingBlow + rampage
         skillData.recklessness,
         skillData.avatar,
-        skillData.championsSpear,
         skillData.thunderousRoar,
-        skillData.rampage,
+        skillData.bladestorm,
+        skillData.stormBolt,
         skillData.ragingBlow,
-        skillData.bloodthirst,
-        skillData.ragingBlow,
-        skillData.execute
+        skillData.rampage
       ],
       priority: [
         {
@@ -308,26 +308,29 @@ const getHeroContent = (SkillIcon) => ({
             'OR 격노 버프 1 GCD(1.5초) 내 만료',
             '분노 80 이상 보유'
           ],
-          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 20% 증가 버프'
+          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 15% 증가 + 분노 생성 100% 증가 (0순위)'
         },
         {
           skill: skillData.execute,
-          desc: '마무리 일격 표식 활용',
+          desc: '사형선고 2중첩 + 급살 마무리 일격',
           conditions: [
-            '마무리 일격 표식 2중첩 이상 (피해 20% 증가)',
-            'OR 갑작스런 죽음 2중첩',
-            'OR 갑작스런 죽음 버프 5초 내 만료'
+            '격노 버프 활성 중 (필수 조건)',
+            '사형선고 2중첩 (마무리 일격 피해 30% 증가)',
+            'OR 급살 2중첩',
+            'OR 급살 버프 곧 만료 (15초 지속)',
+            '핵심: 마무리 일격은 분노를 소모하지 않음'
           ],
-          why: '마무리 일격 표식 2중첩 시 마무리 일격 피해 20% 증가'
+          why: '사형선고 2중첩 또는 급살 2중첩/만료 직전 시 광란보다 우선'
         },
         {
           skill: skillData.rampage,
-          desc: '학살의 일격 중첩 소모',
+          desc: '학살의 일격 중첩 소모로 광란 데미지 극대화',
           conditions: [
-            '학살의 일격 5중첩',
+            '학살의 일격 3중첩 달성 목표 (최대 5중첩, 현실적으론 3중첩)',
+            '격노 버프 활성 중',
             '분노 80 이상'
           ],
-          why: '5중첩 시 광란 피해 25% 증가 효과 활용'
+          why: '격노 유지 시간 동안 분노의 강타로 중첩 쌓아 광란 데미지 극대화'
         },
         {
           skill: skillData.ragingBlow,
@@ -361,7 +364,7 @@ const getHeroContent = (SkillIcon) => ({
           desc: '마무리 일격 구간 (20% 이하)',
           conditions: [
             '대상 생명력 20% 이하',
-            '분노 20-40 사용 (소모량 조절)'
+            '분노 소모 없음'
           ],
           why: '마무리 일격 구간에서 마무리 일격이 광란보다 우선'
         },
@@ -396,56 +399,57 @@ const getHeroContent = (SkillIcon) => ({
           skill: skillData.execute,
           desc: '필러 스킬',
           conditions: [
-            '다른 모든 스킬 사용 불가',
-            '분노 20 이상'
+            '다른 모든 스킬 사용 불가'
           ],
-          why: '분노 소모 + 마무리 일격 표식 중첩 생성'
+          why: '마무리 일격 표식 중첩 생성 (분노 소모 없음)'
         }
       ]
     },
     aoe: {
       opener: [
         skillData.charge,
+        skillData.bloodthirst,
+        skillData.whirlwind,
+        // 격노가 안 뜨면: rampage
         skillData.recklessness,
         skillData.avatar,
-        skillData.championsSpear,
+        skillData.bladestorm,
+        skillData.stormBolt,
         skillData.thunderousRoar,
-        skillData.whirlwind,
-        skillData.rampage,
         skillData.ragingBlow,
-        skillData.bloodthirst,
-        skillData.whirlwind
+        skillData.ragingBlow,
+        skillData.rampage
       ],
       priority: [
         {
-          skill: skillData.whirlwind,
-          desc: '개선된 소용돌이 유지 (최우선)',
-          conditions: [
-            '소용돌이 버프 없음 OR 1중첩 이하',
-            '다음 2번 공격 광역화',
-            '3명 이상 대상에 4% 피해'
-          ],
-          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
-        },
-        {
           skill: skillData.rampage,
-          desc: '격노 버프 유지',
+          desc: '격노 버프 유지 (최우선)',
           conditions: [
             '격노 버프 없음',
             'OR 격노 1 GCD 내 만료',
             '분노 80 이상'
           ],
-          why: '가속 25% + 피해 20% 증가 - 광역에서도 필수'
+          why: '가속 25% + 피해 15% 증가 - 광역에서도 필수 (0순위)'
+        },
+        {
+          skill: skillData.whirlwind,
+          desc: '개선된 소용돌이 유지',
+          conditions: [
+            '소용돌이 버프 없음 OR 1중첩 이하',
+            '다음 2번 공격이 최대 4명 광역화',
+            '각 대상에 65% 피해'
+          ],
+          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
         },
         {
           skill: skillData.execute,
-          desc: '광역 마무리 일격 (3+ 적 20% 이하)',
+          desc: '광역 마무리 일격 (4명+ 적 20% 이하)',
           conditions: [
-            '3명 이상 대상 생명력 20% 이하',
+            '4명 이상 대상 생명력 20% 이하',
             '소용돌이 버프 활성',
-            '분노 20-40 사용'
+            '분노 소모 없음'
           ],
-          why: '소용돌이 버프로 여러 적 동시 마무리 일격 - 폭발적 광역 딜'
+          why: '소용돌이 버프로 최대 4명 동시 마무리 일격 - 폭발적 광역 딜'
         },
         {
           skill: skillData.thunderousRoar,
@@ -518,21 +522,22 @@ const getHeroContent = (SkillIcon) => ({
         details: [
           '버프 만료 1 GCD(1.5초) 전 광란 준비 필수',
           '분노 80+ 유지로 광란 즉시 사용 가능 상태 유지',
-          '무모한 희생 사용 시: 2세트 효과로 3초 연장 (총 15초)'
+          '티어 4세트: 분노의 강타 피해 20% 증가 + 폭풍 수확 발동'
         ],
         why: '가속 25% + 피해 20% 증가 - 분노 전사 핵심 버프'
       },
       {
-        title: '마무리 일격 표식 시스템',
-        icon: '💀',
-        desc: '마무리 일격 사용 시 2중첩 시 피해 20% 증가',
+        title: '학살자 핵심 메커니즘',
+        icon: '⚔️',
+        desc: '학살의 일격 중첩 → 광란 데미지 극대화 → 사형선고 마무리 일격',
         details: [
-          '1중첩: 마무리 일격 피해 10% 증가',
-          '2중첩: 마무리 일격 피해 20% 증가 (최대)',
-          '우선순위: 2중첩 시 즉시 마무리 일격 사용',
-          '갑작스런 죽음 버프: 5초 내 마무리 일격 사용 권장'
+          '1단계: 격노 업타임 최대 유지 (90%+ 목표)',
+          '2단계: 분노의 강타로 학살의 일격 중첩 쌓기 → 광란 데미지 극대화',
+          '3단계: 사형선고 2중첩 + 급살 버프 시 격노 활성화 조건에서 광란보다 마무리 일격 우선',
+          '이유: 사형선고 1중첩 마무리 일격 < 광란, 사형선고 2중첩 마무리 일격 > 광란',
+          '핵심: 마무리 일격은 분노를 소모하지 않음 (광란은 80 소모)'
         ],
-        why: '마무리 일격 구간 DPS 극대화 - 학살자 핵심 메커니즘'
+        why: '학살자 최적 딜사이클 - 중첩 관리 및 우선순위 시스템'
       }
     ]
   },
@@ -540,8 +545,8 @@ const getHeroContent = (SkillIcon) => ({
     name: '산왕',
     icon: '⚡',
     tierSet: {
-      '2set': '2세트: 천둥의 포효 사용 시 우레 작렬의 재사용 대기시간이 6초 감소합니다.',
-      '4set': '4세트: 우레 작렬이 적중한 대상 하나당 공격력이 2% 증가하며, 최대 10%까지 중첩됩니다.'
+      '2set': '2세트: 우레 작렬이 35% 확률로 영향받은 대상에게 5개의 이온화 일격을 소환하여 각각 자연 피해를 입힙니다.',
+      '4set': '4세트: 이온화 일격이 50% 더 많은 피해를 입히며, 20% 확률로 우레 작렬 충전을 획득합니다.'
     },
     singleTarget: {
       opener: [
@@ -549,7 +554,6 @@ const getHeroContent = (SkillIcon) => ({
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderBlast,
-        skillData.championsSpear,
         skillData.thunderousRoar,
         skillData.thunderBlast,
         skillData.rampage,
@@ -566,7 +570,7 @@ const getHeroContent = (SkillIcon) => ({
             'OR 격노 버프 1 GCD 내 만료',
             '분노 80 이상 보유'
           ],
-          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 20% 증가'
+          why: '격노 유지율 90%+ 목표 - 가속 25% + 피해 15% 증가 + 분노 생성 100% 증가 (0순위)'
         },
         {
           skill: skillData.thunderBlast,
@@ -583,7 +587,7 @@ const getHeroContent = (SkillIcon) => ({
           desc: '마무리 일격 표식 활용',
           conditions: [
             '마무리 일격 표식 2중첩 이상',
-            'OR 갑작스런 죽음 2중첩',
+            'OR 급살 2중첩',
             'OR 버프 5초 내 만료'
           ],
           why: '마무리 일격 표식 2중첩 시 피해 20% 증가'
@@ -592,10 +596,10 @@ const getHeroContent = (SkillIcon) => ({
           skill: skillData.rampage,
           desc: '학살의 일격 중첩 소모',
           conditions: [
-            '학살의 일격 5중첩',
+            '학살의 일격 3중첩 이상 (현실적 목표)',
             '분노 80 이상'
           ],
-          why: '5중첩 시 광란 피해 25% 증가'
+          why: '중첩당 광란 피해 증가 (최대 5중첩, 현실적으론 3중첩)'
         },
         {
           skill: skillData.ragingBlow,
@@ -629,7 +633,7 @@ const getHeroContent = (SkillIcon) => ({
           desc: '마무리 일격 구간 (20% 이하)',
           conditions: [
             '대상 생명력 20% 이하',
-            '분노 20-40 사용'
+            '분노 소모 없음'
           ],
           why: '마무리 일격 구간에서 우선 사용'
         },
@@ -668,7 +672,6 @@ const getHeroContent = (SkillIcon) => ({
         skillData.recklessness,
         skillData.avatar,
         skillData.thunderBlast,
-        skillData.championsSpear,
         skillData.thunderousRoar,
         skillData.thunderBlast,  // 천둥의 포효 후 재사용
         skillData.whirlwind,
@@ -679,24 +682,24 @@ const getHeroContent = (SkillIcon) => ({
       ],
       priority: [
         {
-          skill: skillData.whirlwind,
-          desc: '개선된 소용돌이 유지 (최우선)',
-          conditions: [
-            '소용돌이 버프 없음 OR 1중첩 이하',
-            '다음 2번 공격 광역화',
-            '3명 이상 대상에 4% 피해'
-          ],
-          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
-        },
-        {
           skill: skillData.rampage,
-          desc: '격노 버프 유지',
+          desc: '격노 버프 유지 (최우선)',
           conditions: [
             '격노 버프 없음',
             'OR 격노 버프 1 GCD 내 만료',
             '분노 80 이상 보유'
           ],
-          why: '격노 유지율 90%+ - 가속 25% + 피해 20% 증가'
+          why: '격노 유지율 90%+ - 가속 25% + 피해 15% 증가 + 분노 생성 100% 증가 (0순위)'
+        },
+        {
+          skill: skillData.whirlwind,
+          desc: '개선된 소용돌이 유지',
+          conditions: [
+            '소용돌이 버프 없음 OR 1중첩 이하',
+            '다음 2번 공격이 최대 4명 광역화',
+            '각 대상에 65% 피해'
+          ],
+          why: '모든 단일 대상 스킬을 광역화 - 핵심 광역 메커니즘'
         },
         {
           skill: skillData.thunderBlast,
@@ -707,24 +710,24 @@ const getHeroContent = (SkillIcon) => ({
             '8미터 반경 광역 번개 피해',
             '10초간 20% 감속 효과'
           ],
-          why: '산왕 주력 광역 스킬 - 티어 세트로 쿨감 받음'
+          why: '산왕 주력 광역 스킬 - 티어 세트로 이온화 일격 소환'
         },
         {
           skill: skillData.thunderousRoar,
           desc: '천둥의 포효',
           conditions: [
             '재사용 대기시간마다 (1.5분)',
-            '티어 세트 2세트: 우레 작렬 쿨감 3초',
-            '12미터 광역 + 8초 출혈 도트'
+            '12미터 광역 + 8초 출혈 도트',
+            '산왕 핵심 버스트 스킬'
           ],
-          why: '티어 세트 시너지로 우레 작렬 쿨타임 단축'
+          why: '광역 출혈 피해로 지속 딜 증가'
         },
         {
           skill: skillData.execute,
           desc: '마무리 일격 (마무리 일격 구간)',
           conditions: [
             '여러 적이 생명력 20% 이하',
-            '분노 20-40 소모',
+            '분노 소모 없음',
             '소용돌이 버프로 광역화'
           ],
           why: '마무리 일격 구간 최고 DPS - 소용돌이로 광역 적중'
@@ -791,21 +794,21 @@ const getHeroContent = (SkillIcon) => ({
         details: [
           '버프 만료 1 GCD(1.5초) 전 광란 준비 필수',
           '분노 80+ 유지로 광란 즉시 사용 가능 상태 유지',
-          '무모한 희생 사용 시: 2세트 효과로 3초 연장 (총 15초)'
+          '티어 4세트: 분노의 강타 피해 20% 증가 + 폭풍 수확 발동'
         ],
         why: '가속 25% + 피해 20% 증가 - 분노 전사 핵심 버프'
       },
       {
         title: '우레 작렬 티어 세트 시너지',
         icon: '⚡',
-        desc: '산왕 핵심 - 천둥의 포효와 우레 작렬 연계',
+        desc: '산왕 핵심 - 우레 작렬과 이온화 일격 연계',
         details: [
-          '2세트: 천둥의 포효 → 우레 작렬 쿨타임 6초 감소',
-          '4세트: 우레 작렬 적중 대상당 공격력 2% (최대 10%)',
-          '최적 사이클: 천둥의 포효(1.5분) → 우레 작렬(6초→즉시) 반복',
+          '2세트: 우레 작렬 35% 확률로 이온화 일격 5개 소환',
+          '4세트: 이온화 일격 피해 50% 증가 + 20% 우레 작렬 충전 획득',
+          '최적 사이클: 우레 작렬(6초) 지속 사용 → 이온화 일격 극대화',
           '분노 관리: 30 분노 소모 → 우레 작렬 지속 사용 위해 분노 생성 최적화'
         ],
-        why: '산왕 특화 DPS 극대화 - 2/4세트 풀 시너지'
+        why: '산왕 특화 DPS 극대화 - 이온화 일격 시너지'
       }
     ]
   }
@@ -1166,7 +1169,6 @@ const FuryWarriorGuide = () => {
       '마무리 일격': skillData.execute,
       '소용돌이': skillData.whirlwind,
       '천둥의 포효': skillData.thunderousRoar,
-      '용사의 창': skillData.championsSpear,
       '우레 작렬': skillData.thunderBlast,
       '무모한 희생': skillData.recklessness,
       '투신': skillData.avatar,
@@ -1174,7 +1176,14 @@ const FuryWarriorGuide = () => {
       '분노의 베기': skillData.furiousSlash,
       '영웅의 도약': skillData.heroicLeap,
       '들이치기': skillData.pummel,
-      '투사의 혼': skillData.diebytheSword
+      '투사의 혼': skillData.diebytheSword,
+      '급살': skillData.suddenDeath,
+      '학살자의 일격': skillData.slayersStrike,
+      '폭풍 수확': skillData.reapTheStorm,
+      '폭풍을 거두는 자': skillData.reapTheStorm,
+      '잔혹한 마무리': skillData.brutalFinish,
+      '폭풍망치': skillData.stormBolt,
+      '격노': skillData.enrage
     };
 
     // 정규식 패턴 생성 (긴 스킬명부터 매칭되도록 정렬)
@@ -1440,7 +1449,7 @@ const FuryWarriorGuide = () => {
 
           <h4 ref={subSectionRefs['overview-resource']} style={{ color: '#ffa500', fontSize: '1.2rem', marginBottom: '15px' }}>리소스 시스템</h4>
           <ul style={{ lineHeight: '1.8', marginBottom: '20px' }}>
-            <li>주 자원: <span style={{ color: '#C69B6D', fontWeight: 'bold' }}>분노 (Rage)</span> (최대 100, 전투 이탈 시 감소)</li>
+            <li>주 자원: <span style={{ color: '#C69B6D', fontWeight: 'bold' }}>분노 (Rage)</span> (최대 120, 전투 이탈 시 감소)</li>
             <li>리소스 생성:
               <ul style={{ marginTop: '0.5rem', paddingLeft: '2rem' }}>
                 <li><SkillIcon skill={skillData.bloodthirst} textOnly={true} /> - 분노 8 생성 (4.5초 재사용 대기시간)</li>
@@ -1452,17 +1461,17 @@ const FuryWarriorGuide = () => {
             <li>리소스 소비:
               <ul style={{ marginTop: '0.5rem', paddingLeft: '2rem' }}>
                 <li><SkillIcon skill={skillData.rampage} textOnly={true} /> - 분노 80 소모 (격노 버프 12초 획득)</li>
-                <li><SkillIcon skill={skillData.execute} textOnly={true} /> - 분노 20-40 소모 (대상 20% 이하 시 사용 가능)</li>
+                <li><SkillIcon skill={skillData.execute} textOnly={true} /> - 분노 소모 없음 (대상 20% 이하 시 사용 가능, 급살 발동 시 생명력 무관)</li>
               </ul>
             </li>
             <li><strong style={{ color: '#ffa500' }}>핵심 전략:</strong> 분노 80 이상 유지 후 <SkillIcon skill={skillData.rampage} textOnly={true} />로 격노 버프를 계속 갱신하는 것이 핵심입니다</li>
-            <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 분노가 100에 도달하면 더 이상 생성되지 않으므로 분노 낭비를 방지하기 위해 적절히 소비해야 합니다</li>
+            <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 분노가 120에 도달하면 더 이상 생성되지 않으므로 분노 낭비를 방지하기 위해 적절히 소비해야 합니다</li>
           </ul>
 
           <h4 style={{ color: '#ffa500', fontSize: '1.2rem', marginTop: '25px', marginBottom: '15px' }}>주요 메커니즘</h4>
           <ul style={{ lineHeight: '1.8', marginBottom: '20px' }}>
             <li><strong style={{ color: '#C69B6D' }}>격노 (Enrage):</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 12초간 가속 25% 증가, 피해량 20% 증가 버프 획득</li>
-            <li><strong style={{ color: '#ff6b6b' }}>마무리 일격 단계:</strong> 대상 생명력 20% 이하 시 <SkillIcon skill={skillData.execute} textOnly={true} />가 사용 가능해지며, 모든 분노를 소모하여 막대한 피해를 입힙니다</li>
+            <li><strong style={{ color: '#ff6b6b' }}>마무리 일격 단계:</strong> 대상 생명력 20% 이하 시 <SkillIcon skill={skillData.execute} textOnly={true} />가 사용 가능해지며, 분노 소모 없이 막대한 피해를 입힙니다 (급살 발동 시 생명력 무관)</li>
             <li><strong style={{ color: '#ffa500' }}>버스트 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} />와 <SkillIcon skill={skillData.avatar} textOnly={true} />를 동시에 사용하여 12-20초간 폭발적인 딜을 냅니다</li>
             <li><strong style={{ color: '#FFD700' }}>쿨다운 관리:</strong> 1.5분 주기로 모든 주요 쿨다운(<SkillIcon skill={skillData.recklessness} textOnly={true} />, <SkillIcon skill={skillData.avatar} textOnly={true} />)을 함께 사용합니다</li>
             <li><strong style={{ color: '#32CD32' }}>영웅 특성 활용:</strong> 학살자는 출혈 피해 극대화, 산왕은 <SkillIcon skill={skillData.thunderBlast} textOnly={true} />로 광역 딜 강화</li>
@@ -1591,9 +1600,9 @@ const FuryWarriorGuide = () => {
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li><strong style={{ color: '#ff6b6b' }}>사용 조건:</strong> 대상 생명력 20% 이하 (학살자 특성으로 35%까지 확장)</li>
-                    <li><strong style={{ color: '#ffa500' }}>분노 소모:</strong> 20-40 분노 (많을수록 강력)</li>
-                    <li><strong style={{ color: '#C69B6D' }}>티어 2세트:</strong> {renderTextWithSkillIcons('무모한 희생 중 격노 지속시간 연장')}</li>
-                    <li><strong style={{ color: '#FFD700' }}>연계:</strong> 분노 최대 → <SkillIcon skill={skillData.execute} textOnly={true} /> 연타로 폭발적 피해</li>
+                    <li><strong style={{ color: '#ffa500' }}>분노 소모:</strong> 없음 (광란은 분노 80 소모)</li>
+                    <li><strong style={{ color: '#C69B6D' }}>티어 2세트:</strong> {renderTextWithSkillIcons('마무리 일격 피해 20% 증가 + 학살자의 일격 발동 확률')}</li>
+                    <li><strong style={{ color: '#FFD700' }}>연계:</strong> 분노 부담 없이 <SkillIcon skill={skillData.execute} textOnly={true} /> 연타로 폭발적 피해</li>
                   </ul>
                   <p style={{ color: '#e0e0e0', fontSize: '0.95rem' }}>
                     학살자는 출혈 피해를 주력으로 하며, {' '}
@@ -1620,7 +1629,7 @@ const FuryWarriorGuide = () => {
                     </li>
                   </ul>
                   <p style={{ color: '#ffa500', fontSize: '0.95rem', fontWeight: 'bold' }}>
-                    💡 프로 팁: {renderTextWithSkillIcons('티어 4세트로 격노 중 광란 피해가 추가로 8% 증가하므로 격노 유지가 매우 중요합니다.')}
+                    💡 프로 팁: {renderTextWithSkillIcons('티어 4세트로 분노의 강타 피해가 20% 증가하고 폭풍 수확 발동 확률이 생기므로 분노의 강타를 적극 활용하세요.')}
                   </p>
                 </div>
 
@@ -1632,9 +1641,6 @@ const FuryWarriorGuide = () => {
                     </li>
                     <li>
                       <SkillIcon skill={skillData.rampage} textOnly={true} /> - 격노 버프 유지의 핵심
-                    </li>
-                    <li>
-                      출혈 피해 최대화를 위한 <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 적극 사용
                     </li>
                     <li>레이드 단일 대상과 보스 마무리 일격 구간에서 최고 성능</li>
                   </ul>
@@ -1660,10 +1666,10 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>재사용 대기시간:</strong> 6초 (분노 30 소모)
                     </li>
                     <li>
-                      <strong style={{ color: '#4ECDC4' }}>티어 2세트:</strong> 천둥 공격 시 분노 추가 생성
+                      <strong style={{ color: '#4ECDC4' }}>티어 2세트:</strong> 35% 확률로 이온화 일격 5개 소환 (자연 피해)
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>티어 4세트:</strong> {renderTextWithSkillIcons('우레 작렬 피해 증가')}
+                      <strong style={{ color: '#ffa500' }}>티어 4세트:</strong> {renderTextWithSkillIcons('이온화 일격 피해 50% 증가 + 우레 작렬 충전 획득 확률')}
                     </li>
                     <li>
                       <strong style={{ color: '#FFD700' }}>광역 효과:</strong> 8미터 내 모든 적에게 폭풍충격 피해
@@ -1758,9 +1764,14 @@ const FuryWarriorGuide = () => {
                 ))}
               </div>
               {selectedTier === 'slayer' && (
-                <p style={{ fontSize: '0.85rem', color: '#C69B6D', marginTop: '10px' }}>
-                  💡 팁: {renderTextWithSkillIcons('무모한 희생과 투신은 항상 함께 사용하여 버스트 극대화')}
-                </p>
+                <>
+                  <p style={{ fontSize: '0.85rem', color: '#ff6b6b', marginTop: '10px', padding: '8px', background: 'rgba(255, 107, 107, 0.1)', borderRadius: '5px' }}>
+                    ⚠️ <strong>격노 미발동 시:</strong> {renderTextWithSkillIcons('피의 갈증 → 분노의 강타 + 광란 먼저 사용 후 버스트 진행')}
+                  </p>
+                  <p style={{ fontSize: '0.85rem', color: '#C69B6D', marginTop: '8px' }}>
+                    💡 팁: {renderTextWithSkillIcons('무모한 희생과 투신은 항상 함께 사용하여 버스트 극대화')}
+                  </p>
+                </>
               )}
             </div>
 
@@ -1768,26 +1779,28 @@ const FuryWarriorGuide = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.singleTarget.priority.map((item, index) => (
                 <div key={index} style={{
-                  background: 'rgba(0, 0, 0, 0.3)',
+                  background: index === 0 ? 'rgba(255, 107, 107, 0.15)' : 'rgba(0, 0, 0, 0.3)',
                   padding: '12px 15px',
                   borderRadius: '8px',
-                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`,
+                  border: index === 0 ? '2px solid #ff6b6b' : 'none'
                 }}>
                   {/* 우선순위 번호 + 스킬명 */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
                     <span style={{
                       background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
                       color: '#fff',
-                      width: '24px',
-                      height: '24px',
+                      width: '28px',
+                      height: '28px',
                       borderRadius: '50%',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '0.85rem',
-                      fontWeight: 'bold'
+                      fontSize: index === 0 ? '0.95rem' : '0.85rem',
+                      fontWeight: 'bold',
+                      boxShadow: index === 0 ? '0 0 10px rgba(255, 107, 107, 0.5)' : 'none'
                     }}>
-                      {index + 1}
+                      {index === 0 ? '0' : index}
                     </span>
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -1832,7 +1845,7 @@ const FuryWarriorGuide = () => {
             <h3 className={styles.subsectionTitle} style={{
               color: selectedTier === 'slayer' ? '#9482C9' : '#32CD32',
               marginTop: '1.5rem'
-            }}>광역 대상 (3+ 타겟)</h3>
+            }}>광역 대상 (4+ 타겟)</h3>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>오프닝 시퀀스</h4>
             <div className={styles.openerSequence}>
@@ -1844,32 +1857,39 @@ const FuryWarriorGuide = () => {
                   </React.Fragment>
                 ))}
               </div>
+              {selectedTier === 'slayer' && (
+                <p style={{ fontSize: '0.85rem', color: '#ff6b6b', marginTop: '10px', padding: '8px', background: 'rgba(255, 107, 107, 0.1)', borderRadius: '5px' }}>
+                  ⚠️ <strong>격노 미발동 시:</strong> {renderTextWithSkillIcons('피의 갈증 → 소용돌이 후 광란 먼저 사용 후 버스트 진행')}
+                </p>
+              )}
             </div>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.aoe.priority.map((item, index) => (
                 <div key={index} style={{
-                  background: 'rgba(0, 0, 0, 0.3)',
+                  background: index === 0 ? 'rgba(255, 107, 107, 0.15)' : 'rgba(0, 0, 0, 0.3)',
                   padding: '12px 15px',
                   borderRadius: '8px',
-                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`,
+                  border: index === 0 ? '2px solid #ff6b6b' : 'none'
                 }}>
                   {/* 우선순위 번호 + 스킬명 */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
                     <span style={{
                       background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
                       color: '#fff',
-                      width: '24px',
-                      height: '24px',
+                      width: '28px',
+                      height: '28px',
                       borderRadius: '50%',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '0.85rem',
-                      fontWeight: 'bold'
+                      fontSize: index === 0 ? '0.95rem' : '0.85rem',
+                      fontWeight: 'bold',
+                      boxShadow: index === 0 ? '0 0 10px rgba(255, 107, 107, 0.5)' : 'none'
                     }}>
-                      {index + 1}
+                      {index === 0 ? '0' : index}
                     </span>
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -2019,7 +2039,7 @@ const FuryWarriorGuide = () => {
                       <strong>효율 관리:</strong> 격노 버프 3초 이하 남았을 때 <SkillIcon skill={skillData.rampage} textOnly={true} /> 재사용 준비
                     </li>
                     <li>
-                      <strong style={{ color: '#FFD700' }}>티어 2세트:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 사용 시 격노 3초 연장
+                      <strong style={{ color: '#FFD700' }}>티어 2세트:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 피해 20% 증가 + 학살자의 일격 발동
                     </li>
                   </ul>
                 </div>
@@ -2042,7 +2062,7 @@ const FuryWarriorGuide = () => {
                       <strong>마무리 일격 구간 (20% 이하):</strong> <SkillIcon skill={skillData.execute} textOnly={true} />가 <SkillIcon skill={skillData.rampage} textOnly={true} />보다 우선순위 높음
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
+                      <strong style={{ color: '#32CD32' }}>급살 프록:</strong> 20% 이상에서도 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 가능 (2중첩 시 즉시 사용)
                     </li>
                   </ul>
                 </div>
@@ -2056,13 +2076,13 @@ const FuryWarriorGuide = () => {
                       <strong>중첩 획득:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 시 1중첩
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>5중첩 효과:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 20% 증가
+                      <strong style={{ color: '#ffa500' }}>최대 5중첩:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 최대 20% 증가 (중첩당 4%)
                     </li>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>핵심 타이밍:</strong> 5중첩 도달 시 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용하여 중첩 소모
+                      <strong style={{ color: '#ff6b6b' }}>현실적 목표:</strong> 3중첩 달성 후 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (5중첩은 이론상 최대치)
                     </li>
                     <li>
-                      <strong>버스트 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> 중 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> 우선
+                      <strong>버스트 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> 중 3중첩 이상 <SkillIcon skill={skillData.rampage} textOnly={true} /> 우선
                     </li>
                   </ul>
                 </div>
@@ -2099,13 +2119,10 @@ const FuryWarriorGuide = () => {
                       <strong>쿨기 지속시간:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 12초 / <SkillIcon skill={skillData.avatar} textOnly={true} /> 20초
                     </li>
                     <li>
-                      <strong>버스트 중 우선순위:</strong> 학살의 일격 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.ragingBlow} textOnly={true} />
+                      <strong>버스트 중 우선순위:</strong> 학살의 일격 3중첩 이상 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.ragingBlow} textOnly={true} />
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}><SkillIcon skill={skillData.championsSpear} textOnly={true} /> 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 직후 사용 (분노 10 생성 + 4초 DoT)
-                    </li>
-                    <li>
-                      <strong>티어 4세트:</strong> <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 시 격노 중 공격력 추가 8% 증가
+                      <strong>티어 4세트:</strong> <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 피해 20% 증가 + 폭풍 수확 발동 확률
                     </li>
                   </ul>
                 </div>
@@ -2273,7 +2290,7 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>120 이상:</strong> 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (낭비 방지)
                     </li>
                     <li>
-                      <strong>마무리 일격 구간:</strong> 분노 20-40으로 <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 (분노 소모량 조절 가능)
+                      <strong>마무리 일격 구간:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 사용 (분노 소모 없음)
                     </li>
                     <li>
                       <strong><SkillIcon skill={skillData.recklessness} textOnly={true} /> 중:</strong> 분노 생성 100% 증가 - 적극적 소비 필요
@@ -2287,7 +2304,7 @@ const FuryWarriorGuide = () => {
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명 추가 타격
+                      <strong style={{ color: '#ffa500' }}>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명의 대상에게 65% 피해로 적중
                     </li>
                     <li>
                       <strong>활용 순서:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> → <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> → <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> (각각 광역화)
@@ -2318,10 +2335,10 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ff6b6b' }}>최우선 사용:</strong> 쿨다운 돌 때마다 즉시 사용 (딜 손실 최소화)
                     </li>
                     <li>
-                      <strong>티어 2세트:</strong> <SkillIcon skill={skillData.thunderousRoar} textOnly={true} /> 사용 시 <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨다운 6초 감소
+                      <strong>티어 2세트:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 35% 확률로 이온화 일격 5개 소환
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>티어 4세트:</strong> 타격한 적 1명당 공격력 2% 증가 (최대 10%, 5명 타격 시)
+                      <strong style={{ color: '#32CD32' }}>티어 4세트:</strong> 이온화 일격 피해 50% 증가 + 20% 우레 작렬 충전 획득
                     </li>
                   </ul>
                 </div>
@@ -2355,13 +2372,13 @@ const FuryWarriorGuide = () => {
                       <strong>중첩 획득:</strong> <SkillIcon skill={skillData.bloodthirst} textOnly={true} /> 또는 <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> 사용 시 1중첩
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>5중첩 효과:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 20% 증가
+                      <strong style={{ color: '#ffa500' }}>최대 5중첩:</strong> 다음 <SkillIcon skill={skillData.rampage} textOnly={true} /> 피해 최대 20% 증가 (중첩당 4%)
                     </li>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>핵심 타이밍:</strong> 5중첩 도달 시 즉시 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용하여 중첩 소모
+                      <strong style={{ color: '#ff6b6b' }}>현실적 목표:</strong> 3중첩 달성 후 <SkillIcon skill={skillData.rampage} textOnly={true} /> 사용 (5중첩은 이론상 최대치)
                     </li>
                     <li>
-                      <strong>산왕 전략:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 동안 중첩 쌓기 → 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> 폭발
+                      <strong>산왕 전략:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 동안 중첩 쌓기 → 3중첩 이상 <SkillIcon skill={skillData.rampage} textOnly={true} /> 폭발
                     </li>
                   </ul>
                 </div>
@@ -2395,13 +2412,10 @@ const FuryWarriorGuide = () => {
                       <strong style={{ color: '#ffa500' }}>표준 버스트:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> + <SkillIcon skill={skillData.avatar} textOnly={true} /> + <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 동시
                     </li>
                     <li>
-                      <strong><SkillIcon skill={skillData.championsSpear} textOnly={true} /> 타이밍:</strong> <SkillIcon skill={skillData.recklessness} textOnly={true} /> 직후 사용 (분노 10 생성 + 4초 DoT)
-                    </li>
-                    <li>
                       <strong style={{ color: '#4ECDC4' }}>티어 세트 시너지:</strong> <SkillIcon skill={skillData.thunderousRoar} textOnly={true} /> → <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 쿨 6초 감소 → 즉시 재사용
                     </li>
                     <li>
-                      <strong>버스트 중 우선순위:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > 학살의 일격 5중첩 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} />
+                      <strong>버스트 중 우선순위:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > 학살의 일격 3중첩 이상 <SkillIcon skill={skillData.rampage} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} />
                     </li>
                   </ul>
                 </div>
@@ -2599,10 +2613,10 @@ const FuryWarriorGuide = () => {
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#4ECDC4' }}><SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 광역:</strong> 8미터 반경 모든 적 타격 (5명 타격 시 티어 4세트 최대 효과)
+                      <strong style={{ color: '#4ECDC4' }}><SkillIcon skill={skillData.thunderBlast} textOnly={true} /> 광역:</strong> 8미터 반경 모든 적 타격 + 35% 확률로 이온화 일격 5개 소환 (티어 2세트)
                     </li>
                     <li>
-                      <strong>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명 추가 타격
+                      <strong>개선된 소용돌이:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> 사용 후 다음 2번 공격이 최대 4명의 대상에게 65% 피해로 적중
                     </li>
                     <li>
                       <strong style={{ color: '#ffa500' }}>광역 순환:</strong> <SkillIcon skill={skillData.whirlwind} textOnly={true} /> → <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> → <SkillIcon skill={skillData.ragingBlow} textOnly={true} /> → <SkillIcon skill={skillData.bloodthirst} textOnly={true} />
@@ -2625,7 +2639,7 @@ const FuryWarriorGuide = () => {
                       <strong>2중첩 이상:</strong> <SkillIcon skill={skillData.execute} textOnly={true} /> 피해 20% 증가
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>갑작스런 죽음 프록:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
+                      <strong style={{ color: '#32CD32' }}>급살 프록:</strong> 2중첩 시 <SkillIcon skill={skillData.execute} textOnly={true} /> 즉시 사용
                     </li>
                     <li>
                       <strong>마무리 일격 구간:</strong> <SkillIcon skill={skillData.thunderBlast} textOnly={true} /> > <SkillIcon skill={skillData.execute} textOnly={true} /> (2중첩) > <SkillIcon skill={skillData.rampage} textOnly={true} />
@@ -2748,12 +2762,12 @@ const FuryWarriorGuide = () => {
                   {selectedTier === 'slayer' ? (
                     <>
                       <p style={{ marginBottom: '10px' }}>
-                        <strong style={{ color: '#9482C9' }}>학살의 일격 DPS 기여도</strong>
+                        <strong style={{ color: '#9482C9' }}>티어 세트 DPS 기여도 (학살자)</strong>
                       </p>
                       <p style={{ color: '#ccc', marginBottom: '10px' }}>
-                        • {renderTextWithSkillIcons('5중첩 광란 피해: 기본 광란 대비 +20%')}<br/>
-                        • 전투 중 평균 5중첩 횟수: 30-40회 (600초 기준)<br/>
-                        • 예상 DPS 증가: 전체 딜의 3-5%
+                        • {renderTextWithSkillIcons('티어 2세트: 마무리 일격 피해 20% 증가 + 학살자의 일격 발동')}<br/>
+                        • {renderTextWithSkillIcons('티어 4세트: 분노의 강타 피해 20% 증가 + 폭풍 수확 발동')}<br/>
+                        • 예상 DPS 증가: 전체 딜의 8-12%
                       </p>
                     </>
                   ) : (
@@ -2763,9 +2777,9 @@ const FuryWarriorGuide = () => {
                       </p>
                       <p style={{ color: '#ccc', marginBottom: '10px' }}>
                         • 6초 쿨: 600초 전투 → 100회 사용<br/>
-                        • {renderTextWithSkillIcons('티어 2세트(천둥의 포효): +10회 추가 (쿨감 6초)')}<br/>
-                        • 티어 4세트(5명 타격): 공격력 +10% 지속<br/>
-                        • 예상 DPS 증가: 전체 딜의 15-18%
+                        • {renderTextWithSkillIcons('티어 2세트: 35% 확률로 이온화 일격 5개 소환 (자연 피해)')}<br/>
+                        • {renderTextWithSkillIcons('티어 4세트: 이온화 일격 피해 50% 증가 + 20% 우레 작렬 충전 획득')}<br/>
+                        • 예상 DPS 증가: 전체 딜의 15-20%
                       </p>
                     </>
                   )}
@@ -2812,7 +2826,7 @@ const FuryWarriorGuide = () => {
                   {selectedTier === 'slayer' && (
                     <>
                       • <strong style={{ color: '#ff6b6b' }}>마무리 일격 표식 2중첩 무시:</strong> {renderTextWithSkillIcons('2중첩 시 마무리 일격 20% 피해 증가 효과 낭비')}<br/>
-                      • <strong style={{ color: '#ff6b6b' }}>학살의 일격 6중첩:</strong> {renderTextWithSkillIcons('5중첩 초과분은 손실 → 즉시 광란 사용')}<br/>
+                      • <strong style={{ color: '#ff6b6b' }}>학살의 일격 과중첩:</strong> {renderTextWithSkillIcons('3중첩 달성 시 즉시 광란 사용 (5중첩 이론상 최대, 현실적으론 3중첩 목표)')}<br/>
                     </>
                   )}
                   {selectedTier === 'mountainThane' && (
@@ -2840,8 +2854,8 @@ const FuryWarriorGuide = () => {
                   • <strong style={{ color: '#28a745' }}>Pandemic 메커니즘:</strong> {renderTextWithSkillIcons('천둥의 포효 DoT 2-3초 남았을 때 재시전 → 지속시간 추가')}<br/>
                   {selectedTier === 'slayer' && (
                     <>
-                      • <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> {renderTextWithSkillIcons('무모한 희생 + 투신 + 5중첩 광란 동시 → 최대 DPS')}<br/>
-                      • <strong style={{ color: '#28a745' }}>마무리 일격 구간 최적화:</strong> {renderTextWithSkillIcons('마무리 일격 표식 2중첩 + 갑작스런 죽음 2중첩 동시 → 폭발 딜')}<br/>
+                      • <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> {renderTextWithSkillIcons('무모한 희생 + 투신 + 3중첩 이상 광란 동시 → 최대 DPS')}<br/>
+                      • <strong style={{ color: '#28a745' }}>마무리 일격 구간 최적화:</strong> {renderTextWithSkillIcons('마무리 일격 표식 2중첩 + 급살 2중첩 동시 → 폭발 딜')}<br/>
                     </>
                   )}
                   {selectedTier === 'mountainThane' && (
@@ -3821,7 +3835,7 @@ crit=0.85       # 치명
 versatility=0.70
 
 # Stat Weights (산왕 - 광역/쐐기)
-haste=1.00      # 가속 (조각 생성 속도)
+haste=1.00      # 가속 (우레 작렬 빈도)
 mastery=0.90    # 특화 (스킬 피해)
 crit=0.80       # 치명
 versatility=0.65`}
@@ -4034,7 +4048,7 @@ chest=,id=212075,ilevel=639,enchant=crystalline_radiance_3`}
                 color: '#94a3b8',
                 fontSize: '0.9rem'
               }}>
-                최종 수정일: 2025.10.03 | 작성: WoWMeta | 검수: TWW 시즌3 (11.2 패치)
+                최종 수정일: 2025.10.03 | 작성: WoWMeta | 검수: 자의식-아즈샤라
               </p>
             </div>
 

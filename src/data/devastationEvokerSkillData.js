@@ -338,6 +338,22 @@ export const devastationEvokerSkillData = {
     castTime: '즉시',
     range: '30 야드'
   },
+  oppressingRoar: {
+    id: '406971',
+    name: '탄압의 포효',
+    englishName: 'Oppressing Roar',
+    icon: 'ability_evoker_oppressingroar',
+    description: '포효하여 10초 동안 주위 적들에게 걸린 군중 제어 효과의 지속시간을 50% 증가시키고, 적의 격노 효과를 1개 제거합니다.',
+    cooldown: '2분',
+    resourceCost: '없음',
+    resourceGain: '없음',
+    castTime: '즉시',
+    duration: '10초',
+    type: '유틸리티',
+    spec: '공용',
+    level: 60,
+    pvp: false
+  },
 
   // 특성 추가
   volatility: {
