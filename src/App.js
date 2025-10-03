@@ -18,6 +18,7 @@ import AfflictionWarlockGuide from './components/AfflictionWarlockGuide';
 import DestructionWarlockGuide from './components/DestructionWarlockGuide';
 import ElementalShamanGuide from './components/ElementalShamanGuide';
 import FuryWarriorGuide from './components/FuryWarriorGuide';
+import ArcaneMageGuide from './components/ArcaneMageGuide';
 import GuideTemplate from './components/GuideTemplate';
 // 황폐 기원사 가이드 - 새로운 통합 버전
 // 통합 가이드 템플릿 사용
@@ -105,6 +106,8 @@ function App() {
               <Route path="/guide/shaman/elemental" element={<ElementalShamanGuide />} />
               {/* 분노 전사 가이드 - 통합 버전 */}
               <Route path="/guide/warrior/fury" element={<FuryWarriorGuide />} />
+              {/* 비전 법사 가이드 */}
+              <Route path="/guide/mage/arcane" element={<ArcaneMageGuide />} />
               {/* 가이드 템플릿 - 테스트용 */}
               <Route path="/guide/template" element={<GuideTemplate />} />
             </Routes>

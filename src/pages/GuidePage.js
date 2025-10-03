@@ -240,7 +240,7 @@ const classData = {
       spec: '비전',
       color: classColors.mage,
       icon: '✨',
-      ready: false,
+      ready: true,
       path: '/guide/mage/arcane'
     },
     {

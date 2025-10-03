@@ -1,6 +1,6 @@
 // TWW Season 3 최종 정리된 데이터베이스 (완전 통합)
-// 최종 업데이트: 2025-09-30
-// 총 1137개 스킬 (전사 5개, 기원사 10개, 악마 흑마 3개, 파괴 흑마 20개 추가)
+// 최종 업데이트: 2025-10-04
+// 총 1140개 스킬 (비전 법사 3개 추가: 마법사의 손길, 명석함, 비전 충전)
 
 export const twwS3SkillDatabase = [
   {
@@ -11054,6 +11054,78 @@ export const twwS3SkillDatabase = [
     "cooldown": "40 초",
     "description": "손가락을 튕겨 대상과 그 주위 적 4명을 둘러싼 중력을 비틀어 3초 동안 허공에 묶습니다.대상이 땅에 내려올 때 주위의 적에게 (주문력의 50%)의 비전 피해를 입힙니다.",
     "coefficient": "50%",
+    "resourceGain": "없음",
+    "class": "MAGE"
+  },
+  {
+    "id": "321507",
+    "englishName": "Touch of the Magi",
+    "koreanName": "마법사의 손길",
+    "icon": "spell_mage_touchofthemagi",
+    "type": "쿨다운",
+    "spec": "비전",
+    "heroTalent": null,
+    "level": 10,
+    "pvp": false,
+    "duration": "12초",
+    "school": "Arcane",
+    "mechanic": "n/a",
+    "dispelType": "n/a",
+    "gcd": "없음",
+    "resourceCost": "없음",
+    "range": "40 야드",
+    "castTime": "즉시 시전",
+    "cooldown": "1.5분",
+    "description": "대상을 표시하여 12초 동안 입힌 피해의 20%를 축적합니다. 지속시간 종료 시 축적된 피해를 가합니다.",
+    "coefficient": "20%",
+    "resourceGain": "없음",
+    "class": "MAGE"
+  },
+  {
+    "id": "263725",
+    "englishName": "Clearcasting",
+    "koreanName": "명석함",
+    "icon": "spell_shadow_manaburn",
+    "type": "버프",
+    "spec": "비전",
+    "heroTalent": null,
+    "level": 10,
+    "pvp": false,
+    "duration": "15초",
+    "school": "n/a",
+    "mechanic": "n/a",
+    "dispelType": "n/a",
+    "gcd": "n/a",
+    "resourceCost": "없음",
+    "range": "없음",
+    "castTime": "패시브",
+    "cooldown": "없음",
+    "description": "비전 작렬 시전 시 발동 확률. 다음 비전 미사일 또는 비전 폭발을 마나 소모 없이 시전할 수 있습니다. 최대 3중첩.",
+    "coefficient": "n/a",
+    "resourceGain": "없음",
+    "class": "MAGE"
+  },
+  {
+    "id": "36032",
+    "englishName": "Arcane Charges",
+    "koreanName": "비전 충전",
+    "icon": "spell_arcane_arcane01",
+    "type": "버프",
+    "spec": "비전",
+    "heroTalent": null,
+    "level": 10,
+    "pvp": false,
+    "duration": "10초",
+    "school": "n/a",
+    "mechanic": "n/a",
+    "dispelType": "n/a",
+    "gcd": "n/a",
+    "resourceCost": "없음",
+    "range": "없음",
+    "castTime": "패시브",
+    "cooldown": "없음",
+    "description": "비전 작렬 시전 시 1씩 증가합니다. 비전 탄막 시전 시 모두 소모됩니다. 최대 4중첩. 중첩당 비전 작렬 피해 60% 증가.",
+    "coefficient": "60%",
     "resourceGain": "없음",
     "class": "MAGE"
   },
