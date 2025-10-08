@@ -1,8 +1,71 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+/**
+ * ╔═══════════════════════════════════════════════════════════════════════╗
+ * ║  GuideTemplate.js - WoW 전문화 가이드 통합 템플릿 (ArcaneMage 기반)  ║
+ * ╚═══════════════════════════════════════════════════════════════════════╝
+ *
+ * 📋 템플릿 개요:
+ * - 기반: ArcaneMageGuide.js (3,520줄 완전 구조)
+ * - 크기: 3,500+ 줄 (전체 비전 마법사 가이드 포함)
+ * - 업데이트: 2025-01-04 (최신 개선사항 반영)
+ * - 용도: 새로운 전문화 가이드 제작 시 복사하여 사용
+ * - 전략: "템플릿 단계에서 버그 최대한 제거 → 내용만 교체 → 빠른 제작"
+ *
+ * ✅ 최신 기능 포함:
+ * - 한국어 조사 괄호 표기 시스템 (가, 을, 은(는), 와, 으로)
+ * - 복사 토스트/업데이트 토스트 분리
+ * - SimC 탭 제거, Raidbots 링크 통합
+ * - 스탯 우선순위 단일 탭 구조
+ *
+ * ⚠️ 필수 수정 항목 (순서대로):
+ * 1. Line 48: import 스킬 데이터 변경
+ *    - arcaneMageSkills → 실제 전문화 스킬 (예: fireMageSkills)
+ *    - '../data/arcaneMageSkillData' → 실제 경로
+ *
+ * 2. Line 58-81: unifiedTheme 색상 변경
+ *    - primary/accent: #0070DE → 실제 클래스 색상
+ *    - hover: rgba(63, 198, 234, 0.1) → 실제 색상 rgba
+ *
+ * 3. getHeroContent 함수 수정 (검색: "getHeroContent")
+ *    - 키 이름: 'farseer'/'stormbringer' → 실제 영웅특성 영문명
+ *    - name/icon/tierSet/opener/priority 모두 교체
+ *
+ * 4. 영웅특성 선택 버튼 수정 (검색: "setSelectedTier")
+ *    - setSelectedTier('farseer') → 실제 영웅특성명
+ *
+ * 5. 빌드 코드 교체 (검색: "talentBuilds")
+ *    - Wowhead 특성 계산기에서 빌드 복사
+ *
+ * 6. 스탯 우선순위 수정 (검색: "statPriorities")
+ *    - statPriorities 객체 전체 교체
+ *
+ * 📚 참고 문서:
+ * - WOW_GUIDE_TEMPLATE_MANUAL.md: 상세 제작 가이드
+ * - CLAUDE.md: 데이터 소스 우선순위, 검증 체크리스트
+ *
+ * 🎨 클래스 색상 코드표:
+ * - Warrior: #C79C6E (199, 156, 110)
+ * - Paladin: #F58CBA (245, 140, 186)
+ * - Hunter: #AAD372 (170, 211, 114)
+ * - Rogue: #FFF569 (255, 245, 105)
+ * - Priest: #FFFFFF (255, 255, 255)
+ * - Shaman: #0070DE (0, 112, 222)
+ * - Mage: #0070DE (63, 198, 234)
+ * - Warlock: #9482C9 (148, 130, 201)
+ * - Monk: #00FF96 (0, 255, 150)
+ * - Druid: #FF7D0A (255, 125, 10)
+ * - DemonHunter: #A330C9 (163, 48, 201)
+ * - DeathKnight: #C41E3A (196, 30, 58)
+ * - Evoker: #33937F (51, 147, 127)
+ */
+
+import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
-import { elementalShamanSkills } from '../data/elementalShamanSkillData';
+import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
+
+// ✅ 정기 주술사 스킬 데이터 import
+import { elementalShamanSkills as skillData} from '../data/elementalShamanSkillData';
 import styles from './DevastationEvokerGuide.module.css';
 import moduleEventBus from '../services/ModuleEventBus';
 import aiFeedbackService from '../services/AIFeedbackService';
@@ -12,174 +75,22 @@ import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer';
 import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
 import wowheadDescriptions from '../data/wowhead-descriptions.json';
 
-const skillData = elementalShamanSkills;
-
-// ============================================================================
-// 🎯 가이드 설정
-// ============================================================================
-
-const GUIDE_CONFIG = {
-  // 기본 정보
-  className: '주술사',
-  classNameEn: 'Shaman',
-  specName: '정기',
-  specNameEn: 'Elemental',
-  specKey: 'elemental',
-
-  // 색상 테마
+// ✅ 주술사 색상 테마 (Shaman: #0070DE)
+const unifiedTheme = {
   colors: {
-    primary: '#0070DE',              // 주술사 블루
+    primary: '#0070DE',      // ✅ 주술사 색상
     secondary: '#1a1a2e',
     background: '#0a0a0f',
     surface: '#15151f',
     text: '#e0e0e0',
     subtext: '#a0a0a0',
-    accent: '#1E90FF',
+    accent: '#0070DE',       // ✅ 주술사 색상
     border: '#2a2a3e',
-    hover: 'rgba(0, 112, 222, 0.1)',
+    hover: 'rgba(0, 112, 222, 0.1)',  // ✅ 주술사 색상 (0, 112, 222)
     success: '#4caf50',
     danger: '#f44336',
     warning: '#ff9800',
   },
-
-  // 영웅특성 설정
-  heroTalents: {
-    farseer: {
-      key: 'farseer',
-      name: '선견자',
-      nameEn: 'Farseer',
-      icon: '🔮',
-      primaryColor: '#4fc3f7',
-      secondaryColor: '#29b6f6',
-      borderColor: 'rgba(79, 195, 247, 0.3)',
-      gradientStart: '#4fc3f7',
-      gradientEnd: '#29b6f6',
-    },
-    stormbringer: {
-      key: 'stormbringer',
-      name: '폭풍인도자',
-      nameEn: 'Stormbringer',
-      icon: '⚡',
-      primaryColor: '#ffeb3b',
-      secondaryColor: '#fbc02d',
-      borderColor: 'rgba(255, 235, 59, 0.3)',
-      gradientStart: '#ffeb3b',
-      gradientEnd: '#fbc02d',
-    }
-  },
-
-  // 리소스 시스템 정보
-  resource: {
-    name: '소용돌이',
-    nameEn: 'Maelstrom',
-    max: 100,
-    color: '#4fc3f7',
-  },
-
-  // 메타 정보
-  meta: {
-    patch: '11.2',
-    season: 'TWW 시즌3',
-    tier: 'A-Tier',
-    difficulty: '중급',
-    lastUpdate: '2025.09.29',
-    reviewer: '',
-  }
-};
-
-// ============================================================================
-// 📊 영웅특성별 컨텐츠 데이터
-// ============================================================================
-
-const getHeroContent = (SkillIcon) => ({
-  farseer: {
-    name: '선견자',
-    icon: '🔮',
-    tierSet: {
-      '2set': '번개 화살 피해 15% 증가',
-      '4set': '용암 폭발 시 정기 과부하 확률 25%'
-    },
-    singleTarget: {
-      opener: [
-        skillData.flameShock,
-        skillData.primordialWave,
-        skillData.stormkeeper,
-        skillData.lavaBurst,
-        skillData.elementalBlast,
-        skillData.earthShock
-      ],
-      priority: [
-        { skill: skillData.flameShock, desc: '100% 유지' },
-        { skill: skillData.lavaBurst, desc: '쿨마다 즉시 사용' },
-        { skill: skillData.elementalBlast, desc: '재사용 대기시간마다' },
-        { skill: skillData.earthShock, desc: '소용돌이 60+ 소모' },
-        { skill: skillData.lightningBolt, desc: '필러' }
-      ]
-    },
-    aoe: {
-      opener: [
-        skillData.flameShock,
-        skillData.earthquake,
-        skillData.chainLightning,
-        skillData.lavaBurst
-      ],
-      priority: [
-        { skill: skillData.earthquake, desc: '소용돌이 60+ 소모' },
-        { skill: skillData.chainLightning, desc: '광역 필러' },
-        { skill: skillData.lavaBurst, desc: '프록 소모' },
-        { skill: skillData.flameShock, desc: '확산 유지' }
-      ]
-    }
-  },
-  stormbringer: {
-    name: '폭풍인도자',
-    icon: '⚡',
-    tierSet: {
-      '2set': '번개 화살 치명타 확률 10% 증가',
-      '4set': '원소 폭발이 즉시 시전되고 피해 20% 증가'
-    },
-    singleTarget: {
-      opener: [
-        skillData.flameShock,
-        skillData.stormkeeper,
-        skillData.lightningBolt,
-        skillData.lavaBurst,
-        skillData.elementalBlast,
-        skillData.earthShock
-      ],
-      priority: [
-        { skill: skillData.flameShock, desc: '100% 유지' },
-        { skill: skillData.stormkeeper, desc: '재사용 대기시간마다' },
-        { skill: skillData.lavaBurst, desc: '쿨마다 즉시 사용' },
-        { skill: skillData.elementalBlast, desc: '재사용 대기시간마다' },
-        { skill: skillData.earthShock, desc: '소용돌이 60+ 소모' },
-        { skill: skillData.lightningBolt, desc: '필러' }
-      ]
-    },
-    aoe: {
-      opener: [
-        skillData.flameShock,
-        skillData.stormkeeper,
-        skillData.chainLightning,
-        skillData.earthquake,
-        skillData.lavaBurst
-      ],
-      priority: [
-        { skill: skillData.stormkeeper, desc: '재사용 대기시간마다' },
-        { skill: skillData.earthquake, desc: '소용돌이 60+ 소모' },
-        { skill: skillData.chainLightning, desc: '광역 필러' },
-        { skill: skillData.lavaBurst, desc: '프록 소모' }
-      ]
-    }
-  }
-});
-
-// ============================================================================
-// 🎨 스타일 컴포넌트
-// ============================================================================
-
-const unifiedTheme = {
-  colors: GUIDE_CONFIG.colors,
   spacing: {
     sm: '0.5rem',
     md: '1rem',
@@ -189,15 +100,16 @@ const unifiedTheme = {
   }
 };
 
+// 업데이트 알림 토스트
 const UpdateToast = styled(motion.div)`
   position: fixed;
   top: 100px;
   right: 20px;
   background: linear-gradient(135deg, ${props => props.theme.colors.primary} 0%, ${props => props.theme.colors.accent} 100%);
-  color: #ffffff;
+  color: ${props => props.theme.colors.background};
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 112, 222, 0.4);
+  box-shadow: 0 4px 20px rgba(63, 198, 176, 0.4);
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -210,6 +122,7 @@ const UpdateToast = styled(motion.div)`
   }
 `;
 
+// Guide 페이지 레이아웃 스타일 컴포넌트들
 const PageWrapper = styled.div`
   min-height: 100vh;
   color: ${props => props.theme.colors.text};
@@ -244,6 +157,7 @@ const Sidebar = styled.nav`
     opacity: 0.8;
   }
 
+  /* 모바일에서 숨기기 */
   @media (max-width: 768px) {
     display: none;
   }
@@ -280,14 +194,14 @@ const SubNavItem = styled.a`
   color: ${props => props.active ? props.theme.colors.accent : props.theme.colors.subtext};
   text-decoration: none;
   border-left: 2px solid ${props => props.active ? props.theme.colors.accent : 'transparent'};
-  background: ${props => props.active ? 'rgba(30, 144, 255, 0.05)' : 'transparent'};
+  background: ${props => props.active ? 'rgba(170, 211, 114, 0.05)' : 'transparent'};
   transition: all 0.2s ease;
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: ${props => props.active ? '500' : '400'};
 
   &:hover {
-    background: rgba(30, 144, 255, 0.05);
+    background: rgba(170, 211, 114, 0.05);
     color: ${props => props.theme.colors.accent};
   }
 `;
@@ -300,6 +214,7 @@ const MainContent = styled.main`
   justify-content: center;
   padding: ${props => props.theme.spacing.md} 0;
 
+  /* 모바일에서 전체 화면 사용 */
   @media (max-width: 768px) {
     margin-left: 0;
     width: 100%;
@@ -313,6 +228,7 @@ const ContentContainer = styled.div`
   padding: 0 0.5rem;
   margin: 0 auto;
 
+  /* 모바일에서 패딩 조정 */
   @media (max-width: 768px) {
     padding: 0 1rem;
   }
@@ -337,6 +253,7 @@ const SectionTitle = styled.h2`
   margin: 0;
   font-weight: 700;
 
+  /* 모바일에서 폰트 사이즈 조정 */
   @media (max-width: 768px) {
     font-size: 1.4rem;
   }
@@ -351,6 +268,7 @@ const Card = styled.div`
   width: 100%;
   max-width: 100%;
 
+  /* 모바일에서 패딩 조정 */
   @media (max-width: 768px) {
     padding: ${props => props.theme.spacing.md} ${props => props.theme.spacing.lg};
     border-radius: 4px;
@@ -359,30 +277,18 @@ const Card = styled.div`
 
 const HeroCard = styled(Card)`
   background: ${props => {
-    const heroType = props.heroType;
-    if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
-      const color = GUIDE_CONFIG.heroTalents.farseer.primaryColor;
-      const hex = color.replace('#', '');
-      const r = parseInt(hex.substring(0, 2), 16);
-      const g = parseInt(hex.substring(2, 4), 16);
-      const b = parseInt(hex.substring(4, 6), 16);
-      return `linear-gradient(135deg, rgba(${r}, ${g}, ${b}, 0.05), rgba(${r}, ${g}, ${b}, 0.02))`;
-    } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
-      const color = GUIDE_CONFIG.heroTalents.stormbringer.primaryColor;
-      const hex = color.replace('#', '');
-      const r = parseInt(hex.substring(0, 2), 16);
-      const g = parseInt(hex.substring(2, 4), 16);
-      const b = parseInt(hex.substring(4, 6), 16);
-      return `linear-gradient(135deg, rgba(${r}, ${g}, ${b}, 0.05), rgba(${r}, ${g}, ${b}, 0.02))`;
+    if (props.heroType === 'farseer') {
+      return 'linear-gradient(135deg, rgba(63, 198, 234, 0.05), rgba(255, 107, 107, 0.05))';
+    } else if (props.heroType === 'stormbringer') {
+      return 'linear-gradient(135deg, rgba(78, 205, 196, 0.05), rgba(93, 173, 226, 0.05))';
     }
     return props.theme.colors.surface;
   }};
   border: 2px solid ${props => {
-    const heroType = props.heroType;
-    if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
-      return GUIDE_CONFIG.heroTalents.farseer.borderColor;
-    } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
-      return GUIDE_CONFIG.heroTalents.stormbringer.borderColor;
+    if (props.heroType === 'farseer') {
+      return 'rgba(63, 198, 234, 0.3)';
+    } else if (props.heroType === 'stormbringer') {
+      return 'rgba(78, 205, 196, 0.3)';
     }
     return props.theme.colors.border;
   }};
@@ -397,17 +303,17 @@ const HeroCard = styled(Card)`
     right: 0;
     height: 3px;
     background: ${props => {
-      const heroType = props.heroType;
-      if (heroType === GUIDE_CONFIG.heroTalents.farseer.key) {
-        return `linear-gradient(90deg, ${GUIDE_CONFIG.heroTalents.farseer.gradientStart}, ${GUIDE_CONFIG.heroTalents.farseer.gradientEnd})`;
-      } else if (heroType === GUIDE_CONFIG.heroTalents.stormbringer.key) {
-        return `linear-gradient(90deg, ${GUIDE_CONFIG.heroTalents.stormbringer.gradientStart}, ${GUIDE_CONFIG.heroTalents.stormbringer.gradientEnd})`;
+      if (props.heroType === 'farseer') {
+        return 'linear-gradient(90deg, #0070DE, #FF6B6B)';
+      } else if (props.heroType === 'stormbringer') {
+        return 'linear-gradient(90deg, #0070DE, #5DADE2)';
       }
       return 'transparent';
     }};
   }
 `;
 
+// Global styles for animations
 const GlobalStyle = createGlobalStyle`
   @keyframes slideInRight {
     from {
@@ -430,24 +336,699 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// ============================================================================
-// 📦 스킬 아이콘 컴포넌트
-// ============================================================================
+// skillData는 devastationEvokerSkillData.js 파일에서 import 됨
 
+// ⚠️ TODO: 영웅특성별 콘텐츠 생성 함수 (Step 3)
+// 이 함수 전체를 실제 전문화의 영웅특성 데이터로 교체하세요
+// - 키 이름: 'farseer', 'stormbringer' → 실제 영웅특성 영문명 (예: 'frostfire', 'farseer')
+// - name, icon, tierSet, opener, priority 모두 교체
+// - 영웅특성별로 단일/광역 우선순위가 다르므로 각각 작성
+const getHeroContent = (SkillIcon) => ({
+  farseer: {  // ✅ 선견자 영웅특성
+    name: '선견자',
+    icon: '🔮',
+    tierSet: {
+      '2set': '용암 폭발이 원소 또는 자연 피해를 15% 증가시키는 용암의 힘을 부여합니다. 8초 지속.',
+      '4set': '번개 화살, 용암 폭발 또는 연쇄 번개를 시전하면 소용돌이를 5만큼 추가로 생성합니다.'
+    },
+    singleTarget: {
+      opener: [
+        skillData.stormElemental,    // 전투 4.5초 전: 폭풍의 정령
+        skillData.stormkeeper,       // 전투 3초 전: 폭풍지기
+        skillData.lavaBurst,         // 전투 1.5초 전: 용암 폭발
+        skillData.flameShock,        // Pull: 화염 충격
+        skillData.primordialWave,    // 태초의 파도
+        skillData.ancestralSwiftness,// 선조의 신속함 (동시)
+        skillData.ascendance,        // 승천
+        skillData.lavaBurst,         // 용암 폭발
+        skillData.lightningBolt,     // 번개 화살 (폭풍지기 소모)
+        skillData.lavaBurst          // 용암 폭발 (가능 시)
+      ],
+      priority: [
+        {
+          skill: skillData.stormElemental,
+          desc: '폭풍의 정령',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '주 쿨다운 - 30초간 강력한 피해 제공'
+        },
+        {
+          skill: skillData.stormkeeper,
+          desc: '폭풍지기',
+          conditions: [
+            '쿨다운 완료',
+            '대략적으로 쿨마다 사용'
+          ],
+          priority: 0,
+          why: '번개 화살 2회 강화 - 버스트 윈도우 극대화'
+        },
+        {
+          skill: skillData.flameShock,
+          desc: '화염 충격 유지',
+          conditions: [
+            '도트 유지',
+            '지속시간 <6초 또는 없을 때'
+          ],
+          priority: 1,
+          why: '용암 폭발 시전 조건 - 항상 유지 필수'
+        },
+        {
+          skill: skillData.ascendance,
+          desc: '승천',
+          conditions: [
+            '사용 횟수 극대화',
+            '주요 쿨다운 활성 중'
+          ],
+          priority: 0,
+          why: '15초간 용암 폭발 즉시 시전 - 사용 횟수 극대화'
+        },
+        {
+          skill: skillData.primordialWave,
+          desc: '태초의 파도',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 1,
+          why: '선조 소환 + 화염 충격 즉시 적용 - 선조의 신속함와 함께 사용'
+        },
+        {
+          skill: skillData.ancestralSwiftness,
+          desc: '선조의 신속함',
+          conditions: [
+            '쿨다운 완료',
+            '태초의 파도와 함께 사용'
+          ],
+          priority: 1,
+          why: '다음 주문 즉시 시전 + 강화된 선조 소환 (티어 2세트)'
+        },
+        {
+          skill: skillData.earthShock,
+          desc: '대지 충격',
+          conditions: [
+            '원소의 대가 활성',
+            '또는 소용돌이 오버캡 직전'
+          ],
+          priority: 2,
+          why: '원소의 대가 버프와 함께 사용하여 피해 극대화'
+        },
+        {
+          skill: skillData.icefury,
+          desc: '얼음격노',
+          conditions: [
+            '정기의 융합 비활성',
+            '쿨다운 완료'
+          ],
+          priority: 2,
+          why: '정기의 융합 트리거 - 냉기 충격 강화'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발',
+          conditions: [
+            '사용 가능할 때',
+            '화염 충격 유지 중'
+          ],
+          priority: 3,
+          why: '원소의 대가 버프 발동 - 항상 우선 사용'
+        },
+        {
+          skill: skillData.frostShock,
+          desc: '냉기 충격',
+          conditions: [
+            '이동 중',
+            '얼음격노 또는 정기의 융합 활성'
+          ],
+          priority: 3,
+          why: '이동 중 DPS 손실 최소화'
+        },
+        {
+          skill: skillData.lightningBolt,
+          desc: '번개 화살',
+          conditions: [
+            '필러 스킬',
+            '소용돌이 생성'
+          ],
+          priority: 4,
+          why: '소용돌이 8 생성 - 기본 필러 스킬'
+        }
+      ]
+    },
+    aoe: {
+      opener: [
+        skillData.flameShock,        // 전투 4초 전: 화염 충격 (주 대상)
+        skillData.stormkeeper,       // 전투 3초 전: 폭풍수호자 (연쇄 번개 강화)
+        skillData.chainLightning,    // Pull 시작: 연쇄 번개 (폭풍수호자)
+        skillData.chainLightning,    // 연쇄 번개 (폭풍수호자)
+        skillData.stormElemental,    // 폭풍의 정령 (주 쿨다운)
+        skillData.lavaBurst,         // 용암 폭발 (원소의 대가)
+        skillData.earthquake,        // 지진 (소용돌이 소모 + 광역 도트)
+        skillData.chainLightning,    // 연쇄 번개
+        skillData.lavaBurst,         // 용암 폭발 (용암 쇄도)
+        skillData.chainLightning,    // 연쇄 번개
+        skillData.earthquake         // 지진
+      ],
+      priority: [
+        {
+          skill: skillData.stormElemental,
+          desc: '폭풍의 정령 (최우선)',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '단일/광역 모두 최우선 - 30초간 강력한 지속 피해'
+        },
+        {
+          skill: skillData.stormkeeper,
+          desc: '폭풍수호자 (연쇄 번개 강화)',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '연쇄 번개 2회 즉시 시전 + 150% 피해 - 광역에서 극강 DPS'
+        },
+        {
+          skill: skillData.ascendance,
+          desc: '승천 (광역 버스트)',
+          conditions: [
+            '쿨다운 완료',
+            '폭풍의 정령 활성 중',
+            '3+ 적'
+          ],
+          priority: 0,
+          why: '15초간 용암 폭발 즉시 시전 + 화염 충격 최대 6개로 확산'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발 (용암 쇄도)',
+          conditions: [
+            '용암 쇄도 활성',
+            '즉시 시전 가능'
+          ],
+          priority: 1,
+          why: '용암 쇄도 프록 즉시 사용 - 원소의 대가 발동'
+        },
+        {
+          skill: skillData.earthquake,
+          desc: '지진 (소용돌이 소모)',
+          conditions: [
+            '소용돌이 60 이상',
+            '3+ 적'
+          ],
+          priority: 1,
+          why: '광역 상황에서 대지 충격 대신 지진 사용 - 도트 피해 + 광역'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발 (원소의 대가)',
+          conditions: [
+            '재사용 대기시간 완료',
+            '화염 충격 유지 중'
+          ],
+          priority: 2,
+          why: '용암 폭발로 원소의 대가 버프 유지 - 다음 스킬 피해 20% 증가'
+        },
+        {
+          skill: skillData.flameShock,
+          desc: '화염 충격 (도트 확산)',
+          conditions: [
+            '주 대상 도트 만료 직전',
+            '또는 승천 버프 활성 (최대 6개 확산)'
+          ],
+          priority: 2,
+          why: '승천 중 화염 충격 1회로 6개 대상에 도트 확산 가능'
+        },
+        {
+          skill: skillData.chainLightning,
+          desc: '연쇄 번개 (광역 주력)',
+          conditions: [
+            '3+ 적',
+            '소용돌이 생성'
+          ],
+          priority: 3,
+          why: '광역 상황에서 번개 화살 대신 연쇄 번개 사용 - 소용돌이 생성'
+        },
+        {
+          skill: skillData.lightningBolt,
+          desc: '번개 화살 (단일 필러)',
+          conditions: [
+            '2 이하 적',
+            '이동 불필요'
+          ],
+          priority: 4,
+          why: '2 이하 적일 때는 단일 대상 우선순위 사용'
+        }
+      ]
+    },
+    mechanics: [
+      {
+        title: '소용돌이 값 관리',
+        icon: '🌀',
+        desc: '소용돌이 값 0-100 관리 및 최적 소모 타이밍',
+        details: [
+          '생성: 번개 화살/연쇄 번개 (+8), 용암 폭발 (+8-12)',
+          '소모: 대지 충격 (단일), 지진 (광역 3+ 적)',
+          '최적 타이밍: 소용돌이 60 이상 도달 시 즉시 소모',
+          '주의: 소용돌이 100 도달 시 생성 중단 → 리소스 낭비'
+        ],
+        why: '소용돌이 60+ 유지로 DPS 극대화, 100 넘치지 않게 관리'
+      },
+      {
+        title: '용암 쇄도 프록 활용',
+        icon: '🔥',
+        desc: '번개 화살/연쇄 번개 시전 시 용암 쇄도 확률 발동 (10-15%)',
+        details: [
+          '용암 쇄도 발동 시: 용암 폭발 재사용 대기시간 초기화 + 즉시 시전',
+          '최우선 사용: 용암 쇄도 활성 시 다른 스킬보다 먼저 용암 폭발',
+          '원소의 대가 트리거: 용암 폭발 → 다음 스킬 피해 20% 증가 (15초)',
+          '티어 4세트: 용암 쇄도 확률 10% 증가'
+        ],
+        why: '용암 쇄도 즉시 사용가 정기 주술사 DPS의 25-30% 차지'
+      },
+      {
+        title: '원소의 대가 버프 관리',
+        icon: '⚡',
+        desc: '용암 폭발 시전 후 15초간 다음 스킬 피해 20% 증가',
+        details: [
+          '1단계: 용암 폭발 시전 → 원소의 대가 버프 활성 (15초)',
+          '2단계: 버프 활성 중 가장 강력한 스킬 사용 (폭풍수호자 번개 화살, 대지 충격)',
+          '3단계: 버프 만료 전 다음 용암 폭발로 연장',
+          '핵심: 원소의 대가를 항상 유지하여 지속적인 피해 증가'
+        ],
+        why: '원소의 대가 100% 유지 시 전체 DPS 20% 증가'
+      },
+      {
+        title: '화염 충격 도트 유지',
+        icon: '🔥',
+        desc: '화염 충격 도트를 항상 유지해야 용암 폭발 시전 가능',
+        details: [
+          '화염 충격 지속시간: 18초 (도트 피해 + 용암 폭발 활성화)',
+          '갱신 타이밍: 화염 충격 3초 이하 남았을 때',
+          '승천 활성 시: 화염 충격 1회로 최대 6개 대상에 확산',
+          '주의: 화염 충격 없으면 용암 폭발 시전 불가'
+        ],
+        why: '화염 충격 유지가 용암 폭발 사용의 전제 조건'
+      },
+      {
+        title: '버스트 윈도우 최적화',
+        icon: '💥',
+        desc: '폭풍의 정령 + 폭풍수호자 + 승천 동시 사용으로 극대 DPS',
+        details: [
+          '1단계: 폭풍의 정령 활성화 (30초 지속)',
+          '2단계: 폭풍수호자 사용 → 번개 화살/연쇄 번개 2회 즉시 시전 (150% 피해)',
+          '3단계: 승천 활성화 (15초 동안 용암 폭발 즉시 시전)',
+          '4단계: 용암 폭발 연타 + 원소의 대가 유지 → 버스트 극대화'
+        ],
+        why: '3대 쿨다운 동시 사용 시 전체 DPS의 40-50% 차지'
+      }
+    ]
+  },
+  stormbringer: {
+    name: '폭풍인도자',
+    icon: '⚡',
+    tierSet: {
+      '2set': '용암 폭발이 원소 또는 자연 피해를 15% 증가시키는 용암의 힘을 부여합니다. 8초 지속.',
+      '4set': '번개 화살, 용암 폭발 또는 연쇄 번개를 시전하면 소용돌이를 5만큼 추가로 생성합니다.'
+    },
+    singleTarget: {
+      opener: [
+        skillData.stormElemental,    // 전투 3초 전: 폭풍의 정령
+        skillData.stormkeeper,       // 전투 1.5초 전: 폭풍지기
+        skillData.lightningBolt      // Pull: 번개 화살
+      ],
+      priority: [
+        {
+          skill: skillData.stormElemental,
+          desc: '폭풍의 정령',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '주 쿨다운 - 30초간 강력한 피해'
+        },
+        {
+          skill: skillData.stormkeeper,
+          desc: '폭풍지기',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '번개 화살 2회 강화 - 버스트 윈도우 극대화'
+        },
+        {
+          skill: skillData.flameShock,
+          desc: '화염 충격 유지',
+          conditions: [
+            '도트 유지',
+            '지속시간 <6초 또는 없을 때'
+          ],
+          priority: 1,
+          why: '용암 폭발 시전 조건 - 항상 유지 필수'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발 (용암 쇄도)',
+          conditions: [
+            '용암 쇄도 활성',
+            '즉시 시전 가능'
+          ],
+          priority: 1,
+          why: '용암 쇄도 프록 즉시 사용 - 원소의 대가 발동'
+        },
+        {
+          skill: skillData.earthShock,
+          desc: '대지 충격',
+          conditions: [
+            '원소의 대가 활성',
+            '또는 소용돌이 오버캡 직전'
+          ],
+          priority: 2,
+          why: '원소의 대가 버프와 함께 사용하여 피해 극대화'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발',
+          conditions: [
+            '사용 가능할 때',
+            '화염 충격 유지 중'
+          ],
+          priority: 3,
+          why: '원소의 대가 버프 발동 - 항상 우선 사용'
+        },
+        {
+          skill: skillData.lightningBolt,
+          desc: '번개 화살',
+          conditions: [
+            '필러 스킬',
+            '소용돌이 생성'
+          ],
+          priority: 4,
+          why: '소용돌이 8 생성 - 기본 필러 스킬'
+        }
+      ]
+    },
+    aoe: {
+      opener: [
+        skillData.stormElemental,    // 전투 3초 전: 폭풍의 정령
+        skillData.stormkeeper,       // 전투 1.5초 전: 폭풍지기
+        skillData.chainLightning     // Pull: 연쇄 번개
+      ],
+      priority: [
+        {
+          skill: skillData.stormElemental,
+          desc: '폭풍의 정령',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '주 쿨다운 - 30초간 강력한 피해'
+        },
+        {
+          skill: skillData.stormkeeper,
+          desc: '폭풍지기',
+          conditions: [
+            '쿨다운 완료',
+            '즉시 사용'
+          ],
+          priority: 0,
+          why: '연쇄 번개 강화 - 광역 피해 극대화'
+        },
+        {
+          skill: skillData.ascendance,
+          desc: '승천',
+          conditions: [
+            '쿨다운 완료',
+            '승천 중 가능한 한 많은 지진/연쇄 번개 시전'
+          ],
+          priority: 0,
+          why: '15초간 용암 폭발 즉시 시전 - 광역 버스트'
+        },
+        {
+          skill: skillData.primordialWave,
+          desc: '태초의 파도',
+          conditions: [
+            '승천 후 사용',
+            '즉시 사용'
+          ],
+          priority: 1,
+          why: '선조 소환 - 승천 윈도우에서 활용'
+        },
+        {
+          skill: skillData.tempest,
+          desc: '폭풍',
+          conditions: [
+            'Lightning Rod 없는 대상',
+            '대상 변경하여 사용'
+          ],
+          priority: 1,
+          why: 'Lightning Rod 확산 - 여러 대상 피해 증가'
+        },
+        {
+          skill: skillData.earthquake,
+          desc: '지진',
+          conditions: [
+            'Echoes of Great Sundering 활성',
+            '광역 상황'
+          ],
+          priority: 2,
+          why: 'Lightning Rod 확산 + 광역 피해'
+        },
+        {
+          skill: skillData.elementalBlast,
+          desc: '원소 작렬',
+          conditions: [
+            'Lightning Rod 없는 대상',
+            '대상 변경하여 사용'
+          ],
+          priority: 2,
+          why: 'Lightning Rod 확산 - 단일 대상에도 유용'
+        },
+        {
+          skill: skillData.chainLightning,
+          desc: '연쇄 번개',
+          conditions: [
+            '광역 필러',
+            '소용돌이 생성'
+          ],
+          priority: 3,
+          why: '소용돌이 생성 + 용암 쇄도 확률 + 전격 방전 중첩 증가'
+        },
+        {
+          skill: skillData.frostShock,
+          desc: '냉기 충격 (이동 중)',
+          conditions: [
+            '이동하면서 시전 필요',
+            '소용돌이 60 미만'
+          ],
+          priority: 4,
+          why: '이동 중 즉시 시전 - DPS 손실 최소화'
+        }
+      ]
+    },
+    aoe: {
+      opener: [
+        skillData.flameShock,        // 전투 4초 전: 화염 충격 (주 대상)
+        skillData.stormkeeper,       // 전투 3초 전: 폭풍수호자 (연쇄 번개 강화)
+        skillData.chainLightning,    // Pull 시작: 연쇄 번개 (폭풍수호자)
+        skillData.chainLightning,    // 연쇄 번개 (폭풍수호자)
+        skillData.tempest,           // 폭풍 (광역에도 강력)
+        skillData.lavaBurst,         // 용암 폭발 (원소의 대가)
+        skillData.earthquake,        // 지진 (소용돌이 소모 + 광역)
+        skillData.arcDischarge,      // 전격 방전 (광역 폭발)
+        skillData.chainLightning,    // 연쇄 번개
+        skillData.lavaBurst,         // 용암 폭발 (용암 쇄도)
+        skillData.chainLightning,    // 연쇄 번개
+        skillData.earthquake         // 지진
+      ],
+      priority: [
+        {
+          skill: skillData.tempest,
+          desc: '폭풍 (광역 최우선)',
+          conditions: [
+            '쿨다운 완료',
+            '3+ 적'
+          ],
+          priority: 0,
+          why: '폭풍인도자 핵심 - 광역에서도 극대 피해 + 전격 방전 중첩 생성'
+        },
+        {
+          skill: skillData.arcDischarge,
+          desc: '전격 방전 (광역 폭발)',
+          conditions: [
+            '전격 방전 중첩 15+ (최대)',
+            '3+ 적'
+          ],
+          priority: 0,
+          why: '광역 상황에서 전격 방전 폭발 피해 극대화 - 모든 대상 피해'
+        },
+        {
+          skill: skillData.stormkeeper,
+          desc: '폭풍수호자 (연쇄 번개)',
+          conditions: [
+            '쿨다운 완료',
+            '3+ 적'
+          ],
+          priority: 0,
+          why: '연쇄 번개 2회 즉시 시전 + 150% 피해 - 광역에서 극강'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발 (용암 쇄도)',
+          conditions: [
+            '용암 쇄도 활성',
+            '즉시 시전 가능'
+          ],
+          priority: 1,
+          why: '광역에서도 용암 쇄도 즉시 사용 - 원소의 대가 유지'
+        },
+        {
+          skill: skillData.earthquake,
+          desc: '지진 (광역 소용돌이 소모)',
+          conditions: [
+            '소용돌이 60 이상',
+            '3+ 적'
+          ],
+          priority: 1,
+          why: '광역 상황 지진 우선 - 대지 충격보다 높은 광역 피해'
+        },
+        {
+          skill: skillData.lavaBurst,
+          desc: '용암 폭발 (원소의 대가)',
+          conditions: [
+            '재사용 대기시간 완료',
+            '화염 충격 유지 중'
+          ],
+          priority: 2,
+          why: '광역에서도 원소의 대가 버프 유지'
+        },
+        {
+          skill: skillData.flameShock,
+          desc: '화염 충격 (도트 확산)',
+          conditions: [
+            '주 대상 도트 만료 직전',
+            '또는 승천 활성 (6개 확산)'
+          ],
+          priority: 2,
+          why: '승천 중 화염 충격으로 최대 6개 대상 도트 확산'
+        },
+        {
+          skill: skillData.chainLightning,
+          desc: '연쇄 번개 (광역 주력)',
+          conditions: [
+            '3+ 적',
+            '소용돌이 생성'
+          ],
+          priority: 3,
+          why: '광역 주력 스킬 - 전격 방전 중첩 + 소용돌이 생성'
+        },
+        {
+          skill: skillData.lightningBolt,
+          desc: '번개 화살 (2 이하 적)',
+          conditions: [
+            '2 이하 적'
+          ],
+          priority: 4,
+          why: '2 이하 적일 때 단일 우선순위로 전환'
+        }
+      ]
+    },
+    mechanics: [
+      {
+        title: '폭풍 (Tempest) 핵심 스킬',
+        icon: '⚡',
+        desc: '폭풍인도자 전용 스킬 - 막대한 피해 + 전격 방전 활성화',
+        details: [
+          '재사용 대기시간: 40초 (2 충전)',
+          '효과: 강력한 자연 피해 + 소용돌이 40 생성 + 전격 방전 버프 15초',
+          '전격 방전 활성화: 번개 화살/연쇄 번개 사용 시 중첩 1개 생성 (최대 15중첩)',
+          '최적 타이밍: 쿨다운 완료 즉시 사용 → 전격 방전 중첩 쌓기 시작',
+          '버스트 윈도우: 폭풍 → 번개 화살 연타 → 전격 방전 폭발'
+        ],
+        why: '폭풍인도자의 핵심 - 폭풍 사용 후 전격 방전가 DPS의 40% 차지'
+      },
+      {
+        title: '전격 방전 중첩 관리',
+        icon: '💥',
+        desc: '폭풍 사용 후 번개 화살로 중첩 쌓아 폭발 피해',
+        details: [
+          '중첩 생성: 전격 방전 버프 활성 중 번개 화살/연쇄 번개 시전마다 +1',
+          '최대 중첩: 15중첩 (중첩당 피해 증가)',
+          '폭발 타이밍: 15중첩 도달 또는 버프 만료 3초 전',
+          '폭발 효과: 전격 방전 사용 시 모든 중첩 소모 → 단일/광역 폭발 피해',
+          '핵심: 15중첩 달성 후 즉시 전격 방전으로 최대 피해'
+        ],
+        why: '전격 방전 15중첩 폭발가 폭풍인도자 버스트의 핵심'
+      },
+      {
+        title: '깨어나는 폭풍 (Awakening Storms)',
+        icon: '🌩️',
+        desc: '폭풍 사용 시 추가 효과 발동 패시브',
+        details: [
+          '발동: 폭풍 사용 시 자동 발동',
+          '효과 1: 번개 화살/연쇄 번개 재사용 대기시간 감소 (4초)',
+          '효과 2: 번개 화살/연쇄 번개 피해 증가 (20%, 12초 지속)',
+          '효과 3: 용암 쇄도 확률 증가 (15%, 12초 지속)',
+          '최적 활용: 폭풍 → 폭풍수호자 → 번개 화살 연타로 극대화'
+        ],
+        why: '폭풍인도자 특성 - 폭풍 사용 후 12초간 모든 스킬 강화'
+      },
+      {
+        title: '소용돌이 관리 (폭풍인도자)',
+        icon: '🌀',
+        desc: '폭풍으로 소용돌이 40 즉시 생성',
+        details: [
+          '일반 생성: 번개 화살/연쇄 번개 (+8)',
+          '폭풍 생성: 폭풍 사용 시 소용돌이 40 즉시 생성',
+          '소모: 대지 충격 (단일), 지진 (광역)',
+          '최적 운용: 폭풍 → 소용돌이 40 획득 → 번개 화살 → 소용돌이 60+ → 대지 충격',
+          '주의: 폭풍인도자도(도) 소용돌이 100 넘치지 않게 관리'
+        ],
+        why: '폭풍으로 즉시 소용돌이 40 생성 → 빠른 대지 충격 가능'
+      },
+      {
+        title: '폭풍인도자 버스트 사이클',
+        icon: '💫',
+        desc: '폭풍 → 전격 방전 중첩 → 폭발의 3단계 사이클',
+        details: [
+          '1단계: 폭풍 사용 (소용돌이 40 + 전격 방전 버프 15초)',
+          '2단계: 폭풍수호자 → 번개 화살/연쇄 번개 연타 (15중첩 달성)',
+          '3단계: 전격 방전 폭발 (15중첩 소모 → 막대한 피해)',
+          '4단계: 깨어나는 폭풍 버프 유지 중 원소의 대가 버프와 동기화',
+          '최적: 폭풍 40초마다 사이클 반복 (2 충전 번갈아 사용)'
+        ],
+        why: '폭풍인도자 핵심 사이클 - 이 패턴가 DPS의 70-80% 차지'
+      }
+    ]
+  }
+});
+
+
+// SkillIcon을 컴포넌트 외부에서 정의
 const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, className = '', textOnly = false }) => {
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
   const iconRef = useRef(null);
 
+  // wowhead 데이터베이스에서 스킬 정보 가져오기
   const getEnhancedSkillData = () => {
     if (!skill) return null;
 
+    // wowhead 설명 찾기
     const wowheadInfo = wowheadDescriptions[skill.id] ||
                         wowheadDescriptions[skill.koreanName] ||
                         wowheadDescriptions[skill.englishName];
 
+    // 데이터 병합
     return {
       ...skill,
-      koreanName: skill.koreanName || skill.name,
+      koreanName: skill.name || skill.koreanName,
       englishName: skill.englishName,
       description: wowheadInfo?.description || skill.description,
       cooldown: wowheadInfo?.cooldown || skill.cooldown,
@@ -469,13 +1050,14 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
     large: '48px'
   };
 
+  // 액티브/패시브에 따른 색상 구분
   const getSkillColor = () => {
-    if (enhancedSkill.type === 'passive' || enhancedSkill.type === '지속 효과' || enhancedSkill.type === '특성 패시브') {
-      return '#94a3b8';
+    if (enhancedSkill.type === 'passive' || enhancedSkill.type === '지속 효과') {
+      return '#94a3b8'; // 밝은 회색 - 패시브 스킬
     } else if (enhancedSkill.type === 'talent' || enhancedSkill.type === '특성') {
-      return '#22c55e';
+      return '#22c55e'; // 녹색 - 특성
     }
-    return '#4fc3f7';
+    return '#AAD372'; // 기본 색상 - 액티브 스킬
   };
 
   const getTooltipPortal = () => {
@@ -495,13 +1077,16 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
     const tooltipWidth = 350;
     const tooltipHeight = 280;
 
+    // 화면 경계 체크
     let top = rect.top - tooltipHeight - 10;
     let left = rect.left + rect.width / 2 - tooltipWidth / 2;
 
+    // 상단 경계 체크
     if (top < 10) {
       top = rect.bottom + 10;
     }
 
+    // 좌우 경계 체크
     if (left < 10) {
       left = 10;
     } else if (left + tooltipWidth > window.innerWidth - 10) {
@@ -513,14 +1098,14 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
       top: `${top}px`,
       left: `${left}px`,
       backgroundColor: 'rgba(26, 26, 46, 0.98)',
-      backgroundImage: 'linear-gradient(135deg, rgba(79, 195, 247, 0.1) 0%, transparent 50%)',
-      border: '2px solid #4fc3f7',
+      backgroundImage: 'linear-gradient(135deg, rgba(170, 211, 114, 0.1) 0%, transparent 50%)',
+      border: '2px solid #AAD372',
       borderRadius: '10px',
       padding: '16px',
       zIndex: 10000,
       width: `${tooltipWidth}px`,
       pointerEvents: 'none',
-      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(79, 195, 247, 0.2)',
+      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(170, 211, 114, 0.2)',
       animation: 'fadeIn 0.2s ease-in-out'
     };
 
@@ -532,13 +1117,13 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
           gap: '12px',
           marginBottom: '12px',
           paddingBottom: '12px',
-          borderBottom: '1px solid rgba(79, 195, 247, 0.2)'
+          borderBottom: '1px solid rgba(170, 211, 114, 0.2)'
         }}>
           <div style={{
             padding: '4px',
-            background: 'linear-gradient(135deg, rgba(79, 195, 247, 0.2), transparent)',
+            background: 'linear-gradient(135deg, rgba(170, 211, 114, 0.2), transparent)',
             borderRadius: '8px',
-            border: '1px solid rgba(79, 195, 247, 0.3)'
+            border: '1px solid rgba(170, 211, 114, 0.3)'
           }}>
             <img
               src={`https://wow.zamimg.com/images/wow/icons/large/${enhancedSkill.icon}.jpg`}
@@ -556,7 +1141,7 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
           </div>
           <div style={{ flex: 1 }}>
             <div style={{
-              color: '#4fc3f7',
+              color: '#AAD372',
               fontWeight: 'bold',
               fontSize: '18px',
               marginBottom: '2px',
@@ -648,17 +1233,34 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
         ref={iconRef}
         className={`${styles.skillText} ${className}`}
         style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '4px',
           color: getSkillColor(),
           fontWeight: 'bold',
           cursor: 'pointer',
-          borderBottom: `1px dotted ${getSkillColor()}`,
           textShadow: skill.type === 'passive' ? 'none' : '0 0 4px rgba(170, 211, 114, 0.3)',
-          transition: 'all 0.2s ease'
+          transition: 'all 0.2s ease',
+          verticalAlign: 'middle'
         }}
         onMouseEnter={() => setIsTooltipVisible(true)}
         onMouseLeave={() => setIsTooltipVisible(false)}
       >
-        {enhancedSkill.koreanName}
+        <img
+          src={`https://wow.zamimg.com/images/wow/icons/large/${enhancedSkill.icon}.jpg`}
+          alt={enhancedSkill.koreanName}
+          style={{
+            width: '18px',
+            height: '18px',
+            borderRadius: '3px',
+            display: 'inline-block',
+            verticalAlign: 'middle'
+          }}
+          onError={(e) => {
+            e.target.src = 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
+          }}
+        />
+        <span style={{ lineHeight: '18px', verticalAlign: 'middle' }}>{enhancedSkill.koreanName}</span>
         {showTooltip && <Tooltip />}
       </span>
     );
@@ -701,11 +1303,116 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
   );
 };
 
+// 영어 용어 툴팁 컴포넌트 (심화 분석 섹션용)
+const EnglishTerm = ({ english, korean, description = '' }) => {
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+  const termRef = useRef(null);
+
+  const getTooltipPortal = () => {
+    let portal = document.getElementById('tooltip-portal');
+    if (!portal) {
+      portal = document.createElement('div');
+      portal.id = 'tooltip-portal';
+      document.body.appendChild(portal);
+    }
+    return portal;
+  };
+
+  const Tooltip = () => {
+    if (!isTooltipVisible || !termRef.current) return null;
+
+    const rect = termRef.current.getBoundingClientRect();
+    const tooltipWidth = 300;
+    const tooltipHeight = description ? 120 : 80;
+
+    let top = rect.top - tooltipHeight - 10;
+    let left = rect.left + rect.width / 2 - tooltipWidth / 2;
+
+    if (top < 10) {
+      top = rect.bottom + 10;
+    }
+    if (left < 10) {
+      left = 10;
+    } else if (left + tooltipWidth > window.innerWidth - 10) {
+      left = window.innerWidth - tooltipWidth - 10;
+    }
+
+    const tooltipStyle = {
+      position: 'fixed',
+      top: `${top}px`,
+      left: `${left}px`,
+      backgroundColor: 'rgba(26, 26, 46, 0.98)',
+      backgroundImage: 'linear-gradient(135deg, rgba(63, 198, 234, 0.1) 0%, transparent 50%)',
+      border: '2px solid #0070DE',
+      borderRadius: '10px',
+      padding: '12px',
+      zIndex: 10000,
+      width: `${tooltipWidth}px`,
+      pointerEvents: 'none',
+      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(63, 198, 234, 0.2)',
+      animation: 'fadeIn 0.2s ease-in-out'
+    };
+
+    return ReactDOM.createPortal(
+      <div style={tooltipStyle}>
+        <div style={{
+          fontSize: '0.9rem',
+          fontWeight: 'bold',
+          color: '#e0e0e0',
+          marginBottom: description ? '8px' : '4px'
+        }}>
+          {korean}
+        </div>
+        <div style={{
+          fontSize: '0.85rem',
+          color: '#0070DE',
+          marginBottom: description ? '8px' : '0'
+        }}>
+          {english}
+        </div>
+        {description && (
+          <div style={{
+            fontSize: '0.8rem',
+            color: '#a0a0a0',
+            lineHeight: '1.4',
+            borderTop: '1px solid rgba(63, 198, 234, 0.2)',
+            paddingTop: '8px'
+          }}>
+            {description}
+          </div>
+        )}
+      </div>,
+      getTooltipPortal()
+    );
+  };
+
+  return (
+    <span
+      ref={termRef}
+      style={{
+        color: '#0070DE',
+        fontWeight: 'bold',
+        cursor: 'pointer',
+        borderBottom: '1px dotted #0070DE',
+        textShadow: '0 0 4px rgba(63, 198, 234, 0.3)',
+        transition: 'all 0.2s ease',
+        padding: '0 2px'
+      }}
+      onMouseEnter={() => setIsTooltipVisible(true)}
+      onMouseLeave={() => setIsTooltipVisible(false)}
+    >
+      {english}
+      {<Tooltip />}
+    </span>
+  );
+};
+
 const ElementalShamanGuide = () => {
   const [activeSection, setActiveSection] = useState('overview');
   const [activeSubSection, setActiveSubSection] = useState('');
   const [selectedTier, setSelectedTier] = useState('farseer');
   const [showToast, setShowToast] = useState(false);
+  const [showCopyToast, setShowCopyToast] = useState(false);
   const [selectedBuild, setSelectedBuild] = useState('raid-single');
   const [selectedStatHero, setSelectedStatHero] = useState('farseer');
   const [selectedStatMode, setSelectedStatMode] = useState('single');
@@ -751,6 +1458,95 @@ const ElementalShamanGuide = () => {
   // SkillIcon을 내부에서 사용할 수 있도록 설정
   const SkillIcon = SkillIconComponent;
 
+  // EnglishTerm 컴포넌트도 내부에서 사용 가능하도록 설정
+  const Term = EnglishTerm;
+
+  // 텍스트에서 스킬명을 찾아 SkillIcon으로 교체하는 헬퍼 함수
+  const renderTextWithSkillIcons = (text) => {
+    if (!text) return text;
+
+    // 스킬명과 스킬 데이터 매핑 (스킬 + 버프/메커니즘)
+    const skillNameMap = {
+      // 주력 스킬
+      '번개 화살': skillData.lightningBolt,
+      '용암 폭발': skillData.lavaBurst,
+      '대지 충격': skillData.earthShock,
+      '지진': skillData.earthquake,
+      '화염 충격': skillData.flameShock,
+      '연쇄 번개': skillData.chainLightning,
+      '전격 방전': skillData.lightningBoltOverload,
+      // 쿨다운 스킬
+      '폭풍지기': skillData.stormkeeper,
+      '폭풍의 정령': skillData.stormElemental,
+      '승천': skillData.ascendance,
+      '태초의 파도': skillData.primordialWave,
+      '정화의 토템': skillData.purifyingTotem,
+      '뇌우': skillData.thunderstorm,
+      // 유틸리티
+      '늑대 정령': skillData.ghostWolf,
+      '대지의 정령': skillData.earthElemental,
+      '영웅심': skillData.heroism,
+      '피의 욕망': skillData.bloodlust,
+      '진정의 토템': skillData.tremorTotem,
+      '땅가르기': skillData.earthenWall,
+      // 버프 및 메커니즘
+      '원소의 대가': skillData.masterOfTheElements,
+      '용암 쇄도': skillData.lavaSurge,
+      '깨어나는 폭풍': skillData.awakeningStorms,
+      '폭풍 변환': skillData.tempest,
+      '선조의 부름': skillData.callOfTheAncestors,
+      '선조의 신속함': skillData.ancestorSwiftness,
+      // 리소스
+      '소용돌이': skillData.maelstrom,
+      '소용돌이 100': skillData.maelstrom,
+      '소용돌이 60': skillData.maelstrom,
+      '소용돌이 80': skillData.maelstrom,
+      '소용돌이 300': skillData.maelstrom,
+      '소용돌이 값': skillData.maelstrom
+    };
+
+    // 1단계: "한글 (English)" 패턴 제거 (괄호와 영어 제거)
+    let processedText = text.replace(/([가-힣\s]+)\s*\(([A-Z][a-zA-Z\s]+)\)/g, '$1');
+
+    // 2단계: 스킬 이름 처리
+    const termNames = Object.keys(skillNameMap).sort((a, b) => b.length - a.length);
+    const termPattern = new RegExp(termNames.map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+    let matchIndex = 0;
+
+    while ((match = termPattern.exec(processedText)) !== null) {
+      // 용어 이전 텍스트
+      if (match.index > lastIndex) {
+        parts.push(processedText.substring(lastIndex, match.index));
+      }
+
+      const termName = match[0].trim();
+
+      // 스킬 아이콘 추가
+      if (skillNameMap[termName]) {
+        const skillObj = skillNameMap[termName];
+        parts.push(
+          <React.Fragment key={`skill-${matchIndex}`}>
+            <SkillIcon skill={skillObj} textOnly />
+          </React.Fragment>
+        );
+      }
+
+      lastIndex = match.index + termName.length;
+      matchIndex++;
+    }
+
+    // 나머지 텍스트
+    if (lastIndex < processedText.length) {
+      parts.push(processedText.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? <>{parts}</> : processedText;
+  };
+
   const sectionRefs = {
     overview: useRef(null),
     rotation: useRef(null),
@@ -770,7 +1566,6 @@ const ElementalShamanGuide = () => {
     'builds-talents': useRef(null),
     // 스탯 서브섹션
     'stats-priority': useRef(null),
-    'stats-simc': useRef(null),
   };
 
   // 유기적 모듈 초기화 및 연결
@@ -915,45 +1710,56 @@ const ElementalShamanGuide = () => {
       </SectionHeader>
       <Card>
         <div className={styles.subsection} ref={subSectionRefs['overview-intro']}>
-          <h3 className={styles.subsectionTitle}>정기 전문화 개요</h3>
+          <h3 className={styles.subsectionTitle}>정기 주술사 개요</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.6' }}>
-            정기 주술사는 <strong style={{ color: '#0070DE' }}>원소의 힘을 다루어 자연의 분노를 내리치는</strong> 원거리 딜러 전문화입니다.
-            TWW 시즌3에서는 <span style={{ color: '#4fc3f7', fontWeight: 'bold' }}>선견자</span>와
-            <span style={{ color: '#ffeb3b', fontWeight: 'bold' }}>폭풍인도자</span> 영웅특성이 모두 사용되며,
-            11.2 패치 이후 번개 화살과 용암 폭발의 대폭 버프로 A-Tier 딜러로 자리잡았습니다.
+            정기 주술사는 <strong style={{ color: '#0070DE' }}>소용돌이 값을 관리하여 강력한 자연 피해를 입히는</strong> 원거리 캐스터 DPS 전문화입니다.
+            <strong style={{ color: '#FFD700' }}>레이드에서는 선견자</strong>를 사용하여 안정적인 단일 대상 피해를 제공하고,
+            <strong style={{ color: '#32CD32' }}>쐐기에서는 폭풍인도자</strong>를 사용하여 폭발적인 광역 피해를 입힙니다.
           </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '10px', marginBottom: '20px' }}>
+            {[
+              { label: '단일 대상', value: '5/5', color: '#FFD700' },
+              { label: '광역', value: '4/5', color: '#32CD32' },
+              { label: '유틸리티', value: '4/5', color: '#0070DE' },
+              { label: '생존력', value: '3/5', color: '#ffa500' },
+              { label: '기동성', value: '3/5', color: '#ff6b6b' }
+            ].map(({ label, value, color }) => (
+              <div key={label} style={{
+                padding: '10px',
+                background: 'rgba(255,255,255,0.05)',
+                borderRadius: '8px',
+                textAlign: 'center',
+                border: `1px solid ${color}30`
+              }}>
+                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color, marginBottom: '5px' }}>{value}</div>
+                <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>{label}</div>
+              </div>
+            ))}
+          </div>
 
           <h3 className={styles.subsectionTitle} style={{ marginTop: '30px' }}>딜링 메커니즘</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-            정기 주술사는 <strong style={{ color: '#4fc3f7' }}>소용돌이를 생성하고 소비하여 강력한 원소 마법을 방출하는</strong> 캐스터 전문화입니다.
-            핵심 메커니즘은 {' '}
-            <SkillIcon skill={skillData.flameShock} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.flameShock} textOnly={true} />을 100% 유지하고, {' '}
-            <SkillIcon skill={skillData.lavaBurst} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.lavaBurst} textOnly={true} /> 프록을 즉시 소모하며,
-            <SkillIcon skill={skillData.lightningBolt} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.lightningBolt} textOnly={true} />로 소용돌이를 생성하는 것입니다.
+            정기 주술사는 <strong style={{ color: '#0070DE' }}>소용돌이 값 0-100을 쌓고 소모하는</strong> 메커니즘을 가지고 있습니다.
+            <SkillIcon skill={skillData.lightningBolt} textOnly={true} />와 {' '}
+            <SkillIcon skill={skillData.chainLightning} textOnly={true} />로 소용돌이 값을 생성하고,
+            <SkillIcon skill={skillData.earthShock} textOnly={true} /> 또는 <SkillIcon skill={skillData.earthquake} textOnly={true} />로 폭발적인 피해를 입힙니다.
           </p>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-            핵심 시너지는 소용돌이를 60-90 사이로 유지하며 {' '}
-            <SkillIcon skill={skillData.earthShock} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.earthShock} textOnly={true} />로 버스트 딜을 넣는 것이며,
-            <SkillIcon skill={skillData.stormkeeper} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.stormkeeper} textOnly={true} />와
-            <SkillIcon skill={skillData.elementalBlast} size="small" className={styles.inlineIcon} />
-            <SkillIcon skill={skillData.elementalBlast} textOnly={true} /> 같은
-            강력한 쿨다운 스킬을 주기적으로 사용하여 지속 딜을 극대화합니다.
+            용암 쇄도 프록 발동 시 <SkillIcon skill={skillData.lavaBurst} textOnly={true} />를 즉시 시전하며,
+            <SkillIcon skill={skillData.lavaBurst} textOnly={true} /> 사용 후에는
+            <SkillIcon skill={skillData.masterOfTheElements} textOnly={true} /> 버프로 다음 스킬 피해가 20% 증가합니다.
+            <SkillIcon skill={skillData.stormkeeper} textOnly={true} />는 번개 화살을 강화하여 버스트 윈도우를 극대화합니다.
           </p>
 
           <h4 style={{ color: '#ffa500', fontSize: '1.2rem', marginBottom: '15px' }}>핵심 스킬</h4>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '15px', marginBottom: '30px' }}>
             {[
-              { skill: skillData.flameShock, label: '도트 유지 필수' },
-              { skill: skillData.lavaBurst, label: '프록 즉시 소모' },
               { skill: skillData.lightningBolt, label: '소용돌이 8 생성' },
-              { skill: skillData.earthShock, label: '소용돌이 60 소비' },
-              { skill: skillData.elementalBlast, label: '소용돌이 30 생성' },
-              { skill: skillData.stormkeeper, label: '1분 쿨다운' }
+              { skill: skillData.lavaBurst, label: '원소의 대가 트리거' },
+              { skill: skillData.earthShock, label: '소용돌이 소모 (단일)' },
+              { skill: skillData.earthquake, label: '소용돌이 소모 (광역)' },
+              { skill: skillData.stormkeeper, label: '번개 화살 강화' },
+              { skill: skillData.stormElemental, label: '주 쿨다운' }
             ].map(({ skill, label }) => (
               <div key={skill.id} style={{
                 display: 'flex',
@@ -978,7 +1784,7 @@ const ElementalShamanGuide = () => {
                   <div style={{ fontWeight: 'bold' }}>
                     <SkillIcon skill={skill} textOnly={true} />
                   </div>
-                  <div style={{ fontSize: '0.9rem', opacity: 0.8, color: label.includes('생성') ? '#32CD32' : label.includes('소비') ? '#ff6b6b' : '#4fc3f7' }}>{label}</div>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.8, color: label.includes('생성') ? '#32CD32' : label.includes('조각') ? '#9482C9' : '#ffa500' }}>{label}</div>
                 </div>
               </div>
             ))}
@@ -986,31 +1792,64 @@ const ElementalShamanGuide = () => {
 
           <h4 ref={subSectionRefs['overview-resource']} style={{ color: '#ffa500', fontSize: '1.2rem', marginBottom: '15px' }}>리소스 시스템</h4>
           <ul style={{ lineHeight: '1.8', marginBottom: '20px' }}>
-            <li>주 자원: <span style={{ color: '#4fc3f7', fontWeight: 'bold' }}>소용돌이</span> (최대 100)</li>
+            <li>주 자원: <span style={{ color: '#0070DE', fontWeight: 'bold' }}>마나</span> (최대 100%, 전투 중 자연 회복 있음)</li>
+            <li>보조 자원: <span style={{ color: '#0070DE', fontWeight: 'bold' }}>소용돌이 값</span> (최대 100, 전투 이탈 시 유지)</li>
             <li>소용돌이 생성:
               <ul style={{ marginTop: '0.5rem', paddingLeft: '2rem' }}>
-                <li><SkillIcon skill={skillData.lightningBolt} textOnly={true} /> - 8 생성</li>
-                <li><SkillIcon skill={skillData.lavaBurst} textOnly={true} /> - 10 생성</li>
-                <li><SkillIcon skill={skillData.elementalBlast} textOnly={true} /> - 30 생성</li>
+                <li><SkillIcon skill={skillData.lightningBolt} textOnly={true} /> - 소용돌이 8 생성 (기본 스킬)</li>
+                <li><SkillIcon skill={skillData.chainLightning} textOnly={true} /> - 소용돌이 8 생성 (광역)</li>
+                <li><SkillIcon skill={skillData.lavaBurst} textOnly={true} /> - 소용돌이 8-12 생성 (용암 쇄도 프록 시)</li>
               </ul>
             </li>
             <li>소용돌이 소비:
               <ul style={{ marginTop: '0.5rem', paddingLeft: '2rem' }}>
-                <li><SkillIcon skill={skillData.earthShock} textOnly={true} /> - 60 소비 (단일 대상)</li>
-                <li><SkillIcon skill={skillData.earthquake} textOnly={true} /> - 60 소비 (광역)</li>
+                <li><SkillIcon skill={skillData.earthShock} textOnly={true} /> - 소용돌이 60 소모 (단일 대상 피해)</li>
+                <li><SkillIcon skill={skillData.earthquake} textOnly={true} /> - 소용돌이 60 소모 (광역 도트 피해)</li>
               </ul>
             </li>
-            <li><strong style={{ color: '#ffa500' }}>핵심 전략:</strong> 소용돌이를 60-90 사이로 유지하며 <SkillIcon skill={skillData.earthShock} textOnly={true} /> 사용</li>
-            <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 소용돌이 100 도달 시 추가 생성 손실 발생</li>
+            <li><strong style={{ color: '#ffa500' }}>핵심 전략:</strong> 소용돌이 60+ 도달 시 즉시 소모 → <SkillIcon skill={skillData.earthShock} textOnly={true} />로 폭발적 피해</li>
+            <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 소용돌이가 100 도달하면 생성 중단 → 리소스 낭비 방지 필수</li>
           </ul>
 
-          <h4 style={{ color: '#ffa500', fontSize: '1.2rem', marginTop: '25px', marginBottom: '15px' }}>원소 정령 시스템</h4>
+          <h4 style={{ color: '#ffa500', fontSize: '1.2rem', marginTop: '25px', marginBottom: '15px' }}>영웅 특성 메커니즘</h4>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
+            <div style={{ padding: '15px', background: 'rgba(0, 112, 222, 0.1)', borderRadius: '8px', border: '1px solid #0070DE30' }}>
+              <h5 style={{ color: '#0070DE', fontSize: '1.1rem', marginBottom: '10px' }}>🔮 선견자 (레이드)</h5>
+              <ul style={{ lineHeight: '1.8', paddingLeft: '20px' }}>
+                <li><strong>선조의 부름:</strong> <SkillIcon skill={skillData.primordialWave} textOnly={true} /> 또는 <SkillIcon skill={skillData.ancestralSwiftness} textOnly={true} /> 사용 시 선조 소환</li>
+                <li><strong>선조 행동:</strong> 플레이어의 주문을 따라 시전
+                  <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                    <li>단일 대상: <SkillIcon skill={skillData.lavaBurst} textOnly={true} /></li>
+                    <li>광역: <SkillIcon skill={skillData.chainLightning} textOnly={true} /></li>
+                  </ul>
+                </li>
+                <li><strong>정령 쿨다운 감소:</strong> 불/폭풍의 정령 쿨다운 5초 감소</li>
+              </ul>
+            </div>
+            <div style={{ padding: '15px', background: 'rgba(50, 205, 50, 0.1)', borderRadius: '8px', border: '1px solid #32CD3230' }}>
+              <h5 style={{ color: '#32CD32', fontSize: '1.1rem', marginBottom: '10px' }}>⚡ 폭풍인도자 (쐐기)</h5>
+              <ul style={{ lineHeight: '1.8', paddingLeft: '20px' }}>
+                <li><strong>폭풍 변환:</strong> <SkillIcon skill={skillData.lightningBolt} textOnly={true} />가 <SkillIcon skill={skillData.tempest} textOnly={true} />로 변환
+                  <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                    <li>소용돌이 300 소모 후</li>
+                    <li>깨어나는 폭풍 3중첩 획득 시</li>
+                  </ul>
+                </li>
+                <li><strong>전격 방전:</strong> 다음 <SkillIcon skill={skillData.lightningBolt} textOnly={true} /> / <SkillIcon skill={skillData.chainLightning} textOnly={true} /> 2회
+                  <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                    <li>즉시 시전</li>
+                    <li>피해 40% 증가</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h4 style={{ color: '#ffa500', fontSize: '1.2rem', marginTop: '25px', marginBottom: '15px' }}>주요 메커니즘</h4>
           <ul style={{ lineHeight: '1.8', marginBottom: '20px' }}>
-            <li><strong style={{ color: '#ff6b6b' }}>불꽃 정령:</strong> 30초 지속, 기본 버스트 쿨다운 (2.5분)</li>
-            <li><strong style={{ color: '#4fc3f7' }}>폭풍 정령:</strong> 30초 지속, 치명타 증가 버프 제공 (특성)</li>
-            <li><strong style={{ color: '#ffeb3b' }}>용암 급증:</strong> <SkillIcon skill={skillData.flameShock} textOnly={true} /> 틱마다 15% 확률로 <SkillIcon skill={skillData.lavaBurst} textOnly={true} /> 즉시 시전 프록</li>
-            <li><strong style={{ color: '#ffa500' }}>폭풍수호자:</strong> <SkillIcon skill={skillData.lightningBolt} textOnly={true} /> 2회 즉시 시전, 피해 150% 증가 (1분 쿨다운)</li>
-            <li><strong style={{ color: '#32CD32' }}>버스트 타이밍:</strong> 정령 소환 → 폭풍수호자 → 용암 폭발 연타 → 대지 충격</li>
+            <li><strong style={{ color: '#0070DE' }}>소용돌이 관리:</strong> 오버캡 방지가 핵심 - <SkillIcon skill={skillData.masterOfTheElements} textOnly={true} /> 활성 시 또는(는) 소용돌이 높을 때 <SkillIcon skill={skillData.earthShock} textOnly={true} /> 사용</li>
+            <li><strong style={{ color: '#ff6b6b' }}>원소의 대가:</strong> <SkillIcon skill={skillData.lavaBurst} textOnly={true} /> 사용 후 15초간 다음 스킬 피해 20% 증가</li>
+            <li><strong style={{ color: '#ffa500' }}>화염 충격 유지:</strong> <SkillIcon skill={skillData.flameShock} textOnly={true} /> 도트를 항상 유지해야 <SkillIcon skill={skillData.lavaBurst} textOnly={true} /> 시전 가능</li>
+            <li><strong style={{ color: '#FFD700' }}>버스트 윈도우:</strong> <SkillIcon skill={skillData.stormElemental} textOnly={true} /> + <SkillIcon skill={skillData.stormkeeper} textOnly={true} /> + <SkillIcon skill={skillData.ascendance} textOnly={true} /> 동시 사용으로 극대 DPS</li>
           </ul>
         </div>
       </Card>
@@ -1031,33 +1870,33 @@ const ElementalShamanGuide = () => {
           {/* 영웅특성 선택 탭 */}
           <div className={styles.tierTabs} style={{ marginBottom: '30px' }}>
             <button
-              className={`${styles.tierTab} ${selectedTier === 'diabolist' ? styles.active : ''}`}
-              onClick={() => setSelectedTier('diabolist')}
+              className={`${styles.tierTab} ${selectedTier === 'farseer' ? styles.active : ''}`}
+              onClick={() => setSelectedTier('farseer')}
             >
-              <span className={styles.tierIcon}>🔮</span> 악마학자
+              <span className={styles.tierIcon}>🔮</span> 선견자
             </button>
             <button
-              className={`${styles.tierTab} ${selectedTier === 'soulharvester' ? styles.active : ''}`}
-              onClick={() => setSelectedTier('soulharvester')}
+              className={`${styles.tierTab} ${selectedTier === 'stormbringer' ? styles.active : ''}`}
+              onClick={() => setSelectedTier('stormbringer')}
             >
-              <span className={styles.tierIcon}>💀</span> 영혼 수확자
+              <span className={styles.tierIcon}>⚡</span> 폭풍인도자
             </button>
           </div>
 
           {/* 티어 세트 효과 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-tier']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32'
+              color: selectedTier === 'farseer' ? '#0070DE' : '#0070DE'
             }}>티어 세트 효과</h3>
             <div className={styles.tierBonuses} style={{
-              background: selectedTier === 'diabolist'
-                ? 'linear-gradient(135deg, rgba(148, 130, 201, 0.1), rgba(148, 130, 201, 0.05))'
-                : 'linear-gradient(135deg, rgba(50, 205, 50, 0.1), rgba(50, 205, 50, 0.05))',
+              background: selectedTier === 'farseer'
+                ? 'linear-gradient(135deg, rgba(63, 198, 234, 0.1), rgba(63, 198, 234, 0.05))'
+                : 'linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(78, 205, 196, 0.05))',
               padding: '1.5rem',
               borderRadius: '8px',
-              border: selectedTier === 'diabolist'
-                ? '1px solid rgba(148, 130, 201, 0.3)'
-                : '1px solid rgba(50, 205, 50, 0.3)'
+              border: selectedTier === 'farseer'
+                ? '1px solid rgba(63, 198, 234, 0.3)'
+                : '1px solid rgba(78, 205, 196, 0.3)'
             }}>
               <div className={styles.bonusItem} style={{
                 marginBottom: '1rem',
@@ -1078,7 +1917,7 @@ const ElementalShamanGuide = () => {
                   gap: '0.3rem',
                   flexWrap: 'wrap'
                 }}>
-                  {currentContent.tierSet['2set']}
+                  {renderTextWithSkillIcons(currentContent.tierSet['2set'])}
                 </span>
               </div>
               <div className={styles.bonusItem} style={{
@@ -1099,7 +1938,7 @@ const ElementalShamanGuide = () => {
                   gap: '0.3rem',
                   flexWrap: 'wrap'
                 }}>
-                  {currentContent.tierSet['4set']}
+                  {renderTextWithSkillIcons(currentContent.tierSet['4set'])}
                 </span>
               </div>
             </div>
@@ -1111,65 +1950,61 @@ const ElementalShamanGuide = () => {
             padding: '1.5rem',
             borderRadius: '8px',
             marginTop: '1.5rem',
-            border: selectedTier === 'diabolist'
-              ? '1px solid rgba(148, 130, 201, 0.3)'
-              : '1px solid rgba(50, 205, 50, 0.3)'
+            border: selectedTier === 'farseer'
+              ? '1px solid rgba(63, 198, 234, 0.3)'
+              : '1px solid rgba(78, 205, 196, 0.3)'
           }}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32'
+              color: selectedTier === 'farseer' ? '#0070DE' : '#0070DE'
             }}>영웅 특성 딜링 메커니즘</h3>
 
-            {selectedTier === 'diabolist' ? (
+            {selectedTier === 'farseer' ? (
               <>
                 <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                  <strong style={{ color: '#8B00FF' }}>악마학자</strong>는 {' '}
-                  <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.handOfGuldan} textOnly={true} />를 통한 {' '}
-                  <strong style={{ color: '#9482C9' }}>날뛰는 임프 대량 소환과 악마 핵 중첩</strong>으로 {' '}
-                  <strong style={{ color: '#ffa500' }}>폭발적인 버스트 딜</strong>을 제공합니다.
-                  티어 세트와 결합 시 날뛰는 임프의 추가 피해(15%)와 영혼의 조각 생성(2개)으로
-                  단일 대상에서 최고의 성능을 발휘합니다.
+                  <strong style={{ color: '#0070DE' }}>선견자</strong>는 {' '}
+                  {renderTextWithSkillIcons('선조의 부름')} 메커니즘과 {renderTextWithSkillIcons('원소의 대가')} 버프를 극대화하는 {' '}
+                  <strong style={{ color: '#0070DE' }}>안정적인 단일 대상 피해</strong>로 {' '}
+                  <strong style={{ color: '#ffa500' }}>레이드 보스전에서 최고의 성능</strong>을 제공합니다.
+                  {renderTextWithSkillIcons('태초의 파도')}와 {renderTextWithSkillIcons('선조의 신속함')}을 함께 사용하여
+                  강화된 선조를 소환하는 것이 핵심입니다.
                 </p>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <h4 style={{ color: '#8B00FF', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> - 핵심 메커니즘
+                  <h4 style={{ color: '#0070DE', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    {renderTextWithSkillIcons('용암 폭발')} - 핵심 피해 스킬
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
-                    <li><strong style={{ color: '#ff6b6b' }}>영혼의 조각 3개</strong>로 사용 시 최대 효율 (임프 3마리 소환)</li>
-                    <li><strong style={{ color: '#ffa500' }}>악마 핵 중첩</strong>: 5중첩 시 다음 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 강화</li>
-                    <li><strong style={{ color: '#9482C9' }}>티어 2세트</strong>: 임프 피해 15% 증가</li>
-                    <li><strong style={{ color: '#FFD700' }}>연계:</strong> 임프 소환 → 악마 핵 중첩 → <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 폭딜</li>
+                    <li><strong style={{ color: '#0070DE' }}>항상 사용 가능할 때 시전:</strong> {renderTextWithSkillIcons('용암 폭발')}은 {renderTextWithSkillIcons('화염 충격')} 유지 중 항상 우선</li>
+                    <li><strong style={{ color: '#ffa500' }}>원소의 대가:</strong> {renderTextWithSkillIcons('용암 폭발')} 후 15초간 다음 스킬 피해 20% 증가</li>
+                    <li><strong style={{ color: '#0070DE' }}>티어 4세트:</strong> 주문 피해 증가, 마나 비용 감소, {renderTextWithSkillIcons('용암 폭발')} 충전 증가</li>
+                    <li><strong style={{ color: '#FFD700' }}>선조 소환:</strong> {renderTextWithSkillIcons('태초의 파도')} + {renderTextWithSkillIcons('선조의 신속함')} 함께 사용</li>
                   </ul>
                   <p style={{ color: '#e0e0e0', fontSize: '0.95rem' }}>
-                    날뛰는 임프는 빠른 공격 속도로 지속 딜을 담당하며, {' '}
-                    <SkillIcon skill={skillData.summonDemonicTyrant} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.summonDemonicTyrant} textOnly={true} /> 소환 전에 최대한 많이 생성해야 합니다.
+                    선견자는 {renderTextWithSkillIcons('태초의 파도')}와 {renderTextWithSkillIcons('선조의 신속함')}을 함께 사용하여 강화된 선조를 소환하고, {' '}
+                    {renderTextWithSkillIcons('원소의 대가')} 버프를 항상 유지해야 DPS가 극대화됩니다.
                   </p>
                 </div>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <h4 style={{ color: '#9482C9', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.summonDemonicTyrant} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.summonDemonicTyrant} textOnly={true} /> - 버스트 타이밍
+                  <h4 style={{ color: '#0070DE', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    소용돌이 관리 - 오버캡 방지
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>준비 단계:</strong> 공포사냥개 소환 + 임프 최대 생성 (8~10마리)
+                      <strong style={{ color: '#ffa500' }}>핵심 규칙:</strong> {renderTextWithSkillIcons('원소의 대가')} 활성 시 또는 소용돌이 오버캡 직전 {renderTextWithSkillIcons('대지 충격')} 사용
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>악마 연장:</strong> 모든 악마의 지속시간 15초 증가
+                      <strong style={{ color: '#32CD32' }}>최적 타이밍:</strong> {renderTextWithSkillIcons('원소의 대가')} 버프와 함께 {renderTextWithSkillIcons('대지 충격')} 사용하여 피해 극대화
                     </li>
                     <li>
-                      <strong style={{ color: '#FFD700' }}>피해 증폭:</strong> 악마들의 공격력 25% 증가 (15초)
+                      <strong style={{ color: '#FFD700' }}>승천 중:</strong> {renderTextWithSkillIcons('승천')} 활성 시 {renderTextWithSkillIcons('냉기 충격')} 사용 금지 (이동 시 제외)
                     </li>
                     <li>
-                      <strong>장신구/물약 조합:</strong> 폭군과 함께 사용하여 버스트 극대화
+                      <strong>얼음격노 활용:</strong> {renderTextWithSkillIcons('정기의 융합')} 비활성 시 {renderTextWithSkillIcons('얼음격노')} 사용
                     </li>
                   </ul>
                   <p style={{ color: '#ffa500', fontSize: '0.95rem', fontWeight: 'bold' }}>
-                    💡 프로 팁: 티어 4세트 효과로 폭군 사용 시 영혼의 조각 2개를 추가로 얻어 즉시 임프를 더 소환할 수 있습니다.
+                    💡 프로 팁: {renderTextWithSkillIcons('원소의 대가')} 버프 100% 유지가 DPS 극대화의 핵심입니다.
                   </p>
                 </div>
 
@@ -1177,76 +2012,62 @@ const ElementalShamanGuide = () => {
                   <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>플레이스타일 특징</h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>영혼의 조각 관리:</strong> 3개 단위로 소비하여 효율 극대화
+                      <strong style={{ color: '#0070DE' }}>소용돌이 관리:</strong> 오버캡 방지 최우선, {renderTextWithSkillIcons('원소의 대가')} 활성 시 {renderTextWithSkillIcons('대지 충격')} 우선
                     </li>
                     <li>
-                      <SkillIcon skill={skillData.demonicStrength} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.demonicStrength} textOnly={true} /> - 1분 쿨기로 추가 버스트
+                      {renderTextWithSkillIcons('원소의 대가')} - 15초 버프 100% 유지가 핵심 ({renderTextWithSkillIcons('용암 폭발')} 쿨다운마다 사용)
                     </li>
-                    <li>
-                      악마 핵 5중첩 시 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선 사용
-                    </li>
-                    <li>레이드 단일 대상과 장기전에서 최고 성능</li>
+                    <li>{renderTextWithSkillIcons('화염 충격')} 도트 항상 유지 필수 - {renderTextWithSkillIcons('용암 폭발')} 시전 조건</li>
+                    <li>레이드 단일 대상과 보스 버스트 구간에서 최고 성능</li>
                   </ul>
                 </div>
               </>
             ) : (
               <>
                 <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                  <strong style={{ color: '#32CD32' }}>영혼 수확자</strong>는 {' '}
-                  <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={skillData.soulRot} textOnly={true} />를 통한 {' '}
-                  <strong style={{ color: '#32CD32' }}>악마 강화와 영혼 거두기 메커니즘</strong>으로 {' '}
-                  <strong style={{ color: '#ffa500' }}>안정적인 딜 증폭</strong>을 제공합니다.
-                  티어 세트 효과로 <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활성 중 악마 공격력이 20% 증가하며,
-                  영혼의 조각 1개를 추가로 생성하여 지속적인 악마 소환이 가능합니다.
+                  <strong style={{ color: '#32CD32' }}>폭풍인도자</strong>는 {' '}
+                  {renderTextWithSkillIcons('폭풍 변환')}과 {renderTextWithSkillIcons('Lightning Rod 확산')}을 통한 {' '}
+                  <strong style={{ color: '#32CD32' }}>광역 피해 극대화 플레이</strong>로 {' '}
+                  <strong style={{ color: '#ffa500' }}>쐐기돌에서 최고의 성능</strong>을 제공합니다.
+                  {renderTextWithSkillIcons('승천')} 중 최대한 많은 {renderTextWithSkillIcons('지진')}과 {renderTextWithSkillIcons('연쇄 번개')}를 시전하는 것이 핵심입니다.
                 </p>
 
                 <div style={{ marginBottom: '20px' }}>
                   <h4 style={{ color: '#32CD32', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.soulRot} textOnly={true} /> - 핵심 버프
+                    {renderTextWithSkillIcons('폭풍')} - 소용돌이 300 소모 후 변환
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>재사용 대기시간:</strong> 1분 - 최우선 사용
+                      <strong style={{ color: '#FFD700' }}>변환 조건:</strong> 소용돌이 300 소모 후 + {renderTextWithSkillIcons('깨어나는 폭풍')} 3중첩
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>티어 2세트:</strong> 활성 중 악마 공격력 20% 증가 (8초)
+                      <strong style={{ color: '#32CD32' }}>대상 변경:</strong> Lightning Rod 없는 대상에 {renderTextWithSkillIcons('폭풍')} 사용하여 디버프 확산
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>티어 4세트:</strong> 영혼의 조각 1개 추가 생성
-                    </li>
-                    <li>
-                      <strong style={{ color: '#FFD700' }}>광역 효과:</strong> 최대 4명의 추가 대상에게 동시 피해
-                    </li>
-                    <li>
-                      <strong style={{ color: '#9482C9' }}>생존력:</strong> 입힌 피해의 50% 생명력 회복
+                      <strong style={{ color: '#0070DE' }}>광역 활용:</strong> {renderTextWithSkillIcons('지진')}, {renderTextWithSkillIcons('원소 작렬')}로 Lightning Rod 확산
                     </li>
                   </ul>
                   <p style={{ color: '#ffa500', fontSize: '0.95rem', fontWeight: 'bold' }}>
-                    💡 프로 팁: 영혼 부식은 재사용 대기시간마다 즉시 사용하여 악마 강화 버프를 유지하세요.
+                    💡 프로 팁: {renderTextWithSkillIcons('승천')} 중 {renderTextWithSkillIcons('지진')}과 {renderTextWithSkillIcons('연쇄 번개')}를 최대한 많이 시전하여 광역 버스트 극대화
                   </p>
                 </div>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <h4 style={{ color: '#9482C9', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    영혼 거두기 메커니즘
+                  <h4 style={{ color: '#0070DE', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    {renderTextWithSkillIcons('전격 방전')} - 버스트 메커니즘
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li>
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활성 시 악마 피해 증폭
+                      {renderTextWithSkillIcons('폭풍')} 사용 시 전격 방전 버프 15초 활성화
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>영혼의 조각 생성:</strong> 티어 4세트로 자원 순환 개선
+                      <strong style={{ color: '#ffa500' }}>중첩 생성:</strong> 번개 화살/연쇄 번개 시전 시 중첩 1개 (최대 15중첩)
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>광역 전투:</strong> 4~5 타겟에서 뛰어난 성능
+                      <strong style={{ color: '#0070DE' }}>연계:</strong> {renderTextWithSkillIcons('폭풍')} → 번개 화살 연타 → 15중첩 → {renderTextWithSkillIcons('전격 방전')} 폭발
                     </li>
                     <li>
-                      <SkillIcon skill={skillData.implosion} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.implosion} textOnly={true} /> - 임프 6마리 이상 시 사용
+                      {renderTextWithSkillIcons('폭풍의 정령')}와 함께 사용하여 폭발 딜 극대화
                     </li>
                   </ul>
                 </div>
@@ -1255,15 +2076,15 @@ const ElementalShamanGuide = () => {
                   <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>플레이스타일 특징</h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>쿨기 우선순위:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 최우선 사용
+                      <strong style={{ color: '#0070DE' }}>버스트 중심:</strong> {renderTextWithSkillIcons('폭풍')} 40초 쿨다운 → 주기적 전격 방전 폭발 패턴
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>광역 최적화:</strong> 임프 생성 → <SkillIcon skill={skillData.implosion} textOnly={true} /> 순환
+                      <strong style={{ color: '#0070DE' }}>중첩 관리:</strong> 전격 방전 15중첩 도달 시 즉시 사용 (버프 만료 전)
                     </li>
                     <li>
-                      악마 강화 버프 유지로 안정적인 지속 딜
+                      {renderTextWithSkillIcons('깨어나는 폭풍')} 버프로 추가 피해 증가
                     </li>
-                    <li>쐐기돌 던전과 레이드 광역 구간에서 최고 성능</li>
+                    <li>쐐기돌 광역와 레이드 단일 대상 모두에서 최고 성능</li>
                   </ul>
                 </div>
               </>
@@ -1275,11 +2096,11 @@ const ElementalShamanGuide = () => {
               borderRadius: '8px',
               marginTop: '15px'
             }}>
-              <p style={{ color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32', fontSize: '0.95rem', margin: 0 }}>
+              <p style={{ color: selectedTier === 'farseer' ? '#0070DE' : '#0070DE', fontSize: '0.95rem', margin: 0 }}>
                 <strong>💡 추천 콘텐츠:</strong> {' '}
-                {selectedTier === 'diabolist' ?
-                  '단일 보스 레이드, 버스트 타이밍이 중요한 전투' :
-                  '쐐기돌 던전, 지속 딜이 필요한 레이드'}
+                {selectedTier === 'farseer' ?
+                  '단일 보스 레이드, 버스트 딜이 중요한 전투' :
+                  '쐐기돌 던전, 광역 딜이 필요한 레이드 구간'}
               </p>
             </div>
           </div>
@@ -1287,7 +2108,7 @@ const ElementalShamanGuide = () => {
           {/* 단일 대상 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-single']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32',
+              color: selectedTier === 'farseer' ? '#0070DE' : '#0070DE',
               marginTop: '1.5rem'
             }}>단일 대상</h3>
 
@@ -1299,9 +2120,9 @@ const ElementalShamanGuide = () => {
               marginBottom: '15px'
             }}>
               <p style={{ fontSize: '0.9rem', color: '#ccc', marginBottom: '10px' }}>
-                {selectedTier === 'diabolist' ?
-                  '⏱️ 전투 직전: 악마 소환 후 굴단의 손으로 버스트 준비' :
-                  '⏱️ 전투 직전: 영혼 거두기로 악마 강화 준비'}
+                {selectedTier === 'farseer' ?
+                  renderTextWithSkillIcons('⏱️ 전투 3초 전: 폭풍의 정령 소환 → 전투 1.5초 전: 폭풍지기 사용 → Pull: 번개 화살') :
+                  renderTextWithSkillIcons('⏱️ 전투 3초 전: 폭풍의 정령 소환 → 전투 1.5초 전: 폭풍지기 사용 → Pull: 연쇄 번개')}
               </p>
               <div className={styles.skillSequence}>
                 {currentContent.singleTarget.opener.map((skill, index, arr) => (
@@ -1311,31 +2132,84 @@ const ElementalShamanGuide = () => {
                   </React.Fragment>
                 ))}
               </div>
-              {selectedTier === 'diabolist' && (
-                <p style={{ fontSize: '0.85rem', color: '#9482C9', marginTop: '10px' }}>
-                  💡 팁: 악마 폭군은 가능한 많은 악마를 소환한 후 사용
+              {selectedTier === 'farseer' && (
+                <p style={{ fontSize: '0.85rem', color: '#0070DE', marginTop: '8px' }}>
+                  💡 팁: {renderTextWithSkillIcons('폭풍의 정령은 전투 3초 전 프리-풀 전용 - 30초간 강력한 피해')}
                 </p>
               )}
             </div>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.singleTarget.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  background: index === 0 ? 'rgba(255, 107, 107, 0.15)' : 'rgba(0, 0, 0, 0.3)',
+                  padding: '12px 15px',
+                  borderRadius: '8px',
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`,
+                  border: index === 0 ? '2px solid #ff6b6b' : 'none'
+                }}>
+                  {/* 우선순위 번호 + 스킬명 */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                    <span style={{
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
+                      color: '#fff',
+                      width: '28px',
+                      height: '28px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: index === 0 ? '0.95rem' : '0.85rem',
+                      fontWeight: 'bold',
+                      boxShadow: index === 0 ? '0 0 10px rgba(255, 107, 107, 0.5)' : 'none'
+                    }}>
+                      {index === 0 ? '0' : index}
+                    </span>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <SkillIcon skill={item.skill} textOnly={true} />
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {renderTextWithSkillIcons(item.desc)}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건 */}
+                  {item.conditions && (
+                    <div style={{ marginLeft: '34px', marginBottom: '8px' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
+                      <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                        {item.conditions.map((condition, idx) => (
+                          <li key={idx} style={{ color: '#ccc' }}>{renderTextWithSkillIcons(condition)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 이유 */}
+                  {item.why && (
+                    <div style={{
+                      marginLeft: '34px',
+                      padding: '6px 10px',
+                      background: 'rgba(255, 165, 0, 0.1)',
+                      borderRadius: '4px',
+                      fontSize: '0.85rem',
+                      color: '#ffa500'
+                    }}>
+                      💡 {renderTextWithSkillIcons(item.why)}
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+            </div>
           </div>
 
           {/* 광역 대상 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-aoe']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32',
+              color: selectedTier === 'farseer' ? '#9482C9' : '#32CD32',
               marginTop: '1.5rem'
-            }}>광역 대상 (3+ 타겟)</h3>
+            }}>광역 대상 (4+ 타겟)</h3>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>오프닝 시퀀스</h4>
             <div className={styles.openerSequence}>
@@ -1347,18 +2221,156 @@ const ElementalShamanGuide = () => {
                   </React.Fragment>
                 ))}
               </div>
+              {selectedTier === 'farseer' && (
+                <p style={{ fontSize: '0.85rem', color: '#0070DE', marginTop: '8px' }}>
+                  💡 팁: {renderTextWithSkillIcons('폭풍의 정령은 전투 3초 전 프리-풀 전용 - 30초간 강력한 피해')}
+                </p>
+              )}
             </div>
 
             <h4 style={{ color: '#ffa500', fontSize: '1.1rem', margin: '20px 0 15px' }}>스킬 우선순위</h4>
-            <ol className={styles.priorityListWow}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {currentContent.aoe.priority.map((item, index) => (
-                <li key={index}>
-                  <span className={styles.priorityNumber}>{index + 1}.</span>
-                  <SkillIcon skill={item.skill} size="small" className={styles.inlineIcon} />
-                  <SkillIcon skill={item.skill} textOnly={true} /> - {item.desc}
-                </li>
+                <div key={index} style={{
+                  background: index === 0 ? 'rgba(255, 107, 107, 0.15)' : 'rgba(0, 0, 0, 0.3)',
+                  padding: '12px 15px',
+                  borderRadius: '8px',
+                  borderLeft: `3px solid ${index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666'}`,
+                  border: index === 0 ? '2px solid #ff6b6b' : 'none'
+                }}>
+                  {/* 우선순위 번호 + 스킬명 */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                    <span style={{
+                      background: index === 0 ? '#ff6b6b' : index === 1 ? '#ffa500' : '#666',
+                      color: '#fff',
+                      width: '28px',
+                      height: '28px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: index === 0 ? '0.95rem' : '0.85rem',
+                      fontWeight: 'bold',
+                      boxShadow: index === 0 ? '0 0 10px rgba(255, 107, 107, 0.5)' : 'none'
+                    }}>
+                      {index === 0 ? '0' : index}
+                    </span>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <SkillIcon skill={item.skill} textOnly={true} />
+                        <span style={{ color: '#888', fontSize: '0.9rem' }}>- {renderTextWithSkillIcons(item.desc)}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 조건 */}
+                  {item.conditions && (
+                    <div style={{ marginLeft: '34px', marginBottom: '8px' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '4px' }}>📋 조건:</div>
+                      <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                        {item.conditions.map((condition, idx) => (
+                          <li key={idx} style={{ color: '#ccc' }}>{renderTextWithSkillIcons(condition)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 이유 */}
+                  {item.why && (
+                    <div style={{
+                      marginLeft: '34px',
+                      padding: '6px 10px',
+                      background: 'rgba(255, 165, 0, 0.1)',
+                      borderRadius: '4px',
+                      fontSize: '0.85rem',
+                      color: '#ffa500'
+                    }}>
+                      💡 {renderTextWithSkillIcons(item.why)}
+                    </div>
+                  )}
+                </div>
               ))}
-            </ol>
+            </div>
+          </div>
+
+          {/* 게임 메커니즘 섹션 */}
+          <div className={styles.subsection} style={{
+            background: 'rgba(0, 0, 0, 0.3)',
+            padding: '1.5rem',
+            borderRadius: '8px',
+            marginTop: '1.5rem',
+            border: '1px solid rgba(100, 200, 255, 0.3)'
+          }}>
+            <h3 className={styles.subsectionTitle} style={{
+              color: selectedTier === 'farseer' ? '#9482C9' : '#32CD32',
+              marginBottom: '1.5rem'
+            }}>
+              🎮 게임 메커니즘
+            </h3>
+
+            <div style={{ display: 'grid', gap: '20px' }}>
+              {currentContent.mechanics.map((mechanic, index) => (
+                <div key={index} style={{
+                  background: 'rgba(0, 0, 0, 0.4)',
+                  padding: '15px',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid rgba(100, 200, 255, 0.5)'
+                }}>
+                  {/* 메커니즘 제목 */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    marginBottom: '12px'
+                  }}>
+                    <span style={{ fontSize: '1.5rem' }}>{mechanic.icon}</span>
+                    <h4 style={{
+                      color: '#64c8ff',
+                      fontSize: '1.1rem',
+                      margin: 0
+                    }}>
+                      {mechanic.title}
+                    </h4>
+                  </div>
+
+                  {/* 설명 */}
+                  <p style={{
+                    color: '#ccc',
+                    fontSize: '0.95rem',
+                    marginBottom: '12px',
+                    lineHeight: '1.6'
+                  }}>
+                    {renderTextWithSkillIcons(mechanic.desc)}
+                  </p>
+
+                  {/* 세부 사항 */}
+                  <ul style={{
+                    margin: '0 0 12px 0',
+                    paddingLeft: '20px',
+                    fontSize: '0.9rem',
+                    lineHeight: '1.7'
+                  }}>
+                    {mechanic.details.map((detail, idx) => (
+                      <li key={idx} style={{ color: '#aaa', marginBottom: '6px' }}>
+                        {renderTextWithSkillIcons(detail)}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* 중요도 */}
+                  <div style={{
+                    padding: '8px 12px',
+                    background: 'rgba(100, 200, 255, 0.1)',
+                    borderRadius: '4px',
+                    fontSize: '0.85rem',
+                    color: '#64c8ff',
+                    fontStyle: 'italic'
+                  }}>
+                    💡 {renderTextWithSkillIcons(mechanic.why)}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* 심화 분석 섹션 추가 */}
@@ -1371,248 +2383,340 @@ const ElementalShamanGuide = () => {
           }}>
             <h3 className={styles.subsectionTitle}>심화 분석</h3>
 
-            {selectedTier === 'diabolist' ? (
+            {selectedTier === 'farseer' && (
               <>
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#8B00FF', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.handOfGuldan} size="small" className={styles.inlineIcon} />
-                    <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 영혼의 조각 효율
+                  <h4 style={{ color: '#ff6b6b', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ {renderTextWithSkillIcons('소용돌이 값')} 생성/소비
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>영혼의 조각 3개 소비:</strong> 날뛰는 임프 3마리 소환 (최대 효율)
+                      <strong style={{ color: '#ffa500' }}>핵심 메커니즘:</strong> 선견자의 전체 플레이스타일은 {renderTextWithSkillIcons('소용돌이 값')}을 최대한 효율적으로 생성하고 소비하는 것
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>2개 소비:</strong> 임프 2마리 - 효율 낮음, 비추천
+                      <strong>소비 방법:</strong> {renderTextWithSkillIcons('대지 충격')}을 통해 {renderTextWithSkillIcons('소용돌이 값')} 60 소비
                     </li>
                     <li>
-                      <strong style={{ color: '#9482C9' }}>1개 소비:</strong> 임프 1마리 - 영혼의 조각 손실 위험 시에만
+                      <strong style={{ color: '#ff6b6b' }}>{renderTextWithSkillIcons('용암 쇄도')}:</strong> {renderTextWithSkillIcons('용암 폭발')} 시전 시 중첩, 다음 {renderTextWithSkillIcons('번개 화살')} 즉시 시전
                     </li>
                     <li>
-                      <strong style={{ color: '#FFD700' }}>핵심:</strong> 항상 3개 단위로 사용하여 효율 극대화
+                      <strong>생성 조건:</strong> {renderTextWithSkillIcons('번개 화살')} 8, {renderTextWithSkillIcons('용암 폭발')} 10, {renderTextWithSkillIcons('연쇄 번개')} 4 생성
+                    </li>
+                    <li>
+                      <strong style={{ color: '#32CD32' }}>최적화:</strong> {renderTextWithSkillIcons('승천')} 동안 최대한 많은 {renderTextWithSkillIcons('용암 폭발')} 시전
                     </li>
                   </ul>
                 </div>
 
+                {/* Maxroll 기반 선견자(Farseer) 심화 분석 */}
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> vs <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 결정 가이드
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🔮 {renderTextWithSkillIcons('선조의 부름')} 메커니즘
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>악마 핵 5중첩:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li><SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선 사용 (영혼의 조각 2개 + 강화 피해)</li>
-                        <li>버스트 윈도우에서 특히 중요</li>
+                      <strong style={{ color: '#ffa500' }}>핵심 메커니즘:</strong> {renderTextWithSkillIcons('태초의 파도')} 또는 {renderTextWithSkillIcons('선조의 신속함')} 사용 시 선조 소환
+                    </li>
+                    <li>
+                      <strong>선조 행동:</strong> 플레이어의 주문을 따라 시전
+                      <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                        <li>단일 대상: {renderTextWithSkillIcons('용암 폭발')} 시전</li>
+                        <li>광역: {renderTextWithSkillIcons('연쇄 번개')} 시전</li>
                       </ul>
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>악마 핵 5중첩 미만:</strong>
-                      <ul style={{ marginLeft: '20px', marginTop: '10px', fontSize: '0.9em' }}>
-                        <li><SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 사용 (시전 시간 짧음)</li>
-                        <li>빠른 영혼의 조각 생성이 목표</li>
-                      </ul>
+                      <strong style={{ color: '#ff6b6b' }}>최적화:</strong> {renderTextWithSkillIcons('태초의 파도')}와 {renderTextWithSkillIcons('선조의 신속함')}을 함께 사용하여 강화된 선조 소환
+                    </li>
+                    <li>
+                      <strong>쿨다운 감소:</strong> 불/폭풍의 정령 쿨다운 5초 감소
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#28a745', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🔥 악마 폭군 타이밍 최적화
+                    💥 {renderTextWithSkillIcons('원소의 대가')} 버프 관리
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>준비 단계:</strong> 공포사냥개 소환 → 임프 8~10마리 생성
+                      <strong>발동 조건:</strong> {renderTextWithSkillIcons('용암 폭발')} 사용 후 15초간 활성
                     </li>
                     <li>
-                      <strong>지옥수호병 강화:</strong> <SkillIcon skill={skillData.demonicStrength} textOnly={true} /> 사용 (1분 쿨기)
+                      <strong style={{ color: '#ffa500' }}>효과:</strong> 다음 주문 피해 20% 증가
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>폭군 소환:</strong> 모든 악마 지속시간 15초 연장 + 공격력 25% 증가
+                      <strong style={{ color: '#ff6b6b' }}>우선 순위:</strong> {renderTextWithSkillIcons('원소의 대가')} 버프 시 {renderTextWithSkillIcons('대지 충격')} 또는 {renderTextWithSkillIcons('지진')} 사용
                     </li>
                     <li>
-                      <strong>장신구 조합:</strong> 폭군과 함께 쿨기 장신구/물약 사용
-                    </li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚠️ 영혼의 조각 낭비 방지
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <strong style={{ color: '#ff6b6b' }}>5개 상태:</strong> 즉시 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용 (3개 소비)
-                    </li>
-                    <li>
-                      <strong>4개 상태:</strong> <SkillIcon skill={skillData.shadowBolt} textOnly={true} /> 대신 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 우선
-                    </li>
-                    <li>
-                      <strong style={{ color: '#ffa500' }}>이상적 유지:</strong> 2~3개 구간에서 관리
+                      <strong>버스트 극대화:</strong> {renderTextWithSkillIcons('승천')} 동안 최대한 많은 {renderTextWithSkillIcons('용암 폭발')} 시전 → {renderTextWithSkillIcons('원소의 대가')} 지속 유지
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    💨 <SkillIcon skill={skillData.grimoireFelguard} textOnly={true} /> 활용 (선택 특성)
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>재사용 대기시간: 2분</li>
-                    <li>대상 피해 증가: 125% (17초)</li>
-                    <li>시전 시 대상 기절 (인터럽트 가능)</li>
-                    <li><strong style={{ color: '#ffa500' }}>추천 사용:</strong> 버스트 윈도우나 인터럽트 필요 시</li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    ⚡ 버스트 윈도우 극대화 (고급)
+                    ⚡ {renderTextWithSkillIcons('승천')} 윈도우 최적화
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong>타이밍 순서:</strong> 공포사냥개 → 임프 최대 생성 → 지옥수호병 강화 → 폭군
+                      <strong style={{ color: '#ffa500' }}>기간:</strong> 15초간 {renderTextWithSkillIcons('용암 폭발')} 즉시 시전 + 30% 피해 증가
                     </li>
                     <li>
-                      <strong>티어 4세트 활용:</strong> 폭군 사용 시 영혼의 조각 2개 추가 획득
+                      <strong style={{ color: '#ff6b6b' }}>쿨다운 정렬:</strong> {renderTextWithSkillIcons('폭풍의 정령')} + {renderTextWithSkillIcons('폭풍지기')} + {renderTextWithSkillIcons('승천')} 동시 사용
                     </li>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>즉시 후속:</strong> 획득한 조각으로 즉시 임프 추가 소환
+                      <strong>윈도우 내 우선순위:</strong>
+                      <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                        <li>{renderTextWithSkillIcons('용암 폭발')} (최우선)</li>
+                        <li>{renderTextWithSkillIcons('대지 충격')} (소용돌이 60+)</li>
+                        <li>{renderTextWithSkillIcons('번개 화살')} (필러)</li>
+                      </ul>
                     </li>
                     <li>
-                      <strong>폭군 버프 중:</strong> 악마 핵 5중첩 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> 우선
-                    </li>
-                  </ul>
-                </div>
-              </>
-            ) : (
-              <>
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#32CD32', fontSize: '1.2rem', marginBottom: '15px' }}>
-                    🔥 <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활용 메커니즘
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <strong style={{ color: '#ffa500' }}>최우선 쿨기:</strong> 재사용 대기시간마다 즉시 사용 (1분)
-                    </li>
-                    <li>
-                      <strong>티어 2세트:</strong> 활성 중 악마 공격력 20% 증가 (8초)
-                    </li>
-                    <li>
-                      <strong>티어 4세트:</strong> 영혼의 조각 1개 추가 생성
-                    </li>
-                    <li>
-                      <strong style={{ color: '#32CD32' }}>광역 효과:</strong> 최대 5 타겟 동시 피해
-                    </li>
-                    <li>
-                      <strong>생존력:</strong> 입힌 피해의 50% 회복
+                      <strong style={{ color: '#32CD32' }}>극대화 팁:</strong> {renderTextWithSkillIcons('승천')} 전 소용돌이 40-50 유지 → 윈도우 내 {renderTextWithSkillIcons('대지 충격')} 2회 이상 사용
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#DC3545', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    <SkillIcon skill={skillData.implosion} textOnly={true} /> 타이밍 최적화
+                  <h4 style={{ color: '#9b59b6', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    🌊 {renderTextWithSkillIcons('태초의 파도')} 활용법
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ffa500' }}>최소 임프 수:</strong> 6마리 이상 (효율적)
+                      <strong>효과:</strong> 대상에게 {renderTextWithSkillIcons('화염 충격')} 적용 + 다음 {renderTextWithSkillIcons('용암 폭발')} 2배 피해
                     </li>
                     <li>
-                      <strong>최적:</strong> 8~10마리 시 사용
+                      <strong style={{ color: '#ffa500' }}>타이밍:</strong> 쿨다운마다 사용 - {renderTextWithSkillIcons('용암 폭발')} 전에 시전
                     </li>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>주의:</strong> 악마 폭군 직전에는 사용 금지
+                      <strong style={{ color: '#ff6b6b' }}>버스트 활용:</strong> {renderTextWithSkillIcons('선조의 신속함')}과 동시 사용 → 강화된 선조 소환
                     </li>
                     <li>
-                      3+ 타겟 광역 구간에서 지속적으로 순환
-                    </li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#9b59b6', fontSize: '1.2rem', marginBottom: '15px' }}>
-                    ⚡ 영혼 거두기 버프 관리 (고급)
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <strong style={{ color: '#ffa500' }}>버프 유지:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 활성 중 최대 악마 소환
-                    </li>
-                    <li>
-                      <strong>공포사냥개:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 사용 직후 소환
-                    </li>
-                    <li>
-                      <strong>임프 생성:</strong> 버프 중 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 2회 사용
-                    </li>
-                    <li>
-                      <strong>악마 폭군:</strong> <SkillIcon skill={skillData.soulRot} textOnly={true} /> 버프 종료 전 사용
+                      <strong>광역 상황:</strong> {renderTextWithSkillIcons('화염 충격')} 확산 효과로 다수 대상 도트 적용
                     </li>
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: '25px' }}>
                   <h4 style={{ color: '#ff9800', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🎯 광역 전투 최적화 (영혼 수확자)
+                    ⚠️ 소용돌이 값 오버캡 방지
                   </h4>
                   <ul style={{ lineHeight: '1.8' }}>
                     <li>
-                      <strong style={{ color: '#ff6b6b' }}>4+ 타겟:</strong> <SkillIcon skill={skillData.implosion} textOnly={true} /> 우선 순환
+                      <strong style={{ color: '#ffa500' }}>위험 구간:</strong> 소용돌이 80+ 도달 시 즉시 {renderTextWithSkillIcons('대지 충격')} 사용
                     </li>
                     <li>
-                      <strong>임프 생성:</strong> <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> → <SkillIcon skill={skillData.implosion} textOnly={true} /> 반복
+                      <strong style={{ color: '#ff6b6b' }}>오버캡 방지:</strong> 소용돌이 100 도달 시 추가 생성 불가 → 리소스 낭비
                     </li>
                     <li>
-                      <strong style={{ color: '#32CD32' }}>영혼 거두기:</strong> 광역 구간 시작 시 최우선 사용
+                      <strong>최적 사용:</strong> {renderTextWithSkillIcons('원소의 대가')} 버프 활성 + 소용돌이 60+ 시 {renderTextWithSkillIcons('대지 충격')} 우선
                     </li>
                     <li>
-                      <SkillIcon skill={skillData.doom} textOnly={true} /> DoT 유지 (30초 재사용)
-                    </li>
-                  </ul>
-                </div>
-
-                <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#17a2b8', fontSize: '1.1rem', marginBottom: '15px' }}>
-                    🛡️ 생존력 활용
-                  </h4>
-                  <ul style={{ lineHeight: '1.8' }}>
-                    <li>
-                      <SkillIcon skill={skillData.soulRot} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.soulRot} textOnly={true} /> - 피해의 50% 생명력 회복
-                    </li>
-                    <li>
-                      <SkillIcon skill={skillData.darkPact} size="small" className={styles.inlineIcon} />
-                      <SkillIcon skill={skillData.darkPact} textOnly={true} /> - 생명력 20% 희생하여 400% 보호막 (1분 쿨기)
-                    </li>
-                    <li>
-                      <strong style={{ color: '#ffa500' }}>추천:</strong> 큰 피해 예상 시 미리 사용
+                      <strong style={{ color: '#32CD32' }}>고급 팁:</strong> {renderTextWithSkillIcons('폭풍지기')} 사용 전 소용돌이 50-60 유지 → 3회 {renderTextWithSkillIcons('번개 화살')} 후 {renderTextWithSkillIcons('대지 충격')}
                     </li>
                   </ul>
                 </div>
               </>
             )}
 
-            <div style={{ marginBottom: '20px' }}>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>
-                <SkillIcon skill={skillData.summonDemonicTyrant} size="small" className={styles.inlineIcon} />
-                <SkillIcon skill={skillData.summonDemonicTyrant} textOnly={true} /> 버스트 최적화
-              </h4>
+            {/* Maxroll 기반 폭풍인도자(Stormbringer) 심화 분석 */}
+            {selectedTier === 'stormbringer' && (
+              <>
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ {renderTextWithSkillIcons('폭풍 변환')} 메커니즘
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>핵심 메커니즘:</strong> {renderTextWithSkillIcons('소용돌이 300+ 시 폭풍 사용 가능')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>폭풍 타이밍:</strong> {renderTextWithSkillIcons('지진 시전 중 폭풍 사용 → 시전 중단 없이 즉시 발동')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>광역 최적화:</strong> {renderTextWithSkillIcons('3+ 적에서 폭풍 → 지진 콤보 우선')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#dc3545' }}>주의사항:</strong> {renderTextWithSkillIcons('소용돌이 300 미만 시 폭풍 사용 불가 → 리소스 낭비 방지')}
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ {renderTextWithSkillIcons('깨어나는 폭풍')} 중첩 관리
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>중첩 획득:</strong> {renderTextWithSkillIcons('번개 화살 또는 연쇄 번개 시전 시 1중첩 (최대 3중첩)')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>즉시 시전 활용:</strong> {renderTextWithSkillIcons('깨어나는 폭풍 3중첩 → 전격 방전 즉시 시전 가능')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>우선순위:</strong> {renderTextWithSkillIcons('3중첩 도달 즉시 전격 방전 사용 → 중첩 낭비 방지')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#dc3545' }}>주의사항:</strong> {renderTextWithSkillIcons('전격 방전 시전 시 모든 중첩 소모 → 다시 쌓아야 함')}
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ {renderTextWithSkillIcons('전격 방전')} 최적화
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>기본 시전:</strong> {renderTextWithSkillIcons('전격 방전 2초 시전 → 대상 및 주변 적 피해')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>즉시 시전:</strong> {renderTextWithSkillIcons('깨어나는 폭풍 3중첩 시 전격 방전 즉시 시전 → 이동 중 사용 가능')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>광역 활용:</strong> {renderTextWithSkillIcons('3+ 적 광역 구간에서 전격 방전 우선 → 지진과 병행')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> {renderTextWithSkillIcons('폭풍지기 + 폭풍의 정령과 함께 사용 → 최대 피해')}
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ M+ 이동 최적화
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>영혼 이동 활용:</strong> {renderTextWithSkillIcons('영혼 이동으로 장판 회피 + 시전 중에도 사용 가능')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>즉시 시전 스킬:</strong> {renderTextWithSkillIcons('깨어나는 폭풍 3중첩 → 이동 중 전격 방전 시전')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>화염 충격 유지:</strong> {renderTextWithSkillIcons('이동 중 화염 충격 갱신 → 딜 손실 최소화')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#dc3545' }}>주의사항:</strong> {renderTextWithSkillIcons('지진 시전 중 이동 시 시전 중단 → 폭풍으로 대체 가능')}
+                    </li>
+                  </ul>
+                </div>
+
+                <div style={{ marginBottom: '25px' }}>
+                  <h4 style={{ color: '#dc3545', fontSize: '1.1rem', marginBottom: '15px' }}>
+                    ⚡ 소용돌이 오버캡 방지
+                  </h4>
+                  <ul style={{ lineHeight: '1.8' }}>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>리소스 한계:</strong> {renderTextWithSkillIcons('소용돌이 최대 100 (폭풍 변환 시 300까지 누적 가능)')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#dc3545' }}>오버캡 방지:</strong> {renderTextWithSkillIcons('소용돌이 80+ 도달 시 대지 충격 사용 → 리소스 낭비 방지')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#28a745' }}>폭풍 준비:</strong> {renderTextWithSkillIcons('소용돌이 250+ 시 곧바로 폭풍 사용 준비')}
+                    </li>
+                    <li>
+                      <strong style={{ color: '#ffa500' }}>광역 우선순위:</strong> {renderTextWithSkillIcons('3+ 적 광역 구간 → 소용돌이 300 도달 즉시 폭풍 사용')}
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
+
+            <div>
+              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>공통 생존 메커니즘</h4>
               <ul style={{ lineHeight: '1.8' }}>
-                <li>악마 최대 소환 후 사용 - 날뛰는 임프 8~10마리 + 공포사냥개</li>
-                <li>모든 악마 지속시간 15초 연장 + 공격력 25% 증가</li>
-                <li>장신구/물약과 함께 사용하여 딜 극대화</li>
-                <li>버스트 윈도우 동안 <SkillIcon skill={skillData.demonbolt} textOnly={true} /> (악마 핵 5중첩) 우선 사용</li>
+                <li>
+                  {renderTextWithSkillIcons('늑대 정령')} - 이동 속도 30% 증가, 이동 중에도 사용 가능
+                </li>
+                <li>
+                  {renderTextWithSkillIcons('영혼 이동')} - 12초 동안 받는 피해 40% 감소 (2분 쿨다운)
+                </li>
+                <li>
+                  {renderTextWithSkillIcons('대지의 정령')} - 즉시 체력 20% 회복 + 5초간 받는 피해 40% 감소 (2분 쿨다운)
+                </li>
+                <li>
+                  <strong style={{ color: '#ffa500' }}>파티 유틸:</strong> {renderTextWithSkillIcons('영웅심')} / {renderTextWithSkillIcons('피의 욕망')} - 공격대 쿨기, 지상 토템 (5분 쿨다운)
+                </li>
+                <li>
+                  {renderTextWithSkillIcons('진정의 토템')} - 30미터 내 공포/매혹/수면 제거 (1분 쿨다운)
+                </li>
               </ul>
             </div>
 
-            <div>
-              <h4 style={{ color: '#ffa500', fontSize: '1.1rem', marginBottom: '15px' }}>영혼의 조각 관리</h4>
-              <ul style={{ lineHeight: '1.8' }}>
-                <li>이상적 유지: 2~3개 (최대 5개)</li>
-                <li><SkillIcon skill={skillData.shadowBolt} textOnly={true} />로 +1 조각 생성 (2초 시전)</li>
-                <li><SkillIcon skill={skillData.demonbolt} textOnly={true} />로 +2 조각 생성 (4.5초 시전, 악마 핵 5중첩 시)</li>
-                <li><SkillIcon skill={skillData.soulStrike} textOnly={true} />로 +1 조각 생성 (10초 재사용)</li>
-                <li><strong style={{ color: '#ff6b6b' }}>주의:</strong> 5개 상태에서 추가 생성 시 손실 - 즉시 <SkillIcon skill={skillData.handOfGuldan} textOnly={true} /> 사용</li>
-              </ul>
+            {/* 실전 팁 */}
+            <div style={{ marginTop: '30px' }}>
+              <h4 style={{
+                color: selectedTier === 'farseer' ? '#9482C9' : '#32CD32',
+                fontSize: '1.2rem',
+                marginBottom: '20px',
+                borderBottom: '2px solid rgba(170, 211, 114, 0.3)',
+                paddingBottom: '10px'
+              }}>
+                💡 실전 팁 & 주의사항
+              </h4>
+
+              {/* 흔한 실수 */}
+              <div style={{
+                background: 'rgba(220, 53, 69, 0.15)',
+                padding: '15px',
+                borderRadius: '8px',
+                marginBottom: '20px',
+                border: '1px solid rgba(220, 53, 69, 0.3)'
+              }}>
+                <h5 style={{ color: '#dc3545', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  ❌ 흔한 실수
+                </h5>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#ccc' }}>
+                  • <strong style={{ color: '#ff6b6b' }}>소용돌이 오버캡:</strong> {renderTextWithSkillIcons('소용돌이 100 도달로 추가 생성 불가 → 리소스 낭비')}<br/>
+                  • <strong style={{ color: '#ff6b6b' }}>화염 충격 누락:</strong> {renderTextWithSkillIcons('화염 충격 없이 용암 폭발 시전 불가 → 딜 손실')}<br/>
+                  {selectedTier === 'farseer' && (
+                    <>
+                      • <strong style={{ color: '#ff6b6b' }}>원소의 대가 낭비:</strong> {renderTextWithSkillIcons('원소의 대가 버프 시 대지 충격 미사용 → 20% 피해 손실')}<br/>
+                      • <strong style={{ color: '#ff6b6b' }}>승천 낭비:</strong> {renderTextWithSkillIcons('승천 윈도우에서 용암 폭발 미사용 → 버스트 손실')}<br/>
+                    </>
+                  )}
+                  {selectedTier === 'stormbringer' && (
+                    <>
+                      • <strong style={{ color: '#ff6b6b' }}>폭풍 변환 낭비:</strong> {renderTextWithSkillIcons('소용돌이 300+ 후 즉시 폭풍 미사용 → 피해 손실')}<br/>
+                      • <strong style={{ color: '#ff6b6b' }}>전격 방전 지연:</strong> {renderTextWithSkillIcons('깨어나는 폭풍 3중첩 후 즉시 사용 누락')}<br/>
+                    </>
+                  )}
+                  • <strong style={{ color: '#ff6b6b' }}>광역 지진 누락:</strong> {renderTextWithSkillIcons('3+ 적 광역 구간에서 지진 미사용 → 광역 피해 손실')}
+                </p>
+              </div>
+
+              {/* 고급 팁 */}
+              <div style={{
+                background: 'rgba(40, 167, 69, 0.15)',
+                padding: '15px',
+                borderRadius: '8px',
+                border: '1px solid rgba(40, 167, 69, 0.3)'
+              }}>
+                <h5 style={{ color: '#28a745', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  ✅ 고급 팁
+                </h5>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.8', color: '#ccc' }}>
+                  • <strong style={{ color: '#28a745' }}>주문 대기열 활용:</strong> 전역 쿨다운 종료 0.25초 전 다음 스킬 입력 → 즉시 발동<br/>
+                  • <strong style={{ color: '#28a745' }}>소용돌이 관리:</strong> {renderTextWithSkillIcons('원소의 대가 버프 + 소용돌이 60+ 시 대지 충격 우선 사용')}<br/>
+                  {selectedTier === 'farseer' && (
+                    <>
+                      • <strong style={{ color: '#28a745' }}>버스트 타이밍:</strong> {renderTextWithSkillIcons('폭풍의 정령 + 폭풍지기 + 승천 동시 활용 → 최대 초당 피해량')}<br/>
+                      • <strong style={{ color: '#28a745' }}>승천 최대화:</strong> {renderTextWithSkillIcons('승천 윈도우 15초 동안 용암 폭발 최대한 시전 → 원소의 대가 지속 유지')}<br/>
+                    </>
+                  )}
+                  {selectedTier === 'stormbringer' && (
+                    <>
+                      • <strong style={{ color: '#28a745' }}>폭풍 활용:</strong> {renderTextWithSkillIcons('깨어나는 폭풍 3중첩 즉시 전격 방전 사용 → 즉시 시전 활용')}<br/>
+                      • <strong style={{ color: '#28a745' }}>이동 최적화:</strong> {renderTextWithSkillIcons('영혼 이동으로 장판 회피 + 시전 중에도 사용 가능')}<br/>
+                    </>
+                  )}
+                  • <strong style={{ color: '#28a745' }}>화염 충격 유지:</strong> {renderTextWithSkillIcons('화염 충격 도트를 항상 유지 → 용암 폭발 시전 가능')}<br/>
+                  • <strong style={{ color: '#28a745' }}>위크오라 설정:</strong> {renderTextWithSkillIcons('원소의 대가')} 버프, 소용돌이 값, {selectedTier === 'farseer' ? renderTextWithSkillIcons('승천') : renderTextWithSkillIcons('깨어나는 폭풍')} 중첩 추적 필수
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1620,54 +2724,54 @@ const ElementalShamanGuide = () => {
     </Section>
   );
 
-  // 특성 빌드 데이터
+  // 특성 빌드 데이터 - 정기 주술사 TWW 시즌3
   const talentBuilds = {
-    diabolist: {
+    farseer: {  // 선견자 (Farseer)
       'raid-single': {
         name: '레이드 단일 대상',
-        description: '악마학자를 활용한 단일 대상 빌드입니다. 굴단의 손과 악마 폭군으로 강력한 버스트를 제공합니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAoEJJJRKJpFJJKhEAAAAA',
+        description: '선견자를 활용한 단일 대상 빌드입니다. 원소의 대가와 용암 쇄도를 극대화하여 보스전에 특화되어 있습니다.',
+        code: 'EleShaman_Farseer_Raid_ST_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
         icon: '🔮'
       },
       'raid-aoe': {
         name: '레이드 광역',
-        description: '악마학자를 활용한 광역 빌드입니다. 날뛰는 임프로 지속적인 광역 딜을 제공합니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAoEJJJRKRSSShEAAAAA',
+        description: '선견자를 활용한 광역 빌드입니다. 승천 + 화염 충격 확산으로 광역 딜 극대화.',
+        code: 'EleShaman_Farseer_Raid_AoE_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
         icon: '🔮'
       },
       'mythic-plus': {
         name: '쐐기돌',
-        description: '악마학자를 활용한 신화+ 빌드입니다. 악마 소환과 광역 딜에 중점을 둡니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAoEJRSSiUSSSSkEAAAAA',
+        description: '선견자를 활용한 쐐기돌 빌드입니다. 지진와 연쇄 번개로 쐐기돌에 최적화되어 있습니다.',
+        code: 'EleShaman_Farseer_M+_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
         icon: '🔮'
       }
     },
-    soulharvester: {
+    stormbringer: {  // 폭풍인도자 (Stormbringer)
       'raid-single': {
         name: '레이드 단일 대상',
-        description: '영혼 수확자를 활용한 단일 대상 빌드입니다. 영혼 거두기로 악마를 강화합니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAIJJJJRSSSShkEAAAAA',
-        icon: '💀'
+        description: '폭풍인도자를 활용한 단일 대상 빌드입니다. 폭풍 + 전격 방전 사이클로 안정적인 단일 딜을 제공합니다.',
+        code: 'EleShaman_Stormbringer_Raid_ST_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
+        icon: '⚡'
       },
       'raid-aoe': {
         name: '레이드 광역',
-        description: '영혼 수확자를 활용한 광역 빌드입니다. 강화된 악마로 광역 딜을 제공합니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAIJJRSSSiUSShEAAAAA',
-        icon: '💀'
+        description: '폭풍인도자를 활용한 광역 빌드입니다. 전격 방전 광역 폭발로 강력한 광역 딜을 제공합니다.',
+        code: 'EleShaman_Stormbringer_Raid_AoE_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
+        icon: '⚡'
       },
       'mythic-plus': {
         name: '쐐기돌',
-        description: '영혼 수확자를 활용한 신화+ 빌드입니다. 안정적인 악마 강화로 지속적인 딜을 제공합니다.',
-        code: 'CkQA3nhASxH0mA1W7o19gqSUREREREREhEJJBAAAAAAIRSSShUSSSSkEAAAAA',
-        icon: '💀'
+        description: '폭풍인도자를 활용한 쐐기돌 빌드입니다. 깨어나는 폭풍 + 전격 방전으로 쐐기돌에 최적화되어 있습니다.',
+        code: 'EleShaman_Stormbringer_M+_TWW_S3',  // ⚠️ TODO: Wowhead 실제 빌드 코드로 교체
+        icon: '⚡'
       }
     }
   };
 
   const handleCopyBuild = (code) => {
     navigator.clipboard.writeText(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
+    setShowCopyToast(true);
+    setTimeout(() => setShowCopyToast(false), 3000);
   };
 
   const renderBuilds = () => (
@@ -1677,7 +2781,7 @@ const ElementalShamanGuide = () => {
       </SectionHeader>
 
       {/* Toast Notification */}
-      {showToast && (
+      {showCopyToast && (
         <div style={{
           position: 'fixed',
           bottom: '30px',
@@ -1709,20 +2813,21 @@ const ElementalShamanGuide = () => {
           padding: '20px',
           borderBottom: '2px solid #1e2328'
         }}>
+          {/* ⚠️ TODO: setSelectedTier 값을 실제 영웅특성명으로 변경 */}
           <button
             onClick={() => {
-              setSelectedTier('diabolist');
+              setSelectedTier('farseer');
               setSelectedBuild('mythic-plus');
             }}
             style={{
               flex: 1,
               padding: '12px 20px',
-              background: selectedTier === 'diabolist' ?
+              background: selectedTier === 'farseer' ?
                 'linear-gradient(135deg, #5a3896 0%, #2a1846 100%)' :
                 'rgba(255, 255, 255, 0.05)',
-              border: `2px solid ${selectedTier === 'diabolist' ? '#9482C9' : '#2a2d35'}`,
+              border: `2px solid ${selectedTier === 'farseer' ? '#9482C9' : '#2a2d35'}`,
               borderRadius: '8px',
-              color: selectedTier === 'diabolist' ? '#9482C9' : '#94a3b8',
+              color: selectedTier === 'farseer' ? '#9482C9' : '#94a3b8',
               fontSize: '1rem',
               fontWeight: '600',
               cursor: 'pointer',
@@ -1734,24 +2839,24 @@ const ElementalShamanGuide = () => {
             }}
           >
             <span style={{ fontSize: '1.5rem' }}>🔮</span>
-            <span>악마학자</span>
-            <span style={{ fontSize: '0.85rem', opacity: 0.8 }}>쐐기 추천</span>
+            <span>선견자</span>
+            <span style={{ fontSize: '0.85rem', opacity: 0.8 }}>레이드 추천</span>
           </button>
 
           <button
             onClick={() => {
-              setSelectedTier('soulharvester');
+              setSelectedTier('stormbringer');
               setSelectedBuild('raid-single');
             }}
             style={{
               flex: 1,
               padding: '12px 20px',
-              background: selectedTier === 'soulharvester' ?
+              background: selectedTier === 'stormbringer' ?
                 'linear-gradient(135deg, #2a7a46 0%, #1a3a26 100%)' :
                 'rgba(255, 255, 255, 0.05)',
-              border: `2px solid ${selectedTier === 'soulharvester' ? '#32CD32' : '#2a2d35'}`,
+              border: `2px solid ${selectedTier === 'stormbringer' ? '#32CD32' : '#2a2d35'}`,
               borderRadius: '8px',
-              color: selectedTier === 'soulharvester' ? '#32CD32' : '#94a3b8',
+              color: selectedTier === 'stormbringer' ? '#32CD32' : '#94a3b8',
               fontSize: '1rem',
               fontWeight: '600',
               cursor: 'pointer',
@@ -1762,20 +2867,21 @@ const ElementalShamanGuide = () => {
               gap: '8px'
             }}
           >
-            <span style={{ fontSize: '1.5rem' }}>💀</span>
-            <span>영혼 수확자</span>
-            <span style={{ fontSize: '0.85rem', opacity: 0.8 }}>레이드 추천</span>
+            <span style={{ fontSize: '1.5rem' }}>⚡</span>
+            <span>폭풍인도자</span>
+            <span style={{ fontSize: '0.85rem', opacity: 0.8 }}>쐐기 추천</span>
           </button>
         </div>
 
         {/* 빌드 선택 버튼들 */}
         <div style={{ padding: '20px' }}>
+          {/* ⚠️ TODO: selectedTier 조건을 실제 영웅특성명으로 변경 */}
           <h4 style={{
-            color: selectedTier === 'diabolist' ? '#9482C9' : '#32CD32',
+            color: selectedTier === 'farseer' ? '#9482C9' : '#32CD32',
             marginBottom: '20px',
             fontSize: '1.3rem'
           }}>
-            {selectedTier === 'diabolist' ? '악마학자' : '영혼 수확자'} 특성 빌드
+            {selectedTier === 'farseer' ? '선견자' : '폭풍인도자'} 특성 빌드
           </h4>
 
           {/* 빌드 목록 */}
@@ -2031,7 +3137,7 @@ const ElementalShamanGuide = () => {
           name: '특화',
           color: '#ffe66d',
           icon: '📈',
-          description: '악마가 입히는 피해 증가'
+          description: '스킬이 입히는 피해 증가'
         },
         versatility: {
           name: '유연',
@@ -2043,99 +3149,95 @@ const ElementalShamanGuide = () => {
 
       // 영웅 특성과 콘텐츠 타입별 브레이크포인트
       const breakpointData = {
-        diabolist: {
+        farseer: {  // 선견자 (Farseer)
           single: {
             haste: {
-              softcap: '25-30%',
+              softcap: '20.7%',
               breakpoints: [
-                { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
-                { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
+                { value: 20.7, label: 'GCD 1초 도달', color: '#0070DE', priority: 'high' }
               ],
-              note: '시전 속도 증가와 쿨다운 감소로 영혼의 조각 생성 속도 향상'
+              note: 'GCD 감소와 용암 폭발 시전 속도 향상, 원소의 대가 유지 용이'
             },
             crit: {
               softcap: '특정 소프트캡 없음',
               breakpoints: [],
-              note: '악마 핵 치명타 증가, 특화와 비슷한 가치'
+              note: '용암 폭발 치명타 확률 증가, 용암 쇄도 프록 활용'
             },
             mastery: {
               breakpoints: [],
-              note: '악마가 입히는 모든 피해 증가, 단일 대상에서 강력'
+              note: '용암 폭발 피해 증가, 선견자 특성과 시너지'
             },
             versatility: {
               breakpoints: [],
-              note: '가장 낮은 우선순위, 피해와 생존력 증가'
+              note: '안정적인 피해 증가 및 생존력 향상'
             }
           },
           aoe: {
             haste: {
-              softcap: '25-30%',
+              softcap: '20.7%',
               breakpoints: [
-                { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
-                { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
+                { value: 20.7, label: 'GCD 1초 도달', color: '#0070DE', priority: 'high' }
               ],
-              note: '빠른 임프 소환과 파열 빈도 증가'
+              note: '빠른 연쇄 번개 시전과 소용돌이 생성 증가'
             },
             crit: {
               softcap: '특정 소프트캡 없음',
               breakpoints: [],
-              note: '파열 치명타로 광역 폭딜 증가'
+              note: '연쇄 번개와 지진 치명타로 광역 딜 증가'
             },
             mastery: {
               breakpoints: [],
-              note: '악마 피해 증가로 광역에서도 높은 가치'
+              note: '모든 원소 피해 증가로 광역에서도 높은 가치'
             },
             versatility: {
               breakpoints: [],
-              note: '가장 낮은 우선순위'
+              note: '안정적인 피해 증가 옵션'
             }
           }
         },
-        soulharvester: {
+        stormbringer: {  // 폭풍인도자 (Stormbringer)
           single: {
             haste: {
-              softcap: '25-30%',
+              softcap: '20.7%',
               breakpoints: [
-                { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
-                { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
+                { value: 20.7, label: 'GCD 1초 도달', color: '#0070DE', priority: 'high' }
               ],
-              note: '영혼 부식 재사용 감소와 악마 공격 속도 증가'
+              note: '번개 화살 빈도 증가와 깨어나는 폭풍 중첩 빠른 획득'
             },
             crit: {
               softcap: '특정 소프트캡 없음',
               breakpoints: [],
-              note: '최우선 스탯, 모든 피해 치명타 확률 증가'
+              note: '전격 방전 치명타 확률 증가, 안정적인 평균 딜 향상'
             },
             mastery: {
               breakpoints: [],
-              note: '악마 피해 증가, 영혼 거두기 버프와 시너지'
+              note: '연쇄 번개 피해 증가, 폭풍인도자 특성과 시너지'
             },
             versatility: {
               breakpoints: [],
-              note: '특화보다 높지만 낮은 우선순위'
+              note: '안정적인 피해 증가 및 생존력 향상'
             }
           },
           aoe: {
             haste: {
-              softcap: '25-30%',
+              softcap: '20.7%',
               breakpoints: [
-                { value: 25, label: '소프트캡 시작', color: '#ffa500', priority: 'medium' },
-                { value: 30, label: '효율 감소', color: '#ff6b6b', priority: 'high' }
+                { value: 20.7, label: 'GCD 1초 도달', color: '#0070DE', priority: 'high' }
               ],
-              note: '가장 중요한 스탯, 임프 생성 속도 증가'
+              note: '최우선 스탯, 전격 방전 빈도와 광역 딜 극대화'
             },
             crit: {
               softcap: '특정 소프트캡 없음',
               breakpoints: [],
-              note: '최우선 스탯, 파열 피해 극대화'
+              note: '광역 전격 방전 치명타로 폭발 딜 증가'
             },
             mastery: {
               breakpoints: [],
-              note: '악마 피해 증가로 광역에서도 우수'
+              note: '전격 방전과 폭풍 피해 증가'
             },
             versatility: {
               breakpoints: [],
-              note: '가장 낮은 우선순위'
+              note: '안정적인 피해 증가 옵션'
             }
           }
         }
@@ -2155,14 +3257,15 @@ const ElementalShamanGuide = () => {
       return statData;
     };
 
+    // 스탯 우선순위 - 정기 주술사 TWW 시즌3
     const statPriorities = {
-      diabolist: {
-        single: ['haste', 'mastery', 'crit', 'versatility'],
-        aoe: ['haste', 'mastery', 'crit', 'versatility']
+      farseer: {  // 선견자 (Farseer)
+        single: ['haste', 'mastery', 'crit', 'versatility'],  // 단일: 가속 > 특화 > 치명타 > 유연
+        aoe: ['haste', 'crit', 'mastery', 'versatility']  // 광역: 가속 > 치명타 > 특화 > 유연 (연쇄 번개)
       },
-      soulharvester: {
-        single: ['haste', 'mastery', 'crit', 'versatility'],
-        aoe: ['haste', 'mastery', 'crit', 'versatility']
+      stormbringer: {  // 폭풍인도자 (Stormbringer)
+        single: ['haste', 'mastery', 'crit', 'versatility'],  // 단일: 가속 > 특화 > 치명타 > 유연 (전격 방전 중첩)
+        aoe: ['haste', 'crit', 'mastery', 'versatility']  // 광역: 가속 > 치명타 > 특화 > 유연 (폭풍 + 전격 방전)
       }
     };
 
@@ -2184,42 +3287,42 @@ const ElementalShamanGuide = () => {
             borderBottom: '2px solid #1e2328'
           }}>
             <button
-              onClick={() => setSelectedStatHero('diabolist')}
+              onClick={() => setSelectedStatHero('farseer')}
               style={{
                 flex: 1,
                 padding: '12px 20px',
-                background: selectedStatHero === 'diabolist' ?
-                  'linear-gradient(135deg, #5a3896 0%, #2a1846 100%)' :
+                background: selectedStatHero === 'farseer' ?
+                  'linear-gradient(135deg, #0070DE 0%, #005ba0 100%)' :
                   'rgba(255, 255, 255, 0.05)',
-                border: `2px solid ${selectedStatHero === 'diabolist' ? '#9482C9' : '#2a2d35'}`,
+                border: `2px solid ${selectedStatHero === 'farseer' ? '#0070DE' : '#2a2d35'}`,
                 borderRadius: '8px',
-                color: selectedStatHero === 'diabolist' ? '#9482C9' : '#94a3b8',
+                color: selectedStatHero === 'farseer' ? '#0070DE' : '#94a3b8',
                 fontSize: '1rem',
                 fontWeight: '600',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease'
               }}
             >
-              🔮 악마학자
+              🔮 선견자
             </button>
             <button
-              onClick={() => setSelectedStatHero('soulharvester')}
+              onClick={() => setSelectedStatHero('stormbringer')}
               style={{
                 flex: 1,
                 padding: '12px 20px',
-                background: selectedStatHero === 'soulharvester' ?
-                  'linear-gradient(135deg, #2a7a46 0%, #1a3a26 100%)' :
+                background: selectedStatHero === 'stormbringer' ?
+                  'linear-gradient(135deg, #0070DE 0%, #005ba0 100%)' :
                   'rgba(255, 255, 255, 0.05)',
-                border: `2px solid ${selectedStatHero === 'soulharvester' ? '#32CD32' : '#2a2d35'}`,
+                border: `2px solid ${selectedStatHero === 'stormbringer' ? '#0070DE' : '#2a2d35'}`,
                 borderRadius: '8px',
-                color: selectedStatHero === 'soulharvester' ? '#32CD32' : '#94a3b8',
+                color: selectedStatHero === 'stormbringer' ? '#0070DE' : '#94a3b8',
                 fontSize: '1rem',
                 fontWeight: '600',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease'
               }}
             >
-              💀 영혼 수확자
+              ⚡ 폭풍인도자
             </button>
           </div>
 
@@ -2272,15 +3375,15 @@ const ElementalShamanGuide = () => {
         <Card style={{ marginBottom: '20px' }}>
           <div className={styles.subsection} ref={subSectionRefs['stats-priority']}>
             <h3 style={{
-              color: selectedStatHero === 'diabolist' ? '#9482C9' : '#32CD32',
+              color: selectedStatHero === 'farseer' ? '#0070DE' : '#0070DE',
               fontSize: '1.3rem',
               marginBottom: '25px',
               display: 'flex',
               alignItems: 'center',
               gap: '10px'
             }}>
-              <span>{selectedStatHero === 'diabolist' ? '🔮' : '💀'}</span>
-              <span>{selectedStatHero === 'diabolist' ? '악마학자' : '영혼 수확자'}</span>
+              <span>{selectedStatHero === 'farseer' ? '🔥' : '✨'}</span>
+              <span>{selectedStatHero === 'farseer' ? '성난태양' : '주문술사'}</span>
               <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>
                 - {selectedStatMode === 'single' ? '단일 대상' : '광역'}
               </span>
@@ -2295,8 +3398,8 @@ const ElementalShamanGuide = () => {
               {statPriorities[selectedStatHero][selectedStatMode].map((statKey, index) => {
                 const stat = statData[statKey];
                 const isEqual = index > 0 &&
-                  ((selectedStatHero === 'diabolist' && selectedStatMode === 'single' && index === 2) ||
-                   (selectedStatHero === 'soulharvester' && index === 4));
+                  ((selectedStatHero === 'farseer' && selectedStatMode === 'single' && index === 2) ||
+                   (selectedStatHero === 'stormbringer' && index === 4));
 
                 return (
                   <div key={statKey} style={{
@@ -2377,255 +3480,14 @@ const ElementalShamanGuide = () => {
               })}
             </div>
 
-            {/* 스탯 브레이크포인트 상세 정보 */}
-            <div style={{
-              marginTop: '30px',
-              padding: '20px',
-              background: 'rgba(0, 0, 0, 0.4)',
-              borderRadius: '8px',
-              border: '1px solid #2a2d35'
-            }}>
-              <h4 style={{
-                color: '#AAD372',
-                marginBottom: '20px',
-                fontSize: '1.2rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px'
-              }}>
-                <span>📊</span>
-                <span>스탯 브레이크포인트 & 목표</span>
-              </h4>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '25px' }}>
-                {/* 가속 브레이크포인트 */}
-                <div>
-                  <h5 style={{
-                    color: statData.haste.color,
-                    marginBottom: '10px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>{statData.haste.icon}</span>
-                    <span>{statData.haste.name}</span>
-                  </h5>
-                  {renderStatInfo(statData.haste)}
-                </div>
-
-                {/* 치명타 브레이크포인트 */}
-                <div>
-                  <h5 style={{
-                    color: statData.crit.color,
-                    marginBottom: '10px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>{statData.crit.icon}</span>
-                    <span>{statData.crit.name}</span>
-                  </h5>
-                  {renderStatInfo(statData.crit)}
-                </div>
-
-                {/* 특화 브레이크포인트 */}
-                <div>
-                  <h5 style={{
-                    color: statData.mastery.color,
-                    marginBottom: '10px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>{statData.mastery.icon}</span>
-                    <span>{statData.mastery.name}</span>
-                  </h5>
-                  {renderStatInfo(statData.mastery)}
-                </div>
-
-                {/* 유연 브레이크포인트 */}
-                <div>
-                  <h5 style={{
-                    color: statData.versatility.color,
-                    marginBottom: '10px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>{statData.versatility.icon}</span>
-                    <span>{statData.versatility.name}</span>
-                  </h5>
-                  {renderStatInfo(statData.versatility)}
-                </div>
-              </div>
-
-              {/* 브레이크포인트 요약 */}
-              <div style={{
-                marginTop: '30px',
-                padding: '20px',
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%)',
-                border: '1px solid rgba(255, 107, 53, 0.3)',
-                borderRadius: '8px'
-              }}>
-                <h4 style={{ color: '#ff6b35', marginBottom: '15px', fontSize: '1.1rem' }}>
-                  📊 브레이크포인트 요약
-                </h4>
-
-                <div style={{ marginBottom: '15px' }}>
-                  <h5 style={{ color: '#AAD372', marginBottom: '10px' }}>
-                    불꽃형성자 (Flameshaper)
-                  </h5>
-                  <ul style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.8' }}>
-                    <li><strong>단일:</strong> 가속 30-35% > 치명타 = 특화 > 유연</li>
-                    <li><strong>광역:</strong> 가속 30-40% > 치명타 > 특화 > 유연</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h5 style={{ color: '#DC3545', marginBottom: '10px' }}>
-                    비늘사령관 (Chronowarden)
-                  </h5>
-                  <ul style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.8' }}>
-                    <li><strong>단일/광역:</strong> 가속 30-40% > 치명타 > 유연 > 특화</li>
-                  </ul>
-                </div>
-
-                <div style={{
-                  marginTop: '15px',
-                  paddingTop: '15px',
-                  borderTop: '1px solid rgba(255, 255, 255, 0.1)'
-                }}>
-                  <p style={{ color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic' }}>
-                    ⚠️ 가속은 30%부터 소프트캡 시작, 40%에서 효율 크게 감소
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 중요 참고사항 */}
-            <div style={{
-              background: 'rgba(170, 211, 114, 0.05)',
-              border: '1px solid rgba(170, 211, 114, 0.2)',
-              borderRadius: '8px',
-              padding: '20px',
-              marginBottom: '30px'
-            }}>
-              <h4 style={{ color: '#AAD372', marginBottom: '15px', fontSize: '1.1rem' }}>
-                ⚠️ 중요 참고사항
-              </h4>
-              <ul style={{ color: '#cbd5e1', lineHeight: '1.8', fontSize: '0.95rem' }}>
-                <li>가속은 30-40%에서 소프트캡에 도달합니다</li>
-                <li>치명타는 특별한 소프트캡이 없습니다</li>
-                {selectedStatHero === 'diabolist' && selectedStatMode === 'single' && (
-                  <li>악마학자는 특화와 치명타가 동일한 가치를 가집니다</li>
-                )}
-                {selectedStatHero === 'soulharvester' && (
-                  <li>영혼 수확자는 가속과 치명타를 우선시합니다</li>
-                )}
-                <li>정확한 스탯 가중치는 개인 시뮬레이션을 권장합니다</li>
-                <li>콘텐츠 타입에 따라 우선순위가 변경됩니다</li>
-              </ul>
-            </div>
-          </div>
-        </Card>
-
-        {/* SimC 스트링 섹션 */}
-        <Card>
-          <div className={styles.subsection} ref={subSectionRefs['stats-simc']}>
-            <h3 style={{ color: '#AAD372', marginBottom: '20px', fontSize: '1.2rem' }}>
-              📊 SimulationCraft 설정
-            </h3>
-
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: '20px',
-              marginBottom: '20px'
-            }}>
-              {/* 기본 가중치 */}
-              <div style={{
-                background: 'rgba(0, 0, 0, 0.4)',
-                border: '1px solid #2a2d35',
-                borderRadius: '8px',
-                padding: '20px'
-              }}>
-                <h4 style={{ color: '#ffa500', marginBottom: '15px' }}>기본 가중치</h4>
-                <pre style={{
-                  background: 'rgba(0, 0, 0, 0.6)',
-                  border: '1px solid #1e2328',
-                  borderRadius: '4px',
-                  padding: '15px',
-                  color: '#9482C9',
-                  fontSize: '0.9rem',
-                  fontFamily: 'monospace',
-                  overflow: 'auto'
-                }}>
-{`# TWW Season 3 Demonology Warlock
-scale_factors="1"
-scale_factor_dps="1"
-interpolation="1"
-iterate="10000"
-fight_style=patchwerk
-max_time=300
-
-# Stat Weights (악마학자 - 단일 대상)
-haste=1.00      # 가속 (소프트캡 25-30%)
-mastery=0.95    # 특화 (악마 피해 증가)
-crit=0.85       # 치명
-versatility=0.70
-
-# Stat Weights (영혼 수확자 - 광역/쐐기)
-haste=1.00      # 가속 (조각 생성 속도)
-mastery=0.90    # 특화 (악마 피해)
-crit=0.80       # 치명
-versatility=0.65`}
-                </pre>
-              </div>
-
-              {/* 프로필 예시 */}
-              <div style={{
-                background: 'rgba(0, 0, 0, 0.4)',
-                border: '1px solid #2a2d35',
-                borderRadius: '8px',
-                padding: '20px'
-              }}>
-                <h4 style={{ color: '#ffa500', marginBottom: '15px' }}>프로필 예시</h4>
-                <pre style={{
-                  background: 'rgba(0, 0, 0, 0.6)',
-                  border: '1px solid #1e2328',
-                  borderRadius: '4px',
-                  padding: '15px',
-                  color: '#9482C9',
-                  fontSize: '0.9rem',
-                  fontFamily: 'monospace',
-                  overflow: 'auto'
-                }}>
-{`warlock="Demonology_Warlock"
-level=80
-race=orc
-spec=demonology
-region=kr
-server=azshara
-role=attack
-professions=engineering=100/enchanting=100
-
-# Gear (639 ilvl 예시)
-head=,id=212072,ilevel=639,bonus_id=10341
-neck=,id=212448,ilevel=639,gem_id=213743
-shoulder=,id=212070,ilevel=639,bonus_id=10341
-back=,id=212446,ilevel=639,enchant=chant_of_leeching_fangs_3
-chest=,id=212075,ilevel=639,enchant=crystalline_radiance_3`}
-                </pre>
-              </div>
-            </div>
-
             {/* Raidbots 링크 */}
             <div style={{
               background: 'linear-gradient(135deg, rgba(170, 211, 114, 0.1) 0%, transparent 100%)',
               border: '1px solid #AAD372',
               borderRadius: '8px',
               padding: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
+              marginTop: '30px'
             }}>
               <p style={{ color: '#cbd5e1', marginBottom: '15px' }}>
                 정확한 스탯 가중치를 알고 싶다면 Raidbots에서 시뮬레이션을 돌려보세요
@@ -2754,13 +3616,6 @@ chest=,id=212075,ilevel=639,enchant=crystalline_radiance_3`}
             >
               우선순위
             </SubNavItem>
-            <SubNavItem
-              active={activeSubSection === 'stats-simc'}
-              onClick={() => scrollToSubSection('stats-simc')}
-              style={{ display: activeSection === 'stats' ? 'block' : 'none' }}
-            >
-              SimC 스트링
-            </SubNavItem>
           </NavSection>
         </Sidebar>
 
@@ -2775,20 +3630,20 @@ chest=,id=212075,ilevel=639,enchant=crystalline_radiance_3`}
               <h1 style={{
                 fontSize: '3rem',
                 fontWeight: '900',
-                background: 'linear-gradient(135deg, #9482C9 0%, #7a5fb0 100%)',
+                background: 'linear-gradient(135deg, #0070DE 0%, #2a9cc4 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
                 marginBottom: '1rem',
-                textShadow: '0 0 30px rgba(148, 130, 201, 0.3)'
+                textShadow: '0 0 30px rgba(0, 112, 222, 0.3)'
               }}>
-                악마 흑마법사 가이드
+                정기 주술사 가이드
               </h1>
               <p style={{
                 color: '#94a3b8',
                 fontSize: '0.9rem'
               }}>
-                최종 수정일: 2025.09.30 | 작성: WoWMeta | 검수: TWW 시즌3 (11.2 패치)
+                최종 수정일: 2025.10.03 | 작성: WoWMeta
               </p>
             </div>
 

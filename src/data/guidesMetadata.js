@@ -77,7 +77,7 @@ export const guidesMetadata = [
     title: '정기 주술사',
     patch: '11.2',
     difficulty: '중급',
-    updateDate: '2025-10-01',
+    updateDate: '2025-10-08',
     link: '/guide/shaman/elemental',
     classColor: '#0070DD'
   },
