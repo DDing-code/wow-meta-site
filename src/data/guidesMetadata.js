@@ -95,6 +95,19 @@ export const guidesMetadata = [
     classColor: '#C69B6D',
     description: '양손 무기를 휘둘러 폭발적인 피해를 입히는 근접 DPS 전문화',
     reviewer: '자의식-아즈샤라'
+  },
+  {
+    id: 'mage-arcane',
+    class: '마법사',
+    classEng: 'mage',
+    spec: '비전',
+    specEng: 'arcane',
+    title: '비전 마법사',
+    patch: '11.2',
+    difficulty: '고급',
+    updateDate: '2025-10-08',
+    link: '/guide/mage/arcane',
+    classColor: '#3FC7EB'
   }
 ];
 
