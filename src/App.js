@@ -16,12 +16,10 @@ import DevastationEvokerLayoutIntegrated from './components/DevastationEvokerLay
 import DemonologyWarlockGuide from './components/DemonologyWarlockGuide';
 import AfflictionWarlockGuide from './components/AfflictionWarlockGuide';
 import DestructionWarlockGuide from './components/DestructionWarlockGuide';
-import ElementalShamanGuide from './components/ElementalShamanGuide';
 import FuryWarriorGuide from './components/FuryWarriorGuide';
 import ArcaneMageGuide from './components/ArcaneMageGuide';
-import GuideTemplate from './components/GuideTemplate';
-// 황폐 기원사 가이드 - 새로운 통합 버전
-// 통합 가이드 템플릿 사용
+import ElementalShamanGuide from './components/ElementalShamanGuide';
+import FrostDeathKnightGuide from './components/FrostDeathKnightGuide';
 import moduleEventBus from './services/ModuleEventBus';
 import aiFeedbackService from './services/AIFeedbackService';
 import registerAllPersonas from './ai/personas';
@@ -102,14 +100,14 @@ function App() {
               <Route path="/guide/warlock/affliction" element={<AfflictionWarlockGuide />} />
               {/* 파괴 흑마법사 가이드 - 통합 버전 */}
               <Route path="/guide/warlock/destruction" element={<DestructionWarlockGuide />} />
-              {/* 정기 주술사 가이드 - 통합 버전 */}
-              <Route path="/guide/shaman/elemental" element={<ElementalShamanGuide />} />
-              {/* 분노 전사 가이드 - 통합 버전 */}
+              {/* 분노 전사 가이드 - 모듈화 완료 */}
               <Route path="/guide/warrior/fury" element={<FuryWarriorGuide />} />
-              {/* 비전 법사 가이드 */}
+              {/* 비전 마법사 가이드 - 모듈화 완료 */}
               <Route path="/guide/mage/arcane" element={<ArcaneMageGuide />} />
-              {/* 가이드 템플릿 - 테스트용 */}
-              <Route path="/guide/template" element={<GuideTemplate />} />
+              {/* 정기 주술사 가이드 - 모듈화 완료 */}
+              <Route path="/guide/shaman/elemental" element={<ElementalShamanGuide />} />
+              {/* 냉기 죽음의 기사 가이드 - 초기 버전 (Maxroll 기반 업데이트 예정) */}
+              <Route path="/guide/deathknight/frost" element={<FrostDeathKnightGuide />} />
             </Routes>
           </MainContent>
         </AppContainer>

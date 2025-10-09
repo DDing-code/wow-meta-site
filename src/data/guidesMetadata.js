@@ -108,6 +108,20 @@ export const guidesMetadata = [
     updateDate: '2025-10-08',
     link: '/guide/mage/arcane',
     classColor: '#3FC7EB'
+  },
+  {
+    id: 'deathknight-frost',
+    class: '죽음의 기사',
+    classEng: 'deathknight',
+    spec: '냉기',
+    specEng: 'frost',
+    title: '냉기 죽음의 기사',
+    patch: '11.2',
+    difficulty: '중급',
+    updateDate: '2025-10-09',
+    link: '/guide/deathknight/frost',
+    classColor: '#C41E3A',
+    description: '쌍수 무기와 얼음의 힘으로 적을 제압하는 근접 DPS 전문화'
   }
 ];
 
