@@ -1,8 +1,8 @@
 // 악마사냥꾼 (Demon Hunter) 스킬 데이터베이스
-// WoW 11.2 패치 - 크아레쉬의 유령 (Undermined)
-// 최신 한국어 번역 적용
+// WoW 11.2.5 패치 - TWW 시즌 3
+// 최신 한국어 번역 적용 - 2025-11-28 업데이트
 
-import { koreanTranslations } from '../koreanTranslations-11.2';
+import { koreanTranslations } from '../koreanTranslations-11.2.js';
 
 const demonhunterTranslations = koreanTranslations.demonhunterAbilities;
 
@@ -70,8 +70,8 @@ export const demonhunterSkills = {
     "악마 보호막": { id: "demon_spikes", name: "악마 보호막", type: "defensive" },
     "악마의 결계": { id: "demonic_wards", name: "악마의 결계", type: "passive" },
 
-    // 이동기
-    "복수의 질주": { id: "vengeful_retreat", name: "복수의 질주", type: "movement" },
+    // 이동기 - 수정: 복수의 질주 → 복수의 퇴각
+    "복수의 퇴각": { id: "vengeful_retreat", name: "Vengeful Retreat", type: "movement" },
     "활공": { id: "glide", name: "활공", type: "movement" },
     "이중 도약": { id: "double_jump", name: "이중 도약", type: "movement" },
 
@@ -85,101 +85,106 @@ export const demonhunterSkills = {
   // 파멸 전문화 (근접 딜러)
   havoc: {
     // 핵심 능력
-    "칼날 춤": { id: "blade_dance", name: "칼날 춤", type: "ability" },
-    "죽음의 소용돌이": { id: "death_sweep", name: "죽음의 소용돌이", type: "ability" },
-    "안광": { id: "eye_beam", name: "안광", type: "channel" },
+    "칼날 춤": { id: "blade_dance", name: "Blade Dance", type: "ability" },
+    "죽음의 소용돌이": { id: "death_sweep", name: "Death Sweep", type: "ability" },
+    "안광": { id: "eye_beam", name: "Eye Beam", type: "channel" },
     "파멸의 격노": { id: "chaos_blades", name: "파멸의 격노", type: "cooldown" },
     "지옥 돌진": { id: "fel_barrage", name: "지옥 돌진", type: "channel" },
-    "소멸": { id: "annihilation", name: "소멸", type: "spender" },
-    "불꽃의 인장": { id: "immolation_aura", name: "불꽃의 인장", type: "ability" },
-    "본질 절단": { id: "essence_break", name: "본질 절단", type: "debuff" },
-    "악마의 웅덩이": { id: "glaive_tempest", name: "악마의 웅덩이", type: "ability" },
-    "엘리다스의 분노": { id: "elysian_decree", name: "엘리다스의 분노", type: "ability" },
+    "파멸": { id: "annihilation", name: "Annihilation", type: "spender" },
+    // 수정: 불꽃의 인장 → 제물의 오라
+    "제물의 오라": { id: "immolation_aura", name: "Immolation Aura", type: "ability" },
+    // 수정: 본질 절단 → 정수파쇄
+    "정수파쇄": { id: "essence_break", name: "Essence Break", type: "debuff" },
+    "악마의 웅덩이": { id: "glaive_tempest", name: "Glaive Tempest", type: "ability" },
+    "엘리시안 칙령": { id: "elysian_decree", name: "Elysian Decree", type: "ability" },
 
     // 특성
-    "실명": { id: "blind_fury", name: "실명", type: "talent" },
-    "악마의 욕구": { id: "demonic_appetite", name: "악마의 욕구", type: "talent" },
-    "준비된 자세": { id: "unbound_chaos", name: "준비된 자세", type: "talent" },
-    "끓는 상표": { id: "burning_hatred", name: "끓는 상표", type: "talent" },
-    "격렬한 속도": { id: "insatiable_hunger", name: "격렬한 속도", type: "talent" },
-    "악마의 존재": { id: "demonic", name: "악마의 존재", type: "talent" },
-    "최초의 피": { id: "first_blood", name: "최초의 피", type: "talent" },
-    "진정한 일격": { id: "cycle_of_hatred", name: "진정한 일격", type: "talent" },
-    "영혼 탈취": { id: "soul_rending_havoc", name: "영혼 탈취", type: "talent" },
-    "이동력": { id: "momentum", name: "이동력", type: "talent" },
-    "지옥 폭풍": { id: "fel_eruption", name: "지옥 폭풍", type: "talent" },
+    "실명의 분노": { id: "blind_fury", name: "Blind Fury", type: "talent" },
+    "악마의 욕구": { id: "demonic_appetite", name: "Demonic Appetite", type: "talent" },
+    "속박되지 않은 혼돈": { id: "unbound_chaos", name: "Unbound Chaos", type: "talent" },
+    "불타는 증오": { id: "burning_hatred", name: "Burning Hatred", type: "talent" },
+    "격렬한 굶주림": { id: "insatiable_hunger", name: "Insatiable Hunger", type: "talent" },
+    "악마의 존재": { id: "demonic", name: "Demonic", type: "talent" },
+    "최초의 피": { id: "first_blood", name: "First Blood", type: "talent" },
+    "증오의 순환": { id: "cycle_of_hatred", name: "Cycle of Hatred", type: "talent" },
+    "영혼 탈취": { id: "soul_rending_havoc", name: "Soul Rending", type: "talent" },
+    "기세": { id: "momentum", name: "Momentum", type: "talent" },
+    "지옥 분화": { id: "fel_eruption", name: "Fel Eruption", type: "talent" },
+    "이니셔티브": { id: "initiative", name: "Initiative", type: "talent" },
+    "고독한 사냥꾼": { id: "isolated_prey", name: "Isolated Prey", type: "talent" },
+    "지옥칼날 폭풍": { id: "glaive_tempest_talent", name: "Glaive Tempest", type: "talent" },
 
     // 패시브
-    "혼돈의 상처": { id: "chaos_brand", name: "혼돈의 상처", type: "passive" },
-    "악마의 존재": { id: "demonic_presence", name: "악마의 존재", type: "passive" },
-    "마의 대가": { id: "mastery_demonic_presence", name: "마의 대가", type: "passive" },
-    "파멸": { id: "havoc", name: "파멸", type: "passive" },
-    "악마의 기운": { id: "demon_blades", name: "악마의 기운", type: "passive" }
+    "혼돈 낙인": { id: "chaos_brand", name: "Chaos Brand", type: "passive" },
+    "악마의 현현": { id: "demonic_presence", name: "Demonic Presence", type: "passive" },
+    "특화: 혼돈 재앙": { id: "mastery_demonic_presence", name: "Mastery: Demonic Presence", type: "passive" },
+    "악마 칼날": { id: "demon_blades", name: "Demon Blades", type: "passive" }
   },
 
   // 복수 전문화 (탱커)
   vengeance: {
     // 핵심 능력
-    "영혼 절단": { id: "soul_cleave", name: "영혼 절단", type: "spender" },
-    "영혼 폭탄": { id: "soul_bomb", name: "영혼 폭탄", type: "ability" },
-    "제물의 오라": { id: "immolation_aura_veng", name: "제물의 오라", type: "ability" },
-    "지옥불 일격": { id: "infernal_strike", name: "지옥불 일격", type: "movement" },
-    "악마 보호막": { id: "demon_spikes_veng", name: "악마 보호막", type: "defensive" },
-    "영혼 장벽": { id: "soul_barrier", name: "영혼 장벽", type: "defensive" },
-    "마지막 저항": { id: "last_resort", name: "마지막 저항", type: "defensive" },
-    "악마 추방": { id: "fel_devastation", name: "악마 추방", type: "channel" },
-    "악령 폭발": { id: "spirit_bomb", name: "악령 폭발", type: "ability" },
-    "인장": { id: "sigil_of_flame", name: "인장", type: "ability" },
-    "불멸": { id: "fiery_brand", name: "불멸", type: "debuff" },
+    "영혼 절단": { id: "soul_cleave", name: "Soul Cleave", type: "spender" },
+    "영혼 폭탄": { id: "soul_bomb", name: "Soul Bomb", type: "ability" },
+    "제물의 오라": { id: "immolation_aura_veng", name: "Immolation Aura", type: "ability" },
+    "지옥불 일격": { id: "infernal_strike", name: "Infernal Strike", type: "movement" },
+    "악마 보호막": { id: "demon_spikes_veng", name: "Demon Spikes", type: "defensive" },
+    "영혼 장벽": { id: "soul_barrier", name: "Soul Barrier", type: "defensive" },
+    "마지막 저항": { id: "last_resort", name: "Last Resort", type: "defensive" },
+    "지옥 황폐화": { id: "fel_devastation", name: "Fel Devastation", type: "channel" },
+    "영혼 폭격": { id: "spirit_bomb", name: "Spirit Bomb", type: "ability" },
+    // 수정: 불꽃의 인장 - 복수는 별도 스킬
+    "불꽃의 인장": { id: "sigil_of_flame", name: "Sigil of Flame", type: "ability" },
+    "지옥 불길 낙인": { id: "fiery_brand", name: "Fiery Brand", type: "debuff" },
 
     // 특성
-    "영혼 분열": { id: "fracture", name: "영혼 분열", type: "talent" },
-    "고통의 불꽃": { id: "agonizing_flames", name: "고통의 불꽃", type: "talent" },
-    "타락의 흔적": { id: "frailty", name: "타락의 흔적", type: "talent" },
-    "집중된 인장": { id: "concentrated_sigils", name: "집중된 인장", type: "talent" },
-    "빠른 인장": { id: "quickened_sigils", name: "빠른 인장", type: "talent" },
-    "공허 리퍼": { id: "void_reaver", name: "공허 리퍼", type: "talent" },
-    "영혼 분쇄": { id: "soul_crush", name: "영혼 분쇄", type: "talent" },
-    "마지막 저항": { id: "last_resort_talent", name: "마지막 저항", type: "talent" },
-    "기진맥진": { id: "feed_the_demon", name: "기진맥진", type: "talent" },
-    "타오르는 상처": { id: "burning_alive", name: "타오르는 상처", type: "talent" },
-    "대량 추방": { id: "bulk_extraction", name: "대량 추방", type: "talent" },
+    "영혼 분열": { id: "fracture", name: "Fracture", type: "talent" },
+    "고통의 화염": { id: "agonizing_flames", name: "Agonizing Flames", type: "talent" },
+    "나약함": { id: "frailty", name: "Frailty", type: "talent" },
+    "집중된 인장": { id: "concentrated_sigils", name: "Concentrated Sigils", type: "talent" },
+    "신속한 인장": { id: "quickened_sigils", name: "Quickened Sigils", type: "talent" },
+    "공허 약탈자": { id: "void_reaver", name: "Void Reaver", type: "talent" },
+    "영혼 분쇄": { id: "soul_crush", name: "Soul Crush", type: "talent" },
+    "마지막 저항": { id: "last_resort_talent", name: "Last Resort", type: "talent" },
+    "악마 먹이기": { id: "feed_the_demon", name: "Feed the Demon", type: "talent" },
+    "산 채로 불태우기": { id: "burning_alive", name: "Burning Alive", type: "talent" },
+    "대량 추출": { id: "bulk_extraction", name: "Bulk Extraction", type: "talent" },
 
     // 인장
-    "침묵의 인장": { id: "sigil_of_silence", name: "침묵의 인장", type: "silence" },
-    "불행의 인장": { id: "sigil_of_misery", name: "불행의 인장", type: "fear" },
-    "사슬의 인장": { id: "sigil_of_chains", name: "사슬의 인장", type: "chain" },
+    "침묵의 인장": { id: "sigil_of_silence", name: "Sigil of Silence", type: "silence" },
+    "고통의 인장": { id: "sigil_of_misery", name: "Sigil of Misery", type: "fear" },
+    "사슬의 인장": { id: "sigil_of_chains", name: "Sigil of Chains", type: "chain" },
 
     // 패시브
-    "악마 사냥꾼의 고통": { id: "demonic_tattoos", name: "악마 사냥꾼의 고통", type: "passive" },
-    "검은 피": { id: "thick_skin", name: "검은 피", type: "passive" },
-    "공허의 힘": { id: "void_touched", name: "공허의 힘", type: "passive" },
-    "영혼의 방벽": { id: "soul_barrier_passive", name: "영혼의 방벽", type: "passive" },
-    "펠 갑옷의 대가": { id: "mastery_fel_blood", name: "펠 갑옷의 대가", type: "passive" }
+    "악마의 문신": { id: "demonic_tattoos", name: "Demonic Tattoos", type: "passive" },
+    "두꺼운 피부": { id: "thick_skin", name: "Thick Skin", type: "passive" },
+    "공허에 물듦": { id: "void_touched", name: "Void Touched", type: "passive" },
+    "영혼 보호막": { id: "soul_barrier_passive", name: "Soul Barrier", type: "passive" },
+    "특화: 지옥 피": { id: "mastery_fel_blood", name: "Mastery: Fel Blood", type: "passive" }
   },
 
   // PvP 특성
   pvp_talents: {
     // 공통 PvP 특성
-    "검투사의 메달": { id: "gladiators_medallion", name: "검투사의 메달", type: "pvp_talent" },
-    "끈기": { id: "relentless", name: "끈기", type: "pvp_talent" },
-    "적응": { id: "adaptation", name: "적응", type: "pvp_talent" },
+    "검투사의 메달": { id: "gladiators_medallion", name: "Gladiator's Medallion", type: "pvp_talent" },
+    "불굴": { id: "relentless", name: "Relentless", type: "pvp_talent" },
+    "적응": { id: "adaptation", name: "Adaptation", type: "pvp_talent" },
 
     // 악마사냥꾼 전용 PvP 특성
-    "악마의 짓밟기": { id: "demonic_trample", name: "악마의 짓밟기", type: "pvp_talent" },
-    "악마 방어구": { id: "demon_armor", name: "악마 방어구", type: "pvp_talent" },
-    "뒤집기": { id: "reverse_magic", name: "뒤집기", type: "pvp_talent" },
-    "마나 균열": { id: "mana_rift", name: "마나 균열", type: "pvp_talent" },
-    "마나 연소": { id: "mana_burn", name: "마나 연소", type: "pvp_talent" },
-    "표식된 죽음": { id: "marked_for_death", name: "표식된 죽음", type: "pvp_talent" },
-    "비의 칼날": { id: "rain_from_above", name: "비의 칼날", type: "pvp_talent" },
-    "지옥의 화염": { id: "detainment", name: "지옥의 화염", type: "pvp_talent" },
-    "피의 달": { id: "blood_moon", name: "피의 달", type: "pvp_talent" },
-    "가시 방어": { id: "jagged_spikes", name: "가시 방어", type: "pvp_talent" },
-    "일루다리 지식": { id: "illidan_knowledge", name: "일루다리 지식", type: "pvp_talent" },
-    "영혼 분할": { id: "soul_split", name: "영혼 분할", type: "pvp_talent" },
-    "대악마 변신": { id: "demonic_origins", name: "대악마 변신", type: "pvp_talent" }
+    "악마의 짓밟기": { id: "demonic_trample", name: "Demonic Trample", type: "pvp_talent" },
+    "악마 방어구": { id: "demon_armor", name: "Demon Armor", type: "pvp_talent" },
+    "마법 되돌리기": { id: "reverse_magic", name: "Reverse Magic", type: "pvp_talent" },
+    "마나 균열": { id: "mana_rift", name: "Mana Rift", type: "pvp_talent" },
+    "마나 연소": { id: "mana_burn", name: "Mana Burn", type: "pvp_talent" },
+    "죽음의 표적": { id: "marked_for_death", name: "Marked for Death", type: "pvp_talent" },
+    "하늘에서 내리는 비": { id: "rain_from_above", name: "Rain from Above", type: "pvp_talent" },
+    "구금": { id: "detainment", name: "Detainment", type: "pvp_talent" },
+    "피의 달": { id: "blood_moon", name: "Blood Moon", type: "pvp_talent" },
+    "톱날 가시": { id: "jagged_spikes", name: "Jagged Spikes", type: "pvp_talent" },
+    "일리다리 지식": { id: "illidan_knowledge", name: "Illidari Knowledge", type: "pvp_talent" },
+    "영혼 분할": { id: "soul_split", name: "Soul Split", type: "pvp_talent" },
+    "악마 기원": { id: "demonic_origins", name: "Demonic Origins", type: "pvp_talent" }
   }
 };
 
-module.exports = demonhunterSkills;
+export default demonhunterSkills;

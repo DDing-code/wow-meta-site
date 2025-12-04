@@ -27,7 +27,7 @@ function addAllRemainingTalents() {
 
     // 영웅 특성
     "442008": { name: "알드라치 파괴자", icon: "inv_glaive_1h_npc_d_02", type: "heroTalent", class: "DEMONHUNTER", heroTree: "aldrachi-reaver", koreanName: "알드라치 파괴자", englishName: "Aldrachi Reaver" },
-    "442009": { name: "지옥흉터", icon: "ability_demonhunter_concentratedsigils", type: "heroTalent", class: "DEMONHUNTER", heroTree: "fel-scarred", koreanName: "지옥흉터", englishName: "Fel-scarred" }
+    "442009": { name: "지옥상흔", icon: "ability_demonhunter_concentratedsigils", type: "heroTalent", class: "DEMONHUNTER", heroTree: "fel-scarred", koreanName: "지옥상흔", englishName: "Fel-scarred" }
   };
 
   // 드루이드 특성

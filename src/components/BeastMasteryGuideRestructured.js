@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
 import styles from './BeastMasteryGuide.module.css';
-import WowTalentTreeRealistic from './WowTalentTreeRealistic';
-import moduleEventBus from '../services/ModuleEventBus';
-import aiFeedbackService from '../services/AIFeedbackService';
-import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import WowTalentTreeRealistic from './WowTalentTreeRealistic.js';
+import moduleEventBus from '../services/ModuleEventBus.js';
+import aiFeedbackService from '../services/AIFeedbackService.js';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons.js';
 
 // 스타일 컴포넌트
 const Container = styled.div`

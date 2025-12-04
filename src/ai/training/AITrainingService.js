@@ -1,5 +1,5 @@
-import specializationAIFactory from '../SpecializationAIFactory';
-import APLData from '../apl/APLData';
+import specializationAIFactory from '../SpecializationAIFactory.js';
+import APLData from '../apl/APLData.js';
 
 class AITrainingService {
   constructor() {

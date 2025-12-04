@@ -86,7 +86,7 @@ const correctHeroTalentTranslations = {
   // 악마사냥꾼 영웅 특성
   demonhunter: {
     aldrachi_reaver: "알드라치 파괴자", // Aldrachi Reaver
-    fel_scarred: "지옥흉터" // Fel-scarred
+    fel_scarred: "지옥상흔" // Fel-scarred
   },
 
   // 기원사 영웅 특성

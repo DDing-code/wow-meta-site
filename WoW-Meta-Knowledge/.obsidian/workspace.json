@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "6a826ca984a26ee4",
+    "type": "split",
+    "children": [
+      {
+        "id": "db12a8546f4d031b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18246545ce872975",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          },
+          {
+            "id": "1903d589451b70cd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.10.6"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "050f0f9f9109c499",
+    "type": "split",
+    "children": [
+      {
+        "id": "92a4ed946978b543",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c1de9ba9f712ff71",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "093802f35b3044a4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "35e645835e0be7b2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "98d3ccf4eb979acc",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc2871079db25f7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f07133804111e6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "c009872f342c3c8d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "cbed13daf56b4a5a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "da8c14838054e7f6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "test.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "test 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "graph:그래프 뷰 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "18246545ce872975",
+  "lastOpenFiles": [
+    "DemonHunters.md",
+    "01-스킬-DB/Mages/마력의-룬.md",
+    "01-스킬-DB/Mages/비전-쇄도.md",
+    "02-전문화별-가이드/DeathKnights/Blood-Guide.md",
+    "00-INDEX/_PERSONA-INDEX.md",
+    "00-INDEX/_SKILL-INDEX.md",
+    "01-스킬-DB/Druids/가시나무.md",
+    "02-전문화별-가이드/DemonHunters/Havoc-Guide.md",
+    "Paladins.md",
+    "00-INDEX/_CHANGELOG.md",
+    "00-INDEX/_GUIDE-INDEX.md",
+    "02-전문화별-가이드/DeathKnights/Frost-Guide.md",
+    "01-스킬-DB/Mages.md",
+    "00-INDEX/_MASTER-INDEX.md",
+    "02-전문화별-가이드/Evokers/Augmentation-Guide.md",
+    "02-전문화별-가이드/Evokers/Preservation-Guide.md",
+    "02-전문화별-가이드/Evokers/Devastation-Guide.md",
+    "02-전문화별-가이드/DeathKnights/Unholy-Guide.md",
+    "02-전문화별-가이드/DemonHunters/Vengeance-Guide.md",
+    "02-전문화별-가이드/Hunters/Marksmanship-Guide.md",
+    "02-전문화별-가이드/Hunters/BeastMastery-Guide.md",
+    "02-전문화별-가이드/Paladins/Retribution-Guide.md",
+    "02-전문화별-가이드/Paladins/Protection-Guide.md",
+    "02-전문화별-가이드/Paladins/Holy-Guide.md",
+    "02-전문화별-가이드/Warriors/Protection-Guide.md",
+    "02-전문화별-가이드/Warriors/Fury-Guide.md",
+    "무제.canvas",
+    "무제 1.canvas"
+  ]
+}

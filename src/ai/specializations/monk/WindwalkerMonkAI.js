@@ -1,5 +1,5 @@
 // 수도사 바람길잡이 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class WindwalkerMonkAI extends SpecializationAI {
   constructor() {

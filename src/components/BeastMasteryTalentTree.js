@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import styled from 'styled-components';
-import { FullTalentSystem } from './TalentGrid';
-import EdgeRenderer from './EdgeRenderer';
+import { FullTalentSystem } from './TalentGrid.js';
+import EdgeRenderer from './EdgeRenderer.js';
 import beastMasteryData from '../data/beastMasteryTalents.json';
 // TypeScript types removed for JavaScript compatibility
 

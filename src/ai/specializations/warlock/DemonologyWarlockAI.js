@@ -1,5 +1,5 @@
 // 흑마법사 악마 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class DemonologyWarlockAI extends SpecializationAI {
   constructor() {

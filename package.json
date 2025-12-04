@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.2",
@@ -13,8 +14,13 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
     "brain.js": "^2.0.0-beta.24",
+    "cheerio": "^1.1.2",
     "framer-motion": "^10.18.0",
+    "fs-extra": "^11.3.2",
+    "got": "^14.6.3",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.544.0",
+    "mermaid": "^11.12.1",
     "playwright": "^1.55.0",
     "puppeteer": "^24.22.3",
     "react": "^18.2.0",
@@ -33,9 +39,19 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "node scripts/validate-translations.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sanitize": "node scripts/sanitize-guide.js",
+    "validate": "node scripts/sanitize-guide.js",
+    "validate:translations": "node scripts/validate-translations.js",
+    "validate:translations:strict": "node scripts/validate-translations.js --strict",
+    "validate:translations:verbose": "node scripts/validate-translations.js --verbose",
+    "validate:all": "npm run validate:translations && npm run validate",
+    "sync-kb": "node scripts/sync-kb.js",
+    "presync-kb": "echo Syncing KB from Obsidian vault...",
+    "dev": "npm run sync-kb && react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +70,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
   }
 }

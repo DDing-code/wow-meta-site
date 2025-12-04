@@ -30,6 +30,30 @@ const guideLinks = {
       },
       updateDate: '2025-10-09'
     }
+  },
+  demonhunter: {
+    havoc: {
+      name: '파멸 악마사냥꾼',
+      nameEng: 'Havoc Demon Hunter',
+      role: 'DPS',
+      links: {
+        wowhead: {
+          kr: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/overview-pve-dps',
+          en: 'https://www.wowhead.com/guide/classes/demon-hunter/havoc/overview-pve-dps'
+        },
+        icyVeins: 'https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-guide',
+        maxroll: {
+          raid: 'https://maxroll.gg/wow/class-guides/havoc-demon-hunter-raid-guide',
+          mythicPlus: 'https://maxroll.gg/wow/class-guides/havoc-demon-hunter-mythic-plus-guide',
+          leveling: 'https://maxroll.gg/wow/class-guides/havoc-demon-hunter-leveling-guide'
+        },
+        archon: 'https://www.archon.gg/wow/builds/demon-hunter/havoc',
+        method: 'https://www.method.gg/guides/demon-hunter/havoc'
+      },
+      updateDate: '2025-01-10',
+      internalGuide: true,
+      internalPath: '/guide/demonhunter/havoc'
+    }
   }
 };
 

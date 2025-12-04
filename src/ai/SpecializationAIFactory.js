@@ -1,70 +1,70 @@
 // 직업 전문화 AI 팩토리
 // 전사
-import FuryWarriorAI from './specializations/warrior/FuryWarriorAI';
-import ArmsWarriorAI from './specializations/warrior/ArmsWarriorAI';
-import ProtectionWarriorAI from './specializations/warrior/ProtectionWarriorAI';
+import FuryWarriorAI from './specializations/warrior/FuryWarriorAI.js';
+import ArmsWarriorAI from './specializations/warrior/ArmsWarriorAI.js';
+import ProtectionWarriorAI from './specializations/warrior/ProtectionWarriorAI.js';
 
 // 성기사
-import RetributionPaladinAI from './specializations/paladin/RetributionPaladinAI';
-import HolyPaladinAI from './specializations/paladin/HolyPaladinAI';
-import ProtectionPaladinAI from './specializations/paladin/ProtectionPaladinAI';
+import RetributionPaladinAI from './specializations/paladin/RetributionPaladinAI.js';
+import HolyPaladinAI from './specializations/paladin/HolyPaladinAI.js';
+import ProtectionPaladinAI from './specializations/paladin/ProtectionPaladinAI.js';
 
 // 사냥꾼
-import BeastMasteryHunterAI from './specializations/hunter/BeastMasteryHunterAI';
-import MarksmanshipHunterAI from './specializations/hunter/MarksmanshipHunterAI';
-import SurvivalHunterAI from './specializations/hunter/SurvivalHunterAI';
+import BeastMasteryHunterAI from './specializations/hunter/BeastMasteryHunterAI.js';
+import MarksmanshipHunterAI from './specializations/hunter/MarksmanshipHunterAI.js';
+import SurvivalHunterAI from './specializations/hunter/SurvivalHunterAI.js';
 
 // 도적
-import AssassinationRogueAI from './specializations/rogue/AssassinationRogueAI';
-import OutlawRogueAI from './specializations/rogue/OutlawRogueAI';
-import SubtletyRogueAI from './specializations/rogue/SubtletyRogueAI';
+import AssassinationRogueAI from './specializations/rogue/AssassinationRogueAI.js';
+import OutlawRogueAI from './specializations/rogue/OutlawRogueAI.js';
+import SubtletyRogueAI from './specializations/rogue/SubtletyRogueAI.js';
 
 // 사제
-import ShadowPriestAI from './specializations/priest/ShadowPriestAI';
-import DisciplinePriestAI from './specializations/priest/DisciplinePriestAI';
-import HolyPriestAI from './specializations/priest/HolyPriestAI';
+import ShadowPriestAI from './specializations/priest/ShadowPriestAI.js';
+import DisciplinePriestAI from './specializations/priest/DisciplinePriestAI.js';
+import HolyPriestAI from './specializations/priest/HolyPriestAI.js';
 
 // 죽음의 기사
-import UnholyDeathKnightAI from './specializations/deathknight/UnholyDeathKnightAI';
-import FrostDeathKnightAI from './specializations/deathknight/FrostDeathKnightAI';
-import BloodDeathKnightAI from './specializations/deathknight/BloodDeathKnightAI';
+import UnholyDeathKnightAI from './specializations/deathknight/UnholyDeathKnightAI.js';
+import FrostDeathKnightAI from './specializations/deathknight/FrostDeathKnightAI.js';
+import BloodDeathKnightAI from './specializations/deathknight/BloodDeathKnightAI.js';
 
 // 주술사
-import ElementalShamanAI from './specializations/shaman/ElementalShamanAI';
-import EnhancementShamanAI from './specializations/shaman/EnhancementShamanAI';
-import RestorationShamanAI from './specializations/shaman/RestorationShamanAI';
+import ElementalShamanAI from './specializations/shaman/ElementalShamanAI.js';
+import EnhancementShamanAI from './specializations/shaman/EnhancementShamanAI.js';
+import RestorationShamanAI from './specializations/shaman/RestorationShamanAI.js';
 
 // 마법사
-import FireMageAI from './specializations/mage/FireMageAI';
-import ArcaneMageAI from './specializations/mage/ArcaneMageAI';
-import FrostMageAI from './specializations/mage/FrostMageAI';
+import FireMageAI from './specializations/mage/FireMageAI.js';
+import ArcaneMageAI from './specializations/mage/ArcaneMageAI.js';
+import FrostMageAI from './specializations/mage/FrostMageAI.js';
 
 // 흑마법사
-import AfflictionWarlockAI from './specializations/warlock/AfflictionWarlockAI';
-import DemonologyWarlockAI from './specializations/warlock/DemonologyWarlockAI';
-import DestructionWarlockAI from './specializations/warlock/DestructionWarlockAI';
+import AfflictionWarlockAI from './specializations/warlock/AfflictionWarlockAI.js';
+import DemonologyWarlockAI from './specializations/warlock/DemonologyWarlockAI.js';
+import DestructionWarlockAI from './specializations/warlock/DestructionWarlockAI.js';
 
 // 수도사
-import BrewmasterMonkAI from './specializations/monk/BrewmasterMonkAI';
-import MistweaverMonkAI from './specializations/monk/MistweaverMonkAI';
-import WindwalkerMonkAI from './specializations/monk/WindwalkerMonkAI';
+import BrewmasterMonkAI from './specializations/monk/BrewmasterMonkAI.js';
+import MistweaverMonkAI from './specializations/monk/MistweaverMonkAI.js';
+import WindwalkerMonkAI from './specializations/monk/WindwalkerMonkAI.js';
 
 // 드루이드
-import BalanceDruidAI from './specializations/druid/BalanceDruidAI';
-import FeralDruidAI from './specializations/druid/FeralDruidAI';
-import GuardianDruidAI from './specializations/druid/GuardianDruidAI';
-import RestorationDruidAI from './specializations/druid/RestorationDruidAI';
+import BalanceDruidAI from './specializations/druid/BalanceDruidAI.js';
+import FeralDruidAI from './specializations/druid/FeralDruidAI.js';
+import GuardianDruidAI from './specializations/druid/GuardianDruidAI.js';
+import RestorationDruidAI from './specializations/druid/RestorationDruidAI.js';
 
 // 악마사냥꾼
-import HavocDemonHunterAI from './specializations/demonhunter/HavocDemonHunterAI';
-import VengeanceDemonHunterAI from './specializations/demonhunter/VengeanceDemonHunterAI';
+import HavocDemonHunterAI from './specializations/demonhunter/HavocDemonHunterAI.js';
+import VengeanceDemonHunterAI from './specializations/demonhunter/VengeanceDemonHunterAI.js';
 
 // 기원사 - 아직 구현 안됨
-// import DevastationEvokerAI from './specializations/evoker/DevastationEvokerAI';
-// import PreservationEvokerAI from './specializations/evoker/PreservationEvokerAI';
-// import AugmentationEvokerAI from './specializations/evoker/AugmentationEvokerAI';
+// import DevastationEvokerAI from './specializations/evoker/DevastationEvokerAI.js';
+// import PreservationEvokerAI from './specializations/evoker/PreservationEvokerAI.js';
+// import AugmentationEvokerAI from './specializations/evoker/AugmentationEvokerAI.js';
 
-import APLData from './apl/APLData';
+import APLData from './apl/APLData.js';
 
 class SpecializationAIFactory {
   constructor() {

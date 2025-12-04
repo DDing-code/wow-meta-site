@@ -62,19 +62,19 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
+import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase.js';
 
 // ⚠️ TODO: 스킬 데이터 import 변경 (Step 1)
 // - arcaneMageSkills → 실제 전문화 스킬 변수명 (예: fireMageSkills, frostMageSkills)
 // - '../data/arcaneMageSkillData' → 실제 스킬 데이터 파일 경로
-import { arcaneMageSkills as skillData} from '../data/arcaneMageSkillData';
+import { arcaneMageSkills as skillData} from '../data/arcaneMageSkillData.js';
 import styles from './DevastationEvokerGuide.module.css';
-import moduleEventBus from '../services/ModuleEventBus';
-import aiFeedbackService from '../services/AIFeedbackService';
-import externalGuideCollector from '../services/ExternalGuideCollector';
-import realtimeGuideUpdater from '../services/RealtimeGuideUpdater';
-import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer';
-import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import moduleEventBus from '../services/ModuleEventBus.js';
+import aiFeedbackService from '../services/AIFeedbackService.js';
+import externalGuideCollector from '../services/ExternalGuideCollector.js';
+import realtimeGuideUpdater from '../services/RealtimeGuideUpdater.js';
+import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer.js';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons.js';
 import wowheadDescriptions from '../data/wowhead-descriptions.json';
 
 // ⚠️ TODO: 클래스 색상 테마 변경 (Step 2)

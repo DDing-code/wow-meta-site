@@ -1,8 +1,8 @@
 // 스킬 아이콘 컴포넌트
 import React, { useState, useEffect } from 'react';
-import { getSkillIcon } from '../data/skillIcons';
-import { getVerifiedIconUrl, getSmartIconUrl } from '../utils/wowheadIconFetcher';
-import { wowheadIconMapping } from '../data/wowheadIconMapping';
+import { getSkillIcon } from '../data/skillIcons.js';
+import { getVerifiedIconUrl, getSmartIconUrl } from '../utils/wowheadIconFetcher.js';
+import { wowheadIconMapping } from '../data/wowheadIconMapping.js';
 import './SkillIcon.css';
 
 // 기본 Wowhead 아이콘 URL (폴백용)
@@ -33,6 +33,7 @@ const SkillIcon = ({
   const [showTooltip, setShowTooltip] = useState(false);
 
   useEffect(() => {
+    console.log('[SkillIcon] Props:', { skillId, skillName, iconName, classType });
     loadIcon();
   }, [skillId, skillName, iconName, size, classType]);
 
@@ -44,51 +45,55 @@ const SkillIcon = ({
     try {
       let finalIconUrl = '';
 
-      // 1. 먼저 wowheadIconMapping에서 찾기 (가장 완전한 매핑 - 760개)
-      if (skillId && wowheadIconMapping[skillId]) {
+      // 1. 먼저 iconName prop 사용 (skillData.icon에서 온 정확한 값 - 최우선)
+      console.log('[SkillIcon] Step 1 - iconName prop:', iconName);
+      if (iconName && iconName !== 'inv_misc_questionmark') {
+        const cleanIconName = iconName.replace('.tga', '').toLowerCase();
+        finalIconUrl = `https://wow.zamimg.com/images/wow/icons/large/${cleanIconName}.jpg`;
+        console.log('[SkillIcon] Step 1 Success (iconName):', finalIconUrl);
+      }
+      // 2. iconName이 없으면 wowheadIconMapping에서 찾기 (fallback - 760개)
+      else if (skillId && wowheadIconMapping[skillId]) {
+        console.log('[SkillIcon] Step 2 - wowheadIconMapping[' + skillId + ']:', wowheadIconMapping[skillId]);
         const cleanIconName = wowheadIconMapping[skillId].toLowerCase();
         finalIconUrl = `https://wow.zamimg.com/images/wow/icons/large/${cleanIconName}.jpg`;
+        console.log('[SkillIcon] Step 2 Success (wowheadIconMapping):', finalIconUrl);
       }
-      // 2. wowheadIconMapping에 없으면 getVerifiedIconUrl로 찾기 (iconMapping.json - 437개)
+      // 3. wowheadIconMapping에도 없으면 getVerifiedIconUrl로 찾기 (iconMapping.json - 437개)
       else if (skillId) {
         // skillId를 숫자로 변환 시도 (문자열로 된 ID도 처리)
         const numericSkillId = typeof skillId === 'string' ? parseInt(skillId) : skillId;
 
         if (!isNaN(numericSkillId)) {
           finalIconUrl = getVerifiedIconUrl(numericSkillId);
+          console.log('[SkillIcon] Step 3 (getVerifiedIconUrl):', finalIconUrl);
 
-          // 3. 검증된 아이콘이 없으면 스킬 이름으로 스마트 매칭
+          // 4. 검증된 아이콘이 없으면 스킬 이름으로 스마트 매칭
           if (finalIconUrl.includes('inv_misc_questionmark') && skillName) {
             finalIconUrl = getSmartIconUrl(numericSkillId, skillName, classType);
+            console.log('[SkillIcon] Step 4 (getSmartIconUrl):', finalIconUrl);
           }
 
-          // 4. 그래도 없으면 기존 매핑 사용
+          // 5. 그래도 없으면 기존 매핑 사용
           if (finalIconUrl.includes('inv_misc_questionmark')) {
             const iconMapping = getSkillIcon(classType, numericSkillId);
             if (iconMapping && iconMapping !== 'inv_misc_questionmark.tga') {
               const cleanIconName = iconMapping.replace('.tga', '').toLowerCase();
               finalIconUrl = `https://wow.zamimg.com/images/wow/icons/large/${cleanIconName}.jpg`;
+              console.log('[SkillIcon] Step 5 (getSkillIcon):', finalIconUrl);
             }
           }
         }
-
-        // 5. 여전히 물음표면 iconName으로 시도
-        if ((!finalIconUrl || finalIconUrl.includes('inv_misc_questionmark')) && iconName && iconName !== 'inv_misc_questionmark') {
-          const cleanIconName = iconName.replace('.tga', '').toLowerCase();
-          finalIconUrl = `https://wow.zamimg.com/images/wow/icons/large/${cleanIconName}.jpg`;
-        }
-      } else if (iconName && iconName !== 'inv_misc_questionmark') {
-        // 직접 아이콘 이름으로 로드 (Wowhead URL 사용)
-        const cleanIconName = iconName.replace('.tga', '').toLowerCase();
-        finalIconUrl = `https://wow.zamimg.com/images/wow/icons/large/${cleanIconName}.jpg`;
       } else {
         // 기본 아이콘 (Wowhead URL)
         finalIconUrl = 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
+        console.log('[SkillIcon] Fallback to question mark');
       }
 
+      console.log('[SkillIcon] Final URL:', finalIconUrl);
       setIconUrl(finalIconUrl);
     } catch (err) {
-      console.error('아이콘 로드 실패:', err);
+      console.error('[SkillIcon] 아이콘 로드 실패:', err);
       setIconUrl('https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg');
       setError(true);
     } finally {

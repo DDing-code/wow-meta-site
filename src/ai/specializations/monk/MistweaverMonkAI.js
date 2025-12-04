@@ -1,5 +1,5 @@
 // 수도사 운무 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class MistweaverMonkAI extends SpecializationAI {
   constructor() {

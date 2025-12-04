@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import styled, { keyframes, css } from 'styled-components';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
-import SkillDetailModal from '../components/SkillDetailModal';
+import { useSkillHub } from '../contexts/SkillHubContext';
+import SkillDetailModal from '../components/SkillDetailModal.js';
 import { FaSearch, FaTh, FaList, FaFilter, FaSortAmountDown, FaSortAmountUp } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// twwS3SkillDatabase에서 classData 생성
+// classData 정의
 const classDataFromDB = {
   WARRIOR: { koreanName: '전사', color: '#C79C6E' },
   PALADIN: { koreanName: '성기사', color: '#F58CBA' },
@@ -20,16 +20,6 @@ const classDataFromDB = {
   DEMONHUNTER: { koreanName: '악마사냥꾼', color: '#A330C9' },
   DEATHKNIGHT: { koreanName: '죽음의 기사', color: '#C41F3B' },
   EVOKER: { koreanName: '기원사', color: '#33937F' }
-};
-
-// 데이터베이스 통계 계산
-const databaseStats = {
-  totalSkills: twwS3SkillDatabase.length,
-  enhancedSkills: twwS3SkillDatabase.filter(skill => skill.coefficient).length,
-  classBreakdown: Object.keys(classDataFromDB).reduce((acc, className) => {
-    acc[className] = twwS3SkillDatabase.filter(skill => skill.class === className).length;
-    return acc;
-  }, {})
 };
 
 // WoW 스타일 애니메이션
@@ -455,6 +445,9 @@ const StatsBar = styled.div`
 `;
 
 const WoWSpellDatabasePage = () => {
+  // SkillHub에서 스킬 데이터 가져오기
+  const { skills } = useSkillHub();
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedClass, setSelectedClass] = useState('all');
   const [selectedSpec, setSelectedSpec] = useState('all');
@@ -465,16 +458,17 @@ const WoWSpellDatabasePage = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [skillsData] = useState(() => {
-    // 중복 제거를 위한 고유 스킬 저장
+
+  // 중복 제거를 위한 고유 스킬 데이터
+  const skillsData = useMemo(() => {
     const uniqueSkills = new Map();
-    (twwS3SkillDatabase || []).forEach(skill => {
+    (skills || []).forEach(skill => {
       if (!uniqueSkills.has(skill.id)) {
         uniqueSkills.set(skill.id, skill);
       }
     });
     return Array.from(uniqueSkills.values());
-  });
+  }, [skills]);
 
   const itemsPerPage = viewMode === 'grid' ? 24 : 50;
 
@@ -594,7 +588,7 @@ const WoWSpellDatabasePage = () => {
     <PageContainer>
       <Header>
         <h1>WoW 스킬 데이터베이스</h1>
-        <p className="subtitle">TWW Season 3 · 패치 11.2 · {databaseStats?.totalSkills || 0} Skills</p>
+        <p className="subtitle">TWW Season 3 · 패치 11.2 · {skills?.length || 0} Skills</p>
       </Header>
 
       <ControlPanel>

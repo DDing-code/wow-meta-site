@@ -1,9 +1,9 @@
 // AI 코디네이터 - 모든 직업 전문가 AI 관리 및 학습 조율
-import WarriorExpertAI from './experts/WarriorExpertAI';
-import ShamanExpertAI from './experts/ShamanExpertAI';
-import LogParserService from '../services/LogParserService';
-import WowDatabaseService from '../services/WowDatabaseService';
-import { patch11_2ClassChanges, currentPatch } from '../data/patch11_2_data';
+import WarriorExpertAI from './experts/WarriorExpertAI.js';
+import ShamanExpertAI from './experts/ShamanExpertAI.js';
+import LogParserService from '../services/LogParserService.js';
+import WowDatabaseService from '../services/WowDatabaseService.js';
+import { patch11_2ClassChanges, currentPatch } from '../data/patch11_2_data.js';
 
 class AICoordinator {
   constructor() {

@@ -1,5 +1,5 @@
 // 수도사 양조사 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class BrewmasterMonkAI extends SpecializationAI {
   constructor() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { gameIcons, classIcons, WowIcon } from '../utils/wowIcons';
+import { gameIcons, classIcons, WowIcon } from '../utils/wowIcons.js';
 
 const Container = styled.div`
   padding: 2rem 0;

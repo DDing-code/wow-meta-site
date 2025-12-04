@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "generatedAt": "2025-12-03T04:25:14.565Z",
+    "source": "Obsidian Knowledge Base - Synergies",
+    "totalSynergies": 17,
+    "byType": {
+      "Combo-Sequences": 7,
+      "buff-setup": 1,
+      "activation": 1,
+      "buff-application": 1,
+      "Skill-Skill": 3,
+      "skill-skill": 1,
+      "skill-buff": 1,
+      "burst-window": 1,
+      "buff-apply": 1
+    },
+    "byClass": {
+      "DemonHunter": 14,
+      "Hunter": 3
+    }
+  },
+  "synergies": {
+    "Aldrachi_EssenceBreakWindow": {
+      "id": "Aldrachi_EssenceBreakWindow",
+      "name": "알드라치 정수파쇄 윈도우",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Aldrachi Reaver",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\Aldrachi-EssenceBreakWindow.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "Aldrachi_Opener": {
+      "id": "Aldrachi_Opener",
+      "name": "알드라치 오프너",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Aldrachi Reaver",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\Aldrachi-Opener.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "FelScarred_MetaBurst": {
+      "id": "FelScarred_MetaBurst",
+      "name": "지옥상흔 메타 버스트",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Fel-Scarred",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\FelScarred-MetaBurst.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "FelScarred_Opener": {
+      "id": "FelScarred_Opener",
+      "name": "지옥상흔 오프너",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Fel-Scarred",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\FelScarred-Opener.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "알드라치_오프너_콤보": {
+      "id": "알드라치_오프너_콤보",
+      "name": "알드라치-오프너-콤보",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Aldrachi Reaver",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\알드라치-오프너-콤보.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "정수파쇄윈도우_콤보": {
+      "id": "정수파쇄윈도우_콤보",
+      "name": "정수파쇄윈도우-콤보",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\정수파쇄윈도우-콤보.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "지옥상흔_메타버스트_콤보": {
+      "id": "지옥상흔_메타버스트_콤보",
+      "name": "지옥상흔-메타버스트-콤보",
+      "type": "combo-sequence",
+      "synergyType": "Combo-Sequences",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Fel-Scarred",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Combo-Sequences\\지옥상흔-메타버스트-콤보.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "복수의퇴각_안광_시너지": {
+      "id": "복수의퇴각_안광_시너지",
+      "name": "복수의퇴각-안광",
+      "type": "synergy",
+      "synergyType": "skill-skill",
+      "participants": [
+        "복수의퇴각",
+        "안광"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\복수의퇴각-안광-시너지.md",
+        "lastUpdate": "2025-11-27T00:00:00.000Z"
+      }
+    },
+    "안광_악마화_시너지": {
+      "id": "안광_악마화_시너지",
+      "name": "안광-악마화",
+      "type": "synergy",
+      "synergyType": "skill-buff",
+      "participants": [
+        "안광",
+        "악마화"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\안광-악마화-시너지.md",
+        "lastUpdate": "2025-11-27T00:00:00.000Z"
+      }
+    },
+    "파괴자의글레이브_전투의전율_시너지": {
+      "id": "파괴자의글레이브_전투의전율_시너지",
+      "name": "파괴자의글레이브-전투의전율",
+      "type": "synergy",
+      "synergyType": "buff-application",
+      "participants": [
+        "파괴자의글레이브",
+        "전투의전율"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": "Aldrachi Reaver",
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Buff\\파괴자의글레이브-전투의전율-시너지.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "날카로운사격_광기_살상명령_시너지": {
+      "id": "날카로운사격_광기_살상명령_시너지",
+      "name": "날카로운사격-광기-살상명령",
+      "type": "synergy",
+      "synergyType": "Skill-Skill",
+      "participants": [],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "11.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\날카로운사격-광기-살상명령-시너지.md",
+        "lastUpdate": ""
+      }
+    },
+    "야생의부름_검은화살_시너지": {
+      "id": "야생의부름_검은화살_시너지",
+      "name": "야생의부름-검은화살",
+      "type": "synergy",
+      "synergyType": "Skill-Skill",
+      "participants": [],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": "어둠순찰자",
+      "importance": 3,
+      "patch": "11.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\야생의부름-검은화살-시너지.md",
+        "lastUpdate": ""
+      }
+    },
+    "야수의격노_울음_이중쇄도_시너지": {
+      "id": "야수의격노_울음_이중쇄도_시너지",
+      "name": "야수의격노-울음-이중쇄도",
+      "type": "synergy",
+      "synergyType": "Skill-Skill",
+      "participants": [],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": "무리인도자",
+      "importance": 3,
+      "patch": "11.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\야수의격노-울음-이중쇄도-시너지.md",
+        "lastUpdate": ""
+      }
+    },
+    "정수파쇄_칼춤_시너지": {
+      "id": "정수파쇄_칼춤_시너지",
+      "name": "정수파쇄-칼춤",
+      "type": "synergy",
+      "synergyType": "burst-window",
+      "participants": [
+        "정수파쇄",
+        "칼춤",
+        "죽음의휩쓸기"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\정수파쇄-칼춤-시너지.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "파괴자의글레이브_혼돈의일격_시너지": {
+      "id": "파괴자의글레이브_혼돈의일격_시너지",
+      "name": "파괴자의글레이브-혼돈의일격",
+      "type": "synergy",
+      "synergyType": "buff-apply",
+      "participants": [
+        "파괴자의글레이브",
+        "혼돈의일격"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "11.2.5",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\02-SYNERGY\\Skill-Skill\\파괴자의글레이브-혼돈의일격-시너지.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    }
+  }
+}

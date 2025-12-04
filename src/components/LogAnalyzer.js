@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { gameIcons, WowIcon } from '../utils/wowIcons';
+import { gameIcons, WowIcon } from '../utils/wowIcons.js';
 import { FaTimes } from 'react-icons/fa';
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 

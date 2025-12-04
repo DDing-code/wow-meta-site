@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { WowIcon, getWowIcon } from '../utils/wowIcons';
+import { WowIcon, getWowIcon } from '../utils/wowIcons.js';
 
 const Container = styled.div`
   margin: 2rem 0;

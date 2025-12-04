@@ -1,5 +1,5 @@
 // 죽음의 기사 혈기 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class BloodDeathKnightAI extends SpecializationAI {
   constructor() {

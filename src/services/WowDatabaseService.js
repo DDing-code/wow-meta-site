@@ -2,7 +2,7 @@
 // WoW Inven, Wowhead 한국어 API 연동
 
 import axios from 'axios';
-import { koreanTranslations } from '../data/koreanTranslations';
+import { koreanTranslations } from '../data/koreanTranslations.js';
 
 class WowDatabaseService {
   constructor() {

@@ -1,4 +1,10 @@
-// WoW 전문화 가이드 데이터 (TWW 시즌3 11.2 패치)
+// WoW 전문화 가이드 데이터 (TWW 시즌3 11.2.5 패치)
+// 레이드/장비 데이터 제거됨 - 2025-11-28
+// 스킬/로테이션/특성 데이터에 집중
+//
+// 📌 필수 참조 문서:
+//   - C:/wowmeta/WoW-Meta-Knowledge/99-META/Guide-of-Guides.md (전체 시스템 이해)
+//   - C:/wowmeta/WoW-Meta-Knowledge/99-META/Guide-Generation-Instructions.md (가이드 생성 지침)
 
 export const guideData = {
   hunter: {
@@ -6,7 +12,7 @@ export const guideData = {
       className: '사냥꾼',
       specName: '야수',
       specIcon: 'https://wow.zamimg.com/images/wow/icons/large/ability_hunter_bestialdiscipline.jpg',
-      patch: '11.2',
+      patch: '11.2.5',
       overview: {
         role: '원거리 물리 딜러',
         tier: 'S',
@@ -52,22 +58,16 @@ export const guideData = {
         raid: {
           heroTalent: '무리의 지도자',
           classTree: [
-            // 클래스 특성 트리 데이터
             { id: 19290, points: 1, tier: 1 },
             { id: 19291, points: 1, tier: 1 },
             { id: 19292, points: 2, tier: 2 }
-            // ... 더 많은 특성
           ],
           specTree: [
-            // 전문화 특성 트리 데이터
             { id: 53270, points: 1, tier: 1 },
             { id: 53271, points: 2, tier: 2 }
-            // ... 더 많은 특성
           ],
           heroTree: [
-            // 영웅 특성 트리 데이터
             { id: 90001, points: 1, tier: 1 }
-            // ... 더 많은 특성
           ],
           loadoutString: 'BwPAvcSwFu2eTjpJR0kKJJJRSSSSjEAAAAAAAAAAAAAQSSSSSSSSJJJJJJJRSSSSkkEJRSA',
           description: '단일 대상 레이드 보스에 최적화된 빌드'
@@ -156,95 +156,9 @@ export const guideData = {
           ]
         }
       },
-      gear: {
-        raid: {
-          weapons: [
-            {
-              name: '네루비안 파멸사격총',
-              icon: 'inv_firearm_2h_nerubian_c_01',
-              source: '네루브-아르 궁전 - 실크스트라이크',
-              quality: 'epic',
-              ilvl: 639
-            }
-          ],
-          trinkets: [
-            {
-              name: '파도세이지의 코덱스',
-              icon: 'inv_offhand_1h_artifactskulloferedar_d_06',
-              source: '네루브-아르 궁전 - 라샤난',
-              quality: 'epic',
-              ilvl: 639,
-              effect: '주 스탯 증가 및 폭발 효과'
-            },
-            {
-              name: '포자걸린 고동치는 검은 피',
-              icon: 'inv_misc_food_legion_gooslime_pool',
-              source: '신화+ 던전 금고',
-              quality: 'epic',
-              ilvl: 636,
-              effect: '가속 증가 프록'
-            }
-          ],
-          armor: {
-            head: { name: '친족 살해자의 투구', source: '네루브-아르 궁전', ilvl: 639 },
-            shoulder: { name: '친족 살해자의 어깨', source: '네루브-아르 궁전', ilvl: 639 },
-            chest: { name: '친족 살해자의 흉갑', source: '네루브-아르 궁전', ilvl: 639 },
-            hands: { name: '친족 살해자의 장갑', source: '네루브-아르 궁전', ilvl: 639 },
-            waist: { name: '발화성 화약 허리띠', source: '제작', ilvl: 636 },
-            legs: { name: '친족 살해자의 다리보호구', source: '네루브-아르 궁전', ilvl: 639 },
-            feet: { name: '잊혀진 추적자의 발걸음', source: '신화+ 던전', ilvl: 636 }
-          }
-        },
-        mythicplus: {
-          // 신화+ 전용 장비
-        },
-        consumables: {
-          food: { name: '최고급 잔치', effect: '주 스탯 100 증가', icon: 'inv_misc_food_164_fish_feast' },
-          flask: { name: '궁극의 힘의 영약', effect: '민첩 238 증가', icon: 'inv_alchemy_flask_02' },
-          potion: { name: '궁극의 힘의 물약', effect: '민첩 599 증가 (25초)', icon: 'inv_alchemy_potion_02' },
-          rune: { name: '드라코닉 증강의 룬', effect: '주 스탯 153 증가', icon: 'inv_misc_rune_13' },
-          enchants: {
-            chest: '흐르는 빛의 저장고',
-            cloak: '치명타의 권능',
-            legs: '얼어붙은 주문실',
-            boots: '수호자의 보폭',
-            rings: '저주받은 가속',
-            weapon: '빛의 권위'
-          }
-        }
-      },
-      mythicplus: {
-        tips: [
-          '폭발 주간에는 펫으로 안전하게 처리',
-          '격노 주간에는 평온의 사격 활용',
-          '경화 주간에는 광폭한 야수로 버스트',
-          '인터럽트는 역회전 사격 활용'
-        ],
-        routes: {
-          '미스트': '첫 번째 보스 전 광역 풀링, 쿨다운 아껴두기',
-          '공성': '두 번째 구간 대규모 풀링 시 광포한 야수 사용',
-          '도시': '마지막 구간 폭발물 펫으로 처리'
-        }
-      },
-      raid: {
-        nerubAr: {
-          ulgrax: {
-            tips: ['이동 페이즈에서 100% 딜 가능', '쫄 페이즈 복수의 명령 활용'],
-            positioning: '중거리 유지, 펫 위치 조정 필요'
-          },
-          bloodbound: {
-            tips: ['분리 시 표적 전환 빠르게', '이동 중 딜 손실 없음'],
-            positioning: '보스 간 중앙 위치'
-          },
-          sikran: {
-            tips: ['이동 기믹 중 딜 유지', '분신 페이즈 광역 딜'],
-            positioning: '안전 지대 확보 후 딜'
-          }
-        }
-      },
       simcApl: `
 # SimulationCraft APL for Beast Mastery Hunter
-# TWW Season 3 (11.2)
+# TWW Season 3 (11.2.5)
 
 actions.precombat=flask
 actions.precombat+=/augmentation
@@ -295,7 +209,6 @@ actions.rotation+=/dire_beast
           code: '#showtooltip 야수의 격노\n/cast [조건] 야수의 격노\n/cast [조건] 광폭한 야수\n/cast [조건] 야생의 부름\n/use 13\n/use 14'
         }
       ],
-      // WFK 레벨 최적화 데이터
       wfkOptimization: {
         batchWindow: '0.1초',
         latencyCompensation: '20-30ms 예측',
@@ -310,7 +223,6 @@ actions.rotation+=/dire_beast
           { stat: '특화', value: '35%', effect: '펫 데미지 소프트캐', priority: 'low' }
         ]
       },
-      // 숨겨진 메커니즘 (WFK 전용)
       hiddenMechanics: [
         {
           name: '광기 스냅샷팅',
@@ -339,22 +251,11 @@ actions.rotation+=/dire_beast
         }
       ]
     },
-    // 다른 전문화 추가 예정
-    'marksmanship': {
-      // 사격 사냥꾼 데이터
-    },
-    'survival': {
-      // 생존 사냥꾼 데이터
-    }
+    'marksmanship': {},
+    'survival': {}
   },
-  // 다른 클래스들
-  warrior: {
-    // 전사 데이터
-  },
-  paladin: {
-    // 성기사 데이터
-  }
-  // ... 나머지 클래스들
+  warrior: {},
+  paladin: {}
 };
 
 export default guideData;

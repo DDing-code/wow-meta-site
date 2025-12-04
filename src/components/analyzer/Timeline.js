@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { WowIcon, getWowIcon } from '../../utils/wowIcons';
+import { WowIcon, getWowIcon } from '../../utils/wowIcons.js';
 
 const Container = styled(motion.div)`
   background: rgba(37, 42, 61, 0.5);

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import NewsSection from '../components/NewsSection';
-import RecentGuidesSection from '../components/RecentGuidesSection';
+import NewsSection from '../components/NewsSection.js';
+import RecentGuidesSection from '../components/RecentGuidesSection.js';
 
 const Container = styled.div`
   padding: 0;

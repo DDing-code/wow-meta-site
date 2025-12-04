@@ -175,7 +175,7 @@ const classData = {
       spec: '파멸',
       color: classColors.demonhunter,
       icon: '🔥',
-      ready: false,
+      ready: true,
       path: '/guide/demonhunter/havoc'
     },
     {

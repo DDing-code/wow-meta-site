@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import './AdvancedSpellDatabasePage.css';
-import { twwS3SkillDatabase, heroTalentsData as heroTalentsFromDB, classData as classDataFromDB, databaseStats } from '../data/twwS3SkillDatabase';
-import SkillDetailModal from '../components/SkillDetailModal';
+import { twwS3SkillDatabase, heroTalentsData as heroTalentsFromDB, classData as classDataFromDB, databaseStats } from '../data/twwS3SkillDatabase.js';
+import SkillDetailModal from '../components/SkillDetailModal.js';
 
 // 클래스 데이터 (DB에서 가져온 데이터 사용)
 const classData = classDataFromDB || {

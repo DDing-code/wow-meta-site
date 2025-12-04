@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { addSkillToDB, getSkillFromDB, updateSkillInDB, getAllSkillsByClass } from '../../utils/skillDBManager';
+import { addSkillToDB, getSkillFromDB, updateSkillInDB, getAllSkillsByClass } from '../../utils/skillDBManager.js';
 
 const GuideWithAutoDBIntegration = ({ className, specName }) => {
   const [dbSkills, setDbSkills] = useState({});

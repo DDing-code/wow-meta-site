@@ -1,0 +1,58 @@
+{
+  "arcanemissiles": {
+    "id": 5143,
+    "icon": "spell_nature_starfall"
+  },
+  "arcaneblast": {
+    "id": 30451,
+    "icon": "spell_arcane_blast"
+  },
+  "arcanebarrage": {
+    "id": 44425,
+    "icon": "ability_mage_arcanebarrage"
+  },
+  "arcaneorb": {
+    "id": 153626,
+    "icon": "spell_mage_arcaneorb"
+  },
+  "arcaneexplosion": {
+    "id": 1449,
+    "icon": "spell_nature_wispsplode"
+  },
+  "touchofthemagi": {
+    "id": 210824,
+    "icon": "ability_mage_netherwindpresence"
+  },
+  "evocation": {
+    "id": 12051,
+    "icon": "spell_nature_purge"
+  },
+  "arcanecharges": {
+    "id": 116014,
+    "icon": "spell_mage_runeofpower"
+  },
+  "presenceofmind": {
+    "id": 205025,
+    "icon": "spell_nature_enchantarmor"
+  },
+  "invisibility": {
+    "id": 66,
+    "icon": "ability_mage_invisibility"
+  },
+  "timewarp": {
+    "id": 80353,
+    "icon": "ability_mage_timewarp"
+  },
+  "arcaneintellect": {
+    "id": 1459,
+    "icon": "spell_holy_magicalsentry"
+  },
+  "shimmer": {
+    "id": 212653,
+    "icon": "spell_arcane_massdispel"
+  },
+  "netherprecision": {
+    "id": 414658,
+    "icon": "spell_fire_bluefire"
+  }
+}

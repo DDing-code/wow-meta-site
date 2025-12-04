@@ -1,7 +1,7 @@
 // AI 페르소나 기반 가이드 생성 시스템 V2 - BeastMasteryLayoutIntegrated 기반
 import personaManager from './PersonaManager.js';
 import moduleEventBus from '../../services/ModuleEventBus.js';
-import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase';
+import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase.js';
 
 class PersonaGuideGeneratorV2 {
   constructor() {

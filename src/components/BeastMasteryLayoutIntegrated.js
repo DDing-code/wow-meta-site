@@ -2,14 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
 import styles from './BeastMasteryGuide.module.css';
-import moduleEventBus from '../services/ModuleEventBus';
-import aiFeedbackService from '../services/AIFeedbackService';
-import externalGuideCollector from '../services/ExternalGuideCollector';
-import realtimeGuideUpdater from '../services/RealtimeGuideUpdater';
-import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer';
-import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import moduleEventBus from '../services/ModuleEventBus.js';
+import aiFeedbackService from '../services/AIFeedbackService.js';
+import externalGuideCollector from '../services/ExternalGuideCollector.js';
+import realtimeGuideUpdater from '../services/RealtimeGuideUpdater.js';
+import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer.js';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons.js';
 import wowheadDescriptions from '../data/wowhead-descriptions.json';
 
 // Guide 페이지의 통일된 테마 (BeastMasteryMaxrollGuideV2에서 가져온 레이아웃)

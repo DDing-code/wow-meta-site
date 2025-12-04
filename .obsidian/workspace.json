@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "01a908e711b5d6be",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8984e9a4c7180a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff424b622959b191",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "771eb62e0b18697c",
+    "type": "split",
+    "children": [
+      {
+        "id": "95a8202e3e9b0548",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c905d92242d5d83",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "2319633b9c1f0e4e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#악마사냥꾼",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "876558fed1bdd2a1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5403c456ab8e99d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a650d518f6b2008",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5db63bda568fe90d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "무제 1.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "무제 1 의 백링크"
+            }
+          },
+          {
+            "id": "96ff780b05175727",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "무제 1.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "무제 1 의 나가는 링크"
+            }
+          },
+          {
+            "id": "14101e781ccac818",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "fed9c80baf71e459",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "무제 1.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "무제 1 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "templates:템플릿 삽입": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "ff424b622959b191",
+  "lastOpenFiles": [
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/감금.md",
+    "src/data/guides/demonhunter.json.tmp.116896.1763499867131",
+    "src/data/guides/demonhunter.json.tmp.116896.1763499820200",
+    "database-builder/tww-s3-complete-database-enhanced.json",
+    "src/generators/SkillAutoResolver.js.tmp.116896.1763493614375",
+    "src/generators/SpecDataCollector.js.tmp.116896.1763493590616",
+    "src/generators/SpecDataCollector.js.tmp.116896.1763492617898",
+    "src/generators/SpecDataCollector.js.tmp.107272.1763485486273",
+    "src/generators/SpecDataCollector.js.tmp.107272.1763485460429",
+    "WoW-Meta-Knowledge/01-스킬-DB/Evokers/환희의-폭발.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/침묵의-인장.md",
+    "src/data/guides/demonhunter.json.tmp.26404.1763428779856",
+    "src/data/kb-skills.json",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/글레이브-투척.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/고문.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/공허의-절단기.md",
+    "WoW-Meta-Knowledge/02-전문화별-가이드/DemonHunters/Havoc-Guide.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/하늘의-칙령.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/흐릿해지기.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/죽음의-휩쓸기.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/영혼-베어내기.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/사슬의-인장.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/DemonHunters/불지옥-일격.md",
+    "node_modules/negotiator/HISTORY.md",
+    "build/icons/INV_Fistofthewhitetiger.png",
+    "build/icons/INV_Fish_StormrayGreen.png",
+    "build/icons/INV_Fish_Stormray.png",
+    "build/icons/INV_Fish_SilverMackerelSilver.png",
+    "build/icons/INV_Fish_SilverMackerelRed.png",
+    "build/icons/INV_Fish_RunescaleKoiPurple.png",
+    "build/icons/INV_Fish_RunescaleKoiGold.png",
+    "build/icons/INV_Fish_OodelfjiskGreen.png",
+    "build/icons/INV_Fish_OodelfjiskBlue.png",
+    "build/icons/INV_Fish_MossgillPerchGreen.png",
+    "node_modules/react-scripts/node_modules/fs-extra/README.md",
+    "WoW-Meta-Knowledge/00-INDEX/_SKILL-INDEX.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Mages/마력의-룬.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Mages.md",
+    "node_modules/methods/README.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/천둥벼락.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/마무리-일격.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/위협의-외침.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/방패-올리기.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/무모한-희생.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/무력화.md",
+    "WoW-Meta-Knowledge/01-스킬-DB/Warriors/소용돌이.md",
+    "WoW-Meta-Knowledge/무제.canvas"
+  ]
+}

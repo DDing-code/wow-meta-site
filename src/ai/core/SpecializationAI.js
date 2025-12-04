@@ -1,7 +1,7 @@
 // 직업 전문화별 AI 에이전트 기본 클래스
 import * as tf from '@tensorflow/tfjs';
-import APLParser from '../apl/APLParser';
-import aplData from '../apl/APLData';
+import APLParser from '../apl/APLParser.js';
+import aplData from '../apl/APLData.js';
 
 class SpecializationAI {
   constructor(className, specName) {

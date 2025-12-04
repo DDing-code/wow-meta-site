@@ -1,9 +1,9 @@
 // WoW 직업별 전문가 AI 시스템
 // 각 직업별 고수 AI가 최신 데이터를 학습하고 공략 업데이트
 
-import { koreanTranslations } from '../data/koreanTranslations';
-import LogParserService from '../services/LogParserService';
-import WowDatabaseService from '../services/WowDatabaseService';
+import { koreanTranslations } from '../data/koreanTranslations.js';
+import LogParserService from '../services/LogParserService.js';
+import WowDatabaseService from '../services/WowDatabaseService.js';
 
 // 기본 클래스 전문가 AI
 class ClassExpertAI {

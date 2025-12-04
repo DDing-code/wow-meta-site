@@ -1,5 +1,5 @@
 // 가이드 React 컴포넌트 빌더 시스템
-import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase';
+import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase.js';
 
 class GuideComponentBuilder {
   constructor() {
@@ -39,10 +39,10 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
-import moduleEventBus from '../services/ModuleEventBus';
-import aiFeedbackService from '../services/AIFeedbackService';
-import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase.js';
+import moduleEventBus from '../services/ModuleEventBus.js';
+import aiFeedbackService from '../services/AIFeedbackService.js';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons.js';
 import wowheadDescriptions from '../data/wowhead-descriptions.json';
 
 // 전역 스타일

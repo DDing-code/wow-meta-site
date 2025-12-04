@@ -1,5 +1,5 @@
 // 전사 보호 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class ProtectionWarriorAI extends SpecializationAI {
   constructor() {

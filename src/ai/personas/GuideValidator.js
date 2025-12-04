@@ -1,5 +1,5 @@
 // 가이드 검증 시스템
-import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase';
+import { twwS3SkillDatabase } from '../../data/twwS3FinalCleanedDatabase.js';
 
 class GuideValidator {
   constructor() {

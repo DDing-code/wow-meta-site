@@ -1,5 +1,5 @@
 // 수도사 전문가 AI 시스템
-import ClassExpertAI from '../ClassExpertAI';
+import ClassExpertAI from '../ClassExpertAI.js';
 
 class MonkExpertAI extends ClassExpertAI {
   constructor(spec) {

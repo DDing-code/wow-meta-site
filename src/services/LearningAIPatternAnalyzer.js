@@ -1,6 +1,6 @@
 // 학습 AI 패턴 분석 시스템
-import moduleEventBus from './ModuleEventBus';
-import aiFeedbackService from './AIFeedbackService';
+import moduleEventBus from './ModuleEventBus.js';
+import aiFeedbackService from './AIFeedbackService.js';
 
 class LearningAIPatternAnalyzer {
   constructor() {

@@ -2,7 +2,7 @@
 // WoW 11.2 패치 - 크아레쉬의 유령 (Undermined)
 // 최신 한국어 번역 적용
 
-import { koreanTranslations } from '../koreanTranslations-11.2';
+import { koreanTranslations } from '../koreanTranslations-11.2.js';
 
 const rogueTranslations = koreanTranslations.rogueAbilities;
 

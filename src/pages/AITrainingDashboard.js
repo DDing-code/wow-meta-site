@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { getKoreanTranslation } from '../data/koreanTranslations';
+import { getKoreanTranslation } from '../data/koreanTranslations.js';
 
 const Container = styled.div`
   padding: 40px;

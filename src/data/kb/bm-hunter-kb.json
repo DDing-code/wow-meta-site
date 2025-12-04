@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "patch": "11.2.5",
+    "season": "The War Within 시즌 3",
+    "tierSet": "Midnight Herald's Pledge (한밤의 전령 서약)",
+    "syncedAt": "2025-12-04T00:00:00.000Z",
+    "sourceFile": "BeastMastery-Expert-Guide-S3.md"
+  },
+  "structured": {
+    "meta": {
+      "heroSpecRecommendation": "Dark Ranger (98% 사용률)",
+      "statPriority": {
+        "darkRanger": "가속 ≥ 치명타 > 다재다능 > 특화",
+        "packLeader": "가속 > 특화/치명타 > 다재다능"
+      },
+      "topTrinkets": [
+        { "name": "Yasahm the Riftbreaker", "usage": "53.4%" },
+        { "name": "Unyielding Netherprism", "usage": "51.5%" },
+        { "name": "Araz's Ritual Forge", "usage": "51.5%" }
+      ],
+      "topStats": {
+        "haste": "33%",
+        "crit": "40%",
+        "versatility": "21%",
+        "mastery": "24%"
+      }
+    },
+    "darkRanger": {
+      "deathblowTimings": ["16초", "12초", "8초", "4초", "0초"],
+      "coreRules": [
+        "Deathblow 프록 즉시 소모",
+        "Call of the Wild 중 Cobra Shot 금지",
+        "Frenzy 유지보다 Black Arrow 우선"
+      ],
+      "smokeScreen": "Exhilaration = Survival of the Fittest 충전 공유 (실질 3충전)",
+      "tips": [
+        { "tip": "Deathblow 프록 즉시 소모: Call of the Wild 중 4초마다 100% 보장 (16, 12, 8, 4, 0초)", "importance": 5 },
+        { "tip": "Black Arrow 업타임 최대화: Bleak Powder DoT 유지 = DPS의 핵심", "importance": 5 },
+        { "tip": "Call of the Wild 중 Cobra Shot 금지: GCD 낭비, Deathblow 놓침", "importance": 5 },
+        { "tip": "Withering Fire 바라지 관리: 4PC로 추가 Black Arrow 획득 기회", "importance": 4 }
+      ],
+      "priorities": [
+        { "rank": 1, "skill": "Black Arrow", "condition": "Deathblow 발동", "reason": "최우선, 발동 즉시 소비 필수" },
+        { "rank": 2, "skill": "Bestial Wrath", "condition": "CotW 30초 내면 홀드", "reason": "쿨다운 정렬" },
+        { "rank": 3, "skill": "Bloodshed", "condition": "쿨다운", "reason": "1분 쿨다운, BW와 함께" },
+        { "rank": 4, "skill": "Call of the Wild", "condition": "쿨다운", "reason": "버스트 윈도우 시작" },
+        { "rank": 5, "skill": "Kill Command", "condition": "-", "reason": "Deathblow 20% 발동" },
+        { "rank": 6, "skill": "Barbed Shot", "condition": "2충전 근접", "reason": "Deathblow 50% 발동" },
+        { "rank": 7, "skill": "Cobra Shot", "condition": "필러", "reason": "CotW 중 사용 금지!" }
+      ],
+      "opener": [
+        "선풀 Barbed Shot",
+        "Bestial Wrath + 종족 스킬",
+        "Bloodshed",
+        "Call of the Wild + 물약",
+        "Black Arrow (16초 Deathblow)",
+        "Kill Command",
+        "Barbed Shot",
+        "Black Arrow (12초 Deathblow)",
+        "... 반복"
+      ]
+    },
+    "packLeader": {
+      "howlThreshold": 16,
+      "doubleStampedeWindow": 12,
+      "coreRules": [
+        "Howl ≤16초에서만 Bestial Wrath",
+        "Kill Command 홀드: Lead From the Front 중 Howl 임박 시",
+        "Frenzy 3스택 유지 필수"
+      ],
+      "stampedeDirection": "캐릭터 → 보스/몹 중앙 직선 (DPS 10-15% 차이!)",
+      "tips": [
+        { "tip": "Stampede 방향 조준이 DPS 10-15% 좌우: 캐릭터 → 보스/몹 중앙 직선", "importance": 5 },
+        { "tip": "Bestial Wrath → Kill Command → Stampede 순서 필수", "importance": 5 },
+        { "tip": "Double Stampede: Howl ≤16초에서 Bestial Wrath 사용", "importance": 5 },
+        { "tip": "Kill Command 홀드: Lead From the Front 중 Howl 3초 이하면 홀드", "importance": 4 }
+      ],
+      "priorities": [
+        { "rank": 1, "skill": "Bestial Wrath", "condition": "Howl ≤16초", "reason": "Double Stampede 트리거" },
+        { "rank": 2, "skill": "Barbed Shot", "condition": "2충전 근접", "reason": "충전 낭비 방지" },
+        { "rank": 3, "skill": "Call of the Wild", "condition": "쿨다운", "reason": "버스트 윈도우" },
+        { "rank": 4, "skill": "Bloodshed", "condition": "쿨다운", "reason": "1분 쿨다운" },
+        { "rank": 5, "skill": "Kill Command", "condition": "Howl 임박 시 홀드", "reason": "Stampede 트리거용" },
+        { "rank": 6, "skill": "Barbed Shot", "condition": "Frenzy 유지", "reason": "낮은 우선순위" },
+        { "rank": 7, "skill": "Cobra Shot", "condition": "필러", "reason": "Howl 쿨다운 감소" }
+      ]
+    },
+    "common": {
+      "tips": [
+        { "tip": "Kill Command 2충전 도달 금지: 충전 낭비 = DPS 손실", "importance": 5 },
+        { "tip": "펫 위치 선점: 환경에 걸리거나 멀리 있으면 피해 0", "importance": 4 },
+        { "tip": "키 시작 전 Tempered Potion 미리 사용: 첫 팩 버스트 극대화", "importance": 3 },
+        { "tip": "Counter Shot 매크로 필수: Focus Kick으로 탱커 부담 감소", "importance": 3 },
+        { "tip": "Misdirection 쿨타임에 사용: 탱커 어그로 지원 필수", "importance": 3 }
+      ],
+      "weakauras": [
+        "https://wago.io/Vy_cmLXaz",
+        "https://wago.io/T3vjlgi0m",
+        "https://wago.io/YkiN48e5v",
+        "https://wago.io/ll8UBw838"
+      ],
+      "macros": [
+        "#showtooltip Barbed Shot\n/cast [@mouseover,harm,nodead][] Barbed Shot",
+        "#showtooltip Kill Command\n/cast [@pettarget]Claw\n/cast [@pettarget]Bite\n/cast [@pettarget]Smack\n/cast Kill Command",
+        "#showtooltip Misdirection\n/cast [@focus,help,nodead][@pet,exists] Misdirection",
+        "#showtooltip Counter Shot\n/cast [@focus,exists,harm,nodead][@target] Counter Shot"
+      ],
+      "mistakes": [
+        { "mistake": "Frenzy 드랍 (Pack Leader)", "dpsLoss": "5-10%", "fix": "Frenzy 타이머 WeakAura 사용, 3초 이하 시 Barbed Shot 우선" },
+        { "mistake": "Deathblow 낭비 (Dark Ranger)", "dpsLoss": "2-4%", "fix": "Deathblow 트래커 WeakAura, Black Arrow 항상 최우선" },
+        { "mistake": "Call of the Wild 중 Cobra Shot 사용", "dpsLoss": "3-5%", "fix": "CotW 중에는 Cobra Shot 버튼에서 손 떼기" },
+        { "mistake": "Beast Cleave 끊김", "dpsLoss": "20-50% (AOE)", "fix": "Beast Cleave 타이머 WeakAura, 2-3 GCD마다 Multi-Shot" },
+        { "mistake": "Bestial Wrath 잘못된 타이밍 (Pack Leader)", "dpsLoss": "8-12%", "fix": "Howl 쿨다운 트래커 WeakAura, 16초 이하 알림 설정" }
+      ],
+      "dungeonSwaps": [
+        { "dungeon": "Ara-Kara", "swap": "Pack Leader", "reason": "대형 AOE 풀이 빈번" },
+        { "dungeon": "Halls of Atonement", "swap": "Devilsaur Tranquilizer", "reason": "광역 해제 필요 (Shard of Halkias)" },
+        { "dungeon": "Tazavesh: So'leah's Gambit", "swap": "Devilsaur Tranquilizer", "reason": "광역 해제 필요" }
+      ]
+    }
+  },
+  "tierSet": {
+    "darkRanger": {
+      "twoSet": [
+        "Black Arrow 피해 10% 증가",
+        "Bleak Powder 피해 20% 증가",
+        "Call of the Wild 쿨다운 60초 감소 (3분 → 2분)"
+      ],
+      "fourSet": [
+        "Withering Fire로 발사된 Black Arrow 피해 50% 증가",
+        "Deathblow 소비 시 50% 확률로 추가 Black Arrow 자동 발사"
+      ],
+      "expectedBlackArrows": "8-12회 (Call of the Wild 16초 동안)"
+    },
+    "packLeader": {
+      "twoSet": [
+        "펫 피해 5% 증가",
+        "소환 야수 피해 15% 증가",
+        "야수 소환 시 스탯 버프 (와이번: 치명타, 멧돼지: 가속, 곰: 특화)"
+      ],
+      "fourSet": [
+        "Lead From the Front 중 야수 소환 시 Stampede 발동",
+        "Stampede: 캐릭터에서 직선으로 야수 돌진, 7초간 8타겟 피해"
+      ],
+      "critical": "Stampede 방향 조준 실패 = DPS 10-15% 손실"
+    }
+  },
+  "cooldowns": {
+    "callOfTheWild": { "base": "3분", "with2Set": "2분 (Dark Ranger)" },
+    "bestialWrath": { "base": "90초", "dynamic": "~45초 (Barbed Wrath)" },
+    "bloodshed": { "base": "1분" },
+    "survivalOfTheFittest": { "charges": "2-3충전 (Smoke Screen)" },
+    "aspectOfTheTurtle": { "base": "3분" },
+    "exhilaration": { "base": "2분" }
+  }
+}

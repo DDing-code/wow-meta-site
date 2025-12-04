@@ -2,7 +2,7 @@ import React, { useState, useCallback, useMemo } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 // TypeScript types removed for JavaScript compatibility
-import { useTalentState } from '../hooks/useTalentState';
+import { useTalentState } from '../hooks/useTalentState.js';
 import talentDataSchema from '../data/talentTreeSchema.json';
 
 // Styled Components

@@ -4,7 +4,7 @@
  */
 
 // Wowhead에서 실시간으로 가져온 아이콘 매핑
-import { wowheadIconMapping } from '../data/wowheadIconMapping';
+import { wowheadIconMapping } from '../data/wowheadIconMapping.js';
 
 // Wowhead 아이콘 URL 생성
 export function getWowheadIconUrl(iconName, size = 'large') {

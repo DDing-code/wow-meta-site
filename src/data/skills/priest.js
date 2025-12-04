@@ -1,5 +1,5 @@
 // 사제 스킬 데이터베이스
-import { koreanTranslations } from '../koreanTranslations-11.2';
+import { koreanTranslations } from '../koreanTranslations-11.2.js';
 
 const priestTranslations = koreanTranslations.priestAbilities || {};
 

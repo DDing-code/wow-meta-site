@@ -4,7 +4,7 @@
  */
 
 import { EventEmitter } from 'events';
-import { getGuideLinks } from '../../data/guideLinks';
+import { getGuideLinks } from '../../data/guideLinks.js';
 
 class BaseSpecializationPersona extends EventEmitter {
   constructor() {

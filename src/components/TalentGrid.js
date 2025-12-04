@@ -1,8 +1,8 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTalentState } from '../hooks/useTalentState';
-import EdgeRenderer from './EdgeRenderer';
+import { useTalentState } from '../hooks/useTalentState.js';
+import EdgeRenderer from './EdgeRenderer.js';
 
 // Individual Tree Grid Component
 const GridContainer = styled.div`

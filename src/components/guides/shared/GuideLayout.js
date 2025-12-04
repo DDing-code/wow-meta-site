@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import GuideNav from './GuideNav';
-import SkillIcon from './SkillIcon';
-import Toast from './Toast';
+import GuideNav from './GuideNav.js';
+import SkillIcon from './SkillIcon.js';
+import Toast from './Toast.js';
 
 // Global animations
 const GlobalStyle = createGlobalStyle`

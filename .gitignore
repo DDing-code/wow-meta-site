@@ -27,6 +27,9 @@ yarn-error.log*
 *.sqlite
 *.sqlite3
 
+# KB-generated files (auto-generated from Obsidian Knowledge Base)
+/src/data/kb-skills.json
+
 # logs
 logs
 *.log

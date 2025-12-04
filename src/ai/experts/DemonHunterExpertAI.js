@@ -1,5 +1,5 @@
 // 악마사냥꾼 전문가 AI 시스템
-import ClassExpertAI from '../ClassExpertAI';
+import ClassExpertAI from '../ClassExpertAI.js';
 
 class DemonHunterExpertAI extends ClassExpertAI {
   constructor(spec) {

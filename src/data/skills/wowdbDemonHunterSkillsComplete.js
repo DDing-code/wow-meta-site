@@ -1,5 +1,5 @@
 // TWW Season 3 악마사냥꾼 스킬 데이터
-// The War Within 11.0.5 - 시즌 3
+// The War Within 11.2.5 - 시즌 3 (2025-11-28 업데이트)
 // PvP 특성 제외, 현재 활성화된 스킬만 포함
 // 패시브 특성 포함
 
@@ -77,7 +77,7 @@ export const wowdbDemonHunterSkillsComplete = {
     },
     "204596": {
       "name": "Sigil of Flame",
-      "kr": "화염의 인장",
+      "kr": "불꽃의 인장",
       "level": 10,
       "type": "ability"
     },
@@ -139,8 +139,13 @@ export const wowdbDemonHunterSkillsComplete = {
     },
     "198013": {
       "name": "Eye Beam",
-      "kr": "눈빔",
+      "kr": "안광",
       "spec": "havoc",
+      "type": "passive"
+    },
+    "198793": {
+      "name": "Vengeful Retreat",
+      "kr": "복수의 퇴각",
       "type": "passive"
     },
     "202137": {
@@ -162,12 +167,18 @@ export const wowdbDemonHunterSkillsComplete = {
     },
     "204596": {
       "name": "Sigil of Flame",
-      "kr": "화염 인장",
+      "kr": "불꽃의 인장",
       "type": "passive"
     },
     "211881": {
       "name": "Fel Eruption",
       "kr": "지옥 분출",
+      "type": "passive"
+    },
+    "258860": {
+      "name": "Essence Break",
+      "kr": "정수파쇄",
+      "spec": "havoc",
       "type": "passive"
     },
     "258920": {

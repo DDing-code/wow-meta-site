@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import LogAnalyzer from '../components/LogAnalyzer';
-import VisualClassGuide from '../components/VisualClassGuide';
-import DetailedTierSystem from '../components/DetailedTierSystem';
-import { gameIcons, classIcons, WowIcon } from '../utils/wowIcons';
+import LogAnalyzer from '../components/LogAnalyzer.js';
+import VisualClassGuide from '../components/VisualClassGuide.js';
+import DetailedTierSystem from '../components/DetailedTierSystem.js';
+import { gameIcons, classIcons, WowIcon } from '../utils/wowIcons.js';
 
 const Container = styled.div`
   padding: 2rem 0;

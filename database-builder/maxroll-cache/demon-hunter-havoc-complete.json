@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "source": "https://maxroll.gg/wow/demon-hunter/havoc-guide",
+    "extractedAt": "2025-11-08T18:49:21.300Z",
+    "version": "2.0-enhanced"
+  },
+  "validation": {
+    "valid": false,
+    "errors": [
+      "Total content too short: 774 < 5000 chars",
+      "Missing required section: rotation",
+      "Missing required section: talents",
+      "Missing required section: stats"
+    ],
+    "warnings": [
+      "Rotation section short: 75 chars",
+      "Few rotation items: 0 < 10"
+    ],
+    "stats": {
+      "totalChars": 774,
+      "sections": 0,
+      "timestamp": "2025-11-08T18:49:21.288Z"
+    }
+  },
+  "data": {
+    "rotation": {
+      "found": false,
+      "reason": "Section \"Rotation\" not found with any strategy"
+    },
+    "talents": {
+      "found": false,
+      "reason": "Section \"Talents\" not found with any strategy"
+    },
+    "stats": {
+      "found": false,
+      "reason": "Section \"Stats\" not found with any strategy"
+    },
+    "gear": {
+      "found": false,
+      "reason": "Section \"Gear\" not found with any strategy"
+    },
+    "hero_talents": {
+      "found": false,
+      "reason": "Section \"Hero Talents\" not found with any strategy"
+    },
+    "opener": {
+      "found": false,
+      "reason": "Section \"Opener\" not found with any strategy"
+    },
+    "priority": {
+      "found": false,
+      "reason": "Section \"Priority\" not found with any strategy"
+    },
+    "mechanics": {
+      "found": false,
+      "reason": "Section \"Mechanics\" not found with any strategy"
+    },
+    "trinkets": {
+      "found": false,
+      "reason": "Section \"Trinkets\" not found with any strategy"
+    }
+  }
+}

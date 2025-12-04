@@ -1,5 +1,5 @@
 // 주술사 전문가 AI
-import ClassExpertAI from '../ClassExpertAI';
+import ClassExpertAI from '../ClassExpertAI.js';
 
 class ShamanExpertAI extends ClassExpertAI {
   constructor(spec) {

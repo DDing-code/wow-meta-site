@@ -1,7 +1,7 @@
 // Wowhead 아이콘 가져오기 유틸리티
 // 스킬 ID를 사용하여 Wowhead에서 직접 아이콘 URL을 생성
 
-import { getAllIconMappings } from './iconMappingData';
+import { getAllIconMappings } from './iconMappingData.js';
 import iconMapping from '../data/iconMapping.json';  // iconMapping.json 직접 임포트
 
 /**

@@ -1,5 +1,5 @@
 // 전사 전문가 AI
-import ClassExpertAI from '../ClassExpertAI';
+import ClassExpertAI from '../ClassExpertAI.js';
 
 class WarriorExpertAI extends ClassExpertAI {
   constructor(spec) {

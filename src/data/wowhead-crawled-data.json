@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "patch": "11.2.0",
+    "season": "TWW Season 3",
+    "collectionDate": "2025-11-11T09:24:58.411Z",
+    "totalSkills": 9,
+    "errors": 0,
+    "dataSource": "wowhead-axios",
+    "performanceNote": "100-500x faster than Playwright, 90% less memory"
+  },
+  "skills": {
+    "642": {
+      "base": {
+        "id": "642",
+        "name": "Divine Shield",
+        "koreanName": "천상의 보호막",
+        "icon": "spell_holy_divineshield",
+        "class": "paladin",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "8초 동안 모든 피해와 해로운 효과, 밀쳐내기, 강제 이동 효과에 면역이 됩니다. 참을성 상태일 때는 사용할 수 없습니다. 이후 30초 동안 참을성 상태가 됩니다.",
+        "english": "8초 동안 모든 피해와 해로운 효과, 밀쳐내기, 강제 이동 효과에 면역이 됩니다. 참을성 상태일 때는 사용할 수 없습니다. 이후 30초 동안 참을성 상태가 됩니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:33.593Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 5174
+      }
+    },
+    "853": {
+      "base": {
+        "id": "853",
+        "name": "Hammer of Justice",
+        "koreanName": "심판의 망치",
+        "icon": "spell_holy_sealofmight",
+        "class": "paladin",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "6초 동안 대상을 기절시킵니다. 성기사 능력들 범주 내. 직업 가이드에서 이것을 사용하는 법을 배워보세요.",
+        "english": "6초 동안 대상을 기절시킵니다. 성기사 능력들 범주 내. 직업 가이드에서 이것을 사용하는 법을 배워보세요."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:33.594Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 4173
+      }
+    },
+    "1680": {
+      "base": {
+        "id": "1680",
+        "name": "Whirlwind",
+        "koreanName": "소용돌이",
+        "icon": "",
+        "class": "warrior",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "강철의 소용돌이를 일으켜 [전투의 열정: 격돌로 주 대상을 가격하고]주위에 있는 모든 적을 강타해 [3 * (percentOfAttackPower_format, 62.996)]의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다.",
+        "english": "강철의 소용돌이를 일으켜 [전투의 열정: 격돌로 주 대상을 가격하고]주위에 있는 모든 적을 강타해 [3 * (percentOfAttackPower_format, 62.996)]의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:58.410Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 6965
+      }
+    },
+    "6940": {
+      "base": {
+        "id": "6940",
+        "name": "Blessing of Sacrifice",
+        "koreanName": "희생의 축복",
+        "icon": "spell_holy_sealofsacrifice",
+        "class": "paladin",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "징벌대상 파티원 또는 공격대원을 축복하여 대상이 받는 피해를 20%만큼 감소시키지만, 감소한 피해의 100%를 자신이 입습니다.12초 동안 또는 이전된 피해로 자신의 생명력이 20% 미만으로 떨어질 때까지 지속됩니다. 신성,  보호대상 파티원 또는 공격대원을 축복하여 대상이 받는 피해를 30%만큼 감소시키지만, 감소한 피해의 100%를 자신이 입습니다.12초 동안 또는 이전된 피해로 자신의 생명력이 20% 미만으로 떨어질 때까지 지속됩니다.",
+        "english": "징벌대상 파티원 또는 공격대원을 축복하여 대상이 받는 피해를 20%만큼 감소시키지만, 감소한 피해의 100%를 자신이 입습니다.12초 동안 또는 이전된 피해로 자신의 생명력이 20% 미만으로 떨어질 때까지 지속됩니다. 신성,  보호대상 파티원 또는 공격대원을 축복하여 대상이 받는 피해를 30%만큼 감소시키지만, 감소한 피해의 100%를 자신이 입습니다.12초 동안 또는 이전된 피해로 자신의 생명력이 20% 미만으로 떨어질 때까지 지속됩니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:33.594Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 3962
+      }
+    },
+    "23920": {
+      "base": {
+        "id": "23920",
+        "name": "Spell Reflection",
+        "koreanName": "주문 반사",
+        "icon": "ability_warrior_shieldwall",
+        "class": "warrior",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "무기,  분노무기|1을;를; 치켜세워 자신에게 시전되는 첫 번째 주문을 반사합니다. 또한 5초 동안 받는 마법 피해가 20%만큼 감소합니다. 방어방패|1을;를; 치켜세워 자신에게 시전되는 첫 번째 주문을 반사합니다. 또한 5초 동안 받는 마법 피해가 20%만큼 감소합니다.",
+        "english": "무기,  분노무기|1을;를; 치켜세워 자신에게 시전되는 첫 번째 주문을 반사합니다. 또한 5초 동안 받는 마법 피해가 20%만큼 감소합니다. 방어방패|1을;를; 치켜세워 자신에게 시전되는 첫 번째 주문을 반사합니다. 또한 5초 동안 받는 마법 피해가 20%만큼 감소합니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:58.410Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 4698
+      }
+    },
+    "46968": {
+      "base": {
+        "id": "46968",
+        "name": "Shockwave",
+        "koreanName": "충격파",
+        "icon": "ability_warrior_shockwave",
+        "class": "warrior",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "충격의 파장을 부채꼴 모양으로 내보내 전방 10미터 안에 있는 모든 적 대상에게 (percentOfAttackPower_format, 20)의 피해를 입히고 2초 동안 기절시킵니다.",
+        "english": "충격의 파장을 부채꼴 모양으로 내보내 전방 10미터 안에 있는 모든 적 대상에게 (percentOfAttackPower_format, 20)의 피해를 입히고 2초 동안 기절시킵니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:58.410Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 3521
+      }
+    },
+    "167105": {
+      "base": {
+        "id": "167105",
+        "name": "Colossus Smash",
+        "koreanName": "거인의 강타",
+        "icon": "ability_warrior_unrelentingassault",
+        "class": "warrior",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "적의 방어구를 강타해 (percentOfAttackPower_format, 306.263)의 물리 피해를 입힙니다. 대상에 대한 공격력이 10초 동안 30%만큼 증가합니다.",
+        "english": "적의 방어구를 강타해 (percentOfAttackPower_format, 306.263)의 물리 피해를 입힙니다. 대상에 대한 공격력이 10초 동안 30%만큼 증가합니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:58.410Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 3600
+      }
+    },
+    "184575": {
+      "base": {
+        "id": "184575",
+        "name": "Blade of Justice",
+        "koreanName": "심판의 칼날",
+        "icon": "ability_paladin_bladeofjustice",
+        "class": "paladin",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "빛의 칼날로 [복수의 칼날: 다수의 적 / 적]을 꿰뚫어 (percentOfAttackPower_format, 275.538)의 신성 피해를 입 [복수의 칼날: 히고, 대상 주위의 적에게는 (percentOfAttackPower_format, 117.039)의 신성 피해를 입힙니다 / 힙니다.]신성한 힘 1개를 생성합니다.",
+        "english": "빛의 칼날로 [복수의 칼날: 다수의 적 / 적]을 꿰뚫어 (percentOfAttackPower_format, 275.538)의 신성 피해를 입 [복수의 칼날: 히고, 대상 주위의 적에게는 (percentOfAttackPower_format, 117.039)의 신성 피해를 입힙니다 / 힙니다.]신성한 힘 1개를 생성합니다."
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:33.594Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 3504
+      }
+    },
+    "204074": {
+      "base": {
+        "id": "204074",
+        "name": "Righteous Protector",
+        "koreanName": "정의로운 수호자",
+        "icon": "ability_warrior_shieldwall",
+        "class": "paladin",
+        "patch": "11.2.0"
+      },
+      "classification": {},
+      "mechanics": {
+        "cooldown": {
+          "base": "없음"
+        },
+        "cast": {
+          "castTime": "즉시"
+        },
+        "targeting": {
+          "range": "근접"
+        }
+      },
+      "resources": {
+        "cost": {}
+      },
+      "description": {
+        "korean": "신성한 힘 하나당 응징의 격노와 고대 왕의 수호자의 남은 재사용 대기시간이 1.5초만큼 감소합니다. 성기사 요구",
+        "english": "신성한 힘 하나당 응징의 격노와 고대 왕의 수호자의 남은 재사용 대기시간이 1.5초만큼 감소합니다. 성기사 요구"
+      },
+      "metadata": {
+        "patch": "11.2.0",
+        "season": "TWW Season 3",
+        "lastUpdated": "2025-11-11T09:24:33.594Z",
+        "verified": true,
+        "dataSource": "wowhead-axios-batch",
+        "extractionTimeMs": 2785
+      }
+    }
+  },
+  "errors": []
+}

@@ -1,5 +1,5 @@
 // 악마사냥꾼 복수 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class VengeanceDemonHunterAI extends SpecializationAI {
   constructor() {

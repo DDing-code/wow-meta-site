@@ -1,6 +1,6 @@
 // 실시간 전문화 별 가이드 업데이트 서비스
-import moduleEventBus from './ModuleEventBus';
-import externalGuideCollector from './ExternalGuideCollector';
+import moduleEventBus from './ModuleEventBus.js';
+import externalGuideCollector from './ExternalGuideCollector.js';
 
 class RealtimeGuideUpdater {
   constructor() {

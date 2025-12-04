@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import warcraftLogsAPI from '../services/warcraftLogsAPI';
+import warcraftLogsAPI from '../services/warcraftLogsAPI.js';
 
 const Container = styled.div`
   background: ${props => props.theme.colors.surface};

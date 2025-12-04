@@ -1,0 +1,23 @@
+{
+  "classConfig": {
+    "className": "WARRIOR",
+    "spec": "fury",
+    "heroTalents": ["학살자", "산왕"],
+    "heroKeys": ["slayer", "mountainThane"],
+    "heroMapping": {
+      "hero1": "slayer",
+      "hero2": "mountainThane"
+    }
+  },
+
+  "colors": {
+    "primary": "#C69B6D",
+    "primaryRgb": "198, 155, 109",
+    "secondary": "#C79C6E",
+    "secondaryRgb": "199, 156, 110",
+    "slayerHex": "#C69B6D",
+    "mountainThaneHex": "#C79C6E"
+  },
+
+  "NOTE": "나머지 데이터(heroContent, builds, stats)는 FuryWarriorGuide.js에서 직접 복사하여 추가 예정"
+}

@@ -1,5 +1,5 @@
 // 외부 가이드 수집 및 통합 서비스
-import moduleEventBus from './ModuleEventBus';
+import moduleEventBus from './ModuleEventBus.js';
 
 class ExternalGuideCollector {
   constructor() {

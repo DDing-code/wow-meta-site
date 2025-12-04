@@ -1,5 +1,5 @@
 // 흑마법사 파괴 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
+import SpecializationAI from '../../core/SpecializationAI.js';
 
 class DestructionWarlockAI extends SpecializationAI {
   constructor() {

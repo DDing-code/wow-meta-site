@@ -1,7 +1,8 @@
 // TWW Season 3 죽음의 기사 스킬 데이터
-// The War Within 11.0.5 - 시즌 3
+// The War Within 11.2.5 - 시즌 3 (2025-11-28 업데이트)
 // PvP 특성 제외, 현재 활성화된 스킬만 포함
 // 패시브 특성 포함
+// 📌 가이드 작성 전 필수 참조: C:/wowmeta/WoW-Meta-Knowledge/99-META/Guide-Generation-Instructions.md
 
 export const wowdbDeathKnightSkillsComplete = {
   "baseline": {
@@ -156,129 +157,34 @@ export const wowdbDeathKnightSkillsComplete = {
     }
   },
   "talents": {
-    "43265": {
-      "name": "Death and Decay",
-      "kr": "죽음과 부패",
-      "type": "passive"
-    },
-    "48707": {
-      "name": "Anti-Magic Shell",
-      "kr": "대마법 보호막",
-      "type": "passive"
-    },
-    "49028": {
-      "name": "Dancing Rune Weapon",
-      "kr": "춤추는 룬 무기",
-      "spec": "blood",
-      "type": "passive"
-    },
-    "49998": {
-      "name": "Death Strike",
-      "kr": "죽음의 일격",
-      "type": "passive"
-    },
-    "51271": {
-      "name": "Pillar of Frost",
-      "kr": "얼음 기둥",
-      "spec": "frost",
-      "type": "passive"
-    },
-    "51462": {
-      "name": "Runeforging",
-      "kr": "룬 벼리기",
-      "type": "passive"
-    },
-    "55090": {
-      "name": "Scourge Strike",
-      "kr": "스컬지 일격",
-      "spec": "unholy",
-      "type": "passive"
-    },
-    "56222": {
-      "name": "Dark Command",
-      "kr": "어둠의 명령",
-      "type": "passive"
-    },
-    "63560": {
-      "name": "Dark Transformation",
-      "kr": "어둠의 변신",
-      "spec": "unholy",
-      "type": "passive"
-    },
-    "152279": {
-      "name": "Breath of Sindragosa",
-      "kr": "신드라고사의 숨결",
-      "spec": "frost",
-      "type": "passive"
-    },
-    "152280": {
-      "name": "Defile",
-      "kr": "파멸",
-      "spec": "unholy",
-      "type": "passive"
-    },
-    "194679": {
-      "name": "Rune Tap",
-      "kr": "룬 전환",
-      "type": "passive"
-    },
-    "194909": {
-      "name": "Icy Talons",
-      "kr": "얼음 발톱",
-      "spec": "frost",
-      "type": "passive"
-    },
-    "195182": {
-      "name": "Marrowrend",
-      "kr": "골수 분쇄",
-      "spec": "blood",
-      "type": "passive"
-    },
-    "206930": {
-      "name": "Heart Strike",
-      "kr": "심장 강타",
-      "spec": "blood",
-      "type": "passive"
-    },
-    "207126": {
-      "name": "Icecap",
-      "kr": "빙관",
-      "spec": "frost",
-      "type": "passive"
-    },
-    "219786": {
-      "name": "Ossuary",
-      "kr": "납골당",
-      "spec": "blood",
-      "type": "passive"
-    },
-    "374585": {
-      "name": "Rune Mastery",
-      "kr": "룬 숙련",
-      "type": "passive"
-    },
-    "390178": {
-      "name": "Festering Wounds",
-      "kr": "고름 상처",
-      "spec": "unholy",
-      "type": "passive"
-    }
+    "43265": { "name": "Death and Decay", "kr": "죽음과 부패", "type": "passive" },
+    "48707": { "name": "Anti-Magic Shell", "kr": "대마법 보호막", "type": "passive" },
+    "49028": { "name": "Dancing Rune Weapon", "kr": "춤추는 룬 무기", "spec": "blood", "type": "passive" },
+    "49998": { "name": "Death Strike", "kr": "죽음의 일격", "type": "passive" },
+    "51271": { "name": "Pillar of Frost", "kr": "얼음 기둥", "spec": "frost", "type": "passive" },
+    "51462": { "name": "Runeforging", "kr": "룬 벼리기", "type": "passive" },
+    "55090": { "name": "Scourge Strike", "kr": "스컬지 일격", "spec": "unholy", "type": "passive" },
+    "56222": { "name": "Dark Command", "kr": "어둠의 명령", "type": "passive" },
+    "63560": { "name": "Dark Transformation", "kr": "어둠의 변신", "spec": "unholy", "type": "passive" },
+    "152279": { "name": "Breath of Sindragosa", "kr": "신드라고사의 숨결", "spec": "frost", "type": "passive" },
+    "152280": { "name": "Defile", "kr": "파멸", "spec": "unholy", "type": "passive" },
+    "194679": { "name": "Rune Tap", "kr": "룬 전환", "type": "passive" },
+    "194909": { "name": "Icy Talons", "kr": "얼음 발톱", "spec": "frost", "type": "passive" },
+    "195182": { "name": "Marrowrend", "kr": "골수 분쇄", "spec": "blood", "type": "passive" },
+    "206930": { "name": "Heart Strike", "kr": "심장 강타", "spec": "blood", "type": "passive" },
+    "207126": { "name": "Icecap", "kr": "빙관", "spec": "frost", "type": "passive" },
+    "219786": { "name": "Ossuary", "kr": "납골당", "spec": "blood", "type": "passive" },
+    "374585": { "name": "Rune Mastery", "kr": "룬 숙련", "type": "passive" },
+    "390178": { "name": "Festering Wounds", "kr": "고름 상처", "spec": "unholy", "type": "passive" }
   }
 };
 
-// 스킬 검색 함수
 export function getWowDBDeathKnightSkill(skillId) {
   const categories = Object.keys(wowdbDeathKnightSkillsComplete);
-
   for (const category of categories) {
-    if (wowdbDeathKnightSkillsComplete[category] && wowdbDeathKnightSkillsComplete[category][skillId]) {
-      return {
-        ...wowdbDeathKnightSkillsComplete[category][skillId],
-        category,
-        id: skillId
-      };
+    if (wowdbDeathKnightSkillsComplete[category]?.[skillId]) {
+      return { ...wowdbDeathKnightSkillsComplete[category][skillId], category, id: skillId };
     }
   }
-
   return null;
 }

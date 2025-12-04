@@ -4,10 +4,10 @@
  */
 
 import { EventEmitter } from 'events';
-import { MachineLearningCore } from './MachineLearningCore';
-import { NeuralNetwork } from './NeuralNetwork';
-import { OptimizationEngine } from './OptimizationEngine';
-import { PredictionSystem } from './PredictionSystem';
+import { MachineLearningCore } from './MachineLearningCore.js';
+import { NeuralNetwork } from './NeuralNetwork.js';
+import { OptimizationEngine } from './OptimizationEngine.js';
+import { PredictionSystem } from './PredictionSystem.js';
 
 export class LearningManager extends EventEmitter {
     constructor() {

@@ -1,5 +1,5 @@
 // 임시 Mock EnhancedAICoordinator - 컴파일 에러 해결용
-import apiService from '../services/APIService';
+import apiService from '../services/APIService.js';
 
 class EnhancedAICoordinator {
   constructor() {

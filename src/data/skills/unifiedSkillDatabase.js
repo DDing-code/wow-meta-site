@@ -10,19 +10,19 @@ import wowheadFullDescriptions from '../wowhead-full-descriptions-complete.json'
 import iconMapping from '../iconMapping.json';
 
 // 각 클래스 스킬 데이터 임포트
-import { wowdbWarriorSkillsComplete } from './wowdbWarriorSkillsComplete';
-import { wowdbPaladinSkillsComplete } from './wowdbPaladinSkillsComplete';
-import { wowdbHunterSkillsComplete } from './wowdbHunterSkillsComplete';
-import { wowdbRogueSkillsComplete } from './wowdbRogueSkillsComplete';
-import { wowdbPriestSkillsComplete } from './wowdbPriestSkillsComplete';
-import { wowdbMageSkillsComplete } from './wowdbMageSkillsComplete';
-import { wowdbWarlockSkillsComplete } from './wowdbWarlockSkillsComplete';
-import { wowdbShamanSkillsComplete } from './wowdbShamanSkillsComplete';
-import { wowdbMonkSkillsComplete } from './wowdbMonkSkillsComplete';
-import { wowdbDruidSkillsComplete } from './wowdbDruidSkillsComplete';
-import { wowdbDeathKnightSkillsComplete } from './wowdbDeathKnightSkillsComplete';
-import { wowdbDemonHunterSkillsComplete } from './wowdbDemonHunterSkillsComplete';
-import { wowdbEvokerSkillsComplete } from './wowdbEvokerSkillsComplete';
+import { wowdbWarriorSkillsComplete } from './wowdbWarriorSkillsComplete.js';
+import { wowdbPaladinSkillsComplete } from './wowdbPaladinSkillsComplete.js';
+import { wowdbHunterSkillsComplete } from './wowdbHunterSkillsComplete.js';
+import { wowdbRogueSkillsComplete } from './wowdbRogueSkillsComplete.js';
+import { wowdbPriestSkillsComplete } from './wowdbPriestSkillsComplete.js';
+import { wowdbMageSkillsComplete } from './wowdbMageSkillsComplete.js';
+import { wowdbWarlockSkillsComplete } from './wowdbWarlockSkillsComplete.js';
+import { wowdbShamanSkillsComplete } from './wowdbShamanSkillsComplete.js';
+import { wowdbMonkSkillsComplete } from './wowdbMonkSkillsComplete.js';
+import { wowdbDruidSkillsComplete } from './wowdbDruidSkillsComplete.js';
+import { wowdbDeathKnightSkillsComplete } from './wowdbDeathKnightSkillsComplete.js';
+import { wowdbDemonHunterSkillsComplete } from './wowdbDemonHunterSkillsComplete.js';
+import { wowdbEvokerSkillsComplete } from './wowdbEvokerSkillsComplete.js';
 
 // 클래스별 색상 정의
 export const classColors = {

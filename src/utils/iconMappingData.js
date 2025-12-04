@@ -209,23 +209,45 @@ export const iconMappings = {
     1822: 'spell_druid_rake', // Rake
   },
 
-  // 악마사냥꾼 (Demon Hunter)
+  // 악마사냥꾼 (Demon Hunter) - Wowhead API 검증 완료 (2025-12-01)
   demonhunter: {
-    162794: 'ability_demonhunter_chaosstrike', // Chaos Strike
-    188499: 'ability_demonhunter_bladedance', // Blade Dance
-    198013: 'ability_demonhunter_eyebeam', // Eye Beam
-    162243: 'ability_demonhunter_demonsbite', // Demon's Bite
-    195072: 'ability_demonhunter_felrush', // Fel Rush
-    198793: 'ability_demonhunter_vengefulretreat', // Vengeful Retreat
-    192611: 'ability_demonhunter_metamorphasisdps', // Metamorphosis
-    183752: 'ability_demonhunter_consume', // Consume Magic
-    188501: 'ability_demonhunter_spectralsight', // Spectral Sight
-    278326: 'ability_demonhunter_consumemagic', // Consume Magic
-    204021: 'ability_demonhunter_fierybrand', // Fiery Brand
-    207684: 'ability_demonhunter_sigilofinquisition', // Sigil of Misery
+    // 기본 스킬
+    162243: 'inv_weapon_glave_01', // Demon's Bite (악마의 이빨)
+    162794: 'ability_demonhunter_chaosstrike', // Chaos Strike (혼돈의 일격)
+    201427: 'inv_glaive_1h_npc_d_02', // Annihilation (파멸) - 탈태 변형
+    198013: 'ability_demonhunter_eyebeam', // Eye Beam (안광)
+    188499: 'ability_demonhunter_bladedance', // Blade Dance (칼춤)
+    210152: 'inv_glaive_1h_artifactaldrochi_d_02dual', // Death Sweep (죽음의 휩쓸기) - 탈태 변형
+    191427: 'ability_demonhunter_metamorphasisdps', // Metamorphosis (탈태)
+    195072: 'ability_demonhunter_felrush', // Fel Rush (지옥 돌진)
+    198793: 'ability_demonhunter_vengefulretreat2', // Vengeful Retreat (복수의 퇴각)
+    258920: 'ability_demonhunter_immolation', // Immolation Aura (제물의 오라)
+    185123: 'ability_demonhunter_throwglaive', // Throw Glaive (글레이브 투척)
+    258860: 'spell_shadow_ritualofsacrifice', // Essence Break (정수 파쇄)
+    232893: 'ability_demonhunter_felblade', // Fel Blade (지옥칼)
+    323639: 'ability_ardenweald_demonhunter', // The Hunt (사냥)
+    204021: 'ability_demonhunter_fierybrand', // Fiery Brand (불의낙인)
+    
+    // 시길 계열
+    204596: 'ability_demonhunter_sigilofinquisition', // Sigil of Flame (불꽃의 인장) - sigilofflame 존재안함!
+    207684: 'ability_demonhunter_sigilofmisery', // Sigil of Misery (원한의 인장)
+    388113: 'spell_shadow_shadesofdarkness', // Sigil of Spite (악의의 인장)
+    452490: 'ability_bossfelorcs_necromancer_red', // Sigil of Doom (파멸의 인장) - Fel-Scarred
     202137: 'ability_demonhunter_sigilofsilence', // Sigil of Silence
     202138: 'ability_demonhunter_sigilofchains', // Sigil of Chains
-    204596: 'ability_demonhunter_sigilofflame', // Sigil of Flame
+    
+    // TWW Aldrachi Reaver 영웅 특성
+    442294: 'inv_ability_aldrachireaverdemonhunter_reaversglaive', // Reaver's Glaive (파괴자의 글레이브)
+    442688: 'spell_mage_overpowered', // Thrill of the Fight (전투의 전율)
+    442624: 'ability_hunter_harass', // Reaver's Mark (파괴자의 징표)
+    444806: 'ability_glaivetoss', // Fury of the Aldrachi (알드라치의 격노)
+    
+    // TWW Fel-Scarred 영웅 특성
+    452402: 'inv_ability_felscarreddemonhunter_demonsurge', // Demonsurge (악마쇄도)
+    
+    // 유틸리티
+    183752: 'ability_demonhunter_consume', // Consume Magic
+    188501: 'ability_demonhunter_spectralsight', // Spectral Sight
     217832: 'ability_demonhunter_imprison', // Imprison
   },
 

@@ -1,5 +1,5 @@
 // WarcraftLogs 데이터 처리 및 특징 추출
-import fileDB from '../../../server/services/FileDB';
+import fileDB from '../../../server/services/FileDB.js';
 
 class WarcraftLogsDataProcessor {
   constructor() {

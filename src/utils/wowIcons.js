@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultIcons } from './defaultIcons';
+import { defaultIcons } from './defaultIcons.js';
 
 // WoW 공식 아이콘 CDN 유틸리티 - 여러 CDN 소스 지원
 const WOWHEAD_CDN = 'https://wow.zamimg.com/images/wow/icons/large';

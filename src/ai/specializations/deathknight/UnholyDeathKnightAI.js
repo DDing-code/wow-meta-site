@@ -1,7 +1,7 @@
 // 죽음의 기사 언홀리 전문 AI
-import SpecializationAI from '../../core/SpecializationAI';
-import APLParser from '../../apl/APLParser';
-import aplData from '../../apl/APLData';
+import SpecializationAI from '../../core/SpecializationAI.js';
+import APLParser from '../../apl/APLParser.js';
+import aplData from '../../apl/APLData.js';
 
 class UnholyDeathKnightAI extends SpecializationAI {
   constructor() {

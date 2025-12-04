@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { gameIcons, statIcons, WowIcon } from '../utils/wowIcons';
+import { gameIcons, statIcons, WowIcon } from '../utils/wowIcons.js';
 import { FaArrowUp, FaArrowDown, FaMinus } from 'react-icons/fa';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 

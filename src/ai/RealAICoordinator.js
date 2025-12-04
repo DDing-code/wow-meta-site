@@ -1,7 +1,7 @@
 // 실제 AI 기반 Enhanced AI Coordinator - TensorFlow.js 사용
-import WoWNeuralNetwork from './core/NeuralNetwork';
-import WarcraftLogsDataProcessor from './core/DataProcessor';
-import apiService from '../services/APIService';
+import WoWNeuralNetwork from './core/NeuralNetwork.js';
+import WarcraftLogsDataProcessor from './core/DataProcessor.js';
+import apiService from '../services/APIService.js';
 
 class RealAICoordinator {
   constructor() {

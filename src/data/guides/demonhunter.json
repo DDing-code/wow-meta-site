@@ -1,0 +1,543 @@
+{
+  "className": "demonhunter",
+  "classNameKo": "악마사냥꾼",
+  "color": "#A330C9",
+  "specs": {
+    "havoc": {
+      "specName": "havoc",
+      "specNameKo": "파멸",
+      "ready": true,
+      "lastUpdate": "2025-12-02",
+      "patch": "11.2.5",
+      "season": "The War Within 시즌 3",
+      "difficulty": "Medium-High",
+      "role": "DPS",
+      "resourceType": "분노",
+      "rangeType": "Melee",
+      "playstyle": "빠른 기동성과 강력한 깔때기 딜",
+      "tierRanking": {
+        "mythicPlus": "S",
+        "raid": "A",
+        "source": "Archon.gg, Icy Veins (2025-12)"
+      },
+      "overview": {
+        "description": "파멸 악마사냥꾼은 The War Within 시즌 3에서 쐐기돌 S티어, 레이드 A티어로 평가받는 강력한 근접 딜러입니다. 정수 파쇄 4초 타이밍에 전체 DPS의 60% 이상이 집중되며, 알드라치 파괴자 영웅 특성의 부상당한사냥감(Wounded Quarry)을 활용한 게임 내 최고 수준의 깔때기 딜이 핵심입니다.",
+        "seasonHighlights": [
+          "시즌 3 티어 세트가 영웅 특성별로 완전히 다른 효과 부여",
+          "알드라치 파괴자: 파괴자의 글레이브 60% + 물리 피해 30% 증가, 12회 베기",
+          "지옥상흔: 제물의 오라 30% + 혼돈의 일격 20% 증가, 탈태 시 20% 버프",
+          "쐐기돌에서 알드라치 파괴자 사용률 87.7%"
+        ],
+        "resourceSystem": {
+          "type": "분노",
+          "maxFury": {
+            "aldrachiReaver": 90,
+            "felScarred": 120
+          },
+          "description": "파멸 악마사냥꾼은 분노를 주 자원으로 사용합니다. 알드라치 파괴자는 90 상한, 지옥상흔은 억제되지 않은 분노 특성으로 120 상한입니다."
+        },
+        "coreSkills": [
+          {"id": "258860", "name": "정수 파쇄", "nameEn": "Essence Break", "description": "4초간 혼돈 피해 80% 증가 - DPS의 60% 이상이 이 타이밍에 발생"},
+          {"id": "198013", "name": "안광", "nameEn": "Eye Beam", "description": "전방 광역 피해 + 악마화 발동 (증오의 순환으로 약 20초 쿨다운)"},
+          {"id": "191427", "name": "탈태", "nameEn": "Metamorphosis", "description": "2분 쿨다운, 혼돈의 변형으로 안광/칼춤 쿨다운 리셋"},
+          {"id": "162794", "name": "혼돈의 일격", "nameEn": "Chaos Strike", "description": "40분노 소비, 탈태 중 파멸로 변환"},
+          {"id": "188499", "name": "칼춤", "nameEn": "Blade Dance", "description": "35분노 소비, 탈태 중 죽음의 휩쓸기로 변환"},
+          {"id": "258920", "name": "제물의 오라", "nameEn": "Immolation Aura", "description": "주변 지속 피해 + 분노 생성"},
+          {"id": "442294", "name": "파괴자의 글레이브", "nameEn": "Reaver's Glaive", "description": "알드라치 파괴자 핵심 - Off-GCD, 영혼 파편 6개 또는 사냥 시 발동"}
+        ],
+        "strengths": [
+          "정수 파쇄 4초 타이밍의 폭발적인 극딜 (80% 혼돈 피해 증폭)",
+          "지옥 돌진 + 복수의 퇴각을 활용한 게임 내 최고 기동성",
+          "혼돈의 낙인으로 파티 전체에 5% 마법 피해 증가 제공",
+          "알드라치 파괴자의 부상당한사냥감을 통한 최고 수준의 깔때기 딜",
+          "짧은 쿨다운(안광 ~20초, 정수 파쇄 40초)으로 거의 모든 팩에서 극딜 가능"
+        ],
+        "weaknesses": [
+          "순수 단일 대상 전투에서 최상위권 딜러들에 비해 약간 뒤처짐",
+          "정수 파쇄 4초 타이밍 외의 피해가 상대적으로 낮음",
+          "분노 관리와 정수 파쇄 타이밍 관리가 동시에 요구되는 높은 숙련도 요구",
+          "보스 메커니즘으로 정수 파쇄 타이밍에 접근 불가 시 큰 DPS 손실"
+        ]
+      },
+      "heroTalents": {
+        "aldrachiReaver": {
+          "name": "알드라치 파괴자",
+          "nameEn": "Aldrachi Reaver",
+          "recommended": true,
+          "usageRate": "87.7%",
+          "description": "파괴자의 글레이브 버프 관리와 깔때기 딜에 특화. 시즌 3 티어 세트와의 시너지로 쐐기돌 최적.",
+          "tierSetBonus": {
+            "twoPiece": "파괴자의 글레이브 피해 60% 증가, 기타 물리 피해 30% 증가",
+            "fourPiece": "혼돈의 일격/파멸 후 칼춤/죽음의 휩쓸기 사용 시 알드라치의 격노 12회 베기 (기존 6회), 파괴자의 징표 2중첩 가능"
+          },
+          "keyMechanics": [
+            {
+              "name": "글레이브의 기술 (Art of the Glaive)",
+              "description": "파괴자의 글레이브 시전 시 찢는일격 + 글레이브난무 버프 획득. 두 번째로 소모하는 능력이 더 강력한 효과.",
+              "rule": "단일: 혼돈의 일격 먼저 → 칼춤 두 번째 (12회 베기 극대화)"
+            },
+            {
+              "name": "파괴자의 징표 (Reaver's Mark)",
+              "description": "혼돈의 일격이 찢는일격 첫 번째 소모 시 적용. 15% 추가 피해 (두 번째 소모 시 30%).",
+              "rule": "4세트로 2중첩 가능"
+            },
+            {
+              "name": "전투의 전율 (Thrill of the Fight)",
+              "description": "두 버프 모두 소모 후 발동. 공격 속도 15% (20초) + 피해 20% (10초).",
+              "rule": "10초 피해 증가 타이밍을 정수 파쇄와 동기화"
+            },
+            {
+              "name": "알드라치의 격노 (Fury of the Aldrachi)",
+              "description": "글레이브난무 소모한 칼춤이 추가 베기. 첫 번째 3회, 두 번째 6회, 4세트 12회."
+            }
+          ],
+          "furyManagement": {
+            "cap": 90,
+            "rules": [
+              "90 분노 이상: 즉시 스펜더 사용 (절대 오버캡 금지)",
+              "80 분노 이하: 지옥칼 사용",
+              "정수 파쇄 전: 최소 40, 이상적으로 60-80 분노 확보"
+            ]
+          }
+        },
+        "felScarred": {
+          "name": "지옥상흔",
+          "nameEn": "Fel-Scarred",
+          "recommended": false,
+          "usageRate": "12.3%",
+          "description": "악마쇄도 시스템과 탈태 극딜에 특화. 순수 ST에서 경쟁력 있으나 실행 난이도 높음.",
+          "tierSetBonus": {
+            "twoPiece": "제물의 오라 피해 30% 증가, 제물의 오라 활성 중 혼돈의 일격 피해 20% 증가",
+            "fourPiece": "탈태 진입 시 즉시 악마쇄도 발동 + 악마 영혼 파편 생성 (획득 시 10초간 피해 20% 증가)"
+          },
+          "keyMechanics": [
+            {
+              "name": "악마쇄도 (Demonsurge)",
+              "description": "탈태 상태 진입 시 특정 능력 강화. 악마화(안광) 2충전, 탈태 하드캐스트 5충전.",
+              "rule": "다음 악마 형상 진입 전에 모든 충전 소비 필수"
+            },
+            {
+              "name": "제물의 오라 5중첩 규칙",
+              "description": "내부의 화염 특성으로 2충전 + 30% 리셋 확률. 최대 5개 동시 활성 가능.",
+              "rule": "절대 2충전 상태로 두지 말 것 + 탈태 진입 전 0충전+쿨다운 상태로"
+            },
+            {
+              "name": "탈태-정수 파쇄 비동기화",
+              "description": "지옥상흔에서는 정수 파쇄를 악마쇄도 충전 모두 소비 후 지연 사용.",
+              "rule": "탈태 → 악마쇄도 능력 모두 소비 → 정수 파쇄 → 극딜"
+            },
+            {
+              "name": "탈태 중 능력 대체",
+              "description": "안광→심연의 시선, 불꽃의 인장→파멸의 인장, 제물의 오라→소멸의 불길, 혼돈의 일격→파멸, 칼춤→죽음의 휩쓸기"
+            }
+          ],
+          "furyManagement": {
+            "cap": 120,
+            "rules": [
+              "130 분노 이상: 즉시 스펜더 사용",
+              "극딜 구간 전: 분노 최대한 축적 (90-110 목표)",
+              "탈태 직후: 분노 빠르게 소비"
+            ]
+          }
+        }
+      },
+      "mechanics": [
+        {
+          "name": "정수 파쇄 80% 피해 증폭",
+          "id": "258860",
+          "icon": "💥",
+          "priority": "critical",
+          "description": "4초간 혼돈 피해 80% 증가 디버프. DPS의 60% 이상이 이 타이밍에 발생하는 가장 중요한 메커니즘.",
+          "requirements": [
+            "반드시 탈태 상태(안광 악마화 포함)에서 시전",
+            "선제공격(Initiative) 버프 활성화 (복수의 퇴각 사용)",
+            "분노 최소 40 이상, 이상적으로 60-80 확보"
+          ],
+          "optimalCombo": [
+            "죽음의 휩쓸기 즉시 사용",
+            "파멸 스팸",
+            "가속 충분 시 두 번째 죽음의 휩쓸기 (혼돈의 변형 리셋)"
+          ],
+          "forbidden": ["글레이브 투척", "제물의 오라", "불꽃의 인장 (혼돈 피해 아님)"]
+        },
+        {
+          "name": "악마화 (Demonic)",
+          "id": "198013",
+          "icon": "👁️",
+          "priority": "high",
+          "description": "안광 채널 종료 후 5초간 탈태 상태 진입. 정수 파쇄 타이밍의 핵심 enabler.",
+          "tips": [
+            "혼돈의 일격 → 파멸, 칼춤 → 죽음의 휩쓸기로 변환",
+            "탈태 상태에서 가속 20% 증가",
+            "증오의 순환으로 실제 쿨다운 약 20초"
+          ]
+        },
+        {
+          "name": "선제공격 (Initiative)",
+          "id": "198793",
+          "icon": "⚡",
+          "priority": "high",
+          "description": "복수의 퇴각 사용 후 적이 나를 공격하기 전에 공격 시 치명타 확률 10% 증가 (5초).",
+          "tips": [
+            "복수의 퇴각이 모든 대상에 대해 '공격 순서' 리셋",
+            "정수 파쇄 직전에 항상 복수의 퇴각 사용",
+            "Off-GCD이므로 안광/탈태와 동시 사용 가능"
+          ]
+        },
+        {
+          "name": "쿨다운 정렬",
+          "icon": "⏱️",
+          "priority": "high",
+          "description": "주요 쿨다운들의 정렬이 DPS를 결정합니다.",
+          "cooldowns": {
+            "eyeBeam": "~20초 (증오의 순환으로 감소) - 쿨마다 사용",
+            "essenceBreak": "40초 - 매 두 번째 안광과 동기화",
+            "vengefulRetreat": "20초 - 안광과 동기화",
+            "metamorphosis": "2분 - 매 세 번째 정수 파쇄와 동기화",
+            "theHunt": "1.5분 - 쿨마다 사용"
+          },
+          "criticalRule": "탈태 시전 전 반드시 안광과 칼춤이 쿨다운 상태여야 함 (혼돈의 변형 리셋 활용)"
+        },
+        {
+          "name": "분노 관리",
+          "icon": "⚡",
+          "priority": "high",
+          "description": "분노 오버캡은 가장 큰 DPS 손실 원인입니다.",
+          "tips": [
+            "알드라치: 90 상한, 지옥상흔: 120 상한",
+            "상한 근처에서 즉시 스펜더 사용",
+            "정수 파쇄 전 충분한 분노 확보 필수"
+          ]
+        }
+      ],
+      "rotation": {
+        "aldrachiReaver": {
+          "name": "알드라치 파괴자",
+          "opener": {
+            "description": "전투의 전율 발동과 정수 파쇄 타이밍을 완벽하게 동기화하는 17단계 오프너",
+            "prepull": [
+              {"time": "-2초", "skill": "제물의 오라", "reason": "프리풀 분노 생성"},
+              {"time": "-1초", "skill": "불꽃의 인장", "reason": "프리풀 분노 + 지속 피해"}
+            ],
+            "sequence": [
+              {"step": 1, "skill": "사냥 + 강화 물약 + 장신구", "id": "323639", "reason": "파괴자의 글레이브 즉시 발동 + 타성 버프"},
+              {"step": 2, "skill": "파괴자의 글레이브", "id": "442294", "reason": "찢는일격 + 글레이브난무 버프 획득"},
+              {"step": 3, "skill": "안광", "id": "198013", "reason": "악마화 진입"},
+              {"step": 4, "skill": "지옥칼", "id": "232893", "reason": "분노 보충"},
+              {"step": 5, "skill": "파멸", "id": "201427", "reason": "찢는일격 소모 → 파괴자의 징표 적용"},
+              {"step": 6, "skill": "정수 파쇄", "id": "258860", "reason": "4초 극딜 타이밍 시작"},
+              {"step": 7, "skill": "죽음의 휩쓸기", "id": "210152", "reason": "80% 증폭 + 글레이브난무 소모 → 12회 베기"},
+              {"step": 8, "skill": "복수의 퇴각 + 탈태 (동시)", "id": "198793", "reason": "선제공격 버프 + 혼돈의 변형 리셋"},
+              {"step": 9, "skill": "죽음의 휩쓸기", "id": "210152", "reason": "리셋된 쿨다운 사용"},
+              {"step": 10, "skill": "파멸", "id": "201427", "reason": "분노 소비"},
+              {"step": 11, "skill": "지옥칼", "id": "232893", "reason": "분노 보충"},
+              {"step": 12, "skill": "안광 (리셋됨)", "id": "198013", "reason": "혼돈의 변형으로 리셋"},
+              {"step": 13, "skill": "일반 우선순위", "reason": "이후 유지 로테이션"}
+            ]
+          },
+          "priority": {
+            "description": "정수 파쇄 타이밍 외 기본 유지 로테이션",
+            "singleTarget": [
+              {"rank": 1, "skill": "죽음의 휩쓸기", "id": "210152", "condition": "정수 파쇄 디버프 중", "reason": "80% 증폭 극대화"},
+              {"rank": 2, "skill": "파멸", "id": "201427", "condition": "정수 파쇄 디버프 중", "reason": "80% 증폭 극대화"},
+              {"rank": 3, "skill": "파괴자의 글레이브", "id": "442294", "condition": "발동 시 즉시", "reason": "버프 유지 최우선, 절대 쌓아두지 말 것"},
+              {"rank": 4, "skill": "사냥", "id": "323639", "condition": "쿨다운 시", "reason": "파괴자의 글레이브 발동 + 피해"},
+              {"rank": 5, "skill": "복수의 퇴각", "id": "198793", "condition": "안광 쿨다운과 동기화", "reason": "선제공격 + 타성 버프"},
+              {"rank": 6, "skill": "정수 파쇄", "id": "258860", "condition": "탈태 상태 + 분노 40+", "reason": "매 두 번째 안광과 동기화"},
+              {"rank": 7, "skill": "탈태", "id": "191427", "condition": "안광 쿨다운 시", "reason": "안광/칼춤 쿨다운 상태 확인 필수"},
+              {"rank": 8, "skill": "안광", "id": "198013", "condition": "쿨마다", "reason": "악마화 발동"},
+              {"rank": 9, "skill": "칼춤", "id": "188499", "condition": "글레이브난무 두 번째 소모", "reason": "알드라치의 격노 12회 베기"},
+              {"rank": 10, "skill": "파멸/혼돈의 일격", "id": "162794", "condition": "찢는일격 활성 시 우선", "reason": "파괴자의 징표 적용"},
+              {"rank": 11, "skill": "지옥칼", "id": "232893", "condition": "80 분노 이하", "reason": "분노 생성"},
+              {"rank": 12, "skill": "불꽃의 인장", "id": "204596", "condition": "90 분노 이하", "reason": "분노 생성"},
+              {"rank": 13, "skill": "제물의 오라", "id": "258920", "condition": "필러", "reason": "다른 스킬 없을 때"},
+              {"rank": 14, "skill": "글레이브 투척", "id": "185123", "condition": "최후 수단", "reason": "거의 사용 안 함"}
+            ],
+            "aoe": [
+              {"rank": 1, "skill": "파괴자의 글레이브", "id": "442294", "condition": "발동 시 즉시", "reason": "버프 유지 최우선"},
+              {"rank": 2, "skill": "지옥 돌진/지옥칼", "id": "195072", "condition": "타성 버프 중", "reason": "버프 활용"},
+              {"rank": 3, "skill": "제물의 오라", "id": "258920", "condition": "-", "reason": "광딜에서 가치 상승"},
+              {"rank": 4, "skill": "복수의 퇴각", "id": "198793", "condition": "-", "reason": "선제공격 버프"},
+              {"rank": 5, "skill": "사냥", "id": "323639", "condition": "쿨다운 시", "reason": "광역 피해 + 파괴자의 글레이브"},
+              {"rank": 6, "skill": "죽음의 휩쓸기", "id": "210152", "condition": "-", "reason": "광딜 핵심 스펜더"},
+              {"rank": 7, "skill": "탈태", "id": "191427", "condition": "안광 쿨다운 시", "reason": "안광/칼춤 리셋"},
+              {"rank": 8, "skill": "안광", "id": "198013", "condition": "쿨마다", "reason": "전방 광역"},
+              {"rank": 9, "skill": "칼춤", "id": "188499", "condition": "쿨마다", "reason": "광딜 핵심"},
+              {"rank": 10, "skill": "파멸/혼돈의 일격", "id": "162794", "condition": "찢는일격 활성 시", "reason": "분노 소비"}
+            ],
+            "targetThresholds": {
+              "2targets": "단일과 동일, 우선 대상에 파괴자의 징표 유지",
+              "3to4targets": "광딜 우선순위, 칼춤/죽음의 휩쓸기 가치 상승",
+              "5plus": "동일 우선순위, 패시브 광역이 DPS 상당 부분 차지"
+            }
+          },
+          "essenceBreakWindow": {
+            "description": "정수 파쇄 4초 타이밍은 DPS의 60% 이상이 발생하는 가장 중요한 구간입니다.",
+            "preparation": [
+              "파괴자의 징표 최소 1스택 적용",
+              "전투의 전율 피해 버프 활성화 (또는 발동 직전)",
+              "분노 60-80 확보"
+            ],
+            "combo": [
+              "파괴자의 글레이브 → 혼돈의 일격 (파괴자의 징표 적용)",
+              "복수의 퇴각 + 안광 (동시)",
+              "지옥칼 → 정수 파쇄",
+              "죽음의 휩쓸기 → 칼춤 → 칼춤 (가속 허용 시)"
+            ],
+            "forbidden": ["글레이브 투척 (GCD 낭비)", "제물의 오라 (혼돈 피해 아님)"]
+          },
+          "reaversGlaiveRules": [
+            "발동되면 즉시 사용 - 절대 쌓아두지 말 것",
+            "영혼 파편 6개 또는 사냥 시전 시 자동 발동",
+            "단일: 혼돈의 일격 먼저 → 칼춤 두 번째 (12회 베기)",
+            "광딜: 상황에 따라 순서 조절 가능"
+          ]
+        },
+        "felScarred": {
+          "name": "지옥상흔",
+          "opener": {
+            "description": "악마쇄도 충전 관리와 정수 파쇄 비동기화를 반영한 18단계 오프너",
+            "prepull": [
+              {"time": "-2초", "skill": "제물의 오라", "reason": "프리풀 분노 생성"},
+              {"time": "-1초", "skill": "불꽃의 인장", "reason": "고통의 제자 버프 준비"}
+            ],
+            "sequence": [
+              {"step": 1, "skill": "사냥 + 강화 물약 + 장신구", "id": "323639", "reason": "피해 + 분노 생성"},
+              {"step": 2, "skill": "안광", "id": "198013", "reason": "악마화 진입 → 악마쇄도 2충전 획득"},
+              {"step": 3, "skill": "지옥칼", "id": "232893", "reason": "분노 보충"},
+              {"step": 4, "skill": "죽음의 휩쓸기 (악마쇄도)", "id": "210152", "reason": "첫 번째 강화 능력 소비"},
+              {"step": 5, "skill": "파멸 (악마쇄도)", "id": "201427", "reason": "두 번째 강화 능력 소비"},
+              {"step": 6, "skill": "복수의 퇴각 + 탈태 (동시)", "id": "191427", "reason": "선제공격 + 악마쇄도 5충전 획득"},
+              {"step": 7, "skill": "죽음의 휩쓸기 (악마쇄도)", "id": "210152", "reason": "강화 능력 소비"},
+              {"step": 8, "skill": "파멸 (악마쇄도)", "id": "201427", "reason": "강화 능력 소비"},
+              {"step": 9, "skill": "파멸의 인장 (악마쇄도)", "id": "452428", "reason": "강화 능력 소비"},
+              {"step": 10, "skill": "지옥칼", "id": "232893", "reason": "분노 보충"},
+              {"step": 11, "skill": "심연의 시선 (악마쇄도)", "id": "452497", "reason": "강화 안광 소비"},
+              {"step": 12, "skill": "정수 파쇄", "id": "258860", "reason": "악마쇄도 모두 소비 후 지연 사용"},
+              {"step": 13, "skill": "죽음의 휩쓸기", "id": "210152", "reason": "80% 증폭"},
+              {"step": 14, "skill": "파멸 스팸", "id": "201427", "reason": "정수 파쇄 종료까지"},
+              {"step": 15, "skill": "소멸의 불길", "id": "452486", "reason": "탈태 종료 전 충전 모두 소비"}
+            ]
+          },
+          "priority": {
+            "description": "악마쇄도 관리와 정수 파쇄 비동기화가 핵심",
+            "singleTarget": [
+              {"rank": 1, "skill": "죽음의 휩쓸기", "id": "210152", "condition": "정수 파쇄 디버프 중", "reason": "80% 증폭"},
+              {"rank": 2, "skill": "파멸", "id": "201427", "condition": "정수 파쇄 디버프 중", "reason": "80% 증폭"},
+              {"rank": 3, "skill": "지옥칼", "id": "232893", "condition": "타성 버프 중", "reason": "버프 활용"},
+              {"rank": 4, "skill": "복수의 퇴각", "id": "198793", "condition": "안광 쿨다운과 동기화", "reason": "선제공격 버프"},
+              {"rank": 5, "skill": "사냥", "id": "323639", "condition": "쿨다운 시", "reason": "피해 + 분노"},
+              {"rank": 6, "skill": "파멸의 인장", "id": "452428", "condition": "탈태 중 + 악마쇄도 충전 있을 때", "reason": "강화 능력 우선"},
+              {"rank": 7, "skill": "정수 파쇄", "id": "258860", "condition": "악마쇄도 모두 소비 후", "reason": "비동기화 규칙"},
+              {"rank": 8, "skill": "죽음의 휩쓸기", "id": "210152", "condition": "악마쇄도 충전 있으면 우선", "reason": "강화 능력"},
+              {"rank": 9, "skill": "탈태", "id": "191427", "condition": "안광 쿨다운 + 제물의 오라 0충전", "reason": "폭력적인 변형 리셋 활용"},
+              {"rank": 10, "skill": "불꽃의 인장", "id": "204596", "condition": "안광 10초 전", "reason": "고통의 제자 버프 정렬"},
+              {"rank": 11, "skill": "안광/심연의 시선", "id": "198013", "condition": "쿨마다", "reason": "악마화 발동"},
+              {"rank": 12, "skill": "칼춤", "id": "188499", "condition": "-", "reason": "스펜더"},
+              {"rank": 13, "skill": "파멸/혼돈의 일격", "id": "162794", "condition": "-", "reason": "분노 소비"},
+              {"rank": 14, "skill": "지옥칼", "id": "232893", "condition": "130 분노 이하", "reason": "분노 생성"},
+              {"rank": 15, "skill": "제물의 오라", "id": "258920", "condition": "충전 쌓이면 즉시", "reason": "5중첩 방지"},
+              {"rank": 16, "skill": "글레이브 투척", "id": "185123", "condition": "최후 수단", "reason": "필러"}
+            ]
+          },
+          "demonsurgeRules": {
+            "description": "악마쇄도 충전은 다음 악마 형상 진입 전에 모두 소비해야 합니다.",
+            "charges": {
+              "demonic": "악마화(안광) 진입 시 2충전 (파멸 1회 + 죽음의 휩쓸기 1회 강화)",
+              "metamorphosis": "탈태 하드캐스트 시 5충전 (파멸, 죽음의 휩쓸기, 심연의 시선, 소멸의 불길, 파멸의 인장 각 1회 강화)"
+            },
+            "priority": "강화된 죽음의 휩쓸기 → 파멸 → 파멸의 인장 → 심연의 시선 → 소멸의 불길"
+          },
+          "immoAuraRules": {
+            "description": "내부의 화염 특성으로 인한 5중첩 규칙을 반드시 준수해야 합니다.",
+            "rules": [
+              "전투 중 절대 2충전 상태로 두지 말 것 - 항상 소비",
+              "탈태 진입 전 0충전 + 쿨다운 상태로 만들기",
+              "탈태 중 소멸의 불길 4중첩 이하 유지",
+              "5중첩 도달 시 자동 시전 → GCD 낭비"
+            ]
+          }
+        },
+        "cooldowns": {
+          "metamorphosis": {
+            "id": "191427",
+            "name": "탈태",
+            "cooldown": "2분",
+            "description": "주요 극딜 쿨다운. 매 세 번째 정수 파쇄와 동기화.",
+            "tips": ["시전 전 안광/칼춤 쿨다운 상태 필수", "혼돈의 변형이 리셋"]
+          },
+          "eyeBeam": {
+            "id": "198013",
+            "name": "안광",
+            "cooldown": "~20초 (증오의 순환)",
+            "description": "주력 광역 + 악마화 발동",
+            "tips": ["쿨마다 즉시 사용", "복수의 퇴각과 항상 페어링"]
+          },
+          "essenceBreak": {
+            "id": "258860",
+            "name": "정수 파쇄",
+            "cooldown": "40초",
+            "description": "DPS의 60% 이상이 발생하는 핵심 극딜",
+            "tips": ["매 두 번째 안광과 동기화", "반드시 탈태 상태에서"]
+          },
+          "theHunt": {
+            "id": "323639",
+            "name": "사냥",
+            "cooldown": "1.5분",
+            "description": "돌진 + 피해 + 알드라치에서 파괴자의 글레이브 발동",
+            "tips": ["쿨마다 즉시 사용"]
+          }
+        }
+      },
+      "tips": {
+        "general": [
+          "정수 파쇄 4초 타이밍에 DPS의 60% 이상 집중 - 이 타이밍 극대화가 핵심",
+          "분노 오버캡은 가장 큰 DPS 손실 원인 - 상한(90/120) 근처에서 즉시 스펜더",
+          "탈태 시전 전 반드시 안광과 칼춤이 쿨다운 상태인지 확인",
+          "복수의 퇴각은 Off-GCD - 안광/탈태와 동시 사용으로 선제공격 버프 활용"
+        ],
+        "aldrachiReaver": [
+          "파괴자의 글레이브는 최우선 - 발동되면 즉시 사용, 절대 쌓아두지 말 것",
+          "단일: 혼돈의 일격 먼저 → 칼춤 두 번째 (알드라치의 격노 12회 베기)",
+          "전투의 전율 10초 피해 버프를 정수 파쇄와 동기화",
+          "파괴자의 징표를 우선순위 대상에 유지하여 깔때기 딜 극대화"
+        ],
+        "felScarred": [
+          "탈태 진입 전 제물의 오라 0충전 + 쿨다운 상태로",
+          "모든 악마쇄도 충전은 다음 악마 형상 진입 전에 소비",
+          "정수 파쇄는 악마쇄도 충전 모두 소비 후 지연 사용 (비동기화)",
+          "불꽃의 인장을 안광 10초 전에 사용 (고통의 제자 버프 정렬)"
+        ]
+      },
+      "advanced": [
+        {
+          "title": "정수 파쇄 타이밍 마이크로 최적화",
+          "type": "optimization",
+          "description": "4초 타이밍 내 최대 DPS를 위한 GCD 계산 및 스킬 순서 최적화",
+          "points": [
+            "탈태 가속 20% + 장비 가속으로 GCD 1.2초 이하 목표",
+            "죽음의 휩쓸기 2회 + 파멸 2-3회가 이상적",
+            "혼돈의 변형 칼춤 리셋으로 두 번째 죽음의 휩쓸기 확보"
+          ]
+        },
+        {
+          "title": "쿨다운 홀드 vs 즉시 사용 판단",
+          "type": "decision",
+          "description": "상황에 따른 쿨다운 홀드 판단 기준",
+          "points": [
+            "정수 파쇄: 쫄이 3초 내 죽을 예정이면 다음 팩까지 홀드 (최대 10초)",
+            "탈태: 보스 취약/쫄 페이즈가 20초 내면 홀드 가치 있음 (최대 30초)",
+            "사냥: 일반적으로 쿨마다 즉시 사용 (다른 쿨다운과 정확히 안 맞음)"
+          ]
+        },
+        {
+          "title": "알드라치 파괴자: 글레이브의 기술 완전 이해",
+          "type": "mechanic",
+          "description": "파괴자의 글레이브 버프 시스템의 모든 상호작용",
+          "points": [
+            "찢는일격: 혼돈의 일격/파멸이 소모 → 파괴자의 징표 적용",
+            "글레이브난무: 칼춤/죽음의 휩쓸기가 소모 → 알드라치의 격노 발동",
+            "두 번째 소모 시 더 강한 효과 (징표 30%, 베기 12회)",
+            "전투의 전율: 두 버프 모두 소모 후 발동 (15% 공속 20초 + 20% 피해 10초)"
+          ]
+        },
+        {
+          "title": "지옥상흔: 탈태-정수 파쇄 비동기화 이유",
+          "type": "mechanic",
+          "description": "지옥상흔에서 정수 파쇄를 지연 사용하는 세 가지 이유",
+          "points": [
+            "악마쇄도 강화 능력 우선 소비로 피해 극대화",
+            "소멸의 불길 충전 모두 사용으로 지속 피해 유지",
+            "내부의 악마 프록 사이 최소 1회 파멸 보장"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "분노 오버캡",
+          "impact": "DPS 10-15% 손실",
+          "solution": "분노 바 항상 주시, 상한 근처에서 즉시 스펜더 사용. 위크오라로 80/110 경고 설정."
+        },
+        {
+          "mistake": "정수 파쇄 타이밍 낭비",
+          "impact": "DPS 20% 이상 손실",
+          "solution": "분노 40+ 확보, 탈태 상태 확인, 4초 동안 죽음의 휩쓸기/파멸만 사용."
+        },
+        {
+          "mistake": "파괴자의 글레이브 쌓아두기 (알드라치)",
+          "impact": "버프 업타임 하락, 전투의 전율 발동 감소",
+          "solution": "발동 즉시 사용, 절대 쌓아두지 않기."
+        },
+        {
+          "mistake": "제물의 오라 5중첩 (지옥상흔)",
+          "impact": "자동 시전으로 GCD 낭비",
+          "solution": "4중첩 이하 유지, 탈태 전 0충전+쿨다운 상태로."
+        },
+        {
+          "mistake": "탈태 전 안광/칼춤 미사용",
+          "impact": "혼돈의 변형 리셋 효과 낭비",
+          "solution": "탈태 시전 전 반드시 안광/칼춤 쿨다운 상태 확인."
+        }
+      ],
+      "faq": [
+        {
+          "question": "시즌 3에서 어떤 영웅 특성을 선택해야 하나요?",
+          "answer": "쐐기돌에서는 알드라치 파괴자가 압도적으로 권장됩니다 (87.7% 사용률). 깔때기 딜 능력과 시즌 3 티어 세트 시너지가 탁월합니다. 레이드 순수 ST에서는 지옥상흔이 약간 높은 DPS를 제공하지만 실행 난이도가 높아, 숙련되지 않았다면 모든 콘텐츠에서 알드라치 파괴자를 추천합니다."
+        },
+        {
+          "question": "정수 파쇄 타이밍에 무엇을 해야 하나요?",
+          "answer": "4초 동안 죽음의 휩쓸기와 파멸만 스팸하세요. 글레이브 투척, 제물의 오라, 불꽃의 인장은 절대 사용하지 마세요 (혼돈 피해가 아니라 80% 증폭 안 받음). 가속이 충분하면 죽음의 휩쓸기 2회가 목표입니다."
+        },
+        {
+          "question": "알드라치 파괴자에서 파괴자의 글레이브 언제 사용하나요?",
+          "answer": "발동되면 즉시 사용하세요. 영혼 파편 6개 모이거나 사냥 시전 시 자동 발동됩니다. 절대 쌓아두지 마세요 - 버프 업타임이 떨어지고 전투의 전율 발동 횟수가 줄어 DPS가 손실됩니다."
+        },
+        {
+          "question": "지옥상흔에서 왜 정수 파쇄를 늦게 사용하나요?",
+          "answer": "악마쇄도 충전을 모두 소비한 후 사용하는 것이 최적입니다 (비동기화). 악마쇄도로 강화된 능력들이 기본 버전보다 훨씬 높은 피해를 입히므로, 정수 파쇄 80% 증폭 없이도 먼저 사용하는 것이 효율적입니다."
+        },
+        {
+          "question": "혼돈의 낙인은 몇 % 버프인가요?",
+          "answer": "5% 마법 피해 증가입니다. 파티에 마법 피해 딜러가 있다면 상당한 파티 DPS 증가에 기여합니다."
+        }
+      ],
+      "resources": [
+        {
+          "name": "Icy Veins Havoc Demon Hunter Guide (Wordup)",
+          "url": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-guide",
+          "type": "guide"
+        },
+        {
+          "name": "Method Havoc Demon Hunter Guide",
+          "url": "https://www.method.gg/guides/havoc-demon-hunter",
+          "type": "guide"
+        },
+        {
+          "name": "Wowhead Havoc Demon Hunter Guide",
+          "url": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/overview-pve-dps",
+          "type": "guide"
+        },
+        {
+          "name": "Maxroll Havoc Demon Hunter Guide",
+          "url": "https://maxroll.gg/wow/class-guides/havoc-demon-hunter-guide",
+          "type": "guide"
+        },
+        {
+          "name": "Archon.gg Havoc Demon Hunter Statistics",
+          "url": "https://www.archon.gg/wow/builds/demon-hunter/havoc/mythic-plus/all-dungeons/this-week",
+          "type": "statistics"
+        },
+        {
+          "name": "Discord Fel Hammer (Demon Hunter Community)",
+          "url": "https://discord.gg/zGGkNGC",
+          "type": "community"
+        }
+      ]
+    },
+    "vengeance": {
+      "specName": "vengeance",
+      "specNameKo": "복수",
+      "ready": false
+    }
+  }
+}

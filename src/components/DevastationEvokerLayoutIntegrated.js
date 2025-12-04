@@ -2,15 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
-import { twwS3SkillDatabase } from '../data/twwS3FinalCleanedDatabase';
-import { devastationEvokerSkillData as skillData } from '../data/devastationEvokerSkillData';
+import { devastationEvokerSkillData as skillData } from '../data/devastationEvokerSkillData.js';
 import styles from './DevastationEvokerGuide.module.css';
-import moduleEventBus from '../services/ModuleEventBus';
-import aiFeedbackService from '../services/AIFeedbackService';
-import externalGuideCollector from '../services/ExternalGuideCollector';
-import realtimeGuideUpdater from '../services/RealtimeGuideUpdater';
-import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer';
-import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons';
+import moduleEventBus from '../services/ModuleEventBus.js';
+import aiFeedbackService from '../services/AIFeedbackService.js';
+import externalGuideCollector from '../services/ExternalGuideCollector.js';
+import realtimeGuideUpdater from '../services/RealtimeGuideUpdater.js';
+import learningAIPatternAnalyzer from '../services/LearningAIPatternAnalyzer.js';
+import { classIcons, WowIcon, getWowIcon, gameIcons } from '../utils/wowIcons.js';
 import wowheadDescriptions from '../data/wowhead-descriptions.json';
 
 // Guide 페이지의 통일된 테마 (DevastationEvoker 가이드 레이아웃)
@@ -242,7 +241,7 @@ const HeroCard = styled(Card)`
     height: 3px;
     background: ${props => {
       if (props.heroType === 'flameshaper') {
-        return 'linear-gradient(90deg, #AAD372, #8BC34A)';
+        return 'linear-gradient(90deg, #00B4D8, #00B4D8)';
       } else if (props.heroType === 'scalecommander') {
         return 'linear-gradient(90deg, #DC3545, #8B0000)';
       }
@@ -485,7 +484,7 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
     } else if (enhancedSkill.type === 'talent' || enhancedSkill.type === '특성') {
       return '#22c55e'; // 녹색 - 특성
     }
-    return '#AAD372'; // 기본 색상 - 액티브 스킬
+    return '#00B4D8'; // 기본 색상 - 액티브 스킬
   };
 
   const getTooltipPortal = () => {
@@ -527,7 +526,7 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
       left: `${left}px`,
       backgroundColor: 'rgba(26, 26, 46, 0.98)',
       backgroundImage: 'linear-gradient(135deg, rgba(170, 211, 114, 0.1) 0%, transparent 50%)',
-      border: '2px solid #AAD372',
+      border: '2px solid #00B4D8',
       borderRadius: '10px',
       padding: '16px',
       zIndex: 10000,
@@ -569,7 +568,7 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
           </div>
           <div style={{ flex: 1 }}>
             <div style={{
-              color: '#AAD372',
+              color: '#00B4D8',
               fontWeight: 'bold',
               fontSize: '18px',
               marginBottom: '2px',
@@ -619,19 +618,19 @@ const SkillIconComponent = ({ skill, size = 'medium', showTooltip = true, classN
             <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '8px' }}>
               {enhancedSkill.castTime && (
                 <>
-                  <span style={{ color: '#AAD372', fontWeight: 'bold' }}>시전 시간:</span>
+                  <span style={{ color: '#00B4D8', fontWeight: 'bold' }}>시전 시간:</span>
                   <span style={{ color: '#e0e0e0' }}>{enhancedSkill.castTime}</span>
                 </>
               )}
               {enhancedSkill.cooldown && (
                 <>
-                  <span style={{ color: '#AAD372', fontWeight: 'bold' }}>재사용 대기시간:</span>
+                  <span style={{ color: '#00B4D8', fontWeight: 'bold' }}>재사용 대기시간:</span>
                   <span style={{ color: '#ffa500' }}>{enhancedSkill.cooldown}</span>
                 </>
               )}
               {enhancedSkill.range && (
                 <>
-                  <span style={{ color: '#AAD372', fontWeight: 'bold' }}>사거리:</span>
+                  <span style={{ color: '#00B4D8', fontWeight: 'bold' }}>사거리:</span>
                   <span style={{ color: '#e0e0e0' }}>{enhancedSkill.range}</span>
                 </>
               )}
@@ -1033,7 +1032,7 @@ const DevastationEvokerLayoutIntegrated = () => {
           {/* 티어 세트 효과 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-tier']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'flameshaper' ? '#AAD372' : '#DC3545'
+              color: selectedTier === 'flameshaper' ? '#00B4D8' : '#DC3545'
             }}>티어 세트 효과</h3>
             <div className={styles.tierBonuses} style={{
               background: selectedTier === 'flameshaper'
@@ -1102,27 +1101,27 @@ const DevastationEvokerLayoutIntegrated = () => {
               : '1px solid rgba(184, 150, 216, 0.3)'
           }}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'flameshaper' ? '#AAD372' : '#DC3545'
+              color: selectedTier === 'flameshaper' ? '#00B4D8' : '#DC3545'
             }}>영웅 특성 딜링 메커니즘</h3>
 
             {selectedTier === 'flameshaper' ? (
               <>
                 <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                  <strong style={{ color: '#AAD372' }}>불꽃형성자</strong>는 {' '}
-                  <strong style={{ color: '#AAD372' }}>강력한 DoT 관리와 업화 콤보</strong>로 지속적인 화염 피해를 제공합니다.
+                  <strong style={{ color: '#00B4D8' }}>불꽃형성자</strong>는 {' '}
+                  <strong style={{ color: '#00B4D8' }}>강력한 DoT 관리와 업화 콤보</strong>로 지속적인 화염 피해를 제공합니다.
                   티어 세트와 결합 시 내면의 불꽃 효과로
                   <strong style={{ color: '#ffa500' }}>정수 폭탄이 활성화되어 폭발적인 버스트</strong>를 발휘합니다.
                 </p>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <h4 style={{ color: '#AAD372', fontSize: '1.1rem', marginBottom: '15px' }}>
+                  <h4 style={{ color: '#00B4D8', fontSize: '1.1rem', marginBottom: '15px' }}>
                     <SkillIcon skill={skillData.engulf} size="small" className={styles.inlineIcon} />
                     업화 - 핵심 버스트 메커니즘
                   </h4>
                   <ul style={{ lineHeight: '1.8', marginBottom: '15px' }}>
                     <li><strong style={{ color: '#ff6b6b' }}>불의 숨결</strong> DoT가 있는 대상에게 즉시 피해</li>
                     <li><strong style={{ color: '#ffa500' }}>2 차지 보유</strong>: 유연한 버스트 타이밍 조절</li>
-                    <li><strong style={{ color: '#AAD372' }}>내면의 불꽃 활성화</strong>: 정수 폭탄 발동</li>
+                    <li><strong style={{ color: '#00B4D8' }}>내면의 불꽃 활성화</strong>: 정수 폭탄 발동</li>
                   </ul>
                   <p style={{ color: '#e0e0e0', fontSize: '0.95rem' }}>
                     티어 2세트 효과로 DoT 피해가 <strong style={{ color: '#ffa500' }}>15% 증가</strong>하며,
@@ -1134,7 +1133,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                 </div>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <h4 style={{ color: '#AAD372', fontSize: '1.1rem', marginBottom: '15px' }}>
+                  <h4 style={{ color: '#00B4D8', fontSize: '1.1rem', marginBottom: '15px' }}>
                     <SkillIcon skill={skillData.fireBreath} size="small" className={styles.inlineIcon} />
                     불의 숨결 - DoT 관리의 핵심
                   </h4>
@@ -1143,7 +1142,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                       <strong style={{ color: '#ffa500' }}>강화 4단계</strong>: 업화와 조합 시 최대 피해
                     </li>
                     <li>
-                      <strong style={{ color: '#AAD372' }}>지속 피해</strong>: 100% 업타임 유지 필수
+                      <strong style={{ color: '#00B4D8' }}>지속 피해</strong>: 100% 업타임 유지 필수
                     </li>
                     <li>
                       <strong>최적 위치</strong>: 가장 많은 적을 관통하도록 사전 포지셔닝 필수
@@ -1168,7 +1167,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                     </li>
                     <li>
                       <SkillIcon skill={skillData.hover} size="small" className={styles.inlineIcon} />
-                      <strong style={{ color: '#AAD372' }}><SkillIcon skill={skillData.hover} textOnly={true} />로 이동 중 시전</strong> 가능
+                      <strong style={{ color: '#00B4D8' }}><SkillIcon skill={skillData.hover} textOnly={true} />로 이동 중 시전</strong> 가능
                     </li>
                     <li>레이드 단일 대상 전투에서 특히 강력 - 지속적인 DoT와 버스트 콤보</li>
                   </ul>
@@ -1178,7 +1177,7 @@ const DevastationEvokerLayoutIntegrated = () => {
               <>
                 <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                   <strong style={{ color: '#DC3545' }}>비늘사령관</strong>는 {' '}
-                  <strong style={{ color: '#AAD372' }}>현재 메타에서 압도적인 성능</strong>을 자랑합니다.
+                  <strong style={{ color: '#00B4D8' }}>현재 메타에서 압도적인 성능</strong>을 자랑합니다.
                   <SkillIcon skill={skillData.massDisintegrate} size="small" className={styles.inlineIcon} />
                   <SkillIcon skill={skillData.massDisintegrate} textOnly={true} />로 여러 적에게 동시 피해를 주며, {' '}
                   <SkillIcon skill={skillData.chargedBlast} size="small" className={styles.inlineIcon} />
@@ -1241,7 +1240,7 @@ const DevastationEvokerLayoutIntegrated = () => {
               borderRadius: '8px',
               marginTop: '15px'
             }}>
-              <p style={{ color: '#AAD372', fontSize: '0.95rem', margin: 0 }}>
+              <p style={{ color: '#00B4D8', fontSize: '0.95rem', margin: 0 }}>
                 <strong>💡 추천 콘텐츠:</strong> {' '}
                 {selectedTier === 'flameshaper' ?
                   '쐐기돌 던전, 다수 몹 구간이 많은 레이드' :
@@ -1253,7 +1252,7 @@ const DevastationEvokerLayoutIntegrated = () => {
           {/* 단일 대상 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-single']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'flameshaper' ? '#AAD372' : '#DC3545',
+              color: selectedTier === 'flameshaper' ? '#00B4D8' : '#DC3545',
               marginTop: '1.5rem'
             }}>단일 대상</h3>
 
@@ -1278,7 +1277,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                 ))}
               </div>
               {selectedTier === 'flameshaper' && (
-                <p style={{ fontSize: '0.85rem', color: '#AAD372', marginTop: '10px' }}>
+                <p style={{ fontSize: '0.85rem', color: '#00B4D8', marginTop: '10px' }}>
                   💡 팁: 불의 숨결은 1-2단계로 DoT 적용 후 업화로 폭발
                 </p>
               )}
@@ -1299,7 +1298,7 @@ const DevastationEvokerLayoutIntegrated = () => {
           {/* 광역 대상 */}
           <div className={styles.subsection} ref={subSectionRefs['rotation-aoe']}>
             <h3 className={styles.subsectionTitle} style={{
-              color: selectedTier === 'flameshaper' ? '#AAD372' : '#DC3545',
+              color: selectedTier === 'flameshaper' ? '#00B4D8' : '#DC3545',
               marginTop: '1.5rem'
             }}>광역 대상 (3+ 타겟)</h3>
 
@@ -1340,7 +1339,7 @@ const DevastationEvokerLayoutIntegrated = () => {
             {selectedTier === 'flameshaper' ? (
               <>
                 <div style={{ marginBottom: '25px' }}>
-                  <h4 style={{ color: '#AAD372', fontSize: '1.1rem', marginBottom: '15px' }}>
+                  <h4 style={{ color: '#00B4D8', fontSize: '1.1rem', marginBottom: '15px' }}>
                     <SkillIcon skill={skillData.engulf} size="small" className={styles.inlineIcon} />
                     업화 및 내면의 불꽃 시너지
                   </h4>
@@ -1645,7 +1644,7 @@ const DevastationEvokerLayoutIntegrated = () => {
           bottom: '30px',
           right: '30px',
           background: 'linear-gradient(135deg, #2a4330 0%, #1a1a2e 100%)',
-          border: '2px solid #AAD372',
+          border: '2px solid #00B4D8',
           borderRadius: '8px',
           padding: '16px 20px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(170, 211, 114, 0.3)',
@@ -1657,7 +1656,7 @@ const DevastationEvokerLayoutIntegrated = () => {
         }}>
           <span style={{ fontSize: '1.5rem' }}>✅</span>
           <div>
-            <div style={{ color: '#AAD372', fontWeight: 'bold', marginBottom: '4px' }}>복사되었습니다</div>
+            <div style={{ color: '#00B4D8', fontWeight: 'bold', marginBottom: '4px' }}>복사되었습니다</div>
             <div style={{ color: '#cbd5e1', fontSize: '0.9rem' }}>특성 창에서 가져오기 버튼을 누르고 붙여넣으세요.</div>
           </div>
         </div>
@@ -1682,9 +1681,9 @@ const DevastationEvokerLayoutIntegrated = () => {
               background: selectedTier === 'flameshaper' ?
                 'linear-gradient(135deg, #5a8656 0%, #2a4330 100%)' :
                 'rgba(255, 255, 255, 0.05)',
-              border: `2px solid ${selectedTier === 'flameshaper' ? '#AAD372' : '#2a2d35'}`,
+              border: `2px solid ${selectedTier === 'flameshaper' ? '#00B4D8' : '#2a2d35'}`,
               borderRadius: '8px',
-              color: selectedTier === 'flameshaper' ? '#AAD372' : '#94a3b8',
+              color: selectedTier === 'flameshaper' ? '#00B4D8' : '#94a3b8',
               fontSize: '1rem',
               fontWeight: '600',
               cursor: 'pointer',
@@ -1733,7 +1732,7 @@ const DevastationEvokerLayoutIntegrated = () => {
         {/* 빌드 선택 버튼들 */}
         <div style={{ padding: '20px' }}>
           <h4 style={{
-            color: selectedTier === 'flameshaper' ? '#AAD372' : '#DC3545',
+            color: selectedTier === 'flameshaper' ? '#00B4D8' : '#DC3545',
             marginBottom: '20px',
             fontSize: '1.3rem'
           }}>
@@ -1749,7 +1748,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                   background: selectedBuild === key ?
                     'linear-gradient(135deg, rgba(170, 211, 114, 0.1) 0%, rgba(170, 211, 114, 0.05) 100%)' :
                     'rgba(0, 0, 0, 0.3)',
-                  border: `1px solid ${selectedBuild === key ? '#AAD372' : '#2a2d35'}`,
+                  border: `1px solid ${selectedBuild === key ? '#00B4D8' : '#2a2d35'}`,
                   borderRadius: '8px',
                   padding: '20px',
                   cursor: 'pointer',
@@ -1767,7 +1766,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                     <span style={{ fontSize: '1.5rem' }}>{build.icon}</span>
                     <div>
                       <h5 style={{
-                        color: selectedBuild === key ? '#AAD372' : '#e0e0e0',
+                        color: selectedBuild === key ? '#00B4D8' : '#e0e0e0',
                         fontSize: '1.1rem',
                         marginBottom: '5px'
                       }}>
@@ -1780,7 +1779,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                   </div>
                   <button
                     style={{
-                      background: 'linear-gradient(135deg, #AAD372 0%, #7FB347 100%)',
+                      background: 'linear-gradient(135deg, #00B4D8 0%, #00B4D8 100%)',
                       border: 'none',
                       color: '#1a1a2e',
                       padding: '8px 16px',
@@ -1813,7 +1812,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                   padding: '10px',
                   fontFamily: 'monospace',
                   fontSize: '0.85rem',
-                  color: '#AAD372',
+                  color: '#00B4D8',
                   wordBreak: 'break-all',
                   cursor: 'pointer'
                 }}
@@ -1836,7 +1835,7 @@ const DevastationEvokerLayoutIntegrated = () => {
             border: '1px solid rgba(170, 211, 114, 0.2)',
             borderRadius: '8px'
           }}>
-            <h5 style={{ color: '#AAD372', marginBottom: '15px', fontSize: '1rem' }}>📋 특성 빌드 사용법</h5>
+            <h5 style={{ color: '#00B4D8', marginBottom: '15px', fontSize: '1rem' }}>📋 특성 빌드 사용법</h5>
             <ol style={{ color: '#cbd5e1', lineHeight: '1.8', fontSize: '0.95rem' }}>
               <li>원하는 빌드의 "복사하기" 버튼을 클릭하거나 빌드 코드를 클릭합니다.</li>
               <li>게임 내에서 특성 창(N)을 엽니다.</li>
@@ -2153,9 +2152,9 @@ const DevastationEvokerLayoutIntegrated = () => {
                 background: selectedStatHero === 'flameshaper' ?
                   'linear-gradient(135deg, #5a8656 0%, #2a4330 100%)' :
                   'rgba(255, 255, 255, 0.05)',
-                border: `2px solid ${selectedStatHero === 'flameshaper' ? '#AAD372' : '#2a2d35'}`,
+                border: `2px solid ${selectedStatHero === 'flameshaper' ? '#00B4D8' : '#2a2d35'}`,
                 borderRadius: '8px',
-                color: selectedStatHero === 'flameshaper' ? '#AAD372' : '#94a3b8',
+                color: selectedStatHero === 'flameshaper' ? '#00B4D8' : '#94a3b8',
                 fontSize: '1rem',
                 fontWeight: '600',
                 cursor: 'pointer',
@@ -2199,9 +2198,9 @@ const DevastationEvokerLayoutIntegrated = () => {
                 background: selectedStatMode === 'single' ?
                   'rgba(170, 211, 114, 0.1)' :
                   'transparent',
-                border: `1px solid ${selectedStatMode === 'single' ? '#AAD372' : '#2a2d35'}`,
+                border: `1px solid ${selectedStatMode === 'single' ? '#00B4D8' : '#2a2d35'}`,
                 borderRadius: '6px',
-                color: selectedStatMode === 'single' ? '#AAD372' : '#94a3b8',
+                color: selectedStatMode === 'single' ? '#00B4D8' : '#94a3b8',
                 fontSize: '0.95rem',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease'
@@ -2217,9 +2216,9 @@ const DevastationEvokerLayoutIntegrated = () => {
                 background: selectedStatMode === 'aoe' ?
                   'rgba(170, 211, 114, 0.1)' :
                   'transparent',
-                border: `1px solid ${selectedStatMode === 'aoe' ? '#AAD372' : '#2a2d35'}`,
+                border: `1px solid ${selectedStatMode === 'aoe' ? '#00B4D8' : '#2a2d35'}`,
                 borderRadius: '6px',
-                color: selectedStatMode === 'aoe' ? '#AAD372' : '#94a3b8',
+                color: selectedStatMode === 'aoe' ? '#00B4D8' : '#94a3b8',
                 fontSize: '0.95rem',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease'
@@ -2234,7 +2233,7 @@ const DevastationEvokerLayoutIntegrated = () => {
         <Card style={{ marginBottom: '20px' }}>
           <div className={styles.subsection} ref={subSectionRefs['stats-priority']}>
             <h3 style={{
-              color: selectedStatHero === 'flameshaper' ? '#AAD372' : '#DC3545',
+              color: selectedStatHero === 'flameshaper' ? '#00B4D8' : '#DC3545',
               fontSize: '1.3rem',
               marginBottom: '25px',
               display: 'flex',
@@ -2267,7 +2266,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                     background: index === 0 ?
                       'linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%)' :
                       'rgba(0, 0, 0, 0.3)',
-                    border: `1px solid ${index === 0 ? '#AAD372' : '#2a2d35'}`,
+                    border: `1px solid ${index === 0 ? '#00B4D8' : '#2a2d35'}`,
                     borderRadius: '8px',
                     padding: '15px 20px',
                     transition: 'all 0.3s ease',
@@ -2278,7 +2277,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                       width: '40px',
                       height: '40px',
                       background: index === 0 ?
-                        'linear-gradient(135deg, #AAD372 0%, #8BC34A 100%)' :
+                        'linear-gradient(135deg, #00B4D8 0%, #00B4D8 100%)' :
                         'linear-gradient(135deg, #2a2d35 0%, #1e2328 100%)',
                       borderRadius: '50%',
                       display: 'flex',
@@ -2310,7 +2309,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                       </span>
                       {statKey === 'weaponDamage' && (
                         <span style={{
-                          background: 'linear-gradient(135deg, #AAD372 0%, #8BC34A 100%)',
+                          background: 'linear-gradient(135deg, #00B4D8 0%, #00B4D8 100%)',
                           color: '#1a1a2e',
                           padding: '2px 8px',
                           borderRadius: '4px',
@@ -2348,7 +2347,7 @@ const DevastationEvokerLayoutIntegrated = () => {
               border: '1px solid #2a2d35'
             }}>
               <h4 style={{
-                color: '#AAD372',
+                color: '#00B4D8',
                 marginBottom: '20px',
                 fontSize: '1.2rem',
                 display: 'flex',
@@ -2434,7 +2433,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                 </h4>
 
                 <div style={{ marginBottom: '15px' }}>
-                  <h5 style={{ color: '#AAD372', marginBottom: '10px' }}>
+                  <h5 style={{ color: '#00B4D8', marginBottom: '10px' }}>
                     불꽃형성자 (Flameshaper)
                   </h5>
                   <ul style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.8' }}>
@@ -2472,7 +2471,7 @@ const DevastationEvokerLayoutIntegrated = () => {
               padding: '20px',
               marginBottom: '30px'
             }}>
-              <h4 style={{ color: '#AAD372', marginBottom: '15px', fontSize: '1.1rem' }}>
+              <h4 style={{ color: '#00B4D8', marginBottom: '15px', fontSize: '1.1rem' }}>
                 ⚠️ 중요 참고사항
               </h4>
               <ul style={{ color: '#cbd5e1', lineHeight: '1.8', fontSize: '0.95rem' }}>
@@ -2494,7 +2493,7 @@ const DevastationEvokerLayoutIntegrated = () => {
         {/* SimC 스트링 섹션 */}
         <Card>
           <div className={styles.subsection} ref={subSectionRefs['stats-simc']}>
-            <h3 style={{ color: '#AAD372', marginBottom: '20px', fontSize: '1.2rem' }}>
+            <h3 style={{ color: '#00B4D8', marginBottom: '20px', fontSize: '1.2rem' }}>
               📊 SimulationCraft 설정
             </h3>
 
@@ -2517,7 +2516,7 @@ const DevastationEvokerLayoutIntegrated = () => {
                   border: '1px solid #1e2328',
                   borderRadius: '4px',
                   padding: '15px',
-                  color: '#AAD372',
+                  color: '#00B4D8',
                   fontSize: '0.9rem',
                   fontFamily: 'monospace',
                   overflow: 'auto'
@@ -2555,7 +2554,7 @@ versatility=0.70`}
                   border: '1px solid #1e2328',
                   borderRadius: '4px',
                   padding: '15px',
-                  color: '#AAD372',
+                  color: '#00B4D8',
                   fontSize: '0.9rem',
                   fontFamily: 'monospace',
                   overflow: 'auto'
@@ -2579,7 +2578,7 @@ shoulder=,id=212016,ilevel=639`}
             {/* Raidbots 링크 */}
             <div style={{
               background: 'linear-gradient(135deg, rgba(170, 211, 114, 0.1) 0%, transparent 100%)',
-              border: '1px solid #AAD372',
+              border: '1px solid #00B4D8',
               borderRadius: '8px',
               padding: '20px',
               textAlign: 'center'
@@ -2593,7 +2592,7 @@ shoulder=,id=212016,ilevel=639`}
                 rel="noopener noreferrer"
                 style={{
                   display: 'inline-block',
-                  background: 'linear-gradient(135deg, #AAD372 0%, #7FB347 100%)',
+                  background: 'linear-gradient(135deg, #00B4D8 0%, #00B4D8 100%)',
                   color: '#1a1a2e',
                   padding: '10px 24px',
                   borderRadius: '6px',
@@ -2732,7 +2731,7 @@ shoulder=,id=212016,ilevel=639`}
               <h1 style={{
                 fontSize: '3rem',
                 fontWeight: '900',
-                background: 'linear-gradient(135deg, #AAD372 0%, #8bc34a 100%)',
+                background: 'linear-gradient(135deg, #00B4D8 0%, #8bc34a 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
