@@ -28,8 +28,8 @@ const classData = {
       className: '전사',
       spec: '방어',
       color: classColors.warrior,
-      icon: '⚔️',
-      ready: false,
+      icon: '🛡️',
+      ready: true,
       path: '/guide/warrior/protection'
     },
     {
@@ -680,7 +680,7 @@ function GuidePage() {
           transition={{ duration: 0.6 }}
         >
           <Title>직업 가이드</Title>
-          <Subtitle>11.2 패치 최신 가이드</Subtitle>
+          <Subtitle>11.2.5 패치 최신 가이드</Subtitle>
         </Header>
 
         <RoleTabs>
