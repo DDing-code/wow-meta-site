@@ -1,0 +1,2048 @@
+{
+  "metadata": {
+    "generatedAt": "2025-12-03T04:25:14.564Z",
+    "source": "Obsidian Knowledge Base",
+    "kbRoot": "WoW-Meta-Knowledge\\01-ATOMIC",
+    "totalSkills": 43,
+    "totalSynergies": 17,
+    "stats": {
+      "total": 43,
+      "byType": {
+        "atomic-buff": 9,
+        "atomic-debuff": 1,
+        "atomic-skill": 33
+      },
+      "byClass": {
+        "DemonHunter": 34,
+        "Hunter": 9
+      },
+      "bySpec": {
+        "DemonHunter-Havoc": 28,
+        "Hunter-Buffs": 2,
+        "DemonHunter-Skills": 6,
+        "Hunter-BeastMastery": 7
+      },
+      "quality": {
+        "withWikilinks": 36,
+        "withSynergies": 0,
+        "avgLinkDensity": "0.023"
+      }
+    }
+  },
+  "skills": {
+    "19574": {
+      "id": "19574",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "야수의 격노",
+      "koreanName": "야수의 격노",
+      "englishName": "Bestial Wrath",
+      "icon": "ability_druid_ferociousbite",
+      "iconName": "ability_druid_ferociousbite",
+      "school": "",
+      "cooldown": "90초",
+      "castTime": "15초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 야수의 격노 (Bestial Wrath)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Cooldown",
+        "Burst",
+        "CoreBuff"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ferociousbite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ferociousbite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ferociousbite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ferociousbite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ferociousbite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\야수의격노.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "34026": {
+      "id": "34026",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "살상 명령",
+      "koreanName": "살상 명령",
+      "englishName": "Kill Command",
+      "icon": "ability_hunter_killcommand",
+      "iconName": "ability_hunter_killcommand",
+      "school": "",
+      "cooldown": "7.5초",
+      "castTime": "",
+      "resourceCost": "30 집중",
+      "range": "",
+      "description": "# 살상 명령 (Kill Command)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Core",
+        "Damage",
+        "PetAbility"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_killcommand.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_killcommand.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_killcommand.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_killcommand.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_killcommand.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\살상명령.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "118455": {
+      "id": "118455",
+      "type": "atomic-buff",
+      "class": "Hunter",
+      "spec": "Buffs",
+      "name": "야수의 회전베기",
+      "koreanName": "야수의 회전베기",
+      "englishName": "Beast Cleave",
+      "icon": "ability_hunter_sickem",
+      "iconName": "ability_hunter_sickem",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 야수의 회전베기 (Beast Cleave)",
+      "category": "ability",
+      "tags": [],
+      "patch": "11.1",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_sickem.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_sickem.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_sickem.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_sickem.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_sickem.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.012,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\Hunter\\야수의회전베기.md",
+        "lastUpdate": ""
+      }
+    },
+    "162243": {
+      "id": "162243",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "악마의 이빨",
+      "koreanName": "악마의 이빨",
+      "englishName": "Demon's Bite",
+      "icon": "inv_weapon_glave_01",
+      "iconName": "inv_weapon_glave_01",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 악마의 이빨 (Demon's Bite)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "generator",
+        "core"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_glave_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_weapon_glave_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_weapon_glave_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_weapon_glave_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_glave_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.009,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\악마의이빨.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "162264": {
+      "id": "162264",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "악마화",
+      "koreanName": "악마화",
+      "englishName": "Metamorphosis",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "5초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 악마화 (Metamorphosis)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "burst",
+        "core"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 8,
+        "synergyCount": 0,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\악마화.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "162794": {
+      "id": "162794",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "혼돈의 일격",
+      "koreanName": "혼돈의 일격",
+      "englishName": "Chaos Strike",
+      "icon": "ability_demonhunter_chaosstrike",
+      "iconName": "ability_demonhunter_chaosstrike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "",
+      "resourceCost": "40 분노",
+      "range": "",
+      "description": "# 혼돈의 일격 (Chaos Strike)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "spender",
+        "core"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_chaosstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_chaosstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_chaosstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_chaosstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_chaosstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 9,
+        "synergyCount": 0,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\혼돈의일격.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "185123": {
+      "id": "185123",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "글레이브 투척",
+      "koreanName": "글레이브 투척",
+      "englishName": "Throw Glaive",
+      "icon": "ability_demonhunter_throwglaive",
+      "iconName": "ability_demonhunter_throwglaive",
+      "school": "",
+      "cooldown": "9초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 글레이브 투척 (Throw Glaive)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "ranged",
+        "utility"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_throwglaive.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_throwglaive.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_throwglaive.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_throwglaive.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_throwglaive.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.007,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\글레이브투척.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "188499": {
+      "id": "188499",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "칼춤",
+      "koreanName": "칼춤",
+      "englishName": "Blade Dance",
+      "icon": "ability_demonhunter_bladedance",
+      "iconName": "ability_demonhunter_bladedance",
+      "school": "",
+      "cooldown": "9초",
+      "castTime": "",
+      "resourceCost": "35 분노",
+      "range": "",
+      "description": "# 칼춤 (Blade Dance)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "spender",
+        "aoe"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_bladedance.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_bladedance.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_bladedance.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 0,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\칼춤.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "191427": {
+      "id": "191427",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "탈태",
+      "koreanName": "탈태",
+      "englishName": "Metamorphosis",
+      "icon": "ability_demonhunter_metamorphasisdps",
+      "iconName": "ability_demonhunter_metamorphasisdps",
+      "school": "",
+      "cooldown": "3분",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 탈태 (Metamorphosis)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "cooldown",
+        "burst",
+        "core",
+        "transformation"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_metamorphasisdps.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_metamorphasisdps.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_metamorphasisdps.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_metamorphasisdps.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_metamorphasisdps.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 15,
+        "synergyCount": 0,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\탈태.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "193455": {
+      "id": "193455",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "코브라 사격",
+      "koreanName": "코브라 사격",
+      "englishName": "Cobra Shot",
+      "icon": "ability_hunter_cobrashot",
+      "iconName": "ability_hunter_cobrashot",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "35 집중",
+      "range": "",
+      "description": "# 코브라 사격 (Cobra Shot)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Filler",
+        "Focus",
+        "CooldownReduction"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_cobrashot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_cobrashot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_cobrashot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_cobrashot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_cobrashot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\코브라사격.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "195072": {
+      "id": "195072",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "지옥 돌진",
+      "koreanName": "지옥 돌진",
+      "englishName": "Fel Rush",
+      "icon": "ability_demonhunter_felrush",
+      "iconName": "ability_demonhunter_felrush",
+      "school": "",
+      "cooldown": "10초 (2충전)",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 지옥 돌진 (Fel Rush)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "mobility",
+        "damage"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_felrush.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_felrush.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_felrush.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_felrush.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_felrush.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.012,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\지옥돌진.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "198013": {
+      "id": "198013",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "안광",
+      "koreanName": "안광",
+      "englishName": "Eye Beam",
+      "icon": "ability_demonhunter_eyebeam",
+      "iconName": "ability_demonhunter_eyebeam",
+      "school": "",
+      "cooldown": "40초",
+      "castTime": "",
+      "resourceCost": "30 분노",
+      "range": "",
+      "description": "# 안광 (Eye Beam)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "cooldown",
+        "channel",
+        "aoe"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_eyebeam.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_eyebeam.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_eyebeam.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_eyebeam.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_eyebeam.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 0,
+        "linkDensity": 0.044,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\안광.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "198793": {
+      "id": "198793",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "복수의 퇴각",
+      "koreanName": "복수의 퇴각",
+      "englishName": "Vengeful Retreat",
+      "icon": "ability_demonhunter_vengefulretreat2",
+      "iconName": "ability_demonhunter_vengefulretreat2",
+      "school": "",
+      "cooldown": "25초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 복수의 퇴각 (Vengeful Retreat)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "mobility",
+        "buff-activator"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_vengefulretreat2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_vengefulretreat2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_vengefulretreat2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_vengefulretreat2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_vengefulretreat2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 0,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\복수의퇴각.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "201427": {
+      "id": "201427",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "파멸",
+      "koreanName": "파멸",
+      "englishName": "Annihilation",
+      "icon": "inv_glaive_1h_npc_d_02",
+      "iconName": "inv_glaive_1h_npc_d_02",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "",
+      "resourceCost": "40 분노",
+      "range": "",
+      "description": "# 파멸 (Annihilation)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "spender",
+        "metamorphosis"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_npc_d_02.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_glaive_1h_npc_d_02.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_glaive_1h_npc_d_02.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_glaive_1h_npc_d_02.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_npc_d_02.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\파멸.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "204021": {
+      "id": "204021",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "불의 낙인",
+      "koreanName": "불의 낙인",
+      "englishName": "Fiery Brand",
+      "icon": "ability_demonhunter_fierybrand",
+      "iconName": "ability_demonhunter_fierybrand",
+      "school": "",
+      "cooldown": "60초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 불의 낙인 (Fiery Brand)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "defensive",
+        "debuff",
+        "utility"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_fierybrand.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_fierybrand.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_fierybrand.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_fierybrand.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_fierybrand.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\불의낙인.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "204596": {
+      "id": "204596",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "불꽃의 인장",
+      "koreanName": "불꽃의 인장",
+      "englishName": "Sigil of Flame",
+      "icon": "ability_demonhunter_sigilofinquisition",
+      "iconName": "ability_demonhunter_sigilofinquisition",
+      "school": "",
+      "cooldown": "30초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 불꽃의 인장 (Sigil of Flame)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "aoe",
+        "sigil"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_sigilofinquisition.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_sigilofinquisition.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_sigilofinquisition.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_sigilofinquisition.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_sigilofinquisition.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.008,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\불꽃의인장.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "207684": {
+      "id": "207684",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "원한의 인장",
+      "koreanName": "원한의 인장",
+      "englishName": "Sigil of Misery",
+      "icon": "ability_demonhunter_sigilofmisery",
+      "iconName": "ability_demonhunter_sigilofmisery",
+      "school": "",
+      "cooldown": "90초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 원한의 인장 (Sigil of Misery)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "cc",
+        "sigil",
+        "utility"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_sigilofmisery.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_sigilofmisery.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_sigilofmisery.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_sigilofmisery.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_sigilofmisery.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\원한의인장.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "210152": {
+      "id": "210152",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "죽음의 휩쓸기",
+      "koreanName": "죽음의 휩쓸기",
+      "englishName": "Death Sweep",
+      "icon": "inv_glaive_1h_artifactaldrochi_d_02dual",
+      "iconName": "inv_glaive_1h_artifactaldrochi_d_02dual",
+      "school": "",
+      "cooldown": "9초",
+      "castTime": "",
+      "resourceCost": "35 분노",
+      "range": "",
+      "description": "# 죽음의 휩쓸기 (Death Sweep)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "spender",
+        "aoe",
+        "metamorphosis"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_artifactaldrochi_d_02dual.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_glaive_1h_artifactaldrochi_d_02dual.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_glaive_1h_artifactaldrochi_d_02dual.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_glaive_1h_artifactaldrochi_d_02dual.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_artifactaldrochi_d_02dual.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\죽음의휩쓸기.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "217200": {
+      "id": "217200",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "날카로운 사격",
+      "koreanName": "날카로운 사격",
+      "englishName": "Barbed Shot",
+      "icon": "ability_hunter_barbedshot",
+      "iconName": "ability_hunter_barbedshot",
+      "school": "",
+      "cooldown": "12초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# Barbed Shot (가시 돋친 화살)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Core",
+        "DoT",
+        "FrenzyBuilder",
+        "Multidot"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_barbedshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_barbedshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_barbedshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_barbedshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_barbedshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\날카로운사격.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "232893": {
+      "id": "232893",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "지옥칼",
+      "koreanName": "지옥칼",
+      "englishName": "Felblade",
+      "icon": "ability_demonhunter_felblade",
+      "iconName": "ability_demonhunter_felblade",
+      "school": "",
+      "cooldown": "15초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 지옥칼 (Fel Blade)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "generator",
+        "mobility"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_felblade.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_felblade.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_felblade.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_felblade.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_felblade.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.007,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\지옥칼.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "258860": {
+      "id": "258860",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Skills",
+      "name": "정수 파쇄",
+      "koreanName": "정수 파쇄",
+      "englishName": "Essence Break",
+      "icon": "spell_shadow_ritualofsacrifice",
+      "iconName": "spell_shadow_ritualofsacrifice",
+      "school": "",
+      "cooldown": "40초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "근접",
+      "description": "# 정수 파쇄 (Essence Break)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "burst",
+        "core",
+        "amplifier"
+      ],
+      "patch": "11.2.5",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_ritualofsacrifice.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_ritualofsacrifice.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_ritualofsacrifice.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_ritualofsacrifice.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_ritualofsacrifice.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 9,
+        "synergyCount": 0,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\정수파쇄.md",
+        "lastUpdate": ""
+      }
+    },
+    "258920": {
+      "id": "258920",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "제물의 오라",
+      "koreanName": "제물의 오라",
+      "englishName": "Immolation Aura",
+      "icon": "ability_demonhunter_immolation",
+      "iconName": "ability_demonhunter_immolation",
+      "school": "",
+      "cooldown": "30초 (2충전)",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 제물의 오라 (Immolation Aura)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "dot",
+        "fury-gen",
+        "felscarred-core"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_immolation.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_immolation.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_immolation.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_immolation.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_immolation.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 11,
+        "synergyCount": 0,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\제물의오라.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "272790": {
+      "id": "272790",
+      "type": "atomic-buff",
+      "class": "Hunter",
+      "spec": "Buffs",
+      "name": "광기",
+      "koreanName": "광기",
+      "englishName": "Frenzy",
+      "icon": "ability_druid_rake",
+      "iconName": "ability_druid_rake",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 광기 (Frenzy)",
+      "category": "ability",
+      "tags": [],
+      "patch": "11.1",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_rake.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_rake.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_rake.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_rake.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_rake.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\Hunter\\광기.md",
+        "lastUpdate": ""
+      }
+    },
+    "320313": {
+      "id": "320313",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "활력",
+      "koreanName": "활력",
+      "englishName": "Furious Gaze",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "12초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 활력 (Furious Gaze)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "haste"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.016,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\활력.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "321530": {
+      "id": "321530",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "유혈",
+      "koreanName": "유혈",
+      "englishName": "Bloodshed",
+      "icon": "ability_hunter_bloodshed",
+      "iconName": "ability_hunter_bloodshed",
+      "school": "",
+      "cooldown": "1분",
+      "castTime": "18초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 유혈 (Bloodshed)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Cooldown",
+        "DoT",
+        "PetAbility",
+        "Burst"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_bloodshed.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_bloodshed.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bloodshed.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_bloodshed.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_bloodshed.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.014,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\유혈.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "323639": {
+      "id": "323639",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "사냥",
+      "koreanName": "사냥",
+      "englishName": "The Hunt",
+      "icon": "ability_ardenweald_demonhunter",
+      "iconName": "ability_ardenweald_demonhunter",
+      "school": "",
+      "cooldown": "90초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 사냥 (The Hunt)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "cooldown",
+        "major",
+        "mobility"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-27T00:00:00.000Z",
+      "updated": "2025-11-27T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_demonhunter.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ardenweald_demonhunter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ardenweald_demonhunter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ardenweald_demonhunter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_demonhunter.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 0,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\사냥.md",
+        "lastUpdate": "2025-11-27T00:00:00.000Z"
+      }
+    },
+    "359844": {
+      "id": "359844",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "야생의 부름",
+      "koreanName": "야생의 부름",
+      "englishName": "Call of the Wild",
+      "icon": "ability_hunter_callofthewild",
+      "iconName": "ability_hunter_callofthewild",
+      "school": "",
+      "cooldown": "3분",
+      "castTime": "20초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 야생의 부름 (Call of the Wild)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "Cooldown",
+        "MajorBurst",
+        "Summon"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_callofthewild.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_callofthewild.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_callofthewild.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_callofthewild.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_callofthewild.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\야생의부름.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "388113": {
+      "id": "388113",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "악의의 인장",
+      "koreanName": "악의의 인장",
+      "englishName": "Sigil of Spite",
+      "icon": "spell_shadow_shadesofdarkness",
+      "iconName": "spell_shadow_shadesofdarkness",
+      "school": "",
+      "cooldown": "60초",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 악의의 인장 (Sigil of Spite)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "sigil",
+        "damage",
+        "dot"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadesofdarkness.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadesofdarkness.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadesofdarkness.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\악의의인장.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "391857": {
+      "id": "391857",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "전투의 전율",
+      "koreanName": "전투의 전율",
+      "englishName": "Thrill of the Fight",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "10초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 전투의 전율 (Thrill of the Fight)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "aldrachi",
+        "damage-amp"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 8,
+        "synergyCount": 0,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\전투의전율.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "427069": {
+      "id": "427069",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "타성",
+      "koreanName": "타성",
+      "englishName": "Inertia",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "5초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 타성 (Inertia)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "damage",
+        "aldrachi"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-11-28T00:00:00.000Z",
+      "updated": "2024-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\타성.md",
+        "lastUpdate": "2024-11-28T00:00:00.000Z"
+      }
+    },
+    "430703": {
+      "id": "430703",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "name": "검은 화살",
+      "koreanName": "검은 화살",
+      "englishName": "Black Arrow",
+      "icon": "ability_theblackarrow",
+      "iconName": "ability_theblackarrow",
+      "school": "",
+      "cooldown": "Deathblow 발동",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 검은 화살 (Black Arrow) - 어둠 순찰자",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "Hunter",
+        "BeastMastery",
+        "DarkRanger",
+        "HeroTalent",
+        "Shadow",
+        "Priority"
+      ],
+      "patch": "11.2.5",
+      "created": "2024-12-02T00:00:00.000Z",
+      "updated": "2024-12-03T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_theblackarrow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_theblackarrow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_theblackarrow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_theblackarrow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_theblackarrow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.01,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\Hunter\\BeastMastery\\검은화살.md",
+        "lastUpdate": "2024-12-03T00:00:00.000Z"
+      }
+    },
+    "442294": {
+      "id": "442294",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Skills",
+      "name": "파괴자의 글레이브",
+      "koreanName": "파괴자의 글레이브",
+      "englishName": "Reaver's Glaive",
+      "icon": "inv_ability_aldrachireaverdemonhunter_reaversglaive",
+      "iconName": "inv_ability_aldrachireaverdemonhunter_reaversglaive",
+      "school": "",
+      "cooldown": "없음 (Off-GCD)",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30미터",
+      "description": "# 파괴자의 글레이브 (Reaver's Glaive)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "hero-talent",
+        "AldrachiReaver",
+        "buff-applicator",
+        "art-of-the-glaive",
+        "core"
+      ],
+      "patch": "11.2.5",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 12,
+        "synergyCount": 0,
+        "linkDensity": 0.026,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\파괴자의글레이브.md",
+        "lastUpdate": ""
+      }
+    },
+    "442624": {
+      "id": "442624",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "파괴자의 징표",
+      "koreanName": "파괴자의 징표",
+      "englishName": "Reaver's Mark",
+      "icon": "ability_hunter_harass",
+      "iconName": "ability_hunter_harass",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 파괴자의 징표 (Reaver's Mark)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "aldrachi-reaver",
+        "debuff",
+        "hero-talent",
+        "passive"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_harass.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_harass.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_harass.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\파괴자의징표.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "442688": {
+      "id": "442688",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Skills",
+      "name": "전투의 전율",
+      "koreanName": "전투의 전율",
+      "englishName": "Thrill of the Fight",
+      "icon": "ability_demonhunter_bloodlet",
+      "iconName": "ability_demonhunter_bloodlet",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "패시브 (자동 발동)",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "# 전투의 전율 (Thrill of the Fight)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "hero-talent",
+        "AldrachiReaver",
+        "self-buff",
+        "burst-window",
+        "passive"
+      ],
+      "patch": "11.2.5",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bloodlet.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_bloodlet.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_bloodlet.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_bloodlet.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bloodlet.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 11,
+        "synergyCount": 0,
+        "linkDensity": 0.026,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\전투의전율.md",
+        "lastUpdate": ""
+      }
+    },
+    "444806": {
+      "id": "444806",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "알드라치의 격노",
+      "koreanName": "알드라치의 격노",
+      "englishName": "Aldrachi's Wrath",
+      "icon": "ability_glaivetoss",
+      "iconName": "ability_glaivetoss",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 알드라치의 격노 (Aldrachi's Wrath)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "aldrachi-reaver",
+        "proc",
+        "hero-talent",
+        "passive"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_glaivetoss.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_glaivetoss.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_glaivetoss.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_glaivetoss.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_glaivetoss.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 0,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\알드라치의격노.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "452402": {
+      "id": "452402",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Skills",
+      "name": "악마쇄도",
+      "koreanName": "악마쇄도",
+      "englishName": "Demonsurge",
+      "icon": "ability_demonhunter_demonsurge",
+      "iconName": "ability_demonhunter_demonsurge",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "패시브 (자동 발동)",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 악마쇄도 (Demonsurge)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "hero-talent",
+        "FelScarred",
+        "charge-system",
+        "ability-enhancement",
+        "passive"
+      ],
+      "patch": "11.2.5",
+      "created": "",
+      "updated": "",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_demonsurge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_demonsurge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_demonsurge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_demonsurge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_demonsurge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 8,
+        "synergyCount": 0,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\악마쇄도.md",
+        "lastUpdate": ""
+      }
+    },
+    "452490": {
+      "id": "452490",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "파멸의 인장",
+      "koreanName": "파멸의 인장",
+      "englishName": "Sigil of Doom",
+      "icon": "ability_bossfelorcs_necromancer_red",
+      "iconName": "ability_bossfelorcs_necromancer_red",
+      "school": "",
+      "cooldown": "가변",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 파멸의 인장 (Sigil of Doom)",
+      "category": "ability",
+      "tags": [
+        "skill",
+        "DemonHunter",
+        "Havoc",
+        "fel-scarred",
+        "sigil",
+        "hero-talent"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-12-01T00:00:00.000Z",
+      "updated": "2025-12-01T00:00:00.000Z",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_bossfelorcs_necromancer_red.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_bossfelorcs_necromancer_red.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_bossfelorcs_necromancer_red.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_bossfelorcs_necromancer_red.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bossfelorcs_necromancer_red.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 0,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Skills\\DemonHunter\\파멸의인장.md",
+        "lastUpdate": "2025-12-01T00:00:00.000Z"
+      }
+    },
+    "선제공격": {
+      "id": "선제공격",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "선제 공격",
+      "koreanName": "선제 공격",
+      "englishName": "Initiative",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "5초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 선제 공격 (Initiative)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "crit"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 0,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\선제공격.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "악마쇄도": {
+      "id": "악마쇄도",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "악마 쇄도",
+      "koreanName": "악마 쇄도",
+      "englishName": "Demonsurge",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "프록 기반",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 악마 쇄도 (Demonsurge)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "felscarred",
+        "proc"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 7,
+        "synergyCount": 0,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\악마쇄도.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "증오의순환": {
+      "id": "증오의순환",
+      "type": "atomic-buff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "증오의 순환",
+      "koreanName": "증오의 순환",
+      "englishName": "Cycle of Hatred",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 증오의 순환 (Cycle of Hatred)",
+      "category": "ability",
+      "tags": [
+        "buff",
+        "DemonHunter",
+        "Havoc",
+        "felscarred",
+        "stacking"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 0,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\증오의순환.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    },
+    "파괴자의징표": {
+      "id": "파괴자의징표",
+      "type": "atomic-debuff",
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "name": "파괴자의 징표",
+      "koreanName": "파괴자의 징표",
+      "englishName": "Reaver's Mark",
+      "icon": "",
+      "iconName": "",
+      "school": "",
+      "cooldown": "",
+      "castTime": "20초",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 파괴자의 징표 (Reaver's Mark)",
+      "category": "ability",
+      "tags": [
+        "debuff",
+        "DemonHunter",
+        "Havoc",
+        "aldrachi",
+        "damage-amp"
+      ],
+      "patch": "11.2.5",
+      "created": "2025-11-28T00:00:00.000Z",
+      "updated": "2025-11-28T00:00:00.000Z",
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.02,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\01-ATOMIC\\Buffs\\DemonHunter\\파괴자의징표.md",
+        "lastUpdate": "2025-11-28T00:00:00.000Z"
+      }
+    }
+  }
+}
