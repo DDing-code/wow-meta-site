@@ -913,7 +913,7 @@ function isMetaChartBlock(block) {
   return /차트\s*설계|시각자료\s*구성|차트는\s*어디에|차트\s*사용|차트를\s*읽는\s*법|차트\s*읽는\s*순서|차트\s*구성|빌드별\s*차트\s*분리|지원\s*딜러\s*차트|힐링\s*차트|chart/i.test(title);
 }
 
-function getInlineChartPlan(guide) {
+function getInlineChartPlan(guide, data) {
   const plan = [
     {
       id: 'rotation',
@@ -1714,7 +1714,7 @@ function getInlineChartPlan(guide) {
       definition: [
         ['의미', '막대는 실제 로그 수치가 아니라 피해 예고, 속죄 준비, 사도/광휘 창, 외생기 분배를 한 화면에 놓기 위한 판단 도식입니다.'],
         ['읽는 법', '피해 전에는 속죄 수와 신의 권능: 광휘 충전을 보고, 피해 직후에는 회개와 정신 분열이 속죄 창 안에 들어갔는지 확인합니다.'],
-        ['검수 포인트', '환희, 고통 억제, 신의 권능: 방벽, 궁극의 참회가 같은 피해에 겹치지 않도록 구간을 나누는 것이 목표입니다.'],
+        ['검수 포인트', '고통 억제, 신의 권능: 방벽, 궁극의 참회, 보호막 분배가 같은 피해에 겹치지 않도록 구간을 나누는 것이 목표입니다.'],
       ],
     });
     return plan;
@@ -2128,7 +2128,7 @@ function GuideDetailPage() {
   }
 
   const profile = getProfile(guide);
-  const inlineChartPlan = getInlineChartPlan(guide);
+  const inlineChartPlan = getInlineChartPlan(guide, data);
 
   return (
     <Page>
@@ -2860,8 +2860,8 @@ function getUptimeRows(guide, data) {
       },
       {
         label: '외생기',
-        skill: findSkillByNames(data, ['고통 억제', '신의 권능: 방벽', '환희']),
-        note: '한 대상 급사, 위치형 공대 피해, 보호막 대량 배치를 서로 다른 위험 구간에 나눕니다.',
+        skill: findSkillByNames(data, ['고통 억제', '신의 권능: 방벽', '신의 권능: 보호막']),
+        note: '한 대상 급사, 위치형 공대 피해, 보호막 분배를 서로 다른 위험 구간에 나눕니다.',
         segments: [[34, 12], [58, 12], [88, 10]],
       },
       {
