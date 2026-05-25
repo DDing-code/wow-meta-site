@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-25T06:20:45.150Z",
+    "generatedAt": "2026-05-25T08:52:48.679Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -2167,10 +2167,10 @@
       "importance": 7,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -6569,8 +6569,6 @@
       "type": "synergy",
       "synergyType": "apex-window",
       "participants": [
-        "1261703",
-        "1261844",
         "1261849",
         "391330",
         "1272694",
@@ -8270,7 +8268,7 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
@@ -8384,9 +8382,9 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입"
       ],
@@ -8411,7 +8409,6 @@
         "73325",
         "8122",
         "33206",
-        "47536",
         "47788",
         "47585",
         "440669",
@@ -8432,7 +8429,6 @@
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/공중부양",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/환희",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
       ],
@@ -8462,7 +8458,6 @@
         "33206",
         "62618",
         "47788",
-        "64901",
         "15487"
       ],
       "class": "Priest",
@@ -8483,8 +8478,7 @@
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/공중부양",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신의위안",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/희망의상징"
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -8541,14 +8535,13 @@
         "lastUpdate": ""
       }
     },
-    "priest_discipline_pain_suppression_rapture": {
-      "id": "priest_discipline_pain_suppression_rapture",
-      "name": "고통억제-환희",
+    "priest_discipline_pain_suppression_barrier": {
+      "id": "priest_discipline_pain_suppression_barrier",
+      "name": "고통억제-방벽",
       "type": "synergy",
       "synergyType": "defensive_sequence",
       "participants": [
         "33206",
-        "47536",
         "17",
         "62618",
         "197045",
@@ -8568,7 +8561,6 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/환희",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막"
       ],
       "linkedBuffs": [],
@@ -8585,7 +8577,7 @@
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\고통억제-환희.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\고통억제-방벽.md",
         "lastUpdate": ""
       }
     },
@@ -8617,7 +8609,7 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -8700,8 +8692,8 @@
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/성스러운일격"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -8741,7 +8733,7 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/성스러운일격",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화"
       ],
       "linkedBuffs": [],
@@ -8856,7 +8848,6 @@
       "participants": [
         "428924",
         "1246802",
-        "47536",
         "472433",
         "197862",
         "440662",
@@ -8874,7 +8865,6 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/환희",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
       ],
       "linkedBuffs": [],
@@ -8910,7 +8900,7 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
       "linkedBuffs": [],
@@ -8949,7 +8939,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정"
@@ -9032,8 +9022,8 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/성스러운일격",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
@@ -9065,7 +9055,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9095,7 +9085,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온"
       ],
       "linkedBuffs": [],
@@ -9121,7 +9111,7 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -9150,7 +9140,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9181,7 +9171,7 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9254,7 +9244,7 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9331,7 +9321,7 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의마법진",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/순간치유"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9442,10 +9432,10 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
       ],
       "linkedBuffs": [],
@@ -9486,9 +9476,9 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능죽음",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
       "linkedBuffs": [],
@@ -9550,9 +9540,9 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능죽음",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -9585,9 +9575,9 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
       ],
@@ -9625,10 +9615,10 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
       ],
       "linkedBuffs": [],
@@ -9663,11 +9653,11 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
       ],
       "linkedBuffs": [],
@@ -9706,7 +9696,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류"
       ],
@@ -9766,7 +9756,7 @@
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -13851,7 +13841,7 @@
       "synergyType": "proc-generator",
       "participants": [
         "104316",
-        "267102",
+        "264173",
         "264178",
         "386194"
       ],
@@ -13966,7 +13956,7 @@
       "participants": [
         "265187",
         "1276672",
-        "1276163",
+        "1276222",
         "1276748"
       ],
       "class": "Warlock",
@@ -13983,7 +13973,6 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276190",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/폭군의-봉헌",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지배자의-손",
