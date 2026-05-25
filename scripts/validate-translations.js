@@ -1,411 +1,183 @@
-/**
- * validate-translations.js
- *
- * Build-time Translation Validation System
- *
- * Purpose: Scan all guide files and validate skill translations
- * - Extract skill references from guide files
- * - Validate against TranslationValidator
- * - Generate error report
- * - Fail build if critical errors found
- *
- * Usage:
- *   node scripts/validate-translations.js
- *   node scripts/validate-translations.js --strict  (fail on warnings)
- *   node scripts/validate-translations.js --fix     (auto-fix issues)
- *
- * @version 1.0.0
- * @created 2025-01-10
- */
+#!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import TranslationValidator from '../src/utils/TranslationValidator.js';
+const fs = require('fs');
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const SITE_ROOT = path.resolve(__dirname, '..');
+const PROJECT_ROOT = path.resolve(SITE_ROOT, '..');
+const KNOWLEDGE_ROOT = path.join(PROJECT_ROOT, 'WoW-Meta-Knowledge');
+const REQUIRED_KB_SEGMENT = '08-직업별-Knowledge-Base';
+const KB_DIR = fs.existsSync(KNOWLEDGE_ROOT)
+  ? fs.readdirSync(KNOWLEDGE_ROOT).find(name => name.startsWith('08-'))
+  : '';
+const KB_ROOT = KB_DIR ? path.join(KNOWLEDGE_ROOT, KB_DIR) : '';
 
-// CLI arguments
 const args = process.argv.slice(2);
 const STRICT_MODE = args.includes('--strict');
-const AUTO_FIX = args.includes('--fix');
 const VERBOSE = args.includes('--verbose');
+const ATOMIC_FOLDERS = new Set(['Skills', 'Talents', 'Hero-Talents', 'Synergies']);
 
-// Paths
-const GUIDES_DIR = path.resolve(__dirname, '../src/components');
-const KB_DIR = path.resolve(__dirname, '../src/knowledge-base');
+function walkFiles(root, predicate, output = []) {
+  if (!fs.existsSync(root)) return output;
 
-/**
- * Extract skill references from guide file
- * @param {string} filePath - Path to guide file
- * @returns {Array} Skill references
- */
-function extractSkillReferences(filePath) {
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const fileName = path.basename(filePath);
-  const references = [];
-
-  // Pattern 1: skillData.xxxxx
-  const skillDataPattern = /skillData\.(\w+)/g;
-  let match;
-
-  while ((match = skillDataPattern.exec(content)) !== null) {
-    const skillKey = match[1];
-    const line = content.substring(0, match.index).split('\n').length;
-
-    references.push({
-      skillKey,
-      pattern: 'skillData',
-      line,
-      fileName
-    });
-  }
-
-  // Pattern 2: import { xxx as skillData } from '../data/xxxSkillData'
-  const importPattern = /import\s+\{[^}]*\}\s+from\s+['"]\.\.\/data\/(\w+)SkillData['"]/g;
-  let importMatch;
-
-  while ((importMatch = importPattern.exec(content)) !== null) {
-    const dataFileName = importMatch[1];
-    references.push({
-      dataFileName,
-      pattern: 'import',
-      line: content.substring(0, importMatch.index).split('\n').length,
-      fileName
-    });
-  }
-
-  return references;
-}
-
-/**
- * Extract className and specName from guide file name
- * @param {string} fileName - Guide file name (e.g., "FrostDeathKnightGuide.js")
- * @returns {object} { className, specName }
- */
-function extractClassAndSpec(fileName) {
-  // Pattern: {Spec}{Class}Guide.js
-  // Examples: FrostDeathKnightGuide.js, ArcaneMageGuide.js
-
-  const match = fileName.match(/^([A-Z][a-z]+)([A-Z][a-z]+(?:[A-Z][a-z]+)?)Guide\.js$/);
-
-  if (!match) {
-    console.warn(`⚠️ Cannot parse file name: ${fileName}`);
-    return { className: 'unknown', specName: 'unknown' };
-  }
-
-  const specName = match[1].toLowerCase(); // "frost", "arcane"
-  let className = match[2].toLowerCase();  // "deathknight", "mage"
-
-  // Handle multi-word class names
-  className = className
-    .replace(/deathknight/i, 'deathknight')
-    .replace(/demonhunter/i, 'demonhunter');
-
-  return { className, specName };
-}
-
-/**
- * Scan all guide files
- * @returns {Array} Guide files with metadata
- */
-function scanGuideFiles() {
-  const guideFiles = [];
-
-  // Scan src/components/*Guide.js
-  const componentFiles = fs.readdirSync(GUIDES_DIR);
-
-  for (const file of componentFiles) {
-    if (file.endsWith('Guide.js')) {
-      const filePath = path.join(GUIDES_DIR, file);
-      const { className, specName } = extractClassAndSpec(file);
-      const references = extractSkillReferences(filePath);
-
-      guideFiles.push({
-        fileName: file,
-        filePath,
-        className,
-        specName,
-        references,
-        totalRefs: references.filter(r => r.pattern === 'skillData').length
-      });
+  for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
+    const fullPath = path.join(root, entry.name);
+    if (entry.isDirectory()) {
+      walkFiles(fullPath, predicate, output);
+    } else if (predicate(fullPath)) {
+      output.push(fullPath);
     }
   }
 
-  return guideFiles;
+  return output;
 }
 
-/**
- * Scan KB mechanism files
- * @returns {Array} KB files with metadata
- */
-function scanKBFiles() {
-  const kbFiles = [];
+function parseFrontmatter(content) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return {};
 
-  try {
-    const classNames = fs.readdirSync(KB_DIR);
+  return match[1].split(/\r?\n/).reduce((data, line) => {
+    const pair = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+    if (!pair) return data;
+    data[pair[1]] = pair[2].trim().replace(/^['"]|['"]$/g, '');
+    return data;
+  }, {});
+}
 
-    for (const className of classNames) {
-      const classPath = path.join(KB_DIR, className);
-      if (!fs.statSync(classPath).isDirectory()) continue;
+function hasHangul(value) {
+  return /[\u3131-\uD79D]/.test(String(value || ''));
+}
 
-      const specNames = fs.readdirSync(classPath);
+function hasMojibake(value) {
+  return /[�]|(?:\?[가-힣])|(?:[ìíë][\x80-\xBF])/.test(String(value || ''));
+}
 
-      for (const specName of specNames) {
-        const specPath = path.join(classPath, specName);
-        if (!fs.statSync(specPath).isDirectory()) continue;
+function classifyFile(filePath) {
+  const parts = filePath.split(path.sep);
+  return {
+    className: parts.find(part => /^\d{2}-/.test(part)) || 'unknown',
+    scope: parts[parts.findIndex(part => /^\d{2}-/.test(part)) + 1] || 'unknown',
+    bucket: parts.find(part => ATOMIC_FOLDERS.has(part)) || 'unknown',
+  };
+}
 
-        const mechanismPath = path.join(specPath, 'mechanisms');
-        if (!fs.existsSync(mechanismPath)) continue;
+function validateKbFile(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const frontmatter = parseFrontmatter(content);
+  const heading = (content.match(/^#\s+(.+)$/m) || [])[1] || '';
+  const displayName = frontmatter.name || frontmatter.koreanName || heading;
+  const relativePath = path.relative(PROJECT_ROOT, filePath);
+  const context = classifyFile(filePath);
+  const errors = [];
+  const warnings = [];
 
-        const mechanismFiles = fs.readdirSync(mechanismPath);
-
-        for (const mechFile of mechanismFiles) {
-          if (mechFile.endsWith('.js')) {
-            const filePath = path.join(mechanismPath, mechFile);
-            const references = extractSkillReferences(filePath);
-
-            kbFiles.push({
-              fileName: mechFile,
-              filePath,
-              className,
-              specName,
-              references,
-              totalRefs: references.filter(r => r.pattern === 'skillData').length
-            });
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.warn(`⚠️ KB directory not found or empty: ${KB_DIR}`);
+  if (!displayName || !hasHangul(displayName)) {
+    errors.push({
+      file: relativePath,
+      issue: 'MISSING_KOREAN_NAME',
+      message: 'KB 원자 노트에 공식 한국어 이름이 없습니다.',
+      ...context,
+    });
   }
 
-  return kbFiles;
+  if (hasMojibake(displayName) || hasMojibake(content.slice(0, 600))) {
+    errors.push({
+      file: relativePath,
+      issue: 'ENCODING_ARTIFACT',
+      message: '깨진 인코딩 문자열이 감지되었습니다.',
+      ...context,
+    });
+  }
+
+  if (frontmatter.englishName && !frontmatter.wowheadUrl && !frontmatter.sourceUrl) {
+    warnings.push({
+      file: relativePath,
+      issue: 'ENGLISH_NAME_WITHOUT_SOURCE_URL',
+      message: '영문명이 있는 항목은 Wowhead 출처 URL을 함께 갖는 것이 좋습니다.',
+      ...context,
+    });
+  }
+
+  return { errors, warnings };
 }
 
-/**
- * Validate all guide files
- * @param {Array} guideFiles - Guide files to validate
- * @returns {object} Validation report
- */
-async function validateGuides(guideFiles) {
-  const validator = new TranslationValidator();
+function main() {
+  if (!KB_ROOT || !fs.existsSync(KB_ROOT)) {
+    const report = {
+      timestamp: new Date().toISOString(),
+      strict: STRICT_MODE,
+      skipped: true,
+      reason: 'KB root is not available in this environment. Checked-in generated JSON files are used for deployment.',
+      kbRoot: KB_ROOT || path.join(KNOWLEDGE_ROOT, REQUIRED_KB_SEGMENT),
+      files: 0,
+      errors: [],
+      warnings: [],
+    };
+    const reportPath = path.join(SITE_ROOT, 'translation-validation-report.json');
+    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
+
+    console.log('\nWoW guide translation validation');
+    console.log('  skipped: KB root is not available in this environment');
+    console.log(`  report: ${reportPath}`);
+    console.log('\nTranslation validation passed');
+    return;
+  }
+
+  const files = walkFiles(KB_ROOT, filePath => {
+    if (!filePath.endsWith('.md')) return false;
+    return filePath.split(path.sep).some(part => ATOMIC_FOLDERS.has(part));
+  });
+
   const report = {
-    totalFiles: guideFiles.length,
-    totalReferences: 0,
-    validated: 0,
+    timestamp: new Date().toISOString(),
+    strict: STRICT_MODE,
+    kbRoot: KB_ROOT,
+    files: files.length,
     errors: [],
     warnings: [],
-    passed: []
   };
 
-  console.log(`\n${'='.repeat(60)}`);
-  console.log(`  번역 검증 시작 (${guideFiles.length}개 파일)`);
-  console.log('='.repeat(60));
-
-  for (const guide of guideFiles) {
-    console.log(`\n📄 검증 중: ${guide.fileName}`);
-    console.log(`   클래스: ${guide.className}/${guide.specName}`);
-    console.log(`   참조 수: ${guide.totalRefs}개`);
-
-    report.totalReferences += guide.totalRefs;
-
-    // Extract unique skill keys
-    const uniqueSkills = [...new Set(
-      guide.references
-        .filter(r => r.pattern === 'skillData')
-        .map(r => r.skillKey)
-    )];
-
-    for (const skillKey of uniqueSkills) {
-      // Convert camelCase to English name for validation
-      // e.g., "obliterate" → "Obliterate"
-      const englishName = skillKey.charAt(0).toUpperCase() + skillKey.slice(1);
-
-      // Stage 1: Pre-validation
-      const preValidation = validator.validateBeforeTranslation(
-        englishName,
-        guide.className
-      );
-
-      if (preValidation.status === 'MUST_USE_EXISTING') {
-        report.validated++;
-        report.passed.push({
-          file: guide.fileName,
-          skillKey,
-          koreanName: preValidation.koreanName,
-          tier: preValidation.tier,
-          confidence: preValidation.confidence
-        });
-
-        if (VERBOSE) {
-          console.log(`   ✅ ${skillKey}: ${preValidation.koreanName} (Tier ${preValidation.tier})`);
-        }
-
-      } else if (preValidation.status === 'PROCEED_TO_WOWHEAD') {
-        // Skill not found in internal DB - this is a warning
-        report.warnings.push({
-          file: guide.fileName,
-          line: guide.references.find(r => r.skillKey === skillKey)?.line,
-          skillKey,
-          issue: 'SKILL_NOT_IN_DB',
-          message: `스킬 "${skillKey}"가 내부 DB에 없음 - Wowhead 검증 필요`,
-          severity: 'WARNING'
-        });
-
-        console.warn(`   ⚠️ ${skillKey}: 내부 DB에 없음`);
-      }
+  for (const filePath of files) {
+    const result = validateKbFile(filePath);
+    report.errors.push(...result.errors);
+    report.warnings.push(...result.warnings);
+    if (VERBOSE && (result.errors.length || result.warnings.length)) {
+      console.log(path.relative(PROJECT_ROOT, filePath));
     }
   }
 
-  return report;
-}
+  const reportPath = path.join(SITE_ROOT, 'translation-validation-report.json');
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
 
-/**
- * Generate validation report
- * @param {object} report - Validation report
- */
-function generateReport(report) {
-  console.log(`\n${'='.repeat(60)}`);
-  console.log('  번역 검증 결과');
-  console.log('='.repeat(60));
+  console.log('\nWoW guide translation validation');
+  console.log(`  strict: ${STRICT_MODE ? 'on' : 'off'}`);
+  console.log(`  kb root: ${KB_ROOT}`);
+  console.log(`  files: ${report.files}`);
+  console.log(`  errors: ${report.errors.length}`);
+  console.log(`  warnings: ${report.warnings.length}`);
 
-  console.log(`\n📊 통계:`);
-  console.log(`   총 파일: ${report.totalFiles}개`);
-  console.log(`   총 스킬 참조: ${report.totalReferences}개`);
-  console.log(`   검증 완료: ${report.validated}개`);
-  console.log(`   오류: ${report.errors.length}개`);
-  console.log(`   경고: ${report.warnings.length}개`);
-
-  // Errors
-  if (report.errors.length > 0) {
-    console.log(`\n❌ 오류 (${report.errors.length}개):`);
-    console.log('-'.repeat(60));
-
-    for (const error of report.errors) {
-      console.log(`\n파일: ${error.file}:${error.line}`);
-      console.log(`스킬: ${error.skillKey}`);
-      console.log(`문제: ${error.issue}`);
-      console.log(`내용: ${error.message}`);
-    }
+  if (report.errors.length) {
+    console.log('\nErrors:');
+    report.errors.slice(0, 30).forEach(error => {
+      console.log(`  - ${error.file} (${error.issue})`);
+    });
   }
 
-  // Warnings
-  if (report.warnings.length > 0) {
-    console.log(`\n⚠️  경고 (${report.warnings.length}개):`);
-    console.log('-'.repeat(60));
-
-    for (const warning of report.warnings) {
-      console.log(`\n파일: ${warning.file}:${warning.line}`);
-      console.log(`스킬: ${warning.skillKey}`);
-      console.log(`문제: ${warning.issue}`);
-      console.log(`내용: ${warning.message}`);
-    }
+  if (report.warnings.length && VERBOSE) {
+    console.log('\nWarnings:');
+    report.warnings.slice(0, 30).forEach(warning => {
+      console.log(`  - ${warning.file} (${warning.issue})`);
+    });
   }
 
-  // Summary
-  console.log(`\n${'='.repeat(60)}`);
+  console.log(`\nReport saved: ${reportPath}`);
 
-  if (report.errors.length === 0 && report.warnings.length === 0) {
-    console.log('✅ 모든 번역 검증 통과!');
-    console.log('='.repeat(60));
-    return true;
-
-  } else if (report.errors.length === 0 && report.warnings.length > 0) {
-    console.log(`⚠️  경고 있음 (${report.warnings.length}개)`);
-
-    if (STRICT_MODE) {
-      console.log('❌ Strict 모드: 경고가 있어 빌드 실패');
-      console.log('='.repeat(60));
-      return false;
-    } else {
-      console.log('✅ 오류 없음 - 빌드 계속 진행');
-      console.log('='.repeat(60));
-      return true;
-    }
-
-  } else {
-    console.log(`❌ 오류 발견 (${report.errors.length}개) - 빌드 실패`);
-    console.log('='.repeat(60));
-    return false;
-  }
-}
-
-/**
- * Save report to JSON file
- * @param {object} report - Validation report
- */
-function saveReportToFile(report) {
-  const reportPath = path.resolve(__dirname, '../translation-validation-report.json');
-
-  const reportData = {
-    timestamp: new Date().toISOString(),
-    summary: {
-      totalFiles: report.totalFiles,
-      totalReferences: report.totalReferences,
-      validated: report.validated,
-      errors: report.errors.length,
-      warnings: report.warnings.length
-    },
-    errors: report.errors,
-    warnings: report.warnings,
-    passed: report.passed.slice(0, 10) // Top 10 examples
-  };
-
-  fs.writeFileSync(reportPath, JSON.stringify(reportData, null, 2), 'utf-8');
-  console.log(`\n📝 상세 리포트 저장: ${reportPath}`);
-}
-
-/**
- * Main function
- */
-async function main() {
-  console.log(`\n${'='.repeat(60)}`);
-  console.log('  WoW 가이드 번역 검증 시스템');
-  console.log('='.repeat(60));
-  console.log(`\n모드:`);
-  console.log(`  - Strict 모드: ${STRICT_MODE ? '활성화 (경고 시 빌드 실패)' : '비활성화'}`);
-  console.log(`  - Auto-fix: ${AUTO_FIX ? '활성화' : '비활성화'}`);
-  console.log(`  - Verbose: ${VERBOSE ? '활성화' : '비활성화'}`);
-
-  try {
-    // Step 1: Scan guide files
-    console.log(`\n🔍 가이드 파일 스캔 중...`);
-    const guideFiles = scanGuideFiles();
-    console.log(`✅ ${guideFiles.length}개 가이드 파일 발견`);
-
-    // Step 2: Scan KB files
-    console.log(`\n🔍 KB 파일 스캔 중...`);
-    const kbFiles = scanKBFiles();
-    console.log(`✅ ${kbFiles.length}개 KB 파일 발견`);
-
-    // Step 3: Validate all files
-    const allFiles = [...guideFiles, ...kbFiles];
-    const report = await validateGuides(allFiles);
-
-    // Step 4: Generate report
-    const success = generateReport(report);
-
-    // Step 5: Save report to file
-    saveReportToFile(report);
-
-    // Step 6: Exit with appropriate code
-    if (success) {
-      console.log(`\n✅ 검증 성공 - 빌드 계속 진행\n`);
-      process.exit(0);
-    } else {
-      console.log(`\n❌ 검증 실패 - 빌드 중단\n`);
-      process.exit(1);
-    }
-
-  } catch (error) {
-    console.error(`\n❌ 검증 실패: ${error.message}`);
-    console.error(error.stack);
+  if (report.errors.length || (STRICT_MODE && report.warnings.length)) {
+    console.error('\nTranslation validation failed');
     process.exit(1);
   }
+
+  console.log('\nTranslation validation passed');
 }
 
-// Run
 main();

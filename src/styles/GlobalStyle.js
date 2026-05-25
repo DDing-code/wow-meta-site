@@ -15,41 +15,12 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${props => props.theme.fonts.main};
-    background: ${props => props.theme.colors.primary};
-    color: ${props => props.theme.colors.text};
+    background: #070a0d;
+    color: #f4efe5;
     min-height: 100vh;
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
-
-    &:before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(192, 132, 252, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(74, 222, 128, 0.05) 0%, transparent 50%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    &:after {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      pointer-events: none;
-      opacity: 0.3;
-      z-index: 0;
-    }
   }
 
   #root {
@@ -101,29 +72,29 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: ${props => props.theme.colors.primary};
-    border-radius: ${props => props.theme.borderRadius.full};
+    background: #070a0d;
+    border-radius: 0;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.gradients.accent};
-    border-radius: ${props => props.theme.borderRadius.full};
-    border: 2px solid ${props => props.theme.colors.primary};
+    background: #b8915b;
+    border-radius: 0;
+    border: 2px solid #070a0d;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: ${props => props.theme.gradients.secondary};
+    background: #f7ddb1;
   }
 
   /* Selection */
   ::selection {
-    background: ${props => props.theme.colors.accent};
-    color: ${props => props.theme.colors.textBright};
+    background: #b8915b;
+    color: #070a0d;
   }
 
   ::-moz-selection {
-    background: ${props => props.theme.colors.accent};
-    color: ${props => props.theme.colors.textBright};
+    background: #b8915b;
+    color: #070a0d;
   }
 
   /* Animations */
