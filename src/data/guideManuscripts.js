@@ -507,34 +507,34 @@ export const guideManuscripts = {
 
   'demonhunter-devourer': {
     patch: '12.0.5',
-    researchedAt: '2026-05-25',
+    researchedAt: '2026-05-26',
     status: '심화 가이드',
     graphCenterSkillId: '471306',
     sourceStatus: 'Blizzard 12.0.5 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins, Archon/WCL 로그 집계, Wowhead 공개 Discord 목록 확인.',
     summary:
       '포식 악마사냥꾼은 25야드 원거리 DPS로, 흡수로 격노와 영혼 파편을 만들고 공허 광선으로 격노를 쓰며, 50 영혼 파편을 모아 공허 탈태에 진입한 뒤 붕괴하는 별과 집어삼키기 계열 소비기를 몰아넣는 이중 자원 전문화입니다. 12.0.5 기준 핵심은 공허 탈태가 전투 시작부터 준비된 쿨다운이 아니라는 점, 공허 탈태 안팎의 우선순위가 다르다는 점, 그리고 궤멸자(Annihilator)와 공허상흔(Void-Scarred)이 피해를 만드는 방식이 크게 다르다는 점입니다.',
     sourceNote:
-      '스킬명은 KB에 저장된 ko.wowhead.com 툴팁 API와 Wowhead 한국어 가이드의 공식 명칭을 사용했습니다. 운용 판단은 Blizzard 한국어 12.0.5 노트, Wowhead 2026-04-20 포식 개요/딜사이클/특성, Icy Veins 2026-05-19 포식 개요/딜사이클, Archon 2026-05-25 대조 기준 최근 14일 WCL 기반 레이드·쐐기 집계, Wowhead 공개 Discord 목록의 The Fel Hammer 경로를 교차 확인했습니다. 가입 후 열람되는 Discord 채널 원문은 직접 인용하지 않고, 공개 경로와 로그/가이드가 같은 방향을 가리키는 항목만 보조 근거로 둡니다.',
+      '스킬명은 KB에 저장된 ko.wowhead.com 툴팁 API와 Wowhead 한국어 가이드의 공식 명칭을 사용했습니다. 운용 판단은 Blizzard 한국어 12.0.5 노트, Wowhead 2026-04-20 포식 개요/딜사이클/특성, Icy Veins 2026-05-19 포식 개요/딜사이클, Archon 2026-05-26(KST) 대조 기준 최근 14일 레이드·쐐기 고단 로그 집계, Wowhead 공개 Discord 목록의 The Fel Hammer 경로를 교차 확인했습니다. Archon은 Normal Raid 23,330 parses에서 궤멸자(Annihilator) 99.7%, 보조 트리 0.2%, 추천 Spec & Hero 89.5%, 174.1k DPS를, Mythic+ high keys 13,669 parses에서 궤멸자(Annihilator) 100.0%, 추천 Spec & Hero 92.1%, Keystone +24, 231.7k DPS를 표시합니다. 가입 후 열람되는 Discord 채널 원문은 직접 인용하지 않고, 공개 경로와 로그/가이드가 같은 방향을 가리키는 항목만 보조 근거로 둡니다.',
     sources: [
       {
         tier: 'S',
         label: 'Blizzard 12.0.5 콘텐츠 업데이트 노트',
         url: 'https://news.blizzard.com/ko-kr/article/24271855/12-0-5',
-        updated: '2026-05-25 확인',
+        updated: '2026-05-26 확인',
         note: '포식 12.0.5 변경, 공허상흔 세부 변경, 궤멸자/공허상흔 한국어 명칭 확인',
       },
       {
         tier: 'A',
         label: 'Wowhead Devourer Demon Hunter Rotation',
         url: 'https://www.wowhead.com/guide/classes/demon-hunter/devourer/rotation-cooldowns-pve-dps',
-        updated: '2026-04-20 / 2026-05-25 확인',
+        updated: '2026-04-20 / 2026-05-26 확인',
         note: '공허 탈태의 50 영혼 파편 조건, 무질서의 시작 파편, 공허 탈태 안팎 우선순위, 공허상흔/궤멸자 광역 차이 확인',
       },
       {
         tier: 'A',
         label: 'Wowhead Devourer Demon Hunter Overview',
         url: 'https://www.wowhead.com/guide/classes/demon-hunter/devourer/overview-pve-dps',
-        updated: '2026-04-20 / 2026-05-25 확인',
+        updated: '2026-04-20 / 2026-05-26 확인',
         note: '25야드 캐스터, 이중 자원 builder-spender, 공허 광선/공허 탈태/붕괴하는 별 구조 확인',
       },
       {
@@ -555,21 +555,21 @@ export const guideManuscripts = {
         tier: 'A',
         label: 'Archon Devourer Demon Hunter Raid Talents',
         url: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/raid/talents/normal/all-bosses',
-        updated: '2026-05-25 확인',
-        note: '최근 14일 Normal Raid 23,330 parses 기반 집계. 궤멸자(Annihilator) 99.7%, 보조 트리 0.2%, 추천 Spec & Hero 89.5% 확인',
+        updated: '2026-05-26 확인',
+        note: '최근 14일 Normal Raid 상위 50% 23,330 parses 기반 집계. 궤멸자(Annihilator) 99.7%, 보조 트리 0.2%, 추천 Spec & Hero 89.5%, 174.1k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Devourer Demon Hunter Mythic+ Talents',
-        url: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
-        updated: '2026-05-25 확인',
-        note: '최근 14일 +7~+23 쐐기 267,830 parses 기반 집계. 궤멸자(Annihilator) 99.3%, 보조 트리 0.6%, 추천 Spec & Hero 77.2% 확인',
+        label: 'Archon Devourer Demon Hunter Mythic+ High Keys Talents',
+        url: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/talents/high-keys/all-dungeons/this-week',
+        updated: '2026-05-26 확인',
+        note: '최근 14일 쐐기 고단 상위 5% 13,669 parses 기반 집계. 궤멸자(Annihilator) 100.0%, 추천 Spec & Hero 92.1%, Keystone +24, 231.7k DPS 확인',
       },
       {
         tier: 'B',
         label: 'The Fel Hammer Demon Hunter Discord',
         url: 'https://www.wowhead.com/discord-servers',
-        updated: '2026-05-25 확인',
+        updated: '2026-05-26 확인',
         note: 'Wowhead가 등재한 악마사냥꾼 직업 Discord 공개 경로. 로그인/가입 뒤 채널 원문은 직접 인용하지 않음',
       },
     ],
@@ -579,7 +579,7 @@ export const guideManuscripts = {
       'Wowhead는 공허 탈태가 50 영혼 파편으로 열리고, 영혼 탐식이 있으면 35 영혼 파편으로 열리며, 무질서 때문에 전투 시작 시 25 영혼 파편을 가진다고 설명합니다.',
       'Wowhead는 공허 탈태 밖 우선순위와 안 우선순위를 분리합니다. 밖에서는 수확, 공허 탈태 진입, 공허 광선, 공허내림 발동 수확, 영혼 제물, 흡수를 보고, 안에서는 공허 광선, 붕괴하는 별, 도태, 집어삼키기를 봅니다.',
       'Icy Veins도 포식 회전을 12.0.5 기준 별도 페이지로 다루며, 공허 탈태 전후 우선순위와 주요 쿨다운을 분리합니다.',
-      'Archon의 2026-05-25 확인 기준 최근 14일 로그 집계는 궤멸자(Annihilator) 사용률이 Normal Raid 23,330 parses에서 99.7%, +7~+23 쐐기 267,830 parses에서 99.3%임을 보여줍니다.',
+      'Archon의 2026-05-26(KST) 확인 기준 최근 14일 로그 집계는 궤멸자(Annihilator) 사용률이 Normal Raid 23,330 parses에서 99.7%, 쐐기 고단 상위 5% 13,669 parses에서 100.0%임을 보여줍니다.',
       'KB에는 흡수, 수확, 공허 광선, 공허 탈태, 붕괴하는 별, 집어삼키기, 도태, 공허내림, 한밤, 공허쇄도, 공허칼날, 사냥 시너지가 연결되어 있습니다.',
     ],
     caveats: [
@@ -650,7 +650,7 @@ export const guideManuscripts = {
         paragraphs: [
           '궤멸자 포식은 흡수, 공허내림, 수확, 세계 학살자로 이어지는 원거리 루프입니다. 흡수 가동률이 낮으면 공허내림 중첩 생성이 느려지고, 수확을 잘못 쓰면 유성 피해와 파편 회수가 흔들립니다. 그래서 궤멸자는 원거리라는 장점이 있지만, 자원과 발동을 놓치면 생각보다 쉽게 비어 보입니다.',
           '세계 학살자는 공허내림 소비의 가치를 키우는 축입니다. 유성 피해가 실제 대상에게 들어가야 하므로, 보스 이동이나 쐐기 풀 이동 직전에 수확을 쓰면 기대값이 떨어질 수 있습니다. 원거리 전문화라고 해서 위치가 중요하지 않은 것이 아니라, 유성 적중과 박멸 방향 때문에 위치가 다르게 중요합니다.',
-          'Archon 로그 집계는 2026-05-25 대조 기준 레이드 23,330 parses에서 궤멸자 99.7%, 쐐기 267,830 parses에서 궤멸자 99.3%를 표시합니다. 따라서 궤멸자를 기본값으로 쓰더라도, 본문에서는 특정 특성 문자열보다 “흡수 가동률, 공허내림 소비, 수확 적중, 공허 탈태 내부 소비”를 먼저 설명해야 합니다.',
+          'Archon 로그 집계는 2026-05-26 대조 기준 레이드 23,330 parses에서 궤멸자 99.7%, 추천 Spec & Hero 89.5%, 174.1k DPS를, 쐐기 고단 상위 5% 13,669 parses에서 궤멸자 100.0%, 추천 Spec & Hero 92.1%, Keystone +24, 231.7k DPS를 표시합니다. 따라서 궤멸자를 기본값으로 쓰더라도, 본문에서는 특정 특성 문자열보다 “흡수 가동률, 공허내림 소비, 수확 적중, 공허 탈태 내부 소비”를 먼저 설명해야 합니다.',
         ],
         bullets: [
           '궤멸자는 흡수 가동률과 공허내림 소비가 핵심입니다.',
