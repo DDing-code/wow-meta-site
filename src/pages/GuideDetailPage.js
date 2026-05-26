@@ -2980,7 +2980,7 @@ function PriorityListChart({ guide, title, skills, manualPriority, inlineTerms }
       return {
         key: `${item.skillId || 'manual'}-${index}`,
         skill,
-        name: skill ? skillName(skill) : item.label,
+        name: item.label || (skill ? skillName(skill) : ''),
         note: item.note,
       };
     })
