@@ -1420,8 +1420,11 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'priest-shadow') {
     plan.push({
       id: 'uptime',
-      title: 'DoT 갱신 체크라인',
-      caption: '이 차트는 실측 로그 점수가 아니라 Wowhead/Icy Veins/KB에서 공통으로 확인한 유지, 갱신, 소모 판단을 시간축으로 바꾼 도식입니다.',
+      title: '지속 피해 갱신 체크라인',
+      sectionHeading: '지속 피해와 광기 소비 체크',
+      sectionIntro:
+        '암흑 사제의 지속 피해 유지는 흡혈의 손길과 어둠의 권능: 고통을 오래 살 대상에게 끊기지 않게 두고, 그 위에 어둠의 권능: 광기와 정신 분열 피해를 회수하는 준비 작업입니다.',
+      caption: '이 차트는 실측 로그 점수가 아니라 Wowhead/Icy Veins/KB에서 공통으로 확인한 유지, 갱신, 소비 판단을 시간축으로 바꾼 도식입니다.',
       definition: [
         ['의미', '지속 피해 유지는 흡혈의 손길과 어둠의 권능: 고통이 오래 사는 대상에게 끊기지 않도록 보는 체크입니다.'],
         ['데이터 성격', 'WCL 퍼센트가 아니라 가이드 본문과 KB 시너지 노트에서 추출한 우선순위형 도식입니다.'],
@@ -4485,13 +4488,13 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'priest-shadow') {
     return [
       {
-        label: '기본 DoT',
+        label: '기본 지속 피해',
         skill: findSkillByNames(data, ['흡혈의 손길']),
         note: '오래 사는 대상에게 유지하는 기본 지속 피해입니다.',
         segments: [[5, 40], [51, 42]],
       },
       {
-        label: '기본 DoT',
+        label: '기본 지속 피해',
         skill: findSkillByNames(data, ['어둠의 권능: 고통']),
         note: '흡혈의 손길과 함께 끊김 여부를 가장 먼저 확인합니다.',
         segments: [[3, 44], [54, 39]],
@@ -4505,7 +4508,7 @@ function getUptimeRows(guide, data) {
       {
         label: '쿨다운 공백',
         skill: findSkillByNames(data, ['정신 분열', '공허의 격류', '공허의 형상']),
-        note: 'DoT가 안정된 뒤 중간 길이 쿨다운이 밀리지 않는지 보는 구간입니다.',
+        note: '지속 피해가 안정된 뒤 중간 길이 쿨다운이 밀리지 않는지 보는 구간입니다.',
         segments: [[14, 14], [43, 13], [73, 13]],
       },
     ];
