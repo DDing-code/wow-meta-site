@@ -110,13 +110,25 @@ function displayGuideText(value) {
   return cleanText(value)
     .replace(/회복HoT/g, '회복 지속 치유')
     .replace(/\bHoT\b/g, '지속 치유')
+    .replace(/\bDoT\b/g, '지속 피해')
+    .replace(/\bRotation\b/g, '딜사이클')
+    .replace(/\bOpener\b/g, '오프닝')
+    .replace(/\bMythic\+\b/g, '쐐기')
+    .replace(/\bBurst\b/g, '극딜')
+    .replace(/\bProc\b/g, '발동')
+    .replace(/\bUptime\b/g, '유지율')
+    .replace(/\bbuilder-spender\b/gi, '생성-소비')
+    .replace(/\bspender\b/gi, '소비기')
+    .replace(/\bfiller\b/gi, '채우기 기술')
+    .replace(/\bwindow\b/gi, '창')
+    .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
+    .replace(/오프닝 레일/g, '오프닝 전투 흐름')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
     .replace(/\bSwiftmend\b/g, '신속한 치유')
     .replace(/\bRegrowth\b/g, '재생')
     .replace(/\bFlourish\b/g, '번성')
     .replace(/\bCommon\b/g, '공용')
     .replace(/번성하는성장물/g, '번성하는 성장물')
-    .replace(/\bArchon\b/g, '집정관')
     .replace(/\bVoidweaver\b/g, '공허술사')
     .replace(/\bOracle\b/g, '예언자');
 }
@@ -207,7 +219,7 @@ function findInlineTerm(text, terms, startIndex) {
 }
 
 function renderGuideText(value, terms) {
-  const text = String(value || '');
+  const text = displayGuideText(value);
   if (!text || !terms?.length) return text;
 
   const nodes = [];
@@ -1949,7 +1961,7 @@ function InlineFigure({ chart, guide, data, profile, manuscript, inlineTerms }) 
   return (
     <InlineChartFigure>
       <InlineChartHead>
-        <strong>{chart.title}</strong>
+        <strong>{renderGuideText(chart.title, inlineTerms)}</strong>
         <span>{renderGuideText(chart.caption, inlineTerms)}</span>
       </InlineChartHead>
       {!!chart.definition?.length && (
@@ -2057,7 +2069,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
   const hasOpenerGuide = !!openerFlowSteps.length || !!openerTextItems?.length;
-  const hasFieldGuide = !!manuscript.playstyle?.length || hasOpenerGuide || !!tipItems?.length;
+  const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
 
   return (
     <SectionBlock id="manuscript">
@@ -2078,18 +2090,18 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         </ManuscriptMeta>
       </PaperLead>
 
-      {hasFieldGuide && (
-        <FieldGuideGrid $color={guide.color}>
-          {hasOpenerGuide && (
-            <FieldGuideCard $color={guide.color} $wide={openerFlowSteps.length ? 'full' : false}>
-              <FieldGuideCardHead>
-                <Clock3 size={15} />
-                <strong>{getFlowCardTitle()}</strong>
-              </FieldGuideCardHead>
-              <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
-            </FieldGuideCard>
-          )}
+      {hasOpenerGuide && (
+        <OpenerFlowCard $color={guide.color}>
+          <FieldGuideCardHead>
+            <Clock3 size={15} />
+            <strong>{getFlowCardTitle()}</strong>
+          </FieldGuideCardHead>
+          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
+        </OpenerFlowCard>
+      )}
 
+      {hasSupportCards && (
+        <FieldGuideGrid $color={guide.color}>
           {!!manuscript.playstyle?.length && (
             <FieldGuideCard $color={guide.color}>
               <FieldGuideCardHead>
@@ -2367,7 +2379,7 @@ function GuideDetailPage() {
             <SectionHead>
               <SectionIcon><Zap size={17} /></SectionIcon>
               <div>
-                <SectionKicker>spell database</SectionKicker>
+                <SectionKicker>스킬 데이터</SectionKicker>
                 <SectionTitle>핵심 스킬</SectionTitle>
               </div>
             </SectionHead>
@@ -2392,7 +2404,7 @@ function GuideDetailPage() {
             <SectionHead>
               <SectionIcon><Link2 size={17} /></SectionIcon>
               <div>
-                <SectionKicker>obsidian graph</SectionKicker>
+                <SectionKicker>시너지 그래프</SectionKicker>
                 <SectionTitle>시너지 연결</SectionTitle>
               </div>
             </SectionHead>
@@ -2403,7 +2415,7 @@ function GuideDetailPage() {
             <SectionHead>
               <SectionIcon><MapIcon size={17} /></SectionIcon>
               <div>
-                <SectionKicker>source trust</SectionKicker>
+                <SectionKicker>출처 검증</SectionKicker>
                 <SectionTitle>출처와 검증 기준</SectionTitle>
               </div>
             </SectionHead>
@@ -2412,8 +2424,8 @@ function GuideDetailPage() {
                 <SourceBox key={`${guide.id}-${source.label}`} as="a" href={source.url} target="_blank" rel="noreferrer">
                   <SourceTier>{source.tier}</SourceTier>
                   <SourceBody>
-                    <strong>{source.label}</strong>
-                    <span>{source.updated} · {source.note}</span>
+                    <strong>{displayGuideText(source.label)}</strong>
+                    <span>{displayGuideText(source.updated)} · {displayGuideText(source.note)}</span>
                   </SourceBody>
                 </SourceBox>
               ))}
@@ -2783,7 +2795,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
     <RotationFeature $color={guide.color}>
       <RotationHeader>
         <div>
-          <RotationTitle>{manualOpener?.title || profile.cycleTitle}</RotationTitle>
+          <RotationTitle>{renderGuideText(manualOpener?.title || profile.cycleTitle, inlineTerms)}</RotationTitle>
           <RotationLead>
             {renderGuideText(manualOpener?.summary || (synergy ? `${synergyName(synergy)} 시너지를 기준으로 핵심 스킬을 배치했습니다.` : profile.lead), inlineTerms)}
           </RotationLead>
@@ -2805,7 +2817,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
             <RotationStep key={step.key}>
               <SkillIconLink skill={step.skill} size={48} />
               <RotationStepText>
-                <RotationStepLabel>{step.label}</RotationStepLabel>
+                <RotationStepLabel>{renderGuideText(step.label, inlineTerms)}</RotationStepLabel>
                 <RotationStepNote>{renderGuideText(step.note, inlineTerms)}</RotationStepNote>
               </RotationStepText>
             </RotationStep>
@@ -2840,7 +2852,7 @@ function PriorityListChart({ guide, title, skills, manualPriority, inlineTerms }
 
   return (
     <PriorityPanel>
-      <PriorityPanelTitle>{title}</PriorityPanelTitle>
+      <PriorityPanelTitle>{renderGuideText(title, inlineTerms)}</PriorityPanelTitle>
       {rows.map((row, index) => (
         <PriorityRow key={row.key} $rank={index}>
           <PriorityRank>{index + 1}</PriorityRank>
@@ -5263,6 +5275,11 @@ const FieldGuideCard = styled.div`
   @media (max-width: 980px) {
     grid-column: auto;
   }
+`;
+
+const OpenerFlowCard = styled(FieldGuideCard)`
+  margin: 14px 0 16px;
+  overflow: hidden;
 `;
 
 const FieldGuideCardHead = styled.div`
