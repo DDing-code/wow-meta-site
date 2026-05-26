@@ -260,71 +260,71 @@ export const guideManuscripts = {
     summary:
       '복수 악마사냥꾼은 맞은 뒤 회복하는 탱커가 아니라, 들어올 피해를 악마 쐐기, 불타는 낙인, 지옥 황폐, 탈태로 먼저 배정하고 영혼 파편을 영혼 폭탄/영혼 베어내기/영혼 방벽으로 전환해 생존과 위협을 동시에 만드는 탱커입니다. 12.0.5 기준 Wowhead, Icy Veins, Archon 로그 집계는 궤멸자를 기본값으로 두며, 알드라치 파괴자는 파괴자의 글레이브와 파괴자의 징표가 의미 있는 우선순위 대상/깔때기 전투에서 분기로 읽어야 합니다.',
     sourceNote:
-      '탱커 가이드는 고정 딜사이클이 아니라 피해 예측, 방어기 배정, 영혼 파편 경제, 던전 제어 타임라인 순서로 작성했습니다. 스킬명은 KB에 저장된 ko.wowhead.com 기준 명칭을 사용했고, 운용 판단은 Blizzard 12.0.5 공식 노트, Wowhead 2026-04-12 복수 회전 가이드, Icy Veins 2026-05-19 복수 회전/개요, Archon 2026-05-26(KST) 대조 기준 최근 14일 레이드/쐐기 고단 로그, The Fel Hammer 공개 Discord 경로를 교차 확인했습니다. Archon은 Mythic raid 6,710 parses에서 궤멸자(Annihilator) 99.8%, 알드라치 파괴자(Aldrachi Reaver) 0.1%, 추천 Spec & Hero 5.9%, 71.4k DPS를, Mythic+ high keys 3,763 parses에서 궤멸자(Annihilator) 99.7%, 알드라치 파괴자(Aldrachi Reaver) 0.2%, 추천 Spec & Hero 24.5%, Keystone +21, 112.9k DPS를 표시합니다. The Fel Hammer는 Wowhead 공개 Discord 목록에 있는 악마사냥꾼 커뮤니티 경로로만 남기고, 로그인/가입이 필요한 자료는 직접 인용하지 않습니다.',
+      '탱커 가이드는 고정 딜사이클이 아니라 피해 예측, 방어기 배정, 영혼 파편 경제, 던전 제어 타임라인 순서로 작성했습니다. 스킬명은 KB에 저장된 ko.wowhead.com 기준 명칭을 사용했고, 운용 판단은 Blizzard 12.0.5 공식 노트, Wowhead 2026-04-12 복수 딜사이클 가이드, Icy Veins 2026-05-19 복수 딜사이클/개요, Archon 2026-05-26(KST) 대조 기준 최근 14일 레이드/쐐기 고단 로그, The Fel Hammer 공개 Discord 경로를 교차 확인했습니다. Archon은 신화 레이드 6,710파싱에서 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 전문화+영웅 빌드 5.9%, 71.4k DPS를, 쐐기 고단 3,793파싱에서 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 전문화+영웅 빌드 24.3%, 쐐기돌 +21, 115.3k DPS를 표시합니다. The Fel Hammer는 Wowhead 공개 Discord 목록에 있는 악마사냥꾼 커뮤니티 경로로만 남기고, 로그인/가입이 필요한 자료는 직접 인용하지 않습니다.',
     sources: [
       {
         tier: 'S',
-        label: 'Blizzard 12.0.5 Content Update Notes',
+        label: 'Blizzard 12.0.5 콘텐츠 업데이트 노트',
         url: 'https://news.blizzard.com/en-us/article/24271855/12-0-5-content-update-notes',
         updated: '2026-04-21 / 2026-05-26 대조',
         note: '패치 기준과 악마사냥꾼 항목 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Vengeance Demon Hunter Rotation',
+        label: 'Wowhead 복수 악마사냥꾼 딜사이클',
         url: 'https://www.wowhead.com/guide/classes/demon-hunter/vengeance/rotation-cooldowns-pve-tank',
         updated: '2026-04-12 / 2026-05-26 대조',
         note: '영혼 파편 생성/소비, 공허내림, 탈태 덮어쓰기 주의, 악마 쐐기/불타는 낙인/지옥 황폐 사용 조건 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Vengeance Demon Hunter Overview',
+        label: 'Wowhead 복수 악마사냥꾼 개요',
         url: 'https://www.wowhead.com/guide/classes/demon-hunter/vengeance/overview-pve-tank',
         updated: '2026-03-12 / 2026-05-26 대조',
         note: '전문화 역할, 자가 회복, 기동성, 인장 제어, Midnight 구조 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Vengeance Rotation',
+        label: 'Icy Veins 복수 악마사냥꾼 딜사이클',
         url: 'https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-rotation-cooldowns-abilities',
         updated: '2026-05-19 / 2026-05-26 대조',
-        note: '영혼 파편 builder-spender, 궤멸자 공허내림, 알드라치 전투의 전율 유지, 방어/공격 우선순위 확인',
+        note: '영혼 파편 생성-소비 구조, 궤멸자 공허내림, 알드라치 전투의 전율 유지, 방어/공격 우선순위 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Vengeance Demon Hunter Guide',
+        label: 'Icy Veins 복수 악마사냥꾼 가이드',
         url: 'https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-guide',
         updated: '2026-05-19 / 2026-05-26 대조',
         note: '12.0.5 개요, 쐐기 유틸리티, 생존/공격 트레이드오프, Demon Hunter Discord 연계 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Vengeance Demon Hunter Raid Talents',
+        label: 'Archon 복수 악마사냥꾼 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/talents/mythic/all-bosses',
         updated: '2026-05-26 대조',
-        note: '최근 14일 Mythic Raid 상위 50% 6,710 parses, 궤멸자(Annihilator) 99.8%, 알드라치 파괴자(Aldrachi Reaver) 0.1%, 추천 Spec & Hero 5.9%, 71.4k DPS 확인',
+        note: '최근 14일 신화 레이드 상위 50% 6,710파싱, 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 전문화+영웅 빌드 5.9%, 71.4k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Vengeance Demon Hunter Mythic+ High Keys Talents',
+        label: 'Archon 복수 악마사냥꾼 쐐기 고단 특성',
         url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/talents/high-keys/all-dungeons/this-week',
         updated: '2026-05-26 대조',
-        note: '최근 14일 쐐기 고단 상위 5% 3,763 parses, 궤멸자(Annihilator) 99.7%, 알드라치 파괴자(Aldrachi Reaver) 0.2%, 추천 Spec & Hero 24.5%, Keystone +21, 112.9k DPS 확인',
+        note: '최근 14일 쐐기 고단 상위 5% 3,793파싱, 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 전문화+영웅 빌드 24.3%, 쐐기돌 +21, 115.3k DPS 확인',
       },
       {
         tier: 'B',
-        label: 'The Fel Hammer Demon Hunter Discord Public Listing',
+        label: 'The Fel Hammer 악마사냥꾼 Discord 공개 경로',
         url: 'https://www.wowhead.com/discord-servers',
         updated: '2026-05-26 대조',
         note: 'Wowhead 공개 Discord 목록의 Demon Hunter: The Fel Hammer 경로 확인. 로그인/가입 필요 자료는 직접 인용하지 않음',
       },
     ],
     evidence: [
-      'Wowhead는 복수가 두 자원, 즉 격노와 영혼 파편을 만들고 소비하는 priority builder-spender 탱커이며, 생성기를 놀리지 않는 것이 중요하다고 설명합니다.',
+      'Wowhead는 복수가 두 자원, 즉 격노와 영혼 파편을 만들고 소비하는 우선순위형 생성-소비 탱커이며, 생성기를 놀리지 않는 것이 중요하다고 설명합니다.',
       'Wowhead는 탈태를 이미 다른 발동 탈태가 5초 이상 남은 상태에서 덮어쓰지 말라고 경고하고, 큰 탱버스터가 곧 오면 최대 10초 정도 보류할 수 있다고 설명합니다.',
       'Icy Veins는 복수의 핵심 목표를 영혼 파편 생성과 영혼 폭탄/영혼 베어내기 소비로 설명하고, 궤멸자에서는 균열을 통해 공허내림을 만들며 3중첩 소비로 피해를 방출한다고 설명합니다.',
       'Icy Veins 개요는 복수가 쐐기에서 침묵의 인장, 불행의 인장, 혼돈의 회오리로 강한 제어를 제공하지만, 레이드 유틸리티는 상대적으로 제한적이라고 설명합니다.',
-      'Archon 2026-05-26(KST) 대조 기준 레이드는 6,710 parses에서 궤멸자(Annihilator) 99.8%, 알드라치 파괴자(Aldrachi Reaver) 0.1%, 추천 Spec & Hero 5.9%, 71.4k DPS이고, 쐐기 고단 상위 5%는 3,763 parses에서 궤멸자(Annihilator) 99.7%, 알드라치 파괴자(Aldrachi Reaver) 0.2%, 추천 Spec & Hero 24.5%, Keystone +21, 112.9k DPS입니다.',
+      'Archon 2026-05-26(KST) 대조 기준 레이드는 6,710파싱에서 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 전문화+영웅 빌드 5.9%, 71.4k DPS이고, 쐐기 고단 상위 5%는 3,793파싱에서 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 전문화+영웅 빌드 24.3%, 쐐기돌 +21, 115.3k DPS입니다.',
       'KB에는 균열, 영혼 폭탄, 영혼 베어내기, 악마 쐐기, 불타는 낙인, 지옥 황폐, 탈태, 인장류, 영혼 방벽, 공허내림 시너지가 연결되어 있습니다.',
     ],
     caveats: [
@@ -337,8 +337,8 @@ export const guideManuscripts = {
         title: '1. 핵심 결론',
         paragraphs: [
           '복수 악마사냥꾼의 핵심은 “피가 빠지면 회복한다”가 아니라 “맞기 전에 어떤 층으로 받을지 정한다”입니다. 기본 물리 피해는 악마 쐐기, 특정 위험 대상은 불타는 낙인, 체력과 광역 위협을 동시에 봐야 하는 구간은 지옥 황폐, 정말 큰 구간은 탈태로 받습니다. 영혼 파편은 그 위에 깔리는 회복·피해·방어 보조 자원입니다.',
-          '12.0.5 기준 로그와 가이드의 기본값은 궤멸자입니다. 2026-05-26 대조 기준 Archon 레이드는 6,710 parses에서 궤멸자(Annihilator) 99.8%, 알드라치 파괴자(Aldrachi Reaver) 0.1%이고, 쐐기 고단 상위 5%는 3,763 parses에서 궤멸자(Annihilator) 99.7%, 알드라치 파괴자(Aldrachi Reaver) 0.2%입니다. Icy Veins도 단일/광역 기본 추천으로 궤멸자를 둡니다. 알드라치 파괴자는 버리는 선택지가 아니라, 전투의 전율 유지와 파괴자의 글레이브, 파괴자의 징표를 우선순위 대상에 활용할 수 있을 때 따로 읽는 분기입니다.',
-          '복수 페이지는 공격 순서표보다 방어 레일과 자원 레일이 중요합니다. 균열을 쉬게 두지 않고 영혼 파편을 만들며, 영혼 폭탄과 영혼 베어내기 중 무엇으로 소비할지 결정하고, 인장류를 던전 위험 주문과 맞추는 구조가 실제 실력 차이를 만듭니다.',
+          '12.0.5 기준 로그와 가이드의 기본값은 궤멸자입니다. 2026-05-26 대조 기준 Archon 레이드는 6,710파싱에서 궤멸자 99.8%, 알드라치 파괴자 0.1%이고, 쐐기 고단 상위 5%는 3,793파싱에서 궤멸자 99.7%, 알드라치 파괴자 0.2%입니다. Icy Veins도 단일/광역 기본 추천으로 궤멸자를 둡니다. 알드라치 파괴자는 버리는 선택지가 아니라, 전투의 전율 유지와 파괴자의 글레이브, 파괴자의 징표를 우선순위 대상에 활용할 수 있을 때 따로 읽는 분기입니다.',
+          '복수 페이지는 공격 순서표보다 방어 흐름과 자원 흐름이 중요합니다. 균열을 쉬게 두지 않고 영혼 파편을 만들며, 영혼 폭탄과 영혼 베어내기 중 무엇으로 소비할지 결정하고, 인장류를 던전 위험 주문과 맞추는 구조가 실제 실력 차이를 만듭니다.',
         ],
         bullets: [
           '항상 먼저 볼 것: 내가 지금 활성 탱킹 중인지, 다음 큰 피해가 물리인지 혼합 피해인지.',
@@ -366,7 +366,7 @@ export const guideManuscripts = {
         paragraphs: [
           '악마 쐐기는 복수의 기본 능동 방어입니다. 이미 체력이 낮아진 뒤 누르는 응급 버튼이 아니라, 다음 물리 피해가 들어오기 전에 깔아두는 완화층입니다. 충전이 완전히 차서 놀기 직전이거나 다른 방어기가 비어 있는 활성 탱킹 구간이면 먼저 사용 후보가 됩니다.',
           '불타는 낙인은 특정 대상의 피해를 낮추는 버튼입니다. 광역 위협이나 딜을 위해 아무 대상에나 쓰면, 정작 탱버스터를 치는 대상에게 남지 않을 수 있습니다. Wowhead는 큰 탱버스터가 곧 오면 불타는 낙인을 짧게 보류할 수 있다고 설명합니다. 이 보류는 장시간 대기가 아니라, 실제 위험 타이머를 덮기 위한 짧은 조정입니다.',
-          '지옥 황폐와 탈태는 공격 가치도 있지만 탱커에게는 생존 레일에 먼저 놓아야 합니다. 지옥 황폐는 피해와 회복을 같이 만들고, 탈태는 체력과 방어도를 크게 올리는 대형 생존기입니다. 다만 탈태는 발동 탈태가 이미 5초 이상 남아 있으면 덮어쓰기 손실이 생길 수 있어, 단순 쿨마다 누르기보다 남은 시간을 확인해야 합니다.',
+          '지옥 황폐와 탈태는 공격 가치도 있지만 탱커에게는 생존 흐름에 먼저 놓아야 합니다. 지옥 황폐는 피해와 회복을 같이 만들고, 탈태는 체력과 방어도를 크게 올리는 대형 생존기입니다. 다만 탈태는 발동 탈태가 이미 5초 이상 남아 있으면 덮어쓰기 손실이 생길 수 있어, 단순 쿨마다 누르기보다 남은 시간을 확인해야 합니다.',
         ],
         bullets: [
           '악마 쐐기는 다음 물리 피해 직전 또는 충전 낭비 직전에 씁니다.',
@@ -421,7 +421,7 @@ export const guideManuscripts = {
         title: '7. 레이드 탱킹 판단',
         paragraphs: [
           '레이드에서 복수의 가치는 쐐기와 다르게 보입니다. Icy Veins는 복수 유틸리티가 쐐기에는 강하지만 레이드에서는 적용되는 경우가 제한적이라고 설명합니다. 따라서 레이드에서는 인장 제어보다 탱버스터 타이머, 방어기 중첩 방지, 교대 직전/직후의 영혼 파편 관리가 더 중요합니다.',
-          '활성 탱킹 중에는 악마 쐐기와 불타는 낙인을 다음 강타에 맞추고, 비활성 탱킹 중에는 파편과 격노를 과하게 비워서 다음 교대 직후 비는 상황을 만들지 않아야 합니다. 탱커 교대 직전 지옥 황폐나 탈태를 공격적으로 써 버리면, 다음 활성 구간의 생존 레일이 짧아질 수 있습니다.',
+          '활성 탱킹 중에는 악마 쐐기와 불타는 낙인을 다음 강타에 맞추고, 비활성 탱킹 중에는 파편과 격노를 과하게 비워서 다음 교대 직후 비는 상황을 만들지 않아야 합니다. 탱커 교대 직전 지옥 황폐나 탈태를 공격적으로 써 버리면, 다음 활성 구간의 생존 흐름이 짧아질 수 있습니다.',
           '어둠은 파티 생존기지만 레이드에서는 기대값이 던전과 다르게 계산됩니다. 단일 큰 타격보다 여러 번 들어오는 광역 피해, 또는 파티가 한 지점에 모여 효과를 받을 수 있는 구간에서 더 의미가 있습니다. 그래서 어둠은 복수 개인 생존기 목록이 아니라 공격대 피해 타임라인에 따로 배정하는 편이 맞습니다.',
         ],
         bullets: [
@@ -474,7 +474,7 @@ export const guideManuscripts = {
       },
     ],
     opener: {
-      title: '복수 풀 진입: 위치-방어-파편 레일',
+      title: '복수 풀 진입: 위치-방어-파편 전투 흐름',
       summary:
         '풀 시작의 목적은 먼저 맞고 회복하는 것이 아니라, 불지옥 일격과 인장 위치로 적을 모으고, 악마 쐐기로 첫 물리 피해를 받으며, 균열과 제물의 오라로 영혼 파편/격노 흐름을 만든 뒤 상황에 맞는 소비기로 전환하는 것입니다.',
       steps: [

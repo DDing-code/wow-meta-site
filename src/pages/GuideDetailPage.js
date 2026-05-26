@@ -122,6 +122,7 @@ function displayGuideText(value) {
     .replace(/\bfiller\b/gi, '채우기 기술')
     .replace(/\bwindow\b/gi, '창')
     .replace(/\bAnnihilator\b/g, '궤멸자')
+    .replace(/\bAldrachi Reaver\b/g, '알드라치 파괴자')
     .replace(/\bVoid-Scarred\b/g, '공허상흔')
     .replace(/\bFel-Scarred\b/g, '지옥상흔')
     .replace(/\bSpec & Hero\b/g, '전문화+영웅 빌드')
@@ -206,12 +207,27 @@ function buildInlineTerms(data) {
     .sort((a, b) => b.label.length - a.label.length);
 }
 
+const inlineWordCharPattern = /[A-Za-z0-9가-힣]/;
+const koreanParticlePattern = /^(은|는|이|가|을|를|에|의|와|과|도|만|로|으로|부터|까지|보다|처럼|라도|이라도|라면|이면|이며|이고|이나|나|랑|하고|께서)/;
+
+function hasInlineTermBoundary(text, index, label) {
+  const prev = text[index - 1];
+  if (prev && inlineWordCharPattern.test(prev)) return false;
+
+  const nextIndex = index + label.length;
+  const next = text[nextIndex];
+  if (!next || !inlineWordCharPattern.test(next)) return true;
+
+  return koreanParticlePattern.test(text.slice(nextIndex, nextIndex + 4));
+}
+
 function findInlineTerm(text, terms, startIndex) {
   let best = null;
 
   terms.forEach(term => {
     const index = text.indexOf(term.label, startIndex);
     if (index === -1) return;
+    if (!hasInlineTermBoundary(text, index, term.label)) return;
     if (
       !best ||
       index < best.index ||
@@ -2029,12 +2045,12 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
 
   if (flowItems.length) {
     return (
-      <OpenerFlowList $color={guide.color}>
+      <OpenerFlowList $color={guide.color} aria-label="오프닝 전투 흐름 차트">
         {flowItems.map((step, index) => (
           <li key={step.key}>
-            <OpenerPhase>{step.phase}</OpenerPhase>
             <OpenerStepTop>
-              <span>{String(index + 1).padStart(2, '0')}</span>
+              <OpenerPhase>{step.phase}</OpenerPhase>
+              <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
               <SkillIconLink skill={step.skill} size={34} />
             </OpenerStepTop>
             <OpenerStepBody>
@@ -2786,6 +2802,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
       skill,
       label: step.label || profile.steps[index] || `${index + 1}순위`,
       note: step.note || (skill ? skillName(skill) : '전문 가이드 단계'),
+      phase: step.phase || getFlowPhaseLabel(guide, index, manualOpener.steps.length),
     };
   }) || [];
   const visibleSteps = manualSteps.length
@@ -2817,19 +2834,25 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
           </RotationStat>
         </RotationStats>
       </RotationHeader>
-      <RotationRail>
-        <RotationTrack>
-          {visibleSteps.map(step => (
-            <RotationStep key={step.key}>
-              <SkillIconLink skill={step.skill} size={48} />
-              <RotationStepText>
-                <RotationStepLabel>{renderGuideText(step.label, inlineTerms)}</RotationStepLabel>
-                <RotationStepNote>{renderGuideText(step.note, inlineTerms)}</RotationStepNote>
-              </RotationStepText>
-            </RotationStep>
-          ))}
-        </RotationTrack>
-      </RotationRail>
+      {manualSteps.length ? (
+        <RotationFlowWrap>
+          <OpenerFlowPreview guide={guide} steps={manualSteps} fallbackItems={[]} inlineTerms={inlineTerms} />
+        </RotationFlowWrap>
+      ) : (
+        <RotationRail>
+          <RotationTrack>
+            {visibleSteps.map(step => (
+              <RotationStep key={step.key}>
+                <SkillIconLink skill={step.skill} size={48} />
+                <RotationStepText>
+                  <RotationStepLabel>{renderGuideText(step.label, inlineTerms)}</RotationStepLabel>
+                  <RotationStepNote>{renderGuideText(step.note, inlineTerms)}</RotationStepNote>
+                </RotationStepText>
+              </RotationStep>
+            ))}
+          </RotationTrack>
+        </RotationRail>
+      )}
       <RotationCaption>
         <Sparkles size={15} />
         <span>{guide.spec} {guide.className} {profile.label} 핵심 루프</span>
@@ -5339,54 +5362,54 @@ const FieldGuideList = styled.ul`
 
 const OpenerFlowList = styled.ol`
   --flow-color: ${props => props.$color || '#b8915b'};
-  --flow-soft: ${props => `${props.$color || '#b8915b'}24`};
-  --flow-arrow: ${props => `${props.$color || '#b8915b'}45`};
+  --flow-soft: ${props => `${props.$color || '#b8915b'}22`};
+  --flow-line: ${props => `${props.$color || '#b8915b'}70`};
   display: flex;
   align-items: stretch;
-  gap: 0;
+  gap: 18px;
   margin: 0;
-  padding: 14px;
+  padding: 18px;
   list-style: none;
-  counter-reset: opener;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
   background:
-    linear-gradient(90deg, rgba(184, 145, 91, 0.08), rgba(184, 145, 91, 0)),
-    rgba(8, 13, 17, 0.56);
+    linear-gradient(90deg, rgba(184, 145, 91, 0.08) 0 1px, transparent 1px 100%) 0 0 / 44px 44px,
+    linear-gradient(180deg, rgba(184, 145, 91, 0.06) 0 1px, transparent 1px 100%) 0 0 / 44px 44px,
+    linear-gradient(135deg, rgba(8, 13, 17, 0.96), rgba(11, 18, 23, 0.86));
 
   li {
     position: relative;
-    flex: 0 0 clamp(172px, 22vw, 232px);
+    flex: 0 0 clamp(190px, 21vw, 242px);
     display: grid;
-    grid-template-rows: auto auto minmax(0, 1fr);
-    gap: 8px;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 10px;
     min-width: 0;
-    min-height: 176px;
-    margin-right: 20px;
-    padding: 11px;
-    border: 1px solid rgba(244, 239, 229, 0.1);
+    min-height: 166px;
+    padding: 12px;
+    border: 1px solid rgba(244, 239, 229, 0.11);
+    border-radius: 6px;
     background:
-      linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.34)),
-      #080d11;
-    box-shadow: inset 0 1px 0 rgba(244, 239, 229, 0.05);
+      linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.3)),
+      rgba(8, 13, 17, 0.92);
+    box-shadow:
+      inset 0 1px 0 rgba(244, 239, 229, 0.06),
+      0 12px 24px rgba(0, 0, 0, 0.18);
     scroll-snap-align: start;
-    overflow: hidden;
-  }
-
-  li:last-child {
-    margin-right: 0;
+    overflow: visible;
   }
 
   li::before {
     content: '';
     position: absolute;
-    z-index: 0;
-    top: 61px;
-    left: 49px;
-    right: 6px;
+    z-index: 2;
+    top: 49px;
+    left: calc(100% - 4px);
+    width: 26px;
     height: 2px;
-    background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
+    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.18));
     pointer-events: none;
   }
 
@@ -5395,63 +5418,54 @@ const OpenerFlowList = styled.ol`
   }
 
   li:not(:last-child)::after {
-    content: '→';
+    content: '';
     position: absolute;
     z-index: 2;
-    top: 50px;
-    right: 6px;
-    display: grid;
-    place-items: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid rgba(244, 239, 229, 0.12);
-    color: #f4efe5;
-    background: linear-gradient(135deg, var(--flow-arrow), #080d11);
-    font-size: 0.88rem;
-    font-weight: 950;
+    top: 44px;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid var(--flow-line);
   }
 
   @media (max-width: 760px) {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 12px;
     overflow: visible;
     padding: 12px;
 
     li {
       display: grid;
-      grid-template-columns: 56px minmax(0, 1fr);
-      grid-template-rows: auto auto;
-      column-gap: 10px;
+      grid-template-columns: 58px minmax(0, 1fr);
+      column-gap: 12px;
       min-height: 0;
-      margin-right: 0;
-      margin-bottom: 14px;
       padding: 10px;
       align-items: start;
+      overflow: hidden;
     }
 
     li::before {
-      left: 27px;
+      left: 29px;
       right: auto;
-      top: 56px;
-      bottom: 8px;
+      top: 58px;
+      bottom: -14px;
       width: 2px;
       height: auto;
       background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
-    }
-
-    li:last-child {
-      margin-bottom: 0;
     }
 
     li:not(:last-child)::after {
       content: '';
       top: auto;
       right: auto;
-      left: 19px;
-      bottom: 6px;
-      width: 18px;
-      height: 18px;
+      left: 22px;
+      bottom: 4px;
+      width: 14px;
+      height: 14px;
+      border-style: solid;
       border-width: 0 2px 2px 0;
       border-color: var(--flow-color);
       background: transparent;
@@ -5469,7 +5483,7 @@ const OpenerPhase = styled.div`
   z-index: 1;
   width: fit-content;
   max-width: 100%;
-  padding: 3px 7px;
+  padding: 3px 6px;
   border: 1px solid rgba(184, 145, 91, 0.28);
   color: #dcb879;
   background: rgba(184, 145, 91, 0.09);
@@ -5479,36 +5493,67 @@ const OpenerPhase = styled.div`
   word-break: keep-all;
 
   @media (max-width: 760px) {
-    grid-column: 2;
+    grid-column: 1 / -1;
   }
 `;
 
 const OpenerStepTop = styled.div`
   position: relative;
   z-index: 1;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 34px;
+  grid-template-rows: auto auto;
   align-items: center;
-  gap: 7px;
+  gap: 7px 8px;
   min-width: 0;
 
-  > span {
-    display: grid;
-    place-items: center;
-    flex: 0 0 auto;
-    width: 24px;
-    height: 24px;
-    border: 1px solid rgba(184, 145, 91, 0.42);
-    color: #f4efe5;
-    background: rgba(184, 145, 91, 0.14);
-    font-size: 0.68rem;
-    font-weight: 950;
+  > a,
+  > span[aria-hidden='true'] {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+
+  ${OpenerPhase} {
+    grid-column: 1 / -1;
   }
 
   @media (max-width: 760px) {
-    grid-row: span 2;
+    grid-row: 1 / span 2;
     align-self: start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 5px;
+
+    > a,
+    > span[aria-hidden='true'] {
+      grid-column: 1;
+      grid-row: 2;
+      justify-self: center;
+    }
+
+    ${OpenerPhase} {
+      display: none;
+    }
+  }
+`;
+
+const OpenerStepNumber = styled.span`
+  display: grid;
+  place-items: center;
+  grid-column: 1;
+  grid-row: 2;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(184, 145, 91, 0.42);
+  color: #f4efe5;
+  background: rgba(184, 145, 91, 0.14);
+  font-size: 0.68rem;
+  font-weight: 950;
+
+  @media (max-width: 760px) {
+    grid-column: 1;
+    grid-row: 1;
   }
 `;
 
@@ -5539,6 +5584,7 @@ const OpenerStepBody = styled.div`
 
   @media (max-width: 760px) {
     grid-column: 2;
+    grid-row: 1 / span 2;
   }
 `;
 
@@ -5716,6 +5762,16 @@ const RotationStat = styled.div`
     margin-top: 5px;
     color: #f4efe5;
     font-size: 0.9rem;
+  }
+`;
+
+const RotationFlowWrap = styled.div`
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 0 2px;
+
+  ${OpenerFlowList} {
+    border-top: 1px solid rgba(244, 239, 229, 0.08);
   }
 `;
 
