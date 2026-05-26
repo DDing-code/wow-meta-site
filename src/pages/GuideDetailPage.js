@@ -130,6 +130,7 @@ function displayGuideText(value) {
     .replace(/\bparses\b/gi, '파싱')
     .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝 레일/g, '오프닝 전투 흐름')
+    .replace(/준비 레일/g, '준비 전투 흐름')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
     .replace(/\bSwiftmend\b/g, '신속한 치유')
     .replace(/\bRegrowth\b/g, '재생')
@@ -5309,6 +5310,7 @@ const FieldGuideCard = styled.div`
 const OpenerFlowCard = styled(FieldGuideCard)`
   margin: 14px 0 16px;
   overflow: hidden;
+  container-type: inline-size;
 `;
 
 const FieldGuideCardHead = styled.div`
@@ -5476,6 +5478,53 @@ const OpenerFlowList = styled.ol`
       display: none;
     }
   }
+
+  @container (max-width: 760px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    overflow: visible;
+    padding: 12px;
+
+    li {
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr);
+      column-gap: 12px;
+      min-height: 0;
+      padding: 10px;
+      align-items: start;
+      overflow: hidden;
+    }
+
+    li::before {
+      left: 29px;
+      right: auto;
+      top: 58px;
+      bottom: -14px;
+      width: 2px;
+      height: auto;
+      background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
+    }
+
+    li:not(:last-child)::after {
+      content: '';
+      top: auto;
+      right: auto;
+      left: 22px;
+      bottom: 4px;
+      width: 14px;
+      height: 14px;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      border-color: var(--flow-color);
+      background: transparent;
+      transform: rotate(45deg);
+    }
+
+    li:last-child::before {
+      display: none;
+    }
+  }
 `;
 
 const OpenerPhase = styled.div`
@@ -5569,7 +5618,8 @@ const OpenerStepBody = styled.div`
     font-weight: 950;
     line-height: 1.3;
     word-break: keep-all;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
   }
 
   p {
@@ -5579,7 +5629,8 @@ const OpenerStepBody = styled.div`
     font-weight: 760;
     line-height: 1.48;
     word-break: keep-all;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
   }
 
   @media (max-width: 760px) {
@@ -5769,6 +5820,7 @@ const RotationFlowWrap = styled.div`
   min-width: 0;
   max-width: 100%;
   padding: 0 0 2px;
+  container-type: inline-size;
 
   ${OpenerFlowList} {
     border-top: 1px solid rgba(244, 239, 229, 0.08);
@@ -6051,7 +6103,8 @@ const InlineSkillAnchor = styled.a`
 
   span {
     min-width: 0;
-    overflow-wrap: anywhere;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   &:hover {
