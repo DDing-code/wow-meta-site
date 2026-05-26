@@ -2253,7 +2253,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               )}
             </PaperSection>
 
-            {index === 0 && rotationChart && (
+            {index === 0 && rotationChart && !hasOpenerGuide && (
               <InlineFigure chart={rotationChart} guide={guide} data={data} profile={profile} manuscript={manuscript} inlineTerms={inlineTerms} />
             )}
           </React.Fragment>
