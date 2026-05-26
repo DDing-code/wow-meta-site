@@ -27,6 +27,7 @@ const allSkills = Object.values(kbSkills.skills || {});
 const allSynergies = Object.values(kbSynergies.synergies || {});
 const skillById = new Map(allSkills.map(skill => [String(skill.id), skill]));
 const commonSpecs = new Set(['공용', 'Common']);
+const OPENER_FLOW_MAX_STEPS = 12;
 
 const roleProfiles = {
   tanks: {
@@ -2052,16 +2053,42 @@ function getFlowPhaseLabel(guide, index, total) {
   return phases[phaseIndex];
 }
 
+function getFlowTriggerLabel(guide, phase, index, total, step = {}) {
+  if (step.trigger) return step.trigger;
+
+  if (guide?.role === 'healers') {
+    if (/사전/.test(phase)) return '피해 예고 전';
+    if (/직전/.test(phase)) return '피해 3-6초 전';
+    if (/힐업/.test(phase)) return '피해 발생 직후';
+    return '다음 피해 전 안정화';
+  }
+
+  if (guide?.role === 'tanks') {
+    if (/진입/.test(phase)) return '풀링/위치 고정';
+    if (/방어/.test(phase)) return '첫 큰 피해 전';
+    if (/자원/.test(phase)) return '분노·위협 확보';
+    return '다음 탱 버스터 대비';
+  }
+
+  if (/진입/.test(phase)) return '전투 시작';
+  if (/기반/.test(phase)) return '버프·지속 효과 준비';
+  if (/극딜/.test(phase)) return '쿨기·자원 소비 창';
+  if (index >= total - 1) return '우선순위 루프로 전환';
+  return '발동·대상 수 확인';
+}
+
 function getOpenerFlowSteps(manuscript, profile, guide) {
-  const rawSteps = manuscript.opener?.steps?.slice(0, 10) || [];
+  const rawSteps = manuscript?.opener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
   return rawSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
+    const phase = step.phase || getFlowPhaseLabel(guide, index, rawSteps.length);
     return {
       key: `${step.skillId || 'opener'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}단계`,
       note: step.note || (skill ? skillName(skill) : ''),
-      phase: step.phase || getFlowPhaseLabel(guide, index, rawSteps.length),
+      phase,
+      trigger: getFlowTriggerLabel(guide, phase, index, rawSteps.length, step),
     };
   });
 }
@@ -2087,12 +2114,14 @@ function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
     text.startsWith(term.label)
   ));
 
+  const phase = getFlowPhaseLabel(guide, index, total);
   return {
     key: `fallback-opener-${index}`,
     skill: skillTerm?.skill || null,
     label: hasExplicitLabel ? label : `${index + 1}단계`,
     note: hasExplicitLabel ? rest.join(':').trim() : text,
-    phase: getFlowPhaseLabel(guide, index, total),
+    phase,
+    trigger: getFlowTriggerLabel(guide, phase, index, total),
   };
 }
 
@@ -2105,16 +2134,22 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   if (flowItems.length) {
     return (
       <OpenerFlowViewport>
+        <OpenerFlowMapHeader>
+          <span>START</span>
+          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '첫 피해 창을 여는 순서'}</strong>
+          <span>LOOP</span>
+        </OpenerFlowMapHeader>
         <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
           {flowItems.map((step, index) => (
             <li key={step.key}>
               <OpenerStepTop>
-                <OpenerPhase>{step.phase}</OpenerPhase>
                 <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-                <SkillIconLink skill={step.skill} size={38} />
+                <SkillIconLink skill={step.skill} size={42} />
               </OpenerStepTop>
               <OpenerStepBody>
+                <OpenerPhase>{step.phase}</OpenerPhase>
                 <strong>{step.label}</strong>
+                <OpenerTrigger>{step.trigger}</OpenerTrigger>
                 {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
               </OpenerStepBody>
             </li>
@@ -2875,25 +2910,32 @@ function renderChart(id, guide, data, profile, chart) {
 }
 
 function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inlineTerms }) {
-  const manualSteps = manualOpener?.steps?.map((step, index) => {
+  const openerSteps = manualOpener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
+  const manualSteps = openerSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
+    const phase = step.phase || getFlowPhaseLabel(guide, index, openerSteps.length);
     return {
       key: `${step.skillId || 'manual'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}순위`,
       note: step.note || (skill ? skillName(skill) : '공략 단계'),
-      phase: step.phase || getFlowPhaseLabel(guide, index, manualOpener.steps.length),
+      phase,
+      trigger: getFlowTriggerLabel(guide, phase, index, openerSteps.length, step),
     };
-  }) || [];
+  });
   const visibleSteps = manualSteps.length
     ? manualSteps
-    : skills.map((skill, index) => ({
-      key: `${skill.id}-${index}`,
-      skill,
-      label: profile.steps[index] || `${index + 1}순위`,
-      note: skillName(skill),
-      phase: getFlowPhaseLabel(guide, index, Math.max(skills.length, 1)),
-    }));
+    : skills.slice(0, OPENER_FLOW_MAX_STEPS).map((skill, index) => {
+      const phase = getFlowPhaseLabel(guide, index, Math.max(skills.length, 1));
+      return {
+        key: `${skill.id}-${index}`,
+        skill,
+        label: profile.steps[index] || `${index + 1}순위`,
+        note: skillName(skill),
+        phase,
+        trigger: getFlowTriggerLabel(guide, phase, index, Math.max(skills.length, 1)),
+      };
+    });
 
   return (
     <RotationFeature $color={guide.color}>
@@ -5470,6 +5512,52 @@ const OpenerFlowViewport = styled.div`
   max-width: 100%;
   overflow: hidden;
   border-top: 1px solid rgba(244, 239, 229, 0.07);
+  background: rgba(8, 13, 17, 0.46);
+`;
+
+const OpenerFlowMapHeader = styled.div`
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 16px 0;
+  color: #d8cbb7;
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 3px 7px;
+    border: 1px solid rgba(184, 145, 91, 0.28);
+    background: rgba(184, 145, 91, 0.08);
+    color: #d9b97a;
+  }
+
+  strong {
+    min-width: 0;
+    color: #efe4d4;
+    font-size: 0.78rem;
+    font-weight: 950;
+    line-height: 1.35;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: auto minmax(0, 1fr);
+
+    span:last-child {
+      display: none;
+    }
+
+    strong {
+      text-align: left;
+    }
+  }
 `;
 
 const OpenerFlowList = styled.ol`
@@ -5479,9 +5567,9 @@ const OpenerFlowList = styled.ol`
   position: relative;
   display: flex;
   align-items: stretch;
-  gap: 20px;
+  gap: 24px;
   margin: 0;
-  padding: 22px 18px 20px;
+  padding: 18px 18px 22px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
@@ -5508,12 +5596,12 @@ const OpenerFlowList = styled.ol`
   li {
     position: relative;
     z-index: 1;
-    flex: 0 0 clamp(190px, 21vw, 242px);
+    flex: 0 0 clamp(220px, 22vw, 268px);
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     gap: 10px;
     min-width: 0;
-    min-height: 172px;
+    min-height: 188px;
     padding: 12px;
     border: 1px solid rgba(244, 239, 229, 0.11);
     border-radius: 6px;
@@ -5531,9 +5619,9 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 50px;
+    top: 53px;
     left: calc(100% - 4px);
-    width: 30px;
+    width: 34px;
     height: 3px;
     background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.2));
     pointer-events: none;
@@ -5547,8 +5635,8 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 45px;
-    right: -22px;
+    top: 48px;
+    right: -25px;
     width: 0;
     height: 0;
     border-top: 7px solid transparent;
@@ -5670,56 +5758,36 @@ const OpenerPhase = styled.div`
   word-break: keep-all;
 
   @media (max-width: 560px) {
-    grid-column: 1 / -1;
+    font-size: 0.62rem;
   }
 `;
 
 const OpenerStepTop = styled.div`
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: auto 38px;
-  grid-template-rows: auto auto;
+  display: flex;
   align-items: center;
-  gap: 7px 8px;
+  justify-content: space-between;
+  gap: 10px;
   min-width: 0;
 
   > a,
   > span[aria-hidden='true'] {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: end;
-  }
-
-  ${OpenerPhase} {
-    grid-column: 1 / -1;
+    flex: 0 0 auto;
   }
 
   @media (max-width: 560px) {
     grid-row: 1 / span 2;
     align-self: start;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 5px;
-
-    > a,
-    > span[aria-hidden='true'] {
-      grid-column: 1;
-      grid-row: 2;
-      justify-self: center;
-    }
-
-    ${OpenerPhase} {
-      display: none;
-    }
   }
 `;
 
 const OpenerStepNumber = styled.span`
   display: grid;
   place-items: center;
-  grid-column: 1;
-  grid-row: 2;
   width: 26px;
   height: 26px;
   border: 1px solid rgba(184, 145, 91, 0.42);
@@ -5729,8 +5797,8 @@ const OpenerStepNumber = styled.span`
   font-weight: 950;
 
   @media (max-width: 560px) {
-    grid-column: 1;
-    grid-row: 1;
+    width: 24px;
+    height: 24px;
   }
 `;
 
@@ -5741,6 +5809,7 @@ const OpenerStepBody = styled.div`
 
   strong {
     display: block;
+    margin-top: 7px;
     color: #f4efe5;
     font-size: 0.86rem;
     font-weight: 950;
@@ -5751,7 +5820,7 @@ const OpenerStepBody = styled.div`
   }
 
   p {
-    margin-top: 5px;
+    margin-top: 7px;
     color: #b8c2c8;
     font-size: 0.74rem;
     font-weight: 760;
@@ -5765,6 +5834,21 @@ const OpenerStepBody = styled.div`
     grid-column: 2;
     grid-row: 1 / span 2;
   }
+`;
+
+const OpenerTrigger = styled.span`
+  display: inline-flex;
+  max-width: 100%;
+  margin-top: 7px;
+  padding: 4px 7px;
+  border: 1px solid rgba(244, 239, 229, 0.1);
+  background: rgba(244, 239, 229, 0.045);
+  color: #d9b97a;
+  font-size: 0.66rem;
+  font-weight: 950;
+  line-height: 1.25;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 `;
 
 const OpenerTextList = styled.ol`
