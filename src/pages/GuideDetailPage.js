@@ -40,7 +40,7 @@ const roleProfiles = {
   },
   melee: {
     label: '근접 딜러',
-    cycleTitle: '딜사이클 아이콘 레일',
+    cycleTitle: '오프닝 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원 흐름',
     plannerTitle: '위험 구간 대응',
@@ -49,7 +49,7 @@ const roleProfiles = {
   },
   ranged: {
     label: '원거리 딜러',
-    cycleTitle: '딜사이클 아이콘 레일',
+    cycleTitle: '오프닝 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원/시전 흐름',
     plannerTitle: '이동 구간 대응',
@@ -58,7 +58,7 @@ const roleProfiles = {
   },
   healers: {
     label: '힐러',
-    cycleTitle: '힐링 플랜 레일',
+    cycleTitle: '피해 대응 전투 흐름',
     priorityTitle: '힐링 우선순위',
     resourceTitle: '마나/회복 곡선',
     plannerTitle: '공격대 피해 대응표',
@@ -67,7 +67,7 @@ const roleProfiles = {
   },
   support: {
     label: '지원 딜러',
-    cycleTitle: '지원 딜사이클 레일',
+    cycleTitle: '지원 전투 흐름',
     priorityTitle: '지원 우선순위',
     resourceTitle: '강화 유지 흐름',
     plannerTitle: '파티 극딜 정렬표',
@@ -135,8 +135,7 @@ function displayGuideText(value) {
     .replace(/\bSpec & Hero\b/g, '전문화+영웅 빌드')
     .replace(/\bKeystone\b/g, '쐐기돌')
     .replace(/\bparses\b/gi, '파싱')
-    .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
-    .replace(/오프닝 레일/g, '오프닝 전투 흐름')
+    .replace(/오프닝\s*(딜사이클|레일)/g, '오프닝 전투 흐름')
     .replace(/준비 레일/g, '준비 전투 흐름')
     .replace(/레일/g, '흐름도')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
@@ -968,8 +967,8 @@ function getInlineChartPlan(guide, data) {
   const plan = [
     {
       id: 'rotation',
-      title: '전투 흐름',
-      caption: '본문에서 설명한 핵심 판단을 실제 입력 순서로 압축한 차트입니다.',
+      title: getFlowCardTitle(guide),
+      caption: '본문에서 설명한 오프닝, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
     },
     {
       id: 'priority',
@@ -2845,6 +2844,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
       skill,
       label: profile.steps[index] || `${index + 1}순위`,
       note: skillName(skill),
+      phase: getFlowPhaseLabel(guide, index, Math.max(skills.length, 1)),
     }));
 
   return (
@@ -2867,25 +2867,9 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
           </RotationStat>
         </RotationStats>
       </RotationHeader>
-      {manualSteps.length ? (
-        <RotationFlowWrap>
-          <OpenerFlowPreview guide={guide} steps={manualSteps} fallbackItems={[]} inlineTerms={inlineTerms} />
-        </RotationFlowWrap>
-      ) : (
-        <RotationRail>
-          <RotationTrack>
-            {visibleSteps.map(step => (
-              <RotationStep key={step.key}>
-                <SkillIconLink skill={step.skill} size={48} />
-                <RotationStepText>
-                  <RotationStepLabel>{renderGuideText(step.label, inlineTerms)}</RotationStepLabel>
-                  <RotationStepNote>{renderGuideText(step.note, inlineTerms)}</RotationStepNote>
-                </RotationStepText>
-              </RotationStep>
-            ))}
-          </RotationTrack>
-        </RotationRail>
-      )}
+      <RotationFlowWrap>
+        <OpenerFlowPreview guide={guide} steps={visibleSteps} fallbackItems={[]} inlineTerms={inlineTerms} />
+      </RotationFlowWrap>
       <RotationCaption>
         <Sparkles size={15} />
         <span>{guide.spec} {guide.className} {profile.label} 핵심 루프</span>
@@ -5886,98 +5870,6 @@ const RotationFlowWrap = styled.div`
   ${OpenerFlowList} {
     border-top: 1px solid rgba(244, 239, 229, 0.08);
   }
-`;
-
-const RotationRail = styled.div`
-  min-width: 0;
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 70px 16px 18px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
-
-  @media (max-width: 560px) {
-    overflow: hidden;
-    padding: 14px;
-  }
-`;
-
-const RotationTrack = styled.div`
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: clamp(14px, 2.2vw, 24px);
-  min-width: 0;
-  width: 100%;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 28px;
-    right: 28px;
-    top: 23px;
-    height: 5px;
-    border-radius: 999px;
-    background: rgba(244, 239, 229, 0.16);
-  }
-
-  @media (max-width: 560px) {
-    display: grid;
-    gap: 12px;
-    width: 100%;
-    min-width: 0;
-
-    &:before {
-      left: 23px;
-      right: auto;
-      top: 28px;
-      bottom: 28px;
-      width: 4px;
-      height: auto;
-    }
-  }
-`;
-
-const RotationStep = styled.div`
-  position: relative;
-  z-index: 1;
-  flex: 1 1 82px;
-  max-width: 118px;
-  display: grid;
-  justify-items: center;
-  gap: 8px;
-  text-align: center;
-  min-width: 0;
-
-  @media (max-width: 560px) {
-    width: 100%;
-    grid-template-columns: 48px minmax(0, 1fr);
-    justify-items: start;
-    align-items: center;
-    text-align: left;
-  }
-`;
-
-const RotationStepText = styled.div`
-  min-width: 0;
-`;
-
-const RotationStepLabel = styled.div`
-  color: #f4efe5;
-  font-size: 0.78rem;
-  font-weight: 900;
-  word-break: keep-all;
-`;
-
-const RotationStepNote = styled.div`
-  margin-top: 3px;
-  color: #8d9aa3;
-  font-size: 0.68rem;
-  font-weight: 850;
-  overflow-wrap: anywhere;
 `;
 
 const RotationCaption = styled.div`
