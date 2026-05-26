@@ -976,7 +976,7 @@ function getInlineChartPlan(guide, data) {
   const plan = [
     {
       id: 'rotation',
-      title: getFlowCardTitle(guide),
+      title: getFlowChartTitle(guide),
       caption: '본문에서 설명한 오프닝, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
     },
     {
@@ -2051,6 +2051,10 @@ function getFlowCardTitle(guide) {
   return '오프닝 전투 흐름';
 }
 
+function getFlowChartTitle(guide) {
+  return `${getFlowCardTitle(guide)} 차트`;
+}
+
 function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
   const text = displayGuideText(item);
   const [candidateLabel, ...rest] = text.split(/[:：]/);
@@ -2075,7 +2079,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   const flowItems = steps.length
     ? steps
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
-  const chartLabel = `${getFlowCardTitle(guide)} 차트`;
+  const chartLabel = getFlowChartTitle(guide);
 
   if (flowItems.length) {
     return (
@@ -2155,7 +2159,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         <OpenerFlowCard $color={guide.color}>
           <FieldGuideCardHead>
             <Clock3 size={15} />
-            <strong>{getFlowCardTitle(guide)}</strong>
+            <strong>{getFlowChartTitle(guide)}</strong>
           </FieldGuideCardHead>
           {!!manuscript.opener?.summary && (
             <OpenerFlowIntro>
