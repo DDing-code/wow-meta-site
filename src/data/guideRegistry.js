@@ -238,7 +238,7 @@ export const guideSpecsByRole = {
     }),
     spec('priest-holy', 'priest', '신성', '신성', 'healers', '/guide/priest/holy', {
       kbSpecAliases: ['Holy'],
-      focus: '성스러운 권능 기술을 피해 패턴에 맞춰 순환합니다.',
+      focus: '빛의 권능 기술을 피해 패턴에 맞춰 순환합니다.',
     }),
     spec('shaman-restoration', 'shaman', '복원', '복원', 'healers', '/guide/shaman/restoration', {
       kbSpecAliases: ['Restoration'],

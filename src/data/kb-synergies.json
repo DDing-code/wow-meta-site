@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T14:02:36.102Z",
+    "generatedAt": "2026-05-26T15:28:30.911Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -140,11 +140,11 @@
       "execute-generator-window": 1,
       "herald_damage": 1,
       "archon_halo_power_window_router": 1,
-      "oracle_preheal_router": 1,
       "voidweaver_damage_window_router": 1,
       "shared_personal_survival": 2,
       "shared_raid_utility": 2,
       "shared_mythic_plus_utility": 1,
+      "oracle_preheal_router": 1,
       "defensive_sequence": 1,
       "voidweaver_damage_healing": 1,
       "major-cooldown": 1,
@@ -8280,62 +8280,6 @@
         "lastUpdate": ""
       }
     },
-    "priest_common_oracle_premonition_preheal": {
-      "id": "priest_common_oracle_premonition_preheal",
-      "name": "Oracle-흉조-예방치유",
-      "type": "synergy",
-      "synergyType": "oracle_preheal_router",
-      "participants": [
-        "428924",
-        "433905",
-        "440662",
-        "440669",
-        "440670",
-        "440671",
-        "440681",
-        "440738",
-        "440742",
-        "440766",
-        "458718",
-        "1246799",
-        "1246802",
-        "1248423",
-        "1272352",
-        "1272359",
-        "1272363",
-        "17",
-        "194509",
-        "81749",
-        "47540",
-        "472433",
-        "2050",
-        "34861",
-        "33076",
-        "200183",
-        "47788"
-      ],
-      "class": "Priest",
-      "spec": "공용",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\Oracle-흉조-예방치유.md",
-        "lastUpdate": ""
-      }
-    },
     "priest_common_voidweaver_rift_void_blast": {
       "id": "priest_common_voidweaver_rift_void_blast",
       "name": "Voidweaver-혼돈의균열-공허폭발",
@@ -8532,6 +8476,60 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\사제공용-정화-대규모무효화-쐐기유틸.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_common_oracle_predictive_safety": {
+      "id": "priest_common_oracle_predictive_safety",
+      "name": "예언자-예측치유-안전망",
+      "type": "synergy",
+      "synergyType": "oracle_preheal_router",
+      "participants": [
+        "433905",
+        "440662",
+        "440669",
+        "440670",
+        "440671",
+        "440681",
+        "440738",
+        "440742",
+        "440766",
+        "458718",
+        "1246799",
+        "1246802",
+        "1248423",
+        "1272352",
+        "1272359",
+        "1272363",
+        "17",
+        "194509",
+        "81749",
+        "47540",
+        "472433",
+        "2050",
+        "34861",
+        "33076",
+        "200183",
+        "47788"
+      ],
+      "class": "Priest",
+      "spec": "공용",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.0.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\예언자-예측치유-안전망.md",
         "lastUpdate": ""
       }
     },
@@ -8842,7 +8840,8 @@
       "type": "synergy",
       "synergyType": "oracle_healing_safety",
       "participants": [
-        "428924",
+        "47540",
+        "440742",
         "1246802",
         "472433",
         "197862",
@@ -8861,6 +8860,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
       ],
       "linkedBuffs": [],
@@ -9097,9 +9097,9 @@
         "lastUpdate": ""
       }
     },
-    "priest_holy_oracle_premonition": {
-      "id": "priest_holy_oracle_premonition",
-      "name": "예언자-흉조",
+    "priest_holy_oracle_prayer_of_mending": {
+      "id": "priest_holy_oracle_prayer_of_mending",
+      "name": "예언자-회복의기원",
       "type": "synergy",
       "synergyType": "oracle_preheal",
       "participants": [],
@@ -9109,13 +9109,14 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\예언자-흉조.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\예언자-회복의기원.md",
         "lastUpdate": ""
       }
     },

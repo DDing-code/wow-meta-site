@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T14:34:19.311Z",
+    "generatedAt": "2026-05-26T15:28:30.910Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2450,
-    "rawTotalSkills": 2450,
+    "totalSkills": 2449,
+    "rawTotalSkills": 2449,
     "duplicateIds": [],
     "totalSynergies": 427,
     "stats": {
-      "total": 2450,
+      "total": 2449,
       "byType": {
         "atomic-skill": 495,
-        "hero-talent": 522,
+        "hero-talent": 521,
         "proc": 4,
         "skill": 118,
         "talent": 1019,
@@ -31,7 +31,7 @@
         "Mage": 203,
         "Monk": 224,
         "Paladin": 226,
-        "Priest": 222,
+        "Priest": 221,
         "Rogue": 287,
         "Shaman": 268,
         "Warlock": 235,
@@ -72,7 +72,7 @@
         "Paladin-Holy": 3,
         "Paladin-신성": 60,
         "Paladin-징벌": 47,
-        "Priest-공용": 75,
+        "Priest-공용": 74,
         "Priest-수양": 48,
         "Priest-신성": 46,
         "Priest-암흑": 53,
@@ -94,7 +94,7 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2443,
+        "withWikilinks": 2442,
         "withSynergies": 661,
         "avgLinkDensity": "0.034"
       }
@@ -141,7 +141,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.056,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -6277,7 +6277,7 @@
       "quality": {
         "wikilinkCount": 8,
         "synergyCount": 0,
-        "linkDensity": 0.099,
+        "linkDensity": 0.098,
         "hasWikilinks": true
       },
       "source": {
@@ -7570,7 +7570,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.092,
+        "linkDensity": 0.091,
         "hasWikilinks": true
       },
       "source": {
@@ -8070,7 +8070,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.073,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -9460,7 +9460,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.087,
+        "linkDensity": 0.086,
         "hasWikilinks": true
       },
       "source": {
@@ -10872,7 +10872,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.082,
+        "linkDensity": 0.081,
         "hasWikilinks": true
       },
       "source": {
@@ -11075,7 +11075,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 2,
-        "linkDensity": 0.051,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -14248,7 +14248,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.067,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -15227,7 +15227,7 @@
       "quality": {
         "wikilinkCount": 9,
         "synergyCount": 0,
-        "linkDensity": 0.092,
+        "linkDensity": 0.091,
         "hasWikilinks": true
       },
       "source": {
@@ -24940,7 +24940,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.067,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -71159,55 +71159,6 @@
         "lastUpdate": ""
       }
     },
-    "428924": {
-      "id": "428924",
-      "type": "hero-talent",
-      "class": "Priest",
-      "spec": "공용",
-      "specs": [
-        "Discipline",
-        "Holy"
-      ],
-      "name": "흉조",
-      "koreanName": "흉조",
-      "englishName": "Premonition",
-      "icon": "inv_ability_oraclepriest_premonitioninsight",
-      "iconName": "inv_ability_oraclepriest_premonitioninsight",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 흉조 (Premonition)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_oraclepriest_premonitioninsight.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_oraclepriest_premonitioninsight.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_oraclepriest_premonitioninsight.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_oraclepriest_premonitioninsight.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_oraclepriest_premonitioninsight.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\흉조.md",
-        "lastUpdate": ""
-      }
-    },
     "429072": {
       "id": "429072",
       "type": "hero-talent",
@@ -75121,7 +75072,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -77499,7 +77450,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -77548,7 +77499,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -77597,7 +77548,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -77646,7 +77597,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -77744,7 +77695,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -77793,7 +77744,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -77842,7 +77793,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -92656,7 +92607,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -96806,7 +96757,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 1,
-        "linkDensity": 0.094,
+        "linkDensity": 0.092,
         "hasWikilinks": true
       },
       "source": {
@@ -102729,7 +102680,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -102778,7 +102729,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.035,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -103798,7 +103749,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -118493,7 +118444,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -118542,7 +118493,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {

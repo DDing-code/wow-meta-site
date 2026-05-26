@@ -186,7 +186,7 @@ function synergyTypeLabel(synergy) {
   if (/archon|집정관|후광|공허의형상/i.test(combined)) return '집정관 창';
   if (/voidweaver|공허술사|혼돈의균열|공허폭발/i.test(combined)) return '공허술사 창';
   if (/execute|처형|죽음예언자/i.test(combined)) return '처형 관리';
-  if (/oracle|예언자-|흉조/i.test(combined)) return '예언자 보조';
+  if (/oracle|예언자-|두 개의 시야|경건|보장된 안전|즉발적인 예측/i.test(combined)) return '예언자 보조';
   if (/mythic|쐐기/i.test(raw)) return '쐐기 유틸';
   if (/raid|공격대/i.test(raw)) return '공격대 유틸';
   if (/defensive|survival|생존/i.test(raw)) return '생존 관리';
@@ -3136,8 +3136,8 @@ function getUptimeRows(guide, data) {
       },
       {
         label: '예언자 안정',
-        skill: findSkillByNames(data, ['흉조', '경건']),
-        note: '현재 레이드/쐐기 로그 표본의 기본 영웅 특성 축입니다. 큰 쿨다운 사이 빈 구간을 보강합니다.',
+        skill: findSkillByNames(data, ['두 개의 시야', '경건', '보장된 안전', '회개']),
+        note: '현재 레이드/쐐기 로그 표본의 기본 영웅 특성 축입니다. 회개 보강과 보호막 보조로 큰 쿨다운 사이 빈 구간을 메웁니다.',
         segments: [[16, 10], [46, 10], [76, 10]],
       },
       {
