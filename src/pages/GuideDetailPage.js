@@ -855,8 +855,8 @@ function ManualManuscriptSection({ guide, manuscript }) {
       <SectionHead>
         <SectionIcon><BookOpen size={17} /></SectionIcon>
         <div>
-          <SectionKicker>deep guide</SectionKicker>
-          <SectionTitle>전문화 해설</SectionTitle>
+          <SectionKicker>guide</SectionKicker>
+          <SectionTitle>공략 본문</SectionTitle>
         </div>
       </SectionHead>
       <ManuscriptHeader $color={guide.color}>
@@ -888,7 +888,7 @@ function ManualManuscriptSection({ guide, manuscript }) {
       </ManuscriptGrid>
       <EvidenceGrid>
         <EvidencePanel>
-          <h3>확인한 근거</h3>
+          <h3>출처 체크</h3>
           <ManuscriptList>
             {manuscript.evidence?.map(item => (
               <li key={item}>{item}</li>
@@ -896,7 +896,7 @@ function ManualManuscriptSection({ guide, manuscript }) {
           </ManuscriptList>
         </EvidencePanel>
         <EvidencePanel>
-          <h3>미검증/보류</h3>
+          <h3>주의할 점</h3>
           <ManuscriptList>
             {manuscript.caveats?.map(item => (
               <li key={item}>{item}</li>
@@ -1956,20 +1956,73 @@ function InlineFigure({ chart, guide, data, profile, manuscript, inlineTerms }) 
   );
 }
 
+function getOpenerFlowSteps(manuscript, profile) {
+  return manuscript.opener?.steps?.slice(0, 10).map((step, index) => {
+    const skill = skillFromManualStep(step);
+    return {
+      key: `${step.skillId || 'opener'}-${index}`,
+      skill,
+      label: step.label || profile.steps[index] || `${index + 1}단계`,
+      note: step.note || (skill ? skillName(skill) : ''),
+    };
+  }) || [];
+}
+
+function OpenerFlowPreview({ steps, fallbackItems, inlineTerms }) {
+  if (steps.length) {
+    return (
+      <OpenerFlowList>
+        {steps.map((step, index) => (
+          <li key={step.key}>
+            <OpenerStepTop>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <SkillIconLink skill={step.skill} size={34} />
+            </OpenerStepTop>
+            <strong>{step.label}</strong>
+            {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+          </li>
+        ))}
+      </OpenerFlowList>
+    );
+  }
+
+  return (
+    <OpenerTextList>
+      {fallbackItems.map((item, index) => (
+        <li key={`${index}-${item}`}>
+          <span>{index + 1}</span>
+          <p>{renderGuideText(item, inlineTerms)}</p>
+        </li>
+      ))}
+    </OpenerTextList>
+  );
+}
+
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   if (!manuscript) return null;
 
   const bodyBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
+  const openerFlowSteps = getOpenerFlowSteps(manuscript, profile);
+  const openerTextItems = openerFlowSteps.length
+    ? []
+    : manuscript.openerText?.length
+    ? manuscript.openerText
+    : manuscript.opener?.steps?.slice(0, 10).map(step => `${step.label}: ${step.note}`);
+  const tipItems = manuscript.tips?.length
+    ? manuscript.tips
+    : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
+  const hasOpenerGuide = !!openerFlowSteps.length || !!openerTextItems?.length;
+  const hasFieldGuide = !!manuscript.playstyle?.length || hasOpenerGuide || !!tipItems?.length;
 
   return (
     <SectionBlock id="manuscript">
       <SectionHead>
         <SectionIcon><BookOpen size={17} /></SectionIcon>
         <div>
-          <SectionKicker>deep guide</SectionKicker>
-          <SectionTitle>전문화 해설</SectionTitle>
+          <SectionKicker>guide</SectionKicker>
+          <SectionTitle>공략 본문</SectionTitle>
         </div>
       </SectionHead>
 
@@ -1981,6 +2034,51 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           <span>조사 {manuscript.researchedAt}</span>
         </ManuscriptMeta>
       </PaperLead>
+
+      {hasFieldGuide && (
+        <FieldGuideGrid $color={guide.color}>
+          {!!manuscript.playstyle?.length && (
+            <FieldGuideCard $color={guide.color}>
+              <FieldGuideCardHead>
+                <Target size={15} />
+                <strong>먼저 이렇게 이해</strong>
+              </FieldGuideCardHead>
+              <FieldGuideList>
+                {manuscript.playstyle.map(item => (
+                  <li key={`${item.label}-${item.text}`}>
+                    <span>{item.label}</span>
+                    <p>{renderGuideText(item.text, inlineTerms)}</p>
+                  </li>
+                ))}
+              </FieldGuideList>
+            </FieldGuideCard>
+          )}
+
+          {hasOpenerGuide && (
+            <FieldGuideCard $color={guide.color} $wide={!!openerFlowSteps.length}>
+              <FieldGuideCardHead>
+                <Clock3 size={15} />
+                <strong>오프닝 딜사이클</strong>
+              </FieldGuideCardHead>
+              <OpenerFlowPreview steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
+            </FieldGuideCard>
+          )}
+
+          {!!tipItems?.length && (
+            <FieldGuideCard $color={guide.color}>
+              <FieldGuideCardHead>
+                <Sparkles size={15} />
+                <strong>실전 꿀팁</strong>
+              </FieldGuideCardHead>
+              <TipList>
+                {tipItems.map(item => (
+                  <li key={item}>{renderGuideText(item, inlineTerms)}</li>
+                ))}
+              </TipList>
+            </FieldGuideCard>
+          )}
+        </FieldGuideGrid>
+      )}
 
       {!!digestBlocks.length && (
         <GuideDigestGrid aria-label="가이드 빠른 요약">
@@ -2064,7 +2162,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
         <EvidenceGrid>
           <EvidencePanel>
-            <h3>확인한 근거</h3>
+            <h3>출처 체크</h3>
             <ManuscriptList>
               {manuscript.evidence?.map(item => (
                 <li key={item}>{renderGuideText(item, inlineTerms)}</li>
@@ -2072,7 +2170,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             </ManuscriptList>
           </EvidencePanel>
           <EvidencePanel>
-            <h3>미검증/보류</h3>
+            <h3>주의할 점</h3>
             <ManuscriptList>
               {manuscript.caveats?.map(item => (
                 <li key={item}>{renderGuideText(item, inlineTerms)}</li>
@@ -5096,6 +5194,255 @@ const ChartDefinitionItem = styled.div`
     font-weight: 760;
     line-height: 1.55;
     word-break: keep-all;
+  }
+`;
+
+const FieldGuideGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0 16px;
+
+  @media (max-width: 980px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const FieldGuideCard = styled.div`
+  min-width: 0;
+  grid-column: ${props => props.$wide ? 'span 2' : 'auto'};
+  border: 1px solid rgba(184, 145, 91, 0.24);
+  border-top: 3px solid ${props => props.$color || 'rgba(184, 145, 91, 0.72)'};
+  background:
+    linear-gradient(180deg, rgba(244, 239, 229, 0.035), rgba(8, 13, 17, 0.18)),
+    #0d1216;
+
+  @media (max-width: 980px) {
+    grid-column: auto;
+  }
+`;
+
+const FieldGuideCardHead = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 13px;
+  border-bottom: 1px solid rgba(244, 239, 229, 0.08);
+  color: #f4efe5;
+
+  svg {
+    color: #b8915b;
+    flex: 0 0 auto;
+  }
+
+  strong {
+    font-size: 0.92rem;
+    font-weight: 950;
+    letter-spacing: 0;
+  }
+`;
+
+const FieldGuideList = styled.ul`
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 13px;
+  list-style: none;
+
+  li {
+    min-width: 0;
+  }
+
+  span {
+    display: block;
+    color: #b8915b;
+    font-size: 0.7rem;
+    font-weight: 950;
+  }
+
+  p {
+    margin-top: 4px;
+    color: #efe4d4;
+    font-size: 0.82rem;
+    font-weight: 760;
+    line-height: 1.58;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const OpenerFlowList = styled.ol`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 9px;
+  margin: 0;
+  padding: 13px;
+  list-style: none;
+  counter-reset: opener;
+
+  li {
+    position: relative;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid rgba(244, 239, 229, 0.09);
+    background:
+      linear-gradient(180deg, rgba(244, 239, 229, 0.035), rgba(8, 13, 17, 0.2)),
+      #080d11;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 44px;
+    right: 10px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0));
+    pointer-events: none;
+  }
+
+  strong {
+    display: block;
+    margin-top: 8px;
+    color: #f4efe5;
+    font-size: 0.8rem;
+    font-weight: 950;
+    line-height: 1.28;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin-top: 5px;
+    color: #b8c2c8;
+    font-size: 0.7rem;
+    font-weight: 760;
+    line-height: 1.48;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    li {
+      display: grid;
+      grid-template-columns: 50px minmax(0, 1fr);
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    li::before {
+      left: 26px;
+      right: auto;
+      top: 44px;
+      bottom: -8px;
+      width: 2px;
+      height: auto;
+      background: linear-gradient(180deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0));
+    }
+
+    li:last-child::before {
+      display: none;
+    }
+
+    strong {
+      margin-top: 0;
+    }
+
+    p {
+      grid-column: 2;
+      margin-top: 3px;
+    }
+  }
+`;
+
+const OpenerStepTop = styled.div`
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+
+  > span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(184, 145, 91, 0.42);
+    color: #f4efe5;
+    background: rgba(184, 145, 91, 0.14);
+    font-size: 0.68rem;
+    font-weight: 950;
+  }
+
+  @media (max-width: 560px) {
+    grid-row: span 2;
+    align-self: start;
+    flex-direction: column;
+    gap: 5px;
+  }
+`;
+
+const OpenerTextList = styled.ol`
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 13px;
+  list-style: none;
+  counter-reset: opener;
+
+  li {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 9px;
+    align-items: start;
+    min-width: 0;
+  }
+
+  span {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(184, 145, 91, 0.42);
+    color: #f4efe5;
+    background: rgba(184, 145, 91, 0.14);
+    font-size: 0.72rem;
+    font-weight: 950;
+  }
+
+  p {
+    min-width: 0;
+    color: #efe4d4;
+    font-size: 0.82rem;
+    font-weight: 780;
+    line-height: 1.58;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const TipList = styled.ul`
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 13px 13px 13px 28px;
+
+  li {
+    color: #efe4d4;
+    font-size: 0.82rem;
+    font-weight: 780;
+    line-height: 1.58;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  li::marker {
+    color: #b8915b;
   }
 `;
 

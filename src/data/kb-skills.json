@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-25T17:20:24.668Z",
+    "generatedAt": "2026-05-26T01:42:17.292Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -40851,7 +40851,7 @@
         ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/폭격",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/날개지도자",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/날개지도자",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/방어구녹이기"
         ]
       },
@@ -43833,7 +43833,7 @@
       "quality": {
         "wikilinkCount": 8,
         "synergyCount": 5,
-        "linkDensity": 0.099,
+        "linkDensity": 0.094,
         "hasWikilinks": true
       },
       "source": {
@@ -43931,7 +43931,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.037,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -75247,7 +75247,7 @@
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/대규모파열",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/날개지도자"
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/날개지도자"
         ]
       },
       "quality": {
@@ -117465,7 +117465,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.015,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
