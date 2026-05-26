@@ -2198,17 +2198,15 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const digestBlocks = bodyBlocks.slice(0, 4);
   const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
   const openerBlockItems = openerBlocks.flatMap(block => block.bullets || []).slice(0, 10);
-  const openerTextItems = openerFlowSteps.length
+  const openerFallbackItems = openerFlowSteps.length
     ? []
-    : manuscript.openerText?.length
-    ? manuscript.openerText
     : openerBlockItems.length
     ? openerBlockItems
     : manuscript.opener?.steps?.slice(0, 10).map(step => `${step.label}: ${step.note}`);
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
-  const hasOpenerGuide = !!openerFlowSteps.length || !!openerTextItems?.length;
+  const hasOpenerGuide = !!openerFlowSteps.length || !!openerFallbackItems?.length;
   const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
 
   return (
@@ -2244,7 +2242,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               <p>{renderGuideText(manuscript.opener.summary, inlineTerms)}</p>
             </OpenerFlowIntro>
           )}
-          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
+          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems || []} inlineTerms={inlineTerms} />
         </OpenerFlowCard>
       )}
 
