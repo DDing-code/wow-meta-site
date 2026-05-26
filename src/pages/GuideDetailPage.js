@@ -2156,6 +2156,16 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
             ))}
           </OpenerFlowPhaseLegend>
         )}
+        <OpenerFlowRail $color={guide.color} aria-label={`${chartLabel} 요약`}>
+          {flowItems.map((step, index) => (
+            <li key={`${step.key}-rail`}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <SkillIconLink skill={step.skill} size={34} />
+              <strong>{step.label}</strong>
+              {!!step.phase && <em>{step.phase}</em>}
+            </li>
+          ))}
+        </OpenerFlowRail>
         <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
           {flowItems.map((step, index) => (
             <li key={step.key}>
@@ -5614,6 +5624,107 @@ const OpenerFlowPhaseLegend = styled.div`
     font-weight: 950;
     line-height: 1.2;
     white-space: nowrap;
+  }
+`;
+
+const OpenerFlowRail = styled.ol`
+  --flow-color: ${props => props.$color || '#b8915b'};
+  --flow-soft: ${props => `${props.$color || '#b8915b'}24`};
+  --flow-line: ${props => `${props.$color || '#b8915b'}86`};
+  position: relative;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 16px 8px;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
+
+  li {
+    position: relative;
+    flex: 0 0 clamp(106px, 12vw, 142px);
+    display: grid;
+    grid-template-rows: auto auto minmax(28px, auto) auto;
+    justify-items: center;
+    gap: 5px;
+    min-width: 0;
+    padding: 9px 7px;
+    border: 1px solid rgba(244, 239, 229, 0.11);
+    border-radius: 6px;
+    background:
+      radial-gradient(circle at 50% 20%, var(--flow-soft), transparent 52%),
+      rgba(8, 13, 17, 0.88);
+    box-shadow: inset 0 1px 0 rgba(244, 239, 229, 0.05);
+  }
+
+  li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    right: -13px;
+    width: 14px;
+    height: 2px;
+    background: var(--flow-line);
+  }
+
+  li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 29px;
+    right: -18px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 7px solid var(--flow-line);
+  }
+
+  span {
+    color: #d9b97a;
+    font-size: 0.62rem;
+    font-weight: 950;
+    line-height: 1;
+  }
+
+  a,
+  > li > span[aria-hidden='true'] {
+    box-shadow: 0 0 0 1px rgba(244, 239, 229, 0.1);
+  }
+
+  strong,
+  em {
+    max-width: 100%;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    letter-spacing: 0;
+  }
+
+  strong {
+    color: #f4efe5;
+    font-size: 0.72rem;
+    font-style: normal;
+    font-weight: 950;
+    line-height: 1.25;
+  }
+
+  em {
+    color: #aeb8be;
+    font-size: 0.62rem;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 1.18;
+  }
+
+  @media (max-width: 560px) {
+    gap: 10px;
+    padding: 10px 12px 6px;
+
+    li {
+      flex-basis: 104px;
+    }
   }
 `;
 
