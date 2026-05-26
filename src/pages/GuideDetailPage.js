@@ -2130,6 +2130,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
     ? steps
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
   const chartLabel = getFlowChartTitle(guide);
+  const phaseLegend = [...new Set(flowItems.map(item => item.phase).filter(Boolean))];
 
   if (flowItems.length) {
     return (
@@ -2139,6 +2140,13 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
           <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '첫 피해 창을 여는 순서'}</strong>
           <span>LOOP</span>
         </OpenerFlowMapHeader>
+        {phaseLegend.length > 1 && (
+          <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
+            {phaseLegend.map(phase => (
+              <span key={phase}>{phase}</span>
+            ))}
+          </OpenerFlowPhaseLegend>
+        )}
         <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
           {flowItems.map((step, index) => (
             <li key={step.key}>
@@ -5560,6 +5568,28 @@ const OpenerFlowMapHeader = styled.div`
   }
 `;
 
+const OpenerFlowPhaseLegend = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 16px 2px;
+  color: #d9b97a;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 3px 8px;
+    border: 1px solid rgba(184, 145, 91, 0.26);
+    border-radius: 999px;
+    background: rgba(184, 145, 91, 0.075);
+    font-size: 0.68rem;
+    font-weight: 950;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+`;
+
 const OpenerFlowList = styled.ol`
   --flow-color: ${props => props.$color || '#b8915b'};
   --flow-soft: ${props => `${props.$color || '#b8915b'}22`};
@@ -5569,7 +5599,7 @@ const OpenerFlowList = styled.ol`
   align-items: stretch;
   gap: 24px;
   margin: 0;
-  padding: 18px 18px 22px;
+  padding: 14px 18px 22px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
