@@ -108,6 +108,14 @@ function cleanText(value) {
 
 function displayGuideText(value) {
   return cleanText(value)
+    .replace(/회복HoT/g, '회복 지속 치유')
+    .replace(/\bHoT\b/g, '지속 치유')
+    .replace(/\bGrove Guardians\b/g, '숲 수호자')
+    .replace(/\bSwiftmend\b/g, '신속한 치유')
+    .replace(/\bRegrowth\b/g, '재생')
+    .replace(/\bFlourish\b/g, '번성')
+    .replace(/\bCommon\b/g, '공용')
+    .replace(/번성하는성장물/g, '번성하는 성장물')
     .replace(/\bArchon\b/g, '집정관')
     .replace(/\bVoidweaver\b/g, '공허술사')
     .replace(/\bOracle\b/g, '예언자');
@@ -1552,14 +1560,14 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '회복 창 체크라인',
-      sectionHeading: '피해 전 HoT와 피해 후 복구',
+      sectionHeading: '피해 전 지속 치유와 피해 후 복구',
       sectionIntro:
-        '회복은 피해가 들어온 뒤 버튼을 찾는 힐러가 아니라, 피해 전에 HoT와 증폭 창을 예약하는 힐러입니다.',
+        '회복은 피해가 들어온 뒤 버튼을 찾는 힐러가 아니라, 피해 전에 지속 치유와 증폭 창을 예약하는 힐러입니다.',
       caption:
         '막대는 실제 HPS가 아니라 회복, 피어나는 생명, 꽃피우기, 급속 성장, 신속한 치유, 번성, 평온을 피해 타이머에 배치하는 판단 도식입니다.',
       definition: [
         ['의미', '피해 전 준비, 피해 직전 증폭, 피해 후 복구가 같은 타임라인에 있어야 합니다.'],
-        ['읽는 법', '회복과 피어나는 생명은 먼저 깔고, 급속 성장/신속한 치유/숲 수호자/번성은 피해 파동에 맞춥니다.'],
+        ['읽는 법', '회복과 피어나는 생명은 먼저 깔고, 급속 성장/신속한 치유는 피해 파동에 맞춥니다. 숲 수호자는 그 시전에서 생기는 발동형 보조 치유로 확인합니다.'],
         ['검수 포인트', '피해 후 회복 난사, 피어나는 생명 공백, 꽃피우기 이탈, 신속한 치유와 숲의 영혼 분리, 평온 이동 끊김을 확인합니다.'],
       ],
     });
@@ -1986,9 +1994,7 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
   });
 }
 
-function getFlowCardTitle(guide) {
-  if (guide?.role === 'healers') return '피해 전 준비 흐름';
-  if (guide?.role === 'tanks') return '전투 시작 안정화';
+function getFlowCardTitle() {
   return '오프닝 전투 흐름';
 }
 
@@ -2074,6 +2080,16 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
       {hasFieldGuide && (
         <FieldGuideGrid $color={guide.color}>
+          {hasOpenerGuide && (
+            <FieldGuideCard $color={guide.color} $wide={openerFlowSteps.length ? 'full' : false}>
+              <FieldGuideCardHead>
+                <Clock3 size={15} />
+                <strong>{getFlowCardTitle()}</strong>
+              </FieldGuideCardHead>
+              <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
+            </FieldGuideCard>
+          )}
+
           {!!manuscript.playstyle?.length && (
             <FieldGuideCard $color={guide.color}>
               <FieldGuideCardHead>
@@ -2088,16 +2104,6 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                   </li>
                 ))}
               </FieldGuideList>
-            </FieldGuideCard>
-          )}
-
-          {hasOpenerGuide && (
-            <FieldGuideCard $color={guide.color} $wide={openerFlowSteps.length ? 'full' : false}>
-              <FieldGuideCardHead>
-                <Clock3 size={15} />
-                <strong>{getFlowCardTitle(guide)}</strong>
-              </FieldGuideCardHead>
-              <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
             </FieldGuideCard>
           )}
 
@@ -2374,7 +2380,7 @@ function GuideDetailPage() {
                       <img src={getIconUrl(skill)} alt="" loading="lazy" />
                       <span>{skillName(skill)}</span>
                     </SkillName>
-                    <SkillSub>{skill.englishName || skill.category || 'KB 스킬'}</SkillSub>
+                    <SkillSub>{displayGuideText(skill.spec || skill.category || 'KB 스킬')}</SkillSub>
                   </SkillMain>
                   <SkillMeta>{formatSkillMeta(skill)}</SkillMeta>
                 </SkillRow>
@@ -4523,7 +4529,7 @@ function getUptimeRows(guide, data) {
         segments: [[4, 42], [52, 40]],
       },
       {
-        label: '사전 HoT',
+        label: '사전 지속 치유',
         skill: findSkillByNames(data, ['회복']),
         note: '피해 타이머 전에 회복 대상 수와 풍요 기반을 확보합니다.',
         segments: [[8, 30], [44, 30], [76, 18]],
@@ -4549,7 +4555,7 @@ function getUptimeRows(guide, data) {
       {
         label: '대형 복구',
         skill: findSkillByNames(data, ['번성', '평온']),
-        note: '이미 깔린 HoT가 많을 때 번성, 큰 복구는 평온으로 처리합니다.',
+        note: '이미 깔린 지속 치유 효과가 많을 때 평온과 번성 효과의 연장 가치가 커집니다.',
         segments: [[30, 16], [70, 18]],
       },
       {
