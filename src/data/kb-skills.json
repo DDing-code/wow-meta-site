@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T07:35:07.078Z",
+    "generatedAt": "2026-05-26T14:02:36.102Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -16373,58 +16373,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Skills\\화신엘룬의선택.md",
-        "lastUpdate": ""
-      }
-    },
-    "102693": {
-      "id": "102693",
-      "type": "talent",
-      "class": "Druid",
-      "spec": "회복",
-      "specs": [
-        "Restoration"
-      ],
-      "name": "숲 수호자",
-      "koreanName": "숲 수호자",
-      "englishName": "Grove Guardians",
-      "icon": "ability_druid_forceofnature",
-      "iconName": "ability_druid_forceofnature",
-      "school": "",
-      "cooldown": "발동형",
-      "castTime": "신속한 치유 또는 급속 성장 시전 시 발동",
-      "resourceCost": "마나",
-      "range": "원거리",
-      "description": "# 숲 수호자 (Grove Guardians)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_forceofnature.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_forceofnature.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_forceofnature.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_forceofnature.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_forceofnature.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
-          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/무쇠껍질"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.028,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Talents\\숲수호자.md",
         "lastUpdate": ""
       }
     },
@@ -98365,6 +98313,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\박멸.md",
+        "lastUpdate": ""
+      }
+    },
+    "1226140": {
+      "id": "1226140",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "숲 수호자",
+      "koreanName": "숲 수호자",
+      "englishName": "Grove Guardians",
+      "icon": "ability_druid_forceofnature",
+      "iconName": "ability_druid_forceofnature",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "패시브",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "# 숲 수호자 (Grove Guardians)",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.0.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_forceofnature.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_forceofnature.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_forceofnature.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_forceofnature.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_forceofnature.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/무쇠껍질"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Talents\\숲수호자.md",
         "lastUpdate": ""
       }
     },
