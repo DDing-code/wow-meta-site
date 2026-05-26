@@ -2083,21 +2083,23 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
 
   if (flowItems.length) {
     return (
-      <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
-        {flowItems.map((step, index) => (
-          <li key={step.key}>
-            <OpenerStepTop>
-              <OpenerPhase>{step.phase}</OpenerPhase>
-              <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-              <SkillIconLink skill={step.skill} size={34} />
-            </OpenerStepTop>
-            <OpenerStepBody>
-              <strong>{step.label}</strong>
-              {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
-            </OpenerStepBody>
-          </li>
-        ))}
-      </OpenerFlowList>
+      <OpenerFlowViewport>
+        <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
+          {flowItems.map((step, index) => (
+            <li key={step.key}>
+              <OpenerStepTop>
+                <OpenerPhase>{step.phase}</OpenerPhase>
+                <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
+                <SkillIconLink skill={step.skill} size={38} />
+              </OpenerStepTop>
+              <OpenerStepBody>
+                <strong>{step.label}</strong>
+                {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+              </OpenerStepBody>
+            </li>
+          ))}
+        </OpenerFlowList>
+      </OpenerFlowViewport>
     );
   }
 
@@ -5346,6 +5348,11 @@ const OpenerFlowCard = styled(FieldGuideCard)`
   margin: 14px 0 16px;
   overflow: hidden;
   container-type: inline-size;
+  width: 100%;
+  border-top-width: 4px;
+  box-shadow:
+    inset 0 1px 0 rgba(244, 239, 229, 0.06),
+    0 18px 34px rgba(0, 0, 0, 0.18);
 `;
 
 const OpenerFlowIntro = styled.div`
@@ -5426,15 +5433,23 @@ const FieldGuideList = styled.ul`
   }
 `;
 
+const OpenerFlowViewport = styled.div`
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(244, 239, 229, 0.07);
+`;
+
 const OpenerFlowList = styled.ol`
   --flow-color: ${props => props.$color || '#b8915b'};
   --flow-soft: ${props => `${props.$color || '#b8915b'}22`};
   --flow-line: ${props => `${props.$color || '#b8915b'}70`};
+  position: relative;
   display: flex;
   align-items: stretch;
-  gap: 18px;
+  gap: 20px;
   margin: 0;
-  padding: 18px;
+  padding: 22px 18px 20px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
@@ -5446,14 +5461,27 @@ const OpenerFlowList = styled.ol`
     linear-gradient(180deg, rgba(184, 145, 91, 0.06) 0 1px, transparent 1px 100%) 0 0 / 44px 44px,
     linear-gradient(135deg, rgba(8, 13, 17, 0.96), rgba(11, 18, 23, 0.86));
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 72px;
+    left: 28px;
+    right: 28px;
+    height: 2px;
+    background:
+      linear-gradient(90deg, rgba(184, 145, 91, 0.12), var(--flow-line), rgba(184, 145, 91, 0.12));
+    pointer-events: none;
+  }
+
   li {
     position: relative;
+    z-index: 1;
     flex: 0 0 clamp(190px, 21vw, 242px);
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     gap: 10px;
     min-width: 0;
-    min-height: 166px;
+    min-height: 172px;
     padding: 12px;
     border: 1px solid rgba(244, 239, 229, 0.11);
     border-radius: 6px;
@@ -5471,11 +5499,11 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 49px;
+    top: 50px;
     left: calc(100% - 4px);
-    width: 26px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.18));
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.2));
     pointer-events: none;
   }
 
@@ -5487,13 +5515,13 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 44px;
-    right: -20px;
+    top: 45px;
+    right: -22px;
     width: 0;
     height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 8px solid var(--flow-line);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 9px solid var(--flow-line);
   }
 
   @media (max-width: 560px) {
@@ -5503,9 +5531,13 @@ const OpenerFlowList = styled.ol`
     overflow: visible;
     padding: 12px;
 
+    &::before {
+      display: none;
+    }
+
     li {
       display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
+      grid-template-columns: 62px minmax(0, 1fr);
       column-gap: 12px;
       min-height: 0;
       padding: 10px;
@@ -5514,7 +5546,7 @@ const OpenerFlowList = styled.ol`
     }
 
     li::before {
-      left: 29px;
+      left: 31px;
       right: auto;
       top: 58px;
       bottom: -14px;
@@ -5527,7 +5559,7 @@ const OpenerFlowList = styled.ol`
       content: '';
       top: auto;
       right: auto;
-      left: 22px;
+      left: 24px;
       bottom: 4px;
       width: 14px;
       height: 14px;
@@ -5552,7 +5584,7 @@ const OpenerFlowList = styled.ol`
 
     li {
       display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
+      grid-template-columns: 62px minmax(0, 1fr);
       column-gap: 12px;
       min-height: 0;
       padding: 10px;
@@ -5561,7 +5593,7 @@ const OpenerFlowList = styled.ol`
     }
 
     li::before {
-      left: 29px;
+      left: 31px;
       right: auto;
       top: 58px;
       bottom: -14px;
@@ -5574,7 +5606,7 @@ const OpenerFlowList = styled.ol`
       content: '';
       top: auto;
       right: auto;
-      left: 22px;
+      left: 24px;
       bottom: 4px;
       width: 14px;
       height: 14px;
@@ -5614,7 +5646,7 @@ const OpenerStepTop = styled.div`
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: auto 34px;
+  grid-template-columns: auto 38px;
   grid-template-rows: auto auto;
   align-items: center;
   gap: 7px 8px;
@@ -5656,8 +5688,8 @@ const OpenerStepNumber = styled.span`
   place-items: center;
   grid-column: 1;
   grid-row: 2;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border: 1px solid rgba(184, 145, 91, 0.42);
   color: #f4efe5;
   background: rgba(184, 145, 91, 0.14);
@@ -5678,7 +5710,7 @@ const OpenerStepBody = styled.div`
   strong {
     display: block;
     color: #f4efe5;
-    font-size: 0.82rem;
+    font-size: 0.86rem;
     font-weight: 950;
     line-height: 1.3;
     word-break: keep-all;
@@ -5689,7 +5721,7 @@ const OpenerStepBody = styled.div`
   p {
     margin-top: 5px;
     color: #b8c2c8;
-    font-size: 0.72rem;
+    font-size: 0.74rem;
     font-weight: 760;
     line-height: 1.48;
     word-break: keep-all;
