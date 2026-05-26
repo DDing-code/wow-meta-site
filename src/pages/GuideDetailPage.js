@@ -1956,30 +1956,64 @@ function InlineFigure({ chart, guide, data, profile, manuscript, inlineTerms }) 
   );
 }
 
-function getOpenerFlowSteps(manuscript, profile) {
-  return manuscript.opener?.steps?.slice(0, 10).map((step, index) => {
+function getFlowPhaseLabel(guide, index, total) {
+  const healerPhases = ['사전 배치', '피해 직전', '힐업 창', '복구/안정화'];
+  const tankPhases = ['진입', '방어 기반', '자원 확보', '안정화'];
+  const damagePhases = ['진입', '기반 세팅', '극딜 창', '순환 전환'];
+  const phases = guide?.role === 'healers'
+    ? healerPhases
+    : guide?.role === 'tanks'
+    ? tankPhases
+    : damagePhases;
+  const phaseIndex = Math.min(phases.length - 1, Math.floor((index / Math.max(total, 1)) * phases.length));
+  return phases[phaseIndex];
+}
+
+function getOpenerFlowSteps(manuscript, profile, guide) {
+  const rawSteps = manuscript.opener?.steps?.slice(0, 10) || [];
+  return rawSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
     return {
       key: `${step.skillId || 'opener'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}단계`,
       note: step.note || (skill ? skillName(skill) : ''),
+      phase: step.phase || getFlowPhaseLabel(guide, index, rawSteps.length),
     };
-  }) || [];
+  });
 }
 
-function OpenerFlowPreview({ steps, fallbackItems, inlineTerms }) {
-  if (steps.length) {
+function getFlowCardTitle(guide) {
+  if (guide?.role === 'healers') return '피해 전 준비 흐름';
+  if (guide?.role === 'tanks') return '전투 시작 안정화';
+  return '오프닝 전투 흐름';
+}
+
+function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
+  const flowItems = steps.length
+    ? steps
+    : fallbackItems.map((item, index) => ({
+      key: `fallback-opener-${index}`,
+      skill: null,
+      label: `${index + 1}단계`,
+      note: item,
+      phase: getFlowPhaseLabel(guide, index, fallbackItems.length),
+    }));
+
+  if (flowItems.length) {
     return (
-      <OpenerFlowList>
-        {steps.map((step, index) => (
+      <OpenerFlowList $color={guide.color}>
+        {flowItems.map((step, index) => (
           <li key={step.key}>
+            <OpenerPhase>{step.phase}</OpenerPhase>
             <OpenerStepTop>
               <span>{String(index + 1).padStart(2, '0')}</span>
               <SkillIconLink skill={step.skill} size={34} />
             </OpenerStepTop>
-            <strong>{step.label}</strong>
-            {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+            <OpenerStepBody>
+              <strong>{step.label}</strong>
+              {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+            </OpenerStepBody>
           </li>
         ))}
       </OpenerFlowList>
@@ -2004,7 +2038,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const bodyBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
-  const openerFlowSteps = getOpenerFlowSteps(manuscript, profile);
+  const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
   const openerTextItems = openerFlowSteps.length
     ? []
     : manuscript.openerText?.length
@@ -2058,9 +2092,9 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             <FieldGuideCard $color={guide.color} $wide={!!openerFlowSteps.length}>
               <FieldGuideCardHead>
                 <Clock3 size={15} />
-                <strong>오프닝 딜사이클</strong>
+                <strong>{getFlowCardTitle(guide)}</strong>
               </FieldGuideCardHead>
-              <OpenerFlowPreview steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
+              <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
             </FieldGuideCard>
           )}
 
@@ -5272,89 +5306,147 @@ const FieldGuideList = styled.ul`
 `;
 
 const OpenerFlowList = styled.ol`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
-  gap: 9px;
+  --flow-color: ${props => props.$color || '#b8915b'};
+  --flow-soft: ${props => `${props.$color || '#b8915b'}24`};
+  --flow-arrow: ${props => `${props.$color || '#b8915b'}45`};
+  display: flex;
+  align-items: stretch;
+  gap: 0;
   margin: 0;
-  padding: 13px;
+  padding: 14px;
   list-style: none;
   counter-reset: opener;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  background:
+    linear-gradient(90deg, rgba(184, 145, 91, 0.08), rgba(184, 145, 91, 0)),
+    rgba(8, 13, 17, 0.56);
 
   li {
     position: relative;
+    flex: 0 0 clamp(172px, 22vw, 232px);
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    gap: 8px;
     min-width: 0;
-    padding: 10px;
-    border: 1px solid rgba(244, 239, 229, 0.09);
+    min-height: 176px;
+    margin-right: 20px;
+    padding: 11px;
+    border: 1px solid rgba(244, 239, 229, 0.1);
     background:
-      linear-gradient(180deg, rgba(244, 239, 229, 0.035), rgba(8, 13, 17, 0.2)),
+      linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.34)),
       #080d11;
+    box-shadow: inset 0 1px 0 rgba(244, 239, 229, 0.05);
+    scroll-snap-align: start;
+  }
+
+  li:last-child {
+    margin-right: 0;
   }
 
   li::before {
     content: '';
     position: absolute;
-    top: 27px;
-    left: 44px;
-    right: 10px;
+    z-index: 0;
+    top: 61px;
+    left: 49px;
+    right: -22px;
     height: 2px;
-    background: linear-gradient(90deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0));
+    background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     pointer-events: none;
   }
 
-  strong {
-    display: block;
-    margin-top: 8px;
+  li:last-child::before {
+    display: none;
+  }
+
+  li:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    right: -16px;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(244, 239, 229, 0.12);
     color: #f4efe5;
-    font-size: 0.8rem;
+    background: linear-gradient(135deg, var(--flow-arrow), #080d11);
+    font-size: 0.88rem;
     font-weight: 950;
-    line-height: 1.28;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
   }
 
-  p {
-    margin-top: 5px;
-    color: #b8c2c8;
-    font-size: 0.7rem;
-    font-weight: 760;
-    line-height: 1.48;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-  }
-
-  @media (max-width: 560px) {
+  @media (max-width: 760px) {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 0;
+    overflow: visible;
+    padding: 12px;
 
     li {
       display: grid;
-      grid-template-columns: 50px minmax(0, 1fr);
+      grid-template-columns: 56px minmax(0, 1fr);
+      grid-template-rows: auto auto;
       column-gap: 10px;
-      align-items: center;
+      min-height: 0;
+      margin-right: 0;
+      margin-bottom: 14px;
+      padding: 10px;
+      align-items: start;
     }
 
     li::before {
-      left: 26px;
+      left: 27px;
       right: auto;
-      top: 44px;
-      bottom: -8px;
+      top: 56px;
+      bottom: -16px;
       width: 2px;
       height: auto;
-      background: linear-gradient(180deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0));
+      background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li:not(:last-child)::after {
+      content: '';
+      top: auto;
+      right: auto;
+      left: 19px;
+      bottom: -12px;
+      width: 18px;
+      height: 18px;
+      border-width: 0 2px 2px 0;
+      border-color: var(--flow-color);
+      background: transparent;
+      transform: rotate(45deg);
     }
 
     li:last-child::before {
       display: none;
     }
+  }
+`;
 
-    strong {
-      margin-top: 0;
-    }
+const OpenerPhase = styled.div`
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  max-width: 100%;
+  padding: 3px 7px;
+  border: 1px solid rgba(184, 145, 91, 0.28);
+  color: #dcb879;
+  background: rgba(184, 145, 91, 0.09);
+  font-size: 0.64rem;
+  font-weight: 950;
+  line-height: 1.1;
+  word-break: keep-all;
 
-    p {
-      grid-column: 2;
-      margin-top: 3px;
-    }
+  @media (max-width: 760px) {
+    grid-column: 2;
   }
 `;
 
@@ -5379,11 +5471,41 @@ const OpenerStepTop = styled.div`
     font-weight: 950;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 760px) {
     grid-row: span 2;
     align-self: start;
     flex-direction: column;
     gap: 5px;
+  }
+`;
+
+const OpenerStepBody = styled.div`
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+
+  strong {
+    display: block;
+    color: #f4efe5;
+    font-size: 0.82rem;
+    font-weight: 950;
+    line-height: 1.3;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin-top: 5px;
+    color: #b8c2c8;
+    font-size: 0.72rem;
+    font-weight: 760;
+    line-height: 1.48;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 760px) {
+    grid-column: 2;
   }
 `;
 
