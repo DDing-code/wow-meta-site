@@ -2089,7 +2089,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           )}
 
           {hasOpenerGuide && (
-            <FieldGuideCard $color={guide.color} $wide={!!openerFlowSteps.length}>
+            <FieldGuideCard $color={guide.color} $wide={openerFlowSteps.length ? 'full' : false}>
               <FieldGuideCardHead>
                 <Clock3 size={15} />
                 <strong>{getFlowCardTitle(guide)}</strong>
@@ -5244,7 +5244,7 @@ const FieldGuideGrid = styled.div`
 
 const FieldGuideCard = styled.div`
   min-width: 0;
-  grid-column: ${props => props.$wide ? 'span 2' : 'auto'};
+  grid-column: ${props => props.$wide === 'full' ? '1 / -1' : props.$wide ? 'span 2' : 'auto'};
   border: 1px solid rgba(184, 145, 91, 0.24);
   border-top: 3px solid ${props => props.$color || 'rgba(184, 145, 91, 0.72)'};
   background:
