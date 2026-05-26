@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T01:42:17.292Z",
+    "generatedAt": "2026-05-26T04:40:13.586Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2447,
-    "rawTotalSkills": 2447,
+    "totalSkills": 2449,
+    "rawTotalSkills": 2449,
     "duplicateIds": [],
     "totalSynergies": 427,
     "stats": {
-      "total": 2447,
+      "total": 2449,
       "byType": {
-        "atomic-skill": 492,
+        "atomic-skill": 494,
         "hero-talent": 522,
         "proc": 4,
         "skill": 118,
@@ -31,7 +31,7 @@
         "Mage": 203,
         "Monk": 224,
         "Paladin": 226,
-        "Priest": 220,
+        "Priest": 222,
         "Rogue": 287,
         "Shaman": 268,
         "Warlock": 235,
@@ -72,7 +72,7 @@
         "Paladin-Holy": 3,
         "Paladin-신성": 60,
         "Paladin-징벌": 47,
-        "Priest-공용": 73,
+        "Priest-공용": 75,
         "Priest-수양": 48,
         "Priest-신성": 46,
         "Priest-암흑": 53,
@@ -94,8 +94,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2440,
-        "withSynergies": 657,
+        "withWikilinks": 2442,
+        "withSynergies": 659,
         "avgLinkDensity": "0.034"
       }
     }
@@ -6864,6 +6864,62 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\운명의낙인.md",
+        "lastUpdate": ""
+      }
+    },
+    "14914": {
+      "id": "14914",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Holy"
+      ],
+      "name": "신성한 불꽃",
+      "koreanName": "신성한 불꽃",
+      "englishName": "Holy Fire",
+      "icon": "spell_holy_searinglight",
+      "iconName": "spell_holy_searinglight",
+      "school": "",
+      "cooldown": "10초",
+      "castTime": "1.5초 시전",
+      "resourceCost": "마나",
+      "range": "40야드",
+      "description": "# 신성한 불꽃 (Holy Fire)",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.0.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_searinglight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_searinglight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_searinglight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_searinglight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_searinglight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신성한폭발"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛의권능응징"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 7,
+        "synergyCount": 6,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Skills\\신성한불꽃.md",
         "lastUpdate": ""
       }
     },
@@ -15635,10 +15691,10 @@
       "icon": "spell_holy_chastise",
       "iconName": "spell_holy_chastise",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
+      "cooldown": "1분",
+      "castTime": "즉시",
+      "resourceCost": "마나",
+      "range": "30야드",
       "description": "# 빛의 권능: 응징 (Holy Word: Chastise)",
       "category": "talent",
       "tags": [],
@@ -15661,7 +15717,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -20246,6 +20302,67 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Skills\\활공.md",
+        "lastUpdate": ""
+      }
+    },
+    "132157": {
+      "id": "132157",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Holy"
+      ],
+      "name": "신성한 폭발",
+      "koreanName": "신성한 폭발",
+      "englishName": "Holy Nova",
+      "icon": "spell_holy_holynova",
+      "iconName": "spell_holy_holynova",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "마나",
+      "range": "자신 주변",
+      "description": "# 신성한 폭발 (Holy Nova)",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.0.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holynova.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holynova.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_holynova.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holynova.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holynova.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신성한불꽃",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛의권능응징"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 11,
+        "synergyCount": 9,
+        "linkDensity": 0.093,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Skills\\신성한폭발.md",
         "lastUpdate": ""
       }
     },

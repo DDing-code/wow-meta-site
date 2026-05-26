@@ -1728,11 +1728,11 @@ function getInlineChartPlan(guide, data) {
       sectionIntro:
         '신성 사제는 큰 피해가 오기 전에 빛의 권능 충전, 절정, 후광, 천상의 찬가, 수호 영혼을 어떻게 나눌지 먼저 정해야 합니다.',
       caption:
-        '신성은 고정 딜사이클보다 빛의 권능 두 충전 낭비를 막고, 절정·후광·천상의 찬가·수호 영혼을 피해 타이머에 나누는 판단이 핵심입니다.',
+        '신성은 고정 딜사이클보다 빛의 권능 두 충전 낭비를 막고, 빛의 쇄도·빛술사·절정·후광·천상의 찬가·수호 영혼을 피해 타이머에 나누는 판단이 핵심입니다.',
       definition: [
-        ['의미', '막대는 실제 로그 수치가 아니라 빛의 권능 충전, 절정 압축 창, 후광 위치 창, 천상의 찬가 채널, 수호 영혼 배정을 한 화면에 놓는 도식입니다.'],
+        ['의미', '막대는 실제 로그 수치가 아니라 빛의 권능 충전, 빛의 쇄도/빛술사 소비, 절정 압축 창, 후광 위치 창, 천상의 찬가 채널, 수호 영혼 배정을 한 화면에 놓는 도식입니다.'],
         ['읽는 법', '빛의 권능이 두 충전에 가까우면 먼저 비우고, 다음 피해가 짧으면 절정/후광, 길고 넓으면 천상의 찬가를 우선 검토합니다.'],
-        ['검수 포인트', '회복의 기원은 전투 내내 굴리고, 순간 치유와 치유의 기원 남발이 마나를 망가뜨리지 않았는지 함께 봅니다.'],
+        ['검수 포인트', '회복의 기원은 전투 내내 굴리고, 빛의 쇄도나 빛술사 없이 치유의 기원을 남발해 마나를 망가뜨리지 않았는지 함께 봅니다.'],
       ],
     });
     return plan;
@@ -5339,6 +5339,7 @@ const OpenerFlowList = styled.ol`
       #080d11;
     box-shadow: inset 0 1px 0 rgba(244, 239, 229, 0.05);
     scroll-snap-align: start;
+    overflow: hidden;
   }
 
   li:last-child {
@@ -5351,7 +5352,7 @@ const OpenerFlowList = styled.ol`
     z-index: 0;
     top: 61px;
     left: 49px;
-    right: -22px;
+    right: 6px;
     height: 2px;
     background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     pointer-events: none;
@@ -5366,7 +5367,7 @@ const OpenerFlowList = styled.ol`
     position: absolute;
     z-index: 2;
     top: 50px;
-    right: -16px;
+    right: 6px;
     display: grid;
     place-items: center;
     width: 24px;
@@ -5401,7 +5402,7 @@ const OpenerFlowList = styled.ol`
       left: 27px;
       right: auto;
       top: 56px;
-      bottom: -16px;
+      bottom: 8px;
       width: 2px;
       height: auto;
       background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
@@ -5416,7 +5417,7 @@ const OpenerFlowList = styled.ol`
       top: auto;
       right: auto;
       left: 19px;
-      bottom: -12px;
+      bottom: 6px;
       width: 18px;
       height: 18px;
       border-width: 0 2px 2px 0;
