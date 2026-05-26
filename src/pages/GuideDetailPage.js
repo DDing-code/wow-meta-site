@@ -108,6 +108,27 @@ function cleanText(value) {
 
 function displayGuideText(value) {
   return cleanText(value)
+    .replace(/특성 문서/g, '특성 가이드')
+    .replace(/운용 문서/g, '운용 가이드')
+    .replace(/딜사이클 문서/g, '딜사이클 가이드')
+    .replace(/회전 문서/g, '딜사이클 가이드')
+    .replace(/개요 문서/g, '개요 가이드')
+    .replace(/본 문서/g, '이 가이드')
+    .replace(/이 문서/g, '이 가이드')
+    .replace(/문서에서는/g, '가이드에서는')
+    .replace(/문서에서/g, '가이드에서')
+    .replace(/문서의/g, '가이드의')
+    .replace(/문서가/g, '가이드가')
+    .replace(/문서/g, '가이드')
+    .replace(/이 페이지/g, '이 가이드')
+    .replace(/기본 본문/g, '기본 설명')
+    .replace(/공통 본문/g, '공통 설명')
+    .replace(/본문/g, '설명')
+    .replace(/별도 장/g, '별도 파트')
+    .replace(/장으로/g, '파트로')
+    .replace(/시각자료/g, '차트')
+    .replace(/보조 자료/g, '확인용 차트')
+    .replace(/직접 인용하지 않습니다/g, '공개로 확인되는 내용만 반영합니다')
     .replace(/회복HoT/g, '회복 지속 치유')
     .replace(/\bHoT\b/g, '지속 치유')
     .replace(/\bDoT\b/g, '지속 피해')
@@ -910,7 +931,7 @@ function ManualManuscriptSection({ guide, manuscript }) {
         <SectionIcon><BookOpen size={17} /></SectionIcon>
         <div>
           <SectionKicker>guide</SectionKicker>
-          <SectionTitle>공략 본문</SectionTitle>
+          <SectionTitle>공략 핵심</SectionTitle>
         </div>
       </SectionHead>
       <ManuscriptHeader $color={guide.color}>
@@ -942,7 +963,7 @@ function ManualManuscriptSection({ guide, manuscript }) {
       </ManuscriptGrid>
       <EvidenceGrid>
         <EvidencePanel>
-          <h3>출처 체크</h3>
+          <h3>참고한 자료</h3>
           <ManuscriptList>
             {manuscript.evidence?.map(item => (
               <li key={item}>{item}</li>
@@ -977,7 +998,7 @@ function getInlineChartPlan(guide, data) {
     {
       id: 'rotation',
       title: getFlowChartTitle(guide),
-      caption: '본문에서 설명한 오프닝, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
+      caption: '위 설명에서 다룬 오프닝, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
     },
     {
       id: 'priority',
@@ -1486,7 +1507,7 @@ function getInlineChartPlan(guide, data) {
       caption: '이 차트는 실측 로그 점수가 아니라 Wowhead/Icy Veins/KB에서 공통으로 확인한 유지, 갱신, 소비 판단을 시간축으로 바꾼 도식입니다.',
       definition: [
         ['의미', '지속 피해 유지는 흡혈의 손길과 어둠의 권능: 고통이 오래 사는 대상에게 끊기지 않도록 보는 체크입니다.'],
-        ['데이터 성격', 'WCL 퍼센트가 아니라 가이드 본문과 KB 시너지 노트에서 추출한 우선순위형 도식입니다.'],
+        ['데이터 성격', 'WCL 퍼센트가 아니라 가이드 설명과 KB 시너지 노트에서 추출한 우선순위형 도식입니다.'],
         ['읽는 법', '막대가 비는 구간은 실제 공백 시간이 아니라 다시 확인해야 하는 갱신/소모 판단 지점입니다.'],
       ],
     });
@@ -1963,7 +1984,7 @@ function getInlineChartPlan(guide, data) {
   plan.push({
     id: 'resource',
     title: '자원 흐름',
-    caption: '소모 기술을 언제 미루고 언제 털어야 하는지 본문 판단을 보조합니다.',
+    caption: '소모 기술을 언제 미루고 언제 털어야 하는지 핵심 판단을 보조합니다.',
   });
   return plan;
 }
@@ -2144,7 +2165,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         <SectionIcon><BookOpen size={17} /></SectionIcon>
         <div>
           <SectionKicker>guide</SectionKicker>
-          <SectionTitle>공략 본문</SectionTitle>
+          <SectionTitle>공략 핵심</SectionTitle>
         </div>
       </SectionHead>
 
@@ -2282,7 +2303,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             <h3>{specialistChart.sectionHeading || '핵심 판단 도식'}</h3>
             <p>
               {renderGuideText(
-                specialistChart.sectionIntro || '본문에서 설명한 관계를 실제 전투에서 다시 확인할 수 있게 한 화면에 묶었습니다.',
+                specialistChart.sectionIntro || '위 설명에서 다룬 관계를 실제 전투에서 다시 확인할 수 있게 한 화면에 묶었습니다.',
                 inlineTerms
               )}
             </p>
@@ -2292,7 +2313,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
         <EvidenceGrid>
           <EvidencePanel>
-            <h3>출처 체크</h3>
+            <h3>참고한 자료</h3>
             <ManuscriptList>
               {manuscript.evidence?.map(item => (
                 <li key={item}>{renderGuideText(item, inlineTerms)}</li>
@@ -2400,7 +2421,7 @@ function GuideDetailPage() {
           <GuideNavTitle>목차</GuideNavTitle>
           {[
             ['overview', '운용 요약'],
-            ...(manuscript ? [['manuscript', '전문 가이드']] : []),
+            ...(manuscript ? [['manuscript', '공략 핵심']] : []),
             ['skills', '핵심 스킬'],
             ['synergies', '시너지'],
             ['sources', '출처'],
@@ -2428,14 +2449,20 @@ function GuideDetailPage() {
               <SummaryItem>
                 <SummaryLabel>데이터 기준</SummaryLabel>
                 <SummaryText>
-                  {manuscript?.sourceNote ||
-                    `${data.specSkills.length}개 전문화 스킬, ${data.commonSkills.length}개 공용 스킬, ${data.synergies.length}개 시너지 노트를 같은 그래프 안에서 묶었습니다.`}
+                  {renderGuideText(
+                    manuscript?.sourceNote ||
+                      `${data.specSkills.length}개 전문화 스킬, ${data.commonSkills.length}개 공용 스킬, ${data.synergies.length}개 시너지 노트를 같은 그래프 안에서 묶었습니다.`,
+                    inlineTerms
+                  )}
                 </SummaryText>
               </SummaryItem>
               <SummaryItem>
-                <SummaryLabel>검증 메모</SummaryLabel>
+                <SummaryLabel>읽기 전 체크</SummaryLabel>
                 <SummaryText>
-                  {manuscript?.caveats?.[0] || '확인된 출처와 KB 연결을 기준으로 작성하고, 미검증 항목은 본문에서 분리합니다.'}
+                  {renderGuideText(
+                    manuscript?.caveats?.[0] || '확인된 출처와 KB 연결을 기준으로 정리하고, 미검증 항목은 설명에서 분리합니다.',
+                    inlineTerms
+                  )}
                 </SummaryText>
               </SummaryItem>
             </SummaryGrid>
@@ -2854,7 +2881,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
       key: `${step.skillId || 'manual'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}순위`,
-      note: step.note || (skill ? skillName(skill) : '전문 가이드 단계'),
+      note: step.note || (skill ? skillName(skill) : '공략 단계'),
       phase: step.phase || getFlowPhaseLabel(guide, index, manualOpener.steps.length),
     };
   }) || [];
@@ -4684,7 +4711,7 @@ function getUptimeRows(guide, data) {
   return pool.map((skill, index) => ({
     label: index < 2 ? '유지 효과' : '재확인',
     skill,
-    note: `${skillName(skill)} 유지/재사용 판단을 본문 흐름에 맞춰 확인합니다.`,
+    note: `${skillName(skill)} 유지/재사용 판단을 전투 흐름에 맞춰 확인합니다.`,
     segments: [[4 + index * 5, 38], [52 + index * 3, 28]],
   }));
 }
@@ -4717,7 +4744,7 @@ function UptimeTimelineChart({ guide, data }) {
         </UptimeLane>
       ))}
       <ChartDataFootnote>
-        실제 전투 로그의 유지율 퍼센트가 아니라, 가이드 본문에서 “언제 확인해야 하는가”를 읽기 쉽게 만든 판단 지도입니다.
+        실제 전투 로그의 유지율 퍼센트가 아니라, 가이드 설명에서 “언제 확인해야 하는가”를 읽기 쉽게 만든 판단 지도입니다.
       </ChartDataFootnote>
     </UptimeChart>
   );

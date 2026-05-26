@@ -136,7 +136,7 @@ const guideTemplateChapters = [
   ['02', '특성 선택', '레이드/쐐기/광역 상황에 따라 바꾸는 노드만 따로 강조합니다.'],
   ['03', '전투 흐름', '아이콘 노드와 우선순위 리스트를 같이 배치해 순서와 조건을 동시에 읽게 합니다.'],
   ['04', '스킬 해설', '공식 한글명, 툴팁, 시너지, 사용 위치를 KB에서 끌어와 설명합니다.'],
-  ['05', '출처 검증', 'Wowhead 공식 번역과 가이드 출처, WCL 검증 상태를 문서 끝에 남깁니다.'],
+  ['05', '출처 검증', 'Wowhead 공식 번역과 가이드 출처, WCL 검증 상태를 끝부분에 남깁니다.'],
 ];
 
 const guideTemplateSources = [
@@ -2794,7 +2794,7 @@ function ChartLibraryMockups() {
       <ChartShell number="04" title="자원 흐름 곡선" meta="분노, 기력, 마나, 광기처럼 낭비 관리가 중요한 전문화용" icon={Gauge} tags={['자원', '낭비 방지', '곡선']}>
         <ResourceCurveChart />
       </ChartShell>
-      <ChartShell number="05" title="발동 반응 매트릭스" meta="프록 충돌, 버프 우선순위, 자원 초과를 한 표로 정리" icon={Zap} tags={['발동', '즉시 판단', '표']}>
+      <ChartShell number="05" title="발동 반응 매트릭스" meta="발동 효과 충돌, 버프 우선순위, 자원 초과를 한 표로 정리" icon={Zap} tags={['발동', '즉시 판단', '표']}>
         <ProcMatrixChart />
       </ChartShell>
       <ChartShell number="06" title="영웅 특성 경로 맵" meta="영웅 특성 선택 이유와 분기 지점을 시각화" icon={Map} tags={['영웅 특성', '선택 경로', '빌드']}>
@@ -2862,7 +2862,7 @@ function GuideTemplateMockup() {
           <GuideTitle>파멸 악마사냥꾼 가이드</GuideTitle>
           <GuideSummary>
             모든 전문화 가이드는 첫 화면에서 결론을 먼저 보여주고, 아래로 내려가며 특성 선택 이유,
-            딜사이클, 스킬 해설, 출처 검증을 순서대로 읽게 만드는 문서형 구조를 기본으로 합니다.
+            딜사이클, 스킬 해설, 출처 검증을 순서대로 읽게 만드는 가이드형 구조를 기본으로 합니다.
           </GuideSummary>
         </div>
         <GuideMetaGrid>
@@ -2877,7 +2877,7 @@ function GuideTemplateMockup() {
 
       <GuideBodyGrid>
         <GuideToc aria-label="가이드 목차">
-          <GuideTocTitle>문서 목차</GuideTocTitle>
+          <GuideTocTitle>가이드 목차</GuideTocTitle>
           <GuideTocList>
             {guideTemplateChapters.map(chapter => (
               <GuideTocItem key={chapter[0]} href={`#guide-${chapter[0]}`}>
@@ -2927,7 +2927,7 @@ function GuideTemplateMockup() {
               <div>
                 <GuideSectionTitle>딜사이클</GuideSectionTitle>
                 <GuideSectionText>
-                  가장 많이 쓰는 본문 블록입니다. 전투 흐름 차트는 순서를, 아래 우선순위는 조건부 판단을 담당합니다.
+                  가장 많이 쓰는 설명 블록입니다. 전투 흐름 차트는 순서를, 아래 우선순위는 조건부 판단을 담당합니다.
                 </GuideSectionText>
               </div>
               <GuideSectionBadge>rotation</GuideSectionBadge>
@@ -3038,8 +3038,8 @@ function MainSiteMockup() {
               <div>
                 <SheetTitle>파멸 악마사냥꾼</SheetTitle>
                 <SheetLead>
-                  로고의 접힌 가이드북 형태를 본문 패널로 확장했습니다. 공략 사이트라는 인상을 위해
-                  중앙에는 읽는 문서, 주변에는 검증과 검색 도구를 배치합니다.
+                  로고의 접힌 가이드북 형태를 설명 패널로 확장했습니다. 공략 사이트라는 인상을 위해
+                  중앙에는 읽는 가이드, 주변에는 검증과 검색 도구를 배치합니다.
                 </SheetLead>
               </div>
               <RouteCard>
@@ -3109,7 +3109,7 @@ function MainSiteMockup() {
             </KeyValue>
             <KeyValue>
               <span>상태</span>
-              <strong>초안</strong>
+              <strong>검수 중</strong>
             </KeyValue>
           </LedgerBlock>
         </Ledger>
@@ -3132,9 +3132,9 @@ function PanelSystemMockup() {
         <GuideSheet>
           <SheetHead>
             <div>
-              <SheetTitle>공략 본문 패널</SheetTitle>
+              <SheetTitle>공략 핵심 패널</SheetTitle>
               <SheetLead>
-                본문도 어두운 그래파이트 패널로 유지하고, 브라스 라인과 아이보리 텍스트로 정보 위계를 잡습니다.
+                설명 영역도 어두운 그래파이트 패널로 유지하고, 브라스 라인과 아이보리 텍스트로 정보 위계를 잡습니다.
               </SheetLead>
             </div>
           </SheetHead>
@@ -3413,7 +3413,7 @@ function MockupsPage() {
             <div>
               <SectionTitle>전문화 가이드 기본 양식</SectionTitle>
               <SectionText>
-                KB와 차트 라이브러리를 실제 가이드 문서 안에 배치하는 기준 양식입니다.
+                KB와 차트 라이브러리를 실제 가이드 안에 배치하는 기준 양식입니다.
                 모든 전문화는 같은 읽기 흐름을 유지하되, 차트와 스킬 해설 블록만 전문화에 맞게 교체합니다.
               </SectionText>
             </div>
@@ -3424,11 +3424,11 @@ function MockupsPage() {
               </Note>
               <Note>
                 <Check size={15} />
-                본문은 목차, 문서, 출처 검증 패널의 3단 구조
+                설명 영역은 목차, 가이드, 출처 검증 패널의 3단 구조
               </Note>
               <Note>
                 <Check size={15} />
-                모바일에서는 목차와 검증 패널이 본문 위아래로 접힘
+                모바일에서는 목차와 검증 패널이 설명 영역 위아래로 접힘
               </Note>
             </Notes>
           </SectionHeader>
@@ -3468,7 +3468,7 @@ function MockupsPage() {
             <div>
               <SectionTitle>1. 로고 톤을 적용한 메인 가이드 화면</SectionTitle>
               <SectionText>
-                기존의 평평한 테이블 UI 대신, 로고의 가이드북 형태를 중앙 문서 패널로 확장했습니다.
+                기존의 평평한 테이블 UI 대신, 로고의 가이드북 형태를 중앙 가이드 패널로 확장했습니다.
                 주변에는 직업 색인, 검색, 출처 검증 패널을 배치해 공략 사이트의 성격을 바로 드러냅니다.
               </SectionText>
             </div>
@@ -3497,7 +3497,7 @@ function MockupsPage() {
               <SectionTitle>3. 스펠 DB 상세 패널</SectionTitle>
               <SectionText>
                 데이터베이스 화면도 같은 로고 문법을 씁니다. 왼쪽은 스펠 색인, 오른쪽은 공식 툴팁과
-                가이드 연결 경로를 보여주는 문서형 패널로 설계했습니다.
+                가이드 연결 경로를 보여주는 가이드형 패널로 설계했습니다.
               </SectionText>
             </div>
             <Notes>
@@ -3511,7 +3511,7 @@ function MockupsPage() {
               </Note>
               <Note>
                 <Check size={15} />
-                스킬 상세와 가이드 문서가 한 브랜드 구조 안에서 이어짐
+                스킬 상세와 가이드가 한 브랜드 구조 안에서 이어짐
               </Note>
             </Notes>
           </SectionHeader>
