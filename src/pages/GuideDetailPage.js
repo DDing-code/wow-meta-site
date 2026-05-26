@@ -3999,9 +3999,9 @@ function getUptimeRows(guide, data) {
         segments: [[4, 6], [20, 6], [34, 6], [50, 6], [66, 6], [83, 6]],
       },
       {
-        label: '출혈 기준',
-        skill: findSkillByNames(data, ['분쇄', '특화: 치명상']),
-        note: '분쇄와 치명상은 유지 피해가 아니라 다음 피해 창의 기준선입니다.',
+        label: '분쇄 기준',
+        skill: findSkillByNames(data, ['분쇄']),
+        note: '분쇄는 오래 사는 대상에 먼저 깔아 두는 출혈 기준선입니다. 치명상은 이 행의 결과로 로그에서 따로 검수합니다.',
         segments: [[2, 94]],
       },
       {
