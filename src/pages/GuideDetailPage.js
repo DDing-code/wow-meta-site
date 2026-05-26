@@ -111,9 +111,16 @@ function displayGuideText(value) {
     .replace(/회복HoT/g, '회복 지속 치유')
     .replace(/\bHoT\b/g, '지속 치유')
     .replace(/\bDoT\b/g, '지속 피해')
+    .replace(/\bRotation Guide\b/g, '운용 가이드')
     .replace(/\bRotation\b/g, '딜사이클')
     .replace(/\bOpener\b/g, '오프닝')
+    .replace(/\bMythic\+ high keys\b/gi, '쐐기 고단')
     .replace(/\bMythic\+\b/g, '쐐기')
+    .replace(/\bHigh Keys\b/g, '쐐기 고단')
+    .replace(/\bMythic All Bosses\b/g, '신화 전체 보스')
+    .replace(/\bMythic Raid\b/g, '신화 레이드')
+    .replace(/\bAll Dungeons\b/g, '전체 던전')
+    .replace(/고정 딜사이클/g, '고정 순서')
     .replace(/\bBurst\b/g, '극딜')
     .replace(/\bProc\b/g, '발동')
     .replace(/\bUptime\b/g, '유지율')
@@ -1775,7 +1782,7 @@ function getInlineChartPlan(guide, data) {
       sectionIntro:
         '신성 사제는 큰 피해가 오기 전에 빛의 권능 충전, 절정, 후광, 천상의 찬가, 수호 영혼을 어떻게 나눌지 먼저 정해야 합니다.',
       caption:
-        '신성은 고정 딜사이클보다 빛의 권능 두 충전 낭비를 막고, 빛의 쇄도·빛술사·절정·후광·천상의 찬가·수호 영혼을 피해 타이머에 나누는 판단이 핵심입니다.',
+        '신성은 고정 순서보다 빛의 권능 두 충전 낭비를 막고, 빛의 쇄도·빛술사·절정·후광·천상의 찬가·수호 영혼을 피해 타이머에 나누는 판단이 핵심입니다.',
       definition: [
         ['의미', '막대는 실제 로그 수치가 아니라 빛의 권능 충전, 빛의 쇄도/빛술사 소비, 절정 압축 창, 후광 위치 창, 천상의 찬가 채널, 수호 영혼 배정을 한 화면에 놓는 도식입니다.'],
         ['읽는 법', '빛의 권능이 두 충전에 가까우면 먼저 비우고, 다음 피해가 짧으면 절정/후광, 길고 넓으면 천상의 찬가를 우선 검토합니다.'],
