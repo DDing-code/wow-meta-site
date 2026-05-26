@@ -10281,7 +10281,7 @@ export const guideManuscripts = {
     summary:
       '수양 사제는 피해가 들어온 뒤 체력바를 따라가는 힐러가 아니라, 피해가 오기 전 속죄를 만들고 그 짧은 창 안에 회개, 정신 분열, 사악의 정화, 성스러운 일격, 어둠의 권능: 죽음 같은 피해 주문을 밀어 넣어 치유로 되돌리는 선제형 힐러입니다. 12.0.5 기준 핵심 변화는 사도가 신의 권능: 광휘 램프를 크게 압축한다는 점, 신의 권능: 보호막과 직접 복구의 가치가 올라갔다는 점, 2026-05-08 핫픽스 이후 속죄가 30% 전환으로 보정되었지만 5명을 넘는 대상에서 감쇠가 더 강해졌다는 점입니다.',
     sourceNote:
-      'Blizzard 12.0.5 노트는 수양의 속죄 전환을 28%로 낮추는 대신 신의 권능: 보호막, 공허의 보호막, 신의 권능: 광휘, 간청, 순간 치유, 어둠의 치유를 25% 보강했습니다. 2026-05-08 핫픽스는 속죄 피해 전환을 30%로 올리되, 5명을 넘는 대상에서 치유 감쇠가 더 빠르게 적용되도록 바꿨습니다. Wowhead는 2026-04-18 회전 가이드에서 사도-신의 권능: 광휘로 램프 시간이 약 8초까지 압축되고, 레이드에서는 20명 속죄 커버리지와 사도/궁극의 참회 분리를, 쐐기에서는 Oracle 보호막 중심 운영과 회개 방어 사용을 강조합니다. Icy Veins 12.0.5 페이지는 2026-05-20 기준 수양을 속죄 피해 전환과 흡수 주문을 함께 쓰는 힐러로 설명합니다. Archon은 2026-05-26 확인 시점 최근 14일 기준 Mythic raid 31,313 parses에서 Oracle 99.9%, 추천 Spec & Hero 16.6%, Mythic+ high keys 7,148 parses에서 Oracle 99.8%, Voidweaver 0.1%, 추천 Spec & Hero 16.7%, +22/115.3k HPS/26.4k DPS를 표시합니다. Warcraft Priests는 공개 Discord 목록과 작성자 공개 경로만 근거로 남기고, 로그인/가입이 필요한 원문은 직접 인용하지 않습니다.',
+      'Blizzard 12.0.5 노트는 수양의 속죄 전환을 28%로 낮추는 대신 신의 권능: 보호막, 공허의 보호막, 신의 권능: 광휘, 간청, 순간 치유, 어둠의 치유를 25% 보강했습니다. 2026-05-08 핫픽스는 속죄 피해 전환을 30%로 올리되, 5명을 넘는 대상에서 치유 감쇠가 더 빠르게 적용되도록 바꿨습니다. Wowhead는 2026-05-23 회전 가이드에서 사도-신의 권능: 광휘로 레이드 램프를 빠르게 열고, 레이드에서는 20명 속죄 커버리지와 사도/궁극의 참회 분리를, 쐐기에서는 Oracle 보호막 중심 운영과 회개 방어 사용을 강조합니다. Icy Veins 12.0.5 페이지는 사도 램프와 궁극의 참회 램프를 별도 시퀀스로 제시하고, Oracle을 기본 추천 흐름으로 설명합니다. Archon은 2026-05-26 확인 시점 최근 14일 기준 Mythic raid 31,539 parses에서 Oracle 99.9%, 추천 Spec & Hero 16.5%, 추천 빌드 194.2k HPS/31.3k DPS를, Mythic+ high keys 7,154 parses에서 Oracle 99.8%, Voidweaver 0.1%, 추천 Spec & Hero 16.7%, +22/115.3k HPS/26.4k DPS를 표시합니다. Warcraft Priests는 공개 Discord 목록과 작성자 공개 경로만 근거로 남기고, 로그인/가입이 필요한 원문은 직접 인용하지 않습니다.',
     sources: [
       {
         tier: 'S',
@@ -10301,8 +10301,8 @@ export const guideManuscripts = {
         tier: 'A',
         label: 'Wowhead Discipline Priest Rotation Guide',
         url: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/rotation-cooldowns-pve-healer',
-        updated: '2026-04-18',
-        note: '사도-신의 권능: 광휘 압축 램프, 레이드/Oracle/Voidweaver 우선순위 확인',
+        updated: '2026-05-23',
+        note: '속죄 중심 램프, 레이드 20명 커버리지, 사도-광휘 연결, 쐐기 회개 방어 사용 확인',
       },
       {
         tier: 'A',
@@ -10337,23 +10337,23 @@ export const guideManuscripts = {
         label: 'Archon Discipline Priest Raid Build',
         url: 'https://www.archon.gg/wow/builds/discipline/priest/raid/talents/mythic/all-bosses',
         updated: '2026-05-26 확인',
-        note: '최근 14일 Mythic All Bosses 31,313 parses, Oracle 99.9%, 추천 Spec & Hero 16.6% 확인',
+        note: '최근 14일 Mythic All Bosses 31,539 parses, Oracle 99.9%, 추천 Spec & Hero 16.5%, 추천 빌드 194.2k HPS/31.3k DPS 확인',
       },
       {
         tier: 'A',
         label: 'Archon Discipline Priest High-Key Mythic+ Talents',
         url: 'https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/talents/high-keys/all-dungeons/this-week',
         updated: '2026-05-26 확인',
-        note: '최근 14일 쐐기 고단 상위 5% 7,148 parses, Oracle 99.8%, Voidweaver 0.1%, 추천 빌드 +22/115.3k HPS/26.4k DPS 확인',
+        note: '최근 14일 쐐기 고단 상위 5% 7,154 parses, Oracle 99.8%, Voidweaver 0.1%, 추천 빌드 +22/115.3k HPS/26.4k DPS 확인',
       },
     ],
     evidence: [
       'Wowhead와 Icy Veins 모두 수양을 속죄 준비 후 피해 주문으로 치유를 만드는 선제형 힐러로 설명합니다.',
       'Blizzard 12.0.5 노트는 속죄 28% 조정과 보호막/직접 복구 25% 보강을 명시했고, 2026-05-08 핫픽스는 속죄 30%와 5명 초과 감쇠 강화를 명시했습니다.',
-      'Wowhead 2026-04-18 회전 가이드는 사도가 신의 권능: 광휘를 시전하고 다음 광휘를 즉시화해 램프 준비 시간이 약 8초로 짧아졌다고 설명합니다.',
+      'Wowhead 2026-05-23 회전 가이드는 던전에서는 신의 권능: 광휘와 신의 권능: 보호막, 레이드에서는 보호막/간청/순간 치유/사도/광휘로 속죄를 만든 뒤 피해 주문으로 회수하는 구조를 제시합니다.',
       'Icy Veins 12.0.5 회전 페이지는 Oracle을 레이드와 쐐기 추천으로 표시하고, 사도 램프와 궁극의 참회 램프를 별도로 제시합니다.',
       'Warcraft Priests는 Wowhead 커뮤니티 Discord 목록의 Priest 항목과 Icy Veins 작성자 공개 프로필로 접근 경로를 확인했습니다.',
-      'Archon 수양 레이드 빌드는 최근 14일 Mythic raid 31,313 parses에서 Oracle 99.9%, 쐐기 고단 상위 5% 7,148 parses에서 Oracle 99.8%와 Voidweaver 0.1%를 표시하므로, 본문은 Oracle을 기본값으로 쓰되 로그 표본 해석으로만 취급합니다.',
+      'Archon 수양 레이드 빌드는 최근 14일 Mythic raid 31,539 parses에서 Oracle 99.9%, 쐐기 고단 상위 5% 7,154 parses에서 Oracle 99.8%와 Voidweaver 0.1%를 표시하므로, 본문은 Oracle을 기본값으로 쓰되 로그 표본 해석으로만 취급합니다.',
       'KB 그래프는 속죄-신의 권능 광휘, 사도-속죄 확장, 회개-정신 분열 속죄 전환, 고통 억제-방벽, 예언자-경건 보호를 높은 연결 노드로 잡습니다.',
     ],
     caveats: [
@@ -10417,7 +10417,7 @@ export const guideManuscripts = {
       {
         title: '5. Oracle과 Voidweaver의 차이',
         paragraphs: [
-          'Oracle은 12.0.5 기준 레이드와 쐐기 모두에서 안정적인 선택지로 확인됩니다. 2026-05-26 확인 기준 Archon 최근 14일 표본은 레이드 31,313 parses에서 Oracle 99.9%, 쐐기 고단 상위 5% 7,148 parses에서 Oracle 99.8%와 Voidweaver 0.1%를 표시합니다. 이유는 단순히 수치가 높아서가 아니라, 흉조, 두 개의 시야, 경건 계열 효과가 회개 중심의 안정성을 높이고 큰 쿨다운 사이 빈 구간을 메우기 때문입니다. Oracle을 선택한 수양은 회개를 더 자주, 더 방어적으로 읽어야 하며, 속죄 창이 없을 때도 파티를 버티게 하는 보조 치유가 강점입니다.',
+          'Oracle은 12.0.5 기준 레이드와 쐐기 모두에서 안정적인 선택지로 확인됩니다. 2026-05-26 확인 기준 Archon 최근 14일 표본은 레이드 31,539 parses에서 Oracle 99.9%, 쐐기 고단 상위 5% 7,154 parses에서 Oracle 99.8%와 Voidweaver 0.1%를 표시합니다. 이유는 단순히 수치가 높아서가 아니라, 흉조, 두 개의 시야, 경건 계열 효과가 회개 중심의 안정성을 높이고 큰 쿨다운 사이 빈 구간을 메우기 때문입니다. Oracle을 선택한 수양은 회개를 더 자주, 더 방어적으로 읽어야 하며, 속죄 창이 없을 때도 파티를 버티게 하는 보조 치유가 강점입니다.',
           'Voidweaver는 혼돈의 균열, 정신 분열, 공허의 폭발, 공허의 망령이 만드는 암흑 피해 창을 속죄 치유로 바꾸는 구조입니다. 이 분기는 피해 전환 창이 분명할수록 강하지만, 속죄가 없는 상태에서 혼돈의 균열 계열 피해를 쓰면 가치가 크게 줄어듭니다. 즉 Voidweaver는 “피해 버튼이 강하다”가 아니라 “그 피해가 속죄 대상에게 돌아갈 때 강하다”로 이해해야 합니다.',
         ],
         bullets: [
