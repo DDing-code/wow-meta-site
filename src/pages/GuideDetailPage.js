@@ -131,6 +131,7 @@ function displayGuideText(value) {
     .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝 레일/g, '오프닝 전투 흐름')
     .replace(/준비 레일/g, '준비 전투 흐름')
+    .replace(/레일/g, '흐름도')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
     .replace(/\bSwiftmend\b/g, '신속한 치유')
     .replace(/\bRegrowth\b/g, '재생')
@@ -2029,20 +2030,36 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
   });
 }
 
-function getFlowCardTitle() {
+function getFlowCardTitle(guide) {
+  if (guide?.role === 'healers') return '피해 대응 전투 흐름';
+  if (guide?.role === 'tanks') return '진입/방어 전투 흐름';
   return '오프닝 전투 흐름';
+}
+
+function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
+  const text = displayGuideText(item);
+  const [candidateLabel, ...rest] = text.split(/[:：]/);
+  const label = cleanText(candidateLabel).replace(/^[\d\s.)-]+/, '');
+  const hasExplicitLabel = !!rest.length && label.length > 1 && label.length <= 30;
+  const skillTerm = inlineTerms?.find(term => (
+    label === term.label ||
+    label.startsWith(`${term.label} `) ||
+    text.startsWith(term.label)
+  ));
+
+  return {
+    key: `fallback-opener-${index}`,
+    skill: skillTerm?.skill || null,
+    label: hasExplicitLabel ? label : `${index + 1}단계`,
+    note: hasExplicitLabel ? rest.join(':').trim() : text,
+    phase: getFlowPhaseLabel(guide, index, total),
+  };
 }
 
 function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   const flowItems = steps.length
     ? steps
-    : fallbackItems.map((item, index) => ({
-      key: `fallback-opener-${index}`,
-      skill: null,
-      label: `${index + 1}단계`,
-      note: item,
-      phase: getFlowPhaseLabel(guide, index, fallbackItems.length),
-    }));
+    : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
 
   if (flowItems.length) {
     return (
@@ -2117,8 +2134,16 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         <OpenerFlowCard $color={guide.color}>
           <FieldGuideCardHead>
             <Clock3 size={15} />
-            <strong>{getFlowCardTitle()}</strong>
+            <strong>{getFlowCardTitle(guide)}</strong>
           </FieldGuideCardHead>
+          {!!manuscript.opener?.summary && (
+            <OpenerFlowIntro>
+              {!!manuscript.opener?.title && (
+                <strong>{renderGuideText(manuscript.opener.title, inlineTerms)}</strong>
+              )}
+              <p>{renderGuideText(manuscript.opener.summary, inlineTerms)}</p>
+            </OpenerFlowIntro>
+          )}
           <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerTextItems || []} inlineTerms={inlineTerms} />
         </OpenerFlowCard>
       )}
@@ -5313,6 +5338,35 @@ const OpenerFlowCard = styled(FieldGuideCard)`
   container-type: inline-size;
 `;
 
+const OpenerFlowIntro = styled.div`
+  display: grid;
+  gap: 6px;
+  padding: 13px 16px;
+  border-bottom: 1px solid rgba(244, 239, 229, 0.08);
+  background:
+    linear-gradient(90deg, rgba(184, 145, 91, 0.1), rgba(184, 145, 91, 0)),
+    rgba(8, 13, 17, 0.48);
+
+  strong {
+    color: #f4efe5;
+    font-size: 0.96rem;
+    font-weight: 950;
+    line-height: 1.35;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin: 0;
+    color: #d8cbb7;
+    font-size: 0.82rem;
+    font-weight: 760;
+    line-height: 1.62;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
 const FieldGuideCardHead = styled.div`
   display: flex;
   align-items: center;
@@ -5432,7 +5486,7 @@ const OpenerFlowList = styled.ol`
     border-left: 8px solid var(--flow-line);
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 560px) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
@@ -5479,7 +5533,7 @@ const OpenerFlowList = styled.ol`
     }
   }
 
-  @container (max-width: 760px) {
+  @container (max-width: 560px) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
@@ -5541,7 +5595,7 @@ const OpenerPhase = styled.div`
   line-height: 1.1;
   word-break: keep-all;
 
-  @media (max-width: 760px) {
+  @media (max-width: 560px) {
     grid-column: 1 / -1;
   }
 `;
@@ -5567,7 +5621,7 @@ const OpenerStepTop = styled.div`
     grid-column: 1 / -1;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 560px) {
     grid-row: 1 / span 2;
     align-self: start;
     grid-template-columns: 1fr;
@@ -5600,7 +5654,7 @@ const OpenerStepNumber = styled.span`
   font-size: 0.68rem;
   font-weight: 950;
 
-  @media (max-width: 760px) {
+  @media (max-width: 560px) {
     grid-column: 1;
     grid-row: 1;
   }
@@ -5633,7 +5687,7 @@ const OpenerStepBody = styled.div`
     text-wrap: pretty;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 560px) {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
