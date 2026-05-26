@@ -4626,9 +4626,9 @@ function getUptimeRows(guide, data) {
         segments: [[20, 12], [58, 12], [86, 10]],
       },
       {
-        label: '평온/번성',
-        skill: findSkillByNames(data, ['번성', '평온']),
-        note: '이미 깔린 지속 치유 효과가 많을 때 평온과 번성 효과의 연장 가치가 커집니다.',
+        label: '평온 연장',
+        skill: findSkillByNames(data, ['평온']),
+        note: '이미 깔린 지속 치유 효과가 많을 때 평온에 붙은 번성 효과의 연장 가치가 커집니다.',
         segments: [[30, 16], [70, 18]],
       },
       {

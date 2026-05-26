@@ -134,7 +134,7 @@ const guideTemplateBuilds = [
 const guideTemplateChapters = [
   ['01', '핵심 요약', '한 화면 안에서 빌드, 강점, 약점, 우선순위를 먼저 확인합니다.'],
   ['02', '특성 선택', '레이드/쐐기/광역 상황에 따라 바꾸는 노드만 따로 강조합니다.'],
-  ['03', '딜사이클', '아이콘 레일과 우선순위 리스트를 같이 배치해 순서와 조건을 동시에 읽게 합니다.'],
+  ['03', '전투 흐름', '아이콘 노드와 우선순위 리스트를 같이 배치해 순서와 조건을 동시에 읽게 합니다.'],
   ['04', '스킬 해설', '공식 한글명, 툴팁, 시너지, 사용 위치를 KB에서 끌어와 설명합니다.'],
   ['05', '출처 검증', 'Wowhead 공식 번역과 가이드 출처, WCL 검증 상태를 문서 끝에 남깁니다.'],
 ];
@@ -2398,23 +2398,23 @@ function RotationRailMockup() {
       <FrameTop>
         <FrameName>
           <Swords size={16} />
-          rotation rail component
+          combat flow component
         </FrameName>
         <FrameMeta>responsive / icon-first</FrameMeta>
       </FrameTop>
 
       <RotationHeader>
         <div>
-          <RotationTitle>딜사이클 아이콘 레일</RotationTitle>
+          <RotationTitle>오프닝 전투 흐름 차트</RotationTitle>
           <RotationLead>
-            가장 자주 쓸 형태는 스킬 아이콘을 전투 순서대로 놓고, 반복 조건과 우선순위 리스트를 같은 블록에 붙이는 방식입니다.
-            <RotationAccent> 전문화명</RotationAccent>과 핵심 스킬명만 갈아끼우면 오프닝, 유지 딜사이클, 광역 딜사이클에 모두 재사용할 수 있습니다.
+            오프닝은 스킬 목록이 아니라 전투 시작부터 첫 핵심 창까지 이어지는 판단 흐름입니다.
+            <RotationAccent> 전문화명</RotationAccent>과 핵심 스킬명만 갈아끼우면 딜러의 오프닝, 탱커의 진입/방어, 힐러의 첫 피해 대응에 모두 재사용할 수 있습니다.
           </RotationLead>
         </div>
         <RotationStatGrid>
           <RotationStat>
             <RotationStatLabel>사용 위치</RotationStatLabel>
-            <RotationStatValue>오프닝 / 유지</RotationStatValue>
+            <RotationStatValue>오프닝 / 진입 / 첫 피해</RotationStatValue>
           </RotationStat>
           <RotationStat>
             <RotationStatLabel>반응형</RotationStatLabel>
@@ -2499,7 +2499,7 @@ function RotationRailMockup() {
               </SourceBadge>
               <SourceBadge>
                 <BadgeTier>03</BadgeTier>
-                <BadgeText>모바일에서는 레일이 세로 순서로 접힘</BadgeText>
+                <BadgeText>모바일에서는 흐름 차트가 세로 순서로 접힘</BadgeText>
               </SourceBadge>
             </RotationSideBody>
           </RotationSidePanel>
@@ -2927,7 +2927,7 @@ function GuideTemplateMockup() {
               <div>
                 <GuideSectionTitle>딜사이클</GuideSectionTitle>
                 <GuideSectionText>
-                  가장 많이 쓰는 본문 블록입니다. 아이콘 레일은 순서를, 아래 우선순위는 조건부 판단을 담당합니다.
+                  가장 많이 쓰는 본문 블록입니다. 전투 흐름 차트는 순서를, 아래 우선순위는 조건부 판단을 담당합니다.
                 </GuideSectionText>
               </div>
               <GuideSectionBadge>rotation</GuideSectionBadge>
@@ -3388,7 +3388,7 @@ function MockupsPage() {
           </Jump>
           <Jump href="#rotation">
             <Swords size={15} />
-            딜사이클 레일
+            전투 흐름
           </Jump>
           <Jump href="#charts">
             <BarChart3 size={15} />
