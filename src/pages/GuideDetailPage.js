@@ -2872,7 +2872,12 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
     <RotationFeature $color={guide.color}>
       <RotationHeader>
         <div>
-          <RotationTitle>{renderGuideText(manualOpener?.title || profile.cycleTitle, inlineTerms)}</RotationTitle>
+          <RotationTitle>{renderGuideText(getFlowChartTitle(guide), inlineTerms)}</RotationTitle>
+          {!!(manualOpener?.title || profile.cycleTitle) && (
+            <RotationFlowSubtitle>
+              {renderGuideText(manualOpener?.title || profile.cycleTitle, inlineTerms)}
+            </RotationFlowSubtitle>
+          )}
           <RotationLead>
             {renderGuideText(manualOpener?.summary || (synergy ? `${synergyName(synergy)} 시너지를 기준으로 핵심 스킬을 배치했습니다.` : profile.lead), inlineTerms)}
           </RotationLead>
@@ -5876,6 +5881,21 @@ const RotationHeader = styled.div`
 const RotationTitle = styled.h3`
   color: #f4efe5;
   font-size: 1.22rem;
+`;
+
+const RotationFlowSubtitle = styled.div`
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 8px;
+  padding: 5px 8px;
+  border: 1px solid rgba(184, 145, 91, 0.24);
+  background: rgba(184, 145, 91, 0.08);
+  color: #d9b97a;
+  font-size: 0.78rem;
+  font-weight: 950;
+  line-height: 1.35;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 `;
 
 const RotationLead = styled.p`

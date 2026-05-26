@@ -2459,7 +2459,7 @@ function RotationRailMockup() {
 
         <RotationCaption>
           <RotationAccent>예시 전문화</RotationAccent>
-          <span>단일 대상 오프닝 및 반복 딜사이클</span>
+          <span>단일 대상 오프닝 및 유지 전투 흐름</span>
         </RotationCaption>
 
         <RotationLower>
