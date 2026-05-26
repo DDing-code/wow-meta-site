@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T14:02:36.102Z",
+    "generatedAt": "2026-05-26T14:34:19.311Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2449,
-    "rawTotalSkills": 2449,
+    "totalSkills": 2450,
+    "rawTotalSkills": 2450,
     "duplicateIds": [],
     "totalSynergies": 427,
     "stats": {
-      "total": 2449,
+      "total": 2450,
       "byType": {
-        "atomic-skill": 494,
+        "atomic-skill": 495,
         "hero-talent": 522,
         "proc": 4,
         "skill": 118,
@@ -25,7 +25,7 @@
       "byClass": {
         "DeathKnight": 75,
         "DemonHunter": 94,
-        "Druid": 117,
+        "Druid": 118,
         "Evoker": 98,
         "Hunter": 136,
         "Mage": 203,
@@ -46,7 +46,7 @@
         "DemonHunter-복수": 24,
         "DemonHunter-파멸": 31,
         "DemonHunter-포식": 31,
-        "Druid-공용": 11,
+        "Druid-공용": 12,
         "Druid-수호": 23,
         "Druid-야성": 22,
         "Druid-조화": 32,
@@ -94,8 +94,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2442,
-        "withSynergies": 660,
+        "withWikilinks": 2443,
+        "withSynergies": 661,
         "avgLinkDensity": "0.034"
       }
     }
@@ -1650,6 +1650,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Skills\\평온.md",
+        "lastUpdate": ""
+      }
+    },
+    "768": {
+      "id": "768",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
+      "name": "표범 변신",
+      "koreanName": "표범 변신",
+      "englishName": "Cat Form",
+      "icon": "ability_druid_catform",
+      "iconName": "ability_druid_catform",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "글로벌 재사용 대기시간",
+      "range": "자신",
+      "description": "# 표범 변신 (Cat Form)",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.0.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_catform.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_catform.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_catform.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_catform.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/태양섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Skills\\표범변신.md",
         "lastUpdate": ""
       }
     },
