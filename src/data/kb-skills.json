@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T04:40:13.586Z",
+    "generatedAt": "2026-05-26T07:35:07.078Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -95,7 +95,7 @@
       },
       "quality": {
         "withWikilinks": 2442,
-        "withSynergies": 659,
+        "withSynergies": 660,
         "avgLinkDensity": "0.034"
       }
     }
@@ -43153,14 +43153,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_envelopingshadows.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {

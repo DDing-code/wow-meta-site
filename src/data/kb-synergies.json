@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T01:42:17.293Z",
+    "generatedAt": "2026-05-26T07:35:07.078Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -8551,8 +8551,7 @@
         "231682",
         "372991",
         "373035",
-        "1252215",
-        "373003"
+        "1252215"
       ],
       "class": "Priest",
       "spec": "수양",
@@ -8573,8 +8572,7 @@
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/성역",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\고통억제-방벽.md",
@@ -8808,7 +8806,6 @@
         "1252215",
         "373035",
         "372991",
-        "373003",
         "238135",
         "231682",
         "238063",
@@ -8830,7 +8827,6 @@
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/영원의방벽",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/성역",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/관용"
@@ -8885,6 +8881,7 @@
         "47540",
         "8092",
         "81749",
+        "373003",
         "198068",
         "373180",
         "193134",
@@ -8901,13 +8898,15 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/책망",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/대속",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의방종",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/암흑추출",

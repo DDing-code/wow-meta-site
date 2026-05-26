@@ -881,7 +881,7 @@ function InlineSkillTerm({ skill, children }) {
       aria-label={`${skillName(skill)} Wowhead tooltip`}
     >
       {iconUrl ? <img src={iconUrl} alt="" loading="lazy" /> : <InlineSkillIconFallback aria-hidden="true" />}
-      <span>{children}</span>
+      <InlineSkillText>{children}</InlineSkillText>
     </InlineSkillAnchor>
   );
 }
@@ -3024,13 +3024,13 @@ function getUptimeRows(guide, data) {
         segments: [[2, 94]],
       },
       {
-        label: 'Oracle 안정',
+        label: '예언자 안정',
         skill: findSkillByNames(data, ['흉조', '경건']),
         note: '현재 레이드/쐐기 로그 표본의 기본 영웅 특성 축입니다. 큰 쿨다운 사이 빈 구간을 보강합니다.',
         segments: [[16, 10], [46, 10], [76, 10]],
       },
       {
-        label: 'Voidweaver 창',
+        label: '공허술사 피해 창',
         skill: findSkillByNames(data, ['혼돈의 균열', '공허의 폭발']),
         note: '선택 시 암흑 피해 창을 속죄 대상에게 돌려야 의미가 있습니다. 속죄 없는 균열은 낭비입니다.',
         segments: [[30, 12], [80, 12]],
@@ -6089,6 +6089,9 @@ const InlineSkillAnchor = styled.a`
   line-height: 1.25;
   text-decoration: none;
   vertical-align: -0.18em;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
   border-bottom: 1px solid rgba(255, 209, 102, 0.42);
 
   img {
@@ -6101,16 +6104,19 @@ const InlineSkillAnchor = styled.a`
     box-shadow: 0 0 0 1px rgba(8, 13, 17, 0.9);
   }
 
-  span {
-    min-width: 0;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-  }
-
   &:hover {
     color: #fff1b8;
     border-bottom-color: rgba(255, 241, 184, 0.84);
   }
+`;
+
+const InlineSkillText = styled.em`
+  display: inline-block;
+  min-width: 0;
+  font-style: normal;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
 `;
 
 const InlineSkillIconFallback = styled.span`
