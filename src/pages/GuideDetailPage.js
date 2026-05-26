@@ -128,7 +128,6 @@ function displayGuideText(value) {
     .replace(/공통 본문/g, '공통 설명')
     .replace(/본문/g, '설명')
     .replace(/별도 장/g, '별도 파트')
-    .replace(/장으로/g, '파트로')
     .replace(/시각자료/g, '차트')
     .replace(/보조 자료/g, '확인용 차트')
     .replace(/직접 인용하지 않습니다/g, '공개로 확인되는 내용만 반영합니다')
