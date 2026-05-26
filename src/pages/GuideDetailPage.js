@@ -2156,16 +2156,6 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
             ))}
           </OpenerFlowPhaseLegend>
         )}
-        <OpenerFlowRail $color={guide.color} aria-label={`${chartLabel} 요약`}>
-          {flowItems.map((step, index) => (
-            <li key={`${step.key}-rail`}>
-              <span>{String(index + 1).padStart(2, '0')}</span>
-              <SkillIconLink skill={step.skill} size={34} />
-              <strong>{step.label}</strong>
-              {!!step.phase && <em>{step.phase}</em>}
-            </li>
-          ))}
-        </OpenerFlowRail>
         <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
           {flowItems.map((step, index) => (
             <li key={step.key}>
@@ -5627,121 +5617,23 @@ const OpenerFlowPhaseLegend = styled.div`
   }
 `;
 
-const OpenerFlowRail = styled.ol`
-  --flow-color: ${props => props.$color || '#b8915b'};
-  --flow-soft: ${props => `${props.$color || '#b8915b'}24`};
-  --flow-line: ${props => `${props.$color || '#b8915b'}86`};
-  position: relative;
-  display: flex;
-  gap: 12px;
-  margin: 0;
-  padding: 12px 16px 8px;
-  list-style: none;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
-
-  li {
-    position: relative;
-    flex: 0 0 clamp(106px, 12vw, 142px);
-    display: grid;
-    grid-template-rows: auto auto minmax(28px, auto) auto;
-    justify-items: center;
-    gap: 5px;
-    min-width: 0;
-    padding: 9px 7px;
-    border: 1px solid rgba(244, 239, 229, 0.11);
-    border-radius: 6px;
-    background:
-      radial-gradient(circle at 50% 20%, var(--flow-soft), transparent 52%),
-      rgba(8, 13, 17, 0.88);
-    box-shadow: inset 0 1px 0 rgba(244, 239, 229, 0.05);
-  }
-
-  li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 34px;
-    right: -13px;
-    width: 14px;
-    height: 2px;
-    background: var(--flow-line);
-  }
-
-  li:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    top: 29px;
-    right: -18px;
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 7px solid var(--flow-line);
-  }
-
-  span {
-    color: #d9b97a;
-    font-size: 0.62rem;
-    font-weight: 950;
-    line-height: 1;
-  }
-
-  a,
-  > li > span[aria-hidden='true'] {
-    box-shadow: 0 0 0 1px rgba(244, 239, 229, 0.1);
-  }
-
-  strong,
-  em {
-    max-width: 100%;
-    text-align: center;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    letter-spacing: 0;
-  }
-
-  strong {
-    color: #f4efe5;
-    font-size: 0.72rem;
-    font-style: normal;
-    font-weight: 950;
-    line-height: 1.25;
-  }
-
-  em {
-    color: #aeb8be;
-    font-size: 0.62rem;
-    font-style: normal;
-    font-weight: 820;
-    line-height: 1.18;
-  }
-
-  @media (max-width: 560px) {
-    gap: 10px;
-    padding: 10px 12px 6px;
-
-    li {
-      flex-basis: 104px;
-    }
-  }
-`;
-
 const OpenerFlowList = styled.ol`
   --flow-color: ${props => props.$color || '#b8915b'};
   --flow-soft: ${props => `${props.$color || '#b8915b'}22`};
   --flow-line: ${props => `${props.$color || '#b8915b'}70`};
   position: relative;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(236px, 24cqw, 286px);
   align-items: stretch;
-  gap: 24px;
+  gap: 26px;
   margin: 0;
-  padding: 14px 18px 22px;
+  padding: 18px 20px 24px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
+  scroll-padding-inline: 20px;
   scrollbar-width: thin;
   scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
   background:
@@ -5752,9 +5644,9 @@ const OpenerFlowList = styled.ol`
   &::before {
     content: '';
     position: absolute;
-    top: 72px;
-    left: 28px;
-    right: 28px;
+    top: 79px;
+    left: 34px;
+    right: 34px;
     height: 2px;
     background:
       linear-gradient(90deg, rgba(184, 145, 91, 0.12), var(--flow-line), rgba(184, 145, 91, 0.12));
@@ -5764,13 +5656,12 @@ const OpenerFlowList = styled.ol`
   li {
     position: relative;
     z-index: 1;
-    flex: 0 0 clamp(220px, 22vw, 268px);
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     gap: 10px;
     min-width: 0;
-    min-height: 188px;
-    padding: 12px;
+    min-height: 214px;
+    padding: 13px;
     border: 1px solid rgba(244, 239, 229, 0.11);
     border-radius: 6px;
     background:
@@ -5787,9 +5678,9 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 53px;
+    top: 60px;
     left: calc(100% - 4px);
-    width: 34px;
+    width: 36px;
     height: 3px;
     background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.2));
     pointer-events: none;
@@ -5803,8 +5694,8 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 48px;
-    right: -25px;
+    top: 55px;
+    right: -26px;
     width: 0;
     height: 0;
     border-top: 7px solid transparent;
@@ -5812,9 +5703,11 @@ const OpenerFlowList = styled.ol`
     border-left: 9px solid var(--flow-line);
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 640px) {
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
     gap: 12px;
     overflow: visible;
     padding: 12px;
@@ -5863,12 +5756,18 @@ const OpenerFlowList = styled.ol`
     }
   }
 
-  @container (max-width: 560px) {
+  @container (max-width: 640px) {
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
     gap: 12px;
     overflow: visible;
     padding: 12px;
+
+    &::before {
+      display: none;
+    }
 
     li {
       display: grid;
