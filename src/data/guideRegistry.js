@@ -160,10 +160,6 @@ export const guideSpecsByRole = {
       kbSpecAliases: ['Havoc'],
       focus: '분노 생성, 이동형 강화, 극딜 창을 순서대로 겹칩니다.',
     }),
-    spec('demonhunter-devourer', 'demonhunter', '포식', '포식', 'melee', '/guide/demonhunter/devourer', {
-      kbSpecAliases: ['Devourer'],
-      focus: '분노를 모은 뒤 공허 강화 창에 핵심 기술을 몰아넣습니다.',
-    }),
     spec('shaman-enhancement', 'shaman', '고양', '고양', 'melee', '/guide/shaman/enhancement', {
       kbSpecAliases: ['Enhancement'],
       focus: '소용돌이치는 무기와 원소 강화 발동을 낭비 없이 사용합니다.',
@@ -185,6 +181,10 @@ export const guideSpecsByRole = {
     spec('priest-shadow', 'priest', '암흑', '암흑', 'ranged', '/guide/priest/shadow', {
       kbSpecAliases: ['Shadow'],
       focus: '광기 소모와 도트 유지율을 공허 강화 창에 맞춥니다.',
+    }),
+    spec('demonhunter-devourer', 'demonhunter', '포식', '포식', 'ranged', '/guide/demonhunter/devourer', {
+      kbSpecAliases: ['Devourer'],
+      focus: '25야드 공허 주문과 영혼 파편을 공허 탈태 창에 맞춥니다.',
     }),
     spec('shaman-elemental', 'shaman', '정기', '정기', 'ranged', '/guide/shaman/elemental', {
       kbSpecAliases: ['Elemental'],

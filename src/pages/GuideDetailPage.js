@@ -121,6 +121,12 @@ function displayGuideText(value) {
     .replace(/\bspender\b/gi, '소비기')
     .replace(/\bfiller\b/gi, '채우기 기술')
     .replace(/\bwindow\b/gi, '창')
+    .replace(/\bAnnihilator\b/g, '궤멸자')
+    .replace(/\bVoid-Scarred\b/g, '공허상흔')
+    .replace(/\bFel-Scarred\b/g, '지옥상흔')
+    .replace(/\bSpec & Hero\b/g, '전문화+영웅 빌드')
+    .replace(/\bKeystone\b/g, '쐐기돌')
+    .replace(/\bparses\b/gi, '파싱')
     .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝 레일/g, '오프닝 전투 흐름')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
@@ -1496,7 +1502,7 @@ function getInlineChartPlan(guide, data) {
       definition: [
         ['의미', '공허 탈태 밖에서는 자원과 발동을 준비하고, 안에서는 붕괴하는 별과 조건부 소비기를 먼저 확인합니다.'],
         ['읽는 법', '영혼 파편이 50에 가까우면 공허 탈태 진입을 준비하고, 공허 광선 뒤에는 수확/박멸 반응이 밀리지 않았는지 봅니다.'],
-        ['검수 포인트', 'Annihilator는 공허내림-수확 루프, Void-Scarred는 안전한 근접 진입과 공허쇄도 첫 발동 적중을 따로 봅니다.'],
+        ['검수 포인트', '궤멸자는 공허내림-수확 루프, 공허상흔은 안전한 근접 진입과 공허쇄도 첫 발동 적중을 따로 봅니다.'],
       ],
     });
     return plan;
