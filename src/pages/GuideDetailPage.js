@@ -41,7 +41,7 @@ const roleProfiles = {
   },
   melee: {
     label: '근접 딜러',
-    cycleTitle: '오프닝 전투 흐름',
+    cycleTitle: '첫 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원 흐름',
     plannerTitle: '위험 구간 대응',
@@ -50,7 +50,7 @@ const roleProfiles = {
   },
   ranged: {
     label: '원거리 딜러',
-    cycleTitle: '오프닝 전투 흐름',
+    cycleTitle: '첫 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원/시전 흐름',
     plannerTitle: '이동 구간 대응',
@@ -161,7 +161,8 @@ function displayGuideText(value) {
     .replace(/\bFarseer\b/g, '선견자')
     .replace(/\bTotemic\b/g, '토템술사')
     .replace(/\bMidnight\b/g, '한밤')
-    .replace(/오프닝\s*(딜사이클|레일)/g, '오프닝 전투 흐름')
+    .replace(/오프닝\s*(딜사이클|레일)/g, '첫 전투 흐름')
+    .replace(/오프닝\s*전투\s*흐름/g, '첫 전투 흐름')
     .replace(/준비 레일/g, '준비 전투 흐름')
     .replace(/레일/g, '흐름도')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
@@ -991,7 +992,7 @@ function isMetaChartBlock(block) {
 
 function isOpenerNarrativeBlock(block) {
   const title = displayGuideText(block?.title || '');
-  return /오프닝|전투\s*시작|첫\s*피해\s*대응|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
+  return /오프닝|첫\s*전투\s*흐름|전투\s*시작|첫\s*피해\s*대응|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
 }
 
 function getInlineChartPlan(guide, data) {
@@ -999,7 +1000,7 @@ function getInlineChartPlan(guide, data) {
     {
       id: 'rotation',
       title: getFlowChartTitle(guide),
-      caption: '위 설명에서 다룬 오프닝, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
+      caption: '위 설명에서 다룬 첫 전투 흐름, 진입, 피해 대응 판단을 시간 흐름으로 압축한 차트입니다.',
     },
     {
       id: 'priority',
@@ -2096,7 +2097,7 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
 function getFlowCardTitle(guide) {
   if (guide?.role === 'healers') return '피해 대응 전투 흐름';
   if (guide?.role === 'tanks') return '진입/방어 전투 흐름';
-  return '오프닝 전투 흐름';
+  return '첫 전투 흐름';
 }
 
 function getFlowChartTitle(guide) {
@@ -2137,7 +2138,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
       <OpenerFlowViewport>
         <OpenerFlowMapHeader>
           <span>START</span>
-          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '첫 피해 창을 여는 순서'}</strong>
+          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '전투 시작부터 우선순위 루프까지 이어지는 순서'}</strong>
           <span>LOOP</span>
         </OpenerFlowMapHeader>
         {phaseLegend.length > 1 && (
