@@ -1676,14 +1676,14 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'druid-feral') {
     plan.push({
       id: 'uptime',
-      title: '출혈-스냅샷 체크라인',
-      sectionHeading: '출혈 품질과 자원 배정',
-      sectionIntro: '야성은 버튼 순서를 외우기보다 갈퀴 발톱, 도려내기, 원시 분노가 어떤 강화 상태로 유지되는지와 호랑이의 분노 전후 기력 낭비가 있는지를 같이 봐야 합니다.',
-      caption: '막대는 실제 로그 유지율 퍼센트가 아니라 호랑이의 분노 스냅샷, 팬데믹 갱신, 원시 분노 광역 갱신, 흉포한 이빨 소비 조건을 한 화면에 놓는 판단 도식입니다.',
+      title: '출혈 스냅샷 흐름',
+      sectionHeading: '출혈 품질과 발톱 전환',
+      sectionIntro: '야성은 오프닝 차트로 첫 전투 흐름을 잡고, 보조 차트에서는 갈퀴 발톱, 도려내기, 원시 분노가 어떤 강화 상태로 유지되는지와 쐐기 발톱의 드루이드 직접 피해 전환이 어디에 얹히는지를 봅니다.',
+      caption: '막대는 실제 로그 유지율 퍼센트가 아니라 호랑이의 분노 스냅샷, 팬데믹 갱신, 원시 분노 광역 갱신, 물어뜯기/찢어발기기 전환, 흉포한 이빨 소비 조건을 한 화면에 놓는 판단 도식입니다.',
       definition: [
-        ['의미', '갈퀴 발톱과 도려내기는 단순 유지율이 아니라 호랑이의 분노 중 새로 적용했는지까지 확인합니다.'],
-        ['읽는 법', '출혈 막대가 갱신 구간에 들어오면 연계 점수와 호랑이의 분노 대기시간을 보고, 여유 기력은 흉포한 이빨로 바꿉니다.'],
-        ['검수 포인트', '도려내기 공백, 원시 분노 지연, 호랑이의 분노 기력 과잉, 광폭화 중 연계 점수 과충전을 함께 확인합니다.'],
+        ['의미', '레이드 야생추적자는 갈퀴 발톱과 도려내기 품질을, 쐐기 발톱의 드루이드는 출혈 기반 위에 직접 피해 창을 얹는지를 확인합니다.'],
+        ['읽는 법', '출혈 막대가 갱신 구간에 들어오면 연계 점수와 호랑이의 분노 대기시간을 보고, 쐐기에서는 원시 분노 뒤 물어뜯기와 찢어발기기 전환을 확인합니다.'],
+        ['검수 포인트', '도려내기 공백, 원시 분노 지연, 호랑이의 분노 기력 과잉, 광폭화 중 연계 점수 과충전, 첫 풀 탱커 위협을 함께 확인합니다.'],
       ],
     });
     return plan;
@@ -2106,7 +2106,7 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
 function getFlowCardTitle(guide) {
   if (guide?.role === 'healers') return '피해 대응 전투 흐름';
   if (guide?.role === 'tanks') return '진입/방어 전투 흐름';
-  return '첫 전투 흐름';
+  return '오프닝 전투 흐름';
 }
 
 function getFlowChartTitle(guide) {
@@ -4741,28 +4741,34 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'druid-feral') {
     return [
       {
-        label: '첫 출혈',
+        label: '갈퀴 발톱 품질',
         skill: findSkillByNames(data, ['갈퀴 발톱']),
         note: '숨기 또는 호랑이의 분노 조건에서 새로 적용할 때 품질이 올라갑니다.',
         segments: [[4, 28], [43, 30], [78, 16]],
       },
       {
-        label: '주 출혈',
+        label: '도려내기/팬데믹',
         skill: findSkillByNames(data, ['도려내기']),
         note: '5연계 점수와 팬데믹 범위, 호랑이의 분노 대기시간을 함께 봅니다.',
         segments: [[12, 38], [58, 34]],
       },
       {
-        label: '광역 갱신',
+        label: '원시 분노 대상수',
         skill: findSkillByNames(data, ['원시 분노']),
         note: '다수 대상 도려내기를 갱신하고 최상위 포식자의 갈망 발동 기반을 넓히는 구간입니다.',
         segments: [[22, 20], [55, 22], [83, 12]],
       },
       {
-        label: '스냅샷 창',
+        label: '호랑이의 분노 창',
         skill: findSkillByNames(data, ['호랑이의 분노']),
         note: '기력 과잉 없이 사용하고, 창 안에서 새 출혈 또는 큰 소비기를 배치합니다.',
         segments: [[8, 13], [45, 13], [82, 13]],
+      },
+      {
+        label: '발톱 전환',
+        skill: findSkillByNames(data, ['물어뜯기', '찢어발기기']),
+        note: '쐐기 발톱의 드루이드 빌드는 출혈 유지 뒤 직접 피해 창을 얹습니다.',
+        segments: [[30, 18], [63, 20]],
       },
     ];
   }
