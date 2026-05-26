@@ -26,6 +26,8 @@ const allGuides = getAllGuideSpecs();
 const allSkills = Object.values(kbSkills.skills || {});
 const allSynergies = Object.values(kbSynergies.synergies || {});
 const skillById = new Map(allSkills.map(skill => [String(skill.id), skill]));
+const manualSkills = Object.values(guideManuscripts).flatMap(manuscript => manuscript.extraSkills || []);
+const manualSkillById = new Map(manualSkills.map(skill => [String(skill.id), skill]));
 const commonSpecs = new Set(['공용', 'Common']);
 const OPENER_FLOW_MAX_STEPS = 12;
 
@@ -220,13 +222,18 @@ function wowheadUrl(skill) {
   return `https://ko.wowhead.com/spell=${skill.id}`;
 }
 
-function buildInlineTerms(data) {
+function buildInlineTerms(data, manuscript) {
   const seen = new Set();
-  const records = [...(data?.specSkills || []), ...(data?.commonSkills || []), ...(data?.classSkills || [])];
+  const records = [
+    ...(data?.specSkills || []),
+    ...(data?.commonSkills || []),
+    ...(data?.classSkills || []),
+    ...(manuscript?.extraSkills || []),
+  ];
 
   return records
     .flatMap(skill => {
-      const labels = [skillName(skill), skill?.koreanName, skill?.name]
+      const labels = [skillName(skill), skill?.koreanName, skill?.name, skill?.englishName, ...(skill?.aliases || [])]
         .map(cleanText)
         .filter(Boolean);
 
@@ -921,7 +928,9 @@ function InlineSkillTerm({ skill, children }) {
 }
 
 function skillFromManualStep(step) {
-  return step?.skillId ? skillById.get(String(step.skillId)) : null;
+  if (!step?.skillId) return step?.skill || null;
+  const skillId = String(step.skillId);
+  return skillById.get(skillId) || manualSkillById.get(skillId) || step.skill || null;
 }
 
 function ManualManuscriptSection({ guide, manuscript }) {
@@ -2387,7 +2396,7 @@ function GuideDetailPage() {
 
   const data = useMemo(() => (guide ? buildGuideData(guide) : null), [guide]);
   const manuscript = guide ? guideManuscripts[guide.id] : null;
-  const inlineTerms = useMemo(() => buildInlineTerms(data), [data]);
+  const inlineTerms = useMemo(() => buildInlineTerms(data, manuscript), [data, manuscript]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return undefined;
