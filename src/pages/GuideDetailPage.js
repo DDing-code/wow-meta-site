@@ -1244,12 +1244,12 @@ function getInlineChartPlan(guide, data) {
       title: '소용돌이치는 무기 환급 타임라인',
       sectionHeading: '소용돌이 소비와 영웅 특성 분기',
       sectionIntro:
-        '고양 주술사는 소용돌이치는 무기를 비운 뒤 정기의 속도로 돌아온 폭풍의 일격과 용암 채찍을 다시 굴리는 전문화입니다. 이 타임라인은 소용돌이 소비, 낙뢰 강화, Totemic 1분 창, Stormbringer 폭풍 창, 쐐기 유틸을 한 화면에서 분리해 보여줍니다.',
+        '고양 주술사는 소용돌이치는 무기를 비운 뒤 정기의 속도로 돌아온 폭풍의 일격과 용암 채찍을 다시 굴리는 전문화입니다. 이 타임라인은 소용돌이 소비, 낙뢰 강화, 토템술사 1분 창, 폭풍인도자 폭풍 창, 쐐기 유틸을 한 화면에서 분리해 보여줍니다.',
       caption:
-        '막대는 실제 WCL 초 단위 복사본이 아니라 로그 검수 순서입니다. 먼저 소용돌이치는 무기 과충전과 소비 간격을 보고, 그 다음 폭풍의 일격/용암 채찍 환급, 낙뢰 광역 전환, 쇄도하는 토템 또는 폭풍(Tempest) 창을 확인합니다.',
+        '막대는 실제 WCL 초 단위 복사본이 아니라 로그 검수 순서입니다. 먼저 소용돌이치는 무기 과충전과 소비 간격을 보고, 그 다음 폭풍의 일격/용암 채찍 환급, 낙뢰 광역 전환, 쇄도하는 토템 또는 폭풍 창을 확인합니다.',
       definition: [
         ['의미', '소용돌이치는 무기는 고양의 중심 노드입니다. 소비는 피해 주문이면서 정기의 속도 환급을 통해 다음 근접 타격기를 여는 행동입니다.'],
-        ['읽는 법', '상단의 소용돌이 소비 줄을 기준으로 단일 번개 화살, 광역 연쇄 번개, 낙뢰 강화, Totemic/Stormbringer 창이 같은 시간에 맞는지 봅니다.'],
+        ['읽는 법', '상단의 소용돌이 소비 줄을 기준으로 단일 번개 화살, 광역 연쇄 번개, 낙뢰 강화, 토템술사/폭풍인도자 창이 같은 시간에 맞는지 봅니다.'],
         ['검수 포인트', '9~10중첩 과충전, 폭풍의 일격/용암 채찍 지연, 낙뢰 없는 광역 소비, 쇄도하는 토템 위치 손실, 승천 중 바람의 일격 공백, 날카로운 바람 누락을 함께 확인합니다.'],
       ],
     });
@@ -2075,10 +2075,11 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   const flowItems = steps.length
     ? steps
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
+  const chartLabel = `${getFlowCardTitle(guide)} 차트`;
 
   if (flowItems.length) {
     return (
-      <OpenerFlowList $color={guide.color} aria-label="오프닝 전투 흐름 차트">
+      <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
         {flowItems.map((step, index) => (
           <li key={step.key}>
             <OpenerStepTop>
@@ -3127,7 +3128,7 @@ function getUptimeRows(guide, data) {
       {
         label: '단일 생성',
         skill: findSkillByNames(data, ['번개 화살']),
-        note: '기본 filler이면서 폭풍수호자 강화 단일 자연 주문입니다.',
+        note: '기본 채우기 기술이면서 폭풍수호자 강화 단일 자연 주문입니다.',
         segments: [[11, 8], [31, 8], [53, 8], [81, 8]],
       },
       {
@@ -3198,7 +3199,7 @@ function getUptimeRows(guide, data) {
       {
         label: '지역 기반',
         skill: findSkillByNames(data, ['치유의 비', '쇄도하는 토템']),
-        note: '파티가 머무는 위치에 맞아야 Totemic 가치가 살아납니다.',
+        note: '파티가 머무는 위치에 맞아야 토템술사 가치가 살아납니다.',
         segments: [[8, 26], [42, 26], [72, 22]],
       },
       {
@@ -3293,17 +3294,17 @@ function getUptimeRows(guide, data) {
       {
         label: '폭풍 타격',
         skill: findSkillByNames(data, ['폭풍의 일격']),
-        note: 'Stormbringer와 승천 창에서 밀리면 전체 소용돌이 순환이 느려집니다.',
+        note: '폭풍인도자와 승천 창에서 밀리면 전체 소용돌이 순환이 느려집니다.',
         segments: [[7, 7], [22, 7], [38, 7], [54, 7], [70, 7], [88, 7]],
       },
       {
         label: '화염 타격',
         skill: findSkillByNames(data, ['용암 채찍']),
-        note: 'Totemic과 뜨거운 손 중에는 일반 filler보다 높은 가치가 됩니다.',
+        note: '토템술사와 뜨거운 손 중에는 일반 채우기 기술보다 높은 가치가 됩니다.',
         segments: [[10, 7], [26, 7], [44, 7], [62, 7], [78, 7], [94, 5]],
       },
       {
-        label: 'Totemic 창',
+        label: '토템술사 창',
         skill: findSkillByNames(data, ['쇄도하는 토템']),
         note: '1분 피해 창의 기준점입니다. 토템 위치와 대상 생존 시간을 같이 봅니다.',
         segments: [[4, 22], [56, 22]],
@@ -3311,13 +3312,13 @@ function getUptimeRows(guide, data) {
       {
         label: '화염 발동',
         skill: findSkillByNames(data, ['뜨거운 손']),
-        note: '용암 채찍 재사용 대기시간과 피해를 바꾸므로 Totemic에서 별도 추적합니다.',
+        note: '용암 채찍 재사용 대기시간과 피해를 바꾸므로 토템술사에서 별도 추적합니다.',
         segments: [[14, 12], [58, 12], [82, 10]],
       },
       {
-        label: 'Stormbringer',
+        label: '폭풍인도자',
         skill: findSkillByNames(data, ['폭풍', '초자력 충전']),
-        note: '폭풍(Tempest)과 초자력 충전은 소용돌이 소비 빈도와 큰 풀 타이머를 함께 봅니다.',
+        note: '폭풍과 초자력 충전은 소용돌이 소비 빈도와 큰 풀 타이머를 함께 봅니다.',
         segments: [[18, 12], [48, 12], [78, 12]],
       },
       {
@@ -3335,7 +3336,7 @@ function getUptimeRows(guide, data) {
       {
         label: '전방 트리거',
         skill: findSkillByNames(data, ['세계의 분리', '태고의 폭풍']),
-        note: 'Totemic 대지 보상과 실제 대상 적중 시간을 함께 확인합니다.',
+        note: '토템술사 대지 보상과 실제 대상 적중 시간을 함께 확인합니다.',
         segments: [[34, 12], [64, 12], [90, 8]],
       },
       {
