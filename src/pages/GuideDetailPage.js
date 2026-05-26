@@ -1462,7 +1462,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '산산조각-빙결 소비 타임라인',
-      sectionHeading: '산산조각과 빙결 중첩 레일',
+      sectionHeading: '산산조각과 빙결 중첩 흐름',
       sectionIntro:
         '냉기는 산산조각, 빙결 중첩, 두뇌 빙결, 서리의 손가락, 서리 광선, 얼어붙은 구슬이 같은 시간축에서 겹치는지를 봐야 합니다.',
       caption:
@@ -1512,7 +1512,7 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'demonhunter-vengeance') {
     plan.push({
       id: 'defensive',
-      title: '영혼 파편과 방어기 레일',
+      title: '영혼 파편과 방어기 흐름',
       sectionHeading: '방어 자원 배정',
       sectionIntro: '복수는 단일 딜사이클보다 다음 피해를 어떤 방어층으로 받고, 영혼 파편을 언제 회복/위협/방벽으로 바꿀지 보는 탱커입니다.',
       caption: '막대는 실제 로그 수치가 아니라 악마 쐐기, 불타는 낙인, 지옥 황폐, 탈태, 영혼 파편 소비를 한 전투 타임라인에 놓는 방어 판단 도식입니다.',
@@ -1577,7 +1577,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'defensive',
       title: '죽음의 일격 방어 경제',
-      sectionHeading: '방어 레일 배정',
+      sectionHeading: '방어 흐름 배정',
       sectionIntro: '혈기는 고정 딜사이클보다 다음 피해를 어떤 층으로 받고, 그 직후 죽음의 일격을 쓸 자원이 있는지를 보는 탱커입니다.',
       caption: '막대는 실제 로그 수치가 아니라 뼈의 보호막, 죽음의 일격 룬 마력, 춤추는 룬 무기, 흡혈, 대마법 대응을 한 타임라인에 놓는 방어 판단 도식입니다.',
       definition: [
@@ -1628,7 +1628,7 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'druid-guardian') {
     plan.push({
       id: 'defensive',
-      title: '분노 방어 레일',
+      title: '분노 방어 흐름',
       sectionHeading: '완화와 복구 배정',
       sectionIntro: '수호는 딜 버튼을 일렬로 외우는 탱커가 아니라, 다음 피해 유형에 맞춰 분노를 무쇠가죽, 광포한 재생력, 공격 소비기 중 어디에 쓸지 배정하는 전문화입니다.',
       caption: '막대는 실제 HPS나 DPS 수치가 아니라 피해 전 완화, 피해 후 복구, 달 광선 위치 창, 공격 소비기 전환을 한 화면에 놓는 방어 판단 도식입니다.',
@@ -1661,14 +1661,14 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '야수의 격노-광역 준비 타임라인',
-      sectionHeading: '야수의 격노와 광역 레일',
+      sectionHeading: '야수의 격노와 광역 흐름',
       sectionIntro:
         '야수는 단일 우선순위와 광역 유지 조건이 같은 순간에 겹칩니다. 야수의 격노 전에는 날카로운 사격 충전, 살상 명령 준비, 야수의 회전베기 활성 여부를 같이 확인해야 합니다.',
       caption:
         '막대는 실제 WCL 수치가 아니라 야수의 격노 창, 날카로운 사격 충전 정리, 자연의 동맹 살상 명령, 마구잡이 난타/야수의 회전베기, 어둠 순찰자 분기 창을 한 화면에 묶은 판단 도식입니다.',
       definition: [
         ['의미', '야수의 격노는 중심 창이고, 날카로운 사격과 살상 명령은 창 안 밀도를 만드는 입력입니다.'],
-        ['읽는 법', '다중 대상에서는 야수의 회전베기 레일이 켜진 뒤 야수의 격노가 들어가는지 보고, 어둠 순찰자는 부패의 사격과 울부짖는 화살을 별도 분기로 봅니다.'],
+        ['읽는 법', '다중 대상에서는 야수의 회전베기 흐름이 켜진 뒤 야수의 격노가 들어가는지 보고, 어둠 순찰자는 부패의 사격과 울부짖는 화살을 별도 분기로 봅니다.'],
         ['검수 포인트', '야수의 격노 사용 횟수, 날카로운 사격 2충전 방치, 살상 명령 두 번 연속 입력, 광역 야수의 회전베기 공백을 함께 확인합니다.'],
       ],
     });
@@ -1679,7 +1679,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '조준 사격-정밀 사격 소비 타임라인',
-      sectionHeading: '조준 사격과 발동 소비 레일',
+      sectionHeading: '조준 사격과 발동 소비 흐름',
       sectionIntro:
         '사격은 버튼 순서보다 조준 사격 충전, 속사 준비, 정밀 사격 소비, 광역 교묘한 사격 조건이 같은 순간에 어떻게 겹치는지를 봐야 합니다.',
       caption:
@@ -1697,7 +1697,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '창끝 생성-소비 타임라인',
-      sectionHeading: '창끝과 제압 창 레일',
+      sectionHeading: '창끝과 제압 창 흐름',
       sectionIntro:
         '생존은 살상 명령으로 창끝을 만들고, 제압, 야생불 폭탄, 붐스틱, 랩터 계열 소비기에 배정하는지를 같은 시간축에서 봐야 합니다.',
       caption:
@@ -1715,7 +1715,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '발화-몰아치는 열기 전환 타임라인',
-      sectionHeading: '발화와 발동 상태 레일',
+      sectionHeading: '발화와 발동 상태 흐름',
       sectionIntro:
         '화염은 발화, 열기, 화염 작렬 충전, 몰아치는 열기!, 불덩이 작렬/불기둥 소비가 같은 창 안에서 끊기지 않는지를 시간축으로 봐야 합니다.',
       caption:
@@ -1733,7 +1733,7 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '비전 연사-탄막 소비 타임라인',
-      sectionHeading: '비전 연사와 큰 창 레일',
+      sectionHeading: '비전 연사와 큰 창 흐름',
       sectionIntro:
         '비전은 비전 쇄도, 비전의 여파, 비전 연사, 비전 탄막, 비전 보주가 같은 창을 가리키는지를 시간축으로 봐야 합니다.',
       caption:
@@ -1917,7 +1917,7 @@ function getInlineChartPlan(guide, data) {
         '막대는 실제 HPS 수치가 아니라 메아리, 시간 변칙, 메리스라의 축복, 되감기, 정지장, 되돌리기, 꿈의 비행을 피해 타이머에 놓는 판단 도식입니다.',
       definition: [
         ['의미', '피해 전에는 메아리 기반을 만들고, 피해 직전에는 소비 주문을 정하며, 피해 후에는 복구 쿨다운을 배정합니다.'],
-        ['읽는 법', '시간 변칙과 메아리는 앞쪽 준비 레일, 메리스라의 축복과 신록의 품은 소비 레일, 되돌리기와 꿈의 비행은 후속 복구 레일로 봅니다.'],
+        ['읽는 법', '시간 변칙과 메아리는 앞쪽 준비 흐름, 메리스라의 축복과 신록의 품은 소비 흐름, 되돌리기와 꿈의 비행은 후속 복구 흐름으로 봅니다.'],
         ['검수 포인트', '에메랄드 꽃은 메아리 소비기가 아니며, 되감기와 되돌리기는 각각 지속 회복과 피해 후 복구로 분리해 확인합니다.'],
       ],
     });
@@ -1953,7 +1953,7 @@ function getInlineChartPlan(guide, data) {
         '막대는 실제 WCL 수치가 아니라 칠흑의 힘, 예지, 영겁의 숨결, 분출/강화 주문, 탱커 지원을 한 화면에 놓는 지원 판단 도식입니다.',
       definition: [
         ['의미', '증강의 핵심 데이터는 개인 DPS가 아니라 버프가 누구에게, 언제, 얼마나 유지됐는지입니다.'],
-        ['읽는 법', '칠흑의 힘은 전투 전반의 중심 레일, 예지는 대상 선정 레일, 영겁의 숨결은 파티 극딜 레일로 따로 봅니다.'],
+        ['읽는 법', '칠흑의 힘은 전투 전반의 중심 흐름, 예지는 대상 선정 흐름, 영겁의 숨결은 파티 극딜 흐름으로 따로 봅니다.'],
         ['검수 포인트', '칠흑의 힘 공백, 잘못된 예지 대상, 영겁의 숨결 장거리 비행, 버프 밖 분출 소비를 확인합니다.'],
       ],
     });
@@ -3138,7 +3138,7 @@ function getUptimeRows(guide, data) {
       {
         label: '광역 생성',
         skill: findSkillByNames(data, ['연쇄 번개']),
-        note: '대상 수가 올라가면 생성 레일이 연쇄 번개로 전환됩니다.',
+        note: '대상 수가 올라가면 생성 흐름이 연쇄 번개로 전환됩니다.',
         segments: [[28, 9], [61, 9], [88, 8]],
       },
       {
@@ -3399,7 +3399,7 @@ function getUptimeRows(guide, data) {
       {
         label: '광역 생성',
         skill: findSkillByNames(data, ['표창 폭풍']),
-        note: '2대상 이상에서 광역 연계 점수 생성 레일로 전환합니다.',
+        note: '2대상 이상에서 광역 연계 점수 생성 흐름으로 전환합니다.',
         segments: [[30, 7], [60, 7], [82, 7]],
       },
       {
@@ -3588,7 +3588,7 @@ function getUptimeRows(guide, data) {
       {
         label: '조각 준비',
         skill: findSkillByNames(data, ['악마 화살', '어둠의 화살']),
-        note: '폭군 전후 굴단의 손을 이어가기 위한 조각 생성 레일입니다.',
+        note: '폭군 전후 굴단의 손을 이어가기 위한 조각 생성 흐름입니다.',
         segments: [[4, 12], [33, 12], [62, 12], [86, 10]],
       },
       {
@@ -4356,7 +4356,7 @@ function getUptimeRows(guide, data) {
       {
         label: '광역 유지',
         skill: findSkillByNames(data, ['야수의 회전베기']),
-        note: '야수의 격노가 이 레일 안에 들어가는지 확인합니다.',
+        note: '야수의 격노가 이 흐름 안에 들어가는지 확인합니다.',
         segments: [[12, 30], [52, 30]],
       },
       {
@@ -4485,7 +4485,7 @@ function getUptimeRows(guide, data) {
       {
         label: '중심 스킬',
         skill: findSkillByNames(data, ['메아리']),
-        note: '다음 핵심 치유를 받을 대상을 미리 정하는 보존의 중심 레일입니다.',
+        note: '다음 핵심 치유를 받을 대상을 미리 정하는 보존의 중심 흐름입니다.',
         segments: [[12, 32], [52, 30]],
       },
       {
@@ -4532,7 +4532,7 @@ function getUptimeRows(guide, data) {
       {
         label: '중심 버프',
         skill: findSkillByNames(data, ['칠흑의 힘']),
-        note: '증강의 가장 중요한 유지 레일입니다. 공백 구간은 개인 피해보다 먼저 수정합니다.',
+        note: '증강의 가장 중요한 유지 흐름입니다. 공백 구간은 개인 피해보다 먼저 수정합니다.',
         segments: [[2, 42], [48, 42]],
       },
       {
