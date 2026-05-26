@@ -135,6 +135,10 @@ function displayGuideText(value) {
     .replace(/\bSpec & Hero\b/g, '전문화+영웅 빌드')
     .replace(/\bKeystone\b/g, '쐐기돌')
     .replace(/\bparses\b/gi, '파싱')
+    .replace(/\bStormbringer\b/g, '폭풍인도자')
+    .replace(/\bFarseer\b/g, '선견자')
+    .replace(/\bTotemic\b/g, '토템술사')
+    .replace(/\bMidnight\b/g, '한밤')
     .replace(/오프닝\s*(딜사이클|레일)/g, '오프닝 전투 흐름')
     .replace(/준비 레일/g, '준비 전투 흐름')
     .replace(/레일/g, '흐름도')
@@ -963,6 +967,11 @@ function isMetaChartBlock(block) {
   return /차트\s*설계|시각자료\s*구성|차트는\s*어디에|차트\s*사용|차트를\s*읽는\s*법|차트\s*읽는\s*순서|차트\s*구성|빌드별\s*차트\s*분리|지원\s*딜러\s*차트|힐링\s*차트|chart/i.test(title);
 }
 
+function isOpenerNarrativeBlock(block) {
+  const title = displayGuideText(block?.title || '');
+  return /오프닝|전투\s*시작|첫\s*피해\s*대응|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
+}
+
 function getInlineChartPlan(guide, data) {
   const plan = [
     {
@@ -1197,13 +1206,13 @@ function getInlineChartPlan(guide, data) {
     plan.push({
       id: 'uptime',
       title: '폭풍수호자-폭풍 압축 타임라인',
-      sectionHeading: '폭풍수호자와 Stormbringer 창',
+      sectionHeading: '폭풍수호자와 폭풍인도자 창',
       sectionIntro:
         '정기 주술사는 화염 충격과 용암 폭발을 기반으로 하지만, 현재 구조의 중심은 폭풍수호자입니다. 이 타임라인은 화염 코어 정리, 폭풍수호자 강화 주문, 폭풍 발동, 승천, 소용돌이 소비, 이동 보존, 쐐기 유틸을 한 줄에 묶어 창 진입 전후의 판단 순서를 보여줍니다.',
       caption:
         '막대는 실제 로그 초 단위 복사본이 아니라 검수 순서입니다. 먼저 화염 충격/용암 폭발/소용돌이 상태를 정리하고, 그 다음 폭풍수호자 강화 번개 화살 또는 연쇄 번개, 폭풍, 대지 충격/정기 작렬/지진, 이동 보존과 차단을 확인합니다.',
       definition: [
-        ['의미', '폭풍수호자는 강화 자연 주문을 여는 버튼이면서 Stormbringer 폭풍 루프, 승천 창, 소용돌이 소비 선택을 한꺼번에 묶는 중심 노드입니다.'],
+        ['의미', '폭풍수호자는 강화 자연 주문을 여는 버튼이면서 폭풍인도자 폭풍 루프, 승천 창, 소용돌이 소비 선택을 한꺼번에 묶는 중심 노드입니다.'],
         ['읽는 법', '상단의 폭풍수호자 줄을 기준으로 화염 충격 유지와 용암 폭발 충전이 준비됐는지, 폭풍과 강화 주문이 낭비 없이 들어갔는지, 단일/광역 소비기가 올바르게 갈렸는지 봅니다.'],
         ['검수 포인트', '화염 충격 공백, 용암 폭발 충전 낭비, 소용돌이 과충전, 폭풍수호자 강화 주문 미소비, 폭풍 방치, 이동 중 큰 창 손실, 날카로운 바람 누락을 함께 확인합니다.'],
       ],
@@ -2102,14 +2111,19 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   if (!manuscript) return null;
 
-  const bodyBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
+  const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
+  const openerBlocks = contentBlocks.filter(isOpenerNarrativeBlock);
+  const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
   const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
+  const openerBlockItems = openerBlocks.flatMap(block => block.bullets || []).slice(0, 10);
   const openerTextItems = openerFlowSteps.length
     ? []
     : manuscript.openerText?.length
     ? manuscript.openerText
+    : openerBlockItems.length
+    ? openerBlockItems
     : manuscript.opener?.steps?.slice(0, 10).map(step => `${step.label}: ${step.note}`);
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
@@ -2196,7 +2210,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             return (
               <GuideDigestCard key={`${block.title}-${index}`}>
                 <span>{String(index + 1).padStart(2, '0')}</span>
-                <strong>{block.title.replace(/^\d+\.\s*/, '')}</strong>
+                <strong>{renderGuideText(block.title.replace(/^\d+\.\s*/, ''), inlineTerms)}</strong>
                 {!!digest && <p>{renderGuideText(digest, inlineTerms)}</p>}
               </GuideDigestCard>
             );
@@ -2214,7 +2228,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             <PaperSection id={`guide-section-${index + 1}`}>
               <PaperSectionBody>
                 <SectionNumber>{String(index + 1).padStart(2, '0')}</SectionNumber>
-                <h3>{block.title}</h3>
+                <h3>{renderGuideText(block.title, inlineTerms)}</h3>
                 {block.paragraphs?.map(paragraph => (
                   <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
                 ))}
@@ -3099,7 +3113,7 @@ function getUptimeRows(guide, data) {
         segments: [[8, 7], [24, 7], [40, 7], [58, 7], [75, 7], [92, 5]],
       },
       {
-        label: 'Stormbringer',
+        label: '폭풍인도자',
         skill: findSkillByNames(data, ['폭풍', '초자력 충전']),
         note: 'Archon 최근 표본의 기본 영웅 특성 축입니다. 폭풍 가능 상태를 방치하지 않습니다.',
         segments: [[16, 12], [46, 12], [76, 12]],
@@ -3141,9 +3155,9 @@ function getUptimeRows(guide, data) {
         segments: [[13, 12], [48, 12], [83, 10]],
       },
       {
-        label: 'Farseer 보조',
+        label: '선견자 보조',
         skill: findSkillByNames(data, ['선조의 신속함', '선조의 부름']),
-        note: '기본값은 Stormbringer지만 이동과 즉시시전 보정에서 별도 의미가 있습니다.',
+        note: '기본값은 폭풍인도자지만 이동과 즉시시전 보정에서 별도 의미가 있습니다.',
         segments: [[26, 10], [56, 10], [86, 9]],
       },
       {
