@@ -948,7 +948,7 @@ function InlineSkillTerm({ skill, children }) {
 function skillFromManualStep(step) {
   if (!step?.skillId) return step?.skill || null;
   const skillId = String(step.skillId);
-  return skillById.get(skillId) || manualSkillById.get(skillId) || step.skill || null;
+  return manualSkillById.get(skillId) || skillById.get(skillId) || step.skill || null;
 }
 
 function ManualManuscriptSection({ guide, manuscript }) {

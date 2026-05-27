@@ -9,6 +9,7 @@ const REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
 const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
+const COMMON_SPECS = new Set(['공용', 'Common']);
 
 const errors = [];
 
@@ -51,6 +52,24 @@ function hasTooltipId(skill) {
   return /^\d+$/.test(String(skill?.id || ''));
 }
 
+function skillScopeText(skill) {
+  return [
+    `class=${skill?.class || 'missing'}`,
+    `spec=${skill?.spec || 'missing'}`,
+    `specs=${Array.isArray(skill?.specs) ? skill.specs.join(',') : 'missing'}`,
+  ].join(' ');
+}
+
+function skillMatchesGuide(skill, spec) {
+  if (!skill || skill.class !== spec.kbClass) return false;
+  const listedSpecs = Array.isArray(skill.specs) ? skill.specs.map(item => String(item)) : [];
+
+  if (listedSpecs.some(item => spec.kbSpecAliases.includes(item))) return true;
+  if (listedSpecs.some(item => COMMON_SPECS.has(item))) return true;
+  if (COMMON_SPECS.has(skill.spec)) return true;
+  return spec.kbSpecAliases.includes(skill.spec);
+}
+
 function collectSkillRefs(value, trail = '', refs = []) {
   if (!value) return refs;
 
@@ -78,7 +97,7 @@ function getExtraSkillMap(manuscript) {
 }
 
 function resolveSkill(id, kbSkills, extraSkills) {
-  return kbSkills[String(id)] || extraSkills.get(String(id)) || null;
+  return extraSkills.get(String(id)) || kbSkills[String(id)] || null;
 }
 
 function validateRendererSource(source) {
@@ -101,6 +120,9 @@ function validateExtraSkills(spec, manuscript) {
     assert(hasTooltipId(skill), `${prefix}: numeric Wowhead spell id is required`);
     assert(skillName(skill), `${prefix}: Korean/name label is missing`);
     assert(hasIcon(skill), `${prefix}: icon data is missing`);
+    assert(skill.class, `${prefix}: class scope is missing`);
+    assert(skill.spec || Array.isArray(skill.specs), `${prefix}: spec scope is missing`);
+    assert(skillMatchesGuide(skill, spec), `${prefix}: scope ${skillScopeText(skill)} does not match ${spec.kbClass}/${spec.kbSpecAliases.join('|')}`);
   });
 }
 
@@ -125,6 +147,7 @@ function validateReferencedSkills(spec, manuscript, kbSkills) {
     assert(hasTooltipId(skill), `${prefix}: skill id ${id} cannot build a Wowhead tooltip`);
     assert(skillName(skill), `${prefix}: skill id ${id} has no Korean/name label`);
     assert(hasIcon(skill), `${prefix}: skill id ${id} has no icon data`);
+    assert(skillMatchesGuide(skill, spec), `${prefix}: skill id ${id} scope ${skillScopeText(skill)} does not match ${spec.kbClass}/${spec.kbSpecAliases.join('|')}`);
   });
 }
 
