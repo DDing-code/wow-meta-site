@@ -4123,7 +4123,7 @@ function getUptimeRows(guide, data) {
       {
         label: '투신 창',
         skill: findSkillByNames(data, ['투신']),
-        note: '기본은 공격력 창이며, Mountain Thane 선택 시 우레 작렬 2중첩과 천둥벼락 초기화를 함께 봅니다.',
+        note: '기본은 공격력 창이며, 산왕 선택 시 우레 작렬 2중첩과 천둥벼락 초기화를 함께 봅니다.',
         segments: [[11, 20], [60, 20]],
       },
       {
@@ -4141,7 +4141,7 @@ function getUptimeRows(guide, data) {
       {
         label: '번개 분기',
         skill: findSkillByNames(data, ['우레 작렬', '폭풍의 화신', '벼락']),
-        note: 'Mountain Thane을 선택했을 때만 우레 작렬 과충전과 천둥벼락 전환을 별도로 추적합니다.',
+        note: '산왕을 선택했을 때만 우레 작렬 과충전과 천둥벼락 전환을 별도로 추적합니다.',
         segments: [[24, 10], [42, 10], [62, 10], [82, 10]],
       },
       {
