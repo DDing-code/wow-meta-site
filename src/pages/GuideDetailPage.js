@@ -1324,154 +1324,6 @@ function getInlineChartPlan(guide, data) {
     return plan;
   }
 
-  if (guide.id === 'warrior-protection') {
-    return [
-      {
-        label: '방패 시간',
-        skill: findSkillByNames(data, ['방패 올리기']),
-        note: '실제 탱킹 중 물리 피해와 막을 수 있는 기술을 덮는 중심 방어 상태입니다.',
-        segments: [[4, 18], [31, 18], [60, 18], [84, 12]],
-      },
-      {
-        label: '분노 엔진',
-        skill: findSkillByNames(data, ['방패 밀쳐내기']),
-        note: '분노와 위협을 여는 1차 엔진이므로 발동 지연을 먼저 봅니다.',
-        segments: [[10, 6], [25, 6], [40, 6], [55, 6], [70, 6], [88, 6]],
-      },
-      {
-        label: '흡수층',
-        skill: findSkillByNames(data, ['고통 감내']),
-        note: '방패 올리기 위에 얹거나 마법/지속 피해 앞에 미리 준비하는 흡수층입니다.',
-        segments: [[18, 12], [47, 12], [74, 12]],
-      },
-      {
-        label: '광역 고정',
-        skill: findSkillByNames(data, ['천둥벼락']),
-        note: '분쇄 적용, 광역 위협, 산왕 우레 작렬 루프를 동시에 담당합니다.',
-        segments: [[7, 7], [22, 7], [38, 7], [54, 7], [71, 7], [90, 7]],
-      },
-      {
-        label: '분노 소비',
-        skill: findSkillByNames(data, ['복수']),
-        note: '광역 위협과 피해를 만들되 방패 올리기 분노까지 비우지 않도록 봅니다.',
-        segments: [[28, 9], [50, 9], [77, 9]],
-      },
-      {
-        label: '마법 대응',
-        skill: findSkillByNames(data, ['주문 반사']),
-        note: '반사 가능한 주문과 큰 마법 피해는 방패 올리기와 별도 줄로 검수합니다.',
-        segments: [[34, 8], [68, 8]],
-      },
-      {
-        label: '방패 창',
-        skill: findSkillByNames(data, ['방패 돌격']),
-        note: '방패 올리기 부여와 방패 기술 피해 창을 같이 여는 공격/방어 카드입니다.',
-        segments: [[15, 10], [62, 10]],
-      },
-      {
-        label: '피해 감소',
-        skill: findSkillByNames(data, ['사기의 외침']),
-        note: '예측 가능한 큰 피해 앞에 미리 배정하는 자주 돌아오는 완화기입니다.',
-        segments: [[43, 10], [82, 10]],
-      },
-      {
-        label: '큰 생존기',
-        skill: findSkillByNames(data, ['방패의 벽', '최후의 저항']),
-        note: '방패 올리기 공백, 탱 버스터, 마법 폭발처럼 가장 위험한 구간을 덮습니다.',
-        segments: [[66, 16]],
-      },
-      {
-        label: '산왕 루프',
-        skill: findSkillByNames(data, ['우레 작렬', '벼락', '폭풍 방패']),
-        note: '현재 주류 산왕 분기에서 천둥벼락과 마법 보조 방어를 강화하는 외곽 회로입니다.',
-        segments: [[12, 13], [40, 13], [72, 13]],
-      },
-    ];
-  }
-
-  if (guide.id === 'rogue-assassination') {
-    return [
-      {
-        label: '중심 독창',
-        skill: findSkillByNames(data, ['독살']),
-        note: '독 발동 확률, 운명의 손, 왕의 파멸 ramp를 여는 중심 마무리 일격입니다.',
-        segments: [[7, 8], [24, 8], [41, 8], [58, 8], [75, 8], [91, 6]],
-      },
-      {
-        label: '은신 출혈',
-        skill: findSkillByNames(data, ['목조르기']),
-        note: '은신/소멸 강화와 죽음추적자의 징표 시작점을 겸하는 출혈입니다.',
-        segments: [[0, 28], [44, 26], [82, 16]],
-      },
-      {
-        label: '장기 출혈',
-        skill: findSkillByNames(data, ['파열']),
-        note: '맹독 상처 기력 회수와 죽음표식 복제 가치를 만드는 장기 기반입니다.',
-        segments: [[5, 45], [56, 40]],
-      },
-      {
-        label: '점수 공급',
-        skill: findSkillByNames(data, ['절단', '사각 지대', '운명의 낙인']),
-        note: '5점 이상 독살과 파열을 안정적으로 만드는 단일 대상 공급망입니다.',
-        segments: [[3, 7], [18, 7], [34, 7], [50, 7], [66, 7], [86, 7]],
-      },
-      {
-        label: '큰 창',
-        skill: findSkillByNames(data, ['죽음표식']),
-        note: '출혈과 치명독을 강화하고 왕의 파멸 중첩 속도를 끌어올리는 2분 창입니다.',
-        segments: [[30, 16], [78, 16]],
-      },
-      {
-        label: '독 결산',
-        skill: findSkillByNames(data, ['왕의 파멸']),
-        note: '독 발동이 많을수록 커지므로 독살 유지율과 근접 유지율을 같이 봅니다.',
-        segments: [[31, 14], [79, 14]],
-      },
-      {
-        label: '자연 증폭',
-        skill: findSkillByNames(data, ['독칼', '독칼 연마']),
-        note: '5938 독칼 기준입니다. 185565 독 칼과 혼동하지 않도록 독살 창 옆에 둡니다.',
-        segments: [[34, 8], [82, 8]],
-      },
-      {
-        label: '전이 대상',
-        skill: findSkillByNames(data, ['부식성 분사']),
-        note: '독살 또는 왕의 파멸이 붙인 우선 대상 자연 피해를 주변으로 흘립니다.',
-        segments: [[26, 18], [57, 18], [84, 12]],
-      },
-      {
-        label: '광역 생성',
-        skill: findSkillByNames(data, ['칼날 부채']),
-        note: '2명 이상에서 연계 점수를 빠르게 만들지만 출혈 유지보다 앞서지 않습니다.',
-        segments: [[12, 7], [46, 7], [68, 7], [90, 7]],
-      },
-      {
-        label: '출혈 복제',
-        skill: findSkillByNames(data, ['혈폭풍']),
-        note: '목조르기와 파열을 보조 대상에 복제하는 광역 기반 확장입니다.',
-        segments: [[15, 10], [49, 10], [72, 10]],
-      },
-      {
-        label: '운명결속',
-        skill: findSkillByNames(data, ['운명의 손', '행운 주화']),
-        note: '현재 로그 기본값입니다. 독살 빈도와 행운 주화 결산을 함께 봅니다.',
-        segments: [[8, 20], [39, 20], [70, 20]],
-      },
-      {
-        label: '죽음추적자',
-        skill: findSkillByNames(data, ['죽음추적자의 징표', '어둡고 어두운 밤']),
-        note: '우선 대상이 고정될 때 표식 소모와 어둡고 어두운 밤 독살을 검수합니다.',
-        segments: [[1, 18], [42, 18], [80, 14]],
-      },
-      {
-        label: '처형 보정',
-        skill: findSkillByNames(data, ['졸디크의 비전', '갑작스러운 최후']),
-        note: '35% 미만에서는 출혈과 독 피해 가치가 올라가므로 죽음표식 지연 판단을 분리합니다.',
-        segments: [[65, 33]],
-      },
-    ];
-  }
-
   if (guide.id === 'paladin-holy') {
     plan.push({
       id: 'uptime',
@@ -4936,75 +4788,52 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'priest-shadow') {
     return [
       {
-        label: '기본 지속 피해',
+        label: '흡혈 기반',
         skill: findSkillByNames(data, ['흡혈의 손길']),
-        note: '오래 사는 대상에게 유지하는 기본 지속 피해입니다.',
+        note: '오래 사는 대상에게 유지하는 기본 지속 피해이자 영혼의 연결 회수 기반입니다.',
         segments: [[5, 40], [51, 42]],
       },
       {
-        label: '기본 지속 피해',
+        label: '고통 확장',
         skill: findSkillByNames(data, ['어둠의 권능: 고통']),
-        note: '흡혈의 손길과 함께 끊김 여부를 가장 먼저 확인합니다.',
+        note: '흡혈의 손길과 함께 끊김 여부를 먼저 확인하되 짧게 죽는 대상에는 과투자하지 않습니다.',
         segments: [[3, 44], [54, 39]],
       },
       {
-        label: '광기 소모',
+        label: '광기 유지',
         skill: findSkillByNames(data, ['어둠의 권능: 광기']),
-        note: '광기가 넘치기 전 소모하고, 유지 시간이 낮으면 다시 확인합니다.',
+        note: '광기가 넘치기 전 소모하고 유지 시간이 낮으면 우선순위를 올립니다.',
         segments: [[22, 18], [60, 20]],
       },
       {
-        label: '쿨다운 공백',
-        skill: findSkillByNames(data, ['정신 분열', '공허의 격류', '공허의 형상']),
-        note: '지속 피해가 안정된 뒤 중간 길이 쿨다운이 밀리지 않는지 보는 구간입니다.',
+        label: '광기 생성',
+        skill: findSkillByNames(data, ['정신 분열']),
+        note: '짧은 쿨다운 사용 횟수를 잃으면 광기와 영혼의 연결 회수가 같이 밀립니다.',
         segments: [[14, 14], [43, 13], [73, 13]],
       },
-    ];
-  }
-
-  if (guide.id === 'druid-restoration') {
-    return [
       {
-        label: '피어나는 생명',
-        skill: findSkillByNames(data, ['피어나는 생명']),
-        note: '탱커나 위험 대상의 피어나는 생명 공백을 가장 먼저 봅니다.',
-        segments: [[4, 42], [52, 40]],
+        label: '집정관 창',
+        skill: findSkillByNames(data, ['후광', '공허의 형상', '마력 주입']),
+        note: '집정관은 후광 각도와 공허의 형상, 마력 주입이 같은 긴 피해 창으로 묶이는지 봅니다.',
+        segments: [[18, 20], [70, 18]],
       },
       {
-        label: '회복',
-        skill: findSkillByNames(data, ['회복']),
-        note: '피해 타이머 전에 회복 대상 수와 풍요 기반을 확보합니다.',
-        segments: [[8, 30], [44, 30], [76, 18]],
+        label: '공허 균열',
+        skill: findSkillByNames(data, ['공허의 격류', '혼돈의 균열', '공허의 폭발']),
+        note: '공허술사는 이동 없는 구간에 공허의 격류를 넣고 균열 안 공허의 폭발을 확인합니다.',
+        segments: [[28, 16], [78, 14]],
       },
       {
-        label: '꽃피우기',
-        skill: findSkillByNames(data, ['꽃피우기']),
-        note: '파티/공대가 실제로 머무는 위치에 먼저 깔립니다.',
-        segments: [[2, 36], [46, 36]],
+        label: '주 대상 회수',
+        skill: findSkillByNames(data, ['영혼의 연결']),
+        note: '주 대상 피해가 지속 피해 대상에게 회수되는 구조라 대상 선택과 풀 수명을 같이 봅니다.',
+        segments: [[10, 34], [52, 34]],
       },
       {
-        label: '급속 성장',
-        skill: findSkillByNames(data, ['급속 성장']),
-        note: '피해 직전 또는 직후 광역 회복 창을 엽니다.',
-        segments: [[24, 14], [62, 14]],
-      },
-      {
-        label: '신속한 치유',
-        skill: findSkillByNames(data, ['신속한 치유']),
-        note: '숲의 영혼, 신록 주입, 숲 수호자, 긴급 복구를 여는 중심 버튼입니다.',
-        segments: [[20, 12], [58, 12], [86, 10]],
-      },
-      {
-        label: '평온 연장',
-        skill: findSkillByNames(data, ['평온']),
-        note: '이미 깔린 지속 치유 효과가 많을 때 평온에 붙은 번성 효과의 연장 가치가 커집니다.',
-        segments: [[30, 16], [70, 18]],
-      },
-      {
-        label: '무쇠껍질/자연의 신속함',
-        skill: findSkillByNames(data, ['무쇠껍질', '자연의 신속함']),
-        note: '위험 대상에는 무쇠껍질을 선배정하고 자연의 신속함으로 후속 복구합니다.',
-        segments: [[18, 12], [54, 12], [84, 10]],
+        label: '이동/처형',
+        skill: findSkillByNames(data, ['어둠의 권능: 죽음', '분산']),
+        note: '이동 전 광기를 비우고, 처형/위험 구간에서는 즉시시전과 생존 판단을 분리합니다.',
+        segments: [[36, 10], [66, 10], [90, 6]],
       },
     ];
   }
@@ -5040,6 +4869,24 @@ function getUptimeRows(guide, data) {
         skill: findSkillByNames(data, ['물어뜯기', '찢어발기기']),
         note: '쐐기 발톱의 드루이드 빌드는 출혈 유지 뒤 직접 피해 창을 얹습니다.',
         segments: [[30, 18], [63, 20]],
+      },
+      {
+        label: '단일 결산',
+        skill: findSkillByNames(data, ['흉포한 이빨', '최상위 포식자의 갈망']),
+        note: '도려내기 유지 뒤 5연계 점수와 충분한 기력에서 우선 대상에 결산합니다.',
+        segments: [[34, 10], [58, 10], [86, 8]],
+      },
+      {
+        label: '쿨다운 압축',
+        skill: findSkillByNames(data, ['광폭화', '영혼 소집', '야성의 광기']),
+        note: '출혈이 준비된 뒤 사용하되, 기다리느라 전투 전체 사용 횟수를 잃지 않는 것이 기준입니다.',
+        segments: [[18, 18], [60, 18]],
+      },
+      {
+        label: '쐐기 유틸',
+        skill: findSkillByNames(data, ['나무 껍질', '두개골 강타', '달래기', '쇄도의 포효']),
+        note: '첫 광역 창보다 위협, 차단, 격노 해제, 파티 이동이 먼저인 구간을 분리합니다.',
+        segments: [[14, 8], [48, 8], [74, 8], [90, 6]],
       },
     ];
   }
