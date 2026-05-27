@@ -30,9 +30,15 @@ function validatePackageScripts() {
   assert(scripts['validate:generated-data']?.includes('validate-generated-data.js'), 'validate:generated-data is missing');
   assert(scripts['validate:pipeline'] === 'node scripts/validate-pipeline-structure.js', 'validate:pipeline must be site-local');
   assert(scripts['validate:guide-registry']?.includes('validate-guide-registry.js'), 'validate:guide-registry is missing');
+  assert(scripts['validate:guide-copy']?.includes('validate-guide-copy.js'), 'validate:guide-copy is missing');
+  assert(scripts['validate:guide-manuscripts']?.includes('validate-guide-manuscripts.js'), 'validate:guide-manuscripts is missing');
+  assert(scripts['validate:kb-tooltips']?.includes('validate-kb-official-tooltips.js'), 'validate:kb-tooltips is missing');
   assert(prebuild.includes('validate:generated-data'), 'prebuild must validate generated data');
   assert(prebuild.includes('validate:pipeline'), 'prebuild must validate pipeline structure');
   assert(prebuild.includes('validate:guide-registry'), 'prebuild must validate guide registry');
+  assert(prebuild.includes('validate:guide-copy'), 'prebuild must validate guide copy terms');
+  assert(prebuild.includes('validate:guide-manuscripts'), 'prebuild must validate guide manuscript coverage');
+  assert(prebuild.includes('validate:kb-tooltips'), 'prebuild must validate KB tooltip/icon data');
   assert(prebuild.includes('validate-translations.js'), 'prebuild must run translation validation');
 }
 
