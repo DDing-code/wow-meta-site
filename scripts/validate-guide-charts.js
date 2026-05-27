@@ -11,6 +11,31 @@ const KB_SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const ALLOWED_SPECIALIST_CHARTS = new Set(['uptime', 'cooldown', 'defensive', 'resource']);
 const MIN_UPTIME_ROWS = 6;
 const COMMON_SPECS = new Set(['공용', 'Common']);
+const SPECIAL_GUIDE_PROFILES = new Map([
+  ['evoker-augmentation', 'support'],
+]);
+const ROLE_CHART_REQUIREMENTS = {
+  tanks: {
+    chartIds: new Set(['defensive', 'uptime']),
+    textPattern: /방어|완화|생존|위협|피해|탱|시간차|무쇠|방패|죽음의 일격|신성한 힘|영혼 파편/i,
+  },
+  healers: {
+    chartIds: new Set(['uptime', 'defensive', 'cooldown']),
+    textPattern: /치유|회복|피해|보호막|속죄|마나|외생기|봉화|안개|메아리|권능|복구|램프|힐러/i,
+  },
+  support: {
+    chartIds: new Set(['uptime']),
+    textPattern: /지원|버프|강화|파티|칠흑의 힘|예지|영겁의 숨결/i,
+  },
+  melee: {
+    chartIds: new Set(['uptime', 'cooldown', 'resource']),
+    textPattern: /피해|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+  },
+  ranged: {
+    chartIds: new Set(['uptime', 'cooldown', 'resource']),
+    textPattern: /피해|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+  },
+};
 
 const errors = [];
 
@@ -177,6 +202,16 @@ function firstChartId(branchBody) {
   return branchBody.match(/\bid:\s*'([^']+)'/)?.[1] || null;
 }
 
+function extractLiteralText(source) {
+  return [...source.matchAll(/'([^'\\]*(?:\\.[^'\\]*)*)'/g)]
+    .map(match => match[1])
+    .join(' ');
+}
+
+function effectiveGuideProfile(guide) {
+  return SPECIAL_GUIDE_PROFILES.get(guide.id) || guide.role;
+}
+
 function recordMatchesGuide(record, guide, includeCommon = true) {
   if (!record || record.class !== guide.kbClass) return false;
   const listedSpecs = Array.isArray(record.specs) ? record.specs.map(spec => String(spec)) : [];
@@ -271,8 +306,32 @@ function main() {
 
   for (const branch of planBranches) {
     const chartId = firstChartId(branch.body);
+    const guide = guideRecordMap.get(branch.id);
+    const profile = guide ? effectiveGuideProfile(guide) : null;
+    const requirements = profile ? ROLE_CHART_REQUIREMENTS[profile] : null;
+    const branchText = extractLiteralText(branch.body);
+
     assert(chartId, `getInlineChartPlan branch for ${branch.id} does not declare a chart id`);
     assert(ALLOWED_SPECIALIST_CHARTS.has(chartId), `getInlineChartPlan branch for ${branch.id} uses unsupported chart id "${chartId}"`);
+    assert(/\bsectionHeading\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing sectionHeading`);
+    assert(/\bsectionIntro\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing sectionIntro`);
+    assert(/\bcaption\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing caption`);
+    assert(/\bdefinition\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing definition`);
+    assert(branchText.includes('의미'), `getInlineChartPlan branch for ${branch.id} definition must explain meaning`);
+    assert(branchText.includes('읽는 법'), `getInlineChartPlan branch for ${branch.id} definition must explain how to read the chart`);
+    assert(branchText.includes('검수 포인트'), `getInlineChartPlan branch for ${branch.id} definition must include validation points`);
+    assert(branchText.length >= 220, `getInlineChartPlan branch for ${branch.id} needs a richer chart explanation`);
+    assert(requirements, `getInlineChartPlan branch for ${branch.id} has no role chart requirement for profile "${profile}"`);
+    if (requirements) {
+      assert(
+        requirements.chartIds.has(chartId),
+        `getInlineChartPlan branch for ${branch.id} uses ${chartId} chart outside ${profile} profile expectations`
+      );
+      assert(
+        requirements.textPattern.test(branchText),
+        `getInlineChartPlan branch for ${branch.id} does not describe a ${profile}-appropriate chart`
+      );
+    }
     assert(!/^\s*return\s*\[/m.test(branch.body), `getInlineChartPlan branch for ${branch.id} returns timeline rows directly`);
     assert(!/\bsegments\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} contains timeline segment data`);
     assert(!/\bfindSkillByNames\s*\(/.test(branch.body), `getInlineChartPlan branch for ${branch.id} contains row-level skill lookup`);
