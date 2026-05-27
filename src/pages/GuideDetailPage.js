@@ -1202,7 +1202,7 @@ function getInlineChartPlan(guide, data) {
       title: '잠들지 않는 칼날 환급 타임라인',
       sectionHeading: '마무리 일격과 쿨기 되먹임',
       sectionIntro:
-        '무법 도적은 생성기와 마무리 일격의 단순 반복이 아니라, 마무리 일격이 잠들지 않는 칼날을 통해 다음 아드레날린 촉진, 미간 적중, 폭풍의 칼날, 질풍 칼날, 광기의 학살자, 뼈주사위 창을 앞당기는 구조입니다. 이 타임라인은 연계 점수 생성, 5~6점 소비, 뼈주사위 단계, 폭풍의 칼날 전환, Trickster와 Fatebound 보정이 한 전투 안에서 어떻게 맞물리는지 보여줍니다.',
+        '무법 도적은 생성기와 마무리 일격의 단순 반복이 아니라, 마무리 일격이 잠들지 않는 칼날을 통해 다음 아드레날린 촉진, 미간 적중, 폭풍의 칼날, 질풍 칼날, 광기의 학살자, 뼈주사위 창을 앞당기는 구조입니다. 이 타임라인은 연계 점수 생성, 5~6점 소비, 뼈주사위 단계, 폭풍의 칼날 전환, 기만자와 운명결속 보정이 한 전투 안에서 어떻게 맞물리는지 보여줍니다.',
       caption:
         '막대는 실제 WCL 초 단위 복사본이 아니라 로그를 검수하는 순서입니다. 먼저 마무리 일격 빈도와 연계 점수 과충전을 보고, 그 다음 미간 적중 지연, 아드레날린 촉진과 준비 되감기, 폭풍의 칼날 다중 대상 적중, 무형검/최후의 일격 또는 운명의 손/행운 주화 분기를 확인합니다.',
       definition: [
@@ -1220,7 +1220,7 @@ function getInlineChartPlan(guide, data) {
       title: '은밀한 기술 90초 극딜 타임라인',
       sectionHeading: '은밀한 기술과 어둠의 칼날 창',
       sectionIntro:
-        '잠행 도적은 어둠의 춤을 많이 쓰는 전문화가 아니라 은밀한 기술을 기준으로 어둠의 춤, 어둠의 칼날, 그림자 일격, 절개, 고대의 기술 후속 소비를 압축하는 전문화입니다. 이 타임라인은 90초 큰 창 안에 첫 은밀한 기술, 두 번의 어둠의 춤, Trickster/Deathstalker 보정, 광역 전환이 어떤 관계로 들어가는지 보여줍니다.',
+        '잠행 도적은 어둠의 춤을 많이 쓰는 전문화가 아니라 은밀한 기술을 기준으로 어둠의 춤, 어둠의 칼날, 그림자 일격, 절개, 고대의 기술 후속 소비를 압축하는 전문화입니다. 이 타임라인은 90초 큰 창 안에 첫 은밀한 기술, 두 번의 어둠의 춤, 기만자/죽음추적자 보정, 광역 전환이 어떤 관계로 들어가는지 보여줍니다.',
       caption:
         '막대는 실제 WCL 초 단위 복사본이 아니라 로그 검수 순서입니다. 먼저 은밀한 기술이 어둠의 춤 안에 들어갔는지 보고, 그 다음 어둠의 칼날 안 두 번째 춤, 연계 점수 과충전, 표창 폭풍/검은 화약 전환, 최후의 일격 또는 죽음추적자의 징표 보상을 확인합니다.',
       definition: [
@@ -1432,13 +1432,13 @@ function getInlineChartPlan(guide, data) {
         segments: [[15, 10], [49, 10], [72, 10]],
       },
       {
-        label: 'Fatebound',
+        label: '운명결속',
         skill: findSkillByNames(data, ['운명의 손', '행운 주화']),
         note: '현재 로그 기본값입니다. 독살 빈도와 행운 주화 결산을 함께 봅니다.',
         segments: [[8, 20], [39, 20], [70, 20]],
       },
       {
-        label: 'Deathstalker',
+        label: '죽음추적자',
         skill: findSkillByNames(data, ['죽음추적자의 징표', '어둡고 어두운 밤']),
         note: '우선 대상이 고정될 때 표식 소모와 어둡고 어두운 밤 독살을 검수합니다.',
         segments: [[1, 18], [42, 18], [80, 14]],
@@ -3519,7 +3519,7 @@ function getUptimeRows(guide, data) {
       {
         label: '후속 소비',
         skill: findSkillByNames(data, ['절개']),
-        note: '은밀한 기술 이후의 단일 소비이며, Trickster와 Deathstalker 보상의 출구입니다.',
+        note: '은밀한 기술 이후의 단일 소비이며, 기만자와 죽음추적자 보상의 출구입니다.',
         segments: [[13, 7], [24, 7], [52, 7], [84, 7], [94, 5]],
       },
       {
@@ -3541,13 +3541,13 @@ function getUptimeRows(guide, data) {
         segments: [[36, 8], [66, 8], [90, 7]],
       },
       {
-        label: 'Trickster',
+        label: '기만자',
         skill: findSkillByNames(data, ['무형검', '최후의 일격']),
         note: '현재 로그 주류입니다. 최후의 일격 절개와 구름 덮개 창을 별도로 추적합니다.',
         segments: [[8, 20], [42, 20], [74, 20]],
       },
       {
-        label: 'Deathstalker',
+        label: '죽음추적자',
         skill: findSkillByNames(data, ['죽음추적자의 징표', '어둡고 어두운 밤']),
         note: '순수 단일 보조 분기입니다. 징표 적용, 중첩 소비, 대상 이동을 확인합니다.',
         segments: [[11, 16], [50, 16], [86, 12]],
@@ -3638,17 +3638,17 @@ function getUptimeRows(guide, data) {
       {
         label: '처형 쿨기',
         skill: findSkillByNames(data, ['광기의 학살자']),
-        note: 'Trickster 분기에서 고연계 점수 소비와 기력 과충전을 함께 보는 창입니다.',
+        note: '기만자 분기에서 고연계 점수 소비와 기력 과충전을 함께 보는 창입니다.',
         segments: [[31, 12], [73, 12]],
       },
       {
-        label: 'Trickster',
+        label: '기만자',
         skill: findSkillByNames(data, ['무형검', '최후의 일격']),
         note: '무형검 4회 이후 최후의 일격 속결을 별도 가치로 추적합니다.',
         segments: [[11, 20], [45, 20], [79, 18]],
       },
       {
-        label: 'Fatebound',
+        label: '운명결속',
         skill: findSkillByNames(data, ['운명의 손', '행운 주화']),
         note: '5점 이상 마무리 일격이 동전 횟수와 행운 주화 기대값을 만듭니다.',
         segments: [[18, 18], [52, 18], [86, 12]],
