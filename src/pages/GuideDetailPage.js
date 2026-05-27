@@ -1850,112 +1850,6 @@ function getInlineChartPlan(guide, data) {
     return plan;
   }
 
-  if (guide.id === 'mage-arcane') {
-    return [
-      {
-        label: '중심 자원',
-        skill: findSkillByNames(data, ['비전 연사']),
-        note: '비전 탄막 소비 품질을 결정하므로 큰 창 전 예열과 창 안 소비를 같이 봅니다.',
-        segments: [[4, 18], [26, 20], [52, 18], [78, 16]],
-      },
-      {
-        label: '큰 창',
-        skill: findSkillByNames(data, ['비전 쇄도']),
-        note: '90초 기준 피해와 마나 회복을 동시에 여는 창입니다.',
-        segments: [[18, 20], [76, 18]],
-      },
-      {
-        label: '45초 창',
-        skill: findSkillByNames(data, ['비전의 여파']),
-        note: '비전 쇄도와 겹치는 큰 창, 그 사이 소형 창을 모두 확인합니다.',
-        segments: [[22, 14], [54, 14], [84, 12]],
-      },
-      {
-        label: '탄막 소비',
-        skill: findSkillByNames(data, ['비전 탄막']),
-        note: '고중첩 비전 연사 소비와 마나 리셋용 탄막을 구분합니다.',
-        segments: [[30, 8], [58, 8], [88, 8]],
-      },
-      {
-        label: '보주 재충전',
-        skill: findSkillByNames(data, ['비전 보주']),
-        note: '0~2충전에서 충전물과 주문술사 쇄편 루프를 복구합니다.',
-        segments: [[10, 10], [40, 10], [70, 10]],
-      },
-      {
-        label: '발동 처리',
-        skill: findSkillByNames(data, ['신비한 화살', '번뜩임']),
-        note: '번뜩임을 버리지 않되 비전 탄막과 큰 창을 밀지 않게 처리합니다.',
-        segments: [[14, 9], [34, 9], [62, 9], [82, 9]],
-      },
-      {
-        label: '광역 전환',
-        skill: findSkillByNames(data, ['신비한 폭발', '비전 파동']),
-        note: '3타겟 이상에서는 충전물 생성과 비전 파동 타이밍을 따로 봅니다.',
-        segments: [[36, 12], [66, 12]],
-      },
-      {
-        label: '복구/보존',
-        skill: findSkillByNames(data, ['환기', '오색 방벽']),
-        note: '환기는 다음 큰 창 마나를 복구하고, 오색 방벽은 창 안 시전을 보존합니다.',
-        segments: [[44, 10], [90, 8]],
-      },
-    ];
-  }
-
-  if (guide.id === 'mage-fire') {
-    return [
-      {
-        label: '중심 창',
-        skill: findSkillByNames(data, ['발화']),
-        note: '모든 치명타 보장과 몰아치는 열기! 루프가 이 창에 모입니다.',
-        segments: [[16, 18], [72, 18]],
-      },
-      {
-        label: '착탄 정렬',
-        skill: findSkillByNames(data, ['유성']),
-        note: '유성은 누른 순간보다 발화 안에 떨어졌는지를 봅니다.',
-        segments: [[12, 10], [68, 10]],
-      },
-      {
-        label: '전환 연료',
-        skill: findSkillByNames(data, ['화염 작렬']),
-        note: '열기를 몰아치는 열기!로 바꾸되 충전 과잉을 막습니다.',
-        segments: [[8, 8], [22, 8], [36, 8], [64, 8], [78, 8], [90, 6]],
-      },
-      {
-        label: '중간 발동',
-        skill: findSkillByNames(data, ['열기']),
-        note: '열기 상태는 소비가 아니라 화염 작렬로 승격해야 하는 신호입니다.',
-        segments: [[6, 8], [30, 8], [58, 8], [86, 8]],
-      },
-      {
-        label: '소비 상태',
-        skill: findSkillByNames(data, ['몰아치는 열기!']),
-        note: '방치하지 않고 불덩이 작렬 또는 불기둥으로 바로 소비합니다.',
-        segments: [[20, 10], [34, 10], [76, 10], [88, 8]],
-      },
-      {
-        label: '단일 소비',
-        skill: findSkillByNames(data, ['불덩이 작렬']),
-        note: '단일에서는 몰아치는 열기!를 불덩이 작렬로 소비하고 착탄을 조율합니다.',
-        segments: [[24, 8], [38, 8], [80, 8]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['불기둥', '특화: 작열']),
-        note: '3타겟 이상에서는 불기둥과 특화: 작열 적중 수를 함께 봅니다.',
-        segments: [[42, 12], [92, 6]],
-      },
-      {
-        label: '보정/보존',
-        skill: findSkillByNames(data, ['불태우기', '이글거리는 방벽']),
-        note: '이동과 피해가 발화 창의 전환 루프를 끊지 않게 합니다.',
-        segments: [[48, 10], [94, 5]],
-      },
-    ];
-  }
-
   if (guide.id === 'evoker-preservation') {
     plan.push({
       id: 'uptime',
@@ -3298,6 +3192,260 @@ function getUptimeRows(guide, data) {
         skill: findSkillByNames(data, ['자연의 치유력', '쇄도의 포효']),
         note: '해제와 이동 보조는 회복량으로 덮기 전에 피해 자체를 줄이는 버튼입니다.',
         segments: [[14, 6], [44, 6], [70, 6], [88, 6]],
+      },
+    ];
+  }
+
+  if (guide.id === 'warrior-protection') {
+    return [
+      {
+        label: '중심 방어',
+        skill: findSkillByNames(data, ['방패 올리기']),
+        note: '전체 유지율보다 실제 탱킹 중 근접 피해와 막을 수 있는 기술을 맞는 순간에 켜져 있었는지를 봅니다.',
+        segments: [[2, 18], [24, 18], [48, 18], [72, 18]],
+      },
+      {
+        label: '분노 엔진',
+        skill: findSkillByNames(data, ['방패 밀쳐내기']),
+        note: '분노, 위협, 피해를 여는 첫 엔진입니다. 지연되면 고통 감내와 다음 방패 올리기 예산도 같이 늦어집니다.',
+        segments: [[8, 7], [26, 7], [44, 7], [62, 7], [80, 7]],
+      },
+      {
+        label: '광역 고정',
+        skill: findSkillByNames(data, ['천둥벼락']),
+        note: '분쇄 적용, 광역 위협, 산왕 우레 작렬 루프를 같이 엽니다.',
+        segments: [[12, 8], [34, 8], [56, 8], [78, 8]],
+      },
+      {
+        label: '흡수층',
+        skill: findSkillByNames(data, ['고통 감내']),
+        note: '방패 올리기 대체가 아니라 그 위에 얹는 흡수층입니다. 마법/지속 피해와 분노 과잉을 처리합니다.',
+        segments: [[18, 10], [42, 10], [66, 10], [88, 8]],
+      },
+      {
+        label: '마법 대응',
+        skill: findSkillByNames(data, ['주문 반사']),
+        note: '반사 가능한 주문이나 큰 마법 피해는 방패 올리기와 별도 줄로 예약합니다.',
+        segments: [[22, 8], [58, 8], [86, 7]],
+      },
+      {
+        label: '광역 소비',
+        skill: findSkillByNames(data, ['복수']),
+        note: '위협을 굳히는 광역 분노 소비입니다. 큰 물리 피해가 곧 오면 방패 올리기 분노를 먼저 남깁니다.',
+        segments: [[28, 8], [52, 8], [84, 8]],
+      },
+      {
+        label: '산왕 가속',
+        skill: findSkillByNames(data, ['투신', '우레 작렬']),
+        note: '투신과 우레 작렬은 공격 창이지만, 방패 올리기 기반이 무너지면 먼저 누를 이유가 줄어듭니다.',
+        segments: [[30, 16], [76, 16]],
+      },
+      {
+        label: '방패 창 정렬',
+        skill: findSkillByNames(data, ['방패 돌격']),
+        note: '방패 올리기와 방패 기술 피해 창을 함께 열어 공격과 방어 리듬을 재정렬합니다.',
+        segments: [[36, 10], [68, 10]],
+      },
+      {
+        label: '풀 제어',
+        skill: findSkillByNames(data, ['훼방의 외침', '충격파', '폭풍망치']),
+        note: '캐스터 풀에서는 광역 차단과 제어가 딜 버튼보다 먼저 계획표에 올라갈 수 있습니다.',
+        segments: [[14, 7], [46, 7], [74, 7]],
+      },
+      {
+        label: '큰 완화',
+        skill: findSkillByNames(data, ['사기의 외침']),
+        note: '탱 버스터나 대형 풀 전에 미리 깔아 들어오는 피해량을 낮춥니다.',
+        segments: [[40, 12], [82, 12]],
+      },
+      {
+        label: '비상 벽',
+        skill: findSkillByNames(data, ['방패의 벽', '최후의 저항']),
+        note: '방패 올리기와 고통 감내로 덮이지 않는 폭발 피해나 최위험 구간을 담당합니다.',
+        segments: [[54, 14], [90, 9]],
+      },
+      {
+        label: '파티 보호',
+        skill: findSkillByNames(data, ['재집결의 함성']),
+        note: '개인 방어와 분리해 파티/공대 전체 위험 구간에 배정합니다.',
+        segments: [[60, 10]],
+      },
+    ];
+  }
+
+  if (guide.id === 'rogue-assassination') {
+    return [
+      {
+        label: '출혈 기반',
+        skill: findSkillByNames(data, ['목조르기', '파열']),
+        note: '목조르기와 파열은 맹독 상처 기력 회수, 죽음표식 복제, 혈폭풍 광역 확장의 바닥입니다.',
+        segments: [[2, 94]],
+      },
+      {
+        label: '중심 소비',
+        skill: findSkillByNames(data, ['독살']),
+        note: '독 발동 확률, 왕의 파멸 성장, 운명의 손 결산을 여는 중심 마무리 일격입니다.',
+        segments: [[10, 8], [26, 8], [42, 8], [58, 8], [74, 8], [90, 7]],
+      },
+      {
+        label: '쿨기 표식',
+        skill: findSkillByNames(data, ['죽음표식']),
+        note: '곧 죽을 대상이 아니라 오래 살 우선 대상에 출혈과 치명독 기반을 묶어야 합니다.',
+        segments: [[18, 12], [76, 12]],
+      },
+      {
+        label: '독 성장',
+        skill: findSkillByNames(data, ['왕의 파멸']),
+        note: '왕의 파멸 중에는 독살 창과 독칼이 비지 않아야 14초 독 피해가 커집니다.',
+        segments: [[22, 14], [80, 14]],
+      },
+      {
+        label: '자연 보강',
+        skill: findSkillByNames(data, ['독칼']),
+        note: '5938 독칼 기준입니다. 이름이 비슷한 다른 독 칼과 섞이지 않게 아이콘과 툴팁을 같이 봅니다.',
+        segments: [[28, 8], [84, 8]],
+      },
+      {
+        label: '전이 피해',
+        skill: findSkillByNames(data, ['부식성 분사']),
+        note: '우선 대상 자연 피해가 주변으로 전이되는 창입니다. 대상 위치와 독살 창을 같이 봅니다.',
+        segments: [[32, 10], [88, 8]],
+      },
+      {
+        label: '광역 생성',
+        skill: findSkillByNames(data, ['칼날 부채']),
+        note: '2명 이상에서 연계 점수를 만드는 광역 생성기입니다. 출혈 복제 역할과 구분합니다.',
+        segments: [[36, 7], [54, 7], [72, 7], [92, 6]],
+      },
+      {
+        label: '출혈 복제',
+        skill: findSkillByNames(data, ['혈폭풍']),
+        note: '목조르기와 파열을 보조 대상에 확장하는 버튼입니다. 출혈 없는 혈폭풍은 가치가 크게 내려갑니다.',
+        segments: [[44, 12], [82, 12]],
+      },
+      {
+        label: '영웅 결산',
+        skill: findSkillByNames(data, ['운명의 손', '죽음추적자의 징표']),
+        note: '운명결속은 독살 결산, 죽음추적자는 표식 대상 관리가 핵심입니다.',
+        segments: [[16, 10], [48, 10], [78, 10]],
+      },
+      {
+        label: '은신 재강화',
+        skill: findSkillByNames(data, ['소멸', '목조르기']),
+        note: '소멸-목조르기 강화 구간은 단순 유지율보다 강화 출혈이 실제 우선 대상에 들어갔는지 봅니다.',
+        segments: [[50, 10], [90, 8]],
+      },
+      {
+        label: '생존 보존',
+        skill: findSkillByNames(data, ['교란', '그림자 망토', '회피']),
+        note: '근접 업타임이 끊기면 독살과 왕의 파멸 창도 같이 무너집니다.',
+        segments: [[24, 6], [62, 6], [86, 6]],
+      },
+    ];
+  }
+
+  if (guide.id === 'mage-fire') {
+    return [
+      {
+        label: '중심 창',
+        skill: findSkillByNames(data, ['발화']),
+        note: '모든 치명타 보장과 몰아치는 열기! 루프가 이 창에 모입니다.',
+        segments: [[16, 18], [72, 18]],
+      },
+      {
+        label: '착탄 정렬',
+        skill: findSkillByNames(data, ['유성']),
+        note: '유성은 누른 순간보다 발화 안에 떨어졌는지를 봅니다.',
+        segments: [[12, 10], [68, 10]],
+      },
+      {
+        label: '전환 연료',
+        skill: findSkillByNames(data, ['화염 작렬']),
+        note: '열기를 몰아치는 열기!로 바꾸되 충전 과잉을 막습니다.',
+        segments: [[8, 8], [22, 8], [36, 8], [64, 8], [78, 8], [90, 6]],
+      },
+      {
+        label: '중간 발동',
+        skill: findSkillByNames(data, ['열기']),
+        note: '열기 상태는 소비가 아니라 화염 작렬로 승격해야 하는 신호입니다.',
+        segments: [[6, 8], [30, 8], [58, 8], [86, 8]],
+      },
+      {
+        label: '소비 상태',
+        skill: findSkillByNames(data, ['몰아치는 열기!']),
+        note: '방치하지 않고 불덩이 작렬 또는 불기둥으로 바로 소비합니다.',
+        segments: [[20, 10], [34, 10], [76, 10], [88, 8]],
+      },
+      {
+        label: '단일 소비',
+        skill: findSkillByNames(data, ['불덩이 작렬']),
+        note: '단일에서는 몰아치는 열기!를 불덩이 작렬로 소비하고 착탄을 조율합니다.',
+        segments: [[24, 8], [38, 8], [80, 8]],
+      },
+      {
+        label: '광역 소비',
+        skill: findSkillByNames(data, ['불기둥', '특화: 작열']),
+        note: '3타겟 이상에서는 불기둥과 특화: 작열 적중 수를 함께 봅니다.',
+        segments: [[42, 12], [92, 6]],
+      },
+      {
+        label: '보정/보존',
+        skill: findSkillByNames(data, ['불태우기', '이글거리는 방벽']),
+        note: '이동과 피해가 발화 창의 전환 루프를 끊지 않게 합니다.',
+        segments: [[48, 10], [94, 5]],
+      },
+    ];
+  }
+
+  if (guide.id === 'mage-arcane') {
+    return [
+      {
+        label: '중심 자원',
+        skill: findSkillByNames(data, ['비전 연사']),
+        note: '비전 탄막 소비 품질을 결정하므로 큰 창 전 예열과 창 안 소비를 같이 봅니다.',
+        segments: [[4, 18], [26, 20], [52, 18], [78, 16]],
+      },
+      {
+        label: '큰 창',
+        skill: findSkillByNames(data, ['비전 쇄도']),
+        note: '90초 기준 피해와 마나 회복을 동시에 여는 창입니다.',
+        segments: [[18, 20], [76, 18]],
+      },
+      {
+        label: '45초 창',
+        skill: findSkillByNames(data, ['비전의 여파']),
+        note: '비전 쇄도와 겹치는 큰 창, 그 사이 소형 창을 모두 확인합니다.',
+        segments: [[22, 14], [54, 14], [84, 12]],
+      },
+      {
+        label: '탄막 소비',
+        skill: findSkillByNames(data, ['비전 탄막']),
+        note: '고중첩 비전 연사 소비와 마나 리셋용 탄막을 구분합니다.',
+        segments: [[30, 8], [58, 8], [88, 8]],
+      },
+      {
+        label: '보주 재충전',
+        skill: findSkillByNames(data, ['비전 보주']),
+        note: '0~2충전에서 충전물과 주문술사 쇄편 루프를 복구합니다.',
+        segments: [[10, 10], [40, 10], [70, 10]],
+      },
+      {
+        label: '발동 처리',
+        skill: findSkillByNames(data, ['신비한 화살', '번뜩임']),
+        note: '번뜩임을 버리지 않되 비전 탄막과 큰 창을 밀지 않게 처리합니다.',
+        segments: [[14, 9], [34, 9], [62, 9], [82, 9]],
+      },
+      {
+        label: '광역 전환',
+        skill: findSkillByNames(data, ['신비한 폭발', '비전 파동']),
+        note: '3타겟 이상에서는 충전물 생성과 비전 파동 타이밍을 따로 봅니다.',
+        segments: [[36, 12], [66, 12]],
+      },
+      {
+        label: '복구/보존',
+        skill: findSkillByNames(data, ['환기', '오색 방벽']),
+        note: '환기는 다음 큰 창 마나를 복구하고, 오색 방벽은 창 안 시전을 보존합니다.',
+        segments: [[44, 10], [90, 8]],
       },
     ];
   }
