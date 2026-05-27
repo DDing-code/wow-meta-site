@@ -2145,9 +2145,9 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
     return (
       <OpenerFlowViewport>
         <OpenerFlowMapHeader>
-          <span>START</span>
-          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '전투 시작부터 우선순위 루프까지 이어지는 순서'}</strong>
-          <span>LOOP</span>
+          <span>진입</span>
+          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '전투 시작부터 우선순위 반복 판단까지 이어지는 순서'}</strong>
+          <span>반복</span>
         </OpenerFlowMapHeader>
         {phaseLegend.length > 1 && (
           <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
