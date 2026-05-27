@@ -43,7 +43,7 @@ const roleProfiles = {
   },
   melee: {
     label: '근접 딜러',
-    cycleTitle: '첫 전투 흐름',
+    cycleTitle: '오프닝 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원 흐름',
     plannerTitle: '위험 구간 대응',
@@ -52,7 +52,7 @@ const roleProfiles = {
   },
   ranged: {
     label: '원거리 딜러',
-    cycleTitle: '첫 전투 흐름',
+    cycleTitle: '오프닝 전투 흐름',
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원/시전 흐름',
     plannerTitle: '이동 구간 대응',
@@ -162,8 +162,7 @@ function displayGuideText(value) {
     .replace(/\bFarseer\b/g, '선견자')
     .replace(/\bTotemic\b/g, '토템술사')
     .replace(/\bMidnight\b/g, '한밤')
-    .replace(/오프닝\s*(딜사이클|레일)/g, '첫 전투 흐름')
-    .replace(/오프닝\s*전투\s*흐름/g, '첫 전투 흐름')
+    .replace(/오프닝\s*(딜사이클|레일)/g, '오프닝 전투 흐름')
     .replace(/준비 레일/g, '준비 전투 흐름')
     .replace(/레일/g, '흐름도')
     .replace(/\bGrove Guardians\b/g, '숲 수호자')
