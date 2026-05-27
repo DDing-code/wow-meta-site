@@ -5706,6 +5706,10 @@ const OpenerFlowMapHeader = styled.div`
   }
 
   strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     min-width: 0;
     color: #efe4d4;
     font-size: 0.78rem;
@@ -5714,6 +5718,20 @@ const OpenerFlowMapHeader = styled.div`
     text-align: center;
     word-break: keep-all;
     overflow-wrap: anywhere;
+
+    &::before,
+    &::after {
+      content: '';
+      flex: 1 1 28px;
+      min-width: 18px;
+      max-width: 80px;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(184, 145, 91, 0.08), rgba(184, 145, 91, 0.68));
+    }
+
+    &::after {
+      background: linear-gradient(90deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0.08));
+    }
   }
 
   @media (max-width: 560px) {
@@ -5724,7 +5742,13 @@ const OpenerFlowMapHeader = styled.div`
     }
 
     strong {
+      display: block;
       text-align: left;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 `;
@@ -5789,11 +5813,11 @@ const OpenerFlowList = styled.ol`
   position: relative;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(188px, 18cqw, 238px);
+  grid-auto-columns: clamp(178px, 17cqw, 224px);
   align-items: start;
   gap: 24px;
   margin: 0;
-  padding: 22px 22px 26px;
+  padding: 24px 22px 24px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
@@ -5827,7 +5851,7 @@ const OpenerFlowList = styled.ol`
     justify-items: center;
     gap: 13px;
     min-width: 0;
-    min-height: 224px;
+    min-height: 206px;
     padding: 0;
     border: 0;
     background: transparent;
@@ -6087,7 +6111,7 @@ const OpenerStepBody = styled.div`
   gap: 7px;
   width: 100%;
   min-width: 0;
-  padding: 12px;
+  padding: 11px;
   border: 1px solid rgba(244, 239, 229, 0.11);
   border-top-color: rgba(184, 145, 91, 0.32);
   border-radius: 6px;
@@ -6111,7 +6135,7 @@ const OpenerStepBody = styled.div`
   strong {
     display: block;
     color: #f4efe5;
-    font-size: 0.84rem;
+    font-size: 0.86rem;
     font-weight: 950;
     line-height: 1.32;
     word-break: keep-all;
@@ -6120,7 +6144,9 @@ const OpenerStepBody = styled.div`
   }
 
   p {
+    display: -webkit-box;
     margin: 0;
+    overflow: hidden;
     color: #b8c2c8;
     font-size: 0.72rem;
     font-weight: 760;
@@ -6128,6 +6154,8 @@ const OpenerStepBody = styled.div`
     word-break: keep-all;
     overflow-wrap: break-word;
     text-wrap: pretty;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 
   @media (max-width: 560px) {
@@ -6141,6 +6169,10 @@ const OpenerStepBody = styled.div`
       width: 12px;
       height: 1px;
       background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
+    }
+
+    p {
+      -webkit-line-clamp: 4;
     }
   }
 `;
