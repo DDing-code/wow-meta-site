@@ -3212,7 +3212,7 @@ function getUptimeRows(guide, data) {
       {
         label: '생존 보존',
         skill: findSkillByNames(data, ['교란', '그림자 망토', '회피']),
-        note: '근접 업타임이 끊기면 독살과 왕의 파멸 창도 같이 무너집니다.',
+        note: '근접 접촉 시간이 끊기면 독살과 왕의 파멸 창도 같이 무너집니다.',
         segments: [[24, 6], [62, 6], [86, 6]],
       },
     ];

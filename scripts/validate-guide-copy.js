@@ -5,11 +5,17 @@ const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 
 const forbiddenTerms = [
   { term: '\uc6d0\uace0', replacement: '\uac00\uc774\ub4dc/\ubcf8\ubb38' },
+  { term: '\ub17c\ubb38', replacement: '\uacf5\ub7b5 \uae00' },
   { term: '\ud504\ub85c\ud1a0\ud0c0\uc785', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
   { term: '\ub0b4\ubd80 \ubb38\uc11c', replacement: '\ucd9c\ucc98/\uac80\uc218 \ubb38\ub9e5' },
+  { term: '\ucc28\ud2b8 \uc0ac\uc6a9', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
+  { term: '\ucc28\ud2b8 \uc124\uacc4', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
+  { term: '\uc2dc\uac01\uc790\ub8cc \uad6c\uc131', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
+  { term: '\ucc28\ud2b8\ub294 \uc5b4\ub514\uc5d0', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
   { term: '\uc784\uc758 \ubc88\uc5ed', replacement: '\uacf5\uc2dd \ud55c\uad6d\uc5b4 \ud45c\uae30' },
   { term: '\uc601\ubb38 \ub77c\ubca8', replacement: '\uacf5\uc2dd \ud55c\uad6d\uc5b4 \ud45c\uae30' },
   { term: '\uc624\ud504\ub108', replacement: '\uc624\ud504\ub2dd' },
@@ -55,18 +61,26 @@ const forbiddenTerms = [
   { term: 'Slayer', replacement: '\ud559\uc0b4\uc790' },
 ];
 
+const pageForbiddenTerms = [
+  { term: '\uc5c5\ud0c0\uc784', replacement: '\uc720\uc9c0\uc728/\uc720\ud6a8 \uc2dc\uac04' },
+  { term: '\uc624\ud504\ub108', replacement: '\uc624\ud504\ub2dd' },
+  { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
+  { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
+];
+
 function findLine(source, index) {
   return source.slice(0, index).split(/\r?\n/).length;
 }
 
-function main() {
-  const source = fs.readFileSync(MANUSCRIPT_PATH, 'utf8');
+function collectForbiddenTermErrors(filePath, terms) {
+  const source = fs.readFileSync(filePath, 'utf8');
   const errors = [];
 
-  for (const item of forbiddenTerms) {
+  for (const item of terms) {
     let index = source.indexOf(item.term);
     while (index !== -1) {
       errors.push({
+        filePath,
         line: findLine(source, index),
         term: item.term,
         replacement: item.replacement,
@@ -75,10 +89,19 @@ function main() {
     }
   }
 
+  return errors;
+}
+
+function main() {
+  const errors = [
+    ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
+    ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
+  ];
+
   if (errors.length) {
     console.error(`Guide copy validation failed (${errors.length} issue${errors.length === 1 ? '' : 's'}):`);
     errors.slice(0, 40).forEach(error => {
-      console.error(`  - ${path.relative(SITE_ROOT, MANUSCRIPT_PATH)}:${error.line}: "${error.term}" -> "${error.replacement}"`);
+      console.error(`  - ${path.relative(SITE_ROOT, error.filePath)}:${error.line}: "${error.term}" -> "${error.replacement}"`);
     });
     if (errors.length > 40) {
       console.error(`  ... and ${errors.length - 40} more`);
