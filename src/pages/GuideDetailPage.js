@@ -1972,7 +1972,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
           <li key={step.key}>
             <OpenerStepTop>
               <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-              <SkillIconLink skill={step.skill} size={42} />
+              <SkillIconLink skill={step.skill} size={46} />
             </OpenerStepTop>
             <OpenerStepBody>
               <OpenerPhase>{step.phase}</OpenerPhase>
@@ -5789,11 +5789,11 @@ const OpenerFlowList = styled.ol`
   position: relative;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(252px, 24cqw, 312px);
-  align-items: stretch;
-  gap: 26px;
+  grid-auto-columns: clamp(188px, 18cqw, 238px);
+  align-items: start;
+  gap: 24px;
   margin: 0;
-  padding: 18px 20px 24px;
+  padding: 22px 22px 26px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
@@ -5809,12 +5809,13 @@ const OpenerFlowList = styled.ol`
   &::before {
     content: '';
     position: absolute;
-    top: 79px;
-    left: 34px;
-    right: 34px;
-    height: 2px;
+    top: 57px;
+    left: 58px;
+    right: 58px;
+    height: 3px;
     background:
-      linear-gradient(90deg, rgba(184, 145, 91, 0.12), var(--flow-line), rgba(184, 145, 91, 0.12));
+      linear-gradient(90deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
+    box-shadow: 0 0 14px rgba(184, 145, 91, 0.18);
     pointer-events: none;
   }
 
@@ -5822,19 +5823,15 @@ const OpenerFlowList = styled.ol`
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
-    gap: 10px;
+    grid-template-rows: 74px minmax(0, 1fr);
+    justify-items: center;
+    gap: 13px;
     min-width: 0;
-    min-height: 214px;
-    padding: 13px;
-    border: 1px solid rgba(244, 239, 229, 0.11);
-    border-radius: 6px;
-    background:
-      linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.3)),
-      rgba(8, 13, 17, 0.92);
-    box-shadow:
-      inset 0 1px 0 rgba(244, 239, 229, 0.06),
-      0 12px 24px rgba(0, 0, 0, 0.18);
+    min-height: 224px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
     scroll-snap-align: start;
     overflow: visible;
   }
@@ -5843,11 +5840,11 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 60px;
-    left: calc(100% - 4px);
-    width: 36px;
+    top: 56px;
+    left: calc(50% + 35px);
+    width: calc(50% + 24px);
     height: 3px;
-    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.2));
+    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.14));
     pointer-events: none;
   }
 
@@ -5859,13 +5856,13 @@ const OpenerFlowList = styled.ol`
     content: '';
     position: absolute;
     z-index: 2;
-    top: 55px;
-    right: -26px;
+    top: 50px;
+    right: -18px;
     width: 0;
     height: 0;
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 9px solid var(--flow-line);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid var(--flow-line);
   }
 
   @media (max-width: 640px) {
@@ -5883,16 +5880,17 @@ const OpenerFlowList = styled.ol`
 
     li {
       display: grid;
-      grid-template-columns: 62px minmax(0, 1fr);
+      grid-template-columns: 58px minmax(0, 1fr);
       column-gap: 12px;
       min-height: 0;
-      padding: 10px;
+      padding: 0;
       align-items: start;
-      overflow: hidden;
+      justify-items: stretch;
+      overflow: visible;
     }
 
     li::before {
-      left: 31px;
+      left: 28px;
       right: auto;
       top: 58px;
       bottom: -14px;
@@ -5905,7 +5903,7 @@ const OpenerFlowList = styled.ol`
       content: '';
       top: auto;
       right: auto;
-      left: 24px;
+      left: 21px;
       bottom: 4px;
       width: 14px;
       height: 14px;
@@ -5936,16 +5934,17 @@ const OpenerFlowList = styled.ol`
 
     li {
       display: grid;
-      grid-template-columns: 62px minmax(0, 1fr);
+      grid-template-columns: 58px minmax(0, 1fr);
       column-gap: 12px;
       min-height: 0;
-      padding: 10px;
+      padding: 0;
       align-items: start;
-      overflow: hidden;
+      justify-items: stretch;
+      overflow: visible;
     }
 
     li::before {
-      left: 31px;
+      left: 28px;
       right: auto;
       top: 58px;
       bottom: -14px;
@@ -5958,7 +5957,7 @@ const OpenerFlowList = styled.ol`
       content: '';
       top: auto;
       right: auto;
-      left: 24px;
+      left: 21px;
       bottom: 4px;
       width: 14px;
       height: 14px;
@@ -5997,27 +5996,176 @@ const OpenerPhase = styled.div`
 const OpenerStepTop = styled.div`
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-width: 0;
+  display: grid;
+  place-items: center;
+  align-self: start;
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(244, 239, 229, 0.14);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(244, 239, 229, 0.1), rgba(8, 13, 17, 0.88) 62%),
+    linear-gradient(180deg, rgba(184, 145, 91, 0.22), rgba(8, 13, 17, 0.78));
+  box-shadow:
+    0 0 0 5px rgba(8, 13, 17, 0.9),
+    0 0 0 6px rgba(184, 145, 91, 0.16),
+    0 16px 28px rgba(0, 0, 0, 0.28);
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(244, 239, 229, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -11px;
+    border: 1px solid rgba(184, 145, 91, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+  }
 
   > a,
   > span[aria-hidden='true'] {
-    flex: 0 0 auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(8, 13, 17, 0.96),
+      0 0 16px rgba(184, 145, 91, 0.18);
+  }
+
+  img {
+    border-radius: 11px;
+  }
+
+  > span[aria-hidden='true'] {
+    display: inline-grid;
+    place-items: center;
   }
 
   @media (max-width: 560px) {
     grid-row: 1 / span 2;
     align-self: start;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
+    width: 54px;
+    height: 54px;
+    box-shadow:
+      0 0 0 4px rgba(8, 13, 17, 0.9),
+      0 0 0 5px rgba(184, 145, 91, 0.14);
+
+    &::before {
+      inset: 6px;
+    }
+
+    &::after {
+      inset: -8px;
+    }
+
+    > a,
+    > span[aria-hidden='true'] {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+    }
+
+    img {
+      border-radius: 8px;
+    }
   }
 `;
 
+const OpenerStepBody = styled.div`
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid rgba(244, 239, 229, 0.11);
+  border-top-color: rgba(184, 145, 91, 0.32);
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.08)),
+    rgba(8, 13, 17, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(244, 239, 229, 0.05),
+    0 12px 24px rgba(0, 0, 0, 0.16);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    width: 1px;
+    height: 13px;
+    background: linear-gradient(180deg, var(--flow-line), rgba(184, 145, 91, 0.12));
+  }
+
+  strong {
+    display: block;
+    color: #f4efe5;
+    font-size: 0.84rem;
+    font-weight: 950;
+    line-height: 1.32;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+  }
+
+  p {
+    margin: 0;
+    color: #b8c2c8;
+    font-size: 0.72rem;
+    font-weight: 760;
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+  }
+
+  @media (max-width: 560px) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding: 10px;
+
+    &::before {
+      top: 26px;
+      left: -12px;
+      width: 12px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
+    }
+  }
+`;
+
+const OpenerTrigger = styled.span`
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  padding: 4px 7px;
+  border: 1px solid rgba(244, 239, 229, 0.1);
+  border-left-color: rgba(184, 145, 91, 0.42);
+  background: rgba(244, 239, 229, 0.045);
+  color: #d9b97a;
+  font-size: 0.66rem;
+  font-weight: 950;
+  line-height: 1.25;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+`;
+
 const OpenerStepNumber = styled.span`
+  position: absolute;
+  z-index: 2;
+  top: -8px;
+  left: -8px;
   display: grid;
   place-items: center;
   width: 26px;
@@ -6029,58 +6177,12 @@ const OpenerStepNumber = styled.span`
   font-weight: 950;
 
   @media (max-width: 560px) {
-    width: 24px;
-    height: 24px;
+    top: -6px;
+    left: -6px;
+    width: 22px;
+    height: 22px;
+    font-size: 0.62rem;
   }
-`;
-
-const OpenerStepBody = styled.div`
-  position: relative;
-  z-index: 1;
-  min-width: 0;
-
-  strong {
-    display: block;
-    margin-top: 7px;
-    color: #f4efe5;
-    font-size: 0.86rem;
-    font-weight: 950;
-    line-height: 1.3;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    text-wrap: pretty;
-  }
-
-  p {
-    margin-top: 7px;
-    color: #b8c2c8;
-    font-size: 0.74rem;
-    font-weight: 760;
-    line-height: 1.48;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    text-wrap: pretty;
-  }
-
-  @media (max-width: 560px) {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-`;
-
-const OpenerTrigger = styled.span`
-  display: inline-flex;
-  max-width: 100%;
-  margin-top: 7px;
-  padding: 4px 7px;
-  border: 1px solid rgba(244, 239, 229, 0.1);
-  background: rgba(244, 239, 229, 0.045);
-  color: #d9b97a;
-  font-size: 0.66rem;
-  font-weight: 950;
-  line-height: 1.25;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
 `;
 
 const TipList = styled.ul`
