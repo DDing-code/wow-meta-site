@@ -34,7 +34,7 @@ const OPENER_FLOW_MAX_STEPS = 12;
 const roleProfiles = {
   tanks: {
     label: '탱커',
-    cycleTitle: '방어 운용 흐름',
+    cycleTitle: '진입/방어 전투 흐름',
     priorityTitle: '방어 우선순위',
     resourceTitle: '자원/완화 곡선',
     plannerTitle: '생존기 대응 플래너',
@@ -951,75 +951,32 @@ function skillFromManualStep(step) {
   return manualSkillById.get(skillId) || skillById.get(skillId) || step.skill || null;
 }
 
-function ManualManuscriptSection({ guide, manuscript }) {
-  if (!manuscript) return null;
-
-  return (
-    <SectionBlock id="manuscript">
-      <SectionHead>
-        <SectionIcon><BookOpen size={17} /></SectionIcon>
-        <div>
-          <SectionKicker>guide</SectionKicker>
-          <SectionTitle>공략 핵심</SectionTitle>
-        </div>
-      </SectionHead>
-      <ManuscriptHeader $color={guide.color}>
-        <div>
-          <ManuscriptStatus>{manuscript.status}</ManuscriptStatus>
-          <ManuscriptSummary>{manuscript.summary}</ManuscriptSummary>
-        </div>
-        <ManuscriptMeta>
-          <span>패치 {manuscript.patch}</span>
-          <span>조사 {manuscript.researchedAt}</span>
-        </ManuscriptMeta>
-      </ManuscriptHeader>
-      <ManuscriptGrid>
-        {manuscript.blocks?.map(block => (
-          <ManuscriptPanel key={block.title}>
-            <h3>{block.title}</h3>
-            {block.paragraphs?.map(paragraph => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-            {!!block.bullets?.length && (
-              <ManuscriptList>
-                {block.bullets.map(item => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ManuscriptList>
-            )}
-          </ManuscriptPanel>
-        ))}
-      </ManuscriptGrid>
-      <EvidenceGrid>
-        <EvidencePanel>
-          <h3>참고한 자료</h3>
-          <ManuscriptList>
-            {manuscript.evidence?.map(item => (
-              <li key={item}>{item}</li>
-            ))}
-          </ManuscriptList>
-        </EvidencePanel>
-        <EvidencePanel>
-          <h3>주의할 점</h3>
-          <ManuscriptList>
-            {manuscript.caveats?.map(item => (
-              <li key={item}>{item}</li>
-            ))}
-          </ManuscriptList>
-        </EvidencePanel>
-      </EvidenceGrid>
-    </SectionBlock>
-  );
-}
-
 function isMetaChartBlock(block) {
   const title = block?.title || '';
   return /차트\s*설계|시각자료\s*구성|차트는\s*어디에|차트\s*사용|차트를\s*읽는\s*법|차트\s*읽는\s*순서|차트\s*구성|빌드별\s*차트\s*분리|지원\s*딜러\s*차트|힐링\s*차트|chart/i.test(title);
 }
 
-function isOpenerNarrativeBlock(block) {
+function isOpenerNarrativeBlock(block, guide) {
   const title = displayGuideText(block?.title || '');
-  return /오프닝|첫\s*전투\s*흐름|전투\s*시작|첫\s*피해\s*대응|첫\s*풀(?:링|흐름)?|풀링|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
+  const sample = displayGuideText([
+    title,
+    ...(block?.paragraphs || []).slice(0, 1),
+    ...(block?.bullets || []).slice(0, 2),
+  ].join(' '));
+
+  if (/오프닝|첫\s*전투\s*흐름|전투\s*시작|첫\s*피해\s*대응|첫\s*풀(?:링|흐름)?|풀링|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title)) {
+    return true;
+  }
+
+  if (guide?.role === 'tanks' && /(진입|방어|위협|풀)/.test(title) && /(흐름|순서|전투|딜사이클)/.test(title)) {
+    return true;
+  }
+
+  if (guide?.role === 'healers' && /(피해|예열|회수|복구)/.test(title) && /(대응|흐름|순서|전투|딜사이클)/.test(title)) {
+    return true;
+  }
+
+  return /(오프닝|전투\s*시작|첫\s*버튼|첫\s*풀|첫\s*피해)/.test(sample) && /(흐름|순서|딜사이클|레일)/.test(sample);
 }
 
 function getInlineChartPlan(guide, data) {
@@ -1991,17 +1948,18 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   if (!manuscript) return null;
 
   const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
-  const openerBlock = contentBlocks.find(block => isOpenerNarrativeBlock(block));
-  const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block));
+  const openerBlocks = contentBlocks.filter(block => isOpenerNarrativeBlock(block, guide));
+  const openerBlock = openerBlocks[0];
+  const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block, guide));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
   const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
-  const openerFallbackItems = openerBlock
-    ? [
-      ...(openerBlock.bullets || []),
-      ...(openerBlock.paragraphs || []),
-    ].slice(0, OPENER_FLOW_MAX_STEPS)
-    : [];
+  const openerFallbackItems = openerBlocks
+    .flatMap(block => [
+      ...(block.bullets || []),
+      ...(block.paragraphs || []),
+    ])
+    .slice(0, OPENER_FLOW_MAX_STEPS);
   const openerIntroTitle = manuscript.opener?.title || openerBlock?.title;
   const openerIntroSummary = manuscript.opener?.summary || openerBlock?.paragraphs?.[0];
   const tipItems = manuscript.tips?.length
@@ -5242,22 +5200,6 @@ const SummaryText = styled.p`
   word-break: keep-all;
 `;
 
-const ManuscriptHeader = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 14px;
-  align-items: start;
-  padding: 16px;
-  border: 1px solid ${props => props.$color};
-  background:
-    linear-gradient(135deg, ${props => props.$color}1f 0%, rgba(13, 18, 22, 0.96) 54%),
-    #0d1216;
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
 const ManuscriptStatus = styled.div`
   display: inline-flex;
   width: max-content;
@@ -5268,15 +5210,6 @@ const ManuscriptStatus = styled.div`
   line-height: 1.2;
   white-space: nowrap;
   text-transform: uppercase;
-`;
-
-const ManuscriptSummary = styled.p`
-  margin-top: 8px;
-  color: #f4efe5;
-  font-size: 0.95rem;
-  font-weight: 800;
-  line-height: 1.72;
-  word-break: keep-all;
 `;
 
 const ManuscriptMeta = styled.div`
@@ -6234,17 +6167,6 @@ const TipList = styled.ul`
 
   li::marker {
     color: #b8915b;
-  }
-`;
-
-const ManuscriptGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 12px;
-
-  @media (max-width: 820px) {
-    grid-template-columns: 1fr;
   }
 `;
 
