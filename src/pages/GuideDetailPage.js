@@ -2030,7 +2030,11 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
       </PaperLead>
 
       {hasOpenerGuide && (
-        <OpenerFlowCard $color={guide.color}>
+        <OpenerFlowCard
+          $color={guide.color}
+          aria-label={getFlowChartTitle(guide)}
+          data-guide-chart="opener-flow"
+        >
           <FieldGuideCardHead>
             <Clock3 size={15} />
             <strong>{getFlowChartTitle(guide)}</strong>

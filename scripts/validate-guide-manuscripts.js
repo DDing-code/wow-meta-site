@@ -20,6 +20,11 @@ const MINIMUMS = {
 };
 
 const TRUST_TIERS = new Set(['S', 'A', 'B', 'C']);
+const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 창|상태 전환/i;
+const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
+const LOG_SOURCE_PATTERN = /Archon|WCL|Warcraft Logs/i;
+const COMMUNITY_SOURCE_PATTERN = /Discord|Dreamgrove|Fel Hammer|Acherus|Death's Advance|Skyhold|Ravenholdt|Earthshrine|Warcraft Priests|Peak of Serenity|Wyrmrest|Ancestral Guidance|Altered Time|Trueshot Lodge|공개 서버|공개 경로|컴펜디엄/i;
+const LOG_EVIDENCE_PATTERN = /표본|parses?|DPS|HPS|쐐기돌|사용률|채택률|추천 .*빌드|상위 50%|상위 5%|최근 14일/i;
 const errors = [];
 
 function assert(condition, message) {
@@ -64,6 +69,55 @@ function validateSource(spec, source, index) {
   assert(source.note && source.note.length >= 12, `${prefix}: note is too thin`);
 }
 
+function sourceText(source) {
+  return [
+    source.label,
+    source.url,
+    source.updated,
+    source.note,
+  ].filter(Boolean).join(' ');
+}
+
+function hasSource(sources, pattern, predicate = () => true) {
+  return sources.some(source => pattern.test(sourceText(source)) && predicate(source));
+}
+
+function validateSourceCoverage(spec, manuscript) {
+  const prefix = spec.id;
+  const sources = manuscript.sources || [];
+  const logSources = sources.filter(source => LOG_SOURCE_PATTERN.test(sourceText(source)));
+  const communitySources = sources.filter(source => COMMUNITY_SOURCE_PATTERN.test(sourceText(source)));
+
+  assert(
+    hasSource(sources, /Blizzard|news\.blizzard/i, source => source.tier === 'S'),
+    `${prefix}: sources[] must include a Tier S Blizzard source`
+  );
+  assert(
+    hasSource(sources, /Wowhead/i, source => source.tier === 'S' || source.tier === 'A'),
+    `${prefix}: sources[] must include a Tier S/A Wowhead source`
+  );
+  assert(
+    hasSource(sources, /Icy Veins/i, source => source.tier === 'A'),
+    `${prefix}: sources[] must include a Tier A Icy Veins source`
+  );
+  assert(
+    logSources.some(source => source.tier === 'A'),
+    `${prefix}: sources[] must include a Tier A log source such as Archon/WCL`
+  );
+  assert(
+    logSources.some(source => LOG_EVIDENCE_PATTERN.test(source.note || '')),
+    `${prefix}: log source note must include sample size, usage, output, or key-level evidence`
+  );
+  assert(
+    communitySources.length > 0,
+    `${prefix}: sources[] must include a class Discord/public community source`
+  );
+  assert(
+    communitySources.some(source => source.tier === 'B' || source.tier === 'A'),
+    `${prefix}: class Discord/public community source must be Tier A/B`
+  );
+}
+
 function validateSkillReferences(spec, manuscript, kbSkills) {
   const extraSkills = new Set((manuscript.extraSkills || []).map(skill => String(skill.id)));
   const skillRefs = [];
@@ -96,6 +150,10 @@ function validateManuscript(spec, manuscript, kbSkills) {
   const blocks = manuscript.blocks || [];
   const tips = manuscript.tips || [];
   const sourceText = combinedSourceText(manuscript);
+  const openerText = [
+    manuscript.opener?.title,
+    manuscript.opener?.summary,
+  ].filter(Boolean).join(' ');
 
   assert(manuscript.patch === EXPECTED_PATCH, `${prefix}: patch must be ${EXPECTED_PATCH}`);
   assert(manuscript.researchedAt, `${prefix}: researchedAt is missing`);
@@ -104,6 +162,8 @@ function validateManuscript(spec, manuscript, kbSkills) {
   assert(manuscript.graphCenterSkillId, `${prefix}: graphCenterSkillId is missing`);
   assert(sources.length >= MINIMUMS.sources, `${prefix}: needs at least ${MINIMUMS.sources} sources`);
   assert(openerSteps.length >= MINIMUMS.openerSteps, `${prefix}: needs at least ${MINIMUMS.openerSteps} combat-flow steps`);
+  assert(OPENER_FLOW_PATTERN.test(openerText), `${prefix}: opener must be framed as a combat-flow chart`);
+  assert(!LIST_LIKE_OPENER_PATTERN.test(openerText), `${prefix}: opener must not be framed as a list/rail`);
   assert(priority.length >= MINIMUMS.priorityItems, `${prefix}: needs at least ${MINIMUMS.priorityItems} priority items`);
   assert(evidence.length >= MINIMUMS.evidenceItems, `${prefix}: needs at least ${MINIMUMS.evidenceItems} evidence notes`);
   assert(blocks.length >= MINIMUMS.blockItems, `${prefix}: needs at least ${MINIMUMS.blockItems} narrative blocks`);
@@ -129,6 +189,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   });
 
   sources.forEach((source, index) => validateSource(spec, source, index));
+  validateSourceCoverage(spec, manuscript);
   validateSkillReferences(spec, manuscript, kbSkills);
 }
 
