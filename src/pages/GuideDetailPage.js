@@ -180,6 +180,9 @@ function displayGuideText(value) {
     .replace(/\bFlourish\b/g, '번성')
     .replace(/\bCommon\b/g, '공용')
     .replace(/번성하는성장물/g, '번성하는 성장물')
+    .replace(/\bSpellslinger\b/g, '주문술사')
+    .replace(/\bSunfury\b/g, '성난태양')
+    .replace(/\bFrostfire\b/g, '서리불꽃')
     .replace(/\bVoidweaver\b/g, '공허술사')
     .replace(/\bOracle\b/g, '예언자');
 }
@@ -1868,7 +1871,7 @@ function getInlineChartPlan(guide, data) {
       {
         label: '보주 재충전',
         skill: findSkillByNames(data, ['비전 보주']),
-        note: '0~2충전에서 충전물과 Spellslinger 쇄편 루프를 복구합니다.',
+        note: '0~2충전에서 충전물과 주문술사 쇄편 루프를 복구합니다.',
         segments: [[10, 10], [40, 10], [70, 10]],
       },
       {
@@ -4385,7 +4388,7 @@ function getUptimeRows(guide, data) {
       {
         label: '소비 스킬',
         skill: findSkillByNames(data, ['얼음창']),
-        note: 'Spellslinger 기준 6중첩 이상 또는 서리의 손가락을 소비합니다.',
+        note: '주문술사 기준 6중첩 이상 또는 서리의 손가락을 소비합니다.',
         segments: [[10, 8], [24, 8], [44, 8], [62, 8], [82, 8]],
       },
       {
