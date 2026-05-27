@@ -33,6 +33,7 @@ function validatePackageScripts() {
   assert(scripts['validate:guide-copy']?.includes('validate-guide-copy.js'), 'validate:guide-copy is missing');
   assert(scripts['validate:guide-manuscripts']?.includes('validate-guide-manuscripts.js'), 'validate:guide-manuscripts is missing');
   assert(scripts['validate:guide-charts']?.includes('validate-guide-charts.js'), 'validate:guide-charts is missing');
+  assert(scripts['validate:guide-tooltips']?.includes('validate-guide-tooltips.js'), 'validate:guide-tooltips is missing');
   assert(scripts['validate:kb-tooltips']?.includes('validate-kb-official-tooltips.js'), 'validate:kb-tooltips is missing');
   assert(prebuild.includes('validate:generated-data'), 'prebuild must validate generated data');
   assert(prebuild.includes('validate:pipeline'), 'prebuild must validate pipeline structure');
@@ -40,6 +41,7 @@ function validatePackageScripts() {
   assert(prebuild.includes('validate:guide-copy'), 'prebuild must validate guide copy terms');
   assert(prebuild.includes('validate:guide-manuscripts'), 'prebuild must validate guide manuscript coverage');
   assert(prebuild.includes('validate:guide-charts'), 'prebuild must validate guide chart coverage');
+  assert(prebuild.includes('validate:guide-tooltips'), 'prebuild must validate guide tooltip rendering coverage');
   assert(prebuild.includes('validate:kb-tooltips'), 'prebuild must validate KB tooltip/icon data');
   assert(prebuild.includes('validate-translations.js'), 'prebuild must run translation validation');
 }
