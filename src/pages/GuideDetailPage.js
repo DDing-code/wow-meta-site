@@ -3237,6 +3237,71 @@ function getUptimeRows(guide, data) {
     ];
   }
 
+  if (guide.id === 'druid-restoration') {
+    return [
+      {
+        label: '유지 기반',
+        skill: findSkillByNames(data, ['피어나는 생명']),
+        note: '피어나는 생명은 탱커나 중심 대상에 남아 있어야 상록숲, 꽃피우기 이동, 후속 복구 판단이 안정됩니다.',
+        segments: [[0, 96]],
+      },
+      {
+        label: '위치 기반',
+        skill: findSkillByNames(data, ['꽃피우기']),
+        note: '레이드 지정 뭉침 위치나 쐐기 탱커 고정 위치에 깔려야 이후 광역 회복의 바닥이 생깁니다.',
+        segments: [[2, 34], [42, 34], [78, 18]],
+      },
+      {
+        label: '피해 전 예열',
+        skill: findSkillByNames(data, ['회복']),
+        note: '피해 10~12초 전부터 넓게 깔아 풍요 중첩과 재생 회수 기반을 만듭니다.',
+        segments: [[8, 24], [48, 24], [78, 14]],
+      },
+      {
+        label: '중심 연결',
+        skill: findSkillByNames(data, ['신속한 치유']),
+        note: '숲의 영혼, 대드루이드의 힘, 신록 주입, 숲 수호자 발동이 갈라지는 중심 버튼입니다.',
+        segments: [[24, 8], [56, 8], [86, 8]],
+      },
+      {
+        label: '광역 확장',
+        skill: findSkillByNames(data, ['급속 성장']),
+        note: '실제 광역 피해가 시작될 때 들어가야 숲 수호자 발동과 회복 네트워크가 같이 커집니다.',
+        segments: [[28, 9], [60, 9], [90, 7]],
+      },
+      {
+        label: '큰 회복 창',
+        skill: findSkillByNames(data, ['평온']),
+        note: '예열된 지속 치유가 깔린 뒤 배정 피해에 맞춰야 번성 효과로 시간을 벌 수 있습니다.',
+        segments: [[36, 16], [82, 14]],
+      },
+      {
+        label: '대체 큰 창',
+        skill: findSkillByNames(data, ['영혼 소집']),
+        note: '치유 목적이면 시전자 형태에서 실제 피해와 겹치게 쓰고, 숲의 수호자 분기에서는 발동 수를 같이 봅니다.',
+        segments: [[34, 14], [76, 14]],
+      },
+      {
+        label: '잔여 복구',
+        skill: findSkillByNames(data, ['재생']),
+        note: '풍요가 높을 때 남은 체력을 싸게 정리하는 출구입니다. 낮은 풍요 상태의 연속 시전은 마나 손실입니다.',
+        segments: [[40, 10], [66, 10], [92, 6]],
+      },
+      {
+        label: '단일 급사 대응',
+        skill: findSkillByNames(data, ['무쇠껍질', '자연의 신속함']),
+        note: '탱커나 위험 대상이 죽는 구간에는 광역 회복보다 외생기와 즉시 재생 판단이 먼저입니다.',
+        segments: [[18, 8], [52, 8], [80, 8]],
+      },
+      {
+        label: '쐐기 유틸',
+        skill: findSkillByNames(data, ['자연의 치유력', '쇄도의 포효']),
+        note: '해제와 이동 보조는 회복량으로 덮기 전에 피해 자체를 줄이는 버튼입니다.',
+        segments: [[14, 6], [44, 6], [70, 6], [88, 6]],
+      },
+    ];
+  }
+
   if (guide.id === 'shaman-elemental') {
     return [
       {
