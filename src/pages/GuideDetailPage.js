@@ -2310,7 +2310,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               <FieldGuideList>
                 {manuscript.playstyle.map(item => (
                   <li key={`${item.label}-${item.text}`}>
-                    <span>{item.label}</span>
+                    <span>{renderGuideText(item.label, inlineTerms)}</span>
                     <p>{renderGuideText(item.text, inlineTerms)}</p>
                   </li>
                 ))}
