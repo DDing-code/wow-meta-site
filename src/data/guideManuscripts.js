@@ -273,16 +273,16 @@ export const guideManuscripts = {
     researchedAt: '2026-05-27',
     status: '심화 가이드',
     graphCenterSkillId: '263642',
-    sourceStatus: 'Blizzard 공식 12.0.5 노트, Wowhead, Icy Veins, Method, Archon 레이드/쐐기 로그 집계, Wowhead 한국어 툴팁 API, The Fel Hammer 공개 Discord 경로 확인.',
+    sourceStatus: 'Blizzard 공식 12.0.5 노트, Wowhead, Icy Veins, Archon 레이드/쐐기 로그 집계, Wowhead 한국어 툴팁 API, The Fel Hammer 공개 Discord 경로 확인.',
     summary:
       '복수 악마사냥꾼은 맞은 뒤 회복하는 탱커가 아니라, 들어올 피해를 악마 쐐기, 불타는 낙인, 지옥 황폐, 탈태로 먼저 배정하고 영혼 파편을 영혼 폭탄/영혼 베어내기/영혼 방벽으로 전환해 생존과 위협을 동시에 만드는 탱커입니다. 12.0.5 기준 Wowhead, Icy Veins, Archon 로그 집계는 궤멸자를 기본값으로 두며, 알드라치 파괴자는 파괴자의 글레이브와 파괴자의 징표가 의미 있는 우선순위 대상/깔때기 전투에서 분기로 읽어야 합니다.',
     sourceNote:
-      '탱커 가이드는 고정 공격 순서가 아니라 피해 예측, 방어기 배정, 영혼 파편 경제, 던전 제어 타임라인 순서로 작성했습니다. 스킬명은 Wowhead 한국어 툴팁 API와 KB 명칭을 다시 대조했고, 운용 판단은 Blizzard 12.0.5 공식 노트, Wowhead 2026-04-12 복수 운용 가이드, Icy Veins 2026-05-19 복수 운용/개요, Method 2026-04-25 Meyra 가이드, Archon 2026-05-27(KST) 최근 14일 레이드/쐐기 고단 로그, The Fel Hammer 공개 Discord 경로를 교차 확인했습니다. Archon은 Mythic Raid 6,782 parses에서 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 Spec & Hero 5.9%, 99.1k DPS를, Mythic+ High Keys 3,793 parses에서 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 Spec & Hero 24.1%, Keystone +21, 113.3k DPS를 표시합니다. The Fel Hammer는 Wowhead 공개 Discord 목록과 Method/Icy Veins 작성자 공개 연락 경로로 확인하되, 로그인/가입이 필요한 자료는 직접 인용하지 않습니다.',
+      '탱커 가이드는 고정 공격 순서가 아니라 피해 예측, 방어기 배정, 영혼 파편 경제, 던전 제어 타임라인 순서로 작성했습니다. 스킬명은 Wowhead 한국어 툴팁 API와 KB 명칭을 다시 대조했고, 운용 판단은 Blizzard 12.0.5 공식 노트, Wowhead 2026-04-12 복수 운용 가이드, Icy Veins 2026-05-19 복수 운용/개요, Archon 2026-05-27(KST) 최근 14일 레이드/쐐기 고단 로그, The Fel Hammer 공개 Discord 경로를 교차 확인했습니다. Blizzard 한국어 노트는 영혼의 향연 즉시 회복, 고삐 풀린 분노 지속시간, 균열 재사용 대기시간, 궤멸자 천신의 메아리 변경을 명시합니다. Archon은 신화 레이드 6,867 표본과 쐐기 고단 3,808 표본 모두에서 궤멸자를 99%대 기본값으로 보여 줍니다. The Fel Hammer는 Wowhead 공개 Discord 목록의 Demon Hunter 항목으로 공개 진입 경로만 남기고, 로그인/가입이 필요한 자료는 직접 인용하지 않습니다.',
     sources: [
       {
         tier: 'S',
         label: 'Blizzard 12.0.5 콘텐츠 업데이트 노트',
-        url: 'https://news.blizzard.com/en-us/article/24271855/12-0-5-content-update-notes',
+        url: 'https://news.blizzard.com/ko-kr/article/24271855/12-0-5',
         updated: '2026-04-21 / 2026-05-27 대조',
         note: '패치 기준과 악마사냥꾼 항목 확인',
       },
@@ -298,7 +298,7 @@ export const guideManuscripts = {
         label: 'Wowhead 복수 악마사냥꾼 개요',
         url: 'https://www.wowhead.com/guide/classes/demon-hunter/vengeance/overview-pve-tank',
         updated: '2026-03-12 / 2026-05-27 대조',
-        note: '전문화 역할, 자가 회복, 기동성, 인장 제어, Midnight 구조 확인',
+        note: '전문화 역할, 자가 회복, 기동성, 인장 제어, 한밤 구조 확인',
       },
       {
         tier: 'A',
@@ -319,21 +319,14 @@ export const guideManuscripts = {
         label: 'Archon 복수 악마사냥꾼 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/talents/mythic/all-bosses',
         updated: '2026-05-27 대조',
-        note: '최근 14일 Mythic Raid 상위 50% 6,782 parses, 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 Spec & Hero 5.9%, 99.1k DPS 확인',
+        note: '최근 14일 신화 레이드 상위 50% 6,867 표본, 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 전문화+영웅 빌드 6.0%, 100.0k DPS 확인',
       },
       {
         tier: 'A',
         label: 'Archon 복수 악마사냥꾼 쐐기 고단 특성',
         url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/talents/high-keys/all-dungeons/this-week',
         updated: '2026-05-27 대조',
-        note: '최근 14일 쐐기 고단 상위 5% 3,793 parses, 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 Spec & Hero 24.1%, Keystone +21, 113.3k DPS 확인',
-      },
-      {
-        tier: 'B',
-        label: 'Method Vengeance Demon Hunter Guide',
-        url: 'https://www.method.gg/guides/vengeance-demon-hunter',
-        updated: '2026-04-25 / 2026-05-27 대조',
-        note: 'Meyra 작성 가이드. 12.0.5 균열 재사용 대기시간 완화, 궤멸자/알드라치 레이드·쐐기 선택지, The Fel Hammer 작성자 배경 확인',
+        note: '최근 14일 쐐기 고단 상위 5% 3,808 표본, 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 전문화+영웅 빌드 24.0%, 쐐기돌 +21, 113.3k DPS 확인',
       },
       {
         tier: 'S',
@@ -355,7 +348,7 @@ export const guideManuscripts = {
       'Wowhead는 탈태를 이미 다른 발동 탈태가 5초 이상 남은 상태에서 덮어쓰지 말라고 경고하고, 큰 탱버스터가 곧 오면 최대 10초 정도 보류할 수 있다고 설명합니다.',
       'Icy Veins는 복수의 핵심 목표를 영혼 파편 생성과 영혼 폭탄/영혼 베어내기 소비로 설명하고, 궤멸자에서는 균열을 통해 공허내림을 만들며 3중첩 소비로 피해를 방출한다고 설명합니다.',
       'Icy Veins 개요는 복수가 쐐기에서 침묵의 인장, 불행의 인장, 혼돈의 회오리로 강한 제어를 제공하지만, 레이드 유틸리티는 상대적으로 제한적이라고 설명합니다.',
-      'Archon 2026-05-27(KST) 대조 기준 레이드는 6,782 parses에서 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 Spec & Hero 5.9%, 99.1k DPS이고, 쐐기 고단 상위 5%는 3,793 parses에서 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 Spec & Hero 24.1%, Keystone +21, 113.3k DPS입니다.',
+      'Archon 2026-05-27(KST) 대조 기준 신화 레이드는 6,867 표본에서 궤멸자 99.8%, 알드라치 파괴자 0.1%, 추천 전문화+영웅 빌드 6.0%, 100.0k DPS이고, 쐐기 고단 상위 5%는 3,808 표본에서 궤멸자 99.7%, 알드라치 파괴자 0.2%, 추천 전문화+영웅 빌드 24.0%, 쐐기돌 +21, 113.3k DPS입니다.',
       'KB에는 균열, 영혼 폭탄, 영혼 베어내기, 악마 쐐기, 불타는 낙인, 지옥 황폐, 탈태, 인장류, 영혼 방벽, 공허내림 시너지가 연결되어 있습니다.',
     ],
     caveats: [
@@ -368,7 +361,7 @@ export const guideManuscripts = {
         title: '1. 핵심 결론',
         paragraphs: [
           '복수 악마사냥꾼의 핵심은 “피가 빠지면 회복한다”가 아니라 “맞기 전에 어떤 층으로 받을지 정한다”입니다. 기본 물리 피해는 악마 쐐기, 특정 위험 대상은 불타는 낙인, 체력과 광역 위협을 동시에 봐야 하는 구간은 지옥 황폐, 정말 큰 구간은 탈태로 받습니다. 영혼 파편은 그 위에 깔리는 회복·피해·방어 보조 자원입니다.',
-          '12.0.5 기준 로그와 가이드의 기본값은 궤멸자입니다. 2026-05-27 대조 기준 Archon 레이드는 6,782 parses에서 궤멸자 99.8%, 알드라치 파괴자 0.1%이고, 쐐기 고단 상위 5%는 3,793 parses에서 궤멸자 99.7%, 알드라치 파괴자 0.2%입니다. Icy Veins도 단일/광역 기본 추천으로 궤멸자를 둡니다. Method는 알드라치도 레이드와 다중 쫄 전투에서 유효한 분기라고 보지만, 기본 설명은 현재 로그와 안정성을 기준으로 궤멸자에 둡니다.',
+          '12.0.5 기준 로그와 가이드의 기본값은 궤멸자입니다. 2026-05-27 대조 기준 Archon 신화 레이드는 6,867 표본에서 궤멸자 99.8%, 알드라치 파괴자 0.1%이고, 쐐기 고단 상위 5%는 3,808 표본에서 궤멸자 99.7%, 알드라치 파괴자 0.2%입니다. Icy Veins도 단일/광역 기본 추천으로 궤멸자를 둡니다. 알드라치는 우선순위 대상과 깔때기 딜을 살릴 수 있는 전투의 분기이지만, 기본 설명은 현재 로그와 탱킹 안정성을 기준으로 궤멸자에 둡니다.',
           '복수 페이지는 공격 순서표보다 방어 흐름과 자원 흐름이 중요합니다. 균열을 쉬게 두지 않고 영혼 파편을 만들며, 영혼 폭탄과 영혼 베어내기 중 무엇으로 소비할지 결정하고, 인장류를 던전 위험 주문과 맞추는 구조가 실제 실력 차이를 만듭니다.',
         ],
         bullets: [
