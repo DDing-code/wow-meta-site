@@ -2098,12 +2098,14 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
   const rawSteps = manuscript?.opener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
   return rawSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
+    const stage = getFlowPhaseLabel(guide, index, rawSteps.length);
     const phase = step.phase || getFlowPhaseLabel(guide, index, rawSteps.length);
     return {
       key: `${step.skillId || 'opener'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}단계`,
       note: step.note || (skill ? skillName(skill) : ''),
+      stage,
       phase,
       trigger: getFlowTriggerLabel(guide, phase, index, rawSteps.length, step),
     };
@@ -2173,6 +2175,7 @@ function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
     skill: skillTerm?.skill || null,
     label: hasExplicitLabel ? label : `${index + 1}단계`,
     note: hasExplicitLabel ? rest.join(':').trim() : text,
+    stage: phase,
     phase,
     trigger: getFlowTriggerLabel(guide, phase, index, total),
   };
@@ -2183,7 +2186,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
     ? steps
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
   const chartLabel = getFlowChartTitle(guide);
-  const phaseLegend = [...new Set(flowItems.map(item => item.phase).filter(Boolean))];
+  const stageLegend = [...new Set(flowItems.map(item => item.stage || item.phase).filter(Boolean))];
   const mapCopy = getFlowMapCopy(guide);
 
   if (flowItems.length) {
@@ -2199,9 +2202,9 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
             <span key={item}>{item}</span>
           ))}
         </OpenerFlowKey>
-        {phaseLegend.length > 1 && (
+        {stageLegend.length > 1 && (
           <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
-            {phaseLegend.map(phase => (
+            {stageLegend.map(phase => (
               <span key={phase}>{phase}</span>
             ))}
           </OpenerFlowPhaseLegend>
@@ -2978,12 +2981,14 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
   const openerSteps = manualOpener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
   const manualSteps = openerSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
+    const stage = getFlowPhaseLabel(guide, index, openerSteps.length);
     const phase = step.phase || getFlowPhaseLabel(guide, index, openerSteps.length);
     return {
       key: `${step.skillId || 'manual'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}순위`,
       note: step.note || (skill ? skillName(skill) : '공략 단계'),
+      stage,
       phase,
       trigger: getFlowTriggerLabel(guide, phase, index, openerSteps.length, step),
     };
@@ -2997,6 +3002,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
         skill,
         label: profile.steps[index] || `${index + 1}순위`,
         note: skillName(skill),
+        stage: phase,
         phase,
         trigger: getFlowTriggerLabel(guide, phase, index, Math.max(skills.length, 1)),
       };
