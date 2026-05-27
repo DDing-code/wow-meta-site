@@ -4271,11 +4271,11 @@ export const guideManuscripts = {
     status: '심화 가이드',
     graphCenterSkillId: '384452',
     sourceStatus:
-      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 12.0.5 가이드, Archon/WCL 로그 집계, Altered Time 공개 Discord 경로를 수동 대조했습니다. Archon은 신화 레이드 2,433 표본, +7 이상 쐐기 16,459 표본, 고단 쐐기 856 표본 기준으로 확인했습니다.',
+      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-23 개요와 2026-04-20 딜사이클, Archon/WCL 로그 집계, Altered Time 공개 Discord 경로를 수동 대조했습니다. Archon은 신화 레이드 2,433표본, 7단 이상 전체 쐐기 16,459표본, 고단 쐐기 856표본 기준으로 확인했습니다.',
     summary:
       '비전 마법사는 비전 연사를 중심으로 비전 쇄도, 비전의 여파, 비전 보주, 비전 탄막을 정렬하는 90초 주기형 원거리 딜러입니다. 마나는 단순 유지 자원이 아니라 폭딜 창을 여는 연료이고, 비전 탄막은 마무리 피해이면서 동시에 마나와 비전 충전물을 다시 정렬하는 리셋 버튼입니다.',
     sourceNote:
-      '스킬명은 KB에 저장된 ko.wowhead.com 공식 한국어 툴팁 명칭을 사용했습니다. 영웅 특성 트리명은 Wowhead 한국어 페이지와 KB가 Spellslinger/Sunfury 영문 라벨을 유지하므로 임의 번역하지 않습니다. 운용 판단은 Blizzard 12.0.5 패치 노트, Wowhead 2026-03-04 개요·2026-02-25 능력/특성·2026-04-24 딜사이클, Icy Veins 12.0.5 비전 가이드/딜사이클, Archon 2026-05-27(KST) 확인 기준 레이드 Spellslinger 99.8% / Sunfury 0.1%, +7 이상 쐐기 Spellslinger 99.0% / Sunfury 0.9%, 고단 쐐기 Spellslinger 100.0%, Altered Time 공개 Discord 경로를 교차 확인했습니다. Icy Veins의 2026-05-26/27 주간 초기화 튜닝은 현재 로그 반영 전 주의사항으로만 다루며, Discord 내부 채널 원문은 직접 인용하지 않습니다.',
+      '스킬명은 KB에 저장된 ko.wowhead.com 공식 한국어 툴팁 명칭을 사용했습니다. 영웅 특성 트리명은 Wowhead 한국어 페이지와 KB가 Spellslinger/Sunfury 영문 라벨을 유지하므로 임의 번역하지 않습니다. 운용 판단은 Blizzard 12.0.5 패치 노트, Wowhead 2026-03-04 개요·2026-02-25 능력/특성·2026-04-24 딜사이클, Icy Veins 2026-05-23 비전 가이드와 2026-04-20 딜사이클, Archon 2026-05-27(KST) 확인 기준 레이드 Spellslinger 99.7% / Sunfury 0.2%, 7단 이상 전체 쐐기 Spellslinger 99.2% / Sunfury 0.7%, 고단 쐐기 Spellslinger 100.0%, Altered Time 공개 Discord 경로를 교차 확인했습니다. Icy Veins의 2026-05-26/27 주간 초기화 튜닝은 현재 로그 반영 전 주의사항으로만 다루며, Discord 내부 채널 원문은 직접 인용하지 않습니다.',
     sources: [
       {
         tier: 'S',
@@ -4309,14 +4309,14 @@ export const guideManuscripts = {
         tier: 'A',
         label: 'Icy Veins 비전 마법사 딜러 가이드',
         url: 'https://www.icy-veins.com/wow/arcane-mage-pve-dps-guide',
-        updated: '12.0.5 문서 / 2026-05-27 확인',
+        updated: '2026-05-23 / 2026-05-27 확인',
         note: '12.0.5 변경점, 2026-05-26/27 예정 튜닝 메모, Midnight 재설계, 마나 관리 확인',
       },
       {
         tier: 'A',
         label: 'Icy Veins 비전 딜사이클/쿨다운',
         url: 'https://www.icy-veins.com/wow/arcane-mage-pve-dps-rotation-cooldowns-abilities',
-        updated: '12.0.5 문서 / 2026-05-27 확인',
+        updated: '2026-04-20 / 2026-05-27 확인',
         note: '비전 연사 예열, 비전 쇄도/비전의 여파 타이밍, 환기와 비전 탄막 복구 조건 확인',
       },
       {
@@ -4324,21 +4324,21 @@ export const guideManuscripts = {
         label: 'Archon 비전 마법사 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/arcane/mage/raid/talents/mythic/all-bosses',
         updated: '2026-05-27 확인',
-        note: '최근 14일 신화 레이드 전체 보스 상위 50% 2,433 표본. Spellslinger 99.8%, Sunfury 0.1%, 추천 전문화+영웅 빌드 64.4%, 185.6k DPS 확인',
+        note: '최근 14일 신화 레이드 전체 보스 상위 50% 2,433표본. Spellslinger 99.7%, Sunfury 0.2%, 추천 전문화+영웅 빌드 64.2%, 163.6k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon 비전 마법사 쐐기 +7 이상 특성',
+        label: 'Archon 비전 마법사 7단 이상 전체 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/talents/10/all-dungeons/this-week',
         updated: '2026-05-27 확인',
-        note: '최근 14일 +7~+23 전체 던전 16,459 표본. Spellslinger 99.0%, Sunfury 0.9%, 추천 전문화+영웅 빌드 44.7%, 쐐기돌 +22, 152.0k DPS 확인',
+        note: '최근 14일 7단 이상 전체 쐐기(확인 시점 7~23단) 16,459표본. Spellslinger 99.2%, Sunfury 0.7%, 추천 전문화+영웅 빌드 53.2%, 쐐기돌 21단, 151.8k DPS 확인',
       },
       {
         tier: 'A',
         label: 'Archon 비전 마법사 고단 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/talents/high-keys/all-dungeons/this-week',
         updated: '2026-05-27 확인',
-        note: '최근 14일 상위 5% 고단 쐐기 856 표본. Spellslinger 100.0%, 추천 전문화+영웅 빌드 55.3%, 쐐기돌 +21, 170.3k DPS 확인',
+        note: '최근 14일 상위 5% 고단 쐐기 856표본. Spellslinger 100.0%, 추천 전문화+영웅 빌드 55.3%, 쐐기돌 21단, 170.3k DPS 확인',
       },
       {
         tier: 'B',
@@ -4354,7 +4354,7 @@ export const guideManuscripts = {
       'Icy Veins는 비전 쇄도 직전 비전 연사 예열, 비전 쇄도 후 비전의 여파, 45초 뒤 다음 비전의 여파를 지연하지 않는 구조를 강조합니다.',
       'Blizzard 12.0.5 노트와 Icy Veins 변경 이력은 비전 파동이 비전 작렬처럼 비전 충전물에 따라 시전 시간이 줄어드는 형태로 변경되었다고 설명합니다.',
       'Icy Veins는 2026-05-23 본문 갱신에서 2026-05-26/27 주간 초기화 튜닝을 따로 다루지만, 현재 Archon 로그 집계에는 그 튜닝 이후 결론이 아직 충분히 반영되지 않았습니다.',
-      'Archon 2026-05-27 확인 기준 최근 14일 신화 레이드 전체 보스는 2,433 표본에서 Spellslinger 99.8%, Sunfury 0.1%, +7 이상 쐐기는 16,459 표본에서 Spellslinger 99.0%, Sunfury 0.9%, 고단 쐐기 상위 5%는 856 표본에서 Spellslinger 100.0%로 집계되어 현재 기본 영웅 특성은 Spellslinger로 둡니다.',
+      'Archon 2026-05-27 확인 기준 최근 14일 신화 레이드 전체 보스는 2,433표본에서 Spellslinger 99.7%, Sunfury 0.2%, 7단 이상 전체 쐐기는 16,459표본에서 Spellslinger 99.2%, Sunfury 0.7%, 고단 쐐기 상위 5%는 856표본에서 Spellslinger 100.0%로 집계되어 현재 기본 영웅 특성은 Spellslinger로 둡니다.',
       'KB에는 비전 연사, 비전 탄막, 비전 보주, 비전 쇄도, 비전의 여파, 환기, 신비한 화살, 번뜩임, 비전 파동이 원자 노트와 시너지 노트로 연결되어 있습니다.',
     ],
     caveats: [
@@ -4370,7 +4370,7 @@ export const guideManuscripts = {
         title: '1. 핵심 결론',
         paragraphs: [
           '12.0.5 비전 마법사는 한 줄로 말하면 비전 연사를 준비해 비전 탄막을 강하게 만들고, 그 소비를 비전 쇄도와 비전의 여파 시간표 안에 넣는 전문화입니다. 예전처럼 “마나를 아끼며 비전 작렬을 몇 번 누른다”로 이해하면 현재 구조를 놓칩니다. 마나는 여전히 중요하지만, 실제 판단의 중심은 비전 연사, 비전 충전물, 비전 탄막 소비 품질, 그리고 45초/90초 창의 정렬입니다.',
-          '현재 로그 기준 기본 영웅 특성은 Spellslinger입니다. Archon의 2026-05-27 확인 수치에서는 신화 레이드 2,433 표본, +7 이상 쐐기 16,459 표본, 고단 쐐기 856 표본 모두 Spellslinger가 압도적으로 높게 쓰였고, Wowhead와 Icy Veins의 딜사이클도 Spellslinger 기준 설명이 가장 안정적입니다. 다만 Icy Veins가 2026-05-26/27 주간 초기화 튜닝을 따로 설명하므로, Sunfury 단일 대상 격차는 이후 로그로 다시 확인해야 합니다.',
+          '현재 로그 기준 기본 영웅 특성은 Spellslinger입니다. Archon의 2026-05-27 확인 수치에서는 신화 레이드 2,433표본, 7단 이상 전체 쐐기 16,459표본, 고단 쐐기 856표본 모두 Spellslinger가 압도적으로 높게 쓰였고, Wowhead와 Icy Veins의 딜사이클도 Spellslinger 기준 설명이 가장 안정적입니다. 다만 Icy Veins가 2026-05-26/27 주간 초기화 튜닝을 따로 설명하므로, Sunfury 단일 대상 격차는 이후 로그로 다시 확인해야 합니다.',
           '비전의 실전 난점은 버튼 수가 많아서가 아니라, 같은 버튼의 의미가 상황마다 달라진다는 데 있습니다. 비전 탄막은 마무리기이면서 비전 연사 소비기이고, 동시에 마나가 무너졌을 때 루프를 다시 여는 브레이크입니다. 비전 보주는 단순 충전물 생성기가 아니라 Spellslinger의 쇄편 흐름을 되살리는 재시동 버튼입니다. 신비한 화살은 주력 난사가 아니라 번뜩임과 투사체 특성 조건을 처리하는 발동 소비입니다.',
         ],
         bullets: [
@@ -4488,7 +4488,7 @@ export const guideManuscripts = {
         bullets: [
           'Spellslinger: 비전 보주, 쇄편, 비전 연사 회복이 중심입니다.',
           'Sunfury: 비전 쇄도 종료 후 비전의 영혼 창을 별도로 봅니다.',
-          '현재 로그: Archon 2026-05-27 확인 기준 Spellslinger가 레이드, +7 이상 쐐기, 고단 쐐기 모두 압도적입니다.',
+          '현재 로그: Archon 2026-05-27 확인 기준 Spellslinger가 레이드, 7단 이상 전체 쐐기, 고단 쐐기 모두 압도적입니다.',
           '페이지 처리: 기본 설명은 Spellslinger, 예외 박스와 그래프 노드는 Sunfury로 분리합니다.',
         ],
       },
@@ -7749,77 +7749,77 @@ export const guideManuscripts = {
     sources: [
       {
         tier: 'S',
-        label: 'Blizzard 12.0.5 Content Update Notes',
+        label: 'Blizzard 12.0.5 콘텐츠 업데이트 노트',
         url: 'https://www.wowhead.com/blue-tracker/news/us/12-0-5-content-update-notes-world-of-warcraft-blizzard-news-24271855',
         updated: '2026-04-22',
         note: '전사 분쇄 반경, 방어 전사 거신 숙련된 일격 변경 확인',
       },
       {
         tier: 'S',
-        label: 'Blizzard Hotfixes May 22, 2026',
+        label: 'Blizzard 2026-05-22 긴급 수정',
         url: 'https://www.wowhead.com/blue-tracker/news/us/hotfixes-may-22-2026-world-of-warcraft-blizzard-news-24276957',
         updated: '2026-05-22',
         note: '2026-05-12 방어 전사 불길을 지나, 결사단원, 고통 감내 상향과 2026-05-05 산왕 피해 상향 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Protection Warrior Tank Guide',
+        label: 'Icy Veins 방어 전사 탱커 가이드',
         url: 'https://www.icy-veins.com/wow/protection-warrior-pve-tank-guide',
         updated: '2026-05-19 / 2026-05-27 대조',
         note: '방어 전사의 방패 기반 완화, 분노 생성/소비 구조, 탱커 역할 개요 확인. 작성자는 Skyhold Warrior Discord 이론공식/운영진 Mwahi로 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Protection Warrior Rotation',
+        label: 'Icy Veins 방어 전사 운용/쿨다운',
         url: 'https://www.icy-veins.com/wow/protection-warrior-pve-tank-rotation-cooldowns-abilities',
         updated: '2026-05-19 / 2026-05-27 대조',
         note: '방패 올리기 유효 유지율, 고통 감내 흡수층, 주문 시전/탱 교대 중 방패 올리기 지연 판단 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Protection Warrior Talents',
+        label: 'Icy Veins 방어 전사 특성',
         url: 'https://www.icy-veins.com/wow/protection-warrior-pve-tank-spec-builds-talents',
         updated: '2026-05-19 / 2026-05-27 대조',
         note: '참전과 묵직한 반격 선택, 산왕/거신 레이드와 쐐기 빌드 분기 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Protection Warrior Overview',
+        label: 'Wowhead 방어 전사 개요',
         url: 'https://www.wowhead.com/guide/classes/warrior/protection/overview-pve-tank',
         updated: '2026-02-26 / 2026-05-27 대조',
         note: '방어 전사의 방패/막기 정체성, 산왕과 거신 영웅 특성 차이 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Protection Warrior Rotation',
+        label: 'Wowhead 방어 전사 운용',
         url: 'https://www.wowhead.com/guide/classes/warrior/protection/rotation-cooldowns-pve-tank',
         updated: '2026-02-25 / 2026-05-27 대조',
         note: '방패 밀쳐내기 발동, 천둥벼락/분쇄, 복수, 고통 감내 과잉 분노 소비와 주요 쿨다운 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Protection Warrior Talents',
+        label: 'Wowhead 방어 전사 특성',
         url: 'https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank',
         updated: '2026-04-27 / 2026-05-27 대조',
         note: '산왕 레이드/쐐기 추천, 천둥벼락을 자주 쓰는 빌드 방향, 훼방의 외침/재집결의 함성 유틸 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Protection Warrior Raid Talents',
+        label: 'Archon 방어 전사 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/protection/warrior/raid/talents/mythic/all-bosses',
         updated: '2026-05-27 확인',
         note: '최근 14일 신화 레이드 19,709 표본 기반 산왕 98.6% 선택 경향 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Protection Warrior Mythic+ Talents',
+        label: 'Archon 방어 전사 7단 이상 전체 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/protection/warrior/mythic-plus/talents/10/all-dungeons/this-week',
         updated: '2026-05-27 확인',
         note: '쐐기 7단 이상 최근 14일 91,133 표본에서 산왕 97.1%, 거신 2.8% 선택 경향 확인',
       },
       {
         tier: 'B',
-        label: 'Wowhead Community Discord Servers - Skyhold',
+        label: 'Wowhead 직업 Discord 목록 - Skyhold',
         url: 'https://www.wowhead.com/discord-servers',
         updated: '2026-05-27 확인',
         note: '전사 직업 Discord 공개 경로가 Skyhold로 등재됨. 비공개 원문은 직접 인용하지 않음',
@@ -8633,7 +8633,7 @@ export const guideManuscripts = {
 
   'rogue-assassination': {
     patch: '12.0.5',
-    researchedAt: '2026-05-25',
+    researchedAt: '2026-05-27',
     status: '심화 가이드',
     graphCenterSkillId: '32645',
     sourceStatus:
@@ -8641,74 +8641,74 @@ export const guideManuscripts = {
     summary:
       '암살 도적은 목조르기와 파열을 유지하는 지속 피해 전문화로 보이지만, 실제 판단의 중심은 독살입니다. 독살은 마무리 일격이면서 독 발동 확률을 올리는 짧은 창이고, 그 창 안에 죽음표식, 왕의 파멸, 독칼, 부식성 분사, 불구대천, 운명의 손, 죽음추적자의 징표가 각각 다른 방식으로 붙습니다. 따라서 12.0.5 암살 가이드는 출혈 유지표가 아니라 독살을 중심 허브로 둔 출혈-독-쿨기-광역 전이 구조로 읽어야 합니다.',
     sourceNote:
-      'Wowhead와 Icy Veins는 모두 12.0.5 암살의 단일 우선순위를 목조르기, 파열, 소멸-목조르기, 죽음표식, 왕의 파멸, 독살의 흐름으로 설명합니다. Archon 2026-05-25 열람 기준 최근 14일 집계는 레이드에서 운명결속 99.9%, 쐐기 +7 이상에서 운명결속 98.2%를 보여 주므로, 본문은 운명의 손 루프를 기본값으로 두되 죽음추적자의 징표가 필요한 우선 대상 상황을 별도 장으로 분리합니다. Ravenholdt는 Wowhead가 안내하는 도적 직업 Discord 경로이며, 비공개 채널 원문은 직접 인용하지 않고 공개 안내와 주요 가이드 작성자 연결성만 보조 근거로 사용합니다.',
+      'Wowhead와 Icy Veins는 모두 12.0.5 암살의 단일 우선순위를 목조르기, 파열, 소멸-목조르기, 죽음표식, 왕의 파멸, 독살의 흐름으로 설명합니다. Archon 2026-05-27 열람 기준 최근 14일 집계는 레이드에서 운명결속 99.9%, 7단 이상 전체 쐐기에서 운명결속 98.2%를 보여 주므로, 본문은 운명의 손 루프를 기본값으로 두되 죽음추적자의 징표가 필요한 우선 대상 상황을 별도 장으로 분리합니다. Ravenholdt는 Wowhead가 안내하는 도적 직업 Discord 경로이며, 비공개 채널 원문은 직접 인용하지 않고 공개 안내와 주요 가이드 작성자 연결성만 보조 근거로 사용합니다.',
     sources: [
       {
         tier: 'S',
-        label: 'Blizzard 12.0.5 Notes via Wowhead Blue Tracker',
+        label: 'Blizzard 12.0.5 콘텐츠 업데이트 노트',
         url: 'https://www.wowhead.com/blue-tracker/news/us/12-0-5-content-update-notes-world-of-warcraft-blizzard-news-24271855',
         updated: '2026-04',
         note: '도적 신규 특성, 죽음추적자의 징표 갱신, 죽음표식 전이 관련 12.0.5 변경 확인',
       },
       {
         tier: 'S',
-        label: 'Wowhead Korean Tooltip API',
+        label: 'Wowhead 한국어 공식 툴팁',
         url: 'https://nether.wowhead.com/tooltip/spell/32645?locale=1',
         updated: '2026-05-25',
         note: '독살, 목조르기, 파열, 죽음표식, 왕의 파멸, 독칼, 부식성 분사 등 한국어 명칭과 아이콘 검증',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Assassination Rogue Rotation',
+        label: 'Icy Veins 암살 도적 운용/쿨다운',
         url: 'https://www.icy-veins.com/wow/assassination-rogue-pve-dps-rotation-cooldowns-abilities',
         updated: '2026-04-20',
         note: '죽음표식 2분, 왕의 파멸 1분, 죽음표식-왕의 파멸 독 중첩 상호작용, 독살 유지율 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Assassination Rogue Talents',
+        label: 'Icy Veins 암살 도적 특성',
         url: 'https://www.icy-veins.com/wow/assassination-rogue-pve-dps-spec-builds-talents',
         updated: '2026-05-19',
         note: '죽음추적자 우선 대상 구조와 운명결속 편의성/광역 경쟁력 교차 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Assassination Rogue Rotation',
+        label: 'Wowhead 암살 도적 운용',
         url: 'https://www.wowhead.com/guide/classes/rogue/assassination/rotation-cooldowns-pve-dps',
         updated: '2026-05-05',
         note: '단일/광역 우선순위, 오프닝, 죽음표식 효과, 왕의 파멸 중첩, 불구대천 에너지 회수 확인',
       },
       {
         tier: 'A',
-        label: 'Wowhead Assassination Rogue Mythic+ Guide',
+        label: 'Wowhead 암살 도적 쐐기 가이드',
         url: 'https://www.wowhead.com/guide/classes/rogue/assassination/mythic-plus-dungeon-tips',
         updated: '2026-03-16',
         note: '쐐기에서 우선 대상 피해, 광역 출혈 전이, 도적 유틸리티 한계 확인',
       },
       {
         tier: 'A',
-        label: 'Icy Veins Assassination Rogue Mythic+ Tips',
+        label: 'Icy Veins 암살 도적 쐐기 팁',
         url: 'https://www.icy-veins.com/wow/assassination-rogue-pve-dps-mythic-plus-tips',
-        updated: '2026-05-19',
+        updated: '2026-05-19 / 2026-05-27 확인',
         note: '쐐기 다중 출혈, 부식성 분사 우선 대상 피해, 소멸-목조르기 침묵 운용 확인',
       },
       {
         tier: 'A',
         label: 'Archon 암살 도적 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/assassination/rogue/raid/talents/mythic/all-bosses',
-        updated: '2026-05-25',
-        note: '최근 14일 상위 50% 신화 레이드 5,861표본, 운명결속 99.9%, 추천 전문화+영웅 빌드 7.2% 확인',
+        updated: '2026-05-27',
+        note: '최근 14일 상위 50% 신화 레이드 5,864표본, 운명결속 99.9%, 죽음추적자 0.0%, 추천 전문화+영웅 빌드 7.1%, 173.2k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Assassination Rogue Mythic+ Talents',
+        label: 'Archon 암살 도적 7단 이상 전체 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/talents/10/all-dungeons/this-week',
-        updated: '2026-05-25',
-        note: '+7 이상 전체 던전 최근 14일 30,272표본, 운명결속 98.2%, 죽음추적자 1.7%, 추천 전문화+영웅 빌드 42.3% 확인',
+        updated: '2026-05-27',
+        note: '최근 14일 7단 이상 전체 쐐기(확인 시점 7~23단) 30,272표본, 운명결속 98.2%, 죽음추적자 1.7%, 추천 전문화+영웅 빌드 42.3%, 쐐기돌 22단, 173.2k DPS 확인',
       },
       {
         tier: 'B',
-        label: 'Wowhead Community Discord Servers - Ravenholdt',
+        label: 'Wowhead 직업 Discord 목록 - Ravenholdt',
         url: 'https://www.wowhead.com/discord-servers',
         updated: '2026-05-25',
         note: '도적 직업 Discord 공개 진입 경로 확인. 비공개 핀 글은 직접 인용하지 않고 보조 검증 경로로만 기록',
@@ -8717,7 +8717,7 @@ export const guideManuscripts = {
     evidence: [
       'Wowhead는 암살을 느린 빌드-소비 구조로 설명하면서, 목조르기와 파열 유지 뒤 죽음표식, 왕의 파멸, 독살 창을 정렬하라고 제시합니다.',
       'Icy Veins는 죽음표식이 출혈과 독 발동을 복제하고 왕의 파멸 중첩을 빠르게 올린다고 설명합니다. 따라서 큰 창의 실패 원인은 왕의 파멸 자체보다 독살 유지율과 근접 유지율입니다.',
-      'Archon 2026-05-25 수집 기준 레이드 운명결속 99.9%, 쐐기 운명결속 98.2%로 운명의 손 루프가 표준에 가깝지만, Icy Veins는 죽음추적자의 징표가 우선 대상 피해에 강하다고 따로 설명합니다.',
+      'Archon 2026-05-27 수집 기준 레이드 운명결속 99.9%, 7단 이상 전체 쐐기 운명결속 98.2%로 운명의 손 루프가 표준에 가깝지만, Icy Veins는 죽음추적자의 징표가 우선 대상 피해에 강하다고 따로 설명합니다.',
       'Wowhead 한국어 주문 페이지로 5938 독칼과 185565 독 칼을 구분했습니다. 독 증폭 창에서 쓰는 스킬은 5938 독칼이며, 185565 독 칼은 원거리 생성기라 본문 우선순위에서 분리합니다.',
       '쐐기 근거는 단순 전체 광역 피해가 아니라 우선 대상 피해와 출혈 전이입니다. Wowhead/Icy Veins 쐐기 문서 모두 부식성 분사와 소멸-목조르기 창을 별도 가치로 분리합니다.',
     ],
@@ -8725,7 +8725,7 @@ export const guideManuscripts = {
       'Ravenholdt는 공개 Discord 경로만 확인했습니다. 비공개 채널의 문장을 직접 근거처럼 인용하지 않고, Wowhead/Icy Veins/Archon과 일치하는 판단만 반영합니다.',
       '죽음추적자는 죽음추적자의 징표 관리가 실패하면 영웅 특성 가치가 크게 줄어듭니다. 대상 교체가 잦은 전투에서는 운명의 손을 기본값으로 설명합니다.',
       '불구대천은 독살을 계속 이어 붙이라는 단순 규칙이 아니라, 80% 에너지 회수 타이밍과 자원 과충전을 같이 보는 장치입니다. 이 문서의 독살 유지표는 100% 유지 명령이 아닙니다.',
-      'Archon 집계는 매일 바뀌므로 수치는 2026-05-25 수집 기준으로만 고정합니다.',
+      'Archon 집계는 매일 바뀌므로 수치는 2026-05-27 수집 기준으로만 고정합니다.',
     ],
     blocks: [
       {
@@ -8816,13 +8816,13 @@ export const guideManuscripts = {
       {
         title: '7. 운명결속은 현재 로그 기본값이다',
         paragraphs: [
-          'Archon 2026-05-25 기준 신화 레이드 전체 보스 상위 50% 집계에서 암살 도적은 5,861표본 중 운명결속이 99.9%로 표시됩니다. 쐐기 +7 이상 전체 던전 최근 14일 집계도 30,272표본에서 운명결속 98.2%, 죽음추적자 1.7%입니다. 이 수치는 운명의 손 루프를 기본 설명으로 놓을 강한 근거입니다.',
+          'Archon 2026-05-27 기준 신화 레이드 전체 보스 상위 50% 집계에서 암살 도적은 5,864표본 중 운명결속이 99.9%로 표시됩니다. 7단 이상 전체 쐐기 최근 14일 집계도 30,272표본에서 운명결속 98.2%, 죽음추적자 1.7%입니다. 이 수치는 운명의 손 루프를 기본 설명으로 놓을 강한 근거입니다.',
           '운명결속의 핵심은 운명의 손입니다. 마무리 일격이 운명결속 동전을 던지므로 독살은 피해 버튼이면서 동전 생성 버튼입니다. 행운 주화가 있는 동안에는 민첩성과 동전 효과가 커지므로, 독살의 간격과 연계 점수 품질이 운명결속의 체감 난이도를 만듭니다.',
           '운명과의 타협, 운명의 낙인, 사각 지대는 모두 독살로 이어지는 연계 점수 공급망에 속합니다. 이 계열을 읽을 때는 “추가 점수가 얼마나 생겼는가”보다 “그 점수가 죽음표식, 왕의 파멸, 행운 주화, 불구대천 창 안의 독살로 바뀌었는가”가 더 중요합니다.',
         ],
         bullets: [
-          '레이드 기준: 2026-05-25 Archon 신화 전체 보스 5,861표본, 운명결속 99.9%, 추천 전문화+영웅 빌드 7.2%.',
-          '쐐기 기준: 2026-05-25 Archon +7 이상 전체 던전 30,272표본, 운명결속 98.2%, 죽음추적자 1.7%, 추천 전문화+영웅 빌드 42.3%.',
+          '레이드 기준: 2026-05-27 Archon 신화 전체 보스 5,864표본, 운명결속 99.9%, 추천 전문화+영웅 빌드 7.1%.',
+          '쐐기 기준: 2026-05-27 Archon 7단 이상 전체 쐐기 30,272표본, 운명결속 98.2%, 죽음추적자 1.7%, 추천 전문화+영웅 빌드 42.3%.',
           '핵심 노드: 운명의 손, 행운 주화, 운명과의 타협, 운명의 낙인은 독살 빈도와 결산 품질을 바꿉니다.',
           '검수 방법: 동전 피해만 보지 말고 행운 주화 구간의 독살, 왕의 파멸, 독칼 정렬을 같이 확인합니다.',
         ],
@@ -9878,9 +9878,9 @@ export const guideManuscripts = {
     graphCenterSkillId: '191634',
     sourceStatus: 'Blizzard 12.0.5, Wowhead 2026-03-26, Icy Veins 2026-05-19, Archon 2026-05-27, Earthshrine 공개 Discord 경로 확인.',
     summary:
-      '정기 주술사는 화염 충격과 용암 폭발로 주문의 바닥을 만들고, 소용돌이 자원을 대지 충격, 정기 작렬, 지진으로 비우며, 폭풍수호자와 폭풍인도자 자연 피해 창을 전투의 중심으로 압축하는 원거리 딜러입니다. 12.0.5 기준 Blizzard 공식 노트에는 정기 직접 변경이 없고, Wowhead는 소용돌이 낭비 방지, 쉬지 않는 시전, 발동 대응을 핵심 원칙으로 둡니다. Archon 2026-05-27 확인 표본에서는 폭풍인도자가 신화 레이드 전체 보스 31,754표본에서 95.9%, 쐐기 +7 이상 120,770표본에서 98.1%로 기본값에 가깝습니다. 이 문서는 폭풍수호자를 중심 노드로 놓고 화염 코어, 소비기, 폭풍, 이동 보존, 쐐기 유틸을 연결합니다.',
+      '정기 주술사는 화염 충격과 용암 폭발로 주문의 바닥을 만들고, 소용돌이 자원을 대지 충격, 정기 작렬, 지진으로 비우며, 폭풍수호자와 폭풍인도자 자연 피해 창을 전투의 중심으로 압축하는 원거리 딜러입니다. 12.0.5 기준 Blizzard 공식 노트에는 정기 직접 변경이 없고, Wowhead는 소용돌이 낭비 방지, 쉬지 않는 시전, 발동 대응을 핵심 원칙으로 둡니다. Archon 2026-05-27 확인 표본에서는 폭풍인도자가 신화 레이드 전체 보스 31,754표본에서 95.9%, 7단 이상 전체 쐐기 119,954표본에서 98.1%로 기본값에 가깝습니다. 이 문서는 폭풍수호자를 중심 노드로 놓고 화염 코어, 소비기, 폭풍, 이동 보존, 쐐기 유틸을 연결합니다.',
     sourceNote:
-      'Icy Veins 정기 운용 문서는 2026-05-19 기준 12.0.5 문서이며, 폭풍수호자 충전, 소용돌이 과충전 방지, 화염 충격/용암 폭발 관계, 이동 대응을 별도 항목으로 설명합니다. Wowhead 정기 운용 문서는 2026-03-26 한밤 시즌 기준이며, 폭풍수호자를 먼저 쓰고 용암 폭발, 승천, 선조의 신속함, 강화 번개 화살로 이어지는 샘플 오프닝을 제시합니다. Blizzard 12.0.5 공식 노트에서는 정기 직접 변경 항목이 없고 고양/복원 주술사 항목만 확인됩니다. Archon은 2026-05-27 확인 시점에 신화 레이드 전체 보스 최근 14일 상위 50% 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%, 167.0k DPS를 보여 주고, 쐐기 +7 이상 전체 던전 최근 14일 120,770표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.5%, 쐐기돌 +22, 153.5k DPS를 보여 줍니다. Wowhead Discord 서버 목록에서 주술사 공개 커뮤니티 경로가 Earthshrine으로 안내되는 것도 확인했습니다. 스킬명과 아이콘은 Wowhead 한국어 tooltip API로 재검증했습니다.',
+      'Icy Veins 정기 운용 문서는 2026-05-19 기준이며, 폭풍수호자 충전, 소용돌이 과충전 방지, 화염 충격/용암 폭발 관계, 이동 대응을 별도 항목으로 설명합니다. Wowhead 정기 운용 문서는 2026-03-26 한밤 시즌 기준이며, 폭풍수호자를 먼저 쓰고 용암 폭발, 승천, 선조의 신속함, 강화 번개 화살로 이어지는 샘플 오프닝을 제시합니다. Blizzard 12.0.5 공식 노트에서는 정기 직접 변경 항목이 없고 고양/복원 주술사 항목만 확인됩니다. Archon은 2026-05-27 확인 시점에 신화 레이드 전체 보스 최근 14일 상위 50% 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%, 167.0k DPS를 보여 주고, 7단 이상 전체 쐐기 최근 14일 119,954표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.8%, 쐐기돌 22단, 153.5k DPS를 보여 줍니다. Wowhead Discord 서버 목록에서 주술사 공개 커뮤니티 경로가 Earthshrine으로 안내되는 것도 확인했습니다. 스킬명과 아이콘은 Wowhead 한국어 공식 툴팁으로 재검증했습니다.',
     sources: [
       {
         tier: 'S',
@@ -9891,7 +9891,7 @@ export const guideManuscripts = {
       },
       {
         tier: 'S',
-        label: 'Wowhead 한국어 툴팁 API',
+        label: 'Wowhead 한국어 공식 툴팁',
         url: 'https://nether.wowhead.com/tooltip/spell/191634?locale=1',
         updated: '2026-05-27 확인',
         note: '폭풍수호자, 화염 충격, 용암 폭발, 폭풍, 지진, 선조의 신속함 등 한국어 명칭과 아이콘 재검증',
@@ -9940,10 +9940,10 @@ export const guideManuscripts = {
       },
       {
         tier: 'A',
-        label: 'Archon 정기 주술사 쐐기 특성',
+        label: 'Archon 정기 주술사 7단 이상 전체 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/talents/10/all-dungeons/this-week',
         updated: '2026-05-27 확인',
-        note: '쐐기 +7 이상 전체 던전 120,770표본, 폭풍인도자 98.1%, 선견자 1.8%, 전문화+영웅 빌드 36.5%, 쐐기돌 +22, 153.5k DPS',
+        note: '7단 이상 전체 쐐기 119,954표본, 폭풍인도자 98.1%, 선견자 1.8%, 전문화+영웅 빌드 36.8%, 쐐기돌 22단, 153.5k DPS',
       },
       {
         tier: 'B',
@@ -9958,8 +9958,8 @@ export const guideManuscripts = {
       'Wowhead 운용 문서는 소용돌이 낭비 방지, 쉬지 않는 시전, 발동 대응을 핵심 원칙으로 두고, 폭풍수호자-용암 폭발-승천-선조의 신속함-강화 번개 화살로 이어지는 샘플 오프닝을 제시합니다.',
       'Icy Veins는 소용돌이 생성 주문을 높은 소용돌이에서 누르면 과충전이 쉽게 발생하며, 폭풍인도자 광역에서는 상황상 과충전이 생길 수 있어 소비 판단을 더 세밀하게 봐야 한다고 설명합니다.',
       'Icy Veins 특성 문서는 1시즌에서 폭풍인도자가 정기 주술사의 압도적인 기본 영웅 특성이고 선견자는 사용 가능한 보조 선택이라고 설명합니다.',
-      'Archon 최근 표본은 신화 레이드 전체 보스 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%이고, 쐐기 +7 이상 전체 던전 120,770표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.5%입니다. 따라서 가이드 중심 그래프는 직업명이나 화염 충격이 아니라 폭풍수호자와 폭풍인도자 창에서 시작해야 합니다.',
-      'Wowhead 한국어 tooltip API에서 폭풍수호자, 화염 충격, 용암 폭발, 폭풍, 전격의 불길, 정화의 불길, 선조의 신속함 등 핵심 표기와 아이콘을 재확인했습니다.',
+      'Archon 최근 표본은 신화 레이드 전체 보스 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%이고, 7단 이상 전체 쐐기 119,954표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.8%입니다. 따라서 가이드 중심 그래프는 직업명이나 화염 충격이 아니라 폭풍수호자와 폭풍인도자 창에서 시작해야 합니다.',
+      'Wowhead 한국어 공식 툴팁에서 폭풍수호자, 화염 충격, 용암 폭발, 폭풍, 전격의 불길, 정화의 불길, 선조의 신속함 등 핵심 표기와 아이콘을 재확인했습니다.',
     ],
     caveats: [
       '직업 Discord 자료는 공개 경로와 검증 가능한 이론공식/FAQ만 보조 근거로 사용합니다. 비공개 채널 대화는 인용하지 않습니다.',
@@ -10009,7 +10009,7 @@ export const guideManuscripts = {
       {
         title: '4. 폭풍인도자와 선견자 분기',
         paragraphs: [
-          '현재 표본에서 폭풍인도자는 정기 주술사의 기본값입니다. Archon 2026-05-27 확인 기준 최근 신화 레이드 전체 보스 집계는 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%이고, 쐐기 +7 이상 전체 던전 집계는 120,770표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.5%입니다. 이 수치는 단순 유행 이상의 의미가 있습니다. 폭풍인도자는 폭풍, 초자력 충전, 번개 축전기, 폭풍의 전령, 폭풍의 조력 같은 자연 피해 보정이 폭풍수호자와 같은 언어를 쓰기 때문에, 현재 정기 운용의 중심 그래프와 잘 맞습니다.',
+          '현재 표본에서 폭풍인도자는 정기 주술사의 기본값입니다. Archon 2026-05-27 확인 기준 최근 신화 레이드 전체 보스 집계는 31,754표본에서 폭풍인도자 95.9%, 선견자 4.0%, 추천 전문화+영웅 빌드 39.5%이고, 7단 이상 전체 쐐기 집계는 119,954표본에서 폭풍인도자 98.1%, 선견자 1.8%, 추천 전문화+영웅 빌드 36.8%입니다. 이 수치는 단순 유행 이상의 의미가 있습니다. 폭풍인도자는 폭풍, 초자력 충전, 번개 축전기, 폭풍의 전령, 폭풍의 조력 같은 자연 피해 보정이 폭풍수호자와 같은 언어를 쓰기 때문에, 현재 정기 운용의 중심 그래프와 잘 맞습니다.',
           '선견자는 버릴 선택지가 아니라 역할이 다른 선택지입니다. 선조의 신속함과 선조 계열 발동은 즉시시전, 이동 대응, 추가 주문 복제를 통해 전투의 빈 구간을 메웁니다. 다만 레이드와 쐐기 양쪽에서 폭풍인도자가 매우 큰 표본 우위를 보이므로, 이 문서에서는 선견자를 “기본값을 대체하는 주류”가 아니라 “이동과 선조 창을 활용하는 보조 분기”로 설명합니다.',
         ],
         bullets: [
@@ -10127,9 +10127,9 @@ export const guideManuscripts = {
     graphCenterSkillId: '61295',
     sourceStatus: 'Blizzard 한국어 12.0.5 노트와 긴급 수정, Wowhead, Icy Veins, Archon 2026-05-27 표본, Earthshrine/Ancestral Guidance 공개 Discord 경로 확인.',
     summary:
-      '복원 주술사는 고정 순서를 반복하는 힐러가 아니라, 피해가 오기 전에 성난 해일, 대지의 보호막, 물의 보호막, 치유의 비, 쇄도하는 토템을 깔고, 실제 피해가 들어온 뒤 연쇄 치유, 치유의 물결, 폭우, 치유의 해일 토템, 정신의 고리 토템으로 회수하는 반응형 힐러입니다. 12.0.5 Blizzard 공식 노트는 복원 치유 8% 증가와 피해 30% 증가를 명시했고, 2026-04-29 긴급 수정은 적용 오류를 고쳐 패치 전 대비 총 +30% 피해 증가가 되도록 보정했습니다. Wowhead와 Icy Veins는 짧은 쿨다운 낭비 방지, 성난 해일 대상 선택, 치유의 비/쇄도하는 토템 위치, 연쇄 치유 첫 대상, 정신의 고리 토템 사전 배정을 핵심으로 둡니다. Archon 2026-05-27 확인 표본에서는 토템술사가 신화 레이드 전체 보스 48,966표본 중 99.5%, 쐐기 +7 이상 전체 던전 292,424표본 중 92.0% 사용률로 기본값에 가깝기 때문에, 이 문서는 성난 해일을 중앙 노드로 두고 토템술사 지역 힐, 선견자 단일 보강, 공대 쿨기 타임라인을 분리해 설명합니다.',
+      '복원 주술사는 고정 순서를 반복하는 힐러가 아니라, 피해가 오기 전에 성난 해일, 대지의 보호막, 물의 보호막, 치유의 비, 쇄도하는 토템을 깔고, 실제 피해가 들어온 뒤 연쇄 치유, 치유의 물결, 폭우, 치유의 해일 토템, 정신의 고리 토템으로 회수하는 반응형 힐러입니다. 12.0.5 Blizzard 공식 노트는 복원 치유 8% 증가와 피해 30% 증가를 명시했고, 2026-04-29 긴급 수정은 적용 오류를 고쳐 패치 전 대비 총 +30% 피해 증가가 되도록 보정했습니다. Wowhead와 Icy Veins는 짧은 쿨다운 낭비 방지, 성난 해일 대상 선택, 치유의 비/쇄도하는 토템 위치, 연쇄 치유 첫 대상, 정신의 고리 토템 사전 배정을 핵심으로 둡니다. Archon 2026-05-27 확인 표본에서는 토템술사가 신화 레이드 전체 보스 48,966표본 중 99.5%, 7단 이상 전체 쐐기 292,424표본 중 92.0% 사용률로 기본값에 가깝기 때문에, 이 문서는 성난 해일을 중앙 노드로 두고 토템술사 지역 힐, 선견자 단일 보강, 공대 쿨기 타임라인을 분리해 설명합니다.',
     sourceNote:
-      'Icy Veins 복원 개요와 특성은 2026-05-19, 운용은 2026-04-20 기준 12.0.5 문서이며 2026-05-27에 다시 대조했습니다. Wowhead 복원 개요와 운용은 2026-05-26, 특성은 2026-04-14 기준 12.0.5 문서이며 2026-05-27에 다시 대조했습니다. Blizzard 12.0.5 공식 노트는 복원 치유 8%와 피해 30% 증가를 명시하고, 2026-04-29 긴급 수정은 피해 증가 적용 오류를 보정했으며, 2026-04-30 긴급 수정은 폭풍의 흐름 토템/폭우 관련 버그를 고쳤습니다. Archon은 2026-05-27 확인 시점에 신화 레이드 전체 보스 48,966표본에서 토템술사 99.5%, 선견자 0.4%, 추천 전문화+영웅 빌드 34.0%, 165.7k HPS/8.5k DPS를 보여 주고, 쐐기 +7 이상 전체 던전 292,424표본에서는 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%, 쐐기돌 +23, 93.2k HPS/28.1k DPS를 보여 줍니다. Wowhead Discord 서버 목록에서 주술사 공개 경로 Earthshrine 및 복원 전용 Ancestral Guidance가 안내되는 것을 확인했습니다. 스킬명과 아이콘은 Wowhead 한국어 툴팁으로 재검증했습니다.',
+      'Icy Veins 복원 개요와 특성은 2026-05-19, 운용은 2026-04-20 기준이며 2026-05-27에 다시 대조했습니다. Wowhead 복원 개요와 운용은 2026-05-26, 특성은 2026-04-14 기준이며 2026-05-27에 다시 대조했습니다. Blizzard 12.0.5 공식 노트는 복원 치유 8%와 피해 30% 증가를 명시하고, 2026-04-29 긴급 수정은 피해 증가 적용 오류를 보정했으며, 2026-04-30 긴급 수정은 폭풍의 흐름 토템/폭우 관련 버그를 고쳤습니다. Archon은 2026-05-27 확인 시점에 신화 레이드 전체 보스 48,966표본에서 토템술사 99.5%, 선견자 0.4%, 추천 전문화+영웅 빌드 34.0%, 165.7k HPS/8.5k DPS를 보여 주고, 7단 이상 전체 쐐기 292,424표본에서는 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%, 쐐기돌 23단, 93.2k HPS/28.1k DPS를 보여 줍니다. Wowhead Discord 서버 목록에서 주술사 공개 경로 Earthshrine 및 복원 전용 Ancestral Guidance가 안내되는 것을 확인했습니다. 스킬명과 아이콘은 Wowhead 한국어 툴팁으로 재검증했습니다.',
     sources: [
       {
         tier: 'S',
@@ -10196,10 +10196,10 @@ export const guideManuscripts = {
       },
       {
         tier: 'A',
-        label: 'Archon 복원 주술사 쐐기 특성',
+        label: 'Archon 복원 주술사 7단 이상 전체 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/talents/10/all-dungeons/this-week',
         updated: '2026-05-27 확인',
-        note: '최근 14일 쐐기 +7 이상 전체 던전 292,424표본 기준 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%, 쐐기돌 +23, 93.2k HPS/28.1k DPS 확인',
+        note: '최근 14일 7단 이상 전체 쐐기 292,424표본 기준 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%, 쐐기돌 23단, 93.2k HPS/28.1k DPS 확인',
       },
       {
         tier: 'B',
@@ -10217,7 +10217,7 @@ export const guideManuscripts = {
       'Icy Veins 전투 흐름은 치유의 토템/폭풍의 흐름 토템 충전, 선견자 생명 폭발/선조의 신속함, 자연의 신속함, 치유의 비, 쇄도하는 토템, 성난 해일, 연쇄 치유, 치유의 물결을 피해 상황에 맞춰 쓰는 우선순위로 제시합니다.',
       'Wowhead 특성 문서는 레이드에서 대지생명의 무기와 치유의 비가 큰 비중을 차지하고, 연쇄 치유 특성과 폭우 선택이 현재 빌드의 핵심이라고 설명합니다.',
       'Wowhead와 Icy Veins 모두 성난 해일을 단순 즉시 회복이 아니라 연쇄 치유 첫 대상, 굽이치는 물결, 후속 직접 치유를 여는 준비 버튼으로 다룹니다.',
-      'Archon 2026-05-27 확인 표본은 신화 레이드 전체 보스 48,966표본에서 토템술사 99.5%, 선견자 0.4%, 추천 전문화+영웅 빌드 34.0%를 보여 주고, 쐐기 +7 이상 전체 던전 292,424표본에서는 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%를 보여주므로, 현재 서술은 토템술사 지역 힐을 기본 축으로 두고 선견자를 대상 선택과 선조 창을 살리는 보조 분기로 다룹니다.',
+      'Archon 2026-05-27 확인 표본은 신화 레이드 전체 보스 48,966표본에서 토템술사 99.5%, 선견자 0.4%, 추천 전문화+영웅 빌드 34.0%를 보여 주고, 7단 이상 전체 쐐기 292,424표본에서는 토템술사 92.0%, 선견자 7.9%, 추천 전문화+영웅 빌드 17.0%를 보여주므로, 현재 서술은 토템술사 지역 힐을 기본 축으로 두고 선견자를 대상 선택과 선조 창을 살리는 보조 분기로 다룹니다.',
       'Wowhead 한국어 툴팁에서 성난 해일, 연쇄 치유, 치유의 물결, 치유의 비, 치유의 토템, 쇄도하는 토템, 폭우, 치유의 해일 토템, 정신의 고리 토템, 승천, 생명 폭발, 자연의 신속함, 선조의 신속함, 폭풍의 흐름 토템 표기와 아이콘을 재확인했습니다.',
     ],
     caveats: [
@@ -10270,7 +10270,7 @@ export const guideManuscripts = {
       {
         title: '4. 토템술사는 현재 기본값에 가깝다',
         paragraphs: [
-          'Archon 2026-05-27 확인 기준 신화 레이드 전체 보스 48,966표본에서 토템술사는 99.5% 사용률이고, 쐐기 +7 이상 전체 던전 292,424표본에서도 92.0%입니다. 이 수치는 현재 복원 가이드의 기본 설명이 토템술사를 중심으로 쓰여야 함을 뜻합니다. 토템술사는 쇄도하는 토템으로 치유의 비 계열을 즉시 배치하고, 치유의 토템, 활발한 토템, 폭풍의 흐름 토템, 대지생명의 무기 보정을 통해 지역 기반 회복을 꾸준히 쌓습니다.',
+          'Archon 2026-05-27 확인 기준 신화 레이드 전체 보스 48,966표본에서 토템술사는 99.5% 사용률이고, 7단 이상 전체 쐐기 292,424표본에서도 92.0%입니다. 이 수치는 현재 복원 가이드의 기본 설명이 토템술사를 중심으로 쓰여야 함을 뜻합니다. 토템술사는 쇄도하는 토템으로 치유의 비 계열을 즉시 배치하고, 치유의 토템, 활발한 토템, 폭풍의 흐름 토템, 대지생명의 무기 보정을 통해 지역 기반 회복을 꾸준히 쌓습니다.',
           '토템술사의 장점은 조작 난도가 낮다는 의미가 아닙니다. 오히려 위치가 틀리면 가치가 급격히 떨어집니다. 치유의 비나 쇄도하는 토템은 대상이 그 안에 머물 때 강하고, Icy Veins도 토템술사가 많은 시전 시간을 아끼지만 작은 반경에 더 묶인다고 설명합니다. 여기에 2026-04-30 핫픽스로 폭풍의 흐름 토템 첫 치유가 특화 영향을 받도록 수정되었으므로, 토템술사 차트는 쿨다운 순서표가 아니라 “토템 위치, 파티 이동, 폭풍의 흐름 토템/폭우/연쇄 치유 회수 타이밍”을 함께 보여줘야 합니다.',
         ],
         bullets: [
