@@ -183,6 +183,9 @@ function displayGuideText(value) {
     .replace(/\bSpellslinger\b/g, '주문술사')
     .replace(/\bSunfury\b/g, '성난태양')
     .replace(/\bFrostfire\b/g, '서리불꽃')
+    .replace(/\bSoul Harvester\b/g, '영혼 수확자')
+    .replace(/\bHellcaller\b/g, '지옥소환사')
+    .replace(/\bDiabolist\b/g, '악마학자')
     .replace(/\bVoidweaver\b/g, '공허술사')
     .replace(/\bOracle\b/g, '예언자');
 }
@@ -3679,7 +3682,7 @@ function getUptimeRows(guide, data) {
       {
         label: '유지 기반',
         skill: findSkillByNames(data, ['쇠퇴', '제물']),
-        note: 'Hellcaller는 쇠퇴, 비-Hellcaller는 제물을 유지해 조각 경제를 시작합니다.',
+        note: '지옥소환사는 쇠퇴, 비-지옥소환사는 제물을 유지해 조각 경제를 시작합니다.',
         segments: [[3, 92]],
       },
       {
@@ -3762,7 +3765,7 @@ function getUptimeRows(guide, data) {
       {
         label: '큰 악마',
         skill: findSkillByNames(data, ['흑마법서: 임프 군주', '흑마법서: 지옥 유린자']),
-        note: 'Diabolist 창에서 폭군 주변에 배치할 선택 쿨다운입니다.',
+        note: '악마학자 창에서 폭군 주변에 배치할 선택 쿨다운입니다.',
         segments: [[22, 16], [72, 16]],
       },
       {
@@ -3797,7 +3800,7 @@ function getUptimeRows(guide, data) {
       {
         label: '보조 유지',
         skill: findSkillByNames(data, ['부패', '쇠퇴']),
-        note: 'Soul Harvester는 부패, Hellcaller는 쇠퇴 가지로 같은 유지 칸에서 읽습니다.',
+        note: '영혼 수확자는 부패, 지옥소환사는 쇠퇴 가지로 같은 유지 칸에서 읽습니다.',
         segments: [[5, 88]],
       },
       {
@@ -3815,7 +3818,7 @@ function getUptimeRows(guide, data) {
       {
         label: '수확 창',
         skill: findSkillByNames(data, ['암흑의 수확']),
-        note: 'Soul Harvester 기준 조각 회복과 짧은 피해 창을 함께 만듭니다.',
+        note: '영혼 수확자 기준 조각 회복과 짧은 피해 창을 함께 만듭니다.',
         segments: [[23, 9], [57, 9], [86, 9]],
       },
       {
