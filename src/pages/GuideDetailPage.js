@@ -186,6 +186,11 @@ function displayGuideText(value) {
     .replace(/\bSoul Harvester\b/g, '영혼 수확자')
     .replace(/\bHellcaller\b/g, '지옥소환사')
     .replace(/\bDiabolist\b/g, '악마학자')
+    .replace(/\bLightsmith\b/g, '빛대장장이')
+    .replace(/\bMidnight\b/g, '한밤')
+    .replace(/\bStage\s*1\b/g, '1단계')
+    .replace(/\bStage\s*2\b/g, '2단계')
+    .replace(/\bStage\s*3\b/g, '3단계')
     .replace(/\bVoidweaver\b/g, '공허술사')
     .replace(/\bOracle\b/g, '예언자');
 }
@@ -2195,55 +2200,44 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   const stageLegend = [...new Set(flowItems.map(item => item.stage || item.phase).filter(Boolean))];
   const mapCopy = getFlowMapCopy(guide);
 
-  if (flowItems.length) {
-    return (
-      <OpenerFlowViewport>
-        <OpenerFlowMapHeader>
-          <span>{mapCopy.start}</span>
-          <strong>{mapCopy.middle}</strong>
-          <span>{mapCopy.end}</span>
-        </OpenerFlowMapHeader>
-        <OpenerFlowKey aria-label="전투 흐름 기준">
-          {mapCopy.keys.map(item => (
-            <span key={item}>{item}</span>
-          ))}
-        </OpenerFlowKey>
-        {stageLegend.length > 1 && (
-          <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
-            {stageLegend.map(phase => (
-              <span key={phase}>{phase}</span>
-            ))}
-          </OpenerFlowPhaseLegend>
-        )}
-        <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
-          {flowItems.map((step, index) => (
-            <li key={step.key}>
-              <OpenerStepTop>
-                <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-                <SkillIconLink skill={step.skill} size={42} />
-              </OpenerStepTop>
-              <OpenerStepBody>
-                <OpenerPhase>{step.phase}</OpenerPhase>
-                <strong>{step.label}</strong>
-                <OpenerTrigger>{step.trigger}</OpenerTrigger>
-                {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
-              </OpenerStepBody>
-            </li>
-          ))}
-        </OpenerFlowList>
-      </OpenerFlowViewport>
-    );
-  }
+  if (!flowItems.length) return null;
 
   return (
-    <OpenerTextList>
-      {fallbackItems.map((item, index) => (
-        <li key={`${index}-${item}`}>
-          <span>{index + 1}</span>
-          <p>{renderGuideText(item, inlineTerms)}</p>
-        </li>
-      ))}
-    </OpenerTextList>
+    <OpenerFlowViewport>
+      <OpenerFlowMapHeader>
+        <span>{mapCopy.start}</span>
+        <strong>{mapCopy.middle}</strong>
+        <span>{mapCopy.end}</span>
+      </OpenerFlowMapHeader>
+      <OpenerFlowKey aria-label="전투 흐름 기준">
+        {mapCopy.keys.map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </OpenerFlowKey>
+      {stageLegend.length > 1 && (
+        <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
+          {stageLegend.map(phase => (
+            <span key={phase}>{phase}</span>
+          ))}
+        </OpenerFlowPhaseLegend>
+      )}
+      <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
+        {flowItems.map((step, index) => (
+          <li key={step.key}>
+            <OpenerStepTop>
+              <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
+              <SkillIconLink skill={step.skill} size={42} />
+            </OpenerStepTop>
+            <OpenerStepBody>
+              <OpenerPhase>{step.phase}</OpenerPhase>
+              <strong>{step.label}</strong>
+              <OpenerTrigger>{step.trigger}</OpenerTrigger>
+              {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+            </OpenerStepBody>
+          </li>
+        ))}
+      </OpenerFlowList>
+    </OpenerFlowViewport>
   );
 }
 
@@ -2251,21 +2245,14 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   if (!manuscript) return null;
 
   const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
-  const openerBlocks = contentBlocks.filter(isOpenerNarrativeBlock);
   const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
   const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
-  const openerBlockItems = openerBlocks.flatMap(block => block.bullets || []).slice(0, 10);
-  const openerFallbackItems = openerFlowSteps.length
-    ? []
-    : openerBlockItems.length
-    ? openerBlockItems
-    : manuscript.opener?.steps?.slice(0, 10).map(step => `${step.label}: ${step.note}`);
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
-  const hasOpenerGuide = !!openerFlowSteps.length || !!openerFallbackItems?.length;
+  const hasOpenerGuide = !!openerFlowSteps.length;
   const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
 
   return (
@@ -2301,7 +2288,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               <p>{renderGuideText(manuscript.opener.summary, inlineTerms)}</p>
             </OpenerFlowIntro>
           )}
-          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems || []} inlineTerms={inlineTerms} />
+          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={[]} inlineTerms={inlineTerms} />
         </OpenerFlowCard>
       )}
 
@@ -3599,7 +3586,7 @@ function getUptimeRows(guide, data) {
       {
         label: '상태 판정',
         skill: findSkillByNames(data, ['뼈주사위']),
-        note: 'Stage 1/2/3에 따라 생성, 피해, 잠들지 않는 칼날 회복 속도 가치가 달라집니다.',
+        note: '1/2/3단계에 따라 생성, 피해, 잠들지 않는 칼날 회복 속도 가치가 달라집니다.',
         segments: [[2, 30], [36, 30], [70, 26]],
       },
       {
@@ -6008,45 +5995,6 @@ const OpenerTrigger = styled.span`
   line-height: 1.25;
   word-break: keep-all;
   overflow-wrap: anywhere;
-`;
-
-const OpenerTextList = styled.ol`
-  display: grid;
-  gap: 9px;
-  margin: 0;
-  padding: 13px;
-  list-style: none;
-  counter-reset: opener;
-
-  li {
-    display: grid;
-    grid-template-columns: 26px minmax(0, 1fr);
-    gap: 9px;
-    align-items: start;
-    min-width: 0;
-  }
-
-  span {
-    display: grid;
-    place-items: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid rgba(184, 145, 91, 0.42);
-    color: #f4efe5;
-    background: rgba(184, 145, 91, 0.14);
-    font-size: 0.72rem;
-    font-weight: 950;
-  }
-
-  p {
-    min-width: 0;
-    color: #efe4d4;
-    font-size: 0.82rem;
-    font-weight: 780;
-    line-height: 1.58;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-  }
 `;
 
 const TipList = styled.ul`
