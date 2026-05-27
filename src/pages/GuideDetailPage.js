@@ -1991,14 +1991,23 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   if (!manuscript) return null;
 
   const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
+  const openerBlock = contentBlocks.find(block => isOpenerNarrativeBlock(block));
   const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
   const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
+  const openerFallbackItems = openerBlock
+    ? [
+      ...(openerBlock.bullets || []),
+      ...(openerBlock.paragraphs || []),
+    ].slice(0, OPENER_FLOW_MAX_STEPS)
+    : [];
+  const openerIntroTitle = manuscript.opener?.title || openerBlock?.title;
+  const openerIntroSummary = manuscript.opener?.summary || openerBlock?.paragraphs?.[0];
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
-  const hasOpenerGuide = !!openerFlowSteps.length;
+  const hasOpenerGuide = !!openerFlowSteps.length || !!openerFallbackItems.length;
   const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
 
   return (
@@ -2026,15 +2035,17 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             <Clock3 size={15} />
             <strong>{getFlowChartTitle(guide)}</strong>
           </FieldGuideCardHead>
-          {!!manuscript.opener?.summary && (
+          {!!(openerIntroTitle || openerIntroSummary) && (
             <OpenerFlowIntro>
-              {!!manuscript.opener?.title && (
-                <strong>{renderGuideText(manuscript.opener.title, inlineTerms)}</strong>
+              {!!openerIntroTitle && (
+                <strong>{renderGuideText(openerIntroTitle, inlineTerms)}</strong>
               )}
-              <p>{renderGuideText(manuscript.opener.summary, inlineTerms)}</p>
+              {!!openerIntroSummary && (
+                <p>{renderGuideText(openerIntroSummary, inlineTerms)}</p>
+              )}
             </OpenerFlowIntro>
           )}
-          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={[]} inlineTerms={inlineTerms} />
+          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems} inlineTerms={inlineTerms} />
         </OpenerFlowCard>
       )}
 
@@ -2902,7 +2913,18 @@ function DefensivePlannerChart({ guide, data, profile }) {
 }
 
 function findSkillByNames(data, names) {
-  return data.scopedSkills.find(skill => names.some(name => skillName(skill).includes(name)));
+  const normalizedNames = names.map(normalizeSkillLookupText).filter(Boolean);
+  const exactMatch = data.scopedSkills.find(skill => {
+    const keys = skillLookupKeys(skill);
+    return normalizedNames.some(name => keys.includes(name));
+  });
+
+  if (exactMatch) return exactMatch;
+
+  return data.scopedSkills.find(skill => {
+    const keys = skillLookupKeys(skill);
+    return normalizedNames.some(name => keys.some(key => key.includes(name)));
+  });
 }
 
 function getUptimeRows(guide, data) {

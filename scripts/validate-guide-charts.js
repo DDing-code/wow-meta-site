@@ -6,9 +6,11 @@ const path = require('path');
 const SITE_ROOT = path.resolve(__dirname, '..');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
+const KB_SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 
 const ALLOWED_SPECIALIST_CHARTS = new Set(['uptime', 'cooldown', 'defensive', 'resource']);
 const MIN_UPTIME_ROWS = 6;
+const COMMON_SPECS = new Set(['공용', 'Common']);
 
 const errors = [];
 
@@ -18,6 +20,54 @@ function assert(condition, message) {
 
 function readSource(filePath) {
   return fs.readFileSync(filePath, 'utf8');
+}
+
+function readJson(filePath) {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function cleanText(value) {
+  return String(value || '').trim();
+}
+
+function skillName(skill) {
+  return skill?.koreanName || skill?.name || skill?.englishName || '스킬';
+}
+
+function normalizeSkillLookupText(value) {
+  return cleanText(value)
+    .replace(/\\/g, '/')
+    .replace(/\.md$/i, '')
+    .split('/')
+    .pop()
+    .replace(/[-_\s'’]/g, '')
+    .toLocaleLowerCase();
+}
+
+function skillLookupKeys(skill) {
+  return [
+    skillName(skill),
+    skill?.koreanName,
+    skill?.name,
+    skill?.englishName,
+    skill?.source?.kbPath,
+  ]
+    .map(normalizeSkillLookupText)
+    .filter(Boolean);
+}
+
+function uniqueBy(items, keyFn) {
+  const seen = new Set();
+  const result = [];
+
+  for (const item of items) {
+    const key = keyFn(item);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    result.push(item);
+  }
+
+  return result;
 }
 
 function findMatchingBrace(source, openIndex) {
@@ -81,8 +131,99 @@ function parseGuideIds(registrySource) {
   return [...registrySource.matchAll(/\bspec\('([^']+)'/g)].map(match => match[1]);
 }
 
+function parseClassMap(registrySource) {
+  const classBlockStart = registrySource.indexOf('export const classMeta');
+  const classBlockEnd = registrySource.indexOf('export const guideRoles', classBlockStart);
+  const classBlock = registrySource.slice(classBlockStart, classBlockEnd);
+  const classMap = new Map();
+  const matcher = /(\w+):\s*\{\s*className:\s*'[^']+',\s*kbClass:\s*'([^']+)'\s*\}/g;
+  let match;
+
+  while ((match = matcher.exec(classBlock))) {
+    classMap.set(match[1], match[2]);
+  }
+
+  return classMap;
+}
+
+function parseGuideRecords(registrySource) {
+  const classMap = parseClassMap(registrySource);
+  const records = [];
+  const matcher = /spec\('([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'[^']+'(?:,\s*\{([\s\S]*?)\})?\)/g;
+  let match;
+
+  while ((match = matcher.exec(registrySource))) {
+    const [, id, classKey, specName, kbSpec, role, options = ''] = match;
+    const aliasMatch = options.match(/kbSpecAliases:\s*\[([^\]]*)\]/);
+    const aliases = aliasMatch
+      ? [...aliasMatch[1].matchAll(/'([^']+)'/g)].map(alias => alias[1])
+      : [];
+
+    records.push({
+      id,
+      classKey,
+      kbClass: classMap.get(classKey),
+      specName,
+      kbSpec,
+      role,
+      kbSpecAliases: uniqueBy([kbSpec, specName, ...aliases], value => value),
+    });
+  }
+
+  return records;
+}
+
 function firstChartId(branchBody) {
   return branchBody.match(/\bid:\s*'([^']+)'/)?.[1] || null;
+}
+
+function recordMatchesGuide(record, guide, includeCommon = true) {
+  if (!record || record.class !== guide.kbClass) return false;
+  const listedSpecs = Array.isArray(record.specs) ? record.specs.map(spec => String(spec)) : [];
+  if (listedSpecs.some(spec => guide.kbSpecAliases.includes(spec))) return true;
+  if (includeCommon && COMMON_SPECS.has(record.spec)) return true;
+  return guide.kbSpecAliases.includes(record.spec);
+}
+
+function scopedSkillsForGuide(skills, guide) {
+  const specSkills = uniqueBy(
+    skills.filter(skill => recordMatchesGuide(skill, guide, false)),
+    skill => `${skill.id}:${skill.spec}`
+  );
+  const commonSkills = uniqueBy(
+    skills.filter(skill => skill.class === guide.kbClass && COMMON_SPECS.has(skill.spec)),
+    skill => `${skill.id}:${skill.spec}`
+  );
+
+  return uniqueBy([...specSkills, ...commonSkills], skill => `${skill.id}:${skill.spec}`);
+}
+
+function parseFindSkillNameGroups(branchBody) {
+  const groups = [];
+  const matcher = /findSkillByNames\(data,\s*\[([^\]]*)\]\)/g;
+  let match;
+
+  while ((match = matcher.exec(branchBody))) {
+    const names = [...match[1].matchAll(/'([^']+)'/g)].map(name => name[1]);
+    if (names.length) groups.push(names);
+  }
+
+  return groups;
+}
+
+function resolvesSkillName(scopedSkills, names) {
+  const normalizedNames = names.map(normalizeSkillLookupText).filter(Boolean);
+  const exactMatch = scopedSkills.find(skill => {
+    const keys = skillLookupKeys(skill);
+    return normalizedNames.some(name => keys.includes(name));
+  });
+
+  if (exactMatch) return exactMatch;
+
+  return scopedSkills.find(skill => {
+    const keys = skillLookupKeys(skill);
+    return normalizedNames.some(name => keys.some(key => key.includes(name)));
+  });
 }
 
 function validateNoDuplicateBranches(branches, scopeName) {
@@ -105,6 +246,8 @@ function validateNoDuplicateBranches(branches, scopeName) {
 function main() {
   const guideDetailSource = readSource(GUIDE_DETAIL_PATH);
   const guideRegistrySource = readSource(GUIDE_REGISTRY_PATH);
+  const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
+  const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);
   const planBody = extractFunctionBody(guideDetailSource, 'getInlineChartPlan');
   const uptimeBody = extractFunctionBody(guideDetailSource, 'getUptimeRows');
@@ -112,13 +255,16 @@ function main() {
   const uptimeBranches = extractGuideBranches(uptimeBody);
   const planBranchMap = new Map(planBranches.map(branch => [branch.id, branch]));
   const uptimeBranchMap = new Map(uptimeBranches.map(branch => [branch.id, branch]));
+  const guideRecordMap = new Map(guideRecords.map(guide => [guide.id, guide]));
 
   assert(guideIds.length === 40, `guideRegistry should expose 40 specs, found ${guideIds.length}`);
+  assert(guideRecords.length === guideIds.length, `guideRegistry parse mismatch: ${guideRecords.length} records for ${guideIds.length} ids`);
   validateNoDuplicateBranches(planBranches, 'getInlineChartPlan');
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
     assert(planBranchMap.has(guideId), `getInlineChartPlan is missing a specialist chart branch for ${guideId}`);
+    assert(guideRecordMap.get(guideId)?.kbClass, `guideRegistry is missing kbClass mapping for ${guideId}`);
   }
 
   const plannedUptimeIds = [];
@@ -145,6 +291,15 @@ function main() {
     assert(rowCount >= MIN_UPTIME_ROWS, `getUptimeRows branch for ${guideId} should have at least ${MIN_UPTIME_ROWS} rows, found ${rowCount}`);
     assert(!branch.body.includes("'유지 효과'"), `getUptimeRows branch for ${guideId} still uses generic "유지 효과" label`);
     assert(!branch.body.includes("'재확인'"), `getUptimeRows branch for ${guideId} still uses generic "재확인" label`);
+
+    const guide = guideRecordMap.get(guideId);
+    const scopedSkills = guide ? scopedSkillsForGuide(skills, guide) : [];
+    for (const names of parseFindSkillNameGroups(branch.body)) {
+      assert(
+        resolvesSkillName(scopedSkills, names),
+        `getUptimeRows branch for ${guideId} cannot resolve chart skill names [${names.join(', ')}]`
+      );
+    }
   }
 
   if (errors.length) {
