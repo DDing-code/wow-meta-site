@@ -128,6 +128,8 @@ function displayGuideText(value) {
     .replace(/공통 본문/g, '공통 설명')
     .replace(/본문/g, '설명')
     .replace(/별도 장/g, '별도 파트')
+    .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
+    .replace(/오프닝 순서표/g, '오프닝 전투 흐름')
     .replace(/시각자료/g, '차트')
     .replace(/보조 자료/g, '확인용 차트')
     .replace(/직접 인용하지 않습니다/g, '공개로 확인되는 내용만 반영합니다')
@@ -1006,7 +1008,7 @@ function isMetaChartBlock(block) {
 
 function isOpenerNarrativeBlock(block) {
   const title = displayGuideText(block?.title || '');
-  return /오프닝|첫\s*전투\s*흐름|전투\s*시작|첫\s*피해\s*대응|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
+  return /오프닝|첫\s*전투\s*흐름|전투\s*시작|첫\s*피해\s*대응|첫\s*풀(?:링|흐름)?|풀링|풀\s*진입|진입\/방어|준비\s*전투\s*흐름/i.test(title);
 }
 
 function getInlineChartPlan(guide, data) {
