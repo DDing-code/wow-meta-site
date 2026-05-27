@@ -82,7 +82,7 @@ function spec(id, classKey, specName, kbSpec, role, path, options = {}) {
     roleLabel: roleLabels[role],
     color: classColors[classKey],
     ready: true,
-    status: '가이드 작성 완료',
+    status: '12.0.5 심화 공략',
     path,
     focus: options.focus || '핵심 스킬과 시너지를 기준으로 전투 흐름을 정리합니다.',
   };

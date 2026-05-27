@@ -5,6 +5,7 @@ const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 
 const forbiddenTerms = [
@@ -12,6 +13,8 @@ const forbiddenTerms = [
   { term: '\ub17c\ubb38', replacement: '\uacf5\ub7b5 \uae00' },
   { term: '\ud504\ub85c\ud1a0\ud0c0\uc785', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
   { term: '\ub0b4\ubd80 \ubb38\uc11c', replacement: '\ucd9c\ucc98/\uac80\uc218 \ubb38\ub9e5' },
+  { term: '\uc791\uc131 \uc644\ub8cc', replacement: '\ud604\uc7ac \ud328\uce58 \uacf5\ub7b5 \uc0c1\ud0dc' },
+  { term: '\ucd08\uc548', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
   { term: '\ucc28\ud2b8 \uc0ac\uc6a9', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
   { term: '\ucc28\ud2b8 \uc124\uacc4', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
   { term: '\uc2dc\uac01\uc790\ub8cc \uad6c\uc131', replacement: '\ud655\uc778\ud45c/\uc2e4\uc804 \ud310\ub2e8' },
@@ -27,6 +30,10 @@ const forbiddenTerms = [
   { term: 'Stage 1', replacement: '1\ub2e8\uacc4' },
   { term: 'Stage 2', replacement: '2\ub2e8\uacc4' },
   { term: 'Stage 3', replacement: '3\ub2e8\uacc4' },
+  { term: 'TODO', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
+  { term: 'FIXME', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
+  { term: 'prototype', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
+  { term: 'draft', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
   { term: 'Soul Harvester', replacement: '\uc601\ud63c \uc218\ud655\uc790' },
   { term: 'Hellcaller', replacement: '\uc9c0\uc625\uc18c\ud658\uc0ac' },
   { term: 'Diabolist', replacement: '\uc545\ub9c8\ud559\uc790' },
@@ -95,6 +102,7 @@ function collectForbiddenTermErrors(filePath, terms) {
 function main() {
   const errors = [
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
+    ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
   ];
 
