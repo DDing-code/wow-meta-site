@@ -2111,6 +2111,42 @@ function getFlowChartTitle(guide) {
   return `${getFlowCardTitle(guide)} 차트`;
 }
 
+function getFlowMapCopy(guide) {
+  if (guide?.role === 'healers') {
+    return {
+      start: '피해 예고',
+      middle: '예열 → 회수 → 안정화',
+      end: '다음 피해',
+      keys: ['사전 예열', '피해 순간', '복구 판단'],
+    };
+  }
+
+  if (guide?.role === 'tanks') {
+    return {
+      start: '풀링',
+      middle: '위협 → 방어층 → 생존기 배정',
+      end: '다음 위험',
+      keys: ['진입 버튼', '방어 조건', '위험 대응'],
+    };
+  }
+
+  if (guide?.role === 'support') {
+    return {
+      start: '준비',
+      middle: '강화 → 대상 확인 → 파티 창',
+      end: '다음 강화',
+      keys: ['강화 시작', '대상 조건', '파티 창'],
+    };
+  }
+
+  return {
+    start: '전투 시작',
+    middle: '준비 → 큰 창 → 우선순위 루프',
+    end: '반복 판단',
+    keys: ['첫 버튼', '사용 조건', '손실 방지'],
+  };
+}
+
 function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
   const text = displayGuideText(item);
   const [candidateLabel, ...rest] = text.split(/[:：]/);
@@ -2139,15 +2175,21 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
   const chartLabel = getFlowChartTitle(guide);
   const phaseLegend = [...new Set(flowItems.map(item => item.phase).filter(Boolean))];
+  const mapCopy = getFlowMapCopy(guide);
 
   if (flowItems.length) {
     return (
       <OpenerFlowViewport>
         <OpenerFlowMapHeader>
-          <span>진입</span>
-          <strong>{guide.role === 'tanks' ? '피해 전 방어층을 세우는 순서' : guide.role === 'healers' ? '피해 예고에서 회수까지 이어지는 순서' : '전투 시작부터 우선순위 반복 판단까지 이어지는 순서'}</strong>
-          <span>반복</span>
+          <span>{mapCopy.start}</span>
+          <strong>{mapCopy.middle}</strong>
+          <span>{mapCopy.end}</span>
         </OpenerFlowMapHeader>
+        <OpenerFlowKey aria-label="전투 흐름 기준">
+          {mapCopy.keys.map(item => (
+            <span key={item}>{item}</span>
+          ))}
+        </OpenerFlowKey>
         {phaseLegend.length > 1 && (
           <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
             {phaseLegend.map(phase => (
@@ -5589,6 +5631,37 @@ const OpenerFlowMapHeader = styled.div`
     strong {
       text-align: left;
     }
+  }
+`;
+
+const OpenerFlowKey = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 11px 16px 0;
+  color: #c7bba7;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 4px 9px;
+    border: 1px solid rgba(244, 239, 229, 0.08);
+    background: rgba(244, 239, 229, 0.045);
+    font-size: 0.68rem;
+    font-weight: 950;
+    line-height: 1.2;
+    word-break: keep-all;
+  }
+
+  span:first-child {
+    border-color: rgba(184, 145, 91, 0.45);
+    color: #f4efe5;
+    background: rgba(184, 145, 91, 0.12);
+  }
+
+  @media (max-width: 560px) {
+    padding-inline: 12px;
   }
 `;
 
