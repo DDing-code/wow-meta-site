@@ -5500,6 +5500,7 @@ const FieldGuideCard = styled.div`
 `;
 
 const OpenerFlowCard = styled(FieldGuideCard)`
+  grid-column: 1 / -1;
   margin: 14px 0 16px;
   overflow: hidden;
   container-type: inline-size;
@@ -5701,7 +5702,7 @@ const OpenerFlowList = styled.ol`
   position: relative;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(236px, 24cqw, 286px);
+  grid-auto-columns: clamp(252px, 24cqw, 312px);
   align-items: stretch;
   gap: 26px;
   margin: 0;
