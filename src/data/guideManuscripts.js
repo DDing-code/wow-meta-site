@@ -4567,15 +4567,15 @@ export const guideManuscripts = {
     researchedAt: '2026-05-27',
     status: '심화 가이드',
     graphCenterSkillId: '190319',
-    sourceStatus: 'Blizzard 12.0.5 노트, Wowhead, Icy Veins, Archon/WCL 2026-05-27 로그 집계, Altered Time 공개 Discord 경로 확인.',
+    sourceStatus: 'Blizzard 한국어 12.0.5 노트, Wowhead, Icy Veins, Archon 2026-05-27 레이드·쐐기 로그 집계, Altered Time 공개 Discord 경로 확인.',
     summary:
       '화염 마법사는 발화 창 안에 열기, 화염 작렬, 몰아치는 열기!, 불덩이 작렬 또는 불기둥을 압축하는 원거리 딜러입니다. 12.0.5 기준 핵심은 긴 고정 순서가 아니라, 치명타로 생긴 열기를 화염 작렬로 몰아치는 열기!로 바꾸고 그 소비기를 발화와 대상 수에 맞춰 배정하는 판단입니다.',
     sourceNote:
-      '스킬명은 KB와 Wowhead 한국어 툴팁 API를 다시 대조했습니다. 영웅 특성 트리명은 Wowhead 한국어 페이지와 Archon이 Sunfury/Frostfire 영문 라벨을 그대로 쓰므로 임의 번역하지 않습니다. 운용 판단은 Blizzard 12.0.5 패치 노트, Wowhead 2026-03-10 개요·2026-03-18 딜사이클, Icy Veins 2026-05-23 개요·2026-05-22 딜사이클, Archon 2026-05-27(KST) 확인 기준 레이드 2,872표본 Sunfury 98.1% / Frostfire 1.8%, 쐐기 전체 12,979표본 Sunfury 95.7% / Frostfire 4.2%, 고단 681표본 Sunfury 98.7% / Frostfire 1.2%, Altered Time 공개 Discord 경로를 교차 확인했습니다. Icy Veins의 주간 초기화 관련 문구는 현재 로그와 분리해 변경 이력/주의사항으로만 봅니다.',
+      '스킬명은 KB와 Wowhead 한국어 툴팁을 다시 대조했습니다. 영웅 특성 트리명은 Wowhead 한국어 페이지와 Archon이 Sunfury/Frostfire 영문 라벨을 그대로 쓰므로 임의 번역하지 않습니다. 운용 판단은 Blizzard 한국어 12.0.5 패치 노트, Wowhead 2026-03-10 개요·2026-03-18 딜사이클, Icy Veins 2026-05-23 개요·2026-05-22 딜사이클, Archon 2026-05-27(KST) 확인 기준 레이드 2,872표본 Sunfury 98.1% / Frostfire 1.8%, 쐐기 +7 이상 전체 던전 12,979표본 Sunfury 95.7% / Frostfire 4.2%, 고단 681표본 Sunfury 98.7% / Frostfire 1.2%, Altered Time 공개 Discord 경로를 교차 확인했습니다. Icy Veins의 주간 초기화 관련 문구는 현재 로그와 분리해 변경 이력/주의사항으로만 봅니다.',
     sources: [
       {
         tier: 'S',
-        label: 'Blizzard 12.0.5 Content Update Notes',
+        label: 'Blizzard 한국어 12.0.5 콘텐츠 업데이트 노트',
         url: 'https://news.blizzard.com/ko-kr/article/24271855/12-0-5',
         updated: '2026-04-21',
         note: '12.0.5 본 패치에서 마법사 직접 항목은 비전/냉기 수정 중심이며, 화염 직접 변경은 주요 항목으로 확인되지 않음',
@@ -4610,24 +4610,24 @@ export const guideManuscripts = {
       },
       {
         tier: 'A',
-        label: 'Archon Fire Mage Raid Talents',
+        label: 'Archon 화염 마법사 레이드 특성',
         url: 'https://www.archon.gg/wow/builds/fire/mage/raid/talents/mythic/all-bosses',
         updated: '2026-05-27(KST) 확인',
         note: '최근 14일 신화 레이드 상위 50% 2,872표본. Sunfury 98.1%, Frostfire 1.8%, 추천 전문화+영웅 빌드 16.5%, 150.8k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Fire Mage Mythic+ Talents',
+        label: 'Archon 화염 마법사 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/fire/mage/mythic-plus/talents/10/all-dungeons/this-week',
         updated: '2026-05-27(KST) 확인',
-        note: '최근 14일 +7~+23 쐐기 12,979표본. Sunfury 95.7%, Frostfire 4.2%, 추천 전문화+영웅 빌드 22.1%, +19 / 139.4k DPS 확인',
+        note: '최근 14일 쐐기 +7 이상 전체 던전 12,979표본. Sunfury 95.7%, Frostfire 4.2%, 추천 전문화+영웅 빌드 22.1%, 쐐기돌 +19, 139.4k DPS 확인',
       },
       {
         tier: 'A',
-        label: 'Archon Fire Mage High-Key Talents',
+        label: 'Archon 화염 마법사 고단 쐐기 특성',
         url: 'https://www.archon.gg/wow/builds/fire/mage/mythic-plus/talents/high-keys/all-dungeons/this-week',
         updated: '2026-05-27(KST) 확인',
-        note: '최근 14일 상위 5% 고단 681표본. Sunfury 98.7%, Frostfire 1.2%, 추천 전문화+영웅 빌드 19.8%, +20 / 184.1k DPS 확인',
+        note: '최근 14일 상위 5% 고단 681표본. Sunfury 98.7%, Frostfire 1.2%, 추천 전문화+영웅 빌드 19.8%, 쐐기돌 +20, 184.1k DPS 확인',
       },
       {
         tier: 'B',
@@ -4642,8 +4642,8 @@ export const guideManuscripts = {
       'Wowhead와 Icy Veins 모두 발화를 화염의 핵심 폭딜 창으로 보며, 발화는 모든 주문을 치명타로 만들어 몰아치는 열기! 루프를 가속합니다.',
       'Icy Veins 딜사이클은 유성 사용법과 발화 우선순위를 갱신했고, Wowhead와 Icy Veins 모두 불기둥 전환을 단순 저타겟 기준이 아니라 4타겟 이상 또는 우선 대상 가치에 따라 판단하라고 설명합니다.',
       'Icy Veins 2026-05-23 가이드는 12.0.5 본 패치에서 화염 직접 변경은 없다고 정리하지만, 주간 초기화 전후 변경 이력은 로그 검수와 분리해 다시 확인해야 합니다.',
-      'Archon 2026-05-27(KST) 확인 기준 최근 14일 신화 레이드는 2,872표본에서 Sunfury 98.1%, Frostfire 1.8%, +7~+23 쐐기 전체는 12,979표본에서 Sunfury 95.7%, Frostfire 4.2%, 고단 상위 5%는 681표본에서 Sunfury 98.7%, Frostfire 1.2%로 집계되어 현재 기본 영웅 특성은 Sunfury로 둡니다.',
-      'Wowhead 한국어 툴팁 API로 발화, 화염 작렬, 불덩이 작렬, 불기둥, 유성, 몰아치는 열기!, 열기, 특화: 작열, 불태우기, 이상 고열, 이글거리는 방벽, 얼음불꽃 화살의 명칭과 아이콘을 다시 확인했습니다.',
+      'Archon 2026-05-27(KST) 확인 기준 최근 14일 신화 레이드는 2,872표본에서 Sunfury 98.1%, Frostfire 1.8%, 쐐기 +7 이상 전체 던전은 12,979표본에서 Sunfury 95.7%, Frostfire 4.2%, 고단 상위 5%는 681표본에서 Sunfury 98.7%, Frostfire 1.2%로 집계되어 현재 기본 영웅 특성은 Sunfury로 둡니다.',
+      'Wowhead 한국어 툴팁으로 발화, 화염 작렬, 불덩이 작렬, 불기둥, 유성, 몰아치는 열기!, 열기, 특화: 작열, 불태우기, 이상 고열, 이글거리는 방벽, 얼음불꽃 화살의 명칭과 아이콘을 다시 확인했습니다.',
     ],
     caveats: [
       'Altered Time은 공개 서버 경로만 확인했고, 비공개 채널 원문이나 핀 글은 직접 인용하지 않습니다.',
@@ -4656,7 +4656,7 @@ export const guideManuscripts = {
         title: '1. 핵심 결론',
         paragraphs: [
           '12.0.5 화염 마법사는 발화 창을 중심으로 열기, 화염 작렬, 몰아치는 열기!, 불덩이 작렬 또는 불기둥을 빠르게 왕복하는 전문화입니다. 버튼 수는 많지 않지만, 한 번의 발화 안에서 몇 번의 전환-소비 루프를 손실 없이 넣었는지가 로그를 가릅니다. 따라서 화염은 긴 고정 순서를 외우는 직업이 아니라, 발동 상태와 충전 수를 읽는 상태 전환형 원거리 딜러로 봐야 합니다.',
-          '현재 로그 기준 기본 영웅 특성은 Sunfury입니다. Archon 2026-05-27(KST) 확인 기준 신화 레이드는 2,872표본에서 Sunfury 98.1%, +7~+23 쐐기 전체는 12,979표본에서 Sunfury 95.7%, 고단 상위 5%는 681표본에서 Sunfury 98.7%로 집계됐습니다. 추천 빌드도 레이드는 전문화+영웅 빌드 16.5% / 150.8k DPS, 쐐기 전체는 22.1% / +19 / 139.4k DPS, 고단은 19.8% / +20 / 184.1k DPS로 모두 Sunfury 축입니다. 다만 Icy Veins는 Frostfire 단일 선택지를 계속 제시하므로, 단일 전투에서 Frostfire가 더 나은 개인 심 결과를 줄 수 있다는 예외는 남겨야 합니다.',
+          '현재 로그 기준 기본 영웅 특성은 Sunfury입니다. Archon 2026-05-27(KST) 확인 기준 신화 레이드는 2,872표본에서 Sunfury 98.1%, 쐐기 +7 이상 전체 던전은 12,979표본에서 Sunfury 95.7%, 고단 상위 5%는 681표본에서 Sunfury 98.7%로 집계됐습니다. 추천 빌드도 레이드는 전문화+영웅 빌드 16.5% / 150.8k DPS, 쐐기 전체는 22.1% / 쐐기돌 +19 / 139.4k DPS, 고단은 19.8% / 쐐기돌 +20 / 184.1k DPS로 모두 Sunfury 축입니다. 다만 Icy Veins는 Frostfire 단일 선택지를 계속 제시하므로, 단일 전투에서 Frostfire가 더 나은 개인 심 결과를 줄 수 있다는 예외는 남겨야 합니다.',
           'Icy Veins의 주간 초기화 관련 변경 이력은 현재 로그와 함께 다시 확인해야 하는 항목입니다. 그래서 이 페이지의 기본 해설은 2026-05-27(KST) 로그와 현행 Wowhead/Icy Veins 운용 문서가 동시에 가리키는 Sunfury 기준으로 두고, Frostfire는 단일/개인 심 분기로 따로 읽습니다.',
         ],
         bullets: [
