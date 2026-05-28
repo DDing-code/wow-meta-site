@@ -1997,6 +1997,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             <Clock3 size={15} />
             <strong>{getFlowChartTitle(guide)}</strong>
           </FieldGuideCardHead>
+          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems} inlineTerms={inlineTerms} />
           {!!(openerIntroTitle || openerIntroSummary) && (
             <OpenerFlowIntro>
               {!!openerIntroTitle && (
@@ -2007,7 +2008,6 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               )}
             </OpenerFlowIntro>
           )}
-          <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems} inlineTerms={inlineTerms} />
         </OpenerFlowCard>
       )}
 
@@ -5550,7 +5550,7 @@ const OpenerFlowIntro = styled.div`
   display: grid;
   gap: 6px;
   padding: 13px 16px;
-  border-bottom: 1px solid rgba(244, 239, 229, 0.08);
+  border-top: 1px solid rgba(244, 239, 229, 0.08);
   background:
     linear-gradient(90deg, rgba(184, 145, 91, 0.1), rgba(184, 145, 91, 0)),
     rgba(8, 13, 17, 0.48);
@@ -5629,6 +5629,7 @@ const OpenerFlowViewport = styled.div`
   max-width: 100%;
   overflow: hidden;
   border-top: 1px solid rgba(244, 239, 229, 0.07);
+  border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   background: rgba(8, 13, 17, 0.46);
 `;
 
@@ -5761,11 +5762,11 @@ const OpenerFlowList = styled.ol`
   position: relative;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(178px, 17cqw, 224px);
+  grid-auto-columns: clamp(164px, 15cqw, 208px);
   align-items: start;
-  gap: 24px;
+  gap: 22px;
   margin: 0;
-  padding: 24px 22px 24px;
+  padding: 24px 20px 24px;
   list-style: none;
   overflow-x: auto;
   overflow-y: hidden;
@@ -6122,7 +6123,7 @@ const OpenerStepBody = styled.div`
     word-break: keep-all;
     overflow-wrap: break-word;
     text-wrap: pretty;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
 
