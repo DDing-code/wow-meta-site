@@ -1924,7 +1924,7 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
           ))}
         </OpenerFlowPhaseLegend>
       )}
-      <OpenerFlowList $color={guide.color} aria-label={chartLabel}>
+      <OpenerFlowList $color={guide.color} aria-label={chartLabel} data-opener-flow-rail>
         {flowItems.map((step, index) => (
           <li key={step.key}>
             <OpenerStepTop>
@@ -5838,26 +5838,32 @@ const OpenerFlowList = styled.ol`
   }
 
   @media (max-width: 640px) {
-    grid-auto-flow: column;
-    grid-auto-columns: clamp(158px, 72cqw, 210px);
-    gap: 18px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 18px 14px 20px;
-    scroll-padding-inline: 14px;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-columns: initial;
+    gap: 13px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 17px 14px 20px;
+    scroll-snap-type: none;
+    scroll-padding-inline: 0;
 
     &::before {
       display: block;
-      top: 47px;
-      left: 44px;
-      right: 44px;
-      height: 2px;
+      top: 38px;
+      bottom: 38px;
+      left: 40px;
+      right: auto;
+      width: 2px;
+      height: auto;
+      background: linear-gradient(180deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
     }
 
     li {
-      grid-template-rows: 58px minmax(0, 1fr);
-      justify-items: center;
-      gap: 10px;
+      grid-template-columns: 54px minmax(0, 1fr);
+      grid-template-rows: auto;
+      justify-items: start;
+      gap: 12px;
       min-height: 0;
       padding: 0;
       align-items: start;
@@ -5865,26 +5871,27 @@ const OpenerFlowList = styled.ol`
     }
 
     li::before {
-      left: calc(50% + 27px);
+      left: 54px;
       right: auto;
-      top: 46px;
+      top: 27px;
       bottom: auto;
-      width: calc(50% + 18px);
+      width: 14px;
       height: 2px;
       background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     }
 
     li:not(:last-child)::after {
       content: '';
-      top: 40px;
-      right: -13px;
-      left: auto;
-      bottom: auto;
+      top: auto;
+      right: auto;
+      bottom: -10px;
+      left: 34px;
       width: 0;
       height: 0;
-      border-top: 7px solid transparent;
-      border-bottom: 7px solid transparent;
-      border-left: 9px solid var(--flow-color);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 9px solid var(--flow-color);
+      border-bottom: 0;
       background: transparent;
       transform: none;
     }
@@ -5895,26 +5902,32 @@ const OpenerFlowList = styled.ol`
   }
 
   @container (max-width: 640px) {
-    grid-auto-flow: column;
-    grid-auto-columns: clamp(158px, 72cqw, 210px);
-    gap: 18px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 18px 14px 20px;
-    scroll-padding-inline: 14px;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-columns: initial;
+    gap: 13px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 17px 14px 20px;
+    scroll-snap-type: none;
+    scroll-padding-inline: 0;
 
     &::before {
       display: block;
-      top: 47px;
-      left: 44px;
-      right: 44px;
-      height: 2px;
+      top: 38px;
+      bottom: 38px;
+      left: 40px;
+      right: auto;
+      width: 2px;
+      height: auto;
+      background: linear-gradient(180deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
     }
 
     li {
-      grid-template-rows: 58px minmax(0, 1fr);
-      justify-items: center;
-      gap: 10px;
+      grid-template-columns: 54px minmax(0, 1fr);
+      grid-template-rows: auto;
+      justify-items: start;
+      gap: 12px;
       min-height: 0;
       padding: 0;
       align-items: start;
@@ -5922,26 +5935,27 @@ const OpenerFlowList = styled.ol`
     }
 
     li::before {
-      left: calc(50% + 27px);
+      left: 54px;
       right: auto;
-      top: 46px;
+      top: 27px;
       bottom: auto;
-      width: calc(50% + 18px);
+      width: 14px;
       height: 2px;
       background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     }
 
     li:not(:last-child)::after {
       content: '';
-      top: 40px;
-      right: -13px;
-      left: auto;
-      bottom: auto;
+      top: auto;
+      right: auto;
+      bottom: -10px;
+      left: 34px;
       width: 0;
       height: 0;
-      border-top: 7px solid transparent;
-      border-bottom: 7px solid transparent;
-      border-left: 9px solid var(--flow-color);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 9px solid var(--flow-color);
+      border-bottom: 0;
       background: transparent;
       transform: none;
     }
@@ -6118,11 +6132,11 @@ const OpenerStepBody = styled.div`
     padding: 10px;
 
     &::before {
-      top: -10px;
-      left: 50%;
-      width: 1px;
-      height: 10px;
-      background: linear-gradient(180deg, var(--flow-line), rgba(184, 145, 91, 0.12));
+      top: 26px;
+      left: -12px;
+      width: 12px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
     }
 
     p {
