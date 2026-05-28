@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T15:28:30.910Z",
+    "generatedAt": "2026-05-28T05:20:50.426Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -26545,10 +26545,10 @@
       "icon": "spell_druid_wildburst",
       "iconName": "spell_druid_wildburst",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "즉시",
+      "cooldown": "없음",
+      "castTime": "패시브",
       "resourceCost": "없음",
-      "range": "치유 대상",
+      "range": "자신의 지속 치유 효과",
       "description": "# 번성 (Flourish)",
       "category": "ability",
       "tags": [],
@@ -26566,15 +26566,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/평온",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/꽃피우기",
           "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.043,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
