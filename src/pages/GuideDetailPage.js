@@ -128,7 +128,8 @@ function displayGuideText(value) {
     .replace(/공통 본문/g, '공통 설명')
     .replace(/본문/g, '설명')
     .replace(/별도 장/g, '별도 파트')
-    .replace(/오프닝 딜사이클/g, '오프닝 전투 흐름')
+    .replace(/오프닝\s*딜\s*사이클/g, '오프닝 전투 흐름')
+    .replace(/오프닝\s*딜사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝 순서표/g, '오프닝 전투 흐름')
     .replace(/시각자료/g, '차트')
     .replace(/보조 자료/g, '확인용 차트')
@@ -1828,7 +1829,7 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
 
 function getFlowCardTitle(guide) {
   if (guide?.role === 'healers') return '피해 대응 전투 흐름';
-  if (guide?.role === 'tanks') return '진입/방어 전투 흐름';
+  if (guide?.role === 'tanks') return '풀링/방어 전투 흐름';
   return '오프닝 전투 흐름';
 }
 
@@ -1995,17 +1996,18 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         >
           <FieldGuideCardHead>
             <Clock3 size={15} />
-            <strong>{getFlowChartTitle(guide)}</strong>
+            <FlowCardHeadText>
+              <strong>{getFlowChartTitle(guide)}</strong>
+              {!!openerIntroTitle && (
+                <span>{renderGuideText(openerIntroTitle, inlineTerms)}</span>
+              )}
+            </FlowCardHeadText>
           </FieldGuideCardHead>
           <OpenerFlowPreview guide={guide} steps={openerFlowSteps} fallbackItems={openerFallbackItems} inlineTerms={inlineTerms} />
-          {!!(openerIntroTitle || openerIntroSummary) && (
+          {!!openerIntroSummary && (
             <OpenerFlowIntro>
-              {!!openerIntroTitle && (
-                <strong>{renderGuideText(openerIntroTitle, inlineTerms)}</strong>
-              )}
-              {!!openerIntroSummary && (
-                <p>{renderGuideText(openerIntroSummary, inlineTerms)}</p>
-              )}
+              <strong>차트 읽는 법</strong>
+              <p>{renderGuideText(openerIntroSummary, inlineTerms)}</p>
             </OpenerFlowIntro>
           )}
         </OpenerFlowCard>
@@ -5592,6 +5594,26 @@ const FieldGuideCardHead = styled.div`
     font-size: 0.92rem;
     font-weight: 950;
     letter-spacing: 0;
+  }
+`;
+
+const FlowCardHeadText = styled.div`
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+
+  strong,
+  span {
+    min-width: 0;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  span {
+    color: #d9b97a;
+    font-size: 0.72rem;
+    font-weight: 850;
+    line-height: 1.35;
   }
 `;
 
