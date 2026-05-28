@@ -22,6 +22,7 @@ const MINIMUMS = {
 const TRUST_TIERS = new Set(['S', 'A', 'B', 'C']);
 const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 창|상태 전환/i;
 const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
+const INTERNAL_COPY_PATTERN = /원고|프로토타입|내부 문서|이 문서|문서에서|문서에서는|시각화 배치 기준|이 페이지의 시각화|보조 시각화|차트 배치/i;
 const LOG_SOURCE_PATTERN = /Archon|WCL|Warcraft Logs/i;
 const COMMUNITY_SOURCE_PATTERN = /Discord|Dreamgrove|Fel Hammer|Acherus|Death's Advance|Skyhold|Ravenholdt|Earthshrine|Warcraft Priests|Peak of Serenity|Wyrmrest|Ancestral Guidance|Altered Time|Trueshot Lodge|공개 서버|공개 경로|컴펜디엄/i;
 const LOG_EVIDENCE_PATTERN = /표본|parses?|DPS|HPS|쐐기돌|사용률|채택률|추천 .*빌드|상위 50%|상위 5%|최근 14일/i;
@@ -57,6 +58,10 @@ function combinedSourceText(manuscript) {
       source.note,
     ]),
   ].filter(Boolean).join(' ');
+}
+
+function combinedManuscriptText(manuscript) {
+  return JSON.stringify(manuscript);
 }
 
 function validateSource(spec, source, index) {
@@ -150,6 +155,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   const blocks = manuscript.blocks || [];
   const tips = manuscript.tips || [];
   const sourceText = combinedSourceText(manuscript);
+  const manuscriptText = combinedManuscriptText(manuscript);
   const openerText = [
     manuscript.opener?.title,
     manuscript.opener?.summary,
@@ -159,6 +165,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   assert(manuscript.researchedAt, `${prefix}: researchedAt is missing`);
   assert(manuscript.summary && manuscript.summary.length >= 80, `${prefix}: summary is too thin`);
   assert(manuscript.sourceNote && manuscript.sourceNote.length >= 120, `${prefix}: sourceNote is too thin`);
+  assert(!INTERNAL_COPY_PATTERN.test(manuscriptText), `${prefix}: contains internal/prototype copy`);
   assert(manuscript.graphCenterSkillId, `${prefix}: graphCenterSkillId is missing`);
   assert(sources.length >= MINIMUMS.sources, `${prefix}: needs at least ${MINIMUMS.sources} sources`);
   assert(openerSteps.length >= MINIMUMS.openerSteps, `${prefix}: needs at least ${MINIMUMS.openerSteps} combat-flow steps`);
