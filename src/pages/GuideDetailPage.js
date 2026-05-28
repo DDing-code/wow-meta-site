@@ -4967,10 +4967,12 @@ const Page = styled.div`
   margin: 0 auto;
   padding: 34px 0 92px;
   overflow-x: hidden;
+  min-width: 0;
 
   @media (max-width: 560px) {
     width: calc(100vw - 20px);
     max-width: calc(100vw - 20px);
+    padding-top: 34px;
   }
 `;
 
@@ -4991,18 +4993,21 @@ const HeroTop = styled.div`
   align-items: center;
   padding: 14px 16px;
   border-bottom: 1px solid rgba(184, 145, 91, 0.2);
+  min-width: 0;
 `;
 
 const BackLink = styled(Link)`
   display: inline-flex;
   align-items: center;
   gap: 7px;
+  min-width: 0;
   color: #c7bba7;
   font-size: 0.82rem;
   font-weight: 900;
 `;
 
 const PatchBadge = styled.div`
+  flex: 0 0 auto;
   color: #f4efe5;
   font-size: 0.78rem;
   font-weight: 900;
@@ -5013,6 +5018,7 @@ const HeroGrid = styled.div`
   grid-template-columns: minmax(0, 1fr) 380px;
   gap: 24px;
   padding: clamp(18px, 4vw, 34px);
+  min-width: 0;
 
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
@@ -5042,15 +5048,22 @@ const HeroLead = styled.p`
   font-size: 1rem;
   font-weight: 750;
   word-break: keep-all;
+  overflow-wrap: anywhere;
 `;
 
 const HeroStats = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+  min-width: 0;
+
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const HeroStat = styled.div`
+  min-width: 0;
   min-height: 82px;
   padding: 14px;
   border: 1px solid rgba(184, 145, 91, 0.24);
@@ -5232,6 +5245,7 @@ const PaperLead = styled.div`
   grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   align-items: start;
+  min-width: 0;
   padding: clamp(16px, 3vw, 22px);
   border-left: 4px solid ${props => props.$color};
   background:
@@ -5245,6 +5259,7 @@ const PaperLead = styled.div`
     font-weight: 780;
     line-height: 1.8;
     word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   @media (max-width: 760px) {
@@ -5823,52 +5838,55 @@ const OpenerFlowList = styled.ol`
   }
 
   @media (max-width: 640px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
-    gap: 12px;
-    overflow: visible;
-    padding: 12px;
+    grid-auto-flow: column;
+    grid-auto-columns: clamp(158px, 72cqw, 210px);
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 18px 14px 20px;
+    scroll-padding-inline: 14px;
 
     &::before {
-      display: none;
+      display: block;
+      top: 47px;
+      left: 44px;
+      right: 44px;
+      height: 2px;
     }
 
     li {
-      display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
-      column-gap: 12px;
+      grid-template-rows: 58px minmax(0, 1fr);
+      justify-items: center;
+      gap: 10px;
       min-height: 0;
       padding: 0;
       align-items: start;
-      justify-items: stretch;
       overflow: visible;
     }
 
     li::before {
-      left: 28px;
+      left: calc(50% + 27px);
       right: auto;
-      top: 58px;
-      bottom: -14px;
-      width: 2px;
-      height: auto;
-      background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
+      top: 46px;
+      bottom: auto;
+      width: calc(50% + 18px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     }
 
     li:not(:last-child)::after {
       content: '';
-      top: auto;
-      right: auto;
-      left: 21px;
-      bottom: 4px;
-      width: 14px;
-      height: 14px;
-      border-style: solid;
-      border-width: 0 2px 2px 0;
-      border-color: var(--flow-color);
+      top: 40px;
+      right: -13px;
+      left: auto;
+      bottom: auto;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 9px solid var(--flow-color);
       background: transparent;
-      transform: rotate(45deg);
+      transform: none;
     }
 
     li:last-child::before {
@@ -5877,52 +5895,55 @@ const OpenerFlowList = styled.ol`
   }
 
   @container (max-width: 640px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
-    gap: 12px;
-    overflow: visible;
-    padding: 12px;
+    grid-auto-flow: column;
+    grid-auto-columns: clamp(158px, 72cqw, 210px);
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 18px 14px 20px;
+    scroll-padding-inline: 14px;
 
     &::before {
-      display: none;
+      display: block;
+      top: 47px;
+      left: 44px;
+      right: 44px;
+      height: 2px;
     }
 
     li {
-      display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
-      column-gap: 12px;
+      grid-template-rows: 58px minmax(0, 1fr);
+      justify-items: center;
+      gap: 10px;
       min-height: 0;
       padding: 0;
       align-items: start;
-      justify-items: stretch;
       overflow: visible;
     }
 
     li::before {
-      left: 28px;
+      left: calc(50% + 27px);
       right: auto;
-      top: 58px;
-      bottom: -14px;
-      width: 2px;
-      height: auto;
-      background: linear-gradient(180deg, var(--flow-color), rgba(184, 145, 91, 0.08));
+      top: 46px;
+      bottom: auto;
+      width: calc(50% + 18px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
     }
 
     li:not(:last-child)::after {
       content: '';
-      top: auto;
-      right: auto;
-      left: 21px;
-      bottom: 4px;
-      width: 14px;
-      height: 14px;
-      border-style: solid;
-      border-width: 0 2px 2px 0;
-      border-color: var(--flow-color);
+      top: 40px;
+      right: -13px;
+      left: auto;
+      bottom: auto;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 9px solid var(--flow-color);
       background: transparent;
-      transform: rotate(45deg);
+      transform: none;
     }
 
     li:last-child::before {
@@ -6008,7 +6029,7 @@ const OpenerStepTop = styled.div`
   }
 
   @media (max-width: 560px) {
-    grid-row: 1 / span 2;
+    grid-row: auto;
     align-self: start;
     width: 54px;
     height: 54px;
@@ -6092,16 +6113,16 @@ const OpenerStepBody = styled.div`
   }
 
   @media (max-width: 560px) {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-column: auto;
+    grid-row: auto;
     padding: 10px;
 
     &::before {
-      top: 26px;
-      left: -12px;
-      width: 12px;
-      height: 1px;
-      background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
+      top: -10px;
+      left: 50%;
+      width: 1px;
+      height: 10px;
+      background: linear-gradient(180deg, var(--flow-line), rgba(184, 145, 91, 0.12));
     }
 
     p {
