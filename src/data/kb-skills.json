@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-28T05:20:50.426Z",
+    "generatedAt": "2026-05-28T05:37:40.895Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -12,15 +12,15 @@
       "total": 2449,
       "byType": {
         "atomic-skill": 495,
-        "hero-talent": 521,
+        "hero-talent": 520,
         "proc": 4,
         "skill": 118,
         "talent": 1019,
         "spec-talent": 200,
         "buff": 2,
+        "class-talent": 81,
         "atomic-talent": 1,
-        "passive": 9,
-        "class-talent": 80
+        "passive": 9
       },
       "byClass": {
         "DeathKnight": 75,
@@ -95,7 +95,7 @@
       },
       "quality": {
         "withWikilinks": 2442,
-        "withSynergies": 661,
+        "withSynergies": 662,
         "avgLinkDensity": "0.034"
       }
     }
@@ -18277,12 +18277,11 @@
     },
     "114255": {
       "id": "114255",
-      "type": "hero-talent",
+      "type": "class-talent",
       "class": "Priest",
       "spec": "공용",
       "specs": [
-        "Holy",
-        "Shadow"
+        "Holy"
       ],
       "name": "빛의 쇄도",
       "koreanName": "빛의 쇄도",
@@ -18290,12 +18289,12 @@
       "icon": "spell_holy_surgeoflight",
       "iconName": "spell_holy_surgeoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "확률 발동",
+      "castTime": "발동 효과",
       "resourceCost": "없음",
       "range": "자신",
       "description": "# 빛의 쇄도 (Surge of Light)",
-      "category": "hero-talent",
+      "category": "class-talent",
       "tags": [],
       "patch": "12.0.5",
       "created": "",
@@ -18309,14 +18308,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_surgeoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {

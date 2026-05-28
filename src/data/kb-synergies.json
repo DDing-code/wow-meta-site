@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T15:28:30.911Z",
+    "generatedAt": "2026-05-28T05:37:40.896Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -9012,8 +9012,7 @@
       "participants": [
         "585",
         "114255",
-        "2061",
-        "596"
+        "2061"
       ],
       "class": "Priest",
       "spec": "신성",
@@ -9028,7 +9027,9 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\성스러운일격-빛의쇄도-공백관리.md",
         "lastUpdate": ""
