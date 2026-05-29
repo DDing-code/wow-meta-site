@@ -1827,6 +1827,24 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
   });
 }
 
+function getDefaultOpenerFlowSteps(data, profile, guide) {
+  const source = (data?.rotationSource?.length ? data.rotationSource : data?.featuredSkills || [])
+    .slice(0, OPENER_FLOW_MAX_STEPS);
+
+  return source.map((skill, index) => {
+    const phase = getFlowPhaseLabel(guide, index, Math.max(source.length, 1));
+    return {
+      key: `default-flow-${skill.id}-${index}`,
+      skill,
+      label: profile.steps[index] || `${index + 1}단계`,
+      note: skillName(skill),
+      stage: phase,
+      phase,
+      trigger: getFlowTriggerLabel(guide, phase, index, Math.max(source.length, 1)),
+    };
+  });
+}
+
 function getFlowCardTitle(guide) {
   if (guide?.role === 'healers') return '피해 대응 전투 흐름';
   if (guide?.role === 'tanks') return '풀링/방어 전투 흐름';
@@ -1954,15 +1972,19 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block, guide));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks.slice(0, 4);
-  const openerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
+  const manualOpenerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
   const openerFallbackItems = openerBlocks
     .flatMap(block => [
       ...(block.bullets || []),
       ...(block.paragraphs || []),
     ])
     .slice(0, OPENER_FLOW_MAX_STEPS);
-  const openerIntroTitle = manuscript.opener?.title || openerBlock?.title;
-  const openerIntroSummary = manuscript.opener?.summary || openerBlock?.paragraphs?.[0];
+  const defaultOpenerFlowSteps = !manualOpenerFlowSteps.length && !openerFallbackItems.length
+    ? getDefaultOpenerFlowSteps(data, profile, guide)
+    : [];
+  const openerFlowSteps = manualOpenerFlowSteps.length ? manualOpenerFlowSteps : defaultOpenerFlowSteps;
+  const openerIntroTitle = manuscript.opener?.title || openerBlock?.title || profile.cycleTitle;
+  const openerIntroSummary = manuscript.opener?.summary || openerBlock?.paragraphs?.[0] || profile.lead;
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
