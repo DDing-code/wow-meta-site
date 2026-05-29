@@ -47,6 +47,15 @@ const forbiddenTerms = [
   { term: '\ucd94\ucc9c \uc804\ubb38\ud654+\uc601\uc6c5 \ube4c\ub4dc', replacement: '\ucd94\ucc9c \ud2b9\uc131 \uc870\ud569' },
   { term: '\uc804\ubb38\ud654+\uc601\uc6c5 \ube4c\ub4dc', replacement: '\ub300\ud45c \ube4c\ub4dc' },
   { term: '\uc774 \ud398\uc774\uc9c0\uc758 \uc911\uc2ec', replacement: '\uadf8\ub798\ud504\uc758 \uc911\uc2ec/\ud575\uc2ec' },
+  { term: '\uc774 \ud398\uc774\uc9c0', replacement: '\uc774 \uac00\uc774\ub4dc' },
+  { term: '\uc774 \uae00', replacement: '\uc774 \uac00\uc774\ub4dc' },
+  { term: '\ud53c\ud574 \ud504\ub85c\ud544', replacement: '\ud53c\ud574 \uc131\uaca9' },
+  { term: '\ud45c\uc900 \ubcf8\ubb38', replacement: '\ud45c\uc900 \uc124\uba85' },
+  { term: '\uacf5\ud1b5 \ubcf8\ubb38', replacement: '\uacf5\ud1b5 \uc124\uba85' },
+  { term: '\uae30\ubcf8 \ubcf8\ubb38', replacement: '\uae30\ubcf8 \uc124\uba85' },
+  { term: '\uc2e4\ud328 \ubaa8\ub4dc', replacement: '\uc790\uc8fc \ub098\ub294 \uc2e4\uc218' },
+  { term: '\uac00\uc774\ub4dc\uc740', replacement: '\uac00\uc774\ub4dc\ub294' },
+  { term: '\uc124\uba85\uc73c\ub85c \uc124\uba85', replacement: '\ud750\ub984\uc73c\ub85c \ub450\uace0' },
   { term: 'KST', replacement: '\ud55c\uad6d \uc2dc\uac04' },
   { term: 'Discord', replacement: '\ub514\uc2a4\ucf54\ub4dc' },
   { term: '\ucc44\uc6b0\uae30 \uae30\uc220', replacement: '\ud544\ub7ec' },
@@ -104,6 +113,11 @@ const pageForbiddenTerms = [
   { term: '\ud2b8\ub9ac\uc544\uc9c0', replacement: '\uae09\ub77d \ub300\uc751/\ub300\uc0c1 \ubcf5\uad6c' },
   { term: '\uc815\ub82c \ub808\uc778', replacement: '\ub9de\ucd94\uae30 \ud45c/\uad6c\uac04' },
   { term: '\ub7a8\ub364\uc131', replacement: '\ubb34\uc791\uc704\uc131/\ubb34\uc791\uc704' },
+  { term: '\uc2e4\ud328 \ubaa8\ub4dc', replacement: '\uc790\uc8fc \ub098\ub294 \uc2e4\uc218' },
+  { term: '\ud575\uc2ec \uba85\uc81c', replacement: '\ud575\uc2ec \uc694\uc57d' },
+  { term: '\uc6b4\uc6a9 \ubaa8\ub378', replacement: '\uc6b4\uc6a9' },
+  { term: '\uac80\uc99d \ubc94\uc704', replacement: '\ucd9c\ucc98 \ud655\uc778' },
+  { term: '\ubcf4\uc870 \uc790\ub8cc', replacement: '\uccb4\ud06c\uc6a9' },
 ];
 
 const awkwardContextPatterns = [
@@ -119,26 +133,26 @@ const awkwardContextPatterns = [
 
 const allowedWindowTerms = /얼음창|창끝|표창|투창병|창공의 힘|용사의 창|생명석 창조|영혼의 샘 창조|창조/;
 
-function findLine(source, index) {
-  return source.slice(0, index).split(/\r?\n/).length;
-}
-
 function collectForbiddenTermErrors(filePath, terms) {
-  const source = fs.readFileSync(filePath, 'utf8');
+  const lines = fs.readFileSync(filePath, 'utf8').split(/\r?\n/);
   const errors = [];
 
-  for (const item of terms) {
-    let index = source.indexOf(item.term);
-    while (index !== -1) {
-      errors.push({
-        filePath,
-        line: findLine(source, index),
-        term: item.term,
-        replacement: item.replacement,
-      });
-      index = source.indexOf(item.term, index + item.term.length);
+  lines.forEach((line, lineIndex) => {
+    if (line.includes('.replace(/')) return;
+
+    for (const item of terms) {
+      let index = line.indexOf(item.term);
+      while (index !== -1) {
+        errors.push({
+          filePath,
+          line: lineIndex + 1,
+          term: item.term,
+          replacement: item.replacement,
+        });
+        index = line.indexOf(item.term, index + item.term.length);
+      }
     }
-  }
+  });
 
   return errors;
 }

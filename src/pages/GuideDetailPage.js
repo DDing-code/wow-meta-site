@@ -983,15 +983,15 @@ function summarizeNames(items, limit = 4) {
 
 function roleRiskModel(guide) {
   if (guide.role === 'tanks') {
-    return '방어기 공백, 자원 과소비, 다음 위험 구간 직전의 쿨기 선사용이 핵심 실패 모드입니다.';
+    return '자주 터지는 지점은 방어기 공백, 자원 과소비, 다음 위험 구간 직전의 쿨기 선사용입니다.';
   }
   if (guide.role === 'healers') {
-    return '피해 예측 실패, 광역 회복 쿨기 중복, 마나 소모 과속, 긴급 복구 수단의 지연이 핵심 실패 모드입니다.';
+    return '자주 터지는 지점은 피해 예측 실패, 광역 회복 쿨기 중복, 마나 과소모, 긴급 복구 지연입니다.';
   }
   if (guide.id === 'evoker-augmentation') {
-    return '파티 강화 구간 불일치, 개인 쿨기와 아군 쿨기 분리, 유지 효과 공백이 핵심 실패 모드입니다.';
+    return '자주 터지는 지점은 파티 강화 타이밍 불일치, 개인 쿨기와 아군 쿨기 분리, 유지 효과 공백입니다.';
   }
-  return '자원 과잉, 주요 쿨기 지연, 발동 효과 방치, 단일/광역 전환 실패가 핵심 실패 모드입니다.';
+  return '자주 터지는 지점은 자원 과잉, 주요 쿨기 지연, 발동 효과 방치, 단일/광역 전환 실패입니다.';
 }
 
 function getResearchPanels(guide, data, manuscript, profile) {
@@ -1008,33 +1008,33 @@ function getResearchPanels(guide, data, manuscript, profile) {
 
   return [
     {
-      label: '핵심 명제',
-      title: `${centerName} 중심 운용 모델`,
-      body: `${centerName}은 현재 KB 그래프에서 ${centerConnectionLabel(graph.center)}을 가진 중심 노드입니다. 이 전문화의 해석은 ${summarizeNames(topSkills, 3) || centerName} 실행축과 ${summarizeNames(topTalents, 3) || '특성 조건'} 증폭축을 분리해서 읽어야 합니다.`,
+      label: '핵심 요약',
+      title: `${centerName} 중심 운용`,
+      body: `${centerName}은 현재 KB 그래프에서 ${centerConnectionLabel(graph.center)}을 가진 핵심 버튼입니다. 이 가이드는 ${summarizeNames(topSkills, 3) || centerName} 실행 흐름과 ${summarizeNames(topTalents, 3) || '특성 조건'} 강화 흐름을 분리해서 봅니다.`,
       chips: [centerSkill, ...topSkills.slice(0, 2), ...topTalents.slice(0, 2)].filter(Boolean),
     },
     {
-      label: '운용 변수',
-      title: `${profile.priorityTitle} 검증`,
-      body: `${profile.lead} 실제 판단에서는 ${summarizeNames(topCooldowns, 4) || '주요 쿨기'}의 배치와 ${summarizeNames(data.prioritySource, 4)}의 우선순위가 서로 충돌하지 않는지 확인합니다.`,
+      label: '실전 체크',
+      title: `${profile.priorityTitle} 확인`,
+      body: `${profile.lead} 실제 전투에서는 ${summarizeNames(topCooldowns, 4) || '주요 쿨기'} 타이밍과 ${summarizeNames(data.prioritySource, 4)} 우선순위가 서로 꼬이지 않는지 확인합니다.`,
       chips: [...topCooldowns.slice(0, 3), ...data.prioritySource.slice(0, 2)],
     },
     {
-      label: '상호작용',
-      title: '스킬·특성 시너지 축',
+      label: '시너지',
+      title: '스킬·특성 연결',
       body: `강한 연결은 ${topSynergies.map(synergyName).slice(0, 3).join(', ') || 'KB 시너지 노트'}에서 확인됩니다. 그래프의 금색 노드는 판단 묶음이고, 보라/푸른/청록 노드는 실제 스킬·특성·영웅 특성입니다.`,
       chips: graph.skillNodes.slice(0, 5).map(node => node.skill),
     },
     {
-      label: '실패 모드',
+      label: '주의점',
       title: '전투 중 깨지는 지점',
-      body: `${roleRiskModel(guide)} 따라서 차트는 고정 딜사이클 표가 아니라, 전투 중 다시 확인해야 하는 판단 지점을 빠르게 드러내기 위한 보조 자료입니다.`,
+      body: `${roleRiskModel(guide)} 그래서 차트는 고정 딜사이클 표가 아니라, 전투 중 다시 확인해야 하는 판단 지점을 빠르게 보여 주는 체크용입니다.`,
       chips: data.rotationSource.slice(0, 5),
     },
     {
-      label: '검증 범위',
-      title: '출처와 한계',
-      body: `이 페이지는 ${data.specSkills.length}개 전문화 노트, ${data.commonSkills.length}개 공용 노트, ${data.synergies.length}개 시너지 노트와 ${sourceCount}개 명시 출처를 함께 사용합니다. 수치와 번역은 KB/Wowhead 기준을 우선하고, 디스코드·로그 자료는 교차 검증 가능한 경우에만 보조 근거로 취급합니다.`,
+      label: '출처 확인',
+      title: '확인한 자료',
+      body: `이 가이드는 ${data.specSkills.length}개 전문화 노트, ${data.commonSkills.length}개 공용 노트, ${data.synergies.length}개 시너지 노트와 ${sourceCount}개 명시 출처를 함께 사용합니다. 수치와 번역은 KB/Wowhead 기준을 우선하고, 디스코드·로그 자료는 교차 검증 가능한 경우에만 보조 근거로 취급합니다.`,
       chips: data.featuredSkills.slice(0, 5),
     },
   ];
