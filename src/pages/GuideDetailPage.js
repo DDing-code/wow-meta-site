@@ -73,9 +73,9 @@ const roleProfiles = {
     cycleTitle: '지원 전투 흐름',
     priorityTitle: '지원 우선순위',
     resourceTitle: '강화 유지 흐름',
-    plannerTitle: '파티 극딜 정렬표',
-    lead: '개인 피해보다 아군 강화 유지율과 파티 극딜 창 정렬을 먼저 봅니다.',
-    steps: ['강화 부여', '파티 창 정렬', '버프 유지', '대상 확인', '광역 지원', '자원 보정', '다음 강화 준비', '정리'],
+    plannerTitle: '파티 극딜 맞추기',
+    lead: '개인 피해보다 아군 강화 유지율과 파티 극딜 구간 맞추기를 먼저 봅니다.',
+    steps: ['강화 부여', '파티 구간 맞추기', '버프 유지', '대상 확인', '광역 지원', '자원 보정', '다음 강화 준비', '정리'],
   },
 };
 
@@ -129,6 +129,7 @@ function normalizeCommunityTerms(value) {
   });
 
   text = text
+    .replace(/(파티 극딜|아군 강화|극딜|피해|쿨기|강화|소비|판단|속죄|독살|일월식|균열|공허술사|집정관|발화|평온|치유|힐업|버프|파티|큰|짧은|긴|순간 치유|광역 피해|레이드|오프닝|중심|대체 큰|공통 큰|90초 큰|45초|1분 피해|피해 전환|마력 주입|공허의 형상|응징의 격노|사형 선고|얼음 기둥|악마화|정수 파쇄|뼈주사위|영혼 소집|권능|봉화|빛 주입|천상의 종|비전 쇄도|용의 분노|악마 폭군 소환|폭풍수호자|폭풍인도자|쇄도하는 토템|토템술사|선견자|승천|천신주|방패|방어|마나|회복|쐐기|딜)\s*창/g, '$1 구간')
     .replace(/(^|[^가-힣A-Za-z0-9])창(?=(?:[은는이가을를에의도만과와]|마다|에서|으로|부터|까지|처럼|보다| 안| 밖| 내부| 중| 중심| 단위| 차트| 진입| 활성| 밀도| 준비| 유지| 시작| 목표| 배치| 정렬| 전| 후| 앞| 사이| 관리| 흐름| 개방| 소비| 사용| 보강| 가치| 공백| 손실| 계획| 기준| 대기| 종료| 타임라인| 루프| 설계| 확보| 압축| 연장| 연결| 분기| 전환| 회수| 누수| 낭비|$|[\s.,:;!?)]))/g, '$1구간');
 
   protectedTerms.forEach(([token, name]) => {
@@ -162,6 +163,39 @@ function displayGuideText(value) {
     .replace(/오프닝 순서표/g, '오프닝 전투 흐름')
     .replace(/시각자료/g, '차트')
     .replace(/보조 자료/g, '확인용 차트')
+    .replace(/검수 포인트/g, '체크 포인트')
+    .replace(/로그 검수/g, '로그 확인')
+    .replace(/검수/g, '확인')
+    .replace(/검증/g, '확인')
+    .replace(/판단 도식/g, '확인용 흐름도')
+    .replace(/방어 판단 도식/g, '방어 흐름도')
+    .replace(/전투 흐름 도식/g, '전투 흐름도')
+    .replace(/도식/g, '흐름도')
+    .replace(/막대는 실제 WCL 초 단위 복사본이 아니라/g, '이 막대는 WCL 타임라인을 그대로 옮긴 것이 아니라')
+    .replace(/막대는 실제 로그 초 단위 복사본이 아니라/g, '이 막대는 로그 타임라인을 그대로 옮긴 것이 아니라')
+    .replace(/막대는 실제 HPS 초 단위 복사본이 아니라/g, '이 막대는 HPS 타임라인을 그대로 옮긴 것이 아니라')
+    .replace(/막대는 실제 WCL 수치가 아니라/g, '이 막대는 WCL 수치표가 아니라')
+    .replace(/막대는 실제 로그 수치가 아니라/g, '이 막대는 로그 수치표가 아니라')
+    .replace(/막대는 실제 HPS 수치가 아니라/g, '이 막대는 HPS 수치표가 아니라')
+    .replace(/막대는 실제 DTPS 수치가 아니라/g, '이 막대는 받은 피해 수치표가 아니라')
+    .replace(/막대는 실제 HPS나 DPS 수치가 아니라/g, '이 막대는 HPS/DPS 수치표가 아니라')
+    .replace(/정렬표/g, '맞추기 표')
+    .replace(/정렬 타임라인/g, '맞추기 타임라인')
+    .replace(/쿨기 정렬/g, '쿨기 맞추기')
+    .replace(/파티 구간 정렬/g, '파티 구간 맞추기')
+    .replace(/극딜 구간 정렬/g, '극딜 구간 맞추기')
+    .replace(/피해 구간 정렬/g, '피해 구간 맞추기')
+    .replace(/영웅 특성 분기/g, '영웅 특성 선택지')
+    .replace(/빌드 분기/g, '빌드 선택지')
+    .replace(/분기 타임라인/g, '선택 타임라인')
+    .replace(/분기 창/g, '선택 구간')
+    .replace(/압축 창/g, '몰아치는 구간')
+    .replace(/압축 타임라인/g, '몰아넣기 타임라인')
+    .replace(/피해 압축/g, '피해 몰아넣기')
+    .replace(/압축하는/g, '몰아넣는')
+    .replace(/압축하고/g, '몰아넣고')
+    .replace(/압축한/g, '몰아넣은')
+    .replace(/우선 처리합니다/g, '먼저 사용합니다')
     .replace(/직접 인용하지 않습니다/g, '공개로 확인되는 내용만 반영합니다')
     .replace(/회복HoT/g, '회복 지속 치유')
     .replace(/\bHoT\b/g, '지속 치유')
@@ -260,15 +294,15 @@ function synergyTypeLabel(synergy) {
   const name = synergyName(synergy);
   const combined = `${raw} ${name}`;
 
-  if (/archon|집정관|후광|공허의형상/i.test(combined)) return '집정관 창';
-  if (/voidweaver|공허술사|혼돈의균열|공허폭발/i.test(combined)) return '공허술사 창';
+  if (/archon|집정관|후광|공허의형상/i.test(combined)) return '집정관 구간';
+  if (/voidweaver|공허술사|혼돈의균열|공허폭발/i.test(combined)) return '공허술사 구간';
   if (/execute|처형|죽음예언자/i.test(combined)) return '처형 관리';
   if (/oracle|예언자-|두 개의 시야|경건|보장된 안전|즉발적인 예측/i.test(combined)) return '예언자 보조';
   if (/mythic|쐐기/i.test(raw)) return '쐐기 유틸';
   if (/raid|공격대/i.test(raw)) return '공격대 유틸';
   if (/defensive|survival|생존/i.test(raw)) return '생존 관리';
-  if (/healing|heal|치유/i.test(raw)) return '치유 창';
-  if (/damage|딜|피해/i.test(raw)) return '피해 창';
+  if (/healing|heal|치유/i.test(raw)) return '치유 구간';
+  if (/damage|딜|피해/i.test(raw)) return '피해 구간';
   return '연결 시스템';
 }
 
@@ -808,7 +842,7 @@ function describeSynergyRecord(record, centerSkill) {
   if (talentNames.length) pieces.push(`특성: ${talentNames.join(', ')}`);
 
   if (!pieces.length) {
-    return `${centerName}과 같은 시너지 노트에 묶인 항목입니다. 그래프에서 가까운 노드일수록 같은 판단 창에서 함께 확인합니다.`;
+    return `${centerName}과 같은 시너지 노트에 묶인 항목입니다. 그래프에서 가까운 노드일수록 같은 판단 구간에서 함께 확인합니다.`;
   }
 
   return `${centerName} 기준으로 함께 보는 연결입니다: ${pieces.join(' / ')}. ${synergyTypeLabel(record.synergy)} 상황에서 우선적으로 확인합니다.`;
@@ -829,7 +863,7 @@ function roleRiskModel(guide) {
     return '피해 예측 실패, 광역 회복 쿨기 중복, 마나 소모 과속, 긴급 복구 수단의 지연이 핵심 실패 모드입니다.';
   }
   if (guide.id === 'evoker-augmentation') {
-    return '파티 강화 창 불일치, 개인 쿨기와 아군 쿨기 분리, 유지 효과 공백이 핵심 실패 모드입니다.';
+    return '파티 강화 구간 불일치, 개인 쿨기와 아군 쿨기 분리, 유지 효과 공백이 핵심 실패 모드입니다.';
   }
   return '자원 과잉, 주요 쿨기 지연, 발동 효과 방치, 단일/광역 전환 실패가 핵심 실패 모드입니다.';
 }
@@ -942,7 +976,7 @@ function getPriorityNote(guide, skill) {
     return `${formatSkillMeta(skill)} 기준으로 피해 예측과 마나 압박을 함께 봅니다.`;
   }
   if (guide.id === 'evoker-augmentation') {
-    return `${formatSkillMeta(skill)} 흐름을 파티 극딜 창과 아군 강화 유지율에 맞춥니다.`;
+    return `${formatSkillMeta(skill)} 흐름을 파티 극딜 구간과 아군 강화 유지율에 맞춥니다.`;
   }
   return `${formatSkillMeta(skill)} 조건이 맞으면 위 순서대로 우선 처리합니다.`;
 }
@@ -1816,7 +1850,7 @@ function InlineFigure({ chart, guide, data, profile, manuscript, inlineTerms }) 
         <ChartDefinitionGrid>
           {chart.definition.map(([label, text]) => (
             <ChartDefinitionItem key={label}>
-              <span>{label}</span>
+              <span>{renderGuideText(label, inlineTerms)}</span>
               <strong>{renderGuideText(text, inlineTerms)}</strong>
             </ChartDefinitionItem>
           ))}
@@ -4991,7 +5025,7 @@ function UptimeTimelineChart({ guide, data }) {
         </UptimeLane>
       ))}
       <ChartDataFootnote>
-        실제 전투 로그의 유지율 퍼센트가 아니라, 가이드 설명에서 “언제 확인해야 하는가”를 읽기 쉽게 만든 판단 지도입니다.
+        실제 전투 로그의 유지율 퍼센트가 아니라, 가이드 설명에서 “언제 확인해야 하는가”를 읽기 쉽게 만든 확인 지도입니다.
       </ChartDataFootnote>
     </UptimeChart>
   );
