@@ -57,7 +57,7 @@ const priorityRows = [
 const sourceRows = [
   ['Wowhead', '공식 한글명 / 툴팁'],
   ['Icy Veins', '딜사이클 설명'],
-  ['Class Discord', '전문화 핀 글 / FAQ'],
+  ['직업 디스코드', '전문화 핀 글 / FAQ'],
   ['WCL', '상위 로그 검증'],
 ];
 
@@ -141,7 +141,7 @@ const guideTemplateChapters = [
 
 const guideTemplateSources = [
   ['S', 'ko.wowhead 공식 한글명'],
-  ['A/B', 'Wowhead / Icy Veins / 직업 Discord 교차 검증'],
+  ['A/B', 'Wowhead / Icy Veins / 직업 디스코드 교차 확인'],
   ['WCL', '상위 로그 사용률 확인'],
 ];
 
@@ -3319,7 +3319,7 @@ function SpellDataMockup() {
                 </SourceBadge>
                 <SourceBadge>
                   <BadgeTier>A</BadgeTier>
-                  <BadgeText>Wowhead / Icy Veins / 직업 Discord 교차 검증</BadgeText>
+                  <BadgeText>Wowhead / Icy Veins / 직업 디스코드 교차 확인</BadgeText>
                 </SourceBadge>
                 <SourceBadge>
                   <BadgeTier>WCL</BadgeTier>

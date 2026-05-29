@@ -65,7 +65,7 @@ const roleProfiles = {
     priorityTitle: '힐링 우선순위',
     resourceTitle: '마나/회복 곡선',
     plannerTitle: '공격대 피해 대응표',
-    lead: '피해가 들어온 뒤 반응하기보다 사전 작업, 광역 회복, 외생기 배치를 시간표로 관리합니다.',
+    lead: '피해가 들어온 뒤 반응하기보다 사전 준비, 광역 회복, 외생기 배치를 타이밍표로 관리합니다.',
     steps: ['피해 전 준비', '유지 효과', '주요 회복', '광역 회복', '외생기 배치', '마나 절약', '다음 피해 대비', '정리'],
   },
   support: {
@@ -170,8 +170,23 @@ function displayGuideText(value) {
     .replace(/오프닝\s*딜\s*사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝\s*딜사이클/g, '오프닝 전투 흐름')
     .replace(/오프닝 순서표/g, '오프닝 전투 흐름')
+    .replace(/추천 전문화\+영웅 빌드/g, '추천 특성 조합')
+    .replace(/전문화\+영웅 빌드/g, '특성 조합')
+    .replace(/전문화\+영웅/g, '특성 조합')
+    .replace(/\(KST\)/g, '(한국 시간)')
+    .replace(/\bKST\b/g, '한국 시간')
+    .replace(/Archon ([0-9]{4}-[0-9]{2}-[0-9]{2})\(한국 시간\) 확인 기준/g, 'Archon $1(한국 시간) 확인 시점')
+    .replace(/([0-9]{4}-[0-9]{2}-[0-9]{2})\(한국 시간\) 확인 기준/g, '$1(한국 시간) 확인 시점')
+    .replace(/확인값/g, '확인 수치')
+    .replace(/공개 Discord/g, '공개 디스코드')
+    .replace(/직업 Discord/g, '직업 디스코드')
+    .replace(/\bDiscord\b/g, '디스코드')
+    .replace(/공개 경로/g, '공개 안내 링크')
+    .replace(/진입 경로/g, '안내 링크')
+    .replace(/로그인\/가입/g, '로그인 또는 가입')
+    .replace(/비공개 채널 원문/g, '비공개 채널 내용')
     .replace(/시각자료/g, '차트')
-    .replace(/보조 자료/g, '확인용 차트')
+    .replace(/보조 자료/g, '보조 참고자료')
     .replace(/체크 포인트/g, '체크 포인트')
     .replace(/검증/g, '확인')
     .replace(/판단 도식/g, '확인용 흐름도')
@@ -237,6 +252,31 @@ function displayGuideText(value) {
     .replace(/대조했고/g, '확인했고')
     .replace(/대조해/g, '확인해')
     .replace(/대조/g, '확인')
+    .replace(/전역 재사용 대기시간/g, '글쿨')
+    .replace(/빈 전역/g, '빈 글쿨')
+    .replace(/첫 몇 전역/g, '첫 몇 글쿨')
+    .replace(/매 전역/g, '매 글쿨')
+    .replace(/자원 경제/g, '자원 관리')
+    .replace(/영혼 파편 경제/g, '영혼 파편 관리')
+    .replace(/파편 경제/g, '파편 관리')
+    .replace(/제어 카드/g, '제어기')
+    .replace(/방어 카드/g, '방어기')
+    .replace(/축복 카드/g, '축복 스킬')
+    .replace(/공격\/방어 카드/g, '공격/방어기')
+    .replace(/중심 허브/g, '중심')
+    .replace(/판단 허브/g, '판단 중심')
+    .replace(/허브/g, '중심')
+    .replace(/공허 탈태 준비 램프/g, '공허 탈태 준비 과정')
+    .replace(/첫 공허 탈태 램프/g, '첫 공허 탈태 준비')
+    .replace(/램프 시작/g, '준비 시작')
+    .replace(/기본값으로/g, '기본 추천으로')
+    .replace(/기본값입니다/g, '기본 추천입니다')
+    .replace(/기본값은/g, '기본 추천은')
+    .replace(/기본값/g, '기본 추천')
+    .replace(/기본 해석/g, '기본 판단')
+    .replace(/해석해야/g, '판단해야')
+    .replace(/해석합니다/g, '판단합니다')
+    .replace(/시간표/g, '타이밍표')
     .replace(/천체의 맞추기/g, '천체의 정렬')
     .replace(/시간 재맞추기/g, '시간 재정렬')
     .replace(/재맞추기/g, '재정렬')
@@ -294,7 +334,7 @@ function displayGuideText(value) {
     .replace(/\bSlayer\b/g, '학살자')
     .replace(/\bMountain\s*Thane\b/g, '산왕')
     .replace(/\bMountainThane\b/g, '산왕')
-    .replace(/\bSpec & Hero\b/g, '전문화+영웅 빌드')
+    .replace(/\bSpec & Hero\b/g, '특성 조합')
     .replace(/\bKeystone\b/g, '쐐기돌')
     .replace(/\bparses\b/gi, '파싱')
     .replace(/\bStormbringer\b/g, '폭풍인도자')
@@ -2512,8 +2552,8 @@ function GuideDetailPage() {
               <SourceBox>
                 <SourceTier>A</SourceTier>
                 <SourceBody>
-                  <strong>가이드 교차 검증</strong>
-                  <span>Wowhead, Icy Veins, WCL/Archon, 직업 Discord 공개 자료를 KB 시너지 노트로 연결합니다.</span>
+                  <strong>가이드 교차 확인</strong>
+                  <span>Wowhead, Icy Veins, WCL/Archon, 직업 디스코드 공개 자료를 KB 시너지 노트로 연결합니다.</span>
                 </SourceBody>
               </SourceBox>
               <SourceBox>
