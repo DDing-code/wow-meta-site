@@ -266,9 +266,6 @@ function displayGuideText(value) {
     .replace(/중심 허브/g, '중심')
     .replace(/판단 허브/g, '판단 중심')
     .replace(/허브/g, '중심')
-    .replace(/공허 탈태 준비 램프/g, '공허 탈태 준비 과정')
-    .replace(/첫 공허 탈태 램프/g, '첫 공허 탈태 준비')
-    .replace(/램프 시작/g, '준비 시작')
     .replace(/기본값으로/g, '기본 추천으로')
     .replace(/기본값입니다/g, '기본 추천입니다')
     .replace(/기본값은/g, '기본 추천은')
@@ -991,7 +988,7 @@ function getResearchPanels(guide, data, manuscript, profile) {
     {
       label: '검증 범위',
       title: '출처와 한계',
-      body: `이 페이지는 ${data.specSkills.length}개 전문화 노트, ${data.commonSkills.length}개 공용 노트, ${data.synergies.length}개 시너지 노트와 ${sourceCount}개 명시 출처를 함께 사용합니다. 수치와 번역은 KB/Wowhead 기준을 우선하고, Discord·로그 자료는 교차 검증 가능한 경우에만 보조 근거로 취급합니다.`,
+      body: `이 페이지는 ${data.specSkills.length}개 전문화 노트, ${data.commonSkills.length}개 공용 노트, ${data.synergies.length}개 시너지 노트와 ${sourceCount}개 명시 출처를 함께 사용합니다. 수치와 번역은 KB/Wowhead 기준을 우선하고, 디스코드·로그 자료는 교차 검증 가능한 경우에만 보조 근거로 취급합니다.`,
       chips: data.featuredSkills.slice(0, 5),
     },
   ];
@@ -1563,7 +1560,7 @@ function getInlineChartPlan(guide, data) {
       title: '공허 탈태 상태 전환',
       sectionHeading: '공허 창 전환',
       sectionIntro: '포식은 전투 시작부터 공허 탈태를 누르는 전문화가 아니라, 격노와 영혼 파편을 모아 공허 탈태 안팎의 우선순위를 바꾸는 전문화입니다.',
-      caption: '막대는 실제 로그 수치가 아니라 흡수/영혼 제물 자원 램프, 최대 파편 수확, 공허 광선, 박멸 반응, 공허 탈태 진입, 붕괴하는 별 내부 소비를 한 화면에 묶은 상태 전환 도식입니다.',
+      caption: '막대는 실제 로그 수치가 아니라 흡수/영혼 제물 자원 준비, 최대 파편 수확, 공허 광선, 박멸 반응, 공허 탈태 진입, 붕괴하는 별 내부 소비를 한 화면에 묶은 상태 전환 도식입니다.',
       definition: [
         ['의미', '공허 탈태 밖에서는 자원과 발동을 준비하고, 안에서는 붕괴하는 별과 조건부 소비기를 먼저 확인합니다.'],
         ['읽는 법', '영혼 파편이 50에 가까우면 공허 탈태 진입을 준비하고, 수확/도태는 최대 파편 회수와 충전 과충전 방지를 같이 봅니다.'],
@@ -1800,8 +1797,8 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'priest-discipline') {
     plan.push({
       id: 'defensive',
-      title: '속죄 램프와 피해 대응',
-      sectionHeading: '속죄 램프와 외생기 배정',
+      title: '속죄 예열과 피해 대응',
+      sectionHeading: '속죄 예열과 외부 생존기 배정',
       sectionIntro:
         '수양은 힐 버튼을 많이 누르는 전문화가 아니라, 피해 전에 속죄와 보호막을 깔고 피해 직후 회개/정신 분열로 회수하는 전문화입니다. 이 차트는 속죄 준비, 피해 전 보호막, 피해 후 회수, 외생기 분배가 서로 다른 판단이라는 것을 보여주는 용도입니다.',
       caption: '수양은 고정 순서보다 피해가 들어오기 전 몇 초에 속죄를 깔고 어떤 쿨다운을 남길지 보는 타임라인이 중요합니다.',
@@ -3091,7 +3088,7 @@ function getUptimeRows(guide, data) {
       {
         label: '중심 버프',
         skill: findSkillByNames(data, ['속죄']),
-        note: '모든 램프와 피해 전환 치유가 지나가는 중앙 노드입니다. 대상 수와 남은 시간을 가장 먼저 봅니다.',
+        note: '모든 예열과 피해 전환 치유가 지나가는 중앙 노드입니다. 대상 수와 남은 시간을 가장 먼저 봅니다.',
         segments: [[6, 14], [28, 14], [50, 14], [72, 14]],
       },
       {
@@ -3101,15 +3098,15 @@ function getUptimeRows(guide, data) {
         segments: [[14, 8], [38, 8], [62, 8], [86, 8]],
       },
       {
-        label: '램프 압축',
+        label: '예열 압축',
         skill: findSkillByNames(data, ['사도']),
-        note: '광휘 램프를 빠르게 여는 핵심 쿨다운입니다. 피해 이벤트와 밀착시키고, 직후 피해 주문을 비우지 않습니다.',
+        note: '광휘 예열을 빠르게 여는 핵심 쿨다운입니다. 피해 이벤트와 밀착시키고, 직후 피해 주문을 비우지 않습니다.',
         segments: [[20, 14], [70, 14]],
       },
       {
         label: '보호막 경제',
         skill: findSkillByNames(data, ['공허의 보호막', '신의 권능: 보호막']),
-        note: '12.0.5 보호막 중심 조정의 핵심입니다. 강하지만 마나와 다음 램프 준비 시간을 같이 봐야 합니다.',
+        note: '12.0.5 보호막 중심 조정의 핵심입니다. 강하지만 마나와 다음 예열 준비 시간을 같이 봐야 합니다.',
         segments: [[4, 10], [24, 10], [44, 10], [64, 10], [84, 10]],
       },
       {
@@ -3121,7 +3118,7 @@ function getUptimeRows(guide, data) {
       {
         label: '지속 피해',
         skill: findSkillByNames(data, ['어둠의 권능: 고통', '사악의 정화']),
-        note: '램프 중 피해 전환을 뒷받침하는 유지 축입니다. 회개 확산과 대속 판단까지 같이 봅니다.',
+        note: '예열 중 피해 전환을 뒷받침하는 유지 축입니다. 회개 확산과 대속 판단까지 같이 봅니다.',
         segments: [[2, 94]],
       },
       {
@@ -3151,7 +3148,7 @@ function getUptimeRows(guide, data) {
       {
         label: '직접 복구',
         skill: findSkillByNames(data, ['어둠의 치유', '순간 치유', '간청']),
-        note: '쐐기나 사망 직전 상황에서는 예쁜 램프보다 한 명을 살리는 판단이 먼저입니다.',
+        note: '쐐기나 사망 직전 상황에서는 정돈된 예열보다 한 명을 살리는 판단이 먼저입니다.',
         segments: [[18, 7], [42, 7], [66, 7], [90, 7]],
       },
       {
