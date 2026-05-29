@@ -47,8 +47,8 @@ const roleProfiles = {
     priorityTitle: '딜사이클 우선순위',
     resourceTitle: '자원 흐름',
     plannerTitle: '위험 구간 대응',
-    lead: '근접 위치를 유지하면서 자원 생성, 강화 구간, 고가치 소모 기술을 한 루프로 묶습니다.',
-    steps: ['전투 시작', '주요 구간 열기', '고가치 기술', '자원 소모', '발동 반응', '반복 루프', '광역 전환', '마무리'],
+    lead: '근접 위치를 유지하면서 자원 생성, 강화 구간, 고가치 소모 기술을 하나의 흐름으로 묶습니다.',
+    steps: ['전투 시작', '주요 구간 열기', '고가치 기술', '자원 소모', '발동 반응', '반복 흐름', '광역 전환', '마무리'],
   },
   ranged: {
     label: '원거리 딜러',
@@ -1990,7 +1990,7 @@ function InlineFigure({ chart, guide, data, profile, manuscript, inlineTerms }) 
 function getFlowPhaseLabel(guide, index, total) {
   const healerPhases = ['사전 배치', '피해 직전', '힐업 창', '복구/안정화'];
   const tankPhases = ['진입', '방어 기반', '자원 확보', '안정화'];
-  const damagePhases = ['진입', '기반 세팅', '극딜 창', '순환 전환'];
+  const damagePhases = ['진입', '기반 준비', '극딜 구간', '순환 전환'];
   const phases = guide?.role === 'healers'
     ? healerPhases
     : guide?.role === 'tanks'
@@ -2019,8 +2019,8 @@ function getFlowTriggerLabel(guide, phase, index, total, step = {}) {
 
   if (/진입/.test(phase)) return '전투 시작';
   if (/기반/.test(phase)) return '버프·지속 효과 준비';
-  if (/극딜/.test(phase)) return '쿨기·자원 소비 창';
-  if (index >= total - 1) return '우선순위 루프로 전환';
+  if (/극딜/.test(phase)) return '쿨기·자원 소비 구간';
+  if (index >= total - 1) return '우선순위 흐름으로 전환';
   return '발동·대상 수 확인';
 }
 
@@ -2092,15 +2092,15 @@ function getFlowMapCopy(guide) {
   if (guide?.role === 'support') {
     return {
       start: '준비',
-      middle: '강화 → 대상 확인 → 파티 창',
+      middle: '강화 → 대상 확인 → 파티 구간',
       end: '다음 강화',
-      keys: ['강화 시작', '대상 조건', '파티 창'],
+      keys: ['강화 시작', '대상 조건', '파티 구간'],
     };
   }
 
   return {
     start: '전투 시작',
-    middle: '준비 → 큰 창 → 우선순위 루프',
+    middle: '준비 → 큰 구간 → 우선순위 흐름',
     end: '반복 판단',
     keys: ['첫 버튼', '사용 조건', '손실 방지'],
   };
@@ -2617,10 +2617,10 @@ function GuideDetailPage() {
 function getChartSet(guide) {
   if (guide.id === 'evoker-augmentation') {
     return [
-      { id: 'cooldown', title: '파티 극딜 정렬', short: '쿨기 정렬', meta: '아군 강화와 주요 쿨기 타이밍', icon: Clock3 },
+      { id: 'cooldown', title: '파티 극딜 맞추기', short: '쿨기 맞추기', meta: '아군 강화와 주요 쿨기 타이밍', icon: Clock3 },
       { id: 'uptime', title: '강화 유지율', short: '유지율', meta: '버프/강화 공백 관리', icon: Activity },
-      { id: 'target', title: '대상 수 가치 변화', short: '타겟 스케일', meta: '단일, 2타겟, 광역 전환', icon: Target },
-      { id: 'network', title: '시너지 네트워크', short: '시너지', meta: 'KB 링크 기반 상호작용', icon: Link2 },
+      { id: 'target', title: '대상 수 가치 변화', short: '대상 수', meta: '단일, 2대상, 광역 전환', icon: Target },
+      { id: 'network', title: '시너지 네트워크', short: '시너지', meta: '스킬 연결 관계', icon: Link2 },
     ];
   }
 
@@ -2636,16 +2636,16 @@ function getChartSet(guide) {
   if (guide.role === 'healers') {
     return [
       { id: 'defensive', title: '공격대 피해 대응표', short: '피해 대응', meta: '사전 작업과 외생기 배치', icon: Shield },
-      { id: 'cooldown', title: '힐링 쿨기 정렬', short: '쿨기 정렬', meta: '광역 피해 구간별 쿨기', icon: Clock3 },
+      { id: 'cooldown', title: '힐링 쿨기 맞추기', short: '쿨기 맞추기', meta: '광역 피해 구간별 쿨기', icon: Clock3 },
       { id: 'uptime', title: '유지 효과 타임라인', short: '유지율', meta: '도트/버프형 회복 관리', icon: Activity },
       { id: 'network', title: '시너지 네트워크', short: '시너지', meta: '회복 스킬 연결', icon: Link2 },
     ];
   }
 
   return [
-    { id: 'cooldown', title: '쿨기 정렬 레인', short: '쿨기 정렬', meta: '극딜 창과 핵심 기술 동기화', icon: Clock3 },
+    { id: 'cooldown', title: '쿨기 타이밍 표', short: '쿨기 맞추기', meta: '극딜 구간과 핵심 기술 동기화', icon: Clock3 },
     { id: 'resource', title: '자원 흐름 곡선', short: '자원 곡선', meta: '생성, 보존, 소모 구간', icon: Gauge },
-    { id: 'target', title: '타겟 수 스케일링', short: '타겟 스케일', meta: '단일/광역 가치 변화', icon: Target },
+    { id: 'target', title: '대상 수별 가치', short: '대상 수', meta: '단일/광역 가치 변화', icon: Target },
     { id: 'network', title: '시너지 네트워크', short: '시너지', meta: '특성/스킬 연결', icon: Link2 },
   ];
 }
@@ -2989,7 +2989,7 @@ function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inli
       </RotationFlowWrap>
       <RotationCaption>
         <Sparkles size={15} />
-        <span>{guide.spec} {guide.className} {profile.label} 핵심 루프</span>
+        <span>{guide.spec} {guide.className} {profile.label} 핵심 흐름</span>
       </RotationCaption>
     </RotationFeature>
   );
@@ -5158,7 +5158,7 @@ function UptimeTimelineChart({ guide, data }) {
 }
 
 function TargetScalingChart({ guide, skills }) {
-  const labels = ['단일', '2타겟', '광역', '우선 타겟'];
+  const labels = ['단일', '2대상', '광역', '우선 대상'];
   const values = guide.id === 'evoker-augmentation' ? [82, 88, 74, 94] : [92, 78, 86, 70];
 
   return (

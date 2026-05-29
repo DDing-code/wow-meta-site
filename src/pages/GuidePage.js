@@ -204,8 +204,8 @@ function GuidePage() {
           <Eyebrow>{CURRENT_PATCH_LABEL} guide index</Eyebrow>
           <Title>직업 가이드</Title>
           <Description>
-            KB 원자 노트와 시너지 그래프를 기준으로 모든 전문화 가이드를 다시 연결했습니다.
-            포지션별 공통 서식은 유지하고, 딜사이클과 방어/힐링 차트는 전문화 데이터에 맞춰 자동 구성됩니다.
+            각 전문화의 핵심 스킬, 특성, 시너지 관계를 기준으로 가이드를 연결했습니다.
+            포지션별 기본 골조는 유지하고, 딜사이클과 방어/힐링 차트는 전문화별 운용에 맞춰 배치했습니다.
           </Description>
         </div>
         <HeaderPanel>
@@ -219,7 +219,7 @@ function GuidePage() {
           </HeaderMetric>
           <HeaderMetric>
             <span>source</span>
-            <strong>KB + Wowhead 툴팁</strong>
+            <strong>Wowhead 툴팁 + 로그</strong>
           </HeaderMetric>
         </HeaderPanel>
       </Header>

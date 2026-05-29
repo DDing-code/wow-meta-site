@@ -96,7 +96,7 @@ export const guideSpecsByRole = {
     }),
     spec('paladin-protection', 'paladin', '보호', '보호', 'tanks', '/guide/paladin/protection', {
       kbSpecAliases: ['Protection'],
-      focus: '신성한 힘 운용과 파티 유틸을 함께 묶어 방어 창을 유지합니다.',
+      focus: '신성한 힘 운용과 파티 유틸을 함께 묶어 방어 기반을 유지합니다.',
     }),
     spec('deathknight-blood', 'deathknight', '혈기', '혈기', 'tanks', '/guide/deathknight/blood', {
       kbSpecAliases: ['Blood'],
@@ -126,11 +126,11 @@ export const guideSpecsByRole = {
     }),
     spec('paladin-retribution', 'paladin', '징벌', '징벌', 'melee', '/guide/paladin/retribution', {
       kbSpecAliases: ['Retribution'],
-      focus: '신성한 힘을 극딜 창에 모아 폭발적으로 소모합니다.',
+      focus: '신성한 힘을 극딜 구간에 모아 폭발적으로 소모합니다.',
     }),
     spec('rogue-assassination', 'rogue', '암살', '암살', 'melee', '/guide/rogue/assassination', {
       kbSpecAliases: ['Assassination'],
-      focus: '출혈과 독 유지율을 바탕으로 독살 창을 정렬합니다.',
+      focus: '출혈과 독 유지율을 바탕으로 독살 타이밍을 맞춥니다.',
     }),
     spec('rogue-outlaw', 'rogue', '무법', '무법', 'melee', '/guide/rogue/outlaw', {
       kbSpecAliases: ['Outlaw'],
@@ -138,15 +138,15 @@ export const guideSpecsByRole = {
     }),
     spec('rogue-subtlety', 'rogue', '잠행', '잠행', 'melee', '/guide/rogue/subtlety', {
       kbSpecAliases: ['Subtlety'],
-      focus: '은신 계열 강화 창에 고가치 기술을 압축합니다.',
+      focus: '은신 계열 강화 구간에 고가치 기술을 몰아넣습니다.',
     }),
     spec('deathknight-frost', 'deathknight', '냉기', '냉기', 'melee', '/guide/deathknight/frost', {
       kbSpecAliases: ['Frost'],
-      focus: '룬과 룬 마력을 얼음 기둥 창에 맞춰 소모합니다.',
+      focus: '룬과 룬 마력을 얼음 기둥 구간에 맞춰 소모합니다.',
     }),
     spec('deathknight-unholy', 'deathknight', '부정', '부정', 'melee', '/guide/deathknight/unholy', {
       kbSpecAliases: ['Unholy'],
-      focus: '질병, 소환수, 광역 확산을 극딜 창에 연결합니다.',
+      focus: '질병, 소환수, 광역 확산을 극딜 구간에 연결합니다.',
     }),
     spec('monk-windwalker', 'monk', '풍운', '풍운', 'melee', '/guide/monk/windwalker', {
       kbSpecAliases: ['Windwalker'],
@@ -158,7 +158,7 @@ export const guideSpecsByRole = {
     }),
     spec('demonhunter-havoc', 'demonhunter', '파멸', '파멸', 'melee', '/guide/demonhunter/havoc', {
       kbSpecAliases: ['Havoc'],
-      focus: '분노 생성, 이동형 강화, 극딜 창을 순서대로 겹칩니다.',
+      focus: '분노 생성, 이동형 강화, 극딜 구간을 순서대로 겹칩니다.',
     }),
     spec('shaman-enhancement', 'shaman', '고양', '고양', 'melee', '/guide/shaman/enhancement', {
       kbSpecAliases: ['Enhancement'],
@@ -166,7 +166,7 @@ export const guideSpecsByRole = {
     }),
     spec('hunter-survival', 'hunter', '생존', '생존', 'melee', '/guide/hunter/survival', {
       kbSpecAliases: ['Survival'],
-      focus: '근접 폭탄 루프와 소환수 연계를 광역 상황에 맞춥니다.',
+      focus: '근접 폭탄 흐름과 소환수 연계를 광역 상황에 맞춥니다.',
     }),
   ],
   ranged: [
@@ -176,15 +176,15 @@ export const guideSpecsByRole = {
     }),
     spec('hunter-marksmanship', 'hunter', '사격', '사격', 'ranged', '/guide/hunter/marksmanship', {
       kbSpecAliases: ['Marksmanship'],
-      focus: '조준 사격 창과 정밀 사격 소모를 우선순위로 관리합니다.',
+      focus: '조준 사격 구간과 정밀 사격 소모를 우선순위로 관리합니다.',
     }),
     spec('priest-shadow', 'priest', '암흑', '암흑', 'ranged', '/guide/priest/shadow', {
       kbSpecAliases: ['Shadow'],
-      focus: '광기 소모와 도트 유지율을 공허 강화 창에 맞춥니다.',
+      focus: '광기 소모와 도트 유지율을 공허 강화 구간에 맞춥니다.',
     }),
     spec('demonhunter-devourer', 'demonhunter', '포식', '포식', 'ranged', '/guide/demonhunter/devourer', {
       kbSpecAliases: ['Devourer'],
-      focus: '25야드 공허 주문과 영혼 파편을 공허 탈태 창에 맞춥니다.',
+      focus: '25야드 공허 주문과 영혼 파편을 공허 탈태 구간에 맞춥니다.',
     }),
     spec('shaman-elemental', 'shaman', '정기', '정기', 'ranged', '/guide/shaman/elemental', {
       kbSpecAliases: ['Elemental'],
@@ -192,11 +192,11 @@ export const guideSpecsByRole = {
     }),
     spec('mage-arcane', 'mage', '비전', '비전', 'ranged', '/guide/mage/arcane', {
       kbSpecAliases: ['Arcane'],
-      focus: '마나와 비전 충전물을 극딜 창 전후로 나눠 사용합니다.',
+      focus: '마나와 비전 충전물을 극딜 구간 전후로 나눠 사용합니다.',
     }),
     spec('mage-fire', 'mage', '화염', '화염', 'ranged', '/guide/mage/fire', {
       kbSpecAliases: ['Fire'],
-      focus: '몰아치는 열기와 발화 창을 기준으로 즉시 시전 기술을 정렬합니다.',
+      focus: '몰아치는 열기와 발화 구간을 기준으로 즉시 시전 기술을 맞춥니다.',
     }),
     spec('mage-frost', 'mage', '냉기', '냉기', 'ranged', '/guide/mage/frost', {
       kbSpecAliases: ['Frost'],
@@ -208,11 +208,11 @@ export const guideSpecsByRole = {
     }),
     spec('warlock-demonology', 'warlock', '악마', 'Demonology', 'ranged', '/guide/warlock/demonology', {
       kbSpecAliases: ['악마'],
-      focus: '소환수 누적과 악마 폭군 창을 하나의 빌드업으로 묶습니다.',
+      focus: '소환수 누적과 악마 폭군 구간을 하나의 빌드업으로 묶습니다.',
     }),
     spec('warlock-destruction', 'warlock', '파괴', 'Destruction', 'ranged', '/guide/warlock/destruction', {
       kbSpecAliases: ['파괴'],
-      focus: '영혼의 조각을 혼돈의 화살과 광역 소모 창에 배치합니다.',
+      focus: '영혼의 조각을 혼돈의 화살과 광역 소모 구간에 배치합니다.',
     }),
     spec('druid-balance', 'druid', '조화', '조화', 'ranged', '/guide/druid/balance', {
       kbSpecAliases: ['Balance'],
@@ -220,11 +220,11 @@ export const guideSpecsByRole = {
     }),
     spec('evoker-devastation', 'evoker', '황폐', '황폐', 'ranged', '/guide/evoker/devastation', {
       kbSpecAliases: ['Devastation'],
-      focus: '정수와 강화 주문을 짧은 폭발 창에 정렬합니다.',
+      focus: '정수와 강화 주문을 짧은 폭발 구간에 맞춥니다.',
     }),
     spec('evoker-augmentation', 'evoker', '증강', '증강', 'ranged', '/guide/evoker/augmentation', {
       kbSpecAliases: ['Augmentation'],
-      focus: '아군 강화 유지율과 파티 극딜 창 정렬을 최우선으로 봅니다.',
+      focus: '아군 강화 유지율과 파티 극딜 타이밍 맞추기를 최우선으로 봅니다.',
     }),
   ],
   healers: [
@@ -234,7 +234,7 @@ export const guideSpecsByRole = {
     }),
     spec('priest-discipline', 'priest', '수양', '수양', 'healers', '/guide/priest/discipline', {
       kbSpecAliases: ['Discipline'],
-      focus: '속죄 사전 작업과 피해형 회복 창을 계획적으로 배치합니다.',
+      focus: '속죄 사전 작업과 피해형 회복 구간을 계획적으로 배치합니다.',
     }),
     spec('priest-holy', 'priest', '신성', '신성', 'healers', '/guide/priest/holy', {
       kbSpecAliases: ['Holy'],
@@ -246,7 +246,7 @@ export const guideSpecsByRole = {
     }),
     spec('monk-mistweaver', 'monk', '운무', '운무', 'healers', '/guide/monk/mistweaver', {
       kbSpecAliases: ['Mistweaver'],
-      focus: '안개 유지와 근접 힐링 루프를 상황별로 분리합니다.',
+      focus: '안개 유지와 근접 힐링 흐름을 상황별로 분리합니다.',
     }),
     spec('druid-restoration', 'druid', '회복', '회복', 'healers', '/guide/druid/restoration', {
       kbSpecAliases: ['Restoration'],
@@ -254,7 +254,7 @@ export const guideSpecsByRole = {
     }),
     spec('evoker-preservation', 'evoker', '보존', '보존', 'healers', '/guide/evoker/preservation', {
       kbSpecAliases: ['Preservation'],
-      focus: '메아리, 강화 주문, 시간 계열 회복을 짧은 사거리 안에서 정렬합니다.',
+      focus: '메아리, 강화 주문, 시간 계열 회복을 짧은 사거리 안에서 맞춥니다.',
     }),
   ],
 };
