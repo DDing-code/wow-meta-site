@@ -319,7 +319,10 @@ function main() {
     assert(/\bdefinition\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing definition`);
     assert(branchText.includes('의미'), `getInlineChartPlan branch for ${branch.id} definition must explain meaning`);
     assert(branchText.includes('읽는 법'), `getInlineChartPlan branch for ${branch.id} definition must explain how to read the chart`);
-    assert(branchText.includes('검수 포인트'), `getInlineChartPlan branch for ${branch.id} definition must include validation points`);
+    assert(
+      branchText.includes('체크 포인트') || branchText.includes('검수 포인트'),
+      `getInlineChartPlan branch for ${branch.id} definition must include validation points`
+    );
     assert(branchText.length >= 220, `getInlineChartPlan branch for ${branch.id} needs a richer chart explanation`);
     assert(requirements, `getInlineChartPlan branch for ${branch.id} has no role chart requirement for profile "${profile}"`);
     if (requirements) {
