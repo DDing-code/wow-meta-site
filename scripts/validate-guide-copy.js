@@ -39,6 +39,9 @@ const forbiddenTerms = [
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
   { term: '\uc708\ub3c4\uc6b0', replacement: '\uad6c\uac04' },
+  { term: '\ud0c0\uac9f', replacement: '\ub300\uc0c1' },
+  { term: '\ud0c0\uae43', replacement: '\ub300\uc0c1' },
+  { term: '\ub7a8\ub364\uc131', replacement: '\ubb34\uc791\uc704\uc131/\ubb34\uc791\uc704' },
   { term: '\ub7a8\ud504', replacement: '\uc608\uc5f4/\uc900\ube44 \uacfc\uc815' },
   { term: '\ucd94\ucc9c \uc804\ubb38\ud654+\uc601\uc6c5 \ube4c\ub4dc', replacement: '\ucd94\ucc9c \ud2b9\uc131 \uc870\ud569' },
   { term: 'KST', replacement: '\ud55c\uad6d \uc2dc\uac04' },
@@ -93,7 +96,24 @@ const pageForbiddenTerms = [
   { term: '\uc624\ud504\ub108', replacement: '\uc624\ud504\ub2dd' },
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
+  { term: '\ud0c0\uac9f', replacement: '\ub300\uc0c1' },
+  { term: '\ud0c0\uae43', replacement: '\ub300\uc0c1' },
+  { term: '\uc815\ub82c \ub808\uc778', replacement: '\ub9de\ucd94\uae30 \ud45c/\uad6c\uac04' },
+  { term: '\ub7a8\ub364\uc131', replacement: '\ubb34\uc791\uc704\uc131/\ubb34\uc791\uc704' },
 ];
+
+const awkwardContextPatterns = [
+  {
+    pattern: /(피해|극딜|큰|짧은|쿨기|강화|회복|치유|생존|마나 회복|공허|균열|소환수|폭군|일월식|악마화|소비|준비|전환|분기|처형|독|광역|단일|파티|아군|공대|첫|긴|속죄|발화|평온|후광|폭풍수호자|사형 선고|얼음 기둥|비전|용의 분노|절정|지원)\s*창/g,
+    replacement: '\uad6c\uac04/\ud0c0\uc774\ubc0d',
+  },
+  {
+    pattern: /창\s*(안|전|후|내부|중|진입|활성|밀도|준비|유지|배치|소비|사용|보강|가치|공백|손실|계획|대기|종료|흐름|연결|전환|회수|누수|낭비)/g,
+    replacement: '\uad6c\uac04/\ud0c0\uc774\ubc0d',
+  },
+];
+
+const allowedWindowTerms = /얼음창|창끝|표창|투창병|창공의 힘|용사의 창|생명석 창조|영혼의 샘 창조|창조/;
 
 function findLine(source, index) {
   return source.slice(0, index).split(/\r?\n/).length;
@@ -119,11 +139,35 @@ function collectForbiddenTermErrors(filePath, terms) {
   return errors;
 }
 
+function collectAwkwardContextErrors(filePath, patterns) {
+  const lines = fs.readFileSync(filePath, 'utf8').split(/\r?\n/);
+  const errors = [];
+
+  lines.forEach((line, index) => {
+    if (line.includes('.replace(/') || allowedWindowTerms.test(line)) return;
+
+    for (const item of patterns) {
+      item.pattern.lastIndex = 0;
+      if (!item.pattern.test(line)) continue;
+
+      errors.push({
+        filePath,
+        line: index + 1,
+        term: item.pattern.toString(),
+        replacement: item.replacement,
+      });
+    }
+  });
+
+  return errors;
+}
+
 function main() {
   const errors = [
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
+    ...collectAwkwardContextErrors(GUIDE_DETAIL_PATH, awkwardContextPatterns),
   ];
 
   if (errors.length) {
