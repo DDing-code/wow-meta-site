@@ -23,6 +23,7 @@ const TRUST_TIERS = new Set(['S', 'A', 'B', 'C']);
 const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 구간|지원 창|상태 전환/i;
 const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
 const INTERNAL_COPY_PATTERN = /원고|프로토타입|내부 문서|이 문서|문서에서|문서에서는|시각화 배치 기준|이 페이지의 시각화|보조 시각화|차트 배치/i;
+const PRIEST_AWKWARD_COPY_PATTERN = /고가치|피해 기여|딜 기여|중심축|상위 행동|판단 축|복구축|전환 축|피해 주문 축|유지 축|영웅 특성 축|영웅 특성 분기|예열 압축|품질/i;
 const LOG_SOURCE_PATTERN = /Archon|WCL|Warcraft Logs/i;
 const COMMUNITY_SOURCE_PATTERN = /Discord|Dreamgrove|Fel Hammer|Acherus|Death's Advance|Skyhold|Ravenholdt|Earthshrine|Warcraft Priests|Peak of Serenity|Wyrmrest|Ancestral Guidance|Altered Time|Trueshot Lodge|공개 서버|공개 경로|컴펜디엄/i;
 const LOG_EVIDENCE_PATTERN = /표본|parses?|DPS|HPS|쐐기돌|사용률|채택률|추천 .*빌드|상위 50%|상위 5%|최근 14일/i;
@@ -149,6 +150,19 @@ function validateSkillReferences(spec, manuscript, kbSkills) {
 function validateSpecSpecificCurrentPatchRules(spec, manuscript) {
   const prefix = spec.id;
   const text = combinedManuscriptText(manuscript);
+
+  if (spec.id.startsWith('priest-')) {
+    const textWithoutAllowedRapture = text.replace(/어둠의 환희/g, '');
+
+    assert(
+      !/환희|Rapture/i.test(textWithoutAllowedRapture),
+      `${prefix}: old Priest Rapture/환희 must not appear in current guide copy`
+    );
+    assert(
+      !PRIEST_AWKWARD_COPY_PATTERN.test(text),
+      `${prefix}: contains awkward/internal analysis wording; use player-facing guide terms`
+    );
+  }
 
   if (spec.id === 'druid-restoration') {
     assert(text.includes('상록숲'), `${prefix}: must cover 상록숲/Everbloom Apex talent`);
