@@ -146,6 +146,27 @@ function validateSkillReferences(spec, manuscript, kbSkills) {
   });
 }
 
+function validateSpecSpecificCurrentPatchRules(spec, manuscript) {
+  const prefix = spec.id;
+  const text = combinedManuscriptText(manuscript);
+
+  if (spec.id === 'druid-restoration') {
+    assert(text.includes('상록숲'), `${prefix}: must cover 상록숲/Everbloom Apex talent`);
+    assert(
+      (manuscript.sources || []).some(source => /상록숲|392167/.test(sourceText(source))),
+      `${prefix}: sources[] must include official 상록숲 392167 tooltip evidence`
+    );
+    assert(
+      (manuscript.priority || []).some(item => String(item.skillId) === '392167'),
+      `${prefix}: priority must include 상록숲 392167`
+    );
+    assert(
+      /숲 수호자.{0,120}(패시브|발동)/.test(text),
+      `${prefix}: must frame 숲 수호자 as a passive/proc, not an active opener button`
+    );
+  }
+}
+
 function validateManuscript(spec, manuscript, kbSkills) {
   const prefix = spec.id;
   const sources = manuscript.sources || [];
@@ -198,6 +219,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   sources.forEach((source, index) => validateSource(spec, source, index));
   validateSourceCoverage(spec, manuscript);
   validateSkillReferences(spec, manuscript, kbSkills);
+  validateSpecSpecificCurrentPatchRules(spec, manuscript);
 }
 
 function main() {
