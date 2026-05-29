@@ -106,7 +106,7 @@ const rotationRailSteps = [
   { label: '발동 확인', note: '버프 스택', icon: 3, stack: [8, 9] },
   { label: '주요 소비기', note: '자원 소모', icon: 4 },
   { label: '반복', note: '필러 구간', icon: 1 },
-  { label: '쿨기 정렬', note: '극딜 창', icon: 5 },
+  { label: '쿨기 정렬', note: '극딜 구간', icon: 5 },
   { label: '마무리', note: '강화 소비', icon: 2 },
   { label: '복귀', note: '생성기로 전환', icon: 0 },
 ];
@@ -116,7 +116,7 @@ const rotationPriorityRows = [
   { text: '자원이 상한에 닿기 전에 가장 강한 소비기를 먼저 사용', icon: 4 },
   { text: '짧은 지속시간 발동 버프는 필러보다 우선 소모', icon: 8 },
   { text: '광역 구간에서는 타겟 수 기준으로 광역 강화기를 먼저 확인', icon: 2 },
-  { text: '쿨기 창이 끝나면 생성기와 필러 중심의 유지 딜사이클로 복귀', icon: 0 },
+  { text: '쿨기 구간이 끝나면 생성기와 필러 중심의 유지 딜사이클로 복귀', icon: 0 },
 ];
 
 const guideTemplateStats = [
@@ -2407,7 +2407,7 @@ function RotationRailMockup() {
         <div>
           <RotationTitle>오프닝 전투 흐름 차트</RotationTitle>
           <RotationLead>
-            오프닝은 스킬 목록이 아니라 전투 시작부터 첫 핵심 창까지 이어지는 판단 흐름입니다.
+            오프닝은 스킬 목록이 아니라 전투 시작부터 첫 핵심 구간까지 이어지는 판단 흐름입니다.
             <RotationAccent> 전문화명</RotationAccent>과 핵심 스킬명만 갈아끼우면 딜러의 오프닝, 탱커의 진입/방어, 힐러의 첫 피해 대응에 모두 재사용할 수 있습니다.
           </RotationLead>
         </div>
@@ -2597,7 +2597,7 @@ function OpenerTimelineChart() {
             <TimeCode>{step[0]}s</TimeCode>
             {skill && <TimelineIcon src={skill.iconUrl} alt="" loading="lazy" />}
             <TimeSkill>{step[1]}</TimeSkill>
-            <TimeType $type={step[2]}>{step[2] === 'burst' ? '극딜 창' : step[2] === 'proc' ? '발동 확인' : '정렬 단계'}</TimeType>
+            <TimeType $type={step[2]}>{step[2] === 'burst' ? '극딜 구간' : step[2] === 'proc' ? '발동 확인' : '정렬 단계'}</TimeType>
           </TimelineStep>
         );
       })}
@@ -2722,7 +2722,7 @@ function UptimeTimelineChart() {
   const lanes = [
     { label: '핵심 버프', segments: [[0, 34, '#78a85a'], [50, 28, '#78a85a']] },
     { label: '도트 유지', segments: [[6, 42, '#b8915b'], [56, 38, '#b8915b']] },
-    { label: '극딜 창', segments: [[12, 22, '#c96442'], [72, 20, '#c96442']] },
+    { label: '극딜 구간', segments: [[12, 22, '#c96442'], [72, 20, '#c96442']] },
     { label: '이동 구간', segments: [[38, 12, '#aeb8bd'], [92, 8, '#aeb8bd']] },
   ];
 
@@ -2951,7 +2951,7 @@ function GuideTemplateMockup() {
                   <GuideSkillIcon src={skill.iconUrl} alt="" loading="lazy" />
                   <div>
                     <GuideSkillName>{skill.koreanName}</GuideSkillName>
-                    <GuideSkillNote>{index === 0 ? '극딜 창에서 우선 사용' : index === 1 ? '자원 낭비 전에 소비' : '발동 상태일 때 필러보다 우선'}</GuideSkillNote>
+                    <GuideSkillNote>{index === 0 ? '극딜 구간에서 우선 사용' : index === 1 ? '자원 낭비 전에 소비' : '발동 상태일 때 필러보다 우선'}</GuideSkillNote>
                   </div>
                 </GuideSkillLine>
               ))}
@@ -3109,7 +3109,7 @@ function MainSiteMockup() {
             </KeyValue>
             <KeyValue>
               <span>상태</span>
-              <strong>검수 중</strong>
+              <strong>확인 중</strong>
             </KeyValue>
           </LedgerBlock>
         </Ledger>
