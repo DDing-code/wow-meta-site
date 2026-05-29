@@ -25,7 +25,7 @@ const forbiddenTerms = [
   { term: '\uc624\ud504\ub2dd \ub51c\uc0ac\uc774\ud074', replacement: '\uc624\ud504\ub2dd \uc804\ud22c \ud750\ub984' },
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
-  { term: '\uc708\ub3c4\uc6b0', replacement: '\ucc3d' },
+  { term: '\uc708\ub3c4\uc6b0', replacement: '\uad6c\uac04' },
   { term: 'Midnight', replacement: '\ud55c\ubc24' },
   { term: 'Stage 1', replacement: '1\ub2e8\uacc4' },
   { term: 'Stage 2', replacement: '2\ub2e8\uacc4' },

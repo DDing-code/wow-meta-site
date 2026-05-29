@@ -29,11 +29,11 @@ const ROLE_CHART_REQUIREMENTS = {
   },
   melee: {
     chartIds: new Set(['uptime', 'cooldown', 'resource']),
-    textPattern: /피해|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+    textPattern: /피해|구간|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
   },
   ranged: {
     chartIds: new Set(['uptime', 'cooldown', 'resource']),
-    textPattern: /피해|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+    textPattern: /피해|구간|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
   },
 };
 

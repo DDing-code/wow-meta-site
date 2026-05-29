@@ -105,12 +105,41 @@ function skillName(skill) {
   return skill?.koreanName || skill?.name || skill?.englishName || '스킬';
 }
 
+const standaloneWindowSkillNames = uniqueBy(
+  allSkills
+    .map(skillName)
+    .filter(name => /(^|\s)창($|\s)/.test(name))
+    .sort((a, b) => b.length - a.length),
+  name => name
+);
+
 function cleanText(value) {
   return String(value || '').trim();
 }
 
+function normalizeCommunityTerms(value) {
+  const protectedTerms = [];
+  let text = value;
+
+  standaloneWindowSkillNames.forEach((name, index) => {
+    if (!text.includes(name)) return;
+    const token = `__WOWMETA_SKILL_${index}__`;
+    protectedTerms.push([token, name]);
+    text = text.split(name).join(token);
+  });
+
+  text = text
+    .replace(/(^|[^가-힣A-Za-z0-9])창(?=(?:[은는이가을를에의도만과와]|마다|에서|으로|부터|까지|처럼|보다| 안| 밖| 내부| 중| 중심| 단위| 차트| 진입| 활성| 밀도| 준비| 유지| 시작| 목표| 배치| 정렬| 전| 후| 앞| 사이| 관리| 흐름| 개방| 소비| 사용| 보강| 가치| 공백| 손실| 계획| 기준| 대기| 종료| 타임라인| 루프| 설계| 확보| 압축| 연장| 연결| 분기| 전환| 회수| 누수| 낭비|$|[\s.,:;!?)]))/g, '$1구간');
+
+  protectedTerms.forEach(([token, name]) => {
+    text = text.split(token).join(name);
+  });
+
+  return text;
+}
+
 function displayGuideText(value) {
-  return cleanText(value)
+  return normalizeCommunityTerms(cleanText(value)
     .replace(/특성 문서/g, '특성 가이드')
     .replace(/운용 문서/g, '운용 가이드')
     .replace(/딜사이클 문서/g, '딜사이클 가이드')
@@ -152,8 +181,8 @@ function displayGuideText(value) {
     .replace(/\bUptime\b/g, '유지율')
     .replace(/\bbuilder-spender\b/gi, '생성-소비')
     .replace(/\bspender\b/gi, '소비기')
-    .replace(/\bfiller\b/gi, '채우기 기술')
-    .replace(/\bwindow\b/gi, '창')
+    .replace(/\bfiller\b/gi, '필러')
+    .replace(/\bwindow\b/gi, '구간')
     .replace(/\bAnnihilator\b/g, '궤멸자')
     .replace(/\bAldrachi Reaver\b/g, '알드라치 파괴자')
     .replace(/\bVoid-Scarred\b/g, '공허상흔')
@@ -193,7 +222,7 @@ function displayGuideText(value) {
     .replace(/\bStage\s*2\b/g, '2단계')
     .replace(/\bStage\s*3\b/g, '3단계')
     .replace(/\bVoidweaver\b/g, '공허술사')
-    .replace(/\bOracle\b/g, '예언자');
+    .replace(/\bOracle\b/g, '예언자'));
 }
 
 function synergyName(synergy) {
@@ -1927,19 +1956,19 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
   return (
     <OpenerFlowViewport>
       <OpenerFlowMapHeader>
-        <span>{mapCopy.start}</span>
-        <strong>{mapCopy.middle}</strong>
-        <span>{mapCopy.end}</span>
+        <span>{displayGuideText(mapCopy.start)}</span>
+        <strong>{displayGuideText(mapCopy.middle)}</strong>
+        <span>{displayGuideText(mapCopy.end)}</span>
       </OpenerFlowMapHeader>
       <OpenerFlowKey aria-label="전투 흐름 기준">
         {mapCopy.keys.map(item => (
-          <span key={item}>{item}</span>
+          <span key={item}>{displayGuideText(item)}</span>
         ))}
       </OpenerFlowKey>
       {stageLegend.length > 1 && (
         <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
           {stageLegend.map(phase => (
-            <span key={phase}>{phase}</span>
+            <span key={phase}>{displayGuideText(phase)}</span>
           ))}
         </OpenerFlowPhaseLegend>
       )}
@@ -1951,9 +1980,9 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
               <SkillIconLink skill={step.skill} size={46} />
             </OpenerStepTop>
             <OpenerStepBody>
-              <OpenerPhase>{step.phase}</OpenerPhase>
-              <strong>{step.label}</strong>
-              <OpenerTrigger>{step.trigger}</OpenerTrigger>
+              <OpenerPhase>{displayGuideText(step.phase)}</OpenerPhase>
+              <strong>{displayGuideText(step.label)}</strong>
+              <OpenerTrigger>{displayGuideText(step.trigger)}</OpenerTrigger>
               {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
             </OpenerStepBody>
           </li>
@@ -2139,7 +2168,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
         {specialistChart && (
           <PaperSection>
-            <h3>{specialistChart.sectionHeading || '핵심 판단 도식'}</h3>
+            <h3>{renderGuideText(specialistChart.sectionHeading || '핵심 판단 도식', inlineTerms)}</h3>
             <p>
               {renderGuideText(
                 specialistChart.sectionIntro || '위 설명에서 다룬 관계를 실제 전투에서 다시 확인할 수 있게 한 화면에 묶었습니다.',
@@ -2806,7 +2835,7 @@ function PriorityListChart({ guide, title, skills, manualPriority, inlineTerms }
           <PriorityRank>{index + 1}</PriorityRank>
           <SkillIconLink skill={row.skill} size={32} />
           <PriorityText>
-            <strong>{row.name}</strong>
+            <strong>{displayGuideText(row.name)}</strong>
             <span>{renderGuideText(row.note, inlineTerms)}</span>
           </PriorityText>
         </PriorityRow>
@@ -2851,7 +2880,7 @@ function ResourceCurveChart({ guide, skills, profile }) {
 
   return (
     <ResourceChart>
-      <CurveSvg viewBox="0 0 420 150" role="img" aria-label={`${profile.resourceTitle} 차트`}>
+      <CurveSvg viewBox="0 0 420 150" role="img" aria-label={`${displayGuideText(profile.resourceTitle)} 차트`}>
         <path d="M18 118 C72 106, 92 52, 150 66 C206 79, 221 28, 276 36 C332 44, 345 100, 402 76" fill="none" stroke="rgba(244,239,229,0.16)" strokeWidth="14" strokeLinecap="round" />
         <path d="M18 118 C72 106, 92 52, 150 66 C206 79, 221 28, 276 36 C332 44, 345 100, 402 76" fill="none" stroke={guide.color} strokeWidth="5" strokeLinecap="round" />
         <circle cx="150" cy="66" r="8" fill="#b8915b" />
@@ -2864,7 +2893,7 @@ function ResourceCurveChart({ guide, skills, profile }) {
         </MeterBox>
         <MeterBox>
           <span>운용 방식</span>
-          <strong>{profile.resourceTitle}</strong>
+          <strong>{displayGuideText(profile.resourceTitle)}</strong>
         </MeterBox>
       </MeterGrid>
     </ResourceChart>
@@ -4917,7 +4946,7 @@ function UptimeTimelineChart({ guide, data }) {
         <UptimeLane key={`${row.skill?.id || row.label}-${index}`}>
           <LaneLabel>
             <SkillIconLink skill={row.skill} size={28} />
-            <span>{row.skill ? skillName(row.skill) : row.label}</span>
+            <span>{row.skill ? skillName(row.skill) : displayGuideText(row.label)}</span>
           </LaneLabel>
           <SegmentTrack>
             {row.segments.map(([left, width], segmentIndex) => (
@@ -4930,8 +4959,8 @@ function UptimeTimelineChart({ guide, data }) {
             ))}
           </SegmentTrack>
           <UptimeNote>
-            <span>{row.label}</span>
-            <strong>{row.note}</strong>
+            <span>{displayGuideText(row.label)}</span>
+            <strong>{displayGuideText(row.note)}</strong>
           </UptimeNote>
         </UptimeLane>
       ))}

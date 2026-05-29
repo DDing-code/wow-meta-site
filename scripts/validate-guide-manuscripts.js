@@ -20,7 +20,7 @@ const MINIMUMS = {
 };
 
 const TRUST_TIERS = new Set(['S', 'A', 'B', 'C']);
-const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 창|상태 전환/i;
+const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 구간|지원 창|상태 전환/i;
 const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
 const INTERNAL_COPY_PATTERN = /원고|프로토타입|내부 문서|이 문서|문서에서|문서에서는|시각화 배치 기준|이 페이지의 시각화|보조 시각화|차트 배치/i;
 const LOG_SOURCE_PATTERN = /Archon|WCL|Warcraft Logs/i;
