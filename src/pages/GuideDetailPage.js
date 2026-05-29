@@ -1500,7 +1500,7 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'paladin-holy') {
     plan.push({
       id: 'uptime',
-      title: '신성 충격-봉화망 트리아지 타임라인',
+      title: '신성 충격-봉화 급락 대응 타임라인',
       sectionHeading: '신성 충격과 봉화 대상망',
       sectionIntro:
         '신성 성기사는 신성 충격으로 신성한 힘과 빛 주입을 만들고, 봉화 대상망으로 치유를 분배한 뒤, 단일 위험과 광역 피해에 서로 다른 소비기와 쿨다운을 배정하는 힐러입니다.',

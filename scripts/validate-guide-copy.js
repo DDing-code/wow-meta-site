@@ -34,6 +34,7 @@ const forbiddenTerms = [
   { term: '\uc785\ub825\uac12', replacement: '\uc7ac\ub8cc/\uc218\ub2e8' },
   { term: '\uae30\ubcf8\uce35', replacement: '\uae30\ubcf8 \ubc14\ud0d5' },
   { term: '\uc678\ud53c', replacement: '\ubcf4\uc870 \ubc29\uc5b4\uae30' },
+  { term: '\ud2b8\ub9ac\uc544\uc9c0', replacement: '\uae09\ub77d \ub300\uc751/\ub300\uc0c1 \ubcf5\uad6c' },
   { term: '\uc624\ud504\ub108', replacement: '\uc624\ud504\ub2dd' },
   { term: '\uc624\ud504\ub2dd \ub51c\uc0ac\uc774\ud074', replacement: '\uc624\ud504\ub2dd \uc804\ud22c \ud750\ub984' },
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
@@ -44,6 +45,8 @@ const forbiddenTerms = [
   { term: '\ub7a8\ub364\uc131', replacement: '\ubb34\uc791\uc704\uc131/\ubb34\uc791\uc704' },
   { term: '\ub7a8\ud504', replacement: '\uc608\uc5f4/\uc900\ube44 \uacfc\uc815' },
   { term: '\ucd94\ucc9c \uc804\ubb38\ud654+\uc601\uc6c5 \ube4c\ub4dc', replacement: '\ucd94\ucc9c \ud2b9\uc131 \uc870\ud569' },
+  { term: '\uc804\ubb38\ud654+\uc601\uc6c5 \ube4c\ub4dc', replacement: '\ub300\ud45c \ube4c\ub4dc' },
+  { term: '\uc774 \ud398\uc774\uc9c0\uc758 \uc911\uc2ec', replacement: '\uadf8\ub798\ud504\uc758 \uc911\uc2ec/\ud575\uc2ec' },
   { term: 'KST', replacement: '\ud55c\uad6d \uc2dc\uac04' },
   { term: 'Discord', replacement: '\ub514\uc2a4\ucf54\ub4dc' },
   { term: '\ucc44\uc6b0\uae30 \uae30\uc220', replacement: '\ud544\ub7ec' },
@@ -98,6 +101,7 @@ const pageForbiddenTerms = [
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
   { term: '\ud0c0\uac9f', replacement: '\ub300\uc0c1' },
   { term: '\ud0c0\uae43', replacement: '\ub300\uc0c1' },
+  { term: '\ud2b8\ub9ac\uc544\uc9c0', replacement: '\uae09\ub77d \ub300\uc751/\ub300\uc0c1 \ubcf5\uad6c' },
   { term: '\uc815\ub82c \ub808\uc778', replacement: '\ub9de\ucd94\uae30 \ud45c/\uad6c\uac04' },
   { term: '\ub7a8\ub364\uc131', replacement: '\ubb34\uc791\uc704\uc131/\ubb34\uc791\uc704' },
 ];
@@ -162,11 +166,31 @@ function collectAwkwardContextErrors(filePath, patterns) {
   return errors;
 }
 
+function collectStandaloneWindowTermErrors(filePath) {
+  const lines = fs.readFileSync(filePath, 'utf8').split(/\r?\n/);
+  const errors = [];
+  const standaloneWindowTerm = /(^|[^\uAC00-\uD7A3])\uCC3D(?!\uB05D)/;
+
+  lines.forEach((line, index) => {
+    if (!standaloneWindowTerm.test(line)) return;
+
+    errors.push({
+      filePath,
+      line: index + 1,
+      term: '\uCC3D',
+      replacement: '\uAD6C\uAC04/\uD0C0\uC774\uBC0D',
+    });
+  });
+
+  return errors;
+}
+
 function main() {
   const errors = [
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
+    ...collectStandaloneWindowTermErrors(MANUSCRIPT_PATH),
     ...collectAwkwardContextErrors(GUIDE_DETAIL_PATH, awkwardContextPatterns),
   ];
 
