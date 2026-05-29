@@ -242,7 +242,7 @@ export const guideSpecsByRole = {
     }),
     spec('shaman-restoration', 'shaman', '복원', '복원', 'healers', '/guide/shaman/restoration', {
       kbSpecAliases: ['Restoration'],
-      focus: '성난 해일, 토템, 연쇄 치유를 피해 밀도에 맞춥니다.',
+      focus: '성난 해일, 토템, 연쇄 치유를 피해 강도에 맞춥니다.',
     }),
     spec('monk-mistweaver', 'monk', '운무', '운무', 'healers', '/guide/monk/mistweaver', {
       kbSpecAliases: ['Mistweaver'],
