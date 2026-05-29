@@ -205,6 +205,13 @@ function displayGuideText(value) {
     .replace(/독창/g, '독 구간')
     .replace(/전투 흐름 도식/g, '전투 흐름도')
     .replace(/도식/g, '흐름도')
+    .replace(/한 화면에 묶었습니다/g, '한눈에 확인할 수 있게 모았습니다')
+    .replace(/한 화면에 묶은/g, '한눈에 모은')
+    .replace(/한 화면에 묶어/g, '한눈에 모아')
+    .replace(/한 화면에 놓기 위한/g, '한눈에 보기 위한')
+    .replace(/한 화면에 놓는/g, '한눈에 보는')
+    .replace(/그래프의 중앙/g, '그래프 중심')
+    .replace(/중앙 표식/g, '중심 표식')
     .replace(/막대는 실제 WCL 초 단위 복사본이 아니라/g, '이 막대는 WCL 타임라인을 그대로 옮긴 것이 아니라')
     .replace(/막대는 실제 로그 초 단위 복사본이 아니라/g, '이 막대는 로그 타임라인을 그대로 옮긴 것이 아니라')
     .replace(/막대는 실제 HPS 초 단위 복사본이 아니라/g, '이 막대는 HPS 타임라인을 그대로 옮긴 것이 아니라')
@@ -1302,12 +1309,12 @@ function getInlineChartPlan(guide, data) {
   if (guide.id === 'monk-mistweaver') {
     plan.push({
       id: 'uptime',
-      title: '피해 예고-안개 커버리지 타임라인',
+      title: '피해 예고-안개 유지 타임라인',
       sectionHeading: '소생의 안개와 피해 회수 구간',
       sectionIntro:
         '운무 수도사는 소생의 안개로 생기 충전 대상망을 만들고, 피해 예고에 맞춰 생기 충전, 마나 차, 천신합일, 재활, 기의 고치를 분산하는 힐러입니다.',
       caption:
-        '막대는 실제 HPS 수치가 아니라 소생의 안개 커버리지, 생기 충전 회수, 근접 치유 엔진, 마나 차, 단일 대상 외부 생존기, 대형 공대 쿨기를 한 화면에 묶은 힐러 판단 도식입니다.',
+        '이 막대는 HPS 수치표가 아니라 소생의 안개 대상 유지, 생기 충전 복구, 근접 치유 엔진, 마나 차, 단일 대상 외부 생존기, 대형 공대 쿨기를 한눈에 모은 힐러 흐름도입니다.',
       definition: [
         ['의미', '소생의 안개는 생기 충전이 여러 대상을 치유하게 만드는 대상망이고, 생기 충전은 피해가 들어온 뒤 그 대상망을 통해 회수하는 핵심 주문입니다.'],
         ['읽는 법', '피해 전에는 소생의 안개와 마나 차를 준비하고, 피해 직후에는 생기 충전 또는 재활/천신합일을 배정하며, 단일 대상 위험은 포용의 안개와 기의 고치로 분리합니다.'],
@@ -2354,10 +2361,10 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
         {specialistChart && (
           <PaperSection>
-            <h3>{renderGuideText(specialistChart.sectionHeading || '핵심 판단 도식', inlineTerms)}</h3>
+            <h3>{renderGuideText(specialistChart.sectionHeading || '핵심 흐름도', inlineTerms)}</h3>
             <p>
               {renderGuideText(
-                specialistChart.sectionIntro || '위 설명에서 다룬 관계를 실제 전투에서 다시 확인할 수 있게 한 화면에 묶었습니다.',
+                specialistChart.sectionIntro || '위 설명에서 다룬 관계를 실제 전투에서 다시 확인할 수 있게 한눈에 모았습니다.',
                 inlineTerms
               )}
             </p>
@@ -4250,7 +4257,7 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'monk-mistweaver') {
     return [
       {
-        label: '안개 커버리지',
+        label: '안개 대상 유지',
         skill: findSkillByNames(data, ['소생의 안개']),
         note: '생기 충전 확산의 대상망입니다. 충전이 넘치기 전에 피해 전 대상 수를 확보합니다.',
         segments: [[3, 28], [35, 28], [68, 26]],

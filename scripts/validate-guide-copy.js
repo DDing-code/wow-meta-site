@@ -50,6 +50,12 @@ const forbiddenTerms = [
   { term: '\uc774 \ud398\uc774\uc9c0', replacement: '\uc774 \uac00\uc774\ub4dc' },
   { term: '\uc774 \uae00', replacement: '\uc774 \uac00\uc774\ub4dc' },
   { term: '\ud53c\ud574 \ud504\ub85c\ud544', replacement: '\ud53c\ud574 \uc131\uaca9' },
+  { term: '\ud53c\ud574 \ubaa8\uc591', replacement: '\ud53c\ud574 \ud328\ud134' },
+  { term: '\ud53c\ud574 \uc22b\uc790', replacement: '\ub51c\ub7c9' },
+  { term: '\ub51c \uc804\uc5ed', replacement: '\ub51c \uae00\ucfe8/\uc720\ud2f8' },
+  { term: '\ucee4\ubc84\ub9ac\uc9c0', replacement: '\ub300\uc0c1 \uc720\uc9c0/\uc720\uc9c0 \ubc94\uc704' },
+  { term: '\uc8fd\ub294 \uc774\uc720', replacement: '\uc0ac\ub9dd \uc6d0\uc778' },
+  { term: 'SimulationCraft \ud504\ub85c\ud544', replacement: 'SimulationCraft \uc124\uc815' },
   { term: '\ud45c\uc900 \ubcf8\ubb38', replacement: '\ud45c\uc900 \uc124\uba85' },
   { term: '\uacf5\ud1b5 \ubcf8\ubb38', replacement: '\uacf5\ud1b5 \uc124\uba85' },
   { term: '\uae30\ubcf8 \ubcf8\ubb38', replacement: '\uae30\ubcf8 \uc124\uba85' },
@@ -118,6 +124,7 @@ const pageForbiddenTerms = [
   { term: '\uc6b4\uc6a9 \ubaa8\ub378', replacement: '\uc6b4\uc6a9' },
   { term: '\uac80\uc99d \ubc94\uc704', replacement: '\ucd9c\ucc98 \ud655\uc778' },
   { term: '\ubcf4\uc870 \uc790\ub8cc', replacement: '\uccb4\ud06c\uc6a9' },
+  { term: '\ucee4\ubc84\ub9ac\uc9c0', replacement: '\ub300\uc0c1 \uc720\uc9c0/\uc720\uc9c0 \ubc94\uc704' },
 ];
 
 const awkwardContextPatterns = [
