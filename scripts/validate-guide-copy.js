@@ -7,8 +7,12 @@ const SITE_ROOT = path.resolve(__dirname, '..');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
+const MOCKUPS_PATH = path.join(SITE_ROOT, 'src', 'pages', 'MockupsPage.js');
 
 const forbiddenTerms = [
+  { term: '고가치', replacement: '강한/우선순위 높은' },
+  { term: '영웅 특성 분기', replacement: '영웅 특성 선택지' },
+  { term: '품질 게이트', replacement: '검수 게이트' },
   { term: '\uc6d0\uace0', replacement: '\uac00\uc774\ub4dc/\ubcf8\ubb38' },
   { term: '\ub17c\ubb38', replacement: '\uacf5\ub7b5 \uae00' },
   { term: '\ud504\ub85c\ud1a0\ud0c0\uc785', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
@@ -53,7 +57,7 @@ const forbiddenTerms = [
   { term: '\uc2e4\uc81c WCL \uc218\uce58\ub97c \ubcf5\uc0ac', replacement: 'WCL \ud0c0\uc784\ub77c\uc778\uc744 \uadf8\ub300\ub85c \ubca0\ub080 \ud45c\ud604 \uae08\uc9c0' },
   { term: '\uae00\ucfe8 \ub300\uae30\uc2dc\uac04', replacement: '\uae00\ucfe8' },
   { term: '\uae00\ucfe8 \ud234\ud301', replacement: '\ud234\ud301 \ud56d\ubaa9' },
-  { term: '\uc7ac\uc0ac\uc6a9 \ub300\uae30\uc2dc\uac04', replacement: '\ucffc\ub2e4\uc6b4' },
+  { term: '\uc7ac\uc0ac\uc6a9 \ub300\uae30\uc2dc\uac04', replacement: '\ucfe8\ub2e4\uc6b4' },
   { term: '\ub204\ub974\ub294 \ubc84\ud2bc', replacement: '\uc4f0\ub294 \uc2a4\ud0ac/\uc9c1\uc811 \uc4f0\ub294 \uc2a4\ud0ac' },
   { term: '\uc751\uae09 \ubc84\ud2bc', replacement: '\uc751\uae09\uae30' },
   { term: '\uc608\uc57d \ubc84\ud2bc', replacement: '\ubbf8\ub9ac \uc7a1\uc544\ub450\ub294 \uc2a4\ud0ac' },
@@ -206,7 +210,7 @@ const pageForbiddenTerms = [
   { term: '\uc2e4\uc81c WCL \uc218\uce58\ub97c \ubcf5\uc0ac', replacement: 'WCL \ud0c0\uc784\ub77c\uc778\uc744 \uadf8\ub300\ub85c \ubca0\ub080 \ud45c\ud604 \uae08\uc9c0' },
   { term: '\uae00\ucfe8 \ub300\uae30\uc2dc\uac04', replacement: '\uae00\ucfe8' },
   { term: '\uae00\ucfe8 \ud234\ud301', replacement: '\ud234\ud301 \ud56d\ubaa9' },
-  { term: '\uc7ac\uc0ac\uc6a9 \ub300\uae30\uc2dc\uac04', replacement: '\ucffc\ub2e4\uc6b4' },
+  { term: '\uc7ac\uc0ac\uc6a9 \ub300\uae30\uc2dc\uac04', replacement: '\ucfe8\ub2e4\uc6b4' },
   { term: '\ub204\ub974\ub294 \ubc84\ud2bc', replacement: '\uc4f0\ub294 \uc2a4\ud0ac/\uc9c1\uc811 \uc4f0\ub294 \uc2a4\ud0ac' },
   { term: '\uc751\uae09 \ubc84\ud2bc', replacement: '\uc751\uae09\uae30' },
   { term: '\uc608\uc57d \ubc84\ud2bc', replacement: '\ubbf8\ub9ac \uc7a1\uc544\ub450\ub294 \uc2a4\ud0ac' },
@@ -319,6 +323,8 @@ function main() {
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
+    ...collectForbiddenTermErrors(MOCKUPS_PATH, pageForbiddenTerms),
+    ...collectForbiddenTermErrors(MOCKUPS_PATH, forbiddenTerms.slice(0, 3)),
     ...collectStandaloneWindowTermErrors(MANUSCRIPT_PATH),
     ...collectAwkwardContextErrors(GUIDE_DETAIL_PATH, awkwardContextPatterns),
   ];

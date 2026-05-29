@@ -81,7 +81,7 @@ const procRows = [
   ['발동 1개', '핵심기 강화', '즉시 소모'],
   ['발동 2개', '충돌 위험', '짧은 버프 먼저'],
   ['자원 초과', '낭비 위험', '생성기 중단'],
-  ['광역 진입', '타겟 변화', '광역 소비기로 전환'],
+  ['광역 진입', '대상 변화', '광역 소비기로 전환'],
 ];
 
 const targetBars = [
@@ -102,7 +102,7 @@ const defensiveRows = [
 const rotationRailSteps = [
   { label: '자원 100까지', note: '생성기 반복', icon: 0 },
   { label: '진입기', note: '전투 시작', icon: 1 },
-  { label: '광역 강화', note: '타겟 수 확인', icon: 2 },
+  { label: '광역 강화', note: '대상 수 확인', icon: 2 },
   { label: '발동 확인', note: '버프 스택', icon: 3, stack: [8, 9] },
   { label: '주요 소비기', note: '자원 소모', icon: 4 },
   { label: '반복', note: '필러 구간', icon: 1 },
@@ -115,7 +115,7 @@ const rotationPriorityRows = [
   { text: '주요 변신/강화 상태에 진입한 뒤 핵심 소비기를 사용', icon: 5 },
   { text: '자원이 상한에 닿기 전에 가장 강한 소비기를 먼저 사용', icon: 4 },
   { text: '짧은 지속시간 발동 버프는 필러보다 우선 소모', icon: 8 },
-  { text: '광역 구간에서는 타겟 수 기준으로 광역 강화기를 먼저 확인', icon: 2 },
+  { text: '광역 구간에서는 대상 수 기준으로 광역 강화기를 먼저 확인', icon: 2 },
   { text: '쿨기 구간이 끝나면 생성기와 필러 중심의 유지 딜사이클로 복귀', icon: 0 },
 ];
 
@@ -128,7 +128,7 @@ const guideTemplateStats = [
 
 const guideTemplateBuilds = [
   { label: '레이드 단일', tone: 'green', summary: '보스 한 명을 오래 치는 전투에서 쿨기 정렬과 발동 소비를 가장 강하게 잡는 표준 빌드입니다.' },
-  { label: '쐐기 광역', tone: 'brass', summary: '타겟 수가 자주 변하는 던전에서 광역 강화기와 짧은 쿨기 순환을 우선하는 빌드입니다.' },
+  { label: '쐐기 광역', tone: 'brass', summary: '대상 수가 자주 변하는 던전에서 광역 강화기와 짧은 쿨기 순환을 우선하는 빌드입니다.' },
 ];
 
 const guideTemplateChapters = [
@@ -2540,7 +2540,7 @@ function PriorityFlowChart() {
   const flowItems = [
     { rank: '01', icon: Zap, label: '발동 버프 확인', sub: '짧은 지속시간 버프부터 먼저 판정', active: true },
     { rank: '02', icon: Gauge, label: '자원 초과 방지', sub: '상한에 닿기 전 소비기 우선' },
-    { rank: '03', icon: Target, label: '타겟 수 재판정', sub: '단일, 2타겟, 광역 우선순위 분기' },
+    { rank: '03', icon: Target, label: '대상 수 재판정', sub: '단일, 2대상, 광역 우선순위 선택' },
   ];
 
   return (
@@ -2711,7 +2711,7 @@ function TargetScalingChart() {
         <TargetBar key={label}>
           <BarValue>{value}</BarValue>
           <BarFill $value={value} $peak={value === peak} />
-          <BarLabel>{label}타겟</BarLabel>
+          <BarLabel>{label}대상</BarLabel>
         </TargetBar>
       ))}
     </BarChart>
@@ -2788,7 +2788,7 @@ function ChartLibraryMockups() {
       <ChartShell number="02" title="오프닝 선형 타임라인" meta="전투 시작 10초 안의 입력 순서 정리" icon={Clock3} tags={['오프닝', '레이드', '초 단위']}>
         <OpenerTimelineChart />
       </ChartShell>
-      <ChartShell number="03" title="쿨기 정렬 레인 차트" meta="2분, 90초, 장신구, 블러드 정렬 확인" icon={Activity} tags={['극딜', '쿨기', '타임라인']}>
+      <ChartShell number="03" title="쿨기 맞추기 타임라인" meta="2분, 90초, 장신구, 블러드 타이밍 확인" icon={Activity} tags={['극딜', '쿨기', '타임라인']}>
         <CooldownAlignmentChart />
       </ChartShell>
       <ChartShell number="04" title="자원 흐름 곡선" meta="분노, 기력, 마나, 광기처럼 낭비 관리가 중요한 전문화용" icon={Gauge} tags={['자원', '낭비 방지', '곡선']}>
@@ -2797,10 +2797,10 @@ function ChartLibraryMockups() {
       <ChartShell number="05" title="발동 반응 매트릭스" meta="발동 효과 충돌, 버프 우선순위, 자원 초과를 한 표로 정리" icon={Zap} tags={['발동', '즉시 판단', '표']}>
         <ProcMatrixChart />
       </ChartShell>
-      <ChartShell number="06" title="영웅 특성 경로 맵" meta="영웅 특성 선택 이유와 분기 지점을 시각화" icon={Map} tags={['영웅 특성', '선택 경로', '빌드']}>
+      <ChartShell number="06" title="영웅 특성 경로 맵" meta="영웅 특성 선택 이유와 갈림 지점을 보여주는 차트" icon={Map} tags={['영웅 특성', '선택 경로', '빌드']}>
         <HeroTalentPathChart />
       </ChartShell>
-      <ChartShell number="07" title="타겟 수 스케일링 바 차트" meta="단일, 2타겟, 광역에서 가치가 바뀌는 스킬 설명용" icon={Target} tags={['타겟 수', '광역', '스케일링']}>
+      <ChartShell number="07" title="대상 수 변화 바 차트" meta="단일, 2대상, 광역에서 가치가 바뀌는 스킬 설명용" icon={Target} tags={['대상 수', '광역', '스케일링']}>
         <TargetScalingChart />
       </ChartShell>
       <ChartShell number="08" title="버프/도트 유지율 타임라인" meta="유지율이 성능을 좌우하는 딜러, 힐러, 탱커 전문화용" icon={Activity} tags={['유지율', '도트', '버프']}>
@@ -3158,7 +3158,7 @@ function PanelSystemMockup() {
             <SkillPanel>
               <TableTitle>
                 <ShieldCheck size={15} />
-                품질 게이트
+                검수 게이트
               </TableTitle>
               <LedgerBlock>
                 <KeyValue>
@@ -3268,7 +3268,7 @@ function SpellDataMockup() {
             <div>
               <InfoBlocks>
                 <InfoBlock>
-                  <InfoLabel>재사용 대기시간</InfoLabel>
+                  <InfoLabel>쿨다운</InfoLabel>
                   <InfoValue>{featuredSpell.cooldown || '상황별'}</InfoValue>
                 </InfoBlock>
                 <InfoBlock>

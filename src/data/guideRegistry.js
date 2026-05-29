@@ -138,7 +138,7 @@ export const guideSpecsByRole = {
     }),
     spec('rogue-subtlety', 'rogue', '잠행', '잠행', 'melee', '/guide/rogue/subtlety', {
       kbSpecAliases: ['Subtlety'],
-      focus: '은신 계열 강화 구간에 고가치 기술을 몰아넣습니다.',
+      focus: '은신 계열 강화 구간에 강한 기술을 몰아넣습니다.',
     }),
     spec('deathknight-frost', 'deathknight', '냉기', '냉기', 'melee', '/guide/deathknight/frost', {
       kbSpecAliases: ['Frost'],
