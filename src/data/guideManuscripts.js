@@ -1768,7 +1768,7 @@
     patch: '12.0.5',
     researchedAt: '2026-05-30',
     status: '심화 가이드',
-    sourceStatus: 'Blizzard 한국어 패치 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Dreamgrove 공개 경로를 확인했습니다.',
+    sourceStatus: 'Blizzard 한국어 패치 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Dreamgrove 공개 경로 확인.',
     graphCenterSkillId: '192081',
     extraSkills: [
       {
@@ -2130,7 +2130,7 @@
     researchedAt: '2026-05-30',
     status: '심화 가이드',
     sourceStatus:
-      'Blizzard 12.0.5 한국어 패치 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 운용/특성/쐐기 팁, Dreamgrove 공개 컴펜디엄/디스코드 경로, Archon 로그 집계를 확인했습니다.',
+      'Blizzard 12.0.5 한국어 패치 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 운용/특성/쐐기 팁, Dreamgrove 공개 컴펜디엄/디스코드 경로, Archon 로그 집계 확인.',
     graphCenterSkillId: '5217',
     extraSkills: [
       {
@@ -2506,7 +2506,7 @@
     researchedAt: '2026-05-30',
     status: '심화 가이드',
     sourceStatus:
-      'Blizzard 12.0.5 한국어 패치 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 운용/쐐기 팁, Dreamgrove 공개 컴펜디엄/디스코드 경로, Archon 로그 집계를 확인했습니다.',
+      'Blizzard 12.0.5 한국어 패치 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 운용/쐐기 팁, Dreamgrove 공개 컴펜디엄/디스코드 경로, Archon 로그 집계 확인.',
     graphCenterSkillId: '1261564',
     extraSkills: [
       { id: '78675', koreanName: '태양 광선', englishName: 'Solar Beam', class: 'Druid', spec: 'Balance', specs: ['Balance'], icon: 'ability_vehicle_sonicshockwave', type: 'talent', aliases: ['Solar Beam'] },
@@ -2913,7 +2913,7 @@
       { id: '441206', koreanName: '날개지도자', englishName: 'Wingleader', class: 'Evoker', spec: 'Devastation', specs: ['Devastation'], icon: 'ability_racial_soar', type: 'hero-talent', aliases: ['Wingleader'] },
       { id: '441705', koreanName: '검은용군단의 무위', englishName: 'Might of the Black Dragonflight', class: 'Evoker', spec: 'Devastation', specs: ['Devastation'], icon: 'ability_evoker_blackattunementalt', type: 'hero-talent', aliases: ['Might of the Black Dragonflight'] },
     ],
-    sourceStatus: 'Blizzard 한국어 패치 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Wowhead 공개 디스코드 목록의 Wyrmrest Temple 경로를 수동 확인했습니다.',
+    sourceStatus: 'Blizzard 한국어 패치 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Wowhead 공개 디스코드 목록의 Wyrmrest Temple 경로 확인.',
     summary:
       '황폐 기원사는 용의 분노 동안 강한 주문을 몰아넣고, 평소에는 정수와 정수 폭발을 넘치지 않게 비우는 25야드 원거리 딜러입니다. 단일은 파열 채널을 지키는 것이 핵심이고, 광역은 기염과 깊은 숨결/폭격이 실제로 맞아야 딜이 나옵니다.',
     sourceNote:
@@ -3629,7 +3629,7 @@
     status: '심화 가이드',
     graphCenterSkillId: '364343',
     sourceStatus:
-      'Blizzard 한국어 12.0.5 노트, Wowhead 보존 개요/운용/특성, Icy Veins 보존 가이드와 정지장 세부 운용, Archon/WCL 로그 집계, Wowhead 디스코드 목록의 Wyrmrest Temple 공개 경로를 수동 확인했습니다. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 19,377개 로그, 고단 쐐기 1,495개 로그, 7단 이상 전체 쐐기 28,597개 로그를 사용했습니다.',
+      'Blizzard 한국어 12.0.5 노트, Wowhead 보존 개요/운용/특성, Icy Veins 보존 가이드와 정지장 세부 운용, Archon/WCL 로그 집계, Wowhead 디스코드 목록의 Wyrmrest Temple 공개 경로 확인. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 19,377개 로그, 고단 쐐기 1,495개 로그, 7단 이상 전체 쐐기 28,597개 로그 기준.',
     summary:
       '보존 기원사는 메아리를 중심으로 피해가 오기 전에 치유 대상을 찍어 두고, 시간 변칙으로 그 준비 폭을 넓힌 뒤, 되감기, 신록의 품, 꿈의 숨결 중 피해 형태에 맞는 주문으로 메아리를 소비하는 예측형 힐러입니다. 메리스라의 축복은 따로 쓰는 스킬이 아니라 다음 되감기를 크게 강화하는 발동이므로, 실제 전투 흐름에서는 되감기 소비 타이밍으로 읽어야 합니다. 되돌리기와 꿈의 비행은 준비형 주문이 아니라 실제 피해 이후 또는 경로형 광역 피해에 따로 배정하는 대형 복구 버튼입니다.',
     sourceNote:
@@ -3977,7 +3977,7 @@
     status: '심화 가이드',
     graphCenterSkillId: '19574',
     sourceStatus:
-      'Blizzard 공식 12.0.5 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Wowhead 디스코드 목록의 Trueshot Lodge 공개 경로를 수동 확인했습니다. Archon은 2026-05-28(한국 시간) 확인 기준 신화 레이드 58,774개 로그, 고단 쐐기 12,493개 로그, 7단 이상 전체 쐐기 243,416개 로그를 사용했습니다.',
+      'Blizzard 공식 12.0.5 노트, Wowhead 한국어 가이드/공식 툴팁, Icy Veins, Archon/WCL 로그 집계, Wowhead 디스코드 목록의 Trueshot Lodge 공개 경로 확인. Archon은 2026-05-28(한국 시간) 확인 기준 신화 레이드 58,774개 로그, 고단 쐐기 12,493개 로그, 7단 이상 전체 쐐기 243,416개 로그 기준.',
     summary:
       '야수 사냥꾼은 쉬운 전문화처럼 보이지만, 실제 성능은 야수의 격노 구간을 얼마나 자주 열고 그 안에 살상 명령, 날카로운 사격, 자연의 동맹 조건, 광역 야수의 회전베기 상태를 얼마나 촘촘하게 넣는지에 달려 있습니다. 12.0.5 기준 레이드는 무리의 지도자가 압도적인 기본값이고, 쐐기는 무리의 지도자와 어둠순찰자가 함께 보이므로 레이드 기본 운용과 쐐기 분기 운용을 분리해 읽어야 합니다.',
     sourceNote:
@@ -4343,7 +4343,7 @@
       },
     ],
     sourceStatus:
-      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 가이드, Archon/WCL 로그 집계, Trueshot Lodge 공개 서버 경로를 수동 확인했습니다. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 16,141개 로그, 고단 쐐기 1,343개 로그, 7단 이상 전체 쐐기 25,513개 로그 기준으로 확인했습니다.',
+      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 가이드, Archon/WCL 로그 집계, Trueshot Lodge 공개 서버 경로 확인. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 16,141개 로그, 고단 쐐기 1,343개 로그, 7단 이상 전체 쐐기 25,513개 로그 기준.',
     summary:
       '사격 사냥꾼은 조준 사격을 중심으로 전투를 설계하는 시전형 원거리 딜러입니다. 12.0.5 기준 핵심은 조준 사격과 속사를 많이 쓰는 것만이 아니라, 그 뒤에 생기는 정밀 사격을 다음 큰 시전 전에 소비하고, 광역에서는 교묘한 사격이 켜진 상태로 조준 사격과 속사를 넣는 것입니다. 레이드는 파수꾼 비중이 높고 쐐기는 어둠 순찰자가 우세하므로, 같은 조준 사격 중심 구조 위에 서로 다른 보조 판단을 얹어 읽어야 합니다.',
     sourceNote:
@@ -4713,7 +4713,7 @@
       { id: '459731', koreanName: '사냥지배자의 부름', englishName: "Huntmaster's Call", class: 'Hunter', spec: 'Survival', specs: ['Survival'], icon: 'spell_hunter_lonewolf', type: 'talent', aliases: ["Huntmaster's Call"] },
     ],
     sourceStatus:
-      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 특성 및 2026-05-21 운용 수정, Archon/WCL 로그 집계, Trueshot Lodge 공개 서버 경로를 수동 확인했습니다. Archon은 신화 레이드 17,738개 로그, 7단 이상 전체 쐐기 91,466개 로그, 고단 쐐기 4,681개 로그 기준으로 확인했습니다.',
+      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 특성 및 2026-05-21 운용 수정, Archon/WCL 로그 집계, Trueshot Lodge 공개 서버 경로 확인. Archon은 신화 레이드 17,738개 로그, 7단 이상 전체 쐐기 91,466개 로그, 고단 쐐기 4,681개 로그 기준.',
     summary:
       '생존 사냥꾼은 살상 명령으로 창끝을 만들고, 그 창끝을 제압, 야생불 폭탄, 붐스틱, 랩터의 일격/랩터의 휩쓸기에 배정하는 근접 딜러입니다. 12.0.5 기준 로그는 무리의 지도자가 레이드와 쐐기 모두 압도적 기본값이며, 파수꾼은 표식과 달빛 회전 표창을 이해하기 위한 보조 분기로 다룹니다.',
     sourceNote:
@@ -5039,7 +5039,7 @@
     status: '심화 가이드',
     graphCenterSkillId: '384452',
     sourceStatus:
-      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 최신 딜사이클, Archon/WCL 로그 집계, Altered Time 공개 디스코드 경로를 수동 확인했습니다. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 2,518개 로그, 7단 이상 전체 쐐기 16,327개 로그, 고단 쐐기 850개 로그 기준입니다.',
+      'Blizzard 공식 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 2026-05-19 최신 딜사이클, Archon/WCL 로그 집계, Altered Time 공개 디스코드 경로 확인. Archon은 2026-05-29(한국 시간) 확인 기준 신화 레이드 2,518개 로그, 7단 이상 전체 쐐기 16,327개 로그, 고단 쐐기 850개 로그 기준.',
     summary:
       '비전 마법사는 비전 연사를 중심으로 비전 쇄도, 비전의 여파, 비전 보주, 비전 탄막을 맞추는 90초 주기형 원거리 딜러입니다. 마나는 단순 유지 자원이 아니라 폭딜 구간을 여는 연료이고, 비전 탄막은 마무리 피해이면서 동시에 마나와 비전 충전물을 다시 맞추는 리셋 버튼입니다.',
     sourceNote:
@@ -6897,7 +6897,7 @@
     patch: '12.0.5',
     researchedAt: '2026-05-29',
     status: '심화 가이드',
-    sourceStatus: 'Blizzard 한국어 12.0.5 노트, Wowhead, Icy Veins, Archon 2026-05-29개 로그, Peak of Serenity 공개 가이드와 Wowhead 직업 디스코드 경로 확인.',
+    sourceStatus: 'Blizzard 한국어 12.0.5 노트, Wowhead, Icy Veins, Archon 2026-05-29 로그 집계, Peak of Serenity 공개 가이드와 Wowhead 직업 디스코드 경로 확인.',
     graphCenterSkillId: '115069',
     extraSkills: [
       {
@@ -7208,7 +7208,7 @@
     patch: '12.0.5',
     researchedAt: '2026-05-29',
     status: '심화 가이드',
-    sourceStatus: 'Blizzard 한국어 12.0.5 노트, Wowhead, Icy Veins, Archon 2026-05-29개 로그, Peak of Serenity 공개 가이드와 Wowhead 직업 디스코드 경로 확인.',
+    sourceStatus: 'Blizzard 한국어 12.0.5 노트, Wowhead, Icy Veins, Archon 2026-05-29 로그 집계, Peak of Serenity 공개 가이드와 Wowhead 직업 디스코드 경로 확인.',
     summary:
       '풍운 수도사는 기력과 기를 동시에 관리하면서 같은 기술 반복 금지, 짧은 쿨기 지연 방지, 분노의 주먹 채널 보존, 음영파/천신합일 영웅 특성 선택지를 함께 읽는 우선순위형 근접 딜러입니다. 이 가이드는 버튼 순서를 외우는 표가 아니라, 전투 중 왜 그 버튼이 지금 가장 높은 가치가 되는지를 설명하는 운용 해설입니다.',
     sourceNote:
@@ -7542,7 +7542,7 @@
       },
     ],
     sourceStatus:
-      'Blizzard 한국어 12.0.5 노트, Wowhead 2026-05-28 운용 가이드, Icy Veins 2026-05-19, Archon 2026-05-29개 로그, Peak of Serenity와 Wowhead 직업 디스코드 경로 확인.',
+      'Blizzard 한국어 12.0.5 노트, Wowhead 2026-05-28 운용 가이드, Icy Veins 2026-05-19, Archon 2026-05-29 로그 집계, Peak of Serenity와 Wowhead 직업 디스코드 경로 확인.',
     summary:
       '운무 수도사는 피해가 들어온 뒤 순서표를 따라 누르는 힐러가 아니라, 피해 전에 소생의 안개를 충분히 퍼뜨리고 피해 직후 생기 충전, 재활, 천신합일, 기의 고치로 회수 구간을 배정하는 근접 힐러입니다. 12.0.5 기준 운무 페이지는 소생의 안개를 중심 노드로 두고, 생기 충전 확산, 질풍차기 근접 치유, 마나 차 회복 예산, 포용의 안개 단일 복구, 셰이룬의 선물과 조화의 형 저장 치유를 같은 그래프에서 읽도록 구성합니다.',
     sourceNote:
@@ -8605,7 +8605,7 @@
       },
     ],
     sourceStatus:
-      'Blizzard 한국어 12.0.5 노트, Blizzard 공식 긴급 수정, Wowhead, Icy Veins, Archon 2026-05-30개 로그, Hammer of Wrath 공개 경로, Wowhead 한국어 공식 툴팁 확인.',
+      'Blizzard 한국어 12.0.5 노트, Blizzard 공식 긴급 수정, Wowhead, Icy Veins, Archon 2026-05-30 로그 집계, Hammer of Wrath 공개 경로, Wowhead 한국어 공식 툴팁 확인.',
     summary:
       '신성 성기사는 피가 빠진 뒤 가장 큰 주문을 찾는 힐러가 아니라, 신성 충격으로 신성한 힘과 빛 주입을 만들고, 빛의 봉화와 구세주의 봉화 대상 지정으로 치유를 분배하며, 영광의 서약·영원의 불꽃·여명의 빛을 피해 유형에 맞춰 비우는 힐러입니다. 이 가이드는 신성 충격을 중심 노드로 두고, 봉화 대상 지정, 신성한 힘 소비, 오라 숙련과 응징의 격노, 티르의 해방, 태양의 사자 새벽빛 구간, 빛대장장이 신성한 무장 분기를 하나의 회복 시간표로 읽게 합니다.',
     sourceNote:

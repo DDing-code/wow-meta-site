@@ -20,7 +20,7 @@ const MINIMUMS = {
 };
 
 const TRUST_TIERS = new Set(['S', 'A', 'B', 'C']);
-const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 구간|지원 창|상태 전환/i;
+const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 구간|상태 전환/i;
 const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
 const INTERNAL_COPY_PATTERN = /원고|프로토타입|내부 문서|이 문서|문서에서|문서에서는|시각화 배치 기준|이 페이지의 시각화|보조 시각화|차트 배치/i;
 const GENERAL_AWKWARD_COPY_PATTERN = /고가치|품질|피해 기여|딜 기여|중심축|판단축|상위 행동|복구축|전환 축|피해 주문 축|유지 축|영웅 특성 축|압축/i;
@@ -210,6 +210,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   const tips = manuscript.tips || [];
   const sourceText = combinedSourceText(manuscript);
   const manuscriptText = combinedManuscriptText(manuscript);
+  const sourceStatus = manuscript.sourceStatus || '';
   const openerText = [
     manuscript.opener?.title,
     manuscript.opener?.summary,
@@ -218,8 +219,11 @@ function validateManuscript(spec, manuscript, kbSkills) {
   assert(manuscript.patch === EXPECTED_PATCH, `${prefix}: patch must be ${EXPECTED_PATCH}`);
   assert(manuscript.researchedAt, `${prefix}: researchedAt is missing`);
   assert(manuscript.summary && manuscript.summary.length >= 80, `${prefix}: summary is too thin`);
+  assert(sourceStatus && sourceStatus.length >= 40, `${prefix}: sourceStatus is missing or too thin`);
   assert(manuscript.sourceNote && manuscript.sourceNote.length >= 120, `${prefix}: sourceNote is too thin`);
   assert(!INTERNAL_COPY_PATTERN.test(manuscriptText), `${prefix}: contains internal/prototype copy`);
+  assert(!/\d{4}-\d{2}-\d{2}개\s*로그/.test(manuscriptText), `${prefix}: malformed log-date wording; use "YYYY-MM-DD 로그 집계"`);
+  assert(!/(수동\s*)?확인했습니다/.test(sourceStatus), `${prefix}: sourceStatus should be concise, not first-person audit prose`);
   assert(manuscript.graphCenterSkillId, `${prefix}: graphCenterSkillId is missing`);
   assert(sources.length >= MINIMUMS.sources, `${prefix}: needs at least ${MINIMUMS.sources} sources`);
   assert(openerSteps.length >= MINIMUMS.openerSteps, `${prefix}: needs at least ${MINIMUMS.openerSteps} combat-flow steps`);
