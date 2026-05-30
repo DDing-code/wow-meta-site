@@ -127,6 +127,48 @@ function extractFunctionBody(source, functionName) {
   return source.slice(openIndex + 1, closeIndex);
 }
 
+function extractObjectLiteral(source, constName) {
+  const constIndex = source.indexOf(`const ${constName}`);
+  if (constIndex === -1) {
+    errors.push(`${constName} is missing`);
+    return '';
+  }
+
+  const openIndex = source.indexOf('{', constIndex);
+  const closeIndex = findMatchingBrace(source, openIndex);
+  if (openIndex === -1 || closeIndex === -1) {
+    errors.push(`${constName} has an invalid object literal`);
+    return '';
+  }
+
+  return source.slice(openIndex + 1, closeIndex);
+}
+
+function extractObjectEntries(objectBody, scopeName) {
+  const entries = [];
+  const matcher = /'([^']+)'\s*:\s*\{/g;
+  let match;
+
+  while ((match = matcher.exec(objectBody))) {
+    const id = match[1];
+    const openIndex = objectBody.indexOf('{', match.index);
+    const closeIndex = findMatchingBrace(objectBody, openIndex);
+    if (closeIndex === -1) {
+      errors.push(`Invalid ${scopeName} entry for ${id}`);
+      continue;
+    }
+
+    entries.push({
+      id,
+      body: objectBody.slice(openIndex + 1, closeIndex),
+      start: match.index,
+    });
+    matcher.lastIndex = closeIndex + 1;
+  }
+
+  return entries;
+}
+
 function extractGuideBranches(functionBody) {
   const branches = [];
   const matcher = /if\s*\(\s*guide\.id\s*===\s*'([^']+)'\s*\)\s*\{/g;
@@ -284,9 +326,9 @@ function main() {
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);
-  const planBody = extractFunctionBody(guideDetailSource, 'getInlineChartPlan');
+  const specialistChartBody = extractObjectLiteral(guideDetailSource, 'SPECIALIST_CHARTS');
   const uptimeBody = extractFunctionBody(guideDetailSource, 'getUptimeRows');
-  const planBranches = extractGuideBranches(planBody);
+  const planBranches = extractObjectEntries(specialistChartBody, 'SPECIALIST_CHARTS');
   const uptimeBranches = extractGuideBranches(uptimeBody);
   const planBranchMap = new Map(planBranches.map(branch => [branch.id, branch]));
   const uptimeBranchMap = new Map(uptimeBranches.map(branch => [branch.id, branch]));
@@ -294,11 +336,11 @@ function main() {
 
   assert(guideIds.length === 40, `guideRegistry should expose 40 specs, found ${guideIds.length}`);
   assert(guideRecords.length === guideIds.length, `guideRegistry parse mismatch: ${guideRecords.length} records for ${guideIds.length} ids`);
-  validateNoDuplicateBranches(planBranches, 'getInlineChartPlan');
+  validateNoDuplicateBranches(planBranches, 'SPECIALIST_CHARTS');
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    assert(planBranchMap.has(guideId), `getInlineChartPlan is missing a specialist chart branch for ${guideId}`);
+    assert(planBranchMap.has(guideId), `SPECIALIST_CHARTS is missing a specialist chart entry for ${guideId}`);
     assert(guideRecordMap.get(guideId)?.kbClass, `guideRegistry is missing kbClass mapping for ${guideId}`);
   }
 
