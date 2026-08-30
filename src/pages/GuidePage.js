@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowUpRight, BookOpen, Layers3 } from 'lucide-react';
 import {
-  CURRENT_PATCH_LABEL,
   guideRoles,
   guideSpecsByRole,
   getAllGuideSpecs,
@@ -11,89 +10,112 @@ import {
 } from '../data/guideRegistry.js';
 
 const Page = styled.div`
-  width: min(1280px, calc(100% - 32px));
+  width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 42px 0 84px;
+  padding: 48px 0 96px;
+
+  @media (max-width: 560px) {
+    width: calc(100% - 24px);
+    padding-top: 30px;
+  }
 `;
 
 const Header = styled.header`
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
-  gap: 24px;
-  align-items: end;
-  margin-bottom: 28px;
-
-  @media (max-width: 820px) {
-    grid-template-columns: 1fr;
-  }
+  gap: 30px;
+  margin-bottom: 32px;
 `;
 
 const Eyebrow = styled.p`
-  color: #b8915b;
+  color: #d2b373;
   font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
 const Title = styled.h1`
   margin-top: 8px;
-  color: #f4efe5;
-  font-size: clamp(2rem, 5vw, 3.65rem);
+  color: #eef1f3;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.14;
   letter-spacing: 0;
 `;
 
 const Description = styled.p`
   max-width: 780px;
   margin-top: 12px;
-  color: #c7bba7;
-  font-size: 0.98rem;
-  font-weight: 700;
+  color: #aeb8be;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.78;
   word-break: keep-all;
+  text-wrap: pretty;
 `;
 
 const HeaderPanel = styled.div`
-  display: grid;
-  gap: 10px;
-  padding: 16px;
-  border: 1px solid rgba(184, 145, 91, 0.26);
-  background: #0d1216;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 11px 0;
+  border-top: 1px solid rgba(168, 178, 188, 0.14);
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
 `;
 
 const HeaderMetric = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  color: #f4efe5;
-  font-size: 0.92rem;
-  font-weight: 900;
+  align-items: baseline;
+  gap: 8px;
+  padding: 3px 20px;
+  color: #dfe4e7;
+  font-size: 0.82rem;
+  font-weight: 620;
+  border-left: 1px solid rgba(168, 178, 188, 0.14);
+
+  &:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
 
   span:first-child {
-    color: #8d9aa3;
-    font-size: 0.72rem;
+    color: #7f8b94;
+    font-size: 0.66rem;
+    font-weight: 600;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 620px) {
+    width: 100%;
+    padding: 6px 0;
+    border-left: 0;
   }
 `;
 
 const Tabs = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 30px;
+  gap: 0 22px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
 `;
 
 const Tab = styled.button`
-  min-height: 38px;
-  padding: 8px 14px;
-  border: 1px solid ${props => (props.$active ? '#b8915b' : 'rgba(184, 145, 91, 0.24)')};
-  border-radius: 0;
-  background: ${props => (props.$active ? 'rgba(184, 145, 91, 0.16)' : '#0d1216')};
-  color: ${props => (props.$active ? '#f4efe5' : '#c7bba7')};
-  font-weight: 900;
+  min-height: 44px;
+  padding: 2px 0 0;
+  border: 0;
+  border-bottom: 2px solid ${props => (props.$active ? '#d2b373' : 'transparent')};
+  background: transparent;
+  color: ${props => (props.$active ? '#eef1f3' : '#8f9aa2')};
+  font-size: 0.84rem;
+  font-weight: ${props => (props.$active ? 700 : 520)};
+
+  &:hover {
+    color: #eef1f3;
+  }
 `;
 
 const ClassSection = styled.section`
-  margin-top: 26px;
+  margin-top: 34px;
 `;
 
 const ClassTitle = styled.h2`
@@ -101,37 +123,46 @@ const ClassTitle = styled.h2`
   align-items: center;
   gap: 10px;
   color: ${props => props.$color};
-  font-size: 1.18rem;
-  margin-bottom: 10px;
+  font-size: 1.12rem;
+  margin-bottom: 8px;
 `;
 
 const ClassMark = styled.span`
-  width: 8px;
-  height: 22px;
+  width: 5px;
+  height: 18px;
   background: ${props => props.$color};
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 24px;
+  border-top: 1px solid rgba(168, 178, 188, 0.12);
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SpecCard = styled(Link)`
-  min-height: 118px;
+  min-height: 96px;
   display: grid;
   align-content: space-between;
-  gap: 18px;
-  padding: 14px;
-  border: 1px solid rgba(184, 145, 91, 0.2);
-  border-left: 3px solid ${props => props.$color};
-  background:
-    linear-gradient(135deg, ${props => props.$tone} 0%, rgba(13, 18, 22, 0) 54%),
-    #0d1216;
+  gap: 12px;
+  padding: 14px 10px 15px 12px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.11);
+  border-left: 2px solid transparent;
+  background: transparent;
 
   &:hover {
-    border-color: ${props => props.$color};
-    transform: translateY(-1px);
+    border-left-color: ${props => props.$color};
+    background: ${props => props.$tone};
+    padding-left: 16px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${props => props.$color};
+    outline-offset: -2px;
   }
 `;
 
@@ -143,36 +174,37 @@ const SpecTop = styled.div`
 `;
 
 const SpecName = styled.h3`
-  color: #f4efe5;
+  color: #e7ebed;
   font-size: 1.05rem;
+  font-weight: 680;
   letter-spacing: 0;
   word-break: keep-all;
 `;
 
 const SpecClass = styled.div`
   margin-top: 4px;
-  color: #8d9aa3;
+  color: #85919a;
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 520;
 `;
 
 const OpenIcon = styled.span`
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
-  color: #f4efe5;
-  border: 1px solid rgba(244, 239, 229, 0.12);
-  background: rgba(244, 239, 229, 0.04);
+  width: 28px;
+  height: 28px;
+  color: #9aa5ad;
+  border: 0;
+  background: transparent;
 `;
 
 const Meta = styled.div`
   display: grid;
-  gap: 8px;
-  color: #c7bba7;
-  font-size: 0.8rem;
-  font-weight: 800;
+  gap: 5px;
+  color: #a7b0b6;
+  font-size: 0.76rem;
+  font-weight: 470;
 `;
 
 const MetaLine = styled.div`
@@ -183,7 +215,14 @@ const MetaLine = styled.div`
 
   svg {
     flex: 0 0 auto;
-    color: #b8915b;
+    color: #8f9aa2;
+  }
+
+  span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 `;
 
@@ -201,7 +240,7 @@ function GuidePage() {
     <Page>
       <Header>
         <div>
-          <Eyebrow>{CURRENT_PATCH_LABEL} guide index</Eyebrow>
+          <Eyebrow>WOWMETA GUIDE INDEX</Eyebrow>
           <Title>직업 가이드</Title>
           <Description>
             각 전문화의 핵심 스킬, 특성, 시너지 관계를 기준으로 가이드를 연결했습니다.
@@ -211,7 +250,7 @@ function GuidePage() {
         <HeaderPanel>
           <HeaderMetric>
             <span>patch</span>
-            <strong>{CURRENT_PATCH_LABEL}</strong>
+            <strong>전문화별 표기</strong>
           </HeaderMetric>
           <HeaderMetric>
             <span>guides</span>
@@ -224,9 +263,15 @@ function GuidePage() {
         </HeaderPanel>
       </Header>
 
-      <Tabs>
+      <Tabs role="group" aria-label="포지션별 가이드 필터">
         {guideRoles.map(item => (
-          <Tab key={item.id} type="button" $active={role === item.id} onClick={() => setRole(item.id)}>
+          <Tab
+            key={item.id}
+            type="button"
+            aria-pressed={role === item.id}
+            $active={role === item.id}
+            onClick={() => setRole(item.id)}
+          >
             {item.label}
           </Tab>
         ))}

@@ -97,6 +97,22 @@ function fetchWowheadTooltip(spellId) {
   });
 }
 
+async function fetchWowheadTooltipWithRetry(spellId, attempts = 3) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await fetchWowheadTooltip(spellId);
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts || !/^HTTP 5\d\d$/.test(error.message)) break;
+      await new Promise(resolve => setTimeout(resolve, attempt * 500));
+    }
+  }
+
+  throw lastError;
+}
+
 function issue(filePath, code, message, extra = {}) {
   return {
     file: path.relative(PROJECT_ROOT, filePath),
@@ -141,6 +157,9 @@ async function validateEntryOnline(filePath, frontmatter) {
   const errors = [];
   const warnings = [];
   if (!frontmatter.id) return { errors, warnings };
+  if (frontmatter.type === 'hero-tree' && !/^\d+$/.test(String(frontmatter.id))) {
+    return { errors, warnings };
+  }
   if (!/^\d+$/.test(String(frontmatter.id))) {
     errors.push(issue(filePath, 'NON_NUMERIC_SPELL_ID', `Atomic KB note id must be a numeric Wowhead spell id: ${frontmatter.id}`, {
       spellId: frontmatter.id,
@@ -151,7 +170,7 @@ async function validateEntryOnline(filePath, frontmatter) {
 
   let tooltip;
   try {
-    tooltip = await fetchWowheadTooltip(frontmatter.id);
+    tooltip = await fetchWowheadTooltipWithRetry(frontmatter.id);
   } catch (error) {
     errors.push(issue(filePath, 'WOWHEAD_TOOLTIP_FETCH_FAILED', error.message, { spellId: frontmatter.id }));
     return { errors, warnings };
@@ -161,6 +180,8 @@ async function validateEntryOnline(filePath, frontmatter) {
   const officialIcon = String(tooltip.icon || '').toLowerCase();
   const localName = String(frontmatter.name_kr || frontmatter.name || '').trim();
   const officialName = String(tooltip.name || '').trim();
+  const officialNameMatchesEnglish = /^[\x00-\x7F]+$/.test(officialName)
+    && String(frontmatter.name_en || '').trim() === officialName;
 
   if (officialIcon && localIcon && officialIcon !== localIcon) {
     errors.push(issue(filePath, 'WOWHEAD_ICON_MISMATCH', `Icon mismatch: local=${localIcon}, official=${officialIcon}`, {
@@ -169,7 +190,7 @@ async function validateEntryOnline(filePath, frontmatter) {
     }));
   }
 
-  if (officialName && localName && officialName !== localName && frontmatter.allow_name_mismatch !== 'true') {
+  if (officialName && localName && officialName !== localName && !officialNameMatchesEnglish && frontmatter.allow_name_mismatch !== 'true') {
     errors.push(issue(filePath, 'WOWHEAD_NAME_MISMATCH', `Name mismatch: local=${localName}, official=${officialName}`, {
       spellId: frontmatter.id,
     }));

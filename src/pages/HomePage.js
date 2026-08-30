@@ -4,75 +4,90 @@ import styled from 'styled-components';
 import { BookOpen, Database, Newspaper } from 'lucide-react';
 
 const Page = styled.div`
-  width: min(1180px, calc(100% - 32px));
+  width: min(1080px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 56px 0 80px;
+  padding: 48px 0 96px;
+
+  @media (max-width: 560px) {
+    width: calc(100% - 24px);
+    padding-top: 30px;
+  }
 `;
 
 const Hero = styled.section`
-  min-height: 360px;
   display: grid;
-  align-content: center;
-  gap: 24px;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  gap: 18px;
+  padding: 18px 0 36px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
 `;
 
 const Label = styled.p`
-  color: #94a3b8;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  color: #d2b373;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
 const Title = styled.h1`
-  max-width: 820px;
-  color: #f8fafc;
-  font-size: clamp(2.4rem, 6vw, 5rem);
-  line-height: 1.02;
+  max-width: 760px;
+  color: #eef1f3;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: 1.14;
   letter-spacing: 0;
 `;
 
 const Summary = styled.p`
   max-width: 720px;
-  color: #cbd5e1;
-  font-size: clamp(1rem, 2vw, 1.18rem);
+  color: #aeb8be;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.78;
+  word-break: keep-all;
 `;
 
 const Stats = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0;
+  margin-top: 8px;
+  border-top: 1px solid rgba(168, 178, 188, 0.12);
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
 `;
 
 const Stat = styled.div`
   min-width: 132px;
-  padding: 12px 14px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 8px;
-  background: rgba(15, 23, 42, 0.72);
+  padding: 10px 18px;
+  border-left: 1px solid rgba(168, 178, 188, 0.12);
+  background: transparent;
+
+  &:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
 `;
 
 const StatValue = styled.div`
-  color: #f8fafc;
-  font-size: 1.4rem;
-  font-weight: 900;
-`;
-
-const StatLabel = styled.div`
-  color: #94a3b8;
-  font-size: 0.78rem;
+  color: #e7ebed;
+  font-size: 1rem;
   font-weight: 700;
 `;
 
+const StatLabel = styled.div`
+  color: #7f8b94;
+  font-size: 0.7rem;
+  font-weight: 520;
+`;
+
 const Section = styled.section`
-  padding-top: 32px;
+  padding-top: 38px;
 `;
 
 const ActionGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 0;
+  border-top: 1px solid rgba(168, 178, 188, 0.12);
 
   @media (max-width: 780px) {
     grid-template-columns: 1fr;
@@ -80,18 +95,27 @@ const ActionGrid = styled.div`
 `;
 
 const Action = styled(Link)`
-  min-height: 154px;
+  min-height: 138px;
   display: grid;
   align-content: space-between;
-  gap: 22px;
-  padding: 20px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 8px;
-  background: rgba(15, 23, 42, 0.76);
+  gap: 20px;
+  padding: 20px 18px;
+  border-right: 1px solid rgba(168, 178, 188, 0.12);
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+  background: transparent;
 
   &:hover {
-    border-color: ${props => props.$color};
-    background: rgba(30, 41, 59, 0.86);
+    box-shadow: inset 0 2px 0 ${props => props.$color};
+    background: rgba(168, 178, 188, 0.035);
+  }
+
+  &:focus-visible {
+    outline-color: ${props => props.$color};
+    outline-offset: -2px;
+  }
+
+  @media (max-width: 780px) {
+    border-left: 1px solid rgba(168, 178, 188, 0.12);
   }
 `;
 
@@ -103,20 +127,23 @@ const ActionHeader = styled.div`
 `;
 
 const ActionTitle = styled.h2`
-  color: #f8fafc;
+  color: #e7ebed;
   font-size: 1.12rem;
 `;
 
 const ActionText = styled.p`
-  color: #94a3b8;
-  font-size: 0.92rem;
+  margin-top: 6px;
+  color: #929da5;
+  font-size: 0.88rem;
+  font-weight: 450;
+  line-height: 1.65;
 `;
 
 const actions = [
   {
     to: '/guide',
     title: '직업 가이드',
-    text: '40개 전문화 KB를 기준으로 새 가이드 페이지를 구성합니다.',
+    text: '역할과 직업을 고르고 전문화별 공략을 읽습니다.',
     color: '#C69B6D',
     icon: BookOpen,
   },
@@ -129,8 +156,8 @@ const actions = [
   },
   {
     to: '/news',
-    title: '작업 로그',
-    text: '패치와 사이트 재설계 진행 상태를 정리합니다.',
+    title: '업데이트',
+    text: '패치 변경과 가이드 갱신 내역을 확인합니다.',
     color: '#AAD372',
     icon: Newspaper,
   },
@@ -140,10 +167,10 @@ function HomePage() {
   return (
     <Page>
       <Hero>
-        <Label>WoW Meta Knowledge Base</Label>
-        <Title>12.0.5 기준 직업 가이드를 새로 만드는 작업대</Title>
+        <Label>WOWMETA</Label>
+        <Title>전문화별 실전 가이드</Title>
         <Summary>
-          구버전 가이드 구현을 걷어내고, 새 KB를 기준으로 직업별 가이드와 스펠 데이터베이스를 다시 설계합니다.
+          현재 패치의 빌드와 전투 흐름, 핵심 스킬과 로그 기준을 한곳에서 확인합니다.
         </Summary>
         <Stats>
           <Stat>
@@ -155,11 +182,11 @@ function HomePage() {
             <StatLabel>전문화 스코프</StatLabel>
           </Stat>
           <Stat>
-            <StatValue>2,397</StatValue>
+            <StatValue>2,477</StatValue>
             <StatLabel>원자 노트</StatLabel>
           </Stat>
           <Stat>
-            <StatValue>243</StatValue>
+            <StatValue>428</StatValue>
             <StatLabel>시너지 노트</StatLabel>
           </Stat>
         </Stats>

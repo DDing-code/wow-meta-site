@@ -16,6 +16,7 @@ const args = process.argv.slice(2);
 const ONLINE = !args.includes('--offline');
 const VERBOSE = args.includes('--verbose');
 const FETCH_TIMEOUT_MS = 15000;
+const supplementalSourceCache = new Map();
 
 const specs = [
   spec('01-죽음의기사', '혈기', 'Blood Death Knight', 'death-knight', 'blood', 'tank', 'blood-death-knight'),
@@ -111,14 +112,18 @@ function normalizeReportPath(filePath) {
   return String(filePath || '').replace(/\\/g, '/');
 }
 
-function stripHtml(value) {
-  return String(value || '')
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+function stripHtml(value, options = {}) {
+  let text = String(value || '');
+  if (!options.preserveScripts) {
+    text = text.replace(/<script[\s\S]*?<\/script>/gi, ' ');
+  }
+  return text
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/[<>]/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
+    .replace(/&apos;|’/g, "'")
     .replace(/\s+/g, ' ')
     .toLowerCase();
 }
@@ -155,6 +160,18 @@ function readSynergiesJson() {
   const filePath = path.join(DATA_DIR, 'kb-synergies.json');
   if (!fs.existsSync(filePath)) return { synergies: {} };
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function collectGuideLocalSkillIds() {
+  const filePath = path.join(DATA_DIR, 'guideManuscripts.js');
+  if (!fs.existsSync(filePath)) return new Set();
+
+  const source = fs.readFileSync(filePath, 'utf8');
+  const ids = new Set();
+  for (const match of source.matchAll(/\bid:\s*['"](\d+)['"]/g)) {
+    ids.add(match[1]);
+  }
+  return ids;
 }
 
 function fetchUrl(url) {
@@ -199,7 +216,10 @@ async function buildSourceCorpus(specInfo, issues) {
       });
     }
   }
-  return stripHtml(results.filter(result => result.ok).map(result => result.text).join(' '));
+  const html = results.filter(result => result.ok).map(result => result.text).join(' ');
+  const plainText = stripHtml(html);
+  const sourceDataText = stripHtml(html, { preserveScripts: true });
+  return `${plainText} ${normalizeName(plainText)} ${sourceDataText} ${normalizeName(sourceDataText)}`;
 }
 
 function sourceMentionsNote(corpus, note) {
@@ -212,6 +232,44 @@ function sourceMentionsNote(corpus, note) {
   ].filter(value => value && String(value).length >= 3);
 
   return candidates.some(candidate => corpus.includes(candidate));
+}
+
+async function supplementalSourceMentionsNote(note, issues) {
+  const url = String(note.frontmatter.current_source_url || '').trim();
+  if (!ONLINE || !url) return false;
+  if (!/^https?:\/\//i.test(url)) {
+    issues.push({
+      severity: 'warning',
+      code: 'INVALID_CURRENT_SOURCE_URL',
+      file: note.file,
+      spellId: note.id,
+      name: note.nameKr,
+      url,
+      message: 'current_source_url must be an absolute http(s) URL.',
+    });
+    return false;
+  }
+
+  if (!supplementalSourceCache.has(url)) {
+    supplementalSourceCache.set(url, fetchUrl(url));
+  }
+
+  const result = await supplementalSourceCache.get(url);
+  if (!result.ok) {
+    issues.push({
+      severity: 'warning',
+      code: 'CURRENT_SOURCE_FETCH_FAILED',
+      file: note.file,
+      spellId: note.id,
+      name: note.nameKr,
+      url,
+      message: `Supplemental current source fetch failed (${result.status || result.error || 'unknown'}).`,
+    });
+    return false;
+  }
+
+  const sourceText = stripHtml(result.text, { preserveScripts: true });
+  return sourceMentionsNote(`${sourceText} ${normalizeName(sourceText)}`, note);
 }
 
 function collectKbNotes(specInfo) {
@@ -240,6 +298,7 @@ function auditGeneratedData(issues) {
   const skills = skillsData.skills || {};
   const synergies = synergiesData.synergies || {};
   const knownSkillIds = new Set(Object.keys(skills));
+  const guideLocalSkillIds = collectGuideLocalSkillIds();
   const knownNames = new Set();
 
   Object.values(skills).forEach(skill => {
@@ -292,6 +351,17 @@ function auditGeneratedData(issues) {
     for (const match of source.matchAll(/skillId:\s*['"](\d+)['"]/g)) {
       const spellId = match[1];
       if (!knownSkillIds.has(spellId)) {
+        if (guideLocalSkillIds.has(spellId)) {
+          issues.push({
+            severity: 'warning',
+            code: 'JS_SKILL_ID_FROM_GUIDE_LOCAL_EXTRA_SKILLS',
+            file: rel(filePath),
+            spellId,
+            message: `JS references guide-local extraSkills instead of generated KB data: ${spellId}`,
+          });
+          continue;
+        }
+
         issues.push({
           severity: 'error',
           code: 'JS_SKILL_ID_NOT_IN_KB',
@@ -302,7 +372,7 @@ function auditGeneratedData(issues) {
       }
     }
 
-    for (const match of source.matchAll(/findSkillByNames\([^[]*\[([^\]]+)\]/g)) {
+    for (const match of source.matchAll(/\bfindSkillByNames\s*\(\s*[^,\n]+,\s*\[([^\]]+)\]/g)) {
       const names = [...match[1].matchAll(/['"]([^'"]+)['"]/g)].map(item => normalizeName(item[1]));
       if (names.length && !names.some(name => knownNames.has(name))) {
         issues.push({
@@ -370,7 +440,7 @@ function auditSyncState(issues) {
   }
 }
 
-function auditNoteMetadata(specInfo, notes, corpus, issues) {
+async function auditNoteMetadata(specInfo, notes, corpus, issues) {
   for (const note of notes) {
     const icon = note.icon.toLowerCase();
     if (!note.id) {
@@ -409,7 +479,7 @@ function auditNoteMetadata(specInfo, notes, corpus, issues) {
       });
     }
 
-    if (!sourceMentionsNote(corpus, note)) {
+    if (!sourceMentionsNote(corpus, note) && !(await supplementalSourceMentionsNote(note, issues))) {
       issues.push({
         severity: 'review',
         code: 'NOT_MENTIONED_IN_CURRENT_GUIDE_SOURCES',
@@ -446,7 +516,7 @@ async function main() {
     const notes = collectKbNotes(specInfo);
     const before = issues.length;
     const corpus = await buildSourceCorpus(specInfo, issues);
-    auditNoteMetadata(specInfo, notes, corpus, issues);
+    await auditNoteMetadata(specInfo, notes, corpus, issues);
     perSpec.push({
       spec: specInfo.label,
       notes: notes.length,

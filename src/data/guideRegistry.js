@@ -82,7 +82,7 @@ function spec(id, classKey, specName, kbSpec, role, path, options = {}) {
     roleLabel: roleLabels[role],
     color: classColors[classKey],
     ready: true,
-    status: '12.0.5 심화 공략',
+    status: options.status || '12.0.5 심화 공략',
     path,
     focus: options.focus || '핵심 스킬과 시너지를 기준으로 전투 흐름을 정리합니다.',
   };
@@ -188,7 +188,8 @@ export const guideSpecsByRole = {
     }),
     spec('shaman-elemental', 'shaman', '정기', '정기', 'ranged', '/guide/shaman/elemental', {
       kbSpecAliases: ['Elemental'],
-      focus: '소용돌이와 원소 발동을 단일/광역 상황별로 분기합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '선견자 선조 반응, 소용돌이 소비, 폭풍수호자·승천과 시즌 2 세트 흐름을 단일/광역으로 나눕니다.',
     }),
     spec('mage-arcane', 'mage', '비전', '비전', 'ranged', '/guide/mage/arcane', {
       kbSpecAliases: ['Arcane'],
@@ -220,7 +221,8 @@ export const guideSpecsByRole = {
     }),
     spec('evoker-devastation', 'evoker', '황폐', '황폐', 'ranged', '/guide/evoker/devastation', {
       kbSpecAliases: ['Devastation'],
-      focus: '정수와 강화 주문을 짧은 폭발 구간에 맞춥니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '비늘사령관 용의 분노, 대규모 파열, 해방된 불길 4회와 시즌 2 세트 운용을 정리합니다.',
     }),
     spec('evoker-augmentation', 'evoker', '증강', '증강', 'ranged', '/guide/evoker/augmentation', {
       kbSpecAliases: ['Augmentation'],
@@ -230,7 +232,8 @@ export const guideSpecsByRole = {
   healers: [
     spec('paladin-holy', 'paladin', '신성', '신성', 'healers', '/guide/paladin/holy', {
       kbSpecAliases: ['Holy'],
-      focus: '신성한 힘과 봉화 대상을 큰 피해 구간에 맞춥니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '신성 충격과 단일 소비기, 고결의 봉화 9초, 태양의 사자·빛대장장이 운용을 콘텐츠별로 정리합니다.',
     }),
     spec('priest-discipline', 'priest', '수양', '수양', 'healers', '/guide/priest/discipline', {
       kbSpecAliases: ['Discipline'],
@@ -238,7 +241,8 @@ export const guideSpecsByRole = {
     }),
     spec('priest-holy', 'priest', '신성', '신성', 'healers', '/guide/priest/holy', {
       kbSpecAliases: ['Holy'],
-      focus: '빛의 권능 기술을 피해 패턴에 맞춰 순환합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '평온-축도-빛술사 치유의 기원과 공격대 집정관·쐐기 예언자 운용을 정리합니다.',
     }),
     spec('shaman-restoration', 'shaman', '복원', '복원', 'healers', '/guide/shaman/restoration', {
       kbSpecAliases: ['Restoration'],
@@ -246,15 +250,18 @@ export const guideSpecsByRole = {
     }),
     spec('monk-mistweaver', 'monk', '운무', '운무', 'healers', '/guide/monk/mistweaver', {
       kbSpecAliases: ['Mistweaver'],
-      focus: '안개 유지와 근접 힐링 흐름을 상황별로 분리합니다.',
+      status: '12.1 로그 기반 실전 심화 공략',
+      focus: '시즌 2 질풍차기 회전, 천신합일 타이밍, 기의 고치 마나 회수와 실제 로그 교정 순서를 정리합니다.',
     }),
     spec('druid-restoration', 'druid', '회복', '회복', 'healers', '/guide/druid/restoration', {
       kbSpecAliases: ['Restoration'],
-      focus: '지속 회복 사전 작업과 광역 쿨기를 피해 구간에 맞춥니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '회복 5개-풍요-재생과 피어나는 생명-신속한 치유-상록숲 만개를 콘텐츠별로 정리합니다.',
     }),
     spec('evoker-preservation', 'evoker', '보존', '보존', 'healers', '/guide/evoker/preservation', {
       kbSpecAliases: ['Preservation'],
-      focus: '메아리, 강화 주문, 시간 계열 회복을 짧은 사거리 안에서 맞춥니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '꿈의 숨결 1단계, 메아리-메리스라의 축복, 정수 폭발-에메랄드 꽃 반복을 콘텐츠별로 정리합니다.',
     }),
   ],
 };

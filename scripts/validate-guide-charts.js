@@ -6,6 +6,7 @@ const path = require('path');
 const SITE_ROOT = path.resolve(__dirname, '..');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
+const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
 const KB_SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 
 const ALLOWED_SPECIALIST_CHARTS = new Set(['uptime', 'cooldown', 'defensive', 'resource']);
@@ -17,23 +18,28 @@ const SPECIAL_GUIDE_PROFILES = new Map([
 const ROLE_CHART_REQUIREMENTS = {
   tanks: {
     chartIds: new Set(['defensive', 'uptime']),
-    textPattern: /방어|완화|생존|위협|피해|탱|시간차|무쇠|방패|죽음의 일격|신성한 힘|영혼 파편/i,
+    terms: ['방어', '완화', '생존', '위협', '피해', '탱', '시간차', '무쇠', '방패', '죽음의 일격', '신성화', '정의의 방패', '영혼 파편'],
+    minHits: 3,
   },
   healers: {
     chartIds: new Set(['uptime', 'defensive', 'cooldown']),
-    textPattern: /치유|회복|피해|보호막|속죄|마나|외생기|봉화|안개|메아리|권능|복구|램프|힐러/i,
+    terms: ['치유', '회복', '피해', '보호막', '속죄', '마나', '외생기', '봉화', '안개', '메아리', '권능', '복구', '예열', '힐러'],
+    minHits: 3,
   },
   support: {
     chartIds: new Set(['uptime']),
-    textPattern: /지원|버프|강화|파티|칠흑의 힘|예지|영겁의 숨결/i,
+    terms: ['지원', '버프', '강화', '파티', '칠흑의 힘', '예지', '영겁의 숨결'],
+    minHits: 3,
   },
   melee: {
     chartIds: new Set(['uptime', 'cooldown', 'resource']),
-    textPattern: /피해|구간|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+    terms: ['피해', '구간', '소비', '자원', '발동', '유지', '극딜', '분기', '쿨기', '정렬', '타임라인', '상태 전환', '광역', '단일'],
+    minHits: 3,
   },
   ranged: {
     chartIds: new Set(['uptime', 'cooldown', 'resource']),
-    textPattern: /피해|구간|창|소비|자원|발동|유지|극딜|분기|쿨기|정렬|타임라인|상태 전환|광역|단일/i,
+    terms: ['피해', '구간', '소비', '자원', '발동', '유지', '극딜', '분기', '쿨기', '정렬', '타임라인', '상태 전환', '광역', '단일'],
+    minHits: 3,
   },
 };
 
@@ -49,6 +55,15 @@ function readSource(filePath) {
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function loadSourceModule(filePath, returnExpression) {
+  const executable = readSource(filePath)
+    .replace(/\bexport const\b/g, 'const')
+    .replace(/\bexport function\b/g, 'function')
+    .replace(/export default [^;]+;/g, '');
+
+  return new Function(`${executable}\nreturn ${returnExpression};`)();
 }
 
 function cleanText(value) {
@@ -288,6 +303,19 @@ function parseFindSkillNameGroups(branchBody) {
   return groups;
 }
 
+function parseFindSkillIdGroups(source) {
+  const groups = [];
+  const matcher = /findSkillByIds\(data,\s*\[([^\]]*)\]\)/g;
+  let match;
+
+  while ((match = matcher.exec(source))) {
+    const ids = [...match[1].matchAll(/'([^']+)'/g)].map(id => id[1]);
+    if (ids.length) groups.push(ids);
+  }
+
+  return groups;
+}
+
 function resolvesSkillName(scopedSkills, names) {
   const normalizedNames = names.map(normalizeSkillLookupText).filter(Boolean);
   const exactMatch = scopedSkills.find(skill => {
@@ -301,6 +329,19 @@ function resolvesSkillName(scopedSkills, names) {
     const keys = skillLookupKeys(skill);
     return normalizedNames.some(name => keys.some(key => key.includes(name)));
   });
+}
+
+function availableSkillIds(skills, manuscripts) {
+  return new Set([
+    ...skills.map(skill => String(skill.id)),
+    ...Object.values(manuscripts || {})
+      .flatMap(manuscript => manuscript.extraSkills || [])
+      .map(skill => String(skill.id)),
+  ]);
+}
+
+function resolvesSkillIds(skillIds, ids) {
+  return ids.map(id => String(id)).some(id => skillIds.has(id));
 }
 
 function validateNoDuplicateBranches(branches, scopeName) {
@@ -324,10 +365,13 @@ function main() {
   const guideDetailSource = readSource(GUIDE_DETAIL_PATH);
   const guideRegistrySource = readSource(GUIDE_REGISTRY_PATH);
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
+  const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
+  const skillIds = availableSkillIds(skills, manuscripts);
   const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);
   const specialistChartBody = extractObjectLiteral(guideDetailSource, 'SPECIALIST_CHARTS');
   const uptimeBody = extractFunctionBody(guideDetailSource, 'getUptimeRows');
+  const disciplinePriestUptimeBody = extractFunctionBody(guideDetailSource, 'getDisciplinePriestUptimeRows');
   const planBranches = extractObjectEntries(specialistChartBody, 'SPECIALIST_CHARTS');
   const uptimeBranches = extractGuideBranches(uptimeBody);
   const planBranchMap = new Map(planBranches.map(branch => [branch.id, branch]));
@@ -368,13 +412,14 @@ function main() {
     assert(branchText.length >= 220, `getInlineChartPlan branch for ${branch.id} needs a richer chart explanation`);
     assert(requirements, `getInlineChartPlan branch for ${branch.id} has no role chart requirement for profile "${profile}"`);
     if (requirements) {
+      const roleHits = requirements.terms.filter(term => branchText.includes(term));
       assert(
         requirements.chartIds.has(chartId),
         `getInlineChartPlan branch for ${branch.id} uses ${chartId} chart outside ${profile} profile expectations`
       );
       assert(
-        requirements.textPattern.test(branchText),
-        `getInlineChartPlan branch for ${branch.id} does not describe a ${profile}-appropriate chart`
+        roleHits.length >= requirements.minHits,
+        `getInlineChartPlan branch for ${branch.id} does not describe a ${profile}-appropriate chart; found ${roleHits.length}/${requirements.minHits} (${roleHits.join(', ') || 'none'})`
       );
     }
     assert(!/^\s*return\s*\[/m.test(branch.body), `getInlineChartPlan branch for ${branch.id} returns timeline rows directly`);
@@ -398,12 +443,30 @@ function main() {
 
     const guide = guideRecordMap.get(guideId);
     const scopedSkills = guide ? scopedSkillsForGuide(skills, guide) : [];
-    for (const names of parseFindSkillNameGroups(branch.body)) {
+    const lookupBody = guideId === 'priest-discipline'
+      ? `${branch.body}\n${disciplinePriestUptimeBody}`
+      : branch.body;
+
+    for (const names of parseFindSkillNameGroups(lookupBody)) {
       assert(
         resolvesSkillName(scopedSkills, names),
         `getUptimeRows branch for ${guideId} cannot resolve chart skill names [${names.join(', ')}]`
       );
     }
+
+    for (const ids of parseFindSkillIdGroups(lookupBody)) {
+      assert(
+        resolvesSkillIds(skillIds, ids),
+        `getUptimeRows branch for ${guideId} cannot resolve any chart skill ids [${ids.join(', ')}]`
+      );
+    }
+  }
+
+  for (const ids of parseFindSkillIdGroups(guideDetailSource)) {
+    assert(
+      resolvesSkillIds(skillIds, ids),
+      `GuideDetailPage contains unresolved chart skill ids [${ids.join(', ')}]`
+    );
   }
 
   if (errors.length) {

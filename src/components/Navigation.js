@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Database, Home, Layers3, Menu, Newspaper, X } from 'lucide-react';
+import { BookOpen, Database, Home, Menu, Newspaper, X } from 'lucide-react';
 
 const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(184, 145, 91, 0.22);
-  background: rgba(8, 11, 13, 0.94);
-  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+  background: rgba(9, 12, 15, 0.94);
+  backdrop-filter: blur(12px);
 `;
 
 const NavInner = styled.div`
   width: min(1280px, calc(100% - 32px));
-  min-height: 64px;
+  min-height: 58px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 28px;
 `;
 
 const Brand = styled(Link)`
   display: inline-flex;
   align-items: center;
-  gap: 11px;
-  color: #f4efe5;
-  font-weight: 900;
+  gap: 9px;
+  color: #eef1f3;
+  font-weight: 750;
   letter-spacing: 0;
 `;
 
 const BrandMark = styled.span`
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   display: grid;
   place-items: center;
   border: 0;
@@ -41,38 +41,39 @@ const BrandMark = styled.span`
 `;
 
 const LogoSvg = styled.svg`
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
 `;
 
 const Wordmark = styled.span`
-  color: #f4efe5;
-  font-size: 1rem;
-  font-weight: 900;
+  color: #eef1f3;
+  font-size: 0.96rem;
+  font-weight: 750;
 `;
 
 const Patch = styled.span`
-  margin-left: 6px;
-  color: #b8915b;
-  font-size: 0.76rem;
-  font-weight: 900;
+  margin-left: 5px;
+  color: #88949c;
+  font-size: 0.64rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
 `;
 
 const Links = styled.div`
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 18px;
 
   @media (max-width: 780px) {
     position: absolute;
-    top: 64px;
+    top: 58px;
     right: 0;
     left: 0;
     display: ${props => (props.$open ? 'grid' : 'none')};
     gap: 0;
     padding: 8px 16px 16px;
-    border-bottom: 1px solid rgba(184, 145, 91, 0.22);
-    background: rgba(8, 11, 13, 0.98);
+    border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+    background: rgba(9, 12, 15, 0.99);
   }
 `;
 
@@ -81,17 +82,26 @@ const NavItem = styled(Link)`
   align-items: center;
   gap: 8px;
   min-height: 38px;
-  padding: 0 12px;
-  border: 1px solid ${props => (props.$active ? 'rgba(184, 145, 91, 0.35)' : 'transparent')};
-  color: ${props => (props.$active ? '#f4efe5' : '#9aa6b2')};
-  background: ${props => (props.$active ? 'rgba(184, 145, 91, 0.1)' : 'transparent')};
-  font-size: 0.9rem;
-  font-weight: 800;
+  padding: 0 2px;
+  border-bottom: 2px solid ${props => (props.$active ? '#d2b373' : 'transparent')};
+  color: ${props => (props.$active ? '#eef1f3' : '#8f9aa2')};
+  background: transparent;
+  font-size: 0.84rem;
+  font-weight: ${props => (props.$active ? 700 : 560)};
 
   &:hover {
-    color: #f4efe5;
-    border-color: rgba(184, 145, 91, 0.28);
-    background: rgba(244, 239, 229, 0.05);
+    color: #eef1f3;
+  }
+
+  &:focus-visible {
+    outline-offset: 1px;
+  }
+
+  @media (max-width: 780px) {
+    justify-content: flex-start;
+    min-height: 44px;
+    padding: 0 6px;
+    border-bottom-color: rgba(168, 178, 188, 0.09);
   }
 `;
 
@@ -99,9 +109,9 @@ const MenuButton = styled.button`
   display: none;
   width: 38px;
   height: 38px;
-  border: 1px solid rgba(184, 145, 91, 0.32);
-  background: #11171c;
-  color: #f4efe5;
+  border: 1px solid rgba(168, 178, 188, 0.22);
+  background: transparent;
+  color: #eef1f3;
 
   @media (max-width: 780px) {
     display: grid;
@@ -113,7 +123,6 @@ const navItems = [
   { path: '/', label: '홈', icon: Home },
   { path: '/guide', label: '가이드', icon: BookOpen },
   { path: '/spells', label: '스펠 DB', icon: Database },
-  { path: '/mockups', label: '목업', icon: Layers3 },
   { path: '/news', label: '소식', icon: Newspaper },
 ];
 
@@ -141,15 +150,23 @@ function Navigation() {
             <WowMetaMark />
           </BrandMark>
           <Wordmark>wowmeta</Wordmark>
-          <Patch>12.0.5</Patch>
+          <Patch>GUIDES</Patch>
         </Brand>
 
-        <Links $open={open}>
+        <Links id="primary-navigation" $open={open}>
           {navItems.map(item => {
             const Icon = item.icon;
-            const active = location.pathname === item.path;
+            const active = item.path === '/'
+              ? location.pathname === '/'
+              : location.pathname === item.path || location.pathname.startsWith(`${item.path}/`);
             return (
-              <NavItem key={item.path} to={item.path} $active={active} onClick={() => setOpen(false)}>
+              <NavItem
+                key={item.path}
+                to={item.path}
+                $active={active}
+                aria-current={active ? 'page' : undefined}
+                onClick={() => setOpen(false)}
+              >
                 <Icon size={16} aria-hidden="true" />
                 {item.label}
               </NavItem>
@@ -157,7 +174,13 @@ function Navigation() {
           })}
         </Links>
 
-        <MenuButton type="button" onClick={() => setOpen(value => !value)} aria-label="메뉴">
+        <MenuButton
+          type="button"
+          aria-label="메뉴"
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+          onClick={() => setOpen(value => !value)}
+        >
           {open ? <X size={18} /> : <Menu size={18} />}
         </MenuButton>
       </NavInner>

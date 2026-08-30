@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-28T05:37:40.896Z",
+    "generatedAt": "2026-08-29T18:03:17.085Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 427,
-    "rawTotalSynergies": 427,
+    "totalSynergies": 429,
+    "rawTotalSynergies": 429,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
       "shared_grip_mobility_control": 1,
       "cooldown-extension": 1,
       "razorice-spend": 1,
-      "unknown": 107,
+      "unknown": 120,
       "disease-aoe": 1,
       "apex-burst-window": 1,
       "sanlayn-recovery": 1,
@@ -85,12 +85,12 @@
       "shado-pan-shared-flurry": 1,
       "breath_of_fire_maintenance": 1,
       "mythic_plus_utility": 1,
-      "external_defensive_cooldown": 1,
+      "external_defensive_and_mana": 1,
       "mana_recovery_window": 1,
       "renewing_mist_vivify_spread": 1,
       "conduit_of_celestials_window": 1,
       "master_of_harmony_stored_healing": 1,
-      "melee_healing_loop": 1,
+      "raid_mythic_plus_choice": 1,
       "major_healing_cooldowns": 1,
       "single_target_recovery": 1,
       "apex-active-window": 1,
@@ -112,17 +112,6 @@
       "aoe_threat_holy_power": 1,
       "holy_power_generation": 1,
       "defensive_cooldown_rotation": 1,
-      "beacon_burst_aoe": 1,
-      "beacon_transfer": 1,
-      "lightsmith_support": 1,
-      "beacon-transfer": 1,
-      "spot_healing": 1,
-      "holy_power_generator": 1,
-      "holy_power_spender": 1,
-      "major_cooldown": 1,
-      "herald_healing": 1,
-      "major_healing_window": 2,
-      "defensive_passive_layer": 1,
       "templar_burst": 1,
       "spender-selection": 1,
       "execution-sentence-burst": 1,
@@ -148,7 +137,7 @@
       "defensive_sequence": 1,
       "voidweaver_damage_healing": 1,
       "major-cooldown": 1,
-      "raid_ramp": 1,
+      "raid_preheal": 1,
       "dot-maintenance": 1,
       "atonement_setup": 1,
       "spot-healing": 1,
@@ -162,6 +151,7 @@
       "oracle_preheal": 1,
       "emergency_single_target": 1,
       "holy_damage_utility": 1,
+      "major_healing_window": 1,
       "archon_aoe_healing": 1,
       "major_cooldown_windows": 1,
       "aoe_recovery_cycle": 1,
@@ -193,7 +183,7 @@
       "cleave_gate": 1,
       "execute_priority": 1,
       "poison_finisher_engine": 1,
-      "poison_amp_window": 1,
+      "combo_point_correction": 1,
       "bleed_maintenance": 1,
       "priority_aoe": 1,
       "fatebound_finisher_loop": 1,
@@ -215,7 +205,7 @@
       "hero_talent_totemic": 2,
       "major_cooldown_window": 1,
       "defensive_mythic_utility": 2,
-      "hero_talent_stormbringer": 3,
+      "hero_talent_stormbringer": 2,
       "hero_talent_farseer": 2,
       "shared_mobility": 2,
       "shared_healing_support": 1,
@@ -233,6 +223,7 @@
       "ground_effect_healing_damage": 1,
       "predictive_aoe_healing_window": 1,
       "fire_nature_bridge": 1,
+      "hero_talent_stormbringer_alternative": 1,
       "flame_shock_lava_burst_core": 1,
       "manual-curated": 20,
       "party-utility": 1,
@@ -254,17 +245,18 @@
       "execute-window": 1,
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
-      "colossus-damage-window": 2,
+      "colossus-damage-window": 1,
       "multi-target-core": 1,
       "proc-charge-engine": 1,
       "bleed-rage-sustain": 1,
       "slayer-cooldown-link": 1,
       "aoe-cooldown-planning": 1,
-      "damage-rage-window": 1,
+      "damage-rage-sequence": 1,
       "active-mitigation": 1,
       "mountain-thane-thunder": 1,
       "major-defensive": 1,
       "passive-mitigation": 1,
+      "colossus-damage-sequence": 1,
       "baseline-attack-engine": 1,
       "utility-magic-control": 1,
       "aoe-rage-loop": 1,
@@ -279,16 +271,17 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 17,
+      "DeathKnight": 18,
       "DemonHunter": 22,
-      "Druid": 35,
-      "Evoker": 29,
+      "Druid": 37,
+      "Evoker": 28,
       "Hunter": 26,
       "Mage": 41,
       "마법사": 1,
       "Monk": 31,
-      "Paladin": 39,
-      "Priest": 39,
+      "Paladin": 28,
+      "성기사": 10,
+      "Priest": 40,
       "Rogue": 36,
       "Shaman": 34,
       "Warlock": 39,
@@ -520,6 +513,34 @@
         "lastUpdate": ""
       }
     },
+    "종말의기수_서리고룡의격노_기동성": {
+      "id": "종말의기수_서리고룡의격노_기동성",
+      "name": "종말의기수-서리고룡의격노-기동성",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "444005",
+        "279302",
+        "48265",
+        "51271"
+      ],
+      "class": "DeathKnight",
+      "spec": "Frost",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.0.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노",
+        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의진군",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\종말의기수-서리고룡의격노-기동성.md",
+        "lastUpdate": ""
+      }
+    },
     "공포의역병_전염병": {
       "id": "공포의역병_전염병",
       "name": "공포의역병-전염병",
@@ -673,10 +694,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/섭취",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/피투성이반영",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/유혈의폭발",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/피구더기"
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/섭취"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\산레인-흡혈.md",
@@ -889,32 +907,35 @@
     },
     "SY-DH-Vengeance-Voidfall-SpiritBomb": {
       "id": "SY-DH-Vengeance-Voidfall-SpiritBomb",
-      "name": "공허내림-영혼폭탄",
+      "name": "공허내림-영혼 폭탄",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "1253304",
+        "247454",
+        "228477",
+        "263642"
+      ],
       "class": "DemonHunter",
-      "spec": "복수",
-      "heroTalent": null,
-      "importance": 3,
+      "spec": "Vengeance",
+      "heroTalent": "궤멸자",
+      "importance": 5,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼방벽",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/고통인도자",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/고삐풀린분노"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\공허내림-영혼폭탄.md",
         "lastUpdate": ""
       }
     },
-    "악마쐐기_물리피해창": {
-      "id": "악마쐐기_물리피해창",
-      "name": "악마쐐기-물리피해창",
+    "악마쐐기_물리피해구간": {
+      "id": "악마쐐기_물리피해구간",
+      "name": "악마쐐기-물리피해구간",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -932,8 +953,8 @@
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불타는낙인",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/지옥황폐",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/흐릿해지기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불지옥일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -941,7 +962,7 @@
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼방벽"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\악마쐐기-물리피해창.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\악마쐐기-물리피해구간.md",
         "lastUpdate": ""
       }
     },
@@ -976,7 +997,6 @@
       "synergyType": "unknown",
       "participants": [
         "263642",
-        "320341",
         "247454",
         "228477",
         "203720"
@@ -990,7 +1010,6 @@
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/대량추출",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기"
       ],
       "linkedBuffs": [],
@@ -1144,7 +1163,7 @@
     },
     "dh-havoc-essence-break-burst-window": {
       "id": "dh-havoc-essence-break-burst-window",
-      "name": "정수 파쇄 극딜 창",
+      "name": "정수 파쇄 극딜 구간",
       "type": "synergy",
       "synergyType": "burst-window",
       "participants": [
@@ -1169,13 +1188,13 @@
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\정수파쇄-극딜창.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\정수파쇄-극딜구간.md",
         "lastUpdate": ""
       }
     },
     "dh-havoc-fel-scarred-demonsurge": {
       "id": "dh-havoc-fel-scarred-demonsurge",
-      "name": "지옥상흔 악마쇄도 창",
+      "name": "지옥상흔 악마쇄도 구간",
       "type": "synergy",
       "synergyType": "hero-talent-burst",
       "participants": [
@@ -1581,9 +1600,9 @@
         "lastUpdate": ""
       }
     },
-    "무쇠가죽_물리피해창": {
-      "id": "무쇠가죽_물리피해창",
-      "name": "무쇠가죽-물리피해창",
+    "무쇠가죽_물리피해구간": {
+      "id": "무쇠가죽_물리피해구간",
+      "name": "무쇠가죽-물리피해구간",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -1596,12 +1615,14 @@
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\무쇠가죽-물리피해창.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\무쇠가죽-물리피해구간.md",
         "lastUpdate": ""
       }
     },
@@ -1664,7 +1685,6 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/야성의광기",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
@@ -2018,7 +2038,7 @@
     },
     "SY-Druid-Balance-Eclipse-Ascendant-Spenders": {
       "id": "SY-Druid-Balance-Eclipse-Ascendant-Spenders",
-      "name": "일월식-승천자의일월식-소비창",
+      "name": "일월식-승천자의일월식-소비 구간",
       "type": "synergy",
       "synergyType": "cooldown-resource",
       "participants": [
@@ -2050,7 +2070,7 @@
         "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/만물의조화"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Synergies\\일월식-승천자의일월식-소비창.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Synergies\\일월식-승천자의일월식-소비구간.md",
         "lastUpdate": ""
       }
     },
@@ -2148,6 +2168,37 @@
         "lastUpdate": ""
       }
     },
+    "SY-restoration-overgrowth-natures-swiftness-regrowth": {
+      "id": "SY-restoration-overgrowth-natures-swiftness-regrowth",
+      "name": "과성장-자연의신속함-재생",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "203651",
+        "132158",
+        "8936",
+        "33763",
+        "774",
+        "48438"
+      ],
+      "class": "Druid",
+      "spec": "회복",
+      "heroTalent": null,
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/자연의신속함",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/과성장"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\과성장-자연의신속함-재생.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-restoration-dream-surge-grove-guardians": {
       "id": "SY-restoration-dream-surge-grove-guardians",
       "name": "꿈의쇄도-숲수호자",
@@ -2158,19 +2209,17 @@
         "1226140",
         "428731",
         "18562",
-        "774",
-        "48438"
+        "48438",
+        "391528"
       ],
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
-      "importance": 7,
-      "patch": "12.0.5",
+      "importance": 6,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -2181,36 +2230,35 @@
         "lastUpdate": ""
       }
     },
-    "SY-restoration-thriving-growth-hot": {
-      "id": "SY-restoration-thriving-growth-hot",
-      "name": "번성하는성장물-회복HoT",
+    "SY-restoration-thriving-growth-sustain": {
+      "id": "SY-restoration-thriving-growth-sustain",
+      "name": "번성하는성장물-지속치유",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
         "439528",
         "440119",
-        "48438",
-        "8936",
-        "145205",
         "33763",
+        "392167",
+        "18562",
         "774",
-        "18562"
+        "8936"
       ],
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/꽃피우기",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/상록숲"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\번성하는성장물-회복HoT.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\번성하는성장물-지속치유.md",
         "lastUpdate": ""
       }
     },
@@ -2222,26 +2270,24 @@
       "participants": [
         "392167",
         "33763",
-        "158478",
-        "1217941",
         "18562",
         "392410",
-        "145205"
+        "774",
+        "155675"
       ],
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/꽃피우기"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/상록숲",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/숲의영혼",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/생명의바느질"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/신록주입"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\상록숲-피어나는생명.md",
@@ -2256,30 +2302,24 @@
       "participants": [
         "392410",
         "18562",
-        "200383",
+        "392167",
+        "33763",
         "158478",
-        "392302",
-        "774",
-        "33763"
+        "392302"
       ],
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
       "importance": 9,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/신록주입",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/숲의영혼",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/대드루이드의힘",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/번영"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/상록숲"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\신록주입-신속한치유.md",
@@ -2303,13 +2343,12 @@
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
-      "importance": 7,
-      "patch": "12.0.5",
+      "importance": 6,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -2317,6 +2356,36 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\영혼소집-숲수호자-급속성장.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-restoration-flash-of-clarity-clearcasting-regrowth": {
+      "id": "SY-restoration-flash-of-clarity-clearcasting-regrowth",
+      "name": "청명의섬광-번뜩임-재생",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "392220",
+        "8936",
+        "207383",
+        "404521"
+      ],
+      "class": "Druid",
+      "spec": "회복",
+      "heroTalent": null,
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/청명의섬광",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/풍요",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/무성한생장"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\청명의섬광-번뜩임-재생.md",
         "lastUpdate": ""
       }
     },
@@ -2336,12 +2405,12 @@
       "class": "Druid",
       "spec": "회복",
       "heroTalent": null,
-      "importance": 7,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/정신자극"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -2360,26 +2429,25 @@
       "participants": [
         "33763",
         "18562",
-        "8936",
-        "102342",
         "392167",
         "392410",
-        "1217941"
+        "774",
+        "155675",
+        "8936"
       ],
       "class": "Druid",
-      "spec": "Restoration",
+      "spec": "회복",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/무쇠껍질"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/생명의바느질"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/상록숲",
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/신록주입"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\피어나는생명-신속한치유.md",
@@ -2396,29 +2464,23 @@
         "48438",
         "197721",
         "740",
-        "18562",
-        "158478",
-        "392302",
-        "207383",
-        "145205"
+        "8936",
+        "207383"
       ],
       "class": "Druid",
-      "spec": "Restoration",
+      "spec": "회복",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/급속성장",
         "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/평온",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/회복",
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/꽃피우기"
+        "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/번성"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/대드루이드의힘"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Synergies\\회복-급속성장-번성.md",
         "lastUpdate": ""
@@ -2514,9 +2576,9 @@
         "lastUpdate": ""
       }
     },
-    "공명하는구슬_시간변칙": {
-      "id": "공명하는구슬_시간변칙",
-      "name": "공명하는구슬-시간변칙",
+    "꿈의숨결_메리스라의축복": {
+      "id": "꿈의숨결_메리스라의축복",
+      "name": "꿈의숨결-메리스라의축복",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2524,48 +2586,18 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/시간변칙",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되돌리기",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/공명하는구슬"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\공명하는구슬-시간변칙.md",
-        "lastUpdate": ""
-      }
-    },
-    "되돌리기_광역피해": {
-      "id": "되돌리기_광역피해",
-      "name": "되돌리기-광역피해",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "Evoker",
-      "spec": "Preservation",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되돌리기",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/에메랄드꽃"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\되돌리기-광역피해.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\꿈의숨결-메리스라의축복.md",
+        "lastUpdate": "2026-08-26"
       }
     },
-    "메리스라의축복_되감기": {
-      "id": "메리스라의축복_되감기",
-      "name": "메리스라의축복-되감기",
+    "꿈의숨결_화염흡수_에메랄드꽃": {
+      "id": "꿈의숨결_화염흡수_에메랄드꽃",
+      "name": "꿈의숨결-화염흡수-에메랄드꽃",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2573,24 +2605,18 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되감기",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\메리스라의축복-되감기.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\꿈의숨결-화염흡수-에메랄드꽃.md",
+        "lastUpdate": "2026-08-26"
       }
     },
-    "메아리_꿈의숨결": {
-      "id": "메아리_꿈의숨결",
-      "name": "메아리-꿈의숨결",
+    "되돌리기_피해후복구": {
+      "id": "되돌리기_피해후복구",
+      "name": "되돌리기-피해후복구",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2598,25 +2624,18 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/시간변칙",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\메아리-꿈의숨결.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\되돌리기-피해후복구.md",
+        "lastUpdate": "2026-08-26"
       }
     },
-    "메아리_사전힐_타임라인": {
-      "id": "메아리_사전힐_타임라인",
-      "name": "메아리-사전힐-타임라인",
+    "메아리_메리스라의축복_되감기": {
+      "id": "메아리_메리스라의축복_되감기",
+      "name": "메아리-메리스라의축복-되감기",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2624,66 +2643,18 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/시간변칙",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되감기",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되돌리기",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\메아리-사전힐-타임라인.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\메아리-메리스라의축복-되감기.md",
+        "lastUpdate": "2026-08-26"
       }
     },
-    "시간변칙_메아리": {
-      "id": "시간변칙_메아리",
-      "name": "시간변칙-메아리",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [
-        "373861",
-        "364343",
-        "355913",
-        "358385"
-      ],
-      "class": "Evoker",
-      "spec": "Preservation",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/시간변칙",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되감기",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/에메랄드꽃",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/산사태"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/쌍둥이메아리",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/명료한영혼",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/시간압축"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\시간변칙-메아리.md",
-        "lastUpdate": ""
-      }
-    },
-    "시간의군주_메아리": {
-      "id": "시간의군주_메아리",
-      "name": "시간의군주-메아리",
+    "시간변칙_메아리_강화주문": {
+      "id": "시간변칙_메아리_강화주문",
+      "name": "시간변칙-메아리-강화주문",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2691,51 +2662,18 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/시간의군주",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/쌍둥이메아리",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/우로보로스"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\시간의군주-메아리.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\시간변칙-메아리-강화주문.md",
+        "lastUpdate": "2026-08-26"
       }
     },
-    "시간의폭발_전세역전": {
-      "id": "시간의폭발_전세역전",
-      "name": "시간의폭발-전세역전",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [
-        "431695",
-        "432004",
-        "357170"
-      ],
-      "class": "Evoker",
-      "spec": "Preservation",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/시간팽창"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\시간의폭발-전세역전.md",
-        "lastUpdate": ""
-      }
-    },
-    "정지장_메아리_꿈의숨결": {
-      "id": "정지장_메아리_꿈의숨결",
-      "name": "정지장-메아리-꿈의숨결",
+    "정수폭발_에메랄드꽃_쌍둥이메아리": {
+      "id": "정수폭발_에메랄드꽃_쌍둥이메아리",
+      "name": "정수폭발-에메랄드꽃-쌍둥이메아리",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2743,21 +2681,51 @@
       "spec": "Preservation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/정지장",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/시간변칙",
-        "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\정지장-메아리-꿈의숨결.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\정수폭발-에메랄드꽃-쌍둥이메아리.md",
+        "lastUpdate": "2026-08-26"
+      }
+    },
+    "정지장_꿈의숨결_시간변칙": {
+      "id": "정지장_꿈의숨결_시간변칙",
+      "name": "정지장-꿈의숨결-시간변칙",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "Evoker",
+      "spec": "Preservation",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\정지장-꿈의숨결-시간변칙.md",
+        "lastUpdate": "2026-08-26"
+      }
+    },
+    "화염형성자_시간감시자": {
+      "id": "화염형성자_시간감시자",
+      "name": "화염형성자-시간감시자",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "Evoker",
+      "spec": "Preservation",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Synergies\\화염형성자-시간감시자.md",
+        "lastUpdate": "2026-08-26"
       }
     },
     "SY-evoker-augmentation-mass-eruption-eruption": {
@@ -2850,7 +2818,7 @@
     },
     "SY-evoker-augmentation-breath-party-window": {
       "id": "SY-evoker-augmentation-breath-party-window",
-      "name": "영겁의 숨결-파티 극딜 창",
+      "name": "영겁의 숨결-파티 극딜 구간",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3000,6 +2968,32 @@
         "lastUpdate": ""
       }
     },
+    "SY-evoker-devastation-mass-disintegrate-deep-breath-wingleader": {
+      "id": "SY-evoker-devastation-mass-disintegrate-deep-breath-wingleader",
+      "name": "대규모 파열-깊은 숨결-날개지도자",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "436335",
+        "356995",
+        "441206",
+        "357210",
+        "434300",
+        "441176"
+      ],
+      "class": "Evoker",
+      "spec": "Devastation",
+      "heroTalent": null,
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Synergies\\대규모파열-깊은숨결-날개지도자.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-evoker-devastation-mass-disintegrate-disintegrate": {
       "id": "SY-evoker-devastation-mass-disintegrate-disintegrate",
       "name": "대규모 파열-파열",
@@ -3030,7 +3024,7 @@
     },
     "SY-evoker-devastation-rising-fury-dragonrage": {
       "id": "SY-evoker-devastation-rising-fury-dragonrage",
-      "name": "분노 상승-용의 분노",
+      "name": "분노 상승-용의 분노-해방된 불길",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3038,16 +3032,18 @@
         "375087",
         "357208",
         "359073",
-        "375797",
-        "376888"
+        "1292321",
+        "359618",
+        "356995",
+        "357211"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/해방된불길"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -3095,15 +3091,15 @@
       "participants": [
         "359073",
         "1265872",
-        "375087",
         "362969",
-        "375757"
+        "375797",
+        "1296640"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도",
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/하늘빛휩쓸기"
@@ -3129,23 +3125,16 @@
         "357211",
         "375797",
         "1271687",
-        "376888",
-        "1265802",
-        "1265872",
+        "1292321",
         "358267"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 10,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염"
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -3213,36 +3202,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Synergies\\임박한파괴-깊은숨결.md",
-        "lastUpdate": ""
-      }
-    },
-    "SY-evoker-devastation-bombardments-deep-breath-wingleader": {
-      "id": "SY-evoker-devastation-bombardments-deep-breath-wingleader",
-      "name": "폭격-깊은 숨결-날개지도자",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [
-        "434300",
-        "357210",
-        "441206",
-        "436335",
-        "441176",
-        "433871",
-        "370781",
-        "375087"
-      ],
-      "class": "Evoker",
-      "spec": "Devastation",
-      "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Synergies\\폭격-깊은숨결-날개지도자.md",
         "lastUpdate": ""
       }
     },
@@ -5922,7 +5881,7 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\시간차-천신주.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-06"
       }
     },
     "음영파_정점광역": {
@@ -5947,7 +5906,7 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\음영파-정점광역.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-06"
       }
     },
     "정화주_결의의비약": {
@@ -5986,13 +5945,15 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\조화의형-천신주.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-06"
       }
     },
     "흑우니우짜오_강화주_장기생존": {
@@ -6024,46 +5985,29 @@
       "id": "monk_mistweaver_life_cocoon_external",
       "name": "기의고치-번데기-외부생존기",
       "type": "synergy",
-      "synergyType": "external_defensive_cooldown",
+      "synergyType": "external_defensive_and_mana",
       "participants": [
         "116849",
-        "202424",
-        "406139",
-        "400053",
-        "122280",
-        "388551",
-        "343655",
-        "388212",
-        "115310",
-        "443028",
+        "467270",
+        "115869",
+        "443294",
         "124682",
-        "197900",
-        "388682",
-        "1260511"
+        "1260511",
+        "115310",
+        "443028"
       ],
       "class": "Monk",
       "spec": "운무",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개"
+        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/번데기",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/기고치",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/긍지의장막",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/치유의비약",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/고양된영혼",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/천신의조화",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/천신의선물",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/감싸는안개",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/안개의정점",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/영혼의샘"
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/원기회복",
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/마나차"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\기의고치-번데기-외부생존기.md",
@@ -6182,40 +6126,30 @@
       "participants": [
         "443294",
         "443028",
-        "443059",
-        "443625",
-        "1262667",
-        "1262672",
-        "443255",
-        "443566",
-        "442719",
-        "1270958",
-        "1262756",
-        "1269159",
-        "115310",
-        "388031",
-        "388038",
-        "343655",
-        "388212",
+        "443589",
+        "116680",
+        "467307",
         "115151",
-        "116670"
+        "116849",
+        "116670",
+        "115310",
+        "322118"
       ],
       "class": "Monk",
       "spec": "운무",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/질풍차기",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활"
+        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
+        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치",
+        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/비취결속"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\옥룡의마음-질풍차기.md",
         "lastUpdate": ""
@@ -6273,53 +6207,33 @@
       "id": "monk_mistweaver_rushing_wind_kick_melee_healing",
       "name": "질풍차기-고대의가르침",
       "type": "synergy",
-      "synergyType": "melee_healing_loop",
+      "synergyType": "raid_mythic_plus_choice",
       "participants": [
-        "1269159",
+        "467307",
         "107428",
         "100784",
         "100780",
-        "388193",
+        "101546",
+        "388023",
         "467293",
-        "467316",
-        "274909",
         "388779",
-        "438439",
-        "1243155",
-        "274586",
         "115151",
-        "116670",
-        "116849",
-        "446326",
-        "1271431"
+        "116670"
       ],
       "class": "Monk",
       "spec": "운무",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/질풍차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/비취불꽃진각",
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/아침바람",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/비취불꽃의가르침",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/비취강화",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/안개오름",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/주학의길",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/츠지의춤",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/운룡의길",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/활기의안개",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/선의파동",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/증폭된질주"
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/고대의가르침"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\질풍차기-고대의가르침.md",
@@ -7237,392 +7151,198 @@
         "lastUpdate": ""
       }
     },
-    "paladin_holy_beacon_virtue_burst": {
-      "id": "paladin_holy_beacon_virtue_burst",
-      "name": "고결의-봉화-빛의-기둥-광역-대응",
+    "고결의_봉화_빛의_기둥_광역_대응": {
+      "id": "고결의_봉화_빛의_기둥_광역_대응",
+      "name": "고결의 봉화-빛의 기둥",
       "type": "synergy",
-      "synergyType": "beacon_burst_aoe",
-      "participants": [
-        "고결의 봉화",
-        "빛의 기둥",
-        "빛의 보호",
-        "여명의 빛"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/여명의빛"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/고결의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의기둥",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의보호",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/넘치는빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/영원의불꽃",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/끝없는빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/밝아오는여명",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신념의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245367",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245368"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\고결의-봉화-빛의-기둥-광역-대응.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_holy_beacon_savior": {
-      "id": "paladin_holy_beacon_savior",
-      "name": "봉화-구세주의봉화",
-      "type": "synergy",
-      "synergyType": "beacon_transfer",
-      "participants": [
-        "빛의 봉화",
-        "구세주의 봉화",
-        "신념의 봉화",
-        "빛의 수호자의 봉화"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의봉화"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245367",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245368",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신념의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의수호자의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의보살핌",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의보호",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/넘치는빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/연민의순간",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/통솔의빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의기둥",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구원구도",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/길들이기"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\봉화-구세주의봉화.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_holy_lightsmith_armaments": {
-      "id": "paladin_holy_lightsmith_armaments",
-      "name": "빛대장장이-신성한무기",
-      "type": "synergy",
-      "synergyType": "lightsmith_support",
-      "participants": [
-        "신성한 무기",
-        "신성한 보루",
-        "축복의 무장",
-        "망치와 모루"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": "Lightsmith",
-      "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\빛대장장이-신성한무기.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\고결의-봉화-빛의-기둥-광역-대응.md",
+        "lastUpdate": "2026-08-25"
+      }
+    },
+    "봉화_구세주의봉화": {
+      "id": "봉화_구세주의봉화",
+      "name": "봉화-구세주의 봉화",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\봉화-구세주의봉화.md",
+        "lastUpdate": "2026-08-25"
+      }
+    },
+    "빛대장장이_무장교대": {
+      "id": "빛대장장이_무장교대",
+      "name": "빛대장장이-무장 교대",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\빛대장장이-무장교대.md",
+        "lastUpdate": "2026-08-25"
       }
     },
     "빛의봉화_영광의서약": {
       "id": "빛의봉화_영광의서약",
-      "name": "빛의봉화-영광의서약",
+      "name": "봉화-영광의 서약",
       "type": "synergy",
-      "synergyType": "beacon-transfer",
+      "synergyType": "unknown",
       "participants": [],
-      "class": "Paladin",
-      "spec": "Holy",
+      "class": "성기사",
+      "spec": "신성",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\빛의봉화-영광의서약.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-08-25"
       }
     },
-    "paladin_holy_holy_light_burst": {
-      "id": "paladin_holy_holy_light_burst",
-      "name": "성스러운-빛-신앙의-손-신의-은총",
+    "성스러운_빛_신앙의_손_신의_은총": {
+      "id": "성스러운_빛_신앙의_손_신의_은총",
+      "name": "성스러운 빛-신앙의 손",
       "type": "synergy",
-      "synergyType": "spot_healing",
-      "participants": [
-        "성스러운 빛",
-        "신앙의 손",
-        "신의 은총",
-        "마력 깃든 주입"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/성스러운빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의섬광"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신앙의손",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신의은총",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/마력깃든주입",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신성과부하",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/태양샘의개화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/성스러운계시",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의교부",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/연민의순간",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245367",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구세주의봉화-1245368",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/순교자의빛-183998"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\성스러운-빛-신앙의-손-신의-은총.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-08-25"
       }
     },
-    "paladin_holy_holy_shock_infusion": {
-      "id": "paladin_holy_holy_shock_infusion",
-      "name": "신성충격-빛주입",
+    "신성충격_빛주입": {
+      "id": "신성충격_빛주입",
+      "name": "신성 충격-빛 주입",
       "type": "synergy",
-      "synergyType": "holy_power_generator",
-      "participants": [
-        "신성 충격",
-        "빛의 섬광",
-        "성스러운 빛",
-        "빛 주입"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/신성충격",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의섬광",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/성스러운빛",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/신성충격"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신성충격",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/마력깃든주입",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/성스러운계시",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/성스러운자각",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신성과부하",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신의은총",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신앙의손",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의교부",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/번뜩이는광휘",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/영광스러운여명"
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/신성/Buffs/빛주입"
       ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\신성충격-빛주입.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-08-25"
       }
     },
-    "paladin_holy_holy_power_spenders": {
-      "id": "paladin_holy_holy_power_spenders",
-      "name": "신성충격-신성한힘",
+    "신성충격_신성한힘": {
+      "id": "신성충격_신성한힘",
+      "name": "신성 충격-신성한 힘",
       "type": "synergy",
-      "synergyType": "holy_power_spender",
-      "participants": [
-        "신성 충격",
-        "영광의 서약",
-        "여명의 빛",
-        "영원의 불꽃"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": "Herald of the Sun",
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/신성충격",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/여명의빛"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/영원의불꽃",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/끝없는빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/밝아오는여명",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/최고천의유산",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/여명의축복",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/황혼의축복",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/태양샘의개화",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/찬연한빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/통솔의빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의기둥"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\신성충격-신성한힘.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_holy_wings_cooldown_window": {
-      "id": "paladin_holy_wings_cooldown_window",
-      "name": "오라숙련-응징의격노",
-      "type": "synergy",
-      "synergyType": "major_cooldown",
-      "participants": [
-        "응징의 격노",
-        "각성",
-        "오라 숙련",
-        "응징의 성전사"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/오라숙련",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/각성",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/응징의성전사",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/축성의분노",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/추앙",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/천상의울림",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/정의의부름",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/정의의심판",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/찬란한정의",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/진실의승리",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/성전사의권능"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\오라숙련-응징의격노.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\신성충격-신성한힘.md",
+        "lastUpdate": "2026-08-25"
       }
     },
-    "paladin_holy_herald_dawnlight": {
-      "id": "paladin_holy_herald_dawnlight",
-      "name": "태양의사자-영원의불꽃",
+    "오라숙련_천상의울림": {
+      "id": "오라숙련_천상의울림",
+      "name": "오라 숙련-천상의 울림",
       "type": "synergy",
-      "synergyType": "herald_healing",
-      "participants": [
-        "새벽빛",
-        "영원의 불꽃",
-        "태양의 화신",
-        "여명의 빛"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": "Herald of the Sun",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
+      "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\오라숙련-천상의울림.md",
+        "lastUpdate": "2026-08-25"
+      }
+    },
+    "응징의격노_티르의해방": {
+      "id": "응징의격노_티르의해방",
+      "name": "응징의 격노-티르의 해방",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\응징의격노-티르의해방.md",
+        "lastUpdate": "2026-08-25"
+      }
+    },
+    "태양의사자_영원의불꽃": {
+      "id": "태양의사자_영원의불꽃",
+      "name": "태양의 사자-영원의 불꽃",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "성기사",
+      "spec": "신성",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\태양의사자-영원의불꽃.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_holy_tyrs_deliverance": {
-      "id": "paladin_holy_tyrs_deliverance",
-      "name": "티르의해방-해방",
-      "type": "synergy",
-      "synergyType": "major_healing_window",
-      "participants": [
-        "티르의 해방",
-        "해방",
-        "티르의 보호",
-        "오라 숙련"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/오라숙련",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/여명의빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/빛의섬광",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/성스러운빛"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/티르의해방",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/해방",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/해방-461287",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/티르의보호",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/구원구도",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/길들이기",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/대천사의방벽",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/흔들림없는영혼",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/신성과부하"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\티르의해방-해방.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_holy_passive_defense_overheal": {
-      "id": "paladin_holy_passive_defense_overheal",
-      "name": "패시브-방어-과치유-보정",
-      "type": "synergy",
-      "synergyType": "defensive_passive_layer",
-      "participants": [
-        "대천사의 방벽",
-        "빛의 보호",
-        "빛의 보살핌",
-        "흔들림없는 영혼"
-      ],
-      "class": "Paladin",
-      "spec": "Holy",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Skills/오라숙련",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/대천사의방벽",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의보호",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/빛의보살핌",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/흔들림없는영혼",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/넘치는빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/찬연한빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/순교자의빛-183998",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/순교자의빛",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/티르의보호",
-        "08-직업별-Knowledge-Base/08-성기사/신성/Talents/티리온의헌신"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Synergies\\패시브-방어-과치유-보정.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-08-25"
       }
     },
     "paladin_retribution_templar_hammer_of_light": {
@@ -8605,7 +8325,8 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -8666,7 +8387,7 @@
       "id": "priest_discipline_evangelism_ramp",
       "name": "사도-속죄확장",
       "type": "synergy",
-      "synergyType": "raid_ramp",
+      "synergyType": "raid_preheal",
       "participants": [
         "472433",
         "81749",
@@ -8945,10 +8666,11 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/축도",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛의흔적",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/조화의목소리",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/나루의빛",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/신성한환영"
       ],
       "source": {
@@ -9012,7 +8734,8 @@
       "participants": [
         "585",
         "114255",
-        "2061"
+        "2061",
+        "596"
       ],
       "class": "Priest",
       "spec": "신성",
@@ -9021,14 +8744,14 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사"
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/축도"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\성스러운일격-빛의쇄도-공백관리.md",
@@ -9332,6 +9055,36 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\치유의기원-신성화-마법진.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_holy_serenity_benediction_lightweaver_prayer": {
+      "id": "priest_holy_serenity_benediction_lightweaver_prayer",
+      "name": "평온-축도-빛술사-치유의기원",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "Priest",
+      "spec": "Holy",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/축도",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/우주의파장",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/궁극의평온"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\평온-축도-빛술사-치유의기원.md",
         "lastUpdate": ""
       }
     },
@@ -10505,25 +10258,19 @@
         "lastUpdate": ""
       }
     },
-    "rogue_assassination_shiv_caustic_poison_window": {
-      "id": "rogue_assassination_shiv_caustic_poison_window",
+    "rogue_assassination_shiv_darkest_night_combo": {
+      "id": "rogue_assassination_shiv_darkest_night_combo",
       "name": "독칼-부식성분사-독창",
       "type": "synergy",
-      "synergyType": "poison_amp_window",
+      "synergyType": "combo_point_correction",
       "participants": [
         "5938",
-        "394983",
-        "319032",
-        "421975",
+        "1267182",
+        "457058",
         "32645",
+        "457052",
         "385627",
-        "381624",
-        "381664",
-        "381634",
-        "2823",
-        "455072",
-        "381801",
-        "381800"
+        "360194"
       ],
       "class": "Rogue",
       "spec": "암살",
@@ -10533,21 +10280,15 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼-185565",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼-185565"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독칼연마",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/증폭의독",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/흉악한맹독",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/신속한주입",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/초소형맹독의칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독연구",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독묻은스틸레토",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\독칼-부식성분사-독창.md",
@@ -10622,8 +10363,7 @@
         "381800",
         "381802",
         "381801",
-        "394983",
-        "319032"
+        "394983"
       ],
       "class": "Rogue",
       "spec": "암살",
@@ -10634,19 +10374,19 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/혈폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독칼연마",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/초소형맹독의칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무차별살육"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무차별살육",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\부식성분사-왕의파멸.md",
@@ -10681,7 +10421,9 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -10690,7 +10432,8 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/일급암살자",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\운명의손-독살.md",
@@ -10774,9 +10517,9 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -10802,7 +10545,7 @@
         "1943",
         "421975",
         "394983",
-        "319032",
+        "381623",
         "255989",
         "381630",
         "423136",
@@ -10823,14 +10566,15 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독칼연마",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/살상의의지",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/일급암살자",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독묻은스틸레토",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/갑작스러운최후",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/졸디크의비전",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/파멸칼날",
@@ -11473,7 +11217,9 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/용암채찍",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/파멸의바람"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/파멸의바람",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/세계의분리",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/태고의폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -11659,14 +11405,16 @@
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/낙뢰",
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/폭풍쇄도",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/바람의일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Talents/폭풍해방",
         "08-직업별-Knowledge-Base/11-주술사/고양/Talents/천둥축전기",
         "08-직업별-Knowledge-Base/11-주술사/고양/Talents/과충전",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/벼락"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/벼락",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/승천"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\폭풍-폭풍인도자.md",
@@ -12526,43 +12274,29 @@
       "synergyType": "hero_talent_farseer",
       "participants": [
         "443450",
-        "443423",
-        "443444",
         "443454",
-        "443447",
-        "443425",
-        "443442",
-        "443449",
-        "443451",
-        "443446",
-        "443448",
-        "443418",
-        "1270447",
-        "1270450",
-        "1270446",
-        "1269364",
         "51505",
         "188443",
-        "61882",
-        "8042",
-        "117014",
         "188389",
-        "16166",
-        "462840"
+        "191861",
+        "191634",
+        "114050",
+        "1296626"
       ],
       "class": "Shaman",
       "spec": "정기",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/용암폭발",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/지진"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/선견자의길"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/소용돌이의힘"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Synergies\\선조의부름-용암폭발.md",
@@ -12808,33 +12542,13 @@
       "id": "shaman_elemental_stormbringer_tempest_loop",
       "name": "폭풍-폭풍인도자",
       "type": "synergy",
-      "synergyType": "hero_talent_stormbringer",
+      "synergyType": "hero_talent_stormbringer_alternative",
       "participants": [
         "454009",
-        "454021",
-        "455088",
-        "455096",
-        "455097",
         "455110",
-        "455123",
-        "454026",
-        "454027",
-        "454029",
-        "454391",
-        "454919",
-        "455590",
-        "467778",
         "191634",
         "188196",
         "188443",
-        "210689",
-        "468571",
-        "191717",
-        "462862",
-        "468625",
-        "1258889",
-        "1269215",
-        "381936",
         "8042",
         "117014",
         "61882"
@@ -12843,22 +12557,15 @@
       "spec": "정기",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/대지충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/정기작렬",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/지진"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/지진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/피뢰침",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/폭풍의전령",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/폭풍의조력",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/번개축전기"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Synergies\\폭풍-폭풍인도자.md",
         "lastUpdate": ""
@@ -12872,56 +12579,29 @@
       "participants": [
         "191634",
         "114050",
+        "443454",
+        "51505",
         "188196",
         "188443",
-        "192249",
-        "198067",
-        "117013",
-        "462867",
-        "462866",
-        "462440",
-        "462443",
-        "462695",
-        "381936",
-        "462862",
-        "462757",
-        "468625",
-        "1258889",
-        "468571",
-        "191717",
-        "381708",
-        "210689",
-        "1269360",
-        "1269215",
-        "8042",
         "117014",
-        "51505"
+        "8042",
+        "61882",
+        "1296626"
       ],
       "class": "Shaman",
       "spec": "정기",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/승천",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/용암폭발",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍의정령",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/불의정령"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/정기작렬"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원시의정령술사",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/영속의정기",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/최초의승천자",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/출중한역량",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의단결",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/폭풍광기",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/번개의섬광",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/번개축전기"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/시즌2-4세트"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Synergies\\폭풍수호자-승천.md",
@@ -13162,7 +12842,7 @@
     },
     "warlock-affliction-darkglare-malefic-grasp": {
       "id": "warlock-affliction-darkglare-malefic-grasp",
-      "name": "암흑시선 소환-재앙의 손아귀-강화 창",
+      "name": "암흑시선 소환-재앙의 손아귀-강화 구간",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
@@ -14054,7 +13734,7 @@
       ],
       "class": "Warlock",
       "spec": "Destruction",
-      "heroTalent": "Hellcaller",
+      "heroTalent": "지옥소환사",
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
@@ -14066,7 +13746,7 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\쇠퇴-적개심-혼돈의-화살.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-04"
       }
     },
     "warlock-destruction-diabolist-ritual-ruination": {
@@ -14082,7 +13762,7 @@
       ],
       "class": "Warlock",
       "spec": "Destruction",
-      "heroTalent": "Diabolist",
+      "heroTalent": "악마학자",
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
@@ -14093,7 +13773,7 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\악마의-의식-황폐-혼돈의-화살.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-04"
       }
     },
     "warlock-destruction-conflagrate-backdraft-chaos-bolt": {
@@ -14177,7 +13857,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\지옥불정령-소환-몰아치는-혼돈-불의-비.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": "2026-06-04"
       }
     },
     "warrior_common_colossus_demolish_dominance": {
@@ -14219,7 +13899,8 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기"
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -15046,7 +14727,7 @@
       "id": "SY-WARRIOR-PROTECTION-SHIELD-CHARGE-SLAM-REVENGE",
       "name": "방패-돌격-방패-밀쳐내기-복수",
       "type": "synergy",
-      "synergyType": "damage-rage-window",
+      "synergyType": "damage-rage-sequence",
       "participants": [
         "385952",
         "23922",
@@ -15060,6 +14741,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/참전",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기-231847"
@@ -15138,7 +14820,8 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격"
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -15229,7 +14912,7 @@
       "id": "SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE",
       "name": "쇄파-거신의-지배-복수",
       "type": "synergy",
-      "synergyType": "colossus-damage-window",
+      "synergyType": "colossus-damage-sequence",
       "participants": [
         "436358",
         "429636",
@@ -15241,6 +14924,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도"
@@ -15349,6 +15033,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격"
       ],
@@ -15382,6 +15067,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도"

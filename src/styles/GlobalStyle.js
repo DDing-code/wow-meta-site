@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
   * {
     margin: 0;
@@ -11,16 +11,20 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    color-scheme: dark;
   }
 
   body {
     font-family: ${props => props.theme.fonts.main};
-    background: #070a0d;
-    color: #f4efe5;
+    background: #090c0f;
+    color: #e7ebed;
     min-height: 100vh;
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   #root {
@@ -31,13 +35,15 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
-    transition: ${props => props.theme.transitions.fast};
+    transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease, transform 160ms ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: ${props => props.theme.fonts.heading};
     font-weight: 700;
     line-height: 1.2;
+    letter-spacing: 0;
+    text-wrap: balance;
   }
 
   h1 {
@@ -58,11 +64,25 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font-family: inherit;
     cursor: pointer;
-    transition: ${props => props.theme.transitions.default};
+    touch-action: manipulation;
+    transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease, transform 160ms ease;
   }
 
   input, textarea, select {
     font-family: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 3px;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   /* Custom Scrollbar */
@@ -197,6 +217,21 @@ export const GlobalStyle = createGlobalStyle`
 
   .float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 `;
 

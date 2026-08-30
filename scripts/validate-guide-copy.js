@@ -8,6 +8,7 @@ const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const MOCKUPS_PATH = path.join(SITE_ROOT, 'src', 'pages', 'MockupsPage.js');
+const KB_SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 
 const forbiddenTerms = [
   { term: '고가치', replacement: '강한/우선순위 높은' },
@@ -23,6 +24,7 @@ const forbiddenTerms = [
   { term: '\uacf5\uac1c \uc9c4\uc785 \uacbd\ub85c', replacement: '\uacf5\uac1c \uc548\ub0b4 \ub9c1\ud06c' },
   { term: '\ud234\ud301 API', replacement: '\ud55c\uad6d\uc5b4 \uacf5\uc2dd \ud234\ud301' },
   { term: 'API(locale=1)', replacement: '\ud55c\uad6d\uc5b4 \uacf5\uc2dd \ud234\ud301' },
+  { term: '\uc804\uc0ac\uc758 \uc77c\uaca9', pattern: /(?<!\uc131)\uc804\uc0ac\uc758 \uc77c\uaca9/g, replacement: '\ud544\uc0ac\uc758 \uc77c\uaca9' },
   { term: '\uba54\ucee4\ub2c8\uc998', replacement: '\uc791\ub3d9 \ubc29\uc2dd' },
   { term: '\uc791\uc131 \uc644\ub8cc', replacement: '\ud604\uc7ac \ud328\uce58 \uacf5\ub7b5 \uc0c1\ud0dc' },
   { term: '\ucd08\uc548', replacement: '\uc0ac\uc6a9\uc790 \ud45c\uc2dc\uc5d0\uc11c \uc81c\uac70' },
@@ -104,6 +106,10 @@ const forbiddenTerms = [
   { term: '\uc624\ud504\ub2dd \ub51c\uc0ac\uc774\ud074', replacement: '\uc624\ud504\ub2dd \uc804\ud22c \ud750\ub984' },
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
+  { term: '\ud504\ub85d', replacement: '\ubc1c\ub3d9' },
+  { term: '\uc2e0\ud654+', replacement: '\uc3d0\uae30' },
+  { term: '\ud37c\ub110', replacement: '\uae54\ub54c\uae30 \ub51c' },
+  { term: '\uba54\ud0c0 \ud2b9\uc131', replacement: '\ud604\uc7ac \ucd94\ucc9c \ube4c\ub4dc/\ud2b9\uc131' },
   { term: '\uc708\ub3c4\uc6b0', replacement: '\uad6c\uac04' },
   { term: '\ud0c0\uac9f', replacement: '\ub300\uc0c1' },
   { term: '\ud0c0\uae43', replacement: '\ub300\uc0c1' },
@@ -179,6 +185,10 @@ const pageForbiddenTerms = [
   { term: '\uc624\ud504\ub108', replacement: '\uc624\ud504\ub2dd' },
   { term: '\ub85c\ud14c\uc774\uc158', replacement: '\ub51c\uc0ac\uc774\ud074' },
   { term: '\ubc84\uc2a4\ud2b8', replacement: '\uadf9\ub51c' },
+  { term: '\ud504\ub85d', replacement: '\ubc1c\ub3d9' },
+  { term: '\uc2e0\ud654+', replacement: '\uc3d0\uae30' },
+  { term: '\ud37c\ub110', replacement: '\uae54\ub54c\uae30 \ub51c' },
+  { term: '\uba54\ud0c0 \ud2b9\uc131', replacement: '\ud604\uc7ac \ucd94\ucc9c \ube4c\ub4dc/\ud2b9\uc131' },
   { term: '\ud0c0\uac9f', replacement: '\ub300\uc0c1' },
   { term: '\ud0c0\uae43', replacement: '\ub300\uc0c1' },
   { term: '\ud2b8\ub9ac\uc544\uc9c0', replacement: '\uae09\ub77d \ub300\uc751/\ub300\uc0c1 \ubcf5\uad6c' },
@@ -260,6 +270,19 @@ function collectForbiddenTermErrors(filePath, terms) {
     if (line.includes('.replace(/')) return;
 
     for (const item of terms) {
+      if (item.pattern) {
+        item.pattern.lastIndex = 0;
+        if (!item.pattern.test(line)) continue;
+
+        errors.push({
+          filePath,
+          line: lineIndex + 1,
+          term: item.term,
+          replacement: item.replacement,
+        });
+        continue;
+      }
+
       let index = line.indexOf(item.term);
       while (index !== -1) {
         errors.push({
@@ -318,6 +341,73 @@ function collectStandaloneWindowTermErrors(filePath) {
   return errors;
 }
 
+function collectDisciplineRaptureSkillErrors() {
+  if (!fs.existsSync(KB_SKILLS_PATH)) return [];
+
+  const data = JSON.parse(fs.readFileSync(KB_SKILLS_PATH, 'utf8'));
+  const skills = Object.values(data.skills || {});
+  const errors = [];
+  const standaloneRaptureName = '\uD658\uD76C';
+
+  skills.forEach(skill => {
+    const specs = Array.isArray(skill.specs) ? skill.specs : [];
+    const isDisciplinePriest =
+      skill.class === 'Priest' &&
+      (skill.spec === '\uC218\uC591' || specs.includes('Discipline') || specs.includes('\uC218\uC591'));
+    if (!isDisciplinePriest) return;
+
+    const names = [skill.name, skill.koreanName, skill.englishName].filter(Boolean);
+    const isLegacyRapture =
+      String(skill.id) === '47536' ||
+      names.includes(standaloneRaptureName) ||
+      names.includes('Rapture');
+
+    if (!isLegacyRapture) return;
+
+    errors.push({
+      filePath: KB_SKILLS_PATH,
+      line: 1,
+      term: `${skill.id || 'unknown'}:${names.join('/')}`,
+      replacement: '\uC218\uC591 \uD604\uC7AC \uC9C1\uC811 \uC0AC\uC6A9 \uC2A4\uD0AC\uC774 \uC544\uB2C8\uBBC0\uB85C \uC81C\uAC70',
+    });
+  });
+
+  return errors;
+}
+
+function collectDisciplineStandaloneRaptureCopyErrors() {
+  const text = fs.readFileSync(MANUSCRIPT_PATH, 'utf8');
+  const startMarker = "'priest-discipline':";
+  const endMarker = "\n  'priest-holy':";
+  const start = text.indexOf(startMarker);
+  if (start === -1) return [];
+
+  const end = text.indexOf(endMarker, start);
+  const scopedText = text.slice(start, end === -1 ? undefined : end);
+  const baseLine = text.slice(0, start).split(/\r?\n/).length;
+  const errors = [];
+  const standaloneRaptureTerm = /(^|[^\uAC00-\uD7A3])\uD658\uD76C(?![\uAC00-\uD7A3])/;
+  const allowedCurrentTerms = [
+    '\uC5B4\uB460\uC758 \uD658\uD76C',
+    '\uC545\uC758\uC758 \uD658\uD76C',
+    '\uD658\uD76C\uC5D0 \uCC2C',
+  ];
+
+  scopedText.split(/\r?\n/).forEach((line, index) => {
+    const normalized = allowedCurrentTerms.reduce((value, term) => value.replaceAll(term, ''), line);
+    if (!standaloneRaptureTerm.test(normalized)) return;
+
+    errors.push({
+      filePath: MANUSCRIPT_PATH,
+      line: baseLine + index,
+      term: '\uD658\uD76C',
+      replacement: '\uC218\uC591 \uD604\uC7AC \uAC00\uC774\uB4DC\uC5D0\uC11C \uB2E8\uB3C5 \uBC84\uD2BC\uC73C\uB85C \uB178\uCD9C \uAE08\uC9C0',
+    });
+  });
+
+  return errors;
+}
+
 function main() {
   const errors = [
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
@@ -327,6 +417,8 @@ function main() {
     ...collectForbiddenTermErrors(MOCKUPS_PATH, forbiddenTerms.slice(0, 3)),
     ...collectStandaloneWindowTermErrors(MANUSCRIPT_PATH),
     ...collectAwkwardContextErrors(GUIDE_DETAIL_PATH, awkwardContextPatterns),
+    ...collectDisciplineRaptureSkillErrors(),
+    ...collectDisciplineStandaloneRaptureCopyErrors(),
   ];
 
   if (errors.length) {

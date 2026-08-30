@@ -1,41 +1,26 @@
 # WoW Meta Site
 
-**월드 오브 워크래프트 메타 정보 사이트**
+12.0.5 Knowledge Base를 기준으로 직업 가이드와 스펠 데이터베이스를 다시 만드는 React 사이트입니다.
 
-## 🌐 배포 정보
+## 구조
 
-- **공식 도메인**: https://wowmeta.xyz
-- **자동 배포**: GitHub → Netlify
-- **호스팅**: Netlify
+- `src/App.js`: 라우트 셸
+- `src/pages/GuidePage.js`: 직업/전문화 가이드 인덱스
+- `src/pages/WoWSpellDatabasePage.js`: KB 기반 스펠 DB
+- `src/data/kb-skills.json`: KB 빌드 산출물
+- `src/data/kb-synergies.json`: KB 시너지 산출물
+- `scripts/sync-kb.js`: 루트 KB 빌더 래퍼
 
-## 📋 포함된 가이드
-
-- 고통 흑마법사 (Affliction Warlock)
-- 악마 흑마법사 (Demonology Warlock)
-- 야수 사냥꾼 (Beast Mastery Hunter)
-- 황폐 기원사 (Devastation Evoker)
-- 정기 주술사 (Elemental Shaman)
-
-## 🚀 개발
+## 명령어
 
 ```bash
-npm install
-npm start
+npm run dev
+npm run build
+npm run validate
 ```
 
-## 📦 배포
+## 기준
 
-코드 변경 후:
-```bash
-git add .
-git commit -m "변경 내용"
-git push
-```
-
-→ 2~3분 후 wowmeta.xyz에 자동 반영!
-
-## 📊 데이터베이스
-
-- TWW 시즌 3 기준
-- 1,180개 스킬 데이터
-- 99개 강화 스킬
+- KB 마스터: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base`
+- 현재 패치: `12.0.5`
+- 구버전 가이드 구현, 실험용 크롤러, 임시 데이터 파일은 제거했습니다.

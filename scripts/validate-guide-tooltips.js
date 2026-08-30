@@ -82,6 +82,10 @@ function collectSkillRefs(value, trail = '', refs = []) {
 
   Object.entries(value).forEach(([key, item]) => {
     const nextTrail = trail ? `${trail}.${key}` : key;
+    if (key === 'skillIds' && Array.isArray(item)) {
+      item.forEach((skillId, index) => refs.push({ path: `${nextTrail}[${index}]`, id: String(skillId || '') }));
+      return;
+    }
     if (/^(skillId|graphCenterSkillId)$/.test(key) || /SkillId$/.test(key)) {
       refs.push({ path: nextTrail, id: String(item || '') });
       return;
@@ -100,13 +104,19 @@ function resolveSkill(id, kbSkills, extraSkills) {
   return extraSkills.get(String(id)) || kbSkills[String(id)] || null;
 }
 
+function isInactiveGuideSkill(skill) {
+  return /legacy|removed|deprecated/i.test(String(skill?.type || ''));
+}
+
 function validateRendererSource(source) {
   assert(source.includes('function SkillIconLink'), 'SkillIconLink renderer is missing');
   assert(source.includes('function InlineSkillTerm'), 'InlineSkillTerm renderer is missing');
+  assert(source.includes('function SkillIconImage'), 'SkillIconImage fallback renderer is missing');
+  assert(source.includes('onError={() => setFailed(true)}'), 'skill icon images must fall back when the CDN image fails');
   assert(source.includes('data-wowhead={`spell=${skill.id}&domain=ko`}'), 'guide skill links must attach Korean Wowhead tooltip data');
   assert(source.includes('href={wowheadUrl(skill)}'), 'guide skill links must use ko Wowhead URLs');
-  assert(source.includes('<img src={getIconUrl(skill)}'), 'SkillIconLink must render spell icons');
-  assert(source.includes('<img src={iconUrl}'), 'InlineSkillTerm must render spell icons');
+  assert(source.includes('<SkillIconImage skill={skill} size={size}'), 'SkillIconLink must render spell icons through the fallback image component');
+  assert(source.includes('<SkillIconImage skill={skill} inline'), 'Inline skill renderers must use the fallback image component');
   assert(source.includes('<InlineSkillText>{children}</InlineSkillText>'), 'InlineSkillTerm must keep icon plus visible text');
   assert(source.includes('<InlineSkillTerm'), 'renderGuideText must replace skill names with InlineSkillTerm');
   assert(source.includes('...(manuscript?.extraSkills || [])'), 'inline term builder must include manuscript extraSkills');
@@ -148,6 +158,7 @@ function validateReferencedSkills(spec, manuscript, kbSkills) {
     assert(skillName(skill), `${prefix}: skill id ${id} has no Korean/name label`);
     assert(hasIcon(skill), `${prefix}: skill id ${id} has no icon data`);
     assert(skillMatchesGuide(skill, spec), `${prefix}: skill id ${id} scope ${skillScopeText(skill)} does not match ${spec.kbClass}/${spec.kbSpecAliases.join('|')}`);
+    assert(!isInactiveGuideSkill(skill), `${prefix}: inactive/removed skill id ${id} (${skillName(skill) || 'unknown'}) cannot be referenced as a current guide tooltip`);
   });
 }
 

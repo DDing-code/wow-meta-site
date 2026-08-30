@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import {
@@ -30,6 +30,8 @@ const manualSkills = Object.values(guideManuscripts).flatMap(manuscript => manus
 const manualSkillById = new Map(manualSkills.map(skill => [String(skill.id), skill]));
 const commonSpecs = new Set(['공용', 'Common']);
 const OPENER_FLOW_MAX_STEPS = 12;
+const TIP_PREVIEW_LIMIT = 4;
+const HERO_BRANCH_DETAIL_LABELS = ['공통과 달라지는 첫 흐름', '선택 기준/콘텐츠', '분기별 주의점', '로그 검수 지표'];
 
 const roleProfiles = {
   tanks: {
@@ -185,7 +187,7 @@ function displayGuideText(value) {
     .replace(/대상망이/g, '대상 준비가')
     .replace(/대상망과/g, '대상 준비와')
     .replace(/대상망/g, '대상 준비')
-    .replace(/회로/g, '흐름')
+    .replace(/(^|[^0-9])회로/g, '$1흐름')
     .replace(/\(KST\)/g, '(한국 시간)')
     .replace(/\bKST\b/g, '한국 시간')
     .replace(/Archon ([0-9]{4}-[0-9]{2}-[0-9]{2})\(한국 시간\) 확인 기준/g, 'Archon $1(한국 시간) 확인 시점')
@@ -261,7 +263,6 @@ function displayGuideText(value) {
     .replace(/분기로/g, '선택지로')
     .replace(/분기와/g, '선택지와')
     .replace(/분기다/g, '선택지다')
-    .replace(/순수 단일/g, '단일 전투')
     .replace(/채널 축/g, '채널 기술')
     .replace(/생성 축/g, '생성 흐름')
     .replace(/피해 축/g, '피해 흐름')
@@ -517,16 +518,68 @@ function wowheadUrl(skill) {
   return `https://ko.wowhead.com/spell=${skill.id}`;
 }
 
+function SkillIconImage({ skill, size = 36, inline = false }) {
+  const [failed, setFailed] = useState(false);
+  const iconUrl = getIconUrl(skill);
+
+  if (!iconUrl || failed) {
+    return inline
+      ? <InlineSkillIconFallback aria-hidden="true" />
+      : <IconPlaceholder $size={size} aria-hidden="true" />;
+  }
+
+  return (
+    <img
+      src={iconUrl}
+      alt=""
+      width={inline ? 18 : size}
+      height={inline ? 18 : size}
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
+function isInactiveSkillReference(skill) {
+  return /legacy|removed|deprecated/i.test(cleanText(skill?.type));
+}
+
+function collectManuscriptSkillIds(value, ids = new Set()) {
+  if (!value) return ids;
+
+  if (Array.isArray(value)) {
+    value.forEach(item => collectManuscriptSkillIds(item, ids));
+    return ids;
+  }
+
+  if (typeof value !== 'object') return ids;
+
+  Object.entries(value).forEach(([key, entry]) => {
+    if ((key === 'skillId' || key === 'graphCenterSkillId') && entry) {
+      ids.add(String(entry));
+      return;
+    }
+    collectManuscriptSkillIds(entry, ids);
+  });
+
+  return ids;
+}
+
 function buildInlineTerms(data, manuscript) {
   const seen = new Set();
+  const preferredSkillIds = collectManuscriptSkillIds(manuscript);
   const records = [
+    ...(manuscript?.extraSkills || []),
     ...(data?.specSkills || []),
     ...(data?.commonSkills || []),
-    ...(data?.classSkills || []),
-    ...(manuscript?.extraSkills || []),
-  ];
+  ].sort((a, b) => {
+    const aPreferred = preferredSkillIds.has(String(a?.id)) ? 0 : 1;
+    const bPreferred = preferredSkillIds.has(String(b?.id)) ? 0 : 1;
+    return aPreferred - bPreferred;
+  });
 
   return records
+    .filter(skill => !isInactiveSkillReference(skill))
     .flatMap(skill => {
       const labels = [skillName(skill), skill?.koreanName, skill?.name, skill?.englishName, ...(skill?.aliases || [])]
         .map(cleanText)
@@ -650,6 +703,8 @@ function scoreSkill(skill, guide) {
 function recordMatchesGuide(record, guide, includeCommon = true) {
   if (!record || record.class !== guide.kbClass) return false;
   const listedSpecs = Array.isArray(record.specs) ? record.specs.map(spec => String(spec)) : [];
+  const hasSpecificSpecScope = listedSpecs.length > 0 && !listedSpecs.some(spec => commonSpecs.has(spec));
+  if (hasSpecificSpecScope && !listedSpecs.some(spec => guide.kbSpecAliases.includes(spec))) return false;
   if (listedSpecs.some(spec => guide.kbSpecAliases.includes(spec))) return true;
   if (includeCommon && commonSpecs.has(record.spec)) return true;
   return guide.kbSpecAliases.includes(record.spec);
@@ -1107,7 +1162,7 @@ function buildGuideData(guide) {
     skill => `${skill.id}:${skill.spec}`
   );
   const commonSkills = uniqueBy(
-    allSkills.filter(skill => skill.class === guide.kbClass && commonSpecs.has(skill.spec)),
+    allSkills.filter(skill => commonSpecs.has(skill.spec) && recordMatchesGuide(skill, guide, true)),
     skill => `${skill.id}:${skill.spec}`
   );
   const classSkills = uniqueBy(
@@ -1200,14 +1255,12 @@ function SkillIconLink({ skill, size = 36, stacked = false }) {
       $stacked={stacked}
       aria-label={`${skillName(skill)} Wowhead 열기`}
     >
-      <img src={getIconUrl(skill)} alt="" loading="lazy" />
+      <SkillIconImage skill={skill} size={size} />
     </IconAnchor>
   );
 }
 
 function InlineSkillTerm({ skill, children }) {
-  const iconUrl = getIconUrl(skill);
-
   return (
     <InlineSkillAnchor
       href={wowheadUrl(skill)}
@@ -1216,7 +1269,7 @@ function InlineSkillTerm({ skill, children }) {
       rel="noreferrer"
       aria-label={`${skillName(skill)} Wowhead tooltip`}
     >
-      {iconUrl ? <img src={iconUrl} alt="" loading="lazy" /> : <InlineSkillIconFallback aria-hidden="true" />}
+      <SkillIconImage skill={skill} inline />
       <InlineSkillText>{children}</InlineSkillText>
     </InlineSkillAnchor>
   );
@@ -1226,6 +1279,12 @@ function skillFromManualStep(step) {
   if (!step?.skillId) return step?.skill || null;
   const skillId = String(step.skillId);
   return manualSkillById.get(skillId) || skillById.get(skillId) || step.skill || null;
+}
+
+function skillFromBranchId(skillId) {
+  if (!skillId) return null;
+  const id = String(skillId);
+  return manualSkillById.get(id) || skillById.get(id) || null;
 }
 
 function isMetaChartBlock(block) {
@@ -1256,6 +1315,11 @@ function isOpenerNarrativeBlock(block, guide) {
   return /(오프닝|전투\s*시작|첫\s*버튼|첫\s*풀|첫\s*피해)/.test(sample) && /(흐름|순서|딜사이클|타임라인)/.test(sample);
 }
 
+function isPracticalTipBlock(block) {
+  const title = displayGuideText(block?.title || '');
+  return /실전\s*꿀팁|핵심\s*꿀팁|쐐기\s*실전\s*꿀팁/.test(title);
+}
+
 const SPECIALIST_CHARTS = {
   'warlock-affliction': {
     id: 'uptime',
@@ -1273,12 +1337,12 @@ const SPECIALIST_CHARTS = {
     id: 'uptime',
     title: '소환수 수명과 폭군 준비',
     sectionHeading: '악마 폭군 전 소환수 쌓기',
-    sectionIntro: '악마 흑마법사는 영혼의 조각을 소환수 수명으로 바꾼 뒤 악마 폭군 소환으로 그 수명을 묶습니다. 차트는 폭군 전에 어떤 소환수가 살아 있어야 하는지 보여 줍니다.',
+    sectionIntro: '악마 흑마법사는 영혼의 조각이라는 자원을 소환수 수명으로 바꾼 뒤 악마 폭군 소환 극딜 구간에 묶습니다. 차트는 폭군 전에 어떤 소환수가 살아 있어야 하는지, 조각 소비와 발동 회수가 어디서 맞물리는지 보여 줍니다.',
     caption: '굴단의 손, 공포사냥개 부르기, 악마의 핵, 흑마법서 계열, 악마 폭군 소환, 파열이 어느 순서로 겹쳐야 하는지 확인하는 흐름입니다.',
     definition: [
-      ['의미', '악마 폭군은 누르는 순간보다 직전 소환수 수명과 조각 준비 상태가 더 중요합니다.'],
-      ['읽는 법', '폭군 전에는 조각을 소환수로 바꾸고, 폭군 중에는 악마의 핵과 파열로 남은 조각과 발동을 회수합니다.'],
-      ['체크 포인트', '공포사냥개 지연, 조각 과충전, 폭군 전에 소환수 부족, 악마의 핵 과충전, 파열이 낮은 소환수 수에 들어간 상황을 봅니다.'],
+      ['의미', '악마 폭군은 누르는 순간보다 직전 소환수 수명, 조각 자원 준비, 극딜 구간으로 들어가는 순서가 더 중요합니다.'],
+      ['읽는 법', '폭군 전에는 조각을 소환수로 바꾸고, 폭군 중에는 악마의 핵과 파열로 남은 조각과 발동을 회수합니다. 쿨기 정렬이 밀리면 다음 폭군 구간의 소환수 사용 횟수와 구간 완성도도 같이 떨어집니다.'],
+      ['체크 포인트', '공포사냥개 지연, 조각 과충전, 폭군 전에 소환수 부족, 악마의 핵 과충전, 파열이 낮은 소환수 수에 들어간 상황, 단일/광역 전환 시 조각 소비 위치를 봅니다.'],
     ],
   },
   'warlock-destruction': {
@@ -1304,6 +1368,17 @@ const SPECIALIST_CHARTS = {
       ['읽는 법', '시간차가 높아지는 구간에서는 정화주를 먼저 보고, 다음 큰 피해가 보이면 천신주나 강화주 같은 생존기를 미리 배정합니다.'],
       ['체크 포인트', '높은 시간차 방치, 정화주 공백, 천신주 지연, 맥주통 휘두르기 지연, 큰 피해 전에 생존기 없이 진입한 상황을 봅니다.'],
     ],
+    events: [
+      { phase: '평상시', skillId: '121253', action: '회전 엔진', note: '맥주통 휘두르기로 위협, 기력 소비, 맥주 충전 흐름을 동시에 열어 둡니다.' },
+      { phase: '후려차기 기준점', skillId: '205523', action: '3글쿨 리듬', note: '후려차기 사이에 세 행동을 넣는 기준입니다. 밀리면 방어 회전도 같이 늦어집니다.' },
+      { phase: '초록 시간차', skillId: '100780', action: '아낌', note: '상위 기술이 비면 범의 장풍으로 보정하되, 정화주는 낮은 시간차에 낭비하지 않습니다.' },
+      { phase: '노랑/빨강 시간차', skillId: '119582', action: '정리', note: '큰 타격 직후 미래 피해가 커졌고 다음 피해가 이어질 때 정화주 가치가 가장 큽니다.' },
+      { phase: '다음 큰 타격 전', skillId: '322507', action: '예약 방패', note: '천신주는 이미 쌓인 피해를 지우는 버튼이 아니라 다음 피해를 받아내는 방패입니다.' },
+      { phase: '긴 압박/큰 풀', skillId: '132578', action: '분산', note: '흑우 니우짜오의 원령은 빈 구간보다 탱커 피해가 이어지는 15~20초 구간에 맞춥니다.' },
+      { phase: '예상 밖 급락', skillId: '115203', action: '비상층', note: '강화주는 정화주와 천신주만으로 부족한 급락 또는 장기 압박에 따로 배정합니다.' },
+      { phase: '광역 접촉', skillId: '116847', action: '선택 보강', note: '비취 돌풍을 선택했다면 폭발하는 맥주통과 큰 풀 접촉을 안정화하는 보조 축으로 봅니다.' },
+      { phase: '쐐기 제어', skillId: '119381', action: '피해 차단', note: '팽이 차기는 시간차가 쌓인 뒤가 아니라 위험 기술이 들어오기 전 피해 자체를 줄이는 버튼입니다.' },
+    ],
   },
   'monk-windwalker': {
     id: 'uptime',
@@ -1319,14 +1394,14 @@ const SPECIALIST_CHARTS = {
   },
   'monk-mistweaver': {
     id: 'uptime',
-    title: '소생의 안개와 피해 회수',
-    sectionHeading: '피해 전 준비와 생기 충전',
-    sectionIntro: '운무 수도사는 피해가 들어온 뒤 큰 주문만 찾는 힐러가 아니라, 소생의 안개를 미리 퍼뜨리고 피해 직후 생기 충전과 주요 쿨기로 회수하는 힐러입니다.',
-    caption: '소생의 안개 대상 수, 생기 충전 회수, 마나 차, 재활, 기의 고치, 근접 치유 구간을 한 흐름에 묶은 확인표입니다.',
+    title: '12.1 질풍차기와 천신합일 회전',
+    sectionHeading: '평소 치유와 큰 피해 구간을 나누기',
+    sectionIntro: '평소에는 소생의 안개, 질풍차기, 생기 충전을 굴리고, 큰 피해에는 천신합일·위론·재활 중 하나를 배정합니다. 천신합일 뒤 8초는 옥룡의 마음이 돌려주는 짧은 쿨다운을 따로 확인합니다.',
+    caption: '시즌 2 질풍차기 무료 발동, 소생의 안개 대상 수, 옥룡의 마음 8초, 기의 고치와 마나 차, 위론·재활 분리 배정을 함께 보는 확인표입니다.',
     definition: [
-      ['의미', '소생의 안개는 생기 충전이 여러 대상에게 닿게 만드는 준비이고, 생기 충전은 피해 직후 그 준비를 회수하는 핵심 주문입니다.'],
-      ['읽는 법', '피해 전에 소생의 안개와 마나 차를 준비하고, 피해 직후 생기 충전 또는 재활을 배정합니다. 단일 위험은 기의 고치로 분리합니다.'],
-      ['체크 포인트', '소생의 안개 대상 부족, 생기 충전 과소비, 마나 차 지연, 재활/천신합일 중복, 기의 고치가 늦은 상황을 봅니다.'],
+      ['의미', '질풍차기는 시즌 2 세트와 평소 치유의 기준 버튼이고, 천신합일 종료 뒤 옥룡의 마음 8초에는 질풍차기·소생의 안개·집중의 천둥 차·기의 고치가 더 빨리 돌아옵니다.'],
+      ['읽는 법', '피해 전에는 소생의 안개와 질풍차기를 굴립니다. 실제 피해에 천신합일을 맞춘 뒤 빨라진 짧은 쿨다운을 소비하고, 다음 피해에는 위론 또는 재활을 남깁니다.'],
+      ['체크 포인트', '시즌 2 무료 질풍차기 누락, 천신합일 과치유, 옥룡의 마음 중 짧은 쿨다운 방치, 기의 고치 과소 사용, 위론·재활 중복을 봅니다.'],
     ],
   },
   'warrior-protection': {
@@ -1343,14 +1418,14 @@ const SPECIALIST_CHARTS = {
   },
   'warrior-arms': {
     id: 'cooldown',
-    title: '전사의 일격과 극딜 정렬',
-    sectionHeading: '전사의 일격 중심 구간',
-    sectionIntro: '무기 전사는 전사의 일격을 중심으로 거인의 강타 또는 투신 구간, 제압 충전, 마무리 일격 발동을 맞추는 전문화입니다.',
-    caption: '전사의 일격 주기, 거인의 강타/투신, 제압 충전, 마무리 일격, 칼날폭풍 또는 전파를 같은 구간에서 확인합니다.',
+    title: '필사의 일격과 극딜 정렬',
+    sectionHeading: '필사의 일격 중심 구간',
+    sectionIntro: '무기 전사는 필사의 일격을 중심으로 거인의 강타 또는 투신 구간, 제압 충전, 마무리 일격 발동을 맞추는 전문화입니다.',
+    caption: '필사의 일격 주기, 거인의 강타/투신, 제압 충전, 마무리 일격, 칼날폭풍 또는 전쟁파괴자를 같은 구간에서 확인합니다.',
     definition: [
-      ['의미', '전사의 일격은 중심 공격이고, 큰 쿨기 구간은 그 공격과 강한 소비기를 몰아넣는 시간입니다.'],
-      ['읽는 법', '전사의 일격 지연을 먼저 보고, 그 주변에 제압 충전과 마무리 일격 발동, 광역 쿨기가 들어갔는지 확인합니다.'],
-      ['체크 포인트', '전사의 일격 지연, 제압 2충전 방치, 거인의 강타 중 약한 소비, 마무리 일격 발동 낭비, 광역 쿨기 위치 손실을 봅니다.'],
+      ['의미', '필사의 일격은 중심 공격이고, 큰 쿨기 구간은 그 공격과 강한 소비기를 몰아넣는 시간입니다.'],
+      ['읽는 법', '필사의 일격 지연을 먼저 보고, 그 주변에 제압 충전과 마무리 일격 발동, 광역 쿨기가 들어갔는지 확인합니다.'],
+      ['체크 포인트', '필사의 일격 지연, 제압 2충전 방치, 거인의 강타 중 약한 소비, 마무리 일격 발동 낭비, 광역 쿨기 위치 손실을 봅니다.'],
     ],
   },
   'warrior-fury': {
@@ -1403,36 +1478,36 @@ const SPECIALIST_CHARTS = {
   },
   'shaman-elemental': {
     id: 'resource',
-    title: '소용돌이와 폭풍수호자',
-    sectionHeading: '강화 주문 소비 흐름',
-    sectionIntro: '정기 주술사는 화염 충격과 용암 폭발을 기반으로 소용돌이를 만들고, 폭풍수호자와 승천 구간에서 강화 주문을 소비합니다.',
-    caption: '화염 충격, 용암 폭발, 대지 충격/정기 작렬, 폭풍수호자, 승천, 소용돌이 과충전을 함께 확인합니다.',
+    title: '선조 반응과 소용돌이 소비',
+    sectionHeading: '12.1 선견자 주문 흐름',
+    sectionIntro: '정기 주술사는 화염 충격과 용암 폭발을 바탕으로 소용돌이를 만들고, 폭풍수호자와 선조의 신속함이 부르는 선조에게 단일·광역 주문을 구분해 보여 줍니다.',
+    caption: '화염 충격, 용암 폭발, 선조의 부름, 폭풍수호자, 승천, 소용돌이 소비와 시즌 2 무료 소비기를 함께 확인합니다.',
     definition: [
-      ['의미', '소용돌이는 강한 소비기로 바뀌는 자원이고, 폭풍수호자는 다음 번개 계열 주문을 강화하는 준비 버튼입니다.'],
-      ['읽는 법', '화염 충격이 비지 않았는지 확인한 뒤 소용돌이가 넘치기 전에 소비하고, 폭풍수호자 강화 주문은 이동이나 대상 전환으로 잃지 않게 둡니다.'],
-      ['체크 포인트', '화염 충격 공백, 소용돌이 과충전, 폭풍수호자 강화 주문 지연, 승천 중 약한 소비, 광역 전환 누락을 봅니다.'],
+      ['의미', '선조는 실제 단일 주문에 용암 폭발로, 광역 주문에 연쇄 번개로 반응합니다. 소용돌이는 대지 충격·정기 작렬·지진으로 비웁니다.'],
+      ['읽는 법', '화염 충격과 용암 폭발을 먼저 확인하고, 선조가 남아 있는 동안 전투 대상 수에 맞는 주문을 시전한 뒤 소용돌이와 무료 소비기를 넘치기 전에 씁니다.'],
+      ['체크 포인트', '화염 충격 공백, 용암 폭발 충전 낭비, 선조 중 잘못된 단일·광역 주문, 소용돌이 과충전, 시즌 2 무료 소비기 손실을 봅니다.'],
     ],
   },
   'shaman-restoration': {
     id: 'cooldown',
-    title: '폭우와 공격대 피해 대응',
-    sectionHeading: '피해 파도별 쿨기 배정',
-    sectionIntro: '복원 주술사는 폭우 토템을 피해 전에 저장하고, 성난 해일과 연쇄 치유, 치유의 해일 토템, 정신의 고리 토템을 피해 파도별로 나눠 씁니다.',
-    caption: '성난 해일, 치유의 비, 폭우 토템, 연쇄 치유, 치유의 해일 토템, 정신의 고리 토템, 승천 배정을 한 타임라인으로 확인합니다.',
+    title: '토템 위치와 피해 파도 회수',
+    sectionHeading: '피해 파도별 회수와 쿨기 배정',
+    sectionIntro: '복원 주술사는 성난 해일 대상과 치유의 비/쇄도하는 토템 위치를 먼저 잡고, 마나를 과하게 태우지 않는 예열로 피해 파도를 받습니다. 폭우와 연쇄 치유로 짧은 피해를 회수한 뒤 치유의 해일 토템, 승천, 정신의 고리 토템을 서로 다른 피해 파도에 나눠 씁니다.',
+    caption: '성난 해일 대상, 치유의 비/쇄도하는 토템 위치, 치유의 토템 충전, 폭풍의 흐름 토템, 폭우, 연쇄 치유, 치유의 해일 토템, 정신의 고리 토템, 승천을 한 피해 타임라인에서 확인합니다.',
     definition: [
-      ['의미', '폭우 토템은 피해 뒤에 누르는 복구기가 아니라 피해 전에 저장을 시작해 터지는 순간을 맞추는 보험입니다.'],
-      ['읽는 법', '피해가 오기 전에 성난 해일과 폭우를 준비하고, 큰 피해는 해일 토템/고리/승천을 서로 다른 파도에 배정합니다.'],
-      ['체크 포인트', '폭우 늦은 설치, 성난 해일 대상 부족, 치유의 비 위치 손실, 큰 쿨기 중복, 정신의 고리 토템 지연을 봅니다.'],
+      ['의미', '폭우는 구버전 저장형 버튼이 아니라 치유의 비나 쇄도하는 토템 위치 위에서 예고 피해를 낮은 비용으로 회복하는 짧은 광역 구간입니다.'],
+      ['읽는 법', '피해가 오기 전에 성난 해일 대상과 지역 힐 위치를 준비하고, 마나가 무너지지 않는 선에서 폭우/연쇄 치유/폭풍의 흐름 토템으로 회수한 뒤 큰 피해는 해일 토템/고리/승천을 따로 배정합니다.'],
+      ['체크 포인트', '성난 해일 대상 부족, 치유의 비 위치 손실, 폭우와 실제 피해 불일치, 마나 과소비, 폭풍의 흐름 토템 충전 낭비, 큰 쿨기 중복을 봅니다.'],
     ],
   },
   'shaman-enhancement': {
     id: 'resource',
-    title: '소용돌이치는 무기와 폭딜',
+    title: '소용돌이치는 무기와 극딜',
     sectionHeading: '10중첩 소비와 큰 기술',
     sectionIntro: '고양 주술사는 근접 기술로 소용돌이치는 무기를 쌓고, 그 중첩을 번개 화살, 연쇄 번개, 정기 작렬 같은 강한 주문으로 바꿉니다.',
     caption: '소용돌이치는 무기, 폭풍의 일격, 용암 채찍, 야수 정령, 파멸의 바람, 승천, 광역 연쇄 번개 전환을 확인합니다.',
     definition: [
-      ['의미', '소용돌이치는 무기는 주문을 즉시 강하게 쓰기 위한 중첩이고, 폭딜 구간은 그 중첩을 큰 주문에 맞추는 시간입니다.'],
+      ['의미', '소용돌이치는 무기는 주문을 즉시 강하게 쓰기 위한 중첩이고, 극딜 구간은 그 중첩을 큰 주문에 맞추는 시간입니다.'],
       ['읽는 법', '중첩이 10에 가까워지면 소비를 먼저 보고, 야수 정령이나 승천 구간에는 강한 주문 소비가 밀리지 않게 둡니다.'],
       ['체크 포인트', '10중첩 방치, 폭풍의 일격 지연, 야수 정령 중 약한 소비, 광역에서 연쇄 번개 전환 누락을 봅니다.'],
     ],
@@ -1451,14 +1526,14 @@ const SPECIALIST_CHARTS = {
   },
   'paladin-holy': {
     id: 'cooldown',
-    title: '신성 충격과 봉화 회복',
-    sectionHeading: '신성한 힘과 봉화 대상',
-    sectionIntro: '신성 성기사는 신성 충격으로 신성한 힘과 빛 주입을 만들고, 봉화 대상에게 치유가 어떻게 전달되는지 확인해야 합니다.',
-    caption: '신성 충격, 빛 주입, 신성한 힘 소비, 영광의 서약, 여명의 빛, 오라 숙련, 티르의 해방과 응징의 격노를 묶습니다.',
+    title: '신성 충격과 12.1 봉화 회복',
+    sectionHeading: '생성, 9초 봉화, 큰 피해 준비',
+    sectionIntro: '신성 충격으로 신성한 힘과 빛 주입을 만들고, 단일 소비기를 기본으로 사용합니다. 쐐기에서는 고결의 봉화 9초, 공격대에서는 새벽빛과 큰 치유 기술이 실제 피해에 겹치는지 확인합니다.',
+    caption: '신성 충격, 빛 주입, 신성한 힘 소비, 고결의 봉화, 태양의 사자 새벽빛, 오라 숙련과 천상의 울림, 응징의 격노에 자동 발동하는 티르의 해방, 빛대장장이 무장을 함께 봅니다.',
     definition: [
-      ['의미', '신성 충격은 회복과 자원 생성의 시작점이고, 봉화는 그 치유가 탱커나 지정 대상에게 전달되는 구조입니다.'],
-      ['읽는 법', '신성 충격을 쉬게 두지 않고, 신성한 힘은 피해 유형에 따라 영광의 서약이나 여명의 빛으로 소비합니다.'],
-      ['체크 포인트', '신성 충격 지연, 봉화 대상 오류, 신성한 힘 과충전, 오라 숙련 중복, 티르의 해방 없는 큰 피해를 봅니다.'],
+      ['의미', '신성 충격은 회복과 자원 생성의 시작점이고, 봉화는 직접 치유를 지속 피해 대상 또는 9초 동안 파티에 전달하는 구조입니다.'],
+      ['읽는 법', '신성한 힘 5에서 생성기를 쓰지 않고, 한 명이 위험하면 영광의 서약이나 영원의 불꽃을 먼저 사용합니다. 여명의 빛은 여러 명이 비슷하게 다쳤을 때 선택합니다.'],
+      ['체크 포인트', '신성 충격 충전 방치, 신성한 힘 과잉, 빛 주입 미소비, 고결의 봉화 지연, 오라 숙련 전 자원 손실, 응징의 격노 뒤 직접 치유를 봅니다.'],
     ],
   },
   'paladin-retribution': {
@@ -1466,11 +1541,11 @@ const SPECIALIST_CHARTS = {
     title: '응징의 격노와 신성한 힘',
     sectionHeading: '극딜 안 신성한 힘 소비',
     sectionIntro: '징벌 성기사는 신성한 힘을 만들고 기사단의 선고나 천상의 폭풍으로 비우며, 응징의 격노와 파멸의 재 구간에 강한 소비기를 몰아넣습니다.',
-    caption: '심판, 파멸의 재, 응징의 격노, 신성한 힘 생성, 기사단의 선고, 천상의 폭풍, 집행 선고를 확인합니다.',
+    caption: '심판, 파멸의 재, 응징의 격노, 신성한 힘 생성, 기사단의 선고, 천상의 폭풍, 사형 선고를 확인합니다.',
     definition: [
       ['의미', '응징의 격노는 큰 피해 구간이고, 신성한 힘은 그 안에서 강한 마무리 기술로 바뀌는 자원입니다.'],
       ['읽는 법', '심판과 파멸의 재로 준비한 뒤 응징의 격노 안에 신성한 힘 소비기가 최대한 들어가는지 확인합니다.'],
-      ['체크 포인트', '신성한 힘 과충전, 응징의 격노 중 약한 글쿨, 집행 선고 지연, 광역에서 천상의 폭풍 전환 누락을 봅니다.'],
+      ['체크 포인트', '신성한 힘 과충전, 응징의 격노 중 약한 글쿨, 사형 선고 지연, 광역에서 천상의 폭풍 전환 누락을 봅니다.'],
     ],
   },
   'mage-frost': {
@@ -1547,14 +1622,14 @@ const SPECIALIST_CHARTS = {
   },
   'deathknight-unholy': {
     id: 'cooldown',
-    title: '상처와 소환수 극딜',
-    sectionHeading: '고름 상처와 어둠의 변신',
-    sectionIntro: '부정 죽음의 기사는 고름 상처를 만들고 터뜨리며, 어둠의 변신, 대재앙, 사자의 군대 같은 소환수 구간을 피해 타이밍에 맞춥니다.',
-    caption: '고름 상처, 스컬지의 일격, 대재앙, 어둠의 변신, 사자의 군대, 죽음의 고리와 전염병 전환을 확인합니다.',
+    title: '질병, 부패, 소환수 구간',
+    sectionHeading: '악성 역병과 어둠의 변신',
+    sectionIntro: '부정 죽음의 기사는 악성 역병을 깔고 고름 일격으로 하급 구울 재료를 만든 뒤, 사자의 군대와 어둠의 변신 안에서 부패와 영혼 수확자를 회수합니다.',
+    caption: '악성 역병, 하급 구울 준비, 사자의 군대, 어둠의 변신, 부패, 영혼 수확자, 죽음의 고리와 전염병/괴저 고리/무덤 전환을 확인합니다.',
     definition: [
-      ['의미', '고름 상처는 부정의 기본 준비 상태이고, 소환수 쿨기는 큰 피해 구간을 만드는 축입니다.'],
-      ['읽는 법', '상처가 부족하면 먼저 쌓고, 과하게 쌓였으면 스컬지의 일격으로 터뜨립니다. 큰 쿨기 전에는 상처와 룬 마력을 준비합니다.'],
-      ['체크 포인트', '상처 부족 또는 과잉, 어둠의 변신 지연, 대재앙 전 준비 부족, 죽음의 고리 과소비, 광역 전염병 전환 누락을 봅니다.'],
+      ['의미', '하급 구울 재료와 부패 충전은 소환수 구간을 완성하기 위한 준비 상태이고, 사자의 군대와 어둠의 변신은 그 준비를 피해로 바꾸는 축입니다.'],
+      ['읽는 법', '악성 역병이 비면 먼저 복구하고, 고름 일격으로 하급 구울 재료를 만든 뒤 어둠의 변신 안에서 부패와 영혼 수확자를 밀리지 않게 회수합니다. 대상 수와 금단의 지식 상태에 따라 죽음의 고리, 전염병, 괴저 고리, 무덤을 바꿉니다.'],
+      ['체크 포인트', '악성 역병 공백, 하급 구울 준비 부족, 어둠의 변신 중 부패 충전 낭비, 영혼 수확자 지연, 죽음과 부패 위치 손실, 금단의 지식 소비기 전환 오류를 봅니다.'],
     ],
   },
   'deathknight-blood': {
@@ -1583,14 +1658,14 @@ const SPECIALIST_CHARTS = {
   },
   'druid-restoration': {
     id: 'uptime',
-    title: '첫 피해 대응 흐름',
-    sectionHeading: '피해 전 준비와 피해 후 회수',
-    sectionIntro: '회복 드루이드는 피해가 빠진 뒤 버튼을 찾는 힐러가 아니라, 피해 전에 회복 대상을 만들고 상록숲과 피어나는 생명 중첩까지 관리하는 힐러입니다.',
-    caption: '회복, 피어나는 생명, 상록숲, 꽃피우기, 급속 성장, 신속한 치유, 평온을 첫 피해 타이머에 맞춰 보는 흐름입니다.',
+    title: '12.1 첫 피해 대응 타임라인',
+    sectionHeading: '풍요 재생과 상록숲 만개',
+    sectionIntro: '회복 드루이드는 회복 5개로 풍요를 켠 뒤 재생을 반복하고, 피어나는 생명 대상에 신속한 치유를 사용해 상록숲 3연속 만개를 일으킵니다. 큰 치유 기술은 이 두 반복 위에 피해 시간에 맞춰 올립니다.',
+    caption: '피어나는 생명 유지, 회복 5개, 신속한 치유와 상록숲 만개, 급속 성장, 풍요 재생, 자연의 신속함-재생, 평온 준비를 한 흐름으로 확인합니다.',
     definition: [
-      ['의미', '피해 전 준비, 피해 순간 확장, 피해 후 복구가 한 줄로 이어져야 합니다.'],
-      ['읽는 법', '회복과 피어나는 생명을 먼저 깔고, 상록숲 중첩과 꽃피우기 위치를 확인한 뒤 급속 성장/신속한 치유/평온을 피해 타이머에 맞춥니다.'],
-      ['체크 포인트', '피해 전 회복 부족, 피어나는 생명 공백, 상록숲 3중첩 누락, 꽃피우기 위치 이탈, 숲 수호자를 액티브처럼 쓰는 오류를 봅니다.'],
+      ['의미', '유지 주문, 풍요 조건, 직접 치유, 큰 피해 대응이 어떤 순서로 이어지는지 보여 줍니다.'],
+      ['읽는 법', '피어나는 생명과 꽃피우기를 먼저 고정하고, 회복 5개로 풍요를 켠 뒤 신속한 치유·급속 성장·재생을 실제 피해에 맞춥니다.'],
+      ['체크 포인트', '피어나는 생명 공백, 회복 5개 미달, 신속한 치유 충전 방치, 피해 없는 급속 성장, 풍요 없이 쓴 재생을 봅니다.'],
     ],
   },
   'druid-guardian': {
@@ -1669,7 +1744,7 @@ const SPECIALIST_CHARTS = {
     id: 'resource',
     title: '비전 쇄도와 마나 소비',
     sectionHeading: '마나와 큰 구간 흐름',
-    sectionIntro: '비전 마법사는 비전 쇄도, 비전의 여파, 비전 보주, 비전 탄막, 비전 연사를 같은 구간에 배치하고 마나를 폭딜 연료로 씁니다.',
+    sectionIntro: '비전 마법사는 비전 쇄도, 비전의 여파, 비전 보주, 비전 탄막, 비전 연사를 같은 구간에 배치하고 마나를 극딜 연료로 씁니다.',
     caption: '비전 쇄도 예열, 비전의 여파 45초 구간, 비전 보주, 비전 탄막, 마나 회복과 비전 연사 소비를 확인합니다.',
     definition: [
       ['의미', '비전 쇄도는 큰 피해 구간을 여는 버튼이고, 마나는 그 안에서 강한 주문을 밀어 넣기 위한 연료입니다.'],
@@ -1679,22 +1754,22 @@ const SPECIALIST_CHARTS = {
   },
   'evoker-devastation': {
     id: 'resource',
-    title: '용의 분노와 정수 소비',
-    sectionHeading: '정수와 강화 주문 관리',
-    sectionIntro: '황폐 기원사는 용의 분노 구간 안에 강화 주문, 정수 폭발, 파열, 기염, 하늘빛 일격을 손실 없이 넣는지가 핵심입니다.',
-    caption: '용의 분노, 불의 숨결, 영원의 쇄도, 정수 폭발, 파열, 기염, 하늘빛 일격을 같은 자원 흐름으로 확인합니다.',
+    title: '용의 분노와 해방된 불길',
+    sectionHeading: '극딜과 종료 뒤 4회 소비',
+    sectionIntro: '황폐 기원사는 용의 분노 안에서 강화 주문으로 지속시간을 늘리고 정수 폭발을 비운 뒤, 종료 후 분노 상승이 남은 동안 해방된 불길 4회를 자원 상태에 맞춰 소비합니다.',
+    caption: '깊은 숨결, 용의 분노, 불의 숨결, 영원의 쇄도, 하늘빛 휩쓸기, 대규모 파열, 정수 폭발, 해방된 불길을 하나의 전투 흐름으로 확인합니다.',
     definition: [
-      ['의미', '용의 분노는 큰 피해 구간이고, 정수와 정수 폭발은 그 안에서 파열과 강한 주문을 쓰게 해 주는 자원입니다.'],
-      ['읽는 법', '용의 분노 전에는 강화 주문과 정수를 준비하고, 구간 안에서는 정수 폭발과 파열이 넘치지 않게 소비합니다.'],
-      ['체크 포인트', '정수 과충전, 정수 폭발 2중첩 방치, 강화 주문 지연, 파열 채널 끊김, 광역 기염 전환 누락을 봅니다.'],
+      ['의미', '용의 분노는 정수 폭발을 계속 만들고, 적개심은 불의 숨결과 영원의 쇄도로 지속시간을 늘립니다. 해방된 불길은 종료 뒤 정수 폭발을 직접 만드는 후속 버튼입니다.'],
+      ['읽는 법', '용의 분노 전 자원을 비우고 강화 주문을 준비합니다. 종료 뒤에는 정수가 4 미만이고 정수 폭발이 없을 때 해방된 불길을 눌러 새 소비기로 이어 갑니다.'],
+      ['체크 포인트', '용의 분노 전 정수 과충전, 강화 주문 지연, 하늘빛 휩쓸기 방치, 대규모 파열 채널 손실, 해방된 불길 4회 미소비, 광역 기염 전환 누락을 봅니다.'],
     ],
   },
   'priest-discipline': {
     id: 'defensive',
     title: '속죄 예열과 피해 회수',
     sectionHeading: '속죄 준비와 외생기 배정',
-    sectionIntro: '수양 사제는 피해 전에 속죄와 보호막을 깔고, 피해 직후 회개와 정신 분열로 회수하는 선제형 힐러입니다.',
-    caption: '신의 권능: 보호막, 신의 권능: 광휘, 사도, 회개, 정신 분열, 궁극의 참회, 방벽과 외생기 배정을 확인합니다.',
+    sectionIntro: '수양 사제는 피해 전에 속죄와 보호막을 깔고, 피해 직후 회개와 정신 분열로 회수하는 선제형 힐러입니다. 구버전 보호막 강화 스킬명을 현재 쓰는 스킬처럼 보지 말고, 사도, 광휘, 공허의 보호막, 직접 복구 흐름을 기준으로 판단합니다.',
+    caption: '신의 권능: 보호막, 공허의 보호막, 신의 권능: 광휘, 사도, 회개, 정신 분열, 궁극의 참회, 방벽과 외생기 배정을 확인합니다.',
     definition: [
       ['의미', '속죄는 피해 주문을 치유로 바꾸는 준비 상태이고, 보호막과 외생기는 큰 피해 전에 먼저 들어가야 합니다.'],
       ['읽는 법', '피해 전에는 속죄 대상 수와 광휘 충전을 보고, 피해 직후에는 회개와 정신 분열이 속죄가 남은 동안 들어가는지 확인합니다.'],
@@ -1703,26 +1778,26 @@ const SPECIALIST_CHARTS = {
   },
   'priest-holy': {
     id: 'cooldown',
-    title: '빛의 권능과 큰 힐 배정',
-    sectionHeading: '권능 충전과 쿨기 분배',
-    sectionIntro: '신성 사제는 피해가 오기 전에 빛의 권능 충전, 평온, 신성화, 절정, 후광, 천상의 찬가를 어떻게 나눌지 정해야 합니다.',
-    caption: '빛의 권능: 평온, 빛의 권능: 신성화, 회복의 기원, 절정, 후광, 천상의 찬가, 수호 영혼을 확인합니다.',
+    title: '평온-축도 복구와 큰 힐 배정',
+    sectionHeading: '평온에서 시작하는 12.1 복구 흐름',
+    sectionIntro: '신성 사제는 평온으로 위험 대상을 살리고, 평온이 만든 축도와 우주의 파장, 빛술사 치유의 기원으로 남은 파티 피해를 정리합니다. 공격대 집정관은 후광과 절정을, 쐐기 예언자는 회복의 기원 2충전과 궁극의 평온을 이 흐름에 맞춥니다.',
+    caption: '빛의 권능: 평온, 축도, 우주의 파장, 빛술사, 치유의 기원, 회복의 기원, 절정, 후광, 천상의 찬가와 수호 영혼의 관계를 확인합니다.',
     definition: [
-      ['의미', '빛의 권능은 신성 사제의 즉시 회복 축이고, 큰 쿨기는 피해 파도마다 나눠야 하는 자원입니다.'],
-      ['읽는 법', '권능 충전이 넘치기 전에 비우고, 큰 피해에는 절정/후광/천상의 찬가/수호 영혼을 같은 파도에 몰지 않게 배정합니다.'],
-      ['체크 포인트', '권능 충전 낭비, 회복의 기원 공백, 후광 30초 이상 보류, 천상의 찬가 채널 손실, 수호 영혼 대상 오류를 봅니다.'],
+      ['의미', '평온은 단일 치유에 그치지 않고 다음 축도를 확정 생성합니다. 축도는 우주의 파장과 빛술사를 만들어 단일 복구를 광역 복구로 이어 줍니다.'],
+      ['읽는 법', '평온 다음에 축도가 실제로 시전됐는지, 축도 뒤 빛술사 치유의 기원이 이어졌는지 봅니다. 집정관은 후광-절정, 예언자는 회복의 기원-궁극의 평온을 따로 확인합니다.'],
+      ['체크 포인트', '평온과 축도 시전 수 차이, 축도 2중첩 방치, 강화 없는 치유의 기원, 절정 안 평온 횟수, 회복의 기원 최대 충전, 수호 영혼과 자기 생존기 시점을 봅니다.'],
     ],
   },
   'evoker-preservation': {
     id: 'uptime',
-    title: '메아리와 피해 파도 준비',
-    sectionHeading: '피해 전 준비와 피해 후 복구',
-    sectionIntro: '보존 기원사는 메아리와 시간 변칙으로 대상을 미리 준비하고, 피해 형태에 따라 되감기, 신록의 품, 꿈의 숨결, 꿈의 비행을 배정합니다.',
-    caption: '메아리, 시간 변칙, 메리스라의 축복, 신록의 품, 되감기, 꿈의 숨결, 정지장과 꿈의 비행을 확인합니다.',
+    title: '꿈의 숨결-축복-꽃 반복',
+    sectionHeading: '12.1의 짧은 회복 반복',
+    sectionIntro: '꿈의 숨결로 지속 치유와 메리스라의 축복을 먼저 만들고, 시간 변칙과 직접 메아리로 피해 대상을 준비한 뒤 축복으로 회수합니다. 정수 폭발은 무료 에메랄드 꽃에 써 다음 쌍둥이 메아리를 만듭니다.',
+    caption: '꿈의 숨결, 시간 변칙, 직접 메아리, 메리스라의 축복, 정수 폭발 에메랄드 꽃, 화염 흡수와 대형 쿨다운의 관계를 확인합니다.',
     definition: [
-      ['의미', '메아리는 다음 치유를 복제하는 준비이고, 되감기와 꿈의 비행은 서로 다른 피해 패턴을 복구하는 큰 회복기입니다.'],
-      ['읽는 법', '피해 전에는 메아리와 시간 변칙을 준비하고, 피해 직후에는 되감기/신록의 품/꿈의 숨결 중 실제 피해 형태에 맞는 버튼을 씁니다.'],
-      ['체크 포인트', '메아리 대상 부족, 시간 변칙 지연, 되감기와 꿈의 비행 중복, 정지장 저장 오류, 미풍/시간 팽창 지연을 봅니다.'],
+      ['의미', '12.1 보존의 기본 단위는 꿈의 숨결 지속 치유, 메아리 준비, 메리스라의 축복 회수, 무료 꽃과 쌍둥이 메아리의 네 단계입니다.'],
+      ['읽는 법', '꿈의 숨결은 메아리보다 먼저, 시간 변칙과 직접 메아리는 피해 직전, 축복은 피해가 시작된 뒤, 정수 폭발 꽃은 실제로 다친 대상에게 사용합니다.'],
+      ['체크 포인트', '꿈의 숨결 충전 정체, 축복 발동 미사용, 잘못된 메아리 대상, 자연 정수 꽃, 쌍둥이 메아리 2중첩 손실, 화염 흡수 유효 치유를 봅니다.'],
     ],
   },
   'evoker-augmentation': {
@@ -2048,6 +2123,14 @@ function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
 }
 
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
+  const [tipsExpanded, setTipsExpanded] = useState(false);
+  const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(0);
+
+  useEffect(() => {
+    setTipsExpanded(false);
+    setActiveHeroBranchIndex(0);
+  }, [guide?.id]);
+
   if (!manuscript) return null;
 
   const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
@@ -2055,7 +2138,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const openerBlock = openerBlocks[0];
   const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block, guide));
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
-  const digestBlocks = bodyBlocks.slice(0, 4);
+  const digestBlocks = bodyBlocks;
   const manualOpenerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
   const openerFallbackItems = openerBlocks
     .flatMap(block => [
@@ -2072,11 +2155,26 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const tipItems = manuscript.tips?.length
     ? manuscript.tips
     : bodyBlocks.flatMap(block => block.bullets || []).slice(0, 5);
+  const visibleTipItems = tipsExpanded ? tipItems : tipItems.slice(0, TIP_PREVIEW_LIMIT);
+  const hiddenTipCount = Math.max(tipItems.length - visibleTipItems.length, 0);
+  const heroBranches = (manuscript.heroBranches || []).filter(branch => branch?.label || branch?.summary);
+  const activeHeroBranch = heroBranches[activeHeroBranchIndex] || heroBranches[0];
+  const heroBranchComparisonRows = HERO_BRANCH_DETAIL_LABELS
+    .map((label, detailIndex) => ({
+      label,
+      cells: heroBranches
+        .map(branch => ({
+          branchLabel: branch.label,
+          text: branch.bullets?.[detailIndex],
+        }))
+        .filter(cell => cell.text),
+    }))
+    .filter(row => row.cells.length);
   const hasOpenerGuide = !!openerFlowSteps.length || !!openerFallbackItems.length;
   const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
 
   return (
-    <SectionBlock id="manuscript">
+    <SectionBlock id="guide-core">
       <SectionHead>
         <SectionIcon><BookOpen size={17} /></SectionIcon>
         <div>
@@ -2086,8 +2184,10 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
       </SectionHead>
 
       <PaperLead $color={guide.color}>
-        <ManuscriptStatus>{manuscript.status}</ManuscriptStatus>
-        <p>{renderGuideText(manuscript.summary, inlineTerms)}</p>
+        <div>
+          <ManuscriptStatus>먼저 기억할 것</ManuscriptStatus>
+          <p>{renderGuideText(manuscript.playstyle?.[0]?.text || manuscript.summary, inlineTerms)}</p>
+        </div>
         <ManuscriptMeta>
           <span>패치 {manuscript.patch}</span>
           <span>조사 {manuscript.researchedAt}</span>
@@ -2139,30 +2239,164 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           )}
 
           {!!tipItems?.length && (
-            <FieldGuideCard $color={guide.color} $wide="full">
+            <TipGuideCard $color={guide.color} $wide="full" data-guide-block="tip-summary">
               <FieldGuideCardHead>
                 <Sparkles size={15} />
                 <strong>실전 꿀팁</strong>
               </FieldGuideCardHead>
-              <TipList>
-                {tipItems.map(item => (
+              <TipList $compact={!tipsExpanded && hiddenTipCount > 0} $expanded={tipsExpanded}>
+                {visibleTipItems.map(item => (
                   <li key={item}>{renderGuideText(item, inlineTerms)}</li>
                 ))}
               </TipList>
-            </FieldGuideCard>
+              {tipItems.length > TIP_PREVIEW_LIMIT && (
+                <TipListControls>
+                  <TipExpandButton
+                    type="button"
+                    aria-expanded={tipsExpanded}
+                    onClick={() => setTipsExpanded(current => !current)}
+                  >
+                    {tipsExpanded ? '접기' : `${hiddenTipCount}개 더 보기`}
+                  </TipExpandButton>
+                </TipListControls>
+              )}
+            </TipGuideCard>
           )}
         </FieldGuideGrid>
       )}
 
+      {!!heroBranches.length && (
+        <HeroBranchSection $color={guide.color} data-guide-block="hero-branches">
+          <HeroBranchSectionHead>
+            <FieldGuideCardHead>
+              <Sparkles size={15} />
+              <div>
+                <strong>영웅특성별 개별 운용 가이드</strong>
+                <span>실제 빌드에 맞는 영웅 특성을 선택해 시작 흐름, 우선순위와 로그 확인 기준을 따로 읽습니다.</span>
+              </div>
+            </FieldGuideCardHead>
+          </HeroBranchSectionHead>
+          {heroBranches.length > 1 && (
+            <HeroBranchTabs role="group" aria-label="영웅 특성 선택">
+              {heroBranches.map((branch, index) => (
+                <HeroBranchTab
+                  key={`${branch.label}-tab`}
+                  type="button"
+                  aria-pressed={activeHeroBranchIndex === index}
+                  $active={activeHeroBranchIndex === index}
+                  $color={guide.color}
+                  onClick={() => setActiveHeroBranchIndex(index)}
+                >
+                  {renderGuideText(branch.label, inlineTerms)}
+                </HeroBranchTab>
+              ))}
+            </HeroBranchTabs>
+          )}
+          <HeroBranchGrid $color={guide.color}>
+            {[activeHeroBranch].filter(Boolean).map(branch => {
+              const branchSkills = (branch.skillIds || []).map(skillFromBranchId).filter(Boolean);
+              const branchFlowNote = branch.bullets?.[0];
+              const branchFocusItems = branch.bullets?.slice(1) || [];
+              const branchFlowSkills = branchSkills.slice(0, 5);
+              return (
+                <HeroBranchCard
+                  key={`${branch.label}-${branch.summary}`}
+                  $color={guide.color}
+                  aria-label={`${branch.label} 영웅특성 운용 가이드`}
+                  role="region"
+                >
+                  <HeroBranchCardTop>
+                    <FieldGuideCardHead>
+                      <Sparkles size={15} />
+                      <HeroBranchTitle>
+                        <span>분기별 운용</span>
+                        <strong>{renderGuideText(branch.label, inlineTerms)}</strong>
+                      </HeroBranchTitle>
+                    </FieldGuideCardHead>
+                    {!!branch.summary && (
+                      <HeroBranchReason>
+                        <span>선택 기준</span>
+                        <p>{renderGuideText(branch.summary, inlineTerms)}</p>
+                      </HeroBranchReason>
+                    )}
+                  </HeroBranchCardTop>
+                  {!!branchSkills.length && (
+                    <HeroBranchSkillBlock>
+                      <span>분기 핵심 스킬/특성</span>
+                      <HeroBranchSkillList>
+                        {branchSkills.map(skill => (
+                          <li key={`${branch.label}-${skill.id}`}>
+                            <SkillIconLink skill={skill} size={28} />
+                            <span>{renderGuideText(skillName(skill), inlineTerms)}</span>
+                          </li>
+                        ))}
+                      </HeroBranchSkillList>
+                    </HeroBranchSkillBlock>
+                  )}
+                  {!!branchFlowNote && (
+                    <HeroBranchFlowStrip $color={guide.color}>
+                      <div>
+                        <span>공통과 달라지는 첫 흐름</span>
+                        {!!branchFlowSkills.length && (
+                          <HeroBranchFlowIcons aria-label={`${branch.label} 핵심 흐름 스킬`}>
+                            {branchFlowSkills.map(skill => (
+                              <SkillIconLink key={`${branch.label}-flow-${skill.id}`} skill={skill} size={30} />
+                            ))}
+                          </HeroBranchFlowIcons>
+                        )}
+                      </div>
+                      <p>{renderGuideText(branchFlowNote, inlineTerms)}</p>
+                    </HeroBranchFlowStrip>
+                  )}
+                  {!!branchFocusItems.length && (
+                    <HeroBranchFocusList>
+                      {branchFocusItems.map((item, itemIndex) => (
+                        <li key={item}>
+                          <b>{HERO_BRANCH_DETAIL_LABELS[itemIndex + 1] || HERO_BRANCH_DETAIL_LABELS[HERO_BRANCH_DETAIL_LABELS.length - 1]}</b>
+                          <p>{renderGuideText(item, inlineTerms)}</p>
+                        </li>
+                      ))}
+                    </HeroBranchFocusList>
+                  )}
+                </HeroBranchCard>
+              );
+            })}
+          </HeroBranchGrid>
+          {!!heroBranchComparisonRows.length && heroBranches.length > 1 && (
+            <HeroBranchComparison $color={guide.color} aria-label="영웅특성 분기 비교">
+              <HeroBranchComparisonHead>
+                <strong>영웅특성별 차이 빠르게 보기</strong>
+                <span>첫 흐름, 선택 기준, 주의점, 로그 검수 지표를 같은 축으로 비교합니다.</span>
+              </HeroBranchComparisonHead>
+              <HeroBranchComparisonBody>
+                {heroBranchComparisonRows.map(row => (
+                  <HeroBranchComparisonRow key={row.label}>
+                    <HeroBranchComparisonAxis>{row.label}</HeroBranchComparisonAxis>
+                    <HeroBranchComparisonCells $columns={Math.max(row.cells.length, 1)}>
+                      {row.cells.map(cell => (
+                        <HeroBranchComparisonCell key={`${row.label}-${cell.branchLabel}`}>
+                          <b>{renderGuideText(cell.branchLabel, inlineTerms)}</b>
+                          <p>{renderGuideText(cell.text, inlineTerms)}</p>
+                        </HeroBranchComparisonCell>
+                      ))}
+                    </HeroBranchComparisonCells>
+                  </HeroBranchComparisonRow>
+                ))}
+              </HeroBranchComparisonBody>
+            </HeroBranchComparison>
+          )}
+        </HeroBranchSection>
+      )}
+
       {!!digestBlocks.length && (
-        <GuideDigestGrid aria-label="가이드 빠른 요약">
+        <GuideDigestGrid aria-label="세부 공략 목차">
           {digestBlocks.map((block, index) => {
             const digest = block.bullets?.[0] || block.paragraphs?.[0];
             return (
-              <GuideDigestCard key={`${block.title}-${index}`}>
+              <GuideDigestCard key={`${block.title}-${index}`} href={`#guide-section-${index + 1}`}>
                 <span>{String(index + 1).padStart(2, '0')}</span>
-                <strong>{renderGuideText(block.title.replace(/^\d+\.\s*/, ''), inlineTerms)}</strong>
-                {!!digest && <p>{renderGuideText(digest, inlineTerms)}</p>}
+                <strong>{displayGuideText(block.title.replace(/^\d+\.\s*/, ''))}</strong>
+                {!!digest && <p>{displayGuideText(digest)}</p>}
               </GuideDigestCard>
             );
           })}
@@ -2173,18 +2407,64 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         {bodyBlocks.map((block, index) => {
           const primaryBullets = block.bullets?.slice(0, 2) || [];
           const detailBullets = block.bullets?.slice(2) || [];
+          const allBullets = block.bullets || [];
+          const practicalTipBlock = isPracticalTipBlock(block);
+
+          if (practicalTipBlock) {
+            return (
+              <React.Fragment key={`${block.title}-${index}`}>
+                <PaperSection id={`guide-section-${index + 1}`} $fullWidth>
+                  <PracticalTipSection $color={guide.color} data-guide-block="practical-tips">
+                    <PracticalTipHeader>
+                      <div>
+                        <SectionNumber>{String(index + 1).padStart(2, '0')}</SectionNumber>
+                        <h3>{renderGuideText(block.title, inlineTerms)}</h3>
+                      </div>
+                      {!!block.paragraphs?.length && (
+                        <PracticalTipIntro>
+                          {block.paragraphs.map(paragraph => (
+                            <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
+                          ))}
+                        </PracticalTipIntro>
+                      )}
+                    </PracticalTipHeader>
+
+                    {!!allBullets.length && (
+                      <PracticalTipGrid>
+                        {allBullets.map((item, bulletIndex) => (
+                          <PracticalTipItem
+                            key={item}
+                            $color={guide.color}
+                            $primary={bulletIndex < 2}
+                            data-primary-tip={bulletIndex < 2 ? 'true' : undefined}
+                          >
+                            <span>{bulletIndex < 2 ? '핵심' : `TIP ${bulletIndex - 1}`}</span>
+                            <p>{renderGuideText(item, inlineTerms)}</p>
+                          </PracticalTipItem>
+                        ))}
+                      </PracticalTipGrid>
+                    )}
+                  </PracticalTipSection>
+                </PaperSection>
+
+                {index === 0 && rotationChart && !hasOpenerGuide && (
+                  <InlineFigure chart={rotationChart} guide={guide} data={data} profile={profile} manuscript={manuscript} inlineTerms={inlineTerms} />
+                )}
+              </React.Fragment>
+            );
+          }
 
           return (
           <React.Fragment key={`${block.title}-${index}`}>
-            <PaperSection id={`guide-section-${index + 1}`}>
-              <PaperSectionBody>
+            <PaperSection id={`guide-section-${index + 1}`} $fullWidth={practicalTipBlock}>
+              <PaperSectionBody $wide={practicalTipBlock}>
                 <SectionNumber>{String(index + 1).padStart(2, '0')}</SectionNumber>
                 <h3>{renderGuideText(block.title, inlineTerms)}</h3>
                 {block.paragraphs?.map(paragraph => (
                   <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
                 ))}
                 {!!detailBullets.length && (
-                  <ManuscriptList>
+                  <ManuscriptList $columns={practicalTipBlock}>
                     {detailBullets.map(item => (
                       <li key={item}>{renderGuideText(item, inlineTerms)}</li>
                     ))}
@@ -2193,9 +2473,9 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               </PaperSectionBody>
 
               {!!primaryBullets.length && (
-                <TakeawayPanel $color={guide.color}>
+                <TakeawayPanel $color={guide.color} $wide={practicalTipBlock}>
                   <TakeawayLabel>핵심 체크</TakeawayLabel>
-                  <TakeawayList>
+                  <TakeawayList $columns={practicalTipBlock}>
                     {primaryBullets.map(item => (
                       <li key={item}>{renderGuideText(item, inlineTerms)}</li>
                     ))}
@@ -2301,6 +2581,28 @@ function GuideDetailPage() {
 
   const profile = getProfile(guide);
   const inlineChartPlan = getInlineChartPlan(guide, data);
+  const guideNavBlocks = (manuscript?.blocks || [])
+    .filter(block => !isMetaChartBlock(block))
+    .filter(block => !isOpenerNarrativeBlock(block, guide));
+  const playstyleItem = pattern => manuscript?.playstyle?.find(item => pattern.test(item.label));
+  const overviewItems = [
+    {
+      label: '핵심 루프',
+      text: playstyleItem(/한 줄|핵심/)?.text || manuscript?.playstyle?.[0]?.text || profile.lead,
+    },
+    {
+      label: '공격대',
+      text: playstyleItem(/레이드|공격대/)?.text || '공격대 피해 타이밍에 맞춰 주요 쿨기와 회복 수단을 배치합니다.',
+    },
+    {
+      label: '쐐기',
+      text: playstyleItem(/쐐기/)?.text || '파티 생존과 유틸 사용을 우선하며 다음 위험 구간을 준비합니다.',
+    },
+    {
+      label: '로그에서 볼 것',
+      text: playstyleItem(/확인|로그/)?.text || manuscript?.caveats?.[0] || '핵심 기술의 사용 횟수와 쿨다운 공백을 먼저 확인합니다.',
+    },
+  ];
 
   return (
     <Page>
@@ -2310,30 +2612,35 @@ function GuideDetailPage() {
             <ArrowLeft size={16} />
             가이드 목록
           </BackLink>
-          <PatchBadge>{manuscript ? `${CURRENT_PATCH_LABEL} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>
+          <PatchBadge>{manuscript ? `${manuscript.patch} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>
         </HeroTop>
         <HeroGrid>
           <div>
             <HeroEyebrow>{guide.className} · {profile.label}</HeroEyebrow>
             <HeroTitle>{guide.spec} {guide.className} 가이드</HeroTitle>
-            <HeroLead>{renderGuideText(manuscript?.summary || `${guide.focus} ${profile.lead}`, inlineTerms)}</HeroLead>
+            <HeroLead>
+              {renderGuideText(
+                manuscript?.playstyle?.[0]?.text || manuscript?.summary || `${guide.focus} ${profile.lead}`,
+                inlineTerms
+              )}
+            </HeroLead>
           </div>
           <HeroStats>
             <HeroStat>
-              <span>스킬</span>
-              <strong>{data.specSkills.length}</strong>
+              <span>패치</span>
+              <strong>{manuscript?.patch || CURRENT_PATCH_LABEL}</strong>
             </HeroStat>
             <HeroStat>
-              <span>공용</span>
-              <strong>{data.commonSkills.length}</strong>
+              <span>포지션</span>
+              <strong>{profile.label}</strong>
             </HeroStat>
             <HeroStat>
-              <span>시너지</span>
-              <strong>{data.synergies.length}</strong>
+              <span>업데이트</span>
+              <strong>{manuscript?.researchedAt || '확인 중'}</strong>
             </HeroStat>
             <HeroStat>
-              <span>차트</span>
-              <strong>{inlineChartPlan.length}</strong>
+              <span>출처</span>
+              <strong>{manuscript?.sources?.length || 0}개</strong>
             </HeroStat>
           </HeroStats>
         </HeroGrid>
@@ -2344,7 +2651,7 @@ function GuideDetailPage() {
           <GuideNavTitle>목차</GuideNavTitle>
           {[
             ['overview', '운용 요약'],
-            ...(manuscript ? [['manuscript', '공략 핵심']] : []),
+            ...(manuscript ? [['guide-core', '공략 핵심']] : []),
             ['skills', '핵심 스킬'],
             ['synergies', '시너지'],
             ['sources', '출처'],
@@ -2353,6 +2660,17 @@ function GuideDetailPage() {
               <span>{label}</span>
             </GuideNavLink>
           ))}
+          {!!guideNavBlocks.length && (
+            <GuideNavChapterGroup>
+              <GuideNavGroupLabel>세부 공략</GuideNavGroupLabel>
+              {guideNavBlocks.map((block, index) => (
+                <GuideNavLink key={`${block.title}-${index}`} href={`#guide-section-${index + 1}`} $chapter>
+                  <small>{String(index + 1).padStart(2, '0')}</small>
+                  <span>{displayGuideText(block.title.replace(/^\d+\.\s*/, ''))}</span>
+                </GuideNavLink>
+              ))}
+            </GuideNavChapterGroup>
+          )}
         </GuideNav>
 
         <Article>
@@ -2365,29 +2683,12 @@ function GuideDetailPage() {
               </div>
             </SectionHead>
             <SummaryGrid>
-              <SummaryItem>
-                <SummaryLabel>핵심 판단</SummaryLabel>
-                <SummaryText>{renderGuideText(profile.lead, inlineTerms)}</SummaryText>
-              </SummaryItem>
-              <SummaryItem>
-                <SummaryLabel>데이터 기준</SummaryLabel>
-                <SummaryText>
-                  {renderGuideText(
-                    manuscript?.sourceNote ||
-                      `${data.specSkills.length}개 전문화 스킬, ${data.commonSkills.length}개 공용 스킬, ${data.synergies.length}개 시너지 노트를 같은 그래프 안에서 묶었습니다.`,
-                    inlineTerms
-                  )}
-                </SummaryText>
-              </SummaryItem>
-              <SummaryItem>
-                <SummaryLabel>읽기 전 체크</SummaryLabel>
-                <SummaryText>
-                  {renderGuideText(
-                    manuscript?.caveats?.[0] || '확인된 출처와 KB 연결을 기준으로 정리하고, 미검증 항목은 설명에서 분리합니다.',
-                    inlineTerms
-                  )}
-                </SummaryText>
-              </SummaryItem>
+              {overviewItems.map(item => (
+                <SummaryItem key={item.label}>
+                  <SummaryLabel>{item.label}</SummaryLabel>
+                  <SummaryText>{renderGuideText(item.text, inlineTerms)}</SummaryText>
+                </SummaryItem>
+              ))}
             </SummaryGrid>
           </SectionBlock>
 
@@ -2414,7 +2715,7 @@ function GuideDetailPage() {
                   <SkillIconLink skill={skill} size={38} />
                   <SkillMain>
                     <SkillName href={wowheadUrl(skill)} data-wowhead={`spell=${skill.id}&domain=ko`} target="_blank" rel="noreferrer">
-                      <img src={getIconUrl(skill)} alt="" loading="lazy" />
+                      <SkillIconImage skill={skill} inline />
                       <span>{skillName(skill)}</span>
                     </SkillName>
                     <SkillSub>{displayGuideText(skill.spec || skill.category || 'KB 스킬')}</SkillSub>
@@ -2596,8 +2897,16 @@ function SynergyGraphView({ guide, data }) {
                   key={node.id}
                   className={`graph-node graph-synergy-node ${node.major ? 'graph-major' : 'graph-secondary'}`}
                   transform={`translate(${node.x} ${node.y})`}
+                  aria-label={`${synergyName(node.synergy)}: ${node.linkedCount}개 연결`}
                 >
-                  <title>{`${synergyName(node.synergy)} · ${node.linkedCount}개 연결`}</title>
+                  <rect
+                    className="node-hitbox"
+                    x="-72"
+                    y={-(node.r + 15)}
+                    width="144"
+                    height={node.major ? node.r + 72 : node.r + 42}
+                    rx="12"
+                  />
                   <circle className="node-glow" r={node.r + 13} />
                   <circle className="node-body" r={node.r} />
                   <circle className="node-core" r={Math.max(5, node.r * 0.36)} />
@@ -2625,12 +2934,20 @@ function SynergyGraphView({ guide, data }) {
                   data-wowhead={`spell=${node.skill.id}&domain=ko`}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`${skillNodeKindLabel(node.skill)} ${skillName(node.skill)}: ${node.connectionCount}개 시너지 연결`}
                 >
                   <g
                     className={`graph-node graph-skill-node graph-kind-${node.nodeKind} ${node.major ? 'graph-major' : 'graph-secondary'}`}
                     transform={`translate(${node.x} ${node.y})`}
                   >
-                    <title>{`${skillNodeKindLabel(node.skill)} · ${skillName(node.skill)} · ${node.connectionCount}개 시너지 연결`}</title>
+                    <rect
+                      className="node-hitbox"
+                      x="-72"
+                      y={-(node.r + 18)}
+                      width="144"
+                      height={node.major ? node.r + 95 : node.r + 64}
+                      rx="12"
+                    />
                     <clipPath id={clipId}>
                       <circle cx="0" cy="0" r={Math.max(9, node.r - 4)} />
                     </clipPath>
@@ -2785,7 +3102,7 @@ function renderChart(id, guide, data, profile, chart) {
     case 'resource':
       return <ResourceCurveChart guide={guide} skills={data.featuredSkills} profile={profile} />;
     case 'defensive':
-      return <DefensivePlannerChart guide={guide} data={data} profile={profile} />;
+      return <DefensivePlannerChart guide={guide} data={data} profile={profile} chart={chart} />;
     case 'uptime':
       return <UptimeTimelineChart guide={guide} data={data} chart={chart} />;
     case 'target':
@@ -2955,7 +3272,30 @@ function ResourceCurveChart({ guide, skills, profile }) {
   );
 }
 
-function DefensivePlannerChart({ guide, data, profile }) {
+function DefensivePlannerChart({ guide, data, profile, chart }) {
+  if (chart?.events?.length) {
+    return (
+      <DefensiveList>
+        {chart.events.map((event, index) => {
+          const skill = findSkillByIds(data, [event.skillId]);
+          return (
+            <DefensiveRow key={`${event.phase}-${event.skillId || index}`} $detailed>
+              <EventTime>{displayGuideText(event.phase)}</EventTime>
+              <EventName>
+                <SkillIconLink skill={skill} size={30} />
+                <EventNameStack>
+                  <strong>{displayGuideText(event.label || (skill ? skillName(skill) : event.phase))}</strong>
+                  {event.note && <EventNote>{renderGuideText(event.note)}</EventNote>}
+                </EventNameStack>
+              </EventName>
+              <EventAction>{displayGuideText(event.action)}</EventAction>
+            </DefensiveRow>
+          );
+        })}
+      </DefensiveList>
+    );
+  }
+
   const pool = guide.role === 'healers'
     ? uniqueBy([...data.healingSkills, ...data.defensiveSkills, ...data.utilitySkills], skill => String(skill.id))
     : uniqueBy([...data.defensiveSkills, ...data.utilitySkills, ...data.featuredSkills], skill => String(skill.id));
@@ -2972,7 +3312,9 @@ function DefensivePlannerChart({ guide, data, profile }) {
             <EventTime>{label}</EventTime>
             <EventName>
               <SkillIconLink skill={skill} size={30} />
-              <span>{skill ? skillName(skill) : profile.plannerTitle}</span>
+              <EventNameStack>
+                <strong>{skill ? skillName(skill) : profile.plannerTitle}</strong>
+              </EventNameStack>
             </EventName>
             <EventAction>{index < 2 ? '선배치' : '후속 대응'}</EventAction>
           </DefensiveRow>
@@ -2997,150 +3339,167 @@ function findSkillByNames(data, names) {
   });
 }
 
+function findSkillByIds(data, ids) {
+  return ids
+    .map(id => String(id))
+    .map(id => data.scopedSkills.find(skill => String(skill.id) === id) || manualSkillById.get(id) || skillById.get(id))
+    .find(Boolean);
+}
+
+function getDisciplinePriestUptimeRows(data) {
+  return [
+    {
+      label: '중심 버프',
+      skill: findSkillByIds(data, ['81749']),
+      note: '모든 예열과 피해 전환 치유가 지나는 중앙 노드입니다. 대상 수와 남은 시간을 가장 먼저 봅니다.',
+      segments: [[6, 14], [28, 14], [50, 14], [72, 14]],
+    },
+    {
+      label: '광역 준비',
+      skill: findSkillByIds(data, ['194509']),
+      note: '다수 속죄를 피해 직전에 맞추는 충전 기술입니다. 너무 빠르면 속죄 시간이 새고, 너무 늦으면 사망이 납니다.',
+      segments: [[14, 8], [38, 8], [62, 8], [86, 8]],
+    },
+    {
+      label: '사도 예열',
+      skill: findSkillByIds(data, ['472433']),
+      note: '현재 사도는 속죄 연장 스킬이 아니라 5명 속죄를 직접 적용하고 다음 광휘 2회를 즉시화해 예열을 빠르게 완성하는 스킬입니다.',
+      segments: [[20, 14], [70, 14]],
+    },
+    {
+      label: '보호막 관리',
+      skill: findSkillByIds(data, ['1253593', '17']),
+      note: '공허의 보호막과 신의 권능: 보호막은 속죄 적용과 유효 체력을 동시에 만듭니다. 회개 전 공허의 보호막 발동 낭비를 확인합니다.',
+      segments: [[4, 10], [24, 10], [44, 10], [64, 10], [84, 10]],
+    },
+    {
+      label: '피해 복구',
+      skill: findSkillByIds(data, ['47540']),
+      note: '속죄가 살아 있을 때 회개가 실제 치유량을 되돌려 줍니다. 아군 회개와 적 회개는 상황에 따라 용도가 다릅니다.',
+      segments: [[23, 8], [33, 7], [73, 8], [83, 7]],
+    },
+    {
+      label: '지속 피해',
+      skill: findSkillByIds(data, ['1250218', '589']),
+      note: '사악의 정화나 어둠의 권능: 고통은 속죄 회수 구간의 바탕입니다. 회개 전이 조건과 지속 시간을 같이 봅니다.',
+      segments: [[2, 94]],
+    },
+    {
+      label: '예언자 안정성',
+      skill: findSkillByNames(data, ['두 개의 시야', '경건', '보장된 안전', '대천사']),
+      note: '현재 레이드와 쐐기 로그의 기본 영웅 특성 선택입니다. 회개 보강과 보호막 보조로 큰 쿨다운 사이 빈 구간을 메웁니다.',
+      segments: [[16, 10], [46, 10], [76, 10]],
+    },
+    {
+      label: '공허술사 피해 구간',
+      skill: findSkillByNames(data, ['혼돈의 균열', '공허 폭발']),
+      note: '선택 시 잦은 피해 구간을 속죄 대상에게 돌리는 분기입니다. 속죄 없는 균열은 낭비입니다.',
+      segments: [[30, 12], [80, 12]],
+    },
+    {
+      label: '대형 복구',
+      skill: findSkillByIds(data, ['421453']),
+      note: '궁극의 참회는 사도와 같은 피해에 겹치기보다 별도 이벤트에 배정할 때 쿨다운 분배가 안정됩니다.',
+      segments: [[54, 18]],
+    },
+    {
+      label: '외생기',
+      skill: findSkillByIds(data, ['33206', '62618']),
+      note: '탱커 급락, 위치 고정 공대 피해, 보호막 분배를 서로 다른 위험 구간에 나눕니다.',
+      segments: [[34, 12], [58, 12], [88, 10]],
+    },
+    {
+      label: '직접 복구',
+      skill: findSkillByIds(data, ['1252215', '2061']),
+      note: '한 명이 죽기 직전인 상황에서는 속죄 예열보다 직접 치유와 외생기 판단이 먼저입니다.',
+      segments: [[18, 7], [42, 7], [66, 7], [90, 7]],
+    },
+    {
+      label: '해제/유틸',
+      skill: findSkillByIds(data, ['527', '528', '32375']),
+      note: '위험 주문과 디버프를 제거하면 뒤따라와야 할 복구량 자체가 줄어듭니다.',
+      segments: [[12, 6], [36, 6], [60, 6], [82, 6]],
+    },
+  ];
+}
+
 function getUptimeRows(guide, data) {
   if (guide.id === 'priest-discipline') {
-    return [
-      {
-        label: '중심 버프',
-        skill: findSkillByNames(data, ['속죄']),
-        note: '모든 예열과 피해 전환 치유가 지나가는 중앙 노드입니다. 대상 수와 남은 시간을 가장 먼저 봅니다.',
-        segments: [[6, 14], [28, 14], [50, 14], [72, 14]],
-      },
-      {
-        label: '광역 준비',
-        skill: findSkillByNames(data, ['신의 권능: 광휘']),
-        note: '다수 속죄를 피해 직전에 맞추는 충전 기술입니다. 너무 빠르면 속죄 시간이 새고, 너무 늦으면 회수가 늦습니다.',
-        segments: [[14, 8], [38, 8], [62, 8], [86, 8]],
-      },
-      {
-        label: '짧은 예열',
-        skill: findSkillByNames(data, ['사도']),
-        note: '광휘 예열을 빠르게 여는 핵심 쿨다운입니다. 피해 이벤트와 밀착시키고, 직후 피해 주문을 비우지 않습니다.',
-        segments: [[20, 14], [70, 14]],
-      },
-      {
-        label: '보호막 관리',
-        skill: findSkillByNames(data, ['공허의 보호막', '신의 권능: 보호막']),
-        note: '12.0.5 보호막 중심 조정의 핵심입니다. 강하지만 마나와 다음 예열 준비 시간을 같이 봐야 합니다.',
-        segments: [[4, 10], [24, 10], [44, 10], [64, 10], [84, 10]],
-      },
-      {
-        label: '피해 복구',
-        skill: findSkillByNames(data, ['회개', '정신 분열']),
-        note: '속죄가 남아 있는 동안 실제 치유량을 돌려주는 피해 주문 흐름입니다. 속죄가 없으면 가치가 크게 줄어듭니다.',
-        segments: [[23, 8], [33, 7], [73, 8], [83, 7]],
-      },
-      {
-        label: '지속 피해',
-        skill: findSkillByNames(data, ['어둠의 권능: 고통', '사악의 정화']),
-        note: '예열 중 피해 전환을 뒷받침하는 유지 흐름입니다. 회개 확산과 대속 판단까지 같이 봅니다.',
-        segments: [[2, 94]],
-      },
-      {
-        label: '예언자 안정',
-        skill: findSkillByNames(data, ['두 개의 시야', '경건', '보장된 안전', '회개']),
-        note: '현재 레이드/쐐기 로그의 기본 영웅 특성 선택지입니다. 회개 보강과 보호막 보조로 큰 쿨다운 사이 빈 구간을 메웁니다.',
-        segments: [[16, 10], [46, 10], [76, 10]],
-      },
-      {
-        label: '공허술사 피해 구간',
-        skill: findSkillByNames(data, ['혼돈의 균열', '공허의 폭발']),
-        note: '선택 시 암흑 피해 구간을 속죄 대상에게 돌려야 의미가 있습니다. 속죄 없는 균열은 낭비입니다.',
-        segments: [[30, 12], [80, 12]],
-      },
-      {
-        label: '대형 복구',
-        skill: findSkillByNames(data, ['궁극의 참회']),
-        note: '사도와 같은 피해에 겹치기보다 별도 이벤트에 배정할 때 쿨다운 분배가 안정됩니다.',
-        segments: [[54, 18]],
-      },
-      {
-        label: '외생기',
-        skill: findSkillByNames(data, ['고통 억제', '신의 권능: 방벽', '신의 권능: 보호막']),
-        note: '한 대상 급사, 위치형 공대 피해, 보호막 분배를 서로 다른 위험 구간에 나눕니다.',
-        segments: [[34, 12], [58, 12], [88, 10]],
-      },
-      {
-        label: '직접 복구',
-        skill: findSkillByNames(data, ['어둠의 치유', '순간 치유', '간청']),
-        note: '쐐기나 사망 직전 상황에서는 정돈된 예열보다 한 명을 살리는 판단이 먼저입니다.',
-        segments: [[18, 7], [42, 7], [66, 7], [90, 7]],
-      },
-      {
-        label: '쐐기 유틸',
-        skill: findSkillByNames(data, ['정화', '마법 무효화', '신의의 도약']),
-        note: '위험 주문과 디버프를 제거하면 애초에 복구해야 할 피해량이 줄어듭니다.',
-        segments: [[12, 6], [36, 6], [60, 6], [82, 6]],
-      },
-    ];
+    return getDisciplinePriestUptimeRows(data);
   }
 
   if (guide.id === 'druid-restoration') {
     return [
       {
-        label: '유지 기반',
-        skill: findSkillByNames(data, ['피어나는 생명']),
-        note: '피어나는 생명은 탱커나 중심 대상에 남아 있어야 상록숲, 꽃피우기 이동, 후속 복구 판단이 안정됩니다.',
+        label: '피어나는 생명',
+        skill: findSkillByIds(data, ['33763']),
+        note: '공격대에서는 자신, 쐐기에서는 고정 대상에 3중첩을 유지해 상록숲과 꽃피우기 기반을 지킵니다.',
         segments: [[0, 96]],
       },
       {
-        label: 'Apex 유지',
-        skill: findSkillByNames(data, ['상록숲']),
-        note: '상록숲 선택 시 피어나는 생명이 5초마다 쌓여 최대 3중첩이 되므로, 피어나는 생명 대상과 중첩 상태가 첫 확인점입니다.',
+        label: '상록숲 3중첩',
+        skill: findSkillByIds(data, ['392167']),
+        note: '피어나는 생명이 5초마다 쌓이는 상태를 유지하고, 신속한 치유 때 발생할 3연속 만개를 준비합니다.',
         segments: [[6, 20], [34, 20], [64, 20]],
       },
       {
-        label: '위치 기반',
-        skill: findSkillByNames(data, ['꽃피우기']),
-        note: '레이드 지정 뭉침 위치나 쐐기 탱커 고정 위치에 깔려야 이후 광역 회복의 바닥이 생깁니다.',
+        label: '꽃피우기 위치',
+        skill: findSkillByIds(data, ['145205']),
+        note: '파티원 세 명 이상이 실제로 머무는 위치에 유지하고 탱커 이동에 따라 다시 배치합니다.',
         segments: [[2, 34], [42, 34], [78, 18]],
       },
       {
-        label: '피해 전 예열',
-        skill: findSkillByNames(data, ['회복']),
-        note: '피해 10~12초 전부터 넓게 깔아 풍요 중첩과 재생 회수 기반을 만듭니다.',
-        segments: [[8, 24], [48, 24], [78, 14]],
+        label: '회복 5개',
+        skill: findSkillByIds(data, ['774']),
+        note: '피해 4~6초 전에 짧게 묶어 풍요의 재생 마나 60% 감소와 치명타 및 극대화율 60% 증가를 켭니다.',
+        segments: [[10, 18], [48, 18], [80, 14]],
       },
       {
-        label: '중심 연결',
-        skill: findSkillByNames(data, ['신속한 치유']),
-        note: '숲의 영혼, 대드루이드의 힘, 신록 주입, 숲 수호자 발동이 갈라지는 핵심 버튼입니다.',
+        label: '신속한 치유',
+        skill: findSkillByIds(data, ['18562']),
+        note: '상록숲 3연속 만개와 대드루이드의 힘, 숲의 영혼, 숲 수호자 패시브 발동을 만듭니다.',
         segments: [[24, 8], [56, 8], [86, 8]],
       },
       {
-        label: '광역 확장',
-        skill: findSkillByNames(data, ['급속 성장']),
-        note: '실제 광역 피해가 시작될 때 들어가야 숲 수호자 발동과 회복 네트워크가 같이 커집니다.',
+        label: '광역 피해',
+        skill: findSkillByIds(data, ['48438']),
+        note: '여러 명이 실제로 피해를 받는 시작점에 사용하며, 위험하지 않은 구간에는 마나를 위해 아낍니다.',
         segments: [[28, 9], [60, 9], [90, 7]],
       },
       {
-        label: '큰 회복 구간',
-        skill: findSkillByNames(data, ['평온']),
-        note: '예열된 지속 치유가 깔린 뒤 배정 피해에 맞춰야 번성 효과로 시간을 벌 수 있습니다.',
-        segments: [[36, 16], [82, 14]],
+        label: '풍요 재생',
+        skill: findSkillByIds(data, ['8936']),
+        note: '풍요가 켜진 뒤 가장 다친 대상부터 직접 치유하고 번뜩임 재생도 실제 피해자에게 소비합니다.',
+        segments: [[32, 16], [66, 16], [92, 6]],
       },
       {
-        label: '대체 큰 회복',
-        skill: findSkillByNames(data, ['영혼 소집']),
-        note: '치유 목적이면 시전자 형태에서 실제 피해와 겹치게 쓰고, 숲의 수호자 분기에서는 발동 수를 같이 봅니다.',
-        segments: [[34, 14], [76, 14]],
+        label: '과성장 복구',
+        skill: findSkillByIds(data, ['132158']),
+        note: '자연의 신속함 다음 재생을 직접 사용해 급사 대상에게 즉시 치유와 세 가지 지속 치유를 함께 줍니다.',
+        segments: [[40, 10], [72, 10]],
       },
       {
-        label: '잔여 복구',
-        skill: findSkillByNames(data, ['재생']),
-        note: '풍요가 높을 때 남은 체력을 싸게 정리하는 출구입니다. 낮은 풍요 상태의 연속 시전은 마나 손실입니다.',
-        segments: [[40, 10], [66, 10], [92, 6]],
+        label: '영혼 소집',
+        skill: findSkillByIds(data, ['391528']),
+        note: '치유 목적이면 시전자 형태에서 실제 피해 시작에 맞추고 이후 풍요 재생으로 복구를 이어 갑니다.',
+        segments: [[36, 14], [76, 14]],
       },
       {
-        label: '단일 급사 대응',
-        skill: findSkillByNames(data, ['무쇠껍질', '자연의 신속함']),
-        note: '탱커나 위험 대상이 죽는 구간에는 광역 회복보다 외생기와 즉시 재생 판단이 먼저입니다.',
+        label: '평온 준비',
+        skill: findSkillByIds(data, ['740']),
+        note: '배정 피해 15~20초 전부터 급속 성장과 여러 재생 지속 치유를 만든 뒤 채널 중 연장합니다.',
+        segments: [[44, 18], [80, 18]],
+      },
+      {
+        label: '단일 피해 예방',
+        skill: findSkillByIds(data, ['102342']),
+        note: '탱커나 지정 대상이 맞을 큰 피해 전에 사용해 자연의 신속함-재생을 쓰기 전 급사부터 막습니다.',
         segments: [[18, 8], [52, 8], [80, 8]],
       },
       {
-        label: '쐐기 유틸',
-        skill: findSkillByNames(data, ['자연의 치유력', '쇄도의 포효']),
-        note: '해제와 이동 보조는 회복량으로 덮기 전에 피해 자체를 줄이는 버튼입니다.',
+        label: '쐐기 해제',
+        skill: findSkillByIds(data, ['88423']),
+        note: '제거 가능한 독·저주·마법은 추가 치유로 버티기 전에 자연의 치유력을 먼저 사용합니다.',
         segments: [[14, 6], [44, 6], [70, 6], [88, 6]],
       },
     ];
@@ -3403,10 +3762,10 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'shaman-elemental') {
     return [
       {
-        label: '중심 구간',
-        skill: findSkillByNames(data, ['폭풍수호자']),
-        note: '강화 자연 주문, 폭풍, 승천, 소용돌이 소비를 묶는 정기 그래프의 중앙 노드입니다.',
-        segments: [[4, 18], [50, 18], [84, 12]],
+        label: '중심 반응',
+        skill: findSkillByNames(data, ['용암 폭발']),
+        note: '화염 충격, 소용돌이의 힘, 원소의 대가와 선조의 단일 주문 반응이 모이는 12.1 중심 기술입니다.',
+        segments: [[5, 10], [20, 10], [36, 10], [53, 10], [70, 10], [87, 10]],
       },
       {
         label: '화염 기반',
@@ -3415,21 +3774,21 @@ function getUptimeRows(guide, data) {
         segments: [[2, 94]],
       },
       {
-        label: '화염 반응',
-        skill: findSkillByNames(data, ['용암 폭발']),
-        note: '충전 낭비와 발동 방치를 막아야 폭풍수호자 전 자원 흐름이 안정됩니다.',
-        segments: [[8, 7], [24, 7], [40, 7], [58, 7], [75, 7], [92, 5]],
+        label: '짧은 쿨기',
+        skill: findSkillByNames(data, ['폭풍수호자']),
+        note: '강화 번개 주문과 선조 소환을 함께 여는 1분 쿨기입니다. 승천이 임박해도 보통 10초 넘게 미루지 않습니다.',
+        segments: [[8, 16], [50, 16], [84, 12]],
       },
       {
-        label: '폭풍인도자',
-        skill: findSkillByNames(data, ['폭풍', '초자력 충전']),
-        note: 'Archon 최근 로그의 기본 영웅 특성 선택지입니다. 폭풍 가능 상태를 방치하지 않습니다.',
-        segments: [[16, 12], [46, 12], [76, 12]],
+        label: '선견자',
+        skill: findSkillByNames(data, ['선조의 신속함', '선조의 부름']),
+        note: '12.1 레이드와 쐐기의 기본 영웅 특성입니다. 선조가 남아 있을 때 대상 수에 맞는 실제 주문을 계속 시전합니다.',
+        segments: [[13, 12], [45, 12], [76, 12]],
       },
       {
         label: '큰 구간',
         skill: findSkillByNames(data, ['승천']),
-        note: '폭풍수호자, 장신구, 피의 욕망/영웅심과 맞을 때 가장 큰 단일 구간이 됩니다.',
+        note: '폭풍수호자 뒤에 사용해 선조와 강화 주문을 함께 활용하되, 12.1에는 과부하 보너스가 줄었다는 점을 반영합니다.',
         segments: [[22, 18], [72, 18]],
       },
       {
@@ -3457,15 +3816,15 @@ function getUptimeRows(guide, data) {
         segments: [[35, 12], [68, 12], [90, 8]],
       },
       {
-        label: '화염/자연 브리지',
+        label: '화염 전환',
         skill: findSkillByNames(data, ['전격의 불길', '정화의 불길']),
-        note: '화염 코어와 자연 피해 구간 사이의 발동/강화 연결점입니다.',
+        note: '여러 대상에 화염 충격을 퍼뜨리고 다음 용암 폭발 반응을 준비합니다. 승천 직전 전격의 불길을 먼저 씁니다.',
         segments: [[13, 12], [48, 12], [83, 10]],
       },
       {
-        label: '선견자 보조',
-        skill: findSkillByNames(data, ['선조의 신속함', '선조의 부름']),
-        note: '기본값은 폭풍인도자지만 이동과 즉시시전 보정에서 별도 의미가 있습니다.',
+        label: '폭풍인도자 대안',
+        skill: findSkillByNames(data, ['폭풍', '초자력 충전']),
+        note: '현재는 취향이나 큰 광역을 위한 대안입니다. 초자력 충전은 과부하 피해를 10% 올리지만 선견자 기본 빌드를 대신하지 않습니다.',
         segments: [[26, 10], [56, 10], [86, 9]],
       },
       {
@@ -3493,79 +3852,85 @@ function getUptimeRows(guide, data) {
     return [
       {
         label: '중심 표식',
-        skill: findSkillByNames(data, ['성난 해일']),
+        skill: findSkillByIds(data, ['61295']),
         note: '성난 해일 대상, 굽이치는 물결, 선조 발동, 연쇄 치유 첫 대상을 묶는 중앙 노드입니다.',
         segments: [[4, 12], [22, 12], [40, 12], [58, 12], [76, 12]],
       },
       {
         label: '준비 버프',
-        skill: findSkillByNames(data, ['물의 보호막', '대지의 보호막', '대지생명의 무기']),
+        skill: findSkillByIds(data, ['52127']),
         note: '전투 전 유지가 비면 이후 모든 복구 주문의 비용이 커집니다.',
         segments: [[0, 98]],
       },
       {
         label: '지역 기반',
-        skill: findSkillByNames(data, ['치유의 비', '쇄도하는 토템']),
+        skill: findSkillByIds(data, ['444995']),
         note: '파티가 머무는 위치에 맞아야 토템술사 가치가 살아납니다.',
         segments: [[8, 26], [42, 26], [72, 22]],
       },
       {
-        label: '토템 회복',
-        skill: findSkillByNames(data, ['치유의 토템', '폭풍의 흐름 토템']),
-        note: '충전 낭비와 폭풍의 흐름 토템 가능 상태를 함께 봅니다.',
+        label: '토템 충전',
+        skill: findSkillByIds(data, ['5394']),
+        note: '치유의 토템 충전 낭비를 막고, 폭풍의 흐름 토템 가능 상태와 함께 봅니다.',
         segments: [[12, 9], [30, 9], [50, 9], [70, 9], [90, 7]],
       },
       {
+        label: '폭풍 회수',
+        skill: findSkillByIds(data, ['1267016']),
+        note: '폭풍의 흐름 토템은 치유의 토템 충전, 성난 해일 대상, 신속함 계열 소비 계획과 같이 판단합니다.',
+        segments: [[18, 8], [48, 8], [78, 8]],
+      },
+      {
         label: '예고 광역',
-        skill: findSkillByNames(data, ['폭우']),
-        note: '저장 게이지가 아니라 예고 피해를 낮은 비용으로 회수하는 짧은 광역 구간입니다.',
+        skill: findSkillByIds(data, ['462486']),
+        note: '피해 뒤에 급하게 찾는 버튼이 아니라 예고 피해를 낮은 비용으로 회수하는 짧은 광역 구간입니다.',
         segments: [[20, 10], [54, 10], [84, 9]],
       },
       {
         label: '광역 회수',
-        skill: findSkillByNames(data, ['연쇄 치유']),
+        skill: findSkillByIds(data, ['1064']),
         note: '성난 해일이 묻은 대상과 거리 조건이 맞을 때 가장 먼저 가치가 올라갑니다.',
         segments: [[25, 8], [46, 8], [66, 8], [88, 8]],
       },
       {
         label: '단일 효율',
-        skill: findSkillByNames(data, ['치유의 물결']),
+        skill: findSkillByIds(data, ['77472']),
         note: '한두 명만 위험할 때 쓰는 효율 직접 치유입니다.',
         segments: [[15, 7], [36, 7], [61, 7], [80, 7]],
       },
       {
         label: '큰 회수',
-        skill: findSkillByNames(data, ['치유의 해일 토템']),
+        skill: findSkillByIds(data, ['108280']),
         note: '긴 광역 피해 또는 피해 직후 안정화에 배정합니다.',
         segments: [[34, 18], [78, 18]],
       },
       {
         label: '체력 평준화',
-        skill: findSkillByNames(data, ['정신의 고리 토템']),
+        skill: findSkillByIds(data, ['98008']),
         note: '사후 힐이 아니라 큰 피해 직전 피해 감소와 체력 재분배를 노립니다.',
         segments: [[48, 12], [86, 10]],
       },
       {
         label: '증폭 구간',
-        skill: findSkillByNames(data, ['승천']),
+        skill: findSkillByIds(data, ['114052']),
         note: '연쇄 치유와 치유의 물결을 실제로 많이 넣을 수 있는 피해 구간에 맞춥니다.',
         segments: [[56, 18]],
       },
       {
         label: '선견자 구간',
-        skill: findSkillByNames(data, ['생명 폭발', '선조의 신속함', '선조의 부름']),
+        skill: findSkillByIds(data, ['443454']),
         note: '대상 선택형 회복을 강화하고 선조 주문을 실제 피해 구간에 맞춥니다.',
         segments: [[18, 10], [44, 10], [74, 10]],
       },
       {
         label: '쐐기 유틸',
-        skill: findSkillByNames(data, ['날카로운 바람', '정화', '영혼 정화']),
+        skill: findSkillByIds(data, ['57994']),
         note: '피해를 회복하기 전에 위험 주문과 디버프를 제거합니다.',
         segments: [[14, 7], [38, 7], [62, 7], [82, 7]],
       },
       {
         label: '이동 보존',
-        skill: findSkillByNames(data, ['영혼나그네의 은총', '돌풍', '바람 질주 토템']),
+        skill: findSkillByIds(data, ['79206']),
         note: '위치 기반 힐과 긴 시전을 이동 패턴과 충돌하지 않게 보존합니다.',
         segments: [[28, 10], [68, 10]],
       },
@@ -4125,64 +4490,64 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'monk-mistweaver') {
     return [
       {
-        label: '안개 대상 유지',
+        label: '소생 대상 준비',
         skill: findSkillByNames(data, ['소생의 안개']),
-        note: '생기 충전 확산을 위한 소생 유지입니다. 충전이 넘치기 전에 피해 전 대상 수를 확보합니다.',
+        note: '시즌 1 무료 소생 효과가 사라졌으므로 충전이 가득 차기 전에 직접 대상에게 퍼뜨립니다.',
         segments: [[3, 28], [35, 28], [68, 26]],
       },
       {
-        label: '피해 복구',
+        label: '질풍차기와 무료 발동',
+        skill: findSkillByNames(data, ['질풍차기']),
+        note: '기본 쿨다운, 옥룡의 마음, 시즌 2 4세트 무료 발동을 각각 놓치지 않습니다.',
+        segments: [[8, 8], [22, 8], [38, 8], [54, 8], [70, 8], [86, 8]],
+      },
+      {
+        label: '생기 충전 회수',
         skill: findSkillByNames(data, ['생기 충전']),
-        note: '피해 직후 소생의 안개가 걸린 대상을 통해 광역 회복을 회수합니다.',
-        segments: [[18, 10], [43, 10], [74, 10], [90, 7]],
+        note: '소생의 안개 대상 여러 명이 실제로 다친 순간 평소 광역 피해를 회수합니다.',
+        segments: [[18, 11], [44, 11], [73, 11], [89, 8]],
       },
       {
-        label: '근접 치유',
-        skill: findSkillByNames(data, ['질풍차기', '해오름차기']),
-        note: '안전한 근접 구간에서는 공격 행동이 지속 치유 엔진을 유지합니다.',
-        segments: [[10, 16], [38, 16], [66, 16]],
-      },
-      {
-        label: '마나 구간',
-        skill: findSkillByNames(data, ['마나 차', '평안의 차']),
-        note: '마나가 바닥난 뒤가 아니라 비싼 치유 구간 전에 비용을 낮춥니다.',
-        segments: [[14, 12], [58, 12]],
-      },
-      {
-        label: '강화 차',
+        label: '차로 구간 시작',
         skill: findSkillByNames(data, ['집중의 천둥 차']),
-        note: '소생의 안개 확산 또는 주요 회복 주문 강화 타이밍을 고릅니다.',
-        segments: [[8, 8], [48, 8], [82, 8]],
+        note: '다음 소생의 안개 또는 포용의 안개 목적을 정하고 옥룡의 마음을 시작합니다.',
+        segments: [[12, 8], [48, 8], [80, 8]],
       },
       {
-        label: '단일 복구',
-        skill: findSkillByNames(data, ['포용의 안개']),
-        note: '탱커나 위험 대상에게 지속 복구 구간을 만듭니다.',
-        segments: [[24, 12], [62, 12], [86, 10]],
+        label: '옥룡의 마음 8초',
+        skill: findSkillByNames(data, ['옥룡의 마음', '내면의 단결']),
+        note: '질풍차기, 소생의 안개, 집중의 천둥 차와 기의 고치를 평소보다 빠르게 다시 씁니다.',
+        segments: [[20, 14], [57, 14], [86, 12]],
       },
       {
-        label: '외부 생존기',
+        label: '실제 피해 천신합일',
+        skill: findSkillByNames(data, ['천신합일']),
+        note: '근거리 다수 부상과 지속 피해에 맞춥니다. 과치유가 크면 구간 선택부터 바꿉니다.',
+        segments: [[18, 20], [66, 20]],
+      },
+      {
+        label: '기의 고치와 마나',
         skill: findSkillByNames(data, ['기의 고치']),
-        note: '죽기 직전이 아니라 예고된 대상 피해 전에 예약합니다.',
-        segments: [[28, 14], [76, 14]],
+        note: '예고된 단일 피해를 막고 원기 회복으로 얻은 마나 차 중첩을 안전한 순간에 마십니다.',
+        segments: [[27, 13], [58, 13], [88, 10]],
       },
       {
-        label: '공대 복구',
+        label: '위론 포용 구간',
+        skill: findSkillByNames(data, ['옥룡 위론의 원령', '포용의 안개', '영혼의 샘']),
+        note: '천신합일과 다른 긴 피해에 위론을 배정하고 포용의 안개를 부상자에게 나눕니다.',
+        segments: [[40, 22], [78, 20]],
+      },
+      {
+        label: '별도 광역 재활',
         skill: findSkillByNames(data, ['재활']),
-        note: '큰 광역 피해 뒤 즉시 회수하는 대형 쿨기입니다.',
-        segments: [[46, 16], [90, 8]],
+        note: '천신합일과 위론이 없는 다음 광역 피해를 즉시 회수하도록 따로 남깁니다.',
+        segments: [[46, 14], [90, 8]],
       },
       {
-        label: '천신 구간',
-        skill: findSkillByNames(data, ['천신합일', '옥룡의 마음']),
-        note: '소생의 안개와 생기 충전 준비가 있을 때 큰 피해 파동에 맞춥니다.',
-        segments: [[20, 20], [70, 18]],
-      },
-      {
-        label: '저장 치유',
-        skill: findSkillByNames(data, ['조화의 형', '셰이룬의 선물', '영혼의 샘']),
-        note: '조화의 형/셰이룬 계열은 저장한 회복량을 어느 피해 파동에 풀지 봅니다.',
-        segments: [[32, 14], [78, 14]],
+        label: '쐐기 공격 치유',
+        skill: findSkillByNames(data, ['비취불꽃의 가르침', '해오름차기', '고대의 가르침']),
+        note: '회전 학다리차기만 반복하지 않고 단일 공격과 직접 치유를 피해 강도에 맞춰 섞습니다.',
+        segments: [[5, 32], [42, 25], [72, 26]],
       },
     ];
   }
@@ -4328,67 +4693,61 @@ function getUptimeRows(guide, data) {
       {
         label: '중심 생성',
         skill: findSkillByNames(data, ['신성 충격']),
-        note: '신성한 힘과 빛 주입을 여는 중심 생성기입니다.',
+        note: '6초마다 신성한 힘 1을 만들고 10% 확률로 빛 주입을 여는 중심 생성기입니다.',
         segments: [[5, 7], [20, 7], [36, 7], [53, 7], [71, 7], [88, 7]],
       },
       {
-        label: '봉화망',
-        skill: findSkillByNames(data, ['빛의 봉화', '신념의 봉화']),
-        note: '실제 피해 분포와 특화 거리 조건에 맞는 치유 전달 경로입니다.',
+        label: '영구 봉화',
+        skill: findSkillByNames(data, ['빛의 봉화', '신념의 봉화', '구세주의 봉화']),
+        note: '지속 피해 대상과 현재 생명력이 가장 낮은 대상에게 직접 치유를 전달합니다.',
         segments: [[0, 100]],
       },
       {
-        label: '자동 봉화',
-        skill: findSkillByNames(data, ['구세주의 봉화']),
-        note: '낮은 체력 대상을 따라가며 단일 사고를 줄이는 보조 봉화입니다.',
-        segments: [[10, 18], [42, 20], [72, 20]],
+        label: '9초 봉화',
+        skill: findSkillByNames(data, ['고결의 봉화', '빛의 기둥']),
+        note: '쐐기 광역 피해 직전에 켜고 직접 치유와 소비기를 9초 안에 넣습니다.',
+        segments: [[12, 18], [45, 18], [76, 18]],
       },
       {
-        label: '발동 분기',
+        label: '빛 주입 소비',
         skill: findSkillByNames(data, ['빛 주입']),
-        note: '치유 압박은 빛의 섬광, 안정 구간은 심판으로 소비합니다.',
+        note: '급한 회복은 빛의 섬광, 여유 구간은 심판으로 빠르게 소비합니다.',
         segments: [[18, 8], [40, 8], [63, 8], [84, 8]],
       },
       {
-        label: '단일 소모',
+        label: '단일 소비',
         skill: findSkillByNames(data, ['영광의 서약', '영원의 불꽃']),
-        note: '한 명이 죽을 위험일 때 신성한 힘을 즉시 치유로 비웁니다.',
+        note: '12.1 기본 소비기입니다. 한 명이 죽을 위험일 때 가장 먼저 사용합니다.',
         segments: [[26, 9], [59, 9], [82, 9]],
       },
       {
-        label: '광역 소모',
+        label: '조건부 광역',
         skill: findSkillByNames(data, ['여명의 빛']),
-        note: '넓은 피해 직후 여러 대상을 회수하는 신성한 힘 소비기입니다.',
+        note: '단일 소비기가 크게 넘칠 만큼 여러 명이 비슷하게 다쳤을 때 사용합니다.',
         segments: [[32, 11], [66, 11], [90, 8]],
       },
       {
-        label: '새벽빛 구간',
+        label: '태양의 사자',
         skill: findSkillByNames(data, ['천상의 종', '신성한 반사', '새벽빛']),
-        note: '태양의 사자에서 새벽빛과 태양의 화신 대상 선정을 여는 짧은 쿨다운입니다.',
+        note: '천상의 종 또는 신성한 반사 뒤 다음 두 소비기로 새벽빛을 적용합니다.',
         segments: [[14, 12], [48, 12], [78, 12]],
       },
       {
-        label: '피해 감소',
-        skill: findSkillByNames(data, ['오라 숙련']),
-        note: '큰 피해 직전에 예약해야 하는 방어 쿨다운입니다.',
+        label: '피해 전 완화',
+        skill: findSkillByNames(data, ['오라 숙련', '천상의 울림']),
+        note: '큰 피해 전에 사용하고 자동 천상의 종의 신성한 힘까지 계산합니다.',
         segments: [[30, 10], [76, 10]],
       },
       {
-        label: '장기 회복',
-        skill: findSkillByNames(data, ['티르의 해방']),
-        note: '큰 피해 전후의 후속 치유를 길게 만드는 구간입니다.',
-        segments: [[38, 20], [84, 14]],
-      },
-      {
-        label: '날개 구간',
-        skill: findSkillByNames(data, ['응징의 격노', '응징의 성전사']),
-        note: '치유량 강화 또는 심판/성전사의 일격 회복 전환 구간입니다.',
+        label: '격노와 티르',
+        skill: findSkillByNames(data, ['응징의 격노', '티르의 해방']),
+        note: '티르의 해방은 별도 버튼이 아니라 응징의 격노에 자동 발동합니다.',
         segments: [[22, 24], [68, 24]],
       },
       {
-        label: '무장 분기',
-        skill: findSkillByNames(data, ['신성한 무기', '신성한 보루']),
-        note: '빛대장장이 선택 시 대상 보호와 치유/피해 보조, 신성한 힘 생성을 함께 봅니다.',
+        label: '빛대장장이',
+        skill: findSkillByNames(data, ['신성한 무기', '신성한 보루', '천상의 인도']),
+        note: '무장을 피해 전에 배치하고 신성한 힘 소비 뒤 강화 신성화를 사용합니다.',
         segments: [[16, 12], [52, 12], [80, 12]],
       },
     ];
@@ -4792,52 +5151,52 @@ function getUptimeRows(guide, data) {
   if (guide.id === 'evoker-preservation') {
     return [
       {
-        label: '사전 기반',
-        skill: findSkillByNames(data, ['시간 변칙']),
-        note: '피해 전에 메아리 기반과 흡수 준비를 만드는 출발점입니다.',
-        segments: [[6, 18], [46, 18], [78, 14]],
-      },
-      {
-        label: '중심 스킬',
-        skill: findSkillByNames(data, ['메아리']),
-        note: '다음 핵심 치유를 받을 대상을 미리 정하는 보존의 중심 흐름입니다.',
-        segments: [[12, 32], [52, 30]],
-      },
-      {
-        label: '핵심 소비',
-        skill: findSkillByNames(data, ['메리스라의 축복']),
-        note: '준비된 메아리를 가장 높은 가치로 소비하는 후보입니다.',
-        segments: [[26, 12], [66, 12]],
-      },
-      {
-        label: '지속 안정',
-        skill: findSkillByNames(data, ['되감기']),
-        note: '반복 피해 대상과 은총의 시간 계열 안정성을 만듭니다.',
-        segments: [[18, 36], [60, 30]],
-      },
-      {
-        label: '전방 치유',
+        label: '숨결 지속 치유',
         skill: findSkillByNames(data, ['꿈의 숨결']),
-        note: '각도와 강화 단계가 맞을 때 광역 회복 구간이 됩니다.',
-        segments: [[30, 14], [70, 14]],
+        note: '평소 1단계로 16초 지속 치유를 남기고 메리스라의 축복을 확정합니다.',
+        segments: [[2, 28], [42, 26], [78, 20]],
       },
       {
-        label: '저장 쿨기',
+        label: '광역 준비',
+        skill: findSkillByNames(data, ['시간 변칙']),
+        note: '피해 직전에 흡수와 최대 다섯 명의 약한 메아리를 경로에 배치합니다.',
+        segments: [[12, 14], [50, 14], [84, 12]],
+      },
+      {
+        label: '우선 대상',
+        skill: findSkillByNames(data, ['메아리']),
+        note: '탱커, 치유 흡수, 위험 디버프 대상에 직접 메아리를 더합니다.',
+        segments: [[18, 16], [56, 16], [88, 10]],
+      },
+      {
+        label: '축복 회수',
+        skill: findSkillByNames(data, ['메리스라의 축복']),
+        note: '되감기 자리에 나타난 실제 주문을 눌러 각 메아리에서 전체 튕김과 되감기 효과를 반복합니다.',
+        segments: [[28, 12], [66, 12], [92, 7]],
+      },
+      {
+        label: '무료 꽃',
+        skill: findSkillByNames(data, ['에메랄드 꽃']),
+        note: '정수 폭발로 다친 아군에게 사용해 시즌 세트와 쌍둥이 메아리를 연결합니다.',
+        segments: [[34, 13], [72, 13]],
+      },
+      {
+        label: '화염 흡수',
+        skill: findSkillByNames(data, ['화염 흡수']),
+        note: '꽃, 묘목, 신록의 품이 꿈의 숨결 지속시간 일부를 해당 대상의 즉시 회복으로 바꿉니다.',
+        segments: [[36, 18], [74, 18]],
+      },
+      {
+        label: '저장과 방출',
         skill: findSkillByNames(data, ['정지장']),
-        note: '저장 순서와 방출 시점이 피해 타이머와 맞아야 합니다.',
-        segments: [[10, 10], [38, 10], [58, 10]],
+        note: '꿈의 숨결, 시간 변칙, 축복을 미리 저장하고 다음 큰 피해에 같은 순서로 방출합니다.',
+        segments: [[8, 8], [46, 8]],
       },
       {
-        label: '피해 후 복구',
-        skill: findSkillByNames(data, ['되돌리기']),
-        note: '큰 피해가 실제로 들어온 뒤 쓰는 대형 복구 버튼입니다.',
-        segments: [[42, 12], [86, 10]],
-      },
-      {
-        label: '경로 회복',
-        skill: findSkillByNames(data, ['꿈의 비행']),
-        note: '아군이 지나는 경로와 공대 생존기 순서를 보고 배정합니다.',
-        segments: [[72, 18]],
+        label: '대형 복구',
+        skill: findSkillByNames(data, ['되돌리기', '꿈의 비행']),
+        note: '되돌리기는 지난 5초 피해 직후, 꿈의 비행은 안전한 경로로 실제 피해자를 가로지를 때 사용합니다.',
+        segments: [[58, 12], [88, 10]],
       },
     ];
   }
@@ -5076,28 +5435,28 @@ function SynergyNetworkChart({ guide, data }) {
 }
 
 const Page = styled.div`
-  width: min(1320px, calc(100vw - 32px));
-  max-width: calc(100vw - 32px);
+  width: min(1240px, calc(100vw - 40px));
+  max-width: calc(100vw - 40px);
   margin: 0 auto;
-  padding: 34px 0 92px;
+  padding: 28px 0 104px;
   overflow-x: hidden;
   min-width: 0;
 
   @media (max-width: 560px) {
     width: calc(100vw - 20px);
     max-width: calc(100vw - 20px);
-    padding-top: 34px;
+    padding-top: 20px;
   }
 `;
 
 const Hero = styled.header`
   min-width: 0;
   overflow: hidden;
-  border: 1px solid rgba(184, 145, 91, 0.25);
-  border-left: 4px solid ${props => props.$color};
+  border-top: 3px solid ${props => props.$color};
+  border-bottom: 1px solid rgba(168, 178, 188, 0.16);
   background:
-    linear-gradient(135deg, ${props => props.$tone} 0%, rgba(13, 18, 22, 0) 52%),
-    #0d1216;
+    linear-gradient(110deg, ${props => props.$tone} 0%, rgba(13, 18, 22, 0) 58%),
+    rgba(13, 18, 22, 0.58);
 `;
 
 const HeroTop = styled.div`
@@ -5105,8 +5464,8 @@ const HeroTop = styled.div`
   justify-content: space-between;
   gap: 12px;
   align-items: center;
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(184, 145, 91, 0.2);
+  padding: 13px 4px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.11);
   min-width: 0;
 `;
 
@@ -5117,21 +5476,26 @@ const BackLink = styled(Link)`
   min-width: 0;
   color: #c7bba7;
   font-size: 0.82rem;
-  font-weight: 900;
+  font-weight: 650;
+
+  &:focus-visible {
+    outline: 2px solid #d5b97d;
+    outline-offset: 4px;
+  }
 `;
 
 const PatchBadge = styled.div`
   flex: 0 0 auto;
-  color: #f4efe5;
+  color: #d6dde2;
   font-size: 0.78rem;
-  font-weight: 900;
+  font-weight: 700;
 `;
 
 const HeroGrid = styled.div`
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
-  gap: 24px;
-  padding: clamp(18px, 4vw, 34px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+  gap: clamp(24px, 5vw, 64px);
+  padding: clamp(28px, 5vw, 52px) 4px;
   min-width: 0;
 
   @media (max-width: 920px) {
@@ -5140,70 +5504,78 @@ const HeroGrid = styled.div`
 `;
 
 const HeroEyebrow = styled.div`
-  color: #b8915b;
+  color: #d2b373;
   font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-weight: 750;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
 const HeroTitle = styled.h1`
   margin-top: 8px;
-  color: #f4efe5;
-  font-size: clamp(2rem, 5vw, 4rem);
+  color: #f2f4f5;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.12;
   letter-spacing: 0;
   word-break: keep-all;
+  text-wrap: balance;
 `;
 
 const HeroLead = styled.p`
-  max-width: 850px;
-  margin-top: 14px;
-  color: #d8cbb7;
+  max-width: 72ch;
+  margin-top: 16px;
+  color: #c3cbd1;
   font-size: 1rem;
-  font-weight: 750;
+  font-weight: 480;
+  line-height: 1.78;
   word-break: keep-all;
   overflow-wrap: anywhere;
+  text-wrap: pretty;
 `;
 
 const HeroStats = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 0;
   min-width: 0;
+  align-self: end;
+  border-top: 1px solid rgba(168, 178, 188, 0.16);
+  border-left: 1px solid rgba(168, 178, 188, 0.16);
 
-  @media (max-width: 420px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 const HeroStat = styled.div`
   min-width: 0;
-  min-height: 82px;
-  padding: 14px;
-  border: 1px solid rgba(184, 145, 91, 0.24);
-  background: #0a0f13;
+  min-height: 70px;
+  padding: 12px 14px;
+  border-right: 1px solid rgba(168, 178, 188, 0.16);
+  border-bottom: 1px solid rgba(168, 178, 188, 0.16);
+  background: rgba(8, 13, 17, 0.48);
 
   span {
-    color: #8d9aa3;
+    color: #8e9aa3;
     font-size: 0.72rem;
-    font-weight: 900;
+    font-weight: 650;
     text-transform: uppercase;
   }
 
   strong {
     display: block;
-    margin-top: 8px;
-    color: #f4efe5;
-    font-size: 1.55rem;
-    line-height: 1;
+    margin-top: 7px;
+    color: #eef1f3;
+    font-size: 0.88rem;
+    font-weight: 720;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
   }
 `;
 
 const GuideLayout = styled.div`
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 20px;
-  margin-top: 22px;
+  grid-template-columns: 210px minmax(0, 930px);
+  justify-content: center;
+  gap: clamp(28px, 4vw, 52px);
+  margin-top: 36px;
 
   @media (max-width: 980px) {
     grid-template-columns: 1fr;
@@ -5212,63 +5584,148 @@ const GuideLayout = styled.div`
 
 const GuideNav = styled.nav`
   position: sticky;
-  top: 86px;
+  top: 78px;
   align-self: start;
   display: grid;
-  gap: 6px;
-  padding: 14px;
-  border: 1px solid rgba(184, 145, 91, 0.22);
-  background: #0d1216;
+  gap: 2px;
+  max-height: calc(100vh - 100px);
+  padding: 2px 14px 12px 0;
+  overflow-y: auto;
+  border-right: 1px solid rgba(168, 178, 188, 0.14);
+  background: transparent;
 
   @media (max-width: 980px) {
     position: static;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: flex;
+    gap: 0;
+    max-width: 100%;
+    padding: 0 0 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 0;
+    border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 
 const GuideNavTitle = styled.div`
-  color: #f4efe5;
-  font-size: 0.84rem;
-  font-weight: 900;
+  margin-bottom: 8px;
+  color: #eef1f3;
+  font-size: 0.76rem;
+  font-weight: 750;
 
   @media (max-width: 980px) {
-    grid-column: 1 / -1;
+    display: none;
   }
 `;
 
 const GuideNavLink = styled.a`
+  display: grid;
+  grid-template-columns: ${props => props.$chapter ? '24px minmax(0, 1fr)' : 'minmax(0, 1fr)'};
+  align-items: baseline;
+  gap: 6px;
   min-width: 0;
-  padding: 8px 0;
-  color: #c7bba7;
-  font-size: 0.82rem;
-  font-weight: 850;
-  border-top: 1px solid rgba(244, 239, 229, 0.06);
+  padding: ${props => props.$chapter ? '6px 0' : '8px 0'};
+  color: ${props => props.$chapter ? '#919da6' : '#cbd2d7'};
+  font-size: ${props => props.$chapter ? '0.72rem' : '0.8rem'};
+  font-weight: ${props => props.$chapter ? 540 : 700};
+  border-left: 2px solid transparent;
   word-break: keep-all;
+  line-height: 1.42;
+
+  small {
+    color: #7d8991;
+    font-size: 0.64rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #f2f4f5;
+    border-left-color: #d2b373;
+    padding-left: 8px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 980px) {
+    display: inline-flex;
+    flex: 0 0 auto;
+    padding: 7px 12px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus-visible {
+      padding-left: 12px;
+      border-left-color: transparent;
+      border-bottom-color: #d2b373;
+    }
+
+    small {
+      display: none;
+    }
+  }
+`;
+
+const GuideNavChapterGroup = styled.div`
+  display: grid;
+  gap: 0;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(168, 178, 188, 0.1);
+
+  @media (max-width: 980px) {
+    display: contents;
+  }
+`;
+
+const GuideNavGroupLabel = styled.div`
+  margin-bottom: 5px;
+  color: #75818a;
+  font-size: 0.65rem;
+  font-weight: 720;
+
+  @media (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const Article = styled.article`
   display: grid;
-  gap: 18px;
+  gap: 0;
   min-width: 0;
 `;
 
 const SectionBlock = styled.section`
   min-width: 0;
   scroll-margin-top: clamp(96px, 14vh, 150px);
-  padding: clamp(16px, 3vw, 22px);
-  border: 1px solid rgba(184, 145, 91, 0.22);
-  background:
-    linear-gradient(90deg, rgba(184, 145, 91, 0.035) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(184, 145, 91, 0.035) 1px, transparent 1px),
-    #10161b;
-  background-size: 32px 32px;
+  padding: 34px 0 42px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.13);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &#guide-core {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const SectionHead = styled.div`
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 `;
 
 const SectionIcon = styled.div`
@@ -5277,29 +5734,30 @@ const SectionIcon = styled.div`
   place-items: center;
   width: 34px;
   height: 34px;
-  color: #f4efe5;
-  border: 1px solid rgba(184, 145, 91, 0.32);
-  background: #0a0f13;
+  color: #d9bd7b;
+  border: 1px solid rgba(168, 178, 188, 0.18);
+  background: rgba(13, 18, 22, 0.66);
 `;
 
 const SectionKicker = styled.div`
-  color: #b8915b;
+  color: #95a1a9;
   font-size: 0.68rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-weight: 680;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
 const SectionTitle = styled.h2`
-  color: #f4efe5;
-  font-size: clamp(1.24rem, 3vw, 1.8rem);
+  color: #eef1f3;
+  font-size: clamp(1.28rem, 2.4vw, 1.72rem);
   letter-spacing: 0;
+  text-wrap: balance;
 `;
 
 const SummaryGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
 
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
@@ -5307,33 +5765,34 @@ const SummaryGrid = styled.div`
 `;
 
 const SummaryItem = styled.div`
-  min-height: 132px;
-  padding: 14px;
-  border: 1px solid rgba(184, 145, 91, 0.2);
-  background: #0d1216;
+  min-width: 0;
+  padding: 16px 0 18px;
+  border-top: 1px solid rgba(168, 178, 188, 0.13);
 `;
 
 const SummaryLabel = styled.div`
-  color: #b8915b;
+  color: #d2b373;
   font-size: 0.72rem;
-  font-weight: 900;
+  font-weight: 720;
 `;
 
 const SummaryText = styled.p`
   margin-top: 10px;
-  color: #d8cbb7;
-  font-size: 0.9rem;
-  font-weight: 750;
+  color: #c7cfd4;
+  font-size: 0.92rem;
+  font-weight: 470;
+  line-height: 1.72;
   word-break: keep-all;
+  text-wrap: pretty;
 `;
 
 const ManuscriptStatus = styled.div`
   display: inline-flex;
   width: max-content;
   max-width: 100%;
-  color: #b8915b;
+  color: #d2b373;
   font-size: 0.72rem;
-  font-weight: 950;
+  font-weight: 720;
   line-height: 1.2;
   white-space: nowrap;
   text-transform: uppercase;
@@ -5346,32 +5805,31 @@ const ManuscriptMeta = styled.div`
 
   span {
     padding: 7px 9px;
-    color: #d8cbb7;
-    border: 1px solid rgba(244, 239, 229, 0.1);
-    background: rgba(8, 13, 17, 0.72);
+    color: #aeb8be;
+    border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+    background: transparent;
     font-size: 0.72rem;
-    font-weight: 900;
+    font-weight: 620;
   }
 `;
 
 const PaperLead = styled.div`
+  order: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
   align-items: start;
   min-width: 0;
-  padding: clamp(16px, 3vw, 22px);
-  border-left: 4px solid ${props => props.$color};
-  background:
-    linear-gradient(135deg, ${props => props.$color}1a 0%, rgba(13, 18, 22, 0.94) 58%),
-    #0d1216;
+  padding: 18px 20px;
+  border-left: 3px solid ${props => props.$color};
+  background: ${props => `${props.$color}0d`};
 
   p {
     margin-top: 8px;
-    color: #f4efe5;
-    font-size: clamp(0.98rem, 2vw, 1.08rem);
-    font-weight: 780;
-    line-height: 1.8;
+    color: #e3e7e9;
+    font-size: 1rem;
+    font-weight: 520;
+    line-height: 1.76;
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
@@ -5382,18 +5840,19 @@ const PaperLead = styled.div`
 `;
 
 const PaperBody = styled.div`
+  order: 6;
   display: grid;
-  gap: 26px;
-  margin-top: 26px;
+  gap: 0;
+  margin-top: 38px;
 `;
 
 const PaperSection = styled.section`
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 286px);
-  gap: clamp(14px, 2vw, 22px);
+  grid-template-columns: ${props => props.$fullWidth ? 'minmax(0, 1fr)' : 'minmax(0, 1fr) minmax(220px, 286px)'};
+  gap: clamp(20px, 3vw, 36px);
   min-width: 0;
-  padding-top: 22px;
-  border-top: 1px solid rgba(244, 239, 229, 0.08);
+  padding: 38px 0;
+  border-top: 1px solid rgba(168, 178, 188, 0.12);
   scroll-margin-top: clamp(96px, 14vh, 150px);
 
   &:first-child {
@@ -5403,18 +5862,20 @@ const PaperSection = styled.section`
 
   h3 {
     scroll-margin-top: clamp(96px, 14vh, 150px);
-    color: #f4efe5;
-    font-size: clamp(1.08rem, 2.4vw, 1.42rem);
-    line-height: 1.28;
+    color: #eef1f3;
+    font-size: clamp(1.15rem, 2vw, 1.48rem);
+    line-height: 1.38;
     letter-spacing: 0;
+    text-wrap: balance;
   }
 
   p {
     margin-top: 12px;
-    color: #d8cbb7;
-    font-size: 0.96rem;
-    font-weight: 720;
-    line-height: 1.86;
+    max-width: 74ch;
+    color: #c7cfd4;
+    font-size: 1rem;
+    font-weight: 450;
+    line-height: 1.9;
     word-break: keep-all;
     text-wrap: pretty;
   }
@@ -5425,13 +5886,15 @@ const PaperSection = styled.section`
 `;
 
 const GuideDigestGrid = styled.div`
+  order: 5;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 26px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(168, 178, 188, 0.13);
 
   @media (max-width: 980px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   @media (max-width: 560px) {
@@ -5439,55 +5902,240 @@ const GuideDigestGrid = styled.div`
   }
 `;
 
-const GuideDigestCard = styled.article`
+const GuideDigestCard = styled.a`
   min-width: 0;
-  padding: 12px;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  padding: 13px 0;
   color: inherit;
   text-decoration: none;
-  border: 1px solid rgba(184, 145, 91, 0.18);
-  background: rgba(11, 16, 20, 0.74);
-  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.1);
+  transition: color 160ms ease, border-color 160ms ease;
 
   span {
-    display: inline-flex;
-    color: #b8915b;
+    grid-row: 1 / 3;
+    color: #88949c;
     font-size: 0.68rem;
-    font-weight: 950;
-    letter-spacing: 0.08em;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
   }
 
   strong {
     display: block;
-    margin-top: 8px;
-    color: #f4efe5;
-    font-size: 0.86rem;
-    line-height: 1.35;
+    color: #dfe4e7;
+    font-size: 0.88rem;
+    font-weight: 680;
+    line-height: 1.42;
     word-break: keep-all;
   }
 
   p {
     display: -webkit-box;
-    margin-top: 8px;
+    margin-top: 4px;
     overflow: hidden;
-    color: #a99e91;
-    font-size: 0.74rem;
-    font-weight: 720;
-    line-height: 1.5;
+    color: #89959d;
+    font-size: 0.73rem;
+    font-weight: 450;
+    line-height: 1.48;
     word-break: keep-all;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
 
   &:hover {
-    transform: translateY(-1px);
-    border-color: rgba(184, 145, 91, 0.42);
-    background: rgba(15, 22, 27, 0.88);
+    border-color: #d2b373;
+
+    strong {
+      color: #ffffff;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 3px;
   }
 `;
 
 const PaperSectionBody = styled.div`
   min-width: 0;
-  max-width: 82ch;
+  max-width: ${props => props.$wide ? 'none' : '74ch'};
+`;
+
+const PracticalTipSection = styled.div`
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  border-top: 2px solid ${props => props.$color};
+  background: transparent;
+  container-type: inline-size;
+`;
+
+const PracticalTipHeader = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 18px 0 16px;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+
+  > div {
+    min-width: 0;
+  }
+
+  > div:first-child {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  @container (min-width: 900px) {
+    gap: 11px;
+
+    > div:first-child {
+      align-items: baseline;
+    }
+  }
+
+  @container (min-width: 760px) and (max-width: 899px) {
+    gap: 10px;
+  }
+`;
+
+const PracticalTipIntro = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 8px;
+  min-width: 0;
+
+  @container (min-width: 640px) and (max-width: 899px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 12px;
+  }
+
+  @container (min-width: 900px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px 12px;
+  }
+
+  @container (min-width: 1180px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px 12px;
+  }
+
+  p {
+    display: -webkit-box;
+    margin: 0;
+    max-width: none;
+    overflow: hidden;
+    color: #d8cbb7;
+    font-size: 0.84rem;
+    font-weight: 720;
+    line-height: 1.52;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  @container (max-width: 520px) {
+    p {
+      display: block;
+      overflow: visible;
+      font-size: 0.84rem;
+      line-height: 1.58;
+      -webkit-line-clamp: initial;
+    }
+  }
+`;
+
+const PracticalTipGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 14px;
+
+  @container (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const PracticalTipItem = styled.article`
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  column-gap: 9px;
+  row-gap: 4px;
+  min-width: 0;
+  min-height: 0;
+  padding: 13px 2px 14px;
+  border-bottom: 1px solid ${props => props.$primary ? `${props.$color}66` : 'rgba(168, 178, 188, 0.12)'};
+  background: transparent;
+
+  @container (min-width: 1080px) {
+    grid-template-columns: 72px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  @container (min-width: 780px) {
+    &[data-primary-tip='true'] {
+      grid-column: span 1;
+    }
+  }
+
+  span {
+    width: max-content;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2px;
+    min-height: 20px;
+    padding: 0 7px;
+    color: #d5b97d;
+    border: 0;
+    border-left: 2px solid ${props => props.$primary ? props.$color : '#68757e'};
+    background: transparent;
+    font-size: 0.62rem;
+    font-weight: 950;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    margin: 0;
+    color: #d7dde0;
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 1.68;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+  }
+
+  @container (max-width: 520px) {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 11px 12px;
+    row-gap: 6px;
+
+    span {
+      min-height: 0;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.54;
+    }
+  }
 `;
 
 const SectionNumber = styled.div`
@@ -5499,6 +6147,7 @@ const SectionNumber = styled.div`
 `;
 
 const TakeawayPanel = styled.aside`
+  grid-column: ${props => props.$wide ? '1 / -1' : 'auto'};
   align-self: start;
   min-width: 0;
   padding: 13px;
@@ -5523,19 +6172,23 @@ const TakeawayLabel = styled.div`
 
 const TakeawayList = styled.ul`
   display: grid;
-  gap: 9px;
+  grid-template-columns: ${props => props.$columns ? 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))' : '1fr'};
+  gap: ${props => props.$columns ? '10px 14px' : '9px'};
   margin: 10px 0 0;
   padding: 0;
   list-style: none;
 
   li {
     position: relative;
+    min-width: 0;
     padding-left: 13px;
     color: #efe4d4;
     font-size: 0.82rem;
     font-weight: 760;
     line-height: 1.58;
     word-break: keep-all;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
   }
 
   li::before {
@@ -5547,6 +6200,11 @@ const TakeawayList = styled.ul`
     height: 5px;
     border-radius: 50%;
     background: #b8915b;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: 9px;
   }
 `;
 
@@ -5624,6 +6282,7 @@ const ChartDefinitionItem = styled.div`
 `;
 
 const FieldGuideGrid = styled.div`
+  order: 4;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
@@ -5648,7 +6307,415 @@ const FieldGuideCard = styled.div`
   }
 `;
 
+const TipGuideCard = styled(FieldGuideCard)`
+  grid-column: 1 / -1;
+  width: 100%;
+  container-type: inline-size;
+
+  > div:first-child {
+    padding: 10px 12px;
+  }
+
+  @media (max-width: 980px) {
+    grid-column: 1 / -1;
+  }
+`;
+
+const HeroBranchSection = styled.section`
+  order: 2;
+  min-width: 0;
+  grid-column: 1 / -1;
+  margin: 34px 0 8px;
+  overflow: hidden;
+  border-top: 2px solid ${props => props.$color || 'rgba(184, 145, 91, 0.72)'};
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+  background: transparent;
+  container-type: inline-size;
+`;
+
+const HeroBranchSectionHead = styled.div`
+  border-bottom: 1px solid rgba(168, 178, 188, 0.1);
+
+  span {
+    display: block;
+    margin-top: 4px;
+    color: #9da6ad;
+    font-size: 0.76rem;
+    font-weight: 760;
+    line-height: 1.45;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const HeroBranchTabs = styled.div`
+  display: flex;
+  gap: 0;
+  padding: 14px 14px 0;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+`;
+
+const HeroBranchTab = styled.button`
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-bottom: 2px solid ${props => props.$active ? props.$color : 'transparent'};
+  background: transparent;
+  color: ${props => props.$active ? '#f2f4f5' : '#8f9aa2'};
+  font-size: 0.86rem;
+  font-weight: ${props => props.$active ? 740 : 560};
+  transition: color 160ms ease, border-color 160ms ease;
+
+  &:hover {
+    color: #f2f4f5;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: -2px;
+  }
+`;
+
+const HeroBranchGrid = styled(FieldGuideGrid)`
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  margin: 0;
+  padding: 18px 14px 14px;
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+`;
+
+const HeroBranchCard = styled.article`
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  border: 1px solid rgba(168, 178, 188, 0.12);
+  border-left: 3px solid ${props => props.$color || '#b8915b'};
+  padding-bottom: 0;
+  overflow: hidden;
+  background: rgba(10, 15, 19, 0.46);
+`;
+
+const HeroBranchCardTop = styled.div`
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+`;
+
+const HeroBranchTitle = styled.div`
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+
+  span {
+    color: #9da6ad;
+    font-size: 0.62rem;
+    font-weight: 950;
+    line-height: 1.15;
+  }
+
+  strong {
+    color: #f4efe5;
+    font-size: clamp(0.98rem, 1.6vw, 1.18rem);
+    font-weight: 980;
+    line-height: 1.18;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const HeroBranchReason = styled.div`
+  display: grid;
+  gap: 6px;
+  margin: 0 14px;
+  padding: 10px;
+  border-left: 2px solid rgba(210, 179, 115, 0.42);
+  background: transparent;
+
+  span {
+    color: #b8915b;
+    font-size: 0.68rem;
+    font-weight: 950;
+  }
+
+  p {
+    margin: 0;
+    color: #c7cfd4;
+    font-size: 0.82rem;
+    font-weight: 480;
+    line-height: 1.68;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const HeroBranchSkillBlock = styled.div`
+  display: grid;
+  gap: 8px;
+  padding: 0 14px;
+
+  > span {
+    color: #9da6ad;
+    font-size: 0.68rem;
+    font-weight: 950;
+  }
+`;
+
+const HeroBranchSkillList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 100%;
+    padding: 5px 9px 5px 6px;
+    border: 1px solid rgba(244, 239, 229, 0.1);
+    background: rgba(8, 13, 17, 0.42);
+  }
+
+  span {
+    min-width: 0;
+    color: #f4efe5;
+    font-size: 0.76rem;
+    font-weight: 900;
+    line-height: 1.25;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const HeroBranchFlowStrip = styled.div`
+  display: grid;
+  gap: 9px;
+  margin: 0 14px;
+  padding: 11px 12px;
+  border: 1px solid ${props => `${props.$color || '#b8915b'}55`};
+  background:
+    linear-gradient(90deg, ${props => `${props.$color || '#b8915b'}22`}, rgba(8, 13, 17, 0.1)),
+    rgba(8, 13, 17, 0.48);
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  span {
+    color: #f4efe5;
+    font-size: 0.72rem;
+    font-weight: 980;
+    line-height: 1.2;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin: 0;
+    color: #efe4d4;
+    font-size: 0.82rem;
+    font-weight: 780;
+    line-height: 1.58;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @container (max-width: 520px) {
+    > div {
+      display: grid;
+      justify-content: stretch;
+    }
+  }
+`;
+
+const HeroBranchFlowIcons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+
+  @container (max-width: 520px) {
+    justify-content: flex-start;
+  }
+`;
+
+const HeroBranchFocusList = styled.ul`
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(244, 239, 229, 0.08);
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(88px, 0.24fr) minmax(0, 1fr);
+    gap: 10px;
+    min-width: 0;
+    padding: 11px 14px;
+    background: rgba(8, 13, 17, 0.34);
+  }
+
+  b {
+    color: #b8915b;
+    font-size: 0.7rem;
+    font-weight: 950;
+    line-height: 1.35;
+    word-break: keep-all;
+  }
+
+  p {
+    margin: 0;
+    color: #e8decd;
+    font-size: 0.8rem;
+    font-weight: 760;
+    line-height: 1.55;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @container (max-width: 520px) {
+    li {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+  }
+`;
+
+const HeroBranchComparison = styled.div`
+  display: grid;
+  gap: 12px;
+  margin: 0 14px 14px;
+  padding: 13px;
+  border: 1px solid rgba(244, 239, 229, 0.1);
+  border-top: 2px solid ${props => props.$color || '#b8915b'};
+  background:
+    linear-gradient(135deg, ${props => `${props.$color || '#b8915b'}16`}, rgba(8, 13, 17, 0.12) 68%),
+    rgba(8, 13, 17, 0.5);
+`;
+
+const HeroBranchComparisonHead = styled.div`
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+
+  strong {
+    color: #f4efe5;
+    font-size: 0.94rem;
+    font-weight: 980;
+    line-height: 1.25;
+    word-break: keep-all;
+  }
+
+  span {
+    color: #9da6ad;
+    font-size: 0.72rem;
+    font-weight: 780;
+    line-height: 1.45;
+    text-align: right;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  @container (max-width: 720px) {
+    display: grid;
+
+    span {
+      text-align: left;
+    }
+  }
+`;
+
+const HeroBranchComparisonBody = styled.div`
+  display: grid;
+  gap: 8px;
+`;
+
+const HeroBranchComparisonRow = styled.div`
+  display: grid;
+  grid-template-columns: minmax(108px, 0.18fr) minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+  align-items: stretch;
+
+  @container (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const HeroBranchComparisonAxis = styled.div`
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 9px 10px;
+  border-left: 3px solid rgba(184, 145, 91, 0.55);
+  background: rgba(244, 239, 229, 0.04);
+  color: #d9b97a;
+  font-size: 0.72rem;
+  font-weight: 960;
+  line-height: 1.35;
+  word-break: keep-all;
+`;
+
+const HeroBranchComparisonCells = styled.div`
+  display: grid;
+  grid-template-columns: repeat(${props => props.$columns || 2}, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+
+  @container (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const HeroBranchComparisonCell = styled.div`
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid rgba(244, 239, 229, 0.08);
+  background: rgba(8, 13, 17, 0.48);
+
+  b {
+    display: block;
+    margin-bottom: 5px;
+    color: #f4efe5;
+    font-size: 0.8rem;
+    font-weight: 960;
+    line-height: 1.3;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin: 0;
+    color: #d8cbb7;
+    font-size: 0.78rem;
+    font-weight: 740;
+    line-height: 1.58;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+  }
+`;
+
 const OpenerFlowCard = styled(FieldGuideCard)`
+  order: 3;
   grid-column: 1 / -1;
   margin: 14px 0 16px;
   overflow: hidden;
@@ -5742,17 +6809,17 @@ const FieldGuideList = styled.ul`
 
   span {
     display: block;
-    color: #b8915b;
+    color: #d2b373;
     font-size: 0.7rem;
-    font-weight: 950;
+    font-weight: 720;
   }
 
   p {
     margin-top: 4px;
-    color: #efe4d4;
-    font-size: 0.82rem;
-    font-weight: 760;
-    line-height: 1.58;
+    color: #cbd2d7;
+    font-size: 0.86rem;
+    font-weight: 480;
+    line-height: 1.68;
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
@@ -5895,8 +6962,12 @@ const OpenerFlowList = styled.ol`
   --flow-line: ${props => `${props.$color || '#b8915b'}70`};
   position: relative;
   display: grid;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(164px, 15cqw, 208px);
+  grid-auto-columns: clamp(220px, 22cqw, 278px);
   align-items: start;
   gap: 22px;
   margin: 0;
@@ -5936,11 +7007,13 @@ const OpenerFlowList = styled.ol`
     min-width: 0;
     min-height: 206px;
     padding: 0;
+    box-sizing: border-box;
     border: 0;
     background: transparent;
     box-shadow: none;
     scroll-snap-align: start;
-    overflow: visible;
+    overflow: hidden;
+    text-align: center;
   }
 
   li::before {
@@ -5995,7 +7068,7 @@ const OpenerFlowList = styled.ol`
     }
 
     li {
-      grid-template-columns: 54px minmax(0, 1fr);
+      grid-template-columns: 60px minmax(0, 1fr);
       grid-template-rows: auto;
       justify-items: start;
       gap: 12px;
@@ -6003,10 +7076,11 @@ const OpenerFlowList = styled.ol`
       padding: 0;
       align-items: start;
       overflow: visible;
+      text-align: left;
     }
 
     li::before {
-      left: 54px;
+      left: 60px;
       right: auto;
       top: 27px;
       bottom: auto;
@@ -6059,7 +7133,7 @@ const OpenerFlowList = styled.ol`
     }
 
     li {
-      grid-template-columns: 54px minmax(0, 1fr);
+      grid-template-columns: 60px minmax(0, 1fr);
       grid-template-rows: auto;
       justify-items: start;
       gap: 12px;
@@ -6070,7 +7144,7 @@ const OpenerFlowList = styled.ol`
     }
 
     li::before {
-      left: 54px;
+      left: 60px;
       right: auto;
       top: 27px;
       bottom: auto;
@@ -6114,6 +7188,7 @@ const OpenerPhase = styled.div`
   font-weight: 950;
   line-height: 1.1;
   word-break: keep-all;
+  overflow-wrap: anywhere;
 
   @media (max-width: 560px) {
     font-size: 0.62rem;
@@ -6180,8 +7255,9 @@ const OpenerStepTop = styled.div`
   @media (max-width: 560px) {
     grid-row: auto;
     align-self: start;
-    width: 54px;
-    height: 54px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
     box-shadow:
       0 0 0 4px rgba(8, 13, 17, 0.9),
       0 0 0 5px rgba(184, 145, 91, 0.14);
@@ -6191,7 +7267,7 @@ const OpenerStepTop = styled.div`
     }
 
     &::after {
-      inset: -8px;
+      inset: 0;
     }
 
     > a,
@@ -6213,7 +7289,9 @@ const OpenerStepBody = styled.div`
   display: grid;
   gap: 7px;
   width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
   padding: 11px;
   border: 1px solid rgba(244, 239, 229, 0.11);
   border-top-color: rgba(184, 145, 91, 0.32);
@@ -6237,17 +7315,21 @@ const OpenerStepBody = styled.div`
 
   strong {
     display: block;
+    min-width: 0;
+    max-width: 100%;
     color: #f4efe5;
     font-size: 0.86rem;
     font-weight: 950;
     line-height: 1.32;
     word-break: keep-all;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     text-wrap: pretty;
   }
 
   p {
     display: -webkit-box;
+    min-width: 0;
+    max-width: 100%;
     margin: 0;
     overflow: hidden;
     color: #b8c2c8;
@@ -6255,7 +7337,7 @@ const OpenerStepBody = styled.div`
     font-weight: 760;
     line-height: 1.5;
     word-break: keep-all;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     text-wrap: pretty;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -6284,6 +7366,7 @@ const OpenerTrigger = styled.span`
   display: inline-flex;
   width: fit-content;
   max-width: 100%;
+  box-sizing: border-box;
   padding: 4px 7px;
   border: 1px solid rgba(244, 239, 229, 0.1);
   border-left-color: rgba(184, 145, 91, 0.42);
@@ -6299,8 +7382,8 @@ const OpenerTrigger = styled.span`
 const OpenerStepNumber = styled.span`
   position: absolute;
   z-index: 2;
-  top: -8px;
-  left: -8px;
+  top: -5px;
+  left: -5px;
   display: grid;
   place-items: center;
   width: 26px;
@@ -6312,8 +7395,8 @@ const OpenerStepNumber = styled.span`
   font-weight: 950;
 
   @media (max-width: 560px) {
-    top: -6px;
-    left: -6px;
+    top: -4px;
+    left: -4px;
     width: 22px;
     height: 22px;
     font-size: 0.62rem;
@@ -6322,31 +7405,46 @@ const OpenerStepNumber = styled.span`
 
 const TipList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 10px 14px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  align-items: stretch;
+  align-content: start;
+  gap: 10px;
   margin: 0;
-  padding: 13px;
+  padding: ${props => props.$compact ? '11px 11px 8px' : '11px'};
+  max-height: none;
+  overflow-y: visible;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(184, 145, 91, 0.52) rgba(8, 13, 17, 0.48);
+  scrollbar-width: thin;
   list-style: none;
 
   li {
     position: relative;
+    display: ${props => props.$expanded ? 'block' : '-webkit-box'};
     min-width: 0;
-    padding: 10px 11px 10px 18px;
-    border-left: 2px solid rgba(184, 145, 91, 0.46);
-    background: rgba(244, 239, 229, 0.035);
-    color: #efe4d4;
-    font-size: 0.82rem;
-    font-weight: 780;
-    line-height: 1.58;
+    min-height: 0;
+    padding: 11px 6px 12px 18px;
+    overflow: ${props => props.$expanded ? 'visible' : 'hidden'};
+    border-bottom: 1px solid rgba(168, 178, 188, 0.11);
+    background: transparent;
+    color: #cbd2d7;
+    font-size: 0.86rem;
+    font-weight: 480;
+    line-height: 1.68;
     word-break: keep-all;
     overflow-wrap: anywhere;
+    text-wrap: pretty;
+    -webkit-line-clamp: ${props => props.$expanded ? 'initial' : 4};
+    -webkit-box-orient: vertical;
   }
 
   li::before {
     content: '';
     position: absolute;
-    top: 18px;
-    left: 7px;
+    top: 21px;
+    left: 5px;
     width: 4px;
     height: 4px;
     border-radius: 999px;
@@ -6354,16 +7452,70 @@ const TipList = styled.ul`
     box-shadow: 0 0 0 3px rgba(184, 145, 91, 0.12);
   }
 
-  @media (max-width: 560px) {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(8, 13, 17, 0.48);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(184, 145, 91, 0.46);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 11px;
+  }
+
+  @container (max-width: 560px) {
     grid-template-columns: 1fr;
     gap: 8px;
     padding: 11px;
 
     li {
+      display: block;
       padding: 9px 10px 9px 17px;
-      font-size: 0.78rem;
-      line-height: 1.5;
+      font-size: 0.84rem;
+      line-height: 1.66;
+      overflow: visible;
+      -webkit-line-clamp: initial;
     }
+  }
+`;
+
+const TipListControls = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 0 12px 12px;
+`;
+
+const TipExpandButton = styled.button`
+  min-height: 34px;
+  padding: 0 14px;
+  color: #f4efe5;
+  border: 1px solid rgba(184, 145, 91, 0.34);
+  background:
+    linear-gradient(180deg, rgba(184, 145, 91, 0.16), rgba(8, 13, 17, 0.48)),
+    #10161b;
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease;
+
+  &:hover {
+    border-color: rgba(184, 145, 91, 0.62);
+    background:
+      linear-gradient(180deg, rgba(184, 145, 91, 0.24), rgba(8, 13, 17, 0.56)),
+      #121a20;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(244, 239, 229, 0.74);
+    outline-offset: 2px;
   }
 `;
 
@@ -6390,14 +7542,26 @@ const ManuscriptPanel = styled.div`
 
 const ManuscriptList = styled.ul`
   display: grid;
-  gap: 8px;
+  grid-template-columns: ${props => props.$columns ? 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))' : '1fr'};
+  gap: ${props => props.$columns ? '10px 16px' : '8px'};
   margin: 12px 0 0;
   padding-left: 18px;
-  color: #c7bba7;
-  font-size: 0.8rem;
-  font-weight: 760;
-  line-height: 1.6;
+  color: #b7c0c6;
+  font-size: 0.86rem;
+  font-weight: 460;
+  line-height: 1.72;
   word-break: keep-all;
+
+  li {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
 `;
 
 const EvidenceGrid = styled.div`
@@ -6644,10 +7808,6 @@ const IconAnchor = styled.a`
     object-fit: cover;
     display: block;
   }
-
-  > span {
-    display: none !important;
-  }
 `;
 
 const IconPlaceholder = styled.span`
@@ -6665,15 +7825,15 @@ const InlineSkillAnchor = styled.a`
   gap: 4px;
   max-width: 100%;
   margin: 0 1px;
-  color: #ffd166;
-  font-weight: 900;
-  line-height: 1.25;
+  color: #e7c46f;
+  font-weight: 680;
+  line-height: 1.35;
   text-decoration: none;
   vertical-align: -0.18em;
   white-space: nowrap;
   word-break: keep-all;
   overflow-wrap: normal;
-  border-bottom: 1px solid rgba(255, 209, 102, 0.42);
+  border-bottom: 1px solid rgba(231, 196, 111, 0.22);
 
   img {
     flex: 0 0 auto;
@@ -6686,8 +7846,13 @@ const InlineSkillAnchor = styled.a`
   }
 
   &:hover {
-    color: #fff1b8;
-    border-bottom-color: rgba(255, 241, 184, 0.84);
+    color: #f7dda0;
+    border-bottom-color: rgba(247, 221, 160, 0.76);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 2px;
   }
 `;
 
@@ -6818,16 +7983,17 @@ const DefensiveList = styled.div`
 
 const DefensiveRow = styled.div`
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr) 86px;
+  grid-template-columns: ${props => props.$detailed ? 'minmax(96px, 128px) minmax(0, 1fr) minmax(92px, 126px)' : '110px minmax(0, 1fr) 86px'};
   gap: 10px;
-  align-items: center;
+  align-items: ${props => props.$detailed ? 'start' : 'center'};
   min-height: 48px;
-  padding: 9px;
+  padding: ${props => props.$detailed ? '11px 12px' : '9px'};
   border: 1px solid rgba(244, 239, 229, 0.08);
-  background: #080d11;
+  background: ${props => props.$detailed ? 'linear-gradient(135deg, rgba(184, 145, 91, 0.08), rgba(8, 13, 17, 0.92))' : '#080d11'};
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 `;
 
@@ -6839,22 +8005,52 @@ const EventTime = styled.div`
 
 const EventName = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   min-width: 0;
   color: #f4efe5;
   font-size: 0.82rem;
   font-weight: 900;
 
+  strong,
   span {
     overflow-wrap: anywhere;
   }
+`;
+
+const EventNameStack = styled.div`
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+
+  strong {
+    color: #f4efe5;
+    font-size: 0.84rem;
+    font-weight: 950;
+    line-height: 1.25;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const EventNote = styled.span`
+  display: block;
+  color: #c7bba7;
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1.48;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
 `;
 
 const EventAction = styled.div`
   color: #c7bba7;
   font-size: 0.72rem;
   font-weight: 850;
+  line-height: 1.38;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 `;
 
 const UptimeChart = styled.div`
@@ -7164,6 +8360,11 @@ const SynergyGraphSvg = styled.svg`
     fill: rgba(184, 145, 91, 0.12);
   }
 
+  .graph-synergy-node .node-hitbox {
+    fill: rgba(8, 13, 17, 0.001);
+    stroke: none;
+  }
+
   .graph-synergy-node .node-body {
     fill: rgba(184, 145, 91, 0.82);
     stroke: rgba(244, 239, 229, 0.55);
@@ -7177,6 +8378,11 @@ const SynergyGraphSvg = styled.svg`
 
   .graph-skill-node .skill-halo {
     fill: ${props => props.$color}22;
+  }
+
+  .graph-skill-node .node-hitbox {
+    fill: rgba(8, 13, 17, 0.001);
+    stroke: none;
   }
 
   .graph-skill-node .skill-frame {
@@ -7324,6 +8530,14 @@ const SynergyGraphSvg = styled.svg`
 
     .graph-secondary .graph-label,
     .synergy-label {
+      display: none;
+    }
+
+    .graph-skill-node .skill-label {
+      display: none;
+    }
+
+    .center-meta {
       display: none;
     }
 

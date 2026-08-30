@@ -1,4 +1,4 @@
-// Enhanced Theme Configuration
+// Theme configuration
 export const theme = {
   colors: {
     // Primary Palette
@@ -75,8 +75,8 @@ export const theme = {
   },
 
   fonts: {
-    main: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif",
-    heading: "'Poppins', 'Inter', 'Noto Sans KR', sans-serif",
+    main: "'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    heading: "'Noto Sans KR', 'Inter', sans-serif",
     mono: "'JetBrains Mono', 'Fira Code', monospace"
   },
 
@@ -116,10 +116,10 @@ export const theme = {
   },
 
   transitions: {
-    fast: 'all 0.15s ease',
-    default: 'all 0.3s ease',
-    slow: 'all 0.5s ease',
-    spring: 'all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+    fast: 'color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease',
+    default: 'color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease',
+    slow: 'color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease',
+    spring: 'color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)'
   }
 };
 

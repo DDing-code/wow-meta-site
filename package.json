@@ -27,6 +27,7 @@
     "validate:guide-manuscripts": "node scripts/validate-guide-manuscripts.js",
     "validate:guide-charts": "node scripts/validate-guide-charts.js",
     "validate:guide-tooltips": "node scripts/validate-guide-tooltips.js",
+    "validate:guide-icons:online": "node scripts/validate-guide-official-icons.js",
     "validate:kb-tooltips": "node scripts/validate-kb-official-tooltips.js",
     "validate:kb-tooltips:online": "node scripts/validate-kb-official-tooltips.js --online",
     "validate:kb-links": "node scripts/validate-kb-official-tooltips.js --strict-links",

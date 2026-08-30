@@ -69,6 +69,23 @@ const AppContainer = styled.div`
   flex-direction: column;
 `;
 
+const SkipLink = styled.a`
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  padding: 9px 12px;
+  color: #090c0f;
+  background: #f2f4f5;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transform: translateY(-160%);
+
+  &:focus-visible {
+    transform: translateY(0);
+  }
+`;
+
 const MainContent = styled.main`
   flex: 1;
   width: 100%;
@@ -80,8 +97,9 @@ function App() {
       <GlobalStyle />
       <Router>
         <AppContainer>
+          <SkipLink href="#main-content">본문으로 이동</SkipLink>
           <Navigation />
-          <MainContent>
+          <MainContent id="main-content">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/guide" element={<GuidePage />} />
