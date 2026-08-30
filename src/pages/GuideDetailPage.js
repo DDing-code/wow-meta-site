@@ -2222,7 +2222,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
       {hasSupportCards && (
         <FieldGuideGrid $color={guide.color}>
           {!!manuscript.playstyle?.length && (
-            <FieldGuideCard $color={guide.color}>
+            <FieldGuideCard $color={guide.color} $wide="full">
               <FieldGuideCardHead>
                 <Target size={15} />
                 <strong>먼저 이렇게 이해</strong>
@@ -6798,13 +6798,16 @@ const FlowCardHeadText = styled.div`
 
 const FieldGuideList = styled.ul`
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
   margin: 0;
   padding: 13px;
   list-style: none;
 
   li {
     min-width: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   }
 
   span {
@@ -6822,6 +6825,10 @@ const FieldGuideList = styled.ul`
     line-height: 1.68;
     word-break: keep-all;
     overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
   }
 `;
 
