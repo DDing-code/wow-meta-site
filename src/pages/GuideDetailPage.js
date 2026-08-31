@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {
   Activity,
   ArrowLeft,
+  BarChart3,
   BookOpen,
   Clock3,
   Gauge,
@@ -2612,7 +2613,15 @@ function GuideDetailPage() {
             <ArrowLeft size={16} />
             가이드 목록
           </BackLink>
-          <PatchBadge>{manuscript ? `${manuscript.patch} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>
+          <HeroTopActions>
+            {guide.id === 'evoker-preservation' && (
+              <LogReportLink to="/guide/evoker/preservation/log-analysis">
+                <BarChart3 size={15} aria-hidden="true" />
+                <span>로그 분석</span>
+              </LogReportLink>
+            )}
+            <PatchBadge>{manuscript ? `${manuscript.patch} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>
+          </HeroTopActions>
         </HeroTop>
         <HeroGrid>
           <div>
@@ -5489,6 +5498,34 @@ const PatchBadge = styled.div`
   color: #d6dde2;
   font-size: 0.78rem;
   font-weight: 700;
+`;
+
+const HeroTopActions = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  min-width: 0;
+`;
+
+const LogReportLink = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  color: #75bda9;
+  font-size: 0.76rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(117, 189, 169, 0.4);
+
+  &:hover {
+    color: #a2d5c7;
+    border-bottom-color: #a2d5c7;
+  }
+
+  @media (max-width: 460px) {
+    span { display: none; }
+  }
 `;
 
 const HeroGrid = styled.div`
