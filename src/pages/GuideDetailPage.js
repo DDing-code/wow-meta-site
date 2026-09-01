@@ -2614,8 +2614,8 @@ function GuideDetailPage() {
             가이드 목록
           </BackLink>
           <HeroTopActions>
-            {guide.id === 'evoker-preservation' && (
-              <LogReportLink to="/guide/evoker/preservation/log-analysis">
+            {['priest-holy', 'evoker-preservation'].includes(guide.id) && (
+              <LogReportLink to={`${guide.path}/log-analysis`}>
                 <BarChart3 size={15} aria-hidden="true" />
                 <span>로그 분석</span>
               </LogReportLink>

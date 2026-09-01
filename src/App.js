@@ -11,6 +11,7 @@ import MockupsPage from './pages/MockupsPage.js';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
 import GuideDetailPage from './pages/GuideDetailPage.js';
 import PreservationLogReportPage from './pages/PreservationLogReportPage.js';
+import HolyPriestLogReportPage from './pages/HolyPriestLogReportPage.js';
 import { getAllGuideSpecs } from './data/guideRegistry.js';
 
 const guideRouteComponents = {
@@ -107,6 +108,7 @@ function App() {
               <Route path="/news" element={<NewsPage />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/mockups" element={<MockupsPage />} />
+              <Route path="/guide/priest/holy/log-analysis" element={<HolyPriestLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis" element={<PreservationLogReportPage />} />
               {guideRoutes.map(({ id, path, Component }) => (
                 <Route key={id} path={path} element={<Component />} />
