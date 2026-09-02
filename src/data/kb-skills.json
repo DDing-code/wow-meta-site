@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-29T18:03:17.084Z",
+    "generatedAt": "2026-09-02T02:23:49.849Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2482,
-    "rawTotalSkills": 2482,
+    "totalSkills": 2481,
+    "rawTotalSkills": 2481,
     "duplicateIds": [],
     "totalSynergies": 429,
     "stats": {
-      "total": 2482,
+      "total": 2481,
       "byType": {
         "hero-talent": 527,
         "atomic-skill": 512,
         "proc": 4,
         "skill": 119,
-        "talent": 1009,
+        "talent": 1008,
         "spec-talent": 201,
         "hero-tree": 2,
         "class-talent": 87,
@@ -37,7 +37,7 @@
         "Mage": 203,
         "Monk": 231,
         "Paladin": 209,
-        "Priest": 222,
+        "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
         "Warlock": 235,
@@ -80,7 +80,7 @@
         "Paladin-징벌": 47,
         "Priest-공용": 74,
         "Priest-수양": 48,
-        "Priest-신성": 47,
+        "Priest-신성": 46,
         "Priest-암흑": 53,
         "Rogue-공용": 128,
         "Rogue-무법": 53,
@@ -101,8 +101,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2393,
-        "withSynergies": 673,
+        "withWikilinks": 2392,
+        "withSynergies": 674,
         "avgLinkDensity": "0.033"
       }
     }
@@ -44017,56 +44017,6 @@
         "lastUpdate": ""
       }
     },
-    "372760": {
-      "id": "372760",
-      "type": "talent",
-      "class": "Priest",
-      "spec": "신성",
-      "specs": [
-        "Holy"
-      ],
-      "name": "천상의 권능",
-      "koreanName": "천상의 권능",
-      "englishName": "Divine Word",
-      "icon": "spell_priest_chakra",
-      "iconName": "spell_priest_chakra",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 천상의 권능 (Divine Word)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_chakra.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_chakra.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_chakra.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_chakra.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_chakra.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.059,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\천상의권능.md",
-        "lastUpdate": ""
-      }
-    },
     "372969": {
       "id": "372969",
       "type": "talent",
@@ -65292,7 +65242,7 @@
       "description": "# 신성한 환영 (Divine Image)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65315,7 +65265,7 @@
       "quality": {
         "wikilinkCount": 8,
         "synergyCount": 3,
-        "linkDensity": 0.071,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -97666,7 +97616,7 @@
       "description": "# 작별의 한마디 (Lasting Words)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97678,14 +97628,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_renew.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/소생",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/궁극의평온",
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/신성한환영"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -98827,7 +98784,7 @@
       "description": "# 영원한 존엄 (Eternal Sanctity)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98839,14 +98796,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_archangel.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
+          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/신성/Talents/현신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {

@@ -24,8 +24,8 @@ const logs = [
     detail: '30인 · 4힐 · 295.7초 · 아이템 레벨 310',
     hps: '220.4k',
     percentile: '82 / 71',
-    casts: '201 · 40.8 APM',
-    mana: '92.2%',
+    casts: '156회',
+    mana: '약 90%',
     overheal: '32.9%',
     tier: '12.1 티어 1부위',
     tone: '#d49a58',
@@ -36,7 +36,7 @@ const logs = [
     detail: '30인 · 4힐 · 295.7초 · 아이템 레벨 295',
     hps: '231.1k',
     percentile: '87 / 95',
-    casts: '229 · 46.5 APM',
+    casts: '193회',
     mana: '47.1%',
     overheal: '34.0%',
     tier: '12.1 티어 세트 없음',
@@ -48,8 +48,8 @@ const logs = [
     detail: '30인 · 5힐 · 295.4초 · 아이템 레벨 307',
     hps: '297.3k',
     percentile: '99 / 99',
-    casts: '217 · 44.1 APM',
-    mana: '54.7%',
+    casts: '190회',
+    mana: '약 53%',
     overheal: '34.0%',
     tier: '12.1 티어 4세트',
     tone: '#8d99a2',
@@ -57,37 +57,41 @@ const logs = [
 ];
 
 const castRows = [
-  { id: '2061', name: '순간 치유', target: 36, peer: 52, top: 57 },
-  { id: '2050', name: '빛의 권능: 평온', target: 29, peer: 37, top: 37 },
-  { id: '1262763', name: '축도', target: 55, peer: 64, top: 58 },
-  { id: '33076', name: '회복의 기원', target: 36, peer: 40, top: 38 },
+  { ids: ['2061', '1262763'], name: '순간 치유 계열', detail: '순간 치유 + 축도', target: '91 (36 + 55)', peer: '116 (52 + 64)', top: '115 (57 + 58)' },
+  { ids: ['2050'], name: '빛의 권능: 평온', target: '29', peer: '37', top: '37' },
+  { ids: ['33076'], name: '회복의 기원', target: '36', peer: '40', top: '38' },
+  { ids: [], name: '핵심 회전 합계', detail: '위 세 행 합계', target: '156', peer: '193', top: '190' },
 ];
 
 const valueRows = [
-  ['빛의 권능: 평온', '330k', '278k', '350k'],
-  ['축도', '89.3k', '80.3k', '115.6k'],
-  ['순간 치유', '72.9k', '61.0k', '74.8k'],
-  ['회복의 기원', '275.7k', '248.8k', '284.4k'],
+  { ids: ['2061', '1262763'], name: '순간 치유 계열', target: '82.8k', peer: '71.7k', top: '95.4k' },
+  { ids: ['2050'], name: '빛의 권능: 평온', target: '330.1k', peer: '277.9k', top: '349.8k' },
+  { ids: ['33076'], name: '회복의 기원', target: '275.7k', peer: '248.8k', top: '284.4k' },
+];
+
+const oracleRows = [
+  { ids: ['33076'], name: '회복의 기원 전체', target: '9.93M', peer: '9.95M', verdict: '거의 동일' },
+  { ids: ['1246799'], name: '즉발적인 예측', target: '4.29M', peer: '4.03M', verdict: '대상이 더 높음' },
+  { ids: [], name: '예언자 보호막', target: '1.46M', peer: '1.46M', verdict: '동일' },
+  { ids: ['1246802'], name: '경건', target: '4.44M', peer: '4.66M', verdict: '근소한 차이' },
 ];
 
 const apotheosisRows = [
-  ['조나사제 1차', '35.1–67.1초', '6', '7', '겹침 없음', '양호'],
-  ['조나사제 2차', '230.4–262.4초', '2', '5', '천상의 찬가 4초', '핵심 손실'],
-  ['잠실 1차', '0.9–32.9초', '8', '10', '없음', '비교'],
-  ['잠실 2차', '121.0–153.0초', '8', '11', '없음', '비교'],
-  ['99점 1차', '43.1–75.1초', '7', '9', '없음', '비교'],
-  ['99점 2차', '209.4–241.4초', '7', '7', '없음', '비교'],
+  ['조나사제 1차', '35.1–67.1초', '31.21M', '6', '9', '방해 없음'],
+  ['조나사제 2차', '230.4–262.4초', '30.93M', '2', '8', '찬가 + 활공 4회'],
+  ['잠실 1차', '0.9–32.9초', '28.68M', '8', '15', '방해 없음'],
+  ['잠실 2차', '121.0–153.0초', '51.15M', '8', '17', '방해 없음'],
 ];
 
 const goals = [
-  ['종료 마나', '40–60%'],
-  ['순간 치유', '50회 이상'],
+  ['종료 마나', '고정값 대신 막판까지 사용'],
+  ['순간 치유 계열', '110회 전후'],
   ['빛의 권능: 평온', '35회 이상'],
   ['회복의 기원', '38–40회'],
-  ['축도 2중첩 시간', '20% 이하'],
-  ['절정 한 구간 평온', '6회 이상'],
-  ['절정·천상의 찬가', '서로 겹치지 않기'],
-  ['선택 특성 무효 사용', '0회'],
+  ['축도 2중첩 장기 보유', '5초 이상 구간 줄이기'],
+  ['32초 절정 평온', '6–8회'],
+  ['절정 중 이동 공백', '0회'],
+  ['쿨다운 계획', '전투 전 3구간 지정'],
 ];
 
 function iconUrl(skill) {
@@ -131,6 +135,22 @@ function SectionHeading({ number, title, icon: Icon }) {
   );
 }
 
+function SpellLabel({ ids = [], name, detail }) {
+  return (
+    <span>
+      {ids.length > 0
+        ? ids.map((id, index) => (
+          <React.Fragment key={id}>
+            {index > 0 && ' + '}
+            <SkillLink id={id}>{ids.length === 1 ? name : undefined}</SkillLink>
+          </React.Fragment>
+        ))
+        : <strong>{name}</strong>}
+      {detail && <small>{detail}</small>}
+    </span>
+  );
+}
+
 function HolyPriestLogReportPage() {
   useEffect(() => {
     document.title = '조나사제 신성 사제 로그 분석 | wowmeta';
@@ -160,16 +180,16 @@ function HolyPriestLogReportPage() {
             <Eyebrow>WARCRAFT LOGS REVIEW · 울라텍 일반</Eyebrow>
             <Title>조나사제 신성 사제 로그 분석</Title>
             <Lead>
-              같은 공격대 신성 사제와 전투 길이·인원·아이템 레벨이 가까운 99점 로그를 함께 비교했습니다.
-              결론은 과치유나 대상 선택보다 마나를 거의 쓰지 않아 핵심 회전이 멈춘 쪽에 가깝습니다.
+              WCL 시전·자원·버프 이벤트를 다시 추출해 같은 공격대 신성 사제를 1차 기준으로 비교했습니다.
+              99점 로그는 티어와 힐러 수가 달라 정답지가 아니라 가능한 상한을 확인하는 용도로만 사용했습니다.
             </Lead>
           </div>
           <HeroVerdict>
             <Target size={21} aria-hidden="true" />
             <div>
               <span>한 줄 진단</span>
-              <strong>힐을 잘못 꽂은 로그가 아니라, 너무 적게 눌러 평온 회전이 끊긴 로그</strong>
-              <p>종료 마나 92.2%와 순간 치유 36회가 가장 먼저 봐야 할 수치입니다.</p>
+              <strong>예언자 운용은 정상이고, 핵심 회전량과 두 번째 절정 배치에서 손실이 났습니다</strong>
+              <p>축도를 합친 순간 치유 계열은 91회, 핵심 회전은 156회, 종료 마나는 약 90%입니다.</p>
             </div>
           </HeroVerdict>
         </HeroGrid>
@@ -184,7 +204,7 @@ function HolyPriestLogReportPage() {
             <Stats>
               <Stat><span>HPS</span><strong>{log.hps}</strong></Stat>
               <Stat><span>전체 / 장비 백분위</span><strong>{log.percentile}</strong></Stat>
-              <Stat><span>시전</span><strong>{log.casts}</strong></Stat>
+              <Stat><span>핵심 회전</span><strong>{log.casts}</strong></Stat>
               <Stat><span>종료 마나</span><strong>{log.mana}</strong></Stat>
               <Stat><span>과치유</span><strong>{log.overheal}</strong></Stat>
               <Stat><span>티어</span><strong>{log.tier}</strong></Stat>
@@ -195,45 +215,53 @@ function HolyPriestLogReportPage() {
 
       <ReportLayout>
         <ReportNav aria-label="분석 목차">
-          <NavLink href="#verdict">01 손실 경로</NavLink>
-          <NavLink href="#casts">02 시전량 비교</NavLink>
-          <NavLink href="#benediction">03 축도 중첩</NavLink>
+          <NavLink href="#verdict">01 판독 결과</NavLink>
+          <NavLink href="#casts">02 핵심 회전</NavLink>
+          <NavLink href="#oracle">03 예언자 판독</NavLink>
           <NavLink href="#apotheosis">04 절정 구간</NavLink>
-          <NavLink href="#talent">05 특성 선택</NavLink>
-          <NavLink href="#deaths">06 사망·보정</NavLink>
-          <NavLink href="#fix">07 수정 사이클</NavLink>
+          <NavLink href="#benediction">05 축도 중첩</NavLink>
+          <NavLink href="#talent">06 특성 판독</NavLink>
+          <NavLink href="#resource">07 자원·사망</NavLink>
+          <NavLink href="#fix">08 수정 사이클</NavLink>
         </ReportNav>
 
         <Article>
           <Section id="verdict">
-            <SectionHeading number="01 · 핵심 원인" title="손실은 한 줄로 이어집니다" icon={RotateCw} />
+            <SectionHeading number="01 · 재판독 결과" title="잘된 부분과 고칠 부분이 분명합니다" icon={RotateCw} />
             <CauseRail>
-              <Cause><b>01</b><strong>마나 92.2% 종료</strong><span>쓸 수 있는 자원을 사실상 남겼습니다.</span></Cause>
-              <Cause><b>02</b><strong>순간 치유 16–21회 부족</strong><span>같은 공대 52회, 99점은 57회입니다.</span></Cause>
-              <Cause><b>03</b><strong>평온 8회 부족</strong><span>순간 치유가 줄어 평온 재사용 대기시간 회전도 느려졌습니다.</span></Cause>
-              <Cause><b>04</b><strong>축도·파장 연쇄 감소</strong><span>평온이 적으니 확정 축도와 후속 광역 치유도 함께 줄었습니다.</span></Cause>
+              <Cause><b>01 · 집계 교정</b><strong>순간 치유 계열 91회</strong><span>순간 치유 36회와 변환된 축도 55회를 합쳐야 합니다.</span></Cause>
+              <Cause><b>02 · 확인</b><strong>핵심 회전 37회 부족</strong><span>156회로 같은 공대의 193회보다 19.2% 적습니다.</span></Cause>
+              <Cause><b>03 · 확인</b><strong>2차 절정 평온 2회</strong><span>찬가와 이동이 겹쳐 32초 구간을 충분히 쓰지 못했습니다.</span></Cause>
+              <Cause><b>04 · 확인</b><strong>마나 최저 78.8%</strong><span>두 번째 절정 전에는 다시 100%까지 회복했습니다.</span></Cause>
             </CauseRail>
             <Finding>
-              <strong>우선순위</strong>
+              <strong>정상 작동</strong>
               <p>
-                과치유율은 32.9%로 두 비교 로그의 34.0%보다 오히려 낮습니다. 지금은 치유 대상을 더 아끼는 것이 아니라,
-                피해가 있는 구간에 <SkillLink id="2061" />를 더 써서 <SkillLink id="2050" />을 다시 당기는 것이 먼저입니다.
+                핵심 주문 1회당 유효 치유는 같은 공대 사제보다 높고, 예언자 보조 치유도 거의 같은 수준입니다.
+                대상 선택이나 영웅 특성보다 피해가 이어질 때 주문을 더 자주 연결하고, 절정을 이동이 끝난 구간에 여는 것이 먼저입니다.
               </p>
             </Finding>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p><strong>판독 기준:</strong> 원시 이벤트로 직접 확인한 사실, 비교 로그에서 얻은 해석, 원인 확정이 불가능한 사망을 구분했습니다. 이전 보고서의 ‘천상의 권능 미사용’ 판정은 삭제된 기술을 현재 특성으로 잘못 읽은 오류였습니다.</p>
+            </Caution>
           </Section>
 
           <Section id="casts">
-            <SectionHeading number="02 · 시전량과 효율" title="한 번의 품질보다 횟수가 부족했습니다" icon={BarChart3} />
+            <SectionHeading number="02 · 핵심 회전" title="한 번은 잘 넣었지만 연결 횟수가 적었습니다" icon={BarChart3} />
             <SectionLead>
-              대상 로그의 핵심 주문 1회당 유효 치유는 같은 공대 사제보다 대부분 높습니다. 즉 대상을 심하게 잘못 고른 것이 아니라,
-              치유 기회가 남아 있는데도 주문을 충분히 시전하지 않은 것이 총량 차이의 중심입니다.
+              12.1에서는 <SkillLink id="2050" /> 뒤의 <SkillLink id="2061" />가 <SkillLink id="1262763" />로 변환됩니다.
+              WCL은 두 이름을 따로 기록하므로 반드시 합쳐야 하며, 합산하면 대상의 순간 치유 계열은 91회입니다.
             </SectionLead>
             <TableScroll>
               <CompareTable aria-label="핵심 주문 시전 횟수 비교">
                 <thead><tr><th>주문</th><th>조나사제</th><th>같은 공대</th><th>99점</th></tr></thead>
                 <tbody>
                   {castRows.map(row => (
-                    <tr key={row.id}><td><SkillLink id={row.id}>{row.name}</SkillLink></td><td>{row.target}</td><td>{row.peer}</td><td>{row.top}</td></tr>
+                    <tr key={row.name}>
+                      <td><SpellLabel ids={row.ids} name={row.name} detail={row.detail} /></td>
+                      <td>{row.target}</td><td>{row.peer}</td><td>{row.top}</td>
+                    </tr>
                   ))}
                 </tbody>
               </CompareTable>
@@ -242,99 +270,160 @@ function HolyPriestLogReportPage() {
             <TableScroll>
               <CompareTable aria-label="주문 1회당 유효 치유 비교">
                 <thead><tr><th>주문</th><th>조나사제</th><th>같은 공대</th><th>99점</th></tr></thead>
-                <tbody>{valueRows.map(row => <tr key={row[0]}>{row.map((value, index) => <td key={index}>{value}</td>)}</tr>)}</tbody>
+                <tbody>{valueRows.map(row => (
+                  <tr key={row.name}>
+                    <td><SpellLabel ids={row.ids} name={row.name} /></td>
+                    <td>{row.target}</td><td>{row.peer}</td><td>{row.top}</td>
+                  </tr>
+                ))}</tbody>
               </CompareTable>
             </TableScroll>
             <Finding>
               <strong>수치 해석</strong>
-              <p>핵심 네 주문 시전 합계는 156회입니다. 같은 공대 사제는 193회로 37회 더 많았습니다. 15레벨 낮은 같은 공대 사제가 HPS도 4.8% 높았던 직접 원인입니다.</p>
+              <p>세 계열 합계는 156회로 같은 공대보다 37회 적습니다. 반대로 1회당 유효 치유는 세 계열 모두 같은 공대보다 높습니다. 따라서 ‘대상을 잘못 골랐다’보다 피해가 이어질 때 회전을 끊은 시간이 더 큰 관찰 차이입니다.</p>
+            </Finding>
+          </Section>
+
+          <Section id="oracle">
+            <SectionHeading number="03 · 예언자 판독" title="영웅 특성 메커니즘은 제대로 작동했습니다" icon={ListChecks} />
+            <SectionLead>
+              <SkillLink id="33076" />은 대상 36회, 같은 공대 40회였지만 관련 치유 총량은 9.93M과 9.95M으로 거의 같습니다.
+              <SkillLink id="1246799" />은 오히려 대상이 더 높아, 예언자 빌드 자체를 이번 로그의 원인으로 볼 근거가 없습니다.
+            </SectionLead>
+            <TableScroll>
+              <CompareTable aria-label="예언자 관련 유효 치유 비교">
+                <thead><tr><th>효과</th><th>조나사제</th><th>같은 공대</th><th>판정</th></tr></thead>
+                <tbody>{oracleRows.map(row => (
+                  <tr key={row.name}>
+                    <td><SpellLabel ids={row.ids} name={row.name} /></td>
+                    <td>{row.target}</td><td>{row.peer}</td><td>{row.verdict}</td>
+                  </tr>
+                ))}</tbody>
+              </CompareTable>
+            </TableScroll>
+            <Finding>
+              <strong>운영 판단</strong>
+              <p>영웅 특성을 바꾸기보다 회복의 기원 충전이 2개에서 멈추지 않게 하고, 이미 잘 나온 예언자 보조 치유를 유지하면 됩니다. 이번 로그에서 먼저 고칠 것은 예언자가 아니라 절정과 평온 회전입니다.</p>
+            </Finding>
+          </Section>
+
+          <Section id="apotheosis">
+            <SectionHeading number="04 · 절정 구간" title="두 번째 절정이 이동과 찬가 사이에 끼었습니다" icon={Sparkles} />
+            <SectionLead>
+              대상은 <SkillLink id="1215245" />을 선택해 <SkillLink id="200183" />이 20초가 아니라 32초 지속됩니다.
+              첫 구간은 평온 6회로 기능했지만, 두 번째는 평온 2회에 그쳤습니다.
+            </SectionLead>
+            <TableScroll>
+              <CompareTable aria-label="절정 구간 비교">
+                <thead><tr><th>구간</th><th>시간</th><th>공대 피해</th><th>평온</th><th>순간 치유 계열</th><th>방해 요소</th></tr></thead>
+                <tbody>{apotheosisRows.map(row => <tr key={row[0]}>{row.map((value, index) => <td key={index}>{value}</td>)}</tr>)}</tbody>
+              </CompareTable>
+            </TableScroll>
+            <Timeline aria-label="두 번째 절정 구간 타임라인">
+              <TimeEvent><time>218.0초</time><strong>축도 2중첩</strong><span>최대 중첩 진입</span></TimeEvent>
+              <TimeEvent $bad><time>226.7초</time><strong>평온</strong><span>2중첩에서 사용</span></TimeEvent>
+              <TimeEvent><time>230.4초</time><strong>절정</strong><span>32초 시작</span></TimeEvent>
+              <TimeEvent><time>231.6초</time><strong>천상의 찬가</strong><span>채널링 시작</span></TimeEvent>
+              <TimeEvent $bad><time>237.0초</time><strong>평온</strong><span>여전히 2중첩</span></TimeEvent>
+              <TimeEvent><time>239.4초</time><strong>첫 축도</strong><span>중첩 소비 시작</span></TimeEvent>
+              <TimeEvent $bad><time>249.8–261.7초</time><strong>핵심 회전 공백</strong><span>활공 4회 뒤 회복의 기원</span></TimeEvent>
+              <TimeEvent><time>262.4초</time><strong>절정 종료</strong><span>평온 총 2회</span></TimeEvent>
+            </Timeline>
+            <WindowCompare>
+              <Window $bad>
+                <span>실제 2차 절정</span>
+                <strong>축도 2중첩 → 절정 → 천상의 찬가 → 평온 → 이동</strong>
+                <p>249.8초부터 261.7초까지 세 핵심 주문이 없었습니다. 32초 버프의 약 12초가 이동 구간과 겹쳤습니다.</p>
+              </Window>
+              <Window>
+                <span>다음 시도</span>
+                <strong>이동 종료 확인 → 남은 축도 소비 → 절정 → 평온·축도 반복</strong>
+                <p>찬가를 절정과 무조건 분리할 필요는 없지만, 둘을 겹치면 평온 회전 시간이 줄어듭니다. 공대 배정이 없다면 서로 다른 피해 구간에 두는 편이 낫습니다.</p>
+              </Window>
+            </WindowCompare>
+            <Finding>
+              <strong>횟수 계획</strong>
+              <p>같은 공대 사제는 0.9초, 121.0초에 두 번을 완주하고 288.7초에 마지막 부분 구간까지 열었습니다. 대상은 35.1초와 230.4초 두 번뿐이므로, 전투 전부터 세 번째 짧은 절정까지 포함해 사용할 시점을 정해 두는 편이 좋습니다.</p>
             </Finding>
           </Section>
 
           <Section id="benediction">
-            <SectionHeading number="03 · 축도 중첩" title="2중첩을 너무 오래 들고 있었습니다" icon={Gauge} />
+            <SectionHeading number="05 · 축도 중첩" title="중첩 비율보다 긴 방치 구간을 고쳐야 합니다" icon={Gauge} />
             <SectionLead>
-              <SkillLink id="1262763" />는 2중첩이 최대입니다. 최대 중첩에서 <SkillLink id="2050" />을 다시 쓰면 다음 축도를 받을 공간이 없어집니다.
-              대상은 전투의 28.6%를 2중첩으로 보냈고, 19.8초와 21.4초짜리 긴 방치 구간도 있었습니다.
+              <SkillLink id="1262763" /> 2중첩 시간은 대상 28.6%, 같은 공대 13.9%, 99점 23.8%입니다.
+              99점도 2중첩 시간이 길었으므로 비율 하나만으로 실수를 판정하면 안 됩니다. 대상 로그에서 확실한 문제는 19.8초와 21.4초 동안 중첩을 들고 있었던 두 구간입니다.
             </SectionLead>
             <StackRows>
               <StackRow><span>조나사제</span><Track><Fill $width="28.6%" $tone="#d49a58" /></Track><strong>28.6%</strong></StackRow>
               <StackRow><span>같은 공대</span><Track><Fill $width="13.9%" $tone="#75bda9" /></Track><strong>13.9%</strong></StackRow>
               <StackRow><span>99점</span><Track><Fill $width="23.8%" $tone="#8d99a2" /></Track><strong>23.8%</strong></StackRow>
             </StackRows>
-            <Timeline aria-label="두 번째 절정 구간 타임라인">
-              <TimeEvent><time>218.0초</time><strong>축도 2중첩</strong><span>최대 중첩 진입</span></TimeEvent>
-              <TimeEvent><time>230.4초</time><strong>절정</strong><span>2중첩을 든 채 시작</span></TimeEvent>
-              <TimeEvent><time>231.6초</time><strong>천상의 찬가</strong><span>절정 약 4초 소모</span></TimeEvent>
-              <TimeEvent $bad><time>237.0초</time><strong>평온</strong><span>여전히 2중첩</span></TimeEvent>
-              <TimeEvent><time>239.4초</time><strong>첫 축도</strong><span>21.4초 만에 중첩 소비</span></TimeEvent>
-            </Timeline>
+            <Notes>
+              <Note><strong>긴 보유 2회</strong><p>161.0–180.9초에 19.8초, 218.0–239.4초에 21.4초 동안 2중첩을 유지했습니다. 첫 구간은 활공 4회와, 두 번째는 절정 진입과 겹쳤습니다.</p></Note>
+              <Note><strong>최대 중첩 평온 5회</strong><p>대상 5회, 같은 공대 3회, 99점 4회입니다. 특히 226.7초와 237.0초 평온은 두 번째 절정의 중첩 공간을 줄인 장면으로 확인됩니다.</p></Note>
+            </Notes>
             <Caution>
               <CircleAlert size={18} aria-hidden="true" />
-              <p>로그에는 2중첩 상태의 갱신 이벤트가 9회 있습니다. 이벤트 하나가 곧 확정 손실 1회라는 뜻은 아니지만, 237.0초 평온처럼 중첩을 먼저 쓰지 않은 장면은 명확한 손실입니다.</p>
+              <p>버프 갱신 이벤트 하나를 축도 1회 손실로 환산하지 않았습니다. 실제 피해가 없으면 중첩을 들고 있는 것이 맞을 수 있으므로, 5초 이상 보유와 그 사이의 평온 사용을 함께 확인해야 합니다.</p>
             </Caution>
           </Section>
 
-          <Section id="apotheosis">
-            <SectionHeading number="04 · 절정 구간" title="첫 번째는 괜찮았고, 두 번째가 무너졌습니다" icon={Sparkles} />
-            <TableScroll>
-              <CompareTable aria-label="절정 구간 비교">
-                <thead><tr><th>구간</th><th>시간</th><th>평온</th><th>축도</th><th>쿨기 겹침</th><th>판정</th></tr></thead>
-                <tbody>{apotheosisRows.map(row => <tr key={row[0]}>{row.map((value, index) => <td key={index}>{value}</td>)}</tr>)}</tbody>
-              </CompareTable>
-            </TableScroll>
-            <WindowCompare>
-              <Window $bad>
-                <span>실제 2차 절정</span>
-                <strong>축도 2중첩 → 절정 → 천상의 찬가 → 평온 → 축도</strong>
-                <p>절정 안에서 찬가를 채널링했고, 최대 중첩 상태로 평온까지 눌렀습니다. 결과는 평온 2회뿐입니다.</p>
-              </Window>
-              <Window>
-                <span>수정 순서</span>
-                <strong>축도 소비 → 절정 → 평온 → 축도 → 순간 치유·회복의 기원 → 평온</strong>
-                <p>찬가는 다른 피해 구간에 떼어 놓고, 절정 32초는 평온 회전에만 집중합니다.</p>
-              </Window>
-            </WindowCompare>
-          </Section>
-
           <Section id="talent">
-            <SectionHeading number="05 · 특성 선택" title="선택 노드 하나가 전투 내내 비어 있었습니다" icon={ListChecks} />
+            <SectionHeading number="06 · 특성 판독" title="작별의 한마디는 액티브 기술이 아닙니다" icon={ListChecks} />
             <SectionLead>
-              같은 공격대 신성 사제와의 특성 차이는 <SkillLink id="372760">천상의 권능</SkillLink> / <SkillLink id="392988">신성한 환영</SkillLink> 선택 노드 하나뿐입니다.
-              잠실 로그에서는 신성한 환영이 2.95M의 유효 치유를 냈지만, 대상 로그에는 천상의 권능 시전·버프도 신성한 환영 치유도 없습니다.
+              12.1 현재 ‘천상의 권능’은 삭제된 기술입니다. 대상이 고른 것은 <SkillLink id="471504" />이며,
+              평온 사용 시 12초 소생을 부여하는 패시브라 별도 시전 이벤트가 없는 것이 정상입니다.
             </SectionLead>
             <ChoiceGrid>
-              <Choice><strong>운영을 단순하게</strong><p><SkillLink id="392988">신성한 환영</SkillLink>을 선택해 빛의 권능 사용에 따라 자동으로 가치를 받습니다.</p></Choice>
-              <Choice><strong>천상의 권능 유지</strong><p><SkillLink id="372760">천상의 권능</SkillLink>을 계획된 평온 구간에 반드시 배정합니다. 선택하고 누르지 않는 상태가 최악입니다.</p></Choice>
+              <Choice><strong>대상: 작별의 한마디</strong><p>소생 유효 치유는 7.82M이지만 다른 소생 발생원도 포함되므로 이 수치를 특성 기여량으로 단정할 수 없습니다. 평온을 자주 돌릴수록 간접 가치가 늘어납니다.</p></Choice>
+              <Choice><strong>같은 공대: 신성한 환영</strong><p><SkillLink id="392988" /> 치유는 2.95M이었습니다. 두 선택 모두 현재 특성이며, 이번 비교만으로 대상의 선택을 잘못됐다고 판정할 수 없습니다.</p></Choice>
             </ChoiceGrid>
+            <Finding>
+              <strong>정정</strong>
+              <p>이전 보고서의 ‘천상의 권능을 선택하고 한 번도 누르지 않았다’는 결론은 전면 취소합니다. 원인은 구버전 KB 항목과 WCL 특성 엔트리를 이름만으로 연결한 것이며, 현재 KB에서는 해당 삭제 기술과 연결을 제거했습니다.</p>
+            </Finding>
           </Section>
 
-          <Section id="deaths">
-            <SectionHeading number="06 · 사망과 비교 보정" title="장비 차이와 공대 실수를 분리해야 합니다" icon={CircleAlert} />
+          <Section id="resource">
+            <SectionHeading number="07 · 자원과 사망" title="마나는 남았지만 사망을 모두 힐 문제로 볼 수는 없습니다" icon={CircleAlert} />
             <Notes>
-              <Note><strong>사망 4명</strong><p>114.5초 2명, 119.5초 1명, 248.0초 1명이 사망했습니다. Spectral Coils와 Necrotic Vapors가 포함돼 있어 이 수치만으로 개인 힐 실수라고 단정할 수 없습니다.</p></Note>
-              <Note><strong>본인 생존은 양호</strong><p>대상은 죽지 않았고 <SkillLink id="586">소실</SkillLink> 4회, <SkillLink id="19236">구원의 기도</SkillLink> 1회를 사용했습니다. 현재 가장 큰 손실은 생존기가 아니라 치유 주문 시전량입니다.</p></Note>
-              <Note><strong>티어 4세트 보정</strong><p>99점 로그의 소생 유효 치유는 15.81M, 대상은 7.82M입니다. 대상은 티어 1부위, 99점은 4세트이므로 이 7.99M 차이를 전부 플레이 문제로 보면 안 됩니다.</p></Note>
-              <Note><strong>그래도 남는 차이</strong><p>티어가 없는 같은 공대 사제도 순간 치유 52회와 평온 37회를 기록했습니다. 핵심 회전 부족은 장비로 설명되지 않습니다.</p></Note>
+              <Note><strong>마나 곡선</strong><p>대상은 전투 중 확인된 최저 마나가 78.8%였고, 두 번째 절정 전에는 100%로 회복했습니다. 마지막 주문 비용까지 반영하면 종료 직전은 약 90%입니다. 같은 공대 사제는 최저 43.9%, 종료 47.1%였습니다.</p></Note>
+              <Note><strong>고정 종료 마나는 목표가 아님</strong><p>힐 배정과 막판 피해에 따라 종료 마나는 달라집니다. 40%나 50% 같은 숫자를 맞추기보다, 실제 피해가 남아 있는 동안 순간 치유 계열과 평온 회전을 끊지 않는 것을 목표로 둡니다.</p></Note>
+              <Note><strong>114.5–119.5초 사망 3명</strong><p>닭모가지와 물떡법사는 Spectral Coils로 동시에 사망했고, 디펜더님의 마지막 피해 주문은 로그에서 특정되지 않았습니다. 개인 힐 실수 여부는 판정 보류입니다.</p></Note>
+              <Note><strong>248.0초 사망 1명</strong><p>노란색원꾼의 마지막 피해는 Necrotic Vapors입니다. 대상은 생존했고 <SkillLink id="586">소실</SkillLink> 4회, <SkillLink id="19236">구원의 기도</SkillLink> 1회를 사용했습니다.</p></Note>
+              <Note><strong>같은 공대 비교가 우선</strong><p>잠실은 아이템 레벨이 15 낮고 현재 티어 세트가 없지만 핵심 회전은 193회였습니다. 장비 차이로 설명하기 어려운 운영 차이를 보는 기준으로 적합합니다.</p></Note>
+              <Note><strong>99점은 상한 참고</strong><p>남극여행은 5힐 구성에 12.1 티어 4세트입니다. 소생 15.81M 등 세트 영향을 받는 총량은 대상과 직접 비교하지 않았습니다.</p></Note>
             </Notes>
           </Section>
 
           <Section id="fix">
-            <SectionHeading number="07 · 다음 로그 수정안" title="절정은 이 순서로 굴리면 됩니다" icon={CheckCircle2} />
+            <SectionHeading number="08 · 다음 로그 수정안" title="외울 것은 여섯 단계면 충분합니다" icon={CheckCircle2} />
             <CycleRail>
-              <Cycle><b>01</b><SkillLink id="33076" /><span>충전이 넘치지 않게 피해 전에 보냅니다.</span></Cycle>
-              <Cycle><b>02</b><SkillLink id="1262763" /><span>절정 전에 2중첩이면 먼저 소비합니다.</span></Cycle>
-              <Cycle><b>03</b><SkillLink id="200183" /><span>천상의 찬가와 겹치지 않는 피해 구간에 엽니다.</span></Cycle>
-              <Cycle><b>04</b><SkillLink id="2050" /><span>즉시 평온을 쓰고 생성된 축도를 바로 이어 갑니다.</span></Cycle>
-              <Cycle><b>05</b><SkillLink id="2061" /><span>평온 재사용 대기시간을 당기며 마나를 실제 치유로 바꿉니다.</span></Cycle>
-              <Cycle><b>06</b><SkillLink id="2050" /><span>구간 안에서 평온 6회 이상을 목표로 반복합니다.</span></Cycle>
+              <Cycle><b>01</b><SkillLink id="200183" /><span>전투 전 두 번의 완주 구간과 마지막 짧은 구간까지 세 곳을 정합니다.</span></Cycle>
+              <Cycle><b>02</b><SkillLink id="33076" /><span>피해 전에 보내고 2충전에서 오래 멈추지 않게 합니다.</span></Cycle>
+              <Cycle><b>03</b><SkillLink id="1262763" /><span>절정 전 2중첩이면 실제 피해 대상에게 먼저 소비합니다.</span></Cycle>
+              <Cycle><b>04</b><SkillLink id="2050" /><span>이동이 끝난 뒤 절정을 열고 평온부터 사용합니다.</span></Cycle>
+              <Cycle><b>05</b><SkillLink id="1262763" /><span>생성된 축도를 소비하고 순간 치유 계열로 다음 평온을 당깁니다.</span></Cycle>
+              <Cycle><b>06</b><SkillLink id="2050" /><span>이동 중에는 즉시 시전을 쓰고 멈추자마자 회전을 재개합니다.</span></Cycle>
             </CycleRail>
+            <WindowCompare>
+              <Window>
+                <span>축도 0–1중첩</span>
+                <strong>절정 → 평온 → 축도 → 순간 치유 계열 → 평온</strong>
+                <p>피해량과 대상 체력에 따라 회복의 기원을 사이에 넣습니다. 정해진 매크로가 아니라 평온 재사용 대기시간을 계속 줄이는 흐름입니다.</p>
+              </Window>
+              <Window>
+                <span>축도 2중첩</span>
+                <strong>축도 1–2회 소비 → 절정 → 평온 → 새 축도 소비</strong>
+                <p>쓸 대상이 없으면 억지로 과치유하지 말고 절정 시작을 실제 피해 직전으로 옮깁니다.</p>
+              </Window>
+            </WindowCompare>
             <Goals>
               {goals.map(([label, value]) => <Goal key={label}><CheckCircle2 size={16} aria-hidden="true" /><span>{label}</span><strong>{value}</strong></Goal>)}
             </Goals>
             <FinalVerdict>
               <strong>고칠 순서</strong>
-              <span>마나 사용량 → 순간 치유 수 → 평온 수 → 축도 중첩 → 두 번째 절정 순서로 확인합니다. 과치유와 소생 총량은 그다음 문제입니다.</span>
+              <span>절정 3구간 계획 → 순간 치유 계열 110회 전후 → 평온 35회 이상 → 5초 넘는 축도 2중첩 → 막판 마나 사용 순서로 봅니다. 예언자 총량과 대상 선택은 현재 수준을 유지하면 됩니다.</span>
             </FinalVerdict>
           </Section>
 
@@ -343,7 +432,11 @@ function HolyPriestLogReportPage() {
             <SourceLink href="https://www.warcraftlogs.com/reports/jFKp1nY6zMcJkX3L?fight=45&type=casts&source=32">조나사제 원본 로그</SourceLink>
             <SourceLink href="https://www.warcraftlogs.com/reports/jFKp1nY6zMcJkX3L?fight=45&type=healing&source=13">같은 공대 비교</SourceLink>
             <SourceLink href="https://www.warcraftlogs.com/reports/7df4Rg2YJHv9VbDj?fight=51&type=healing&source=617">조건 근접 99점 로그</SourceLink>
-            <SourceLink href="https://www.wowhead.com/guide/classes/priest/holy/overview-pve-healer">Wowhead 12.1 신성 사제</SourceLink>
+            <SourceLink href="https://worldofwarcraft.blizzard.com/ko-kr/news/24293281">블리자드 12.1 패치 노트</SourceLink>
+            <SourceLink href="https://www.wowhead.com/guide/classes/priest/holy/rotation-cooldowns-pve-healer">Wowhead 12.1 운용</SourceLink>
+            <SourceLink href="https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer">Wowhead 12.1 특성</SourceLink>
+            <SourceLink href="https://www.icy-veins.com/wow/holy-priest-pve-healing-rotation-cooldowns-abilities">Icy Veins 12.1 운용</SourceLink>
+            <SourceLink href="https://www.method.gg/guides/holy-priest/playstyle-and-rotation">Method 12.1 운용</SourceLink>
           </Sources>
         </Article>
       </ReportLayout>
@@ -373,7 +466,7 @@ const HeroGrid = styled.div`
   @media(max-width:820px){grid-template-columns:1fr;}
 `;
 const Eyebrow = styled.div`color:#b58d5d; font-size:.7rem; font-weight:750;`;
-const Title = styled.h1`margin-top:8px; color:#f2f4f5; font-size:clamp(1.9rem, 5vw, 3.55rem); line-height:1.08; letter-spacing:0;`;
+const Title = styled.h1`margin-top:8px; color:#f2f4f5; font-size:clamp(1.9rem, 5vw, 3.55rem); line-height:1.08; letter-spacing:0; word-break:keep-all; overflow-wrap:break-word;`;
 const Lead = styled.p`max-width:76ch; margin-top:18px; color:#aab4ba; font-size:clamp(.88rem, 1.5vw, 1rem); line-height:1.82;`;
 const HeroVerdict = styled.div`
   display:grid; grid-template-columns:30px minmax(0, 1fr); gap:12px; padding:16px 0; color:#d49a58; border-top:2px solid #d49a58; border-bottom:1px solid rgba(212,154,88,.2);
@@ -403,7 +496,7 @@ const Section = styled.section`min-width:0; padding:40px 0 46px; border-top:1px 
 const SectionHead = styled.div`display:flex; align-items:center; gap:12px; margin-bottom:20px;`;
 const SectionIcon = styled.div`flex:0 0 auto; width:36px; height:36px; display:grid; place-items:center; color:#75bda9; border:1px solid rgba(117,189,169,.38);`;
 const SectionKicker = styled.div`color:#87949c; font-size:.66rem; font-weight:700;`;
-const SectionTitle = styled.h2`margin-top:3px; color:#f1f3f4; font-size:clamp(1.2rem,2.6vw,1.7rem); line-height:1.3;`;
+const SectionTitle = styled.h2`margin-top:3px; color:#f1f3f4; font-size:clamp(1.2rem,2.6vw,1.7rem); line-height:1.3; word-break:keep-all; overflow-wrap:break-word;`;
 const SectionLead = styled.p`max-width:84ch; margin-bottom:20px; color:#adb7bd; font-size:.9rem; line-height:1.82;`;
 const CauseRail = styled.div`
   display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid rgba(212,154,88,.38); border-left:1px solid rgba(168,178,188,.12);
@@ -414,7 +507,7 @@ const Finding = styled.div`display:grid; grid-template-columns:84px minmax(0,1fr
 const TableScroll = styled.div`max-width:100%; overflow-x:auto;`;
 const CompareTable = styled.table`
   width:100%; min-width:620px; border-collapse:collapse; font-size:.76rem;
-  th,td{padding:11px 12px; text-align:right; border-bottom:1px solid rgba(168,178,188,.12);} th:first-child,td:first-child{text-align:left;} th{color:#7d8991;font-size:.65rem;font-weight:700;} td{color:#cfd6da;} tbody tr:hover{background:rgba(117,189,169,.035);}
+  th,td{padding:11px 12px; text-align:right; border-bottom:1px solid rgba(168,178,188,.12);} th:first-child,td:first-child{text-align:left;} th{color:#7d8991;font-size:.65rem;font-weight:700;} td{color:#cfd6da;} td small{display:block;margin-top:4px;color:#718089;font-size:.61rem;} tbody tr:hover{background:rgba(117,189,169,.035);}
 `;
 const Subhead = styled.h3`margin:24px 0 8px; color:#aeb8bd; font-size:.78rem;`;
 const StackRows = styled.div`display:grid; gap:12px;`;
@@ -422,7 +515,7 @@ const StackRow = styled.div`display:grid; grid-template-columns:90px minmax(80px
 const Track = styled.div`height:7px; background:rgba(168,178,188,.1);`;
 const Fill = styled.div`width:${p => p.$width};height:100%;background:${p => p.$tone};`;
 const Timeline = styled.div`
-  display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); margin-top:24px; border-top:2px solid #4c5961;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(118px,1fr)); margin-top:24px; border-top:2px solid #4c5961;
   @media(max-width:760px){grid-template-columns:1fr; border-top:0; border-left:2px solid #4c5961;}
 `;
 const TimeEvent = styled.div`min-width:0; padding:12px; border-right:1px solid rgba(168,178,188,.12); border-bottom:1px solid rgba(168,178,188,.12); background:${p => p.$bad ? 'rgba(212,154,88,.08)' : 'transparent'}; time{color:#78858d;font-size:.63rem;} strong{display:block;margin-top:5px;color:${p => p.$bad ? '#efc389' : '#e1e6e8'};font-size:.76rem;} span{display:block;margin-top:4px;color:#7c8991;font-size:.65rem;line-height:1.45;}`;
