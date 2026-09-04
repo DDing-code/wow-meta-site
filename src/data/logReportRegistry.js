@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'paladin-holy-nickname-mythic-2026-09-04',
+    guideId: 'paladin-holy',
+    date: '2026-09-04',
+    title: '닉네임 신성 성기사 신화 2킬 분석',
+    subject: '닉네임',
+    encounter: '영혼살무사 네크잘리·길 잃은 탐험가 신화',
+    fights: '2개 전투',
+    summary: '조건이 가까운 상위 로그와 시전 밀도, 생성기 간격, 봉화 전달, 마나, 재사용 대기시간·장신구 배치를 원시 이벤트로 비교했습니다.',
+    path: '/guide/paladin/holy/log-analysis/mythic',
+  },
+  {
     id: 'evoker-preservation-jpfg6a3lq1dn7ndv',
     guideId: 'evoker-preservation',
     date: '2026-09-04',
