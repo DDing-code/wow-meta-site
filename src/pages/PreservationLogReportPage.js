@@ -17,6 +17,7 @@ import {
   Target,
 } from 'lucide-react';
 import kbSkills from '../data/kb-skills.json';
+import LogReportSidebarList from '../components/LogReportSidebarList.js';
 
 const skills = kbSkills.skills || {};
 
@@ -283,6 +284,7 @@ function PreservationLogReportPage() {
           <NavLink href="#fight-notes">05 전투별 진단</NavLink>
           <NavLink href="#fix-cycle">06 수정 사이클</NavLink>
           <NavLink href="#targets">07 다음 로그 목표</NavLink>
+          <LogReportSidebarList />
         </ReportNav>
 
         <Article>
@@ -571,6 +573,7 @@ function VenomousDepthsComparisonPage() {
           <NavLink href="#context">07 해석 보정</NavLink>
           <NavLink href="#fix">08 수정 루틴</NavLink>
           <NavLink href="#limits">09 한계와 재검수</NavLink>
+          <LogReportSidebarList />
         </ReportNav>
 
         <Article>

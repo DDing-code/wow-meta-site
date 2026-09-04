@@ -14,6 +14,7 @@ import {
   Target,
 } from 'lucide-react';
 import kbSkills from '../data/kb-skills.json';
+import LogReportSidebarList from '../components/LogReportSidebarList.js';
 
 const skills = kbSkills.skills || {};
 
@@ -223,6 +224,7 @@ function HolyPriestLogReportPage() {
           <NavLink href="#talent">06 특성 판독</NavLink>
           <NavLink href="#resource">07 자원·사망</NavLink>
           <NavLink href="#fix">08 수정 사이클</NavLink>
+          <LogReportSidebarList />
         </ReportNav>
 
         <Article>

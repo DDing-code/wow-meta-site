@@ -15,6 +15,7 @@ import {
   Zap,
 } from 'lucide-react';
 import kbSkills from '../data/kb-skills.json';
+import LogReportSidebarList from '../components/LogReportSidebarList.js';
 
 const skills = kbSkills.skills || {};
 
@@ -282,6 +283,7 @@ function HolyPaladinLogReportPage() {
           <NavLink href="#explorers">04 탐험가</NavLink>
           <NavLink href="#context">05 공격대 맥락</NavLink>
           <NavLink href="#fix">06 교정안</NavLink>
+          <LogReportSidebarList />
         </ReportNav>
 
         <Article>
