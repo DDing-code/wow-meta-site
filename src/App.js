@@ -13,6 +13,7 @@ import GuideDetailPage from './pages/GuideDetailPage.js';
 import PreservationLogReportPage, { VenomousDepthsComparisonPage } from './pages/PreservationLogReportPage.js';
 import HolyPriestLogReportPage from './pages/HolyPriestLogReportPage.js';
 import HolyPaladinLogReportPage from './pages/HolyPaladinLogReportPage.js';
+import ElementalShamanUlatekLogReportPage from './pages/ElementalShamanUlatekLogReportPage.js';
 import LogAnalysisPage from './pages/LogAnalysisPage.js';
 import { getAllGuideSpecs } from './data/guideRegistry.js';
 
@@ -114,6 +115,7 @@ function App() {
               <Route path="/mockups" element={<MockupsPage />} />
               <Route path="/guide/priest/holy/log-analysis" element={<HolyPriestLogReportPage />} />
               <Route path="/guide/paladin/holy/log-analysis/mythic" element={<HolyPaladinLogReportPage />} />
+              <Route path="/guide/shaman/elemental/log-analysis/ulatek" element={<ElementalShamanUlatekLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis" element={<PreservationLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis/venomous-depths" element={<VenomousDepthsComparisonPage />} />
               {guideRoutes.map(({ id, path, Component }) => (

@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'shaman-elemental-ulatek-2026-09-04',
+    guideId: 'shaman-elemental',
+    date: '2026-09-04',
+    title: '축전싸개 정기 주술사 울라텍 영웅 로그 분석',
+    subject: '축전싸개',
+    encounter: '울라텍 영웅',
+    fights: '1개 전투',
+    summary: '같은 313 장비 구간 상위 로그와 세계 1위를 기준으로 페이즈별 피해, 용암 폭발 하드캐스트, 선조 복제, 소용돌이와 쿨기 구간을 원시 이벤트로 비교했습니다.',
+    path: '/guide/shaman/elemental/log-analysis/ulatek',
+  },
+  {
     id: 'paladin-holy-nickname-mythic-2026-09-04',
     guideId: 'paladin-holy',
     date: '2026-09-04',
