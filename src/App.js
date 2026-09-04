@@ -12,6 +12,7 @@ import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
 import GuideDetailPage from './pages/GuideDetailPage.js';
 import PreservationLogReportPage from './pages/PreservationLogReportPage.js';
 import HolyPriestLogReportPage from './pages/HolyPriestLogReportPage.js';
+import LogAnalysisPage from './pages/LogAnalysisPage.js';
 import { getAllGuideSpecs } from './data/guideRegistry.js';
 
 const guideRouteComponents = {
@@ -107,6 +108,8 @@ function App() {
               <Route path="/guide" element={<GuidePage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
+              <Route path="/logs" element={<LogAnalysisPage />} />
+              <Route path="/logs/:guideId" element={<LogAnalysisPage />} />
               <Route path="/mockups" element={<MockupsPage />} />
               <Route path="/guide/priest/holy/log-analysis" element={<HolyPriestLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis" element={<PreservationLogReportPage />} />

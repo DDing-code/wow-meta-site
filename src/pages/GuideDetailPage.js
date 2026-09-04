@@ -20,6 +20,7 @@ import {
   getAllGuideSpecs,
 } from '../data/guideRegistry.js';
 import guideManuscripts from '../data/guideManuscripts.js';
+import { getLogReportsByGuideId } from '../data/logReportRegistry.js';
 import kbSkills from '../data/kb-skills.json';
 import kbSynergies from '../data/kb-synergies.json';
 
@@ -2547,6 +2548,7 @@ function GuideDetailPage() {
 
   const data = useMemo(() => (guide ? buildGuideData(guide) : null), [guide]);
   const manuscript = guide ? guideManuscripts[guide.id] : null;
+  const logReports = guide ? getLogReportsByGuideId(guide.id) : [];
   const inlineTerms = useMemo(() => buildInlineTerms(data, manuscript), [data, manuscript]);
 
   useEffect(() => {
@@ -2614,10 +2616,10 @@ function GuideDetailPage() {
             가이드 목록
           </BackLink>
           <HeroTopActions>
-            {['priest-holy', 'evoker-preservation'].includes(guide.id) && (
-              <LogReportLink to={`${guide.path}/log-analysis`}>
+            {logReports.length > 0 && (
+              <LogReportLink to={`/logs/${guide.id}`} aria-label={`${guide.spec} ${guide.className} 로그 분석 ${logReports.length}건`}>
                 <BarChart3 size={15} aria-hidden="true" />
-                <span>로그 분석</span>
+                <span>로그 분석 {logReports.length}건</span>
               </LogReportLink>
             )}
             <PatchBadge>{manuscript ? `${manuscript.patch} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>

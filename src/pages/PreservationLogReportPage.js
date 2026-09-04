@@ -176,9 +176,9 @@ function PreservationLogReportPage() {
     <Page>
       <Hero>
         <HeroTop>
-          <BackLink to="/guide/evoker/preservation">
+          <BackLink to="/logs/evoker-preservation">
             <ArrowLeft size={16} aria-hidden="true" />
-            보존 기원사 가이드
+            보존 기원사 로그 분석 목록
           </BackLink>
           <Snapshot>12.1 · 2026-08-31 분석</Snapshot>
         </HeroTop>

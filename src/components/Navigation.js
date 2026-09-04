@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Database, Home, Menu, Newspaper, X } from 'lucide-react';
+import { BarChart3, BookOpen, Database, Home, Menu, Newspaper, X } from 'lucide-react';
 
 const Nav = styled.nav`
   position: sticky;
@@ -122,6 +122,7 @@ const MenuButton = styled.button`
 const navItems = [
   { path: '/', label: '홈', icon: Home },
   { path: '/guide', label: '가이드', icon: BookOpen },
+  { path: '/logs', label: '로그 분석', icon: BarChart3 },
   { path: '/spells', label: '스펠 DB', icon: Database },
   { path: '/news', label: '소식', icon: Newspaper },
 ];

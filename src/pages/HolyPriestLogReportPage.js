@@ -172,7 +172,7 @@ function HolyPriestLogReportPage() {
     <Page>
       <Hero>
         <HeroTop>
-          <BackLink to="/guide/priest/holy"><ArrowLeft size={16} aria-hidden="true" />신성 사제 가이드</BackLink>
+          <BackLink to="/logs/priest-holy"><ArrowLeft size={16} aria-hidden="true" />신성 사제 로그 분석 목록</BackLink>
           <Snapshot>12.1 · 2026-09-02 분석</Snapshot>
         </HeroTop>
         <HeroGrid>
