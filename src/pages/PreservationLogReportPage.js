@@ -41,7 +41,7 @@ const reports = [
   },
   {
     id: 'altar',
-    name: '휘감긴 제단',
+    name: '똬리의 제단',
     verdict: '출력 양호 · 효율 개선',
     tone: '#55a68f',
     href: 'https://www.warcraftlogs.com/reports/h4FVJ9f1zvcDGNWg?fight=61&type=healing&source=138',
@@ -96,6 +96,54 @@ const goals = [
   ['트라이 종료 마나', '15~20% 이상'],
 ];
 
+const venomousFights = [
+  { id: 10, name: '영혼살무사 네크잘리', result: '킬', duration: '4:22', koba: 162494, speed: 186158, kobaOh: 67.1, speedOh: 65.7, gap: 14.6 },
+  { id: 18, name: '매장된 파수꾼', result: '킬', duration: '4:49', koba: 246584, speed: 305556, kobaOh: 46.9, speedOh: 47.6, gap: 23.9 },
+  { id: 24, name: '악성의 바쉬니크', result: '킬', duration: '4:08', koba: 178894, speed: 203610, kobaOh: 61.9, speedOh: 60.7, gap: 13.8 },
+  { id: 31, name: '길 잃은 탐험가', result: '킬', duration: '3:39', koba: 155773, speed: 212263, kobaOh: 59.0, speedOh: 58.9, gap: 36.3 },
+  { id: 38, name: '스조라크', result: '킬', duration: '4:27', koba: 240130, speed: 361338, kobaOh: 41.2, speedOh: 42.9, gap: 50.5 },
+  { id: 40, name: '쌍둥이 송곳니', result: '킬', duration: '5:41', koba: 242316, speed: 303558, kobaOh: 47.6, speedOh: 48.1, gap: 25.3 },
+  { id: 44, name: '똬리의 제단', result: '킬', duration: '6:32', koba: 253660, speed: 334689, kobaOh: 43.4, speedOh: 45.3, gap: 31.9 },
+  { id: 45, name: '울라텍', result: '전멸', duration: '4:33', koba: 246648, speed: 323424, kobaOh: 40.2, speedOh: 41.8, gap: 31.1 },
+  { id: 46, name: '울라텍', result: '킬', duration: '9:32', koba: 292700, speed: 381162, kobaOh: 35.3, speedOh: 37.2, gap: 30.2 },
+];
+
+const venomousLoopMetrics = [
+  { skillId: '360995', label: '신록의 품', player: 10, reference: 138, unit: '회', note: '0.21회/분 대 2.89회/분. 4세트의 확정 정수 폭발 생성기를 거의 사용하지 않았습니다.' },
+  { skillId: '369299', label: '정수 폭발 소비', player: 576, reference: 844, unit: '회', note: 'Speed가 268회 더 소비했습니다. 획득량 차이와 거의 같습니다.' },
+  { skillId: '355913', label: '에메랄드 꽃', player: 445, reference: 613, unit: '회', note: 'Speed +37.8%. 무료 꽃이 쌍둥이 메아리와 2세트 자동 치유를 함께 엽니다.' },
+  { skillId: '1242031', label: '쌍둥이 메아리 소비', player: 260, reference: 409, unit: '회', note: 'Speed +57.3%. 다음 직접 메아리의 대상 수를 늘리는 핵심 격차입니다.' },
+  { skillId: '364343', label: '직접 메아리', player: 361, reference: 583, unit: '회', note: 'Speed +61.5%. 축복 직전의 복제 대상 준비량이 달라졌습니다.' },
+];
+
+const venomousOutputMetrics = [
+  { skillId: '355913', label: '에메랄드 꽃', player: 85.85, reference: 129.97, unit: 'M', note: '유효 치유 차이 +44.12M. 단일 주문 기준 가장 큰 격차입니다.' },
+  { skillId: '366155', label: '되감기', player: 131.53, reference: 159.49, unit: 'M', note: '직접 시전은 65회 대 68회로 비슷하지만 복제·유지 결과가 달랐습니다.' },
+  { skillId: '1256577', label: '메리스라의 축복', player: 81.09, reference: 97.71, unit: 'M', note: '218회 대 217회로 횟수는 같고, Speed의 1회당 유효 치유가 21.1% 높았습니다.' },
+  { skillId: '363534', label: '되돌리기', player: 37.66, reference: 51.67, unit: 'M', note: '16회 대 17회. Speed는 과치유가 30.1%, 코바야시는 41.2%였습니다.' },
+  { label: 'Soulcoiler 장신구', player: 15.82, reference: 33.92, unit: 'M', note: 'WCL 사용 기록 16회 대 29회. 빌드가 아닌 사용 빈도 차이도 큽니다.' },
+];
+
+const venomousCycle = [
+  { skillId: '355936', title: '꿈의 숨결 1단계', note: '예정된 광역 피해보다 앞서 지속 치유와 축복 발동을 준비합니다.' },
+  { skillId: '360995', title: '신록의 품', note: '정수 폭발이 2중첩이 아닐 때 사용해 4세트 확정 발동을 받습니다.' },
+  { skillId: '355913', title: '무료 에메랄드 꽃', note: '정수 폭발을 소비해 2세트 자동 치유와 쌍둥이 메아리를 엽니다.' },
+  { skillId: '373861', title: '시간 변칙', note: '피해 직전 공대원이 많은 방향으로 보내 약한 메아리를 넓게 깝니다.' },
+  { skillId: '364343', title: '메아리', note: '쌍둥이 메아리 중첩을 소비한 뒤 남은 자연 정수도 직접 메아리에 씁니다.' },
+  { skillId: '1256577', title: '메리스라의 축복', note: '실제 피해가 들어온 직후 준비한 메아리를 한 번에 회수합니다.' },
+];
+
+const venomousTargets = [
+  ['신록의 품', '피해·이동이 허용하면 분당 2회 이상'],
+  ['정수 폭발', '2중첩 전에 무료 꽃으로 먼저 소비'],
+  ['쌍둥이 메아리', '2중첩을 오래 들고 있지 않기'],
+  ['되돌리기 과치유', '35% 이하'],
+  ['정지장', '큰 피해 전에 저장, 피해 시작과 함께 방출'],
+  ['공대 생존기', '미풍·시간 팽창 배정표에 기록'],
+  ['딜 전환', '다음 치유 준비가 끝난 구간에만'],
+  ['검수 단위', 'HPS보다 메커니즘별 시전·소비량'],
+];
+
 function iconUrl(skill) {
   return skill?.iconUrls?.small || skill?.iconUrls?.medium || skill?.iconUrl || '';
 }
@@ -128,7 +176,7 @@ function SourceLink({ href, children }) {
   );
 }
 
-function MetricComparison({ metric }) {
+function MetricComparison({ metric, playerLabel = '본인', referenceLabel = '상위' }) {
   const max = Math.max(metric.player, metric.reference, 1);
   const playerWidth = `${Math.max((metric.player / max) * 100, 3)}%`;
   const referenceWidth = `${Math.max((metric.reference / max) * 100, 3)}%`;
@@ -136,17 +184,17 @@ function MetricComparison({ metric }) {
   return (
     <MetricRow>
       <MetricCopy>
-        <strong>{metric.label}</strong>
+        <strong>{metric.skillId ? <SkillLink id={metric.skillId}>{metric.label}</SkillLink> : metric.label}</strong>
         <span>{metric.note}</span>
       </MetricCopy>
-      <MetricBars aria-label={`${metric.label}: 본인 ${metric.player}${metric.unit}, 상위 참고 ${metric.reference}${metric.unit}`} role="img">
+      <MetricBars aria-label={`${metric.label}: ${playerLabel} ${metric.player}${metric.unit}, ${referenceLabel} ${metric.reference}${metric.unit}`} role="img">
         <MetricBarLine>
-          <MetricBarLabel>본인</MetricBarLabel>
+          <MetricBarLabel>{playerLabel}</MetricBarLabel>
           <MetricTrack><MetricFill $width={playerWidth} $tone={metric.inverse ? '#d49a58' : '#4fa78f'} /></MetricTrack>
           <MetricValue>{metric.player}{metric.unit}</MetricValue>
         </MetricBarLine>
         <MetricBarLine>
-          <MetricBarLabel>상위</MetricBarLabel>
+          <MetricBarLabel>{referenceLabel}</MetricBarLabel>
           <MetricTrack><MetricFill $width={referenceWidth} $tone="#8d99a2" /></MetricTrack>
           <MetricValue>{metric.reference}{metric.unit}</MetricValue>
         </MetricBarLine>
@@ -315,8 +363,8 @@ function PreservationLogReportPage() {
                 </ManaTrack>
               </ManaRow>
               <ManaRow>
-                <div><strong>휘감긴 제단</strong><span>물약 미사용</span></div>
-                <ManaTrack aria-label="휘감긴 제단 종료 마나 본인 5.3%, 상위 39.1%" role="img">
+                <div><strong>똬리의 제단</strong><span>물약 미사용</span></div>
+                <ManaTrack aria-label="똬리의 제단 종료 마나 본인 5.3%, 상위 39.1%" role="img">
                   <ManaLine><span>본인</span><i style={{ width: '5.3%' }} /><b>5.3%</b></ManaLine>
                   <ManaLine><span>상위</span><i style={{ width: '39.1%' }} /><b>39.1%</b></ManaLine>
                 </ManaTrack>
@@ -371,7 +419,7 @@ function PreservationLogReportPage() {
                 </FindingList>
               </FightNote>
               <FightNote>
-                <h3>휘감긴 제단</h3>
+                <h3>똬리의 제단</h3>
                 <FindingList>
                   <li><strong>꿈의 숨결 최초 적중 7.84명</strong><span>상위 참고 9.58명입니다. 횟수보다 전방 각도와 피해 타이밍을 고쳐야 합니다.</span></li>
                   <li><strong>신록의 품 과치유 67.8%</strong><span>자기 시전은 4세트 운용상 정상입니다. 정수 폭발 2중첩에서 발동을 덮지만 않는지 확인합니다.</span></li>
@@ -424,6 +472,426 @@ function PreservationLogReportPage() {
             <SourceLink href="https://spiritbloom.pro/preservation/raid">SpiritbloomPro 12.1 레이드</SourceLink>
             <SourceLink href="https://www.wowhead.com/guide/classes/evoker/preservation/rotation-cooldowns-pve-healer">Wowhead 12.1 보존 딜사이클</SourceLink>
             <SourceLink href="https://worldofwarcraft.blizzard.com/en-us/news/24293281/curse-of-ulatek-content-update-notes">Blizzard 12.1 패치 노트</SourceLink>
+          </Sources>
+        </Article>
+      </ReportLayout>
+    </Page>
+  );
+}
+
+function VenomousDepthsComparisonPage() {
+  useEffect(() => {
+    document.title = '코바야시네띵진 vs Speed | 맹독 심연 로그 분석 | wowmeta';
+    window.scrollTo(0, 0);
+
+    const timer = window.setTimeout(() => {
+      try {
+        window.$WowheadPower?.refreshLinks?.();
+        window.WH?.Tooltips?.refreshLinks?.();
+      } catch (error) {
+        // Wowhead links still work if the optional tooltip script is unavailable.
+      }
+    }, 250);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  return (
+    <Page>
+      <Hero>
+        <HeroTop>
+          <BackLink to="/logs/evoker-preservation">
+            <ArrowLeft size={16} aria-hidden="true" />
+            보존 기원사 로그 분석 목록
+          </BackLink>
+          <Snapshot>12.1 · 2026-09-04 분석</Snapshot>
+        </HeroTop>
+        <HeroBody>
+          <div>
+            <Eyebrow>WARCRAFT LOGS REVIEW · 맹독 심연 영웅</Eyebrow>
+            <Title>같은 공대, 같은 보존, 198.3M의 차이</Title>
+            <Lead>
+              코바야시네띵진과 Speed가 함께 참여한 맹독 심연 8개 우두머리, 9개 전투를 동일 조건으로 비교했습니다.
+              결과만 보면 Speed가 29.5% 앞서지만, 진짜 차이는 총 HPS가 아니라 12.1 시즌 2 세트를 실제 사이클로 연결했는지에 있습니다.
+            </Lead>
+          </div>
+          <HeroVerdict>
+            <HeroVerdictIcon><Target size={21} aria-hidden="true" /></HeroVerdictIcon>
+            <div>
+              <span>핵심 판정</span>
+              <strong><SkillLink id="360995" /> 10회 대 138회</strong>
+              <p>코바야시는 4세트를 착용했지만 확정 <SkillLink id="369299" /> 생성기를 거의 사용하지 않아 이후의 무료 꽃·쌍둥이 메아리·축복 연결까지 함께 줄었습니다.</p>
+            </div>
+          </HeroVerdict>
+        </HeroBody>
+      </Hero>
+
+      <VerdictGrid aria-label="전체 비교 요약">
+        <FightCard $tone="#d49a58">
+          <FightHead>
+            <div><FightLabel>코바야시네띵진</FightLabel><FightTitle>유효 치유 673.1M</FightTitle></div>
+            <SourceLink href="https://www.warcraftlogs.com/reports/JPFG6A3LQ1dN7nDv?source=95&type=healing">원본 로그</SourceLink>
+          </FightHead>
+          <FightStats>
+            <FightStat><span>통합 HPS</span><strong>235.2k</strong></FightStat>
+            <FightStat><span>과치유</span><strong>47.3%</strong></FightStat>
+            <FightStat><span>공격 피해</span><strong>29.43M</strong></FightStat>
+            <FightStat><span><SkillLink id="360995" /></span><strong>10회</strong></FightStat>
+            <FightStat><span><SkillLink id="355913" /></span><strong>445회</strong></FightStat>
+            <FightStat><span><SkillLink id="364343" /></span><strong>361회</strong></FightStat>
+          </FightStats>
+          <FightSummary>기본 호흡기와 시간 변칙 횟수는 오히려 많았습니다. 활동량 부족이 아니라 시즌 2 자원 증폭 고리가 끊긴 것이 문제입니다.</FightSummary>
+        </FightCard>
+        <FightCard $tone="#55a68f">
+          <FightHead>
+            <div><FightLabel>Speed</FightLabel><FightTitle>유효 치유 871.3M</FightTitle></div>
+            <SourceLink href="https://www.warcraftlogs.com/reports/JPFG6A3LQ1dN7nDv?source=104&type=healing">원본 로그</SourceLink>
+          </FightHead>
+          <FightStats>
+            <FightStat><span>통합 HPS</span><strong>304.5k</strong></FightStat>
+            <FightStat><span>과치유</span><strong>47.5%</strong></FightStat>
+            <FightStat><span>공격 피해</span><strong>10.03M</strong></FightStat>
+            <FightStat><span><SkillLink id="360995" /></span><strong>138회</strong></FightStat>
+            <FightStat><span><SkillLink id="355913" /></span><strong>613회</strong></FightStat>
+            <FightStat><span><SkillLink id="364343" /></span><strong>583회</strong></FightStat>
+          </FightStats>
+          <FightSummary>더 많이 치유했지만 과치유율은 거의 같았습니다. 단순히 먼저 선점한 치유가 아니라 실제 자원 생성과 유효 회수가 함께 증가했습니다.</FightSummary>
+        </FightCard>
+      </VerdictGrid>
+
+      <ReportLayout>
+        <ReportNav aria-label="분석 목차">
+          <NavTitle>분석 목차</NavTitle>
+          <NavLink href="#method">01 범위와 판정법</NavLink>
+          <NavLink href="#fights">02 전투별 결과</NavLink>
+          <NavLink href="#mechanism">03 핵심 메커니즘</NavLink>
+          <NavLink href="#evidence">04 원시 이벤트 증거</NavLink>
+          <NavLink href="#timing">05 울라텍 타임라인</NavLink>
+          <NavLink href="#cooldowns">06 쿨기와 생존</NavLink>
+          <NavLink href="#context">07 해석 보정</NavLink>
+          <NavLink href="#fix">08 수정 루틴</NavLink>
+          <NavLink href="#limits">09 한계와 재검수</NavLink>
+        </ReportNav>
+
+        <Article>
+          <Section id="method">
+            <SectionHead>
+              <SectionIcon><BarChart3 size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>01 · 범위와 판정법</SectionKicker><SectionTitle>같은 전투 안에서 조건을 최대한 고정했습니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              2026년 9월 3일 기록된 한 보고서에서 두 플레이어가 동시에 참여한 맹독 심연 영웅 전투만 골랐습니다.
+              8개 우두머리의 8킬과 울라텍 전멸 1회를 합친 47분 42초이며, 코바야시네띵진은 actor 95, Speed는 actor 104입니다.
+            </SectionLead>
+            <ResearchGrid>
+              <ResearchPoint>
+                <span>비교 단위</span>
+                <strong>동일 공격대 · 동일 전투 · 동일 전문화</strong>
+                <p>피해 패턴, 전투 길이, 다른 힐러 구성이 같아 서로 다른 공개 로그보다 훨씬 강한 비교 조건입니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>원시 자료</span>
+                <strong>치유·과치유·시전·버프 이벤트</strong>
+                <p>활성 시전에서는 WCL의 fake 이벤트를 제외했고, 버프는 획득·중첩 획득·제거·중첩 제거만 셌습니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>판정 원칙</span>
+                <strong>결과와 원인을 따로 평가</strong>
+                <p>HPS는 결론이 아니라 결과입니다. 특성·장비·딜 전환·사망 시간을 분리한 뒤 플레이 가능한 수정점만 남겼습니다.</p>
+              </ResearchPoint>
+            </ResearchGrid>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p>보고서의 Nymrissa Wavecaller 전투는 블리자드가 공개한 맹독 심연 8개 우두머리에 포함되지 않아 집계에서 제외했습니다. 울라텍은 전멸과 킬을 서로 다른 표본으로 유지했습니다.</p>
+            </Caution>
+          </Section>
+
+          <Section id="fights">
+            <SectionHead>
+              <SectionIcon><Gauge size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>02 · 전투별 결과</SectionKicker><SectionTitle>Speed가 9개 전투 모두 앞섰습니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              차이는 최소 13.8%, 최대 50.5%였습니다. 스조라크에서 가장 크게 벌어졌고, 울라텍 킬에서도 30.2%가 유지됐습니다.
+              특정 보스 한 번의 우연이나 코바야시네띵진의 쌍둥이 송곳니 사망만으로 전체 차이를 설명할 수 없습니다.
+            </SectionLead>
+            <BossComparison role="table" aria-label="맹독 심연 전투별 유효 HPS 비교">
+              <BossHeader role="row">
+                <span role="columnheader">전투</span>
+                <span role="columnheader">유효 HPS · 과치유</span>
+                <span role="columnheader">차이</span>
+              </BossHeader>
+              {venomousFights.map(fight => (
+                <BossRow key={`${fight.id}-${fight.result}`} role="row">
+                  <BossIdentity role="cell">
+                    <strong>{fight.name}</strong>
+                    <span>{fight.result} · {fight.duration}</span>
+                  </BossIdentity>
+                  <HpsCompare role="cell" aria-label={`코바야시네띵진 ${fight.koba} HPS, Speed ${fight.speed} HPS`}>
+                    <HpsLine>
+                      <span>Koba</span>
+                      <HpsTrack><HpsFill $width={`${(fight.koba / fight.speed) * 100}%`} $tone="#d49a58" /></HpsTrack>
+                      <strong>{Math.round(fight.koba / 1000)}k</strong>
+                      <small>OH {fight.kobaOh}%</small>
+                    </HpsLine>
+                    <HpsLine>
+                      <span>Speed</span>
+                      <HpsTrack><HpsFill $width="100%" $tone="#55a68f" /></HpsTrack>
+                      <strong>{Math.round(fight.speed / 1000)}k</strong>
+                      <small>OH {fight.speedOh}%</small>
+                    </HpsLine>
+                  </HpsCompare>
+                  <GapBadge role="cell">+{fight.gap}%</GapBadge>
+                </BossRow>
+              ))}
+            </BossComparison>
+            <Finding>
+              <FindingMark>의미</FindingMark>
+              <p>통합 과치유는 47.3% 대 47.5%로 사실상 같습니다. Speed의 추가 198.3M을 “빈 체력부터 먼저 먹은 로그”로만 볼 수 없으며, 어떤 자원과 주문이 실제 유효 치유로 바뀌었는지 추적해야 합니다.</p>
+            </Finding>
+          </Section>
+
+          <Section id="mechanism">
+            <SectionHead>
+              <SectionIcon><Route size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>03 · 핵심 메커니즘</SectionKicker><SectionTitle>격차는 4세트 시동 버튼에서 연쇄적으로 커졌습니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              12.1 시즌 2의 4세트는 <SkillLink id="360995" />이 <SkillLink id="369299" />을 확정 생성하게 합니다.
+              그 무료 자원으로 <SkillLink id="355913" />을 쓰면 2세트가 <SkillLink id="361469" />을 자동 발사하고,
+              <SkillLink id="1242031" />가 다음 <SkillLink id="364343" /> 한 번을 두 대상에게 적용합니다.
+              이렇게 늘어난 메아리가 <SkillLink id="1256577" />의 복제 대상을 키웁니다.
+            </SectionLead>
+            <CycleRail>
+              {venomousCycle.map((step, index) => (
+                <CycleStep key={step.title}>
+                  <CycleNumber>{String(index + 1).padStart(2, '0')}</CycleNumber>
+                  <CycleSkill><SkillLink id={step.skillId}>{step.title}</SkillLink></CycleSkill>
+                  <p>{step.note}</p>
+                  {index < venomousCycle.length - 1 && <CycleArrow aria-hidden="true"><ChevronRight size={18} /></CycleArrow>}
+                </CycleStep>
+              ))}
+            </CycleRail>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p>이 도식은 고정 매크로가 아니라 기본 골격입니다. <SkillLink id="369299" />이 이미 2중첩이면 <SkillLink id="360995" /> 전에 무료 <SkillLink id="355913" />으로 한 중첩을 먼저 소비하고, 실제 피해 시간에 맞춰 <SkillLink id="373861" />과 <SkillLink id="1256577" />의 위치를 조정해야 합니다.</p>
+            </Caution>
+          </Section>
+
+          <Section id="evidence">
+            <SectionHead>
+              <SectionIcon><Sparkles size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>04 · 원시 이벤트 증거</SectionKicker><SectionTitle>기본 주문이 아니라 증폭 고리의 회전수가 달랐습니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              코바야시네띵진은 <SkillLink id="355936" /> 141회, <SkillLink id="373861" /> 196회로 Speed의 132회, 183회보다 오히려 많았습니다.
+              <SkillLink id="1256577" />도 218회 대 217회입니다. 손이 멈춘 로그가 아니라, 같은 축복 한 번에 싣는 메아리와 시즌 세트 발동량이 부족한 로그입니다.
+            </SectionLead>
+            <EncounterColumns>
+              <EncounterPanel>
+                <EncounterHeading><span>사이클 이벤트</span><strong>Koba / Speed</strong></EncounterHeading>
+                {venomousLoopMetrics.map(metric => <MetricComparison key={metric.label} metric={metric} playerLabel="Koba" referenceLabel="Speed" />)}
+              </EncounterPanel>
+              <EncounterPanel>
+                <EncounterHeading><span>주요 유효 치유</span><strong>Koba / Speed</strong></EncounterHeading>
+                {venomousOutputMetrics.map(metric => <MetricComparison key={metric.label} metric={metric} playerLabel="Koba" referenceLabel="Speed" />)}
+              </EncounterPanel>
+            </EncounterColumns>
+            <DataScroll tabIndex="0" aria-label="자원 버프 이벤트 비교 표">
+              <DataTable>
+                <thead><tr><th>이벤트</th><th>코바야시네띵진</th><th>Speed</th><th>Speed 차이</th><th>판정</th></tr></thead>
+                <tbody>
+                  <tr><th><SkillLink id="360995" /></th><td>10회</td><td>138회</td><td>+128회</td><td>4세트 생성기 미사용</td></tr>
+                  <tr><th><SkillLink id="369299">정수 폭발 획득</SkillLink></th><td>580회</td><td>850회</td><td>+46.6%</td><td>발동 풀 자체가 작음</td></tr>
+                  <tr><th><SkillLink id="369299">정수 폭발 소비</SkillLink></th><td>576회</td><td>844회</td><td>+46.5%</td><td>획득량 차이를 그대로 반영</td></tr>
+                  <tr><th><SkillLink id="355913" /></th><td>445회</td><td>613회</td><td>+37.8%</td><td>무료 자원·쌍둥이 메아리 연결 감소</td></tr>
+                  <tr><th><SkillLink id="1242031">쌍둥이 메아리 획득</SkillLink></th><td>273회</td><td>418회</td><td>+53.1%</td><td>꽃 시전 차이와 같은 방향</td></tr>
+                  <tr><th><SkillLink id="1242031">쌍둥이 메아리 소비</SkillLink></th><td>260회</td><td>409회</td><td>+57.3%</td><td>다음 직접 메아리 효율 감소</td></tr>
+                  <tr><th><SkillLink id="364343" /></th><td>361회</td><td>583회</td><td>+61.5%</td><td>축복 전 복제 대상 준비량 감소</td></tr>
+                  <tr><th><SkillLink id="1256577" /></th><td>218회</td><td>217회</td><td>-1회</td><td>횟수가 아니라 1회 가치 문제</td></tr>
+                </tbody>
+              </DataTable>
+            </DataScroll>
+            <Finding>
+              <FindingMark>인과 고리</FindingMark>
+              <p><SkillLink id="360995" /> 차이 128회가 <SkillLink id="369299" /> 소비 +268회, <SkillLink id="355913" /> +168회, <SkillLink id="1242031" /> 소비 +149회, 직접 <SkillLink id="364343" /> +222회와 같은 방향으로 이어집니다. 발동 하나하나를 1:1로 귀속할 수는 없지만, 독립된 네 이벤트가 같은 메커니즘을 지지합니다.</p>
+            </Finding>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p>버프의 refresh 이벤트는 중첩 정보가 없어 낭비로 판정하지 않았습니다. 획득은 applybuff와 applybuffstack, 소비는 removebuff와 removebuffstack만 합산했습니다.</p>
+            </Caution>
+          </Section>
+          <Section id="timing">
+            <SectionHead>
+              <SectionIcon><Route size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>05 · 울라텍 킬 타임라인</SectionKicker><SectionTitle>같은 큰 피해를 앞에 두고 준비 시점이 달랐습니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              가장 긴 울라텍 킬의 505~540초를 따로 잘랐습니다. 515~531초 광역 피해에서 Speed는 미리 저장한 패키지와
+              <SkillLink id="363534" />을 앞쪽에 겹쳤고, 코바야시네띵진은 기본 주문을 사용한 뒤 534.4초에 새 <SkillLink id="370537" /> 저장을 시작했습니다.
+            </SectionLead>
+            <FightNotes>
+              <FightNote>
+                <h3>코바야시네띵진</h3>
+                <FindingList>
+                  <li><strong>506.6~514.6초 · 기본 준비</strong><span><SkillLink id="364343" /> 2회 → <SkillLink id="366155" /> → <SkillLink id="355936" /> 순서로 최소 준비는 했습니다.</span></li>
+                  <li><strong>517.1~525.7초 · 첫 대응</strong><span><SkillLink id="373861" /> → <SkillLink id="364343" /> → <SkillLink id="1256577" /> → <SkillLink id="355913" /> 2회 → <SkillLink id="364343" /> 2회였습니다.</span></li>
+                  <li><strong>527.4~533.4초 · 후속 대응</strong><span><SkillLink id="355913" /> → <SkillLink id="373861" /> → <SkillLink id="366155" /> → <SkillLink id="355936" />로 이어졌습니다.</span></li>
+                  <li><strong>534.4초 · 뒤늦은 저장 시작</strong><span>피해가 이미 진행된 뒤 <SkillLink id="370537" />을 켜고 주문을 저장하기 시작했습니다. 이 구간에는 즉시 방출할 패키지가 없었습니다.</span></li>
+                </FindingList>
+              </FightNote>
+              <FightNote>
+                <h3>Speed</h3>
+                <FindingList>
+                  <li><strong>505.2~506.5초 · 선제 방어와 방출</strong><span><SkillLink id="363916" />과 <SkillLink id="374227" />을 먼저 켠 뒤 저장해 둔 <SkillLink id="370537" />을 방출했습니다.</span></li>
+                  <li><strong>507.0~511.8초 · 첫 패키지</strong><span><SkillLink id="373861" /> → <SkillLink id="364343" /> 2회 → <SkillLink id="1256577" /> → <SkillLink id="355913" /> → <SkillLink id="355936" />를 압축했습니다.</span></li>
+                  <li><strong>516.2~524.2초 · 피해 직후 회수</strong><span><SkillLink id="373861" />과 <SkillLink id="364343" /> 뒤 517.5초 <SkillLink id="363534" />, 축복, 꽃 2회, 522.9초 <SkillLink id="360995" />, 다시 꽃으로 연결했습니다.</span></li>
+                  <li><strong>525.5~539.3초 · 두 번째 파동</strong><span><SkillLink id="364343" /> 3회 → <SkillLink id="1256577" /> → 꽃 2회 → <SkillLink id="355936" /> → 메아리 2회 → 축복으로 한 번 더 회수했습니다.</span></li>
+                </FindingList>
+              </FightNote>
+            </FightNotes>
+            <Finding>
+              <FindingMark>판정</FindingMark>
+              <p>Speed는 “저장 완료 → 피해 직전 방출 → 피해 직후 <SkillLink id="363534" /> → <SkillLink id="360995" />으로 다음 무료 자원 생성”까지 한 파동 안에 끝냈습니다. 코바야시네띵진도 핵심 주문은 눌렀지만 회수 쿨기가 빠졌고, 다음 파동용 저장이 피해 뒤로 밀렸습니다.</p>
+            </Finding>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p>이 장면 하나로 모든 <SkillLink id="370537" /> 사용을 실패로 보지는 않습니다. 전체 저장/방출 횟수는 31/31회 대 32/25회로 비슷하며, 여기서는 가장 큰 피해 구간에 “완성품을 꺼냈는가”만 비교했습니다.</p>
+            </Caution>
+          </Section>
+
+          <Section id="cooldowns">
+            <SectionHead>
+              <SectionIcon><Shield size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>06 · 쿨기와 생존</SectionKicker><SectionTitle>횟수가 같아도 피해 직후에 쓴 쪽이 더 남겼습니다</SectionTitle></div>
+            </SectionHead>
+            <DataScroll tabIndex="0" aria-label="쿨기와 생존기 사용 비교 표">
+              <DataTable>
+                <thead><tr><th>항목</th><th>코바야시네띵진</th><th>Speed</th><th>해석</th></tr></thead>
+                <tbody>
+                  <tr><th><SkillLink id="363534" /></th><td>16회 · 37.66M · OH 41.2%</td><td>17회 · 51.67M · OH 30.1%</td><td>Speed의 1회당 유효 치유 +29.1%</td></tr>
+                  <tr><th><SkillLink id="370537" /></th><td>저장 31 · 방출 31</td><td>저장 32 · 방출 25</td><td>총횟수보다 피해 시간표와 저장 내용 확인</td></tr>
+                  <tr><th><SkillLink id="363916" /></th><td>10회</td><td>26회</td><td>개인 생존과 위험 구간 선제 대응 차이</td></tr>
+                  <tr><th><SkillLink id="374227" /></th><td>3회</td><td>7회</td><td>공대 배정이 없었다면 추가 사용 여지</td></tr>
+                  <tr><th><SkillLink id="357170" /></th><td>0회</td><td>11회</td><td>탱커·집중 피해 대상 외생기 배정 차이</td></tr>
+                  <tr><th>Soulcoiler Ritual Vessel</th><td>16회 · 15.82M</td><td>29회 · 33.92M</td><td>Speed가 13회 더 사용, 유효 치유 2.14배</td></tr>
+                </tbody>
+              </DataTable>
+            </DataScroll>
+            <Finding>
+              <FindingMark>우선순위</FindingMark>
+              <p><SkillLink id="363534" />은 경보가 뜰 때가 아니라 실제 체력이 빠진 직후에, <SkillLink id="370537" />은 큰 피해가 오기 전에 저장을 끝내야 합니다. <SkillLink id="374227" />과 <SkillLink id="357170" />은 개인 로그 경쟁이 아니라 공대 배정표에 따라 평가합니다.</p>
+            </Finding>
+          </Section>
+
+          <Section id="context">
+            <SectionHead>
+              <SectionIcon><CircleAlert size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>07 · 해석 보정</SectionKicker><SectionTitle>198.3M 전부를 손가락 차이로 계산하면 틀립니다</SectionTitle></div>
+            </SectionHead>
+            <ResearchGrid>
+              <ResearchPoint>
+                <span>딜 기여</span>
+                <strong>29.43M 대 10.03M · 코바야시 2.93배</strong>
+                <p>코바야시는 직접 <SkillLink id="361469" /> 114회와 불의 숨결 117회, Speed는 15회와 79회였습니다. 치유가 안정된 파밍에서는 이 공격 기여가 가치가 있습니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>장비</span>
+                <strong>지능 3,106 대 3,303 · Speed +6.3%</strong>
+                <p>울라텍 킬 기준 Speed가 지능·가속·특화가 높았습니다. 표시 아이템 레벨은 비슷하지만 장비 차이는 일부 출력에 기여합니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>특성·자동 치유</span>
+                <strong>Enkindle 35.72M · Draconic Instincts 9.88M</strong>
+                <p>두 항목은 Speed에게만 WCL 치유로 귀속됐습니다. 특성 선택의 출력이므로 순수한 실행 격차에 그대로 더하지 않았습니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>사망</span>
+                <strong>쌍둥이 송곳니 약 10.8초 공백</strong>
+                <p>코바야시네띵진은 71.1초에 사망해 81.9초부터 다시 시전했습니다. 다만 나머지 킬에서도 차이가 반복돼 전체 원인은 아닙니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>영웅 특성</span>
+                <strong>둘 다 불꽃형성자 계열 로그</strong>
+                <p>화염 흡수와 세트 자동 발동이 공통으로 보입니다. WCL의 개별 치유 귀속만으로 모든 선택 노드를 단정하지 않았습니다.</p>
+              </ResearchPoint>
+              <ResearchPoint>
+                <span>힐 로그의 제약</span>
+                <strong>치유량은 공대 안에서 서로 경쟁합니다</strong>
+                <p>낮은 HPS가 곧 실패는 아닙니다. 그러나 같은 과치유율로 9전투 모두 뒤지고 자원 이벤트까지 같은 방향이면 반복 가능한 운용 차이로 볼 근거가 충분합니다.</p>
+              </ResearchPoint>
+            </ResearchGrid>
+            <Caution>
+              <CircleAlert size={18} aria-hidden="true" />
+              <p>이 보고서는 코바야시네띵진에게 딜을 중단하라고 결론내리지 않습니다. 다음 피해 준비가 끝났다면 딜이 맞고, <SkillLink id="360995" />·무료 <SkillLink id="355913" />·<SkillLink id="1242031" /> 중첩이 비어 있는데 딜 캐스팅을 시작했다면 우선순위가 뒤집힌 것입니다.</p>
+            </Caution>
+          </Section>
+
+          <Section id="fix">
+            <SectionHead>
+              <SectionIcon><ListChecks size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>08 · 수정 루틴</SectionKicker><SectionTitle>다음 로그에서는 버튼 하나보다 연결 순서를 바꿉니다</SectionTitle></div>
+            </SectionHead>
+            <FightNotes>
+              <FightNote>
+                <h3>평시와 피해 전</h3>
+                <FindingList>
+                  <li><strong>1. 중첩부터 확인</strong><span><SkillLink id="369299" /> 2중첩이면 무료 <SkillLink id="355913" />을 먼저 써서 <SkillLink id="360995" />의 확정 발동 자리를 만듭니다.</span></li>
+                  <li><strong>2. 신록의 품을 사이클 시동기로 사용</strong><span>위험한 돌진이 아니라면 부상 대상이나 자신에게 사용하고, 생긴 무료 자원을 바로 꽃으로 연결합니다.</span></li>
+                  <li><strong>3. 꽃 뒤 메아리를 미루지 않기</strong><span><SkillLink id="1242031" />이 켜지면 다음 <SkillLink id="364343" /> 한 번의 효율이 두 배입니다. 2중첩을 오래 보관하지 않습니다.</span></li>
+                </FindingList>
+              </FightNote>
+              <FightNote>
+                <h3>피해 파동과 여유 구간</h3>
+                <FindingList>
+                  <li><strong>4. 피해 전에는 준비, 피해 뒤에는 회수</strong><span><SkillLink id="355936" />과 <SkillLink id="373861" />을 먼저 배치하고, 실제 체력이 빠진 직후 <SkillLink id="1256577" />과 <SkillLink id="363534" />을 사용합니다.</span></li>
+                  <li><strong>5. 정지장은 저장 시점을 한 파동 앞당기기</strong><span>피해가 시작된 뒤 새로 저장하지 말고, 이전 여유 구간에 <SkillLink id="355936" />·<SkillLink id="373861" /> 중심의 패키지를 완성합니다.</span></li>
+                  <li><strong>6. 딜은 준비가 끝난 뒤</strong><span><SkillLink id="369299" />·<SkillLink id="1242031" />·다음 피해 시간표를 확인한 뒤에만 적 대상 <SkillLink id="361469" />과 불의 숨결로 전환합니다.</span></li>
+                </FindingList>
+              </FightNote>
+            </FightNotes>
+            <GoalGrid>
+              {venomousTargets.map(([label, value]) => (
+                <Goal key={label}>
+                  <CheckCircle2 size={17} aria-hidden="true" />
+                  <span>{label}</span>
+                  <strong>{value}</strong>
+                </Goal>
+              ))}
+            </GoalGrid>
+            <PriorityLine><strong>수정 순서</strong><span><SkillLink id="360995" /> 사용 회복 → 무료 <SkillLink id="355913" /> → <SkillLink id="1242031" /> 즉시 소비 → 축복 전 메아리 확대 → 되돌리기·정지장 시간 보정</span></PriorityLine>
+          </Section>
+
+          <Section id="limits">
+            <SectionHead>
+              <SectionIcon><CheckCircle2 size={18} aria-hidden="true" /></SectionIcon>
+              <div><SectionKicker>09 · 한계와 재검수</SectionKicker><SectionTitle>다음 로그에서 같은 가설이 다시 맞는지 확인합니다</SectionTitle></div>
+            </SectionHead>
+            <SectionLead>
+              이 분석은 같은 공격대라는 강한 통제 조건을 갖지만 관찰 자료입니다. 마나 자원 그래프가 API 응답에 없어 종료 마나나 마나 고갈은 판정하지 않았고,
+              특성 선택에서 발생한 자동 치유는 실행 평가와 분리했습니다. 다음 주에는 HPS 순위보다 아래 네 비율이 개선되는지 먼저 확인해야 합니다.
+            </SectionLead>
+            <RuleStrip>
+              <Rule><span>4세트 사용률</span><strong><SkillLink id="360995" /> / 분</strong></Rule>
+              <Rule><span>세트 연결률</span><strong>신록의 품 뒤 무료 <SkillLink id="355913" /></strong></Rule>
+              <Rule><span>메아리 증폭</span><strong><SkillLink id="1242031" /> 소비 / 꽃</strong></Rule>
+              <Rule><span>회수 효율</span><strong><SkillLink id="1256577" /> 1회당 유효 치유</strong></Rule>
+            </RuleStrip>
+            <Finding>
+              <FindingMark>최종 결론</FindingMark>
+              <p>코바야시네띵진의 기본 운용이 무너진 로그는 아닙니다. 12.1 이전에도 하던 <SkillLink id="355936" />·<SkillLink id="373861" />·<SkillLink id="1256577" /> 회전은 충분했지만, 시즌 2의 <SkillLink id="360995" /> 확정 발동을 기존 회전에 편입하지 못했습니다. 이 한 지점이 무료 자원, 꽃, 쌍둥이 메아리, 직접 메아리, 축복 효율까지 연쇄적으로 줄인 것이 두 플레이어 사이의 가장 재현성 높은 차이입니다.</p>
+            </Finding>
+          </Section>
+
+          <Sources>
+            <strong>자료와 운용 기준</strong>
+            <SourceLink href="https://www.warcraftlogs.com/reports/JPFG6A3LQ1dN7nDv">Warcraft Logs 원본 보고서</SourceLink>
+            <SourceLink href="https://www.warcraftlogs.com/api/docs">Warcraft Logs API</SourceLink>
+            <SourceLink href="https://worldofwarcraft.blizzard.com/ko-kr/news/24294062">블리자드 맹독 심연 우두머리 목록</SourceLink>
+            <SourceLink href="https://www.method.gg/guides/preservation-evoker/gearing">Method 12.1 세트 효과</SourceLink>
+            <SourceLink href="https://www.method.gg/guides/preservation-evoker/playstyle-and-rotation">Method 12.1 운용</SourceLink>
+            <SourceLink href="https://www.icy-veins.com/wow/preservation-evoker-pve-healing-rotation-cooldowns-abilities">Icy Veins 12.1 운용</SourceLink>
+            <SourceLink href="https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear">Wowhead 12.1 세트 효과</SourceLink>
           </Sources>
         </Article>
       </ReportLayout>
@@ -767,7 +1235,7 @@ const MetricBars = styled.div`
 
 const MetricBarLine = styled.div`
   display: grid;
-  grid-template-columns: 30px minmax(60px, 1fr) 54px;
+  grid-template-columns: 42px minmax(60px, 1fr) 54px;
   gap: 7px;
   align-items: center;
 `;
@@ -1054,7 +1522,7 @@ const GoalGrid = styled.div`
 
 const Goal = styled.div`
   display: grid;
-  grid-template-columns: 22px minmax(0, 1fr) auto;
+  grid-template-columns: 22px minmax(0, 0.7fr) minmax(0, 1.3fr);
   gap: 10px;
   align-items: center;
   min-width: 0;
@@ -1064,7 +1532,12 @@ const Goal = styled.div`
   color: #75bda9;
 
   span { color: #9aa6ad; font-size: 0.75rem; }
-  strong { color: #e2e7e9; font-size: 0.78rem; text-align: right; }
+  strong { color: #e2e7e9; font-size: 0.78rem; text-align: right; overflow-wrap: anywhere; }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 22px minmax(0, 1fr);
+    strong { grid-column: 2; text-align: left; }
+  }
 `;
 
 const PriorityLine = styled.div`
@@ -1080,6 +1553,140 @@ const PriorityLine = styled.div`
   span { color: #c0c8cd; font-size: 0.8rem; line-height: 1.65; }
 
   @media (max-width: 560px) { grid-template-columns: 1fr; gap: 5px; }
+`;
+
+const ResearchGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+
+  @media (max-width: 840px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+`;
+
+const ResearchPoint = styled.div`
+  min-width: 0;
+  padding: 15px 0;
+  border-top: 2px solid #46535b;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+
+  > span { color: #75bda9; font-size: 0.68rem; font-weight: 720; }
+  > strong { display: block; margin-top: 5px; color: #e9edef; font-size: 0.88rem; line-height: 1.5; }
+  > p { margin-top: 8px; color: #84919a; font-size: 0.73rem; line-height: 1.65; }
+`;
+
+const BossComparison = styled.div`
+  border-top: 2px solid #33937f;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.16);
+`;
+
+const BossHeader = styled.div`
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(280px, 2fr) 72px;
+  gap: 18px;
+  padding: 10px 12px;
+  color: #75838c;
+  font-size: 0.65rem;
+  font-weight: 720;
+  background: rgba(168, 178, 188, 0.04);
+
+  span:last-child { text-align: right; }
+
+  @media (max-width: 620px) {
+    grid-template-columns: 96px minmax(0, 1fr) 50px;
+    gap: 8px;
+    padding-inline: 6px;
+  }
+`;
+
+const BossRow = styled.div`
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(280px, 2fr) 72px;
+  gap: 18px;
+  align-items: center;
+  min-width: 0;
+  padding: 13px 12px;
+  border-top: 1px solid rgba(168, 178, 188, 0.1);
+
+  @media (max-width: 620px) {
+    grid-template-columns: 96px minmax(0, 1fr) 50px;
+    gap: 8px;
+    padding-inline: 6px;
+  }
+`;
+
+const BossIdentity = styled.div`
+  min-width: 0;
+
+  strong { display: block; color: #e8ecee; font-size: 0.78rem; line-height: 1.35; }
+  span { display: block; margin-top: 3px; color: #738089; font-size: 0.65rem; }
+`;
+
+const HpsCompare = styled.div`
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+`;
+
+const HpsLine = styled.div`
+  display: grid;
+  grid-template-columns: 42px minmax(30px, 1fr) 48px 66px;
+  gap: 7px;
+  align-items: center;
+  min-width: 0;
+
+  span, small { color: #74818a; font-size: 0.62rem; }
+  strong { color: #dfe4e7; font-size: 0.7rem; text-align: right; }
+  small { text-align: right; }
+
+  @media (max-width: 620px) {
+    grid-template-columns: 35px minmax(20px, 1fr) 40px;
+    gap: 5px;
+    small { display: none; }
+  }
+`;
+
+const HpsTrack = styled.div`
+  min-width: 0;
+  height: 6px;
+  background: rgba(168, 178, 188, 0.1);
+`;
+
+const HpsFill = styled.div`
+  width: ${props => props.$width};
+  height: 100%;
+  background: ${props => props.$tone};
+`;
+
+const GapBadge = styled.strong`
+  color: #75bda9;
+  font-size: 0.78rem;
+  text-align: right;
+  white-space: nowrap;
+`;
+
+const DataScroll = styled.div`
+  width: 100%;
+  margin-top: 24px;
+  overflow-x: auto;
+  border-top: 2px solid #46535b;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+
+  &:focus-visible { outline: 2px solid #75bda9; outline-offset: 3px; }
+`;
+
+const DataTable = styled.table`
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  color: #aab4ba;
+  font-size: 0.72rem;
+  line-height: 1.5;
+
+  th, td { padding: 11px 12px; text-align: left; border-bottom: 1px solid rgba(168, 178, 188, 0.1); }
+  thead th { color: #7f8d96; font-size: 0.65rem; background: rgba(168, 178, 188, 0.04); }
+  tbody th { color: #dfe4e7; font-weight: 680; }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 `;
 
 const Sources = styled.footer`
@@ -1135,4 +1742,5 @@ const SkillFallback = styled.span`
   background: rgba(255, 209, 102, 0.16);
 `;
 
+export { VenomousDepthsComparisonPage };
 export default PreservationLogReportPage;
