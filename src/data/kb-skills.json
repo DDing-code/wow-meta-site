@@ -1,27 +1,27 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-02T02:23:49.849Z",
+    "generatedAt": "2026-09-05T01:40:03.492Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2481,
-    "rawTotalSkills": 2481,
+    "totalSkills": 2488,
+    "rawTotalSkills": 2488,
     "duplicateIds": [],
-    "totalSynergies": 429,
+    "totalSynergies": 430,
     "stats": {
-      "total": 2481,
+      "total": 2488,
       "byType": {
-        "hero-talent": 527,
+        "hero-talent": 530,
         "atomic-skill": 512,
         "proc": 4,
         "skill": 119,
-        "talent": 1008,
+        "talent": 1009,
         "spec-talent": 201,
         "hero-tree": 2,
+        "set-bonus": 7,
         "class-talent": 87,
         "buff": 3,
         "tier-set": 2,
-        "set-bonus": 4,
         "atomic-buff": 1,
         "apex-talent": 1,
         "atomic-talent": 1,
@@ -31,7 +31,7 @@
         "DeathKnight": 75,
         "Death Knight": 1,
         "DemonHunter": 95,
-        "Druid": 134,
+        "Druid": 141,
         "Evoker": 113,
         "Hunter": 140,
         "Mage": 203,
@@ -53,10 +53,10 @@
         "DemonHunter-복수": 23,
         "DemonHunter-파멸": 28,
         "DemonHunter-포식": 28,
-        "Druid-공용": 31,
+        "Druid-공용": 34,
         "Druid-수호": 20,
         "Druid-야성": 20,
-        "Druid-조화": 32,
+        "Druid-조화": 36,
         "Druid-회복": 31,
         "Evoker-공용": 33,
         "Evoker-보존": 27,
@@ -101,8 +101,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2392,
-        "withSynergies": 674,
+        "withWikilinks": 2399,
+        "withSynergies": 680,
         "avgLinkDensity": "0.033"
       }
     }
@@ -11668,17 +11668,22 @@
       "name": "일월식 (달)",
       "koreanName": "일월식 (달)",
       "englishName": "Eclipse (Lunar)",
+      "aliases": [
+        "일월식",
+        "Eclipse",
+        "Lunar Eclipse"
+      ],
       "icon": "ability_druid_eclipse",
       "iconName": "ability_druid_eclipse",
       "school": "",
-      "cooldown": "주기",
+      "cooldown": "32초, 2회 충전",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 일월식 (달) (Eclipse Lunar)",
+      "description": "15초 동안 비전 주문의 피해를 15%, 의 피해를 40% 증가시키는 일월식 상태다. 태양 일월식과 하나의 버튼 및 32초 재사용 대기시간을 공유한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11692,15 +11697,16 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
           "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.029,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -16816,6 +16822,10 @@
       "name": "화신: 엘룬의 선택",
       "koreanName": "화신: 엘룬의 선택",
       "englishName": "Incarnation: Chosen of Elune",
+      "aliases": [
+        "화신",
+        "Incarnation"
+      ],
       "icon": "spell_druid_incarnation",
       "iconName": "spell_druid_incarnation",
       "school": "",
@@ -16823,10 +16833,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 화신: 엘룬의 선택 (Incarnation: Chosen of Elune)",
+      "description": "을 대체한다. 20초 동안 두 일월식 효과와 천체의 정렬 추가 효과를 제공하고 치명타 및 극대화 확률을 10% 증가시킨다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16840,8 +16850,6 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천체의정렬",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
           "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집"
         ],
         "relatedTalents": [
@@ -16850,9 +16858,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 5,
-        "linkDensity": 0.064,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -72262,6 +72270,60 @@
         "lastUpdate": ""
       }
     },
+    "429215": {
+      "id": "429215",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Restoration"
+      ],
+      "name": "풍성한 개화",
+      "koreanName": "풍성한 개화",
+      "englishName": "Bounteous Bloom",
+      "aliases": [
+        "Bounteous Bloom"
+      ],
+      "icon": "inv_herbalism_70_dreamleaf",
+      "iconName": "inv_herbalism_70_dreamleaf",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "조화에서는  나무정령의 지속시간을 4초 늘린다. 회복에서는 숲 수호자의 치유량을 30% 증가시킨다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_herbalism_70_dreamleaf.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_herbalism_70_dreamleaf.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_herbalism_70_dreamleaf.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_herbalism_70_dreamleaf.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_herbalism_70_dreamleaf.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/자연의군대"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\풍성한개화.md",
+        "lastUpdate": ""
+      }
+    },
     "429523": {
       "id": "429523",
       "type": "hero-talent",
@@ -72383,6 +72445,63 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\삭망월.md",
+        "lastUpdate": ""
+      }
+    },
+    "429540": {
+      "id": "429540",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Restoration"
+      ],
+      "name": "비전 친화",
+      "koreanName": "비전 친화",
+      "englishName": "Arcane Affinity",
+      "aliases": [
+        "Arcane Affinity"
+      ],
+      "icon": "spell_arcane_arcane01",
+      "iconName": "spell_arcane_arcane01",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "주문과 능력이 입히는 모든 비전 피해를 3% 증가시키는 영웅 특성이다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_arcane_arcane01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_arcane_arcane01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_arcane_arcane01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.118,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\비전친화.md",
         "lastUpdate": ""
       }
     },
@@ -86251,6 +86370,9 @@
       "name": "항성 증폭",
       "koreanName": "항성 증폭",
       "englishName": "Stellar Amplification",
+      "aliases": [
+        "Stellar Amplification"
+      ],
       "icon": "spell_arcane_arcane04",
       "iconName": "spell_arcane_arcane04",
       "school": "",
@@ -86258,10 +86380,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘",
       "range": "대상",
-      "description": "# 항성 증폭 (Stellar Amplification)",
+      "description": "가 대상이 받는 자신의 주기 피해와  피해를 5초 동안 16% 증가시킨다. 다시 적용하면 최대 20초까지 늘어나지만 한 대상에만 유지된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86274,7 +86396,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도"
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/유성"
@@ -86282,9 +86405,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.027,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -112559,6 +112682,59 @@
         "lastUpdate": ""
       }
     },
+    "1263250": {
+      "id": "1263250",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
+      "name": "천공의 번민",
+      "koreanName": "천공의 번민",
+      "englishName": "Astral Smolder",
+      "aliases": [
+        "Astral Smolder"
+      ],
+      "icon": "spell_fire_bluefire",
+      "iconName": "spell_fire_bluefire",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "일월식 동안 치명타 및 극대화 효과를 발휘하면 대상이 8초에 걸쳐 해당 피해의 10%만큼 추가 피해를 받게 하는 지속 효과다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_bluefire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_bluefire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_bluefire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_bluefire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_bluefire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\천공의번민.md",
+        "lastUpdate": ""
+      }
+    },
     "1263252": {
       "id": "1263252",
       "type": "hero-talent",
@@ -118561,6 +118737,62 @@
         "lastUpdate": ""
       }
     },
+    "1271206": {
+      "id": "1271206",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Guardian"
+      ],
+      "name": "쏟아지는 별",
+      "koreanName": "쏟아지는 별",
+      "englishName": "Star Cascade",
+      "aliases": [
+        "Star Cascade"
+      ],
+      "icon": "spell_arcane_arcane03",
+      "iconName": "spell_arcane_arcane03",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "조화에서는 으로 천공의 힘을 생성할 때 30% 확률로 대상에게 50% 효율의 를 발사한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane03.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_arcane_arcane03.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_arcane_arcane03.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_arcane_arcane03.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane03.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천벌"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\쏟아지는별.md",
+        "lastUpdate": ""
+      }
+    },
     "1271387": {
       "id": "1271387",
       "type": "hero-talent",
@@ -122790,6 +123022,111 @@
         "lastUpdate": ""
       }
     },
+    "1296603": {
+      "id": "1296603",
+      "type": "set-bonus",
+      "class": "Druid",
+      "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
+      "name": "조화 드루이드 시즌 2 2세트",
+      "koreanName": "조화 드루이드 시즌 2 2세트",
+      "englishName": "Druid Balance 12.1 Class Set 2pc",
+      "aliases": [
+        "Druid Balance 12.1 Class Set 2pc"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "의 피해를 20% 증가시킨다. 을 시전하면 범위 안의 유효한 모든 적에게 즉시 주문력의 30.4%만큼 천공 피해를 입힌다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296604": {
+      "id": "1296604",
+      "type": "set-bonus",
+      "class": "Druid",
+      "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
+      "name": "조화 드루이드 시즌 2 4세트",
+      "koreanName": "조화 드루이드 시즌 2 4세트",
+      "englishName": "Druid Balance 12.1 Class Set 4pc",
+      "aliases": [
+        "Druid Balance 12.1 Class Set 4pc"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "일월식에 들어가면 을 얻는다. 피해 증가량은 구간 시작 10%에서 중간 2%까지 줄어든 뒤 끝에 다시 10%까지 오른다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
     "1296625": {
       "id": "1296625",
       "type": "set-bonus",
@@ -123239,6 +123576,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\생기소모.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301768": {
+      "id": "1301768",
+      "type": "set-bonus",
+      "class": "Druid",
+      "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
+      "name": "아킬존의 명료함",
+      "koreanName": "아킬존의 명료함",
+      "englishName": "Akil'zon's Clarity",
+      "aliases": [
+        "Akil'zon's Clarity"
+      ],
+      "icon": "inv_eagle2windmount_white",
+      "iconName": "inv_eagle2windmount_white",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 4세트가 일월식 진입 시 부여하는 강화 효과다. 공격력 증가량이 일월식 시작 10%에서 중간 2%까지 감소한 뒤 끝에 다시 10%까지 증가한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_eagle2windmount_white.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_eagle2windmount_white.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_eagle2windmount_white.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_eagle2windmount_white.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_eagle2windmount_white.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Buffs\\아킬존의명료함.md",
         "lastUpdate": ""
       }
     },

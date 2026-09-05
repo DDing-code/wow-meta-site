@@ -17,6 +17,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['monk-mistweaver', '12.1'],
   ['shaman-elemental', '12.1'],
   ['evoker-devastation', '12.1'],
+  ['druid-balance', '12.1'],
 ]);
 
 const MINIMUMS = {

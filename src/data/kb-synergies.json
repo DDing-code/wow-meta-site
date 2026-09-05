@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-02T02:23:49.850Z",
+    "generatedAt": "2026-09-05T01:40:03.493Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 429,
-    "rawTotalSynergies": 429,
+    "totalSynergies": 430,
+    "rawTotalSynergies": 430,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -28,9 +28,10 @@
       "shared-dot": 1,
       "raid-utility": 1,
       "proc-spender": 2,
-      "mythic-plus-sustain": 1,
+      "builder-cooldown": 1,
       "cooldown-resource": 1,
       "cooldown-planning": 1,
+      "priority-target": 1,
       "movement-utility": 1,
       "damage-resource": 1,
       "defensive-recovery": 1,
@@ -273,7 +274,7 @@
     "byClass": {
       "DeathKnight": 18,
       "DemonHunter": 22,
-      "Druid": 37,
+      "Druid": 38,
       "Evoker": 28,
       "Hunter": 26,
       "Mage": 41,
@@ -2004,30 +2005,27 @@
     },
     "SY-Druid-Balance-Fury-Lunar-Multitarget": {
       "id": "SY-Druid-Balance-Fury-Lunar-Multitarget",
-      "name": "엘룬의분노-달의부름-광역지속",
+      "name": "엘룬의 대행자-달의부름-별빛섬광",
       "type": "synergy",
-      "synergyType": "mythic-plus-sustain",
+      "synergyType": "builder-cooldown",
       "participants": [
-        "1261564",
         "202770",
         "429523",
         "429539",
+        "1271206",
         "194153",
-        "191034",
-        "8921",
-        "93402"
+        "48518",
+        "78674",
+        "191034"
       ],
       "class": "Druid",
       "spec": "조화",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 9,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/태양섬광"
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -2038,36 +2036,33 @@
     },
     "SY-Druid-Balance-Eclipse-Ascendant-Spenders": {
       "id": "SY-Druid-Balance-Eclipse-Ascendant-Spenders",
-      "name": "일월식-승천자의일월식-소비 구간",
+      "name": "일월식-시즌2-소비 구간",
       "type": "synergy",
       "synergyType": "cooldown-resource",
       "participants": [
-        "48517",
         "48518",
         "1261564",
-        "1263363",
-        "1263382",
+        "1296603",
+        "1296604",
+        "1301768",
         "78674",
-        "191034",
-        "394048"
+        "191034"
       ],
       "class": "Druid",
       "spec": "조화",
       "heroTalent": null,
-      "importance": 9,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식태양",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Buffs/아킬존의명료함"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/승천자의일월식",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/승천자의불길",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/승천의별",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/만물의조화"
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/승천자의일월식"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Synergies\\일월식-승천자의일월식-소비구간.md",
@@ -2104,29 +2099,25 @@
     },
     "SY-Druid-Balance-Force-Control-Cooldowns": {
       "id": "SY-Druid-Balance-Force-Control-Cooldowns",
-      "name": "자연의군대-꿈의통제-쿨다운정렬",
+      "name": "숲의 수호자-자연의군대-짧은 광역",
       "type": "synergy",
       "synergyType": "cooldown-planning",
       "participants": [
-        "1261564",
         "205636",
+        "429215",
+        "428731",
         "434249",
         "194223",
         "102560",
-        "391528",
-        "48517",
         "48518"
       ],
       "class": "Druid",
       "spec": "조화",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 7,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/자연의군대",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천체의정렬",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/화신엘룬의선택",
-        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집"
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/자연의군대"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -2165,6 +2156,35 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Synergies\\천체의정렬-천공의힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-Druid-Balance-Stellar-Amplification-Priority-Target": {
+      "id": "SY-Druid-Balance-Stellar-Amplification-Priority-Target",
+      "name": "항성증폭-별빛쇄도-우선대상",
+      "type": "synergy",
+      "synergyType": "priority-target",
+      "participants": [
+        "450212",
+        "78674",
+        "202342",
+        "8921",
+        "93402"
+      ],
+      "class": "Druid",
+      "spec": "조화",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/항성증폭"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Synergies\\항성증폭-별빛쇄도-우선대상.md",
         "lastUpdate": ""
       }
     },

@@ -17441,15 +17441,6 @@ guideManuscripts['druid-balance'] = {
   researchedAt: '2026-09-05',
   status: '12.1 실전 심화 공략',
   graphCenterSkillId: '48518',
-  extraSkills: [
-    { id: '48518', koreanName: '일월식 (달)', englishName: 'Lunar Eclipse', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'ability_druid_eclipse', type: 'atomic-skill', aliases: ['일월식', 'Eclipse'] },
-    { id: '102560', koreanName: '화신: 엘룬의 선택', englishName: 'Incarnation: Chosen of Elune', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'spell_druid_incarnation', type: 'atomic-skill', aliases: ['화신', 'Incarnation'] },
-    { id: '1301768', koreanName: '아킬존의 명료함', englishName: "Akil'zon's Clarity", class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'inv_eagle2windmount_white', type: 'set-bonus', aliases: ["Akil'zon's Clarity"] },
-    { id: '429540', koreanName: '비전 친화', englishName: 'Arcane Affinity', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'spell_arcane_arcane01', type: 'hero-talent', aliases: ['Arcane Affinity'] },
-    { id: '429215', koreanName: '풍성한 개화', englishName: 'Bounteous Bloom', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'inv_herbalism_70_dreamleaf', type: 'hero-talent', aliases: ['Bounteous Bloom'] },
-    { id: '1271206', koreanName: '쏟아지는 별', englishName: 'Star Cascade', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'spell_arcane_arcane03', type: 'hero-talent', aliases: ['Star Cascade'] },
-    { id: '1263250', koreanName: '천공의 번민', englishName: 'Astral Smolder', class: 'Druid', spec: '조화', specs: ['Balance'], icon: 'spell_fire_bluefire', type: 'talent', aliases: ['Astral Smolder'] },
-  ],
   sourceStatus:
     'Blizzard 12.1 변경 내역, Wowhead 한국어 공식 명칭과 12.1 딜사이클, Dreamgrove 조화 직업 디스코드 공개 한국어 백과사전, Icy Veins 12.1 운용, Archon 최근 14일 레이드·쐐기 로그를 대조했습니다.',
   summary:
@@ -17555,7 +17546,7 @@ guideManuscripts['druid-balance'] = {
     },
     {
       tier: 'A',
-      label: 'Dreamgrove 조화 드루이드 12.1 한국어 백과사전',
+      label: 'Dreamgrove 조화 드루이드 12.1 한국어 컴펜디엄',
       url: 'https://www.dreamgrove.gg/blog/balance/kr/compendium',
       updated: 'Patch 12.1 / 2026-09-05 확인',
       note: '조화 직업 디스코드 작성진의 공개 한국어 자료로 세트, 우선순위, 쿨기 정렬과 실전 팁 확인',
@@ -17604,7 +17595,7 @@ guideManuscripts['druid-balance'] = {
     {
       title: '1. 12.1에서 가장 크게 바뀐 결론',
       paragraphs: [
-        '이전 원고의 “레이드는 숲의 수호자, 쐐기는 엘룬의 대행자” 구분은 현재 맞지 않습니다. 12.1 영웅 레이드 전체 보스에서는 엘룬의 대행자가 95.9%, 고단 쐐기에서는 99.8%를 차지합니다. 처음 빌드를 맞춘다면 레이드와 쐐기 모두 엘룬의 대행자로 시작하는 편이 맞습니다.',
+        '이전 가이드의 “레이드는 숲의 수호자, 쐐기는 엘룬의 대행자” 구분은 현재 맞지 않습니다. 12.1 영웅 레이드 전체 보스에서는 엘룬의 대행자가 95.9%, 고단 쐐기에서는 99.8%를 차지합니다. 처음 빌드를 맞춘다면 레이드와 쐐기 모두 엘룬의 대행자로 시작하는 편이 맞습니다.',
         '숲의 수호자가 사라진 것은 아닙니다. 엘룬의 대행자는 별빛섬광과 엘룬의 분노로 지속 피해를 쌓는 동안 적이 살아 있어야 하고, 숲의 수호자는 자연의 군대 뒤 짧은 숲의 조화 구간이 빠르게 열립니다. 몹이 예열 전에 죽거나 정해진 몇 초 안에 우선 대상을 밀어야 할 때만 분명한 이유를 갖고 바꿉니다.',
       ],
       bullets: [
@@ -17783,6 +17774,19 @@ guideManuscripts['druid-balance'] = {
         '실전: 이동, 대상 생존 시간, 우선 대상 피해, 유틸 사용',
       ],
     },
+    {
+      title: '15. 우선 대상 전환은 생존 시간과 항성 증폭을 같이 본다',
+      paragraphs: [
+        '새 우선 대상이 오래 살아남는다면 달빛섬광을 먼저 적용하고 별빛쇄도로 항성 증폭을 옮깁니다. 태양섬광은 주변 적까지 함께 맞힐 수 있을 때 갱신합니다. 반대로 몇 초 안에 죽을 대상이라면 도트 두 개를 모두 새로 거는 동안 필요한 피해 구간이 끝날 수 있으므로, 준비된 별빛쇄도와 즉시 시전 주문부터 넣습니다.',
+        '항성 증폭은 동시에 한 대상에만 남기 때문에 탭을 돌며 별빛쇄도를 쓰면 기존 우선 대상의 효과가 사라집니다. 보스와 쫄이 함께 있는 전투에서는 먼저 죽여야 하는 대상을 정하고 그 대상에 소비기를 고정합니다. 일월식이 곧 끝난다면 남은 자원을 무조건 비우지 말고, 대상이 그 안에 죽는지와 다음 일월식·이동에 필요한 즉시 시전 횟수를 함께 계산합니다.',
+      ],
+      bullets: [
+        '오래 살 대상: 달빛섬광 적용 뒤 별빛쇄도로 항성 증폭 이전',
+        '곧 죽을 대상: 도트 두 개보다 준비된 즉시 피해를 먼저 사용',
+        '여러 우선 대상: 별빛쇄도를 번갈아 쓰지 말고 처치 순서에 맞춰 한 대상에 집중',
+        '로그 확인: 항성 증폭 대상 변경 횟수와 변경 직후 실제 우선 대상 피해를 함께 비교',
+      ],
+    },
   ],
   opener: {
     title: '엘룬의 대행자 기본 오프닝 전투 흐름',
@@ -17826,7 +17830,7 @@ guideManuscripts['druid-balance'] = {
     { skillId: '102560', label: '화신: 엘룬의 선택', note: '도트와 자원이 준비됐을 때 열고 기존 일월식을 덮어쓰는 손실을 피합니다.' },
     { skillId: '78674', label: '단일 별빛쇄도 소비', note: '천공의 힘 상한, 우주의 손길, 승천의 별과 구간 시작·끝에서 우선 대상에 사용합니다.' },
     { skillId: '191034', label: '광역 별똥별 소비', note: '현재 엘룬의 대행자는 2대상부터 사용하고 시즌 2 2세트 즉시 피해를 활용합니다.' },
-    { skillId: '450356', label: '우주의 손길 무료 소비', note: '자원을 쓰지 않는 발동이므로 다음 생성 시 덮이지 않게 대상 수에 맞는 소비기로 처리합니다.' },
+    { skillId: '78674', label: '별빛쇄도: 우주의 손길 발동 소비', note: '자원을 쓰지 않는 발동이므로 단일은 별빛쇄도, 광역은 별똥별로 다음 생성 전에 처리합니다.' },
     { skillId: '194153', label: '별빛섬광 생성', note: '달의 부름 빌드의 단일·광역 기본 생성기이며 서 있을 수 있는 시간을 빈틈없이 채웁니다.' },
     { skillId: '205636', label: '숲의 수호자 자연의 군대', note: '해당 영웅 특성일 때 일월식 밖에서 사용하고 바로 다음 글쿨에 강한 구간을 엽니다.' },
     { skillId: '391528', label: '영혼 소집 선택 쿨기', note: '큰 구간 안에서 천공의 힘이 낮고 채널이 안전할 때 사용합니다.' },
