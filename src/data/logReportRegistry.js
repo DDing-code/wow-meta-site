@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'druid-balance-mungnyang-normal-2026-09-05',
+    guideId: 'druid-balance',
+    date: '2026-09-05',
+    title: '멍냥냥님 조화 드루이드 일반 로그 분석',
+    subject: '멍냥냥님',
+    encounter: '맹독 심연 일반 전체',
+    fights: '9개 전투',
+    summary: '같은 장비 구간 상위 로그와 세트 전환, 우두머리별 소비기 선택, 엘룬의 분노 회수, 도트 효율과 무료 소비기 흐름을 원시 이벤트로 비교했습니다.',
+    path: '/guide/druid/balance/log-analysis/mungnyang-normal',
+  },
+  {
     id: 'shaman-elemental-ulatek-2026-09-04',
     guideId: 'shaman-elemental',
     date: '2026-09-04',

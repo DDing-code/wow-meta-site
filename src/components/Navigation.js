@@ -157,7 +157,12 @@ function Navigation() {
         <Links id="primary-navigation" $open={open}>
           {navItems.map(item => {
             const Icon = item.icon;
-            const active = item.path === '/'
+            const isLogReport = location.pathname.includes('/log-analysis');
+            const active = item.path === '/logs'
+              ? isLogReport || location.pathname === '/logs' || location.pathname.startsWith('/logs/')
+              : item.path === '/guide' && isLogReport
+                ? false
+                : item.path === '/'
               ? location.pathname === '/'
               : location.pathname === item.path || location.pathname.startsWith(`${item.path}/`);
             return (

@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T01:40:03.492Z",
+    "generatedAt": "2026-09-05T03:21:59.282Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2488,
-    "rawTotalSkills": 2488,
+    "totalSkills": 2489,
+    "rawTotalSkills": 2489,
     "duplicateIds": [],
     "totalSynergies": 430,
     "stats": {
-      "total": 2488,
+      "total": 2489,
       "byType": {
         "hero-talent": 530,
         "atomic-skill": 512,
         "proc": 4,
         "skill": 119,
-        "talent": 1009,
+        "talent": 1010,
         "spec-talent": 201,
         "hero-tree": 2,
         "set-bonus": 7,
@@ -31,7 +31,7 @@
         "DeathKnight": 75,
         "Death Knight": 1,
         "DemonHunter": 95,
-        "Druid": 141,
+        "Druid": 142,
         "Evoker": 113,
         "Hunter": 140,
         "Mage": 203,
@@ -56,7 +56,7 @@
         "Druid-공용": 34,
         "Druid-수호": 20,
         "Druid-야성": 20,
-        "Druid-조화": 36,
+        "Druid-조화": 37,
         "Druid-회복": 31,
         "Evoker-공용": 33,
         "Evoker-보존": 27,
@@ -101,8 +101,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2399,
-        "withSynergies": 680,
+        "withWikilinks": 2400,
+        "withSynergies": 681,
         "avgLinkDensity": "0.033"
       }
     }
@@ -29308,6 +29308,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\유성.md",
+        "lastUpdate": ""
+      }
+    },
+    "202345": {
+      "id": "202345",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
+      "name": "별의 군주",
+      "koreanName": "별의 군주",
+      "englishName": "Starlord",
+      "icon": "spell_shaman_measuredinsight",
+      "iconName": "spell_shaman_measuredinsight",
+      "school": "",
+      "cooldown": "발동 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "별빛쇄도 또는 별똥별 시전",
+      "range": "자신",
+      "description": "# 별의 군주 (Starlord)",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_measuredinsight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_measuredinsight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_measuredinsight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_measuredinsight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_measuredinsight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Talents/별재봉사"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\별의군주.md",
         "lastUpdate": ""
       }
     },
@@ -123068,7 +123123,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.038,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
