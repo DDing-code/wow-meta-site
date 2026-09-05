@@ -40,7 +40,7 @@ function LogAnalysisPage() {
         <Title>{guide ? `${guide.spec} ${guide.className} 로그 분석` : '로그 분석'}</Title>
         <Description>
           {guide
-            ? `${guide.spec} ${guide.className}으로 분석한 전투만 모았습니다. 원본 로그와 비교 조건, 확인된 손실 구간을 보고서별로 확인할 수 있습니다.`
+            ? `${guide.spec} ${guide.className} 기록만 모았습니다. 원본 로그와 비교 조건, 확인된 손실 구간을 보고서별로 확인할 수 있습니다.`
             : '직접 분석한 Warcraft Logs 보고서를 최신순으로 모았습니다. 전문화, 분석 날짜와 전투 조건을 확인한 뒤 상세 보고서로 이동할 수 있습니다.'}
         </Description>
         <Metrics>

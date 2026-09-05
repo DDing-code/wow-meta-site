@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T03:21:59.282Z",
+    "generatedAt": "2026-09-05T04:38:35.656Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2489,
-    "rawTotalSkills": 2489,
+    "totalSkills": 2491,
+    "rawTotalSkills": 2491,
     "duplicateIds": [],
     "totalSynergies": 430,
     "stats": {
-      "total": 2489,
+      "total": 2491,
       "byType": {
         "hero-talent": 530,
         "atomic-skill": 512,
         "proc": 4,
         "skill": 119,
-        "talent": 1010,
+        "talent": 1012,
         "spec-talent": 201,
         "hero-tree": 2,
         "set-bonus": 7,
@@ -32,7 +32,7 @@
         "Death Knight": 1,
         "DemonHunter": 95,
         "Druid": 142,
-        "Evoker": 113,
+        "Evoker": 115,
         "Hunter": 140,
         "Mage": 203,
         "Monk": 231,
@@ -61,7 +61,7 @@
         "Evoker-공용": 33,
         "Evoker-보존": 27,
         "Evoker-증강": 27,
-        "Evoker-황폐": 26,
+        "Evoker-황폐": 28,
         "Hunter-공용": 44,
         "Hunter-사격": 35,
         "Hunter-생존": 36,
@@ -101,8 +101,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2400,
-        "withSynergies": 681,
+        "withWikilinks": 2402,
+        "withSynergies": 683,
         "avgLinkDensity": "0.033"
       }
     }
@@ -45464,6 +45464,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Talents\\적개심.md",
+        "lastUpdate": ""
+      }
+    },
+    "375802": {
+      "id": "375802",
+      "type": "talent",
+      "class": "Evoker",
+      "spec": "황폐",
+      "specs": [
+        "Devastation"
+      ],
+      "name": "불태움",
+      "koreanName": "불태움",
+      "englishName": "Burnout",
+      "icon": "spell_fire_soulburn",
+      "iconName": "spell_fire_soulburn",
+      "school": "",
+      "cooldown": "발동 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "# 불태움 (Burnout)",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_soulburn.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_soulburn.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_soulburn.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Talents\\불태움.md",
         "lastUpdate": ""
       }
     },
@@ -115574,6 +115627,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\추적과타격.md",
+        "lastUpdate": ""
+      }
+    },
+    "1266151": {
+      "id": "1266151",
+      "type": "talent",
+      "class": "Evoker",
+      "spec": "황폐",
+      "specs": [
+        "Devastation"
+      ],
+      "name": "공중 포격",
+      "koreanName": "공중 포격",
+      "englishName": "Airborne Onslaught",
+      "icon": "ability_evoker_blackattunementalt",
+      "iconName": "ability_evoker_blackattunementalt",
+      "school": "",
+      "cooldown": "깊은 숨결 연계",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "# 공중 포격 (Airborne Onslaught)",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_blackattunementalt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_blackattunementalt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_blackattunementalt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_blackattunementalt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_blackattunementalt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/임박한파괴"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/대규모파열",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Talents\\공중포격.md",
         "lastUpdate": ""
       }
     },

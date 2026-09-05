@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'evoker-devastation-etretat-mythic-2026-09-05',
+    guideId: 'evoker-devastation',
+    date: '2026-09-05',
+    title: 'Etretat 황폐 기원사 신화 2킬 분석',
+    subject: 'Etretat',
+    encounter: '영혼살무사 네크잘리·길 잃은 탐험가 신화',
+    fights: '2개 전투',
+    summary: '장비와 킬 타임이 가까운 98점·96점 로그와 용의 분노, 파열·대규모 파열, 깊은 숨결 경로, 불의 숨결 발동, 세 대상 피해 분배를 원시 이벤트로 비교했습니다.',
+    path: '/guide/evoker/devastation/log-analysis/etretat-mythic',
+  },
+  {
     id: 'druid-balance-mungnyang-normal-2026-09-05',
     guideId: 'druid-balance',
     date: '2026-09-05',
