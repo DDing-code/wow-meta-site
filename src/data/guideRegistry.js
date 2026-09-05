@@ -217,7 +217,8 @@ export const guideSpecsByRole = {
     }),
     spec('druid-balance', 'druid', '조화', '조화', 'ranged', '/guide/druid/balance', {
       kbSpecAliases: ['Balance'],
-      focus: '천공의 힘과 일월식 흐름을 별똥별/별빛쇄도 선택에 연결합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '엘룬의 대행자, 2시즌 세트와 일월식 양끝의 별빛쇄도·별똥별 운용을 정리합니다.',
     }),
     spec('evoker-devastation', 'evoker', '황폐', '황폐', 'ranged', '/guide/evoker/devastation', {
       kbSpecAliases: ['Devastation'],
