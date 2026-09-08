@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'paladin-retribution-coiled-altar-2026-09-08',
+    guideId: 'paladin-retribution',
+    date: '2026-09-08',
+    title: '피오나레 vs Uyrte 징벌 성기사 비교 분석',
+    subject: '피오나레 · Uyrte',
+    encounter: '똬리의 제단 영웅',
+    fights: '2개 전투 비교',
+    summary: '79점과 98점의 차이를 외부 지원·장비, 후반 쿨기 지연, 오프닝, 프록·신성한 힘과 대상별 피해로 나눠 분석했습니다.',
+    path: '/guide/paladin/retribution/log-analysis/coiled-altar',
+  },
+  {
     id: 'evoker-devastation-etretat-mythic-2026-09-05',
     guideId: 'evoker-devastation',
     date: '2026-09-05',

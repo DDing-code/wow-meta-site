@@ -16,6 +16,12 @@ const args = process.argv.slice(2);
 const watchMode = args.includes('--watch');
 const passThroughArgs = args.filter(arg => arg !== '--watch');
 
+const reportSource = path.join(repoRoot, 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '08-성기사', '징벌', 'Meta', 'log-coiled-altar.json');
+if (fs.existsSync(reportSource)) {
+  JSON.parse(fs.readFileSync(reportSource, 'utf8'));
+  fs.copyFileSync(reportSource, path.join(__dirname, '..', 'src', 'data', 'retributionCoiledAltarReport.json'));
+}
+
 const targetScript = watchMode
   ? path.join(repoRoot, 'scripts', 'kb-sync', 'kb-skill-watcher.js')
   : path.join(repoRoot, 'scripts', 'kb-sync', 'kb-to-skill-json.js');
