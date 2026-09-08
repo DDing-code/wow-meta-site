@@ -1317,6 +1317,10 @@ function isOpenerNarrativeBlock(block, guide) {
   return /(오프닝|전투\s*시작|첫\s*버튼|첫\s*풀|첫\s*피해)/.test(sample) && /(흐름|순서|딜사이클|타임라인)/.test(sample);
 }
 
+function getGuideBodyBlocks(manuscript) {
+  return (manuscript?.blocks || []).filter(block => !isMetaChartBlock(block));
+}
+
 function isPracticalTipBlock(block) {
   const title = displayGuideText(block?.title || '');
   return /실전\s*꿀팁|핵심\s*꿀팁|쐐기\s*실전\s*꿀팁/.test(title);
@@ -1601,13 +1605,13 @@ const SPECIALIST_CHARTS = {
   'demonhunter-devourer': {
     id: 'resource',
     title: '영혼 파편과 공허 탈태',
-    sectionHeading: '흡수에서 공허 광선까지',
-    sectionIntro: '포식 악마사냥꾼은 흡수로 격노와 영혼 파편을 만들고, 공허 탈태와 공허 광선 구간에서 그 자원을 피해로 바꿉니다.',
-    caption: '흡수, 격노, 영혼 파편, 공허 탈태, 공허 광선, 박멸, 붕괴하는 별을 한 흐름으로 확인합니다.',
+    sectionHeading: '공허상흔의 진입과 종료',
+    sectionIntro: '단일은 도태 회수를 이어가고, 광역은 박멸을 준비한 탈태 진입과 종료 후 들끓는 고통을 연결합니다.',
+    caption: '공허 탈태, 도태, 근접 강화 기술, 박멸과 들끓는 고통을 구분해 확인합니다. 붕괴하는 별은 궤멸자 운용입니다.',
     definition: [
       ['의미', '공허 탈태는 시작부터 누르는 쿨기가 아니라 영혼 파편을 모아 여는 상태 전환입니다.'],
-      ['읽는 법', '파편과 격노가 넘치기 전에 정리하고, 공허 탈태 안에는 공허 광선과 강한 소비기가 들어가는지 봅니다.'],
-      ['체크 포인트', '파편 과충전, 공허 탈태 지연, 공허 광선 누락, 박멸 반응 지연, 붕괴하는 별 밖 소비를 봅니다.'],
+      ['읽는 법', '진입에 필요한 영혼을 확인합니다. 격노는 진입 시 채워지며, 단일과 광역은 탈태 종료 판단이 다릅니다.'],
+      ['체크 포인트', '진입 지연, 단일 도태 회수, 강화된 근접 기술 적중, 광역 종료 직후 공격 중단 시간을 봅니다.'],
     ],
   },
   'deathknight-frost': {
@@ -2135,10 +2139,10 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
 
   if (!manuscript) return null;
 
-  const contentBlocks = (manuscript.blocks || []).filter(block => !isMetaChartBlock(block));
+  const contentBlocks = getGuideBodyBlocks(manuscript);
   const openerBlocks = contentBlocks.filter(block => isOpenerNarrativeBlock(block, guide));
   const openerBlock = openerBlocks[0];
-  const bodyBlocks = contentBlocks.filter(block => !isOpenerNarrativeBlock(block, guide));
+  const bodyBlocks = contentBlocks;
   const [rotationChart, priorityChart, specialistChart] = chartPlan;
   const digestBlocks = bodyBlocks;
   const manualOpenerFlowSteps = getOpenerFlowSteps(manuscript, profile, guide);
@@ -2584,9 +2588,7 @@ function GuideDetailPage() {
 
   const profile = getProfile(guide);
   const inlineChartPlan = getInlineChartPlan(guide, data);
-  const guideNavBlocks = (manuscript?.blocks || [])
-    .filter(block => !isMetaChartBlock(block))
-    .filter(block => !isOpenerNarrativeBlock(block, guide));
+  const guideNavBlocks = getGuideBodyBlocks(manuscript);
   const playstyleItem = pattern => manuscript?.playstyle?.find(item => pattern.test(item.label));
   const overviewItems = [
     {

@@ -184,7 +184,8 @@ export const guideSpecsByRole = {
     }),
     spec('demonhunter-devourer', 'demonhunter', '포식', '포식', 'ranged', '/guide/demonhunter/devourer', {
       kbSpecAliases: ['Devourer'],
-      focus: '25야드 공허 주문과 영혼 파편을 공허 탈태 구간에 맞춥니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '공허상흔 단일·광역 운용, 탈태 근접 연계와 종료 후 들끓는 고통을 연결합니다.',
     }),
     spec('shaman-elemental', 'shaman', '정기', '정기', 'ranged', '/guide/shaman/elemental', {
       kbSpecAliases: ['Elemental'],

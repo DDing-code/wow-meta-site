@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T01:40:03.493Z",
+    "generatedAt": "2026-09-08T09:52:49.384Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 430,
-    "rawTotalSynergies": 430,
+    "totalSynergies": 432,
+    "rawTotalSynergies": 432,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
       "shared_grip_mobility_control": 1,
       "cooldown-extension": 1,
       "razorice-spend": 1,
-      "unknown": 120,
+      "unknown": 118,
       "disease-aoe": 1,
       "apex-burst-window": 1,
       "sanlayn-recovery": 1,
@@ -24,6 +24,7 @@
       "hero-talent-loop": 2,
       "burst-window": 5,
       "hero-talent-burst": 1,
+      "damage": 4,
       "dispels-enrage-control": 1,
       "shared-dot": 1,
       "raid-utility": 1,
@@ -273,7 +274,7 @@
     },
     "byClass": {
       "DeathKnight": 18,
-      "DemonHunter": 22,
+      "DemonHunter": 24,
       "Druid": 38,
       "Evoker": 28,
       "Hunter": 26,
@@ -1275,46 +1276,91 @@
         "lastUpdate": ""
       }
     },
-    "공허쇄도_근접하이브리드": {
-      "id": "공허쇄도_근접하이브리드",
-      "name": "공허쇄도-근접하이브리드",
+    "공허상흔_광역진입과종료": {
+      "id": "공허상흔_광역진입과종료",
+      "name": "공허상흔 광역: 박멸을 준비해 탈태, 종료 후 들끓는 고통",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "damage",
+      "participants": [
+        "471306",
+        "473728",
+        "1226033",
+        "1244237"
+      ],
       "class": "DemonHunter",
       "spec": "Devourer",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "heroTalent": "공허상흔",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/들끓는고통"
       ],
       "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\공허상흔-광역진입과종료.md",
+        "lastUpdate": "2026-09-08"
+      }
+    },
+    "공허쇄도_근접하이브리드": {
+      "id": "공허쇄도_근접하이브리드",
+      "name": "공허상흔: 탈태의 근접 기술 강화",
+      "type": "synergy",
+      "synergyType": "damage",
+      "participants": [
+        "471306",
+        "1246160",
+        "1245470",
+        "1245483",
+        "1259431",
+        "1239519",
+        "1245412",
+        "1246167"
+      ],
+      "class": "DemonHunter",
+      "spec": "Devourer",
+      "heroTalent": "공허상흔",
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/굶주린베기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사신의대가",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/장막관통",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/포식자의각성"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\공허쇄도-근접하이브리드.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "공허탈태_붕괴하는별": {
       "id": "공허탈태_붕괴하는별",
-      "name": "공허탈태-붕괴하는별",
+      "name": "궤멸자: 탈태 내부 영혼과 붕괴하는 별",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "damage",
+      "participants": [
+        "471306",
+        "1221167",
+        "1245453",
+        "1217610"
+      ],
       "class": "DemonHunter",
       "spec": "Devourer",
-      "heroTalent": null,
+      "heroTalent": "궤멸자",
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/변환"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -1323,7 +1369,39 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\공허탈태-붕괴하는별.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
+      }
+    },
+    "수확_영혼분출": {
+      "id": "수확_영혼분출",
+      "name": "세트: 파편 회수로 영혼분출, 흡수 계열 강화",
+      "type": "synergy",
+      "synergyType": "damage",
+      "participants": [
+        "1226019",
+        "1245453",
+        "1297432",
+        "473662",
+        "1217610"
+      ],
+      "class": "DemonHunter",
+      "spec": "Devourer",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\수확-영혼분출.md",
+        "lastUpdate": "2026-09-08"
       }
     },
     "SY-DH-Devourer-DevourersBite-Voidsurge": {

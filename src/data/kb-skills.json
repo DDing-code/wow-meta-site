@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T04:38:35.656Z",
+    "generatedAt": "2026-09-08T09:52:49.383Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2491,
-    "rawTotalSkills": 2491,
+    "totalSkills": 2497,
+    "rawTotalSkills": 2497,
     "duplicateIds": [],
-    "totalSynergies": 430,
+    "totalSynergies": 432,
     "stats": {
-      "total": 2491,
+      "total": 2497,
       "byType": {
         "hero-talent": 530,
-        "atomic-skill": 512,
-        "proc": 4,
+        "atomic-skill": 516,
+        "proc": 5,
         "skill": 119,
-        "talent": 1012,
+        "talent": 1013,
         "spec-talent": 201,
         "hero-tree": 2,
         "set-bonus": 7,
@@ -30,7 +30,7 @@
       "byClass": {
         "DeathKnight": 75,
         "Death Knight": 1,
-        "DemonHunter": 95,
+        "DemonHunter": 101,
         "Druid": 142,
         "Evoker": 115,
         "Hunter": 140,
@@ -52,7 +52,7 @@
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 23,
         "DemonHunter-파멸": 28,
-        "DemonHunter-포식": 28,
+        "DemonHunter-포식": 34,
         "Druid-공용": 34,
         "Druid-수호": 20,
         "Druid-야성": 20,
@@ -101,8 +101,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2402,
-        "withSynergies": 683,
+        "withWikilinks": 2408,
+        "withSynergies": 692,
         "avgLinkDensity": "0.033"
       }
     }
@@ -41695,6 +41695,57 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\세찬폭풍.md",
         "lastUpdate": ""
+      }
+    },
+    "344866": {
+      "id": "344866",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "복수의 퇴각",
+      "koreanName": "복수의 퇴각",
+      "englishName": "Vengeful Retreat",
+      "icon": "ability_demonhunter_vengefulretreat2",
+      "iconName": "ability_demonhunter_vengefulretreat2",
+      "school": "",
+      "cooldown": "25초",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "자신",
+      "description": "감속 효과를 제거하고 뒤로 도약하는 이동 기술이다. 공허상흔 가이드가 공허칼날 이후 사냥으로 연결하는 선택적 이동 최적화에서 참조한 ID다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_vengefulretreat2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_vengefulretreat2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_vengefulretreat2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_vengefulretreat2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_vengefulretreat2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\복수의퇴각.md",
+        "lastUpdate": "2026-09-08"
       }
     },
     "351338": {
@@ -97695,12 +97746,12 @@
       "castTime": "즉시",
       "resourceCost": "영혼 파편 50",
       "range": "자신",
-      "description": "# 공허 탈태 (Void Metamorphosis)",
+      "description": "영혼 파편 50개를 수확하면 사용할 수 있는 강화 상태다. 영혼 탐식 선택 시 요구량은 35개다. 진입하면 격노가 채워지며, 이후 격노가 소모돼 0이 되면 종료된다. 진입 전에 격노를 가득 채우려고 대기하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_112_ability_demonhunter_metamorphasisvoid.jpg",
       "iconUrls": {
@@ -97715,14 +97766,14 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 16,
         "synergyCount": 0,
-        "linkDensity": 0.05,
+        "linkDensity": 0.133,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\공허탈태.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "471366": {
@@ -98813,14 +98864,14 @@
       "school": "Cosmic",
       "cooldown": "없음",
       "castTime": "집중 3초",
-      "resourceCost": "격노 100, 이후 0.2초마다 격노 5",
+      "resourceCost": "사용 조건 격노 100, 집중 중 주기적 격노 소모",
       "range": "25야드",
-      "description": "# 공허 광선 (Void Ray)",
+      "description": "탈태 밖에서 격노를 사용하는 집중 주문이다. 사용에 격노 100이 필요하며 집중 중 주기적으로 격노를 소모한다. 격노 100을 진입 비용으로 전부 지불한 뒤 추가 소모하는 것으로 해석하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_voidray.jpg",
       "iconUrls": {
@@ -98830,19 +98881,26 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_voidray.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/갈망의순간",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/들끓는고통"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\공허광선.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "474746": {
@@ -99614,15 +99672,15 @@
       "iconName": "inv_12_dh_void_ability_collapsingstar",
       "school": "Cosmic",
       "cooldown": "공허 탈태 중 영혼 파편 조건",
-      "castTime": "즉시",
+      "castTime": "시전 중 격노 소모 감소",
       "resourceCost": "공허 탈태 중 영혼 파편 30 흡수마다 접근",
       "range": "",
-      "description": "# 붕괴하는 별 (Collapsing Star)",
+      "description": "공허 탈태 중 수확한 영혼 30개를 사용하는 공격이다. 12.1 기본 추천 공허상흔 회전에 억지로 넣지 않으며 궤멸자 설명에서 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_collapsingstar.jpg",
       "iconUrls": {
@@ -99632,19 +99690,24 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_collapsingstar.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\붕괴하는별.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "1223798": {
@@ -99767,12 +99830,12 @@
       "castTime": "즉시",
       "resourceCost": "",
       "range": "25야드",
-      "description": "# 수확 (Reap)",
+      "description": "대상에게 우주 피해를 입히고 주변 영혼 파편을 기본 최대 4개 회수하는 즉시 주문이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_reap.jpg",
       "iconUrls": {
@@ -99782,19 +99845,26 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_reap.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\수확.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "1226033": {
@@ -99815,12 +99885,12 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "전방 25미터",
-      "description": "# 박멸 (Eradicate)",
+      "description": "공허 광선을 끝까지 집중하면 수확이 강화된다. 전방의 대상에게 우주 피해를 주므로 방향과 실제 적중을 확인한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_eradicate.jpg",
       "iconUrls": {
@@ -99832,23 +99902,24 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/갈망의순간",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/들끓는고통"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 4,
-        "linkDensity": 0.061,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\박멸.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
       }
     },
     "1226140": {
@@ -102810,6 +102881,59 @@
         "lastUpdate": ""
       }
     },
+    "1244237": {
+      "id": "1244237",
+      "type": "talent",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "들끓는 고통",
+      "koreanName": "들끓는 고통",
+      "englishName": "Rolling Torment",
+      "icon": "inv_cosmicvoid_debuff",
+      "iconName": "inv_cosmicvoid_debuff",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "자신",
+      "description": "공허 탈태가 끝나면 남은 수확한 영혼 하나당 격노 5를 얻고, 12초 동안 공격력이 0.5% 증가한다. 별도로 시전하는 액티브가 아니라 탈태 종료에 반응하는 패시브다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_debuff.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_cosmicvoid_debuff.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_cosmicvoid_debuff.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_cosmicvoid_debuff.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_debuff.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\들끓는고통.md",
+        "lastUpdate": "2026-09-08"
+      }
+    },
     "1244258": {
       "id": "1244258",
       "type": "talent",
@@ -103427,16 +103551,16 @@
       "icon": "inv_12_dh_void_ability_empoweredreap",
       "iconName": "inv_12_dh_void_ability_empoweredreap",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "8초",
       "castTime": "즉시",
-      "resourceCost": "영혼 파편 조건부",
-      "range": "대상",
-      "description": "# 도태 (Cull)",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "공허 탈태 중 수확을 대체하는 강화 공격이다. 공허상흔 단일에서는 파편 회수와 사용 기회를 계속 이어가는 주요 기술이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-08",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_empoweredreap.jpg",
       "iconUrls": {
@@ -103447,23 +103571,134 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 3,
-        "linkDensity": 0.051,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\도태.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-08"
+      }
+    },
+    "1245470": {
+      "id": "1245470",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "사신의 대가",
+      "koreanName": "사신의 대가",
+      "englishName": "Reaper's Toll",
+      "icon": "inv_glaive_1h_artifactazgalor_d_05dual",
+      "iconName": "inv_glaive_1h_artifactazgalor_d_05dual",
+      "school": "",
+      "cooldown": "강화형",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "근접",
+      "description": "공허상흔의 공허 탈태 중 굶주린 베기를 대체하는 근접 공격이다. 가까운 적에게 우주 피해를 입히고 격노 10을 생성하며 최대 2개의 영혼 파편을 만든다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_artifactazgalor_d_05dual.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_glaive_1h_artifactazgalor_d_05dual.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_glaive_1h_artifactazgalor_d_05dual.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_glaive_1h_artifactazgalor_d_05dual.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_artifactazgalor_d_05dual.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/굶주린베기",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Hero-Talents/공허쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\사신의대가.md",
+        "lastUpdate": "2026-09-08"
+      }
+    },
+    "1245483": {
+      "id": "1245483",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "장막 관통",
+      "koreanName": "장막 관통",
+      "englishName": "Pierce the Veil",
+      "icon": "ability_demonhunter_soulcleave4",
+      "iconName": "ability_demonhunter_soulcleave4",
+      "school": "",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "15야드",
+      "description": "공허상흔의 공허 탈태 중 공허칼날을 대체하는 돌진 공격이다. 대상에게 돌진해 우주 피해를 준다. 공식 툴팁 기준 재사용 대기시간 30초, 사거리 15야드다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_soulcleave4.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_soulcleave4.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_soulcleave4.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_soulcleave4.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_soulcleave4.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Hero-Talents/공허쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\장막관통.md",
+        "lastUpdate": "2026-09-08"
       }
     },
     "1245633": {
@@ -109420,6 +109655,59 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\복제.md",
         "lastUpdate": ""
+      }
+    },
+    "1259431": {
+      "id": "1259431",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "포식자의 각성",
+      "koreanName": "포식자의 각성",
+      "englishName": "Predator's Wake",
+      "icon": "ability_ardenweald_demonhunter",
+      "iconName": "ability_ardenweald_demonhunter",
+      "school": "",
+      "cooldown": "1분 30초",
+      "castTime": "1초",
+      "resourceCost": "",
+      "range": "50야드",
+      "description": "공허상흔의 공허 탈태 중 사냥을 대체하는 공격이다. 대상에게 돌진해 우주 피해를 입히고 1.5초 동안 이동 불가 상태로 만들며, 경로의 최대 5명에게 6초 동안 추가 피해를 입힌다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_demonhunter.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ardenweald_demonhunter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ardenweald_demonhunter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ardenweald_demonhunter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_demonhunter.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Hero-Talents/공허쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\포식자의각성.md",
+        "lastUpdate": "2026-09-08"
       }
     },
     "1259457": {
@@ -123685,6 +123973,60 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Buffs\\독성심연-4세트.md",
         "lastUpdate": ""
+      }
+    },
+    "1297432": {
+      "id": "1297432",
+      "type": "proc",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "영혼분출",
+      "koreanName": "영혼분출",
+      "englishName": "Soulburst",
+      "icon": "spell_shadow_shadesofdarkness",
+      "iconName": "spell_shadow_shadesofdarkness",
+      "school": "",
+      "cooldown": "확률 발동",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "100야드",
+      "description": "시즌 2 세트 효과로, 영혼 파편을 4개 이상 수확하면 20% 확률로 다음 흡수가 즉시 시전되고 추가 우주 광역 피해를 준다. 세트 미착용 캐릭터의 기본 패시브나 직접 누르는 주문으로 취급하지 않는다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-08",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadesofdarkness.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadesofdarkness.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadesofdarkness.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\영혼분출.md",
+        "lastUpdate": "2026-09-08"
       }
     },
     "1299572": {

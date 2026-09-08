@@ -370,6 +370,14 @@ function main() {
   const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);
   const specialistChartBody = extractObjectLiteral(guideDetailSource, 'SPECIALIST_CHARTS');
+  const isMetaChartBlock = new Function('block', extractFunctionBody(guideDetailSource, 'isMetaChartBlock'));
+  const getBodyBlocks = new Function('manuscript', 'isMetaChartBlock', extractFunctionBody(guideDetailSource, 'getGuideBodyBlocks'));
+  const opener = { title: '첫 진입과 내부 운용', paragraphs: ['Keep this authored explanation.'] };
+  const aoe = { title: '광역 진입과 종료', paragraphs: ['Keep this distinct rotation.'] };
+  const body = getBodyBlocks({ blocks: [opener, aoe, { title: '차트 설계' }] }, isMetaChartBlock);
+  assert(body.length === 2 && body[0] === opener && body[1] === aoe, 'Opener classification must not remove authored rotation sections from the body or navigation');
+  assert(getBodyBlocks(undefined, isMetaChartBlock).length === 0, 'Missing manuscript must produce an empty body');
+  assert(guideDetailSource.includes('const guideNavBlocks = getGuideBodyBlocks(manuscript);'), 'Navigation and body must use the same section selection');
   const uptimeBody = extractFunctionBody(guideDetailSource, 'getUptimeRows');
   const disciplinePriestUptimeBody = extractFunctionBody(guideDetailSource, 'getDisciplinePriestUptimeRows');
   const planBranches = extractObjectEntries(specialistChartBody, 'SPECIALIST_CHARTS');
