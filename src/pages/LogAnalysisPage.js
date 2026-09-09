@@ -20,7 +20,7 @@ function LogAnalysisPage() {
     [guideId]
   );
   const latestDate = reports[0]?.date;
-  const specCount = new Set(reports.map(report => report.guideId)).size;
+  const specCount = guide ? 1 : new Set(reports.flatMap(report => report.guideIds || [report.guideId])).size;
 
   useEffect(() => {
     document.title = `${guide ? `${guide.spec} ${guide.className} ` : ''}로그 분석 | wowmeta`;
@@ -61,6 +61,7 @@ function LogAnalysisPage() {
         <ReportList aria-label="로그 분석 보고서 목록">
           {reports.map(report => {
             const reportGuide = guidesById.get(report.guideId);
+            const reportSpecs = (report.guideIds || [report.guideId]).map(id => guidesById.get(id)).filter(Boolean);
             return (
               <ReportLink key={report.id} to={report.path} $color={reportGuide?.color || '#75bda9'}>
                 <ReportDate>
@@ -69,7 +70,7 @@ function LogAnalysisPage() {
                 </ReportDate>
                 <ReportBody>
                   <ReportSpec $color={reportGuide?.color || '#75bda9'}>
-                    {reportGuide ? `${reportGuide.className} · ${reportGuide.spec}` : '전문화'}
+                    {reportGuide ? `${reportGuide.className} · ${reportSpecs.map(spec => spec.spec).join(' / ')}` : '전문화'}
                   </ReportSpec>
                   <ReportTitle>{report.title}</ReportTitle>
                   <ReportSummary>{report.summary}</ReportSummary>

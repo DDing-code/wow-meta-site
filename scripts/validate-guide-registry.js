@@ -38,7 +38,7 @@ function loadLogRegistry() {
     .replace(/\bexport const\b/g, 'const')
     .replace(/\bexport function\b/g, 'function');
 
-  return new Function(`${executable}\nreturn { logReports };`)();
+  return new Function(`${executable}\nreturn { logReports, getLogReportsByGuideId };`)();
 }
 
 function readReportRoutes() {
@@ -160,6 +160,12 @@ if (registry && logRegistry) {
     assert(/^\d{4}-\d{2}-\d{2}$/.test(report.date || ''), `logReportRegistry.js:${report.id || 'unknown'}: date must use YYYY-MM-DD`);
     assert(report.path?.startsWith('/guide/'), `logReportRegistry.js:${report.id || 'unknown'}: path must start with /guide/`);
     assert(guideIds.has(report.guideId), `logReportRegistry.js:${report.id || 'unknown'}: unknown guideId ${report.guideId}`);
+    const relatedGuideIds = report.guideIds || [report.guideId];
+    assert(Array.isArray(relatedGuideIds) && relatedGuideIds.includes(report.guideId), `logReportRegistry.js:${report.id}: related guides must include the primary guide`);
+    for (const id of Array.isArray(relatedGuideIds) ? relatedGuideIds : []) {
+      assert(guideIds.has(id), `logReportRegistry.js:${report.id}: unknown related guide ${id}`);
+      assert(logRegistry.getLogReportsByGuideId(id).some(item => item.id === report.id), `logReportRegistry.js:${report.id}: missing from ${id} report list`);
+    }
 
     if (report.id) {
       assert(!reportIds.has(report.id), `logReportRegistry.js:${report.id}: duplicate id`);

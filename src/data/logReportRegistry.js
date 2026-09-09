@@ -1,5 +1,17 @@
 export const logReports = [
   {
+    id: 'warlock-ragereaver-heroic-2026-09-09',
+    guideId: 'warlock-demonology',
+    guideIds: ['warlock-demonology', 'warlock-destruction'],
+    date: '2026-09-09',
+    title: 'Ragereaver 악마·파괴 흑마법사 영웅 로그 분석',
+    subject: 'Ragereaver',
+    encounter: '맹독 심연 영웅 전체',
+    fights: '9보스 · 상위 기록 3개 비교',
+    summary: '제단의 정신 지배·사망과 첫 시간 왜곡 손실, 울라텍의 지원·대상별 피해, 파괴 소비기 배치를 14전투의 시전·피해 기록으로 확인했습니다.',
+    path: '/guide/warlock/demonology/log-analysis/ragereaver-heroic',
+  },
+  {
     id: 'paladin-retribution-coiled-altar-2026-09-08',
     guideId: 'paladin-retribution',
     date: '2026-09-08',
@@ -90,5 +102,5 @@ export const logReports = [
 ];
 
 export function getLogReportsByGuideId(guideId) {
-  return logReports.filter(report => report.guideId === guideId);
+  return logReports.filter(report => (report.guideIds || [report.guideId]).includes(guideId));
 }
