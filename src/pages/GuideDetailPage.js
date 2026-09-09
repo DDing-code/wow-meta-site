@@ -736,7 +736,7 @@ function skillLookupKeys(skill) {
 
 function getSynergySkills(synergy, scopedSkills) {
   const byId = (synergy.participants || [])
-    .map(id => skillById.get(String(id)))
+    .map(id => scopedSkills.find(skill => String(skill.id) === String(id)))
     .filter(Boolean);
 
   const byLink = (synergy.linkedSkills || [])
@@ -1173,7 +1173,7 @@ function buildGuideData(guide) {
   );
   const scopedSkills = uniqueBy([...specSkills, ...commonSkills], skill => `${skill.id}:${skill.spec}`);
   const synergies = uniqueBy(
-    allSynergies.filter(synergy => recordMatchesGuide(synergy, guide, true)),
+    allSynergies.filter(synergy => recordMatchesGuide(synergy, guide, true) && getSynergySkills(synergy, scopedSkills).length >= 2),
     synergy => synergy.id
   ).sort((a, b) => Number(b.importance || 0) - Number(a.importance || 0));
 
@@ -1746,18 +1746,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '발화 지연, 열기 손실, 화염 작렬 과충전, 몰아치는 열기 방치, 광역 불기둥 전환 누락을 봅니다.'],
     ],
   },
-  'mage-arcane': {
-    id: 'resource',
-    title: '비전 쇄도와 마나 소비',
-    sectionHeading: '마나와 큰 구간 흐름',
-    sectionIntro: '비전 마법사는 비전 쇄도, 비전의 여파, 비전 보주, 비전 탄막, 비전 연사를 같은 구간에 배치하고 마나를 극딜 연료로 씁니다.',
-    caption: '비전 쇄도 예열, 비전의 여파 45초 구간, 비전 보주, 비전 탄막, 마나 회복과 비전 연사 소비를 확인합니다.',
-    definition: [
-      ['의미', '비전 쇄도는 큰 피해 구간을 여는 버튼이고, 마나는 그 안에서 강한 주문을 밀어 넣기 위한 연료입니다.'],
-      ['읽는 법', '큰 구간 전에는 마나와 충전물을 준비하고, 구간 안에서는 비전 보주와 발동을 비전 연사/탄막으로 정리합니다.'],
-      ['체크 포인트', '비전 쇄도 지연, 비전의 여파 어긋남, 마나 부족, 비전 보주 충전 방치, 비전 연사 과소비를 봅니다.'],
-    ],
-  },
   'evoker-devastation': {
     id: 'resource',
     title: '용의 분노와 해방된 불길',
@@ -1833,6 +1821,8 @@ function getInlineChartPlan(guide, data) {
       caption: '위에서 설명한 조건을 전투 중 어떤 순서로 확인해야 하는지 정리합니다.',
     },
   ];
+
+  if (guide.id === 'mage-arcane') return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -3719,58 +3709,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'mage-arcane') {
-    return [
-      {
-        label: '중심 자원',
-        skill: findSkillByNames(data, ['비전 연사']),
-        note: '비전 탄막 소비 타이밍을 결정하므로 큰 구간 전 예열과 구간 안 소비를 같이 봅니다.',
-        segments: [[4, 18], [26, 20], [52, 18], [78, 16]],
-      },
-      {
-        label: '큰 구간',
-        skill: findSkillByNames(data, ['비전 쇄도']),
-        note: '90초 기준 피해와 마나 회복을 동시에 여는 구간입니다.',
-        segments: [[18, 20], [76, 18]],
-      },
-      {
-        label: '45초 구간',
-        skill: findSkillByNames(data, ['비전의 여파']),
-        note: '비전 쇄도와 겹치는 큰 구간, 그 사이 소형 구간을 모두 확인합니다.',
-        segments: [[22, 14], [54, 14], [84, 12]],
-      },
-      {
-        label: '탄막 소비',
-        skill: findSkillByNames(data, ['비전 탄막']),
-        note: '고중첩 비전 연사 소비와 마나 리셋용 탄막을 구분합니다.',
-        segments: [[30, 8], [58, 8], [88, 8]],
-      },
-      {
-        label: '보주 재충전',
-        skill: findSkillByNames(data, ['비전 보주']),
-        note: '0~2충전에서 충전물과 주문술사 쇄편 루프를 복구합니다.',
-        segments: [[10, 10], [40, 10], [70, 10]],
-      },
-      {
-        label: '발동 처리',
-        skill: findSkillByNames(data, ['신비한 화살', '번뜩임']),
-        note: '번뜩임을 버리지 않되 비전 탄막과 큰 구간을 밀지 않게 처리합니다.',
-        segments: [[14, 9], [34, 9], [62, 9], [82, 9]],
-      },
-      {
-        label: '광역 전환',
-        skill: findSkillByNames(data, ['신비한 폭발', '비전 파동']),
-        note: '3대상 이상에서는 충전물 생성과 비전 파동 타이밍을 따로 봅니다.',
-        segments: [[36, 12], [66, 12]],
-      },
-      {
-        label: '복구/보존',
-        skill: findSkillByNames(data, ['환기', '오색 방벽']),
-        note: '환기는 다음 큰 구간 마나를 복구하고, 오색 방벽은 구간 안 시전을 보존합니다.',
-        segments: [[44, 10], [90, 8]],
-      },
-    ];
-  }
 
   if (guide.id === 'shaman-elemental') {
     return [

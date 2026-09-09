@@ -363,6 +363,13 @@ function validateNoDuplicateBranches(branches, scopeName) {
 
 function main() {
   const guideDetailSource = readSource(GUIDE_DETAIL_PATH);
+  const getScopedSynergySkills = new Function('synergy', 'scopedSkills', 'uniqueBy', 'normalizeSkillLookupText', 'skillLookupKeys', extractFunctionBody(guideDetailSource, 'getSynergySkills'));
+  const scopedResult = getScopedSynergySkills(
+    { participants: ['5143', 'foreign-spec'] }, [{ id: '5143', name: '신비한 화살' }],
+    items => [...new Map(items.map(item => [String(item.id), item])).values()],
+    normalizeSkillLookupText, skillLookupKeys
+  );
+  assert(scopedResult.length === 1 && scopedResult[0].id === '5143', 'Synergy participants must stay within the guide skill scope');
   const guideRegistrySource = readSource(GUIDE_REGISTRY_PATH);
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
@@ -392,7 +399,13 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    assert(planBranchMap.has(guideId), `SPECIALIST_CHARTS is missing a specialist chart entry for ${guideId}`);
+    if (guideId === 'mage-arcane') {
+      const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
+      const plan = getPlan({ id: guideId }, {}, () => 'opener');
+      assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), 'Arcane should use its authored opener and priority, not an illustrative mana curve');
+    } else {
+      assert(planBranchMap.has(guideId), `SPECIALIST_CHARTS is missing a specialist chart entry for ${guideId}`);
+    }
     assert(guideRecordMap.get(guideId)?.kbClass, `guideRegistry is missing kbClass mapping for ${guideId}`);
   }
 

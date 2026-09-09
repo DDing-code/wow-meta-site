@@ -1,27 +1,28 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-08T09:52:49.383Z",
+    "generatedAt": "2026-09-09T08:11:10.448Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2497,
-    "rawTotalSkills": 2497,
+    "totalSkills": 2499,
+    "rawTotalSkills": 2499,
     "duplicateIds": [],
-    "totalSynergies": 432,
+    "totalSynergies": 425,
     "stats": {
-      "total": 2497,
+      "total": 2499,
       "byType": {
         "hero-talent": 530,
         "atomic-skill": 516,
         "proc": 5,
-        "skill": 119,
-        "talent": 1013,
+        "skill": 120,
+        "talent": 1012,
         "spec-talent": 201,
         "hero-tree": 2,
         "set-bonus": 7,
         "class-talent": 87,
-        "buff": 3,
+        "buff": 4,
         "tier-set": 2,
+        "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
         "atomic-talent": 1,
@@ -34,7 +35,7 @@
         "Druid": 142,
         "Evoker": 115,
         "Hunter": 140,
-        "Mage": 203,
+        "Mage": 205,
         "Monk": 231,
         "Paladin": 209,
         "Priest": 221,
@@ -68,7 +69,7 @@
         "Hunter-야수": 25,
         "Mage-공용": 63,
         "Mage-냉기": 48,
-        "Mage-비전": 47,
+        "Mage-비전": 49,
         "Mage-화염": 45,
         "Monk-공용": 69,
         "Monk-양조": 51,
@@ -101,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2408,
-        "withSynergies": 692,
+        "withWikilinks": 2410,
+        "withSynergies": 695,
         "avgLinkDensity": "0.033"
       }
     }
@@ -4694,10 +4695,10 @@
       "castTime": "집중 2.5초",
       "resourceCost": "번뜩임 필요",
       "range": "40야드",
-      "description": "# 신비한 화살 (Arcane Missiles)",
+      "description": "번뜩임이 필요한 집중 주문입니다. 방출마다 비전 연사를 만들고 시즌 2 4세트가 있으면 축적된 힘을 쌓습니다. 12.1 핵심 반복에 포함되며 현재 권장 운용에서 기본 제외하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4724,7 +4725,7 @@
       "quality": {
         "wikilinkCount": 11,
         "synergyCount": 6,
-        "linkDensity": 0.084,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -9112,10 +9113,10 @@
       "castTime": "2.25초",
       "resourceCost": "기본 마나 2.75%, 충전물당 증가",
       "range": "40야드",
-      "description": "# 비전 작렬 (Arcane Blast)",
+      "description": "비전 충전물 하나를 만드는 단일 기본 시전입니다. 충전물에 따라 피해·마나 소모·시전 시간이 달라집니다. 오색 화살이 발동하면 다음 작렬이 별도 주문으로 바뀌며 작렬 전용 보정을 그대로 옮겨 계산하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9139,7 +9140,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 3,
-        "linkDensity": 0.052,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -10722,10 +10723,10 @@
       "castTime": "즉시",
       "resourceCost": "비전 충전물",
       "range": "40야드",
-      "description": "# 비전 탄막 (Arcane Barrage)",
+      "description": "비전 충전물을 소비하는 즉시 시전입니다. 비전 연사로 강화되며 소비한 연사는 오색 화살 발동 기회와 연결됩니다. 비전의 영혼 중에는 충전물을 생성하고 연사를 소비하지 않는 별도 상태로 작동합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10746,7 +10747,7 @@
       "quality": {
         "wikilinkCount": 11,
         "synergyCount": 1,
-        "linkDensity": 0.128,
+        "linkDensity": 0.072,
         "hasWikilinks": true
       },
       "source": {
@@ -21881,10 +21882,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 비전 보주 (Arcane Orb)",
+      "description": "비전 충전물을 생성하는 투사체입니다. 12.1 보주 숙련은 번뜩임을 소비하지 않고 50% 효율의 추가 보주 2개를 발사합니다. 성난태양은 낮은 충전물 복구, 주문술사 다수 대상은 보주 피해와 쇄편 효과를 함께 봅니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21905,7 +21906,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 1,
-        "linkDensity": 0.095,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -35942,10 +35943,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번뜩임 (Clearcasting)",
+      "description": "비전 주문 시전으로 발동해 신비한 화살 사용을 가능하게 하는 효과입니다. 12.1 보주 숙련은 이 효과를 소비하지 않습니다. 오색 화살 최상위 특성 투자로 번뜩임을 받아 다음 화살을 연결할 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35970,7 +35971,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 4,
-        "linkDensity": 0.106,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -39733,10 +39734,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 비전의 여파 (Touch of the Magi)",
+      "description": "대상에게 12초 동안 입힌 피해의 일부를 저장해 폭발시키며 비전 충전물 4개를 생성합니다. 기본 재사용 대기시간은 45초입니다. 12.1은 삭제된 최상위 특성의 18초 설명을 적용하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39759,7 +39760,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 1,
-        "linkDensity": 0.093,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -42956,10 +42957,10 @@
       "castTime": "2.5초",
       "resourceCost": "",
       "range": "40야드",
-      "description": "# 비전 쇄도 (Arcane Surge)",
+      "description": "현재 마나를 소모해 피해를 주고 마나 재생·주문 피해 증가 및 번뜩임을 제공하는 90초 쿨다운입니다. 성난태양에서는 비전 불사조와 종료 후 비전의 영혼까지 이어지는 큰 극딜을 엽니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42978,7 +42979,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.102,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -56718,10 +56719,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비전 연사 (Arcane Salvo)",
+      "description": "신비한 화살 방출로 비전 탄막을 강화하는 중첩입니다. 기본 툴팁은 최대 20중첩이며 성난태양은 관련 특성으로 25중첩을 사용합니다. 번뜩임 여부·영웅 특성·비전의 영혼에 따라 탄막 소비 조건이 달라집니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56743,7 +56744,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 2,
-        "linkDensity": 0.092,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -84987,10 +84988,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비전화염 구슬 (Spellfire Spheres)",
+      "description": "비전은 공격 주문 시전 시 기본 6% 확률로, 화염은 몰아치는 열기 소비 시 기본 12% 확률로 비전화염 구슬을 얻습니다. 전투 밖에서도 서서히 생성됩니다. 구슬은 기본 최대 3개이며 하나당 주문 피해를 1% 높입니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -85009,7 +85010,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.05,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -85036,10 +85037,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 환기: 비전 불사조 (Invocation: Arcane Phoenix)",
+      "description": "성난태양에서 비전 쇄도 또는 발화를 사용하면 해당 효과가 지속되는 동안 비전 불사조가 전투를 돕습니다. 비전 및 화염 주문을 시전하는 소환 효과이며 별도의 환기 시전이 필요한 것이 아닙니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -85058,7 +85059,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -85529,10 +85530,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 알라르의 기억 (Memory of Al'ar)",
+      "description": "비전 불사조가 만료되면 기본 4초 동안 비전은 비전의 영혼, 화염은 이상 고열을 얻는 성난태양 특성입니다. 실제 버프 지속시간은 선택 특성과 현재 효과를 확인합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -85551,7 +85552,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.062,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -88164,10 +88165,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비전의 영혼 (Arcane Soul)",
+      "description": "성난태양의 후속 강화 효과입니다. 비전 탄막이 번뜩임과 충전물 4개, 비전 연사 5중첩을 주며 비전 연사를 소비하지 않습니다. 직접 시전하는 기술이 아닙니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88186,7 +88187,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -102357,10 +102358,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 보주 숙련 (Orb Mastery)",
+      "description": "비전 보주를 시전하면 50% 효율의 비전 보주 2개를 추가로 발사합니다. 12.1에서는 번뜩임을 소비하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102379,7 +102380,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -102401,14 +102402,14 @@
       "icon": "spell_arcane_arcanetorrent",
       "iconName": "spell_arcane_arcanetorrent",
       "school": "",
-      "cooldown": "없음",
-      "castTime": "즉시",
-      "resourceCost": "비전 충전물/마나",
+      "cooldown": "15초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나 3.5%",
       "range": "40야드",
-      "description": "# 비전 파동 (Arcane Pulse)",
+      "description": "12.1에 재설계된 선택 광역 주문입니다. 기본 2초 시전·15초 재사용 대기시간으로 대상 주변 8야드에 피해를 주고 적중 대상당 비전 충전물 1개를 생성합니다. 충전물이 시전 시간·피해·마나를 바꾸는 옛 광역 필러와 구분합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102434,7 +102435,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 5,
-        "linkDensity": 0.065,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -102556,10 +102557,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정신 확장 (Mind Expansion)",
+      "description": "비전 작렬과 비전 파동은 비전 연사 2중첩, 비전 보주는 1중첩, 오색 화살은 4중첩을 생성합니다. 2026-09-09 한국어 툴팁 1243557을 직접 확인했습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102571,14 +102572,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_101.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -109219,7 +109222,7 @@
     },
     "1257942": {
       "id": "1257942",
-      "type": "talent",
+      "type": "removed-talent",
       "class": "Mage",
       "spec": "비전",
       "specs": [
@@ -109235,10 +109238,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대마법사의 손길 (Touch of the Archmage)",
-      "category": "talent",
+      "description": "12.1에서 오색 화살 최상위 특성으로 교체된 구버전 특성입니다. Wowhead 주문 페이지가 남아 있어도 현재 빌드에 채택 가능한 근거가 아닙니다. 현행 능동 우선순위와 시너지 그래프에서 제외합니다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -109257,7 +109260,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -123473,6 +123476,58 @@
         "lastUpdate": ""
       }
     },
+    "1295924": {
+      "id": "1295924",
+      "type": "skill",
+      "class": "Mage",
+      "spec": "비전",
+      "specs": [
+        "Arcane"
+      ],
+      "name": "오색 화살",
+      "koreanName": "오색 화살",
+      "englishName": "Prismatic Bolt",
+      "icon": "8026694",
+      "iconName": "8026694",
+      "school": "",
+      "cooldown": "발동 조건",
+      "castTime": "2.5초",
+      "resourceCost": "",
+      "range": "40야드",
+      "description": "비전 탄막으로 소비한 비전 연사에 따라 발동하여 다음 비전 작렬을 대체합니다. 대상과 주변 적에게 피해를 주고 충전물 4개를 생성합니다. 5대상 초과 피해는 감소합니다. 최상위 특성 투자는 번뜩임 재생성과 연결되며 시즌 2 축적된 힘 강화 대상입니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/8026694.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/8026694.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/8026694.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/8026694.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/8026694.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.078,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\오색화살.md",
+        "lastUpdate": ""
+      }
+    },
     "1296603": {
       "id": "1296603",
       "type": "set-bonus",
@@ -123972,6 +124027,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Buffs\\독성심연-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296930": {
+      "id": "1296930",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "비전",
+      "specs": [
+        "Arcane"
+      ],
+      "name": "축적된 힘",
+      "koreanName": "축적된 힘",
+      "englishName": "Cumulative Power",
+      "icon": "spell_arcane_arcanepotency",
+      "iconName": "spell_arcane_arcanepotency",
+      "school": "",
+      "cooldown": "발동 조건",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "자신",
+      "description": "시즌 2 4세트로 신비한 화살 방출마다 다음 비전 작렬·비전 파동·오색 화살 피해가 3%씩, 최대 24% 증가합니다. 최대 8중첩이며 직접 누르는 스킬이 아닙니다. 4세트가 없으면 이 중첩을 기다리지 않습니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcanepotency.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_arcane_arcanepotency.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_arcane_arcanepotency.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_arcane_arcanepotency.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcanepotency.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
+          "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.088,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\축적된힘.md",
         "lastUpdate": ""
       }
     },

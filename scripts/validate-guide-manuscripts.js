@@ -10,6 +10,7 @@ const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const GUIDE_PATCH_OVERRIDES = new Map([
+  ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -1010,6 +1011,14 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(arcaneSource)) {
+    assert(JSON.stringify(JSON.parse(read(arcaneSource))) === JSON.stringify(manuscripts['mage-arcane']), 'Arcane guide must match its canonical KB manuscript');
+  }
+  assert(kbSkills['1295924']?.name === '오색 화살' && kbSkills['1295924']?.patch === '12.1', 'Arcane Prismatic Bolt must be synced from the 12.1 KB');
+  assert(kbSkills['1296930']?.description.includes('24%'), 'Arcane tier set must use the post-tuning 24% cap');
+  assert(isInactiveGuideSkill(kbSkills['1257942']), 'Touch of the Archmage must not return as an active talent');
 
   assert(readySpecs.length === EXPECTED_GUIDE_COUNT, `ready guide count must be ${EXPECTED_GUIDE_COUNT}, got ${readySpecs.length}`);
 

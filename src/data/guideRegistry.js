@@ -194,7 +194,8 @@ export const guideSpecsByRole = {
     }),
     spec('mage-arcane', 'mage', '비전', '비전', 'ranged', '/guide/mage/arcane', {
       kbSpecAliases: ['Arcane'],
-      focus: '마나와 비전 충전물을 극딜 구간 전후로 나눠 사용합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '성난태양 화살·탄막·오색 화살과 시즌 2 세트, 45초 여파와 90초 쇄도를 연결합니다.',
     }),
     spec('mage-fire', 'mage', '화염', '화염', 'ranged', '/guide/mage/fire', {
       kbSpecAliases: ['Fire'],

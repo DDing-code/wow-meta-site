@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-08T09:52:49.384Z",
+    "generatedAt": "2026-09-09T08:11:10.450Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 432,
-    "rawTotalSynergies": 432,
+    "totalSynergies": 425,
+    "rawTotalSynergies": 425,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -53,23 +53,17 @@
       "orb-proc-window": 1,
       "proc-shatter": 1,
       "glacial-spike-shatter": 1,
-      "spellslinger-burst": 2,
+      "spellslinger-burst": 1,
       "aoe-loop": 1,
       "defensive-planning": 2,
       "proc-priority-variant": 1,
       "ray-burst": 1,
       "frostfire-variant": 1,
-      "apex-window": 2,
-      "spellslinger-loop": 1,
-      "orb-barrage-reset": 1,
+      "charge-recovery": 1,
+      "hero-followup": 1,
+      "resource-generation": 1,
       "resource-loop": 1,
-      "mana-charge-core": 1,
-      "priority-spender": 1,
-      "aoe-priority": 1,
-      "clearcasting-missiles": 1,
-      "sunfury-followup": 1,
-      "defensive-utility": 1,
-      "cooldown-mana-reset": 1,
+      "proc-consumption": 1,
       "apex-combustion": 1,
       "ignite-aoe": 1,
       "execute-mobility": 1,
@@ -99,6 +93,7 @@
       "resource-and-combo": 1,
       "hero-talent-conduit": 1,
       "hero-talent-shado-pan": 1,
+      "apex-window": 1,
       "aoe-proc-consumption": 1,
       "major-cooldown-and-defense": 1,
       "single-target-core": 1,
@@ -278,7 +273,7 @@
       "Druid": 38,
       "Evoker": 28,
       "Hunter": 26,
-      "Mage": 41,
+      "Mage": 34,
       "마법사": 1,
       "Monk": 31,
       "Paladin": 28,
@@ -4655,506 +4650,189 @@
         "lastUpdate": ""
       }
     },
-    "대마법사의손길_비전의여파": {
-      "id": "대마법사의손길_비전의여파",
-      "name": "대마법사의손길-비전의여파",
+    "보주_충전물_다수대상": {
+      "id": "보주_충전물_다수대상",
+      "name": "보주로 충전물 복구, 주문술사는 추가 보주 피해 활용",
       "type": "synergy",
-      "synergyType": "apex-window",
+      "synergyType": "charge-recovery",
       "participants": [
-        "1257942",
-        "321507",
-        "30451",
-        "1243460",
-        "44425",
+        "153626",
+        "1243435",
         "36032",
-        "5143",
-        "365350"
+        "44425"
       ],
       "class": "Mage",
       "spec": "Arcane",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전의여파",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전작렬",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전파동",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/대마법사의손길"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\대마법사의손길-비전의여파.md",
-        "lastUpdate": ""
-      }
-    },
-    "마력깃든쇄편_비전연사": {
-      "id": "마력깃든쇄편_비전연사",
-      "name": "마력깃든쇄편-비전연사",
-      "type": "synergy",
-      "synergyType": "spellslinger-loop",
-      "participants": [
-        "1261080",
-        "443739",
-        "384452",
-        "44425",
-        "444719",
-        "443783",
-        "444256",
-        "444675"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\마력깃든쇄편-비전연사.md",
-        "lastUpdate": ""
-      }
-    },
-    "보주탄막_비전보주": {
-      "id": "보주탄막_비전보주",
-      "name": "보주탄막-비전보주",
-      "type": "synergy",
-      "synergyType": "orb-barrage-reset",
-      "participants": [
-        "384858",
-        "153626",
-        "44425",
-        "384452",
-        "1243435",
-        "384651",
-        "36032"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전작렬",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주숙련",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/충전된보주"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\보주탄막-비전보주.md",
-        "lastUpdate": ""
-      }
-    },
-    "비전보주_비전연사": {
-      "id": "비전보주_비전연사",
-      "name": "비전보주-비전연사",
-      "type": "synergy",
-      "synergyType": "resource-loop",
-      "participants": [
-        "153626",
-        "263725",
-        "384452",
-        "44425",
-        "1243435",
-        "384858",
-        "384651",
-        "36032"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/번뜩임",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주숙련",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/충전된보주",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주탄막"
+        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주숙련"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\비전보주-비전연사.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\보주-충전물-다수대상.md",
+        "lastUpdate": "2026-09-09"
       }
     },
-    "비전쇄도_비전의여파": {
-      "id": "비전쇄도_비전의여파",
-      "name": "비전쇄도-비전의여파",
+    "쇄도_여파_투사체": {
+      "id": "쇄도_여파_투사체",
+      "name": "90초 쇄도와 45초 여파에 투사체 피해 포함",
       "type": "synergy",
       "synergyType": "burst-window",
       "participants": [
         "365350",
         "321507",
-        "12051",
         "44425",
-        "36032",
-        "414379",
-        "321387",
-        "321526",
-        "1257942",
-        "452997"
+        "1295924"
       ],
       "class": "Mage",
       "spec": "Arcane",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전의여파",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/환기",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/깨달음",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/마나숙련자",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/응축된마력"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\비전쇄도-비전의여파.md",
-        "lastUpdate": ""
-      }
-    },
-    "비전작렬_마나_충전물관리": {
-      "id": "비전작렬_마나_충전물관리",
-      "name": "비전작렬-마나-충전물관리",
-      "type": "synergy",
-      "synergyType": "mana-charge-core",
-      "participants": [
-        "30451",
-        "36032",
-        "44425",
-        "321387",
-        "321526",
-        "1243557",
-        "205025",
-        "383676",
-        "1223798",
-        "384060",
-        "384612"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전작렬",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/깨달음",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/마나숙련자",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/정신확장",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/냉정",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/자극",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/직관력",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/빛나는생각",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/경이의석학"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\비전작렬-마나-충전물관리.md",
-        "lastUpdate": ""
-      }
-    },
-    "비전탄막_비전연사_마무리소비": {
-      "id": "비전탄막_비전연사_마무리소비",
-      "name": "비전탄막-비전연사-마무리소비",
-      "type": "synergy",
-      "synergyType": "priority-spender",
-      "participants": [
-        "44425",
-        "384452",
-        "36032",
-        "205028",
-        "281482",
-        "383980",
-        "205022",
-        "384858",
-        "153626"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/보주탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/공명",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/잔향",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/비전의박자",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/비전전령"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\비전탄막-비전연사-마무리소비.md",
-        "lastUpdate": ""
-      }
-    },
-    "쇄편의마술_비전쇄도": {
-      "id": "쇄편의마술_비전쇄도",
-      "name": "쇄편의마술-비전쇄도",
-      "type": "synergy",
-      "synergyType": "spellslinger-burst",
-      "participants": [
-        "443739",
-        "443783",
-        "365350",
-        "1261080",
-        "1261082",
-        "444675",
-        "444483"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주"
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색화살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\쇄편의마술-비전쇄도.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\쇄도-여파-투사체.md",
+        "lastUpdate": "2026-09-09"
       }
     },
-    "신비한폭발_비전파동_광역전환": {
-      "id": "신비한폭발_비전파동_광역전환",
-      "name": "신비한폭발-비전파동-광역전환",
+    "쇄도_영혼_연사보존": {
+      "id": "쇄도_영혼_연사보존",
+      "name": "쇄도 종료 → 비전의 영혼 → 탄막이 연사 보존",
       "type": "synergy",
-      "synergyType": "aoe-priority",
+      "synergyType": "hero-followup",
       "participants": [
-        "1449",
-        "1243460",
+        "365350",
+        "448658",
+        "449619",
+        "451038",
         "44425",
-        "205028",
-        "281482",
-        "342231",
-        "1244001",
-        "231564",
-        "453600",
-        "1277009"
+        "384452",
+        "5143"
       ],
       "class": "Mage",
       "spec": "Arcane",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한폭발",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전파동",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전의여파"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/공명",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/잔향",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/비전메아리",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/비전특이점",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/굽이치는갈래",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/에테르조율"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\신비한폭발-비전파동-광역전환.md",
-        "lastUpdate": ""
-      }
-    },
-    "신비한화살_번뜩임_투사체트리": {
-      "id": "신비한화살_번뜩임_투사체트리",
-      "name": "신비한화살-번뜩임-투사체트리",
-      "type": "synergy",
-      "synergyType": "clearcasting-missiles",
-      "participants": [
-        "5143",
-        "263725",
-        "321420",
-        "236628",
-        "461248",
-        "461251",
-        "1277009",
-        "453600",
-        "452198",
-        "236457",
-        "461257",
-        "1243542"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/번뜩임",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/고전압",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/충전된투사체",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/과부하된투사체",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/에테르조율",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/증폭",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/번뜩임연마",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/후방기류",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/유레카",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/집중의수정",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/넘쳐흐르는통찰"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\신비한화살-번뜩임-투사체트리.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\쇄도-영혼-연사보존.md",
+        "lastUpdate": "2026-09-09"
       }
     },
-    "알라르의기억_비전의영혼": {
-      "id": "알라르의기억_비전의영혼",
-      "name": "알라르의기억-비전의영혼",
+    "정신확장_연사생성": {
+      "id": "정신확장_연사생성",
+      "name": "정신 확장: 작렬·파동 2, 보주 1, 오색 화살 4연사",
       "type": "synergy",
-      "synergyType": "sunfury-followup",
+      "synergyType": "resource-generation",
       "participants": [
-        "449619",
-        "451038",
-        "365350",
+        "1243557",
+        "30451",
+        "1243460",
+        "153626",
+        "1295924",
+        "384452"
+      ],
+      "class": "Mage",
+      "spec": "Arcane",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전작렬",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전파동",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색화살",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/정신확장"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\정신확장-연사생성.md",
+        "lastUpdate": "2026-09-09"
+      }
+    },
+    "화살_연사_탄막_오색화살": {
+      "id": "화살_연사_탄막_오색화살",
+      "name": "화살로 연사 생성 → 탄막 소비 → 오색 화살 발동",
+      "type": "synergy",
+      "synergyType": "resource-loop",
+      "participants": [
+        "5143",
+        "384452",
         "44425",
-        "457521",
-        "1243507",
-        "449293",
-        "448658",
-        "449394",
-        "448601"
+        "1295924",
+        "263725",
+        "36032"
       ],
       "class": "Mage",
       "spec": "Arcane",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/번뜩임",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전의여파"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/마나폭탄",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/에이그윈의기술",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/증폭"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\알라르의기억-비전의영혼.md",
-        "lastUpdate": ""
-      }
-    },
-    "오색방벽_시간돌리기_생존창": {
-      "id": "오색방벽_시간돌리기_생존창",
-      "name": "오색방벽-시간돌리기-생존창",
-      "type": "synergy",
-      "synergyType": "defensive-utility",
-      "participants": [
-        "235450",
-        "342245",
-        "1953",
-        "212653",
-        "45438",
-        "2139"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색방벽",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/마법차단"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/후방기류"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\오색방벽-시간돌리기-생존창.md",
-        "lastUpdate": ""
-      }
-    },
-    "환기_쇄도_마나회복창": {
-      "id": "환기_쇄도_마나회복창",
-      "name": "환기-쇄도-마나회복창",
-      "type": "synergy",
-      "synergyType": "cooldown-mana-reset",
-      "participants": [
-        "12051",
-        "365350",
-        "321387",
-        "321526",
-        "414379",
-        "452997",
-        "461260",
-        "1257942",
-        "321507"
-      ],
-      "class": "Mage",
-      "spec": "Arcane",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전연사",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색화살",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/번뜩임",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전충전물"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/환기",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/깨달음",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/마나숙련자",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/응축된마력",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/충만한전령",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Talents/무역연합장식품"
-      ],
+      "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\환기-쇄도-마나회복창.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\화살-연사-탄막-오색화살.md",
+        "lastUpdate": "2026-09-09"
+      }
+    },
+    "화살_축적된힘_오색화살": {
+      "id": "화살_축적된힘_오색화살",
+      "name": "시즌 2 화살 방출 → 축적된 힘 → 오색 화살 강화",
+      "type": "synergy",
+      "synergyType": "proc-consumption",
+      "participants": [
+        "5143",
+        "1296930",
+        "1295924"
+      ],
+      "class": "Mage",
+      "spec": "Arcane",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/축적된힘",
+        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색화살"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\화살-축적된힘-오색화살.md",
+        "lastUpdate": "2026-09-09"
       }
     },
     "SY-MAGE-FIRE-FIRED-UP-COMBUSTION": {
