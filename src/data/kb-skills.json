@@ -1,28 +1,28 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T20:14:51.736Z",
+    "generatedAt": "2026-09-12T21:12:04.245Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2655,
-    "rawTotalSkills": 2655,
+    "totalSkills": 2678,
+    "rawTotalSkills": 2678,
     "duplicateIds": [],
-    "totalSynergies": 462,
+    "totalSynergies": 468,
     "stats": {
-      "total": 2655,
+      "total": 2678,
       "byType": {
-        "buff": 26,
-        "hero-talent": 562,
-        "atomic-skill": 482,
-        "proc": 5,
+        "buff": 29,
+        "hero-talent": 565,
+        "atomic-skill": 486,
+        "proc": 6,
         "skill": 167,
         "talent": 1079,
-        "spec-talent": 218,
-        "passive": 14,
+        "spec-talent": 230,
+        "passive": 16,
         "hero-tree": 2,
         "set-bonus": 7,
-        "class-talent": 87,
         "tier-set": 2,
+        "class-talent": 85,
         "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
@@ -32,7 +32,7 @@
         "DeathKnight": 111,
         "DemonHunter": 148,
         "Druid": 214,
-        "Evoker": 117,
+        "Evoker": 140,
         "Hunter": 140,
         "Mage": 205,
         "Monk": 231,
@@ -57,9 +57,9 @@
         "Druid-야성": 51,
         "Druid-조화": 37,
         "Druid-회복": 31,
-        "Evoker-공용": 34,
+        "Evoker-공용": 42,
         "Evoker-보존": 28,
-        "Evoker-증강": 27,
+        "Evoker-증강": 42,
         "Evoker-황폐": 28,
         "Hunter-공용": 44,
         "Hunter-사격": 35,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2568,
-        "withSynergies": 867,
+        "withWikilinks": 2598,
+        "withSynergies": 917,
         "avgLinkDensity": "0.034"
       }
     }
@@ -43365,14 +43365,14 @@
       "icon": "ability_evoker_quell",
       "iconName": "ability_evoker_quell",
       "school": "",
-      "cooldown": "40초",
+      "cooldown": "20초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "25야드",
-      "description": "# 진압 (Quell)",
+      "description": "적의 주문 시전을 방해하고 6초 동안 같은 계열 주문을 사용하지 못하게 한다. 황폐와 증강의 선택 차단 기술이며 기절이나 광역 군중 제어와는 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43384,14 +43384,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_quell.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/탄압의포효"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -43675,13 +43679,13 @@
       "iconName": "ability_evoker_firebreath",
       "school": "",
       "cooldown": "30초",
-      "castTime": "강화",
-      "resourceCost": "없음",
+      "castTime": "강화 주문",
+      "resourceCost": "기본 마나 1.8%",
       "range": "전방 부채꼴",
-      "description": "# 불의 숨결 (Fire Breath)",
+      "description": "전방 부채꼴에 화염 피해와 지속 피해를 주는 공용 강화 주문이다. 강화 단계가 올라가면 지속 피해 일부가 즉시 피해로 옮겨지고 지속시간이 줄어든다. 증강에서는 시간의 모래로 칠흑의 힘을 기본 2초 연장한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43694,20 +43698,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/적개심"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약"
         ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/화염흡수",
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/생명의어머니의유산"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 2,
-        "linkDensity": 0.072,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -43730,11 +43734,11 @@
       "icon": "ability_evoker_deepbreath",
       "iconName": "ability_evoker_deepbreath",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "2분 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "15~50야드",
-      "description": "# 깊은 숨결 (Deep Breath)",
+      "description": "대상 위치로 날아가며 경로 밑의 적에게 화산 피해를 준다. 시작할 때 이동 불가를 제거하고 비행 중에는 이동 방해와 제어 불가에 면역이 된다. 증강의 영겁의 숨결 선택 여부와 황폐의 비늘사령관 효과를 따로 확인한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -43749,16 +43753,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_deepbreath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/기동성",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/편대통솔"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -43835,14 +43843,14 @@
       "icon": "ability_evoker_hover",
       "iconName": "ability_evoker_hover",
       "school": "",
-      "cooldown": "충전형",
+      "cooldown": "35초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 부양 (Hover)",
+      "description": "도약 후 기본 6초간 이동 속도를 30% 높이고 이동하면서 기원사 주문을 시전하게 한다. 강화 주문에는 적용되지 않는다. 기본 충전 수와 추가 특성으로 얻는 충전을 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43855,20 +43863,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
           "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/산산이부서지는별"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.077,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -43980,13 +43987,11 @@
     },
     "359618": {
       "id": "359618",
-      "type": "atomic-skill",
+      "type": "proc",
       "class": "Evoker",
       "spec": "공용",
       "specs": [
-        "Devastation",
-        "Preservation",
-        "Augmentation"
+        "Devastation"
       ],
       "name": "정수 폭발",
       "koreanName": "정수 폭발",
@@ -43994,14 +43999,14 @@
       "icon": "ability_evoker_essenceburst",
       "iconName": "ability_evoker_essenceburst",
       "school": "",
-      "cooldown": "없음",
-      "castTime": "발동 효과",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정수 폭발 (Essence Burst)",
-      "category": "ability",
+      "description": "황폐에서 파열이나 기염의 정수 비용을 없애는 발동 효과다. 관련 황폐 특성에 따라 살아있는 불꽃과 하늘빛 일격에서 생성된다. 증강의 분출용 정수 폭발 396187이나 보존의 효과와는 별도 ID다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44014,17 +44019,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 3,
-        "linkDensity": 0.056,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -44194,14 +44198,14 @@
       "icon": "ability_evoker_blisteringscales",
       "iconName": "ability_evoker_blisteringscales",
       "school": "",
-      "cooldown": "",
+      "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 끓어오르는 비늘 (Blistering Scales)",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "한 아군에게 자신의 방어도 20%에 해당하는 방어도를 더하고 폭발성 비늘 15개를 부여한다. 아군이 근접 공격을 받으면 비늘이 소모되어 주변에 화산 피해를 준다. 동시에 한 대상에게만 유지할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44214,15 +44218,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/흑요석비늘"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/재생의키틴질"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.022,
+        "synergyCount": 2,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -44248,12 +44254,12 @@
       "school": "",
       "cooldown": "24초",
       "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "아군",
-      "description": "# 신록의 품 (Verdant Embrace)",
+      "resourceCost": "기본 마나 10%",
+      "range": "25야드",
+      "description": "아군에게 날아가 치유하거나 자신을 직접 치유하는 공용 기술이다. 다른 아군을 선택하면 자신의 위치도 바뀌므로 치유량만 보고 누르지 않는다. 보존과 증강의 추가 특성 효과는 서로 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44266,16 +44272,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
-          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/꿈의숨결"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/흑요석비늘",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/반향"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.056,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -44300,13 +44308,13 @@
       "iconName": "ability_evoker_livingflame",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "없음",
+      "castTime": "2초",
+      "resourceCost": "기본 마나 12%",
       "range": "25야드",
-      "description": "# 살아있는 불꽃 (Living Flame)",
+      "description": "적에게 화염 피해를 주거나 아군을 치유하는 공용 시전 주문이다. 증강에서는 정수 폭발 생성 기회가 되고, 시간 감시자는 시간의 불꽃으로 최근 피해·치유에 따른 후속 효과를 얻는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44319,17 +44327,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/알렉스트라자의제자"
+        ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/화염흡수"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의불꽃"
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.033,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -44355,12 +44367,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "25미터",
-      "description": "# 하늘빛 일격 (Azure Strike)",
+      "resourceCost": "기본 마나 0.9%",
+      "range": "25야드",
+      "description": "기본 두 대상에게 비전냉기 피해를 주는 즉시 시전 생성기다. 증강에서는 정수 폭발 발동 기회가 있으며 메아리치는 강타를 선택하면 추가 피해와 재시전 기회가 생긴다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44372,14 +44384,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_azurestrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/메아리치는강타"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -44455,10 +44473,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 흑요석 비늘 (Obsidian Scales)",
+      "description": "기본 12초 동안 받는 피해를 30% 줄이는 개인 생존기다. 소생의 불길을 배웠다면 방지한 피해에 연결된 후속 치유가 발생한다. 기본 충전 수와 추가 특성으로 늘어난 충전을 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44470,14 +44488,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_dragonscales.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/미풍",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -44585,6 +44606,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\비전쇄도.md",
+        "lastUpdate": ""
+      }
+    },
+    "365585": {
+      "id": "365585",
+      "type": "atomic-skill",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Devastation",
+        "Augmentation"
+      ],
+      "name": "말소",
+      "koreanName": "말소",
+      "englishName": "Expunge",
+      "icon": "ability_evoker_fontofmagic_green",
+      "iconName": "ability_evoker_fontofmagic_green",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 10%",
+      "range": "25야드",
+      "description": "아군 한 명에게 걸린 모든 독 효과를 제거한다. 증강과 황폐에서 독 대응을 맡을 때 사용하는 해제이며, 모든 마법·저주·질병을 제거하는 만능 해제가 아니다. 피해 대응이 필요한 순간에는 평상시 공격 흐름보다 우선한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_fontofmagic_green.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_fontofmagic_green.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_fontofmagic_green.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_fontofmagic_green.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_fontofmagic_green.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/미풍",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Skills\\말소.md",
         "lastUpdate": ""
       }
     },
@@ -44791,6 +44864,61 @@
         "lastUpdate": ""
       }
     },
+    "369939": {
+      "id": "369939",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Devastation",
+        "Preservation",
+        "Augmentation"
+      ],
+      "name": "화염 도약",
+      "koreanName": "화염 도약",
+      "englishName": "Leaping Flames",
+      "icon": "ability_evoker_pupilofalexstraza",
+      "iconName": "ability_evoker_pupilofalexstraza",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "불의 숨결의 강화 단계 하나당 다음 살아있는 불꽃이 추가 대상 하나에게 적용되도록 한다. 강화 단계는 직접 피해와 지속 피해 분배뿐 아니라 후속 불꽃의 대상 수에도 영향을 준다. 추가 불꽃을 별도 시전 버튼으로 넣지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_pupilofalexstraza.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_pupilofalexstraza.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_pupilofalexstraza.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_pupilofalexstraza.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_pupilofalexstraza.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/알렉스트라자의제자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Talents\\화염도약.md",
+        "lastUpdate": ""
+      }
+    },
     "370062": {
       "id": "370062",
       "type": "talent",
@@ -44959,10 +45087,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전세역전 (Tip the Scales)",
+      "description": "다음 강화 주문을 최대 단계로 즉시 시전하게 하는 공용 기술이다. 증강은 불의 숨결의 즉시 방출이나 필요한 넓은 지각 변동에 사용할 수 있다. 시간 감시자에서는 시간의 폭발을 여는 중요한 버튼이기도 하다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44975,15 +45103,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의폭발"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -45064,11 +45196,11 @@
       "cooldown": "1분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "아군",
-      "description": "# 구출 (Rescue)",
+      "range": "30야드",
+      "description": "아군을 데리고 선택한 위치까지 비행하며 자신과 아군의 이동 방해 효과를 제거한다. 먼 기믹 이동이나 위험한 위치의 아군을 옮기는 공용 지원 주문이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45080,14 +45212,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_flywithme.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/시간의와류",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/흑요석비늘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -45506,7 +45642,7 @@
     },
     "372048": {
       "id": "372048",
-      "type": "class-talent",
+      "type": "atomic-skill",
       "class": "Evoker",
       "spec": "공용",
       "specs": [
@@ -45520,14 +45656,14 @@
       "icon": "ability_evoker_oppressingroar",
       "iconName": "ability_evoker_oppressingroar",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "2분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 탄압의 포효 (Oppressing Roar)",
-      "category": "class-talent",
+      "description": "전방 적들이 다음 10초 동안 받는 군중 제어의 지속시간을 50% 늘린다. 직접 차단하거나 기절시키는 주문이 아니라 이후 들어갈 제어를 보조하는 기술이다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45539,14 +45675,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_oppressingroar.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/진압",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -46750,11 +46889,11 @@
       "cooldown": "2분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "주변 아군",
-      "description": "# 미풍 (Zephyr)",
+      "range": "20야드",
+      "description": "자신과 가까운 아군 네 명에게 8초간 광역 공격 피해 20% 감소와 이동 속도 30% 증가를 제공한다. 모든 종류의 단일 대상 피해를 줄이는 일반 외부 생존기로 설명하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46766,14 +46905,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_hoverblack.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/흑요석비늘",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -46850,11 +46992,11 @@
       "cooldown": "2분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "주변 아군",
-      "description": "# 시간의 와류 (Time Spiral)",
+      "range": "40야드",
+      "description": "자신과 40미터 안 아군이 다음 10초 동안 주요 이동 능력을 재사용 대기 중에도 한 번 더 쓰게 한다. 모든 공격·치유 쿨다운을 초기화하는 시간 건너뛰기와 다른 공용 유틸이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46866,14 +47008,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_timespiral.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -47039,7 +47185,8 @@
       "class": "Evoker",
       "spec": "황폐",
       "specs": [
-        "Devastation"
+        "Devastation",
+        "Augmentation"
       ],
       "name": "정수의 조화",
       "koreanName": "정수의 조화",
@@ -47047,14 +47194,14 @@
       "icon": "ability_evoker_essenceburststacks",
       "iconName": "ability_evoker_essenceburststacks",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 정수의 조화 (Essence Attunement)",
+      "description": "정수 폭발을 두 번까지 중첩할 수 있게 하는 특성이다. 두 중첩이 쌓인 상태에서 새로운 발동이 발생하면 저장할 여유가 없으므로 소비 기회를 확인한다. 전문화마다 정수 폭발의 주문 ID와 무료로 사용할 수 있는 공격이 다르다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -47067,15 +47214,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.036,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -47247,14 +47396,14 @@
       "icon": "ability_evoker_innatemagic2",
       "iconName": "ability_evoker_innatemagic2",
       "school": "",
-      "cooldown": "정수 폭발 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비축한 힘 (Hoarded Power)",
+      "description": "정수 폭발을 사용할 때 20% 확률로 소모되지 않게 한다. 한 번의 무료 발동으로 분출을 여러 번 사용할 수 있지만 확정적인 반복 횟수를 보장하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -47268,18 +47417,17 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/가속전환"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.063,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -69576,12 +69724,12 @@
       "school": "",
       "cooldown": "30초",
       "castTime": "1.5초",
-      "resourceCost": "",
+      "resourceCost": "기본 마나 1%",
       "range": "",
-      "description": "# 칠흑의 힘 (Ebon Might)",
+      "description": "10초 동안 공격 담당 아군들에게 시전자의 주 능력치 일부를 제공하고 자신의 공격력을 20% 올린다. 현재는 예지 대상 두 명에게만 걸리는 버프가 아니다. 기본 전달량은 시전자 주 능력치의 8%이며 다른 공격 담당이 두 명을 넘으면 효과가 분산된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69593,18 +69741,85 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_sarkareth.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-마지막"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시시각각"
+        ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 0,
-        "linkDensity": 0.063,
+        "wikilinkCount": 7,
+        "synergyCount": 6,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Skills\\칠흑의힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "395153": {
+      "id": "395153",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "시간의 모래",
+      "koreanName": "시간의 모래",
+      "englishName": "Sands of Time",
+      "icon": "ability_evoker_sandsoftime",
+      "iconName": "ability_evoker_sandsoftime",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "분출은 칠흑의 힘을 1초, 강화 주문은 2초, 영겁의 숨결 또는 깊은 숨결은 5초 연장하는 효과다. 연장에 치명타가 발생하면 연장량이 50% 증가한다. 봄의 꿈을 배웠다면 에메랄드 꽃의 조건도 추가된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_sandsoftime.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_sandsoftime.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_sandsoftime.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_sandsoftime.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_sandsoftime.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-중간",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/봄의꿈"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 7,
+        "synergyCount": 7,
+        "linkDensity": 0.067,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\시간의모래.md",
         "lastUpdate": ""
       }
     },
@@ -69622,14 +69837,14 @@
       "icon": "ability_evoker_eruption",
       "iconName": "ability_evoker_eruption",
       "school": "",
-      "cooldown": "",
-      "castTime": "2초",
-      "resourceCost": "정수",
-      "range": "",
-      "description": "# 분출 (Eruption)",
+      "cooldown": "없음",
+      "castTime": "2.5초",
+      "resourceCost": "정수 3",
+      "range": "25야드",
+      "description": "정수를 소비하여 대상 주변에 화산 피해를 나누어 입힌다. 기본 소모는 정수 3이며 화산성을 배웠다면 2가 된다. 시간의 모래를 통해 현재 활성화된 칠흑의 힘을 기본 1초 연장하는 실제 시전이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69641,14 +69856,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_eruption.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/화산성",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/점화질주"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.049,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -69718,14 +69942,14 @@
       "icon": "ability_evoker_essenceburst",
       "iconName": "ability_evoker_essenceburst",
       "school": "",
-      "cooldown": "발동형",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정수 폭발 (Essence Burst)",
+      "description": "살아있는 불꽃과 하늘빛 일격에서 발동하여 다음 분출의 정수 비용을 없애는 증강 전용 특성이다. 기본 발동 확률은 각각 20%와 15%이며, 봄의 꿈을 선택했다면 에메랄드 꽃에도 적용된다. 직접 누르는 공격이 아니다.",
       "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69738,21 +69962,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
-          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/에메랄드꽃"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격"
         ],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시대착오",
           "08-직업별-Knowledge-Base/04-기원사/증강/Talents/비축한힘",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시대착오"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/점화질주",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/봄의꿈",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/정수의조화"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 6,
-        "linkDensity": 0.06,
+        "wikilinkCount": 8,
+        "synergyCount": 8,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -69775,13 +70001,13 @@
       "iconName": "ability_evoker_upheaval",
       "school": "",
       "cooldown": "40초",
-      "castTime": "강화",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 지각 변동 (Upheaval)",
+      "castTime": "강화 주문",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "적의 위치를 중심으로 화산 피해를 주고 공중에 띄운다. 강화 단계는 공격 반경을 3·6·9미터로 넓히며, 무조건 높은 단계를 쓴다고 같은 대상에게 주는 기본 피해가 증가하는 구조는 아니다. 시간의 모래로 칠흑의 힘을 기본 2초 연장한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69794,13 +70020,22 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/땅의구심점",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/반향"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "wikilinkCount": 7,
+        "synergyCount": 6,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -70767,14 +71002,14 @@
       "icon": "ability_evoker_draconicattunements",
       "iconName": "ability_evoker_draconicattunements",
       "school": "",
-      "cooldown": "조율 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "파티/공격대",
-      "description": "# 용족의 조율 (Draconic Attunements)",
+      "description": "검은 조율과 청동 조율을 사용할 수 있게 하는 선택 특성이다. 검은 조율은 자신과 가까운 아군 네 명의 최대 생명력을 2%, 청동 조율은 이동 속도를 10% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70786,14 +71021,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_draconicattunements.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/검은조율",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -70815,14 +71053,14 @@
       "icon": "ability_evoker_blackattunement",
       "iconName": "ability_evoker_blackattunement",
       "school": "",
-      "cooldown": "없음",
-      "castTime": "지속 효과",
+      "cooldown": "3초",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 검은 조율 (Black Attunement)",
+      "description": "검은용군단의 조율을 선택하여 자신과 가까운 아군 네 명의 최대 생명력을 2% 증가시킨다. 용족의 조율로 얻는 지원 상태이며 칠흑의 힘처럼 공격 주문으로 시간을 연장하는 자원 소비기는 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70835,16 +71073,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/끓어오르는비늘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/용족의조율"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.037,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -71016,12 +71255,12 @@
       "school": "",
       "cooldown": "2분",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 영겁의 숨결 (Breath of Eons)",
+      "resourceCost": "없음",
+      "range": "15~50야드",
+      "description": "이동 경로의 적에게 시간의 상처를 남기는 비행 주문이다. 상처는 칠흑의 힘을 받은 아군의 피해 일부를 모아 후속 비전 피해로 돌려준다. 시간의 모래와 복제 선택 여부에 따라 지원 지속시간과 복제체 운용도 연결된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71033,14 +71272,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_breathofeons.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/위험천만한운명",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간수호물"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 0,
-        "linkDensity": 0.056,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -71595,14 +71843,14 @@
       "icon": "ability_evoker_timeskip",
       "iconName": "ability_evoker_timeskip",
       "school": "",
-      "cooldown": "",
-      "castTime": "정신 집중",
-      "resourceCost": "",
+      "cooldown": "3분",
+      "castTime": "정신 집중 2초",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 시간 건너뛰기 (Time Skip)",
+      "description": "2초간 정신 집중하여 재사용 대기시간 회복 속도를 1000% 높인다. 미래와 현재를 선택하면 집중 시간이 1초 늘어난다. 즉시 모든 기술을 초기화하는 주문도, 평상시 계속 유지하는 패시브도 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71615,17 +71863,22 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/미래와현재",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/엮인실타래"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의폭발"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.029,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -71921,6 +72174,58 @@
         "lastUpdate": ""
       }
     },
+    "406380": {
+      "id": "406380",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "특화: 시간여행단",
+      "koreanName": "특화: 시간여행단",
+      "englishName": "Mastery: Timewalker",
+      "icon": "ability_evoker_masterytimewalker",
+      "iconName": "ability_evoker_masterytimewalker",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "강화 주문을 사용하면 공격 담당을 우선하여 아군 한 명에게 흐르는 모래를 부여한다. 흐르는 모래는 유연성을 높이며 이 효과와 영겁의 숨결 등 유용한 오라의 지속시간에도 특화가 영향을 준다. 표시 수치는 장비의 특화 수치에 따라 달라진다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_masterytimewalker.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_masterytimewalker.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_masterytimewalker.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\특화-시간여행단.md",
+        "lastUpdate": ""
+      }
+    },
     "406545": {
       "id": "406545",
       "type": "talent",
@@ -72017,6 +72322,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\기사단의공세.md",
+        "lastUpdate": ""
+      }
+    },
+    "406732": {
+      "id": "406732",
+      "type": "atomic-skill",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "공간의 역설",
+      "koreanName": "공간의 역설",
+      "englishName": "Spatial Paradox",
+      "icon": "ability_evoker_stretchtime",
+      "iconName": "ability_evoker_stretchtime",
+      "school": "",
+      "cooldown": "3분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "60야드",
+      "description": "자신과 아군 치유 담당에게 10초 동안 이동하면서 주문을 시전할 수 있는 상태를 주고 대부분의 주문 사거리를 100% 늘린다. 치유 담당을 지정하지 않으면 60야드 안의 가장 가까운 치유 담당이 선택된다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_stretchtime.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_stretchtime.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_stretchtime.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_stretchtime.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_stretchtime.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/미풍"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Skills\\공간의역설.md",
         "lastUpdate": ""
       }
     },
@@ -72133,14 +72490,14 @@
       "icon": "spell_fire_volcano",
       "iconName": "spell_fire_volcano",
       "school": "",
-      "cooldown": "분출 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 화산성 (Volcanism)",
+      "description": "분출의 정수 비용을 1 낮춘다. 기본 정수 3을 이 특성 선택 상태에서는 2로 사용한다. 정수 폭발에 의한 무료 시전과는 별개의 상시 비용 조정이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72154,21 +72511,69 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.06,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\화산성.md",
+        "lastUpdate": ""
+      }
+    },
+    "406907": {
+      "id": "406907",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "재생의 키틴질",
+      "koreanName": "재생의 키틴질",
+      "englishName": "Regenerative Chitin",
+      "icon": "inv12_ability_evoker_blisteringscalesinfinite",
+      "iconName": "inv12_ability_evoker_blisteringscalesinfinite",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "끓어오르는 비늘의 피해를 20% 증가시키며, 피해를 줄 때 비늘 중첩이 소모되지 않게 한다. 비늘의 기본 15중첩과 이 특성의 비소모 상태를 구분해야 한다. 비늘을 유지할 탱커가 바뀌면 대상은 다시 확인한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_evoker_blisteringscalesinfinite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_evoker_blisteringscalesinfinite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_evoker_blisteringscalesinfinite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_evoker_blisteringscalesinfinite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_evoker_blisteringscalesinfinite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/끓어오르는비늘"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\재생의키틴질.md",
         "lastUpdate": ""
       }
     },
@@ -72364,6 +72769,113 @@
         "lastUpdate": ""
       }
     },
+    "407814": {
+      "id": "407814",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Devastation",
+        "Preservation",
+        "Augmentation"
+      ],
+      "name": "알렉스트라자의 제자",
+      "koreanName": "알렉스트라자의 제자",
+      "englishName": "Pupil of Alexstrasza",
+      "icon": "ability_evoker_pupilofalexstraza",
+      "iconName": "ability_evoker_pupilofalexstraza",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "적에게 사용하는 살아있는 불꽃이 추가 대상 하나에게 적중하고 그 대상에도 전체 피해를 입히게 하는 직업 특성이다. 화염 도약으로 생기는 추가 불꽃과 별개의 선택 효과이며 모든 빌드가 항상 여러 대상에 적중하는 것으로 계산하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_pupilofalexstraza.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_pupilofalexstraza.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_pupilofalexstraza.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_pupilofalexstraza.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_pupilofalexstraza.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Talents\\알렉스트라자의제자.md",
+        "lastUpdate": ""
+      }
+    },
+    "407866": {
+      "id": "407866",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "미래 계획",
+      "koreanName": "미래 계획",
+      "englishName": "Plot the Future",
+      "icon": "ability_evoker_plotthefuture",
+      "iconName": "ability_evoker_plotthefuture",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "영겁의 숨결 또는 깊은 숨결을 사용하고 착지하면 15초 동안 위상의 격노 효과를 얻으며 기력 소진을 유발하지 않는다. 착지 후 자신의 가속 강화로 이해하고, 이 특성 하나가 파티 전체에 별도의 위상의 격노를 시전하는 것으로 계산하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_plotthefuture.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_plotthefuture.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_plotthefuture.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_plotthefuture.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_plotthefuture.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\미래계획.md",
+        "lastUpdate": ""
+      }
+    },
     "407869": {
       "id": "407869",
       "type": "talent",
@@ -72378,14 +72890,14 @@
       "icon": "ability_evoker_essenceburst6",
       "iconName": "ability_evoker_essenceburst6",
       "school": "",
-      "cooldown": "예지 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 시대착오 (Anachronism)",
+      "description": "예지를 사용할 때 35% 확률로 정수 폭발을 얻는 특성이다. 예지는 아군 버프를 관리하는 동시에 다음 무료 분출을 준비하는 자원 생성 기회가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72400,16 +72912,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 4,
-        "linkDensity": 0.067,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -72427,18 +72938,18 @@
       ],
       "name": "땅의 구심점",
       "koreanName": "땅의 구심점",
-      "englishName": "Grounded Center",
+      "englishName": "Tectonic Locus",
       "icon": "6bf_explosive_shard",
       "iconName": "6bf_explosive_shard",
       "school": "",
-      "cooldown": "지각 변동 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상 지역",
-      "description": "# 땅의 구심점 (Grounded Center)",
+      "description": "지각 변동의 주 대상 피해를 50% 늘리고 더 높이 띄우는 특성이다. 강화 단계로 반경을 넓히는 것과 주 대상 보상은 별개의 효과이므로, 위험한 적을 주 대상으로 잡는 판단에 영향을 준다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72451,16 +72962,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/불굴의영역"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.025,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -72482,14 +72994,14 @@
       "icon": "ability_priest_voidshift",
       "iconName": "ability_priest_voidshift",
       "school": "",
-      "cooldown": "강화 주문 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 가속 전환 (Momentum Shift)",
+      "description": "정수 폭발을 소비하면 6초간 지능이 5% 오르며 두 번까지 중첩된다. 무료 분출이 주는 효과에는 자원 절약뿐 아니라 이후 지원 주문에 영향을 주는 짧은 지능 강화도 포함된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72501,14 +73013,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidshift.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/비축한힘"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -72518,7 +73036,7 @@
     },
     "408233": {
       "id": "408233",
-      "type": "class-talent",
+      "type": "atomic-skill",
       "class": "Evoker",
       "spec": "공용",
       "specs": [
@@ -72532,14 +73050,14 @@
       "icon": "ability_evoker_bestowweyrnstone",
       "iconName": "ability_evoker_bestowweyrnstone",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 웨이른석 부여 (Bestow Weyrnstone)",
-      "category": "class-talent",
+      "cooldown": "1분",
+      "castTime": "3초",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "시전자와 지정 아군이 하나씩 보유하는 웨이른석 한 쌍을 만든다. 보유자가 돌을 활성화하면 다른 돌의 위치로 이동하며 두 돌은 100미터 안에 있어야 한다. 생성 주문과 돌을 사용하는 순간이 다르다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72551,14 +73069,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_bestowweyrnstone.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/시간의와류"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -72580,14 +73101,14 @@
       "icon": "spell_fire_immolation",
       "iconName": "spell_fire_immolation",
       "school": "",
-      "cooldown": "강화 주문 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 점화 질주 (Ignition Rush)",
+      "description": "정수 폭발이 적용되는 분출의 시전 시간을 40% 줄이고 피해를 20% 늘린다. 무료 시전은 단순히 정수를 아끼는 것보다 짧은 강화 구간에 공격을 넣기 쉬워지는 효과가 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72600,16 +73121,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/가속전환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -72681,14 +73204,14 @@
       "icon": "ability_evoker_motesofpossibility",
       "iconName": "ability_evoker_motesofpossibility",
       "school": "",
-      "cooldown": "지원 주문 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 가능성의 티끌 (Motes of Possibility)",
+      "description": "분출 시전이 25%의 확률로 전환된 정수의 티끌을 만든다. 아군이 티끌을 통과하면 무작위 강화 효과를 얻는다. 티끌 생성은 조건부 발동이므로 분출 한 번마다 반드시 추가 버프가 생기는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72701,15 +73224,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/군주",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.037,
+        "synergyCount": 3,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -72733,12 +73259,12 @@
       "school": "",
       "cooldown": "12초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 예지 (Prescience)",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "18초간 아군의 치명타 및 극대화율을 3% 올리는 2충전 지원 주문이다. 아군을 지정하지 않으면 가까운 공격 담당 중 주요 쿨다운이 활성화된 대상을 우선한다. 운명의 거울을 선택하면 대상의 공격·치유에 추가 복제 기회가 생긴다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72750,14 +73276,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_prescience.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시대착오"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/노즈도르무의숙련병",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/황금빛기회",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시시각각"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.046,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -72779,14 +73314,14 @@
       "icon": "ability_evoker_bronze_01",
       "iconName": "ability_evoker_bronze_01",
       "school": "",
-      "cooldown": "청동 주문 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 시간 수호물 (Chrono Ward)",
+      "description": "아군이 시간의 상처로 피해를 주면 그 피해량에 해당하는 보호막을 제공한다. 툴팁의 흡수 상한은 최대 생명력의 30%다. 영겁의 숨결의 공격 지원과 연결되는 방어 보상이지 상시 피해 감소가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72798,14 +73333,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_bronze_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -72827,14 +73365,14 @@
       "icon": "spell_shadow_lastingafflictions",
       "iconName": "spell_shadow_lastingafflictions",
       "school": "",
-      "cooldown": "예지 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 위험천만한 운명 (Perilous Fate)",
+      "description": "영겁의 숨결이 적에게 10초간 이동 속도 70% 감소와 공격 속도 50% 감소를 부여하는 선택 특성이다. 피해를 저장하는 시간의 상처나 예지의 치명타 지원 효과와는 별개의 제어 보상이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72847,16 +73385,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간수호물"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.039,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -72878,14 +73417,14 @@
       "icon": "ability_evoker_overlord",
       "iconName": "ability_evoker_overlord",
       "school": "",
-      "cooldown": "영겁의 숨결 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상",
-      "description": "# 군주 (Overlord)",
+      "description": "영겁의 숨결 또는 깊은 숨결이 처음 맞힌 적 세 명에게 분출을 자동으로 사용한다. 이 분출은 가능성의 티끌을 확정 생성한다. 수동 분출과 별개로 발생하는 후속 공격이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72899,8 +73438,8 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Talents/가능성의티끌"
@@ -72910,7 +73449,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.044,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -72932,14 +73471,14 @@
       "icon": "ability_evoker_infernosblessing",
       "iconName": "ability_evoker_infernosblessing",
       "school": "",
-      "cooldown": "불의 숨결 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신/아군",
-      "description": "# 불지옥의 축복 (Inferno's Blessing)",
+      "description": "불의 숨결을 사용하면 자신과 주변 아군에게 8초간 추가 화염 피해 발동 기회를 제공한다. 공격·주문에 반응하는 지원 효과이며 직접 누르는 별도 공격이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72952,22 +73491,177 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/강대한불지옥"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/강대한불지옥",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.034,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\불지옥의축복.md",
+        "lastUpdate": ""
+      }
+    },
+    "410784": {
+      "id": "410784",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "메아리치는 강타",
+      "koreanName": "메아리치는 강타",
+      "englishName": "Echoing Strike",
+      "icon": "ability_evoker_echoingstrike",
+      "iconName": "ability_evoker_echoingstrike",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "하늘빛 일격의 피해를 15% 증가시키고, 적중한 대상 하나당 10% 확률로 한 번 더 시전되게 한다. 추가 시전은 자동 효과다. 적이 여럿이라는 이유만으로 모든 증강 빌드의 필러를 같은 주문으로 고정하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_echoingstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_echoingstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_echoingstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_echoingstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_echoingstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\메아리치는강타.md",
+        "lastUpdate": ""
+      }
+    },
+    "412713": {
+      "id": "412713",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "엮인 실타래",
+      "koreanName": "엮인 실타래",
+      "englishName": "Interwoven Threads",
+      "icon": "inv_enchant_optionalreagent_01",
+      "iconName": "inv_enchant_optionalreagent_01",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "주문의 재사용 대기시간을 10% 줄이는 선택 특성이다. 시간 건너뛰기와 같은 선택 지점이므로 두 효과를 동시에 기본 빌드에 넣지 않는다. 실제 재사용 주기는 다른 특성과 세트 보너스도 적용된 상태로 확인한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_optionalreagent_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_enchant_optionalreagent_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_enchant_optionalreagent_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_enchant_optionalreagent_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_optionalreagent_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\엮인실타래.md",
+        "lastUpdate": ""
+      }
+    },
+    "412723": {
+      "id": "412723",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "미래와 현재",
+      "koreanName": "미래와 현재",
+      "englishName": "Tomorrow, Today",
+      "icon": "ability_evoker_rewind2",
+      "iconName": "ability_evoker_rewind2",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시간 건너뛰기의 정신 집중 시간을 1초 늘린다. 기본 정신 집중 2초와 이 특성 적용 후의 3초를 구분해야 하며, 원래 사용할 수 있던 주문을 전부 미리 소비한 다음 회복할 시간을 확보하는 선택이다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_rewind2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_rewind2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_rewind2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_rewind2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_rewind2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/엮인실타래"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\미래와현재.md",
         "lastUpdate": ""
       }
     },
@@ -72985,14 +73679,14 @@
       "icon": "spell_shaman_stormearthfire",
       "iconName": "spell_shaman_stormearthfire",
       "school": "",
-      "cooldown": "지각 변동 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상 지역",
-      "description": "# 불굴의 영역 (Unyielding Domain)",
+      "description": "지각 변동이 시전 방해 효과를 받지 않게 하고 해당 주문의 치명타 및 극대화율을 10% 높인다. 모든 주문의 차단 면역이나 모든 종류의 군중 제어 면역을 부여하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73007,13 +73701,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/땅의구심점"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -73035,14 +73731,14 @@
       "icon": "trade_archaeology_highbornesoulmirror",
       "iconName": "trade_archaeology_highbornesoulmirror",
       "school": "",
-      "cooldown": "예지 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "아군",
-      "description": "# 운명의 거울 (Fate Mirror)",
+      "description": "예지가 걸린 아군의 능력이 일정 확률로 피해나 치유의 15%를 메아리치게 한다. 치명타 증가와 별개의 지원 효과다. 시즌 2 4세트는 지각 변동 뒤 제한된 시간 동안 메아리치는 피해 비율을 강화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73055,21 +73751,75 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/위험천만한운명"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시즌2-4세트"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.037,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\운명의거울.md",
+        "lastUpdate": ""
+      }
+    },
+    "413984": {
+      "id": "413984",
+      "type": "buff",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "흐르는 모래",
+      "koreanName": "흐르는 모래",
+      "englishName": "Shifting Sands",
+      "icon": "ability_evoker_masterytimewalker",
+      "iconName": "ability_evoker_masterytimewalker",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "강화 주문으로 공격 담당을 우선한 아군 한 명에게 부여되는 특화의 유연성 강화 효과다. 기본 10초를 바탕으로 특화에 따라 지속시간과 수치가 달라진다. 실제 시전 버튼이 아니라 불의 숨결이나 지각 변동 뒤에 생기는 버프다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_masterytimewalker.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_masterytimewalker.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_masterytimewalker.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Buffs\\흐르는모래.md",
         "lastUpdate": ""
       }
     },
@@ -73279,14 +74029,14 @@
       "icon": "ability_evoker_masterylifebinder",
       "iconName": "ability_evoker_masterylifebinder",
       "school": "",
-      "cooldown": "에메랄드 꽃 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
-      "resourceCost": "정수 3",
+      "resourceCost": "없음",
       "range": "아군",
-      "description": "# 봄의 꿈 (Dream of Spring)",
+      "description": "에메랄드 꽃의 재사용 대기시간을 없애고 치유량을 35% 늘리는 선택 특성이다. 이때 에메랄드 꽃은 정수 3을 소비하고 활성화된 칠흑의 힘을 1초 연장한다. 분출을 치유 주문으로 무조건 대체하는 기본 규칙은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73299,17 +74049,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/에메랄드꽃",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.045,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -77764,11 +78516,11 @@
       "icon": "inv_ability_chronowardenevoker_chronoflame",
       "iconName": "inv_ability_chronowardenevoker_chronoflame",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 시간의 불꽃",
+      "description": "살아있는 불꽃에 청동 마법의 추가 효과를 붙이는 시간 감시자 특성이다. 최근 5초 동안 대상에게 준 피해·치유를 바탕으로 증강은 25%, 보존은 15%를 추가 반복하며 주문력 기반 상한이 있다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -77783,18 +78535,82 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_chronowardenevoker_chronoflame.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/시간의불꽃"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/알렉스트라자의제자"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/잔상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\시간의불꽃.md",
+        "lastUpdate": ""
+      }
+    },
+    "431443": {
+      "id": "431443",
+      "type": "atomic-skill",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Preservation",
+        "Augmentation"
+      ],
+      "name": "시간의 불꽃",
+      "koreanName": "시간의 불꽃",
+      "englishName": "Chrono Flames",
+      "icon": "inv_ability_chronowardenevoker_chronoflame",
+      "iconName": "inv_ability_chronowardenevoker_chronoflame",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "2초 (기본)",
+      "resourceCost": "기본 마나 12%",
+      "range": "25야드",
+      "description": "시간 감시자가 살아있는 불꽃을 강화하여 사용하는 실제 시전 주문이다. 화염 피해 또는 아군 치유 뒤 최근 5초의 피해·치유 일부를 청동 마법으로 복제한다. 증강의 표시 복제율은 25%, 보존은 15%이며 주문력과 유연성에 따른 상한이 있다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_chronowardenevoker_chronoflame.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_chronowardenevoker_chronoflame.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_chronowardenevoker_chronoflame.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_chronowardenevoker_chronoflame.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_chronowardenevoker_chronoflame.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의불꽃"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Skills\\시간의불꽃.md",
         "lastUpdate": ""
       }
     },
@@ -78156,11 +78972,11 @@
       "icon": "ability_evoker_giftoftheaspects",
       "iconName": "ability_evoker_giftoftheaspects",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 반향",
+      "description": "증강의 지각 변동에 8초 동안 원래 피해의 50%에 해당하는 추가 지속 피해를 붙인다. 보존에서는 신록의 품에 8초간 40% 추가 치유를 붙인다. 전문화에 따라 피해와 치유 대상 주문이 다르다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78175,15 +78991,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_giftoftheaspects.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/수위"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\반향.md",
@@ -78205,11 +79026,11 @@
       "icon": "inv_misc_pocketwatch_01",
       "iconName": "inv_misc_pocketwatch_01",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 수위",
+      "description": "증강은 지각 변동으로 부여한 지속 피해 하나당 가속 3%를 얻으며 최대 9%까지 적용된다. 보존은 신록의 품으로 부여한 지속 치유 수를 기준으로 같은 가속 보상을 받는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78224,15 +79045,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_pocketwatch_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/반향"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\수위.md",
@@ -78303,11 +79129,11 @@
       "icon": "ability_evoker_essenceburst5",
       "iconName": "ability_evoker_essenceburst5",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 시간의 폭발",
+      "description": "전세역전을 누르면 가속·이동 속도·재사용 대기시간 회복 속도가 30% 증가하고 30초에 걸쳐 점차 줄어든다. 시간 감시자는 이를 강화 주문과 분출, 지원 버프를 더 자주 굴리는 구간으로 활용한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78322,15 +79148,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_essenceburst5.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.044,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\시간의폭발.md",
@@ -78348,15 +79179,15 @@
       ],
       "name": "노즈도르무의 숙련병",
       "koreanName": "노즈도르무의 숙련병",
-      "englishName": "Nozdormu's Adept",
+      "englishName": "Nozdormu Adept",
       "icon": "ability_evoker_aspectsfavorbronze",
       "iconName": "ability_evoker_aspectsfavorbronze",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 노즈도르무의 숙련병",
+      "description": "시간 감시자의 전문화별 효과를 제공한다. 증강은 예지의 재사용 대기시간을 2초 줄이고 치명타 증가량을 1% 더한다. 보존은 시간 변칙의 마나 비용을 15%, 쿨다운을 4초 줄이는 다른 효과를 받는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78371,15 +79202,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_aspectsfavorbronze.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/황금빛기회"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\노즈도르무의숙련병.md",
@@ -78435,6 +79272,60 @@
         "lastUpdate": ""
       }
     },
+    "431874": {
+      "id": "431874",
+      "type": "hero-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Augmentation",
+        "Preservation"
+      ],
+      "name": "시시각각",
+      "koreanName": "시시각각",
+      "englishName": "Double-time",
+      "icon": "spell_holy_borrowedtime",
+      "iconName": "spell_holy_borrowedtime",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "증강에서는 칠흑의 힘과 예지가 자신의 치명타 확률에 따라 능력치를 추가로 50% 높일 수 있다. 칠흑의 힘에 붙는 추가 효과의 기본 지속시간은 15초이며 특화의 영향을 받는다. 보존에서는 꿈의 숨결과 불의 숨결의 치명타가 해당 지속시간을 늘리는 별도 효과다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_borrowedtime.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_borrowedtime.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_borrowedtime.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\시시각각.md",
+        "lastUpdate": ""
+      }
+    },
     "431875": {
       "id": "431875",
       "type": "hero-talent",
@@ -78450,11 +79341,11 @@
       "icon": "ability_evoker_livingflame",
       "iconName": "ability_evoker_livingflame",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 잔상",
+      "description": "강화 주문을 사용하면 대상에게 최대 세 개의 시간의 불꽃을 자동 발사한다. 시간 감시자의 후속 효과이며 별도 공격 버튼을 추가하는 특성이 아니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78469,15 +79360,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_livingflame.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\잔상.md",
@@ -78499,11 +79396,11 @@
       "icon": "achievement_faction_goldenlotus",
       "iconName": "achievement_faction_goldenlotus",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 황금빛 기회",
+      "description": "증강에서는 예지 지속시간을 15% 늘린다. 보존에서는 메아리 효과를 10% 높인다. 같은 영웅 노드지만 서로 다른 전문화 주문과 연결되므로 수치를 섞지 않는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -78518,15 +79415,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_faction_goldenlotus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/노즈도르무의숙련병"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\황금빛기회.md",
@@ -79733,11 +80636,11 @@
       "icon": "ability_evoker_deepbreath",
       "iconName": "ability_evoker_deepbreath",
       "school": "",
-      "cooldown": "",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 기동성 (Maneuverability)",
+      "description": "깊은 숨결의 비행 방향을 조정하게 하고 적중 대상에게 12초간 화산 지속 피해를 남긴다. 황폐와 증강이 공유하는 비늘사령관 특성으로, 조종할 수 있다는 이유만으로 비행을 길게 유지할 필요는 없다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -79758,13 +80661,14 @@
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/방어구녹이기"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/방어구녹이기",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/편대통솔"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.029,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -80310,11 +81214,11 @@
       "icon": "inv_ability_scalecommanderevoker_bombardments",
       "iconName": "inv_ability_scalecommanderevoker_bombardments",
       "school": "",
-      "cooldown": "",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 폭격 (Bombardments)",
+      "description": "대규모 분출 또는 대규모 파열이 주 대상에게 6초간 폭격 징표를 남긴다. 자신이나 아군이 징표 대상을 공격하면 확률적으로 주변 적에게 피해를 나누는 폭격이 발생한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -80329,18 +81233,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_scalecommanderevoker_bombardments.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/대규모파열",
           "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자",
           "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/방어구녹이기"
         ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
+        "synergyCount": 1,
         "linkDensity": 0.045,
         "hasWikilinks": true
       },
@@ -81316,14 +82221,14 @@
       "icon": "ability_evoker_eruption",
       "iconName": "ability_evoker_eruption",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 대규모 분출 (Mass Eruption)",
+      "description": "강화 주문 뒤에 사용하는 분출을 최대 세 대상에 적용하는 비늘사령관 특성이다. 대상이 세 명보다 적으면 부족한 대상 하나당 분출 피해가 10% 증가한다. 별도 시전 버튼이 아니라 다음 분출의 작동 방식이 달라진다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81335,14 +82240,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_eruption.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/날개지도자",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/폭격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.049,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -83195,14 +84107,14 @@
       "icon": "inv_10_gearupgrade_drakesshadowflameenhancedcrest",
       "iconName": "inv_10_gearupgrade_drakesshadowflameenhancedcrest",
       "school": "",
-      "cooldown": "",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 방어구 녹이기 (Melt Armor)",
+      "description": "깊은 숨결에 적중한 적이 12초간 폭격과 정수 능력으로 받는 피해를 20% 증가시킨다. 비늘사령관의 자기 공격을 연결하는 대상 약화 효과이며 모든 파티 피해를 20% 높이는 공대 버프가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83216,19 +84128,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
           "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/폭격"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/폭격",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/기동성"
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 4,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -83251,11 +84162,11 @@
       "icon": "ability_racial_soar",
       "iconName": "ability_racial_soar",
       "school": "",
-      "cooldown": "",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 날개지도자 (Wingleader)",
+      "description": "12.1 비늘사령관의 쿨다운 감소는 대규모 주문의 적중 대상 수를 기준으로 한다. 증강은 대규모 분출이 맞힌 대상 하나당 영겁의 숨결을 1.5초, 황폐는 대규모 파열이 맞힌 대상 하나당 깊은 숨결을 1초 당긴다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -83271,17 +84182,20 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Hero-Talents/대규모파열"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/폭격"
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.017,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -84418,14 +85332,14 @@
       "icon": "ability_evoker_blackattunementalt",
       "iconName": "ability_evoker_blackattunementalt",
       "school": "",
-      "cooldown": "",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 검은용군단의 무위 (Might of the Black Dragonflight)",
+      "description": "황폐와 증강의 검은색 주문 피해를 20% 높이는 비늘사령관 특성이다. 파티원에게 제공하는 최대 생명력이나 칠흑의 힘의 주 능력치 수치를 직접 20% 올리는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84438,21 +85352,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/폭격",
-          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/방어구녹이기",
           "08-직업별-Knowledge-Base/04-기원사/증강/Hero-Talents/대규모분출"
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.041,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -98770,6 +99681,60 @@
         "lastUpdate": ""
       }
     },
+    "459537": {
+      "id": "459537",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "임박한 파괴",
+      "koreanName": "임박한 파괴",
+      "englishName": "Imminent Destruction",
+      "icon": "spell_burningbladeshaman_blazing_radiance",
+      "iconName": "spell_burningbladeshaman_blazing_radiance",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "영겁의 숨결 또는 깊은 숨결을 사용한 뒤 다음 여섯 번의 분출 정수 비용을 각각 1 줄인다. 증강 전용 소비 조건이며 황폐에서 같은 이름을 사용하는 효과와 다르다. 무료 정수 폭발과 일반 정수 비용 감소도 구분한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_burningbladeshaman_blazing_radiance.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_burningbladeshaman_blazing_radiance.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_burningbladeshaman_blazing_radiance.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_burningbladeshaman_blazing_radiance.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_burningbladeshaman_blazing_radiance.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/화산성"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\임박한파괴.md",
+        "lastUpdate": ""
+      }
+    },
     "459550": {
       "id": "459550",
       "type": "talent",
@@ -99225,6 +100190,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\영구결빙의창.md",
+        "lastUpdate": ""
+      }
+    },
+    "460688": {
+      "id": "460688",
+      "type": "buff",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "시시각각",
+      "koreanName": "시시각각",
+      "englishName": "Double-time",
+      "icon": "spell_holy_borrowedtime",
+      "iconName": "spell_holy_borrowedtime",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시간 감시자의 칠흑의 힘이 추가 능력치를 주는 데 성공했을 때 추적하는 시시각각 효과다. 추가 증가량은 칠흑의 힘 능력치의 50%이며 기본 지속시간은 15초다. 12.1에서는 특화로 시간이 조정되고 재적용 시 기존 효과가 연장된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_borrowedtime.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_borrowedtime.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_borrowedtime.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시시각각"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Buffs\\시시각각.md",
         "lastUpdate": ""
       }
     },
@@ -115312,6 +116331,64 @@
         "lastUpdate": ""
       }
     },
+    "1259171": {
+      "id": "1259171",
+      "type": "buff",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "복제",
+      "koreanName": "복제",
+      "englishName": "Duplicate",
+      "aliases": [
+        "복제 활성 효과"
+      ],
+      "icon": "inv12_apextalent_evoker_duplicate",
+      "iconName": "inv12_apextalent_evoker_duplicate",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "영겁의 숨결로 소환한 복제가 활동하는 동안의 효과다. 정점 마지막 노드를 배운 경우 칠흑의 힘의 아군 효과가 75%, 지각 변동과 분출 피해가 25% 강화된다. 기본 소환은 20초이며 중간 노드와 실제 연장 여부에 따라 달라진다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_evoker_duplicate.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_evoker_duplicate.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_evoker_duplicate.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_evoker_duplicate.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_evoker_duplicate.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-중간",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Buffs\\복제.md",
+        "lastUpdate": ""
+      }
+    },
     "1259173": {
       "id": "1259173",
       "type": "talent",
@@ -115326,14 +116403,14 @@
       "icon": "inv12_apextalent_evoker_duplicate",
       "iconName": "inv12_apextalent_evoker_duplicate",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 복제 (Duplicate)",
+      "description": "영겁의 숨결로 미래의 자신을 불러내 20초 동안 싸우게 하는 정점 첫 노드다. 복제체는 분출·불의 숨결·지각 변동을 사용한다. 시전자의 다음 버튼을 그대로 따라 누르는 단순 복사 매크로가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115345,18 +116422,142 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_evoker_duplicate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-중간",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-마지막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\복제.md",
+        "lastUpdate": ""
+      }
+    },
+    "1259174": {
+      "id": "1259174",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "복제",
+      "koreanName": "복제",
+      "englishName": "Duplicate",
+      "aliases": [
+        "복제 중간 노드"
+      ],
+      "icon": "ability_evoker_masterytimewalker",
+      "iconName": "ability_evoker_masterytimewalker",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "칠흑의 힘 지속시간을 늘리는 효과가 그 연장량의 50%만큼 복제의 지속시간도 늘린다. 이는 조회한 노드의 한 단계 표시값이다. 실제 투자 단계에 따른 값은 특성 화면에서 구분하며, 복제의 기본 소환 시간 20초와 같지 않다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_masterytimewalker.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_masterytimewalker.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_masterytimewalker.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_masterytimewalker.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-마지막",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\복제-중간.md",
+        "lastUpdate": ""
+      }
+    },
+    "1259175": {
+      "id": "1259175",
+      "type": "spec-talent",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "복제",
+      "koreanName": "복제",
+      "englishName": "Duplicate",
+      "aliases": [
+        "복제 마지막 노드"
+      ],
+      "icon": "ability_evoker_ouroboros",
+      "iconName": "ability_evoker_ouroboros",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "복제가 활성화된 동안 아군에게 제공하는 칠흑의 힘의 효과를 75% 증가시키고 자신의 지각 변동과 분출 피해를 25% 증가시킨다. 이는 별도로 누르는 공격이 아니라 복제가 있는 동안 작동하는 정점 특성의 강화다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_ouroboros.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_ouroboros.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_ouroboros.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_ouroboros.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_ouroboros.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\복제-마지막.md",
         "lastUpdate": ""
       }
     },
@@ -116523,6 +117724,59 @@
         "lastUpdate": ""
       }
     },
+    "1260484": {
+      "id": "1260484",
+      "type": "hero-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Preservation",
+        "Augmentation"
+      ],
+      "name": "시간은혜",
+      "koreanName": "시간은혜",
+      "englishName": "Chronoboon",
+      "icon": "ability_evoker_tipthescales",
+      "iconName": "ability_evoker_tipthescales",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "전세역전의 재사용 대기시간을 30초 줄이는 시간 감시자 특성이다. 전세역전의 기본 2분과 실제 선택 특성이 적용된 시간을 구분한다. 재사용을 당겨 시간의 폭발을 더 자주 활용할 수 있지만 강화 주문의 준비 상태는 따로 확인해야 한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_tipthescales.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_tipthescales.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_tipthescales.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_tipthescales.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_tipthescales.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/시간의폭발"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\시간은혜.md",
+        "lastUpdate": ""
+      }
+    },
     "1260511": {
       "id": "1260511",
       "type": "talent",
@@ -116767,6 +118021,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Hero-Talents\\화염계.md",
+        "lastUpdate": ""
+      }
+    },
+    "1260745": {
+      "id": "1260745",
+      "type": "hero-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Devastation",
+        "Augmentation"
+      ],
+      "name": "편대 통솔",
+      "koreanName": "편대 통솔",
+      "englishName": "Command Squadron",
+      "icon": "ability_dragonriding_dynamicflight01",
+      "iconName": "ability_dragonriding_dynamicflight01",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "깊은 숨결 또는 영겁의 숨결을 사용하는 동안 지원 편대가 함께 비행하며 최대 여덟 번의 기염을 발사한다. 기염은 편대가 수행하는 자동 공격이고 증강 기원사가 직접 누르는 새로운 광역 소비기가 아니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_dragonriding_dynamicflight01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_dragonriding_dynamicflight01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_dragonriding_dynamicflight01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_dragonriding_dynamicflight01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_dragonriding_dynamicflight01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/기동성"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\편대통솔.md",
         "lastUpdate": ""
       }
     },
@@ -130862,14 +132170,14 @@
       "icon": "ability_warlock_burningembers",
       "iconName": "ability_warlock_burningembers",
       "school": "",
-      "cooldown": "불지옥의 축복/칠흑의 힘 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "파티/공격대",
-      "description": "# 강대한 불지옥 (Mighty Inferno)",
+      "description": "불지옥의 축복 피해를 40% 증가시키고, 칠흑의 힘을 연장하는 효과가 불지옥의 축복도 연장하게 한다. 불의 숨결에서 시작한 아군의 추가 화염 피해를 이후 지원 회전으로 이어가는 선택 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130882,17 +132190,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/불지옥의축복"
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/불지옥의축복",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -131627,6 +132937,113 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296637": {
+      "id": "1296637",
+      "type": "passive",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "Evoker Augmentation 12.1 Class Set 2pc",
+      "koreanName": "Evoker Augmentation 12.1 Class Set 2pc",
+      "englishName": "Evoker Augmentation 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1 시즌 2 두 부위 효과는 지각 변동의 재사용 대기시간을 10초 줄인다. 주문의 기본 40초와 이 세트 적용 후 시간을 구분한다. 엮인 실타래나 다른 회복 효과를 선택했다면 전투 중 표시되는 재사용 대기시간을 기준으로 운용한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/엮인실타래"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296638": {
+      "id": "1296638",
+      "type": "passive",
+      "class": "Evoker",
+      "spec": "증강",
+      "specs": [
+        "Augmentation"
+      ],
+      "name": "Evoker Augmentation 12.1 Class Set 4pc",
+      "koreanName": "Evoker Augmentation 12.1 Class Set 4pc",
+      "englishName": "Evoker Augmentation 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1 시즌 2 네 부위 효과는 지각 변동 사용 뒤 8초 동안 운명의 거울이 피해의 45%를 복제하도록 강화한다. 이는 피해 복제량이며 발동 확률 45%가 아니다. 치유 복제까지 같은 수치가 되는 효과로 설명하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울",
+          "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },

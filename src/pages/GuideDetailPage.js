@@ -1779,18 +1779,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '꿈의 숨결 충전 정체, 축복 발동 미사용, 잘못된 메아리 대상, 자연 정수 꽃, 쌍둥이 메아리 2중첩 손실, 화염 흡수 유효 치유를 봅니다.'],
     ],
   },
-  'evoker-augmentation': {
-    id: 'uptime',
-    title: '칠흑의 힘과 예지 유지',
-    sectionHeading: '파티 버프와 강화 구간',
-    sectionIntro: '증강 기원사는 개인 DPS보다 칠흑의 힘, 예지, 영겁의 숨결, 파티 극딜 타이밍이 맞는지가 더 중요합니다.',
-    caption: '칠흑의 힘, 예지, 영겁의 숨결, 분출, 강화 주문, 아군 쿨기와 탱커 지원을 함께 확인합니다.',
-    definition: [
-      ['의미', '증강의 핵심 데이터는 개인 딜이 아니라 버프가 누구에게, 언제, 얼마나 유지됐는지입니다.'],
-      ['읽는 법', '칠흑의 힘 유지율을 먼저 보고, 예지 대상과 영겁의 숨결이 파티 극딜 구간에 맞았는지 확인합니다.'],
-      ['체크 포인트', '칠흑의 힘 공백, 예지 대상 오류, 영겁의 숨결이 파티 쿨기와 어긋남, 분출 지연, 탱커 지원 누락을 봅니다.'],
-    ],
-  },
 };
 
 function getInlineChartPlan(guide, data) {
@@ -1807,7 +1795,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -5123,46 +5111,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'evoker-augmentation') {
-    return [
-      {
-        label: '중심 버프',
-        skill: findSkillByNames(data, ['칠흑의 힘']),
-        note: '증강의 가장 중요한 유지 흐름입니다. 공백 구간은 개인 피해보다 먼저 수정합니다.',
-        segments: [[2, 42], [48, 42]],
-      },
-      {
-        label: '대상 선정',
-        skill: findSkillByNames(data, ['예지']),
-        note: '다음 큰 피해 구간을 가진 딜러에게 미리 유지되어야 합니다.',
-        segments: [[8, 34], [50, 34]],
-      },
-      {
-        label: '파티 극딜',
-        skill: findSkillByNames(data, ['영겁의 숨결']),
-        note: '좋은 파티 피해 구간과 겹치되, 복제 가치 때문에 지나친 보류는 피합니다.',
-        segments: [[18, 16], [64, 16]],
-      },
-      {
-        label: '정수 소비',
-        skill: findSkillByNames(data, ['분출']),
-        note: '정수와 정수 폭발은 칠흑의 힘 안에서 분출로 소비합니다.',
-        segments: [[24, 12], [40, 12], [72, 12], [88, 10]],
-      },
-      {
-        label: '강화 주문',
-        skill: findSkillByNames(data, ['지각 변동', '불의 숨결']),
-        note: '강화 단계보다 칠흑의 힘 공백과 파티 구간 맞추기를 먼저 봅니다.',
-        segments: [[14, 14], [56, 14]],
-      },
-      {
-        label: '탱커 지원',
-        skill: findSkillByNames(data, ['끓어오르는 비늘']),
-        note: '큰 물리 피해가 오는 탱커에게 유지되는지 확인합니다.',
-        segments: [[4, 38], [52, 36]],
-      },
-    ];
-  }
 
   if (guide.id === 'priest-shadow') {
     return [

@@ -90,15 +90,27 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected desktop, 390px and 320px combat modes, hero switching, native condition disclosure and exact Ravage/apex tooltip IDs. No document/rail overflow, broken loaded icons or console errors were found in these checks.
 - Limits: live aggregate usage/DPS, ambiguous apex tooltip values, older shared mechanics, generic featured-skill ranking and dense graph-label layout still need work. Existing 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the commit contains generated DB and site content.
 
+### Augmentation Evoker
+
+- Replaced the 12.0.5 manuscript in place with 14 manually authored subjects, ten tips and separate Chronowarden/Scalecommander opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/04-기원사/증강/Meta/guide-12.1.json`.
+- Read Blizzard's 12.1 update and September hotfixes; compared Jereico's Wowhead, Saeldur's Icy Veins, Daylea's Method guides and current Korean/English spell effects. Inspected Icy Veins' actual conditional rotation switches rather than merging hidden alternative-build rows.
+- Manually updated 78 atomic records: 42 local Augmentation, 34 common and two shared records stored under Devastation. Added 23 records and authored 14 specialization relationships. Restricted the old common Essence Burst relationship to Devastation. Generated DB changes are confined to Evoker.
+- Separated Augmentation Essence Burst 396187 from Devastation 359618, Chrono Flame talent/cast 431442/431443, Double-time talent/buff 431874/460688, all three Duplicate nodes and its actual buff. Corrected scopes, base costs/cooldowns, Wingleader's 1.5-second reduction per Augmentation target hit, Mass Eruption targets and conditional resource effects.
+- Season 2 notes distinguish Upheaval's 10-second cooldown reduction from the eight-second Fate Mirror damage-copy amount of 45%, not proc chance or healing-copy amount. Official internal set names/icons remain unchanged, with explanatory Korean headings; set effects are passive.
+- Hero flows retain different Ebon/Eons opening order. The selected Breath of Eons examples do not also prescribe Deep Breath. Chronowarden's optional Time Skip is not inserted into Scalecommander's Interwoven Threads build. Filler disagreements remain explicit rather than merged.
+- Removed the fabricated Augmentation uptime chart. The page reuses the compact wrapping flow and priority renderers, with detailed conditions in native disclosure. The graph centers on Ebon Might with seven actual direct synergy connections.
+- Canonical equality, scoped mechanics/identity checks, all prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for all 42 local notes, 42 numeric common notes and two shared Devastation-path records; explicit guide name/icon checks passed for 22 IDs. Validation of the eight other common notes is not a full mechanics re-audit.
+- Verified production bundle `main.3c5ef0ee.js`: both heroes and all three modes at 1440px, 390px and 320px. No page/flow overflow, broken loaded images or console errors appeared in these checks. Native detail disclosure preserves conditions. Spell links are numeric and no Devastation Essence Burst link appears on the Augmentation page.
+- Limits: current WCL/Archon aggregates, personal simulations and private Wyrmrest Temple messages were not obtained. Old June usage/DPS values were removed from current metadata. SimC commit `3a32d8195787b3bc098ec7dbf4bcdea542522175` is implementation evidence only. Dense graph labels, generic featured-skill ranking, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical Markdown/JSON is outside the site Git repository; the commit preserves generated DB and site content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 23 manuscripts
+## Still 12.0.5: 22 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Evoker | Augmentation |
 | Hunter | Beast Mastery, Marksmanship, Survival |
 | Mage | Fire, Frost |
 | Monk | Brewmaster, Windwalker |
@@ -111,8 +123,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: 24px icons, wrapping numbered steps, short conditions and native disclosure for complete explanations. Feral now has authored opener/single-target/AoE modes for both heroes; the other guides still need separately verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 23 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: 24px icons with wrapping number/name/arrow steps; use conditions and complete explanations remain in native disclosure. Feral and Augmentation now have authored opener/single-target/AoE modes for both heroes; the other guides still need separately verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 22 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

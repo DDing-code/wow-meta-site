@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T20:14:51.738Z",
+    "generatedAt": "2026-09-12T21:12:04.247Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 462,
-    "rawTotalSynergies": 462,
+    "totalSynergies": 468,
+    "rawTotalSynergies": 468,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 154,
+      "unknown": 160,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -274,7 +274,7 @@
       "DeathKnight": 28,
       "DemonHunter": 35,
       "Druid": 54,
-      "Evoker": 28,
+      "Evoker": 34,
       "Hunter": 26,
       "Mage": 34,
       "마법사": 1,
@@ -3958,6 +3958,7 @@
     "SY-EVOKER-COMMON-FIRE-BREATH-ESSENCE-BURST-AZURE": {
       "id": "SY-EVOKER-COMMON-FIRE-BREATH-ESSENCE-BURST-AZURE",
       "name": "기원사공용-불의숨결-정수폭발-하늘빛일격",
+      "description": "황폐 정수 폭발 359618을 사용하는 공격·자원 관계다. 증강은 별도 효과 396187을 사용하므로 이 관계에 포함하지 않는다.",
       "type": "synergy",
       "synergyType": "damage-resource",
       "participants": [
@@ -3966,7 +3967,7 @@
         "362969"
       ],
       "class": "Evoker",
-      "spec": "Common",
+      "spec": "Devastation",
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -4167,26 +4168,62 @@
         "lastUpdate": "2026-08-26"
       }
     },
+    "SY-evoker-augmentation-reviewed-14": {
+      "id": "SY-evoker-augmentation-reviewed-14",
+      "name": "끓어오르는 비늘-재생의 키틴질",
+      "description": "탱커에게 끓어오르는 비늘을 준비하고 재생의 키틴질 선택 시 비늘 중첩이 소모되지 않는 조건을 적용한다. 검은 조율의 최대 생명력 보너스는 별도 지원이며 비늘의 방어도 전달과 같은 효과가 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "360827",
+        "406907",
+        "403264",
+        "403208"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/끓어오르는비늘",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/검은조율"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/재생의키틴질",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/용족의조율"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\끓어오르는비늘-재생의키틴질.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-evoker-augmentation-mass-eruption-eruption": {
       "id": "SY-evoker-augmentation-mass-eruption-eruption",
-      "name": "대규모 분출-분출",
+      "name": "대규모 분출-실제 적중-날개지도자",
+      "description": "비늘사령관은 강화 주문 뒤 실제 분출을 사용해 최대 세 대상에 대규모 분출을 적용한다. 12.1 날개지도자는 적중 대상마다 영겁의 숨결을 1.5초 줄인다. 폭격을 분산하려고 소비를 보관하는 예전 조건과 다르다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
         "438587",
         "395160",
         "396286",
+        "357208",
         "441206",
         "403631",
-        "441705"
+        "434300"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 9,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -4197,59 +4234,101 @@
     },
     "SY-evoker-augmentation-duplicate-ebon": {
       "id": "SY-evoker-augmentation-duplicate-ebon",
-      "name": "복제-칠흑의 힘",
+      "name": "복제-칠흑의 힘-실제 연장",
+      "description": "영겁의 숨결이 복제를 소환하고, 정점 중간 노드는 칠흑의 힘의 실제 연장 일부를 복제 시간으로 연결한다. 마지막 노드는 복제 활성 중 아군 능력치와 자신의 분출·지각 변동을 강화한다. 복제체의 자동 공격과 자신의 연장 시전을 분리한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "1259173",
-        "403631",
         "395152",
-        "409311",
-        "395160",
-        "396286",
-        "357208"
+        "1259171",
+        "1259173",
+        "1259174",
+        "1259175",
+        "403631"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Buffs/복제"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-중간",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제-마지막"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\복제-칠흑의힘.md",
         "lastUpdate": ""
       }
     },
-    "SY-evoker-augmentation-time-realign-breath": {
-      "id": "SY-evoker-augmentation-time-realign-breath",
-      "name": "시간 재정렬-영겁의 숨결",
+    "SY-evoker-augmentation-reviewed-11": {
+      "id": "SY-evoker-augmentation-reviewed-11",
+      "name": "시간의 불꽃-화염 도약-잔상",
+      "description": "시간 감시자는 화염 도약의 추가 불꽃과 강화 주문 뒤 잔상을 활용한다. 실제 시간의 불꽃 시전, 특성 노드, 자동 불꽃 피해는 서로 다르며 무료 분출에 쓸 정수 폭발을 받을 공간도 확인한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
+        "431442",
+        "431443",
+        "369939",
+        "431875",
+        "357208",
+        "396187"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/시간의불꽃",
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/공용/Talents/화염도약"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\시간의불꽃-화염도약-잔상.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-evoker-augmentation-time-realign-breath": {
+      "id": "SY-evoker-augmentation-time-realign-breath",
+      "name": "전세역전-시간의 폭발-재사용 회복",
+      "description": "시간 감시자는 전세역전으로 시간의 폭발을 시작하고 실제 강화 주문에 소비한다. 시간 건너뛰기는 이미 사용한 강화 주문을 회복하는 선택이며 엮인 실타래와 동시에 배우는 기본 효과가 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "370553",
+        "431695",
+        "1260484",
         "404977",
-        "403631",
-        "409311",
-        "395152",
-        "396286",
+        "412713",
         "357208"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
-      "importance": 7,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기"
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/전세역전",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/시간건너뛰기",
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/엮인실타래"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\시간의폭발-영겁의숨결.md",
         "lastUpdate": ""
@@ -4257,33 +4336,32 @@
     },
     "SY-evoker-augmentation-breath-party-window": {
       "id": "SY-evoker-augmentation-breath-party-window",
-      "name": "영겁의 숨결-파티 극딜 구간",
+      "name": "영겁의 숨결-아군 피해-착지 후 공격",
+      "description": "영겁의 숨결은 칠흑의 힘을 받은 아군의 유효 피해를 후속 피해로 연결한다. 착지 뒤 복제·임박한 파괴·미래 계획을 활용할 시간과 위치를 확보하고, 오래 비행하거나 전투 종료 직전에 사용해 후속 공격을 잃지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "403631",
-        "409311",
         "395152",
-        "1259173",
-        "441206",
-        "438587",
-        "441705",
-        "396286",
-        "357208"
+        "403631",
+        "1259171",
+        "459537",
+        "407866"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
       "importance": 9,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Buffs/복제"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/복제"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/임박한파괴",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/미래계획"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\영겁의숨결-파티극딜창.md",
@@ -4292,26 +4370,30 @@
     },
     "SY-evoker-augmentation-prescience-breath": {
       "id": "SY-evoker-augmentation-prescience-breath",
-      "name": "예지-영겁의 숨결",
+      "name": "예지-영겁의 숨결-지원 대상 선정",
+      "description": "예지는 앞으로 피해를 낼 아군에게 유지하고 영겁의 숨결을 유효한 공격 구간에 맞춘다. 시대착오에서 생긴 정수 폭발도 소비할 자리를 남겨야 한다. 예지 이름표만 같아도 담당 기믹과 실제 공격 시간이 달라질 수 있다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
+        "395152",
         "409311",
         "403631",
-        "395152",
-        "1259173"
+        "407869"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
-      "importance": 9,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
         "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
         "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시대착오"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\예지-영겁의숨결.md",
         "lastUpdate": ""
@@ -4319,91 +4401,222 @@
     },
     "SY-evoker-augmentation-prescience-target-risk": {
       "id": "SY-evoker-augmentation-prescience-target-risk",
-      "name": "예지-대상 위험 관리",
+      "name": "영겁의 숨결-위험천만한 운명-시간수호물",
+      "description": "영겁의 숨결은 위험천만한 운명의 적 약화와 시간수호물의 아군 보호에 연결된다. 시간수호물은 칠흑의 힘 아군의 관련 피해에 따른 보호막이며 실제 상한과 적용 대상을 확인한다. 예지 자체가 적을 약화시키는 것은 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "409311",
-        "395152",
-        "403631"
+        "403631",
+        "410253",
+        "409676",
+        "395152"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
       "importance": 7,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/영겁의숨결",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+      ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/위험천만한운명",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간수호물"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\위험천만한운명-예지.md",
         "lastUpdate": ""
       }
     },
-    "SY-evoker-augmentation-ebon-eruption-upheaval": {
-      "id": "SY-evoker-augmentation-ebon-eruption-upheaval",
-      "name": "칠흑의 힘-분출/지각 변동",
+    "SY-evoker-augmentation-reviewed-12": {
+      "id": "SY-evoker-augmentation-reviewed-12",
+      "name": "정수 폭발-분출-자원 관리",
+      "description": "정수의 조화로 저장 상한을 늘리고 정수 폭발을 분출에 소비한다. 비축한 힘의 비소모, 점화 질주의 시전 보정, 화산성·임박한 파괴의 일반 정수 비용 감소는 서로 다른 효과다. 무료 분출 횟수와 발동 횟수를 같게 계산하지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "395152",
+        "396187",
+        "375722",
         "395160",
-        "396286",
-        "357208",
-        "359618",
-        "370553"
+        "375796",
+        "408775",
+        "406904",
+        "459537",
+        "408004"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
-      "importance": 8,
-      "patch": "12.0.5",
+      "importance": 9,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동"
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/정수의조화",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/비축한힘",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/점화질주",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/화산성",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/임박한파괴",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/가속전환"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\칠흑의힘-분출지각변동.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\정수폭발-분출-비용감소.md",
         "lastUpdate": ""
       }
     },
-    "SY-evoker-augmentation-ebon-might-support-economy": {
-      "id": "SY-evoker-augmentation-ebon-might-support-economy",
-      "name": "칠흑의 힘-지원 경제",
+    "SY-evoker-augmentation-reviewed-9": {
+      "id": "SY-evoker-augmentation-reviewed-9",
+      "name": "지각 변동-시즌 2-운명의 거울",
+      "description": "시즌 2 두 부위는 지각 변동의 재사용을 10초 줄이고 네 부위는 사용 후 8초 동안 운명의 거울의 피해 복제량을 45%로 만든다. 실제 예지 대상이 그 시간에 공격하도록 준비하며 발동 확률이나 치유 복제 45%로 읽지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "396286",
+        "409311",
+        "412774"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\지각변동-시즌2-운명의거울.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-evoker-augmentation-ebon-eruption-upheaval": {
+      "id": "SY-evoker-augmentation-ebon-eruption-upheaval",
+      "name": "칠흑의 힘-시간의 모래-연장 주문",
+      "description": "분출과 강화 주문은 피해를 주면서 시간의 모래로 칠흑의 힘을 연장한다. 남은 버프보다 긴 강화를 준비해 지원이 먼저 끝나지 않게 하며 재시전과 연장 효과를 구분한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
         "395152",
-        "409311",
-        "403631",
+        "395153",
         "395160",
         "396286",
-        "357208",
-        "359618",
-        "360827",
-        "404977",
-        "358267",
-        "370553",
-        "1259173"
+        "357208"
       ],
       "class": "Evoker",
       "spec": "Augmentation",
       "heroTalent": null,
       "importance": 10,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
-        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지",
         "08-직업별-Knowledge-Base/04-기원사/증강/Skills/분출",
         "08-직업별-Knowledge-Base/04-기원사/증강/Skills/지각변동",
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/시간의모래"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\칠흑의힘-분출지각변동.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-evoker-augmentation-reviewed-10": {
+      "id": "SY-evoker-augmentation-reviewed-10",
+      "name": "칠흑의 힘-시시각각-특화",
+      "description": "시간 감시자의 시시각각은 칠흑의 힘에 추가 능력치를 주는 별도 효과다. 기본 15초와 특화에 따른 시간을 추적하고 칠흑의 힘 본체가 오래 남았다고 같은 시간까지 지속한다고 가정하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "395152",
+        "431874",
+        "460688",
+        "406380"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Buffs/시시각각"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/특화-시간여행단"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\칠흑의힘-시시각각.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-evoker-augmentation-ebon-might-support-economy": {
+      "id": "SY-evoker-augmentation-ebon-might-support-economy",
+      "name": "칠흑의 힘-예지-운명의 거울",
+      "description": "칠흑의 힘은 공격 담당들에게 주 능력치를 배분하고, 예지는 선택한 대상의 치명타와 운명의 거울을 제공한다. 두 효과가 걸린 아군이 실제로 공격하는 구간을 확보해야 하며 예지 대상만 칠흑의 힘을 받는 것으로 해석하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "395152",
+        "409311",
+        "412774"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 10,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/칠흑의힘",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/예지"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/운명의거울"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\칠흑의힘-지원경제.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-evoker-augmentation-reviewed-13": {
+      "id": "SY-evoker-augmentation-reviewed-13",
+      "name": "하늘빛 일격-메아리치는 강타",
+      "description": "메아리치는 강타를 선택한 비늘사령관 광역 경로에서는 하늘빛 일격의 실제 적중과 추가 시전 기회를 활용한다. 정수 폭발이 상한이거나 강화 주문이 돌아왔다면 필러보다 그 조건을 먼저 해결한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "362969",
+        "410784",
+        "396187"
+      ],
+      "class": "Evoker",
+      "spec": "Augmentation",
+      "heroTalent": null,
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/하늘빛일격",
+        "08-직업별-Knowledge-Base/04-기원사/증강/Skills/정수폭발"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/증강/Talents/메아리치는강타"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Synergies\\하늘빛일격-메아리치는강타.md",
         "lastUpdate": ""
       }
     },

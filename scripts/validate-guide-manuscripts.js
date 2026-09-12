@@ -17,6 +17,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['demonhunter-vengeance', '12.1'],
   ['druid-guardian', '12.1'],
   ['druid-feral', '12.1'],
+  ['evoker-augmentation', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -72,8 +73,6 @@ const NON_ACTION_CHART_KEYS = new Set([
   'evoker-devastation:434300',
   'evoker-preservation:1256577',
   'evoker-preservation:396187',
-  'evoker-augmentation:1259173',
-  'evoker-augmentation:396187',
   'warlock-demonology:1276222',
   'monk-brewmaster:115069',
   'monk-brewmaster:450508',
@@ -1029,6 +1028,36 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const augmentation = manuscripts['evoker-augmentation'];
+  const augmentationSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '04-기원사', '증강', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(augmentationSource)) {
+    assert(JSON.stringify(JSON.parse(read(augmentationSource))) === JSON.stringify(augmentation), 'Augmentation must match its canonical 12.1 KB manuscript');
+  }
+  const augmentationNotes = Object.values(kbSkills).filter(skill => /[\\/]04-기원사[\\/]증강[\\/]/.test(skill.source?.kbPath || ''));
+  assert(augmentationNotes.length === 42 && augmentationNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 42 Augmentation records must retain reviewed descriptions through sync');
+  assert(!augmentation.extraSkills?.length, 'Augmentation spells must resolve from the canonical KB');
+  for (const branch of augmentation.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Augmentation hero needs authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Augmentation ST and AoE must retain distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Augmentation modes require actual casts and full conditions, not passive/tier/pet effects');
+        assert(row.skillId !== '357210', 'The selected Breath of Eons examples must not also prescribe Deep Breath');
+      }
+    }
+  }
+  const [chronowarden, scalecommander] = augmentation.heroBranches;
+  const order = (branch, id) => branch.opener.steps.findIndex(row => row.skillId === id);
+  assert(order(chronowarden, '403631') < order(chronowarden, '395152') && order(scalecommander, '395152') < order(scalecommander, '403631'), 'Hero-specific Ebon/Eons opener ordering must not be merged');
+  assert(!JSON.stringify(scalecommander).includes('"skillId":"404977"') && !JSON.stringify(scalecommander).includes('"skillId":"431443"'), 'Scalecommander Interwoven Threads must not borrow Time Skip or Chronowarden casts');
+  assert(kbSkills['359618']?.specs.join(',') === 'Devastation' && kbSkills['396187']?.specs.join(',') === 'Augmentation', 'Essence Burst IDs must remain specialization-scoped');
+  assert(kbSkills['431442']?.type === 'hero-talent' && kbSkills['431443']?.type === 'atomic-skill', 'Chrono Flame talent and real cast must remain distinct');
+  assert(kbSkills['431874']?.type === 'hero-talent' && kbSkills['460688']?.type === 'buff', 'Double-time talent and separate buff must remain distinct');
+  assert(kbSkills['441206']?.description.includes('1.5초') && kbSkills['1296637']?.description.includes('10초'), 'Wingleader hit reduction and S2 Upheaval reduction must retain current values');
+  assert(kbSkills['1296638']?.description.includes('8초') && kbSkills['1296638']?.description.includes('45%'), 'S2 Fate Mirror damage amount must retain its separate eight-second condition');
+  assert(kbSkills['1259171']?.type === 'buff' && ['1259173', '1259174', '1259175'].every(id => ['talent', 'spec-talent'].includes(kbSkills[id]?.type)), 'Duplicate buff and all three talent nodes must remain distinct');
+  assert(kbSkills['357210']?.specs.includes('Augmentation') && kbSkills['375722']?.specs.includes('Augmentation'), 'Shared casts and talents must not be hidden by their original Devastation storage folder');
 
   const feral = manuscripts['druid-feral'];
   const feralSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '03-드루이드', '야성', 'Meta', 'guide-12.1.json');
