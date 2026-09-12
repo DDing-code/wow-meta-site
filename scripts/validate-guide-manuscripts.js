@@ -10,6 +10,7 @@ const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const GUIDE_PATCH_OVERRIDES = new Map([
+  ['deathknight-blood', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -617,7 +618,8 @@ function validateSpecSpecificCurrentPatchRules(spec, manuscript) {
   }
 
   const requiredHotfix = REQUIRED_HOTFIXES.get(spec.id);
-  if (requiredHotfix) {
+  // These dated requirements belong to the Season 1 manuscripts only.
+  if (requiredHotfix && manuscript.patch === '12.0.5') {
     const hotfixPattern = new RegExp(requiredHotfix.date);
     const hasHotfixSource = (manuscript.sources || []).some(source => (
       source.tier === 'S'
@@ -1011,6 +1013,25 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const bloodSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '혈기', 'Meta', 'guide-12.1.json');
+  const blood = manuscripts['deathknight-blood'];
+  if (fs.existsSync(bloodSource)) {
+    assert(JSON.stringify(JSON.parse(read(bloodSource))) === JSON.stringify(blood), 'Blood guide must match its canonical 12.1 KB manuscript');
+  }
+  assert(!blood.extraSkills?.length, 'Blood guide must resolve spells from the KB, not extraSkills');
+  for (const [id, name] of [['1310372', '피로 치를 빚'], ['391398', '혈안'], ['374747', '칠흑의 기사단의 인내'], ['434033', '피에 젖은 땅']]) {
+    assert(kbSkills[id]?.name === name && kbSkills[id]?.patch === '12.1', `Blood 12.1 KB entry missing: ${name}`);
+  }
+  assert(kbSkills['1263824']?.castTime === '강화 주문' && kbSkills['1263824']?.cooldown === '45초', 'Consumption must be an empower spell with a 45-second cooldown');
+  assert(kbSkills['441378']?.specs.includes('Blood') && kbSkills['441378']?.specs.includes('Frost'), 'Exterminate must support both Blood and Frost');
+  assert(kbSkills['77513']?.aliases?.includes('피의 보호막'), 'Blood Shield shorthand must resolve to the official mastery entry');
+  assert(kbSkills['195181']?.castTime === '지속 효과', 'Bone Shield is a buff, not an independently cast defensive');
+  const bloodSynergies = JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies;
+  assert(bloodSynergies['피로치를빚_골수분쇄']?.description?.includes('10중첩'), 'Blood Debt synergy must retain its authored KB mechanism through sync');
+  assert(blood.opener.steps.some(step => step.skillId === '195182' && step.trigger.includes('10중첩')), 'Blood combat flow must include the tier-set Marrowrend condition');
+  assert(!blood.opener.steps.some(step => ['1310372', '1296651', '441378'].includes(step.skillId)), 'Blood passive tier/proc effects must not be cast nodes');
+  assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('쐐기'), 'Blood default hero branch must reflect Season 2 Sanlayn guidance');
 
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(arcaneSource)) {

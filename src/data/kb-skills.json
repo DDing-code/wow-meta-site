@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T11:02:56.169Z",
+    "generatedAt": "2026-09-12T13:37:40.053Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2501,
-    "rawTotalSkills": 2501,
+    "totalSkills": 2510,
+    "rawTotalSkills": 2510,
     "duplicateIds": [],
-    "totalSynergies": 425,
+    "totalSynergies": 428,
     "stats": {
-      "total": 2501,
+      "total": 2510,
       "byType": {
-        "hero-talent": 531,
+        "buff": 7,
+        "hero-talent": 532,
         "atomic-skill": 517,
         "proc": 5,
         "skill": 120,
-        "talent": 1012,
+        "talent": 1014,
         "spec-talent": 201,
+        "passive": 12,
         "hero-tree": 2,
         "set-bonus": 7,
         "class-talent": 87,
-        "buff": 4,
         "tier-set": 2,
         "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
-        "atomic-talent": 1,
-        "passive": 9
+        "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 75,
-        "Death Knight": 1,
+        "DeathKnight": 85,
         "DemonHunter": 101,
         "Druid": 142,
         "Evoker": 117,
@@ -45,11 +44,10 @@
         "Warrior": 265
       },
       "bySpec": {
-        "DeathKnight-공용": 14,
-        "Death Knight-공용": 1,
+        "DeathKnight-공용": 17,
         "DeathKnight-냉기": 24,
         "DeathKnight-부정": 22,
-        "DeathKnight-혈기": 15,
+        "DeathKnight-혈기": 22,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 23,
         "DemonHunter-파멸": 28,
@@ -102,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2416,
-        "withSynergies": 697,
+        "withWikilinks": 2425,
+        "withSynergies": 705,
         "avgLinkDensity": "0.033"
       }
     }
@@ -10857,6 +10855,54 @@
         "lastUpdate": ""
       }
     },
+    "46585": {
+      "id": "46585",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "시체 되살리기",
+      "koreanName": "시체 되살리기",
+      "englishName": "Raise Dead",
+      "icon": "inv_pet_ghoul",
+      "iconName": "inv_pet_ghoul",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "",
+      "description": "1분 동안 구울 하나를 소환해 함께 싸우게 합니다. 기본 툴팁의 재사용 대기시간은 2분입니다. 혈기의 소환 공격 기술이며 전투 부활 기술과 다릅니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_pet_ghoul.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_pet_ghoul.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_pet_ghoul.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_pet_ghoul.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_pet_ghoul.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.019,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\시체되살리기.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "46917": {
       "id": "46917",
       "type": "skill",
@@ -11886,12 +11932,12 @@
       "castTime": "즉시",
       "resourceCost": "",
       "range": "30미터",
-      "description": "# 춤추는 룬 무기",
+      "description": "8초 동안 공격을 복제하는 룬 무기를 소환하고 무기 막기 확률을 30% 높입니다. 기본 툴팁은 2분이며 빌드의 재사용 대기시간·무기 수 변경은 선택 특성과 구분합니다. 산레인의 공격 구간을 자주 확보하되 필요한 위험 피격에도 맞춥니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_07.jpg",
       "iconUrls": {
@@ -11901,25 +11947,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_07.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의소용돌이",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Hero-Talents/한밤의춤"
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.036,
+        "wikilinkCount": 5,
+        "synergyCount": 0,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\춤추는룬무기.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "49039": {
@@ -15036,6 +15078,59 @@
         "lastUpdate": ""
       }
     },
+    "77513": {
+      "id": "77513",
+      "type": "passive",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "특화: 피의 보호막",
+      "koreanName": "특화: 피의 보호막",
+      "englishName": "Mastery: Blood Shield",
+      "aliases": [
+        "피의 보호막"
+      ],
+      "icon": "spell_deathknight_deathstrike",
+      "iconName": "spell_deathknight_deathstrike",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "죽음의 일격의 치유에 따라 물리 피해 흡수막을 만듭니다. 흡수량은 특화와 치유량에 따라 달라지고 최대 생명력의 50%가 상한입니다. 혈안을 선택하면 이 보호막이 남아 있는 동안 별도의 피해 감소를 얻습니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_deathstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_deathknight_deathstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_deathstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_deathknight_deathstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_deathstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "../Talents/혈안"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\피의보호막.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "77575": {
       "id": "77575",
       "type": "atomic-skill",
@@ -15575,6 +15670,59 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\티탄의-손아귀-하나된-분노.md",
         "lastUpdate": ""
+      }
+    },
+    "81136": {
+      "id": "81136",
+      "type": "passive",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "진홍빛 스컬지",
+      "koreanName": "진홍빛 스컬지",
+      "englishName": "Crimson Scourge",
+      "icon": "ability_warrior_bloodnova",
+      "iconName": "ability_warrior_bloodnova",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "피의 역병에 걸린 적을 자동 공격하면 다음 죽음과 부패가 룬을 소비하지 않도록 하는 발동 효과를 얻을 수 있으며 재사용 대기시간이 초기화됩니다. 별도 사용 버튼이 아닙니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodnova.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_bloodnova.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_bloodnova.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_bloodnova.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodnova.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/피의역병",
+          "../../공용/Skills/죽음과부패"
+        ],
+        "relatedTalents": [
+          "../Talents/칠흑의기사단의인내"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\진홍빛스컬지.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "81749": {
@@ -25926,7 +26074,7 @@
     },
     "195181": {
       "id": "195181",
-      "type": "atomic-skill",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "혈기",
       "specs": [
@@ -25938,16 +26086,16 @@
       "icon": "ability_deathknight_boneshield",
       "iconName": "ability_deathknight_boneshield",
       "school": "",
-      "cooldown": "2.5초",
-      "castTime": "즉시",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 뼈의 보호막 (Bone Shield)",
-      "category": "ability",
+      "description": "골수분쇄 등으로 얻는 방어도 증가 버프입니다. 30초 또는 모든 중첩이 소비될 때까지 지속되며 직접 누르는 기술이 아닙니다. 툴팁의 2.5초는 이 버프를 2.5초마다 시전하라는 뜻이 아닙니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_boneshield.jpg",
       "iconUrls": {
@@ -25968,12 +26116,12 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.038,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\뼈의보호막.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "195182": {
@@ -25994,12 +26142,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 2",
       "range": "근접",
-      "description": "# 골수분쇄 (Marrowrend)",
+      "description": "혈기의 뼈의 보호막 생성기입니다. 12.1 시즌 2 세트에서는 피로 치를 빚 10중첩의 소비 버튼이기도 하며, 죽음의 인도자에서는 몰살을 소비합니다. 뼈 보충만 필요한 기술로 설명하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_marrowrend.jpg",
       "iconUrls": {
@@ -26014,14 +26162,14 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\골수분쇄.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "195292": {
@@ -45015,6 +45163,56 @@
         "lastUpdate": ""
       }
     },
+    "374747": {
+      "id": "374747",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "칠흑의 기사단의 인내",
+      "koreanName": "칠흑의 기사단의 인내",
+      "englishName": "Perseverance of the Ebon Blade",
+      "icon": "ability_deathknight_sanguinfortitude",
+      "iconName": "ability_deathknight_sanguinfortitude",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "진홍빛 스컬지를 소모하면 10초 동안 받는 피해가 4% 감소합니다. 유연성 증가로 설명하던 이전 효과와 구분합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_sanguinfortitude.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_deathknight_sanguinfortitude.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_deathknight_sanguinfortitude.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_deathknight_sanguinfortitude.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_sanguinfortitude.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../../공용/Skills/죽음과부패"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\칠흑의기사단의인내.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "374968": {
       "id": "374968",
       "type": "atomic-skill",
@@ -63921,6 +64119,57 @@
         "lastUpdate": ""
       }
     },
+    "391398": {
+      "id": "391398",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "혈안",
+      "koreanName": "혈안",
+      "englishName": "Bloodshot",
+      "icon": "ability_warlock_baneofhavoc",
+      "iconName": "ability_warlock_baneofhavoc",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "피의 보호막이 활성화되어 있는 동안 공격력이 8% 증가하고 받는 피해가 4% 감소합니다. 12.1에서는 보호막 보유가 공격뿐 아니라 피해 감소 조건이기도 합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_baneofhavoc.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_baneofhavoc.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_baneofhavoc.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_baneofhavoc.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_baneofhavoc.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/죽음의일격",
+          "../Skills/피의보호막"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\혈안.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "391528": {
       "id": "391528",
       "type": "atomic-skill",
@@ -76424,7 +76673,7 @@
     "433895": {
       "id": "433895",
       "type": "hero-talent",
-      "class": "Death Knight",
+      "class": "DeathKnight",
       "spec": "공용",
       "specs": [
         "Blood",
@@ -76436,16 +76685,16 @@
       "icon": "inv_ability_sanlayndeathknight_vampiricstrike",
       "iconName": "inv_ability_sanlayndeathknight_vampiricstrike",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "룬 1",
       "range": "",
-      "description": "# 흡혈의 일격 (Vampiric Strike)",
+      "description": "산레인의 강화 공격으로 룬을 소비해 암흑 피해를 주고 생명력을 회복하며 피의 여왕의 정수를 부여합니다. 혈기는 산레인의 선물 중 심장 강타 대신 쓰고, 그 밖에는 발동으로 사용 기회를 얻습니다. 혈기와 부정의 피해·회복 수치를 서로 복사하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_sanlayndeathknight_vampiricstrike.jpg",
       "iconUrls": {
@@ -76455,19 +76704,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_sanlayndeathknight_vampiricstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.027,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\흡혈의일격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "433905": {
@@ -76519,6 +76771,110 @@
         "lastUpdate": ""
       }
     },
+    "433925": {
+      "id": "433925",
+      "type": "buff",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Unholy"
+      ],
+      "name": "피의 여왕의 정수",
+      "koreanName": "피의 여왕의 정수",
+      "englishName": "Essence of the Blood Queen",
+      "icon": "inv_misc_herb_talandrasrose",
+      "iconName": "inv_misc_herb_talandrasrose",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "흡혈의 일격으로 부여되는 20초 강화 효과입니다. 기본 툴팁은 중첩당 가속 1%, 최대 5%이며 선택한 산레인 특성의 증폭은 따로 적용됩니다. 별도 시전 버튼이 아닙니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_herb_talandrasrose.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_herb_talandrasrose.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_herb_talandrasrose.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_herb_talandrasrose.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_herb_talandrasrose.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../../혈기/Skills/춤추는룬무기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "../Hero-Talents/흡혈의일격"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Buffs\\피의여왕의정수.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "434033": {
+      "id": "434033",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Unholy"
+      ],
+      "name": "피에 젖은 땅",
+      "koreanName": "피에 젖은 땅",
+      "englishName": "Blood-Soaked Ground",
+      "icon": "ability_ironmaidens_corruptedblood",
+      "iconName": "ability_ironmaidens_corruptedblood",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자신의 죽음과 부패 안에 있는 동안 받는 물리 피해가 8% 감소하고 흡혈의 일격을 얻을 확률이 5% 증가합니다. 산레인의 지속 효과이며 마법 피해 감소 8%가 아닙니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_corruptedblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_corruptedblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_corruptedblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_corruptedblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_corruptedblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/죽음과부패"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\피에젖은땅.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "434100": {
       "id": "434100",
       "type": "hero-talent",
@@ -76538,12 +76894,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "12미터",
-      "description": "# 흡혈의 오라",
+      "description": "생기흡수를 2% 높이며 리치의 혼 중에는 증가량이 두 배가 되고 12미터 안 아군 4명에게도 적용됩니다. 흡혈로 강화되는 오라가 아닙니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_vendetta.jpg",
       "iconUrls": {
@@ -76566,12 +76922,12 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 5,
-        "linkDensity": 0.015,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\흡혈의오라.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "434132": {
@@ -76642,12 +76998,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 산레인의 선물",
+      "description": "혈기는 춤추는 룬 무기 중 피의 여왕의 정수 효과가 200% 증가하며 흡혈의 일격이 심장 강타를 대체합니다. 부정은 어둠의 변신 중 피의 여왕의 정수 효과가 80% 증가합니다. 별도 시전 버튼이 아닌 산레인 지속 효과입니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_bloodtap.jpg",
       "iconUrls": {
@@ -76659,25 +77015,25 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기",
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/흡혈",
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/흡혈",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 7,
-        "linkDensity": 0.019,
+        "wikilinkCount": 8,
+        "synergyCount": 5,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\산레인의선물.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "434249": {
@@ -80016,6 +80372,7 @@
       "class": "DeathKnight",
       "spec": "냉기",
       "specs": [
+        "Blood",
         "Frost"
       ],
       "name": "몰살",
@@ -80028,12 +80385,12 @@
       "castTime": "발동 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 몰살 (Exterminate)",
+      "description": "죽음의 인도자의 사신의 징표 폭발 후 다음 두 번의 공격을 강화합니다. 혈기는 골수분쇄, 냉기는 절멸 또는 서리낫으로 소비합니다. 직접 사용하는 스킬이 아니며 두 전문화의 소비 버튼을 혼동하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_titanargus_d_01.jpg",
       "iconUrls": {
@@ -80044,6 +80401,7 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸"
         ],
         "relatedTalents": [
@@ -80054,14 +80412,14 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.062,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Hero-Talents\\몰살.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "441398": {
@@ -113770,16 +114128,16 @@
       "icon": "inv_axe_2h_artifactmaw_d_01",
       "iconName": "inv_axe_2h_artifactmaw_d_01",
       "school": "",
-      "cooldown": "중간 재사용 대기시간",
-      "castTime": "즉시",
+      "cooldown": "45초",
+      "castTime": "강화 주문",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 섭취 (Consumption)",
+      "description": "45초 재사용 대기시간의 강화 주문입니다. 전방에 암흑 피해를 주고 피의 역병을 단계별 최대 25%/50%/75% 흡수합니다. 강화 중 받는 피해 감소는 5%/10%/15%이고, 강화 종료 후 각각 8초/4초/2초 더 지속됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_2h_artifactmaw_d_01.jpg",
       "iconUrls": {
@@ -113796,12 +114154,12 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\섭취.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1263920": {
@@ -114358,16 +114716,16 @@
       "icon": "inv12_apextalent_deathknight_danceofmidnight",
       "iconName": "inv12_apextalent_deathknight_danceofmidnight",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "발동 내부 쿨다운 3초",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 한밤의 춤",
+      "description": "기본 노드 1264506: 춤추는 룬 무기 중 무기 막기에 성공하면 다음 심장 강타가 룬을 소모하지 않고 추가 피해 150%를 입힙니다. 내부 쿨다운은 3초입니다. 다른 단계의 추가 무기 소환과 피해 감소 수치를 이 노드의 툴팁에 합치지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_deathknight_danceofmidnight.jpg",
       "iconUrls": {
@@ -114381,17 +114739,19 @@
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.009,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Hero-Talents\\한밤의춤.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1264614": {
@@ -124046,6 +124406,56 @@
         "lastUpdate": ""
       }
     },
+    "1296651": {
+      "id": "1296651",
+      "type": "passive",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "Death Knight Blood 12.1 Class Set 4pc",
+      "koreanName": "Death Knight Blood 12.1 Class Set 4pc",
+      "englishName": "Death Knight Blood 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 네 세트 효과입니다. 피로 치를 빚 소비에 연결된 골수분쇄가 뼈의 보호막 3중첩을 추가로 생성하고 대상과 주변 적에게 암흑 피해를 줍니다. 별도 사용 버튼이 아닙니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/골수분쇄"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\12.1-4세트.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "1296656": {
       "id": "1296656",
       "type": "set-bonus",
@@ -124356,6 +124766,57 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Buffs\\아킬존의명료함.md",
         "lastUpdate": ""
+      }
+    },
+    "1310372": {
+      "id": "1310372",
+      "type": "buff",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "피로 치를 빚",
+      "koreanName": "피로 치를 빚",
+      "englishName": "Blood Debt",
+      "icon": "ability_rogue_hungerforblood",
+      "iconName": "ability_rogue_hungerforblood",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 두 세트 효과입니다. 죽음의 일격으로 힘 0.5% 중첩을 쌓아 최대 5%를 얻습니다. 10중첩에서 골수분쇄로 소비하면 10초 동안 힘이 10% 증가합니다. 직접 시전하는 스킬이 아닙니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_hungerforblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_hungerforblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_hungerforblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_hungerforblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_hungerforblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/죽음의일격",
+          "../Skills/골수분쇄"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\피로치를빚.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "hero-aldrachi-reaver": {

@@ -1076,6 +1076,7 @@ function splitRelationParticipants(record, centerSkill) {
 }
 
 function describeSynergyRecord(record, centerSkill) {
+  if (record.synergy?.description) return record.synergy.description;
   const relation = splitRelationParticipants(record, centerSkill);
   const centerName = relation.center ? skillName(relation.center) : '중심 스킬';
   const skillNames = relation.skills.map(skillName);
@@ -1643,11 +1644,18 @@ const SPECIALIST_CHARTS = {
     title: '죽음의 일격과 뼈의 보호막',
     sectionHeading: '맞기 전 준비와 맞은 뒤 회복',
     sectionIntro: '혈기 죽음의 기사는 맞고 나서 죽음의 일격으로 회복하지만, 실제 실력 차이는 맞기 전에 뼈의 보호막, 룬, 룬 마력, 춤추는 룬 무기를 준비하는 데 있습니다.',
-    caption: '뼈의 보호막, 죽음의 일격, 룬 마력, 춤추는 룬 무기, 흡혈, 대마법 보호막을 피해 타이머와 묶습니다.',
+    caption: '필요한 회복과 뼈 보충이 먼저입니다. 시즌 2 세트가 있으면 피로 치를 빚 10중첩의 골수분쇄 소비를 추가합니다.',
     definition: [
       ['의미', '죽음의 일격은 피해를 받은 뒤 회복하는 핵심 생존기이고, 뼈의 보호막은 그 전에 깔아두는 기본 방어입니다.'],
       ['읽는 법', '큰 피해 전에는 뼈의 보호막과 룬 마력을 확보하고, 피해 직후 죽음의 일격이 들어갈 여지를 남깁니다.'],
-      ['체크 포인트', '뼈의 보호막 5중첩 미만, 룬 마력 부족, 죽음의 일격 선사용, 춤추는 룬 무기 지연, 마법 피해 대응 누락을 봅니다.'],
+      ['체크 포인트', '뼈의 보호막 부족, 룬 마력 초과·부족, 세트 10중첩 방치, 혈안과 자신의 죽음과 부패 위치, 마법 피해 대응을 확인합니다.'],
+    ],
+    events: [
+      { phase: '뼈 부족 / 만료 전', skillId: '195182', action: '방어 기반 보충', note: '골수분쇄로 뼈의 보호막을 보강합니다. 피해를 받은 뒤에야 뼈를 새로 쌓는 상황을 줄입니다.' },
+      { phase: '큰 마법 피해 전', skillId: '48707', action: '피해 유형에 맞춰 선택', note: '대마법 보호막을 배정합니다. 물리 피해에는 같은 보호를 기대하지 않습니다.' },
+      { phase: '회복 전 급사 위험', skillId: '48792', action: '미리 피해 감소', note: '얼음같은 인내력 등 배정한 생존기로 먼저 버팁니다. 모든 생존기를 한 번에 겹치는 순서가 아닙니다.' },
+      { phase: '피격 후 회복 필요', skillId: '49998', action: '필요한 회복 즉시', note: '남겨 둔 룬 마력으로 죽음의 일격을 사용합니다. 세트 중첩 소비보다 생존이 먼저입니다.' },
+      { phase: '안전 / 세트 10중첩', skillId: '195182', action: '피로 치를 빚 소비', note: '뼈가 충분해도 세트 효과를 얻기 위해 골수분쇄를 씁니다. 이어서 실제 공격할 수 있는 시간을 확보합니다.' },
     ],
   },
   'druid-balance': {

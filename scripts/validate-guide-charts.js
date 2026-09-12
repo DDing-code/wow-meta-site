@@ -411,6 +411,13 @@ function main() {
 
   const plannedUptimeIds = [];
 
+  const bloodChart = new Function(`return {${planBranchMap.get('deathknight-blood').body}}`)();
+  assert(bloodChart.events?.some(event => event.skillId === '49998'), 'Blood defensive chart must include authored Death Strike recovery, not generic skill ordering');
+  assert(bloodChart.events?.some(event => event.skillId === '195182' && event.phase.includes('10중첩')), 'Blood defensive chart must include the conditional tier-set spender');
+  assert(bloodChart.events?.every(event => skillIds.has(event.skillId)), 'Blood defensive chart must resolve every spell from the KB');
+  const describeRelation = new Function('record', 'centerSkill', extractFunctionBody(guideDetailSource, 'describeSynergyRecord'));
+  assert(describeRelation({ synergy: { description: 'verified KB effect' } }, null) === 'verified KB effect', 'Authored KB synergy explanations must take precedence over generic relationship copy');
+
   for (const branch of planBranches) {
     const chartId = firstChartId(branch.body);
     const guide = guideRecordMap.get(branch.id);

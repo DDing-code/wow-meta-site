@@ -99,6 +99,7 @@ export const guideSpecsByRole = {
       focus: '신성한 힘 운용과 파티 유틸을 함께 묶어 방어 기반을 유지합니다.',
     }),
     spec('deathknight-blood', 'deathknight', '혈기', '혈기', 'tanks', '/guide/deathknight/blood', {
+      status: '12.1 실전 심화 공략',
       kbSpecAliases: ['Blood'],
       focus: '받은 피해를 회복 자원으로 되돌리는 타이밍 관리가 중심입니다.',
     }),

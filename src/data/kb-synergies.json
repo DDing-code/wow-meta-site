@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T11:02:56.170Z",
+    "generatedAt": "2026-09-12T13:37:40.054Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 425,
-    "rawTotalSynergies": 425,
+    "totalSynergies": 428,
+    "rawTotalSynergies": 428,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -15,7 +15,10 @@
       "unknown": 118,
       "disease-aoe": 1,
       "apex-burst-window": 1,
+      "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
+      "blood-debt-marrowrend": 1,
+      "blood-shield-bloodshot": 1,
       "apex-defensive-window": 1,
       "ranged-bone-shield-maintenance": 1,
       "interrupt-purge-cc": 1,
@@ -268,7 +271,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 18,
+      "DeathKnight": 21,
       "DemonHunter": 24,
       "Druid": 38,
       "Evoker": 28,
@@ -644,6 +647,37 @@
         "lastUpdate": ""
       }
     },
+    "바닥_방어조건": {
+      "id": "바닥_방어조건",
+      "name": "죽음과 부패의 방어 조건",
+      "description": "진홍빛 스컬지를 소비하면 칠흑의 기사단의 인내가 10초 동안 피해를 4% 줄입니다. 산레인의 피에 젖은 땅은 자신이 죽음과 부패 안에 있을 때 물리 피해를 8% 줄입니다. 적의 위치만으로 두 효과가 모두 켜지지 않습니다.",
+      "type": "synergy",
+      "synergyType": "blood-ground-defenses",
+      "participants": [
+        "81136",
+        "43265",
+        "374747",
+        "434033"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../../공용/Skills/죽음과부패"
+      ],
+      "linkedBuffs": [
+        "../Buffs/진홍빛스컬지"
+      ],
+      "linkedTalents": [
+        "../Talents/칠흑의기사단의인내"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\바닥-방어조건.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "뼈의보호막_죽음의일격": {
       "id": "뼈의보호막_죽음의일격",
       "name": "뼈의보호막-죽음의일격",
@@ -670,32 +704,33 @@
     },
     "산레인_흡혈": {
       "id": "산레인_흡혈",
-      "name": "산레인-흡혈",
+      "name": "산레인의 선물과 흡혈의 일격",
+      "description": "춤추는 룬 무기 중 산레인의 선물로 심장 강타가 흡혈의 일격으로 바뀌고 피의 여왕의 정수가 강화됩니다. 룬 마력은 필요한 죽음의 일격으로 소비합니다. 흡혈을 켜야 발동하는 연결이 아닙니다.",
       "type": "synergy",
       "synergyType": "sanlayn-recovery",
       "participants": [
+        "49028",
         "434152",
-        "434100",
-        "55233",
-        "49998",
-        "1263824"
+        "433895",
+        "433925",
+        "49998"
       ],
       "class": "DeathKnight",
       "spec": "Blood",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/흡혈",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
+        "../Skills/춤추는룬무기",
+        "../Skills/죽음의일격"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/섭취"
+      "linkedBuffs": [
+        "../../공용/Buffs/피의여왕의정수"
       ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\산레인-흡혈.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "죽음과부패_심장강타": {
@@ -721,26 +756,95 @@
         "lastUpdate": ""
       }
     },
-    "한밤의춤_춤추는룬무기": {
-      "id": "한밤의춤_춤추는룬무기",
-      "name": "한밤의춤-춤추는룬무기",
+    "피로치를빚_골수분쇄": {
+      "id": "피로치를빚_골수분쇄",
+      "name": "세트 중첩과 골수분쇄",
+      "description": "죽음의 일격으로 피로 치를 빚 10중첩을 만든 뒤 골수분쇄로 소비해 힘 증가를 얻습니다. 네 세트는 이후 골수분쇄의 추가 뼈의 보호막과 암흑 피해로 이어집니다. 회복이 급하면 세트 소비보다 죽음의 일격을 먼저 씁니다.",
       "type": "synergy",
-      "synergyType": "apex-defensive-window",
-      "participants": [],
+      "synergyType": "blood-debt-marrowrend",
+      "participants": [
+        "49998",
+        "1310372",
+        "195182",
+        "195181",
+        "1296651"
+      ],
       "class": "DeathKnight",
       "spec": "Blood",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
+        "../Skills/죽음의일격",
+        "../Skills/골수분쇄",
+        "../Skills/뼈의보호막"
+      ],
+      "linkedBuffs": [
+        "../Buffs/피로치를빚",
+        "../Buffs/12.1-4세트"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\피로치를빚-골수분쇄.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "피의보호막_혈안": {
+      "id": "피의보호막_혈안",
+      "name": "죽음의 일격과 혈안",
+      "description": "죽음의 일격의 치유가 특화: 피의 보호막을 만들고, 혈안을 선택하면 그 보호막이 남아 있는 동안 받는 피해가 4% 줄어듭니다. 보호막의 물리 흡수와 혈안의 피해 감소는 별도 효과입니다.",
+      "type": "synergy",
+      "synergyType": "blood-shield-bloodshot",
+      "participants": [
+        "49998",
+        "77513",
+        "391398"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../Skills/죽음의일격",
+        "../Skills/피의보호막"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "../Talents/혈안"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\피의보호막-혈안.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "한밤의춤_춤추는룬무기": {
+      "id": "한밤의춤_춤추는룬무기",
+      "name": "룬 무기와 한밤의 춤",
+      "description": "한밤의 춤의 기본 노드는 룬 무기 중 무기 막기 후 무료 강화 심장 강타를 제공합니다. 뼈 보충과 필요한 죽음의 일격을 우선하며, 추가 무기의 확률 발동을 확정 생존기 대신 기대하지 않습니다.",
+      "type": "synergy",
+      "synergyType": "apex-defensive-window",
+      "participants": [
+        "1264506",
+        "49028",
+        "206930",
+        "49998"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../Skills/심장강타",
+        "../Skills/춤추는룬무기",
+        "../Skills/죽음의일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\한밤의춤-춤추는룬무기.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "deathknight_blood_deaths_caress_fatal_touch": {
