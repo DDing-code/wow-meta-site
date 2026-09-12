@@ -1022,6 +1022,20 @@ function main() {
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 
+  const feral = manuscripts['druid-feral'];
+  assert(!feral.extraSkills?.length, 'Feral spells must resolve from the canonical KB');
+  assert(kbSkills['1244258']?.type === 'atomic-skill' && kbSkills['1244258']?.castTime === '즉시' && kbSkills['1244258']?.cooldown === '20초', 'Chomp is an optional active, not a Claw passive');
+  assert(kbSkills['1244258']?.description.includes('30%') && kbSkills['1244258']?.description.includes('2초'), 'Chomp must retain both energy and grace-period conditions');
+  assert(kbSkills['441591']?.specs.join(',') === 'Feral' && kbSkills['441591']?.type === 'atomic-skill', 'Feral must use its own Ravage cast, not the hero node or Guardian attack');
+  assert(kbSkills['158476']?.name === '숲의 영혼' && !kbSkills['114113'], 'Soul of the Forest must reference the current talent node');
+  assert(kbSkills['274837']?.resourceCost === '기력 25' && kbSkills['1244544']?.description.includes('30초'), 'Feral Frenzy must retain its cost and conditional cooldown reduction');
+  assert(kbSkills['384667']?.description.includes('직접 피해') && kbSkills['390772']?.description.includes('60%'), 'Sudden Ambush and stealth Pouncing Strikes must stay distinct');
+  for (const id of ['1263827', '1263902']) {
+    assert(kbSkills[id]?.type === 'buff' && kbSkills[id]?.castTime === '지속 효과', 'Unseen attacks are automatic effects, not player casts');
+  }
+  assert(kbSkills['1263827']?.name === '보이지 않는 서슬', 'Unseen Slash must use the official Korean name');
+  assert(!feral.opener.steps.some(step => ['1244258', '441583', '441605', '1263827', '1263902'].includes(step.skillId)), 'Feral default flow must not invent Chomp selection or use passive/other-spec cast IDs');
+
   const bloodSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '혈기', 'Meta', 'guide-12.1.json');
   const blood = manuscripts['deathknight-blood'];
   if (fs.existsSync(bloodSource)) {

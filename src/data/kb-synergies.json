@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T18:18:34.284Z",
+    "generatedAt": "2026-09-12T19:06:22.749Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -2924,21 +2924,27 @@
     "SY-Druid-Feral-UnseenPredator-FerociousBite": {
       "id": "SY-Druid-Feral-UnseenPredator-FerociousBite",
       "name": "보이지않는포식자-흉포한이빨",
+      "description": "흉포한 이빨의 연계 점수에 따라 보이지 않는 공격이 자동 발동한다. 단일의 보이지 않는 서슬은 남은 출혈 피해를 합산하고, 광역의 보이지 않는 휘둘러치기는 별도 자동 공격이다. 두 효과는 직접 시전 버튼이 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
-      "class": "Druid",
-      "spec": "야성",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기"
+      "participants": [
+        "1263657",
+        "22568",
+        "1263827",
+        "1263902"
       ],
-      "linkedBuffs": [],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Buffs/보이지않는서슬",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Buffs/보이지않는휘둘러치기"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/보이지않는포식자"
       ],
@@ -3029,22 +3035,29 @@
     "SY-Druid-Feral-TigersFury-BleedSnapshot": {
       "id": "SY-Druid-Feral-TigersFury-BleedSnapshot",
       "name": "호랑이의분노-출혈스냅샷",
+      "description": "호랑이의 분노 중 새 출혈은 강화 상태를 보존한다. 은신 갈퀴 발톱의 암습의 일격 보정도 출혈에 남지만, 기습 공격의 직접 피해 강화와는 다르다. 도려내기는 강화만을 이유로 팬데믹 전에 덮어쓰지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "5217",
+        "1822",
+        "1079",
+        "390772"
+      ],
       "class": "Druid",
-      "spec": "야성",
+      "spec": "Feral",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/숨기"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/암습의일격"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\호랑이의분노-출혈스냅샷.md",
         "lastUpdate": ""

@@ -4895,38 +4895,10 @@ export const guideManuscripts = {
   'druid-feral': {
     patch: '12.0.5',
     researchedAt: '2026-06-05',
-    status: '심화 가이드',
+    status: '12.1 전환 검수 중',
     sourceStatus:
-      'Blizzard 12.0.5 한국어 패치 노트, Wowhead 한국어 가이드/툴팁, Icy Veins 운용/특성/쐐기 팁, Method Drufearr, Dreamgrove 공개 컴펜디엄/디스코드 경로, Archon/WCL 2026-06-05 로그 집계 확인.',
+      '기존 12.0.5 설명을 12.1 기준으로 다시 검토하고 있습니다. 2026-09-13 원자 주문 정보 21개를 먼저 교정했습니다. 아래 6월 사용률과 영웅 특성 추천은 현재 시즌 근거가 아니며 전체 가이드 전환은 아직 완료되지 않았습니다.',
     graphCenterSkillId: '5217',
-    extraSkills: [
-      {
-        id: '1244258',
-        koreanName: '물어뜯기',
-        englishName: 'Chomp',
-        class: 'Druid',
-        spec: 'Feral',
-        specs: ['Feral'],
-        icon: 'inv_1115_druid_jaguar',
-        type: 'talent',
-        aliases: ['Chomp'],
-      },
-      {
-        id: '106839',
-        koreanName: '두개골 강타',
-        englishName: 'Skull Bash',
-        class: 'Druid',
-        spec: 'Feral',
-        specs: ['Feral'],
-        icon: 'inv_bone_skull_04',
-        type: 'skill',
-        aliases: ['Skull Bash'],
-      },
-      { id: '132469', koreanName: '태풍', englishName: 'Typhoon', class: 'Druid', spec: 'Feral', specs: ['Feral'], icon: 'ability_druid_typhoon', type: 'talent', aliases: ['Typhoon'] },
-      { id: '102793', koreanName: '우르솔의 회오리', englishName: "Ursol's Vortex", class: 'Druid', spec: 'Feral', specs: ['Feral'], icon: 'spell_druid_ursolsvortex', type: 'talent', aliases: ["Ursol's Vortex"] },
-      { id: '99', koreanName: '행동 불가의 포효', englishName: 'Incapacitating Roar', class: 'Druid', spec: 'Feral', specs: ['Feral'], icon: 'ability_druid_demoralizingroar', type: 'talent', aliases: ['Incapacitating Roar'] },
-      { id: '339', koreanName: '휘감는 뿌리', englishName: 'Entangling Roots', class: 'Druid', spec: 'Feral', specs: ['Feral'], icon: 'spell_nature_stranglevines', type: 'skill', aliases: ['Entangling Roots'] },
-    ],
     summary:
       '야성 드루이드는 기력과 연계 점수를 기다렸다가 강화 출혈, 마무리 기술, 쿨다운 구간으로 바꾸는 근접 딜러입니다. 12.0.5 기준 레이드는 야생추적자 출혈 스냅샷, 쐐기 고단은 발톱의 드루이드 물어뜯기/찢어발기기 직접 피해가 로그에서 갈립니다. 공통 핵심은 호랑이의 분노 중 새 출혈을 적용하고, 도려내기와 원시 분노로 발동 기반을 유지한 뒤 광폭화와 영혼 소집을 사용 횟수를 잃지 않는 선에서 맞추는 것입니다.',
     sourceNote:
@@ -4957,7 +4929,7 @@ export const guideManuscripts = {
       },
       {
         label: '발톱의 드루이드',
-        skillIds: ['285381', '1244258', '441835', '441824', '441809'],
+        skillIds: ['285381', '441591', '441835', '441824', '441809'],
         summary: '쐐기에서 출혈 기반 위에 직접 피해 전환을 얹는 분기입니다. 2026-06-05 Archon 기준 쐐기 +7 이상 43,638개 로그에서 발톱의 드루이드 93.5%, 고단 2,257개 로그에서 93.1%로 확인됩니다. 원시 분노 대상 수와 도려내기 유지가 안정된 뒤 물어뜯기와 찢어발기기 보상을 봅니다.',
         bullets: [
           '오프닝/운용 변화: 원시 분노로 다수 대상 도려내기 기반을 먼저 만들고, 물어뜯기 직전에는 기력을 비워 바로 누를 수 있게 준비합니다.',
@@ -5265,7 +5237,7 @@ export const guideManuscripts = {
         { skillId: '274837', label: '야성의 광기', phase: '점수 보강', trigger: '0~2연계 점수/도려내기 유지', note: '낮은 점수에서 넣어 점수와 출혈 준비를 동시에 해결합니다. 5점이면 먼저 도려내기나 흉포한 이빨로 비웁니다.' },
         { skillId: '22568', label: '흉포한 이빨', phase: '단일 소비', trigger: '도려내기 유지+5점+충분한 기력', note: '도려내기와 갈퀴 발톱이 살아 있고 기력이 충분할 때 우선순위 대상에 씁니다. 최상위 포식자의 갈망 발동은 빠르게 소비합니다.' },
         { skillId: '285381', label: '원시 분노', phase: '쐐기 광역 출혈', trigger: '다중 대상+5점', note: '쐐기에서는 다수 대상 도려내기 유지 버튼입니다. 몹이 오래 살 때 갱신하고, 곧 죽는 풀에는 과투자하지 않습니다.' },
-        { skillId: '1244258', label: '물어뜯기', phase: '발톱의 드루이드 전환', trigger: '쐐기 빌드/낮은 기력 준비', note: '쐐기 고단 로그가 발톱의 드루이드에 몰려 있어 직접 피해 전환을 분리해서 봅니다. 돌아오기 직전 기력을 낮춰 바로 누를 수 있게 준비합니다.' },
+        { skillId: '441591', label: '찢어발기기', phase: '발톱의 드루이드 마무리', trigger: '변환됨 · 일반 시전은 5점/기력 50', note: '발톱의 드루이드를 선택해 흉포한 이빨이 변환된 경우의 실제 야성 공격입니다. 다른 영웅 특성에는 적용하지 않으며, 물어뜯기라는 별도 선택 액티브와 구분합니다.' },
       ],
     },
     tips: [
@@ -5296,7 +5268,7 @@ export const guideManuscripts = {
       { skillId: '391528', label: '영혼 소집', note: '출혈과 호랑이의 분노가 준비된 뒤 사용합니다.' },
       { skillId: '22568', label: '흉포한 이빨', note: '도려내기 유지 후 5연계 점수와 충분한 기력에서 쓰고, 최상위 포식자의 갈망 발동은 우선순위 대상에 빠르게 소비합니다.' },
       { skillId: '285381', label: '원시 분노', note: '다중 대상 도려내기 유지와 최상위 포식자의 갈망 발동 기반을 넓힙니다.' },
-      { skillId: '1244258', label: '물어뜯기', note: '발톱의 드루이드 쐐기 빌드에서 직접 피해 전환을 담당하고 찢어발기기 발동 흐름을 보조합니다.' },
+      { skillId: '441591', label: '찢어발기기', note: '발톱의 드루이드의 변환된 마무리 일격입니다. 일반 시전은 5연계 점수와 기력 50을 확보하고 적을 전방에 둡니다. 별도 선택 스킬 물어뜯기와 혼동하지 않습니다.' },
       { skillId: '274837', label: '야성의 광기', note: '낮은 연계 점수에서 써서 과충전을 피합니다.' },
       { skillId: '5221', label: '칼날 발톱', note: '단일 기본 생성기입니다.' },
       { skillId: '106785', label: '휘둘러치기', note: '출혈 유지가 안정된 뒤 광역 생성기로 씁니다.' },

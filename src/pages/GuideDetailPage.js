@@ -5224,8 +5224,8 @@ function getUptimeRows(guide, data) {
       },
       {
         label: '발톱 전환',
-        skill: findSkillByNames(data, ['물어뜯기', '찢어발기기']),
-        note: '쐐기 발톱의 드루이드 빌드는 출혈 유지 뒤 직접 피해 구간을 얹습니다.',
+        skill: findSkillByIds(data, ['441591']),
+        note: '발톱의 드루이드가 변환된 흉포한 이빨을 실제 야성 찢어발기기로 소비합니다. 별도 선택 스킬 물어뜯기와 구분합니다.',
         segments: [[30, 18], [63, 20]],
       },
       {

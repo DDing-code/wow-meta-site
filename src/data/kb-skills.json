@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T18:18:34.283Z",
+    "generatedAt": "2026-09-12T19:06:22.747Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2617,
-    "rawTotalSkills": 2617,
+    "totalSkills": 2631,
+    "rawTotalSkills": 2631,
     "duplicateIds": [],
     "totalSynergies": 457,
     "stats": {
-      "total": 2617,
+      "total": 2631,
       "byType": {
-        "buff": 20,
+        "buff": 22,
         "hero-talent": 556,
-        "atomic-skill": 478,
+        "atomic-skill": 482,
         "proc": 5,
         "skill": 167,
-        "talent": 1057,
+        "talent": 1065,
         "spec-talent": 218,
         "passive": 14,
         "hero-tree": 2,
@@ -31,7 +31,7 @@
       "byClass": {
         "DeathKnight": 111,
         "DemonHunter": 148,
-        "Druid": 176,
+        "Druid": 190,
         "Evoker": 117,
         "Hunter": 140,
         "Mage": 205,
@@ -54,7 +54,7 @@
         "DemonHunter-포식": 34,
         "Druid-공용": 47,
         "Druid-수호": 41,
-        "Druid-야성": 20,
+        "Druid-야성": 34,
         "Druid-조화": 37,
         "Druid-회복": 31,
         "Evoker-공용": 34,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2530,
-        "withSynergies": 831,
+        "withWikilinks": 2544,
+        "withSynergies": 844,
         "avgLinkDensity": "0.033"
       }
     }
@@ -4906,12 +4906,12 @@
       "school": "",
       "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "자신",
-      "description": "# 호랑이의 분노 (Tiger's Fury)",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "즉시 기력 50을 회복하고 기본 10초 동안 공격력을 15% 높인다. 활성화 중 새로 적용한 야성 출혈은 해당 강화 상태를 보존한다. 지속시간과 추가 효과는 선택한 특성에 따라 달라진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4923,18 +4923,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_jungletiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/보이지않는포식자"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/목숨을끊는일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.059,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -17188,6 +17188,60 @@
         "lastUpdate": ""
       }
     },
+    "102543": {
+      "id": "102543",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "화신: 아샤메인의 화신",
+      "koreanName": "화신: 아샤메인의 화신",
+      "englishName": "Incarnation: Avatar of Ashamane",
+      "icon": "spell_druid_incarnation",
+      "iconName": "spell_druid_incarnation",
+      "school": "",
+      "cooldown": "3분 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "습득한 광폭화 효과를 포함하는 강화 표범 형태다. 기본 지속시간은 20초이며 표범 능력의 기력 소모가 25% 감소하고 전투 중 숨기를 한 번 사용할 수 있다. 기본 재사용 대기시간과 특성으로 줄어든 주기를 구분한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_incarnation.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_incarnation.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_incarnation.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_incarnation.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_incarnation.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/광폭화사자의심장",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/아샤메인의인도",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/암습의일격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Skills\\화신아샤메인의화신.md",
+        "lastUpdate": ""
+      }
+    },
     "102558": {
       "id": "102558",
       "type": "atomic-skill",
@@ -17769,14 +17823,14 @@
       "icon": "ability_druid_berserk",
       "iconName": "ability_druid_berserk",
       "school": "",
-      "cooldown": "3분",
+      "cooldown": "3분 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 광폭화 (Berserk)",
+      "range": "",
+      "description": "기본 15초 동안 모든 공격과 능력의 피해가 15% 증가한다. 1.5초마다 연계 점수 1점을 얻고 생성기가 점수 1점을 추가로 만들며, 마무리 일격 후 상한을 초과해 생성한 점수를 최대 3점 돌려받는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17789,17 +17843,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/화신아샤메인의화신",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/야성의광기"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/광폭화사자의심장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/발톱광란"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.041,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -19195,57 +19252,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Skills\\승천.md",
-        "lastUpdate": ""
-      }
-    },
-    "114113": {
-      "id": "114113",
-      "type": "talent",
-      "class": "Druid",
-      "spec": "야성",
-      "specs": [
-        "Feral"
-      ],
-      "name": "숲의 영혼",
-      "koreanName": "숲의 영혼",
-      "englishName": "Soul of the Forest",
-      "icon": "ability_druid_manatree",
-      "iconName": "ability_druid_manatree",
-      "school": "",
-      "cooldown": "마무리 일격 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "연계 점수",
-      "range": "자신",
-      "description": "# 숲의 영혼 (Soul of the Forest)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_manatree.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_manatree.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_manatree.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_manatree.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_manatree.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.027,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\숲의영혼.md",
         "lastUpdate": ""
       }
     },
@@ -22547,6 +22553,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Talents\\빛의보살핌.md",
+        "lastUpdate": ""
+      }
+    },
+    "158476": {
+      "id": "158476",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "숲의 영혼",
+      "koreanName": "숲의 영혼",
+      "englishName": "Soul of the Forest",
+      "icon": "ability_druid_manatree",
+      "iconName": "ability_druid_manatree",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "마무리 일격의 공격력을 5% 높이고 실제로 소모한 연계 점수당 기력을 2 회복하는 야성 특성이다. 현재 특성 선택 노드는 158476이며, 이름이 같은 효과 주문 114113과 구분한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_manatree.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_manatree.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_manatree.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_manatree.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_manatree.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\숲의영혼.md",
         "lastUpdate": ""
       }
     },
@@ -38535,14 +38592,14 @@
       "icon": "ability_druid_rake",
       "iconName": "ability_druid_rake",
       "school": "",
-      "cooldown": "45초",
+      "cooldown": "45초 (기본)",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 야성의 광기 (Feral Frenzy)",
+      "resourceCost": "기력 25",
+      "range": "",
+      "description": "기력 25를 사용해 근접 대상에게 직접 피해와 6초 출혈을 주고 연계 점수 5점을 생성한다. 기본 재사용 대기시간은 45초이며 집중된 광란을 선택하면 30초가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38555,15 +38612,19 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/날뛰는광란",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
           "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/집중된광란"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.015,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -58524,6 +58585,60 @@
         "lastUpdate": ""
       }
     },
+    "384667": {
+      "id": "384667",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "기습 공격",
+      "koreanName": "기습 공격",
+      "englishName": "Sudden Ambush",
+      "icon": "ability_hunter_catlikereflexes",
+      "iconName": "ability_hunter_catlikereflexes",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "마무리 일격이 소모한 연계 점수당 6% 확률로 다음 갈퀴 발톱, 칼날 발톱 또는 휘둘러치기의 직접 피해를 50% 높이고 반드시 치명타로 적중하게 한다. 갈퀴 발톱의 출혈 전체에 은신 보정을 부여하는 효과가 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_catlikereflexes.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_catlikereflexes.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_catlikereflexes.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_catlikereflexes.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_catlikereflexes.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/칼날발톱",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/암습의일격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\기습공격.md",
+        "lastUpdate": ""
+      }
+    },
     "384815": {
       "id": "384815",
       "type": "talent",
@@ -64846,6 +64961,59 @@
         "lastUpdate": ""
       }
     },
+    "390772": {
+      "id": "390772",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "암습의 일격",
+      "koreanName": "암습의 일격",
+      "englishName": "Pouncing Strikes",
+      "icon": "ability_druid_prowl",
+      "iconName": "ability_druid_prowl",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "은신 중 갈퀴 발톱이 60% 강해지고 대상을 4초 기절시킨다. 은신 중 칼날 발톱은 피해가 60% 증가하고 치명타 확률이 두 배가 되며 연계 점수 1점을 추가로 생성한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_prowl.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_prowl.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_prowl.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_prowl.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_prowl.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/숨기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/기습공격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\암습의일격.md",
+        "lastUpdate": ""
+      }
+    },
     "390786": {
       "id": "390786",
       "type": "talent",
@@ -65481,6 +65649,59 @@
         "lastUpdate": ""
       }
     },
+    "391174": {
+      "id": "391174",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "광폭화: 사자의 심장",
+      "koreanName": "광폭화: 사자의 심장",
+      "englishName": "Berserk: Heart of the Lion",
+      "icon": "ability_druid_primalprecision",
+      "iconName": "ability_druid_primalprecision",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "광폭화 또는 화신: 아샤메인의 화신의 재사용 대기시간을 60초 줄인다. 기본 3분을 이 특성으로 2분까지 줄이며, 화신의 추가 감소는 아샤메인의 인도라는 별도 선택이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_primalprecision.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_primalprecision.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_primalprecision.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_primalprecision.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_primalprecision.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/화신아샤메인의화신"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/아샤메인의인도"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\광폭화사자의심장.md",
+        "lastUpdate": ""
+      }
+    },
     "391186": {
       "id": "391186",
       "type": "talent",
@@ -65874,6 +66095,57 @@
         "lastUpdate": ""
       }
     },
+    "391347": {
+      "id": "391347",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "찢고 도려내리",
+      "koreanName": "찢고 도려내리",
+      "englishName": "Rip and Tear",
+      "icon": "ability_ghoulfrenzy",
+      "iconName": "ability_ghoulfrenzy",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "대상에게 도려내기를 부여하면 새 도려내기 피해의 20%에 해당하는 잡아 뜯기를 함께 부여해 8초에 걸쳐 피해를 준다. 12.1에서 15%가 아닌 20%다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ghoulfrenzy.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ghoulfrenzy.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ghoulfrenzy.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ghoulfrenzy.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ghoulfrenzy.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\찢고도려내리.md",
+        "lastUpdate": ""
+      }
+    },
     "391381": {
       "id": "391381",
       "type": "talent",
@@ -66129,6 +66401,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Skills\\영혼소집.md",
+        "lastUpdate": ""
+      }
+    },
+    "391548": {
+      "id": "391548",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "아샤메인의 인도",
+      "koreanName": "아샤메인의 인도",
+      "englishName": "Ashamane's Guidance",
+      "icon": "spell_druid_incarnation",
+      "iconName": "spell_druid_incarnation",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "화신: 아샤메인의 화신을 선택했다면 재사용 대기시간이 30초 줄어든다. 영혼 소집을 선택했다면 재사용 대기시간이 50% 줄고 지속시간과 시전 주문 수가 25% 감소하며 특별한 주문의 시전 확률이 증가한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_incarnation.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_incarnation.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_incarnation.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_incarnation.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_incarnation.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/화신아샤메인의화신",
+          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\아샤메인의인도.md",
         "lastUpdate": ""
       }
     },
@@ -66400,14 +66723,14 @@
       "icon": "ability_druid_primaltenacity",
       "iconName": "ability_druid_primaltenacity",
       "school": "",
-      "cooldown": "도려내기 발동",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 최상위 포식자의 갈망 (Apex Predator's Craving)",
+      "resourceCost": "",
+      "range": "",
+      "description": "도려내기가 피해를 줄 때 기본 4% 확률로 다음 흉포한 이빨이 자원을 소모하지 않고 최대 피해를 입히도록 하는 특성이다. 무료 이빨에는 일반 이빨의 5연계 점수·기력 50 대기 조건을 그대로 적용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66430,11 +66753,63 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.036,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\최상위포식자의갈망.md",
+        "lastUpdate": ""
+      }
+    },
+    "391978": {
+      "id": "391978",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "혈관절단기",
+      "koreanName": "혈관절단기",
+      "englishName": "Veinripper",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "iconName": "inv_artifact_bloodoftheassassinated",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "도려내기와 갈퀴 발톱의 지속시간을 25% 늘리는 특성이다. 갱신 허용 시간도 실제로 적용되는 전체 지속시간을 기준으로 계산해야 한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_artifact_bloodoftheassassinated.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_artifact_bloodoftheassassinated.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_artifact_bloodoftheassassinated.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\혈관절단기.md",
         "lastUpdate": ""
       }
     },
@@ -82999,6 +83374,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\찢어발기기.md",
+        "lastUpdate": ""
+      }
+    },
+    "441591": {
+      "id": "441591",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "찢어발기기",
+      "koreanName": "찢어발기기",
+      "englishName": "Ravage",
+      "icon": "inv_ability_druidoftheclawdruid_ravage",
+      "iconName": "inv_ability_druidoftheclawdruid_ravage",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "기력 25 + 최대 25 / 연계 점수",
+      "range": "",
+      "description": "발톱의 드루이드 야성이 흉포한 이빨 대신 실제로 시전하는 강화 마무리 일격이다. 주 대상과 전방 적에게 피해를 주며, 연계 점수와 추가 기력에 따라 피해가 증가한다. 야성 시전 ID는 441591이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druidoftheclawdruid_ravage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druidoftheclawdruid_ravage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/목숨을끊는일격",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/발톱광란",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/섬뜩한상처"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Skills\\찢어발기기.md",
         "lastUpdate": ""
       }
     },
@@ -106312,6 +106740,58 @@
         "lastUpdate": ""
       }
     },
+    "1243807": {
+      "id": "1243807",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "날뛰는 광란",
+      "koreanName": "날뛰는 광란",
+      "englishName": "Frantic Frenzy",
+      "icon": "ability_xavius_nightmareblades",
+      "iconName": "ability_xavius_nightmareblades",
+      "school": "",
+      "cooldown": "45초 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "기력 25",
+      "range": "",
+      "description": "주 대상 주위를 빠르게 이동하며 부채꼴 범위를 다섯 번 공격하고 출혈을 남기는 야성 선택 공격이다. 기력 25를 사용하고 연계 점수 5점을 생성한다. 야성의 광기를 대신 선택하는 광역용 능력이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_xavius_nightmareblades.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_xavius_nightmareblades.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_xavius_nightmareblades.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_xavius_nightmareblades.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_xavius_nightmareblades.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/야성의광기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Skills\\날뛰는광란.md",
+        "lastUpdate": ""
+      }
+    },
     "1244001": {
       "id": "1244001",
       "type": "talent",
@@ -106612,7 +107092,7 @@
     },
     "1244258": {
       "id": "1244258",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Druid",
       "spec": "야성",
       "specs": [
@@ -106624,14 +107104,14 @@
       "icon": "inv_1115_druid_jaguar",
       "iconName": "inv_1115_druid_jaguar",
       "school": "",
-      "cooldown": "발동형",
-      "castTime": "지속 효과",
-      "resourceCost": "기력 관리와 연계",
-      "range": "근접",
-      "description": "# 물어뜯기 (Chomp)",
-      "category": "talent",
+      "cooldown": "20초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "기력이 최대치의 30% 미만이거나 그 아래로 내려간 뒤 2초 이내에 사용할 수 있는 야성 선택 공격이다. 치명타 피해는 일반 피해의 3배다. 발톱의 드루이드 전용 영웅 특성이나 자동 발동 효과가 아니다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106644,19 +107124,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.026,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -106812,6 +107289,109 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\대혼란-연마.md",
+        "lastUpdate": ""
+      }
+    },
+    "1244532": {
+      "id": "1244532",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "흩뿌려진 선혈",
+      "koreanName": "흩뿌려진 선혈",
+      "englishName": "Blood Spattered",
+      "icon": "ability_druid_ferociousbite",
+      "iconName": "ability_druid_ferociousbite",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자신의 도려내기에 걸린 적 하나당 주 대상에 대한 흉포한 이빨 피해가 8% 증가하며 최대 6명까지 계산한다. 12.1 기준 2%씩 10명이었던 이전 수치를 사용하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ferociousbite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ferociousbite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ferociousbite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ferociousbite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ferociousbite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\흩뿌려진선혈.md",
+        "lastUpdate": ""
+      }
+    },
+    "1244544": {
+      "id": "1244544",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "집중된 광란",
+      "koreanName": "집중된 광란",
+      "englishName": "Focused Frenzy",
+      "icon": "ability_druid_ravage",
+      "iconName": "ability_druid_ravage",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "야성의 광기 재사용 대기시간을 15초 줄이고 피해를 15% 높이는 특성이다. 기본 45초인 야성의 광기는 이 특성을 배웠을 때 30초 주기가 된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ravage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ravage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ravage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/야성의광기",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\집중된광란.md",
         "lastUpdate": ""
       }
     },
@@ -117758,14 +118338,14 @@
       "icon": "inv12_apextalent_druid_unseenpredator",
       "iconName": "inv12_apextalent_druid_unseenpredator",
       "school": "",
-      "cooldown": "흉포한 이빨 발동",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "연계 점수 소비",
-      "range": "근접",
-      "description": "# 보이지 않는 포식자 (Unseen Predator)",
+      "resourceCost": "",
+      "range": "",
+      "description": "첫 노드는 흉포한 이빨 사용 시 연계 점수당 15% 확률로 보이지 않는 공격을 자동 발동시킨다. 대상 수에 따라 보이지 않는 서슬 또는 보이지 않는 휘둘러치기가 나가며, 별도로 누르는 공격이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117778,17 +118358,15 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.039,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -117996,6 +118574,110 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\섭취.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "1263827": {
+      "id": "1263827",
+      "type": "buff",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "보이지 않는 서슬",
+      "koreanName": "보이지 않는 서슬",
+      "englishName": "Unseen Slash",
+      "icon": "ability_druid_ravage",
+      "iconName": "ability_druid_ravage",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "보이지 않는 포식자가 자동으로 내는 단일 공격 효과다. 즉시 물리 피해와 6초 출혈을 남기며 재적용 시 기존 출혈의 남은 피해를 새 출혈에 합산한다. 플레이어가 직접 시전하는 버튼이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ravage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ravage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ravage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/보이지않는포식자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Buffs\\보이지않는서슬.md",
+        "lastUpdate": ""
+      }
+    },
+    "1263902": {
+      "id": "1263902",
+      "type": "buff",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "보이지 않는 휘둘러치기",
+      "koreanName": "보이지 않는 휘둘러치기",
+      "englishName": "Unseen Swipe",
+      "icon": "spell_druid_thrash",
+      "iconName": "spell_druid_thrash",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "보이지 않는 포식자가 자동으로 내는 광역 물리 공격이다. 5명을 초과하면 감소된 피해를 입힌다. 일반 생성기 휘둘러치기와 이름이 비슷하지만 플레이어가 직접 누르는 스킬이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_thrash.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_thrash.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_thrash.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_thrash.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_thrash.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/보이지않는포식자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Buffs\\보이지않는휘둘러치기.md",
+        "lastUpdate": ""
       }
     },
     "1263920": {
@@ -128585,6 +129267,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\안개의경계선.md",
+        "lastUpdate": ""
+      }
+    },
+    "1280316": {
+      "id": "1280316",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "야성",
+      "specs": [
+        "Feral"
+      ],
+      "name": "표범의 기만",
+      "koreanName": "표범의 기만",
+      "englishName": "Panther's Guile",
+      "icon": "ability_mount_blackpanther",
+      "iconName": "ability_mount_blackpanther",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "칼날 발톱 또는 달빛섬광으로 연계 점수를 생성하면 25% 확률로 연계 점수가 최대치까지 채워진다. 휘둘러치기에서 같은 확정 보상을 기대하는 특성이 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_blackpanther.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mount_blackpanther.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mount_blackpanther.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mount_blackpanther.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_blackpanther.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/칼날발톱",
+          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Talents\\표범의기만.md",
         "lastUpdate": ""
       }
     },

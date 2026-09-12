@@ -77,6 +77,17 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected desktop, 390px and 320px layouts, hero switching, priorities and defensive conditions. Bundle `main.4ad586c4.js` displays 12-step hero flows, separate apex tooltip targets, no page overflow and no broken loaded images in these checks. The graph centers on Thrash with seven actual direct relationships.
 - Limits: current raid/M+ WCL/Archon aggregates, personal simulations and private Dreamgrove messages were not obtained. Harnessed Rage localization and some trait-rank values remain explicitly qualified. Dense graph-label overlaps, older common records, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Original KB Markdown/JSON is outside the site Git repository; the commit preserves generated DB and site changes.
 
+## In Progress
+
+### Feral Druid: In Progress, Not Counted as Updated
+
+- Reviewed the current Blizzard update/hotfix body, Korean spell tooltips, Method Drufearr and the September 8 Dreamgrove public compendium. Guide authors differ on hero/build choices; no current WCL aggregate or personal simulation was obtained.
+- First correction batch: manually authored 21 atomic notes (seven replacements, 14 additions) and corrected two synergy notes. Chomp is an optional active with its 30% energy/two-second condition; Feral Ravage is cast 441591; Soul of the Forest uses talent 158476 rather than effect 114113. Corrected Feral Frenzy cost, conditional cooldown reductions and automatic Unseen attacks.
+- Removed Feral extraSkills overrides so current KB data reaches the site. Corrected default chart references that treated Chomp as a mandatory Claw attack; the uptime chart now resolves the exact Feral Ravage ID, not the identically named passive or Guardian cast.
+- The guide still contains older prose and is explicitly marked as under review, retaining its 12.0.5 patch label. Remaining work includes a full rewrite of historical usage recommendations, opener/ST/AoE separation, hero/build-specific priorities, apex ranks, Season 2 set and remaining local/shared records. This batch is not completion of the Feral guide or the all-specialization goal.
+- Canonical review state and changelog record the limited scope; historical June aggregates are excluded from current recommendations. Source KB files remain outside the site Git repository.
+- Verification: all prebuild checks and the production build passed. Online strict name/icon/metadata/link checks passed for all 34 local numeric records; 26 explicitly referenced guide IDs passed the icon/name check. This checks metadata, not full current availability of all older records. Desktop, 390px and 320px checks found no page/rail overflow or clipped labels; all 11 visible flow icons loaded and the native disclosure worked. Production bundle: `main.02b1b126.js`. Existing 86 global KB-link warnings, mixed-patch metadata and bundle-size warning remain.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
