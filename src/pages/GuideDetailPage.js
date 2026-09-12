@@ -2035,7 +2035,6 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
             <SkillIconLink skill={step.skill} size={24} />
             <OpenerStepBody>
               <strong>{displayGuideText(step.label)}</strong>
-              {!!step.trigger && <span>{displayGuideText(step.trigger)}</span>}
             </OpenerStepBody>
             {index < flowItems.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
           </li>
@@ -3180,7 +3179,7 @@ function PriorityListChart({ guide, title, skills, manualPriority, inlineTerms }
       {rows.map((row, index) => (
         <PriorityRow key={row.key} $rank={index}>
           <PriorityRank>{index + 1}</PriorityRank>
-          <SkillIconLink skill={row.skill} size={32} />
+          <SkillIconLink skill={row.skill} size={24} />
           <PriorityText>
             <strong>{displayGuideText(row.name)}</strong>
             <span>{renderGuideText(row.note, inlineTerms)}</span>
@@ -6742,31 +6741,28 @@ const OpenerFlowViewport = styled.div`
 `;
 
 const OpenerFlowList = styled.ol`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
-  gap: 4px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
   min-width: 0;
   margin: 0;
   padding: 8px 10px;
   list-style: none;
 
   li {
-    display: grid;
-    grid-template-columns: 16px 24px minmax(0, 1fr) 13px;
+    display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     min-width: 0;
-    padding: 5px 0;
+    max-width: 100%;
+    padding: 3px 0;
   }
 
   li > svg {
+    flex: 0 0 auto;
+    margin-left: 4px;
     color: ${props => props.$color || '#b8915b'};
-  }
-
-  @container (max-width: 349px) {
-    li > svg {
-      transform: rotate(90deg);
-    }
   }
 `;
 
@@ -6782,17 +6778,10 @@ const OpenerStepBody = styled.div`
     font-weight: 650;
     line-height: 1.4;
   }
-
-  > span {
-    display: block;
-    margin-top: 1px;
-    color: #aab6be;
-    font-size: 0.7rem;
-    line-height: 1.4;
-  }
 `;
 
 const OpenerStepNumber = styled.span`
+  flex: 0 0 auto;
   color: #9eacb4;
   font-size: 0.65rem;
   font-variant-numeric: tabular-nums;
@@ -7130,11 +7119,11 @@ const priorityLine = rank => Math.max(0.16, 0.78 - rank * 0.075);
 
 const PriorityRow = styled.div`
   display: grid;
-  grid-template-columns: 30px 32px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 22px 24px minmax(0, 1fr);
+  gap: 8px;
   align-items: center;
-  min-height: 58px;
-  padding: 10px 14px;
+  min-height: 44px;
+  padding: 8px 10px;
   border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   background:
     linear-gradient(
@@ -7146,8 +7135,8 @@ const PriorityRow = styled.div`
 
   &:before {
     content: '';
-    width: 4px;
-    height: 32px;
+    width: 3px;
+    height: 24px;
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
