@@ -544,7 +544,7 @@ function SkillIconImage({ skill, size = 36, inline = false }) {
 }
 
 function isInactiveSkillReference(skill) {
-  return /legacy|removed|deprecated/i.test(cleanText(skill?.type));
+  return !/^\d+$/.test(String(skill?.id)) || /legacy|removed|deprecated/i.test(cleanText(skill?.type));
 }
 
 function collectManuscriptSkillIds(value, ids = new Set()) {
@@ -1269,6 +1269,7 @@ function SkillIconLink({ skill, size = 36, stacked = false }) {
 }
 
 function InlineSkillTerm({ skill, children }) {
+  if (isInactiveSkillReference(skill)) return <span>{children}</span>;
   return (
     <InlineSkillAnchor
       href={wowheadUrl(skill)}
@@ -1682,18 +1683,6 @@ const SPECIALIST_CHARTS = {
       { phase: '곰 상태 보조 회복', skillId: '8936', label: '발동 재생', note: '세나리우스의 꿈 발동이 있을 때 직접 대상을 골라 즉시·무료 치유합니다. 꿈의 안내자의 자동 치유와 구분합니다.', action: '발동·대상 확인' },
     ],
   },
-  'druid-feral': {
-    id: 'uptime',
-    title: '출혈 유지와 호랑이의 분노',
-    sectionHeading: '강화 출혈과 발동 전환',
-    sectionIntro: '야성 드루이드는 갈퀴 발톱, 도려내기, 원시 분노를 어떤 강화 상태로 유지하는지와 호랑이의 분노 구간이 어떻게 겹치는지가 핵심입니다.',
-    caption: '갈퀴 발톱, 도려내기, 원시 분노, 호랑이의 분노, 광폭화, 흉포한 이빨, 쐐기 발톱 전환을 확인합니다.',
-    definition: [
-      ['의미', '출혈은 야성의 피해 바탕이고, 호랑이의 분노와 광폭화는 그 출혈과 마무리 기술 가치를 끌어올리는 구간입니다.'],
-      ['읽는 법', '출혈이 끊기기 전에 갱신하고, 강한 구간에는 흉포한 이빨이나 원시 분노가 낮은 가치로 빠지지 않는지 봅니다.'],
-      ['체크 포인트', '갈퀴 발톱/도려내기 공백, 호랑이의 분노 지연, 기력 과충전, 연계 점수 과충전, 광역 원시 분노 누락을 봅니다.'],
-    ],
-  },
   'hunter-beastmastery': {
     id: 'uptime',
     title: '야수의 격노와 광역 준비',
@@ -1818,7 +1807,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -2068,6 +2057,35 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
   );
 }
 
+function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
+  const [mode, setMode] = useState('opener');
+  const current = branch[mode];
+
+  return (
+    <div data-guide-rotation-modes>
+      <HeroBranchTabs role="group" aria-label="전투 상황 선택">
+        {[['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']].map(([id, label]) => (
+          <HeroBranchTab key={id} type="button" aria-pressed={mode === id} $active={mode === id} $color={guide.color} onClick={() => setMode(id)}>
+            {label}
+          </HeroBranchTab>
+        ))}
+      </HeroBranchTabs>
+      <div key={mode} role="region" aria-label={current.title} data-rotation-mode={mode}>
+        <OpenerFlowIntro>
+          <strong>{renderGuideText(current.title, inlineTerms)}</strong>
+          <p>{renderGuideText(current.summary, inlineTerms)}</p>
+        </OpenerFlowIntro>
+        {!!current.steps?.length && (
+          <OpenerFlowPreview guide={guide} steps={getOpenerFlowSteps({ opener: current }, profile, guide)} inlineTerms={inlineTerms} />
+        )}
+        {!!current.priority?.length && (
+          <PriorityListChart guide={guide} title="조건을 위에서부터 확인" manualPriority={current.priority} inlineTerms={inlineTerms} />
+        )}
+      </div>
+    </div>
+  );
+}
+
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   const [tipsExpanded, setTipsExpanded] = useState(false);
   const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(0);
@@ -2105,6 +2123,8 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
   const hiddenTipCount = Math.max(tipItems.length - visibleTipItems.length, 0);
   const heroBranches = (manuscript.heroBranches || []).filter(branch => branch?.label || branch?.summary);
   const activeHeroBranch = heroBranches[activeHeroBranchIndex] || heroBranches[0];
+  const hasRotationModes = !!activeHeroBranch?.opener?.steps?.length
+    && !!activeHeroBranch?.singleTarget?.priority?.length && !!activeHeroBranch?.aoe?.priority?.length;
   const heroBranchComparisonRows = HERO_BRANCH_DETAIL_LABELS
     .map((label, detailIndex) => ({
       label,
@@ -2140,7 +2160,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         </ManuscriptMeta>
       </PaperLead>
 
-      {hasOpenerGuide && (
+      {hasOpenerGuide && !hasRotationModes && (
         <OpenerFlowCard
           $color={guide.color}
           aria-label={getFlowChartTitle(guide)}
@@ -2274,14 +2294,16 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       <HeroBranchSkillList>
                         {branchSkills.map(skill => (
                           <li key={`${branch.label}-${skill.id}`}>
-                            <SkillIconLink skill={skill} size={28} />
-                            <span>{renderGuideText(skillName(skill), inlineTerms)}</span>
+                            <InlineSkillTerm skill={skill}>{skillName(skill)}</InlineSkillTerm>
                           </li>
                         ))}
                       </HeroBranchSkillList>
                     </HeroBranchSkillBlock>
                   )}
-                  {!!branch.opener?.steps?.length && (
+                  {hasRotationModes && (
+                    <GuideRotationModes key={branch.label} branch={branch} guide={guide} profile={profile} inlineTerms={inlineTerms} />
+                  )}
+                  {!hasRotationModes && !!branch.opener?.steps?.length && (
                     <OpenerFlowPreview guide={guide} steps={getOpenerFlowSteps(branch, profile, guide)} inlineTerms={inlineTerms} />
                   )}
                   {!!branchFlowNote && !branch.opener?.steps?.length && (
@@ -2442,7 +2464,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           );
         })}
 
-        {priorityChart && (
+        {priorityChart && !hasRotationModes && (
           <PaperSection $fullWidth data-guide-block="priority">
             <h3>{activeHeroBranch?.priority?.length ? `${activeHeroBranch.label} 실전 우선순위` : '실전 우선순위'}</h3>
             <p>
@@ -2551,7 +2573,7 @@ function GuideDetailPage() {
     },
     {
       label: '공격대',
-      text: playstyleItem(/레이드|공격대/)?.text || '공격대 피해 타이밍에 맞춰 주요 쿨기와 회복 수단을 배치합니다.',
+      text: playstyleItem(/레이드|공격대/)?.text || '보스의 공격 가능 시간과 주요 기믹에 맞춰 쿨기를 배치합니다.',
     },
     {
       label: '쐐기',
@@ -2559,7 +2581,7 @@ function GuideDetailPage() {
     },
     {
       label: '로그에서 볼 것',
-      text: playstyleItem(/확인|로그/)?.text || manuscript?.caveats?.[0] || '핵심 기술의 사용 횟수와 쿨다운 공백을 먼저 확인합니다.',
+      text: playstyleItem(/확인|로그/)?.text || '핵심 기술의 사용 횟수와 쿨다운 공백을 먼저 확인합니다.',
     },
   ];
 
@@ -5196,58 +5218,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'druid-feral') {
-    return [
-      {
-        label: '갈퀴 발톱 강화',
-        skill: findSkillByNames(data, ['갈퀴 발톱']),
-        note: '숨기 또는 호랑이의 분노 조건에서 새로 적용할 때 피해가 강해집니다.',
-        segments: [[4, 28], [43, 30], [78, 16]],
-      },
-      {
-        label: '도려내기/팬데믹',
-        skill: findSkillByNames(data, ['도려내기']),
-        note: '5연계 점수와 팬데믹 범위, 호랑이의 분노 대기시간을 함께 봅니다.',
-        segments: [[12, 38], [58, 34]],
-      },
-      {
-        label: '원시 분노 대상수',
-        skill: findSkillByNames(data, ['원시 분노']),
-        note: '다수 대상 도려내기를 갱신하고 최상위 포식자의 갈망 발동 기반을 넓히는 구간입니다.',
-        segments: [[22, 20], [55, 22], [83, 12]],
-      },
-      {
-        label: '호랑이의 분노 구간',
-        skill: findSkillByNames(data, ['호랑이의 분노']),
-        note: '기력 과잉 없이 사용하고, 구간 안에서 새 출혈 또는 큰 소비기를 배치합니다.',
-        segments: [[8, 13], [45, 13], [82, 13]],
-      },
-      {
-        label: '발톱 전환',
-        skill: findSkillByIds(data, ['441591']),
-        note: '발톱의 드루이드가 변환된 흉포한 이빨을 실제 야성 찢어발기기로 소비합니다. 별도 선택 스킬 물어뜯기와 구분합니다.',
-        segments: [[30, 18], [63, 20]],
-      },
-      {
-        label: '단일 소모',
-        skill: findSkillByNames(data, ['흉포한 이빨', '최상위 포식자의 갈망']),
-        note: '도려내기 유지 뒤 5연계 점수와 충분한 기력에서 우선 대상에 마무리합니다.',
-        segments: [[34, 10], [58, 10], [86, 8]],
-      },
-      {
-        label: '쿨다운 몰아넣기',
-        skill: findSkillByNames(data, ['광폭화', '영혼 소집', '야성의 광기']),
-        note: '출혈이 준비된 뒤 사용하되, 기다리느라 전투 전체 사용 횟수를 잃지 않는 것이 기준입니다.',
-        segments: [[18, 18], [60, 18]],
-      },
-      {
-        label: '쐐기 유틸',
-        skill: findSkillByNames(data, ['나무 껍질', '두개골 강타', '달래기', '쇄도의 포효']),
-        note: '첫 광역 구간보다 위협, 차단, 격노 해제, 파티 이동이 먼저인 구간을 분리합니다.',
-        segments: [[14, 8], [48, 8], [74, 8], [90, 6]],
-      },
-    ];
-  }
 
   const pool = uniqueBy([...data.featuredSkills, ...data.defensiveSkills, ...data.healingSkills], skill => String(skill.id)).slice(0, 4);
   return pool.map((skill, index) => ({

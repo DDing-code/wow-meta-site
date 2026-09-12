@@ -77,26 +77,27 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected desktop, 390px and 320px layouts, hero switching, priorities and defensive conditions. Bundle `main.4ad586c4.js` displays 12-step hero flows, separate apex tooltip targets, no page overflow and no broken loaded images in these checks. The graph centers on Thrash with seven actual direct relationships.
 - Limits: current raid/M+ WCL/Archon aggregates, personal simulations and private Dreamgrove messages were not obtained. Harnessed Rage localization and some trait-rank values remain explicitly qualified. Dense graph-label overlaps, older common records, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Original KB Markdown/JSON is outside the site Git repository; the commit preserves generated DB and site changes.
 
-## In Progress
+### Feral Druid
 
-### Feral Druid: In Progress, Not Counted as Updated
-
-- Reviewed the current Blizzard update/hotfix body, Korean spell tooltips, Method Drufearr and the September 8 Dreamgrove public compendium. Guide authors differ on hero/build choices; no current WCL aggregate or personal simulation was obtained.
-- First correction batch: manually authored 21 atomic notes (seven replacements, 14 additions) and corrected two synergy notes. Chomp is an optional active with its 30% energy/two-second condition; Feral Ravage is cast 441591; Soul of the Forest uses talent 158476 rather than effect 114113. Corrected Feral Frenzy cost, conditional cooldown reductions and automatic Unseen attacks.
-- Removed Feral extraSkills overrides so current KB data reaches the site. Corrected default chart references that treated Chomp as a mandatory Claw attack; the uptime chart now resolves the exact Feral Ravage ID, not the identically named passive or Guardian cast.
-- The guide still contains older prose and is explicitly marked as under review, retaining its 12.0.5 patch label. Remaining work includes a full rewrite of historical usage recommendations, opener/ST/AoE separation, hero/build-specific priorities, apex ranks, Season 2 set and remaining local/shared records. This batch is not completion of the Feral guide or the all-specialization goal.
-- Canonical review state and changelog record the limited scope; historical June aggregates are excluded from current recommendations. Source KB files remain outside the site Git repository.
-- Verification: all prebuild checks and the production build passed. Online strict name/icon/metadata/link checks passed for all 34 local numeric records; 26 explicitly referenced guide IDs passed the icon/name check. This checks metadata, not full current availability of all older records. Desktop, 390px and 320px checks found no page/rail overflow or clipped labels; all 11 visible flow icons loaded and the native disclosure worked. Production bundle: `main.02b1b126.js`. Existing 86 global KB-link warnings, mixed-patch metadata and bundle-size warning remain.
+- Replaced the old manuscript in place with 14 manually authored practical subjects, role-specific summaries, ten tips and separate Claw/Wildstalker explanations. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/03-드루이드/야성/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 update and September hotfixes, current Korean tooltips, Method Drufearr, Dreamgrove Crazymeow, Wowhead Guiltyas and Icy Veins Wordup. Source dates and conflicting recommendations remain explicit. No current WCL aggregate, personal simulation or private Discord evidence was obtained.
+- Completed the manual review of all 51 local atomic records, nine shared Wildstalker records and Convoke; authored 12 synergies. Removed obsolete cat Thrash 106830 without removing Guardian cast 77758. Generated DB changes remain confined to Druid records.
+- Corrected current cast/passive identities, Chomp conditions, resource costs and talent-adjusted cooldowns, three separate apex nodes, free Bite, Cat's Cunning, AoE Rake/build conditions, Rampant Ferocity, automatic vine effects and Season 2 effective-combo-point duration. SimC commit `c8352dd12b9d57a9f510f29860969160e83653cc` is implementation evidence, not a measured WCL result.
+- Added separately authored opener, single-target and AoE modes for each hero using existing compact flow and priority renderers. Claw AoE's Incarnation example does not also require Convoke; Wildstalker does not borrow Ravage. Passive procs remain conditions, not cast buttons. Removed the fabricated uptime timeline.
+- Synergies center on Ferocious Bite with nine direct authored relationships. The tier relationship displays the actual Halazzi's Wrath buff rather than internal set-effect icons; internal effect records remain in the DB.
+- Fixed shared hero anchors that duplicated icons and re-resolved identical names to the wrong tooltip. Explicit spell IDs now keep their own icon/name link; invalid, removed and non-numeric references remain plain text. Added runnable regression checks. Generic overview fallbacks no longer prescribe healing to damage dealers or substitute source caveats for log-review advice.
+- Canonical equality, scoped gameplay assertions, all prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for 51 local notes, 54 numeric shared notes and Convoke; explicit guide name/icon checks passed for 25 IDs with zero errors/warnings. Shared metadata validation is not a full mechanics re-audit of all 54 notes.
+- Inspected desktop, 390px and 320px combat modes, hero switching, native condition disclosure and exact Ravage/apex tooltip IDs. No document/rail overflow, broken loaded icons or console errors were found in these checks.
+- Limits: live aggregate usage/DPS, ambiguous apex tooltip values, older shared mechanics, generic featured-skill ranking and dense graph-label layout still need work. Existing 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the commit contains generated DB and site content.
 
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 24 manuscripts
+## Still 12.0.5: 23 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Druid | Feral |
 | Evoker | Augmentation |
 | Hunter | Beast Mastery, Marksmanship, Survival |
 | Mage | Fire, Frost |
@@ -110,8 +111,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: 28px icons, wrapping numbered steps, visible short conditions and native disclosure for complete explanations. No rotation advice was rewritten for this UI change; KB sync produced no content changes. Separate authored opener/single-target/AoE modes are still pending and must preserve hero-specific conditions, not duplicate one priority list into three tabs.
-- Complete fresh manual research and KB/DB/guide updates for the 24 older manuscripts; next: Feral Druid.
+- Shared flow layout simplified on 2026-09-13: 24px icons, wrapping numbered steps, short conditions and native disclosure for complete explanations. Feral now has authored opener/single-target/AoE modes for both heroes; the other guides still need separately verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 23 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

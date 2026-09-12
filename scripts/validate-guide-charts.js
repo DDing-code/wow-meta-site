@@ -432,6 +432,10 @@ function main() {
   assert(flowStyles.includes('@container (max-width: 349px)'), 'Flow arrows should point down only below the two-column threshold (2 * 160 + 10 gap + 20 padding)');
   assert(flowPreview.includes('<OpenerFlowDetails') && flowStyles.includes('styled.details'), 'Long flow explanations must use an accessible native disclosure');
   assert(flowPreview.includes('renderGuideText(step.note, inlineTerms)') && flowPreview.includes('displayGuideText(step.trigger)'), 'Compact flows must retain every explanation and keep use conditions visible');
+  const modePreview = guideDetailSource.slice(guideDetailSource.indexOf('function GuideRotationModes('), guideDetailSource.indexOf('function NarrativeGuideSection('));
+  assert(modePreview.includes("['opener', '오프닝']") && modePreview.includes("['singleTarget', '단일']") && modePreview.includes("['aoe', '광역']"), 'Authored combat modes must offer opener, single target and AoE');
+  assert(modePreview.includes('aria-pressed={mode === id}') && modePreview.includes('manualPriority={current.priority}'), 'Mode selection must expose its state and render conditional priorities, not duplicate the opener');
+  assert(guideDetailSource.includes('hasOpenerGuide && !hasRotationModes') && guideDetailSource.includes('priorityChart && !hasRotationModes'), 'Authored combat modes must not also show duplicate generic opener and priority charts');
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const skillIds = availableSkillIds(skills, manuscripts);
   const guideRecords = parseGuideRecords(guideRegistrySource);
@@ -459,7 +463,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc'].includes(guideId)) {
+    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);
@@ -488,6 +492,10 @@ function main() {
   assert(vengeanceChart.events.some(event => event.skillId === '204021' && event.action === '개인 피해 감소'), 'Vengeance chart must not retain the old target-only Fiery Brand behavior');
   assert(!vengeanceChart.events.some(event => ['263648', '1270444', '1253304'].includes(event.skillId)), 'Vengeance passive effects must not appear as defensive cast buttons');
   assert(guideDetailSource.includes('priority: activeHeroBranch.priority') && guideDetailSource.includes('aria-label="우선순위 영웅 특성 선택"'), 'Authored hero priorities must follow the selected hero branch and be switchable at the table');
+  assert(guideDetailSource.includes('<InlineSkillTerm skill={skill}>{skillName(skill)}</InlineSkillTerm>') && !guideDetailSource.includes('renderGuideText(skillName(skill), inlineTerms)'), 'Explicit hero spell IDs must keep one icon and their own tooltip instead of re-resolving identical names');
+  assert(guideDetailSource.includes('function InlineSkillTerm({ skill, children }) {\n  if (isInactiveSkillReference(skill)) return <span>{children}</span>;'), 'Direct inline spell references must reject invalid or inactive IDs');
+  const inactiveReference = new Function('skill', 'cleanText', extractFunctionBody(guideDetailSource, 'isInactiveSkillReference'));
+  assert(!inactiveReference({ id: '441583', type: 'hero-talent' }, String) && [null, { id: 'hero-claw' }, { id: '441583', type: 'removed' }].every(skill => inactiveReference(skill, String)), 'Inline links must accept live numeric spell IDs and reject missing, tree and removed records');
   for (const block of ['priority', 'specialist-chart']) {
     assert(guideDetailSource.includes(`<PaperSection $fullWidth data-guide-block="${block}">`), 'Guide chart sections must not use the narrow sidebar track: ' + block);
   }

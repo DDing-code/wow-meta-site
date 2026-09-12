@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T19:06:22.749Z",
+    "generatedAt": "2026-09-12T20:14:51.738Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 457,
-    "rawTotalSynergies": 457,
+    "totalSynergies": 462,
+    "rawTotalSynergies": 462,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 149,
+      "unknown": 154,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -273,7 +273,7 @@
     "byClass": {
       "DeathKnight": 28,
       "DemonHunter": 35,
-      "Druid": 49,
+      "Druid": 54,
       "Evoker": 28,
       "Hunter": 26,
       "Mage": 34,
@@ -2875,20 +2875,29 @@
     "SY-Druid-Feral-Berserk-Convoke-Frenzy": {
       "id": "SY-Druid-Feral-Berserk-Convoke-Frenzy",
       "name": "광폭화-영혼소집-야성의광기",
+      "description": "광폭화로 생성과 소비를 빠르게 돌리면서 도려내기가 남아 있는 대상에게 영혼 소집을 쓴다. 낮은 연계 점수가 유리하지만 완벽한 0점을 기다리며 쿨다운 사용을 계속 미루지는 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "106951",
+        "102543",
+        "391528",
+        "274837",
+        "1079",
+        "22568"
+      ],
       "class": "Druid",
-      "spec": "야성",
+      "spec": "Feral",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/화신아샤메인의화신",
+        "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/영혼소집",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/야성의광기",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -2897,22 +2906,63 @@
         "lastUpdate": ""
       }
     },
+    "feral-덩굴-흉포한이빨-폭발": {
+      "id": "feral-덩굴-흉포한이빨-폭발",
+      "name": "덩굴-흉포한이빨-폭발",
+      "description": "야생추적자는 덩굴이 붙은 대상의 이빨로 폭발하는 성장물을 활용한다. 식재로 덩굴을 붙일 기회와 광분증의 자동 폭발은 별도 조건이며, 폭발 횟수를 전부 수동 이빨 성공 횟수로 세지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "439531",
+        "22568",
+        "440120",
+        "440118",
+        "1270586",
+        "439882"
+      ],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Buffs/피바라미덩굴"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\덩굴-흉포한이빨-폭발.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-Druid-Feral-ThrivingGrowth-Bleeds": {
       "id": "SY-Druid-Feral-ThrivingGrowth-Bleeds",
       "name": "번성하는성장물-출혈",
+      "description": "야생추적자는 갈퀴 발톱과 도려내기의 주기 피해로 피바라미 덩굴을 만든다. 이중 발톱 갈퀴는 적용 대상을 넓히고, 활력의 덩굴은 덩굴이 붙은 대상에 대한 피해를 강화한다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
-      "class": "Druid",
-      "spec": "야성",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱"
+      "participants": [
+        "1822",
+        "1079",
+        "391700",
+        "439528",
+        "439531",
+        "440119"
       ],
-      "linkedBuffs": [],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Buffs/피바라미덩굴"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/이중발톱갈퀴"
       ],
@@ -2953,75 +3003,232 @@
         "lastUpdate": ""
       }
     },
-    "원시분노_광역출혈": {
-      "id": "원시분노_광역출혈",
-      "name": "원시분노-광역출혈",
+    "feral-시즌2-광폭화-할라지의격노": {
+      "id": "feral-시즌2-광폭화-할라지의격노",
+      "name": "시즌2-광폭화-할라지의격노",
+      "description": "시즌 2 4세트는 광폭화·화신을 10초 늘리고, 그 안에서 사용한 마무리 공격의 유효 점수는 종료 후 할라지의 격노 시간으로 이어진다. 극딜이 끝난 뒤에도 공격할 수 있는 구간에 쿨다운을 배정한다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "106951",
+        "102543",
+        "22568",
+        "1301600"
+      ],
       "class": "Druid",
       "spec": "Feral",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/난타",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/화신아샤메인의화신",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Buffs/할라지의격노"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\시즌2-광폭화-할라지의격노.md",
+        "lastUpdate": ""
+      }
+    },
+    "feral-원시분노-광역출혈": {
+      "id": "feral-원시분노-광역출혈",
+      "name": "원시분노-광역출혈",
+      "description": "원시 분노로 여러 적에게 도려내기를 걸면 무료 흉포한 이빨 발동 기회와 흩뿌려진 선혈 보상을 함께 얻는다. 다음 출혈 갱신에 필요한 점수를 남길 수 있을 때 일반 이빨로 넘어간다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "285381",
+        "1079",
+        "391881",
+        "1244532",
+        "22568"
+      ],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/최상위포식자의갈망"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/최상위포식자의갈망",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/흩뿌려진선혈"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\원시분노-광역출혈.md",
         "lastUpdate": ""
       }
     },
-    "출혈_흉포한이빨": {
-      "id": "출혈_흉포한이빨",
-      "name": "출혈-흉포한이빨",
+    "feral-정점-호랑이의분노-생성기": {
+      "id": "feral-정점-호랑이의분노-생성기",
+      "name": "정점-호랑이의분노-생성기",
+      "description": "마지막 보이지 않는 포식자 노드는 호랑이의 분노 뒤 두 생성기에 최대 강도의 보이지 않는 공격을 붙인다. 단일 빠른 시작에서 호랑이의 분노를 전투 전에 쓰는 이유가 생기며, 자동 후속 공격을 따로 누르지는 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "5217",
+        "1263660",
+        "5221",
+        "106785",
+        "1263827",
+        "1263902"
+      ],
       "class": "Druid",
       "spec": "Feral",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/칼날발톱",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Buffs/보이지않는서슬",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Buffs/보이지않는휘둘러치기"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/보이지않는포식자-마지막"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\정점-호랑이의분노-생성기.md",
+        "lastUpdate": ""
+      }
+    },
+    "feral-찢어발기기-섬뜩한상처": {
+      "id": "feral-찢어발기기-섬뜩한상처",
+      "name": "찢어발기기-섬뜩한상처",
+      "description": "발톱의 드루이드는 자동 공격, 첫 전투 중 호랑이의 분노, 광폭화 중 생성기 발동으로 이빨을 찢어발기기로 바꾼다. 실제 전방 공격을 적에게 맞혀 섬뜩한 상처를 붙이며 자동 변환과 실제 시전을 구분한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "22568",
+        "441583",
+        "441591",
+        "441824",
+        "441809",
+        "441835"
+      ],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/갈퀴발톱",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/찢어발기기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\찢어발기기-섬뜩한상처.md",
+        "lastUpdate": ""
+      }
+    },
+    "feral-출혈-흉포한이빨": {
+      "id": "feral-출혈-흉포한이빨",
+      "name": "출혈-흉포한이빨",
+      "description": "도려내기는 무료 이빨 발동 기반이며 이빨은 칼날이빨로 대상의 지속 피해를 강화한다. 무료 발동은 5점·기력 50을 기다리지 않고, 일반 이빨은 필요한 출혈 갱신과 자원을 확보한 뒤 쓴다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1079",
+        "22568",
+        "391881",
+        "202031",
+        "421432",
+        "158476"
+      ],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/최상위포식자의갈망"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/최상위포식자의갈망",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/칼날이빨",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/표범의아귀",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/숲의영혼"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\출혈-흉포한이빨.md",
         "lastUpdate": ""
       }
     },
+    "feral-표범의기만-연계점수": {
+      "id": "feral-표범의기만-연계점수",
+      "name": "표범의기만-연계점수",
+      "description": "생성 도중 표범의 기만이 점수를 채우면 다음 입력을 마무리 공격으로 바꾼다. 광폭화의 초과 점수 보관과 터져 나오는 탄력은 일부 낭비를 보상할 뿐, 생성기를 무조건 두 번 예약할 이유가 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1280316",
+        "5221",
+        "106785",
+        "22568",
+        "285381",
+        "449537"
+      ],
+      "class": "Druid",
+      "spec": "Feral",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/칼날발톱",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/휘둘러치기",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/표범의기만",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/터져나오는탄력"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Synergies\\표범의기만-연계점수.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-Druid-Feral-TigersTenacity-Bleeds": {
       "id": "SY-Druid-Feral-TigersTenacity-Bleeds",
       "name": "호랑이의끈기-출혈",
+      "description": "호랑이의 끈기는 호랑이의 분노를 강화하고 다음 세 마무리 공격 뒤 연계 점수를 한 점씩 돌려준다. 출혈 강화와 다음 생성 횟수 변화가 함께 일어나므로 마무리 후 점수를 다시 확인한다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "5217",
+        "391872",
+        "1079",
+        "285381",
+        "22568"
+      ],
       "class": "Druid",
-      "spec": "야성",
+      "spec": "Feral",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
         "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노"
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
+        "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
       ],
       "linkedBuffs": [],
       "linkedTalents": [

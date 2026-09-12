@@ -16,6 +16,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['demonhunter-havoc', '12.1'],
   ['demonhunter-vengeance', '12.1'],
   ['druid-guardian', '12.1'],
+  ['druid-feral', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -429,6 +430,13 @@ function collectActiveSkillRefs(manuscript) {
     (branch.priority || []).forEach((item, index) => {
       skillRefs.push([`heroBranches[${branchIndex}].priority[${index}].skillId`, item.skillId]);
     });
+    for (const mode of ['opener', 'singleTarget', 'aoe']) {
+      for (const field of ['steps', 'priority']) {
+        (branch[mode]?.[field] || []).forEach((row, index) => {
+          skillRefs.push([`heroBranches[${branchIndex}].${mode}.${field}[${index}].skillId`, row.skillId]);
+        });
+      }
+    }
   });
 
   return skillRefs;
@@ -1023,6 +1031,29 @@ function main() {
   const readySpecs = registry.getReadyGuideSpecs();
 
   const feral = manuscripts['druid-feral'];
+  const feralSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '03-드루이드', '야성', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(feralSource)) {
+    assert(JSON.stringify(JSON.parse(read(feralSource))) === JSON.stringify(feral), 'Feral must match its canonical 12.1 KB manuscript');
+  }
+  const feralNotes = Object.values(kbSkills).filter(skill => /[\\/]03-드루이드[\\/]야성[\\/]/.test(skill.source?.kbPath || ''));
+  assert(feralNotes.length === 51 && feralNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 51 Feral records must retain reviewed descriptions through sync');
+  assert(!kbSkills['106830'] && kbSkills['77758']?.specs.includes('Guardian'), 'Removed cat Thrash must not remove the current Guardian cast');
+  assert(kbSkills['1301600']?.name === '할라지의 격노' && kbSkills['1301600']?.type === 'buff', 'Feral tier graph must use the actual passive buff and official icon');
+  assert(kbSkills['1296605']?.description.includes('유효 연계 점수') && kbSkills['1296605']?.description.includes('0.75초'), 'Feral tier must retain effective CP and conditional duration');
+  assert(kbSkills['391709']?.description.includes('도려내기 대상 제한이 없'), 'Rampant Ferocity must not regain the stale Rip-only target rule');
+  assert(kbSkills['155625']?.name === '달빛섬광' && kbSkills['155580']?.name === '달 바라기', 'Feral Moonfire must resolve its own cast and official talent name');
+  for (const branch of feral.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Feral requires separately authored opener, ST and AoE content for each hero');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Feral ST and AoE must not duplicate the same priority');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Feral mode rows must contain real cast buttons and complete use conditions');
+      }
+    }
+    assert(branch.singleTarget.priority.some(row => row.skillId === '1079') && branch.aoe.priority.some(row => row.skillId === '285381'), 'Feral ST Rip and AoE Primal Wrath must stay distinct');
+  }
+  assert(!feral.heroBranches[0].aoe.priority.some(row => row.skillId === '391528'), 'The Feral Incarnation example must not also require Convoke');
+  assert(!feral.heroBranches[1].aoe.priority.some(row => row.skillId === '441591'), 'Wildstalker must not borrow Claw Ravage');
   assert(!feral.extraSkills?.length, 'Feral spells must resolve from the canonical KB');
   assert(kbSkills['1244258']?.type === 'atomic-skill' && kbSkills['1244258']?.castTime === '즉시' && kbSkills['1244258']?.cooldown === '20초', 'Chomp is an optional active, not a Claw passive');
   assert(kbSkills['1244258']?.description.includes('30%') && kbSkills['1244258']?.description.includes('2초'), 'Chomp must retain both energy and grace-period conditions');
