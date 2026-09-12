@@ -435,7 +435,7 @@ function main() {
   assert(guideDetailSource.includes('const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);'), 'Both opener renderers must share the full authored step mapping');
   const flowPreview = guideDetailSource.slice(guideDetailSource.indexOf('function OpenerFlowPreview('), guideDetailSource.indexOf('function NarrativeGuideSection('));
   const flowStyles = guideDetailSource.slice(guideDetailSource.indexOf('const OpenerFlowList ='), guideDetailSource.indexOf('const TipList ='));
-  assert(flowPreview.includes('<InlineSkillTerm skill={step.skill}>') && flowStyles.includes('width: 20px;') && flowStyles.includes('min-height: 24px;'), 'Flow icons and names must share a tooltip link with 20px icons and a minimum 24px pointer target');
+  assert(flowPreview.includes('<InlineSkillTerm skill={step.skill}>') && flowStyles.includes('width: 18px;') && flowStyles.includes('min-height: 24px;'), 'Flow icons and names must share a tooltip link with 18px icons and a minimum 24px pointer target');
   assert(flowStyles.includes('flex-wrap: wrap;') && !/grid-auto-flow: column|overflow-x: auto|min-height: 206px/.test(flowStyles), 'Flow steps must wrap within the available width without a horizontal rail');
   assert(!flowStyles.includes('grid-template-columns:') && flowStyles.includes('max-width: 100%;') && !flowPreview.includes('OpenerStepNumber'), 'Flow steps must fit their content without equal-width icon slots or separate number columns');
   assert(flowPreview.includes('<OpenerFlowDetails') && flowStyles.includes('styled.details'), 'Long flow explanations must use an accessible native disclosure');
@@ -444,6 +444,7 @@ function main() {
   const priorityStyles = guideDetailSource.slice(guideDetailSource.indexOf('const PriorityRow ='), guideDetailSource.indexOf('const ChartGrid ='));
   assert(priorityPreview.includes('<InlineSkillTerm skill={row.skill}>') && priorityPreview.includes('renderGuideText(row.note, inlineTerms)'), 'Compact priorities must retain linked icons, names and readable use conditions');
   assert(priorityStyles.includes('grid-template-columns: 22px minmax(0, 1fr);') && priorityStyles.includes('min-height: 24px;') && priorityStyles.includes('> span {'), 'Priorities must not reserve an empty icon column or stack nested inline terms');
+  assert(/strong\s*\{\s*display: inline;/.test(priorityStyles) && /> span\s*\{\s*display: inline;/.test(priorityStyles) && priorityStyles.includes('width: 18px;'), 'Priority spell names and conditions must flow inline with compact icons, not require a second line');
   const modePreview = guideDetailSource.slice(guideDetailSource.indexOf('function GuideRotationModes('), guideDetailSource.indexOf('function NarrativeGuideSection('));
   assert(modePreview.includes("['opener', '오프닝']") && modePreview.includes("['singleTarget', '단일']") && modePreview.includes("['aoe', '광역']"), 'Authored combat modes must offer opener, single target and AoE');
   assert(modePreview.includes('aria-pressed={mode === id}') && modePreview.includes('manualPriority={current.priority}'), 'Mode selection must expose its state and render conditional priorities, not duplicate the opener');

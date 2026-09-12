@@ -6625,7 +6625,7 @@ const OpenerFlowList = styled.ol`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 8px;
+  gap: 4px 6px;
   min-width: 0;
   margin: 0;
   padding: 8px 10px;
@@ -6637,10 +6637,10 @@ const OpenerFlowList = styled.ol`
   li {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     min-width: 0;
     max-width: 100%;
-    padding: 2px 0;
+    padding: 0;
   }
 
   li > a {
@@ -6657,8 +6657,8 @@ const OpenerFlowList = styled.ol`
 
   li > a > img,
   li > a > span {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
   li > svg {
@@ -7002,8 +7002,8 @@ const PriorityRow = styled.div`
   grid-template-columns: 22px minmax(0, 1fr);
   gap: 8px;
   align-items: center;
-  min-height: 44px;
-  padding: 8px 10px;
+  min-height: 36px;
+  padding: 6px 10px;
   border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   background:
     linear-gradient(
@@ -7046,10 +7046,11 @@ const PriorityRank = styled.div`
 const PriorityText = styled.div`
   min-width: 0;
   color: #f4efe5;
+  line-height: 1.65;
 
   strong {
-    display: block;
-    font-size: 0.9rem;
+    display: inline;
+    font-size: 0.85rem;
     overflow-wrap: anywhere;
   }
 
@@ -7064,18 +7065,20 @@ const PriorityText = styled.div`
     overflow-wrap: anywhere;
   }
 
-  strong img {
-    width: 20px;
-    height: 20px;
+  strong img,
+  strong a > span {
+    width: 18px;
+    height: 18px;
   }
 
   > span {
-    display: block;
-    margin-top: 3px;
+    display: inline;
+    margin-left: 8px;
     color: #c7bba7;
-    font-size: 0.76rem;
-    font-weight: 750;
+    font-size: 0.8rem;
+    font-weight: 480;
     word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 `;
 
