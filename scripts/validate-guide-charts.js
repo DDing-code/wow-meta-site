@@ -370,6 +370,26 @@ function main() {
     normalizeSkillLookupText, skillLookupKeys
   );
   assert(scopedResult.length === 1 && scopedResult[0].id === '5143', 'Synergy participants must stay within the guide skill scope');
+  const graphModel = new Function('data', `
+    const guide = {};
+    const getSynergyGraphCenter = () => ({ skill: data.scopedSkills[0] });
+    const getSynergySkills = (synergy, skills) => skills.filter(skill => synergy.participants.includes(skill.id));
+    const uniqueBy = items => [...new Map(items.map(item => [item.id, item])).values()];
+    const synergyImportance = () => 3;
+    const synergyLinkedCount = synergy => synergy.participants.length;
+    const scoreSkill = () => 0;
+    const graphElementId = (prefix, id) => prefix + '-' + id;
+    const synergyName = synergy => synergy.id;
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+    const skillNodeKind = () => 'skill';
+    ${extractFunctionBody(guideDetailSource, 'getSynergyGraphModel')}
+  `);
+  const graph = graphModel({
+    scopedSkills: [{ id: 'center' }, { id: 'a' }, { id: 'b' }],
+    synergies: [{ id: 'related', participants: ['center', 'a'] }, { id: 'separate', participants: ['a', 'b'] }],
+  });
+  assert(graph.edges.filter(edge => edge.from === graph.centerPoint).length === 1, 'A graph must not fabricate center edges for unrelated KB synergies');
+  assert(graph.edges.length === 4, 'Real skill-to-synergy edges must remain when an unrelated center edge is removed');
   const guideRegistrySource = readSource(GUIDE_REGISTRY_PATH);
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
@@ -399,10 +419,10 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (guideId === 'mage-arcane') {
+    if (['mage-arcane', 'deathknight-frost'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
-      assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), 'Arcane should use its authored opener and priority, not an illustrative mana curve');
+      assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);
     } else {
       assert(planBranchMap.has(guideId), `SPECIALIST_CHARTS is missing a specialist chart entry for ${guideId}`);
     }

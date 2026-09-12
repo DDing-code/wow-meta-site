@@ -143,7 +143,8 @@ export const guideSpecsByRole = {
     }),
     spec('deathknight-frost', 'deathknight', '냉기', '냉기', 'melee', '/guide/deathknight/frost', {
       kbSpecAliases: ['Frost'],
-      focus: '룬과 룬 마력을 얼음 기둥 구간에 맞춰 소모합니다.',
+      patch: '12.1',
+      focus: '도살기·단단한 얼음을 순환하고 영웅 특성별 기둥과 시즌 2 세트를 활용합니다.',
     }),
     spec('deathknight-unholy', 'deathknight', '부정', '부정', 'melee', '/guide/deathknight/unholy', {
       kbSpecAliases: ['Unholy'],

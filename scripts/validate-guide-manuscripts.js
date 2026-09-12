@@ -11,6 +11,7 @@ const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-blood', '12.1'],
+  ['deathknight-frost', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1034,6 +1035,30 @@ function main() {
   assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('쐐기'), 'Blood default hero branch must reflect Season 2 Sanlayn guidance');
 
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
+  const frost = manuscripts['deathknight-frost'];
+  const frostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '냉기', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(frostSource)) {
+    assert(JSON.stringify(JSON.parse(read(frostSource))) === JSON.stringify(frost), 'Frost guide must match its canonical 12.1 KB manuscript');
+  }
+  assert(!frost.extraSkills?.length, 'Frost spells must come from the canonical KB');
+  assert(!kbSkills['152279'], 'Legacy draining Breath must not remain in the current spell DB');
+  assert(kbSkills['1249658']?.patch === '12.1' && kbSkills['1249658']?.description.includes('0.8초'), 'Current Breath must use the proc-extension spell ID');
+  assert(kbSkills['1249658']?.cooldown === '90초', 'Current Breath has a 90-second base cooldown');
+  assert(kbSkills['279302']?.cooldown === '90초', 'Frostwyrm first cast has a 90-second base cooldown, distinct from recall');
+  assert(kbSkills['1297365']?.name === '얼어붙는 폭풍우' && kbSkills['1297365']?.description.includes('속도 1%'), 'Frost tier set must use the current live tooltip, not old PTR tuning');
+  assert(kbSkills['377253']?.description.includes('얼음 기둥'), 'Frozen Dominion must explain automatic Winter');
+  assert(kbSkills['281238']?.description.includes('무료'), 'Obliteration must include the free-spender interaction');
+  assert(!collectActiveSkillRefs(frost).some(([, id]) => String(id) === '152279'), 'Current Frost guide must not link the obsolete Breath ID');
+  assert(frost.heroBranches[0].flowSkillIds.every(id => kbSkills[id]?.castTime === '즉시'), 'Rider flow icons must show actual cast buttons, not its passive defining talents');
+  for (const flow of [frost.opener, ...frost.heroBranches.map(branch => branch.opener).filter(Boolean)]) {
+    for (const step of flow.steps) {
+      assert(kbSkills[step.skillId]?.castTime === '즉시', 'Frost opener nodes must be actual cast buttons');
+      assert(!['441378', '1297365', '196770', '455993', '281238'].includes(step.skillId), 'Frost passive/automatic effects must be conditions, not cast nodes');
+      assert(step.phase && step.trigger && step.note, 'Frost hero flow must retain its authored conditions');
+    }
+  }
+  assert(!frost.opener.steps.some(step => step.skillId === '439843'), 'Rider opener must not cast a Deathbringer talent');
+  assert(frost.heroBranches[1].opener.steps.some(step => step.skillId === '439843'), 'Deathbringer requires its own authored Mark flow');
   if (fs.existsSync(arcaneSource)) {
     assert(JSON.stringify(JSON.parse(read(arcaneSource))) === JSON.stringify(manuscripts['mage-arcane']), 'Arcane guide must match its canonical KB manuscript');
   }

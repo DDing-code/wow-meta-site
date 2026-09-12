@@ -33,7 +33,7 @@ const manualSkillById = new Map(manualSkills.map(skill => [String(skill.id), ski
 const commonSpecs = new Set(['공용', 'Common']);
 const OPENER_FLOW_MAX_STEPS = 12;
 const TIP_PREVIEW_LIMIT = 4;
-const HERO_BRANCH_DETAIL_LABELS = ['공통과 달라지는 첫 흐름', '선택 기준/콘텐츠', '분기별 주의점', '로그 검수 지표'];
+const HERO_BRANCH_DETAIL_LABELS = ['공통과 달라지는 첫 흐름', '선택 기준/콘텐츠', '분기별 주의점', '로그 검수 지표', '상황별 우선순위'];
 
 const roleProfiles = {
   tanks: {
@@ -990,13 +990,15 @@ function getSynergyGraphModel(data, guide) {
   const edges = [];
 
   synergyNodes.forEach(node => {
-    edges.push({
-      id: `edge-center-${node.id}`,
-      from: centerPoint,
-      to: node,
-      strength: node.linkedToCenter ? 3 : 1,
-      center: node.linkedToCenter,
-    });
+    if (node.linkedToCenter) {
+      edges.push({
+        id: `edge-center-${node.id}`,
+        from: centerPoint,
+        to: node,
+        strength: 3,
+        center: true,
+      });
+    }
 
     node.linkedSkills.forEach(skill => {
       const skillNode = skillNodeBySkillId.get(String(skill.id));
@@ -1615,18 +1617,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '진입 지연, 단일 도태 회수, 강화된 근접 기술 적중, 광역 종료 직후 공격 중단 시간을 봅니다.'],
     ],
   },
-  'deathknight-frost': {
-    id: 'cooldown',
-    title: '절멸과 신드라고사 구간',
-    sectionHeading: '룬과 룬 마력 정리',
-    sectionIntro: '냉기 죽음의 기사는 절멸, 도살기, 서리낫, 서리의 일격을 룬/룬 마력 상태에 맞춰 쓰고, 신드라고사의 숨결 또는 말살 구간을 따로 관리합니다.',
-    caption: '룬, 룬 마력, 도살기, 절멸, 서리의 일격, 냉기의 기둥, 신드라고사의 숨결을 함께 봅니다.',
-    definition: [
-      ['의미', '도살기와 절멸은 냉기의 중심 피해이고, 룬과 룬 마력은 그 피해가 끊기지 않게 만드는 연료입니다.'],
-      ['읽는 법', '룬이 비지 않게 생성기를 돌리고, 룬 마력이 넘치기 전 서리의 일격으로 비웁니다. 쿨기 구간에는 도살기 절멸이 밀리지 않아야 합니다.'],
-      ['체크 포인트', '도살기 낭비, 룬 공백, 룬 마력 과충전, 냉기의 기둥 지연, 신드라고사의 숨결 조기 종료를 봅니다.'],
-    ],
-  },
   'deathknight-unholy': {
     id: 'cooldown',
     title: '질병, 부패, 소환수 구간',
@@ -1830,7 +1820,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (guide.id === 'mage-arcane') return plan;
+  if (['mage-arcane', 'deathknight-frost'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -2301,7 +2291,9 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               const branchSkills = (branch.skillIds || []).map(skillFromBranchId).filter(Boolean);
               const branchFlowNote = branch.bullets?.[0];
               const branchFocusItems = branch.bullets?.slice(1) || [];
-              const branchFlowSkills = branchSkills.slice(0, 5);
+              const branchFlowSkills = branch.flowSkillIds
+                ? branch.flowSkillIds.map(skillFromBranchId).filter(Boolean)
+                : branchSkills.slice(0, 5);
               return (
                 <HeroBranchCard
                   key={`${branch.label}-${branch.summary}`}
@@ -2337,7 +2329,10 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       </HeroBranchSkillList>
                     </HeroBranchSkillBlock>
                   )}
-                  {!!branchFlowNote && (
+                  {!!branch.opener?.steps?.length && (
+                    <OpenerFlowPreview guide={guide} steps={getOpenerFlowSteps(branch, profile, guide)} inlineTerms={inlineTerms} />
+                  )}
+                  {!!branchFlowNote && !branch.opener?.steps?.length && (
                     <HeroBranchFlowStrip $color={guide.color}>
                       <div>
                         <span>공통과 달라지는 첫 흐름</span>

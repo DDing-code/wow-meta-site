@@ -1,20 +1,26 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T13:37:40.054Z",
+    "generatedAt": "2026-09-12T14:20:45.027Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 428,
-    "rawTotalSynergies": 428,
+    "totalSynergies": 429,
+    "rawTotalSynergies": 429,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
       "shared_grip_mobility_control": 1,
       "cooldown-extension": 1,
       "razorice-spend": 1,
-      "unknown": 118,
+      "proc-spender": 3,
+      "aoe-transition": 1,
+      "proc-extension": 1,
+      "tier-set-proc": 1,
+      "hero-cooldown": 1,
+      "hero-summon": 1,
       "disease-aoe": 1,
       "apex-burst-window": 1,
+      "unknown": 113,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -31,7 +37,6 @@
       "dispels-enrage-control": 1,
       "shared-dot": 1,
       "raid-utility": 1,
-      "proc-spender": 2,
       "builder-cooldown": 1,
       "cooldown-resource": 1,
       "cooldown-planning": 1,
@@ -271,7 +276,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 21,
+      "DeathKnight": 22,
       "DemonHunter": 24,
       "Druid": 38,
       "Evoker": 28,
@@ -353,102 +358,129 @@
     },
     "기나긴겨울_얼음기둥": {
       "id": "기나긴겨울_얼음기둥",
-      "name": "기나긴겨울-얼음기둥",
+      "name": "기둥 연장: 평타 치명타와 서리고룡",
+      "description": "기나긴 겨울의 자동 공격 치명타 연장은 최대 4초입니다. 서리고룡족의 선택이 더하는 시간은 별도 효과이므로 합산 버프 시간을 한 특성의 효과로 읽지 않습니다.",
       "type": "synergy",
       "synergyType": "cooldown-extension",
-      "participants": [],
+      "participants": [
+        "456240",
+        "51271",
+        "1265633",
+        "279302"
+      ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/기나긴겨울"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/기나긴겨울",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리고룡족의선택-연장"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\기나긴겨울-얼음기둥.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "냉기파멸_분쇄칼날": {
       "id": "냉기파멸_분쇄칼날",
-      "name": "냉기파멸-분쇄칼날",
+      "name": "광역: 칼날얼음 쌓기와 소비",
+      "description": "빙하 진군으로 칼날얼음을 쌓고 냉기파멸을 발동시킵니다. 분쇄 칼날 선택 시 주 대상 5중첩을 확인하고 냉기의 일격으로 강화 공격을 소비합니다.",
       "type": "synergy",
       "synergyType": "razorice-spend",
       "participants": [
+        "455993",
+        "207057",
+        "194913",
+        "49143",
+        "51714",
+        "456230"
+      ],
+      "class": "DeathKnight",
+      "spec": "Frost",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/빙하진군",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/냉기의일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/칼날얼음"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/냉기파멸",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/분쇄칼날",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/북극의맹공"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\냉기파멸-분쇄칼날.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "도살기_절멸": {
+      "id": "도살기_절멸",
+      "name": "말살: 생성과 소비 교대",
+      "description": "얼음 기둥 중 말살은 룬 마력 소비기·한파로 도살기를 만들고, 룬 무기 강화는 다음 절멸/서리낫을 무료로 만듭니다. 2중첩 덮어쓰기를 피하며 생성과 소비를 잇습니다.",
+      "type": "synergy",
+      "synergyType": "proc-spender",
+      "participants": [
+        "281238",
+        "51271",
+        "51128",
+        "49020",
+        "207230",
+        "47568",
+        "49143",
         "49184"
       ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/울부짖는한파"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/룬무기강화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/냉기파멸",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/분쇄칼날"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/말살",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리낫"
       ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\냉기파멸-분쇄칼날.md",
-        "lastUpdate": ""
-      }
-    },
-    "도살기_절멸": {
-      "id": "도살기_절멸",
-      "name": "도살기-절멸",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "DeathKnight",
-      "spec": "Frost",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\도살기-절멸.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "서리낫_도살기_광역치환": {
       "id": "서리낫_도살기_광역치환",
-      "name": "서리낫-도살기-광역치환",
+      "name": "3대상: 실제 적중 수로 버튼 전환",
+      "description": "전방에 실제로 세 명 이상이 맞으면 도살기는 서리낫, 룬 마력은 빙하 진군으로 소비합니다. 냉기파멸이 발동했을 때는 강화된 냉기의 일격이 예외입니다.",
       "type": "synergy",
-      "synergyType": "unknown",
+      "synergyType": "aoe-transition",
       "participants": [
         "207230",
         "51128",
         "194913",
-        "196770",
-        "49184",
-        "51714",
-        "59052"
+        "49143",
+        "455993"
       ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/냉기의일격",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/빙하진군",
         "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/칼날얼음",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/울부짖는한파"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/빙하진군",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/냉기의일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -457,88 +489,143 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\서리낫-도살기-광역치환.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "신드라고사_자원유지": {
       "id": "신드라고사_자원유지",
-      "name": "신드라고사-자원유지",
+      "name": "숨결: 발동 소비로 시간 연장",
+      "description": "숨결은 처음 60 룬 마력을 쓰고 도살기·단단한 얼음 소비마다 연장됩니다. 냉기의 일격과 빙하 진군을 멈추지 말고 발동을 계속 만들어 소비합니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "proc-extension",
+      "participants": [
+        "1249658",
+        "51128",
+        "59052",
+        "49143",
+        "194913",
+        "47568"
+      ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/신드라고사의숨결"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/신드라고사의숨결",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/단단한얼음",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/냉기의일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/빙하진군",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/룬무기강화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\신드라고사-자원유지.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
-    "얼음기둥_룬무기강화_사신의징표": {
-      "id": "얼음기둥_룬무기강화_사신의징표",
-      "name": "얼음기둥-룬무기강화-사신의징표",
+    "얼어붙는폭풍우_자동공격": {
+      "id": "얼어붙는폭풍우_자동공격",
+      "name": "시즌 2: 겨울 적중에서 평타·격류로",
+      "description": "얼음 기둥이 얼어붙은 지배로 냉혹한 겨울을 발동시킵니다. 실제 적중으로 쌓인 얼어붙는 폭풍우가 공격 속도와 차디찬 죽음의 격류를 강화하며, 근접 이탈은 중첩 공급과 평타 기회를 함께 줄입니다.",
       "type": "synergy",
-      "synergyType": "unknown",
+      "synergyType": "tier-set-proc",
       "participants": [
         "51271",
-        "47568",
-        "439843",
-        "441378",
-        "279302",
+        "377253",
+        "196770",
+        "1297365",
+        "435010",
         "51128",
-        "49020"
+        "456240"
       ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/룬무기강화",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노"
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/냉혹한겨울",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Buffs/얼어붙는폭풍우"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/얼어붙은지배",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/차디찬죽음의격류",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/기나긴겨울"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\얼음기둥-룬무기강화-사신의징표.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\얼어붙는폭풍우-자동공격.md",
+        "lastUpdate": "2026-09-12"
       }
     },
-    "종말의기수_서리고룡의격노_기동성": {
-      "id": "종말의기수_서리고룡의격노_기동성",
-      "name": "종말의기수-서리고룡의격노-기동성",
+    "얼음기둥_룬무기강화_사신의징표": {
+      "id": "얼음기둥_룬무기강화_사신의징표",
+      "name": "죽음의 인도자: 징표 뒤 몰살 소비",
+      "description": "사신의 징표가 터지면 다음 두 절멸/서리낫의 비용이 룬 1이 되고 후속 낫이 발동합니다. 몰살 자체를 누르는 것이 아니라 강화된 실제 공격으로 소비합니다.",
       "type": "synergy",
-      "synergyType": "unknown",
+      "synergyType": "hero-cooldown",
       "participants": [
-        "444005",
-        "279302",
-        "48265",
+        "439843",
+        "441378",
+        "49020",
+        "207230",
+        "51128",
         "51271"
       ],
       "class": "DeathKnight",
       "spec": "Frost",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의진군",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/도살기",
         "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리낫"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\얼음기둥-룬무기강화-사신의징표.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "종말의기수_서리고룡의격노_기동성": {
+      "id": "종말의기수_서리고룡의격노_기동성",
+      "name": "종말의 기수: 서리고룡과 기사단 소환",
+      "description": "대재앙의 묵시록 선택 시 서리고룡의 격노가 4인 기사단을 소환합니다. 첫 사용과 회수의 기수 활동 시간을 확보하고, 사신의 징표 오프닝을 복사하지 않습니다.",
+      "type": "synergy",
+      "synergyType": "hero-summon",
+      "participants": [
+        "444005",
+        "444040",
+        "279302",
+        "51271",
+        "1265637"
+      ],
+      "class": "DeathKnight",
+      "spec": "Frost",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노",
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리고룡족의선택-회수"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\종말의기수-서리고룡의격노-기동성.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "공포의역병_전염병": {
