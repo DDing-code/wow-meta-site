@@ -18,6 +18,7 @@ import BalanceDruidNormalLogReportPage from './pages/BalanceDruidNormalLogReport
 import DevastationEvokerMythicLogReportPage from './pages/DevastationEvokerMythicLogReportPage.js';
 import RetributionCoiledAltarReportPage from './pages/RetributionCoiledAltarReportPage.js';
 import RagereaverHeroicLogReportPage from './pages/RagereaverHeroicLogReportPage.js';
+import ChaeyongMythicLogReportPage from './pages/ChaeyongMythicLogReportPage.js';
 import LogAnalysisPage from './pages/LogAnalysisPage.js';
 import { getAllGuideSpecs } from './data/guideRegistry.js';
 
@@ -124,6 +125,7 @@ function App() {
               <Route path="/guide/evoker/devastation/log-analysis/etretat-mythic" element={<DevastationEvokerMythicLogReportPage />} />
               <Route path="/guide/paladin/retribution/log-analysis/coiled-altar" element={<RetributionCoiledAltarReportPage />} />
               <Route path="/guide/warlock/demonology/log-analysis/ragereaver-heroic" element={<RagereaverHeroicLogReportPage />} />
+              <Route path="/guide/evoker/preservation/log-analysis/chaeyong-mythic" element={<ChaeyongMythicLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis" element={<PreservationLogReportPage />} />
               <Route path="/guide/evoker/preservation/log-analysis/venomous-depths" element={<VenomousDepthsComparisonPage />} />
               {guideRoutes.map(({ id, path, Component }) => (

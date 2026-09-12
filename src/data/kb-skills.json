@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-09T10:17:11.873Z",
+    "generatedAt": "2026-09-12T11:02:56.169Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2499,
-    "rawTotalSkills": 2499,
+    "totalSkills": 2501,
+    "rawTotalSkills": 2501,
     "duplicateIds": [],
     "totalSynergies": 425,
     "stats": {
-      "total": 2499,
+      "total": 2501,
       "byType": {
-        "hero-talent": 530,
-        "atomic-skill": 516,
+        "hero-talent": 531,
+        "atomic-skill": 517,
         "proc": 5,
         "skill": 120,
         "talent": 1012,
@@ -33,7 +33,7 @@
         "Death Knight": 1,
         "DemonHunter": 101,
         "Druid": 142,
-        "Evoker": 115,
+        "Evoker": 117,
         "Hunter": 140,
         "Mage": 205,
         "Monk": 231,
@@ -59,8 +59,8 @@
         "Druid-야성": 20,
         "Druid-조화": 37,
         "Druid-회복": 31,
-        "Evoker-공용": 33,
-        "Evoker-보존": 27,
+        "Evoker-공용": 34,
+        "Evoker-보존": 28,
         "Evoker-증강": 27,
         "Evoker-황폐": 28,
         "Hunter-공용": 44,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2410,
-        "withSynergies": 695,
+        "withWikilinks": 2416,
+        "withSynergies": 697,
         "avgLinkDensity": "0.033"
       }
     }
@@ -43175,13 +43175,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/내면의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.008,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Skills\\정수폭발.md",
@@ -43223,13 +43225,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/내면의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.014,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Talents\\꿈의들판.md",
@@ -43324,10 +43328,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.004,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Skills\\정지장.md",
@@ -101769,13 +101773,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/내면의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.014,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Talents\\쌍둥이메아리.md",
@@ -102193,6 +102199,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\하강하는어둠.md",
+        "lastUpdate": ""
+      }
+    },
+    "1242745": {
+      "id": "1242745",
+      "type": "hero-talent",
+      "class": "Evoker",
+      "spec": "공용",
+      "specs": [
+        "Preservation"
+      ],
+      "name": "내면의 불꽃",
+      "koreanName": "내면의 불꽃",
+      "englishName": "Inner Flame",
+      "icon": "ability_evoker_infernosblessing",
+      "iconName": "ability_evoker_infernosblessing",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "# 내면의 불꽃",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_infernosblessing.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_infernosblessing.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_infernosblessing.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_infernosblessing.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_infernosblessing.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/정지장",
+          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/에메랄드꽃"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Hero-Talents/화염흡수"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\내면의불꽃.md",
         "lastUpdate": ""
       }
     },
@@ -109017,6 +109076,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Talents\\메리스라의축복.md",
+        "lastUpdate": ""
+      }
+    },
+    "1256581": {
+      "id": "1256581",
+      "type": "atomic-skill",
+      "class": "Evoker",
+      "spec": "보존",
+      "specs": [
+        "Preservation"
+      ],
+      "name": "메리스라의 축복",
+      "koreanName": "메리스라의 축복",
+      "englishName": "Merithra's Blessing",
+      "icon": "ability_evoker_spiritbloom",
+      "iconName": "ability_evoker_spiritbloom",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 1.54%",
+      "range": "30야드",
+      "description": "# 메리스라의 축복",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_spiritbloom.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_spiritbloom.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_spiritbloom.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_spiritbloom.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_spiritbloom.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/메아리",
+          "08-직업별-Knowledge-Base/04-기원사/보존/Skills/되감기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/보존/Talents/메리스라의축복"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Skills\\메리스라의축복.md",
         "lastUpdate": ""
       }
     },

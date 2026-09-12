@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'evoker-preservation-chaeyong-mythic-2026-09-12',
+    guideId: 'evoker-preservation',
+    date: '2026-09-12',
+    title: '채용 보존 기원사 신화 로그 분석',
+    subject: '채용-아즈샤라',
+    encounter: '맹독 심연 신화 5보스',
+    fights: '최근 5킬 · 상위 5개 · 본인 이전 기록 비교',
+    summary: '꽃 이후 메아리 전개, 쌍둥이 메아리 2중첩 갱신, 정지장 실제 재생과 보스별 치유 격차를 11개 전투에서 확인했습니다.',
+    path: '/guide/evoker/preservation/log-analysis/chaeyong-mythic',
+  },
+  {
     id: 'warlock-ragereaver-heroic-2026-09-09',
     guideId: 'warlock-demonology',
     guideIds: ['warlock-demonology', 'warlock-destruction'],
