@@ -65,15 +65,27 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected desktop, 390px and 320px flow, priority switching and defensive-chart layouts. Final production bundle `main.ea1b4a00.js` displays the correct specialization label, no Blur links, no broken loaded images and no document overflow in these checks. All 443 rendered spell href attributes are numeric, including SVG graph links. The graph centers on Spirit Bomb with six actual direct synergy connections.
 - Limits: Blizzard patch-note body, latest raid/M+ aggregate data, personal simulations and private Fel Hammer messages were not obtained. Source disagreements remain explicit; no usage percentages or guaranteed DPS gain were invented. Dense graph labels, older shared records, 87 global KB link warnings, mixed-patch metadata and the large bundle remain. Original KB Markdown/JSON is outside the site Git repository; this commit preserves generated DB and site changes.
 
+### Guardian Druid
+
+- Replaced the old manuscript in place with 16 manually authored subjects, practical tips, separate Elune/Claw explanations, 12-step hero openers and conditional 14/15-row priorities. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/03-드루이드/수호/Meta/guide-12.1.json`.
+- Recovered and read the Blizzard 12.1 update body and September 9 Guardian hotfix. Compared current Korean/English tooltips, Pumps' Wowhead/Icy Veins guides, Tactyks' September 3 Method guides and SimC implementation commit `c8352dd12b9d57a9f510f29860969160e83653cc`.
+- Manually updated/added 66 atomic records (41 local Guardian, 19 shared hero, six common) and authored 17 Guardian synergies. Removed legacy Berserk node 343240 and used current cast 50334. Generated DB changes are confined to Druid records.
+- Corrected fixed Lunation cooldown reduction, redesigned Gory Fur/Wild Guardian, Tooth and Claw spenders, apex ranks versus the actual cast, Guardian Ravage, Red Moon, conditional Frenzied Regeneration, manual/automatic Regrowth and Season 2 effects. Persistence is Guardian-only; shared hero scopes distinguish Balance/Feral effects.
+- Apex-node aliases now connect descriptions to their own official tooltips instead of the identically named cast. Removed a dead Flourish link from shared Ursol's Vortex and verified its current effect. Set-effect names/icons retain the official API values even where the API remains English.
+- The defensive chart uses six manually authored damage/recovery choices, not a generic ordered spell pool. Its regression checks verify actual casts and use conditions instead of requiring internal chart-writing terminology on the page.
+- Canonical equality, mechanic/scope assertions, prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for all 41 local notes and 47 numeric shared notes; guide name/icon checks passed for 24 explicitly referenced IDs. Shared metadata validation is not a claim that all 47 common mechanics were re-audited.
+- Inspected desktop, 390px and 320px layouts, hero switching, priorities and defensive conditions. Bundle `main.4ad586c4.js` displays 12-step hero flows, separate apex tooltip targets, no page overflow and no broken loaded images in these checks. The graph centers on Thrash with seven actual direct relationships.
+- Limits: current raid/M+ WCL/Archon aggregates, personal simulations and private Dreamgrove messages were not obtained. Harnessed Rage localization and some trait-rank values remain explicitly qualified. Dense graph-label overlaps, older common records, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Original KB Markdown/JSON is outside the site Git repository; the commit preserves generated DB and site changes.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 25 manuscripts
+## Still 12.0.5: 24 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Druid | Guardian, Feral |
+| Druid | Feral |
 | Evoker | Augmentation |
 | Hunter | Beast Mastery, Marksmanship, Survival |
 | Mage | Fire, Frost |
@@ -87,7 +99,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Complete fresh manual research and KB/DB/guide updates for the 25 older manuscripts; next: Guardian Druid.
+- Complete fresh manual research and KB/DB/guide updates for the 24 older manuscripts; next: Feral Druid.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

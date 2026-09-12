@@ -15,6 +15,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-unholy', '12.1'],
   ['demonhunter-havoc', '12.1'],
   ['demonhunter-vengeance', '12.1'],
+  ['druid-guardian', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1108,6 +1109,32 @@ function main() {
   const glaiveIndex = vengeanceAldrachi.findIndex(step => step.skillId === '442294');
   assert(vengeanceAldrachi[glaiveIndex + 1]?.skillId === '263642' && vengeanceAldrachi[glaiveIndex + 2]?.skillId === '228477', 'Vengeance Aldrachi flow must consume Fracture before Soul Cleave');
   assert(bloodSynergies['dh-vengeance-고삐풀린분노-탈태']?.description.includes('자동 변신이 아니며'), 'Vengeance apex relationship must retain its manual-use explanation');
+
+  const guardian = manuscripts['druid-guardian'];
+  const guardianSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '03-드루이드', '수호', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(guardianSource)) {
+    assert(JSON.stringify(JSON.parse(read(guardianSource))) === JSON.stringify(guardian), 'Guardian must match its canonical 12.1 KB manuscript');
+  }
+  assert(!guardian.extraSkills?.length, 'Guardian spells must resolve from the canonical KB');
+  assert(!kbSkills['343240'] && kbSkills['50334']?.specs.includes('Guardian'), 'Guardian must use the current Berserk, not the legacy split node');
+  assert(kbSkills['429539']?.description.includes('고정 20초'), 'Guardian Lunation must retain fixed cooldown reduction');
+  assert(kbSkills['135288']?.description.includes('후려갈기기 또는 말살'), 'Tooth and Claw must retain the correct spender');
+  assert(kbSkills['1269619']?.description.includes('시전하면') && kbSkills['1269658']?.type === 'atomic-skill', 'Wild Guardian must separate the passive charge grant from the actual button');
+  for (const [id, label] of [['1269614', '야생 수호자 첫 노드'], ['1269617', '야생 수호자 중간 노드'], ['1269619', '야생 수호자 마지막 노드']]) {
+    assert(kbSkills[id]?.aliases.includes(label), 'Guardian apex explanations must resolve to their own node tooltips');
+  }
+  assert(kbSkills['441583']?.castTime === '지속 효과' && kbSkills['441605']?.specs.join(',') === 'Guardian', 'Ravage talent and Guardian cast IDs must stay separate');
+  assert(kbSkills['1251406']?.specs.join(',') === 'Guardian', 'Persistence must not leak from shared storage to other druid specs');
+  assert(kbSkills['370586']?.description.includes('18%'), 'Elune healing must not retain the old June value');
+  for (const branch of guardian.heroBranches) {
+    assert(branch.opener.steps.length >= 10 && branch.priority.length >= 12, 'Guardian requires separate authored hero flows and priorities');
+    for (const row of [...branch.opener.steps, ...branch.priority]) {
+      assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 20, 'Guardian actionable rows must be actual player casts with conditions');
+    }
+  }
+  const guardianNotes = Object.values(kbSkills).filter(skill => /[\\/]03-드루이드[\\/]수호[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
+  assert(guardianNotes.length >= 41 && guardianNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 30 && !skill.description.startsWith('#')), 'Guardian descriptions must survive canonical sync');
+  assert(bloodSynergies['guardian-야생수호자-생성기']?.participants.includes('33917') && !bloodSynergies['guardian-야생수호자-생성기']?.participants.includes('22842'), 'Guardian apex must connect generators, not Frenzied Regeneration');
 
   const unholy = manuscripts['deathknight-unholy'];
   const unholySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '부정', 'Meta', 'guide-12.1.json');

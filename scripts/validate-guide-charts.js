@@ -468,6 +468,11 @@ function main() {
   assert(bloodChart.events?.some(event => event.skillId === '195182' && event.phase.includes('10중첩')), 'Blood defensive chart must include the conditional tier-set spender');
   assert(bloodChart.events?.every(event => skillIds.has(event.skillId)), 'Blood defensive chart must resolve every spell from the KB');
   const vengeanceChart = new Function(`return {${planBranchMap.get('demonhunter-vengeance').body}}`)();
+  const guardianChart = new Function(`return {${planBranchMap.get('druid-guardian').body}}`)();
+  assert(guardianChart.events?.length === 6 && guardianChart.events.every(event => skillIds.has(event.skillId)), 'Guardian must use six authored defensive choices from the KB');
+  assert(guardianChart.events.filter(event => event.skillId === '22842').length === 2, 'Guardian must distinguish conditional pre-damage Frenzied Regeneration from recovery');
+  assert(guardianChart.events.some(event => event.skillId === '8936' && event.note.includes('세나리우스의 꿈')), 'Guardian manual Regrowth must require its enabling proc');
+  assert(!guardianChart.events.some(event => ['1269619', '1278886', '135288'].includes(event.skillId)), 'Guardian passive effects must not appear as defensive cast buttons');
   const matchesGuideScope = new Function('record', 'guide', 'includeCommon', 'commonSpecs', extractFunctionBody(guideDetailSource, 'recordMatchesGuide'));
   const blur = skills.find(skill => skill.id === '212800');
   assert(!matchesGuideScope(blur, guideRecordMap.get('demonhunter-vengeance'), true, COMMON_SPECS) && matchesGuideScope(blur, guideRecordMap.get('demonhunter-havoc'), true, COMMON_SPECS), 'Shared storage must not bypass the verified Blur specialization scope');
@@ -494,12 +499,18 @@ function main() {
     assert(/\bsectionIntro\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing sectionIntro`);
     assert(/\bcaption\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing caption`);
     assert(/\bdefinition\s*:/.test(branch.body), `getInlineChartPlan branch for ${branch.id} is missing definition`);
-    assert(branchText.includes('의미'), `getInlineChartPlan branch for ${branch.id} definition must explain meaning`);
-    assert(branchText.includes('읽는 법'), `getInlineChartPlan branch for ${branch.id} definition must explain how to read the chart`);
-    assert(
-      branchText.includes('체크 포인트') || branchText.includes('검수 포인트'),
-      `getInlineChartPlan branch for ${branch.id} definition must include validation points`
-    );
+    if (chartId === 'defensive' && /\bevents\s*:/.test(branch.body)) {
+      const chart = new Function(`return {${branch.body}}`)();
+      assert(chart.definition?.length >= 3 && chart.definition.every(([label, description]) => label && description.length >= 30), `${branch.id} must explain its defensive conditions`);
+      assert(chart.events?.length >= 3 && chart.events.every(event => skillIds.has(event.skillId) && event.phase && event.action && event.note?.length >= 30), `${branch.id} must connect real defensive casts to substantial use conditions`);
+    } else {
+      assert(branchText.includes('의미'), `getInlineChartPlan branch for ${branch.id} definition must explain meaning`);
+      assert(branchText.includes('읽는 법'), `getInlineChartPlan branch for ${branch.id} definition must explain how to read the chart`);
+      assert(
+        branchText.includes('체크 포인트') || branchText.includes('검수 포인트'),
+        `getInlineChartPlan branch for ${branch.id} definition must include validation points`
+      );
+    }
     assert(branchText.length >= 220, `getInlineChartPlan branch for ${branch.id} needs a richer chart explanation`);
     assert(requirements, `getInlineChartPlan branch for ${branch.id} has no role chart requirement for profile "${profile}"`);
     if (requirements) {

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T17:20:37.650Z",
+    "generatedAt": "2026-09-12T18:18:34.284Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 446,
-    "rawTotalSynergies": 446,
+    "totalSynergies": 457,
+    "rawTotalSynergies": 457,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 138,
+      "unknown": 149,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -273,7 +273,7 @@
     "byClass": {
       "DeathKnight": 28,
       "DemonHunter": 35,
-      "Druid": 38,
+      "Druid": 49,
       "Evoker": 28,
       "Hunter": 26,
       "Mage": 34,
@@ -2352,119 +2352,270 @@
         "lastUpdate": ""
       }
     },
-    "난타_광역위협": {
-      "id": "난타_광역위협",
-      "name": "난타-광역위협",
+    "guardian-공격-우르속의격노-보호막": {
+      "id": "guardian-공격-우르속의격노-보호막",
+      "name": "실제 공격 피해가 보호막으로 전환",
+      "description": "우르속의 격노는 난타와 공격 소비기의 피해 일부를 보호막으로 바꾼다. 적에게 맞힌 피해와 실제 흡수량을 구분한다. 만료된 보호막까지 모두 유효 방어로 합산하지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "77758",
+        "6807",
+        "400254",
+        "377210"
+      ],
       "class": "Druid",
       "spec": "Guardian",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의격노"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\공격-우르속의격노-보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-광포한재생력-선사용과복구": {
+      "id": "guardian-광포한재생력-선사용과복구",
+      "name": "회복 충전·초과 치유 보호막·최대 생명력",
+      "description": "타고난 결의는 추가 충전과 체력에 따른 회복 증가, 자연의 탄력은 초과 치유 보호막, 샘솟는 힘은 최대 생명력 증가를 준다. 선택한 특성에 따라 피해 후 복구뿐 아니라 피해 직전 선사용도 가능하다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "22842",
+        "377811",
+        "1278789",
+        "441675"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/타고난결의",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/자연의탄력"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\광포한재생력-선사용과복구.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-난타-광역위협": {
+      "id": "guardian-난타-광역위협",
+      "name": "난타 중첩으로 공격과 피해 감소 유지",
+      "description": "상처 찢기는 적에게 걸린 난타 중첩에 따라 공격과 피해 감소를 준다. 섬광의 발톱은 선택 등급에 따라 최대 중첩과 추가 난타 기회를 늘린다. 위험한 적에게 난타가 빠지면 해당 대상의 방어 이득도 빠진다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "77758",
+        "204053",
+        "393427"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/상처찢기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/섬광의발톱"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\난타-광역위협.md",
         "lastUpdate": ""
       }
     },
-    "SY-GUARDIAN-LUNAR-BEAM-LUNAR-CALLING-LUNATION": {
-      "id": "SY-GUARDIAN-LUNAR-BEAM-LUNAR-CALLING-LUNATION",
-      "name": "달광선-달의부름-삭망월",
+    "guardian-난타-시즌2-짓이기기": {
+      "id": "guardian-난타-시즌2-짓이기기",
+      "name": "난타가 다음 짓이기기를 강화",
+      "description": "시즌 2의 2세트는 난타에서 20% 확률로 다음 짓이기기의 피해를 강화한다. 난타 뒤 생성기를 비워 두면 정점 공격과 세트 보상을 함께 놓칠 수 있다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "77758",
+        "1296607",
+        "33917"
+      ],
       "class": "Druid",
-      "spec": "수호",
+      "spec": "Guardian",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/반짝이는달빛",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-2세트"
       ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\난타-시즌2-짓이기기.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-난타-시즌2-화신연장": {
+      "id": "guardian-난타-시즌2-화신연장",
+      "name": "난타의 가시 피해와 제한된 화신 연장",
+      "description": "시즌 2의 4세트는 난타에 가시 공격을 더하며 광폭화·화신을 0.5초씩 최대 5초 연장한다. 가시 피해를 별도 수동 시전으로 세거나 처음부터 고정 5초가 더 붙었다고 계산하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "77758",
+        "1296608",
+        "102558",
+        "50334"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\난타-시즌2-화신연장.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-달광선-달의부름-삭망월": {
+      "id": "guardian-달광선-달의부름-삭망월",
+      "name": "달 광선: 고정 쿨다운 감소와 지속 강화",
+      "description": "삭망월은 달 광선을 고정 20초 앞당긴다. 영원한 달은 3초 지속 연장과 피해·특화 보정, 끝없는 달빛은 범위 안 적에게 입힌 피해의 흡혈, 반그늘의 팽창은 광선 활성 중 비전 피해 강화를 준다. 비전 공격 횟수로 쿨다운을 계속 줄이는 관계는 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "204066",
+        "429539",
+        "424058",
+        "424113",
+        "1271261"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\달광선-달의부름-삭망월.md",
         "lastUpdate": ""
       }
     },
-    "SY-guardian-tooth-and-claw-mangle": {
-      "id": "SY-guardian-tooth-and-claw-mangle",
-      "name": "맹위-짓이기기",
+    "guardian-맹위-공격소비": {
+      "id": "guardian-맹위-공격소비",
+      "name": "맹위 발동을 무료 공격과 피해 감소로 소비",
+      "description": "자동 공격으로 쌓은 맹위는 후려갈기기나 말살에서 소비한다. 짓이기기가 소비 버튼이 아니다. 무료·강화된 공격을 위험 대상에게 맞혀 그 대상의 자신에 대한 피해를 낮춘다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
-      "class": "Druid",
-      "spec": "수호",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+      "participants": [
+        "135288",
+        "6807",
+        "400254"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/맹위",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿰뚫기",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/광폭화유린"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\맹위-짓이기기.md",
-        "lastUpdate": ""
-      }
-    },
-    "무쇠가죽_물리피해구간": {
-      "id": "무쇠가죽_물리피해구간",
-      "name": "무쇠가죽-물리피해구간",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
       "class": "Druid",
       "spec": "Guardian",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
-        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능",
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
         "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/맹위"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\맹위-공격소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-무쇠가죽-물리피해구간": {
+      "id": "guardian-무쇠가죽-물리피해구간",
+      "name": "무쇠가죽의 방어도·특화·마법 보조 방어",
+      "description": "무쇠가죽의 각 중첩은 별도 지속시간으로 겹친다. 강화 모피는 방어도 보정을, 고대 수호자의 선물은 유지 중 특화를, 우르솔의 수호물은 방어도 감소율에 비례한 마법 방어를 더한다. 마법 강타를 전부 무쇠가죽만으로 받아도 된다는 뜻은 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "192081",
+        "393618",
+        "471492",
+        "1251876"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/강화모피",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르솔의수호물",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/고대수호자의선물"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\무쇠가죽-물리피해구간.md",
         "lastUpdate": ""
       }
     },
-    "SY-guardian-ravage-rip-and-tear": {
-      "id": "SY-guardian-ravage-rip-and-tear",
-      "name": "발톱광란-찢어발기기",
+    "guardian-발톱광란-찢어발기기": {
+      "id": "guardian-발톱광란-찢어발기기",
+      "name": "광폭화 중 생성기로 찢어발기기 기회 확보",
+      "description": "발톱 광란을 배운 수호는 광폭화·화신 중 생성기를 사용해 다음 찢어발기기 변환 기회를 얻는다. 실제 시전은 441605다. 발동 특성 자체를 버튼으로 누르지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "441835",
+        "50334",
+        "102558",
+        "33917",
+        "77758",
+        "441605"
+      ],
       "class": "Druid",
-      "spec": "수호",
+      "spec": "Guardian",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -2472,30 +2623,252 @@
         "lastUpdate": ""
       }
     },
-    "SY-guardian-apex-frenzied-regeneration": {
-      "id": "SY-guardian-apex-frenzied-regeneration",
-      "name": "야생수호자-광포한재생력",
+    "guardian-분노소비-화신과파티치유": {
+      "id": "guardian-분노소비-화신과파티치유",
+      "name": "누적 분노를 다음 화신과 파티 치유로 전환",
+      "description": "우르속의 인도는 누적 소비 분노로 다음 화신을 앞당기고, 들불이 지나간 자리는 누적 300분노마다 주변 아군을 치유한다. 무료 시전을 기본 비용으로 곱해 소비량을 부풀리지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "372119"
+        "192081",
+        "6807",
+        "400254",
+        "393414",
+        "371905"
       ],
       "class": "Druid",
-      "spec": "수호",
+      "spec": "Guardian",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의인도",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/들불이지나간자리"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\분노소비-화신과파티치유.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-붉은달-짓이기기-추가분노": {
+      "id": "guardian-붉은달-짓이기기-추가분노",
+      "name": "붉은 달 대상에서 생성기를 우선 사용",
+      "description": "붉은 달이 걸린 대상에게 짓이기기를 쓰면 지속시간이 늘고 추가 분노를 얻는다. 은하의 수호자는 일반 달빛섬광 강화 대신 중첩과 분노 소비형 비전 피해·치유로 이어진다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1252871",
+        "33917",
+        "203964"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/붉은달",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\붉은달-짓이기기-추가분노.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-비전난타-엘룬의총애": {
+      "id": "guardian-비전난타-엘룬의총애",
+      "name": "비전으로 바뀐 난타를 자기 회복으로 연결",
+      "description": "달의 부름이 난타를 비전 피해로 바꾸면 곰 상태의 엘룬의 총애 치유와 연결된다. 쏟아지는 별은 난타에서 자동 별빛쇄도를 추가한다. 수호가 별빛쇄도를 수동으로 누르는 것은 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "77758",
+        "429523",
+        "370586",
+        "1271206"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/엘룬의총애"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\비전난타-엘룬의총애.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-야생수호자-생성기": {
+      "id": "guardian-야생수호자-생성기",
+      "name": "영혼 등장 뒤 생성기 초기화와 분노 회수",
+      "description": "분노 소비로 수호자의 영혼을 깨우면 난타·짓이기기 시전이 영혼 공격으로 이어진다. 마지막 정점 노드는 등장 시 두 생성기 초기화와 강화, 영혼 공격의 분노 8을 더한다. 광포한 재생력 강화 관계가 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1269614",
+        "1269619",
+        "77758",
+        "33917"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자",
-        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/세나리우스의꿈"
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\야생수호자-광포한재생력.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\야생수호자-생성기.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-재생-수동발동과자동치유": {
+      "id": "guardian-재생-수동발동과자동치유",
+      "name": "곰 상태의 수동 재생과 자동 재생 구분",
+      "description": "세나리우스의 꿈은 발동 뒤 직접 대상을 골라 즉시·무료 재생을 쓰게 한다. 꿈의 안내자는 체력이 낮아진 자신이나 아군에게 자동 재생을 사용한다. 두 경로를 같은 수동 시전 수로 집계하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "8936",
+        "372119",
+        "1278886"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/세나리우스의꿈",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿈의안내자"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\재생-수동발동과자동치유.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-짓이기기-찢어발기기-방어강화": {
+      "id": "guardian-짓이기기-찢어발기기-방어강화",
+      "name": "첫 짓이기기에서 열리는 찢어발기기와 대상 방어",
+      "description": "목숨을 끊는 일격을 찍으면 첫 짓이기기가 찢어발기기를 준비한다. 변환된 공격은 섬뜩한 상처의 대상 피해 감소와 민첩성·무쇠가죽 보정으로 이어진다. 공격 소비를 무조건 순수 딜 손실·이득으로만 보지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "33917",
+        "441824",
+        "441605",
+        "441809",
+        "192081"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\짓이기기-찢어발기기-방어강화.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-피투성이모피-무료교차소비": {
+      "id": "guardian-피투성이모피-무료교차소비",
+      "name": "방어 소비와 공격 소비 사이의 무료 발동",
+      "description": "무쇠가죽에서 무료 공격 소비기가, 공격 소비기에서 무료 무쇠가죽이 확률적으로 열린다. 두 방향의 확률은 각각 20%와 10%다. 분노 부족 상황에서도 발동을 활용하되 확정 교대 순서처럼 외우지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "200854",
+        "192081",
+        "6807",
+        "400254",
+        "441605"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/피투성이모피"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\피투성이모피-무료교차소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "guardian-화신-야생수호자-확정발동": {
+      "id": "guardian-화신-야생수호자-확정발동",
+      "name": "화신 시전으로 받은 사용 기회를 공격 소비로 연결",
+      "description": "화신을 시전하면 마지막 정점 노드가 야생 수호자 사용 기회를 준다. 실제 야생 수호자를 사용한 뒤 후려갈기기·말살·찢어발기기로 확정 영혼을 깨운다. 화신 종료를 기다리거나 8초마다 무한 사용을 기대하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "102558",
+        "1269619",
+        "1269658",
+        "6807",
+        "400254",
+        "441605"
+      ],
+      "class": "Druid",
+      "spec": "Guardian",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/야생수호자",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Synergies\\화신-야생수호자-확정발동.md",
         "lastUpdate": ""
       }
     },

@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T17:20:37.649Z",
+    "generatedAt": "2026-09-12T18:18:34.283Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2583,
-    "rawTotalSkills": 2583,
+    "totalSkills": 2617,
+    "rawTotalSkills": 2617,
     "duplicateIds": [],
-    "totalSynergies": 446,
+    "totalSynergies": 457,
     "stats": {
-      "total": 2583,
+      "total": 2617,
       "byType": {
         "buff": 20,
-        "hero-talent": 546,
-        "atomic-skill": 471,
+        "hero-talent": 556,
+        "atomic-skill": 478,
         "proc": 5,
         "skill": 167,
-        "talent": 1042,
+        "talent": 1057,
         "spec-talent": 218,
-        "passive": 12,
+        "passive": 14,
         "hero-tree": 2,
         "set-bonus": 7,
         "class-talent": 87,
@@ -31,7 +31,7 @@
       "byClass": {
         "DeathKnight": 111,
         "DemonHunter": 148,
-        "Druid": 142,
+        "Druid": 176,
         "Evoker": 117,
         "Hunter": 140,
         "Mage": 205,
@@ -52,8 +52,8 @@
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
         "DemonHunter-포식": 34,
-        "Druid-공용": 34,
-        "Druid-수호": 20,
+        "Druid-공용": 47,
+        "Druid-수호": 41,
         "Druid-야성": 20,
         "Druid-조화": 37,
         "Druid-회복": 31,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2495,
-        "withSynergies": 793,
+        "withWikilinks": 2530,
+        "withSynergies": 831,
         "avgLinkDensity": "0.033"
       }
     }
@@ -5243,6 +5243,60 @@
         "lastUpdate": ""
       }
     },
+    "5487": {
+      "id": "5487",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
+      "name": "곰 변신",
+      "koreanName": "곰 변신",
+      "englishName": "Bear Form",
+      "icon": "ability_racial_bearform",
+      "iconName": "ability_racial_bearform",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "곰으로 변신해 방어도와 체력을 높이고 위협을 증가시킨다. 현재 기본 툴팁은 방어도 220%와 체력 25% 증가를 표시하며 이동 방해 효과를 해제한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_bearform.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_racial_bearform.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_racial_bearform.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_bearform.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/끈기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Talents/액체형상"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Skills\\곰변신.md",
+        "lastUpdate": ""
+      }
+    },
     "5740": {
       "id": "5740",
       "type": "skill",
@@ -5912,14 +5966,14 @@
       "icon": "ability_druid_maul",
       "iconName": "ability_druid_maul",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "",
       "castTime": "즉시",
-      "resourceCost": "분노",
+      "resourceCost": "분노 40 (기본)",
       "range": "근접",
-      "description": "# 후려갈기기 (Maul)",
+      "description": "기본 분노 40을 소모하는 단일 대상 공격이다. 맹위 발동으로 무료·강화 소비가 가능하고, 말살을 배우면 광역 소비기로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5932,16 +5986,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/맹위",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/결정타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의격노"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.03,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -6427,7 +6485,7 @@
       "castTime": "시전",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 재생 (Regrowth)",
+      "description": "직접 치유와 짧은 지속 치유를 제공하는 드루이드 주문이다. 수호는 세나리우스의 꿈 발동으로 곰 상태에서 즉시·무료 사용하거나, 꿈의 안내자를 선택해 낮은 체력 조건의 자동 재생을 얻는다. 다른 전문화의 강화 조건은 별도로 적용한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -6457,7 +6515,7 @@
       "quality": {
         "wikilinkCount": 13,
         "synergyCount": 6,
-        "linkDensity": 0.065,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -8416,14 +8474,14 @@
       "icon": "spell_nature_stoneclawtotem",
       "iconName": "spell_nature_stoneclawtotem",
       "school": "",
-      "cooldown": "1분",
+      "cooldown": "1분 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 나무 껍질 (Barkskin)",
+      "description": "기본 8초 동안 받는 피해를 20% 줄이는 개인 생존기다. 모든 변신 상태와 제어당한 상태에서 사용할 수 있으며 기본 쿨다운은 1분이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8436,17 +8494,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/강화모피",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/적자생존"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.065,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -8465,17 +8524,20 @@
       "name": "광포한 재생력",
       "koreanName": "광포한 재생력",
       "englishName": "Frenzied Regeneration",
+      "aliases": [
+        "재생력"
+      ],
       "icon": "ability_bullrush",
       "iconName": "ability_bullrush",
       "school": "",
-      "cooldown": "36초",
+      "cooldown": "36초 (기본)",
       "castTime": "즉시",
       "resourceCost": "분노 10",
       "range": "",
-      "description": "# 광포한 재생력 (Frenzied Regeneration)",
+      "description": "곰 변신에서 분노 10을 사용해 3초 동안 최대 생명력의 24%를 회복한다. 기본 1충전이며, 타고난 결의를 선택하면 1충전이 추가되고 잃은 생명력에 따라 회복량이 증가한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8487,14 +8549,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bullrush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/타고난결의",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/자연의탄력"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/샘솟는힘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.05,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -10066,14 +10135,14 @@
       "icon": "ability_druid_mangle2",
       "iconName": "ability_druid_mangle2",
       "school": "",
-      "cooldown": "6초",
+      "cooldown": "6초 (기본)",
       "castTime": "즉시",
       "resourceCost": "",
       "range": "근접",
-      "description": "# 짓이기기 (Mangle)",
+      "description": "대상을 공격하고 기본 분노 12를 생성한다. 분노를 다스리는 자를 선택하면 충전이 하나 추가된다. 꿰뚫기와 야생 수호자 발동은 재사용 대기시간을 초기화할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10085,14 +10154,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_mangle2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/붉은달"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿰뚫기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/분노를다스리는자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/목숨을끊는일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.056,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -12287,6 +12365,59 @@
         "lastUpdate": ""
       }
     },
+    "50334": {
+      "id": "50334",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "광폭화",
+      "koreanName": "광폭화",
+      "englishName": "Berserk",
+      "icon": "ability_druid_berserk",
+      "iconName": "ability_druid_berserk",
+      "school": "",
+      "cooldown": "3분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "15초 동안 짓이기기·난타·포효의 쿨다운이 50% 감소하고 광포한 재생력의 쿨다운이 100% 감소한다. 화신: 우르속의 수호자를 배우면 강화된 화신으로 대체된다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_berserk.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_berserk.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_berserk.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_berserk.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_berserk.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Skills\\광폭화.md",
+        "lastUpdate": ""
+      }
+    },
     "50842": {
       "id": "50842",
       "type": "atomic-skill",
@@ -14338,14 +14469,14 @@
       "icon": "ability_druid_tigersroar",
       "iconName": "ability_druid_tigersroar",
       "school": "",
-      "cooldown": "장기",
+      "cooldown": "3분 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 생존 본능 (Survival Instincts)",
+      "range": "",
+      "description": "6초 동안 받는 모든 피해를 50% 줄인다. 기본 쿨다운은 3분이고 기본 1충전이다. 적자생존 등 선택한 특성의 쿨다운 보정은 별도로 적용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14358,15 +14489,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/적자생존"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.03,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -15331,14 +15464,14 @@
       "icon": "spell_druid_thrash",
       "iconName": "spell_druid_thrash",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "6초 (기본)",
       "castTime": "즉시",
       "resourceCost": "",
-      "range": "근접 광역",
-      "description": "# 난타 (Thrash)",
+      "range": "8미터",
+      "description": "주위 적에게 즉시 피해와 15초 지속 피해를 가하고 분노 5를 생성한다. 지속 피해는 기본 3중첩까지 쌓이며, 섬광의 발톱 선택 등급에 따라 추가 중첩이 가능하다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15351,16 +15484,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/상처찢기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/섬광의발톱",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/달의부름"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.042,
+        "wikilinkCount": 7,
+        "synergyCount": 6,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -17059,17 +17199,20 @@
       "name": "화신: 우르속의 수호자",
       "koreanName": "화신: 우르속의 수호자",
       "englishName": "Incarnation: Guardian of Ursoc",
+      "aliases": [
+        "화신"
+      ],
       "icon": "spell_druid_incarnation",
       "iconName": "spell_druid_incarnation",
       "school": "",
-      "cooldown": "장기",
+      "cooldown": "3분 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화신: 우르속의 수호자 (Incarnation: Guardian of Ursoc)",
+      "range": "",
+      "description": "광폭화를 강화·대체하는 30초 쿨기다. 광폭화의 생성기·재생력 쿨다운 보정에 더해 짓이기기가 최대 3명을 공격하고 최대 생명력이 30% 증가한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17082,15 +17225,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/야생수호자"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의인도"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.014,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -17157,7 +17305,7 @@
     },
     "102793": {
       "id": "102793",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Druid",
       "spec": "공용",
       "specs": [
@@ -17176,10 +17324,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "30야드",
-      "description": "# 우르솔의 회오리 (Ursol's Vortex)",
-      "category": "talent",
+      "description": "대상 위치에 10초 동안 회오리를 만들어 8미터 내 적을 50% 느리게 한다. 적이 처음 벗어나려 하면 중앙으로 한 번 끌어당긴다. 모든 변신 상태에서 사용할 수 있다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17196,9 +17344,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.051,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -21523,14 +21671,14 @@
       "icon": "inv_misc_monsterfang_01",
       "iconName": "inv_misc_monsterfang_01",
       "school": "",
-      "cooldown": "발동 효과",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "짓이기기 연계",
-      "range": "근접",
-      "description": "# 맹위 (Tooth and Claw)",
+      "resourceCost": "",
+      "range": "",
+      "description": "자동 공격이 20% 확률로 다음 후려갈기기 또는 말살을 강화한다. 최대 2중첩이며, 강화 소비기는 분노 비용이 없어지고 피해가 40% 증가하며 대상이 자신에게 입히는 피해를 6초 동안 12% 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21543,17 +21691,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/광폭화유린"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.033,
+        "synergyCount": 3,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -25155,12 +25303,12 @@
       "school": "",
       "cooldown": "0.5초",
       "castTime": "즉시",
-      "resourceCost": "분노 40",
+      "resourceCost": "분노 40 (기본)",
       "range": "자신",
-      "description": "# 무쇠가죽 (Ironfur)",
+      "description": "분노 40을 사용해 7초 동안 방어도를 높인다. 여러 번 사용하면 별도의 지속시간을 가진 중첩이 겹친다. 새 사용이 기존 모든 중첩의 남은 시간을 7초로 갱신하지는 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25173,13 +25321,19 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르솔의수호물",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/고대수호자의선물",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/피투성이모피",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/강화모피",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의인도"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.05,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -29036,6 +29190,59 @@
         "lastUpdate": ""
       }
     },
+    "200854": {
+      "id": "200854",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "피투성이 모피",
+      "koreanName": "피투성이 모피",
+      "englishName": "Gory Fur",
+      "icon": "artifactability_guardiandruid_goryfur",
+      "iconName": "artifactability_guardiandruid_goryfur",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "무쇠가죽 사용 시 20% 확률로 다음 후려갈기기·말살·찢어발기기가 무료가 된다. 반대로 해당 공격 소비기를 사용하면 10% 확률로 다음 무쇠가죽이 무료가 된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_guardiandruid_goryfur.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_guardiandruid_goryfur.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_guardiandruid_goryfur.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_guardiandruid_goryfur.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_guardiandruid_goryfur.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\피투성이모피.md",
+        "lastUpdate": ""
+      }
+    },
     "201427": {
       "id": "201427",
       "type": "skill",
@@ -30323,14 +30530,14 @@
       "icon": "spell_frost_iceclaw",
       "iconName": "spell_frost_iceclaw",
       "school": "",
-      "cooldown": "발동",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "원거리",
-      "description": "# 은하의 수호자 (Galactic Guardian)",
+      "resourceCost": "",
+      "range": "",
+      "description": "피해를 입히면 5% 확률로 자동 달빛섬광을 발사한다. 일반 달빛섬광 빌드는 다음 수동 달빛섬광의 직접 피해를 300% 증가시키고 분노 8을 추가로 얻는다. 붉은 달을 선택하면 별도의 달의 천벌 중첩으로 작동한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30344,19 +30551,17 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/붉은달"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/반짝이는달빛"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/삭망월"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/달의수호자"
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.047,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -30378,14 +30583,14 @@
       "icon": "ability_druid_enrage",
       "iconName": "ability_druid_enrage",
       "school": "",
-      "cooldown": "생존기 재사용 대기시간 감소",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 적자생존 (Survival of the Fittest)",
+      "resourceCost": "",
+      "range": "",
+      "description": "나무 껍질과 생존 본능의 쿨다운을 줄이는 특성이다. 기본 툴팁은 한 등급의 12% 감소를 표시하므로 선택한 등급과 최종 쿨다운을 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30398,8 +30603,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능",
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -30407,7 +30612,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.025,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -30615,6 +30820,58 @@
         "lastUpdate": ""
       }
     },
+    "204053": {
+      "id": "204053",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "상처 찢기",
+      "koreanName": "상처 찢기",
+      "englishName": "Rend and Tear",
+      "icon": "ability_druid_swipe",
+      "iconName": "ability_druid_swipe",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "난타 중첩 하나당 해당 대상이 자신에게 입히는 피해가 3% 줄고 자신이 그 대상에게 입히는 피해가 2% 늘어난다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_swipe.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_swipe.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_swipe.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_swipe.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_swipe.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/섬광의발톱"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\상처찢기.md",
+        "lastUpdate": ""
+      }
+    },
     "204066": {
       "id": "204066",
       "type": "atomic-skill",
@@ -30629,14 +30886,14 @@
       "icon": "spell_nature_moonglow",
       "iconName": "spell_nature_moonglow",
       "school": "",
-      "cooldown": "장기",
+      "cooldown": "60초 (기본)",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "지정 위치",
-      "description": "# 달 광선 (Lunar Beam)",
+      "range": "40미터",
+      "description": "대상 위치에 달 광선을 불러 피해를 주고 자신의 특화와 회복을 보조하는 쿨기다. 기본 쿨다운은 60초, 지속시간은 8초이며 삭망월 선택 시 쿨다운이 20초 줄어든다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30650,12 +30907,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/삭망월",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/영원한달",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/끝없는달빛",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/반그늘의팽창"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -32543,14 +32805,14 @@
       "icon": "spell_druid_bearhug",
       "iconName": "spell_druid_bearhug",
       "school": "",
-      "cooldown": "발동 효과",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 꿰뚫기 (Gore)",
+      "resourceCost": "",
+      "range": "",
+      "description": "난타·휘둘러치기·달빛섬광·후려갈기기가 15% 확률로 짓이기기의 쿨다운을 초기화하고 다음 짓이기기의 분노 생성을 4 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32563,20 +32825,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/휘둘러치기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/맹위"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/분노를다스리는자"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 6,
-        "synergyCount": 5,
-        "linkDensity": 0.059,
+        "synergyCount": 6,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -32984,6 +33247,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Skills\\독소정화.md",
+        "lastUpdate": ""
+      }
+    },
+    "213764": {
+      "id": "213764",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Feral",
+        "Guardian"
+      ],
+      "name": "휘둘러치기",
+      "koreanName": "휘둘러치기",
+      "englishName": "Swipe",
+      "icon": "inv_misc_monsterclaw_03",
+      "iconName": "inv_misc_monsterclaw_03",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "형상별 조건",
+      "range": "8미터",
+      "description": "곰 또는 표범 변신에서 주변 적을 공격한다. 수호에서는 난타·짓이기기 등 중요한 입력이 없을 때 쓰는 보조 광역 공격이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterclaw_03.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_monsterclaw_03.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_monsterclaw_03.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_monsterclaw_03.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterclaw_03.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿰뚫기"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/발톱광란"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Skills\\휘둘러치기.md",
         "lastUpdate": ""
       }
     },
@@ -34543,14 +34861,14 @@
       "icon": "spell_fire_twilightfireward",
       "iconName": "spell_fire_twilightfireward",
       "school": "",
-      "cooldown": "달빛섬광 연계",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "원거리",
-      "description": "# 반짝이는 달빛 (Scintillating Moonlight)",
+      "resourceCost": "",
+      "range": "",
+      "description": "달빛섬광이 걸린 대상이 자신에게 입히는 피해를 줄인다. 위험한 적에게 지속 피해를 유지할 이유가 되는 방어 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -34565,13 +34883,16 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/쌍둥이달빛섬광"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -42375,61 +42696,6 @@
         "lastUpdate": ""
       }
     },
-    "343240": {
-      "id": "343240",
-      "type": "talent",
-      "class": "Druid",
-      "spec": "수호",
-      "specs": [
-        "Guardian"
-      ],
-      "name": "광폭화: 유린",
-      "koreanName": "광폭화: 유린",
-      "englishName": "Berserk: Ravage",
-      "icon": "ability_druid_berserk",
-      "iconName": "ability_druid_berserk",
-      "school": "",
-      "cooldown": "광폭화/화신 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 광폭화: 유린 (Berserk: Ravage)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_berserk.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_berserk.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_berserk.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_berserk.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_berserk.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/광폭화",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 6,
-        "linkDensity": 0.064,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\광폭화유린.md",
-        "lastUpdate": ""
-      }
-    },
     "343294": {
       "id": "343294",
       "type": "skill",
@@ -44373,6 +44639,60 @@
         "lastUpdate": ""
       }
     },
+    "370586": {
+      "id": "370586",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "엘룬의 총애",
+      "koreanName": "엘룬의 총애",
+      "englishName": "Elune's Favored",
+      "icon": "spell_holy_elunesgrace",
+      "iconName": "spell_holy_elunesgrace",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "곰 변신 상태에서 자신이 입힌 비전 피해의 18%만큼 생명력을 회복한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_elunesgrace.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_elunesgrace.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_elunesgrace.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_elunesgrace.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_elunesgrace.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/곰변신",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/달의부름"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\엘룬의총애.md",
+        "lastUpdate": ""
+      }
+    },
     "370665": {
       "id": "370665",
       "type": "atomic-skill",
@@ -44794,14 +45114,14 @@
       "icon": "inv12_ability_druid_afterthewildfire",
       "iconName": "inv12_ability_druid_afterthewildfire",
       "school": "",
-      "cooldown": "분노 소모 연계",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "분노",
-      "range": "파티/공격대",
-      "description": "# 들불이 지나간 자리 (After the Wildfire)",
+      "resourceCost": "",
+      "range": "",
+      "description": "분노를 누적 300 소모할 때마다 20미터 안의 아군 최대 5명을 치유하는 지속 효과다. 누적 자원 소비를 파티 회복으로 바꾼다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44815,15 +45135,16 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.023,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -44895,14 +45216,14 @@
       "icon": "ability_druid_dreamstate",
       "iconName": "ability_druid_dreamstate",
       "school": "",
-      "cooldown": "발동 효과",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "회복 주문 연계",
-      "range": "자신/아군",
-      "description": "# 세나리우스의 꿈 (Dream of Cenarius)",
+      "resourceCost": "",
+      "range": "",
+      "description": "주기적이지 않은 피해를 받으면 일정 확률로 다음 재생이 강화된다. 발동은 30초 동안 유지되며 재생을 즉시·무료로, 모든 변신 상태에서 사용할 수 있게 하고 치유량을 130% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44914,14 +45235,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_dreamstate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿈의안내자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.012,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -45122,6 +45447,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Talents\\시간의군주.md",
+        "lastUpdate": ""
+      }
+    },
+    "372567": {
+      "id": "372567",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "쌍둥이 달빛섬광",
+      "koreanName": "쌍둥이 달빛섬광",
+      "englishName": "Twin Moonfire",
+      "icon": "spell_nature_starfall",
+      "iconName": "spell_nature_starfall",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "달빛섬광 피해가 8% 늘고, 대상 주변 15미터 안의 추가 적 하나에게도 적용된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_starfall.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_starfall.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_starfall.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_starfall.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/반짝이는달빛"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\쌍둥이달빛섬광.md",
         "lastUpdate": ""
       }
     },
@@ -47160,6 +47537,58 @@
         "lastUpdate": ""
       }
     },
+    "377210": {
+      "id": "377210",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "우르속의 격노",
+      "koreanName": "우르속의 격노",
+      "englishName": "Ursoc's Fury",
+      "icon": "achievement_emeraldnightmare_ursoc",
+      "iconName": "achievement_emeraldnightmare_ursoc",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "난타와 후려갈기기로 입힌 피해의 35%를 15초 동안 지속되는 보호막으로 얻는다. 말살로 대체한 경우의 공격 소비도 같은 운용 맥락에서 보호막과 연결된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_emeraldnightmare_ursoc.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_emeraldnightmare_ursoc.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_emeraldnightmare_ursoc.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_emeraldnightmare_ursoc.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_emeraldnightmare_ursoc.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\우르속의격노.md",
+        "lastUpdate": ""
+      }
+    },
     "377253": {
       "id": "377253",
       "type": "talent",
@@ -47376,14 +47805,14 @@
       "icon": "spell_nature_healingway",
       "iconName": "spell_nature_healingway",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 타고난 결의 (Innate Resolve)",
+      "resourceCost": "",
+      "range": "",
+      "description": "광포한 재생력의 충전을 하나 늘리고, 잃은 생명력에 따라 광포한 재생력의 회복량을 최대 80% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -47398,13 +47827,17 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/자연의탄력"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/샘솟는힘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.012,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -67352,6 +67785,111 @@
         "lastUpdate": ""
       }
     },
+    "393414": {
+      "id": "393414",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "우르속의 인도",
+      "koreanName": "우르속의 인도",
+      "englishName": "Ursoc's Guidance",
+      "icon": "inv_ability_druid_convokethespirits",
+      "iconName": "inv_ability_druid_convokethespirits",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "분노를 25 소모할 때마다 화신: 우르속의 수호자의 쿨다운이 1초 줄어든다. 영혼 소집을 선택한 경우에는 별도의 쿨다운·시전 구성 변경이 적용된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druid_convokethespirits.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_druid_convokethespirits.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_druid_convokethespirits.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_druid_convokethespirits.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druid_convokethespirits.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.044,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\우르속의인도.md",
+        "lastUpdate": ""
+      }
+    },
+    "393427": {
+      "id": "393427",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "섬광의 발톱",
+      "koreanName": "섬광의 발톱",
+      "englishName": "Flashing Claws",
+      "icon": "spell_druid_thrash",
+      "iconName": "spell_druid_thrash",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "한 등급 기준 난타가 10% 확률로 추가 난타를 일으키고, 난타 지속 피해의 최대 중첩을 하나 늘린다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_thrash.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_thrash.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_thrash.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_thrash.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_thrash.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/상처찢기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\섬광의발톱.md",
+        "lastUpdate": ""
+      }
+    },
     "393516": {
       "id": "393516",
       "type": "talent",
@@ -67397,6 +67935,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\허초.md",
+        "lastUpdate": ""
+      }
+    },
+    "393618": {
+      "id": "393618",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "강화 모피",
+      "koreanName": "강화 모피",
+      "englishName": "Reinforced Fur",
+      "icon": "spell_nature_spiritarmor",
+      "iconName": "spell_nature_spiritarmor",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "무쇠가죽의 방어도 증가 효과가 15% 강화되고 나무 껍질의 피해 감소가 추가로 10% 증가한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_spiritarmor.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_spiritarmor.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_spiritarmor.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_spiritarmor.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_spiritarmor.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\강화모피.md",
         "lastUpdate": ""
       }
     },
@@ -68761,14 +69350,14 @@
       "icon": "ability_druid_lacerate",
       "iconName": "ability_druid_lacerate",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "",
       "castTime": "즉시",
-      "resourceCost": "분노",
-      "range": "근접",
-      "description": "# 말살 (Raze)",
+      "resourceCost": "분노 40 (기본)",
+      "range": "근접 / 전방",
+      "description": "후려갈기기를 대체하는 광역 분노 소비기다. 기본 분노 40을 사용해 주 대상과 전방의 적들을 공격한다. 무료 발동과 결정타의 추가 소비가 있으면 실제 비용이 달라진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68781,19 +69370,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/맹위",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/우르속의격노",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/결정타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/피투성이모피"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.05,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -72793,14 +73383,14 @@
       "icon": "inv_ability_eluneschosendruid_boundlessmoonlight",
       "iconName": "inv_ability_eluneschosendruid_boundlessmoonlight",
       "school": "",
-      "cooldown": "엘룬의 분노/달 광선 연계",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 끝없는 달빛 (Boundless Moonlight)",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호는 달 광선 범위 안의 적에게 입힌 피해의 12%를 생명력으로 흡수하고, 엘룬의 분노 종료 시 추가 피해를 얻는다. 조화는 엘룬의 분노 종료 피해와 보름달의 작은 달·천공의 힘 생성으로 연결된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72813,21 +73403,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/보름달",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/끝없는달빛"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/영원한달"
         ]
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 5,
-        "linkDensity": 0.041,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -72850,14 +73436,14 @@
       "icon": "artifactability_balancedruid_newmoon",
       "iconName": "artifactability_balancedruid_newmoon",
       "school": "",
-      "cooldown": "영웅특성 효과 강화",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "조화: 천공의 힘 / 수호: 분노와 생존 가치",
-      "range": "자신",
-      "description": "# 영원한 달 (The Eternal Moon)",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호에서는 달 광선의 피해가 30% 증가하고 3초 길어지며 특화 보정도 증가한다. 끝없는 달빛의 엘룬의 분노 종료 피해가 50% 강화되고 추가 분노 6을 생성한다. 조화에서는 종료 피해 강화와 천공의 힘 6, 작은 달 추가 효과가 적용된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72870,24 +73456,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천체의정렬",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/영원한달",
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/끝없는달빛"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/끝없는달빛",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/삭망월"
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 7,
-        "linkDensity": 0.047,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -73937,6 +74517,60 @@
         "lastUpdate": ""
       }
     },
+    "428655": {
+      "id": "428655",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Guardian"
+      ],
+      "name": "엘룬의 빛",
+      "koreanName": "엘룬의 빛",
+      "englishName": "The Light of Elune",
+      "icon": "ability_druid_dreamstate",
+      "iconName": "ability_druid_dreamstate",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "달빛섬광 피해가 일정 확률로 대상을 따라가는 3초 엘룬의 분노를 발동시킨다. 수호는 지속시간 동안 분노 18, 조화는 천공의 힘 15를 생성한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_dreamstate.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_dreamstate.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_dreamstate.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_dreamstate.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_dreamstate.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/끝없는달빛",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/영원한달"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\엘룬의빛.md",
+        "lastUpdate": ""
+      }
+    },
     "428731": {
       "id": "428731",
       "type": "hero-talent",
@@ -74247,6 +74881,59 @@
         "lastUpdate": ""
       }
     },
+    "429520": {
+      "id": "429520",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Guardian"
+      ],
+      "name": "달의 수호자",
+      "koreanName": "달의 수호자",
+      "englishName": "Moon Guardian",
+      "icon": "spell_nature_moonglow",
+      "iconName": "spell_nature_moonglow",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호에서는 은하의 수호자가 자동 발사하는 달빛섬광이 분노 5를 생성한다. 조화에서는 달빛섬광과 별빛섬광의 천공의 힘 생성이 2 증가한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_moonglow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_moonglow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_moonglow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_moonglow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_moonglow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\달의수호자.md",
+        "lastUpdate": ""
+      }
+    },
     "429523": {
       "id": "429523",
       "type": "hero-talent",
@@ -74262,14 +74949,14 @@
       "icon": "ability_druid_cresentburn",
       "iconName": "ability_druid_cresentburn",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "조화: 일월식 운용 / 수호: 난타 비전 전환",
-      "range": "자신",
-      "description": "# 달의 부름 (Lunar Calling)",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호에서는 난타의 피해가 12% 늘고 비전 피해로 바뀐다. 조화에서는 별빛섬광의 주 대상 피해가 120% 증가하고 천벌이 일월식을 태양 쪽으로 전환하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74282,26 +74969,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천벌",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/달의부름",
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/삭망월"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/엘룬의총애"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 11,
-        "synergyCount": 9,
-        "linkDensity": 0.06,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -74324,14 +75002,14 @@
       "icon": "spell_nature_moonglow",
       "iconName": "spell_nature_moonglow",
       "school": "",
-      "cooldown": "비전 능력 사용 시 감소",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "조화: 천공의 힘 흐름 / 수호: 달 광선 회전율",
-      "range": "자신",
-      "description": "# 삭망월 (Lunation)",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호에서는 달 광선의 쿨다운이 고정 20초 감소한다. 조화에서는 비전 능력을 사용할 때 엘룬의 분노와 달 주문의 쿨다운이 줄어드는 별도의 효과가 적용된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74344,26 +75022,15 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/초승달",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/반달",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/보름달",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자"
-        ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/삭망월"
-        ]
+        "relatedTalents": [],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 9,
-        "linkDensity": 0.056,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -82295,14 +82962,14 @@
       "icon": "inv_ability_druidoftheclawdruid_ravage",
       "iconName": "inv_ability_druidoftheclawdruid_ravage",
       "school": "",
-      "cooldown": "발동형",
-      "castTime": "즉시",
-      "resourceCost": "전문화별 소비 흐름",
-      "range": "근접",
-      "description": "# 찢어발기기 (Ravage)",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자동 공격 시 일정 확률로 다음 공격 소비기를 찢어발기기로 전환하는 영웅 특성이다. 수호는 후려갈기기, 야성은 흉포한 이빨이 변환된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82315,29 +82982,235 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/원시분노",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/도려내기",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Talents/물어뜯기"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/목숨을끊는일격",
           "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/발톱광란"
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 8,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
         "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\찢어발기기.md",
+        "lastUpdate": ""
+      }
+    },
+    "441605": {
+      "id": "441605",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "찢어발기기",
+      "koreanName": "찢어발기기",
+      "englishName": "Ravage",
+      "icon": "inv_ability_druidoftheclawdruid_ravage",
+      "iconName": "inv_ability_druidoftheclawdruid_ravage",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "분노 40 (기본)",
+      "range": "근접 / 전방",
+      "description": "발톱의 드루이드 수호가 실제로 시전하는 강화 공격이다. 후려갈기기가 변환된 상태에서 분노를 소모해 주 대상과 전방의 적들을 벤다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druidoftheclawdruid_ravage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_druidoftheclawdruid_ravage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_druidoftheclawdruid_ravage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/섬뜩한상처",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/목숨을끊는일격",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/발톱광란"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 0,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Skills\\찢어발기기.md",
+        "lastUpdate": ""
+      }
+    },
+    "441675": {
+      "id": "441675",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "샘솟는 힘",
+      "koreanName": "샘솟는 힘",
+      "englishName": "Fount of Strength",
+      "icon": "spell_nature_unyeildingstamina",
+      "iconName": "spell_nature_unyeildingstamina",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "최대 기력과 분노가 20 늘고, 광포한 재생력을 사용하면 최대 생명력이 10% 증가한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_unyeildingstamina.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_unyeildingstamina.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_unyeildingstamina.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_unyeildingstamina.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_unyeildingstamina.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\샘솟는힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "441689": {
+      "id": "441689",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "강화된 변신술",
+      "koreanName": "강화된 변신술",
+      "englishName": "Empowered Shapeshifting",
+      "icon": "spell_druid_primaltenacity",
+      "iconName": "spell_druid_primaltenacity",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "표범 변신에서 광포한 재생력이 기력 40을 생성한다. 곰 변신의 마법 피해 감소가 6% 증가하며 칼날 발톱·휘둘러치기 피해가 10%, 짓이기기 피해가 25% 증가한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_primaltenacity.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_primaltenacity.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_primaltenacity.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_primaltenacity.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_primaltenacity.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/곰변신",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/휘둘러치기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\강화된변신술.md",
+        "lastUpdate": ""
+      }
+    },
+    "441691": {
+      "id": "441691",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "솟구치는 자연력",
+      "koreanName": "솟구치는 자연력",
+      "englishName": "Wildpower Surge",
+      "icon": "ability_druid_ravage",
+      "iconName": "ability_druid_ravage",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호는 짓이기기로 표범의 잠재력을 쌓는다. 6중첩에서 다음 표범 변신 시 연계 점수 5를 얻고 다음 흉포한 이빨 또는 도려내기가 강화된다. 야성은 반대로 곰의 잠재력을 쌓아 강화된 곰 공격을 사용한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ravage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ravage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ravage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ravage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/끈기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Talents/액체형상"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\솟구치는자연력.md",
         "lastUpdate": ""
       }
     },
@@ -82409,18 +83282,18 @@
       ],
       "name": "섬뜩한 상처",
       "koreanName": "섬뜩한 상처",
-      "englishName": "Aggravate Wounds",
+      "englishName": "Dreadful Wound",
       "icon": "artifactability_feraldruid_openwounds",
       "iconName": "artifactability_feraldruid_openwounds",
       "school": "",
       "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
+      "resourceCost": "",
       "range": "",
-      "description": "# 섬뜩한 상처 (Aggravate Wounds)",
+      "description": "찢어발기기에 6초 출혈과 해당 대상의 자신에 대한 피해 감소를 붙인다. 수호의 피해 감소는 15%, 야성은 4%다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82432,15 +83305,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_feraldruid_openwounds.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/상처악화-피해",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/상처악화-연장"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\섬뜩한상처.md",
@@ -82464,12 +83342,12 @@
       "school": "",
       "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
+      "resourceCost": "",
       "range": "",
-      "description": "# 목숨을 끊는 일격 (Killing Strikes)",
+      "description": "수호는 찢어발기기 사용 후 8초 동안 민첩성 8%와 무쇠가죽 방어도 20% 보정을 얻고, 전투 시작 후 첫 짓이기기가 찢어발기기를 준비한다. 야성은 첫 호랑이의 분노에서 흉포한 이빨이 변환된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82483,23 +83361,76 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\목숨을끊는일격.md",
+        "lastUpdate": ""
+      }
+    },
+    "441829": {
+      "id": "441829",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "상처 악화",
+      "koreanName": "상처 악화",
+      "englishName": "Aggravate Wounds",
+      "icon": "artifactability_guardiandruid_goryfur",
+      "iconName": "artifactability_guardiandruid_goryfur",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호의 후려갈기기·말살·짓이기기·난타·휘둘러치기, 또는 야성의 기력 소비 공격이 섬뜩한 상처를 0.6초 연장한다. 추가 연장 한도는 8초다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_guardiandruid_goryfur.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_guardiandruid_goryfur.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_guardiandruid_goryfur.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_guardiandruid_goryfur.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_guardiandruid_goryfur.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/호랑이의분노",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/흉포한이빨"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/섬뜩한상처"
         ]
       },
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 4,
-        "linkDensity": 0.04,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\목숨을끊는일격.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\상처악화-연장.md",
         "lastUpdate": ""
       }
     },
@@ -82520,12 +83451,12 @@
       "school": "",
       "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
+      "resourceCost": "",
       "range": "",
-      "description": "# 발톱 광란 (Claw Rampage)",
+      "description": "광폭화 동안 수호의 짓이기기·난타·휘둘러치기, 또는 야성의 칼날 발톱·휘둘러치기가 20% 확률로 다음 공격 소비기를 찢어발기기로 바꾼다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82538,23 +83469,74 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
-          "08-직업별-Knowledge-Base/03-드루이드/야성/Skills/칼날발톱"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.038,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\발톱광란.md",
+        "lastUpdate": ""
+      }
+    },
+    "441845": {
+      "id": "441845",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "심장을 향해",
+      "koreanName": "심장을 향해",
+      "englishName": "Strike for the Heart",
+      "icon": "ability_druid_primalagression",
+      "iconName": "ability_druid_primalagression",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호의 짓이기기 피해가 10%, 치명타 확률이 10% 증가하며 최대 생명력의 5%를 회복한다. 야성은 칼날 발톱·휘둘러치기·갈퀴 발톱 피해 10%와 치명타 확률 5% 보정을 얻는다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_primalagression.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_primalagression.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_primalagression.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_primalagression.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_primalagression.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\심장을향해.md",
         "lastUpdate": ""
       }
     },
@@ -87318,6 +88300,63 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Hero-Talents\\환기비전불사조.md",
+        "lastUpdate": ""
+      }
+    },
+    "449193": {
+      "id": "449193",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
+      "name": "액체 형상",
+      "koreanName": "액체 형상",
+      "englishName": "Fluid Form",
+      "icon": "ability_druid_mastershapeshifter",
+      "iconName": "ability_druid_mastershapeshifter",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "칼날 발톱·갈퀴 발톱·두개골 강타를 사용하면 표범으로, 짓이기기를 사용하면 곰으로 자동 변신한다. 달빛야수 변신을 배웠다면 천벌·별빛섬광은 달빛야수로 전환한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_mastershapeshifter.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_mastershapeshifter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_mastershapeshifter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_mastershapeshifter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_mastershapeshifter.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/두개골강타",
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/곰변신"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/끈기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Talents\\액체형상.md",
         "lastUpdate": ""
       }
     },
@@ -100256,6 +101295,58 @@
         "lastUpdate": ""
       }
     },
+    "471492": {
+      "id": "471492",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "우르솔의 수호물",
+      "koreanName": "우르솔의 수호물",
+      "englishName": "Ursol's Warding",
+      "icon": "spell_nature_natureresistancetotem",
+      "iconName": "spell_nature_natureresistancetotem",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "방어도로 감소하는 피해 비율의 10%만큼 마법 피해 감소도 얻는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_natureresistancetotem.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_natureresistancetotem.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_natureresistancetotem.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_natureresistancetotem.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_natureresistancetotem.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/강화모피"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\우르솔의수호물.md",
+        "lastUpdate": ""
+      }
+    },
     "471504": {
       "id": "471504",
       "type": "talent",
@@ -109288,6 +110379,60 @@
         "lastUpdate": ""
       }
     },
+    "1251406": {
+      "id": "1251406",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "끈기",
+      "koreanName": "끈기",
+      "englishName": "Persistence",
+      "icon": "inv_1115_druid_bearstanding",
+      "iconName": "inv_1115_druid_bearstanding",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "곰 변신을 해제한 뒤에도 곰의 최대 생명력과 방어도 보정이 즉시 모두 사라지지 않고 8초에 걸쳐 서서히 감소한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_druid_bearstanding.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_1115_druid_bearstanding.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_1115_druid_bearstanding.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_1115_druid_bearstanding.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_druid_bearstanding.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/곰변신"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Talents/액체형상"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/솟구치는자연력"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\끈기.md",
+        "lastUpdate": ""
+      }
+    },
     "1251592": {
       "id": "1251592",
       "type": "talent",
@@ -109488,6 +110633,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\썩은마귀-소환.md",
+        "lastUpdate": ""
+      }
+    },
+    "1251876": {
+      "id": "1251876",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "고대 수호자의 선물",
+      "koreanName": "고대 수호자의 선물",
+      "englishName": "Gift of an Ancient Guardian",
+      "icon": "inv_relics_idolofhealth",
+      "iconName": "inv_relics_idolofhealth",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "무쇠가죽이 활성화된 동안 특화가 5% 증가한다. 방어 효과의 공백을 줄일 때 함께 얻는 유지 보상이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_relics_idolofhealth.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_relics_idolofhealth.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_relics_idolofhealth.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_relics_idolofhealth.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_relics_idolofhealth.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\고대수호자의선물.md",
         "lastUpdate": ""
       }
     },
@@ -109740,6 +110935,58 @@
         "lastUpdate": ""
       }
     },
+    "1252871": {
+      "id": "1252871",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "붉은 달",
+      "koreanName": "붉은 달",
+      "englishName": "Red Moon",
+      "icon": "sha_ability_mage_firestarter_nightmare",
+      "iconName": "sha_ability_mage_firestarter_nightmare",
+      "school": "",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "40미터",
+      "description": "선택 시 일반 달빛섬광을 대체하는 붉은 달 지속 피해를 대상에게 건다. 기본 지속시간은 8초이며, 해당 대상에 대한 짓이기기가 지속시간을 1초 늘리고 분노 8을 추가로 생성한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/sha_ability_mage_firestarter_nightmare.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/sha_ability_mage_firestarter_nightmare.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/sha_ability_mage_firestarter_nightmare.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/sha_ability_mage_firestarter_nightmare.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/sha_ability_mage_firestarter_nightmare.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/은하의수호자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.021,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Skills\\붉은달.md",
+        "lastUpdate": ""
+      }
+    },
     "1252874": {
       "id": "1252874",
       "type": "talent",
@@ -109887,6 +111134,57 @@
         "lastUpdate": ""
       }
     },
+    "1252994": {
+      "id": "1252994",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "결정타",
+      "koreanName": "결정타",
+      "englishName": "Killing Blow",
+      "icon": "artifactability_feraldruid_ashamanesbite",
+      "iconName": "artifactability_feraldruid_ashamanesbite",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "후려갈기기와 말살이 최대 분노 20을 추가로 사용해 최대 70%의 추가 피해를 입힌다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_feraldruid_ashamanesbite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_feraldruid_ashamanesbite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_feraldruid_ashamanesbite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_feraldruid_ashamanesbite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_feraldruid_ashamanesbite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\결정타.md",
+        "lastUpdate": ""
+      }
+    },
     "1253014": {
       "id": "1253014",
       "type": "talent",
@@ -109932,6 +111230,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Talents\\물배출.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253035": {
+      "id": "1253035",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "분노를 다스리는 자",
+      "koreanName": "분노를 다스리는 자",
+      "englishName": "Harnessed Rage",
+      "icon": "inv_misc_bearclaw_nightmare",
+      "iconName": "inv_misc_bearclaw_nightmare",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "짓이기기의 최대 충전을 하나 늘린다. 분노 80 이상에서 특정 공격을 사용할 때 꿰뚫기 발동 확률이 증가하는 추가 효과가 있으나, 현재 한글과 영문 라이브 툴팁에서 해당 공격 이름이 다르다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bearclaw_nightmare.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_bearclaw_nightmare.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_bearclaw_nightmare.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bearclaw_nightmare.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bearclaw_nightmare.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/꿰뚫기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\분노를다스리는자.md",
         "lastUpdate": ""
       }
     },
@@ -120791,18 +122142,22 @@
       ],
       "name": "야생 수호자",
       "koreanName": "야생 수호자",
-      "englishName": "Apex Wild Guardian",
+      "englishName": "Wild Guardian",
+      "aliases": [
+        "야생 수호자 정점",
+        "야생 수호자 첫 노드"
+      ],
       "icon": "inv12_apextalent_druid_wildguardian",
       "iconName": "inv12_apextalent_druid_wildguardian",
       "school": "",
-      "cooldown": "광포한 재생력 연계",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "분노/생존기 순환",
-      "range": "자신",
-      "description": "# 야생 수호자 (Apex Wild Guardian)",
+      "resourceCost": "",
+      "range": "",
+      "description": "분노를 소모할 때 10% 확률로 8초 동안 수호자의 영혼을 깨운다. 영혼이 깨어 있는 동안 난타나 짓이기기를 시전하면 영혼이 주변 적을 공격한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120815,22 +122170,196 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
           "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/생존본능"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-중간",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\야생수호자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1269617": {
+      "id": "1269617",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "야생 수호자",
+      "koreanName": "야생 수호자",
+      "englishName": "Wild Guardian",
+      "aliases": [
+        "야생 수호자 중간 노드"
+      ],
+      "icon": "inv12_apextalent_druid_wildguardian",
+      "iconName": "inv12_apextalent_druid_wildguardian",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "한 등급 기준 특화가 3% 증가하고, 짓이기기·후려갈기기·말살·찢어발기기 피해의 20%를 12초에 걸친 추가 자연 피해로 가한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_druid_wildguardian.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_druid_wildguardian.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_druid_wildguardian.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.04,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\야생수호자.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\야생수호자-중간.md",
+        "lastUpdate": ""
+      }
+    },
+    "1269619": {
+      "id": "1269619",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "야생 수호자",
+      "koreanName": "야생 수호자",
+      "englishName": "Wild Guardian",
+      "aliases": [
+        "야생 수호자 마지막 노드"
+      ],
+      "icon": "inv12_apextalent_druid_wildguardian",
+      "iconName": "inv12_apextalent_druid_wildguardian",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "영혼이 깨어나면 난타와 짓이기기가 초기화된다. 영혼이 있는 동안 두 기술의 피해가 30% 증가하고 영혼 공격마다 분노 8이 추가된다. 화신 또는 광폭화를 시전하면 야생 수호자 사용 기회를 한 번 얻는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_druid_wildguardian.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_druid_wildguardian.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_druid_wildguardian.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/야생수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\야생수호자-마지막.md",
+        "lastUpdate": ""
+      }
+    },
+    "1269658": {
+      "id": "1269658",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "야생 수호자",
+      "koreanName": "야생 수호자",
+      "englishName": "Wild Guardian",
+      "icon": "inv12_apextalent_druid_wildguardian",
+      "iconName": "inv12_apextalent_druid_wildguardian",
+      "school": "",
+      "cooldown": "8초 / 별도 사용 기회 필요",
+      "castTime": "즉시",
+      "resourceCost": "야생 수호자 충전",
+      "range": "",
+      "description": "다음 후려갈기기·말살·찢어발기기 시전이 확정으로 수호자의 영혼을 깨우게 한다. 마지막 정점 노드에서 화신 또는 광폭화 시전으로 사용 기회를 얻는 실제 버튼이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_druid_wildguardian.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_druid_wildguardian.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_druid_wildguardian.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_druid_wildguardian.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/후려갈기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/말살",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/야생수호자-마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Skills\\야생수호자.md",
         "lastUpdate": ""
       }
     },
@@ -122650,9 +124179,6 @@
       "name": "쏟아지는 별",
       "koreanName": "쏟아지는 별",
       "englishName": "Star Cascade",
-      "aliases": [
-        "Star Cascade"
-      ],
       "icon": "spell_arcane_arcane03",
       "iconName": "spell_arcane_arcane03",
       "school": "",
@@ -122660,7 +124186,7 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "조화에서는 으로 천공의 힘을 생성할 때 30% 확률로 대상에게 50% 효율의 를 발사한다.",
+      "description": "수호는 난타 사용 시 50% 확률로 120% 효율의 별빛쇄도를 자동 발사한다. 조화는 별빛섬광으로 천공의 힘을 생성할 때 30% 확률로 50% 효율의 별빛쇄도를 발사한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -122676,21 +124202,73 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
-          "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천벌"
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.054,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\쏟아지는별.md",
+        "lastUpdate": ""
+      }
+    },
+    "1271261": {
+      "id": "1271261",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Guardian"
+      ],
+      "name": "반그늘의 팽창",
+      "koreanName": "반그늘의 팽창",
+      "englishName": "Penumbral Swell",
+      "icon": "ability_druid_eclipse",
+      "iconName": "ability_druid_eclipse",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "수호는 달 광선이 활성화된 동안 비전 피해가 10% 증가한다. 조화는 일월식 (달) 동안 비전 피해가 3% 증가한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_eclipse.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_eclipse.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_eclipse.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/달광선",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/달의부름"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\반그늘의팽창.md",
         "lastUpdate": ""
       }
     },
@@ -122837,6 +124415,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Hero-Talents\\광휘의반사.md",
+        "lastUpdate": ""
+      }
+    },
+    "1271540": {
+      "id": "1271540",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "사지 분쇄",
+      "koreanName": "사지 분쇄",
+      "englishName": "Limb from Limb",
+      "icon": "artifactability_feraldruid_ashamanesbite",
+      "iconName": "artifactability_feraldruid_ashamanesbite",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자동 공격에서 찢어발기기를 얻을 확률이 30% 증가한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_feraldruid_ashamanesbite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_feraldruid_ashamanesbite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_feraldruid_ashamanesbite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_feraldruid_ashamanesbite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_feraldruid_ashamanesbite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/찢어발기기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/찢어발기기"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\사지분쇄.md",
         "lastUpdate": ""
       }
     },
@@ -123137,6 +124768,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\언어의-역병.md",
+        "lastUpdate": ""
+      }
+    },
+    "1271839": {
+      "id": "1271839",
+      "type": "hero-talent",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Guardian",
+        "Feral"
+      ],
+      "name": "상처 악화",
+      "koreanName": "상처 악화",
+      "englishName": "Exacerbating Wounds",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "iconName": "inv_artifact_bloodoftheassassinated",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "섬뜩한 상처가 걸린 대상에게 자신의 출혈과 지속 피해가 더 강해진다. 수호는 15%, 야성은 8% 보정이다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_artifact_bloodoftheassassinated.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_artifact_bloodoftheassassinated.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_artifact_bloodoftheassassinated.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Hero-Talents/섬뜩한상처"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\상처악화-피해.md",
         "lastUpdate": ""
       }
     },
@@ -126071,6 +127755,58 @@
         "lastUpdate": ""
       }
     },
+    "1278789": {
+      "id": "1278789",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "자연의 탄력",
+      "koreanName": "자연의 탄력",
+      "englishName": "Natural Resilience",
+      "icon": "spell_lfieblood",
+      "iconName": "spell_lfieblood",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "광포한 재생력의 초과 치유량 중 80%를 피해 흡수 보호막으로 전환한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_lfieblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_lfieblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_lfieblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_lfieblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_lfieblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/타고난결의"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\자연의탄력.md",
+        "lastUpdate": ""
+      }
+    },
     "1278886": {
       "id": "1278886",
       "type": "talent",
@@ -126081,18 +127817,18 @@
       ],
       "name": "꿈의 안내자",
       "koreanName": "꿈의 안내자",
-      "englishName": "Dreamwalker's Guidance",
+      "englishName": "Dream Guide",
       "icon": "achievement_reputation_guardiansofcenarius",
       "iconName": "achievement_reputation_guardiansofcenarius",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "",
       "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 꿈의 안내자 (Dreamwalker's Guidance)",
+      "resourceCost": "",
+      "range": "",
+      "description": "주기적이지 않은 피해를 받을 때 일정 확률로 효과를 얻는다. 자신이나 주변 아군의 생명력이 40% 미만으로 떨어지면 효과를 소비해 자동으로 강화된 재생을 사용한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126105,16 +127841,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광포한재생력",
-          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/무쇠가죽"
+          "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Talents/세나리우스의꿈"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.022,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -127501,6 +129238,109 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296607": {
+      "id": "1296607",
+      "type": "passive",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "Druid Guardian 12.1 Class Set 2pc",
+      "koreanName": "Druid Guardian 12.1 Class Set 2pc",
+      "englishName": "Druid Guardian 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2의 2세트 효과다. 난타를 사용할 때 20% 확률로 다음 짓이기기의 피해가 100% 증가한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/짓이기기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296608": {
+      "id": "1296608",
+      "type": "passive",
+      "class": "Druid",
+      "spec": "수호",
+      "specs": [
+        "Guardian"
+      ],
+      "name": "Druid Guardian 12.1 Class Set 4pc",
+      "koreanName": "Druid Guardian 12.1 Class Set 4pc",
+      "englishName": "Druid Guardian 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2의 4세트 효과다. 난타 시전으로 가시 3개가 대상을 공격하며 주변 최대 5명에게도 자연 피해를 준다. 광폭화 또는 화신 지속시간을 0.5초씩 최대 5초까지 연장하는 효과가 포함된다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/난타",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/화신우르속의수호자",
+          "08-직업별-Knowledge-Base/03-드루이드/수호/Skills/광폭화"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
