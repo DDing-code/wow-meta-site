@@ -120,8 +120,8 @@ function validateRendererSource(source) {
   assert(source.includes('<InlineSkillText>{children}</InlineSkillText>'), 'InlineSkillTerm must keep icon plus visible text');
   assert(source.includes('<InlineSkillTerm'), 'renderGuideText must replace skill names with InlineSkillTerm');
   assert(source.includes('...(manuscript?.extraSkills || [])'), 'inline term builder must include manuscript extraSkills');
-  assert(source.includes('<SkillIconLink skill={step.skill}'), 'opener flow steps must render skill icons');
-  assert(source.includes('<SkillIconLink skill={row.skill}'), 'priority rows must render skill icons');
+  assert(source.includes('<InlineSkillTerm skill={step.skill}>'), 'opener flow steps must render linked skill icons and names');
+  assert(source.includes('<InlineSkillTerm skill={row.skill}>'), 'priority rows must render linked skill icons and names');
 }
 
 function validateExtraSkills(spec, manuscript) {

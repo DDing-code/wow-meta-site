@@ -2016,14 +2016,10 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
 
   return (
     <OpenerFlowViewport>
-      <OpenerFlowList $color={guide.color} aria-label={chartLabel} data-opener-flow-rail>
+      <OpenerFlowList $color={guide.color} role="list" aria-label={chartLabel} data-opener-flow-rail>
         {flowItems.map((step, index) => (
           <li key={step.key}>
-            <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-            <SkillIconLink skill={step.skill} size={24} />
-            <OpenerStepBody>
-              <strong>{displayGuideText(step.label)}</strong>
-            </OpenerStepBody>
+            <InlineSkillTerm skill={step.skill}>{displayGuideText(step.label)}</InlineSkillTerm>
             {index < flowItems.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
           </li>
         ))}
@@ -3167,9 +3163,8 @@ function PriorityListChart({ guide, title, skills, manualPriority, inlineTerms }
       {rows.map((row, index) => (
         <PriorityRow key={row.key} $rank={index}>
           <PriorityRank>{index + 1}</PriorityRank>
-          <SkillIconLink skill={row.skill} size={24} />
           <PriorityText>
-            <strong>{displayGuideText(row.name)}</strong>
+            <strong><InlineSkillTerm skill={row.skill}>{displayGuideText(row.name)}</InlineSkillTerm></strong>
             <span>{renderGuideText(row.note, inlineTerms)}</span>
           </PriorityText>
         </PriorityRow>
@@ -6692,47 +6687,46 @@ const OpenerFlowList = styled.ol`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px 12px;
+  gap: 4px 8px;
   min-width: 0;
   margin: 0;
   padding: 8px 10px;
   list-style: none;
+  font-size: 0.85rem;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 
   li {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     min-width: 0;
     max-width: 100%;
-    padding: 3px 0;
+    padding: 2px 0;
+  }
+
+  li > a {
+    min-height: 24px;
+    min-width: 0;
+    margin: 0;
+    white-space: normal;
+  }
+
+  li > a > em {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  li > a > img,
+  li > a > span {
+    width: 20px;
+    height: 20px;
   }
 
   li > svg {
     flex: 0 0 auto;
-    margin-left: 4px;
     color: ${props => props.$color || '#b8915b'};
   }
-`;
-
-const OpenerStepBody = styled.div`
-  min-width: 0;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
-
-  strong {
-    display: block;
-    color: #f4efe5;
-    font-size: 0.8rem;
-    font-weight: 650;
-    line-height: 1.4;
-  }
-`;
-
-const OpenerStepNumber = styled.span`
-  flex: 0 0 auto;
-  color: #9eacb4;
-  font-size: 0.65rem;
-  font-variant-numeric: tabular-nums;
 `;
 
 const OpenerFlowDetails = styled.details`
@@ -7067,7 +7061,7 @@ const priorityLine = rank => Math.max(0.16, 0.78 - rank * 0.075);
 
 const PriorityRow = styled.div`
   display: grid;
-  grid-template-columns: 22px 24px minmax(0, 1fr);
+  grid-template-columns: 22px minmax(0, 1fr);
   gap: 8px;
   align-items: center;
   min-height: 44px;
@@ -7121,7 +7115,23 @@ const PriorityText = styled.div`
     overflow-wrap: anywhere;
   }
 
-  span {
+  strong a {
+    min-height: 24px;
+    margin: 0;
+    white-space: normal;
+  }
+
+  strong em {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  strong img {
+    width: 20px;
+    height: 20px;
+  }
+
+  > span {
     display: block;
     margin-top: 3px;
     color: #c7bba7;
