@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T14:20:45.027Z",
+    "generatedAt": "2026-09-12T15:32:23.974Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 429,
-    "rawTotalSynergies": 429,
+    "totalSynergies": 435,
+    "rawTotalSynergies": 435,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,9 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "disease-aoe": 1,
-      "apex-burst-window": 1,
-      "unknown": 113,
+      "unknown": 121,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -276,7 +274,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 22,
+      "DeathKnight": 28,
       "DemonHunter": 24,
       "Druid": 38,
       "Evoker": 28,
@@ -631,107 +629,316 @@
     "공포의역병_전염병": {
       "id": "공포의역병_전염병",
       "name": "공포의역병-전염병",
+      "description": "질병 적용, 발동, 광역 피해의 조건을 구분합니다. 공포의 역병은 한 숙주에서 불시의 파멸 기회를 만들고, 악성 역병은 전염병의 광역 피해 기반이 됩니다.",
       "type": "synergy",
-      "synergyType": "disease-aoe",
-      "participants": [],
+      "synergyType": "unknown",
+      "participants": [
+        "77575",
+        "1240996",
+        "191587",
+        "49530",
+        "207317"
+      ],
       "class": "DeathKnight",
       "spec": "Unholy",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤"
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/공포의역병",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/악성역병"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/공포의역병"
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\공포의역병-전염병.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "구울_부패쿨감_연쇄공격": {
+      "id": "구울_부패쿨감_연쇄공격",
+      "name": "구울-부패쿨감-연쇄공격",
+      "description": "고름 일격으로 만든 준비 중첩을 스컬지의 일격으로 소비하면 구울이 나옵니다. 파멸의 전조가 있으면 부패 쿨다운도 2.5초 줄고, 할퀴는 어둠은 연쇄 공격 대상을 늘립니다. 준비 없이 누르면 같은 소환·쿨감 결과를 얻지 못합니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "85948",
+        "1254252",
+        "55090",
+        "276023",
+        "1241567",
+        "1247378"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/하급구울"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의전조",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/할퀴는어둠"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\구울-부패쿨감-연쇄공격.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "구울준비_소비": {
+      "id": "구울준비_소비",
+      "name": "구울준비-소비",
+      "description": "고름 일격은 시전자에게 하급 구울 준비 중첩을 만들고, 스컬지의 일격과 영혼 수확자가 이를 소비합니다. 군대 중에는 소환 대신 명령 공격으로 이어집니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "85948",
+        "1254252",
+        "55090",
+        "343294"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/하급구울"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\구울준비-소비.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "금단의지식_사자의군대": {
       "id": "금단의지식_사자의군대",
       "name": "금단의지식-사자의군대",
+      "description": "사자의 군대가 금단의 지식의 30초 소비기 교체를 시작합니다. 단일은 괴저 고리, 균등 광역은 현재 기본 APL의 4대상선부터 무덤을 사용합니다.",
       "type": "synergy",
-      "synergyType": "apex-burst-window",
-      "participants": [],
+      "synergyType": "unknown",
+      "participants": [
+        "42650",
+        "1242158",
+        "1242174",
+        "383269"
+      ],
       "class": "DeathKnight",
       "spec": "Unholy",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대",
         "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저고리",
         "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\금단의지식-사자의군대.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "낫_질병가속": {
+      "id": "낫_질병가속",
+      "name": "낫-질병가속",
+      "description": "고름 일격 뒤 무료 부패의 낫을 적중시키면 대상의 두 역병이 25초 동안 35% 더 빨리 피해를 입힙니다. 같은 키 두 번을 유료 고름 일격 두 번으로 세지 않습니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "85948",
+        "458128",
+        "1240996",
+        "191587"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패의낫"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/공포의역병",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Buffs/악성역병"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\낫-질병가속.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "바닥_부패쿨감": {
+      "id": "바닥_부패쿨감",
+      "name": "바닥-부패쿨감",
+      "description": "죽음의 순환을 고르면 죽음과 부패의 실제 적중이 부패 재사용을 당깁니다. 대상이 곧 이탈하거나 부패 충전이 가득 차 있으면 이득을 제대로 쓰지 못합니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "43265",
+        "1290864",
+        "1247378"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽음의순환"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\바닥-부패쿨감.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "부패_학자_군주": {
+      "id": "부패_학자_군주",
+      "name": "부패-학자-군주",
+      "description": "부패가 학자를 만들고, 학자 3명이 동시에 살아 있으면 군주로 합쳐집니다. 시즌 2는 이 소환수 주문을 괴저 화살·메마른 손아귀로 바꾸며 마격 구간을 강화합니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1247378",
+        "1256813",
+        "1297086",
+        "1297091"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저화살",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/메마른손아귀"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\부패-학자-군주.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "산레인_정수유지": {
+      "id": "산레인_정수유지",
+      "name": "산레인-정수유지",
+      "description": "산레인은 변신 중 흡혈의 일격으로 정수를 쌓고, 변신 밖에는 룬 마력 소비로 발동 기회를 만듭니다. 불시의 파멸 소비는 원초적 본능의 힘도 부여합니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1233448",
+        "433895",
+        "433925",
+        "49530",
+        "434157"
+      ],
+      "class": "DeathKnight",
+      "spec": "Unholy",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Buffs/피의여왕의정수"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\산레인-정수유지.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "소환수_극딜창": {
       "id": "소환수_극딜창",
       "name": "소환수-극딜창",
+      "description": "어둠의 변신으로 망자의 사령관과 물량 공세 강화를 얻는 동안 부패를 활용합니다. 변신의 기본 15초와 사령관의 30초는 서로 다른 지속시간입니다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "1233448",
+        "1247378",
+        "390259",
+        "1241705"
+      ],
       "class": "DeathKnight",
       "spec": "Unholy",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/망자의사령관",
         "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/물량공세"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\소환수-극딜창.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "질병_부패_역병내림": {
       "id": "질병_부패_역병내림",
       "name": "질병-부패-역병내림",
+      "description": "역병내림을 선택한 빌드는 영혼 수확자의 증폭이 끝나기 전에 남은 질병 피해를 소비하고, 반환된 부패와 파멸의 역병 폭발로 질병을 다시 적용합니다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "77575",
+        "1271967",
         "1247378",
-        "1271974",
-        "55090",
-        "47541"
+        "1254552",
+        "343294"
       ],
       "class": "DeathKnight",
       "spec": "Unholy",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병",
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저고리"
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림",
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림"
+        "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의역병폭발"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\질병-부패-역병내림.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "바닥_방어조건": {

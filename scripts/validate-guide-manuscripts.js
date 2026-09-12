@@ -12,6 +12,7 @@ const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 
 const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-blood', '12.1'],
   ['deathknight-frost', '12.1'],
+  ['deathknight-unholy', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1035,6 +1036,29 @@ function main() {
   assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('쐐기'), 'Blood default hero branch must reflect Season 2 Sanlayn guidance');
 
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
+  const unholy = manuscripts['deathknight-unholy'];
+  const unholySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '부정', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(unholySource)) {
+    assert(JSON.stringify(JSON.parse(read(unholySource))) === JSON.stringify(unholy), 'Unholy guide must match its canonical 12.1 KB manuscript');
+  }
+  assert(!unholy.extraSkills?.length, 'Unholy spells must come from the canonical KB');
+  assert(kbSkills['444040']?.specs.includes('Unholy') && kbSkills['444040']?.specs.includes('Frost'), 'Apocalypse Now must be available to both Rider specializations for inline spell rendering');
+  assert(unholy.graphCenterSkillId === '1247378', 'Unholy graph must use the connected Putrefy cast as its center');
+  assert(unholy.heroBranches[0].label === '종말의 기수' && unholy.heroBranches[0].summary.includes('레이드'), 'Unholy must explain the current Rider raid baseline');
+  assert(unholy.heroBranches[1].label === '산레인' && unholy.heroBranches[1].summary.includes('쐐기'), 'Unholy must explain the current Sanlayn M+ baseline');
+  assert(unholy.heroBranches[1].opener.steps.some(step => step.skillId === '433895'), 'Sanlayn needs an authored Vampiric Strike flow');
+  assert(!unholy.opener.steps.some(step => step.skillId === '433895'), 'Rider opener must not borrow the Sanlayn-only strike');
+  for (const flow of [unholy.opener, ...unholy.heroBranches.map(branch => branch.opener)]) {
+    for (const step of flow.steps) {
+      assert(kbSkills[step.skillId]?.castTime === '즉시', 'Unholy opener nodes must be actual player cast buttons');
+      assert(!['63560', '455397', '1271974', '1241567', '1241569', '1297086', '1297091', '1296654', '1296655', '1256813'].includes(step.skillId), 'Unholy passive, pet and effect IDs must not become cast steps');
+      assert(step.phase && step.trigger && step.note, 'Unholy flows must retain their conditions');
+    }
+  }
+  assert(kbSkills['1241567']?.patch === '12.1' && kbSkills['1241567']?.description.includes('10%'), 'Unholy cleave must use the current passive and live chain reduction');
+  assert(kbSkills['276023']?.description.includes('2.5초'), 'Harbinger must explain the summon-based Putrefy cooldown reduction');
+  assert(unholy.priority.some(item => item.skillId === '207317' && item.note.includes('3대상') && item.note.includes('4대상')), 'Unholy spender thresholds must distinguish normal and apex states');
+  assert(!JSON.stringify(unholy).includes('97.6%') && !JSON.stringify(unholy).includes('99.8%'), 'Old June usage percentages must not return as current Unholy evidence');
   const frost = manuscripts['deathknight-frost'];
   const frostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '냉기', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(frostSource)) {

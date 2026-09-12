@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T14:20:45.026Z",
+    "generatedAt": "2026-09-12T15:32:23.973Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2518,
-    "rawTotalSkills": 2518,
+    "totalSkills": 2536,
+    "rawTotalSkills": 2536,
     "duplicateIds": [],
-    "totalSynergies": 429,
+    "totalSynergies": 435,
     "stats": {
-      "total": 2518,
+      "total": 2536,
       "byType": {
-        "buff": 9,
-        "hero-talent": 533,
-        "atomic-skill": 517,
+        "buff": 15,
+        "hero-talent": 532,
+        "atomic-skill": 507,
         "proc": 5,
-        "skill": 120,
-        "talent": 1019,
+        "skill": 131,
+        "talent": 1031,
         "spec-talent": 201,
         "passive": 12,
         "hero-tree": 2,
@@ -29,7 +29,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 93,
+        "DeathKnight": 111,
         "DemonHunter": 101,
         "Druid": 142,
         "Evoker": 117,
@@ -46,7 +46,7 @@
       "bySpec": {
         "DeathKnight-공용": 17,
         "DeathKnight-냉기": 32,
-        "DeathKnight-부정": 22,
+        "DeathKnight-부정": 40,
         "DeathKnight-혈기": 22,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 23,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2433,
-        "withSynergies": 716,
+        "withWikilinks": 2451,
+        "withSynergies": 737,
         "avgLinkDensity": "0.033"
       }
     }
@@ -10604,7 +10604,7 @@
     },
     "42650": {
       "id": "42650",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -10616,16 +10616,16 @@
       "icon": "spell_deathknight_armyofthedead",
       "iconName": "spell_deathknight_armyofthedead",
       "school": "",
-      "cooldown": "8분",
-      "castTime": "시전",
-      "resourceCost": "룬",
+      "cooldown": "90초",
+      "castTime": "즉시",
+      "resourceCost": "룬 1",
       "range": "자신",
-      "description": "# 사자의 군대 (Army of the Dead)",
+      "description": "룬 1개로 30초 동안 구울 8마리로 구성된 군대를 부릅니다. 재사용 대기시간은 90초입니다. 군대 중 추가 하급 구울 소환은 죽음의 명령 또는 전염병의 명령 공격으로 전환됩니다. 예전의 8분 쿨기나 지속적인 개체 수 증가로 해석하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_armyofthedead.jpg",
       "iconUrls": {
@@ -10635,19 +10635,25 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_armyofthedead.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패의낫",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\사자의군대.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "43265": {
@@ -11153,7 +11159,7 @@
     },
     "47541": {
       "id": "47541",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -11169,12 +11175,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 마력 30",
       "range": "30야드",
-      "description": "# 죽음의 고리 (Death Coil)",
+      "description": "룬 마력 30을 써서 적에게 암흑 피해를 주거나 아군 언데드를 치유합니다. 공포의 역병과 악성 역병의 지속시간을 1초 늘립니다. 불시의 파멸이 있으면 비용과 피해가 달라지므로 기본 비용을 고정 지출량으로 합산하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathcoil.jpg",
       "iconUrls": {
@@ -11184,19 +11190,25 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathcoil.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저고리"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\죽음의고리.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "47568": {
@@ -12119,6 +12131,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Skills\\울부짖는한파.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "49530": {
+      "id": "49530",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "불시의 파멸",
+      "koreanName": "불시의 파멸",
+      "englishName": "Sudden Doom",
+      "icon": "spell_shadow_painspike",
+      "iconName": "spell_shadow_painspike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "공포의 역병이 35% 확률로 다음 죽음의 고리 또는 전염병의 룬 마력 비용을 15 줄이고 피해를 35% 증가시킵니다. 12.1에서 무조건 무료 소비기라고 설명하면 틀립니다. 기본 비용 30에서 감소하므로 해당 발동의 비용은 15입니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_painspike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_painspike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_painspike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_painspike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_painspike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\불시의파멸.md",
         "lastUpdate": "2026-09-12"
       }
     },
@@ -13417,7 +13480,7 @@
     },
     "55090": {
       "id": "55090",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -13433,12 +13496,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 1",
       "range": "30야드",
-      "description": "# 스컬지의 일격 (Scourge Strike)",
+      "description": "룬 1개를 사용하는 암흑 공격입니다. 질병이 추가로 35% 효율의 피해를 한 번 입히게 하고 악성 역병을 적용·전파합니다. 준비된 하급 구울 중첩이 있으면 이를 소비해 소환으로 연결합니다. 중첩을 만드는 기술은 고름 일격입니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_scourgestrike.jpg",
       "iconUrls": {
@@ -13450,17 +13513,19 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\스컬지의일격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "55233": {
@@ -14455,7 +14520,7 @@
     },
     "63560": {
       "id": "63560",
-      "type": "atomic-skill",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -14467,16 +14532,16 @@
       "icon": "achievement_boss_festergutrotface",
       "iconName": "achievement_boss_festergutrotface",
       "school": "",
-      "cooldown": "1분",
-      "castTime": "즉시",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "하수인",
-      "description": "# 어둠의 변신 (Dark Transformation)",
-      "category": "ability",
+      "range": "",
+      "description": "영구 구울 주변의 폭발과 강화에 쓰이는 효과 ID입니다. 12.1에서 플레이어가 누르는 어둠의 변신은 1233448입니다. 이 효과 ID의 툴팁에 없는 재사용 대기시간을 임의로 붙이지 않습니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_festergutrotface.jpg",
       "iconUrls": {
@@ -14486,21 +14551,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_festergutrotface.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/되살리기"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.026,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\어둠의변신.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\어둠의변신-소환수효과.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "64382": {
@@ -15200,7 +15265,7 @@
     },
     "77575": {
       "id": "77575",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -15215,13 +15280,13 @@
       "cooldown": "없음",
       "castTime": "즉시",
       "resourceCost": "룬 1",
-      "range": "30미터",
-      "description": "# 돌발 열병 (Outbreak)",
+      "range": "30야드",
+      "description": "공포의 역병과 악성 역병을 적용하는 룬 1개 기술입니다. 두 질병의 기본 지속시간은 24초이며 공포의 역병은 동시에 한 대상에게만 유지됩니다. 대상마다 공포의 역병을 따로 쌓으려고 연타하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathvortex.jpg",
       "iconUrls": {
@@ -15232,20 +15297,22 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의역병폭발"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.027,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\돌발열병.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "77758": {
@@ -16188,7 +16255,7 @@
     },
     "85948": {
       "id": "85948",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -16204,12 +16271,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 2",
       "range": "근접",
-      "description": "# 고름 일격 (Festering Strike)",
+      "description": "룬 2개를 써서 다음 스컬지의 일격 2~3회가 하급 구울을 소환하도록 준비합니다. 소환된 하급 구울의 기본 지속시간은 8초입니다. 예전 고름 상처를 대상에게 쌓는 기술로 설명하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_festering_strike.jpg",
       "iconUrls": {
@@ -16220,21 +16287,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패의낫",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/부패의낫"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.028,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\고름일격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "86659": {
@@ -24692,7 +24761,7 @@
     },
     "191587": {
       "id": "191587",
-      "type": "skill",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -24706,14 +24775,14 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "지속 효과",
-      "resourceCost": "돌발 열병으로 적용",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 악성 역병 (Virulent Plague)",
-      "category": "ability",
+      "description": "기본 24초 동안 암흑 피해를 주며 주변으로 퍼지는 질병입니다. 돌발 열병 또는 스컬지의 일격으로 적용하며, 파멸의 역병 폭발을 선택하면 부패도 적용 수단이 됩니다. 실제 시전 버튼이 아닌 대상의 지속 피해 효과입니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_disease_02.jpg",
       "iconUrls": {
@@ -24725,22 +24794,22 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.041,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\악성역병.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\악성역병.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "191634": {
@@ -31490,7 +31559,7 @@
     },
     "207317": {
       "id": "207317",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -31504,14 +31573,14 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "룬 마력",
-      "range": "광역",
-      "description": "# 전염병 (Epidemic)",
+      "resourceCost": "룬 마력 30",
+      "range": "30야드",
+      "description": "룬 마력 30으로 악성 역병 대상과 그 주변에 피해를 주며 공포의 역병·악성 역병의 지속시간을 1초 늘립니다. 죽음과 부패 위에 있어야 작동하는 기술이 아닙니다. 질병 대상 수와 실제 밀집도를 확인합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_nullifydisease.jpg",
       "iconUrls": {
@@ -31522,21 +31591,22 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.048,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\전염병.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "207383": {
@@ -37750,6 +37820,59 @@
         "lastUpdate": ""
       }
     },
+    "276023": {
+      "id": "276023",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "파멸의 전조",
+      "koreanName": "파멸의 전조",
+      "englishName": "Harbinger of Doom",
+      "icon": "inv_mawguardpet_black",
+      "iconName": "inv_mawguardpet_black",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "불시의 파멸 발동 빈도가 30% 증가하고 최대 2중첩을 저장합니다. 스컬지의 일격으로 하급 구울을 소환하면 부패 재사용 대기시간이 2.5초 감소합니다. 툴팁의 300밀리초는 내부 재사용 제한이며 직접 누르는 기술의 쿨다운이 아닙니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-13",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_mawguardpet_black.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mawguardpet_black.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_mawguardpet_black.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_mawguardpet_black.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mawguardpet_black.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\파멸의전조.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
     "277953": {
       "id": "277953",
       "type": "talent",
@@ -41687,16 +41810,16 @@
       "icon": "ability_deathknight_soulreaper",
       "iconName": "ability_deathknight_soulreaper",
       "school": "",
-      "cooldown": "6초",
+      "cooldown": "15초",
       "castTime": "즉시",
       "resourceCost": "룬 1",
       "range": "근접",
-      "description": "# 영혼 수확자 (Soul Reaper)",
+      "description": "기본적으로 생명력 35% 미만인 적에게 사용하는 룬 1개, 15초 재사용 기술입니다. 8초 동안 자신의 질병과 하수인이 대상에게 입히는 피해를 20% 증가시키며 하급 구울 버프 최대 3중첩을 소비해 즉시 소환합니다. 12.1에서는 부패 충전을 소비하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_soulreaper.jpg",
       "iconUrls": {
@@ -41707,22 +41830,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/수확",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.035,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\영혼수확자.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "343527": {
@@ -46445,6 +46569,109 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\크툰의우상.md",
         "lastUpdate": ""
+      }
+    },
+    "377514": {
+      "id": "377514",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "수확",
+      "koreanName": "수확",
+      "englishName": "Reaping",
+      "icon": "ability_deathwing_bloodcorruption_death",
+      "iconName": "ability_deathwing_bloodcorruption_death",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "생명력 35% 미만인 적에게 스컬지의 일격·고름 일격·죽음의 고리가 주는 피해를 30% 증가시킵니다. 어둠의 변신은 영혼 수확자의 재사용 대기시간을 초기화하고 생명력 제한 없이 사용할 수 있게 합니다. 기본 영혼 수확자와 분리해 적용합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathwing_bloodcorruption_death.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_deathwing_bloodcorruption_death.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_deathwing_bloodcorruption_death.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_deathwing_bloodcorruption_death.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathwing_bloodcorruption_death.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\수확.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "377580": {
+      "id": "377580",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "부패의 메아리",
+      "koreanName": "부패의 메아리",
+      "englishName": "Putrid Echoes",
+      "icon": "inv12_ability_deathknight_dreadplague",
+      "iconName": "inv12_ability_deathknight_dreadplague",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "부패 피해가 20% 증가하고 충전 최대치가 2회 늘어납니다. 부패를 한 번 누르면 사용 가능한 충전을 최대 2회 소비합니다. 기본 1충전 기술이므로 선택 후 최대치는 3충전입니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_dreadplague.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_deathknight_dreadplague.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_deathknight_dreadplague.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_deathknight_dreadplague.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_dreadplague.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\부패의메아리.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "377811": {
@@ -54075,7 +54302,7 @@
     },
     "383269": {
       "id": "383269",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -54087,16 +54314,16 @@
       "icon": "spell_necro_deathall",
       "iconName": "spell_necro_deathall",
       "school": "",
-      "cooldown": "금단의 지식 중 사용",
+      "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "룬 마력",
-      "range": "질병 대상",
-      "description": "# 무덤 (Graveyard)",
+      "resourceCost": "룬 마력 30",
+      "range": "20야드",
+      "description": "금단의 지식 중 전염병을 대체하는 룬 마력 30 광역 소비기입니다. 악성 역병이 걸린 적과 주변에 피해를 줍니다. 현행 한국어 툴팁의 사정거리는 20야드이며 일반 전염병의 30야드를 복사하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_necro_deathall.jpg",
       "iconUrls": {
@@ -54107,22 +54334,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저고리"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/금단의지식"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.049,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\무덤.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "383281": {
@@ -62606,12 +62831,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 망자의 사령관 (Commander of the Dead)",
+      "description": "어둠의 변신이 가고일 또는 어둠의 중재자, 누더기골렘, 학자, 하급 구울을 강화하여 30초 동안 공격력을 25% 증가시킵니다. 선택하지 않은 소환수를 자동으로 제공하는 특성이 아니며 특화로 하급 구울 지속시간을 늘리는 옛 효과는 제거됐습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_fumble.jpg",
       "iconUrls": {
@@ -62623,22 +62848,21 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/금단의지식"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.035,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\망자의사령관.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "390288": {
@@ -76850,6 +77074,57 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "433901": {
+      "id": "433901",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "흡혈의 일격",
+      "koreanName": "흡혈의 일격",
+      "englishName": "Vampiric Strike",
+      "icon": "inv_ability_sanlayndeathknight_vampiricstrike",
+      "iconName": "inv_ability_sanlayndeathknight_vampiricstrike",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "부정 산레인은 죽음의 고리·전염병·죽음의 일격 사용 시 25% 확률로 흡혈의 일격 사용 기회를 얻습니다. 실제 공격은 433895이며 이 ID는 발동을 배우는 특성입니다. 혈기의 발동 확률과 대체 기술을 복사하지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_sanlayndeathknight_vampiricstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_sanlayndeathknight_vampiricstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_sanlayndeathknight_vampiricstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_sanlayndeathknight_vampiricstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_sanlayndeathknight_vampiricstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/산레인의선물"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 0,
+        "linkDensity": 0.026,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\흡혈의일격-발동특성.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "433905": {
       "id": "433905",
       "type": "hero-talent",
@@ -77161,6 +77436,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\산레인의선물.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "434157": {
+      "id": "434157",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "원초적 본능의 힘",
+      "koreanName": "원초적 본능의 힘",
+      "englishName": "Visceral Strength",
+      "icon": "inv_ragnaros_heart",
+      "iconName": "inv_ragnaros_heart",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "부정 산레인에서 불시의 파멸을 소비하면 5초 동안 힘이 4% 증가합니다. 혈기의 진홍빛 스컬지 소비 조건과 지속시간은 다릅니다. 발동을 얻기만 한 상태와 실제로 소비한 상태를 구분합니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ragnaros_heart.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ragnaros_heart.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ragnaros_heart.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\원초적본능의힘.md",
         "lastUpdate": "2026-09-12"
       }
     },
@@ -82849,7 +83177,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.019,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -82863,7 +83191,8 @@
       "class": "DeathKnight",
       "spec": "냉기",
       "specs": [
-        "Frost"
+        "Frost",
+        "Unholy"
       ],
       "name": "대재앙의 묵시록",
       "koreanName": "대재앙의 묵시록",
@@ -82875,12 +83204,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "사자의 군대와 서리고룡의 격노 사용 시 20초 동안 4인 기사단 전원을 소환합니다. 냉기에서는 서리고룡의 격노가 이 효과의 실제 사용 버튼입니다.",
+      "description": "사자의 군대와 서리고룡의 격노 사용 시 20초 동안 4인 기사단 전원을 소환합니다. 냉기에서는 서리고룡의 격노가 이 효과의 실제 사용 버튼입니다.  부정에서는 사자의 군대가 발동 버튼입니다. 냉기와 부정 양쪽에 적용되는 영웅 특성이며 파일 위치를 근거로 부정에서 제외하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-12",
+      "updated": "2026-09-13",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_rideroftheapocalypsedeathknight_apocalypsenow.jpg",
       "iconUrls": {
@@ -82891,7 +83220,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노"
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/서리고룡의격노",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리고룡족의선택-회수"
@@ -82899,14 +83229,14 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.038,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Hero-Talents\\대재앙의묵시록.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-13"
       }
     },
     "444088": {
@@ -92923,6 +93253,57 @@
         "lastUpdate": ""
       }
     },
+    "455135": {
+      "id": "455135",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "위협적인 학자",
+      "koreanName": "위협적인 학자",
+      "englishName": "Menacing Magus",
+      "icon": "ability_warlock_coil2",
+      "iconName": "ability_warlock_coil2",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "죽은 자의 학자의 어둠의 화살이 주변 최대 8명에게 추가 어둠의 화살을 발사합니다. 죽은 자의 군주의 얼음 화살은 추가 3명에게 연쇄됩니다. 모든 소환수 공격을 동일하게 광역화하는 효과가 아닙니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-13",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_coil2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_coil2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_coil2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_coil2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_coil2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\위협적인학자.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
     "455139": {
       "id": "455139",
       "type": "talent",
@@ -93023,7 +93404,7 @@
     },
     "455397": {
       "id": "455397",
-      "type": "skill",
+      "type": "talent",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -93035,16 +93416,16 @@
       "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
       "iconName": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
       "school": "",
-      "cooldown": "발동형",
-      "castTime": "즉시",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 부패의 낫 (Festering Scythe)",
-      "category": "ability",
+      "range": "",
+      "description": "고름 일격 다음에 룬을 쓰지 않는 부패의 낫을 사용하게 해 주는 지속 특성입니다. 455397은 특성 ID이고 실제 시전 ID는 458128입니다. 오프닝의 공격 노드에는 시전 ID를 사용합니다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg",
       "iconUrls": {
@@ -93056,21 +93437,20 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/하급구울"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패의낫"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.033,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\부패의낫.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\부패의낫.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "455449": {
@@ -94504,6 +94884,58 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\유령-출몰-연마.md",
         "lastUpdate": ""
+      }
+    },
+    "458128": {
+      "id": "458128",
+      "type": "skill",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "부패의 낫",
+      "koreanName": "부패의 낫",
+      "englishName": "Festering Scythe",
+      "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
+      "iconName": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
+      "school": "",
+      "cooldown": "후속 사용",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "전방 14미터",
+      "description": "특성 선택 시 고름 일격 뒤에 사용할 수 있는 무료 후속 공격입니다. 전방 14미터의 적을 베고 적중한 대상의 역병이 25초 동안 35% 더 빨리 피해를 입히게 합니다. 실제 시전 ID는 458128, 이를 배우는 특성 ID는 455397입니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_mawnecromancerboss_d_01_darkblue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/부패의낫"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\부패의낫.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "458359": {
@@ -100810,6 +101242,63 @@
         "lastUpdate": ""
       }
     },
+    "1233448": {
+      "id": "1233448",
+      "type": "skill",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "어둠의 변신",
+      "koreanName": "어둠의 변신",
+      "englishName": "Dark Transformation",
+      "icon": "achievement_boss_festergutrotface",
+      "iconName": "achievement_boss_festergutrotface",
+      "school": "",
+      "cooldown": "45초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "100야드",
+      "description": "구울을 기본 15초 동안 강화하는 45초 재사용 기술입니다. 죽음의 고리와 전염병은 활성 지속시간을 1초씩 늘립니다. 실제 시전 ID는 1233448이며 폭발 및 소환수 효과 ID 63560과 구분합니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_festergutrotface.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_boss_festergutrotface.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_boss_festergutrotface.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_boss_festergutrotface.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_festergutrotface.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/망자의사령관",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/수확",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/산레인의선물"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\어둠의변신.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "1234195": {
       "id": "1234195",
       "type": "atomic-skill",
@@ -101924,7 +102413,7 @@
     },
     "1240996": {
       "id": "1240996",
-      "type": "talent",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -101940,12 +102429,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 공포의 역병 (Dread Plague)",
-      "category": "talent",
+      "description": "한 번에 한 숙주에게만 걸리는 기본 24초 질병입니다. 숙주가 죽으면 주변에 폭발 피해를 주고 질병을 옮깁니다. 불시의 파멸 및 금단의 지식 마지막 노드의 발동 기반이며, 모든 적에게 독립적으로 유지하는 악성 역병과 구분합니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_empowereddreadplague.jpg",
       "iconUrls": {
@@ -101956,24 +102445,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/금단의지식"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식-마지막노드"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.054,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\공포의역병.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\공포의역병.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1241136": {
@@ -102120,6 +102608,106 @@
         "lastUpdate": ""
       }
     },
+    "1241567": {
+      "id": "1241567",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "할퀴는 어둠",
+      "koreanName": "할퀴는 어둠",
+      "englishName": "Clawing Shadows",
+      "icon": "warlock_curse_shadow",
+      "iconName": "warlock_curse_shadow",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "스컬지의 일격 피해가 25% 증가하고 할퀴는 어둠을 최대 4중첩 얻습니다. 중첩당 추가 적 하나를 연쇄 공격하며, 연쇄마다 피해가 10% 감소합니다. 별도로 누르는 원거리 공격이 아니라 현재 스컬지의 일격을 강화하는 패시브입니다.  검색 캐시의 20% 감소와 구형 액티브 207311을 사용하지 않습니다. 수치는 2026-09-13 한국어 실시간 툴팁을 기준으로 합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-13",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warlock_curse_shadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warlock_curse_shadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warlock_curse_shadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\할퀴는어둠.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "1241569": {
+      "id": "1241569",
+      "type": "buff",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "할퀴는 어둠",
+      "koreanName": "할퀴는 어둠",
+      "englishName": "Clawing Shadows",
+      "icon": "warlock_curse_shadow",
+      "iconName": "warlock_curse_shadow",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "스컬지의 일격으로 쌓이는 연쇄 공격 중첩입니다. 기본 특성은 최대 4중첩이며 중첩마다 추가 적을 가격합니다. 액티브처럼 보이는 툴팁의 즉시 표기는 효과 적용 방식이지 별도 버튼이라는 뜻이 아닙니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-13",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warlock_curse_shadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warlock_curse_shadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warlock_curse_shadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/할퀴는어둠"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\할퀴는어둠.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
     "1241705": {
       "id": "1241705",
       "type": "talent",
@@ -102134,16 +102722,16 @@
       "icon": "spell_shadow_darksummoning",
       "iconName": "spell_shadow_darksummoning",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 물량 공세 (Outnumber)",
+      "range": "",
+      "description": "하급 구울 하나당 영구 구울의 공격력이 10% 증가합니다. 어둠의 변신 사용 시 하급 구울의 발톱 공격도 발톱 휩쓸기로 강화됩니다. 준비 버프 중첩과 실제 활성 하급 구울 수는 다릅니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_darksummoning.jpg",
       "iconUrls": {
@@ -102158,19 +102746,17 @@
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/되살리기"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.047,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\물량공세.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1241937": {
@@ -102321,7 +102907,7 @@
     },
     "1242158": {
       "id": "1242158",
-      "type": "hero-talent",
+      "type": "talent",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -102333,16 +102919,16 @@
       "icon": "inv12_apextalent_deathknight_forbiddenknowledge",
       "iconName": "inv12_apextalent_deathknight_forbiddenknowledge",
       "school": "",
-      "cooldown": "사자의 군대 연동",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 금단의 지식 (Forbidden Knowledge)",
-      "category": "hero-talent",
+      "description": "사자의 군대 사용 후 30초 동안 죽음의 고리를 괴저 고리로, 전염병을 무덤으로 교체하는 최상위 전문화 특성입니다. 종말의 기수나 산레인 중 하나를 고르는 영웅 특성이 아닙니다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_deathknight_forbiddenknowledge.jpg",
       "iconUrls": {
@@ -102354,25 +102940,23 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병",
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저고리",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/하급구울"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식-마지막노드"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 7,
-        "linkDensity": 0.075,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\금단의지식.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\금단의지식.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1242173": {
@@ -102430,7 +103014,7 @@
     },
     "1242174": {
       "id": "1242174",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -102442,16 +103026,16 @@
       "icon": "spell_animamaldraxxus_missile",
       "iconName": "spell_animamaldraxxus_missile",
       "school": "",
-      "cooldown": "금단의 지식 중 사용",
+      "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "룬 마력",
-      "range": "전방",
-      "description": "# 괴저 고리 (Necrotic Coil)",
+      "resourceCost": "룬 마력 30",
+      "range": "30야드",
+      "description": "금단의 지식 중 죽음의 고리를 대체하는 룬 마력 30 소비기입니다. 최대 3대상에 암흑 공격을 가하고 꿰뚫는 적들에게도 피해를 줍니다. 단일 및 소규모 다중 대상에 쓰며 별도 소환 쿨기로 취급하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_animamaldraxxus_missile.jpg",
       "iconUrls": {
@@ -102462,24 +103046,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/금단의지식"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.058,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\괴저고리.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1242197": {
@@ -105246,7 +105829,7 @@
     },
     "1247378": {
       "id": "1247378",
-      "type": "atomic-skill",
+      "type": "skill",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -105262,12 +105845,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 1",
       "range": "40야드",
-      "description": "# 부패 (Putrefy)",
+      "description": "룬 1개로 하급 구울의 공격과 폭발을 일으키는 30초 충전 기술입니다. 기본 충전은 1회이며 부패의 메아리 선택 시 2회가 추가되고 한 번에 최대 2충전을 소비합니다. 영혼 수확자에 쓰려고 부패 충전을 남기는 것은 12.1 이전 설명입니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_putrefy.jpg",
       "iconUrls": {
@@ -105277,19 +105860,26 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_putrefy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/부패의메아리",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의역병폭발",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽음의순환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\부패.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1247534": {
@@ -109008,7 +109598,7 @@
     },
     "1254252": {
       "id": "1254252",
-      "type": "skill",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -109020,16 +109610,16 @@
       "icon": "spell_deathknight_festering_strike",
       "iconName": "spell_deathknight_festering_strike",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "소환/스택",
-      "resourceCost": "고름 일격/부패 루프",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 하급 구울 (Lesser Ghoul)",
-      "category": "ability",
+      "description": "다음 스컬지의 일격이 하급 구울을 소환하게 하는 준비 중첩입니다. 시전자 버프의 중첩 수이며 이미 소환된 개체 수나 부패 충전 수와 다릅니다. 별도 시전 버튼으로 표시하지 않습니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_festering_strike.jpg",
       "iconUrls": {
@@ -109041,24 +109631,22 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/고름일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패의낫"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/되살리기"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.065,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\하급구울.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\하급구울.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1254512": {
@@ -109107,6 +109695,57 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\모두불사르리.md",
         "lastUpdate": ""
+      }
+    },
+    "1254552": {
+      "id": "1254552",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "파멸의 역병 폭발",
+      "koreanName": "파멸의 역병 폭발",
+      "englishName": "Blightburst",
+      "icon": "spell_shadow_unstableaffliction_3_purple",
+      "iconName": "spell_shadow_unstableaffliction_3_purple",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "부패 폭발이 질병 지속시간을 3초 늘리고 남은 지속 피해의 35%를 즉시 입힙니다. 부패 시전 시 질병에 걸리지 않은 대상에게 질병을 부여합니다. 이 특성의 효과를 기본 부패 설명에 무조건 적용하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3_purple.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_unstableaffliction_3_purple.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_unstableaffliction_3_purple.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_unstableaffliction_3_purple.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3_purple.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\파멸의역병폭발.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1254756": {
@@ -109561,9 +110200,61 @@
         "lastUpdate": ""
       }
     },
+    "1256566": {
+      "id": "1256566",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "금단의 지식",
+      "koreanName": "금단의 지식",
+      "englishName": "Forbidden Knowledge",
+      "icon": "inv12_apextalent_deathknight_forbiddenknowledge",
+      "iconName": "inv12_apextalent_deathknight_forbiddenknowledge",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "금단의 지식의 마지막 노드입니다. 공포의 역병이 20% 확률로 하급 구울을 일으켜 대상에게 100% 효율의 부패를 사용하게 합니다. 첫 노드의 소비기 교체와 별도이며, 12.1에서는 옛 괴저 고리·무덤 추가 피해 증가를 이 노드에 붙이지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_deathknight_forbiddenknowledge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_deathknight_forbiddenknowledge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_deathknight_forbiddenknowledge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_deathknight_forbiddenknowledge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_deathknight_forbiddenknowledge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/금단의지식"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\금단의지식-마지막노드.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "1256576": {
       "id": "1256576",
-      "type": "hero-talent",
+      "type": "buff",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
@@ -109575,16 +110266,16 @@
       "icon": "spell_shadow_fingerofdeath",
       "iconName": "spell_shadow_fingerofdeath",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 금단의 제물 (Forbidden Sacrifice)",
-      "category": "hero-talent",
+      "description": "부패 사용 후 다음 1회의 스컬지의 일격이 하급 구울을 소환하게 하며 특화가 12초 동안 3% 증가하는 효과입니다. 여러 번 적용하면 중첩됩니다. 플레이어가 별도로 시전하는 기술이나 영웅 특성 선택지가 아닙니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_fingerofdeath.jpg",
       "iconUrls": {
@@ -109596,23 +110287,20 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/무덤"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Hero-Talents/금단의지식"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.044,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\금단의제물.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\금단의제물.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1256577": {
@@ -109766,53 +110454,55 @@
     },
     "1256813": {
       "id": "1256813",
-      "type": "hero-talent",
+      "type": "talent",
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
         "Unholy"
       ],
-      "name": "되살리기",
-      "koreanName": "되살리기",
-      "englishName": "Reanimation",
-      "icon": "achievement_dungeon_thenecroticwake_amarth",
-      "iconName": "achievement_dungeon_thenecroticwake_amarth",
+      "name": "죽은 자의 군주",
+      "koreanName": "죽은 자의 군주",
+      "englishName": "Lord of the Dead",
+      "icon": "achievement_dungeon_thenecroticwake_nalthor",
+      "iconName": "achievement_dungeon_thenecroticwake_nalthor",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 되살리기 (Reanimation)",
-      "category": "hero-talent",
+      "range": "",
+      "description": "하급 구울을 부패시키면 100% 확률로 15초 동안 죽은 자의 학자로 되살립니다. 학자 3명이 모이면 이들을 희생해 15초 동안 군주를 부르며, 희생한 학자의 남은 지속시간이 길수록 군주가 강해집니다. 영웅 특성이 아닌 부정 전문화 특성입니다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_thenecroticwake_amarth.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_thenecroticwake_nalthor.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_dungeon_thenecroticwake_amarth.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_dungeon_thenecroticwake_amarth.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_dungeon_thenecroticwake_amarth.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_thenecroticwake_amarth.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_dungeon_thenecroticwake_nalthor.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_dungeon_thenecroticwake_nalthor.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_dungeon_thenecroticwake_nalthor.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_thenecroticwake_nalthor.jpg"
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/사자의군대"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-2세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.037,
+        "synergyCount": 3,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\되살리기.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\죽은자의군주.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1257011": {
@@ -120649,6 +121339,60 @@
         "lastUpdate": ""
       }
     },
+    "1271967": {
+      "id": "1271967",
+      "type": "skill",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "역병내림",
+      "koreanName": "역병내림",
+      "englishName": "Blightfall",
+      "icon": "inv_nullstone_shadow",
+      "iconName": "inv_nullstone_shadow",
+      "school": "",
+      "cooldown": "0.75초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "주변의 남은 역병 피해를 100% 소비해 즉시 입히고 부패 1충전을 돌려주는 실제 시전 기술입니다. 역병내림 특성을 선택한 상태에서 어둠의 변신으로 사용 기회를 얻습니다. 0.75초는 내부 시전 제한이며 지속적으로 아무 때나 반복할 수 있다는 뜻이 아닙니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_shadow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_nullstone_shadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_nullstone_shadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_nullstone_shadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_shadow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의역병폭발"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\역병내림.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "1271974": {
       "id": "1271974",
       "type": "talent",
@@ -120663,16 +121407,16 @@
       "icon": "inv_nullstone_shadow",
       "iconName": "inv_nullstone_shadow",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 역병내림 (Blightfall)",
+      "range": "",
+      "description": "어둠의 변신으로 역병내림을 사용할 수 있게 하는 선택 특성입니다. 실제 사용 기술은 1271967이며 주변의 남은 질병 피해를 100% 소비해 즉시 입히고 부패 1충전을 돌려줍니다. 모든 산레인 빌드에 자동 포함되는 효과가 아닙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_shadow.jpg",
       "iconUrls": {
@@ -120683,21 +121427,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/돌발열병",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/파멸의역병폭발"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.042,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\역병내림.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1272136": {
@@ -124145,12 +124891,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 죽음의 순환 (Cycle of Death)",
+      "description": "부패가 죽음과 부패의 재사용 대기시간을 1초 줄입니다. 죽음과 부패가 피해를 입힌 적 하나당 부패의 재사용 대기시간이 0.3초, 최대 3초 줄어듭니다. 스컬지의 일격이나 전염병을 광역으로 만드는 특성이 아닙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-12",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg",
       "iconUrls": {
@@ -124161,8 +124907,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/어둠의변신"
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -124175,7 +124921,7 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\죽음의순환.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-12"
       }
     },
     "1291457": {
@@ -124840,6 +125586,111 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "1296654": {
+      "id": "1296654",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "Death Knight Unholy 12.1 Class Set 2pc",
+      "koreanName": "Death Knight Unholy 12.1 Class Set 2pc",
+      "englishName": "Death Knight Unholy 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2의 2세트 아이템 효과입니다. 죽은 자의 학자와 죽은 자의 군주가 얼음 화살 대신 괴저 화살, 어둠의 화살 대신 메마른 손아귀를 사용합니다. 한국어 툴팁의 주문명 자체는 영어로 남아 있어 임의 공식명을 만들지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/괴저화살",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/메마른손아귀"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\시즌2-2세트.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "1296655": {
+      "id": "1296655",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "Death Knight Unholy 12.1 Class Set 4pc",
+      "koreanName": "Death Knight Unholy 12.1 Class Set 4pc",
+      "englishName": "Death Knight Unholy 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2의 4세트 아이템 효과입니다. 생명력 35% 미만인 적에게 괴저 화살과 메마른 손아귀가 입히는 피해를 각각 130% 증가시킵니다. 캐릭터의 모든 피해가 130% 늘어나는 효과가 아닙니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/영혼수확자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\시즌2-4세트.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
     "1296656": {
       "id": "1296656",
       "type": "set-bonus",
@@ -124986,6 +125837,109 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\축적된힘.md",
         "lastUpdate": ""
+      }
+    },
+    "1297086": {
+      "id": "1297086",
+      "type": "skill",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "괴저 화살",
+      "koreanName": "괴저 화살",
+      "englishName": "Necrotic Bolt",
+      "icon": "spell_necro_voodooblast",
+      "iconName": "spell_necro_voodooblast",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "소환수 시전",
+      "resourceCost": "소환수 기력 1",
+      "range": "40야드",
+      "description": "시즌 2 세트로 강화된 소환수의 암흑 공격입니다. 툴팁상 소환수 기력 1을 쓰는 2초 시전이며 6초 동안 대상을 60% 느리게 합니다. 플레이어의 룬·룬 마력을 쓰는 버튼이 아니므로 오프닝의 직접 시전 목록에 넣지 않습니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_necro_voodooblast.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_necro_voodooblast.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_necro_voodooblast.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_necro_voodooblast.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_necro_voodooblast.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽은자의군주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\괴저화살.md",
+        "lastUpdate": "2026-09-12"
+      }
+    },
+    "1297091": {
+      "id": "1297091",
+      "type": "skill",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "메마른 손아귀",
+      "koreanName": "메마른 손아귀",
+      "englishName": "Withering Grasp",
+      "icon": "spell_necro_deathlyecho",
+      "iconName": "spell_necro_deathlyecho",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "소환수 시전",
+      "resourceCost": "소환수 기력 1",
+      "range": "40야드",
+      "description": "시즌 2 세트로 바뀐 소환수 기술입니다. 소환수 기력 1을 쓰는 2초 시전 후 3초에 걸쳐 암흑 피해를 줍니다. 플레이어가 직접 사용하는 기술이 아니므로 시전 횟수를 개인 글쿨 사용 횟수에 더하지 않습니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-12",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_necro_deathlyecho.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_necro_deathlyecho.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_necro_deathlyecho.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_necro_deathlyecho.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_necro_deathlyecho.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\메마른손아귀.md",
+        "lastUpdate": "2026-09-12"
       }
     },
     "1297365": {

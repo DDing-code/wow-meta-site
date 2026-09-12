@@ -1034,7 +1034,7 @@ function skillNodeKind(skill) {
   const type = cleanText(skill?.type).toLowerCase();
   if (type.includes('hero')) return 'hero';
   if (type.includes('talent')) return 'talent';
-  if (type.includes('passive') || type.includes('proc')) return 'passive';
+  if (type.includes('passive') || type.includes('proc') || type.includes('buff')) return 'passive';
   return 'skill';
 }
 
@@ -1048,18 +1048,20 @@ function skillNodeKindLabel(skill) {
 
 function relationParticipants(record, centerSkill) {
   const centerId = centerSkill?.id ? String(centerSkill.id) : '';
+  const linked = (record.allLinkedSkills || record.linkedSkills || []).filter(skill => skill?.id);
   return uniqueBy(
     [
-      ...(centerSkill ? [centerSkill] : []),
-      ...(record.allLinkedSkills || record.linkedSkills || []),
-    ].filter(skill => skill?.id && (!centerId || String(skill.id) === centerId || String(skill.id) !== centerId)),
+      ...(linked.some(skill => String(skill.id) === centerId) ? [centerSkill] : []),
+      ...linked,
+    ],
     skill => String(skill.id)
   ).slice(0, 8);
 }
 
 function splitRelationParticipants(record, centerSkill) {
   const participants = relationParticipants(record, centerSkill);
-  const centerId = centerSkill?.id ? String(centerSkill.id) : '';
+  const center = participants.find(skill => String(skill.id) === String(centerSkill?.id)) || participants[0];
+  const centerId = center?.id ? String(center.id) : '';
   const nonCenter = participants.filter(skill => String(skill.id) !== centerId);
   const skillItems = uniqueBy(
     nonCenter.filter(skill => skillNodeKind(skill) === 'skill'),
@@ -1071,7 +1073,7 @@ function splitRelationParticipants(record, centerSkill) {
   );
 
   return {
-    center: centerSkill || participants[0],
+    center,
     skills: skillItems.slice(0, 4),
     talents: talentItems.slice(0, 4),
   };
@@ -1322,6 +1324,10 @@ function isOpenerNarrativeBlock(block, guide) {
 
 function getGuideBodyBlocks(manuscript) {
   return (manuscript?.blocks || []).filter(block => !isMetaChartBlock(block));
+}
+
+function guideSectionTitle(title) {
+  return displayGuideText(title.replace(/^\d+\.(?!\d)\s*/, ''));
 }
 
 function isPracticalTipBlock(block) {
@@ -1617,18 +1623,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '진입 지연, 단일 도태 회수, 강화된 근접 기술 적중, 광역 종료 직후 공격 중단 시간을 봅니다.'],
     ],
   },
-  'deathknight-unholy': {
-    id: 'cooldown',
-    title: '질병, 부패, 소환수 구간',
-    sectionHeading: '악성 역병과 어둠의 변신',
-    sectionIntro: '부정 죽음의 기사는 악성 역병을 깔고 고름 일격으로 하급 구울 재료를 만든 뒤, 사자의 군대와 어둠의 변신 안에서 부패와 영혼 수확자를 회수합니다.',
-    caption: '악성 역병, 하급 구울 준비, 사자의 군대, 어둠의 변신, 부패, 영혼 수확자, 죽음의 고리와 전염병/괴저 고리/무덤 전환을 확인합니다.',
-    definition: [
-      ['의미', '하급 구울 재료와 부패 충전은 소환수 구간을 완성하기 위한 준비 상태이고, 사자의 군대와 어둠의 변신은 그 준비를 피해로 바꾸는 축입니다.'],
-      ['읽는 법', '악성 역병이 비면 먼저 복구하고, 고름 일격으로 하급 구울 재료를 만든 뒤 어둠의 변신 안에서 부패와 영혼 수확자를 밀리지 않게 회수합니다. 대상 수와 금단의 지식 상태에 따라 죽음의 고리, 전염병, 괴저 고리, 무덤을 바꿉니다.'],
-      ['체크 포인트', '악성 역병 공백, 하급 구울 준비 부족, 어둠의 변신 중 부패 충전 낭비, 영혼 수확자 지연, 죽음과 부패 위치 손실, 금단의 지식 소비기 전환 오류를 봅니다.'],
-    ],
-  },
   'deathknight-blood': {
     id: 'defensive',
     title: '죽음의 일격과 뼈의 보호막',
@@ -1820,7 +1814,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -2394,7 +2388,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             return (
               <GuideDigestCard key={`${block.title}-${index}`} href={`#guide-section-${index + 1}`}>
                 <span>{String(index + 1).padStart(2, '0')}</span>
-                <strong>{displayGuideText(block.title.replace(/^\d+\.\s*/, ''))}</strong>
+                <strong>{guideSectionTitle(block.title)}</strong>
                 {!!digest && <p>{displayGuideText(digest)}</p>}
               </GuideDigestCard>
             );
@@ -2672,7 +2666,7 @@ function GuideDetailPage() {
               {guideNavBlocks.map((block, index) => (
                 <GuideNavLink key={`${block.title}-${index}`} href={`#guide-section-${index + 1}`} $chapter>
                   <small>{String(index + 1).padStart(2, '0')}</small>
-                  <span>{displayGuideText(block.title.replace(/^\d+\.\s*/, ''))}</span>
+                  <span>{guideSectionTitle(block.title)}</span>
                 </GuideNavLink>
               ))}
             </GuideNavChapterGroup>
@@ -3084,7 +3078,7 @@ function SynergyRelationBoard({ graph, centerSkill, guide }) {
                 <>
                   <RelationArrow>+</RelationArrow>
                   <RelationGroup>
-                    <em>특성</em>
+                    <em>특성·지속 효과</em>
                     {relation.talents.map(skill => (
                       <RelationChip key={`${record.synergy.id}-talent-${skill.id}`} skill={skill} tone={skillNodeKind(skill)} />
                     ))}

@@ -148,7 +148,8 @@ export const guideSpecsByRole = {
     }),
     spec('deathknight-unholy', 'deathknight', '부정', '부정', 'melee', '/guide/deathknight/unholy', {
       kbSpecAliases: ['Unholy'],
-      focus: '질병, 소환수, 광역 확산을 극딜 구간에 연결합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '구울 준비와 부패로 군주를 연결하고, 기수의 군대 주기와 산레인의 정수를 구별합니다.',
     }),
     spec('monk-windwalker', 'monk', '풍운', '풍운', 'melee', '/guide/monk/windwalker', {
       kbSpecAliases: ['Windwalker'],

@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-12. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence.
+Checked against the runtime manuscript map on 2026-09-13. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence.
 
 ## Updated in this rollout
 
@@ -27,15 +27,27 @@ Checked against the runtime manuscript map on 2026-09-12. The objective remains 
 - Canonical manuscript equality, gameplay regression checks, prebuild validation and production build passed on 2026-09-12. Online icon/name checks passed for 16 explicitly referenced spell IDs. Desktop, 390px and 320px opener layouts and hero switching were checked, with no page overflow or broken images found in those checks.
 - Limits: current raid aggregate/event data and the Blizzard patch-note body were inaccessible. Mythicstats covers 800 top +17-20 logs from 226 characters, not all players. Shared older DK notes and the dense graph's node/label layout still require re-audit; native anchor navigation worked on a fresh desktop render. Existing global KB link warnings (87) and the bundle-size warning remain.
 
+### Unholy Death Knight
+
+- Replaced the old manuscript in place with 15 manually authored practical sections, role-specific summaries, tips, a default opener and separate Rider/Sanlayn combat flows. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/01-죽음의기사/부정/Meta/guide-12.1.json`.
+- Updated 40 Unholy atomic notes and ten authored synergies, then regenerated the spell/synergy DB. The site diff also corrects two shared Rider records; unrelated manuscripts are unchanged.
+- Corrected Army 90s/30s/eight-ghoul orders, Soul Reaper ghoul-ready stack consumption, Putrid Echoes multi-charge consumption, Lord of the Dead, specialization apex nodes, Season 2 pet spells and execute effects.
+- Separated actual casts from effects/talents: Dark Transformation 1233448/63560, Festering Scythe 458128/455397, Blightfall 1271967/1271974. Pet spells and passive buffs never appear as opener buttons.
+- Added current passive Clawing Shadows 1241567/1241569 (live 10% chain reduction, not the cached 20% or old active 207311), Harbinger of Doom and Menacing Magus. Apocalypse Now now resolves for both Frost and Unholy; its missing scope had suppressed Unholy inline icons.
+- Read SimC APL commit `8de87ce5b2bf373ea36be556afd1481557dc3fe0` (2026-09-07). The normal three-target/apex four-target baseline is labeled as a model, not collected WCL evidence. Old June usage percentages were removed.
+- Removed the placeholder cooldown chart. The graph uses Putrefy and five actual direct synergy connections. Fixed shared relation cards that had inserted an unrelated center spell, and classified buffs as effects. Added runnable regression checks for these cases and for patch-version headings being incorrectly stripped as chapter numbers.
+- Canonical equality, scoped gameplay assertions, all prebuild checks and production build passed on 2026-09-13. Online atomic tooltip/metadata/link checks passed for 40 notes; explicit guide spell-name/icon checks passed for 19 IDs, both with zero errors/warnings.
+- Desktop, 390px and 320px opener/hero-flow checks found no page overflow or broken images. Hero switching and the final production bundle `main.50e2d332.js` were verified in the browser. The Sanlayn relation no longer invents Putrefy participation.
+- Limits: latest raid/M+ aggregate data, personal simulations, the Blizzard 12.1 patch-note body and private Acherus messages were not obtained. The guide states these limits instead of inventing usage rates or DPS. Dense graph labels, older shared DK notes, 87 global KB link warnings, mixed-patch metadata and the large bundle still require work. Original Markdown remains outside the site Git repository; this commit preserves generated DB and site content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 28 manuscripts
+## Still 12.0.5: 27 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Death Knight | Unholy |
 | Demon Hunter | Havoc, Vengeance |
 | Druid | Guardian, Feral |
 | Evoker | Augmentation |
@@ -51,7 +63,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Complete fresh manual research and KB/DB/guide updates for the 28 older manuscripts; next: Unholy Death Knight.
+- Complete fresh manual research and KB/DB/guide updates for the 27 older manuscripts; next: Havoc Demon Hunter.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

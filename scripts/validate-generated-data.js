@@ -98,6 +98,27 @@ function validateSkills(data) {
   });
 }
 
+function validateUnholyMechanics(skills = {}) {
+  for (const [castId, effectId] of [['1233448', '63560'], ['458128', '455397'], ['1271967', '1271974']]) {
+    assert(skills[castId]?.patch === '12.1' && skills[castId]?.castTime === '즉시', `Unholy:${castId}: current cast ID must survive KB sync`);
+    assert(skills[effectId]?.castTime === '지속 효과', `Unholy:${effectId}: effect/talent must not become an independently cast button`);
+    assert(skills[castId]?.name === skills[effectId]?.name, `Unholy:${castId}: cast and effect must retain the same official name`);
+  }
+  assert(skills['42650']?.cooldown === '90초' && skills['42650']?.description.includes('30초') && skills['42650']?.description.includes('8마리') && skills['42650']?.description.includes('명령'), 'Unholy: Army must retain the 90s/30s/eight-ghoul order mechanic');
+  assert(skills['1233448']?.cooldown === '45초', 'Unholy: Dark Transformation is distinct from the 90s Army cooldown');
+  assert(skills['343294']?.cooldown === '15초' && skills['343294']?.description.includes('3중첩') && skills['343294']?.description.includes('부패 충전을 소비하지'), 'Unholy: Soul Reaper consumes ghoul-ready stacks, not Putrefy charges');
+  assert(skills['377580']?.description.includes('최대 2회 소비') && skills['377580']?.description.includes('3충전'), 'Unholy: Putrid Echoes must distinguish casts from charge consumption');
+  assert(skills['1256813']?.name === '죽은 자의 군주' && skills['1256813']?.icon === 'achievement_dungeon_thenecroticwake_nalthor' && skills['1256813']?.type === 'talent', 'Unholy: Lord of the Dead must not regress to Reanimation or a hero talent');
+  assert(skills['1242158']?.type === 'talent' && skills['1256566']?.description.includes('100%'), 'Unholy: apex nodes must remain separate specialization talents');
+  for (const id of ['1254252', '1256576', '191587', '1240996']) {
+    assert(skills[id]?.type === 'buff' && skills[id]?.castTime === '지속 효과', `Unholy:${id}: preparation/disease effects are not cast buttons`);
+  }
+  assert(skills['1296655']?.description.includes('35% 미만') && skills['1296655']?.description.includes('130%'), 'Unholy: tier four-piece applies to the named pet spells below 35%');
+  for (const id of ['1297086', '1297091']) {
+    assert(skills[id]?.castTime === '소환수 시전', `Unholy:${id}: tier spells must be identified as pet actions`);
+  }
+}
+
 function validateSynergies(data) {
   const synergies = data && data.synergies;
 
@@ -126,6 +147,7 @@ const skillsData = readJson('kb-skills.json');
 const synergyData = readJson('kb-synergies.json');
 
 validateSkills(skillsData);
+validateUnholyMechanics(skillsData?.skills);
 validateSynergies(synergyData);
 
 if (warnings.length) {

@@ -390,7 +390,25 @@ function main() {
   });
   assert(graph.edges.filter(edge => edge.from === graph.centerPoint).length === 1, 'A graph must not fabricate center edges for unrelated KB synergies');
   assert(graph.edges.length === 4, 'Real skill-to-synergy edges must remain when an unrelated center edge is removed');
+  const relationModel = new Function('record', 'centerSkill', `
+    const cleanText = value => String(value || '').trim();
+    const skillName = skill => skill.name || skill.id;
+    const uniqueBy = (items, key) => [...new Map(items.map(item => [key(item), item])).values()];
+    function skillNodeKind(skill) { ${extractFunctionBody(guideDetailSource, 'skillNodeKind')} }
+    function relationParticipants(record, centerSkill) { ${extractFunctionBody(guideDetailSource, 'relationParticipants')} }
+    ${extractFunctionBody(guideDetailSource, 'splitRelationParticipants')}
+  `);
+  const separateRelation = relationModel({ allLinkedSkills: [{ id: 'a', type: 'skill' }, { id: 'b', type: 'buff' }] }, { id: 'center' });
+  assert(separateRelation.center.id === 'a' && separateRelation.skills.length === 0 && separateRelation.talents[0].id === 'b', 'Relation cards must use actual participants and classify buffs as effects');
+  const linkedRelation = relationModel({ allLinkedSkills: [{ id: 'a' }, { id: 'center' }] }, { id: 'center' });
+  assert(linkedRelation.center.id === 'center' && linkedRelation.skills[0].id === 'a', 'A participating center must remain the first relation chip');
+  assert(!relationModel({ allLinkedSkills: [] }, { id: 'center' }).center, 'Empty relations must not invent a center participant');
   const guideRegistrySource = readSource(GUIDE_REGISTRY_PATH);
+  const sectionTitle = new Function('title', 'displayGuideText', extractFunctionBody(guideDetailSource, 'guideSectionTitle'));
+  assert(sectionTitle('12.1에서 먼저 고칠 습관', text => text) === '12.1에서 먼저 고칠 습관', 'Section titles must preserve patch-version prefixes');
+  assert(sectionTitle('1. 기본 운용', text => text) === '기본 운용', 'Section titles must still remove authored numbering');
+  assert(sectionTitle('12. 12.1 변경점', text => text) === '12.1 변경점', 'Numbered patch headings must preserve their version');
+  assert((guideDetailSource.match(/guideSectionTitle\(block\.title\)/g) || []).length === 2, 'Navigation and body must share section-title formatting');
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const skillIds = availableSkillIds(skills, manuscripts);
@@ -419,7 +437,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'deathknight-frost'].includes(guideId)) {
+    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);
