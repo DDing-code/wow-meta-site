@@ -40,15 +40,28 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Desktop, 390px and 320px opener/hero-flow checks found no page overflow or broken images. Hero switching and the final production bundle `main.50e2d332.js` were verified in the browser. The Sanlayn relation no longer invents Putrefy participation.
 - Limits: latest raid/M+ aggregate data, personal simulations, the Blizzard 12.1 patch-note body and private Acherus messages were not obtained. The guide states these limits instead of inventing usage rates or DPS. Dense graph labels, older shared DK notes, 87 global KB link warnings, mixed-patch metadata and the large bundle still require work. Original Markdown remains outside the site Git repository; this commit preserves generated DB and site content.
 
+### Havoc Demon Hunter
+
+- Replaced the old manuscript in place with 13 manually authored sections and separate Fel-Scarred/Aldrachi explanations, resource conditions, practical tips and log-review criteria. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Meta/guide-12.1.json`.
+- Reviewed Wowhead Shadarek, Icy Veins Wordup, Method Hype, current Korean spell effects and SimC APL commit `7606c71c1c44f7a501929b634debc58cb5a5f123` (2026-09-08). Differences between author recommendations remain explicit; no current WCL usage percentages were invented.
+- Rewrote 27 existing atomic notes, added 27, removed obsolete Sigil of Doom, and authored 11 synergies. The current Havoc scope contains 54 numeric atomic notes. Corrected seven shared spell/hero records and two hero-tree notes, then regenerated DB and sync-state metadata.
+- Replaced covenant Hunt 323639 with current cast 370965, and Fury of the Aldrachi damage effect 444806 with talent 442718. Corrected base cooldowns/costs, passive versus active classification, apex next-cast reset, Season 2 set effects, movement talents and Aldrachi consumption order.
+- Fixed title-only DB descriptions by using the existing canonical parser's description heading. Regression checks now require real descriptions for all 54 Havoc notes and seven referenced shared records. Added aliases so references to the middle/last Eternal Hunt node resolve to the correct tooltip.
+- Fel-Scarred's 15-step flow and Aldrachi's 12-step AoE flow contain only real player casts; automatic procs remain conditions. Removed the old placeholder cooldown chart.
+- Fixed shared rendering that truncated manually authored openers at 12 steps: both chart variants now reuse the full authored flow mapper. Removed note line-clamping so step conditions remain readable. Non-numeric hero-tree IDs no longer become broken Wowhead spell links in guide text/cards/graphs. Runnable checks cover the step limit and invalid IDs.
+- Online atomic tooltip/metadata/link validation passed for 54 notes with zero errors/warnings; explicit guide name/icon validation passed for 24 IDs. Canonical equality, scoped mechanic assertions, all prebuild checks and production build passed on 2026-09-13.
+- Inspected desktop, 390px and 320px flows and hero switching. Final bundle `main.4ec850af.js` renders 15/12 steps, no clipped step paragraphs, no document overflow, no broken loaded images and no non-numeric spell links in these checks. The graph centers on Eye Beam with six direct synergy connections.
+- Limits: Blizzard patch-note body, latest raid/M+ aggregates and private Fel Hammer messages were unavailable. Inertia duration and adjusted Immolation Aura generation differ between live tooltips and guides and remain flagged. Dense graph labels still overlap in places; old shared DH notes and the other DH manuscripts need separate re-audits. Global 87 KB link warnings, mixed-patch metadata and the large bundle remain. Original Markdown is outside the site Git repository; the commit contains the generated DB and site changes.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 27 manuscripts
+## Still 12.0.5: 26 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Demon Hunter | Havoc, Vengeance |
+| Demon Hunter | Vengeance |
 | Druid | Guardian, Feral |
 | Evoker | Augmentation |
 | Hunter | Beast Mastery, Marksmanship, Survival |
@@ -63,7 +76,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Complete fresh manual research and KB/DB/guide updates for the 27 older manuscripts; next: Havoc Demon Hunter.
+- Complete fresh manual research and KB/DB/guide updates for the 26 older manuscripts; next: Vengeance Demon Hunter.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

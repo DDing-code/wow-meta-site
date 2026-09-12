@@ -161,7 +161,8 @@ export const guideSpecsByRole = {
     }),
     spec('demonhunter-havoc', 'demonhunter', '파멸', '파멸', 'melee', '/guide/demonhunter/havoc', {
       kbSpecAliases: ['Havoc'],
-      focus: '분노 생성, 이동형 강화, 극딜 구간을 순서대로 겹칩니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '안광 완주와 연속 휩쓸기를 연결하고, 영웅 특성별 첫 사용과 강화 소비 순서를 익힙니다.',
     }),
     spec('shaman-enhancement', 'shaman', '고양', '고양', 'melee', '/guide/shaman/enhancement', {
       kbSpecAliases: ['Enhancement'],

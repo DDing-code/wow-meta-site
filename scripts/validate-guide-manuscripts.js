@@ -13,6 +13,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-blood', '12.1'],
   ['deathknight-frost', '12.1'],
   ['deathknight-unholy', '12.1'],
+  ['demonhunter-havoc', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1036,6 +1037,36 @@ function main() {
   assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('쐐기'), 'Blood default hero branch must reflect Season 2 Sanlayn guidance');
 
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
+  const havoc = manuscripts['demonhunter-havoc'];
+  const havocSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '02-악마사냥꾼', '파멸', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(havocSource)) {
+    assert(JSON.stringify(JSON.parse(read(havocSource))) === JSON.stringify(havoc), 'Havoc guide must match its canonical 12.1 KB manuscript');
+  }
+  assert(!havoc.extraSkills?.length, 'Havoc spells must come from the canonical KB');
+  assert(!kbSkills['323639']?.specs.includes('Havoc') && !kbSkills['452490']?.specs.includes('Havoc'), 'Havoc must not use the covenant Hunt or Sigil of Doom');
+  assert(kbSkills['370965']?.castTime === '1초' && kbSkills['370965']?.icon === 'inv_ability_demonhunter_thehunt', 'Havoc Hunt must use the current cast and icon');
+  assert(kbSkills['188499']?.cooldown === '15초' && kbSkills['210152']?.cooldown === '9초', 'Base Blade Dance and Death Sweep cooldowns must remain distinct');
+  assert(kbSkills['258860']?.resourceCost === '없음', 'Essence Break must not inherit a spender Fury cost');
+  assert(kbSkills['1270901']?.description.includes('다음 칼춤 사용 시') && kbSkills['1270901']?.description.includes('초기화'), 'Apex must explain the next-cast reset, not immediate cooldown removal');
+  assert(kbSkills['1296612']?.description.includes('35%') && kbSkills['1296612']?.description.includes('4초에서 6초'), 'Havoc tier set must retain its current effects through sync');
+  const havocNotes = Object.values(kbSkills).filter(skill => /[\\/]02-악마사냥꾼[\\/]파멸[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
+  assert(havocNotes.length === 54, 'Havoc must retain all 54 reviewed atomic notes');
+  for (const skill of havocNotes) {
+    assert(skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#'), 'Havoc DB must retain real KB descriptions, not title-only parser fallbacks: ' + skill.id);
+  }
+  for (const id of ['258920', '442290', '442686', '452408', '452409', '452414', '452415']) {
+    assert(kbSkills[id]?.description?.length > 40 && !kbSkills[id].description.startsWith('#'), 'Shared Havoc records must retain real descriptions through sync: ' + id);
+  }
+  assert(havoc.heroBranches[0].label === '지옥상흔' && havoc.heroBranches[1].label === '알드라치 파괴자', 'Havoc must retain distinct hero explanations and flows');
+  const aldrachiSteps = havoc.heroBranches[1].opener.steps;
+  assert(aldrachiSteps.findIndex(step => step.skillId === '201427') < aldrachiSteps.findIndex(step => step.skillId === '210152'), 'Aldrachi AoE flow must consume Rending Strike before Glaive Flurry');
+  for (const flow of [havoc.opener, ...havoc.heroBranches.map(branch => branch.opener)]) {
+    for (const step of flow.steps) {
+      assert(['skill', 'atomic-skill'].includes(kbSkills[step.skillId]?.type) && !/지속 효과|패시브/.test(kbSkills[step.skillId]?.castTime || ''), 'Havoc flow nodes must be actual casts, not passive or damage-effect IDs');
+      assert(step.phase && step.trigger && step.note, 'Havoc flows must retain their resource and talent conditions');
+    }
+  }
+  assert(bloodSynergies['dh-havoc-안광-연속휩쓸기']?.description?.includes('한 번 시전한 뒤'), 'Havoc apex synergy must keep its authored reset explanation');
   const unholy = manuscripts['deathknight-unholy'];
   const unholySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '부정', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(unholySource)) {

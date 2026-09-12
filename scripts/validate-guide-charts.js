@@ -410,6 +410,20 @@ function main() {
   assert(sectionTitle('12. 12.1 변경점', text => text) === '12.1 변경점', 'Numbered patch headings must preserve their version');
   assert((guideDetailSource.match(/guideSectionTitle\(block\.title\)/g) || []).length === 2, 'Navigation and body must share section-title formatting');
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
+  const guideSkillExpression = guideDetailSource.match(/const allSkills = ([^\n]+);/)[1];
+  const getGuideSkills = new Function('kbSkills', 'return ' + guideSkillExpression);
+  const numericSkills = getGuideSkills({ skills: { cast: { id: '198013' }, tree: { id: 'hero-fel-scarred' } } });
+  assert(numericSkills.length === 1 && numericSkills[0].id === '198013', 'Hero-tree record IDs must never become fake Wowhead spell links');
+  const getAuthoredFlow = new Function('manuscript', 'profile', 'guide', `
+    const skillFromManualStep = step => ({ id: step.skillId });
+    const getFlowPhaseLabel = () => 'phase';
+    const getFlowTriggerLabel = () => 'trigger';
+    const skillName = skill => skill.id;
+    ${extractFunctionBody(guideDetailSource, 'getOpenerFlowSteps')}
+  `);
+  const longFlow = { opener: { steps: Array.from({ length: 15 }, (_, index) => ({ skillId: String(index + 1), note: 'authored' })) } };
+  assert(getAuthoredFlow(longFlow, { steps: [] }, {}).length === 15, 'Authored openers must not be truncated at the old twelve-step fallback limit');
+  assert(guideDetailSource.includes('const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);'), 'Both opener renderers must share the full authored step mapping');
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const skillIds = availableSkillIds(skills, manuscripts);
   const guideRecords = parseGuideRecords(guideRegistrySource);
@@ -437,7 +451,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy'].includes(guideId)) {
+    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);

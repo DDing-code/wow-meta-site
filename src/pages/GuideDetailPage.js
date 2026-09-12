@@ -25,7 +25,7 @@ import kbSkills from '../data/kb-skills.json';
 import kbSynergies from '../data/kb-synergies.json';
 
 const allGuides = getAllGuideSpecs();
-const allSkills = Object.values(kbSkills.skills || {});
+const allSkills = Object.values(kbSkills.skills || {}).filter(skill => /^\d+$/.test(String(skill.id)));
 const allSynergies = Object.values(kbSynergies.synergies || {});
 const skillById = new Map(allSkills.map(skill => [String(skill.id), skill]));
 const manualSkills = Object.values(guideManuscripts).flatMap(manuscript => manuscript.extraSkills || []);
@@ -1587,18 +1587,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '흡혈의 손길 공백, 광기 과충전, 공허의 형상 중 약한 소비, 정신 분열 지연, 쐐기에서 차단/스톱 누락을 봅니다.'],
     ],
   },
-  'demonhunter-havoc': {
-    id: 'cooldown',
-    title: '안광과 정수 파쇄 구간',
-    sectionHeading: '악마화와 짧은 극딜',
-    sectionIntro: '파멸 악마사냥꾼은 안광으로 악마화 구간을 열고 정수 파쇄, 죽음의 휩쓸기, 탈태 초기화를 짧은 피해 구간에 맞춥니다.',
-    caption: '안광, 정수 파쇄, 죽음의 휩쓸기, 칼춤, 탈태, 사냥, 파괴자의 글레이브를 같은 극딜 흐름으로 봅니다.',
-    definition: [
-      ['의미', '안광은 악마화 구간을 여는 버튼이고, 정수 파쇄는 그 안의 강한 소비기를 더 가치 있게 만듭니다.'],
-      ['읽는 법', '안광 전후에 분노와 칼춤/죽음의 휩쓸기 쿨을 보고, 탈태 초기화가 약한 글쿨에 묻히지 않게 둡니다.'],
-      ['체크 포인트', '안광 지연, 정수 파쇄 밖 죽음의 휩쓸기, 분노 과충전, 탈태 초기화 손실, 사냥과 글레이브 충돌을 봅니다.'],
-    ],
-  },
   'demonhunter-vengeance': {
     id: 'defensive',
     title: '영혼 파편과 방어기 배정',
@@ -1814,7 +1802,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -1957,7 +1945,7 @@ function getFlowTriggerLabel(guide, phase, index, total, step = {}) {
 }
 
 function getOpenerFlowSteps(manuscript, profile, guide) {
-  const rawSteps = manuscript?.opener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
+  const rawSteps = manuscript?.opener?.steps || [];
   return rawSteps.map((step, index) => {
     const skill = skillFromManualStep(step);
     const stage = getFlowPhaseLabel(guide, index, rawSteps.length);
@@ -3115,21 +3103,7 @@ function renderChart(id, guide, data, profile, chart) {
 }
 
 function RotationRailChart({ guide, profile, skills, synergy, manualOpener, inlineTerms }) {
-  const openerSteps = manualOpener?.steps?.slice(0, OPENER_FLOW_MAX_STEPS) || [];
-  const manualSteps = openerSteps.map((step, index) => {
-    const skill = skillFromManualStep(step);
-    const stage = getFlowPhaseLabel(guide, index, openerSteps.length);
-    const phase = step.phase || getFlowPhaseLabel(guide, index, openerSteps.length);
-    return {
-      key: `${step.skillId || 'manual'}-${index}`,
-      skill,
-      label: step.label || profile.steps[index] || `${index + 1}순위`,
-      note: step.note || (skill ? skillName(skill) : '공략 단계'),
-      stage,
-      phase,
-      trigger: getFlowTriggerLabel(guide, phase, index, openerSteps.length, step),
-    };
-  });
+  const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);
   const visibleSteps = manualSteps.length
     ? manualSteps
     : skills.slice(0, OPENER_FLOW_MAX_STEPS).map((skill, index) => {
@@ -7310,11 +7284,10 @@ const OpenerStepBody = styled.div`
   }
 
   p {
-    display: -webkit-box;
+    display: block;
     min-width: 0;
     max-width: 100%;
     margin: 0;
-    overflow: hidden;
     color: #b8c2c8;
     font-size: 0.72rem;
     font-weight: 760;
@@ -7322,8 +7295,6 @@ const OpenerStepBody = styled.div`
     word-break: keep-all;
     overflow-wrap: anywhere;
     text-wrap: pretty;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 
   @media (max-width: 560px) {
@@ -7339,9 +7310,6 @@ const OpenerStepBody = styled.div`
       background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
     }
 
-    p {
-      -webkit-line-clamp: 4;
-    }
   }
 `;
 

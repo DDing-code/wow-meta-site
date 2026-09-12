@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T15:32:23.974Z",
+    "generatedAt": "2026-09-12T16:23:00.921Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 435,
-    "rawTotalSynergies": 435,
+    "totalSynergies": 440,
+    "rawTotalSynergies": 440,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 121,
+      "unknown": 129,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -28,9 +28,6 @@
       "interrupt-purge-cc": 1,
       "raid-debuff-shared-damage": 1,
       "survival-mobility": 2,
-      "hero-talent-loop": 2,
-      "burst-window": 5,
-      "hero-talent-burst": 1,
       "damage": 4,
       "dispels-enrage-control": 1,
       "shared-dot": 1,
@@ -48,7 +45,9 @@
       "hero_talent_pack_leader": 1,
       "hero_talent_sentinel": 1,
       "aoe-cleave": 1,
+      "burst-window": 4,
       "buff-spender": 1,
+      "hero-talent-loop": 1,
       "aoe-maintenance": 1,
       "cooldown-loop": 1,
       "frostfire_hero_tree": 1,
@@ -275,7 +274,7 @@
     },
     "byClass": {
       "DeathKnight": 28,
-      "DemonHunter": 24,
+      "DemonHunter": 29,
       "Druid": 38,
       "Evoker": 28,
       "Hunter": 26,
@@ -1449,20 +1448,24 @@
         "lastUpdate": ""
       }
     },
-    "SY-DH-Havoc-AFireInside-Ragefire": {
-      "id": "SY-DH-Havoc-AFireInside-Ragefire",
-      "name": "내면의화염-성난불길",
+    "dh-havoc-내면의화염-성난불길": {
+      "id": "dh-havoc-내면의화염-성난불길",
+      "name": "오라 중첩과 만료 폭발",
+      "description": "내면의 화염은 제물의 오라 충전과 겹침을 늘린다. 성난불길은 실제 오라 치명타의 일부를 저장해 만료 시 방출하고, 불타는 상처는 제한된 대상에 오라 피해를 높인다. 적이 모인 시각과 폭발 때 위치가 모두 중요하다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
-      "class": "DemonHunter",
-      "spec": "파멸",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라"
+      "participants": [
+        "258920",
+        "427775",
+        "388107",
+        "391189"
       ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/내면의화염",
@@ -1474,77 +1477,216 @@
         "lastUpdate": ""
       }
     },
-    "dh-havoc-aldrachi-reavers-glaive": {
-      "id": "dh-havoc-aldrachi-reavers-glaive",
-      "name": "알드라치 파괴자의 글레이브 운용",
+    "dh-havoc-시즌2-정수파쇄-증오의순환": {
+      "id": "dh-havoc-시즌2-정수파쇄-증오의순환",
+      "name": "세트로 바뀌는 두 쿨다운 주기",
+      "description": "시즌 2의 4세트는 정수 파쇄도 증오의 순환을 쌓고 적용받게 한다. 지속시간은 6초가 되지만 최대 감소량에서 안광 20초와 정수 파쇄 30초는 서로 다르다. 항상 겹치려 기다리기보다 전투 전체 사용 횟수를 지킨다.",
       "type": "synergy",
-      "synergyType": "hero-talent-loop",
+      "synergyType": "unknown",
       "participants": [
-        "442294",
-        "442624",
-        "162794",
-        "188499",
-        "444806"
+        "198013",
+        "258860",
+        "258887",
+        "1296612"
       ],
       "class": "DemonHunter",
       "spec": "Havoc",
-      "heroTalent": "Aldrachi Reaver",
+      "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/정수파쇄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/증오의순환",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\시즌2-정수파쇄-증오의순환.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-havoc-안광-연속휩쓸기": {
+      "id": "dh-havoc-안광-연속휩쓸기",
+      "name": "안광 완주 후 두 번의 휩쓸기",
+      "description": "영원한 사냥 마지막 노드는 안광 완주 후 다음 칼춤 계열 사용의 쿨다운을 초기화한다. 즉시 칼춤을 초기화하는 것이 아니라 한 번 시전한 뒤 다시 쓸 수 있게 한다. 탈태로 전환하기 전에 이 연속 사용을 회수한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "198013",
+        "1270901",
+        "210152"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/영원한사냥-마지막"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\안광-연속휩쓸기.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-havoc-안광-탈태초기화": {
+      "id": "dh-havoc-안광-탈태초기화",
+      "name": "초기화할 주문을 먼저 사용",
+      "description": "혼돈의 변신을 선택한 직접 탈태는 안광과 칼춤 계열 쿨다운을 초기화한다. 두 기술을 먼저 사용하되 아직 남은 영원한 사냥 초기화나 악마쇄도 보상을 겹쳐 버리지 않는다. 다음 탈태 사용 횟수를 잃는 장시간 보류도 피한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "198013",
+        "191427",
+        "388112",
+        "210152"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/혼돈의변신"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\안광-탈태초기화.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-havoc-알드라치-우선대상집중": {
+      "id": "dh-havoc-알드라치-우선대상집중",
+      "name": "물리 광역 피해를 징표 대상에 집중",
+      "description": "부상당한 사냥감은 주변에 가한 물리 피해를 징표 대상의 추가 혼돈 피해로 바꾼다. 칼날의 기예로 늘어난 추가 베기가 오래 사는 위험 대상에게 연결되는지 본다. 혼돈 피해를 모두 다시 복사하거나 대상 수에 무한 비례하는 효과로 계산하지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "442624",
+        "442806",
+        "442718",
+        "1272153"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의징표",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의글레이브",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/혼돈의일격",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/칼춤",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/알드라치의격노"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/부상당한사냥감",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/칼날의기예"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\알드라치-우선대상집중.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-havoc-알드라치-파괴자의글레이브": {
+      "id": "dh-havoc-알드라치-파괴자의글레이브",
+      "name": "강화 소비 순서에 따른 다른 보상",
+      "description": "파괴자의 글레이브 뒤 혼돈의 일격 계열을 먼저 쓰면 두 번째 칼춤 계열에 칼날의 기예의 12회 베기를 붙인다. 칼춤을 먼저 쓰고 혼돈의 일격을 쓰면 징표 중첩을 강화한다. 새 글레이브는 남은 강화 효과를 소비한 후에 사용한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "442294",
+        "442442",
+        "442435",
+        "1272153",
+        "442718",
+        "442679"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의글레이브",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/알드라치의격노"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/분쇄일격",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/몰아치는전투검",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/칼날의기예",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/파괴자의징표-특성"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\알드라치-파괴자의글레이브.md",
         "lastUpdate": ""
       }
     },
-    "SY-DH-Havoc-EternalHunt-EyeBeam": {
-      "id": "SY-DH-Havoc-EternalHunt-EyeBeam",
-      "name": "영원한사냥-안광",
+    "dh-havoc-영원한사냥-안광": {
+      "id": "dh-havoc-영원한사냥-안광",
+      "name": "사냥으로 다음 안광 강화",
+      "description": "사냥의 영원한 사냥 보상은 다음 안광 한 번에 적용된다. 지옥상흔에서 첫 안광 다음에 사냥을 쓰면 직접 탈태 후 심연의 응시로 이 보상을 가져갈 수 있다. 사용한 첫 안광에 소급 적용되는 효과가 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "370965",
+        "1270898",
+        "198013",
+        "452497"
+      ],
       "class": "DemonHunter",
-      "spec": "파멸",
+      "spec": "Havoc",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/심연의응시"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/영원한사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/증오의순환"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/영원한사냥"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\영원한사냥-안광.md",
         "lastUpdate": ""
       }
     },
-    "SY-DH-Havoc-ScreamingBrutality-Soulscar": {
-      "id": "SY-DH-Havoc-ScreamingBrutality-Soulscar",
-      "name": "절규하는잔혹함-영혼흉터",
+    "dh-havoc-절규하는잔혹함-영혼흉터": {
+      "id": "dh-havoc-절규하는잔혹함-영혼흉터",
+      "name": "칼춤에서 자동 투척과 지속 피해",
+      "description": "칼춤 계열이 절규하는 잔혹함으로 자동 투척을 만들고 영혼 흉터가 투척 피해를 지속 혼돈 피해로 이어 준다. 투척 피해 횟수를 전부 수동 입력으로 세지 않는다. 기본 칼춤의 대상 적중을 놓치면 연결된 후속 피해도 함께 줄어든다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "188499",
+        "210152",
+        "1220506",
+        "185123",
+        "388106"
+      ],
       "class": "DemonHunter",
-      "spec": "파멸",
+      "spec": "Havoc",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/칼춤",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/글레이브투척",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/정수파쇄"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/글레이브투척"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -1556,29 +1698,26 @@
         "lastUpdate": ""
       }
     },
-    "dh-havoc-essence-break-burst-window": {
-      "id": "dh-havoc-essence-break-burst-window",
-      "name": "정수 파쇄 극딜 구간",
+    "dh-havoc-정수파쇄-극딜구간": {
+      "id": "dh-havoc-정수파쇄-극딜구간",
+      "name": "정수 파쇄 안에서 추가 피해 회수",
+      "description": "정수 파쇄는 소비기 피해에 추가 혼돈 피해를 붙인다. 자원과 칼춤 계열을 미리 준비하고 짧은 지속시간 동안 직접 소비기로 회수한다. 피해를 단순 곱하는 옛 배율과 혼동하지 않는다.",
       "type": "synergy",
-      "synergyType": "burst-window",
+      "synergyType": "unknown",
       "participants": [
         "258860",
         "201427",
-        "210152",
-        "191427",
-        "198013"
+        "210152"
       ],
       "class": "DemonHunter",
       "spec": "Havoc",
       "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/정수파쇄",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파멸",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/탈태"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -1587,32 +1726,69 @@
         "lastUpdate": ""
       }
     },
-    "dh-havoc-fel-scarred-demonsurge": {
-      "id": "dh-havoc-fel-scarred-demonsurge",
-      "name": "지옥상흔 악마쇄도 구간",
+    "dh-havoc-지옥상흔-악마쇄도": {
+      "id": "dh-havoc-지옥상흔-악마쇄도",
+      "name": "안광 진입과 첫 강화 소비",
+      "description": "안광은 악마성을 통해 짧은 악마 형상을 열고, 지옥상흔은 그 안에서 죽음의 휩쓸기와 파멸의 첫 사용 보상을 회수한다. 새 탈태로 넘어가기 전에 기존 악마쇄도 보상을 소비한다. 별도 악마쇄도 버튼이나 파멸의 인장을 추가하지 않는다.",
       "type": "synergy",
-      "synergyType": "hero-talent-burst",
+      "synergyType": "unknown",
       "participants": [
-        "452402",
-        "452490",
         "198013",
-        "191427"
+        "213410",
+        "452402",
+        "210152",
+        "201427"
       ],
       "class": "DemonHunter",
       "spec": "Havoc",
-      "heroTalent": "Fel-Scarred",
-      "importance": 4,
-      "patch": "12.0.5",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/악마쇄도",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파멸의인장",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/죽음의휩쓸기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파멸"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/악마성"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\지옥상흔-악마쇄도.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-havoc-퇴각-자원-안광": {
+      "id": "dh-havoc-퇴각-자원-안광",
+      "name": "퇴각의 자원과 버프를 안광에 연결",
+      "description": "전략적 후퇴는 격노를 시간에 걸쳐 공급하고 자주성은 후속 공격의 치명타를 보강하며 갈무리한 기운은 피해 증가를 유지한다. 복수의 퇴각을 안광과 맞추되 안전한 복귀 경로를 먼저 확보한다. 타성처럼 추가 돌진을 강제하는 조합은 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "198793",
+        "389688",
+        "388108",
+        "206476",
+        "198013"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/복수의퇴각",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/안광"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/전략적후퇴",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/자주성",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/갈무리한기운"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\지옥상흔-악마쇄도.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\퇴각-자원-안광.md",
         "lastUpdate": ""
       }
     },
