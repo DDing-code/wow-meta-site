@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {
   Activity,
   ArrowLeft,
+  ArrowRight,
   BarChart3,
   BookOpen,
   Clock3,
@@ -2005,42 +2006,6 @@ function getFlowChartTitle(guide) {
   return `${getFlowCardTitle(guide)} 차트`;
 }
 
-function getFlowMapCopy(guide) {
-  if (guide?.role === 'healers') {
-    return {
-      start: '피해 예고',
-      middle: '예열 → 회수 → 안정화',
-      end: '다음 피해',
-      keys: ['사전 예열', '피해 순간', '복구 판단'],
-    };
-  }
-
-  if (guide?.role === 'tanks') {
-    return {
-      start: '풀링',
-      middle: '위협 → 방어 수단 → 생존기 배정',
-      end: '다음 위험',
-      keys: ['진입 버튼', '방어 조건', '위험 대응'],
-    };
-  }
-
-  if (guide?.role === 'support') {
-    return {
-      start: '준비',
-      middle: '강화 → 대상 확인 → 파티 구간',
-      end: '다음 강화',
-      keys: ['강화 시작', '대상 조건', '파티 구간'],
-    };
-  }
-
-  return {
-    start: '전투 시작',
-    middle: '준비 → 큰 구간 → 우선순위 흐름',
-    end: '반복 판단',
-    keys: ['첫 버튼', '사용 조건', '손실 방지'],
-  };
-}
-
 function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
   const text = displayGuideText(item);
   const [candidateLabel, ...rest] = text.split(/[:：]/);
@@ -2064,51 +2029,41 @@ function fallbackFlowStepFromText(item, index, total, guide, inlineTerms) {
   };
 }
 
-function OpenerFlowPreview({ guide, steps, fallbackItems, inlineTerms }) {
+function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms }) {
   const flowItems = steps.length
     ? steps
     : fallbackItems.map((item, index) => fallbackFlowStepFromText(item, index, fallbackItems.length, guide, inlineTerms));
   const chartLabel = getFlowChartTitle(guide);
-  const stageLegend = [...new Set(flowItems.map(item => item.stage || item.phase).filter(Boolean))];
-  const mapCopy = getFlowMapCopy(guide);
 
   if (!flowItems.length) return null;
 
   return (
     <OpenerFlowViewport>
-      <OpenerFlowMapHeader>
-        <span>{displayGuideText(mapCopy.start)}</span>
-        <strong>{displayGuideText(mapCopy.middle)}</strong>
-        <span>{displayGuideText(mapCopy.end)}</span>
-      </OpenerFlowMapHeader>
-      <OpenerFlowKey aria-label="전투 흐름 기준">
-        {mapCopy.keys.map(item => (
-          <span key={item}>{displayGuideText(item)}</span>
-        ))}
-      </OpenerFlowKey>
-      {stageLegend.length > 1 && (
-        <OpenerFlowPhaseLegend aria-label="전투 흐름 단계">
-          {stageLegend.map(phase => (
-            <span key={phase}>{displayGuideText(phase)}</span>
-          ))}
-        </OpenerFlowPhaseLegend>
-      )}
       <OpenerFlowList $color={guide.color} aria-label={chartLabel} data-opener-flow-rail>
         {flowItems.map((step, index) => (
           <li key={step.key}>
-            <OpenerStepTop>
-              <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-              <SkillIconLink skill={step.skill} size={46} />
-            </OpenerStepTop>
+            <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
+            <SkillIconLink skill={step.skill} size={28} />
             <OpenerStepBody>
-              <OpenerPhase>{displayGuideText(step.phase)}</OpenerPhase>
               <strong>{displayGuideText(step.label)}</strong>
-              <OpenerTrigger>{displayGuideText(step.trigger)}</OpenerTrigger>
-              {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+              {!!step.trigger && <span>{displayGuideText(step.trigger)}</span>}
             </OpenerStepBody>
+            {index < flowItems.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
           </li>
         ))}
       </OpenerFlowList>
+      <OpenerFlowDetails key={flowItems.map(step => step.key).join('-')}>
+        <summary>사용 조건 · 상세 설명</summary>
+        <ol>
+          {flowItems.map(step => (
+            <li key={step.key}>
+              <strong>{renderGuideText(step.label, inlineTerms)}</strong>
+              <p>{renderGuideText([step.phase, step.trigger].filter(Boolean).join(' · '), inlineTerms)}</p>
+              {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
+            </li>
+          ))}
+        </ol>
+      </OpenerFlowDetails>
     </OpenerFlowViewport>
   );
 }
@@ -6809,572 +6764,110 @@ const FieldGuideList = styled.ul`
 const OpenerFlowViewport = styled.div`
   min-width: 0;
   max-width: 100%;
+  container-type: inline-size;
   overflow: hidden;
   border-top: 1px solid rgba(244, 239, 229, 0.07);
   border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   background: rgba(8, 13, 17, 0.46);
 `;
 
-const OpenerFlowMapHeader = styled.div`
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 16px 0;
-  color: #d8cbb7;
-  font-size: 0.68rem;
-  font-weight: 950;
-  letter-spacing: 0;
-
-  span {
-    display: inline-flex;
-    align-items: center;
-    min-height: 22px;
-    padding: 3px 7px;
-    border: 1px solid rgba(184, 145, 91, 0.28);
-    background: rgba(184, 145, 91, 0.08);
-    color: #d9b97a;
-  }
-
-  strong {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-width: 0;
-    color: #efe4d4;
-    font-size: 0.78rem;
-    font-weight: 950;
-    line-height: 1.35;
-    text-align: center;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-
-    &::before,
-    &::after {
-      content: '';
-      flex: 1 1 28px;
-      min-width: 18px;
-      max-width: 80px;
-      height: 1px;
-      background: linear-gradient(90deg, rgba(184, 145, 91, 0.08), rgba(184, 145, 91, 0.68));
-    }
-
-    &::after {
-      background: linear-gradient(90deg, rgba(184, 145, 91, 0.68), rgba(184, 145, 91, 0.08));
-    }
-  }
-
-  @media (max-width: 560px) {
-    grid-template-columns: auto minmax(0, 1fr);
-
-    span:last-child {
-      display: none;
-    }
-
-    strong {
-      display: block;
-      text-align: left;
-
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
-  }
-`;
-
-const OpenerFlowKey = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  padding: 11px 16px 0;
-  color: #c7bba7;
-
-  span {
-    display: inline-flex;
-    align-items: center;
-    min-height: 24px;
-    padding: 4px 9px;
-    border: 1px solid rgba(244, 239, 229, 0.08);
-    background: rgba(244, 239, 229, 0.045);
-    font-size: 0.68rem;
-    font-weight: 950;
-    line-height: 1.2;
-    word-break: keep-all;
-  }
-
-  span:first-child {
-    border-color: rgba(184, 145, 91, 0.45);
-    color: #f4efe5;
-    background: rgba(184, 145, 91, 0.12);
-  }
-
-  @media (max-width: 560px) {
-    padding-inline: 12px;
-  }
-`;
-
-const OpenerFlowPhaseLegend = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 10px 16px 2px;
-  color: #d9b97a;
-
-  span {
-    display: inline-flex;
-    align-items: center;
-    min-height: 22px;
-    padding: 3px 8px;
-    border: 1px solid rgba(184, 145, 91, 0.26);
-    border-radius: 999px;
-    background: rgba(184, 145, 91, 0.075);
-    font-size: 0.68rem;
-    font-weight: 950;
-    line-height: 1.2;
-    white-space: nowrap;
-  }
-`;
-
 const OpenerFlowList = styled.ol`
-  --flow-color: ${props => props.$color || '#b8915b'};
-  --flow-soft: ${props => `${props.$color || '#b8915b'}22`};
-  --flow-line: ${props => `${props.$color || '#b8915b'}70`};
-  position: relative;
   display: grid;
-  width: 100%;
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 4px 14px;
   min-width: 0;
-  box-sizing: border-box;
-  grid-auto-flow: column;
-  grid-auto-columns: clamp(220px, 22cqw, 278px);
-  align-items: start;
-  gap: 22px;
   margin: 0;
-  padding: 24px 20px 24px;
+  padding: 12px 14px;
   list-style: none;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x proximity;
-  scroll-padding-inline: 20px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(184, 145, 91, 0.72) rgba(244, 239, 229, 0.08);
-  background:
-    linear-gradient(90deg, rgba(184, 145, 91, 0.08) 0 1px, transparent 1px 100%) 0 0 / 44px 44px,
-    linear-gradient(180deg, rgba(184, 145, 91, 0.06) 0 1px, transparent 1px 100%) 0 0 / 44px 44px,
-    linear-gradient(135deg, rgba(8, 13, 17, 0.96), rgba(11, 18, 23, 0.86));
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 57px;
-    left: 58px;
-    right: 58px;
-    height: 3px;
-    background:
-      linear-gradient(90deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
-    box-shadow: 0 0 14px rgba(184, 145, 91, 0.18);
-    pointer-events: none;
-  }
 
   li {
-    position: relative;
-    z-index: 1;
     display: grid;
-    grid-template-rows: 74px minmax(0, 1fr);
-    justify-items: center;
-    gap: 13px;
+    grid-template-columns: 18px 28px minmax(0, 1fr) 13px;
+    align-items: center;
+    gap: 7px;
     min-width: 0;
-    min-height: 206px;
-    padding: 0;
-    box-sizing: border-box;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    scroll-snap-align: start;
-    overflow: hidden;
-    text-align: center;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(244, 239, 229, 0.07);
   }
 
-  li::before {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 56px;
-    left: calc(50% + 35px);
-    width: calc(50% + 24px);
-    height: 3px;
-    background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.14));
-    pointer-events: none;
+  li > svg {
+    color: ${props => props.$color || '#b8915b'};
   }
 
-  li:last-child::before {
-    display: none;
-  }
-
-  li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 50px;
-    right: -18px;
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 10px solid var(--flow-line);
-  }
-
-  @media (max-width: 640px) {
-    grid-auto-flow: row;
-    grid-template-columns: minmax(0, 1fr);
-    grid-auto-columns: initial;
-    gap: 13px;
-    overflow-x: hidden;
-    overflow-y: visible;
-    padding: 17px 14px 20px;
-    scroll-snap-type: none;
-    scroll-padding-inline: 0;
-
-    &::before {
-      display: block;
-      top: 38px;
-      bottom: 38px;
-      left: 40px;
-      right: auto;
-      width: 2px;
-      height: auto;
-      background: linear-gradient(180deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
-    }
-
-    li {
-      grid-template-columns: 60px minmax(0, 1fr);
-      grid-template-rows: auto;
-      justify-items: start;
-      gap: 12px;
-      min-height: 0;
-      padding: 0;
-      align-items: start;
-      overflow: visible;
-      text-align: left;
-    }
-
-    li::before {
-      left: 60px;
-      right: auto;
-      top: 27px;
-      bottom: auto;
-      width: 14px;
-      height: 2px;
-      background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
-    }
-
-    li:not(:last-child)::after {
-      content: '';
-      top: auto;
-      right: auto;
-      bottom: -10px;
-      left: 34px;
-      width: 0;
-      height: 0;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-top: 9px solid var(--flow-color);
-      border-bottom: 0;
-      background: transparent;
-      transform: none;
-    }
-
-    li:last-child::before {
-      display: none;
-    }
-  }
-
-  @container (max-width: 640px) {
-    grid-auto-flow: row;
-    grid-template-columns: minmax(0, 1fr);
-    grid-auto-columns: initial;
-    gap: 13px;
-    overflow-x: hidden;
-    overflow-y: visible;
-    padding: 17px 14px 20px;
-    scroll-snap-type: none;
-    scroll-padding-inline: 0;
-
-    &::before {
-      display: block;
-      top: 38px;
-      bottom: 38px;
-      left: 40px;
-      right: auto;
-      width: 2px;
-      height: auto;
-      background: linear-gradient(180deg, rgba(184, 145, 91, 0.08), var(--flow-line), rgba(184, 145, 91, 0.12));
-    }
-
-    li {
-      grid-template-columns: 60px minmax(0, 1fr);
-      grid-template-rows: auto;
-      justify-items: start;
-      gap: 12px;
-      min-height: 0;
-      padding: 0;
-      align-items: start;
-      overflow: visible;
-    }
-
-    li::before {
-      left: 60px;
-      right: auto;
-      top: 27px;
-      bottom: auto;
-      width: 14px;
-      height: 2px;
-      background: linear-gradient(90deg, var(--flow-color), rgba(184, 145, 91, 0.08));
-    }
-
-    li:not(:last-child)::after {
-      content: '';
-      top: auto;
-      right: auto;
-      bottom: -10px;
-      left: 34px;
-      width: 0;
-      height: 0;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-top: 9px solid var(--flow-color);
-      border-bottom: 0;
-      background: transparent;
-      transform: none;
-    }
-
-    li:last-child::before {
-      display: none;
-    }
-  }
-`;
-
-const OpenerPhase = styled.div`
-  position: relative;
-  z-index: 1;
-  width: fit-content;
-  max-width: 100%;
-  padding: 3px 6px;
-  border: 1px solid rgba(184, 145, 91, 0.28);
-  color: #dcb879;
-  background: rgba(184, 145, 91, 0.09);
-  font-size: 0.64rem;
-  font-weight: 950;
-  line-height: 1.1;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
-
-  @media (max-width: 560px) {
-    font-size: 0.62rem;
-  }
-`;
-
-const OpenerStepTop = styled.div`
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  align-self: start;
-  width: 72px;
-  height: 72px;
-  border: 1px solid rgba(244, 239, 229, 0.14);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 48%, rgba(244, 239, 229, 0.1), rgba(8, 13, 17, 0.88) 62%),
-    linear-gradient(180deg, rgba(184, 145, 91, 0.22), rgba(8, 13, 17, 0.78));
-  box-shadow:
-    0 0 0 5px rgba(8, 13, 17, 0.9),
-    0 0 0 6px rgba(184, 145, 91, 0.16),
-    0 16px 28px rgba(0, 0, 0, 0.28);
-  isolation: isolate;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 8px;
-    border: 1px solid rgba(244, 239, 229, 0.12);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: -11px;
-    border: 1px solid rgba(184, 145, 91, 0.08);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  > a,
-  > span[aria-hidden='true'] {
-    position: relative;
-    z-index: 1;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow:
-      0 0 0 1px rgba(8, 13, 17, 0.96),
-      0 0 16px rgba(184, 145, 91, 0.18);
-  }
-
-  img {
-    border-radius: 11px;
-  }
-
-  > span[aria-hidden='true'] {
-    display: inline-grid;
-    place-items: center;
-  }
-
-  @media (max-width: 560px) {
-    grid-row: auto;
-    align-self: start;
-    box-sizing: border-box;
-    width: 60px;
-    height: 60px;
-    box-shadow:
-      0 0 0 4px rgba(8, 13, 17, 0.9),
-      0 0 0 5px rgba(184, 145, 91, 0.14);
-
-    &::before {
-      inset: 6px;
-    }
-
-    &::after {
-      inset: 0;
-    }
-
-    > a,
-    > span[aria-hidden='true'] {
-      width: 34px;
-      height: 34px;
-      border-radius: 9px;
-    }
-
-    img {
-      border-radius: 8px;
+  @container (max-width: 401px) {
+    li > svg {
+      transform: rotate(90deg);
     }
   }
 `;
 
 const OpenerStepBody = styled.div`
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 7px;
-  width: 100%;
-  max-width: 100%;
   min-width: 0;
-  box-sizing: border-box;
-  padding: 11px;
-  border: 1px solid rgba(244, 239, 229, 0.11);
-  border-top-color: rgba(184, 145, 91, 0.32);
-  border-radius: 6px;
-  background:
-    linear-gradient(180deg, var(--flow-soft), rgba(8, 13, 17, 0.08)),
-    rgba(8, 13, 17, 0.9);
-  box-shadow:
-    inset 0 1px 0 rgba(244, 239, 229, 0.05),
-    0 12px 24px rgba(0, 0, 0, 0.16);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -13px;
-    left: 50%;
-    width: 1px;
-    height: 13px;
-    background: linear-gradient(180deg, var(--flow-line), rgba(184, 145, 91, 0.12));
-  }
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 
   strong {
     display: block;
-    min-width: 0;
-    max-width: 100%;
     color: #f4efe5;
-    font-size: 0.86rem;
-    font-weight: 950;
-    line-height: 1.32;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-    text-wrap: pretty;
+    font-size: 0.8rem;
+    font-weight: 650;
+    line-height: 1.4;
   }
 
-  p {
+  > span {
     display: block;
-    min-width: 0;
-    max-width: 100%;
-    margin: 0;
-    color: #b8c2c8;
-    font-size: 0.72rem;
-    font-weight: 760;
-    line-height: 1.5;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-    text-wrap: pretty;
+    margin-top: 3px;
+    color: #aab6be;
+    font-size: 0.7rem;
+    line-height: 1.4;
   }
-
-  @media (max-width: 560px) {
-    grid-column: auto;
-    grid-row: auto;
-    padding: 10px;
-
-    &::before {
-      top: 26px;
-      left: -12px;
-      width: 12px;
-      height: 1px;
-      background: linear-gradient(90deg, var(--flow-line), rgba(184, 145, 91, 0.12));
-    }
-
-  }
-`;
-
-const OpenerTrigger = styled.span`
-  display: inline-flex;
-  width: fit-content;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 4px 7px;
-  border: 1px solid rgba(244, 239, 229, 0.1);
-  border-left-color: rgba(184, 145, 91, 0.42);
-  background: rgba(244, 239, 229, 0.045);
-  color: #d9b97a;
-  font-size: 0.66rem;
-  font-weight: 950;
-  line-height: 1.25;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
 `;
 
 const OpenerStepNumber = styled.span`
-  position: absolute;
-  z-index: 2;
-  top: -5px;
-  left: -5px;
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border: 1px solid rgba(184, 145, 91, 0.42);
-  color: #f4efe5;
-  background: rgba(184, 145, 91, 0.14);
-  font-size: 0.68rem;
-  font-weight: 950;
+  color: #9eacb4;
+  font-size: 0.65rem;
+  font-variant-numeric: tabular-nums;
+`;
 
-  @media (max-width: 560px) {
-    top: -4px;
-    left: -4px;
-    width: 22px;
-    height: 22px;
-    font-size: 0.62rem;
+const OpenerFlowDetails = styled.details`
+  min-width: 0;
+  border-top: 1px solid rgba(244, 239, 229, 0.07);
+  padding: 10px 14px;
+  color: #cbd2d7;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+
+  summary {
+    width: fit-content;
+    max-width: 100%;
+    cursor: pointer;
+    color: #d9b97a;
+  }
+
+  summary:focus-visible {
+    outline: 2px solid #d9b97a;
+    outline-offset: 4px;
+  }
+
+  ol {
+    margin: 12px 0 0;
+    padding-left: 22px;
+  }
+
+  li {
+    padding: 8px 0;
+    border-top: 1px solid rgba(244, 239, 229, 0.07);
+  }
+
+  strong {
+    font-weight: 650;
+    color: #f4efe5;
+  }
+
+  p {
+    margin: 3px 0 0;
   }
 `;
 

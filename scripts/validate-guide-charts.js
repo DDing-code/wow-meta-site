@@ -424,6 +424,12 @@ function main() {
   const longFlow = { opener: { steps: Array.from({ length: 15 }, (_, index) => ({ skillId: String(index + 1), note: 'authored' })) } };
   assert(getAuthoredFlow(longFlow, { steps: [] }, {}).length === 15, 'Authored openers must not be truncated at the old twelve-step fallback limit');
   assert(guideDetailSource.includes('const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);'), 'Both opener renderers must share the full authored step mapping');
+  const flowPreview = guideDetailSource.slice(guideDetailSource.indexOf('function OpenerFlowPreview('), guideDetailSource.indexOf('function NarrativeGuideSection('));
+  const flowStyles = guideDetailSource.slice(guideDetailSource.indexOf('const OpenerFlowList ='), guideDetailSource.indexOf('const TipList ='));
+  assert(flowPreview.includes('<SkillIconLink skill={step.skill} size={28} />'), 'Flow icons must retain their compact size');
+  assert(flowStyles.includes('repeat(auto-fit, minmax(min(100%, 180px), 1fr))') && !/grid-auto-flow: column|overflow-x: auto|min-height: 206px/.test(flowStyles), 'Flow steps must wrap within the available width without a horizontal rail');
+  assert(flowPreview.includes('<OpenerFlowDetails') && flowStyles.includes('styled.details'), 'Long flow explanations must use an accessible native disclosure');
+  assert(flowPreview.includes('renderGuideText(step.note, inlineTerms)') && flowPreview.includes('displayGuideText(step.trigger)'), 'Compact flows must retain every explanation and keep use conditions visible');
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const skillIds = availableSkillIds(skills, manuscripts);
   const guideRecords = parseGuideRecords(guideRegistrySource);

@@ -99,6 +99,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
+- Shared flow layout simplified on 2026-09-13: 28px icons, wrapping numbered steps, visible short conditions and native disclosure for complete explanations. No rotation advice was rewritten for this UI change; KB sync produced no content changes. Separate authored opener/single-target/AoE modes are still pending and must preserve hero-specific conditions, not duplicate one priority list into three tabs.
 - Complete fresh manual research and KB/DB/guide updates for the 24 older manuscripts; next: Feral Druid.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
