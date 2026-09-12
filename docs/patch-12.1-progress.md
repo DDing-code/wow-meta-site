@@ -53,15 +53,26 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected desktop, 390px and 320px flows and hero switching. Final bundle `main.4ec850af.js` renders 15/12 steps, no clipped step paragraphs, no document overflow, no broken loaded images and no non-numeric spell links in these checks. The graph centers on Eye Beam with six direct synergy connections.
 - Limits: Blizzard patch-note body, latest raid/M+ aggregates and private Fel Hammer messages were unavailable. Inertia duration and adjusted Immolation Aura generation differ between live tooltips and guides and remain flagged. Dense graph labels still overlap in places; old shared DH notes and the other DH manuscripts need separate re-audits. Global 87 KB link warnings, mixed-patch metadata and the large bundle remain. Original Markdown is outside the site Git repository; the commit contains the generated DB and site changes.
 
+### Vengeance Demon Hunter
+
+- Replaced the old manuscript in place with 15 manually authored sections, practical tips, Annihilator/Aldrachi explanations, separate 14/12-step openers and conditional 16/18-row priorities. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Meta/guide-12.1.json`.
+- Reviewed current Korean tooltips, Wowhead Itamae, Icy Veins Meyra and Method Meyra/Fel Hammer public guides. The available SimC Vengeance file was last changed in April; it is explicitly historical, not proof of the current optimal rotation.
+- Manually authored 44 local atomic notes and 12 synergy notes, corrected shared Aldrachi/Annihilator scopes and specialization-dependent effects, updated canonical source/sync metadata, and regenerated spell/synergy JSON.
+- Corrected personal Fiery Brand damage reduction, Spirit Bomb cooldown/cost, manual Untethered Rage activation, passive Soul Barrier, Fury-based Feed the Demon, Meteoric Fall stack consumption, Worldkiller cooldown reduction and target-specific Season 2 bonuses. Openers contain actual casts, with passives and selected talents represented as conditions.
+- Re-audited seven shared DH utility notes and three common relationships. Blur is limited to Havoc/Devourer, Chaos Brand is a passive debuff, and unrelated shared skills no longer appear in every common synergy. Other older shared notes were not bulk relabeled.
+- The existing priority renderer now uses an authored selected-hero priority when present, with the same hero state as the opener. Priority and specialist-chart sections use the existing full-width layout instead of the narrow sidebar track. Shared-spell labels use the displayed specialization instead of the original storage folder name.
+- Canonical equality, scoped mechanic/scope assertions, all prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link validation passed for all 44 local atomic notes and 16 numeric shared notes; explicit guide name/icon validation passed for 26 IDs. Shared metadata validation is not a claim that all 16 shared mechanics were fully re-audited.
+- Inspected desktop, 390px and 320px flow, priority switching and defensive-chart layouts. Final production bundle `main.ea1b4a00.js` displays the correct specialization label, no Blur links, no broken loaded images and no document overflow in these checks. All 443 rendered spell href attributes are numeric, including SVG graph links. The graph centers on Spirit Bomb with six actual direct synergy connections.
+- Limits: Blizzard patch-note body, latest raid/M+ aggregate data, personal simulations and private Fel Hammer messages were not obtained. Source disagreements remain explicit; no usage percentages or guaranteed DPS gain were invented. Dense graph labels, older shared records, 87 global KB link warnings, mixed-patch metadata and the large bundle remain. Original KB Markdown/JSON is outside the site Git repository; this commit preserves generated DB and site changes.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 26 manuscripts
+## Still 12.0.5: 25 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Demon Hunter | Vengeance |
 | Druid | Guardian, Feral |
 | Evoker | Augmentation |
 | Hunter | Beast Mastery, Marksmanship, Survival |
@@ -76,7 +87,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Complete fresh manual research and KB/DB/guide updates for the 26 older manuscripts; next: Vengeance Demon Hunter.
+- Complete fresh manual research and KB/DB/guide updates for the 25 older manuscripts; next: Guardian Druid.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

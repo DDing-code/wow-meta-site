@@ -467,6 +467,17 @@ function main() {
   assert(bloodChart.events?.some(event => event.skillId === '49998'), 'Blood defensive chart must include authored Death Strike recovery, not generic skill ordering');
   assert(bloodChart.events?.some(event => event.skillId === '195182' && event.phase.includes('10중첩')), 'Blood defensive chart must include the conditional tier-set spender');
   assert(bloodChart.events?.every(event => skillIds.has(event.skillId)), 'Blood defensive chart must resolve every spell from the KB');
+  const vengeanceChart = new Function(`return {${planBranchMap.get('demonhunter-vengeance').body}}`)();
+  const matchesGuideScope = new Function('record', 'guide', 'includeCommon', 'commonSpecs', extractFunctionBody(guideDetailSource, 'recordMatchesGuide'));
+  const blur = skills.find(skill => skill.id === '212800');
+  assert(!matchesGuideScope(blur, guideRecordMap.get('demonhunter-vengeance'), true, COMMON_SPECS) && matchesGuideScope(blur, guideRecordMap.get('demonhunter-havoc'), true, COMMON_SPECS), 'Shared storage must not bypass the verified Blur specialization scope');
+  assert(vengeanceChart.events?.length === 5 && vengeanceChart.events.every(event => skillIds.has(event.skillId)), 'Vengeance must use five authored defensive choices from the KB');
+  assert(vengeanceChart.events.some(event => event.skillId === '204021' && event.action === '개인 피해 감소'), 'Vengeance chart must not retain the old target-only Fiery Brand behavior');
+  assert(!vengeanceChart.events.some(event => ['263648', '1270444', '1253304'].includes(event.skillId)), 'Vengeance passive effects must not appear as defensive cast buttons');
+  assert(guideDetailSource.includes('priority: activeHeroBranch.priority') && guideDetailSource.includes('aria-label="우선순위 영웅 특성 선택"'), 'Authored hero priorities must follow the selected hero branch and be switchable at the table');
+  for (const block of ['priority', 'specialist-chart']) {
+    assert(guideDetailSource.includes(`<PaperSection $fullWidth data-guide-block="${block}">`), 'Guide chart sections must not use the narrow sidebar track: ' + block);
+  }
   const describeRelation = new Function('record', 'centerSkill', extractFunctionBody(guideDetailSource, 'describeSynergyRecord'));
   assert(describeRelation({ synergy: { description: 'verified KB effect' } }, null) === 'verified KB effect', 'Authored KB synergy explanations must take precedence over generic relationship copy');
 

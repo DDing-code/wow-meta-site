@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T16:23:00.921Z",
+    "generatedAt": "2026-09-12T17:20:37.650Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 440,
-    "rawTotalSynergies": 440,
+    "totalSynergies": 446,
+    "rawTotalSynergies": 446,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,17 +18,15 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 129,
+      "unknown": 138,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
       "blood-shield-bloodshot": 1,
       "apex-defensive-window": 1,
       "ranged-bone-shield-maintenance": 1,
-      "interrupt-purge-cc": 1,
-      "raid-debuff-shared-damage": 1,
-      "survival-mobility": 2,
       "damage": 4,
+      "survival-mobility": 1,
       "dispels-enrage-control": 1,
       "shared-dot": 1,
       "raid-utility": 1,
@@ -274,7 +272,7 @@
     },
     "byClass": {
       "DeathKnight": 28,
-      "DemonHunter": 29,
+      "DemonHunter": 35,
       "Druid": 38,
       "Evoker": 28,
       "Hunter": 26,
@@ -1174,9 +1172,10 @@
     },
     "demon-hunter-common-disrupt-consume-chaos-nova": {
       "id": "demon-hunter-common-disrupt-consume-chaos-nova",
-      "name": "악마사냥꾼공용-분열-마법삼키기-혼돈의회오리-제어",
+      "name": "시전 차단·마법 해제·기절의 역할",
+      "description": "분열은 시전과 계열을 막고 마법 삼키기는 이미 적용된 이로운 마법을 제거한다. 혼돈의 회오리는 기절 가능한 적을 잠시 멈춘다. 서로 피해를 증폭시키는 조합이 아니라 제어 공백을 메우는 선택이며, 포식의 대체 기술은 별도로 확인한다.",
       "type": "synergy",
-      "synergyType": "interrupt-purge-cc",
+      "synergyType": "unknown",
       "participants": [
         "183752",
         "278326",
@@ -1185,34 +1184,26 @@
       "class": "DemonHunter",
       "spec": "공용",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 2,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/분열",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/마법삼키기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/어둠",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/흐릿해지기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/활공",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의낙인",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공백"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Synergies\\악마사냥꾼공용-분열-마법삼키기-혼돈의회오리-제어.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "demon-hunter-common-chaos-brand-immolation-aura": {
       "id": "demon-hunter-common-chaos-brand-immolation-aura",
-      "name": "악마사냥꾼공용-혼돈의낙인-제물의오라-파티기여",
+      "name": "광역 공격으로 혼돈의 낙인 적용",
+      "description": "파멸·복수의 제물의 오라가 적에게 피해를 주면 그 적에게 혼돈의 낙인을 적용할 수 있다. 이후 그 대상의 받는 마법 피해가 3% 증가한다. 포식은 일반 제물의 오라를 사용하지 않으며, 낙인은 별도 시전 버튼이 아니다.",
       "type": "synergy",
-      "synergyType": "raid-debuff-shared-damage",
+      "synergyType": "unknown",
       "participants": [
         "1490",
         "258920"
@@ -1221,32 +1212,24 @@
       "spec": "공용",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의낙인",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/분열",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/마법삼키기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/흐릿해지기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/어둠",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/활공",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파멸",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Synergies\\악마사냥꾼공용-혼돈의낙인-제물의오라-파티기여.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "demon-hunter-common-blur-darkness-glide": {
       "id": "demon-hunter-common-blur-darkness-glide",
-      "name": "악마사냥꾼공용-흐릿해지기-어둠-활공-생존기동",
+      "name": "개인 방어·파티 방어·낙하 대응",
+      "description": "흐릿해지기는 파멸·포식의 개인 피해 감소이며 복수에게 없는 기술이다. 어둠은 범위 안 아군의 확률적 피해 무효화, 활공은 낙하 조절이다. 셋의 쿨다운이 연동되거나 서로 효과를 강화하는 것은 아니며 상황별 대응 수단을 구분한다.",
       "type": "synergy",
-      "synergyType": "survival-mobility",
+      "synergyType": "unknown",
       "participants": [
         "212800",
         "196718",
@@ -1255,39 +1238,40 @@
       "class": "DemonHunter",
       "spec": "공용",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 1,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/흐릿해지기",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/어둠",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/활공",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/분열",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/마법삼키기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의낙인",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/사냥",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/활공"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Synergies\\악마사냥꾼공용-흐릿해지기-어둠-활공-생존기동.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
-    "SY-DH-Vengeance-UntetheredRage-Metamorphosis": {
-      "id": "SY-DH-Vengeance-UntetheredRage-Metamorphosis",
-      "name": "고삐풀린분노-탈태",
+    "dh-vengeance-고삐풀린분노-탈태": {
+      "id": "dh-vengeance-고삐풀린분노-탈태",
+      "name": "파편 소비로 얻은 탈태를 직접 사용",
+      "description": "소비기로 흡수한 파편은 고삐 풀린 분노의 발동 기회를 만든다. 발동 자체는 자동 변신이 아니며 짧은 탈태를 직접 사용해야 한다. 일반 탈태 쿨다운과 발동 유효시간을 따로 확인한다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "247454",
+        "228477",
+        "1270444",
+        "187827"
+      ],
       "class": "DemonHunter",
-      "spec": "복수",
+      "spec": "Vengeance",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태"
       ],
       "linkedBuffs": [],
@@ -1299,26 +1283,28 @@
         "lastUpdate": ""
       }
     },
-    "SY-DH-Vengeance-Voidfall-SpiritBomb": {
-      "id": "SY-DH-Vengeance-Voidfall-SpiritBomb",
-      "name": "공허내림-영혼 폭탄",
+    "dh-vengeance-공허내림-영혼폭탄": {
+      "id": "dh-vengeance-공허내림-영혼폭탄",
+      "name": "공허내림의 생성과 소비",
+      "description": "궤멸자의 균열은 공허내림을 확률적으로 만든다. 운석 낙하가 있으면 3중첩을 영혼 폭탄 또는 영혼 베어내기 한 번으로 전부 소비한다. 특성이 없는 한 중첩씩 소비하는 흐름과 섞지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
+        "263642",
         "1253304",
+        "1253391",
         "247454",
-        "228477",
-        "263642"
+        "228477"
       ],
       "class": "DemonHunter",
       "spec": "Vengeance",
-      "heroTalent": "궤멸자",
+      "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -1327,56 +1313,223 @@
         "lastUpdate": ""
       }
     },
-    "악마쐐기_물리피해구간": {
-      "id": "악마쐐기_물리피해구간",
-      "name": "악마쐐기-물리피해구간",
+    "dh-vengeance-세계학살자-탈태": {
+      "id": "dh-vengeance-세계학살자-탈태",
+      "name": "세 번째 유성으로 다음 탈태 당기기",
+      "description": "세 번째 유성이 커지며 복수는 탈태의 남은 쿨다운을 10초 줄인다. 기본 2분 쿨다운 자체가 고정 80초로 바뀌는 것은 아니다. 실제 소비와 다음 위험 구간을 함께 보고 탈태 배정을 수정한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "203720",
-        "204021",
-        "212084",
+        "1253304",
+        "1253391",
+        "1256353",
         "187827"
       ],
       "class": "DemonHunter",
       "spec": "Vengeance",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불타는낙인",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/지옥황폐",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불지옥일격"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/최후의수단",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼방벽"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/세계학살자"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\세계학살자-탈태.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-시즌2-불꽃의인장": {
+      "id": "dh-vengeance-시즌2-불꽃의인장",
+      "name": "불꽃의 인장이 세트 보너스의 조건",
+      "description": "2세트의 지속시간 연장은 영혼 베어내기의 주 대상에게만 적용된다. 4세트의 두 배 피해는 불꽃의 인장에 걸린 적에게 주는 제물의 오라와 원한의 인장에만 적용한다. 새 적에게 인장이 묻었는지 먼저 본다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "204596",
+        "228477",
+        "258920",
+        "389815",
+        "1296613",
+        "1296614"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불꽃의인장",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/제물의오라",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/원한의인장"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\시즌2-불꽃의인장.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-악마쐐기-물리피해구간": {
+      "id": "dh-vengeance-악마쐐기-물리피해구간",
+      "name": "격노 소비로 물리 방어 이어가기",
+      "description": "악마의 먹이는 소비한 격노 20마다 악마 쐐기 쿨다운을 1초 줄인다. 파편 흡수만의 보상이 아니다. 특화는 쐐기 중 방어도 보너스를 높이며, 둘 다 마법 피해에 똑같이 적용하는 수치는 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "218612",
+        "228477",
+        "247454",
+        "203720",
+        "203747"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/악마의먹이",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/특화-지옥피"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\악마쐐기-물리피해구간.md",
         "lastUpdate": ""
       }
     },
-    "SY-DH-Vengeance-Soulcrush-Frailty": {
-      "id": "SY-DH-Vengeance-Soulcrush-Frailty",
-      "name": "영혼분쇄-약화",
+    "dh-vengeance-알드라치-강화순서": {
+      "id": "dh-vengeance-알드라치-강화순서",
+      "name": "글레이브 뒤 균열과 영혼 베어내기",
+      "description": "현재 공개 가이드의 기본 순서는 파괴자의 글레이브 뒤 균열, 영혼 베어내기다. 칼날의 기예가 두 번째 소비의 베기를 12회로 만들고 두 강화를 모두 쓰면 전투의 전율을 얻는다. 패시브 이름을 시전 버튼으로 놓지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "442294",
+        "263642",
+        "228477",
+        "1272153",
+        "442718",
+        "442686"
+      ],
       "class": "DemonHunter",
-      "spec": "복수",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의글레이브",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/알드라치의격노"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/칼날의기예"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\알드라치-강화순서.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-알드라치-징표대상": {
+      "id": "dh-vengeance-알드라치-징표대상",
+      "name": "물리 광역 피해를 징표 대상에 전달",
+      "description": "복수의 부상당한 사냥감은 물리 피해의 25%를 징표 대상에게 혼돈 피해로 전달한다. 파멸의 30%와 다르다. 강화 균열을 오래 사는 적에게 맞히고 그 적의 피해량과 총량을 따로 확인한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "442679",
+        "442624",
+        "442806",
+        "263642"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의징표",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/파괴자의징표-특성",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/부상당한사냥감"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\알드라치-징표대상.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-영혼방벽-보호막": {
+      "id": "dh-vengeance-영혼방벽-보호막",
+      "name": "폭탄을 피해 전 보호막으로 사용",
+      "description": "영혼 방벽 선택 시 폭탄의 파편 소비가 10초 보호막으로 연결된다. 기본 8%에 파편당 2%를 더해 5개면 18%, 정점 6개면 20%다. 피해가 지난 뒤 생긴 보호막을 같은 생존 성과로 세지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "247454",
+        "263648",
+        "1270448"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼방벽",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/고삐풀린분노-중간"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\영혼방벽-보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-영혼분쇄-약화": {
+      "id": "dh-vengeance-영혼분쇄-약화",
+      "name": "약화 대상에 붙는 회복과 방어",
+      "description": "약화에 건 적을 공격하면 회복하고, 공허의 절단기·약점을 선택하면 추가 보너스를 얻는다. 영혼분쇄는 약화 효과를 두 배로 만든다. 개인의 고통 인도자 버프나 불타는 낙인의 피해 감소와 분리한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "389958",
+        "268175",
+        "389976",
+        "389985",
+        "228477"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/약화",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/공허의절단기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/약점",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼분쇄"
       ],
       "source": {
@@ -1384,60 +1537,58 @@
         "lastUpdate": ""
       }
     },
-    "영혼파편_영혼폭탄": {
-      "id": "영혼파편_영혼폭탄",
-      "name": "영혼파편-영혼폭탄",
+    "dh-vengeance-영혼파편-영혼폭탄": {
+      "id": "dh-vengeance-영혼파편-영혼폭탄",
+      "name": "파편을 모아 폭탄으로 소비",
+      "description": "균열로 만든 파편을 소비기에 넘긴다. 영혼 폭탄은 25초 쿨다운이 있어 매번 쓸 수 없고, 정점 중간 노드가 있을 때 최대 6개를 소비한다. 빈 시간은 영혼 베어내기로 격노와 파편을 돌린다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
         "263642",
         "247454",
         "228477",
-        "203720"
+        "1270448"
       ],
       "class": "DemonHunter",
       "spec": "Vengeance",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/균열",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼베어내기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼분쇄",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/영혼저미기"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Talents/고삐풀린분노-중간"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\영혼파편-영혼폭탄.md",
         "lastUpdate": ""
       }
     },
-    "인장_광역제어": {
-      "id": "인장_광역제어",
-      "name": "인장-광역제어",
+    "dh-vengeance-인장-광역제어": {
+      "id": "dh-vengeance-인장-광역제어",
+      "name": "제어가 끝난 뒤의 평타 준비",
+      "description": "침묵과 방향 감각 상실, 끌어당김은 서로 다른 제어다. 사슬의 인장은 불행의 인장 대체 선택을 확인한다. 적을 모으고 멈춘 뒤에도 다시 시전하거나 평타가 동시에 들어오므로 다음 차단과 방어기를 이어 둔다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
         "202137",
         "207684",
-        "389815",
-        "189110"
+        "202138",
+        "203720"
       ],
       "class": "DemonHunter",
       "spec": "Vengeance",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/침묵의인장",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불행의인장",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/원한의인장",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/불지옥일격",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/악마쐐기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -1445,6 +1596,34 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\인장-광역제어.md",
+        "lastUpdate": ""
+      }
+    },
+    "dh-vengeance-탈태-폭탄초기화": {
+      "id": "dh-vengeance-탈태-폭탄초기화",
+      "name": "탈태로 초기화하고 첫 폭탄 회수",
+      "description": "대규모 가속은 탈태 진입 시 공허내림 3중첩과 영혼 폭탄 초기화를 준다. 암흑 물질은 진입 후 첫 폭탄에 6초 지역 유성을 더한다. 파편·격노는 별도로 준비하고 급사 위험이면 초기화 효율보다 탈태를 먼저 쓴다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "187827",
+        "1256295",
+        "1256307",
+        "247454"
+      ],
+      "class": "DemonHunter",
+      "spec": "Vengeance",
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/복수/Skills/영혼폭탄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Synergies\\탈태-폭탄초기화.md",
         "lastUpdate": ""
       }
     },

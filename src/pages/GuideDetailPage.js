@@ -1589,14 +1589,21 @@ const SPECIALIST_CHARTS = {
   },
   'demonhunter-vengeance': {
     id: 'defensive',
-    title: '영혼 파편과 방어기 배정',
-    sectionHeading: '탱킹 안정화 흐름',
-    sectionIntro: '복수 악마사냥꾼은 영혼 파편과 격노를 방어와 피해로 바꾸며, 악마 쐐기, 불타는 낙인, 탈태를 실제 위험 구간에 배정합니다.',
-    caption: '악마 쐐기, 균열, 영혼 파편, 영혼 폭탄, 영혼 베어내기, 불타는 낙인, 탈태와 인장 제어를 확인합니다.',
+    title: '피해 전 방어와 피격 후 회복',
+    sectionHeading: '피해 종류에 맞춘 방어 선택',
+    sectionIntro: '악마 쐐기의 물리 방어, 불타는 낙인의 개인 피해 감소, 폭탄의 선택형 보호막과 탈태를 구분합니다. 모든 방어기를 연속으로 누르는 순서는 아닙니다.',
+    caption: '다음 피해와 남은 자원에 따라 하나씩 선택합니다. 영혼 방벽은 별도 버튼이 아니라 영혼 폭탄의 선택 특성입니다.',
     definition: [
-      ['의미', '영혼 파편은 회복과 피해를 동시에 여는 자원이고, 악마 쐐기와 낙인은 실제 피해 유형에 맞춰야 합니다.'],
-      ['읽는 법', '풀 진입 전 악마 쐐기를 보고, 파편이 넘치기 전에 소비하며, 큰 단일 피해는 불타는 낙인이나 탈태로 따로 표시합니다.'],
-      ['체크 포인트', '악마 쐐기 공백, 파편 과충전, 불타는 낙인 대상 오류, 탈태 중복, 인장 제어 지연을 봅니다.'],
+      ['의미', '피격 전 피해를 줄이는 행동과 이미 맞은 뒤의 회복을 나눕니다.'],
+      ['읽는 법', '악마 쐐기는 물리 피해, 낙인은 개인 피해 감소입니다. 급사 위험이면 폭탄 초기화 준비보다 탈태가 먼저입니다.'],
+      ['체크 포인트', '쐐기 공백, 개인 낙인 버프, 보호막 실제 흡수, 고삐 풀린 분노 발동 후 실제 탈태 사용을 확인합니다.'],
+    ],
+    events: [
+      { phase: '첫 평타 / 물리 피해 전', skillId: '203720', action: '물리 방어 확보', note: '악마 쐐기를 켭니다. 악마의 먹이는 격노 소비로 쿨다운을 줄이며 이동 중에는 같은 유지율을 보장하지 않습니다.' },
+      { phase: '큰 피해 직전', skillId: '204021', action: '개인 피해 감소', note: '불타는 낙인으로 자신의 받는 피해를 줄입니다. 적의 지속 피해 확산을 기다려야 방어가 생기는 옛 방식이 아닙니다.' },
+      { phase: '예정 피해 / 방벽 선택', skillId: '247454', action: '파편을 보호막으로', note: '충분한 파편과 격노로 영혼 폭탄을 사용합니다. 영혼 방벽은 10초 보호막이며 파편 5개는 최대 생명력 18%, 정점 6개는 20%입니다.' },
+      { phase: '급사 위험 / 큰 피해', skillId: '187827', action: '탈태로 먼저 생존', note: '공격용 초기화 준비를 기다리지 않습니다. 고삐 풀린 분노는 자동 변신이 아니라 직접 사용할 기회입니다.' },
+      { phase: '피격 후 / 회복 필요', skillId: '228477', action: '필요한 회복 즉시', note: '영혼 베어내기를 사용합니다. 최대 파편만 기다리다 다음 타격 전에 회복하지 못하는 상황을 피합니다.' },
     ],
   },
   'demonhunter-devourer': {
@@ -2473,17 +2480,26 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         })}
 
         {priorityChart && (
-          <PaperSection>
-            <h3>실전 우선순위</h3>
+          <PaperSection $fullWidth data-guide-block="priority">
+            <h3>{activeHeroBranch?.priority?.length ? `${activeHeroBranch.label} 실전 우선순위` : '실전 우선순위'}</h3>
             <p>
               위 내용을 전투 중 판단 순서로 줄이면 아래와 같습니다. 숫자가 앞에 있을수록 먼저 확인해야 하는 조건입니다.
             </p>
-            <InlineFigure chart={priorityChart} guide={guide} data={data} profile={profile} manuscript={manuscript} inlineTerms={inlineTerms} />
+            {!!activeHeroBranch?.priority?.length && (
+              <HeroBranchTabs role="group" aria-label="우선순위 영웅 특성 선택">
+                {heroBranches.map((branch, index) => (
+                  <HeroBranchTab key={branch.label} type="button" aria-pressed={activeHeroBranchIndex === index} $active={activeHeroBranchIndex === index} $color={guide.color} onClick={() => setActiveHeroBranchIndex(index)}>
+                    {renderGuideText(branch.label, inlineTerms)}
+                  </HeroBranchTab>
+                ))}
+              </HeroBranchTabs>
+            )}
+            <InlineFigure chart={priorityChart} guide={guide} data={data} profile={profile} manuscript={activeHeroBranch?.priority?.length ? { ...manuscript, priority: activeHeroBranch.priority } : manuscript} inlineTerms={inlineTerms} />
           </PaperSection>
         )}
 
         {specialistChart && (
-          <PaperSection>
+          <PaperSection $fullWidth data-guide-block="specialist-chart">
             <h3>{renderGuideText(specialistChart.sectionHeading || '핵심 흐름도', inlineTerms)}</h3>
             <p>
               {renderGuideText(
@@ -2706,7 +2722,7 @@ function GuideDetailPage() {
                       <SkillIconImage skill={skill} inline />
                       <span>{skillName(skill)}</span>
                     </SkillName>
-                    <SkillSub>{displayGuideText(skill.spec || skill.category || 'KB 스킬')}</SkillSub>
+                    <SkillSub>{displayGuideText(commonSpecs.has(skill.spec) ? '공용' : guide.spec)}</SkillSub>
                   </SkillMain>
                   <SkillMeta>{formatSkillMeta(skill)}</SkillMeta>
                 </SkillRow>

@@ -14,6 +14,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-frost', '12.1'],
   ['deathknight-unholy', '12.1'],
   ['demonhunter-havoc', '12.1'],
+  ['demonhunter-vengeance', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -423,6 +424,9 @@ function collectActiveSkillRefs(manuscript) {
   (manuscript.heroBranches || []).forEach((branch, branchIndex) => {
     (branch.skillIds || []).forEach((skillId, skillIndex) => {
       skillRefs.push([`heroBranches[${branchIndex}].skillIds[${skillIndex}]`, skillId]);
+    });
+    (branch.priority || []).forEach((item, index) => {
+      skillRefs.push([`heroBranches[${branchIndex}].priority[${index}].skillId`, item.skillId]);
     });
   });
 
@@ -1067,6 +1071,44 @@ function main() {
     }
   }
   assert(bloodSynergies['dh-havoc-안광-연속휩쓸기']?.description?.includes('한 번 시전한 뒤'), 'Havoc apex synergy must keep its authored reset explanation');
+  const vengeance = manuscripts['demonhunter-vengeance'];
+  const vengeanceSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '02-악마사냥꾼', '복수', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(vengeanceSource)) {
+    assert(JSON.stringify(JSON.parse(read(vengeanceSource))) === JSON.stringify(vengeance), 'Vengeance must match its canonical 12.1 KB manuscript');
+  }
+  assert(!vengeance.extraSkills?.length, 'Vengeance must resolve spells from the canonical KB');
+  assert(!kbSkills['212800']?.specs.includes('Vengeance') && kbSkills['212800']?.specs.includes('Havoc') && kbSkills['212800']?.specs.includes('Devourer'), 'Blur must not leak from shared storage into Vengeance');
+  assert(kbSkills['179057']?.resourceCost === '격노 25' && kbSkills['179057']?.cooldown === '45초' && kbSkills['1490']?.type === 'buff', 'DH common records must retain current costs and passive classification');
+  for (const id of ['1490', '131347', '179057', '183752', '196718', '212800', '278326']) {
+    assert(kbSkills[id]?.patch === '12.1' && !kbSkills[id]?.description.startsWith('#'), 'Reviewed common DH notes must have real descriptions: ' + id);
+  }
+  assert(kbSkills['247454']?.cooldown === '25초' && kbSkills['247454']?.resourceCost === '격노 40', 'Spirit Bomb must retain its cooldown and Fury cost');
+  assert(kbSkills['228477']?.resourceCost === '격노 35' && kbSkills['212084']?.cooldown === '40초', 'Vengeance spender costs and Fel Devastation cooldown must stay current');
+  assert(kbSkills['204021']?.description.includes('자신의 받는 피해를 40%'), 'Fiery Brand must describe personal damage reduction, not the old enemy-only reduction');
+  assert(kbSkills['1270444']?.description.includes('직접 시전') && kbSkills['1270444']?.castTime === '지속 효과', 'Untethered Rage grants a manual Meta use, not an automatic transformation');
+  assert(kbSkills['263648']?.description.includes('8%') && kbSkills['263648']?.description.includes('2%') && kbSkills['263648']?.castTime === '지속 효과', 'Soul Barrier must keep its current passive shield effect');
+  assert(kbSkills['1296613']?.description.includes('주 대상') && kbSkills['1296614']?.description.includes('100%'), 'Vengeance tier effects must retain target conditions');
+  assert(kbSkills['1253391']?.description.includes('3중첩') && kbSkills['1253391']?.description.includes('모든 중첩') && kbSkills['218612']?.description.includes('격노를 20'), 'Meteoric Fall and Feed the Demon must keep their actual consumption rules');
+  for (const id of ['442294', '442624', '442679', '442806', '442718', '1272153', '232893']) {
+    assert(kbSkills[id]?.specs.includes('Vengeance') && kbSkills[id]?.specs.includes('Havoc'), 'Shared DH spell must retain both verified spec scopes: ' + id);
+  }
+  const vengeanceNotes = Object.values(kbSkills).filter(skill => /[\\/]02-악마사냥꾼[\\/]복수[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
+  assert(vengeanceNotes.length === 44, 'Vengeance must retain all 44 reviewed local atomic notes');
+  assert(vengeanceNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'Vengeance descriptions must survive canonical sync');
+  for (const flow of [vengeance.opener, ...vengeance.heroBranches.map(branch => branch.opener)]) {
+    assert(flow.steps.every(step => ['skill', 'atomic-skill'].includes(kbSkills[step.skillId]?.type) && step.trigger && step.note), 'Vengeance flows must contain real casts and resource conditions');
+  }
+  const vengeanceAldrachi = vengeance.heroBranches[1].opener.steps;
+  for (const branch of vengeance.heroBranches) {
+    assert(branch.priority?.length > 10 && branch.priority.every(row => ['skill', 'atomic-skill'].includes(kbSkills[row.skillId]?.type) && row.note.length > 30), 'Vengeance requires authored, actionable priorities for each hero branch');
+  }
+  assert(!vengeance.heroBranches[0].priority.some(row => row.skillId === '442294'), 'Annihilator must not include Aldrachi Glaive in its priority');
+  const aldrachiPriority = vengeance.heroBranches[1].priority;
+  assert(aldrachiPriority.findIndex(row => row.skillId === '442294') < aldrachiPriority.findIndex(row => row.skillId === '263642') && aldrachiPriority.findIndex(row => row.skillId === '263642') < aldrachiPriority.findIndex(row => row.skillId === '228477'), 'Aldrachi priority must retain Glaive, empowered Fracture, empowered Soul Cleave order');
+  const glaiveIndex = vengeanceAldrachi.findIndex(step => step.skillId === '442294');
+  assert(vengeanceAldrachi[glaiveIndex + 1]?.skillId === '263642' && vengeanceAldrachi[glaiveIndex + 2]?.skillId === '228477', 'Vengeance Aldrachi flow must consume Fracture before Soul Cleave');
+  assert(bloodSynergies['dh-vengeance-고삐풀린분노-탈태']?.description.includes('자동 변신이 아니며'), 'Vengeance apex relationship must retain its manual-use explanation');
+
   const unholy = manuscripts['deathknight-unholy'];
   const unholySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '01-죽음의기사', '부정', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(unholySource)) {
