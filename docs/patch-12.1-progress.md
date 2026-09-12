@@ -103,15 +103,28 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Verified production bundle `main.3c5ef0ee.js`: both heroes and all three modes at 1440px, 390px and 320px. No page/flow overflow, broken loaded images or console errors appeared in these checks. Native detail disclosure preserves conditions. Spell links are numeric and no Devastation Essence Burst link appears on the Augmentation page.
 - Limits: current WCL/Archon aggregates, personal simulations and private Wyrmrest Temple messages were not obtained. Old June usage/DPS values were removed from current metadata. SimC commit `3a32d8195787b3bc098ec7dbf4bcdea542522175` is implementation evidence only. Dense graph labels, generic featured-skill ranking, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical Markdown/JSON is outside the site Git repository; the commit preserves generated DB and site content.
 
+### Beast Mastery Hunter
+
+- Replaced the 12.0.5 manuscript in place with 14 manually authored subjects, ten tips and separate Pack Leader/Dark Ranger opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/05-사냥꾼/야수/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 update and September hotfixes, current Korean/English tooltips, Wowhead, Azortharion's Icy Veins and Qenjua's Method guides. Used live SimC files at commit `616c7cde89888480dc4e5fb1755567ef97356dfd`, not the PTR APL or a personal simulation result.
+- Manually reviewed 87 atomic records: all 42 local Beast Mastery notes and 45 related common notes. Replaced obsolete Bloodshed 321530 with current passive 1272099; separated all three Nature's Ally talents and buff 1276720, Howl talent 471876/effect 471878, actual Wailing Arrow and Death's Wail talent, and Season 2 talent/buff/automatic damage records. Only Hunter spell records changed.
+- Corrected base versus talent-adjusted cooldowns/costs, War Orders versus Master Handler reductions, 10-second/70% Beast Cleave versus 20% Kill Cleave, conditional S2 Cobra consumption, passive Frenzy, hero-specific Deathblow and Hunter's Mark. Kill Shot remains Marksmanship-only; Black Arrow retains its actual shared cast ID.
+- Authored 14 local synergies and rewrote four relevant common relationships. Removed old June usage/DPS claims and the fabricated uptime chart. The graph centers on Bestial Wrath with six direct authored relationships; internal set icons are not used as cast buttons.
+- Fixed the existing canonical synergy builder to preserve `specs`. Non-Hunter synergy changes only add their existing canonical scope field; this is not a re-audit of those mechanics. The existing guide filter now excludes the Sentinel relationship from Beast Mastery.
+- Fixed shared `getSynergySkills` so explicit participant IDs remain authoritative. Name-based fallback no longer adds a different Nature's Ally record or cross-spec participants. Runnable checks cover both identical names and an entirely out-of-scope participant list.
+- Online strict metadata/name/link checks passed for 42 local and 55 numeric common records, with zero errors/warnings. Ten of the common records received metadata validation only, not a full mechanics re-audit. Explicit guide name/icon checks passed for 17 IDs. Canonical equality, mechanic/scope assertions, all prebuild checks and production build passed on 2026-09-13.
+- Inspected both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons appeared. Native condition disclosure works. Final bundle `main.9099c62d.js` was verified; the apex relationship contains six intended participants, Sentinel is absent, spell links are numeric and no console errors appeared.
+- Limits: Archon raid and high-key requests returned 403; no current usage/DPS aggregates, personal simulation or private Trueshot Lodge messages were obtained. Wild Thrash's two-target boundary and source disagreements about apex damage and 3/4-stack Cobra consumption remain explicit. Dense graph-label overlaps, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle still need work. Canonical KB and its builder remain outside the site Git repository; the site commit contains generated DB, guide, renderer and regression changes.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 22 manuscripts
+## Still 12.0.5: 21 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Hunter | Beast Mastery, Marksmanship, Survival |
+| Hunter | Marksmanship, Survival |
 | Mage | Fire, Frost |
 | Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
@@ -123,8 +136,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: 24px icons with wrapping number/name/arrow steps; use conditions and complete explanations remain in native disclosure. Feral and Augmentation now have authored opener/single-target/AoE modes for both heroes; the other guides still need separately verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 22 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation and Beast Mastery now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 21 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

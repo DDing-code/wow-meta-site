@@ -370,6 +370,15 @@ function main() {
     normalizeSkillLookupText, skillLookupKeys
   );
   assert(scopedResult.length === 1 && scopedResult[0].id === '5143', 'Synergy participants must stay within the guide skill scope');
+  for (const ids of [['1276720'], ['foreign-spec']]) {
+    const exact = getScopedSynergySkills(
+      { participants: ids, linkedSkills: ['자연의 동맹'] },
+      [{ id: '1273043', name: '자연의 동맹' }, { id: '1276720', name: '자연의 동맹' }],
+      items => [...new Map(items.map(item => [String(item.id), item])).values()],
+      normalizeSkillLookupText, skillLookupKeys
+    );
+    assert(JSON.stringify(exact.map(item => item.id)) === JSON.stringify(ids[0] === 'foreign-spec' ? [] : ids), 'Explicit synergy IDs must not acquire identically named talents or foreign-scope fallback links');
+  }
   const graphModel = new Function('data', `
     const guide = {};
     const getSynergyGraphCenter = () => ({ skill: data.scopedSkills[0] });
@@ -466,7 +475,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation'].includes(guideId)) {
+    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);

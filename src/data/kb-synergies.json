@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T21:12:04.247Z",
+    "generatedAt": "2026-09-12T22:18:19.332Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 468,
-    "rawTotalSynergies": 468,
+    "totalSynergies": 475,
+    "rawTotalSynergies": 475,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 160,
+      "unknown": 174,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -37,17 +37,10 @@
       "movement-utility": 1,
       "damage-resource": 1,
       "defensive-recovery": 1,
-      "shared_defense_mobility": 1,
-      "shared_mythic_utility": 1,
-      "hero_talent_dark_ranger": 1,
-      "hero_talent_pack_leader": 1,
       "hero_talent_sentinel": 1,
       "aoe-cleave": 1,
       "burst-window": 4,
       "buff-spender": 1,
-      "hero-talent-loop": 1,
-      "aoe-maintenance": 1,
-      "cooldown-loop": 1,
       "frostfire_hero_tree": 1,
       "spellslinger_hero_tree": 1,
       "sunfury_hero_tree": 1,
@@ -275,7 +268,7 @@
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
-      "Hunter": 26,
+      "Hunter": 33,
       "Mage": 34,
       "마법사": 1,
       "Monk": 31,
@@ -301,6 +294,11 @@
       ],
       "class": "DeathKnight",
       "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost",
+        "Unholy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -332,6 +330,11 @@
       ],
       "class": "DeathKnight",
       "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost",
+        "Unholy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -1979,6 +1982,9 @@
       "participants": [],
       "class": "DemonHunter",
       "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2006,6 +2012,9 @@
       ],
       "class": "DemonHunter",
       "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2160,6 +2169,9 @@
       "participants": [],
       "class": "DemonHunter",
       "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2184,6 +2196,9 @@
       "participants": [],
       "class": "DemonHunter",
       "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2239,6 +2254,13 @@
       ],
       "class": "Druid",
       "spec": "공용",
+      "specs": [
+        "Common",
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2271,6 +2293,13 @@
       ],
       "class": "Druid",
       "spec": "공용",
+      "specs": [
+        "Common",
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2301,6 +2330,13 @@
       ],
       "class": "Druid",
       "spec": "공용",
+      "specs": [
+        "Common",
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2332,6 +2368,13 @@
       ],
       "class": "Druid",
       "spec": "공용",
+      "specs": [
+        "Common",
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -2888,6 +2931,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -2922,6 +2968,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -2953,6 +3002,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -2985,6 +3037,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3017,6 +3072,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3052,6 +3110,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3086,6 +3147,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3122,6 +3186,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3152,6 +3219,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3187,6 +3257,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3221,6 +3294,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3253,6 +3329,9 @@
       ],
       "class": "Druid",
       "spec": "Feral",
+      "specs": [
+        "Feral"
+      ],
       "heroTalent": null,
       "importance": 5,
       "patch": "12.1",
@@ -3278,6 +3357,9 @@
       "participants": [],
       "class": "Druid",
       "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -3375,6 +3457,9 @@
       ],
       "class": "Druid",
       "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
       "heroTalent": null,
       "importance": 8,
       "patch": "12.0.5",
@@ -3405,6 +3490,9 @@
       "participants": [],
       "class": "Druid",
       "spec": "조화",
+      "specs": [
+        "Balance"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -3622,6 +3710,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 9,
       "patch": "12.1",
@@ -3653,6 +3744,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 6,
       "patch": "12.1",
@@ -3685,6 +3779,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 8,
       "patch": "12.1",
@@ -3716,6 +3813,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 10,
       "patch": "12.1",
@@ -3748,6 +3848,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 9,
       "patch": "12.1",
@@ -3781,6 +3884,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 6,
       "patch": "12.1",
@@ -3811,6 +3917,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 7,
       "patch": "12.1",
@@ -3843,6 +3952,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 10,
       "patch": "12.1",
@@ -3876,6 +3988,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 10,
       "patch": "12.1",
@@ -3908,6 +4023,9 @@
       ],
       "class": "Druid",
       "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 8,
       "patch": "12.1",
@@ -4886,136 +5004,137 @@
     },
     "hunter_common_turtle_exhilaration_mobility": {
       "id": "hunter_common_turtle_exhilaration_mobility",
-      "name": "사냥꾼공용-거북의상-활기-기동",
+      "name": "예측 피해·회복·이동을 나누는 생존",
+      "description": "큰 피해가 오기 전에는 적자생존, 실제 생명력 손실에는 활기, 위험한 위치에서 빠져나올 때는 철수·치타의 상을 구분한다. 거북의 상에는 공격 제한이 있으며 모든 피해를 무조건 무효화하는 기술로 취급하지 않는다.",
       "type": "synergy",
-      "synergyType": "shared_defense_mobility",
+      "synergyType": "unknown",
       "participants": [
+        "264735",
         "186265",
         "109304",
-        "5384",
         "781",
         "186257"
       ],
       "class": "Hunter",
-      "spec": "공용",
+      "spec": "Common",
+      "specs": [
+        "BeastMastery",
+        "Marksmanship",
+        "Survival"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/적자생존",
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/거북의상",
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/활기",
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/철수",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/치타의상",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/죽은척하기",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/사냥꾼의징표"
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/치타의상"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Synergies\\사냥꾼공용-거북의상-활기-기동.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "hunter_common_counter_tranq_mythic_utility": {
       "id": "hunter_common_counter_tranq_mythic_utility",
-      "name": "사냥꾼공용-반격의사격-평정-던전유틸",
+      "name": "야수·사격의 차단과 강화 해제",
+      "description": "반격의 사격은 차단 가능한 시전, 평정의 사격은 제거 가능한 격노·마법 강화에 사용한다. 구속의 사격은 연결된 적이 화살에서 멀어져야 기절하며, 타르 덫의 감속과 작동 방식이 다르다. 생존의 차단 스킬과 혼동하지 않는다.",
       "type": "synergy",
-      "synergyType": "shared_mythic_utility",
+      "synergyType": "unknown",
       "participants": [
         "147362",
         "19801",
         "109248",
-        "187698",
-        "34477",
-        "257284"
+        "187698"
       ],
       "class": "Hunter",
-      "spec": "공용",
+      "spec": "Common",
+      "specs": [
+        "BeastMastery",
+        "Marksmanship"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/반격의사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/평정의사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/구속의사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/타르덫",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/눈속임",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/사냥꾼의징표",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/죽은척하기",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/철수"
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/타르덫"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Synergies\\사냥꾼공용-반격의사격-평정-던전유틸.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "hunter_hero_dark_ranger_black_arrow_shadow": {
       "id": "hunter_hero_dark_ranger_black_arrow_shadow",
-      "name": "영웅특성-DarkRanger-검은화살-암흑화살",
+      "name": "검은 화살과 죽음의 강타 사용 기회",
+      "description": "생명력 조건 밖의 검은 화살은 죽음의 강타가 여는 사용 기회와 연결된다. 영혼 흡수자의 발동 스킬·확률은 야수와 사격이 다르며, 칠흑 시위는 검은 화살 자체에서 다시 발동 기회를 만든다. 두 전문화의 발동 규칙을 합치지 않는다.",
       "type": "synergy",
-      "synergyType": "hero_talent_dark_ranger",
+      "synergyType": "unknown",
       "participants": [
         "466930",
-        "466990",
-        "467749",
-        "467897",
-        "467902",
-        "467911",
         "469638",
-        "1235397",
-        "1264291",
-        "1264690",
-        "1264904",
-        "392060"
+        "467897",
+        "378770"
       ],
       "class": "Hunter",
-      "spec": "공용",
+      "spec": "Common",
+      "specs": [
+        "BeastMastery",
+        "Marksmanship"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/치타의상",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/철수"
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/죽음의강타"
       ],
-      "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Synergies\\영웅특성-DarkRanger-검은화살-암흑화살.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "hunter_hero_pack_leader_howl_beast_call": {
       "id": "hunter_hero_pack_leader_howl_beast_call",
-      "name": "영웅특성-PackLeader-무리의지도자-야수호출",
+      "name": "포효 준비에서 맹수 소환과 다음 포효로",
+      "description": "무리의 지도자의 포효가 준비되면 다음 살상 명령이 와이번·멧돼지·곰을 순서대로 소환한다. 절실한 소환장이 다음 포효까지의 시간을 줄이고 맹수별 보상이 다음 공격에 연결된다. 야수와 생존의 감소 스킬·강화 소비는 구분한다.",
       "type": "synergy",
-      "synergyType": "hero_talent_pack_leader",
+      "synergyType": "unknown",
       "participants": [
+        "471876",
         "471878",
         "472352",
-        "472357",
         "472358",
         "472550",
-        "472639",
-        "472660",
-        "472741"
+        "472639"
       ],
       "class": "Hunter",
-      "spec": "공용",
+      "spec": "Common",
+      "specs": [
+        "BeastMastery",
+        "Survival"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/사냥꾼의징표",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/치타의상",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/철수"
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/무리의지도자의포효"
       ],
-      "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Synergies\\영웅특성-PackLeader-무리의지도자-야수호출.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
     "hunter_hero_sentinel_moonstorm_lunar": {
@@ -5036,6 +5155,10 @@
       ],
       "class": "Hunter",
       "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -5394,17 +5517,24 @@
         "lastUpdate": ""
       }
     },
-    "검은화살_부패의사격": {
-      "id": "검은화살_부패의사격",
-      "name": "검은화살-부패의사격",
+    "bm_dark_ranger_black_arrow": {
+      "id": "bm_dark_ranger_black_arrow",
+      "name": "10초 추가 화살과 15초 시전 기회",
+      "description": "어둠 순찰자의 격노는 부패의 사격 10초를 열고, 죽음의 통곡 선택 시 울부짖는 화살을 15초 동안 사용할 수 있게 한다. 울부짖는 화살의 시전과 후속 검은 화살을 배정하되 두 종료 시간을 같은 것으로 취급하지 않는다.",
       "type": "synergy",
-      "synergyType": "hero-talent-loop",
-      "participants": [],
+      "synergyType": "unknown",
+      "participants": [
+        "19574",
+        "466990",
+        "466930",
+        "1264290",
+        "392060"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노"
       ],
@@ -5412,71 +5542,233 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\검은화살-부패의사격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
-    "마구잡이난타_야수의회전베기": {
-      "id": "마구잡이난타_야수의회전베기",
-      "name": "마구잡이난타-야수의회전베기",
+    "bm_black_arrow_powder_cleave": {
+      "id": "bm_black_arrow_powder_cleave",
+      "name": "검은 화살의 후방 적중",
+      "description": "황폐의 화약이 주 대상 뒤쪽 적 둘 이상에게 피해를 주면 암영의 영역이 회전베기 준비에 연결된다. 검은 화살 시전만으로 조건을 충족한 것은 아니다. 앞쪽 적을 주 대상으로 삼고 후방 부채꼴의 실제 적중을 확인한다.",
       "type": "synergy",
-      "synergyType": "aoe-maintenance",
-      "participants": [],
+      "synergyType": "unknown",
+      "participants": [
+        "466930",
+        "467911",
+        "1235397",
+        "115939"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/마구잡이난타",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노"
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\마구잡이난타-야수의회전베기.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\검은화살-화약-광역준비.md",
+        "lastUpdate": "2026-09-13"
       }
     },
-    "사냥지배자의부름_광포한야수": {
-      "id": "사냥지배자의부름_광포한야수",
-      "name": "사냥지배자의부름-광포한야수",
+    "bm_wrath_bloodshed_bleeds": {
+      "id": "bm_wrath_bloodshed_bleeds",
+      "name": "격노가 만드는 출혈과 후속 발동",
+      "description": "현행 패시브 유혈은 격노에서 12초 출혈을 만들고, 피의 광란과 삐죽삐죽한 상처는 출혈의 속도·피해를 서로 다르게 보정한다. 출혈은 광포한 야수 발동 기회로도 이어지므로 입력과 자동 결과를 나눠 본다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "19574",
+        "1272099",
+        "407412",
+        "1265044",
+        "120679"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/유혈",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/피의광란",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/삐죽삐죽한상처",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/광포한야수"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\격노-유혈-출혈발동.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_wrath_apex_cleave": {
+      "id": "bm_wrath_apex_cleave",
+      "name": "새 정점 야수에게 광역 적용",
+      "description": "격노가 부른 정점 야수는 이전에 주 야수에게 켠 회전베기를 자동으로 받지 않는다. 격노 뒤 난타를 연결해 새 야수까지 광역에 참여시키는 것이 핵심이다. 집결 중 첫 난타를 썼다면 다음 재사용에 맞춰 진입을 준비한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "19574",
+        "1273043",
+        "1264359",
+        "115939"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/마구잡이난타",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/자연의동맹-첫특성"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\격노-정점야수-난타.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_wrath_howl_stampede": {
+      "id": "bm_wrath_howl_stampede",
+      "name": "격노 뒤 첫 살상 명령",
+      "description": "쇄도!를 선택하면 야수의 격노가 포효를 준비시키고 다음 살상 명령이 쇄도!를 실행한다. 쿨기 버튼을 눌렀다는 사실만으로 돌진 피해가 끝난 것이 아니다. 첫 명령의 위치와 대상 이동이 실제 적중을 바꾼다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "19574",
+        "471876",
+        "472741",
+        "34026"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
       ],
       "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\격노-포효-쇄도.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_barbed_tier_cobra": {
+      "id": "bm_barbed_tier_cobra",
+      "name": "발구르기로 쌓는 세트 소비",
+      "description": "시즌 2 2세트의 추가 발구르기와 4세트의 코브라 송곳니가 날카로운 사격을 코브라 소비로 연결한다. 단일에서는 현재 현행 우선순위의 최대 4중첩을 기준으로 하며 자동 코브라가 먼저 소비할 수도 있다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "217200",
+        "199530",
+        "1299389",
+        "193455"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Buffs/코브라송곳니"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/발구르기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\날카로운사격-세트-코브라송곳니.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_multishot_beast_cleave": {
+      "id": "bm_multishot_beast_cleave",
+      "name": "난타로 여는 광역 상태",
+      "description": "마구잡이 난타는 직접 범위 피해와 야수의 회전베기 적용을 함께 담당한다. 현재 회전베기는 10초 동안 70%로 주변에 피해를 준다. 난타 재사용이 준비돼도 집중이나 야수 접촉이 부족하면 실제 유지가 끊길 수 있다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1264359",
+        "115939"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/마구잡이난타",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\마구잡이난타-야수의회전베기.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_huntmaster_dire_beast": {
+      "id": "bm_huntmaster_dire_beast",
+      "name": "광포한 야수에서 하티·펜리르로",
+      "description": "출혈과 광포한 명령의 소환 기회가 광포한 야수 발생으로 이어지고, 사냥지배자의 부름은 여덟 번의 광포한 야수 소환 뒤 하티 또는 펜리르를 부른다. 광포한 회전베기는 이 추가 야수의 8초 광역을 따로 제공한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "120679",
+        "378743",
+        "459730",
+        "1217524"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/광포한야수",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/광포한명령",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/사냥지배자의부름",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/광포한회전베기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\사냥지배자의부름-광포한야수.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
-    "살상의회전베기_야수의회전베기": {
-      "id": "살상의회전베기_야수의회전베기",
-      "name": "살상의회전베기-야수의회전베기",
+    "bm_kill_cleave": {
+      "id": "bm_kill_cleave",
+      "name": "살상 명령의 별도 광역 복제",
+      "description": "살상의 회전베기를 선택하면 회전베기가 활성화된 동안 살상 명령 피해의 20%를 주변에 전달한다. 일반 야수의 회전베기 70%를 살상 명령에도 적용해서는 안 된다. 두 효과는 조건을 공유하지만 계수는 다르다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "378207",
+        "115939",
+        "34026"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/마구잡이난타",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
       ],
@@ -5486,20 +5778,26 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\살상의회전베기-야수의회전베기.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
-    "살상코브라_야수의격노": {
-      "id": "살상코브라_야수의격노",
-      "name": "살상코브라-야수의격노",
+    "bm_killer_cobra_wrath": {
+      "id": "bm_killer_cobra_wrath",
+      "name": "격노 중 코브라의 초기화",
+      "description": "살상 코브라를 선택한 경우 격노 중 코브라 사격이 살상 명령을 완전히 초기화한다. 평상시 코브라 사격의 1초 감소와 다르며, 해당 특성이 없는 빌드에는 같은 교대 규칙을 강제하지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "19574",
+        "199532",
+        "193455",
+        "34026"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격",
@@ -5507,61 +5805,136 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/무리전술",
         "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/살상코브라"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\살상코브라-야수의격노.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
       }
     },
-    "야수의격노_날카로운사격": {
-      "id": "야수의격노_날카로운사격",
-      "name": "야수의격노-날카로운사격",
-      "type": "synergy",
-      "synergyType": "cooldown-loop",
-      "participants": [],
-      "class": "Hunter",
-      "spec": "BeastMastery",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\야수의격노-날카로운사격.md",
-        "lastUpdate": ""
-      }
-    },
-    "전쟁명령_살상명령": {
-      "id": "전쟁명령_살상명령",
-      "name": "전쟁명령-살상명령",
+    "bm_bestial_wrath_barbed_shot": {
+      "id": "bm_bestial_wrath_barbed_shot",
+      "name": "격노 전 충전 정리",
+      "description": "피의 향기는 야수의 격노에서 날카로운 사격 충전 하나를 돌려준다. 두 충전이 가득 차면 받을 공간이 없으므로 격노 직전 한 번 소비할 이유가 생긴다. 날카로운 사격이 격노 쿨다운을 줄인다는 과거 규칙과 다르다.",
       "type": "synergy",
       "synergyType": "unknown",
-      "participants": [],
+      "participants": [
+        "19574",
+        "193532",
+        "217200"
+      ],
       "class": "Hunter",
       "spec": "BeastMastery",
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령",
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노"
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/전쟁명령"
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/피의향기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\야수의격노-날카로운사격.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_natures_ally_next_kill": {
+      "id": "bm_natures_ally_next_kill",
+      "name": "준비 사격에서 강화 살상 명령으로",
+      "description": "자연의 동맹 마지막 특성은 날카로운 사격·코브라 사격·검은 화살 뒤 다음 살상 명령을 30% 강화한다. 특성 1273126과 실제 버프 1276720을 구분한다. 포효 실행이나 다대상 특성 예외까지 무조건 사격과 교대시키지는 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1273126",
+        "1276720",
+        "217200",
+        "193455",
+        "466930",
+        "34026"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/자연의동맹",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Buffs/자연의동맹"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\자연의동맹-다음살상명령.md",
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_war_orders_kill_command": {
+      "id": "bm_war_orders_kill_command",
+      "name": "날카로운 사격의 두 재사용 감소",
+      "description": "전쟁 명령은 날카로운 사격을 쓸 때 살상 명령의 남은 시간을 3초 줄인다. 조련술의 거장은 출혈이 실제 피해를 줄 때마다 0.5초를 줄인다. 시전 순간의 감소와 이후 피해에 따른 감소를 별도로 본다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "217200",
+        "393933",
+        "424558",
+        "34026"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/전쟁명령",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/조련술의거장"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\전쟁명령-살상명령.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-13"
+      }
+    },
+    "bm_cobra_fang_cleave": {
+      "id": "bm_cobra_fang_cleave",
+      "name": "광역 상태에 따라 달라지는 코브라",
+      "description": "코브라 송곳니는 비광역 상태에서 중첩당 주 대상 피해 20%를 높이고, 회전베기가 활성화되면 대신 중첩당 30% 효율의 광역 복제로 바뀐다. 두 보너스를 합산하지 않으며 코브라 회전베기는 자동 피해로 분류한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "193455",
+        "1299389",
+        "115939",
+        "1299409"
+      ],
+      "class": "Hunter",
+      "spec": "BeastMastery",
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의회전베기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Buffs/코브라송곳니",
+        "08-직업별-Knowledge-Base/05-사냥꾼/야수/Buffs/코브라회전베기"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Synergies\\코브라송곳니-광역소비.md",
+        "lastUpdate": "2026-09-13"
       }
     },
     "mage_common_frostfire_dual_school": {
@@ -5605,6 +5978,10 @@
       ],
       "class": "Mage",
       "spec": "공용",
+      "specs": [
+        "Fire",
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -5660,6 +6037,10 @@
       ],
       "class": "Mage",
       "spec": "공용",
+      "specs": [
+        "Arcane",
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -5716,6 +6097,10 @@
       ],
       "class": "Mage",
       "spec": "공용",
+      "specs": [
+        "Arcane",
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -5760,6 +6145,11 @@
       ],
       "class": "Mage",
       "spec": "공용",
+      "specs": [
+        "Arcane",
+        "Fire",
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -5800,6 +6190,11 @@
       ],
       "class": "Mage",
       "spec": "공용",
+      "specs": [
+        "Arcane",
+        "Fire",
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -6888,6 +7283,11 @@
       ],
       "class": "Monk",
       "spec": "공용",
+      "specs": [
+        "Brewmaster",
+        "Mistweaver",
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -6940,6 +7340,10 @@
       ],
       "class": "Monk",
       "spec": "공용",
+      "specs": [
+        "Mistweaver",
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -6979,6 +7383,10 @@
       ],
       "class": "Monk",
       "spec": "공용",
+      "specs": [
+        "Brewmaster",
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7021,6 +7429,10 @@
       ],
       "class": "Monk",
       "spec": "공용",
+      "specs": [
+        "Brewmaster",
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7103,6 +7515,9 @@
       ],
       "class": "Monk",
       "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7172,6 +7587,9 @@
       ],
       "class": "Monk",
       "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7333,6 +7751,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -7372,6 +7793,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7424,6 +7848,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7472,6 +7899,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -7518,6 +7948,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7557,6 +7990,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -7600,6 +8036,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7653,6 +8092,9 @@
       ],
       "class": "Monk",
       "spec": "운무",
+      "specs": [
+        "Mistweaver"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7696,6 +8138,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7730,6 +8175,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7764,6 +8212,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7795,6 +8246,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7826,6 +8280,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7860,6 +8317,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7892,6 +8352,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7926,6 +8389,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7958,6 +8424,9 @@
       ],
       "class": "Monk",
       "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -7996,6 +8465,11 @@
       ],
       "class": "Paladin",
       "spec": "공용",
+      "specs": [
+        "Holy",
+        "Protection",
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8048,6 +8522,10 @@
       ],
       "class": "Paladin",
       "spec": "공용",
+      "specs": [
+        "Holy",
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8090,6 +8568,10 @@
       ],
       "class": "Paladin",
       "spec": "공용",
+      "specs": [
+        "Holy",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8125,6 +8607,10 @@
       ],
       "class": "Paladin",
       "spec": "공용",
+      "specs": [
+        "Protection",
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8163,6 +8649,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8211,6 +8700,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8254,6 +8746,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8306,6 +8801,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8356,6 +8854,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8407,6 +8908,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8459,6 +8963,9 @@
       ],
       "class": "Paladin",
       "spec": "보호",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8688,6 +9195,9 @@
       "participants": [],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8713,6 +9223,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8748,6 +9261,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8778,6 +9294,9 @@
       "participants": [],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8807,6 +9326,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8841,6 +9363,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8872,6 +9397,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8910,6 +9438,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8950,6 +9481,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -8989,6 +9523,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9030,6 +9567,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9070,6 +9610,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9112,6 +9655,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9156,6 +9702,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9198,6 +9747,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9228,6 +9780,9 @@
       "participants": [],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9255,6 +9810,9 @@
       ],
       "class": "Paladin",
       "spec": "징벌",
+      "specs": [
+        "Retribution"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9315,6 +9873,10 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Holy",
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9375,6 +9937,10 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9416,6 +9982,11 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9461,6 +10032,11 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9509,6 +10085,11 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9569,6 +10150,10 @@
       ],
       "class": "Priest",
       "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9608,6 +10193,9 @@
       ],
       "class": "Priest",
       "spec": "수양",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9655,6 +10243,9 @@
       ],
       "class": "Priest",
       "spec": "수양",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9736,6 +10327,9 @@
       ],
       "class": "Priest",
       "spec": "수양",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9826,6 +10420,9 @@
       ],
       "class": "Priest",
       "spec": "수양",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9912,6 +10509,9 @@
       ],
       "class": "Priest",
       "spec": "수양",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -9988,6 +10588,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10033,6 +10636,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10074,6 +10680,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10107,6 +10716,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10139,6 +10751,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10164,6 +10779,9 @@
       "participants": [],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10193,6 +10811,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10223,6 +10844,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10261,6 +10885,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10295,6 +10922,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10333,6 +10963,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10371,6 +11004,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10435,6 +11071,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10473,6 +11112,9 @@
       ],
       "class": "Priest",
       "spec": "신성",
+      "specs": [
+        "Holy"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10515,6 +11157,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10558,6 +11203,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10591,6 +11239,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10623,6 +11274,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10657,6 +11311,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10698,6 +11355,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10736,6 +11396,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10777,6 +11440,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10809,6 +11475,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -10836,6 +11505,9 @@
       ],
       "class": "Priest",
       "spec": "암흑",
+      "specs": [
+        "Shadow"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11196,6 +11868,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 78,
       "patch": "12.0.5",
@@ -11237,6 +11912,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 92,
       "patch": "12.0.5",
@@ -11279,6 +11957,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 82,
       "patch": "12.0.5",
@@ -11319,6 +12000,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 96,
       "patch": "12.0.5",
@@ -11356,6 +12040,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 88,
       "patch": "12.0.5",
@@ -11399,6 +12086,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 94,
       "patch": "12.0.5",
@@ -11436,6 +12126,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 74,
       "patch": "12.0.5",
@@ -11469,6 +12162,9 @@
       ],
       "class": "Rogue",
       "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
       "heroTalent": null,
       "importance": 90,
       "patch": "12.0.5",
@@ -11513,6 +12209,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11563,6 +12262,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11607,6 +12309,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11651,6 +12356,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11700,6 +12408,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11749,6 +12460,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11795,6 +12509,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11844,6 +12561,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11891,6 +12611,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11941,6 +12664,9 @@
       ],
       "class": "Rogue",
       "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -11986,6 +12712,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 76,
       "patch": "12.0.5",
@@ -12022,6 +12751,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 84,
       "patch": "12.0.5",
@@ -12060,6 +12792,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 94,
       "patch": "12.0.5",
@@ -12093,6 +12828,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 96,
       "patch": "12.0.5",
@@ -12130,6 +12868,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 98,
       "patch": "12.0.5",
@@ -12165,6 +12906,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 100,
       "patch": "12.0.5",
@@ -12201,6 +12945,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 88,
       "patch": "12.0.5",
@@ -12235,6 +12982,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 72,
       "patch": "12.0.5",
@@ -12267,6 +13017,9 @@
       ],
       "class": "Rogue",
       "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 86,
       "patch": "12.0.5",
@@ -12315,6 +13068,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12369,6 +13125,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12420,6 +13179,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12480,6 +13242,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12545,6 +13310,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12594,6 +13362,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12660,6 +13431,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12729,6 +13503,9 @@
       ],
       "class": "Shaman",
       "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12780,6 +13557,10 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12824,6 +13605,10 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12863,6 +13648,10 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12902,6 +13691,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12950,6 +13744,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -12997,6 +13796,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13042,6 +13846,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13090,6 +13899,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13137,6 +13951,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13180,6 +13999,11 @@
       ],
       "class": "Shaman",
       "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement",
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13223,6 +14047,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13273,6 +14100,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13321,6 +14151,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13381,6 +14214,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13429,6 +14265,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13479,6 +14318,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13528,6 +14370,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13576,6 +14421,9 @@
       ],
       "class": "Shaman",
       "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13618,6 +14466,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -13665,6 +14516,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13729,6 +14583,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13784,6 +14641,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13843,6 +14703,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -13888,6 +14751,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -13923,6 +14789,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.1",
@@ -13966,6 +14835,9 @@
       ],
       "class": "Shaman",
       "spec": "정기",
+      "specs": [
+        "Elemental"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15225,6 +16097,10 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15278,6 +16154,10 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15330,6 +16210,10 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15370,6 +16254,11 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15420,6 +16309,11 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15467,6 +16361,11 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15518,6 +16417,11 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15575,6 +16479,11 @@
       ],
       "class": "Warrior",
       "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15616,6 +16525,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15651,6 +16563,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15694,6 +16609,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15731,6 +16649,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15769,6 +16690,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15809,6 +16733,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15848,6 +16775,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15875,6 +16805,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15918,6 +16851,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15959,6 +16895,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -15999,6 +16938,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16031,6 +16973,9 @@
       ],
       "class": "Warrior",
       "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16431,6 +17376,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16472,6 +17420,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16511,6 +17462,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16541,6 +17495,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16577,6 +17534,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16615,6 +17575,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16655,6 +17618,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",
@@ -16693,6 +17659,9 @@
       ],
       "class": "Warrior",
       "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
       "heroTalent": null,
       "importance": 3,
       "patch": "12.0.5",

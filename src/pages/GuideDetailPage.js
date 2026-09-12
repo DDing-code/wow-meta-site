@@ -740,6 +740,8 @@ function getSynergySkills(synergy, scopedSkills) {
     .map(id => scopedSkills.find(skill => String(skill.id) === String(id)))
     .filter(Boolean);
 
+  if (synergy.participants?.length) return uniqueBy(byId, skill => String(skill.id));
+
   const byLink = (synergy.linkedSkills || [])
     .map(link => {
       const key = normalizeSkillLookupText(link);
@@ -1683,18 +1685,6 @@ const SPECIALIST_CHARTS = {
       { phase: '곰 상태 보조 회복', skillId: '8936', label: '발동 재생', note: '세나리우스의 꿈 발동이 있을 때 직접 대상을 골라 즉시·무료 치유합니다. 꿈의 안내자의 자동 치유와 구분합니다.', action: '발동·대상 확인' },
     ],
   },
-  'hunter-beastmastery': {
-    id: 'uptime',
-    title: '야수의 격노와 광역 준비',
-    sectionHeading: '야수의 격노 유지 흐름',
-    sectionIntro: '야수 사냥꾼은 야수의 격노 구간을 자주 열고, 살상 명령, 날카로운 사격, 야수의 회전베기 조건을 같은 시간에 맞춥니다.',
-    caption: '야수의 격노, 살상 명령, 날카로운 사격, 야생의 부름, 야수의 회전베기, 마구 쏘기와 영웅 특성 보상을 확인합니다.',
-    definition: [
-      ['의미', '야수의 격노는 중심 피해 구간이고, 날카로운 사격과 살상 명령은 그 구간을 자주 여는 입력입니다.'],
-      ['읽는 법', '날카로운 사격 충전을 낭비하지 않고, 광역에서는 야수의 회전베기가 켜진 상태에서 야수의 격노가 들어가는지 봅니다.'],
-      ['체크 포인트', '야수의 격노 지연, 날카로운 사격 2충전 방치, 살상 명령 지연, 광역 회전베기 공백, 영웅 특성 보상 누락을 봅니다.'],
-    ],
-  },
   'hunter-marksmanship': {
     id: 'uptime',
     title: '조준 사격과 정밀 사격',
@@ -1795,7 +1785,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4894,58 +4884,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'hunter-beastmastery') {
-    return [
-      {
-        label: '우선 대상',
-        skill: findSkillByNames(data, ['사냥꾼의 징표']),
-        note: '오래 사는 보스나 위험 몹에 먼저 유지합니다.',
-        segments: [[2, 92]],
-      },
-      {
-        label: '충전 정리',
-        skill: findSkillByNames(data, ['날카로운 사격']),
-        note: '2충전 방치를 막고 야수의 격노 직전 충전을 비웁니다.',
-        segments: [[8, 14], [31, 12], [55, 14], [82, 10]],
-      },
-      {
-        label: '중심 구간',
-        skill: findSkillByNames(data, ['야수의 격노']),
-        note: '구간 안 살상 명령, 세트 효과, 영웅 특성 발동 횟수를 봅니다.',
-        segments: [[18, 18], [60, 18]],
-      },
-      {
-        label: '핵심 명령',
-        skill: findSkillByNames(data, ['살상 명령']),
-        note: '가능하면 자연의 동맹을 받은 상태로 반복합니다.',
-        segments: [[22, 9], [38, 9], [63, 9], [79, 9]],
-      },
-      {
-        label: '강화 조건',
-        skill: findSkillByNames(data, ['자연의 동맹']),
-        note: '살상 명령 사이에 비살상 명령을 끼워 넣는 기준입니다.',
-        segments: [[14, 16], [34, 14], [58, 16], [77, 12]],
-      },
-      {
-        label: '광역 진입',
-        skill: findSkillByNames(data, ['마구잡이 난타']),
-        note: '다중 대상이면 야수의 회전베기를 켜는 출발점입니다.',
-        segments: [[12, 10], [52, 10], [84, 8]],
-      },
-      {
-        label: '광역 유지',
-        skill: findSkillByNames(data, ['야수의 회전베기']),
-        note: '야수의 격노가 이 흐름 안에 들어가는지 확인합니다.',
-        segments: [[12, 30], [52, 30]],
-      },
-      {
-        label: '어둠 분기',
-        skill: findSkillByNames(data, ['부패의 사격', '검은 화살']),
-        note: '어둠 순찰자에서는 야수의 격노 초반 검은 화살과 말미 울부짖는 화살을 봅니다.',
-        segments: [[18, 10], [68, 10]],
-      },
-    ];
-  }
 
   if (guide.id === 'hunter-marksmanship') {
     return [

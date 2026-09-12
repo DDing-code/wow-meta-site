@@ -18,6 +18,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['druid-guardian', '12.1'],
   ['druid-feral', '12.1'],
   ['evoker-augmentation', '12.1'],
+  ['hunter-beastmastery', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1028,6 +1029,38 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const beastMastery = manuscripts['hunter-beastmastery'];
+  const beastMasterySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '야수', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(beastMasterySource)) {
+    assert(JSON.stringify(JSON.parse(read(beastMasterySource))) === JSON.stringify(beastMastery), 'Beast Mastery must match its canonical 12.1 manuscript');
+  }
+  const beastMasteryNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]야수[\\/]/.test(skill.source?.kbPath || ''));
+  assert(beastMasteryNotes.length === 42 && beastMasteryNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25 && !skill.description.startsWith('#')), 'All 42 Beast Mastery records need reviewed effect descriptions');
+  assert(!beastMastery.extraSkills?.length && !kbSkills['321530'], 'Beast Mastery must use current canonical spells, not old Bloodshed or extraSkills');
+  assert(kbSkills['1272099']?.type === 'spec-talent' && kbSkills['120679']?.type === 'spec-talent', 'Bloodshed and Dire Beast must remain passive');
+  assert(kbSkills['19574']?.cooldown.includes('90초') && kbSkills['231548']?.description.includes('60초'), 'Bestial Wrath base cooldown and talent reduction must remain distinct');
+  assert(kbSkills['115939']?.description.includes('10초') && kbSkills['115939']?.description.includes('70%') && kbSkills['378207']?.description.includes('20%'), 'Beast Cleave and Kill Cleave must not share one coefficient');
+  assert(kbSkills['393933']?.description.includes('3초') && kbSkills['424558']?.description.includes('0.5초'), 'War Orders and Master Handler must retain separate cooldown reductions');
+  assert(kbSkills['1276720']?.type === 'buff' && ['1273043', '1273065', '1273126'].every(id => kbSkills[id]?.type === 'spec-talent'), 'All three apex talents and their actual buff must remain distinct');
+  assert(kbSkills['471876']?.type === 'hero-talent' && kbSkills['471878']?.type === 'buff', 'Howl talent and effect IDs must remain distinct');
+  assert(kbSkills['1299389']?.type === 'buff' && kbSkills['1296632']?.description.includes('20%') && kbSkills['1296632']?.description.includes('30%'), 'S2 Cobra Fang must retain conditional ST and AoE values');
+  assert(kbSkills['53351']?.specs.join(',') === 'Marksmanship', 'Kill Shot must not leak into Beast Mastery');
+  for (const branch of beastMastery.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 6 && branch.aoe.priority.length >= 8, 'Each Beast Mastery hero needs separately authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Beast Mastery ST and AoE must retain distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Beast Mastery flows must contain actual casts and complete conditions');
+      }
+    }
+    const wrath = branch.aoe.steps.findIndex(row => row.skillId === '19574');
+    assert(branch.aoe.steps[wrath + 1]?.skillId === '1264359', 'Apex AoE examples must apply Wild Thrash to the newly summoned pet');
+  }
+  assert(!JSON.stringify(beastMastery.heroBranches[0]).includes('"skillId":"466930"') && beastMastery.heroBranches[1].singleTarget.priority.some(row => row.skillId === '392060'), 'Pack Leader must not borrow Dark Ranger casts');
+  const scopedSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies);
+  assert(scopedSynergies.find(row => row.id === 'hunter_hero_sentinel_moonstorm_lunar')?.specs.join(',') === 'Marksmanship,Survival', 'Synergy generation must preserve specialization scopes');
+  assert(scopedSynergies.find(row => row.id === 'hunter_hero_dark_ranger_black_arrow_shadow')?.specs.join(',') === 'BeastMastery,Marksmanship', 'Dark Ranger synergy must retain its shared but limited scope');
 
   const augmentation = manuscripts['evoker-augmentation'];
   const augmentationSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '04-기원사', '증강', 'Meta', 'guide-12.1.json');
