@@ -426,8 +426,10 @@ function main() {
   assert(guideDetailSource.includes('const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);'), 'Both opener renderers must share the full authored step mapping');
   const flowPreview = guideDetailSource.slice(guideDetailSource.indexOf('function OpenerFlowPreview('), guideDetailSource.indexOf('function NarrativeGuideSection('));
   const flowStyles = guideDetailSource.slice(guideDetailSource.indexOf('const OpenerFlowList ='), guideDetailSource.indexOf('const TipList ='));
-  assert(flowPreview.includes('<SkillIconLink skill={step.skill} size={28} />'), 'Flow icons must retain their compact size');
-  assert(flowStyles.includes('repeat(auto-fit, minmax(min(100%, 180px), 1fr))') && !/grid-auto-flow: column|overflow-x: auto|min-height: 206px/.test(flowStyles), 'Flow steps must wrap within the available width without a horizontal rail');
+  assert(flowPreview.includes('<SkillIconLink skill={step.skill} size={24} />'), 'Flow icons must retain their compact size and minimum pointer target');
+  assert(flowStyles.includes('repeat(auto-fit, minmax(min(100%, 160px), 1fr))') && !/grid-auto-flow: column|overflow-x: auto|min-height: 206px/.test(flowStyles), 'Flow steps must wrap within the available width without a horizontal rail');
+  assert(flowStyles.includes('16px 24px minmax(0, 1fr) 13px') && flowStyles.includes('padding: 5px 0;'), 'Compact flow cells must reserve text space without large icon slots or vertical padding');
+  assert(flowStyles.includes('@container (max-width: 349px)'), 'Flow arrows should point down only below the two-column threshold (2 * 160 + 10 gap + 20 padding)');
   assert(flowPreview.includes('<OpenerFlowDetails') && flowStyles.includes('styled.details'), 'Long flow explanations must use an accessible native disclosure');
   assert(flowPreview.includes('renderGuideText(step.note, inlineTerms)') && flowPreview.includes('displayGuideText(step.trigger)'), 'Compact flows must retain every explanation and keep use conditions visible');
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');

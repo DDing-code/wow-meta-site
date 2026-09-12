@@ -2043,7 +2043,7 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
         {flowItems.map((step, index) => (
           <li key={step.key}>
             <OpenerStepNumber>{String(index + 1).padStart(2, '0')}</OpenerStepNumber>
-            <SkillIconLink skill={step.skill} size={28} />
+            <SkillIconLink skill={step.skill} size={24} />
             <OpenerStepBody>
               <strong>{displayGuideText(step.label)}</strong>
               {!!step.trigger && <span>{displayGuideText(step.trigger)}</span>}
@@ -6773,28 +6773,27 @@ const OpenerFlowViewport = styled.div`
 
 const OpenerFlowList = styled.ol`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
-  gap: 4px 14px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: 4px 10px;
   min-width: 0;
   margin: 0;
-  padding: 12px 14px;
+  padding: 8px 10px;
   list-style: none;
 
   li {
     display: grid;
-    grid-template-columns: 18px 28px minmax(0, 1fr) 13px;
+    grid-template-columns: 16px 24px minmax(0, 1fr) 13px;
     align-items: center;
-    gap: 7px;
+    gap: 5px;
     min-width: 0;
-    padding: 9px 0;
-    border-bottom: 1px solid rgba(244, 239, 229, 0.07);
+    padding: 5px 0;
   }
 
   li > svg {
     color: ${props => props.$color || '#b8915b'};
   }
 
-  @container (max-width: 401px) {
+  @container (max-width: 349px) {
     li > svg {
       transform: rotate(90deg);
     }
@@ -6816,7 +6815,7 @@ const OpenerStepBody = styled.div`
 
   > span {
     display: block;
-    margin-top: 3px;
+    margin-top: 1px;
     color: #aab6be;
     font-size: 0.7rem;
     line-height: 1.4;
@@ -6832,7 +6831,7 @@ const OpenerStepNumber = styled.span`
 const OpenerFlowDetails = styled.details`
   min-width: 0;
   border-top: 1px solid rgba(244, 239, 229, 0.07);
-  padding: 10px 14px;
+  padding: 8px 10px;
   color: #cbd2d7;
   font-size: 0.8rem;
   line-height: 1.65;
