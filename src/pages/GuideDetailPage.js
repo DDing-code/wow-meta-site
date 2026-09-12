@@ -1685,18 +1685,6 @@ const SPECIALIST_CHARTS = {
       { phase: '곰 상태 보조 회복', skillId: '8936', label: '발동 재생', note: '세나리우스의 꿈 발동이 있을 때 직접 대상을 골라 즉시·무료 치유합니다. 꿈의 안내자의 자동 치유와 구분합니다.', action: '발동·대상 확인' },
     ],
   },
-  'hunter-marksmanship': {
-    id: 'uptime',
-    title: '조준 사격과 정밀 사격',
-    sectionHeading: '큰 시전과 발동 소비',
-    sectionIntro: '사격 사냥꾼은 조준 사격 충전, 속사, 정밀 사격 소비, 교묘한 사격 광역 조건이 같은 시간에 어떻게 겹치는지 봐야 합니다.',
-    caption: '조준 사격, 속사, 정밀 사격, 교묘한 사격, 정조준, 검은 화살, 달빛 회전 표창과 울부짖는 화살을 확인합니다.',
-    definition: [
-      ['의미', '조준 사격은 중심 시전이고, 정밀 사격은 다음 큰 시전을 더 강하게 만드는 발동입니다.'],
-      ['읽는 법', '조준 사격 충전이 넘치지 않게 쓰고, 속사 뒤 정밀 사격을 다음 조준 사격 전에 소비합니다. 광역은 교묘한 사격 조건을 먼저 봅니다.'],
-      ['체크 포인트', '조준 사격 2충전 방치, 정밀 사격 낭비, 속사 지연, 정조준 중 약한 시전, 광역 교묘한 사격 누락을 봅니다.'],
-    ],
-  },
   'hunter-survival': {
     id: 'resource',
     title: '창끝 생성과 소비',
@@ -1785,7 +1773,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4885,58 +4873,6 @@ function getUptimeRows(guide, data) {
   }
 
 
-  if (guide.id === 'hunter-marksmanship') {
-    return [
-      {
-        label: '우선 대상',
-        skill: findSkillByNames(data, ['사냥꾼의 징표']),
-        note: '오래 사는 대상에 먼저 유지해 조준 사격과 속사의 기준 대상을 고정합니다.',
-        segments: [[2, 92]],
-      },
-      {
-        label: '중심 충전',
-        skill: findSkillByNames(data, ['조준 사격']),
-        note: '2충전 방치를 막고 정조준 안에서는 가능한 많은 좋은 시전을 넣습니다.',
-        segments: [[6, 14], [28, 14], [52, 14], [76, 14]],
-      },
-      {
-        label: '속사 준비',
-        skill: findSkillByNames(data, ['속사']),
-        note: '조준하기와 총알 세례를 통해 다음 조준 사격 회복과 피해 타이밍을 만듭니다.',
-        segments: [[16, 10], [46, 10], [72, 10]],
-      },
-      {
-        label: '발동 소비',
-        skill: findSkillByNames(data, ['정밀 사격']),
-        note: '다음 조준 사격/속사 전에 신비한 사격 또는 일제 사격으로 발동을 소비합니다.',
-        segments: [[20, 8], [36, 8], [60, 8], [86, 8]],
-      },
-      {
-        label: '광역 조건',
-        skill: findSkillByNames(data, ['교묘한 사격', '일제 사격']),
-        note: '다중 대상에서는 조준 사격과 속사 전에 교묘한 사격 상태를 먼저 확인합니다.',
-        segments: [[10, 18], [50, 18], [80, 12]],
-      },
-      {
-        label: '정조준 구간',
-        skill: findSkillByNames(data, ['정조준']),
-        note: '우선순위를 바꾸는 버튼이 아니라 조준 사격과 속사를 몰아넣는 구간입니다.',
-        segments: [[38, 22], [82, 14]],
-      },
-      {
-        label: '보조 발동',
-        skill: findSkillByNames(data, ['폭발 사격', '실탄 장전']),
-        note: '파편 사격 선택 시 폭발 사격이 실탄 장전 조준 사격으로 이어지는지 봅니다.',
-        segments: [[24, 10], [64, 10]],
-      },
-      {
-        label: '영웅 분기',
-        skill: findSkillByNames(data, ['검은 화살', '달빛 회전 표창', '울부짖는 화살']),
-        note: '레이드 파수꾼은 표식/달빛 회전 표창, 쐐기 어둠 순찰자는 검은 화살/울부짖는 화살을 별도 선택지로 봅니다.',
-        segments: [[42, 12], [72, 14]],
-      },
-    ];
-  }
 
   if (guide.id === 'hunter-survival') {
     return [

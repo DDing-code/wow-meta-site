@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T22:18:19.330Z",
+    "generatedAt": "2026-09-12T23:17:17.930Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2706,
-    "rawTotalSkills": 2706,
+    "totalSkills": 2740,
+    "rawTotalSkills": 2740,
     "duplicateIds": [],
-    "totalSynergies": 475,
+    "totalSynergies": 483,
     "stats": {
-      "total": 2706,
+      "total": 2740,
       "byType": {
-        "buff": 33,
-        "hero-talent": 567,
-        "atomic-skill": 492,
+        "buff": 43,
+        "hero-talent": 573,
+        "atomic-skill": 488,
         "proc": 7,
         "skill": 167,
-        "talent": 1061,
-        "spec-talent": 264,
-        "passive": 16,
+        "talent": 1038,
+        "spec-talent": 304,
+        "passive": 21,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -33,7 +33,7 @@
         "DemonHunter": 148,
         "Druid": 214,
         "Evoker": 140,
-        "Hunter": 168,
+        "Hunter": 202,
         "Mage": 205,
         "Monk": 231,
         "Paladin": 209,
@@ -61,9 +61,9 @@
         "Evoker-보존": 28,
         "Evoker-증강": 42,
         "Evoker-황폐": 28,
-        "Hunter-공용": 55,
-        "Hunter-사격": 35,
-        "Hunter-생존": 36,
+        "Hunter-공용": 67,
+        "Hunter-사격": 58,
+        "Hunter-생존": 35,
         "Hunter-야수": 42,
         "Mage-공용": 63,
         "Mage-냉기": 48,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2626,
-        "withSynergies": 961,
+        "withWikilinks": 2663,
+        "withSynergies": 998,
         "avgLinkDensity": "0.034"
       }
     }
@@ -7949,43 +7949,42 @@
       "name": "조준 사격",
       "koreanName": "조준 사격",
       "englishName": "Aimed Shot",
-      "icon": "inv_spear_07",
-      "iconName": "inv_spear_07",
+      "icon": "8026692",
+      "iconName": "8026692",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 조준 사격 (Aimed Shot)",
+      "cooldown": "15초",
+      "castTime": "2.5초",
+      "resourceCost": "집중 35",
+      "range": "40야드",
+      "description": "집중 35를 소모하는 2.5초 시전 사격이다. 기본 2충전, 충전 시간은 15초다. 정밀 사격을 준비하고, 대상에게 남아 있는 척후병의 징표 또는 파수꾼의 표식을 소비한다. 실탄 장전이 있으면 다음 한 번을 즉시, 집중 소모 없이 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_spear_07.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/8026692.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_spear_07.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_spear_07.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_spear_07.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_spear_07.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/8026692.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/8026692.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/8026692.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/8026692.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/죽음의강타",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쇄도사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 6,
         "synergyCount": 5,
-        "linkDensity": 0.121,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -14089,14 +14088,14 @@
       "icon": "ability_hunter_steadyshot",
       "iconName": "ability_hunter_steadyshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 고정 사격 (Steady Shot)",
+      "cooldown": "별도 없음 (글쿨 적용)",
+      "castTime": "1.7초",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "기본 시전 시간은 1.7초이며 이동하면서 사용할 수 있다. 집중 20을 생성하고 사격 전문화에서는 조준 사격의 남은 재사용 대기시간을 2초 줄인다. 다른 주력기가 준비되지 않았거나 집중을 보충할 때 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14108,15 +14107,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_steadyshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/활기의파동"
+        ]
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Skills\\고정사격.md",
@@ -23974,14 +23978,14 @@
       "icon": "ability_impalingbolt",
       "iconName": "ability_impalingbolt",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 신비한 사격 (Arcane Shot)",
+      "cooldown": "별도 없음 (글쿨 적용)",
+      "castTime": "즉시",
+      "resourceCost": "집중 40",
+      "range": "40야드",
+      "description": "기본 집중 40을 소모하는 즉시 비전 공격이다. 정밀 사격이 있으면 기본 공격력 증가와 집중 소모 60% 감소를 받아 비용이 16이 된다. 주로 단일에서 강화 효과를 소비하고 다음 조준 사격과 징표 발생을 이어 준다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -23993,18 +23997,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_impalingbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/집중력",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/히드라의상"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.039,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -26643,9 +26647,9 @@
         "lastUpdate": ""
       }
     },
-    "194595": {
-      "id": "194595",
-      "type": "talent",
+    "194594": {
+      "id": "194594",
+      "type": "buff",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -26654,17 +26658,20 @@
       "name": "실탄 장전",
       "koreanName": "실탄 장전",
       "englishName": "Lock and Load",
+      "aliases": [
+        "실탄 장전 버프"
+      ],
       "icon": "ability_hunter_lockandload",
       "iconName": "ability_hunter_lockandload",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 실탄 장전 (Lock and Load)",
-      "category": "talent",
+      "description": "다음 조준 사격을 즉시, 집중 소모 없이 사용할 수 있는 상태다. 여러 발동 경로가 같은 버프를 준비할 수 있으므로 새 발동 전에 이미 남아 있는 사용 기회를 확인한다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -26677,16 +26684,75 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/전술재장전"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/추적과타격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.065,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.075,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\실탄장전.md",
+        "lastUpdate": ""
+      }
+    },
+    "194595": {
+      "id": "194595",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "실탄 장전",
+      "koreanName": "실탄 장전",
+      "englishName": "Lock and Load",
+      "icon": "ability_hunter_lockandload",
+      "iconName": "ability_hunter_lockandload",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "원거리 자동 공격이 10% 확률로 다음 조준 사격을 즉시 시전하며 집중을 소모하지 않게 만든다. 현재 발동 버프는 194594이며 윈드러너 화살통·전술 재장전·추적과 타격도 선택 조건에 따라 같은 효과를 부여한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_lockandload.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_lockandload.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_lockandload.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_lockandload.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_lockandload.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/윈드러너화살통",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/전술재장전"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/추적과타격"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.089,
         "hasWikilinks": true
       },
       "source": {
@@ -31538,6 +31604,59 @@
         "lastUpdate": ""
       }
     },
+    "204089": {
+      "id": "204089",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "명중",
+      "koreanName": "명중",
+      "englishName": "Bullseye",
+      "icon": "ability_hunter_focusedaim",
+      "iconName": "ability_hunter_focusedaim",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "생명력 20% 미만인 적에게 능력으로 피해를 입히면 6초 동안 치명타율이 1% 증가하며 최대 30중첩까지 쌓인다. 처치 직전 정조준 배정과 연결되지만, 중첩을 기다리다가 마지막 쿨기 사용 자체를 놓치면 안 된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_focusedaim.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_focusedaim.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.064,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\명중.md",
+        "lastUpdate": ""
+      }
+    },
     "204157": {
       "id": "204157",
       "type": "skill",
@@ -33526,14 +33645,14 @@
       "icon": "ability_hunter_explosiveshot",
       "iconName": "ability_hunter_explosiveshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 폭발 사격 (Explosive Shot)",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "집중 20",
+      "range": "40야드",
+      "description": "집중 20, 기본 재사용 대기시간 30초의 즉시 공격이다. 기본 3초 동안 1초마다 주 대상에 화염 피해를 주고 주변 8야드에 그 피해의 50%를 폭발시킨다. 5명을 초과하면 광역 피해가 감소한다. 유동성 제동장치 선택 시 3초 안에 두 번째 시전이 가능하다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33547,15 +33666,19 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/파편사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/유동성제동장치",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀폭파",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/전술재장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/연사"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.04,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -36276,14 +36399,14 @@
       "icon": "ability_hunter_efficiency",
       "iconName": "ability_hunter_efficiency",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 속사 (Rapid Fire)",
+      "cooldown": "16초",
+      "castTime": "정신 집중 2초",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "이동 가능한 기본 2초 정신 집중 공격이며 재사용 대기시간은 16초다. 기본 7발, 빠른 사격 선택 시 10발을 발사하고 집중을 생성한다. 쏟아내기를 선택하면 시작과 끝에 추가 사격이 자동으로 나가며 정밀 사격을 소비할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36295,20 +36418,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_efficiency.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/빠른사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준경은거들뿐",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기-첫째",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/총알세례"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 4,
-        "linkDensity": 0.1,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -36430,14 +36553,14 @@
       "icon": "ability_upgrademoonglaive",
       "iconName": "ability_upgrademoonglaive",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 일제 사격 (Multi-Shot)",
+      "cooldown": "별도 없음 (글쿨 적용)",
+      "castTime": "즉시",
+      "resourceCost": "집중 30",
+      "range": "40야드",
+      "description": "집중 30으로 주 대상 주변 10야드의 적을 공격한다. 정밀 사격 상태에서는 집중 소모가 60% 감소하여 기본 비용이 12가 된다. 교묘한 사격을 선택했다면 3명 이상에게 실제로 적중해야 다음 조준 사격 또는 속사의 광역 효과를 준비한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36449,17 +36572,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_upgrademoonglaive.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/히드라의상"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.06,
+        "synergyCount": 3,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -36469,7 +36593,7 @@
     },
     "257621": {
       "id": "257621",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -36481,14 +36605,14 @@
       "icon": "inv_trickshot",
       "iconName": "inv_trickshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 교묘한 사격 (Trick Shots)",
-      "category": "ability",
+      "description": "일제 사격이 3명 이상에게 적중하면 다음 조준 사격 또는 속사가 최대 5명의 추가 대상에게 기본 피해의 60%로 튕긴다. 직접 시전하는 스킬이 아니라 광역 연결을 열어 주는 선택 특성이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36501,21 +36625,80 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/경탄약",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/히드라의상"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.075,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Skills\\교묘한사격.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\교묘한사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "257622": {
+      "id": "257622",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "교묘한 사격",
+      "koreanName": "교묘한 사격",
+      "englishName": "Trick Shots",
+      "aliases": [
+        "교묘한 사격 버프"
+      ],
+      "icon": "inv_trickshot",
+      "iconName": "inv_trickshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "교묘한 사격으로 다음 조준 사격 또는 속사의 튕김 공격이 준비된 상태다. 일제 사격 3명 적중 조건과 연발 공격 활성 구간을 구분한다. 별도 시전 버튼이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_trickshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_trickshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_trickshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_trickshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_trickshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\교묘한사격.md",
         "lastUpdate": ""
       }
     },
@@ -36830,7 +37013,7 @@
     },
     "260240": {
       "id": "260240",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -36842,14 +37025,14 @@
       "icon": "ability_hunter_snipertraining",
       "iconName": "ability_hunter_snipertraining",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 정밀 사격 (Precise Shots)",
-      "category": "ability",
+      "description": "조준 사격이 다음 신비한 사격 또는 일제 사격의 피해를 기본 50% 늘리고 집중 소모를 60% 줄이는 효과를 준비한다. 마무리 사격도 피해 증가 효과를 받는다. 별도 시전 스킬이 아니며 실제 버프 ID는 260242다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36863,21 +37046,78 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/신비한사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 6,
-        "synergyCount": 4,
-        "linkDensity": 0.105,
+        "synergyCount": 5,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Skills\\정밀사격.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\정밀사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "260242": {
+      "id": "260242",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "정밀 사격",
+      "koreanName": "정밀 사격",
+      "englishName": "Precise Shots",
+      "aliases": [
+        "정밀 사격 버프"
+      ],
+      "icon": "ability_hunter_snipertraining",
+      "iconName": "ability_hunter_snipertraining",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "정밀 사격의 실제 활성 버프다. 강화된 신비한 사격·일제 사격·마무리 사격 계열이 소비한다. 조준 사격과 조준경은 거들 뿐이 이를 준비하며, 쏟아내기의 자동 사격도 소비할 수 있다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_snipertraining.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_snipertraining.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_snipertraining.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_snipertraining.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_snipertraining.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/집중력"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\정밀사격.md",
         "lastUpdate": ""
       }
     },
@@ -36895,14 +37135,14 @@
       "icon": "ability_hunter_rapidkilling",
       "iconName": "ability_hunter_rapidkilling",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 연발 공격 (Volley)",
+      "cooldown": "45초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "지정한 지역에 6초 동안 화살을 퍼붓는 즉시 공격으로, 기본 재사용 대기시간은 45초다. 활성화된 동안 교묘한 사격 효과를 제공한다. 연사를 선택했다면 적중한 적 중 최대 2명에게 폭발 사격도 자동으로 부여한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36915,19 +37155,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연타공격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/연사"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/연사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.087,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -37042,7 +37282,7 @@
     },
     "260309": {
       "id": "260309",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -37054,14 +37294,14 @@
       "icon": "ability_hunter_mastermarksman",
       "iconName": "ability_hunter_mastermarksman",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 사격의 명수 (Master Marksman)",
-      "category": "talent",
+      "description": "원거리 능력의 치명타가 적에게 6초에 걸쳐 해당 피해의 10%에 해당하는 추가 출혈을 남긴다. 자동 발생하는 지속 피해이며 직접 출혈 버튼을 누르는 것이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37073,20 +37313,74 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_mastermarksman.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
         ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.036,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\사격의명수.md",
+        "lastUpdate": ""
+      }
+    },
+    "260404": {
+      "id": "260404",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "사격 지휘",
+      "koreanName": "사격 지휘",
+      "englishName": "Calling the Shots",
+      "icon": "ability_hunter_assassinate",
+      "iconName": "ability_hunter_assassinate",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "정조준의 기본 재사용 대기시간을 30초 줄인다. 집중을 일정량 소비할 때마다 줄어드는 옛 효과가 아니며 또렷한 시야와 선택 관계다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_assassinate.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_assassinate.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_assassinate.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_assassinate.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_assassinate.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/또렷한시야"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\사격지휘.md",
         "lastUpdate": ""
       }
     },
@@ -37981,56 +38275,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\악마-화살.md",
-        "lastUpdate": ""
-      }
-    },
-    "264198": {
-      "id": "264198",
-      "type": "talent",
-      "class": "Hunter",
-      "spec": "사격",
-      "specs": [
-        "Marksmanship"
-      ],
-      "name": "리듬을 타고",
-      "koreanName": "리듬을 타고",
-      "englishName": "In The Rhythm",
-      "icon": "ability_hunter_efficiency",
-      "iconName": "ability_hunter_efficiency",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 리듬을 타고 (In The Rhythm)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_efficiency.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_efficiency.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_efficiency.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_efficiency.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_efficiency.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.029,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\리듬을타고.md",
         "lastUpdate": ""
       }
     },
@@ -40333,14 +40577,14 @@
       "icon": "ability_trueshot",
       "iconName": "ability_trueshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "2분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 정조준 (Trueshot)",
+      "description": "기본 2분마다 15초 동안 치명타율 10%, 치명타 피해 20%를 얻는다. 조준 사격의 재사용 회복 속도가 40%, 속사는 60% 빨라진다. 고장력 시위·깃털 분노·선택한 영웅 특성이 추가 효과를 붙인다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -40352,20 +40596,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_trueshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연타공격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/고장력시위",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/깃털분노",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/사격지휘",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/또렷한시야"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달빛회전표창",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/죽음의통곡"
+        ]
       },
       "quality": {
         "wikilinkCount": 6,
-        "synergyCount": 5,
-        "linkDensity": 0.146,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -41754,6 +42000,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\번뜩임연마.md",
+        "lastUpdate": ""
+      }
+    },
+    "321460": {
+      "id": "321460",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "명중 사격",
+      "koreanName": "명중 사격",
+      "englishName": "Deadeye",
+      "icon": "spell_hunter_focusingshot",
+      "iconName": "spell_hunter_focusingshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "마무리 사격의 충전 수를 2회로 늘리고 기본 재사용 대기시간을 2초 줄인다. 어둠 순찰자의 대체 검은 화살과도 연결되므로 현재 영웅 특성에 맞춰 소비할 공격을 확인한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_focusingshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_hunter_focusingshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_hunter_focusingshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_hunter_focusingshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_focusingshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\명중사격.md",
         "lastUpdate": ""
       }
     },
@@ -43331,6 +43629,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\불꽃의티끌.md",
+        "lastUpdate": ""
+      }
+    },
+    "343248": {
+      "id": "343248",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "죽음의 강타",
+      "koreanName": "죽음의 강타",
+      "englishName": "Deathblow",
+      "icon": "ability_hunter_runningshot",
+      "iconName": "ability_hunter_runningshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "조준 사격이 10% 확률로 죽음의 인도자를 준비하여 다음 조준 사격이 죽음의 강타를 부여하게 한다. 준비 효과와 실제 마무리 사격 사용 가능 효과를 구분해야 한다. 현재 사격 전문화 특성으로만 관리한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_runningshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_runningshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_runningshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_runningshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_runningshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/영혼흡수자"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\죽음의강타.md",
         "lastUpdate": ""
       }
     },
@@ -49812,7 +50162,7 @@
     },
     "378767": {
       "id": "378767",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -49824,14 +50174,14 @@
       "icon": "inv_engineering_snipingscope",
       "iconName": "inv_engineering_snipingscope",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 집중력 (Focused Aim)",
-      "category": "talent",
+      "description": "정밀 사격을 소비할 때 조준 사격의 재사용 대기시간을 1초 줄인다. 단순 집중 자원 소비량에 비례하는 효과가 아니며 12.1 이전의 2초 감소를 적용하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49844,16 +50194,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.097,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.089,
         "hasWikilinks": true
       },
       "source": {
@@ -49880,7 +50232,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "검은 화살·마무리 사격의 재사용과 생명력 제한을 바꾸는 발동 효과다. 야수 어둠 순찰자는 영혼 흡수자와 부패의 사격 등 현재 영웅 특성을 발동원으로 본다.",
+      "description": "마무리 사격 또는 검은 화살의 재사용을 초기화하고 대상 생명력 조건과 무관하게 다음 한 번을 사용할 수 있게 하는 발동 효과다. 사격의 죽음의 인도자는 이 효과를 다음 조준 사격으로 얻도록 예약하는 별도 단계다.",
       "category": "buff",
       "tags": [],
       "patch": "12.1",
@@ -49895,7 +50247,9 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_runningshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/영혼흡수자",
@@ -49904,9 +50258,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -50164,7 +50518,7 @@
     },
     "378913": {
       "id": "378913",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -50176,14 +50530,14 @@
       "icon": "ships_ability_armorpiercingammo",
       "iconName": "ships_ability_armorpiercingammo",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 경탄약 (Light Ammo)",
-      "category": "talent",
+      "description": "교묘한 사격의 추가 튕김 대상 수를 2명 늘린다. 히드라의 상을 선택했을 때는 해당 특성의 추가 대상 피해 증가량을 15% 높인다. 두 광역 특성을 모두 선택하게 만드는 효과는 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50195,20 +50549,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ships_ability_armorpiercingammo.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/히드라의상"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.118,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -64342,7 +64693,7 @@
     },
     "389019": {
       "id": "389019",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -64354,14 +64705,14 @@
       "icon": "ability_hunter_markedshot",
       "iconName": "ability_hunter_markedshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 총알 세례 (Bulletstorm)",
-      "category": "ability",
+      "description": "속사가 다음 조준 사격의 공격력을 20% 높인다. 12.1에서는 과거 일제 사격 누적 중심의 설명을 사용하지 않는다. 물량 공세를 선택하면 강화가 조준 사격 한 번에 추가로 적용된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64377,17 +64728,75 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/물량공세"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\총알세례.md",
+        "lastUpdate": ""
+      }
+    },
+    "389020": {
+      "id": "389020",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "총알 세례",
+      "koreanName": "총알 세례",
+      "englishName": "Bulletstorm",
+      "aliases": [
+        "총알 세례 버프"
+      ],
+      "icon": "ability_hunter_markedshot",
+      "iconName": "ability_hunter_markedshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "속사로 준비되는 조준 사격 공격력 20% 증가 버프다. 조준 사격이 강화 횟수를 소비하며 물량 공세 선택 시 적용 횟수가 추가된다. 특성 자체 ID 389019와 구분한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_markedshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_markedshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_markedshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_markedshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_markedshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/총알세례",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/물량공세"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.055,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Skills\\총알세례.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\총알세례.md",
         "lastUpdate": ""
       }
     },
@@ -67385,7 +67794,7 @@
     },
     "391559": {
       "id": "391559",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -67397,14 +67806,14 @@
       "icon": "ability_hunter_resistanceisfutile",
       "iconName": "ability_hunter_resistanceisfutile",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 쇄도 사격 (Surging Shots)",
-      "category": "talent",
+      "description": "속사 피해가 35% 증가하고 조준 사격이 15% 확률로 속사의 재사용 대기시간을 초기화한다. 화력 집중 선택 시 이 초기화가 다음 속사의 공격력 20% 증가도 준비한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67417,16 +67826,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/화력집중"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.065,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -70995,7 +71406,7 @@
     },
     "400456": {
       "id": "400456",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -71007,14 +71418,14 @@
       "icon": "spell_hunter_exoticmunitions_incendiary",
       "iconName": "spell_hunter_exoticmunitions_incendiary",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 연사 (Salvo)",
-      "category": "talent",
+      "description": "연발 공격이 적중한 대상 중 최대 2명에게 폭발 사격을 자동으로 적용한다. 이 특성은 별도 공격 버튼이 아니며 수동 폭발 사격 시전 횟수에 더해서 세면 안 된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71030,13 +71441,15 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.069,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -92680,6 +93093,110 @@
         "lastUpdate": ""
       }
     },
+    "450373": {
+      "id": "450373",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "배수의 진",
+      "koreanName": "배수의 진",
+      "englishName": "Don't Look Back",
+      "icon": "ability_racial_forceshield",
+      "iconName": "ability_racial_forceshield",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "파수꾼의 표식을 소비하면 최대 생명력의 10%에 해당하는 피해 흡수 보호막을 얻는다. 표식을 만드는 것만으로 보호막이 생기지는 않으므로 피해 직전의 소비 가능 대상도 확인한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_forceshield.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_racial_forceshield.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_racial_forceshield.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_forceshield.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_forceshield.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\배수의진.md",
+        "lastUpdate": ""
+      }
+    },
+    "450379": {
+      "id": "450379",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "활기의 파동",
+      "koreanName": "활기의 파동",
+      "englishName": "Invigorating Pulse",
+      "icon": "ability_mage_netherwindpresence",
+      "iconName": "ability_mage_netherwindpresence",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사격의 고정 사격 또는 생존의 살상 명령이 집중을 5 추가 생성하고 해당 스킬 피해가 20% 증가한다. 최대 집중도 25 늘어난다. 사격의 살상 명령 생성 효과로 설명하지 않는다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_netherwindpresence.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_netherwindpresence.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_netherwindpresence.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_netherwindpresence.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_netherwindpresence.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/고정사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/파수꾼"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\활기의파동.md",
+        "lastUpdate": ""
+      }
+    },
     "450391": {
       "id": "450391",
       "type": "hero-talent",
@@ -100549,7 +101066,7 @@
     },
     "459783": {
       "id": "459783",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -100561,14 +101078,14 @@
       "icon": "achievement_guildperk_reinforce_rank2",
       "iconName": "achievement_guildperk_reinforce_rank2",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 관통 사격 (Penetrating Shots)",
-      "category": "talent",
+      "description": "치명타율의 25%에 해당하는 치명타 피해 증가를 얻는다. 치명타 확률을 25% 추가하는 특성이 아니며, 치명타 피해 강화와 치명타율을 서로 바꾸어 계산하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100580,16 +101097,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_reinforce_rank2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+        ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기-중간",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/명중"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.037,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -100599,7 +101119,7 @@
     },
     "459794": {
       "id": "459794",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -100611,14 +101131,14 @@
       "icon": "ability_rogue_pistolshot",
       "iconName": "ability_rogue_pistolshot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 빠른 사격 (Quick Draw)",
-      "category": "talent",
+      "description": "속사가 3발을 추가로 발사한다. 조준 사격 사용 뒤에는 2초 동안 이동 속도가 50% 증가하며 빠르게 감소한다. 다음 정지 시전 위치로 이동하는 데 쓰되 속사를 불필요하게 끊지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100634,13 +101154,15 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기-첫째"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.061,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -100650,7 +101172,7 @@
     },
     "459802": {
       "id": "459802",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -100662,14 +101184,14 @@
       "icon": "inv_rabbit2_darkmoon",
       "iconName": "inv_rabbit2_darkmoon",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 작은 사냥감 (Small Game Hunter)",
-      "category": "talent",
+      "description": "폭발 사격 피해를 특성 1포인트당 8%, 연발 공격 피해를 12% 높인다. 12.1에서 2포인트 특성으로 바뀌었으므로 1포인트 툴팁 값을 완성된 빌드 전체 보너스로 적지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100691,7 +101213,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.071,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -102559,7 +103081,7 @@
     },
     "466867": {
       "id": "466867",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -102571,14 +103093,14 @@
       "icon": "inv_111_hunter_ability_eyesinthesky",
       "iconName": "inv_111_hunter_ability_eyesinthesky",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 비행 전문화 (Avian Specialization)",
-      "category": "talent",
+      "description": "척후병의 징표 피해 증가량을 20% 높이고 독수리에게 가져오기를 부여한다. 사격의 기본 징표는 정밀 사격으로 강화된 공격이 주 대상에게 적중할 때 발생할 수 있다. 끊어지지 않는 유대와 선택 관계다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102591,17 +103113,72 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/끊어지지않는유대"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\비행전문화.md",
+        "lastUpdate": ""
+      }
+    },
+    "466872": {
+      "id": "466872",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "척후병의 징표",
+      "koreanName": "척후병의 징표",
+      "englishName": "Spotter's Mark",
+      "icon": "inv_111_hunter_ability_eaglemark",
+      "iconName": "inv_111_hunter_ability_eaglemark",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "정밀 사격으로 강화된 공격의 적중으로 주 대상에게 생길 수 있는 표식이다. 기본적으로 다음 조준 사격이 해당 대상에게 20% 추가 피해를 주며, 비행 전문화 등 선택 특성이 이를 강화한다. 파수꾼 선택 시에는 대응하는 파수꾼의 표식을 사용한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_111_hunter_ability_eaglemark.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_111_hunter_ability_eaglemark.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_111_hunter_ability_eaglemark.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_111_hunter_ability_eaglemark.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_111_hunter_ability_eaglemark.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/비행전문화"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\척후병의징표.md",
         "lastUpdate": ""
       }
     },
@@ -103039,7 +103616,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "검은 화살 시전이 15% 확률로 죽음의 강타를 부여한다.",
+      "description": "야수에서는 검은 화살 시전이 15% 확률로 죽음의 강타를 부여한다. 사격에서는 검은 화살의 확률 발동이 죽음의 인도자를 준비하고, 다음 조준 사격이 죽음의 강타를 부여한다. 두 전문화의 즉시 초기화 시점을 같게 보지 않는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -103054,16 +103631,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_tailoring_craftingoptionalreagent_enhancedspellthread_color4.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -103494,7 +104073,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "야수에서는 살상 명령 20%, 날카로운 사격 50% 확률로 죽음의 강타를 얻는다. 사격에서는 조준 사격의 발동 확률 증가와 속사의 발동이 별도로 적용된다.",
+      "description": "야수에서는 살상 명령 20%, 날카로운 사격 50% 확률로 죽음의 강타를 얻는다. 사격에서는 조준 사격의 발동 확률이 10% 증가하고 속사가 100% 확률로 죽음의 강타를 부여한다. 사격의 조준 사격 예약 단계는 죽음의 인도자와 함께 확인한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -103510,18 +104089,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령",
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/날카로운사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/죽음의강타"
+        ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 5,
         "synergyCount": 2,
-        "linkDensity": 0.055,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -104020,7 +104600,7 @@
     },
     "470943": {
       "id": "470943",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -104032,14 +104612,14 @@
       "icon": "inv_111_hunter_ability_featheredfrenzy",
       "iconName": "inv_111_hunter_ability_featheredfrenzy",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 깃털 분노 (Feathered Frenzy)",
-      "category": "talent",
+      "description": "정조준 사용 시 현재 대상에게 척후병의 징표를 즉시 적용하고 지속시간 동안 징표를 부여할 확률이 100% 증가한다. 파수꾼을 선택하면 대응하는 파수꾼의 표식과 연결된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104055,12 +104635,14 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의부름"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -104070,7 +104652,7 @@
     },
     "470945": {
       "id": "470945",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -104082,14 +104664,14 @@
       "icon": "inv_111_hunter_ability_doubleknock",
       "iconName": "inv_111_hunter_ability_doubleknock",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 히드라의 상 (Aspect of the Hydra)",
-      "category": "talent",
+      "description": "조준 사격과 속사가 1명의 추가 대상에게 기본 피해의 35%를 준다. 교묘한 사격과 선택 관계인 2대상 갈래다. 12.1에는 신비한 사격이 이 효과로 복제되지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104101,15 +104683,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_111_hunter_ability_doubleknock.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/경탄약"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\히드라의상.md",
@@ -104164,9 +104752,113 @@
         "lastUpdate": "2026-09-08"
       }
     },
+    "471348": {
+      "id": "471348",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "목표 조준",
+      "koreanName": "목표 조준",
+      "englishName": "On Target",
+      "icon": "ability_hunter_blindingshot",
+      "iconName": "ability_hunter_blindingshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "가속을 2% 높이는 지속 특성이다. 흑요석 화살촉과 선택 관계이며 특정 버튼을 누른 뒤에만 켜는 공격 강화로 다루지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_blindingshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_blindingshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_blindingshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_blindingshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_blindingshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/흑요석화살촉"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.079,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\목표조준.md",
+        "lastUpdate": ""
+      }
+    },
+    "471350": {
+      "id": "471350",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "흑요석 화살촉",
+      "koreanName": "흑요석 화살촉",
+      "englishName": "Obsidian Arrowhead",
+      "icon": "ability_theblackarrow",
+      "iconName": "ability_theblackarrow",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "자동 사격의 공격력을 25%, 치명타율을 15% 높인다. 조준 사격이나 검은 화살에 직접 붙는 증가량이 아니다. 목표 조준과 선택 관계다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_theblackarrow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_theblackarrow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_theblackarrow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_theblackarrow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_theblackarrow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/목표조준"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\흑요석화살촉.md",
+        "lastUpdate": ""
+      }
+    },
     "471366": {
       "id": "471366",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -104178,14 +104870,14 @@
       "icon": "inv_archaeology_70_tauren_stonewoodbow",
       "iconName": "inv_archaeology_70_tauren_stonewoodbow",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 고장력 시위 (Tensile Bowstring)",
-      "category": "talent",
+      "description": "정조준 중 조준 사격의 시전 시간이 40%, 집중 소모량이 60% 감소한다. 이동 중 시전을 허용하는 효과는 아니므로 발동 없는 조준 사격을 완성할 정지 시간은 따로 필요하다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104201,12 +104893,14 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
         "linkDensity": 0.065,
         "hasWikilinks": true
       },
@@ -104215,28 +104909,81 @@
         "lastUpdate": ""
       }
     },
-    "471428": {
-      "id": "471428",
-      "type": "talent",
+    "471369": {
+      "id": "471369",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
         "Marksmanship"
       ],
-      "name": "소이 탄약",
-      "koreanName": "소이 탄약",
-      "englishName": "Incendiary Ammunition",
+      "name": "정밀 폭파",
+      "koreanName": "정밀 폭파",
+      "englishName": "Precision Detonation",
+      "icon": "ability_hunter_explosiveshot",
+      "iconName": "ability_hunter_explosiveshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "폭발 사격의 지속시간이 1초 증가한다. 한 번의 시전에서 주기 피해가 이어지는 시간을 늘리므로 시즌 2 세트의 지속시간 증가와 재사용 감소를 함께 확인한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_explosiveshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_explosiveshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_explosiveshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_explosiveshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_explosiveshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\정밀폭파.md",
+        "lastUpdate": ""
+      }
+    },
+    "471428": {
+      "id": "471428",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "물량 공세",
+      "koreanName": "물량 공세",
+      "englishName": "Accuracy By Volume",
       "icon": "inv12_ability_hunter_fierymunitions",
       "iconName": "inv12_ability_hunter_fierymunitions",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 소이 탄약 (Incendiary Ammunition)",
-      "category": "talent",
+      "description": "총알 세례가 조준 사격 한 번에 추가로 적용된다. 기본 다음 1회 강화에 1회가 더해지는 효과다. 현재 공식 명칭은 물량 공세이며, 같은 ID에 남아 있던 소이탄약 설명을 사용하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104249,19 +104996,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/총알세례"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\소이탄약.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\물량공세.md",
         "lastUpdate": ""
       }
     },
@@ -105107,109 +105856,60 @@
         "lastUpdate": ""
       }
     },
-    "473370": {
-      "id": "473370",
-      "type": "atomic-skill",
+    "473369": {
+      "id": "473369",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
         "Marksmanship"
       ],
-      "name": "연타 공격",
-      "koreanName": "연타 공격",
-      "englishName": "Double Tap",
-      "icon": "ability_hunter_crossfire",
-      "iconName": "ability_hunter_crossfire",
+      "name": "독수리의 정확도",
+      "koreanName": "독수리의 정확도",
+      "englishName": "Eagle's Accuracy",
+      "icon": "ability_hunter_silenthunter",
+      "iconName": "ability_hunter_silenthunter",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 연타 공격 (Double Tap)",
-      "category": "ability",
+      "description": "조준 사격 피해가 5%, 속사 피해가 10% 증가한다. 12.1에서는 1포인트 특성이며 이전 두 포인트 수치를 그대로 적용하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_crossfire.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_silenthunter.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_crossfire.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_crossfire.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_crossfire.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_crossfire.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_silenthunter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_silenthunter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_silenthunter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_silenthunter.jpg"
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Skills\\연타공격.md",
-        "lastUpdate": ""
-      }
-    },
-    "473379": {
-      "id": "473379",
-      "type": "talent",
-      "class": "Hunter",
-      "spec": "사격",
-      "specs": [
-        "Marksmanship"
-      ],
-      "name": "표적 색적",
-      "koreanName": "표적 색적",
-      "englishName": "Target Acquisition",
-      "icon": "ability_rogue_findweakness",
-      "iconName": "ability_rogue_findweakness",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 표적 색적 (Target Acquisition)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_findweakness.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_findweakness.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_findweakness.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_findweakness.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_findweakness.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.036,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\표적색적.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\독수리의정확도.md",
         "lastUpdate": ""
       }
     },
     "473385": {
       "id": "473385",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -105221,14 +105921,14 @@
       "icon": "inv_eng_crowsnestscope",
       "iconName": "inv_eng_crowsnestscope",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 조준경은 거들 뿐 (No Scope)",
-      "category": "talent",
+      "description": "속사가 정밀 사격을 부여한다. 쏟아내기를 함께 선택했다면 자동 사격의 소비와 생성 순서를 함께 봐야 한다. 속사를 썼다는 이유로 종료 후에도 정밀 사격이 반드시 남는 것은 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105241,16 +105941,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.087,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -105260,26 +105961,26 @@
     },
     "473520": {
       "id": "473520",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
         "Marksmanship"
       ],
-      "name": "파편 사격",
-      "koreanName": "파편 사격",
-      "englishName": "Shrapnel Shot",
+      "name": "유동성 제동장치",
+      "koreanName": "유동성 제동장치",
+      "englishName": "Unstable Trigger",
       "icon": "spell_sandexplosion",
       "iconName": "spell_sandexplosion",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 파편 사격 (Shrapnel Shot)",
-      "category": "talent",
+      "description": "폭발 사격을 시전한 뒤 3초 안에 두 번째 폭발 사격을 사용할 수 있게 한다. 같은 대상에 남아 있던 폭발 사격 피해는 새 효과에 합산된다. 현재 공식 명칭은 유동성 제동장치이며 직접 시전하는 공격이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105295,24 +105996,25 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/전술재장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.069,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\파편사격.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\유동성제동장치.md",
         "lastUpdate": ""
       }
     },
     "473523": {
       "id": "473523",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -105324,14 +106026,14 @@
       "icon": "inv_quiver_1h_hunter_c_01_green",
       "iconName": "inv_quiver_1h_hunter_c_01_green",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 윈드러너 화살통 (Windrunner Quiver)",
-      "category": "talent",
+      "description": "속사 공격력을 10% 높이고 속사가 30% 확률로 실탄 장전 효과를 부여하게 한다. 과거 조준 사격 중심의 다른 발동 효과로 해석하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105344,15 +106046,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/실탄장전"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.073,
         "hasWikilinks": true
       },
       "source": {
@@ -105461,6 +106166,161 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\공허광선.md",
         "lastUpdate": "2026-09-08"
+      }
+    },
+    "474440": {
+      "id": "474440",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "교활",
+      "koreanName": "교활",
+      "englishName": "Cunning",
+      "icon": "ability_eyeoftheowl",
+      "iconName": "ability_eyeoftheowl",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "척후 독수리가 교활 전문화를 얻어 주인의 부름과 이동 속도 8% 증가를 제공한다. 불굴의 생명력·피해 감소와 선택 관계이므로 기믹에 필요한 이동 해제 여부를 보고 고른다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_eyeoftheowl.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_eyeoftheowl.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_eyeoftheowl.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_eyeoftheowl.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_eyeoftheowl.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/불굴",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/비행전문화"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\교활.md",
+        "lastUpdate": ""
+      }
+    },
+    "474456": {
+      "id": "474456",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "불굴",
+      "koreanName": "불굴",
+      "englishName": "Tenacious",
+      "icon": "ability_druid_demoralizingroar",
+      "iconName": "ability_druid_demoralizingroar",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "척후 독수리가 끈기 전문화를 얻는다. 최대 생명력 5% 증가와 받는 피해 3% 감소를 제공한다. 교활과 선택 관계이며 일반 야수를 상시 소환해야 얻는 효과로 설명하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_demoralizingroar.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_demoralizingroar.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_demoralizingroar.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_demoralizingroar.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_demoralizingroar.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교활",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/비행전문화",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/끊어지지않는유대"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\불굴.md",
+        "lastUpdate": ""
+      }
+    },
+    "474738": {
+      "id": "474738",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "또렷한 시야",
+      "koreanName": "또렷한 시야",
+      "englishName": "Unerring Vision",
+      "icon": "spell_hunter_exoticmunitions_frozen",
+      "iconName": "spell_hunter_exoticmunitions_frozen",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "정조준이 추가로 치명타율 10%, 치명타 피해 20%를 부여한다. 사격 지휘의 30초 재사용 감소와 동시에 적용되는 기본 조합으로 설명하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_exoticmunitions_frozen.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_hunter_exoticmunitions_frozen.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_hunter_exoticmunitions_frozen.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_hunter_exoticmunitions_frozen.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_exoticmunitions_frozen.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/사격지휘"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\또렷한시야.md",
+        "lastUpdate": ""
       }
     },
     "474746": {
@@ -106272,6 +107132,57 @@
         "lastUpdate": "2026-09-08"
       }
     },
+    "1223323": {
+      "id": "1223323",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "끊어지지 않는 유대",
+      "koreanName": "끊어지지 않는 유대",
+      "englishName": "Unbreakable Bond",
+      "icon": "ability_hunter_separationanxiety",
+      "iconName": "ability_hunter_separationanxiety",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사격 전문화가 야수 부르기를 다시 사용할 수 있게 한다. 야외에서는 야수 피해가 15% 증가하고 받는 피해는 15% 감소한다. 비행 전문화와 선택 관계이며 야외 보너스를 공격대 상시 보너스로 계산하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_separationanxiety.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_separationanxiety.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_separationanxiety.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_separationanxiety.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_separationanxiety.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/비행전문화",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/불굴"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\끊어지지않는유대.md",
+        "lastUpdate": ""
+      }
+    },
     "1223798": {
       "id": "1223798",
       "type": "talent",
@@ -106785,7 +107696,7 @@
     },
     "1232955": {
       "id": "1232955",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -106797,14 +107708,14 @@
       "icon": "hunter_pvp_snipershot",
       "iconName": "hunter_pvp_snipershot",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 견줄 데 없는 정밀함 (Unmatched Precision)",
-      "category": "talent",
+      "description": "정밀 사격의 공격력 증가량을 특성 1포인트당 10% 추가로 높인다. 현재 트리는 2포인트까지 투자할 수 있다. 정밀 사격을 소비하는 공격이 강화되는 것이며 조준 사격 자체에 붙는 피해 증가와 구분한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106817,15 +107728,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/신비한사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -113418,7 +114332,7 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/달빛회전표창"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -115057,14 +115971,14 @@
       "icon": "inv_ability_sentinelhunter_lunarstorm",
       "iconName": "inv_ability_sentinelhunter_lunarstorm",
       "school": "",
-      "cooldown": "정밀 사격/창끝 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 파수꾼 (Sentinel)",
+      "range": "",
+      "description": "사격의 척후 독수리가 파수꾼 올빼미로 바뀌어 강화된 파수꾼의 표식을 적용한다. 사격은 정밀 사격 소비를 통해 표식을 준비하고 다음 조준 사격으로 해당 대상의 표식을 소비한다. 생존은 창끝 소비로 10% 확률로 표식을 준비하고 다음 야생불 폭탄의 직접 피해를 강화한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115077,20 +115991,78 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.086,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\파수꾼.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253601": {
+      "id": "1253601",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "파수꾼의 표식",
+      "koreanName": "파수꾼의 표식",
+      "englishName": "Sentinel's Mark",
+      "icon": "ability_ardenweald_hunter",
+      "iconName": "ability_ardenweald_hunter",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "파수꾼의 대상별 표식이다. 사격에서는 다음 조준 사격의 직접 피해가 기본 20%, 생존에서는 다음 야생불 폭탄의 직접 피해가 기본 40% 증가한다. 발동 조건은 영웅 특성과 전문화에 따라 달라지며 야수 전문화에는 사용할 수 없다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_hunter.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ardenweald_hunter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ardenweald_hunter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ardenweald_hunter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_hunter.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/파수꾼",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/비전의갈퀴발톱",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의폭풍"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.073,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Buffs\\파수꾼의표식.md",
         "lastUpdate": ""
       }
     },
@@ -115208,14 +116180,14 @@
       "icon": "artifactability_balancedruid_moonandstars",
       "iconName": "artifactability_balancedruid_moonandstars",
       "school": "",
-      "cooldown": "파수꾼 표식 소모 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상 주변",
-      "description": "# 달의 폭풍 (Lunar Storm)",
+      "range": "",
+      "description": "파수꾼의 표식이 소비되면 주변 10야드 적에게 비전 피해를 주는 달의 투사체 4개를 자동으로 만든다. 사격에서는 표식 대상에게 조준 사격을 맞히는 행동과 연결한다. 직접 시전하는 광역 버튼은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115228,20 +116200,177 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.081,
+        "synergyCount": 1,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\달의폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253733": {
+      "id": "1253733",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "달의 폭풍",
+      "koreanName": "달의 폭풍",
+      "englishName": "Lunar Storm",
+      "icon": "artifactability_balancedruid_moonandstars",
+      "iconName": "artifactability_balancedruid_moonandstars",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "달의 폭풍 특성에서 자동으로 발생하는 광역 피해 기록이다. 파수꾼의 표식 소비가 발동 조건이며 원인인 조준 사격 또는 야생불 폭탄과 별개로 직접 사용한 스킬 수에 더하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_balancedruid_moonandstars.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_balancedruid_moonandstars.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_balancedruid_moonandstars.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_balancedruid_moonandstars.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_balancedruid_moonandstars.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의폭풍"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Procs\\달의폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253750": {
+      "id": "1253750",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "별바라기",
+      "koreanName": "별바라기",
+      "englishName": "Stargazer",
+      "aliases": [
+        "별바라기 버프"
+      ],
+      "icon": "icon_7fx_nightborn_astromancer_blue",
+      "iconName": "icon_7fx_nightborn_astromancer_blue",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "별바라기의 실제 치명타 피해 증가 효과다. 사격은 정밀 사격 소비로, 생존은 창끝 소비로 얻는다. 10초 동안 적용이 겹칠 수 있으며 자체 시전 스킬이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/icon_7fx_nightborn_astromancer_blue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/icon_7fx_nightborn_astromancer_blue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/icon_7fx_nightborn_astromancer_blue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/icon_7fx_nightborn_astromancer_blue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/icon_7fx_nightborn_astromancer_blue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/별바라기"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Buffs\\별바라기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253751": {
+      "id": "1253751",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "별바라기",
+      "koreanName": "별바라기",
+      "englishName": "Stargazer",
+      "icon": "icon_7fx_nightborn_astromancer_blue",
+      "iconName": "icon_7fx_nightborn_astromancer_blue",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사격은 정밀 사격, 생존은 창끝을 소비할 때 10초 동안 치명타 피해가 2% 증가한다. 여러 적용이 겹칠 수 있으며 공격 개시와 선택 관계다. 치명타율을 올리는 효과와 구분한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/icon_7fx_nightborn_astromancer_blue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/icon_7fx_nightborn_astromancer_blue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/icon_7fx_nightborn_astromancer_blue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/icon_7fx_nightborn_astromancer_blue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/icon_7fx_nightborn_astromancer_blue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/공격개시"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\별바라기.md",
         "lastUpdate": ""
       }
     },
@@ -115297,6 +116426,59 @@
         "lastUpdate": "2026-09-13"
       }
     },
+    "1253807": {
+      "id": "1253807",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "공격 개시",
+      "koreanName": "공격 개시",
+      "englishName": "Open Fire",
+      "icon": "spell_fire_flare",
+      "iconName": "spell_fire_flare",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사격에서는 연발 공격 피해가 25% 증가한다. 생존에서는 화염 피해가 5% 증가한다. 별바라기와 선택 관계이며 사격에도 모든 화염 피해 5%를 부여하는 것으로 해석하지 않는다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flare.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_flare.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_flare.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_flare.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flare.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/별바라기"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\공격개시.md",
+        "lastUpdate": ""
+      }
+    },
     "1253825": {
       "id": "1253825",
       "type": "hero-talent",
@@ -115312,14 +116494,14 @@
       "icon": "spell_druid_lunarinspiration",
       "iconName": "spell_druid_lunarinspiration",
       "school": "",
-      "cooldown": "파수꾼 표식 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 달의 축복 (Moon's Blessing)",
+      "range": "",
+      "description": "사격은 정밀 사격 소비의 올빼미 소환 확률을 10% 높이고 표식이 적용될 때 조준 사격의 재사용 대기시간을 1초 줄인다. 생존은 창끝 소비 확률을 10% 높이고 표식 적용 시 야생불 폭탄의 재사용을 6초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115332,16 +116514,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.081,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -115364,14 +116547,14 @@
       "icon": "ability_hunter_aimedshot",
       "iconName": "ability_hunter_aimedshot",
       "school": "",
-      "cooldown": "정조준/제압 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 백발백중 (Can't Miss, Won't Miss)",
+      "range": "",
+      "description": "사격에서는 정밀 사격의 피해 증가량을 10% 높이고 정조준을 2초 연장한다. 생존에서는 창끝의 피해 증가량을 4% 높이고 제압을 2초 연장한다. 동일한 수치를 두 전문화에 적용하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115384,18 +116567,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/파수꾼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 4,
-        "linkDensity": 0.156,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -115418,14 +116602,14 @@
       "icon": "inv_polearm_2h_arakkoa_c_01",
       "iconName": "inv_polearm_2h_arakkoa_c_01",
       "school": "",
-      "cooldown": "전문화 핵심기 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 축성된 무장 (Sanctified Armaments)",
+      "range": "",
+      "description": "사격은 속사 피해의 25%를, 생존은 랩터의 일격 피해의 15%를 6초에 걸친 추가 비전 피해로 남긴다. 원래 직접 피해를 깎아 변환하는 설명이 아니라 추가 지속 피해로 이해한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115438,20 +116622,72 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.086,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\축성된무장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253836": {
+      "id": "1253836",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "축성된 무장",
+      "koreanName": "축성된 무장",
+      "englishName": "Sanctified Armaments",
+      "icon": "inv_polearm_2h_arakkoa_c_01",
+      "iconName": "inv_polearm_2h_arakkoa_c_01",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "축성된 무장에서 자동으로 발생하는 6초 비전 지속 피해 기록이다. 사격의 속사와 생존의 랩터의 일격에서 만들어지며 이 효과를 별도로 재시전하는 단계는 없다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_arakkoa_c_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_polearm_2h_arakkoa_c_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_polearm_2h_arakkoa_c_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_polearm_2h_arakkoa_c_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_arakkoa_c_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/축성된무장"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Procs\\축성된무장.md",
         "lastUpdate": ""
       }
     },
@@ -115470,14 +116706,14 @@
       "icon": "inv_10_specialreagentfoozles_tuskclaw-ice",
       "iconName": "inv_10_specialreagentfoozles_tuskclaw-ice",
       "school": "",
-      "cooldown": "파수꾼 표식 소모 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 비전의 갈퀴발톱 (Arcane Talons)",
+      "range": "",
+      "description": "파수꾼의 표식이 강화하는 피해를 추가로 높인다. 사격의 조준 사격에는 15%, 생존의 야생불 폭탄에는 50%가 추가된다. 전문화별 대상 기술과 값을 서로 바꾸어 적용하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115490,16 +116726,15 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.088,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -115522,14 +116757,14 @@
       "icon": "ability_hunter_sentinelowl",
       "iconName": "ability_hunter_sentinelowl",
       "school": "",
-      "cooldown": "정조준/제압 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 달의 부름 (Lunar Calling)",
+      "range": "",
+      "description": "사격에서는 깃털 분노가 정조준 동안 올빼미 소환 확률을 10% 더 높인다. 생존에서는 제압이 올빼미를 소환하며 지속시간 동안 소환 확률도 10% 더 높인다. 사격의 즉시 표식은 깃털 분노와 함께 해석한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115542,16 +116777,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/깃털분노"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/파수꾼"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.081,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -122921,17 +124159,20 @@
       "name": "달빛 회전 표창",
       "koreanName": "달빛 회전 표창",
       "englishName": "Moonlight Chakram",
+      "aliases": [
+        "달빛 회전 표창 특성"
+      ],
       "icon": "inv_ability_hunter_deathchakram",
       "iconName": "inv_ability_hunter_deathchakram",
       "school": "",
-      "cooldown": "정조준/제압 이후 1회",
-      "castTime": "즉시",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "현재 대상",
-      "description": "# 달빛 회전 표창 (Moonlight Chakram)",
+      "range": "",
+      "description": "사격의 정조준, 생존의 제압을 사용한 뒤 15초 동안 원래 버튼을 달빛 회전 표창으로 바꿔 주는 선택 특성이다. 실제 시전 ID는 1264949이며 이 특성 ID 자체를 시전 기록이나 공격 단계로 사용하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122945,24 +124186,75 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의폭풍",
-          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/울부짖는화살"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/추적과타격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/황혼의진혼곡"
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 4,
-        "linkDensity": 0.052,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\달빛회전표창.md",
+        "lastUpdate": ""
+      }
+    },
+    "1264903": {
+      "id": "1264903",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "광휘의 칼날",
+      "koreanName": "광휘의 칼날",
+      "englishName": "Radiant Edge",
+      "icon": "inv_misc_nightelfglaive",
+      "iconName": "inv_misc_nightelfglaive",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "달빛 회전 표창이 튕길 때마다 피해가 25% 증가한다. 표창이 실제로 적중할 수 있는 대상과 이동 경로를 확인해야 하며 별도의 강화 스킬을 누르는 효과는 아니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_nightelfglaive.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_nightelfglaive.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_nightelfglaive.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_nightelfglaive.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_nightelfglaive.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달빛회전표창"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\광휘의칼날.md",
         "lastUpdate": ""
       }
     },
@@ -122981,14 +124273,14 @@
       "icon": "spell_nature_moonglow",
       "iconName": "spell_nature_moonglow",
       "school": "",
-      "cooldown": "달빛 회전 표창 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상 주변",
-      "description": "# 황혼의 진혼곡 (Twilight Requiem)",
+      "range": "",
+      "description": "달빛 회전 표창이 끝날 때 근처 적에게 비전 폭발을 일으킨다. 8명을 초과하는 적에게는 감소된 피해를 입힌다. 추적과 타격과 선택 관계이며 어둠 순찰자의 검은 화살 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123001,15 +124293,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/달빛회전표창"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/추적과타격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.054,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -123073,8 +124367,9 @@
       "id": "1264949",
       "type": "atomic-skill",
       "class": "Hunter",
-      "spec": "생존",
+      "spec": "공용",
       "specs": [
+        "Marksmanship",
         "Survival"
       ],
       "name": "달빛 회전 표창",
@@ -123083,14 +124378,14 @@
       "icon": "inv_ability_hunter_deathchakram",
       "iconName": "inv_ability_hunter_deathchakram",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "정조준 또는 제압 후 15초 안에 1회",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 달빛 회전 표창 (Moonlight Chakram)",
+      "description": "현재 대상과 주변 대상 사이에서 7회 적중하는 즉시 공격이다. 달빛 회전 표창 특성으로 정조준 또는 제압 사용 후 15초 안에 한 번 사용할 수 있다. 주력기 충전이 비는 구간에 쓰되 사용 가능 시간이 끝나기 전에 반드시 처리한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123103,20 +124398,24 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달빛회전표창",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/추적과타격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/광휘의칼날",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/황혼의진혼곡"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.064,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\달빛회전표창.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Skills\\달빛회전표창.md",
         "lastUpdate": ""
       }
     },
@@ -124481,14 +125780,14 @@
       "icon": "ability_ambush",
       "iconName": "ability_ambush",
       "school": "",
-      "cooldown": "달빛 회전 표창 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 추적과 타격 (Stalk and Strike)",
+      "range": "",
+      "description": "사격은 달빛 회전 표창을 던지면 실탄 장전을 얻는다. 생존은 표창을 던지면 야생불 폭탄의 재사용 대기시간이 10초 감소한다. 사격에 야생불 폭탄 감소나 조준 사격의 고정 감소를 붙이지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124501,21 +125800,73 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/달빛회전표창",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.105,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\추적과타격.md",
+        "lastUpdate": ""
+      }
+    },
+    "1266096": {
+      "id": "1266096",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "Marksmanship",
+        "Survival"
+      ],
+      "name": "황혼의 진혼곡",
+      "koreanName": "황혼의 진혼곡",
+      "englishName": "Twilight Requiem",
+      "icon": "spell_nature_moonglow",
+      "iconName": "spell_nature_moonglow",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "황혼의 진혼곡에서 표창 종료 후 자동으로 발생하는 비전 폭발이다. 피해 로그에서는 원인인 달빛 회전 표창과 연결해 확인하며 별도의 수동 공격 버튼으로 세지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_moonglow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_moonglow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_moonglow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_moonglow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_moonglow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/황혼의진혼곡"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Procs\\황혼의진혼곡.md",
         "lastUpdate": ""
       }
     },
@@ -130944,7 +132295,7 @@
     },
     "1273128": {
       "id": "1273128",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -130953,17 +132304,21 @@
       "name": "조준하기",
       "koreanName": "조준하기",
       "englishName": "Take Aim",
+      "aliases": [
+        "조준하기 마지막 특성",
+        "조준하기 마지막 노드"
+      ],
       "icon": "inv_spear_07",
       "iconName": "inv_spear_07",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 조준하기 (Take Aim)",
-      "category": "talent",
+      "description": "마지막 조준하기 특성이다. 척후병의 징표가 대상에게 사용할 다음 속사의 공격력도 20% 높이게 한다. 조준 사격용 표식과 속사용 표식은 별도 효과로 추적되며 속사용 ID는 1301098이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130976,19 +132331,135 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.047,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\조준하기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1273129": {
+      "id": "1273129",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "조준하기",
+      "koreanName": "조준하기",
+      "englishName": "Take Aim",
+      "aliases": [
+        "조준하기 중간 특성",
+        "조준하기 중간 노드"
+      ],
+      "icon": "ability_hunter_wildquiver",
+      "iconName": "ability_hunter_wildquiver",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "조준하기 중간 특성으로 1포인트당 능력의 치명타 피해 5%, 원거리 능력 피해 3%를 높인다. 2포인트 투자 시 각각 10%, 6%다. 조준 사격을 확정 치명타로 만드는 옛 효과는 삭제됐다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_wildquiver.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_wildquiver.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_wildquiver.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_wildquiver.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_wildquiver.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기-첫째",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.085,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\조준하기-중간.md",
+        "lastUpdate": ""
+      }
+    },
+    "1273132": {
+      "id": "1273132",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "조준하기",
+      "koreanName": "조준하기",
+      "englishName": "Take Aim",
+      "aliases": [
+        "조준하기 첫 특성",
+        "조준하기 첫 노드"
+      ],
+      "icon": "inv12_apextalent_hunter_deadlyinsight",
+      "iconName": "inv12_apextalent_hunter_deadlyinsight",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "첫 조준하기 특성이다. 속사 피해를 25% 높이고 속사 투사체 한 발마다 조준 사격의 재사용 대기시간을 0.5초 줄인다. 빠른 사격의 추가 투사체와 연결되며 모든 빌드에서 고정 5초 감소라고 적으면 안 된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_deadlyinsight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_hunter_deadlyinsight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_hunter_deadlyinsight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_hunter_deadlyinsight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_deadlyinsight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/빠른사격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\조준하기-첫째.md",
         "lastUpdate": ""
       }
     },
@@ -132116,9 +133587,62 @@
         "lastUpdate": ""
       }
     },
+    "1277546": {
+      "id": "1277546",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "화력 집중",
+      "koreanName": "화력 집중",
+      "englishName": "Focus Fire",
+      "icon": "ability_hunter_focusfire",
+      "iconName": "ability_hunter_focusfire",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "쇄도 사격이 속사의 재사용 대기시간을 초기화할 때 다음 속사 피해를 20% 높인다. 속사 뒤 조준 사격을 강화하는 총알 세례와 다른 효과다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusfire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_focusfire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusfire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_focusfire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusfire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쇄도사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/총알세례"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\화력집중.md",
+        "lastUpdate": ""
+      }
+    },
     "1277548": {
       "id": "1277548",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -132130,14 +133654,14 @@
       "icon": "ability_hunter_efficiency_brown",
       "iconName": "ability_hunter_efficiency_brown",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 쏟아내기 (Unload)",
-      "category": "talent",
+      "description": "속사 정신 집중의 시작과 끝에 100% 효율의 신비한 사격을 자동으로 발사한다. 대상 생명력 20% 미만에서는 선택한 마무리 사격 계열을 사용한다. 사격의 직접 시전 횟수와 자동으로 발생한 사격 횟수를 분리해 읽어야 한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132150,15 +133674,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준경은거들뿐"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.037,
+        "wikilinkCount": 6,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -132166,9 +133696,63 @@
         "lastUpdate": ""
       }
     },
+    "1277565": {
+      "id": "1277565",
+      "type": "hero-talent",
+      "class": "Hunter",
+      "spec": "공용",
+      "specs": [
+        "BeastMastery",
+        "Marksmanship"
+      ],
+      "name": "꿰뚫는 시선",
+      "koreanName": "꿰뚫는 시선",
+      "englishName": "Through the Eyes",
+      "icon": "ability_cheapshot",
+      "iconName": "ability_cheapshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "마무리 사격과 그 대체 검은 화살의 공격력을 10% 높이는 영웅 특성이다. 칠흑 시위와 선택 관계이며, 확률 초기화와 상시 피해 증가를 둘 다 가진 것으로 계산하지 않는다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_cheapshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_cheapshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_cheapshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_cheapshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_cheapshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/마무리사격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/검은화살",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/칠흑시위"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Hero-Talents\\꿰뚫는시선.md",
+        "lastUpdate": ""
+      }
+    },
     "1277572": {
       "id": "1277572",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "사격",
       "specs": [
@@ -132180,14 +133764,14 @@
       "icon": "ability_impalingbolt",
       "iconName": "ability_impalingbolt",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 치명적인 정밀함 (Critical Precision)",
-      "category": "talent",
+      "description": "정밀 사격으로 강화된 신비한 사격과 일제 사격의 치명타율을 10% 높인다. 모든 공격이나 정밀 사격이 없는 사격에 상시 적용되는 치명타 보너스가 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132200,17 +133784,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/신비한사격",
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.12,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -134432,6 +136017,114 @@
         "lastUpdate": ""
       }
     },
+    "1296633": {
+      "id": "1296633",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "Hunter Marksmanship 12.1 Class Set 2pc",
+      "koreanName": "Hunter Marksmanship 12.1 Class Set 2pc",
+      "englishName": "Hunter Marksmanship 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2 사격 2세트 효과다. 폭발 사격의 지속시간이 1초 증가하고 피해가 5% 증가한다. 정밀 폭파의 추가 1초와 함께 선택했을 때 기본 3초에서 총 5초가 된다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀폭파",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296634": {
+      "id": "1296634",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "Hunter Marksmanship 12.1 Class Set 4pc",
+      "koreanName": "Hunter Marksmanship 12.1 Class Set 4pc",
+      "englishName": "Hunter Marksmanship 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2 사격 4세트 효과다. 조준 사격·속사 피해가 5% 증가하고 폭발 사격의 주기 폭발이 피해를 줄 때 두 스킬의 재사용 대기시간을 각각 0.5초 줄인다. 주변에 맞은 적 숫자마다 같은 감소를 다시 곱하는 효과는 아니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/연사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
     "1296637": {
       "id": "1296637",
       "type": "passive",
@@ -135459,6 +137152,110 @@
         "lastUpdate": ""
       }
     },
+    "1301098": {
+      "id": "1301098",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "척후병의 징표: 속사",
+      "koreanName": "척후병의 징표: 속사",
+      "englishName": "Spotter's Mark: Rapid Fire",
+      "icon": "inv_111_hunter_ability_eaglemark",
+      "iconName": "inv_111_hunter_ability_eaglemark",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "마지막 조준하기가 준비하는 대상별 속사 강화 표식이다. 다음 속사가 그 대상에게 20% 추가 피해를 주며 조준 사격용 표식과 별개로 소비된다. API에 붙은 비행 전문화 설명을 이 버프 자체의 추가 특성으로 중복 계산하지 않는다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_111_hunter_ability_eaglemark.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_111_hunter_ability_eaglemark.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_111_hunter_ability_eaglemark.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_111_hunter_ability_eaglemark.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_111_hunter_ability_eaglemark.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\척후병의징표-속사.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301406": {
+      "id": "1301406",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "전술 재장전",
+      "koreanName": "전술 재장전",
+      "englishName": "Tactical Reload",
+      "icon": "ability_ironmaidens_bombardment",
+      "iconName": "ability_ironmaidens_bombardment",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "폭발 사격이 100% 확률로 실탄 장전 효과를 부여한다. 유동성 제동장치와 선택 관계이므로 이 특성을 선택한 운용에 두 번째 폭발 사격을 자동으로 추가하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_bombardment.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_bombardment.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_bombardment.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_bombardment.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_bombardment.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/유동성제동장치"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\전술재장전.md",
+        "lastUpdate": ""
+      }
+    },
     "1301600": {
       "id": "1301600",
       "type": "buff",
@@ -135566,6 +137363,112 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Buffs\\아킬존의명료함.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301778": {
+      "id": "1301778",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "유동성 제동장치",
+      "koreanName": "유동성 제동장치",
+      "englishName": "Unstable Trigger",
+      "icon": "spell_sandexplosion",
+      "iconName": "spell_sandexplosion",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "유동성 제동장치로 두 번째 폭발 사격을 사용할 수 있는 3초의 기회다. 기본 30초 재사용 대기시간을 가진 폭발 사격에 붙는 후속 사용 조건이며 별도 스킬이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_sandexplosion.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_sandexplosion.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_sandexplosion.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_sandexplosion.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_sandexplosion.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/유동성제동장치"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\유동성제동장치.md",
+        "lastUpdate": ""
+      }
+    },
+    "1302277": {
+      "id": "1302277",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "사격",
+      "specs": [
+        "Marksmanship"
+      ],
+      "name": "죽음의 인도자",
+      "koreanName": "죽음의 인도자",
+      "englishName": "Death Bringer",
+      "icon": "ability_hunter_runningshot",
+      "iconName": "ability_hunter_runningshot",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "다음 조준 사격이 죽음의 강타를 부여하도록 예약된 상태다. 이 효과만 생긴 단계에서 대상 생명력 조건과 무관한 마무리 사격 또는 검은 화살이 이미 준비됐다고 판단하지 않는다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_runningshot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_runningshot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_runningshot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_runningshot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_runningshot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/죽음의강타"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/칠흑시위"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.082,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\죽음의인도자.md",
         "lastUpdate": ""
       }
     },

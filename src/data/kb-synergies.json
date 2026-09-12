@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T22:18:19.332Z",
+    "generatedAt": "2026-09-12T23:17:17.932Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 475,
-    "rawTotalSynergies": 475,
+    "totalSynergies": 483,
+    "rawTotalSynergies": 483,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 174,
+      "unknown": 167,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -38,6 +38,7 @@
       "damage-resource": 1,
       "defensive-recovery": 1,
       "hero_talent_sentinel": 1,
+      "mechanic": 15,
       "aoe-cleave": 1,
       "burst-window": 4,
       "buff-spender": 1,
@@ -268,7 +269,7 @@
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
-      "Hunter": 33,
+      "Hunter": 41,
       "Mage": 34,
       "마법사": 1,
       "Monk": 31,
@@ -5140,18 +5141,15 @@
     "hunter_hero_sentinel_moonstorm_lunar": {
       "id": "hunter_hero_sentinel_moonstorm_lunar",
       "name": "영웅특성-파수꾼-달의폭풍",
+      "description": "파수꾼은 사격의 정밀 사격 소비 또는 생존의 창끝 소비에서 확률적으로 표식을 준비한다. 표식 적용은 달의 축복에 의한 전문화별 재사용 대기시간 회복, 표식 소비는 달의 폭풍과 비전의 갈퀴발톱에 의한 추가 피해로 이어진다. 두 사건을 구분하며 무리의 지도자의 치명적인 가시는 이 관계에 속하지 않는다.",
       "type": "synergy",
       "synergyType": "hero_talent_sentinel",
       "participants": [
         "1253599",
+        "1253601",
         "1253732",
         "1253825",
-        "1253830",
-        "1253831",
-        "1253846",
-        "1253852",
-        "1264781",
-        "1266069"
+        "1253846"
       ],
       "class": "Hunter",
       "spec": "공용",
@@ -5160,186 +5158,558 @@
         "Survival"
       ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/사냥꾼의징표",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/구속의사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/타르덫"
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/파수꾼의표식"
       ],
-      "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Synergies\\영웅특성-파수꾼-달의폭풍.md",
         "lastUpdate": ""
       }
     },
-    "교묘한사격_일제사격": {
-      "id": "교묘한사격_일제사격",
-      "name": "교묘한사격-일제사격",
+    "hunter_mm_trick_multishot": {
+      "id": "hunter_mm_trick_multishot",
+      "name": "일제 사격 3명 적중 → 교묘한 사격",
+      "description": "교묘한 사격을 선택했다면 일제 사격이 3명 이상에게 맞아야 다음 조준 사격 또는 속사가 튕긴다. 연발 공격이 지속되는 동안에는 교묘한 사격 효과가 유지되므로 매번 일제 사격을 끼울 필요는 없다. 연발 공격 밖에서는 다음 주력기가 끝날 때까지 버프가 남는지 본다. 히드라의 상 빌드에 이 준비 과정을 그대로 적용하지 않는다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "mechanic",
+      "participants": [
+        "257620",
+        "257621",
+        "257622",
+        "19434",
+        "257044",
+        "260243"
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/교묘한사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/교묘한사격"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/교묘한사격"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\교묘한사격-일제사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_chakram_lockload": {
+      "id": "hunter_mm_chakram_lockload",
+      "name": "정조준 → 달빛 회전 표창 → 실탄 장전",
+      "description": "달빛 회전 표창 특성을 선택하면 정조준 이후 15초 동안 대체 버튼으로 실제 표창을 한 번 쓸 수 있다. 추적과 타격은 사격에서 실탄 장전을 준다. 특성 ID 1264902가 아니라 실제 시전 ID 1264949로 사용 여부를 센다. 표창 기회의 남은 시간은 정조준 강화 버프가 그만큼 연장된다는 뜻이 아니다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "288613",
+        "1264902",
+        "1264949",
+        "1266069",
+        "194594",
+        "19434"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/실탄장전"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\달빛회전표창-실탄장전.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_moonblessing_mark": {
+      "id": "hunter_mm_moonblessing_mark",
+      "name": "표식 적용 → 조준 사격 1초 회복",
+      "description": "사격의 달의 축복은 파수꾼의 표식을 적용할 때 조준 사격의 재사용 대기시간을 1초 줄인다. 표식을 소비할 때 발생하는 효과와 섞지 않는다. 생존의 야생불 폭탄 6초 회복을 사격에 적용하지 않는다. 집중력의 정밀 사격 소비 회복과는 다른 조건의 효과다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1253825",
+        "1253601",
+        "19434",
+        "260242"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/파수꾼의표식",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\달의축복-표식.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_surging_focusfire": {
+      "id": "hunter_mm_surging_focusfire",
+      "name": "조준 사격 초기화 발동 → 다음 속사",
+      "description": "쇄도 사격은 조준 사격에서 속사 재사용 대기시간 초기화를 얻는 연결이다. 화력 집중을 선택했다면 초기화와 연결된 다음 속사 강화까지 확인한다. 속사가 이미 준비된 상태에서 조준 사격을 계속 쏘면 초기화로 돌려받을 대기시간이 없으므로, 발동 횟수만이 아니라 발동 당시 속사의 준비 상태를 본다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "19434",
+        "391559",
+        "1277546",
+        "257044"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쇄도사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/화력집중"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\교묘한사격-일제사격.md",
-        "lastUpdate": "2026-05-25"
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\쇄도사격-화력집중.md",
+        "lastUpdate": ""
       }
     },
-    "정밀사격_조준사격": {
-      "id": "정밀사격_조준사격",
-      "name": "정밀사격-조준사격",
+    "hunter_mm_unload_precise": {
+      "id": "hunter_mm_unload_precise",
+      "name": "속사 시작·종료 자동 사격과 정밀 사격",
+      "description": "쏟아내기는 속사 시작과 끝에 신비한 사격을 자동으로 쏜다. 조준경은 거들뿐이 준비하는 정밀 사격까지 함께 추적해야 실제 소비처를 알 수 있다. 교묘한 사격 광역의 숙련 운용은 종료 직전 정밀 사격을 일제 사격으로 가져오는 것이다. 같은 정밀 사격을 자동 사격과 일제 사격이 둘 다 받는다는 설명은 8월 20일 수정된 오류를 재현한 것이므로 쓰지 않는다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "mechanic",
+      "participants": [
+        "257044",
+        "1277548",
+        "473385",
+        "260242",
+        "257620"
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준경은거들뿐"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\쏟아내기-정밀사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_precise_aimed": {
+      "id": "hunter_mm_precise_aimed",
+      "name": "조준 사격 → 정밀 사격 → 다음 조준 사격",
+      "description": "조준 사격은 정밀 사격을 준비한다. 단일에서는 신비한 사격, 교묘한 사격 광역에서는 일제 사격으로 소비하고 다음 조준 사격으로 돌아간다. 정밀 사격은 누르는 스킬이 아니라 소비형 버프다. 정밀 사격을 처리하느라 조준 사격 2충전을 오래 방치하지 않는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "19434",
+        "260240",
+        "260242",
+        "185358",
+        "257620"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/신비한사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\정밀사격-조준사격.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": ""
       }
     },
-    "정밀사격_집중력": {
-      "id": "정밀사격_집중력",
-      "name": "정밀사격-집중력",
+    "hunter_mm_precise_focused": {
+      "id": "hunter_mm_precise_focused",
+      "name": "정밀 사격 소비 → 조준 사격 1초 회복",
+      "description": "집중력은 정밀 사격을 소비할 때 조준 사격의 재사용 대기시간을 1초 줄인다. 사격을 아무 때나 누르는 효과가 아니며 12.1의 값은 2초가 아니다. 이미 충전이 가득 찼다면 회복 이득을 저장할 수 없으므로, 소비와 충전 상한을 함께 관리한다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "mechanic",
+      "participants": [
+        "260242",
+        "378767",
+        "19434"
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정밀사격",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/집중력"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\정밀사격-집중력.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": ""
       }
     },
-    "정조준_연타공격": {
-      "id": "정조준_연타공격",
-      "name": "정조준-연타공격",
+    "hunter_mm_trueshot_tensile": {
+      "id": "hunter_mm_trueshot_tensile",
+      "name": "정조준 → 조준 사격·속사 회복 가속",
+      "description": "정조준은 조준 사격과 속사의 재사용 대기시간 회복을 빠르게 한다. 고장력 시위까지 선택하면 조준 사격의 시전 시간과 집중 비용도 낮아진다. 깃털 분노는 추가 정조준 발동과 연결되지만 삭제된 연타 공격을 불러내는 구조가 아니다. 짧은 구간에 일반 필러만 반복하면 빨라진 주력기 회복을 낭비한다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "mechanic",
+      "participants": [
+        "288613",
+        "471366",
+        "19434",
+        "257044",
+        "470943"
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연타공격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\정조준-연타공격.md",
-        "lastUpdate": "2026-05-25"
-      }
-    },
-    "조준하기_속사": {
-      "id": "조준하기_속사",
-      "name": "조준하기-속사",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "Hunter",
-      "spec": "Marksmanship",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례"
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/고장력시위",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/깃털분노"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\정조준-고장력시위.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_takeaim_rapid": {
+      "id": "hunter_mm_takeaim_rapid",
+      "name": "속사 탄환 → 조준 사격 회복·별도 속사 징표",
+      "description": "조준하기의 첫 단계는 속사 탄환마다 조준 사격을 0.5초 회복시킨다. 마지막 단계는 다음 조준 사격용 징표와 별도로 다음 속사를 20% 강화하는 징표를 만든다. 조준 사격이 먼저 맞았다고 속사용 징표까지 사라진 것으로 판단하지 않는다. 중간 단계의 옛 확정 치명타 효과는 12.1에 없다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1273132",
+        "1273128",
+        "1301098",
+        "257044",
+        "19434"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/척후병의징표-속사"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기-첫째",
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준하기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\조준하기-속사.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": ""
       }
     },
-    "총알세례_조준사격": {
-      "id": "총알세례_조준사격",
-      "name": "총알세례-조준사격",
+    "hunter_mm_deathbringer_blackarrow": {
+      "id": "hunter_mm_deathbringer_blackarrow",
+      "name": "죽음의 인도자 → 조준 사격 → 검은 화살",
+      "description": "12.1 사격의 죽음의 강타 계열 발동과 칠흑 시위는 곧바로 검은 화살 버튼을 켜는 것과 다음 조준 사격이 죽음의 강타를 주도록 준비하는 것을 구분한다. 죽음의 인도자는 후자다. 준비 버프를 확인하고 조준 사격을 쏜 뒤 실제 죽음의 강타로 사용 가능한 검은 화살을 회수한다. 야수의 즉시 발동 설명을 사격에 복사하지 않는다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "Hunter",
-      "spec": "Marksmanship",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/총알세례",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+      "synergyType": "mechanic",
+      "participants": [
+        "343248",
+        "1302277",
+        "19434",
+        "378770",
+        "466930",
+        "467897"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\총알세례-조준사격.md",
-        "lastUpdate": "2026-05-25"
-      }
-    },
-    "파수꾼_조준사격": {
-      "id": "파수꾼_조준사격",
-      "name": "파수꾼-조준사격",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
       "class": "Hunter",
       "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/죽음의인도자",
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/죽음의강타"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/표적색적"
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/죽음의강타"
       ],
       "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\죽음의인도자-검은화살.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_bulletstorm_aimed": {
+      "id": "hunter_mm_bulletstorm_aimed",
+      "name": "속사 → 총알 세례 → 강화 조준 사격",
+      "description": "속사는 총알 세례로 다음 조준 사격을 20% 강화한다. 물량 공세를 선택하면 이 강화가 조준 사격 한 번에 추가로 적용된다. 강화량 자체를 올리는 효과도, 일제 사격으로 중첩을 쌓는 옛 효과도 아니다. 속사 뒤 강화 조준 사격을 회수하며 총알 세례를 직접 시전하는 단계로 만들지 않는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "257044",
+        "389019",
+        "389020",
+        "471428",
+        "19434"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/총알세례"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/총알세례",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/물량공세"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\총알세례-조준사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_sentinel_aimed": {
+      "id": "hunter_mm_sentinel_aimed",
+      "name": "정밀 사격 소비 → 표식 → 조준 사격·달의 폭풍",
+      "description": "정밀 사격을 소비하면 확률적으로 대상에 파수꾼의 표식이 생긴다. 조준 사격은 그 표식을 소비하고, 달의 폭풍 및 비전의 갈퀴발톱이 표식 소비를 강화한다. 여러 적이 있을 때는 표식 없는 대상에 생성 기회를 만들고 표식 있는 대상에 조준 사격을 쓰는 흐름을 우선 검토한다. 반드시 죽여야 할 적이 있으면 우선 대상 피해를 먼저 지킨다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1253599",
+        "260242",
+        "1253601",
+        "19434",
+        "1253732",
+        "1253846"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Buffs/파수꾼의표식"
+      ],
+      "linkedTalents": [],
+      "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\파수꾼-조준사격.md",
-        "lastUpdate": "2026-05-25"
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_explosive_choice": {
+      "id": "hunter_mm_explosive_choice",
+      "name": "유동성 제동장치 또는 전술 재장전",
+      "description": "유동성 제동장치는 폭발 사격 뒤 3초 안에 추가 폭발 사격을 쓸 기회를 준다. 전술 재장전은 그 선택지의 다른 특성으로 실탄 장전과 연결된다. 두 특성을 동시에 가진 것으로 회전을 쓰지 않는다. 전술 재장전이라면 이미 남은 실탄 장전을 덮지 않는지, 유동성 제동장치라면 두 번째 사격 기회를 놓치지 않는지 확인한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "212431",
+        "473520",
+        "1301778",
+        "1301406",
+        "194594"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/유동성제동장치",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/실탄장전"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/유동성제동장치",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/전술재장전"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\폭발사격-선택특성.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_explosive_mid2": {
+      "id": "hunter_mm_explosive_mid2",
+      "name": "폭발 사격 지속 피해 → 두 주력기 회복",
+      "description": "시즌 2의 2세트는 폭발 사격을 강화하고 지속 시간을 늘린다. 4세트는 폭발 사격의 지속 피해가 발생할 때마다 조준 사격과 속사를 0.5초 회복시킨다. 한 번의 광역 틱이 여러 명에게 맞는 것을 적 수만큼의 회복으로 세지 않는다. 서로 다른 적에게 걸린 두 지속 피해는 별개이며, 연사의 자동 폭발 사격도 실제 효과를 구분해서 본다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "212431",
+        "1296633",
+        "1296634",
+        "19434",
+        "257044",
+        "400456"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/폭발사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/시즌2-4세트",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/연사"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\폭발사격-시즌2.md",
+        "lastUpdate": ""
+      }
+    },
+    "hunter_mm_hydra_two": {
+      "id": "hunter_mm_hydra_two",
+      "name": "히드라의 상 → 조준 사격·속사 추가 대상",
+      "description": "히드라의 상은 조준 사격과 속사의 추가 대상 공격을 만든다. 신비한 사격까지 자동으로 튕기는 효과가 아니다. 교묘한 사격과 다른 선택지이므로 일제 사격 3명 적중을 필수 준비로 요구하지 않는다. 히드라 빌드에서도 여러 대상을 때리는 정밀 사격 소비기로 일제 사격을 쓸 수 있지만, 우선 대상 집중 공격이 필요한 상황과 총 피해를 비교한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "470945",
+        "378913",
+        "19434",
+        "257044",
+        "257620"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/히드라의상",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/경탄약"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\히드라의상-두대상.md",
+        "lastUpdate": ""
       }
     },
     "랩터의휩쓸기_광역": {
@@ -5483,7 +5853,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
         "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
-        "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/달빛회전표창"
+        "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
       ],
       "linkedBuffs": [],
       "linkedTalents": [

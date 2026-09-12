@@ -116,15 +116,27 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons appeared. Native condition disclosure works. Final bundle `main.9099c62d.js` was verified; the apex relationship contains six intended participants, Sentinel is absent, spell links are numeric and no console errors appeared.
 - Limits: Archon raid and high-key requests returned 403; no current usage/DPS aggregates, personal simulation or private Trueshot Lodge messages were obtained. Wild Thrash's two-target boundary and source disagreements about apex damage and 3/4-stack Cobra consumption remain explicit. Dense graph-label overlaps, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle still need work. Canonical KB and its builder remain outside the site Git repository; the site commit contains generated DB, guide, renderer and regression changes.
 
+### Marksmanship Hunter
+
+- Replaced the old manuscript in place with 15 manually authored subjects, ten practical tips and separate Sentinel/Dark Ranger opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/05-사냥꾼/사격/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 changes and September hotfixes, current Korean/English tooltips, Azortharion's Wowhead/Icy Veins guides, Qenjua's Method guides and live SimC commit `616c7cde89888480dc4e5fb1755567ef97356dfd`. Wowhead and Icy Veins are not counted as independent authors; author disagreements and access limits remain explicit.
+- Manually reviewed 83 atomic records: 58 local Marksmanship and 25 related common records. Removed Double Tap 473370 and unavailable old traits 264198/473379; separated Precise Shots, Trick Shots and Bulletstorm talents from their buffs. Corrected Accuracy By Volume's additional Aimed Shot, Unstable Trigger, all three Take Aim nodes, separate Rapid Fire mark, Death Bringer preparation and Season 2 periodic-event cooldown reduction.
+- Moved the actual Moonlight Chakram cast 1264949 to the shared Hunter skill folder, scoped to Marksmanship/Survival, and repaired Survival links without relabeling Survival's old mechanics. Sentinel/common effects retain specialization-specific values and trigger conditions. Removed Pack Leader's Lethal Barbs from the Sentinel relationship.
+- Authored 15 local relationships and rewrote the common Sentinel relationship. Removed old June usage/DPS claims and the illustrative uptime chart. Only Hunter records changed in the generated spell/synergy DB.
+- Fixed five newly authored set/automatic effects being skipped by using the existing supported Talents/Procs folders, rather than extending the importer. Added runnable checks for all 58 local records, those five passive effects, current spell identities, real hero-specific casts, conditional double Explosive Shot and all 15 relationships.
+- Canonical equality, gameplay/scope checks, all prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for 58 local and 67 common records; explicit guide icon/name checks passed for 24 IDs, all with zero errors/warnings. Common metadata validation is not a full review of all common mechanics.
+- Inspected both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons. Native details retain the full use conditions. Final production bundle `main.146c4d1d.js` was verified after removing a duplicate Chakram chip and tightening a patch attribution; all spell hrefs are numeric and no console errors appeared. The graph centers on Aimed Shot with 13 actual authored relationships.
+- Limits: current WCL/Archon aggregates, personal simulations and private Trueshot Lodge messages were not obtained. Dense graph-label overlaps (including internal set labels), generic featured-skill selection, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 21 manuscripts
+## Still 12.0.5: 20 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Hunter | Marksmanship, Survival |
+| Hunter | Survival |
 | Mage | Fire, Frost |
 | Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
@@ -136,8 +148,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation and Beast Mastery now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 21 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery and Marksmanship now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 20 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

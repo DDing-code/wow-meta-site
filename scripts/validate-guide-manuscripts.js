@@ -19,6 +19,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['druid-feral', '12.1'],
   ['evoker-augmentation', '12.1'],
   ['hunter-beastmastery', '12.1'],
+  ['hunter-marksmanship', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1030,6 +1031,33 @@ function main() {
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 
+  const marksmanship = manuscripts['hunter-marksmanship'];
+  const marksmanshipSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '사격', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(marksmanshipSource)) {
+    assert(JSON.stringify(JSON.parse(read(marksmanshipSource))) === JSON.stringify(marksmanship), 'Marksmanship must match its canonical 12.1 manuscript');
+  }
+  const marksmanshipNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]사격[\\/]/.test(skill.source?.kbPath || ''));
+  assert(marksmanshipNotes.length === 58 && marksmanshipNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 58 Marksmanship records, including passive set effects, must survive sync');
+  assert(!marksmanship.extraSkills?.length && ['473370', '264198', '473379'].every(id => !kbSkills[id]), 'Marksmanship must not revive obsolete Double Tap or unavailable old traits');
+  assert(['260240', '257621', '389019'].every(id => kbSkills[id]?.type === 'spec-talent') && ['260242', '257622', '389020'].every(id => kbSkills[id]?.type === 'buff'), 'Marksmanship talents and consumable buffs need separate IDs');
+  assert(kbSkills['471428']?.name === '물량 공세' && kbSkills['471428']?.description.includes('추가로 적용') && kbSkills['473520']?.name === '유동성 제동장치', 'Renamed Marksmanship talents must retain their current identities and additional-cast effect');
+  assert(['1273132', '1273129', '1273128'].every(id => kbSkills[id]?.type === 'spec-talent') && kbSkills['1301098']?.type === 'buff', 'All three Take Aim nodes and the separate Rapid Fire mark must exist');
+  assert(kbSkills['1302277']?.type === 'buff' && kbSkills['467897']?.description.includes('다음 조준 사격'), 'Death Bringer preparation must not become immediate Deathblow for Marksmanship');
+  assert(['1296633', '1296634', '1253733', '1253836', '1266096'].every(id => kbSkills[id]?.type === 'passive' && kbSkills[id]?.description.length > 25), 'Set and automatic hero effects must not disappear in an unsupported folder');
+  assert(kbSkills['1296634']?.description.includes('0.5초') && kbSkills['1253825']?.description.includes('1초'), 'S2 periodic-event and Moon Blessing reductions must keep their distinct conditions');
+  assert(kbSkills['1264902']?.type === 'hero-talent' && kbSkills['1264949']?.type === 'atomic-skill' && kbSkills['1264949']?.specs.join(',') === 'Marksmanship,Survival', 'Chakram talent and shared real cast must remain distinct');
+  for (const branch of marksmanship.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Marksmanship hero needs separately authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Marksmanship ST and AoE must not duplicate one priority list');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Marksmanship flows must use real casts and preserve their conditions');
+      }
+    }
+    assert(branch.opener.steps.filter(row => row.skillId === '212431').length === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');
+  }
+  assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
+
   const beastMastery = manuscripts['hunter-beastmastery'];
   const beastMasterySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '야수', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(beastMasterySource)) {
@@ -1059,6 +1087,9 @@ function main() {
   }
   assert(!JSON.stringify(beastMastery.heroBranches[0]).includes('"skillId":"466930"') && beastMastery.heroBranches[1].singleTarget.priority.some(row => row.skillId === '392060'), 'Pack Leader must not borrow Dark Ranger casts');
   const scopedSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies);
+  const marksmanshipSynergies = scopedSynergies.filter(row => row.id.startsWith('hunter_mm_'));
+  assert(marksmanshipSynergies.length === 15 && marksmanshipSynergies.every(row => row.description?.length > 50 && row.participants.every(id => kbSkills[id])), 'All 15 authored Marksmanship relationships must retain real participants and descriptions');
+  assert(!scopedSynergies.find(row => row.id === 'hunter_hero_sentinel_moonstorm_lunar')?.participants.includes('1264781'), 'Sentinel must not borrow Pack Leader Lethal Barbs');
   assert(scopedSynergies.find(row => row.id === 'hunter_hero_sentinel_moonstorm_lunar')?.specs.join(',') === 'Marksmanship,Survival', 'Synergy generation must preserve specialization scopes');
   assert(scopedSynergies.find(row => row.id === 'hunter_hero_dark_ranger_black_arrow_shadow')?.specs.join(',') === 'BeastMastery,Marksmanship', 'Dark Ranger synergy must retain its shared but limited scope');
 
