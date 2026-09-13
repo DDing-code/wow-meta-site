@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-12T23:17:17.930Z",
+    "generatedAt": "2026-09-13T00:02:48.100Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2740,
-    "rawTotalSkills": 2740,
+    "totalSkills": 2763,
+    "rawTotalSkills": 2763,
     "duplicateIds": [],
-    "totalSynergies": 483,
+    "totalSynergies": 492,
     "stats": {
-      "total": 2740,
+      "total": 2763,
       "byType": {
-        "buff": 43,
+        "buff": 49,
         "hero-talent": 573,
-        "atomic-skill": 488,
+        "atomic-skill": 489,
         "proc": 7,
         "skill": 167,
-        "talent": 1038,
-        "spec-talent": 304,
-        "passive": 21,
+        "talent": 1012,
+        "spec-talent": 342,
+        "passive": 25,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -33,7 +33,7 @@
         "DemonHunter": 148,
         "Druid": 214,
         "Evoker": 140,
-        "Hunter": 202,
+        "Hunter": 225,
         "Mage": 205,
         "Monk": 231,
         "Paladin": 209,
@@ -63,7 +63,7 @@
         "Evoker-황폐": 28,
         "Hunter-공용": 67,
         "Hunter-사격": 58,
-        "Hunter-생존": 35,
+        "Hunter-생존": 58,
         "Hunter-야수": 42,
         "Mage-공용": 63,
         "Mage-냉기": 48,
@@ -100,8 +100,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2663,
-        "withSynergies": 998,
+        "withWikilinks": 2686,
+        "withSynergies": 1025,
         "avgLinkDensity": "0.034"
       }
     }
@@ -24341,10 +24341,10 @@
       "castTime": "즉시",
       "resourceCost": "집중 30",
       "range": "근접",
-      "description": "# 랩터의 일격 (Raptor Strike)",
+      "description": "집중 30을 소모하는 근접 즉시 공격이다. 정점 특성을 선택하면 다음 랩터의 일격 버튼이 랩터의 휩쓸기로 바뀔 수 있으며, 마지막 정점 특성까지 찍으면 일반 일격과 강화 휩쓸기를 번갈아 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24357,20 +24357,77 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기-첫특성",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이의격노"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.071,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\랩터의일격.md",
+        "lastUpdate": ""
+      }
+    },
+    "186289": {
+      "id": "186289",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "독수리의 상",
+      "koreanName": "독수리의 상",
+      "englishName": "Aspect of the Eagle",
+      "icon": "spell_hunter_aspectoftheironhawk",
+      "iconName": "spell_hunter_aspectoftheironhawk",
+      "school": "",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "15초 동안 랩터의 일격과 정신의 결속 사거리를 40미터로 늘리는 거리 대응 기술이다. 기본 쿨다운은 90초다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_aspectoftheironhawk.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_hunter_aspectoftheironhawk.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_hunter_aspectoftheironhawk.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_hunter_aspectoftheironhawk.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_aspectoftheironhawk.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/정신의결속",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\독수리의상.md",
         "lastUpdate": ""
       }
     },
@@ -24498,10 +24555,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 재갈 (Muzzle)",
+      "description": "생존 전용 근접 차단기로, 성공하면 해당 주문 계열을 5초 동안 막는다. 기본 쿨다운은 15초다. 사격·야수의 반격의 사격을 생존의 원거리 차단으로 취급하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24514,15 +24571,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/반격의사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/작살",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/독수리의상"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.05,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -25257,10 +25315,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "8-30야드",
-      "description": "# 작살 (Harpoon)",
+      "description": "8~30미터 떨어진 적에게 이동해 3초 이동 불가를 거는 진입 기술이다. 기본 쿨다운은 20초이며 직접 피해를 내는 공격 순서와 별도로 판단한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25272,14 +25330,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harpoon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/독수리의상",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/재갈"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -26091,6 +26153,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\빛의회생.md",
+        "lastUpdate": ""
+      }
+    },
+    "193265": {
+      "id": "193265",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "손도끼 던지기",
+      "koreanName": "손도끼 던지기",
+      "englishName": "Hatchet Toss",
+      "icon": "ability_hunter_hatchettoss",
+      "iconName": "ability_hunter_hatchettoss",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "집중 30",
+      "range": "40야드",
+      "description": "집중 30을 소비하는 원거리 단발 공격이다. 랩터 공격에 접근할 수 없고 독수리의 상도 사용할 수 없을 때 고려하는 대체 수단이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_hatchettoss.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_hatchettoss.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_hatchettoss.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_hatchettoss.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_hatchettoss.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/독수리의상"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\손도끼던지기.md",
         "lastUpdate": ""
       }
     },
@@ -36915,6 +37028,60 @@
         "lastUpdate": ""
       }
     },
+    "259388": {
+      "id": "259388",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "살쾡이의 격노",
+      "koreanName": "살쾡이의 격노",
+      "englishName": "Mongoose Fury",
+      "icon": "ability_hunter_mongoosebite",
+      "iconName": "ability_hunter_mongoosebite",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "랩터 공격과 살쾡이 탄환으로 쌓는 실제 격노 버프다. 기본 지속시간 8초의 중첩이 랩터 피해를 높이고 시즌 2 장비가 있으면 폭탄 피해에도 연결된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_mongoosebite.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_mongoosebite.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_mongoosebite.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_mongoosebite.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_mongoosebite.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이의격노",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-4세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피투성이발톱"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\살쾡이의격노.md",
+        "lastUpdate": ""
+      }
+    },
     "259489": {
       "id": "259489",
       "type": "atomic-skill",
@@ -36931,12 +37098,12 @@
       "school": "",
       "cooldown": "5초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "50야드",
-      "description": "# 살상 명령 (Kill Command)",
+      "description": "야수에게 공격을 명령하고 기본 집중 15를 생성한다. 2충전이며 기본 충전 시간은 5초다. 창끝 특성이 있으면 1중첩, 원시의 쇄도까지 있으면 2중첩을 만든다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36949,13 +37116,21 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/창끝",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/원시의쇄도",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/기습의이점",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불주입"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/무리의지도자의포효",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.056,
+        "wikilinkCount": 7,
+        "synergyCount": 4,
+        "linkDensity": 0.091,
         "hasWikilinks": true
       },
       "source": {
@@ -36981,10 +37156,10 @@
       "castTime": "즉시",
       "resourceCost": "집중 10",
       "range": "40야드",
-      "description": "# 야생불 폭탄 (Wildfire Bomb)",
+      "description": "집중 10을 써 대상 위치에 직접 폭발 피해와 6초 지속 피해를 남긴다. 기본은 1충전·18초이며 게릴라 전술 선택 시 2충전이다. 주 대상 추가 피해와 8대상 초과 감소를 가진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36997,13 +37172,21 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/게릴라전술",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/치명적보정",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유탄곡예사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의축복"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.075,
+        "wikilinkCount": 8,
+        "synergyCount": 5,
+        "linkDensity": 0.084,
         "hasWikilinks": true
       },
       "source": {
@@ -37177,7 +37360,7 @@
     },
     "260248": {
       "id": "260248",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -37189,14 +37372,14 @@
       "icon": "ability_druid_primaltenacity",
       "iconName": "ability_druid_primaltenacity",
       "school": "",
-      "cooldown": "출혈 대상 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "주변 적",
-      "description": "# 피 추적자 (Bloodseeker)",
-      "category": "talent",
+      "range": "",
+      "description": "12미터 안에서 출혈에 걸린 적 한 명당 자신과 야수의 공격 속도가 10% 증가한다. 출혈 대상이 멀어지면 가까운 대상 조건을 충족하지 못한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37210,14 +37393,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유산탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유산탄",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/물어"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/무리의지도자의포효"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.02,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -37227,7 +37413,7 @@
     },
     "260285": {
       "id": "260285",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -37239,14 +37425,14 @@
       "icon": "ability_bossmannoroth_glaivethrust",
       "iconName": "ability_bossmannoroth_glaivethrust",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 창끝 (Tip of the Spear)",
-      "category": "ability",
+      "range": "",
+      "description": "살상 명령이 다음 다른 능력의 직접 피해를 15% 강화할 중첩을 생성하게 하는 특성이다. 최대 3중첩을 저장하며 실제 버프 ID는 260286이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37259,24 +37445,78 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/원시의쇄도",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 11,
-        "synergyCount": 6,
-        "linkDensity": 0.117,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\창끝.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\창끝.md",
+        "lastUpdate": ""
+      }
+    },
+    "260286": {
+      "id": "260286",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "창끝",
+      "koreanName": "창끝",
+      "englishName": "Tip of the Spear",
+      "icon": "ability_bossmannoroth_glaivethrust",
+      "iconName": "ability_bossmannoroth_glaivethrust",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "살상 명령과 선택한 쌍둥이 송곳니로 준비하는 실제 창끝 버프다. 최대 3회 분량의 강화 공격을 보관한다. 기본 강화는 직접 피해 15%이며 원시의 쇄도가 추가한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmannoroth_glaivethrust.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_bossmannoroth_glaivethrust.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_bossmannoroth_glaivethrust.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_bossmannoroth_glaivethrust.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmannoroth_glaivethrust.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/창끝",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/원시의쇄도",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/쌍둥이송곳니",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.086,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\창끝.md",
         "lastUpdate": ""
       }
     },
@@ -37827,6 +38067,62 @@
         "lastUpdate": ""
       }
     },
+    "263135": {
+      "id": "263135",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "특화: 정신의 결속",
+      "koreanName": "특화: 정신의 결속",
+      "englishName": "Mastery: Spirit Bond",
+      "aliases": [
+        "정신의 결속"
+      ],
+      "icon": "ability_hunter_beastwithin",
+      "iconName": "ability_hunter_beastwithin",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "자신과 야수의 피해를 높이고 받는 피해를 3% 줄이는 특화다. 서로 25미터 안에 있으면 효과가 두 배가 되며 피해 증가량은 특화에 따라 달라진다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastwithin.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_beastwithin.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_beastwithin.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_beastwithin.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastwithin.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/독수리의상",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/맺어지는유대"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\정신의결속.md",
+        "lastUpdate": ""
+      }
+    },
     "263165": {
       "id": "263165",
       "type": "atomic-skill",
@@ -38280,7 +38576,7 @@
     },
     "264332": {
       "id": "264332",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -38292,14 +38588,14 @@
       "icon": "spell_mage_flameorb",
       "iconName": "spell_mage_flameorb",
       "school": "",
-      "cooldown": "야생불 폭탄 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "40야드",
-      "description": "# 게릴라 전술 (Guerrilla Tactics)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄의 최대 충전을 2로 늘리고 최초 폭발 피해를 15% 높인다. 충전이 더 생기지만 전투 중 완전히 찬 채로 방치할 이유는 없다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38312,19 +38608,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/폭파전문가",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/치명적보정"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 4,
-        "linkDensity": 0.06,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -41753,7 +42048,7 @@
     },
     "321290": {
       "id": "321290",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -41765,14 +42060,14 @@
       "icon": "inv_eng_bombfire",
       "iconName": "inv_eng_bombfire",
       "school": "",
-      "cooldown": "야생불 폭탄 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 야생불 폭탄 연마 (Improved Wildfire Bomb)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄 피해를 6% 높이는 현재 특성 효과다. 초기 폭발만 강화하는 게릴라 전술과 조건이 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41788,16 +42083,14 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/폭파전문가",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/치명적보정"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/게릴라전술"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.054,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -50617,7 +50910,7 @@
     },
     "378934": {
       "id": "378934",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -50629,14 +50922,14 @@
       "icon": "inv_polearm_2h_kultirasharpoon_a_01",
       "iconName": "inv_polearm_2h_kultirasharpoon_a_01",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 찌르기 (Lunge)",
-      "category": "talent",
+      "range": "",
+      "description": "자동 공격 피해를 25% 높이고 민첩성을 3% 증가시킨다. 쌍수 무기를 들면 민첩성이 추가로 1% 증가한다. 12.1 이전의 기본 2%·쌍수 추가 2% 설명과 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50648,14 +50941,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_kultirasharpoon_a_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/정신의결속"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -50665,7 +50962,7 @@
     },
     "378937": {
       "id": "378937",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -50677,14 +50974,14 @@
       "icon": "inv_misc_bomb_05",
       "iconName": "inv_misc_bomb_05",
       "school": "",
-      "cooldown": "폭발물 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 폭파 전문가 (Explosives Expert)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄과 붐스틱 피해를 5% 증가시키는 특성이다. 삭제된 화염 장판을 현재 강화 대상으로 포함하지 않는다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50698,18 +50995,15 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/불꽃송곳니찌끼"
-        ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.059,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -50767,7 +51061,7 @@
     },
     "378950": {
       "id": "378950",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -50779,14 +51073,14 @@
       "icon": "spell_warrior_wildstrike",
       "iconName": "spell_warrior_wildstrike",
       "school": "",
-      "cooldown": "랩터의 일격 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 휘몰아치는 창 (Sweeping Spear)",
-      "category": "talent",
+      "range": "",
+      "description": "랩터의 일격 피해를 10% 높이는 특성이다. 공격 범위를 늘리는 기술이나 별도 전방 공격 버튼은 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50800,20 +51094,71 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.045,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\휘몰아치는창.md",
+        "lastUpdate": ""
+      }
+    },
+    "378955": {
+      "id": "378955",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "학살자 동료",
+      "koreanName": "학살자 동료",
+      "englishName": "Killer Companion",
+      "icon": "ability_hunter_masterscall",
+      "iconName": "ability_hunter_masterscall",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "야수의 모든 피해를 현재 툴팁 기준 10% 증가시키는 생존 특성이다. 특성 트리의 배운 점수와 현재 캐릭터 적용치를 확인한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_masterscall.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_masterscall.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_masterscall.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_masterscall.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_masterscall.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\학살자동료.md",
         "lastUpdate": ""
       }
     },
@@ -60597,7 +60942,7 @@
     },
     "385737": {
       "id": "385737",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -60609,14 +60954,14 @@
       "icon": "ability_druid_disembowel",
       "iconName": "ability_druid_disembowel",
       "school": "",
-      "cooldown": "한마음 한뜻으로 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 피투성이 발톱 (Bloody Claws)",
-      "category": "talent",
+      "range": "",
+      "description": "살쾡이의 격노 중첩 하나당 한마음 한뜻으로 피해를 10% 늘린다. 자신의 랩터 피해와 야수 후속 피해가 중첩으로 연결된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -60630,16 +60975,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이의격노",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/일당백"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.044,
+        "synergyCount": 1,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -101221,9 +101564,115 @@
         "lastUpdate": ""
       }
     },
+    "459843": {
+      "id": "459843",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "유탄 곡예사",
+      "koreanName": "유탄 곡예사",
+      "englishName": "Grenade Juggler",
+      "icon": "inv_misc_mohawkgrenade",
+      "iconName": "inv_misc_mohawkgrenade",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "붐스틱 사용 후 8초 동안 야생불 폭탄의 충전 회복 속도가 60% 빨라진다. 12.1의 재설계 효과이며 실제 추적 버프는 470488이다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_mohawkgrenade.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_mohawkgrenade.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_mohawkgrenade.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_mohawkgrenade.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_mohawkgrenade.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\유탄곡예사.md",
+        "lastUpdate": ""
+      }
+    },
+    "459939": {
+      "id": "459939",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "아웃랜드 맹독",
+      "koreanName": "아웃랜드 맹독",
+      "englishName": "Outland Venom",
+      "icon": "ability_hunter_potentvenom",
+      "iconName": "ability_hunter_potentvenom",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "대상에게 남긴 지속 피해 효과 하나당 시전자가 그 대상에게 주는 치명타 피해가 4% 증가한다. 서로 다른 지속 피해와 실제 적용 대상을 구분한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_potentvenom.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_potentvenom.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_potentvenom.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_potentvenom.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_potentvenom.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유산탄",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/물어"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/무리의지도자의포효"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\아웃랜드맹독.md",
+        "lastUpdate": ""
+      }
+    },
     "459964": {
       "id": "459964",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -101235,14 +101684,14 @@
       "icon": "ability_hunter_beastmastery",
       "iconName": "ability_hunter_beastmastery",
       "school": "",
-      "cooldown": "살상 명령 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 기습의 이점 (Flanker's Advantage)",
-      "category": "talent",
+      "range": "",
+      "description": "살상 명령이 집중 5를 추가 생성하고 치명타 확률이 10% 증가하게 하는 특성이다. 기본 집중 생성과 선택 후 생성량을 구분한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101255,8 +101704,60 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/원시의쇄도"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\기습의이점.md",
+        "lastUpdate": ""
+      }
+    },
+    "460198": {
+      "id": "460198",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "야생불 주입",
+      "koreanName": "야생불 주입",
+      "englishName": "Wildfire Infusion",
+      "icon": "inv_misc_5potionbag_special",
+      "iconName": "inv_misc_5potionbag_special",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "살상 명령 피해를 15% 늘리고 사용 시 야생불 폭탄 쿨다운을 1초 줄인다. 과거 서로 다른 폭탄 종류를 순환하던 동명 효과와 다르다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_5potionbag_special.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_5potionbag_special.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_5potionbag_special.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_5potionbag_special.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_5potionbag_special.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/원시의쇄도"
@@ -101266,11 +101767,11 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.043,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\기습의이점.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\야생불주입.md",
         "lastUpdate": ""
       }
     },
@@ -101954,7 +102455,7 @@
     },
     "462036": {
       "id": "462036",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -101966,14 +102467,14 @@
       "icon": "inv_ore_blackrock_nugget",
       "iconName": "inv_ore_blackrock_nugget",
       "school": "",
-      "cooldown": "야생불 폭탄/불꽃송곳니 찌끼 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 검은바위 탄약 (Blackrock Munitions)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄의 치명타 피해를 20% 증가시키는 선택 특성이다. 현재 효과는 삭제된 불꽃송곳니 찌끼까지 강화하는 과거 설명과 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101989,7 +102490,7 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/불꽃송곳니찌끼",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/폭격수",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/약점"
         ],
         "relatedHeroTalents": []
@@ -101997,7 +102498,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.044,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -104498,6 +104999,58 @@
         "lastUpdate": ""
       }
     },
+    "470488": {
+      "id": "470488",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "유탄 곡예사",
+      "koreanName": "유탄 곡예사",
+      "englishName": "Grenade Juggler",
+      "icon": "inv_misc_mohawkgrenade",
+      "iconName": "inv_misc_mohawkgrenade",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "붐스틱 뒤 야생불 폭탄 충전 회복 속도가 60% 증가한 8초 상태다. 선택 특성 459843과 실제 버프를 분리한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_mohawkgrenade.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_mohawkgrenade.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_mohawkgrenade.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_mohawkgrenade.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_mohawkgrenade.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유탄곡예사"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\유탄곡예사.md",
+        "lastUpdate": ""
+      }
+    },
     "470668": {
       "id": "470668",
       "type": "talent",
@@ -105204,7 +105757,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
+          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -105215,9 +105769,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.058,
+        "wikilinkCount": 6,
+        "synergyCount": 2,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -105663,7 +106217,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "야수에서 멧돼지가 피해를 주면 다음 코브라 사격 피해가 100% 증가한다. 적중한 적 하나마다 추가 코브라 대상이 늘며 기본 최대 4번까지 적용된다. 생존에서는 다음 붐스틱 강화로 작동한다.",
+      "description": "야수에서 멧돼지가 피해를 주면 다음 코브라 사격 피해가 100% 증가한다. 적중한 적 하나마다 추가 코브라 대상이 늘며 기본 최대 4번까지 적용된다. 생존에서는 멧돼지의 피해 적중마다 다음 붐스틱 피해가 5%씩 최대 20% 증가한다. 12.1 생존의 강화 유지시간은 1분이지만 레이드 전투와 쐐기 시작 시 지워진다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -105679,7 +106233,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -105688,9 +106243,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.042,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -105838,7 +106393,9 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/야수의격노",
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령"
+          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/살상명령",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -105846,9 +106403,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.039,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -114312,12 +114869,12 @@
       "school": "",
       "cooldown": "1.5분",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "15야드",
-      "description": "# 제압 (Takedown)",
+      "description": "사냥꾼과 야수가 도약해 공격하고 집중 50을 생성한다. 기본 쿨다운 90초, 시전자·야수 피해 20% 증가의 기본 지속시간은 8초다. 포악성 두 점으로 쿨다운이 60초가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114330,16 +114887,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/쌍둥이송곳니",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/포악성",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/측면노출"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/쇄도",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/달의부름"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 3,
+        "wikilinkCount": 7,
+        "synergyCount": 4,
         "linkDensity": 0.082,
         "hasWikilinks": true
       },
@@ -114642,59 +115204,9 @@
         "lastUpdate": ""
       }
     },
-    "1251592": {
-      "id": "1251592",
-      "type": "talent",
-      "class": "Hunter",
-      "spec": "생존",
-      "specs": [
-        "Survival"
-      ],
-      "name": "불꽃송곳니 찌끼",
-      "koreanName": "불꽃송곳니 찌끼",
-      "englishName": "Flamefang Pitch",
-      "icon": "inv_10_blacksmithing_craftedoptional_blacksmithdye_fire",
-      "iconName": "inv_10_blacksmithing_craftedoptional_blacksmithdye_fire",
-      "school": "",
-      "cooldown": "전문화 쿨다운",
-      "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "대상 지역",
-      "description": "# 불꽃송곳니 찌끼 (Flamefang Pitch)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_blacksmithing_craftedoptional_blacksmithdye_fire.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_blacksmithing_craftedoptional_blacksmithdye_fire.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_blacksmithing_craftedoptional_blacksmithdye_fire.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_blacksmithing_craftedoptional_blacksmithdye_fire.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_blacksmithing_craftedoptional_blacksmithdye_fire.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/검은바위탄약"
-        ],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\불꽃송곳니찌끼.md",
-        "lastUpdate": ""
-      }
-    },
     "1251717": {
       "id": "1251717",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -114706,14 +115218,14 @@
       "icon": "inv_coordinatedassault",
       "iconName": "inv_coordinatedassault",
       "school": "",
-      "cooldown": "창끝 소모 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 한마음 한뜻으로 (Strike as One)",
-      "category": "talent",
+      "range": "",
+      "description": "창끝을 소모하면 야수가 대상을 추가 공격하게 하는 특성이다. 야수의 모든 피해도 30% 높이며 후속 공격에는 700밀리초 내부 제한이 있다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114725,19 +115237,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_coordinatedassault.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/일당백",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피투성이발톱"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 5,
         "synergyCount": 3,
-        "linkDensity": 0.048,
+        "linkDensity": 0.075,
         "hasWikilinks": true
       },
       "source": {
@@ -114747,7 +115258,7 @@
     },
     "1251718": {
       "id": "1251718",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -114759,14 +115270,14 @@
       "icon": "ability_hunter_separationanxiety",
       "iconName": "ability_hunter_separationanxiety",
       "school": "",
-      "cooldown": "한마음 한뜻으로 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "주변 적",
-      "description": "# 일당백 (Two Against Many)",
-      "category": "talent",
+      "range": "",
+      "description": "한마음 한뜻으로가 두 명을 더 공격하며 최초 대상 이후 추가로 공격한 대상마다 피해가 10% 증가한다. 야수의 후속 공격을 광역으로 확장한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114779,7 +115290,7 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
@@ -114787,9 +115298,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.035,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -114842,6 +115353,112 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\썩은마귀-소환.md",
+        "lastUpdate": ""
+      }
+    },
+    "1251779": {
+      "id": "1251779",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "한마음 한뜻으로",
+      "koreanName": "한마음 한뜻으로",
+      "englishName": "Strike As One",
+      "icon": "inv_coordinatedassault",
+      "iconName": "inv_coordinatedassault",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "창끝 소비에 반응하는 야수의 자동 후속 공격 사건이다. 실제 사용 버튼은 창끝을 소비한 사냥꾼 기술이며 이 ID를 직접 시전 순서에 넣지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_coordinatedassault.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_coordinatedassault.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_coordinatedassault.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_coordinatedassault.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_coordinatedassault.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/일당백",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피투성이발톱"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Procs\\한마음한뜻으로.md",
+        "lastUpdate": ""
+      }
+    },
+    "1251790": {
+      "id": "1251790",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "포악성",
+      "koreanName": "포악성",
+      "englishName": "Savagery",
+      "icon": "ability_hunter_ferociousinspiration",
+      "iconName": "ability_hunter_ferociousinspiration",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "생존의 제압 쿨다운을 특성 한 점당 15초 줄인다. 두 점을 찍으면 기본 90초가 60초가 된다. 야수의 동명 포악성 424557과는 다른 주문이다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_ferociousinspiration.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_ferociousinspiration.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_ferociousinspiration.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_ferociousinspiration.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_ferociousinspiration.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\포악성.md",
         "lastUpdate": ""
       }
     },
@@ -114993,7 +115610,7 @@
     },
     "1252708": {
       "id": "1252708",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -115005,14 +115622,14 @@
       "icon": "ability_hunter_mongoosebite",
       "iconName": "ability_hunter_mongoosebite",
       "school": "",
-      "cooldown": "랩터의 일격 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 살쾡이의 격노 (Mongoose Fury)",
-      "category": "talent",
+      "range": "",
+      "description": "랩터의 일격을 사용할 때 8초 동안 해당 공격의 피해가 10% 증가하는 중첩을 얻는다. 중첩 생성 특성과 실제 버프 259388을 분리한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115025,17 +115642,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.052,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -115045,7 +115664,7 @@
     },
     "1252738": {
       "id": "1252738",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -115057,14 +115676,14 @@
       "icon": "ability_butcher_heavyhanded",
       "iconName": "ability_butcher_heavyhanded",
       "school": "",
-      "cooldown": "살쾡이의 격노 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 맹타 (Wallop)",
-      "category": "talent",
+      "range": "",
+      "description": "살쾡이의 격노 중첩을 얻을 때 20% 확률로 다음 랩터의 일격 피해를 50% 강화하는 특성이다. 실제 발동은 버프 1252741로 구분한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115077,22 +115696,71 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\맹타.md",
+        "lastUpdate": ""
+      }
+    },
+    "1252741": {
+      "id": "1252741",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "맹타",
+      "koreanName": "맹타",
+      "englishName": "Wallop",
+      "icon": "ability_butcher_heavyhanded",
+      "iconName": "ability_butcher_heavyhanded",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "다음 랩터의 일격 피해가 50% 증가한 발동 상태다. 살쾡이의 격노 중첩 획득 시 선택 특성에 의해 준비된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_butcher_heavyhanded.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_butcher_heavyhanded.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_butcher_heavyhanded.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_butcher_heavyhanded.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_butcher_heavyhanded.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이의격노"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/맹타"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.045,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\맹타.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\맹타.md",
         "lastUpdate": ""
       }
     },
@@ -115294,7 +115962,7 @@
     },
     "1252931": {
       "id": "1252931",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -115306,14 +115974,14 @@
       "icon": "inv_10_engineering2_pvpflaregun_color1",
       "iconName": "inv_10_engineering2_pvpflaregun_color1",
       "school": "",
-      "cooldown": "붐스틱 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "전방",
-      "description": "# 충격 회복 갑피 (Shellshock)",
-      "category": "talent",
+      "range": "",
+      "description": "붐스틱이 한 대상만 맞힐 때 피해를 40% 늘린다. 추가 대상마다 이 보너스가 5%씩 줄어드는 피해 특성이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115326,10 +115994,113 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
         "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\충격회복갑피.md",
+        "lastUpdate": ""
+      }
+    },
+    "1252943": {
+      "id": "1252943",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "깃드는 야생불",
+      "koreanName": "깃드는 야생불",
+      "englishName": "Wildfire Imbuement",
+      "icon": "spell_shaman_improvelavalash",
+      "iconName": "spell_shaman_improvelavalash",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "야생불 폭탄을 던지면 일정 확률로 10초 동안 자신과 야수의 자동 공격에 추가 화염 피해가 붙는다. 현재 툴팁의 기준 발동은 분당 약 2회다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_improvelavalash.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_improvelavalash.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvelavalash.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_improvelavalash.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_improvelavalash.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/화염파열"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\깃드는야생불.md",
+        "lastUpdate": ""
+      }
+    },
+    "1252947": {
+      "id": "1252947",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "깃드는 야생불",
+      "koreanName": "깃드는 야생불",
+      "englishName": "Wildfire Imbuement",
+      "icon": "spell_shaman_improvelavalash",
+      "iconName": "spell_shaman_improvelavalash",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "자신과 야수의 자동 공격에 화염 추가 피해가 붙는 10초 발동 상태다. 야생불 폭탄을 던질 때 관련 특성에 따라 발생한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_improvelavalash.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_improvelavalash.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvelavalash.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_improvelavalash.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_improvelavalash.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/깃드는야생불"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
@@ -115339,7 +116110,7 @@
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\충격회복갑피.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\깃드는야생불.md",
         "lastUpdate": ""
       }
     },
@@ -115495,6 +116266,58 @@
         "lastUpdate": ""
       }
     },
+    "1253053": {
+      "id": "1253053",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "예리한 날",
+      "koreanName": "예리한 날",
+      "englishName": "Razor Edge",
+      "icon": "spell_druid_bloodythrash",
+      "iconName": "spell_druid_bloodythrash",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1 신규 특성으로 랩터의 일격·랩터의 휩쓸기·살상 명령의 치명타 확률과 치명타 피해를 강화한다. 최종 패치 노트는 각각 10%를 명시한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_bloodythrash.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_druid_bloodythrash.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_druid_bloodythrash.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_druid_bloodythrash.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_druid_bloodythrash.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\예리한날.md",
+        "lastUpdate": ""
+      }
+    },
     "1253090": {
       "id": "1253090",
       "type": "talent",
@@ -115639,9 +116462,61 @@
         "lastUpdate": ""
       }
     },
+    "1253137": {
+      "id": "1253137",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "물어",
+      "koreanName": "물어",
+      "englishName": "Sic 'Em",
+      "icon": "ability_hunter_sickem",
+      "iconName": "ability_hunter_sickem",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "한마음 한뜻으로가 치명타를 내면 5초 동안 추가 출혈을 남기는 특성이다. 직접 쓰는 야수 명령이 아니라 후속 공격의 조건부 효과다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_sickem.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_sickem.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_sickem.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_sickem.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_sickem.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피추적자",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/아웃랜드맹독"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\물어.md",
+        "lastUpdate": ""
+      }
+    },
     "1253172": {
       "id": "1253172",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -115653,14 +116528,14 @@
       "icon": "inv_wildfirebomb_shrapnel",
       "iconName": "inv_wildfirebomb_shrapnel",
       "school": "",
-      "cooldown": "야생불 폭탄 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 유산탄 (Shrapnel Bomb)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄의 지속 피해를 출혈로 바꾸고 3초에 걸쳐 사냥꾼과 야수에게 집중 15를 준다. 별도로 던지는 두 번째 폭탄 버튼은 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115673,17 +116548,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피추적자",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/아웃랜드맹독"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.045,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -115693,7 +116569,7 @@
     },
     "1253176": {
       "id": "1253176",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -115705,14 +116581,14 @@
       "icon": "inv_wildfirebomb_blood",
       "iconName": "inv_wildfirebomb_blood",
       "school": "",
-      "cooldown": "화염 피해 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화염 파열 (Flamebreak)",
-      "category": "talent",
+      "range": "",
+      "description": "모든 화염 피해를 8% 증가시키는 특성이다. 야생불 폭탄의 화염 부분과 깃드는 야생불의 자동 공격 추가 피해를 강화한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115728,16 +116604,15 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/불꽃송곳니찌끼",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/깃드는야생불",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유산탄"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.059,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -115991,7 +116866,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
@@ -116001,9 +116877,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.068,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.094,
         "hasWikilinks": true
       },
       "source": {
@@ -116030,7 +116906,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "파수꾼의 대상별 표식이다. 사격에서는 다음 조준 사격의 직접 피해가 기본 20%, 생존에서는 다음 야생불 폭탄의 직접 피해가 기본 40% 증가한다. 발동 조건은 영웅 특성과 전문화에 따라 달라지며 야수 전문화에는 사용할 수 없다.",
+      "description": "파수꾼의 대상별 표식이다. 사격에서는 다음 조준 사격의 직접 피해가 기본 20%, 생존에서는 다음 야생불 폭탄의 직접 피해가 기본 40% 증가한다. 발동 조건은 영웅 특성과 전문화에 따라 달라지며 야수 전문화에는 사용할 수 없다. 12.1 생존의 표식은 16초 지속하며, 달의 축복의 폭탄 6초 회복은 소비가 아닌 표식 적용 시 발생한다.",
       "category": "buff",
       "tags": [],
       "patch": "12.1",
@@ -116046,7 +116922,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -116056,9 +116933,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.073,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -116461,17 +117338,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/연발공격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/깃드는야생불"
+        ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Hero-Talents/별바라기"
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.05,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.087,
         "hasWikilinks": true
       },
       "source": {
@@ -116514,7 +117394,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/정밀사격"
@@ -116522,9 +117403,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.043,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -116777,7 +117658,9 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/깃털분노"
@@ -116787,9 +117670,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.063,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.094,
         "hasWikilinks": true
       },
       "source": {
@@ -116799,7 +117682,7 @@
     },
     "1253945": {
       "id": "1253945",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -116811,14 +117694,14 @@
       "icon": "inv_ammo_bullet_08",
       "iconName": "inv_ammo_bullet_08",
       "school": "",
-      "cooldown": "붐스틱 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "전방",
-      "description": "# 살쾡이 탄환 (Mongoose Rounds)",
-      "category": "talent",
+      "range": "",
+      "description": "붐스틱 발사가 한 명 이상에게 피해를 주면 살쾡이의 격노 중첩을 1개 얻는 특성이다. 내부 발동 제한은 100밀리초다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116831,18 +117714,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이의격노"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-4세트"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.054,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -117958,9 +118840,62 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "1256938": {
+      "id": "1256938",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "측면 노출",
+      "koreanName": "측면 노출",
+      "englishName": "Flanked",
+      "icon": "ability_hunter_invigeration",
+      "iconName": "ability_hunter_invigeration",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "제압 피해를 50% 늘리고 주변 네 대상을 추가 공격하게 한다. 제압 동안 시전자의 공격 속도도 100% 높인다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_invigeration.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_invigeration.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_invigeration.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_invigeration.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_invigeration.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/깃드는야생불",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/피추적자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\측면노출.md",
+        "lastUpdate": ""
+      }
+    },
     "1257011": {
       "id": "1257011",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -117972,14 +118907,14 @@
       "icon": "ability_rogue_findweakness",
       "iconName": "ability_rogue_findweakness",
       "school": "",
-      "cooldown": "랩터의 일격/붐스틱 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 약점 (Vulnerability)",
-      "category": "talent",
+      "range": "",
+      "description": "랩터의 일격과 붐스틱의 치명타 피해를 20% 높이는 특성이다. 검은바위 탄약의 폭탄 치명타 강화와 대상 주문이 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118003,7 +118938,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.05,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -118301,7 +119236,7 @@
     },
     "1259003": {
       "id": "1259003",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -118310,17 +119245,20 @@
       "name": "랩터의 휩쓸기",
       "koreanName": "랩터의 휩쓸기",
       "englishName": "Raptor Swipe",
+      "aliases": [
+        "랩터의 휩쓸기 첫 특성"
+      ],
       "icon": "inv12_apextalent_hunter_raptorswipe",
       "iconName": "inv12_apextalent_hunter_raptorswipe",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "15야드 전방",
-      "description": "# 랩터의 휩쓸기 (Raptor Swipe)",
-      "category": "ability",
+      "range": "",
+      "description": "첫 정점 특성은 랩터의 일격 사용 뒤 다음 공격이 휩쓸기로 바뀔 확률을 25%로 만든다. 실제 휩쓸기 주문 ID는 1262293이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118334,25 +119272,27 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.074,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\랩터의휩쓸기.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\랩터의휩쓸기-첫특성.md",
         "lastUpdate": ""
       }
     },
-    "1259019": {
-      "id": "1259019",
-      "type": "talent",
+    "1259017": {
+      "id": "1259017",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -118361,17 +119301,75 @@
       "name": "랩터의 휩쓸기",
       "koreanName": "랩터의 휩쓸기",
       "englishName": "Raptor Swipe",
+      "aliases": [
+        "랩터의 휩쓸기 중간 특성"
+      ],
+      "icon": "ability_hunter_raptorstrike",
+      "iconName": "ability_hunter_raptorstrike",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "현재 툴팁 기준 랩터의 일격·야생불 폭탄·랩터의 휩쓸기 피해를 10% 높이며, 휩쓸기의 주 대상 피해를 35% 추가 강화한다. 특성 트리의 중간 정점 노드다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_raptorstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_raptorstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_raptorstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_raptorstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_raptorstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\랩터의휩쓸기-중간특성.md",
+        "lastUpdate": ""
+      }
+    },
+    "1259019": {
+      "id": "1259019",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "랩터의 휩쓸기",
+      "koreanName": "랩터의 휩쓸기",
+      "englishName": "Raptor Swipe",
+      "aliases": [
+        "랩터의 휩쓸기 마지막 특성"
+      ],
       "icon": "inv_raptortravelform",
       "iconName": "inv_raptortravelform",
       "school": "",
-      "cooldown": "랩터의 일격 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "전방 15야드",
-      "description": "# 랩터의 휩쓸기 (Raptor Swipe)",
-      "category": "talent",
+      "range": "",
+      "description": "마지막 정점 특성이다. 일반 랩터의 일격이 다음 공격을 랩터의 휩쓸기로 바꿀 확률을 100%로 만들고, 창끝을 소비하는 휩쓸기의 한마음 한뜻으로를 300% 효율로 강화한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118385,7 +119383,7 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
@@ -118393,9 +119391,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.061,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -120696,14 +121694,14 @@
       "icon": "inv_musket_04",
       "iconName": "inv_musket_04",
       "school": "",
-      "cooldown": "45초",
-      "castTime": "정신 집중",
-      "resourceCost": "없음",
-      "range": "20야드 전방",
-      "description": "# 붐스틱 (Boomstick)",
+      "cooldown": "1분",
+      "castTime": "3초 정신 집중",
+      "resourceCost": "집중 50",
+      "range": "전방 20야드",
+      "description": "집중 50을 소모해 3초 동안 전방으로 네 번 발사하는 공격이다. 기본 쿨다운은 60초이며 빠른 재장전 선택 시 45초가 된다. 8대상을 초과하면 감소된 피해를 준다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120715,16 +121713,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_musket_04.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/빠른재장전",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/야생불탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유탄곡예사",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/치명적보정",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-4세트"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.073,
+        "wikilinkCount": 7,
+        "synergyCount": 6,
+        "linkDensity": 0.079,
         "hasWikilinks": true
       },
       "source": {
@@ -120734,7 +121737,7 @@
     },
     "1261229": {
       "id": "1261229",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -120746,14 +121749,14 @@
       "icon": "inv_ammo_firetar",
       "iconName": "inv_ammo_firetar",
       "school": "",
-      "cooldown": "붐스틱/야생불 폭탄 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "전방",
-      "description": "# 야생불 탄환 (Wildfire Shells)",
-      "category": "talent",
+      "range": "",
+      "description": "붐스틱 발사가 한 명 이상에게 피해를 주면 야생불 폭탄 쿨다운을 3초 줄인다. 12.1 이전의 2초 설명을 대체하며 내부 발동 제한은 100밀리초다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120769,13 +121772,15 @@
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/유탄곡예사"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.036,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -121126,6 +122131,61 @@
         "lastUpdate": ""
       }
     },
+    "1262293": {
+      "id": "1262293",
+      "type": "atomic-skill",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "랩터의 휩쓸기",
+      "koreanName": "랩터의 휩쓸기",
+      "englishName": "Raptor Swipe",
+      "icon": "inv12_apextalent_hunter_raptorswipe",
+      "iconName": "inv12_apextalent_hunter_raptorswipe",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "집중 30",
+      "range": "전방 15야드",
+      "description": "정점 특성으로 랩터의 일격을 대체하는 실제 시전 주문이다. 전방 15미터의 적을 공격하며 5대상을 넘으면 피해가 감소한다. 선택 특성 ID 1259003과 실제 시전 ID 1262293은 다르다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_raptorswipe.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_hunter_raptorswipe.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_hunter_raptorswipe.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_hunter_raptorswipe.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_raptorswipe.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기-첫특성",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기-중간특성",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.084,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Skills\\랩터의휩쓸기.md",
+        "lastUpdate": ""
+      }
+    },
     "1262329": {
       "id": "1262329",
       "type": "talent",
@@ -121224,7 +122284,7 @@
     },
     "1262409": {
       "id": "1262409",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -121236,14 +122296,14 @@
       "icon": "ability_siege_engineer_detonate",
       "iconName": "ability_siege_engineer_detonate",
       "school": "",
-      "cooldown": "야생불 폭탄/붐스틱 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 치명적 보정 (Lethal Calibration)",
-      "category": "talent",
+      "range": "",
+      "description": "야생불 폭탄이 맞힌 적 한 명당 붐스틱 쿨다운을 2초씩, 한 번의 폭탄당 최대 10초 줄인다. 단일은 2초, 다섯 명 이상은 최대치다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121257,16 +122317,17 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/빠른재장전"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.056,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -121276,7 +122337,7 @@
     },
     "1262442": {
       "id": "1262442",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -121288,14 +122349,14 @@
       "icon": "ability_hunter_beastwithin",
       "iconName": "ability_hunter_beastwithin",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신/소환수",
-      "description": "# 맺어지는 유대 (Bonding)",
-      "category": "talent",
+      "range": "",
+      "description": "특화를 3% 올리고 모든 특화 증가량을 5% 늘리는 특성이다. 정신의 결속의 피해 증가와 연결되며 피해 감소가 특화 수치에 비례해 무한히 커지는 효과는 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121307,18 +122368,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_beastwithin.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/한마음한뜻으로"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/정신의결속"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -124076,7 +125135,9 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/야수/Skills/코브라사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의일격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/야수/Talents/무리전술"
@@ -124084,9 +125145,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.036,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -124186,7 +125247,8 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
-          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창"
+          "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -124195,9 +125257,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.071,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.086,
         "hasWikilinks": true
       },
       "source": {
@@ -124398,7 +125460,9 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/정조준",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -124409,9 +125473,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.05,
+        "wikilinkCount": 7,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -125801,15 +126865,16 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/05-사냥꾼/공용/Skills/달빛회전표창",
-          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격"
+          "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/조준사격",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.06,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.075,
         "hasWikilinks": true
       },
       "source": {
@@ -130772,7 +131837,7 @@
     },
     "1272136": {
       "id": "1272136",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -130784,14 +131849,14 @@
       "icon": "ability_vehicle_reloadammo",
       "iconName": "ability_vehicle_reloadammo",
       "school": "",
-      "cooldown": "붐스틱 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빠른 재장전 (Quick Reload)",
-      "category": "talent",
+      "range": "",
+      "description": "붐스틱 기본 쿨다운을 15초 줄이는 특성이다. 다른 감소가 없을 때 60초가 45초로 바뀐다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130804,8 +131869,7 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/치명적보정"
@@ -130813,9 +131877,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.049,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -130877,7 +131941,7 @@
     },
     "1272139": {
       "id": "1272139",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -130889,14 +131953,14 @@
       "icon": "ability_hunter_spearhead",
       "iconName": "ability_hunter_spearhead",
       "school": "",
-      "cooldown": "제압 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 쌍둥이 송곳니 (Twin Fangs)",
-      "category": "talent",
+      "range": "",
+      "description": "제압 사용 시 창끝 3중첩을 부여한다. 단순히 제압 다음 세 공격만 강화하는 것이 아니라 제압 자신의 타격과 생성 순서를 함께 봐야 한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130909,19 +131973,15 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/제압"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 5,
-        "linkDensity": 0.067,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -131039,7 +132099,7 @@
     },
     "1272154": {
       "id": "1272154",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Hunter",
       "spec": "생존",
       "specs": [
@@ -131051,14 +132111,14 @@
       "icon": "ability_hunter_longevity",
       "iconName": "ability_hunter_longevity",
       "school": "",
-      "cooldown": "살상 명령 연계",
+      "cooldown": "지속 효과",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 원시의 쇄도 (Primal Surge)",
-      "category": "talent",
+      "range": "",
+      "description": "살상 명령이 창끝을 1중첩 더 생성하고 창끝의 피해 증가량을 5% 높인다. 기본 특성과 함께 살상 명령 한 번으로 강화 횟수 두 개를 준비한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131071,16 +132131,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령",
-          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/창끝"
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/살상명령"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/창끝"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -132509,6 +133570,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Hero-Talents\\별똥별의길.md",
+        "lastUpdate": ""
+      }
+    },
+    "1273155": {
+      "id": "1273155",
+      "type": "buff",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "랩터의 휩쓸기!",
+      "koreanName": "랩터의 휩쓸기!",
+      "englishName": "Raptor Swipe!",
+      "icon": "inv12_apextalent_hunter_raptorswipe",
+      "iconName": "inv12_apextalent_hunter_raptorswipe",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "다음 랩터의 일격 버튼이 휩쓸기로 바뀐 상태를 추적하는 버프다. 버프 적용과 실제 휩쓸기 시전은 별도 사건이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_raptorswipe.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_hunter_raptorswipe.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_hunter_raptorswipe.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_hunter_raptorswipe.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_hunter_raptorswipe.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/랩터의휩쓸기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기-첫특성",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/랩터의휩쓸기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\랩터의휩쓸기.md",
         "lastUpdate": ""
       }
     },
@@ -136125,6 +137239,117 @@
         "lastUpdate": ""
       }
     },
+    "1296635": {
+      "id": "1296635",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "생존 사냥꾼 12.1 직업 세트 4세트",
+      "koreanName": "생존 사냥꾼 12.1 직업 세트 4세트",
+      "englishName": "Hunter Survival 12.1 Class Set 4pc",
+      "aliases": [
+        "생존 시즌 2 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2 4세트는 살쾡이의 격노 효과를 10% 높인다. 별도로 붐스틱의 각 발사가 격노 지속시간을 1초 늘린다. 발사마다 효과 증가량이 10%씩 누적되는 것은 아니다. 중첩 생성은 살쾡이 탄환의 효과다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/붐스틱"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/살쾡이탄환",
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296636": {
+      "id": "1296636",
+      "type": "passive",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "Hunter Survival 12.1 Class Set 4pc",
+      "koreanName": "Hunter Survival 12.1 Class Set 4pc",
+      "englishName": "Hunter Survival 12.1 Class Set 4pc",
+      "aliases": [
+        "생존 시즌 2 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "시즌 2 2세트 효과다. 살쾡이의 격노가 야생불 폭탄 피해도 10% 증가시키게 된다. 아이템 세트 데이터의 2세트 지정과 실제 효과를 기준으로 분류한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
     "1296637": {
       "id": "1296637",
       "type": "passive",
@@ -137521,6 +138746,58 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\피로치를빚.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "1311963": {
+      "id": "1311963",
+      "type": "spec-talent",
+      "class": "Hunter",
+      "spec": "생존",
+      "specs": [
+        "Survival"
+      ],
+      "name": "폭격수",
+      "koreanName": "폭격수",
+      "englishName": "Bombardier",
+      "icon": "inv_misc_blackironbomb",
+      "iconName": "inv_misc_blackironbomb",
+      "school": "",
+      "cooldown": "지속 효과",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1에 추가된 폭탄 특성이다. 야생불 폭탄 피해·치명타 확률·치명타 피해를 각각 15% 높인다. 이전에 같은 이름으로 불리던 쿨다운 초기화 효과와 혼동하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_blackironbomb.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_blackironbomb.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_blackironbomb.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_blackironbomb.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_blackironbomb.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Skills/야생불폭탄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/05-사냥꾼/생존/Talents/검은바위탄약"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\폭격수.md",
+        "lastUpdate": ""
       }
     },
     "hero-aldrachi-reaver": {

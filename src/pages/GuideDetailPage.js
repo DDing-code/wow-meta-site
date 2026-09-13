@@ -349,8 +349,7 @@ function displayGuideText(value) {
     .replace(/루프/g, '반복 흐름')
     .replace(/세팅값/g, '설정값')
     .replace(/세팅/g, '준비')
-    .replace(/리셋 버튼/g, '초기화 버튼')
-    .replace(/리셋/g, '초기화')
+    .replace(/(^|[^가-힣A-Za-z0-9])리셋/g, '$1초기화')
     .replace(/운용 판단/g, '운용 기준')
     .replace(/판단 프레임/g, '운용 기준')
     .replace(/분기 판단/g, '선택 기준')
@@ -1685,18 +1684,6 @@ const SPECIALIST_CHARTS = {
       { phase: '곰 상태 보조 회복', skillId: '8936', label: '발동 재생', note: '세나리우스의 꿈 발동이 있을 때 직접 대상을 골라 즉시·무료 치유합니다. 꿈의 안내자의 자동 치유와 구분합니다.', action: '발동·대상 확인' },
     ],
   },
-  'hunter-survival': {
-    id: 'resource',
-    title: '창끝 생성과 소비',
-    sectionHeading: '창끝과 제압 타이밍',
-    sectionIntro: '생존 사냥꾼은 살상 명령으로 창끝을 만들고, 창끝을 제압, 야생불 폭탄, 붐스틱, 랩터 계열 소비기에 배정합니다.',
-    caption: '살상 명령, 창끝, 제압, 야생불 폭탄, 붐스틱, 랩터의 일격/휩쓸기, 무리의 지도자 보상을 확인합니다.',
-    definition: [
-      ['의미', '창끝은 다음 직접 피해를 강화하는 핵심 버프이고, 살상 명령은 창끝과 집중을 만드는 생성기입니다.'],
-      ['읽는 법', '제압 전 창끝과 강한 소비기를 준비하고, 광역에서는 전방 기술이 실제 대상에게 맞는지 함께 봅니다.'],
-      ['체크 포인트', '창끝 3중첩 방치, 살상 명령 지연, 제압 전 준비 부족, 야생불 폭탄 2충전, 붐스틱 각도 손실을 봅니다.'],
-    ],
-  },
   'mage-fire': {
     id: 'cooldown',
     title: '발화와 몰아치는 열기',
@@ -1773,7 +1760,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4874,58 +4861,6 @@ function getUptimeRows(guide, data) {
 
 
 
-  if (guide.id === 'hunter-survival') {
-    return [
-      {
-        label: '우선 대상',
-        skill: findSkillByNames(data, ['사냥꾼의 징표']),
-        note: '오래 사는 보스나 위험 몹에 먼저 유지합니다.',
-        segments: [[2, 92]],
-      },
-      {
-        label: '생성 충전',
-        skill: findSkillByNames(data, ['살상 명령']),
-        note: '창끝과 집중을 만들되 2충전 방치와 3중첩 과잉을 막습니다.',
-        segments: [[6, 10], [26, 10], [48, 10], [70, 10], [88, 8]],
-      },
-      {
-        label: '중심 버프',
-        skill: findSkillByNames(data, ['창끝']),
-        note: '강한 소비기 전에 1~3중첩을 맞춰 소비 타이밍을 정합니다.',
-        segments: [[10, 18], [34, 18], [58, 18], [82, 12]],
-      },
-      {
-        label: '제압 구간',
-        skill: findSkillByNames(data, ['제압']),
-        note: '제압 전에 폭탄, 붐스틱, 무리의 지도자 살상 명령을 준비합니다.',
-        segments: [[24, 18], [72, 18]],
-      },
-      {
-        label: '폭탄 충전',
-        skill: findSkillByNames(data, ['야생불 폭탄']),
-        note: '2충전 임박, 광역 적중 수, 파수꾼 표식 소비를 함께 봅니다.',
-        segments: [[12, 10], [36, 10], [62, 10], [84, 10]],
-      },
-      {
-        label: '전방 채널',
-        skill: findSkillByNames(data, ['붐스틱']),
-        note: '창끝을 먹이고 전방 20미터에 대상이 모였는지 확인합니다.',
-        segments: [[30, 14], [76, 12]],
-      },
-      {
-        label: '랩터 소비',
-        skill: findSkillByNames(data, ['랩터의 휩쓸기', '랩터의 일격']),
-        note: '광역은 휩쓸기 방향, 단일은 일격 집중 정리를 구분합니다.',
-        segments: [[18, 9], [44, 9], [66, 9], [90, 7]],
-      },
-      {
-        label: '영웅 분기',
-        skill: findSkillByNames(data, ['무리의 지도자의 포효', '달빛 회전 표창']),
-        note: '무리의 지도자는 포효/쇄도 살상 명령, 파수꾼은 제압 후 달빛 회전 표창과 표식 폭탄을 봅니다.',
-        segments: [[28, 12], [72, 14]],
-      },
-    ];
-  }
 
   if (guide.id === 'evoker-preservation') {
     return [

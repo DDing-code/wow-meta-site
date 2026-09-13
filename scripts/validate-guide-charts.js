@@ -363,6 +363,8 @@ function validateNoDuplicateBranches(branches, scopeName) {
 
 function main() {
   const guideDetailSource = readSource(GUIDE_DETAIL_PATH);
+  const displayCopy = new Function('value', 'cleanText', 'normalizeCommunityTerms', extractFunctionBody(guideDetailSource, 'displayGuideText'));
+  assert(displayCopy('프리셋 버튼, 리셋 버튼, 리셋합니다', cleanText, value => value) === '프리셋 버튼, 초기화 버튼, 초기화합니다', 'Copy cleanup must not rewrite reset inside preset');
   const getScopedSynergySkills = new Function('synergy', 'scopedSkills', 'uniqueBy', 'normalizeSkillLookupText', 'skillLookupKeys', extractFunctionBody(guideDetailSource, 'getSynergySkills'));
   const scopedResult = getScopedSynergySkills(
     { participants: ['5143', 'foreign-spec'] }, [{ id: '5143', name: '신비한 화살' }],
@@ -476,7 +478,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship'].includes(guideId)) {
+    if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);

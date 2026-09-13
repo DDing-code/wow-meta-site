@@ -20,6 +20,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['evoker-augmentation', '12.1'],
   ['hunter-beastmastery', '12.1'],
   ['hunter-marksmanship', '12.1'],
+  ['hunter-survival', '12.1'],
   ['mage-arcane', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
@@ -1031,6 +1032,34 @@ function main() {
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 
+  const survival = manuscripts['hunter-survival'];
+  const survivalSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '생존', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(survivalSource)) {
+    assert(JSON.stringify(JSON.parse(read(survivalSource))) === JSON.stringify(survival), 'Survival must match its canonical 12.1 manuscript');
+  }
+  const survivalNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]생존[\\/]/.test(skill.source?.kbPath || ''));
+  assert(survivalNotes.length === 58 && survivalNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 58 Survival notes must retain reviewed descriptions');
+  assert(!survival.extraSkills?.length && !kbSkills['1251592'], 'Survival must not revive removed Flamefang Pitch or bypass canonical spells');
+  assert(kbSkills['1262293']?.type === 'atomic-skill' && ['1259003', '1259017', '1259019'].every(id => kbSkills[id]?.type === 'spec-talent') && kbSkills['1273155']?.type === 'buff', 'Raptor Swipe cast, all apex nodes and prepared buff must remain distinct');
+  assert(kbSkills['260285']?.type === 'spec-talent' && kbSkills['260286']?.type === 'buff', 'Tip of the Spear talent and consumable buff need separate IDs');
+  assert(kbSkills['1261229']?.description.includes('3초') && kbSkills['1253825']?.description.includes('6초'), 'Survival shell and Moon Blessing reductions must retain 12.1 values');
+  assert(kbSkills['459843']?.description.includes('60%') && kbSkills['1250646']?.cooldown === '1.5분' && kbSkills['1250646']?.description.includes('90초'), 'Grenade recharge speed and Takedown base cooldown must remain current');
+  assert(['1296636', '1296635'].every(id => kbSkills[id]?.type === 'passive') && kbSkills['1296636']?.description.includes('2세트') && kbSkills['1296635']?.description.includes('1초'), 'S2 internal names must not reverse the actual 2pc and 4pc effects');
+  assert(survival.graphCenterSkillId === '259495' || survival.graphCenterSkillId === 259495, 'Survival graph must use the actual central Wildfire Bomb spell');
+  for (const branch of survival.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Survival hero needs authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Survival ST and AoE must retain distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Survival flows must use actual casts and complete conditions');
+      }
+    }
+  }
+  const packLeaderSurvival = survival.heroBranches.find(branch => branch.label === '무리의 지도자');
+  assert(!JSON.stringify(packLeaderSurvival).includes('"skillId":"1264949"') && packLeaderSurvival.opener.steps.find(row => row.skillId === '1250646').trigger.includes('두 개'), 'Pack Leader must not borrow Chakram or lose its non-Twin-Fangs Takedown condition');
+  const survivalTakedown = packLeaderSurvival.opener.steps.findIndex(row => row.skillId === '1250646');
+  assert(packLeaderSurvival.opener.steps[survivalTakedown + 1]?.skillId === '259489', 'Pack Leader must execute its prepared summon after Takedown');
+
   const marksmanship = manuscripts['hunter-marksmanship'];
   const marksmanshipSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '사격', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(marksmanshipSource)) {
@@ -1087,6 +1116,9 @@ function main() {
   }
   assert(!JSON.stringify(beastMastery.heroBranches[0]).includes('"skillId":"466930"') && beastMastery.heroBranches[1].singleTarget.priority.some(row => row.skillId === '392060'), 'Pack Leader must not borrow Dark Ranger casts');
   const scopedSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies);
+  const survivalSynergies = scopedSynergies.filter(row => row.class === 'Hunter' && row.spec === 'Survival');
+  assert(survivalSynergies.length === 16 && survivalSynergies.every(row => row.description?.length > 50 && row.participants.every(id => kbSkills[id])), 'All 16 Survival relationships need real participants and authored explanations');
+  assert(survivalSynergies.every(row => row.participants.every(id => !['1296636', '1296635'].includes(id))), 'Survival graph must use actual Mongoose Fury instead of internal tier-effect placeholders');
   const marksmanshipSynergies = scopedSynergies.filter(row => row.id.startsWith('hunter_mm_'));
   assert(marksmanshipSynergies.length === 15 && marksmanshipSynergies.every(row => row.description?.length > 50 && row.participants.every(id => kbSkills[id])), 'All 15 authored Marksmanship relationships must retain real participants and descriptions');
   assert(!scopedSynergies.find(row => row.id === 'hunter_hero_sentinel_moonstorm_lunar')?.participants.includes('1264781'), 'Sentinel must not borrow Pack Leader Lethal Barbs');

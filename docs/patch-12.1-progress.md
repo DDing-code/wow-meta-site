@@ -128,15 +128,27 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Inspected both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons. Native details retain the full use conditions. Final production bundle `main.146c4d1d.js` was verified after removing a duplicate Chakram chip and tightening a patch attribution; all spell hrefs are numeric and no console errors appeared. The graph centers on Aimed Shot with 13 actual authored relationships.
 - Limits: current WCL/Archon aggregates, personal simulations and private Trueshot Lodge messages were not obtained. Dense graph-label overlaps (including internal set labels), generic featured-skill selection, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
 
+### Survival Hunter
+
+- Replaced the old manuscript in place with 14 manually authored subjects, ten practical tips and separate Sentinel/Pack Leader opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/05-사냥꾼/생존/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 update and September hotfixes, DoolB's Wowhead guide, Azortharion's actual Icy Veins hero/talent/target presets, current Korean/English tooltips and live SimC commit `616c7cde89888480dc4e5fb1755567ef97356dfd`. Method's dated page still prescribed removed Flamefang Pitch; those instructions were explicitly excluded.
+- Manually reviewed all 58 local atomic records and authored 16 relationships. Added Survival links to 12 existing shared Hunter notes, with specialization-specific Hogstrider/mark/Chakram explanations. Only Hunter records changed in the generated DB.
+- Removed Flamefang Pitch 1251592; separated actual Raptor Swipe 1262293 from all three apex nodes and prepared buff 1273155, Tip talent 260285 from buff 260286, Mongoose Fury and automatic Strike as One effects. Corrected base costs/cooldowns, redesigned traits, current reductions and mastery range.
+- Season 2 2pc is 1296636 despite its stale internal 4pc name. The 4pc's fixed 10% effect increase is separate from each Boomstick blast's one-second duration extension. Both remain passive DB records; the graph uses actual Mongoose Fury, not internal set icons.
+- Sentinel's short S2 opener and non-Twin-Fangs Pack Leader preparation remain separate. Pack Leader executes its prepared summon with Kill Command after Takedown; Sentinel has its own mark/Chakram conditions. Real casts only, no passive buttons. Removed the illustrative resource/uptime chart.
+- Fixed shared text cleanup rewriting preset into a malformed word by matching reset only at a word start; added a runnable regression check. Added Survival canonical equality, spell identity, removed-spell, set-effect, hero-mode and synergy checks.
+- All prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for 58 local and 67 shared numeric notes; explicit guide icon/name checks passed for 17 IDs, all with zero errors/warnings. Shared metadata validation is not a full mechanics review of all 67 common notes.
+- Verified both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons, and native detail disclosure retains complete conditions. Final bundle `main.6855ff4e.js` was checked after the last wording fixes; spell links are numeric, no console errors appeared, and Wildfire Bomb has nine actual direct synergy connections.
+- Limits: current WCL/Archon aggregates, personal simulations and private Trueshot Lodge messages were not obtained. Author/build-specific opener differences remain explicit. Dense graph labels, generic featured-skill duplication, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 20 manuscripts
+## Still 12.0.5: 19 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Hunter | Survival |
 | Mage | Fire, Frost |
 | Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
@@ -148,8 +160,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery and Marksmanship now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 20 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship and Survival now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 19 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.
