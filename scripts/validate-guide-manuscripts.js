@@ -22,6 +22,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['hunter-marksmanship', '12.1'],
   ['hunter-survival', '12.1'],
   ['mage-arcane', '12.1'],
+  ['mage-fire', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -1031,6 +1032,28 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const fire = manuscripts['mage-fire'];
+  const fireSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '화염', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(fireSource)) {
+    assert(JSON.stringify(JSON.parse(read(fireSource))) === JSON.stringify(fire), 'Fire must match its canonical 12.1 manuscript');
+  }
+  const fireNotes = Object.values(kbSkills).filter(skill => /[\\/]06-마법사[\\/]화염[\\/]/.test(skill.source?.kbPath || ''));
+  assert(fireNotes.length === 53 && fireNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 53 Fire notes must retain reviewed descriptions');
+  assert(!fire.extraSkills?.length && !kbSkills['383860'], 'Fire must not revive obsolete Hyperthermia or bypass canonical spells');
+  assert(['383874', '269651', '1257350', '458964', '48107', '48108'].every(id => kbSkills[id]?.type === 'buff'), 'Fire proc buffs must not appear as direct casts');
+  assert(['1257343', '1257349', '1257348'].every(id => kbSkills[id]?.type === 'spec-talent'), 'All three Fired Up nodes must remain distinct');
+  assert(kbSkills['1296584']?.type === 'passive' && kbSkills['1296584']?.description.includes('25%'), 'Fire S2 4pc must retain the current tooltip bonus');
+  assert(kbSkills['431044']?.type === 'atomic-skill' && kbSkills['449596']?.description.includes('12%p'), 'Frostfire Bolt and revised Rondurmancy must retain their current identities');
+  for (const branch of fire.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Fire hero needs authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Fire ST and AoE must retain distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Fire flows must use actual casts and complete conditions');
+      }
+    }
+  }
 
   const survival = manuscripts['hunter-survival'];
   const survivalSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '생존', 'Meta', 'guide-12.1.json');

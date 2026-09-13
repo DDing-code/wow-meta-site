@@ -1684,18 +1684,6 @@ const SPECIALIST_CHARTS = {
       { phase: '곰 상태 보조 회복', skillId: '8936', label: '발동 재생', note: '세나리우스의 꿈 발동이 있을 때 직접 대상을 골라 즉시·무료 치유합니다. 꿈의 안내자의 자동 치유와 구분합니다.', action: '발동·대상 확인' },
     ],
   },
-  'mage-fire': {
-    id: 'cooldown',
-    title: '발화와 몰아치는 열기',
-    sectionHeading: '발동 상태와 극딜 흐름',
-    sectionIntro: '화염 마법사는 발화, 열기, 몰아치는 열기!, 불사조의 불길, 화염 작렬 충전이 같은 구간 안에서 끊기지 않는지 봐야 합니다.',
-    caption: '발화, 열기, 몰아치는 열기!, 화염 작렬, 불사조의 불길, 불기둥 광역 전환과 생존기 보존을 확인합니다.',
-    definition: [
-      ['의미', '발화는 화염의 중심 극딜 구간이고, 몰아치는 열기!는 그 안에서 즉시 강한 주문으로 바뀌는 상태입니다.'],
-      ['읽는 법', '발화 전에 화염 작렬 충전과 열기를 준비하고, 발화 중에는 열기를 몰아치는 열기!로 바꾸는 흐름이 끊기지 않게 봅니다.'],
-      ['체크 포인트', '발화 지연, 열기 손실, 화염 작렬 과충전, 몰아치는 열기 방치, 광역 불기둥 전환 누락을 봅니다.'],
-    ],
-  },
   'evoker-devastation': {
     id: 'resource',
     title: '용의 분노와 해방된 불길',
@@ -1760,7 +1748,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -3575,58 +3563,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'mage-fire') {
-    return [
-      {
-        label: '중심 구간',
-        skill: findSkillByNames(data, ['발화']),
-        note: '모든 치명타 보장과 몰아치는 열기! 흐름이 이 구간에 모입니다.',
-        segments: [[16, 18], [72, 18]],
-      },
-      {
-        label: '착탄 정렬',
-        skill: findSkillByNames(data, ['유성']),
-        note: '유성은 누른 순간보다 발화 안에 떨어졌는지를 봅니다.',
-        segments: [[12, 10], [68, 10]],
-      },
-      {
-        label: '전환 연료',
-        skill: findSkillByNames(data, ['화염 작렬']),
-        note: '열기를 몰아치는 열기!로 바꾸되 충전 과잉을 막습니다.',
-        segments: [[8, 8], [22, 8], [36, 8], [64, 8], [78, 8], [90, 6]],
-      },
-      {
-        label: '중간 발동',
-        skill: findSkillByNames(data, ['열기']),
-        note: '열기 상태는 소비가 아니라 화염 작렬로 승격해야 하는 신호입니다.',
-        segments: [[6, 8], [30, 8], [58, 8], [86, 8]],
-      },
-      {
-        label: '소비 상태',
-        skill: findSkillByNames(data, ['몰아치는 열기!']),
-        note: '방치하지 않고 불덩이 작렬 또는 불기둥으로 바로 소비합니다.',
-        segments: [[20, 10], [34, 10], [76, 10], [88, 8]],
-      },
-      {
-        label: '단일 소비',
-        skill: findSkillByNames(data, ['불덩이 작렬']),
-        note: '단일에서는 몰아치는 열기!를 불덩이 작렬로 소비하고 착탄을 조율합니다.',
-        segments: [[24, 8], [38, 8], [80, 8]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['불기둥', '특화: 작열']),
-        note: '3대상 이상에서는 불기둥과 특화: 작열 적중 수를 함께 봅니다.',
-        segments: [[42, 12], [92, 6]],
-      },
-      {
-        label: '보정/보존',
-        skill: findSkillByNames(data, ['불태우기', '이글거리는 방벽']),
-        note: '이동과 피해가 발화 구간의 전환 흐름을 끊지 않게 합니다.',
-        segments: [[48, 10], [94, 5]],
-      },
-    ];
-  }
 
 
   if (guide.id === 'shaman-elemental') {

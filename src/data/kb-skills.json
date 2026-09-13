@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T00:02:48.100Z",
+    "generatedAt": "2026-09-13T00:46:40.084Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2763,
-    "rawTotalSkills": 2763,
+    "totalSkills": 2772,
+    "rawTotalSkills": 2772,
     "duplicateIds": [],
-    "totalSynergies": 492,
+    "totalSynergies": 497,
     "stats": {
-      "total": 2763,
+      "total": 2772,
       "byType": {
-        "buff": 49,
-        "hero-talent": 573,
-        "atomic-skill": 489,
+        "buff": 55,
+        "hero-talent": 572,
+        "atomic-skill": 485,
         "proc": 7,
         "skill": 167,
-        "talent": 1012,
-        "spec-talent": 342,
-        "passive": 25,
+        "talent": 980,
+        "spec-talent": 377,
+        "passive": 28,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
+        "class-talent": 86,
         "removed-talent": 1,
-        "class-talent": 84,
         "atomic-buff": 1,
         "apex-talent": 1,
         "atomic-talent": 1
@@ -34,7 +34,7 @@
         "Druid": 214,
         "Evoker": 140,
         "Hunter": 225,
-        "Mage": 205,
+        "Mage": 214,
         "Monk": 231,
         "Paladin": 209,
         "Priest": 221,
@@ -65,10 +65,10 @@
         "Hunter-사격": 58,
         "Hunter-생존": 58,
         "Hunter-야수": 42,
-        "Mage-공용": 63,
+        "Mage-공용": 64,
         "Mage-냉기": 48,
         "Mage-비전": 49,
-        "Mage-화염": 45,
+        "Mage-화염": 53,
         "Monk-공용": 69,
         "Monk-양조": 51,
         "Monk-운무": 64,
@@ -100,9 +100,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2686,
-        "withSynergies": 1025,
-        "avgLinkDensity": "0.034"
+        "withWikilinks": 2695,
+        "withSynergies": 1101,
+        "avgLinkDensity": "0.035"
       }
     }
   },
@@ -472,13 +472,13 @@
       "iconName": "spell_fire_flamebolt",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "castTime": "1.75초",
+      "resourceCost": "기본 마나의 1%",
       "range": "40야드",
-      "description": "# 화염구 (Fireball)",
+      "description": "평시에 열기를 만드는 기본 시전 주문이다. 기본 시전 시간은 1.75초다. 서리불꽃에서는 얼음불꽃 화살로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -492,15 +492,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/화염계"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.1,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -4112,13 +4115,13 @@
       "iconName": "spell_fire_selfdestruct",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전/즉시",
-      "resourceCost": "마나",
+      "castTime": "3.5초 (발동 시 즉시)",
+      "resourceCost": "기본 마나의 1.5%",
       "range": "40야드",
-      "description": "# 불기둥 (Flamestrike)",
+      "description": "지정한 지점에 화염 피해와 6초 바닥 피해를 주는 광역 공격이다. 기본 시전은 3.5초이고 몰아치는 열기!를 소비하면 즉시 시전한다. 화염 파열은 즉시 시전이 아닌 불기둥만 강화한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4131,15 +4134,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃의연료"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.092,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -4560,13 +4567,13 @@
       "iconName": "spell_fire_soulburn",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "castTime": "1.5초 (이동 중 가능)",
+      "resourceCost": "기본 마나의 1%",
       "range": "40야드",
-      "description": "# 불태우기 (Scorch)",
+      "description": "이동하면서 사용할 수 있는 1.5초 시전 공격이다. 대상 생명력 30% 미만에서는 기본 주문 자체가 확정 치명타다. 가열은 이 구간의 피해와 화염구의 치명타를 추가로 강화한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4578,16 +4585,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/가열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/일렁이는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/타오르는격노"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.065,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -6663,13 +6674,13 @@
       "iconName": "spell_fire_fireball02",
       "school": "",
       "cooldown": "없음",
-      "castTime": "4초",
-      "resourceCost": "",
+      "castTime": "4초 (발동 시 즉시)",
+      "resourceCost": "기본 마나의 1.5%",
       "range": "40야드",
-      "description": "# 불덩이 작렬 (Pyroblast)",
+      "description": "기본 4초 시전의 단일 공격이다. 몰아치는 열기! 또는 이상 고열로 즉시 시전할 수 있지만 화염 파열의 추가 피해는 직접 시전해야 받는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6681,14 +6692,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 0,
-        "linkDensity": 0.134,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -6940,7 +6958,7 @@
     },
     "12846": {
       "id": "12846",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -6952,14 +6970,14 @@
       "icon": "spell_fire_incinerate",
       "iconName": "spell_fire_incinerate",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 특화: 작열 (Mastery: Ignite)",
-      "category": "ability",
+      "description": "관련 직접 공격의 피해 일부를 9초 작열로 누적한다. 남아 있던 피해는 새 작열에 합산된다. 특화 수치와 공격별 작열 계수가 달라 유지율 하나만으로 품질을 평가할 수 없다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6972,17 +6990,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의대가",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/완전연소"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 3,
-        "linkDensity": 0.071,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -11601,7 +11622,7 @@
     },
     "48107": {
       "id": "48107",
-      "type": "atomic-skill",
+      "type": "buff",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -11613,14 +11634,14 @@
       "icon": "ability_mage_hotstreak",
       "iconName": "ability_mage_hotstreak",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 열기 (Heating Up)",
-      "category": "ability",
+      "range": "",
+      "description": "직접 주문 피해의 첫 치명타로 생기는 중간 상태다. 다음 연속 치명타가 들어오면 몰아치는 열기!로 넘어간다. 일반적으로 치명타가 아닌 직접 피해가 연쇄를 끊는다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11633,15 +11654,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 1,
-        "linkDensity": 0.125,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -11651,7 +11675,7 @@
     },
     "48108": {
       "id": "48108",
-      "type": "atomic-skill",
+      "type": "buff",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -11663,14 +11687,14 @@
       "icon": "ability_ironmaidens_grapeshotblast",
       "iconName": "ability_ironmaidens_grapeshotblast",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 몰아치는 열기! (Hot Streak!)",
-      "category": "ability",
+      "range": "",
+      "description": "치명타 직접 피해를 연속으로 내면 얻는 소비 가능 상태다. 다음 불덩이 작렬 또는 불기둥이 즉시 시전되고 작열 기여가 기본의 두 배가 된다. 이 버프 자체를 누르는 스킬로 넣지 않는다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11683,16 +11707,19 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
           "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
           "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 2,
-        "linkDensity": 0.133,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -18735,14 +18762,14 @@
       "icon": "spell_fire_fireball",
       "iconName": "spell_fire_fireball",
       "school": "",
-      "cooldown": "14초",
+      "cooldown": "14초 (특성 적용 전)",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "기본 마나의 1%",
       "range": "40야드",
-      "description": "# 화염 작렬 (Fire Blast)",
+      "description": "항상 치명타를 내고 다른 주문 시전 중에도 사용할 수 있는 공격이다. 기본 1충전·14초 재사용이며 꺼지지 않는 불꽃과 열성적인 깜빡임 등으로 충전과 회복 주기가 달라진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18754,14 +18781,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/열성적인깜빡임",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-충전회복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 0,
-        "linkDensity": 0.123,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -20633,7 +20668,7 @@
     },
     "117216": {
       "id": "117216",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -20645,14 +20680,14 @@
       "icon": "spell_fire_volcano",
       "iconName": "spell_fire_volcano",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 임계 질량 (Critical Mass)",
-      "category": "talent",
+      "range": "",
+      "description": "주문 치명타 확률과 여러 출처에서 얻는 치명타 능력치를 높인다. 기본 1등급 툴팁은 치명타 확률 4%와 능력치 획득량 10% 증가를 표시한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20664,14 +20699,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_volcano.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/방화광",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙된주문"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.047,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -22407,14 +22447,14 @@
       "icon": "spell_mage_meteor",
       "iconName": "spell_mage_meteor",
       "school": "",
-      "cooldown": "45초",
+      "cooldown": "45초 (폭발 지대 선택 시 30초)",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 1%",
       "range": "40야드",
-      "description": "# 유성 (Meteor)",
+      "description": "기본 45초 재사용의 지정 지점 공격이다. 툴팁 기준 3초 뒤 착탄하며 이후 바닥 피해가 이어진다. 폭발 지대를 선택하면 기본 재사용이 30초가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22429,13 +22469,19 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/폭발지대",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/거대충돌"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/성난태양처형자",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.075,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -25012,14 +25058,14 @@
       "icon": "spell_fire_sealoffire",
       "iconName": "spell_fire_sealoffire",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "2분 (덧불 선택 시 1분)",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 발화 (Combustion)",
+      "resourceCost": "기본 마나의 10%",
+      "range": "자신",
+      "description": "기본 2분 재사용, 10초 동안 주문 치명타 확률을 100% 높이는 극딜기다. 덧불을 선택하면 재사용이 1분으로 줄어든다. 다른 주문을 시전하는 중에도 사용할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25031,14 +25077,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_sealoffire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/덧불",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-발화연장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/찰나의즐거움"
+        ]
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 0,
-        "linkDensity": 0.137,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -32223,7 +32277,7 @@
     },
     "205026": {
       "id": "205026",
-      "type": "atomic-skill",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -32235,14 +32289,14 @@
       "icon": "spell_fire_fire",
       "iconName": "spell_fire_fire",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 방화광 (Firestarter)",
-      "category": "ability",
+      "range": "",
+      "description": "대상 생명력이 90%를 초과할 때 화염구와 불덩이 작렬을 확정 치명타로 만드는 특성이다. 불기둥까지 확정 치명타로 바꾸는 효과가 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32263,9 +32317,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.073,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -32323,7 +32377,7 @@
     },
     "205029": {
       "id": "205029",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -32335,14 +32389,14 @@
       "icon": "inv_helm_circlet_firelands_d_01",
       "iconName": "inv_helm_circlet_firelands_d_01",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 꺼지지 않는 불꽃 (Flame On)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬의 최대 충전을 1회 늘리고 기본 재사용을 2초 줄인다. 지속 효과이며 직접 눌러 충전을 회복하는 별도 스킬이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32354,14 +32408,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_circlet_firelands_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/열성적인깜빡임"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.073,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -35331,14 +35389,14 @@
       "icon": "ability_mage_moltenarmor",
       "iconName": "ability_mage_moltenarmor",
       "school": "",
-      "cooldown": "25초",
-      "castTime": "0.5초",
-      "resourceCost": "마나",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 3%",
       "range": "자신",
-      "description": "# 이글거리는 방벽 (Blazing Barrier)",
+      "description": "최대 생명력에 비례하는 흡수 방벽이다. 기본 재사용은 30초, 지속은 최대 1분이며 남은 흡수량이 소진되면 사라진다. 이글거리는 방벽 연마의 추가 충전과 회복은 특성을 선택해야 생긴다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35350,14 +35408,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_moltenarmor.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/이글거리는방벽연마"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/주입된수호물",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/순간의장애물일뿐"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -39233,7 +39298,7 @@
     },
     "269650": {
       "id": "269650",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -39241,18 +39306,75 @@
       ],
       "name": "화염 파열",
       "koreanName": "화염 파열",
-      "englishName": "Firefall",
+      "englishName": "Pyroclasm",
       "icon": "spell_shaman_lavasurge",
       "iconName": "spell_shaman_lavasurge",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화염 파열 (Firefall)",
-      "category": "talent",
+      "range": "",
+      "description": "몰아치는 열기! 소비 시 15% 확률로 다음 비즉시 불덩이 작렬 또는 불기둥의 피해를 230% 늘리는 특성이다. 효과는 20초, 최대 2중첩이며 실제 버프 ID는 269651이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_lavasurge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_lavasurge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_lavasurge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_lavasurge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_lavasurge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/성난태양처형자"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.074,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\화염파열.md",
+        "lastUpdate": ""
+      }
+    },
+    "269651": {
+      "id": "269651",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "화염 파열",
+      "koreanName": "화염 파열",
+      "englishName": "Pyroclasm",
+      "icon": "spell_shaman_lavasurge",
+      "iconName": "spell_shaman_lavasurge",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "화염 파열 특성 또는 성난태양 처형자로 받는 실제 버프다. 최대 2중첩, 20초 동안 다음 비즉시 불덩이 작렬 또는 불기둥이 강화된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39265,17 +39387,23 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/성난태양처형자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
         "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\화염파열.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Buffs\\화염파열.md",
         "lastUpdate": ""
       }
     },
@@ -42448,6 +42576,59 @@
         "lastUpdate": ""
       }
     },
+    "321708": {
+      "id": "321708",
+      "type": "class-talent",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "이글거리는 방벽 연마",
+      "koreanName": "이글거리는 방벽 연마",
+      "englishName": "Improved Blazing Barrier",
+      "icon": "ability_mage_moltenarmor",
+      "iconName": "ability_mage_moltenarmor",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1에서 이글거리는 방벽에 추가 1충전을 주고 방벽이 흡수한 피해의 15%만큼 회복하도록 바뀐 직업 특성이다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_moltenarmor.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_moltenarmor.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_moltenarmor.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_moltenarmor.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_moltenarmor.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/주입된수호물",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/순간의장애물일뿐"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\이글거리는방벽연마.md",
+        "lastUpdate": ""
+      }
+    },
     "322109": {
       "id": "322109",
       "type": "atomic-skill",
@@ -43783,7 +43964,7 @@
     },
     "342344": {
       "id": "342344",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -43795,14 +43976,14 @@
       "icon": "inv_misc_phoenixegg",
       "iconName": "inv_misc_phoenixegg",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 잿불의 생명 (From the Ashes)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬 피해를 15% 높이고 직접 피해 주문이 화염 작렬 재사용을 0.5초 줄이게 한다. 내부 재발동 제한은 0.1초다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43814,14 +43995,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_phoenixegg.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.071,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -43879,7 +44064,7 @@
     },
     "343230": {
       "id": "343230",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -43887,18 +44072,18 @@
       ],
       "name": "불꽃의 티끌",
       "koreanName": "불꽃의 티끌",
-      "englishName": "Sparking Cinders",
+      "englishName": "Mote of Flame",
       "icon": "inv_10_elementalcombinedfoozles_fire",
       "iconName": "inv_10_elementalcombinedfoozles_fire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불꽃의 티끌 (Sparking Cinders)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 피해를 3% 높이는 지속 효과다. 별도의 발동이나 짧은 극딜 활성화 스킬이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43910,14 +44095,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_fire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -57591,7 +57780,7 @@
     },
     "383391": {
       "id": "383391",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -57603,14 +57792,14 @@
       "icon": "spell_fire_fireball",
       "iconName": "spell_fire_fireball",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화상의 자극 (Feel the Burn)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬을 사용하면 4초 동안 특화가 2% 증가하며 여러 효과가 겹칠 수 있다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57622,14 +57811,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.06,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -57927,7 +58120,7 @@
     },
     "383634": {
       "id": "383634",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -57935,18 +58128,18 @@
       ],
       "name": "불타는 격정",
       "koreanName": "불타는 격정",
-      "englishName": "Flame Accelerant",
+      "englishName": "Fiery Rush",
       "icon": "inv_summerfest_firespirit",
       "iconName": "inv_summerfest_firespirit",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불타는 격정 (Flame Accelerant)",
-      "category": "talent",
+      "range": "",
+      "description": "발화 중 화염 작렬이 50% 더 빠르게 재충전되게 한다. 격앙된 주문의 연속 치명타 피해 증가와 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57958,14 +58151,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_summerfest_firespirit.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-충전회복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.077,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -57975,7 +58173,7 @@
     },
     "383669": {
       "id": "383669",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -57987,14 +58185,14 @@
       "icon": "spell_fire_playingwithfire",
       "iconName": "spell_fire_playingwithfire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 파괴 제어 (Controlled Destruction)",
-      "category": "talent",
+      "range": "",
+      "description": "화염구·불덩이 작렬·불기둥으로 피해를 주면 해당 적이 받는 작열 피해가 0.2%씩 증가한다. 최대 50중첩이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58006,14 +58204,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -58505,7 +58708,7 @@
     },
     "383810": {
       "id": "383810",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -58513,18 +58716,18 @@
       ],
       "name": "격앙된 주문",
       "koreanName": "격앙된 주문",
-      "englishName": "Fiery Rush",
+      "englishName": "Fevered Incantation",
       "icon": "inv_misc_enchantedpearld",
       "iconName": "inv_misc_enchantedpearld",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 격앙된 주문 (Fiery Rush)",
-      "category": "talent",
+      "range": "",
+      "description": "연속 치명타가 치명타 피해 증가 효과를 쌓는 특성이다. 기본 1등급 툴팁은 회당 1%, 최대 4%, 6초를 표시한다. 찍은 등급에 따라 수치가 달라진다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58536,14 +58739,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedpearld.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/임계질량"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.047,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -58698,9 +58906,9 @@
         "lastUpdate": ""
       }
     },
-    "383860": {
-      "id": "383860",
-      "type": "atomic-skill",
+    "383874": {
+      "id": "383874",
+      "type": "buff",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -58712,14 +58920,14 @@
       "icon": "spell_fire_burnout",
       "iconName": "spell_fire_burnout",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 이상 고열 (Hyperthermia)",
-      "category": "ability",
+      "range": "",
+      "description": "알라르의 기억으로 비전 불사조가 끝날 때 얻는 이상 고열 버프다. 불덩이 작렬과 불기둥을 즉시 시전·확정 치명타로 만들고 반복 사용으로 해당 공격의 피해 증가를 쌓는다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58733,19 +58941,24 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/알라르의기억"
+        ]
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.086,
+        "synergyCount": 4,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Skills\\이상고열.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Buffs\\이상고열.md",
         "lastUpdate": ""
       }
     },
@@ -58945,7 +59158,7 @@
     },
     "383967": {
       "id": "383967",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -58953,18 +59166,18 @@
       ],
       "name": "끓어오르는 노여움",
       "koreanName": "끓어오르는 노여움",
-      "englishName": "Fevered Fury",
+      "englishName": "Slow Burn",
       "icon": "spell_fire_sealoffire",
       "iconName": "spell_fire_sealoffire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 끓어오르는 노여움 (Fevered Fury)",
-      "category": "talent",
+      "range": "",
+      "description": "발화 동안 치명타 수치의 75%에 해당하는 특화를 얻고 주문의 작열 적용 효율을 15% 높인다. 모두 불사르리와 같은 선택 노드의 대안이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58976,14 +59189,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_sealoffire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.073,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -59482,7 +59700,7 @@
     },
     "384174": {
       "id": "384174",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -59494,14 +59712,14 @@
       "icon": "inv_trinket_firelands_02",
       "iconName": "inv_trinket_firelands_02",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화염의 대가 (Master of Flame)",
-      "category": "talent",
+      "range": "",
+      "description": "발화 밖 작열 피해를 15% 높이고 화염 작렬의 작열 전이 비율에 추가 50%를 더한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59513,14 +59731,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_trinket_firelands_02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/야생불"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -62532,7 +62756,7 @@
     },
     "387044": {
       "id": "387044",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -62540,18 +62764,18 @@
       ],
       "name": "열성적인 깜빡임",
       "koreanName": "열성적인 깜빡임",
-      "englishName": "Lit Fuse",
+      "englishName": "Fervent Flickering",
       "icon": "ability_warlock_burningembers",
       "iconName": "ability_warlock_burningembers",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 열성적인 깜빡임 (Lit Fuse)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬의 최대 충전을 1회 늘리고 피해를 25% 높인다. 꺼지지 않는 불꽃과 함께 선택하면 기본 1충전에서 총 3충전이 된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62563,14 +62787,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembers.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -75326,7 +75555,7 @@
     },
     "416094": {
       "id": "416094",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -75338,14 +75567,14 @@
       "icon": "ability_warlock_inferno",
       "iconName": "ability_warlock_inferno",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불꽃의 연료 (Fuel the Fire)",
-      "category": "talent",
+      "range": "",
+      "description": "불기둥이 주문 치명타 확률에 대응하는 확률로 열기와 몰아치는 열기! 연쇄에 참여하게 한다. 맞힌 적마다 불기둥 피해가 5% 늘어나며 최대 25%다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75357,14 +75586,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_inferno.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-2세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.039,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -75470,7 +75705,7 @@
     },
     "416714": {
       "id": "416714",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -75482,14 +75717,14 @@
       "icon": "spell_fire_incinerate",
       "iconName": "spell_fire_incinerate",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불꽃 심화 (Intensifying Flame)",
-      "category": "talent",
+      "range": "",
+      "description": "작열이 걸린 적이 3명 이하일 때 작열이 추가 피해를 주는 특성이다. 툴팁의 추가량은 30%다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75501,14 +75736,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.061,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -75518,7 +75757,7 @@
     },
     "416719": {
       "id": "416719",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -75530,14 +75769,14 @@
       "icon": "spell_fire_elementaldevastation",
       "iconName": "spell_fire_elementaldevastation",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 폭발 지대 (Blast Zone)",
-      "category": "talent",
+      "range": "",
+      "description": "유성의 재사용을 15초 줄이는 특성이다. 유성 기본 45초에서 30초가 되어 덧불 발화 사이에도 한 번 더 쓸 수 있다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75549,14 +75788,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/덧불"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -75618,7 +75862,7 @@
     },
     "417467": {
       "id": "417467",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -75630,14 +75874,14 @@
       "icon": "spell_fire_ragnaros_lavabolt",
       "iconName": "spell_fire_ragnaros_lavabolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 격앙 (Inflame)",
-      "category": "talent",
+      "range": "",
+      "description": "몰아치는 열기!로 사용한 불덩이 작렬 또는 불기둥의 작열 증가량을 추가로 25% 높인다. 모든 직접 피해를 25% 올리는 특성이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75649,14 +75893,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_ragnaros_lavabolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.078,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -78935,7 +79184,7 @@
     },
     "431044": {
       "id": "431044",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Mage",
       "spec": "공용",
       "specs": [
@@ -78948,14 +79197,14 @@
       "icon": "inv_ability_frostfiremage_frostfirebolt",
       "iconName": "inv_ability_frostfiremage_frostfirebolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 얼음불꽃 화살 (Frostfire Bolt)",
-      "category": "hero-talent",
+      "cooldown": "없음",
+      "castTime": "1.75초",
+      "resourceCost": "기본 마나의 2%",
+      "range": "40야드",
+      "description": "화염에서는 화염구를, 냉기에서는 얼음 화살을 대체하는 실제 시전 주문이다. 냉기·화염 복합 피해와 감속, 8초 지속 피해를 주며 기본 시전은 1.75초다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78967,14 +79216,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_frostfiremage_frostfirebolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃주입"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.049,
+        "wikilinkCount": 8,
+        "synergyCount": 3,
+        "linkDensity": 0.098,
         "hasWikilinks": true
       },
       "source": {
@@ -78997,14 +79253,14 @@
       "icon": "inv_10_jewelcrafting_gem3primal_fire_cut_blue",
       "iconName": "inv_10_jewelcrafting_gem3primal_fire_cut_blue",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 주입된 수호물 (Imbued Warding)",
+      "description": "화염의 이글거리는 방벽은 25% 위력의 얼음 보호막을 추가로 시전한다. 냉기의 얼음 보호막은 25% 위력의 이글거리는 방벽을 추가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79016,14 +79272,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_fire_cut_blue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/이글거리는방벽연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.063,
+        "wikilinkCount": 6,
+        "synergyCount": 2,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -79046,14 +79306,14 @@
       "icon": "inv_10_dungeonjewelry_dragon_trinket_5_red",
       "iconName": "inv_10_dungeonjewelry_dragon_trinket_5_red",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 원소 친화 (Elemental Affinity)",
+      "description": "화염에서는 기본 재사용 4분 미만의 냉기 주문 재사용을 30% 줄인다. 냉기에서는 화염 주문 재사용을 30% 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79065,14 +79325,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_dragon_trinket_5_red.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/불꽃과서리"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -79095,14 +79359,14 @@
       "icon": "inv12_ability_mage_isothermiccore",
       "iconName": "inv12_ability_mage_isothermiccore",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 등온 핵 (Isothermic Core)",
+      "description": "화염은 유성을 사용하면 혜성 폭풍이 함께 떨어진다. 냉기는 혜성 폭풍이 유성을 추가로 부른다. 같은 특성의 반대 방향 연계다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79114,14 +79378,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_mage_isothermiccore.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/급속냉동화상",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/폭발반경",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/원소출현"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 7,
+        "synergyCount": 1,
+        "linkDensity": 0.1,
         "hasWikilinks": true
       },
       "source": {
@@ -79144,14 +79414,14 @@
       "icon": "spell_firefrost-orb",
       "iconName": "spell_firefrost-orb",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불꽃과 서리 (Flame and Frost)",
+      "description": "화염에서는 소작 발동 시 기본 재사용 4분 미만의 냉기 주문 재사용을 초기화한다. 냉기에서는 얼음 방패와 얼음장이 화염 주문 재사용을 초기화한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79163,14 +79433,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_firefrost-orb.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/원소친화"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -79193,14 +79467,14 @@
       "icon": "spell_fireresistancetotem_01",
       "iconName": "spell_fireresistancetotem_01",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 열기 조절 (Thermal Conditioning)",
+      "description": "얼음불꽃 화살의 시전 시간을 10% 줄이는 지속 효과다. 불덩이 작렬의 시전 감소 특성인 화염의 촉진과 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79213,13 +79487,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -79242,14 +79520,14 @@
       "icon": "spell_frost_arcticwinds",
       "iconName": "spell_frost_arcticwinds",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 용해 (Meltdown)",
+      "description": "얼음 방패 중 천천히 이동할 수 있게 하고 얼음 방패·얼음장 중 이동 속도가 점차 증가한다. 두 효과가 끝나면 이글거리는 방벽을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79261,14 +79539,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_arcticwinds.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -79291,14 +79572,14 @@
       "icon": "inv_10_blacksmithing_craftedbar_frostfirealloy",
       "iconName": "inv_10_blacksmithing_craftedbar_frostfirealloy",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 서리불꽃 주입 (Frostfire Infusion)",
+      "description": "냉기·화염 주문 피해를 4% 높인다. 화염은 얼음불꽃 화살 치명타 확률 15% 증가, 냉기는 두뇌 빙결 발동 확률 5% 추가 효과를 받는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79310,14 +79591,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_blacksmithing_craftedbar_frostfirealloy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -79336,18 +79622,18 @@
       ],
       "name": "서리불꽃 강화",
       "koreanName": "서리불꽃 강화",
-      "englishName": "Excess Frostfire",
+      "englishName": "Frostfire Empowerment",
       "icon": "spell_frostfire-orb",
       "iconName": "spell_frostfire-orb",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 서리불꽃 강화 (Excess Frostfire)",
+      "description": "냉기·화염 복합 주문 사용 시 10% 확률로 다음 얼음불꽃 화살이 즉시 시전되며 60% 피해 증가와 주변 폭발을 얻는다. 냉기 분기에는 빙결 중첩 적용이 추가된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79361,12 +79647,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/극한기온",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/급속냉동화상",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/방열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 7,
         "synergyCount": 0,
-        "linkDensity": 0.056,
+        "linkDensity": 0.091,
         "hasWikilinks": true
       },
       "source": {
@@ -79389,14 +79680,14 @@
       "icon": "spell_fire_elementaldevastation",
       "iconName": "spell_fire_elementaldevastation",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 급속 냉동화상 (Flash Freezeburn)",
+      "description": "화염에서는 유성 피해가 25% 늘고 유성이 서리불꽃 강화를 제공한다. 냉기에서는 혹한의 쐐기 피해 15% 증가, 주변 최대 5명에 25% 폭발 피해, 서리불꽃 강화 제공으로 작동한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79408,14 +79699,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.039,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -79438,14 +79734,14 @@
       "icon": "inv_magemount_fire",
       "iconName": "inv_magemount_fire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 극한 기온 (Severe Temperatures)",
+      "description": "서리불꽃 강화를 추가로 1회 저장할 수 있게 하고 강화된 얼음불꽃 화살의 주변 폭발 비율에 20%를 추가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79457,14 +79753,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_magemount_fire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -91732,11 +92033,11 @@
       "icon": "inv_1115_mage_spellfirespheresgeneration",
       "iconName": "inv_1115_mage_spellfirespheresgeneration",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "비전은 공격 주문 시전 시 기본 6% 확률로, 화염은 몰아치는 열기 소비 시 기본 12% 확률로 비전화염 구슬을 얻습니다. 전투 밖에서도 서서히 생성됩니다. 구슬은 기본 최대 3개이며 하나당 주문 피해를 1% 높입니다.",
+      "description": "화염은 몰아치는 열기! 소비 시 기본 12%, 비전은 공격 주문 시전 시 기본 6% 확률로 구슬을 만든다. 구슬은 하나당 주문 피해 1%, 최대 3개이며 비전투 중에도 서서히 생성된다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -91751,14 +92052,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_mage_spellfirespheresgeneration.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/구체학파",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/태양길잡이전서",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/영광스러운광채"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 8,
+        "synergyCount": 1,
+        "linkDensity": 0.094,
         "hasWikilinks": true
       },
       "source": {
@@ -91781,11 +92089,11 @@
       "icon": "inv_misc_phoenixegg",
       "iconName": "inv_misc_phoenixegg",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "성난태양에서 비전 쇄도 또는 발화를 사용하면 해당 효과가 지속되는 동안 비전 불사조가 전투를 돕습니다. 비전 및 화염 주문을 시전하는 소환 효과이며 별도의 환기 시전이 필요한 것이 아닙니다.",
+      "description": "화염은 발화, 비전은 비전 쇄도를 사용할 때 해당 강화 구간 동안 비전 불사조를 소환하는 지속 효과다. 불사조가 비전·화염 주문으로 전투를 돕는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -91800,14 +92108,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_phoenixegg.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/태양길잡이전서",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/알라르의기억"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 7,
+        "synergyCount": 1,
+        "linkDensity": 0.091,
         "hasWikilinks": true
       },
       "source": {
@@ -91887,14 +92201,14 @@
       "icon": "spell_frost_manarecharge",
       "iconName": "spell_frost_manarecharge",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쏟아지는 마나 (Mana Cascade)",
+      "description": "화염은 몰아치는 열기!를 소비할 때 6초간 가속 0.5%를 얻는다. 비전은 비전 작렬·비전 파동·비전 탄막·오색 화살 사용으로 얻는다. 여러 적용이 겹칠 수 있으며 12.1에서는 중첩 상한이 제거됐다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91906,14 +92220,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_manarecharge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/영감의재",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -91936,14 +92255,14 @@
       "icon": "inv_helm_robe_raidmage_i_01",
       "iconName": "inv_helm_robe_raidmage_i_01",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 순간의 장애물일 뿐 (Merely a Setback)",
+      "description": "방벽이 사라진 뒤에도 방벽이 제공하던 추가 효과를 8초 유지한다. 화염에서는 소작의 자기 피해도 제거한다. 흡수량이 무한히 남는다는 뜻은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91955,14 +92274,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_robe_raidmage_i_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/이글거리는방벽연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -91981,18 +92304,18 @@
       ],
       "name": "성난태양 처형자",
       "koreanName": "성난태양 처형자",
-      "englishName": "Sunfury Executioner",
+      "englishName": "Sunfury Execution",
       "icon": "spell_shadow_shadowandflame",
       "iconName": "spell_shadow_shadowandflame",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성난태양 처형자 (Sunfury Executioner)",
+      "description": "화염에서는 화염 파열 피해 보너스를 20% 높이고, 화염 파열 특성을 배웠다면 유성이 그 버프를 제공한다. 비전에서는 비전의 여파 대상에 비전 탄막 피해가 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92004,14 +92327,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.081,
         "hasWikilinks": true
       },
       "source": {
@@ -92030,18 +92358,18 @@
       ],
       "name": "태양길잡이 전서",
       "koreanName": "태양길잡이 전서",
-      "englishName": "Sunstrider's Spellbook",
+      "englishName": "Codex of the Sunstriders",
       "icon": "inv_10_inscription2_book3_color1",
       "iconName": "inv_10_inscription2_book3_color1",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태양길잡이 전서 (Sunstrider's Spellbook)",
+      "description": "비전 불사조 소환 시 보유한 비전화염 구슬을 모두 소비한다. 소비한 구슬마다 발화 또는 비전 쇄도 중 주문 피해가 1% 늘고 불사조가 강화 주문을 한 번 사용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92053,14 +92381,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_inscription2_book3_color1.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/영감의재"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 6,
+        "synergyCount": 1,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -92083,14 +92417,14 @@
       "icon": "spell_burningsoul",
       "iconName": "spell_burningsoul",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영광스러운 광채 (Glorious Incandescence)",
+      "description": "화염에서는 비전화염 구슬을 생성하면 다음 화염 작렬이 유성 파편 4개를 부른다. 비전에서는 비전 탄막이 소비한 비전 연사 5중첩마다 파편 1개를 부른다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92102,14 +92436,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_burningsoul.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염연사",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/화염계"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 6,
+        "synergyCount": 1,
+        "linkDensity": 0.086,
         "hasWikilinks": true
       },
       "source": {
@@ -92132,14 +92472,14 @@
       "icon": "spell_fire_masterofelements",
       "iconName": "spell_fire_masterofelements",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찰나의 즐거움 (Savor the Moment)",
+      "description": "비전 쇄도 또는 발화를 사용할 때 가진 비전화염 구슬 하나당 지속시간이 0.8초 늘며 최대 2.4초까지 적용된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92151,14 +92491,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_masterofelements.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/구체학파"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.021,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -92230,18 +92575,18 @@
       ],
       "name": "구체학파",
       "koreanName": "구체학파",
-      "englishName": "Sphere Specialization",
+      "englishName": "Rondurmancy",
       "icon": "spell_arcane_focusedpower",
       "iconName": "spell_arcane_focusedpower",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구체학파 (Sphere Specialization)",
+      "description": "12.1 구체학파는 최대 구슬 수를 5개로 늘리지 않는다. 화염의 비전화염 구슬 생성 확률에 12%p, 비전에는 6%p를 더하고 구슬 하나의 주문 피해 증가에 1%p를 추가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92255,12 +92600,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/찰나의즐거움",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/태양길잡이전서"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -92332,11 +92681,11 @@
       "icon": "inv_ability_sunfurymage_spellfirespheres",
       "iconName": "inv_ability_sunfurymage_spellfirespheres",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "비전 불사조가 만료되면 기본 4초 동안 비전은 비전의 영혼, 화염은 이상 고열을 얻는 성난태양 특성입니다. 실제 버프 지속시간은 선택 특성과 현재 효과를 확인합니다.",
+      "description": "비전 불사조가 끝나면 화염은 기본 4초 이상 고열, 비전은 기본 4초 비전의 영혼을 얻는다. 이상 고열은 불덩이 작렬·불기둥을 즉시 시전·확정 치명타로 만든다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -92351,14 +92700,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_sunfurymage_spellfirespheres.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 8,
+        "synergyCount": 2,
+        "linkDensity": 0.104,
         "hasWikilinks": true
       },
       "source": {
@@ -92485,14 +92839,14 @@
       "icon": "ability_paladin_handoflight",
       "iconName": "ability_paladin_handoflight",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쇠약의 가르침 (Lessons in Debilitation)",
+      "description": "비전 불사조가 소환될 때와 사라질 때 마법 훔치기를 사용하도록 한다. 지속적인 자동 해제나 원하는 순간의 수동 해제 보장은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92504,14 +92858,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_handoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/마법훔치기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -93836,7 +94194,7 @@
     },
     "450746": {
       "id": "450746",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -93844,18 +94202,18 @@
       ],
       "name": "가열",
       "koreanName": "가열",
-      "englishName": "Searing Touch",
+      "englishName": "Scald",
       "icon": "ability_racial_foregedinflames",
       "iconName": "ability_racial_foregedinflames",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 가열 (Searing Touch)",
-      "category": "talent",
+      "range": "",
+      "description": "30% 미만 대상에게 화염구를 확정 치명타로 만들고 화염구 피해를 25%, 불태우기 피해를 250% 높인다. 불태우기의 30% 미만 확정 치명타와 추가 피해를 구분한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -93867,14 +94225,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_foregedinflames.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/타오르는격노"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -93884,7 +94247,7 @@
     },
     "450831": {
       "id": "450831",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -93896,14 +94259,14 @@
       "icon": "achievement_boss_lordanthricyst",
       "iconName": "achievement_boss_lordanthricyst",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화염의 노여움 (Fire's Ire)",
-      "category": "talent",
+      "range": "",
+      "description": "주문 치명타 확률을 높이고 발화 중 치명타 피해를 강화한다. 기본 1등급 툴팁은 각각 2.5%를 표시한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -93915,14 +94278,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_lordanthricyst.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/임계질량",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙된주문"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.063,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -94974,14 +95342,14 @@
       "icon": "inv_ragnaros_heart",
       "iconName": "inv_ragnaros_heart",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 힘의 무게 (Burden of Power)",
+      "description": "화염은 불덩이 작렬과 불기둥 피해가 각각 3% 증가한다. 비전은 비전 작렬 30%, 비전 파동 20% 증가를 받는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94993,14 +95361,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -95400,7 +95771,7 @@
     },
     "451466": {
       "id": "451466",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -95408,18 +95779,18 @@
       ],
       "name": "광기의 화염술사",
       "koreanName": "광기의 화염술사",
-      "englishName": "Hyperthermia",
+      "englishName": "Pyromaniac",
       "icon": "inv_misc_volatilefire",
       "iconName": "inv_misc_volatilefire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 광기의 화염술사 (Hyperthermia)",
-      "category": "talent",
+      "range": "",
+      "description": "몰아치는 열기! 상태에서 불덩이 작렬 또는 불기둥을 사용하면 6% 확률로 50% 위력의 같은 공격이 반복된다. 반복 효과는 몰아치는 열기! 소비로도 계산된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95431,14 +95802,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_volatilefire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전화염구슬"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.058,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -95834,7 +96213,7 @@
     },
     "451875": {
       "id": "451875",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -95846,14 +96225,14 @@
       "icon": "ability_mage_worldinflames",
       "iconName": "ability_mage_worldinflames",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 자연 발화 (Spontaneous Combustion)",
-      "category": "talent",
+      "range": "",
+      "description": "발화를 사용하면 화염 작렬 충전을 회복한다. 기본 1등급 툴팁은 최대 1회, 2등급은 더 많은 충전을 회복하므로 특성 투자 상태를 확인한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95865,14 +96244,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_worldinflames.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.071,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -96770,7 +97154,7 @@
     },
     "453282": {
       "id": "453282",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -96778,18 +97162,18 @@
       ],
       "name": "화염의 촉진",
       "koreanName": "화염의 촉진",
-      "englishName": "Firestarter",
+      "englishName": "Flame Accelerant",
       "icon": "inv_ember",
       "iconName": "inv_ember",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 화염의 촉진 (Firestarter)",
-      "category": "talent",
+      "range": "",
+      "description": "불덩이 작렬과 불기둥의 시전 시간을 20% 줄이는 지속 효과다. 방화광이나 광열 발동 확률을 올리는 특성이 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96801,13 +97185,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ember.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
         "linkDensity": 0.063,
         "hasWikilinks": true
       },
@@ -100760,7 +101150,7 @@
     },
     "457735": {
       "id": "457735",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -100768,18 +101158,18 @@
       ],
       "name": "일렁이는 열기",
       "koreanName": "일렁이는 열기",
-      "englishName": "Fevered Incantation",
+      "englishName": "Heat Shimmer",
       "icon": "ability_rhyolith_magmaflow_wave",
       "iconName": "ability_rhyolith_magmaflow_wave",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 일렁이는 열기 (Fevered Incantation)",
-      "category": "talent",
+      "range": "",
+      "description": "발화 밖의 작열 피해가 확률적으로 다음 불태우기를 즉시 시전으로 만들고 피해를 100% 높인다. 대상이 30% 미만인 것처럼 불태우기 효과가 적용된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100791,14 +101181,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rhyolith_magmaflow_wave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/가열"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -100808,7 +101203,7 @@
     },
     "457803": {
       "id": "457803",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -100816,18 +101211,18 @@
       ],
       "name": "타오르는 격노",
       "koreanName": "타오르는 격노",
-      "englishName": "Burnout",
+      "englishName": "Molten Fury",
       "icon": "warrior_talent_icon_furyintheblood",
       "iconName": "warrior_talent_icon_furyintheblood",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 타오르는 격노 (Burnout)",
-      "category": "talent",
+      "range": "",
+      "description": "생명력 35% 미만인 적에게 주는 피해를 15% 높이는 마무리 특성이다. 가열과 불태우기의 30% 경계와 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100839,14 +101234,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_furyintheblood.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/가열"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.049,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -101146,6 +101546,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\궁여지책.md",
+        "lastUpdate": ""
+      }
+    },
+    "458964": {
+      "id": "458964",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "일렁이는 열기",
+      "koreanName": "일렁이는 열기",
+      "englishName": "Heat Shimmer",
+      "icon": "ability_rhyolith_magmaflow_wave",
+      "iconName": "ability_rhyolith_magmaflow_wave",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "일렁이는 열기 특성이 만드는 실제 다음 불태우기 강화 버프다. 즉시 시전과 피해 증가, 30% 미만 대상처럼 취급하는 효과를 제공한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rhyolith_magmaflow_wave.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rhyolith_magmaflow_wave.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rhyolith_magmaflow_wave.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rhyolith_magmaflow_wave.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rhyolith_magmaflow_wave.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/일렁이는열기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Buffs\\일렁이는열기.md",
         "lastUpdate": ""
       }
     },
@@ -112307,14 +112760,14 @@
       "icon": "6bf_explosive_shard",
       "iconName": "6bf_explosive_shard",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 잠재력 폭발 (Explosive Potential)",
+      "description": "발화 또는 비전 쇄도 후 다음 점멸이 출발 위치에 화염 폭풍을 남겨 주변 적을 밀쳐내고 감속한다. 공격 쿨다운 사용과 다음 이동이 연결되는 성난태양 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112326,14 +112779,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/6bf_explosive_shard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -113596,18 +114053,18 @@
       ],
       "name": "방열",
       "koreanName": "방열",
-      "englishName": "Thermal Conduction",
+      "englishName": "Heat Sink",
       "icon": "spell_fire_masterofelements",
       "iconName": "spell_fire_masterofelements",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 방열 (Thermal Conduction)",
+      "description": "화염 작렬은 냉기와 화염 복합 피해로 바뀌고 피해가 15% 늘어난다. 냉기의 진눈깨비는 같은 복합 피해로 바뀌며 피해가 25% 늘어난다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113619,14 +114076,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_masterofelements.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/타오르는한기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -113645,18 +114107,18 @@
       ],
       "name": "이중 시전 숙련",
       "koreanName": "이중 시전 숙련",
-      "englishName": "Dual Casting Mastery",
+      "englishName": "Dualcasting Adept",
       "icon": "ability_dualwieldspecialization",
       "iconName": "ability_dualwieldspecialization",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 이중 시전 숙련 (Dual Casting Mastery)",
+      "description": "화염은 냉기 주문 치명타 피해 20%, 불덩이 작렬 피해 15%, 불기둥 피해 10% 증가를 받는다. 냉기는 화염 주문 치명타 피해와 산산조각·눈보라 강화로 작동한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113668,14 +114130,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_dualwieldspecialization.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/양면성"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.021,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
@@ -113698,14 +114166,14 @@
       "icon": "spell_frostresistancetotem_01",
       "iconName": "spell_frostresistancetotem_01",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭발 반경 (Blast Radius)",
+      "description": "화염은 유성과 혜성 폭풍 피해가 각각 20% 증가한다. 냉기는 혜성 폭풍 50%, 유성 20% 증가로 적용된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113717,14 +114185,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frostresistancetotem_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -117734,7 +118206,7 @@
     },
     "1254194": {
       "id": "1254194",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -117746,14 +118218,14 @@
       "icon": "spell_mage_kindling",
       "iconName": "spell_mage_kindling",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 덧불 (Kindling)",
-      "category": "talent",
+      "range": "",
+      "description": "발화의 재사용 대기시간을 60초 줄이는 지속 효과다. 기본 2분인 발화가 선택 후 1분이 된다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117765,14 +118237,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_kindling.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -117931,7 +118405,7 @@
     },
     "1254512": {
       "id": "1254512",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -117939,18 +118413,18 @@
       ],
       "name": "모두 불사르리",
       "koreanName": "모두 불사르리",
-      "englishName": "Burnout",
+      "englishName": "Burn It All",
       "icon": "ability_mage_fierypayback",
       "iconName": "ability_mage_fierypayback",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 모두 불사르리 (Burnout)",
-      "category": "talent",
+      "range": "",
+      "description": "발화 동안 주문 피해를 기본 10%와 치명타 확률의 20%만큼 추가로 높이는 특성이다. 끓어오르는 노여움과 양자택일이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117962,14 +118436,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_fierypayback.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/끓어오르는노여움",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/임계질량"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.073,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -118030,7 +118509,7 @@
     },
     "1254756": {
       "id": "1254756",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -118042,14 +118521,14 @@
       "icon": "item_sparkofragnoros",
       "iconName": "item_sparkofragnoros",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 점화 (Ignition)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬이 대상 작열의 50%를 다른 적 1명에게 전이하도록 만든다. 불기둥은 작열을 15% 더 적용한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118061,14 +118540,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/item_sparkofragnoros.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/야생불",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의대가"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.083,
         "hasWikilinks": true
       },
       "source": {
@@ -118078,7 +118564,7 @@
     },
     "1254828": {
       "id": "1254828",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -118090,14 +118576,14 @@
       "icon": "ability_warlock_inferno",
       "iconName": "ability_warlock_inferno",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 야생불 (Wildfire)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬 피해와 작열 전이 대상을 강화하는 특성이다. 기본 1등급 툴팁은 피해 10% 증가와 추가 전이 대상 1명을 표시한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118109,14 +118595,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_inferno.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의대가"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.063,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -118126,7 +118617,7 @@
     },
     "1254857": {
       "id": "1254857",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -118134,18 +118625,18 @@
       ],
       "name": "거대 충돌",
       "koreanName": "거대 충돌",
-      "englishName": "Massive Impact",
+      "englishName": "Deep Impact",
       "icon": "spell_fire_moltenblood",
       "iconName": "spell_fire_moltenblood",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 거대 충돌 (Massive Impact)",
-      "category": "talent",
+      "range": "",
+      "description": "유성 착탄의 중심에 가장 가까운 적이 유성으로 받는 피해를 75% 높이는 특성이다. 모든 적의 유성 피해가 같은 비율로 증가하는 효과는 아니다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118157,14 +118648,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_moltenblood.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -118174,7 +118669,7 @@
     },
     "1254865": {
       "id": "1254865",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -118186,14 +118681,14 @@
       "icon": "spell_fire_flare",
       "iconName": "spell_fire_flare",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 잿불폭풍 (Cinderstorm)",
-      "category": "talent",
+      "range": "",
+      "description": "불덩이 작렬 또는 불기둥을 사용하면 8% 확률로 5개 잿불이 대상을 추적한다. 잿불은 피해와 작열을 더하고 주변 대상에 작열 일부를 전이한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118205,14 +118700,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flare.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -118231,18 +118732,18 @@
       ],
       "name": "시간 비틀기",
       "koreanName": "시간 비틀기",
-      "englishName": "Time and Tide",
+      "englishName": "Time Twist",
       "icon": "spell_holy_borrowedtime",
       "iconName": "spell_holy_borrowedtime",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 시간 비틀기 (Time and Tide)",
+      "description": "시간 돌리기의 재사용 대기시간을 10초 줄이는 성난태양 지속 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118254,14 +118755,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.037,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -118948,7 +119451,7 @@
     },
     "1257343": {
       "id": "1257343",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -118960,14 +119463,14 @@
       "icon": "inv12_apextalent_mage_firedup",
       "iconName": "inv12_apextalent_mage_firedup",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 광열 (Fired Up)",
-      "category": "talent",
+      "range": "",
+      "description": "광열 첫 정점 특성이다. 몰아치는 열기!를 소비하면 20% 확률로 8초간 화염 피해 2% 증가 효과를 얻으며 여러 효과가 겹칠 수 있다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118979,18 +119482,181 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_mage_firedup.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-충전회복",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-발화연장"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.04,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\광열.md",
+        "lastUpdate": ""
+      }
+    },
+    "1257348": {
+      "id": "1257348",
+      "type": "spec-talent",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "광열",
+      "koreanName": "광열",
+      "englishName": "Fired Up",
+      "icon": "ability_warlock_burningembers",
+      "iconName": "ability_warlock_burningembers",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "광열의 마지막 정점 특성이다. 발화 중 광열 발동 확률이 높아지지만 발동할수록 감소하며, 광열 획득마다 발화가 1초 늘어난다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembers.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_burningembers.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_burningembers.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_burningembers.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembers.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\광열-발화연장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1257349": {
+      "id": "1257349",
+      "type": "spec-talent",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "광열",
+      "koreanName": "광열",
+      "englishName": "Fired Up",
+      "icon": "ability_warlock_backdraft",
+      "iconName": "ability_warlock_backdraft",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "광열의 중간 정점 특성이다. 1등급은 광열 획득 시 화염 작렬 재사용을 2.5초 줄이고 화염 피해를 5% 높인다. 최대 2등급에서 각각 5초와 10%다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_backdraft.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_backdraft.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_backdraft.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\광열-충전회복.md",
+        "lastUpdate": ""
+      }
+    },
+    "1257350": {
+      "id": "1257350",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "광열",
+      "koreanName": "광열",
+      "englishName": "Fired Up",
+      "icon": "inv12_apextalent_mage_firedup",
+      "iconName": "inv12_apextalent_mage_firedup",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "광열 특성으로 얻는 실제 화염 피해 증가 버프다. 기본 효과는 8초 동안 화염 피해 2% 증가이며 여러 적용이 겹친다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_mage_firedup.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_mage_firedup.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_mage_firedup.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_mage_firedup.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_mage_firedup.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-충전회복",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-발화연장"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Buffs\\광열.md",
         "lastUpdate": ""
       }
     },
@@ -120707,18 +121373,18 @@
       ],
       "name": "영감의 재",
       "koreanName": "영감의 재",
-      "englishName": "Inspired Ashes",
+      "englishName": "Ashes of Inspiration",
       "icon": "inv_misc_powder_copper",
       "iconName": "inv_misc_powder_copper",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영감의 재 (Inspired Ashes)",
+      "description": "12.1 영감의 재는 비전 불사조가 주문을 사용할 때 쏟아지는 마나 1중첩을 제공한다. 강화 주문은 추가 1중첩을 더 제공한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120732,12 +121398,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/환기비전불사조",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/태양길잡이전서",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쏟아지는마나"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -120962,14 +121632,14 @@
       "icon": "shaman_talent_elementalblast",
       "iconName": "shaman_talent_elementalblast",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비전화염 연사 (Spellfire Salvo)",
+      "description": "화염은 화염 작렬 재사용이 1초 줄고 유성 파편 피해가 15% 증가한다. 비전은 비전 연사 최대 중첩이 5 늘고 유성 파편 피해가 15% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120981,14 +121651,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/shaman_talent_elementalblast.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/영광스러운광채",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/화염계"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.075,
         "hasWikilinks": true
       },
       "source": {
@@ -121104,18 +121779,18 @@
       ],
       "name": "화염계",
       "koreanName": "화염계",
-      "englishName": "Fire Realm",
+      "englishName": "Pyrocosm",
       "icon": "spell_fire_meteorstorm",
       "iconName": "spell_fire_meteorstorm",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 화염계 (Fire Realm)",
+      "description": "화염은 화염구 피해 시 20% 확률로 유성 파편을 부르고 파편 착탄마다 화염 작렬 재사용이 0.5초 줄어든다. 비전은 신비한 화살의 파동마다 파편 발동을 판정하고 파편 착탄으로 번뜩임을 얻을 수 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121127,14 +121802,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_meteorstorm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/영광스러운광채"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -123040,14 +123720,14 @@
       "icon": "ability_mage_frostfirebolt",
       "iconName": "ability_mage_frostfirebolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 양면성 (Duality)",
+      "description": "화염에서는 불덩이 작렬 사용 시 20% 확률로 혹한의 쐐기를 함께 발사한다. 냉기에서는 혹한의 쐐기 사용이 불덩이 작렬을 함께 시전한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123059,14 +123739,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_frostfirebolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/원소출현",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/이중시전숙련"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 6,
+        "synergyCount": 1,
+        "linkDensity": 0.083,
         "hasWikilinks": true
       },
       "source": {
@@ -123085,18 +123770,18 @@
       ],
       "name": "타오르는 한기",
       "koreanName": "타오르는 한기",
-      "englishName": "Burning Chill",
+      "englishName": "Molten Chill",
       "icon": "spell_fire_incinerate",
       "iconName": "spell_fire_incinerate",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 타오르는 한기 (Burning Chill)",
+      "description": "화염의 냉기·화염 복합 주문은 작열 적용 효율이 10% 높아진다. 냉기에서는 해당 복합 주문이 피해의 30%를 9초 작열로 추가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123108,14 +123793,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/방열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.04,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.078,
         "hasWikilinks": true
       },
       "source": {
@@ -123134,18 +123824,18 @@
       ],
       "name": "원소 출현",
       "koreanName": "원소 출현",
-      "englishName": "Elemental Invocation",
+      "englishName": "Elemental Conduit",
       "icon": "inv_ability_shaman_primordialwave",
       "iconName": "inv_ability_shaman_primordialwave",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 원소 출현 (Elemental Invocation)",
+      "description": "가속을 2% 높이며 화염에서는 혜성 폭풍과 혹한의 쐐기도 작열을 적용하게 한다. 냉기에서는 유성과 불덩이 작렬에 작열을 더한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123157,14 +123847,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_shaman_primordialwave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/양면성"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -130774,7 +131469,7 @@
     },
     "1271171": {
       "id": "1271171",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -130782,18 +131477,18 @@
       ],
       "name": "거대한 불길",
       "koreanName": "거대한 불길",
-      "englishName": "Pyromaniac",
+      "englishName": "Conflagration",
       "icon": "spell_shaman_firenova",
       "iconName": "spell_shaman_firenova",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 거대한 불길 (Pyromaniac)",
-      "category": "talent",
+      "range": "",
+      "description": "화염 작렬에 주변 최대 8명 대상의 추가 화염 피해를 붙이는 지속 효과다. 화염 작렬 자체의 단일 치명타 전환과 주변 피해는 역할이 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130805,14 +131500,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_firenova.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.065,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -130822,7 +131521,7 @@
     },
     "1271177": {
       "id": "1271177",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Mage",
       "spec": "화염",
       "specs": [
@@ -130830,18 +131529,18 @@
       ],
       "name": "완전 연소",
       "koreanName": "완전 연소",
-      "englishName": "Controlled Burn",
+      "englishName": "Burnout",
       "icon": "ability_mage_burnout",
       "iconName": "ability_mage_burnout",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 완전 연소 (Controlled Burn)",
-      "category": "talent",
+      "range": "",
+      "description": "발화가 끝나면 남아 있는 각 작열 피해의 75%를 폭발 피해로 주는 특성이다. 적의 생명력 35% 미만에서 피해를 올리는 타오르는 격노와 다르다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -130853,14 +131552,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_burnout.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -136399,6 +137102,111 @@
         "lastUpdate": ""
       }
     },
+    "1296583": {
+      "id": "1296583",
+      "type": "passive",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "Mage Fire 12.1 Class Set 2pc",
+      "koreanName": "Mage Fire 12.1 Class Set 2pc",
+      "englishName": "Mage Fire 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "화염 시즌 2의 2세트 효과다. 화염 파열을 적용해 직접 시전한 불덩이 작렬과 불기둥이 확정 치명타가 된다. 세트 미착용 상태의 직접 시전에 이 보장을 적용하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296584": {
+      "id": "1296584",
+      "type": "passive",
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "name": "Mage Fire 12.1 Class Set 4pc",
+      "koreanName": "Mage Fire 12.1 Class Set 4pc",
+      "englishName": "Mage Fire 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "화염 시즌 2의 4세트 효과다. 2026-09-13 영문 툴팁은 화염 파열 시전 시간 20% 감소, 화염 파열 피해 보너스 25% 증가를 표시한다. 전체 화염 피해가 25% 증가하는 뜻이 아니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
     "1296603": {
       "id": "1296603",
       "type": "set-bonus",
@@ -138005,6 +138813,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\축적된힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "1297073": {
+      "id": "1297073",
+      "type": "class-talent",
+      "class": "Mage",
+      "spec": "공용",
+      "specs": [
+        "Arcane",
+        "Fire",
+        "Frost"
+      ],
+      "name": "강화된 수호",
+      "koreanName": "강화된 수호",
+      "englishName": "Improved Warding",
+      "icon": "inv_cloth_raidmage_p_01helm",
+      "iconName": "inv_cloth_raidmage_p_01helm",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "12.1에 추가된 마법사 직업 특성으로 광역 공격으로 받는 피해를 4% 줄인다. 모든 종류의 피해를 4% 줄이는 효과는 아니다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_cloth_raidmage_p_01helm.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_cloth_raidmage_p_01helm.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_cloth_raidmage_p_01helm.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_cloth_raidmage_p_01helm.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cloth_raidmage_p_01helm.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Talents\\강화된수호.md",
         "lastUpdate": ""
       }
     },

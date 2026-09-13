@@ -141,15 +141,26 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Verified both heroes and all three modes at 1440px, 390px and 320px: no document/flow overflow or broken loaded icons, and native detail disclosure retains complete conditions. Final bundle `main.6855ff4e.js` was checked after the last wording fixes; spell links are numeric, no console errors appeared, and Wildfire Bomb has nine actual direct synergy connections.
 - Limits: current WCL/Archon aggregates, personal simulations and private Trueshot Lodge messages were not obtained. Author/build-specific opener differences remain explicit. Dense graph labels, generic featured-skill duplication, older common mechanics, 86 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
 
+### Fire Mage
+
+- Replaced the old manuscript in place with 14 manually authored sections, ten practical tips and separate Sunfury/Frostfire opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/06-마법사/화염/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 update and September hotfixes, Preheat's Wowhead guide, Dutchmagoz's actual Icy Veins hero/target presets, Tamir's Method guide and current Korean/English spell tooltips. SimC implementation commit `330bb6ffacb5e8887a0a02c2d8704389c85b59e6` is not a personal simulation result.
+- Manually reviewed 53 local atomic notes and 35 related shared notes. Removed obsolete Hyperthermia 383860, added current Al'ar buff 383874, separated Pyroclasm/Heat Shimmer/Fired Up buffs from their talent IDs and retained all three Fired Up nodes. Added passive S2 effects and current barrier talents. Only Mage records changed in the generated DB.
+- Rewrote 18 local relationships and two common hero hubs. Corrected Rondurmancy's three-sphere limit, Phoenix-to-Mana-Cascade triggers, Sunfury Meteor's Pyroclasm grant and Frostfire's automatic Comet Storm/Glacial Spike versus real casts. Removed old June usage claims and the fabricated Fire uptime/cooldown chart.
+- Retained source differences: current S2 4pc tooltip bonus 25% versus August guide 20%; pure-total AoE at three targets versus practical priority-target compromise at four; Method's inconsistent four/five-target text; August 31 set fix versus older queue-bug warnings. PvP-only nerfs were not applied to PvE.
+- Canonical equality, spell identity/mechanics assertions, all prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for 53 local and 64 shared numeric records; explicit guide icon/name checks passed for 19 IDs, with zero errors/warnings. The other shared notes received metadata validation, not a complete mechanics re-audit.
+- Verified production bundle `main.9e682b57.js`: both heroes and all three modes at 1440px, 390px and 320px, with no document/flow overflow or broken loaded icons. Native detail disclosure retained complete conditions. The graph centers on Combustion with seven actual direct relationships; no removed Hyperthermia link or console error appeared.
+- Limits: current WCL/Archon usage/DPS aggregates, personal simulations and private Altered Time messages were not obtained. Dense graph-label overlaps and similar shared/local hubs, generic featured-skill selection, older common mechanics, 77 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 19 manuscripts
+## Still 12.0.5: 18 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Mage | Fire, Frost |
+| Mage | Frost |
 | Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
 | Priest | Discipline, Shadow |
@@ -160,8 +171,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship and Survival now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 19 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival and Fire now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 18 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

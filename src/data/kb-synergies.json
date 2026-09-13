@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T00:02:48.101Z",
+    "generatedAt": "2026-09-13T00:46:40.086Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 492,
-    "rawTotalSynergies": 492,
+    "totalSynergies": 497,
+    "rawTotalSynergies": 497,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -49,27 +49,17 @@
       "glacial-spike-shatter": 1,
       "spellslinger-burst": 1,
       "aoe-loop": 1,
-      "defensive-planning": 2,
+      "defensive-planning": 1,
       "proc-priority-variant": 1,
       "ray-burst": 1,
       "frostfire-variant": 1,
       "charge-recovery": 1,
-      "burst-window": 3,
+      "burst-window": 2,
       "hero-followup": 1,
       "resource-generation": 1,
       "resource-loop": 1,
       "proc-consumption": 1,
-      "apex-combustion": 1,
-      "ignite-aoe": 1,
-      "execute-mobility": 1,
-      "sunfury-burst": 1,
-      "proc-conversion": 1,
-      "cooldown-alignment": 1,
-      "free-spender-chain": 1,
-      "combustion-start": 1,
-      "fire-blast-economy": 1,
-      "spender-empower": 1,
-      "passive-context": 1,
+      "conditional-rotation": 18,
       "mobility-control-utility": 1,
       "conduit-of-the-celestials-shared": 1,
       "master-of-harmony-shared": 1,
@@ -268,7 +258,7 @@
       "Druid": 54,
       "Evoker": 34,
       "Hunter": 50,
-      "Mage": 34,
+      "Mage": 39,
       "마법사": 1,
       "Monk": 31,
       "Paladin": 28,
@@ -6698,41 +6688,16 @@
     "mage_common_frostfire_dual_school": {
       "id": "mage_common_frostfire_dual_school",
       "name": "Frostfire-얼음불꽃화살-이중속성",
+      "description": "얼음불꽃 화살이 전문화의 기본 주문을 대체한다. 등온 핵은 유성과 혜성 폭풍을 연결하고 급속 냉동화상은 서리불꽃 강화를 제공한다.",
       "type": "synergy",
       "synergyType": "frostfire_hero_tree",
       "participants": [
         "431044",
-        "431066",
-        "431067",
-        "431095",
-        "431112",
-        "431117",
-        "431131",
-        "431166",
         "431176",
         "431178",
-        "431189",
-        "1248002",
-        "1248014",
-        "1248016",
-        "1262843",
-        "1262844",
-        "1262845",
-        "133",
-        "11366",
-        "108853",
-        "190319",
+        "431095",
         "153561",
-        "383860",
-        "116",
-        "30455",
-        "44614",
-        "153595",
-        "199786",
-        "190447",
-        "1246769",
-        "84714",
-        "112965"
+        "153595"
       ],
       "class": "Mage",
       "spec": "공용",
@@ -6742,15 +6707,9 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -6820,38 +6779,17 @@
     "mage_common_sunfury_spellfire_phoenix": {
       "id": "mage_common_sunfury_spellfire_phoenix",
       "name": "Sunfury-비전화염구슬-비전불사조",
+      "description": "비전화염 구슬을 준비한 뒤 비전 쇄도 또는 발화로 불사조를 부른다. 종료 후 알라르의 기억은 전문화마다 다른 후속 버프를 제공한다.",
       "type": "synergy",
       "synergyType": "sunfury_hero_tree",
       "participants": [
         "448601",
         "448658",
-        "449293",
-        "449330",
-        "449349",
         "449382",
-        "449394",
-        "449412",
-        "449596",
         "449619",
-        "449627",
-        "451035",
-        "451038",
-        "1246030",
-        "1255166",
-        "1260272",
-        "1260616",
-        "1260673",
         "365350",
-        "321507",
-        "30451",
-        "44425",
-        "384452",
         "190319",
-        "108853",
-        "11366",
-        "2120",
-        "153561",
-        "383860"
+        "383874"
       ],
       "class": "Mage",
       "spec": "공용",
@@ -6861,15 +6799,14 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전쇄도",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전의여파",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Buffs/이상고열"
+      ],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Synergies\\Sunfury-비전화염구슬-비전불사조.md",
@@ -7550,80 +7487,104 @@
     "SY-MAGE-FIRE-FIRED-UP-COMBUSTION": {
       "id": "SY-MAGE-FIRE-FIRED-UP-COMBUSTION",
       "name": "광열-발화",
+      "description": "몰아치는 열기! 소비가 광열을 만들고 중간 정점 특성은 화염 작렬을 회복시킨다. 마지막 정점 특성은 발화 중 광열 획득마다 발화를 1초 연장한다. 12.1의 기본 광열은 2%·8초이며 발화 중 발동 확률은 반복할수록 감소한다.",
       "type": "synergy",
-      "synergyType": "apex-combustion",
+      "synergyType": "conditional-rotation",
       "participants": [
-        "1257343",
-        "190319",
         "48108",
-        "108853"
+        "1257343",
+        "1257349",
+        "1257348",
+        "108853",
+        "190319"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불의생명",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화상의자극",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/끓어오르는노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광기의화염술사"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-충전회복",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열-발화연장"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\광열-발화.md",
         "lastUpdate": ""
       }
     },
+    "SY-MAGE-FIRE-SPHERE-METEORITE": {
+      "id": "SY-MAGE-FIRE-SPHERE-METEORITE",
+      "name": "구슬-광채-화염작렬회복",
+      "description": "구슬을 생성하면 다음 화염 작렬이 영광스러운 광채의 파편을 부른다. 화염계 선택 시 파편 착탄은 화염 작렬 재사용을 줄이며 비전화염 연사는 파편 피해와 기본 재사용을 보조한다.",
+      "type": "synergy",
+      "synergyType": "conditional-rotation",
+      "participants": [
+        "448601",
+        "449394",
+        "108853",
+        "1260673",
+        "1260616"
+      ],
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\구슬-광채-화염작렬회복.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-MAGE-FIRE-COMBUSTION-HOT-STREAK": {
       "id": "SY-MAGE-FIRE-COMBUSTION-HOT-STREAK",
       "name": "발화-몰아치는열기",
+      "description": "발화의 치명타 보장은 열기 생성과 몰아치는 열기! 전환을 빠르게 만든다. 화염 작렬은 시전 중에도 사용할 수 있고 소비기는 대상 목적에 따라 불덩이 작렬 또는 불기둥으로 나뉜다.",
       "type": "synergy",
-      "synergyType": "burst-window",
+      "synergyType": "conditional-rotation",
       "participants": [
         "190319",
-        "48108",
+        "48107",
         "108853",
+        "48108",
         "11366",
         "2120"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이상고열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/덧불",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/끓어오르는노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/타오르는격노",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/폭발지대"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\발화-몰아치는열기.md",
         "lastUpdate": ""
@@ -7632,69 +7593,95 @@
     "SY-MAGE-FIRE-FLAMESTRIKE-IGNITE-AOE": {
       "id": "SY-MAGE-FIRE-FLAMESTRIKE-IGNITE-AOE",
       "name": "불기둥-점화-작열광역",
+      "description": "불꽃의 연료를 배워야 불기둥이 열기 연쇄에 참여한다. 몰아치는 열기! 소비와 점화는 불기둥의 작열 기여를 높인다. 광역 전환은 총 피해뿐 아니라 우선 대상의 생존 시간까지 포함해 결정한다.",
       "type": "synergy",
-      "synergyType": "ignite-aoe",
+      "synergyType": "conditional-rotation",
       "participants": [
         "2120",
-        "12846",
-        "1254756",
         "416094",
-        "1254828"
+        "48108",
+        "12846",
+        "1254756"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃의연료",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/야생불",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의대가",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃심화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/파괴제어"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\불기둥-점화-작열광역.md",
         "lastUpdate": ""
       }
     },
+    "SY-MAGE-FIRE-PHOENIX-MANA-CASCADE": {
+      "id": "SY-MAGE-FIRE-PHOENIX-MANA-CASCADE",
+      "name": "불사조-영감의재-가속",
+      "description": "태양길잡이 전서로 늘린 불사조 강화 주문은 영감의 재를 통해 쏟아지는 마나를 더 제공한다. 일반 주문은 1중첩, 강화 주문은 추가 1중첩이다.",
+      "type": "synergy",
+      "synergyType": "conditional-rotation",
+      "participants": [
+        "448658",
+        "449382",
+        "1260272",
+        "449293"
+      ],
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\불사조-영감의재-가속.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-MAGE-FIRE-SCORCH-EXECUTE": {
       "id": "SY-MAGE-FIRE-SCORCH-EXECUTE",
       "name": "불태우기-가열-마무리",
+      "description": "타오르는 격노는 35% 미만 피해 증가, 가열은 30% 미만 화염구·불태우기 강화다. 일렁이는 열기는 다음 불태우기를 30% 미만 대상처럼 취급하게 한다. 세 효과는 같은 경계나 같은 버프가 아니다.",
       "type": "synergy",
-      "synergyType": "execute-mobility",
+      "synergyType": "conditional-rotation",
       "participants": [
         "2948",
         "450746",
-        "457735",
-        "457803"
+        "457803",
+        "457735"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/방화광",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/가열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/일렁이는열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/타오르는격노",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/일렁이는열기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\불태우기-가열-마무리.md",
@@ -7704,68 +7691,163 @@
     "SY-MAGE-FIRE-SUNFURY-ORB-PHOENIX": {
       "id": "SY-MAGE-FIRE-SUNFURY-ORB-PHOENIX",
       "name": "비전화염구슬-비전불사조",
+      "description": "몰아치는 열기! 소비와 비전투 대기로 구슬을 준비한다. 발화가 불사조를 소환하면 태양길잡이 전서가 구슬을 소비해 강화 주문을 더한다. 불사조가 끝나면 알라르의 기억의 이상 고열로 즉시 소비를 이어간다.",
       "type": "synergy",
-      "synergyType": "sunfury-burst",
+      "synergyType": "conditional-rotation",
       "participants": [
         "448601",
-        "448658",
+        "449382",
         "190319",
-        "449619"
+        "448658",
+        "449619",
+        "383874"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이상고열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Buffs/이상고열"
+      ],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\비전화염구슬-비전불사조.md",
         "lastUpdate": ""
       }
     },
+    "SY-MAGE-FIRE-FROSTFIRE-DUALITY": {
+      "id": "SY-MAGE-FIRE-FROSTFIRE-DUALITY",
+      "name": "서리불꽃-양면성-소비",
+      "description": "양면성은 불덩이 작렬에 확률적 혹한의 쐐기를 더하고 원소 출현은 그 피해를 작열에 연결한다. 불기둥으로 바꿀 때는 이 단일 대상 연계가 같은 방식으로 발생하지 않는다.",
+      "type": "synergy",
+      "synergyType": "conditional-rotation",
+      "participants": [
+        "11366",
+        "1262843",
+        "1262845",
+        "1248014",
+        "12846"
+      ],
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/특화-작열"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\서리불꽃-양면성-소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FIRE-FROSTFIRE-METEOR": {
+      "id": "SY-MAGE-FIRE-FROSTFIRE-METEOR",
+      "name": "서리불꽃-유성-자동공격",
+      "description": "등온 핵은 유성에 혜성 폭풍을 더하고 급속 냉동화상은 서리불꽃 강화를 제공한다. 원소 출현이 있으면 혜성 폭풍도 작열을 적용한다.",
+      "type": "synergy",
+      "synergyType": "conditional-rotation",
+      "participants": [
+        "153561",
+        "431095",
+        "431178",
+        "431176",
+        "1262845"
+      ],
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\서리불꽃-유성-자동공격.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FIRE-SUNFURY-PYROCLASM": {
+      "id": "SY-MAGE-FIRE-SUNFURY-PYROCLASM",
+      "name": "성난태양-유성-화염파열",
+      "description": "성난태양 처형자를 선택하면 유성이 배운 화염 파열 버프를 제공하고 그 피해 보너스를 강화한다. 시즌 2의 직접 시전 강화와 자연스럽게 연결된다.",
+      "type": "synergy",
+      "synergyType": "conditional-rotation",
+      "participants": [
+        "153561",
+        "449349",
+        "269650",
+        "11366"
+      ],
+      "class": "Mage",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\성난태양-유성-화염파열.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-MAGE-FIRE-HEATING-UP-FIRE-BLAST": {
       "id": "SY-MAGE-FIRE-HEATING-UP-FIRE-BLAST",
       "name": "열기-화염작렬",
+      "description": "화염구를 시전하는 중 열기를 화염 작렬로 바꾸고 시전 종료에 즉시 불덩이 작렬을 연결한다. 두 공격이 함께 치명타가 되면 다음 몰아치는 열기!가 바로 생길 수 있다.",
       "type": "synergy",
-      "synergyType": "proc-conversion",
+      "synergyType": "conditional-rotation",
       "participants": [
+        "133",
         "48107",
         "108853",
         "48108",
         "11366"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불태우기"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/임계질량",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙된주문",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불의생명",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/열성적인깜빡임",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/가열"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\열기-화염작렬.md",
         "lastUpdate": ""
@@ -7774,19 +7856,24 @@
     "SY-MAGE-FIRE-METEOR-COMBUSTION": {
       "id": "SY-MAGE-FIRE-METEOR-COMBUSTION",
       "name": "유성-발화-폭발지대",
+      "description": "폭발 지대가 있으면 유성은 30초, 덧불이 있으면 발화는 1분이다. 발화 중 유성과 중간 유성을 계획하되 유성을 오래 미뤄 다음 발화의 착탄을 잃지 않는다. 완전 연소는 종료 시 남은 작열을 폭발시킨다.",
       "type": "synergy",
-      "synergyType": "cooldown-alignment",
+      "synergyType": "conditional-rotation",
       "participants": [
         "153561",
-        "190319",
         "416719",
-        "1254857"
+        "1254194",
+        "190319",
+        "1271177"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/유성",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
@@ -7794,11 +7881,8 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/폭발지대",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/거대충돌",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/덧불",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/완전연소",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/끓어오르는노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/완전연소"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\유성-발화-폭발지대.md",
@@ -7808,26 +7892,32 @@
     "SY-MAGE-FIRE-BLAZING-BARRIER-SURVIVAL": {
       "id": "SY-MAGE-FIRE-BLAZING-BARRIER-SURVIVAL",
       "name": "이글거리는방벽-화염생존",
+      "description": "이글거리는 방벽 연마는 추가 충전과 흡수량 비례 회복을 제공한다. 강화된 수호는 광역 피해를 줄이며, 영웅 특성의 주입된 수호물 또는 순간의 장애물일 뿐은 서로 다른 방어 보조다.",
       "type": "synergy",
-      "synergyType": "defensive-planning",
+      "synergyType": "conditional-rotation",
       "participants": [
         "235313",
-        "342245",
-        "45438"
+        "321708",
+        "1297073",
+        "431066",
+        "449330"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/이글거리는방벽연마",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Talents/강화된수호"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\이글거리는방벽-화염생존.md",
         "lastUpdate": ""
@@ -7836,31 +7926,35 @@
     "SY-MAGE-FIRE-HYPERTHERMIA-PYROMANIAC": {
       "id": "SY-MAGE-FIRE-HYPERTHERMIA-PYROMANIAC",
       "name": "이상고열-광기의화염술사",
+      "description": "이상 고열은 소비기를 즉시 시전·확정 치명타로 만들지만 몰아치는 열기! 소비 자체를 항상 보장하지는 않는다. 실제 소비는 격앙의 작열 강화와 광기의 화염술사 자동 반복 판정으로 연결된다.",
       "type": "synergy",
-      "synergyType": "free-spender-chain",
+      "synergyType": "conditional-rotation",
       "participants": [
-        "383860",
-        "451466",
+        "383874",
         "48108",
+        "451466",
         "11366",
-        "2120"
+        "2120",
+        "417467"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이상고열",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Buffs/이상고열"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광기의화염술사",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불폭풍",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙"
       ],
       "source": {
@@ -7871,32 +7965,32 @@
     "SY-MAGE-FIRE-SPONTANEOUS-COMBUSTION": {
       "id": "SY-MAGE-FIRE-SPONTANEOUS-COMBUSTION",
       "name": "자연발화-발화",
+      "description": "자연 발화는 발화를 사용했을 때 화염 작렬 충전을 회복한다. 충전 최대치를 늘리는 꺼지지 않는 불꽃·열성적인 깜빡임과 역할이 다르다.",
       "type": "synergy",
-      "synergyType": "combustion-start",
+      "synergyType": "conditional-rotation",
       "participants": [
         "451875",
         "190319",
         "108853",
-        "48108"
+        "205029",
+        "387044"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불의생명",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화상의자극",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/열성적인깜빡임"
       ],
       "source": {
@@ -7907,34 +8001,32 @@
     "SY-MAGE-FIRE-FROM-ASHES-FIRE-BLAST": {
       "id": "SY-MAGE-FIRE-FROM-ASHES-FIRE-BLAST",
       "name": "잿불의생명-화염작렬",
+      "description": "잿불의 생명은 직접 피해로 화염 작렬 재사용을 줄인다. 성난태양의 화염계는 화염구가 만든 파편 착탄에서 추가 회복을 제공한다.",
       "type": "synergy",
-      "synergyType": "fire-blast-economy",
+      "synergyType": "conditional-rotation",
       "participants": [
         "342344",
+        "133",
+        "11366",
         "108853",
-        "48107",
-        "48108"
+        "1260673"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염구",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/화염작렬"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불의생명",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/꺼지지않는불꽃",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/자연발화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화상의자극",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/거대한불길",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/야생불"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불의생명"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\잿불의생명-화염작렬.md",
@@ -7944,36 +8036,36 @@
     "SY-MAGE-FIRE-FIREFALL-HOT-STREAK": {
       "id": "SY-MAGE-FIRE-FIREFALL-HOT-STREAK",
       "name": "화염파열-몰아치는열기",
+      "description": "몰아치는 열기! 소비로 화염 파열을 얻고 비즉시 불덩이 작렬 또는 불기둥으로 소모한다. 버프는 20초·최대 2중첩이며 시즌 2 세트는 이 직접 시전을 강화한다.",
       "type": "synergy",
-      "synergyType": "spender-empower",
+      "synergyType": "conditional-rotation",
       "participants": [
-        "269650",
         "48108",
+        "269650",
+        "269651",
         "11366",
-        "2120"
+        "2120",
+        "453282"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/몰아치는열기",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불덩이작렬",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/열기"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/불기둥"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Buffs/화염파열"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염파열",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/잿불폭풍",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/광기의화염술사",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/점화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃의연료",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/거대한불길",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃심화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/파괴제어"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\화염파열-몰아치는열기.md",
@@ -7983,36 +8075,33 @@
     "SY-MAGE-FIRE-PASSIVE-CRIT-DAMAGE": {
       "id": "SY-MAGE-FIRE-PASSIVE-CRIT-DAMAGE",
       "name": "화염패시브-치명타-피해보정",
+      "description": "발화는 확정 치명타를 제공하고 격앙된 주문은 연속 치명타 피해를 강화한다. 끓어오르는 노여움은 특화·작열, 모두 불사르리는 주문 피해로 보상하지만 둘은 같은 선택 노드다.",
       "type": "synergy",
-      "synergyType": "passive-context",
+      "synergyType": "conditional-rotation",
       "participants": [
+        "190319",
         "117216",
         "383810",
-        "343230",
-        "417467"
+        "383967",
+        "1254512"
       ],
       "class": "Mage",
-      "spec": "Fire",
+      "spec": "화염",
+      "specs": [
+        "Fire"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/화염/Skills/발화"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/임계질량",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙된주문",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃의티끌",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/격앙",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리",
         "08-직업별-Knowledge-Base/06-마법사/화염/Talents/끓어오르는노여움",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불타는격정",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의촉진",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/불꽃심화",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/파괴제어",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/화염의대가",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/야생불",
-        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/완전연소"
+        "08-직업별-Knowledge-Base/06-마법사/화염/Talents/모두불사르리"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Synergies\\화염패시브-치명타-피해보정.md",
