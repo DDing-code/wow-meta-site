@@ -437,7 +437,10 @@ function main() {
   assert(guideDetailSource.includes('const manualSteps = getOpenerFlowSteps({ opener: manualOpener }, profile, guide);'), 'Both opener renderers must share the full authored step mapping');
   const flowPreview = guideDetailSource.slice(guideDetailSource.indexOf('function OpenerFlowPreview('), guideDetailSource.indexOf('function NarrativeGuideSection('));
   const flowStyles = guideDetailSource.slice(guideDetailSource.indexOf('const OpenerFlowList ='), guideDetailSource.indexOf('const TipList ='));
-  assert(flowPreview.includes('<InlineSkillTerm skill={step.skill}>') && flowStyles.includes('width: 18px;') && flowStyles.includes('min-height: 24px;'), 'Flow icons and names must share a tooltip link with 18px icons and a minimum 24px pointer target');
+  assert(flowPreview.includes('<InlineSkillTerm skill={step.skill}>') && flowStyles.includes('width: 16px;') && flowStyles.includes('min-height: 24px;'), 'Flow icons and names must share a tooltip link with 16px icons and a minimum 24px pointer target');
+  const heroSkillStyles = guideDetailSource.slice(guideDetailSource.indexOf('const HeroBranchSkillList ='), guideDetailSource.indexOf('const HeroBranchFlowStrip ='));
+  assert(heroSkillStyles.includes('width: 16px;') && heroSkillStyles.includes('min-height: 24px;') && !/border:|background:/.test(heroSkillStyles), 'Hero flow skills must use small inline links without a separate padded box per icon');
+  assert(guideDetailSource.includes('data-hero-flow-skills') && !guideDetailSource.includes('HeroBranchFlowIcons'), 'Legacy hero flows must reuse the compact named skill list instead of large icon-only slots');
   assert(flowStyles.includes('flex-wrap: wrap;') && !/grid-auto-flow: column|overflow-x: auto|min-height: 206px/.test(flowStyles), 'Flow steps must wrap within the available width without a horizontal rail');
   assert(!flowStyles.includes('grid-template-columns:') && flowStyles.includes('max-width: 100%;') && !flowPreview.includes('OpenerStepNumber'), 'Flow steps must fit their content without equal-width icon slots or separate number columns');
   assert(flowPreview.includes('<OpenerFlowDetails') && flowStyles.includes('styled.details'), 'Long flow explanations must use an accessible native disclosure');

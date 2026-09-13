@@ -2235,11 +2235,13 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       <div>
                         <span>공통과 달라지는 첫 흐름</span>
                         {!!branchFlowSkills.length && (
-                          <HeroBranchFlowIcons aria-label={`${branch.label} 핵심 흐름 스킬`}>
+                          <HeroBranchSkillList aria-label={`${branch.label} 핵심 흐름 스킬`} data-hero-flow-skills>
                             {branchFlowSkills.map(skill => (
-                              <SkillIconLink key={`${branch.label}-flow-${skill.id}`} skill={skill} size={30} />
+                              <li key={`${branch.label}-flow-${skill.id}`}>
+                                <InlineSkillTerm skill={skill}>{skillName(skill)}</InlineSkillTerm>
+                              </li>
                             ))}
-                          </HeroBranchFlowIcons>
+                          </HeroBranchSkillList>
                         )}
                       </div>
                       <p>{renderGuideText(branchFlowNote, inlineTerms)}</p>
@@ -5992,7 +5994,7 @@ const HeroBranchSkillBlock = styled.div`
 const HeroBranchSkillList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2px 10px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6001,21 +6003,27 @@ const HeroBranchSkillList = styled.ul`
     min-width: 0;
     display: inline-flex;
     align-items: center;
-    gap: 7px;
     max-width: 100%;
-    padding: 5px 9px 5px 6px;
-    border: 1px solid rgba(244, 239, 229, 0.1);
-    background: rgba(8, 13, 17, 0.42);
+    padding: 0;
+    font-size: 0.8rem;
   }
 
-  span {
+  li > a {
     min-width: 0;
-    color: #f4efe5;
-    font-size: 0.76rem;
-    font-weight: 900;
-    line-height: 1.25;
-    word-break: keep-all;
+    min-height: 24px;
+    margin: 0;
+    white-space: normal;
+  }
+
+  li > a > em {
+    white-space: normal;
     overflow-wrap: anywhere;
+  }
+
+  li > a > img,
+  li > a > span {
+    width: 16px;
+    height: 16px;
   }
 `;
 
@@ -6030,10 +6038,8 @@ const HeroBranchFlowStrip = styled.div`
     rgba(8, 13, 17, 0.48);
 
   > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    gap: 6px;
     min-width: 0;
   }
 
@@ -6056,24 +6062,6 @@ const HeroBranchFlowStrip = styled.div`
     overflow-wrap: anywhere;
   }
 
-  @container (max-width: 520px) {
-    > div {
-      display: grid;
-      justify-content: stretch;
-    }
-  }
-`;
-
-const HeroBranchFlowIcons = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 6px;
-  min-width: 0;
-
-  @container (max-width: 520px) {
-    justify-content: flex-start;
-  }
 `;
 
 const HeroBranchFocusList = styled.ul`
@@ -6368,10 +6356,10 @@ const OpenerFlowList = styled.ol`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 6px;
+  gap: 2px 4px;
   min-width: 0;
   margin: 0;
-  padding: 8px 10px;
+  padding: 6px 8px;
   list-style: none;
   font-size: 0.85rem;
   word-break: keep-all;
@@ -6380,7 +6368,7 @@ const OpenerFlowList = styled.ol`
   li {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
     min-width: 0;
     max-width: 100%;
     padding: 0;
@@ -6400,8 +6388,8 @@ const OpenerFlowList = styled.ol`
 
   li > a > img,
   li > a > span {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   li > svg {
