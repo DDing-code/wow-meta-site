@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T00:46:40.086Z",
+    "generatedAt": "2026-09-13T06:51:10.038Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 497,
-    "rawTotalSynergies": 497,
+    "totalSynergies": 504,
+    "rawTotalSynergies": 504,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
       "shared_grip_mobility_control": 1,
       "cooldown-extension": 1,
       "razorice-spend": 1,
-      "proc-spender": 3,
+      "proc-spender": 4,
       "aoe-transition": 1,
       "proc-extension": 1,
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 179,
+      "unknown": 178,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -44,15 +44,22 @@
       "sunfury_hero_tree": 1,
       "defensive_mobility_matrix": 1,
       "raid_mythic_plus_utility": 1,
-      "orb-proc-window": 1,
-      "proc-shatter": 1,
-      "glacial-spike-shatter": 1,
-      "spellslinger-burst": 1,
+      "proc-generation": 1,
+      "talent-choice": 1,
+      "resource-conversion": 1,
+      "tier-resource-loop": 1,
+      "hero-burst": 1,
+      "hero-proc": 1,
+      "tier-proc": 1,
       "aoe-loop": 1,
       "defensive-planning": 1,
-      "proc-priority-variant": 1,
-      "ray-burst": 1,
-      "frostfire-variant": 1,
+      "cleave-targeting": 1,
+      "resource-spender": 1,
+      "hero-resource-loop": 1,
+      "cooldown-reduction": 1,
+      "proc-sequence": 1,
+      "apex-cooldown": 1,
+      "hero-aoe": 1,
       "charge-recovery": 1,
       "burst-window": 2,
       "hero-followup": 1,
@@ -258,8 +265,7 @@
       "Druid": 54,
       "Evoker": 34,
       "Hunter": 50,
-      "Mage": 39,
-      "마법사": 1,
+      "Mage": 47,
       "Monk": 31,
       "Paladin": 28,
       "성기사": 10,
@@ -6721,36 +6727,16 @@
     "mage_common_spellslinger_splinter_orb_chain": {
       "id": "mage_common_spellslinger_splinter_orb_chain",
       "name": "Spellslinger-쇄편-구슬-연쇄",
+      "description": "쇄편 생성·소비·직접 적중이 전문화별 구슬 재사용과 자원 생성으로 연결된다. 비전과 냉기의 실제 주문은 각 전문화 관계에서 따로 연결한다.",
       "type": "synergy",
       "synergyType": "spellslinger_hero_tree",
       "participants": [
         "443739",
         "443783",
         "444256",
-        "444483",
-        "444675",
         "444719",
-        "444752",
-        "444756",
-        "444784",
-        "444827",
-        "444968",
-        "444986",
-        "470021",
         "1261080",
-        "1261082",
-        "1261106",
-        "1280165",
-        "153626",
-        "44425",
-        "5143",
-        "263725",
-        "384858",
-        "84714",
-        "30455",
-        "199786",
-        "112965",
-        "190447"
+        "444986"
       ],
       "class": "Mage",
       "spec": "공용",
@@ -6760,15 +6746,8 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전보주",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/비전탄막",
-        "08-직업별-Knowledge-Base/06-마법사/비전/Skills/신비한화살",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -6910,181 +6889,210 @@
         "lastUpdate": ""
       }
     },
-    "SY-MAGE-FROST-WINTERTIDE-FROZEN-ORB": {
-      "id": "SY-MAGE-FROST-WINTERTIDE-FROZEN-ORB",
+    "SY-MAGE-FROST-WINTERTIDE-ORB": {
+      "id": "SY-MAGE-FROST-WINTERTIDE-ORB",
       "name": "겨울해일-얼어붙은구슬",
+      "description": "겨울해일을 배운 구슬은 두뇌 빙결을 확정 제공해 다음 진눈깨비를 강화한다.",
       "type": "synergy",
-      "synergyType": "orb-proc-window",
+      "synergyType": "proc-generation",
       "participants": [
-        "378406",
         "84714",
+        "378406",
         "190447",
         "44614"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울해일",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울의축복",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙는바람",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/백시현상",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영원한서리",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/조각난서리",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는얼음",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/서리부채"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울해일"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\겨울해일-얼어붙은구슬.md",
         "lastUpdate": ""
       }
     },
-    "frost-passive-pet-talent-context": {
-      "id": "frost-passive-pet-talent-context",
+    "SY-MAGE-FROST-PET-CHOICE": {
+      "id": "SY-MAGE-FROST-PET-CHOICE",
       "name": "냉기패시브-소환수-특성선택",
+      "description": "물의 정령은 조율된 전령을 통해 쇄편을 제공한다. 고독한 겨울을 고르면 소환수 대신 본체 주문 피해가 증가한다.",
       "type": "synergy",
-      "synergyType": "unknown",
+      "synergyType": "talent-choice",
       "participants": [
-        "고독한 겨울",
-        "물의 정령 소환",
-        "영원한 서리",
-        "매서운 한파",
-        "산산조각",
-        "얼어붙은 구슬",
-        "서리 광선"
+        "31687",
+        "205024",
+        "1261106"
       ],
-      "class": "마법사",
-      "spec": "냉기",
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/물의정령소환",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고독한겨울"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\냉기패시브-소환수-특성선택.md",
-        "lastUpdate": "2026-05-24T00:00:00.000Z"
+        "lastUpdate": ""
       }
     },
     "SY-MAGE-FROST-BRAIN-FREEZE-FLURRY": {
       "id": "SY-MAGE-FROST-BRAIN-FREEZE-FLURRY",
       "name": "두뇌빙결-진눈깨비",
+      "description": "두뇌 빙결은 진눈깨비를 강화하고, 추가 발사체와 빙하 공격은 그 적중에 연결된다.",
       "type": "synergy",
-      "synergyType": "proc-shatter",
+      "synergyType": "proc-spender",
       "participants": [
         "190447",
+        "190446",
         "44614",
-        "30455",
-        "1246769"
+        "1247769",
+        "378947"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/두뇌빙결-발동"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/진눈깨비연마",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/관통의냉기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하공격",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/깊은갈라짐",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/결정화된굴절",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙은손길",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하공격"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\두뇌빙결-진눈깨비.md",
         "lastUpdate": ""
       }
     },
-    "SY-MAGE-FROST-GLACIAL-SHATTER-SPIKE": {
-      "id": "SY-MAGE-FROST-GLACIAL-SHATTER-SPIKE",
+    "SY-MAGE-FROST-GLACIAL-SHATTER": {
+      "id": "SY-MAGE-FROST-GLACIAL-SHATTER",
       "name": "빙하분쇄-혹한의쐐기",
+      "description": "빙하 분쇄는 쐐기의 빙결 부여를 없애고 5중첩 산산조각으로 바꾼다.",
       "type": "synergy",
-      "synergyType": "glacial-spike-shatter",
+      "synergyType": "resource-conversion",
       "participants": [
-        "1280780",
         "199786",
-        "1246832",
-        "1246769"
+        "1280780",
+        "1221389",
+        "1280779"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/빙결"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하분쇄",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의한기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/순간빙결",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/우박",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙결술사",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의조율",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는얼음",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영구결빙의창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/깊은갈라짐"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의한기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\빙하분쇄-혹한의쐐기.md",
         "lastUpdate": ""
       }
     },
-    "SY-MAGE-FROST-FINGERS-LANCE-SHATTER": {
-      "id": "SY-MAGE-FROST-FINGERS-LANCE-SHATTER",
-      "name": "서리의손가락-얼음창-산산조각",
+    "SY-MAGE-FROST-SHATTER-S2-ICICLES": {
+      "id": "SY-MAGE-FROST-SHATTER-S2-ICICLES",
+      "name": "산산조각-시즌2-고드름",
+      "description": "시즌 2 2세트는 산산조각 낸 중첩마다 확률적으로 고드름을 추가하고 쐐기 피해를 강화한다.",
       "type": "synergy",
-      "synergyType": "proc-spender",
+      "synergyType": "tier-resource-loop",
       "participants": [
-        "112965",
         "30455",
-        "1246769"
+        "1246769",
+        "205473",
+        "1246832",
+        "199786"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/고드름-중첩"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙은손길",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/조각난서리",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영구결빙의창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
       ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\산산조각-시즌2-고드름.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-FINGERS-LANCE-SHATTER": {
+      "id": "SY-MAGE-FROST-FINGERS-LANCE-SHATTER",
+      "name": "서리의손가락-얼음창-산산조각",
+      "description": "서리의 손가락 얼음창은 실제 대상 중첩을 소비하지 않고 산산조각 피해를 낸다.",
+      "type": "synergy",
+      "synergyType": "proc-spender",
+      "participants": [
+        "30455",
+        "112965",
+        "44544",
+        "1246769",
+        "1221389"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/서리의손가락-발동",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/빙결"
+      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\서리의손가락-얼음창-산산조각.md",
         "lastUpdate": ""
@@ -7093,69 +7101,131 @@
     "SY-MAGE-FROST-SPLINTERSTORM-RAY": {
       "id": "SY-MAGE-FROST-SPLINTERSTORM-RAY",
       "name": "쇄편폭풍-서리광선",
+      "description": "광선의 피해 틱은 쇄편을 만들고 사용 후 10초간 추가 쇄편 생성이 강화된다. 쇄편 직접 피해는 다음 구슬을 당긴다.",
       "type": "synergy",
-      "synergyType": "spellslinger-burst",
+      "synergyType": "hero-burst",
       "participants": [
-        "443783",
         "205021",
+        "443783",
         "443739",
-        "1261080"
+        "444986",
+        "84714"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음핏줄"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는광선"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\쇄편폭풍-서리광선.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-SPIKE-FROSTFIRE": {
+      "id": "SY-MAGE-FROST-SPIKE-FROSTFIRE",
+      "name": "쐐기-급속냉동화상-강화화살",
+      "description": "급속 냉동화상은 냉기 쐐기 피해·주변 폭발과 서리불꽃 강화를 연결한다. 양면성은 별도의 자동 화염 후속을 만든다.",
+      "type": "synergy",
+      "synergyType": "hero-proc",
+      "participants": [
+        "199786",
+        "431178",
+        "431176",
+        "431044",
+        "1262843"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\쐐기-급속냉동화상-강화화살.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-SPIKE-REFREEZING": {
+      "id": "SY-MAGE-FROST-SPIKE-REFREEZING",
+      "name": "쐐기-신속한재동결-후속",
+      "description": "4세트의 신속한 재동결이 발동하면 1초에 걸쳐 고드름을 채워 다음 쐐기를 준비한다.",
+      "type": "synergy",
+      "synergyType": "tier-proc",
+      "participants": [
+        "199786",
+        "1310248",
+        "1222865",
+        "153595"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/신속한재동결",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/혹한의쐐기-준비"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\쐐기-신속한재동결-후속.md",
         "lastUpdate": ""
       }
     },
     "SY-MAGE-FROST-FROZEN-ORB-BLIZZARD": {
       "id": "SY-MAGE-FROST-FROZEN-ORB-BLIZZARD",
       "name": "얼어붙은구슬-눈보라",
+      "description": "구슬은 빗발치는 냉기를 켜고 즉시 눈보라로 이어진다. 그 바닥 안 산산조각은 주변 피해 강화를 받는다.",
       "type": "synergy",
       "synergyType": "aoe-loop",
       "participants": [
         "84714",
-        "190356",
         "270233",
-        "112965"
+        "270232",
+        "190356",
+        "1216953"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/빗발치는냉기-발동"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울해일",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울의축복",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙는바람",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/백시현상",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영원한서리",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/조각난서리",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는얼음",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영구결빙의창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/서리부채",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/우박"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙는바람"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼어붙은구슬-눈보라.md",
@@ -7165,102 +7235,243 @@
     "SY-MAGE-FROST-BARRIER-SURVIVAL": {
       "id": "SY-MAGE-FROST-BARRIER-SURVIVAL",
       "name": "얼음보호막-빙하의보루-냉기생존",
+      "description": "12.1 보호막 추가 충전은 얼음 보호막 연마, 얼음 방패 추가 충전은 빙하의 보루에서 얻는다.",
       "type": "synergy",
       "synergyType": "defensive-planning",
       "participants": [
         "11426",
+        "1244069",
         "1244110",
-        "1247799"
+        "45438",
+        "235219"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음보호막연마",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의보루",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/매서운한파",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/결정화된굴절",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/매서운한파"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼음보호막-빙하의보루-냉기생존.md",
         "lastUpdate": ""
       }
     },
-    "SY-MAGE-FROST-THERMAL-VOID-BRAIN-FREEZE": {
-      "id": "SY-MAGE-FROST-THERMAL-VOID-BRAIN-FREEZE",
-      "name": "열기동공-두뇌빙결",
+    "SY-MAGE-FROST-LANCE-CLEAVE": {
+      "id": "SY-MAGE-FROST-LANCE-CLEAVE",
+      "name": "얼음창-갈래피해",
+      "description": "조각난 서리는 빙결이 많은 추가 한 대상을 우선하며 50% 위력 얼음창을 맞힌다. 냉증 주변 산산조각은 별도 경로다.",
       "type": "synergy",
-      "synergyType": "proc-priority-variant",
+      "synergyType": "cleave-targeting",
       "participants": [
-        "1247729",
-        "190447",
-        "44614",
-        "30455"
+        "30455",
+        "378448",
+        "1221389",
+        "1248825"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/빙결"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/조각난서리",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼음창-갈래피해.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-LANCE-CONSUMPTION": {
+      "id": "SY-MAGE-FROST-LANCE-CONSUMPTION",
+      "name": "얼음창-소비량-영웅특성",
+      "description": "기본 4중첩에 얼음 심장 1, 주문술사 정련된 집중력 1, 활성 열기 동공 4중첩이 추가된다.",
+      "type": "synergy",
+      "synergyType": "resource-spender",
+      "participants": [
+        "30455",
+        "1247799",
+        "1261082",
+        "1247729"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙은손길",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/진눈깨비연마",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/깊은갈라짐"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼음창-소비량-영웅특성.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-LANCE-SPLINTER-ORB": {
+      "id": "SY-MAGE-FROST-LANCE-SPLINTER-ORB",
+      "name": "얼음창-쇄편-구슬회복",
+      "description": "의지의 힘은 주 대상 산산조각 처리량으로 쇄편을 만들고 쇄편은 확률 빙결과 구슬 재사용 감소로 돌아온다.",
+      "type": "synergy",
+      "synergyType": "hero-resource-loop",
+      "participants": [
+        "30455",
+        "444719",
+        "1261080",
+        "444986",
+        "84714"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼음창-쇄편-구슬회복.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-LANCE-COOLDOWNS": {
+      "id": "SY-MAGE-FROST-LANCE-COOLDOWNS",
+      "name": "얼음창-쿨다운회복",
+      "description": "빙하 작용은 산산조각 중첩당 광선 0.10초, 백시 현상은 얼음창당 구슬 0.5초와 중첩당 추가 0.1초를 줄인다.",
+      "type": "synergy",
+      "synergyType": "cooldown-reduction",
+      "participants": [
+        "30455",
+        "1247798",
+        "1281638",
+        "205021",
+        "84714"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하작용",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/백시현상"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\얼음창-쿨다운회복.md",
+        "lastUpdate": ""
+      }
+    },
+    "SY-MAGE-FROST-THERMAL-VOID-BRAIN-FREEZE": {
+      "id": "SY-MAGE-FROST-THERMAL-VOID-BRAIN-FREEZE",
+      "name": "열기동공-두뇌빙결",
+      "description": "두뇌 빙결 소비로 열기 동공을 얻고 다음 얼음창이 4중첩을 추가 산산조각 낸다.",
+      "type": "synergy",
+      "synergyType": "proc-sequence",
+      "participants": [
+        "30455",
+        "44614",
+        "190447",
+        "1247729",
+        "1247730"
+      ],
+      "class": "Mage",
+      "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/열기동공-발동"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\열기동공-두뇌빙결.md",
         "lastUpdate": ""
       }
     },
-    "SY-MAGE-FROST-FRIGID-TOUCH-RAY": {
-      "id": "SY-MAGE-FROST-FRIGID-TOUCH-RAY",
+    "SY-MAGE-FROST-HAND-RAY": {
+      "id": "SY-MAGE-FROST-HAND-RAY",
       "name": "차디찬손길-서리광선",
+      "description": "첫 정점은 손길 자동 발동, 중간은 확률과 피해 강화, 마지막은 광선 추가 충전과 확정 손길 생성이다.",
       "type": "synergy",
-      "synergyType": "ray-burst",
+      "synergyType": "apex-cooldown",
       "participants": [
-        "1262935",
         "205021",
-        "30455",
-        "1246769"
+        "1262935",
+        "1262981",
+        "1263249",
+        "1263263"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음핏줄",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Buffs/차디찬손길-피해강화"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는광선",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/혹한의집중",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/결정화된굴절",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하작용",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의보루"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-중간",
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-마지막"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\차디찬손길-서리광선.md",
@@ -7270,30 +7481,30 @@
     "SY-MAGE-FROST-COMET-FROSTFIRE": {
       "id": "SY-MAGE-FROST-COMET-FROSTFIRE",
       "name": "혜성폭풍-서리불꽃-얼음불꽃화살",
+      "description": "서리 광선으로 준비한 혜성 폭풍은 빙결을 광역 소비하고 등온 핵의 유성을 자동으로 부른다.",
       "type": "synergy",
-      "synergyType": "frostfire-variant",
+      "synergyType": "hero-aoe",
       "participants": [
+        "205021",
         "153595",
+        "431095",
         "431044",
         "431176"
       ],
       "class": "Mage",
       "spec": "Frost",
+      "specs": [
+        "Frost"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍",
         "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음핏줄",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하공격",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/깊은갈라짐"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Synergies\\혜성폭풍-서리불꽃-얼음불꽃화살.md",
         "lastUpdate": ""

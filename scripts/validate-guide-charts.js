@@ -478,7 +478,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'mage-fire', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guideId)) {
+    if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);
@@ -508,6 +508,10 @@ function main() {
   assert(!vengeanceChart.events.some(event => ['263648', '1270444', '1253304'].includes(event.skillId)), 'Vengeance passive effects must not appear as defensive cast buttons');
   assert(guideDetailSource.includes('priority: activeHeroBranch.priority') && guideDetailSource.includes('aria-label="우선순위 영웅 특성 선택"'), 'Authored hero priorities must follow the selected hero branch and be switchable at the table');
   assert(guideDetailSource.includes('<InlineSkillTerm skill={skill}>{skillName(skill)}</InlineSkillTerm>') && !guideDetailSource.includes('renderGuideText(skillName(skill), inlineTerms)'), 'Explicit hero spell IDs must keep one icon and their own tooltip instead of re-resolving identical names');
+  const findTerm = new Function(`${guideDetailSource.slice(guideDetailSource.indexOf('const inlineWordCharPattern'), guideDetailSource.indexOf('function renderGuideText'))}; return findInlineTerm;`)();
+  const barrierTerms = [{ label: '얼음 보호막', skill: { id: '11426' } }, { label: '얼음 보호막 연마', skill: { id: '1244069' } }];
+  assert(findTerm('얼음 보호막 연마입니다.', barrierTerms, 0)?.term.skill.id === '1244069' && findTerm('얼음 보호막입니까?', barrierTerms, 0)?.term.skill.id === '11426', 'Korean copulas must preserve the complete spell name and exact tooltip');
+  assert(!findTerm('얼음 보호막대', barrierTerms, 0), 'Spell boundaries must still reject unrelated word continuations');
   assert(guideDetailSource.includes('function InlineSkillTerm({ skill, children }) {\n  if (isInactiveSkillReference(skill)) return <span>{children}</span>;'), 'Direct inline spell references must reject invalid or inactive IDs');
   const inactiveReference = new Function('skill', 'cleanText', extractFunctionBody(guideDetailSource, 'isInactiveSkillReference'));
   assert(!inactiveReference({ id: '441583', type: 'hero-talent' }, String) && [null, { id: 'hero-claw' }, { id: '441583', type: 'removed' }].every(skill => inactiveReference(skill, String)), 'Inline links must accept live numeric spell IDs and reject missing, tree and removed records');

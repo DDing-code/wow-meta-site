@@ -152,15 +152,26 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Verified production bundle `main.9e682b57.js`: both heroes and all three modes at 1440px, 390px and 320px, with no document/flow overflow or broken loaded icons. Native detail disclosure retained complete conditions. The graph centers on Combustion with seven actual direct relationships; no removed Hyperthermia link or console error appeared.
 - Limits: current WCL/Archon usage/DPS aggregates, personal simulations and private Altered Time messages were not obtained. Dense graph-label overlaps and similar shared/local hubs, generic featured-skill selection, older common mechanics, 77 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
 
+### Frost Mage
+
+- Replaced the old manuscript in place with 14 manually authored practical sections, ten tips and separate Spellslinger/Frostfire opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/06-마법사/냉기/Meta/guide-12.1.json`.
+- Compared Blizzard's 12.1 update and August 25 hotfixes, Dorovon's current Wowhead rotation/talents, Kuni's Icy Veins, Khaelt's Method and current Korean/English tooltips. Wowhead's stale 11.2.7 hero page was excluded despite its 12.1 navigation label. The Frostfire-specific Ray clipping footnote was checked in the source markup; no rendered guide preset was inspected this turn.
+- Manually reviewed all 63 local atomic notes and 17 shared Spellslinger notes. Removed Icy Veins 12472; separated target Freezing, Fingers/Brain Freeze buffs, timed Icicles, prepared Spike/Comet, all three Hand of Frost nodes and its damage buff. Corrected defensive talent ownership, current PvE barrier values and shared specialization-specific effects. Generated spell changes are confined to Mage.
+- Authored 18 local relationships and rewrote the common Spellslinger hub. The graph centers on Ice Lance with seven actual direct relationships. Tier relationships show real Icicles/Rapid Refreezing effects instead of internal set icons; passive set records retain official names/icons in the DB. Removed the fabricated Frost uptime chart and old June usage claims.
+- Preserved different hero opening orders, no-apex Frostfire's single Ray charge, conditional two-target-plus channel shortening, Rapid Refreezing timing and real proc consumption. The Wowhead 12-stack versus Icy Veins FAQ 10-stack recommendation remains explicit, not merged into a universal threshold. No fixed 4pc proc chance was invented.
+- Fixed the shared inline matcher so Korean copulas in names such as Ice Barrier talent descriptions do not link only the shorter base spell. Runnable checks cover complete-name matching, unrelated-word rejection, canonical equality, current spell identities, hero-specific conditions and all 18 relationships.
+- All prebuild checks and production build passed on 2026-09-13. Online strict metadata/name/link checks passed for 63 local and 64 numeric common notes; explicit guide icon/name checks passed for 20 IDs, with zero errors/warnings. Other common records received metadata validation only, not a full mechanics re-audit.
+- Verified production bundle `main.9ff8fb3b.js` with installed Playwright after the app browser tool failed to initialize: both heroes and three modes at 1440px, 390px and 320px, 18 combinations total. No document/flow overflow or page errors appeared; 18px flow icons and numeric tooltip links remain, native disclosure retains full conditions, and the exact Ice Barrier talent link resolves correctly. Inspected desktop/mobile screenshots; dense graph-label overlaps remain.
+- Limits: current WCL/Archon aggregates, personal simulations and private Altered Time messages were not obtained. SimC commit `330bb6ffacb5e8887a0a02c2d8704389c85b59e6` is implementation evidence only. Generic featured-skill selection, older common mechanics, 71 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 18 manuscripts
+## Still 12.0.5: 17 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Mage | Frost |
 | Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
 | Priest | Discipline, Shadow |
@@ -171,8 +182,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 
 ## Remaining gates
 
-- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival and Fire now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 18 older manuscripts.
+- Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
+- Complete fresh manual research and KB/DB/guide updates for the 17 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

@@ -600,7 +600,7 @@ function buildInlineTerms(data, manuscript) {
 }
 
 const inlineWordCharPattern = /[A-Za-z0-9가-힣]/;
-const koreanParticlePattern = /^(은|는|이|가|을|를|에|의|와|과|도|만|로|으로|부터|까지|보다|처럼|라도|이라도|라면|이면|이며|이고|이나|나|랑|하고|께서)/;
+const koreanParticlePattern = /^(은|는|이|가|을|를|에|의|와|과|도|만|로|으로|부터|까지|보다|처럼|라도|이라도|라면|이면|이며|이고|이나|나|랑|하고|께서|입니다|입니까)/;
 
 function hasInlineTermBoundary(text, index, label) {
   const prev = text[index - 1];
@@ -1566,18 +1566,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '신성한 힘 과충전, 응징의 격노 중 약한 글쿨, 사형 선고 지연, 광역에서 천상의 폭풍 전환 누락을 봅니다.'],
     ],
   },
-  'mage-frost': {
-    id: 'uptime',
-    title: '산산조각과 얼음창 소비',
-    sectionHeading: '빙결 중첩과 소비기',
-    sectionIntro: '냉기 마법사는 빙결 중첩과 발동을 얼음창, 진눈깨비, 혜성 폭풍, 혹한의 쐐기로 소비해 산산조각 피해를 만드는 전문화입니다.',
-    caption: '서리의 손가락, 두뇌 빙결, 진눈깨비, 얼음창, 얼어붙은 구슬, 서리 광선, 혜성 폭풍을 같은 소비 흐름에서 봅니다.',
-    definition: [
-      ['의미', '얼음창은 빈 필러가 아니라 산산조각을 반복 발생시키는 주 소비기입니다.'],
-      ['읽는 법', '발동이 2중첩에 가까워지면 얼음창으로 정리하고, 진눈깨비 직후에는 강한 소비기가 이어지는지 봅니다.'],
-      ['체크 포인트', '서리의 손가락 과충전, 두뇌 빙결 방치, 낮은 중첩 얼음창, 서리 광선 끊김, 구슬 경로 손실을 봅니다.'],
-    ],
-  },
   'priest-shadow': {
     id: 'resource',
     title: '광기와 지속 피해 관리',
@@ -1748,7 +1736,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4695,58 +4683,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'mage-frost') {
-    return [
-      {
-        label: '중심 판정',
-        skill: findSkillByNames(data, ['산산조각']),
-        note: '빙결 중첩을 실제 피해로 바꾸는 냉기의 중심 판정입니다.',
-        segments: [[4, 90]],
-      },
-      {
-        label: '소비 스킬',
-        skill: findSkillByNames(data, ['얼음창']),
-        note: '주문술사 기준 6중첩 이상 또는 서리의 손가락을 소비합니다.',
-        segments: [[10, 8], [24, 8], [44, 8], [62, 8], [82, 8]],
-      },
-      {
-        label: '산산조각 열기',
-        skill: findSkillByNames(data, ['진눈깨비']),
-        note: '두뇌 빙결로 산산조각 소비 구간을 열어 줍니다.',
-        segments: [[8, 10], [34, 10], [70, 10]],
-      },
-      {
-        label: '발동 신호',
-        skill: findSkillByNames(data, ['두뇌 빙결', '서리의 손가락']),
-        note: '방치하거나 과충전하지 않고 소비 순서를 정합니다.',
-        segments: [[14, 12], [38, 10], [66, 12], [86, 8]],
-      },
-      {
-        label: '주 쿨기',
-        skill: findSkillByNames(data, ['서리 광선']),
-        note: '중첩을 먼저 비운 뒤 채널이 끊기지 않는 구간에 넣습니다.',
-        segments: [[20, 16], [76, 16]],
-      },
-      {
-        label: '광역 엔진',
-        skill: findSkillByNames(data, ['얼어붙은 구슬']),
-        note: '광역 피해와 발동/쇄편 흐름을 다시 만듭니다.',
-        segments: [[30, 14], [72, 14]],
-      },
-      {
-        label: '광역 전환',
-        skill: findSkillByNames(data, ['눈보라', '빗발치는 냉기']),
-        note: '3대상 이상과 빗발치는 냉기 조건에서 우선순위가 올라갑니다.',
-        segments: [[2, 12], [48, 14], [90, 8]],
-      },
-      {
-        label: '큰 소비기',
-        skill: findSkillByNames(data, ['혹한의 쐐기', '혜성 폭풍']),
-        note: '고드름과 산산조각 구간이 맞을 때 큰 소비기로 정리합니다.',
-        segments: [[52, 12], [92, 6]],
-      },
-    ];
-  }
 
   if (guide.id === 'druid-balance') {
     return [

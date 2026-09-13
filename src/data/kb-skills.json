@@ -1,28 +1,29 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T00:46:40.084Z",
+    "generatedAt": "2026-09-13T06:51:10.037Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2772,
-    "rawTotalSkills": 2772,
+    "totalSkills": 2787,
+    "rawTotalSkills": 2787,
     "duplicateIds": [],
-    "totalSynergies": 497,
+    "totalSynergies": 504,
     "stats": {
-      "total": 2772,
+      "total": 2787,
       "byType": {
-        "buff": 55,
+        "buff": 64,
         "hero-talent": 572,
-        "atomic-skill": 485,
+        "atomic-skill": 483,
         "proc": 7,
         "skill": 167,
-        "talent": 980,
+        "talent": 984,
         "spec-talent": 377,
-        "passive": 28,
+        "passive": 31,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
         "class-talent": 86,
+        "debuff": 1,
         "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
@@ -34,7 +35,7 @@
         "Druid": 214,
         "Evoker": 140,
         "Hunter": 225,
-        "Mage": 214,
+        "Mage": 229,
         "Monk": 231,
         "Paladin": 209,
         "Priest": 221,
@@ -66,7 +67,7 @@
         "Hunter-생존": 58,
         "Hunter-야수": 42,
         "Mage-공용": 64,
-        "Mage-냉기": 48,
+        "Mage-냉기": 63,
         "Mage-비전": 49,
         "Mage-화염": 53,
         "Monk-공용": 69,
@@ -100,9 +101,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2695,
-        "withSynergies": 1101,
-        "avgLinkDensity": "0.035"
+        "withWikilinks": 2710,
+        "withSynergies": 1166,
+        "avgLinkDensity": "0.034"
       }
     }
   },
@@ -420,13 +421,13 @@
       "iconName": "spell_frost_frostbolt02",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 얼음 화살 (Frostbolt)",
+      "castTime": "1.75초",
+      "resourceCost": "기본 마나의 2%",
+      "range": "40미터",
+      "description": "기본 시전 1.75초인 냉기 필러다. 얼음 화살 피해는 빙결을 쌓고 서리의 손가락·두뇌 빙결 발동을 판정한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -443,12 +444,14 @@
           "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
           "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 3,
+        "synergyCount": 4,
         "linkDensity": 0.074,
         "hasWikilinks": true
       },
@@ -6728,14 +6731,14 @@
       "icon": "spell_ice_lament",
       "iconName": "spell_ice_lament",
       "school": "",
-      "cooldown": "25초",
-      "castTime": "0.5초",
-      "resourceCost": "마나",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 3%",
       "range": "자신",
-      "description": "# 얼음 보호막 (Ice Barrier)",
+      "description": "즉시 시전, 기본 재사용 30초인 흡수 방어기다. 8월 25일 PvE 상향 후 기본 흡수량은 최대 생명력의 35%이며 유연성의 영향을 받는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6748,13 +6751,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음보호막연마",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의보루"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.068,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -6905,54 +6911,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Skills\\날카로운-고함.md",
-        "lastUpdate": ""
-      }
-    },
-    "12472": {
-      "id": "12472",
-      "type": "atomic-skill",
-      "class": "Mage",
-      "spec": "냉기",
-      "specs": [
-        "Frost"
-      ],
-      "name": "얼음 핏줄",
-      "koreanName": "얼음 핏줄",
-      "englishName": "Icy Veins",
-      "icon": "spell_frost_coldhearted",
-      "iconName": "spell_frost_coldhearted",
-      "school": "",
-      "cooldown": "2분",
-      "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 얼음 핏줄 (Icy Veins)",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_coldhearted.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_coldhearted.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_coldhearted.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_coldhearted.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_coldhearted.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.073,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Skills\\얼음핏줄.md",
         "lastUpdate": ""
       }
     },
@@ -9349,12 +9307,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "40야드",
-      "description": "# 얼음창 (Ice Lance)",
+      "resourceCost": "기본 마나의 1%",
+      "range": "40미터",
+      "description": "즉시 시전하는 빙결 소비기다. 기본 4중첩을 산산조각 내며 얼음 심장·정련된 집중력·열기 동공이 소비량을 바꾼다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9367,16 +9325,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/정련된집중력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 2,
-        "linkDensity": 0.133,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.083,
         "hasWikilinks": true
       },
       "source": {
@@ -9536,7 +9499,7 @@
     },
     "31687": {
       "id": "31687",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -9548,14 +9511,14 @@
       "icon": "spell_frost_summonwaterelemental_2",
       "iconName": "spell_frost_summonwaterelemental_2",
       "school": "",
-      "cooldown": "관련 주문 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
+      "cooldown": "15초",
+      "castTime": "1.5초",
+      "resourceCost": "기본 마나의 3%",
       "range": "자신",
-      "description": "# 물의 정령 소환 (Summon Water Elemental)",
-      "category": "talent",
+      "description": "물의 정령을 소환해 함께 싸우게 하는 실제 시전 주문이다. 기본 시전 1.5초, 재사용 15초이며 고독한 겨울과 선택 관계다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9568,13 +9531,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고독한겨울"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/조율된전령"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -10966,6 +10933,57 @@
         "lastUpdate": ""
       }
     },
+    "44544": {
+      "id": "44544",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "서리의 손가락",
+      "koreanName": "서리의 손가락",
+      "englishName": "Fingers of Frost",
+      "icon": "ability_mage_wintersgrasp",
+      "iconName": "ability_mage_wintersgrasp",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "서리의 손가락 패시브와 관련 주문에서 얻는 실제 플레이어 발동이다. 최대 2충전이며 다음 얼음창은 실제 빙결을 소비하지 않는 산산조각 피해를 준다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_wintersgrasp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_wintersgrasp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_wintersgrasp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_wintersgrasp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_wintersgrasp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\서리의손가락-발동.md",
+        "lastUpdate": ""
+      }
+    },
     "44614": {
       "id": "44614",
       "type": "atomic-skill",
@@ -10980,14 +10998,14 @@
       "icon": "ability_deathknight_chillstreak",
       "iconName": "ability_deathknight_chillstreak",
       "school": "",
-      "cooldown": "30초",
+      "cooldown": "30초 (2충전)",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "40야드",
-      "description": "# 진눈깨비 (Flurry)",
+      "resourceCost": "기본 마나의 1%",
+      "range": "40미터",
+      "description": "즉시 시전, 기본 2충전·30초 충전 회복 주문이다. 기본 3발을 발사하고 빙결 3중첩을 부여하며 진눈깨비 연마는 발사 수를 늘린다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11000,17 +11018,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/진눈깨비연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.133,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -14067,14 +14086,14 @@
       "icon": "spell_frost_ice-shards",
       "iconName": "spell_frost_ice-shards",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 갈라지는 얼음 (Splitting Ice)",
+      "range": "자신 또는 효과 대상",
+      "description": "12.1 갈라지는 얼음은 얼음 화살과 진눈깨비가 추가 1대상에 50% 위력으로 적중하도록 한다. 이전 80% 값을 현재 수치로 쓰지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14086,14 +14105,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_ice-shards.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.056,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -16357,12 +16380,12 @@
       "school": "",
       "cooldown": "1분",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "40야드",
-      "description": "# 얼어붙은 구슬 (Frozen Orb)",
+      "resourceCost": "기본 마나의 1%",
+      "range": "40미터",
+      "description": "전방에 15초 지속하는 구슬을 보내 주변 적에게 피해를 준다. 기본 재사용 1분, 기본 마나 1%이며 일정 지연 뒤 지정 대상을 추적한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16375,16 +16398,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울해일",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/영원한서리"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 2,
-        "linkDensity": 0.106,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -19113,7 +19140,7 @@
     },
     "112965": {
       "id": "112965",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -19125,14 +19152,14 @@
       "icon": "ability_mage_wintersgrasp",
       "iconName": "ability_mage_wintersgrasp",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 서리의 손가락 (Fingers of Frost)",
-      "category": "ability",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살 계열로 기본 15% 확률로 얻는 패시브다. 다음 얼음창은 빙결 4중첩에 해당하는 산산조각 피해를 내지만 실제 빙결 중첩은 소비하지 않는다. 최대 2충전이다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19152,9 +19179,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.094,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -22503,14 +22530,14 @@
       "icon": "spell_mage_cometstorm2",
       "iconName": "spell_mage_cometstorm2",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "서리 광선 후 준비",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "40야드",
-      "description": "# 혜성 폭풍 (Comet Storm)",
+      "resourceCost": "기본 마나의 1%",
+      "range": "40미터",
+      "description": "서리 광선을 사용한 뒤 선택 특성에 의해 나타나는 즉시 시전 후속 주문이다. 혜성 7개가 떨어지고 각 혜성은 적중 대상의 빙결 1중첩을 산산조각 낸다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22523,17 +22550,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/서리불꽃강화"
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.067,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -25114,14 +25141,14 @@
       "icon": "spell_frost_icestorm",
       "iconName": "spell_frost_icestorm",
       "school": "",
-      "cooldown": "없음",
-      "castTime": "즉시/시전",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 눈보라 (Blizzard)",
+      "cooldown": "12초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나의 2.5%",
+      "range": "40미터",
+      "description": "지역을 지정하는 눈보라다. 기본 시전 2초, 재사용 12초, 지속 12초이며 기본 마나의 2.5%를 쓴다. 8월 25일 피해가 10% 증가했다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25134,16 +25161,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라-대상지정"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙는바람"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.098,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -25200,9 +25229,9 @@
         "lastUpdate": ""
       }
     },
-    "190447": {
-      "id": "190447",
-      "type": "atomic-skill",
+    "190446": {
+      "id": "190446",
+      "type": "buff",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -25214,14 +25243,14 @@
       "icon": "ability_mage_brainfreeze",
       "iconName": "ability_mage_brainfreeze",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 두뇌 빙결 (Brain Freeze)",
-      "category": "ability",
+      "range": "자신 또는 효과 대상",
+      "description": "두뇌 빙결 특성에 의해 부여되는 실제 강화 버프다. 진눈깨비 재사용 회복과 다음 진눈깨비 피해 증가를 연결한다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25234,18 +25263,70 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\두뇌빙결-발동.md",
+        "lastUpdate": ""
+      }
+    },
+    "190447": {
+      "id": "190447",
+      "type": "talent",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "두뇌 빙결",
+      "koreanName": "두뇌 빙결",
+      "englishName": "Brain Freeze",
+      "icon": "ability_mage_brainfreeze",
+      "iconName": "ability_mage_brainfreeze",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살 계열에서 기본 25% 확률로 진눈깨비 충전 회복을 초기화하고 다음 진눈깨비 피해를 50% 높이는 패시브다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_brainfreeze.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_brainfreeze.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_brainfreeze.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_brainfreeze.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_brainfreeze.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/흐르는파편"
+        ]
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 3,
-        "linkDensity": 0.116,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -29297,14 +29378,14 @@
       "icon": "ability_mage_glacialspike",
       "iconName": "ability_mage_glacialspike",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "시전",
-      "resourceCost": "고드름",
-      "range": "40야드",
-      "description": "# 혹한의 쐐기 (Glacial Spike)",
+      "cooldown": "고드름 5개로 준비",
+      "castTime": "1.75초",
+      "resourceCost": "기본 마나의 5%",
+      "range": "40미터",
+      "description": "고드름 5개가 준비되면 얼음 화살 계열을 대체하는 실제 시전 주문이다. 기본 시전 1.75초, 마나 5%이며 기본적으로 빙결 3중첩을 부여한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29316,19 +29397,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_glacialspike.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하분쇄",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-4세트"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 3,
-        "linkDensity": 0.114,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -32095,14 +32176,14 @@
       "icon": "ability_mage_rayoffrost",
       "iconName": "ability_mage_rayoffrost",
       "school": "",
-      "cooldown": "조건부",
-      "castTime": "정신 집중",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 서리 광선 (Ray of Frost)",
+      "cooldown": "1분 (정점 특성 시 2충전)",
+      "castTime": "4초 채널",
+      "resourceCost": "기본 마나의 2%",
+      "range": "40미터",
+      "description": "기본 1분 재사용, 4초 채널 주문이다. 0.5초마다 피해를 주며 전체 채널 동안 빙결 8중첩을 부여한다. 차디찬 손길 마지막 노드로 충전이 2회가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32115,15 +32196,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임"
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-마지막",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/결정화된굴절"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.093,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -32193,14 +32279,14 @@
       "icon": "achievement_dungeon_frozenthrone",
       "iconName": "achievement_dungeon_frozenthrone",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 고독한 겨울 (Lonely Winter)",
+      "range": "자신 또는 효과 대상",
+      "description": "물의 정령 소환을 대체하고 주문 피해를 3% 높이는 지속 효과다. 소환수와 동시에 사용하는 독립 공격 버튼이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32213,13 +32299,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/물의정령소환"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/조율된전령"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -32441,14 +32531,14 @@
       "icon": "ability_mage_burstofcold",
       "iconName": "ability_mage_burstofcold",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 얼어붙은 손길 (Frozen Touch)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살의 서리의 손가락 발동을 25%, 두뇌 빙결 발동을 20% 더 자주 일어나게 한다. 확률에 25%p·20%p를 더한다는 뜻이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32460,14 +32550,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_burstofcold.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.065,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -32568,6 +32662,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\암흑시선-소환.md",
+        "lastUpdate": ""
+      }
+    },
+    "205473": {
+      "id": "205473",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "고드름",
+      "koreanName": "고드름",
+      "englishName": "Icicles",
+      "icon": "spell_frost_iceshard",
+      "iconName": "spell_frost_iceshard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "전투 중 시간 경과와 세트 효과로 생성된 고드름의 실제 중첩 버프다. 5개가 모이면 혹한의 쐐기 준비로 이어진다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_iceshard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_iceshard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_iceshard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_iceshard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_iceshard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/우박"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\고드름-중첩.md",
         "lastUpdate": ""
       }
     },
@@ -35329,7 +35474,7 @@
     },
     "235219": {
       "id": "235219",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -35341,14 +35486,14 @@
       "icon": "spell_frost_wizardmark",
       "iconName": "spell_frost_wizardmark",
       "school": "",
-      "cooldown": "관련 주문 연계",
-      "castTime": "지속 효과",
+      "cooldown": "5분",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 매서운 한파 (Cold Snap)",
-      "category": "talent",
+      "description": "얼음 보호막·얼음 회오리·냉기 돌풍·얼음장·얼음 방패의 재사용을 초기화하는 실제 즉시 시전 방어기다. 기본 재사용은 5분이다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35360,14 +35505,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_wizardmark.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의보루"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -39460,9 +39610,61 @@
         "lastUpdate": ""
       }
     },
+    "270232": {
+      "id": "270232",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "빗발치는 냉기",
+      "koreanName": "빗발치는 냉기",
+      "englishName": "Freezing Rain",
+      "icon": "spell_frost_icestorm",
+      "iconName": "spell_frost_icestorm",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "빗발치는 냉기를 선택하고 얼어붙은 구슬을 사용해 얻는 실제 활성 효과다. 눈보라를 즉시 시전할 수 있게 한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_icestorm.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_icestorm.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_icestorm.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_icestorm.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_icestorm.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\빗발치는냉기-발동.md",
+        "lastUpdate": ""
+      }
+    },
     "270233": {
       "id": "270233",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -39474,14 +39676,14 @@
       "icon": "spell_frost_frozenorb",
       "iconName": "spell_frost_frozenorb",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빗발치는 냉기 (Freezing Rain)",
-      "category": "ability",
+      "range": "자신 또는 효과 대상",
+      "description": "얼어붙은 구슬 사용으로 눈보라를 즉시 시전하게 하며 눈보라 피해를 20% 높이는 패시브다. 실제 활성 버프는 270232다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39503,7 +39705,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.065,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -50215,14 +50417,14 @@
       "icon": "ability_deathknight_frozencenter",
       "iconName": "ability_deathknight_frozencenter",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 겨울해일 (Wintertide)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼어붙은 구슬 사용 시 두뇌 빙결을 확정으로 얻는 특성이다. 구슬이 진눈깨비 후속 운용에 영향을 주는 직접 이유다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50234,14 +50436,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_frozencenter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.048,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -50455,18 +50662,18 @@
       ],
       "name": "조각난 서리",
       "koreanName": "조각난 서리",
-      "englishName": "Splintering Cold",
+      "englishName": "Fractured Frost",
       "icon": "spell_fire_frostresistancetotem",
       "iconName": "spell_fire_frostresistancetotem",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 조각난 서리 (Splintering Cold)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음창이 추가 1대상에게 50% 위력으로 적중하며 빙결 중첩이 더 많은 적을 우선한다. 12.1 이전 100% 위력은 폐기한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50478,14 +50685,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_frostresistancetotem.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는얼음"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.074,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -51063,14 +51274,14 @@
       "icon": "spell_frost_frostbolt",
       "iconName": "spell_frost_frostbolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 관통의 냉기 (Piercing Cold)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살 계열과 진눈깨비의 치명타 피해를 20% 높인다. 치명타 확률 자체를 20% 올리지는 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51082,14 +51293,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.048,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -51214,14 +51430,14 @@
       "icon": "inv_staff_15",
       "iconName": "inv_staff_15",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하 공격 (Glacial Assault)",
+      "range": "자신 또는 효과 대상",
+      "description": "진눈깨비 각 적중이 12% 확률로 추가 혜성을 불러 주변 피해와 빙결 1중첩을 제공한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51233,14 +51449,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_15.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/진눈깨비연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -51561,14 +51781,14 @@
       "icon": "spell_hunter_icetrap",
       "iconName": "spell_hunter_icetrap",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 순간 빙결 (Flash Freeze)",
+      "range": "자신 또는 효과 대상",
+      "description": "혹한의 쐐기 시전 시 서리의 손가락을 확정으로 얻는다. 쐐기 후 얼음창을 사용할 발동을 공급한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51580,14 +51800,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_icetrap.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -60696,14 +60920,14 @@
       "icon": "spell_frost_chillingbolt",
       "iconName": "spell_frost_chillingbolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 영원한 서리 (Everlasting Frost)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼어붙은 구슬 시전 시 서리의 손가락 1중첩을 얻는다. 구슬이 한 명 이상에게 피해를 줄 때 3% 확률로 추가 발동을 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -60715,14 +60939,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_chillingbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.064,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -75927,14 +76154,14 @@
       "icon": "spell_frost_wisp",
       "iconName": "spell_frost_wisp",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 겨울의 축복 (Winter's Blessing)",
+      "range": "자신 또는 효과 대상",
+      "description": "가속이 3% 증가하고 모든 출처에서 얻는 가속이 5% 증가한다. 서로 다른 두 보정이 있는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75946,14 +76173,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_wisp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.07,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -75971,18 +76201,18 @@
       ],
       "name": "갈라지는 광선",
       "koreanName": "갈라지는 광선",
-      "englishName": "Splitting Ray",
+      "englishName": "Splintering Ray",
       "icon": "spell_fire_blueflamestrike",
       "iconName": "spell_fire_blueflamestrike",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 갈라지는 광선 (Splitting Ray)",
+      "range": "자신 또는 효과 대상",
+      "description": "서리 광선 피해의 30%를 주변 5명에게 추가로 입힌다. 주 대상 외 모든 적에게 100%를 복제하는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75994,14 +76224,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_blueflamestrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -89274,14 +89506,14 @@
       "icon": "achievement_dungeon_arcanevaults",
       "iconName": "achievement_dungeon_arcanevaults",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 쇄편의 마술 (Splintering Sorcery)",
+      "range": "자신 또는 효과 대상",
+      "description": "주문술사의 기본 쇄편 생성 특성이다. 비전은 비전 작렬·비전 파동, 냉기는 얼음 화살·진눈깨비 시전으로 각각의 쇄편을 생성한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89293,14 +89525,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_arcanevaults.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/의지의힘",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.074,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.073,
         "hasWikilinks": true
       },
       "source": {
@@ -89323,14 +89561,14 @@
       "icon": "ability_mage_burstofcold",
       "iconName": "ability_mage_burstofcold",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 쇄편폭풍 (Splinterstorm)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전은 비전 쇄도로 쇄편 8개를 얻고 그 지속 중 추가 쇄편 확률이 100%가 된다. 냉기는 서리 광선이 한 명 이상에게 피해를 줄 때마다 쇄편 1개를 생성하며 시전 후 10초간 추가 쇄편 확률이 100%가 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89342,14 +89580,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_burstofcold.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편의마술",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.081,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -89529,14 +89772,14 @@
       "icon": "item_azereansphere",
       "iconName": "item_azereansphere",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 갈라지는 보주 (Splintering Orbs)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전 보주는 적중 적마다 비전 쇄편 2개를 최대 4개까지 만들고 피해가 50% 증가한다. 냉기 구슬은 적중 적마다 냉기 쇄편 1개를 최대 4개까지 만들고 피해가 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89548,14 +89791,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/item_azereansphere.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -89627,14 +89874,14 @@
       "icon": "spell_frost_ice-shards",
       "iconName": "spell_frost_ice-shards",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 통제된 본능 (Controlled Instincts)",
+      "range": "자신 또는 효과 대상",
+      "description": "쇄편의 직접 피해가 주변 적에게 비전 40%, 냉기 60% 비율로 퍼진다. 5명을 초과하는 대상에게는 피해가 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89648,12 +89895,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편의마술",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/갈라지는보주",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/만발하는점술"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -89672,18 +89923,18 @@
       ],
       "name": "흐르는 파편",
       "koreanName": "흐르는 파편",
-      "englishName": "Volatile Magic",
+      "englishName": "Shifting Shards",
       "icon": "ability_mage_freeze",
       "iconName": "ability_mage_freeze",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 흐르는 파편 (Volatile Magic)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전은 번뜩임 획득, 냉기는 두뇌 빙결 획득으로 해당 쇄편 2개를 생성한다. 현재 영어명은 Shifting Shards다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89695,14 +89946,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_freeze.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/겨울해일"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편의마술"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -89725,14 +89982,14 @@
       "icon": "spell_mage_overpowered",
       "iconName": "spell_mage_overpowered",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 의지의 힘 (Force of Will)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전 탄막은 소모한 비전 연사 5중첩마다 쇄편을 만든다. 냉기는 얼음창이 주 대상에서 산산조각 낸 빙결 2중첩마다 냉기 쇄편을 만든다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89744,14 +90001,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_overpowered.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/정련된집중력",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -89774,14 +90038,14 @@
       "icon": "ability_mage_icyfeet",
       "iconName": "ability_mage_icyfeet",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 매끄러운 주문 투척 (Slippery Slinging)",
+      "range": "자신 또는 효과 대상",
+      "description": "시간 돌리기가 활성화된 동안 이동 속도가 40% 증가한다. 발동은 기존 시간 돌리기와 연결되는 이동 보조다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89793,14 +90057,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_icyfeet.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -89819,18 +90085,18 @@
       ],
       "name": "반복 검증",
       "koreanName": "반복 검증",
-      "englishName": "Reiteration",
+      "englishName": "Look Again",
       "icon": "achievement_bg_tophealer_av",
       "iconName": "achievement_bg_tophealer_av",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 반복 검증 (Reiteration)",
+      "range": "자신 또는 효과 대상",
+      "description": "전투 중 점멸을 사용하면 이전 위치에 환영 복제를 만든다. 현재 영어명은 Look Again이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89842,14 +90108,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_bg_tophealer_av.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/환영복제"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -90511,14 +90780,14 @@
       "icon": "spell_arcane_prismaticcloak",
       "iconName": "spell_arcane_prismaticcloak",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 망령의 환영 (Phantasmal Image)",
+      "range": "자신 또는 효과 대상",
+      "description": "환영 복제를 사용할 때 자신의 복제를 1개 추가로 소환한다. 스스로 별도 소환 버튼을 추가하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90530,14 +90799,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_prismaticcloak.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/환영복제"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.037,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -90560,14 +90831,14 @@
       "icon": "ability_racial_forceshield",
       "iconName": "ability_racial_forceshield",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 반응성 방벽 (Reactive Barrier)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전의 오색 방벽과 냉기의 얼음 보호막이 잃은 생명력에 따라 최대 25% 더 흡수한다. 생명력 25% 미만에서 최대 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90579,14 +90850,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_forceshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음보호막연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.069,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -90654,18 +90929,18 @@
       ],
       "name": "대마법사의 분노",
       "koreanName": "대마법사의 분노",
-      "englishName": "Archmage's Fury",
+      "englishName": "Archmage's Wrath",
       "icon": "spell_arcane_arcane03",
       "iconName": "spell_arcane_arcane03",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 대마법사의 분노 (Archmage's Fury)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전 쇄도 피해를 30% 높이고 번뜩임 획득 확률에 3%p를 더한다. 냉기는 서리 광선 피해 20%와 얼음 화살의 두뇌 빙결 확률 5%p 증가를 받는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90677,14 +90952,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane03.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/흐르는파편"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -90707,14 +90987,14 @@
       "icon": "70_inscription_vantus_rune_azure",
       "iconName": "70_inscription_vantus_rune_azure",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 비전냉기의 가르침 (Spellfrost Teachings)",
+      "range": "자신 또는 효과 대상",
+      "description": "쇄편 직접 피해가 해당 전문화 구슬 재사용을 0.30초 줄인다. 비전은 비전 보주, 냉기는 얼어붙은 구슬이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90726,14 +91006,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/70_inscription_vantus_rune_azure.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편의마술",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/갈라지는보주"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.039,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -102286,18 +102571,18 @@
       ],
       "name": "영구 결빙의 창",
       "koreanName": "영구 결빙의 창",
-      "englishName": "Perpetual Winter",
+      "englishName": "Permafrost Lances",
       "icon": "spell_fire_bluerainoffire",
       "iconName": "spell_fire_bluerainoffire",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 영구 결빙의 창 (Perpetual Winter)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼어붙은 구슬이 지속되는 동안 산산조각 피해가 10% 증가한다. 구슬 지속시간을 늘리거나 얼음창 대상을 추가하는 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102309,14 +102594,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_bluerainoffire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.06,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -105272,14 +105561,14 @@
       "icon": "inv_enchanting_815_drustwand",
       "iconName": "inv_enchanting_815_drustwand",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 고유 주문 (Signature Spell)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전은 비전 작렬·비전 파동 피해 15% 증가와 비전의 여파 시전 시 쇄편 4개를 얻는다. 냉기는 얼음 화살·눈보라 피해 25% 증가와 혹한의 쐐기 시전 시 추가 쇄편 2개를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105291,14 +105580,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchanting_815_drustwand.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-2세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.021,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -107646,14 +107941,14 @@
       "icon": "spell_fire_blueflamering",
       "iconName": "spell_fire_blueflamering",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 얼어붙는 바람 (Freezing Winds)",
+      "range": "자신 또는 효과 대상",
+      "description": "눈보라 안의 적을 산산조각 낼 때 산산조각의 주변 피해가 15% 증가한다. 단일 주 대상 피해 전체가 같은 비율로 늘지는 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107665,14 +107960,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_blueflamering.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -108140,6 +108440,110 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\붕괴하는별.md",
         "lastUpdate": "2026-09-08"
+      }
+    },
+    "1221389": {
+      "id": "1221389",
+      "type": "debuff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "빙결",
+      "koreanName": "빙결",
+      "englishName": "Freezing",
+      "icon": "inv12_ability_mage_freezing",
+      "iconName": "inv12_ability_mage_freezing",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "대상에게 쌓이는 최대 20중첩 약화 효과다. 산산조각 소비에 쓰이는 실제 대상 상태이며 시전 스킬이나 플레이어 자원 버프가 아니다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_mage_freezing.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_mage_freezing.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_mage_freezing.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_mage_freezing.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_mage_freezing.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\빙결.md",
+        "lastUpdate": ""
+      }
+    },
+    "1222865": {
+      "id": "1222865",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "혹한의 쐐기!",
+      "koreanName": "혹한의 쐐기!",
+      "englishName": "Glacial Spike!",
+      "icon": "ability_mage_glacialspike",
+      "iconName": "ability_mage_glacialspike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "혹한의 쐐기!는 고드름 생성으로 생기는 준비 버프다. 다음 얼음 화살 계열 버튼을 실제 혹한의 쐐기 199786으로 바꾼다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_glacialspike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_glacialspike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_glacialspike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_glacialspike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_glacialspike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\혹한의쐐기-준비.md",
+        "lastUpdate": ""
       }
     },
     "1223323": {
@@ -111475,6 +111879,58 @@
         "lastUpdate": ""
       }
     },
+    "1244069": {
+      "id": "1244069",
+      "type": "talent",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "얼음 보호막 연마",
+      "koreanName": "얼음 보호막 연마",
+      "englishName": "Improved Ice Barrier",
+      "icon": "spell_ice_lament",
+      "iconName": "spell_ice_lament",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "12.1 얼음 보호막 연마는 얼음 보호막에 추가 1충전을 주고 받는 물리 피해를 10% 줄인다. 이전 최대 생명력 증가 설명은 더 이상 사용하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_ice_lament.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_ice_lament.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_ice_lament.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_ice_lament.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_ice_lament.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의보루"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\얼음보호막연마.md",
+        "lastUpdate": ""
+      }
+    },
     "1244070": {
       "id": "1244070",
       "type": "talent",
@@ -111537,14 +111993,14 @@
       "icon": "spell_frost_chillingarmor",
       "iconName": "spell_frost_chillingarmor",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하의 보루 (Glacial Bulwark)",
+      "range": "자신 또는 효과 대상",
+      "description": "12.1에는 얼음 방패가 추가 1충전을 얻고 재사용이 30초 줄어든다. 얼음 보호막 추가 충전은 더 이상 이 특성의 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111556,14 +112012,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_chillingarmor.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음보호막연마",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/매서운한파"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -113059,7 +113520,7 @@
     },
     "1246769": {
       "id": "1246769",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Mage",
       "spec": "냉기",
       "specs": [
@@ -113071,14 +113532,14 @@
       "icon": "inv12_ability_mage_freezing",
       "iconName": "inv12_ability_mage_freezing",
       "school": "",
-      "cooldown": "조건부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "대상",
-      "description": "# 산산조각 (Shatter)",
-      "category": "ability",
+      "range": "자신 또는 효과 대상",
+      "description": "빙결 중첩을 쌓고 소비하는 냉기의 기본 패시브다. 최대 20중첩인 대상 약화 효과를 얼음창으로 기본 4중첩 소비해 중첩별 추가 피해를 낸다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113091,17 +113552,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
-          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
           "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/냉증"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.125,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -113221,14 +113683,14 @@
       "icon": "spell_frost_frostshock",
       "iconName": "spell_frost_frostshock",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 산산조각 연마 (Improved Shatter)",
+      "range": "자신 또는 효과 대상",
+      "description": "산산조각 피해의 치명타 확률을 50% 높이는 특성이다. 모든 냉기 주문에 적용되는 옛 산산조각 공식이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113240,14 +113702,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostshock.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/깊은갈라짐"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.065,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -113269,14 +113735,14 @@
       "icon": "ability_mage_glacialspike",
       "iconName": "ability_mage_glacialspike",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 고드름 (Icicles)",
+      "range": "자신 또는 효과 대상",
+      "description": "전투 중 기본 6초마다 고드름을 생성하고 5개가 모이면 얼음 화살 계열이 다음 1회의 혹한의 쐐기로 바뀐다. 얼음 화살을 다섯 번 누르는 옛 누적 방식이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113288,14 +113754,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_glacialspike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/우박",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -113317,14 +113789,14 @@
       "icon": "inv_misc_frostemblem_01",
       "iconName": "inv_misc_frostemblem_01",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 깊은 갈라짐 (Deep Shatter)",
+      "range": "자신 또는 효과 대상",
+      "description": "자신의 치명타 확률의 50%에 해당하는 양만큼 산산조각 치명타 피해를 높인다. 치명타 적중 시마다 발동하는 버프는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113336,14 +113808,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_frostemblem_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/산산조각연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.075,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -113365,14 +113841,14 @@
       "icon": "ability_deathknight_shroudofwinter",
       "iconName": "ability_deathknight_shroudofwinter",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 혹한의 집중 (Frigid Focus)",
+      "range": "자신 또는 효과 대상",
+      "description": "서리 광선 피해를 30% 높이는 지속 강화다. 갈라지는 광선의 주변 대상 추가 피해와 기능이 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113384,14 +113860,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_shroudofwinter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/갈라지는광선"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -113409,18 +113889,18 @@
       ],
       "name": "서리 부채",
       "koreanName": "서리 부채",
-      "englishName": "Frost Fan",
+      "englishName": "Cone of Frost",
       "icon": "ability_mage_chilledtothebone",
       "iconName": "ability_mage_chilledtothebone",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 서리 부채 (Frost Fan)",
+      "range": "자신 또는 효과 대상",
+      "description": "냉기 돌풍이 최대 5명에게 빙결 3중첩을 부여하도록 한다. 직접 누르는 서리 부채라는 신규 버튼이 생기지는 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113437,9 +113917,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.06,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -113672,14 +114152,14 @@
       "icon": "inv_10_enchanting_crystal_color3",
       "iconName": "inv_10_enchanting_crystal_color3",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 결정화된 굴절 (Crystalline Refraction)",
+      "range": "자신 또는 효과 대상",
+      "description": "서리 광선 채널 동안 서리의 손가락 2중첩을 생성한다. 보호막이나 피해 감소를 주는 방어 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113691,14 +114171,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_enchanting_crystal_color3.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.065,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -113720,14 +114204,14 @@
       "icon": "spell_mage_thermalvoid",
       "iconName": "spell_mage_thermalvoid",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 열기 동공 (Thermal Void)",
+      "range": "자신 또는 효과 대상",
+      "description": "두뇌 빙결을 소비하면 다음 얼음창이 빙결 4중첩을 추가로 산산조각 내도록 강화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113739,18 +114223,74 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_thermalvoid.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/두뇌빙결",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\열기동공.md",
+        "lastUpdate": ""
+      }
+    },
+    "1247730": {
+      "id": "1247730",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "열기 동공",
+      "koreanName": "열기 동공",
+      "englishName": "Thermal Void",
+      "icon": "spell_mage_thermalvoid",
+      "iconName": "spell_mage_thermalvoid",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "강화 진눈깨비로 두뇌 빙결을 소비한 뒤 얻는 실제 후속 버프다. 다음 얼음창이 빙결 4중첩을 추가로 산산조각 낸다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_thermalvoid.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_mage_thermalvoid.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_mage_thermalvoid.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_mage_thermalvoid.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_thermalvoid.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\열기동공-발동.md",
         "lastUpdate": ""
       }
     },
@@ -113768,14 +114308,14 @@
       "icon": "artifactability_frostmage_blackicicles",
       "iconName": "artifactability_frostmage_blackicicles",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 우박 (Hailstones)",
+      "range": "자신 또는 효과 대상",
+      "description": "고드름 생성에 걸리는 시간을 1초 줄인다. 기본 6초 간격을 5초로 바꾸는 시간 기반 생성 강화다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113788,13 +114328,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-2세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.065,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -113812,18 +114355,18 @@
       ],
       "name": "빙결술사",
       "koreanName": "빙결술사",
-      "englishName": "Cryopathy",
+      "englishName": "Rimecaster",
       "icon": "spell_frost_manarecharge",
       "iconName": "spell_frost_manarecharge",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙결술사 (Cryopathy)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살 계열과 혹한의 쐐기 피해를 10% 높인다. 현재 영어명은 Rimecaster이며 과거 Cryopathy 표기를 쓰지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113835,14 +114378,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_manarecharge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/얼음불꽃화살"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.048,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -113864,14 +114412,14 @@
       "icon": "ability_hunter_glacialtrap",
       "iconName": "ability_hunter_glacialtrap",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하의 조율 (Glacial Attunement)",
+      "range": "자신 또는 효과 대상",
+      "description": "진눈깨비와 눈보라 피해를 10% 높이는 지속 강화다. 발사 수나 재사용을 바꾸는 특성과 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113883,14 +114431,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_glacialtrap.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -113912,14 +114463,14 @@
       "icon": "ability_warlock_burningembersblue",
       "iconName": "ability_warlock_burningembersblue",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 진눈깨비 연마 (Improved Flurry)",
+      "range": "자신 또는 효과 대상",
+      "description": "진눈깨비 발사체를 1개 추가한다. 기본 3발에서 4발이 되어 피해와 빙결 부여 기회를 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113931,18 +114482,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembersblue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/진눈깨비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하공격"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\진눈깨비연마.md",
+        "lastUpdate": ""
+      }
+    },
+    "1247778": {
+      "id": "1247778",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "혜성 폭풍!",
+      "koreanName": "혜성 폭풍!",
+      "englishName": "Comet Storm!",
+      "icon": "spell_mage_cometstorm2",
+      "iconName": "spell_mage_cometstorm2",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "혜성 폭풍!은 서리 광선 사용 뒤 후속 혜성 폭풍을 사용할 수 있게 하는 준비 효과다. 각 혜성은 빙결 1중첩을 산산조각 낸다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_cometstorm2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_mage_cometstorm2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_mage_cometstorm2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_mage_cometstorm2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_cometstorm2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/등온핵"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\혜성폭풍-준비.md",
         "lastUpdate": ""
       }
     },
@@ -113956,18 +114564,18 @@
       ],
       "name": "빙하 작용",
       "koreanName": "빙하 작용",
-      "englishName": "Glacial Flow",
+      "englishName": "Glaciate",
       "icon": "spell_frost_frozencore",
       "iconName": "spell_frost_frozencore",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하 작용 (Glacial Flow)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음창으로 산산조각 낸 빙결 중첩 하나당 서리 광선 재사용을 0.10초 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113979,14 +114587,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frozencore.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리의손가락"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -114008,14 +114620,14 @@
       "icon": "inv_10_dungeonjewelry_primalist_necklace_1_frost",
       "iconName": "inv_10_dungeonjewelry_primalist_necklace_1_frost",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 얼음 심장 (Heart of Ice)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음창이 빙결 1중첩을 추가로 산산조각 내도록 한다. 방어 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114027,14 +114639,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_necklace_1_frost.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/정련된집중력"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.06,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -114458,18 +115076,18 @@
       ],
       "name": "냉증",
       "koreanName": "냉증",
-      "englishName": "Numbing Cold",
+      "englishName": "Frostbite",
       "icon": "spell_frost_frostarmor",
       "iconName": "spell_frost_frostarmor",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 냉증 (Numbing Cold)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음 화살 계열 치명타가 빙결을 1중첩 추가한다. 산산조각으로 처리한 중첩은 주변 피해도 발생시키며 5명을 넘으면 피해가 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114481,18 +115099,77 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostarmor.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음화살",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼어붙는바람"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.057,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\냉증.md",
+        "lastUpdate": ""
+      }
+    },
+    "1248829": {
+      "id": "1248829",
+      "type": "atomic-skill",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "눈보라",
+      "koreanName": "눈보라",
+      "englishName": "Blizzard",
+      "aliases": [
+        "대상 지정 눈보라"
+      ],
+      "icon": "spell_frost_icestorm",
+      "iconName": "spell_frost_icestorm",
+      "school": "",
+      "cooldown": "12초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나의 2.5%",
+      "range": "40미터",
+      "description": "선택한 적을 기준으로 시전하는 눈보라 선택지다. 지역 지정형 190356과 동일한 기본 시전 2초·재사용 12초·지속 12초를 가진다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_icestorm.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_icestorm.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_icestorm.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_icestorm.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_icestorm.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/눈보라",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/빗발치는냉기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Skills\\눈보라-대상지정.md",
         "lastUpdate": ""
       }
     },
@@ -121984,18 +122661,18 @@
       ],
       "name": "마력 깃든 쇄편",
       "koreanName": "마력 깃든 쇄편",
-      "englishName": "Splintering Energy",
+      "englishName": "Infused Splinters",
       "icon": "spell_mage_focusingcrystal",
       "iconName": "spell_mage_focusingcrystal",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 마력 깃든 쇄편 (Splintering Energy)",
+      "range": "자신 또는 효과 대상",
+      "description": "쇄편 직접 피해가 비전에서는 25% 확률로 비전 연사 1중첩, 냉기에서는 15% 확률로 대상 빙결 1중첩을 생성한다. 현재 영어명은 Infused Splinters다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122007,14 +122684,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_focusingcrystal.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/의지의힘"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -122033,18 +122714,18 @@
       ],
       "name": "정련된 집중력",
       "koreanName": "정련된 집중력",
-      "englishName": "Controlled Momentum",
+      "englishName": "Polished Focus",
       "icon": "inv_misc_orb_blue",
       "iconName": "inv_misc_orb_blue",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 정련된 집중력 (Controlled Momentum)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전은 비전 연사 20중첩 이상 탄막 사용 시 3중첩을 반환하고 탄막 피해가 15% 증가한다. 냉기는 얼음창의 산산조각 소비가 1중첩 늘고 산산조각 피해가 20% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122056,14 +122737,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_blue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/얼음심장",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/열기동공"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -122082,18 +122768,18 @@
       ],
       "name": "조율된 전령",
       "koreanName": "조율된 전령",
-      "englishName": "Controlled Instincts",
+      "englishName": "Attuned Familiar",
       "icon": "spell_frost_summonwaterelemental_2",
       "iconName": "spell_frost_summonwaterelemental_2",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 조율된 전령 (Controlled Instincts)",
+      "range": "자신 또는 효과 대상",
+      "description": "비전 전령의 비전 맹공 또는 냉기 물의 정령의 물화살이 50% 확률로 쇄편을 함께 생성한다. 현재 영어명은 Attuned Familiar다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122106,13 +122792,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/물의정령소환",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고독한겨울"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -123877,18 +124568,18 @@
       ],
       "name": "차디찬 손길",
       "koreanName": "차디찬 손길",
-      "englishName": "Frigid Touch",
+      "englishName": "Hand of Frost",
       "icon": "inv12_apextalent_mage_handoffrost",
       "iconName": "inv12_apextalent_mage_handoffrost",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 차디찬 손길 (Frigid Touch)",
+      "range": "자신 또는 효과 대상",
+      "description": "산산조각 시 기본 10% 확률로 대상을 추적하는 차디찬 손길을 자동 소환한다. 적중하면 피해와 빙결 1중첩을 준다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123900,18 +124591,77 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_mage_handoffrost.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-중간",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-마지막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.037,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\차디찬손길.md",
+        "lastUpdate": ""
+      }
+    },
+    "1262981": {
+      "id": "1262981",
+      "type": "talent",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "차디찬 손길",
+      "koreanName": "차디찬 손길",
+      "englishName": "Hand of Frost",
+      "aliases": [
+        "차디찬 손길 중간 노드"
+      ],
+      "icon": "spell_frost_piercing-chill",
+      "iconName": "spell_frost_piercing-chill",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "차디찬 손길 중간 2등급 노드다. 1등급 툴팁은 산산조각 중첩당 발동 확률 1%p 추가와 손길 피해 후 8초간 주문 피해 0.5% 증가를 표시한다. 2등급은 각각 2%p와 1%다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_piercing-chill.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_piercing-chill.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_piercing-chill.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_piercing-chill.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_piercing-chill.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\차디찬손길-중간.md",
         "lastUpdate": ""
       }
     },
@@ -123960,6 +124710,62 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\흑우의심장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1263249": {
+      "id": "1263249",
+      "type": "talent",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "차디찬 손길",
+      "koreanName": "차디찬 손길",
+      "englishName": "Hand of Frost",
+      "aliases": [
+        "차디찬 손길 마지막 노드"
+      ],
+      "icon": "ability_mage_rayoffrost",
+      "iconName": "ability_mage_rayoffrost",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "서리 광선이 채널 동안 차디찬 손길 4개를 부르고 추가 1충전과 피해 25% 증가를 얻는 마지막 노드다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_rayoffrost.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_rayoffrost.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_rayoffrost.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_rayoffrost.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_rayoffrost.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/서리광선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-중간"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\차디찬손길-마지막.md",
         "lastUpdate": ""
       }
     },
@@ -124062,6 +124868,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Hero-Talents\\기사단의인장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1263263": {
+      "id": "1263263",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "차디찬 손길",
+      "koreanName": "차디찬 손길",
+      "englishName": "Hand of Frost",
+      "aliases": [
+        "차디찬 손길 피해 강화"
+      ],
+      "icon": "spell_frost_frostbolt",
+      "iconName": "spell_frost_frostbolt",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "차디찬 손길 적중으로 생기는 주문 피해 증가 버프다. 중간 노드 등급에 따라 각각 0.5/1% 증가가 8초 동안 독립적으로 겹친다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostbolt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_frost_frostbolt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_frost_frostbolt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_frostbolt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostbolt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길-중간",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/차디찬손길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\차디찬손길-피해강화.md",
         "lastUpdate": ""
       }
     },
@@ -136419,14 +137279,14 @@
       "icon": "spell_arcane_arcanepotency",
       "iconName": "spell_arcane_arcanepotency",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 만발하는 점술 (Augury Abounds)",
+      "range": "자신 또는 효과 대상",
+      "description": "한 개 이상 쇄편을 생성할 때 10% 확률로 같은 계열 쇄편 8개를 추가 생성한다. 툴팁상 내부 재사용은 500밀리초다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136440,12 +137300,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/쇄편의마술",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/통제된본능",
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.041,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -136614,14 +137478,14 @@
       "icon": "spell_frost_iceshard",
       "iconName": "spell_frost_iceshard",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하의 한기 (Glacial Chill)",
+      "range": "자신 또는 효과 대상",
+      "description": "혹한의 쐐기 피해가 5% 늘고 빙결을 2중첩 추가로 부여한다. 기본 3중첩과 합쳐 5중첩 생성 방향이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136633,14 +137497,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_iceshard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하분쇄"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.026,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -136662,14 +137530,14 @@
       "icon": "artifactability_frostmage_ebonbolt",
       "iconName": "artifactability_frostmage_ebonbolt",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빙하 분쇄 (Glacial Shatter)",
+      "range": "자신 또는 효과 대상",
+      "description": "혹한의 쐐기가 빙결을 부여하지 않고 대신 5중첩을 산산조각 내도록 바꾼다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136681,14 +137549,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_frostmage_ebonbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하의한기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -136855,18 +137727,18 @@
       ],
       "name": "백시 현상",
       "koreanName": "백시 현상",
-      "englishName": "Backlash",
+      "englishName": "White Out",
       "icon": "spell_frost_frostblast",
       "iconName": "spell_frost_frostblast",
       "school": "",
-      "cooldown": "관련 주문 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 백시 현상 (Backlash)",
+      "range": "자신 또는 효과 대상",
+      "description": "얼음창을 쓸 때 얼어붙은 구슬 재사용이 0.5초 줄고 산산조각 낸 빙결 중첩당 0.1초가 추가로 줄어든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136878,14 +137750,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostblast.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음창",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼어붙은구슬"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/빙하작용"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/공용/Hero-Talents/비전냉기의가르침"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.047,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -137204,6 +138083,111 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296585": {
+      "id": "1296585",
+      "type": "passive",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "Mage Frost 12.1 Class Set 2pc",
+      "koreanName": "Mage Frost 12.1 Class Set 2pc",
+      "englishName": "Mage Frost 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "12.1 냉기 2세트는 산산조각 낸 빙결 중첩마다 4% 확률로 고드름을 생성하고 혹한의 쐐기 피해를 20% 높인다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/산산조각",
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296586": {
+      "id": "1296586",
+      "type": "passive",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "Mage Frost 12.1 Class Set 4pc",
+      "koreanName": "Mage Frost 12.1 Class Set 4pc",
+      "englishName": "Mage Frost 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "12.1 냉기 4세트는 혹한의 쐐기 시전으로 일정 확률의 신속한 재동결을 얻어 1초 동안 고드름 5개를 빠르게 생성한다. 산산조각 피해도 5% 높인다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혹한의쐐기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/고드름"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
@@ -139555,6 +140539,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\죽음의인도자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1310248": {
+      "id": "1310248",
+      "type": "buff",
+      "class": "Mage",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "신속한 재동결",
+      "koreanName": "신속한 재동결",
+      "englishName": "Rapid Refreezing",
+      "icon": "ability_mage_coldasice",
+      "iconName": "ability_mage_coldasice",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "시즌 2 4세트가 발동했을 때 1초에 걸쳐 고드름 5개를 생성하는 실제 효과다. 그 결과 혹한의 쐐기 준비가 빨라진다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_coldasice.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_mage_coldasice.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_mage_coldasice.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_mage_coldasice.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_coldasice.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/혜성폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/06-마법사/냉기/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Buffs\\신속한재동결.md",
         "lastUpdate": ""
       }
     },

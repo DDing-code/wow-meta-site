@@ -23,6 +23,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['hunter-survival', '12.1'],
   ['mage-arcane', '12.1'],
   ['mage-fire', '12.1'],
+  ['mage-frost', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -1033,6 +1034,35 @@ function main() {
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 
+  const mageFrost = manuscripts['mage-frost'];
+  const mageFrostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '냉기', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(mageFrostSource)) {
+    assert(JSON.stringify(JSON.parse(read(mageFrostSource))) === JSON.stringify(mageFrost), 'Frost must match its canonical 12.1 manuscript');
+  }
+  const mageFrostNotes = Object.values(kbSkills).filter(skill => /[\\/]06-마법사[\\/]냉기[\\/]/.test(skill.source?.kbPath || ''));
+  assert(mageFrostNotes.length === 63 && mageFrostNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 63 Frost notes must retain reviewed descriptions');
+  assert(!mageFrost.extraSkills?.length && !kbSkills['12472'], 'Frost must not revive Icy Veins or bypass canonical spells');
+  assert(kbSkills['1246769']?.type === 'passive' && kbSkills['1221389']?.type === 'debuff', 'Shatter passive and target Freezing stacks must remain distinct');
+  assert(['44544', '190446', '205473', '1222865', '1247730', '1247778', '1310248'].every(id => kbSkills[id]?.type === 'buff'), 'Frost proc and prepared effects must not appear as casts');
+  assert(['1262935', '1262981', '1263249'].every(id => kbSkills[id]?.type === 'talent') && kbSkills['1263263']?.type === 'buff', 'All Hand of Frost nodes and its damage buff must remain distinct');
+  assert(kbSkills['1246832']?.description.includes('6초') && kbSkills['11426']?.description.includes('35%') && kbSkills['1244069']?.description.includes('물리 피해를 10%'), 'Time-based Icicles and current defensive values must survive sync');
+  assert(['1296585', '1296586'].every(id => kbSkills[id]?.type === 'passive') && kbSkills['1296585']?.description.includes('4%') && kbSkills['1296586']?.description.includes('1초'), 'Frost S2 effects must remain passive with distinct proc conditions');
+  assert(String(mageFrost.graphCenterSkillId) === '30455', 'Frost graph must center on the actual Ice Lance cast');
+  for (const branch of mageFrost.heroBranches) {
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Frost hero needs authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Frost ST and AoE must retain distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Frost flows must use actual casts and complete conditions');
+      }
+    }
+  }
+  const frostSpellslinger = mageFrost.heroBranches.find(branch => branch.label === '주문술사');
+  const frostFrostfire = mageFrost.heroBranches.find(branch => branch.label === '서리불꽃');
+  assert(frostSpellslinger.opener.steps.slice(0, 4).map(row => row.skillId).join(',') === '116,44614,84714,205021', 'Spellslinger must retain its sourced opening order');
+  assert(frostFrostfire.opener.steps.slice(0, 4).map(row => row.skillId).join(',') === '431044,205021,44614,84714', 'Frostfire must retain its distinct sourced opening order');
+  assert(JSON.stringify(frostFrostfire).includes('정점') && JSON.stringify(frostFrostfire.aoe).includes('GCD') && JSON.stringify(frostFrostfire.aoe).includes('신속한 재동결'), 'Frostfire AoE must retain no-apex, channel clipping and tier conditions');
+
   const fire = manuscripts['mage-fire'];
   const fireSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '화염', 'Meta', 'guide-12.1.json');
   if (fs.existsSync(fireSource)) {
@@ -1139,6 +1169,9 @@ function main() {
   }
   assert(!JSON.stringify(beastMastery.heroBranches[0]).includes('"skillId":"466930"') && beastMastery.heroBranches[1].singleTarget.priority.some(row => row.skillId === '392060'), 'Pack Leader must not borrow Dark Ranger casts');
   const scopedSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies);
+  const mageFrostSynergies = scopedSynergies.filter(row => row.class === 'Mage' && row.spec === 'Frost');
+  assert(mageFrostSynergies.length === 18 && mageFrostSynergies.every(row => row.description?.length > 30 && row.participants.every(id => kbSkills[id])), 'All 18 Frost relationships need real participants and authored explanations');
+  assert(mageFrostSynergies.every(row => row.participants.every(id => !['1296585', '1296586'].includes(id))), 'Frost graph must show actual stack/proc effects instead of internal set icons');
   const survivalSynergies = scopedSynergies.filter(row => row.class === 'Hunter' && row.spec === 'Survival');
   assert(survivalSynergies.length === 16 && survivalSynergies.every(row => row.description?.length > 50 && row.participants.every(id => kbSkills[id])), 'All 16 Survival relationships need real participants and authored explanations');
   assert(survivalSynergies.every(row => row.participants.every(id => !['1296636', '1296635'].includes(id))), 'Survival graph must use actual Mongoose Fury instead of internal tier-effect placeholders');
