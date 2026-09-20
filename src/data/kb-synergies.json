@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T23:37:58.076Z",
+    "generatedAt": "2026-09-20T23:44:00.100Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14584,6 +14584,7 @@
     "rogue_assassination_deathmark_kingsbane": {
       "id": "rogue_assassination_deathmark_kingsbane",
       "name": "죽음표식-왕의파멸",
+      "description": "독살은 독 적용 확률을 높이고, 죽음표식은 치명독을 두 번 적용한다. 왕의 파멸은 치명독 적용으로 강화되며 불구대천 후속 공격도 독과 연계 점수를 제공한다.",
       "type": "synergy",
       "synergyType": "major_damage_window",
       "participants": [
@@ -14592,47 +14593,30 @@
         "32645",
         "703",
         "1943",
-        "421975",
-        "394983",
-        "381623",
-        "255989",
-        "381630",
-        "423136",
-        "381798",
-        "381673",
-        "255544",
         "1265385",
         "1265386",
         "1265387"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/살상의의지",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/일급암살자",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독묻은스틸레토",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/갑작스러운최후",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/졸디크의비전",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/파멸칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천-1265386",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천-1265387",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천-1265386"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\죽음표식-왕의파멸.md",

@@ -267,6 +267,9 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - The old manuscript's deliberate Envenom-expiration energy advice contradicts the current first apex node. The full replacement is not yet written. Other open issues include Shiv hero/build conditions, Deathmark's current multiplier, direct versus copied Rupture/Internal Bleeding, and automatic versus manual Tea choice nodes.
 - Online name/icon/link checks passed for 46 local atomic notes; this is not mechanics validation of all 46. The four manually reviewed records have a scoped runnable check in scripts/verify-assassination-kb.cjs. Source conflicts and remaining work are recorded in the canonical Meta/review-12.1.md.
 - Generated skill data was synchronized. No Assassination deployment or full-guide completion is claimed; its manuscript remains 12.0.5.
+- Second pass: manually reviewed seven more core casts and four talents, bringing the reviewed atomic subset to fifteen. Corrected Garrote's base cooldown, cast energy costs/radii, Deathmark's 75% modifier versus double poison application, its gradual energy recovery, Kingsbane's stacking cap, Internal Bleeding's direct-cast trigger and Iron Wire's conditional silence.
+- Dashing Scoundrel's current Korean and English tooltips agree on 8% weapon-poison critical chance, unlike the launch summary's 10%; the discrepancy is recorded instead of silently combining values. Rewrote the Deathmark/Kingsbane relationship with eight verified participants and an authored explanation.
+- Used the existing explicit description-section convention so these fifteen effects, rather than only their Markdown headings, reach generated DB descriptions. Expanded runnable checks cover mechanics and that data transfer. The rest of the vault's title-only descriptions remain a global audit item.
 
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
