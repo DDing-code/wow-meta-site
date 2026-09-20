@@ -1,8 +1,10 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowUpRight, BookOpen, Layers3 } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { guideManuscripts } from '../data/guideManuscripts.js';
 import {
+  CURRENT_PATCH_LABEL,
   guideRoles,
   guideSpecsByRole,
   getAllGuideSpecs,
@@ -115,7 +117,7 @@ const Tab = styled.button`
 `;
 
 const ClassSection = styled.section`
-  margin-top: 34px;
+  margin-top: 24px;
 `;
 
 const ClassTitle = styled.h2`
@@ -135,21 +137,22 @@ const ClassMark = styled.span`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 12px;
   border-top: 1px solid rgba(168, 178, 188, 0.12);
 
-  @media (max-width: 760px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 `;
 
 const SpecCard = styled(Link)`
-  min-height: 96px;
+  min-width: 0;
+  min-height: 80px;
   display: grid;
-  align-content: space-between;
-  gap: 12px;
-  padding: 14px 10px 15px 12px;
+  align-content: start;
+  gap: 6px;
+  padding: 12px 10px;
   border-bottom: 1px solid rgba(168, 178, 188, 0.11);
   border-left: 2px solid transparent;
   background: transparent;
@@ -157,7 +160,6 @@ const SpecCard = styled(Link)`
   &:hover {
     border-left-color: ${props => props.$color};
     background: ${props => props.$tone};
-    padding-left: 16px;
   }
 
   &:focus-visible {
@@ -169,8 +171,8 @@ const SpecCard = styled(Link)`
 const SpecTop = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 8px;
+  align-items: center;
 `;
 
 const SpecName = styled.h3`
@@ -181,47 +183,27 @@ const SpecName = styled.h3`
   word-break: keep-all;
 `;
 
-const SpecClass = styled.div`
-  margin-top: 4px;
-  color: #85919a;
-  font-size: 0.78rem;
-  font-weight: 520;
-`;
-
 const OpenIcon = styled.span`
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   color: #9aa5ad;
   border: 0;
   background: transparent;
 `;
 
 const Meta = styled.div`
-  display: grid;
-  gap: 5px;
-  color: #a7b0b6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  color: #9aa5ad;
   font-size: 0.76rem;
   font-weight: 470;
-`;
-
-const MetaLine = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  min-width: 0;
-
-  svg {
-    flex: 0 0 auto;
-    color: #8f9aa2;
-  }
 
   span {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
   }
 `;
@@ -278,7 +260,7 @@ function GuidePage() {
       </Tabs>
 
       {grouped.map(group => (
-        <ClassSection key={group.name}>
+        <ClassSection key={group.name} aria-label={`${group.name} 가이드`}>
           <ClassTitle $color={group.color}>
             <ClassMark $color={group.color} />
             {group.name}
@@ -287,23 +269,14 @@ function GuidePage() {
             {group.specs.map(item => (
               <SpecCard key={item.id} to={item.path} $color={item.color} $tone={`${item.color}18`}>
                 <SpecTop>
-                  <div>
-                    <SpecName>{item.spec}</SpecName>
-                    <SpecClass>{item.roleLabel}</SpecClass>
-                  </div>
+                  <SpecName>{item.spec}</SpecName>
                   <OpenIcon aria-hidden="true">
                     <ArrowUpRight size={16} />
                   </OpenIcon>
                 </SpecTop>
                 <Meta>
-                  <MetaLine>
-                    <BookOpen size={14} />
-                    <span>{item.status}</span>
-                  </MetaLine>
-                  <MetaLine>
-                    <Layers3 size={14} />
-                    <span>{item.focus}</span>
-                  </MetaLine>
+                  <span>{item.roleLabel}</span>
+                  <span>{guideManuscripts[item.id]?.patch || CURRENT_PATCH_LABEL}</span>
                 </Meta>
               </SpecCard>
             ))}
