@@ -1340,18 +1340,6 @@ function isPracticalTipBlock(block) {
 }
 
 const SPECIALIST_CHARTS = {
-  'warlock-demonology': {
-    id: 'uptime',
-    title: '소환수 수명과 폭군 준비',
-    sectionHeading: '악마 폭군 전 소환수 쌓기',
-    sectionIntro: '악마 흑마법사는 영혼의 조각이라는 자원을 소환수 수명으로 바꾼 뒤 악마 폭군 소환 극딜 구간에 묶습니다. 차트는 폭군 전에 어떤 소환수가 살아 있어야 하는지, 조각 소비와 발동 회수가 어디서 맞물리는지 보여 줍니다.',
-    caption: '굴단의 손, 공포사냥개 부르기, 악마의 핵, 흑마법서 계열, 악마 폭군 소환, 파열이 어느 순서로 겹쳐야 하는지 확인하는 흐름입니다.',
-    definition: [
-      ['의미', '악마 폭군은 누르는 순간보다 직전 소환수 수명, 조각 자원 준비, 극딜 구간으로 들어가는 순서가 더 중요합니다.'],
-      ['읽는 법', '폭군 전에는 조각을 소환수로 바꾸고, 폭군 중에는 악마의 핵과 파열로 남은 조각과 발동을 회수합니다. 쿨기 정렬이 밀리면 다음 폭군 구간의 소환수 사용 횟수와 구간 완성도도 같이 떨어집니다.'],
-      ['체크 포인트', '공포사냥개 지연, 조각 과충전, 폭군 전에 소환수 부족, 악마의 핵 과충전, 파열이 낮은 소환수 수에 들어간 상황, 단일/광역 전환 시 조각 소비 위치를 봅니다.'],
-    ],
-  },
   'warlock-destruction': {
     id: 'uptime',
     title: '조각과 혼돈의 화살 소비',
@@ -1761,7 +1749,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4075,58 +4063,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'warlock-demonology') {
-    return [
-      {
-        label: '조각 준비',
-        skill: findSkillByNames(data, ['악마 화살', '어둠의 화살']),
-        note: '폭군 전후 굴단의 손을 이어가기 위한 조각 생성 흐름입니다.',
-        segments: [[4, 12], [33, 12], [62, 12], [86, 10]],
-      },
-      {
-        label: '핵 발동',
-        skill: findSkillByNames(data, ['악마의 핵']),
-        note: '악마 화살을 빠르게 시전해 폭군 구간의 조각 복구를 돕습니다.',
-        segments: [[11, 10], [39, 10], [68, 10]],
-      },
-      {
-        label: '주 소환수',
-        skill: findSkillByNames(data, ['공포사냥개 부르기']),
-        note: '악마 폭군 소환이 받을 핵심 소환수 재료입니다.',
-        segments: [[8, 15], [42, 15], [76, 15]],
-      },
-      {
-        label: '임프 생성',
-        skill: findSkillByNames(data, ['굴단의 손']),
-        note: '4~5조각을 야생 임프로 바꿔 폭군과 파열의 재료를 만듭니다.',
-        segments: [[18, 12], [31, 10], [55, 12], [70, 10]],
-      },
-      {
-        label: '큰 악마',
-        skill: findSkillByNames(data, ['흑마법서: 임프 군주', '흑마법서: 지옥 유린자']),
-        note: '악마학자 구간에서 폭군 주변에 배치할 선택 쿨다운입니다.',
-        segments: [[22, 16], [72, 16]],
-      },
-      {
-        label: '폭군 구간',
-        skill: findSkillByNames(data, ['악마 폭군 소환']),
-        note: '소환수 수명과 조각 준비가 완성된 뒤 들어가는 중심 구간입니다.',
-        segments: [[28, 20], [78, 18]],
-      },
-      {
-        label: '파멸 축',
-        skill: findSkillByNames(data, ['파멸수호병 소환', '아르거스의 지배자']),
-        note: '다중 대상 또는 큰 구간에서 별도 피해 흐름으로 확인합니다.',
-        segments: [[30, 15], [80, 15]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['파열']),
-        note: '가능하면 6마리 야생 임프와 실제 대상 수를 확인한 뒤 소비합니다.',
-        segments: [[36, 10], [59, 10], [91, 7]],
-      },
-    ];
-  }
 
 
 

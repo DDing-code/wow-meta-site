@@ -26,6 +26,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['mage-frost', '12.1'],
   ['monk-brewmaster', '12.1'],
   ['warlock-affliction', '12.1'],
+  ['warlock-demonology', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -81,7 +82,6 @@ const NON_ACTION_CHART_KEYS = new Set([
   'evoker-devastation:434300',
   'evoker-preservation:1256577',
   'evoker-preservation:396187',
-  'warlock-demonology:1276222',
   'monk-brewmaster:115069',
   'monk-brewmaster:450508',
   'monk-brewmaster:450615',
@@ -1091,6 +1091,41 @@ function main() {
   const afflictionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Affliction');
   assert(afflictionSynergies.length === 15 && afflictionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id])), 'All 15 Affliction relationships must export real participant IDs, not display names');
   assert(afflictionSynergies.filter(note => note.participants.includes(affliction.graphCenterSkillId)).length === 10, 'Unstable Affliction must retain its ten authored relationships');
+
+  const demonology = manuscripts['warlock-demonology'];
+  const demonologySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '12-흑마법사', '악마', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(demonologySource)) {
+    assert(JSON.stringify(JSON.parse(read(demonologySource))) === JSON.stringify(demonology), 'Demonology must match its canonical 12.1 manuscript');
+  }
+  const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));
+  assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');
+  assert(!demonology.extraSkills?.length && !kbSkills['186185'], 'Demonology must not restore NPC Demonic Sacrifice or bypass canonical skills');
+  assert(['105174', '264178', '265187', '434506', '434635', '1276672'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Demonology flows require actual player-cast IDs');
+  assert(['1251778', '460551', '1276163', '1276190', '1276222'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Demonology Vilefiend, Doom and apex nodes must not become cast buttons');
+  assert(kbSkills['264173']?.type === 'buff' && kbSkills['267102']?.type === 'passive' && kbSkills['1276166']?.type === 'buff', 'Demonology proc rules and active buffs require separate identities');
+  assert(kbSkills['105174']?.description.includes('3개를 고정') && kbSkills['264178']?.description.includes('2개를 생성') && kbSkills['434506']?.description.includes('악마는 조각 3개'), 'Demonology costs and hero-specific generation must survive sync');
+  assert(kbSkills['1276190']?.description.includes('최대 2점') && kbSkills['1276190']?.description.includes('25초') && kbSkills['1276222']?.description.includes('사용 후 조각 1개'), 'Demonology apex rank and post-cast refund conditions must survive sync');
+  assert(kbSkills['1296573']?.type === 'passive' && kbSkills['1296574']?.type === 'passive' && kbSkills['1306077']?.type === 'proc', 'Demonology set explosions must not become additional player casts');
+  for (const branch of demonology.heroBranches) {
+    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Demonology heroes need a complete opener, ST and AoE');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Demonology ST and AoE conditions must differ');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      const rows = [...(mode.steps || []), ...(mode.priority || [])];
+      assert(!(rows.some(row => row.skillId === '196277') && rows.some(row => row.skillId === '264130')), 'Implosion and Power Siphon must never appear in one build flow');
+      for (const row of rows) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId]?.specs.includes('Demonology') && row.note.length > 25, 'Demonology flow rows must be scoped casts with complete conditions');
+      }
+    }
+  }
+  const soulHarvester = demonology.heroBranches.find(branch => branch.label === '영혼 수확자');
+  const diabolist = demonology.heroBranches.find(branch => branch.label === '악마학자');
+  assert(soulHarvester?.opener.steps.find(row => row.skillId === '265187')?.trigger.includes('2조각 이하'), 'Soul Harvester must leave room for the three Tyrant shards');
+  assert(diabolist?.opener.steps.find(row => row.skillId === '265187')?.trigger.includes('5조각'), 'Diabolist must retain its distinct Tyrant preparation');
+  assert(!JSON.stringify(soulHarvester).includes('"skillId":"434506"') && !JSON.stringify(soulHarvester).includes('"skillId":"434635"'), 'Soul Harvester must not borrow Diabolist cast buttons');
+  const demonologySynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Demonology');
+  assert(demonologySynergies.length === 18 && demonologySynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Demonology'))), 'All 18 Demonology relationships must use real, correctly scoped numeric IDs');
+  assert(demonology.graphCenterSkillId === '105174' && demonologySynergies.filter(note => note.participants.includes('105174')).length === 12, 'Hand of Guldan must retain its twelve actual relationships');
+  assert(!/93\.0%|99\.2%|99\.9%|190\.8k/.test(JSON.stringify(demonology)), 'Demonology must not reuse June usage or DPS as current evidence');
 
   const brewmaster = manuscripts['monk-brewmaster'];
   const brewmasterSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '양조', 'Meta', 'guide-12.1.json');

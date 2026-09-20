@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T16:59:36.357Z",
+    "generatedAt": "2026-09-20T17:53:51.272Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2838,
-    "rawTotalSkills": 2838,
+    "totalSkills": 2864,
+    "rawTotalSkills": 2864,
     "duplicateIds": [],
-    "totalSynergies": 516,
+    "totalSynergies": 524,
     "stats": {
-      "total": 2838,
+      "total": 2864,
       "byType": {
-        "buff": 84,
+        "buff": 92,
         "hero-talent": 567,
-        "atomic-skill": 507,
-        "proc": 10,
-        "skill": 153,
-        "talent": 991,
-        "spec-talent": 377,
-        "passive": 46,
+        "atomic-skill": 520,
+        "proc": 17,
+        "skill": 143,
+        "talent": 987,
+        "spec-talent": 386,
+        "passive": 49,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -41,7 +41,7 @@
         "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
-        "Warlock": 243,
+        "Warlock": 269,
         "Warrior": 265
       },
       "bySpec": {
@@ -92,8 +92,8 @@
         "Shaman-정기": 57,
         "Warlock-고통": 10,
         "Warlock-Affliction": 42,
-        "Warlock-공용": 106,
-        "Warlock-Demonology": 41,
+        "Warlock-공용": 108,
+        "Warlock-Demonology": 65,
         "Warlock-Destruction": 44,
         "Warrior-공용": 128,
         "Warrior-Arms": 46,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2762,
-        "withSynergies": 1415,
+        "withWikilinks": 2789,
+        "withSynergies": 1480,
         "avgLinkDensity": "0.037"
       }
     }
@@ -9210,6 +9210,58 @@
         "lastUpdate": ""
       }
     },
+    "30146": {
+      "id": "30146",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "지옥수호병 소환",
+      "koreanName": "지옥수호병 소환",
+      "englishName": "Summon Felguard",
+      "icon": "spell_shadow_summonfelguard",
+      "iconName": "spell_shadow_summonfelguard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "6초",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "",
+      "description": "조각 1개, 기본 6초 시전으로 지속 소환수인 지옥수호병을 부른다. 악마 전문화의 기본 소환수이며 소환의 대가를 선택하면 기본 시전 시간이 0.5초 줄어든다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_summonfelguard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_summonfelguard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_summonfelguard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_summonfelguard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_summonfelguard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/도끼-던지기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/소환의-대가"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\지옥수호병-소환.md",
+        "lastUpdate": ""
+      }
+    },
     "30283": {
       "id": "30283",
       "type": "skill",
@@ -16895,6 +16947,59 @@
         "lastUpdate": ""
       }
     },
+    "89751": {
+      "id": "89751",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "지옥폭풍",
+      "koreanName": "지옥폭풍",
+      "englishName": "Felstorm",
+      "icon": "ability_warrior_bladestorm",
+      "iconName": "ability_warrior_bladestorm",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "지옥수호병의 기본 30초 재사용 대기시간, 기력 60 소모 공격이다. 5초간 주변 8미터에 피해를 주며 8명을 초과하면 감소한다. 사용 중 지옥수호병은 다른 행동을 할 수 없다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bladestorm.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_bladestorm.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_bladestorm.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_bladestorm.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bladestorm.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-무기",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/강화된-지옥폭풍"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\지옥폭풍.md",
+        "lastUpdate": ""
+      }
+    },
     "91023": {
       "id": "91023",
       "type": "talent",
@@ -17738,7 +17843,7 @@
     },
     "104316": {
       "id": "104316",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -17750,14 +17855,14 @@
       "icon": "spell_warlock_calldreadstalkers",
       "iconName": "spell_warlock_calldreadstalkers",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "폭군 창이 받을 핵심 소환수다. `공포사냥개 부르기`가 밀리면 `악마 폭군 소환`이 받을 대상이 줄고, `악마의 핵` 발동과 조각 복구 흐름도 약해진다.",
+      "cooldown": "20초",
+      "castTime": "2초",
+      "resourceCost": "영혼의 조각 2개",
+      "range": "40야드",
+      "description": "기본 비용은 영혼의 조각 2개, 시전 시간은 2초, 재사용 대기시간은 20초다. 공포사냥개 2마리가 12초 동안 공격한다. 악마의 부름 1/2점은 비용을 각각 1/2개, 시전 시간을 50/100% 줄인다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17769,14 +17874,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_calldreadstalkers.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-부름",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -17840,7 +17952,7 @@
     },
     "105174": {
       "id": "105174",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -17852,14 +17964,14 @@
       "icon": "ability_warlock_handofguldan",
       "iconName": "ability_warlock_handofguldan",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`굴단의 손`은 조각을 단순 피해로 바꾸는 주문이 아니라 야생 임프 수명과 폭군 창의 밀도를 만드는 입력이다. 단일에서는 `악마 폭군 소환` 중 소환수 수를 갱신하고, 광역에서는 `파열`의 재료를 만든다.",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "영혼의 조각 3개",
+      "range": "40야드",
+      "description": "영혼의 조각 3개를 고정으로 소비하며 기본 시전 시간은 1.5초다. 대상 주변 8미터에 피해를 주고 날뛰는 임프 3마리를 소환한다. 1~2조각으로 약하게 시전하는 옛 방식이 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17871,14 +17983,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_handofguldan.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-지식",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-두목"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 7,
+        "synergyCount": 7,
+        "linkDensity": 0.08,
         "hasWikilinks": true
       },
       "source": {
@@ -21407,6 +21528,58 @@
         "lastUpdate": ""
       }
     },
+    "119914": {
+      "id": "119914",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "도끼 던지기",
+      "koreanName": "도끼 던지기",
+      "englishName": "Axe Toss",
+      "icon": "ability_warrior_titansgrip",
+      "iconName": "ability_warrior_titansgrip",
+      "school": "",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "",
+      "range": "소환수 기준 30야드",
+      "description": "악마 조종으로 지옥수호병에게 도끼 던지기를 명령하는 플레이어 버튼이다. 실제 지옥수호병 기술 89766은 30야드, 기본 30초 재사용 대기시간이며 4초 기절과 시전 방해를 한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_titansgrip.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_titansgrip.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_titansgrip.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_titansgrip.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_titansgrip.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-지옥-유린자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\도끼-던지기.md",
+        "lastUpdate": ""
+      }
+    },
     "119996": {
       "id": "119996",
       "type": "atomic-skill",
@@ -24693,54 +24866,6 @@
         "lastUpdate": ""
       }
     },
-    "186185": {
-      "id": "186185",
-      "type": "spec-talent",
-      "class": "Warlock",
-      "spec": "Demonology",
-      "specs": [
-        "Demonology"
-      ],
-      "name": "악마의 제물",
-      "koreanName": "악마의 제물",
-      "englishName": "",
-      "icon": "spell_shadow_ritualofsacrifice",
-      "iconName": "spell_shadow_ritualofsacrifice",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "악마의 제물은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 제물 100 야드 사정거리 1.5 초 주문 시전 시간 시전자가 제물이 될 대상을 무작위로 선택합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_ritualofsacrifice.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_ritualofsacrifice.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_ritualofsacrifice.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_ritualofsacrifice.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_ritualofsacrifice.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\악마의-제물.md",
-        "lastUpdate": ""
-      }
-    },
     "186257": {
       "id": "186257",
       "type": "atomic-skill",
@@ -27922,7 +28047,7 @@
     },
     "196277": {
       "id": "196277",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -27934,14 +28059,14 @@
       "icon": "inv_implosion",
       "iconName": "inv_implosion",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`파열`은 악마 흑마법사의 광역 전환 버튼이다. Wowhead와 Icy Veins 모두 가능하면 6마리 야생 임프 조건을 맞춰 쓰는 쪽으로 설명한다.",
+      "cooldown": "15초",
+      "castTime": "즉시",
+      "resourceCost": "날뛰는 임프 최대 6마리",
+      "range": "40야드",
+      "description": "기본 재사용 대기시간 15초인 즉시 시전이며 날뛰는 임프를 최대 6마리 소비해 대상 주변 8미터에 피해를 준다. 마력 착취와 같은 선택 노드다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27953,14 +28078,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_implosion.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-2세트",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.013,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -39330,18 +39462,18 @@
       ],
       "name": "공포채찍",
       "koreanName": "공포채찍",
-      "englishName": "",
+      "englishName": "Dreadlash",
       "icon": "spell_shadow_summonvoidwalker",
       "iconName": "spell_shadow_summonvoidwalker",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "공포채찍은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 공포채찍 특성 40 야드 사정거리 흑마법사 필요 요구 레벨 15 공포사냥개가 교전 시작과 동시에 사용하는 공포이빨이 8미터 내에 있는 모든 대상에게 적중하고 10%의 추가 피해를 입힙니다.",
+      "description": "공포사냥개의 공포이빨을 주변 8미터 광역 공격으로 만들고 피해를 10% 늘린다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39356,13 +39488,16 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/육식-추적자",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/파멸의-아귀"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.023,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -39372,7 +39507,7 @@
     },
     "264130": {
       "id": "264130",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -39384,14 +39519,14 @@
       "icon": "ability_warlock_backdraft",
       "iconName": "ability_warlock_backdraft",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`마력 착취`는 악마의 핵과 조각 복구 흐름을 정리하는 준비 버튼이다. 폭군 창에 들어가기 전 핵 자원과 조각 흐름을 만들고, Soul Harvester에서는 `악마 화살` 강화와도 연결된다.",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "날뛰는 임프 최대 2마리",
+      "range": "100야드",
+      "description": "파열과 같은 선택 노드의 사용 주문이다. 최대 2마리의 날뛰는 임프를 희생해 악마의 핵 2회를 얻고, 해당 강화로 사용하는 악마 화살의 PvE 피해를 30% 높인다. 기본 재사용 대기시간은 30초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39403,14 +39538,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/내면의-악마",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -39420,7 +39561,7 @@
     },
     "264173": {
       "id": "264173",
-      "type": "skill",
+      "type": "buff",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -39433,13 +39574,13 @@
       "iconName": "warlock_spelldrain",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "`악마의 핵`은 `악마 화살`을 통해 조각을 빠르게 복구하게 해 주는 발동 자원이다. 4중첩 과충전은 손실이지만, 폭군 접근 구간에 모두 비우면 `악마 폭군 소환` 중 `굴단의 손` 압축이 약해진다.",
-      "category": "ability",
+      "description": "악마 화살을 즉시 시전하게 만드는 최대 4중첩, 기본 20초 버프다. 날뛰는 임프 소멸 또는 파열 사용은 임프당 10%, 공포사냥개 만료는 각각 확정으로 핵을 얻는 기본 경로다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39451,14 +39592,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_spelldrain.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-핵-획득"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -39468,7 +39616,7 @@
     },
     "264178": {
       "id": "264178",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -39480,14 +39628,14 @@
       "icon": "inv__demonbolt",
       "iconName": "inv__demonbolt",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`악마 화살`은 `악마의 핵`을 통해 조각을 빠르게 복구하는 주문이다. 폭군 전에는 준비 자원이고, 폭군 중에는 `굴단의 손`을 더 넣기 위한 복구 수단이다.",
+      "cooldown": "없음",
+      "castTime": "4.5초",
+      "resourceCost": "기본 마나 2%",
+      "range": "40야드",
+      "description": "기본 시전 시간은 4.5초이고 영혼의 조각 2개를 생성한다. 악마의 핵을 소비하면 즉시 시전한다. 파멸 특성은 핵을 소비한 악마 화살로만 적용된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39499,14 +39647,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv__demonbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/원한의-복원",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/희생된-영혼"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -39729,7 +39884,7 @@
     },
     "265187": {
       "id": "265187",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -39741,14 +39896,14 @@
       "icon": "inv_summondemonictyrant",
       "iconName": "inv_summondemonictyrant",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "악마 흑마법사의 중심 허브다. `공포사냥개 부르기`, `굴단의 손`, 흑마법서 계열, `파멸수호병 소환`, Diabolist의 `악마의 의식`과 `황폐`가 모두 이 창의 품질을 바꾼다.  12.0.5 기준 Icy Veins는 폭군 피해가 활성 소환수에 따라 동적으로 계산되며, 예전처럼 사전 준비만 고정하는 스냅샷 버튼이 아니라고 설명한다. 따라서 폭군 직전 준비와 폭군 중 `굴단의 손` 압축을 함께 봐야 한다.",
+      "cooldown": "60초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나 2%",
+      "range": "40야드",
+      "description": "기본 2초 시전, 60초 재사용 대기시간이며 악마 폭군은 15초 동안 공격한다. 활성 날뛰는 임프와 공포사냥개 하나당 폭군 피해가 10% 증가한다. 군림하는 폭군을 선택하면 폭군은 5초 더 지속되고 소환 시 공포사냥개를 15초 연장한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39760,14 +39915,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_summondemonictyrant.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/폭군의-봉헌",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/죽음의-그림자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -39876,6 +40040,61 @@
         "lastUpdate": ""
       }
     },
+    "267102": {
+      "id": "267102",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "악마의 핵",
+      "koreanName": "악마의 핵",
+      "englishName": "Demonic Core",
+      "aliases": [
+        "악마의 핵 획득 규칙"
+      ],
+      "icon": "warlock_spelldrain",
+      "iconName": "warlock_spelldrain",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "악마의 핵 획득 규칙을 가진 패시브 주문이다. 임프가 사라지거나 파열로 쓰이면 10% 확률, 공포사냥개가 사라지면 확정으로 악마의 핵을 획득한다. 최대 4중첩이다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warlock_spelldrain.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warlock_spelldrain.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warlock_spelldrain.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warlock_spelldrain.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_spelldrain.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\악마의-핵-획득.md",
+        "lastUpdate": ""
+      }
+    },
     "267116": {
       "id": "267116",
       "type": "spec-talent",
@@ -39939,18 +40158,18 @@
       ],
       "name": "희생된 영혼",
       "koreanName": "희생된 영혼",
-      "englishName": "",
+      "englishName": "Sacrificed Souls",
       "icon": "ability_creature_disease_05",
       "iconName": "ability_creature_disease_05",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "희생된 영혼은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 희생된 영혼 특성 100 야드 사정거리 흑마법사 필요 요구 레벨 50 소환되어 있는 악마 하수인 하나당 어둠의 화살과 악마 화살의 공격력이 2%만큼 증가합니다.",
+      "description": "살아 있는 악마 하수인 하나당 어둠의 화살과 악마 화살 피해를 2% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39962,14 +40181,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_disease_05.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -39987,18 +40210,18 @@
       ],
       "name": "내면의 악마",
       "koreanName": "내면의 악마",
-      "englishName": "",
+      "englishName": "Inner Demons",
       "icon": "ability_warlock_eradication",
       "iconName": "ability_warlock_eradication",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "내면의 악마은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 내면의 악마 특성 100 야드 사정거리 흑마법사 필요 요구 레벨 45 지속적으로 12초마다 날뛰는 임프를 소환하여 전투를 돕게 합니다.",
+      "description": "12초마다 날뛰는 임프를 자동으로 소환한다. 별도 사용 버튼이 없으며 전투 전 임프 확보에도 관계한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -40010,14 +40233,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_eradication.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -44632,6 +44860,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\연쇄폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "334581": {
+      "id": "334581",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "마력 착취",
+      "koreanName": "마력 착취",
+      "englishName": "Power Siphon",
+      "aliases": [
+        "마력 착취 강화"
+      ],
+      "icon": "ability_warlock_backdraft",
+      "iconName": "ability_warlock_backdraft",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "마력 착취가 부여하는 악마 화살 피해 강화 효과다. PvE에서 강화된 악마 화살의 피해가 30% 증가한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_backdraft.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_backdraft.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_backdraft.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\마력-착취.md",
         "lastUpdate": ""
       }
     },
@@ -62952,6 +63235,57 @@
         "lastUpdate": ""
       }
     },
+    "386185": {
+      "id": "386185",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "악마의 지식",
+      "koreanName": "악마의 지식",
+      "englishName": "Demonic Knowledge",
+      "icon": "ability_warlock_improveddemonictactics",
+      "iconName": "ability_warlock_improveddemonictactics",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "굴단의 손으로 악마의 핵을 추가 획득하는 2점 특성이다. 기본 주문 툴팁에는 5%가 표시되지만 현재 SimC 특성 데이터의 실제 1/2점 값은 8/15%다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_improveddemonictactics.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_improveddemonictactics.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_improveddemonictactics.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_improveddemonictactics.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_improveddemonictactics.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\악마의-지식.md",
+        "lastUpdate": ""
+      }
+    },
     "386194": {
       "id": "386194",
       "type": "spec-talent",
@@ -62962,18 +63296,18 @@
       ],
       "name": "육식 추적자",
       "koreanName": "육식 추적자",
-      "englishName": "",
+      "englishName": "Carnivorous Stalkers",
       "icon": "warlock_pvp_callfelhunter",
       "iconName": "warlock_pvp_callfelhunter",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "육식 추적자은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 육식 추적자 특성 흑마법사 필요 공포사냥개의 공격이 10%의 확률로 공포이빨을 추가로 발동시킵니다.",
+      "description": "최대 2점이며 공포사냥개의 공격이 1점당 10% 확률로 공포이빨을 추가 발동한다. 2점은 20%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62988,13 +63322,16 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/공포채찍",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/파멸의-아귀"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -77135,18 +77472,18 @@
       ],
       "name": "임프 폭동",
       "koreanName": "임프 폭동",
-      "englishName": "",
+      "englishName": "Imp-erator",
       "icon": "spell_warlock_summonimpoutland",
       "iconName": "spell_warlock_summonimpoutland",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "임프 폭동은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 임프 폭동 특성 흑마법사 필요 날뛰는 임프의 지옥의 불화살의 극대화율이 15%만큼 증가합니다.",
+      "description": "날뛰는 임프가 쓰는 지옥의 불화살의 극대화율을 15% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -77158,14 +77495,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_summonimpoutland.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥불의-신속성",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-두목"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -78452,18 +78794,18 @@
       ],
       "name": "악귀",
       "koreanName": "악귀",
-      "englishName": "",
+      "englishName": "Demoniac",
       "icon": "inv_demonbolt",
       "iconName": "inv_demonbolt",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악귀은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악귀 특성 흑마법사 필요 다음 능력을 사용할 수 있도록 합니다. 악마 화살 타락한 악마의 불타는 영혼을 적에게 발사하여 (주문력의 396.778%)의 암흑불길 피해를 입힙니다. [ 악마 : 영혼의 조각 2개를 생성합니다. ] 악마의 핵 날뛰는 임프가 사라지거나 파열에 쓰이면, 10%의 확률로 악마의 핵 중첩을 하나 획득합니다. 소환한 공포사냥개가 사라지면, 100% 확",
+      "description": "악마 화살과 악마의 핵 작동을 열어 주는 전문화 특성이다. 핵이 없는 악마 화살은 긴 시전이고, 핵이 있으면 즉시 시전으로 조각을 생성한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78476,16 +78818,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-핵-획득"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.023,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -79045,18 +79389,18 @@
       ],
       "name": "원한의 복원",
       "koreanName": "원한의 복원",
-      "englishName": "",
+      "englishName": "Spiteful Reconstitution",
       "icon": "spell_shadow_impphaseshift",
       "iconName": "spell_shadow_impphaseshift",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "원한의 복원은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 원한의 복원 특성 흑마법사 필요 악마 화살의 공격력이 10%만큼 증가하며, 악마의 핵 소모 시 일정 확률로 날뛰는 임프를 소환합니다.",
+      "description": "악마 화살 피해를 10% 높이고 악마의 핵을 소비할 때 일정 확률로 날뛰는 임프를 소환한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79069,16 +79413,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.037,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -79145,18 +79490,18 @@
       ],
       "name": "악마의 의식",
       "koreanName": "악마의 의식",
-      "englishName": "",
+      "englishName": "Diabolic Ritual",
       "icon": "ability_bossfelorcs_necromancer_purple",
       "iconName": "ability_bossfelorcs_necromancer_purple",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 의식은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 의식 특성 흑마법사 필요 악마 공격 주문으로 영혼의 조각 소모 시 20초 동안 악마의 의식이 부여됩니다. 악마의 의식이 활성화된 동안 공격 주문으로 영혼의 조각을 소모할 때마다 악마의 의식의 지속시간이 1초만큼 감소합니다. 악마의 의식이 만료되면 악마술이 부여되어 다음 굴단의 손 시전 시 대군주 또는 혼돈의 어머니, 지옥의 군주를 소환해 적에게",
+      "description": "악마는 공격 주문으로 조각을 소비하면 20초 의식을 시작하고, 활성 중 소비한 조각당 1초씩 남은 시간이 줄어든다. 완료 후 얻는 악마술을 굴단의 손으로 소비해 대군주, 혼돈의 어머니, 지옥의 군주를 차례로 부른다. 파괴는 혼돈의 화살·불의 비·어둠의 연소 시전 단위로 진행한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79169,15 +79514,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/집회의-비밀",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/황폐",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/지옥의-기계"
+        ]
       },
       "quality": {
         "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.028,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -79196,18 +79547,18 @@
       ],
       "name": "베어낸 영혼",
       "koreanName": "베어낸 영혼",
-      "englishName": "",
+      "englishName": "Cloven Souls",
       "icon": "ability_creature_felfrenzy",
       "iconName": "ability_creature_felfrenzy",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "베어낸 영혼은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 베어낸 영혼 특성 흑마법사 필요 대군주에게 피해를 받은 적은 영혼이 쪼개져 15초 동안 시전자와 소환수에게 받는 피해가 5 %만큼 증가합니다.",
+      "description": "대군주에게 피해를 받은 적이 15초 동안 시전자와 소환수에게 받는 피해가 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79219,14 +79570,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_felfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -79245,18 +79600,18 @@
       ],
       "name": "집회의 비밀",
       "koreanName": "집회의 비밀",
-      "englishName": "",
+      "englishName": "Secrets of the Coven",
       "icon": "achievement_boss_argus_shivan",
       "iconName": "achievement_boss_argus_shivan",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "집회의 비밀은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 집회의 비밀 특성 흑마법사 필요 파괴 혼돈의 어머니가 다음 소각|1을;를; 강화하여 지옥불 화살로 전환시킵니다. 지옥불 화살 심연의 지옥불로 타오르는 화살을 날려 적 대상에게 (주문력의 1347.35%)의 화염 피해를 입히고 영혼의 조각 2개를 생성합니다. 악마 혼돈의 어머니가 다음 어둠의 화살|1을;를; 강화하여 지옥불 화살로 전환시킵니다. 지옥불 ",
+      "description": "혼돈의 어머니 소환 후 악마의 다음 어둠의 화살 또는 파괴의 다음 소각이 지옥불 화살로 바뀐다. 악마는 조각 3개, 파괴는 2개를 생성한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79268,14 +79623,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_argus_shivan.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.006,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -79294,18 +79654,18 @@
       ],
       "name": "황폐",
       "koreanName": "황폐",
-      "englishName": "",
+      "englishName": "Ruination",
       "icon": "ability_bossmannoroth_empoweredmannorothsgaze",
       "iconName": "ability_bossmannoroth_empoweredmannorothsgaze",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "황폐은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 황폐 특성 흑마법사 필요 악마 지옥의 군주 소환 시 다음 굴단의 손|1을;를; 황폐로 전환시킵니다. 황폐 뒤틀린 황천의 심층부에서 악마가 깃든 운석을 불러 내립니다. 충격 지점 8미터 내의 모든 적에게 (주문력의 2537.91%)의 혼돈 피해를 입히고 추가로 날뛰는 임프 3마리를 소환합니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다. 파괴 지옥의 군",
+      "description": "지옥의 군주 소환 후 악마의 다음 굴단의 손 또는 파괴의 다음 혼돈의 화살이 황폐로 변한다. 악마는 추가 임프 3마리, 파괴는 악독한 임프 1마리를 소환하는 서로 다른 결과를 가진다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79318,15 +79678,20 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐",
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -79499,18 +79864,18 @@
       ],
       "name": "영혼각인 마법진",
       "koreanName": "영혼각인 마법진",
-      "englishName": "",
+      "englishName": "Soul-Etched Circles",
       "icon": "spell_shadow_demoniccircleteleport",
       "iconName": "spell_shadow_demoniccircleteleport",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "영혼각인 마법진은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영혼각인 마법진 특성 흑마법사 필요 악마의 마법진: 순간이동 시전 시 항상 영혼 불사르기의 이로운 효과를 받고 이동 속도가 50%만큼 증가합니다. 또한 6초 동안 이동 속도 감소 및 이동 불가 효과에 면역이 됩니다.",
+      "description": "악마의 마법진: 순간이동에 영혼 불사르기의 강화가 항상 붙어 6초 동안 이동 속도 50% 증가와 감속·이동 불가 면역을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79523,7 +79888,7 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마의-마법진"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마의-마법진-순간이동"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/영혼-불사르기"
@@ -79531,9 +79896,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.039,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -79552,18 +79917,18 @@
       ],
       "name": "아나이힐란의 고함",
       "koreanName": "아나이힐란의 고함",
-      "englishName": "",
+      "englishName": "Annihilan's Bellow",
       "icon": "ability_physical_taunt",
       "iconName": "ability_physical_taunt",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "아나이힐란의 고함은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 아나이힐란의 고함 특성 흑마법사 필요 공포의 울부짖음의 재사용 대기시간이 10초만큼 감소하고 사정거리는 5미터만큼 증가합니다.",
+      "description": "공포의 울부짖음의 기본 재사용 대기시간을 10초 줄이고 사거리를 5미터 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79582,9 +79947,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -79603,18 +79968,18 @@
       ],
       "name": "지옥불 활력",
       "koreanName": "지옥불 활력",
-      "englishName": "",
+      "englishName": "Infernal Vitality",
       "icon": "inv_fabric_felcloth_ebon",
       "iconName": "inv_fabric_felcloth_ebon",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥불 활력은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥불 활력 특성 흑마법사 필요 영원한 결의가 10초에 걸쳐 최대 생명력의 30%만큼 생명력을 회복시킵니다.",
+      "description": "영원한 결의 사용으로 10초 동안 최대 생명력의 30%를 회복한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79633,9 +79998,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.038,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -79654,18 +80019,18 @@
       ],
       "name": "지옥불 보루",
       "koreanName": "지옥불 보루",
-      "englishName": "",
+      "englishName": "Infernal Bulwark",
       "icon": "spell_fire_felfireward",
       "iconName": "spell_fire_felfireward",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥불 보루은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥불 보루 특성 흑마법사 필요 영원한 결의가 최대 생명력의 10%에 해당하는 영혼 갈취를 부여하고 8초 동안 영혼 갈취의 최대 흡수량을 10%만큼 증가시킵니다.",
+      "description": "영원한 결의를 쓰면 최대 생명력의 10%에 해당하는 영혼 갈취 보호막을 얻고, 8초 동안 영혼 갈취의 최대 흡수량도 10% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79685,9 +80050,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.047,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -79974,18 +80339,18 @@
       ],
       "name": "심연의 지배",
       "koreanName": "심연의 지배",
-      "englishName": "",
+      "englishName": "Abyssal Dominion",
       "icon": "70_inscription_vantus_rune_tomb",
       "iconName": "70_inscription_vantus_rune_tomb",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "심연의 지배은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 심연의 지배 특성 흑마법사 필요 악마 악마 폭군 소환이 강화되어, 70%의 추가 피해를 입히고 활성화된 동안 악마의 공격력을 20%만큼 증가시킵니다. 파괴 지옥불정령 소환이 강화되어 40%의 추가 피해를 입힙니다. 지옥불정령 소환의 효과가 끝나면 50%의 효과를 발휘하는 두 개의 작은 지옥불정령으로 분열되어 10초 동안 지속됩니다.",
+      "description": "악마는 폭군의 피해가 70% 늘고 폭군 활성 중 다른 악마들의 피해가 20% 증가한다. 파괴는 지옥불정령 피해가 40% 늘고 종료 시 50% 효율의 작은 지옥불정령 2마리가 10초 나온다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79998,15 +80363,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -80466,18 +80834,18 @@
       ],
       "name": "소로스의 불길",
       "koreanName": "소로스의 불길",
-      "englishName": "",
+      "englishName": "Flames of Xoroth",
       "icon": "ability_warlock_burningembers",
       "iconName": "ability_warlock_burningembers",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "소로스의 불길은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 소로스의 불길 특성 흑마법사 필요 화염 공격력이 4%만큼, 악마의 공격력이 4%만큼 증가합니다.",
+      "description": "화염 및 악마 피해를 높이는 패시브다. 악마 전문화는 Blizzard 12.1 조정에 따라 3%이며 파괴의 기본 툴팁 값은 4%다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -80489,14 +80857,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembers.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -80515,18 +80888,18 @@
       ],
       "name": "란코라의 손길",
       "koreanName": "란코라의 손길",
-      "englishName": "",
+      "englishName": "Touch of Rancora",
       "icon": "ability_bossfellord_felspike",
       "iconName": "ability_bossfellord_felspike",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "란코라의 손길은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 란코라의 손길 특성 흑마법사 필요 악마 악마술이 다음 굴단의 손의 공격력을 20%만큼 증가시키고 시전 시간은 50%만큼 감소시킵니다. 파괴 악마술이 다음 혼돈의 화살, 불의 비 또는 어둠의 연소의 공격력을 20%만큼 증가시키고 시전 시간은 50%만큼 감소시킵니다. 혼돈의 화살 시전 시 악마의 의식의 지속시간이 추가로 1초만큼 감소합니다.",
+      "description": "악마술로 강화된 다음 소비 주문의 피해를 20% 높이고 시전 시간을 50% 줄인다. 악마는 굴단의 손, 파괴는 혼돈의 화살·불의 비·어둠의 연소가 해당한다. 파괴 혼돈의 화살은 의식 시간을 추가 1초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -80539,15 +80912,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.019,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -80566,18 +80942,18 @@
       ],
       "name": "나스레자의 암울",
       "koreanName": "나스레자의 암울",
-      "englishName": "",
+      "englishName": "Gloom of Nathreza",
       "icon": "ability_rogue_envelopingshadows",
       "iconName": "ability_rogue_envelopingshadows",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "나스레자의 암울은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 나스레자의 암울 특성 흑마법사 필요 악마 굴단의 손이 소모한 영혼의 조각 하나당 15%의 추가 피해를 입힙니다. 파괴 대혼란이 부여된 적에게 단일 대상 주문이 7%의 추가 피해를 입힙니다.",
+      "description": "악마에서는 굴단의 손이 소비한 조각 하나당 피해가 15% 늘어난다. 파괴에서는 대혼란이 걸린 적에게 단일 주문 피해가 7% 늘어난다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -80596,9 +80972,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.022,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -80617,18 +80993,18 @@
       ],
       "name": "케르잔의 잔혹성",
       "koreanName": "케르잔의 잔혹성",
-      "englishName": "",
+      "englishName": "Cruelty of Kerxan",
       "icon": "creatureportrait_fomorhand",
       "iconName": "creatureportrait_fomorhand",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "케르잔의 잔혹성은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 케르잔의 잔혹성 특성 흑마법사 필요 악마 악마 폭군 소환 시전 시 악마의 의식이 부여되고 지속시간이 3초만큼 감소합니다. 파괴 지옥불정령 소환 시전 시 악마의 의식이 부여되고 지속시간이 3초만큼 감소합니다.",
+      "description": "악마 폭군 소환 또는 파괴의 지옥불정령 소환으로 악마의 의식을 부여하고 남은 시간을 3초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -80649,9 +81025,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.039,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -80670,18 +81046,18 @@
       ],
       "name": "지옥의 기계",
       "koreanName": "지옥의 기계",
-      "englishName": "",
+      "englishName": "Infernal Machine",
       "icon": "inv_misc_supersoulash",
       "iconName": "inv_misc_supersoulash",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 기계은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 기계 특성 흑마법사 필요 악마 악마 폭군|1이;가; 활성화된 동안 공격 주문으로 영혼의 조각을 소모하면 악마의 의식의 지속시간이 추가로 1초만큼 감소합니다. 파괴 지옥불정령|1이;가; 활성화된 동안 공격 주문으로 영혼의 조각을 소모하면 악마의 의식의 지속시간이 추가로 1초만큼 감소합니다.",
+      "description": "악마 폭군 또는 파괴의 지옥불정령이 활성화된 동안, 조각을 소비하는 공격 주문이 악마의 의식 시간을 추가로 1초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -80694,7 +81070,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -80702,9 +81079,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.037,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -84597,6 +84974,115 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\폭격.md",
+        "lastUpdate": ""
+      }
+    },
+    "434506": {
+      "id": "434506",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "name": "지옥불 화살",
+      "koreanName": "지옥불 화살",
+      "englishName": "Infernal Bolt",
+      "icon": "spell_fel_firebolt",
+      "iconName": "spell_fel_firebolt",
+      "school": "",
+      "cooldown": "발동 조건",
+      "castTime": "2초",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "혼돈의 어머니 소환 이후 집회의 비밀로 준비되는 기본 2초 시전 화염 주문이다. 악마는 조각 3개, 파괴는 조각 2개를 생성한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fel_firebolt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fel_firebolt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fel_firebolt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fel_firebolt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fel_firebolt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/집회의-비밀",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Skills\\지옥불-화살.md",
+        "lastUpdate": ""
+      }
+    },
+    "434635": {
+      "id": "434635",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "name": "황폐",
+      "koreanName": "황폐",
+      "englishName": "Ruination",
+      "icon": "spell_fire_felflamestrike",
+      "iconName": "spell_fire_felflamestrike",
+      "school": "",
+      "cooldown": "발동 조건",
+      "castTime": "1.5초",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "지옥의 군주로 준비된 황폐의 실제 시전 ID다. 기본 1.5초 시전, 조각 비용은 없으며 8미터 광역 피해를 주고 8명을 넘으면 감소한다. 악마는 추가 임프 3마리, 파괴는 악독한 임프 1마리를 소환한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamestrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_felflamestrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_felflamestrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_felflamestrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamestrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/황폐",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Skills\\황폐.md",
         "lastUpdate": ""
       }
     },
@@ -94838,7 +95324,9 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
@@ -94848,9 +95336,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.054,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -95003,7 +95491,9 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확",
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -95011,9 +95501,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.045,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -99687,18 +100177,18 @@
       ],
       "name": "불길접촉",
       "koreanName": "불길접촉",
-      "englishName": "",
+      "englishName": "Flametouched",
       "icon": "spell_shaman_firenova",
       "iconName": "spell_shaman_firenova",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "불길접촉은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 불길접촉 특성 흑마법사 필요 공포사냥개의 공격 속도가 10%만큼, 치명타 및 극대화율이 15%만큼 증가합니다.",
+      "description": "공포사냥개의 공격 속도를 10%, 치명타율을 15% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99713,13 +100203,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/육식-추적자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -99835,18 +100327,18 @@
       ],
       "name": "암흑의 룬",
       "koreanName": "암흑의 룬",
-      "englishName": "",
+      "englishName": "Rune of Shadows",
       "icon": "spell_shadow_rune",
       "iconName": "spell_shadow_rune",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "암흑의 룬은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 암흑의 룬 특성 흑마법사 필요 어둠의 화살의 시전 시간이 10%만큼 감소하고 공격력은 15%만큼 증가합니다.",
+      "description": "최대 2점 특성이다. 1점당 어둠의 화살 시전 시간을 10% 줄이고 피해를 15% 늘린다. 2점에서는 각각 20%, 30%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99858,14 +100350,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rune.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -99981,18 +100476,18 @@
       ],
       "name": "악마의 전술 연마",
       "koreanName": "악마의 전술 연마",
-      "englishName": "",
+      "englishName": "Improved Demonic Tactics",
       "icon": "ability_warlock_ancientgrimoire",
       "iconName": "ability_warlock_ancientgrimoire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 전술 연마은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 전술 연마 특성 100 야드 사정거리 흑마법사 필요 주 악마의 치명타 및 극대화율이 자신의 치명타 및 극대화율의 50%만큼 증가합니다.",
+      "description": "주 악마의 치명타율에 플레이어 치명타율의 50%를 추가한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100004,14 +100499,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_ancientgrimoire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-잔혹성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -100225,18 +100724,18 @@
       ],
       "name": "악마의 잔혹성",
       "koreanName": "악마의 잔혹성",
-      "englishName": "",
+      "englishName": "Demonic Brutality",
       "icon": "ability_demonhunter_bladedance",
       "iconName": "ability_demonhunter_bladedance",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 잔혹성은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 잔혹성 특성 흑마법사 필요 자신과 자신의 악마가 치명타 및 극대화 공격을 적중시키면 200%의 피해가 아닌 230%의 피해를 입힙니다.",
+      "description": "자신과 악마의 치명타 피해 배율을 기본 200%에서 230%로 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100248,14 +100747,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-전술-연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -102012,18 +102516,18 @@
       ],
       "name": "샤투그의 징표",
       "koreanName": "샤투그의 징표",
-      "englishName": "",
+      "englishName": "Mark of Shatug",
       "icon": "inv_felhound3_shadow_mount",
       "iconName": "inv_felhound3_shadow_mount",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "샤투그의 징표은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 샤투그의 징표 특성 흑마법사 필요 썩은마귀 소환이 어스름사냥개 소환으로 변화하고 아래 능력을 배웁니다. 어스름 자상 어스름사냥개는 이빨과 발톱이 사악한 암흑 마법에 물들어 있어 근접 공격 시 (주문력의 31.7766%)의 추가 암흑 피해를 입힙니다.",
+      "description": "썩은마귀 소환을 어스름사냥개 소환으로 바꾼다. 어스름사냥개의 근접 공격에 추가 암흑 피해가 붙는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102035,14 +102539,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_mount.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -102060,18 +102567,18 @@
       ],
       "name": "프하르그의 징표",
       "koreanName": "프하르그의 징표",
-      "englishName": "",
+      "englishName": "Mark of F'harg",
       "icon": "inv_felhound3_shadow_fire",
       "iconName": "inv_felhound3_shadow_fire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "프하르그의 징표은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 프하르그의 징표 특성 흑마법사 필요 썩은마귀 소환이 숯사냥개 소환으로 변화하고 아래 능력을 배웁니다. 불지옥의 기운 영원히 타오르는 심연의 불꽃에 휘감겨 10미터 내의 적에게 1초마다 (주문력의 15.9865%)의 화염 피해를 입힙니다.",
+      "description": "썩은마귀 소환을 숯사냥개 소환으로 바꾸며, 숯사냥개 주변 10미터에 1초마다 화염 피해를 준다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102083,18 +102590,127 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_fire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\프하르그의-징표.md",
+        "lastUpdate": ""
+      }
+    },
+    "455465": {
+      "id": "455465",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "어스름사냥개 소환",
+      "koreanName": "어스름사냥개 소환",
+      "englishName": "Summon Gloomhound",
+      "icon": "inv_felhound3_shadow_mount",
+      "iconName": "inv_felhound3_shadow_mount",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "샤투그의 징표로 썩은마귀 대신 나오는 어스름사냥개의 자동 소환 효과다. 기본 15초 동안 공격한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_mount.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_felhound3_shadow_mount.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_felhound3_shadow_mount.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_felhound3_shadow_mount.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_mount.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/샤투그의-징표"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\어스름사냥개-소환.md",
+        "lastUpdate": ""
+      }
+    },
+    "455476": {
+      "id": "455476",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "숯사냥개 소환",
+      "koreanName": "숯사냥개 소환",
+      "englishName": "Summon Charhound",
+      "icon": "inv_felhound3_shadow_fire",
+      "iconName": "inv_felhound3_shadow_fire",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "프하르그의 징표로 썩은마귀 대신 나오는 숯사냥개의 자동 소환 효과다. 기본 15초 동안 전투를 돕는다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_fire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_felhound3_shadow_fire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_felhound3_shadow_fire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_felhound3_shadow_fire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_felhound3_shadow_fire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/프하르그의-징표"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\숯사냥개-소환.md",
         "lastUpdate": ""
       }
     },
@@ -104389,7 +105005,7 @@
     },
     "460551": {
       "id": "460551",
-      "type": "skill",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -104402,13 +105018,13 @@
       "iconName": "spell_shadow_auraofdarkness",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "`파멸`은 악마 흑마법사의 빌드와 대상 수에 따라 광역/다중 대상 운용에 들어가는 보조 축이다. Wowhead 특성 문서는 쐐기에서 `악마 화살`로 여러 대상에 파멸 효과를 퍼뜨리는 운용을 언급한다.",
-      "category": "ability",
+      "description": "악마의 핵을 소비한 악마 화살이 20초짜리 파멸을 대상에게 적용한다. 만료되거나 제거되면 주변 10미터에 폭발하며 8명을 넘으면 피해가 줄어든다. 굴단의 손 시전은 남은 파멸 시간을 3초 줄인다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104420,18 +105036,78 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_auraofdarkness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸수호병-소환"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\파멸.md",
+        "lastUpdate": ""
+      }
+    },
+    "460553": {
+      "id": "460553",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "파멸",
+      "koreanName": "파멸",
+      "englishName": "Doom",
+      "aliases": [
+        "파멸 약화 효과"
+      ],
+      "icon": "spell_shadow_auraofdarkness",
+      "iconName": "spell_shadow_auraofdarkness",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "핵을 소비한 악마 화살로 부여되는 20초 파멸 약화 효과다. 만료 또는 제거 시 주변 10미터에 폭발하며 굴단의 손으로 남은 시간을 3초씩 줄인다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_auraofdarkness.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_auraofdarkness.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_auraofdarkness.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_auraofdarkness.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_auraofdarkness.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\파멸.md",
         "lastUpdate": ""
       }
     },
@@ -111952,6 +112628,57 @@
         "lastUpdate": ""
       }
     },
+    "1240189": {
+      "id": "1240189",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "소환의 대가",
+      "koreanName": "소환의 대가",
+      "englishName": "Master Summoner",
+      "icon": "spell_nature_removecurse",
+      "iconName": "spell_nature_removecurse",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "특화를 3% 높이고 악마 폭군 소환 및 지옥수호병 소환의 기본 시전 시간을 0.5초 줄인다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_removecurse.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_removecurse.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_removecurse.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\소환의-대가.md",
+        "lastUpdate": ""
+      }
+    },
     "1240201": {
       "id": "1240201",
       "type": "talent",
@@ -117984,18 +118711,18 @@
       ],
       "name": "지옥의 지능",
       "koreanName": "지옥의 지능",
-      "englishName": "",
+      "englishName": "Fel Intellect",
       "icon": "ability_kaztik_dominatemind",
       "iconName": "ability_kaztik_dominatemind",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 지능은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 지능 특성 흑마법사 필요 지능이 2%만큼 증가합니다.",
+      "description": "지능을 2% 높이는 전문화 패시브다. 별도 지속시간이나 재사용 대기시간을 가진 사용 효과는 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118007,14 +118734,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_kaztik_dominatemind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -118032,18 +118762,18 @@
       ],
       "name": "익숙한 의식",
       "koreanName": "익숙한 의식",
-      "englishName": "",
+      "englishName": "Practiced Rituals",
       "icon": "inv_10_inscription_illusoryspellscrolls_color4",
       "iconName": "inv_10_inscription_illusoryspellscrolls_color4",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "익숙한 의식은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 익숙한 의식 특성 흑마법사 필요 특화가 2%만큼 증가합니다.",
+      "description": "특화를 2% 높이는 전문화 패시브다. 공포채찍처럼 특정 공격을 광역으로 바꾸는 효과는 없다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118055,14 +118785,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_inscription_illusoryspellscrolls_color4.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -118287,18 +119020,73 @@
       ],
       "name": "임프 두목",
       "koreanName": "임프 두목",
-      "englishName": "",
+      "englishName": "Imp Gang Boss",
       "icon": "ability_warlock_empoweredimp",
       "iconName": "ability_warlock_empoweredimp",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "임프 두목은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 임프 두목 특성 흑마법사 필요 굴단의 손 시전 시 소환되는 날뛰는 임프 1마리를 강화하여 공격력을 100%만큼 증가시킵니다.",
+      "description": "굴단의 손으로 소환한 날뛰는 임프 중 1마리를 강화해 공격력을 100% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_empoweredimp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_empoweredimp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_empoweredimp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_empoweredimp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_empoweredimp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\임프-두목.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250772": {
+      "id": "1250772",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "임프 두목",
+      "koreanName": "임프 두목",
+      "englishName": "Imp Gang Boss",
+      "aliases": [
+        "임프 두목 버프"
+      ],
+      "icon": "ability_warlock_empoweredimp",
+      "iconName": "ability_warlock_empoweredimp",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "임프 두목으로 강화된 임프의 공격력을 100% 높이는 효과다. 일반 굴단의 손의 특성과 지옥으로부터의 귀환 소환에서 사용된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118311,17 +119099,20 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-두목",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\임프-두목.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\임프-두목.md",
         "lastUpdate": ""
       }
     },
@@ -118335,18 +119126,18 @@
       ],
       "name": "지옥의 사령관",
       "koreanName": "지옥의 사령관",
-      "englishName": "",
+      "englishName": "Hellbent Commander",
       "icon": "inv_helm_cloth_pvpwarlock_o_01",
       "iconName": "inv_helm_cloth_pvpwarlock_o_01",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 사령관은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 사령관 특성 흑마법사 필요 지배하는 악마 하나당 악마의 공격력이 1.0%만큼 증가합니다.",
+      "description": "지배 중인 악마 하나당 악마들의 피해를 1% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118358,14 +119149,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_cloth_pvpwarlock_o_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -118383,18 +119178,18 @@
       ],
       "name": "안토란 병기",
       "koreanName": "안토란 병기",
-      "englishName": "",
+      "englishName": "Antoran Armaments",
       "icon": "inv_plate_helmet_eredarargus_d_01",
       "iconName": "inv_plate_helmet_eredarargus_d_01",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "안토란 병기은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 안토란 병기 특성 흑마법사 필요 악마 폭군이 안토러스에서 벼려진 방어구를 착용하여 방어도가 10%만큼 증가합니다. 소환된 동안 악마 폭군은 강력한 근접 공격을 적에게 퍼붓습니다. 불타는 회전베기 시전자 전방 부채꼴 범위 내 모든 적을 베어 (주문력의 96%)의 암흑불길 피해를 입힙니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+      "description": "폭군에게 방어도 10%를 더하고 근접 공격 및 불타는 회전베기를 사용하게 한다. Blizzard 핫픽스에 따라 회전베기는 전방 부채꼴이 아니라 원형 범위를 공격한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118406,14 +119201,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_plate_helmet_eredarargus_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -118677,7 +119476,7 @@
     },
     "1251778": {
       "id": "1251778",
-      "type": "skill",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -118685,18 +119484,18 @@
       ],
       "name": "썩은마귀 소환",
       "koreanName": "썩은마귀 소환",
-      "englishName": "",
+      "englishName": "Summon Vilefiend",
       "icon": "inv_argusfelstalkermount",
       "iconName": "inv_argusfelstalkermount",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마 흑마법사는 악마 소환 수와 악마의 핵 발동을 관리해 굴단의 손, 파열, 악마 폭군 소환의 가치를 높인다. 썩은마귀 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 썩은마귀 소환 특성 흑마법사 필요 공포사냥개 부르기 시전 시 추가로 썩은마귀를 소환하여 15초 동안 전투를 돕게 합니다.",
-      "category": "ability",
+      "description": "공포사냥개 부르기를 사용하면 썩은마귀가 추가로 나와 기본 15초 동안 전투를 돕는 패시브다. 별도의 썩은마귀 사용 버튼은 없다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118708,14 +119507,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_argusfelstalkermount.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/샤투그의-징표",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/프하르그의-징표",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안정된-차원문"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -118773,6 +119578,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Procs\\한마음한뜻으로.md",
+        "lastUpdate": ""
+      }
+    },
+    "1251781": {
+      "id": "1251781",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "썩은마귀 소환",
+      "koreanName": "썩은마귀 소환",
+      "englishName": "Summon Vilefiend",
+      "icon": "inv_argusfelstalkermount",
+      "iconName": "inv_argusfelstalkermount",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "공포사냥개 부르기에 따라 자동으로 실행되는 썩은마귀 소환 효과다. 기본 15초 동안 전투를 돕는다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_argusfelstalkermount.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_argusfelstalkermount.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_argusfelstalkermount.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_argusfelstalkermount.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_argusfelstalkermount.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\썩은마귀-자동소환.md",
         "lastUpdate": ""
       }
     },
@@ -118876,6 +119732,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Talents\\고대수호자의선물.md",
+        "lastUpdate": ""
+      }
+    },
+    "1251989": {
+      "id": "1251989",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "연발 파멸의 화살",
+      "koreanName": "연발 파멸의 화살",
+      "englishName": "Doom Bolt Volley",
+      "icon": "spell_fire_twilightflamebolt",
+      "iconName": "spell_fire_twilightflamebolt",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "파멸수호병이 자동으로 사용하는 공격이며 40미터 내 적 최대 5명에게 암흑 피해를 준다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebolt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_twilightflamebolt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_twilightflamebolt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_twilightflamebolt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebolt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸수호병-소환"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\연발-파멸의-화살.md",
         "lastUpdate": ""
       }
     },
@@ -128383,18 +129289,18 @@
       ],
       "name": "지옥의 무기",
       "koreanName": "지옥의 무기",
-      "englishName": "",
+      "englishName": "Fel Armaments",
       "icon": "inv_misc_desecrated_plategloves",
       "iconName": "inv_misc_desecrated_plategloves",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 무기은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 무기 특성 흑마법사 필요 지옥수호병의 지옥폭풍의 재사용 대기시간이 10초만큼 감소하고, 주 대상이 받는 피해는 10%만큼 감소합니다.",
+      "description": "지옥수호병의 지옥폭풍 재사용 대기시간을 10초 줄이고 주 악마가 받는 피해를 10% 줄인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128406,14 +129312,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_desecrated_plategloves.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/강화된-지옥폭풍"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -128482,18 +129392,18 @@
       ],
       "name": "지옥불의 신속성",
       "koreanName": "지옥불의 신속성",
-      "englishName": "",
+      "englishName": "Infernal Rapidity",
       "icon": "spell_argus_withering_fire",
       "iconName": "spell_argus_withering_fire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥불의 신속성은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥불의 신속성 특성 흑마법사 필요 날뛰는 임프가 지옥의 불화살을 시전할 때 10%의 확률로 다른 지옥의 불화살을 200%의 효율로 즉시 시전합니다.",
+      "description": "날뛰는 임프의 지옥의 불화살 사용 시 10% 확률로 200% 효율의 추가 불화살을 즉시 발사한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128505,14 +129415,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_argus_withering_fire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-폭동"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -132118,18 +133033,18 @@
       ],
       "name": "사악한 눈",
       "koreanName": "사악한 눈",
-      "englishName": "",
+      "englishName": "Diabolic Oculi",
       "icon": "inv_pet_inquisitoreye",
       "iconName": "inv_pet_inquisitoreye",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "사악한 눈은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사악한 눈 특성 흑마법사 필요 사악한 눈을 최대 3개까지 소환합니다. 소환할 때마다 악마의 의식의 지속시간이 시전자의 주문으로 감소합니다. 사악한 눈은 악마술을 소모할 때 폭발하여 대상 10미터 내의 모든 적에게 (주문력의 234.62%)의 화염 피해를 입힙니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+      "description": "주문으로 악마의 의식 시간이 감소할 때 사악한 눈을 최대 3개까지 소환한다. 악마술을 소비하면 눈이 폭발해 대상 주변 10미터에 화염 피해를 주며 8명을 넘으면 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132144,13 +133059,16 @@
         "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/지옥의-기계",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/마음의-눈",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/치명적인-시선"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -132169,18 +133087,18 @@
       ],
       "name": "치명적인 시선",
       "koreanName": "치명적인 시선",
-      "englishName": "",
+      "englishName": "Looks That Kill",
       "icon": "ability_bosskilrogg_deadeye",
       "iconName": "ability_bosskilrogg_deadeye",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "치명적인 시선은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 치명적인 시선 특성 흑마법사 필요 사악한 눈이 활성화된 동안 1초마다 주 악마의 대상에게 악마의 응시를 시전합니다. 악마의 응시 대상에게 파괴적인 혼돈 마법의 광선을 발사해 (주문력의 80%)의 혼돈 피해를 입힙니다. 활성화된 악마의 눈 하나당 공격력이 100%만큼 증가합니다.",
+      "description": "사악한 눈이 활성화돼 있는 동안 매초 주 악마의 대상에게 악마의 응시를 사용한다. 활성 눈 수가 공격력에 영향을 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132192,16 +133110,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bosskilrogg_deadeye.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사악한-눈"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.021,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -132220,18 +133140,18 @@
       ],
       "name": "마음의 눈",
       "koreanName": "마음의 눈",
-      "englishName": "",
+      "englishName": "Mind's Eyes",
       "icon": "spell_holy_healingfocus",
       "iconName": "spell_holy_healingfocus",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "마음의 눈은 Diabolist 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 마음의 눈 특성 흑마법사 필요 사악한 눈이 전장을 관찰하며 정보를 수집합니다. 폭발할 때 정보가 시전자에게 전달되며, 사악한 눈 하나당 10초 동안 지능이 2%만큼 증가합니다.",
+      "description": "사악한 눈이 폭발하면 눈 하나당 10초 동안 지능이 2% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132246,13 +133166,14 @@
         "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사악한-눈"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사악한-눈",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -138220,9 +139141,9 @@
         "lastUpdate": ""
       }
     },
-    "1276190": {
-      "id": "1276190",
-      "type": "talent",
+    "1276163": {
+      "id": "1276163",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -138231,17 +139152,20 @@
       "name": "아르거스의 지배자",
       "koreanName": "아르거스의 지배자",
       "englishName": "Dominion of Argus",
+      "aliases": [
+        "아르거스의 지배자 첫 노드"
+      ],
       "icon": "inv12_apextalent_warlock_dominionofargus",
       "iconName": "inv12_apextalent_warlock_dominionofargus",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "`파멸수호병 소환`과 다중 대상 큰 악마 창을 보조하는 특성 축이다. 12.0.5 변경으로 안토란 간수 계열 피해 방식이 조정되었으므로, 큰 악마/광역 보조 가지로 분리해 설명한다.",
-      "category": "talent",
+      "description": "악마 폭군 소환으로 기본 15초 동안 아르거스의 지배자 구간이 시작된다. 그동안 굴단의 손을 2번 사용할 때마다 아르거스의 악마를 기본 10초 소환하는 첫 노드다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138253,14 +139177,133 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\아르거스의-지배자-1276163.md",
+        "lastUpdate": ""
+      }
+    },
+    "1276166": {
+      "id": "1276166",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "아르거스의 지배자",
+      "koreanName": "아르거스의 지배자",
+      "englishName": "Dominion of Argus",
+      "aliases": [
+        "아르거스의 지배자 버프"
+      ],
+      "icon": "inv12_apextalent_warlock_dominionofargus",
+      "iconName": "inv12_apextalent_warlock_dominionofargus",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "아르거스의 지배자 효과가 진행 중임을 나타내는 버프다. 기본 15초이며 중간 노드 2점을 포함하면 25초다. 이 구간의 굴단의 손 연계가 추가 악마 소환으로 이어진다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_warlock_dominionofargus.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_warlock_dominionofargus.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_warlock_dominionofargus.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\아르거스의-지배자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1276190": {
+      "id": "1276190",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "아르거스의 지배자",
+      "koreanName": "아르거스의 지배자",
+      "englishName": "Dominion of Argus",
+      "aliases": [
+        "아르거스의 지배자 중간 노드"
+      ],
+      "icon": "inv12_apextalent_warlock_dominionofargus",
+      "iconName": "inv12_apextalent_warlock_dominionofargus",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "아르거스의 지배자 중간 노드는 최대 2점이다. 1점당 차원문 지속시간 5초와 굴단의 손 피해 10%를 추가한다. 모두 투자하면 기본 15초 차원문은 25초가 된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_warlock_dominionofargus.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_warlock_dominionofargus.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_warlock_dominionofargus.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -138278,18 +139321,21 @@
       ],
       "name": "아르거스의 지배자",
       "koreanName": "아르거스의 지배자",
-      "englishName": "",
+      "englishName": "Dominion of Argus",
+      "aliases": [
+        "아르거스의 지배자 마지막 노드"
+      ],
       "icon": "inv12_apextalent_warlock_dominionofargus",
       "iconName": "inv12_apextalent_warlock_dominionofargus",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "아르거스의 지배자은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 아르거스의 지배자 특성 흑마법사 필요 아르거스의 지배자가 활성화된 동안 굴단의 손이 영혼의 조각 1개를 반환합니다. 아르거스의 지배자로 소환된 악마의 지속시간이 4초만큼 증가합니다.",
+      "description": "아르거스의 지배자 구간에 굴단의 손 사용 후 조각 1개를 반환하고, 해당 특성으로 소환된 악마의 지속시간을 4초 늘리는 마지막 노드다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138301,14 +139347,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_dominionofargus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -138326,18 +139378,18 @@
       ],
       "name": "지배자의 손",
       "koreanName": "지배자의 손",
-      "englishName": "",
+      "englishName": "Dominant Hand",
       "icon": "warlock_curse_shadow",
       "iconName": "warlock_curse_shadow",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지배자의 손은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지배자의 손 특성 흑마법사 필요 굴단의 손이 주 대상에게 입히는 피해가 20%만큼 증가합니다.",
+      "description": "굴단의 손이 주 대상에게 입히는 피해를 20% 늘린다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138349,14 +139401,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -138366,7 +139422,7 @@
     },
     "1276452": {
       "id": "1276452",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -138378,14 +139434,14 @@
       "icon": "inv_imp3_purple",
       "iconName": "inv_imp3_purple",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "Diabolist 악마 흑마법사의 큰 악마 창에 들어가는 선택 쿨다운이다. `악마 폭군 소환`, `굴단의 손`, `악마의 의식`, `황폐`와 같은 구간에서 읽는다.",
-      "category": "talent",
+      "cooldown": "120초",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "40야드",
+      "description": "조각 1개로 임프 군주를 기본 20초 소환한다. 즉시 시전, 기본 120초 재사용 대기시간이다. 소환 시 자신에게 걸린 해로운 효과 1개를 제거하고 재사용 대기 중에는 마법 태우기로 바뀐다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138397,14 +139453,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_imp3_purple.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-지옥-유린자",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안정된-차원문"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.027,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -138414,7 +139475,7 @@
     },
     "1276467": {
       "id": "1276467",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -138426,14 +139487,14 @@
       "icon": "spell_shadow_summonfelhunter",
       "iconName": "spell_shadow_summonfelhunter",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "큰 악마 창에 들어갈 수 있는 선택 쿨다운이다. 12.0.5에서는 단순 두 번째 차단처럼 설명하지 않고, 이로운 마법 효과 제거와 큰 악마 창의 유틸리티로 분리해 본다.",
-      "category": "talent",
+      "cooldown": "120초",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "40야드",
+      "description": "조각 1개로 지옥 유린자를 기본 20초 소환한다. 즉시 시전, 기본 120초 재사용 대기시간이다. 소환 시 적의 이로운 마법 효과 1개를 제거하며 재사용 대기 중에는 마법 삼키기로 바뀐다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138445,14 +139506,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_summonfelhunter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/도끼-던지기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-임프-군주",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안정된-차원문"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -138558,9 +139624,62 @@
         "lastUpdate": ""
       }
     },
+    "1276661": {
+      "id": "1276661",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "안정된 차원문",
+      "koreanName": "안정된 차원문",
+      "englishName": "Stabilized Portals",
+      "icon": "ability_demonhunter_netherbond",
+      "iconName": "ability_demonhunter_netherbond",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "썩은마귀, 임프 군주, 지옥 유린자의 지속시간을 3초 늘린다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_netherbond.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_netherbond.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_netherbond.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_netherbond.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_netherbond.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-임프-군주",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-지옥-유린자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\안정된-차원문.md",
+        "lastUpdate": ""
+      }
+    },
     "1276672": {
       "id": "1276672",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -138572,14 +139691,14 @@
       "icon": "warlock_summon_doomguard",
       "iconName": "warlock_summon_doomguard",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "다중 대상에서 강한 큰 악마 쿨다운이다. 대상 수와 대상 제한을 함께 보며, `악마 폭군 소환`과 같은 큰 구간에 들어갈 수 있지만 항상 단일 우선순위의 첫 질문은 아니다.",
+      "cooldown": "120초",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "40야드",
+      "description": "조각 1개를 써서 12초 동안 파멸수호병을 부르는 즉시 시전이다. 기본 재사용 대기시간은 120초이며 악마의 핵을 소비할 때 3초씩 줄어든다. 소환수의 연발 파멸의 화살은 주변 40미터의 적 최대 5명을 공격한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138591,14 +139710,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_summon_doomguard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -138723,18 +139845,18 @@
       ],
       "name": "폭군의 봉헌",
       "koreanName": "폭군의 봉헌",
-      "englishName": "",
+      "englishName": "Tyrant's Oblation",
       "icon": "spell_warlock_demonwrath",
       "iconName": "spell_warlock_demonwrath",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "폭군의 봉헌은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 폭군의 봉헌 특성 흑마법사 필요 악마 폭군이 활성화된 동안 추가로 시전자를 강화하여 가속을 8%만큼 증가시킵니다.",
+      "description": "악마 폭군이 살아 있는 동안 플레이어 가속을 8% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138746,14 +139868,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_demonwrath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -138763,7 +139888,7 @@
     },
     "1276748": {
       "id": "1276748",
-      "type": "talent",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
@@ -138776,13 +139901,13 @@
       "iconName": "ability_warlock_demonicpower",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "`악마 폭군 소환` 창의 해석에 직접 붙는 폭군 강화 특성이다. 공포사냥개와 야생 임프, 폭군 중 굴단의 손 압축을 중심 허브에 묶는다.",
-      "category": "talent",
+      "description": "악마 폭군 지속시간을 5초 늘리고, 폭군을 소환할 때 살아 있는 공포사냥개의 남은 시간을 15초 늘린다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138794,18 +139919,77 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_demonicpower.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\군림하는-폭군.md",
+        "lastUpdate": ""
+      }
+    },
+    "1276767": {
+      "id": "1276767",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "폭군의 봉헌",
+      "koreanName": "폭군의 봉헌",
+      "englishName": "Tyrant's Oblation",
+      "aliases": [
+        "폭군의 봉헌 버프"
+      ],
+      "icon": "spell_warlock_demonwrath",
+      "iconName": "spell_warlock_demonwrath",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "폭군의 봉헌 특성으로 폭군이 활성화된 동안 플레이어에게 가속 8%를 주는 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_demonwrath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_warlock_demonwrath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_warlock_demonwrath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_warlock_demonwrath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_demonwrath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/폭군의-봉헌"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\폭군의-봉헌.md",
         "lastUpdate": ""
       }
     },
@@ -138955,6 +140139,57 @@
         "lastUpdate": ""
       }
     },
+    "1276947": {
+      "id": "1276947",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "악마의 부름",
+      "koreanName": "악마의 부름",
+      "englishName": "Demonic Calling",
+      "icon": "inv_felstalker_pet",
+      "iconName": "inv_felstalker_pet",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "공포사냥개 부르기의 비용과 시전을 줄이는 최대 2점 특성이다. 1점은 조각 1개와 시전 시간 50%, 2점은 조각 2개와 시전 시간 100%를 줄인다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_felstalker_pet.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_felstalker_pet.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_felstalker_pet.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_felstalker_pet.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_felstalker_pet.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\악마의-부름.md",
+        "lastUpdate": ""
+      }
+    },
     "1276956": {
       "id": "1276956",
       "type": "spec-talent",
@@ -138965,18 +140200,18 @@
       ],
       "name": "파멸의 아귀",
       "koreanName": "파멸의 아귀",
-      "englishName": "",
+      "englishName": "Blighted Maw",
       "icon": "ability_creature_poison_01",
       "iconName": "ability_creature_poison_01",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파멸의 아귀은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파멸의 아귀 특성 흑마법사 필요 공포사냥개의 송곳니에서 부식성 담즙이 분비되어 공포이빨이 입힌 피해의 50%에 해당하는 추가 역병 피해를 입힙니다.",
+      "description": "공포사냥개의 공포이빨이 입힌 피해의 50%에 해당하는 추가 역병 피해를 준다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138988,14 +140223,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_poison_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/공포채찍",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/육식-추적자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -140121,18 +141361,18 @@
       ],
       "name": "강화된 지옥폭풍",
       "koreanName": "강화된 지옥폭풍",
-      "englishName": "",
+      "englishName": "Empowered Felstorm",
       "icon": "inv_axe_2h_demonweapon_c_01",
       "iconName": "inv_axe_2h_demonweapon_c_01",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "강화된 지옥폭풍은 악마 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 강화된 지옥폭풍 특성 흑마법사 필요 지옥수호병의 지옥폭풍의 공격력이 20%만큼, 지속시간은 4.0초만큼 증가합니다.",
+      "description": "지옥수호병의 지옥폭풍 피해를 20% 높이고 지속시간을 4초 늘린다. 플레이어가 직접 새로운 주문을 얻는 특성이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140144,14 +141384,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_2h_demonweapon_c_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-무기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -140763,6 +142007,165 @@
         "lastUpdate": ""
       }
     },
+    "1281511": {
+      "id": "1281511",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "지옥으로부터의 귀환",
+      "koreanName": "지옥으로부터의 귀환",
+      "englishName": "To Hell and Back",
+      "icon": "ability_warlock_impoweredimp",
+      "iconName": "ability_warlock_impoweredimp",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "마력 착취 또는 파열로 희생한 날뛰는 임프 2마리마다 임프 두목 1마리를 소환한다. 이렇게 나온 임프는 혼란스러운 영혼으로 피해가 50% 늘고 불화살이 추가 4명에게 튕긴다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_impoweredimp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_impoweredimp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_impoweredimp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_impoweredimp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_impoweredimp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\지옥으로부터의-귀환.md",
+        "lastUpdate": ""
+      }
+    },
+    "1281512": {
+      "id": "1281512",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "혼란스러운 영혼",
+      "koreanName": "혼란스러운 영혼",
+      "englishName": "Unstable Soul",
+      "icon": "ability_warlock_impoweredimp",
+      "iconName": "ability_warlock_impoweredimp",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "지옥으로부터의 귀환으로 나온 임프에 적용되는 강화다. 피해가 50% 늘고 지옥의 불화살이 원래 대상 외에 4명에게 연쇄 적중한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_impoweredimp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_impoweredimp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_impoweredimp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_impoweredimp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_impoweredimp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\혼란스러운-영혼.md",
+        "lastUpdate": ""
+      }
+    },
+    "1281559": {
+      "id": "1281559",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "지옥의 사령관",
+      "koreanName": "지옥의 사령관",
+      "englishName": "Hellbent Commander",
+      "aliases": [
+        "지옥의 사령관 버프"
+      ],
+      "icon": "inv_helm_cloth_pvpwarlock_o_01",
+      "iconName": "inv_helm_cloth_pvpwarlock_o_01",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "살아 있는 악마 수에 따라 악마들의 공격력을 악마 하나당 1% 높이는 지옥의 사령관 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_cloth_pvpwarlock_o_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helm_cloth_pvpwarlock_o_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_helm_cloth_pvpwarlock_o_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_helm_cloth_pvpwarlock_o_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_cloth_pvpwarlock_o_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-사령관"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Buffs\\지옥의-사령관.md",
+        "lastUpdate": ""
+      }
+    },
     "1281638": {
       "id": "1281638",
       "type": "talent",
@@ -141189,6 +142592,115 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296573": {
+      "id": "1296573",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "Warlock Demonology 12.1 Class Set 2pc",
+      "koreanName": "Warlock Demonology 12.1 Class Set 2pc",
+      "englishName": "Warlock Demonology 12.1 Class Set 2pc",
+      "aliases": [
+        "시즌 2 악마 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 악마 2세트는 날뛰는 임프의 피해를 10%, 파열의 피해를 20% 높인다. 별도 사용 주문이 없는 장비 효과다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\시즌-2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296574": {
+      "id": "1296574",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "Warlock Demonology 12.1 Class Set 4pc",
+      "koreanName": "Warlock Demonology 12.1 Class Set 4pc",
+      "englishName": "Warlock Demonology 12.1 Class Set 4pc",
+      "aliases": [
+        "시즌 2 악마 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 악마 4세트는 날뛰는 임프의 마력이 소진될 때 20% 확률로 자동 파열을 일으킨다. 주 대상 효율은 350%, 다른 대상은 315%다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\시즌-2-4세트.md",
         "lastUpdate": ""
       }
     },
@@ -144167,6 +145679,112 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Buffs\\불안정한-강화.md",
+        "lastUpdate": ""
+      }
+    },
+    "1306077": {
+      "id": "1306077",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "고립된 파열",
+      "koreanName": "고립된 파열",
+      "englishName": "Isolated Implosion",
+      "aliases": [
+        "고립된 파열 광역"
+      ],
+      "icon": "spell_shadow_shadowandflame",
+      "iconName": "spell_shadow_shadowandflame",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 4세트가 자동 발동시키는 고립된 파열의 광역 효과다. 임프 마력 소진 시 20% 발동, 주 대상 350%와 다른 대상 315% 효율을 설명하는 장비 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadowandflame.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadowandflame.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowandflame.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\고립된-파열-광역.md",
+        "lastUpdate": ""
+      }
+    },
+    "1309535": {
+      "id": "1309535",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "name": "고립된 파열",
+      "koreanName": "고립된 파열",
+      "englishName": "Isolated Implosion",
+      "aliases": [
+        "고립된 파열 주 대상"
+      ],
+      "icon": "spell_shadow_shadowandflame",
+      "iconName": "spell_shadow_shadowandflame",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 4세트가 사용하는 고립된 파열의 주 대상 효과 ID다. 실제 발동 조건과 효율은 1296574의 장비 효과를 따른다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadowandflame.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadowandflame.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowandflame.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Procs\\고립된-파열-주대상.md",
         "lastUpdate": ""
       }
     },

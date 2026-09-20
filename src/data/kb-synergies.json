@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T16:59:36.358Z",
+    "generatedAt": "2026-09-20T17:53:51.273Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 516,
-    "rawTotalSynergies": 516,
+    "totalSynergies": 524,
+    "rawTotalSynergies": 524,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -233,15 +233,11 @@
       "fire_nature_bridge": 1,
       "hero_talent_stormbringer_alternative": 1,
       "flame_shock_lava_burst_core": 1,
-      "manual-curated": 21,
+      "manual-curated": 33,
       "party-utility": 1,
       "pet-utility": 1,
       "resource-utility": 1,
       "control-utility": 1,
-      "proc-generator": 1,
-      "imp-army": 1,
-      "doom-vilefiend": 1,
-      "major-summon-window": 1,
       "colossus_demolish_router": 1,
       "mountain_thane_thunder_router": 1,
       "slayer_execute_router": 1,
@@ -291,7 +287,7 @@
       "Priest": 40,
       "Rogue": 36,
       "Shaman": 34,
-      "Warlock": 40,
+      "Warlock": 48,
       "Warrior": 38
     }
   },
@@ -16850,21 +16846,29 @@
     "SY-WARLOCK-HERO-DIABOLIST-RITUAL-RUINATION": {
       "id": "SY-WARLOCK-HERO-DIABOLIST-RITUAL-RUINATION",
       "name": "영웅특성-Diabolist-악마의의식-황폐",
+      "description": "조각 소비가 의식을 줄이고 다음 악마술 소비가 큰 악마를 소환한다. 혼돈의 어머니와 지옥의 군주는 각각 실제 지옥불 화살과 황폐를 준비한다.",
       "type": "synergy",
       "synergyType": "hero-talent-package",
       "participants": [
         "428514",
+        "428518",
+        "434506",
         "428522",
-        "1268709",
-        "1268713",
-        "1268716"
+        "434635"
       ],
       "class": "Warlock",
       "spec": "Common",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "heroTalent": "Diabolist",
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -17157,22 +17161,30 @@
     },
     "warlock-demonology-dreadstalkers-core-bolt": {
       "id": "warlock-demonology-dreadstalkers-core-bolt",
-      "name": "공포사냥개 부르기-악마의 핵-악마 화살",
+      "name": "공포사냥개 만료에서 조각 생성까지",
+      "description": "공포사냥개가 사라지면 악마의 핵을 얻고, 핵을 악마 화살로 써 조각 2개를 만든 뒤 굴단의 손으로 소비한다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "공포사냥개 부르기",
-        "악마의 핵",
-        "악마 화살",
-        "굴단의 손",
-        "악마 폭군 소환"
+        "104316",
+        "264173",
+        "264178",
+        "105174"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
       "importance": 9,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -17182,74 +17194,241 @@
     },
     "warlock-demonology-hand-imps-implosion": {
       "id": "warlock-demonology-hand-imps-implosion",
-      "name": "굴단의 손-임프 폭동-파열",
+      "name": "굴단의 손으로 만든 임프의 교환",
+      "description": "굴단의 손은 임프 3마리를 만들고 파열은 최대 6마리를 소비한다. 지옥으로부터의 귀환은 희생한 임프 2마리마다 강화 임프 두목 1마리를 돌려준다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "굴단의 손",
-        "임프 폭동",
-        "파열",
-        "악마 폭군 소환",
-        "황폐"
+        "105174",
+        "196277",
+        "1281511",
+        "1281512",
+        "1250768"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
-      "importance": 9,
-      "patch": "12.0.5",
-      "linkedSkills": [],
-      "linkedBuffs": [],
-      "linkedTalents": [],
+      "importance": 10,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Buffs/혼란스러운-영혼"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-두목"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\굴단의-손-임프-폭동-파열.md",
         "lastUpdate": ""
       }
     },
-    "warlock-demonology-tyrant-center": {
-      "id": "warlock-demonology-tyrant-center",
-      "name": "악마 폭군 소환-군림하는 폭군-심연의 지배",
+    "warlock-demonology-굴단의-손-핵-생성": {
+      "id": "warlock-demonology-굴단의-손-핵-생성",
+      "name": "굴단의 손이 만드는 다음 핵",
+      "description": "악마의 지식은 굴단의 손에서 핵을 추가로 만들고, 핵을 쓴 악마 화살은 원한의 복원으로 임프를 더 만들 수 있다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "악마 폭군 소환",
-        "군림하는 폭군",
-        "심연의 지배",
-        "공포사냥개 부르기",
-        "굴단의 손",
-        "흑마법서: 임프 군주",
-        "흑마법서: 지옥 유린자",
-        "파멸수호병 소환"
+        "105174",
+        "386185",
+        "264173",
+        "264178",
+        "428394"
       ],
       "class": "Warlock",
       "spec": "Demonology",
-      "heroTalent": "Diabolist",
-      "importance": 10,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+      ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-지식",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/원한의-복원"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\굴단의-손-핵-생성.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-마력-착취-핵-상한": {
+      "id": "warlock-demonology-마력-착취-핵-상한",
+      "name": "마력 착취와 핵 중첩 손실 방지",
+      "description": "마력 착취는 최대 임프 2마리를 희생해 핵 2회와 화살 피해 강화를 준비한다. 지옥으로부터의 귀환이 있으면 희생한 임프가 강화 임프로 돌아온다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "264130",
+        "334581",
+        "264173",
+        "264178",
+        "1281511"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Buffs/마력-착취"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥으로부터의-귀환"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\마력-착취-핵-상한.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-썩은마귀-자동소환-선택": {
+      "id": "warlock-demonology-썩은마귀-자동소환-선택",
+      "name": "공포사냥개에 붙는 자동 소환",
+      "description": "썩은마귀는 공포사냥개 부르기에 자동으로 붙는다. 샤투그와 프하르그는 각각 단일 근접 추가 피해와 주변 화염 피해를 주는 소환수로 바꾼다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "104316",
+        "1251778",
+        "455449",
+        "455450",
+        "1276661"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/샤투그의-징표",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/프하르그의-징표",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안정된-차원문"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\썩은마귀-자동소환-선택.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-tyrant-center": {
+      "id": "warlock-demonology-tyrant-center",
+      "name": "폭군과 공포사냥개의 수명 맞추기",
+      "description": "폭군의 피해는 활성 임프와 공포사냥개 수에 영향을 받는다. 군림하는 폭군은 폭군을 5초 늘리고 살아 있는 공포사냥개를 15초 연장한다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "265187",
+        "104316",
+        "1276748",
+        "105174"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 10,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마-폭군-소환-군림하는-폭군-심연의-지배.md",
         "lastUpdate": ""
       }
     },
-    "warlock-demonology-soul-harvester-core": {
-      "id": "warlock-demonology-soul-harvester-core",
-      "name": "악마의 영혼-악마의 핵-사악한 수확",
+    "warlock-demonology-악마술-사악한눈-폭발": {
+      "id": "warlock-demonology-악마술-사악한눈-폭발",
+      "name": "악마술 소비와 눈의 폭발",
+      "description": "의식 진행 중 생긴 눈은 자동으로 응시를 사용하고 악마술 소비 때 폭발한다. 마음의 눈은 폭발 후 지능을 주며 대군주의 베어낸 영혼은 맞은 적에게 받는 피해 증가를 남긴다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "악마의 영혼",
-        "악마의 핵",
-        "악마 화살",
-        "사악한 수확"
+        "428514",
+        "105174",
+        "1268709",
+        "1268713",
+        "1268716",
+        "428517"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": "Diabolist",
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마술-사악한눈-폭발.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-soul-harvester-core": {
+      "id": "warlock-demonology-soul-harvester-core",
+      "name": "영혼 수확자의 폭군과 조각 반환",
+      "description": "죽음의 그림자는 폭군 소환 때 탐스러운 영혼이 포함된 조각 3개를 준다. 이를 굴단의 손으로 소비하면서 악마의 영혼을 방출한다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "265187",
+        "449638",
+        "449614",
+        "449793",
+        "105174"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": "Soul Harvester",
-      "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -17259,23 +17438,31 @@
     },
     "warlock-demonology-diabolist-hand-ruination": {
       "id": "warlock-demonology-diabolist-hand-ruination",
-      "name": "악마의 의식-굴단의 손-황폐",
+      "name": "악마술을 실제 주문으로 소비하기",
+      "description": "굴단의 손의 조각 소비는 의식을 줄이고, 의식이 끝나면 다음 소비로 큰 악마를 부른다. 혼돈의 어머니는 지옥불 화살, 지옥의 군주는 황폐를 준비한다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "악마의 의식",
-        "굴단의 손",
-        "황폐",
-        "지옥의 기계",
-        "케르잔의 잔혹성",
-        "악마 폭군 소환"
+        "105174",
+        "428514",
+        "428518",
+        "434506",
+        "428522",
+        "434635"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": "Diabolist",
       "importance": 9,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -17285,35 +17472,34 @@
     },
     "SY-WARLOCK-DEMONOLOGY-DREADSTALKERS-DEMONIC-TACTICS": {
       "id": "SY-WARLOCK-DEMONOLOGY-DREADSTALKERS-DEMONIC-TACTICS",
-      "name": "악마전문화-공포사냥개-악마의전술",
+      "name": "공포이빨을 강화하는 세 특성",
+      "description": "공포채찍이 공포이빨을 광역으로 바꾸고, 육식 추적자가 공격 중 추가 공포이빨을 만들며, 파멸의 아귀가 그 피해에 역병 피해를 더한다.",
       "type": "synergy",
-      "synergyType": "proc-generator",
+      "synergyType": "manual-curated",
       "participants": [
         "104316",
-        "264173",
-        "264178",
-        "386194"
+        "264078",
+        "386194",
+        "1276956",
+        "453699"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/공포사냥개-부르기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/육식-추적자",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/공포채찍",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-전술-연마",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-잔혹성",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/불길접촉",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/희생된-영혼",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/원한의-복원"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/육식-추적자",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/파멸의-아귀",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/불길접촉"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마전문화-공포사냥개-악마의전술.md",
@@ -17322,38 +17508,35 @@
     },
     "SY-WARLOCK-DEMONOLOGY-IMP-LEGION-FELSTORM": {
       "id": "SY-WARLOCK-DEMONOLOGY-IMP-LEGION-FELSTORM",
-      "name": "악마전문화-임프군단-지옥폭풍",
+      "name": "지옥수호병의 광역 공격과 행동 시간",
+      "description": "지옥의 무기는 지옥폭풍 쿨을 10초 줄이고 강화된 지옥폭풍은 피해와 지속시간을 늘린다. 지옥폭풍 중 지옥수호병은 다른 행동을 못 한다.",
       "type": "synergy",
-      "synergyType": "imp-army",
+      "synergyType": "manual-curated",
       "participants": [
-        "105174",
-        "416230",
-        "196277",
-        "1250768"
+        "30146",
+        "89751",
+        "1263935",
+        "1279575",
+        "119914"
       ],
       "class": "Warlock",
       "spec": "Demonology",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파열",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환"
+      "specs": [
+        "Demonology"
       ],
-      "linkedBuffs": [],
+      "heroTalent": null,
+      "importance": 7,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/지옥수호병-소환",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/도끼-던지기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Procs/지옥폭풍"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-폭동",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-두목",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/흑마법서-임프-군주",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/강화된-지옥폭풍",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-제물",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/내면의-악마",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-사령관",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-무기",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥불의-신속성",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-지능",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/익숙한-의식"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/강화된-지옥폭풍"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마전문화-임프군단-지옥폭풍.md",
@@ -17362,36 +17545,35 @@
     },
     "SY-WARLOCK-DEMONOLOGY-DOOM-VILEFIEND-MAW": {
       "id": "SY-WARLOCK-DEMONOLOGY-DOOM-VILEFIEND-MAW",
-      "name": "악마전문화-파멸-썩은마귀-파멸의아귀",
+      "name": "파멸 적용과 폭발을 앞당기는 주문",
+      "description": "핵을 소비한 악마 화살이 파멸을 적용하고, 굴단의 손은 이미 적용된 파멸의 남은 시간을 3초 줄인다.",
       "type": "synergy",
-      "synergyType": "doom-vilefiend",
+      "synergyType": "manual-curated",
       "participants": [
+        "264178",
+        "264173",
         "460551",
-        "1251778",
-        "1276956",
-        "264130"
+        "460553",
+        "105174"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 8,
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/썩은마귀-소환",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/마력-착취"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/파멸의-아귀",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/암흑의-룬",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-지능",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/익숙한-의식",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/악마의-제물",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/강화된-지옥폭풍",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/내면의-악마",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥의-사령관"
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Buffs/파멸"
       ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마전문화-파멸-썩은마귀-파멸의아귀.md",
         "lastUpdate": ""
@@ -17399,64 +17581,215 @@
     },
     "SY-WARLOCK-DEMONOLOGY-TYRANT-ARGUS-DOOMGUARD": {
       "id": "SY-WARLOCK-DEMONOLOGY-TYRANT-ARGUS-DOOMGUARD",
-      "name": "악마전문화-폭군-아르거스-파멸수호병",
+      "name": "폭군 이후 아르거스의 지배자 연계",
+      "description": "폭군으로 시작한 차원문에서 굴단의 손 2회마다 악마가 나온다. 중간 2점으로 구간은 25초, 마지막 노드로 소환수는 14초가 되며 굴단의 손은 사용 후 조각 1개를 반환한다.",
       "type": "synergy",
-      "synergyType": "major-summon-window",
+      "synergyType": "manual-curated",
       "participants": [
         "265187",
-        "1276672",
+        "1276163",
+        "1276190",
         "1276222",
-        "1276748"
+        "1276166",
+        "105174",
+        "434635"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 10,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸수호병-소환",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Buffs/아르거스의-지배자"
+      ],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276163",
         "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/군림하는-폭군",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/폭군의-봉헌",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지배자의-손",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안토란-병기",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/샤투그의-징표",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/프하르그의-징표",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/내면의-악마",
-        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/희생된-영혼"
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\악마전문화-폭군-아르거스-파멸수호병.md",
         "lastUpdate": ""
       }
     },
-    "warlock-demonology-doomguard-dominion": {
-      "id": "warlock-demonology-doomguard-dominion",
-      "name": "파멸수호병 소환-아르거스의 지배자",
+    "warlock-demonology-임프-시즌2-자동파열": {
+      "id": "warlock-demonology-임프-시즌2-자동파열",
+      "name": "임프 강화와 시즌 2 자동 폭발",
+      "description": "임프의 불화살은 임프 폭동과 지옥불의 신속성으로 강화된다. 시즌 2는 임프 및 파열 피해를 늘리고 마력 소진 시 자동 폭발을 추가한다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "파멸수호병 소환",
-        "아르거스의 지배자",
-        "안토란 병기",
-        "악마 폭군 소환"
+        "105174",
+        "416230",
+        "1263941",
+        "1296573",
+        "1296574",
+        "1306077"
       ],
       "class": "Warlock",
       "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
       "heroTalent": null,
-      "importance": 7,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Procs/고립된-파열-광역"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/임프-폭동",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/지옥불의-신속성",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-2세트",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/시즌-2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\임프-시즌2-자동파열.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-지옥불-화살-조각-여유": {
+      "id": "warlock-demonology-지옥불-화살-조각-여유",
+      "name": "지옥불 화살의 3조각 받기",
+      "description": "악마학자의 지옥불 화살은 조각 3개를 생성한다. 현재 조각이 3개 이상이면 굴단의 손 등으로 먼저 공간을 만든다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "428518",
+        "434506",
+        "105174"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": "Diabolist",
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\지옥불-화살-조각-여유.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-doomguard-dominion": {
+      "id": "warlock-demonology-doomguard-dominion",
+      "name": "핵 소비가 앞당기는 파멸수호병",
+      "description": "악마의 핵을 소비할 때 파멸수호병 소환 쿨이 3초 줄어든다. 소환수는 최대 5명을 공격하는 연발 파멸의 화살을 자동 시전한다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "264173",
+        "264178",
+        "1276672",
+        "1251989"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마의-핵",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/파멸수호병-소환"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Procs/연발-파멸의-화살"
+      ],
+      "linkedTalents": [],
+      "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\파멸수호병-소환-아르거스의-지배자.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-폭군-가속-근접-이동": {
+      "id": "warlock-demonology-폭군-가속-근접-이동",
+      "name": "폭군 특성에 따른 시전과 위치",
+      "description": "폭군의 봉헌은 폭군 중 가속 8%, 소환의 대가는 폭군 시전 시간 감소를 제공한다. 안토란 병기를 고르면 폭군이 근접 공격을 한다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "265187",
+        "1276746",
+        "1276767",
+        "1250921",
+        "1240189"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": null,
+      "importance": 8,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Buffs/폭군의-봉헌"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/폭군의-봉헌",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/안토란-병기",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/소환의-대가"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\폭군-가속-근접-이동.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-demonology-폭군-악마학자-의식가속": {
+      "id": "warlock-demonology-폭군-악마학자-의식가속",
+      "name": "폭군 중 빨라지는 악마의 의식",
+      "description": "케르잔의 잔혹성이 폭군과 의식 시작을 연결하고 지옥의 기계가 폭군 중 의식을 추가로 단축한다. 심연의 지배는 같은 구간의 악마 피해를 강화한다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "265187",
+        "105174",
+        "428514",
+        "429581",
+        "429917",
+        "429902"
+      ],
+      "class": "Warlock",
+      "spec": "Demonology",
+      "specs": [
+        "Demonology"
+      ],
+      "heroTalent": "Diabolist",
+      "importance": 9,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Synergies\\폭군-악마학자-의식가속.md",
         "lastUpdate": ""
       }
     },

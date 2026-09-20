@@ -215,7 +215,7 @@ export const guideSpecsByRole = {
     }),
     spec('warlock-demonology', 'warlock', '악마', 'Demonology', 'ranged', '/guide/warlock/demonology', {
       kbSpecAliases: ['악마'],
-      focus: '소환수 누적과 악마 폭군 구간을 하나의 빌드업으로 묶습니다.',
+      focus: '영웅 특성별 조각 준비와 폭군 이후 굴단의 손 연계를 익힙니다.',
     }),
     spec('warlock-destruction', 'warlock', '파괴', 'Destruction', 'ranged', '/guide/warlock/destruction', {
       kbSpecAliases: ['파괴'],
