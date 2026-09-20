@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T20:01:30.141Z",
+    "generatedAt": "2026-09-20T21:00:06.143Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 547,
-    "rawTotalSynergies": 547,
+    "totalSynergies": 553,
+    "rawTotalSynergies": 553,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -61,7 +61,7 @@
       "apex-cooldown": 1,
       "hero-aoe": 1,
       "charge-recovery": 1,
-      "burst-window": 2,
+      "burst-window": 1,
       "hero-followup": 1,
       "resource-generation": 1,
       "resource-loop": 1,
@@ -110,22 +110,7 @@
       "monk_windwalker_tier_consumer": 1,
       "monk_windwalker_rushing_wind": 1,
       "herald-of-the-sun-shared": 1,
-      "templar_burst": 1,
-      "spender-selection": 1,
-      "execution-sentence-burst": 1,
-      "cooldown_scaling": 1,
-      "baseline-builder-flow": 1,
-      "aoe-ground-support": 1,
-      "judgment-spender-targeting": 1,
-      "holy-power-engine": 1,
-      "proc-generator-management": 1,
-      "burst-window-amplifier": 1,
-      "defensive-return-damage": 1,
-      "aoe-ground-flame-storm": 1,
-      "judgment-priority-targeting": 1,
-      "blade-generator-proc-cluster": 1,
-      "execute-generator-window": 1,
-      "herald_damage": 1,
+      "conditional-mechanic": 23,
       "archon_halo_power_window_router": 1,
       "voidweaver_damage_window_router": 1,
       "shared_personal_survival": 2,
@@ -272,7 +257,7 @@
       "Hunter": 50,
       "Mage": 47,
       "Monk": 42,
-      "Paladin": 39,
+      "Paladin": 45,
       "성기사": 10,
       "Priest": 40,
       "Rogue": 36,
@@ -10886,19 +10871,24 @@
     "paladin_retribution_templar_hammer_of_light": {
       "id": "paladin_retribution_templar_hammer_of_light",
       "name": "기사단-빛의망치",
+      "description": "파멸의 재가 빛의 망치를 20초 동안 열고, 현재 비용 3개로 시전하면 격동하는 천상의 자동 망치가 시작된다. 보호의 천상의 종 해금 조건을 징벌에 적용하지 않는다.",
       "type": "synergy",
-      "synergyType": "templar_burst",
-      "participants": [],
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "255937",
+        "427453",
+        "431533"
+      ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -10907,97 +10897,188 @@
         "lastUpdate": ""
       }
     },
-    "paladin_retribution_spender_selection": {
-      "id": "paladin_retribution_spender_selection",
-      "name": "기사단의선고-천상의폭풍",
+    "paladin_retribution_기사단-생성기-천상연장": {
+      "id": "paladin_retribution_기사단-생성기-천상연장",
+      "name": "기사단-생성기-천상연장",
+      "description": "격동하는 천상 중 징벌의 심판의 칼날과 천벌의 망치는 지속시간을 1초 연장한다. 일반 심판은 해당하지 않는다. 연장을 위해 자원을 계속 넘기기보다 필요한 소비와 생성기를 이어 간다.",
       "type": "synergy",
-      "synergyType": "spender-selection",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "85256",
-        "383328",
-        "53385"
+        "431687",
+        "431533",
+        "184575",
+        "24275"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\기사단-생성기-천상연장.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_spender_selection": {
+      "id": "paladin_retribution_spender_selection",
+      "name": "기사단의선고-천상의폭풍",
+      "description": "최후의 선고는 기사단의 선고를 대체하는 실제 단일 버튼이다. 기본 2대상 이상에서는 천상의 폭풍을 사용하되 현재 시즌 2 교차 소비와 최고천의 유산 예외를 함께 확인한다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "383328",
+        "53385",
+        "85256"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\기사단의선고-천상의폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_빛을향하여-망치-자동검": {
+      "id": "paladin_retribution_빛을향하여-망치-자동검",
+      "name": "빛을향하여-망치-자동검",
+      "description": "태양의 사자의 천벌의 망치가 날개 중 심판의 칼날을 100% 효율로 자동 시전한다. 신성한 검의 추가 자원과 전쟁의 기술 강화 회수도 함께 보며 수동 검 횟수만 비교하지 않는다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "1263782",
+        "24275",
+        "184575",
+        "383342"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\기사단의선고-천상의폭풍.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\빛을향하여-망치-자동검.md",
         "lastUpdate": ""
       }
     },
     "paladin_retribution_execution_sentence_wings_burst": {
       "id": "paladin_retribution_execution_sentence_wings_burst",
       "name": "사형선고-응징의격노-극딜창",
+      "description": "날개 안 사형 선고가 처음 적중한 주위 10야드 적에게 입힌 신성 피해를 10초 동안 누적한다. 처음 맞은 여러 적의 광역 피해도 주 대상 결산에 포함되므로 표식 후 광역을 중단하지 않는다.",
       "type": "synergy",
-      "synergyType": "execution-sentence-burst",
+      "synergyType": "conditional-mechanic",
       "participants": [
         "343527",
         "31884",
-        "255937",
-        "85256",
-        "383328",
-        "427453",
-        "431398"
+        "255937"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/찬란한영광",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\사형선고-응징의격노-극딜창.md",
         "lastUpdate": ""
       }
     },
-    "성전_응징의격노": {
-      "id": "성전_응징의격노",
-      "name": "성전-응징의격노",
+    "paladin_retribution_새벽빛-연장-광선": {
+      "id": "paladin_retribution_새벽빛-연장-광선",
+      "name": "새벽빛-연장-광선",
+      "description": "무한한 광채는 새벽빛 대상에 소비기를 맞혀 시간을 늘리고 두 새벽빛에 폭풍을 함께 맞히면 추가 연장을 준다. 태양의 화신은 자신과 대상 사이 선 통과가 필요하므로 유지시간과 실제 광선 적중을 따로 본다.",
       "type": "synergy",
-      "synergyType": "cooldown_scaling",
-      "participants": [],
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "431377",
+        "1263787",
+        "431425",
+        "53385",
+        "383328"
+      ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\새벽빛-연장-광선.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_성전-응징의격노": {
+      "id": "paladin_retribution_성전-응징의격노",
+      "name": "성전-응징의격노",
+      "description": "성전은 날개의 별도 버튼이 아니라 신성한 힘 소비로 가속을 올리는 특성이다. 현재 2%에서 시작해 소비량당 2%, 최대 20%이며 중첩을 위해 큰 쿨기 사용을 과도하게 늦추지 않는다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "1253598",
+        "31884",
+        "383328",
+        "53385"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -11011,69 +11092,130 @@
     "paladin_retribution_crusader_strike_builder": {
       "id": "paladin_retribution_crusader_strike_builder",
       "name": "성전사의일격-기본생성기",
+      "description": "성전의 강타 선택 시 수동 성전사의 일격은 자동 공격으로 대체된다. 근접 공격이 끊기면 자원과 전쟁의 기술 기회가 함께 줄며, 긴 사정거리 소비기가 닿는다고 자동 공격도 적중하는 것은 아니다.",
       "type": "synergy",
-      "synergyType": "baseline-builder-flow",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "35395",
-        "184575",
-        "20271",
-        "85256",
-        "53385"
+        "404542",
+        "406064",
+        "184575"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전사의심장",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신속한정의",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판의칼날연마",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\성전사의일격-기본생성기.md",
         "lastUpdate": ""
       }
     },
-    "paladin_retribution_consecration_aoe_support": {
-      "id": "paladin_retribution_consecration_aoe_support",
-      "name": "신성화-광역-보강",
+    "paladin_retribution_시즌2-광역-교차소비": {
+      "id": "paladin_retribution_시즌2-광역-교차소비",
+      "name": "시즌2-광역-교차소비",
+      "description": "무료 천상의 폭풍에서 만든 심판관은 최후의 선고 또는 현재 사용 가능한 빛의 망치로 회수한다. 광역에서도 생기는 단일 소비 조건이며 준비 효과 자체가 다음 공격을 무료로 만드는 것은 아니다.",
       "type": "synergy",
-      "synergyType": "aoe-ground-support",
+      "synergyType": "conditional-mechanic",
       "participants": [
+        "408458",
+        "1306162",
         "53385",
-        "255937"
+        "383328",
+        "427453"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Buffs/신성한-목적-408458",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Buffs/천상의-심판관-폭풍-1306162"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\시즌2-광역-교차소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_시즌2-단일-교차소비": {
+      "id": "paladin_retribution_시즌2-단일-교차소비",
+      "name": "시즌2-단일-교차소비",
+      "description": "신성한 목적을 최후의 선고로 소비하면 다른 소비기인 천상의 폭풍이 심판관을 회수한다. 단일에서도 적용되며 최고천의 유산의 자동 폭풍이 이미 소비했다면 다시 수동 폭풍을 강제하지 않는다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "408458",
+        "1306161",
+        "383328",
+        "53385"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Buffs/신성한-목적-408458",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Buffs/천상의-심판관-선고-1306161"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\시즌2-단일-교차소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_consecration_aoe_support": {
+      "id": "paladin_retribution_consecration_aoe_support",
+      "name": "신성화-광역-보강",
+      "description": "신성화의 칼날은 심판의 칼날로 대상 아래 지면을 생성하며 10초 내부 재사용 대기시간이 있다. 동명 신성화 특성은 천상의 폭풍 적중 후 지면 피해를 강화하는 효과이지 직접 누르는 지면 버튼이 아니다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "404834",
+        "184575",
+        "382536"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/재가되어라"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\신성화-광역-보강.md",
@@ -11083,34 +11225,30 @@
     "paladin_retribution_judgment_spender_target": {
       "id": "paladin_retribution_judgment_spender_target",
       "name": "심판-소모기-우선대상",
+      "description": "심판과 대영주의 진노는 대상의 상급 심판 및 특화 관련 효과로 이어진다. 현재 최후의 선고는 15% 확률로 심판을 초기화하므로 구형 천벌의 망치 초기화 설명을 쓰지 않는다.",
       "type": "synergy",
-      "synergyType": "judgment-spender-targeting",
+      "synergyType": "conditional-mechanic",
       "participants": [
         "20271",
-        "85256",
-        "383328",
-        "53385"
+        "404512",
+        "267316",
+        "383328"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판연마",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/무궁한심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/응징의심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의의심판",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/대영주의진노",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/특화대영주의심판"
       ],
       "source": {
@@ -11121,44 +11259,31 @@
     "paladin_retribution_blade_holy_power_engine": {
       "id": "paladin_retribution_blade_holy_power_engine",
       "name": "심판의칼날-신성한힘",
+      "description": "신성한 검으로 심판의 칼날 자원 생성은 1개에서 2개가 된다. 현재 자원과 다음 자동 생성까지 확인해 최후의 선고·천상의 폭풍으로 소비하며 항상 5개까지 모으지 않는다.",
       "type": "synergy",
-      "synergyType": "holy-power-engine",
+      "synergyType": "conditional-mechanic",
       "participants": [
         "184575",
-        "20271",
-        "35395",
-        "24275",
-        "255937",
-        "85256",
+        "383342",
+        "383328",
         "53385"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\심판의칼날-신성한힘.md",
@@ -11168,32 +11293,31 @@
     "paladin_retribution_art_of_war_blade_proc": {
       "id": "paladin_retribution_art_of_war_blade_proc",
       "name": "전쟁의기술-심판의칼날-발동관리",
+      "description": "현재 전쟁의 기술은 406064이며 내면의 빛이 다음 검을 80% 강화하고 최대 두 중첩 저장을 허용한다. 마지막 노드는 검에 직선 피해를 추가하므로 강화 소실과 실제 경로 적중을 함께 본다.",
       "type": "synergy",
-      "synergyType": "proc-generator-management",
+      "synergyType": "conditional-mechanic",
       "participants": [
+        "406064",
+        "1261113",
         "184575",
-        "20271",
-        "35395"
+        "1261159"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의칼날",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛-1261159"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\전쟁의기술-심판의칼날-발동관리.md",
@@ -11203,46 +11327,32 @@
     "paladin_retribution_burst_amp_wings_execution": {
       "id": "paladin_retribution_burst_amp_wings_execution",
       "name": "징벌-극딜증폭-응징의격노-사형선고",
+      "description": "응징의 심판은 사형 선고 뒤 다음 소비기가 쓴 신성한 힘을 반환한다. 무료 시전과 달리 필요한 자원을 먼저 보유해야 하며, 소비 직후 돌아온 자원을 무시하고 생성기를 누르면 낭비한다.",
       "type": "synergy",
-      "synergyType": "burst-window-amplifier",
+      "synergyType": "conditional-mechanic",
       "participants": [
         "343527",
-        "255937",
-        "24275",
-        "403509",
-        "403026",
-        "406872",
-        "446663",
-        "404512",
-        "1253598",
+        "406157",
+        "1253174",
         "383328"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Buffs/응징의-심판-1253174"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/광신도의열정",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/불타는성전",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한격노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/재가되어라",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/대영주의진노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/찬란한영광",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/응징의심판"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\징벌-극딜증폭-응징의격노-사형선고.md",
@@ -11252,35 +11362,29 @@
     "paladin_retribution_shield_of_vengeance_survival_return": {
       "id": "paladin_retribution_shield_of_vengeance_survival_return",
       "name": "징벌-복수의방패-생존-반격피해",
+      "description": "실제 생존기 신의 가호에 복수의 방패 특성을 연결하면 피해 감소가 추가로 10%p 높아지고 흡수 효과가 자동으로 붙는다. 반격은 실제 흡수한 양을 나누며 정화나 검 생성과 억지로 직접 연결하지 않는다.",
       "type": "synergy",
-      "synergyType": "defensive-return-damage",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "184662",
+        "403876",
         "1261562",
-        "383344",
-        "404436",
-        "407067"
+        "184662"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/신의-가호-403876"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패-184662",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의의빛",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의질주"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패-184662"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\징벌-복수의방패-생존-반격피해.md",
@@ -11290,45 +11394,30 @@
     "paladin_retribution_consecration_flame_aoe_storm": {
       "id": "paladin_retribution_consecration_flame_aoe_storm",
       "name": "징벌-신성화-불길-광역폭풍",
+      "description": "천상의 폭풍의 신성화 특성은 해당 적이 받는 지면·천상의 망치 피해를 12초 강화한다. 빛의 수호자의 폭풍우는 별도 자동 파동이며 직접 소비기 횟수나 신성한 목적 기회를 한 번 더 만드는 것으로 세지 않는다.",
       "type": "synergy",
-      "synergyType": "aoe-ground-flame-storm",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "382536",
-        "404834",
-        "406545",
-        "405355",
-        "383396",
-        "407067",
-        "403010",
         "53385",
-        "404542",
-        "383228"
+        "382536",
+        "432929",
+        "383396"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한불길",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/굽이치는불길",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의수호자의폭풍우",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의질주",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/축복받은용사",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신속한정의"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의수호자의폭풍우"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\징벌-신성화-불길-광역폭풍.md",
@@ -11338,40 +11427,29 @@
     "paladin_retribution_judgment_highlord_priority": {
       "id": "paladin_retribution_judgment_highlord_priority",
       "name": "징벌-심판-대영주-우선대상",
+      "description": "특화에 따른 심판 추가 피해 확률을 무궁한 심판이 상대적으로 50% 높인다. 고정 50%p 증가가 아니며 실제 특화 평점에 따라 값이 달라진다. 추가 피해 이벤트를 직접 심판 시전으로 합산하지 않는다.",
       "type": "synergy",
-      "synergyType": "judgment-priority-targeting",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "402971",
-        "405278",
-        "405461",
-        "403495",
         "267316",
-        "404512",
-        "406157"
+        "405278",
+        "20271"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판권",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/무궁한심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판연마",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의의심판",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/특화대영주의심판",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/대영주의진노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/응징의심판"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/무궁한심판"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\징벌-심판-대영주-우선대상.md",
@@ -11381,48 +11459,31 @@
     "paladin_retribution_blade_inner_light_sword_cluster": {
       "id": "paladin_retribution_blade_inner_light_sword_cluster",
       "name": "징벌-심판의칼날-내면의빛-검축",
+      "description": "강화 검의 직접·직선 피해와 정화 지속 피해는 별개다. 정화는 갱신 때 남은 피해를 이월하며 신성한 불길은 정화 대상의 신성 피해를 5% 높이므로 도트 만료만 기다리며 검을 늦추지 않는다.",
       "type": "synergy",
-      "synergyType": "blade-generator-proc-cluster",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "184575",
-        "403745",
-        "403826",
-        "383342",
-        "403664",
-        "403695",
-        "1261111",
         "1261159",
-        "1261113",
-        "404752",
-        "406646"
+        "184575",
+        "383344",
+        "406545"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판의칼날연마",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의칼날",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/진실의상흔",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/징벌의도구",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛-1261111",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛-1261159",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한불길"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\징벌-심판의칼날-내면의빛-검축.md",
@@ -11432,57 +11493,92 @@
     "paladin_retribution_hammer_of_wrath_wings_execute": {
       "id": "paladin_retribution_hammer_of_wrath_wings_execute",
       "name": "천벌의망치-응징의격노-처형창",
+      "description": "천벌의 망치 특성은 응징의 격노 동안 심판을 24275의 천벌의 망치로 강화한다. 예전 처형 생명력 조건이 아니라 날개 상태와 충전이 기준이며 보호의 1241413을 사용하지 않는다.",
       "type": "synergy",
-      "synergyType": "execute-generator-window",
+      "synergyType": "conditional-mechanic",
       "participants": [
-        "24275",
+        "1241288",
         "31884",
-        "343527",
-        "85256",
-        "383328"
+        "24275"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/찬란한영광",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화"
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/천벌의-망치-1241288"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\천벌의망치-응징의격노-처형창.md",
         "lastUpdate": ""
       }
     },
-    "태양의사자_새벽빛": {
-      "id": "태양의사자_새벽빛",
-      "name": "태양의사자-새벽빛",
+    "paladin_retribution_최고천의유산-자동폭풍": {
+      "id": "paladin_retribution_최고천의유산-자동폭풍",
+      "name": "최고천의유산-자동폭풍",
+      "description": "날개가 다음 단일 소비기에 최고천의 유산을 준비한다. 최후의 선고가 125% 효율 폭풍을 자동으로 사용해 광역과 세트 교차 소비에 관여하므로 실제 버튼 한 번과 두 피해 효과를 구분한다.",
       "type": "synergy",
-      "synergyType": "herald_damage",
-      "participants": [],
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "387170",
+        "31884",
+        "383328",
+        "53385"
+      ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/최고천의-유산-387170"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Synergies\\최고천의유산-자동폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "paladin_retribution_태양의사자-새벽빛": {
+      "id": "paladin_retribution_태양의사자-새벽빛",
+      "name": "태양의사자-새벽빛",
+      "description": "파멸의 재가 다음 두 신성한 힘 소비기에 새벽빛을 준비한다. 단일·광역 소비와 세트 조건을 지키면서 오래 살 대상에 적중시킨다. 신성의 천상의 종 준비 조건을 징벌에 가져오지 않는다.",
+      "type": "synergy",
+      "synergyType": "conditional-mechanic",
+      "participants": [
+        "431377",
+        "255937",
+        "383328",
+        "53385"
+      ],
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
+        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
       ],
       "linkedBuffs": [],
@@ -11495,34 +11591,28 @@
     "paladin_retribution_wake_wings": {
       "id": "paladin_retribution_wake_wings",
       "name": "파멸의재-응징의격노",
+      "description": "찬란한 영광은 파멸의 재로 8초 날개를 부여하고 수동 날개를 없앤다. 공개 간소화 빌드에서 사형 선고 투자 대신 고르지만 같은 선택 노드인 것은 아니다. 사형 선고도 따로 골랐다면 표식 뒤 파멸의 재를 사용한다.",
       "type": "synergy",
-      "synergyType": "burst-window",
+      "synergyType": "conditional-mechanic",
       "participants": [
+        "458359",
         "255937",
-        "31884",
-        "343527",
-        "85256",
-        "53385"
+        "31884"
       ],
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전",
         "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/찬란한영광"
       ],
       "source": {

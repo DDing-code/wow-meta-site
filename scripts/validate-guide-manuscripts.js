@@ -26,6 +26,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['mage-frost', '12.1'],
   ['monk-brewmaster', '12.1'],
   ['paladin-protection', '12.1'],
+  ['paladin-retribution', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
@@ -1162,6 +1163,33 @@ function main() {
   const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
   assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
   assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
+
+  const retribution = manuscripts['paladin-retribution'];
+  const retributionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '08-성기사', '징벌', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(retributionSource)) {
+    assert(JSON.stringify(JSON.parse(read(retributionSource))) === JSON.stringify(retribution), 'Retribution must match its canonical 12.1 manuscript');
+  }
+  const retributionNotes = Object.values(kbSkills).filter(skill => /[\\/]08-성기사[\\/]징벌[\\/]/.test(skill.source?.kbPath || ''));
+  assert(retributionNotes.length === 69 && retributionNotes.every(skill => skill.patch === '12.1' && skill.description?.trim()), 'All 69 Retribution notes must retain reviewed descriptions');
+  assert(!retribution.extraSkills?.length && !kbSkills['267344'] && kbSkills['406064']?.type === 'talent', 'Retribution must use current Art of War without extraSkills');
+  assert(kbSkills['403876']?.type === 'atomic-skill' && kbSkills['184662']?.type === 'buff' && kbSkills['1261562']?.type === 'talent', 'Shield of Vengeance must remain an effect of the actual Divine Protection cast');
+  assert(kbSkills['375576']?.specs.includes('Retribution') && kbSkills['375576']?.description.includes('50% 강화 심판'), 'Divine Toll must have canonical Retribution scope and mechanics');
+  assert(kbSkills['1261113']?.description.includes('두 발동 특성') && kbSkills['1261113']?.description.includes('80%'), 'Light Within must retain current strength and mutually exclusive proc talents');
+  assert(kbSkills['1296660']?.description.includes('10%p') && kbSkills['1296661']?.description.includes('다른 종류'), 'Retribution tier effects must retain chance and different-spender conditions');
+  assert(['1306161', '1306162', '1310461'].every(id => kbSkills[id]?.type === 'buff') && kbSkills['1306923']?.type === 'proc', 'Divine Arbiter states and automatic damage must not become player casts');
+  assert(kbSkills['156322']?.type === 'atomic-skill' && kbSkills['24275']?.description.includes('심판'), 'Eternal Flame and current Hammer of Wrath must retain their actual roles');
+  for (const branch of retribution.heroBranches) {
+    const rows = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
+    assert(rows.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId]?.specs.includes('Retribution')), 'Retribution flows must contain correctly scoped casts only');
+    assert(!rows.some(row => ['35395', '184662', '1241413', '275779', '429826'].includes(row.skillId)), 'Selected Retribution flows must not contain passive replacements, buffs or Protection casts');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Retribution target modes must retain distinct conditions');
+    if (branch.label === '태양의 사자') assert(!rows.some(row => row.skillId === '427453'), 'Herald must not borrow Hammer of Light');
+    if (branch.label === '기사단') assert(branch.opener.steps[3].skillId === '255937' && branch.opener.steps[4].skillId === '427453', 'Templar must open Hammer of Light with Wake, not Divine Toll');
+  }
+  assert(retribution.heroBranches[0].label === '태양의 사자' && JSON.stringify(retribution.opener) === JSON.stringify(retribution.heroBranches[0].opener), 'Default Retribution flow must match the selected Herald example');
+  const retributionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Paladin' && note.spec === 'Retribution');
+  assert(retributionSynergies.length === 23 && retributionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Retribution'))), 'All 23 Retribution relationships must retain scoped numeric participants');
+  assert(retribution.graphCenterSkillId === '383328' && retributionSynergies.filter(note => note.participants.includes('383328')).length === 10, 'Final Verdict must retain its ten actual relationships');
 
   const protection = manuscripts['paladin-protection'];
   const protectionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '08-성기사', '보호', 'Meta', 'guide-12.1.json');

@@ -1620,18 +1620,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '신성 충격 충전 방치, 신성한 힘 과잉, 빛 주입 미소비, 고결의 봉화 지연, 오라 숙련 전 자원 손실, 응징의 격노 뒤 직접 치유를 봅니다.'],
     ],
   },
-  'paladin-retribution': {
-    id: 'cooldown',
-    title: '응징의 격노와 신성한 힘',
-    sectionHeading: '극딜 안 신성한 힘 소비',
-    sectionIntro: '징벌 성기사는 신성한 힘을 만들고 기사단의 선고나 천상의 폭풍으로 비우며, 응징의 격노와 파멸의 재 구간에 강한 소비기를 몰아넣습니다.',
-    caption: '심판, 파멸의 재, 응징의 격노, 신성한 힘 생성, 기사단의 선고, 천상의 폭풍, 사형 선고를 확인합니다.',
-    definition: [
-      ['의미', '응징의 격노는 큰 피해 구간이고, 신성한 힘은 그 안에서 강한 마무리 기술로 바뀌는 자원입니다.'],
-      ['읽는 법', '심판과 파멸의 재로 준비한 뒤 응징의 격노 안에 신성한 힘 소비기가 최대한 들어가는지 확인합니다.'],
-      ['체크 포인트', '신성한 힘 과충전, 응징의 격노 중 약한 글쿨, 사형 선고 지연, 광역에서 천상의 폭풍 전환 누락을 봅니다.'],
-    ],
-  },
   'priest-shadow': {
     id: 'resource',
     title: '광기와 지속 피해 관리',
@@ -1802,7 +1790,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4328,76 +4316,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'paladin-retribution') {
-    return [
-      {
-        label: '큰 구간 기준',
-        skill: findSkillByNames(data, ['사형 선고']),
-        note: '응징의 격노와 강한 피해가 모이는 피해 몰아넣기 기준점입니다.',
-        segments: [[14, 18], [62, 18]],
-      },
-      {
-        label: '날개 구간',
-        skill: findSkillByNames(data, ['응징의 격노']),
-        note: '사형 선고와 파멸의 재와 빛의 망치를 함께 묶는 강화 구간입니다.',
-        segments: [[10, 24], [58, 24]],
-      },
-      {
-        label: '재 폭발',
-        skill: findSkillByNames(data, ['파멸의 재']),
-        note: '피해와 신성한 힘 공급이 동시에 들어가는 구간 전환 버튼입니다.',
-        segments: [[18, 9], [66, 9]],
-      },
-      {
-        label: '기사단 핵심기',
-        skill: findSkillByNames(data, ['빛의 망치']),
-        note: '기사단 빌드에서 사형 선고 안에 우선 넣는 큰 핵심 버튼입니다.',
-        segments: [[22, 10], [70, 10]],
-      },
-      {
-        label: '처형 생성',
-        skill: findSkillByNames(data, ['천벌의 망치']),
-        note: '처형 조건이나 응징의 격노 중 열리는 피해 겸 생성기입니다.',
-        segments: [[24, 8], [44, 8], [72, 8], [91, 7]],
-      },
-      {
-        label: '검 생성',
-        skill: findSkillByNames(data, ['심판의 칼날']),
-        note: '전쟁의 기술 발동과 신성한 힘 공급을 회수하는 중심 생성기입니다.',
-        segments: [[6, 8], [31, 8], [51, 8], [83, 8]],
-      },
-      {
-        label: '판결 압박',
-        skill: findSkillByNames(data, ['심판']),
-        note: '짧은 쿨다운으로 우선 대상 압박과 자원 흐름을 정리합니다.',
-        segments: [[4, 7], [28, 7], [48, 7], [78, 7]],
-      },
-      {
-        label: '단일 소모',
-        skill: findSkillByNames(data, ['최후의 선고', '기사단의 선고']),
-        note: '사형 선고 대상이나 보스 단일에서 신성한 힘을 비우는 소모기입니다.',
-        segments: [[26, 10], [41, 8], [74, 10], [88, 8]],
-      },
-      {
-        label: '광역 소모',
-        skill: findSkillByNames(data, ['천상의 폭풍']),
-        note: '대상 수와 생존 시간이 충분할 때 신성한 힘을 광역 피해로 전환합니다.',
-        segments: [[35, 10], [54, 10], [84, 10]],
-      },
-      {
-        label: '발동 회수',
-        skill: findSkillByNames(data, ['전쟁의 기술']),
-        note: '심판의 칼날 재사용을 앞당기므로 신성한 힘 빈칸을 먼저 확인합니다.',
-        segments: [[30, 9], [50, 9], [82, 9]],
-      },
-      {
-        label: '기사단 보정',
-        skill: findSkillByNames(data, ['구세의 빛', '최고천의 망치']),
-        note: '빛의 망치 처리 순서와 사형 선고 종료 시간을 함께 봅니다.',
-        segments: [[20, 13], [68, 13]],
-      },
-    ];
-  }
 
 
   if (guide.id === 'druid-balance') {

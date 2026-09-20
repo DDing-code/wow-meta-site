@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const assert = require('node:assert/strict');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
@@ -260,7 +261,11 @@ const awkwardContextPatterns = [
   },
 ];
 
-const allowedWindowTerms = /얼음창|창끝|표창|투창병|창공의 힘|용사의 창|생명석 창조|영혼의 샘 창조|창조/;
+function withoutOfficialWindowTerms(text) {
+  return text.replace(/얼음창|창끝|표창|투창병|창공의 힘|용사의 창|생명석 창조|영혼의 샘 창조|창조/g, '');
+}
+
+const standaloneWindowTerm = /(^|[^\uAC00-\uD7A3])\uCC3D(?!\uB05D)/;
 
 function collectForbiddenTermErrors(filePath, terms) {
   const lines = fs.readFileSync(filePath, 'utf8').split(/\r?\n/);
@@ -304,11 +309,12 @@ function collectAwkwardContextErrors(filePath, patterns) {
   const errors = [];
 
   lines.forEach((line, index) => {
-    if (line.includes('.replace(/') || allowedWindowTerms.test(line)) return;
+    if (line.includes('.replace(/')) return;
+    const normalized = withoutOfficialWindowTerms(line);
 
     for (const item of patterns) {
       item.pattern.lastIndex = 0;
-      if (!item.pattern.test(line)) continue;
+      if (!item.pattern.test(normalized)) continue;
 
       errors.push({
         filePath,
@@ -325,10 +331,9 @@ function collectAwkwardContextErrors(filePath, patterns) {
 function collectStandaloneWindowTermErrors(filePath) {
   const lines = fs.readFileSync(filePath, 'utf8').split(/\r?\n/);
   const errors = [];
-  const standaloneWindowTerm = /(^|[^\uAC00-\uD7A3])\uCC3D(?!\uB05D)/;
 
   lines.forEach((line, index) => {
-    if (!standaloneWindowTerm.test(line)) return;
+    if (!standaloneWindowTerm.test(withoutOfficialWindowTerms(line))) return;
 
     errors.push({
       filePath,
@@ -409,6 +414,10 @@ function collectDisciplineStandaloneRaptureCopyErrors() {
 }
 
 function main() {
+  assert.equal(standaloneWindowTerm.test(withoutOfficialWindowTerms('창공의 힘과 용사의 창')), false);
+  assert.equal(standaloneWindowTerm.test(withoutOfficialWindowTerms('창공의 힘을 쓰는 극딜 창')), true);
+  assert.equal(withoutOfficialWindowTerms('창공의 힘, 창공의 힘'), ', ');
+
   const errors = [
     ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),

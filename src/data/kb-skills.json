@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T20:01:30.140Z",
+    "generatedAt": "2026-09-20T21:00:06.142Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2910,
-    "rawTotalSkills": 2910,
+    "totalSkills": 2932,
+    "rawTotalSkills": 2932,
     "duplicateIds": [],
-    "totalSynergies": 547,
+    "totalSynergies": 553,
     "stats": {
-      "total": 2910,
+      "total": 2932,
       "byType": {
-        "buff": 112,
-        "hero-talent": 560,
-        "atomic-skill": 543,
-        "proc": 24,
+        "buff": 123,
+        "hero-talent": 559,
+        "atomic-skill": 547,
+        "proc": 28,
         "skill": 131,
-        "talent": 988,
+        "talent": 992,
         "spec-talent": 392,
         "passive": 54,
         "hero-tree": 2,
@@ -37,7 +37,7 @@
         "Hunter": 225,
         "Mage": 229,
         "Monk": 274,
-        "Paladin": 228,
+        "Paladin": 250,
         "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
@@ -77,7 +77,7 @@
         "Paladin-공용": 72,
         "Paladin-Protection": 65,
         "Paladin-신성": 44,
-        "Paladin-징벌": 47,
+        "Paladin-Retribution": 69,
         "Priest-공용": 74,
         "Priest-수양": 48,
         "Priest-신성": 46,
@@ -102,9 +102,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2835,
-        "withSynergies": 1620,
-        "avgLinkDensity": "0.039"
+        "withWikilinks": 2857,
+        "withSynergies": 1691,
+        "avgLinkDensity": "0.040"
       }
     }
   },
@@ -8331,7 +8331,7 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "30야드",
-      "description": "신성·징벌의 심판 시전 레코드다. 전문화별 신성한 힘 생성과 연계 효과가 다르며 보호는 별도의 275779를 사용한다.",
+      "description": "징벌의 심판은 신성한 힘 1개를 생성한다. 기본 재사용 대기시간 11초에 신속한 정의·가속 보정을 적용하고 심판 연마로 2회 충전을 얻는다. 날개 중 천벌의 망치 특성으로 24275로 강화된다. 보호는 별도의 275779이며 신성의 효과·실제 시전 ID는 별도 확인해야 한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -8356,7 +8356,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.041,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -8881,7 +8881,7 @@
       "id": "24275",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -8891,14 +8891,14 @@
       "icon": "inv12_ability_paladin_hammerofwrath",
       "iconName": "inv12_ability_paladin_hammerofwrath",
       "school": "",
-      "cooldown": "7.5초",
+      "cooldown": "기본 7.5초; 가속·심판 충전 보정",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나 0.6%; 신성한 힘 1개 생성",
       "range": "30야드",
-      "description": "# 천벌의 망치 (Hammer of Wrath)",
+      "description": "천벌의 망치 특성을 선택한 징벌은 응징의 격노 동안 심판이 이 공격으로 강화된다. 신성한 힘 1개를 생성하는 실제 시전 ID다. 보호의 1241413과 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8912,16 +8912,19 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/천벌의-망치-1241288"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛을향하여"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.059,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -9874,7 +9877,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "응징의 격노의 실제 플레이어 시전이다. 보호는 12.1에서 피해·치유·치명타 증가가 10%로 조정됐으며 공용 툴팁의 20%를 그대로 적용하지 않는다. 전문화별 지속시간·재사용 대기시간 보정이 다르다.",
+      "description": "응징의 격노의 실제 플레이어 시전이다. 12.1 보호의 피해·치유·치명타 증가는 10%, 징벌은 15%다. 공용 기본 툴팁의 20%를 모든 전문화에 그대로 적용하지 않는다. 징벌 기본 지속시간은 20초이며 신성한 격노 선택 시 4초가 늘어난다. 전문화별 재사용·지속시간 보정과 수동 날개 대체 특성을 구분한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -9902,7 +9905,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.06,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -10810,14 +10813,14 @@
       "icon": "spell_holy_crusaderstrike",
       "iconName": "spell_holy_crusaderstrike",
       "school": "",
-      "cooldown": "짧은 쿨다운",
+      "cooldown": "기본 6초; 2회 충전; 특성·가속 보정",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 성전사의 일격 (Crusader Strike)",
+      "description": "근접 공격으로 신성한 힘 1개를 생성한다. 신성·징벌의 선택 특성에 따라 대체되거나 사용하지 않는 버튼이므로 현재 빌드의 실제 주문책을 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10836,7 +10839,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.027,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -13751,7 +13754,7 @@
       "id": "53385",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -13763,12 +13766,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "신성한 힘",
-      "range": "근접",
-      "description": "# 천상의 폭풍 (Divine Storm)",
+      "resourceCost": "신성한 힘 3개",
+      "range": "자신 주위",
+      "description": "신성한 힘 3개를 소비해 주위 적을 공격한다. 5대상을 초과하면 대상당 효과가 감소한다. 창공의 힘과 신성한 목적에 의한 무료 사용을 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13781,15 +13784,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고"
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/최고천의-유산-387170",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 12,
-        "synergyCount": 1,
-        "linkDensity": 0.078,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -16782,7 +16789,7 @@
       "id": "85256",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -16794,12 +16801,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "신성한 힘 3",
+      "resourceCost": "신성한 힘 3개",
       "range": "근접",
-      "description": "# 기사단의 선고 (Templar's Verdict)",
+      "description": "신성한 힘 3개를 소비하는 기본 단일 공격이다. 최후의 선고를 선택하면 그 기술로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16811,17 +16818,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_templarsverdict.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세"
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
         ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 12,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.073,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -23763,7 +23770,7 @@
     },
     "156322": {
       "id": "156322",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -23776,14 +23783,14 @@
       "icon": "inv_torch_thrown",
       "iconName": "inv_torch_thrown",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 영원의 불꽃 (Eternal Flame)",
-      "category": "hero-talent",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "신성한 힘 3개; 기본 마나 0.6%",
+      "range": "40야드",
+      "description": "영광의 서약을 대체하는 실제 치유 버튼으로 신성한 힘 3개와 기본 마나 0.6%를 사용한다. 즉시 치유에 16초 지속 치유가 붙으며 자신에게 시전한 치유량은 징벌 35%, 신성 25% 증가한다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -23795,14 +23802,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_torch_thrown.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/잔존하는광휘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -24576,7 +24587,7 @@
       "id": "184575",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -24586,14 +24597,14 @@
       "icon": "ability_paladin_bladeofjustice",
       "iconName": "ability_paladin_bladeofjustice",
       "school": "",
-      "cooldown": "12초",
+      "cooldown": "기본 12초; 특성·가속 보정",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "12야드",
-      "description": "# 심판의 칼날 (Blade of Justice)",
+      "resourceCost": "없음; 신성한 힘 1개 생성",
+      "range": "기본 12야드; 심판권 선택 시 20야드",
+      "description": "적을 공격하고 신성한 힘 1개를 생성한다. 신성한 검 선택 시 2개다. 기본 재사용 대기시간 12초에 정의의 빛·가속 보정과 충전 특성을 따로 적용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24607,16 +24618,18 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검",
           "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/빛의칼날",
           "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛을향하여"
+        ]
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.057,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -24626,9 +24639,9 @@
     },
     "184662": {
       "id": "184662",
-      "type": "talent",
+      "type": "buff",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -24638,14 +24651,14 @@
       "icon": "ability_paladin_shieldofthetemplar",
       "iconName": "ability_paladin_shieldofthetemplar",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "신의 가호에서 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 복수의 방패 (Shield of Vengeance)",
-      "category": "talent",
+      "description": "신의 가호 사용 시 복수의 방패 특성으로 발동하는 흡수 효과다. 최대 생명력의 30%에 유연성 보정을 적용해 10초 동안 흡수하고 종료 시 실제 흡수량을 주변 적에게 나누어 피해로 돌려준다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24657,14 +24670,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_shieldofthetemplar.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/신의-가호-403876"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -37583,7 +37600,7 @@
       "id": "255937",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -37595,12 +37612,12 @@
       "school": "",
       "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "12야드",
-      "description": "# 파멸의 재 (Wake of Ashes)",
+      "resourceCost": "없음; 신성한 힘 3개 생성",
+      "range": "전방 14야드",
+      "description": "전방 14야드 원뿔을 공격하고 신성한 힘 3개를 생성하는 30초 공격이다. 진실의 상흔과 연계하며 악마·언데드를 5초 동안 기절시킨다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37612,18 +37629,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringerfire_d_03.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/진실의상흔"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/서광"
+        ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 3,
-        "linkDensity": 0.058,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -40632,7 +40651,7 @@
       "id": "267316",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -40642,14 +40661,14 @@
       "icon": "ability_paladin_blessedhands",
       "iconName": "ability_paladin_blessedhands",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 특화: 대영주의 심판 (Mastery: Highlord's Judgment)",
+      "description": "신성 피해를 높이고 심판이 추가 신성 피해를 일으킬 확률을 제공하는 징벌 특화다. 실제 비율은 특화 평점에 따라 달라진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -40661,70 +40680,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_blessedhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/대영주의진노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/무궁한심판"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\특화대영주의심판.md",
-        "lastUpdate": ""
-      }
-    },
-    "267344": {
-      "id": "267344",
-      "type": "talent",
-      "class": "Paladin",
-      "spec": "징벌",
-      "specs": [
-        "Retribution"
-      ],
-      "name": "전쟁의 기술",
-      "koreanName": "전쟁의 기술",
-      "englishName": "Art of War",
-      "icon": "ability_paladin_artofwar",
-      "iconName": "ability_paladin_artofwar",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 전쟁의 기술 (Art of War)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_artofwar.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_artofwar.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_artofwar.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.059,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\전쟁의기술.md",
         "lastUpdate": ""
       }
     },
@@ -44924,7 +44896,7 @@
       "id": "326732",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -44934,14 +44906,14 @@
       "icon": "ability_paladin_sheathoflight",
       "iconName": "ability_paladin_sheathoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 창공의 힘 (Empyrean Power)",
+      "description": "성전의 강타가 5%, 수동 성전사의 일격이 15% 확률로 다음 천상의 폭풍을 무료로 만들고 피해를 15% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44953,18 +44925,76 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_sheathoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한-목적-408459"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 4,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\창공의힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "326733": {
+      "id": "326733",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "창공의 힘",
+      "koreanName": "창공의 힘",
+      "englishName": "Empyrean Power",
+      "icon": "ability_paladin_sheathoflight",
+      "iconName": "ability_paladin_sheathoflight",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 천상의 폭풍을 무료로 만들고 피해를 15% 증가시키는 창공의 힘 준비 상태다. 기본 지속시간은 15초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_sheathoflight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_sheathoflight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_sheathoflight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_sheathoflight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_sheathoflight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/창공의힘"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\창공의-힘-326733.md",
         "lastUpdate": ""
       }
     },
@@ -46137,7 +46167,7 @@
       "id": "343527",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -46151,10 +46181,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "30야드",
-      "description": "# 사형 선고 (Execution Sentence)",
+      "description": "주 대상과 그 주위 10야드의 적에게 피해를 주고, 처음 적중한 적들에게 10초 동안 입힌 신성 피해의 20%를 주 대상에게 추가로 결산한다. 기본 재사용 대기시간은 1분이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46168,18 +46198,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
-          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/응징의심판"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 2,
-        "linkDensity": 0.082,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -50119,7 +50149,8 @@
       "class": "Paladin",
       "spec": "Protection",
       "specs": [
-        "Protection"
+        "Protection",
+        "Retribution"
       ],
       "name": "천상의 종",
       "koreanName": "천상의 종",
@@ -50131,7 +50162,7 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "30야드",
-      "description": "기본 1분마다 주위 최대 5대상에게 보호 전문화의 응징의 방패를 시전한다. 기본 방패와 선봉대 강화 방패의 자원 생성을 구분해야 한다. 기사단은 사용 후 빛의 망치가 열리고, 빛대장장이는 울려 퍼지는 일격의 망치와 모루 발동을 활용한다.",
+      "description": "기본 1분마다 최대 5대상에게 전문화별 주문을 사용한다. 보호는 응징의 방패이며 기본 방패와 선봉대 강화의 자원 생성을 구분한다. 보호 기사단은 사용 후 빛의 망치를 열고 빛대장장이는 울려 퍼지는 일격을 활용한다. 징벌은 50% 강화 심판을 시전하며 빛의 망치 해금은 천상의 종이 아니라 파멸의 재에서 얻는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -50161,7 +50192,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 2,
-        "linkDensity": 0.05,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -57817,7 +57848,7 @@
       "id": "382536",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -57827,14 +57858,14 @@
       "icon": "achievement_zone_firelands",
       "iconName": "achievement_zone_firelands",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성화 (Sanctify)",
+      "description": "천상의 폭풍에 맞은 적이 12초 동안 신성화 및 천상의 망치로 받는 피해가 20% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57846,14 +57877,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_zone_firelands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화의칼날"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의망치"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -59151,7 +59188,7 @@
       "id": "383228",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -59161,14 +59198,14 @@
       "icon": "ability_paladin_judgementofthepure",
       "iconName": "ability_paladin_judgementofthepure",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신속한 정의 (Swift Justice)",
+      "description": "심판과 성전사의 일격의 재사용 대기시간을 2초 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59180,14 +59217,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthepure.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -59489,7 +59531,7 @@
       "id": "383328",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -59501,12 +59543,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "신성한 힘",
-      "range": "근접",
-      "description": "# 최후의 선고 (Final Verdict)",
+      "resourceCost": "신성한 힘 3개",
+      "range": "기본 12야드; 심판권 선택 시 20야드",
+      "description": "기사단의 선고를 대체하는 실제 단일 소비기로 신성한 힘 3개를 사용한다. 현재 시전 툴팁은 15% 확률로 심판의 재사용 대기시간을 초기화한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59520,15 +59562,20 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
           "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/최고천의-유산-387170",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판권"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 11,
-        "synergyCount": 2,
-        "linkDensity": 0.071,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.072,
         "hasWikilinks": true
       },
       "source": {
@@ -59636,7 +59683,7 @@
       "id": "383342",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -59646,14 +59693,14 @@
       "icon": "ability_paladin_lightoftheprotector",
       "iconName": "ability_paladin_lightoftheprotector",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 검 (Holy Blade)",
+      "description": "심판의 칼날이 신성한 힘을 1개 더 생성해 기본 1개에서 2개가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59665,14 +59712,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightoftheprotector.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛을향하여"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -59684,7 +59736,7 @@
       "id": "383344",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -59694,14 +59746,14 @@
       "icon": "ability_paladin_bladeofjusticeblue",
       "iconName": "ability_paladin_bladeofjusticeblue",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정화 (Expurgation)",
+      "description": "심판의 칼날이 대상에게 9초 동안 정화의 지속 피해를 부여한다. 새로 적용하면 기존에 남은 피해가 갱신된 효과에 합산된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59713,18 +59765,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_bladeofjusticeblue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한불길",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/재가되어라"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\정화.md",
+        "lastUpdate": ""
+      }
+    },
+    "383346": {
+      "id": "383346",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "정화",
+      "koreanName": "정화",
+      "englishName": "Expurgation",
+      "icon": "ability_paladin_bladeofjustice",
+      "iconName": "ability_paladin_bladeofjustice",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "심판의 칼날이 부여하는 실제 정화 지속 피해 레코드다. 9초 동안 피해를 주며 갱신 시 남은 피해가 합산된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_bladeofjustice.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_bladeofjustice.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_bladeofjustice.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_bladeofjustice.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_bladeofjustice.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/재가되어라",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한불길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Procs\\정화-383346.md",
         "lastUpdate": ""
       }
     },
@@ -59836,7 +59945,7 @@
       "id": "383396",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -59846,14 +59955,14 @@
       "icon": "ability_malkorok_blightofyshaarj_yellow",
       "iconName": "ability_malkorok_blightofyshaarj_yellow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 수호자의 폭풍우 (Tempest of the Lightbringer)",
+      "description": "천상의 폭풍이 전방 20야드로 빛의 파동을 보내 기본 천상의 폭풍 피해의 20%에 해당하는 추가 피해를 입힌다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59865,14 +59974,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_malkorok_blightofyshaarj_yellow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한-목적-408459"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -65254,6 +65368,58 @@
         "lastUpdate": ""
       }
     },
+    "387170": {
+      "id": "387170",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "최고천의 유산",
+      "koreanName": "최고천의 유산",
+      "englishName": "Empyrean Legacy",
+      "icon": "item_holyspark",
+      "iconName": "item_holyspark",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "응징의 격노가 다음 단일 신성한 힘 소비기를 강화해 125% 효율의 천상의 폭풍을 자동 시전하게 한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/item_holyspark.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/item_holyspark.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/item_holyspark.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/item_holyspark.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/item_holyspark.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\최고천의-유산-387170.md",
+        "lastUpdate": ""
+      }
+    },
     "387173": {
       "id": "387173",
       "type": "spec-talent",
@@ -65304,6 +65470,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\악마의-잿불-387173.md",
+        "lastUpdate": ""
+      }
+    },
+    "387178": {
+      "id": "387178",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "최고천의 유산",
+      "koreanName": "최고천의 유산",
+      "englishName": "Empyrean Legacy",
+      "icon": "item_holyspark",
+      "iconName": "item_holyspark",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 단일 소비기가 자동 천상의 폭풍을 발생시킬 수 있는 최고천의 유산 준비 효과다. 기본 지속시간은 20초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/item_holyspark.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/item_holyspark.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/item_holyspark.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/item_holyspark.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/item_holyspark.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/최고천의-유산-387170"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.066,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\최고천의-유산-387178.md",
         "lastUpdate": ""
       }
     },
@@ -75126,7 +75345,7 @@
       "id": "402912",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75136,14 +75355,14 @@
       "icon": "inv_sword_133",
       "iconName": "inv_sword_133",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정의로운 이유 (Righteous Cause)",
+      "description": "신성한 힘을 소비하면 소비량 1개당 6% 확률로 심판의 칼날 재사용 대기시간을 초기화한다. 1초 내부 재사용 대기시간이 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75155,14 +75374,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_133.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.039,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -75170,11 +75394,64 @@
         "lastUpdate": ""
       }
     },
+    "402916": {
+      "id": "402916",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "정의로운 이유",
+      "koreanName": "정의로운 이유",
+      "englishName": "Righteous Cause",
+      "icon": "inv_sword_136",
+      "iconName": "inv_sword_136",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정의로운 이유로 심판의 칼날 초기화와 내면의 빛 강화를 얻은 상태다. 기본 유효시간은 20초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_136.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_136.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_136.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_136.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_136.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\정의로운-이유-402916.md",
+        "lastUpdate": ""
+      }
+    },
     "402971": {
       "id": "402971",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75184,14 +75461,14 @@
       "icon": "ability_paladin_longarmofthelaw",
       "iconName": "ability_paladin_longarmofthelaw",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심판권 (Jurisdiction)",
+      "description": "최후의 선고와 심판의 칼날 피해를 10% 높이고 사정거리를 20야드로 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75203,14 +75480,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_longarmofthelaw.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -75222,7 +75504,7 @@
       "id": "403010",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75232,14 +75514,14 @@
       "icon": "achievement_bg_trueavshutout",
       "iconName": "achievement_bg_trueavshutout",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축복받은 용사 (Blessed Champion)",
+      "description": "성전사의 일격과 심판이 주변 적 최대 4명에게 추가 적중한다. 추가 대상 피해는 주 대상보다 25% 낮다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75251,14 +75533,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_bg_trueavshutout.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -75270,7 +75555,7 @@
       "id": "403026",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75280,14 +75565,14 @@
       "icon": "spell_fire_sealoffire",
       "iconName": "spell_fire_sealoffire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불타는 성전 (Burning Crusade)",
+      "description": "선택한 계급의 툴팁 기준 지속 피해를 10% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75300,13 +75585,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/진실의상흔",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -75421,7 +75711,7 @@
       "id": "403495",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75431,14 +75721,14 @@
       "icon": "ability_paladin_judgementblue",
       "iconName": "ability_paladin_judgementblue",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정의의 심판 (Judgment of Justice)",
+      "description": "심판 피해를 10% 높이고 시전자의 이동 속도를 5초 동안 10% 증가시킨다. 상급 심판은 대상 이동 속도를 8초 동안 30% 낮춘다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75450,14 +75740,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementblue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/대영주의진노"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -75469,7 +75763,7 @@
       "id": "403509",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75479,14 +75773,14 @@
       "icon": "spell_holy_weaponmastery",
       "iconName": "spell_holy_weaponmastery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광신도의 열정 (Zealot's Fervor)",
+      "description": "자동 공격 속도를 20% 증가시키는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75499,13 +75793,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -75626,7 +75923,7 @@
       "id": "403664",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75636,14 +75933,14 @@
       "icon": "achievement_arena_3v3_7",
       "iconName": "achievement_arena_3v3_7",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 칼날 (Blades of Light)",
+      "description": "성전사의 일격·심판·심판의 칼날 피해를 10% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75656,15 +75953,17 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
           "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.043,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -75676,7 +75975,7 @@
       "id": "403695",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75686,14 +75985,14 @@
       "icon": "inv_sword_2h_artifactashbringerfire_d_03",
       "iconName": "inv_sword_2h_artifactashbringerfire_d_03",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 진실의 상흔 (Truth's Wake)",
+      "description": "파멸의 재 이후 9초 동안 지속 피해를 주고 이동 속도를 50% 낮춘다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75705,14 +76004,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringerfire_d_03.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/재가되어라"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -75724,7 +76029,7 @@
       "id": "403745",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75734,14 +76039,14 @@
       "icon": "ability_paladin_bladeofjustice",
       "iconName": "ability_paladin_bladeofjustice",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심판의 칼날 연마 (Improved Blade of Justice)",
+      "description": "심판의 칼날의 최대 충전 수가 2회가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75753,14 +76058,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_bladeofjustice.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.027,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -75772,7 +76081,7 @@
       "id": "403826",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75782,14 +76091,14 @@
       "icon": "ability_paladin_bladeofjustice",
       "iconName": "ability_paladin_bladeofjustice",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 복수의 칼날 (Blade of Vengeance)",
+      "description": "심판의 칼날이 주 대상 주변 적에게도 피해를 주며 5대상 초과 시 효과가 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75801,18 +76110,74 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_bladeofjustice.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\복수의칼날.md",
+        "lastUpdate": ""
+      }
+    },
+    "403876": {
+      "id": "403876",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "신의 가호",
+      "koreanName": "신의 가호",
+      "englishName": "Divine Protection",
+      "icon": "spell_holy_divineprotection",
+      "iconName": "spell_holy_divineprotection",
+      "school": "",
+      "cooldown": "1분",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 0.7%",
+      "range": "자신",
+      "description": "8초 동안 받는 모든 피해를 20% 줄이는 징벌의 실제 생존기다. 기본 재사용 대기시간은 1분이며 기절 중에도 사용할 수 있다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprotection.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_divineprotection.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_divineprotection.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_divineprotection.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprotection.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패-184662"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Skills\\신의-가호-403876.md",
         "lastUpdate": ""
       }
     },
@@ -75868,7 +76233,7 @@
       "id": "404436",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75878,14 +76243,14 @@
       "icon": "inv_offhand_1h_ulduarraid_d_01",
       "iconName": "inv_offhand_1h_ulduarraid_d_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정의의 빛 (Light of Justice)",
+      "description": "심판의 칼날의 재사용 대기시간을 2초 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75897,14 +76262,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_ulduarraid_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/심판의칼날연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -75916,7 +76286,7 @@
       "id": "404512",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -75926,14 +76296,14 @@
       "icon": "ability_paladin_judgementred",
       "iconName": "ability_paladin_judgementred",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대영주의 진노 (Highlord's Wrath)",
+      "description": "특화의 심판·천벌의 망치 관련 효과를 50% 더 강하게 하고 상급 심판의 중첩을 추가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75945,14 +76315,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementred.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/특화대영주의심판"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -76015,7 +76390,7 @@
       "id": "404542",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76025,14 +76400,14 @@
       "icon": "inv_sword_08",
       "iconName": "inv_sword_08",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성전의 강타 (Crusading Strikes)",
+      "description": "성전사의 일격을 자동 공격으로 바꾸는 지속 특성이다. 12.1 공식 패치 노트는 자동 공격 속도 15% 증가로 적지만 현재 한·영 툴팁은 15% 감소로 표시되어 충돌한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76044,14 +76419,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_08.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -76063,7 +76443,7 @@
       "id": "404752",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76073,14 +76453,14 @@
       "icon": "spell_holy_crusade",
       "iconName": "spell_holy_crusade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 징벌의 도구 (Instrument of Retribution)",
+      "description": "40야드 안의 아군이 죽으면 응징의 격노를 9초 동안 얻는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76092,14 +76472,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -76111,7 +76493,7 @@
       "id": "404834",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76121,14 +76503,14 @@
       "icon": "ability_mage_firestarter",
       "iconName": "ability_mage_firestarter",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성화의 칼날 (Consecrated Blade)",
+      "description": "심판의 칼날이 대상 위치에 신성화를 생성하는 지속 효과다. 지면 생성에는 10초 내부 재사용 대기시간이 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76140,14 +76522,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_firestarter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -76216,7 +76602,7 @@
       "id": "405278",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76226,14 +76612,14 @@
       "icon": "ability_paladin_judgementofthewise",
       "iconName": "ability_paladin_judgementofthewise",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무궁한 심판 (Boundless Judgment)",
+      "description": "특화가 심판으로 추가 신성 피해를 발생시킬 확률을 상대적으로 50% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76245,14 +76631,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthewise.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/특화대영주의심판"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -76264,7 +76654,7 @@
       "id": "405355",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76274,14 +76664,14 @@
       "icon": "ability_mage_flamecannon",
       "iconName": "ability_mage_flamecannon",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 굽이치는 불길 (Seething Flames)",
+      "description": "파멸의 재가 두 번 더 공격하도록 바뀌며 추가 대상에게 입히는 피해는 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76293,14 +76683,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_flamecannon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/진실의상흔"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -76312,7 +76706,7 @@
       "id": "405461",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76322,14 +76716,14 @@
       "icon": "spell_holy_righteousfury",
       "iconName": "spell_holy_righteousfury",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심판 연마 (Improved Judgment)",
+      "description": "심판의 최대 충전 수가 2회가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76341,18 +76735,129 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/천벌의-망치-1241288"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\심판연마.md",
+        "lastUpdate": ""
+      }
+    },
+    "406064": {
+      "id": "406064",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "전쟁의 기술",
+      "koreanName": "전쟁의 기술",
+      "englishName": "Art of War",
+      "icon": "ability_paladin_artofwar",
+      "iconName": "ability_paladin_artofwar",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "자동 공격이 15% 확률로 심판의 칼날의 재사용 대기시간을 초기화하며 치명타 적중은 발동 확률을 추가로 10%p 높인다. 내부 재사용 대기시간은 1초다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_artofwar.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_artofwar.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_artofwar.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\전쟁의기술.md",
+        "lastUpdate": ""
+      }
+    },
+    "406086": {
+      "id": "406086",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "전쟁의 기술",
+      "koreanName": "전쟁의 기술",
+      "englishName": "Art of War",
+      "icon": "ability_paladin_artofwar",
+      "iconName": "ability_paladin_artofwar",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "전쟁의 기술로 다음 심판의 칼날을 강화할 수 있는 상태다. 내면의 빛을 선택하면 최대 2중첩이며 버프의 기본 유효시간은 20초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_artofwar.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_artofwar.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_artofwar.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_artofwar.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\전쟁의-기술-406086.md",
         "lastUpdate": ""
       }
     },
@@ -76408,7 +76913,7 @@
       "id": "406154",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76418,14 +76923,14 @@
       "icon": "spell_brokenheart",
       "iconName": "spell_brokenheart",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성전사의 심장 (Heart of the Crusader)",
+      "description": "성전사의 일격과 자동 공격의 피해 및 치명타 피해를 계급당 10% 증가시킨다. 두 계급을 모두 선택하면 20%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76437,14 +76942,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_brokenheart.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/광신도의열정"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -76456,7 +76966,7 @@
       "id": "406157",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76466,14 +76976,14 @@
       "icon": "spell_holy_sealofblood",
       "iconName": "spell_holy_sealofblood",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 응징의 심판 (Judge, Jury and Executioner)",
+      "description": "신성한 힘 소비기 피해를 5% 증가시킨다. 사형 선고를 쓴 뒤 다음 한 번의 소비기는 사용한 신성한 힘을 반환한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76485,14 +76995,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofblood.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -76556,7 +77069,7 @@
       "id": "406545",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76566,14 +77079,14 @@
       "icon": "ability_warlock_inferno",
       "iconName": "ability_warlock_inferno",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 불길 (Holy Flames)",
+      "description": "정화가 걸린 적에게 입히는 신성 피해가 5% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76585,14 +77098,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_inferno.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -76604,7 +77122,7 @@
       "id": "406646",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76614,14 +77132,14 @@
       "icon": "inv_sword_2h_artifactashbringer_d_01",
       "iconName": "inv_sword_2h_artifactashbringer_d_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기사단의 공세 (Templar Strikes)",
+      "description": "성전사의 일격을 기사단의 공세와 기사단의 베기로 이어지는 수동 연속 공격으로 대체한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76634,20 +77152,75 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의선고",
-          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고"
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의-공세-407480",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의-베기-406647"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 2,
-        "linkDensity": 0.059,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\기사단의공세.md",
+        "lastUpdate": ""
+      }
+    },
+    "406647": {
+      "id": "406647",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "기사단의 베기",
+      "koreanName": "기사단의 베기",
+      "englishName": "Templar Slash",
+      "icon": "inv_sword_2h_artifactashbringerpurified_d_03",
+      "iconName": "inv_sword_2h_artifactashbringerpurified_d_03",
+      "school": "",
+      "cooldown": "선행 공격 후 사용",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 0.4%",
+      "range": "근접",
+      "description": "기사단의 공세 뒤에 열리는 두 번째 수동 공격이다. 항상 치명타로 적중하며 신성한 힘 1개를 생성한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringerpurified_d_03.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_2h_artifactashbringerpurified_d_03.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_2h_artifactashbringerpurified_d_03.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_2h_artifactashbringerpurified_d_03.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringerpurified_d_03.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의-공세-407480"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Skills\\기사단의-베기-406647.md",
         "lastUpdate": ""
       }
     },
@@ -76754,11 +77327,63 @@
         "lastUpdate": ""
       }
     },
+    "406834": {
+      "id": "406834",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "성전의 강타",
+      "koreanName": "성전의 강타",
+      "englishName": "Crusading Strikes",
+      "icon": "inv_sword_2h_artifactashbringer_d_01",
+      "iconName": "inv_sword_2h_artifactashbringer_d_01",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "성전의 강타를 선택한 징벌의 자동 공격 피해 레코드다. 수동 성전사의 일격 버튼이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringer_d_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringer_d_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/광신도의열정"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Procs\\성전의-강타-406834.md",
+        "lastUpdate": ""
+      }
+    },
     "406872": {
       "id": "406872",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76768,14 +77393,14 @@
       "icon": "spell_holy_greaterblessingofkings",
       "iconName": "spell_holy_greaterblessingofkings",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 격노 (Divine Wrath)",
+      "description": "응징의 격노 지속시간을 4초 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76787,14 +77412,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_greaterblessingofkings.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/찬란한영광",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -76907,7 +77537,7 @@
       "id": "407067",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -76917,14 +77547,14 @@
       "icon": "spell_holy_borrowedtime",
       "iconName": "spell_holy_borrowedtime",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 질주 (Rush of Light)",
+      "description": "성전사의 일격·심판의 칼날·심판이 치명타로 적중하면 10초 동안 가속 5%를 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76936,14 +77566,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -77145,6 +77779,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\마음의눈.md",
+        "lastUpdate": ""
+      }
+    },
+    "407480": {
+      "id": "407480",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "기사단의 공세",
+      "koreanName": "기사단의 공세",
+      "englishName": "Templar Strike",
+      "icon": "inv_sword_2h_artifactashbringer_d_01",
+      "iconName": "inv_sword_2h_artifactashbringer_d_01",
+      "school": "",
+      "cooldown": "기본 6초; 2회 충전",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 0.4%",
+      "range": "근접",
+      "description": "기사단의 공세를 선택했을 때 사용하는 첫 수동 공격이다. 신성한 힘 1개를 만들고 기사단의 베기를 준비한다. 기본 6초 재사용 대기시간과 2회 충전이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringer_d_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_2h_artifactashbringer_d_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_artifactashbringer_d_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/기사단의-베기-406647"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/기사단의공세",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/성전의강타"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Skills\\기사단의-공세-407480.md",
         "lastUpdate": ""
       }
     },
@@ -77463,6 +78150,109 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Talents\\웨이른석부여.md",
+        "lastUpdate": ""
+      }
+    },
+    "408458": {
+      "id": "408458",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "신성한 목적",
+      "koreanName": "신성한 목적",
+      "englishName": "Divine Purpose",
+      "icon": "spell_holy_divinepurpose",
+      "iconName": "spell_holy_divinepurpose",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "신성한 목적이 발동해 다음 신성한 힘 소비기가 무료이고 피해·치유가 10% 증가한 상태다. 기본 지속시간은 12초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divinepurpose.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_divinepurpose.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_divinepurpose.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_divinepurpose.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divinepurpose.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한-목적-408459",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-2세트-1296660",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\신성한-목적-408458.md",
+        "lastUpdate": ""
+      }
+    },
+    "408459": {
+      "id": "408459",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "신성한 목적",
+      "koreanName": "신성한 목적",
+      "englishName": "Divine Purpose",
+      "icon": "spell_holy_divinepurpose",
+      "iconName": "spell_holy_divinepurpose",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "신성한 힘 소비기가 10% 확률로 다음 소비기를 무료로 만들고 피해와 치유를 10% 높인다. 실제 버프는 408458이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divinepurpose.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_divinepurpose.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_divinepurpose.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_divinepurpose.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divinepurpose.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-2세트-1296660",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\신성한-목적-408459.md",
         "lastUpdate": ""
       }
     },
@@ -80229,7 +81019,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -82932,14 +83722,14 @@
       "icon": "inv_ability_heraldofthesunpaladin_dawnlight",
       "iconName": "inv_ability_heraldofthesunpaladin_dawnlight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 새벽빛 (Dawnlight)",
+      "range": "기술 설명 참조",
+      "description": "징벌은 파멸의 재, 신성은 신성한 반사 또는 천상의 종 다음 두 신성한 힘 소비기가 대상에게 8초 새벽빛을 부여한다. 주변 발산 비율은 징벌 4%, 신성 8%이며 5대상 초과 시 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82951,14 +83741,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_heraldofthesunpaladin_dawnlight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한광채",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/태양의화신"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -83035,14 +83832,14 @@
       "icon": "inv_qirajidol_sun",
       "iconName": "inv_qirajidol_sun",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 영롱함 (Luminosity)",
+      "range": "기술 설명 참조",
+      "description": "징벌의 천벌의 망치·천상의 폭풍 치명타 확률은 10%p, 신성의 신성 충격·여명의 빛은 5%p 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83054,14 +83851,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_qirajidol_sun.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/불사르는태양"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -83084,14 +83886,14 @@
       "icon": "ability_malkorok_blightofyshaarj_yellow",
       "iconName": "ability_malkorok_blightofyshaarj_yellow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 태양의 은총 (Solar Grace)",
+      "range": "기술 설명 참조",
+      "description": "가속이 징벌 2%, 신성 5% 증가하는 지속 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83103,14 +83905,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_malkorok_blightofyshaarj_yellow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -83133,14 +83939,14 @@
       "icon": "spell_holy_divineprovidence",
       "iconName": "spell_holy_divineprovidence",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 여명의 의지 (Will of the Dawn)",
+      "range": "기술 설명 참조",
+      "description": "생명력이 80% 이상이면 이동 속도가 5% 증가한다. 35% 미만으로 떨어지면 1분에 한 번 5초 동안 이동 속도가 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83152,14 +83958,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprovidence.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/신의-가호-403876"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/광명"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -83182,14 +83992,14 @@
       "icon": "spell_holy_mindvision",
       "iconName": "spell_holy_mindvision",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 잔존하는 광휘 (Lingering Radiance)",
+      "range": "기술 설명 참조",
+      "description": "새벽빛이 만료되거나 지속시간이 늘어나면 적에게 상급 심판을, 아군에게 6초 영원의 불꽃을 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83203,12 +84013,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한광채",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/영원의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -83231,14 +84045,14 @@
       "icon": "spell_priest_burningwill",
       "iconName": "spell_priest_burningwill",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불사르는 태양 (Sun Sear)",
+      "range": "기술 설명 참조",
+      "description": "징벌의 천벌의 망치·천상의 폭풍 치명타는 4초 지속 광휘 피해를, 신성의 신성 충격·여명의 빛 치명타는 4초 추가 치유를 남긴다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83250,14 +84064,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/영롱함"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -83280,14 +84099,14 @@
       "icon": "spell_holy_divineillumination",
       "iconName": "spell_holy_divineillumination",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 광명 (Illumine)",
+      "range": "기술 설명 참조",
+      "description": "새벽빛이 걸린 적의 이동 속도를 50% 낮추고 아군은 20% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83301,12 +84120,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/여명의의지"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -83329,14 +84151,14 @@
       "icon": "ability_paladin_holyavenger",
       "iconName": "ability_paladin_holyavenger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 태양의 화신 (Sun's Avatar)",
+      "range": "기술 설명 참조",
+      "description": "시전자와 30야드 안의 새벽빛 사이에 광선이 생겨 통과하는 적을 공격하고 아군을 치유한다. 징벌은 8대상, 신성은 5대상을 초과하면 효과가 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83348,14 +84170,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_holyavenger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한광채"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -83544,14 +84371,14 @@
       "icon": "ability_priest_halo",
       "iconName": "ability_priest_halo",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 두 번째 일출 (Second Sunrise)",
+      "range": "기술 설명 참조",
+      "description": "징벌의 천상의 폭풍·천벌의 망치, 신성의 여명의 빛·신성 충격이 15% 확률로 30% 효율의 추가 시전을 일으킨다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83563,14 +84390,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_halo.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한-목적-408459"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -83593,14 +84425,14 @@
       "icon": "spell_priest_power-word",
       "iconName": "spell_priest_power-word",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 일렁이는 빛줄기 (Gleaming Rays)",
+      "range": "기술 설명 참조",
+      "description": "신성한 힘을 사용하는 능력의 피해와 치유를 3% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83612,14 +84444,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_power-word.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/영원의불꽃"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -83642,14 +84479,14 @@
       "icon": "spell_holy_persecution",
       "iconName": "spell_holy_persecution",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 샛별 (Morning Star)",
+      "range": "기술 설명 참조",
+      "description": "5초마다 다음 새벽빛의 피해 또는 치유가 5% 증가하는 중첩을 얻으며 최대 10중첩이다. 비전투 중에는 두 배 빠르게 쌓인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83661,14 +84498,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_persecution.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -83958,7 +84799,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "격동하는 천상 활성 중 특정 생성기를 사용하면 지속시간이 1초 늘어난다. 보호는 심판·천벌의 망치·축복받은 망치·정의의 망치·성전사의 일격을 사용한다. 징벌은 해당 전문화의 심판이 아닌 성전사의 일격·천벌의 망치·심판의 칼날 계열 조건을 따로 확인한다.",
+      "description": "격동하는 천상 활성 중 특정 생성기를 사용하면 지속시간이 1초 늘어난다. 보호는 심판·천벌의 망치·축복받은 망치·정의의 망치·성전사의 일격을 사용한다. 징벌은 성전사의 일격·천벌의 망치·심판의 칼날로 연장하며 일반 심판은 연장기가 아니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -83987,7 +84828,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.056,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -84496,7 +85337,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "보호의 정의의 방패와 영광의 서약이 최고천의 망치를 자동으로 발생시킨다. 격동하는 천상 중에는 망치 하나가 추가된다. 징벌에서는 해당 전문화의 신성한 힘 소비기가 발동 조건이다.",
+      "description": "보호의 정의의 방패와 영광의 서약이 최고천의 망치를 자동으로 발생시킨다. 격동하는 천상 중에는 망치 하나가 추가된다. 징벌에서는 기사단의 선고·최후의 선고와 천상의 폭풍이 발동 조건이며 격동하는 천상 중 망치가 하나 더 발생한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -84524,7 +85365,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.061,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -84658,7 +85499,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "빛의 망치 후 6초 동안 가속이 12% 증가한다. 보호는 정의의 방패 효과와 대상 위치의 신성화를 얻고, 징벌은 심판 관련 효과를 받는다.",
+      "description": "빛의 망치 후 6초 동안 가속이 12% 증가한다. 보호는 정의의 방패 효과와 대상 위치의 신성화를 얻고, 징벌은 주 대상에게 심판을 적용한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -87863,14 +88704,14 @@
       "icon": "spell_holy_rune",
       "iconName": "spell_holy_rune",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 서광 (Aurora)",
+      "range": "기술 설명 참조",
+      "description": "징벌은 파멸의 재 뒤 10% 강화 신성한 목적을, 신성은 신성한 반사·천상의 종 뒤 15% 강화 신성한 목적을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87882,14 +88723,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_rune.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -95345,14 +96192,14 @@
       "icon": "inv_ability_holyfire_orb",
       "iconName": "inv_ability_holyfire_orb",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 안쉬의 축복 (Blessing of An'she)",
+      "range": "기술 설명 참조",
+      "description": "징벌의 지속 피해·치유가 분당 약 2회 발동 빈도로 다음 심판 피해를 50% 높인다. 신성은 신성 충격의 피해와 치유를 15% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95364,14 +96211,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_orb.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛을향하여"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -95800,7 +96652,7 @@
       "id": "446663",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -95810,14 +96662,14 @@
       "icon": "spell_burningsoul",
       "iconName": "spell_burningsoul",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 재가 되어라 (Burn to Ash)",
+      "description": "진실의 상흔이 치명타로 적중하면 지속시간이 2초 늘고, 진실의 상흔에 걸린 대상에게 다른 지속 피해가 30% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95830,13 +96682,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/진실의상흔",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정화"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -105907,7 +106764,7 @@
       "id": "458359",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -105917,14 +106774,14 @@
       "icon": "achievement_dungeon_gloryoftheraider",
       "iconName": "achievement_dungeon_gloryoftheraider",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찬란한 영광 (Radiant Glory)",
+      "description": "수동 응징의 격노를 대체해 파멸의 재 사용 시 8초 동안 날개를 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105937,15 +106794,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/파멸의재",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.049,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -115046,6 +115905,58 @@
         "lastUpdate": ""
       }
     },
+    "1241288": {
+      "id": "1241288",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "천벌의 망치",
+      "koreanName": "천벌의 망치",
+      "englishName": "Hammer of Wrath",
+      "icon": "inv12_ability_paladin_hammerofwrath",
+      "iconName": "inv12_ability_paladin_hammerofwrath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "응징의 격노 동안 심판이 천벌의 망치로 강화되는 특성이다. 징벌의 실제 시전은 24275다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_paladin_hammerofwrath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_paladin_hammerofwrath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_paladin_hammerofwrath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_paladin_hammerofwrath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_paladin_hammerofwrath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\천벌의-망치-1241288.md",
+        "lastUpdate": ""
+      }
+    },
     "1241413": {
       "id": "1241413",
       "type": "atomic-skill",
@@ -122906,6 +123817,58 @@
         "lastUpdate": ""
       }
     },
+    "1253174": {
+      "id": "1253174",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "응징의 심판",
+      "koreanName": "응징의 심판",
+      "englishName": "Judge, Jury and Executioner",
+      "icon": "spell_holy_sealofblood",
+      "iconName": "spell_holy_sealofblood",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "사형 선고 이후 다음 신성한 힘 소비가 사용한 자원을 반환하도록 준비된 효과다. 기본 지속시간은 15초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_sealofblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_sealofblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_sealofblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/사형선고"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/응징의심판"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\응징의-심판-1253174.md",
+        "lastUpdate": ""
+      }
+    },
     "1253176": {
       "id": "1253176",
       "type": "spec-talent",
@@ -123124,7 +124087,7 @@
       "id": "1253598",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -123134,14 +124097,14 @@
       "icon": "ability_paladin_sanctifiedwrath",
       "iconName": "ability_paladin_sanctifiedwrath",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성전 (Crusade)",
+      "description": "응징의 격노가 처음 가속 2%를 주고 소비한 신성한 힘마다 가속이 2%씩 늘어 최대 20%에 도달하게 하는 지속 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123154,15 +124117,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 1,
-        "linkDensity": 0.068,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -127446,7 +128411,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "천상의 종이 주 대상에게 두 번 추가로 시전되는 기사단 효과다. 현재 일반 툴팁은 100%를 표시하지만 12.1 공식 패치 노트의 PvE 조정은 80%이며 PvP 45% 조정과 구분한다.",
+      "description": "천상의 종이 주 대상에게 두 번 추가로 시전되는 기사단 효과다. 징벌의 추가 심판은 각각 100% 효율이다. 보호의 응징의 방패만 12.1 공식 PvE 패치에서 80%로 조정됐으며 보호 PvP 45% 조정과도 구분한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -127473,7 +128438,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.042,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -128107,7 +129072,7 @@
       "id": "1261111",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -128117,14 +129082,14 @@
       "icon": "inv_ability_holyfire_buff",
       "iconName": "inv_ability_holyfire_buff",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 빛 (Light Within)",
+      "description": "응징의 격노 중 기사단의 선고·최후의 선고와 천상의 폭풍의 피해를 계급당 10% 높인다. 두 계급을 모두 선택한 경우 20%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128136,14 +129101,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_buff.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -128155,7 +129126,7 @@
       "id": "1261113",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -128165,14 +129136,14 @@
       "icon": "inv12_apextalent_paladin_lightwithin",
       "iconName": "inv12_apextalent_paladin_lightwithin",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 빛 (Light Within)",
+      "description": "선택한 전쟁의 기술 또는 정의로운 이유가 다음 심판의 칼날 피해를 80% 증가시키고 발동을 한 번 더 저장하게 한다. 두 발동 특성은 같은 선택 노드의 대안이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128184,14 +129155,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_lightwithin.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/정의로운이유",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛-1261159"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "synergyCount": 4,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -128360,7 +129337,7 @@
       "id": "1261159",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -128370,14 +129347,14 @@
       "icon": "inv_ability_holyfire_buff",
       "iconName": "inv_ability_holyfire_buff",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 빛 (Light Within)",
+      "description": "전쟁의 기술 또는 정의로운 이유로 강화된 심판의 칼날이 경로상의 적을 공격하는 신성 마력을 방출한다. 주 대상 피해는 다른 대상의 2.5배다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128389,18 +129366,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_buff.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/전쟁의기술"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\내면의빛-1261159.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261160": {
+      "id": "1261160",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "내면의 빛",
+      "koreanName": "내면의 빛",
+      "englishName": "Light Within",
+      "icon": "inv_ability_holyfire_buff",
+      "iconName": "inv_ability_holyfire_buff",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "내면의 빛 마지막 노드가 강화된 심판의 칼날에서 발생시키는 자동 신성 마력 피해다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_buff.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_holyfire_buff.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_holyfire_buff.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_holyfire_buff.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_buff.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/내면의빛-1261159"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Procs\\내면의-빛-1261160.md",
         "lastUpdate": ""
       }
     },
@@ -128569,7 +129603,7 @@
       "id": "1261562",
       "type": "talent",
       "class": "Paladin",
-      "spec": "징벌",
+      "spec": "Retribution",
       "specs": [
         "Retribution"
       ],
@@ -128579,14 +129613,14 @@
       "icon": "ability_paladin_shieldofthetemplar",
       "iconName": "ability_paladin_shieldofthetemplar",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 복수의 방패 (Shield of Vengeance)",
+      "description": "신의 가호의 피해 감소를 10%p 더 높이고 사용 시 복수의 방패를 자동으로 부여한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128598,14 +129632,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_shieldofthetemplar.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/신의-가호-403876"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/복수의방패-184662"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -130485,7 +131523,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "기사단이 보호의 심판 피해를 30% 강화하는 지속 효과다. 전문화별 툴팁의 보정 대상과 수치가 다르다.",
+      "description": "보호의 심판 피해는 30%, 징벌의 기사단의 선고·최후의 선고 피해는 25% 강화한다. 한국어 조건 문자열에 누락된 기본 기사단의 선고는 영문 및 실제 적용 대상을 교차 확인했다. PvP 보정을 PvE 수치에 덧붙이지 않는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -130512,7 +131550,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.06,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -131075,14 +132113,14 @@
       "icon": "ability_paladin_sheathoflight",
       "iconName": "ability_paladin_sheathoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빛을 향하여 (Walk Into Light)",
+      "range": "기술 설명 참조",
+      "description": "징벌은 응징의 격노를 시전하면 신성한 힘 2개와 안쉬의 축복을 얻고, 날개 중 천벌의 망치가 심판의 칼날을 100% 효율로 자동 시전한다. 신성은 날개 중 빛 주입이 100% 더 자주 발동한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131094,14 +132132,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_sheathoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천벌의망치",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/심판의칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한검"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/안쉬의축복"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -131124,14 +132170,14 @@
       "icon": "spell_paladin_inquisition",
       "iconName": "spell_paladin_inquisition",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 무한한 광채 (Endless Gleam)",
+      "range": "기술 설명 참조",
+      "description": "징벌은 새벽빛 대상에게 천상의 폭풍이나 기사단의 선고 계열을 적중시킬 때 지속시간을 0.3초 늘린다. 두 새벽빛을 천상의 폭풍으로 함께 맞히면 추가 0.5초가 붙는다. 신성은 새벽빛이 생명력이 가득 찬 아군을 치유하면 0.5초 늘어난다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131143,14 +132189,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_inquisition.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/잔존하는광휘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -131325,14 +132377,14 @@
       "icon": "spell_paladin_lightofdawn",
       "iconName": "spell_paladin_lightofdawn",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 햇빛 태생 (Born in Sunlight)",
+      "range": "기술 설명 참조",
+      "description": "응징의 격노 동안 새벽빛의 치명타 확률이 15%p 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131344,14 +132396,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightofdawn.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/새벽빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한광채"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -147481,6 +148538,104 @@
         "lastUpdate": ""
       }
     },
+    "1296660": {
+      "id": "1296660",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "Paladin Retribution 12.1 Class Set 2pc",
+      "koreanName": "Paladin Retribution 12.1 Class Set 2pc",
+      "englishName": "Paladin Retribution 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "시즌 2 징벌 2세트는 신성한 목적 발동 확률을 10%p 높인다. 신성한 목적을 소비하면 12초 동안 신성 피해가 10% 증가하는 신성한 권능을 얻는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/신성한-목적-408459"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.044,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\시즌2-2세트-1296660.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296661": {
+      "id": "1296661",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "Paladin Retribution 12.1 Class Set 4pc",
+      "koreanName": "Paladin Retribution 12.1 Class Set 4pc",
+      "englishName": "Paladin Retribution 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "시즌 2 징벌 4세트는 신성한 목적 소비 뒤 다른 종류의 신성한 힘 소비기에 천상의 심판관 추가 피해를 준비한다. 이미 준비 효과가 있으면 새로 발동하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 0,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\시즌2-4세트-1296661.md",
+        "lastUpdate": ""
+      }
+    },
     "1296930": {
       "id": "1296930",
       "type": "buff",
@@ -148646,6 +149801,56 @@
         "lastUpdate": ""
       }
     },
+    "1305230": {
+      "id": "1305230",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "신성한 권능",
+      "koreanName": "신성한 권능",
+      "englishName": "Divine Power",
+      "icon": "spell_holy_sealofwrath",
+      "iconName": "spell_holy_sealofwrath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "시즌 2 2세트로 신성한 목적을 소비한 뒤 얻는 12초짜리 신성 피해 10% 증가 버프다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofwrath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_sealofwrath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_sealofwrath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_sealofwrath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofwrath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-2세트-1296660"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\신성한-권능-1305230.md",
+        "lastUpdate": ""
+      }
+    },
     "1305711": {
       "id": "1305711",
       "type": "debuff",
@@ -148805,6 +150010,166 @@
         "lastUpdate": ""
       }
     },
+    "1306161": {
+      "id": "1306161",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "천상의 심판관",
+      "koreanName": "천상의 심판관",
+      "englishName": "Divine Arbiter",
+      "icon": "spell_holy_eyeforaneye",
+      "iconName": "spell_holy_eyeforaneye",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "최후의 선고 계열로 신성한 목적을 소비한 뒤 얻는 천상의 심판관 준비 효과다. 천상의 폭풍 또는 사용 가능한 빛의 망치로 다른 소비기 조건을 충족한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_eyeforaneye.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_eyeforaneye.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_eyeforaneye.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\천상의-심판관-선고-1306161.md",
+        "lastUpdate": ""
+      }
+    },
+    "1306162": {
+      "id": "1306162",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "천상의 심판관",
+      "koreanName": "천상의 심판관",
+      "englishName": "Divine Arbiter",
+      "icon": "spell_holy_eyeforaneye",
+      "iconName": "spell_holy_eyeforaneye",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "천상의 폭풍으로 신성한 목적을 소비한 뒤 얻는 천상의 심판관 준비 효과다. 최후의 선고 또는 사용 가능한 빛의 망치가 후속 소비기다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_eyeforaneye.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_eyeforaneye.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_eyeforaneye.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\천상의-심판관-폭풍-1306162.md",
+        "lastUpdate": ""
+      }
+    },
+    "1306923": {
+      "id": "1306923",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "천상의 심판관",
+      "koreanName": "천상의 심판관",
+      "englishName": "Divine Arbiter",
+      "icon": "spell_holy_eyeforaneye",
+      "iconName": "spell_holy_eyeforaneye",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "발동 대상 주변 8야드",
+      "description": "시즌 2의 천상의 심판관을 적합한 후속 소비기로 사용했을 때 발생하는 자동 신성 피해다. 현재 툴팁 계수는 주 대상 전투력 1012.5%, 주변 8야드 적 전투력 472.5%다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_eyeforaneye.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_eyeforaneye.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_eyeforaneye.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Procs\\천상의-심판관-1306923.md",
+        "lastUpdate": ""
+      }
+    },
     "1309535": {
       "id": "1309535",
       "type": "proc",
@@ -148959,6 +150324,61 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\피로치를빚.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "1310461": {
+      "id": "1310461",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "specs": [
+        "Retribution"
+      ],
+      "name": "천상의 심판관",
+      "koreanName": "천상의 심판관",
+      "englishName": "Divine Arbiter",
+      "icon": "spell_holy_eyeforaneye",
+      "iconName": "spell_holy_eyeforaneye",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "빛의 망치로 신성한 목적을 소비해 얻는 천상의 심판관 준비 상태다. 고정한 SimC 구현에서는 최후의 선고와 천상의 폭풍이 후속 소비기다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_eyeforaneye.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_eyeforaneye.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_eyeforaneye.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_eyeforaneye.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/최후의선고",
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Skills/천상의폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/징벌/Talents/시즌2-4세트-1296661"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Buffs\\천상의-심판관-망치-1310461.md",
+        "lastUpdate": ""
       }
     },
     "1311913": {
