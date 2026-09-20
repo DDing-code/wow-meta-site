@@ -260,6 +260,14 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Sources already inspected: Blizzard 12.1, current Korean/English tooltips, all four actual Icy Veins rotation presets, Method's August 27 guide and fixed SimC implementation. Current aggregate logs were inaccessible; June usage percentages were removed from current KB recommendations. Source disagreements about normal versus set-granted Volley priority and stale implementation values must remain explicit in the manuscript.
 - Regression check: `node scripts/verify-shadow-kb.cjs`. Canonical KB is outside the site Git repository; the site commit preserves generated DB and site content, not a remote vault backup. Dense graph labels, older shared mechanics and the 1.69 MB gzip bundle remain separate work.
 
+## Assassination Rogue: partial KB review, 2026-09-21
+
+- Read current Wowhead Whispyr (September 6), Icy Veins rotation/overview and Method Whispyr guides. The direct Blizzard patch-note request returned 403; do not claim direct access from the guide's quotation.
+- Manually checked Korean/English tooltips for Implacable 1265385/1265386/1265387 and Crimson Tempest 1247227. Replaced copied generic apex prose with the distinct effects and corrected Tempest's energy cost, radius, generator identity and two-secondary-target bleed copying.
+- The old manuscript's deliberate Envenom-expiration energy advice contradicts the current first apex node. The full replacement is not yet written. Other open issues include Shiv hero/build conditions, Deathmark's current multiplier, direct versus copied Rupture/Internal Bleeding, and automatic versus manual Tea choice nodes.
+- Online name/icon/link checks passed for 46 local atomic notes; this is not mechanics validation of all 46. The four manually reviewed records have a scoped runnable check in scripts/verify-assassination-kb.cjs. Source conflicts and remaining work are recorded in the canonical Meta/review-12.1.md.
+- Generated skill data was synchronized. No Assassination deployment or full-guide completion is claimed; its manuscript remains 12.0.5.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

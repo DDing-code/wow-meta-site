@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T23:28:31.406Z",
+    "generatedAt": "2026-09-20T23:37:58.074Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -121377,12 +121377,12 @@
       "school": "",
       "cooldown": "",
       "castTime": "즉시",
-      "resourceCost": "기력",
-      "range": "근접",
-      "description": "# 혈폭풍 (Crimson Tempest)",
+      "resourceCost": "기력 60",
+      "range": "자신 주위 10미터",
+      "description": "기력 60을 소모하는 즉시 광역 생성기다. 자신 주위 10미터를 공격하고 연계 점수 1점을 생성한다. 5대상을 넘으면 피해가 감소한다. 연계 점수를 소모하는 과거의 출혈 마무리 기술로 설명하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121403,7 +121403,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.061,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -136266,14 +136266,14 @@
       "icon": "inv12_apextalent_rogue_implacable",
       "iconName": "inv12_apextalent_rogue_implacable",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불구대천 (Implacable)",
+      "description": "독살 피해를 10% 높이고 독살에 실제로 소모한 연계 점수 1점당 기력 2를 회복한다. 독살 효과 만료를 기다려 기력을 받던 구버전 설명을 사용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136292,7 +136292,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -136314,14 +136314,14 @@
       "icon": "inv12_apextalent_rogue_implacable",
       "iconName": "inv12_apextalent_rogue_implacable",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불구대천 (Implacable)",
+      "description": "자연 및 출혈 능력의 피해를 10% 높이는 지속 효과다. 같은 이름의 첫 노드가 제공하는 독살 기력 회복과 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136340,7 +136340,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -136362,14 +136362,14 @@
       "icon": "inv12_apextalent_rogue_implacable",
       "iconName": "inv12_apextalent_rogue_implacable",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불구대천 (Implacable)",
+      "description": "왕의 파멸로 공격한 뒤 1초 동안 자동으로 다섯 번 공격한다. 각 공격은 무기의 치명독을 적용하고 연계 점수 1점을 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -136388,7 +136388,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
