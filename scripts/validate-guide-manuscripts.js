@@ -25,6 +25,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['mage-fire', '12.1'],
   ['mage-frost', '12.1'],
   ['monk-brewmaster', '12.1'],
+  ['paladin-protection', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
@@ -155,7 +156,7 @@ const HERO_BRANCH_ROLE_TERMS = [
   '\uC5F0\uACC4 \uC810\uC218',
 ];
 const PRACTICAL_TIP_ACTION_PATTERN = /\uBA3C\uC800|\uD655\uC778|\uB9C9|\uBE44\uC6B0|\uB9DE\uCD94|\uC720\uC9C0|\uC4F0|\uB204\uB974|\uBC30\uC815|\uB04A|\uD53C\uD558|\uC900\uBE44|\uBCF4\uC874|\uC608\uC57D|\uBD84\uB9AC|\uBB36|\uC904\uC774|\uD68C\uC218|\uC313|\uC5F4|\uACE0\uC815|\uD655\uBCF4|\uB118\uAE30|\uC815\uB9AC|\uC544\uB07C|\uC18C\uBE44|\uAE30\uB2E4\uB9AC|\uB2F9\uAE30|\uAE54|\uB193\uCE58|\uBCF4\uC138\uC694|\uBD05\uB2C8\uB2E4|\uC9C1\uC804|\uC804\uC5D0|\uD6C4\uC5D0|\uB9D0\uACE0/u;
-const PRACTICAL_TIP_CONTEXT_PATTERN = /\uB808\uC774\uB4DC|\uC3D0\uAE30|\uB2E8\uC77C|\uAD11\uC5ED|\uD480|\uBCF4\uC2A4|\uD30C\uD2F0|\uACF5\uB300|\uB85C\uADF8|\uC804\uD22C/u;
+const PRACTICAL_TIP_CONTEXT_PATTERN = /레이드|쐐기|단일|광역|풀|보스|파티|공대|로그|전투/u;
 const HERO_BRANCH_CORE_DIFF_PATTERN = /핵심|차이|달라|중심|기본|흐름|구간|발동|타이밍|유지|소비|생성|배정|묶|강화|전환|먼저|방어|치유|지원|피해|풀|대상|위치|횟수|비율|스킬|주문|버튼|역할|루프|연계|직전|준비|낭비|전에|만들|안전|후속|복귀|사라지/i;
 const HERO_BRANCH_CONTENT_PATTERN = /레이드|쐐기|단일|광역|로그|상위|고단|보스|던전|선택률|채택률|표본|기준|해석|풀|파티|공대|구간|타이머|위치|대상|스킬|유지|고른|선택|현재|빌드|가치|운용|상황|전투|피해|흐름|보조|생성|회복|회전|전후|후속|착지|말미|핫픽스|심|역할|비교|기본|리듬|연결|자원/i;
 const HERO_BRANCH_WARNING_PATTERN = /주의|실수|낭비|손실|공백|밀리|늦|끊|먼저|무너지|빠지|잃|위험|안 됩니다|실패|과충전|헛|보다|나눕|방치|정당화하지|기대하지|않|못|줄어|떨어|지연|밀어내|확인|아닙니다|로그|타성|비었|약하므로|없으면|없다면|요구|충돌|검수|보존|안정|별도|대상|같이|재시동|직전|뒤집힌/i;
@@ -1006,6 +1007,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
 }
 
 function validateManuscriptSourceShape() {
+  assert(PRACTICAL_TIP_CONTEXT_PATTERN.test('쐐기'), 'Practical context matching must accept correctly spelled Korean Mythic+');
   const manuscriptSource = read(MANUSCRIPT_PATH);
 
   assert(
@@ -1160,6 +1162,33 @@ function main() {
   const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
   assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
   assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
+
+  const protection = manuscripts['paladin-protection'];
+  const protectionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '08-성기사', '보호', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(protectionSource)) {
+    assert(JSON.stringify(JSON.parse(read(protectionSource))) === JSON.stringify(protection), 'Protection must match its canonical 12.1 manuscript');
+  }
+  const protectionNotes = Object.values(kbSkills).filter(skill => /[\\/]08-성기사[\\/]보호[\\/]/.test(skill.source?.kbPath || ''));
+  assert(protectionNotes.length === 65 && protectionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 65 Protection notes must retain reviewed descriptions');
+  assert(!protection.extraSkills?.length && !kbSkills['171648'], 'Protection must not revive Sanctified Wrath or bypass canonical spells');
+  assert(kbSkills['389539']?.type === 'atomic-skill' && kbSkills['385438']?.type === 'buff', 'Sentinel cast and buff must stay distinct');
+  assert(['275779', '1241413'].every(id => kbSkills[id]?.specs.length === 1 && kbSkills[id].specs[0] === 'Protection'), 'Protection must use its own Judgment and Hammer of Wrath');
+  assert(kbSkills['427453']?.castTime === '즉시' && kbSkills['427453']?.resourceCost.includes('3개'), 'Hammer of Light must remain a real three-power cast');
+  assert(kbSkills['431398']?.type === 'proc' && kbSkills['434132']?.type === 'buff', 'Automatic hero effects must not become player casts');
+  assert(kbSkills['31850']?.description.includes('12초') && kbSkills['31850']?.description.includes('30%') && kbSkills['86659']?.cooldown.includes('3분'), 'Current defensive duration and cooldowns must survive sync');
+  assert(kbSkills['1296659']?.description.includes('모든 신성 공격') && kbSkills['1300662']?.type === 'proc', 'Season 2 must distinguish triggered damage from a universal vulnerability');
+  assert(!kbSkills['498']?.specs.includes('Protection') && !kbSkills['20271']?.specs.includes('Protection') && kbSkills['204018']?.specs.length === 1, 'Paladin specialization scopes must not regress');
+  for (const branch of protection.heroBranches) {
+    const rows = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
+    assert(rows.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId]?.specs.includes('Protection')), 'Protection flows must contain correctly scoped player casts only');
+    assert(!rows.some(row => ['20271', '24275', '385438', '53595'].includes(row.skillId)), 'Selected Blessed Hammer flows must not borrow foreign IDs, buffs or the alternative hammer');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Protection single-target and AoE conditions must differ');
+    if (branch.label === '기사단') assert(!rows.some(row => ['432459', '432472'].includes(row.skillId)), 'Templar must not borrow Lightsmith armaments');
+    if (branch.label === '빛대장장이') assert(!rows.some(row => row.skillId === '427453'), 'Lightsmith must not borrow Hammer of Light');
+  }
+  const protectionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Paladin' && note.spec === 'Protection');
+  assert(protectionSynergies.length === 18 && protectionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Protection'))), 'Protection must retain eighteen correctly scoped numeric relationships');
+  assert(protection.graphCenterSkillId === '53600' && protectionSynergies.filter(note => note.participants.includes('53600')).length === 11, 'Shield of the Righteous must retain its eleven actual relationships');
 
   const brewmaster = manuscripts['monk-brewmaster'];
   const brewmasterSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '양조', 'Meta', 'guide-12.1.json');

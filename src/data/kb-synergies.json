@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T18:53:52.181Z",
+    "generatedAt": "2026-09-20T20:01:30.141Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 536,
-    "rawTotalSynergies": 536,
+    "totalSynergies": 547,
+    "rawTotalSynergies": 547,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 182,
+      "unknown": 203,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -109,17 +109,7 @@
       "monk_windwalker_battlegear": 1,
       "monk_windwalker_tier_consumer": 1,
       "monk_windwalker_rushing_wind": 1,
-      "party-utility-control-survival": 1,
       "herald-of-the-sun-shared": 1,
-      "lightsmith-shared-armament": 1,
-      "templar-shared-burst-chain": 1,
-      "templar_burst_window": 1,
-      "lightsmith_support_mitigation": 1,
-      "active_mitigation": 1,
-      "emergency_self_healing": 1,
-      "aoe_threat_holy_power": 1,
-      "holy_power_generation": 1,
-      "defensive_cooldown_rotation": 1,
       "templar_burst": 1,
       "spender-selection": 1,
       "execution-sentence-burst": 1,
@@ -282,7 +272,7 @@
       "Hunter": 50,
       "Mage": 47,
       "Monk": 42,
-      "Paladin": 28,
+      "Paladin": 39,
       "성기사": 10,
       "Priest": 40,
       "Rogue": 36,
@@ -9914,21 +9904,19 @@
     },
     "paladin_common_blessings_interrupt_cleanse_utility": {
       "id": "paladin_common_blessings_interrupt_cleanse_utility",
-      "name": "성기사공용-축복-차단-해제-던전유틸",
+      "name": "공용 축복과 제어: 대상과 피해 종류",
+      "description": "물리 면역·이동 방해 면역·피해 이전을 구분하고 차단과 기절을 대상의 면역에 맞춰 사용한다. 참을성이 적용되는 면역과 신의 축복은 연속 사용 가능 여부를 확인한다.",
       "type": "synergy",
-      "synergyType": "party-utility-control-survival",
+      "synergyType": "unknown",
       "participants": [
         "1022",
         "1044",
         "6940",
         "853",
         "96231",
-        "213644",
-        "190784",
         "633",
         "642",
-        "85673",
-        "35395"
+        "190784"
       ],
       "class": "Paladin",
       "spec": "공용",
@@ -9939,25 +9927,22 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/자유의축복",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/희생의축복",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/비난",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/독소정화",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판의망치",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/성전사의일격",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/비난",
         "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Synergies\\성기사공용-축복-차단-해제-던전유틸.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "paladin_common_herald_sun_dawnlight": {
@@ -10006,32 +9991,19 @@
     },
     "paladin_common_lightsmith_armament_bulwark": {
       "id": "paladin_common_lightsmith_armament_bulwark",
-      "name": "영웅특성-Lightsmith-신성한무기-보루",
+      "name": "빛대장장이: 무장과 후속 소비",
+      "description": "신성한 보루와 신성한 무기는 두 충전을 공유하며 서로 교대한다. 무장 후 걸작의 지정 생성기를 사용하고, 보호의 눈부신 빛 또는 신성의 빛 주입 소비로 투혼의 회복을 얻는다.",
       "type": "synergy",
-      "synergyType": "lightsmith-shared-armament",
+      "synergyType": "unknown",
       "participants": [
-        "432866",
-        "432472",
         "432459",
+        "432472",
         "433011",
-        "434132",
-        "433015",
-        "432802",
-        "432964",
-        "433568",
-        "433583",
-        "433671",
-        "432992",
-        "469701",
         "1271387",
-        "1271466",
-        "432804",
-        "432821",
         "432919",
-        "1260429",
-        "1263782",
-        "433718",
-        "432977"
+        "432802",
+        "469701",
+        "432866"
       ],
       "class": "Paladin",
       "spec": "공용",
@@ -10041,36 +10013,30 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Synergies\\영웅특성-Lightsmith-신성한무기-보루.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "paladin_common_templar_hammer_wrath_chain": {
       "id": "paladin_common_templar_hammer_wrath_chain",
-      "name": "영웅특성-Templar-빛의망치-천벌연쇄",
+      "name": "기사단: 빛의 망치와 자동 망치",
+      "description": "보호는 천상의 종, 징벌은 파멸의 재로 빛의 망치를 준비한다. 빛의 망치 이후 지정 생성기로 격동하는 천상을 이어 가고 소비기로 최고천의 망치를 추가한다. 전문화별 생성기와 치유·흡수 수치는 다르다.",
       "type": "synergy",
-      "synergyType": "templar-shared-burst-chain",
+      "synergyType": "unknown",
       "participants": [
         "427453",
-        "431398",
-        "432463",
-        "432615",
-        "432626",
-        "432929",
-        "433106",
-        "431551",
+        "431533",
         "431687",
-        "431730",
-        "1261525",
-        "1263252",
-        "1271553",
-        "469886",
-        "432990"
+        "432463",
+        "431398",
+        "425518",
+        "432626",
+        "431730"
       ],
       "class": "Paladin",
       "spec": "공용",
@@ -10080,384 +10046,647 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Synergies\\영웅특성-Templar-빛의망치-천벌연쇄.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
-    "paladin_protection_templar_hammer": {
-      "id": "paladin_protection_templar_hammer",
-      "name": "기사단-빛의망치",
+    "paladin-protection-templar-entry": {
+      "id": "paladin-protection-templar-entry",
+      "name": "천상의 종에서 빛의 망치와 기본 방어로",
+      "description": "천상의 종으로 빛의 망치가 열리고, 빛의 망치는 만장일치 판결의 방패 효과와 대상 아래 신성화를 만든다. 신성한 성전의 치유·흡수도 별도로 이어진다.",
       "type": "synergy",
-      "synergyType": "templar_burst_window",
+      "synergyType": "unknown",
       "participants": [
-        "427453",
-        "431398",
-        "432929",
-        "1260429",
-        "432463",
-        "432615",
-        "1263252",
-        "432626",
-        "431533",
-        "31884",
-        "375576",
-        "31935",
         "53600",
-        "1246481",
-        "1246488",
-        "1245979",
-        "391142",
-        "171648"
+        "375576",
+        "427445",
+        "427453",
+        "432626",
+        "431730"
       ],
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\기사단-빛의망치.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-templar-extension": {
+      "id": "paladin-protection-templar-extension",
+      "name": "생성기로 자동 망치 지속시간 연장",
+      "description": "빛의 망치 후 생성기가 격동하는 천상을 연장해 자동 최고천의 망치가 더 이어진다. 보호의 응징의 방패는 이 연장 생성기에 포함되지 않는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "431533",
+        "431687",
+        "275779",
+        "1241413",
+        "204019",
+        "53595"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/최고천의권위",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/휩쓰는선고",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/용맹한성전",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축성의분노"
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\기사단-빛의망치.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\기사단-생성기-격동하는천상.md",
+        "lastUpdate": "2026-09-21"
       }
     },
-    "paladin_protection_lightsmith_bulwark": {
-      "id": "paladin_protection_lightsmith_bulwark",
-      "name": "빛대장장이-신성한보루",
+    "paladin-protection-templar-spender-hammers": {
+      "id": "paladin-protection-templar-spender-hammers",
+      "name": "소비기에서 자동 망치와 무료 망치 누적",
+      "description": "정의의 방패와 영광의 서약은 망치 낙하로 최고천의 망치를 발생시키고, 누적은 구세의 빛의 무료 빛의 망치로 연결된다.",
       "type": "synergy",
-      "synergyType": "lightsmith_support_mitigation",
+      "synergyType": "unknown",
       "participants": [
-        "432459",
-        "432472",
-        "432866",
-        "433011",
-        "434132",
-        "1271387",
-        "469886",
-        "469701",
-        "432802",
-        "432821",
-        "432992",
         "53600",
         "85673",
-        "31850",
-        "86659",
-        "1276945",
-        "1277005"
+        "432463",
+        "431398",
+        "425518"
       ],
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\기사단-소비기-망치.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-magic-mitigation": {
+      "id": "paladin-protection-magic-mitigation",
+      "name": "마법 피해에도 방패 공백 줄이기",
+      "description": "마력 깃든 방패는 정의의 방패에 마법 피해 12% 감소를 더한다. 더 큰 마법 공격에는 고대 왕의 수호자나 적용 가능한 주문 수호의 축복을 따로 배정한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "1276945",
+        "86659",
+        "204018"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마력깃든방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/재결"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\빛대장장이-신성한보루.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\마력깃든방패-마법피해.md",
+        "lastUpdate": "2026-09-21"
       }
     },
-    "paladin_protection_consecration_sotr": {
-      "id": "paladin_protection_consecration_sotr",
-      "name": "신성화-정의의방패",
+    "paladin-protection-lightsmith-wings": {
+      "id": "paladin-protection-lightsmith-wings",
+      "name": "날개 안의 무기와 소비기 복제",
+      "description": "가열로의 축복으로 날개 시전 시 신성한 무기를 얻고 날개 중 신성한 힘 소비기를 복제한다. 무기 남은 시간과 복제 효과 남은 시간은 같지 않을 수 있다.",
       "type": "synergy",
-      "synergyType": "active_mitigation",
+      "synergyType": "unknown",
       "participants": [
-        "26573",
         "53600",
-        "53595",
-        "20271",
         "85673",
-        "204019",
-        "204023",
-        "380188",
-        "386653",
-        "280373",
-        "384815",
-        "393071",
-        "379021",
-        "379022",
-        "378285",
-        "378762"
+        "31884",
+        "433011",
+        "434132",
+        "432472"
       ],
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\빛대장장이-날개-소비기.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-lightsmith-guidance": {
+      "id": "paladin-protection-lightsmith-guidance",
+      "name": "소비기 사용을 신성화 첫 효과로 회수",
+      "description": "천상의 인도는 소비기 사용으로 다음 신성화의 첫 피해와 치유를 강화한다. 거룩한 도구로 한 번에 자원을 더 써도 시전 횟수는 한 번이다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "85673",
+        "433106",
+        "26573",
+        "1277162"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의심판",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의결의",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보루",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/관용의인장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위기극복의저력",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/신성화의불길",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/티르의집행자",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/페렌마커스의열정"
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/거룩한도구"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\신성화-정의의방패.md",
-        "lastUpdate": ""
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\빛대장장이-소비기-신성화.md",
+        "lastUpdate": "2026-09-21"
       }
     },
-    "paladin_protection_word_of_glory_recovery": {
-      "id": "paladin_protection_word_of_glory_recovery",
-      "name": "영광의서약-수호자의손길-긴급복구",
+    "paladin-protection-lightsmith-shared-charges": {
+      "id": "paladin-protection-lightsmith-shared-charges",
+      "name": "무장 충전과 생성기·무료 치유 연결",
+      "description": "보루와 무기는 두 충전을 공유하며 사용 후 서로 교대한다. 걸작은 다음 생성기 세 번에 하급 무장을 부여하고 무료 영광의 서약 소비는 투혼으로 무장 회복을 앞당긴다.",
       "type": "synergy",
-      "synergyType": "emergency_self_healing",
+      "synergyType": "unknown",
       "participants": [
-        "85673",
-        "315924",
-        "204074",
-        "1244019",
-        "378405",
-        "1244070",
-        "393071",
-        "53600",
-        "26573",
-        "31850",
-        "86659",
-        "280373",
-        "209389",
-        "379021"
+        "432459",
+        "432472",
+        "1271387",
+        "432919",
+        "327510",
+        "85673"
       ],
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Buffs/눈부신-빛-327510"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\빛대장장이-신성한보루.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-vanguard-and-spender": {
+      "id": "paladin-protection-vanguard-and-spender",
+      "name": "선봉대 방패 뒤 강화 정의의 방패",
+      "description": "심판에서 준비된 선봉대를 응징의 방패로 소모하면 자원을 얻고 다음 정의의 방패가 강화된다. 두 자동 효과 사이에 실제 방패 시전과 소비가 필요하다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "275779",
+        "31935",
+        "1267203",
+        "1267211",
+        "1267215",
+        "1268810"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Buffs/선봉대-1268810"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267211",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267215"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\선봉대-생성과소비.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-season-two-generators": {
+      "id": "paladin-protection-season-two-generators",
+      "name": "생성기 적중에서 추가 신성 피해",
+      "description": "시즌 2 4세트의 추가 피해는 심판과 망치 계열 생성기 적중에서 발생하며 발동 공격의 치명타에 따라 추가분이 달라진다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1296659",
+        "1300662",
+        "275779",
+        "1241413",
+        "204019",
+        "53595"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-4pc-1296659",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Buffs/불굴의-칙령-1300662"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\시즌2-생성기-불굴의칙령.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-season-two-area": {
+      "id": "paladin-protection-season-two-area",
+      "name": "신성화 속 적에게 치명타 보정",
+      "description": "시즌 2 2세트는 신성화 범위를 넓히고 안에 있는 적에 대한 자신의 기술 치명타 확률을 높인다. 심판 치명타는 빛대장장이의 망치와 모루로 이어진다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "26573",
+        "1296658",
+        "275779",
+        "433718"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-2pc-1296658",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\시즌2-신성화-치명타.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-consecration-healing": {
+      "id": "paladin-protection-consecration-healing",
+      "name": "바닥 적중에서 지속 자가 치유",
+      "description": "위안은 신성화의 실제 피해를 자가 치유로 돌린다. 한 대상 조건의 존귀의 환영과 신성화의 불길은 피해를 통해 회복에도 연결된다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "26573",
+        "1245891",
+        "1245354",
+        "379022"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/존귀의환영",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/신성화의불길"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\신성화-위안-자가치유.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-position-and-armor": {
+      "id": "paladin-protection-position-and-armor",
+      "name": "발밑의 피해 감소와 방패 방어 유지",
+      "description": "정의의 방패의 방어도와 성역의 피해 감소는 다른 효과다. 신성화 안에서 기본 방어를 유지하며 이동 후 4초의 성역 유예 안에 새 위치를 잡는다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "26573",
+        "379021"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\신성화-정의의방패.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-free-heal-and-absorb": {
+      "id": "paladin-protection-free-heal-and-absorb",
+      "name": "방패 세 번에서 무료 치유와 흡수로",
+      "description": "정의의 방패 세 번으로 무료 영광의 서약을 얻고, 낮은 생명력 아군의 치유나 축복받은 서약의 초과 치유 흡수에 사용한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "321136",
+        "327510",
+        "85673",
+        "315924",
+        "1301732"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Buffs/눈부신-빛-327510"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/수호자의손길",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은-서약-1301732"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\영광의서약-수호자의손길-긴급복구.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-shield-hit-and-spender": {
+      "id": "paladin-protection-shield-hit-and-spender",
+      "name": "방패 적중 수를 다음 소비에 반영",
+      "description": "응징의 방패가 맞힌 적 수가 다음 정의의 방패의 피해와 범위를 강화한다. 날아오르는 방패는 실제로 튕길 적이 있을 때 이 연결을 늘린다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "31935",
+        "386653",
+        "386652",
+        "378457"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Buffs/정의로운-격노의-보루-386652"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\응징의방패-방패강화.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-wings-toll-and-resource": {
+      "id": "paladin-protection-wings-toll-and-resource",
+      "name": "날개 중 연속 방패의 자원 넘침 방지",
+      "description": "응징의 격노 또는 파수꾼 중에는 정점 특성으로 방패가 선봉대 강화를 얻는다. 천상의 종과 후속 방패 사이에 정의의 방패를 소비해 자원 손실을 줄인다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "31884",
+        "389539",
+        "31935",
+        "375576",
+        "1267215"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/파수꾼-389539",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267215"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\응징의방패-천상의종.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-generators-and-shield": {
+      "id": "paladin-protection-generators-and-shield",
+      "name": "생성기를 비우지 않고 방패로 소비",
+      "description": "보호 심판과 선택한 망치 생성기로 신성한 힘을 만들고 정의의 방패를 이어 쓴다. 정의의 망치와 축복받은 망치는 같은 선택지다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "53600",
+        "275779",
+        "53595",
+        "204019"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\정의의망치-심판-신성한힘.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-refining-fire-healing": {
+      "id": "paladin-protection-refining-fire-healing",
+      "name": "방패의 지속 피해에서 후속 치유",
+      "description": "응징의 방패의 제련의 불길 피해가 죽지 않는 불씨의 자가 치유로 이어진다. 생명력이 낮을수록 전환량이 늘지만 지속 피해가 실제로 발생해야 한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "31935",
+        "469883",
+        "1244019",
+        "375576"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/제련의불길",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/죽지않는불씨"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\제련의불길-죽지않는불씨.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "paladin-protection-defensive-cooldown-rotation": {
+      "id": "paladin-protection-defensive-cooldown-rotation",
+      "name": "큰 타격을 서로 다른 생존기에 분배",
+      "description": "헌신적인 수호자는 12초 30% 피해 감소와 한 번의 죽음 방지, 고대 왕의 수호자는 8초 50% 피해 감소다. 충전 추가와 자동 발동을 별도로 관리한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "31850",
+        "393114",
+        "86659",
+        "1246481",
+        "378279"
+      ],
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자",
         "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/수호자의손길",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운수호자",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/죽지않는불씨",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/티탄의빛",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/타오르는햇빛",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위기극복의저력",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/연맹의보루",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보루"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\영광의서약-수호자의손길-긴급복구.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_protection_avengers_shield_divine_toll": {
-      "id": "paladin_protection_avengers_shield_divine_toll",
-      "name": "응징의방패-천상의종",
-      "type": "synergy",
-      "synergyType": "aoe_threat_holy_power",
-      "participants": [
-        "31935",
-        "375576",
-        "20271",
-        "85043",
-        "378457",
-        "1276945",
-        "321136",
-        "378845",
-        "391142",
-        "469883",
-        "1245354",
-        "1277162",
-        "1245891",
-        "204023"
-      ],
-      "class": "Paladin",
-      "spec": "보호",
-      "specs": [
-        "Protection"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위대한성전사",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마력깃든방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/집중된적개심",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/제련의불길",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/존귀의환영",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/거룩한도구",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의심판"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\응징의방패-천상의종.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_protection_holy_power_engine": {
-      "id": "paladin_protection_holy_power_engine",
-      "name": "정의의망치-심판-신성한힘",
-      "type": "synergy",
-      "synergyType": "holy_power_generation",
-      "participants": [
-        "53595",
-        "20271",
-        "204019",
-        "204023",
-        "85043",
-        "378457",
-        "31935",
-        "53600",
-        "386653",
-        "378845",
-        "383388",
-        "384815",
-        "377053",
-        "380188"
-      ],
-      "class": "Paladin",
-      "spec": "보호",
-      "specs": [
-        "Protection"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의심판",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위대한성전사",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/집중된적개심",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/냉혹한심문관",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/관용의인장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보복의인장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의결의"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\정의의망치-심판-신성한힘.md",
-        "lastUpdate": ""
-      }
-    },
-    "paladin_protection_defensive_rotation": {
-      "id": "paladin_protection_defensive_rotation",
-      "name": "헌신적인수호자-고대왕의수호자",
-      "type": "synergy",
-      "synergyType": "defensive_cooldown_rotation",
-      "participants": [
-        "31850",
-        "86659",
-        "204077",
-        "393114",
-        "378425",
-        "378279",
-        "385438",
-        "204074",
-        "315924",
-        "379021",
-        "377053",
-        "209389",
-        "642",
-        "85673",
-        "53600"
-      ],
-      "class": "Paladin",
-      "spec": "보호",
-      "specs": [
-        "Protection"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
-        "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/파수꾼",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마지막저항",
         "08-직업별-Knowledge-Base/08-성기사/보호/Talents/헌신적인수호자연마",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/우서의조언",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/황금발키르의선물",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운수호자",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/수호자의손길",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보복의인장",
-        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/연맹의보루"
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/최고천의권위",
+        "08-직업별-Knowledge-Base/08-성기사/보호/Talents/황금발키르의선물"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Synergies\\헌신적인수호자-고대왕의수호자.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "고결의_봉화_빛의_기둥_광역_대응": {

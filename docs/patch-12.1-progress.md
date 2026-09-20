@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 28 manuscripts labeled 12.1 and 12 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 29 manuscripts labeled 12.1 and 11 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -214,15 +214,26 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Sanitized production build succeeded as `main.5e2633e0.js`; credential and forbidden-file output scans passed. `node scripts/verify-destruction-guide.cjs` passed all eighteen hero/mode/viewport combinations locally and again on https://wowmeta.vercel.app at 1440px, 390px and 320px, including keyboard disclosure, 16px opener icons, correctly scoped real casts, inline aliases, graph center and no horizontal overflow. Desktop/mobile screenshots were inspected. Production deployment `dpl_FqnHcKscvvpREiBz7AmF9nLDuae7` is Ready and the public route returns HTTP 200 with the expected bundle.
 - Limits: current WCL/Archon aggregates, personal simulations and private Discord messages were not obtained; failed raid/M+ source access is labeled explicitly. Dense graph labels still overlap. There are 28 global KB link warnings, mixed-patch metadata and a 1.61 MB gzip bundle. Canonical KB remains outside the site repository; generated data and site content are committed, not a remote vault backup.
 
+## Protection Paladin: updated 2026-09-21
+
+- Replaced the old manuscript in place with 16 manually authored subjects, ten practical tips and distinct Templar/Lightsmith opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/08-성기사/보호/Meta/guide-12.1.json`.
+- Compared Blizzard 12.1 and September hotfixes, Pumps' Wowhead, Panthea's actual Icy Veins hero/content presets, Tactyks' Method, current Korean/English tooltips and fixed SimC commit `3a24b834c907948dadbfab4e3a9883e4d767512a`. Preserved explicit disagreements about Hammer of Light cost, Zealot, Exaction and apex rank values rather than silently reconciling stale descriptions.
+- Manually reviewed all 65 local atomic notes and 54 related common records, including 20 local additions. Removed obsolete Sanctified Wrath; separated Sentinel cast/buff, Protection Judgment/Hammer of Wrath, real Hammer of Light and Armament casts, automatic hero effects and Season 2 triggers. Corrected Divine Protection, Judgment, Cleanse Toxins and Spellwarding scopes. Generated spell changes are confined to Paladin.
+- Both selected-build flows use Blessed Hammer, Sentinel and the full apex. Alternative Hammer of the Righteous is explained conditionally rather than mixed into those flows. Lightsmith's shared Armament charges, Sentinel-triggered Forge, Guidance spending and Templar generator-based extension have separate explanations. Defensive, healing and interrupt needs are not delayed until the end of a damage priority list.
+- Authored eighteen local numeric-ID relationships and corrected three common relationships. Shield of the Righteous has eleven actual direct relationships and is the graph center. Replaced fabricated uptime segments with nine damage-type, recovery and immunity situations. Removed old June aggregate claims from current-build metadata without rewriting historical reports.
+- Online strict name/icon/metadata/link checks passed for all 65 local and 72 common records; the other 18 common records received metadata checks only, not a fresh full mechanics review. Explicit guide icon/name validation passed for 22 IDs. Canonical equality, actual cast identity, selected-build exclusivity, defensive values, scopes and relationship counts have runnable assertions. Fixed the existing practical-tip matcher spelling of Korean Mythic+ and added a regression assertion.
+- Full real-site prebuild validation and sanitized production build passed. Bundle `main.f07d9fee.js` contains no matched local credential values, source maps or environment files. `node scripts/verify-protection-paladin-guide.cjs` passed all eighteen hero/mode/viewport combinations locally and on https://wowmeta.vercel.app at 1440px, 390px and 320px, including keyboard disclosure, 16px opener icons, scoped casts, loaded flow images, eleven center relationships and no horizontal overflow. Deployment `dpl_7k2SesAc81g5pmpAN44WS2WnAXTY` is Ready.
+- Limits: current WCL/Archon aggregates, personal simulations and private Discord messages were not obtained. Dense graph labels still overlap. There are 23 global KB link warnings, mixed-patch metadata and a 1.63 MB gzip bundle. Canonical Markdown/JSON remains outside the site Git repository; this commit contains generated DB and site content, not a remote vault backup.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 12 manuscripts
+## Still 12.0.5: 11 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Paladin | Protection, Retribution |
+| Paladin | Retribution |
 | Priest | Discipline, Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
@@ -231,7 +242,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 12 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 11 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

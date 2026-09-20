@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T18:53:52.179Z",
+    "generatedAt": "2026-09-20T20:01:30.140Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2891,
-    "rawTotalSkills": 2891,
+    "totalSkills": 2910,
+    "rawTotalSkills": 2910,
     "duplicateIds": [],
-    "totalSynergies": 536,
+    "totalSynergies": 547,
     "stats": {
-      "total": 2891,
+      "total": 2910,
       "byType": {
-        "buff": 105,
-        "hero-talent": 568,
-        "atomic-skill": 532,
-        "proc": 20,
+        "buff": 112,
+        "hero-talent": 560,
+        "atomic-skill": 543,
+        "proc": 24,
         "skill": 131,
-        "talent": 987,
+        "talent": 988,
         "spec-talent": 392,
-        "passive": 50,
+        "passive": 54,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
-        "class-talent": 86,
-        "debuff": 5,
+        "class-talent": 85,
+        "debuff": 6,
         "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
@@ -37,7 +37,7 @@
         "Hunter": 225,
         "Mage": 229,
         "Monk": 274,
-        "Paladin": 209,
+        "Paladin": 228,
         "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
@@ -75,7 +75,7 @@
         "Monk-운무": 61,
         "Monk-풍운": 65,
         "Paladin-공용": 72,
-        "Paladin-보호": 46,
+        "Paladin-Protection": 65,
         "Paladin-신성": 44,
         "Paladin-징벌": 47,
         "Priest-공용": 74,
@@ -102,9 +102,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2816,
-        "withSynergies": 1519,
-        "avgLinkDensity": "0.038"
+        "withWikilinks": 2835,
+        "withSynergies": 1620,
+        "avgLinkDensity": "0.039"
       }
     }
   },
@@ -987,9 +987,7 @@
       "class": "Paladin",
       "spec": "공용",
       "specs": [
-        "Protection",
-        "Holy",
-        "Retribution"
+        "Holy"
       ],
       "name": "신의 가호",
       "koreanName": "신의 가호",
@@ -997,14 +995,14 @@
       "icon": "spell_holy_divineprotection",
       "iconName": "spell_holy_divineprotection",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 신의 가호 (Divine Protection)",
+      "cooldown": "기본 1분",
+      "castTime": "즉시",
+      "resourceCost": "마나",
+      "range": "자신",
+      "description": "신성 성기사의 신의 가호 시전이다. 8초 동안 받는 피해를 20% 줄이고 기절 중에도 사용할 수 있다. 보호의 생존기나 징벌의 별도 ID 403876을 이 레코드에 섞지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1016,14 +1014,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprotection.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/희생의축복"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -1361,14 +1362,14 @@
       "icon": "spell_holy_layonhands",
       "iconName": "spell_holy_layonhands",
       "school": "",
-      "cooldown": "10분",
+      "cooldown": "기본 10분",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 신의 축복 (Lay on Hands)",
+      "description": "시전자의 최대 생명력에 해당하는 양을 즉시 치유한다. 대상에게 30초간 참을성을 남기며 이미 참을성이 있는 대상에게 사용할 수 없다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1380,14 +1381,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_layonhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -1411,14 +1417,14 @@
       "icon": "spell_holy_divineshield",
       "iconName": "spell_holy_divineshield",
       "school": "",
-      "cooldown": "5분",
+      "cooldown": "기본 5분",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "",
-      "description": "# 천상의 보호막 (Divine Shield)",
+      "resourceCost": "마나",
+      "range": "자신",
+      "description": "8초 동안 피해와 해로운 효과에 면역이 되고 30초 동안 참을성에 걸린다. 보호가 마지막 저항을 선택했을 때에만 주위 15야드 적을 도발하는 방어 운용이 가능하다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1430,14 +1436,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마지막저항"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -2169,14 +2180,14 @@
       "icon": "spell_holy_sealofmight",
       "iconName": "spell_holy_sealofmight",
       "school": "",
-      "cooldown": "1분",
+      "cooldown": "기본 45초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나",
       "range": "10야드",
-      "description": "# 심판의 망치 (Hammer of Justice)",
+      "description": "대상을 6초 동안 기절시키는 심판의 망치다. 기절 면역 적에게는 동일하게 사용할 수 없으며 주문 차단과 별도의 제어다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2188,14 +2199,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofmight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/비난",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/자유의축복"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -2473,14 +2487,14 @@
       "icon": "spell_holy_sealofprotection",
       "iconName": "spell_holy_sealofprotection",
       "school": "",
-      "cooldown": "5분",
+      "cooldown": "기본 5분; 주문 수호의 축복과 공유",
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 보호의 축복 (Blessing of Protection)",
+      "description": "10초 동안 대상이 물리 피해와 관련 해로운 효과에 면역이 된다. 사용 후 30초간 참을성이 생기고 주문 수호의 축복과 재사용 대기시간을 공유한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2492,14 +2506,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.04,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -2523,14 +2542,14 @@
       "icon": "spell_holy_sealofvalor",
       "iconName": "spell_holy_sealofvalor",
       "school": "",
-      "cooldown": "25초",
+      "cooldown": "기본 25초",
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 자유의 축복 (Blessing of Freedom)",
+      "description": "8초 동안 대상에게 이동 방해 효과에 대한 면역을 부여한다. 이동 속도 저하·이동 불가 대응이며 모든 해로운 효과를 제거하는 만능 해제가 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2542,14 +2561,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofvalor.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/독소정화",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.051,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -6161,14 +6184,14 @@
       "icon": "spell_holy_sealofsacrifice",
       "iconName": "spell_holy_sealofsacrifice",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "기본 2분",
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 희생의 축복 (Blessing of Sacrifice)",
+      "description": "12초 동안 대상이 받는 피해를 30% 줄이고 감소시킨 피해를 시전자에게 이전한다. 시전자의 생명력이 20% 아래로 내려가면 효과가 끝난다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6180,14 +6203,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofsacrifice.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/우정의결속"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -8290,7 +8318,6 @@
       "class": "Paladin",
       "spec": "공용",
       "specs": [
-        "Protection",
         "Holy",
         "Retribution"
       ],
@@ -8300,14 +8327,14 @@
       "icon": "spell_holy_righteousfury",
       "iconName": "spell_holy_righteousfury",
       "school": "",
-      "cooldown": "12초",
+      "cooldown": "전문화·충전 특성에 따라 적용",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나",
       "range": "30야드",
-      "description": "# 심판 (Judgment)",
+      "description": "신성·징벌의 심판 시전 레코드다. 전문화별 신성한 힘 생성과 연계 효과가 다르며 보호는 별도의 275779를 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8319,14 +8346,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -8903,7 +8933,7 @@
       "id": "26573",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -8913,14 +8943,14 @@
       "icon": "spell_holy_innerfire",
       "iconName": "spell_holy_innerfire",
       "school": "",
-      "cooldown": "9초",
+      "cooldown": "기본 9초; 보호 전문화 보정 적용",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "자신 중심",
-      "description": "# 신성화 (Consecration)",
+      "resourceCost": "마나",
+      "range": "자신 주위",
+      "description": "자신의 발밑에 신성화 구역을 만든다. 기본 지속시간은 12초이며 신성화의 불길이 2초 연장한다. 성역을 선택하면 구역 안에서 받는 피해가 5% 줄고, 떠난 뒤에도 4초간 유지된다. 특화의 방어 확률 자체를 신성화 안에서만 얻는 구조는 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8932,14 +8962,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_innerfire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-2pc-1296658"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/신성화의불길",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의인도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -9767,7 +9805,7 @@
       "id": "31850",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -9777,14 +9815,14 @@
       "icon": "spell_holy_ardentdefender",
       "iconName": "spell_holy_ardentdefender",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "기본 90초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 헌신적인 수호자 (Ardent Defender)",
+      "range": "자신",
+      "description": "기본 90초마다 12초 동안 받는 피해를 30% 줄인다. 효과 중 죽음에 이르게 할 공격 한 번을 막고 최대 생명력의 20%를 회복한다. 헌신적인 수호자 연마는 최대 생명력을 20% 늘리고 죽음 방지 후에도 남은 피해 감소 시간을 유지하게 한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9797,15 +9835,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/헌신적인수호자연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.062,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -9829,14 +9870,14 @@
       "icon": "spell_holy_avenginewrath",
       "iconName": "spell_holy_avenginewrath",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "기본 2분; 보호 정의로운 수호자 선택 시 1분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 응징의 격노 (Avenging Wrath)",
+      "range": "자신",
+      "description": "응징의 격노의 실제 플레이어 시전이다. 보호는 12.1에서 피해·치유·치명타 증가가 10%로 조정됐으며 공용 툴팁의 20%를 그대로 적용하지 않는다. 전문화별 지속시간·재사용 대기시간 보정이 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9849,13 +9890,19 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운수호자",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267215"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가열로의축복"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -9867,7 +9914,7 @@
       "id": "31935",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -9877,14 +9924,14 @@
       "icon": "spell_holy_avengersshield",
       "iconName": "spell_holy_avengersshield",
       "school": "",
-      "cooldown": "15초",
+      "cooldown": "기본 15초; 위대한 성전사로 초기화",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나",
       "range": "30야드",
-      "description": "# 응징의 방패 (Avenger's Shield)",
+      "description": "방패를 던져 주 대상과 추가 대상 두 명에게 피해를 입힌다. 비플레이어 주 대상의 주문을 차단하고 3초간 침묵시킨다. 기본적으로 신성한 힘을 생성하지 않는다. 선봉대를 소모하는 강화 시전에만 해당 정점 특성의 자원 생성 효과가 붙는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9896,14 +9943,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_avengersshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위대한성전사",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267211",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/연맹의보루"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -13896,7 +13950,7 @@
       "id": "53595",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -13906,14 +13960,14 @@
       "icon": "ability_paladin_hammeroftherighteous",
       "iconName": "ability_paladin_hammeroftherighteous",
       "school": "",
-      "cooldown": "짧은 쿨다운",
+      "cooldown": "기본 5초; 2충전, 가속 적용",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나; 신성한 힘 1개 생성",
       "range": "근접",
-      "description": "# 정의의 망치 (Hammer of the Righteous)",
+      "description": "기본 2충전의 근접 생성기로 신성한 힘 1개를 만든다. 신성화 안에서 사용하면 주위 적에게 신성 피해 파동도 발생한다. 축복받은 망치와 같은 선택지이므로 둘을 한 빌드의 독립 생성기로 나열하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13925,16 +13979,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_hammeroftherighteous.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보복의인장"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/걸작"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.065,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -13946,7 +14004,7 @@
       "id": "53600",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -13956,14 +14014,14 @@
       "icon": "ability_paladin_shieldofvengeance",
       "iconName": "ability_paladin_shieldofvengeance",
       "school": "",
-      "cooldown": "없음",
-      "castTime": "즉시",
-      "resourceCost": "신성한 힘 3",
-      "range": "근접",
-      "description": "# 정의의 방패 (Shield of the Righteous)",
+      "cooldown": "기본 1초; 가속 적용",
+      "castTime": "즉시; 일반 글쿨과 별개",
+      "resourceCost": "신성한 힘 3개; 거룩한 도구로 최대 2개 추가 소비",
+      "range": "전방 근접",
+      "description": "신성한 힘 3개를 소비해 전방에 피해를 주고 4.5초 동안 방어도를 높인다. 일반 공격 기술의 글쿨과 별개로 사용할 수 있다. 마력 깃든 방패는 이 방어 효과에 마법 피해 12% 감소를 더한다. 거룩한 도구는 남는 자원을 최대 2개 더 소비해 피해를 높이며 항상 5개를 요구하는 기술로 바꾸지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13976,13 +14034,22 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마력깃든방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보루",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/거룩한도구",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의인도",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/망치낙하"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.081,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -14996,6 +15063,59 @@
         "lastUpdate": ""
       }
     },
+    "62124": {
+      "id": "62124",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "집행의 손길",
+      "koreanName": "집행의 손길",
+      "englishName": "Hand of Reckoning",
+      "icon": "spell_holy_unyieldingfaith",
+      "iconName": "spell_holy_unyieldingfaith",
+      "school": "",
+      "cooldown": "기본 8초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "적을 도발해 자신을 공격하게 하는 집행의 손길의 실제 시전이다. 기본 재사용 대기시간은 8초다. 광역 도발이 아니며 대상의 도발 면역과 교대 약속을 확인해야 한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_unyieldingfaith.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_unyieldingfaith.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_unyieldingfaith.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_unyieldingfaith.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_unyieldingfaith.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마지막저항"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\집행의-손길-62124.md",
+        "lastUpdate": ""
+      }
+    },
     "62618": {
       "id": "62618",
       "type": "talent",
@@ -15343,6 +15463,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Skills\\치유의비.md",
+        "lastUpdate": ""
+      }
+    },
+    "76671": {
+      "id": "76671",
+      "type": "passive",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "특화: 천상의 보루",
+      "koreanName": "특화: 천상의 보루",
+      "englishName": "Mastery: Divine Bulwark",
+      "icon": "spell_holy_holyprotection",
+      "iconName": "spell_holy_holyprotection",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "특화로 방패 막기 확률과 전투력이 증가한다. 보호의 추가 전문화 효과는 주문과 해로운 주기적 피해에 대한 방패 막기도 지원한다. 신성화 위에 있어야 특화의 방어가 전부 켜지는 과거 구조와 구분한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holyprotection.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_holyprotection.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holyprotection.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/특화-천상의-보루-317907",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\특화-천상의-보루-76671.md",
         "lastUpdate": ""
       }
     },
@@ -16509,7 +16682,7 @@
       "id": "85043",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -16519,14 +16692,14 @@
       "icon": "inv_helmet_74",
       "iconName": "inv_helmet_74",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위대한 성전사 (Grand Crusader)",
+      "description": "근접 공격을 회피하거나 축복받은 망치·정의의 망치·성전사의 일격을 사용할 때 15% 확률로 응징의 방패의 재사용 대기시간을 초기화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16538,14 +16711,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_74.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의심판"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -16720,12 +16897,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "신성한 힘",
+      "resourceCost": "기본 신성한 힘 3개와 마나; 보호 눈부신 빛으로 자원 무료",
       "range": "40야드",
-      "description": "# 영광의 서약 (Word of Glory)",
+      "description": "신성한 힘 3개를 쓰는 즉시 단일 치유다. 보호는 눈부신 빛으로 자원 비용을 없앨 수 있고 수호자의 손길·관용의 인장·축복받은 서약의 선택에 따라 아군 치유와 흡수가 달라진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16738,13 +16915,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/수호자의손길",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/관용의인장",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은-서약-1301732"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -16809,7 +16991,7 @@
       "id": "86659",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -16819,14 +17001,14 @@
       "icon": "spell_holy_heroism",
       "iconName": "spell_holy_heroism",
       "school": "",
-      "cooldown": "5분",
+      "cooldown": "기본 3분; 최고천의 권위 선택 시 2충전",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 고대 왕의 수호자 (Guardian of Ancient Kings)",
+      "range": "자신",
+      "description": "기본 재사용 대기시간 3분, 지속시간 8초의 생존기로 받는 모든 피해를 50% 줄인다. 최고천의 권위를 선택하면 충전이 하나 늘어난다. 황금 발키르의 선물에 의한 자동 발동과 직접 시전은 같은 피해 감소를 활용하지만 발동 조건과 충전 소모가 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16838,14 +17020,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_heroism.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/최고천의권위",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/황금발키르의선물"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.058,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -17167,14 +17354,14 @@
       "icon": "spell_holy_rebuke",
       "iconName": "spell_holy_rebuke",
       "school": "",
-      "cooldown": "15초",
+      "cooldown": "기본 15초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 비난 (Rebuke)",
+      "description": "적의 주문을 차단하고 해당 계열 주문을 5초 동안 사용하지 못하게 한다. 기본 재사용 대기시간은 15초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17186,14 +17373,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_rebuke.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/심판의망치"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/권위적인비난"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -24067,54 +24259,6 @@
         "lastUpdate": ""
       }
     },
-    "171648": {
-      "id": "171648",
-      "type": "talent",
-      "class": "Paladin",
-      "spec": "보호",
-      "specs": [
-        "Protection"
-      ],
-      "name": "축성의 분노",
-      "koreanName": "축성의 분노",
-      "englishName": "Sanctified Wrath",
-      "icon": "ability_paladin_judgementsofthejust",
-      "iconName": "ability_paladin_judgementsofthejust",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 축성의 분노 (Sanctified Wrath)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementsofthejust.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_judgementsofthejust.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_judgementsofthejust.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_judgementsofthejust.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementsofthejust.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\축성의분노.md",
-        "lastUpdate": ""
-      }
-    },
     "173841": {
       "id": "173841",
       "type": "talent",
@@ -26093,14 +26237,14 @@
       "icon": "ability_paladin_divinesteed",
       "iconName": "ability_paladin_divinesteed",
       "school": "",
-      "cooldown": "45초",
+      "cooldown": "기본 45초; 선택 특성에 따라 충전 증가",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 천상의 군마 (Divine Steed)",
+      "range": "자신",
+      "description": "기본 3초 동안 이동 속도를 높이는 천상의 군마다. 가차 없는 군마 등 별도 특성으로 지속시간·속도·충전이 달라진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -26112,14 +26256,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_divinesteed.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/자유의축복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/용맹한성전"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가차없는군마"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -32247,13 +32397,11 @@
     },
     "204018": {
       "id": "204018",
-      "type": "class-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
-        "Protection",
-        "Holy",
-        "Retribution"
+        "Protection"
       ],
       "name": "주문 수호의 축복",
       "koreanName": "주문 수호의 축복",
@@ -32261,14 +32409,14 @@
       "icon": "spell_holy_blessingofprotection",
       "iconName": "spell_holy_blessingofprotection",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 주문 수호의 축복 (Blessing of Spellwarding)",
-      "category": "class-talent",
+      "cooldown": "기본 5분; 보호의 축복과 공유",
+      "castTime": "즉시",
+      "resourceCost": "마나",
+      "range": "40야드",
+      "description": "보호 전용 선택 기술로 대상에게 10초 동안 마법 피해와 해로운 마법 효과 면역을 준다. 보호의 축복과 재사용 대기시간을 공유하고 30초간 참을성을 남긴다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32280,14 +32428,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessingofprotection.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -32297,9 +32449,9 @@
     },
     "204019": {
       "id": "204019",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -32309,14 +32461,14 @@
       "icon": "paladin_retribution",
       "iconName": "paladin_retribution",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 축복받은 망치 (Blessed Hammer)",
-      "category": "talent",
+      "cooldown": "기본 5초; 3충전, 가속 적용",
+      "castTime": "즉시",
+      "resourceCost": "마나; 신성한 힘 1개 생성",
+      "range": "주변 나선 궤도",
+      "description": "나선형 망치를 던지는 기본 3충전 생성기로 사용 시 신성한 힘 1개를 만든다. 적중한 적의 다음 자동 공격 피해를 일정량 줄인다. 정의의 망치를 대체하며 적이 없어도 자원 생성은 가능하다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32328,14 +32480,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/paladin_retribution.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보복의인장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/걸작"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -32401,7 +32560,7 @@
       "id": "204023",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -32411,14 +32570,14 @@
       "icon": "ability_paladin_enlightenedjudgements",
       "iconName": "ability_paladin_enlightenedjudgements",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성전사의 심판 (Crusader's Judgment)",
+      "description": "심판의 충전 횟수가 2회가 되고 위대한 성전사 발동 시 심판의 재사용 대기시간이 3초 줄어든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32430,14 +32589,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_enlightenedjudgements.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위대한성전사"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -32554,7 +32718,7 @@
       "id": "204074",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -32564,14 +32728,14 @@
       "icon": "ability_paladin_shieldofthetemplar",
       "iconName": "ability_paladin_shieldofthetemplar",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정의로운 수호자 (Righteous Protector)",
+      "description": "응징의 격노와 파수꾼의 재사용 대기시간을 50%, 기본 지속시간을 40% 줄인다. 자원 소비마다 생존기 전체 대기시간을 줄이던 과거 설명과 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32583,14 +32747,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_shieldofthetemplar.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/파수꾼-389539"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -32602,7 +32771,7 @@
       "id": "204077",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -32612,14 +32781,14 @@
       "icon": "spell_holy_crusade",
       "iconName": "spell_holy_crusade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마지막 저항 (Final Stand)",
+      "description": "천상의 보호막을 사용하는 동안 15야드 안의 적을 도발한다. 면역 상태의 탱커가 주위 적을 계속 붙잡게 해 주는 선택 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32631,14 +32800,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/집행의-손길-62124",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -34406,7 +34579,7 @@
       "id": "209389",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -34416,14 +34589,14 @@
       "icon": "spell_holy_pureofheart",
       "iconName": "spell_holy_pureofheart",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 연맹의 보루 (Bulwark of Order)",
+      "description": "응징의 방패 피해의 75%에 해당하는 흡수막을 8초 동안 얻는다. 흡수량은 최대 생명력의 50%를 넘지 못한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -34435,14 +34608,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_pureofheart.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -34973,7 +35150,6 @@
       "spec": "공용",
       "specs": [
         "Protection",
-        "Holy",
         "Retribution"
       ],
       "name": "독소 정화",
@@ -34982,14 +35158,14 @@
       "icon": "spell_holy_renew",
       "iconName": "spell_holy_renew",
       "school": "",
-      "cooldown": "8초",
+      "cooldown": "기본 8초",
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 독소 정화 (Cleanse Toxins)",
+      "description": "아군의 독과 질병 효과를 제거한다. 보호·징벌의 해제 기술이며 마법 해제를 포함하는 신성의 정화와 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35001,14 +35177,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_renew.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/자유의축복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -41527,6 +41707,61 @@
         "lastUpdate": ""
       }
     },
+    "275779": {
+      "id": "275779",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "심판",
+      "koreanName": "심판",
+      "englishName": "Judgment",
+      "icon": "spell_holy_righteousfury",
+      "iconName": "spell_holy_righteousfury",
+      "school": "",
+      "cooldown": "기본 11초; 가속 적용, 특성으로 2충전",
+      "castTime": "즉시",
+      "resourceCost": "마나; 신성한 힘 1개 생성",
+      "range": "30야드",
+      "description": "보호 전용 심판 시전이다. 적에게 신성 피해를 입히고 전문화 효과로 신성한 힘 1개를 만든다. 성전사의 심판은 충전을 2회로 늘린다. 공용 심판 20271과 별도의 시전 ID다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_righteousfury.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_righteousfury.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_righteousfury.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성전사의심판",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/재결",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\심판-275779.md",
+        "lastUpdate": ""
+      }
+    },
     "276023": {
       "id": "276023",
       "type": "talent",
@@ -41889,7 +42124,7 @@
       "id": "280373",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -41899,14 +42134,14 @@
       "icon": "ability_warrior_shieldguard",
       "iconName": "ability_warrior_shieldguard",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 보루 (Redoubt)",
+      "description": "잃은 생명력에 비례해 정의의 방패의 방어도 증가 효과를 최대 60% 강화한다. 생명력이 낮을수록 추가 방어가 커지는 보정이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41918,14 +42153,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldguard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -42801,7 +43040,7 @@
       "id": "315924",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -42811,14 +43050,14 @@
       "icon": "ability_paladin_blessedhands",
       "iconName": "ability_paladin_blessedhands",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수호자의 손길 (Hand of the Protector)",
+      "description": "다른 아군에게 쓰는 영광의 서약의 치유량이 대상의 잃은 생명력에 비례해 최대 100% 증가한다. 자기 치유만을 위한 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42830,14 +43069,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_blessedhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/관용의인장",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -43038,6 +43282,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\결의의-힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "317907": {
+      "id": "317907",
+      "type": "passive",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "특화: 천상의 보루",
+      "koreanName": "특화: 천상의 보루",
+      "englishName": "Mastery: Divine Bulwark",
+      "icon": "spell_holy_holyprotection",
+      "iconName": "spell_holy_holyprotection",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "특화: 천상의 보루의 보호 추가 효과로 주문과 해로운 주기적 피해를 방패로 막을 수 있게 한다. 기본 특화 표시값과 주문 피해의 추가 방패 막기 처리는 별개다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holyprotection.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_holyprotection.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holyprotection.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/특화-천상의-보루-76671"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/마력깃든방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\특화-천상의-보루-317907.md",
         "lastUpdate": ""
       }
     },
@@ -43443,7 +43740,7 @@
       "id": "321136",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -43453,14 +43750,14 @@
       "icon": "ability_paladin_toweroflight",
       "iconName": "ability_paladin_toweroflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 눈부신 빛 (Shining Light)",
+      "description": "정의의 방패를 3번 사용하면 다음 영광의 서약이 신성한 힘을 소비하지 않는다. 무료 사용 효과는 최대 2충전까지 저장된다. 327510은 해당 버프이고 321136은 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43472,14 +43769,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_toweroflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/투혼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -44663,6 +44965,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Talents\\창공의힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "327510": {
+      "id": "327510",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "눈부신 빛",
+      "koreanName": "눈부신 빛",
+      "englishName": "Shining Light",
+      "icon": "ability_paladin_lightoftheprotector",
+      "iconName": "ability_paladin_lightoftheprotector",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정의의 방패 3회로 얻는 무료 영광의 서약 준비 버프다. 최대 2충전까지 저장하며 321136 특성과 동일한 독립 시전 버튼이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightoftheprotector.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_paladin_lightoftheprotector.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_paladin_lightoftheprotector.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_lightoftheprotector.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightoftheprotector.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/투혼"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\눈부신-빛-327510.md",
         "lastUpdate": ""
       }
     },
@@ -49761,7 +50117,7 @@
       "id": "375576",
       "type": "atomic-skill",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -49771,14 +50127,14 @@
       "icon": "inv_ability_paladin_divinetoll",
       "iconName": "inv_ability_paladin_divinetoll",
       "school": "",
-      "cooldown": "1분",
+      "cooldown": "기본 1분",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나",
       "range": "30야드",
-      "description": "# 천상의 종 (Divine Toll)",
+      "description": "기본 1분마다 주위 최대 5대상에게 보호 전문화의 응징의 방패를 시전한다. 기본 방패와 선봉대 강화 방패의 자원 생성을 구분해야 한다. 기사단은 사용 후 빛의 망치가 열리고, 빛대장장이는 울려 퍼지는 일격의 망치와 모루 발동을 활용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49790,14 +50146,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_paladin_divinetoll.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267211"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의강권",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/울려퍼지는일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -50619,7 +50983,7 @@
       "id": "377053",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -50629,14 +50993,14 @@
       "icon": "spell_holy_sealoffury",
       "iconName": "spell_holy_sealoffury",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 보복의 인장 (Seal of Reprisal)",
+      "description": "축복받은 망치·정의의 망치·성전사의 일격에 적중한 적이 8초 동안 자신에게 주는 피해가 10% 감소한다. 적에게 붙는 효과이며 1302139가 실제 디버프다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50648,14 +51012,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealoffury.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -51619,7 +51987,7 @@
       "id": "378279",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -51629,14 +51997,14 @@
       "icon": "inv_valkiergoldpet",
       "iconName": "inv_valkiergoldpet",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 황금 발키르의 선물 (Gift of the Golden Val'kyr)",
+      "description": "응징의 방패가 적에게 적중할 때마다 고대 왕의 수호자의 대기시간을 1초 줄인다. 생명력이 30% 아래로 내려가면 45초에 한 번 고대 왕의 수호자가 4초간 자동 발동한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51648,14 +52016,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_valkiergoldpet.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/최고천의권위"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -51667,7 +52040,7 @@
       "id": "378285",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -51677,14 +52050,14 @@
       "icon": "spell_holy_persecution",
       "iconName": "spell_holy_persecution",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 티르의 집행자 (Tyr's Enforcer)",
+      "description": "응징의 방패가 적중한 위치의 5야드 안 적에게 추가 신성 피해를 입힌다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51696,14 +52069,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_persecution.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -51715,7 +52093,7 @@
       "id": "378405",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -51725,14 +52103,14 @@
       "icon": "spell_paladin_lightofdawn",
       "iconName": "spell_paladin_lightofdawn",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 티탄의 빛 (Light of the Titans)",
+      "description": "영광의 서약이 직접 치유량의 40%를 추가로 10초에 걸쳐 회복시킨다. 본인에게 해로운 지속 피해가 있을 때 자신에게 주는 이 추가 치유가 200% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51744,14 +52122,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightofdawn.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은-서약-1301732"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -51816,7 +52199,7 @@
       "id": "378425",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -51826,14 +52209,14 @@
       "icon": "spell_holy_greaterblessingofsalvation",
       "iconName": "spell_holy_greaterblessingofsalvation",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 우서의 조언 (Uther's Counsel)",
+      "description": "신의 축복·천상의 보호막·보호의 축복·주문 수호의 축복의 재사용 대기시간을 15% 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51845,14 +52228,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_greaterblessingofsalvation.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의보호막",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/보호의축복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.075,
         "hasWikilinks": true
       },
       "source": {
@@ -52064,7 +52453,7 @@
       "id": "378457",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -52074,14 +52463,14 @@
       "icon": "spell_burningbladeshaman_lavaslash",
       "iconName": "spell_burningbladeshaman_lavaslash",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날아오르는 방패 (Soaring Shield)",
+      "description": "응징의 방패가 추가로 2대상에게 튕긴다. 기본 주 대상과 추가 대상 두 명에 이 보정이 더해진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52093,14 +52482,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_burningbladeshaman_lavaslash.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/연맹의보루",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -52165,7 +52559,7 @@
       "id": "378762",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -52175,14 +52569,14 @@
       "icon": "spell_holy_sealofwrath",
       "iconName": "spell_holy_sealofwrath",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 페렌 마커스의 열정 (Ferren Marcus's Fervor)",
+      "description": "응징의 방패의 주 대상 피해가 10% 증가한다. 모든 튕김 대상에게 똑같은 증가를 주는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52194,14 +52588,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofwrath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -52521,7 +52919,7 @@
       "id": "378845",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -52531,14 +52929,14 @@
       "icon": "ability_priest_flashoflight",
       "iconName": "ability_priest_flashoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 집중된 적개심 (Focused Enmity)",
+      "description": "응징의 방패가 한 대상에게만 적중했을 때 피해가 100% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52550,14 +52948,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_flashoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -53031,7 +53434,7 @@
       "id": "379021",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -53041,14 +53444,14 @@
       "icon": "spell_holy_innerfire",
       "iconName": "spell_holy_innerfire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성역 (Sanctuary)",
+      "description": "신성화 안에서 받는 피해가 5% 줄고, 범위를 벗어나도 4초간 유지된다. 신성화의 바닥 피해 지속시간과 본인의 피해 감소 잔여시간은 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53060,14 +53463,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_innerfire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-2pc-1296658"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -53079,7 +53487,7 @@
       "id": "379022",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -53089,14 +53497,14 @@
       "icon": "spell_fire_sealoffire",
       "iconName": "spell_fire_sealoffire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성화의 불길 (Consecration in Flame)",
+      "description": "신성화의 지속시간을 2초 늘리고 피해를 20% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53108,14 +53516,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_sealoffire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/성역",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -53179,7 +53592,7 @@
       "id": "380188",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -53189,14 +53602,14 @@
       "icon": "ability_priest_angelicbulwark",
       "iconName": "ability_priest_angelicbulwark",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성전사의 결의 (Crusader's Resolve)",
+      "description": "응징의 방패에 적중한 적의 자신에 대한 근접 공격 피해가 10초 동안 10% 감소한다. 모든 적의 모든 마법 피해를 동일하게 줄이는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53208,14 +53621,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_angelicbulwark.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -59314,7 +59732,7 @@
       "id": "383388",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -59324,14 +59742,14 @@
       "icon": "spell_holy_mindvision",
       "iconName": "spell_holy_mindvision",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 냉혹한 심문관 (Relentless Inquisitor)",
+      "description": "가속이 5% 증가하는 지속 효과다. 신성한 힘 소비로 중첩을 쌓아 유지해야 하는 과거 형태와 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59343,14 +59761,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_mindvision.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -62111,7 +62533,7 @@
       "id": "384815",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -62121,14 +62543,14 @@
       "icon": "spell_priest_power-word",
       "iconName": "spell_priest_power-word",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 관용의 인장 (Seal of Charity)",
+      "description": "다른 아군에게 영광의 서약을 사용하면 자신도 해당 치유량의 100%만큼 치유된다. 단순히 아군 치유를 포기해야만 자가 회복이 가능한 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62140,14 +62562,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_power-word.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/수호자의손길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -62450,9 +62877,9 @@
     },
     "385438": {
       "id": "385438",
-      "type": "talent",
+      "type": "buff",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -62462,14 +62889,14 @@
       "icon": "spell_holy_holynova",
       "iconName": "spell_holy_holynova",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 파수꾼 (Sentinel)",
-      "category": "talent",
+      "description": "파수꾼 사용으로 얻는 중첩형 버프다. 중첩당 최대 생명력이 1%, 받는 피해 감소가 2% 증가하고, 처음 15중첩에서 시간이 지나며 감소한다. 직접 사용하는 주문은 389539다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62481,14 +62908,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holynova.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/파수꾼-389539",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운수호자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -63978,11 +64410,11 @@
         "lastUpdate": ""
       }
     },
-    "386653": {
-      "id": "386653",
-      "type": "talent",
+    "386652": {
+      "id": "386652",
+      "type": "buff",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -63992,14 +64424,14 @@
       "icon": "spell_holy_sealofrighteousness",
       "iconName": "spell_holy_sealofrighteousness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정의로운 격노의 보루 (Bulwark of Righteous Fury)",
-      "category": "talent",
+      "description": "응징의 방패의 적중 대상 수에 따라 다음 정의의 방패를 강화하는 정의로운 격노의 보루 버프다. 386653은 이를 제공하는 특성이다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64011,14 +64443,70 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofrighteousness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운격노의보루"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\정의로운-격노의-보루-386652.md",
+        "lastUpdate": ""
+      }
+    },
+    "386653": {
+      "id": "386653",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "정의로운 격노의 보루",
+      "koreanName": "정의로운 격노의 보루",
+      "englishName": "Bulwark of Righteous Fury",
+      "icon": "spell_holy_sealofrighteousness",
+      "iconName": "spell_holy_sealofrighteousness",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "응징의 방패에 맞은 적 하나당 다음 정의의 방패 피해가 10% 증가하며 최대 5중첩까지 쌓인다. 강화된 방패의 범위도 6야드 늘어난다. 실제 강화 버프는 386652다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofrighteousness.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_sealofrighteousness.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_sealofrighteousness.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_sealofrighteousness.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofrighteousness.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -67758,6 +68246,60 @@
         "lastUpdate": ""
       }
     },
+    "389539": {
+      "id": "389539",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "파수꾼",
+      "koreanName": "파수꾼",
+      "englishName": "Sentinel",
+      "icon": "spell_holy_holynova",
+      "iconName": "spell_holy_holynova",
+      "school": "",
+      "cooldown": "기본 2분; 정의로운 수호자 선택 시 1분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "응징의 격노를 대체하는 실제 파수꾼 시전이다. 기본 2분마다 20초 동안 피해·치유·치명타 관련 날개 효과와 15중첩의 추가 생명력·피해 감소를 얻는다. 중첩은 첫 5초 뒤부터 초당 하나씩 줄며 신성한 힘 3개 소비로 감소 시점을 1초 늦춘다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holynova.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holynova.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_holynova.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holynova.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holynova.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/파수꾼",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/정의로운수호자",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\파수꾼-389539.md",
+        "lastUpdate": ""
+      }
+    },
     "389603": {
       "id": "389603",
       "type": "spec-talent",
@@ -69616,7 +70158,7 @@
       "id": "391142",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -69626,14 +70168,14 @@
       "icon": "ability_paladin_conviction",
       "iconName": "ability_paladin_conviction",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광신도의 용장 (Zealot's Paragon)",
+      "description": "심판과 천벌의 망치의 피해를 10% 늘리고 해당 기술 사용 시 응징의 격노 또는 파수꾼의 지속시간을 0.5초 연장한다. 현재 툴팁의 연장은 1초가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69645,14 +70187,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_conviction.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/파수꾼-389539",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -72309,7 +72856,7 @@
       "id": "393071",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -72319,14 +72866,14 @@
       "icon": "spell_holy_weaponmastery",
       "iconName": "spell_holy_weaponmastery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위기 극복의 저력 (Strength in Adversity)",
+      "description": "응징의 방패가 적중한 적 하나당 15초 동안 무기 막기 확률이 3% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72338,14 +72885,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_weaponmastery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/날아오르는방패"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -72357,7 +72909,7 @@
       "id": "393114",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -72367,14 +72919,14 @@
       "icon": "spell_holy_ardentdefender",
       "iconName": "spell_holy_ardentdefender",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 헌신적인 수호자 연마 (Improved Ardent Defender)",
+      "description": "헌신적인 수호자가 최대 생명력을 20% 증가시키고 죽음 방지가 발동한 뒤에도 남은 피해 감소 효과를 유지한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72386,14 +72938,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_ardentdefender.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -79290,14 +79846,14 @@
       "icon": "inv_glove_plate_raidpaladinmythic_q_01",
       "iconName": "inv_glove_plate_raidpaladinmythic_q_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구세의 빛 (Light's Deliverance)",
+      "description": "최고천의 망치 60회로 무료 빛의 망치를 준비한다. 현재 빛의 망치 사용 가능 상태와 선행 기술 상태에 따라 무료 사용이 열리며 준비 효과의 유효시간을 확인해야 한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79311,12 +79867,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -79584,14 +80144,14 @@
       "icon": "ability_paladin_longarmofthelaw",
       "iconName": "ability_paladin_longarmofthelaw",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 인도하는 빛 (Light's Guidance)",
+      "description": "기사단의 선행 기술 후 빛의 망치를 사용할 수 있게 한다. 보호는 천상의 종, 징벌은 파멸의 재와 연결된다. 선행 기술을 사용한 뒤의 준비 시간은 20초다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79603,14 +80163,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_longarmofthelaw.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -79620,7 +80185,7 @@
     },
     "427453": {
       "id": "427453",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -79633,14 +80198,14 @@
       "icon": "inv_mace_1h_gryphonrider_d_02_silver",
       "iconName": "inv_mace_1h_gryphonrider_d_02_silver",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빛의 망치 (Hammer of Light)",
-      "category": "hero-talent",
+      "cooldown": "준비 효과에 따라 사용",
+      "castTime": "즉시",
+      "resourceCost": "신성한 힘 3개; 구세의 빛 발동 시 무료",
+      "range": "14야드",
+      "description": "기사단의 실제 빛의 망치 시전 버튼이다. 보호는 천상의 종 뒤 20초 동안 열리며 신성한 힘 3개를 소비한다. 구세의 빛으로 무료 사용도 가능하다. 자동 피해 ID 429826이나 준비 버프 427441을 실제 시전과 혼동하지 않는다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79654,12 +80219,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/인도하는빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/구세의빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/만장일치판결"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -82398,7 +82968,7 @@
     },
     "431398": {
       "id": "431398",
-      "type": "hero-talent",
+      "type": "proc",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -82411,14 +82981,14 @@
       "icon": "ability_paladin_judgementofthepure",
       "iconName": "ability_paladin_judgementofthepure",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 최고천의 망치 (Empyrean Hammer)",
-      "category": "hero-talent",
+      "description": "기사단의 빛의 망치와 격동하는 천상, 망치 낙하 등에서 자동으로 발생하는 최고천의 망치 피해다. 독립적인 플레이어 시전 기술이 아니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82432,12 +83002,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/망치낙하",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/구세의빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -82916,14 +83491,14 @@
       "icon": "spell_holy_surgeoflight",
       "iconName": "spell_holy_surgeoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광신의 비호 (Zealous Vindication)",
+      "description": "빛의 망치가 최고천의 망치를 즉시 두 번 추가로 발생시킨다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82937,12 +83512,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/구세의빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -83112,14 +83691,14 @@
       "icon": "ability_priest_holybolts01",
       "iconName": "ability_priest_holybolts01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 격동하는 천상 (Shake the Heavens)",
+      "description": "빛의 망치를 사용하면 8초 동안 2초마다 최고천의 망치가 자동으로 떨어진다. 드높은 소명은 특정 생성기 사용으로 이 지속시간을 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83133,12 +83712,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -83210,14 +83793,14 @@
       "icon": "ability_paladin_intercession",
       "iconName": "ability_paladin_intercession",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 분노의 하강 (Wrathful Descent)",
+      "description": "최고천의 망치가 치명타면 주위에 50%의 추가 광역 피해를 주고, 적중한 적이 자신에게 주는 피해를 8초 동안 5% 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83231,12 +83814,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한천벌",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -83367,14 +83954,14 @@
       "icon": "ability_paladin_toweroflight",
       "iconName": "ability_paladin_toweroflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 드높은 소명 (Higher Calling)",
+      "description": "격동하는 천상 활성 중 특정 생성기를 사용하면 지속시간이 1초 늘어난다. 보호는 심판·천벌의 망치·축복받은 망치·정의의 망치·성전사의 일격을 사용한다. 징벌은 해당 전문화의 심판이 아닌 성전사의 일격·천벌의 망치·심판의 칼날 계열 조건을 따로 확인한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83386,14 +83973,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_toweroflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -83525,14 +84119,14 @@
       "icon": "inv_plate_raidpaladinprimalist_d_01_cape",
       "iconName": "inv_plate_raidpaladinprimalist_d_01_cape",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 성전 (Sacrosanct Crusade)",
+      "description": "보호는 천상의 종으로 최대 생명력 15%의 흡수막을 얻고, 빛의 망치로 15%에 추가 대상당 2%의 치유를 받으며 초과 치유가 흡수로 전환된다. 징벌의 수치는 각각 10%, 5%에 대상당 1%로 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83544,14 +84138,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_plate_raidpaladinprimalist_d_01_cape.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -83826,7 +84425,7 @@
     },
     "432459": {
       "id": "432459",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -83839,14 +84438,14 @@
       "icon": "inv_ability_lightsmithpaladin_holybulwark",
       "iconName": "inv_ability_lightsmithpaladin_holybulwark",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 신성한 보루 (Holy Bulwark)",
-      "category": "hero-talent",
+      "cooldown": "기본 1분; 신성한 무기와 2충전 공유",
+      "castTime": "즉시",
+      "resourceCost": "마나; 보호는 신성한 힘 생성 없음",
+      "range": "40야드",
+      "description": "대상의 최대 생명력 15%에 해당하는 흡수막을 부여하고 20초 동안 2초마다 최대 생명력의 2%씩 흡수량을 보강한다. 사용 후 버튼이 신성한 무기로 바뀐다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83860,12 +84459,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/연대",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/전투단련",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/걸작"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -83888,14 +84492,14 @@
       "icon": "ability_paladin_enlightenedjudgements",
       "iconName": "ability_paladin_enlightenedjudgements",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 망치 낙하 (Hammerfall)",
+      "description": "보호의 정의의 방패와 영광의 서약이 최고천의 망치를 자동으로 발생시킨다. 격동하는 천상 중에는 망치 하나가 추가된다. 징벌에서는 해당 전문화의 신성한 힘 소비기가 발동 조건이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83907,14 +84511,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_enlightenedjudgements.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -83924,7 +84534,7 @@
     },
     "432472": {
       "id": "432472",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -83937,14 +84547,14 @@
       "icon": "inv_ability_lightsmithpaladin_sacredweapon",
       "iconName": "inv_ability_lightsmithpaladin_sacredweapon",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 신성한 무기 (Sacred Weapon)",
-      "category": "hero-talent",
+      "cooldown": "기본 1분; 신성한 보루와 2충전 공유",
+      "castTime": "즉시",
+      "resourceCost": "마나; 보호는 신성한 힘 생성 없음",
+      "range": "40야드",
+      "description": "20초 동안 주문과 능력 사용으로 주위에 추가 피해 또는 치유를 발생시키는 무장을 준다. 단일 대상 효과는 증가하고 5대상을 넘으면 감소한다. 사용 후 버튼은 신성한 보루로 바뀌며 두 기술은 충전을 공유한다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83958,12 +84568,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가열로의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/걸작",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/연대"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -83986,14 +84601,14 @@
       "icon": "spell_holy_divinepurpose",
       "iconName": "spell_holy_divinepurpose",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무한한 천벌 (Endless Wrath)",
+      "description": "최고천의 망치의 치명타 확률을 10% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84007,12 +84622,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의재판관",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/분노의하강"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -84035,14 +84654,14 @@
       "icon": "spell_holy_righteousfury",
       "iconName": "spell_holy_righteousfury",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 만장일치 판결 (Undisputed Ruling)",
+      "description": "빛의 망치 후 6초 동안 가속이 12% 증가한다. 보호는 정의의 방패 효과와 대상 위치의 신성화를 얻고, 징벌은 심판 관련 효과를 받는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84054,14 +84673,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/빛의망치"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -84196,14 +84820,14 @@
       "icon": "spell_holy_heroism",
       "iconName": "spell_holy_heroism",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 연대 (Solidarity)",
+      "description": "다른 아군에게 무장을 주면 자신도 같은 효과를 받고, 자신에게 사용하면 가까운 아군에게도 같은 무장을 제공한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84217,12 +84841,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/하나된결의"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -84245,14 +84873,14 @@
       "icon": "ability_paladin_gaurdedbythelight",
       "iconName": "ability_paladin_gaurdedbythelight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사전 경고 (Forewarning)",
+      "description": "신성한 무장의 재사용 대기시간이 20% 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84266,12 +84894,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/투혼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -84294,14 +84926,14 @@
       "icon": "spell_holy_devotionaura",
       "iconName": "spell_holy_devotionaura",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 하나 된 결의 (Shared Resolve)",
+      "description": "신성한 무장 효과를 받는 대상에게 자신의 오라가 33% 더 강하게 작용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84315,12 +84947,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/연대"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -84343,14 +84979,14 @@
       "icon": "ability_paladin_handoflight",
       "iconName": "ability_paladin_handoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축복의 무장 (Laying Down Arms)",
+      "description": "신성한 무장 효과가 끝나면 신의 축복 대기시간이 15초 감소하고, 보호는 눈부신 빛, 신성은 빛 주입을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84362,14 +84998,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_handoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/신의축복"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -84392,14 +85033,14 @@
       "icon": "inv_mace_47",
       "iconName": "inv_mace_47",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 투혼 (Valiance)",
+      "description": "보호가 눈부신 빛을 소비하거나 신성이 빛 주입을 소비하면 신성한 무장 대기시간이 3초 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84411,14 +85052,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_47.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -84441,14 +85087,14 @@
       "icon": "classicon_paladin",
       "iconName": "classicon_paladin",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 망치 (Divine Hammer)",
+      "description": "천상의 종을 사용하면 8초 동안 주위를 도는 망치가 2초마다 주위 적을 공격한다. 8대상을 넘으면 피해가 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84460,14 +85106,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/격동하는천상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -84490,14 +85141,14 @@
       "icon": "ability_priest_flashoflight",
       "iconName": "ability_priest_flashoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성스러운 격려 (Divine Inspiration)",
+      "description": "주문과 능력으로 일정 확률의 신성한 무장이 나타나 아군이 획득할 수 있다. 직접 누르는 무장 시전과 별도의 확률 발동이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84511,12 +85162,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/연대"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -84539,14 +85194,14 @@
       "icon": "ability_paladin_blessedhands",
       "iconName": "ability_paladin_blessedhands",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축성 (Sanctification)",
+      "description": "심판이 최고천의 망치 피해를 5% 높이는 축성을 10초 동안 쌓는다. 특성과 실제 버프 433671은 구분된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84558,14 +85213,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_blessedhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/축성"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -84588,14 +85248,14 @@
       "icon": "ability_mount_mawhorsespikes_yellow",
       "iconName": "ability_mount_mawhorsespikes_yellow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 가차 없는 군마 (Unrelenting Charger)",
+      "description": "천상의 군마의 지속시간을 2초 늘리고 첫 3초 동안 이동 속도를 추가로 30% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84607,14 +85267,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_mawhorsespikes_yellow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/우정의결속"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -84637,14 +85301,14 @@
       "icon": "spell_holy_crusade",
       "iconName": "spell_holy_crusade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 우정의 결속 (Bonds of Fellowship)",
+      "description": "희생의 축복으로 자신이 받는 이전 피해가 20% 감소한다. 축복 대상이 피해를 받으면 자신의 이동 속도가 4%씩 최대 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84656,14 +85320,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/희생의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가차없는군마"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -84686,14 +85355,14 @@
       "icon": "inv_ability_lightsmithpaladin_sacredweapon",
       "iconName": "inv_ability_lightsmithpaladin_sacredweapon",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 가열로의 축복 (Blessing of the Forge)",
+      "description": "응징의 격노 사용 시 신성한 무기를 얻고, 응징의 격노 동안 신성한 힘 소비기가 복제된다. 보호와 신성은 사용하는 소비기와 회복 대상이 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84705,14 +85374,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_lightsmithpaladin_sacredweapon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가열로의축복-434132",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -84735,14 +85410,14 @@
       "icon": "spell_holy_blessedlife",
       "iconName": "spell_holy_blessedlife",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축복받은 확약 (Blessed Assurance)",
+      "description": "신성한 힘 소비 후 다음 해당 생성기의 피해나 치유가 100% 증가한다. 보호는 축복받은 망치·정의의 망치·성전사의 일격, 신성은 신성 충격 등 전문화에 맞는 효과를 활용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84754,14 +85429,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessedlife.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의인도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -84784,14 +85466,14 @@
       "icon": "spell_holy_lightsgrace",
       "iconName": "spell_holy_lightsgrace",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 인도 (Divine Guidance)",
+      "description": "신성한 힘을 쓰는 능력을 사용하면 다음 신성화의 첫 피해와 치유를 강화한다. 피해는 범위 내 적들에게 나뉘고 치유는 최대 세 아군에게 적용된다. 보호의 피해 보정과 신성의 피해 보정은 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84803,14 +85485,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_lightsgrace.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/거룩한도구"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -84820,7 +85508,7 @@
     },
     "433568": {
       "id": "433568",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -84833,14 +85521,14 @@
       "icon": "inv_inscription_weaponscroll01",
       "iconName": "inv_inscription_weaponscroll01",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "2초",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축성의 의식 (Rite of Sanctification)",
-      "category": "hero-talent",
+      "description": "무기에 1시간 동안 의식을 적용해 방어도를 5% 높인다. 주 능력치 증가는 보호 2%, 신성 5%로 전문화에 따라 다르다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84854,12 +85542,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/서원의의식",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -84869,7 +85561,7 @@
     },
     "433583": {
       "id": "433583",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -84882,14 +85574,14 @@
       "icon": "inv_inscription_armorscroll02",
       "iconName": "inv_inscription_armorscroll02",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "2초",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 서원의 의식 (Rite of Adjuration)",
-      "category": "hero-talent",
+      "description": "무기에 1시간 동안 의식을 적용한다. 체력이 3% 증가하며 신성한 힘 소비 시 일정 확률로 주위 아군을 치유하는 효과를 부여한다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84901,14 +85593,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_inscription_armorscroll02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/축성의의식"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -84918,7 +85615,7 @@
     },
     "433671": {
       "id": "433671",
-      "type": "hero-talent",
+      "type": "buff",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -84931,14 +85628,14 @@
       "icon": "ability_paladin_blessedhands",
       "iconName": "ability_paladin_blessedhands",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 축성 (Sanctification)",
-      "category": "hero-talent",
+      "description": "심판 사용으로 얻는 최고천의 망치 피해 강화 버프다. 432977 특성에서 발생하며 10초 동안 유지되는 중첩 효과다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84950,14 +85647,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_blessedhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/축성-432977",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -84980,14 +85682,14 @@
       "icon": "inv_10_blacksmithing_consumable_repairhammer_color1",
       "iconName": "inv_10_blacksmithing_consumable_repairhammer_color1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 망치와 모루 (Hammer and Anvil)",
+      "description": "심판이 치명타로 적중하면 보호는 대상 주위 5야드에 추가 피해를 주고, 신성은 부상당한 아군 최대 5명을 치유한다. 보호의 광역 피해는 5대상을 넘으면 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -84999,14 +85701,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_blacksmithing_consumable_repairhammer_color1.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-2pc-1296658"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/울려퍼지는일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -85439,7 +86146,7 @@
     },
     "434132": {
       "id": "434132",
-      "type": "hero-talent",
+      "type": "buff",
       "class": "Paladin",
       "spec": "공용",
       "specs": [
@@ -85452,14 +86159,14 @@
       "icon": "inv_mace_1h_artifactnorgannon_d_06",
       "iconName": "inv_mace_1h_artifactnorgannon_d_06",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 가열로의 축복 (Blessing of the Forge)",
-      "category": "hero-talent",
+      "description": "가열로의 축복이 활성화된 동안 신성한 힘 소비기의 효과가 복제되는 발동 기록이다. 433011은 특성이고 이 ID는 직접 누르는 공격기가 아니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -85471,14 +86178,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_artifactnorgannon_d_06.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/가열로의축복",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -108981,14 +109694,14 @@
       "icon": "inv_everburningforge_yellow",
       "iconName": "inv_everburningforge_yellow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전투 단련 (Tempered in Battle)",
+      "description": "신성한 보루가 초과 치유를 100% 효율로 다른 보루 대상으로 이전한다. 신성한 무기 대상의 생명력이 40% 아래로 내려가면 생명력 재분배가 즉시와 4초 뒤에 발생하며 시전당 한 번으로 제한된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -109002,12 +109715,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/연대"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -109019,7 +109736,7 @@
       "id": "469883",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -109029,14 +109746,14 @@
       "icon": "inv_everburningignition_yellow",
       "iconName": "inv_everburningignition_yellow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 제련의 불길 (Refining Fire)",
+      "description": "응징의 방패가 추가로 100%의 광휘 피해를 5초에 걸쳐 입힌다. 최초 직접 피해와 따로 기록되는 지속 피해다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -109048,14 +109765,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_everburningignition_yellow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/죽지않는불씨"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -109078,14 +109800,14 @@
       "icon": "inv_misc_symbolofkings_01",
       "iconName": "inv_misc_symbolofkings_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 권위적인 비난 (Authoritative Rebuke)",
+      "description": "비난으로 차단에 성공하면 비난의 재사용 대기시간이 1초 줄고, 신성한 무장 효과 중에는 감소량이 2초가 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -109097,14 +109819,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_symbolofkings_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/비난"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -114319,6 +115046,62 @@
         "lastUpdate": ""
       }
     },
+    "1241413": {
+      "id": "1241413",
+      "type": "atomic-skill",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "천벌의 망치",
+      "koreanName": "천벌의 망치",
+      "englishName": "Hammer of Wrath",
+      "icon": "inv12_ability_paladin_hammerofwrath",
+      "iconName": "inv12_ability_paladin_hammerofwrath",
+      "school": "",
+      "cooldown": "기본 11초; 가속·충전 특성 적용",
+      "castTime": "즉시",
+      "resourceCost": "마나; 신성한 힘 1개 생성",
+      "range": "30야드",
+      "description": "응징의 격노 또는 파수꾼 중 심판을 대체하는 보호 전용 천벌의 망치 시전이다. 신성한 힘 1개를 만들며 실제 버튼은 이 ID를 사용한다. 1241288은 이를 제공하는 지속 효과이고 징벌의 24275와 다르다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_paladin_hammerofwrath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_paladin_hammerofwrath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_paladin_hammerofwrath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_paladin_hammerofwrath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_paladin_hammerofwrath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/파수꾼-389539"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/광신도의용장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\천벌의-망치-1241413.md",
+        "lastUpdate": ""
+      }
+    },
     "1241542": {
       "id": "1241542",
       "type": "talent",
@@ -115682,7 +116465,7 @@
       "id": "1244019",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -115692,14 +116475,14 @@
       "icon": "inv_achievement_dungeon_darkflamecleft",
       "iconName": "inv_achievement_dungeon_darkflamecleft",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽지 않는 불씨 (Undying Embers)",
+      "description": "제련의 불길 피해의 125%만큼 자신을 치유하며, 생명력이 낮으면 이 전환이 최대 300%까지 높아진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115711,14 +116494,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_achievement_dungeon_darkflamecleft.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/제련의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -115782,7 +116570,7 @@
       "id": "1244070",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -115792,14 +116580,14 @@
       "icon": "ability_essence_reapingflames",
       "iconName": "ability_essence_reapingflames",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 타오르는 햇빛 (Searing Sunlight)",
+      "description": "응징의 방패가 신성화 피해와 치유를 즉시 한 번 100% 효율로 발생시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115811,14 +116599,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_essence_reapingflames.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -116766,7 +117559,7 @@
       "id": "1245354",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -116776,14 +117569,14 @@
       "icon": "ability_racial_orbitalstrike",
       "iconName": "ability_racial_orbitalstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 존귀의 환영 (Vision of Sanctity)",
+      "description": "신성화가 정확히 한 대상만 공격할 때 피해가 100% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116795,14 +117588,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_orbitalstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-2pc-1296658"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위안"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -117134,7 +117932,7 @@
       "id": "1245891",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -117144,14 +117942,14 @@
       "icon": "spell_holy_prayerofmendingtga",
       "iconName": "spell_holy_prayerofmendingtga",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위안 (Solace)",
+      "description": "신성화가 입힌 피해의 375%만큼 자신을 치유한다. 적에게 실제로 피해를 입혀야 생기는 자동 치유다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117163,14 +117961,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofmendingtga.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/신성화의불길",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/존귀의환영"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -117182,7 +117985,7 @@
       "id": "1245979",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -117192,14 +117995,14 @@
       "icon": "ability_mount_alliancepvpmount",
       "iconName": "ability_mount_alliancepvpmount",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 용맹한 성전 (Valiant Crusade)",
+      "description": "비전투 중 천상의 군마를 타면 탑승 중과 종료 후 4초 동안 정의의 방패 효과를 얻는다. 12.1에서는 죽은 뒤에도 이 특성이 정상 유지되도록 수정됐다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117211,14 +118014,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_alliancepvpmount.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/천상의군마",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/집행의-손길-62124"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -117390,7 +118197,7 @@
       "id": "1246481",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -117400,14 +118207,14 @@
       "icon": "ability_paladin_empoweredsealsrighteous",
       "iconName": "ability_paladin_empoweredsealsrighteous",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 최고천의 권위 (Empyrean Authority)",
+      "description": "고대 왕의 수호자의 최대 충전 횟수가 1회 증가한다. 피해 감소율을 두 배로 만드는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117419,14 +118226,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_empoweredsealsrighteous.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/헌신적인수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/황금발키르의선물"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -117438,7 +118250,7 @@
       "id": "1246488",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -117448,14 +118260,14 @@
       "icon": "spell_paladin_lightshammer",
       "iconName": "spell_paladin_lightshammer",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 휩쓰는 선고 (Sweeping Verdict)",
+      "description": "심판이 추가로 최대 두 대상에게 50%의 피해를 입힌다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117467,14 +118279,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-4pc-1296659"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/재결"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -126625,14 +127442,14 @@
       "icon": "inv_ability_paladin_divinetoll",
       "iconName": "inv_ability_paladin_divinetoll",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 강권 (Divine Exaction)",
+      "description": "천상의 종이 주 대상에게 두 번 추가로 시전되는 기사단 효과다. 현재 일반 툴팁은 100%를 표시하지만 12.1 공식 패치 노트의 PvE 조정은 80%이며 PvP 45% 조정과 구분한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126644,14 +127461,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_paladin_divinetoll.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267211"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -127705,14 +128527,14 @@
       "icon": "ability_paladin_judgementofthepure",
       "iconName": "ability_paladin_judgementofthepure",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 재판관 (Light's Judicator)",
+      "description": "최고천의 망치의 치명타 피해를 20% 높이고, 치명타가 50% 확률로 구세의 빛 누적을 추가로 만든다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -127726,12 +128548,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/최고천의망치",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/구세의빛",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/무한한천벌"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -129655,14 +130481,14 @@
       "icon": "spell_paladin_templarsverdict",
       "iconName": "spell_paladin_templarsverdict",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기사단의 인장 (Seal of the Templar)",
+      "description": "기사단이 보호의 심판 피해를 30% 강화하는 지속 효과다. 전문화별 툴팁의 보정 대상과 수치가 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129674,14 +130500,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_templarsverdict.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/드높은소명",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/축성-432977"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -134232,6 +135063,57 @@
         "lastUpdate": ""
       }
     },
+    "1267203": {
+      "id": "1267203",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "선봉대의 영광",
+      "koreanName": "선봉대의 영광",
+      "englishName": "Glory of the Vanguard",
+      "icon": "inv12_apextalent_paladin_gloryofthevanguard",
+      "iconName": "inv12_apextalent_paladin_gloryofthevanguard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "선봉대의 영광의 첫 정점 특성이다. 심판으로 선봉대가 발동하면 다음 응징의 방패가 자신과 대상 사이의 적에게 직선 피해를 주고 주 대상의 최초 피해를 크게 강화한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\선봉대의-영광-1267203.md",
+        "lastUpdate": ""
+      }
+    },
     "1267210": {
       "id": "1267210",
       "type": "talent",
@@ -134279,6 +135161,112 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Talents\\빠른손가락.md",
+        "lastUpdate": ""
+      }
+    },
+    "1267211": {
+      "id": "1267211",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "선봉대의 영광",
+      "koreanName": "선봉대의 영광",
+      "englishName": "Glory of the Vanguard",
+      "icon": "inv12_apextalent_paladin_gloryofthevanguard",
+      "iconName": "inv12_apextalent_paladin_gloryofthevanguard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "선봉대의 영광의 중간 강화 노드다. 심판 피해가 증가하고 선봉대를 소모한 응징의 방패가 신성한 힘을 생성한다. 툴팁 표시 계급은 10% 증가·1개 생성이며 최종 배분과 계급 보정은 별도로 확인해야 한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\선봉대의-영광-1267211.md",
+        "lastUpdate": ""
+      }
+    },
+    "1267215": {
+      "id": "1267215",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "선봉대의 영광",
+      "koreanName": "선봉대의 영광",
+      "englishName": "Glory of the Vanguard",
+      "icon": "inv12_apextalent_paladin_gloryofthevanguard",
+      "iconName": "inv12_apextalent_paladin_gloryofthevanguard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "선봉대의 영광의 마지막 정점 특성이다. 선봉대 이후 다음 정의의 방패의 주 대상 피해가 100% 증가하고 빛이 추가 대상 네 명에게 튕긴다. 응징의 격노·파수꾼 동안 응징의 방패가 항상 선봉대 효과를 얻는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/응징의격노"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\선봉대의-영광-1267215.md",
         "lastUpdate": ""
       }
     },
@@ -134589,6 +135577,60 @@
         "lastUpdate": ""
       }
     },
+    "1268810": {
+      "id": "1268810",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "선봉대",
+      "koreanName": "선봉대",
+      "englishName": "Vanguard",
+      "icon": "inv_ability_holyfire_missile",
+      "iconName": "inv_ability_holyfire_missile",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 응징의 방패를 강화할 준비가 됐음을 나타내는 선봉대 버프다. 직접 시전하지 않으며 해당 정점 특성의 발동으로 획득한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_missile.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_holyfire_missile.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_holyfire_missile.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_holyfire_missile.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_missile.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267211",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267215"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.071,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\선봉대-1268810.md",
+        "lastUpdate": ""
+      }
+    },
     "1268817": {
       "id": "1268817",
       "type": "talent",
@@ -134844,6 +135886,58 @@
         "lastUpdate": ""
       }
     },
+    "1269175": {
+      "id": "1269175",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "선봉대의 영광",
+      "koreanName": "선봉대의 영광",
+      "englishName": "Glory of the Vanguard",
+      "icon": "inv_ability_holyfire_missile",
+      "iconName": "inv_ability_holyfire_missile",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "선봉대의 영광이 강화된 응징의 방패에서 발생시키는 자동 피해 기록이다. 플레이어가 별도로 누르는 생성기나 필살기가 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_missile.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_holyfire_missile.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_holyfire_missile.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_holyfire_missile.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_missile.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/응징의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267203"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\선봉대의-영광-1269175.md",
+        "lastUpdate": ""
+      }
+    },
     "1269215": {
       "id": "1269215",
       "type": "talent",
@@ -134889,6 +135983,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Talents\\타오르는분노.md",
+        "lastUpdate": ""
+      }
+    },
+    "1269224": {
+      "id": "1269224",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "영광의 불꽃",
+      "koreanName": "영광의 불꽃",
+      "englishName": "Blaze of Glory",
+      "icon": "inv12_apextalent_paladin_gloryofthevanguard",
+      "iconName": "inv12_apextalent_paladin_gloryofthevanguard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "선봉대의 영광 마지막 노드로 강화된 정의의 방패에서 발생하는 영광의 불꽃 효과다. 자동 피해이며 별도의 플레이어 시전이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_paladin_gloryofthevanguard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/선봉대의-영광-1267215"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\영광의-불꽃-1269224.md",
         "lastUpdate": ""
       }
     },
@@ -137723,14 +138869,14 @@
       "icon": "inv_mace_1h_blacksmithing_b_01_black",
       "iconName": "inv_mace_1h_blacksmithing_b_01_black",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 걸작 (Masterwork)",
+      "description": "신성한 무장을 사용한 뒤 다음 생성기 3회가 같은 종류의 하급 무장을 제공한다. 보호는 축복받은 망치·정의의 망치·성전사의 일격, 신성은 신성 충격 등 해당 전문화에 맞는 생성기를 활용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137742,14 +138888,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_blacksmithing_b_01_black.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -137820,14 +138973,14 @@
       "icon": "inv_enchanting_70_pet_torch",
       "iconName": "inv_enchanting_70_pet_torch",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광휘의 반사 (Reflection of Radiance)",
+      "description": "신성한 무기의 발동과 신성한 보루의 흡수가 보호에게는 위대한 성전사, 신성에게는 각성을 발동시킬 수 있다. 12.1에서는 발동 빈도가 조정됐다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137840,13 +138993,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/위대한성전사"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한보루"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -137922,14 +139080,14 @@
       "icon": "inv_11_0_arathordungeon_bell_color1",
       "iconName": "inv_11_0_arathordungeon_bell_color1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 울려 퍼지는 일격 (Resounding Strike)",
+      "description": "보호는 천상의 종이 망치와 모루를 100% 효율로 발동시킨다. 신성은 신성한 무장 사용이 해당 전문화의 망치와 모루 치유를 발동시키는 구조다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137941,14 +139099,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_11_0_arathordungeon_bell_color1.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천상의종"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/망치와모루",
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/신성한무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -141455,7 +142618,7 @@
       "id": "1276945",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -141465,14 +142628,14 @@
       "icon": "inv_artifact_bulwarkoforder",
       "iconName": "inv_artifact_bulwarkoforder",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마력 깃든 방패 (Imbued Shield)",
+      "description": "정의의 방패 효과가 유지되는 동안 받는 마법 피해가 12% 감소한다. 방어도에 의한 물리 피해 감소와 별도로 적용된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141484,14 +142647,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bulwarkoforder.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/고대왕의수호자"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Talents/주문수호의축복"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -141607,7 +142775,7 @@
       "id": "1277005",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -141617,14 +142785,14 @@
       "icon": "inv_mace_2h_draenorraid_d_03",
       "iconName": "inv_mace_2h_draenorraid_d_03",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 재결 (Adjudication)",
+      "description": "심판에 적중한 주 대상이 자신에게 근접 공격을 하면 해당 물리 피해의 20%에 해당하는 흡수 효과를 얻는다. 한 번에 한 대상에게만 적용할 수 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141636,14 +142804,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_draenorraid_d_03.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/휩쓰는선고"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -141752,7 +142925,7 @@
       "id": "1277162",
       "type": "talent",
       "class": "Paladin",
-      "spec": "보호",
+      "spec": "Protection",
       "specs": [
         "Protection"
       ],
@@ -141762,14 +142935,14 @@
       "icon": "ability_priest_archangel",
       "iconName": "ability_priest_archangel",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 거룩한 도구 (Instrument of the Divine)",
+      "description": "정의의 방패가 신성한 힘을 최대 2개 추가 소비하고 추가 소비 1개당 피해를 50% 높인다. 방어 효과를 얻기 위한 최소 비용은 여전히 3개다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141781,14 +142954,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_archangel.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/천상의인도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -146195,6 +147374,113 @@
         "lastUpdate": ""
       }
     },
+    "1296658": {
+      "id": "1296658",
+      "type": "passive",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "Paladin Protection 12.1 Class Set 2pc",
+      "koreanName": "Paladin Protection 12.1 Class Set 2pc",
+      "englishName": "Paladin Protection 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "보호 성기사 12.1 시즌 2 2세트 지속 효과다. 신성화의 범위가 30% 증가하고 그 안의 적에 대한 자신의 기술 치명타 확률이 5% 증가한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/신성화",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-4pc-1296659"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Hero-Talents/망치와모루"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\Paladin-Protection-12.1-Class-Set-2pc-1296658.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296659": {
+      "id": "1296659",
+      "type": "passive",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "Paladin Protection 12.1 Class Set 4pc",
+      "koreanName": "Paladin Protection 12.1 Class Set 4pc",
+      "englishName": "Paladin Protection 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "보호 성기사 12.1 시즌 2 4세트 지속 효과다. 심판과 망치·일격 계열 생성기의 적중에서 추가 신성 피해가 발생하고, 발동 공격이 치명타면 추가분이 두 배가 된다. 한국어 툴팁의 받는 신성 피해 증가 문구를 모든 신성 공격의 20% 증폭 디버프로 해석하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/천벌의-망치-1241413",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\Paladin-Protection-12.1-Class-Set-4pc-1296659.md",
+        "lastUpdate": ""
+      }
+    },
     "1296930": {
       "id": "1296930",
       "type": "buff",
@@ -146722,6 +148008,59 @@
         "lastUpdate": ""
       }
     },
+    "1300662": {
+      "id": "1300662",
+      "type": "proc",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "불굴의 칙령",
+      "koreanName": "불굴의 칙령",
+      "englishName": "Unrelenting Edict",
+      "icon": "spell_holy_summonlightwell",
+      "iconName": "spell_holy_summonlightwell",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1 시즌 2 보호 4세트가 생성기 적중에서 발동시키는 불굴의 칙령 피해다. 별도 시전 버튼이 아니라 발동 공격에서 계산되는 추가 신성 피해다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_summonlightwell.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_summonlightwell.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_summonlightwell.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_summonlightwell.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_summonlightwell.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/Paladin-Protection-12.1-Class-Set-4pc-1296659",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/심판-275779"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\불굴의-칙령-1300662.md",
+        "lastUpdate": ""
+      }
+    },
     "1301098": {
       "id": "1301098",
       "type": "buff",
@@ -146988,6 +148327,111 @@
         "lastUpdate": ""
       }
     },
+    "1301732": {
+      "id": "1301732",
+      "type": "talent",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "축복받은 서약",
+      "koreanName": "축복받은 서약",
+      "englishName": "Blessed Word",
+      "icon": "spell_paladin_divinecircle",
+      "iconName": "spell_paladin_divinecircle",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "영광의 서약이 더 이상 치명타로 치유하지 않는 대신 치유량이 자신의 치명타 확률에 비례해 증가한다. 초과 치유의 80%를 대상에게 피해 흡수막으로 전환한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_divinecircle.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_paladin_divinecircle.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_paladin_divinecircle.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_paladin_divinecircle.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_divinecircle.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/눈부신빛"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\축복받은-서약-1301732.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301739": {
+      "id": "1301739",
+      "type": "buff",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "축복받은 서약",
+      "koreanName": "축복받은 서약",
+      "englishName": "Blessed Word",
+      "icon": "spell_paladin_divinecircle",
+      "iconName": "spell_paladin_divinecircle",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "축복받은 서약이 영광의 서약의 초과 치유에서 만든 흡수 효과다. 실제 버프 지속시간은 20초이며 직접 누르는 별도 스킬이 아니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_divinecircle.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_paladin_divinecircle.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_paladin_divinecircle.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_paladin_divinecircle.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_divinecircle.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/공용/Skills/영광의서약",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의방패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은-서약-1301732"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\축복받은-서약-1301739.md",
+        "lastUpdate": ""
+      }
+    },
     "1301768": {
       "id": "1301768",
       "type": "set-bonus",
@@ -147092,6 +148536,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\유동성제동장치.md",
+        "lastUpdate": ""
+      }
+    },
+    "1302139": {
+      "id": "1302139",
+      "type": "debuff",
+      "class": "Paladin",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "보복의 인장",
+      "koreanName": "보복의 인장",
+      "englishName": "Seal of Reprisal",
+      "icon": "spell_holy_sealoffury",
+      "iconName": "spell_holy_sealoffury",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "망치 계열 생성기에 적중한 적이 8초 동안 자신에게 주는 피해가 10% 줄어드는 보복의 인장 디버프다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealoffury.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_sealoffury.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_sealoffury.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_sealoffury.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealoffury.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Skills/정의의망치"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/보복의인장",
+          "08-직업별-Knowledge-Base/08-성기사/보호/Talents/축복받은망치"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Buffs\\보복의-인장-1302139.md",
         "lastUpdate": ""
       }
     },
