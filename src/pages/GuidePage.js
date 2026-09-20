@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowUpRight } from 'lucide-react';
 import { guideManuscripts } from '../data/guideManuscripts.js';
+import { guideSpecIcons } from '../data/guideSpecIcons.js';
 import {
   CURRENT_PATCH_LABEL,
   guideRoles,
@@ -166,6 +167,10 @@ const SpecCard = styled(Link)`
     outline: 2px solid ${props => props.$color};
     outline-offset: -2px;
   }
+
+  &:hover [data-spec-icon], &:focus-visible [data-spec-icon] {
+    opacity: 0.86;
+  }
 `;
 
 const SpecTop = styled.div`
@@ -176,11 +181,29 @@ const SpecTop = styled.div`
 `;
 
 const SpecName = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #e7ebed;
   font-size: 1.05rem;
   font-weight: 680;
   letter-spacing: 0;
   word-break: keep-all;
+`;
+
+const SpecIcon = styled.span`
+  display: block;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  mask-image: url('/assets/spec-icons-white-v1.png');
+  mask-mode: luminance;
+  mask-size: ${1586 / 176 * 100}% ${992 / 176 * 100}%;
+  mask-position: var(--spec-icon-position);
+  mask-repeat: no-repeat;
+  opacity: 0.58;
+  transition: opacity 160ms ease;
 `;
 
 const OpenIcon = styled.span`
@@ -269,7 +292,10 @@ function GuidePage() {
             {group.specs.map(item => (
               <SpecCard key={item.id} to={item.path} $color={item.color} $tone={`${item.color}18`}>
                 <SpecTop>
-                  <SpecName>{item.spec}</SpecName>
+                  <SpecName>
+                    <SpecIcon aria-hidden="true" data-spec-icon={item.id} style={{ '--spec-icon-position': guideSpecIcons[item.id] }} />
+                    {item.spec}
+                  </SpecName>
                   <OpenIcon aria-hidden="true">
                     <ArrowUpRight size={16} />
                   </OpenIcon>

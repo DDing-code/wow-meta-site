@@ -18,6 +18,45 @@ const { chromium } = require('playwright');
       const sections = page.locator('main section');
       assert.equal(await sections.count(), 13);
       assert.equal(await sections.locator('a').count(), 40);
+      const icons = await sections.locator('[data-spec-icon]').evaluateAll(elements => elements.map(element => {
+        const style = getComputedStyle(element);
+        return {
+          id: element.dataset.specIcon,
+          hidden: element.getAttribute('aria-hidden'),
+          position: style.maskPosition,
+          mode: style.maskMode,
+          opacity: Number(style.opacity),
+          size: element.getBoundingClientRect().width,
+        };
+      }));
+      assert.equal(icons.length, 40);
+      assert.equal(new Set(icons.map(icon => icon.id)).size, 40);
+      assert.equal(new Set(icons.map(icon => icon.position)).size, 40);
+      assert(icons.every(icon => icon.mode === 'luminance' && icon.hidden === 'true' && icon.size === 32 && icon.opacity === 0.58));
+      if (width === 1440) {
+        const masks = await page.evaluate(async positions => {
+          const image = new Image();
+          image.src = '/assets/spec-icons-white-v1.png';
+          await image.decode();
+          const canvas = document.createElement('canvas');
+          canvas.width = image.naturalWidth;
+          canvas.height = image.naturalHeight;
+          const context = canvas.getContext('2d');
+          context.drawImage(image, 0, 0);
+          return positions.map(position => {
+            const [x, y] = position.split(' ').map(value => parseFloat(value));
+            const pixels = context.getImageData(Math.round(x / 100 * (canvas.width - 176)), Math.round(y / 100 * (canvas.height - 176)), 176, 176).data;
+            let ink = 0, clipped = false;
+            for (let i = 0; i < 176 * 176; i++) {
+              if (pixels[i * 4] < 128) continue;
+              ink++;
+              if (i % 176 === 0 || i % 176 === 175 || i < 176 || i >= 175 * 176) clipped = true;
+            }
+            return { ink, clipped };
+          });
+        }, icons.map(icon => icon.position));
+        assert(masks.every(mask => mask.ink > 800 && !mask.clipped), 'Every atlas view must contain a complete, nonblank icon');
+      }
       const layout = await sections.evaluateAll(elements => elements.map(section => {
         const links = [...section.querySelectorAll('a')];
         return {
@@ -52,7 +91,7 @@ const { chromium } = require('playwright');
       await page.waitForURL('**/guide/monk/windwalker');
       await page.getByRole('heading', { name: '풍운 수도사 가이드', exact: true }).waitFor();
       await page.waitForFunction(() => window.scrollY === 0);
-      console.log(`${width}px: class rows, 40 links, filters, text bounds and keyboard navigation passed`);
+      console.log(`${width}px: class rows, 40 icons/links, filters, text bounds and keyboard navigation passed`);
       await page.close();
     }
     assert.deepEqual(errors, []);
