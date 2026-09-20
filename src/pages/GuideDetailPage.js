@@ -2165,7 +2165,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                   $color={guide.color}
                   onClick={() => setActiveHeroBranchIndex(index)}
                 >
-                  {renderGuideText(branch.label, inlineTerms)}
+                  {displayGuideText(branch.label)}
                 </HeroBranchTab>
               ))}
             </HeroBranchTabs>
@@ -2388,7 +2388,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
               <HeroBranchTabs role="group" aria-label="우선순위 영웅 특성 선택">
                 {heroBranches.map((branch, index) => (
                   <HeroBranchTab key={branch.label} type="button" aria-pressed={activeHeroBranchIndex === index} $active={activeHeroBranchIndex === index} $color={guide.color} onClick={() => setActiveHeroBranchIndex(index)}>
-                    {renderGuideText(branch.label, inlineTerms)}
+                    {displayGuideText(branch.label)}
                   </HeroBranchTab>
                 ))}
               </HeroBranchTabs>

@@ -363,6 +363,8 @@ function validateNoDuplicateBranches(branches, scopeName) {
 
 function main() {
   const guideDetailSource = readSource(GUIDE_DETAIL_PATH);
+  const heroTabs = (guideDetailSource.match(/<HeroBranchTab\b[\s\S]*?<\/HeroBranchTab>/g) || []).filter(tab => tab.includes('setActiveHeroBranchIndex'));
+  assert(heroTabs.length === 2 && heroTabs.every(tab => tab.includes('{displayGuideText(branch.label)}') && !tab.includes('renderGuideText(')), 'Hero selection buttons must use plain labels, not nested spell links');
   const displayCopy = new Function('value', 'cleanText', 'normalizeCommunityTerms', extractFunctionBody(guideDetailSource, 'displayGuideText'));
   assert(displayCopy('프리셋 버튼, 리셋 버튼, 리셋합니다', cleanText, value => value) === '프리셋 버튼, 초기화 버튼, 초기화합니다', 'Copy cleanup must not rewrite reset inside preset');
   const getScopedSynergySkills = new Function('synergy', 'scopedSkills', 'uniqueBy', 'normalizeSkillLookupText', 'skillLookupKeys', extractFunctionBody(guideDetailSource, 'getSynergySkills'));
