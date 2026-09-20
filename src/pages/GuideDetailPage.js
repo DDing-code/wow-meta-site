@@ -1340,18 +1340,6 @@ function isPracticalTipBlock(block) {
 }
 
 const SPECIALIST_CHARTS = {
-  'warlock-affliction': {
-    id: 'uptime',
-    title: 'DoT와 조각 소비 타임라인',
-    sectionHeading: '지속 피해와 영혼의 조각 준비',
-    sectionIntro: '고통 흑마법사는 고통, 부패, 불안정한 고통을 유지하면서 영혼의 조각을 몰아 쓰는 전문화입니다. 보조 차트는 DoT 공백과 조각 과소비를 같은 시간축에서 확인하게 만듭니다.',
-    caption: '실제 WCL 타임라인 복사본이 아니라, 고통/부패 유지, 불안정한 고통 투입, 영혼의 조각 소비, 악의의 환희 전환을 한 화면에 묶은 확인 흐름입니다.',
-    definition: [
-      ['의미', '고통과 부패는 피해 바탕이고, 불안정한 고통과 악의의 환희는 조각을 피해로 바꾸는 핵심 소비 축입니다.'],
-      ['읽는 법', 'DoT가 비면 먼저 복구하고, 조각이 넘치기 전 악의의 환희나 부패의 씨앗으로 소비합니다. 쿨기 구간에는 불안정한 고통과 조각 소비가 함께 들어가야 합니다.'],
-      ['체크 포인트', '고통/부패 공백, 불안정한 고통 지연, 조각 5개 방치, 악의의 환희 지연, 광역에서 부패의 씨앗 전환 누락을 봅니다.'],
-    ],
-  },
   'warlock-demonology': {
     id: 'uptime',
     title: '소환수 수명과 폭군 준비',
@@ -1773,7 +1761,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4140,58 +4128,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'warlock-affliction') {
-    return [
-      {
-        label: '유지 바닥',
-        skill: findSkillByNames(data, ['고통']),
-        note: '오래 살아남는 대상과 우선 대상에 먼저 유지하는 조각 흐름의 시작점입니다.',
-        segments: [[3, 92]],
-      },
-      {
-        label: '보조 유지',
-        skill: findSkillByNames(data, ['부패', '쇠퇴']),
-        note: '영혼 수확자는 부패, 지옥소환사는 쇠퇴 가지로 같은 유지 칸에서 읽습니다.',
-        segments: [[5, 88]],
-      },
-      {
-        label: '중심 소비',
-        skill: findSkillByNames(data, ['불안정한 고통']),
-        note: '영혼의 조각을 피해와 암흑의 수확 주기로 전환하는 중심 소비기입니다.',
-        segments: [[14, 16], [43, 18], [75, 18]],
-      },
-      {
-        label: '우선 대상',
-        skill: findSkillByNames(data, ['유령 출몰']),
-        note: '주 대상 피해 구간을 여는 증폭 기준선입니다.',
-        segments: [[7, 12], [40, 12], [70, 12]],
-      },
-      {
-        label: '수확 구간',
-        skill: findSkillByNames(data, ['암흑의 수확']),
-        note: '영혼 수확자 기준 조각 회복과 짧은 피해 구간을 함께 만듭니다.',
-        segments: [[23, 9], [57, 9], [86, 9]],
-      },
-      {
-        label: '소환 구간',
-        skill: findSkillByNames(data, ['암흑시선 소환']),
-        note: '고통, 부패, 불안정한 고통이 준비된 뒤 사용해야 가치가 올라갑니다.',
-        segments: [[29, 18], [78, 18]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['부패의 씨앗']),
-        note: '밀집 대상에서는 조각 소비와 광역 전염을 담당합니다.',
-        segments: [[27, 12], [50, 12], [82, 12]],
-      },
-      {
-        label: '필러/발동',
-        skill: findSkillByNames(data, ['영혼 흡수', '일몰']),
-        note: '우선순위가 비거나 일몰이 뜰 때 다음 소비 구간을 준비합니다.',
-        segments: [[12, 8], [37, 8], [65, 8], [94, 5]],
-      },
-    ];
-  }
 
 
 

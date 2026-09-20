@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T16:01:39.569Z",
+    "generatedAt": "2026-09-20T16:59:36.357Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2830,
-    "rawTotalSkills": 2830,
+    "totalSkills": 2838,
+    "rawTotalSkills": 2838,
     "duplicateIds": [],
-    "totalSynergies": 515,
+    "totalSynergies": 516,
     "stats": {
-      "total": 2830,
+      "total": 2838,
       "byType": {
-        "buff": 80,
-        "hero-talent": 571,
-        "atomic-skill": 489,
+        "buff": 84,
+        "hero-talent": 567,
+        "atomic-skill": 507,
         "proc": 10,
-        "skill": 167,
+        "skill": 153,
         "talent": 991,
         "spec-talent": 377,
-        "passive": 42,
+        "passive": 46,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -41,7 +41,7 @@
         "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
-        "Warlock": 235,
+        "Warlock": 243,
         "Warrior": 265
       },
       "bySpec": {
@@ -90,7 +90,8 @@
         "Shaman-공용": 126,
         "Shaman-복원": 46,
         "Shaman-정기": 57,
-        "Warlock-Affliction": 44,
+        "Warlock-고통": 10,
+        "Warlock-Affliction": 42,
         "Warlock-공용": 106,
         "Warlock-Demonology": 41,
         "Warlock-Destruction": 44,
@@ -101,9 +102,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2753,
-        "withSynergies": 1356,
-        "avgLinkDensity": "0.036"
+        "withWikilinks": 2762,
+        "withSynergies": 1415,
+        "avgLinkDensity": "0.037"
       }
     }
   },
@@ -570,7 +571,7 @@
     },
     "172": {
       "id": "172",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -578,7 +579,7 @@
       ],
       "name": "부패",
       "koreanName": "부패",
-      "englishName": "",
+      "englishName": "Corruption",
       "icon": "spell_shadow_abominationexplosion",
       "iconName": "spell_shadow_abominationexplosion",
       "school": "",
@@ -586,10 +587,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 부패은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 부패 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 요구 레벨 2 대상을 부패시켜 (주문력의 35.0864%)의 암흑 피해를 입히고 14초에 걸쳐 (주문력의 231.368%)의 추가 암흑 피해를 입힙니다.",
+      "description": "영혼 수확자의 기본 지속 피해다. 즉시 시전으로 14초 동안 암흑 피해를 주고 일몰 발동에 관여한다. 지옥소환사를 선택하면 쇠퇴로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -601,14 +602,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_abominationexplosion.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/완전한-부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/생명력-착취"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.081,
         "hasWikilinks": true
       },
       "source": {
@@ -1431,10 +1440,11 @@
     },
     "686": {
       "id": "686",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Demonology",
       "specs": [
+        "Affliction",
         "Demonology"
       ],
       "name": "어둠의 화살",
@@ -1447,10 +1457,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "조건부 주문이 없을 때 영혼의 조각을 만드는 기본 시전이다. 악마 흑마법사에서는 자체 피해보다 다음 `굴단의 손`, `공포사냥개 부르기`, `악마 폭군 소환` 준비를 위한 자원 생성 의미가 크다.",
+      "description": "기본 2초 시전의 암흑 공격이다. 악마 전문화에서는 조각 1개를 생성하지만 고통에서는 일몰과 조각의 불안정성에 연결되는 필러이며 매 시전 조각 1개 생성이 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1462,15 +1472,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Skills\\어둠의-화살.md",
@@ -2331,7 +2346,7 @@
     },
     "980": {
       "id": "980",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -2339,7 +2354,7 @@
       ],
       "name": "고통",
       "koreanName": "고통",
-      "englishName": "",
+      "englishName": "Agony",
       "icon": "spell_shadow_curseofsargeras",
       "iconName": "spell_shadow_curseofsargeras",
       "school": "",
@@ -2347,10 +2362,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 고통은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 고통 특성 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 대상에게 심화되는 고통을 선사하여 18초에 걸쳐 최대 [(주문력의 7.76081%) * 18 / 2 * 8]의 암흑 피해를 입힙니다. 피해량은 낮게 시작해서 시간이 지날수록 점점 증가합니다. 고통을 갱신하면 현재의 피해량이 그대로 유지됩니다. 고통으로 적에게 ",
+      "description": "고통은 18초 동안 피해를 주며 틱이 진행될수록 최대 8중첩까지 강해진다. 주기 피해는 영혼의 조각 생성과 연결된다. 남은 시간 안에 갱신하면 쌓인 중첩을 유지한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2362,14 +2377,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_curseofsargeras.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/고뇌-나눔",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/급성-발병"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 0,
-        "linkDensity": 0.048,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -8891,6 +8911,58 @@
         "lastUpdate": ""
       }
     },
+    "27243": {
+      "id": "27243",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "부패의 씨앗",
+      "koreanName": "부패의 씨앗",
+      "englishName": "Seed of Corruption",
+      "icon": "spell_shadow_seedofdestruction",
+      "iconName": "spell_shadow_seedofdestruction",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "2초",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "40야드",
+      "description": "영혼의 조각 1개를 쓰는 기본 2초 시전 주문이다. 씨앗은 최대 12초 후 또는 피해 조건 충족 시 폭발하여 10미터 내 적에게 피해를 주고 부패를 전파한다. 8명을 넘으면 피해가 감소한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_seedofdestruction.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_seedofdestruction.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_seedofdestruction.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_seedofdestruction.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_seedofdestruction.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/씨앗-뿌리기",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/파괴의-씨앗",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\부패의-씨앗.md",
+        "lastUpdate": ""
+      }
+    },
     "29166": {
       "id": "29166",
       "type": "atomic-skill",
@@ -9090,7 +9162,7 @@
     },
     "29893": {
       "id": "29893",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -9100,27 +9172,27 @@
       ],
       "name": "영혼의 샘 창조",
       "koreanName": "영혼의 샘 창조",
-      "englishName": "",
-      "icon": "spell_shadow_shadesofdarkness",
-      "iconName": "spell_shadow_shadesofdarkness",
+      "englishName": "Create Soulwell",
+      "icon": "8026699",
+      "iconName": "8026699",
       "school": "",
       "cooldown": "",
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 영혼의 샘 창조은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼의 샘 창조 5% (기본 마나 중) 30 야드 사정거리 3 초 주문 시전 시간 2 분 재사용 대기시간 흑마법사 필요 요구 레벨 47 2분 동안 영혼의 샘을 창조합니다. 파티원과 공격대원이 영혼의 샘을 클릭하면 생명석을 얻을 수 있습니다.",
+      "description": "기본 마나의 5%를 사용해 30미터 안에 2분 동안 유지되는 영혼의 샘을 만든다. 기본 시전 시간은 3초, 재사용 대기시간은 2분이다. 파티원과 공격대원이 샘을 클릭하면 생명석을 받는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/8026699.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadesofdarkness.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadesofdarkness.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadesofdarkness.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/8026699.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/8026699.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/8026699.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/8026699.jpg"
       },
       "synergies": {
         "relatedSkills": [],
@@ -9130,7 +9202,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -11748,7 +11820,7 @@
     },
     "48181": {
       "id": "48181",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -11756,7 +11828,7 @@
       ],
       "name": "유령 출몰",
       "koreanName": "유령 출몰",
-      "englishName": "",
+      "englishName": "Haunt",
       "icon": "ability_warlock_haunt",
       "iconName": "ability_warlock_haunt",
       "school": "",
@@ -11764,10 +11836,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 유령 출몰은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 유령 출몰 특성 2% (기본 마나 중) 40 야드 사정거리 1.5 초 주문 시전 시간 15 초 재사용 대기시간 흑마법사 필요 요구 레벨 45 유령의 영혼이 대상에 다가가 (주문력의 720.612%)의 암흑 피해를 입히고, 18초 동안 대상에 대한 공격력을 12 %만큼 증가시킵니다. 대상이 죽으면 유령 출몰의 재사용 대기시간이 ",
+      "description": "기본 1.5초 시전, 15초 재사용으로 피해를 주고 18초 동안 해당 적에게 가하는 피해를 16% 높인다. 유령 출몰이 걸린 적이 죽으면 재사용이 초기화된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11780,13 +11852,19 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261990",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/성급한-분노"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사타이엘의-자유-의지"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -14872,54 +14950,6 @@
         "lastUpdate": ""
       }
     },
-    "63106": {
-      "id": "63106",
-      "type": "skill",
-      "class": "Warlock",
-      "spec": "Affliction",
-      "specs": [
-        "Affliction"
-      ],
-      "name": "생명력 착취",
-      "koreanName": "생명력 착취",
-      "englishName": "",
-      "icon": "spell_shadow_requiem",
-      "iconName": "spell_shadow_requiem",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 생명력 착취은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 생명력 착취 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 요구 레벨 25 대상의 생명의 정수를 흡수하여 15초에 걸쳐 총 25의 암흑 피해를 입히고, 자신은 입힌 피해의 30%에 해당하는 생명력을 회복합니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_requiem.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_requiem.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_requiem.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_requiem.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_requiem.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\생명력-착취.md",
-        "lastUpdate": ""
-      }
-    },
     "63560": {
       "id": "63560",
       "type": "buff",
@@ -15073,54 +15103,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Skills\\천상의찬가.md",
-        "lastUpdate": ""
-      }
-    },
-    "70388": {
-      "id": "70388",
-      "type": "skill",
-      "class": "Warlock",
-      "spec": "Affliction",
-      "specs": [
-        "Affliction"
-      ],
-      "name": "부패의 씨앗",
-      "koreanName": "부패의 씨앗",
-      "englishName": "",
-      "icon": "spell_shadow_seedofdestruction",
-      "iconName": "spell_shadow_seedofdestruction",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 부패의 씨앗은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 부패의 씨앗 마나 550 30 야드 사정거리 2 초 주문 시전 시간 흑마법사 필요 적 안에 악마의 씨앗을 심어 18초에 걸쳐 (주문력의 100.2%)의 암흑 피해를 입힙니다. 만약 대상이 총 3250의 피해를 입으면 씨앗이 폭발하여 대상으로부터 10미터 반경 내에 있는 모든 적에게 암흑 피해를 입힙니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_seedofdestruction.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_seedofdestruction.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_seedofdestruction.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_seedofdestruction.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_seedofdestruction.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\부패의-씨앗.md",
         "lastUpdate": ""
       }
     },
@@ -17804,7 +17786,7 @@
     },
     "104773": {
       "id": "104773",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -17814,7 +17796,7 @@
       ],
       "name": "영원한 결의",
       "koreanName": "영원한 결의",
-      "englishName": "",
+      "englishName": "Unending Resolve",
       "icon": "spell_shadow_demonictactics",
       "iconName": "spell_shadow_demonictactics",
       "school": "",
@@ -17822,10 +17804,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 영원한 결의은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영원한 결의 2% (기본 마나 중) 즉시 3 분 재사용 대기시간 흑마법사 필요 요구 레벨 4 피부를 단단하게 만들어 8초 동안 받는 모든 피해를 25%만큼 감소시키고, 주문 방해 및 침묵 효과에 면역이 됩니다.",
+      "description": "기본 3분 재사용의 생존기다. 8초 동안 받는 모든 피해를 25% 줄이고 주문 방해와 침묵에 면역이 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17838,13 +17820,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/어둠의-서약"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠약의-오라"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "synergyCount": 1,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -18571,7 +18557,7 @@
       ],
       "name": "영혼 갈취",
       "koreanName": "영혼 갈취",
-      "englishName": "",
+      "englishName": "Soul Leech",
       "icon": "warlock_siphonlife",
       "iconName": "warlock_siphonlife",
       "school": "",
@@ -18579,10 +18565,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 영혼 갈취은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼 갈취 특성 흑마법사 필요 자신과 하수인이 입히는 단일 대상 피해가 흑마법사와 소환수에게 어둠의 보호막을 부여하여, 15초 동안 입힌 피해의 3%에 해당하는 피해를 흡수합니다. 최대 생명력의 5 / 악마의 피부 : 10 / 일후프의 간계 : 20 / 경화된 영혼 : 10 %까지 피해를 흡수합니다.",
+      "description": "자신과 소환수가 입히는 단일 대상 피해의 3%를 15초 흡수막으로 전환하며 기본 상한은 최대 생명력의 5%다. 자동 방어 패시브다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18595,13 +18581,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/어둠의-서약"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/일후프의-간계"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "synergyCount": 1,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -18661,7 +18651,7 @@
     },
     "108416": {
       "id": "108416",
-      "type": "class-talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -18671,7 +18661,7 @@
       ],
       "name": "어둠의 서약",
       "koreanName": "어둠의 서약",
-      "englishName": "",
+      "englishName": "Dark Pact",
       "icon": "spell_shadow_deathpact",
       "iconName": "spell_shadow_deathpact",
       "school": "",
@@ -18679,10 +18669,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "어둠의 서약은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 어둠의 서약 특성 즉시 1 분 재사용 대기시간 흑마법사 필요 요구 레벨 30 현재 생명력의 20%만큼을 희생시켜, 20초 동안 희생한 생명력의 200%만큼 피해를 흡수하고 추가로 (주문력 * 2.5)의 피해를 흡수하는 보호막을 자신에게 씌웁니다. 제어 방해 효과에 걸린 상태에서도 사용할 수 있습니다.",
-      "category": "class-talent",
+      "description": "기본 60초 재사용으로 현재 생명력의 20%를 희생하고 20초 동안 희생량의 200%와 주문력 기반 추가량을 흡수하는 보호막을 얻는다. 제어 방해 중에도 사용 가능하다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18694,14 +18684,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathpact.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼-갈취"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/음지의-친구",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/제브림의-탄력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -18711,7 +18706,7 @@
     },
     "108503": {
       "id": "108503",
-      "type": "spec-talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -18719,7 +18714,7 @@
       ],
       "name": "흑마법서: 희생",
       "koreanName": "흑마법서: 희생",
-      "englishName": "",
+      "englishName": "Grimoire of Sacrifice",
       "icon": "warlock_grimoireofsacrifice",
       "iconName": "warlock_grimoireofsacrifice",
       "school": "",
@@ -18727,10 +18722,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법서: 희생은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 흑마법서: 희생 특성 사정거리 없음 즉시 30 초 재사용 대기시간 흑마법사 필요 요구 레벨 45 악마 소환수를 희생시켜 악마 조종 능력을 손에 넣으며, 주문 공격 시 때때로 (주문력의 37.1875%)의 추가 암흑 피해를 입힙니다. 활성화되어 있는 동안 또는 악마 소환수를 소환할 때까지 지속됩니다.",
-      "category": "spec-talent",
+      "description": "소환한 악마를 희생해 악마 조종의 해당 능력과 확률 암흑 피해를 얻는 실제 시전 기술이다. 기본 재사용은 30초이며 효과는 다른 악마를 소환할 때까지 유지된다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18742,14 +18737,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_grimoireofsacrifice.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마-조종"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/소환사의-포옹"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -18767,7 +18766,7 @@
       ],
       "name": "일몰",
       "koreanName": "일몰",
-      "englishName": "",
+      "englishName": "Nightfall",
       "icon": "spell_shadow_twilight",
       "iconName": "spell_shadow_twilight",
       "school": "",
@@ -18775,10 +18774,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "일몰은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 일몰 특성 흑마법사 필요 요구 레벨 15 부패 |1으로;로; 피해를 입히면 다음 어둠의 화살 또는 재앙의 손아귀의 공격력이 25%만큼 증가합니다. 효과에 영향을 받는 동안 어둠의 화살이 즉시 시전되고 재앙의 손아귀가 50%만큼 더 빨리 시전됩니다.",
+      "description": "부패 피해로 다음 어둠의 화살 또는 재앙의 손아귀를 강화하는 발동 특성이다. 기본 피해 보너스는 25%이며 어둠의 화살은 즉시 시전, 재앙의 손아귀는 50% 빠른 정신 집중이 된다. 영혼 흡수 대체 시에도 해당 강화 효과를 사용한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18790,14 +18789,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_twilight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사악한-수확",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사타이엘의-자유-의지",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/종지부"
+        ]
       },
       "quality": {
         "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.037,
+        "synergyCount": 2,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -21351,7 +21357,7 @@
     },
     "119898": {
       "id": "119898",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -21361,7 +21367,7 @@
       ],
       "name": "악마 조종",
       "koreanName": "악마 조종",
-      "englishName": "",
+      "englishName": "Command Demon",
       "icon": "ability_warlock_demonicempowerment",
       "iconName": "ability_warlock_demonicempowerment",
       "school": "",
@@ -21369,10 +21375,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 악마 조종은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 악마 조종 즉시 흑마법사 필요 요구 레벨 29 악마에게 명령을 내려 가장 강력한 능력을 사용하게 합니다. 이 주문은 현재 소환수에 따라 달라집니다. [ 지옥수호병 소환 : 지옥수호병: 도끼 던지기 ] 지옥사냥개: 주문 잠금 공허방랑자: 어둠의 보루 인큐버스/서큐버스: 유혹 임프: 마법 태우기",
+      "description": "현재 소환 악마의 특수 능력을 사용하는 명령 버튼이다. 지옥사냥개는 주문 잠금, 임프는 마법 태우기 등 소환수에 따라 능력이 바뀐다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21385,13 +21391,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/흑마법서-희생"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -27817,7 +27825,7 @@
       ],
       "name": "완전한 부패",
       "koreanName": "완전한 부패",
-      "englishName": "",
+      "englishName": "Absolute Corruption",
       "icon": "ability_bossmannoroth_empoweredmannorothsgaze",
       "iconName": "ability_bossmannoroth_empoweredmannorothsgaze",
       "school": "",
@@ -27825,10 +27833,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "완전한 부패은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 완전한 부패 특성 흑마법사 필요 요구 레벨 25 부패 |1이;가; 영원히 지속되고 공격력이 15%만큼 증가합니다. 플레이어를 대상으로 할 때는 지속시간이 24초로 감소합니다.",
+      "description": "부패 피해를 15% 높이고 일반 적에게 무한 지속으로 바꾼다. 플레이어 대상 지속은 24초다. 생명력 착취와 같은 운용을 전제로 하지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27840,14 +27848,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmannoroth_empoweredmannorothsgaze.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/생명력-착취"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -27865,7 +27878,7 @@
       ],
       "name": "씨앗 뿌리기",
       "koreanName": "씨앗 뿌리기",
-      "englishName": "",
+      "englishName": "Sow the Seeds",
       "icon": "spell_shadow_seedofdestruction",
       "iconName": "spell_shadow_seedofdestruction",
       "school": "",
@@ -27873,10 +27886,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "씨앗 뿌리기은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 씨앗 뿌리기 특성 흑마법사 필요 요구 레벨 35 화폐 필요 부패의 씨앗이 50%의 효율로 주위 적 2명에게 추가로 악마의 씨앗을 심습니다.",
+      "description": "부패의 씨앗이 주변의 적 둘에게 추가 씨앗을 심는다. 추가 씨앗은 각각 기본 효과의 50%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27888,14 +27901,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_seedofdestruction.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/파괴의-씨앗"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -29562,7 +29579,7 @@
     },
     "198590": {
       "id": "198590",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -29570,7 +29587,7 @@
       ],
       "name": "영혼 흡수",
       "koreanName": "영혼 흡수",
-      "englishName": "",
+      "englishName": "Drain Soul",
       "icon": "spell_shadow_haunting",
       "iconName": "spell_shadow_haunting",
       "school": "",
@@ -29578,10 +29595,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 영혼 흡수은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼 흡수 특성 0% (기본 마나 중) 및 매 초마다 추가 1% 40 야드 사정거리 집중 (5 초 주문 시전 시간) 흑마법사 필요 요구 레벨 15 어둠의 화살을 대체합니다. 적의 영혼을 흡수해 5초에 걸쳐 (주문력의 556.875%)의 암흑 피해를 입힙니다. 남은 생명력이 20% 미만인 적에게 공격력이 100%만큼 증가합니다.",
+      "description": "어둠의 화살을 대체하는 기본 5초 정신 집중 공격이다. 대상 생명력이 20% 미만이면 피해가 100% 증가하며 정신 집중 중 대상이 죽으면 조각 1개를 얻는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29593,14 +29610,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_haunting.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/죽음의-은총"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.006,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -33131,7 +33154,7 @@
     },
     "205180": {
       "id": "205180",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Affliction",
       "specs": [
@@ -33139,7 +33162,7 @@
       ],
       "name": "암흑시선 소환",
       "koreanName": "암흑시선 소환",
-      "englishName": "",
+      "englishName": "Summon Darkglare",
       "icon": "inv_beholderwarlock",
       "iconName": "inv_beholderwarlock",
       "school": "",
@@ -33147,10 +33170,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 암흑시선 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 암흑시선 소환 특성 2% (기본 마나 중) 즉시 2 분 재사용 대기시간 흑마법사 필요 뒤틀린 황천에서 암흑시선을 소환합니다. 암흑시선은 활성화된 동안 시전자의 고통, 부패 , 불안정한 고통의 공격력을 20%만큼 증가시킵니다. 암흑시선은 20초 동안 전투를 도우며 대상을 폭발시켜 (주문력의 487.044%)의 암흑 피해를 입",
+      "description": "기본 2분 재사용으로 암흑시선을 20초 소환한다. 활성화 중 고통·부패·불안정한 고통의 피해를 20% 높이며, 광선은 대상에 걸린 자신의 주기 피해 효과에 따라 강화된다. DoT 지속시간을 연장하는 기술은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33162,14 +33185,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_beholderwarlock.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/시선의-계약",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/황천의-장갑판"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.012,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -36004,7 +36033,7 @@
     },
     "234153": {
       "id": "234153",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -36014,7 +36043,7 @@
       ],
       "name": "생명력 흡수",
       "koreanName": "생명력 흡수",
-      "englishName": "",
+      "englishName": "Drain Life",
       "icon": "spell_shadow_lifedrain02",
       "iconName": "spell_shadow_lifedrain02",
       "school": "",
@@ -36022,10 +36051,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 생명력 흡수은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 생명력 흡수 0% (기본 마나 중) 및 매 초마다 추가 3% 40 야드 사정거리 집중 (5 초 주문 시전 시간) 흑마법사 필요 요구 레벨 9 대상의 생명력을 흡수하여 5초에 걸쳐 총 25의 암흑 피해를 입히고, 자신은 적에게 입힌 피해의 500%에 해당하는 생명력을 회복합니다.",
+      "description": "기본 5초 정신 집중으로 피해를 주며 입힌 피해의 500%만큼 자신을 회복한다. 매초 마나가 드는 회복용 공격이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36037,14 +36066,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_lifedrain02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쾌락에-물든-폭식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -36062,7 +36095,7 @@
       ],
       "name": "죽음의 은총",
       "koreanName": "죽음의 은총",
-      "englishName": "",
+      "englishName": "Death's Embrace",
       "icon": "spell_shadow_deathsembrace",
       "iconName": "spell_shadow_deathsembrace",
       "school": "",
@@ -36070,10 +36103,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "죽음의 은총은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 죽음의 은총 특성 흑마법사 필요 생명력이 35% 미만인 대상에 대한 고통, 부패 , 불안정한 고통, 부패의 씨앗, [ 영혼 흡수 / 어둠의 화살]의 공격력이 최대 40%까지 증가합니다. 생명력이 적은 대상에게는 공격력이 더 크게 증가합니다.",
+      "description": "대상 생명력이 35% 아래로 내려갈수록 고통·부패·불안정한 고통·씨앗과 어둠의 화살 또는 영혼 흡수의 피해가 증가한다. 최대 증가는 40%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36085,14 +36118,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathsembrace.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.021,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -39241,7 +39278,7 @@
       ],
       "name": "죄어오는 죽음",
       "koreanName": "죄어오는 죽음",
-      "englishName": "",
+      "englishName": "Creeping Death",
       "icon": "ability_creature_cursed_03",
       "iconName": "ability_creature_cursed_03",
       "school": "",
@@ -39249,10 +39286,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "죄어오는 죽음은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 죄어오는 죽음 특성 흑마법사 필요 요구 레벨 50 고통, 부패 , 생명력 착취, 불안정한 고통이 피해를 입히는 시간이 10%만큼 단축됩니다.",
+      "description": "지속 피해를 더 빠르게 처리하는 특성이다. 고통·부패·불안정한 고통 등의 피해가 1점 투자 시 10%, 2점 투자 시 20% 빠르게 들어간다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39264,14 +39301,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_cursed_03.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -39523,6 +39564,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\게릴라전술.md",
+        "lastUpdate": ""
+      }
+    },
+    "264571": {
+      "id": "264571",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "일몰",
+      "koreanName": "일몰",
+      "englishName": "Nightfall",
+      "icon": "spell_shadow_twilight",
+      "iconName": "spell_shadow_twilight",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "일몰을 얻었을 때 표시되는 12초 강화 버프다. 어둠의 화살 즉시 시전 또는 채널 가속과 기본 피해 25% 보너스를 제공한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_twilight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_twilight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_twilight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_twilight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_twilight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사악한-수확",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/종지부"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Buffs\\일몰.md",
         "lastUpdate": ""
       }
     },
@@ -42323,54 +42419,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\수호자의손길.md",
-        "lastUpdate": ""
-      }
-    },
-    "316099": {
-      "id": "316099",
-      "type": "skill",
-      "class": "Warlock",
-      "spec": "Affliction",
-      "specs": [
-        "Affliction"
-      ],
-      "name": "불안정한 고통",
-      "koreanName": "불안정한 고통",
-      "englishName": "",
-      "icon": "spell_shadow_unstableaffliction_3",
-      "iconName": "spell_shadow_unstableaffliction_3",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 불안정한 고통은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 불안정한 고통 1% (기본 마나 중) 40 야드 사정거리 1.5 초 주문 시전 시간 흑마법사 필요 요구 레벨 13 한 대상을 고통에 빠뜨려 16초에 걸쳐 총 (주문력의 934.832%)의 암흑 피해를 입힙니다. 효과가 해제되면 [(주문력의 116.854%) * 3447 / 100]의 피해를 해제한 대상에게 입히고, 4초 동",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_unstableaffliction_3.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_unstableaffliction_3.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_unstableaffliction_3.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 0,
-        "linkDensity": 0.046,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\불안정한-고통.md",
         "lastUpdate": ""
       }
     },
@@ -63822,7 +63870,7 @@
       ],
       "name": "메말리는 화살",
       "koreanName": "메말리는 화살",
-      "englishName": "",
+      "englishName": "Withering Bolt",
       "icon": "spell_shadow_shadowbolt",
       "iconName": "spell_shadow_shadowbolt",
       "school": "",
@@ -63830,10 +63878,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "메말리는 화살은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 메말리는 화살 특성 흑마법사 필요 대상에게 활성화한 지속 피해 효과 하나당 어둠의 화살과 영혼 흡수가 5%의 추가 피해를 최대 15%만큼 입힙니다.",
+      "description": "어둠의 화살과 영혼 흡수는 대상에 걸린 주기 피해 효과 수에 따라 강화된다. 1점 투자 시 효과 하나당 5%, 최대 15%이고 2점 투자 시 하나당 10%, 최대 30%다. 8월 20일 핫픽스에는 재앙의 손아귀 적용 누락과 쇠퇴 계산 관련 수정도 포함된다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63845,14 +63893,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -63870,7 +63924,7 @@
       ],
       "name": "사크로래쉬의 암흑 일격",
       "koreanName": "사크로래쉬의 암흑 일격",
-      "englishName": "",
+      "englishName": "Sacrolash's Dark Strike",
       "icon": "spell_nzinsanity_fearofdeath",
       "iconName": "spell_nzinsanity_fearofdeath",
       "school": "",
@@ -63878,10 +63932,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "사크로래쉬의 암흑 일격은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사크로래쉬의 암흑 일격 특성 흑마법사 필요 부패 의 공격력이 15%만큼 증가하며, 피해를 입힐 때마다 대상에게 걸려 있는 저주의 지속시간이 0.5초만큼 증가합니다.",
+      "description": "부패의 피해를 15% 높이고 주기 피해가 자신의 저주 지속시간을 0.5초씩 연장한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63893,66 +63947,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_fearofdeath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\사크로래쉬의-암흑-일격.md",
-        "lastUpdate": ""
-      }
-    },
-    "387016": {
-      "id": "387016",
-      "type": "skill",
-      "class": "Warlock",
-      "spec": "Affliction",
-      "specs": [
-        "Affliction"
-      ],
-      "name": "암흑의 수확",
-      "koreanName": "암흑의 수확",
-      "englishName": "",
-      "icon": "ability_creature_disease_02",
-      "iconName": "ability_creature_disease_02",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "고통 흑마법사는 지속 피해 유지와 영혼의 조각 소비 구간을 분리해 단일 대상과 다중 대상 압박을 만든다. 암흑의 수확은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 암흑의 수확 흑마법사 필요 영혼 부식에 영향을 받는 대상 하나당 8초 동안 가속과 치명타 및 극대화율이 4.0%만큼 증가합니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_disease_02.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_creature_disease_02.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_creature_disease_02.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_creature_disease_02.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_disease_02.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.04,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\암흑의-수확.md",
         "lastUpdate": ""
       }
     },
@@ -67027,16 +67037,17 @@
     },
     "389623": {
       "id": "389623",
-      "type": "hero-talent",
+      "type": "class-talent",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
         "Affliction",
-        "Demonology"
+        "Demonology",
+        "Destruction"
       ],
       "name": "고어핀드의 결의",
       "koreanName": "고어핀드의 결의",
-      "englishName": "",
+      "englishName": "Gorefiend's Resolve",
       "icon": "ability_rogue_masterofsubtlety",
       "iconName": "ability_rogue_masterofsubtlety",
       "school": "",
@@ -67044,10 +67055,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고어핀드의 결의은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 고어핀드의 결의 특성 흑마법사 필요 영혼석으로 부활하는 대상이 추가로 40%의 생명력과 80%의 마나를 지닌 채 되살아납니다.",
-      "category": "hero-talent",
+      "description": "영혼석으로 부활시킨 대상이 추가 생명력 40%와 마나 80%를 회복하도록 하는 직업 특성이다. 영혼 수확자 전용 영웅 특성이 아니다.",
+      "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67060,19 +67071,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼석"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마-조종"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Hero-Talents\\고어핀드의-결의.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\고어핀드의-결의.md",
         "lastUpdate": ""
       }
     },
@@ -77172,7 +77183,7 @@
       ],
       "name": "자비우스의 계략",
       "koreanName": "자비우스의 계략",
-      "englishName": "",
+      "englishName": "Xavius' Gambit",
       "icon": "spell_shadow_mindshear",
       "iconName": "spell_shadow_mindshear",
       "school": "",
@@ -77180,10 +77191,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "자비우스의 계략은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 자비우스의 계략 특성 흑마법사 필요 불안정한 고통의 시전 시간이 0.15초만큼 감소하고 공격력은 5%만큼 증가합니다.",
+      "description": "불안정한 고통 시전 시간을 1점 투자 시 0.15초, 2점 투자 시 0.3초 줄이고 피해를 각각 5%, 10% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -77195,14 +77206,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_mindshear.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -85971,7 +85986,7 @@
       ],
       "name": "잘란의 잔혹성",
       "koreanName": "잘란의 잔혹성",
-      "englishName": "",
+      "englishName": "Xalan's Cruelty",
       "icon": "spell_shadow_demonicempathy",
       "iconName": "spell_shadow_demonicempathy",
       "school": "",
@@ -85979,10 +85994,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "잘란의 잔혹성은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 잘란의 잔혹성 특성 흑마법사 필요 파괴 주문 및 능력의 암흑 공격력이 5%만큼 증가합니다. 또한 모든 장비와 효과에 의한 암흑 주문의 치명타 및 극대화율 증가량이 10%만큼 증가합니다. 고통 주문 및 능력의 암흑 공격력이 6%만큼 증가합니다. 또한 모든 장비와 효과에 의한 암흑 주문의 치명타 및 극대화율 증가량이 10%만큼 증가합니다.",
+      "description": "암흑 피해를 고통은 6%, 파괴는 5% 높이고 장비와 효과에서 얻는 극대화 보너스를 10% 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -85996,12 +86011,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/페로스안의-징표"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -86020,7 +86038,7 @@
       ],
       "name": "검게 물든 영혼",
       "koreanName": "검게 물든 영혼",
-      "englishName": "",
+      "englishName": "Blackened Soul",
       "icon": "spell_nzinsanity_chasedbyshadows",
       "iconName": "spell_nzinsanity_chasedbyshadows",
       "school": "",
@@ -86028,10 +86046,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "검게 물든 영혼은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 검게 물든 영혼 특성 흑마법사 필요 공격 주문으로 영혼의 조각 소모 시 쇠퇴에 영향을 받는 적을 추가로 타락시켜 중첩을 1만큼 증가시킵니다. 쇠퇴의 중첩이 쌓일 때마다 일정 확률로 붕괴 작용을 일으켜 1초마다 중첩을 하나씩 소모해 (주문력의 99.6334%)의 암흑불길 피해를 입힙니다. 대상에게 중첩이 하나만 남을 때까지 지속됩니다.",
+      "description": "쇠퇴가 있는 대상에게 고통은 불안정한 고통, 파괴는 혼돈의 화살 또는 어둠의 연소를 맞히면 그 대상의 쇠퇴가 1중첩 증가한다. 중첩을 얻을 때 확률적으로 붕괴해 1초마다 중첩을 소모하며 한 중첩이 남을 때까지 피해를 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86043,16 +86061,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_chasedbyshadows.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/치명적인-메아리",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/파멸의-씨앗"
         ]
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -86071,7 +86095,7 @@
       ],
       "name": "잘란의 야성",
       "koreanName": "잘란의 야성",
-      "englishName": "",
+      "englishName": "Xalan's Ferocity",
       "icon": "spell_fire_felfire",
       "iconName": "spell_fire_felfire",
       "school": "",
@@ -86079,10 +86103,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "잘란의 야성은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 잘란의 야성 특성 흑마법사 필요 파괴 주문 및 능력의 화염 공격력이 5%만큼 증가합니다. 또한 모든 장비와 효과에 의한 화염 주문의 치명타 및 극대화율 증가량이 10%만큼 증가합니다. 고통 주문 및 능력의 화염 공격력이 6%만큼 증가합니다. 또한 모든 장비와 효과에 의한 화염 주문의 치명타 및 극대화율 증가량이 10%만큼 증가합니다.",
+      "description": "화염 피해를 고통은 6%, 파괴는 5% 높이고 장비와 효과의 극대화 보너스를 10% 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86096,12 +86120,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/잘란의-잔혹성"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -86120,7 +86147,7 @@
       ],
       "name": "페로스안의 징표",
       "koreanName": "페로스안의 징표",
-      "englishName": "",
+      "englishName": "Mark of Peroth'arn",
       "icon": "70_inscription_vantus_rune_tomb",
       "iconName": "70_inscription_vantus_rune_tomb",
       "school": "",
@@ -86128,10 +86155,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "페로스안의 징표은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 페로스안의 징표 특성 흑마법사 필요 쇠퇴의 치명타 및 극대화 피해가 10%만큼 증가합니다. 쇠퇴가 치명타 및 극대화 효과를 발휘하면 일정 확률로 중첩이 부여됩니다. 이 방식으로 부여되는 중첩은 검게 물든 영혼을 활성화하지 않습니다.",
+      "description": "쇠퇴의 극대화 피해를 기본 200% 대신 215%, 검게 물든 영혼의 극대화 피해를 225%로 바꾼다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86146,13 +86173,14 @@
         "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼"
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -86171,7 +86199,7 @@
       ],
       "name": "자비우스의 징표",
       "koreanName": "자비우스의 징표",
-      "englishName": "",
+      "englishName": "Mark of Xavius",
       "icon": "warlock_curse_shadow_aura",
       "iconName": "warlock_curse_shadow_aura",
       "school": "",
@@ -86179,10 +86207,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "자비우스의 징표은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 자비우스의 징표 특성 흑마법사 필요 [ 고통 : 고통의 공격력이 30%만큼 증가합니다 / 쇠퇴의 공격력이 25%만큼 증가합니다.] 쇠퇴 중첩 하나당 검게 물든 영혼의 공격력이 2%만큼 증가합니다.",
+      "description": "고통에서는 고통 피해를 30%, 파괴에서는 쇠퇴 피해를 25% 높인다. 검게 물든 영혼의 피해는 쇠퇴 중첩당 2% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86194,7 +86222,9 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_curse_shadow_aura.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
@@ -86202,9 +86232,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -86223,7 +86253,7 @@
       ],
       "name": "서릿발분노의 의식",
       "koreanName": "서릿발분노의 의식",
-      "englishName": "",
+      "englishName": "Hatefury Rituals",
       "icon": "70_inscription_glyph_demonhunter_minor",
       "iconName": "70_inscription_glyph_demonhunter_minor",
       "school": "",
@@ -86231,10 +86261,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "서릿발분노의 의식은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 서릿발분노의 의식 특성 흑마법사 필요 쇠퇴의 주기적인 피해가 30%만큼 증가하지만 지속시간이 15%만큼 감소합니다.",
+      "description": "쇠퇴 주기 피해를 30% 높이는 대신 지속시간을 15% 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86248,12 +86278,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -86272,7 +86304,7 @@
       ],
       "name": "냉혹심장의 전술",
       "koreanName": "냉혹심장의 전술",
-      "englishName": "",
+      "englishName": "Bleakheart Tactics",
       "icon": "spell_shadow_mindshear",
       "iconName": "spell_shadow_mindshear",
       "school": "",
@@ -86280,10 +86312,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "냉혹심장의 전술은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 냉혹심장의 전술 특성 흑마법사 필요 쇠퇴의 공격력이 20%만큼 증가합니다. 검게 물든 영혼으로 쇠퇴 중첩을 얻을 때 일정 확률로 추가 중첩을 얻습니다.",
+      "description": "쇠퇴 피해를 20% 높이고 검게 물든 영혼으로 중첩이 증가할 때 추가 중첩을 얻을 확률을 제공한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86299,13 +86331,14 @@
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심"
         ]
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.046,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -86324,7 +86357,7 @@
       ],
       "name": "파멸의 씨앗",
       "koreanName": "파멸의 씨앗",
-      "englishName": "",
+      "englishName": "Seeds of Their Demise",
       "icon": "ability_warlock_moltencoregreen",
       "iconName": "ability_warlock_moltencoregreen",
       "school": "",
@@ -86332,10 +86365,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "파멸의 씨앗은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파멸의 씨앗 특성 흑마법사 필요 파괴 쇠퇴가 8번 중첩되거나 대상의 생명력이 20% 이하로 떨어지면 쇠퇴가 대상에게 1초마다 (주문력의 99.6334%)의 암흑불길 피해를 입힙니다. 1중첩만 남을 때까지 지속됩니다. 검게 물든 영혼이 피해를 입히면 일정 확률로 발화점 2중첩|1이;가; 부여됩니다. 고통 쇠퇴가 8번 중첩되거나 대상의 생명력이 20% ",
+      "description": "쇠퇴가 8중첩이 되거나 대상 생명력이 20% 이하이면 붕괴를 시작해 한 중첩까지 소모한다. 검게 물든 영혼 피해는 고통의 조각의 불안정성 또는 파괴의 섬락 발동과 연결된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86352,14 +86385,14 @@
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
         ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
+        "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.044,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -86378,7 +86411,7 @@
       ],
       "name": "사티로스의 저주",
       "koreanName": "사티로스의 저주",
-      "englishName": "",
+      "englishName": "Curse of the Satyr",
       "icon": "inv_fabric_felrag",
       "iconName": "inv_fabric_felrag",
       "school": "",
@@ -86386,10 +86419,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "사티로스의 저주은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사티로스의 저주 특성 흑마법사 필요 무력화 저주가 강화되어 사티로스의 저주로 변화합니다. 사티로스의 저주 2분 동안 대상의 공격 간격을 20%만큼, 모든 주문의 시전 시간을 30%만큼 증가시킵니다. 저주 주문: 한 대상에게 하나의 저주만 걸 수 있습니다.",
+      "description": "무력화 저주를 사티로스의 저주로 바꾸는 영웅 특성이다. 대상의 공격 간격을 20%, 시전 시간을 30% 늘리는 2분 저주이며 한 대상에 자신의 저주 하나만 유지한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86401,16 +86434,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_fabric_felrag.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/무력화-저주"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠약의-오라"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.027,
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -86429,7 +86462,7 @@
       ],
       "name": "쇠약의 오라",
       "koreanName": "쇠약의 오라",
-      "englishName": "",
+      "englishName": "Aura of Enfeeblement",
       "icon": "warlock_curse_weakness_aura",
       "iconName": "warlock_curse_weakness_aura",
       "school": "",
@@ -86437,10 +86470,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "쇠약의 오라은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 쇠약의 오라 특성 흑마법사 필요 영원한 결의가 활성화된 동안 30미터 내의 적에게 100%의 효율로 언어의 저주와 무력화 저주를 겁니다.",
+      "description": "영원한 결의가 활성화되는 동안 30미터 내 적에게 언어의 저주와 무력화 저주를 강화해 적용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86453,16 +86486,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영원한-결의",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/무력화-저주"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영원한-결의"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/사티로스의-저주"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 2,
-        "linkDensity": 0.048,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -86481,7 +86515,7 @@
       ],
       "name": "제브림의 탄력",
       "koreanName": "제브림의 탄력",
-      "englishName": "",
+      "englishName": "Zevrim's Resilience",
       "icon": "ability_warrior_intensifyrage",
       "iconName": "ability_warrior_intensifyrage",
       "school": "",
@@ -86489,10 +86523,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "제브림의 탄력은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 제브림의 탄력 특성 흑마법사 필요 어둠의 서약이 활성화된 동안 1초마다 (주문력의 164.583%)의 생명력을 회복합니다.",
+      "description": "어둠의 서약이 활성화된 동안 매초 생명력을 회복하는 영웅 특성이다. 12.1의 회복량 상향이 현재 툴팁에 반영되어 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86511,9 +86545,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -86532,7 +86566,7 @@
       ],
       "name": "일후프의 간계",
       "koreanName": "일후프의 간계",
-      "englishName": "",
+      "englishName": "Illhoof's Design",
       "icon": "sha_spell_fire_felfireward_nightmare",
       "iconName": "sha_spell_fire_felfireward_nightmare",
       "school": "",
@@ -86540,10 +86574,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "일후프의 간계은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 일후프의 간계 특성 흑마법사 필요 최대 생명력의 10%를 희생합니다. 영혼 갈취가 최대 생명력의 15%를 추가로 흡수합니다.",
+      "description": "최대 생명력의 10%를 희생하는 대신 영혼 갈취의 흡수 상한을 최대 생명력의 15%만큼 추가로 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86562,9 +86596,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -89507,7 +89541,7 @@
     },
     "442726": {
       "id": "442726",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -89516,7 +89550,7 @@
       ],
       "name": "적개심",
       "koreanName": "적개심",
-      "englishName": "",
+      "englishName": "Malevolence",
       "icon": "inv_ability_hellcallerwarlock_malevolence",
       "iconName": "inv_ability_hellcallerwarlock_malevolence",
       "school": "",
@@ -89524,10 +89558,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "적개심은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 적개심 특성 1% (기본 마나 중) 즉시 1 분 재사용 대기시간 흑마법사 필요 20초 동안 암흑 마법을 방출해 영혼을 타락시킵니다. 이때 자신의 쇠퇴에 걸린 적은 (주문력의 1265.51%)의 암흑불길 피해를 받고 중첩이 6만큼 증가합니다. 타락한 동안 가속이 8%만큼 증가하고 공격 주문으로 영혼의 조각을 소모하면 쇠퇴 1중첩을 추가로 부여합니다.",
-      "category": "hero-talent",
+      "description": "기본 60초 재사용의 실제 시전 기술이다. 20초 동안 가속 8%를 얻고 현재 쇠퇴가 걸린 적에게 피해와 6중첩을 준다. 활성 중 공격용 조각 소비에 추가 중첩 효과가 붙는다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89542,13 +89576,16 @@
         "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/알진의-불합리성",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/지옥의-덩굴을-지나"
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -93301,7 +93338,7 @@
     },
     "445468": {
       "id": "445468",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "공용",
       "specs": [
@@ -93310,7 +93347,7 @@
       ],
       "name": "쇠퇴",
       "koreanName": "쇠퇴",
-      "englishName": "",
+      "englishName": "Wither",
       "icon": "inv_ability_hellcallerwarlock_wither",
       "iconName": "inv_ability_hellcallerwarlock_wither",
       "school": "",
@@ -93318,10 +93355,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "쇠퇴은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 쇠퇴 특성 1.5% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 고통 대상에게 흉악한 저주를 내려 힘줄과 근육을 살라 먹게 합니다. 즉시 (주문력의 19.8375%)의 암흑불길 피해를 입히고 추가로 18초 에 걸쳐 (주문력의 296.544%)의 암흑불길 피해를 입힙니다. 부패를 대체합니다. 파괴 대상에게 흉악한 저주를 내려 힘줄과 근육을 살라 ",
-      "category": "hero-talent",
+      "description": "부패를 대체하는 지옥소환사의 실제 지속 피해 공격이다. 고통에서는 즉시 시전하며 기본 18초 지속이다. 파괴에서는 제물을 대체하며 주기 피해의 조각 파편 생성이 파괴 설명에만 붙는다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -93334,15 +93371,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.029,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -94451,7 +94492,7 @@
       ],
       "name": "악마의 영혼",
       "koreanName": "악마의 영혼",
-      "englishName": "",
+      "englishName": "Demonic Soul",
       "icon": "inv_ability_soulharvesterwarlock_demonicsoul",
       "iconName": "inv_ability_soulharvesterwarlock_demonicsoul",
       "school": "",
@@ -94459,10 +94500,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 영혼은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 영혼 특성 흑마법사 필요 악마가 시전자의 영혼에 자리를 잡습니다. 영혼의 조각이 생성됐을 때 탐스러운 영혼인지를 감별할 수 있도록 합니다. 탐스러운 영혼을 흡수하면 악마의 영혼을 방출해 대상의 10미터 내에 있는 모든 적에게 (주문력의 353.236%)의 암흑 피해를 입힙니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+      "description": "영혼의 조각을 생성할 때 탐스러운 영혼을 얻을 수 있고 이를 소비하면 내면의 악마가 10미터 광역 피해를 주는 영혼 수확자의 핵심 패시브다. 8명을 넘으면 피해가 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94476,12 +94517,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/죽음의-그림자",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼-파문",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/실체화된-탐욕"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.035,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -94554,7 +94600,7 @@
       ],
       "name": "강령사의 가르침",
       "koreanName": "강령사의 가르침",
-      "englishName": "",
+      "englishName": "Necrolyte Teachings",
       "icon": "spell_necro_deathall",
       "iconName": "spell_necro_deathall",
       "school": "",
@@ -94562,10 +94608,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "강령사의 가르침은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 강령사의 가르침 특성 흑마법사 필요 고통 어둠의 화살 및 영혼 흡수의 공격력이 20%만큼 증가합니다. 또한 일몰이 어둠의 화살과 영혼 흡수의 공격력을 추가로 50%만큼 증가시킵니다. 악마 어둠의 화살의 공격력이 20%만큼 증가합니다. 또한 마력 착취가 악마 화살의 공격력을 추가로 20%만큼 증가시킵니다.",
+      "description": "고통은 어둠의 화살·영혼 흡수 피해 20%와 일몰 피해 보너스 추가 50%를 얻는다. 악마는 어둠의 화살 피해 20%와 마력 착취의 악마 화살 피해 보너스 추가 20%를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94578,6 +94624,7 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수"
         ],
         "relatedTalents": [
@@ -94586,9 +94633,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -94607,7 +94654,7 @@
       ],
       "name": "영혼 파문",
       "koreanName": "영혼 파문",
-      "englishName": "",
+      "englishName": "Soul Anathema",
       "icon": "spell_necro_inevitableend",
       "iconName": "spell_necro_inevitableend",
       "school": "",
@@ -94615,10 +94662,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "영혼 파문은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영혼 파문 특성 흑마법사 필요 악마의 영혼 해방 시 대상의 영혼에 사악함을 깃들게 하여 10초에 걸쳐 (주문력의 114.712%)의 암흑 피해를 입힙니다. 이 효과가 다시 부여되면 남은 피해량을 새로운 영혼 파문에 합산합니다.",
+      "description": "악마의 영혼을 방출하면 10초 영혼 파문 지속 피해를 붙인다. 다시 적용하면 아직 남은 피해를 새 효과에 합산한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94633,13 +94680,15 @@
         "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-영혼"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/종지부"
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.038,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -94711,7 +94760,7 @@
       ],
       "name": "악령술사의 열정",
       "koreanName": "악령술사의 열정",
-      "englishName": "",
+      "englishName": "Demoniac's Fervor",
       "icon": "inv_helm_mask_zulgurub_d_01",
       "iconName": "inv_helm_mask_zulgurub_d_01",
       "school": "",
@@ -94719,10 +94768,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악령술사의 열정은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악령술사의 열정 특성 흑마법사 필요 악마 악마의 영혼이 굴단의 손의 주 대상에게 200%의 추가 피해를 입힙니다. 고통 악마의 영혼이 불안정한 고통에 영향을 받는 대상에게 100%의 추가 피해를 입힙니다.",
+      "description": "고통은 불안정한 고통이 있는 대상에게 악마의 영혼 피해가 100% 증가한다. 악마는 굴단의 손 주 대상에 대한 악마의 영혼 피해가 200% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94734,16 +94783,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_mask_zulgurub_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-영혼"
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -94762,7 +94814,7 @@
       ],
       "name": "사악한 수확",
       "koreanName": "사악한 수확",
-      "englishName": "",
+      "englishName": "Wicked Reaping",
       "icon": "inv_staff_2h_artifactdeadwind_d_05",
       "iconName": "inv_staff_2h_artifactdeadwind_d_05",
       "school": "",
@@ -94770,10 +94822,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "사악한 수확은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사악한 수확 특성 흑마법사 필요 고통 악마의 영혼으로 입히는 피해가 10%만큼 증가합니다. 일몰 소모 시 내면의 악마에게 양분을 공급해, 모습을 드러내 대상에게 (주문력의 601.005%)의 암흑 피해를 입히도록 합니다. 악마 악마의 영혼으로 입히는 피해가 30%만큼 증가합니다. 악마의 핵 소모 시 내면의 악마에게 양분을 공급해, 모습을 드러",
+      "description": "고통에서는 악마의 영혼 피해를 10% 높이고 일몰 소비가 자동 공격을 발생시킨다. 악마에서는 악마의 영혼 피해를 30% 높이고 악마의 핵 소비에 반응한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94785,7 +94837,9 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_artifactdeadwind_d_05.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
         ],
@@ -94794,9 +94848,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 1,
-        "linkDensity": 0.045,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -94815,7 +94869,7 @@
       ],
       "name": "종지부",
       "koreanName": "종지부",
-      "englishName": "",
+      "englishName": "Quietus",
       "icon": "spell_necro_conclave",
       "iconName": "spell_necro_conclave",
       "school": "",
@@ -94823,10 +94877,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "종지부은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 종지부 특성 흑마법사 필요 악마 영혼 파문의 공격력이 25%만큼 증가하고 20%만큼 더 빠르게 피해를 입힙니다. 악마의 핵 소모 시 이어진 운명 또는 영혼의 향연이 활성화됩니다. 고통 영혼 파문의 공격력이 25%만큼 증가하고 20%만큼 더 빠르게 피해를 입힙니다. 일몰 소모 시 이어진 운명 또는 영혼의 향연이 활성화됩니다.",
+      "description": "영혼 파문 피해를 25% 높이고 20% 빠르게 처리한다. 고통의 일몰 소비 또는 악마의 악마의 핵 소비가 선택한 이어진 운명이나 영혼의 향연을 활성화한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94843,15 +94897,15 @@
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
         ],
         "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼-파문",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/이어진-운명",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼의-향연",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼-파문"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼의-향연"
         ]
       },
       "quality": {
-        "wikilinkCount": 10,
+        "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.055,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -94870,7 +94924,7 @@
       ],
       "name": "사타이엘의 자유 의지",
       "koreanName": "사타이엘의 자유 의지",
-      "englishName": "",
+      "englishName": "Sataiel's Volition",
       "icon": "spell_necro_deathlyecho",
       "iconName": "spell_necro_deathlyecho",
       "school": "",
@@ -94878,10 +94932,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "사타이엘의 자유 의지은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사타이엘의 자유 의지 특성 흑마법사 필요 악마 날뛰는 임프가 35%의 추가 피해를 입힙니다. 또한 파열되는 날뛰는 임프가 악마의 핵을 부여할 확률이 5%만큼 증가합니다. 고통 부패가 25%만큼 더 빠르게 피해를 입히고 유령 출몰이 일몰을 부여합니다.",
+      "description": "고통은 부패가 25% 빠르게 피해를 주며 유령 출몰 사용으로 일몰을 얻는다. 악마는 날뛰는 임프 피해 35% 증가와 파열된 임프의 악마의 핵 획득 확률 5% 추가를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94894,8 +94948,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
@@ -94903,9 +94957,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
+        "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.056,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -94924,7 +94978,7 @@
       ],
       "name": "죽음의 그림자",
       "koreanName": "죽음의 그림자",
-      "englishName": "",
+      "englishName": "Shadow of Death",
       "icon": "spell_arcane_prismaticcloak",
       "iconName": "spell_arcane_prismaticcloak",
       "school": "",
@@ -94932,10 +94986,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "죽음의 그림자은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 죽음의 그림자 특성 흑마법사 필요 악마 악마 폭군 소환 주문이 내면에 있는 악마에 의해 강화되어 각각 탐스러운 영혼이 포함되어 있는 영혼의 조각 3개를 부여하도록 합니다. 고통 암흑의 수확 주문이 내면에 있는 악마에 의해 강화되어 정신을 집중하는 동안 1초마다 각각 탐스러운 영혼이 들어 있는 영혼의 조각 1개를 부여하도록 합니다.",
+      "description": "고통은 암흑의 수확 정신 집중 중 매초 탐스러운 영혼을 동반한 조각 1개를 얻는다. 악마는 악마 폭군 소환으로 탐스러운 영혼이 든 조각 3개를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94947,14 +95001,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_prismaticcloak.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -94973,7 +95032,7 @@
       ],
       "name": "피에 굶주린 인내",
       "koreanName": "피에 굶주린 인내",
-      "englishName": "",
+      "englishName": "Gorebound Fortitude",
       "icon": "spell_holy_consumemagic",
       "iconName": "spell_holy_consumemagic",
       "school": "",
@@ -94981,10 +95040,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "피에 굶주린 인내은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 피에 굶주린 인내 특성 흑마법사 필요 생명석 사용 시 항상 영혼 불사르기의 이로운 효과를 받아 12초 동안 치유량이 30%만큼, 최대 생명력이 20%만큼 증가합니다.",
+      "description": "생명석을 사용하면 항상 영혼 불사르기의 이로운 효과를 받아 12초 동안 받는 치유가 30%, 최대 생명력이 20% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94996,18 +95055,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_consumemagic.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/생명석-창조"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/영혼-불사르기"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/어둠의-서약"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 2,
-        "linkDensity": 0.046,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -95026,7 +95083,7 @@
       ],
       "name": "음지의 친구",
       "koreanName": "음지의 친구",
-      "englishName": "",
+      "englishName": "Friends In Dark Places",
       "icon": "spell_shadow_deathpact",
       "iconName": "spell_shadow_deathpact",
       "school": "",
@@ -95034,10 +95091,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "음지의 친구은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 음지의 친구 특성 흑마법사 필요 어둠의 서약이 희생한 생명력의 50%만큼 추가로 피해 흡수 보호막을 부여합니다.",
+      "description": "어둠의 서약이 희생한 생명력의 50%만큼 추가 흡수량을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95056,9 +95113,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.024,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -95077,7 +95134,7 @@
       ],
       "name": "이어진 운명",
       "koreanName": "이어진 운명",
-      "englishName": "",
+      "englishName": "Shared Fate",
       "icon": "ability_warlock_soullink",
       "iconName": "ability_warlock_soullink",
       "school": "",
@@ -95085,10 +95142,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "이어진 운명은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 이어진 운명 특성 흑마법사 필요 대상 처치 시 그 고통받은 영혼이 3초 동안 주위의 적에게로 전달됩니다. 이 효과는 10미터 내의 적에게 1초마다 (주문력의 50.6531%)의 암흑 피해를 입힙니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+      "description": "처치한 대상의 영혼이 주변 10미터 적에게 3초 동안 매초 피해를 주며 8명 초과 시 감소한다. 종지부가 있으면 고통의 일몰 소비로도 활성화할 수 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95101,13 +95158,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/종지부",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/영혼의-향연"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -95126,7 +95188,7 @@
       ],
       "name": "영혼의 향연",
       "koreanName": "영혼의 향연",
-      "englishName": "",
+      "englishName": "Feast of Souls",
       "icon": "ability_warlock_improvedsoulleech",
       "iconName": "ability_warlock_improvedsoulleech",
       "school": "",
@@ -95134,10 +95196,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "영혼의 향연은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영혼의 향연 특성 흑마법사 필요 대상 처치 시 일정 확률로 영혼의 조각을 생성합니다. 이 과정으로 생성된 영혼의 조각은 반드시 탐스러운 영혼이 됩니다.",
+      "description": "대상 처치 시 확률적으로 탐스러운 영혼을 동반한 조각을 얻는다. 종지부가 있으면 해당 강화 발동 소비에서도 활성화할 수 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95151,12 +95213,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/종지부",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/이어진-운명"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -95175,7 +95241,7 @@
       ],
       "name": "영원한 예속",
       "koreanName": "영원한 예속",
-      "englishName": "",
+      "englishName": "Eternal Servitude",
       "icon": "ability_demonhunter_infernalchains",
       "iconName": "ability_demonhunter_infernalchains",
       "school": "",
@@ -95183,10 +95249,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "영원한 예속은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영원한 예속 특성 흑마법사 필요 지옥 지배의 재사용 대기시간이 90초만큼 감소합니다.",
+      "description": "지옥 지배의 재사용 대기시간을 90초 줄이는 영웅 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95198,16 +95264,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_infernalchains.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/지옥-지배"
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마-조종"
         ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.037,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -95217,13 +95283,16 @@
     },
     "449793": {
       "id": "449793",
-      "type": "hero-talent",
+      "type": "buff",
       "class": "Warlock",
       "spec": "Affliction",
-      "specs": [],
+      "specs": [
+        "Affliction",
+        "Demonology"
+      ],
       "name": "탐스러운 영혼",
       "koreanName": "탐스러운 영혼",
-      "englishName": "",
+      "englishName": "Succulent Soul",
       "icon": "ability_warlock_improvedsoulleech",
       "iconName": "ability_warlock_improvedsoulleech",
       "school": "",
@@ -95231,10 +95300,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "# 탐스러운 영혼",
-      "category": "hero-talent",
+      "description": "탐스러운 영혼은 영혼의 조각 생성과 함께 얻고 소비 과정에서 악마의 영혼 피해로 이어지는 버프다. 현재 버프 지속은 30초이며 직접 누르는 기술이 아니다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95248,12 +95317,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/죽음의-그림자",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악령술사의-열정",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/실체화된-탐욕"
+        ]
       },
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.073,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -98840,6 +98914,59 @@
         "lastUpdate": ""
       }
     },
+    "452999": {
+      "id": "452999",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "생명력 착취",
+      "koreanName": "생명력 착취",
+      "englishName": "Siphon Life",
+      "icon": "spell_shadow_requiem",
+      "iconName": "spell_shadow_requiem",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "생명력 착취는 부패의 피해를 30% 높이고 주기 피해의 5%만큼 생명력을 회복하는 패시브 특성이다. 별도의 대상 지정 지속 피해 버튼이 아니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_requiem.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_requiem.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_requiem.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_requiem.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_requiem.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쾌락에-물든-폭식",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/완전한-부패"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\생명력-착취.md",
+        "lastUpdate": ""
+      }
+    },
     "453080": {
       "id": "453080",
       "type": "spec-talent",
@@ -98850,7 +98977,7 @@
       ],
       "name": "어둠의 화살 연마",
       "koreanName": "어둠의 화살 연마",
-      "englishName": "",
+      "englishName": "Improved Shadow Bolt",
       "icon": "spell_shadow_shadowbolt",
       "iconName": "spell_shadow_shadowbolt",
       "school": "",
@@ -98858,10 +98985,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "어둠의 화살 연마은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 어둠의 화살 연마 특성 흑마법사 필요 어둠의 화살의 시전 시간이 15%만큼 감소하고 공격력은 40%만큼 증가합니다.",
+      "description": "어둠의 화살 피해를 40% 높이고 시전 시간을 15% 줄인다. 영혼 흡수 대체 빌드와 구분해서 선택한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98873,14 +99000,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -98898,7 +99030,7 @@
       ],
       "name": "악담",
       "koreanName": "악담",
-      "englishName": "",
+      "englishName": "Malediction",
       "icon": "spell_shadow_curseofachimonde",
       "iconName": "spell_shadow_curseofachimonde",
       "school": "",
@@ -98906,10 +99038,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악담은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악담 특성 흑마법사 필요 고통, 부패 , 불안정한 고통의 치명타 및 극대화율이 5%만큼 증가합니다.",
+      "description": "고통·부패·불안정한 고통의 극대화 확률을 5% 높인다. 모든 주문의 치명타를 5% 올리는 효과는 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98921,14 +99053,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_curseofachimonde.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/게걸스러운-고통"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.075,
         "hasWikilinks": true
       },
       "source": {
@@ -98946,7 +99084,7 @@
       ],
       "name": "전염",
       "koreanName": "전염",
-      "englishName": "",
+      "englishName": "Contagion",
       "icon": "spell_shadow_creepingplague",
       "iconName": "spell_shadow_creepingplague",
       "school": "",
@@ -98954,10 +99092,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "전염은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 전염 특성 흑마법사 필요 고통, 부패 , 불안정한 고통의 극대화 피해가 15%만큼 증가합니다.",
+      "description": "고통·부패·불안정한 고통의 극대화 피해를 15% 높인다. 극대화 확률을 높이는 악담과 다른 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98969,14 +99107,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_creepingplague.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/악담"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -98994,7 +99137,7 @@
       ],
       "name": "소환사의 포옹",
       "koreanName": "소환사의 포옹",
-      "englishName": "",
+      "englishName": "Summoner's Embrace",
       "icon": "spell_shadow_unsummonbuilding",
       "iconName": "spell_shadow_unsummonbuilding",
       "school": "",
@@ -99002,10 +99145,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "소환사의 포옹은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 소환사의 포옹 특성 흑마법사 필요 주문과 악마의 공격력이 3%만큼 증가합니다.",
+      "description": "자신의 주문과 소환 악마가 입히는 피해를 3% 높이는 지속 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99017,14 +99160,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unsummonbuilding.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/흑마법서-희생"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -99091,7 +99238,7 @@
       ],
       "name": "교활한 잔혹성",
       "koreanName": "교활한 잔혹성",
-      "englishName": "",
+      "englishName": "Cunning Cruelty",
       "icon": "inv_misc_coin_09",
       "iconName": "inv_misc_coin_09",
       "school": "",
@@ -99099,10 +99246,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "교활한 잔혹성은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 교활한 잔혹성 특성 흑마법사 필요 어둠의 화살 및 영혼 흡수 시전 시 일정 확률로 연발 어둠의 화살이 발동해 현재 대상의 10미터 내에 있는 적 5명에게 [(주문력의 124.74%) * 1 * 1 ]의 암흑 피해를 입힙니다.",
+      "description": "어둠의 화살 또는 영혼 흡수 사용 중 확률적으로 10미터 안 적 최대 다섯에게 추가 공격을 발생시키는 특성이다. 이 추가 공격은 직접 누르는 버튼이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99114,14 +99261,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_coin_09.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/메말리는-화살"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -103310,7 +103462,7 @@
       ],
       "name": "유령 출몰 연마",
       "koreanName": "유령 출몰 연마",
-      "englishName": "",
+      "englishName": "Improved Haunt",
       "icon": "ability_warlock_haunt",
       "iconName": "ability_warlock_haunt",
       "school": "",
@@ -103318,10 +103470,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "유령 출몰 연마은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 유령 출몰 연마 특성 흑마법사 필요 유령 출몰의 공격력이 35%만큼 증가하고 시전 시간은 0.3초만큼 감소합니다.",
+      "description": "유령 출몰의 피해를 35% 높이고 기본 시전 시간을 0.3초 줄인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103333,14 +103485,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_haunt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261990"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -103610,7 +103766,7 @@
       ],
       "name": "게걸스러운 고통",
       "koreanName": "게걸스러운 고통",
-      "englishName": "",
+      "englishName": "Ravenous Afflictions",
       "icon": "ability_warlock_improvedsoulleech",
       "iconName": "ability_warlock_improvedsoulleech",
       "school": "",
@@ -103618,10 +103774,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "게걸스러운 고통은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 게걸스러운 고통 특성 흑마법사 필요 매 분마다 약 1.2 번 효과 발동됨 고통, 부패 , 불안정한 고통의 치명타 및 극대화 효과가 일정 확률로 일몰을 부여합니다.",
+      "description": "자신의 지속 피해가 극대화되면 일정 확률로 일몰을 얻는 추가 발동 특성이다. 툴팁의 분당 발동 표기는 매 극대화마다 확정 발동이라는 뜻이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103633,14 +103789,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_improvedsoulleech.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/악담"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -122183,6 +122344,60 @@
         "lastUpdate": ""
       }
     },
+    "1257052": {
+      "id": "1257052",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "암흑의 수확",
+      "koreanName": "암흑의 수확",
+      "englishName": "Dark Harvest",
+      "icon": "inv_ability_warlock_soulrot",
+      "iconName": "inv_ability_warlock_soulrot",
+      "school": "",
+      "cooldown": "60초",
+      "castTime": "3초 정신 집중",
+      "resourceCost": "기본 마나 1%",
+      "range": "",
+      "description": "기본 60초 재사용, 3초 정신 집중으로 자신의 해로운 주기 효과가 있는 적들에게 암흑 피해를 주고 피해량의 50%만큼 회복한다. 옛 암흑의 수확 버프 387016과 다른 현재 시전 주문이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_warlock_soulrot.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_warlock_soulrot.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_warlock_soulrot.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_warlock_soulrot.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_warlock_soulrot.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쾌락에-물든-폭식",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/성급한-분노"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/죽음의-그림자"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\암흑의-수확.md",
+        "lastUpdate": ""
+      }
+    },
     "1257343": {
       "id": "1257343",
       "type": "spec-talent",
@@ -123660,6 +123875,60 @@
         "lastUpdate": ""
       }
     },
+    "1259790": {
+      "id": "1259790",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "불안정한 고통",
+      "koreanName": "불안정한 고통",
+      "englishName": "Unstable Affliction",
+      "icon": "spell_shadow_unstableaffliction_3",
+      "iconName": "spell_shadow_unstableaffliction_3",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "영혼의 조각 1개",
+      "range": "40야드",
+      "description": "현재 불안정한 고통은 영혼의 조각 1개를 쓰는 기본 1.5초 시전 주문이다. 8초 동안 피해를 주며 여러 효과를 겹쳐 적용할 수 있다. 대상이 죽으면 영혼의 조각 1개를 돌려준다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_unstableaffliction_3.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_unstableaffliction_3.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_unstableaffliction_3.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쏟아지는-재앙"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\불안정한-고통.md",
+        "lastUpdate": ""
+      }
+    },
     "1259811": {
       "id": "1259811",
       "type": "spec-talent",
@@ -123670,7 +123939,7 @@
       ],
       "name": "익숙한 전염병",
       "koreanName": "익숙한 전염병",
-      "englishName": "",
+      "englishName": "Practiced Pestilence",
       "icon": "spell_nature_agitatingtotem",
       "iconName": "spell_nature_agitatingtotem",
       "school": "",
@@ -123678,10 +123947,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "익숙한 전염병은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 익숙한 전염병 특성 흑마법사 필요 특화가 2%만큼 증가합니다.",
+      "description": "특화를 2% 높이는 고통 전문화의 패시브 특성이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123693,14 +123962,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_agitatingtotem.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -123718,7 +123990,7 @@
       ],
       "name": "강력한 영혼의 조각",
       "koreanName": "강력한 영혼의 조각",
-      "englishName": "",
+      "englishName": "Potent Soul Shards",
       "icon": "inv_misc_gem_amethyst_02",
       "iconName": "inv_misc_gem_amethyst_02",
       "school": "",
@@ -123726,10 +123998,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "강력한 영혼의 조각은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 강력한 영혼의 조각 특성 흑마법사 필요 불안정한 고통과 부패의 씨앗의 공격력이 5%만큼 증가합니다.",
+      "description": "불안정한 고통과 부패의 씨앗의 피해를 5% 높이는 조각 소비기 강화 특성이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123741,14 +124013,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gem_amethyst_02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -123766,7 +124041,7 @@
       ],
       "name": "고뇌 나눔",
       "koreanName": "고뇌 나눔",
-      "englishName": "",
+      "englishName": "Shared Agony",
       "icon": "spell_shadow_curseofsargeras",
       "iconName": "spell_shadow_curseofsargeras",
       "school": "",
@@ -123774,10 +124049,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고뇌 나눔은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 고뇌 나눔 특성 흑마법사 필요 고통의 공격력이 10%만큼 증가하며, 대상으로부터 15미터 내의 적에게 추가로 적중합니다.",
+      "description": "고통 피해를 10% 높이고 시전 시 15미터 내의 추가 적 하나에게 고통을 적용한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123789,14 +124064,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_curseofsargeras.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/급성-발병"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -123814,7 +124093,7 @@
       ],
       "name": "파괴의 씨앗",
       "koreanName": "파괴의 씨앗",
-      "englishName": "",
+      "englishName": "Seeds of Destruction",
       "icon": "sha_inv_elemental_primal_shadow_nightmare",
       "iconName": "sha_inv_elemental_primal_shadow_nightmare",
       "school": "",
@@ -123822,10 +124101,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "파괴의 씨앗은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파괴의 씨앗 특성 흑마법사 필요 부패의 씨앗의 시전 시간이 0.20초만큼 감소하고 공격력은 5%만큼 증가합니다.",
+      "description": "부패의 씨앗 시전 시간을 1점 투자 시 0.2초, 2점 투자 시 0.4초 줄이고 피해를 각각 5%, 10% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123837,14 +124116,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/sha_inv_elemental_primal_shadow_nightmare.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -123862,7 +124145,7 @@
       ],
       "name": "약자 도태",
       "koreanName": "약자 도태",
-      "englishName": "",
+      "englishName": "Cull the Weak",
       "icon": "ability_warlock_soulsiphon",
       "iconName": "ability_warlock_soulsiphon",
       "school": "",
@@ -123870,10 +124153,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "약자 도태은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 약자 도태 특성 흑마법사 필요 불안정한 고통 또는 부패의 씨앗 시전 시 암흑의 수확의 재사용 대기시간이 1.5초만큼 감소합니다.",
+      "description": "불안정한 고통 또는 부패의 씨앗을 시전하면 암흑의 수확의 남은 재사용 대기시간이 1.5초 줄어든다. 무료 직접 시전도 제외하지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123886,15 +124169,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/치명적인-메아리"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.035,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -123912,7 +124199,7 @@
       ],
       "name": "급성 발병",
       "koreanName": "급성 발병",
-      "englishName": "",
+      "englishName": "Sudden Onset",
       "icon": "spell_shadow_curseofsargeras",
       "iconName": "spell_shadow_curseofsargeras",
       "school": "",
@@ -123920,10 +124207,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "급성 발병은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 급성 발병 특성 흑마법사 필요 고통의 공격력이 10%만큼 증가하고 3중첩 상태로 부여됩니다.",
+      "description": "고통 피해를 10% 높이고 최초 적용을 3중첩부터 시작하게 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123935,14 +124222,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_curseofsargeras.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/고뇌-나눔"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -123960,7 +124251,7 @@
       ],
       "name": "치명적인 메아리",
       "koreanName": "치명적인 메아리",
-      "englishName": "",
+      "englishName": "Fatal Echoes",
       "icon": "spell_shadow_unstableaffliction_3_purple",
       "iconName": "spell_shadow_unstableaffliction_3_purple",
       "school": "",
@@ -123968,10 +124259,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "치명적인 메아리은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 치명적인 메아리 특성 흑마법사 필요 불안정한 고통의 지속시간이 끝나면 10%의 확률로 다시 불안정한 고통이 적용됩니다.",
+      "description": "불안정한 고통이 끝날 때 10% 확률로 다시 적용되는 자동 효과다. 플레이어가 추가로 버튼을 누르는 기술은 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123983,14 +124274,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3_purple.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -124008,7 +124305,7 @@
       ],
       "name": "조각의 불안정성",
       "koreanName": "조각의 불안정성",
-      "englishName": "",
+      "englishName": "Shard Instability",
       "icon": "spell_warlock_focusshadow",
       "iconName": "spell_warlock_focusshadow",
       "school": "",
@@ -124016,10 +124313,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "조각의 불안정성은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 조각의 불안정성 특성 흑마법사 필요 [ 영혼 흡수 / 어둠의 화살]로 피해를 입히면 [ 영혼 흡수 : 10 / 20]%의 확률로 다음 불안정한 고통이 영혼의 조각을 소모하지 않으며 즉시 시전됩니다.",
+      "description": "어둠의 화살 피해는 20%, 영혼 흡수 피해는 10% 확률로 다음 불안정한 고통 또는 씨앗을 무료·즉시 시전으로 만든다고 현재 툴팁에 표시된다. 12.1 노트의 일괄 20% 표기와 차이가 있어 현재 툴팁과 SimC의 구분을 따른다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124032,15 +124329,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.033,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -124048,51 +124349,56 @@
         "lastUpdate": ""
       }
     },
-    "1260271": {
-      "id": "1260271",
-      "type": "spec-talent",
+    "1260269": {
+      "id": "1260269",
+      "type": "buff",
       "class": "Warlock",
-      "spec": "Affliction",
+      "spec": "고통",
       "specs": [
         "Affliction"
       ],
-      "name": "밤의 수혜",
-      "koreanName": "밤의 수혜",
-      "englishName": "",
-      "icon": "inv_nulllotus_shadow",
-      "iconName": "inv_nulllotus_shadow",
+      "name": "조각의 불안정성",
+      "koreanName": "조각의 불안정성",
+      "englishName": "Shard Instability",
+      "icon": "spell_warlock_focusshadow",
+      "iconName": "spell_warlock_focusshadow",
       "school": "",
       "cooldown": "",
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "밤의 수혜은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 밤의 수혜 특성 흑마법사 필요 부패 의 공격력이 10%만큼 증가하고, 일몰이 추가로 다음 부패의 씨앗이 영혼의 조각을 소모하지 않고 즉시 시전되게 합니다.",
-      "category": "spec-talent",
+      "description": "조각의 불안정성의 30초 발동 버프다. 다음 불안정한 고통 또는 부패의 씨앗을 조각 비용 없이 즉시 시전하게 한다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nulllotus_shadow.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_focusshadow.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_nulllotus_shadow.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_nulllotus_shadow.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_nulllotus_shadow.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_nulllotus_shadow.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_warlock_focusshadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_warlock_focusshadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_warlock_focusshadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_focusshadow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\밤의-수혜.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Buffs\\조각의-불안정성.md",
         "lastUpdate": ""
       }
     },
@@ -124146,54 +124452,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Hero-Talents\\영감의재.md",
-        "lastUpdate": ""
-      }
-    },
-    "1260285": {
-      "id": "1260285",
-      "type": "spec-talent",
-      "class": "Warlock",
-      "spec": "Affliction",
-      "specs": [
-        "Affliction"
-      ],
-      "name": "최초 감염자",
-      "koreanName": "최초 감염자",
-      "englishName": "",
-      "icon": "ability_warlock_soulswap",
-      "iconName": "ability_warlock_soulswap",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "최초 감염자은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 최초 감염자 특성 흑마법사 필요 부패의 씨앗이 대상에게 입히는 피해가 50%만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_soulswap.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_soulswap.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_soulswap.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_soulswap.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_soulswap.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\최초-감염자.md",
         "lastUpdate": ""
       }
     },
@@ -124974,7 +125232,7 @@
       ],
       "name": "쏟아지는 재앙",
       "koreanName": "쏟아지는 재앙",
-      "englishName": "",
+      "englishName": "Cascading Calamity",
       "icon": "spell_shadow_unstableafllictions",
       "iconName": "spell_shadow_unstableafllictions",
       "school": "",
@@ -124982,10 +125240,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "쏟아지는 재앙은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 쏟아지는 재앙 특성 흑마법사 필요 자신의 불안정한 고통 효과가 적용된 대상에게 불안정한 고통을 시전하면 15초 동안 가속이 5%만큼 증가합니다.",
+      "description": "이미 불안정한 고통이 있는 대상에게 다시 불안정한 고통을 시전하면 15초 동안 가속 5%를 얻는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124997,14 +125255,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableafllictions.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -125022,7 +125283,7 @@
       ],
       "name": "재앙의 손아귀",
       "koreanName": "재앙의 손아귀",
-      "englishName": "",
+      "englishName": "Malefic Grasp",
       "icon": "ability_warlock_everlastingaffliction",
       "iconName": "ability_warlock_everlastingaffliction",
       "school": "",
@@ -125030,10 +125291,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "재앙의 손아귀은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 재앙의 손아귀 특성 흑마법사 필요 암흑시선이 활성화된 동안 어둠의 화살 |1이;가; 재앙의 손아귀로 변화합니다. 재앙의 손아귀 대상을 황혼으로 속박하여 4초에 걸쳐 (주문력의 1053%)의 암흑 피해를 입힙니다. 재앙의 손아귀로 피해를 입히면 시전자의 다른 모든 주기적인 고통 공격 효과가 즉시 통상적인 주기적인 피해의 30%에 해당하는 피해를 입힙니다.",
+      "description": "암흑시선이 활성화된 동안 기본 필러를 재앙의 손아귀로 바꾸는 특성이다. 선택 노드는 1261149, 실제 정신 집중 공격은 1261153이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125045,18 +125306,76 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_everlastingaffliction.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\재앙의-손아귀.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261153": {
+      "id": "1261153",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "재앙의 손아귀",
+      "koreanName": "재앙의 손아귀",
+      "englishName": "Malefic Grasp",
+      "icon": "ability_warlock_everlastingaffliction",
+      "iconName": "ability_warlock_everlastingaffliction",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "암흑시선 중 사용할 수 있는 4초 정신 집중 공격이다. 피해를 줄 때 자신의 다른 주기적인 고통 공격 효과가 통상 틱 피해의 30%를 추가로 발생시킨다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_everlastingaffliction.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_everlastingaffliction.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_everlastingaffliction.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_everlastingaffliction.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_everlastingaffliction.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/재앙의-손아귀"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Skills\\재앙의-손아귀.md",
         "lastUpdate": ""
       }
     },
@@ -125577,8 +125896,8 @@
         "lastUpdate": ""
       }
     },
-    "1261990": {
-      "id": "1261990",
+    "1261984": {
+      "id": "1261984",
       "type": "spec-talent",
       "class": "Warlock",
       "spec": "Affliction",
@@ -125587,7 +125906,7 @@
       ],
       "name": "나스레자의 그림자",
       "koreanName": "나스레자의 그림자",
-      "englishName": "",
+      "englishName": "Shadow of Nathreza",
       "icon": "inv12_apextalent_warlock_shadowsofnathreza",
       "iconName": "inv12_apextalent_warlock_shadowsofnathreza",
       "school": "",
@@ -125595,10 +125914,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "나스레자의 그림자은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 나스레자의 그림자 특성 흑마법사 필요 유령 출몰의 최초 피해가 50%만큼 증가합니다. 또한 유령 출몰 시전 시 대상에게 입히는 피해가 추가로 2%만큼 증가합니다.",
+      "description": "유령 출몰 시전 시 악마의 영혼을 불러 대상을 공격하게 하는 첫 정점 특성이다. 영혼은 주 대상과 10미터 내 자신의 부패가 있는 추가 적 셋에 피해를 준다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125610,14 +125929,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_shadowsofnathreza.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261990",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261992"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\나스레자의-그림자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261990": {
+      "id": "1261990",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "나스레자의 그림자",
+      "koreanName": "나스레자의 그림자",
+      "englishName": "Shadow of Nathreza",
+      "aliases": [
+        "나스레자의 그림자 중간 노드"
+      ],
+      "icon": "inv12_apextalent_warlock_shadowsofnathreza",
+      "iconName": "inv12_apextalent_warlock_shadowsofnathreza",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "정점 특성 중간 노드다. 1점 투자 시 유령 출몰 최초 피해를 50% 높이고 출몰의 대상 피해 증폭에 2%p를 더한다. 2점 투자 시 최초 피해 100% 증가와 피해 증폭 추가 4%p가 적용된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_shadowsofnathreza.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_warlock_shadowsofnathreza.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_warlock_shadowsofnathreza.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_warlock_shadowsofnathreza.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_shadowsofnathreza.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261992"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -125635,7 +126015,10 @@
       ],
       "name": "나스레자의 그림자",
       "koreanName": "나스레자의 그림자",
-      "englishName": "",
+      "englishName": "Shadow of Nathreza",
+      "aliases": [
+        "나스레자의 그림자 마지막 노드"
+      ],
       "icon": "inv12_apextalent_warlock_shadowsofnathreza",
       "iconName": "inv12_apextalent_warlock_shadowsofnathreza",
       "school": "",
@@ -125643,10 +126026,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "나스레자의 그림자은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 나스레자의 그림자 특성 흑마법사 필요 매 분마다 약 2 번 효과 발동됨 유령 출몰로 피해를 입히면 일정 확률로 대상을 괴롭히는 악마의 영혼을 방출합니다. 악마의 영혼은 방출 시 막강한 공격을 가한 후 나스레자로 추방됩니다. 나스레자의 분노 나스레자의 폐허에서 형성된 유성을 불러 내립니다. 유성은 충돌 시 폭발해 10미터 내의 모든 적에게 (주문력의 1684",
+      "description": "유령 출몰 피해로 일정 확률로 악마의 영혼을 해방해 나스레자의 분노를 떨어뜨리는 마지막 정점 노드다. 툴팁은 분당 약 2회 발동을 표시하며 유성은 10미터 광역, 8명 초과 감소다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125658,14 +126041,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_shadowsofnathreza.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.006,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -126409,15 +126796,15 @@
     },
     "1262710": {
       "id": "1262710",
-      "type": "spec-talent",
+      "type": "passive",
       "class": "Warlock",
-      "spec": "Affliction",
+      "spec": "고통",
       "specs": [
         "Affliction"
       ],
       "name": "나스레자의 그림자",
       "koreanName": "나스레자의 그림자",
-      "englishName": "",
+      "englishName": "Shadow of Nathreza",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_terra",
       "iconName": "inv_112_raidtrinkets_blobofswirlingvoid_terra",
       "school": "",
@@ -126425,10 +126812,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "나스레자의 그림자은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 나스레자의 그림자 40 야드 사정거리 즉시 흑마법사 필요 유령 출몰 시전 시 뒤틀린 황천에서 악마의 영혼을 불러내 대상을 괴롭히게 합니다. 영혼은 불안정하고 굶주린 상태로, 지속시간에 걸쳐 대상과 10미터 내 자신의 부패 가 부여된 적 3명에게 [(주문력의 36.181%) * 18]의 암흑 피해를 입힙니다.",
-      "category": "spec-talent",
+      "description": "첫 나스레자의 그림자 특성이 유령 출몰로 발생시키는 자동 피해 효과다. 주 대상과 가까운 부패 대상 셋을 공격한다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126440,18 +126827,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_112_raidtrinkets_blobofswirlingvoid_terra.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\나스레자의-그림자.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Procs\\나스레자의-그림자.md",
         "lastUpdate": ""
       }
     },
@@ -131075,7 +131467,7 @@
       ],
       "name": "지옥의 덩굴을 지나",
       "koreanName": "지옥의 덩굴을 지나",
-      "englishName": "",
+      "englishName": "Through the Felvine",
       "icon": "spell_nature_thorns_nightmare",
       "iconName": "spell_nature_thorns_nightmare",
       "school": "",
@@ -131083,10 +131475,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 덩굴을 지나은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 덩굴을 지나 특성 흑마법사 필요 고통 불안정한 고통의 공격력이 8%만큼, 부패의 씨앗의 공격력은 4%만큼 증가합니다. 적개심이 활성화된 동안에는 효과가 두 배로 증가합니다. 파괴 혼돈의 화살의 공격력이 35%만큼, 불의 비의 공격력은 6%만큼 증가합니다. 적개심이 활성화된 동안에는 효과가 두 배로 증가합니다.",
+      "description": "고통은 불안정한 고통 8%와 씨앗 4%, 파괴는 혼돈의 화살 35%와 불의 비 6%를 강화한다. 적개심 활성 중에는 해당 효과가 두 배다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131099,16 +131491,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.031,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -131127,7 +131521,7 @@
       ],
       "name": "알진의 불합리성",
       "koreanName": "알진의 불합리성",
-      "englishName": "",
+      "englishName": "Alzzin's Iniquity",
       "icon": "spell_shadow_improvedvampiricembrace",
       "iconName": "spell_shadow_improvedvampiricembrace",
       "school": "",
@@ -131135,10 +131529,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "알진의 불합리성은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 알진의 불합리성 특성 흑마법사 필요 적개심이 가속을 4%만큼 추가로 증가시킵니다. 또한 시전 시 활성화된 쇠퇴의 중첩을 추가로 2개만큼 증가시킵니다.",
+      "description": "적개심이 주는 가속을 추가 4% 높이고 시전 시 쇠퇴에 추가 2중첩을 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131154,13 +131548,14 @@
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-열매"
         ]
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -131179,7 +131574,7 @@
       ],
       "name": "악마의 열매",
       "koreanName": "악마의 열매",
-      "englishName": "",
+      "englishName": "Devil Fruit",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_terra",
       "iconName": "inv_112_raidtrinkets_blobofswirlingvoid_terra",
       "school": "",
@@ -131187,10 +131582,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 열매은 Hellcaller 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 열매 특성 흑마법사 필요 매 분마다 약 1 번 효과 발동됨 쇠퇴로 주기적인 피해를 입히면 일정 확률로 8초 동안 적개심이 부여됩니다.",
+      "description": "쇠퇴 주기 피해가 확률적으로 8초 동안 적개심을 부여한다. 툴팁은 분당 약 1회 발동을 표시한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131206,13 +131601,14 @@
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/지옥의-덩굴을-지나"
         ]
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -131971,7 +132367,7 @@
       ],
       "name": "실체화된 탐욕",
       "koreanName": "실체화된 탐욕",
-      "englishName": "",
+      "englishName": "Manifested Avarice",
       "icon": "ability_priest_shadowyapparition",
       "iconName": "ability_priest_shadowyapparition",
       "school": "",
@@ -131979,10 +132375,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "실체화된 탐욕은 Soul Harvester 영웅 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 실체화된 탐욕 특성 흑마법사 필요 소모한 탐스러운 영혼 하나당 내면에 있는 악마의 영혼을 해방할 확률이 증가하며, 해방 시 9초 동안 적을 공격하게 합니다. 영혼 휘둘러치기 사악한 발톱으로 주위 적을 공격해 대상에게 (주문력의 195.514%)의 암흑 피해를 입히고 10미터 내 다른 적에게는 (주문력의 130.346%)의 암흑 피해를 입힙니",
+      "description": "탐스러운 영혼을 소비할수록 확률이 증가하며 내면의 악마를 9초 해방하는 영웅 특성이다. 해방된 악마는 주 대상과 10미터 내 주변 적을 공격한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131996,12 +132392,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Hero-Talents/탐스러운-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-영혼"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -139112,6 +139511,58 @@
         "lastUpdate": ""
       }
     },
+    "1278047": {
+      "id": "1278047",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "나스레자의 분노",
+      "koreanName": "나스레자의 분노",
+      "englishName": "Wrath of Nathreza",
+      "icon": "inv_112_raiddimensius_darkenedsky",
+      "iconName": "inv_112_raiddimensius_darkenedsky",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "정점 마지막 노드로 발생한 나스레자의 분노의 실제 충돌 피해다. 10미터 범위, 8명 초과 피해 감소가 적용된다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_112_raiddimensius_darkenedsky.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_112_raiddimensius_darkenedsky.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_112_raiddimensius_darkenedsky.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_112_raiddimensius_darkenedsky.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_112_raiddimensius_darkenedsky.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261992"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Procs\\나스레자의-분노.md",
+        "lastUpdate": ""
+      }
+    },
     "1278789": {
       "id": "1278789",
       "type": "talent",
@@ -139566,7 +140017,7 @@
       ],
       "name": "니스카라의 방식",
       "koreanName": "니스카라의 방식",
-      "englishName": "",
+      "englishName": "Niskaran Methods",
       "icon": "inv_lightforgedmatrixability_felheartofargus",
       "iconName": "inv_lightforgedmatrixability_felheartofargus",
       "school": "",
@@ -139574,10 +140025,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "니스카라의 방식은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 니스카라의 방식 특성 흑마법사 필요 고통과 부패 의 공격력이 10%만큼 증가합니다.",
+      "description": "고통과 부패의 피해를 10% 높이는 패시브 특성이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139589,14 +140040,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_lightforgedmatrixability_felheartofargus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -139614,7 +140070,7 @@
       ],
       "name": "시선의 계약",
       "koreanName": "시선의 계약",
-      "englishName": "",
+      "englishName": "Eye Contract",
       "icon": "inv_misc_scrollunrolled01c",
       "iconName": "inv_misc_scrollunrolled01c",
       "school": "",
@@ -139622,10 +140078,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "시선의 계약은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 시선의 계약 특성 흑마법사 필요 암흑시선 소환의 지속시간이 5.0초만큼 증가합니다.",
+      "description": "암흑시선의 소환 지속시간을 5초 늘린다. 기본 20초에 적용하면 25초다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139637,14 +140093,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_scrollunrolled01c.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -140010,7 +140469,7 @@
       ],
       "name": "황천의 장갑판",
       "koreanName": "황천의 장갑판",
-      "englishName": "",
+      "englishName": "Nether Plating",
       "icon": "inv_antorus_orange",
       "iconName": "inv_antorus_orange",
       "school": "",
@@ -140018,10 +140477,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "황천의 장갑판은 고통 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 황천의 장갑판 특성 흑마법사 필요 암흑시선을 안토러스에서 벼려낸 방어구로 무장시켜 방어도를 10%만큼 증가시킵니다. 안광이 10미터 내에 있는 최대 4명의 추가 대상을 연쇄적으로 가격하고 10%의 추가 피해를 입힙니다.",
+      "description": "방어도를 10% 높이고 암흑시선의 광선이 대상 주변 10미터 내 추가 적 넷을 공격하게 하며 광선 피해를 10% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140033,14 +140492,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_antorus_orange.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -140615,6 +141077,118 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\오색화살.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296568": {
+      "id": "1296568",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "Warlock Affliction 12.1 Class Set 2pc",
+      "koreanName": "Warlock Affliction 12.1 Class Set 2pc",
+      "englishName": "Warlock Affliction 12.1 Class Set 2pc",
+      "aliases": [
+        "시즌 2 고통 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 고통 2세트다. 부패 또는 쇠퇴 피해를 25%, 고통 피해를 15% 높인다. 한국어 데이터에도 세트 효과의 이름은 영문 내부명으로 남아 있다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296569": {
+      "id": "1296569",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "Warlock Affliction 12.1 Class Set 4pc",
+      "koreanName": "Warlock Affliction 12.1 Class Set 4pc",
+      "englishName": "Warlock Affliction 12.1 Class Set 4pc",
+      "aliases": [
+        "시즌 2 고통 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 고통 4세트다. 활성 불안정한 고통 효과마다 공격력이 2%, 최대 6% 증가하며 씨앗 시전이 해당 주 대상에게 20% 효율의 불안정한 고통을 적용한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
@@ -143543,6 +144117,59 @@
         "lastUpdate": ""
       }
     },
+    "1305774": {
+      "id": "1305774",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "불안정한 강화",
+      "koreanName": "불안정한 강화",
+      "englishName": "Unstable Empowerment",
+      "icon": "spell_shadow_unstableaffliction_3_purpleb",
+      "iconName": "spell_shadow_unstableaffliction_3_purpleb",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 4세트가 제공하는 불안정한 강화다. 활성 불안정한 고통 효과마다 모든 주문과 능력 피해가 2%, 최대 6% 증가한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3_purpleb.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_unstableaffliction_3_purpleb.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_unstableaffliction_3_purpleb.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_unstableaffliction_3_purpleb.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unstableaffliction_3_purpleb.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Buffs\\불안정한-강화.md",
+        "lastUpdate": ""
+      }
+    },
     "1310248": {
       "id": "1310248",
       "type": "buff",
@@ -143695,6 +144322,113 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\폭격수.md",
+        "lastUpdate": ""
+      }
+    },
+    "1311969": {
+      "id": "1311969",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "쾌락에 물든 폭식",
+      "koreanName": "쾌락에 물든 폭식",
+      "englishName": "Hedonic Gorging",
+      "icon": "ability_soulrenderdormazain_hellscream",
+      "iconName": "ability_soulrenderdormazain_hellscream",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "생명력 흡수 피해 10%, 생명력 착취의 부패 피해 보너스 추가 10%를 제공한다. 암흑의 수확은 10% 빠르게 정신 집중하며 피해가 15% 증가한다. 12.1 신규 특성이다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_soulrenderdormazain_hellscream.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_soulrenderdormazain_hellscream.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_soulrenderdormazain_hellscream.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_soulrenderdormazain_hellscream.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_soulrenderdormazain_hellscream.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/생명력-흡수",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/생명력-착취"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\쾌락에-물든-폭식.md",
+        "lastUpdate": ""
+      }
+    },
+    "1312998": {
+      "id": "1312998",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "고통",
+      "specs": [
+        "Affliction"
+      ],
+      "name": "성급한 분노",
+      "koreanName": "성급한 분노",
+      "englishName": "Impetuous Wrath",
+      "icon": "spell_shadow_manaburn",
+      "iconName": "spell_shadow_manaburn",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "어둠의 화살·영혼 흡수·재앙의 손아귀와 암흑의 수확의 피해를 기본 10%, 유령 출몰이 있는 대상에서는 20% 높이는 12.1 신규 특성이다. 한국어 기본 툴팁에 영혼 흡수가 생략되지만 패치 노트와 현재 SimC 구현에 포함된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_manaburn.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_manaburn.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_manaburn.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_manaburn.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_manaburn.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀",
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.064,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\성급한-분노.md",
         "lastUpdate": ""
       }
     },

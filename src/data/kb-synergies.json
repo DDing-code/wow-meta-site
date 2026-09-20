@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T16:01:39.570Z",
+    "generatedAt": "2026-09-20T16:59:36.358Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 515,
-    "rawTotalSynergies": 515,
+    "totalSynergies": 516,
+    "rawTotalSynergies": 516,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -233,7 +233,7 @@
       "fire_nature_bridge": 1,
       "hero_talent_stormbringer_alternative": 1,
       "flame_shock_lava_burst_core": 1,
-      "manual-curated": 20,
+      "manual-curated": 21,
       "party-utility": 1,
       "pet-utility": 1,
       "resource-utility": 1,
@@ -291,7 +291,7 @@
       "Priest": 40,
       "Rogue": 36,
       "Shaman": 34,
-      "Warlock": 39,
+      "Warlock": 40,
       "Warrior": 38
     }
   },
@@ -16340,29 +16340,32 @@
     },
     "warlock-affliction-shared-agony": {
       "id": "warlock-affliction-shared-agony",
-      "name": "고통-고뇌 나눔-영혼의 조각",
+      "name": "고통 전파와 조각 생성",
+      "description": "고뇌 나눔은 추가 적 하나에 고통을 전파하고 급성 발병은 시작 중첩을 올립니다. 고통으로 얻은 조각을 불안정한 고통에 소비하되 짧게 사는 적까지 전부 관리하지 않습니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "고통",
-        "고뇌 나눔",
-        "영혼의 조각"
+        "980",
+        "1259825",
+        "1260209",
+        "1259790"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
-      "importance": 5,
-      "patch": "12.0.5",
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼의-조각"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/고뇌-나눔",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/급성-발병",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/니스카라의-방식",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/죽음의-은총"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/급성-발병"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\고통-고뇌-나눔-영혼의-조각.md",
@@ -16371,22 +16374,31 @@
     },
     "warlock-affliction-dot-spender": {
       "id": "warlock-affliction-dot-spender",
-      "name": "고통-부패-불안정한 고통",
+      "name": "불안정한 고통과 가속 준비",
+      "description": "불안정한 고통이 이미 있는 적에게 다시 적용하면 쏟아지는 재앙의 가속을 얻습니다. 영혼 수확자는 수확 전에 가속과 조각 여유를 함께 준비합니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "고통",
-        "부패",
-        "불안정한 고통"
+        "1259790",
+        "1261124",
+        "1257052"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+      ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쏟아지는-재앙"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\고통-부패-불안정한-고통.md",
         "lastUpdate": ""
@@ -16394,38 +16406,32 @@
     },
     "warlock-affliction-dot-amplifiers": {
       "id": "warlock-affliction-dot-amplifiers",
-      "name": "도트 증폭-고통-부패-생명력 착취",
+      "name": "생명력 착취와 새 12.1 특성",
+      "description": "패시브 생명력 착취와 쾌락에 물든 폭식은 부패 피해와 회복을 강화합니다. 새 특성은 암흑의 수확의 채널 속도와 피해도 높입니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "고통",
-        "부패",
-        "생명력 착취",
-        "불안정한 고통"
+        "172",
+        "452999",
+        "1311969",
+        "1257052"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
-      "importance": 5,
-      "patch": "12.0.5",
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/생명력-착취",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/게걸스러운-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/악담",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/전염",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/니스카라의-방식",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/죄어오는-죽음",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/죽음의-은총",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/메말리는-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/완전한-부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/사크로래쉬의-암흑-일격",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/익숙한-전염병"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/생명력-착취",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쾌락에-물든-폭식"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\도트-증폭-고통-부패-생명력-착취.md",
@@ -16434,23 +16440,32 @@
     },
     "warlock-affliction-seed-aoe": {
       "id": "warlock-affliction-seed-aoe",
-      "name": "부패의 씨앗-씨앗 뿌리기-광역 전염",
+      "name": "씨앗 전파와 추가 씨앗",
+      "description": "씨앗 폭발로 부패 또는 쇠퇴를 전파합니다. 씨앗 뿌리기를 선택하면 주변 두 적에 50% 효율 씨앗이 추가됩니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "부패의 씨앗",
-        "씨앗 뿌리기",
-        "고통",
-        "암흑의 수확"
+        "27243",
+        "196226",
+        "172",
+        "445468"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
-      "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패"
+      ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/씨앗-뿌리기"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\부패의-씨앗-씨앗-뿌리기-광역-전염.md",
         "lastUpdate": ""
@@ -16458,28 +16473,27 @@
     },
     "warlock-affliction-hellcaller-wither": {
       "id": "warlock-affliction-hellcaller-wither",
-      "name": "쇠퇴-적개심-검게 물든 영혼",
+      "name": "적개심으로 쇠퇴 중첩 회수",
+      "description": "적개심은 쇠퇴가 있는 적들에게 중첩을 올립니다. 알진의 불합리성이 있으면 추가 두 중첩을 얻어 파멸의 씨앗 붕괴 조건과 연결됩니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "쇠퇴",
-        "적개심",
-        "검게 물든 영혼"
+        "445468",
+        "442726",
+        "440055",
+        "1266803"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": "Hellcaller",
       "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\쇠퇴-적개심-검게-물든-영혼.md",
         "lastUpdate": ""
@@ -16487,30 +16501,31 @@
     },
     "warlock-affliction-soul-harvester": {
       "id": "warlock-affliction-soul-harvester",
-      "name": "악마의 영혼-탐스러운 영혼-죽음의 그림자",
+      "name": "수확 조각을 악마 피해로 전환",
+      "description": "죽음의 그림자가 있는 수확은 탐스러운 영혼이 든 조각을 제공합니다. 그 조각을 소비해 악마의 영혼 피해와 다음 수확 재사용 감소를 이어 갑니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "악마의 영혼",
-        "탐스러운 영혼",
-        "죽음의 그림자"
+        "1257052",
+        "449638",
+        "449793",
+        "449614",
+        "1259790"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": "Soul Harvester",
       "importance": 5,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\악마의-영혼-탐스러운-영혼-죽음의-그림자.md",
         "lastUpdate": ""
@@ -16518,20 +16533,59 @@
     },
     "warlock-affliction-darkglare-malefic-grasp": {
       "id": "warlock-affliction-darkglare-malefic-grasp",
-      "name": "암흑시선 소환-재앙의 손아귀-강화 구간",
+      "name": "중첩된 불안정한 고통의 추가 틱",
+      "description": "암흑시선 중 재앙의 손아귀가 다른 고통 지속 피해의 30% 틱을 추가로 일으킵니다. 불안정한 고통을 겹치고 일몰을 소비해 채널을 빠르게 회수합니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "암흑시선 소환",
-        "재앙의 손아귀",
-        "시선의 계약",
-        "황천의 장갑판"
+        "1259790",
+        "205180",
+        "1261153",
+        "264571"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Buffs/일몰"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\암흑시선-소환-재앙의-손아귀-강화-창.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-affliction-darkglare-window": {
+      "id": "warlock-affliction-darkglare-window",
+      "name": "지속시간 연장이 아닌 피해 증폭",
+      "description": "암흑시선은 지속 피해를 강화하지만 남은 DoT 시간을 늘려 주지는 않습니다. 시선의 계약은 소환수의 지속시간만 5초 늘립니다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "205180",
+        "980",
+        "172",
+        "1259790",
+        "1279521"
+      ],
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "heroTalent": null,
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑시선-소환",
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통",
@@ -16540,37 +16594,8 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/재앙의-손아귀",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/시선의-계약",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/황천의-장갑판",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/메말리는-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/소환사의-포옹",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/쏟아지는-재앙"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/시선의-계약"
       ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\암흑시선-소환-재앙의-손아귀-강화-창.md",
-        "lastUpdate": ""
-      }
-    },
-    "warlock-affliction-darkglare-window": {
-      "id": "warlock-affliction-darkglare-window",
-      "name": "암흑시선 소환-지속 피해 준비",
-      "type": "synergy",
-      "synergyType": "manual-curated",
-      "participants": [
-        "암흑시선 소환",
-        "고통",
-        "부패",
-        "불안정한 고통"
-      ],
-      "class": "Warlock",
-      "spec": "Affliction",
-      "heroTalent": null,
-      "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [],
-      "linkedBuffs": [],
-      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\암흑시선-소환-지속-피해-연장.md",
         "lastUpdate": ""
@@ -16578,23 +16603,33 @@
     },
     "warlock-affliction-dark-harvest": {
       "id": "warlock-affliction-dark-harvest",
-      "name": "암흑의 수확-약자 도태-불안정한 고통",
+      "name": "소비할수록 다음 수확이 가까워짐",
+      "description": "약자 도태가 있으면 불안정한 고통 또는 씨앗 시전이 수확의 남은 재사용을 1.5초 줄입니다. 무료 직접 시전도 이 연결에서 제외하지 않습니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "암흑의 수확",
-        "약자 도태",
-        "불안정한 고통",
-        "부패의 씨앗"
+        "1259790",
+        "27243",
+        "1259886",
+        "1257052"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
       "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확"
+      ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\암흑의-수확-약자-도태-불안정한-고통.md",
         "lastUpdate": ""
@@ -16602,36 +16637,34 @@
     },
     "warlock-affliction-drain-soul-nightfall": {
       "id": "warlock-affliction-drain-soul-nightfall",
-      "name": "영혼 흡수-일몰-조각의 불안정성",
+      "name": "필러와 무료 소비 발동",
+      "description": "조각의 불안정성은 다음 불안정한 고통 또는 씨앗을 무료·즉시 시전으로 바꿉니다. 일몰은 필러를 강화하는 별도 발동입니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "영혼 흡수",
-        "일몰",
-        "조각의 불안정성",
-        "불안정한 고통"
+        "686",
+        "198590",
+        "1260264",
+        "1259790",
+        "27243"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
       "importance": 4,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/영혼-흡수",
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/재앙의-손아귀",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/교활한-잔혹성",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/어둠의-화살-연마",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/메말리는-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/밤의-수혜"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\영혼-흡수-일몰-조각의-불안정성.md",
@@ -16640,22 +16673,31 @@
     },
     "warlock-affliction-soul-harvester-dark-harvest": {
       "id": "warlock-affliction-soul-harvester-dark-harvest",
-      "name": "Soul Harvester-암흑의 수확-일몰",
+      "name": "일몰 소비가 추가 피해를 발생",
+      "description": "사타이엘의 자유 의지로 출몰이 일몰을 만들고 실제 소비가 사악한 수확과 종지부를 활성화합니다. 발동 획득과 소비는 다른 사건입니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "Soul Harvester",
-        "암흑의 수확",
-        "일몰",
-        "영혼 흡수"
+        "48181",
+        "449637",
+        "264571",
+        "449631",
+        "449634"
       ],
       "class": "Warlock",
       "spec": "Affliction",
-      "heroTalent": null,
+      "specs": [
+        "Affliction"
+      ],
+      "heroTalent": "Soul Harvester",
       "importance": 4,
-      "patch": "12.0.5",
-      "linkedSkills": [],
-      "linkedBuffs": [],
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Buffs/일몰"
+      ],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\영혼수확자-암흑의-수확-일몰.md",
@@ -16664,64 +16706,108 @@
     },
     "warlock-affliction-haunt-nathreza": {
       "id": "warlock-affliction-haunt-nathreza",
-      "name": "유령 출몰-나스레자의 그림자-악마의 영혼",
+      "name": "유령 출몰에서 정점 자동 공격",
+      "description": "출몰이 정점의 악마 영혼을 부르고 마지막 노드는 확률적으로 나스레자의 분노를 발생시킵니다. 영혼 수확자의 악마의 영혼과는 다른 효과입니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "유령 출몰",
-        "나스레자의 그림자",
-        "악마의 영혼",
-        "부패"
+        "48181",
+        "1261984",
+        "1261990",
+        "1261992",
+        "1262710",
+        "1278047"
       ],
       "class": "Warlock",
       "spec": "Affliction",
-      "heroTalent": "Soul Harvester",
-      "importance": 5,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+      "specs": [
+        "Affliction"
       ],
-      "linkedBuffs": [],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Procs/나스레자의-그림자",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Procs/나스레자의-분노"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/유령-출몰-연마",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261990",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261992",
         "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/일몰"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261990",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/나스레자의-그림자-1261992"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\유령-출몰-나스레자의-그림자-악마의-영혼.md",
         "lastUpdate": ""
       }
     },
-    "warlock-affliction-hellcaller-shard-spend": {
-      "id": "warlock-affliction-hellcaller-shard-spend",
-      "name": "지옥소환사-쇠퇴-조각 소비",
+    "warlock-affliction-impetuous-haunt": {
+      "id": "warlock-affliction-impetuous-haunt",
+      "name": "출몰 대상에서 새 특성 강화",
+      "description": "성급한 분노의 필러·수확 보너스가 출몰 대상에서 커집니다. 암흑시선 중에는 불안정한 고통을 준비한 뒤 강화 손아귀를 이어 갑니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "쇠퇴",
-        "적개심",
-        "검게 물든 영혼",
-        "영혼의 조각"
+        "48181",
+        "1312998",
+        "1257052",
+        "1261153",
+        "1259790"
       ],
       "class": "Warlock",
       "spec": "Affliction",
-      "heroTalent": "Hellcaller",
-      "importance": 5,
-      "patch": "12.0.5",
+      "specs": [
+        "Affliction"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼의-조각",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/유령-출몰",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/암흑의-수확",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/재앙의-손아귀",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/조각의-불안정성",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/약자-도태"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/성급한-분노"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\유령-출몰-성급한-분노.md",
+        "lastUpdate": ""
+      }
+    },
+    "warlock-affliction-hellcaller-shard-spend": {
+      "id": "warlock-affliction-hellcaller-shard-spend",
+      "name": "불안정한 고통의 대상별 쇠퇴 중첩",
+      "description": "12.1 검게 물든 영혼은 불안정한 고통을 맞은 대상의 쇠퇴를 올립니다. 치명적인 메아리와 시즌 2 씨앗의 자동 불안정한 고통도 대상별 연결입니다.",
+      "type": "synergy",
+      "synergyType": "manual-curated",
+      "participants": [
+        "1259790",
+        "445468",
+        "440043",
+        "1260229",
+        "1305774"
+      ],
+      "class": "Warlock",
+      "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
+      "heroTalent": "Hellcaller",
+      "importance": 5,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Buffs/불안정한-강화"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/치명적인-메아리"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\지옥소환사-쇠퇴-조각-소비.md",
@@ -16730,34 +16816,32 @@
     },
     "warlock-affliction-passive-damage-layer": {
       "id": "warlock-affliction-passive-damage-layer",
-      "name": "흑마법서 희생-소환사의 포옹-패시브 피해",
+      "name": "시즌 2 씨앗과 불안정한 강화",
+      "description": "시즌 2 4세트의 씨앗은 주 대상에 20% 효율 불안정한 고통을 적용합니다. 불안정한 강화와 악령술사의 열정의 대상 조건을 광역 소비에서도 연결합니다.",
       "type": "synergy",
       "synergyType": "manual-curated",
       "participants": [
-        "흑마법서: 희생",
-        "소환사의 포옹",
-        "악담",
-        "익숙한 전염병"
+        "27243",
+        "1259790",
+        "1305774",
+        "449629"
       ],
       "class": "Warlock",
       "spec": "Affliction",
+      "specs": [
+        "Affliction"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 5,
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/고통"
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
       ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/흑마법서-희생",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/소환사의-포옹",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/악담",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/익숙한-전염병",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/게걸스러운-고통",
-        "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/전염"
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/고통/Buffs/불안정한-강화"
       ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Synergies\\흑마법서-희생-소환사의-포옹-패시브-피해.md",
         "lastUpdate": ""
@@ -16790,20 +16874,26 @@
     },
     "SY-WARLOCK-HERO-HELLCALLER-WITHER-MALEVOLENCE": {
       "id": "SY-WARLOCK-HERO-HELLCALLER-WITHER-MALEVOLENCE",
-      "name": "영웅특성-Hellcaller-쇠퇴-적개심",
+      "name": "지옥소환사 쇠퇴와 적개심",
+      "description": "쇠퇴가 적용된 적에게 적개심이 시작 피해와 중첩을 주고, 일반 소비의 대상별 중첩을 검게 물든 영혼의 붕괴 피해로 회수합니다.",
       "type": "synergy",
       "synergyType": "hero-talent-package",
       "participants": [
         "445468",
         "442726",
         "440043",
-        "440051"
+        "440055",
+        "1266803"
       ],
       "class": "Warlock",
       "spec": "Common",
-      "heroTalent": null,
+      "specs": [
+        "Affliction",
+        "Destruction"
+      ],
+      "heroTalent": "Hellcaller",
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -16814,28 +16904,29 @@
     },
     "SY-WARLOCK-HERO-SOULHARVESTER-DEMONSOUL-SOULANATHEMA": {
       "id": "SY-WARLOCK-HERO-SOULHARVESTER-DEMONSOUL-SOULANATHEMA",
-      "name": "영웅특성-SoulHarvester-악마의영혼-영혼파문",
+      "name": "영혼 수확자 발동과 자동 피해",
+      "description": "탐스러운 영혼 소비가 악마의 영혼과 영혼 파문을 만들고, 고통의 일몰 또는 악마의 악마의 핵 소비가 사악한 수확·종지부를 활성화합니다.",
       "type": "synergy",
       "synergyType": "hero-talent-package",
       "participants": [
         "449614",
+        "449793",
         "449624",
         "449631",
         "449634"
       ],
       "class": "Warlock",
       "spec": "Common",
-      "heroTalent": null,
+      "specs": [
+        "Affliction",
+        "Demonology"
+      ],
+      "heroTalent": "Soul Harvester",
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼석",
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/생명석-창조"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/영혼-불사르기"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Synergies\\영웅특성-SoulHarvester-악마의영혼-영혼파문.md",
         "lastUpdate": ""
@@ -16868,7 +16959,8 @@
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/강화된-생명석",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/신속한-책략",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/탐식의-맹약",
-        "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/단골-기부자"
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/단골-기부자",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Talents/고어핀드의-결의"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Synergies\\흑마법사공용-생명석-영혼석-파티유틸.md",

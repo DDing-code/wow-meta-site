@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 25 manuscripts labeled 12.1 and 15 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 26 manuscripts labeled 12.1 and 14 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -180,11 +180,22 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Updated in commit `54603c63` on September 20, including its canonical guide/KB, generated DB, both hero branches and opener/single-target/AoE modes. The canonical change record distinguishes Season 2 records, all apex nodes, Windwalker-specific Dance of the Wind, specialization resource costs and shared Celestial Conduit/Rushing Wind Kick.
 - Removed obsolete Storm, Earth, and Fire and mixed old synergies. The September 1 PvE hotfix remains separate from the 12.1 release changes. Shared Monk changes are preserved by the Brewmaster sync; this status entry does not replace the remaining all-class audit.
 
+### Affliction Warlock
+
+- Replaced the old manuscript in place with 16 manually authored subjects, ten practical tips and separate Soul Harvester/Hellcaller opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/12-흑마법사/고통/Meta/guide-12.1.json`.
+- Compared Blizzard 12.1 and September hotfixes, Kalamazi's Wowhead, Motoko's Icy Veins, Ross's Method, current Korean/English tooltips and fixed SimC commit `91eb5c1ea2bba740438e8aa90abf33bdf3474367`. The actual Icy Veins Soul Harvester preset was inspected. Different published opener orders and tooltip/patch-note proc rates remain explicit.
+- Manually reviewed 91 atomic notes: all 52 local Affliction records and 39 related shared records, including Shadow Bolt stored under Demonology. Replaced old Unstable Affliction, Seed and Harvest IDs; removed Night's Benefaction/Patient Zero; separated passive Siphon Life, Malefic Grasp talent/cast, apex nodes/damage, Nightfall/Shard Instability buffs and Season 2 effects. Corrected multi-rank values, Gorefiend's class-talent scope and Create Soulwell's current numeric icon.
+- Authored 15 local relationships and rewrote the two relevant common hero relationships. Fixed the newly authored participant names to the existing numeric-ID contract after visual inspection exposed missing edges. Unstable Affliction now has ten actual direct relationships; both DB diffs are confined to Warlock. Removed the fabricated uptime chart, old Darkglare extension claims and June usage rates.
+- Preserved Soul Harvester's Harvest resource/proc conditions, targeted Hellcaller Wither stacks, conditional Season 2 single-target Seed and separate two-target behavior. Set-triggered Unstable Affliction is not a second paid cast or a second Cull the Weak reduction. Automatic effects are not flow buttons.
+- Online strict metadata/name/link checks passed for 52 local and 106 common records, with zero errors/warnings. The other 68 common records received metadata validation only, not a complete mechanics review. Explicit guide name/icon checks passed for 24 IDs. Canonical equality, current cast/proc identities, 15 relationship records and full prebuild validation passed.
+- The production build succeeded. `node scripts/verify-affliction-guide.cjs` passed all 18 hero/mode/viewport combinations at 1440px, 390px and 320px, including keyboard disclosure, 16px opener icons, numeric links, current graph center, ten center relationships and horizontal overflow. Reused the existing shared community-source matcher instead of retaining a narrower duplicated regex that rejected the Korean label.
+- Limits: current WCL/Archon aggregates, personal simulations and private class Discord messages were not obtained. Graph labels still overlap in dense groups; 57 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical Markdown/JSON is outside the site Git repository; the site commit contains authored guide content and generated data, not a remote vault backup.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 15 manuscripts
+## Still 12.0.5: 14 manuscripts
 
 | Class | Specializations |
 | --- | --- |
@@ -192,13 +203,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 | Priest | Discipline, Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
-| Warlock | Affliction, Demonology, Destruction |
+| Warlock | Demonology, Destruction |
 | Warrior | Protection, Arms, Fury |
 
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 15 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 14 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

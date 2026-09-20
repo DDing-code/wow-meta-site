@@ -25,6 +25,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['mage-fire', '12.1'],
   ['mage-frost', '12.1'],
   ['monk-brewmaster', '12.1'],
+  ['warlock-affliction', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -973,7 +974,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   assert(/Wowhead/i.test(sourceText), `${prefix}: Wowhead source evidence is missing`);
   assert(/Icy Veins/i.test(sourceText), `${prefix}: Icy Veins source evidence is missing`);
   assert(/Archon|WCL/i.test(sourceText), `${prefix}: log/Archon evidence is missing`);
-  assert(/Discord|Dreamgrove|Fel Hammer|Acherus|Skyhold|Ravenholdt|Earthshrine|Warcraft Priests|Peak of Serenity|Wyrmrest|Ancestral Guidance/i.test(sourceText), `${prefix}: class Discord/public community evidence is missing`);
+  assert(CLASS_PUBLIC_SOURCE_PATTERN.test(sourceText), `${prefix}: class Discord/public community evidence is missing`);
   assert(!/Maxroll/i.test(sourceText), `${prefix}: Maxroll must not be used as a guide source`);
 
   openerSteps.forEach((step, index) => {
@@ -1062,6 +1063,34 @@ function main() {
   assert(!JSON.stringify(windwalker.heroBranches[0]).includes('"skillId":"123904"') && !JSON.stringify(windwalker.heroBranches[0]).includes('"skillId":"443028"'), 'Shado-Pan must not borrow Conduit cast buttons');
   assert(!JSON.stringify(windwalker).includes('99.9%'), 'Windwalker must not reuse stale Season 1 usage statistics');
 
+
+  const affliction = manuscripts['warlock-affliction'];
+  const afflictionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '12-흑마법사', '고통', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(afflictionSource)) {
+    assert(JSON.stringify(JSON.parse(read(afflictionSource))) === JSON.stringify(affliction), 'Affliction must match its canonical 12.1 manuscript');
+  }
+  const afflictionNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]고통[\\/]/.test(skill.source?.kbPath || ''));
+  assert(afflictionNotes.length === 52 && afflictionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 52 Affliction notes must retain reviewed descriptions');
+  assert(!affliction.extraSkills?.length && ['316099', '70388', '387016', '63106', '1260271', '1260285'].every(id => !kbSkills[id]), 'Affliction must not restore obsolete casts or removed talents');
+  assert(['1259790', '27243', '1257052', '1261153'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Affliction requires current player-cast IDs');
+  assert(['452999', '1261149', '1261984', '1311969', '1312998'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Affliction enabling talents must remain distinct from casts');
+  assert(['1305774', '264571', '1260269', '449793'].every(id => kbSkills[id]?.type === 'buff') && kbSkills['1262710']?.type === 'passive', 'Affliction proc records must survive canonical sync');
+  assert(kbSkills['686']?.specs.includes('Affliction') && kbSkills['389623']?.type === 'class-talent' && kbSkills['389623'].specs.includes('Destruction'), 'Warlock shared scope must not lose Affliction filler or misclassify Gorefiend');
+  assert(kbSkills['440043']?.description.includes('그 대상') && kbSkills['1296569']?.description.includes('20%') && kbSkills['205180']?.description.includes('연장하는 기술은 아니다'), 'Affliction target, tier and Darkglare mechanics must survive sync');
+  for (const branch of affliction.heroBranches) {
+    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Affliction heroes need complete opener, ST and AoE');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Affliction ST and AoE conditions must differ');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Affliction flow rows must be real casts with complete conditions');
+      }
+    }
+  }
+  assert(!JSON.stringify(affliction.heroBranches[0]).includes('"skillId":"442726"') && !JSON.stringify(affliction.heroBranches[1]).includes('"skillId":"172"'), 'Affliction heroes must not borrow incompatible casts');
+  assert(!/99\.7%|96\.2%|98\.7%/.test(JSON.stringify(affliction)), 'Affliction must not reuse June usage rates');
+  const afflictionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Affliction');
+  assert(afflictionSynergies.length === 15 && afflictionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id])), 'All 15 Affliction relationships must export real participant IDs, not display names');
+  assert(afflictionSynergies.filter(note => note.participants.includes(affliction.graphCenterSkillId)).length === 10, 'Unstable Affliction must retain its ten authored relationships');
 
   const brewmaster = manuscripts['monk-brewmaster'];
   const brewmasterSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '양조', 'Meta', 'guide-12.1.json');
