@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T17:53:51.273Z",
+    "generatedAt": "2026-09-20T18:53:52.181Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 524,
-    "rawTotalSynergies": 524,
+    "totalSynergies": 536,
+    "rawTotalSynergies": 536,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 170,
+      "unknown": 182,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -287,7 +287,7 @@
       "Priest": 40,
       "Rogue": 36,
       "Shaman": 34,
-      "Warlock": 48,
+      "Warlock": 60,
       "Warrior": 38
     }
   },
@@ -17793,172 +17793,655 @@
         "lastUpdate": ""
       }
     },
-    "warlock-destruction-havoc-pandemonium-chaos-bolt": {
-      "id": "warlock-destruction-havoc-pandemonium-chaos-bolt",
-      "name": "대혼란-격동-혼돈의 화살",
+    "warlock-destruction-internal-combustion-refresh": {
+      "id": "warlock-destruction-internal-combustion-refresh",
+      "name": "혼돈의 화살이 지속 시간을 소비",
+      "description": "내부 연소 선택 시 혼돈의 화살이 지속 피해 최대 5초분을 즉시 피해로 바꾼다. 지속 시간 증가 특성은 갱신 여유에 영향을 주지만 연속 소비는 남은 시간을 다시 줄인다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "대혼란",
-        "격동",
-        "혼돈의 화살"
+        "266134",
+        "116858",
+        "348",
+        "445468",
+        "388832"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/끓어오르는-불길-388832"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\내부-연소-지속피해-갱신.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-embers-spenders": {
+      "id": "warlock-destruction-embers-spenders",
+      "name": "소비기에 따라 자동 메아리",
+      "description": "마지막 니힐람의 불씨가 소비기에 메아리를 연결하고, 중간 노드가 있으면 니힐람의 환영으로 이어진다. 메아리와 환영은 자동 효과다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1265774",
+        "116858",
+        "17877",
+        "5740",
+        "1265884",
+        "1265939"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/살게라스의-메아리-1265884",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/니힐람의-환영-1265939"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\니힐람-소비기-메아리.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-havoc-pandemonium-chaos-bolt": {
+      "id": "warlock-destruction-havoc-pandemonium-chaos-bolt",
+      "name": "대혼란으로 두 대상 소비",
+      "description": "대혼란은 다른 대상에게 쓰는 단일 공격을 기본 50%로 복제한다. 격동은 같은 징표를 자동 적용하는 선택 대안이며 직접 대혼란과 동시에 누르는 기술이 아니다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "80240",
+        "1244460",
+        "387506",
+        "116858",
+        "17877"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/대혼란-연마",
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/격동"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\대혼란-격동-혼돈의-화살.md",
-        "lastUpdate": "2026-05-24"
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-rain-residence": {
+      "id": "warlock-destruction-rain-residence",
+      "name": "빠른 장판 피해와 적의 체류",
+      "description": "파괴적인 신속함은 불의 비와 정령의 주기 피해 속도를 높인다. 실제로는 적이 피해 범위 안에 있는 시간만 유효하다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "5740",
+        "1244928",
+        "1122"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴적인-신속함"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\불의-비-적중-시간.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-incinerate-season2": {
+      "id": "warlock-destruction-incinerate-season2",
+      "name": "소각 강화와 메아리 발동률",
+      "description": "시즌 2 2세트는 소각 피해를 25% 올리고 니힐람의 불씨의 소각 메아리 확률을 10%p 높인다. 메아리는 중간 노드의 가속·치명타 효과에도 연결된다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "29722",
+        "1265770",
+        "1296571",
+        "1265884",
+        "1265772"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/살게라스의-메아리-1265884"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-2pc-1296571",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265772"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\소각-시즌2-메아리.md",
+        "lastUpdate": "2026-09-21"
       }
     },
     "warlock-destruction-wither-malevolence-chaos-bolt": {
       "id": "warlock-destruction-wither-malevolence-chaos-bolt",
-      "name": "쇠퇴-적개심-혼돈의 화살",
+      "name": "쇠퇴 준비 뒤 적개심 소비",
+      "description": "적개심은 현재 쇠퇴 대상에 피해와 중첩을 더하고 20초 가속 구간을 연다. 이때 조각을 적절히 소비해야 증가한 생성 속도와 추가 중첩 효과를 회수한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "쇠퇴",
-        "적개심",
-        "혼돈의 화살",
-        "불의 비",
-        "어둠의 연소"
+        "445468",
+        "442726",
+        "116858",
+        "17877",
+        "5740"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": "지옥소환사",
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\쇠퇴-적개심-혼돈의-화살.md",
-        "lastUpdate": "2026-06-04"
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-season2-mark": {
+      "id": "warlock-destruction-season2-mark",
+      "name": "메아리 적중 대상에 후속 피해 강화",
+      "description": "시즌 2 4세트는 메아리에 맞은 적에게 암흑 티탄의 징표를 적용해 자신의 후속 피해를 6초 동안 6% 높인다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1296572",
+        "1265884",
+        "1305711",
+        "116858",
+        "5740"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/살게라스의-메아리-1265884",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/암흑-티탄의-징표-1305711"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-4pc-1296572"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\시즌2-징표-후속-피해.md",
+        "lastUpdate": "2026-09-21"
       }
     },
     "warlock-destruction-diabolist-ritual-ruination": {
       "id": "warlock-destruction-diabolist-ritual-ruination",
-      "name": "악마의 의식-황폐-혼돈의 화살",
+      "name": "의식 완료 후 악마술과 황폐",
+      "description": "파괴는 소비 주문 시전으로 의식을 앞당기고, 완료 후 얻은 악마술을 소비해 다음 악마를 부른다. 란코라의 손길은 악마술이 있을 때 시작한 혼돈의 화살을 강화한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "악마의 의식",
-        "황폐",
-        "혼돈의 화살",
-        "지옥불정령 소환"
+        "428514",
+        "428524",
+        "432794",
+        "432795",
+        "429893",
+        "116858",
+        "434635"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": "악마학자",
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Buffs/악마술-대군주-428524",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Buffs/악마술-혼돈의-어머니-432794",
+        "08-직업별-Knowledge-Base/12-흑마법사/공용/Buffs/악마술-지옥의-군주-432795"
+      ],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\악마의-의식-황폐-혼돈의-화살.md",
-        "lastUpdate": "2026-06-04"
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-alythess-free-rain": {
+      "id": "warlock-destruction-alythess-free-rain",
+      "name": "불의 비 다음 무료 장판",
+      "description": "알리테스의 노여움은 불의 비에서 다음 장판이 무료가 되는 효과를 만들 수 있다. 무료 사용 기한은 8초다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "5740",
+        "1214467",
+        "1244941",
+        "1244947"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비-1214467"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/알리테스의-노여움-1244947"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/알리테스의-노여움"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\알리테스-무료-불의-비.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-soul-fire-avatar": {
+      "id": "warlock-destruction-soul-fire-avatar",
+      "name": "영혼의 불꽃이 거대마귀로 연결",
+      "description": "파괴의 화신을 선택하면 영혼의 불꽃이 8초 거대마귀를 자동 소환한다. 거대마귀의 파편과 혼돈의 화살은 소환수 효과다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "6353",
+        "1245089",
+        "434587",
+        "457578",
+        "434589"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/거대마귀-소환-434587",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/거대마귀-소환-457578",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/혼돈의-화살-434589"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\영혼의-불꽃-거대마귀.md",
+        "lastUpdate": "2026-09-21"
       }
     },
     "warlock-destruction-conflagrate-backdraft-chaos-bolt": {
       "id": "warlock-destruction-conflagrate-backdraft-chaos-bolt",
-      "name": "점화-역류-혼돈의 화살",
+      "name": "점화로 다음 긴 시전 단축",
+      "description": "점화가 만드는 역류는 다음 혼돈의 화살·영혼의 불꽃·소각의 시전 시간을 30% 줄인다. 실제 효과는 117828이며 특성 196406 자체를 누르는 것은 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "점화",
-        "역류",
-        "혼돈의 화살"
+        "17962",
+        "196406",
+        "117828",
+        "116858",
+        "6353"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/역류",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/역류-117828"
+      ],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\점화-역류-혼돈의-화살.md",
-        "lastUpdate": "2026-05-24"
+        "lastUpdate": "2026-09-21"
       }
     },
     "warlock-destruction-immolate-incinerate-chaos-bolt": {
       "id": "warlock-destruction-immolate-incinerate-chaos-bolt",
-      "name": "제물-소각-혼돈의 화살",
+      "name": "지속 피해와 소각에서 조각 소비로",
+      "description": "파괴 지속 피해는 주기적으로 파편을 만들고 소각은 추가 생성기다. 혼돈의 화살은 조각 2개를 소비한다. 악마의 잿불은 소각의 파편 생성을 늘린다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "제물",
-        "소각",
-        "혼돈의 화살"
+        "348",
+        "445468",
+        "29722",
+        "387173",
+        "116858"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/악마의-잿불-387173"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\제물-소각-혼돈의-화살.md",
-        "lastUpdate": "2026-05-24"
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-dot-spread": {
+      "id": "warlock-destruction-dot-spread",
+      "name": "기존 지속 피해에서 전파",
+      "description": "울부짖는 불길은 지속 피해가 있는 대상을 점화해 주변 최대 3명에게 전파한다. 대재앙은 지점의 여러 적에게 한 번에 적용하는 다른 수단이다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1244310",
+        "17962",
+        "348",
+        "445468",
+        "152108"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대재앙"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/울부짖는-불길"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\지속피해-전파-대상-선택.md",
+        "lastUpdate": "2026-09-21"
       }
     },
     "warlock-destruction-infernal-rolling-havoc-rain-of-fire": {
       "id": "warlock-destruction-infernal-rolling-havoc-rain-of-fire",
-      "name": "지옥불정령 소환-몰아치는 혼돈-불의 비",
+      "name": "정령 생성과 공유 8회 강화",
+      "description": "정령은 30초 동안 파편을 공급하고 몰아치는 혼돈을 선택했다면 다음 소비 8회를 강화한다. 혼돈의 화살과 불의 비는 같은 8회 중첩을 공유한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
-        "지옥불정령 소환",
-        "몰아치는 혼돈",
-        "불의 비",
-        "혼돈의 화살"
+        "1122",
+        "1280483",
+        "417234",
+        "417282",
+        "116858",
+        "5740"
       ],
       "class": "Warlock",
       "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
-        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/몰아치는-혼돈-417282"
+      ],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불지옥-1280483",
         "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/몰아치는-혼돈"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\지옥불정령-소환-몰아치는-혼돈-불의-비.md",
-        "lastUpdate": "2026-06-04"
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-dimensional-rift": {
+      "id": "warlock-destruction-dimensional-rift",
+      "name": "소비 뒤 패시브 균열과 파편",
+      "description": "차원의 균열은 혼돈의 화살·어둠의 연소에서 확률적으로 열리는 패시브다. 파괴의 화신을 선택하면 일부 균열이 거대마귀로 바뀐다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1280868",
+        "116858",
+        "17877",
+        "1245089",
+        "434587"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/차원의-균열",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Procs/거대마귀-소환-434587"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\차원의-균열-자동-생성.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-fiendish-cruelty": {
+      "id": "warlock-destruction-fiendish-cruelty",
+      "name": "치명타에서 무료 마무리 발동",
+      "description": "혼돈의 화살·점화·소각의 치명타가 마귀의 잔혹성을 발동할 수 있다. 발동한 다음 어둠의 연소는 조각 비용과 대상 생명력 제한이 사라진다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "116858",
+        "17962",
+        "29722",
+        "1245633",
+        "1245664",
+        "17877"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/마귀의-잔혹성-1245664"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/마귀의-잔혹성"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\치명타-무료-어둠의-연소.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-conflagration-of-chaos": {
+      "id": "warlock-destruction-conflagration-of-chaos",
+      "name": "점화와 어둠의 연소의 확정 치명타",
+      "description": "12.1 혼돈의 거대한 불길은 두 공격을 확정 치명타로 바꾸며 치명타 확률을 피해로 연결한다. 파멸과 전문화 황폐는 치명타 효과를 더한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "387108",
+        "17962",
+        "17877",
+        "387103",
+        "454735"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파멸",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/황폐"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\혼돈의-거대한-불길-치명타.md",
+        "lastUpdate": "2026-09-21"
+      }
+    },
+    "warlock-destruction-chaotic-inferno-movement": {
+      "id": "warlock-destruction-chaotic-inferno-movement",
+      "name": "혼돈의 화살 뒤 즉시 소각",
+      "description": "혼돈의 불지옥은 혼돈의 화살 뒤 다음 소각이 즉시 시전될 기회를 만든다. 즉시 시전 효과를 이동과 연결할 수 있다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "116858",
+        "1244788",
+        "1244860",
+        "29722"
+      ],
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Buffs/혼돈의-불지옥-1244860"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-불지옥"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Synergies\\혼돈의-불지옥-이동-소각.md",
+        "lastUpdate": "2026-09-21"
       }
     },
     "warrior_common_colossus_demolish_dominance": {

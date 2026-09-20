@@ -1340,18 +1340,6 @@ function isPracticalTipBlock(block) {
 }
 
 const SPECIALIST_CHARTS = {
-  'warlock-destruction': {
-    id: 'uptime',
-    title: '조각과 혼돈의 화살 소비',
-    sectionHeading: '점화, 조각, 불의 비 전환',
-    sectionIntro: '파괴 흑마법사는 조각을 모은 뒤 혼돈의 화살이나 불의 비로 바꾸는 전문화입니다. 단일과 광역에서 같은 조각이라도 소비처가 달라지므로 보조 차트가 필요합니다.',
-    caption: '점화 충전, 제물 유지, 혼돈의 화살, 대혼란, 불의 비 전환을 한 줄로 묶어 단일/광역 판단을 확인합니다.',
-    definition: [
-      ['의미', '혼돈의 화살은 단일 조각 소비기이고, 불의 비는 대상 수가 충분할 때 쓰는 광역 소비기입니다.'],
-      ['읽는 법', '제물이 비면 먼저 복구하고, 조각이 넘치기 전에 단일은 혼돈의 화살, 2대상은 대혼란 혼돈의 화살, 광역은 불의 비로 전환합니다.'],
-      ['체크 포인트', '제물 공백, 점화 2충전 방치, 조각 과충전, 대혼란 중 빈 구간, 불의 비 대상 수 부족을 봅니다.'],
-    ],
-  },
   'monk-brewmaster': {
     id: 'defensive',
     title: '양조 피해별 방어 선택',
@@ -1749,7 +1737,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4004,64 +3992,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'warlock-destruction') {
-    return [
-      {
-        label: '유지 기반',
-        skill: findSkillByNames(data, ['쇠퇴', '제물']),
-        note: '지옥소환사는 쇠퇴, 비-지옥소환사는 제물을 유지해 조각 관리를 시작합니다.',
-        segments: [[3, 92]],
-      },
-      {
-        label: '생성 충전',
-        skill: findSkillByNames(data, ['점화']),
-        note: '조각과 역류 흐름을 열며 2충전 방치를 막습니다.',
-        segments: [[9, 8], [28, 8], [48, 8], [70, 8], [88, 8]],
-      },
-      {
-        label: '역류 보정',
-        skill: findSkillByNames(data, ['역류']),
-        note: '혼돈의 화살과 소각의 긴 시전을 보정하는 상태입니다.',
-        segments: [[13, 12], [32, 12], [54, 12], [74, 12]],
-      },
-      {
-        label: '기본 생성',
-        skill: findSkillByNames(data, ['소각']),
-        note: '다른 우선순위가 비었을 때 조각을 만드는 생성기입니다.',
-        segments: [[18, 10], [38, 10], [62, 10], [82, 8]],
-      },
-      {
-        label: '단일 소비',
-        skill: findSkillByNames(data, ['혼돈의 화살']),
-        note: '조각 과충전 전에 넣는 단일 대상 핵심 주문입니다.',
-        segments: [[24, 10], [44, 10], [66, 10], [90, 7]],
-      },
-      {
-        label: '2대상 복제',
-        skill: findSkillByNames(data, ['대혼란']),
-        note: '두 번째 대상이 의미 있을 때 혼돈의 화살 가치를 올립니다.',
-        segments: [[22, 16], [64, 16]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['불의 비']),
-        note: '3대상 이상과 대상 생존 시간을 확인한 뒤 전환합니다.',
-        segments: [[35, 13], [76, 13]],
-      },
-      {
-        label: '큰 구간',
-        skill: findSkillByNames(data, ['지옥불정령 소환']),
-        note: '조각 생성과 소비 횟수를 동시에 여는 구간입니다.',
-        segments: [[20, 24], [72, 22]],
-      },
-      {
-        label: '보조 쿨기',
-        skill: findSkillByNames(data, ['대재앙', '악마불 집중']),
-        note: '유지 주문 확산 또는 구간 사이 피해 보강으로 씁니다.',
-        segments: [[12, 12], [52, 12], [84, 10]],
-      },
-    ];
-  }
 
 
 

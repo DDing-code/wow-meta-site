@@ -27,6 +27,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['monk-brewmaster', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
+  ['warlock-destruction', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -1126,6 +1127,39 @@ function main() {
   assert(demonologySynergies.length === 18 && demonologySynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Demonology'))), 'All 18 Demonology relationships must use real, correctly scoped numeric IDs');
   assert(demonology.graphCenterSkillId === '105174' && demonologySynergies.filter(note => note.participants.includes('105174')).length === 12, 'Hand of Guldan must retain its twelve actual relationships');
   assert(!/93\.0%|99\.2%|99\.9%|190\.8k/.test(JSON.stringify(demonology)), 'Demonology must not reuse June usage or DPS as current evidence');
+
+  const destruction = manuscripts['warlock-destruction'];
+  const destructionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '12-흑마법사', '파괴', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(destructionSource)) {
+    assert(JSON.stringify(JSON.parse(read(destructionSource))) === JSON.stringify(destruction), 'Destruction must match its canonical 12.1 manuscript');
+  }
+  const destructionNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]파괴[\\/]/.test(skill.source?.kbPath || ''));
+  assert(destructionNotes.length === 66 && destructionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 66 Destruction notes must retain reviewed descriptions');
+  assert(!destruction.extraSkills?.length, 'Destruction must not bypass canonical skills');
+  assert(['348', '1122', '5740', '6353', '17877', '17962', '29722', '80240', '116858', '152108'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Destruction flows require current player casts');
+  assert(['1280868', '387108', '454735', '1265770', '1265772', '1265774'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Destruction passive talents and apex nodes must not become cast buttons');
+  assert(kbSkills['80240']?.description.includes('50%') && kbSkills['387108']?.description.includes('항상 치명타'), 'Destruction must retain the redesigned Havoc and Conflagration of Chaos');
+  assert(kbSkills['17877']?.description.includes('20% 미만') && kbSkills['1245664']?.type === 'buff' && kbSkills['1245664'].description.includes('생명력 제한'), 'Shadowburn execute and free-proc conditions must remain distinct');
+  assert(kbSkills['117828']?.type === 'buff' && kbSkills['196406']?.type === 'spec-talent' && kbSkills['417282']?.description.includes('8회를 공유'), 'Backdraft identity and shared Crashing Chaos charges must survive sync');
+  assert(kbSkills['454735']?.aliases.includes('전문화 황폐') && kbSkills['434589']?.aliases.includes('거대마귀의 혼돈의 화살'), 'Same-name passive and pet spells require unambiguous inline aliases');
+  assert(['428522', '434635'].every(id => kbSkills[id]?.description.includes('악독한 임프')) && kbSkills['434589']?.type === 'proc', 'Ruination summons a Diabolic Imp, not the Avatar Overfiend');
+  assert(kbSkills['1296571']?.type === 'passive' && kbSkills['1296571'].description.includes('10%p') && kbSkills['1296572']?.type === 'passive' && kbSkills['1305711']?.description.includes('6초'), 'Destruction Season 2 effects must retain their proc and target identities');
+  for (const branch of destruction.heroBranches) {
+    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Destruction heroes need complete opener, ST and AoE');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Destruction ST and AoE must have distinct conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId]?.specs.includes('Destruction') && row.note.length > 25, 'Destruction flow rows must be scoped actual casts with complete conditions');
+        if (row.skillId === '434635') assert(!row.note.includes('거대마귀를 연결'), 'Ruination must not grant the Overfiend resource effect');
+      }
+    }
+  }
+  const hellcaller = destruction.heroBranches.find(branch => branch.label === '지옥소환사');
+  const destructionDiabolist = destruction.heroBranches.find(branch => branch.label === '악마학자');
+  assert(!JSON.stringify(hellcaller).includes('"skillId":"434635"') && !JSON.stringify(hellcaller).includes('"skillId":"434506"') && !JSON.stringify(destructionDiabolist).includes('"skillId":"445468"') && !JSON.stringify(destructionDiabolist).includes('"skillId":"442726"'), 'Destruction heroes must not borrow incompatible spells');
+  const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
+  assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
+  assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
 
   const brewmaster = manuscripts['monk-brewmaster'];
   const brewmasterSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '양조', 'Meta', 'guide-12.1.json');

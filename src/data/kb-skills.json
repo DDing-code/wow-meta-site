@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T17:53:51.272Z",
+    "generatedAt": "2026-09-20T18:53:52.179Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2864,
-    "rawTotalSkills": 2864,
+    "totalSkills": 2891,
+    "rawTotalSkills": 2891,
     "duplicateIds": [],
-    "totalSynergies": 524,
+    "totalSynergies": 536,
     "stats": {
-      "total": 2864,
+      "total": 2891,
       "byType": {
-        "buff": 92,
-        "hero-talent": 567,
-        "atomic-skill": 520,
-        "proc": 17,
-        "skill": 143,
+        "buff": 105,
+        "hero-talent": 568,
+        "atomic-skill": 532,
+        "proc": 20,
+        "skill": 131,
         "talent": 987,
-        "spec-talent": 386,
-        "passive": 49,
+        "spec-talent": 392,
+        "passive": 50,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
         "class-talent": 86,
-        "debuff": 2,
+        "debuff": 5,
         "removed-talent": 1,
         "atomic-buff": 1,
         "apex-talent": 1,
@@ -41,7 +41,7 @@
         "Priest": 221,
         "Rogue": 286,
         "Shaman": 273,
-        "Warlock": 269,
+        "Warlock": 296,
         "Warrior": 265
       },
       "bySpec": {
@@ -92,9 +92,9 @@
         "Shaman-정기": 57,
         "Warlock-고통": 10,
         "Warlock-Affliction": 42,
-        "Warlock-공용": 108,
+        "Warlock-공용": 113,
         "Warlock-Demonology": 65,
-        "Warlock-Destruction": 44,
+        "Warlock-Destruction": 66,
         "Warrior-공용": 128,
         "Warrior-Arms": 46,
         "Warrior-무기": 1,
@@ -102,9 +102,9 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2789,
-        "withSynergies": 1480,
-        "avgLinkDensity": "0.037"
+        "withWikilinks": 2816,
+        "withSynergies": 1519,
+        "avgLinkDensity": "0.038"
       }
     }
   },
@@ -678,7 +678,7 @@
     },
     "348": {
       "id": "348",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -686,18 +686,18 @@
       ],
       "name": "제물",
       "koreanName": "제물",
-      "englishName": "",
+      "englishName": "Immolate",
       "icon": "spell_fire_immolation",
       "iconName": "spell_fire_immolation",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 제물은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 제물 1.5% (기본 마나 중) 40 야드 사정거리 1.5 초 주문 시전 시간 흑마법사 필요 적을 불태워 즉시 (주문력의 93.5505%)의 화염 피해를 입히고 추가로 18초에 걸쳐 총 (주문력의 350.814%)의 화염 피해를 입힙니다. 주기적인 피해를 입히면 50%의 확률로 영혼의 조각 파편 1개를 생성합니다. 극대화 효과를 ",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "기본 마나 1.5%",
+      "range": "40야드",
+      "description": "기본 1.5초 시전, 18초 지속의 화염 지속 피해 주문이다. 파괴에서는 주기 피해마다 조각 파편 1개를 만들고, 주기 피해가 치명타이면 50% 확률로 파편을 1개 더 만든다. 지옥소환사를 선택하면 쇠퇴로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -709,14 +709,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_immolation.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대재앙"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -2654,7 +2661,7 @@
     },
     "1122": {
       "id": "1122",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -2662,18 +2669,18 @@
       ],
       "name": "지옥불정령 소환",
       "koreanName": "지옥불정령 소환",
-      "englishName": "",
+      "englishName": "Summon Infernal",
       "icon": "spell_shadow_summoninfernal",
       "iconName": "spell_shadow_summoninfernal",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 지옥불정령 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 지옥불정령 소환 특성 2% (기본 마나 중) 30 야드 사정거리 즉시 2 분 재사용 대기시간 흑마법사 필요 뒤틀린 황천으로부터 지옥불정령을 소환하여 선택한 지역의 모든 적에게 (주문력의 60%)의 화염 피해를 입히고 2초 동안 기절시킵니다. 지옥불정령은 30초 동안 흑마법사와 함께 적을 공격하여 주위의 모든 적에게 2초",
+      "cooldown": "120초 (불지옥 선택 시 90초)",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 2%",
+      "range": "30야드",
+      "description": "지옥불정령을 불러 주변에 충돌 피해와 2초 기절을 주며 30초 동안 싸우게 한다. 기본 재사용 대기시간은 120초이고, 불지옥을 선택하면 90초가 된다. 정령은 주위에 피해를 주고 매초 조각 파편 1개를 생성한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2685,14 +2692,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_summoninfernal.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불지옥-1280483",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/몰아치는-혼돈",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-비"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/심연의-지배"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.006,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -5408,7 +5424,7 @@
     },
     "5740": {
       "id": "5740",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -5416,18 +5432,18 @@
       ],
       "name": "불의 비",
       "koreanName": "불의 비",
-      "englishName": "",
+      "englishName": "Rain of Fire",
       "icon": "spell_shadow_rainoffire",
       "iconName": "spell_shadow_rainoffire",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`불의 비`는 파괴 흑마법사의 광역 조각 결산 주문이다. `혼돈의 화살`과 같은 소비 축에 있지만, 단순히 \"대상이 많다\"는 이유만으로 자동 선택되는 주문은 아니다. 3조각 비용, 장판 적중 시간, 대상 생존 시간, `대혼란` 중 2타깃 가치, Hellcaller/Diabolist 분기를 함께 봐야 한다.  공식 툴팁 요약: 불의 비 특성 영혼의 조각 3개 40 야드 사정거리 즉시 흑마법사 필요 대상 위치에 지옥불의 비를 불러 내려 해당 지역 내에 있는 적에게 8초에 걸쳐 [(주문력의 45.9162%) * 8]의 화염 피해를 입힙니",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 3개",
+      "range": "40야드",
+      "description": "영혼의 조각 3개를 쓰는 즉시 시전 지면 광역기다. 지정한 위치에 기본 8초에 걸쳐 피해를 준다. 2026-08-25 PvE 핫픽스로 피해가 30% 증가했다. 대상에게 직접 지정하는 1214467 변형과 비용·역할은 같지만 조준 방식이 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5439,14 +5455,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rainoffire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비-1214467",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴적인-신속함",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/알리테스의-노여움",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.011,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -5706,7 +5730,7 @@
     },
     "6353": {
       "id": "6353",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -5714,18 +5738,18 @@
       ],
       "name": "영혼의 불꽃",
       "koreanName": "영혼의 불꽃",
-      "englishName": "",
+      "englishName": "Soul Fire",
       "icon": "spell_fire_firebolt",
       "iconName": "spell_fire_firebolt",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 영혼의 불꽃은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼의 불꽃 특성 2% (기본 마나 중) 40 야드 사정거리 3 초 주문 시전 시간 45 초 재사용 대기시간 흑마법사 필요 요구 레벨 15 적의 영혼을 불태워 (주문력의 2667.17%)의 화염 피해를 입히고 제물 |1을;를; 부여합니다. 영혼의 조각 1개를 생성합니다.",
+      "cooldown": "45초",
+      "castTime": "기본 3초",
+      "resourceCost": "기본 마나 2%",
+      "range": "40야드",
+      "description": "기본 3초 시전, 45초 재사용 대기시간의 화염 공격이다. 적중 대상에 제물 또는 지옥소환사의 쇠퇴를 적용하고 영혼의 조각 1개를 만든다. 파괴의 화신을 선택했다면 거대마귀도 자동으로 소환한다. 12.1 시작 때 피해가 45% 증가했다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5738,15 +5762,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/차원의-균열"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.014,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -7687,7 +7716,7 @@
     },
     "17877": {
       "id": "17877",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -7695,18 +7724,18 @@
       ],
       "name": "어둠의 연소",
       "koreanName": "어둠의 연소",
-      "englishName": "",
+      "englishName": "Shadowburn",
       "icon": "spell_shadow_scourgebuild",
       "iconName": "spell_shadow_scourgebuild",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 어둠의 연소은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 어둠의 연소 특성 영혼의 조각 1개 40 야드 사정거리 즉시 흑마법사 필요 요구 레벨 25 적을 강타하여 (주문력의 496.8%)의 암흑불길 피해를 입힙니다. 생명력이 20% 미만인 대상에게만 사용할 수 있습니다. 5초 안에 대상이 사망할 경우 영혼의 조각 1개를 생성하고 충전 횟수를 되돌려받습니다.",
+      "cooldown": "없음 (대상 생명력 또는 발동 조건)",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 1개 (마귀의 잔혹성 발동 시 무료)",
+      "range": "40야드",
+      "description": "영혼의 조각 1개로 즉시 피해를 주는 마무리 공격이다. 기본 사용 조건은 대상 생명력 20% 미만이다. 마귀의 잔혹성 효과가 있으면 생명력 제한이 사라지고 다음 사용의 조각 비용이 0이 된다. 현재 12.1 주문에는 별도 기본 충전·재사용 대기시간이 표시되지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7719,13 +7748,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/마귀의-잔혹성",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -7735,7 +7768,7 @@
     },
     "17962": {
       "id": "17962",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -7743,18 +7776,18 @@
       ],
       "name": "점화",
       "koreanName": "점화",
-      "englishName": "",
+      "englishName": "Conflagrate",
       "icon": "spell_fire_fireball",
       "iconName": "spell_fire_fireball",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 점화은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 점화 특성 1% (기본 마나 중) 40 야드 사정거리 즉시 12.96 초 재사용 대기시간 2회 사용 가능 흑마법사 필요 대상에게 폭발을 일으켜 (주문력의 359.309%)의 화염 피해를 입힙니다. [ 역류 : 10초 동안 다음 소각 또는 혼돈의 화살의 시전 시간이 30%만큼 감소합니다 ] 영혼의 조각 파편 5개를 생성합니다.",
+      "cooldown": "기본 12.96초 충전 회복 (가속·특성 적용 전)",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 1%",
+      "range": "40야드",
+      "description": "기본 2충전의 즉시 시전 화염 공격으로 조각 파편 5개를 만든다. 현재 기본 충전 회복은 12.96초이며 가속과 잠재력 폭발의 영향을 받는다. 점화 연마를 선택하면 최대 3충전이다. 역류 특성을 선택한 경우 다음 긴 시전을 줄이는 효과를 얻는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7766,16 +7799,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/역류"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/점화-연마",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/잠재력-폭발",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/울부짖는-불길",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -9016,7 +9052,7 @@
     },
     "29722": {
       "id": "29722",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -9024,18 +9060,18 @@
       ],
       "name": "소각",
       "koreanName": "소각",
-      "englishName": "",
+      "englishName": "Incinerate",
       "icon": "spell_fire_burnout",
       "iconName": "spell_fire_burnout",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 소각은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 소각 1.5% (기본 마나 중) 40 야드 사정거리 2 초 주문 시전 시간 흑마법사 필요 요구 레벨 10 적에게 불을 끌어들여 (주문력의 438.084%)의 화염 피해를 입힙니다. 영혼의 조각 파편 2개를 생성합니다. 치명타 및 극대화 효과를 발휘하면 추가로 1개를 생성합니다.",
+      "cooldown": "없음",
+      "castTime": "기본 2초",
+      "resourceCost": "기본 마나 1.5%",
+      "range": "40야드",
+      "description": "기본 2초 시전의 화염 생성기다. 기본 조각 파편 2개, 치명타이면 추가 1개를 만든다. 악마의 잿불은 이 생성을 늘리고, 니힐람의 불씨 및 시즌 2 세트는 소각의 자동 추가 피해를 강화한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9047,14 +9083,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/악마의-잿불-387173",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-2pc-1296571"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 6,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -15560,18 +15602,18 @@
       ],
       "name": "특화: 혼돈 마력",
       "koreanName": "특화: 혼돈 마력",
-      "englishName": "",
+      "englishName": "Mastery: Chaotic Energies",
       "icon": "spell_fire_felflamering",
       "iconName": "spell_fire_felflamering",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 특화: 혼돈 마력은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 특화: 혼돈 마력 흑마법사 필요 요구 레벨 10 주문 공격력이 8.0%만큼 증가하고, 추가로 최대 8.0%까지 무작위로 추가 피해를 입힙니다.",
+      "description": "파괴 주문의 피해를 고정 증가분과 추가 무작위 증가분으로 강화하는 특화다. 장비가 반영되지 않은 기본 툴팁은 고정 8%에 추가 0~8%를 표시하며, 실제 값은 특화에 따라 달라진다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15584,13 +15626,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-화신",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/익숙한-혼돈",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불지옥-1280483"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -16103,7 +16149,7 @@
     },
     "80240": {
       "id": "80240",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -16111,18 +16157,18 @@
       ],
       "name": "대혼란",
       "koreanName": "대혼란",
-      "englishName": "",
+      "englishName": "Havoc",
       "icon": "ability_warlock_baneofhavoc",
       "iconName": "ability_warlock_baneofhavoc",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`대혼란`은 파괴 흑마법사의 2타깃 판단을 바꾸는 핵심 주문이다. `혼돈의 화살`이 단일 결산 주문이라면, `대혼란`은 그 결산 주문이 두 번째 대상에도 닿는지를 결정한다. 그래서 단순 cleave 버튼이 아니라 `혼돈의 화살`, `어둠의 연소`, `불의 비` 사이의 선택 기준을 바꾸는 노드다.  공식 툴팁 요약: 대혼란 특성 2% (기본 마나 중) 40 야드 사정거리 즉시 30 초 재사용 대기시간 흑마법사 필요 15초 동안 대상에게 대혼란의 징표를 찍어, 단일 대상 공격 주문이 대혼란의 징표가 찍힌 대상도 함께 공격해 입힌 피해의",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 2%",
+      "range": "40야드",
+      "description": "보조 대상에 기본 15초 동안 징표를 붙여, 다른 대상에게 쓰는 단일 공격을 기본 피해의 50%로 복제한다. 기본 재사용 대기시간은 30초다. 12.1에서 기본 복제율이 60%에서 50%로 줄었다. 대혼란 연마와 나스레자의 암울은 선택한 경우에만 별도로 반영한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16134,16 +16180,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_baneofhavoc.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        ],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/대혼란-연마",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/격동"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/나스레자의-암울"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.014,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -20966,7 +21018,7 @@
     },
     "116858": {
       "id": "116858",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -20974,18 +21026,18 @@
       ],
       "name": "혼돈의 화살",
       "koreanName": "혼돈의 화살",
-      "englishName": "",
+      "englishName": "Chaos Bolt",
       "icon": "ability_warlock_chaosbolt",
       "iconName": "ability_warlock_chaosbolt",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "`혼돈의 화살`은 파괴 흑마법사의 단일 대상 결산 주문이자 그래프 중심 허브다. `제물` 또는 `쇠퇴`가 조각 흐름을 만들고, `점화`와 `소각`이 조각을 채우며, `역류`, `대혼란`, `지옥불정령 소환`, Hellcaller의 `적개심`, Diabolist의 `황폐`가 모두 이 주문의 가치와 타이밍을 바꾼다.  공식 툴팁 요약: 혼돈의 화살 특성 영혼의 조각 2개 40 야드 사정거리 3 초 주문 시전 시간 흑마법사 필요 혼돈의 광선을 내뿜어 극대화 효과를 발휘하며 [2 * (주문력의 408.618%)]의 혼돈 피해를 입힙니다. ",
+      "cooldown": "없음",
+      "castTime": "기본 3초 (연마 선택 시 2.5초, 가속·역류 적용 전)",
+      "resourceCost": "영혼의 조각 2개",
+      "range": "40야드",
+      "description": "영혼의 조각 2개를 쓰는 기본 3초 시전의 단일 소비기다. 항상 치명타로 적중하며 치명타 확률은 피해량을 추가로 높인다. 혼돈의 화살 연마는 피해와 시전 시간을, 역류는 다음 시전 시간을 따로 보정한다. 12.1 시작 때 피해가 5% 증가했다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20997,14 +21049,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_chaosbolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-화살-연마",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/란코라의-손길"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 7,
+        "synergyCount": 4,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -21158,6 +21219,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Talents\\임계질량.md",
+        "lastUpdate": ""
+      }
+    },
+    "117828": {
+      "id": "117828",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "역류",
+      "koreanName": "역류",
+      "englishName": "Backdraft",
+      "icon": "ability_warlock_backdraft",
+      "iconName": "ability_warlock_backdraft",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "역류 특성을 선택한 점화로 얻는 실제 효과다. 다음 소각·혼돈의 화살·영혼의 불꽃 시전 시간을 30% 줄이며 기본 보유 시간은 10초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_backdraft.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_backdraft.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_backdraft.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/역류",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\역류-117828.md",
         "lastUpdate": ""
       }
     },
@@ -22933,7 +23047,7 @@
     },
     "152108": {
       "id": "152108",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -22941,18 +23055,18 @@
       ],
       "name": "대재앙",
       "koreanName": "대재앙",
-      "englishName": "",
+      "englishName": "Cataclysm",
       "icon": "achievement_zone_cataclysm",
       "iconName": "achievement_zone_cataclysm",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 대재앙은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 대재앙 특성 1% (기본 마나 중) 40 야드 사정거리 2 초 주문 시전 시간 30 초 재사용 대기시간 흑마법사 필요 요구 레벨 35 대상 지점에 대재앙을 만들어내 8미터 내에 있는 모든 적에게 (주문력의 364.5%)의 암흑불길 피해를 입히고 제물 효과를 부여합니다.",
+      "cooldown": "30초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나 1%",
+      "range": "40야드",
+      "description": "기본 2초 시전, 30초 재사용 대기시간으로 지점 주변 8미터의 적을 공격하고 제물을 적용한다. 지옥소환사는 제물 대신 쇠퇴를 적용한다. 불의 호수를 선택하면 같은 지점에 별도 장판이 남는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22965,15 +23079,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불의-호수"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.014,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -28102,7 +28221,7 @@
     },
     "196406": {
       "id": "196406",
-      "type": "passive",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -28110,18 +28229,18 @@
       ],
       "name": "역류",
       "koreanName": "역류",
-      "englishName": "",
+      "englishName": "Backdraft",
       "icon": "ability_warlock_backdraft",
       "iconName": "ability_warlock_backdraft",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 역류은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 역류 특성 흑마법사 필요 점화가 다음 소각, 영혼의 불꽃 또는 혼돈의 화살의 시전 시간을 30%만큼 감소시킵니다. 최대 [ 섬락 : 4 / 2]회 충전됩니다.",
-      "category": "passive",
+      "description": "점화가 역류 효과를 주게 하는 전문화 특성이다. 효과는 다음 소각·혼돈의 화살·영혼의 불꽃 시전 시간을 30% 줄이며, 일반적인 최대 보유는 2중첩이다. 실제 추적 효과 ID는 117828이다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28135,16 +28254,16 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.052,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -28162,18 +28281,18 @@
       ],
       "name": "유황 불길",
       "koreanName": "유황 불길",
-      "englishName": "",
+      "englishName": "Fire and Brimstone",
       "icon": "ability_warlock_fireandbrimstone",
       "iconName": "ability_warlock_fireandbrimstone",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "유황 불길은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 유황 불길 특성 흑마법사 필요 요구 레벨 35 소각이 대상 주위의 모든 적에게 적중하여 25%의 피해를 입힙니다.",
+      "description": "소각이 주 대상 근처 적에게도 주 대상 피해의 25%로 적중하게 하는 광역 특성이다. 별도 시전 버튼이나 별도의 조각 소비는 생기지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28186,15 +28305,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/악마의-잿불-387173"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -28204,7 +28326,7 @@
     },
     "196447": {
       "id": "196447",
-      "type": "skill",
+      "type": "atomic-skill",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -28212,18 +28334,18 @@
       ],
       "name": "악마불 집중",
       "koreanName": "악마불 집중",
-      "englishName": "",
+      "englishName": "Channel Demonfire",
       "icon": "spell_fire_ragnaros_lavaboltgreen",
       "iconName": "spell_fire_ragnaros_lavaboltgreen",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 악마불 집중은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 악마불 집중 특성 1.5% (기본 마나 중) 40 야드 사정거리 집중 (3 초 주문 시전 시간) 25 초 재사용 대기시간 흑마법사 필요 요구 레벨 50 3초에 걸쳐 40미터 내 자신의 제물 에 걸린 무작위 대상에게 15 발의 지옥불 화살을 발사합니다. 화살은 각각 대상에게는 (주문력의 39.355%)의 화염 피해를 입히고,",
+      "cooldown": "25초",
+      "castTime": "3초 정신 집중",
+      "resourceCost": "기본 마나 1.5%",
+      "range": "40야드",
+      "description": "3초 동안 기본 15발의 악마불을 발사하는 직접 정신 집중 공격이다. 재사용 대기시간은 25초이며 제물 또는 쇠퇴가 적용된 범위 내 적을 골라 공격하고 주변에도 피해를 준다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28238,13 +28360,18 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/분노의-악마불",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/악마불-주입"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.013,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -33246,18 +33373,18 @@
       ],
       "name": "불확실성 역전",
       "koreanName": "불확실성 역전",
-      "englishName": "",
+      "englishName": "Reverse Entropy",
       "icon": "spell_fire_playingwithfiregreen",
       "iconName": "spell_fire_playingwithfiregreen",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "불확실성 역전은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 불확실성 역전 특성 흑마법사 필요 요구 레벨 25 매 분마다 약 2.5 번 효과 발동됨 주문 시전 시 일정 확률로 8초 동안 가속이 15%만큼 증가합니다.",
+      "description": "주문 시전으로 8초 동안 가속 15%를 얻을 수 있는 지속 특성이다. 현재 기본 발동 설명은 분당 약 2.5회이며 정해진 주기마다 반드시 발동하는 쿨다운은 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33269,14 +33396,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfiregreen.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -36021,18 +36152,18 @@
       ],
       "name": "점화 연마",
       "koreanName": "점화 연마",
-      "englishName": "",
+      "englishName": "Improved Conflagrate",
       "icon": "spell_fire_fireball",
       "iconName": "spell_fire_fireball",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "점화 연마은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 점화 연마 특성 흑마법사 필요 점화가 추가로 1회 충전됩니다.",
+      "description": "점화의 최대 충전 수를 1회 늘린다. 기본 2회에서 이 특성을 선택했을 때 3회가 된다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36047,13 +36178,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/잠재력-폭발"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.018,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -39939,6 +40072,59 @@
         "lastUpdate": ""
       }
     },
+    "266030": {
+      "id": "266030",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "불확실성 역전",
+      "koreanName": "불확실성 역전",
+      "englishName": "Reverse Entropy",
+      "icon": "spell_fire_playingwithfiregreen",
+      "iconName": "spell_fire_playingwithfiregreen",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "불확실성 역전 특성에서 확률적으로 발생하는 8초 가속 15% 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfiregreen.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_playingwithfiregreen.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_playingwithfiregreen.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_playingwithfiregreen.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfiregreen.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불확실성-역전",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\불확실성-역전-266030.md",
+        "lastUpdate": ""
+      }
+    },
     "266086": {
       "id": "266086",
       "type": "spec-talent",
@@ -39949,18 +40135,18 @@
       ],
       "name": "혼돈의 비",
       "koreanName": "혼돈의 비",
-      "englishName": "",
+      "englishName": "Rain of Chaos",
       "icon": "spell_fire_felrainoffire",
       "iconName": "spell_fire_felrainoffire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "혼돈의 비은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 혼돈의 비 특성 흑마법사 필요 요구 레벨 45 첫 번째 지옥불정령이 활성화되어 있는 동안 영혼의 조각을 소모할 때마다 15%의 확률로 8초 동안 지속되는 지옥불정령을 추가로 소환합니다.",
+      "description": "처음 소환한 지옥불정령이 활동하는 동안 소비한 영혼의 조각마다 15% 확률로 8초짜리 추가 지옥불정령을 부른다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39973,15 +40159,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/몰아치는-혼돈"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.016,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -39999,18 +40190,18 @@
       ],
       "name": "내부 연소",
       "koreanName": "내부 연소",
-      "englishName": "",
+      "englishName": "Internal Combustion",
       "icon": "ability_mage_livingbomb",
       "iconName": "ability_mage_livingbomb",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "내부 연소은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 내부 연소 특성 흑마법사 필요 요구 레벨 25 혼돈의 화살이 대상에게 걸린 제물 의 지속 피해 효과를 최대 5초만큼 소모하여 즉시 그만큼의 피해를 입힙니다.",
+      "description": "혼돈의 화살이 대상의 제물 지속 피해 중 최대 5초분을 즉시 피해로 바꾸고 그만큼 남은 시간을 줄인다. 지옥소환사의 쇠퇴에도 적용된다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -40026,13 +40217,17 @@
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불확실성-역전"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.03,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -64419,18 +64614,18 @@
       ],
       "name": "파멸",
       "koreanName": "파멸",
-      "englishName": "",
+      "englishName": "Ruin",
       "icon": "spell_shadow_shadowwordpain",
       "iconName": "spell_shadow_shadowwordpain",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파멸은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파멸 특성 흑마법사 필요 파괴 주문의 치명타 및 극대화 피해 보너스가 15%만큼 증가합니다.",
+      "description": "파괴 주문의 치명타 피해를 등급당 15%, 2등급이면 30% 증가시킨다. 모든 피해를 고정 30% 늘리는 특성이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64442,18 +64637,77 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowwordpain.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\파멸.md",
+        "lastUpdate": ""
+      }
+    },
+    "387108": {
+      "id": "387108",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "혼돈의 거대한 불길",
+      "koreanName": "혼돈의 거대한 불길",
+      "englishName": "Conflagration of Chaos",
+      "icon": "inv_shadowflame_buff",
+      "iconName": "inv_shadowflame_buff",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "12.1에서 재설계되어 점화와 어둠의 연소를 항상 치명타로 적중시키고, 치명타 확률에 따라 두 주문의 피해를 추가로 높이는 지속 특성이다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shadowflame_buff.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shadowflame_buff.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_shadowflame_buff.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_shadowflame_buff.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_shadowflame_buff.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/마귀의-잔혹성",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파멸"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\혼돈의-거대한-불길-387108.md",
         "lastUpdate": ""
       }
     },
@@ -64467,18 +64721,18 @@
       ],
       "name": "분노의 악마불",
       "koreanName": "분노의 악마불",
-      "englishName": "",
+      "englishName": "Raging Demonfire",
       "icon": "spell_fire_ragnaros_lavaboltgreen",
       "iconName": "spell_fire_ragnaros_lavaboltgreen",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "분노의 악마불은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 분노의 악마불 특성 흑마법사 필요 악마불 집중 시전 시 추가로 2개의 화살을 발사합니다. 각 화살은 적중한 모든 대상에게 걸린 제물 의 남은 지속시간을 0.5초만큼 증가시킵니다.",
+      "description": "악마불 집중이 2발을 더 발사하며 각 적중이 맞은 대상의 제물 지속 시간을 0.5초 늘린다. 지옥소환사의 대응 지속 피해도 같은 연결로 확인한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64497,16 +64751,71 @@
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/악마불-주입"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.042,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\분노의-악마불.md",
+        "lastUpdate": ""
+      }
+    },
+    "387173": {
+      "id": "387173",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "악마의 잿불",
+      "koreanName": "악마의 잿불",
+      "englishName": "Diabolic Embers",
+      "icon": "inv_shoulder_robe_raidmage_j_01",
+      "iconName": "inv_shoulder_robe_raidmage_j_01",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "소각의 조각 파편 생성을 100% 증가시킨다. 기본 직접 적중 생성량은 파편 2개에서 4개, 직접 치명타의 추가 생성은 1개에서 2개로 늘어난다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_robe_raidmage_j_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shoulder_robe_raidmage_j_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_shoulder_robe_raidmage_j_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_shoulder_robe_raidmage_j_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_robe_raidmage_j_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/유황-불길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\악마의-잿불-387173.md",
         "lastUpdate": ""
       }
     },
@@ -64625,18 +64934,18 @@
       ],
       "name": "잿빛 잔재",
       "koreanName": "잿빛 잔재",
-      "englishName": "",
+      "englishName": "Ashen Remains",
       "icon": "inv_enchanting_dust",
       "iconName": "inv_enchanting_dust",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "잿빛 잔재은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 잿빛 잔재 특성 흑마법사 필요 혼돈의 화살과 어둠의 연소, 소각이 제물 에 걸린 대상에게 3%의 추가 피해를 입힙니다.",
+      "description": "제물이 적용된 대상에 혼돈의 화살·어둠의 연소·소각이 등급당 3%, 2등급이면 6% 더 큰 피해를 준다. 지옥소환사에서는 대체 지속 피해인 쇠퇴가 조건을 담당한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64649,18 +64958,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 5,
         "synergyCount": 4,
-        "linkDensity": 0.056,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -64678,18 +64989,73 @@
       ],
       "name": "발화점",
       "koreanName": "발화점",
-      "englishName": "",
+      "englishName": "Flashpoint",
       "icon": "spell_fire_moltenblood",
       "iconName": "spell_fire_moltenblood",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "발화점은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 발화점 특성 흑마법사 필요 남은 생명력이 80% 이상인 대상에게 제물 |1으로;로; 지속 피해를 주면 10초 동안 가속이 2%만큼 증가합니다. 최대 3번까지 중첩됩니다.",
+      "description": "생명력 80%를 넘는 대상에게 제물 주기 피해가 발생하면 가속 2%를 10초 동안 얻는다. 최대 3중첩으로 가속 6%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_moltenblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_moltenblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_moltenblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_moltenblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_moltenblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대재앙"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/울부짖는-불길"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.072,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\발화점.md",
+        "lastUpdate": ""
+      }
+    },
+    "387263": {
+      "id": "387263",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "발화점",
+      "koreanName": "발화점",
+      "englishName": "Flashpoint",
+      "icon": "spell_fire_moltenblood",
+      "iconName": "spell_fire_moltenblood",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "발화점으로 얻는 실제 가속 효과다. 10초 동안 중첩당 2%, 최대 3중첩이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64704,17 +65070,21 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/발화점"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\발화점.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\발화점-387263.md",
         "lastUpdate": ""
       }
     },
@@ -64728,18 +65098,18 @@
       ],
       "name": "혼돈의 화신",
       "koreanName": "혼돈의 화신",
-      "englishName": "",
+      "englishName": "Chaos Incarnate",
       "icon": "spell_fire_felflamering",
       "iconName": "spell_fire_felflamering",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "혼돈의 화신은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 혼돈의 화신 특성 흑마법사 필요 혼돈의 화살, 불의 비, 어둠의 연소가 항상 특화: 혼돈 마력의 이로운 효과를 최소 70% 이상 받습니다.",
+      "description": "혼돈의 화살·불의 비·어둠의 연소가 특화: 혼돈 마력의 최대 효과 중 최소 70%를 받게 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64752,6 +65122,7 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/특화-혼돈-마력",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
@@ -64760,9 +65131,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.043,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -64780,18 +65151,18 @@
       ],
       "name": "반발력",
       "koreanName": "반발력",
-      "englishName": "",
+      "englishName": "Backlash",
       "icon": "spell_fire_playingwithfire",
       "iconName": "spell_fire_playingwithfire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "반발력은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 반발력 특성 흑마법사 필요 치명타 및 극대화율이 2%만큼 증가합니다. 물리 공격을 받으면 20%의 확률로 다음 소각이 즉시 시전됩니다. 이 효과는 6초에 한 번씩만 발동합니다.",
+      "description": "치명타 확률을 등급당 2% 올린다. 물리 공격을 받으면 등급에 따라 20% 또는 40% 확률로 다음 소각이 즉시 시전되며, 이 발동에는 6초 내부 대기시간이 있다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64812,11 +65183,63 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.016,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\반발력.md",
+        "lastUpdate": ""
+      }
+    },
+    "387385": {
+      "id": "387385",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "반발력",
+      "koreanName": "반발력",
+      "englishName": "Backlash",
+      "icon": "spell_fire_playingwithfire",
+      "iconName": "spell_fire_playingwithfire",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "반발력 특성이 물리 공격을 받아 발동한 뒤 다음 소각을 즉시 시전하게 하는 15초 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_playingwithfire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_playingwithfire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_playingwithfire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_playingwithfire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/반발력"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\반발력-387385.md",
         "lastUpdate": ""
       }
     },
@@ -64830,18 +65253,18 @@
       ],
       "name": "격동",
       "koreanName": "격동",
-      "englishName": "",
+      "englishName": "Mayhem",
       "icon": "spell_warlock_demonbolt",
       "iconName": "spell_warlock_demonbolt",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "격동은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 격동 특성 흑마법사 필요 단일 대상 주문 시전 시 35%의 확률로 주위 적에게 5.0초 동안 대혼란 |1을;를; 부여합니다. 대혼란 5.0초 동안 대상에게 대혼란의 징표를 찍어, 단일 대상 공격 주문이 대혼란의 징표가 찍힌 대상도 함께 공격해 입힌 피해의 60%만큼 피해를 입힙니다. (5.1초 재사용 대기시간)",
+      "description": "단일 공격이 35% 확률로 근처 다른 적에게 기본 5초 대혼란을 자동 적용한다. 현재 기본 내부 대기시간은 5.1초다. 기본 복제 피해는 50%다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64854,15 +65277,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/대혼란-연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -66614,18 +67041,18 @@
       ],
       "name": "잠재력 폭발",
       "koreanName": "잠재력 폭발",
-      "englishName": "",
+      "englishName": "Explosive Potential",
       "icon": "spell_fire_felflamering_red",
       "iconName": "spell_fire_felflamering_red",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "잠재력 폭발은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 잠재력 폭발 특성 흑마법사 필요 점화의 재사용 대기시간이 2초만큼 감소합니다.",
+      "description": "점화의 기본 충전 회복 시간을 2초 줄이는 지속 특성이다. 점화 연마처럼 최대 충전 횟수를 늘리는 효과는 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66640,17 +67067,74 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/점화-연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.018,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\잠재력-폭발.md",
+        "lastUpdate": ""
+      }
+    },
+    "388832": {
+      "id": "388832",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "끓어오르는 불길",
+      "koreanName": "끓어오르는 불길",
+      "englishName": "Scalding Flames",
+      "icon": "spell_burningsoul",
+      "iconName": "spell_burningsoul",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "제물 피해를 25% 늘리고 기본 지속 시간을 3초 늘린다. 적용 시 기본 18초가 21초가 되며 지옥소환사의 대응 쇠퇴도 같은 유지 특성의 영향을 받는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_burningsoul.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_burningsoul.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_burningsoul.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_burningsoul.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_burningsoul.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\끓어오르는-불길-388832.md",
         "lastUpdate": ""
       }
     },
@@ -77682,18 +78166,18 @@
       ],
       "name": "몰아치는 혼돈",
       "koreanName": "몰아치는 혼돈",
-      "englishName": "",
+      "englishName": "Crashing Chaos",
       "icon": "inv_infernalmount",
       "iconName": "inv_infernalmount",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "몰아치는 혼돈은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 몰아치는 혼돈 특성 흑마법사 필요 지옥불정령 소환이 다음 8회 동안 시전하는 혼돈의 화살의 공격력을 25%만큼, 혹은 다음 8회 동안 시전하는 불의 비의 공격력을 35%만큼 증가시킵니다.",
+      "description": "지옥불정령 소환 뒤 다음 소비 8회에 보너스를 주는 특성이다. 혼돈의 화살은 25%, 불의 비는 35% 피해 증가를 받는다. 두 주문이 하나의 8회 효과를 함께 소모한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -77710,17 +78194,73 @@
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-비"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 3,
-        "linkDensity": 0.045,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\몰아치는-혼돈.md",
+        "lastUpdate": ""
+      }
+    },
+    "417282": {
+      "id": "417282",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "몰아치는 혼돈",
+      "koreanName": "몰아치는 혼돈",
+      "englishName": "Crashing Chaos",
+      "icon": "inv_infernalmount",
+      "iconName": "inv_infernalmount",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "몰아치는 혼돈의 실제 소비 강화 효과다. 45초 안에 최대 8회를 공유해 혼돈의 화살 피해 25% 또는 불의 비 피해 35% 증가를 적용한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_infernalmount.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_infernalmount.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_infernalmount.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_infernalmount.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_infernalmount.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/몰아치는-혼돈"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.057,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\몰아치는-혼돈-417282.md",
         "lastUpdate": ""
       }
     },
@@ -79516,7 +80056,10 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -79526,9 +80069,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.061,
+        "wikilinkCount": 12,
+        "synergyCount": 6,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -79625,7 +80168,8 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/어둠의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -79633,8 +80177,8 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
         "linkDensity": 0.05,
         "hasWikilinks": true
       },
@@ -79662,7 +80206,7 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 군주 소환 후 악마의 다음 굴단의 손 또는 파괴의 다음 혼돈의 화살이 황폐로 변한다. 악마는 추가 임프 3마리, 파괴는 악독한 임프 1마리를 소환하는 서로 다른 결과를 가진다.",
+      "description": "지옥의 군주 소환 뒤 악마의 다음 굴단의 손 또는 파괴의 다음 혼돈의 화살이 황폐로 바뀐다. 실제 시전 ID는 434635이며, 악마는 임프 3마리, 파괴는 악독한 임프 1마리를 추가 소환한다. 파괴의 화신으로 나오는 거대마귀와는 다른 소환수다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -79679,23 +80223,80 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Talents/아르거스의-지배자-1276222",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/황폐"
         ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.048,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Hero-Talents\\황폐.md",
+        "lastUpdate": ""
+      }
+    },
+    "428524": {
+      "id": "428524",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "name": "악마술: 대군주",
+      "koreanName": "악마술: 대군주",
+      "englishName": "Demonic Art: Overlord",
+      "icon": "ability_creature_felfrenzy",
+      "iconName": "ability_creature_felfrenzy",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "악마의 의식 대군주 단계가 끝나면 얻는 실제 악마술 효과다. 다음 적격 조각 소비로 대군주의 공격을 불러낸다. 기본 보유 시간은 1분이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_felfrenzy.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_creature_felfrenzy.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_creature_felfrenzy.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_creature_felfrenzy.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_felfrenzy.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/란코라의-손길"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Buffs\\악마술-대군주-428524.md",
         "lastUpdate": ""
       }
     },
@@ -80364,17 +80965,20 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불지옥-1280483"
+        ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.044,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -80913,7 +81517,10 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -80921,9 +81528,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.041,
+        "wikilinkCount": 9,
+        "synergyCount": 5,
+        "linkDensity": 0.087,
         "hasWikilinks": true
       },
       "source": {
@@ -80950,7 +81557,7 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마에서는 굴단의 손이 소비한 조각 하나당 피해가 15% 늘어난다. 파괴에서는 대혼란이 걸린 적에게 단일 주문 피해가 7% 늘어난다.",
+      "description": "악마에서는 굴단의 손이 소비한 조각 하나당 피해가 15% 늘어난다. 파괴에서는 대혼란의 복제 비율을 7%p 늘려 기본 50%에서 57%가 된다. 대혼란 연마의 추가 보정은 선택했을 때 별도로 적용한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -80966,15 +81573,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대혼란"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/대혼란-연마",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/격동"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -81071,17 +81682,21 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/악마-폭군-소환",
-          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식"
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/란코라의-손길"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.048,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -83454,6 +84069,118 @@
         "lastUpdate": ""
       }
     },
+    "432794": {
+      "id": "432794",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "name": "악마술: 혼돈의 어머니",
+      "koreanName": "악마술: 혼돈의 어머니",
+      "englishName": "Demonic Art: Mother of Chaos",
+      "icon": "achievement_boss_argus_shivan",
+      "iconName": "achievement_boss_argus_shivan",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "악마의 의식 혼돈의 어머니 단계가 끝나면 얻는 실제 악마술 효과다. 다음 적격 조각 소비로 혼돈의 어머니의 공격을 불러낸다. 기본 보유 시간은 1분이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_argus_shivan.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_boss_argus_shivan.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_boss_argus_shivan.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_boss_argus_shivan.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_argus_shivan.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥불-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/집회의-비밀"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Buffs\\악마술-혼돈의-어머니-432794.md",
+        "lastUpdate": ""
+      }
+    },
+    "432795": {
+      "id": "432795",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Demonology",
+        "Destruction"
+      ],
+      "name": "악마술: 지옥의 군주",
+      "koreanName": "악마술: 지옥의 군주",
+      "englishName": "Demonic Art: Pit Lord",
+      "icon": "ability_bossmannoroth_empoweredmannorothsgaze",
+      "iconName": "ability_bossmannoroth_empoweredmannorothsgaze",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "악마의 의식 지옥의 군주 단계가 끝나면 얻는 실제 악마술 효과다. 다음 적격 조각 소비로 지옥의 군주의 공격을 불러낸다. 기본 보유 시간은 1분이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmannoroth_empoweredmannorothsgaze.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_bossmannoroth_empoweredmannorothsgaze.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_bossmannoroth_empoweredmannorothsgaze.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_bossmannoroth_empoweredmannorothsgaze.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmannoroth_empoweredmannorothsgaze.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/악마/Skills/굴단의-손"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/악마의-의식",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/황폐"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Buffs\\악마술-지옥의-군주-432795.md",
+        "lastUpdate": ""
+      }
+    },
     "432802": {
       "id": "432802",
       "type": "hero-talent",
@@ -85031,6 +85758,114 @@
         "lastUpdate": ""
       }
     },
+    "434587": {
+      "id": "434587",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "거대마귀 소환",
+      "koreanName": "거대마귀 소환",
+      "englishName": "Summon Overfiend",
+      "icon": "spell_fire_felcano",
+      "iconName": "spell_fire_felcano",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "8초 동안 거대마귀를 소환하는 자동 효과다. 거대마귀는 매초 파편 1개를 만들고 소환자의 대상에게 80% 효과의 혼돈의 화살을 사용한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felcano.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_felcano.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_felcano.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_felcano.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felcano.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/차원의-균열",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 4,
+        "linkDensity": 0.086,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Procs\\거대마귀-소환-434587.md",
+        "lastUpdate": ""
+      }
+    },
+    "434589": {
+      "id": "434589",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "혼돈의 화살",
+      "koreanName": "혼돈의 화살",
+      "englishName": "Chaos Bolt",
+      "aliases": [
+        "거대마귀의 혼돈의 화살",
+        "소환수 혼돈의 화살"
+      ],
+      "icon": "ability_warlock_chaosbolt",
+      "iconName": "ability_warlock_chaosbolt",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "거대마귀가 사용하는 혼돈의 화살 피해 주문이다. 플레이어의 조각 2개 소비 주문인 116858과 이름은 같지만 시전자와 자원 처리가 다르다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_chaosbolt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_chaosbolt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_chaosbolt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_chaosbolt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_chaosbolt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Procs\\혼돈의-화살-434589.md",
+        "lastUpdate": ""
+      }
+    },
     "434635": {
       "id": "434635",
       "type": "atomic-skill",
@@ -85078,7 +85913,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.051,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -86548,7 +87383,9 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/불안정한-고통",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Talents/치명적인-메아리",
@@ -86560,9 +87397,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 3,
-        "linkDensity": 0.056,
+        "wikilinkCount": 8,
+        "synergyCount": 5,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
@@ -90059,8 +90896,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_hellcallerwarlock_malevolence.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/불지옥-1280483"
+        ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
@@ -90069,9 +90913,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.052,
+        "wikilinkCount": 9,
+        "synergyCount": 5,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -93822,6 +94666,59 @@
         "lastUpdate": ""
       }
     },
+    "445465": {
+      "id": "445465",
+      "type": "hero-talent",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Affliction",
+        "Destruction"
+      ],
+      "name": "쇠퇴",
+      "koreanName": "쇠퇴",
+      "englishName": "Wither",
+      "icon": "inv_ability_hellcallerwarlock_wither",
+      "iconName": "inv_ability_hellcallerwarlock_wither",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "지옥소환사 영웅 특성의 쇠퇴 활성화 노드다. 고통에서는 부패, 파괴에서는 제물을 실제 사용 주문 쇠퇴 445468로 대체한다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_hellcallerwarlock_wither.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_hellcallerwarlock_wither.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_hellcallerwarlock_wither.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_hellcallerwarlock_wither.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_hellcallerwarlock_wither.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Hero-Talents\\쇠퇴-445465.md",
+        "lastUpdate": ""
+      }
+    },
     "445468": {
       "id": "445468",
       "type": "atomic-skill",
@@ -93841,7 +94738,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "부패를 대체하는 지옥소환사의 실제 지속 피해 공격이다. 고통에서는 즉시 시전하며 기본 18초 지속이다. 파괴에서는 제물을 대체하며 주기 피해의 조각 파편 생성이 파괴 설명에만 붙는다.",
+      "description": "지옥소환사의 실제 사용 주문으로 고통의 부패와 파괴의 제물을 대체한다. 현재 주문 데이터는 즉시 시전, 기본 18초 지속이다. 파괴에서는 주기 피해마다 조각 파편 1개를 만들고 치명타이면 50% 확률로 1개를 더 만든다. 고통에는 이 파편 생성이 없다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -93858,22 +94755,83 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패",
-          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗"
+          "08-직업별-Knowledge-Base/12-흑마법사/고통/Skills/부패의-씨앗",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대재앙",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
         ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/울부짖는-불길",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/내부-연소"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴-445465"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 11,
+        "synergyCount": 7,
+        "linkDensity": 0.101,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Hero-Talents\\쇠퇴.md",
+        "lastUpdate": ""
+      }
+    },
+    "445474": {
+      "id": "445474",
+      "type": "debuff",
+      "class": "Warlock",
+      "spec": "공용",
+      "specs": [
+        "Affliction",
+        "Destruction"
+      ],
+      "name": "쇠퇴",
+      "koreanName": "쇠퇴",
+      "englishName": "Wither",
+      "icon": "inv_ability_hellcallerwarlock_wither",
+      "iconName": "inv_ability_hellcallerwarlock_wither",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "쇠퇴 사용 뒤 대상에게 남는 기본 18초 지속 피해 효과다. 파괴에서는 주기 피해마다 파편 1개, 치명타이면 50% 확률로 파편 1개를 추가 생성한다. 고통에는 이 파편 생성이 없다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_hellcallerwarlock_wither.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_hellcallerwarlock_wither.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_hellcallerwarlock_wither.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_hellcallerwarlock_wither.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_hellcallerwarlock_wither.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴-445465",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/검게-물든-영혼",
           "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심"
         ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.062,
+        "synergyCount": 0,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Hero-Talents\\쇠퇴.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Buffs\\쇠퇴-445474.md",
         "lastUpdate": ""
       }
     },
@@ -101665,18 +102623,22 @@
       ],
       "name": "황폐",
       "koreanName": "황폐",
-      "englishName": "",
+      "englishName": "Devastation",
+      "aliases": [
+        "전문화 황폐",
+        "치명타 특성 황폐"
+      ],
       "icon": "spell_fire_flameshock",
       "iconName": "spell_fire_flameshock",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "황폐은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 황폐 특성 흑마법사 필요 파괴 주문의 치명타 및 극대화율이 3%만큼 증가합니다.",
+      "description": "파괴 주문의 치명타 확률을 등급당 3%, 2등급이면 6% 증가시킨다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101688,14 +102650,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flameshock.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/황폐"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -101713,18 +102680,18 @@
       ],
       "name": "잿불폭풍",
       "koreanName": "잿불폭풍",
-      "englishName": "",
+      "englishName": "Emberstorm",
       "icon": "spell_fire_selfdestruct",
       "iconName": "spell_fire_selfdestruct",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "잿불폭풍은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 잿불폭풍 특성 흑마법사 필요 화염 주문의 공격력이 2%만큼 증가합니다. 또한 소각 주문의 시전 시간이 20%만큼 감소합니다.",
+      "description": "화염 주문 피해를 2% 늘리고 소각의 기본 시전 시간을 20% 줄인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101737,15 +102704,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -103139,18 +104107,18 @@
       ],
       "name": "혼돈의 화살 연마",
       "koreanName": "혼돈의 화살 연마",
-      "englishName": "",
+      "englishName": "Improved Chaos Bolt",
       "icon": "ability_warlock_chaosbolt",
       "iconName": "ability_warlock_chaosbolt",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "혼돈의 화살 연마은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 혼돈의 화살 연마 특성 흑마법사 필요 혼돈의 화살의 공격력이 10%만큼 증가하고 시전 시간은 0.5초만큼 감소합니다.",
+      "description": "혼돈의 화살 피해를 10% 늘리고 기본 시전 시간을 0.5초 줄인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103169,9 +104137,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.024,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -103909,6 +104877,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\마나폭탄.md",
+        "lastUpdate": ""
+      }
+    },
+    "457578": {
+      "id": "457578",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "거대마귀 소환",
+      "koreanName": "거대마귀 소환",
+      "englishName": "Summon Overfiend",
+      "icon": "ability_warlock_chaosbolt",
+      "iconName": "ability_warlock_chaosbolt",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "거대마귀가 활동하는 8초 동안 매초 영혼의 조각 파편 1개를 공급하는 내부 소환 효과다. 현재 파괴의 화신과 연결되는 실제 소환 주문은 434587이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_chaosbolt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_chaosbolt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_chaosbolt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_chaosbolt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_chaosbolt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\거대마귀-소환-457578.md",
         "lastUpdate": ""
       }
     },
@@ -110237,18 +111255,18 @@
       ],
       "name": "악마불 주입",
       "koreanName": "악마불 주입",
-      "englishName": "",
+      "englishName": "Demonfire Infusion",
       "icon": "spell_shadow_shadowandflame",
       "iconName": "spell_shadow_shadowandflame",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "악마불 주입은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마불 주입 특성 흑마법사 필요 제물 로 주기적인 피해를 입히면 4%의 확률로 100%만큼 효과가 증가한 악마불 화살을 발사합니다. 소각 시전 시 25%의 확률로 100%만큼 효과가 증가한 악마불 화살을 발사합니다.",
+      "description": "제물 주기 피해가 4%, 소각이 25% 확률로 강화된 악마불을 자동 발사한다. 이 자동 발사는 기본 악마불보다 100% 강화된다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -110262,19 +111280,77 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/악마불-집중"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/분노의-악마불"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.029,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\악마불-주입.md",
+        "lastUpdate": ""
+      }
+    },
+    "1214467": {
+      "id": "1214467",
+      "type": "atomic-skill",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "불의 비",
+      "koreanName": "불의 비",
+      "englishName": "Rain of Fire",
+      "icon": "spell_shadow_rainoffire",
+      "iconName": "spell_shadow_rainoffire",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "영혼의 조각 3개",
+      "range": "40야드",
+      "description": "영혼의 조각 3개를 사용하는 불의 비의 대상 지정 변형이다. 선택한 적 위치에 기본 8초 광역 피해를 내며, 5740 지점 지정 변형과 같은 소비 역할을 한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rainoffire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_rainoffire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_rainoffire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rainoffire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/알리테스의-노여움",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴적인-신속함"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Skills\\불의-비-1214467.md",
         "lastUpdate": ""
       }
     },
@@ -114970,18 +116046,18 @@
       ],
       "name": "익숙한 혼돈",
       "koreanName": "익숙한 혼돈",
-      "englishName": "",
+      "englishName": "Practiced Chaos",
       "icon": "ability_demonhunter_chaoticimprint_fire",
       "iconName": "ability_demonhunter_chaoticimprint_fire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "익숙한 혼돈은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 익숙한 혼돈 특성 흑마법사 필요 특화가 2%만큼 증가합니다.",
+      "description": "특화를 2% 증가시키는 파괴 지속 특성이다. 특화: 혼돈 마력에 연결되며 직접 누르는 추가 공격은 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114993,14 +116069,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_chaoticimprint_fire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/특화-혼돈-마력"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-화신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.01,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -115018,18 +116098,18 @@
       ],
       "name": "울부짖는 불길",
       "koreanName": "울부짖는 불길",
-      "englishName": "",
+      "englishName": "Roaring Blaze",
       "icon": "ability_warlock_inferno",
       "iconName": "ability_warlock_inferno",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "울부짖는 불길은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 울부짖는 불길 특성 흑마법사 필요 점화의 공격력이 10%만큼 증가합니다. 점화 시전 시 대상의 제물 |1을;를; 터뜨려 최대 3명의 주위 적에게 전이시킵니다.",
+      "description": "점화 피해를 10% 늘리고, 점화 대상에게 적용된 제물을 근처 최대 3명에게 전파한다. 지옥소환사는 쇠퇴를 전파한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115043,15 +116123,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/점화",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/대재앙"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.031,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -115069,18 +116152,18 @@
       ],
       "name": "대혼란 연마",
       "koreanName": "대혼란 연마",
-      "englishName": "",
+      "englishName": "Improved Havoc",
       "icon": "ability_warlock_baneofhavoc",
       "iconName": "ability_warlock_baneofhavoc",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "대혼란 연마은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 대혼란 연마 특성 흑마법사 필요 대혼란의 지속시간이 5초만큼 연장되며, 대혼란의 대상이 받는 피해를 10%만큼 추가로 증가시킵니다.",
+      "description": "대혼란 지속 시간을 5초 늘리고 복제 피해 비율을 10%p 높인다. 직접 대혼란의 기본 15초·50%는 이 특성만 적용하면 20초·60%가 된다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115098,12 +116181,14 @@
         "relatedTalents": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/격동"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/나스레자의-암울"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -115276,18 +116361,18 @@
       ],
       "name": "혼돈의 불지옥",
       "koreanName": "혼돈의 불지옥",
-      "englishName": "",
+      "englishName": "Chaotic Inferno",
       "icon": "spell_fire_burnout",
       "iconName": "spell_fire_burnout",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "혼돈의 불지옥은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 혼돈의 불지옥 특성 흑마법사 필요 혼돈의 화살의 공격력이 5%만큼 증가하고, 혼돈의 화살 시전 시 25%의 확률로 다음 소각이 즉시 시전됩니다.",
+      "description": "혼돈의 화살 피해를 5% 늘리고, 사용 시 25% 확률로 다음 소각을 즉시 시전하게 한다. 실제 발동 효과는 1244860이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115307,13 +116392,66 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.036,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\혼돈의-불지옥.md",
+        "lastUpdate": ""
+      }
+    },
+    "1244860": {
+      "id": "1244860",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "혼돈의 불지옥",
+      "koreanName": "혼돈의 불지옥",
+      "englishName": "Chaotic Inferno",
+      "icon": "spell_fire_burnout",
+      "iconName": "spell_fire_burnout",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "혼돈의 불지옥에서 발생한 다음 소각 즉시 시전 효과다. 기본 보유 시간은 30초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_burnout.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_burnout.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_burnout.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-불지옥"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\혼돈의-불지옥-1244860.md",
         "lastUpdate": ""
       }
     },
@@ -115327,18 +116465,18 @@
       ],
       "name": "불의 호수",
       "koreanName": "불의 호수",
-      "englishName": "",
+      "englishName": "Lake of Fire",
       "icon": "spell_fire_ragnaros_molteninferno",
       "iconName": "spell_fire_ragnaros_molteninferno",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "불의 호수은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 불의 호수 특성 흑마법사 필요 대재앙 시전 시 불의 호수를 남겨 안에 있는 적에게 10초에 걸쳐 [(주문력의 60%) * 10]의 화염 피해를 입힙니다. 제물 시전 시 불의 호수 안에 있는 적에게 20%의 추가 피해를 입힙니다.",
+      "description": "대재앙이 10초짜리 추가 화염 장판을 남기며, 장판 안의 적에게 제물 피해가 20% 증가한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115355,12 +116493,14 @@
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/제물"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/쇠퇴"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.028,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -115426,18 +116566,18 @@
       ],
       "name": "파괴적인 신속함",
       "koreanName": "파괴적인 신속함",
-      "englishName": "",
+      "englishName": "Destructive Rapidity",
       "icon": "spell_shadow_rainoffire",
       "iconName": "spell_shadow_rainoffire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파괴적인 신속함은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파괴적인 신속함 특성 흑마법사 필요 불의 비가 피해를 입히는 속도가 25%만큼, 지옥불정령의 제물이 피해를 입히는 속도가 10%만큼 증가합니다.",
+      "description": "불의 비가 피해를 주는 속도를 25%, 지옥불정령의 제물 오라가 피해를 주는 속도를 10% 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115457,9 +116597,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.031,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -115477,18 +116617,18 @@
       ],
       "name": "알리테스의 노여움",
       "koreanName": "알리테스의 노여움",
-      "englishName": "",
+      "englishName": "Alythess's Ire",
       "icon": "ability_ironmaidens_rapidfire",
       "iconName": "ability_ironmaidens_rapidfire",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "알리테스의 노여움은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 알리테스의 노여움 특성 흑마법사 필요 불의 비 시전 시 20%의 확률로 다음 8초 안에 시전하는 불의 비의 자원 소모량이 100%만큼 감소합니다.",
+      "description": "불의 비 사용 시 20% 확률로 다음 불의 비를 8초 안에 무료로 사용할 수 있게 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115509,11 +116649,64 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.016,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\알리테스의-노여움.md",
+        "lastUpdate": ""
+      }
+    },
+    "1244947": {
+      "id": "1244947",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "알리테스의 노여움",
+      "koreanName": "알리테스의 노여움",
+      "englishName": "Alythess's Ire",
+      "icon": "ability_ironmaidens_rapidfire",
+      "iconName": "ability_ironmaidens_rapidfire",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "알리테스의 노여움이 발동한 뒤 다음 불의 비 비용을 없애는 8초 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_rapidfire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_rapidfire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_rapidfire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_rapidfire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_rapidfire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비-1214467"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/알리테스의-노여움"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\알리테스의-노여움-1244947.md",
         "lastUpdate": ""
       }
     },
@@ -115527,18 +116720,18 @@
       ],
       "name": "파괴의 화신",
       "koreanName": "파괴의 화신",
-      "englishName": "",
+      "englishName": "Avatar of Destruction",
       "icon": "inv12_ability_warlock_overfiend",
       "iconName": "inv12_ability_warlock_overfiend",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "파괴의 화신은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 파괴의 화신 특성 흑마법사 필요 영혼의 불꽃을 시전하면 거대마귀를 소환합니다. 차원의 균열을 열면 일정 확률로 거대마귀를 소환합니다. 거대마귀 소환 1초마다 영혼의 조각 파편 1개를 생성하고 소환사의 대상에게 80%의 효율로 혼돈의 화살을 시전합니다. 8초 동안 지속됩니다.",
+      "description": "영혼의 불꽃을 쓰면 거대마귀를 자동 소환하고, 차원의 균열이 열릴 때는 확률적으로 균열 대신 거대마귀가 나온다. 거대마귀는 8초 동안 매초 파편 1개를 주며 소환자의 대상에게 80% 효과의 혼돈의 화살을 사용한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115552,15 +116745,16 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/차원의-균열"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/차원의-균열",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.032,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -115838,18 +117032,18 @@
       ],
       "name": "마귀의 잔혹성",
       "koreanName": "마귀의 잔혹성",
-      "englishName": "",
+      "englishName": "Fiendish Cruelty",
       "icon": "spell_fire_soulburn",
       "iconName": "spell_fire_soulburn",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "마귀의 잔혹성은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 마귀의 잔혹성 특성 흑마법사 필요 혼돈의 화살, 점화 또는 소각이 치명타 및 극대화 효과를 발휘하면 10%의 확률로 30초 안에 시전하는 다음 어둠의 연소가 영혼의 조각을 소모하지 않으며 대상의 생명력에 관계없이 사용할 수 있게 됩니다.",
+      "description": "혼돈의 화살·점화·소각의 치명타가 10% 확률로 다음 어둠의 연소를 30초 동안 무료이며 생명력 제한 없이 사용할 수 있게 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115867,17 +117061,72 @@
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 4,
-        "linkDensity": 0.05,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.076,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\마귀의-잔혹성.md",
+        "lastUpdate": ""
+      }
+    },
+    "1245664": {
+      "id": "1245664",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "마귀의 잔혹성",
+      "koreanName": "마귀의 잔혹성",
+      "englishName": "Fiendish Cruelty",
+      "icon": "spell_fire_soulburn",
+      "iconName": "spell_fire_soulburn",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "다음 어둠의 연소의 조각 비용과 대상 생명력 제한을 없애는 실제 30초 효과다. 마귀의 잔혹성 특성에서 발생한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_soulburn.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_soulburn.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_soulburn.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/마귀의-잔혹성",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/혼돈의-거대한-불길-387108"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\마귀의-잔혹성-1245664.md",
         "lastUpdate": ""
       }
     },
@@ -131375,18 +132624,18 @@
       ],
       "name": "니힐람의 불씨",
       "koreanName": "니힐람의 불씨",
-      "englishName": "",
+      "englishName": "Embers of Nihilam",
       "icon": "inv12_apextalent_warlock_embersofnihilam",
       "iconName": "inv12_apextalent_warlock_embersofnihilam",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "니힐람의 불씨은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 니힐람의 불씨 특성 흑마법사 필요 소각 시전 시 일정 확률로 암흑 티탄의 힘이 남긴 메아리를 일깨웁니다. 살게라스의 메아리 대상에게 니힐람의 불씨를 던져 (주문력의 187.5%)의 암흑불길 피해를 입히고 추가로 10미터 내의 모든 적에게 (주문력의 162.5%)의 암흑불길 피해를 입힙니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
+      "description": "니힐람의 불씨 첫 노드는 소각 시 10% 확률로 살게라스의 메아리를 자동 발동한다. 메아리는 주 대상과 주변 10미터를 공격하며 8대상을 넘으면 광역 피해가 감소한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131401,13 +132650,17 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-2pc-1296571",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265772",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.02,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -131425,18 +132678,18 @@
       ],
       "name": "니힐람의 불씨",
       "koreanName": "니힐람의 불씨",
-      "englishName": "",
+      "englishName": "Embers of Nihilam",
       "icon": "inv12_apextalent_warlock_embersofnihilam",
       "iconName": "inv12_apextalent_warlock_embersofnihilam",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "니힐람의 불씨은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 니힐람의 불씨 특성 흑마법사 필요 암흑 티탄의 힘을 일깨우면 티탄의 파괴에 대한 환영이 심상을 스치며 6초 동안 치명타 및 극대화가 4%만큼, 가속은 4%만큼 증가합니다.",
+      "description": "니힐람의 불씨 중간 노드는 메아리 발동 시 6초 동안 치명타와 가속을 각각 등급당 4%, 2등급이면 8% 높인다. 실제 효과 이름은 니힐람의 환영이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131449,13 +132702,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -131473,18 +132729,18 @@
       ],
       "name": "니힐람의 불씨",
       "koreanName": "니힐람의 불씨",
-      "englishName": "",
+      "englishName": "Embers of Nihilam",
       "icon": "inv12_apextalent_warlock_embersofnihilam",
       "iconName": "inv12_apextalent_warlock_embersofnihilam",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "니힐람의 불씨은 파괴 전문화 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 니힐람의 불씨 특성 흑마법사 필요 혼돈의 화살, 어둠의 연소 또는 불의 비를 시전하면 각각 50%, 50% 또는 60%의 효율로 암흑 티탄의 힘이 남긴 메아리를 일깨웁니다. 대상이 없으면 시전자의 제물 에 걸린 무작위 대상이 선택됩니다. (500밀리초 재사용 대기시간)",
+      "description": "니힐람의 불씨 마지막 노드는 혼돈의 화살·어둠의 연소·불의 비 사용으로 메아리를 자동 발생시킨다. 현재 툴팁의 효과 비율은 각각 50%·50%·60%이며 내부 대기시간은 0.5초다. 대상이 없으면 자신의 제물에 걸린 무작위 대상을 찾는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131498,15 +132754,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265772"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.027,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -132008,6 +133267,107 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Skills\\하늘빛휩쓸기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265884": {
+      "id": "1265884",
+      "type": "proc",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "살게라스의 메아리",
+      "koreanName": "살게라스의 메아리",
+      "englishName": "Echo of Sargeras",
+      "icon": "inv_shadowflame_missile",
+      "iconName": "inv_shadowflame_missile",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "니힐람의 불씨로 자동 발생하는 살게라스의 메아리 피해 주문이다. 주 대상과 주변 10미터를 공격하고 8대상 초과 시 광역 피해가 감소한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_shadowflame_missile.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_shadowflame_missile.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_shadowflame_missile.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_shadowflame_missile.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_shadowflame_missile.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265774"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Procs\\살게라스의-메아리-1265884.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265939": {
+      "id": "1265939",
+      "type": "buff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "니힐람의 환영",
+      "koreanName": "니힐람의 환영",
+      "englishName": "Vision of Nihilam",
+      "icon": "spell_fire_elementaldevastation",
+      "iconName": "spell_fire_elementaldevastation",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "니힐람의 불씨 중간 노드로 메아리 발동 시 얻는 6초 치명타·가속 효과다. 각각 1등급 4%, 2등급 8%가 적용된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_elementaldevastation.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_elementaldevastation.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_elementaldevastation.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨-1265772"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\니힐람의-환영-1265939.md",
         "lastUpdate": ""
       }
     },
@@ -141703,6 +143063,60 @@
         "lastUpdate": ""
       }
     },
+    "1280483": {
+      "id": "1280483",
+      "type": "spec-talent",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "불지옥",
+      "koreanName": "불지옥",
+      "englishName": "Inferno",
+      "icon": "warlock_pvp_burninglegion",
+      "iconName": "warlock_pvp_burninglegion",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "지옥불정령 소환의 재사용 대기시간을 30초 줄이고 특화를 3% 높인다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warlock_pvp_burninglegion.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warlock_pvp_burninglegion.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warlock_pvp_burninglegion.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warlock_pvp_burninglegion.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warlock_pvp_burninglegion.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/지옥불정령-소환",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/특화-혼돈-마력"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/적개심",
+          "08-직업별-Knowledge-Base/12-흑마법사/공용/Hero-Talents/심연의-지배"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.074,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\불지옥-1280483.md",
+        "lastUpdate": ""
+      }
+    },
     "1280733": {
       "id": "1280733",
       "type": "spec-talent",
@@ -141860,7 +143274,7 @@
     },
     "1280868": {
       "id": "1280868",
-      "type": "skill",
+      "type": "spec-talent",
       "class": "Warlock",
       "spec": "Destruction",
       "specs": [
@@ -141868,18 +143282,18 @@
       ],
       "name": "차원의 균열",
       "koreanName": "차원의 균열",
-      "englishName": "",
+      "englishName": "Dimensional Rift",
       "icon": "inv_artifact_dimensionalrift",
       "iconName": "inv_artifact_dimensionalrift",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "별도 사용 없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "파괴 흑마법사는 제물 유지, 조각 파편 관리, 혼돈의 화살과 불의 비 소비 구간을 중심으로 피해를 만든다. 차원의 균열은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 차원의 균열 특성 흑마법사 필요 혼돈의 화살 및 어둠의 연소 시전 시 10%의 확률로 시공간의 흐름에 구멍을 내, 대상에게 피해를 입히는 차원문을 무작위로 엽니다. 어둠의 균열 14초에 걸쳐 [(주문력의 105.487%) * 7]의 암흑 피해를 입힙니다. 불안정한 균열 6초에 걸쳐 [(주문력의 26.3718%) * 24]의",
-      "category": "ability",
+      "description": "혼돈의 화살 또는 어둠의 연소가 10% 확률로 무작위 균열을 열게 하는 현재의 지속 특성이다. 균열은 종류에 따라 반복 피해 또는 혼돈의 화살을 주고, 공식 설명상 조각 파편 총 10개를 생성한다.",
+      "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141893,15 +143307,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
-          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/영혼의-불꽃"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/파괴의-화신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.022,
+        "synergyCount": 4,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -142592,6 +144009,109 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296571": {
+      "id": "1296571",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "Warlock Destruction 12.1 Class Set 2pc",
+      "koreanName": "Warlock Destruction 12.1 Class Set 2pc",
+      "englishName": "Warlock Destruction 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "파괴 12.1 시즌 2의 2세트다. 소각 피해를 25% 늘리고 소각의 살게라스의 메아리 발동 확률을 10%p 높인다. 첫 니힐람의 불씨를 갖춘 기본 10%는 20%가 된다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/소각"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/니힐람의-불씨",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-4pc-1296572"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\Warlock-Destruction-12.1-Class-Set-2pc-1296571.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296572": {
+      "id": "1296572",
+      "type": "passive",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "Warlock Destruction 12.1 Class Set 4pc",
+      "koreanName": "Warlock Destruction 12.1 Class Set 4pc",
+      "englishName": "Warlock Destruction 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "파괴 12.1 시즌 2의 4세트다. 살게라스의 메아리에 맞은 대상이 6초 동안 자신의 주문과 능력으로 받는 피해가 6% 증가한다. 실제 대상 효과는 암흑 티탄의 징표다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-2pc-1296571"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.037,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Talents\\Warlock-Destruction-12.1-Class-Set-4pc-1296572.md",
         "lastUpdate": ""
       }
     },
@@ -145629,6 +147149,59 @@
         "lastUpdate": ""
       }
     },
+    "1305711": {
+      "id": "1305711",
+      "type": "debuff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "암흑 티탄의 징표",
+      "koreanName": "암흑 티탄의 징표",
+      "englishName": "Dark Titan's Mark",
+      "icon": "inv12_apextalent_warlock_embersofnihilam",
+      "iconName": "inv12_apextalent_warlock_embersofnihilam",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "시즌 2 4세트의 메아리 적중으로 대상에게 적용되는 6초 약화 효과다. 해당 흑마법사의 주문과 능력으로 받는 피해가 6% 증가한다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_embersofnihilam.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_warlock_embersofnihilam.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_warlock_embersofnihilam.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_warlock_embersofnihilam.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_warlock_embersofnihilam.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/혼돈의-화살",
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/불의-비"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Talents/Warlock-Destruction-12.1-Class-Set-4pc-1296572"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\암흑-티탄의-징표-1305711.md",
+        "lastUpdate": ""
+      }
+    },
     "1305774": {
       "id": "1305774",
       "type": "buff",
@@ -145889,6 +147462,56 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Buffs\\피로치를빚.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "1311913": {
+      "id": "1311913",
+      "type": "debuff",
+      "class": "Warlock",
+      "spec": "Destruction",
+      "specs": [
+        "Destruction"
+      ],
+      "name": "어둠의 연소",
+      "koreanName": "어둠의 연소",
+      "englishName": "Shadowburn",
+      "icon": "spell_shadow_scourgebuild",
+      "iconName": "spell_shadow_scourgebuild",
+      "school": "",
+      "cooldown": "",
+      "castTime": "자동 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "어둠의 연소가 적용하는 실제 5초 처치 환급 효과다. 효과가 남아 있는 동안 해당 대상이 유효한 처치 조건을 만족하며 죽으면 영혼의 조각 1개를 돌려받는다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_scourgebuild.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_scourgebuild.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_scourgebuild.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_scourgebuild.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_scourgebuild.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/12-흑마법사/파괴/Skills/어둠의-연소"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Buffs\\어둠의-연소-1311913.md",
+        "lastUpdate": ""
       }
     },
     "1311963": {

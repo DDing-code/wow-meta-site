@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 27 manuscripts labeled 12.1 and 13 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 28 manuscripts labeled 12.1 and 12 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -202,11 +202,23 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Full prebuild and sanitized production build passed. `node scripts/verify-demonology-guide.cjs` passed all 18 hero/mode/viewport combinations at 1440px, 390px and 320px, including keyboard disclosure, 16px opener icons, real spell links, twelve center relationships and no horizontal overflow. The browser test distinguishes action labels from explanatory mentions of alternative talents.
 - Limits: current WCL/Archon aggregates, personal simulations and private Discord messages were not obtained. Dense graph labels still overlap; 41 global KB link warnings, mixed-patch metadata and the 1.59 MB gzip bundle remain. Canonical Markdown/JSON remains outside the site Git repository; the commit contains the generated DB and site content, not a remote vault backup.
 
+## Destruction Warlock: updated 2026-09-21
+
+- Replaced the old manuscript in place with 15 manually authored subjects, ten practical tips and separate Hellcaller/Diabolist opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/12-흑마법사/파괴/Meta/guide-12.1.json`.
+- Compared Blizzard 12.1 and September hotfixes, Loozy's Wowhead, Motoko's actual Icy Veins hero/content/rotation selections, Omnithic's Method, current Korean/English tooltips and fixed SimC commit `91eb5c1ea2bba740438e8aa90abf33bdf3474367`. The current 3-target Diabolist and 4-target Hellcaller Rain of Fire starting points are conditional model/guide advice after the August 25 buff, not measured log thresholds.
+- Reviewed all 66 local atomic records, including 22 additions; added five common records and amended eleven existing common notes. Both generated DB diffs are confined to Warlock: 82 changed spell records including 27 additions, and 18 authored local relationships including twelve additions. Usage-only Markdown changes are not all exported by the existing builder.
+- Corrected 50% baseline Havoc, guaranteed Conflagration of Chaos crits, passive Dimensional Rift, Soul Fire/Rift choice, Shadowburn execute/free conditions, three apex nodes, Season 2 effects and shared Crashing Chaos charges. Buffs, pet attacks and automatic effects are not player-cast flow steps. Preserved Demonology/Affliction specialization-specific common behavior.
+- Cross-check caught and corrected Ruination's summon being confused with Avatar's Overfiend: both live tooltips and the fixed implementation specify a Diabolic Imp. Separate aliases distinguish the crit passive Ruination from the hero cast and the Overfiend's Chaos Bolt from the player's cast. Regression assertions preserve these identities.
+- Authored eighteen numeric-ID relationships; Chaos Bolt has twelve actual direct relationships and is the center. Removed the old fabricated resource/uptime chart and June usage claims. Historical Ragereaver reports were not rewritten.
+- Online strict name/icon/metadata/link checks passed for 66 local and 113 common notes; explicit guide icon/name checks passed for 22 IDs. Unedited common records received metadata validation, not a fresh full mechanics review. Full prebuild, canonical equality and scoped gameplay assertions passed.
+- Sanitized production build succeeded as `main.5e2633e0.js`; credential and forbidden-file output scans passed. `node scripts/verify-destruction-guide.cjs` passed all eighteen hero/mode/viewport combinations locally and again on https://wowmeta.vercel.app at 1440px, 390px and 320px, including keyboard disclosure, 16px opener icons, correctly scoped real casts, inline aliases, graph center and no horizontal overflow. Desktop/mobile screenshots were inspected. Production deployment `dpl_FqnHcKscvvpREiBz7AmF9nLDuae7` is Ready and the public route returns HTTP 200 with the expected bundle.
+- Limits: current WCL/Archon aggregates, personal simulations and private Discord messages were not obtained; failed raid/M+ source access is labeled explicitly. Dense graph labels still overlap. There are 28 global KB link warnings, mixed-patch metadata and a 1.61 MB gzip bundle. Canonical KB remains outside the site repository; generated data and site content are committed, not a remote vault backup.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 13 manuscripts
+## Still 12.0.5: 12 manuscripts
 
 | Class | Specializations |
 | --- | --- |
@@ -214,13 +226,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 | Priest | Discipline, Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
-| Warlock | Destruction |
 | Warrior | Protection, Arms, Fury |
 
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 13 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 12 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.
