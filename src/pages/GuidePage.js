@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowUpRight } from 'lucide-react';
 import { guideManuscripts } from '../data/guideManuscripts.js';
-import { guideSpecIcons } from '../data/guideSpecIcons.js';
+import SpecializationIcon from '../components/SpecializationIcon.js';
 import {
   CURRENT_PATCH_LABEL,
   guideRoles,
@@ -191,21 +191,6 @@ const SpecName = styled.h3`
   word-break: keep-all;
 `;
 
-const SpecIcon = styled.span`
-  display: block;
-  flex: 0 0 32px;
-  width: 32px;
-  height: 32px;
-  background-color: #ffffff;
-  mask-image: url('/assets/spec-icons-white-v1.png');
-  mask-mode: luminance;
-  mask-size: ${1586 / 176 * 100}% ${992 / 176 * 100}%;
-  mask-position: var(--spec-icon-position);
-  mask-repeat: no-repeat;
-  opacity: 0.58;
-  transition: opacity 160ms ease;
-`;
-
 const OpenIcon = styled.span`
   flex: 0 0 auto;
   display: grid;
@@ -293,7 +278,7 @@ function GuidePage() {
               <SpecCard key={item.id} to={item.path} $color={item.color} $tone={`${item.color}18`}>
                 <SpecTop>
                   <SpecName>
-                    <SpecIcon aria-hidden="true" data-spec-icon={item.id} style={{ '--spec-icon-position': guideSpecIcons[item.id] }} />
+                    <SpecializationIcon $specId={item.id} />
                     {item.spec}
                   </SpecName>
                   <OpenIcon aria-hidden="true">

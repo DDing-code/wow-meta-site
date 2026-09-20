@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import SpecializationIcon from '../components/SpecializationIcon.js';
 import {
   Activity,
   ArrowLeft,
@@ -2520,7 +2521,10 @@ function GuideDetailPage() {
         <HeroGrid>
           <div>
             <HeroEyebrow>{guide.className} · {profile.label}</HeroEyebrow>
-            <HeroTitle>{guide.spec} {guide.className} 가이드</HeroTitle>
+            <HeroTitle>
+              <SpecializationIcon $specId={guide.id} />
+              <span>{guide.spec} {guide.className} 가이드</span>
+            </HeroTitle>
             <HeroLead>
               {renderGuideText(
                 manuscript?.playstyle?.[0]?.text || manuscript?.summary || `${guide.focus} ${profile.lead}`,
@@ -4959,6 +4963,10 @@ const HeroEyebrow = styled.div`
 `;
 
 const HeroTitle = styled.h1`
+  --spec-icon-size: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-top: 8px;
   color: #f2f4f5;
   font-size: clamp(2rem, 4vw, 3.35rem);
@@ -4966,6 +4974,14 @@ const HeroTitle = styled.h1`
   letter-spacing: 0;
   word-break: keep-all;
   text-wrap: balance;
+
+  > span:last-child {
+    min-width: 0;
+  }
+
+  @media (max-width: 560px) {
+    --spec-icon-size: 36px;
+  }
 `;
 
 const HeroLead = styled.p`

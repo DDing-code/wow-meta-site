@@ -91,7 +91,27 @@ const { chromium } = require('playwright');
       await page.waitForURL('**/guide/monk/windwalker');
       await page.getByRole('heading', { name: '풍운 수도사 가이드', exact: true }).waitFor();
       await page.waitForFunction(() => window.scrollY === 0);
-      console.log(`${width}px: class rows, 40 icons/links, filters, text bounds and keyboard navigation passed`);
+      for (const [route, id] of [
+        ['/guide/monk/windwalker', 'monk-windwalker'],
+        ['/guide/demonhunter/devourer', 'demonhunter-devourer'],
+        ['/guide/deathknight/blood', 'deathknight-blood'],
+      ]) {
+        await page.goto(`${origin}${route}`, { waitUntil: 'networkidle' });
+        const heading = page.locator('h1');
+        const icon = heading.locator('[data-spec-icon]');
+        assert.equal(await icon.getAttribute('data-spec-icon'), id);
+        assert.equal(await icon.getAttribute('aria-hidden'), 'true');
+        const boxes = await heading.evaluate(element => {
+          const icon = element.querySelector('[data-spec-icon]').getBoundingClientRect();
+          const text = element.lastElementChild.getBoundingClientRect();
+          const lead = element.nextElementSibling.getBoundingClientRect();
+          return { size: icon.width, separated: icon.right < text.left, fits: text.right <= window.innerWidth && text.bottom <= lead.top };
+        });
+        assert.equal(boxes.size, width <= 560 ? 36 : 48);
+        assert(boxes.separated && boxes.fits, `${width}: ${id} title overlap`);
+        await page.screenshot({ path: path.join(output, `${width}-${id}-title.png`) });
+      }
+      console.log(`${width}px: index, icons, filters, navigation and responsive guide titles passed`);
       await page.close();
     }
     assert.deepEqual(errors, []);

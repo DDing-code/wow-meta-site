@@ -8,7 +8,8 @@ icons. KB spell IDs, official artwork and Wowhead tooltips are unchanged.
 - Mapping: `src/data/guideSpecIcons.js`, 40 optical centers, 176px square views.
 - Rendering: CSS luminance mask. Black source pixels become transparent;
   white glyphs render at 58% opacity, 86% on hover or keyboard focus.
-- Layout: 32px fixed boxes. No extra rows or horizontal scrolling.
+- Layout: 32px fixed boxes in the index, 48px beside guide titles (36px on
+  mobile). Shared rendering lives in `src/components/SpecializationIcon.js`.
 
 ## Final edit prompt
 
