@@ -455,6 +455,7 @@ function main() {
   const modePreview = guideDetailSource.slice(guideDetailSource.indexOf('function GuideRotationModes('), guideDetailSource.indexOf('function NarrativeGuideSection('));
   assert(modePreview.includes("['opener', '오프닝']") && modePreview.includes("['singleTarget', '단일']") && modePreview.includes("['aoe', '광역']"), 'Authored combat modes must offer opener, single target and AoE');
   assert(modePreview.includes('aria-pressed={mode === id}') && modePreview.includes('manualPriority={current.priority}'), 'Mode selection must expose its state and render conditional priorities, not duplicate the opener');
+  assert(modePreview.includes('branch[id]?.tabLabel || label'), 'Authored healer situation labels must retain the existing mode-label fallback');
   assert(guideDetailSource.includes('hasOpenerGuide && !hasRotationModes') && guideDetailSource.includes('priorityChart && !hasRotationModes'), 'Authored combat modes must not also show duplicate generic opener and priority charts');
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const skillIds = availableSkillIds(skills, manuscripts);
@@ -472,10 +473,13 @@ function main() {
   assert(getBodyBlocks(undefined, isMetaChartBlock).length === 0, 'Missing manuscript must produce an empty body');
   assert(guideDetailSource.includes('const guideNavBlocks = getGuideBodyBlocks(manuscript);'), 'Navigation and body must use the same section selection');
   const uptimeBody = extractFunctionBody(guideDetailSource, 'getUptimeRows');
-  const disciplinePriestUptimeBody = extractFunctionBody(guideDetailSource, 'getDisciplinePriestUptimeRows');
   const planBranches = extractObjectEntries(specialistChartBody, 'SPECIALIST_CHARTS');
   const uptimeBranches = extractGuideBranches(uptimeBody);
   const planBranchMap = new Map(planBranches.map(branch => [branch.id, branch]));
+  const disciplineChart = new Function(`return {${planBranchMap.get('priest-discipline')?.body || ''}}`)();
+  assert(disciplineChart.events?.length === 8 && disciplineChart.events.every(event => skillIds.has(event.skillId) && event.phase && event.action), 'Discipline must retain eight authored healing situations');
+  assert(!guideDetailSource.includes('getDisciplinePriestUptimeRows'), 'Discipline must not restore invented uptime segments');
+  assert(disciplineChart.events.some(event => event.skillId === '62618' && event.note.includes('대신')), 'Discipline must identify Barrier as an alternative to Ultimate Penitence');
   const brewmasterChart = new Function(`return {${planBranchMap.get('monk-brewmaster')?.body || ''}}`)();
   assert(brewmasterChart.events?.length === 8 && brewmasterChart.events.every(event => skillIds.has(event.skillId)), 'Brewmaster must retain eight authored defensive situations');
   assert(brewmasterChart.events.filter(event => event.skillId === '119582').length === 2 && JSON.stringify(brewmasterChart).includes('초록'), 'Brewmaster must distinguish damage purification from charge-cap prevention');
@@ -591,9 +595,7 @@ function main() {
 
     const guide = guideRecordMap.get(guideId);
     const scopedSkills = guide ? scopedSkillsForGuide(skills, guide) : [];
-    const lookupBody = guideId === 'priest-discipline'
-      ? `${branch.body}\n${disciplinePriestUptimeBody}`
-      : branch.body;
+    const lookupBody = branch.body;
 
     for (const names of parseFindSkillNameGroups(lookupBody)) {
       assert(

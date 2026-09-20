@@ -244,7 +244,8 @@ export const guideSpecsByRole = {
     }),
     spec('priest-discipline', 'priest', '수양', '수양', 'healers', '/guide/priest/discipline', {
       kbSpecAliases: ['Discipline'],
-      focus: '속죄 사전 작업과 피해형 회복 구간을 계획적으로 배치합니다.',
+      status: '12.1 실전 심화 공략',
+      focus: '속죄 준비, 회개·정신 분열·공허의 보호막 연결과 공허술사·예언자의 상황별 치유를 정리합니다.',
     }),
     spec('priest-holy', 'priest', '신성', '신성', 'healers', '/guide/priest/holy', {
       kbSpecAliases: ['Holy'],

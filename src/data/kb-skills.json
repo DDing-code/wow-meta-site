@@ -1,28 +1,28 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T21:00:06.142Z",
+    "generatedAt": "2026-09-20T22:18:06.480Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2932,
-    "rawTotalSkills": 2932,
+    "totalSkills": 2955,
+    "rawTotalSkills": 2955,
     "duplicateIds": [],
-    "totalSynergies": 553,
+    "totalSynergies": 565,
     "stats": {
-      "total": 2932,
+      "total": 2955,
       "byType": {
-        "buff": 123,
-        "hero-talent": 559,
-        "atomic-skill": 547,
-        "proc": 28,
+        "buff": 130,
+        "hero-talent": 557,
+        "atomic-skill": 551,
+        "proc": 29,
         "skill": 131,
-        "talent": 992,
+        "talent": 995,
         "spec-talent": 392,
-        "passive": 54,
+        "passive": 57,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
-        "class-talent": 85,
+        "class-talent": 92,
         "debuff": 6,
         "removed-talent": 1,
         "atomic-buff": 1,
@@ -38,7 +38,7 @@
         "Mage": 229,
         "Monk": 274,
         "Paladin": 250,
-        "Priest": 221,
+        "Priest": 244,
         "Rogue": 286,
         "Shaman": 273,
         "Warlock": 296,
@@ -78,8 +78,8 @@
         "Paladin-Protection": 65,
         "Paladin-신성": 44,
         "Paladin-Retribution": 69,
-        "Priest-공용": 74,
-        "Priest-수양": 48,
+        "Priest-공용": 83,
+        "Priest-Discipline": 62,
         "Priest-신성": 46,
         "Priest-암흑": 53,
         "Rogue-공용": 128,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2857,
-        "withSynergies": 1691,
+        "withWikilinks": 2880,
+        "withSynergies": 1796,
         "avgLinkDensity": "0.040"
       }
     }
@@ -113,7 +113,7 @@
       "id": "17",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -123,14 +123,14 @@
       "icon": "spell_holy_powerwordshield",
       "iconName": "spell_holy_powerwordshield",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "7.5초 · 가속/특성별 보정",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "# 신의 권능: 보호막 (Power Word: Shield)",
+      "description": "아군에게 15초 동안 피해 흡수 보호막을 부여하며 수양에서는 속죄도 적용한다. 기본 재사용 대기시간은 7.5초이며 영웅 특성과 가속의 영향을 별도로 본다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142,14 +142,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/번영과역경"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.055,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -897,14 +901,14 @@
       "icon": "spell_holy_mindsooth",
       "iconName": "spell_holy_mindsooth",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "5초",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 1%",
       "range": "40야드",
-      "description": "# 정신의 위안 (Mind Soothe)",
+      "description": "인간형과 용족의 적 인식 범위를 20초 동안 10미터 줄인다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -916,14 +920,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_mindsooth.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -1049,12 +1055,12 @@
       "school": "",
       "cooldown": "8초",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 1.3%",
       "range": "40야드",
-      "description": "# 정화 (Purify)",
+      "description": "아군에게 걸린 해로운 마법 효과를 제거하는 해제 기술이다. 정화 연마를 선택하면 질병도 제거한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1069,13 +1075,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/공용/Skills/대규모무효화"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/정화연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 1,
-        "linkDensity": 0.096,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -1101,12 +1109,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 14% · 특성별 보정",
       "range": "30야드",
-      "description": "# 마법 무효화 (Dispel Magic)",
+      "description": "적에게 걸린 이로운 마법 효과 하나를 제거한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1118,14 +1126,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_nullifydisease.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.067,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -1149,13 +1159,13 @@
       "iconName": "spell_holy_holysmite",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "castTime": "1.5초",
+      "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "# 성스러운 일격 (Smite)",
+      "description": "적에게 신성 피해를 입히는 기본 시전 공격이다. 수양에서는 속죄 치유와 성역, 신의 행렬에 연결되며 공허술사의 균열 중에는 공허의 폭발로 바뀐다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1168,17 +1178,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/빛의쇄도"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/상급성스러운일격"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.078,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -1202,14 +1213,14 @@
       "icon": "spell_magic_lesserinvisibilty",
       "iconName": "spell_magic_lesserinvisibilty",
       "school": "",
-      "cooldown": "30초",
+      "cooldown": "30초 · 특성별 보정",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 소실 (Fade)",
+      "range": "자신",
+      "description": "10초 동안 위협 수준을 없애고 적 감지 범위를 줄인다. 기본 재사용 대기시간은 30초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1222,13 +1233,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/반투명형상"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.095,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -1253,12 +1266,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "# 어둠의 권능: 고통 (Shadow Word: Pain)",
+      "description": "대상에게 즉시 암흑 피해와 기본 16초 지속 피해를 부여한다. 암흑은 광기도 생성하지만 수양은 마나 기반 지속 피해/속죄 연계로 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1271,21 +1284,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Talents/사악의정화",
-          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/잠식하는어둠",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/사악의정화"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 6,
-        "linkDensity": 0.058,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -3112,12 +3123,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 공중 부양 (Levitate)",
+      "resourceCost": "기본 마나 0.9%",
+      "range": "30야드",
+      "description": "파티원 또는 공격대원에게 10분 동안 느린 낙하와 수면 보행을 제공한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3129,14 +3140,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_layonhands.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -4011,8 +4024,9 @@
       "class": "Priest",
       "spec": "공용",
       "specs": [
+        "Discipline",
         "Holy",
-        "Discipline"
+        "Shadow"
       ],
       "name": "순간 치유",
       "koreanName": "순간 치유",
@@ -4021,13 +4035,13 @@
       "iconName": "spell_holy_flashheal",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "castTime": "1.5초 · 발동으로 즉시",
+      "resourceCost": "마나 · 전문화/발동별 보정",
       "range": "40야드",
-      "description": "# 순간 치유 (Flash Heal)",
+      "description": "아군을 빠르게 직접 치유하는 1.5초 시전 주문이다. 수양에서는 속죄를 적용하며 어둠의 치유 특성을 선택하면 다른 주문으로 바뀐다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4040,23 +4054,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/간청"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛술사"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유",
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/빛의쇄도-특성"
         ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/빛의쇄도"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 13,
-        "synergyCount": 6,
-        "linkDensity": 0.07,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -6334,14 +6343,14 @@
       "icon": "spell_shadow_unholyfrenzy",
       "iconName": "spell_shadow_unholyfrenzy",
       "school": "",
-      "cooldown": "짧은 쿨다운",
-      "castTime": "시전",
-      "resourceCost": "없음",
+      "cooldown": "기본 9초 · 전문화/특성/세트별 보정",
+      "castTime": "1.5초 · 특성별 보정",
+      "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "# 정신 분열 (Mind Blast)",
+      "description": "적에게 암흑 피해를 입히는 실제 시전 기술이다. 수양은 마지막 어둠 지배 선택 시 공허의 보호막 사용권을 확정 얻고, 공허술사는 혼돈의 균열도 연다. 암흑은 광기를 생성한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6353,23 +6362,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unholyfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의통찰",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의생각",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-4세트"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 18,
-        "synergyCount": 7,
-        "linkDensity": 0.118,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -6393,14 +6399,14 @@
       "icon": "spell_shadow_psychicscream",
       "iconName": "spell_shadow_psychicscream",
       "school": "",
-      "cooldown": "1분",
+      "cooldown": "40초 · 특성별 보정",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 영혼의 절규 (Psychic Scream)",
+      "resourceCost": "기본 마나 1.2%",
+      "range": "자신 주변 8미터",
+      "description": "자신 주변 8미터 적들을 8초 동안 달아나게 한다. 피해를 받으면 효과가 풀릴 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6412,14 +6418,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_psychicscream.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.064,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -6709,10 +6717,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 마력 주입 (Power Infusion)",
+      "description": "플레이어의 가속을 15초 동안 20% 높이는 2분 쿨다운 기술이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6725,13 +6733,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/태양여사제의쌍둥이"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 0,
-        "linkDensity": 0.098,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -7967,14 +7977,14 @@
       "icon": "spell_holy_testoffaith",
       "iconName": "spell_holy_testoffaith",
       "school": "",
-      "cooldown": "1.5분",
+      "cooldown": "90초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 구원의 기도 (Desperate Prayer)",
+      "range": "자신",
+      "description": "최대 생명력을 기본 25% 늘리고 증가한 양을 즉시 회복한다. 기본 지속시간은 10초, 재사용 대기시간은 90초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7988,12 +7998,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/궁여지책"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.091,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -8531,12 +8543,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 1%",
       "range": "40야드",
-      "description": "# 신의 권능: 인내 (Power Word: Fortitude)",
+      "description": "파티와 공격대의 체력을 1시간 동안 5% 늘린다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8548,14 +8560,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_wordfortitude.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.071,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -10034,14 +10048,14 @@
       "icon": "spell_arcane_massdispel",
       "iconName": "spell_arcane_massdispel",
       "school": "",
-      "cooldown": "45초",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "cooldown": "2분",
+      "castTime": "1.5초",
+      "resourceCost": "기본 마나 20% · 특성별 보정",
       "range": "30야드",
-      "description": "# 대규모 무효화 (Mass Dispel)",
+      "description": "지정한 15미터 범위에서 아군 최대 5명의 해로운 마법 효과를 모두 제거하고 적 최대 5명에게서 이로운 마법 효과를 하나씩 제거한다. 일부 일반 해제로 제거하지 못하는 마법도 제거한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10053,14 +10067,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_massdispel.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.086,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -10083,14 +10100,14 @@
       "icon": "spell_shadow_demonicfortitude",
       "iconName": "spell_shadow_demonicfortitude",
       "school": "",
-      "cooldown": "짧은 쿨다운",
+      "cooldown": "10초 · 특성별 보정",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "# 어둠의 권능: 죽음 (Shadow Word: Death)",
+      "description": "적을 즉시 공격하며 생명력 20% 미만에서 피해가 증가한다. 적을 처치하지 못하면 최대 생명력의 5% 반발 피해를 받는다. 암흑은 광기를 생성한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10103,19 +10120,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신수확자"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
         ],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 4,
-        "linkDensity": 0.068,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -10226,7 +10243,7 @@
       "id": "33206",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -10236,14 +10253,14 @@
       "icon": "spell_holy_painsupression",
       "iconName": "spell_holy_painsupression",
       "school": "",
-      "cooldown": "3분",
+      "cooldown": "3분 · 선택 특성으로 추가 충전/감소",
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 고통 억제 (Pain Suppression)",
+      "description": "아군이 받는 모든 피해를 8초 동안 40% 줄이는 외부 생존기다. 기본 재사용 대기시간은 3분이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10256,13 +10273,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/예견된상황"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.078,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -10592,7 +10614,7 @@
     },
     "34433": {
       "id": "34433",
-      "type": "hero-talent",
+      "type": "talent",
       "class": "Priest",
       "spec": "공용",
       "specs": [
@@ -10605,14 +10627,14 @@
       "icon": "spell_shadow_shadowfiend",
       "iconName": "spell_shadow_shadowfiend",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 마귀 (Shadowfiend)",
-      "category": "hero-talent",
+      "description": "어둠의 권능: 죽음을 생명력 20% 미만의 적에게 사용하면 어둠의 마귀가 5초 동안 자동 소환된다. 수양의 소환 확률은 100%, 암흑은 40%다. 공격마다 수양은 마나 0.5%, 암흑은 광기 1을 얻는다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10624,14 +10646,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowfiend.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -11462,7 +11488,7 @@
       "id": "47515",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -11472,14 +11498,14 @@
       "icon": "spell_holy_devineaegis",
       "iconName": "spell_holy_devineaegis",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 아이기스 (Divine Aegis)",
+      "description": "직접 치유가 극대화되면 해당 치유량의 30%에 해당하는 15초 흡수 보호막을 만든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11491,14 +11517,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_devineaegis.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -11562,7 +11592,7 @@
       "id": "47540",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -11572,14 +11602,14 @@
       "icon": "spell_holy_penance",
       "iconName": "spell_holy_penance",
       "school": "",
-      "cooldown": "가속 영향",
-      "castTime": "정신 집중",
-      "resourceCost": "마나",
+      "cooldown": "9초 · 가속/영웅 특성별 보정",
+      "castTime": "2초 정신 집중 · 이동 가능",
+      "resourceCost": "기본 마나 1.6%",
       "range": "40야드",
-      "description": "# 회개 (Penance)",
+      "description": "기본적으로 2초 동안 화살 3발을 보내 적을 공격하거나 아군을 치유하는 이동 가능한 정신 집중 주문이다. 12.1에서는 아군 회개가 속죄를 새로 부여하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11591,14 +11621,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_penance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/인도의빛"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.078,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -15125,9 +15162,9 @@
     },
     "62618": {
       "id": "62618",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -15137,14 +15174,14 @@
       "icon": "spell_holy_powerwordbarrier",
       "iconName": "spell_holy_powerwordbarrier",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 신의 권능: 방벽 (Power Word: Barrier)",
-      "category": "talent",
+      "cooldown": "3분",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 4%",
+      "range": "40야드",
+      "description": "지정 위치 안의 아군이 받는 피해를 10초 동안 20% 줄이고 피해로 인한 주문 시전 지연을 막는다. 기본 재사용 대기시간은 3분이다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15156,14 +15193,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordbarrier.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/궁극의참회"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -15219,6 +15260,59 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Buffs\\어둠의변신-소환수효과.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "64129": {
+      "id": "64129",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "육체와 영혼",
+      "koreanName": "육체와 영혼",
+      "englishName": "Body and Soul",
+      "icon": "spell_holy_symbolofhope",
+      "iconName": "spell_holy_symbolofhope",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "수양·암흑은 보호막과 신의의 도약, 신성은 회복의 기원과 신의의 도약으로 대상 이동 속도를 3초 동안 40% 높인다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_symbolofhope.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_symbolofhope.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_symbolofhope.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_symbolofhope.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_symbolofhope.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\육체와영혼.md",
+        "lastUpdate": ""
       }
     },
     "64382": {
@@ -15343,14 +15437,14 @@
       "icon": "priest_spell_leapoffaith_a",
       "iconName": "priest_spell_leapoffaith_a",
       "school": "",
-      "cooldown": "1.5분",
+      "cooldown": "90초 · 위기 모면 별도",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 2.6%",
       "range": "40야드",
-      "description": "# 신의의 도약 (Leap of Faith)",
+      "description": "파티원 또는 공격대원을 자신의 앞쪽으로 즉시 끌어온다. 기본 재사용 대기시간은 90초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15363,13 +15457,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/육체와영혼"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/위기모면"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.066,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -16536,9 +16634,9 @@
     },
     "81749": {
       "id": "81749",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -16548,14 +16646,14 @@
       "icon": "ability_priest_atonement",
       "iconName": "ability_priest_atonement",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 속죄 (Atonement)",
-      "category": "ability",
+      "description": "신의 권능: 보호막, 순간 치유, 어둠의 치유, 간청, 신의 권능: 광휘로 부여하는 치유 전환 효과다. 기본 지속시간은 15초이며 주문 피해의 46%를 치유로 전환한다. 5명을 넘으면 대상별 치유량이 감소한다. 12.1에서 아군에게 시전한 회개는 속죄를 부여하지 않는다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16567,14 +16665,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_atonement.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 0,
-        "linkDensity": 0.091,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -19294,6 +19396,60 @@
         "lastUpdate": ""
       }
     },
+    "109186": {
+      "id": "109186",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "빛의 쇄도",
+      "koreanName": "빛의 쇄도",
+      "englishName": "Surge of Light",
+      "icon": "spell_holy_surgeoflight",
+      "iconName": "spell_holy_surgeoflight",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "치유 주문과 성스러운 일격에서 8% 확률로 다음 순간 치유의 즉시 시전과 마나 비용 50% 감소를 얻는다. 최대 2개를 저장한다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_surgeoflight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_surgeoflight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_surgeoflight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_surgeoflight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_surgeoflight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/빛의쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.038,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\빛의쇄도-특성.md",
+        "lastUpdate": ""
+      }
+    },
     "109248": {
       "id": "109248",
       "type": "atomic-skill",
@@ -19400,54 +19556,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Skills\\활기.md",
-        "lastUpdate": ""
-      }
-    },
-    "110744": {
-      "id": "110744",
-      "type": "talent",
-      "class": "Priest",
-      "spec": "수양",
-      "specs": [
-        "Discipline"
-      ],
-      "name": "천상의 별",
-      "koreanName": "천상의 별",
-      "englishName": "Divine Star",
-      "icon": "spell_priest_divinestar",
-      "iconName": "spell_priest_divinestar",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 천상의 별 (Divine Star)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_divinestar.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_divinestar.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_divinestar.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_divinestar.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_divinestar.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\천상의별.md",
         "lastUpdate": ""
       }
     },
@@ -19959,11 +20067,13 @@
     },
     "114255": {
       "id": "114255",
-      "type": "class-talent",
+      "type": "buff",
       "class": "Priest",
       "spec": "공용",
       "specs": [
-        "Holy"
+        "Discipline",
+        "Holy",
+        "Shadow"
       ],
       "name": "빛의 쇄도",
       "koreanName": "빛의 쇄도",
@@ -19971,14 +20081,14 @@
       "icon": "spell_holy_surgeoflight",
       "iconName": "spell_holy_surgeoflight",
       "school": "",
-      "cooldown": "확률 발동",
-      "castTime": "발동 효과",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 쇄도 (Surge of Light)",
-      "category": "class-talent",
+      "description": "빛의 쇄도로 다음 순간 치유가 즉시 시전되고 마나 비용이 50% 줄어든 상태다. 최대 2개를 저장한다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19991,23 +20101,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Talents/축도"
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/빛의쇄도-특성"
         ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/영혼우물"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 6,
-        "linkDensity": 0.05,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -22206,6 +22310,58 @@
         "lastUpdate": ""
       }
     },
+    "121536": {
+      "id": "121536",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "천사의 깃털",
+      "koreanName": "천사의 깃털",
+      "englishName": "Angelic Feather",
+      "icon": "ability_priest_angelicfeather",
+      "iconName": "ability_priest_angelicfeather",
+      "school": "",
+      "cooldown": "20초 · 3충전",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "지정 위치에 깃털을 놓아 처음 지나가는 아군의 이동 속도를 5초 동안 40% 높인다. 기본 20초 재충전, 최대 3충전이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_angelicfeather.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_angelicfeather.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_angelicfeather.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_angelicfeather.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_angelicfeather.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/거룩한깃털"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.021,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Skills\\천사의깃털.md",
+        "lastUpdate": ""
+      }
+    },
     "121817": {
       "id": "121817",
       "type": "talent",
@@ -22351,55 +22507,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\업보의손아귀.md",
-        "lastUpdate": ""
-      }
-    },
-    "123040": {
-      "id": "123040",
-      "type": "hero-talent",
-      "class": "Priest",
-      "spec": "공용",
-      "specs": [
-        "Discipline",
-        "Shadow"
-      ],
-      "name": "환각의 마귀",
-      "koreanName": "환각의 마귀",
-      "englishName": "Mindbender",
-      "icon": "spell_shadow_soulleech_3",
-      "iconName": "spell_shadow_soulleech_3",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 환각의 마귀 (Mindbender)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_soulleech_3.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_soulleech_3.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_soulleech_3.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\환각의마귀.md",
         "lastUpdate": ""
       }
     },
@@ -22670,7 +22777,9 @@
       "class": "Priest",
       "spec": "공용",
       "specs": [
-        "Holy"
+        "Discipline",
+        "Holy",
+        "Shadow"
       ],
       "name": "신성한 폭발",
       "koreanName": "신성한 폭발",
@@ -22678,14 +22787,14 @@
       "icon": "spell_holy_holynova",
       "iconName": "spell_holy_holynova",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "없음 · 빛 폭발 선택 시 30초",
       "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "자신 주변",
-      "description": "# 신성한 폭발 (Holy Nova)",
+      "resourceCost": "기본 마나 0.2%",
+      "range": "자신 주변 12미터",
+      "description": "자신 주변 12미터의 적에게 신성 피해를 입히고 아군을 치유한다. 5명을 넘으면 효과가 감소하는 직업 공통 선택 기술이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22698,26 +22807,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신성한불꽃",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Talents/빛의권능응징"
+          "08-직업별-Knowledge-Base/09-사제/공용/Class-Talents/빛폭발"
         ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 11,
-        "synergyCount": 9,
-        "linkDensity": 0.093,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -25199,6 +25299,59 @@
         "lastUpdate": ""
       }
     },
+    "186263": {
+      "id": "186263",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어둠의 치유",
+      "koreanName": "어둠의 치유",
+      "englishName": "Shadow Mend",
+      "icon": "spell_shadow_shadowmend",
+      "iconName": "spell_shadow_shadowmend",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "1.5초 · 음울한 구원으로 +0.3초",
+      "resourceCost": "기본 마나 4%",
+      "range": "40야드",
+      "description": "아군을 강하게 치유하고 속죄를 적용한다. 치유 후에는 1초마다 원래 치유량의 1/20 피해를 받으며 모든 원천의 누적 피해가 치유량의 절반에 도달하거나 전투에서 벗어나면 후속 피해가 끝난다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowmend.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadowmend.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadowmend.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowmend.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowmend.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/음울한구원"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Skills\\어둠의치유-시전.md",
+        "lastUpdate": ""
+      }
+    },
     "186265": {
       "id": "186265",
       "type": "atomic-skill",
@@ -27009,11 +27162,64 @@
         "lastUpdate": ""
       }
     },
+    "193063": {
+      "id": "193063",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "보호의 빛",
+      "koreanName": "보호의 빛",
+      "englishName": "Protective Light",
+      "icon": "spell_holy_holyprotection",
+      "iconName": "spell_holy_holyprotection",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "자신에게 순간 치유를 사용하면 10초 동안 받는 모든 피해가 10% 줄어든다. 수양의 어둠의 치유도 같은 조건을 충족한다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_holyprotection.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_holyprotection.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holyprotection.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holyprotection.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\보호의빛.md",
+        "lastUpdate": ""
+      }
+    },
     "193134": {
       "id": "193134",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -27023,14 +27229,14 @@
       "icon": "spell_holy_searinglightpriest",
       "iconName": "spell_holy_searinglightpriest",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 책망 (Castigation)",
+      "description": "회개의 한 번의 정신 집중 동안 화살을 1발 추가로 발사한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27042,14 +27248,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_searinglightpriest.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/두개의시야"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -27707,11 +27919,66 @@
         "lastUpdate": ""
       }
     },
+    "194384": {
+      "id": "194384",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "속죄",
+      "koreanName": "속죄",
+      "englishName": "Atonement",
+      "aliases": [
+        "속죄 버프"
+      ],
+      "icon": "ability_priest_atonement",
+      "iconName": "ability_priest_atonement",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "아군에게 적용되어 피해 전환 치유를 받을 수 있게 하는 실제 속죄 버프다. 기본 15초이며 적용 주문과 특성에 따라 지속시간이 달라진다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_atonement.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_atonement.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_atonement.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_atonement.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_atonement.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\속죄-효과.md",
+        "lastUpdate": ""
+      }
+    },
     "194509": {
       "id": "194509",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -27721,14 +27988,14 @@
       "icon": "spell_priest_power-word",
       "iconName": "spell_priest_power-word",
       "school": "",
-      "cooldown": "충전 기반",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "cooldown": "18초 · 추가 충전/특성별 보정",
+      "castTime": "2초 · 특성/사도별 보정",
+      "resourceCost": "기본 마나 5.4% · 사도로 감소",
       "range": "40야드",
-      "description": "# 신의 권능: 광휘 (Power Word: Radiance)",
+      "description": "대상과 40미터 내 부상당한 아군 4명을 치유하고 일반 지속시간의 60%에 해당하는 속죄를 부여한다. 기본 재사용 대기시간은 18초이며 빛의 약조로 추가 충전을 얻는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27741,15 +28008,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/빛의약조",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/인내의광채"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.066,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -29364,7 +29635,7 @@
       "id": "197045",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -29374,14 +29645,14 @@
       "icon": "spell_holy_divineprotection",
       "iconName": "spell_holy_divineprotection",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수양 보호막 (Shield Discipline)",
+      "description": "신의 권능: 보호막이 피해를 완전히 흡수해 소진되면 최대 마나의 0.5%를 회복한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29393,14 +29664,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprotection.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -29615,7 +29889,7 @@
       "id": "197862",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -29625,14 +29899,14 @@
       "icon": "ability_priest_archangel",
       "iconName": "ability_priest_archangel",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대천사 (Archangel)",
+      "description": "사도 사용 시 18초 동안 치유량과 피해 흡수량이 15% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29644,14 +29918,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_archangel.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/환각의마귀-수양"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.061,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -29909,7 +30187,7 @@
       "id": "198068",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -29919,14 +30197,14 @@
       "icon": "inv_artifact_powerofthedarkside",
       "iconName": "inv_artifact_powerofthedarkside",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어두운 면의 힘 (Power of the Dark Side)",
+      "description": "어둠의 권능: 고통이 일정 확률로 다음 회개를 암흑으로 강화해 효과를 30% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29938,18 +30216,79 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_powerofthedarkside.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의방종"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.073,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\어두운면의힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "198069": {
+      "id": "198069",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어두운 면의 힘",
+      "koreanName": "어두운 면의 힘",
+      "englishName": "Power of the Dark Side",
+      "aliases": [
+        "어두운 면의 힘 버프"
+      ],
+      "icon": "inv_artifact_powerofthedarkside",
+      "iconName": "inv_artifact_powerofthedarkside",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 회개를 암흑으로 강화하고 효과를 30% 높이는 실제 발동 버프다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_powerofthedarkside.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_artifact_powerofthedarkside.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_artifact_powerofthedarkside.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_artifact_powerofthedarkside.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_powerofthedarkside.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의방종"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\어두운면의힘-효과.md",
         "lastUpdate": ""
       }
     },
@@ -30935,7 +31274,7 @@
       "id": "200829",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -30947,12 +31286,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 2.2%",
       "range": "40야드",
-      "description": "# 간청 (Plea)",
+      "description": "아군을 즉시 치유하고 속죄를 부여한다. 이동 중에도 사용할 수 있는 직접 치유 주문이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30972,9 +31311,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.041,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -35268,54 +35607,6 @@
         "lastUpdate": ""
       }
     },
-    "214621": {
-      "id": "214621",
-      "type": "talent",
-      "class": "Priest",
-      "spec": "수양",
-      "specs": [
-        "Discipline"
-      ],
-      "name": "정신 분열",
-      "koreanName": "정신 분열",
-      "englishName": "Mind Blast",
-      "icon": "spell_warlock_focusshadow",
-      "iconName": "spell_warlock_focusshadow",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 정신 분열 (Mind Blast)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_focusshadow.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_warlock_focusshadow.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_warlock_focusshadow.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_warlock_focusshadow.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_focusshadow.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\정신분열.md",
-        "lastUpdate": ""
-      }
-    },
     "215568": {
       "id": "215568",
       "type": "spec-talent",
@@ -35370,7 +35661,7 @@
       "id": "215768",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -35380,14 +35671,14 @@
       "icon": "spell_holy_searinglight",
       "iconName": "spell_holy_searinglight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 불꽃 (Blaze of Light)",
+      "description": "성스러운 일격과 회개의 공격력을 1등급당 8% 높이며 최대 2등급이다. 회개는 대상의 이동 속도를 2초 동안 25% 높이거나 낮춘다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35399,14 +35690,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_searinglight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -36195,7 +36489,7 @@
       "id": "231682",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -36205,14 +36499,14 @@
       "icon": "spell_holy_holysmite",
       "iconName": "spell_holy_holysmite",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 성역 (Sanctuary)",
+      "description": "성스러운 일격이 대상 적의 다음 피해 일부를 방지하는 효과를 남긴다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36224,14 +36518,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holysmite.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -37106,7 +37403,7 @@
       "id": "238063",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -37116,14 +37413,14 @@
       "icon": "ability_priest_atonement",
       "iconName": "ability_priest_atonement",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 관용 (Lenience)",
+      "description": "속죄가 적용된 아군이 받는 피해를 2% 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37135,14 +37432,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_atonement.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -37154,7 +37454,7 @@
       "id": "238135",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -37164,14 +37464,14 @@
       "icon": "spell_holy_powerwordshield",
       "iconName": "spell_holy_powerwordshield",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영원의 방벽 (Eternal Barrier)",
+      "description": "신의 권능: 보호막의 흡수량이 20% 증가하고 지속시간이 5초 늘어난다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37183,14 +37483,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -44327,7 +44630,7 @@
       "id": "322115",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -44337,14 +44640,14 @@
       "icon": "spell_priest_power-word",
       "iconName": "spell_priest_power-word",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 약조 (Light's Promise)",
+      "description": "신의 권능: 광휘가 추가 충전 1회를 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44356,14 +44659,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_power-word.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.048,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -49107,7 +49412,7 @@
       "id": "372969",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49117,14 +49422,14 @@
       "icon": "ability_paladin_infusionoflight",
       "iconName": "ability_paladin_infusionoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성 광선 (Holy Ray)",
+      "description": "회개의 연속 화살이 단계적으로 강해지며 화살마다 피해와 치유량이 5% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49136,14 +49441,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_infusionoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -49155,7 +49464,7 @@
       "id": "372972",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49165,14 +49474,14 @@
       "icon": "spell_shadow_unholyfrenzy",
       "iconName": "spell_shadow_unholyfrenzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 방종 (Dark Indulgence)",
+      "description": "정신 분열의 공격력이 20% 증가하고 정신 분열이 어두운 면의 힘을 확정 부여한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49184,14 +49493,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unholyfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -49203,7 +49517,7 @@
       "id": "372991",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49213,14 +49527,14 @@
       "icon": "spell_holy_blessedrecovery",
       "iconName": "spell_holy_blessedrecovery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고통 변형 (Pain Transformation)",
+      "description": "고통 억제 사용 시 대상 최대 생명력의 15%를 회복시키고 속죄를 적용한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49232,14 +49546,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessedrecovery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -49251,7 +49570,7 @@
       "id": "373003",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49261,14 +49580,14 @@
       "icon": "ability_rogue_envelopingshadows",
       "iconName": "ability_rogue_envelopingshadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 환희 (Revel in Darkness)",
+      "description": "어둠의 권능: 고통 피해가 5% 증가하고 공격 회개로 전이되는 대상 수가 1명 늘어난다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49282,18 +49601,17 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/잠식하는어둠"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 4,
-        "linkDensity": 0.038,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -49305,7 +49623,7 @@
       "id": "373035",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49315,14 +49633,14 @@
       "icon": "ability_racial_forceshield",
       "iconName": "ability_racial_forceshield",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 약자의 보호자 (Protector of the Frail)",
+      "description": "고통 억제가 추가 충전 1회를 얻고 신의 권능: 보호막 사용으로 재사용 대기시간이 3초 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49334,14 +49652,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_forceshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -49353,7 +49676,7 @@
       "id": "373049",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49363,14 +49686,14 @@
       "icon": "ability_priest_clarityofwill",
       "iconName": "ability_priest_clarityofwill",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 면책 (Indemnity)",
+      "description": "신의 권능: 보호막으로 부여하는 속죄의 지속시간이 4초 늘어난다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49382,14 +49705,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_clarityofwill.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/선제적조처"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -49401,7 +49729,7 @@
       "id": "373054",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49411,14 +49739,14 @@
       "icon": "ability_priest_surgeofdarkness",
       "iconName": "ability_priest_surgeofdarkness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심연의 몽상 (Abyssal Reverie)",
+      "description": "암흑 주문으로 전환되는 속죄 치유량을 늘린다. 현재 1등급은 10%이며 최대 2등급이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49430,14 +49758,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_surgeofdarkness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -49449,7 +49783,7 @@
       "id": "373180",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -49459,14 +49793,14 @@
       "icon": "ability_paladin_handoflight",
       "iconName": "ability_paladin_handoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 엄격한 규율 (Harsh Discipline)",
+      "description": "신의 권능: 광휘가 다음 회개에 추가 화살을 부여하며 사용권을 최대 2개까지 저장한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49478,18 +49812,77 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_handoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\엄격한규율.md",
+        "lastUpdate": ""
+      }
+    },
+    "373183": {
+      "id": "373183",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "엄격한 규율",
+      "koreanName": "엄격한 규율",
+      "englishName": "Harsh Discipline",
+      "aliases": [
+        "엄격한 규율 버프"
+      ],
+      "icon": "ability_priest_voidshift",
+      "iconName": "ability_priest_voidshift",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "광휘 사용 후 다음 회개의 추가 화살을 준비하는 강화 사용권이며 최대 2개다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidshift.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_voidshift.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_voidshift.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_voidshift.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidshift.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\엄격한규율-효과.md",
         "lastUpdate": ""
       }
     },
@@ -49788,9 +50181,10 @@
       "id": "373427",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
-        "Discipline"
+        "Discipline",
+        "Shadow"
       ],
       "name": "피할 수 없는 고통",
       "koreanName": "피할 수 없는 고통",
@@ -49798,14 +50192,14 @@
       "icon": "spell_shadow_chilltouch",
       "iconName": "spell_shadow_chilltouch",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 피할 수 없는 고통 (Inescapable Torment)",
+      "description": "마귀가 활성일 때 수양은 회개·정신 분열·어둠의 권능: 죽음으로 마귀의 광역 공격과 지속시간 연장을 유발한다. 암흑은 정신 분열·어둠의 권능: 죽음 조건을 사용한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49817,18 +50211,129 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_chilltouch.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/환각의마귀-수양"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\피할수없는고통.md",
+        "lastUpdate": ""
+      }
+    },
+    "373446": {
+      "id": "373446",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "반투명 형상",
+      "koreanName": "반투명 형상",
+      "englishName": "Translucent Image",
+      "icon": "spell_shadow_twistedfaith",
+      "iconName": "spell_shadow_twistedfaith",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "소실이 활성일 때 받는 피해가 10% 줄어든다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_twistedfaith.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_twistedfaith.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_twistedfaith.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_twistedfaith.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_twistedfaith.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\피할수없는고통.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\반투명형상.md",
+        "lastUpdate": ""
+      }
+    },
+    "373466": {
+      "id": "373466",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "태양 여사제의 쌍둥이",
+      "koreanName": "태양 여사제의 쌍둥이",
+      "englishName": "Twins of the Sun Priestess",
+      "icon": "spell_fire_felflamering_red",
+      "iconName": "spell_fire_felflamering_red",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "마력 주입을 아군에게 사용하면 자신도 100% 효율로 받는다. 아군을 지정하지 않았다면 주위 아군 한 명에게도 주며 공격 담당을 우선한다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamering_red.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_felflamering_red.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_felflamering_red.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_felflamering_red.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamering_red.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\태양여사제의쌍둥이.md",
         "lastUpdate": ""
       }
     },
@@ -69440,11 +69945,62 @@
         "lastUpdate": ""
       }
     },
+    "390632": {
+      "id": "390632",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy"
+      ],
+      "name": "정화 연마",
+      "koreanName": "정화 연마",
+      "englishName": "Improved Purify",
+      "icon": "spell_holy_nullifydisease",
+      "iconName": "spell_holy_nullifydisease",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정화가 마법뿐 아니라 질병 효과도 제거하게 한다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_nullifydisease.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_nullifydisease.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_nullifydisease.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_nullifydisease.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_nullifydisease.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\정화연마.md",
+        "lastUpdate": ""
+      }
+    },
     "390684": {
       "id": "390684",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69454,14 +70010,14 @@
       "icon": "spell_holy_surgeoflight",
       "iconName": "spell_holy_surgeoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찬란한 동공 (Bright Pupil)",
+      "description": "신의 권능: 광휘의 재사용 대기시간이 3초 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69473,14 +70029,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_surgeoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/인내의광채"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -69492,7 +70052,7 @@
       "id": "390685",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69502,14 +70062,14 @@
       "icon": "ability_priest_holybolts01",
       "iconName": "ability_priest_holybolts01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 인내의 광채 (Enduring Luminescence)",
+      "description": "신의 권능: 광휘의 시전 시간이 30% 짧아지고 광휘가 적용하는 속죄 지속시간이 일반 속죄 대비 10%p 늘어난다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69521,14 +70081,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_holybolts01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/찬란한동공"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -69540,7 +70104,7 @@
       "id": "390686",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69550,14 +70114,14 @@
       "icon": "ability_priest_clarityofpower",
       "iconName": "ability_priest_clarityofpower",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고통의 처벌 (Painful Punishment)",
+      "description": "적에게 적중한 회개 화살마다 해당 적의 어둠의 권능: 고통 지속시간을 1.5초 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69569,14 +70133,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_clarityofpower.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -69588,7 +70155,7 @@
       "id": "390689",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69598,14 +70165,14 @@
       "icon": "spell_shadow_shadowwordpain",
       "iconName": "spell_shadow_shadowwordpain",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고통과 고뇌 (Pain and Suffering)",
+      "description": "어둠의 권능: 고통의 공격력과 지속시간을 늘린다. 현재 1등급 기준 공격력 8%, 지속시간 2초이며 최대 2등급이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69617,14 +70184,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowwordpain.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/잠식하는어둠"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -69636,7 +70207,7 @@
       "id": "390691",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69646,14 +70217,14 @@
       "icon": "spell_holy_borrowedtime",
       "iconName": "spell_holy_borrowedtime",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빌린 시간 (Borrowed Time)",
+      "description": "보호막 시전 후 4초 동안 가속을 얻는다. 현재 1등급은 5%이며 최대 2등급이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69665,14 +70236,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_borrowedtime.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -69684,7 +70258,7 @@
       "id": "390693",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69694,14 +70268,14 @@
       "icon": "spell_frost_windwalkon",
       "iconName": "spell_frost_windwalkon",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 집중력 (Inner Focus)",
+      "description": "순간 치유, 어둠의 치유, 신의 권능: 보호막, 회개, 신의 권능: 광휘의 치명타 및 극대화 확률을 20%p 높이는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69713,14 +70287,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_windwalkon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -69833,7 +70412,7 @@
       "id": "390786",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69843,14 +70422,14 @@
       "icon": "spell_priest_burningwill",
       "iconName": "spell_priest_burningwill",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번영과 역경 (Weal and Woe)",
+      "description": "회개의 화살이 다음 신의 권능: 보호막의 흡수량을 중첩당 3% 높이며 최대 10중첩까지 쌓인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69862,14 +70441,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
@@ -69877,11 +70460,67 @@
         "lastUpdate": ""
       }
     },
+    "390787": {
+      "id": "390787",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "번영과 역경",
+      "koreanName": "번영과 역경",
+      "englishName": "Weal and Woe",
+      "aliases": [
+        "번영과 역경 버프"
+      ],
+      "icon": "spell_priest_burningwill",
+      "iconName": "spell_priest_burningwill",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "회개 화살로 모으는 다음 보호막의 흡수 강화 버프다. 중첩당 3%, 최대 10중첩이다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_burningwill.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_burningwill.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_burningwill.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/번영과역경"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\번영과역경-효과.md",
+        "lastUpdate": ""
+      }
+    },
     "390832": {
       "id": "390832",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -69891,14 +70530,14 @@
       "icon": "spell_shadow_shadowpower",
       "iconName": "spell_shadow_shadowpower",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대속 (Expiation)",
+      "description": "정신 분열과 어둠의 권능: 죽음이 어둠의 권능: 고통의 남은 지속시간을 소모해 소모분의 300%에 해당하는 피해를 즉시 입힌다. 1등급은 1초, 2등급은 2초를 소모한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69910,14 +70549,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowpower.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -79921,9 +80564,9 @@
     },
     "421453": {
       "id": "421453",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -79933,14 +80576,14 @@
       "icon": "ability_priest_ascendance",
       "iconName": "ability_priest_ascendance",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 궁극의 참회 (Ultimate Penitence)",
-      "category": "talent",
+      "cooldown": "4분",
+      "castTime": "1.5초 시전 후 6초 정신 집중",
+      "resourceCost": "마나",
+      "range": "40야드",
+      "description": "공중으로 올라가 6초 동안 강력한 화살로 적을 공격하거나 아군을 치유한다. 시전 준비는 1.5초이며 활성 중 최대 생명력 100% 흡수 보호막과 군중 제어/밀쳐내기 면역을 얻는다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79952,14 +80595,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_ascendance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의권능방벽"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -86792,14 +87442,14 @@
       "icon": "ability_priest_clarityofpurpose",
       "iconName": "ability_priest_clarityofpurpose",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 예언자의 의지 (Prophet's Will)",
+      "description": "수양은 자신에게 시전하는 순간 치유·어둠의 치유·신의 권능: 보호막의 효과가 30% 증가한다. 신성은 자신에게 시전하는 순간 치유·빛의 권능: 평온이 30% 강해진다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86811,14 +87461,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_clarityofpurpose.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -89767,14 +90422,14 @@
       "icon": "spell_holy_powerwordshield",
       "iconName": "spell_holy_powerwordshield",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 예방의 기술 (Preventive Measures)",
+      "description": "수양의 보호막 흡수량이 30% 증가하고 회개·성스러운 일격·신성한 폭발 피해가 15% 증가한다. 신성은 회복의 기원 치유량이 40%, 성스러운 일격·신성한 불꽃·신성한 폭발 피해가 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89786,14 +90441,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신성한폭발"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -89816,14 +90476,14 @@
       "icon": "priest_spell_leapoffaith_a",
       "iconName": "priest_spell_leapoffaith_a",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위기 모면 (Save the Day)",
+      "description": "신의의 도약을 사용한 뒤 6초 동안 쿨다운을 무시하고 마나 없이 한 번 더 사용할 수 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89835,14 +90495,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/priest_spell_leapoffaith_a.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -89865,14 +90527,14 @@
       "icon": "ability_priest_angelicfeather",
       "iconName": "ability_priest_angelicfeather",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 거룩한 깃털 (Divine Feathers)",
+      "description": "천사의 깃털의 이동 속도 증가량을 10%p 늘린다. 아군이 자신의 깃털을 밟으면 시전자도 같은 효과를 받는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89884,14 +90546,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_angelicfeather.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/천사의깃털"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -89914,14 +90578,14 @@
       "icon": "spell_holy_renew",
       "iconName": "spell_holy_renew",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선제적 조처 (Preemptive Care)",
+      "description": "수양은 속죄 지속시간이 4초, 신성은 소생 지속시간이 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89933,14 +90597,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_renew.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.046,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -89963,14 +90630,14 @@
       "icon": "spell_nature_timestop",
       "iconName": "spell_nature_timestop",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천금 같은 시간 (Waste No Time)",
+      "description": "수양의 신의 권능: 보호막 또는 신성의 회복의 기원 재사용 대기시간이 1.5초 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89982,14 +90649,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_timestop.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -90012,14 +90682,14 @@
       "icon": "spell_holy_painsupression",
       "iconName": "spell_holy_painsupression",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 예견된 상황 (Foreseen Circumstances)",
+      "description": "수양의 고통 억제는 피해 감소량이 10%p 늘고 신성의 수호 영혼은 지속시간이 2초 늘어난다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90031,14 +90701,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_painsupression.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -90061,14 +90733,14 @@
       "icon": "inv_ability_oraclepriest_clairvoyance",
       "iconName": "inv_ability_oraclepriest_clairvoyance",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 두 개의 시야 (Twinsight)",
+      "description": "수양은 회개로 아군을 치유하면 적에게 추가 화살 3발을 보내고, 적을 공격하면 아군에게 추가 화살 3발을 보낸다. 신성은 회복의 기원 시전 시 두 번째 아군에게 4중첩을 적용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90080,14 +90752,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_oraclepriest_clairvoyance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -90110,14 +90785,14 @@
       "icon": "spell_holy_prayerofmendingtga",
       "iconName": "spell_holy_prayerofmendingtga",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 보장된 안전 (Assured Safety)",
+      "description": "수양은 신의 권능: 보호막 시전으로 회복의 기원 4중첩을 부여한다. 신성은 회복의 기원 시전으로 신의 권능: 보호막을 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -90129,14 +90804,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofmendingtga.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -96716,14 +97394,14 @@
       "icon": "inv_ability_voidweaverpriest_entropicrift",
       "iconName": "inv_ability_voidweaverpriest_entropicrift",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 혼돈의 균열 (Entropic Rift)",
+      "description": "정신 분열이 대상을 따라가는 8초 혼돈의 균열을 자동 생성한다. 균열 범위 안의 적에게 주기적으로 암흑 피해를 입힌다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96735,14 +97413,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_voidweaverpriest_entropicrift.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의폭발"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.063,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -96813,14 +97496,14 @@
       "icon": "inv_cosmicvoid_buff",
       "iconName": "inv_cosmicvoid_buff",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 종지부 (Inner Quietus)",
+      "description": "수양은 신의 권능: 보호막의 흡수량이 20% 증가한다. 암흑은 흡혈의 손길과 어둠의 권능: 고통 피해가 20% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96832,14 +97515,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_buff.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -96862,14 +97548,14 @@
       "icon": "inv_cosmicvoid_groundsate",
       "iconName": "inv_cosmicvoid_groundsate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허 붕괴 (Collapsing Void)",
+      "description": "균열 중 수양은 회개가 피해나 치유를 할 때마다 균열의 피해와 크기를 10% 강화한다. 암흑은 어둠의 권능: 광기 시전마다 20% 강화한다. 균열 종료 시 15미터 내 적에게 붕괴 피해를 나누어 입힌다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96881,14 +97567,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_groundsate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 1,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -98466,14 +99156,14 @@
       "icon": "inv_cosmicvoid_orb",
       "iconName": "inv_cosmicvoid_orb",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 심장 (Voidheart)",
+      "description": "균열 활성 중 수양의 속죄 치유량은 20%, 암흑의 암흑 피해는 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98485,14 +99175,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_orb.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의손길"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -98515,14 +99210,14 @@
       "icon": "inv_misc_83_voidfocus",
       "iconName": "inv_misc_83_voidfocus",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠에 물드는 지평선 (Darkening Horizon)",
+      "description": "공허의 폭발로 혼돈의 균열을 1초씩, 최대 3초 연장한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98534,14 +99229,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_83_voidfocus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의강화",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의손길"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -98564,14 +99265,14 @@
       "icon": "inv_cosmicvoid_nova",
       "iconName": "inv_cosmicvoid_nova",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 강화 (Void Empowerment)",
+      "description": "수양은 혼돈의 균열을 소환할 때 지속시간이 가장 짧은 속죄 5개를 1초 연장한다. 암흑은 균열 소환 시 어둠의 통찰을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98583,14 +99284,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_nova.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠에물드는지평선"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -98651,6 +99357,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Talents\\항성증폭.md",
+        "lastUpdate": ""
+      }
+    },
+    "450215": {
+      "id": "450215",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "공허의 폭발",
+      "koreanName": "공허의 폭발",
+      "englishName": "Void Blast",
+      "icon": "inv_cosmicvoid_missile",
+      "iconName": "inv_cosmicvoid_missile",
+      "school": "",
+      "cooldown": "없음 · 균열 중 사용",
+      "castTime": "1.5초",
+      "resourceCost": "기본 마나 0.2%",
+      "range": "40야드",
+      "description": "공허술사 수양이 혼돈의 균열 중 성스러운 일격 대신 사용하는 실제 공허의 폭발 주문이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_missile.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_cosmicvoid_missile.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_cosmicvoid_missile.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_cosmicvoid_missile.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_missile.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/상급성스러운일격"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의폭발"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Skills\\공허의폭발-수양시전.md",
         "lastUpdate": ""
       }
     },
@@ -98877,14 +99636,14 @@
       "icon": "inv_cosmicvoid_missile",
       "iconName": "inv_cosmicvoid_missile",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 폭발 (Void Blast)",
+      "description": "균열 활성 중 수양의 성스러운 일격, 암흑의 정신 분열을 각각 공허의 폭발로 바꾼다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -98896,14 +99655,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_missile.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -99036,14 +99800,14 @@
       "icon": "inv_misc_volatileshadow",
       "iconName": "inv_misc_volatileshadow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허 주입 (Void Infusion)",
+      "description": "균열 중 수양의 공허의 폭발과 회개에서 발생하는 속죄 치유량이 75% 증가한다. 암흑은 공허의 폭발의 광기 생성량이 2 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99055,14 +99819,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_volatileshadow.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -100209,14 +100979,14 @@
       "icon": "achievement_boss_triumvirate_darknaaru",
       "iconName": "achievement_boss_triumvirate_darknaaru",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암흑 마력 (Dark Energy)",
+      "description": "균열이 활성인 동안 이동 속도가 20% 증가한다. 암흑은 공허의 격류를 이동하면서 사용할 수 있게 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100230,12 +101000,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -100626,14 +101398,14 @@
       "icon": "spell_fire_twilighthellfire",
       "iconName": "spell_fire_twilighthellfire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 탈출 불가 (No Escape)",
+      "description": "균열 가까이 있는 적의 이동 속도를 최대 70% 감소시킨다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100647,12 +101419,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -100675,14 +101449,14 @@
       "icon": "warlock_curse_shadow",
       "iconName": "warlock_curse_shadow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 망령 (Voidwraith)",
+      "description": "혼돈의 균열이 끝나면 5초 동안 공허의 망령이 자동 소환된다. 대상 생명력이 높을수록 공격이 강해지며 최대 생명력에서 50% 추가 피해를 입힌다. 수양은 공격마다 마나 0.5%, 암흑은 광기 1을 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100695,13 +101469,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/환각의마귀-수양"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -100778,14 +101557,14 @@
       "icon": "spell_shadow_soulleech_2",
       "iconName": "spell_shadow_soulleech_2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허 흡혈 (Void Leech)",
+      "description": "3초마다 40미터 내 자신보다 생명력이 높은 아군에게서 자신의 생명력 4%에 해당하는 양을 흡수한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100797,14 +101576,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -101091,14 +101872,14 @@
       "icon": "spell_shadow_shadesofdarkness",
       "iconName": "spell_shadow_shadesofdarkness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 품으로 (Embrace the Shadow)",
+      "description": "받는 모든 마법 피해의 3%를 흡수한다. 암흑 피해를 흡수하면 그 흡수량만큼 생명력을 회복한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101110,14 +101891,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -101244,14 +102027,14 @@
       "icon": "spell_holy_consumemagic",
       "iconName": "spell_holy_consumemagic",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 물질 포식 (Devour Matter)",
+      "description": "어둠의 권능: 죽음이 대상의 피해 흡수 보호막에 추가 피해를 입힌다. 보호막이 있으면 수양은 마나 1%, 암흑은 광기 5를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101263,14 +102046,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_consumemagic.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -103156,8 +103941,8 @@
       "name": "공명하는 마력",
       "koreanName": "공명하는 마력",
       "englishName": "Resonant Energy",
-      "icon": "ability_priest_halo",
-      "iconName": "ability_priest_halo",
+      "icon": "inv_ability_holyfire_orb",
+      "iconName": "inv_ability_holyfire_orb",
       "school": "",
       "cooldown": "관련 기술 연계",
       "castTime": "지속 효과",
@@ -103170,12 +103955,12 @@
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_halo.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_orb.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_halo.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_halo.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_halo.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_halo.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_holyfire_orb.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_holyfire_orb.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_holyfire_orb.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_orb.jpg"
       },
       "synergies": {
         "relatedSkills": [],
@@ -106875,14 +107660,14 @@
       "icon": "spell_holy_testoffaith",
       "iconName": "spell_holy_testoffaith",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 궁여지책 (Desperate Measures)",
+      "description": "구원의 기도의 지속시간을 10초 늘리고 천사의 보루 흡수량을 최대 생명력의 15%만큼 더한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106894,14 +107679,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_testoffaith.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -107118,6 +107905,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Talents\\숨통노리기.md",
+        "lastUpdate": ""
+      }
+    },
+    "459559": {
+      "id": "459559",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "망령의 손아귀",
+      "koreanName": "망령의 손아귀",
+      "englishName": "Phantom Reach",
+      "icon": "spell_shadow_chilltouch",
+      "iconName": "spell_shadow_chilltouch",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "대부분 주문의 사정거리를 15% 늘린다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_chilltouch.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_chilltouch.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_chilltouch.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_chilltouch.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_chilltouch.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\망령의손아귀.md",
         "lastUpdate": ""
       }
     },
@@ -111897,7 +112737,7 @@
       "id": "472361",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -111907,14 +112747,14 @@
       "icon": "ability_priest_evangelism",
       "iconName": "ability_priest_evangelism",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신의 행렬 (Divine Procession)",
+      "description": "성스러운 일격이 활성 속죄 하나의 지속시간을 2초 연장한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111926,14 +112766,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_evangelism.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -111945,7 +112788,7 @@
       "id": "472433",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -111955,14 +112798,14 @@
       "icon": "spell_holy_divineillumination",
       "iconName": "spell_holy_divineillumination",
       "school": "",
-      "cooldown": "1.5분",
+      "cooldown": "90초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 사도 (Evangelism)",
+      "description": "대상에게 150% 효율의 신의 권능: 광휘를 즉시 시전하고 다음 광휘 2회를 즉시 시전으로 바꾸며 그 마나 비용을 40% 줄인다. 기본 재사용 대기시간은 90초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111975,21 +112818,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Talents/궁극의참회"
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/환각의마귀-수양"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 11,
-        "synergyCount": 6,
-        "linkDensity": 0.082,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -112054,7 +112894,7 @@
       "id": "472568",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -112064,14 +112904,14 @@
       "icon": "spell_shadow_painspike",
       "iconName": "spell_shadow_painspike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 잠식하는 어둠 (Encroaching Shadows)",
+      "description": "적에게 회개를 시전하면 어둠의 권능: 고통을 가까운 추가 대상에게 전이한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112083,14 +112923,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_painspike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -114220,6 +115065,56 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "1230339": {
+      "id": "1230339",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "환각의 마귀",
+      "koreanName": "환각의 마귀",
+      "englishName": "Mindbender",
+      "icon": "spell_shadow_soulleech_3",
+      "iconName": "spell_shadow_soulleech_3",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "암흑 사제가 공허의 형상을 시전하면 환각의 마귀가 10초 동안 자동 소환되며 공격마다 광기 1을 생성한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_soulleech_3.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_soulleech_3.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_soulleech_3.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\환각의마귀.md",
+        "lastUpdate": ""
+      }
+    },
     "1231346": {
       "id": "1231346",
       "type": "talent",
@@ -114825,7 +115720,7 @@
       "id": "1235211",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -114835,14 +115730,14 @@
       "icon": "ability_creature_disease_05",
       "iconName": "ability_creature_disease_05",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암흑 추출 (Shadow Tap)",
+      "description": "정신 분열의 공격력이 150% 증가하지만 마나 소모량도 40% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114854,14 +115749,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_disease_05.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -115450,7 +116348,7 @@
       "id": "1240364",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -115460,14 +116358,14 @@
       "icon": "spell_shadow_deathsembrace",
       "iconName": "spell_shadow_deathsembrace",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음의 고통 (Death's Torment)",
+      "description": "어둠의 권능: 죽음이 두 차례 추가로 적중하며 각 추가 타격은 원래 피해의 15%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115479,14 +116377,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathsembrace.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -119266,6 +120168,59 @@
         "lastUpdate": ""
       }
     },
+    "1246549": {
+      "id": "1246549",
+      "type": "class-talent",
+      "class": "Priest",
+      "spec": "공용",
+      "specs": [
+        "Discipline",
+        "Holy",
+        "Shadow"
+      ],
+      "name": "빛 폭발",
+      "koreanName": "빛 폭발",
+      "englishName": "Lightburst",
+      "icon": "inv_ability_holyfire_nova",
+      "iconName": "inv_ability_holyfire_nova",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "신성한 폭발의 피해를 400%, 치유량을 500% 높이지만 30초 쿨다운을 부여한다.",
+      "category": "class-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_nova.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_holyfire_nova.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_holyfire_nova.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_holyfire_nova.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_nova.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/신성한폭발",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Class-Talents\\빛폭발.md",
+        "lastUpdate": ""
+      }
+    },
     "1246769": {
       "id": "1246769",
       "type": "passive",
@@ -119334,14 +120289,14 @@
       "icon": "spell_holy_blessedlife",
       "iconName": "spell_holy_blessedlife",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 즉발적인 예측 (Prompt Prognosis)",
+      "description": "수양은 회개의 첫 화살 피해 또는 치유량이 125% 증가한다. 신성은 회복의 기원 사용 시 대상을 직접 치유한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -119353,14 +120308,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessedlife.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -119383,14 +120340,14 @@
       "icon": "inv_ability_oraclepriest_premonitionpiety",
       "iconName": "inv_ability_oraclepriest_premonitionpiety",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 경건 (Piety)",
+      "description": "수양은 초과 치유의 15%, 신성은 20%를 최대 4명의 주위 부상당한 아군에게 재분배한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -119402,14 +120359,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_oraclepriest_premonitionpiety.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -120585,14 +121545,14 @@
       "icon": "ability_priest_holywordlife",
       "iconName": "ability_priest_holywordlife",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 인도의 빛 (Guiding Light)",
+      "description": "수양의 회개 또는 신성의 회복의 기원에 추가 충전 1회를 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120604,14 +121564,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_holywordlife.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -121538,7 +122500,7 @@
       "id": "1250218",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -121548,14 +122510,14 @@
       "icon": "ability_mage_firestarter",
       "iconName": "ability_mage_firestarter",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사악의 정화 (Purge the Wicked)",
+      "description": "신성 주문으로 입히는 피해를 10% 늘리는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121567,14 +122529,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_firestarter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -121586,7 +122551,7 @@
       "id": "1250293",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -121596,14 +122561,14 @@
       "icon": "ability_priest_touchofdecay",
       "iconName": "ability_priest_touchofdecay",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사술사 (Occultist)",
+      "description": "암흑 피해와 치유량을 15% 높이는 지속 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -121615,14 +122580,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_touchofdecay.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-2세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -122762,11 +123732,11 @@
         "lastUpdate": ""
       }
     },
-    "1252215": {
-      "id": "1252215",
+    "1252217": {
+      "id": "1252217",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -122776,14 +123746,14 @@
       "icon": "spell_shadow_shadowmend",
       "iconName": "spell_shadow_shadowmend",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 치유 (Shadow Mend)",
+      "description": "순간 치유를 더 강하고 마나 비용도 높은 어둠의 치유로 상시 바꾸는 선택 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122795,14 +123765,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowmend.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/음울한구원"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -124032,28 +125006,31 @@
         "lastUpdate": "2026-09-13"
       }
     },
-    "1253593": {
-      "id": "1253593",
-      "type": "atomic-skill",
+    "1253590": {
+      "id": "1253590",
+      "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
-      "name": "공허의 보호막",
-      "koreanName": "공허의 보호막",
-      "englishName": "Void Shield",
+      "name": "어둠 지배",
+      "koreanName": "어둠 지배",
+      "englishName": "Master the Darkness",
+      "aliases": [
+        "어둠 지배 첫 노드"
+      ],
       "icon": "inv12_apextalent_priest_voidshield",
       "iconName": "inv12_apextalent_priest_voidshield",
       "school": "",
-      "cooldown": "7.5초",
-      "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 공허의 보호막 (Void Shield)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "회개 시전으로 신의 권능: 보호막을 공허의 보호막으로 바꾸는 정점 특성이다. 현재 표시 확률은 25%이며 사용권은 최대 2개다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124066,16 +125043,127 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.034,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\어둠지배-첫노드.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253591": {
+      "id": "1253591",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어둠 지배",
+      "koreanName": "어둠 지배",
+      "englishName": "Master the Darkness",
+      "aliases": [
+        "공허의 보호막 사용권"
+      ],
+      "icon": "inv_nullstone_void",
+      "iconName": "inv_nullstone_void",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "신의 권능: 보호막을 공허의 보호막으로 바꾸는 강화 사용권이다. 최대 2개를 60초 동안 보유한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_void.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_nullstone_void.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_nullstone_void.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_nullstone_void.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_void.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-첫노드",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\어둠지배-사용권.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253593": {
+      "id": "1253593",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "공허의 보호막",
+      "koreanName": "공허의 보호막",
+      "englishName": "Void Shield",
+      "icon": "inv12_apextalent_priest_voidshield",
+      "iconName": "inv12_apextalent_priest_voidshield",
+      "school": "",
+      "cooldown": "보호막과 공유 · 기본 7.5초",
+      "castTime": "즉시",
+      "resourceCost": "마나 · 보호막과 공유",
+      "range": "40야드",
+      "description": "어둠 지배로 신의 권능: 보호막이 강화된 실제 시전 주문이다. 아군 3명에게 15초 동안 보호막을 부여하고 속죄를 적용한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_priest_voidshield.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_priest_voidshield.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_priest_voidshield.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-첫노드",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -124302,7 +125390,7 @@
       "id": "1253724",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -124312,14 +125400,14 @@
       "icon": "spell_paladin_inquisition",
       "iconName": "spell_paladin_inquisition",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 상급 성스러운 일격 (Greater Smite)",
+      "description": "성스러운 일격 시전 시 성스러운 일격 피해를 중첩당 25% 높이는 효과를 얻는다. 최대 2중첩이며 4초 동안 지속된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124331,14 +125419,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_inquisition.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -124717,6 +125808,117 @@
         "lastUpdate": ""
       }
     },
+    "1253827": {
+      "id": "1253827",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어둠 지배",
+      "koreanName": "어둠 지배",
+      "englishName": "Master the Darkness",
+      "aliases": [
+        "어둠 지배 마지막 노드"
+      ],
+      "icon": "inv12_apextalent_priest_voidshield",
+      "iconName": "inv12_apextalent_priest_voidshield",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정신 분열이 다음 신의 권능: 보호막을 공허의 보호막으로 확정 강화한다. 공허의 보호막은 흡수한 피해의 10%를 적에게 반사하며 이 피해도 속죄에 기여한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_priest_voidshield.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_priest_voidshield.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_priest_voidshield.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\어둠지배-마지막노드.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253828": {
+      "id": "1253828",
+      "type": "proc",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "공허의 보호막",
+      "koreanName": "공허의 보호막",
+      "englishName": "Void Shield",
+      "aliases": [
+        "공허의 보호막 반사"
+      ],
+      "icon": "ability_priest_reflectiveshield",
+      "iconName": "ability_priest_reflectiveshield",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "마지막 어둠 지배가 있는 공허의 보호막에서 실제 흡수된 피해의 10%에 따라 발생하는 자동 반사 피해다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_reflectiveshield.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_reflectiveshield.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_reflectiveshield.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_reflectiveshield.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_reflectiveshield.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Procs\\공허의보호막-반사.md",
+        "lastUpdate": ""
+      }
+    },
     "1253830": {
       "id": "1253830",
       "type": "hero-talent",
@@ -124873,6 +126075,62 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\공용\\Procs\\축성된무장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1253845": {
+      "id": "1253845",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어둠 지배",
+      "koreanName": "어둠 지배",
+      "englishName": "Master the Darkness",
+      "aliases": [
+        "어둠 지배 중간 노드"
+      ],
+      "icon": "inv12_apextalent_priest_voidshield",
+      "iconName": "inv12_apextalent_priest_voidshield",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "암흑 피해와 속죄 치유량을 등급당 3% 증가시키며 최대 2등급이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_priest_voidshield.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_priest_voidshield.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_priest_voidshield.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidshield.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-첫노드",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\어둠지배-중간노드.md",
         "lastUpdate": ""
       }
     },
@@ -135794,14 +137052,14 @@
       "icon": "ability_rogue_sanguinaryvein",
       "iconName": "ability_rogue_sanguinaryvein",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 맥박 촉진 (Quickened Pulse)",
+      "description": "수양의 어둠의 권능: 고통과 혼돈의 균열은 25% 더 자주 피해를 입힌다. 암흑의 현재 툴팁 표기는 약 14.94%다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135813,14 +137071,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sanguinaryvein.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -135843,14 +137105,14 @@
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
       "iconName": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 손길 (Touch of the Void)",
+      "description": "혼돈의 균열이 끝나도 공허의 심장이 8초 더 유지된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135864,12 +137126,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의심장",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허주입"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -135892,14 +137158,14 @@
       "icon": "inv_shadowelementalmount",
       "iconName": "inv_shadowelementalmount",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 압도적인 어둠 (Overwhelming Shadows)",
+      "description": "수양의 정신 분열 피해는 100%, 암흑의 공허의 격류 피해는 30% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135911,14 +137177,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_shadowelementalmount.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -141318,14 +142586,14 @@
       "icon": "spell_priest_power-word",
       "iconName": "spell_priest_power-word",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 현자의 말 (Words of the Wise)",
+      "description": "수양은 순간 치유·어둠의 치유·간청·광휘의 치유량이 15% 증가한다. 신성은 빛의 권능: 평온과 신성화의 치유량이 40% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141337,14 +142605,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_power-word.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/간청",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -141367,14 +142640,14 @@
       "icon": "spell_priest_pontifex",
       "iconName": "spell_priest_pontifex",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선지자의 통찰 (Prophet's Insight)",
+      "description": "수양은 신성 주문에서 생기는 속죄 치유량이 15% 증가한다. 신성은 빛의 권능 주문의 재사용 대기시간이 5초 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141386,14 +142659,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_pontifex.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -141416,14 +142694,14 @@
       "icon": "spell_holy_mindvision",
       "iconName": "spell_holy_mindvision",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 펼쳐지는 시야 (Unfolding Vision)",
+      "description": "수양의 보호막/공허의 보호막이 흡수량을 남기고 만료되면 주위 부상당한 아군에게 한 번 옮겨간다. 신성의 회복의 기원은 치유 없이 만료되면 아군에게 옮겨가며 2중첩을 잃는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141435,14 +142713,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_mindvision.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -145103,7 +146384,7 @@
       "id": "1280131",
       "type": "talent",
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
@@ -145113,14 +146394,14 @@
       "icon": "spell_holy_penance",
       "iconName": "spell_holy_penance",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 타오르는 빛 (Searing Light)",
+      "description": "회개가 입힌 피해의 20%를 8초 동안 추가로 입힌다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145132,18 +146413,74 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_penance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\타오르는빛.md",
+        "lastUpdate": ""
+      }
+    },
+    "1280137": {
+      "id": "1280137",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "환각의 마귀",
+      "koreanName": "환각의 마귀",
+      "englishName": "Mindbender",
+      "icon": "spell_shadow_soulleech_3",
+      "iconName": "spell_shadow_soulleech_3",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "사도를 사용하면 12초 동안 적을 공격하는 환각의 마귀가 소환된다. 공격할 때마다 최대 마나의 0.2%를 회복한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_soulleech_3.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_soulleech_3.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_soulleech_3.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사",
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\환각의마귀-수양.md",
         "lastUpdate": ""
       }
     },
@@ -146457,6 +147794,115 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Talents\\시즌-2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296577": {
+      "id": "1296577",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "Priest Discipline 12.1 Class Set 2pc",
+      "koreanName": "Priest Discipline 12.1 Class Set 2pc",
+      "englishName": "Priest Discipline 12.1 Class Set 2pc",
+      "aliases": [
+        "수양 시즌 2 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1 시즌 2 수양 2세트는 회개의 공격력과 치유량을 20% 늘리고 회개를 시전할 때 정신 분열의 재사용 대기시간을 2초 줄인다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.026,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296578": {
+      "id": "1296578",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "Priest Discipline 12.1 Class Set 4pc",
+      "koreanName": "Priest Discipline 12.1 Class Set 4pc",
+      "englishName": "Priest Discipline 12.1 Class Set 4pc",
+      "aliases": [
+        "수양 시즌 2 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1 시즌 2 수양 4세트는 정신 분열 사용 후 다음 신의 권능: 보호막 또는 공허의 보호막 흡수량을 25% 늘린다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
@@ -149003,6 +150449,58 @@
         "lastUpdate": "2026-09-08"
       }
     },
+    "1298779": {
+      "id": "1298779",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "음울한 구원",
+      "koreanName": "음울한 구원",
+      "englishName": "Grim Deliverance",
+      "icon": "spell_bastion_priest_shadow",
+      "iconName": "spell_bastion_priest_shadow",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "어둠의 치유의 치유량이 40% 증가하고 적용하는 속죄가 4초 길어지지만 시전 시간이 0.3초 늘어난다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_bastion_priest_shadow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_bastion_priest_shadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_bastion_priest_shadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_bastion_priest_shadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_bastion_priest_shadow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\음울한구원.md",
+        "lastUpdate": ""
+      }
+    },
     "1299389": {
       "id": "1299389",
       "type": "buff",
@@ -150167,6 +151665,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Procs\\천상의-심판관-1306923.md",
+        "lastUpdate": ""
+      }
+    },
+    "1307795": {
+      "id": "1307795",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "name": "어둠의 전이",
+      "koreanName": "어둠의 전이",
+      "englishName": "Dark Transference",
+      "icon": "spell_priest_burningwill_shadow",
+      "iconName": "spell_priest_burningwill_shadow",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "시즌 2 4세트로 정신 분열 이후 얻는 다음 보호막 흡수량 25% 강화 버프다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill_shadow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_burningwill_shadow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_burningwill_shadow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_burningwill_shadow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_burningwill_shadow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Buffs\\어둠의전이.md",
         "lastUpdate": ""
       }
     },

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T21:00:06.143Z",
+    "generatedAt": "2026-09-20T22:18:06.481Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 553,
-    "rawTotalSynergies": 553,
+    "totalSynergies": 565,
+    "rawTotalSynergies": 565,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -38,7 +38,7 @@
       "damage-resource": 1,
       "defensive-recovery": 1,
       "hero_talent_sentinel": 1,
-      "mechanic": 15,
+      "mechanic": 41,
       "frostfire_hero_tree": 1,
       "spellslinger_hero_tree": 1,
       "sunfury_hero_tree": 1,
@@ -112,20 +112,6 @@
       "herald-of-the-sun-shared": 1,
       "conditional-mechanic": 23,
       "archon_halo_power_window_router": 1,
-      "voidweaver_damage_window_router": 1,
-      "shared_personal_survival": 2,
-      "shared_raid_utility": 2,
-      "shared_mythic_plus_utility": 1,
-      "oracle_preheal_router": 1,
-      "defensive_sequence": 1,
-      "voidweaver_damage_healing": 1,
-      "major-cooldown": 1,
-      "raid_preheal": 1,
-      "dot-maintenance": 1,
-      "atonement_setup": 1,
-      "spot-healing": 1,
-      "oracle_healing_safety": 1,
-      "damage-to-healing": 1,
       "holy_word_cycle": 1,
       "holy_word_charge_cycle": 1,
       "filler_proc": 1,
@@ -217,6 +203,8 @@
       "mountain_thane_thunder_router": 1,
       "slayer_execute_router": 1,
       "shared_interrupt_control": 1,
+      "shared_raid_utility": 1,
+      "shared_personal_survival": 1,
       "shared_aoe_pressure": 1,
       "slayer-hero-package": 1,
       "burst-window-core": 1,
@@ -259,7 +247,7 @@
       "Monk": 42,
       "Paladin": 45,
       "성기사": 10,
-      "Priest": 40,
+      "Priest": 52,
       "Rogue": 36,
       "Shaman": 34,
       "Warlock": 60,
@@ -11686,40 +11674,16 @@
     "priest_common_voidweaver_rift_void_blast": {
       "id": "priest_common_voidweaver_rift_void_blast",
       "name": "Voidweaver-혼돈의균열-공허폭발",
+      "description": "정신 분열로 균열을 열고 전문화별로 교체되는 공허의 폭발을 사용한다. 공허의 손길은 공허의 심장만 연장하며 망령은 균열 종료에 자동 소환된다.",
       "type": "synergy",
-      "synergyType": "voidweaver_damage_window_router",
+      "synergyType": "mechanic",
       "participants": [
-        "447444",
-        "448278",
-        "448403",
-        "449880",
-        "449912",
-        "450138",
-        "450405",
-        "450612",
-        "451018",
-        "451204",
-        "451234",
-        "451311",
-        "451569",
-        "451840",
-        "1266845",
-        "1266856",
-        "1266883",
-        "34433",
-        "123040",
-        "214621",
-        "47540",
-        "81749",
-        "263165",
         "8092",
-        "15407",
-        "589",
-        "34914",
-        "32379",
-        "199484",
-        "200174",
-        "373202"
+        "447444",
+        "450405",
+        "449880",
+        "1266856",
+        "451234"
       ],
       "class": "Priest",
       "spec": "공용",
@@ -11729,20 +11693,12 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/정신분열"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\Voidweaver-혼돈의균열-공허폭발.md",
         "lastUpdate": ""
@@ -11751,20 +11707,14 @@
     "priest_common_desperate_prayer_fade_survival": {
       "id": "priest_common_desperate_prayer_fade_survival",
       "name": "사제공용-구원의기도-소실-생존",
+      "description": "구원의 기도는 일시적 최대 생명력과 회복, 반투명 형상을 선택한 소실은 피해 감소다. 보호의 빛은 자신에게 직접 치유한 조건을 확인한다.",
       "type": "synergy",
-      "synergyType": "shared_personal_survival",
+      "synergyType": "mechanic",
       "participants": [
         "19236",
         "586",
-        "1706",
-        "73325",
-        "8122",
-        "33206",
-        "47788",
-        "47585",
-        "440669",
-        "458718",
-        "451840"
+        "373446",
+        "193063"
       ],
       "class": "Priest",
       "spec": "공용",
@@ -11775,18 +11725,10 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/공중부양",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -11798,23 +11740,12 @@
     "priest_common_power_infusion_raid_utility": {
       "id": "priest_common_power_infusion_raid_utility",
       "name": "사제공용-마력주입-공격대유틸",
+      "description": "태양 여사제의 쌍둥이를 선택하면 아군에게 마력 주입을 주면서 자신도 같은 가속을 받는다. 기본 마력 주입만으로 두 대상에게 항상 적용되는 것은 아니다.",
       "type": "synergy",
-      "synergyType": "shared_raid_utility",
+      "synergyType": "mechanic",
       "participants": [
         "10060",
-        "21562",
-        "32375",
-        "528",
-        "527",
-        "73325",
-        "8122",
-        "586",
-        "1706",
-        "453",
-        "33206",
-        "62618",
-        "47788",
-        "15487"
+        "373466"
       ],
       "class": "Priest",
       "spec": "공용",
@@ -11825,26 +11756,12 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의권능인내",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/대규모무효화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/침묵",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/공중부양",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신의위안",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의권능방벽"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\사제공용-마력주입-공격대유틸.md",
         "lastUpdate": ""
@@ -11853,46 +11770,28 @@
     "priest_common_purify_mass_dispel_mythic_utility": {
       "id": "priest_common_purify_mass_dispel_mythic_utility",
       "name": "사제공용-정화-대규모무효화-쐐기유틸",
+      "description": "정화는 아군 해로운 마법, 정화 연마는 추가 질병, 마법 무효화는 적의 이로운 마법을 지운다. 대규모 무효화는 인원·범위·쿨다운·마나 조건을 따로 본다.",
       "type": "synergy",
-      "synergyType": "shared_mythic_plus_utility",
+      "synergyType": "mechanic",
       "participants": [
         "527",
-        "528",
+        "390632",
         "32375",
-        "73325",
-        "8122",
-        "586",
-        "1706",
-        "19236",
-        "47585",
-        "15487",
-        "10060",
-        "21562"
+        "528"
       ],
       "class": "Priest",
       "spec": "공용",
       "specs": [
         "Discipline",
-        "Holy",
-        "Shadow"
+        "Holy"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/대규모무효화",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/공중부양",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신의위안",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/침묵",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의권능인내"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -11904,35 +11803,15 @@
     "priest_common_oracle_predictive_safety": {
       "id": "priest_common_oracle_predictive_safety",
       "name": "예언자-예측치유-안전망",
+      "description": "수양은 회개와 보호막, 신성은 회복의 기원을 중심으로 적용된다. 같은 영웅 특성이어도 발동 방향·추가 충전·자동 부여 기술을 전문화별로 구분한다.",
       "type": "synergy",
-      "synergyType": "oracle_preheal_router",
+      "synergyType": "mechanic",
       "participants": [
         "433905",
-        "440662",
-        "440669",
-        "440670",
-        "440671",
-        "440681",
-        "440738",
-        "440742",
         "440766",
-        "458718",
-        "1246799",
-        "1246802",
+        "440742",
         "1248423",
-        "1272352",
-        "1272359",
-        "1272363",
-        "17",
-        "194509",
-        "81749",
-        "47540",
-        "472433",
-        "2050",
-        "34861",
-        "33076",
-        "200183",
-        "47788"
+        "1272363"
       ],
       "class": "Priest",
       "spec": "공용",
@@ -11942,16 +11821,8 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/신의의도약",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -11962,223 +11833,389 @@
     "priest_discipline_pain_suppression_barrier": {
       "id": "priest_discipline_pain_suppression_barrier",
       "name": "고통억제-방벽",
+      "description": "고통 억제는 기본 40%, 예견된 상황 선택 시 50% 감소다. 약자의 보호자/고통 변형, 방벽/궁극의 참회는 각각 선택 관계라 동시에 보유했다고 가정하지 않는다.",
       "type": "synergy",
-      "synergyType": "defensive_sequence",
+      "synergyType": "mechanic",
       "participants": [
         "33206",
-        "17",
-        "62618",
-        "197045",
-        "47515",
-        "238063",
-        "238135",
-        "231682",
-        "372991",
+        "440738",
         "373035",
-        "1252215"
+        "372991",
+        "62618",
+        "421453"
       ],
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의권능방벽",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/수양보호막",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/천상의아이기스",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/관용",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/영원의방벽",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/성역",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의권능방벽",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/궁극의참회"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\고통억제-방벽.md",
         "lastUpdate": ""
       }
     },
-    "priest_discipline_voidweaver_rift": {
-      "id": "priest_discipline_voidweaver_rift",
-      "name": "공허술사-혼돈의균열",
+    "priest_discipline_rift_end": {
+      "id": "priest_discipline_rift_end",
+      "name": "공허술사-종료후효과",
+      "description": "공허의 손길은 균열 종료 뒤 공허의 심장만 8초 남긴다. 공허의 망령은 자동 소환되지만 공허의 폭발 사용권이나 공허 주입이 같이 연장되는 것은 아니다.",
       "type": "synergy",
-      "synergyType": "voidweaver_damage_healing",
+      "synergyType": "mechanic",
       "participants": [
         "447444",
-        "81749",
-        "8092",
-        "450405",
-        "373054",
-        "1235211",
-        "472568",
-        "1250293",
-        "373427",
-        "1240364",
-        "451840",
-        "450612",
-        "448403",
-        "449880"
+        "449880",
+        "1266856",
+        "451234",
+        "81749"
       ],
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/심연의몽상",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/암흑추출",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/잠식하는어둠",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/죽음의고통",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/사술사"
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\공허술사-종료후효과.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_voidweaver_rift": {
+      "id": "priest_discipline_voidweaver_rift",
+      "name": "공허술사-혼돈의균열",
+      "description": "정신 분열로 균열을 연 뒤 성스러운 일격 대신 공허의 폭발을 사용한다. 수양의 실제 시전은 450215이며 암흑의 광기 생성 기술과 다르다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "8092",
+        "447444",
+        "450405",
+        "450215",
+        "81749"
       ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\공허술사-혼돈의균열.md",
         "lastUpdate": ""
       }
     },
-    "궁극의참회_대형속죄복구": {
-      "id": "궁극의참회_대형속죄복구",
-      "name": "궁극의참회-대형속죄복구",
+    "priest_discipline_rift_penance": {
+      "id": "priest_discipline_rift_penance",
+      "name": "공허술사-회개-폭발",
+      "description": "회개 화살은 공허 붕괴를 강화하고 공허 주입은 균열 중 회개·공허의 폭발의 속죄 전환을 높인다. 상급 성스러운 일격은 성스러운 일격 계열 시전으로 쌓는 별도 강화다.",
       "type": "synergy",
-      "synergyType": "major-cooldown",
+      "synergyType": "mechanic",
       "participants": [
-        "421453",
+        "585",
         "47540",
-        "81749",
-        "47515",
-        "322115",
-        "390786",
-        "390684",
-        "197862",
-        "373180"
+        "447444",
+        "448403",
+        "1253724",
+        "450215",
+        "450612",
+        "81749"
       ],
       "class": "Priest",
       "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의폭발-수양시전",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/궁극의참회",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/빛의약조",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/번영과역경",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/천상의아이기스",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/찬란한동공",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/상급성스러운일격"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\공허술사-회개-폭발.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_shield_reflect": {
+      "id": "priest_discipline_shield_reflect",
+      "name": "공허의보호막-반사속죄",
+      "description": "마지막 정점이 있으면 공허의 보호막의 실제 흡수량 10%가 반사 피해와 속죄에 연결된다. 맞은 전체 피해나 사용 시점에 보인 보호막 최대량을 그대로 환산하지 않는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1253593",
+        "1253827",
+        "1253828",
+        "81749"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Procs/공허의보호막-반사"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\공허의보호막-반사속죄.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_radiance_bolts": {
+      "id": "priest_discipline_radiance_bolts",
+      "name": "광휘-엄격한규율-회개",
+      "description": "광휘가 회개 추가 화살 사용권을 제공한다. 두 개의 사용권을 한 번의 회개에 합산하지 않고, 뒤 화살을 강화하는 신성 광선까지 고려해 채널을 사용한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "194509",
+        "373180",
+        "373183",
+        "47540",
+        "193134",
+        "372969"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/엄격한규율-효과"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/책망",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신성광선"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\광휘-엄격한규율-회개.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_ultimate": {
+      "id": "priest_discipline_ultimate",
+      "name": "궁극의참회-대형속죄복구",
+      "description": "공격 궁극의 참회 전에 속죄를 적용한다. 공허술사는 정신 분열로 균열을 열어 연계한다. 상승 중 보호막 예약은 타이밍을 익힌 뒤 사용하며 채널 중 아무 때나 다른 기술을 누르지 않는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "421453",
+        "194509",
+        "81749",
+        "8092",
+        "447444",
+        "1253593"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/궁극의참회"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\궁극의참회-대형속죄복구.md",
         "lastUpdate": ""
       }
     },
-    "priest_discipline_evangelism_ramp": {
-      "id": "priest_discipline_evangelism_ramp",
-      "name": "사도-속죄확장",
+    "priest_discipline_surge_heal": {
+      "id": "priest_discipline_surge_heal",
+      "name": "빛의쇄도-단일치유",
+      "description": "빛의 쇄도는 마나 50% 감소이며 무료가 아니다. 이동 중 직접 치유와 속죄가 필요한 대상에게 소비하고, 생명력이 충분할 때 발동 소모만을 위해 과치유하지 않는다.",
       "type": "synergy",
-      "synergyType": "raid_preheal",
+      "synergyType": "mechanic",
       "participants": [
-        "472433",
-        "81749",
-        "194509",
-        "197862",
-        "472361",
-        "390693",
-        "322115",
-        "373049",
-        "390685"
+        "109186",
+        "114255",
+        "2061",
+        "186263",
+        "81749"
       ],
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\빛의쇄도-단일치유.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_evangelism_choice": {
+      "id": "priest_discipline_evangelism_choice",
+      "name": "사도-마귀선택",
+      "description": "대천사의 18초 치유·흡수 강화와 환각의 마귀의 12초 소환은 선택 관계다. 마귀 빌드에서는 실제 소환 중 회개·정신 분열의 피할 수 없는 고통 연계를 확인한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "472433",
+        "197862",
+        "1280137",
+        "373427",
+        "47540",
+        "8092"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의행렬",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/내면의집중력",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/빛의약조",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/면책",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/인내의광채"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/환각의마귀-수양",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\사도-마귀선택.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_evangelism_ramp": {
+      "id": "priest_discipline_evangelism_ramp",
+      "name": "사도-속죄확장",
+      "description": "사도는 광휘를 즉시 시전하고 다음 두 광휘를 즉시·저비용으로 만든다. 과거 속죄 연장이 아니며, 대천사 선택 시 후속 치유·흡수가 강화된다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "472433",
+        "194509",
+        "197862",
+        "81749"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\사도-속죄확장.md",
         "lastUpdate": ""
       }
     },
-    "사악의정화_고통과고뇌_지속피해": {
-      "id": "사악의정화_고통과고뇌_지속피해",
+    "priest_discipline_pain_spread": {
+      "id": "priest_discipline_pain_spread",
       "name": "사악의정화-고통과고뇌-지속피해",
+      "description": "잠식하는 어둠과 어둠의 환희를 선택한 공격 회개는 고통을 전이하고 고통의 처벌은 지속시간을 늘린다. 사악의 정화는 독립 도트 버튼이 아니다.",
       "type": "synergy",
-      "synergyType": "dot-maintenance",
+      "synergyType": "mechanic",
       "participants": [
-        "1250218",
-        "390689",
-        "390686",
-        "585",
-        "1253724",
-        "1280131",
-        "215768",
-        "372969",
-        "110744",
-        "1240364"
+        "589",
+        "47540",
+        "472568",
+        "373003",
+        "390686"
       ],
       "class": "Priest",
       "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정화"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/사악의정화",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통과고뇌",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/상급성스러운일격",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/빛의불꽃",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신성광선",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/천상의별",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/타오르는빛",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통의처벌",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/죽음의고통"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/잠식하는어둠",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통의처벌"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\사악의정화-고통과고뇌-지속피해.md",
@@ -12188,85 +12225,140 @@
     "priest_discipline_atonement_radiance": {
       "id": "priest_discipline_atonement_radiance",
       "name": "속죄-신의권능광휘",
+      "description": "광휘의 속죄는 짧다. 피해 전에 보호막·직접 치유로 필요한 대상을 준비하고 광휘를 실제 피해 시점에 가깝게 사용한다. 회개는 새 속죄를 붙이지 않는다.",
       "type": "synergy",
-      "synergyType": "atonement_setup",
+      "synergyType": "mechanic",
       "participants": [
         "81749",
         "194509",
         "17",
-        "472433",
-        "197862",
-        "390685",
-        "390684",
-        "390691",
-        "390693",
-        "373049",
-        "322115",
-        "472361"
+        "186263",
+        "2061",
+        "200829"
       ],
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능광휘",
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/간청"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/인내의광채",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/찬란한동공",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/빌린시간",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/내면의집중력",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/면책",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/빛의약조",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/신의행렬"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\속죄-신의권능광휘.md",
         "lastUpdate": ""
       }
     },
-    "어둠의치유_약자보호_응급복구": {
-      "id": "어둠의치유_약자보호_응급복구",
-      "name": "어둠의치유-약자보호-응급복구",
+    "priest_discipline_s2_shield": {
+      "id": "priest_discipline_s2_shield",
+      "name": "시즌2-정신분열-보호막",
+      "description": "4세트의 어둠의 전이는 다음 일반 보호막 또는 공허의 보호막 하나를 강화한다. 정점의 사용권과 흡수량 강화는 서로 다른 효과다.",
       "type": "synergy",
-      "synergyType": "spot-healing",
+      "synergyType": "mechanic",
       "participants": [
-        "1252215",
-        "373035",
-        "372991",
-        "238135",
-        "231682",
-        "238063",
+        "1296578",
+        "8092",
+        "1307795",
         "17",
-        "33206"
+        "1253593"
       ],
       "class": "Priest",
       "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/고통억제",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/어둠의전이"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\시즌2-정신분열-보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_s2_penance": {
+      "id": "priest_discipline_s2_penance",
+      "name": "시즌2-회개-정신분열",
+      "description": "시즌 2 2세트는 회개 시전마다 정신 분열을 2초 당긴다. 공허술사는 그만큼 균열을 다시 열 기회가 늘지만 화살마다 2초 감소하는 것은 아니다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1296577",
+        "47540",
+        "8092",
+        "447444"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/시즌2-2세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\시즌2-회개-정신분열.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_shadow_mend": {
+      "id": "priest_discipline_shadow_mend",
+      "name": "어둠의치유-약자보호-응급복구",
+      "description": "어둠의 치유는 선택하면 상시 사용 가능하다. 음울한 구원의 큰 치유·긴 속죄와 느려진 시전 시간을 고려해 급한 대상은 보호막·생존기부터 연결한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "1252217",
+        "186263",
+        "1298779",
+        "81749",
+        "109186",
+        "193063"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/어둠의치유-시전",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의치유",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/약자의보호자",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/고통변형",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/영원의방벽",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/성역",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/관용"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/음울한구원"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\어둠의치유-약자보호-응급복구.md",
@@ -12276,83 +12368,211 @@
     "priest_discipline_oracle_piety": {
       "id": "priest_discipline_oracle_piety",
       "name": "예언자-경건보호",
+      "description": "인도의 빛으로 회개를 더 저장하고 두 개의 시야로 반대 방향 화살을 보낸다. 아군 직접 치유와 적 피해를 함께 활용하지만 새 속죄는 별도로 붙여야 한다.",
       "type": "synergy",
-      "synergyType": "oracle_healing_safety",
+      "synergyType": "mechanic",
       "participants": [
-        "47540",
-        "440742",
-        "1246802",
-        "472433",
-        "197862",
-        "440662",
-        "440766",
-        "440671",
-        "1246799",
         "1248423",
-        "433905",
-        "1272359",
-        "1272363"
+        "440742",
+        "47540",
+        "1246799",
+        "81749",
+        "1246802"
       ],
       "class": "Priest",
-      "spec": "수양",
+      "spec": "Discipline",
       "specs": [
         "Discipline"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/사도"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/대천사"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\예언자-경건보호.md",
         "lastUpdate": ""
       }
     },
-    "회개_정신분열_속죄전환": {
-      "id": "회개_정신분열_속죄전환",
-      "name": "회개-정신분열-속죄전환",
+    "priest_discipline_guaranteed_shield": {
+      "id": "priest_discipline_guaranteed_shield",
+      "name": "정신분열-공허의보호막",
+      "description": "마지막 어둠 지배가 있으면 정신 분열 뒤 공허의 보호막 사용권을 확정 얻는다. 시즌 2 세트가 없어도 동작하는 정점 효과다.",
       "type": "synergy",
-      "synergyType": "damage-to-healing",
+      "synergyType": "mechanic",
+      "participants": [
+        "8092",
+        "1253827",
+        "1253591",
+        "1253593"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/어둠지배-사용권"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-마지막노드"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\정신분열-공허의보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_execute_pet": {
+      "id": "priest_discipline_execute_pet",
+      "name": "죽음-어둠의마귀",
+      "description": "어둠의 마귀를 선택한 수양은 20% 미만 대상의 죽음으로 자동 소환한다. 피할 수 없는 고통은 마귀가 실제로 있을 때만 가치를 얻는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "32379",
+        "34433",
+        "373427",
+        "47540",
+        "8092"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\죽음-어둠의마귀.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_weal_shield": {
+      "id": "priest_discipline_weal_shield",
+      "name": "회개-번영과역경-보호막",
+      "description": "회개 화살이 쌓는 번영과 역경은 중첩당 3%, 최대 10중첩이다. 다음 보호막으로 소비하되 최대 중첩만 기다리다가 위험한 아군을 놓치지 않는다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "47540",
+        "390786",
+        "390787",
+        "17",
+        "1253593"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/신의권능보호막",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/번영과역경-효과"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/번영과역경"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\회개-번영과역경-보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_shield_deck": {
+      "id": "priest_discipline_shield_deck",
+      "name": "회개-어둠지배-사용권",
+      "description": "회개 발동과 정신 분열 확정 부여는 같은 강화 사용권에 합쳐진다. 최대 2개를 넘기거나 만료시키지 않되 보호막의 공유 쿨다운도 확인한다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "47540",
+        "1253590",
+        "1253591",
+        "1253593"
+      ],
+      "class": "Priest",
+      "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/공허의보호막"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/어둠지배-사용권"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠지배-첫노드"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\회개-어둠지배-사용권.md",
+        "lastUpdate": ""
+      }
+    },
+    "priest_discipline_penance_atonement": {
+      "id": "priest_discipline_penance_atonement",
+      "name": "회개-정신분열-속죄전환",
+      "description": "어둠의 방종이 정신 분열 뒤 어두운 면의 힘을 확정 부여한다. 속죄를 먼저 준비해야 강화 회개의 피해가 필요한 아군 치유로 이어진다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
       "participants": [
         "47540",
         "8092",
         "81749",
-        "373003",
-        "198068",
-        "373180",
-        "193134",
         "372972",
-        "390832",
-        "1235211",
-        "1250293"
+        "198068",
+        "198069"
       ],
       "class": "Priest",
       "spec": "Discipline",
+      "specs": [
+        "Discipline"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/수양/Buffs/어두운면의힘-효과"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/엄격한규율",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/책망",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의환희",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/대속",
         "08-직업별-Knowledge-Base/09-사제/수양/Talents/어둠의방종",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/암흑추출",
-        "08-직업별-Knowledge-Base/09-사제/수양/Talents/사술사"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/어두운면의힘"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Synergies\\회개-정신분열-속죄전환.md",

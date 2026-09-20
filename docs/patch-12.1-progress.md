@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 30 manuscripts labeled 12.1 and 10 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 31 manuscripts labeled 12.1 and 9 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -237,15 +237,26 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Sanitized production build succeeded as `main.46875866.js`; credential, environment-file and source-map scans passed. `node scripts/verify-retribution-guide.cjs` passed all eighteen hero/mode/viewport combinations locally and on https://wowmeta.vercel.app at 1440px, 390px and 320px, including seven-step openers, keyboard disclosure, 16px icons, numeric current casts, ten center relationships and no horizontal overflow. Desktop/mobile screenshots were inspected. Production deployment `dpl_GfbH5T5fa1Xutuz9wFQqhPZAQ29b` is Ready and the public route returns HTTP 200 with the expected bundle.
 - Limits: current WCL/Archon aggregate data, personal simulations and private Discord messages were not obtained. Shared Holy Judgment still needs its own re-audit. Dense graph labels overlap; 23 global KB link warnings, mixed-patch metadata and the 1.65 MB gzip bundle remain. Canonical Markdown/JSON is outside the site repository; the commit contains generated DB and site content, not a remote vault backup.
 
+## Discipline Priest: updated 2026-09-21
+
+- Replaced the 12.0.5 manuscript in place with 17 manually authored subjects, twelve practical tips and separate Voidweaver/Oracle preparation, single-person rescue and group-healing modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/09-사제/수양/Meta/guide-12.1.json`. The other 39 manuscripts are unchanged.
+- Compared Blizzard's 12.1 update and August 18/September 1 hotfixes, AutomaticJak's Wowhead, Clandon's public Icy Veins and Grafe's Method guides, current Korean/English tooltips and fixed SimC commit `e9a81d3415d317e1fadb961dfdcb0decd34c525f`. Raid Voidweaver/M+ Oracle recommendations are author advice, not measured usage rates. Private Warcraft Priests discussions and current Archon aggregates were not obtained.
+- Manually rewrote/reviewed all 62 local atomic notes and 62 related common records. Separated Shadow Mend's talent and real cast, Atonement's passive and applied buff, all three apex nodes, Void Shield uses/reflection, Season 2 effects and Discipline/Shadow Mindbender. Removed obsolete IDs 110744, 214621, 1252215 and 123040 from current data. Generated DB changes are confined to Priest; historical log reports remain unchanged.
+- A mechanics review after metadata checks caught and corrected Inner Focus's critical-chance bonus, Occultist's Shadow damage/healing modifier, Greater Smite's Smite trigger, Blaze of Light's damage-only modifier, per-bolt Painful Punishment and Mass Dispel's allied dispel count. Name/icon checks alone did not establish these effects. Set-effect names/icons retain the official API's untranslated internal values, with Korean explanatory document headings.
+- Authored 21 local numeric-ID relationships and five related common relationships. Atonement is the center with eleven actual direct relationships. Removed fabricated uptime segments and replaced the old specialist chart with eight authored healing/defensive situations; Barrier and Ultimate Penitence remain alternatives, not simultaneous casts. Added healing-specific tab labels using the existing renderer's fallback, and fixed narrow-screen tabs so they no longer require horizontal dragging.
+- Online strict name/icon/metadata/link checks passed for 62 local and 75 common notes, plus a separate online name/icon check for eight referenced Class-Talents notes. Fixed the additional Resonant Energy icon mismatch found in common metadata; its older Holy/Shadow mechanics still need re-audit. Explicit guide icon/name checks passed for 25 spell IDs. Canonical equality, scope/identity/mechanic assertions, all 40-guide validations and the full real-site prebuild passed.
+- Sanitized production build succeeded as `main.275c2d58.js`. The new deployment staging folder contains only the six generated public files, with no matched local credential values, environment files or source maps. Local and production browser checks passed all eighteen hero/mode/viewport combinations at 1440px, 390px and 320px, including 16px opener icons, mode/hero spell identity, no document/chart/tab overflow and no broken loaded chart images. Keyboard disclosure and the eleven-connection graph center were checked locally; desktop/mobile screenshots were inspected. Production deployment `dpl_BBjy1wTkCzLXyhjx5Qkg9DWj8QFP` is Ready and the public route and icon asset return HTTP 200.
+- Limits: no current WCL/Archon aggregate, personal healing simulation or private Discord evidence is claimed. Dense graph-label layout, older shared Holy/Shadow mechanics, fifteen global broken-link warnings, eight non-Korean guide-URL warnings, mixed-patch metadata and the 1.67 MB gzip bundle remain. Canonical Markdown/JSON remains outside the site Git repository; this commit preserves generated DB and site content, not a remote vault backup.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 10 manuscripts
+## Still 12.0.5: 9 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Priest | Discipline, Shadow |
+| Priest | Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
 | Warrior | Protection, Arms, Fury |
@@ -253,7 +264,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 10 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 9 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

@@ -1740,14 +1740,24 @@ const SPECIALIST_CHARTS = {
   },
   'priest-discipline': {
     id: 'defensive',
-    title: '속죄 예열과 피해 회수',
-    sectionHeading: '속죄 준비와 외생기 배정',
-    sectionIntro: '수양 사제는 피해 전에 속죄와 보호막을 깔고, 피해 직후 회개와 정신 분열로 회수하는 선제형 힐러입니다. 구버전 보호막 강화 스킬명을 현재 쓰는 스킬처럼 보지 말고, 사도, 광휘, 공허의 보호막, 직접 복구 흐름을 기준으로 판단합니다.',
-    caption: '신의 권능: 보호막, 공허의 보호막, 신의 권능: 광휘, 사도, 회개, 정신 분열, 궁극의 참회, 방벽과 외생기 배정을 확인합니다.',
+    title: '피해 상황에 맞는 치유 선택',
+    sectionHeading: '지금 필요한 회복과 다음 피해 대비',
+    sectionIntro: '큰 피해 전 준비, 한 명의 급락, 여러 명의 회복은 다른 판단입니다. 아래는 고정 순서나 실측 시간표가 아니라 상황별 대응입니다. 방벽과 궁극의 참회는 실제로 선택한 쪽만 사용합니다.',
+    caption: '속죄 준비가 필요한지, 즉시 구조해야 하는지, 다음 타격을 미리 줄일지를 구분합니다.',
     definition: [
-      ['의미', '속죄는 피해 주문을 치유로 바꾸는 준비 상태이고, 보호막과 외생기는 큰 피해 전에 먼저 들어가야 합니다.'],
-      ['읽는 법', '피해 전에는 속죄 대상 수와 광휘 충전을 보고, 피해 직후에는 회개와 정신 분열이 속죄가 남은 동안 들어가는지 확인합니다.'],
-      ['체크 포인트', '속죄 예열 늦음, 광휘 과소비, 보호막 누락, 궁극의 참회와 사도 중복, 방벽 배정 오류를 봅니다.'],
+      ['기준', '다음 타격을 버틸 수 있는지 먼저 보고 필요한 속죄·흡수·직접 치유를 고릅니다.'],
+      ['전환', '필요한 대상의 속죄 준비가 끝나면 공격 치유로 넘어갑니다. 준비만 반복하지 않습니다.'],
+      ['확인', '선택 특성, 보호막 사용권과 공유 쿨다운, 회개 충전, 실제 부상자를 함께 봅니다.'],
+    ],
+    events: [
+      { phase: '한 명의 치명적인 타격 전', skillId: '33206', label: '고통 억제', note: '기본 피해 감소 40%, 예견된 상황을 선택한 예언자는 50%입니다. 고통 변형이 없다면 직접 치유·속죄 적용을 기대하지 않습니다.', action: '맞기 전에 줄이기' },
+      { phase: '즉시 흡수가 필요할 때', skillId: '1253593', label: '공허의 보호막', note: '사용권과 신의 권능: 보호막 공유 쿨다운을 확인합니다. 강화 최대 중첩을 기다리다 위험 대상을 잃지 않습니다.', action: '실제 피해 대상 보호' },
+      { phase: '한 명의 직접 회복 부족', skillId: '186263', label: '어둠의 치유', note: '선택한 빌드의 직접 치유입니다. 미선택 시 순간 치유를 사용하며 음울한 구원과 빛의 쇄도의 시전·마나 조건을 봅니다.', action: '공격 순서보다 구조' },
+      { phase: '배정한 큰 피해 직전', skillId: '472433', label: '사도', note: '즉시 강화 광휘와 다음 광휘 2회의 즉시 시전·마나 절약을 활용합니다. 기존 속죄 연장 버튼이 아닙니다.', action: '필요한 범위만 준비' },
+      { phase: '속죄 준비 후 실제 피해', skillId: '47540', label: '회개', note: '여럿이 다쳤으면 적 공격으로 속죄 치유, 급한 한 명은 직접 아군 치유를 판단합니다. 회개가 새 속죄를 붙이지는 않습니다.', action: '준비에서 회복으로 전환' },
+      { phase: '공허술사의 배정된 큰 회복', skillId: '421453', label: '궁극의 참회', note: '선택했다면 속죄와 정신 분열의 균열을 준비하고 적 대상으로 사용합니다. 긴 채널 중 이동과 생존을 먼저 확인합니다.', action: '대상·균열·배정 확인' },
+      { phase: '모여서 맞는 큰 피해 전', skillId: '62618', label: '신의 권능: 방벽', note: '궁극의 참회 대신 선택한 경우입니다. 피해 전에 설치하고 보호할 아군이 안에 머물 수 있는지 봅니다.', action: '같이 선택하는 쿨기가 아님' },
+      { phase: '해제 가능한 큰 피해', skillId: '527', label: '정화', note: '마법, 정화 연마 선택 시 질병을 해제합니다. 독·저주는 대상이 아니며 해제 폭발이나 위치 조건을 먼저 확인합니다.', action: '후속 피해 원인 제거' },
     ],
   },
   'priest-holy': {
@@ -2044,7 +2054,7 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
       <HeroBranchTabs role="group" aria-label="전투 상황 선택">
         {[['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']].map(([id, label]) => (
           <HeroBranchTab key={id} type="button" aria-pressed={mode === id} $active={mode === id} $color={guide.color} onClick={() => setMode(id)}>
-            {label}
+            {branch[id]?.tabLabel || label}
           </HeroBranchTab>
         ))}
       </HeroBranchTabs>
@@ -3303,88 +3313,8 @@ function findSkillByIds(data, ids) {
     .find(Boolean);
 }
 
-function getDisciplinePriestUptimeRows(data) {
-  return [
-    {
-      label: '중심 버프',
-      skill: findSkillByIds(data, ['81749']),
-      note: '모든 예열과 피해 전환 치유가 지나는 중앙 노드입니다. 대상 수와 남은 시간을 가장 먼저 봅니다.',
-      segments: [[6, 14], [28, 14], [50, 14], [72, 14]],
-    },
-    {
-      label: '광역 준비',
-      skill: findSkillByIds(data, ['194509']),
-      note: '다수 속죄를 피해 직전에 맞추는 충전 기술입니다. 너무 빠르면 속죄 시간이 새고, 너무 늦으면 사망이 납니다.',
-      segments: [[14, 8], [38, 8], [62, 8], [86, 8]],
-    },
-    {
-      label: '사도 예열',
-      skill: findSkillByIds(data, ['472433']),
-      note: '현재 사도는 속죄 연장 스킬이 아니라 5명 속죄를 직접 적용하고 다음 광휘 2회를 즉시화해 예열을 빠르게 완성하는 스킬입니다.',
-      segments: [[20, 14], [70, 14]],
-    },
-    {
-      label: '보호막 관리',
-      skill: findSkillByIds(data, ['1253593', '17']),
-      note: '공허의 보호막과 신의 권능: 보호막은 속죄 적용과 유효 체력을 동시에 만듭니다. 회개 전 공허의 보호막 발동 낭비를 확인합니다.',
-      segments: [[4, 10], [24, 10], [44, 10], [64, 10], [84, 10]],
-    },
-    {
-      label: '피해 복구',
-      skill: findSkillByIds(data, ['47540']),
-      note: '속죄가 살아 있을 때 회개가 실제 치유량을 되돌려 줍니다. 아군 회개와 적 회개는 상황에 따라 용도가 다릅니다.',
-      segments: [[23, 8], [33, 7], [73, 8], [83, 7]],
-    },
-    {
-      label: '지속 피해',
-      skill: findSkillByIds(data, ['1250218', '589']),
-      note: '사악의 정화나 어둠의 권능: 고통은 속죄 회수 구간의 바탕입니다. 회개 전이 조건과 지속 시간을 같이 봅니다.',
-      segments: [[2, 94]],
-    },
-    {
-      label: '예언자 안정성',
-      skill: findSkillByNames(data, ['두 개의 시야', '경건', '보장된 안전', '대천사']),
-      note: '현재 레이드와 쐐기 로그의 기본 영웅 특성 선택입니다. 회개 보강과 보호막 보조로 큰 쿨다운 사이 빈 구간을 메웁니다.',
-      segments: [[16, 10], [46, 10], [76, 10]],
-    },
-    {
-      label: '공허술사 피해 구간',
-      skill: findSkillByNames(data, ['혼돈의 균열', '공허 폭발']),
-      note: '선택 시 잦은 피해 구간을 속죄 대상에게 돌리는 분기입니다. 속죄 없는 균열은 낭비입니다.',
-      segments: [[30, 12], [80, 12]],
-    },
-    {
-      label: '대형 복구',
-      skill: findSkillByIds(data, ['421453']),
-      note: '궁극의 참회는 사도와 같은 피해에 겹치기보다 별도 이벤트에 배정할 때 쿨다운 분배가 안정됩니다.',
-      segments: [[54, 18]],
-    },
-    {
-      label: '외생기',
-      skill: findSkillByIds(data, ['33206', '62618']),
-      note: '탱커 급락, 위치 고정 공대 피해, 보호막 분배를 서로 다른 위험 구간에 나눕니다.',
-      segments: [[34, 12], [58, 12], [88, 10]],
-    },
-    {
-      label: '직접 복구',
-      skill: findSkillByIds(data, ['1252215', '2061']),
-      note: '한 명이 죽기 직전인 상황에서는 속죄 예열보다 직접 치유와 외생기 판단이 먼저입니다.',
-      segments: [[18, 7], [42, 7], [66, 7], [90, 7]],
-    },
-    {
-      label: '해제/유틸',
-      skill: findSkillByIds(data, ['527', '528', '32375']),
-      note: '위험 주문과 디버프를 제거하면 뒤따라와야 할 복구량 자체가 줄어듭니다.',
-      segments: [[12, 6], [36, 6], [60, 6], [82, 6]],
-    },
-  ];
-}
 
 function getUptimeRows(guide, data) {
-  if (guide.id === 'priest-discipline') {
-    return getDisciplinePriestUptimeRows(data);
-  }
-
   if (guide.id === 'druid-restoration') {
     return [
       {
@@ -5518,9 +5448,9 @@ const HeroBranchSectionHead = styled.div`
 
 const HeroBranchTabs = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 0;
   padding: 14px 14px 0;
-  overflow-x: auto;
   border-bottom: 1px solid rgba(168, 178, 188, 0.12);
 `;
 
@@ -5535,6 +5465,14 @@ const HeroBranchTab = styled.button`
   font-size: 0.86rem;
   font-weight: ${props => props.$active ? 740 : 560};
   transition: color 160ms ease, border-color 160ms ease;
+
+  @media (max-width: 600px) {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 8px 6px;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
 
   &:hover {
     color: #f2f4f5;

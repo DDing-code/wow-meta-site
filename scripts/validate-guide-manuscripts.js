@@ -27,6 +27,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['monk-brewmaster', '12.1'],
   ['paladin-protection', '12.1'],
   ['paladin-retribution', '12.1'],
+  ['priest-discipline', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
@@ -1163,6 +1164,34 @@ function main() {
   const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
   assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
   assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
+
+  const discipline = manuscripts['priest-discipline'];
+  const disciplineSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '09-사제', '수양', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(disciplineSource)) {
+    assert(JSON.stringify(JSON.parse(read(disciplineSource))) === JSON.stringify(discipline), 'Discipline must match its canonical 12.1 manuscript');
+  }
+  const disciplineNotes = Object.values(kbSkills).filter(skill => /[\\/]09-사제[\\/]수양[\\/]/.test(skill.source?.kbPath || ''));
+  assert(disciplineNotes.length === 62 && disciplineNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 20), 'All 62 Discipline notes must retain reviewed descriptions');
+  assert(!discipline.extraSkills?.length && !kbSkills['1252215'] && !kbSkills['214621'], 'Discipline must not bypass canonical data or revive obsolete spell IDs');
+  assert(kbSkills['81749']?.type === 'passive' && kbSkills['81749'].description.includes('46%') && kbSkills['194384']?.type === 'buff', 'Atonement passive, current rate and applied buff must remain distinct');
+  assert(kbSkills['1253591']?.type === 'buff' && kbSkills['1253828']?.type === 'proc' && kbSkills['1307795']?.type === 'buff', 'Void Shield uses, reflection and set bonus are not cast buttons');
+  assert(kbSkills['1296577']?.description.includes('시전할 때') && kbSkills['1296577'].description.includes('2초') && kbSkills['1296578']?.description.includes('25%'), 'Discipline tier must retain per-cast reduction and next-shield enhancement');
+  assert(kbSkills['1298779']?.description.includes('40%') && kbSkills['1298779'].description.includes('0.3초'), 'Grim Deliverance must not regress to launch values');
+  assert(kbSkills['390693']?.description.includes('확률') && kbSkills['390693'].description.includes('보호막'), 'Inner Focus increases critical chance for its actual spell list, not critical heal amount');
+  assert(kbSkills['1250293']?.description.includes('암흑') && kbSkills['1250293'].description.includes('15%') && !kbSkills['1250293'].description.includes('대기시간'), 'Occultist is Shadow damage/healing, not Mind Blast cooldown reduction');
+  assert(kbSkills['1253724']?.description.startsWith('성스러운 일격 시전') && !kbSkills['1253724'].description.includes('회개 후'), 'Greater Smite must be triggered by Smite, not Penance');
+  assert(kbSkills['1280137']?.type === 'talent' && kbSkills['1280137'].specs.join() === 'Discipline' && kbSkills['1230339']?.specs.join() === 'Shadow', 'Mindbender passives must retain separate spec scope');
+  for (const branch of discipline.heroBranches) {
+    assert(branch.opener.steps.length >= 7 && branch.singleTarget.priority.length >= 7 && branch.aoe.priority.length >= 7, 'Both Discipline heroes need complete situation-specific healing modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Discipline single-person rescue must not duplicate group healing');
+    assert([branch.opener.tabLabel, branch.singleTarget.tabLabel, branch.aoe.tabLabel].join('|') === '피해 준비|한 명 급락|파티·공대 피해', 'Discipline modes must use healing situation labels');
+    const rows = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
+    assert(rows.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId]?.specs.includes('Discipline') && row.note.length > 25), 'Discipline flow rows must be scoped actual casts with meaningful conditions');
+    if (branch.label === '예언자') assert(!rows.some(row => row.skillId === '450215'), 'Oracle must not cast Void Blast');
+  }
+  const disciplineSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Priest' && note.spec === 'Discipline');
+  assert(disciplineSynergies.length === 21 && disciplineSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Discipline'))), 'All 21 Discipline relationships must retain scoped numeric participants');
+  assert(discipline.graphCenterSkillId === '81749' && disciplineSynergies.filter(note => note.participants.includes('81749')).length === 11, 'Atonement must retain its eleven actual relationships');
 
   const retribution = manuscripts['paladin-retribution'];
   const retributionSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '08-성기사', '징벌', 'Meta', 'guide-12.1.json');
