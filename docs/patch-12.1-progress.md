@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-13. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 25 manuscripts labeled 12.1 and 15 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -164,15 +164,30 @@ Checked against the runtime manuscript map on 2026-09-13. The objective remains 
 - Verified production bundle `main.9ff8fb3b.js` with installed Playwright after the app browser tool failed to initialize: both heroes and three modes at 1440px, 390px and 320px, 18 combinations total. No document/flow overflow or page errors appeared; 18px flow icons and numeric tooltip links remain, native disclosure retains full conditions, and the exact Ice Barrier talent link resolves correctly. Inspected desktop/mobile screenshots; dense graph-label overlaps remain.
 - Limits: current WCL/Archon aggregates, personal simulations and private Altered Time messages were not obtained. SimC commit `330bb6ffacb5e8887a0a02c2d8704389c85b59e6` is implementation evidence only. Generic featured-skill selection, older common mechanics, 71 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical KB is outside the site Git repository; the site commit preserves generated DB and authored guide content.
 
+### Brewmaster Monk
+
+- Finished the pending manually authored 15-section guide, with practical defensive decisions, ten tips and separate Shado-Pan/Master of Harmony opener, single-target and AoE modes. Canonical source: `../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/07-수도사/양조/Meta/guide-12.1.json`.
+- Rechecked Blizzard 12.1, the hotfix document through September 17, Wowhead, Icy Veins, Peak of Serenity and Method on September 21. Sinzhu's three publications are one author, not three independent confirmations. Archon raid and M+ remain inaccessible; no current usage/DPS numbers were invented.
+- Reviewed 74 local records and related common Monk records, authored 18 local synergies, and regenerated both DB files. The generated changes are confined to Monk. Removed the incorrectly scoped Druid Ironfur record; separated Brewmaster energy Detox from Mistweaver magic Detox and preserved Windwalker's recently updated shared records.
+- Corrected 90-second base Celestial Brew/Infusion cooldowns, 4-second Blackout Kick, Stagger versus purification, the three apex nodes, prepared drink versus damage-triggered healing, Season 2 effects and the separate Harmony vitality/Potential Energy resources. Passives, procs and pet damage are not cast steps.
+- Replaced the fabricated uptime chart and color-only purification rules with eight authored defensive situations. Existing Stagger ticks can be absorbed; light Stagger is not an unconditional ban on purification when charges would cap.
+- Compared current name/icon/tooltip/buff payloads for all 74 local records with the September 13 research capture: no changes. Online strict metadata/name/link checks passed for 74 local and 74 common notes; the guide's 23 explicitly referenced spells passed name/icon checks. Common metadata checks do not imply a fresh mechanics review of every common ability.
+- Canonical manuscript equality, gameplay regressions, full prebuild validation and a production build passed on September 21. `node scripts/verify-brewmaster-guide.cjs` passed all 18 hero/mode/viewport combinations at 1440px, 390px and 320px, including keyboard disclosure, numeric tooltip links, loaded icons and horizontal overflow checks.
+- Limits: latest WCL/Archon aggregates, personal simulations and private Discord messages were not obtained. Dense graph labels still overlap; 71 global KB link warnings, mixed-patch metadata and the large bundle remain. Canonical Markdown/JSON is outside the site Git repository; the site commit includes authored guide content and generated data, not a remote backup of the vault.
+
+### Windwalker Monk
+
+- Updated in commit `54603c63` on September 20, including its canonical guide/KB, generated DB, both hero branches and opener/single-target/AoE modes. The canonical change record distinguishes Season 2 records, all apex nodes, Windwalker-specific Dance of the Wind, specialization resource costs and shared Celestial Conduit/Rushing Wind Kick.
+- Removed obsolete Storm, Earth, and Fire and mixed old synergies. The September 1 PvE hotfix remains separate from the 12.1 release changes. Shared Monk changes are preserved by the Brewmaster sync; this status entry does not replace the remaining all-class audit.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 17 manuscripts
+## Still 12.0.5: 15 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Monk | Brewmaster, Windwalker |
 | Paladin | Protection, Retribution |
 | Priest | Discipline, Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
@@ -183,9 +198,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 17 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 15 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.
 - Resolve existing global KB link warnings and mixed-patch metadata when the underlying records are genuinely updated. Do not bulk relabel them to suppress warnings.
-- Finish scoped visual checks, builds and commit/push for each verified batch. Netlify production availability is a separate billing issue; a Git push does not prove wowmeta.xyz is serving the new build.
+- Finish scoped visual checks, builds and commit/push for each verified batch. Production is now https://wowmeta.vercel.app; deployment uses sanitized static build output, not the source directory with local credentials. A Git push alone does not prove a new Vercel deployment, and wowmeta.xyz remains a separate domain.

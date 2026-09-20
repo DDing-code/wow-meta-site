@@ -461,6 +461,8 @@ function main() {
   const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);
   const specialistChartBody = extractObjectLiteral(guideDetailSource, 'SPECIALIST_CHARTS');
+  const heroSelectors = [...guideDetailSource.matchAll(/<HeroBranchTab\b[\s\S]*?<\/HeroBranchTab>/g)];
+  assert(heroSelectors.length >= 3 && heroSelectors.every(match => !match[0].includes('renderGuideText(')), 'Hero selectors must not nest Wowhead links inside buttons');
   const isMetaChartBlock = new Function('block', extractFunctionBody(guideDetailSource, 'isMetaChartBlock'));
   const getBodyBlocks = new Function('manuscript', 'isMetaChartBlock', extractFunctionBody(guideDetailSource, 'getGuideBodyBlocks'));
   const opener = { title: '첫 진입과 내부 운용', paragraphs: ['Keep this authored explanation.'] };
@@ -474,6 +476,10 @@ function main() {
   const planBranches = extractObjectEntries(specialistChartBody, 'SPECIALIST_CHARTS');
   const uptimeBranches = extractGuideBranches(uptimeBody);
   const planBranchMap = new Map(planBranches.map(branch => [branch.id, branch]));
+  const brewmasterChart = new Function(`return {${planBranchMap.get('monk-brewmaster')?.body || ''}}`)();
+  assert(brewmasterChart.events?.length === 8 && brewmasterChart.events.every(event => skillIds.has(event.skillId)), 'Brewmaster must retain eight authored defensive situations');
+  assert(brewmasterChart.events.filter(event => event.skillId === '119582').length === 2 && JSON.stringify(brewmasterChart).includes('초록'), 'Brewmaster must distinguish damage purification from charge-cap prevention');
+  assert(brewmasterChart.events.some(event => event.skillId === '1241059' && event.note.includes('30%')), 'Brewmaster must distinguish Infusion from Celestial Brew');
   const uptimeBranchMap = new Map(uptimeBranches.map(branch => [branch.id, branch]));
   const guideRecordMap = new Map(guideRecords.map(guide => [guide.id, guide]));
 

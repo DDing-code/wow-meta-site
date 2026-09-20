@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T04:39:32.739Z",
+    "generatedAt": "2026-09-20T16:01:39.570Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 507,
-    "rawTotalSynergies": 507,
+    "totalSynergies": 515,
+    "rawTotalSynergies": 515,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 178,
+      "unknown": 170,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "blood-debt-marrowrend": 1,
@@ -71,8 +71,24 @@
       "conduit-of-the-celestials-shared": 1,
       "master-of-harmony-shared": 1,
       "shado-pan-shared-flurry": 1,
-      "breath_of_fire_maintenance": 1,
-      "mythic_plus_utility": 1,
+      "monk_brewmaster_shuffle": 1,
+      "monk_brewmaster_empty_barrel": 1,
+      "monk_brewmaster_brew_recharge": 1,
+      "monk_brewmaster_refreshing_drink": 1,
+      "monk_brewmaster_breath_keg_maintenance": 1,
+      "monk_brewmaster_celestial_flames": 1,
+      "monk_brewmaster_mplus_utility": 1,
+      "monk_brewmaster_stagger_absorb": 1,
+      "monk_brewmaster_season2": 1,
+      "monk_brewmaster_shado_niuzao_fire": 1,
+      "monk_brewmaster_coalescence": 1,
+      "monk_brewmaster_purify_recovery": 1,
+      "monk_brewmaster_potential_surge": 1,
+      "monk_brewmaster_harmony_absorb": 1,
+      "monk_brewmaster_exploding_reset": 1,
+      "monk_brewmaster_healing_spheres": 1,
+      "monk_brewmaster_blackout_combo": 1,
+      "monk_brewmaster_niuzao_stagger": 1,
       "external_defensive_and_mana": 1,
       "mana_recovery_window": 1,
       "renewing_mist_vivify_spread": 1,
@@ -81,6 +97,18 @@
       "raid_mythic_plus_choice": 1,
       "major_healing_cooldowns": 1,
       "single_target_recovery": 1,
+      "monk_windwalker_zenith_chi": 1,
+      "monk_windwalker_choice_cooldown": 1,
+      "monk_windwalker_teachings": 1,
+      "monk_windwalker_conduit_access": 1,
+      "monk_windwalker_survival": 1,
+      "monk_windwalker_jade_heart": 1,
+      "monk_windwalker_flurry": 1,
+      "monk_windwalker_tigereye": 1,
+      "monk_windwalker_dance_chain": 1,
+      "monk_windwalker_battlegear": 1,
+      "monk_windwalker_tier_consumer": 1,
+      "monk_windwalker_rushing_wind": 1,
       "party-utility-control-survival": 1,
       "herald-of-the-sun-shared": 1,
       "lightsmith-shared-armament": 1,
@@ -248,19 +276,7 @@
       "generator-reset-priority": 1,
       "whirlwind-cleave-window": 1,
       "bloodthirst-bleed-survival": 1,
-      "slayer-execute-window": 1,
-      "monk_windwalker_zenith_chi": 1,
-      "monk_windwalker_choice_cooldown": 1,
-      "monk_windwalker_teachings": 1,
-      "monk_windwalker_conduit_access": 1,
-      "monk_windwalker_survival": 1,
-      "monk_windwalker_jade_heart": 1,
-      "monk_windwalker_flurry": 1,
-      "monk_windwalker_tigereye": 1,
-      "monk_windwalker_dance_chain": 1,
-      "monk_windwalker_battlegear": 1,
-      "monk_windwalker_tier_consumer": 1,
-      "monk_windwalker_rushing_wind": 1
+      "slayer-execute-window": 1
     },
     "byClass": {
       "DeathKnight": 28,
@@ -269,7 +285,7 @@
       "Evoker": 34,
       "Hunter": 50,
       "Mage": 47,
-      "Monk": 34,
+      "Monk": 42,
       "Paladin": 28,
       "성기사": 10,
       "Priest": 40,
@@ -8405,28 +8421,16 @@
     "monk_common_master_harmony_store_release": {
       "id": "monk_common_master_harmony_store_release",
       "name": "영웅특성-MasterOfHarmony-조화저장-방출",
+      "description": "활력 저장·소비와 잠재된 기운 중첩은 별개입니다. 양조는 천신주 계열, 운무는 집중의 천둥 차가 활력 소비를 열고 후속 공격·치유가 실제 보상을 만듭니다.",
       "type": "synergy",
       "synergyType": "master-of-harmony-shared",
       "participants": [
-        "442719",
         "450508",
         "450529",
-        "450867",
-        "450870",
-        "450875",
         "450892",
-        "450912",
-        "450986",
-        "450987",
-        "451017",
-        "451024",
-        "451029",
-        "451036",
-        "1262603",
-        "1270958",
-        "1270990",
         "1271048",
-        "1271105"
+        "1270990",
+        "1270958"
       ],
       "class": "Monk",
       "spec": "공용",
@@ -8436,7 +8440,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -8476,71 +8480,52 @@
         "lastUpdate": ""
       }
     },
-    "맥주통휘두르기_술통을비워라": {
-      "id": "맥주통휘두르기_술통을비워라",
-      "name": "맥주통 휘두르기-술통을 비워라",
+    "monk_brewmaster_shuffle": {
+      "id": "monk_brewmaster_shuffle",
+      "name": "공격으로 건들건들 유지",
+      "description": "맥주통·후려차기·회전 학다리차기가 건들건들을 부여해 이후 공격의 시간차 효율을 높입니다. 빠른 한 모금은 획득한 지속 시간으로 작은 정화도 만듭니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_shuffle",
+      "participants": [
+        "121253",
+        "205523",
+        "101546",
+        "322120",
+        "388505"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\맥주통휘두르기-술통을비워라.md",
-        "lastUpdate": "2026-05-24"
-      }
-    },
-    "맥주통휘두르기_정화주": {
-      "id": "맥주통휘두르기_정화주",
-      "name": "맥주통 휘두르기-정화주 회전",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "Monk",
-      "spec": "Brewmaster",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/빠른한모금"
+      ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\맥주통휘두르기-정화주.md",
-        "lastUpdate": "2026-05-25"
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\건들건들-공격유지.md",
+        "lastUpdate": ""
       }
     },
-    "monk_brewmaster_breath_keg_maintenance": {
-      "id": "monk_brewmaster_breath_keg_maintenance",
-      "name": "불의숨결-맥주통휘두르기",
+    "monk_brewmaster_empty_barrel": {
+      "id": "monk_brewmaster_empty_barrel",
+      "name": "빈 통: 초기화 후 무료 맥주통",
+      "description": "한 잔 더가 빈 통을 준비하면 중간 노드가 맥주통 휘두르기를 초기화하고 기력 소모를 줄입니다. 두 점 투자 시 다음 맥주통은 무료입니다.",
       "type": "synergy",
-      "synergyType": "breath_of_fire_maintenance",
+      "synergyType": "monk_brewmaster_empty_barrel",
       "participants": [
-        "115181",
         "121253",
-        "116847",
-        "325153",
-        "383698",
-        "383700",
-        "1262017",
-        "1262659",
-        "1263353",
+        "1265129",
+        "1265138",
         "1265307"
       ],
       "class": "Monk",
@@ -8550,70 +8535,32 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/비취돌풍",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/끓어오르는맥주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/가이플린의황실맥주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/불난집에부채질",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의불꽃",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더중간",
         "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\불의숨결-맥주통휘두르기.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\맥주통휘두르기-술통을비워라.md",
         "lastUpdate": ""
       }
     },
-    "불의숨결_천신의불꽃": {
-      "id": "불의숨결_천신의불꽃",
-      "name": "불의 숨결-천신의 불꽃",
+    "monk_brewmaster_brew_recharge": {
+      "id": "monk_brewmaster_brew_recharge",
+      "name": "공격으로 맥주 재사용 당기기",
+      "description": "맥주통 휘두르기는 맥주 재사용을 3초, 범의 장풍은 기본 1초 줄입니다. 맥주통을 쓸 기력 40을 남겨 방어기 회복도 이어 갑니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "Monk",
-      "spec": "Brewmaster",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의불꽃"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\불의숨결-천신의불꽃.md",
-        "lastUpdate": "2026-05-24"
-      }
-    },
-    "monk_brewmaster_mplus_utility": {
-      "id": "monk_brewmaster_mplus_utility",
-      "name": "수도사공용-쐐기유틸",
-      "type": "synergy",
-      "synergyType": "mythic_plus_utility",
+      "synergyType": "monk_brewmaster_brew_recharge",
       "participants": [
-        "116705",
-        "119381",
-        "115078",
-        "115450",
-        "116841",
-        "109132",
-        "101643",
-        "119996",
-        "115203",
+        "121253",
+        "100780",
         "119582",
-        "322507",
-        "115069"
+        "322507"
       ],
       "class": "Monk",
       "spec": "양조",
@@ -8622,20 +8569,152 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\맥주통휘두르기-정화주.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_refreshing_drink": {
+      "id": "monk_brewmaster_refreshing_drink",
+      "name": "방어 맥주에서 준비, 피해를 받으면 치유",
+      "description": "한 잔 더 마지막 노드는 강화주·천신주 계열 사용 시 자신과 아군 2명에게 신선한 음료를 준비합니다. 이후 피해를 받으면 8초 치유가 시작됩니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_refreshing_drink",
+      "participants": [
+        "1265141",
+        "322507",
+        "1241059",
+        "115203",
+        "1265140",
+        "1265145"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Buffs/신선한음료치유"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/신선한음료"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\방어맥주-신선한음료.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_breath_keg_maintenance": {
+      "id": "monk_brewmaster_breath_keg_maintenance",
+      "name": "맥주통 뒤 불의 숨결 적용과 초기화",
+      "description": "맥주통이 맞은 적에 불의 숨결의 지속 피해와 개인 피해 감소를 적용합니다. 살살라빔의 힘은 다음 맥주통으로 불의 숨결을 다시 준비합니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_breath_keg_maintenance",
+      "participants": [
+        "121253",
+        "115181",
+        "383697",
+        "383698"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/살살라빔의힘",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/끓어오르는맥주"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\불의숨결-맥주통휘두르기.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_celestial_flames": {
+      "id": "monk_brewmaster_celestial_flames",
+      "name": "천신의 불꽃: 선택한 통·돌풍 강화",
+      "description": "천신의 불꽃은 현재 특별 배달 또는 비취 돌풍에 추가 화염 효과를 붙입니다. 그 화염 피해는 생기의 불길 치유와 연결됩니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_celestial_flames",
+      "participants": [
+        "1263353",
+        "196730",
+        "116847",
+        "1262659"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/비취돌풍"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의불꽃",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/특별배달",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\불의숨결-천신의불꽃.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_mplus_utility": {
+      "id": "monk_brewmaster_mplus_utility",
+      "name": "양조의 차단·제어·독과 질병 해제",
+      "description": "손날 찌르기, 팽이 차기, 마비, 해독은 위험 기술의 유형에 맞춰 사용합니다. 양조의 해독은 운무의 마법 해제 버튼과 다릅니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_mplus_utility",
+      "participants": [
+        "116705",
+        "119381",
+        "115078",
+        "218164"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/팽이차기",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/마비",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해독",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈전환",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해독"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -8644,112 +8723,360 @@
         "lastUpdate": ""
       }
     },
-    "시간차_천신주": {
-      "id": "시간차_천신주",
-      "name": "시간차-정화주-천신주 생존 루프",
+    "monk_brewmaster_stagger_absorb": {
+      "id": "monk_brewmaster_stagger_absorb",
+      "name": "남은 시간차 정화와 흡수",
+      "description": "정화주는 남은 시간차를 지우고 천신주 계열은 실제 들어오는 피해를 흡수합니다. 흡수기는 이미 남아 있는 시간차 틱에도 작동합니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_stagger_absorb",
+      "participants": [
+        "115069",
+        "119582",
+        "322507",
+        "1241059"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\시간차-천신주.md",
-        "lastUpdate": "2026-06-06"
+        "lastUpdate": ""
       }
     },
-    "음영파_정점광역": {
-      "id": "음영파_정점광역",
-      "name": "음영파-정점 광역",
+    "monk_brewmaster_season2": {
+      "id": "monk_brewmaster_season2",
+      "name": "불의 숨결에서 뜨거운 감자·그슬림으로",
+      "description": "S2 2세트는 다음 맥주통을 점화하고 4세트는 그 대상에 그슬림을 남깁니다. 5초 동안 자신의 물리 능력 피해가 8% 증가합니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_season2",
+      "participants": [
+        "115181",
+        "1301477",
+        "121253",
+        "1301410"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Buffs/뜨거운감자",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Buffs/그슬림"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\시즌2-불의숨결-그슬림.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_shado_niuzao_fire": {
+      "id": "monk_brewmaster_shado_niuzao_fire",
+      "name": "니우짜오 중 불의 숨결·질풍격 반복",
+      "description": "장벽의 지혜를 선택한 음영파는 니우짜오 중 불의 숨결마다 질풍격을 추가 방출합니다. 맥주통으로 불의 숨결을 초기화해 다시 사용합니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_shado_niuzao_fire",
+      "participants": [
+        "121253",
+        "115181",
+        "132578",
+        "1272821",
+        "450615"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\음영파-정점광역.md",
-        "lastUpdate": "2026-06-06"
+        "lastUpdate": ""
       }
     },
-    "정화주_결의의비약": {
-      "id": "정화주_결의의비약",
-      "name": "정화주-결의의 비약",
+    "monk_brewmaster_coalescence": {
+      "id": "monk_brewmaster_coalescence",
+      "name": "응결: 맥주통은 활력 공급이 아닌 소비",
+      "description": "응결을 선택하면 맥주통은 활력을 저장하지 않습니다. 조화의 형 비활성 중에도 저장 활력을 소비해 추가 지속 피해를 남깁니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_coalescence",
+      "participants": [
+        "121253",
+        "450529",
+        "450508",
+        "450867"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\응결-활력소비.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_purify_recovery": {
+      "id": "monk_brewmaster_purify_recovery",
+      "name": "정화한 피해를 회복과 보호막으로",
+      "description": "가이 플린의 황실 맥주는 정화한 피해로 즉시 치유하고, 결의의 비약은 이후 생명력 급락에서 보호막을 만듭니다. 건우지세는 다음 큰 타격을 보조합니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_purify_recovery",
+      "participants": [
+        "119582",
+        "383700",
+        "455139",
+        "455068"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/결의의비약"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/가이플린의황실맥주",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/결의의비약",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건우지세"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\정화주-결의의비약.md",
-        "lastUpdate": "2026-05-24"
+        "lastUpdate": ""
       }
     },
-    "조화의형_천신주": {
-      "id": "조화의형_천신주",
-      "name": "조화의 형-천신주",
+    "monk_brewmaster_potential_surge": {
+      "id": "monk_brewmaster_potential_surge",
+      "name": "맥주통으로 중첩, 장풍으로 쇄도",
+      "description": "맥주통은 위치 에너지로 잠재된 기운을 만들고 천신주 계열은 조화의 쇄도로 2중첩을 보탭니다. 다음 범의 장풍이 모두 소비해 피해와 치유를 냅니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_potential_surge",
+      "participants": [
+        "121253",
+        "1271048",
+        "1270990",
+        "1270958",
+        "100780"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\조화의쇄도-잠재된기운.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_harmony_absorb": {
+      "id": "monk_brewmaster_harmony_absorb",
+      "name": "흡수기: 활력 소비와 추가 충전",
+      "description": "천신주 계열로 10초 활력 소비를 시작하며 바닥 없는 잔은 흡수기에 1충전을 더합니다. 다음 피해에 쓸 몫과 충전 손실을 함께 봅니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_harmony_absorb",
+      "participants": [
+        "450508",
+        "322507",
+        "1241059",
+        "450892"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
-        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\조화의형-천신주.md",
-        "lastUpdate": "2026-06-06"
+        "lastUpdate": ""
       }
     },
-    "흑우니우짜오_강화주_장기생존": {
-      "id": "흑우니우짜오_강화주_장기생존",
-      "name": "흑우 니우짜오-강화주 장기 생존",
+    "monk_brewmaster_exploding_reset": {
+      "id": "monk_brewmaster_exploding_reset",
+      "name": "폭발하는 맥주통의 초기화와 두 번째 사용",
+      "description": "폭발하는 맥주통은 맥주통 1충전을 초기화하고 다음 두 번에 화염 효과를 붙입니다. 저장고 대방출 선택 시 20초 안에 다시 사용할 수 있습니다.",
       "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
+      "synergyType": "monk_brewmaster_exploding_reset",
+      "participants": [
+        "325153",
+        "121253",
+        "1262017",
+        "1262329",
+        "1262659"
+      ],
       "class": "Monk",
-      "spec": "Brewmaster",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/불난집에부채질",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/저장고대방출",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\폭발하는맥주통-재활성화.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_healing_spheres": {
+      "id": "monk_brewmaster_healing_spheres",
+      "name": "후려차기에서 치유의 구슬로",
+      "description": "흑우의 영은 후려차기에서 구슬을 만듭니다. 기본 구슬은 해악 축출로 모아 급락에 대응하고 니우짜오의 결의는 지속 치유로 바꿉니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_healing_spheres",
+      "participants": [
+        "205523",
+        "400629",
+        "124502",
+        "322101",
+        "1241097"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\후려차기-구슬회복.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_blackout_combo": {
+      "id": "monk_brewmaster_blackout_combo",
+      "name": "후려차기 뒤 피해 또는 맥주 회복 선택",
+      "description": "의식 상실 연계는 다음 범의 장풍 피해 또는 맥주통의 맥주 회복을 강화합니다. 조화의 형의 명상의 집중이 선택한 연계를 더 보강합니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_blackout_combo",
+      "participants": [
+        "205523",
+        "196736",
+        "100780",
+        "121253",
+        "1271105"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+        "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\후려차기-의식상실연계.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_brewmaster_niuzao_stagger": {
+      "id": "monk_brewmaster_niuzao_stagger",
+      "name": "니우짜오에게 나눈 시간차와 정화",
+      "description": "니우짜오는 시간차로 넘길 피해의 40%를 대신 받고, 정화주로 정화한 피해만큼 치유됩니다. 소환 중에도 정화 판단을 계속해야 합니다.",
+      "type": "synergy",
+      "synergyType": "monk_brewmaster_niuzao_stagger",
+      "participants": [
+        "132578",
+        "115069",
+        "119582",
+        "1242197"
+      ],
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
         "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
@@ -8757,11 +9084,11 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강화주결의"
+        "08-직업별-Knowledge-Base/07-수도사/양조/Talents/황소의인내"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Synergies\\흑우니우짜오-강화주-장기생존.md",
-        "lastUpdate": "2026-05-24"
+        "lastUpdate": ""
       }
     },
     "monk_mistweaver_life_cocoon_external": {
@@ -9151,6 +9478,441 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\포용의안개-단일대상복구.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_zenith_chi": {
+      "id": "monk_windwalker_zenith_chi",
+      "name": "등선 중 기 생성기 바꾸기",
+      "description": "칠흑 나선 선택 시 등선 중 후려차기가 기를 만들고 추가 발구르기도 기 2를 줍니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_zenith_chi",
+      "participants": [
+        "1249625",
+        "1249832",
+        "100784",
+        "1272696"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\등선-날카로운바람.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_choice_cooldown": {
+      "id": "monk_windwalker_choice_cooldown",
+      "name": "선택 쿨기와 후속 자동 공격",
+      "description": "소용돌이 용의 주먹과 바람의 군주의 일격 중 선택한 기술이 천둥주먹을 준비합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_choice_cooldown",
+      "participants": [
+        "152175",
+        "392983",
+        "451576",
+        "392985"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/바람과의교감",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/천둥주먹"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\선택쿨기-천둥주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_teachings": {
+      "id": "monk_windwalker_teachings",
+      "name": "가르침과 후려차기 발동의 다른 역할",
+      "description": "장풍은 가르침 추가 타격과 무료 후려차기 발동을 준비할 수 있지만 두 효과는 다릅니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_teachings",
+      "participants": [
+        "100780",
+        "116645",
+        "116768",
+        "100784",
+        "451529"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/부서진사원의지식"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\수도원의가르침-후려차기.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_conduit_access": {
+      "id": "monk_windwalker_conduit_access",
+      "name": "쉬엔이 연 천신합일을 후속 구간에 사용",
+      "description": "쉬엔 소환 뒤 60초 안에 천신합일을 써 내면의 단결과 강화 옥룡의 마음을 얻습니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_conduit_access",
+      "participants": [
+        "123904",
+        "1248989",
+        "1248992",
+        "443028",
+        "443589",
+        "443616"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/천신합일-준비",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\쉬엔-천신합일.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_survival": {
+      "id": "monk_windwalker_survival",
+      "name": "업보는 실제 피해에 맞추는 생존기",
+      "description": "업보의 손아귀는 한도가 있는 흡수·피해 이전 기술이며 면역이 아닙니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_survival",
+      "participants": [
+        "122470",
+        "115203",
+        "388664",
+        "432181"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/업보의손아귀",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/안정의존재",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/바람의춤"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\업보-생존.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_jade_heart": {
+      "id": "monk_windwalker_jade_heart",
+      "name": "옥룡의 마음과 빠른 분노의 주먹",
+      "description": "일반·천신합일 옥룡의 마음은 나눠 쓰고, 등선의 위론의 화신 효과는 그 위에 겹칩니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_jade_heart",
+      "participants": [
+        "443294",
+        "443421",
+        "443616",
+        "1238904",
+        "113656",
+        "1262667"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-일반",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-등선"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\옥룡의마음-분노의주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_flurry": {
+      "id": "monk_windwalker_flurry",
+      "name": "자동 공격에서 질풍격 방출까지",
+      "description": "음영파는 자동 공격으로 질풍격을 모아 분노의 주먹으로 방출합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_flurry",
+      "participants": [
+        "450615",
+        "450988",
+        "1272821",
+        "113656",
+        "1272685"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/무인의민첩성"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\음영파-질풍격.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_tigereye": {
+      "id": "monk_windwalker_tigereye",
+      "name": "호안주 세 단계와 추가 발구르기",
+      "description": "호안주 첫 노드는 중첩과 치명타 확률, 중간은 치명타 피해, 마지막은 추가 발구르기를 제공합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_tigereye",
+      "participants": [
+        "1261703",
+        "1261724",
+        "1261844",
+        "1261849",
+        "1249625",
+        "1272696"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/호안주-중첩"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-중간노드",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\정점-호안주.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_dance_chain": {
+      "id": "monk_windwalker_dance_chain",
+      "name": "무료 회전 학다리차기에서 후려차기로",
+      "description": "츠지의 춤을 소비하면 순차 타격으로 후려차기!가 생기고 폭발하는 기운으로 기를 회복할 수 있습니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_dance_chain",
+      "participants": [
+        "325201",
+        "325202",
+        "101546",
+        "451515",
+        "116768",
+        "451498"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/츠지의춤",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/순차타격",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/폭발하는기운"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\츠지의춤-회전학다리차기.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_battlegear": {
+      "id": "monk_windwalker_battlegear",
+      "name": "해오름차기 이후 채널 재사용 확인",
+      "description": "쉬엔의 전투장비는 해오름차기 치명타와 회전 학다리차기 적중으로 분노의 주먹을 당깁니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_battlegear",
+      "participants": [
+        "107428",
+        "467307",
+        "392993",
+        "113656",
+        "101546"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\해오름차기-분노의주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_tier_consumer": {
+      "id": "monk_windwalker_tier_consumer",
+      "name": "시즌 2 강화를 어느 기술에 쓸까",
+      "description": "끊임없는 박자는 최대 6중첩에서 해오름차기 60% 또는 회전 학다리차기 120%를 강화합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_tier_consumer",
+      "participants": [
+        "113656",
+        "1296621",
+        "1296624",
+        "1297033",
+        "107428",
+        "101546",
+        "467307"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-2세트",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/끊임없는박자"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\회전학다리차기-광역.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_rushing_wind": {
+      "id": "monk_windwalker_rushing_wind",
+      "name": "무료 후려차기 소비로 질풍차기 준비",
+      "description": "후려차기! 소비 후 60% 확률로 해오름차기가 질풍차기로 바뀝니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_rushing_wind",
+      "participants": [
+        "116768",
+        "100784",
+        "1250566",
+        "1250554",
+        "467307"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/질풍차기-준비"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\후려차기-질풍차기.md",
         "lastUpdate": ""
       }
     },
@@ -18391,441 +19153,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\학살자의-지배-마무리-일격-칼날폭풍.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_zenith_chi": {
-      "id": "monk_windwalker_zenith_chi",
-      "name": "등선 중 기 생성기 바꾸기",
-      "description": "칠흑 나선 선택 시 등선 중 후려차기가 기를 만들고 추가 발구르기도 기 2를 줍니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_zenith_chi",
-      "participants": [
-        "1249625",
-        "1249832",
-        "100784",
-        "1272696"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\등선-날카로운바람.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_choice_cooldown": {
-      "id": "monk_windwalker_choice_cooldown",
-      "name": "선택 쿨기와 후속 자동 공격",
-      "description": "소용돌이 용의 주먹과 바람의 군주의 일격 중 선택한 기술이 천둥주먹을 준비합니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_choice_cooldown",
-      "participants": [
-        "152175",
-        "392983",
-        "451576",
-        "392985"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/바람과의교감",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/천둥주먹"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\선택쿨기-천둥주먹.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_teachings": {
-      "id": "monk_windwalker_teachings",
-      "name": "가르침과 후려차기 발동의 다른 역할",
-      "description": "장풍은 가르침 추가 타격과 무료 후려차기 발동을 준비할 수 있지만 두 효과는 다릅니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_teachings",
-      "participants": [
-        "100780",
-        "116645",
-        "116768",
-        "100784",
-        "451529"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
-      ],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/부서진사원의지식"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\수도원의가르침-후려차기.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_conduit_access": {
-      "id": "monk_windwalker_conduit_access",
-      "name": "쉬엔이 연 천신합일을 후속 구간에 사용",
-      "description": "쉬엔 소환 뒤 60초 안에 천신합일을 써 내면의 단결과 강화 옥룡의 마음을 얻습니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_conduit_access",
-      "participants": [
-        "123904",
-        "1248989",
-        "1248992",
-        "443028",
-        "443589",
-        "443616"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/천신합일-준비",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일"
-      ],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\쉬엔-천신합일.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_survival": {
-      "id": "monk_windwalker_survival",
-      "name": "업보는 실제 피해에 맞추는 생존기",
-      "description": "업보의 손아귀는 한도가 있는 흡수·피해 이전 기술이며 면역이 아닙니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_survival",
-      "participants": [
-        "122470",
-        "115203",
-        "388664",
-        "432181"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/업보의손아귀",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/안정의존재",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/바람의춤"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\업보-생존.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_jade_heart": {
-      "id": "monk_windwalker_jade_heart",
-      "name": "옥룡의 마음과 빠른 분노의 주먹",
-      "description": "일반·천신합일 옥룡의 마음은 나눠 쓰고, 등선의 위론의 화신 효과는 그 위에 겹칩니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_jade_heart",
-      "participants": [
-        "443294",
-        "443421",
-        "443616",
-        "1238904",
-        "113656",
-        "1262667"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-일반",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-등선"
-      ],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\옥룡의마음-분노의주먹.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_flurry": {
-      "id": "monk_windwalker_flurry",
-      "name": "자동 공격에서 질풍격 방출까지",
-      "description": "음영파는 자동 공격으로 질풍격을 모아 분노의 주먹으로 방출합니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_flurry",
-      "participants": [
-        "450615",
-        "450988",
-        "1272821",
-        "113656",
-        "1272685"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/무인의민첩성"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\음영파-질풍격.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_tigereye": {
-      "id": "monk_windwalker_tigereye",
-      "name": "호안주 세 단계와 추가 발구르기",
-      "description": "호안주 첫 노드는 중첩과 치명타 확률, 중간은 치명타 피해, 마지막은 추가 발구르기를 제공합니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_tigereye",
-      "participants": [
-        "1261703",
-        "1261724",
-        "1261844",
-        "1261849",
-        "1249625",
-        "1272696"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/호안주-중첩"
-      ],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-중간노드",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\정점-호안주.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_dance_chain": {
-      "id": "monk_windwalker_dance_chain",
-      "name": "무료 회전 학다리차기에서 후려차기로",
-      "description": "츠지의 춤을 소비하면 순차 타격으로 후려차기!가 생기고 폭발하는 기운으로 기를 회복할 수 있습니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_dance_chain",
-      "participants": [
-        "325201",
-        "325202",
-        "101546",
-        "451515",
-        "116768",
-        "451498"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/츠지의춤",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
-      ],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/순차타격",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/폭발하는기운"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\츠지의춤-회전학다리차기.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_battlegear": {
-      "id": "monk_windwalker_battlegear",
-      "name": "해오름차기 이후 채널 재사용 확인",
-      "description": "쉬엔의 전투장비는 해오름차기 치명타와 회전 학다리차기 적중으로 분노의 주먹을 당깁니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_battlegear",
-      "participants": [
-        "107428",
-        "467307",
-        "392993",
-        "113656",
-        "101546"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\해오름차기-분노의주먹.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_tier_consumer": {
-      "id": "monk_windwalker_tier_consumer",
-      "name": "시즌 2 강화를 어느 기술에 쓸까",
-      "description": "끊임없는 박자는 최대 6중첩에서 해오름차기 60% 또는 회전 학다리차기 120%를 강화합니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_tier_consumer",
-      "participants": [
-        "113656",
-        "1296621",
-        "1296624",
-        "1297033",
-        "107428",
-        "101546",
-        "467307"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-2세트",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/끊임없는박자"
-      ],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\회전학다리차기-광역.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk_windwalker_rushing_wind": {
-      "id": "monk_windwalker_rushing_wind",
-      "name": "무료 후려차기 소비로 질풍차기 준비",
-      "description": "후려차기! 소비 후 60% 확률로 해오름차기가 질풍차기로 바뀝니다.",
-      "type": "synergy",
-      "synergyType": "monk_windwalker_rushing_wind",
-      "participants": [
-        "116768",
-        "100784",
-        "1250566",
-        "1250554",
-        "467307"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/질풍차기-준비"
-      ],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\후려차기-질풍차기.md",
         "lastUpdate": ""
       }
     }

@@ -1,109 +1,109 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T04:39:32.737Z",
+    "generatedAt": "2026-09-20T16:01:39.569Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2807,
-    "rawTotalSkills": 2807,
+    "totalSkills": 2830,
+    "rawTotalSkills": 2830,
     "duplicateIds": [],
-    "totalSynergies": 507,
+    "totalSynergies": 515,
     "stats": {
-      "total": 2807,
+      "total": 2830,
       "byType": {
-        "atomic-skill": 483,
-        "passive": 35,
-        "talent": 987,
+        "buff": 80,
+        "hero-talent": 571,
+        "atomic-skill": 489,
+        "proc": 10,
         "skill": 167,
-        "class-talent": 86,
-        "buff": 75,
+        "talent": 991,
         "spec-talent": 377,
-        "hero-talent": 574,
-        "proc": 7,
-        "atomic-buff": 1,
-        "debuff": 1,
-        "apex-talent": 1,
-        "atomic-talent": 1,
-        "removed-talent": 1,
+        "passive": 42,
+        "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
-        "hero-tree": 2
+        "class-talent": 86,
+        "debuff": 2,
+        "removed-talent": 1,
+        "atomic-buff": 1,
+        "apex-talent": 1,
+        "atomic-talent": 1
       },
       "byClass": {
+        "DeathKnight": 111,
+        "DemonHunter": 148,
+        "Druid": 214,
+        "Evoker": 140,
+        "Hunter": 225,
+        "Mage": 229,
+        "Monk": 274,
+        "Paladin": 209,
         "Priest": 221,
         "Rogue": 286,
-        "Mage": 229,
-        "Warrior": 265,
-        "Druid": 214,
-        "Hunter": 225,
-        "Warlock": 235,
         "Shaman": 273,
-        "Paladin": 209,
-        "DemonHunter": 148,
-        "DeathKnight": 111,
-        "Monk": 251,
-        "Evoker": 140
+        "Warlock": 235,
+        "Warrior": 265
       },
       "bySpec": {
-        "Priest-수양": 48,
-        "Rogue-잠행": 59,
-        "Mage-공용": 64,
-        "Warrior-Protection": 41,
-        "Druid-공용": 54,
-        "Warrior-공용": 128,
-        "Mage-냉기": 63,
-        "Mage-화염": 53,
-        "Hunter-공용": 67,
-        "Warlock-Affliction": 44,
-        "Warlock-Destruction": 44,
-        "Shaman-공용": 126,
-        "Rogue-공용": 128,
-        "Priest-공용": 74,
-        "Paladin-공용": 72,
-        "Priest-신성": 46,
-        "Warlock-Demonology": 41,
-        "Warlock-공용": 106,
-        "Rogue-암살": 46,
-        "Druid-회복": 31,
-        "Warrior-Arms": 46,
-        "Shaman-복원": 46,
-        "Druid-야성": 51,
-        "Mage-비전": 49,
-        "DemonHunter-공용": 16,
-        "Warrior-Fury": 49,
-        "Rogue-무법": 53,
-        "Druid-조화": 37,
-        "Druid-수호": 41,
-        "Shaman-정기": 57,
-        "Priest-암흑": 53,
-        "Shaman-고양": 44,
-        "Hunter-사격": 58,
-        "Hunter-야수": 42,
-        "Paladin-신성": 44,
-        "Paladin-징벌": 47,
-        "Paladin-보호": 46,
-        "DeathKnight-부정": 40,
         "DeathKnight-공용": 17,
-        "DeathKnight-혈기": 22,
         "DeathKnight-냉기": 32,
-        "Monk-공용": 74,
-        "Monk-풍운": 65,
-        "Monk-양조": 51,
-        "Monk-운무": 61,
-        "DemonHunter-파멸": 54,
-        "Hunter-생존": 58,
+        "DeathKnight-부정": 40,
+        "DeathKnight-혈기": 22,
+        "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
+        "DemonHunter-파멸": 54,
         "DemonHunter-포식": 34,
+        "Druid-공용": 54,
+        "Druid-수호": 41,
+        "Druid-야성": 51,
+        "Druid-조화": 37,
+        "Druid-회복": 31,
         "Evoker-공용": 42,
         "Evoker-보존": 28,
-        "Evoker-황폐": 28,
         "Evoker-증강": 42,
-        "Warrior-무기": 1
+        "Evoker-황폐": 28,
+        "Hunter-공용": 67,
+        "Hunter-사격": 58,
+        "Hunter-생존": 58,
+        "Hunter-야수": 42,
+        "Mage-공용": 64,
+        "Mage-냉기": 63,
+        "Mage-비전": 49,
+        "Mage-화염": 53,
+        "Monk-공용": 74,
+        "Monk-양조": 74,
+        "Monk-운무": 61,
+        "Monk-풍운": 65,
+        "Paladin-공용": 72,
+        "Paladin-보호": 46,
+        "Paladin-신성": 44,
+        "Paladin-징벌": 47,
+        "Priest-공용": 74,
+        "Priest-수양": 48,
+        "Priest-신성": 46,
+        "Priest-암흑": 53,
+        "Rogue-공용": 128,
+        "Rogue-무법": 53,
+        "Rogue-암살": 46,
+        "Rogue-잠행": 59,
+        "Shaman-고양": 44,
+        "Shaman-공용": 126,
+        "Shaman-복원": 46,
+        "Shaman-정기": 57,
+        "Warlock-Affliction": 44,
+        "Warlock-공용": 106,
+        "Warlock-Demonology": 41,
+        "Warlock-Destruction": 44,
+        "Warrior-공용": 128,
+        "Warrior-Arms": 46,
+        "Warrior-무기": 1,
+        "Warrior-Protection": 41,
+        "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2730,
-        "withSynergies": 1268,
-        "avgLinkDensity": "0.035"
+        "withWikilinks": 2753,
+        "withSynergies": 1356,
+        "avgLinkDensity": "0.036"
       }
     }
   },
@@ -19639,7 +19639,7 @@
     },
     "115069": {
       "id": "115069",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Monk",
       "spec": "양조",
       "specs": [
@@ -19651,14 +19651,14 @@
       "icon": "monk_stance_drunkenox",
       "iconName": "monk_stance_drunkenox",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 시간차 (Stagger)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "받는 물리 피해 일부를 민첩성에 따라 10초 동안 나눠 받는 패시브다. 마법 피해에 적용되는 지연 효율은 물리 피해에 대한 효율의 58%다. 피해 58%를 항상 막는다는 뜻이 아니다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19673,16 +19673,19 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
           "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
-          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
-          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/와리가리",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/깨어나는영혼"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 4,
-        "linkDensity": 0.072,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.076,
         "hasWikilinks": true
       },
       "source": {
@@ -19868,10 +19871,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "전방",
-      "description": "# 불의 숨결 (Breath of Fire)",
+      "description": "전방 화염 공격이다. 맥주통 휘두르기의 영향을 받는 적에는 12초 지속 피해와 자신에게 주는 피해 5% 감소를 적용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19886,13 +19889,18 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/살살라빔의힘",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/끓어오르는맥주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/용숨결맥주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/그을린격정"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.068,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.08,
         "hasWikilinks": true
       },
       "source": {
@@ -20104,15 +20112,67 @@
         "lastUpdate": ""
       }
     },
+    "115399": {
+      "id": "115399",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "흑우주",
+      "koreanName": "흑우주",
+      "englishName": "Black Ox Brew",
+      "icon": "ability_monk_chibrew",
+      "iconName": "ability_monk_chibrew",
+      "school": "",
+      "cooldown": "2분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "즉시 기력을 채우고 정화주를 모두 충전하며 천신주 또는 천신의 주입 1충전을 돌려주는 2분 재사용 대기시간 기술이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chibrew.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_chibrew.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_chibrew.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_chibrew.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chibrew.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/간편양조"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\흑우주.md",
+        "lastUpdate": ""
+      }
+    },
     "115450": {
       "id": "115450",
       "type": "atomic-skill",
       "class": "Monk",
       "spec": "공용",
       "specs": [
-        "Brewmaster",
-        "Mistweaver",
-        "Windwalker"
+        "Mistweaver"
       ],
       "name": "해독",
       "koreanName": "해독",
@@ -20122,12 +20182,12 @@
       "school": "",
       "cooldown": "8초",
       "castTime": "즉시",
-      "resourceCost": "마나",
-      "range": "40야드",
-      "description": "# 해독 (Detox)",
+      "resourceCost": "기본 마나의 1.3%",
+      "range": "40미터",
+      "description": "운무의 마법 해제 버튼이다. 기본 마나 1.3%, 40미터, 기본 8초 재사용 대기시간을 사용한다. 양조·풍운의 기력 기반 독·질병 해제는 218164다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20139,18 +20199,72 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_imrovedrecuperate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해독"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\해독.md",
+        "lastUpdate": ""
+      }
+    },
+    "115546": {
+      "id": "115546",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "조롱",
+      "koreanName": "조롱",
+      "englishName": "Provoke",
+      "icon": "ability_monk_provoke",
+      "iconName": "ability_monk_provoke",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30미터",
+      "description": "30미터 사거리, 8초 재사용 대기시간의 도발이다. 대상을 자신에게 향하게 하고 6초 동안 해당 대상에 대한 위협 생성을 크게 높인다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_provoke.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_provoke.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_provoke.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\조롱.md",
         "lastUpdate": ""
       }
     },
@@ -20636,14 +20750,14 @@
       "icon": "ability_monk_rushingjadewind",
       "iconName": "ability_monk_rushingjadewind",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "6초",
       "castTime": "즉시",
-      "resourceCost": "기력",
-      "range": "",
-      "description": "# 비취 돌풍 (Rushing Jade Wind)",
+      "resourceCost": "없음",
+      "range": "자신 주위",
+      "description": "양조에서 기력·기를 소모하지 않고 직접 켜는 6초 주위 공격이며 기본 재사용 대기시간도 6초다. 특별 배달과 같은 선택 칸이다. 공용 툴팁에 보이는 기 비용은 양조 전문화의 자원 소모 100% 감소 보정 후에는 적용되지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20655,14 +20769,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_rushingjadewind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/특별배달",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의불꽃"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.051,
+        "synergyCount": 3,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -20915,6 +21034,60 @@
         "lastUpdate": ""
       }
     },
+    "117906": {
+      "id": "117906",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "특화: 교묘한 투사",
+      "koreanName": "특화: 교묘한 투사",
+      "englishName": "Mastery: Elusive Brawler",
+      "icon": "ability_monk_guard",
+      "iconName": "ability_monk_guard",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "근접 공격을 맞거나 후려차기가 적중하면 다음 회피 확률을 중첩하여 올리는 특화다. 회피하면 중첩이 초기화되며 전투력 보정도 제공한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_guard.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_guard.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_guard.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_guard.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_guard.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/교묘한발놀림",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/바람과하나",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/모루와말뚝"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\교묘한투사.md",
+        "lastUpdate": ""
+      }
+    },
     "117907": {
       "id": "117907",
       "type": "talent",
@@ -20964,6 +21137,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\특화안개돌풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "117952": {
+      "id": "117952",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "짜릿한 비취 번개",
+      "koreanName": "짜릿한 비취 번개",
+      "englishName": "Crackling Jade Lightning",
+      "icon": "ability_monk_cracklingjadelightning",
+      "iconName": "ability_monk_cracklingjadelightning",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "4초 채널",
+      "resourceCost": "기력 20 및 초당 20",
+      "range": "40미터",
+      "description": "기력을 소비하며 4초 동안 원거리 자연 피해를 주는 채널 기술이다. 근접 공격자를 밀쳐내는 부가 효과가 있다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cracklingjadelightning.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_cracklingjadelightning.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_cracklingjadelightning.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_cracklingjadelightning.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cracklingjadelightning.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/비취의섬광",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\짜릿한비취번개.md",
         "lastUpdate": ""
       }
     },
@@ -21084,12 +21308,12 @@
       "school": "",
       "cooldown": "20초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 정화주 (Purifying Brew)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "기본 2충전, 충전당 20초인 방어기다. 현재 남은 시간차의 50%를 정화하며 최소 정화량은 최대 생명력의 8%다. 실제 남은 피해보다 더 정화한 것으로 계산하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21102,15 +21326,22 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강한내성",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/가이플린의황실맥주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/결의의비약",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건우지세"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/순수의진언"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 1,
-        "linkDensity": 0.059,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -21388,11 +21619,11 @@
       "cooldown": "8초",
       "castTime": "즉시",
       "resourceCost": "기력 40",
-      "range": "15야드",
-      "description": "# 맥주통 휘두르기 (Keg Smash)",
+      "range": "15미터",
+      "description": "기력 40을 쓰는 광역 공격이다. 건들건들 5초와 맥주 재사용 대기시간 3초 감소를 함께 제공한다. 기본 충전은 1회이며 스톰스타우트의 마지막 술통으로 2회가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21405,17 +21636,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
-          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
           "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/스톰스타우트의마지막술통",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/살살라빔의힘",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 3,
-        "linkDensity": 0.079,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.078,
         "hasWikilinks": true
       },
       "source": {
@@ -21729,12 +21964,11 @@
     },
     "123986": {
       "id": "123986",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Monk",
       "spec": "공용",
       "specs": [
-        "Brewmaster",
-        "Mistweaver"
+        "Brewmaster"
       ],
       "name": "기의 파동",
       "koreanName": "기의 파동",
@@ -21742,14 +21976,14 @@
       "icon": "spell_arcane_arcanetorrent",
       "iconName": "spell_arcane_arcanetorrent",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "30초",
+      "castTime": "1초",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 기의 파동 (Chi Burst)",
-      "category": "hero-talent",
+      "range": "40미터",
+      "description": "직접 시전하는 직선형 자연 피해·치유 기술이다. 1초 시전, 30초 재사용 대기시간, 40미터 사거리이며 5명을 초과하면 효과가 줄어든다. 현행 특성 데이터의 이 ID는 양조 선택 기술이다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21762,17 +21996,77 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/현신",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/회생의길",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/기의물결"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Hero-Talents\\기의파동.md",
+        "lastUpdate": ""
+      }
+    },
+    "124502": {
+      "id": "124502",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "소의 선물",
+      "koreanName": "소의 선물",
+      "englishName": "Gift of the Ox",
+      "icon": "ability_druid_giftoftheearthmother",
+      "iconName": "ability_druid_giftoftheearthmother",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "피해를 받으면 자신만 볼 수 있는 치유의 구슬을 만드는 패시브다. 구슬을 지나가면 생명력이 회복된다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_giftoftheearthmother.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_giftoftheearthmother.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_giftoftheearthmother.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_giftoftheearthmother.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_giftoftheearthmother.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/평온한정신"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\소의선물.md",
         "lastUpdate": ""
       }
     },
@@ -22055,14 +22349,14 @@
       "icon": "spell_monk_brewmaster_spec",
       "iconName": "spell_monk_brewmaster_spec",
       "school": "",
-      "cooldown": "3분",
+      "cooldown": "2분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 흑우 니우짜오의 원령 (Invoke Niuzao, the Black Ox)",
+      "range": "40미터",
+      "description": "기본 2분 재사용 대기시간으로 25초 동안 니우짜오를 소환한다. 후려차기가 발구르기를 유발하고, 시간차로 넘길 피해의 40%를 니우짜오에게 넘긴다. 자신이 정화한 피해만큼 니우짜오가 치유된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22074,14 +22368,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_brewmaster_spec.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/황소의인내",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의심장"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/효율적인수련",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/장벽의지혜",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/대기준비"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -27914,14 +28217,14 @@
       "icon": "achievement_brewery_2",
       "iconName": "achievement_brewery_2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 특별 배달 (Special Delivery)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주 사용 후 3초 뒤 근처에 통이 떨어져 8미터 내 적에게 물리 피해와 15초 이동 속도 50% 감소를 적용하는 패시브다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27933,18 +28236,80 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_brewery_2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/비취돌풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의불꽃"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\특별배달.md",
+        "lastUpdate": ""
+      }
+    },
+    "196736": {
+      "id": "196736",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "의식 상실 연계",
+      "koreanName": "의식 상실 연계",
+      "englishName": "Blackout Combo",
+      "icon": "ability_monk_blackoutkick",
+      "iconName": "ability_monk_blackoutkick",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기 이후 다음 범의 장풍 피해를 100% 높이거나, 다음 맥주통 휘두르기의 맥주 재사용 대기시간 감소를 2초 추가한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_blackoutkick.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_blackoutkick.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_blackoutkick.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_blackoutkick.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_blackoutkick.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/여세몰이"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/명상의집중"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\의식상실연계.md",
         "lastUpdate": ""
       }
     },
@@ -27962,14 +28327,14 @@
       "icon": "monk_ability_avertharm",
       "iconName": "monk_ability_avertharm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 강한 내성 (High Tolerance)",
+      "range": "자신 또는 효과 대상",
+      "description": "시간차의 피해 지연 효율을 5% 높인다. 고조된 시간차에서 정화주를 쓰면 충전 시간 4초를 돌려받는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27981,14 +28346,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_ability_avertharm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -32874,14 +33242,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "3초",
+      "cooldown": "4초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 후려차기 (Blackout Kick)",
+      "description": "양조 전용 후려차기는 기를 소모하지 않는 근접 공격이며 기본 재사용 대기시간은 4초다. 건들건들 3초를 부여한다. 운무·풍운의 100784와 구별한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32894,15 +33262,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/역동의유동성",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/시간차일격",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.024,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.076,
         "hasWikilinks": true
       },
       "source": {
@@ -34551,6 +34925,59 @@
         "lastUpdate": ""
       }
     },
+    "216519": {
+      "id": "216519",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "천신의 행운",
+      "koreanName": "천신의 행운",
+      "englishName": "Celestial Fortune",
+      "icon": "inv_celestialserpentmount",
+      "iconName": "inv_celestialserpentmount",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "치명타 확률과 같은 확률로 받은 치유의 70%에 해당하는 추가 치유를 얻는 양조 패시브다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_celestialserpentmount.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_celestialserpentmount.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_celestialserpentmount.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_celestialserpentmount.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_celestialserpentmount.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/천신의축복",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\천신의행운.md",
+        "lastUpdate": ""
+      }
+    },
     "217200": {
       "id": "217200",
       "type": "atomic-skill",
@@ -34602,6 +35029,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Skills\\날카로운사격.md",
+        "lastUpdate": ""
+      }
+    },
+    "218164": {
+      "id": "218164",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "해독",
+      "koreanName": "해독",
+      "englishName": "Detox",
+      "icon": "ability_rogue_imrovedrecuperate",
+      "iconName": "ability_rogue_imrovedrecuperate",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "기력 10",
+      "range": "40미터",
+      "description": "양조·풍운용 독과 질병 해제 기술이다. 기력 10, 40미터 사거리, 기본 8초 재사용 대기시간을 사용한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_imrovedrecuperate.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_imrovedrecuperate.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_imrovedrecuperate.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_imrovedrecuperate.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_imrovedrecuperate.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/팽이차기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\해독.md",
         "lastUpdate": ""
       }
     },
@@ -34764,12 +35242,11 @@
     },
     "227291": {
       "id": "227291",
-      "type": "hero-talent",
+      "type": "proc",
       "class": "Monk",
       "spec": "공용",
       "specs": [
-        "Brewmaster",
-        "Windwalker"
+        "Brewmaster"
       ],
       "name": "땅 울리기",
       "koreanName": "땅 울리기",
@@ -34777,14 +35254,14 @@
       "icon": "ability_warstomp",
       "iconName": "ability_warstomp",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 땅 울리기 (Stomp)",
-      "category": "hero-talent",
+      "range": "자신 또는 효과 대상",
+      "description": "소환된 니우짜오의 주위 물리 피해 효과다. 현행 원령은 플레이어의 후려차기로 발구르기를 유발한다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -34796,14 +35273,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warstomp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/발구르기"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/장벽의무기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
@@ -40996,14 +41480,14 @@
       "icon": "ability_creature_cursed_04",
       "iconName": "ability_creature_cursed_04",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 와리가리 (Bob and Weave)",
+      "range": "자신 또는 효과 대상",
+      "description": "시간차 피해의 분배 시간을 5초 늘려 기본 10초를 15초로 만든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41015,14 +41499,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_cursed_04.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -41541,54 +42029,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\악마의-은총.md",
-        "lastUpdate": ""
-      }
-    },
-    "292601": {
-      "id": "292601",
-      "type": "talent",
-      "class": "Monk",
-      "spec": "양조",
-      "specs": [
-        "Brewmaster"
-      ],
-      "name": "무쇠가죽",
-      "koreanName": "무쇠가죽",
-      "englishName": "Ironfur",
-      "icon": "ability_druid_ironfur",
-      "iconName": "ability_druid_ironfur",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 무쇠가죽 (Ironfur)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ironfur.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_ironfur.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_ironfur.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_ironfur.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_ironfur.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\무쇠가죽.md",
         "lastUpdate": ""
       }
     },
@@ -43031,6 +43471,60 @@
         "lastUpdate": ""
       }
     },
+    "322101": {
+      "id": "322101",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "해악 축출",
+      "koreanName": "해악 축출",
+      "englishName": "Expel Harm",
+      "icon": "ability_monk_expelharm",
+      "iconName": "ability_monk_expelharm",
+      "school": "",
+      "cooldown": "15초",
+      "castTime": "즉시",
+      "resourceCost": "기력 15",
+      "range": "자신",
+      "description": "15초 재사용 대기시간의 자가 치유 기술이다. 양조는 기력을 쓰며 주변 치유의 구슬을 모아 회복량을 보탠다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_expelharm.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_expelharm.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_expelharm.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_expelharm.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_expelharm.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/평온한정신"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\해악축출.md",
+        "lastUpdate": ""
+      }
+    },
     "322109": {
       "id": "322109",
       "type": "atomic-skill",
@@ -43180,6 +43674,61 @@
         "lastUpdate": ""
       }
     },
+    "322120": {
+      "id": "322120",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "건들건들",
+      "koreanName": "건들건들",
+      "englishName": "Shuffle",
+      "icon": "ability_monk_shuffle",
+      "iconName": "ability_monk_shuffle",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주통 휘두르기·후려차기·회전 학다리차기 적중으로 받는 방어 패시브다. 시간차 효율을 100% 높이며, 이미 누적된 시간차를 직접 지우지는 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_shuffle.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_shuffle.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_shuffle.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_shuffle.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_shuffle.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/빠른한모금"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\건들건들.md",
+        "lastUpdate": ""
+      }
+    },
     "322507": {
       "id": "322507",
       "type": "atomic-skill",
@@ -43194,14 +43743,14 @@
       "icon": "ability_monk_ironskinbrew",
       "iconName": "ability_monk_ironskinbrew",
       "school": "",
-      "cooldown": "45초",
+      "cooldown": "90초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 천신주 (Celestial Brew)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "현재 기본 재사용 대기시간은 90초, 기본 1충전이다. 8초 동안 남은 흡수 한도 안에서 받는 피해를 흡수하며 시간차 피해도 대상이다. 천신의 주입과 선택 관계다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43213,18 +43762,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_ironskinbrew.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/간편양조",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형",
-          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/위치에너지",
-          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/바닥없는잔",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 0,
-        "linkDensity": 0.073,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -43246,14 +43799,14 @@
       "icon": "inv_inscription_trinket_ox",
       "iconName": "inv_inscription_trinket_ox",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 강력한 발구르기 (Mighty Stomp)",
+      "range": "자신 또는 효과 대상",
+      "description": "니우짜오가 활성화된 동안 원령 버튼을 다시 눌러 주위 적을 공중으로 띄우게 하는 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43265,14 +43818,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_inscription_trinket_ox.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/발구르기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -43294,14 +43851,14 @@
       "icon": "ability_monk_fortifyingale_new",
       "iconName": "ability_monk_fortifyingale_new",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 강화주: 결의 (Fortifying Brew: Determination)",
+      "range": "자신 또는 효과 대상",
+      "description": "강화주 활성화 중 시간차 효율을 15% 높인다. 다른 강화주 보정과 함께 적용되는 선택 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43313,14 +43870,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -43342,14 +43903,14 @@
       "icon": "spell_brew_wheat",
       "iconName": "spell_brew_wheat",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 간편 양조 (Light Brewing)",
+      "range": "자신 또는 효과 대상",
+      "description": "정화주·천신주·천신의 주입의 기본 재사용 대기시간을 20% 줄이는 지속 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43361,14 +43922,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_brew_wheat.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -43393,11 +43959,11 @@
       "cooldown": "1분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "40야드",
-      "description": "# 폭발하는 맥주통 (Exploding Keg)",
+      "range": "40미터",
+      "description": "1분 재사용 대기시간의 지정 위치 화염 공격이다. 3초 동안 적의 근접 자동 공격 피해를 크게 낮추고 자신의 후속 적중에 화염 피해를 더하며 맥주통 휘두르기 1충전을 초기화한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43409,14 +43975,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_monk_explodingkeg.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/불난집에부채질",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/저장고대방출",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.058,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -58768,14 +59340,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 후려차기 연마 (Improved Blackout Kick)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기의 피해를 20% 높이는 지속 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58787,14 +59359,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/수련용발보호대"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -58816,14 +59392,14 @@
       "icon": "ability_warrior_unrelentingassault",
       "iconName": "ability_warrior_unrelentingassault",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 살살라빔의 힘 (Sal'salabim's Strength)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주통 휘두르기를 사용하면 불의 숨결의 남은 재사용 대기시간이 초기화된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58835,14 +59411,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_unrelentingassault.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/장벽의지혜"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -58864,14 +59445,14 @@
       "icon": "spell_brew_bolt_dark",
       "iconName": "spell_brew_bolt_dark",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 끓어오르는 맥주 (Scalding Brew)",
+      "range": "자신 또는 효과 대상",
+      "description": "불의 숨결의 영향을 받는 대상에 대한 맥주통 휘두르기 피해가 20% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58883,14 +59464,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_brew_bolt_dark.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/살살라빔의힘"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -58912,14 +59498,14 @@
       "icon": "inv_misc_beer_05",
       "iconName": "inv_misc_beer_05",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 가이 플린의 황실 맥주 (Gai Plin's Imperial Brew)",
+      "range": "자신 또는 효과 대상",
+      "description": "정화주가 실제로 정화한 시간차 피해의 25%만큼 즉시 자신을 치유한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58931,14 +59517,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_beer_05.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -59008,14 +59597,14 @@
       "icon": "achievement_brewery_2",
       "iconName": "achievement_brewery_2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 스톰스타우트의 마지막 술통 (Stormstout's Last Keg)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주통 휘두르기의 주 대상 피해가 50% 증가하고 충전이 1회 늘며 사정거리가 10미터 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59027,14 +59616,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_brewery_2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -59056,14 +59650,14 @@
       "icon": "monk_stance_drunkenox",
       "iconName": "monk_stance_drunkenox",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 니우짜오의 훈련 (Training of Niuzao)",
+      "range": "자신 또는 효과 대상",
+      "description": "현재 시간차 수준에 따라 최대 15%의 특화를 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59075,14 +59669,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_drunkenox.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의심장"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -59154,14 +59753,14 @@
       "icon": "ability_monk_palmstrike",
       "iconName": "ability_monk_palmstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 반격 (Counterstrike)",
+      "range": "자신 또는 효과 대상",
+      "description": "회피하거나 적이 빗맞히면 다음 범의 장풍 또는 회전 학다리차기의 피해가 100% 증가한다. 발동 제한은 1초다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59173,14 +59772,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_palmstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -59736,6 +60342,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\비전의박자.md",
+        "lastUpdate": ""
+      }
+    },
+    "383994": {
+      "id": "383994",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "용숨결 맥주",
+      "koreanName": "용숨결 맥주",
+      "englishName": "Dragonfire Brew",
+      "icon": "spell_fire_burnout",
+      "iconName": "spell_fire_burnout",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "불의 숨결의 피해를 100% 높이고 뒤이어 추가 화염 공격을 두 번 발생시킨다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_burnout.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_burnout.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_burnout.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/그을린격정",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\용숨결맥주.md",
         "lastUpdate": ""
       }
     },
@@ -63061,14 +63720,14 @@
       "icon": "ability_monk_elusiveale",
       "iconName": "ability_monk_elusiveale",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 모루와 말뚝 (Anvil and Stave)",
+      "range": "자신 또는 효과 대상",
+      "description": "회피하거나 적이 빗맞힐 때 맥주 재사용 대기시간이 0.5초 줄어든다. 최근 공격자가 추가될수록 효과가 50%씩 줄어드는 제한이 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63080,18 +63739,76 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_elusiveale.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\모루와말뚝.md",
+        "lastUpdate": ""
+      }
+    },
+    "386965": {
+      "id": "386965",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "그을린 격정",
+      "koreanName": "그을린 격정",
+      "englishName": "Charred Passions",
+      "icon": "ability_monk_mightyoxkick",
+      "iconName": "ability_monk_mightyoxkick",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "불의 숨결 사용 후 8초 동안 후려차기·회전 학다리차기에 50%의 추가 화염 피해와 대상의 불의 숨결 지속 시간 갱신을 부여한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_mightyoxkick.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_mightyoxkick.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_mightyoxkick.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_mightyoxkick.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_mightyoxkick.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/용숨결맥주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\그을린격정.md",
         "lastUpdate": ""
       }
     },
@@ -63306,14 +64023,14 @@
       "icon": "ability_monk_shuffle",
       "iconName": "ability_monk_shuffle",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 교묘한 발놀림 (Elusive Footwork)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기 피해가 5% 증가하고, 치명타 적중은 교묘한 투사를 추가로 1중첩 부여한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63325,14 +64042,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_shuffle.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/후려차기연마",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/바람과하나"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -63455,14 +64177,14 @@
       "icon": "ability_monk_chargingoxwave",
       "iconName": "ability_monk_chargingoxwave",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 황소와 함께 걷기 (Walk with the Ox)",
+      "range": "자신 또는 효과 대상",
+      "description": "공격 능력 사용 시 확률로 니우짜오가 대상 위치에 돌진하여 발구르기 피해를 입힌다. 내부 발동 제한은 750밀리초다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63474,14 +64196,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chargingoxwave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/발구르기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -63503,14 +64230,14 @@
       "icon": "ability_monk_standingkick",
       "iconName": "ability_monk_standingkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 역동의 유동성 (Fluidity of Motion)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기의 재사용 대기시간을 1초 줄이는 선택 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63522,14 +64249,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_standingkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -63806,14 +64537,14 @@
       "icon": "ability_monk_blackoutstrike",
       "iconName": "ability_monk_blackoutstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 시간차 일격 (Staggering Strikes)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기가 누적 시간차를 전투력 기반의 고정량만큼 줄인다. 잃은 생명력에 따라 감소량이 최대 200% 증가하며 12.1에서 기본 감소량이 25% 올랐다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63825,14 +64556,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_blackoutstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -63854,14 +64589,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 수련용 발보호대 (Shadowboxing Treads)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기의 피해를 20% 높이고 추가 2명을 공격하게 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63873,14 +64608,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/전장을호령하는그림자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -65040,14 +65781,14 @@
       "icon": "achievement_faction_brewmaster",
       "iconName": "achievement_faction_brewmaster",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 빠른 한 모금 (Quick Sip)",
+      "range": "자신 또는 효과 대상",
+      "description": "건들건들 지속 시간을 누적 3초 얻을 때마다 현재 시간차 피해의 5%를 정화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65059,14 +65800,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_faction_brewmaster.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
@@ -65763,6 +66510,63 @@
         "lastUpdate": ""
       }
     },
+    "388917": {
+      "id": "388917",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "강화주",
+      "koreanName": "강화주",
+      "englishName": "Fortifying Brew",
+      "aliases": [
+        "강화주 기본 효과"
+      ],
+      "icon": "ability_monk_fortifyingale_new",
+      "iconName": "ability_monk_fortifyingale_new",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "강화주에 15초 동안 현재·최대 생명력 20% 증가와 받는 피해 20% 감소를 붙이는 특성 효과다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_fortifyingale_new.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_fortifyingale_new.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_fortifyingale_new.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강화주결의"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/끈기의진언"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\강화주기본효과.md",
+        "lastUpdate": ""
+      }
+    },
     "388933": {
       "id": "388933",
       "type": "spec-talent",
@@ -66444,14 +67248,14 @@
       "icon": "ability_monk_tigerpalm",
       "iconName": "ability_monk_tigerpalm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 안면 장풍 (Face Palm)",
+      "range": "자신 또는 효과 대상",
+      "description": "범의 장풍의 피해가 100% 증가하고 맥주 재사용 대기시간 감소량이 0.5초 추가된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66463,14 +67267,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerpalm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -70772,14 +71583,14 @@
       "icon": "ability_monk_chiswirl",
       "iconName": "ability_monk_chiswirl",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 평온한 정신 (Tranquil Spirit)",
+      "range": "자신 또는 효과 대상",
+      "description": "치유의 구슬을 소비할 때마다 현재 시간차의 5%를 정화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70791,14 +71602,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chiswirl.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -70925,14 +71742,14 @@
       "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
       "iconName": "inv_misc_archaeology_vrykuldrinkinghorn",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 허초 (Pretense of Instability)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주를 마시면 5초 동안 회피가 10% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70944,14 +71761,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_archaeology_vrykuldrinkinghorn.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/모루와말뚝"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -72709,6 +73531,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Talents\\폭주하는합성.md",
+        "lastUpdate": ""
+      }
+    },
+    "400629": {
+      "id": "400629",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "흑우의 영",
+      "koreanName": "흑우의 영",
+      "englishName": "Spirit of the Ox",
+      "icon": "ability_titankeeper_cleansingorb",
+      "iconName": "ability_titankeeper_cleansingorb",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기에서 확률로 치유의 구슬을 만든다. 공개 툴팁은 분당 약 6회 발동 모델을 표시하며 12.1에서 발동 확률이 20% 증가했다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_titankeeper_cleansingorb.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_titankeeper_cleansingorb.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_titankeeper_cleansingorb.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_titankeeper_cleansingorb.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_titankeeper_cleansingorb.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/평온한정신"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\흑우의영.md",
         "lastUpdate": ""
       }
     },
@@ -76592,6 +77468,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\겨울의축복.md",
+        "lastUpdate": ""
+      }
+    },
+    "418359": {
+      "id": "418359",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "여세 몰이",
+      "koreanName": "여세 몰이",
+      "englishName": "Press the Advantage",
+      "icon": "inv__fistofthewhitetiger",
+      "iconName": "inv__fistofthewhitetiger",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "범의 장풍을 대신하는 선택 특성이다. 주무기 자동 공격이 자연 피해와 맥주 재사용 대기시간 감소를 제공하고 누적 공격으로 자동 범의 장풍을 발생시킨다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv__fistofthewhitetiger.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv__fistofthewhitetiger.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv__fistofthewhitetiger.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv__fistofthewhitetiger.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv__fistofthewhitetiger.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/명상의집중"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\여세몰이.md",
         "lastUpdate": ""
       }
     },
@@ -94903,14 +95834,14 @@
       "icon": "inv_ability_masterofharmonymonk_aspectofharmony",
       "iconName": "inv_ability_masterofharmonymonk_aspectofharmony",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 조화의 형 (Aspect of Harmony)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 준 피해의 12%와 유효 치유의 6%를 활력으로 모으고, 천신주·천신의 주입 후 10초 동안 활력을 써서 8초 추가 지속 피해를 붙인다. 운무는 피해 10%·치유 30%를 모아 집중의 천둥 차 이후 추가 치유에 쓴다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94922,14 +95853,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_masterofharmonymonk_aspectofharmony.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/응결",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/위치에너지",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -94952,14 +95890,14 @@
       "icon": "ability_monk_effuse",
       "iconName": "ability_monk_effuse",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 응결 (Coalescence)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 조화의 형 피해가 전이·강화될 수 있다. 맥주통 휘두르기는 활력을 공급하지 않고 조화의 형이 비활성일 때 저장 활력을 써서 8초 추가 피해를 낸다. 다른 능력의 저장량은 50% 늘어난다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94971,14 +95909,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_effuse.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/정화된정신"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -95211,14 +96154,14 @@
       "icon": "ability_monk_explodingjadeblossom",
       "iconName": "ability_monk_explodingjadeblossom",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 정화된 정신 (Purified Spirit)",
+      "range": "자신 또는 효과 대상",
+      "description": "조화의 형이 끝날 때 남은 활력을 방출한다. 양조는 주위 대상에게 나누는 8초 지속 피해, 운무는 주위 아군에 나누는 8초 지속 치유다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95232,12 +96175,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/응결"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -95260,14 +96206,14 @@
       "icon": "passive_monk_teachingsofmonastery",
       "iconName": "passive_monk_teachingsofmonastery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 조화의 승부수 (Harmonic Gambit)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 조화의 형 중 해악 축출·생기 충전이 활력을 써서 8초 추가 치유를 낸다. 운무는 해오름차기·후려차기·범의 장풍에 8초 추가 피해가 붙는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95279,14 +96225,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/passive_monk_teachingsofmonastery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -95309,14 +96261,14 @@
       "icon": "inv_shoulder_inv_leather_raidmonk_s_01",
       "iconName": "inv_shoulder_inv_leather_raidmonk_s_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 현신 (Manifestation)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 기의 파동·기의 물결 피해와 치유를 50% 올린다. 운무에는 기의 물결의 피해·치유 50% 증가가 적용된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95330,12 +96282,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/기의파동",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/기의물결",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/회생의길"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -95358,14 +96314,14 @@
       "icon": "ability_monk_sphereharmonydiscord",
       "iconName": "ability_monk_sphereharmonydiscord",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 절묘한 전략 (Balanced Stratagem)",
+      "range": "자신 또는 효과 대상",
+      "description": "물리 능력을 쓰면 다음 화염·자연 능력의 피해·치유가 3% 증가하고 반대 방향도 적용된다. 최대 5중첩, 내부 제한 500밀리초다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95377,14 +96333,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_sphereharmonydiscord.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -95407,14 +96369,14 @@
       "icon": "inv_drink_25_honeytea",
       "iconName": "inv_drink_25_honeytea",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 바닥 없는 잔 (Endless Draught)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 천신주·천신의 주입, 운무의 집중의 천둥 차에 충전이 1회 추가된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95426,14 +96388,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_25_honeytea.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -95456,14 +96423,14 @@
       "icon": "ability_monk_pathofmists",
       "iconName": "ability_monk_pathofmists",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 회생의 길 (Path of Resurgence)",
+      "range": "자신 또는 효과 대상",
+      "description": "기의 파동 이후 10초 동안 활력 저장량을 25% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95477,12 +96444,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/기의파동",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/현신"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -95505,14 +96476,14 @@
       "icon": "ability_monk_mightyoxkick",
       "iconName": "ability_monk_mightyoxkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 일순천격 (Way of a Thousand Strikes)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 후려차기·범의 장풍이 활력을 30% 더 저장한다. 운무에서는 해오름차기도 포함된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95524,14 +96495,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_mightyoxkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.08,
         "hasWikilinks": true
       },
       "source": {
@@ -96087,14 +97064,14 @@
       "icon": "ability_titankeeper_cleanse",
       "iconName": "ability_titankeeper_cleanse",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 목적의 명료함 (Clarity of Purpose)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 정화주, 운무는 포용의 안개를 사용하면 전투 수치에 비례하는 활력을 추가로 저장한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96106,14 +97083,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_titankeeper_cleanse.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -96185,14 +97166,14 @@
       "icon": "ability_titankeeper_piercingcorruption",
       "iconName": "ability_titankeeper_piercingcorruption",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 압도적인 무력 (Overwhelming Force)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 후려차기·범의 장풍이 전방 일직선으로 15% 추가 피해를 준다. 운무는 해오름차기도 포함하며 5명을 초과하면 감소된 피해를 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96204,14 +97185,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_titankeeper_piercingcorruption.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -96234,14 +97221,14 @@
       "icon": "spell_monk_brewmastertraining",
       "iconName": "spell_monk_brewmastertraining",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 끈기의 진언 (Mantra of Tenacity)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 강화주에 최대 생명력의 12%와 유연성 보정을 받는 기 고치를 더한다. 운무에서는 강화주에 시간차 20%가 붙는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96253,14 +97240,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_brewmastertraining.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강화주기본효과"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -96335,14 +97327,14 @@
       "icon": "ability_monk_domeofmist",
       "iconName": "ability_monk_domeofmist",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 순수의 진언 (Mantra of Purity)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 정화주가 시간차를 10% 추가 정화하고 이후 받는 시간차도 전투력 기반 한도까지 흡수한다. 운무는 자신에게 쓰는 단일 치유를 강화한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96354,14 +97346,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_domeofmist.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/깨어나는영혼"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -96432,14 +97429,14 @@
       "icon": "monk_stance_whitetiger",
       "iconName": "monk_stance_whitetiger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 호랑이의 활력 (Tiger's Vigor)",
+      "range": "자신 또는 효과 대상",
+      "description": "범의 욕망을 쓰면 구르기의 남은 재사용 대기시간이 5초 줄어든다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96451,14 +97448,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_whitetiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -96481,14 +97481,14 @@
       "icon": "inv_celestialserpentmount",
       "iconName": "inv_celestialserpentmount",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 천상의 포효 (Roar from the Heavens)",
+      "range": "자신 또는 효과 대상",
+      "description": "범의 욕망 대상 주위 아군 최대 2명에게 이동 속도 20% 증가를 나누어 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96500,14 +97500,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_celestialserpentmount.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/호랑이의활력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -99905,14 +100909,14 @@
       "icon": "inv_celestialserpentmount",
       "iconName": "inv_celestialserpentmount",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 천신의 축복 (August Blessing)",
+      "range": "자신 또는 효과 대상",
+      "description": "최대 생명력을 초과하는 치유의 일부를 지속 치유로 전환한다. 전환 비율은 자신의 치명타 확률의 40%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99925,13 +100929,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/가이플린의황실맥주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -99953,14 +100960,14 @@
       "icon": "ability_skyreach_wind",
       "iconName": "ability_skyreach_wind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 바람과 하나 (One With the Wind)",
+      "range": "자신 또는 효과 대상",
+      "description": "회피에 성공했을 때 10% 확률로 교묘한 투사 중첩을 초기화하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99972,14 +100979,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_wind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/교묘한발놀림"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -100200,14 +101212,14 @@
       "icon": "ability_monk_leeroftheox",
       "iconName": "ability_monk_leeroftheox",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 건우지세 (Ox Stance)",
+      "range": "자신 또는 효과 대상",
+      "description": "정화주 사용으로 건우지세 충전을 얻는다. 현재 생명력의 60%를 넘는 피해가 들어오면 충전을 소비하여 시간차로 넘기는 양을 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100219,14 +101231,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_leeroftheox.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -100696,14 +101711,14 @@
       "icon": "monk_ability_cherrymanatea",
       "iconName": "monk_ability_cherrymanatea",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 결의의 비약 (Elixir of Determination)",
+      "range": "자신 또는 효과 대상",
+      "description": "생명력이 40% 아래로 내려가면 최근 정화한 피해의 30%, 최소 최대 생명력의 8%에 해당하는 보호막을 얻는다. 발동 제한은 15초다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -100715,14 +101730,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_ability_cherrymanatea.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -111127,6 +112146,115 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "1241059": {
+      "id": "1241059",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "천신의 주입",
+      "koreanName": "천신의 주입",
+      "englishName": "Celestial Infusion",
+      "icon": "ability_monk_tigereyebrandy",
+      "iconName": "ability_monk_tigereyebrandy",
+      "school": "",
+      "cooldown": "90초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "현재 기본 90초, 1충전의 흡수 방어기다. 16초 동안 각 피해의 30%를 총 흡수 한도까지 받아내며 천신주를 선택하는 칸을 대신한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigereyebrandy.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_tigereyebrandy.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_tigereyebrandy.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_tigereyebrandy.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigereyebrandy.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의결의"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/바닥없는잔",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의형"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.062,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Skills\\천신의주입.md",
+        "lastUpdate": ""
+      }
+    },
+    "1241097": {
+      "id": "1241097",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "니우짜오의 결의",
+      "koreanName": "니우짜오의 결의",
+      "englishName": "Niuzao's Resolve",
+      "icon": "inv_ability_monk_renewingmists_active",
+      "iconName": "inv_ability_monk_renewingmists_active",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "치유의 구슬을 10초 지속 치유로 바꾸며, 잃은 생명력에 따라 치유량을 최대 80% 높인다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_renewingmists_active.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_monk_renewingmists_active.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_monk_renewingmists_active.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_monk_renewingmists_active.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_renewingmists_active.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/소의선물",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/흑우의영"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\니우짜오의결의.md",
+        "lastUpdate": ""
+      }
+    },
     "1241136": {
       "id": "1241136",
       "type": "talent",
@@ -111141,14 +112269,14 @@
       "icon": "spell_monk_zenpilgrimage",
       "iconName": "spell_monk_zenpilgrimage",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 참선 상태 (Zen State)",
+      "range": "자신 또는 효과 대상",
+      "description": "잃은 생명력에 따라 시간차 효율을 최대 15% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111160,14 +112288,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_zenpilgrimage.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/해악축출",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -111730,7 +112862,7 @@
     },
     "1242197": {
       "id": "1242197",
-      "type": "talent",
+      "type": "proc",
       "class": "Monk",
       "spec": "양조",
       "specs": [
@@ -111742,14 +112874,14 @@
       "icon": "ability_monk_healthsphere",
       "iconName": "ability_monk_healthsphere",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 황소의 인내 (Oxen Fortitude)",
-      "category": "talent",
+      "range": "자신 또는 효과 대상",
+      "description": "정화주가 소환 중인 니우짜오를 치유할 때 발생하는 효과다. 원령은 정화한 시간차 피해의 100%에 해당하는 치유를 받는다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111761,14 +112893,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_healthsphere.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -111778,7 +112913,7 @@
     },
     "1242373": {
       "id": "1242373",
-      "type": "talent",
+      "type": "proc",
       "class": "Monk",
       "spec": "양조",
       "specs": [
@@ -111790,14 +112925,14 @@
       "icon": "ability_warstomp",
       "iconName": "ability_warstomp",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 발구르기 (Stomp)",
-      "category": "talent",
+      "range": "자신 또는 효과 대상",
+      "description": "황소와 함께 걷기로 불려 나온 니우짜오의 발구르기 피해 효과다. 주 대상에는 전투력 계수 기반 물리 피해를, 부가 대상에는 감소된 피해를 준다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111809,14 +112944,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warstomp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/황소와함께걷기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -124548,14 +125687,14 @@
       "icon": "spell_shaman_stormearthfire",
       "iconName": "spell_shaman_stormearthfire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 불난 집에 부채질 (Fuel on the Fire)",
+      "range": "자신 또는 효과 대상",
+      "description": "폭발하는 맥주통 이후 다음 두 맥주통 휘두르기에 바깥으로 퍼지는 화염 회오리를 추가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124567,14 +125706,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_stormearthfire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -124651,14 +125795,14 @@
       "icon": "ability_vehicle_liquidpyrite",
       "iconName": "ability_vehicle_liquidpyrite",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 저장고 대방출 (Empty the Cellar)",
+      "range": "자신 또는 효과 대상",
+      "description": "폭발하는 맥주통을 20초 안에 다시 사용하여 추가 5개의 통을 던지게 한다. 각 통은 물리 피해와 맥주 재사용 대기시간 3초 감소를 제공한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124670,14 +125814,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_vehicle_liquidpyrite.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -124699,14 +125847,14 @@
       "icon": "shaman_pvp_staticcling",
       "iconName": "shaman_pvp_staticcling",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 비취의 섬광 (Jade Flash)",
+      "range": "자신 또는 효과 대상",
+      "description": "짜릿한 비취 번개의 채널 시간을 75%, 기력 소모량을 75% 줄이고 추가 4명을 공격하게 한다. 대신 60초 재사용 대기시간을 적용한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124718,14 +125866,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/shaman_pvp_staticcling.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/짜릿한비취번개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -125009,14 +126161,14 @@
       "icon": "achievement_boss_golden_lotus_council",
       "iconName": "achievement_boss_golden_lotus_council",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 깨어나는 영혼 (Awakening Spirit)",
+      "range": "자신 또는 효과 대상",
+      "description": "정화주 사용 후 15초 동안 받는 시간차 피해의 최대 50%를 별도 한도까지 흡수한다. 12.1에서 최대 흡수량이 25% 증가했다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125028,14 +126180,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_golden_lotus_council.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/순수의진언"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -125105,14 +126262,14 @@
       "icon": "achievement_faction_shadopan",
       "iconName": "achievement_faction_shadopan",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 생기의 불길 (Vital Flame)",
+      "range": "자신 또는 효과 대상",
+      "description": "자신의 주문과 능력으로 입힌 화염·자연 피해의 50%만큼 생명력을 회복한다. 12.1 이전 40%에서 증가했다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125124,14 +126281,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_faction_shadopan.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/폭발하는맥주통"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -125783,14 +126945,14 @@
       "icon": "inv_muskox_white",
       "iconName": "inv_muskox_white",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 흑우의 심장 (Heart of the Ox)",
+      "range": "자신 또는 효과 대상",
+      "description": "특화를 5% 높이고 흑우 니우짜오의 원령이 활성화된 동안에는 이 보정이 두 배가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125802,14 +126964,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_muskox_white.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/니우짜오의훈련"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -126092,14 +127259,14 @@
       "icon": "ability_rogue_sprint_blue",
       "iconName": "ability_rogue_sprint_blue",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 굽이치는 강처럼 (Swift as a Coursing River)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주 사용 후 15초 동안 이동 속도 15%와 자동 공격 속도 10%를 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126111,14 +127278,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint_blue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.042,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -126140,14 +127312,14 @@
       "icon": "inv_misc_volatilefire",
       "iconName": "inv_misc_volatilefire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 천신의 불꽃 (Celestial Flames)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주를 마시면 30% 확률로 6초 동안 천신의 불꽃을 얻는다. 특별 배달의 통에 추가 화염 확산을 붙이거나 비취 돌풍을 더 넓은 화염 공격으로 바꾼다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126159,14 +127331,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_volatilefire.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/비취돌풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/특별배달",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -128260,14 +129438,14 @@
       "icon": "inv12_apextalent_monk_bringmeanother",
       "iconName": "inv12_apextalent_monk_bringmeanother",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 한 잔 더 (Bring Me Another)",
+      "range": "자신 또는 효과 대상",
+      "description": "맥주 사용 시 20% 확률로 술통을 비워라 준비 효과를 얻는 첫 정점 노드다. 다음 맥주통 휘두르기에 추가 통이 함께 나간다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128279,14 +129457,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_bringmeanother.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더중간",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -128294,9 +129478,66 @@
         "lastUpdate": ""
       }
     },
+    "1265138": {
+      "id": "1265138",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "한 잔 더",
+      "koreanName": "한 잔 더",
+      "englishName": "Bring Me Another",
+      "aliases": [
+        "한 잔 더 중간 노드"
+      ],
+      "icon": "inv12_apextalent_monk_bringmeanother",
+      "iconName": "inv12_apextalent_monk_bringmeanother",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "빈 통 획득 시 맥주통 휘두르기를 초기화하고 다음 시전의 기력 소모량을 줄이는 두 점짜리 정점 노드다. 1점은 물리 피해 10% 증가·기력 소모량 50% 감소, 2점은 각각 20%·100%다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_bringmeanother.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_monk_bringmeanother.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_monk_bringmeanother.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_monk_bringmeanother.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_bringmeanother.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\한잔더중간.md",
+        "lastUpdate": ""
+      }
+    },
     "1265140": {
       "id": "1265140",
-      "type": "talent",
+      "type": "buff",
       "class": "Monk",
       "spec": "양조",
       "specs": [
@@ -128308,14 +129549,128 @@
       "icon": "achievement_guildperk_happyhour",
       "iconName": "achievement_guildperk_happyhour",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "한 잔 더 마지막 노드가 주는 신선한 음료의 대기 버프다. 20초 안에 피해를 받으면 자동으로 음료를 소비하여 8초 치유 효과가 시작된다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_happyhour.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_guildperk_happyhour.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_guildperk_happyhour.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_guildperk_happyhour.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_happyhour.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\신선한음료.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265141": {
+      "id": "1265141",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "한 잔 더",
+      "koreanName": "한 잔 더",
+      "englishName": "Bring Me Another",
+      "aliases": [
+        "한 잔 더 마지막 노드"
+      ],
+      "icon": "inv12_apextalent_monk_bringmeanother",
+      "iconName": "inv12_apextalent_monk_bringmeanother",
+      "school": "",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 신선한 음료 (Refreshing Drink)",
+      "range": "자신 또는 효과 대상",
+      "description": "강화주 또는 천신주·천신의 주입 사용 시 빈 통을 확정으로 준비하고, 자신과 가까운 아군 2명에게 신선한 음료를 준다. 추가 통 피해도 100% 높인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_bringmeanother.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_monk_bringmeanother.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_monk_bringmeanother.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_monk_bringmeanother.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_bringmeanother.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/술통을비워라",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/신선한음료"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.076,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\한잔더마지막.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265145": {
+      "id": "1265145",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "신선한 음료",
+      "koreanName": "신선한 음료",
+      "englishName": "Refreshing Drink",
+      "aliases": [
+        "신선한 음료 치유"
+      ],
+      "icon": "achievement_guildperk_happyhour",
+      "iconName": "achievement_guildperk_happyhour",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "신선한 음료 준비 버프가 피해를 받아 소비된 뒤 시작되는 8초 지속 치유 효과다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128328,23 +129683,26 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/신선한음료",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\신선한음료.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Buffs\\신선한음료치유.md",
         "lastUpdate": ""
       }
     },
     "1265307": {
       "id": "1265307",
-      "type": "talent",
+      "type": "buff",
       "class": "Monk",
       "spec": "양조",
       "specs": [
@@ -128356,14 +129714,14 @@
       "icon": "inv_achievement_dungeon_cinderbrewmeadery",
       "iconName": "inv_achievement_dungeon_cinderbrewmeadery",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 술통을 비워라 (Empty Barrel)",
-      "category": "talent",
+      "range": "자신 또는 효과 대상",
+      "description": "한 잔 더로 얻는 12초짜리 빈 통 준비 효과다. 다음 맥주통 휘두르기에 추가 통을 던지게 하며 최대 4회 튕긴다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128375,14 +129733,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_achievement_dungeon_cinderbrewmeadery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더중간",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -133154,14 +134518,14 @@
       "icon": "ability_socererking_forcenova",
       "iconName": "ability_socererking_forcenova",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 조화의 쇄도 (Harmonic Surge)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 천신주·천신의 주입, 운무는 집중의 천둥 차 사용으로 잠재된 기운 2중첩을 얻는다. 다음 범의 장풍·생기 충전은 모든 중첩을 소모해 주위 피해와 최대 5명 치유를 발생시킨다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133173,14 +134537,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_socererking_forcenova.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신주",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/천신의주입",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/위치에너지"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -133190,7 +134561,7 @@
     },
     "1270990": {
       "id": "1270990",
-      "type": "hero-talent",
+      "type": "buff",
       "class": "Monk",
       "spec": "공용",
       "specs": [
@@ -133203,14 +134574,14 @@
       "icon": "ability_socererking_forcenova",
       "iconName": "ability_socererking_forcenova",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 잠재된 기운 (Potential Energy)",
-      "category": "hero-talent",
+      "range": "자신 또는 효과 대상",
+      "description": "잠재된 기운은 다음 범의 장풍 또는 생기 충전으로 전부 소비하는 준비 버프다. 중첩마다 조화의 쇄도 피해·치유가 증가하며 양조와 운무의 계수가 다르다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133222,14 +134593,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_socererking_forcenova.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/위치에너지",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -133252,14 +134628,14 @@
       "icon": "spell_magic_managain",
       "iconName": "spell_magic_managain",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 위치 에너지 (Potential Energy)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 맥주통 휘두르기, 운무는 해오름차기 또는 질풍차기 사용으로 잠재된 기운을 1중첩 얻는 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133271,14 +134647,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_magic_managain.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -133397,14 +134779,14 @@
       "icon": "inv_misc_herb_mountainsilversage",
       "iconName": "inv_misc_herb_mountainsilversage",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 명상의 집중 (Meditative Focus)",
+      "range": "자신 또는 효과 대상",
+      "description": "의식 상실 연계 선택 시 범의 장풍 피해 보정을 50%, 맥주통의 맥주 재사용 대기시간 감소를 1초 추가한다. 여세 몰이에서는 자동 공격 자연 피해와 맥주 회복을 보강한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133416,14 +134798,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_herb_mountainsilversage.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/여세몰이"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -139963,6 +141351,107 @@
         "lastUpdate": "2026-09-13"
       }
     },
+    "1296617": {
+      "id": "1296617",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "Monk Brewmaster 12.1 Class Set 2pc",
+      "koreanName": "Monk Brewmaster 12.1 Class Set 2pc",
+      "englishName": "Monk Brewmaster 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "S2 양조 2세트 효과다. 불의 숨결이 뜨거운 감자를 준비하여 다음 맥주통 휘두르기에 추가 폭발을 붙인다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296618": {
+      "id": "1296618",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "Monk Brewmaster 12.1 Class Set 4pc",
+      "koreanName": "Monk Brewmaster 12.1 Class Set 4pc",
+      "englishName": "Monk Brewmaster 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "S2 양조 4세트 효과다. 점화된 맥주통 휘두르기가 그슬림을 적용하여 자신의 물리 능력 피해를 8% 높이고 5초 화염 지대를 남긴다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
     "1296621": {
       "id": "1296621",
       "type": "passive",
@@ -141728,6 +143217,113 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\전술재장전.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301410": {
+      "id": "1301410",
+      "type": "debuff",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "그슬림",
+      "koreanName": "그슬림",
+      "englishName": "Scorched",
+      "icon": "spell_burningsoul",
+      "iconName": "spell_burningsoul",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "S2 4세트의 점화된 맥주통 휘두르기로 적에게 적용한다. 5초 동안 자신이 주는 물리 능력 피해를 8% 높이고 지면에 5초 화염 피해를 남긴다.",
+      "category": "debuff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_burningsoul.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_burningsoul.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_burningsoul.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_burningsoul.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_burningsoul.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/시즌2-4세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.066,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Buffs\\그슬림.md",
+        "lastUpdate": ""
+      }
+    },
+    "1301477": {
+      "id": "1301477",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "양조",
+      "specs": [
+        "Brewmaster"
+      ],
+      "name": "뜨거운 감자",
+      "koreanName": "뜨거운 감자",
+      "englishName": "Hot Potato",
+      "icon": "inv_misc_matchbook",
+      "iconName": "inv_misc_matchbook",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "자동 적용",
+      "resourceCost": "없음",
+      "range": "자신 또는 효과 대상",
+      "description": "S2 2세트에서 불의 숨결이 부여하는 12초 버프다. 다음 맥주통 휘두르기 적중에 추가 불길충격 피해를 붙인다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_matchbook.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_matchbook.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_matchbook.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_matchbook.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_matchbook.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/시즌2-2세트"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Buffs\\뜨거운감자.md",
         "lastUpdate": ""
       }
     },

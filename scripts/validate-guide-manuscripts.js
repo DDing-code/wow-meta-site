@@ -24,6 +24,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['mage-arcane', '12.1'],
   ['mage-fire', '12.1'],
   ['mage-frost', '12.1'],
+  ['monk-brewmaster', '12.1'],
   ['demonhunter-devourer', '12.1'],
   ['priest-holy', '12.1'],
   ['druid-restoration', '12.1'],
@@ -1062,7 +1063,31 @@ function main() {
   assert(!JSON.stringify(windwalker).includes('99.9%'), 'Windwalker must not reuse stale Season 1 usage statistics');
 
 
-
+  const brewmaster = manuscripts['monk-brewmaster'];
+  const brewmasterSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '양조', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(brewmasterSource)) {
+    assert(JSON.stringify(JSON.parse(read(brewmasterSource))) === JSON.stringify(brewmaster), 'Brewmaster must match its canonical 12.1 manuscript');
+  }
+  const brewmasterNotes = Object.values(kbSkills).filter(skill => /[\\/]07-수도사[\\/]양조[\\/]/.test(skill.source?.kbPath || ''));
+  assert(brewmasterNotes.length === 74 && brewmasterNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 74 Brewmaster notes must retain reviewed descriptions');
+  assert(!brewmaster.extraSkills?.length && !kbSkills['292601'], 'Brewmaster must not include Druid Ironfur or bypass canonical skills');
+  assert(kbSkills['101546']?.specs.includes('Brewmaster') && kbSkills['101546']?.specs.includes('Windwalker') && kbSkills['101546']?.castTime === '1.5초 채널', 'Spinning Crane Kick must be one shared cast with spec-specific costs');
+  assert(kbSkills['115450']?.specs.join(',') === 'Mistweaver' && kbSkills['218164']?.specs.includes('Brewmaster'), 'Brewmaster energy Detox must not borrow Mistweaver magic Detox');
+  assert(['115069', '322120', '117906', '216519'].every(id => kbSkills[id]?.type === 'passive'), 'Brewmaster defensive passives must not become cast buttons');
+  assert(['1265307', '1265140', '1265145', '1270990', '1301477'].every(id => kbSkills[id]?.type === 'buff') && kbSkills['1301410']?.type === 'debuff', 'Brewmaster prepared, healing and target effects need distinct identities');
+  assert(['1265129', '1265138', '1265141'].every(id => kbSkills[id]?.type === 'talent') && kbSkills['1265138']?.description.includes('100%'), 'All Bring Me Another nodes must preserve rank-based costs');
+  assert(kbSkills['322507']?.cooldown === '90초' && kbSkills['1241059']?.cooldown === '90초' && kbSkills['205523']?.cooldown === '4초', 'Brewmaster base cooldowns must retain 12.1 values');
+  assert(kbSkills['1241059']?.description.includes('30%') && kbSkills['1241059']?.description.includes('16초') && kbSkills['1265141']?.description.includes('아군 2명'), 'Infusion and apex drink conditions must survive sync');
+  assert(kbSkills['450529']?.description.includes('공급하지 않고') && kbSkills['1272821']?.description.includes('불의 숨결'), 'Harmony vitality and Shado-Pan fire loops must not be merged');
+  for (const branch of brewmaster.heroBranches) {
+    assert(branch.opener.steps.length >= 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Brewmaster heroes need authored opener, ST and AoE modes');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Brewmaster ST and AoE must retain different conditions');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Brewmaster flow rows must be actual casts with readable conditions');
+      }
+    }
+  }
 
   const mageFrost = manuscripts['mage-frost'];
   const mageFrostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '냉기', 'Meta', 'guide-12.1.json');
