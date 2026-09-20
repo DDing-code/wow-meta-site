@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T22:18:06.481Z",
+    "generatedAt": "2026-09-20T23:28:31.407Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -11625,7 +11625,6 @@
         "453783",
         "453799",
         "453828",
-        "453844",
         "453845",
         "453852",
         "453917",
@@ -11641,8 +11640,8 @@
         "200183",
         "33076",
         "228260",
-        "263165",
-        "199484",
+        "391403",
+        "341491",
         "8092"
       ],
       "class": "Priest",
@@ -11653,19 +11652,20 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Synergies\\Archon-후광-마력순환.md",
         "lastUpdate": ""
@@ -13149,390 +13149,380 @@
     },
     "priest_shadow_voidweaver_rift": {
       "id": "priest_shadow_voidweaver_rift",
-      "name": "공허술사-혼돈의균열",
+      "name": "공허술사: 격류로 균열을 열고 광기로 폭발을 강화",
+      "description": "공허의 격류가 혼돈의 균열을 연다. 균열이 있는 동안 정신 분열은 암흑용 공허의 폭발로 바뀐다. 공허 붕괴를 선택했다면 어둠의 권능: 광기를 직접 시전해 종료 폭발을 강화한다.",
       "type": "synergy",
       "synergyType": "voidweaver-rift-window",
       "participants": [
-        "447444",
-        "450405",
-        "8092",
-        "335467",
         "263165",
-        "589",
-        "34914"
+        "447444",
+        "450983",
+        "335467",
+        "448403",
+        "449912",
+        "450612"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의폭발-450983",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/분쇄하는공허",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/음산한그림자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/주입된의심",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허에물듦",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의비명",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기어린촉수",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기의직조",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/깨어난악몽",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/무너진정신"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\공허술사-혼돈의균열.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_void_torrent_deathspeaker": {
       "id": "priest_shadow_void_torrent_deathspeaker",
-      "name": "공허의격류-죽음예언자",
+      "name": "공허술사: 격류와 처형 기술의 서로 다른 조건",
+      "description": "공허의 격류는 균열을 여는 정신 집중 기술이고 어둠의 권능: 죽음은 대상 체력이나 보호막 조건을 확인하는 기술이다. 둘을 항상 붙여 쓰는 고정 콤보는 없다.",
       "type": "synergy",
       "synergyType": "channel-execute-control",
       "participants": [
         "263165",
         "32379",
-        "335467",
-        "589",
-        "34914"
+        "392507",
+        "451840",
+        "451018"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신수확자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\공허의격류-죽음예언자.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_dispersion_survival_dps_loss": {
       "id": "priest_shadow_dispersion_survival_dps_loss",
-      "name": "분산-생존-딜손실관리",
+      "name": "분산: 생존 시간과 공격 중단",
+      "description": "분산은 받는 피해를 줄이는 대신 사용 중 공격과 주문 시전을 막는다. 공격 기술의 강화 구간에 무조건 겹치는 버튼이 아니라 위험한 패턴에 배정하는 생존기다.",
       "type": "synergy",
       "synergyType": "defensive-damage-loss",
       "participants": [
-        "47585"
+        "47585",
+        "288733",
+        "377065",
+        "453729",
+        "19236"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/소실"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/강인한정신",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/무형성",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/강인한정신"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\분산-생존-딜손실관리.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_shadow_word_death_execute": {
       "id": "priest_shadow_shadow_word_death_execute",
-      "name": "어둠의권능죽음-죽음과광기-처형",
+      "name": "처형: 죽음예언자와 죽음과 광기 선택",
+      "description": "죽음예언자는 피해와 처형 체력 기준을 바꾸고, 죽음과 광기는 대상 사망 시 광기 및 조건부 쿨다운 초기화에 관여한다. 두 특성은 같은 선택 노드다.",
       "type": "synergy",
       "synergyType": "execute-insanity",
       "participants": [
         "32379",
-        "335467",
-        "8092"
+        "392507",
+        "321291",
+        "34433",
+        "1240364"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신수확자"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기",
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/죽음의고통"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\어둠의권능죽음-죽음과광기-처형.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_psychic_link_multi": {
       "id": "priest_shadow_psychic_link_multi",
-      "name": "영혼의연결-다중대상",
+      "name": "광역: 손길 대상 확보와 주 대상 집중",
+      "description": "촉수 격돌은 흡혈의 손길을 최대 6대상에게 적용한다. 불행을 선택했다면 고통도 함께 적용된다. 영혼의 연결은 주요 직접 피해의 25%를 다른 손길 대상에게 전달한다.",
       "type": "synergy",
       "synergyType": "multi-target-link",
       "participants": [
-        "199484",
-        "589",
+        "1227280",
         "34914",
-        "8092",
+        "238558",
+        "1279350",
+        "199484",
         "335467",
-        "15407"
+        "343690",
+        "73510",
+        "341491"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신의부식",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/상서로운영혼",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/퍼지는분노",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264104",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/요그사론의우상"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/깨어난악몽",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/특화어둠의매듭-343690",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그늘폭발-73510",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\영혼의연결-다중대상.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_mind_blast_insight_generation": {
       "id": "priest_shadow_mind_blast_insight_generation",
-      "name": "정신분열-어둠의통찰-광기생성",
+      "name": "정신 분열: 충전 손실과 통찰 소비",
+      "description": "정신 분열은 광기 생성과 어둠의 통찰 소비를 담당한다. 정신 포식자 발동 시 다음 어둠의 권능: 광기는 광기를 소모하지 않는다.",
       "type": "synergy",
       "synergyType": "generator-proc-control",
       "participants": [
         "8092",
+        "375888",
+        "375981",
+        "1240388",
+        "373202",
         "335467",
-        "15407",
-        "589",
-        "34914"
+        "406788"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/암흑/Buffs/어둠의통찰-375981"
+      ],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의통찰",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의생각",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/마음의눈",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/뛰어난두뇌"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신수확자"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\정신분열-어둠의통찰-광기생성.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_dots_insanity": {
       "id": "priest_shadow_dots_insanity",
-      "name": "지속피해-광기소비",
+      "name": "지속 피해: 특화·원혼·광기 소비의 연결",
+      "description": "흡혈의 손길과 어둠의 권능: 고통을 유지하고, 주 공격 대상의 어둠의 권능: 광기가 끊기거나 자원이 넘치기 전에 광기를 소비한다. 광기 시전은 원혼 생성과 공허의 비명에도 연결된다.",
       "type": "synergy",
       "synergyType": "dot-insanity-engine",
       "participants": [
-        "589",
         "34914",
+        "589",
         "335467",
-        "8092",
-        "15407",
-        "199484"
+        "343690",
+        "341491",
+        "375767",
+        "407430",
+        "407470",
+        "409044"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신의부식",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/상서로운영혼",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/암흑사도",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/퍼지는분노",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기의손길",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264104"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/특화어둠의매듭-343690",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의비명",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허에물듦",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/마음의눈",
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\지속피해-광기소비.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_archon_voidform": {
       "id": "priest_shadow_archon_voidform",
-      "name": "집정관-공허의형상",
+      "name": "집정관: 후광과 형상 안의 광기 소비",
+      "description": "후광 생성은 현신하는 권능의 강화 채찍과 공명하는 마력에 연결된다. 형상 중 광기 직접 시전은 집중된 폭발의 약한 자동 연사를 발생시킨다.",
       "type": "synergy",
       "synergyType": "archon-voidform-window",
       "participants": [
+        "120644",
+        "453783",
+        "391403",
+        "453828",
+        "453845",
         "228260",
-        "10060",
-        "8092",
         "335467",
-        "263165"
+        "1272320",
+        "1231346",
+        "341240"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403",
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상연마",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상연마"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\집정관-공허의형상.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_silence_interrupt_utility": {
       "id": "priest_shadow_silence_interrupt_utility",
-      "name": "침묵-차단-유틸리티",
+      "name": "차단: 침묵과 유틸리티 배정",
+      "description": "침묵은 비플레이어 대상의 주문을 차단하고 해당 계열 주문 사용을 막는다. 광역 공포나 마법 무효화와 역할이 같지 않다.",
       "type": "synergy",
       "synergyType": "interrupt-utility",
       "participants": [
-        "15487"
+        "15487",
+        "8122",
+        "528"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/침묵",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/대규모무효화"
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
+        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\침묵-차단-유틸리티.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "priest_shadow_mindbender_devourer_cooldown_alignment": {
       "id": "priest_shadow_mindbender_devourer_cooldown_alignment",
-      "name": "환각의마귀-정신포식자-쿨기정렬",
+      "name": "형상 소환수와 무료 광기의 구분",
+      "description": "현재 환각의 마귀는 공허의 형상 시전에 연결되는 지속 효과다. 별도 소환 버튼을 형상 앞에 끼우지 않는다. 정신 포식자는 정신 분열에서 얻는 무료 광기 사용권이며 소환수 쿨다운이 아니다.",
       "type": "synergy",
       "synergyType": "pet-cooldown-insanity",
       "participants": [
-        "200174",
-        "8092",
+        "228260",
+        "1230339",
+        "373202",
+        "373204",
         "335467",
-        "228260"
+        "373427"
       ],
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-        "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
       ],
-      "linkedBuffs": [],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/09-사제/암흑/Buffs/정신포식자-373204"
+      ],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/환각의마귀",
         "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상",
-        "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡"
+        "08-직업별-Knowledge-Base/09-사제/수양/Talents/피할수없는고통"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\환각의마귀-정신포식자-쿨기정렬.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-21"
       }
     },
     "SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE": {

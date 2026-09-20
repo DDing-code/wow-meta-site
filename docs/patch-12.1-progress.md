@@ -1,6 +1,6 @@
 # 12.1 update status
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 31 manuscripts labeled 12.1 and 9 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 32 manuscripts labeled 12.1 and 8 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout
 
@@ -248,15 +248,26 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Sanitized production build succeeded as `main.275c2d58.js`. The new deployment staging folder contains only the six generated public files, with no matched local credential values, environment files or source maps. Local and production browser checks passed all eighteen hero/mode/viewport combinations at 1440px, 390px and 320px, including 16px opener icons, mode/hero spell identity, no document/chart/tab overflow and no broken loaded chart images. Keyboard disclosure and the eleven-connection graph center were checked locally; desktop/mobile screenshots were inspected. Production deployment `dpl_BBjy1wTkCzLXyhjx5Qkg9DWj8QFP` is Ready and the public route and icon asset return HTTP 200.
 - Limits: no current WCL/Archon aggregate, personal healing simulation or private Discord evidence is claimed. Dense graph-label layout, older shared Holy/Shadow mechanics, fifteen global broken-link warnings, eight non-Korean guide-URL warnings, mixed-patch metadata and the 1.67 MB gzip bundle remain. Canonical Markdown/JSON remains outside the site Git repository; this commit preserves generated DB and site content, not a remote vault backup.
 
+## Shadow Priest: KB, manuscript and production updated 2026-09-21
+
+- Manually rewrote 51 existing atomic records and added 17 records separating real casts, passives, automatic damage, buffs and Season 2 set effects. Removed obsolete local Mindbender 200174 and Phantom Menace 1242779; current passive Mindbender remains 1230339.
+- Rewrote nineteen shared Archon notes with distinct Holy/Shadow effects, corrected Shadow's Void Torrent rift trigger, added Shadow to Death's Torment scope and removed retired Concentrated Infusion 453844. Corrected ten local relationships and removed Void Torrent from the shared Archon participants.
+- Regenerated both DBs. Strict online name/icon/link validation passed for all 68 local Shadow and 74 common Priest records. The whole Priest check additionally found pre-existing Holy Last Word/Resonant Healing name and deleted Renew-link errors; these are not silently reported as passing.
+- Replaced the manuscript in place with 14 subjects, twelve tips and separate Archon/Voidweaver opener/single-target/AoE modes. Canonical JSON equality and cast/hero-identity checks pass. Removed the fabricated resource and uptime charts. Fixed shared copy normalization that changed the official talent name Power Compression, with a runnable regression check.
+- Local browser checks covered eighteen hero/mode/viewport combinations at 1440px, 390px and 320px with no document/control overflow or broken loaded images. Desktop and mobile screenshots were inspected; opener icons are 14px. These local checks are not production verification.
+- Latest real-site prebuild passed after KB metadata revisions: all forty manuscript/chart/tooltip checks, translation checks and offline KB validation. Twenty-three existing KB warnings remain.
+- Sanitized production build main.d6b7479c.js passed; the fresh deployment stage has six public files, no environment files/source maps and no matched local credential values. Deployment dpl_4Gr3RD9La1uoeq2p8y4uvvrFXKTb is Ready. Public browser checks passed eighteen hero/mode/viewport combinations at 1440px, 390px and 320px with correct selected modes, no page overflow or broken loaded chart images, and no captured console errors. Mobile rendering was inspected.
+- Sources already inspected: Blizzard 12.1, current Korean/English tooltips, all four actual Icy Veins rotation presets, Method's August 27 guide and fixed SimC implementation. Current aggregate logs were inaccessible; June usage percentages were removed from current KB recommendations. Source disagreements about normal versus set-granted Volley priority and stale implementation values must remain explicit in the manuscript.
+- Regression check: `node scripts/verify-shadow-kb.cjs`. Canonical KB is outside the site Git repository; the site commit preserves generated DB and site content, not a remote vault backup. Dense graph labels, older shared mechanics and the 1.69 MB gzip bundle remain separate work.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 9 manuscripts
+## Still 12.0.5: 8 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Priest | Shadow |
 | Rogue | Assassination, Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
 | Warrior | Protection, Arms, Fury |
@@ -264,7 +275,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 9 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 8 older manuscripts.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

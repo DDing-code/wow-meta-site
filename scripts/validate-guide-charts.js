@@ -366,6 +366,7 @@ function main() {
   const heroTabs = (guideDetailSource.match(/<HeroBranchTab\b[\s\S]*?<\/HeroBranchTab>/g) || []).filter(tab => tab.includes('setActiveHeroBranchIndex'));
   assert(heroTabs.length === 2 && heroTabs.every(tab => tab.includes('{displayGuideText(branch.label)}') && !tab.includes('renderGuideText(')), 'Hero selection buttons must use plain labels, not nested spell links');
   const displayCopy = new Function('value', 'cleanText', 'normalizeCommunityTerms', extractFunctionBody(guideDetailSource, 'displayGuideText'));
+  assert(displayCopy('마력 압축을 선택하고 피해를 압축합니다', cleanText, value => value) === '마력 압축을 선택하고 피해를 짧은 구간에 몰아넣습니다', 'Copy cleanup must preserve Energy Compression while still fixing ordinary prose');
   assert(displayCopy('프리셋 버튼, 리셋 버튼, 리셋합니다', cleanText, value => value) === '프리셋 버튼, 초기화 버튼, 초기화합니다', 'Copy cleanup must not rewrite reset inside preset');
   const getScopedSynergySkills = new Function('synergy', 'scopedSkills', 'uniqueBy', 'normalizeSkillLookupText', 'skillLookupKeys', extractFunctionBody(guideDetailSource, 'getSynergySkills'));
   const scopedResult = getScopedSynergySkills(
@@ -493,7 +494,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'paladin-retribution', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction'].includes(guideId)) {
+    if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'paladin-retribution', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'priest-shadow'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);

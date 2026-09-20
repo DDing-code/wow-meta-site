@@ -28,6 +28,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['paladin-protection', '12.1'],
   ['paladin-retribution', '12.1'],
   ['priest-discipline', '12.1'],
+  ['priest-shadow', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
@@ -95,7 +96,6 @@ const NON_ACTION_CHART_KEYS = new Set([
   'priest-holy:114255',
   'priest-holy:390992',
   'priest-holy:392988',
-  'priest-shadow:1242173',
 ]);
 const OPENER_FLOW_PATTERN = /전투 흐름|피해 대응|진입|풀링|지원 구간|상태 전환/i;
 const LIST_LIKE_OPENER_PATTERN = /오프닝 딜사이클|오프닝 순서표|오프닝 목록|아이콘 레일|레일 컴포넌트/i;
@@ -606,7 +606,7 @@ function validateSpecSpecificCurrentPatchRules(spec, manuscript) {
   const sourceTextForSpec = combinedSourceText(manuscript);
 
   assert(
-    !GENERAL_AWKWARD_COPY_PATTERN.test(text),
+    !GENERAL_AWKWARD_COPY_PATTERN.test(text.replace(/마력 압축/g, '')),
     `${prefix}: contains awkward/internal analysis wording; use player-facing guide terms`
   );
 
@@ -1164,6 +1164,21 @@ function main() {
   const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
   assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
   assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
+
+  const shadow = manuscripts['priest-shadow'];
+  const shadowSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '09-사제', '암흑', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(shadowSource)) {
+    assert(JSON.stringify(JSON.parse(read(shadowSource))) === JSON.stringify(shadow), 'Shadow must match its canonical 12.1 manuscript');
+  }
+  for (const branch of shadow.heroBranches) {
+    assert(branch.opener.steps.length === 8 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Shadow heroes need their own opener, single-target and AoE flows');
+    const casts = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
+    assert(casts.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId].specs.includes('Shadow')), 'Shadow charts must use real Shadow casts, not talents or automatic damage');
+    const ids = casts.map(row => row.skillId);
+    assert(branch.label === '집정관' ? !ids.includes('263165') && !ids.includes('450983') : !ids.includes('120644') && !ids.includes('391403'), 'Shadow heroes must not borrow incompatible casts');
+  }
+  assert(JSON.stringify(shadow.opener) === JSON.stringify(shadow.heroBranches[0].opener), 'Default Shadow flow must match Archon');
+  assert(!GENERAL_AWKWARD_COPY_PATTERN.test('마력 압축'.replace(/마력 압축/g, '')) && GENERAL_AWKWARD_COPY_PATTERN.test('마력 압축으로 압축합니다'.replace(/마력 압축/g, '')), 'Official talent names must not hide awkward prose outside the name');
 
   const discipline = manuscripts['priest-discipline'];
   const disciplineSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '09-사제', '수양', 'Meta', 'guide-12.1.json');

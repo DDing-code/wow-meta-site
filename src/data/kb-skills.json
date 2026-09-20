@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T22:18:06.480Z",
+    "generatedAt": "2026-09-20T23:28:31.406Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2955,
-    "rawTotalSkills": 2955,
+    "totalSkills": 2969,
+    "rawTotalSkills": 2969,
     "duplicateIds": [],
     "totalSynergies": 565,
     "stats": {
-      "total": 2955,
+      "total": 2969,
       "byType": {
-        "buff": 130,
-        "hero-talent": 557,
-        "atomic-skill": 551,
+        "buff": 137,
+        "hero-talent": 554,
+        "atomic-skill": 557,
         "proc": 29,
         "skill": 131,
-        "talent": 995,
+        "talent": 994,
         "spec-talent": 392,
-        "passive": 57,
+        "passive": 62,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -38,7 +38,7 @@
         "Mage": 229,
         "Monk": 274,
         "Paladin": 250,
-        "Priest": 244,
+        "Priest": 258,
         "Rogue": 286,
         "Shaman": 273,
         "Warlock": 296,
@@ -78,10 +78,10 @@
         "Paladin-Protection": 65,
         "Paladin-신성": 44,
         "Paladin-Retribution": 69,
-        "Priest-공용": 83,
+        "Priest-공용": 82,
         "Priest-Discipline": 62,
         "Priest-신성": 46,
-        "Priest-암흑": 53,
+        "Priest-Shadow": 68,
         "Rogue-공용": 128,
         "Rogue-무법": 53,
         "Rogue-암살": 46,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2880,
-        "withSynergies": 1796,
+        "withWikilinks": 2894,
+        "withSynergies": 1851,
         "avgLinkDensity": "0.040"
       }
     }
@@ -7461,7 +7461,7 @@
       "id": "15407",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -7472,13 +7472,13 @@
       "iconName": "spell_shadow_siphonmana",
       "school": "",
       "cooldown": "없음",
-      "castTime": "정신 집중",
-      "resourceCost": "없음",
+      "castTime": "정신 집중 4.5초",
+      "resourceCost": "없음 · 기본 광기 18 생성",
       "range": "40야드",
-      "description": "# 정신의 채찍 (Mind Flay)",
+      "description": "기본 4.5초 동안 정신 집중해 암흑 피해를 주고 적의 이동 속도를 50% 낮춘다. 전체 정신 집중으로 기본 광기 18을 생성한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7491,15 +7491,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기의쇄도-391399",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신의부식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.049,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -7511,7 +7515,7 @@
       "id": "15487",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -7524,11 +7528,11 @@
       "cooldown": "30초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "30미터",
-      "description": "# 침묵 (Silence)",
+      "range": "40야드",
+      "description": "40야드 대상에게 5초 침묵을 부여한다. 비플레이어에게는 주문 시전도 차단하며 해당 계열 주문을 4초 동안 막는다. 기본 재사용 대기시간은 30초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7540,14 +7544,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_silence.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/마법무효화"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -10776,7 +10783,7 @@
       "id": "34914",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -10787,13 +10794,13 @@
       "iconName": "spell_holy_stoicism",
       "school": "",
       "cooldown": "없음",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "castTime": "1.5초",
+      "resourceCost": "없음 · 광기 4 생성",
       "range": "40야드",
-      "description": "# 흡혈의 손길 (Vampiric Touch)",
+      "description": "기본 1.5초 시전으로 21초 지속 피해를 적용하고 광기 4를 생성한다. 피해의 30%만큼 자신을 회복하며 해제한 적에게는 3초 공포 효과를 준다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10806,17 +10813,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/강인한정신"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 2,
-        "linkDensity": 0.082,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -11753,7 +11762,7 @@
       "id": "47585",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -11767,10 +11776,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 분산 (Dispersion)",
+      "description": "6초 동안 받는 모든 피해를 75% 줄이고 기본 최대 생명력의 25%를 회복한다. 이동 속도가 50% 증가하고 이동 방해에 면역이지만 공격과 주문 시전은 할 수 없다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11782,14 +11791,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_dispersion.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/구원의기도"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/무형성"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/고조된변이"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -15472,6 +15487,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Skills\\신의의도약.md",
+        "lastUpdate": ""
+      }
+    },
+    "73510": {
+      "id": "73510",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "그늘폭발",
+      "koreanName": "그늘폭발",
+      "englishName": "Shadeburst",
+      "icon": "ability_warlock_voidzone",
+      "iconName": "ability_warlock_voidzone",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "주 대상으로 향하는 그림자 원혼이 폭발해 8야드 안의 적에게 암흑 피해를 준다. 5대상을 넘으면 피해가 감소한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_voidzone.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warlock_voidzone.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warlock_voidzone.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warlock_voidzone.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_voidzone.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\그늘폭발-73510.md",
         "lastUpdate": ""
       }
     },
@@ -22052,7 +22120,7 @@
     },
     "120517": {
       "id": "120517",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Priest",
       "spec": "공용",
       "specs": [
@@ -22066,12 +22134,12 @@
       "school": "",
       "cooldown": "1분",
       "castTime": "1.5초",
-      "resourceCost": "기본 마나의 2.7%",
-      "range": "40 야드",
-      "description": "# 후광 (Halo)",
-      "category": "hero-talent",
+      "resourceCost": "기본 마나 2.7%",
+      "range": "40야드",
+      "description": "시전자 주위에서 40야드 반경으로 퍼지는 후광으로 아군을 치유하고 적에게 신성 피해를 준다. 기본 시전 시간 1.5초, 쿨다운 1분이다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22085,12 +22153,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력의쇄도",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공명하는마력",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/천상의후광"
+        ]
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.068,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -22100,7 +22173,7 @@
     },
     "120644": {
       "id": "120644",
-      "type": "hero-talent",
+      "type": "atomic-skill",
       "class": "Priest",
       "spec": "공용",
       "specs": [
@@ -22114,12 +22187,12 @@
       "school": "",
       "cooldown": "1분",
       "castTime": "1.5초",
-      "resourceCost": "기본 마나의 4%",
-      "range": "40 야드",
-      "description": "# 후광 (Halo)",
-      "category": "hero-talent",
+      "resourceCost": "기본 마나 4% · 광기 5 생성",
+      "range": "40야드",
+      "description": "시전자 주위에서 40야드 반경으로 퍼지는 후광으로 적에게 암흑 피해를 주고 아군을 치유한다. 기본 시전 시간 1.5초, 쿨다운 1분이며 광기 5를 생성한다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22133,12 +22206,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력의쇄도",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공명하는마력",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/천상의후광"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -23664,7 +23742,7 @@
       "id": "155271",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -23674,14 +23752,14 @@
       "icon": "ability_priest_auspiciousspirits",
       "iconName": "ability_priest_auspiciousspirits",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 상서로운 영혼 (Auspicious Spirits)",
+      "description": "그림자 원혼 피해를 15% 늘리고 원혼이 확률적으로 광기 1을 생성하게 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -23694,15 +23772,18 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.034,
+        "synergyCount": 3,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -27869,9 +27950,9 @@
     },
     "194249": {
       "id": "194249",
-      "type": "talent",
+      "type": "buff",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -27881,14 +27962,14 @@
       "icon": "spell_priest_void-blast",
       "iconName": "spell_priest_void-blast",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 형상 (Voidform)",
-      "category": "talent",
+      "description": "공허의 형상 시전으로 적용되는 20초 강화 버프다. 주문 피해 20% 증가와 특화의 최대 효과를 제공하며 태고의 광기·지속되는 잠재력으로 지속시간이 달라진다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27901,17 +27982,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/특화어둠의매듭-343690",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/지속되는잠재력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
+        "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.068,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -30506,9 +30590,9 @@
     },
     "199484": {
       "id": "199484",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -30518,14 +30602,14 @@
       "icon": "ability_priest_psychiclink",
       "iconName": "ability_priest_psychiclink",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 영혼의 연결 (Psychic Link)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "직접 피해 주문의 피해 25%를 40야드 안에서 자신의 흡혈의 손길이 걸린 다른 적에게 전달한다. 그림자 원혼·어둠의 권능: 고통·흡혈의 손길 자체 피해는 전달 대상에서 제외된다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30538,18 +30622,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그늘폭발-73510"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.075,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -30909,58 +30994,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\빛의흔적.md",
-        "lastUpdate": ""
-      }
-    },
-    "200174": {
-      "id": "200174",
-      "type": "talent",
-      "class": "Priest",
-      "spec": "암흑",
-      "specs": [
-        "Shadow"
-      ],
-      "name": "환각의 마귀",
-      "koreanName": "환각의 마귀",
-      "englishName": "Mindbender",
-      "icon": "spell_shadow_soulleech_3",
-      "iconName": "spell_shadow_soulleech_3",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 환각의 마귀 (Mindbender)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_soulleech_3.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_soulleech_3.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_soulleech_3.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_soulleech_3.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
-        ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자"
-        ],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.044,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\환각의마귀.md",
         "lastUpdate": ""
       }
     },
@@ -36131,7 +36164,7 @@
       "id": "228260",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -36141,14 +36174,14 @@
       "icon": "spell_priest_void-blast",
       "iconName": "spell_priest_void-blast",
       "school": "",
-      "cooldown": "쿨다운",
-      "castTime": "즉시",
+      "cooldown": "2분",
+      "castTime": "1.5초",
       "resourceCost": "없음",
-      "range": "",
-      "description": "# 공허의 형상 (Voidform)",
+      "range": "40야드",
+      "description": "기본 1.5초 시전, 2분 재사용 대기시간의 극딜 기술이다. 진입 시 공허 연사를 자동 발사하고 20초 동안 주문 피해를 20% 증가시킨다. 이후 같은 버튼으로 공허 연사를 기본 3회 사용할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36160,20 +36193,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_void-blast.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/마력주입"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상연마",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644"
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/환각의마귀"
         ]
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 3,
-        "linkDensity": 0.082,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -36733,6 +36767,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Skills\\방패-올리기-231847.md",
+        "lastUpdate": ""
+      }
+    },
+    "232698": {
+      "id": "232698",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "어둠의 형상",
+      "koreanName": "어둠의 형상",
+      "englishName": "Shadowform",
+      "icon": "spell_shadow_shadowform",
+      "iconName": "spell_shadow_shadowform",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "어둠의 형상을 취해 주문 피해를 10% 증가시킨다. 해제할 때까지 유지된다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowform.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadowform.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadowform.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowform.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowform.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Skills\\어둠의형상-232698.md",
         "lastUpdate": ""
       }
     },
@@ -37553,7 +37639,7 @@
       "id": "238558",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -37563,14 +37649,14 @@
       "icon": "ability_rogue_envelopingshadows",
       "iconName": "ability_rogue_envelopingshadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불행 (Misery)",
+      "description": "흡혈의 손길이 어둠의 권능: 고통을 함께 적용하며 고통의 지속시간을 5초 늘린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37584,17 +37670,18 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/깨어난악몽"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.054,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
@@ -39830,7 +39917,7 @@
       "id": "263165",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -39840,14 +39927,14 @@
       "icon": "spell_priest_voidsear",
       "iconName": "spell_priest_voidsear",
       "school": "",
-      "cooldown": "45초",
-      "castTime": "정신 집중",
-      "resourceCost": "없음",
+      "cooldown": "30초",
+      "castTime": "정신 집중 3초",
+      "resourceCost": "없음 · 광기 24 생성",
       "range": "40야드",
-      "description": "# 공허의 격류 (Void Torrent)",
+      "description": "공허술사 전용 정신 집중 기술이다. 기본 재사용 대기시간 30초, 정신 집중 3초이며 전체 시전으로 광기 24를 생성하고 혼돈의 균열을 연다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39860,15 +39947,19 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의폭발-450983",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/암흑마력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 1,
-        "linkDensity": 0.074,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -42969,7 +43060,7 @@
       "id": "288733",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -42979,14 +43070,14 @@
       "icon": "spell_shadow_dispersion",
       "iconName": "spell_shadow_dispersion",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무형성 (Intangibility)",
+      "description": "분산의 재사용 대기시간을 30초 줄이고 기본 회복량에 최대 생명력의 25% 회복을 더한다. 기본 2분 쿨다운이 90초가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43001,13 +43092,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/강인한정신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.026,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -44120,7 +44213,7 @@
       "id": "321291",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -44130,14 +44223,14 @@
       "icon": "ability_priest_thoughtsteal01",
       "iconName": "ability_priest_thoughtsteal01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음과 광기 (Death and Madness)",
+      "description": "어둠의 권능: 죽음에 맞은 대상이 7초 안에 죽으면 광기 8을 얻는다. 생명력 20% 미만 대상에게 사용하고 죽이지 못하면 쿨다운이 초기화되며 이 초기화는 10초에 한 번만 발생한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44150,16 +44243,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.042,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -46019,7 +46113,7 @@
       "id": "335467",
       "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -46031,12 +46125,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "광기 소모",
+      "resourceCost": "기본 광기 50",
       "range": "40야드",
-      "description": "# 어둠의 권능: 광기 (Shadow Word: Madness)",
+      "description": "기본 광기 50을 소비하는 즉시 시전 주문이다. 즉시 피해와 6초 지속 피해를 주고 피해의 30%만큼 자신을 회복한다. 같은 대상에게 다시 적용하면 남은 피해가 새 효과로 합쳐진다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46049,13 +46143,19 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/마음의눈",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/특화어둠의매듭-343690",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/퍼지는분노",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -46067,7 +46167,7 @@
       "id": "341240",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -46077,14 +46177,14 @@
       "icon": "spell_priest_void-blast",
       "iconName": "spell_priest_void-blast",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 형상 연마 (Improved Voidform)",
+      "description": "공허의 형상의 주문 피해 증가를 추가로 5% 높이고 공허 연사 사용권을 2회 더 준다. 기본 3회에서 총 5회가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46099,17 +46199,77 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.028,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\공허의형상연마.md",
+        "lastUpdate": ""
+      }
+    },
+    "341491": {
+      "id": "341491",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "그림자 원혼",
+      "koreanName": "그림자 원혼",
+      "englishName": "Shadowy Apparitions",
+      "icon": "ability_priest_shadowyapparition",
+      "iconName": "ability_priest_shadowyapparition",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "어둠의 권능: 광기를 사용하면 흡혈의 손길이 걸린 모든 대상에게 그림자 원혼이 날아가 피해를 준다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_shadowyapparition.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_priest_shadowyapparition.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_priest_shadowyapparition.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_priest_shadowyapparition.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_shadowyapparition.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그늘폭발-73510",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/고통받는영혼",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력순환"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.094,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\그림자원혼-341491.md",
         "lastUpdate": ""
       }
     },
@@ -46567,6 +46727,61 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\천신의조화.md",
+        "lastUpdate": ""
+      }
+    },
+    "343690": {
+      "id": "343690",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "특화: 어둠의 매듭",
+      "koreanName": "특화: 어둠의 매듭",
+      "englishName": "Mastery: Shadow Weaving",
+      "icon": "spell_shadow_shadetruesight",
+      "iconName": "spell_shadow_shadetruesight",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "대상에게 걸린 어둠의 권능: 고통·흡혈의 손길·어둠의 권능: 광기에 따라 해당 대상에게 주는 피해가 증가한다. 공허의 형상 중에는 최대 효과를 얻는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadetruesight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_shadetruesight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadetruesight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadetruesight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadetruesight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기의직조"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\특화어둠의매듭-343690.md",
         "lastUpdate": ""
       }
     },
@@ -49890,7 +50105,7 @@
       "id": "373202",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -49900,14 +50115,65 @@
       "icon": "spell_arcane_mindmastery",
       "iconName": "spell_arcane_mindmastery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정신 포식자 (Mind Devourer)",
+      "description": "정신 분열이 8% 확률로 다음 어둠의 권능: 광기를 무료로 만들고 그 피해를 20% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_mindmastery.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_arcane_mindmastery.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_arcane_mindmastery.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_arcane_mindmastery.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_mindmastery.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\정신포식자.md",
+        "lastUpdate": ""
+      }
+    },
+    "373204": {
+      "id": "373204",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "정신 포식자",
+      "koreanName": "정신 포식자",
+      "englishName": "Mind Devourer",
+      "icon": "spell_arcane_mindmastery",
+      "iconName": "spell_arcane_mindmastery",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정신 포식자로 얻는 다음 어둠의 권능: 광기의 무료·강화 사용권이다. 기본 지속시간은 15초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49923,17 +50189,19 @@
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
           "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/정신포식자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 2,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
         "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\정신포식자.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\정신포식자-373204.md",
         "lastUpdate": ""
       }
     },
@@ -49941,7 +50209,7 @@
       "id": "373212",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -49951,14 +50219,14 @@
       "icon": "spell_fire_twilightcano",
       "iconName": "spell_fire_twilightcano",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 퍼지는 분노 (Insidious Ire)",
+      "description": "같은 대상에게 어둠의 권능: 고통·어둠의 권능: 광기·흡혈의 손길이 모두 있으면 정신 분열·공허의 격류·정신의 채찍·공허 연사 피해가 1점 20%, 2점 40% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49970,14 +50238,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightcano.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.076,
         "hasWikilinks": true
       },
       "source": {
@@ -50037,7 +50313,7 @@
       "id": "373273",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -50047,14 +50323,14 @@
       "icon": "achievement_boss_heraldvolazj",
       "iconName": "achievement_boss_heraldvolazj",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 요그사론의 우상 (Idol of Yogg-Saron)",
+      "description": "그림자 원혼을 생성하면 요그사론의 우상 중첩을 얻는다. 20중첩에 저편의 존재를 소환해 20초 동안 공허 쐐기로 대상과 주변 적을 공격하게 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50067,13 +50343,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -50085,7 +50365,7 @@
       "id": "373280",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -50095,14 +50375,14 @@
       "icon": "inv_eyeofnzothpet",
       "iconName": "inv_eyeofnzothpet",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 느조스의 우상 (Idol of N'Zoth)",
+      "description": "해로운 주문으로 끔찍한 환영 중첩을 쌓는다. 50중첩에는 악몽 피해와 3초에 걸친 광기 2, 100중첩에는 느조스의 환영 피해와 3초에 걸친 광기 6이 발생한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50115,13 +50395,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -50133,7 +50417,7 @@
       "id": "373310",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -50143,14 +50427,14 @@
       "icon": "achievement_raid_terraceofendlessspring04",
       "iconName": "achievement_raid_terraceofendlessspring04",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 이샤라즈의 우상 (Idol of Y'Shaarj)",
+      "description": "어둠의 마귀·환각의 마귀·공허의 망령이 활성인 동안 가속이 10% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50164,12 +50448,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/환각의마귀",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의망령"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -50862,7 +51150,7 @@
       "id": "375767",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -50872,14 +51160,14 @@
       "icon": "spell_shadow_lifedrain02_purple",
       "iconName": "spell_shadow_lifedrain02_purple",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 비명 (Screams of the Void)",
+      "description": "어둠의 권능: 광기를 사용하면 모든 대상의 어둠의 권능: 고통과 흡혈의 손길 피해 주기가 3초 동안 빨라진다. 1점은 40%, 2점은 80% 증가다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50891,14 +51179,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_lifedrain02_purple.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -51120,7 +51412,7 @@
       "id": "375888",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -51130,14 +51422,14 @@
       "icon": "spell_shadow_possession",
       "iconName": "spell_shadow_possession",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 통찰 (Shadowy Insight)",
+      "description": "어둠의 권능: 고통의 주기적 피해가 확률적으로 다음 정신 분열을 즉시 시전으로 만들고 쿨다운을 무시하게 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51150,17 +51442,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의생각"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.041,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -51168,11 +51461,64 @@
         "lastUpdate": ""
       }
     },
+    "375981": {
+      "id": "375981",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "어둠의 통찰",
+      "koreanName": "어둠의 통찰",
+      "englishName": "Shadowy Insight",
+      "icon": "spell_shadow_possession",
+      "iconName": "spell_shadow_possession",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "어둠의 통찰 발동을 표시하는 10초 버프다. 관련 특성으로 얻은 정신 분열 강화 기회를 추적한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_possession.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shadow_possession.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shadow_possession.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_possession.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_possession.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의통찰",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의생각"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\어둠의통찰-375981.md",
+        "lastUpdate": ""
+      }
+    },
     "375994": {
       "id": "375994",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -51182,14 +51528,14 @@
       "icon": "ability_kaztik_dominatemind",
       "iconName": "ability_kaztik_dominatemind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정신의 부식 (Mental Decay)",
+      "description": "정신의 채찍 피해를 25% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51202,15 +51548,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/음산한그림자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.032,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -51571,7 +51919,7 @@
       "id": "377065",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -51581,14 +51929,14 @@
       "icon": "ability_priest_clarityofpower",
       "iconName": "ability_priest_clarityofpower",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강인한 정신 (Mental Fortitude)",
+      "description": "최대 생명력일 때 흡혈의 손길과 어둠의 권능: 광기로 얻는 자기 회복을 같은 양의 보호막으로 바꾼다. 보호막은 최대 생명력의 10%를 넘지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51601,15 +51949,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/무형성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -51724,7 +52075,7 @@
       "id": "377349",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -51734,14 +52085,14 @@
       "icon": "achievement_boss_cthun",
       "iconName": "achievement_boss_cthun",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 크툰의 우상 (Idol of C'Thun)",
+      "description": "정신의 채찍 피해가 확률적으로 공허 촉수 또는 공허 덩굴손을 소환한다. 소환물은 정신의 채찍 또는 정신 불태우기를 정신 집중하며 각각 전체 지속시간 동안 광기 5를 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51753,14 +52104,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_cthun.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -70876,7 +71232,7 @@
       "id": "391090",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -70886,14 +71242,14 @@
       "icon": "inv_ability_priest_mindgames",
       "iconName": "inv_ability_priest_mindgames",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무너진 정신 (Shattered Psyche)",
+      "description": "정신의 채찍 피해가 정신 분열의 치명타 확률을 8%p씩 높이며 최대 12중첩, 10초 지속된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70905,14 +71261,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_priest_mindgames.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -70924,7 +71283,7 @@
       "id": "391099",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -70934,14 +71293,14 @@
       "icon": "spell_mage_presenceofmind",
       "iconName": "spell_mage_presenceofmind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암흑 사도 (Dark Evangelism)",
+      "description": "자신의 주기적 주문 피해를 6% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70953,14 +71312,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_presenceofmind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -71073,7 +71436,7 @@
       "id": "391151",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -71083,14 +71446,14 @@
       "icon": "spell_nzinsanity_chasedbyshadows",
       "iconName": "spell_nzinsanity_chasedbyshadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 뛰어난 두뇌 (Mastermind)",
+      "description": "정신 분열·정신의 채찍·어둠의 권능: 죽음의 치명타 확률을 1점당 4%p, 치명타 피해를 20% 증가시킨다. 2점은 각각 8%p와 40%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71102,14 +71465,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_chasedbyshadows.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -71373,7 +71740,7 @@
       "id": "391228",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -71383,14 +71750,14 @@
       "icon": "spell_holy_stoicism",
       "iconName": "spell_holy_stoicism",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광기의 손길 (Maddening Touch)",
+      "description": "흡혈의 손길 피해를 20% 증가시키고 각 피해 주기마다 확률적으로 광기 1을 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71402,14 +71769,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_stoicism.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허에물듦"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -71519,7 +71890,7 @@
       "id": "391284",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -71529,14 +71900,14 @@
       "icon": "spell_shadow_painandsuffering",
       "iconName": "spell_shadow_painandsuffering",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고통받는 영혼 (Tormented Spirits)",
+      "description": "어둠의 권능: 고통 피해가 확률적으로 흡혈의 손길이 걸린 모든 대상에게 그림자 원혼을 보낸다. 고통이 치명타로 적중하면 발동 확률이 두 배가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71548,14 +71919,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_painandsuffering.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/주입된의심"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -71860,6 +72237,165 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\혈안.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "391399": {
+      "id": "391399",
+      "type": "talent",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "광기의 쇄도",
+      "koreanName": "광기의 쇄도",
+      "englishName": "Surge of Insanity",
+      "icon": "spell_fire_twilightflamebreath",
+      "iconName": "spell_fire_twilightflamebreath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정신의 채찍 피해를 15%, 광기 생성량을 30% 증가시킨다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_twilightflamebreath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_twilightflamebreath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_twilightflamebreath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.059,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\광기의쇄도-391399.md",
+        "lastUpdate": ""
+      }
+    },
+    "391401": {
+      "id": "391401",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "정신의 채찍: 광기",
+      "koreanName": "정신의 채찍: 광기",
+      "englishName": "Mind Flay: Insanity",
+      "icon": "spell_fire_twilightflamebreath",
+      "iconName": "spell_fire_twilightflamebreath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정신의 채찍을 정신의 채찍: 광기로 바꾸는 강화 상태다. 툴팁의 기본 지속시간은 30초다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_twilightflamebreath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_twilightflamebreath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_twilightflamebreath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.039,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\정신의채찍광기-391401.md",
+        "lastUpdate": ""
+      }
+    },
+    "391403": {
+      "id": "391403",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "정신의 채찍: 광기",
+      "koreanName": "정신의 채찍: 광기",
+      "englishName": "Mind Flay: Insanity",
+      "icon": "spell_fire_twilightflamebreath",
+      "iconName": "spell_fire_twilightflamebreath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "정신 집중 1.5초",
+      "resourceCost": "없음 · 광기 8 생성",
+      "range": "40야드",
+      "description": "정신의 채찍을 대체하는 1.5초 정신 집중 기술이다. 광기 8을 생성하고 대상의 이동 속도를 70% 감소시킨다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_twilightflamebreath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_twilightflamebreath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_twilightflamebreath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightflamebreath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력순환",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/강화된쇄도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.069,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Skills\\정신의채찍광기-391403.md",
+        "lastUpdate": ""
       }
     },
     "391528": {
@@ -72908,7 +73444,7 @@
       "id": "392507",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -72918,14 +73454,14 @@
       "icon": "spell_shadow_demonicfortitude",
       "iconName": "spell_shadow_demonicfortitude",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음예언자 (Deathspeaker)",
+      "description": "어둠의 권능: 죽음 피해를 25% 증가시키고, 해당 주문의 저생명력 피해·특성 보너스 기준을 20%에서 35% 미만으로 바꾼다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -72940,13 +73476,17 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -77923,7 +78463,7 @@
       "id": "406788",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -77933,14 +78473,14 @@
       "icon": "spell_shadow_unholyfrenzy",
       "iconName": "spell_shadow_unholyfrenzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정신 수확자 (Thought Harvester)",
+      "description": "정신 분열의 최대 충전 수를 하나 늘린다. 기본 한 개에서 두 개가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -77952,16 +78492,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unholyfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의폭발-450983"
+        ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음과광기",
-          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의통찰"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
         "linkDensity": 0.046,
         "hasWikilinks": true
       },
@@ -78285,7 +78827,7 @@
       "id": "407430",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -78295,14 +78837,14 @@
       "icon": "inv_enchant_voidsphere",
       "iconName": "inv_enchant_voidsphere",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허에 물듦 (Voidtouched)",
+      "description": "어둠의 권능: 광기 피해를 6% 증가시키고 최대 광기를 50 늘린다. 기본 상한 100이 이 특성으로 150이 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78314,14 +78856,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_voidsphere.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -78333,7 +78880,7 @@
       "id": "407469",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -78343,14 +78890,14 @@
       "icon": "ability_priest_phantasm",
       "iconName": "ability_priest_phantasm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 유령 공포 (Spectral Horrors)",
+      "description": "어둠의 권능: 광기에 걸린 대상에게 그림자 원혼이 30% 더 강하게 적중한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78362,14 +78909,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_phantasm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -78381,7 +78932,7 @@
       "id": "407470",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -78391,14 +78942,14 @@
       "icon": "inv12_ability_priest_powerwordmadness_eye",
       "iconName": "inv12_ability_priest_powerwordmadness_eye",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마음의 눈 (Mind's Eye)",
+      "description": "어둠의 권능: 광기의 광기 비용을 5 줄여 기본 50에서 45로 만든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78410,14 +78961,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_powerwordmadness_eye.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/현실왜곡"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -78956,7 +79511,7 @@
       "id": "409044",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -78966,14 +79521,14 @@
       "icon": "spell_shadow_gathershadows",
       "iconName": "spell_shadow_gathershadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 현실 왜곡 (Distorted Reality)",
+      "description": "어둠의 권능: 광기 피해를 20% 높이고 지속시간을 12초로 바꾸지만 비용이 광기 5 증가한다. 기본 비용 50에서 55가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78986,15 +79541,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/마음의눈",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/유령공포"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.042,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -97398,7 +97956,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "정신 분열이 대상을 따라가는 8초 혼돈의 균열을 자동 생성한다. 균열 범위 안의 적에게 주기적으로 암흑 피해를 입힌다.",
+      "description": "수양은 정신 분열, 암흑은 공허의 격류로 대상을 따라가는 기본 8초 혼돈의 균열을 생성한다. 균열 범위 안의 적에게 주기적으로 암흑 피해를 입힌다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -97415,7 +97973,9 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/속죄",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의폭발-450983"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -97423,9 +97983,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.055,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -97568,7 +98128,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개"
+          "08-직업별-Knowledge-Base/09-사제/수양/Skills/회개",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -97576,9 +98137,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -99058,14 +99619,14 @@
       "icon": "inv_ability_holyfire_nova",
       "iconName": "inv_ability_holyfire_nova",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 후광 (Divine Halo)",
+      "description": "후광이 바깥으로 퍼진 뒤 돌아오며 적에게 피해를 주고 아군을 치유한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99079,12 +99640,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공명하는마력",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/지속되는잠재력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -99107,14 +99673,14 @@
       "icon": "spell_holy_circleofrenewal",
       "iconName": "spell_holy_circleofrenewal",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마력 압축 (Energy Compression)",
+      "description": "후광의 피해와 치유량이 30% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99128,12 +99694,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/지속되는잠재력"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -100479,6 +101049,62 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Hero-Talents\\내가중수법.md",
+        "lastUpdate": ""
+      }
+    },
+    "450983": {
+      "id": "450983",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "공허의 폭발",
+      "koreanName": "공허의 폭발",
+      "englishName": "Void Blast",
+      "icon": "inv_cosmicvoid_missile",
+      "iconName": "inv_cosmicvoid_missile",
+      "school": "",
+      "cooldown": "정신 분열 충전 공유",
+      "castTime": "정신 분열 대체",
+      "resourceCost": "없음 · 광기 생성",
+      "range": "40야드",
+      "description": "공허술사의 혼돈의 균열이 활성화된 동안 정신 분열을 대체하는 암흑 전문화의 공허의 폭발이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_missile.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_cosmicvoid_missile.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_cosmicvoid_missile.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_cosmicvoid_missile.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_cosmicvoid_missile.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의격류",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠에물드는지평선",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허주입"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.077,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Skills\\공허의폭발-450983.md",
         "lastUpdate": ""
       }
     },
@@ -102997,14 +103623,14 @@
       "icon": "inv_ability_holyfire_groundstate",
       "iconName": "inv_ability_holyfire_groundstate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마력의 쇄도 (Power Surge)",
+      "description": "후광 사용 후 10초 동안 5초마다 100% 효과의 추가 후광을 생성한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103018,12 +103644,18 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력보존",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공명하는마력",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.093,
         "hasWikilinks": true
       },
       "source": {
@@ -103547,14 +104179,14 @@
       "icon": "spell_holy_wordfortitude",
       "iconName": "spell_holy_wordfortitude",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 우월성의 진언 (Word of Supremacy)",
+      "description": "신의 권능: 인내가 자신에게 제공하는 체력이 추가로 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103568,12 +104200,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/고조된변이"
+        ]
       },
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -103596,14 +104230,14 @@
       "icon": "inv_enchant_essenceeternallarge",
       "iconName": "inv_enchant_essenceeternallarge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고조된 변이 (Heightened Alteration)",
+      "description": "암흑은 분산 지속시간이 2초, 신성은 구원의 영혼 지속시간이 5초 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103615,14 +104249,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essenceeternallarge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/분산"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/우월성의진언"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -103696,14 +104334,14 @@
       "icon": "spell_holy_surgeoflight",
       "iconName": "spell_holy_surgeoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 현신하는 권능 (Manifested Power)",
+      "description": "후광 생성 시 암흑은 다음 정신의 채찍이 정신의 채찍: 광기로 강화되고, 신성은 빛의 쇄도를 얻는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103715,14 +104353,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_surgeoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력순환"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -103745,14 +104389,14 @@
       "icon": "ability_priest_flashoflight",
       "iconName": "ability_priest_flashoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강화된 쇄도 (Empowered Surges)",
+      "description": "암흑은 정신의 채찍: 광기 피해가 30% 증가한다. 신성은 빛의 쇄도로 강화된 주문의 치유량이 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103764,14 +104408,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_flashoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -103846,14 +104494,14 @@
       "icon": "ability_priest_voidshift",
       "iconName": "ability_priest_voidshift",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마력 순환 (Energy Cycle)",
+      "description": "암흑은 정신의 채찍: 광기 시전으로 그림자 원혼을 생성한다. 신성은 빛의 쇄도 소비 시 관련 신성한 권능의 남은 쿨다운을 4초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103865,67 +104513,25 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidshift.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/정신의채찍광기-391403"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/현신하는권능",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/영혼우물"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\마력순환.md",
-        "lastUpdate": ""
-      }
-    },
-    "453844": {
-      "id": "453844",
-      "type": "hero-talent",
-      "class": "Priest",
-      "spec": "공용",
-      "specs": [
-        "Holy",
-        "Shadow"
-      ],
-      "name": "집중된 주입",
-      "koreanName": "집중된 주입",
-      "englishName": "Concentrated Infusion",
-      "icon": "spell_holy_powerinfusion",
-      "iconName": "spell_holy_powerinfusion",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 집중된 주입 (Concentrated Infusion)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerinfusion.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_powerinfusion.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_powerinfusion.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_powerinfusion.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerinfusion.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\공용\\Hero-Talents\\집중된주입.md",
         "lastUpdate": ""
       }
     },
@@ -103944,14 +104550,14 @@
       "icon": "inv_ability_holyfire_orb",
       "iconName": "inv_ability_holyfire_orb",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공명하는 마력 (Resonant Energy)",
+      "description": "후광을 생성하면 10초 동안 암흑은 주문 피해, 신성은 치유량이 2% 증가한다. 최대 4중첩이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103965,12 +104571,17 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력의쇄도",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/천상의후광"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -103993,14 +104604,14 @@
       "icon": "spell_priest_pathofdevout",
       "iconName": "spell_priest_pathofdevout",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 진동 충격파 (Shock Pulse)",
+      "description": "후광이 적의 이동 속도를 5초 동안 5% 감소시킨다. 최대 5중첩이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104014,12 +104625,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/끊임없는비명"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -104095,14 +104710,14 @@
       "icon": "inv_ability_holyfire_buff",
       "iconName": "inv_ability_holyfire_buff",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 완벽한 형상 (Perfected Form)",
+      "description": "암흑은 공허의 형상의 피해 증가 효과를 추가로 5% 높인다. 신성은 절정 중 치유량이 10% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104114,14 +104729,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_holyfire_buff.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -104144,14 +104764,14 @@
       "icon": "spell_shadow_psychicscream",
       "iconName": "spell_shadow_psychicscream",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 끊임없는 비명 (Incessant Screams)",
+      "description": "영혼의 절규가 남긴 형상이 4초 뒤 같은 위치에서 다시 영혼의 절규를 사용한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104163,14 +104783,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_psychicscream.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/영혼의절규"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/진동충격파"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -104193,14 +104817,14 @@
       "icon": "ability_priest_ascension",
       "iconName": "ability_priest_ascension",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 지속되는 잠재력 (Sustained Potency)",
+      "description": "후광을 생성할 때 공허의 형상 또는 절정의 지속시간이 1초 늘어난다. 강화 상태가 아니라면 다음 사용을 위해 최대 6초를 저장한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104212,14 +104836,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_ascension.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력의쇄도",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력압축"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.071,
         "hasWikilinks": true
       },
       "source": {
@@ -114918,9 +115549,9 @@
     },
     "1227280": {
       "id": "1227280",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -114930,14 +115561,14 @@
       "icon": "inv12_ability_priest_tentacleslam",
       "iconName": "inv12_ability_priest_tentacleslam",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 촉수 격돌 (Tentacle Slam)",
-      "category": "talent",
+      "cooldown": "기본 15초 충전 · 2충전",
+      "castTime": "즉시",
+      "resourceCost": "없음 · 광기 6 생성",
+      "range": "40야드",
+      "description": "즉시 시전으로 전방과 주 대상 주위 8야드를 타격하고, 흡혈의 손길이 없는 적을 우선해 최대 6명에게 흡혈의 손길을 적용한다. 기본 2충전, 충전당 15초이며 광기 6을 생성한다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114949,14 +115580,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_tentacleslam.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet2pc-1296579",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -114968,7 +115606,7 @@
       "id": "1228516",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -114978,14 +115616,14 @@
       "icon": "inv_hivemind",
       "iconName": "inv_hivemind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 순종하는 어둠 (Subservient Shadows)",
+      "description": "소환된 하수인의 지속시간을 20%, 피해를 15% 증가시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114998,13 +115636,19 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/요그사론의우상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/크툰의우상"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/환각의마귀",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/어둠의마귀"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.078,
         "hasWikilinks": true
       },
       "source": {
@@ -115119,7 +115763,7 @@
       "id": "1231346",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -115129,14 +115773,14 @@
       "icon": "spell_priest_void-flay",
       "iconName": "spell_priest_void-flay",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태고의 광기 (Ancient Madness)",
+      "description": "공허의 형상 중 어둠의 권능: 광기를 시전하면 가속이 2%씩, 지속시간이 1.5초씩 늘어난다. 최대 5중첩이며 종료 후 가속은 10초에 걸쳐 사라진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115149,15 +115793,18 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
           "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 1,
-        "linkDensity": 0.036,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -116350,7 +116997,8 @@
       "class": "Priest",
       "spec": "Discipline",
       "specs": [
-        "Discipline"
+        "Discipline",
+        "Shadow"
       ],
       "name": "죽음의 고통",
       "koreanName": "죽음의 고통",
@@ -116400,7 +117048,7 @@
       "id": "1240388",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -116410,14 +117058,14 @@
       "icon": "ability_priest_darkness",
       "iconName": "ability_priest_darkness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 생각 (Dark Thoughts)",
+      "description": "어둠의 통찰 발동 확률을 상대적으로 25% 높인다. 어둠의 통찰을 소비한 정신 분열은 광기 1을 추가 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116429,14 +117077,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_darkness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/어둠의통찰"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -116448,7 +117100,7 @@
       "id": "1240394",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -116458,14 +117110,14 @@
       "icon": "spell_shadow_spectralsight",
       "iconName": "spell_shadow_spectralsight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광기의 직조 (Madness Weaving)",
+      "description": "특화: 어둠의 매듭에서 어둠의 권능: 광기가 제공하는 추가 효과가 1점당 50% 더 커진다. 2점이면 광기의 특화 기여가 두 배가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116477,14 +117129,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_spectralsight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/영혼의연결"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/특화어둠의매듭-343690"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -117314,11 +117971,11 @@
         "lastUpdate": "2026-09-12"
       }
     },
-    "1242173": {
-      "id": "1242173",
-      "type": "talent",
+    "1242171": {
+      "id": "1242171",
+      "type": "buff",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -117328,14 +117985,66 @@
       "icon": "inv12_ability_priest_voidvolley",
       "iconName": "inv12_ability_priest_voidvolley",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허 연사 (Void Volley)",
-      "category": "talent",
+      "description": "공허 연사 사용 가능 상태를 나타내는 버프다. 툴팁의 기본 지속시간 표기는 30초다.",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_voidvolley.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_priest_voidvolley.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_priest_voidvolley.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_priest_voidvolley.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_voidvolley.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\공허연사-1242171.md",
+        "lastUpdate": ""
+      }
+    },
+    "1242173": {
+      "id": "1242173",
+      "type": "atomic-skill",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "공허 연사",
+      "koreanName": "공허 연사",
+      "englishName": "Void Volley",
+      "icon": "inv12_ability_priest_voidvolley",
+      "iconName": "inv12_ability_priest_voidvolley",
+      "school": "",
+      "cooldown": "사용권 필요 · 독립 쿨다운 없음",
+      "castTime": "즉시",
+      "resourceCost": "없음 · 광기 10 생성",
+      "range": "40야드",
+      "description": "공허의 형상 버튼을 대체하는 즉시 시전 기술이다. 주 대상에 10발, 대상의 10야드 안 모든 적에게 1발씩 공허 에너지를 발사하며 광기 10을 생성한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117348,18 +118057,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Skills/정신분열"
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/분쇄하는공허"
+        ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/혼돈의균열",
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/공허의폭발"
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/집중된폭발"
         ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.049,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -117634,7 +118345,7 @@
       "id": "1242666",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -117644,14 +118355,14 @@
       "icon": "spell_holy_circleofrenewal_shadow",
       "iconName": "spell_holy_circleofrenewal_shadow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 하강하는 어둠 (Descending Darkness)",
+      "description": "촉수 격돌 피해를 300% 증가시킨다. 지속 피해를 적용하는 적의 수를 늘리는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117664,13 +118375,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet2pc-1296579",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -117731,59 +118446,11 @@
         "lastUpdate": ""
       }
     },
-    "1242779": {
-      "id": "1242779",
-      "type": "talent",
-      "class": "Priest",
-      "spec": "암흑",
-      "specs": [
-        "Shadow"
-      ],
-      "name": "악령의 위협",
-      "koreanName": "악령의 위협",
-      "englishName": "Phantom Menace",
-      "icon": "spell_priest_spectralguise",
-      "iconName": "spell_priest_spectralguise",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 악령의 위협 (Phantom Menace)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_spectralguise.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_spectralguise.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_spectralguise.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_spectralguise.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_spectralguise.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\악령의위협.md",
-        "lastUpdate": ""
-      }
-    },
     "1242862": {
       "id": "1242862",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -117793,14 +118460,14 @@
       "icon": "spell_shadow_shadowwordpain",
       "iconName": "spell_shadow_shadowwordpain",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 주입된 의심 (Instilled Doubt)",
+      "description": "흡혈의 손길과 어둠의 권능: 고통의 치명타 확률을 1점당 8%p, 치명타 피해를 20% 증가시킨다. 2점이면 각각 16%p와 40%다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117812,14 +118479,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowwordpain.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길",
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/고통받는영혼"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -120650,14 +121322,14 @@
       "icon": "spell_holy_prayerofhealing02",
       "iconName": "spell_holy_prayerofhealing02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼 우물 (Spiritwell)",
+      "description": "암흑은 그림자 원혼 피해가 10% 증가한다. 신성은 빛의 쇄도를 치유의 기원에도 소비할 수 있다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120669,18 +121341,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofhealing02.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/빛의쇄도"
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력순환",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/실현된잠재력"
         ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.025,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -122754,7 +123427,7 @@
       "id": "1250492",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -122764,14 +123437,14 @@
       "icon": "spell_shadow_painandsuffering",
       "iconName": "spell_shadow_painandsuffering",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고통 어린 속삭임 (Tormenting Whispers)",
+      "description": "어둠의 권능: 광기의 피해를 15% 증가시킨다. 지속시간이나 광기 비용을 바꾸는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122783,14 +123456,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_painandsuffering.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/마음의눈"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -133834,7 +134511,7 @@
       "id": "1264096",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -133844,14 +134521,14 @@
       "icon": "inv12_apextalent_priest_voidapparitions",
       "iconName": "inv12_apextalent_priest_voidapparitions",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 원혼 (Void Apparitions)",
+      "description": "공허의 원혼 정점의 첫 노드다. 우상 효과가 발동하면 그림자 원혼을 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133864,13 +134541,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264107",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/요그사론의우상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/느조스의우상"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -133882,7 +134564,7 @@
       "id": "1264104",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -133892,14 +134574,14 @@
       "icon": "inv12_apextalent_priest_voidapparitions",
       "iconName": "inv12_apextalent_priest_voidapparitions",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 원혼 (Void Apparitions)",
+      "description": "공허의 원혼 정점의 중간 2점 노드다. 그림자 원혼이 공허의 원혼으로 생성될 확률은 1점 15%, 2점 30%이며, 강화된 원혼은 50% 더 강하고 대상에게 공허의 화살을 발사한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133912,13 +134594,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264175",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의화살-1264177"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -133930,7 +134616,7 @@
       "id": "1264107",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -133940,14 +134626,14 @@
       "icon": "inv12_apextalent_priest_voidapparitions",
       "iconName": "inv12_apextalent_priest_voidapparitions",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허의 원혼 (Void Apparitions)",
+      "description": "공허의 원혼 정점의 마지막 노드다. 촉수 격돌이 100% 확률로 자신이 선택한 우상 중 하나의 효과를 발동시킨다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133960,17 +134646,127 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/느조스의우상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/요그사론의우상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/크툰의우상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/이샤라즈의우상"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 6,
+        "synergyCount": 6,
+        "linkDensity": 0.088,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\공허의원혼-1264107.md",
+        "lastUpdate": ""
+      }
+    },
+    "1264175": {
+      "id": "1264175",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "공허의 원혼",
+      "koreanName": "공허의 원혼",
+      "englishName": "Void Apparition",
+      "icon": "inv12_apextalent_priest_voidapparitions",
+      "iconName": "inv12_apextalent_priest_voidapparitions",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "공허의 원혼 정점 특성으로 강화되어 생성되는 원혼이다. 일반 그림자 원혼보다 강한 피해를 주고 공허의 화살을 발사한다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidapparitions.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_priest_voidapparitions.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_priest_voidapparitions.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_priest_voidapparitions.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_priest_voidapparitions.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264104",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의화살-1264177"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\공허의원혼-1264175.md",
+        "lastUpdate": ""
+      }
+    },
+    "1264177": {
+      "id": "1264177",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "공허의 화살",
+      "koreanName": "공허의 화살",
+      "englishName": "Void Bolt",
+      "icon": "ability_ironmaidens_convulsiveshadows",
+      "iconName": "ability_ironmaidens_convulsiveshadows",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "공허의 원혼이 자동으로 발사하는 공허의 화살이다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_convulsiveshadows.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_convulsiveshadows.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_convulsiveshadows.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_convulsiveshadows.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_convulsiveshadows.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264175",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의원혼-1264104"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\공허의화살-1264177.md",
         "lastUpdate": ""
       }
     },
@@ -142439,14 +143235,14 @@
       "icon": "ability_priest_clarityofpurpose",
       "iconName": "ability_priest_clarityofpurpose",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마력 보존 (Energy Conservation)",
+      "description": "마력의 쇄도 지속시간을 5초 늘린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142460,12 +143256,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/마력의쇄도",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광-120644",
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/후광"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -142488,14 +143288,14 @@
       "icon": "ability_priest_spiritoftheredeemer",
       "iconName": "ability_priest_spiritoftheredeemer",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 집중된 폭발 (Focused Outburst)",
+      "description": "암흑은 공허 연사 피해가 5% 증가하고 공허의 형상 중 어둠의 권능: 광기 직접 시전이 25% 효과의 공허 연사를 자동 발사한다. 신성은 치유의 기원의 마나 비용이 10%, 시전 시간이 15% 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142507,14 +143307,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_spiritoftheredeemer.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/광기어린촉수"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -142537,14 +143343,14 @@
       "icon": "spell_holy_flashheal",
       "iconName": "spell_holy_flashheal",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 실현된 잠재력 (Realized Potential)",
+      "description": "암흑은 어둠의 권능: 죽음 피해가 25% 증가하고 쿨다운이 3초 줄어든다. 신성은 순간 치유가 10% 강해지고 빛의 쇄도 발동 확률이 2%p 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142556,14 +143362,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_flashheal.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능죽음"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/죽음예언자"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Hero-Talents/영혼우물"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -145840,7 +146652,7 @@
       "id": "1279350",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -145850,14 +146662,14 @@
       "icon": "inv12_ability_priest_madness_scream",
       "iconName": "inv12_ability_priest_madness_scream",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깨어난 악몽 (Invoked Nightmare)",
+      "description": "어둠의 권능: 고통 피해를 150% 증가시킨다. 불행과 같은 선택 노드다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145869,14 +146681,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_madness_scream.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/불행",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -145888,7 +146705,7 @@
       "id": "1279353",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -145898,14 +146715,14 @@
       "icon": "inv12_ability_priest_tentacleslam",
       "iconName": "inv12_ability_priest_tentacleslam",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 광기 어린 촉수 (Maddening Tentacles)",
+      "description": "촉수 격돌이 주 대상에게 25% 효과의 어둠의 권능: 광기를 적용한다. 다른 모든 적에게 정상 효과의 광기를 자동 시전하는 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145917,14 +146734,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_tentacleslam.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -145936,7 +146758,7 @@
       "id": "1279354",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -145946,14 +146768,14 @@
       "icon": "inv12_ability_priest_voidvolley",
       "iconName": "inv12_ability_priest_voidvolley",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 분쇄하는 공허 (Crushing Void)",
+      "description": "촉수 격돌 피해를 50%, 공허 연사 피해를 15% 증가시킨다. 공허의 형상이 끝나면 30초 안에 공허 연사를 한 번 더 사용할 수 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145966,13 +146788,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -145984,7 +146810,7 @@
       "id": "1279355",
       "type": "talent",
       "class": "Priest",
-      "spec": "암흑",
+      "spec": "Shadow",
       "specs": [
         "Shadow"
       ],
@@ -145994,14 +146820,14 @@
       "icon": "inv12_ability_priest_madness_wisp",
       "iconName": "inv12_ability_priest_madness_wisp",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 음산한 그림자 (Haunting Shadows)",
+      "description": "그림자 원혼 피해를 10% 증가시킨다. 원혼이 적중하면 그 대상의 어둠의 권능: 고통과 흡혈의 손길을 1초 연장한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146013,14 +146839,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_madness_wisp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/공용/Skills/어둠의권능고통",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/흡혈의손길"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/그림자원혼-341491"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -146073,6 +146904,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Skills\\표창폭풍-1279401.md",
+        "lastUpdate": ""
+      }
+    },
+    "1279437": {
+      "id": "1279437",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "분쇄하는 공허",
+      "koreanName": "분쇄하는 공허",
+      "englishName": "Crushing Void",
+      "icon": "inv12_ability_priest_voidvolley",
+      "iconName": "inv12_ability_priest_voidvolley",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "분쇄하는 공허로 공허의 형상 종료 후 추가 공허 연사를 사용할 수 있는 30초 상태다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_voidvolley.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_priest_voidvolley.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_priest_voidvolley.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_priest_voidvolley.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_priest_voidvolley.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/분쇄하는공허",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.054,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\분쇄하는공허-1279437.md",
         "lastUpdate": ""
       }
     },
@@ -147903,6 +148787,111 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296579": {
+      "id": "1296579",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "Priest Shadow 12.1 Class Set 2pc",
+      "koreanName": "Priest Shadow 12.1 Class Set 2pc",
+      "englishName": "Priest Shadow 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1 시즌 2 암흑 사제 2세트 효과다. 촉수 격돌의 피해를 100% 증가시키고 재사용 대기시간을 3초 줄인다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet4pc-1296580"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\PriestShadow12.1ClassSet2pc-1296579.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296580": {
+      "id": "1296580",
+      "type": "passive",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "Priest Shadow 12.1 Class Set 4pc",
+      "koreanName": "Priest Shadow 12.1 Class Set 4pc",
+      "englishName": "Priest Shadow 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1 시즌 2 암흑 사제 4세트 효과다. 촉수 격돌로 100% 효과의 공허 연사를 사용할 기회를 얻는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/공허의형상"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/PriestShadow12.1ClassSet2pc-1296579",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/촉수격돌",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허연사"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.049,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\PriestShadow12.1ClassSet4pc-1296580.md",
         "lastUpdate": ""
       }
     },
@@ -151296,6 +152285,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Buffs\\죽음의인도자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1304485": {
+      "id": "1304485",
+      "type": "buff",
+      "class": "Priest",
+      "spec": "Shadow",
+      "specs": [
+        "Shadow"
+      ],
+      "name": "태고의 광기",
+      "koreanName": "태고의 광기",
+      "englishName": "Ancient Madness",
+      "icon": "spell_priest_void-flay",
+      "iconName": "spell_priest_void-flay",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "태고의 광기로 쌓인 가속이 공허의 형상 종료 후 남는 상태다. 남은 가속은 10초에 걸쳐 감소한다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_void-flay.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_priest_void-flay.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_priest_void-flay.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_priest_void-flay.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_void-flay.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Skills/어둠의권능광기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/태고의광기",
+          "08-직업별-Knowledge-Base/09-사제/암흑/Talents/공허의형상"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Buffs\\태고의광기-1304485.md",
         "lastUpdate": ""
       }
     },

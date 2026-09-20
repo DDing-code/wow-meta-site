@@ -275,21 +275,21 @@ function displayGuideText(value) {
     .replace(/중심 피드백/g, '쿨기 환급 구조')
     .replace(/분기 타임라인/g, '선택 타임라인')
     .replace(/분기 창/g, '선택 구간')
-    .replace(/압축 창/g, '몰아치는 구간')
-    .replace(/압축 타임라인/g, '몰아넣기 타임라인')
+    .replace(/(?<!마력 )압축 창/g, '몰아치는 구간')
+    .replace(/(?<!마력 )압축 타임라인/g, '몰아넣기 타임라인')
     .replace(/피해 압축/g, '피해 몰아넣기')
     .replace(/쿨다운 압축/g, '쿨다운 몰아넣기')
     .replace(/쿨기 압축/g, '쿨기 몰아넣기')
     .replace(/마무리 일격\/칼날폭풍 압축/g, '마무리 일격/칼날폭풍 몰아넣기')
     .replace(/칼날폭풍\/마무리 일격 압축/g, '칼날폭풍/마무리 일격 몰아넣기')
-    .replace(/압축하는/g, '몰아넣는')
-    .replace(/압축하고/g, '몰아넣고')
-    .replace(/압축한/g, '몰아넣은')
-    .replace(/압축을/g, '몰아넣기를')
-    .replace(/압축이/g, '몰아넣기가')
-    .replace(/압축됩니다/g, '짧은 구간에 모입니다')
-    .replace(/압축합니다/g, '짧은 구간에 몰아넣습니다')
-    .replace(/압축/g, '몰아넣기')
+    .replace(/(?<!마력 )압축하는/g, '몰아넣는')
+    .replace(/(?<!마력 )압축하고/g, '몰아넣고')
+    .replace(/(?<!마력 )압축한/g, '몰아넣은')
+    .replace(/(?<!마력 )압축을/g, '몰아넣기를')
+    .replace(/(?<!마력 )압축이/g, '몰아넣기가')
+    .replace(/(?<!마력 )압축됩니다/g, '짧은 구간에 모입니다')
+    .replace(/(?<!마력 )압축합니다/g, '짧은 구간에 몰아넣습니다')
+    .replace(/(?<!마력 )압축/g, '몰아넣기')
     .replace(/우선 처리합니다/g, '먼저 사용합니다')
     .replace(/공개 진입 경로/g, '공개 안내 링크')
     .replace(/툴팁 API\(locale=1\)/g, '한국어 툴팁')
@@ -1620,18 +1620,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '신성 충격 충전 방치, 신성한 힘 과잉, 빛 주입 미소비, 고결의 봉화 지연, 오라 숙련 전 자원 손실, 응징의 격노 뒤 직접 치유를 봅니다.'],
     ],
   },
-  'priest-shadow': {
-    id: 'resource',
-    title: '광기와 지속 피해 관리',
-    sectionHeading: '흡혈의 손길과 광기 소비',
-    sectionIntro: '암흑 사제는 흡혈의 손길과 어둠의 권능: 고통을 유지하면서 광기를 만들고, 어둠의 권능: 광기와 공허의 격류 구간에 소비합니다.',
-    caption: '흡혈의 손길, 어둠의 권능: 고통, 정신 분열, 어둠의 권능: 광기, 공허의 형상, 공허 연사, 공허의 격류를 확인합니다.',
-    definition: [
-      ['의미', '광기는 강한 소비기로 바뀌는 자원이고, 지속 피해는 광기 생성과 피해 바탕을 유지합니다.'],
-      ['읽는 법', '지속 피해가 비면 먼저 복구하고, 광기가 넘치기 전에 어둠의 권능: 광기로 소비합니다. 공허의 형상 중에는 공허 연사와 정신 분열을 밀지 않습니다.'],
-      ['체크 포인트', '흡혈의 손길 공백, 광기 과충전, 공허의 형상 중 약한 소비, 정신 분열 지연, 쐐기에서 차단/스톱 누락을 봅니다.'],
-    ],
-  },
   'demonhunter-vengeance': {
     id: 'defensive',
     title: '피해 전 방어와 피격 후 회복',
@@ -1800,7 +1788,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4352,58 +4340,6 @@ function getUptimeRows(guide, data) {
   }
 
 
-  if (guide.id === 'priest-shadow') {
-    return [
-      {
-        label: '흡혈 기반',
-        skill: findSkillByNames(data, ['흡혈의 손길']),
-        note: '오래 사는 대상에게 유지하는 기본 지속 피해이자 영혼의 연결 회수 기반입니다.',
-        segments: [[5, 40], [51, 42]],
-      },
-      {
-        label: '고통 확장',
-        skill: findSkillByNames(data, ['어둠의 권능: 고통']),
-        note: '흡혈의 손길과 함께 끊김 여부를 먼저 확인하되 짧게 죽는 대상에는 과투자하지 않습니다.',
-        segments: [[3, 44], [54, 39]],
-      },
-      {
-        label: '광기 유지',
-        skill: findSkillByNames(data, ['어둠의 권능: 광기']),
-        note: '광기가 넘치기 전 소모하고 유지 시간이 낮으면 우선순위를 올립니다.',
-        segments: [[22, 18], [60, 20]],
-      },
-      {
-        label: '광기 생성',
-        skill: findSkillByNames(data, ['정신 분열']),
-        note: '짧은 쿨다운 사용 횟수를 잃으면 광기와 영혼의 연결 회수가 같이 밀립니다.',
-        segments: [[14, 14], [43, 13], [73, 13]],
-      },
-      {
-        label: '집정관 구간',
-        skill: findSkillByNames(data, ['후광', '공허의 형상', '마력 주입']),
-        note: '집정관은 후광 각도와 공허의 형상, 마력 주입이 같은 긴 피해 구간으로 묶이는지 봅니다.',
-        segments: [[18, 20], [70, 18]],
-      },
-      {
-        label: '공허 균열',
-        skill: findSkillByNames(data, ['공허의 격류', '혼돈의 균열', '공허의 폭발']),
-        note: '공허술사는 이동 없는 구간에 공허의 격류를 넣고 균열 안 공허의 폭발을 확인합니다.',
-        segments: [[28, 16], [78, 14]],
-      },
-      {
-        label: '주 대상 회수',
-        skill: findSkillByNames(data, ['영혼의 연결']),
-        note: '주 대상 피해가 지속 피해 대상에게 회수되는 구조라 대상 선택과 풀 수명을 같이 봅니다.',
-        segments: [[10, 34], [52, 34]],
-      },
-      {
-        label: '이동/처형',
-        skill: findSkillByNames(data, ['어둠의 권능: 죽음', '분산']),
-        note: '이동 전 광기를 비우고, 처형/위험 구간에서는 즉시시전과 생존 판단을 분리합니다.',
-        segments: [[36, 10], [66, 10], [90, 6]],
-      },
-    ];
-  }
 
 
   const pool = uniqueBy([...data.featuredSkills, ...data.defensiveSkills, ...data.healingSkills], skill => String(skill.id)).slice(0, 4);
