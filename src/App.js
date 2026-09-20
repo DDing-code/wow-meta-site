@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigationType } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/GlobalStyle.js';
 import { theme } from './styles/theme.js';
@@ -101,6 +101,29 @@ const MainContent = styled.main`
   width: 100%;
 `;
 
+function RouteScroll() {
+  const { pathname, hash } = useLocation();
+  const navigationType = useNavigationType();
+
+  useEffect(() => {
+    let id = hash.slice(1);
+    try {
+      id = decodeURIComponent(id);
+    } catch {
+      // A malformed fragment must not break page navigation.
+    }
+    const target = id ? document.getElementById(id) : null;
+    if (target) {
+      target.scrollIntoView({ block: 'start', behavior: 'instant' });
+    } else if (navigationType !== 'POP') {
+      // Leave back/forward and reload restoration to the browser.
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+  }, [pathname, hash, navigationType]);
+
+  return null;
+}
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -135,6 +158,7 @@ function App() {
             </Routes>
           </MainContent>
         </AppContainer>
+        <RouteScroll />
       </Router>
     </ThemeProvider>
   );
