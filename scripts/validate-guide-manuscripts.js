@@ -30,6 +30,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['paladin-holy', '12.1'],
   ['evoker-preservation', '12.1'],
   ['monk-mistweaver', '12.1'],
+  ['monk-windwalker', '12.1'],
   ['shaman-elemental', '12.1'],
   ['evoker-devastation', '12.1'],
   ['druid-balance', '12.1'],
@@ -1033,6 +1034,35 @@ function main() {
   const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
+
+  const windwalker = manuscripts['monk-windwalker'];
+  const windwalkerSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '07-수도사', '풍운', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(windwalkerSource)) {
+    assert(JSON.stringify(JSON.parse(read(windwalkerSource))) === JSON.stringify(windwalker), 'Windwalker must match its canonical 12.1 manuscript');
+  }
+  const windwalkerNotes = Object.values(kbSkills).filter(skill => /[\\/]07-수도사[\\/]풍운[\\/]/.test(skill.source?.kbPath || ''));
+  assert(windwalkerNotes.length >= 60 && windwalkerNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'Windwalker notes must retain reviewed 12.1 descriptions');
+  assert(!windwalker.extraSkills?.length && !kbSkills['137639'], 'Windwalker must not revive Storm, Earth, and Fire or bypass canonical skills');
+  assert(['1296621', '1296624'].every(id => kbSkills[id]?.type === 'passive') && kbSkills['1297033']?.type === 'buff' && kbSkills['1297033'].description.includes('20초'), 'Windwalker S2 effects must remain distinct from the 20-second consumer buff');
+  assert(['1261703', '1261844', '1261849', '1272694', '1250566'].every(id => kbSkills[id]?.type === 'talent'), 'Windwalker apex nodes and enabling talents must not become casts');
+  assert(['1272696', '443028', '467307'].every(id => kbSkills[id]?.type === 'atomic-skill' && kbSkills[id].specs.includes('Windwalker')), 'Windwalker flows require real Stomp, Conduit and Rushing Wind Kick casts');
+  assert(kbSkills['432181']?.description.includes('물리') && !kbSkills['432181'].specs.includes('Brewmaster'), 'Windwalker Dance of the Wind must not borrow the Brewmaster dodge node');
+  assert(kbSkills['100780']?.description.includes('60') && kbSkills['100784']?.description.includes('기 1') && kbSkills['1248989']?.description.includes('1분'), 'Windwalker costs and Xuen-gated Conduit must survive sync');
+  assert(['443421', '443616', '1238904', '116768', '325202', '1250554'].every(id => kbSkills[id]?.type === 'buff'), 'Windwalker proc and Jade Heart variants must stay separate');
+  for (const branch of windwalker.heroBranches) {
+    assert(branch.opener.steps.length >= 8 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Windwalker heroes need authored opener, ST and AoE');
+    assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Windwalker single-target and AoE conditions must differ');
+    for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
+      for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
+        assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Windwalker chart rows must be real casts with complete conditions');
+      }
+    }
+  }
+  assert(!JSON.stringify(windwalker.heroBranches[0]).includes('"skillId":"123904"') && !JSON.stringify(windwalker.heroBranches[0]).includes('"skillId":"443028"'), 'Shado-Pan must not borrow Conduit cast buttons');
+  assert(!JSON.stringify(windwalker).includes('99.9%'), 'Windwalker must not reuse stale Season 1 usage statistics');
+
+
+
 
   const mageFrost = manuscripts['mage-frost'];
   const mageFrostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '냉기', 'Meta', 'guide-12.1.json');

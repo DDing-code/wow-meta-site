@@ -1,109 +1,109 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T06:51:10.037Z",
+    "generatedAt": "2026-09-20T04:39:32.737Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2787,
-    "rawTotalSkills": 2787,
+    "totalSkills": 2807,
+    "rawTotalSkills": 2807,
     "duplicateIds": [],
-    "totalSynergies": 504,
+    "totalSynergies": 507,
     "stats": {
-      "total": 2787,
+      "total": 2807,
       "byType": {
-        "buff": 64,
-        "hero-talent": 572,
         "atomic-skill": 483,
-        "proc": 7,
+        "passive": 35,
+        "talent": 987,
         "skill": 167,
-        "talent": 984,
+        "class-talent": 86,
+        "buff": 75,
         "spec-talent": 377,
-        "passive": 31,
-        "hero-tree": 2,
+        "hero-talent": 574,
+        "proc": 7,
+        "atomic-buff": 1,
+        "debuff": 1,
+        "apex-talent": 1,
+        "atomic-talent": 1,
+        "removed-talent": 1,
         "set-bonus": 7,
         "tier-set": 2,
-        "class-talent": 86,
-        "debuff": 1,
-        "removed-talent": 1,
-        "atomic-buff": 1,
-        "apex-talent": 1,
-        "atomic-talent": 1
+        "hero-tree": 2
       },
       "byClass": {
-        "DeathKnight": 111,
-        "DemonHunter": 148,
-        "Druid": 214,
-        "Evoker": 140,
-        "Hunter": 225,
-        "Mage": 229,
-        "Monk": 231,
-        "Paladin": 209,
         "Priest": 221,
         "Rogue": 286,
-        "Shaman": 273,
+        "Mage": 229,
+        "Warrior": 265,
+        "Druid": 214,
+        "Hunter": 225,
         "Warlock": 235,
-        "Warrior": 265
+        "Shaman": 273,
+        "Paladin": 209,
+        "DemonHunter": 148,
+        "DeathKnight": 111,
+        "Monk": 251,
+        "Evoker": 140
       },
       "bySpec": {
-        "DeathKnight-공용": 17,
-        "DeathKnight-냉기": 32,
-        "DeathKnight-부정": 40,
-        "DeathKnight-혈기": 22,
-        "DemonHunter-공용": 16,
-        "DemonHunter-복수": 44,
-        "DemonHunter-파멸": 54,
-        "DemonHunter-포식": 34,
-        "Druid-공용": 54,
-        "Druid-수호": 41,
-        "Druid-야성": 51,
-        "Druid-조화": 37,
-        "Druid-회복": 31,
-        "Evoker-공용": 42,
-        "Evoker-보존": 28,
-        "Evoker-증강": 42,
-        "Evoker-황폐": 28,
-        "Hunter-공용": 67,
-        "Hunter-사격": 58,
-        "Hunter-생존": 58,
-        "Hunter-야수": 42,
+        "Priest-수양": 48,
+        "Rogue-잠행": 59,
         "Mage-공용": 64,
+        "Warrior-Protection": 41,
+        "Druid-공용": 54,
+        "Warrior-공용": 128,
         "Mage-냉기": 63,
-        "Mage-비전": 49,
         "Mage-화염": 53,
-        "Monk-공용": 69,
-        "Monk-양조": 51,
-        "Monk-운무": 64,
-        "Monk-풍운": 47,
+        "Hunter-공용": 67,
+        "Warlock-Affliction": 44,
+        "Warlock-Destruction": 44,
+        "Shaman-공용": 126,
+        "Rogue-공용": 128,
+        "Priest-공용": 74,
         "Paladin-공용": 72,
-        "Paladin-보호": 46,
+        "Priest-신성": 46,
+        "Warlock-Demonology": 41,
+        "Warlock-공용": 106,
+        "Rogue-암살": 46,
+        "Druid-회복": 31,
+        "Warrior-Arms": 46,
+        "Shaman-복원": 46,
+        "Druid-야성": 51,
+        "Mage-비전": 49,
+        "DemonHunter-공용": 16,
+        "Warrior-Fury": 49,
+        "Rogue-무법": 53,
+        "Druid-조화": 37,
+        "Druid-수호": 41,
+        "Shaman-정기": 57,
+        "Priest-암흑": 53,
+        "Shaman-고양": 44,
+        "Hunter-사격": 58,
+        "Hunter-야수": 42,
         "Paladin-신성": 44,
         "Paladin-징벌": 47,
-        "Priest-공용": 74,
-        "Priest-수양": 48,
-        "Priest-신성": 46,
-        "Priest-암흑": 53,
-        "Rogue-공용": 128,
-        "Rogue-무법": 53,
-        "Rogue-암살": 46,
-        "Rogue-잠행": 59,
-        "Shaman-고양": 44,
-        "Shaman-공용": 126,
-        "Shaman-복원": 46,
-        "Shaman-정기": 57,
-        "Warlock-Affliction": 44,
-        "Warlock-공용": 106,
-        "Warlock-Demonology": 41,
-        "Warlock-Destruction": 44,
-        "Warrior-공용": 128,
-        "Warrior-Arms": 46,
-        "Warrior-무기": 1,
-        "Warrior-Protection": 41,
-        "Warrior-Fury": 49
+        "Paladin-보호": 46,
+        "DeathKnight-부정": 40,
+        "DeathKnight-공용": 17,
+        "DeathKnight-혈기": 22,
+        "DeathKnight-냉기": 32,
+        "Monk-공용": 74,
+        "Monk-풍운": 65,
+        "Monk-양조": 51,
+        "Monk-운무": 61,
+        "DemonHunter-파멸": 54,
+        "Hunter-생존": 58,
+        "DemonHunter-복수": 44,
+        "DemonHunter-포식": 34,
+        "Evoker-공용": 42,
+        "Evoker-보존": 28,
+        "Evoker-황폐": 28,
+        "Evoker-증강": 42,
+        "Warrior-무기": 1
       },
       "quality": {
-        "withWikilinks": 2710,
-        "withSynergies": 1166,
-        "avgLinkDensity": "0.034"
+        "withWikilinks": 2730,
+        "withSynergies": 1268,
+        "avgLinkDensity": "0.035"
       }
     }
   },
@@ -17178,12 +17178,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "기력",
+      "resourceCost": "양조: 기력 25 / 다른 전문화별 보정",
       "range": "근접",
-      "description": "# 범의 장풍 (Tiger Palm)",
+      "description": "즉시 시전 근접 물리 공격이다. 양조는 전문화 보정으로 기본 기력 50의 절반인 25를 쓰며 맥주 재사용 대기시간을 기본 1초 줄인다. 풍운은 기 생성 역할이고, 여세 몰이를 선택한 양조에서는 자동 공격 효과로 대체된다.  풍운은 전문화 보정으로 기본 기력 60을 소모하고 기 2를 생성합니다. 내면의 평화 선택 시 비용은 55입니다. 등선 중 칠흑 나선의 후려차기와 추가 정점의 발구르기가 기를 공급하므로 장풍을 평소처럼 반복하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17195,14 +17195,25 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerpalm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/안면장풍",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/여세몰이",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/내면의평화",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "wikilinkCount": 8,
+        "synergyCount": 7,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -17225,14 +17236,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "풍운: 없음 / 운무: 3초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "풍운: 기 1 · 무료 효과 별도 / 운무: 기 소모 없음",
       "range": "근접",
-      "description": "# 후려차기 (Blackout Kick)",
+      "description": "풍운에서는 습득 효과 261916을 반영해 기 1을 쓰고 전문화 보정으로 별도 쿨다운이 없습니다. 등선 또는 후려차기!가 있으면 무료이며 칠흑 나선 선택 시 등선 중 기를 생성합니다. 운무의 3초 기본 쿨다운 및 수도원의 가르침 연계와 구분하고, 양조는 별도 주문 205523을 사용합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17244,14 +17255,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/후려차기-비용보정"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/날카로운반사신경",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.078,
         "hasWikilinks": true
       },
       "source": {
@@ -17263,8 +17280,10 @@
       "id": "101546",
       "type": "atomic-skill",
       "class": "Monk",
-      "spec": "풍운",
+      "spec": "공용",
       "specs": [
+        "Brewmaster",
+        "Mistweaver",
         "Windwalker"
       ],
       "name": "회전 학다리차기",
@@ -17274,13 +17293,13 @@
       "iconName": "ability_monk_cranekick_new",
       "school": "",
       "cooldown": "없음",
-      "castTime": "즉시",
-      "resourceCost": "기",
-      "range": "근접",
-      "description": "# 회전 학다리차기 (Spinning Crane Kick)",
+      "castTime": "1.5초 채널",
+      "resourceCost": "양조: 기력 40 / 운무: 기본 마나 1% / 풍운: 기 2",
+      "range": "자신 주위",
+      "description": "1.5초 동안 주위 적을 공격하는 공용 채널 기술이다. 전문화별 기본 비용은 양조 기력 40, 운무 기본 마나 1%, 풍운 기 2다. 같은 주문 ID를 전문화별 중복 DB로 저장하지 않는다.  풍운은 시즌 2 끊임없는 박자를 소비하는 광역 기술이며 츠지의 춤이 있으면 무료입니다. 쉬엔의 전투장비는 적중 대상당 분노의 주먹 쿨다운을 0.5초, 최대 2.5초 줄입니다. 같은 회전 학다리차기를 연속 사용해 특화를 깨지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17292,21 +17311,24 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cranekick_new.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/건들건들",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/의식상실연계",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/잠재된기운"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.068,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\회전학다리차기.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\회전학다리차기.md",
         "lastUpdate": ""
       }
     },
@@ -17326,14 +17348,14 @@
       "icon": "monk_ability_transcendence",
       "iconName": "monk_ability_transcendence",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "10초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 해탈 (Transcendence)",
+      "description": "15분 동안 정신을 해당 위치에 남긴다. 재사용 대기시간은 10초이며 실제 순간이동은 별도 해탈: 전환으로 수행한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17345,14 +17367,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_ability_transcendence.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈전환",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -18099,14 +18124,14 @@
       "icon": "ability_monk_risingsunkick",
       "iconName": "ability_monk_risingsunkick",
       "school": "",
-      "cooldown": "12초",
+      "cooldown": "10초 · 전문화/특성별 보정",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "풍운: 기 2 / 운무: 기본 마나 2.5%",
       "range": "근접",
-      "description": "# 해오름차기 (Rising Sun Kick)",
+      "description": "기본 10초 쿨다운의 근접 공격입니다. 풍운은 기 2를 쓰며 쉬엔의 전투장비로 치명타 적중 시 분노의 주먹 쿨다운을 줄입니다. 운무는 기본 마나 2.5%를 쓰고 선택한 특성과 치유 연계를 적용합니다. 두 전문화의 세트 효과와 질풍차기 대체 조건을 서로 복사하지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18118,14 +18143,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_risingsunkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.059,
+        "synergyCount": 3,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -18851,10 +18881,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구르기 (Roll)",
+      "description": "짧은 거리를 이동하는 공용 이동기다. 기본 2충전이며 충전당 재사용 대기시간은 20초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18866,14 +18896,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roll.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/호랑이의활력",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/전투태세"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -19204,13 +19239,13 @@
       "iconName": "monk_ability_fistoffury",
       "school": "",
       "cooldown": "24초",
-      "castTime": "집중 4초",
-      "resourceCost": "기 3",
-      "range": "8야드",
-      "description": "# 분노의 주먹 (Fists of Fury)",
+      "castTime": "4초 채널 · 이동 가능",
+      "resourceCost": "기 3 · 특성으로 감소",
+      "range": "전방 8미터",
+      "description": "기본 기 3을 써 전방 8미터 적에게 4초 동안 연속 피해를 줍니다. 기본 쿨다운은 24초이며 가속과 특성으로 실제 시간이 달라집니다. 이동 중에도 채널을 유지할 수 있습니다. 시즌 2 세트는 첫 추가 타격과 끊임없는 박자를 더하고, 음영파 질풍격 및 천신합일 옥룡의 마음도 이 기술과 연결됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19223,17 +19258,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-2세트",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+        ],
         "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
           "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
         ]
       },
       "quality": {
-        "wikilinkCount": 10,
-        "synergyCount": 1,
-        "linkDensity": 0.068,
+        "wikilinkCount": 5,
+        "synergyCount": 3,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -19669,12 +19708,12 @@
       "school": "",
       "cooldown": "45초",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "20야드",
-      "description": "# 마비 (Paralysis)",
+      "resourceCost": "양조: 기력 20 / 다른 전문화별 보정",
+      "range": "20미터",
+      "description": "한 대상을 최대 1분 동안 행동 불가로 만드는 제어기다. 기본 재사용 대기시간 45초, 사거리 20미터이며 피해를 받으면 효과가 해제될 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19686,14 +19725,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_paralysis.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/팽이차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -19737,7 +19779,7 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
           "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": [
@@ -19878,10 +19920,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강화주 (Fortifying Brew)",
+      "description": "실제 강화주 시전 버튼이다. 기본 재사용 대기시간은 6분, 지속 시간은 15초다. 생명력 증가·피해 감소는 강화주 기본 효과 388917, 시간차 보정은 강화주: 결의 등 선택한 특성에서 결합된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19893,17 +19935,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/업보의손아귀",
-          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/절명의손길"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강화주기본효과",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/강화주결의",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/한잔더마지막"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/끈기의진언"
+        ]
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.075,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -20021,14 +20066,14 @@
       "icon": "ability_monk_ascension",
       "iconName": "ability_monk_ascension",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기세등등 (Ascension)",
+      "description": "최대 기 보유량을 1, 최대 기력을 20, 기력 회복 속도를 10% 늘립니다. 자원 여유가 늘어도 기를 가득 채운 뒤 범의 장풍을 쓰는 것은 낭비입니다. 핵심 쿨기를 위한 기 확보와 등선 중 무료 후려차기를 함께 고려합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20040,14 +20085,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_ascension.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -20102,6 +20151,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\해독.md",
+        "lastUpdate": ""
+      }
+    },
+    "115636": {
+      "id": "115636",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "특화: 연계 일격",
+      "koreanName": "특화: 연계 일격",
+      "englishName": "Mastery: Combo Strikes",
+      "icon": "trade_alchemy_potionb3",
+      "iconName": "trade_alchemy_potionb3",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "같은 기술을 연달아 사용하지 않으면 공격력이 특화 수치만큼 증가합니다. 19% 같은 기본 툴팁 숫자는 캐릭터 장비에 따라 달라집니다. 직접 시전하는 기술이 아니며 타격 연계와 함께 직전 공격 반복 여부를 확인합니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_alchemy_potionb3.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_alchemy_potionb3.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_alchemy_potionb3.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_alchemy_potionb3.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_alchemy_potionb3.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/타격연계"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\특화-연계일격.md",
         "lastUpdate": ""
       }
     },
@@ -20220,14 +20322,14 @@
       "icon": "passive_monk_teachingsofmonastery",
       "iconName": "passive_monk_teachingsofmonastery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수도원의 가르침 (Teachings of the Monastery)",
+      "description": "범의 장풍이 다음 후려차기의 추가 타격을 준비하며 기본 최대 4중첩입니다. 부서진 사원의 지식 선택 시 최대 8중첩과 선택 쿨기 후 중첩 획득이 추가됩니다. 가르침을 쌓는 것 자체를 목표로 장풍을 반복하지 않고 실제 기와 주요 쿨다운에 맞춰 후려차기를 사용합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20239,14 +20341,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/passive_monk_teachingsofmonastery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/부서진사원의지식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -20373,10 +20480,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 손날 찌르기 (Spear Hand Strike)",
+      "description": "근접 대상의 시전을 차단하고 같은 계열 주문을 5초 막는 기술이다. 기본 재사용 대기시간은 15초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20388,18 +20495,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_spearhand.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/팽이차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/마비"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\손날찌르기.md",
+        "lastUpdate": ""
+      }
+    },
+    "116768": {
+      "id": "116768",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "후려차기!",
+      "koreanName": "후려차기!",
+      "englishName": "Blackout Kick!",
+      "icon": "ability_monk_roundhousekick",
+      "iconName": "ability_monk_roundhousekick",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 후려차기를 무료로 만드는 15초 발동이며 최대 2개까지 보유합니다. 강제 연계의 기본 발동률은 8%이고 수도원의 기억이 이를 높입니다. 폭발하는 기운과 질풍차기는 이 발동의 소비에 연결됩니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_roundhousekick.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_roundhousekick.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_roundhousekick.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/강제연계",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/폭발하는기운",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.087,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\후려차기-발동.md",
         "lastUpdate": ""
       }
     },
@@ -20422,11 +20586,11 @@
       "cooldown": "30초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "20야드",
-      "description": "# 범의 욕망 (Tiger's Lust)",
+      "range": "20미터",
+      "description": "아군 대상에게 6초 동안 이동 속도 70% 증가를 주고 이동 불가·이동 방해 효과를 제거한다. 기본 재사용은 30초, 사거리는 20미터다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20438,14 +20602,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerslust.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/호랑이의활력",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/천상의포효"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -20865,11 +21034,11 @@
       "cooldown": "1분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "자신 주변",
-      "description": "# 팽이 차기 (Leg Sweep)",
+      "range": "자신 주위 6미터",
+      "description": "6미터 안의 적을 3초 기절시키는 광역 제어기다. 기본 재사용 대기시간은 1분이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20881,14 +21050,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_legsweep.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/마비"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -21015,11 +21187,11 @@
       "cooldown": "45초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "100야드",
-      "description": "# 해탈: 전환 (Transcendence: Transfer)",
+      "range": "40미터",
+      "description": "육체와 미리 남긴 정신의 위치를 맞바꾸는 40미터 이동기다. 기본 재사용 대기시간은 45초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21032,15 +21204,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.051,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -21318,14 +21491,14 @@
       "icon": "ability_monk_expelharm",
       "iconName": "ability_monk_expelharm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전투의 지혜 (Combat Wisdom)",
+      "description": "비전투 중 기가 2로 수렴하게 하고 체력을 5% 높입니다. 15초마다 다음 범의 장풍에 해악 축출이 자동으로 따라옵니다. 전투 시작 기가 0이라고 가정한 생성기 반복이나 별도의 해악 축출 필수 오프닝을 만들지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21337,14 +21510,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_expelharm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -21414,14 +21589,14 @@
       "icon": "ability_monk_touchofkarma",
       "iconName": "ability_monk_touchofkarma",
       "school": "",
-      "cooldown": "1.5분",
+      "cooldown": "90초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 업보의 손아귀 (Touch of Karma)",
+      "range": "20미터",
+      "description": "10초 동안 최대 생명력 50% 한도까지 받는 피해를 흡수하고, 흡수한 양의 70%를 6초에 걸쳐 적에게 이전합니다. 한도를 넘는 공격을 무효화하는 면역기가 아닙니다. 예정된 피할 수 없는 피해에 사용하며, 반사 피해를 늘리려고 위험한 바닥에 일부러 들어가지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21433,14 +21608,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_touchofkarma.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -21511,14 +21688,14 @@
       "icon": "ability_monk_summontigerstatue",
       "iconName": "ability_monk_summontigerstatue",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "120초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 백호 쉬엔의 원령 (Invoke Xuen, the White Tiger)",
+      "description": "천신합일 풍운이 사용하는 기본 2분 소환 기술로 쉬엔이 20초간 공격합니다. 쉬엔의 결속을 고르면 쿨다운이 30초 줄어듭니다. 풍운 천신합일 특성이 있으면 소환 뒤 1분 동안 천신합일을 사용할 수 있습니다. 음영파의 공통 버튼으로 넣지 않습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21531,15 +21708,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/폭풍과대지와불"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Hero-Talents/천신합일-선행조건",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Hero-Talents/쉬엔의결속"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.057,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -22029,14 +22209,14 @@
       "icon": "pandarenracial_bouncy",
       "iconName": "pandarenracial_bouncy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강제 연계 (Combo Breaker)",
+      "description": "범의 장풍이 8% 확률로 다음 후려차기를 무료로 만드는 후려차기! 발동을 줍니다. 특성 자체와 실제 버프 116768을 구분합니다. 발동 두 개를 넘기거나 15초 유지 시간을 놓치지 않도록 소비하되 분노의 주먹을 불필요하게 미루지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22048,66 +22228,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/pandarenracial_bouncy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의기억"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.074,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\강제연계.md",
-        "lastUpdate": ""
-      }
-    },
-    "137639": {
-      "id": "137639",
-      "type": "atomic-skill",
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "name": "폭풍과 대지와 불",
-      "koreanName": "폭풍과 대지와 불",
-      "englishName": "Storm, Earth, and Fire",
-      "icon": "spell_nature_giftofthewild",
-      "iconName": "spell_nature_giftofthewild",
-      "school": "",
-      "cooldown": "1.5분",
-      "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 폭풍과 대지와 불 (Storm, Earth, and Fire)",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_giftofthewild.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_giftofthewild.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_giftofthewild.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_giftofthewild.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_giftofthewild.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.086,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\폭풍과대지와불.md",
         "lastUpdate": ""
       }
     },
@@ -22374,14 +22511,14 @@
       "icon": "ability_monk_hurricanestrike",
       "iconName": "ability_monk_hurricanestrike",
       "school": "",
-      "cooldown": "24초",
+      "cooldown": "35초",
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 소용돌이 용의 주먹 (Whirling Dragon Punch)",
+      "description": "분노의 주먹과 해오름차기가 모두 쿨다운 중일 때 활성화되는 기본 35초 광역 공격입니다. 처음 맞는 대상에 추가 피해를 주며 5명 초과 피해는 감소합니다. 바람의 군주의 일격과 선택 관계이고, 천신합일에서는 옥룡의 마음을 발동시킵니다. 사용 가능 유예가 끝나기 전에 쓰되 분노의 주먹 초기화 여부를 먼저 확인합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22394,15 +22531,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/폭풍과대지와불"
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.066,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -27870,14 +28010,14 @@
       "icon": "ability_monk_palmstrike",
       "iconName": "ability_monk_palmstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 타격 연계 (Hit Combo)",
+      "description": "특화: 연계 일격이 발동하는 공격을 연속으로 적중시키면 공격력이 1%씩 최대 5중첩 증가합니다. 같은 공격을 연속 사용해 연계를 깨는 것을 피합니다. 단순 버튼 개수가 아니라 특화 판정에 들어가는 직전 공격을 기준으로 봅니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27889,14 +28029,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_palmstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/특화-연계일격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -37992,6 +38136,57 @@
         "lastUpdate": ""
       }
     },
+    "261916": {
+      "id": "261916",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "후려차기",
+      "koreanName": "후려차기",
+      "englishName": "Blackout Kick",
+      "icon": "ability_monk_roundhousekick",
+      "iconName": "ability_monk_roundhousekick",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "풍운 후려차기의 기본 기 비용을 2 줄이는 습득 효과입니다. 원본 주문의 기 3에서 기 1이 되며 등선이나 후려차기!가 있으면 무료로 사용할 수 있습니다. 양조 후려차기 205523과 구분합니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_roundhousekick.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_roundhousekick.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_roundhousekick.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.068,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\후려차기-비용보정.md",
+        "lastUpdate": ""
+      }
+    },
     "261917": {
       "id": "261917",
       "type": "talent",
@@ -38006,14 +38201,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날카로운 반사신경 (Sharp Reflexes)",
+      "description": "후려차기 사용이 해오름차기와 분노의 주먹의 남은 쿨다운을 1초 줄입니다. 등선 동안에는 등선의 추가 감소도 적용됩니다. 쿨다운을 줄이려고 기를 모두 써 버려 다음 분노의 주먹을 못 누르는 상황을 피합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38025,14 +38220,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -42851,10 +43051,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 절명의 손길 (Touch of Death)",
+      "description": "대상 생명력 조건을 만족할 때 사용하는 마무리 공격이다. 기본은 자신보다 생명력이 낮은 생명체에 최대 생명력 100% 상당 피해를 주며, 절명의 손길 연마가 있으면 생명력 15% 미만의 강력한 생명체에는 최대 생명력 35% 상당 피해를 줄 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42866,14 +43066,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_touchofdeath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/정화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.047,
+        "synergyCount": 2,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -43283,14 +43486,14 @@
       "icon": "ability_monk_cranekick_new",
       "iconName": "ability_monk_cranekick_new",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 츠지의 춤 (Dance of Chi-Ji)",
+      "description": "기 소모가 다음 회전 학다리차기를 무료로 만드는 츠지의 춤 발동을 줄 수 있습니다. 최대 2개 발동을 덮어쓰지 않도록 소비합니다. 시즌 2 끊임없는 박자는 별도의 피해 강화이므로 무료 발동과 세트 버프를 서로 같은 효과로 취급하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43302,18 +43505,73 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cranekick_new.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\츠지의춤.md",
+        "lastUpdate": ""
+      }
+    },
+    "325202": {
+      "id": "325202",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "츠지의 춤",
+      "koreanName": "츠지의 춤",
+      "englishName": "Dance of Chi-Ji",
+      "icon": "ability_monk_quitornado",
+      "iconName": "ability_monk_quitornado",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "다음 회전 학다리차기를 무료로 만드는 발동입니다. 최대 2개를 덮어쓰지 않도록 소비하고 단일에서는 끊임없는 박자와 동시에 있는지 확인합니다. 순차 타격이 있으면 소비 뒤 후려차기!가 이어집니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_quitornado.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_quitornado.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_quitornado.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_quitornado.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_quitornado.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/순차타격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.082,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\츠지의춤.md",
         "lastUpdate": ""
       }
     },
@@ -65008,6 +65266,58 @@
         "lastUpdate": ""
       }
     },
+    "388664": {
+      "id": "388664",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "공용",
+      "specs": [
+        "Brewmaster",
+        "Windwalker",
+        "Mistweaver"
+      ],
+      "name": "안정의 존재",
+      "koreanName": "안정의 존재",
+      "englishName": "Calming Presence",
+      "icon": "inv_misc_orb_01",
+      "iconName": "inv_misc_orb_01",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "받는 모든 피해를 줄이는 직업 특성입니다. 현재 한국어 툴팁 기준 풍운은 10%, 양조와 운무는 3%입니다. 물리 피해에만 적용되는 풍운 바람의 춤과 구분하며 각 전문화 수치를 서로 복사하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_orb_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_orb_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_orb_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Talents/바람의춤"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Talents\\안정의존재.md",
+        "lastUpdate": ""
+      }
+    },
     "388682": {
       "id": "388682",
       "type": "talent",
@@ -65312,14 +65622,14 @@
       "icon": "ability_monk_cranekick_new",
       "iconName": "ability_monk_cranekick_new",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 학의 회오리 (Crane Vortex)",
+      "description": "회전 학다리차기의 공격력과 반경을 각각 15% 늘립니다. 맞힐 수 있는 적 수와 광역 피해를 늘리지만 적이 멀리 흩어진 상태를 완전히 해결하지는 않습니다. 탱커가 모은 뒤 안전한 중앙에서 사용합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65331,14 +65641,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cranekick_new.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/비취점화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -65360,14 +65674,14 @@
       "icon": "ability_monk_risingsunkick",
       "iconName": "ability_monk_risingsunkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 떠오르는 별 (Rising Star)",
+      "description": "해오름차기의 공격력을 15%, 치명타 피해를 10% 높입니다. 쉬엔의 전투장비와 함께 해오름차기의 피해 및 분노의 주먹 재사용에 관여합니다. 광역에서는 시즌 2 강화가 회전 학다리차기에 먼저 필요한지 확인합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65379,14 +65693,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_risingsunkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -65408,14 +65726,14 @@
       "icon": "ability_monk_tigerpalm",
       "iconName": "ability_monk_tigerpalm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 호랑이의 손길 (Touch of the Tiger)",
+      "description": "범의 장풍의 피해를 50% 높이는 지속 특성입니다. 기를 생성하는 장풍도 피해를 주지만, 기가 가득 찬 상태에서 핵심 기술보다 우선해 반복할 이유는 아닙니다. 같은 기술 연속 사용과 생성량 낭비를 함께 피합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65427,14 +65745,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerpalm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/특화-연계일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -68204,14 +68525,14 @@
       "icon": "ability_monk_touchofdeath",
       "iconName": "ability_monk_touchofdeath",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정점의 일격 (Meridian Strikes)",
+      "description": "절명의 손길 쿨다운을 45초 줄이고 피해를 15% 높입니다. 적의 체력과 보스 사용 조건을 만족해야 한다는 제한은 그대로입니다. 사용할 수 없는 보스 체력 구간에 필수 오프닝으로 넣지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68223,14 +68544,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_touchofdeath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/절명의손길"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.064,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -68351,14 +68674,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 단단한 밑창 (Hardened Soles)",
+      "description": "후려차기의 치명타 확률을 10%p, 치명타 피해를 18% 높입니다. 후려차기의 보조 피해를 강화하지만 분노의 주먹을 미루면서 반복 시전하라는 뜻은 아닙니다. 같은 기술 연속 사용에 따른 특화 손실을 계속 피합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68370,14 +68693,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/특화-연계일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -69886,14 +70212,14 @@
       "icon": "ability_monk_mightyoxkick",
       "iconName": "ability_monk_mightyoxkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영광의 여명 (Glory of the Dawn)",
+      "description": "해오름차기가 가속에 비례하는 확률로 추가 발동하고 기 1을 회복합니다. 확정적인 자원 수입이 아니므로 다음 분노의 주먹 비용을 항상 이 발동에 맡기지 않습니다. 실제 발생한 기를 보고 다음 생성기를 조절합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69905,14 +70231,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_mightyoxkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -69982,14 +70312,14 @@
       "icon": "ability_monk_chiexplosion",
       "iconName": "ability_monk_chiexplosion",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취 점화 (Jade Ignition)",
+      "description": "회전 학다리차기 사용이 8미터 내 적에게 자연 피해를 주는 기 폭발을 일으킵니다. 5명 초과 시 피해가 감소합니다. 예전 분노의 주먹 중첩을 쌓아 폭발시키는 설명 대신 현재 사용 시 발동 조건을 따릅니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70001,14 +70331,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chiexplosion.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -70030,14 +70362,14 @@
       "icon": "ability_monk_roundhousekick",
       "iconName": "ability_monk_roundhousekick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수련용 발보호대 (Shadowboxing Treads)",
+      "description": "후려차기 공격력을 5% 높이고 추가 대상 2명에게 80% 효율로 적중시킵니다. 소수 적을 상대하는 보조 광역 가치가 생기지만 회전 학다리차기의 세트 강화 소비를 대신하는 것은 아닙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70049,14 +70381,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -70078,14 +70413,14 @@
       "icon": "inv_hand_1h_artifactskywall_d_01",
       "iconName": "inv_hand_1h_artifactskywall_d_01",
       "school": "",
-      "cooldown": "40초",
+      "cooldown": "35초",
       "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "근접",
-      "description": "# 바람의 군주의 일격 (Strike of the Windlord)",
+      "resourceCost": "기 2",
+      "range": "전방 9미터",
+      "description": "전방에 피해와 6초간 50% 감속을 주는 기 2 소모 기술입니다. 기본 쿨다운은 35초이며 바람과의 교감이 있으면 5초 짧아집니다. 소용돌이 용의 주먹과 같은 선택 노드이므로 두 기술을 동시에 필수 시전 순서에 넣지 않습니다. 천신합일에서는 옥룡의 마음을 여는 기술입니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70097,16 +70432,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_hand_1h_artifactskywall_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/폭풍과대지와불"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/바람과의교감",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/천둥주먹"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.088,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -70128,14 +70466,14 @@
       "icon": "inv_hand_1h_artifactskywall_d_01",
       "iconName": "inv_hand_1h_artifactskywall_d_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천둥주먹 (Thunderfist)",
+      "description": "바람의 군주의 일격 또는 소용돌이 용의 주먹 사용이 기본 4중첩과 적중 대상별 추가 천둥주먹을 준비합니다. 이후 근접 공격이 자연 피해로 이를 소비합니다. 쿨기를 쓴 다음 적에게서 떨어져 자동 공격을 끊으면 후속 피해도 늦어집니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70147,18 +70485,75 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_hand_1h_artifactskywall_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/무인의민첩성"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.045,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\천둥주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "392986": {
+      "id": "392986",
+      "type": "hero-talent",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "쉬엔의 결속",
+      "koreanName": "쉬엔의 결속",
+      "englishName": "Xuen's Bond",
+      "icon": "ability_demonhunter_netherbond",
+      "iconName": "ability_demonhunter_netherbond",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "백호 쉬엔의 원령의 피해를 30% 높이고 쿨다운을 30초 줄여 기본 120초에서 90초로 만듭니다. 천신합일의 조화 복원과 선택 관계입니다. 장신구와 전투 길이에 맞는 선택이며 어느 한 주기를 모든 천신합일 빌드에 강제하지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_netherbond.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_netherbond.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_netherbond.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_netherbond.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_netherbond.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/조화복원"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Hero-Talents\\쉬엔의결속.md",
         "lastUpdate": ""
       }
     },
@@ -70228,14 +70623,14 @@
       "icon": "monk_stance_whitetiger",
       "iconName": "monk_stance_whitetiger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쉬엔의 전투장비 (Xuen's Battlegear)",
+      "description": "해오름차기의 치명타 확률을 20%p 높이며 치명타 적중은 분노의 주먹 쿨다운을 4초 줄입니다. 회전 학다리차기는 맞힌 적 하나당 0.5초, 최대 2.5초를 줄입니다. 해오름차기를 쓴 뒤 분노의 주먹이 다시 준비되었는지 확인하는 이유이며 질풍차기의 관련 연계도 따로 확인합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70247,14 +70642,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_whitetiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -71811,14 +72211,14 @@
       "icon": "ability_monk_jasmineforcetea",
       "iconName": "ability_monk_jasmineforcetea",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 평화 (Inner Peace)",
+      "description": "최대 기력을 30 늘리고 범의 장풍의 기력 비용을 5 줄입니다. 풍운의 기본 장풍 비용은 전문화 보정을 반영하면 60이므로 이 특성이 있으면 55입니다. 툴팁의 공통 기본 비용 50을 양조·풍운에 동일하게 적용하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -71830,14 +72230,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_jasmineforcetea.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/기세등등"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -81381,12 +81785,63 @@
         "lastUpdate": ""
       }
     },
+    "432180": {
+      "id": "432180",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "바람의 춤",
+      "koreanName": "바람의 춤",
+      "englishName": "Dance of the Wind",
+      "icon": "ability_monk_dematerialize",
+      "iconName": "ability_monk_dematerialize",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "풍운 바람의 춤에서 쌓이는 물리 피해 감소 중첩입니다. 물리 공격을 받으면 누적 효과를 잃으므로 전투 내내 최대 감소가 고정되는 것으로 계산하지 않습니다. 기본 10% 감소와 누적 부분을 구분합니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dematerialize.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_dematerialize.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_dematerialize.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_dematerialize.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dematerialize.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Talents/바람의춤"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\바람의춤.md",
+        "lastUpdate": ""
+      }
+    },
     "432181": {
       "id": "432181",
       "type": "talent",
       "class": "Monk",
-      "spec": "운무",
+      "spec": "공용",
       "specs": [
+        "Windwalker",
         "Mistweaver"
       ],
       "name": "바람의 춤",
@@ -81399,7 +81854,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람의 춤 (Dance of the Wind)",
+      "description": "12.1 풍운·운무의 바람의 춤입니다. 받는 물리 피해를 10% 줄이고 물리 공격을 받기 전까지 4초마다 추가 감소가 최대 4중첩 쌓입니다. 양조의 회피 5% 노드 414132와 다른 ID이며 마법 피해까지 줄이는 효과가 아닙니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -81414,20 +81869,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dematerialize.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Talents/안정의존재"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.012,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\바람의춤.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Talents\\바람의춤.md",
         "lastUpdate": ""
       }
     },
@@ -87972,14 +88427,14 @@
       "icon": "ability_monk_dpsstance",
       "iconName": "ability_monk_dpsstance",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쉬엔의 인도 (Xuen's Guidance)",
+      "description": "수도원의 가르침을 소비할 때 15% 확률로 충전을 돌려받으며 범의 장풍 피해가 10% 증가합니다. 확률 환급이므로 매번 중첩을 되돌려 받는다고 가정하지 않습니다. 풍운은 가르침 최대치만 채우기보다 주요 쿨기를 먼저 봅니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87991,14 +88446,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dpsstance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.061,
         "hasWikilinks": true
       },
       "source": {
@@ -88076,14 +88536,14 @@
       "icon": "ability_monk_chiexplosion",
       "iconName": "ability_monk_chiexplosion",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 조화 복원 (Restore Balance)",
+      "description": "풍운은 쉬엔이 활성화된 동안 공격력이 5% 증가하고, 운무는 츠지 또는 위론이 활성화된 동안 치유량이 5% 증가합니다. 풍운에서는 쉬엔의 결속과 선택 관계이므로 90초 소환 주기와 이 5% 효과를 동시에 기본값으로 쓰지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88095,14 +88555,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chiexplosion.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Hero-Talents/쉬엔의결속"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -88176,14 +88640,14 @@
       "icon": "ability_monk_provoke",
       "iconName": "ability_monk_provoke",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사원 훈련 (Temple Training)",
+      "description": "풍운에서는 분노의 주먹과 회전 학다리차기 피해가 30% 증가합니다. 운무에서는 포용의 안개·생기 충전·셰이룬의 선물 치유가 6% 증가합니다. 12.1 풍운의 상향을 운무 치유 수치에 복사하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88195,14 +88659,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -88225,14 +88692,14 @@
       "icon": "ability_monk_chargingoxwave",
       "iconName": "ability_monk_chargingoxwave",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 니우짜오의 보호 (Niuzao's Protection)",
+      "description": "강화주 사용이 최대 생명력 25%에 해당하는 보호막도 줍니다. 강화주의 체력 증가·피해 감소와 별개인 흡수 효과입니다. 풍운과 운무가 사용하는 천신합일 계열 방어 선택이며 시전 버튼은 강화주입니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88244,14 +88711,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chargingoxwave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -88317,9 +88786,10 @@
       "id": "443028",
       "type": "atomic-skill",
       "class": "Monk",
-      "spec": "운무",
+      "spec": "공용",
       "specs": [
-        "Mistweaver"
+        "Mistweaver",
+        "Windwalker"
       ],
       "name": "천신합일",
       "koreanName": "천신합일",
@@ -88327,14 +88797,14 @@
       "icon": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
       "iconName": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
       "school": "",
-      "cooldown": "1.5분",
-      "castTime": "정신 집중",
-      "resourceCost": "없음",
+      "cooldown": "풍운: 쉬엔 이후 60초 내 / 운무: 90초",
+      "castTime": "4초 채널 · 이동 가능",
+      "resourceCost": "풍운: 없음 / 운무: 기본 마나 5%",
       "range": "",
-      "description": "# 천신합일 (Celestial Conduit)",
+      "description": "천신합일의 실제 4초 채널 기술입니다. 풍운은 백호 쉬엔의 원령 후 1분 안에 사용하는 조건부 버튼이며 독립 90초 쿨다운이 아닙니다. 운무는 기본 90초 쿨다운의 치유 기술입니다. 채널 중 이동할 수 있지만 다른 공격·치유 주문은 이를 끊으므로 풍운의 짧은 사용과 운무의 치유 채널을 구분합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88347,20 +88817,23 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활",
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치"
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령"
         ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Hero-Talents/천신합일-선행조건",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/내면의단결",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 2,
-        "linkDensity": 0.087,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Skills\\천신합일.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\천신합일.md",
         "lastUpdate": ""
       }
     },
@@ -88379,14 +88852,14 @@
       "icon": "ability_monk_jadeserpentbreath",
       "iconName": "ability_monk_jadeserpentbreath",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취 성역 (Jade Sanctuary)",
+      "description": "천신합일 활성화 때 최대 생명력 10%를 즉시 회복하고 채널 동안 받는 피해를 15% 줄입니다. 피해 감소는 종료 뒤 8초 더 이어집니다. 천신합일을 짧게 끝내도 이 후속 방어 시간을 별도로 확인합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88398,14 +88871,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_jadeserpentbreath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -88428,14 +88903,14 @@
       "icon": "ability_monk_summontigerstatue",
       "iconName": "ability_monk_summontigerstatue",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 백호의 용기 (Courage of the White Tiger)",
+      "description": "풍운은 범의 장풍으로 쉬엔의 공격 지원이 발생할 수 있고 지원 피해의 25%가 주변 치유가 됩니다. 운무는 범의 장풍·생기 충전·셰이룬의 선물이 조건이며 치유 비율이 100%입니다. 각 전문화 천신 소환 뒤 확정 지원 조건을 따로 적용합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88447,14 +88922,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summontigerstatue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/흑우의힘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -88477,14 +88957,14 @@
       "icon": "ability_monk_chargingoxwave",
       "iconName": "ability_monk_chargingoxwave",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 흑우의 힘 (Strength of the Black Ox)",
+      "description": "풍운은 쉬엔의 지원 뒤 다음 후려차기가 수도원의 가르침 2중첩을 되돌리고 적 위치에 니우짜오 광역 피해를 발생시킵니다. 운무는 다음 포용의 안개 시전 시간이 50% 줄고 주변 아군 5명에게 보호막을 줍니다. 툴팁의 보호막 0은 캐릭터 수치 미계산이므로 실제 흡수량이 아닙니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88496,14 +88976,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chargingoxwave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/백호의용기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/선조의쇄도"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -88526,14 +89013,14 @@
       "icon": "inv_pet_cranegod",
       "iconName": "inv_pet_cranegod",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 주학의 비행 (Flight of the Red Crane)",
+      "description": "풍운은 회전 학다리차기로 츠지의 공격 지원과 일시적 자원 회복 지원이 발생할 수 있습니다. 운무는 해당 광역 기술로 마나 차 중첩과 아군 치유 지원을 받습니다. 옛 풍운 비취 돌풍 버튼을 현행 오프닝에 추가하는 근거로 쓰지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88545,14 +89032,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -88575,14 +89064,14 @@
       "icon": "ability_monk_dragonkick",
       "iconName": "ability_monk_dragonkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 옥룡의 마음 (Heart of the Jade Serpent)",
+      "description": "풍운은 바람의 군주의 일격 또는 소용돌이 용의 주먹으로 8초 동안 주요 기술의 쿨다운 회복 속도가 75% 증가하고 분노의 주먹 채널이 50% 짧아집니다. 운무는 집중의 천둥 차가 소생의 안개·해오름차기·기의 고치·집중의 천둥 차 회복을 가속합니다. 회복 속도 증가를 남은 쿨다운 75% 즉시 삭제로 계산하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88594,14 +89083,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dragonkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.077,
         "hasWikilinks": true
       },
       "source": {
@@ -88655,6 +89148,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\정기의반향.md",
+        "lastUpdate": ""
+      }
+    },
+    "443421": {
+      "id": "443421",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "옥룡의 마음",
+      "koreanName": "옥룡의 마음",
+      "englishName": "Heart of the Jade Serpent",
+      "icon": "ability_monk_summonserpentstatue",
+      "iconName": "ability_monk_summonserpentstatue",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "바람의 군주의 일격 또는 소용돌이 용의 주먹으로 발생하는 옥룡의 마음입니다. 8초 동안 관련 기술의 쿨다운 회복 속도를 75% 높이고 분노의 주먹 채널을 50% 짧게 합니다. 천신합일의 내면의 단결 버전과 중복시키지 않고 등선의 위론의 화신 버전과는 겹쳐 활용할 수 있습니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_summonserpentstatue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_summonserpentstatue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_summonserpentstatue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.071,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\옥룡의마음-일반.md",
         "lastUpdate": ""
       }
     },
@@ -89310,14 +89856,14 @@
       "icon": "inv_shoulder_leather_raidmonkemerald_d_01",
       "iconName": "inv_shoulder_leather_raidmonkemerald_d_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 츠지의 날렵함 (Chi-Ji's Swiftness)",
+      "description": "천신합일 채널 중 이동 속도를 75% 높이고 천신의 도움 뒤 3초 동안 이동 속도가 15% 증가합니다. 이동할 수 있다는 것과 다른 주문을 채널 중 자유롭게 쓸 수 있다는 것은 다릅니다. 이동 경로와 채널 종료를 따로 관리합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89329,14 +89875,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_leather_raidmonkemerald_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -89359,14 +89907,14 @@
       "icon": "inv_10_dungeonjewelry_explorer_trinket_1compass_color2",
       "iconName": "inv_10_dungeonjewelry_explorer_trinket_1compass_color2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 나침반 (Inner Compass)",
+      "description": "8초마다 태세가 바뀌며 해당 보조 능력치가 2% 증가합니다. 태학지세는 가속, 맹호지세는 치명타, 건우지세는 유연성, 현룡지세는 특화입니다. 태세 하나만 기다리느라 주요 쿨기 사용 횟수를 잃지 않습니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89378,14 +89926,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_explorer_trinket_1compass_color2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -89408,14 +89958,14 @@
       "icon": "ability_monk_prideofthetiger",
       "iconName": "ability_monk_prideofthetiger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내면의 단결 (Unity Within)",
+      "description": "천신합일 중 재사용하여 천신 넷의 도움을 200% 효율로 받게 합니다. 끝까지 재사용하지 않으면 종료 때 자동 발동합니다. 풍운은 이 효과의 강화된 옥룡의 마음을 얻은 뒤 공격으로 전환하는 운용을 사용하며 운무의 치유 목적 채널과 구분합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89427,18 +89977,72 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_prideofthetiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Hero-Talents\\내면의단결.md",
+        "lastUpdate": ""
+      }
+    },
+    "443616": {
+      "id": "443616",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "옥룡의 마음",
+      "koreanName": "옥룡의 마음",
+      "englishName": "Heart of the Jade Serpent",
+      "icon": "ability_monk_summonserpentstatue",
+      "iconName": "ability_monk_summonserpentstatue",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "천신합일의 내면의 단결가 호출하는 강화된 옥룡의 마음입니다. 고정 12.1 주문 데이터의 쿨다운 회복 속도 증가는 150%, 지속은 8초입니다. 일반 옥룡의 마음과 중복되지 않으므로 일반 효과가 끝난 뒤 이어 쓰고, 등선에서 오는 별도 위론의 화신 효과와 구분합니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_summonserpentstatue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_summonserpentstatue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_summonserpentstatue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/내면의단결"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\옥룡의마음-천신합일.md",
         "lastUpdate": ""
       }
     },
@@ -89457,14 +90061,14 @@
       "icon": "inv_jewelcrafting_jadeserpent",
       "iconName": "inv_jewelcrafting_jadeserpent",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위론의 지식 (Yu'lon's Knowledge)",
+      "description": "해오름차기 피해가 15% 증가합니다. 풍운에서는 질풍차기의 대체 연계와 주요 쿨다운 회전을 함께 봅니다. 피해 증가만으로 광역의 끊임없는 박자를 회전 학다리차기 대신 소비하라는 뜻은 아닙니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89476,14 +90080,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_jadeserpent.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -94443,14 +95050,14 @@
       "icon": "inv_ability_shadopanmonk_flurrystrikes",
       "iconName": "inv_ability_shadopanmonk_flurrystrikes",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 질풍격 (Flurry Strikes)",
+      "range": "자신 또는 효과 대상",
+      "description": "자동 공격에서 질풍격 충전 1~2개가 생긴다. 양조는 맥주통 휘두르기, 풍운은 분노의 주먹을 사용하여 충전을 모두 방출한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94462,14 +95069,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_shadopanmonk_flurrystrikes.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/일대다전투",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/장벽의지혜",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/전장을호령하는그림자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.066,
         "hasWikilinks": true
       },
       "source": {
@@ -94941,14 +95554,14 @@
       "icon": "inv_staff_2h_pandarenmonk_c_01",
       "iconName": "inv_staff_2h_pandarenmonk_c_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 판다리아의 긍지 (Pride of Pandaria)",
+      "range": "자신 또는 효과 대상",
+      "description": "질풍격의 치명타 확률을 15% 추가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94962,12 +95575,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/일대다전투"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -94990,14 +95606,14 @@
       "icon": "ability_monk_powerstrikes",
       "iconName": "ability_monk_powerstrikes",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 내가중수법 (High Impact)",
+      "range": "자신 또는 효과 대상",
+      "description": "질풍격에 맞은 적이 10초 안에 죽으면 8미터 내 군중 제어 중이 아닌 적에게 물리 폭발 피해를 준다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95011,12 +95627,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/전장을호령하는그림자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -95039,14 +95658,14 @@
       "icon": "achievement_legionpvp6tier1",
       "iconName": "achievement_legionpvp6tier1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 고난과 역경을 넘어 (Against All Odds)",
+      "range": "자신 또는 효과 대상",
+      "description": "민첩성을 4% 높이는 음영파 지속 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95058,14 +95677,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_legionpvp6tier1.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/시간차"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -95088,14 +95711,14 @@
       "icon": "ability_monk_provoke",
       "iconName": "ability_monk_provoke",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 고수의 시선 (Veteran's Eye)",
+      "range": "자신 또는 효과 대상",
+      "description": "가속을 5% 높이는 음영파 지속 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95107,14 +95730,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -95137,14 +95764,14 @@
       "icon": "ability_monk_chargingoxwave",
       "iconName": "ability_monk_chargingoxwave",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 일대다 전투 (One Versus Many)",
+      "range": "자신 또는 효과 대상",
+      "description": "자동 공격 치명타가 질풍격 충전을 두 배로 만든다. 추가로 양조의 맥주통 휘두르기 피해는 35%, 풍운의 분노의 주먹 피해는 50% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95156,14 +95783,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chargingoxwave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/판다리아의긍지"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -95186,14 +95818,14 @@
       "icon": "inv_fistofthewhitetiger",
       "iconName": "inv_fistofthewhitetiger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 효율적인 수련 (Efficient Training)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조의 기력 소비 기술 피해를 20% 높이고 니우짜오 재사용 대기시간을 25초 줄인다. 풍운은 각각 40%와 등선 10초 감소다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95205,14 +95837,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_fistofthewhitetiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -95235,14 +95871,14 @@
       "icon": "ability_monk_jab",
       "iconName": "ability_monk_jab",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 무예의 정밀함 (Martial Precision)",
+      "range": "자신 또는 효과 대상",
+      "description": "공격이 대상 방어도의 12%를 관통한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95254,14 +95890,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_jab.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/전장을호령하는그림자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.08,
         "hasWikilinks": true
       },
       "source": {
@@ -95284,14 +95926,14 @@
       "icon": "ability_whirlwind",
       "iconName": "ability_whirlwind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 무쇠 회오리 (Whirling Steel)",
+      "range": "자신 또는 효과 대상",
+      "description": "생명력이 50% 아래로 떨어지면 6초 동안 무기 막기와 광역회피가 15% 증가한다. 다시 발동하려면 180초가 필요하다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95303,14 +95945,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_whirlwind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/예측훈련"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -95333,14 +95979,14 @@
       "icon": "ability_monk_domeofmist",
       "iconName": "ability_monk_domeofmist",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 예측 훈련 (Predictive Training)",
+      "range": "자신 또는 효과 대상",
+      "description": "회피 또는 무기 막기에 성공하면 6초 동안 받는 피해가 줄어든다. 양조는 8%, 풍운은 10%다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95352,14 +95998,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_domeofmist.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/교묘한투사",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/무쇠회오리"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -95382,14 +96033,14 @@
       "icon": "ability_rogue_masterofsubtlety",
       "iconName": "ability_rogue_masterofsubtlety",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 철두철미한 경계 (Vigilant Watch)",
+      "range": "자신 또는 효과 대상",
+      "description": "후려차기의 치명타 피해가 30% 추가된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95401,14 +96052,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_masterofsubtlety.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -95971,14 +96627,14 @@
       "icon": "inv_belt_leather_raidmonk_n_01",
       "iconName": "inv_belt_leather_raidmonk_n_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 여세몰이 (Momentum Boost)",
+      "description": "분노의 주먹 피해가 가속에 따라 증가하고 같은 채널의 타격이 진행될수록 추가 피해가 붙습니다. 채널 종료 후 8초 동안 자동 공격 속도가 60% 높아집니다. 후반 타격과 후속 자동 공격을 모두 놓치므로 다른 공격을 일찍 눌러 채널을 끊지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95990,14 +96646,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_raidmonk_n_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/이중위협"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -96124,14 +96786,14 @@
       "icon": "inv_staff_2h_artifactmonkeyking_d_03",
       "iconName": "inv_staff_2h_artifactmonkeyking_d_03",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 싸움꾼의 전력 (Brawler's Intensity)",
+      "description": "해오름차기의 기본 쿨다운을 1초 줄이고 후려차기 공격력을 12% 높입니다. 가속과 다른 쿨다운 회복 효과 때문에 전투 중 실제 간격은 고정 9초가 아닙니다. 초기화와 분노의 주먹 재사용 상태를 함께 봅니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96143,14 +96805,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_artifactmonkeyking_d_03.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -96172,14 +96837,14 @@
       "icon": "ability_monk_blackoutstrike",
       "iconName": "ability_monk_blackoutstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭발하는 기운 (Energy Burst)",
+      "description": "후려차기!를 소모하면 기 1을 생성합니다. 무료 발동을 쓰는 것이 비용 면제에 그치지 않고 다음 핵심 기술의 기 확보로 이어집니다. 등선과 칠흑 나선이 겹치는 동안에는 과잉 생성도 확인합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96191,14 +96856,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_blackoutstrike.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -96220,14 +96889,14 @@
       "icon": "ability_monk_sparring",
       "iconName": "ability_monk_sparring",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 순차 타격 (Sequenced Strikes)",
+      "description": "츠지의 춤을 소모하면 후려차기!를 얻습니다. 무료 회전 학다리차기 다음에 무료 후려차기가 이어질 수 있으므로 발동 한 개만 보지 말고 두 버프를 함께 확인합니다. 발동 자체는 별도 시전 기술이 아닙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96239,14 +96908,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_sparring.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.078,
         "hasWikilinks": true
       },
       "source": {
@@ -96268,14 +96940,14 @@
       "icon": "inv_glove_leather_pvpmonk_f_01",
       "iconName": "inv_glove_leather_pvpmonk_f_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 부서진 사원의 지식 (Knowledge of the Broken Temple)",
+      "description": "바람의 군주의 일격 또는 소용돌이 용의 주먹을 쓰면 수도원의 가르침 4중첩을 얻고, 가르침 최대 중첩이 8로 늘어납니다. 후속 후려차기의 추가 타격을 준비하는 효과입니다. 두 선택 기술을 동시에 가져오거나 8중첩을 만들려고 장풍만 반복하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96287,14 +96959,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_pvpmonk_f_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.065,
         "hasWikilinks": true
       },
       "source": {
@@ -96365,14 +97043,14 @@
       "icon": "ability_skyreach_four_wind",
       "iconName": "ability_skyreach_four_wind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람과의 교감 (Communion With Wind)",
+      "description": "바람의 군주의 일격 또는 소용돌이 용의 주먹의 기본 35초 쿨다운을 5초 줄이고 공격력을 20% 높입니다. 두 기술은 선택 노드의 대안이므로 실제 선택한 한 기술에 적용합니다. 천신합일에서는 옥룡의 마음을 여는 주기도 달라집니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96384,14 +97062,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_four_wind.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -96413,14 +97096,14 @@
       "icon": "ability_monk_standingkick",
       "iconName": "ability_monk_standingkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 이중 위협 (Dual Threat)",
+      "description": "자동 공격이 30% 확률로 추가 발차기를 발동시키며 양손 무기 사용 시 피해가 증가합니다. 공격 속도와 근접 접촉 시간에 영향을 받는 자동 효과입니다. 12.1에서 피해가 상향되었어도 무기 비교는 아이템 레벨과 전체 장비를 포함해 판단합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96433,13 +97116,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/무인의민첩성",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/여세몰이"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -96563,14 +97249,14 @@
       "icon": "monk_stance_whitetiger",
       "iconName": "monk_stance_whitetiger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쉬엔의 질풍 (Flurry of Xuen)",
+      "description": "주문과 능력 사용 시 일정 확률로 전방 부채꼴에 자동 연속 타격이 발생합니다. 백호 쉬엔의 원령 사용도 이 효과를 발동시킵니다. 쉬엔 소환은 천신합일 선택에 따른 별도 버튼이므로 음영파에 강제로 추가하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96582,14 +97268,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_whitetiger.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -99460,14 +100148,14 @@
       "icon": "ability_mount_goatmountwhite",
       "iconName": "ability_mount_goatmountwhite",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수도원의 기억 (Memory of the Monastery)",
+      "description": "범의 장풍의 공격력을 30% 높이고 후려차기! 발동 확률을 상대적으로 75% 늘립니다. 기본 8%를 75%p 더하는 효과가 아닙니다. 무료 발동이 늘면 이를 써야 하지만 다음 분노의 주먹 기를 장풍 반복으로 과하게 채울 필요는 없습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99479,14 +100167,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_goatmountwhite.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/강제연계"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -101553,14 +102245,14 @@
       "icon": "inv_ability_monk_jadefirestomp",
       "iconName": "inv_ability_monk_jadefirestomp",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취불꽃 진각 (Jadefire Stomp)",
+      "description": "분노의 주먹 채널이 끝날 때 자동으로 비취불꽃 진각을 내질러 전방 최대 5명에게 피해를 주고 3초간 이동 속도를 20% 높입니다. 예전 바닥 설치형 활성 기술과 다릅니다. 차트의 별도 시전 버튼이 아니라 분노의 주먹 후속 효과로 표시합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101572,14 +102264,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -104639,9 +105333,10 @@
       "id": "467307",
       "type": "atomic-skill",
       "class": "Monk",
-      "spec": "운무",
+      "spec": "공용",
       "specs": [
-        "Mistweaver"
+        "Mistweaver",
+        "Windwalker"
       ],
       "name": "질풍차기",
       "koreanName": "질풍차기",
@@ -104649,11 +105344,11 @@
       "icon": "inv12_ability_monk_rushingwindkick",
       "iconName": "inv12_ability_monk_rushingwindkick",
       "school": "",
-      "cooldown": "10초",
+      "cooldown": "10초 · 특성별 보정",
       "castTime": "즉시",
-      "resourceCost": "기본 마나 1.25%",
+      "resourceCost": "풍운: 기 2 / 운무: 기본 마나 1.25%",
       "range": "전방 25미터",
-      "description": "# 질풍차기 (Rushing Wind Kick)",
+      "description": "해오름차기를 대체하는 전방 25미터 자연 피해 기술입니다. 풍운은 후려차기! 소비 후 질풍차기 특성의 발동으로 준비되며 기 2를 사용합니다. 운무는 기본 마나 1.25%를 쓰고 자신의 지속 치유 효과가 있는 아군 최대 5명을 치유합니다. 두 전문화의 발동·세트 조건과 비용을 서로 복사하지 않습니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -104669,24 +105364,21 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/07-수도사/운무/Talents/비취불꽃의가르침"
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
         ],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
-        ]
+        "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.054,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Skills\\질풍차기.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\공용\\Skills\\질풍차기.md",
         "lastUpdate": ""
       }
     },
@@ -107994,14 +108686,14 @@
       "icon": "ability_skyreach_wind_wall",
       "iconName": "ability_skyreach_wind_wall",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "30초",
+      "castTime": "최대 1.4초 충전",
+      "resourceCost": "기 2",
       "range": "",
-      "description": "# 날카로운 바람 (Slicing Winds)",
+      "description": "기를 소모해 전방으로 돌진하며 경로상의 적에게 자연 피해를 주는 선택 기술입니다. 길게 누르면 이동 거리가 늘고, 5명을 넘으면 피해가 감소합니다. 핵심 쿨기를 밀면서 충전하지 말고 안전한 이동 경로가 있을 때 사용합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108014,15 +108706,15 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.093,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -109919,6 +110611,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\영혼구체자.md",
+        "lastUpdate": ""
+      }
+    },
+    "1238904": {
+      "id": "1238904",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "옥룡의 마음",
+      "koreanName": "옥룡의 마음",
+      "englishName": "Heart of the Jade Serpent",
+      "icon": "ability_monk_summonserpentstatue",
+      "iconName": "ability_monk_summonserpentstatue",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "위론의 화신을 선택하면 등선이 제공하는 별도 옥룡의 마음입니다. 특성 조건에 의해 4초 동안 100% 효율의 옥룡의 마음을 주며 일반 버전 또는 천신합일 버전과 중복 가능합니다. 기본 툴팁의 8초 설명을 그대로 실제 지속시간으로 쓰지 않습니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_summonserpentstatue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_summonserpentstatue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_summonserpentstatue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_summonserpentstatue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/위론의화신"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.067,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\옥룡의마음-등선.md",
         "lastUpdate": ""
       }
     },
@@ -114885,14 +115629,14 @@
       "icon": "inv_1115_warrior_kick",
       "iconName": "inv_1115_warrior_kick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 하늘불꽃 찍기 (Skyfire Heel)",
+      "description": "주위 적 하나당 해오름차기의 치명타 확률을 4%p씩 최대 5명까지 높입니다. 해오름차기 피해의 10%를 주위에 퍼뜨리고 5명 초과 시 피해가 감소합니다. 광역에서도 해오름차기를 완전히 빼지 않는 이유 중 하나지만 시즌 2 강화 소비는 별도로 판단합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114904,14 +115648,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_kick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -115222,6 +115970,110 @@
         "lastUpdate": ""
       }
     },
+    "1248989": {
+      "id": "1248989",
+      "type": "hero-talent",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "천신합일",
+      "koreanName": "천신합일",
+      "englishName": "Celestial Conduit",
+      "icon": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
+      "iconName": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "백호 쉬엔의 원령을 소환한 뒤 1분 안에 천신합일을 쓸 수 있게 하는 풍운 영웅 특성입니다. 실제 시전 ID 443028 및 준비 버프 1248992와 구분합니다. 운무의 독립 90초 쿨다운을 풍운에 복사하지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Hero-Talents\\천신합일-선행조건.md",
+        "lastUpdate": ""
+      }
+    },
+    "1248992": {
+      "id": "1248992",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "천신합일",
+      "koreanName": "천신합일",
+      "englishName": "Celestial Conduit",
+      "icon": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
+      "iconName": "inv_ability_conduitofthecelestialsmonk_celestialconduit",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "백호 쉬엔의 원령 이후 60초 안에 천신합일을 사용할 수 있는 준비 상태입니다. 바로 소비할 의무는 없으며 소용돌이 용의 주먹 또는 바람의 군주의 일격이 제공한 옥룡의 마음과 겹치지 않게 후속 사용을 계획합니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_conduitofthecelestialsmonk_celestialconduit.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Hero-Talents/천신합일-선행조건",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.061,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\천신합일-준비.md",
+        "lastUpdate": ""
+      }
+    },
     "1249190": {
       "id": "1249190",
       "type": "hero-talent",
@@ -115481,14 +116333,14 @@
       "icon": "inv_ability_monk_weaponsoforder",
       "iconName": "inv_ability_monk_weaponsoforder",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "90초 · 2충전",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "# 등선 (Zenith)",
+      "description": "기 소모량을 1 줄이고 후려차기의 관련 쿨다운 감소를 추가로 1초 늘리는 15초 강화기입니다. 기본 충전은 2회, 기본 회복은 90초이며 해오름차기를 초기화합니다. 정점의 발구르기를 선택해야 시작 시 광역 피해와 기 2 생성이 붙고, 호안주 마지막 노드가 있어야 추가 발구르기 2회를 얻습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115501,15 +116353,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/날카로운바람"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/정점의발구르기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.094,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.082,
         "hasWikilinks": true
       },
       "source": {
@@ -115584,14 +116441,14 @@
       "icon": "ability_monk_spherediscord",
       "iconName": "ability_monk_spherediscord",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 칠흑 나선 (Obsidian Spiral)",
+      "description": "등선 중 후려차기가 기 1을 생성하도록 합니다. 등선의 기 비용 감소와 결합해 기본 소모기가 생성기로 바뀝니다. 이때 장풍을 평소처럼 많이 누르면 기가 넘치므로 무료 후려차기와 남은 발구르기를 먼저 확인합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115603,14 +116460,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_spherediscord.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -115632,14 +116493,14 @@
       "icon": "ability_monk_serenity",
       "iconName": "ability_monk_serenity",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 조화로운 연계 (Harmonic Combo)",
+      "description": "분노의 주먹의 기 비용을 1 줄이는 대신 피해가 10% 감소합니다. 등선 비용 감소와 함께 실제 비용이 달라지므로 공통 기 3 문구를 모든 빌드에 강제하지 않습니다. 채널을 더 자주 쓸 수 있는지와 손실되는 피해를 함께 비교합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115651,14 +116512,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_serenity.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -115954,6 +116818,58 @@
         "lastUpdate": ""
       }
     },
+    "1250554": {
+      "id": "1250554",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "질풍차기",
+      "koreanName": "질풍차기",
+      "englishName": "Rushing Wind Kick",
+      "icon": "inv12_ability_monk_rushingwindkick",
+      "iconName": "inv12_ability_monk_rushingwindkick",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "후려차기! 소비 후 해오름차기를 질풍차기로 대체하는 준비 효과입니다. 풍운 질풍차기 특성의 60% 확률 조건으로 발생합니다. 피해 기술은 467307이며 소모 비용은 기입니다. 운무의 지속 치유 대상 조건과 섞지 않습니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_monk_rushingwindkick.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_monk_rushingwindkick.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_monk_rushingwindkick.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_monk_rushingwindkick.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_monk_rushingwindkick.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.065,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\질풍차기-준비.md",
+        "lastUpdate": ""
+      }
+    },
     "1250566": {
       "id": "1250566",
       "type": "talent",
@@ -115968,14 +116884,14 @@
       "icon": "inv12_ability_monk_rushingwindkick",
       "iconName": "inv12_ability_monk_rushingwindkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 질풍차기 (Rushing Wind Kick)",
+      "description": "후려차기!를 소비하면 60% 확률로 해오름차기 버튼이 질풍차기로 바뀌도록 하는 풍운 특성입니다. 준비 버프는 1250554, 실제 질풍차기는 467307입니다. 운무의 마나 비용이나 아군 치유를 풍운 효과로 옮기지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115987,14 +116903,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_monk_rushingwindkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -123310,6 +124228,162 @@
         "lastUpdate": ""
       }
     },
+    "1261703": {
+      "id": "1261703",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "호안주",
+      "koreanName": "호안주",
+      "englishName": "Tigereye Brew",
+      "icon": "inv12_apextalent_monk_tigereyebrew",
+      "iconName": "inv12_apextalent_monk_tigereyebrew",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "기를 3 소모할 때마다 호안주 중첩을 만들고 등선이 최대 20중첩을 소비하여 중첩당 치명타 확률 1%p를 제공합니다. 중첩은 최대 30이며 비전투 중 10까지 빠르게 회복합니다. 무료·할인된 기술도 기본 기 비용 기준으로 중첩을 만드는 구현이므로 자원 바에서 빠진 기만 합산하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_monk_tigereyebrew.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_monk_tigereyebrew.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_monk_tigereyebrew.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-중간노드",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.069,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\호안주-첫노드.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261724": {
+      "id": "1261724",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "호안주",
+      "koreanName": "호안주",
+      "englishName": "Tigereye Brew",
+      "icon": "inv12_apextalent_monk_tigereyebrew",
+      "iconName": "inv12_apextalent_monk_tigereyebrew",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "등선에 소비할 호안주 중첩입니다. 기본 기 비용 3당 중첩이 생기고 비전투 중 10까지 빠르게 회복합니다. 최대 30을 보유하지만 등선 한 번은 최대 20만 소비합니다. 중첩을 채우려고 등선 두 충전을 오랫동안 방치하지 않습니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_monk_tigereyebrew.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_monk_tigereyebrew.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_monk_tigereyebrew.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\호안주-중첩.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261844": {
+      "id": "1261844",
+      "type": "talent",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "호안주",
+      "koreanName": "호안주",
+      "englishName": "Tigereye Brew",
+      "icon": "inv12_apextalent_monk_tigereyebrew",
+      "iconName": "inv12_apextalent_monk_tigereyebrew",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "호안주 중간 2단계 노드로 치명타 피해를 단계당 5%, 두 단계에서 10% 높입니다. 12.1 이전 10/20%와 다릅니다. 호안주 중첩당 치명타 확률 증가 및 마지막 노드의 추가 발구르기와 효과를 나누어 기록합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_apextalent_monk_tigereyebrew.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_apextalent_monk_tigereyebrew.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_monk_tigereyebrew.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\호안주-중간노드.md",
+        "lastUpdate": ""
+      }
+    },
     "1261849": {
       "id": "1261849",
       "type": "talent",
@@ -123324,14 +124398,14 @@
       "icon": "inv12_apextalent_monk_tigereyebrew",
       "iconName": "inv12_apextalent_monk_tigereyebrew",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 호안주 (Tigereye Brew)",
+      "description": "호안주 정점 특성의 마지막 노드입니다. 등선 중 정점의 발구르기를 추가로 2회 쓸 수 있게 합니다. 추가 사용은 등선 종료 전에 소모해야 하며 각 사용이 기 2를 생성합니다. 호안주 중첩 생성과 치명타 증가를 이 마지막 노드 하나의 효과로 합치지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123343,14 +124417,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_apextalent_monk_tigereyebrew.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-중간노드"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.055,
+        "synergyCount": 4,
+        "linkDensity": 0.068,
         "hasWikilinks": true
       },
       "source": {
@@ -123771,14 +124851,14 @@
       "icon": "ability_monk_sparring",
       "iconName": "ability_monk_sparring",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 대기 준비 (Stand Ready)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조가 니우짜오, 풍운이 등선을 사용하면 질풍격 10중첩을 즉시 준비하여 다음 공격에서 70% 효율로 발동시킨다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123790,14 +124870,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_sparring.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -123820,14 +124904,14 @@
       "icon": "misc_legionfall_monk",
       "iconName": "misc_legionfall_monk",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 장벽의 무기 (Weapons of the Wall)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조 니우짜오의 발구르기, 풍운 등선의 발구르기 피해를 20% 높인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123839,14 +124923,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/misc_legionfall_monk.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/후려차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -123869,14 +124956,14 @@
       "icon": "inv_elemental_primal_shadow",
       "iconName": "inv_elemental_primal_shadow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 전장을 호령하는 그림자 (Shado Over the Battlefield)",
+      "range": "자신 또는 효과 대상",
+      "description": "질풍격에 6미터 내 추가 자연 피해를 붙이며 8명을 초과하면 효과가 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123889,13 +124976,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/생기의불길"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/내가중수법"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
@@ -124062,14 +125154,14 @@
       "icon": "inv_celestialserpentmount_jade",
       "iconName": "inv_celestialserpentmount_jade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위론의 화신 (Yu'lon's Avatar)",
+      "description": "풍운은 등선 사용 후 4초 동안 100% 효율의 옥룡의 마음을 얻습니다. 운무는 생기 충전·셰이룬의 선물 사용 시 확률적으로 같은 4초 효과를 얻습니다. 풍운에서 이 효과는 일반 또는 천신합일 옥룡의 마음과 겹칠 수 있는 별도 버전입니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124081,14 +125173,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_celestialserpentmount_jade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.055,
         "hasWikilinks": true
       },
       "source": {
@@ -124111,14 +125207,14 @@
       "icon": "ability_monk_flyingdragonkick",
       "iconName": "ability_monk_flyingdragonkick",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 흐르는 지혜 (Flowing Wisdom)",
+      "description": "옥룡의 마음이 활성화된 동안 가속이 10% 증가합니다. 관련 기술 쿨다운 회복 증가 및 분노의 주먹 채널 단축과 별개의 효과입니다. 지속시간 동안 다음 핵심 기술을 누를 기가 충분한지 미리 확인합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124130,14 +125226,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_flyingdragonkick.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/옥룡의마음"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -124256,14 +125356,14 @@
       "icon": "monk_ability_summonoxstatue",
       "iconName": "monk_ability_summonoxstatue",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선조의 쇄도 (Stampede of the Ancients)",
+      "description": "흑우의 힘의 주 대상 효과를 400% 높입니다. 기본 광역 효과 전체를 모든 적에게 400% 높이는 것과 다릅니다. 지원이 준비된 다음 해당 전문화의 후속 기술을 실제로 사용해야 합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124275,14 +125375,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/monk_ability_summonoxstatue.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/흑우의힘"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -133726,14 +134830,14 @@
       "icon": "ability_monk_chiswirl",
       "iconName": "ability_monk_chiswirl",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공용 마력 (Universal Energy)",
+      "description": "마법 공격력을 8% 높이는 지속 특성입니다. 정점의 발구르기나 비취 점화처럼 자연 피해를 주는 공격의 비중이 높을수록 영향을 받는 피해가 늘어납니다. 물리 공격 전체가 같은 비율로 강화되는 것으로 계산하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133745,14 +134849,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chiswirl.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/비취점화"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -134171,14 +135279,14 @@
       "icon": "inv_helm_suncrown_d_01",
       "iconName": "inv_helm_suncrown_d_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태양불꽃 와류 (Sunfire Spiral)",
+      "description": "해오름차기가 특화: 연계 일격의 효과를 추가로 40% 더 받습니다. 해오름차기의 전체 피해가 조건 없이 40% 증가한다는 의미가 아닙니다. 질풍차기 대체 효과 및 실제 특화 수치와 함께 해석합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134190,14 +135298,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_suncrown_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/특화-연계일격",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.044,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -134272,14 +135384,14 @@
       "icon": "inv_tradeskillitem_sorcererswind_tong",
       "iconName": "inv_tradeskillitem_sorcererswind_tong",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람의 무기 (Weapon of Wind)",
+      "description": "등선 동안 공격력을 5% 높입니다. 12.1에서는 이전 10%에서 내려갔습니다. 정점의 발구르기만 강화하는 것이 아니라 등선에 맞춘 공격에 적용되는 지속 효과이며 따로 시전하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134291,14 +135403,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_tradeskillitem_sorcererswind_tong.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -134320,14 +135435,14 @@
       "icon": "ability_monk_dpsstance",
       "iconName": "ability_monk_dpsstance",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무인의 민첩성 (Martial Agility)",
+      "description": "근접 자동 공격 속도를 30% 높이며 등선 중에는 증가량이 60%가 됩니다. 음영파 질풍격 충전과 이중 위협 같은 자동 공격 연계를 돕습니다. 근접 사거리 밖에 오래 서 있으면 기술뿐 아니라 이 자동 공격 흐름도 멈춥니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134339,14 +135454,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dpsstance.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/이중위협"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 2,
+        "linkDensity": 0.057,
         "hasWikilinks": true
       },
       "source": {
@@ -134368,14 +135489,14 @@
       "icon": "inv_ability_monk_jadefirestomp",
       "iconName": "inv_ability_monk_jadefirestomp",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정점의 발구르기 (Zenith Stomp)",
+      "description": "등선 활성화 시 주위에 자동 발구르기를 하고 기 2를 생성하는 특성입니다. 5명 초과 피해는 감소합니다. 호안주 마지막 노드가 주는 추가 사용분은 실제 시전 ID 1272696이며 이 특성 ID를 눌러야 할 버튼으로 표시하지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134387,18 +135508,76 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\정점의발구르기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1272696": {
+      "id": "1272696",
+      "type": "atomic-skill",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "정점의 발구르기",
+      "koreanName": "정점의 발구르기",
+      "englishName": "Zenith Stomp",
+      "icon": "inv_ability_monk_jadefirestomp",
+      "iconName": "inv_ability_monk_jadefirestomp",
+      "school": "",
+      "cooldown": "1초 · 등선 중 추가 2회",
+      "castTime": "즉시",
+      "resourceCost": "기 2 생성",
+      "range": "자신 주위 10미터",
+      "description": "호안주 마지막 노드가 등선 중에 제공하는 실제 추가 발구르기 버튼입니다. 주위 적에게 자연 피해를 주고 기 2를 생성하며 5명 초과 피해는 감소합니다. 추가 2회를 등선이 끝나기 전에 쓰고 같은 공격을 연속 사용하지 않습니다. 툴팁의 100미터는 자기 중심 피해 반경이 아닙니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_monk_jadefirestomp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_monk_jadefirestomp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_monk_jadefirestomp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/특화-연계일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/정점의발구르기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\정점의발구르기.md",
         "lastUpdate": ""
       }
     },
@@ -134417,14 +135596,14 @@
       "icon": "inv_legendary_sigilofwisdom",
       "iconName": "inv_legendary_sigilofwisdom",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 장벽의 지혜 (Wisdom of the Wall)",
+      "range": "자신 또는 효과 대상",
+      "description": "양조는 니우짜오 활성화 중 불의 숨결이 질풍격을 3회 방출한다. 풍운은 등선 중 해오름차기·회전 학다리차기가 해당하며 내부 제한은 1초다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134436,14 +135615,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_legendary_sigilofwisdom.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/흑우니우짜오의원령",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/불의숨결",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/맥주통휘두르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/양조/Talents/살살라빔의힘"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/질풍격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.07,
         "hasWikilinks": true
       },
       "source": {
@@ -134518,14 +135705,14 @@
       "icon": "ability_monk_roll",
       "iconName": "ability_monk_roll",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 전투 태세 (Combat Stance)",
+      "range": "자신 또는 효과 대상",
+      "description": "구르기의 재사용 대기시간을 10% 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134537,14 +135724,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roll.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -134567,14 +135756,14 @@
       "icon": "crest_monk",
       "iconName": "crest_monk",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 척후의 칼날 (Initiator's Edge)",
+      "range": "자신 또는 효과 대상",
+      "description": "전투 시작 후 처음 8초 동안 이동 속도가 50% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134586,14 +135775,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/crest_monk.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기",
+          "08-직업별-Knowledge-Base/07-수도사/양조/Skills/조롱"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -135102,14 +136294,14 @@
       "icon": "ability_monk_chiswirl",
       "iconName": "ability_monk_chiswirl",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 별똥별의 길 (Path of the Falling Star)",
+      "description": "천신합일이 단일 대상을 공격할 때 치유와 피해의 추가 효과가 100%이며 대상이 늘 때마다 추가 효과가 20%p 줄어듭니다. 많은 적을 때릴수록 단일 대상과 같은 배율이 계속 적용되는 것이 아닙니다. 풍운은 채널 피해와 옥룡의 마음 후속 피해를 분리해 비교합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135121,14 +136313,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chiswirl.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/공용/Hero-Talents/내면의단결"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -136248,7 +137444,7 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
-          "08-직업별-Knowledge-Base/07-수도사/운무/Skills/질풍차기"
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -137877,6 +139073,59 @@
         "lastUpdate": ""
       }
     },
+    "1291484": {
+      "id": "1291484",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "정점의 발구르기",
+      "koreanName": "정점의 발구르기",
+      "englishName": "Zenith Stomp",
+      "icon": "inv_ability_monk_jadefirestomp",
+      "iconName": "inv_ability_monk_jadefirestomp",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "등선 중 추가 정점의 발구르기를 사용할 수 있음을 나타내는 준비 효과입니다. 실제 시전은 1272696이며 준비 버프를 별도 활성 기술로 만들지 않습니다. 남은 사용분은 등선 종료 전에 소비해야 합니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_monk_jadefirestomp.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_monk_jadefirestomp.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_monk_jadefirestomp.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_monk_jadefirestomp.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.064,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\정점의발구르기-준비.md",
+        "lastUpdate": ""
+      }
+    },
     "1292321": {
       "id": "1292321",
       "type": "atomic-skill",
@@ -138712,6 +139961,109 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Talents\\시즌2-4세트.md",
         "lastUpdate": "2026-09-13"
+      }
+    },
+    "1296621": {
+      "id": "1296621",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "Monk Windwalker 12.1 Class Set 2pc",
+      "koreanName": "Monk Windwalker 12.1 Class Set 2pc",
+      "englishName": "Monk Windwalker 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "풍운 시즌 2의 2세트입니다. 분노의 주먹 채널 시작 시 기존 한 번의 타격의 50% 효율로 추가 타격합니다. 분노의 주먹 전체 피해 50% 증가가 아니며, 4세트가 있으면 이 첫 피해도 끊임없는 박자 생성에 참여합니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296624": {
+      "id": "1296624",
+      "type": "passive",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "끊임없는 박자",
+      "koreanName": "끊임없는 박자",
+      "englishName": "Unbroken Rhythm",
+      "icon": "ability_monk_boughstrike",
+      "iconName": "ability_monk_boughstrike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "풍운 시즌 2의 4세트입니다. 분노의 주먹이 적중할 때마다 다음 해오름차기 피해 10% 또는 회전 학다리차기 피해 20%를 높이는 끊임없는 박자를 쌓습니다. 최대 6중첩이며 두 소비기에 각각 따로 주는 강화가 아닙니다. 실제 버프 ID는 1297033입니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_boughstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_boughstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_boughstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_boughstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_boughstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.07,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Skills\\시즌2-4세트.md",
+        "lastUpdate": ""
       }
     },
     "1296625": {
@@ -139797,6 +141149,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Skills\\축적된힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "1297033": {
+      "id": "1297033",
+      "type": "buff",
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "name": "끊임없는 박자",
+      "koreanName": "끊임없는 박자",
+      "englishName": "Unbroken Rhythm",
+      "icon": "ability_monk_boughstrike",
+      "iconName": "ability_monk_boughstrike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "시즌 2 4세트로 얻는 20초 피해 강화 버프입니다. 최대 6중첩에서 다음 해오름차기는 60%, 회전 학다리차기는 120% 강화됩니다. 한쪽 사용으로 소비되므로 광역에서는 회전 학다리차기 전에 해오름차기나 질풍차기로 지우지 않도록 판단합니다.",
+      "category": "buff",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_boughstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_monk_boughstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_monk_boughstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_monk_boughstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_boughstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
+          "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.078,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Buffs\\끊임없는박자.md",
         "lastUpdate": ""
       }
     },

@@ -1398,18 +1398,6 @@ const SPECIALIST_CHARTS = {
       { phase: '쐐기 제어', skillId: '119381', action: '피해 차단', note: '팽이 차기는 시간차가 쌓인 뒤가 아니라 위험 기술이 들어오기 전 피해 자체를 줄이는 버튼입니다.' },
     ],
   },
-  'monk-windwalker': {
-    id: 'uptime',
-    title: '기와 주요 쿨기 흐름',
-    sectionHeading: '분노의 주먹과 기 소비',
-    sectionIntro: '풍운 수도사는 기력과 기를 넘치지 않게 돌리면서 같은 기술 반복 금지를 지키고, 분노의 주먹과 쉬엔 같은 짧은 쿨기를 밀리지 않게 굴립니다.',
-    caption: '기 생성, 기 소비, 분노의 주먹 채널, 해오름차기, 질풍차기, 평안 또는 폭풍과 대지와 불을 같은 흐름에서 확인합니다.',
-    definition: [
-      ['의미', '분노의 주먹은 가장 중요한 채널 기술이고, 기는 강한 기술을 끊기지 않게 넣기 위한 연료입니다.'],
-      ['읽는 법', '범의 장풍으로 기를 만들고, 기가 넘치기 전에 후려차기나 해오름차기로 비우며, 분노의 주먹과 해오름차기 쿨다운을 밀지 않습니다.'],
-      ['체크 포인트', '기 과충전, 기력 과충전, 같은 기술 반복, 분노의 주먹 끊김, 해오름차기 지연, 광역 전환 누락을 봅니다.'],
-    ],
-  },
   'monk-mistweaver': {
     id: 'uptime',
     title: '12.1 질풍차기와 천신합일 회전',
@@ -1736,7 +1724,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -4214,71 +4202,6 @@ function getUptimeRows(guide, data) {
         skill: findSkillByNames(data, ['질풍격', '예측 훈련']),
         note: '자동 공격과 정점 구간이 실제 대상 수와 겹쳤는지 봅니다.',
         segments: [[28, 14], [58, 14], [86, 10]],
-      },
-    ];
-  }
-
-  if (guide.id === 'monk-windwalker') {
-    return [
-      {
-        label: '기 생성',
-        skill: findSkillByNames(data, ['범의 장풍']),
-        note: '기력이 넘치기 전에 기로 바꾸되 핵심 쿨기 직전에는 과소비하지 않습니다.',
-        segments: [[4, 8], [22, 8], [41, 8], [60, 8], [80, 8]],
-      },
-      {
-        label: '기 정리',
-        skill: findSkillByNames(data, ['후려차기']),
-        note: '기 과충전과 같은 기술 반복을 막는 기본 소모기입니다.',
-        segments: [[10, 8], [30, 8], [49, 8], [68, 8], [88, 8]],
-      },
-      {
-        label: '중심 채널',
-        skill: findSkillByNames(data, ['분노의 주먹']),
-        note: '채널이 끊기면 단일과 광역 모두 큰 손실이 나는 중심 기술입니다.',
-        segments: [[18, 16], [56, 16]],
-      },
-      {
-        label: '짧은 쿨기',
-        skill: findSkillByNames(data, ['해오름차기']),
-        note: '쿨마다 가까이 쓰되 자원 잠금 때문에 밀리지 않게 봅니다.',
-        segments: [[14, 8], [34, 8], [54, 8], [74, 8], [92, 6]],
-      },
-      {
-        label: '정점 구간',
-        skill: findSkillByNames(data, ['호안주', '등선']),
-        note: '호안주/등선 구간은 큰 기술을 모으지만 과도한 대기는 손실입니다.',
-        segments: [[24, 14], [64, 14]],
-      },
-      {
-        label: '큰 타격',
-        skill: findSkillByNames(data, ['바람의 군주의 일격']),
-        note: '강화 구간에 넣되 분노의 주먹과 해오름차기를 지나치게 밀지 않습니다.',
-        segments: [[28, 10], [72, 10]],
-      },
-      {
-        label: '쿨기 분신',
-        skill: findSkillByNames(data, ['폭풍과 대지와 불']),
-        note: '고피해 기술이 이어지는 구간에 배치하는 큰 쿨기입니다.',
-        segments: [[16, 22], [62, 22]],
-      },
-      {
-        label: '소환 구간',
-        skill: findSkillByNames(data, ['백호 쉬엔의 원령']),
-        note: '전투 길이와 큰 구간에 맞춰 전투 내 사용 횟수를 잃지 않습니다.',
-        segments: [[20, 20], [76, 18]],
-      },
-      {
-        label: '광역 전환',
-        skill: findSkillByNames(data, ['회전 학다리차기']),
-        note: '대상 수와 츠지의 춤 발동이 맞을 때만 우선순위가 올라옵니다.',
-        segments: [[38, 12], [82, 12]],
-      },
-      {
-        label: '영웅 특성',
-        skill: findSkillByNames(data, ['질풍격', '옥룡의 마음']),
-        note: '음영파는 질풍격 누적, 천신합일은 옥룡의 마음 쿨다운 회전을 봅니다.',
-        segments: [[26, 12], [66, 12]],
       },
     ];
   }

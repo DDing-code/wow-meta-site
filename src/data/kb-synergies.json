@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-13T06:51:10.038Z",
+    "generatedAt": "2026-09-20T04:39:32.739Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 504,
-    "rawTotalSynergies": 504,
+    "totalSynergies": 507,
+    "rawTotalSynergies": 507,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -81,15 +81,6 @@
       "raid_mythic_plus_choice": 1,
       "major_healing_cooldowns": 1,
       "single_target_recovery": 1,
-      "apex-active-window": 1,
-      "resource-and-combo": 1,
-      "hero-talent-conduit": 1,
-      "hero-talent-shado-pan": 1,
-      "apex-window": 1,
-      "aoe-proc-consumption": 1,
-      "major-cooldown-and-defense": 1,
-      "single-target-core": 1,
-      "aoe-branch": 1,
       "party-utility-control-survival": 1,
       "herald-of-the-sun-shared": 1,
       "lightsmith-shared-armament": 1,
@@ -257,7 +248,19 @@
       "generator-reset-priority": 1,
       "whirlwind-cleave-window": 1,
       "bloodthirst-bleed-survival": 1,
-      "slayer-execute-window": 1
+      "slayer-execute-window": 1,
+      "monk_windwalker_zenith_chi": 1,
+      "monk_windwalker_choice_cooldown": 1,
+      "monk_windwalker_teachings": 1,
+      "monk_windwalker_conduit_access": 1,
+      "monk_windwalker_survival": 1,
+      "monk_windwalker_jade_heart": 1,
+      "monk_windwalker_flurry": 1,
+      "monk_windwalker_tigereye": 1,
+      "monk_windwalker_dance_chain": 1,
+      "monk_windwalker_battlegear": 1,
+      "monk_windwalker_tier_consumer": 1,
+      "monk_windwalker_rushing_wind": 1
     },
     "byClass": {
       "DeathKnight": 28,
@@ -266,7 +269,7 @@
       "Evoker": 34,
       "Hunter": 50,
       "Mage": 47,
-      "Monk": 31,
+      "Monk": 34,
       "Paladin": 28,
       "성기사": 10,
       "Priest": 40,
@@ -8322,22 +8325,17 @@
     "monk_common_mobility_interrupt_control_cleanse": {
       "id": "monk_common_mobility_interrupt_control_cleanse",
       "name": "수도사공용-기동-차단-제어-해제",
+      "description": "이동과 제어는 적의 공격을 피하거나 끊는 대응입니다. 자기 방어기와 같은 피해 감소로 합산하지 않고 대상의 차단·제어 가능 여부를 확인합니다.",
       "type": "synergy",
       "synergyType": "mobility-control-utility",
       "participants": [
         "109132",
         "101643",
         "119996",
-        "115078",
         "116705",
         "119381",
-        "115450",
-        "116841",
-        "115203",
-        "322109",
-        "100780",
-        "100784",
-        "107428"
+        "115078",
+        "116841"
       ],
       "class": "Monk",
       "spec": "공용",
@@ -8348,21 +8346,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/구르기",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해탈전환",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/마비",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/손날찌르기",
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/팽이차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해독",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/절명의손길",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기"
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/마비",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의욕망"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -8387,12 +8379,9 @@
         "443589",
         "443625",
         "450391",
-        "451041",
-        "451043",
         "1262667",
         "1262672",
         "1262756",
-        "123986",
         "443059",
         "442743"
       ],
@@ -8459,31 +8448,16 @@
     "monk_common_shado_pan_flurry_climax": {
       "id": "monk_common_shado_pan_flurry_climax",
       "name": "영웅특성-ShadoPan-질풍격-정점",
+      "description": "자동 공격으로 모은 질풍격은 양조의 맥주통 휘두르기 또는 풍운의 분노의 주먹으로 방출합니다. 주요 소환·등선 중에는 장벽의 지혜의 추가 발동을 확인합니다.",
       "type": "synergy",
       "synergyType": "shado-pan-shared-flurry",
       "participants": [
         "450615",
-        "450889",
-        "450965",
-        "450979",
-        "450982",
         "450988",
-        "450989",
-        "450990",
-        "450991",
-        "450992",
-        "450993",
-        "1262610",
-        "1262612",
-        "1270990",
-        "1271048",
-        "1271105",
+        "450979",
+        "1262603",
         "1272821",
-        "1272844",
-        "1272849",
-        "1273154",
-        "227291",
-        "442747"
+        "1262612"
       ],
       "class": "Monk",
       "spec": "공용",
@@ -8493,10 +8467,8 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -8964,8 +8936,8 @@
       "importance": 3,
       "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/질풍차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치",
@@ -9017,7 +8989,7 @@
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활"
       ],
       "linkedBuffs": [],
@@ -9055,7 +9027,7 @@
       "importance": 3,
       "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/질풍차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/소생의안개"
       ],
       "linkedBuffs": [],
@@ -9101,7 +9073,7 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/운무/Skills/천신합일",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/집중의천둥차",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/기의고치",
@@ -9179,327 +9151,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\포용의안개-단일대상복구.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-zenith-slicing-winds": {
-      "id": "monk-windwalker-zenith-slicing-winds",
-      "name": "등선-날카로운바람",
-      "type": "synergy",
-      "synergyType": "apex-active-window",
-      "participants": [
-        "1249625",
-        "1217413",
-        "392983",
-        "113656",
-        "152175"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/날카로운바람",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\등선-날카로운바람.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-teachings-blackout-kick": {
-      "id": "monk-windwalker-teachings-blackout-kick",
-      "name": "수도원의가르침-후려차기",
-      "type": "synergy",
-      "synergyType": "resource-and-combo",
-      "participants": [
-        "100780",
-        "100784",
-        "116645",
-        "196740",
-        "113656",
-        "107428"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/타격연계"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\수도원의가르침-후려차기.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-heart-jade-serpent-fists": {
-      "id": "monk-windwalker-heart-jade-serpent-fists",
-      "name": "옥룡의마음-분노의주먹",
-      "type": "synergy",
-      "synergyType": "hero-talent-conduit",
-      "participants": [
-        "443294",
-        "113656",
-        "107428",
-        "152175",
-        "100780",
-        "100784"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\옥룡의마음-분노의주먹.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-shado-pan-flurry-strikes": {
-      "id": "monk-windwalker-shado-pan-flurry-strikes",
-      "name": "음영파-질풍격",
-      "type": "synergy",
-      "synergyType": "hero-talent-shado-pan",
-      "participants": [
-        "450615",
-        "113656",
-        "107428",
-        "392983",
-        "391330"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/정점의일격"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\음영파-질풍격.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-zenith-tigereye-brew": {
-      "id": "monk-windwalker-zenith-tigereye-brew",
-      "name": "정점-호안주",
-      "type": "synergy",
-      "synergyType": "apex-window",
-      "participants": [
-        "1261849",
-        "391330",
-        "1272694",
-        "113656",
-        "107428"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/정점의일격",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/정점의발구르기"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\정점-호안주.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-dance-of-chiji-spinning-crane-kick": {
-      "id": "monk-windwalker-dance-of-chiji-spinning-crane-kick",
-      "name": "츠지의춤-회전학다리차기",
-      "type": "synergy",
-      "synergyType": "aoe-proc-consumption",
-      "participants": [
-        "325201",
-        "101546",
-        "100784",
-        "113656"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/회전학다리차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\츠지의춤-회전학다리차기.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-sef-xuen-karma": {
-      "id": "monk-windwalker-sef-xuen-karma",
-      "name": "폭풍과대지와불-쉬엔-업보",
-      "type": "synergy",
-      "synergyType": "major-cooldown-and-defense",
-      "participants": [
-        "137639",
-        "123904",
-        "122470",
-        "113656",
-        "392983"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/폭풍과대지와불",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/업보의손아귀",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\폭풍과대지와불-쉬엔-업보.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-rsk-fists-core": {
-      "id": "monk-windwalker-rsk-fists-core",
-      "name": "해오름차기-분노의주먹",
-      "type": "synergy",
-      "synergyType": "single-target-core",
-      "participants": [
-        "107428",
-        "113656",
-        "392983",
-        "137639",
-        "392993",
-        "443294",
-        "450615"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\해오름차기-분노의주먹.md",
-        "lastUpdate": ""
-      }
-    },
-    "monk-windwalker-spinning-crane-kick-aoe": {
-      "id": "monk-windwalker-spinning-crane-kick-aoe",
-      "name": "회전학다리차기-광역",
-      "type": "synergy",
-      "synergyType": "aoe-branch",
-      "participants": [
-        "101546",
-        "325201",
-        "392993",
-        "113656",
-        "107428"
-      ],
-      "class": "Monk",
-      "spec": "풍운",
-      "specs": [
-        "Windwalker"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/회전학다리차기",
-        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤",
-        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\회전학다리차기-광역.md",
         "lastUpdate": ""
       }
     },
@@ -18740,6 +18391,441 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\학살자의-지배-마무리-일격-칼날폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_zenith_chi": {
+      "id": "monk_windwalker_zenith_chi",
+      "name": "등선 중 기 생성기 바꾸기",
+      "description": "칠흑 나선 선택 시 등선 중 후려차기가 기를 만들고 추가 발구르기도 기 2를 줍니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_zenith_chi",
+      "participants": [
+        "1249625",
+        "1249832",
+        "100784",
+        "1272696"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/칠흑나선"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\등선-날카로운바람.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_choice_cooldown": {
+      "id": "monk_windwalker_choice_cooldown",
+      "name": "선택 쿨기와 후속 자동 공격",
+      "description": "소용돌이 용의 주먹과 바람의 군주의 일격 중 선택한 기술이 천둥주먹을 준비합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_choice_cooldown",
+      "participants": [
+        "152175",
+        "392983",
+        "451576",
+        "392985"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/소용돌이용의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/바람의군주의일격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/바람과의교감",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/천둥주먹"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\선택쿨기-천둥주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_teachings": {
+      "id": "monk_windwalker_teachings",
+      "name": "가르침과 후려차기 발동의 다른 역할",
+      "description": "장풍은 가르침 추가 타격과 무료 후려차기 발동을 준비할 수 있지만 두 효과는 다릅니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_teachings",
+      "participants": [
+        "100780",
+        "116645",
+        "116768",
+        "100784",
+        "451529"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/범의장풍",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/수도원의가르침",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/부서진사원의지식"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\수도원의가르침-후려차기.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_conduit_access": {
+      "id": "monk_windwalker_conduit_access",
+      "name": "쉬엔이 연 천신합일을 후속 구간에 사용",
+      "description": "쉬엔 소환 뒤 60초 안에 천신합일을 써 내면의 단결과 강화 옥룡의 마음을 얻습니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_conduit_access",
+      "participants": [
+        "123904",
+        "1248989",
+        "1248992",
+        "443028",
+        "443589",
+        "443616"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/백호쉬엔의원령",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/천신합일-준비",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\쉬엔-천신합일.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_survival": {
+      "id": "monk_windwalker_survival",
+      "name": "업보는 실제 피해에 맞추는 생존기",
+      "description": "업보의 손아귀는 한도가 있는 흡수·피해 이전 기술이며 면역이 아닙니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_survival",
+      "participants": [
+        "122470",
+        "115203",
+        "388664",
+        "432181"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/업보의손아귀",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/강화주"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/안정의존재",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Talents/바람의춤"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\업보-생존.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_jade_heart": {
+      "id": "monk_windwalker_jade_heart",
+      "name": "옥룡의 마음과 빠른 분노의 주먹",
+      "description": "일반·천신합일 옥룡의 마음은 나눠 쓰고, 등선의 위론의 화신 효과는 그 위에 겹칩니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_jade_heart",
+      "participants": [
+        "443294",
+        "443421",
+        "443616",
+        "1238904",
+        "113656",
+        "1262667"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-일반",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-천신합일",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/옥룡의마음-등선"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\옥룡의마음-분노의주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_flurry": {
+      "id": "monk_windwalker_flurry",
+      "name": "자동 공격에서 질풍격 방출까지",
+      "description": "음영파는 자동 공격으로 질풍격을 모아 분노의 주먹으로 방출합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_flurry",
+      "participants": [
+        "450615",
+        "450988",
+        "1272821",
+        "113656",
+        "1272685"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/무인의민첩성"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\음영파-질풍격.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_tigereye": {
+      "id": "monk_windwalker_tigereye",
+      "name": "호안주 세 단계와 추가 발구르기",
+      "description": "호안주 첫 노드는 중첩과 치명타 확률, 중간은 치명타 피해, 마지막은 추가 발구르기를 제공합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_tigereye",
+      "participants": [
+        "1261703",
+        "1261724",
+        "1261844",
+        "1261849",
+        "1249625",
+        "1272696"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/등선",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/정점의발구르기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/호안주-중첩"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-첫노드",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주-중간노드",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/호안주"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\정점-호안주.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_dance_chain": {
+      "id": "monk_windwalker_dance_chain",
+      "name": "무료 회전 학다리차기에서 후려차기로",
+      "description": "츠지의 춤을 소비하면 순차 타격으로 후려차기!가 생기고 폭발하는 기운으로 기를 회복할 수 있습니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_dance_chain",
+      "participants": [
+        "325201",
+        "325202",
+        "101546",
+        "451515",
+        "116768",
+        "451498"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/츠지의춤",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/츠지의춤",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/순차타격",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/폭발하는기운"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\츠지의춤-회전학다리차기.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_battlegear": {
+      "id": "monk_windwalker_battlegear",
+      "name": "해오름차기 이후 채널 재사용 확인",
+      "description": "쉬엔의 전투장비는 해오름차기 치명타와 회전 학다리차기 적중으로 분노의 주먹을 당깁니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_battlegear",
+      "participants": [
+        "107428",
+        "467307",
+        "392993",
+        "113656",
+        "101546"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/쉬엔의전투장비"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\해오름차기-분노의주먹.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_tier_consumer": {
+      "id": "monk_windwalker_tier_consumer",
+      "name": "시즌 2 강화를 어느 기술에 쓸까",
+      "description": "끊임없는 박자는 최대 6중첩에서 해오름차기 60% 또는 회전 학다리차기 120%를 강화합니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_tier_consumer",
+      "participants": [
+        "113656",
+        "1296621",
+        "1296624",
+        "1297033",
+        "107428",
+        "101546",
+        "467307"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/분노의주먹",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-2세트",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Skills/시즌2-4세트",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/해오름차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/회전학다리차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/끊임없는박자"
+      ],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\회전학다리차기-광역.md",
+        "lastUpdate": ""
+      }
+    },
+    "monk_windwalker_rushing_wind": {
+      "id": "monk_windwalker_rushing_wind",
+      "name": "무료 후려차기 소비로 질풍차기 준비",
+      "description": "후려차기! 소비 후 60% 확률로 해오름차기가 질풍차기로 바뀝니다.",
+      "type": "synergy",
+      "synergyType": "monk_windwalker_rushing_wind",
+      "participants": [
+        "116768",
+        "100784",
+        "1250566",
+        "1250554",
+        "467307"
+      ],
+      "class": "Monk",
+      "spec": "풍운",
+      "specs": [
+        "Windwalker"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/후려차기",
+        "08-직업별-Knowledge-Base/07-수도사/공용/Skills/질풍차기"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/후려차기-발동",
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Buffs/질풍차기-준비"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/07-수도사/풍운/Talents/질풍차기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Synergies\\후려차기-질풍차기.md",
         "lastUpdate": ""
       }
     }
