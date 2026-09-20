@@ -271,6 +271,8 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Dashing Scoundrel's current Korean and English tooltips agree on 8% weapon-poison critical chance, unlike the launch summary's 10%; the discrepancy is recorded instead of silently combining values. Rewrote the Deathmark/Kingsbane relationship with eight verified participants and an authored explanation.
 - Used the existing explicit description-section convention so these fifteen effects, rather than only their Markdown headings, reach generated DB descriptions. Expanded runnable checks cover mechanics and that data transfer. The rest of the vault's title-only descriptions remain a global audit item.
 
+- Third pass: independently checked Korean/English Poison Bomb, Path of Blood and Doomblade tooltips, replaced generic prose and narrowed note links to concrete interactions. Eighteen atomic effects now have scoped DB checks. Talent availability and build recommendations are separate unfinished checks: current tooltip existence is not sufficient evidence. The full manuscript and production deployment remain pending.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

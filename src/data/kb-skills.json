@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T23:44:00.099Z",
+    "generatedAt": "2026-09-20T23:51:52.866Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2894,
-        "withSynergies": 1851,
+        "withSynergies": 1854,
         "avgLinkDensity": "0.040"
       }
     }
@@ -37952,14 +37952,14 @@
       "icon": "rogue_paralytic_poison",
       "iconName": "rogue_paralytic_poison",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 독폭탄 (Poison Bomb)",
+      "description": "독살을 사용하면 소모한 연계 점수 1점당 5%의 확률로 대상 위치에 독 웅덩이를 생성한다. 웅덩이 안의 적에게 2초 동안 자연 피해를 주는 자동 발동 특성이며, 별도의 사용 버튼은 없다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37971,14 +37971,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/rogue_paralytic_poison.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -55573,14 +55575,14 @@
       "icon": "ability_deathwing_bloodcorruption_earth",
       "iconName": "ability_deathwing_bloodcorruption_earth",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 파멸칼날 (Doomblade)",
+      "description": "절단이 8초에 걸쳐 25%의 추가 출혈 피해를 입힌다. 절단에 뒤따르는 지속 피해를 추가하는 특성이며, 모든 출혈 피해를 25% 증가시키는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55592,14 +55594,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathwing_bloodcorruption_earth.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -81285,14 +81289,14 @@
       "icon": "inv_artifact_bloodoftheassassinated",
       "iconName": "inv_artifact_bloodoftheassassinated",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 피의 길 (Path of Blood)",
+      "description": "최대 기력이 50 증가한다. 기력 저장 한도를 늘리는 지속 효과이며, 기력 회복 속도를 50 늘리거나 사용 즉시 기력 50을 지급하는 기술이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81304,13 +81308,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독상처"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
         "linkDensity": 0.017,
         "hasWikilinks": true
       },

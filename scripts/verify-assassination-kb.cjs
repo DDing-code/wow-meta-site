@@ -33,6 +33,15 @@ assert.match(skills['381797'].description, /치명타 확률을 8%/);
 assert.match(skills['79134'].description, /추가 출혈에서는 회복량이 감소/);
 assert.match(skills['381627'].description, /급소 가격과 파열 사용/);
 assert.match(skills['196861'].description, /목조르기 연마 지속 중/);
+for (const id of ['255544', '423054', '381673']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'talent', id);
+  assert.equal(skills[id].cooldown, '없음', id);
+}
+assert.match(skills['255544'].description, /연계 점수 1점당 5%/);
+assert.match(skills['255544'].description, /2초/);
+assert.match(skills['423054'].description, /최대 기력이 50 증가/);
+assert.match(skills['381673'].description, /절단이 8초에 걸쳐 25%의 추가 출혈/);
 const cooldown = synergies.rogue_assassination_deathmark_kingsbane;
 assert.equal(cooldown.patch, '12.1');
 assert.equal(cooldown.spec, 'Assassination');
@@ -47,4 +56,4 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 15 atomic notes and the Deathmark relationship passed');
+console.log('Assassination reviewed subset: 18 atomic notes and the Deathmark relationship passed');
