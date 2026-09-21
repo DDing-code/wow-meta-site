@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:58:28.548Z",
+    "generatedAt": "2026-09-21T05:03:52.838Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15357,7 +15357,7 @@
         "187880",
         "188196",
         "188443",
-        "51533",
+        "469314",
         "382042",
         "1250364",
         "384444",
@@ -15523,10 +15523,11 @@
     "shaman_enhancement_doom_winds_ascendance_window": {
       "id": "shaman_enhancement_doom_winds_ascendance_window",
       "name": "야수정령-파멸의바람",
+      "description": "야수 정령은 직접 시전하지 않는 패시브다. 세계의 분리는 불의 정령, 파멸의 바람은 자연의 정령을 8초 동안 소환한다. 승천은 파멸의 바람 버튼을 대체하며 토림의 기원은 파멸의 바람·승천 중 폭풍의 일격과 낙뢰의 자원 소비를 연다. 그 외 연결 특성과 최종 우선순위는 12.1 대조 중이다.",
       "type": "synergy",
       "synergyType": "major_cooldown_window",
       "participants": [
-        "51533",
+        "469314",
         "384352",
         "33757",
         "262647",

@@ -23640,7 +23640,6 @@ export const guideManuscripts = {
       summary:
         '첫 15초는 소용돌이치는 무기 중첩, 낙뢰 강화, 영웅 특성 구간을 만드는 구간입니다. 토템술사는 쇄도하는 토템과 뜨거운 손, 폭풍인도자는 폭풍의 일격과 낙뢰를 통해 폭풍 접근을 시작합니다.',
       steps: [
-        { skillId: '51533', label: '야수 정령', phase: '기반 세팅', trigger: '전투 시작', note: '초기 강화와 소용돌이치는 무기 흐름 준비' },
         { skillId: '187874', label: '낙뢰', phase: '광역/강화 준비', trigger: '2대상 이상', note: '광역 전환과 폭풍 해방/무기 강화 준비' },
         { skillId: '17364', label: '폭풍의 일격', phase: '생성 루프', trigger: '쿨다운 도착', note: '폭풍인도자 생성기와 정기의 속도 환급 대상' },
         { skillId: '60103', label: '용암 채찍', phase: '생성 루프', trigger: '뜨거운 손/쿨 도착', note: '토템술사/뜨거운 손 구간의 주 타격기' },

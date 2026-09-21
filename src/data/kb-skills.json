@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:58:28.547Z",
+    "generatedAt": "2026-09-21T05:03:52.837Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,10 +13,10 @@
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 553,
+        "atomic-skill": 552,
         "proc": 29,
         "skill": 131,
-        "talent": 995,
+        "talent": 996,
         "spec-talent": 392,
         "passive": 75,
         "hero-tree": 2,
@@ -13276,54 +13276,6 @@
         "lastUpdate": ""
       }
     },
-    "51533": {
-      "id": "51533",
-      "type": "atomic-skill",
-      "class": "Shaman",
-      "spec": "고양",
-      "specs": [
-        "Enhancement"
-      ],
-      "name": "야수 정령",
-      "koreanName": "야수 정령",
-      "englishName": "Feral Spirit",
-      "icon": "spell_shaman_feralspirit",
-      "iconName": "spell_shaman_feralspirit",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 야수 정령 (Feral Spirit)",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_feralspirit.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_feralspirit.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_feralspirit.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_feralspirit.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_feralspirit.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.054,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Skills\\야수정령.md",
-        "lastUpdate": ""
-      }
-    },
     "51564": {
       "id": "51564",
       "type": "talent",
@@ -19993,26 +19945,26 @@
       "name": "승천",
       "koreanName": "승천",
       "englishName": "Ascendance",
-      "icon": "spell_fire_elementaldevastation",
-      "iconName": "spell_fire_elementaldevastation",
+      "icon": "8026696",
+      "iconName": "8026696",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "기본 3분",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 승천 (Ascendance)",
+      "description": "15초 동안 바람의 승천자로 변신하고 파멸의 바람을 방출하는 사용 특성이다. 폭풍의 일격 쿨다운과 자원 소모를 60% 줄이고, 자동 공격과 폭풍의 일격을 방어도를 무시하는 사거리 30야드의 바람 공격으로 바꾼다. 승천이 아닐 때 소용돌이치는 무기 소비 능력은 소비 중첩당 0.5% 확률로 파멸의 바람을 방출한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg",
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/8026696.jpg",
       "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_fire_elementaldevastation.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_fire_elementaldevastation.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_elementaldevastation.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_elementaldevastation.jpg"
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/8026696.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/8026696.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/8026696.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/8026696.jpg"
       },
       "synergies": {
         "relatedSkills": [],
@@ -20022,7 +19974,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -25812,14 +25764,14 @@
       "icon": "spell_shaman_crashlightning",
       "iconName": "spell_shaman_crashlightning",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 낙뢰 (Crash Lightning)",
+      "cooldown": "기본 15초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 0.2%",
+      "range": "근접",
+      "description": "전방의 적에게 자연 피해를 주고 12초 동안 무기를 강화한다. 강화 중 폭풍의 일격과 용암 채찍은 전방 최대 5명의 적에게 추가 자연 피해를 나누어 준다. 기본 쿨다운은 15초, 충전은 1회다. 직접 타격과 뒤따르는 무기 강화의 대상 수를 구분하며, 분할 피해를 각 대상에게 동일한 총량이 복제되는 효과로 설명하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25841,7 +25793,7 @@
       "quality": {
         "wikilinkCount": 9,
         "synergyCount": 2,
-        "linkDensity": 0.096,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -62866,14 +62818,14 @@
       "icon": "ability_ironmaidens_swirlingvortex",
       "iconName": "ability_ironmaidens_swirlingvortex",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 파멸의 바람 (Doom Winds)",
+      "cooldown": "기본 1분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신 주변",
+      "description": "자신 주변에 8초 동안 매초 폭풍충격 피해를 주는 폭풍을 방출한다. 질풍의 무기 발동 확률을 50% 높이고 질풍의 무기 피해를 20% 높인다. 기본 쿨다운은 1분이다. 이 수치를 질풍이 무조건 발동하는 100% 확률로 바꾸어 설명하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62892,7 +62844,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -63156,14 +63108,14 @@
       "icon": "spell_shaman_ancestralawakening",
       "iconName": "spell_shaman_ancestralawakening",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 토림의 기원 (Thorim's Invocation)",
+      "description": "파멸의 바람과 깊이 뿌리내린 정기의 지속 시간을 2초 늘리고 승천의 쿨다운을 60초 줄인다. 파멸의 바람 또는 승천 중 폭풍의 일격과 낙뢰가 소용돌이치는 무기를 최대 10중첩 소비해 번개 화살 또는 연쇄 번개를 100% 효율로 방출한다. 어느 주문을 쓸지는 가장 최근에 사용한 번개 화살·연쇄 번개로 결정된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63182,7 +63134,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.055,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -111827,6 +111779,54 @@
         "lastUpdate": ""
       }
     },
+    "469314": {
+      "id": "469314",
+      "type": "talent",
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "name": "야수 정령",
+      "koreanName": "야수 정령",
+      "englishName": "Feral Spirit",
+      "icon": "spell_shaman_feralspirit",
+      "iconName": "spell_shaman_feralspirit",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "세계의 분리를 시전하면 불의 야수 정령 1마리, 파멸의 바람을 시전하면 자연의 야수 정령 1마리를 8초 동안 소환하는 지속 특성이다. 각 정령은 시전자의 물리 피해를 5% 높이고 자신의 속성에 따라 화염 또는 자연 피해를 5% 높인다. 직접 누르는 야수 정령 쿨다운이 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_feralspirit.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_shaman_feralspirit.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_shaman_feralspirit.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_feralspirit.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_feralspirit.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.02,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Skills\\야수정령.md",
+        "lastUpdate": ""
+      }
+    },
     "469638": {
       "id": "469638",
       "type": "hero-talent",
@@ -123745,14 +123745,14 @@
       "icon": "spell_nature_elementalprecision_1",
       "iconName": "spell_nature_elementalprecision_1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정기의 속도 (Elemental Tempo)",
+      "description": "원소 피해를 10% 높이고, 소비한 소용돌이치는 무기 중첩 하나당 폭풍의 일격과 용암 채찍의 남은 쿨다운을 각각 0.3초 줄인다. 10중첩 소비라면 각각 3초 감소다. 기술의 쿨다운을 전부 초기화하거나 기력·마나를 환급하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -123771,7 +123771,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.061,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
