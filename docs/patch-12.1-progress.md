@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Rogue ten shared talent effects, 2026-09-21
+
+- Individually compared Korean/English tooltips for Airborne Irritant, Deadened Nerves, Nimble Fingers, Shadowrunner, Fleet Footed, Recuperator, Blackjack, Improved Ambush, Tight Spender and Swift Slasher. All ten also appear as one-rank class nodes in fixed SimC 774babde5ddc7c5fc9f1abb129b473f8a076df70.
+- Replaced title-only DB descriptions and unrelated movement links with actual effects. Distinguished post-control Blackjack, fixed energy discounts, conditional movement, periodic healing, Haste-scaled attack speed and Ambush versus Shadowstrike bonuses. Improved Ambush and Tight Spender share choice node 90692, so their benefits must not be combined.
+- Added mechanic assertions and synced canonical changes to DB. Thirty-three Subtlety-associated records remain labeled older than 12.1; labels and these focused assertions are not a complete availability or gameplay audit.
+
 ### Rogue movement base versus talent modifiers, 2026-09-21
 
 - Live Korean/English tooltips confirm Sprint's base cooldown is two minutes, not the previously stored one-minute talented value. Improved Sprint subtracts 60 seconds; Featherfoot adds 30% movement speed and four seconds of duration. Unbreakable Stride reduces slow duration by 30%, not slow strength or all control effects.

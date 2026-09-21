@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:17:07.863Z",
+    "generatedAt": "2026-09-21T04:20:08.410Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1967,
+        "withSynergies": 1977,
         "avgLinkDensity": "0.039"
       }
     }
@@ -31224,14 +31224,14 @@
       "icon": "ability_rogue_bloodyeye",
       "iconName": "ability_rogue_bloodyeye",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공수 자극제 (Airborne Irritant)",
+      "description": "실명의 쿨다운을 50%, 지속 시간을 70% 줄이고 주위 모든 적에게 적용하게 하는 지속 특성이다. 기본 2분·1분인 실명에 이 효과만 적용하면 쿨다운 1분, 지속 시간 18초다. 이동 속도나 전력 질주를 강화하는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31243,14 +31243,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_bloodyeye.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -36647,14 +36649,14 @@
       "icon": "ability_rogue_nervesofsteel",
       "iconName": "ability_rogue_nervesofsteel",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무감각한 신경 (Deadened Nerves)",
+      "description": "받는 물리 피해를 5% 줄이는 지속 특성이다. 마법 피해까지 모두 5% 감소하는 효과가 아니며, 회피 확률을 5% 높이는 효과와도 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36667,13 +36669,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/교묘함"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -53169,14 +53173,14 @@
       "icon": "ability_rogue_crimsonvial",
       "iconName": "ability_rogue_crimsonvial",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날렵한 손가락 (Nimble Fingers)",
+      "description": "교란과 진홍색 약병의 기력 소모량을 각각 10 줄이는 지속 특성이다. 10% 감소가 아니라 고정 수치 감소다. 마무리 일격이나 이동 기술 전체의 비용을 낮추지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53188,14 +53192,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_crimsonvial.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/교란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -53737,14 +53743,14 @@
       "icon": "ability_stealth",
       "iconName": "ability_stealth",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠질주 (Shadowrunner)",
+      "description": "은신 또는 어둠의 춤이 활성화된 동안 이동 속도가 20% 증가하는 지속 특성이다. 은신 전용 기술 사용이 가능하다는 이유만으로 모든 상황에서 이 이동 보너스를 가정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53756,14 +53762,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_stealth.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/은신"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -53787,14 +53795,14 @@
       "icon": "ability_rogue_quickrecovery",
       "iconName": "ability_rogue_quickrecovery",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빠른 발 (Fleet Footed)",
+      "description": "이동 속도가 15% 증가하는 지속 특성이다. 전력 질주의 지속 시간을 늘리거나 감속을 해제하지 않는다. 공격 속도·가속·기력 회복을 15% 올리는 효과도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53806,14 +53814,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_quickrecovery.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/전력질주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -54252,14 +54262,14 @@
       "icon": "inv_gizmo_runichealthinjector",
       "iconName": "inv_gizmo_runichealthinjector",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 설욕 (Recuperator)",
+      "description": "난도질이 3초마다 최대 생명력의 최대 1%를 회복하게 하는 지속 특성이다. 마무리 일격을 쓸 때마다 즉시 1%를 회복하는 효과가 아니다. 툴팁은 최대 회복량으로 표시하므로 실효 회복을 항상 1%로 고정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54272,13 +54282,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/신속의베기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -54302,14 +54314,14 @@
       "icon": "ability_rogue_blackjack",
       "iconName": "ability_rogue_blackjack",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 가죽곤봉 (Blackjack)",
+      "description": "실명 또는 혼절시키기 효과가 끝난 적의 공격력과 치유량을 6초 동안 30% 줄이는 지속 특성이다. 제어가 시작될 때의 효과나 모든 기절 종료 효과로 확대하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54321,14 +54333,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_blackjack.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -54713,14 +54727,14 @@
       "icon": "ability_rogue_ambush",
       "iconName": "ability_rogue_ambush",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 매복 연마 (Improved Ambush)",
+      "description": "매복은 연계 점수 1점을 추가 생성하고, 그림자 일격을 사용하는 조건에서는 그림자 일격의 피해가 8% 증가하는 지속 특성이다. 그림자 일격에 매복의 추가 1점을 함께 더하는 효과가 아니다. 고정 12.1 특성 목록에서 절약 정신과 같은 선택 노드다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54733,13 +54747,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/절약정신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -54763,14 +54779,14 @@
       "icon": "inv_misc_coin_03",
       "iconName": "inv_misc_coin_03",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 절약 정신 (Tight Spender)",
+      "description": "마무리 일격의 기력 소모량을 6% 줄이는 지속 특성이다. 기력 6을 고정 차감하거나 연계 점수 소비량을 줄이는 효과가 아니다. 고정 12.1 특성 목록에서 매복 연마와 같은 선택 노드다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54783,13 +54799,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/매복연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -56695,14 +56713,14 @@
       "icon": "ability_rogue_slicedice",
       "iconName": "ability_rogue_slicedice",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신속의 베기 (Swift Slasher)",
+      "description": "난도질이 자신의 가속의 100%에 해당하는 공격 속도를 추가로 제공하는 지속 특성이다. 고정 공격 속도 100% 증가나 가속 능력치 자체를 두 배로 만드는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56715,13 +56733,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/설욕"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
