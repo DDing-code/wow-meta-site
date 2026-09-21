@@ -197,4 +197,18 @@ const shiv = synergies.rogue_assassination_shiv_darkest_night_combo;
 assert.equal(shiv.patch, '12.1');
 assert.deepEqual(shiv.participants, ['5938', '1267182', '457058', '32645']);
 assert.match(shiv.description, /최소 발동 조건은 5점 이상/);
-console.log('Assassination reviewed subset: 63 atomic notes, 7 relationships, 7 retired talents passed');
+for (const id of ['457067', '1248793', '1248774']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'hero-talent', id);
+}
+assert.match(skills['457067'].description, /암살.*8초.*10%.*20%.*잠행.*30%/);
+assert.match(skills['1248793'].description, /암살.*칼날 부채.*60%.*잠행.*표창 폭풍.*60%/);
+assert.match(skills['1248774'].description, /징표 중첩.*매복.*절단.*50%/);
+assert.ok(skills['1298826'].aliases.includes('수동 엉겅퀴 차'));
+assert.ok(skills['469779'].aliases.includes('자동 엉겅퀴 차'));
+for (const relation of Object.values(synergies).filter(row => row.id.startsWith('rogue_assassination_'))) {
+  assert.equal(relation.patch, '12.1', relation.id);
+  assert.ok(relation.description?.length > 30, relation.id);
+  for (const id of relation.participants) assert.ok(skills[id]?.specs.includes('Assassination'), id);
+}
+console.log('Assassination reviewed subset: 66 atomic notes, 10 relationships, 7 retired talents passed');

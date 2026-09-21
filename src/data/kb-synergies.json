@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:27:11.705Z",
+    "generatedAt": "2026-09-21T00:45:06.050Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14185,47 +14185,38 @@
     },
     "rogue_assassination_execute_bleed_poison": {
       "id": "rogue_assassination_execute_bleed_poison",
-      "name": "갑작스러운최후-졸디크-처형",
+      "name": "체력 35% 미만의 출혈·독 판단",
+      "description": "졸디크의 비전은 체력 35% 미만에서 출혈·무기 독·자연 피해를 강화한다. 갑작스러운 최후의 즉사에는 남은 출혈 피해 조건도 필요하며, 치사량은 낮은 체력 전용 효과가 아니다.",
       "type": "synergy",
       "synergyType": "execute_priority",
       "participants": [
         "423136",
         "381798",
         "381640",
-        "32645",
-        "360194",
-        "385627",
-        "1943",
         "703",
-        "381673",
-        "255544",
-        "381626",
-        "381801"
+        "1943",
+        "32645",
+        "385627"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/갑작스러운최후",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/졸디크의비전",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/치사량",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/파멸칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/피바다",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/치사량"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\갑작스러운최후-졸디크-처형.md",
@@ -14309,7 +14300,8 @@
     },
     "rogue_assassination_bleed_maintenance": {
       "id": "rogue_assassination_bleed_maintenance",
-      "name": "목조르기-파열",
+      "name": "출혈 유지와 기력 회복",
+      "description": "독에 걸린 대상의 목조르기·파열 틱은 맹독 상처의 기력 회복으로 이어진다. 강화 목조르기와 긴 파열을 준비하고 혈폭풍으로 복제하면 다중 대상 출혈과 피의 향기를 함께 확보한다.",
       "type": "synergy",
       "synergyType": "bleed_maintenance",
       "participants": [
@@ -14317,40 +14309,29 @@
         "1943",
         "79134",
         "381632",
-        "196861",
-        "385478",
-        "381627",
-        "381626",
-        "423054",
+        "1249802",
         "381799",
-        "457512",
-        "1856"
+        "1247227"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/혈폭풍"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독상처",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의향기",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/목조르기연마",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/장막속의질식",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/내출혈",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/피바다",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의길",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/핏빛전략",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무쇠철사"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/서슬교살줄",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의향기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\목조르기-파열.md",
@@ -14548,44 +14529,42 @@
     },
     "rogue_assassination_crimson_tempest_fan": {
       "id": "rogue_assassination_crimson_tempest_fan",
-      "name": "혈폭풍-칼날부채",
+      "name": "혈폭풍 확산과 광역 생성",
+      "description": "혈폭풍은 기력 60으로 기존 목조르기·파열을 각각 다른 두 적까지 복제하는 생성기다. 출혈 확산이 끝나면 칼날 부채로 생성하고 주 대상의 독살로 소비하며, 부식성 분사는 별도의 자연 피해 전이를 맡는다.",
       "type": "synergy",
       "synergyType": "aoe_bleed_spread",
       "participants": [
         "1247227",
         "51723",
-        "1943",
         "703",
+        "1943",
+        "381799",
+        "421975",
         "381631",
         "381629",
-        "421975",
-        "381801",
-        "381799",
-        "457512"
+        "457067",
+        "1248793"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/혈폭풍",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의향기",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/핏빛전략",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/기만"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\혈폭풍-칼날부채.md",

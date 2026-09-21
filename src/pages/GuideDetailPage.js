@@ -1459,18 +1459,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '광란 지연, 격노 공백, 분노 과충전, 피의 갈증/분노의 강타 충전 방치, 광역 쿨기 없는 광란을 봅니다.'],
     ],
   },
-  'rogue-assassination': {
-    id: 'uptime',
-    title: '목조르기와 파열 유지',
-    sectionHeading: '출혈 기반 독살 구간',
-    sectionIntro: '암살 도적은 목조르기와 파열을 유지하고 독살로 독 피해를 강화하는 전문화입니다. 차트는 출혈 공백과 독살 구간의 완성도를 함께 보여 줍니다.',
-    caption: '목조르기, 파열, 독살, 죽음표식, 왕의 파멸, 혈폭풍 또는 죽음추적자 보상을 한 화면에 묶습니다.',
-    definition: [
-      ['의미', '목조르기와 파열은 피해 바탕이고, 독살은 그 위에 독 피해와 발동을 올리는 마무리 기술입니다.'],
-      ['읽는 법', '출혈이 비기 전에 갱신하고, 독살 구간에는 왕의 파멸과 강한 발동이 들어가는지 확인합니다.'],
-      ['체크 포인트', '목조르기/파열 공백, 독살 중 출혈 누락, 연계 점수 과충전, 왕의 파멸 지연, 광역 출혈 전환 누락을 봅니다.'],
-    ],
-  },
   'rogue-outlaw': {
     id: 'uptime',
     title: '마무리 기술과 쿨기 환급',
@@ -1788,7 +1776,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow', 'rogue-assassination'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -3457,76 +3445,6 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'rogue-assassination') {
-    return [
-      {
-        label: '출혈 기반',
-        skill: findSkillByNames(data, ['목조르기', '파열']),
-        note: '목조르기와 파열은 맹독 상처 기력 회수, 죽음표식 복제, 혈폭풍 광역 확장의 바닥입니다.',
-        segments: [[2, 94]],
-      },
-      {
-        label: '중심 소비',
-        skill: findSkillByNames(data, ['독살']),
-        note: '독 발동 확률, 왕의 파멸 성장, 운명의 손 보상을 여는 중심 마무리 기술입니다.',
-        segments: [[10, 8], [26, 8], [42, 8], [58, 8], [74, 8], [90, 7]],
-      },
-      {
-        label: '쿨기 표식',
-        skill: findSkillByNames(data, ['죽음표식']),
-        note: '곧 죽을 대상이 아니라 오래 살 우선 대상에 출혈과 치명독 기반을 묶어야 합니다.',
-        segments: [[18, 12], [76, 12]],
-      },
-      {
-        label: '독 성장',
-        skill: findSkillByNames(data, ['왕의 파멸']),
-        note: '왕의 파멸 중에는 독살 구간과 독칼이 비지 않아야 14초 독 피해가 커집니다.',
-        segments: [[22, 14], [80, 14]],
-      },
-      {
-        label: '자연 보강',
-        skill: findSkillByNames(data, ['독칼']),
-        note: '5938 독칼 기준입니다. 이름이 비슷한 다른 독 칼과 섞이지 않게 아이콘과 툴팁을 같이 봅니다.',
-        segments: [[28, 8], [84, 8]],
-      },
-      {
-        label: '전이 피해',
-        skill: findSkillByNames(data, ['부식성 분사']),
-        note: '우선 대상 자연 피해가 주변으로 전이되는 구간입니다. 대상 위치와 독살 구간을 같이 봅니다.',
-        segments: [[32, 10], [88, 8]],
-      },
-      {
-        label: '광역 생성',
-        skill: findSkillByNames(data, ['칼날 부채']),
-        note: '2명 이상에서 연계 점수를 만드는 광역 생성기입니다. 출혈 복제 역할과 구분합니다.',
-        segments: [[36, 7], [54, 7], [72, 7], [92, 6]],
-      },
-      {
-        label: '출혈 복제',
-        skill: findSkillByNames(data, ['혈폭풍']),
-        note: '목조르기와 파열을 보조 대상에 확장하는 버튼입니다. 출혈 없는 혈폭풍은 가치가 크게 내려갑니다.',
-        segments: [[44, 12], [82, 12]],
-      },
-      {
-        label: '영웅 특성',
-        skill: findSkillByNames(data, ['운명의 손', '죽음추적자의 징표']),
-        note: '운명결속은 강화 독살, 죽음추적자는 표식 대상 관리가 핵심입니다.',
-        segments: [[16, 10], [48, 10], [78, 10]],
-      },
-      {
-        label: '은신 재강화',
-        skill: findSkillByNames(data, ['소멸', '목조르기']),
-        note: '소멸-목조르기 강화 구간은 단순 유지율보다 강화 출혈이 실제 우선 대상에 들어갔는지 봅니다.',
-        segments: [[50, 10], [90, 8]],
-      },
-      {
-        label: '생존 보존',
-        skill: findSkillByNames(data, ['교란', '그림자 망토', '회피']),
-        note: '근접 접촉 시간이 끊기면 독살과 왕의 파멸 구간도 같이 무너집니다.',
-        segments: [[24, 6], [62, 6], [86, 6]],
-      },
-    ];
-  }
 
 
 

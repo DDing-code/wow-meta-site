@@ -1,12 +1,16 @@
 # 12.1 update status
 
-### Assassination resource audit, 2026-09-21
+### Assassination core guide rollout, 2026-09-21
 
 - Reviewed Shiv 5938, Toxic Stiletto 1267182 and automatic Thistle Tea effect 381623 against current Korean tooltips. Added separate automatic talent 469779 and manual talent 1298826; the fixed 12.1 SimulationCraft trait table places both talents in choice node 90756.
 - Corrected Shiv to baseline 30 energy/30 seconds, reduced to 10 energy/15 seconds by Toxic Stiletto. Replaced the old poison-dispel and mandatory 7-point trigger wording in its relationship.
-- Regression scope is now 63 reviewed records and seven relationships. The complete Assassination manuscript, rotation charts and production deployment are still pending.
+- Replaced the runtime manuscript with a manually authored canonical 12.1 guide: 12 practical sections, both heroes' opener/single-target/AoE modes, resource choices and explicit access limitations. Removed June popularity claims and the separate stale specialist chart.
+- Regression scope is now 66 reviewed records and all ten Assassination relationships. Added three Deathstalker generator traits, kept cross-specialization effects separate, and removed an unrelated Fatebound link. Automatic/manual tea aliases resolve to distinct tooltip targets.
+- Full prebuild checks and sanitized production build passed. Desktop hero/mode switching, 390px and 320px layouts had no document overflow or broken loaded images; the 320px opener wraps without horizontal dragging.
+- Vercel deployment `dpl_BcC43fBCymZS5H1aNcsgaRgqoHiB` is Ready. The public Assassination route serves `main.14f13066.js` and the new guide. No environment files, sourcemaps or matched local credential values were in the uploaded output.
+- Remaining Assassination work: finish shared/hero/tier-set coverage and current build/log evidence; inspect the broader skill list for old generic common records. This core rollout is not a claim that all Rogue data or every 12.1 build has been fully audited.
 
-Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 32 manuscripts labeled 12.1 and 8 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
+Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 33 manuscripts labeled 12.1 and 7 still labeled 12.0.5; the older 12.1 manuscripts and the explicit Assassination follow-up gates still require review.
 
 ## Updated in this rollout
 
@@ -266,13 +270,13 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 - Sources already inspected: Blizzard 12.1, current Korean/English tooltips, all four actual Icy Veins rotation presets, Method's August 27 guide and fixed SimC implementation. Current aggregate logs were inaccessible; June usage percentages were removed from current KB recommendations. Source disagreements about normal versus set-granted Volley priority and stale implementation values must remain explicit in the manuscript.
 - Regression check: `node scripts/verify-shadow-kb.cjs`. Canonical KB is outside the site Git repository; the site commit preserves generated DB and site content, not a remote vault backup. Dense graph labels, older shared mechanics and the 1.69 MB gzip bundle remain separate work.
 
-## Assassination Rogue: partial KB review, 2026-09-21
+## Assassination Rogue: chronological review history, 2026-09-21
 
 - Read current Wowhead Whispyr (September 6), Icy Veins rotation/overview and Method Whispyr guides. The direct Blizzard patch-note request returned 403; do not claim direct access from the guide's quotation.
 - Manually checked Korean/English tooltips for Implacable 1265385/1265386/1265387 and Crimson Tempest 1247227. Replaced copied generic apex prose with the distinct effects and corrected Tempest's energy cost, radius, generator identity and two-secondary-target bleed copying.
 - The old manuscript's deliberate Envenom-expiration energy advice contradicts the current first apex node. The full replacement is not yet written. Other open issues include Shiv hero/build conditions, Deathmark's current multiplier, direct versus copied Rupture/Internal Bleeding, and automatic versus manual Tea choice nodes.
 - Online name/icon/link checks passed for 46 local atomic notes; this is not mechanics validation of all 46. The four manually reviewed records have a scoped runnable check in scripts/verify-assassination-kb.cjs. Source conflicts and remaining work are recorded in the canonical Meta/review-12.1.md.
-- Generated skill data was synchronized. No Assassination deployment or full-guide completion is claimed; its manuscript remains 12.0.5.
+- At the first pass, generated skill data was synchronized while the manuscript remained 12.0.5. The core guide has since been replaced and deployed as recorded at the top; the following passes are historical progress, not the current rollout status.
 - Second pass: manually reviewed seven more core casts and four talents, bringing the reviewed atomic subset to fifteen. Corrected Garrote's base cooldown, cast energy costs/radii, Deathmark's 75% modifier versus double poison application, its gradual energy recovery, Kingsbane's stacking cap, Internal Bleeding's direct-cast trigger and Iron Wire's conditional silence.
 - Dashing Scoundrel's current Korean and English tooltips agree on 8% weapon-poison critical chance, unlike the launch summary's 10%; the discrepancy is recorded instead of silently combining values. Rewrote the Deathmark/Kingsbane relationship with eight verified participants and an authored explanation.
 - Used the existing explicit description-section convention so these fifteen effects, rather than only their Markdown headings, reach generated DB descriptions. Expanded runnable checks cover mechanics and that data transfer. The rest of the vault's title-only descriptions remain a global audit item.
@@ -291,18 +295,18 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.
 
-## Still 12.0.5: 8 manuscripts
+## Still 12.0.5: 7 manuscripts
 
 | Class | Specializations |
 | --- | --- |
-| Rogue | Assassination, Outlaw, Subtlety |
+| Rogue | Outlaw, Subtlety |
 | Shaman | Enhancement, Restoration |
 | Warrior | Protection, Arms, Fury |
 
 ## Remaining gates
 
 - Shared flow layout simplified on 2026-09-13: small inline icon/name/arrow steps wrap without dedicated numbered tiles; complete use conditions remain in native disclosure. Feral, Augmentation, Beast Mastery, Marksmanship, Survival, Fire and Frost Mage now have separately authored opener/single-target/AoE modes for both heroes; the other guides still need verified mode content, not copies of one priority list.
-- Complete fresh manual research and KB/DB/guide updates for the 8 older manuscripts.
+- Complete fresh manual research and KB/DB/guide updates for the 7 older manuscripts, and finish the outstanding Assassination coverage noted above.
 - Re-audit the ten previously labeled 12.1 manuscripts against current sources rather than assuming their labels prove freshness.
 - Recheck shared and older atomic notes, current talent availability, base versus talent-adjusted cooldowns, hero-specific flows and source disagreements.
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.

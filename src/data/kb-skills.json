@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:27:11.703Z",
+    "generatedAt": "2026-09-21T00:45:06.049Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -107348,14 +107348,14 @@
       "icon": "spell_shadow_shadesofdarkness",
       "iconName": "spell_shadow_shadesofdarkness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 절망의 탄력 (Momentum of Despair)",
+      "description": "암살에서는 칼날 부채가 치명타로 적중하면 8초 동안 칼날 부채와 혈폭풍의 치명타 확률이 10%, 치명타 피해가 20% 증가한다. 잠행에서는 표창 폭풍의 치명타 적중으로 8초 동안 표창 폭풍과 검은 화약의 치명타 확률이 10%, 치명타 피해가 30% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107374,7 +107374,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -111788,6 +111788,9 @@
       "name": "엉겅퀴 차",
       "koreanName": "엉겅퀴 차",
       "englishName": "Thistle Tea",
+      "aliases": [
+        "자동 엉겅퀴 차"
+      ],
       "icon": "inv_drink_milk_05",
       "iconName": "inv_drink_milk_05",
       "school": "",
@@ -122137,14 +122140,14 @@
       "icon": "ability_warrior_deepcuts",
       "iconName": "ability_warrior_deepcuts",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 확고한 결심 (Unshakeable Drive)",
+      "description": "암살은 죽음추적자의 징표 중첩을 소모하면 다음 매복 또는 절단의 피해가 50% 증가한다. 잠행은 현재 한국어·영어 툴팁 모두 일부 기술명이 비어 있으며 그림자 일격 25% 증가만 명시적으로 확인된다. 잠행의 누락된 기술명은 추정해서 채우지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122161,9 +122164,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -122235,14 +122238,14 @@
       "icon": "ability_rogue_fanofknives",
       "iconName": "ability_rogue_fanofknives",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 목격자 제거 (Clear the Witnesses)",
+      "description": "암살에서는 칼날 부채의 피해가 60% 증가한다. 잠행에서는 표창 폭풍의 피해가 60% 증가한다. 다른 생성기나 모든 광역 피해에 일괄 적용되는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122261,7 +122264,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -151887,6 +151890,9 @@
       "name": "엉겅퀴 차",
       "koreanName": "엉겅퀴 차",
       "englishName": "Thistle Tea",
+      "aliases": [
+        "수동 엉겅퀴 차"
+      ],
       "icon": "inv_drink_milk_05",
       "iconName": "inv_drink_milk_05",
       "school": "",

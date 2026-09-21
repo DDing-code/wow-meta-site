@@ -29,6 +29,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['paladin-retribution', '12.1'],
   ['priest-discipline', '12.1'],
   ['priest-shadow', '12.1'],
+  ['rogue-assassination', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
@@ -1164,6 +1165,21 @@ function main() {
   const destructionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Warlock' && note.spec === 'Destruction');
   assert(destructionSynergies.length === 18 && destructionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Destruction'))), 'All 18 Destruction relationships must use correctly scoped numeric IDs');
   assert(destruction.graphCenterSkillId === '116858' && destructionSynergies.filter(note => note.participants.includes('116858')).length === 12, 'Chaos Bolt must retain its twelve actual relationships');
+
+  const assassination = manuscripts['rogue-assassination'];
+  const assassinationSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '10-도적', '암살', 'Meta', 'guide-12.1.json');
+  if (fs.existsSync(assassinationSource)) {
+    assert(JSON.stringify(JSON.parse(read(assassinationSource))) === JSON.stringify(assassination), 'Assassination must match its canonical 12.1 manuscript');
+  }
+  for (const branch of assassination.heroBranches) {
+    assert(branch.opener.steps.length >= 8 && branch.singleTarget.priority.length >= 7 && branch.aoe.priority.length >= 7, 'Assassination heroes need authored opener, single-target and AoE flows');
+    const casts = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
+    assert(casts.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId].specs.includes('Assassination')), 'Assassination charts must use correctly scoped cast buttons');
+    assert(casts.every(row => !['381623', '469779', '1265387'].includes(row.skillId)), 'Automatic tea and apex effects must not be cast buttons');
+    assert(branch.label !== '운명결속' || !casts.some(row => row.skillId === '1293340'), 'Fatebound must not borrow Mark for Death');
+  }
+  assert(JSON.stringify(assassination.opener) === JSON.stringify(assassination.heroBranches[0].opener), 'Default Assassination opener must match Fatebound');
+  assert(assassination.sourceNote.includes('403') && !JSON.stringify(assassination).includes('99.2%'), 'Assassination must disclose missing current log evidence instead of recycling June usage');
 
   const shadow = manuscripts['priest-shadow'];
   const shadowSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '09-사제', '암흑', 'Meta', 'guide-12.1.json');
