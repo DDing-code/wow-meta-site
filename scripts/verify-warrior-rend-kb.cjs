@@ -347,4 +347,11 @@ assert.match(skills[382946].description, /자동 공격.*치명타.*10초.*10%.*
 assert.match(skills[383082].description, /몰아치는 천둥.*천둥벼락/);
 assert.match(skills[392777].description, /1포인트.*1%.*마무리 일격.*5%.*2포인트/);
 assert.equal(skills[382258].castTime, '지속 효과');
+for (const id of [275339, 382260, 1271925, 29838, 203201, 1271948]) assert.equal(skills[id].patch, '12.1');
+assert.match(skills[275339].description, /3명.*15초.*16미터/s);
+assert.match(skills[1271925].description, /50%.*30초/s);
+assert.match(skills[29838].description, /5초.*6%.*35%.*2%/);
+assert.match(skills[203201].description, /반경이 50%.*20%/);
+assert.equal(skills[1271948].icon, '8026700');
+assert.match(skills[1271948].description, /플레이어가 아닌 대상.*3초/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
