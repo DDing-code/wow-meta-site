@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Subtlety manuscript and unsupported chart cleanup, 2026-09-21
+
+- Rewrote the remaining eight manuscript subjects and eight shared Rogue utility records, synced the generated DB and pushed 3af7a5e4. All three Rogue focused checks and full prebuild passed; local 1440/390px checks loaded the updated text without page overflow or runtime errors.
+- Removed Subtlety's specialist cooldown chart: its bars were computed from array indices, not measured casts or an authored rotation. Removed the unused hardcoded timeline rows and unsupported Trickster/Deathstalker popularity claims too. The two heroes' six authored rotation views and synergy graph remain available.
+- Remaining common talents, advanced gameplay review, current log evidence, whole-guide patch metadata and production rollout are still pending. No current popularity or measured timeline is claimed.
+
 ### Subtlety hero-specific rotation rewrite, 2026-09-21
 
 - Replaced outdated June hero rankings with current public guide recommendations, explicitly not fresh usage statistics. Manually authored separate opener/single-target/AoE views for Deathstalker and Trickster using the existing UI; rewrote the hero and opener sections and practical tips.

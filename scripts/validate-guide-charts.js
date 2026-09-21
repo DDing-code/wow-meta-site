@@ -494,7 +494,7 @@ function main() {
   validateNoDuplicateBranches(uptimeBranches, 'getUptimeRows');
 
   for (const guideId of guideIds) {
-    if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'paladin-retribution', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'priest-shadow', 'rogue-assassination', 'rogue-outlaw'].includes(guideId)) {
+    if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'paladin-retribution', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'priest-shadow', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety'].includes(guideId)) {
       const getPlan = new Function('guide', 'data', 'getFlowChartTitle', extractFunctionBody(guideDetailSource, 'getInlineChartPlan'));
       const plan = getPlan({ id: guideId }, {}, () => 'opener');
       assert(JSON.stringify(plan.map(chart => chart.id)) === JSON.stringify(['rotation', 'priority']), `${guideId} must use authored flows and priority instead of a placeholder resource/cooldown chart`);

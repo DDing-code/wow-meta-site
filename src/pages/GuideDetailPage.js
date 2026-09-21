@@ -1459,18 +1459,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '광란 지연, 격노 공백, 분노 과충전, 피의 갈증/분노의 강타 충전 방치, 광역 쿨기 없는 광란을 봅니다.'],
     ],
   },
-  'rogue-subtlety': {
-    id: 'cooldown',
-    title: '어둠의 춤 극딜 묶음',
-    sectionHeading: '은밀한 기술과 춤 구간',
-    sectionIntro: '잠행 도적은 어둠의 춤 안에 은밀한 기술, 그림자 일격, 절개, 고대의 기술을 짧게 몰아넣는 전문화입니다. 차트는 춤 안에 들어간 기술을 확인합니다.',
-    caption: '어둠의 춤, 어둠의 칼날, 은밀한 기술, 절개, 고대의 기술, 표창 폭풍/검은 화약 전환을 같은 극딜 흐름으로 봅니다.',
-    definition: [
-      ['의미', '어둠의 춤은 은밀한 기술과 강한 마무리 기술을 넣는 짧은 극딜 구간입니다.'],
-      ['읽는 법', '춤을 눌렀는지보다 춤 안에 은밀한 기술과 충분한 마무리 기술이 들어갔는지 먼저 봅니다.'],
-      ['체크 포인트', '은밀한 기술이 춤 밖으로 밀림, 연계 점수 과충전, 어둠의 칼날 중 마무리 부족, 광역 전환 누락을 봅니다.'],
-    ],
-  },
   'shaman-elemental': {
     id: 'resource',
     title: '선조 반응과 소용돌이 소비',
@@ -1764,7 +1752,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow', 'rogue-assassination', 'rogue-outlaw'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -3703,76 +3691,7 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'rogue-subtlety') {
-    return [
-      {
-        label: '중앙 마무리',
-        skill: findSkillByNames(data, ['은밀한 기술']),
-        note: '잠행 쿨기 정렬의 기준점입니다. 춤 안에 들어갔는지를 가장 먼저 확인합니다.',
-        segments: [[9, 8], [48, 8], [88, 8]],
-      },
-      {
-        label: '90초 큰 구간',
-        skill: findSkillByNames(data, ['어둠의 칼날']),
-        note: '어둠의 칼날 안에 두 번의 어둠의 춤과 첫 은밀한 기술을 몰아넣습니다.',
-        segments: [[3, 18], [72, 18]],
-      },
-      {
-        label: '춤 구간',
-        skill: findSkillByNames(data, ['어둠의 춤']),
-        note: '은밀한 기술 준비 또는 어둠의 칼날 중일 때 열어야 가치가 큽니다.',
-        segments: [[5, 7], [17, 7], [44, 7], [76, 7], [88, 7]],
-      },
-      {
-        label: '춤 생성',
-        skill: findSkillByNames(data, ['그림자 일격']),
-        note: '춤 안 핵심 생성기입니다. 어둠의 칼날 중에는 연계 점수 과충전을 조심합니다.',
-        segments: [[6, 6], [18, 6], [45, 6], [77, 6], [89, 6]],
-      },
-      {
-        label: '후속 소비',
-        skill: findSkillByNames(data, ['절개']),
-        note: '은밀한 기술 이후의 단일 소비이며, 기만자와 죽음추적자 보상의 출구입니다.',
-        segments: [[13, 7], [24, 7], [52, 7], [84, 7], [94, 5]],
-      },
-      {
-        label: '중첩 엔진',
-        skill: findSkillByNames(data, ['고대의 기술', '그림자 기술']),
-        note: '그림자 기술 중첩을 복제된 그림자와 다음 마무리 기술로 연결합니다.',
-        segments: [[10, 12], [46, 12], [86, 10]],
-      },
-      {
-        label: '광역 생성',
-        skill: findSkillByNames(data, ['표창 폭풍']),
-        note: '2대상 이상에서 광역 연계 점수 생성 흐름으로 전환합니다.',
-        segments: [[30, 7], [60, 7], [82, 7]],
-      },
-      {
-        label: '광역 소비',
-        skill: findSkillByNames(data, ['검은 화약']),
-        note: '다중 대상 기본 마무리 기술이지만, 최후의 일격/어둡고 어두운 밤 절개 예외를 같이 봅니다.',
-        segments: [[36, 8], [66, 8], [90, 7]],
-      },
-      {
-        label: '기만자',
-        skill: findSkillByNames(data, ['무형검', '최후의 일격']),
-        note: '현재 로그 주류입니다. 최후의 일격 절개와 구름 덮개 구간을 별도로 추적합니다.',
-        segments: [[8, 20], [42, 20], [74, 20]],
-      },
-      {
-        label: '죽음추적자',
-        skill: findSkillByNames(data, ['죽음추적자의 징표', '어둡고 어두운 밤']),
-        note: '단일 전투 보조 선택지입니다. 징표 적용, 중첩 소비, 대상 이동을 확인합니다.',
-        segments: [[11, 16], [50, 16], [86, 12]],
-      },
-      {
-        label: '생존/차단',
-        skill: findSkillByNames(data, ['교란', '그림자 망토', '발차기']),
-        note: '쐐기에서는 은밀한 기술 구간보다 먼저 생존과 차단이 필요한 순간이 있습니다.',
-        segments: [[22, 10], [55, 10], [80, 10]],
-      },
-    ];
-  }
+  if (guide.id === 'rogue-subtlety') return [];
 
   if (guide.id === 'rogue-outlaw') return [];
 

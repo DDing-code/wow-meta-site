@@ -202,4 +202,8 @@ for (const [id, effect] of Object.entries(utilityEffects)) {
   }
 }
 assert.doesNotMatch(JSON.stringify(guide.blocks), /차트 배치|차트는 마지막|본문 다음에.*차트/);
+const page = fs.readFileSync(path.join(__dirname, '../src/pages/GuideDetailPage.js'), 'utf8');
+assert.doesNotMatch(page, /'rogue-subtlety':\s*\{/);
+assert.match(page, /'rogue-subtlety'\]\.includes\(guide.id\)\) return plan/);
+assert.match(page, /if \(guide.id === 'rogue-subtlety'\) return \[\];/);
 console.log('Subtlety: 60 local records, 18 shared Deathstalker records, eight common utilities, 13 relationships and six hero-specific rotation views passed. Remaining common talents and live log evidence are not covered.');
