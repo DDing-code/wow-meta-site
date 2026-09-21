@@ -191,4 +191,11 @@ assert.match(skills[1261057].description, /30%.*35%/);
 assert.match(skills[386630].description, /35%.*필사의 일격.*33%/);
 assert.match(skills[386634].description, /다음 필사의 일격.*35%.*2중첩/);
 assert.deepEqual(synergies.warrior_arms_charge_reset_chain.participants, ['184783', '1261057', '7384', '386630', '12294']);
+for (const id of [1261056, 1261048]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+}
+assert.match(skills[1261056].description, /20초.*회전베기 2회.*재사용 대기시간/);
+assert.match(skills[1261048].description, /거인의 강타.*분노 15/);
+assert.deepEqual(synergies.warrior_arms_smash_cleave_resources.participants, ['167105', '1261048', '1261056', '845']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

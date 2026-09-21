@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:55:52.013Z",
+    "generatedAt": "2026-09-21T18:59:14.737Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2975,
-    "rawTotalSkills": 2975,
+    "totalSkills": 2977,
+    "rawTotalSkills": 2977,
     "duplicateIds": [],
-    "totalSynergies": 592,
+    "totalSynergies": 593,
     "stats": {
-      "total": 2975,
+      "total": 2977,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 130,
         "talent": 996,
-        "spec-talent": 388,
+        "spec-talent": 390,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 263
+        "Warrior": 265
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,14 +96,14 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 41,
+        "Warrior-Arms": 43,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2892,
-        "withSynergies": 2015,
+        "withWikilinks": 2894,
+        "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
     }
@@ -24334,13 +24334,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Talents/몸풀기였을-뿐",
+          "08-직업별-Knowledge-Base/13-전사/무기/Talents/궤멸적인-연계"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.035,
+        "wikilinkCount": 8,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -130383,6 +130386,56 @@
         "lastUpdate": ""
       }
     },
+    "1261048": {
+      "id": "1261048",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "몸풀기였을 뿐",
+      "koreanName": "몸풀기였을 뿐",
+      "englishName": "Just Warming Up",
+      "icon": "ability_warrior_endlessrage",
+      "iconName": "ability_warrior_endlessrage",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "거인의 강타가 분노 15를 생성한다. 별도로 사용하는 분노 회복 스킬이 아니며, 이 특성을 선택하지 않은 빌드에 같은 생성량을 더하면 안 된다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_endlessrage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_endlessrage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_endlessrage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\몸풀기였을-뿐.md",
+        "lastUpdate": ""
+      }
+    },
     "1261049": {
       "id": "1261049",
       "type": "spec-talent",
@@ -130524,6 +130577,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\전술적-우위.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261056": {
+      "id": "1261056",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "궤멸적인 연계",
+      "koreanName": "궤멸적인 연계",
+      "englishName": "Crushing Combo",
+      "icon": "ability_warrior_cleave",
+      "iconName": "ability_warrior_cleave",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "거인의 강타 사용 후 20초 안에 사용하는 다음 회전베기 2회가 재사용 대기시간을 발생시키지 않는다. 예전 3회 설명을 쓰지 않는다. 회전베기의 분노 소모나 전역 재사용 대기시간을 없애는 효과는 아니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_cleave.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_cleave.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_cleave.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_cleave.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_cleave.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\궤멸적인-연계.md",
         "lastUpdate": ""
       }
     },

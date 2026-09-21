@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:55:52.014Z",
+    "generatedAt": "2026-09-21T18:59:14.738Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 592,
-    "rawTotalSynergies": 592,
+    "totalSynergies": 593,
+    "rawTotalSynergies": 593,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -217,6 +217,7 @@
       "talent-mechanic": 3,
       "burst-window-core": 1,
       "multi-target-core": 1,
+      "resource-cooldown": 1,
       "absorb-strength": 1,
       "execute-availability": 1,
       "hero-talent-damage": 4,
@@ -266,7 +267,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 55
+      "Warrior": 56
     }
   },
   "synergies": {
@@ -19730,6 +19731,33 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의-강타-회전베기-부수적인-피해.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_smash_cleave_resources": {
+      "id": "warrior_arms_smash_cleave_resources",
+      "name": "거인의강타-분노생성-회전베기연계",
+      "type": "synergy",
+      "synergyType": "resource-cooldown",
+      "participants": [
+        "167105",
+        "1261048",
+        "1261056",
+        "845"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의강타-분노생성-회전베기연계.md",
         "lastUpdate": ""
       }
     },
