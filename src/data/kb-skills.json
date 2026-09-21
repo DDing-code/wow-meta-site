@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:10:15.801Z",
+    "generatedAt": "2026-09-21T20:14:03.766Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2974,
-    "rawTotalSkills": 2974,
+    "totalSkills": 2964,
+    "rawTotalSkills": 2964,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2974,
+      "total": 2964,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -22,7 +22,7 @@
         "hero-tree": 2,
         "set-bonus": 15,
         "tier-set": 2,
-        "class-talent": 89,
+        "class-talent": 79,
         "debuff": 6,
         "removed-talent": 1,
         "atomic-buff": 1,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 262
+        "Warrior": 252
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -95,7 +95,7 @@
         "Warlock-공용": 113,
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
-        "Warrior-공용": 125,
+        "Warrior-공용": 115,
         "Warrior-Arms": 39,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
@@ -103,7 +103,7 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2891,
+        "withWikilinks": 2881,
         "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
@@ -41688,56 +41688,6 @@
         "lastUpdate": ""
       }
     },
-    "275338": {
-      "id": "275338",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "위협",
-      "koreanName": "위협",
-      "englishName": "",
-      "icon": "ability_golemthunderclap",
-      "iconName": "ability_golemthunderclap",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "위협은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 위협 특성 전사 필요 요구 레벨 35 위협의 외침이 대상을 제외한 주위 모든 적을 15초 동안 공포에 질려 도망가게 합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_golemthunderclap.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_golemthunderclap.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_golemthunderclap.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_golemthunderclap.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_golemthunderclap.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\위협.md",
-        "lastUpdate": ""
-      }
-    },
     "275339": {
       "id": "275339",
       "type": "class-talent",
@@ -59103,156 +59053,6 @@
         "lastUpdate": ""
       }
     },
-    "382948": {
-      "id": "382948",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "꿰뚫는 도전",
-      "koreanName": "꿰뚫는 도전",
-      "englishName": "",
-      "icon": "ability_revendreth_warrior",
-      "iconName": "ability_revendreth_warrior",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "꿰뚫는 도전은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 꿰뚫는 도전 전사 필요 용사의 창이 입히는 피해가 50%만큼, 분노 생성량이 100%만큼 증가합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_warrior.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_revendreth_warrior.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_revendreth_warrior.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_revendreth_warrior.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_warrior.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\꿰뚫는-도전.md",
-        "lastUpdate": ""
-      }
-    },
-    "382954": {
-      "id": "382954",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "재앙의 포효",
-      "koreanName": "재앙의 포효",
-      "englishName": "",
-      "icon": "ability_fomor_boss_shout",
-      "iconName": "ability_fomor_boss_shout",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "재앙의 포효은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 재앙의 포효 전사 필요 위협의 외침이 해제되기 전까지 받을 수 있는 피해가 200%만큼 증가합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_fomor_boss_shout.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_fomor_boss_shout.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_fomor_boss_shout.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_fomor_boss_shout.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_fomor_boss_shout.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\재앙의-포효.md",
-        "lastUpdate": ""
-      }
-    },
-    "382956": {
-      "id": "382956",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "지진의 반향",
-      "koreanName": "지진의 반향",
-      "englishName": "",
-      "icon": "ability_warrior_bloodnova",
-      "iconName": "ability_warrior_bloodnova",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "지진의 반향은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 지진의 반향 전사 필요 소용돌이 [ 무기 : 또는 회전베기 ] [ 몰아치는 천둥 : 또는 천둥벼락 ] [ 방어 : 또는 복수 ]|1이;가; 3명 이상의 적에게 적중하면 추가로 1번 가격해 30%의 피해를 입힙니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodnova.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_bloodnova.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_bloodnova.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_bloodnova.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodnova.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\지진의-반향.md",
-        "lastUpdate": ""
-      }
-    },
     "383010": {
       "id": "383010",
       "type": "talent",
@@ -59497,56 +59297,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\격렬한-원동력.md",
-        "lastUpdate": ""
-      }
-    },
-    "383115": {
-      "id": "383115",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "충격 강타",
-      "koreanName": "충격 강타",
-      "englishName": "",
-      "icon": "ability_warrior_intervene",
-      "iconName": "ability_warrior_intervene",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "충격 강타은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 충격 강타 전사 필요 들이치기의 재사용 대기시간이 1.0초만큼 감소합니다. 적의 주문 시전을 방해하는 데 성공하면 10초 동안 적에게 입히는 피해가 5%만큼 증가합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_intervene.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_intervene.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_intervene.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_intervene.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_intervene.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\충격-강타.md",
         "lastUpdate": ""
       }
     },
@@ -61074,56 +60824,6 @@
         "lastUpdate": ""
       }
     },
-    "383762": {
-      "id": "383762",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "사기적인 면역",
-      "koreanName": "사기적인 면역",
-      "englishName": "",
-      "icon": "spell_nature_shamanrage",
-      "iconName": "spell_nature_shamanrage",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "사기적인 면역은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 사기적인 면역 즉시 3 분 재사용 대기시간 즉시 20%의 생명력을 회복하고 모든 질병, 독, 저주 효과를 제거합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_shamanrage.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_shamanrage.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_shamanrage.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_shamanrage.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_shamanrage.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\사기적인-면역.md",
-        "lastUpdate": ""
-      }
-    },
     "383785": {
       "id": "383785",
       "type": "talent",
@@ -62574,56 +62274,6 @@
         "lastUpdate": ""
       }
     },
-    "384404": {
-      "id": "384404",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "보조 무기",
-      "koreanName": "보조 무기",
-      "englishName": "",
-      "icon": "inv_throwingaxe_06",
-      "iconName": "inv_throwingaxe_06",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "보조 무기은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 보조 무기 전사 필요 자동 공격 시 20%의 확률로 전방의 대상과 다른 1명의 적에게 무기를 던져 (전투력의 70%)의 물리 피해를 입힙니다. (효과 발동 확률: 20%)",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_throwingaxe_06.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_throwingaxe_06.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_throwingaxe_06.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_throwingaxe_06.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_throwingaxe_06.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\보조-무기.md",
-        "lastUpdate": ""
-      }
-    },
     "384411": {
       "id": "384411",
       "type": "talent",
@@ -63118,56 +62768,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\보주탄막.md",
-        "lastUpdate": ""
-      }
-    },
-    "384969": {
-      "id": "384969",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "우레와 같은 말",
-      "koreanName": "우레와 같은 말",
-      "englishName": "",
-      "icon": "spell_nature_earthquake",
-      "iconName": "spell_nature_earthquake",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "우레와 같은 말은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 우레와 같은 말 전사 필요 천둥의 포효의 출혈 지속시간이 2.0초만큼 연장됩니다. 또한 천둥의 포효의 출혈 효과에 걸린 적은 시전자의 모든 출혈 효과로 받는 피해가 20%만큼 증가합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_earthquake.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_earthquake.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_earthquake.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_earthquake.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_earthquake.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\우레와-같은-말.md",
         "lastUpdate": ""
       }
     },
@@ -64417,56 +64017,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Talents\\촉진화.md",
-        "lastUpdate": ""
-      }
-    },
-    "386284": {
-      "id": "386284",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "용사의 힘",
-      "koreanName": "용사의 힘",
-      "englishName": "",
-      "icon": "ability_bastion_warrior",
-      "iconName": "ability_bastion_warrior",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "용사의 힘은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 용사의 힘 전사 필요 용사의 창의 지속시간이 2초만큼 연장됩니다. 창에 사슬로 속박된 대상에게 입히는 치명타 및 극대화 피해가 (전투력의 239.25%)%만큼 증가합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_bastion_warrior.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_bastion_warrior.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_bastion_warrior.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_bastion_warrior.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_bastion_warrior.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\용사의-힘.md",
         "lastUpdate": ""
       }
     },
@@ -71589,56 +71139,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Talents\\쇄도사격.md",
-        "lastUpdate": ""
-      }
-    },
-    "391572": {
-      "id": "391572",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "소요",
-      "koreanName": "소요",
-      "englishName": "",
-      "icon": "inv_misc_head_dragon_01",
-      "iconName": "inv_misc_head_dragon_01",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "소요은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 소요 전사 필요 천둥의 포효의 재사용 대기시간이 45초만큼 감소합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_head_dragon_01.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_head_dragon_01.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_head_dragon_01.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\소요.md",
         "lastUpdate": ""
       }
     },

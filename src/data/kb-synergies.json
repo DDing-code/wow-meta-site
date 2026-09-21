@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:10:15.802Z",
+    "generatedAt": "2026-09-21T20:14:03.767Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -19219,7 +19219,6 @@
         "456270",
         "6343",
         "384318",
-        "384969",
         "23922",
         "184367",
         "23881",
@@ -19320,10 +19319,8 @@
         "202163",
         "103827",
         "382260",
-        "391572",
         "262231",
         "1271948",
-        "384404",
         "384124"
       ],
       "class": "Warrior",
@@ -19349,10 +19346,8 @@
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/연속-돌진",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/뛰어난-도약",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/빠른-발걸음",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/소요",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/전쟁-기계",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/투창병",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/보조-무기",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/완전-무장"
       ],
       "source": {
@@ -19374,11 +19369,7 @@
         "64382",
         "57755",
         "355",
-        "275338",
-        "382948",
-        "383115",
         "203201",
-        "382956",
         "275339"
       ],
       "class": "Warrior",
@@ -19403,11 +19394,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/꿰뚫는-도전",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/충격-강타",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/짜릿한-천둥",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/지진의-반향",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/대지-뒤흔들기"
       ],
       "source": {
@@ -19430,7 +19417,6 @@
         "227847",
         "1243660",
         "424742",
-        "386284",
         "152278"
       ],
       "class": "Warrior",
@@ -19456,8 +19442,7 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/공명하는-목소리",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/전장의-사령관",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/용사의-힘"
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/전장의-사령관"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\전사공용-전투의외침-재집결의함성-공격대유틸.md",
@@ -19484,7 +19469,6 @@
         "382895",
         "382896",
         "382900",
-        "383762",
         "1280961",
         "1271926",
         "1271925"
@@ -19542,7 +19526,6 @@
         "392777",
         "392792",
         "382764",
-        "382954",
         "6343"
       ],
       "class": "Warrior",
@@ -20347,7 +20330,6 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정"
       ],
       "source": {
@@ -20828,8 +20810,7 @@
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/차디찬-복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/소용돌이-칼날",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\천둥벼락-복수-전략가.md",

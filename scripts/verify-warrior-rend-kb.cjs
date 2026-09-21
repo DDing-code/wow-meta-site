@@ -311,4 +311,8 @@ assert.match(skills[107574].description, /20초.*20%.*무기.*5%.*방어.*3%.*�
 assert.equal(skills[382764].patch, '12.1');
 assert.match(skills[382764].description, /필사의 일격.*피의 갈증.*방패 밀쳐내기.*5%/);
 assert.match(skills[382764].description, /분쇄 출혈을 강화하는 특성이 아니다/);
+for (const id of [382948, 384404, 383762, 391572, 386284, 384969, 275338, 382954, 382956, 383115]) {
+  assert.equal(skills[id], undefined, 'Inactive shared talents must not be offered by the spell DB');
+  assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive shared talents must not survive in graph references');
+}
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
