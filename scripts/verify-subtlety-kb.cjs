@@ -183,4 +183,23 @@ for (const id of ['rogue_subtlety_deathstalker_mark_darkest_night',
 }
 assert.match(synergies.rogue_subtlety_season2_lingering_shadow.description, /60%/);
 assert.match(skills['441146'].description, /잠행.*그림자 일격/);
-console.log('Subtlety: 60 local records, 18 shared Deathstalker records, 13 relationships and six hero-specific rotation views passed. Remaining common utility, live log evidence and full manuscript review are not covered.');
+const utilityEffects = {
+  '31224': /5초.*해로운 주문.*모든 물리 피해.*무조건/,
+  '5277': /10초.*회피율.*100%.*회피 판정/,
+  '31230': /7%.*3초.*85%.*6분/,
+  '1766': /같은 계열.*6초.*15초/,
+  '57934': /30초 이내.*6초.*100야드.*도둑의 배짱 조건부/,
+  '6770': /은신.*기력 35.*10야드.*비전투.*피해.*해제/,
+  '2094': /15야드.*1분.*방향 감각 상실.*2분/,
+  '185311': /기력 20.*20%.*4초에 걸쳐.*30초/,
+};
+for (const [id, effect] of Object.entries(utilityEffects)) {
+  assert.match(skills[id]?.description || '', effect, id);
+  assert.equal(skills[id].patch, '12.1', id);
+  assert.equal(skills[id].castTime, id === '31230' ? '지속 효과' : '즉시', id);
+  for (const spec of ['Assassination', 'Outlaw', 'Subtlety']) {
+    assert.ok(skills[id].specs.includes(spec), id + spec);
+  }
+}
+assert.doesNotMatch(JSON.stringify(guide.blocks), /차트 배치|차트는 마지막|본문 다음에.*차트/);
+console.log('Subtlety: 60 local records, 18 shared Deathstalker records, eight common utilities, 13 relationships and six hero-specific rotation views passed. Remaining common talents and live log evidence are not covered.');

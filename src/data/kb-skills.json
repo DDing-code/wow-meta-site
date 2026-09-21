@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:46:46.924Z",
+    "generatedAt": "2026-09-21T03:58:05.513Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -3379,12 +3379,12 @@
       "school": "",
       "cooldown": "15초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "근접",
-      "description": "# 발차기 (Kick)",
+      "description": "대상의 주문 시전을 차단하고 같은 계열의 주문을 6초 동안 시전하지 못하게 한다. 근접 사거리의 즉시 사용 기술이며 기본 쿨다운은 15초다. 기절이나 모든 계열 침묵을 주는 기술이 아니므로, 차단 불가 시전과 별도 제어 면역을 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3403,7 +3403,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.059,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -4094,12 +4094,12 @@
       "school": "",
       "cooldown": "2분",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "15야드",
-      "description": "# 실명 (Blind)",
+      "description": "15야드 내 대상을 1분 동안 방향 감각 상실 상태로 만드는 즉시 사용 제어 기술이다. 기본 쿨다운은 2분이며 한 번에 한 대상만 영향을 받는다. 피해로 효과가 해제될 수 있으므로, 지속 피해가 들어가는 적을 오랫동안 격리한다고 가정하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4118,7 +4118,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.075,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -5165,12 +5165,12 @@
       "school": "",
       "cooldown": "2분",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 회피 (Evasion)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "10초 동안 회피율이 100% 증가한다. 기본 쿨다운은 2분이며 즉시 사용하는 생존기다. 모든 물리 피해를 100% 줄이는 효과가 아니고, 회피 판정이 가능한 공격을 피하는 효과다. 회피할 수 없는 물리 기술이나 주문 피해에 같은 방어를 가정하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5189,7 +5189,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.085,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -5990,12 +5990,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "근접",
-      "description": "# 혼절시키기 (Sap)",
+      "resourceCost": "기력 35",
+      "range": "10야드",
+      "description": "은신 중 기력 35를 써서 10야드 내 비전투 대상을 1분 동안 행동 불가 상태로 만든다. 인간형·야수·악마·용족에게만 적용되고 한 번에 한 대상만 유지된다. 피해를 받으면 해제된다. 전투 중인 모든 적에게 사용할 수 있는 차단 기술이 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6014,7 +6014,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.079,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -9601,12 +9601,12 @@
       "school": "",
       "cooldown": "2분",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 그림자 망토 (Cloak of Shadows)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "모든 해로운 주문 효과를 즉시 제거하고, 5초 동안 해로운 주문에 저항한다. 기본 쿨다운은 2분인 즉시 사용 생존기다. 모든 물리 피해나 모든 보스 기믹을 무조건 무효화하는 효과로 확대 해석하지 않는다. 실제 제거·저항 가능 여부는 해당 전투 효과를 확인해야 한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9625,7 +9625,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.067,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -9649,14 +9649,14 @@
       "icon": "ability_rogue_cheatdeath",
       "iconName": "ability_rogue_cheatdeath",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "발동 제한 6분",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구사일생 (Cheat Death)",
+      "description": "죽음에 이르는 공격을 받으면 죽는 대신 최대 생명력의 7%가 남고, 이후 3초 동안 받는 모든 피해가 85% 감소한다. 지속 특성이며 발동은 6분에 한 번으로 제한된다. 직접 누르는 생존기가 아니고, 발동 직후 생명력이 충분히 회복되는 효과도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9675,7 +9675,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -14504,12 +14504,12 @@
       "school": "",
       "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "100야드",
-      "description": "# 속임수 거래 (Tricks of the Trade)",
+      "description": "지정한 파티원 또는 공격대원에게 자신이 만드는 위협을 이전한다. 사용 후 30초 이내의 다음 피해 공격부터 6초 동안 작동한다. 기본 쿨다운은 30초이고 사거리는 100야드다. 대상 피해 15% 증가는 도둑의 배짱 조건부 효과이며 기본 속임수 거래의 무조건적인 보상이 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14528,7 +14528,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.05,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -24966,14 +24966,14 @@
       "icon": "ability_rogue_crimsonvial",
       "iconName": "ability_rogue_crimsonvial",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 진홍색 약병 (Crimson Vial)",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기력 20",
+      "range": "자신",
+      "description": "기력 20을 사용해 최대 생명력의 20%를 4초에 걸쳐 회복한다. 기본 쿨다운은 30초이며 즉시 사용하지만 회복은 시간에 걸쳐 들어온다. 사용 순간 20%가 모두 회복되거나 받는 피해를 줄이는 효과가 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24992,7 +24992,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
