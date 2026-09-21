@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:05:55.996Z",
+    "generatedAt": "2026-09-21T04:08:52.762Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13532,39 +13532,38 @@
     "SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE": {
       "id": "SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE",
       "name": "도적공용-교란-회피-그림자망토-생존",
+      "description": "교란은 광역 피해, 회피는 회피 가능한 공격, 그림자 망토는 해로운 주문에 대응한다. 교묘함을 선택하면 회피에 20% 피해 감소, 교란에 비광역 20% 감소가 추가된다. 강철 위장은 약병·치유 물약·생명석의 회복만 25% 높이고, 위안의 어둠은 소멸 뒤 6초간 생명력 30%를 회복한다. 회복과 피해 감소, 특성 선택 전후를 구분한다.",
       "type": "synergy",
       "synergyType": "defensive-layering",
       "participants": [
         "1966",
         "5277",
         "31224",
-        "185311"
+        "185311",
+        "79008",
+        "193546",
+        "393970",
+        "1856",
+        "31230"
       ],
       "class": "Rogue",
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/교란",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/회피",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자망토",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/진홍색약병",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/낙법"
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/불굴의걸음",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/구사일생",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/강한체력",
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/교묘함",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/기민함",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/무감각한신경",
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/강철위장",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/위기감각",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/황급한준비",
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/위안의어둠",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/흔적도없이"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/구사일생"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Synergies\\도적공용-교란-회피-그림자망토-생존.md",

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:05:55.995Z",
+    "generatedAt": "2026-09-21T04:08:52.761Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -16286,14 +16286,14 @@
       "icon": "ability_rogue_turnthetables",
       "iconName": "ability_rogue_turnthetables",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 교묘함 (Elusiveness)",
+      "description": "회피에 받는 피해 20% 감소를 추가하고, 교란에 비광역 피해 20% 감소를 추가하는 지속 특성이다. 교란의 기본 광역 피해 감소와 이 특성의 비광역 감소를 구분한다. 회피의 기본 회피율 증가를 모든 피해 감소로 바꾸는 것이 아니라 별도의 감소 효과를 더한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16312,7 +16312,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -27805,14 +27805,14 @@
       "icon": "inv_misc_organ_11",
       "iconName": "inv_misc_organ_11",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강철 위장 (Iron Stomach)",
+      "description": "진홍색 약병, 치유 물약, 생명석으로 받는 회복량이 25% 증가하는 지속 특성이다. 모든 아군 치유나 모든 자가 치유가 25% 증가하는 효과가 아니다. 받는 피해 감소와도 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27831,7 +27831,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -74805,14 +74805,14 @@
       "icon": "spell_shadow_twilight",
       "iconName": "spell_shadow_twilight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위안의 어둠 (Soothing Darkness)",
+      "description": "소멸을 활성화한 뒤 6초에 걸쳐 최대 생명력의 30%를 회복하는 지속 특성이다. 일반 은신이나 어둠의 춤을 사용할 때마다 같은 회복이 생기는 효과가 아니다. 사용 순간 30%를 모두 회복하는 것도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74831,7 +74831,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {

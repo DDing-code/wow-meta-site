@@ -194,6 +194,19 @@ const utilityEffects = {
   '2094': /15야드.*1분.*방향 감각 상실.*2분/,
   '185311': /기력 20.*20%.*4초에 걸쳐.*30초/,
 };
+for (const [id, effect] of Object.entries({
+  '79008': /회피.*20%.*교란.*비광역.*20%/,
+  '193546': /진홍색 약병.*치유 물약.*생명석.*25%.*모든 아군 치유.*아니다/,
+  '393970': /소멸.*6초.*30%.*일반 은신.*어둠의 춤.*아니다/,
+})) {
+  assert.match(skills[id]?.description || '', effect, id);
+  assert.equal(skills[id].patch, '12.1', id);
+  assert.equal(skills[id].castTime, '지속 효과', id);
+}
+const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+assert.equal(commonDefense.patch, '12.1');
+for (const id of ['79008', '193546', '393970', '1856']) assert.ok(commonDefense.participants.includes(id), id);
+for (const id of ['14983', '193539']) assert.ok(!commonDefense.participants.includes(id), id);
 for (const [id, effect] of Object.entries(utilityEffects)) {
   assert.match(skills[id]?.description || '', effect, id);
   assert.equal(skills[id].patch, '12.1', id);

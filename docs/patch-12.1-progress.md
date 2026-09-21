@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue shared defensive talents, 2026-09-21
+
+- Compared current Korean/English Wowhead tooltips for Elusiveness 79008, Iron Stomach 193546 and Soothing Darkness 393970. Replaced generic descriptions with their actual effects and limitations. Elusiveness distinguishes Evasion's added reduction from Feint's non-AoE reduction; Iron Stomach applies only to its named healing sources; Soothing Darkness triggers from Vanish, not every stealth or Dance.
+- Rewrote the shared defensive relationship with nine relevant participants, removing Vigor/Alacrity as direct defensive effects. Canonical KB and generated descriptions now agree. Remaining common talents, fresh log evidence and whole-guide deployment are still open.
+
 ### Subtlety canonical build and graph correction, 2026-09-21
 
 - Rechecked Eleem's Icy Veins talent recommendations and fuu1's Wowhead rotation page. Replaced the May current-build note with scoped 12.1 author recommendations, not current usage statistics. Removed the stale graph's fixed center/degree claims and Deathstalker-only-single-target framing.
