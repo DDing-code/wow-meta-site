@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:16:10.124Z",
+    "generatedAt": "2026-09-21T05:21:32.173Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -96651,14 +96651,14 @@
       "icon": "inv_ability_totemicshaman_surgingtotem",
       "iconName": "inv_ability_totemicshaman_surgingtotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 쇄도하는 토템 (Surging Totem)",
+      "cooldown": "고양 1분 / 공용 기본 25초",
+      "castTime": "즉시",
+      "resourceCost": "공용 기본 마나 6.5% (전문화 보정 별도)",
+      "range": "40미터",
+      "description": "고양은 지정한 위치에 25초간 토템을 소환한다. 즉시 진동을 일으킨 뒤 6초마다 불길충격 피해를 주며, 5명을 초과하면 피해가 감소한다. 복원은 치유의 비를 대체하며 25초간 효과가 10% 증가한 치유의 비를 유지한다. 직접 사용하는 즉시 시전 기술이다. 고양의 운용 재사용 대기시간은 1분이다. 공용 툴팁의 25초를 그대로 고양에 적용하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96672,12 +96672,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/휘몰아치는정기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -96700,14 +96702,14 @@
       "icon": "inv_10_enchanting2_elementalswirl_color1",
       "iconName": "inv_10_enchanting2_elementalswirl_color1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 휘몰아치는 정기 (Whirling Elements)",
+      "description": "쇄도하는 토템의 정령 티끌을 능력으로 소비하는 지속 효과다. 고양의 바람은 다음 번개 화살·연쇄 번개·정기 작렬로 쇄도하는 화살 3발을 보낸다. 대지는 다음 세계의 분리 피해를 100% 높이고 불타는 토템을 소환한다. 불은 다음 용암 채찍으로 뜨거운 손을 8초 부여한다. 복원의 물은 다음 치유의 물결이 치유의 비 안의 아군 한 명을 50% 효율로 추가 치유하게 한다. 바람은 다음 치유 주문 시전 시간을 40% 줄이고, 대지는 다음 연쇄 치유가 맞힌 대상들에게 대지생명을 150% 효율로 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96726,7 +96728,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.006,
         "hasWikilinks": true
       },
       "source": {
@@ -96749,14 +96751,14 @@
       "icon": "ability_vehicle_electrocharge",
       "iconName": "ability_vehicle_electrocharge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 토템의 반향 (Totemic Rebound)",
+      "description": "고양은 번개 화살, 연쇄 번개, 정기 작렬 사용 시 일정 확률로 쇄도하는 화살을 쇄도하는 토템에 보내 토템의 피해를 10% 증가시키고, 대상에게 자연 피해를 준다. 토템 피해 증가는 중첩된다. 복원은 연쇄 치유의 마지막 대상에서 20미터 내 토템으로 연결한 뒤, 토템이 30미터 내 부상당한 아군에게 연쇄 치유를 시전하고 20미터 내 추가 2명에게 전달한다. 매분 약 10회라는 툴팁 표기는 고양의 시전당 확률이나 확정 발동 주기가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96775,7 +96777,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {
@@ -131103,14 +131105,14 @@
       "icon": "spell_frost_fireresistancetotem",
       "iconName": "spell_frost_fireresistancetotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 토템의 기세 (Totemic Momentum)",
+      "description": "고양은 용암 채찍 피해가 10% 증가하며, 소용돌이치는 무기 중첩을 하나 소비할 때마다 활성화된 뜨거운 손이 0.20초 연장된다. 10중첩을 소비하면 2초 연장된다. 뜨거운 손이 없는 상태에서 자원을 소비한다고 새로 발동시키는 효과는 아니다. 복원은 치유의 토템의 재사용 대기시간이 3초 감소한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131129,7 +131131,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
