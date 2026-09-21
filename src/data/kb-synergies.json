@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:44:23.536Z",
+    "generatedAt": "2026-09-21T18:48:31.416Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 593,
-    "rawTotalSynergies": 593,
+    "totalSynergies": 592,
+    "rawTotalSynergies": 592,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -226,7 +226,6 @@
       "ravager_bleed_amp": 2,
       "proc-charge-engine": 1,
       "bleed-application": 1,
-      "bleed-rage-sustain": 1,
       "aoe-cooldown-planning": 1,
       "slayer-cooldown-link": 1,
       "two-target-followup": 1,
@@ -267,7 +266,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 56
+      "Warrior": 55
     }
   },
   "synergies": {
@@ -19656,7 +19655,6 @@
         "12294",
         "7384",
         "184783",
-        "385008",
         "1269306",
         "1269307",
         "1269314"
@@ -19681,11 +19679,9 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/힘의-시험",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/강력한-무기",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269306",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269307",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투군주",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무예-기량",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/날카로운-날"
@@ -19728,8 +19724,6 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈"
@@ -19943,8 +19937,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\분쇄-유혈-천둥의-포효.md",
@@ -20131,14 +20124,13 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투군주",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/힘의-시험",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/꿰뚫기",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/날카로운-날",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/치명적-공격",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269306",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269307",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투군주",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무예-기량"
       ],
       "source": {
@@ -20177,49 +20169,6 @@
         "lastUpdate": ""
       }
     },
-    "warrior-arms-deep-wounds-skullsplitter": {
-      "id": "warrior-arms-deep-wounds-skullsplitter",
-      "name": "치명상-해골-쪼개기-피의-쇄도",
-      "type": "synergy",
-      "synergyType": "bleed-rage-sustain",
-      "participants": [
-        "1261060",
-        "260643",
-        "384361",
-        "772"
-      ],
-      "class": "Warrior",
-      "spec": "무기",
-      "specs": [
-        "Arms"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/해골-쪼개기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\치명상-해골-쪼개기-피의-쇄도.md",
-        "lastUpdate": ""
-      }
-    },
     "warrior-arms-bladestorm-warbreaker-aoe": {
       "id": "warrior-arms-bladestorm-warbreaker-aoe",
       "name": "칼날폭풍-거인의-강타-광역-쿨기",
@@ -20228,7 +20177,6 @@
       "participants": [
         "227847",
         "167105",
-        "385512",
         "845"
       ],
       "class": "Warrior",
@@ -20248,12 +20196,10 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-거인의-강타-광역-쿨기.md",

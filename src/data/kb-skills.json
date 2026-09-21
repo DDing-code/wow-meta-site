@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:44:23.535Z",
+    "generatedAt": "2026-09-21T18:48:31.414Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2983,
-    "rawTotalSkills": 2983,
+    "totalSkills": 2979,
+    "rawTotalSkills": 2979,
     "duplicateIds": [],
-    "totalSynergies": 593,
+    "totalSynergies": 592,
     "stats": {
-      "total": 2983,
+      "total": 2979,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 131,
+        "skill": 130,
         "talent": 996,
-        "spec-talent": 395,
+        "spec-talent": 392,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 271
+        "Warrior": 267
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,13 +96,13 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 49,
+        "Warrior-Arms": 45,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2901,
+        "withWikilinks": 2897,
         "withSynergies": 2014,
         "avgLinkDensity": "0.039"
       }
@@ -2019,9 +2019,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.026,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -3030,7 +3030,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 격돌은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 격돌 분노 20 근접 사정거리 즉시 전사 필요 요구 레벨 1 근접 무기 필요 적을 강하게 후려쳐 (전투력의 303.485%)의 물리 피해를 입힙니다. [ 도검의 폭풍 : 분노를10만큼 생성합니다. ]",
+      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 격돌은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  격돌은 기본 분노 20을 소모하는 즉시 근접 공격이며 근접 무기가 필요하다. 외부 툴팁에 남아 있는 삭제 특성의 조건부 분노 생성 문구는 12.1에서 선택 가능한 효과로 계산하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -3052,7 +3052,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -21790,9 +21790,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -39268,54 +39268,6 @@
         "lastUpdate": ""
       }
     },
-    "260643": {
-      "id": "260643",
-      "type": "skill",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "해골 쪼개기",
-      "koreanName": "해골 쪼개기",
-      "englishName": "",
-      "icon": "inv_skullsplitter",
-      "iconName": "inv_skullsplitter",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 해골 쪼개기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 해골 쪼개기 특성 근접 사정거리 즉시 21 초 재사용 대기시간 전사 필요 요구 레벨 15 근접 무기 필요 적의 해골을 강타하여 (전투력의 202.488%)의 물리 피해를 입힙니다. 해골 쪼개기 사용 시 10초 동안 대상에게 부여된 분쇄 및 치명상이 100%만큼 더 빨리 피해를 입히게 합니다. ( 150 / 10)의 분노를 생성합니다",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_skullsplitter.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_skullsplitter.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_skullsplitter.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_skullsplitter.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_skullsplitter.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\해골-쪼개기.md",
-        "lastUpdate": ""
-      }
-    },
     "260708": {
       "id": "260708",
       "type": "skill",
@@ -42185,9 +42137,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -59629,9 +59581,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -59727,9 +59679,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -59775,9 +59727,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -60027,9 +59979,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -60123,9 +60075,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -60227,9 +60179,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -62798,9 +62750,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.024,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -63453,54 +63405,6 @@
         "lastUpdate": ""
       }
     },
-    "385008": {
-      "id": "385008",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "힘의 시험",
-      "koreanName": "힘의 시험",
-      "englishName": "",
-      "icon": "ability_warrior_strengthofarms",
-      "iconName": "ability_warrior_strengthofarms",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "힘의 시험은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 힘의 시험 전사 필요 [ 거인의 강타 / 거인의 강타] 만료 시 [ 거인의 강타 / 거인의 강타] 지속시간 동안 공격에 소모한 10의 분노마다 힘이 1%만큼 증가합니다. 12초 동안 지속됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_strengthofarms.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_strengthofarms.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_strengthofarms.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_strengthofarms.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_strengthofarms.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\힘의-시험.md",
-        "lastUpdate": ""
-      }
-    },
     "385059": {
       "id": "385059",
       "type": "skill",
@@ -63700,54 +63604,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\장막속의질식.md",
-        "lastUpdate": ""
-      }
-    },
-    "385512": {
-      "id": "385512",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "도검의 폭풍",
-      "koreanName": "도검의 폭풍",
-      "englishName": "",
-      "icon": "ability_skyreach_fourblades",
-      "iconName": "ability_skyreach_fourblades",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "도검의 폭풍은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 도검의 폭풍 전사 필요 회전베기 및 소용돌이가 30%의 확률로 다음 회전베기 또는 소용돌이의 분노 소모량을 100%만큼 감소시킵니다. (효과 발동 확률: 30%)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_fourblades.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_skyreach_fourblades.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_skyreach_fourblades.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_skyreach_fourblades.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_fourblades.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\도검의-폭풍.md",
         "lastUpdate": ""
       }
     },
@@ -68305,54 +68161,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\주학의길.md",
-        "lastUpdate": ""
-      }
-    },
-    "388807": {
-      "id": "388807",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "폭풍의 벽",
-      "koreanName": "폭풍의 벽",
-      "englishName": "",
-      "icon": "spell_sandstorm",
-      "iconName": "spell_sandstorm",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "폭풍의 벽은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭풍의 벽 전사 필요 무기 막기에 성공할 때마다 최대 생명력의 5.0%를 회복합니다. 이 효과는 1초에 한 번씩만 발동됩니다. (1초 재사용 대기시간)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_sandstorm.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_sandstorm.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_sandstorm.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_sandstorm.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_sandstorm.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\폭풍의-벽.md",
         "lastUpdate": ""
       }
     },
