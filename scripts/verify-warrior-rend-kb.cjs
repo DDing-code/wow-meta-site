@@ -17,4 +17,25 @@ assert.match(skills[12950].description, /분쇄 적용은 이 특성의 효과�
 const guide = fs.readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
 assert(!guide.includes('소용돌이 연마가 분쇄 확산까지 연결'));
 assert(!guide.includes('풀 시작에서 분쇄가 여러 대상에 닿는지'));
+assert.equal(skills[394062], undefined, 'Retired shared Rend must not return');
+for (const [id, name, specs] of [
+  [1299025, '피의 폭풍', ['Fury']],
+  [384277, '피와 번개', ['Protection']],
+  [436707, '몰아치는 천둥', ['Fury', 'Protection']],
+]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].koreanName, name);
+  assert.deepEqual(skills[id].specs, specs);
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.equal(skills[1299025].icon, 'ability_ironmaidens_whirlofblood');
+assert.equal(skills[384277].icon, 'warrior_talent_icon_bloodandthunder');
+assert.match(skills[436707].description, /분노와 방어.*5%.*10%/);
+assert.match(skills[436707].description, /분노에만.*8.*피의 폭풍/);
+const { synergies } = require('../src/data/kb-synergies.json');
+assert(!JSON.stringify(synergies).includes('394062'));
+assert.deepEqual(synergies.warrior_fury_storm_of_blood.participants, ['190411', '1299025', '436707', '6343']);
+assert.deepEqual(synergies.warrior_protection_blood_and_thunder.participants, ['6343', '384277']);
+assert.deepEqual(synergies.warrior_fury_storm_of_blood.specs, ['Fury']);
+assert.deepEqual(synergies.warrior_protection_blood_and_thunder.specs, ['Protection']);
 console.log('Warrior Rend/Cleave/Improved Whirlwind corrections verified; full warrior migration remains open.');

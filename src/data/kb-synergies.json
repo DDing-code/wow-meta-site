@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:17:52.263Z",
+    "generatedAt": "2026-09-21T17:25:58.673Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 575,
-    "rawTotalSynergies": 575,
+    "totalSynergies": 577,
+    "rawTotalSynergies": 577,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -235,6 +235,7 @@
       "utility-magic-control": 1,
       "aoe-rage-loop": 1,
       "bleed-damage-context": 1,
+      "rend_application": 2,
       "rage-spend-enrage-engine": 1,
       "major-cooldown-rage-window": 1,
       "mountain-thane-thunder-window": 1,
@@ -258,7 +259,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 38
+      "Warrior": 40
     }
   },
   "synergies": {
@@ -19561,7 +19562,6 @@
         "390140",
         "382764",
         "382954",
-        "394062",
         "6343"
       ],
       "class": "Warrior",
@@ -19831,7 +19831,8 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사"
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -19840,8 +19841,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/분쇄"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\분쇄-유혈-천둥의-포효.md",
@@ -20449,6 +20449,34 @@
         "lastUpdate": ""
       }
     },
+    "warrior_protection_blood_and_thunder": {
+      "id": "warrior_protection_blood_and_thunder",
+      "name": "피와-번개-출혈-적용",
+      "type": "synergy",
+      "synergyType": "rend_application",
+      "participants": [
+        "6343",
+        "384277"
+      ],
+      "class": "Warrior",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/피와-번개"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\피와-번개-출혈-적용.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-fury-rampage-enrage": {
       "id": "warrior-fury-rampage-enrage",
       "name": "광란-격노-피의-갈증",
@@ -20729,6 +20757,38 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\피의-갈증-혈기-생존-출혈.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_fury_storm_of_blood": {
+      "id": "warrior_fury_storm_of_blood",
+      "name": "피의-폭풍-출혈-적용",
+      "type": "synergy",
+      "synergyType": "rend_application",
+      "participants": [
+        "190411",
+        "1299025",
+        "436707",
+        "6343"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-폭풍",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\피의-폭풍-출혈-적용.md",
         "lastUpdate": ""
       }
     },
