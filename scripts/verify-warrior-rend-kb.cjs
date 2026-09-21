@@ -439,4 +439,12 @@ assert.match(skills[1269310].description, /3중첩.*50%.*12초.*18초/);
 assert.ok(guide.includes('중첩마다 따로 시간이 지나므로'));
 assert.doesNotMatch(guide, /28,065|84,766|4,371|현재 고단 로그는 학살자가/);
 assert.ok(guide.includes('Icy Veins 분노 전사 12.1 특성 선택'));
+for (const id of [385703, 383486, 383852]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[385703].description, /8초.*출혈 피해.*20%.*새 출혈/);
+assert.match(skills[383486].description, /격노 상태.*자동 공격.*모든 기술/);
+assert.match(skills[383852].description, /1포인트.*2.5%.*2포인트.*5%.*치명타 확률/);
+assert.ok(guide.includes('로그의 빗나감과 근접 이탈을 구분'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
