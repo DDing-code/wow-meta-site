@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue control costs and conflicting defensive tooltip, 2026-09-21
+
+- Replaced generic Rushed Setup and Without a Trace notes with verified energy-cost and Vanish-charge effects. Changed their links to the actual affected skills instead of generic defensive relationships.
+- Danger Sense's live Korean tooltip says magic damage; English says any damage. Both agree on 20% chance and 20% reduction. Recorded this unresolved scope conflict in canonical KB and DB rather than presenting physical coverage as verified. Added focused assertions for all three descriptions.
+
 ### Rogue shared defensive talents, 2026-09-21
 
 - Compared current Korean/English Wowhead tooltips for Elusiveness 79008, Iron Stomach 193546 and Soothing Darkness 393970. Replaced generic descriptions with their actual effects and limitations. Elusiveness distinguishes Evasion's added reduction from Feint's non-AoE reduction; Iron Stomach applies only to its named healing sources; Soothing Darkness triggers from Vanish, not every stealth or Dance.

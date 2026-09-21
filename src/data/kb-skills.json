@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:08:52.761Z",
+    "generatedAt": "2026-09-21T04:10:52.505Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1958,
+        "withSynergies": 1961,
         "avgLinkDensity": "0.040"
       }
     }
@@ -53681,14 +53681,14 @@
       "icon": "ability_skyreach_piercing_rush",
       "iconName": "ability_skyreach_piercing_rush",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 황급한 준비 (Rushed Setup)",
+      "description": "급소 가격, 비열한 습격, 혼절시키기, 혼란의 기력 소모량을 20% 줄이는 지속 특성이다. 모든 제어 기술의 비용이나 쿨다운을 줄이는 효과가 아니며, 소멸의 충전이나 재사용 시간을 바꾸지도 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -53700,14 +53700,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_piercing_rush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -58289,14 +58291,14 @@
       "icon": "ability_vanish",
       "iconName": "ability_vanish",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 흔적도 없이 (Without a Trace)",
+      "description": "소멸의 최대 충전 횟수를 1회 늘리는 지속 특성이다. 기본 1회에서 2회 충전을 보유할 수 있게 된다. 소멸의 기본 쿨다운을 절반으로 줄이거나 은신 지속 시간을 두 배로 늘리는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58308,14 +58310,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_vanish.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -139008,14 +139012,14 @@
       "icon": "ability_rogue_wrongfullyaccused",
       "iconName": "ability_rogue_wrongfullyaccused",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위기 감각 (Danger Sense)",
+      "description": "받는 피해를 20% 확률로 부분 회피해 해당 피해를 20% 줄이는 지속 특성이다. 적용 범위는 현재 툴팁이 충돌한다. 한국어는 마법 피해, 영어는 모든 피해라고 표시한다. 확률과 감소율은 일치하지만 물리 피해에도 적용되는지는 추가 확인이 필요하다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139028,13 +139032,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/교묘함"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
