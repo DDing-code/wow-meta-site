@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:25:54.657Z",
+    "generatedAt": "2026-09-21T18:34:54.697Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2984,
-    "rawTotalSkills": 2984,
+    "totalSkills": 2985,
+    "rawTotalSkills": 2985,
     "duplicateIds": [],
-    "totalSynergies": 591,
+    "totalSynergies": 593,
     "stats": {
-      "total": 2984,
+      "total": 2985,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -18,7 +18,7 @@
         "skill": 132,
         "talent": 996,
         "spec-talent": 396,
-        "passive": 75,
+        "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
         "tier-set": 2,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 272
+        "Warrior": 273
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,7 +96,7 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 50,
+        "Warrior-Arms": 51,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
@@ -4346,18 +4346,18 @@
       ],
       "name": "방패 올리기",
       "koreanName": "방패 올리기",
-      "englishName": "",
+      "englishName": "Shield Block",
       "icon": "ability_defend",
       "iconName": "ability_defend",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "16초 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "분노 30",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 방패 올리기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 방패 올리기 분노 30 즉시 16 초 재사용 대기시간 1회 사용 가능 전사 필요 요구 레벨 6 방패를 세워 6초 동안 적의 모든 근접 공격을 방패 막기 합니다. [ 특화: 결정적 방어 : 결정적 방어를 할 수도 있습니다 ] [ 방어 : 활성화되어 있는 동안 방패 밀쳐내기의 공격력이 30%만큼 증가합니다 ]",
+      "description": "방패 올리기는 분노 30을 소모해 6초 동안 방패 막기가 가능한 근접 공격을 막게 한다. 막기는 피해를 완전히 없애는 면역이 아니며, 모든 마법이나 지속 피해에 적용되는 것도 아니다. 방어에서는 활성화 중 방패 밀쳐내기의 공격력이 30% 증가한다.  기본 재충전 시간은 16초다. 기본 툴팁에 1회 사용으로 표시되더라도 방어의 방패 올리기 지속 효과(231847)를 배우면 최대 2회 충전된다. 별도의 두 생존기가 아니라 한 기술의 충전 수 보강이다. 실제 탱킹 구간의 유지와 다음 사용에 필요한 분노를 함께 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4376,7 +4376,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.013,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -26383,18 +26383,18 @@
       ],
       "name": "고통 감내",
       "koreanName": "고통 감내",
-      "englishName": "",
+      "englishName": "Ignore Pain",
       "icon": "ability_warrior_renewedvigor",
       "iconName": "ability_warrior_renewedvigor",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "1초",
+      "castTime": "즉시",
+      "resourceCost": "분노 35",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 고통 감내은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 고통 감내 특성 분노 35 즉시 1 초 재사용 대기시간 전사 필요 무기, 분노 고통을 감내하고 싸워 받는 피해의 50%를 무시합니다. [0 * (1 + 유연성)]의 피해를 방지할 때까지 지속됩니다. 방어 고통을 감내하고 싸워 받는 피해의 50%를 무시합니다. [0 * (1 + 유연성)]의 피해를 방지할 때까지 ",
+      "description": "방어의 고통 감내는 분노 35를 소모하는 즉시 시전 기술이며 기본 쿨다운은 1초다. 흡수량이 남아 있는 동안 받은 피해의 50%를 흡수하고 나머지는 생명력에 들어온다. 반복 사용으로 흡수량을 쌓을 수 있지만 총량은 최대 생명력의 30%가 상한이다.  흡수량을 모두 쓰면 보호가 끝나므로 영구적인 50% 피해 감소가 아니다. 남은 흡수량이 상한에 가까우면 추가 사용의 일부가 낭비될 수 있다. 방패 올리기에 필요한 분노를 남기고 큰 피해 전에 흡수를 준비한다. 외부 툴팁의 미계산 흡수량 0을 실제 흡수량으로 기재하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -26413,7 +26413,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.006,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -36655,7 +36655,7 @@
     },
     "231847": {
       "id": "231847",
-      "type": "skill",
+      "type": "passive",
       "class": "Warrior",
       "spec": "Protection",
       "specs": [
@@ -36663,18 +36663,18 @@
       ],
       "name": "방패 올리기",
       "koreanName": "방패 올리기",
-      "englishName": "",
+      "englishName": "Shield Block",
       "icon": "ability_defend",
       "iconName": "ability_defend",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 방패 올리기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 방패 올리기 전사 필요 요구 레벨 10 방패 올리기가 2회 충전됩니다.",
-      "category": "ability",
+      "description": "방패 올리기의 최대 충전 수를 2회로 만드는 방어 전사 지속 효과다. 실제로 누르는 방패 올리기는 주문 2565이며 이 주문은 별도 액티브 생존기가 아니다.  충전이 2회라는 뜻이지 사용 한 번으로 유지시간이 자동으로 두 배가 된다는 뜻은 아니다. 능동 방어 사용 횟수를 셀 때 이 지속 효과를 시전으로 더하지 않는다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36693,7 +36693,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -146537,6 +146537,54 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Talents\\거룩한도구.md",
+        "lastUpdate": ""
+      }
+    },
+    "1277297": {
+      "id": "1277297",
+      "type": "skill",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "고통 감내",
+      "koreanName": "고통 감내",
+      "englishName": "Ignore Pain",
+      "icon": "ability_warrior_renewedvigor",
+      "iconName": "ability_warrior_renewedvigor",
+      "school": "",
+      "cooldown": "20초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "무기의 고통 감내는 분노를 소모하지 않는 즉시 시전 생존기로 기본 쿨다운은 20초다. 받는 피해의 50%를 흡수량에서 처리하며 12초가 지나거나 흡수량을 모두 소모하면 끝난다.  방어의 분노 35·1초 쿨다운 고통 감내와 다른 주문이다. 다음 피해 전에 사용하는 생존기로 이해하고 분노를 버리기 위해 반복하는 기술로 다루지 않는다. 외부 툴팁의 미계산 흡수량 0은 실제 흡수 효과가 없다는 뜻이 아니다. 캐릭터별 흡수량은 게임 내 툴팁으로 확인한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_renewedvigor.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_renewedvigor.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_renewedvigor.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_renewedvigor.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_renewedvigor.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\고통-감내.md",
         "lastUpdate": ""
       }
     },

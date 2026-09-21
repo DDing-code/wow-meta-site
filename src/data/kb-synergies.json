@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:25:54.658Z",
+    "generatedAt": "2026-09-21T18:34:54.698Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 591,
-    "rawTotalSynergies": 591,
+    "totalSynergies": 593,
+    "rawTotalSynergies": 593,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -216,6 +216,7 @@
       "slayer-hero-package": 1,
       "talent-mechanic": 3,
       "burst-window-core": 1,
+      "absorb-strength": 1,
       "execute-availability": 1,
       "hero-talent-damage": 4,
       "execute-window": 1,
@@ -229,6 +230,7 @@
       "slayer-cooldown-link": 1,
       "aoe-cooldown-planning": 1,
       "two-target-followup": 1,
+      "absorb-budget": 1,
       "damage-rage-sequence": 1,
       "active-mitigation": 1,
       "mountain-thane-thunder": 1,
@@ -265,7 +267,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 54
+      "Warrior": 56
     }
   },
   "synergies": {
@@ -19694,6 +19696,33 @@
         "lastUpdate": ""
       }
     },
+    "warrior_arms_ignore_pain_colossus": {
+      "id": "warrior_arms_ignore_pain_colossus",
+      "name": "고통감내-익숙한고통",
+      "type": "synergy",
+      "synergyType": "absorb-strength",
+      "participants": [
+        "1277297",
+        "429644"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/고통-감내"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\고통감내-익숙한고통.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-sudden-death-massacre-dance": {
       "id": "warrior-arms-sudden-death-massacre-dance",
       "name": "급살-대학살-마무리-조건",
@@ -20299,6 +20328,35 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\휩쓸기일격-강력한기세-부수적인피해.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_protection_ignore_pain_colossus": {
+      "id": "warrior_protection_ignore_pain_colossus",
+      "name": "고통감내-익숙한고통-흡수상한",
+      "type": "synergy",
+      "synergyType": "absorb-budget",
+      "participants": [
+        "190456",
+        "429644",
+        "2565"
+      ],
+      "class": "Warrior",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내",
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\고통감내-익숙한고통-흡수상한.md",
         "lastUpdate": ""
       }
     },
