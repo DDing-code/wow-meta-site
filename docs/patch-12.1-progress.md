@@ -1,5 +1,13 @@
 # 12.1 update status
 
+### Outlaw manuscript rewrite, 2026-09-21
+
+- Rebuilt 14 gameplay sections and both heroes' opener/single-target/AoE flows; canonical manuscript and site data match. Removed the unmeasured Outlaw uptime timeline.
+- Distinguished Gravedigger's Energy waiver from free Season 2 Dispatch, effective combo points from actual spending, and the heroes' normal Dispatch thresholds. Refreshed opener and utility relationships.
+- Current log samples, imported build validation and full cross-spec coverage remain unfinished. This entry does not claim production deployment or complete factual validation.
+- Release verification: prebuild and focused Outlaw checks passed; desktop six-mode switching and 390/320px mobile views showed no document overflow or broken images. Clean production build passed with no environment files, source maps or detected secret values.
+- Deployed to wowmeta.vercel.app: dpl_2oKEmor8EqLM7dQZB5MCLaaibPZP (Ready), bundle main.c623e64d.js. Live page shows 14 authored sections and the 2026-09-21 update. Deployment does not resolve the remaining log/build evidence gaps.
+
 ### Common resource mechanics and free Dispatch evidence, 2026-09-21
 
 - Reviewed Slice and Dice, Cut to the Chase, Deeper Stratagem, Vigor, Alacrity and Supercharger. Corrected Cut to the Chase to passive and kept each spec's triggering finisher/cooldown distinct. Fixed 12.1 trait data marks Vigor, Alacrity and Supercharger as two-rank talents.

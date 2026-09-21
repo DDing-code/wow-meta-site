@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:55:45.299Z",
+    "generatedAt": "2026-09-21T02:29:36.786Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13864,7 +13864,8 @@
     },
     "rogue_outlaw_defensive_mythic_utility": {
       "id": "rogue_outlaw_defensive_mythic_utility",
-      "name": "교란-그림자망토-쐐기유틸",
+      "name": "광역 공격을 이어 가기 위한 방어와 위치",
+      "description": "교란은 광역 피해, 회피는 회피 가능한 공격, 그림자 망토는 해로운 주문 효과에 대응한다. 갈고리 던지기는 안전한 공격 위치를 잡는 수단이며 발차기와 독칼은 차단·격노 대응이다. 이들을 같은 피해 감소로 합산하거나 광역 공격의 필수 순서로 넣지 않는다.",
       "type": "synergy",
       "synergyType": "defensive_utility_matrix",
       "participants": [
@@ -13873,31 +13874,25 @@
         "5277",
         "1766",
         "5938",
-        "2094",
-        "6770",
-        "57934",
         "195457",
         "13877"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
       "importance": 78,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/폭풍의칼날",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/교란",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자망토",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/회피",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/발차기",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/갈고리던지기",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/폭풍의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -13958,41 +13953,42 @@
     },
     "rogue_outlaw_opener_alignment": {
       "id": "rogue_outlaw_opener_alignment",
-      "name": "난도질-오프닝정렬",
+      "name": "초기 상태에서 첫 마무리 일격으로",
+      "description": "아드레날린 촉진 연마의 점수로 난도질을 준비하고, 납 주사위의 다음 뼈주사위 보상을 확인한다. 첫 미간 적중 뒤 실제 점수를 보충해 광기의 학살자로 이어간다. 신속한 결말의 난도질 유지는 속결에 연결되므로 오프닝 전체를 매 쿨기마다 반복하지 않는다.",
       "type": "synergy",
       "synergyType": "opener_state_alignment",
       "participants": [
         "315496",
         "13750",
+        "395422",
+        "256170",
         "315508",
-        "271877",
         "193315",
         "185763",
         "315341",
+        "51690",
         "2098",
-        "79096",
+        "51667",
         "13877"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
       "importance": 82,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/폭풍의칼날"
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/광기의학살자",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/비장의일격"
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/아드레날린촉진연마"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\난도질-오프닝정렬.md",
@@ -14171,7 +14167,7 @@
     "rogue_outlaw_fatebound_dispatch": {
       "id": "rogue_outlaw_fatebound_dispatch",
       "name": "무법 마무리 일격과 동전 보상",
-      "description": "무법은 실제로 5점 이상 소비한 마무리 일격에서 동전을 던진다. 속결은 선택 특성에 따라 같은 면 연속 확률과 추가 동전으로 연결되고, 아드레날린 촉진은 곧게 선 동전으로 수직 동전을 만든다. 행운 주화 활성 중 동전은 다음 주화 준비 횟수에 포함되지 않는다.",
+      "description": "무법은 5점 이상 마무리 일격에서 동전을 던진다. 무료 속결은 실제 차감과 효과상 점수를 구분하며 고정 시뮬레이터는 동전 조건에 효과상 점수를 사용한다. 속결의 추가 동전과 아드레날린 촉진의 수직 동전, 행운 주화 활성 중 다음 주화 횟수 제외를 별도로 확인한다.",
       "type": "synergy",
       "synergyType": "hero_talent_finisher",
       "participants": [

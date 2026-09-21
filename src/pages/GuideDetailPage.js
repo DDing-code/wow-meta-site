@@ -1459,18 +1459,6 @@ const SPECIALIST_CHARTS = {
       ['체크 포인트', '광란 지연, 격노 공백, 분노 과충전, 피의 갈증/분노의 강타 충전 방치, 광역 쿨기 없는 광란을 봅니다.'],
     ],
   },
-  'rogue-outlaw': {
-    id: 'uptime',
-    title: '마무리 기술과 쿨기 환급',
-    sectionHeading: '잠들지 않는 칼날 흐름',
-    sectionIntro: '무법 도적은 마무리 기술이 끝이 아니라 다음 쿨기를 앞당기는 전문화입니다. 차트는 연계 점수 소비와 쿨기 환급이 실제로 이어지는지 보여 줍니다.',
-    caption: '사악한 일격/권총 사격 생성, 5~6점 마무리 기술, 뼈주사위, 미간 적중, 아드레날린 촉진, 폭풍의 칼날 전환을 확인합니다.',
-    definition: [
-      ['의미', '잠들지 않는 칼날은 무법의 쿨기 환급 구조입니다. 연계 점수 소비가 다음 쿨기 구간을 앞당깁니다.'],
-      ['읽는 법', '마무리 기술 빈도와 연계 점수 과충전을 먼저 보고, 미간 적중과 아드레날린 촉진이 늦어졌는지 이어서 봅니다.'],
-      ['체크 포인트', '연계 점수 과충전, 6점 방치, 미간 적중 지연, 뼈주사위 공백, 폭풍의 칼날 대상 수 손실을 봅니다.'],
-    ],
-  },
   'rogue-subtlety': {
     id: 'cooldown',
     title: '어둠의 춤 극딜 묶음',
@@ -1776,7 +1764,7 @@ function getInlineChartPlan(guide, data) {
     },
   ];
 
-  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow', 'rogue-assassination'].includes(guide.id)) return plan;
+  if (['mage-arcane', 'mage-fire', 'mage-frost', 'deathknight-frost', 'deathknight-unholy', 'demonhunter-havoc', 'druid-feral', 'evoker-augmentation', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'monk-windwalker', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'paladin-retribution', 'priest-shadow', 'rogue-assassination', 'rogue-outlaw'].includes(guide.id)) return plan;
 
   const specialistChart = SPECIALIST_CHARTS[guide.id];
   if (specialistChart) {
@@ -3786,100 +3774,7 @@ function getUptimeRows(guide, data) {
     ];
   }
 
-  if (guide.id === 'rogue-outlaw') {
-    return [
-      {
-        label: '중심 환급',
-        skill: findSkillByNames(data, ['잠들지 않는 칼날']),
-        note: '5~6점 마무리 기술이 다음 쿨기 구간을 앞당기는 무법의 쿨기 환급 구조입니다.',
-        segments: [[7, 8], [22, 8], [38, 8], [54, 8], [70, 8], [86, 8]],
-      },
-      {
-        label: '속도 구간',
-        skill: findSkillByNames(data, ['아드레날린 촉진']),
-        note: '기력 회복과 공격 속도를 올려 더 많은 생성기와 마무리 기술을 가능하게 합니다.',
-        segments: [[0, 18], [46, 18], [84, 14]],
-      },
-      {
-        label: '상태 판정',
-        skill: findSkillByNames(data, ['뼈주사위']),
-        note: '1/2/3단계에 따라 생성, 피해, 잠들지 않는 칼날 회복 속도 가치가 달라집니다.',
-        segments: [[2, 30], [36, 30], [70, 26]],
-      },
-      {
-        label: '상태 보존',
-        skill: findSkillByNames(data, ['도박의 연속']),
-        note: '좋은 뼈주사위 단계가 있을 때 유지 시간을 늘려 엔진을 안정화합니다.',
-        segments: [[18, 10], [58, 10]],
-      },
-      {
-        label: '기본 생성',
-        skill: findSkillByNames(data, ['사악한 일격']),
-        note: '기회 발동과 연계 점수 생성을 여는 기본 생성기입니다.',
-        segments: [[5, 6], [16, 6], [28, 6], [40, 6], [52, 6], [64, 6], [76, 6], [88, 6]],
-      },
-      {
-        label: '발동 처리',
-        skill: findSkillByNames(data, ['권총 사격']),
-        note: '기회 6중첩 또는 낮은 연계 점수의 3중첩 상황에서 우선 처리합니다.',
-        segments: [[12, 7], [34, 7], [57, 7], [80, 7]],
-      },
-      {
-        label: '은신 생성',
-        skill: findSkillByNames(data, ['매복', '숨겨진 기회']),
-        note: '숨겨진 기회와 배포가 있을 때 사악한 일격보다 강한 생성 흐름으로 들어옵니다.',
-        segments: [[24, 8], [61, 8]],
-      },
-      {
-        label: '큰 마무리',
-        skill: findSkillByNames(data, ['미간 적중']),
-        note: '쿨다운 손실을 막아야 하는 중요한 마무리 기술입니다.',
-        segments: [[20, 9], [51, 9], [82, 9]],
-      },
-      {
-        label: '주 소비기',
-        skill: findSkillByNames(data, ['속결']),
-        note: '잠들지 않는 칼날 환급을 꾸준히 돌리는 가장 반복적인 소비 출구입니다.',
-        segments: [[29, 7], [43, 7], [66, 7], [91, 7]],
-      },
-      {
-        label: '되감기',
-        skill: findSkillByNames(data, ['준비']),
-        note: '아드레날린 촉진, 미간 적중, 폭풍의 칼날, 질풍 칼날, 광기의 학살자를 실제로 되감습니다.',
-        segments: [[42, 10], [78, 10]],
-      },
-      {
-        label: '광역 게이트',
-        skill: findSkillByNames(data, ['폭풍의 칼날']),
-        note: '단일 우선순위를 다중 대상에 확산하는 전환 상태입니다.',
-        segments: [[9, 15], [37, 15], [67, 15]],
-      },
-      {
-        label: '돌진 쿨기',
-        skill: findSkillByNames(data, ['질풍 칼날']),
-        note: '쿨다운 지연 없이 써야 하는 피해/이동 보강 쿨기입니다.',
-        segments: [[14, 8], [48, 8], [84, 8]],
-      },
-      {
-        label: '처형 쿨기',
-        skill: findSkillByNames(data, ['광기의 학살자']),
-        note: '기만자 선택지에서 고연계 점수 소비와 기력 과충전을 함께 보는 구간입니다.',
-        segments: [[31, 12], [73, 12]],
-      },
-      {
-        label: '기만자',
-        skill: findSkillByNames(data, ['무형검', '최후의 일격']),
-        note: '무형검 4회 이후 최후의 일격 속결을 별도 가치로 추적합니다.',
-        segments: [[11, 20], [45, 20], [79, 18]],
-      },
-      {
-        label: '운명결속',
-        skill: findSkillByNames(data, ['운명의 손', '행운 주화']),
-        note: '5점 이상 마무리 기술이 동전 횟수와 행운 주화 기대값을 만듭니다.',
-        segments: [[18, 18], [52, 18], [86, 12]],
-      },
-    ];
-  }
+  if (guide.id === 'rogue-outlaw') return [];
 
 
 

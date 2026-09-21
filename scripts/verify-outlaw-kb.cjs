@@ -128,4 +128,28 @@ assert.match(skills['51667'].description, /암살의 독살.*무법의 속결.*�
 for (const id of ['14983', '193539', '470347']) assert.match(skills[id].description, /1등급.*2등급/);
 assert.match(skills['1296589'].description, /시뮬레이터.*차감 0.*효과상.*로그 검증을 대신하지 않는다/);
 assert.equal(synergies['SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS'].patch, '12.1');
-console.log(`Outlaw review: ${reviewed.length} local, ${trickster.length + fatebound.length} shared hero, ${common.length} common records and 11 relationships passed; manuscript remains pending`);
+const fs = require('node:fs');
+const path = require('node:path');
+const source = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8')
+  .replace(/\bexport const\b/g, 'const').replace(/\bexport function\b/g, 'function')
+  .replace(/export default [^;]+;/g, '');
+const manuscript = new Function(source + '\nreturn guideManuscripts;')()['rogue-outlaw'];
+const canonical = path.resolve(__dirname, '../../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/10-도적/무법/Meta/guide-12.1.json');
+if (fs.existsSync(canonical)) assert.deepEqual(manuscript, JSON.parse(fs.readFileSync(canonical, 'utf8')));
+assert.equal(manuscript.patch, '12.1');
+assert.equal(manuscript.heroBranches.length, 2);
+assert.equal(manuscript.blocks.length, 14);
+for (const hero of manuscript.heroBranches) {
+  for (const entries of [hero.opener.steps, hero.singleTarget.priority, hero.aoe.priority]) {
+    assert.ok(entries.length >= 10, hero.label);
+    for (const entry of entries) {
+      assert.ok(skills[entry.skillId]?.specs.includes('Outlaw'), entry.skillId);
+      assert.notEqual(skills[entry.skillId].castTime, '지속 효과', entry.skillId);
+      assert.notEqual(skills[entry.skillId].type, 'passive', entry.skillId);
+    }
+  }
+  assert.match(hero.singleTarget.priority.find(step => step.skillId === '315341').note, /6점/);
+  assert.match(hero.singleTarget.priority.find(step => step.skillId === '2098').note, /세트/);
+}
+assert.match(JSON.stringify(manuscript.blocks), /기력.*점수/);
+console.log(`Outlaw review: ${reviewed.length} local, ${trickster.length + fatebound.length} shared hero, ${common.length} common records; manuscript and six combat flows passed. Fresh log comparison remains pending.`);

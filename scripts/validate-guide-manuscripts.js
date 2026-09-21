@@ -30,6 +30,7 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['priest-discipline', '12.1'],
   ['priest-shadow', '12.1'],
   ['rogue-assassination', '12.1'],
+  ['rogue-outlaw', '12.1'],
   ['warlock-affliction', '12.1'],
   ['warlock-demonology', '12.1'],
   ['warlock-destruction', '12.1'],
