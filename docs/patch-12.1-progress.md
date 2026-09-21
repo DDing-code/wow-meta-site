@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Subtlety builders, finishers and support effects, 2026-09-21
+
+- Manually checked 17 additional Korean/English tooltips, bringing local reviewed records to 31. Separated active Shuriken Storm 197835 from passive rank-2 1279401; corrected passive Shuriken Tornado, Premeditation and gradual Master of Shadows Energy.
+- Retired old Slice and Dice 5171 from generated skills while preserving a canonical redirect note. Current 315496 grants attack speed, not direct Energy regeneration; Cut to the Chase grants Slice and Dice through Eviscerate. Removed two obsolete public cast steps and the corresponding Energy claim.
+- Rebuilt three relationships (six reviewed total), separating armor ignore, extra Shadow damage and the two-target Potent Powder condition. Full manuscript, remaining talents/Deathstalker/Season 2 data, current build and log evidence still require review. No production deployment is claimed for this partial batch.
+- Validation: focused 31-record/six-relationship checks and prebuild passed. Online official-tooltip check covered 58 Subtlety notes with zero errors/warnings; this confirms the validator's name/icon checks, not all gameplay claims. The general offline check still reports 23 warnings, and 27 local talents remain on the old patch.
+
 ### Subtlety core data audit, 2026-09-21
 
 - Manually rechecked 14 Korean/English tooltip records. Fixed active Goremaw's Bite, Shadow Techniques storage/Energy, Relentless Strikes Energy, Shadowcraft frequency, conditional First Dance duration, Lingering Shadow AoE coverage and the three Ancient Arts nodes.

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T02:42:20.924Z",
+    "generatedAt": "2026-09-21T03:01:33.359Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14711,38 +14711,40 @@
     },
     "rogue_subtlety_slice_shadowblades_resource": {
       "id": "rogue_subtlety_slice_shadowblades_resource",
-      "name": "난도질-어둠의칼날-자원관리",
+      "name": "절개·난도질과 자동 공격 자원 공급",
+      "description": "신속한 결말을 배운 잠행은 절개로 소비한 점수당 난도질 3초를 얻는다. 난도질은 공격 속도 50%를 제공하며 직접 기력 회복률을 높이지 않는다. 자동 공격에서 발동하는 그림자 기술, 마무리 일격의 가혹한 일격 환급, 춤 진입 시 어둠의 대가 회복을 서로 다른 자원 공급 경로로 구분한다.",
       "type": "synergy",
       "synergyType": "resource_cooldown_router",
       "participants": [
-        "5171",
-        "121471",
-        "185313",
-        "185438",
+        "315496",
+        "51667",
         "196819",
         "196912",
+        "121471",
+        "185438",
         "58423",
         "196976",
         "394320"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
       "importance": 84,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/난도질",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/신속한결말",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자기술",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/잠행/Talents/가혹한일격",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/비밀책략"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠의대가"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\난도질-어둠의칼날-자원관리.md",
@@ -14905,36 +14907,38 @@
     },
     "rogue_subtlety_eviscerate_mastery_finisher": {
       "id": "rogue_subtlety_eviscerate_mastery_finisher",
-      "name": "절개-특화집행자-마무리일격",
+      "name": "약점 포착과 마무리 일격의 피해 구성",
+      "description": "특화: 집행자는 마무리 일격 피해를 높이고, 약점 포착은 자신의 공격이 대상 방어도를 무시하게 한다. 어둠에 물든 마무리 일격은 약점 포착 대상에게 절개와 검은 화약의 추가 암흑 피해 30%를 붙인다. 방어도 무시와 추가 피해는 다른 효과이며 은밀한 기술에 추가 암흑 피해 특성까지 일괄 적용하지 않는다.",
       "type": "synergy",
       "synergyType": "finisher_mastery_router",
       "participants": [
         "196819",
+        "319175",
         "76808",
         "91023",
         "382512",
         "382511",
-        "382525",
-        "469642",
-        "441423",
-        "457058"
+        "394320"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
       "importance": 88,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/특화집행자",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/특화집행자"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠에물든마무리일격"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착연마",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠에물든마무리일격",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/비밀책략"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\절개-특화집행자-마무리일격.md",
@@ -14979,26 +14983,29 @@
     },
     "rogue_subtlety_shuriken_blackpowder": {
       "id": "rogue_subtlety_shuriken_blackpowder",
-      "name": "표창폭풍-검은화약",
+      "name": "표창 폭풍과 대상 수별 마무리 일격",
+      "description": "표창 폭풍은 적중 인원에 따라 점수를 생성하고 검은 화약은 그 점수를 주변 피해로 바꾼다. 표창 폭풍 연마의 치명타로 약점 포착을 부여하면 어둠에 물든 마무리 일격의 추가 암흑 피해까지 연결된다. 두 대상에서는 강력한 가루 유무를 따로 판단하고, 다수 대상에서도 영웅 특성의 강화 절개 예외를 남긴다.",
       "type": "synergy",
       "synergyType": "aoe_builder_finisher",
       "participants": [
         "197835",
+        "1279401",
+        "319951",
+        "91023",
+        "382511",
         "319175",
         "1264764",
         "1265952",
-        "382525",
-        "280719",
         "196819"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
       "importance": 86,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍",
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약",
@@ -15006,7 +15013,9 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/고대의기술"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/표창폭풍연마",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠에물든마무리일격",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/강력한가루"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\표창폭풍-검은화약.md",
