@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:50:56.307Z",
+    "generatedAt": "2026-09-21T01:55:45.297Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,12 +13,12 @@
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 559,
+        "atomic-skill": 558,
         "proc": 29,
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 68,
+        "passive": 69,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -7431,14 +7431,14 @@
       "icon": "ability_rogue_vigor",
       "iconName": "ability_rogue_vigor",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강한 체력 (Vigor)",
+      "description": "기력 최대치와 회복 속도를 높이는 공용 특성이다. 1등급 툴팁은 최대치 50 증가와 회복 속도 5% 증가를 표시하며 최대 2등급이다. 이름과 달리 체력이나 최대 생명력을 직접 올리는 특성이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7455,9 +7455,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -13418,7 +13418,7 @@
     },
     "51667": {
       "id": "51667",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Rogue",
       "spec": "공용",
       "specs": [
@@ -13432,14 +13432,14 @@
       "icon": "ability_rogue_cuttothechase",
       "iconName": "ability_rogue_cuttothechase",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 신속한 결말 (Cut to the Chase)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "암살의 독살, 무법의 속결, 잠행의 절개가 소비한 연계 점수당 난도질 3초를 부여하는 지속 효과다. 직접 사용하는 버튼이 아니며 모든 마무리 일격이 같은 방식으로 난도질을 부여하는 것은 아니다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13458,7 +13458,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -27635,14 +27635,14 @@
       "icon": "archaeology_5_0_changkiboard",
       "iconName": "archaeology_5_0_changkiboard",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심오한 책략 (Deeper Stratagem)",
+      "description": "최대 연계 점수를 1 늘리고 마무리 일격 피해를 5% 높인다. 5점을 초과해 소비하는 마무리 일격은 추가 점수에 따른 효과를 받는다. 다른 최대 점수 특성을 포함하지 않고 이 특성만으로 모든 전문화의 상한을 7점이라고 정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27659,9 +27659,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -27784,14 +27784,14 @@
       "icon": "ability_paladin_speedoflight",
       "iconName": "ability_paladin_speedoflight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기민함 (Alacrity)",
+      "description": "가속을 높이는 공용 지속 특성이다. 1등급 툴팁은 1.5%를 표시하며 최대 2등급이다. 현재 설명에는 마무리 일격을 사용해 가속 중첩을 쌓는 조건이 없으므로 과거의 중첩 유지 방식으로 안내하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27808,9 +27808,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.044,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -43217,12 +43217,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "연계 점수",
+      "resourceCost": "기력 25 + 연계 점수",
       "range": "",
-      "description": "# 난도질 (Slice and Dice)",
+      "description": "기력 25와 연계 점수를 소비해 공격 속도를 50% 높이는 마무리 일격이다. 1점은 12초이며 점수당 6초씩 늘어 5점은 36초, 6점은 42초, 7점은 48초다. 가속 수치가 50% 증가하는 효과와는 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43239,9 +43239,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.094,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -112236,14 +112236,14 @@
       "icon": "inv_engineering_90_electrifiedether",
       "iconName": "inv_engineering_90_electrifiedether",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 초자력 충전기 (Supercharger)",
+      "description": "무법의 아드레날린 촉진, 암살의 왕의 파멸, 잠행의 어둠의 춤이 연계 점수를 과충전한다. 1등급은 1점을 과충전하며 최대 2등급이다. 공격 마무리 일격이 과충전을 소비하면 2점을 추가 소비한 것처럼 작동한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112262,7 +112262,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -149713,7 +149713,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "사악한 일격과 매복이 20% 확률로 다음 속결을 자원 소모 없이 최대 연계 점수를 소비한 것과 같은 피해를 주도록 강화한다. 시즌 2 장비 4세트 지속 효과이며 툴팁의 100밀리초는 내부 발동 제한이지 누르는 기술의 쿨다운이 아니다.",
+      "description": "사악한 일격과 매복이 20% 확률로 다음 속결을 자원 소모 없이 최대 연계 점수를 소비한 것과 같은 피해를 주도록 강화한다. 시즌 2 장비 4세트 지속 효과이며 툴팁의 100밀리초는 내부 발동 제한이지 누르는 기술의 쿨다운이 아니다. 확인한 시뮬레이터 구현은 실제 점수 차감 0과 효과상 최대 점수를 분리하며 잠들지 않는 칼날·운명의 손에 효과상 점수를 사용한다. 이 구현 대조는 최신 실전 로그 검증을 대신하지 않는다.",
       "category": "passive",
       "tags": [],
       "patch": "12.1",
@@ -149738,7 +149738,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.015,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {

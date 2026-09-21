@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:50:56.308Z",
+    "generatedAt": "2026-09-21T01:55:45.299Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13569,37 +13569,37 @@
     },
     "SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS": {
       "id": "SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS",
-      "name": "도적공용-난도질-신속한결말-마무리자원",
+      "name": "공격 속도 유지와 마무리 일격의 자원",
+      "description": "난도질은 공격 속도를 높이며 신속한 결말은 암살 독살·무법 속결·잠행 절개에서 점수당 3초를 부여한다. 심오한 책략의 실제 점수 상한, 초자력 충전기의 효과상 추가 점수, 강한 체력의 기력 상한은 서로 다른 자원 효과다.",
       "type": "synergy",
       "synergyType": "finisher-resource",
       "participants": [
         "315496",
         "51667",
         "193531",
-        "381623"
+        "470347",
+        "14983",
+        "193539"
       ],
       "class": "Rogue",
       "spec": "Common",
+      "specs": [
+        "Assassination",
+        "Outlaw",
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/신속한결말"
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/신속한결말",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/심오한책략",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/엉겅퀴차",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/전율의추구자",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/절약정신",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/울려퍼지는문책",
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/초자력충전기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/날렵한손가락",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/빠른손가락",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/신속의베기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/설욕",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/암흑심장",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/강한체력",
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/기민함"
       ],
       "source": {

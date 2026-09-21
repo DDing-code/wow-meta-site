@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Common resource mechanics and free Dispatch evidence, 2026-09-21
+
+- Reviewed Slice and Dice, Cut to the Chase, Deeper Stratagem, Vigor, Alacrity and Supercharger. Corrected Cut to the Chase to passive and kept each spec's triggering finisher/cooldown distinct. Fixed 12.1 trait data marks Vigor, Alacrity and Supercharger as two-rank talents.
+- Rebuilt the common finisher/resource relationship. Slice and Dice is 25 Energy plus combo points, 50% attack speed and 12/18/24/30/36 seconds at 1–5 points; Cut to the Chase grants 3 seconds per point through Envenom/Dispatch/Eviscerate respectively.
+- Fixed-SHA SimulationCraft inspection shows free Season 2 Dispatch sets actual CP loss to zero but snapshots maximum effective CP; Restless Blades and Hand of Fate use effective CP. Recorded this as implementation evidence, not fresh live-log proof. Ruthlessness still contains a dated PTR/bugs branch, so do not generalize every downstream proc.
+- Regression scope: 54 local Outlaw, 35 shared hero, six common records and 11 relationships. Full Outlaw manuscript, current build/log evidence and remaining common utility coverage are still pending; no production rollout.
+
 ### Shared Fatebound effect audit, 2026-09-21
 
 - Rechecked 17 Fatebound effects in Korean/English tooltips; preserved three already-reviewed notes and manually replaced 14 generic descriptions. Outlaw/Assassination differ in Overflowing Purse (4%/15%), Rush to the Inevitable (2/10 vs 5/15 Energy), Edge Case triggers and generator modifiers.

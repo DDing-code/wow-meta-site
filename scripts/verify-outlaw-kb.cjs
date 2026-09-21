@@ -115,4 +115,17 @@ for (const id of ['rogue_outlaw_fatebound_dispatch', 'SY-ROGUE-HERO-FATEBOUND-HA
     assert.ok(skills[spell]?.specs.includes(spec), `${id}:${spell}:${spec}`);
   }
 }
-console.log(`Outlaw review: ${reviewed.length} local, ${trickster.length} shared Trickster, ${fatebound.length} shared Fatebound records and 10 relationships passed; manuscript remains pending`);
+const common = ['315496', '51667', '193531', '14983', '193539', '470347'];
+for (const id of common) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.deepEqual([...skills[id].specs].sort(), ['Assassination', 'Outlaw', 'Subtlety'], id);
+  assert.ok(skills[id].description.length > 70, id);
+}
+assert.equal(skills['315496'].resourceCost, '기력 25 + 연계 점수');
+assert.match(skills['315496'].description, /50%.*12초.*36초.*42초.*48초/);
+assert.equal(skills['51667'].type, 'passive');
+assert.match(skills['51667'].description, /암살의 독살.*무법의 속결.*잠행의 절개.*3초/);
+for (const id of ['14983', '193539', '470347']) assert.match(skills[id].description, /1등급.*2등급/);
+assert.match(skills['1296589'].description, /시뮬레이터.*차감 0.*효과상.*로그 검증을 대신하지 않는다/);
+assert.equal(synergies['SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS'].patch, '12.1');
+console.log(`Outlaw review: ${reviewed.length} local, ${trickster.length + fatebound.length} shared hero, ${common.length} common records and 11 relationships passed; manuscript remains pending`);
