@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:40:05.871Z",
+    "generatedAt": "2026-09-21T16:45:14.238Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2975,
     "rawTotalSkills": 2975,
     "duplicateIds": [],
-    "totalSynergies": 573,
+    "totalSynergies": 574,
     "stats": {
       "total": 2975,
       "byType": {
@@ -15506,9 +15506,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -141925,14 +141925,14 @@
       "icon": "ability_evoker_earthensky",
       "iconName": "ability_evoker_earthensky",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대지의 합의 (Earthen Accord)",
+      "description": "생명 폭발 자체 치유량을 30% 높이고, 다음 주문의 추가 치유 효과에 20%p를 더한다. 12.1에서는 기본 25%에 20%p를 더해 다음 성난 해일·연쇄 치유·치유의 물결의 치유량이 45% 증가한다. 25%에 1.2를 곱한 30%가 아니다. 생명 폭발 자체 치유 증가와 다음 주문 강화는 서로 다른 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141949,9 +141949,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.027,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {

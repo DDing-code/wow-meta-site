@@ -23,4 +23,13 @@ assert.match(skills[1312843].description,/3초.*1267016/);
 assert.equal(skills[1312843].icon,'ability_shaman_manatidetotem');
 const synergies = require('../src/data/kb-synergies.json');
 assert(!JSON.stringify(synergies).includes('1252841'), 'Removed talent must have no graph edges');
+assert.equal(skills[1271104].patch,'12.1');
+assert.equal(skills[1271104].castTime,'지속 효과');
+assert.match(skills[1271104].description,/30%.*20%p.*45%/);
+const accord = synergies.synergies.shaman_restoration_unleash_earthen_accord;
+assert.equal(accord.patch,'12.1');
+assert.deepEqual(accord.participants,['73685','1271104','61295','1064','77472']);
+for (const id of ['shaman_restoration_sustain_shields','shaman_restoration_spiritlink_raid']) {
+  assert(!synergies.synergies[id].participants.includes('1271104'), 'Unrelated defensive hub must not claim Earthen Accord');
+}
 console.log('Restoration core spells and talent migration verified; full guide audit remains open.');

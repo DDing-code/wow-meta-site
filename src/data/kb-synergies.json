@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:40:05.873Z",
+    "generatedAt": "2026-09-21T16:45:14.239Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 573,
-    "rawTotalSynergies": 573,
+    "totalSynergies": 574,
+    "rawTotalSynergies": 574,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -189,6 +189,7 @@
       "totem_control_utility": 1,
       "party_cooldown": 1,
       "sustain_maintenance": 1,
+      "next_heal_amplification": 1,
       "farseer_ancestor_healing": 1,
       "riptide_chain_heal": 1,
       "totemic_area_healing": 1,
@@ -254,7 +255,7 @@
       "성기사": 10,
       "Priest": 52,
       "Rogue": 43,
-      "Shaman": 35,
+      "Shaman": 36,
       "Warlock": 60,
       "Warrior": 38
     }
@@ -16150,7 +16151,6 @@
         "52127",
         "16196",
         "382020",
-        "1271104",
         "382482",
         "207401",
         "212048",
@@ -16177,7 +16177,6 @@
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지생명의무기연마",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의조화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의합의",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지술사",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/생명의흐름",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/선조의활력",
@@ -16185,6 +16184,41 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\대지생명의무기-물의보호막-지속유지.md",
+        "lastUpdate": ""
+      }
+    },
+    "shaman_restoration_unleash_earthen_accord": {
+      "id": "shaman_restoration_unleash_earthen_accord",
+      "name": "생명폭발-대지의합의",
+      "type": "synergy",
+      "synergyType": "next_heal_amplification",
+      "participants": [
+        "73685",
+        "1271104",
+        "61295",
+        "1064",
+        "77472"
+      ],
+      "class": "Shaman",
+      "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의합의"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\생명폭발-대지의합의.md",
         "lastUpdate": ""
       }
     },
@@ -16365,7 +16399,6 @@
         "73685",
         "378081",
         "382020",
-        "1271104",
         "382482",
         "462383",
         "16196",
@@ -16395,7 +16428,6 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의조화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의합의",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/생명의흐름",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/용솟음치는영혼",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생",
