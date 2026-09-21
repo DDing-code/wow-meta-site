@@ -43,6 +43,34 @@ assert.match(skills['255544'].description, /2초/);
 assert.match(skills['423054'].description, /최대 기력이 50 증가/);
 assert.match(skills['381673'].description, /절단이 8초에 걸쳐 25%의 추가 출혈/);
 const cooldown = synergies.rogue_assassination_deathmark_kingsbane;
+for (const id of ['2823', '381664']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'atomic-skill', id);
+  assert.equal(skills[id].castTime, '1.5초', id);
+  assert.match(skills[id].description, /1시간/, id);
+}
+assert.match(skills['2823'].description, /30%.*12초/);
+assert.match(skills['381664'].description, /20중첩.*10중첩.*35%/);
+const poisonEffects = {
+  '381801': /치명독과 비치명독.*각각 1개.*30% 감소/,
+  '455072': /독살 효과가 활성화.*1등급.*20%.*2등급/,
+  '381798': /35% 미만.*1등급.*15%.*2등급/,
+  '381799': /파열.*1등급.*2%.*20%.*2등급/,
+  '381640': /자신의 치명독 또는 지속 피해.*1등급.*1%.*2등급/,
+  '423136': /35% 미만.*150%를 초과/,
+  '381632': /은신 중.*6초.*50%/,
+};
+for (const [id, effect] of Object.entries(poisonEffects)) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.match(skills[id].description, effect, id);
+}
+const retiredIds = ['394983', '400783', '381802', '255989', '381800', '385424', '381634'];
+for (const id of retiredIds) {
+  assert.equal(skills[id], undefined, 'Removed talent still in current DB: ' + id);
+  for (const relation of Object.values(synergies)) {
+    assert.ok(!relation.participants?.includes(id), relation.id + ': retired participant ' + id);
+  }
+}
 const talentEffects = {
   '421975': /한 대상에게 10초.*자연 피해의 20%/,
   '14190': /치명타로 적중할 때마다 연계 점수 1점/,
@@ -96,4 +124,4 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 31 atomic notes and 3 relationships passed');
+console.log('Assassination reviewed subset: 40 atomic notes, 3 relationships, 7 retired talents passed');

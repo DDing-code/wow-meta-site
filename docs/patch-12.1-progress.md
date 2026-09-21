@@ -275,6 +275,8 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 
 - Fourth pass: authored twelve further talent effects and shared Ambush (previously mislabeled Outlaw-only), bringing the reviewed subset to thirty Assassination notes plus one shared cast. Replaced the builder and Caustic Spatter relationships with seven and four grounded participants. Intent to Kill is movement cooldown reduction, not combo-point generation; Caustic Spatter is a ten-second one-target Nature splash, not bleed copying. Documented Sanguine Stratagem's Korean/English threshold wording conflict. Scoped regression checks now cover 31 records and three relationships; full hero flows, talent-tree availability and manuscript replacement remain open.
 
+- Fifth pass: fixed SimC commit 774babde5ddc7c5fc9f1abb129b473f8a076df70 identifies game build 12.1.0.69875. Removed seven absent legacy talents and their relationship references. Reviewed nine further existing effects, corrected Deadly/Amplifying Poison to 1.5-second coating casts, distinguished rank-one values and resolved Improved Garrote's conditional damage and Dragon-Tempered Blades' multiplicative application reduction. The existing reviewed set is now 39 local notes plus shared Ambush; eleven newly identified spec-tree nodes and common/hero coverage still need authoring. Removed the obsolete Indiscriminate Carnage instruction from the old manuscript without falsely relabeling the rest as 12.1.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

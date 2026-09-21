@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:00:52.623Z",
+    "generatedAt": "2026-09-21T00:08:23.714Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14200,7 +14200,6 @@
         "381673",
         "255544",
         "381626",
-        "400783",
         "381801"
       ],
       "class": "Rogue",
@@ -14225,7 +14224,6 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/치사량",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/파멸칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피바다",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/동맥적중",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날"
       ],
@@ -14244,7 +14242,6 @@
         "2823",
         "381624",
         "381664",
-        "381634",
         "381801",
         "255544",
         "392384",
@@ -14273,7 +14270,6 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/독연구",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/증폭의독",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/흉악한맹독",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
@@ -14340,14 +14336,12 @@
         "79134",
         "381632",
         "196861",
-        "381802",
         "385478",
         "381627",
         "381626",
         "423054",
         "381799",
         "457512",
-        "385424",
         "1856"
       ],
       "class": "Rogue",
@@ -14370,13 +14364,11 @@
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의향기",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/목조르기연마",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/장막속의질식",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무차별살육",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/내출혈",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피바다",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의길",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/핏빛전략",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무쇠철사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/톱니뼈가시"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무쇠철사"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\목조르기-파열.md",
@@ -14435,8 +14427,7 @@
         "328085",
         "255544",
         "381797",
-        "381652",
-        "255989"
+        "381652"
       ],
       "class": "Rogue",
       "spec": "암살",
@@ -14456,11 +14447,10 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/일급암살자",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\운명의손-독살.md",
@@ -14608,9 +14598,7 @@
         "703",
         "381631",
         "381629",
-        "381802",
         "421975",
-        "381800",
         "381801",
         "381799",
         "457512"
@@ -14626,16 +14614,14 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/혈폭풍",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무차별살육",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/초소형맹독의칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의향기",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/핏빛전략",
