@@ -387,4 +387,11 @@ assert.ok(!JSON.stringify(synergies).includes('384318'));
 assert.ok(!JSON.stringify(synergies).includes('천둥의 포효'));
 assert.ok(!JSON.stringify(synergies).includes('천둥의-포효'));
 assert.equal(synergies['warrior-arms-rend-bleed-package'].name, '분쇄-유혈-치명상');
+for (const id of [315720, 388933]) {
+  assert.equal(skills[id], undefined);
+  assert.ok(!JSON.stringify(synergies).includes(String(id)));
+}
+assert.equal(synergies['warrior-fury-raging-blow-onslaught-generation'].name, '분노의-강타-피의-갈증-분노-생성');
+assert.ok(!guide.includes('피의 갈증/분노의 강타/맹공'));
+assert.ok(!guide.includes('맹공: 비는 구간'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

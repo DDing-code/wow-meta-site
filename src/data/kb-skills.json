@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T21:00:48.652Z",
+    "generatedAt": "2026-09-21T21:05:16.793Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2964,
-    "rawTotalSkills": 2964,
+    "totalSkills": 2962,
+    "rawTotalSkills": 2962,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2964,
+      "total": 2962,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 129,
+        "skill": 128,
         "talent": 996,
-        "spec-talent": 389,
+        "spec-talent": 388,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 15,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 252
+        "Warrior": 250
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -99,12 +99,12 @@
         "Warrior-Arms": 40,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
-        "Warrior-Fury": 53,
+        "Warrior-Fury": 51,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2881,
-        "withSynergies": 2019,
+        "withWikilinks": 2879,
+        "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
     }
@@ -24728,7 +24728,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": " 축의 중심 소비기다. 으로 격노를 고정하고, 이후 , , 으로 다음 광란을 준비한다.  공식 툴팁 요약: 광란 특성 분노 80 근접 사정거리 즉시 전사 필요 근접 무기 필요 4회 연속으로 잔혹한 공격을 가해 총 [(전투력의 203.065%) + (전투력의 118.455%) + (전투력의 270.756%) + (전투력의 152.3%)]의 물리 피해를 입힙니다. 격노 상태가 됩니다. 분노 While Improved Whirlwind is active, you instead deal ((전투력의 135.377%) + (전투력의 78.9",
+      "description": "피의 갈증과 분노의 강타로 분노를 생성하고 광란으로 소비합니다. 실제 남은 분노와 충전 상태를 함께 확인하며, 준비되지 않은 기술을 기다리느라 공격을 멈추지 않습니다.  공식 툴팁 요약: 광란 특성 분노 80 근접 사정거리 즉시 전사 필요 근접 무기 필요 4회 연속으로 잔혹한 공격을 가해 총 [(전투력의 203.065%) + (전투력의 118.455%) + (전투력의 270.756%) + (전투력의 152.3%)]의 물리 피해를 입힙니다. 격노 상태가 됩니다. 분노 While Improved Whirlwind is active, y",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -24744,18 +24744,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
           "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/맹공"
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 13,
-        "synergyCount": 4,
-        "linkDensity": 0.056,
+        "wikilinkCount": 11,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -43120,56 +43118,6 @@
         "lastUpdate": ""
       }
     },
-    "315720": {
-      "id": "315720",
-      "type": "skill",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "맹공",
-      "koreanName": "맹공",
-      "englishName": "",
-      "icon": "ability_warrior_trauma",
-      "iconName": "ability_warrior_trauma",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": " 축에서 분노가 비는 시간을 줄이는 보조 생성기다. 을 다시 쓰기 위한 분노 공간을 만드는 쪽으로 판단한다.  공식 툴팁 요약: 맹공 특성 근접 사정거리 즉시 18 초 재사용 대기시간 전사 필요 요구 레벨 30 근접 무기 필요 적을 가차 없이 공격하여 (전투력의 413.868%)의 물리 피해를 입 [ 방망이질 : 히고 추가로 4초초 동안 격노 상태가 됩니다 / 힙니다.] ( 300 / 10)의 분노를 생성합니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_trauma.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_trauma.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_trauma.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_trauma.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_trauma.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.013,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Skills\\맹공.md",
-        "lastUpdate": ""
-      }
-    },
     "315924": {
       "id": "315924",
       "type": "talent",
@@ -61114,7 +61062,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.029,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -66271,7 +66219,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -67836,54 +67784,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Talents\\강화주기본효과.md",
-        "lastUpdate": ""
-      }
-    },
-    "388933": {
-      "id": "388933",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "방망이질",
-      "koreanName": "방망이질",
-      "englishName": "",
-      "icon": "inv_mace_1h_blacksmithing_b_01_black",
-      "iconName": "inv_mace_1h_blacksmithing_b_01_black",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "방망이질은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 방망이질 전사 필요 맹공 사용 시 격노 상태가 되며 학살의 일격이 있다면 학살의 일격이 3번 부여됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_blacksmithing_b_01_black.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_1h_blacksmithing_b_01_black.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_mace_1h_blacksmithing_b_01_black.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_mace_1h_blacksmithing_b_01_black.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_blacksmithing_b_01_black.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\방망이질.md",
         "lastUpdate": ""
       }
     },
@@ -73300,7 +73200,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.024,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {

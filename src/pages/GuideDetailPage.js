@@ -3851,12 +3851,6 @@ function getUptimeRows(guide, data) {
         segments: [[15, 6], [30, 6], [47, 6], [63, 6], [80, 6]],
       },
       {
-        label: '보강 생성',
-        skill: findSkillByNames(data, ['맹공']),
-        note: '강한 생성기지만 광란과 격노 갱신을 밀지 않는 선에서 사용합니다.',
-        segments: [[18, 8], [50, 8], [84, 8]],
-      },
-      {
         label: '분노 구간',
         skill: findSkillByNames(data, ['무모한 희생']),
         note: '광란 반복을 가장 많이 몰아넣어야 하는 분노/치명타 구간입니다.',

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T21:00:48.653Z",
+    "generatedAt": "2026-09-21T21:05:16.795Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -20899,7 +20899,6 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/걷잡을-수-없는-야성",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/광기의-심연",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/무자비함",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/방망이질",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/원한",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/흉포한-멸시",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/날뛰는-광전사"
@@ -21076,12 +21075,11 @@
     },
     "warrior-fury-raging-blow-onslaught-generation": {
       "id": "warrior-fury-raging-blow-onslaught-generation",
-      "name": "분노의-강타-맹공-분노-생성",
+      "name": "분노의-강타-피의-갈증-분노-생성",
       "type": "synergy",
       "synergyType": "generator-reset-priority",
       "participants": [
         "85288",
-        "315720",
         "184367",
         "23881"
       ],
@@ -21094,10 +21092,9 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/맹공",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증"
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -21105,12 +21102,11 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/신속한-일격",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/방망이질",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/흉포한-멸시",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/무자비함"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\분노의-강타-맹공-분노-생성.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\분노의-강타-피의-갈증-분노-생성.md",
         "lastUpdate": ""
       }
     },
@@ -21255,8 +21251,7 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/혈행성-전이",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/전쟁-물감",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/활기의-격노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/방망이질"
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/활기의-격노"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\피의-갈증-혈기-생존-출혈.md",
