@@ -8,3 +8,7 @@
 - [445034](https://www.wowhead.com/spell=445034/lively-totems): 복원에서는 치유의 토템, 치유의 해일 토템, 정신의 고리 토템 소환이 무료 즉시 연쇄 치유를 발동한다. 모든 토템으로 일반화하지 않았다.
 
 각 ID의 한국어 이름과 설명은 nether.wowhead.com/tooltip/spell/{id}?dataEnv=1&locale=1 응답과 대조했다. 토템술사 설명 안에 위치하더라도 정점 특성을 토템술사 전용으로 표시하지 않는다.
+
+## 랭크 검수 갱신
+
+앞서 미확정으로 둔 1267093은 1포인트 20%, 2포인트 총 40%로 갱신했다. Wowhead 주문 상세의 Trait #141739 랭크 값 20/40, 고정 SimulationCraft 774babde5ddc7c5fc9f1abb129b473f8a076df70 trait_data.inc의 복원 entry 136976 / definition 141739 / 최대 2랭크 / 효과 곡선 98612, Wowhead 12.1 운용 가이드의 완성 특성 40% 설명을 대조했다. 기본 효과 30%는 랭크가 적용된 최종 값으로 사용하지 않는다.

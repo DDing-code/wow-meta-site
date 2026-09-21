@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:52:44.315Z",
+    "generatedAt": "2026-09-21T16:57:11.351Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -138268,7 +138268,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -138294,7 +138294,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "치유의 토템과 폭풍의 흐름 토템의 치유량을 높이는 지속 효과다. 기본 주문 툴팁은 30%를 표시하지만 특성 랭크 보정 표에는 다른 값이 있으므로, 기본 툴팁 수치를 실제 선택 랭크의 최종 증가량으로 단정하지 않는다. 추가 사용권이나 확률 발동을 주는 단계가 아니다.",
+      "description": "치유의 토템과 폭풍의 흐름 토템의 치유량을 1포인트에서 20%, 2포인트에서 총 40% 높이는 지속 효과다. 기본 주문 툴팁의 30%를 랭크가 적용된 값으로 사용하지 않는다. 20%와 40%를 합산한 60%도 아니다. 추가 사용권이나 확률 발동을 주는 단계가 아니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -138316,7 +138316,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {

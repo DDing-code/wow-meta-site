@@ -43,4 +43,5 @@ for (const id of [1267016,1267093,1267120]) {
 }
 assert.match(skills[1267016].description,/6%.*10%.*1명.*2명/);
 assert.match(skills[1267120].description,/신속함.*사용 횟수.*충전을 소모하지/);
-assert.match(skills[1267093].description,/랭크.*단정하지/);
+assert.match(skills[1267093].description,/1포인트.*20%.*2포인트.*40%/);
+assert.match(skills[1267093].description,/60%도 아니다/);
