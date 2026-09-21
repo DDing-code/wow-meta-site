@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:05:26.686Z",
+    "generatedAt": "2026-09-21T20:10:15.801Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2978,
-    "rawTotalSkills": 2978,
+    "totalSkills": 2974,
+    "rawTotalSkills": 2974,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2978,
+      "total": 2974,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -22,7 +22,7 @@
         "hero-tree": 2,
         "set-bonus": 15,
         "tier-set": 2,
-        "class-talent": 93,
+        "class-talent": 89,
         "debuff": 6,
         "removed-talent": 1,
         "atomic-buff": 1,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 266
+        "Warrior": 262
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -95,7 +95,7 @@
         "Warlock-공용": 113,
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
-        "Warrior-공용": 129,
+        "Warrior-공용": 125,
         "Warrior-Arms": 39,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
@@ -103,7 +103,7 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2895,
+        "withWikilinks": 2891,
         "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
@@ -18691,18 +18691,18 @@
       ],
       "name": "투신",
       "koreanName": "투신",
-      "englishName": "",
+      "englishName": "Avatar",
       "icon": "warrior_talent_icon_avatar",
       "iconName": "warrior_talent_icon_avatar",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 투신은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 투신 특성 즉시 1.5 분 재사용 대기시간 전사 필요 요구 레벨 45 무기 거구로 변신하여 모든 공격력이 20%만큼 증가하고 광역 공격으로 받는 피해가 5%만큼 감소합니다. 20초 동안 지속됩니다. 방어 거구로 변신하여 모든 공격력이 20%만큼 증가하고 또한 받는 모든 피해가 3%만큼 감소합니다. 20초 동안 지속됩니다. 분노 거구로 ",
+      "description": "20초 동안 모든 공격력이 20% 증가한다. 기본 재사용 대기시간은 1.5분이며, 전문화별로 추가 효과가 다르다.  무기는 광역 공격으로 받는 피해가 5% 감소하고, 방어는 받는 모든 피해가 3% 감소하며, 분노는 이동 속도가 5% 증가한다. 다른 전문화의 추가 효과를 동시에 받는 것은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18721,7 +18721,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.059,
         "hasWikilinks": true
       },
       "source": {
@@ -58667,18 +58667,18 @@
       ],
       "name": "분쇄의 무력",
       "koreanName": "분쇄의 무력",
-      "englishName": "",
+      "englishName": "Crushing Force",
       "icon": "spell_shadow_unholystrength",
       "iconName": "spell_shadow_unholystrength",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "분쇄의 무력은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 분쇄의 무력 특성 전사 필요 방어 방패 밀쳐내기|1이;가; 5%의 추가 피해를 입히며, 치명타 및 극대화 피해가 5%만큼 증가합니다. 분노 피의 갈증|1이;가; 5%의 추가 피해를 입히며, 치명타 및 극대화 피해가 5%만큼 증가합니다. 무기 필사의 일격|1이;가; 5%의 추가 피해를 입히며, 치명타 및 극대화 피해가 5%만큼 증가합니다.",
+      "description": "무기의 필사의 일격, 분노의 피의 갈증, 방어의 방패 밀쳐내기 공격력과 치명타 피해가 각각 5% 증가한다. 각 전문화에 해당하는 기술에만 적용된다.  이름에 분쇄가 들어가지만 분쇄 출혈을 강화하는 특성이 아니다. 치명타 확률을 5% 높이거나 모든 공격을 강화하는 효과로도 해석하지 않는다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58697,7 +58697,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -69182,206 +69182,6 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Talents\\영혼분쇄.md",
         "lastUpdate": "2026-09-13"
-      }
-    },
-    "390123": {
-      "id": "390123",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "광전사의 고통",
-      "koreanName": "광전사의 고통",
-      "englishName": "",
-      "icon": "ability_warrior_innerrage",
-      "iconName": "ability_warrior_innerrage",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "광전사의 고통은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 광전사의 고통 전사 필요 투신 또는 무모한 희생 중 어느 한 능력을 활성화하면 다른 한 능력도 8초 동안 부여됩니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_innerrage.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_innerrage.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_innerrage.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_innerrage.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_innerrage.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\광전사의-고통.md",
-        "lastUpdate": ""
-      }
-    },
-    "390135": {
-      "id": "390135",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "티탄의 고통",
-      "koreanName": "티탄의 고통",
-      "englishName": "",
-      "icon": "70_inscription_vantus_rune_odyn",
-      "iconName": "70_inscription_vantus_rune_odyn",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "티탄의 고통은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 티탄의 고통 전사 필요 투신이 활성화된 동안 광란의 분노 소모량이 5만큼, 피의 갈증의 재사용 대기시간이 0.1초만큼 감소합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/70_inscription_vantus_rune_odyn.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/70_inscription_vantus_rune_odyn.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/70_inscription_vantus_rune_odyn.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/70_inscription_vantus_rune_odyn.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/70_inscription_vantus_rune_odyn.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\티탄의-고통.md",
-        "lastUpdate": ""
-      }
-    },
-    "390138": {
-      "id": "390138",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "검귀의 고통",
-      "koreanName": "검귀의 고통",
-      "englishName": "",
-      "icon": "ability_warrior_endlessrage",
-      "iconName": "ability_warrior_endlessrage",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "검귀의 고통은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 검귀의 고통 전사 필요 투신 활성화 시 8초 동안 휩쓸기 일격이 부여되며, 투신이 활성화된 동안 회전베기의 재사용 대기시간이 0.0초만큼 감소합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_endlessrage.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_endlessrage.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_endlessrage.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\검귀의-고통.md",
-        "lastUpdate": ""
-      }
-    },
-    "390140": {
-      "id": "390140",
-      "type": "class-talent",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "전쟁군주의 고통",
-      "koreanName": "전쟁군주의 고통",
-      "englishName": "",
-      "icon": "warrior_talent_icon_innerrage",
-      "iconName": "warrior_talent_icon_innerrage",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "전쟁군주의 고통은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전쟁군주의 고통 전사 필요 투신 활성화 시 6초 동안 무모한 희생이 부여됩니다. 이 효과로 발동하는 무모한 희생의 추가 분노 생성량은 25%만큼 감소합니다.",
-      "category": "class-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_innerrage.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_innerrage.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_innerrage.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_innerrage.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_innerrage.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\전쟁군주의-고통.md",
-        "lastUpdate": ""
       }
     },
     "390154": {

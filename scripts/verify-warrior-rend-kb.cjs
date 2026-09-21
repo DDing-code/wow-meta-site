@@ -301,4 +301,14 @@ assert.match(skills[382939].description, /1포인트.*5%.*2포인트/);
 assert.match(skills[382549].description, /2%.*10초/);
 assert.match(skills[1271926].description, /3%.*10%/);
 assert.ok(guide.includes('한국어 툴팁의 공격력 증가 문구'));
+for (const id of [390123, 390135, 390138, 390140]) {
+  assert.equal(skills[id], undefined, 'Unlearnable Torment talents must not remain selectable');
+  assert.ok(!JSON.stringify(synergies).includes(String(id)));
+}
+assert.equal(skills[107574].patch, '12.1');
+assert.equal(skills[107574].cooldown, '1.5분');
+assert.match(skills[107574].description, /20초.*20%.*무기.*5%.*방어.*3%.*분노.*5%/);
+assert.equal(skills[382764].patch, '12.1');
+assert.match(skills[382764].description, /필사의 일격.*피의 갈증.*방패 밀쳐내기.*5%/);
+assert.match(skills[382764].description, /분쇄 출혈을 강화하는 특성이 아니다/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
