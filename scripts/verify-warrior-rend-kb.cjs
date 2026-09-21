@@ -452,4 +452,13 @@ assert.equal(bloodthirstSurvival.patch, '12.1');
 assert.deepEqual(bloodthirstSurvival.participants, ['23881', '383959', '385703', '184364', '383468']);
 assert.match(bloodthirstSurvival.description, /치명타.*6초.*8초.*20%.*11초.*서로 다른 효과/);
 assert.ok(guide.includes('공격할 수 없는 위험 구간: 피의 갈증을 기다리지 말고'));
+for (const id of [335077, 383297, 392931]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '지속 효과');
+  assert.equal(skills[id].type, 'spec-talent');
+}
+assert.match(skills[335077].description, /12초.*2%.*따로 만료/);
+assert.match(skills[383297].description, /2포인트.*10%포인트.*분쇄의 타격/);
+assert.match(skills[392931].description, /격노 상태.*2포인트.*10%.*꺼진 동안/);
+assert.ok(guide.includes('각 중첩은 따로 만료되므로'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
