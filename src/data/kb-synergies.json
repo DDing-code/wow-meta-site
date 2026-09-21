@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:44:18.713Z",
+    "generatedAt": "2026-09-21T20:48:56.807Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -21062,9 +21062,9 @@
       "synergyType": "cooldown-reduction-alignment",
       "participants": [
         "184367",
+        "152278",
         "1719",
-        "107574",
-        "385059"
+        "107574"
       ],
       "class": "Warrior",
       "spec": "분노",
@@ -21073,22 +21073,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/오딘의-격노",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/티탄의-분노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/혼돈의-집중",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/막무가내",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/천벌과-분노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노의-무장"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\분노-제어-무모한-희생-투신.md",
         "lastUpdate": ""

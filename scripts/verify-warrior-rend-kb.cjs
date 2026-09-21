@@ -363,4 +363,10 @@ assert.match(skills[6343].description, /방어의 피와 번개.*분노의 피�
 assert.match(skills[6343].description, /무기의 분쇄를 자동으로 퍼뜨리지 않습니다/);
 assert.doesNotMatch(skills[6343].description, /85.*대상|0의 분노/);
 assert.ok(guide.includes('천둥벼락은 분노를 소모하지 않고 8을 생성'));
+assert.equal(skills[152278].patch, '12.1');
+assert.equal(skills[152278].castTime, '지속 효과');
+assert.match(skills[152278].description, /무기는.*투신과 거인의 강타.*분노는.*투신과 무모한 희생.*방어는.*투신과 방패의 벽/);
+assert.deepEqual(synergies['warrior-fury-anger-management'].participants, ['184367', '152278', '1719', '107574']);
+assert.equal(synergies['warrior-fury-anger-management'].patch, '12.1');
+assert.ok(guide.includes('공격에 실제로 쓴 분노 20마다'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
