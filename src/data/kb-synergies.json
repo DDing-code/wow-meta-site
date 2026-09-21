@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:46:09.496Z",
+    "generatedAt": "2026-09-21T04:50:24.474Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13656,38 +13656,30 @@
     "SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY": {
       "id": "SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY",
       "name": "도적공용-속임수거래-은폐의장막-던전유틸",
+      "description": "속임수 거래는 다음 공격부터 6초간 위협을 이전하고, 은폐의 장막은 은신 상태에서 주변 파티원의 이동을 지원한다. 고요한 장막은 장막의 기본 6분 쿨다운을 3분으로 줄인다. 발차기는 15초 쿨다운의 차단과 같은 계열 6초 봉쇄이며, 혼란은 주의를 끄는 기술이지 주문 차단이 아니다.",
       "type": "synergy",
       "synergyType": "dungeon-utility",
       "participants": [
         "57934",
         "114018",
+        "423662",
         "1766",
-        "1804"
+        "1725"
       ],
       "class": "Rogue",
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/속임수거래",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/은폐의장막",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/발차기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/자물쇠따기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/훔치기",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼란",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/후려치기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/급소가격",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/비열한습격",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/표창투척"
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/발차기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/고요한장막",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/우아한기만",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/강제유도"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/고요한장막"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Synergies\\도적공용-속임수거래-은폐의장막-던전유틸.md",
@@ -13697,38 +13689,38 @@
     "SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL": {
       "id": "SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL",
       "name": "도적공용-은신-비열한습격-제어",
+      "description": "은신과 소멸은 은신 전용 기술을 사용할 조건을 만들고 기만은 은신 종료 뒤의 사용 가능 시간을 늘린다. 비열한 습격과 급소 가격은 기절, 혼절시키기와 후려치기는 피해로 풀릴 수 있는 제어다. 가죽곤봉은 실명이나 혼절시키기가 끝난 뒤 6초 동안 적의 공격력·치유량을 30% 낮춘다.",
       "type": "synergy",
       "synergyType": "stealth-control",
       "participants": [
         "1784",
         "1856",
         "1833",
-        "6770"
+        "6770",
+        "108208",
+        "2094",
+        "1776",
+        "408",
+        "379005"
       ],
       "class": "Rogue",
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/은신",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/비열한습격",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/급소가격",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼란",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/후려치기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/급소가격"
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/공용/Talents/기만",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/매복연마",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/고요한장막",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/우아한기만",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/가죽곤봉",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/위안의어둠",
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/강제유도"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/가죽곤봉"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Synergies\\도적공용-은신-비열한습격-제어.md",

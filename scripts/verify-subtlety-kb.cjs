@@ -281,6 +281,16 @@ for (const id of ['378803', '455131']) {
 assert.deepEqual(skills['455143'].specs, ['Outlaw']);
 assert.match(skills['455143'].description, /자동 공격.*3초.*3%.*1%.*10중첩.*무법/);
 const commonMovement = synergies['SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT'];
+const commonControl = synergies['SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL'];
+const commonUtility = synergies['SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY'];
+for (const relation of [commonControl, commonUtility]) {
+  assert.equal(relation.patch, '12.1');
+  for (const id of ['423647', '470668', '114014', '921']) assert.ok(!relation.participants.includes(id), relation.id + id);
+}
+assert.deepEqual([...commonControl.participants].sort(), ['1784', '1856', '1833', '6770', '108208', '2094', '1776', '408', '379005'].sort());
+assert.match(commonControl.description, /기만.*은신 종료.*가죽곤봉.*끝난 뒤.*6초.*30%/);
+assert.deepEqual([...commonUtility.participants].sort(), ['57934', '114018', '423662', '1766', '1725'].sort());
+assert.match(commonUtility.description, /6초.*고요한 장막.*6분.*3분.*발차기.*15초.*6초.*혼란.*차단이 아니다/);
 assert.equal(commonMovement.patch, '12.1');
 for (const id of ['455143', '200733', '378427', '1267210', '381988', '114014']) {
   assert.ok(!commonMovement.participants.includes(id), id);
