@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:38:00.210Z",
+    "generatedAt": "2026-09-21T19:44:06.088Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2979,
-    "rawTotalSkills": 2979,
+    "totalSkills": 2978,
+    "rawTotalSkills": 2978,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2979,
+      "total": 2978,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 130,
         "talent": 996,
-        "spec-talent": 390,
+        "spec-talent": 389,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 15,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 267
+        "Warrior": 266
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,13 +96,14 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 43,
+        "Warrior-Arms": 41,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
-        "Warrior-Fury": 53
+        "Warrior-Fury": 53,
+        "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2896,
+        "withWikilinks": 2895,
         "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
@@ -21762,18 +21763,18 @@
       ],
       "name": "투사의 혼",
       "koreanName": "투사의 혼",
-      "englishName": "",
+      "englishName": "Die by the Sword",
       "icon": "ability_warrior_challange",
       "iconName": "ability_warrior_challange",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "2분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 투사의 혼은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 투사의 혼 특성 즉시 2 분 재사용 대기시간 전사 필요 근접 무기 필요 8초 동안 무기 막기 확률이 100%만큼 증가하고 받는 피해가 30%만큼 감소합니다.",
+      "description": "투사의 혼은 기본 2분 쿨다운의 즉시 생존기다. 근접 무기가 필요하며 8초 동안 무기 막기 확률이 100% 증가하고 받는 피해가 30% 감소한다.  무기 막기가 가능한 공격에 대한 보호와 전체 피해 감소를 구분한다. 무기 막기 수치가 높아져도 마법이나 지속 피해를 전부 무효화하는 것은 아니다. 삭제된 승리의 용기 효과를 더해 기본 쿨다운을 30초 짧게 계산하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21792,7 +21793,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -59848,6 +59849,54 @@
         "lastUpdate": ""
       }
     },
+    "383295": {
+      "id": "383295",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "name": "숙련된 경험",
+      "koreanName": "숙련된 경험",
+      "englishName": "Deft Experience",
+      "icon": "inv_misc_book_07",
+      "iconName": "inv_misc_book_07",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "1포인트 기준 피의 갈증의 치명타 확률이 5% 증가한다. 격노 상태에서 피의 갈증을 사용하면 격노가 0.5초 연장되고, 주 대상에게 치명타로 적중하면 연장량이 두 배가 된다. 최대 2포인트 특성이므로 투자량에 따른 효과를 구분한다.  격노가 없는 상태에서 연장할 시간을 미리 적립하는 효과가 아니다. 다른 전문화의 옛 특화·전술가 보너스와 이름이 같지만 주문 ID와 효과가 다르다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_book_07.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_book_07.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_07.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\숙련된-경험.md",
+        "lastUpdate": ""
+      }
+    },
     "383297": {
       "id": "383297",
       "type": "spec-talent",
@@ -59949,54 +59998,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Skills\\최후의선고.md",
-        "lastUpdate": ""
-      }
-    },
-    "383338": {
-      "id": "383338",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "승리의 용기",
-      "koreanName": "승리의 용기",
-      "englishName": "",
-      "icon": "spell_holy_summonchampion",
-      "iconName": "spell_holy_summonchampion",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "승리의 용기은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 승리의 용기 전사 필요 유연성이 2%만큼 증가하고 투사의 혼의 재사용 대기시간이 30.0초만큼 감소합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_summonchampion.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_summonchampion.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_summonchampion.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_summonchampion.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_summonchampion.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\승리의-용기.md",
         "lastUpdate": ""
       }
     },
@@ -68551,54 +68552,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\치명적-감각.md",
-        "lastUpdate": ""
-      }
-    },
-    "389308": {
-      "id": "389308",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "숙련된 경험",
-      "koreanName": "숙련된 경험",
-      "englishName": "",
-      "icon": "inv_misc_book_07",
-      "iconName": "inv_misc_book_07",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "숙련된 경험은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 숙련된 경험 전사 필요 특화가 1%만큼, 전술가의 발동 확률이 추가로 0.5%만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_book_07.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_misc_book_07.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_07.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 0,
-        "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\숙련된-경험.md",
         "lastUpdate": ""
       }
     },

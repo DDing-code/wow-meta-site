@@ -258,4 +258,15 @@ assert.match(skills[383703].description, /50%.*5중첩/);
 assert.match(skills[400205].description, /35% 미만.*15%/);
 assert.deepEqual(synergies.warrior_arms_execute_actual_rage_refund.participants, ['163201', '316405', '389306', '29725']);
 assert.ok(guide.includes('실제로 40을 지불한 것은 아니므로'));
+for (const id of [383338, 389308]) {
+  assert.equal(skills[id], undefined, 'Retired Arms passive must not remain selectable');
+  assert.ok(!JSON.stringify(synergies).includes(String(id)));
+}
+assert.deepEqual(skills[383295].specs, ['Fury']);
+assert.equal(skills[383295].patch, '12.1');
+assert.match(skills[383295].description, /1포인트.*5%.*0.5초.*두 배.*2포인트/);
+assert.equal(skills[118038].patch, '12.1');
+assert.equal(skills[118038].cooldown, '2분');
+assert.match(skills[118038].description, /8초.*100%.*30%/);
+assert.ok(guide.includes('모든 피해에 면역이 되는 것이 아니므로'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
