@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:20:52.340Z",
+    "generatedAt": "2026-09-21T18:25:54.657Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2983,
-    "rawTotalSkills": 2983,
+    "totalSkills": 2984,
+    "rawTotalSkills": 2984,
     "duplicateIds": [],
-    "totalSynergies": 590,
+    "totalSynergies": 591,
     "stats": {
-      "total": 2983,
+      "total": 2984,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 132,
         "talent": 996,
-        "spec-talent": 395,
+        "spec-talent": 396,
         "passive": 75,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 271
+        "Warrior": 272
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -95,15 +95,15 @@
         "Warlock-공용": 113,
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
-        "Warrior-공용": 128,
-        "Warrior-Arms": 48,
+        "Warrior-공용": 127,
+        "Warrior-Arms": 50,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
         "withWikilinks": 2903,
-        "withSynergies": 2014,
+        "withSynergies": 2013,
         "avgLinkDensity": "0.039"
       }
     }
@@ -39320,24 +39320,24 @@
       "id": "260708",
       "type": "skill",
       "class": "Warrior",
-      "spec": "공용",
+      "spec": "Arms",
       "specs": [
         "Arms"
       ],
       "name": "휩쓸기 일격",
       "koreanName": "휩쓸기 일격",
-      "englishName": "",
+      "englishName": "Sweeping Strikes",
       "icon": "ability_rogue_slicedice",
       "iconName": "ability_rogue_slicedice",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "30초",
+      "castTime": "즉시",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사가 두 대상 상황에서 단일 대상 우선순위를 두 번째 대상에게 복제하기 위해 사용하는 분기 기술이다. 쐐기와 레이드 2타깃 구간에서는 , , 의 실제 복제 가치가 핵심이다.  공식 툴팁 기준 이름과 아이콘은 ko.wowhead.com 툴팁 API로 확인했다.",
+      "description": "휩쓸기 일격은 30초 동안 다음 12회의 단일 대상 공격 능력이 8미터 내 추가 대상 1명에게 75% 피해를 주게 한다. 즉시 시전하며 기본 재사용 대기시간은 30초다. 횟수 제한과 지속시간 제한을 모두 가진다.  두 대상이 함께 맞을 수 있을 때 강한 단일 공격을 이어간다. 적이 멀리 떨어져 있거나 추가 대상이 먼저 죽으면 복제 기회가 줄어든다. 12회는 12초라는 뜻이 아니며 모든 광역 공격을 다시 복제하는 효과도 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39349,21 +39349,14 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_slicedice.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
-          "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-          "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
-          "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
-          "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자",
-          "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
-        "synergyCount": 6,
-        "linkDensity": 0.078,
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -45839,18 +45832,18 @@
       ],
       "name": "부수적인 피해",
       "koreanName": "부수적인 피해",
-      "englishName": "",
+      "englishName": "Collateral Damage",
       "icon": "ability_warrior_incite",
       "iconName": "ability_warrior_incite",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "부수적인 피해은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 부수적인 피해 특성 전사 필요 요구 레벨 40 휩쓸기 일격의 지속시간 동안 능력을 사용해 두 번째 대상에게 피해를 입히면, 다음 회전베기 또는 소용돌이의 공격력이 25%만큼 증가합니다. 최대 3번까지 중첩됩니다.",
+      "description": "부수적인 피해는 휩쓸기 일격으로 두 번째 대상에게 피해를 주면 다음 회전베기 또는 소용돌이의 공격력을 25% 높이는 지속 특성이다. 최대 3중첩까지 쌓인다.  휩쓸기 일격을 활성화하기만 해서는 보상을 얻지 못한다. 실제 추가 대상 피해가 발생해야 하며 강화 대상은 다음 회전베기 또는 소용돌이다. 이후 모든 공격에 계속 적용되는 피해 증가로 계산하지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45869,7 +45862,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -130963,6 +130956,54 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\광범위한-타격.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261050": {
+      "id": "1261050",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "강력한 기세",
+      "koreanName": "강력한 기세",
+      "englishName": "Powerful Momentum",
+      "icon": "inv_1115_warrior_crushingblow",
+      "iconName": "inv_1115_warrior_crushingblow",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "강력한 기세는 휩쓸기 일격이 추가 대상에게 주는 피해를 20% 증가시키는 무기 전문화 지속 특성이다. 주 대상 공격 전체를 20% 강화하거나 휩쓸기 일격의 적용 대상을 늘리는 효과가 아니다.  같은 추가 대상에게 휩쓸기 일격 피해가 얼마나 발생했는지 확인한다. 추가 대상이 없을 때는 이 특성의 피해 보상을 기대하지 않는다. 로그에서 주 대상과 추가 대상의 피해량을 비교할 때는 방어도와 디버프 등 대상별 조건도 구분한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_crushingblow.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_1115_warrior_crushingblow.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_1115_warrior_crushingblow.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_1115_warrior_crushingblow.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_crushingblow.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\강력한-기세.md",
         "lastUpdate": ""
       }
     },

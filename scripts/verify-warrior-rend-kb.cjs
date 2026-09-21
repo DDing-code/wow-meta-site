@@ -135,4 +135,16 @@ assert.match(skills[1261060].description, /마무리 일격.*6초.*남은 피해
 assert.match(skills[1261062].description, /필사의 일격과 격돌이 치명타/);
 assert.deepEqual(synergies.warrior_arms_deep_wounds_sources.participants, ['1261060', '163201', '1261062', '12294', '1464']);
 assert(!guide.includes('특화: 치명상'));
+for (const id of [260708, 1261050, 334779]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+}
+assert.equal(skills[260708].cooldown, '30초');
+assert.match(skills[260708].description, /30초.*12회.*8미터.*1명.*75%/);
+assert.equal(skills[1261050].koreanName, '강력한 기세');
+assert.equal(skills[1261050].icon, 'inv_1115_warrior_crushingblow');
+assert.match(skills[1261050].description, /추가 대상.*20%/);
+assert.match(skills[334779].description, /두 번째 대상.*다음 회전베기 또는 소용돌이.*25%.*3중첩/);
+assert.equal(skills[383155], undefined, 'Removed Improved Sweeping Strikes must stay absent');
+assert.deepEqual(synergies.warrior_arms_sweeping_followup.participants, ['260708', '1261050', '334779', '845', '1680']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

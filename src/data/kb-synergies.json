@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:20:52.341Z",
+    "generatedAt": "2026-09-21T18:25:54.658Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 590,
-    "rawTotalSynergies": 590,
+    "totalSynergies": 591,
+    "rawTotalSynergies": 591,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -228,6 +228,7 @@
       "bleed-rage-sustain": 1,
       "slayer-cooldown-link": 1,
       "aoe-cooldown-planning": 1,
+      "two-target-followup": 1,
       "damage-rage-sequence": 1,
       "active-mitigation": 1,
       "mountain-thane-thunder": 1,
@@ -264,7 +265,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 53
+      "Warrior": 54
     }
   },
   "synergies": {
@@ -20265,6 +20266,39 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-전쟁파괴자-광역-쿨기.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_sweeping_followup": {
+      "id": "warrior_arms_sweeping_followup",
+      "name": "휩쓸기일격-강력한기세-부수적인피해",
+      "type": "synergy",
+      "synergyType": "two-target-followup",
+      "participants": [
+        "260708",
+        "1261050",
+        "334779",
+        "845",
+        "1680"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/휩쓸기-일격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/강력한-기세",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\휩쓸기일격-강력한기세-부수적인피해.md",
         "lastUpdate": ""
       }
     },
