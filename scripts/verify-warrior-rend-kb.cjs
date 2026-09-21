@@ -315,4 +315,15 @@ for (const id of [382948, 384404, 383762, 391572, 386284, 384969, 275338, 382954
   assert.equal(skills[id], undefined, 'Inactive shared talents must not be offered by the spell DB');
   assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive shared talents must not survive in graph references');
 }
+for (const id of [100, 6544, 3411, 6552, 107570, 46968, 202163, 103827, 391271]) assert.equal(skills[id].patch, '12.1');
+assert.equal(skills[100].cooldown, '20초');
+assert.match(skills[100].description, /8~25.*분노 20/);
+assert.match(skills[6544].description, /방어 전문화.*도발.*초기화/);
+assert.match(skills[3411].description, /25야드.*6초.*10야드/);
+assert.match(skills[6552].description, /같은 계열.*5초/);
+assert.match(skills[46968].description, /전방 10야드.*2초/);
+assert.match(skills[103827].description, /2충전.*17초/);
+assert.match(skills[202163].description, /3초.*70%.*30초/);
+assert.match(skills[391271].description, /차단에 성공.*10초.*5%/);
+assert.ok(guide.includes('25야드 이동과 10야드 보호 유지 조건'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
