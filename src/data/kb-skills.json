@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:54:34.155Z",
+    "generatedAt": "2026-09-21T04:58:28.547Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -7687,14 +7687,14 @@
       "icon": "ability_shaman_stormstrike",
       "iconName": "ability_shaman_stormstrike",
       "school": "",
-      "cooldown": "짧은 재사용 대기시간",
+      "cooldown": "기본 7.5초",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나의 0.4%",
       "range": "근접",
-      "description": "# 폭풍의 일격 (Stormstrike)",
+      "description": "양 무기로 대상을 타격해 물리 피해를 주는 근접 사용 기술이다. 기본 쿨다운은 7.5초, 기본 충전은 1회이며 기본 마나의 0.4%를 사용한다. 번개 연출이 있어도 기본 피해 유형을 자연 피해로 바꾸어 설명하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7713,7 +7713,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.08,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -14812,14 +14812,14 @@
       "icon": "ability_shaman_lavalash",
       "iconName": "ability_shaman_lavalash",
       "school": "",
-      "cooldown": "짧은 재사용 대기시간",
+      "cooldown": "기본 18초",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나의 0.16%",
       "range": "근접",
-      "description": "# 용암 채찍 (Lava Lash)",
+      "description": "보조 무기로 화염 피해를 주는 근접 사용 기술이다. 기본 쿨다운은 18초이며 기본 마나의 0.16%를 사용한다. 보조 무기에 불꽃혓바닥 무기가 적용되어 있으면 용암 채찍의 피해가 100% 증가한다. 보조 무기가 필요하며 이 보너스가 모든 화염 기술의 피해를 두 배로 만드는 것은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14838,7 +14838,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.071,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -25865,12 +25865,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "지속 효과",
-      "resourceCost": "중첩",
+      "resourceCost": "없음",
       "range": "자신",
-      "description": "# 소용돌이치는 무기 (Maelstrom Weapon)",
+      "description": "근접 무기 공격으로 피해를 입히면 기본 20% 확률로 중첩을 얻는 지속 효과이며 기본 최대 5중첩이다. 중첩당 다음 번개 화살 또는 연쇄 번개의 시전 시간을 20% 줄이고 피해를 20% 높인다. 5중첩의 시전 시간 감소는 100%지만, 저장 상한과 한 번에 소비 가능한 중첩 수는 별도 특성으로 바뀐다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25889,7 +25889,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.051,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -62666,14 +62666,14 @@
       "icon": "inv_magic_swirl_color3",
       "iconName": "inv_magic_swirl_color3",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 넘치는 소용돌이 (Overflowing Maelstrom)",
+      "description": "소용돌이치는 무기의 저장 상한을 5중첩 늘려 기본 5중첩에서 10중첩으로 만든다. 소용돌이치는 무기를 소비한 중첩마다 별도의 넘치는 소용돌이를 얻어 다음 치유의 파도 또는 연쇄 치유의 시전 시간을 중첩당 10% 줄이고 치유량을 10% 늘린다. 치유 한 번에는 최대 10중첩이 적용되고, 치유용 효과는 최대 20중첩까지 축적된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62692,7 +62692,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -62714,14 +62714,14 @@
       "icon": "spell_nature_elementalabsorption",
       "iconName": "spell_nature_elementalabsorption",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 분노의 소용돌이 (Raging Maelstrom)",
+      "description": "번개 화살과 연쇄 번개가 소용돌이치는 무기를 한 번에 최대 10중첩까지 소비할 수 있게 한다. 저장 가능한 최대 중첩을 5 늘리는 넘치는 소용돌이와는 다른 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62740,7 +62740,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {

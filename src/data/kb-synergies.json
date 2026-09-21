@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:54:34.157Z",
+    "generatedAt": "2026-09-21T04:58:28.548Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15400,6 +15400,7 @@
     "shaman_enhancement_maelstrom_spender_loop": {
       "id": "shaman_enhancement_maelstrom_spender_loop",
       "name": "소용돌이치는무기-폭풍의일격",
+      "description": "근접 공격으로 소용돌이치는 무기를 얻고 번개 화살·연쇄 번개로 소비한다. 기본 저장 상한은 5이며 넘치는 소용돌이가 저장 상한을 10으로, 분노의 소용돌이가 주문당 소비 한도를 10으로 만든다. 공격 중첩 소비로 얻는 치유용 넘치는 소용돌이는 최대 20 축적·한 번에 최대 10 적용의 별도 효과다. 추가 쿨다운·영웅 특성 연결은 검토 중이다.",
       "type": "synergy",
       "synergyType": "maelstrom_spender_loop",
       "participants": [
