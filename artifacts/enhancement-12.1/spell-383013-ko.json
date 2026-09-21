@@ -1,0 +1,11 @@
+{
+  "name": "독 정화 토템",
+  "icon": "spell_nature_poisoncleansingtotem",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=383013/독-정화-토템\"><b class=\"whtt-name\">독 정화 토템</b></a><div class=\"q0\">특성</div><table width=\"100%\"><tr><td>0.5% (기본 마나 중)</td><th>40 야드 사정거리</th></tr></table><table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->2 분 재사용 대기시간<!--cooldownText--><!--baseCooldown:2 분 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">발 밑에 토템을 소환하여 6초 동안 1.5초마다 30미터 내에 있는 주위의 파티원 또는 공격대원의 독 효과를 모두 제거합니다.</div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": -2
+}

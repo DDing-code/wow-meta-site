@@ -1,0 +1,11 @@
+{
+  "name": "진동의 토템",
+  "icon": "spell_nature_tremortotem",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=8143/진동의-토템\"><b class=\"whtt-name\">진동의 토템</b></a><div class=\"q0\">특성</div>0.46% (기본 마나 중)<table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->1 분 재사용 대기시간<!--cooldownText--><!--baseCooldown:1 분 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">시전자의 위치에 토템을 소환합니다. 이 토템은 10초 동안 땅을 울려 주위 30미터 반경 내의 파티원과 공격대원에게 걸린 공포, 현혹, 수면 효과를 제거합니다.</div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": -2
+}

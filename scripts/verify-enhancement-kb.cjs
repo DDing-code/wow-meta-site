@@ -320,4 +320,13 @@ assert.match(heroFlows, /파멸의 바람.*휘몰아치는 정기.*토템의 기
 assert.ok(enhancementData.heroBranches.every(branch => branch.singleTarget.priority.some(row => row.skillId === '1218090')), 'Both selected-build branches must reference the actual Primordial Storm cast');
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
-console.log('Enhancement: 82 reviewed records plus Restoration shield imbue, shared hero effects, choice nodes and retired duplicate exclusion passed; full manuscript, equipment and logs are not covered.');
+for (const id of ['370', '378773', '8143', '383013', '192058']) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '즉시');
+}
+assert.match(skills['378773'].description, /2개.*사용 특성.*패시브가 아니며/);
+assert.match(skills['370'].description, /1개.*상급 정화.*같은 선택/);
+assert.match(skills['8143'].description, /10초.*30미터.*공포·현혹·수면.*독 정화 토템.*같은 선택/);
+assert.match(skills['383013'].description, /6초.*1.5초.*30미터.*독 효과.*진동의 토템.*같은 선택/);
+assert.match(skills['192058'].description, /2초.*8미터.*3초/);
+console.log('Enhancement mechanics and shared utility regression checks passed; full manuscript, equipment and logs are not covered.');
