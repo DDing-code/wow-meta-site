@@ -400,7 +400,7 @@ for (const id of [383459, 383922, 388004, 388049, 389603, 391683, 392536, 394329
 }
 assert.equal(skills[184362].patch, '12.1');
 assert.equal(skills[184362].castTime, '지속 효과');
-assert.match(skills[184362].description, /4초.*11%.*광란.*30%/);
+assert.match(skills[184362].description, /4초.*특화.*광란.*30%/);
 assert.equal(skills[23881].patch, '12.1');
 assert.equal(skills[23881].cooldown, '4.5초');
 assert.match(skills[23881].description, /3%.*분노 8.*30%/);
@@ -469,4 +469,12 @@ assert.match(skills[335096].description, /분노 8.*3%.*30%.*6초 연장/);
 assert.equal(skills[335097].cooldown, '8초');
 assert.match(skills[335097].description, /분노 12.*20%.*1회.*2회/);
 assert.ok(guide.includes('시작 전에 분노 여유를 확인하세요'));
+for (const id of [46917, 81099, 76856]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].type, 'passive');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[81099].description, /형상변환.*선택 특성이 아닙니다/);
+assert.match(skills[76856].description, /특화에 따라.*중복 계산/);
+assert.ok(guide.includes('실제 장착 무기를 확인하세요'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

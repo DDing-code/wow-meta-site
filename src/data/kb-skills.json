@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:02:41.188Z",
+    "generatedAt": "2026-09-21T22:06:58.946Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15,10 +15,10 @@
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 127,
+        "skill": 126,
         "talent": 996,
-        "spec-talent": 381,
-        "passive": 76,
+        "spec-talent": 380,
+        "passive": 78,
         "hero-tree": 2,
         "set-bonus": 15,
         "tier-set": 2,
@@ -104,7 +104,7 @@
       },
       "quality": {
         "withWikilinks": 2871,
-        "withSynergies": 2017,
+        "withSynergies": 2019,
         "avgLinkDensity": "0.039"
       }
     }
@@ -11417,7 +11417,7 @@
     },
     "46917": {
       "id": "46917",
-      "type": "skill",
+      "type": "passive",
       "class": "Warrior",
       "spec": "Fury",
       "specs": [
@@ -11425,18 +11425,18 @@
       ],
       "name": "티탄의 손아귀",
       "koreanName": "티탄의 손아귀",
-      "englishName": "",
+      "englishName": "Titan's Grip",
       "icon": "ability_warrior_titansgrip",
       "iconName": "ability_warrior_titansgrip",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "분노 전사의 무기 구성과 기본 스케일링을 설명하는 지속 효과다. 직접 딜사이클 버튼은 아니지만 과 를 통해 스탯/장비 설명으로 연결한다.  공식 툴팁 요약: 티탄의 손아귀 전사 필요 요구 레벨 11 양손 무기를 한 손에 하나씩 들 수 있습니다. 양손 무기는 한손 무기보다 공격력이 높고 힘과 체력을 더 많이 증가시킵니다.",
-      "category": "ability",
+      "description": "양손 무기를 한 손에 하나씩 들 수 있게 하는 분노 전사의 기본 지속 효과입니다. 직접 누르는 기술이나 전투 중 활성화하는 쿨다운이 아닙니다. 무기 외형 변경과 실제 장착 무기의 능력치는 별개입니다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11455,9 +11455,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.016,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -15787,18 +15787,18 @@
       ],
       "name": "특화: 구속되지 않은 분노",
       "koreanName": "특화: 구속되지 않은 분노",
-      "englishName": "",
+      "englishName": "Mastery: Unshackled Fury",
       "icon": "ability_warrior_endlessrage",
       "iconName": "ability_warrior_endlessrage",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "격노 상태의 피해 가치를 설명하는 스탯 노드다. 에서 격노 유지가 왜 장비/스탯 판단과 연결되는지 보여 주는 허브로 둔다.  공식 툴팁 요약: 특화: 구속되지 않은 분노 전사 필요 요구 레벨 10 격노 시 공격력이 11.0%만큼 증가합니다.",
+      "description": "격노가 활성화된 동안 피해를 높이는 분노 전사의 특화입니다. 증가량은 캐릭터의 특화에 따라 달라집니다. 외부 툴팁의 11.0%를 모든 장비에서 동일한 최종 수치로 쓰거나, 격노 툴팁과 특화 툴팁에 나온 값을 각각 별도 보너스로 중복 계산하지 않습니다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15810,14 +15810,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/격노",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -16584,7 +16587,7 @@
     },
     "81099": {
       "id": "81099",
-      "type": "spec-talent",
+      "type": "passive",
       "class": "Warrior",
       "spec": "Fury",
       "specs": [
@@ -16592,18 +16595,18 @@
       ],
       "name": "티탄의 손아귀: 하나된 분노",
       "koreanName": "티탄의 손아귀: 하나된 분노",
-      "englishName": "",
+      "englishName": "Titan's Grip: Single-Minded Fury",
       "icon": "warrior_talent_icon_singlemindedfury",
       "iconName": "warrior_talent_icon_singlemindedfury",
       "school": "",
       "cooldown": "",
-      "castTime": "",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "티탄의 손아귀: 하나된 분노은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 티탄의 손아귀: 하나된 분노 전사 필요 무기들 필요 양손 무기를 한손 무기 형상으로 변환할 수 있도록 합니다.",
-      "category": "spec-talent",
+      "description": "양손 무기를 한손 무기 형상으로 변환할 수 있게 하는 분노 전사의 기본 지속 효과입니다. 현재 효과는 형상변환이며, 한손 무기 장착 시 피해나 이동 속도를 높이는 선택 특성이 아닙니다. 한손 외형을 사용해도 실제 장착한 양손 무기의 능력치가 한손 무기 능력치로 바뀌지 않습니다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16615,14 +16618,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_singlemindedfury.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/티탄의-손아귀"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "synergyCount": 1,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -24622,7 +24627,7 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "격노는 별도로 누르는 공격이 아니라 분노 전사의 강화 상태입니다. 기본적으로 4초 동안 공격력이 11% 증가합니다. 광란은 격노를 보장하고 피의 갈증은 기본 30% 확률로 발동시킵니다. 광포한 격노 또는 강대한 격노의 추가 효과는 선택한 특성에 따라 적용되며, 두 효과를 격노의 공통 기본 효과로 합치지 않습니다.",
+      "description": "격노는 별도로 누르는 공격이 아니라 기본 4초 동안 지속되는 분노 전사의 강화 상태입니다. 활성 중 특화: 구속되지 않은 분노의 피해 증가가 적용되며 실제 증가량은 특화에 따라 달라집니다. 광란은 격노를 보장하고 피의 갈증은 기본 30% 확률로 발동시킵니다. 광포한 격노와 강대한 격노의 추가 효과도 선택한 특성에 따라 구분합니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -24651,7 +24656,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.03,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
