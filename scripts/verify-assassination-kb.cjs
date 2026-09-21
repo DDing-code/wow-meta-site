@@ -211,4 +211,12 @@ for (const relation of Object.values(synergies).filter(row => row.id.startsWith(
   assert.ok(relation.description?.length > 30, relation.id);
   for (const id of relation.participants) assert.ok(skills[id]?.specs.includes('Assassination'), id);
 }
-console.log('Assassination reviewed subset: 66 atomic notes, 10 relationships, 7 retired talents passed');
+for (const id of ['1966', '1856']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'atomic-skill', id);
+  assert.ok(skills[id].specs.includes('Assassination'), id);
+}
+assert.equal(skills['1966'].resourceCost, '기력 35');
+assert.match(skills['1966'].description, /6초.*광역.*40%/);
+assert.match(skills['1856'].description, /3초.*피해 면역 시간이 아니/);
+console.log('Assassination reviewed subset: 68 atomic notes, 10 relationships, 7 retired talents passed');

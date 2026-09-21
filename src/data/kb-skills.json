@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:45:06.049Z",
+    "generatedAt": "2026-09-21T00:58:15.980Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -3683,10 +3683,10 @@
       "castTime": "즉시",
       "resourceCost": "",
       "range": "",
-      "description": "# 소멸 (Vanish)",
+      "description": "전투 중 즉시 은신에 진입하고 이동 방해 효과에서 벗어난다. 기본 쿨다운은 2분, 기본 사용 가능 횟수는 1회다. 사용 후 첫 3초 동안에는 받는 피해나 해로운 효과 때문에 은신이 해제되지 않는다. 이 3초는 피해 면역 시간이 아니며, 모든 해로운 효과를 해제한다는 뜻도 아니다.  암살은 은신 관련 특성을 이용해 강화 목조르기를 다시 적용하는 데 활용한다. 목조르기의 강화량과 은신 종료 후 적용 가능한 시간은 해당 특성의 효과이지 소멸 자체의 기본 효과가 아니다. 잠행의 은신 기술 재사용이나 생존 목적도 상황별로 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3707,7 +3707,7 @@
       "quality": {
         "wikilinkCount": 8,
         "synergyCount": 1,
-        "linkDensity": 0.114,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -3881,12 +3881,12 @@
       "school": "",
       "cooldown": "15초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "기력 35",
       "range": "",
-      "description": "# 교란 (Feint)",
+      "description": "기력 35를 소모해 6초 동안 광역 공격으로 받는 피해를 40% 줄인다. 기본 쿨다운은 15초, 기본 사용 가능 횟수는 1회다. 단일 대상 공격까지 기본 효과로 줄이는 기술은 아니다.  광역 피해가 들어오기 직전에 사용해 피해 시점과 지속시간을 맞춘다. 딜을 위해 기력을 소비하는 상황에서도 다음 위험한 광역 공격을 버틸 기력을 남겨 둔다. 피해가 이미 끝난 뒤 누르면 지나간 피해를 복구하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3905,7 +3905,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.073,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
