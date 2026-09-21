@@ -337,4 +337,14 @@ assert.match(skills[23920].description, /첫 번째.*5초.*20%/);
 assert.match(skills[18499].description, /6초.*모든 기절.*아니다/s);
 assert.match(skills[1243660].description, /지속시간이 20%/);
 assert.match(skills[424742].description, /3%.*2%.*3초.*100%.*15초/);
+for (const id of [382900, 383082, 382946, 382896, 384124, 392777, 382895, 382258]) assert.equal(skills[id].patch, '12.1');
+for (const [id, spec] of [[382900, 'Fury'], [382896, 'Arms'], [382895, 'Protection']]) {
+  assert.deepEqual(skills[id].specs, [spec]);
+  assert.match(skills[id].description, /1포인트.*2포인트/);
+}
+assert.match(skills[384124].description, /무기·분노.*5%.*방어.*2%.*2포인트/);
+assert.match(skills[382946].description, /자동 공격.*치명타.*10초.*10%.*효과량.*8초/);
+assert.match(skills[383082].description, /몰아치는 천둥.*천둥벼락/);
+assert.match(skills[392777].description, /1포인트.*1%.*마무리 일격.*5%.*2포인트/);
+assert.equal(skills[382258].castTime, '지속 효과');
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
