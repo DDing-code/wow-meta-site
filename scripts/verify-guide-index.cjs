@@ -2,10 +2,10 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { chromium } = require('playwright');
+const { chromium, webkit } = require('playwright');
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await (process.env.TEST_BROWSER === 'webkit' ? webkit : chromium).launch();
   const origin = process.env.TEST_ORIGIN || 'http://127.0.0.1:3002';
   const output = path.join(__dirname, '../artifacts/guide-index');
   fs.mkdirSync(output, { recursive: true });
@@ -23,16 +23,38 @@ const { chromium } = require('playwright');
         return {
           id: element.dataset.specIcon,
           hidden: element.getAttribute('aria-hidden'),
-          position: style.maskPosition,
-          mode: style.maskMode,
+          position: [element.querySelector('image').getAttribute('x'), element.querySelector('image').getAttribute('y')],
+          mode: element.querySelector('mask').style.maskType,
           opacity: Number(style.opacity),
           size: element.getBoundingClientRect().width,
         };
       }));
       assert.equal(icons.length, 40);
       assert.equal(new Set(icons.map(icon => icon.id)).size, 40);
-      assert.equal(new Set(icons.map(icon => icon.position)).size, 40);
+      assert.equal(new Set(icons.map(icon => icon.position.join(','))).size, 40);
       assert(icons.every(icon => icon.mode === 'luminance' && icon.hidden === 'true' && icon.size === 32 && icon.opacity === 0.58));
+      if (width === 390) {
+        for (const icon of await sections.locator('[data-spec-icon]').all()) {
+          const png = await icon.screenshot();
+          const coverage = await page.evaluate(async base64 => {
+            const image = new Image();
+            image.src = `data:image/png;base64,${base64}`;
+            await image.decode();
+            const canvas = document.createElement('canvas');
+            canvas.width = image.width;
+            canvas.height = image.height;
+            const context = canvas.getContext('2d');
+            context.drawImage(image, 0, 0);
+            const pixels = context.getImageData(0, 0, image.width, image.height).data;
+            let bright = 0;
+            for (let i = 0; i < pixels.length; i += 4) {
+              if (pixels[i] > 80 && pixels[i + 1] > 80 && pixels[i + 2] > 80) bright++;
+            }
+            return bright / (image.width * image.height);
+          }, png.toString('base64'));
+          assert(coverage > 0.02 && coverage < 0.65, `${await icon.getAttribute('data-spec-icon')}: blank or solid-square rendering (${coverage})`);
+        }
+      }
       if (width === 1440) {
         const masks = await page.evaluate(async positions => {
           const image = new Image();
@@ -44,8 +66,8 @@ const { chromium } = require('playwright');
           const context = canvas.getContext('2d');
           context.drawImage(image, 0, 0);
           return positions.map(position => {
-            const [x, y] = position.split(' ').map(value => parseFloat(value));
-            const pixels = context.getImageData(Math.round(x / 100 * (canvas.width - 176)), Math.round(y / 100 * (canvas.height - 176)), 176, 176).data;
+            const [x, y] = position.map(value => -Number(value));
+            const pixels = context.getImageData(x, y, 176, 176).data;
             let ink = 0, clipped = false;
             for (let i = 0; i < 176 * 176; i++) {
               if (pixels[i * 4] < 128) continue;
@@ -95,6 +117,7 @@ const { chromium } = require('playwright');
         ['/guide/monk/windwalker', 'monk-windwalker'],
         ['/guide/demonhunter/devourer', 'demonhunter-devourer'],
         ['/guide/deathknight/blood', 'deathknight-blood'],
+        ['/guide/rogue/assassination', 'rogue-assassination'],
       ]) {
         await page.goto(`${origin}${route}`, { waitUntil: 'networkidle' });
         const heading = page.locator('h1');

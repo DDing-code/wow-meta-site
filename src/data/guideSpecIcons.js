@@ -1,4 +1,4 @@
-// Optical centers in the 1586x992 atlas, viewed through a 176px square mask.
+// Crop origins in the 1586x992 atlas, viewed through a 176px square.
 export const guideSpecIcons = Object.fromEntries([
   ['warrior-protection', 111, 136],
   ['warrior-arms', 295, 133],
@@ -40,4 +40,4 @@ export const guideSpecIcons = Object.fromEntries([
   ['evoker-devastation', 1081, 858],
   ['evoker-augmentation', 1280, 859],
   ['evoker-preservation', 1470, 863],
-].map(([id, x, y]) => [id, `${(x - 88) / 1410 * 100}% ${(y - 88) / 816 * 100}%`]));
+].map(([id, x, y]) => [id, [x - 88, y - 88]]));
