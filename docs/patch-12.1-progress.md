@@ -273,6 +273,8 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 
 - Third pass: independently checked Korean/English Poison Bomb, Path of Blood and Doomblade tooltips, replaced generic prose and narrowed note links to concrete interactions. Eighteen atomic effects now have scoped DB checks. Talent availability and build recommendations are separate unfinished checks: current tooltip existence is not sufficient evidence. The full manuscript and production deployment remain pending.
 
+- Fourth pass: authored twelve further talent effects and shared Ambush (previously mislabeled Outlaw-only), bringing the reviewed subset to thirty Assassination notes plus one shared cast. Replaced the builder and Caustic Spatter relationships with seven and four grounded participants. Intent to Kill is movement cooldown reduction, not combo-point generation; Caustic Spatter is a ten-second one-target Nature splash, not bleed copying. Documented Sanguine Stratagem's Korean/English threshold wording conflict. Scoped regression checks now cover 31 records and three relationships; full hero flows, talent-tree availability and manuscript replacement remain open.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

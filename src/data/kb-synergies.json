@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T23:51:52.867Z",
+    "generatedAt": "2026-09-21T00:00:52.623Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14385,48 +14385,32 @@
     },
     "rogue_assassination_caustic_kingsbane": {
       "id": "rogue_assassination_caustic_kingsbane",
-      "name": "부식성분사-왕의파멸",
+      "name": "부식성 분사: 한 대상의 자연 피해를 주변으로",
+      "description": "독살·왕의 파멸이 한 대상에게 10초간 부식성 분사를 부여한다. 그 대상에게 가하는 자연 피해의 20%가 주변의 다른 적에게 퍼진다. 죽음표식의 독 적용 증가는 왕의 파멸 강화와 연결되지만 출혈 복제와는 다른 효과다.",
       "type": "synergy",
       "synergyType": "priority_aoe",
       "participants": [
         "421975",
         "385627",
         "32645",
-        "360194",
-        "51723",
-        "1247227",
-        "381631",
-        "381629",
-        "381800",
-        "381802",
-        "381801",
-        "394983"
+        "360194"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/혈폭풍"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/초소형맹독의칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/무차별살육",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/가벼운독칼"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\부식성분사-왕의파멸.md",
@@ -14485,49 +14469,38 @@
     },
     "rogue_assassination_builder_combo_points": {
       "id": "rogue_assassination_builder_combo_points",
-      "name": "절단-사각지대-연계점수",
+      "name": "절단·매복: 발동에 맞춘 연계 점수 수급",
+      "description": "목조르기는 구조적 실패를 통해 절단·매복의 피해를 강화한다. 절단과 매복은 사각 지대를 발동시킬 수 있고, 생성기 치명타는 운명의 낙인으로 추가 연계 점수를 준다. 실제 점수를 확인해 독살로 소비한다.",
       "type": "synergy",
       "synergyType": "builder_combo_point_engine",
       "participants": [
         "1329",
+        "8676",
         "328085",
         "14190",
-        "381797",
-        "381630",
-        "455072",
-        "255989",
         "381652",
-        "32645",
-        "385424",
-        "1265385",
-        "1265386",
-        "1265387"
+        "703",
+        "32645"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/살상의의지",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/신속한주입",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/일급암살자",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/톱니뼈가시",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천-1265386",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천-1265387"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\절단-사각지대-연계점수.md",
@@ -14583,7 +14556,7 @@
     },
     "rogue_assassination_deathmark_kingsbane": {
       "id": "rogue_assassination_deathmark_kingsbane",
-      "name": "죽음표식-왕의파멸",
+      "name": "죽음표식: 독 적용과 왕의 파멸 강화",
       "description": "독살은 독 적용 확률을 높이고, 죽음표식은 치명독을 두 번 적용한다. 왕의 파멸은 치명독 적용으로 강화되며 불구대천 후속 공격도 독과 연계 점수를 제공한다.",
       "type": "synergy",
       "synergyType": "major_damage_window",

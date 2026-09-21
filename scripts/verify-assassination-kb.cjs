@@ -43,6 +43,46 @@ assert.match(skills['255544'].description, /2초/);
 assert.match(skills['423054'].description, /최대 기력이 50 증가/);
 assert.match(skills['381673'].description, /절단이 8초에 걸쳐 25%의 추가 출혈/);
 const cooldown = synergies.rogue_assassination_deathmark_kingsbane;
+const talentEffects = {
+  '421975': /한 대상에게 10초.*자연 피해의 20%/,
+  '14190': /치명타로 적중할 때마다 연계 점수 1점/,
+  '328085': /10%.*35% 미만.*20%/,
+  '381652': /매복과 절단의 피해가 30%/,
+  '381631': /반경이 12미터.*20%.*5명.*10%/,
+  '381624': /독의 적용 확률이 5%/,
+  '381630': /그림자 밟기의 재사용 대기시간이 33%/,
+  '385478': /피해가 30%.*은신 상태.*연계 점수 2점/,
+  '381629': /치명타 확률이 5%.*치명타로 적중/,
+  '392384': /무기에 바르는 독의 피해가 20%/,
+  '381626': /목조르기와 파열의 피해가 15%/,
+  '457512': /최대 연계 점수가 1점.*마무리 일격의 피해가 5%/,
+};
+for (const [id, effect] of Object.entries(talentEffects)) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'talent', id);
+  assert.ok(skills[id].specs.includes('Assassination'), id);
+  assert.match(skills[id].description, effect, id);
+}
+assert.deepEqual(skills['8676'].specs, ['Assassination', 'Outlaw']);
+assert.equal(skills['8676'].resourceCost, '기력 50');
+assert.match(skills['8676'].description, /연계 점수 2점/);
+const builder = synergies.rogue_assassination_builder_combo_points;
+assert.equal(builder.patch, '12.1');
+assert.equal(builder.name, '절단·매복: 발동에 맞춘 연계 점수 수급');
+assert.equal(builder.spec, 'Assassination');
+assert.deepEqual(builder.participants, ['1329', '8676', '328085', '14190', '381652', '703', '32645']);
+assert.match(builder.description, /운명의 낙인으로 추가 연계 점수/);
+const caustic = synergies.rogue_assassination_caustic_kingsbane;
+assert.equal(caustic.patch, '12.1');
+assert.equal(caustic.name, '부식성 분사: 한 대상의 자연 피해를 주변으로');
+assert.equal(caustic.spec, 'Assassination');
+assert.deepEqual(caustic.participants, ['421975', '385627', '32645', '360194']);
+assert.match(caustic.description, /자연 피해의 20%가 주변의 다른 적/);
+for (const relation of [builder, caustic]) {
+  for (const id of relation.participants) {
+    assert.ok(skills[id]?.specs.includes('Assassination'), id);
+  }
+}
 assert.equal(cooldown.patch, '12.1');
 assert.equal(cooldown.spec, 'Assassination');
 assert.match(cooldown.description, /치명독을 두 번 적용/);
@@ -56,4 +96,4 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 18 atomic notes and the Deathmark relationship passed');
+console.log('Assassination reviewed subset: 31 atomic notes and 3 relationships passed');

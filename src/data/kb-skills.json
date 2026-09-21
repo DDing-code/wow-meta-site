@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-20T23:51:52.866Z",
+    "generatedAt": "2026-09-21T00:00:52.622Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2894,
-        "withSynergies": 1854,
+        "withSynergies": 1866,
         "avgLinkDensity": "0.040"
       }
     }
@@ -6491,6 +6491,7 @@
       "class": "Rogue",
       "spec": "무법",
       "specs": [
+        "Assassination",
         "Outlaw"
       ],
       "name": "매복",
@@ -6501,12 +6502,12 @@
       "school": "",
       "cooldown": "",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "기력 50",
       "range": "근접",
-      "description": "# 매복 (Ambush)",
+      "description": "기본적으로 은신 상태에서 기력 50을 소비해 물리 피해를 입히고 연계 점수 2점을 생성한다. 암살과 무법에서 사용하는 생성기로, 은신 밖 사용이나 무료 사용은 해당 특성의 발동 조건을 따른다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6521,13 +6522,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.073,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -7317,14 +7320,14 @@
       "icon": "ability_rogue_stayofexecution",
       "iconName": "ability_rogue_stayofexecution",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 운명의 낙인 (Seal Fate)",
+      "description": "연계 점수를 생성하는 공격이 치명타로 적중할 때마다 연계 점수 1점을 추가로 얻는다. 일반 공격이나 모든 지속 피해의 치명타에서 연계 점수가 생기는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7336,14 +7339,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_stayofexecution.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -45519,14 +45524,14 @@
       "icon": "ability_rogue_focusedattacks",
       "iconName": "ability_rogue_focusedattacks",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사각 지대 (Blindside)",
+      "description": "매복 또는 절단이 10% 확률로 다음 매복을 기력 소모 없이 은신 밖에서도 사용할 수 있게 한다. 대상의 생명력이 35% 미만이면 발동 확률이 20%로 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45538,14 +45543,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_focusedattacks.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -54847,14 +54856,14 @@
       "icon": "ability_poisons",
       "iconName": "ability_poisons",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 독 연구 (Improved Poisons)",
+      "description": "무기에 바르는 독의 적용 확률이 5% 증가한다. 독의 피해를 직접 5% 늘리는 특성이 아니라 독이 적용될 확률을 높이는 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54866,14 +54875,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_poisons.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/치명적인혼합물"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -54895,14 +54909,14 @@
       "icon": "ability_rogue_rupture",
       "iconName": "ability_rogue_rupture",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 피바다 (Bloody Mess)",
+      "description": "목조르기와 파열의 피해가 15% 증가한다. 모든 출혈의 피해를 올리는 효과가 아니라 두 기술을 지정해 강화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54914,14 +54928,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_rupture.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -54991,14 +55008,14 @@
       "icon": "ability_hunter_cobrashot",
       "iconName": "ability_hunter_cobrashot",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정확한 투척술 (Thrown Precision)",
+      "description": "칼날 부채의 치명타 확률이 5% 증가하고, 칼날 부채가 치명타로 적중하면 무기에 바르는 독을 항상 적용한다. 일반 적중까지 모두 확정 독 적용으로 바꾸지는 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55010,14 +55027,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_cobrashot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -55039,14 +55060,14 @@
       "icon": "ability_rogue_bloodyeye",
       "iconName": "ability_rogue_bloodyeye",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 살상의 의지 (Intent to Kill)",
+      "description": "자신의 목조르기가 걸린 대상에게 그림자 밟기를 사용하면 그림자 밟기의 재사용 대기시간이 33% 감소한다. 연계 점수 생성이나 기력 회복을 제공하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55058,14 +55079,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_bloodyeye.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자밟기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -55087,14 +55111,14 @@
       "icon": "ability_rogue_fanofknives",
       "iconName": "ability_rogue_fanofknives",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날아가는 단검 (Flying Daggers)",
+      "description": "칼날 부채의 반경이 12미터로 늘고 피해가 20% 증가한다. 5명 이상의 대상을 맞히면 추가로 10%의 피해를 입힌다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55106,14 +55130,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_fanofknives.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/정확한투척술"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -55429,14 +55457,14 @@
       "icon": "ability_skeer_bloodletting",
       "iconName": "ability_skeer_bloodletting",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구조적 실패 (Systemic Failure)",
+      "description": "목조르기가 걸린 대상에게 사용하는 매복과 절단의 피해가 30% 증가한다. 목조르기가 없는 다른 대상의 생성기 피해까지 함께 증가하는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55448,14 +55476,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skeer_bloodletting.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "synergyCount": 2,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -63921,14 +63952,14 @@
       "icon": "ability_rogue_garrote",
       "iconName": "ability_rogue_garrote",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 장막 속의 질식 (Shrouded Suffocation)",
+      "description": "목조르기의 피해가 30% 증가하며, 은신 상태에서 목조르기를 사용하면 연계 점수 2점을 추가로 생성한다. 피해 증가와 추가 점수의 은신 조건은 구분해야 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63940,14 +63971,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_garrote.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -73355,14 +73388,14 @@
       "icon": "ability_creature_poison_06",
       "iconName": "ability_creature_poison_06",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치명적인 혼합물 (Fatal Concoction)",
+      "description": "무기에 바르는 독의 피해가 20% 증가한다. 모든 자연 피해나 모든 도적 기술의 피해를 20% 증가시키는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73375,13 +73408,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/독연구"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -81193,14 +81228,14 @@
       "icon": "ability_creature_poison_02",
       "iconName": "ability_creature_poison_02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 부식성 분사 (Caustic Spatter)",
+      "description": "독살 또는 왕의 파멸이 한 대상에게 10초 동안 부식성 분사를 부여한다. 그 대상에게 입히는 자연 피해의 20%가 주변의 다른 적에게 퍼지며, 5명을 초과하는 대상에게는 피해가 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81212,14 +81247,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_poison_02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -107792,14 +107830,14 @@
       "icon": "archaeology_5_0_changkiboard",
       "iconName": "archaeology_5_0_changkiboard",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 핏빛 전략 (Sanguine Stratagem)",
+      "description": "최대 연계 점수가 1점 증가하고 마무리 일격의 피해가 5% 증가한다. 늘어난 한도로 연계 점수를 더 소비하는 마무리 일격을 사용할 수 있지만, 이 특성 하나만으로 최대 점수가 7점이 되는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107811,14 +107849,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/archaeology_5_0_changkiboard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "synergyCount": 2,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
