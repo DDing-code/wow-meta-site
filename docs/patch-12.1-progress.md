@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue offensive modifiers and scope findings, 2026-09-21
+
+- Compared live Korean/English effects and fixed trait rows for seven common talents: Deadly Precision, Lethality, Cold Blooded Killer, Thrill Seeking, Forced Induction, Quick Fingers and Deep Cuts. Replaced generic text, separated crit chance from crit damage, clarified Lethality's two ranks and spec-specific mobility charges, and linked actual conditions instead of poison/stealth placeholders.
+- The same audit found Acrobatic Strikes 455143 only in Outlaw's specialization tree while the KB still marks it common. Shadowheart 455131 was absent from the fixed trait list despite its tooltip being accessible. Their scope/retirement and incoming links remain an explicit next audit item; neither was simply relabeled current.
+
 ### Rogue ten shared talent effects, 2026-09-21
 
 - Individually compared Korean/English tooltips for Airborne Irritant, Deadened Nerves, Nimble Fingers, Shadowrunner, Fleet Footed, Recuperator, Blackjack, Improved Ambush, Tight Spender and Swift Slasher. All ten also appear as one-rank class nodes in fixed SimC 774babde5ddc7c5fc9f1abb129b473f8a076df70.

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:20:08.410Z",
+    "generatedAt": "2026-09-21T04:22:51.525Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1977,
+        "withSynergies": 1984,
         "avgLinkDensity": "0.039"
       }
     }
@@ -54577,14 +54577,14 @@
       "icon": "ability_rogue_deadenednerves",
       "iconName": "ability_rogue_deadenednerves",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치명적인 정밀함 (Deadly Precision)",
+      "description": "연계 점수를 생성하는 공격의 치명타 확률을 5% 높이는 지속 특성이다. 모든 공격의 치명타 확률이나 생성기의 치명타 피해를 5% 올리는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54597,13 +54597,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/냉혈한학살자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -57553,14 +57555,14 @@
       "icon": "ability_criticalstrike",
       "iconName": "ability_criticalstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치명상 (Lethality)",
+      "description": "1등급 기준 치명타 확률이 1% 증가하고 연계 점수 생성 공격의 치명타 피해 증가량이 10% 증가하는 지속 특성이다. 고정 12.1 특성 목록에서 최대 2등급이다. 확률 보너스와 생성 공격에 한정된 피해 보너스를 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57573,13 +57575,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/치명적인정밀함"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -57603,14 +57607,14 @@
       "icon": "spell_ice_lament",
       "iconName": "spell_ice_lament",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 냉혈한 학살자 (Cold Blooded Killer)",
+      "description": "연계 점수 생성 공격이 치명타로 적중하면 다음 마무리 일격의 치명타 확률이 10% 증가하는 지속 특성이다. 다음 마무리 일격이 반드시 치명타가 되는 효과나 상시 치명타 피해 증가가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57623,13 +57627,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/치명적인정밀함"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -75291,14 +75297,14 @@
       "icon": "inv_ragnaros_heart_shadowflame",
       "iconName": "inv_ragnaros_heart_shadowflame",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전율의 추구자 (Thrill Seeking)",
+      "description": "무법은 갈고리 던지기, 암살과 잠행은 그림자 밟기의 최대 충전 횟수가 1회 증가하는 지속 특성이다. 두 이동기의 충전을 모든 전문화가 동시에 받는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75310,14 +75316,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart_shadowflame.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자밟기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -112507,14 +112515,14 @@
       "icon": "inv_misc_enggizmos_06",
       "iconName": "inv_misc_enggizmos_06",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강제 유도 (Forced Induction)",
+      "description": "공격 마무리 일격이 과충전된 연계 점수를 소비할 때 받는 추가 효과상 점수 보너스를 1 높이는 지속 특성이다. 초자력 충전기의 기본 추가 2점은 이 효과로 추가 3점이 된다. 실제 자원 1점을 새로 생성하거나 최대 연계 점수 상한을 늘리는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112527,13 +112535,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/초자력충전기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -138838,14 +138848,14 @@
       "icon": "ability_rogue_improvedrecuperate",
       "iconName": "ability_rogue_improvedrecuperate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빠른 손가락 (Quick Fingers)",
+      "description": "민첩성이 3% 증가하는 지속 특성이다. 공격 속도·이동 속도·기력 회복을 3% 높이는 효과가 아니다. 교란과 약병의 기력 비용을 줄이는 날렵한 손가락과 이름을 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138858,13 +138868,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/날렵한손가락"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -138994,14 +139006,14 @@
       "icon": "inv_1115_firstkilloftheday_firstkilloftheday",
       "iconName": "inv_1115_firstkilloftheday_firstkilloftheday",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깊은 자상 (Deep Cuts)",
+      "description": "마무리 일격의 피해가 6% 증가하는 지속 특성이다. 모든 출혈 피해를 6% 높이거나 생성 공격의 피해를 높이는 효과가 아니다. 이름만 보고 파열 전용 특성으로 분류하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139014,13 +139026,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/절약정신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
