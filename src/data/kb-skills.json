@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:34:58.972Z",
+    "generatedAt": "2026-09-21T05:39:19.886Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1992,
+        "withSynergies": 1993,
         "avgLinkDensity": "0.039"
       }
     }
@@ -20521,14 +20521,14 @@
       "icon": "ability_skyreach_four_wind",
       "iconName": "ability_skyreach_four_wind",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 바람의 일격 (Windstrike)",
+      "cooldown": "기본 7.5초 (승천 보정 별도)",
+      "castTime": "즉시",
+      "resourceCost": "툴팁에 마나 비용 미표기; 자원 소비는 토림의 기원 조건 확인",
+      "range": "30미터",
+      "description": "승천 중 폭풍의 일격을 대체하는 즉시 시전 기술이다. 30미터 거리에서 방어도를 무시하는 물리 피해를 준다. 기본 툴팁은 7.5초 재사용 대기시간과 1회 충전을 표시하지만, 승천의 60% 재사용 대기시간 감소를 적용하면 가속 등 추가 보정 전 3초다. 자연 피해 주문으로 분류하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20541,13 +20541,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/고양/Talents/승천",
+          "08-직업별-Knowledge-Base/11-주술사/고양/Talents/토림의기원"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.055,
+        "wikilinkCount": 7,
+        "synergyCount": 2,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -112276,7 +112279,8 @@
       "class": "Shaman",
       "spec": "정기",
       "specs": [
-        "Elemental"
+        "Elemental",
+        "Enhancement"
       ],
       "name": "전격의 불길",
       "koreanName": "전격의 불길",
@@ -112284,14 +112288,14 @@
       "icon": "inv_10_dungeonjewelry_primalist_trinket_1ragingelement_fire",
       "iconName": "inv_10_dungeonjewelry_primalist_trinket_1ragingelement_fire",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 전격의 불길 (Voltaic Blaze)",
+      "cooldown": "기본 10초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 0.3%",
+      "range": "40미터",
+      "description": "정기와 고양이 선택할 수 있는 즉시 시전 기술이다. 주 대상과 그 주변 10미터 내 추가 적 5명에게 화염 충격을 부여하고 자연 피해를 주며 항상 치명타 및 극대화로 적중한다. 고양은 소용돌이치는 무기 1중첩을 생성하고, 정기는 소용돌이 6을 생성한다. 기본 재사용 대기시간은 10초, 비용은 기본 마나의 0.3%, 사거리는 40미터다. 이름에 불길이 있지만 직접 피해는 자연 속성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112310,7 +112314,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {
@@ -125047,14 +125051,14 @@
       "icon": "spell_druid_astralstorm",
       "iconName": "spell_druid_astralstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 해방 (Storm Unleashed)",
+      "description": "폭풍 해방의 마지막 단계다. 낙뢰가 적중한 지역에 2초 동안 낙뢰 피해의 50%에 해당하는 추가 피해를 2회 입힌다. 또한 낙뢰의 무기 강화 효과가 자동 공격 속도를 15% 높인다. 전체 가속이나 주문 시전 속도를 15% 높이는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125073,7 +125077,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -133160,14 +133164,14 @@
       "icon": "ability_thunderking_thunderstruck",
       "iconName": "ability_thunderking_thunderstruck",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천둥 축전기 (Thunder Capacitor)",
+      "description": "번개 화살과 연쇄 번개의 피해가 20% 증가하고, 20% 확률로 해당 주문이 소비한 소용돌이치는 무기를 반환한다. 초자력 충전의 35% 확률 2중첩 반환과는 다른 효과다. 툴팁에 폭풍과 정기 작렬은 대상으로 명시되어 있지 않으므로 모든 소비 주문이 전량을 반환한다고 설명하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133186,7 +133190,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -133420,14 +133424,14 @@
       "icon": "inv12_apextalent_shaman_stormunleashed",
       "iconName": "inv12_apextalent_shaman_stormunleashed",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 해방 (Storm Unleashed)",
+      "description": "소용돌이치는 무기를 소비할 때 중첩 하나당 2% 확률로 다음 낙뢰가 재사용 대기시간을 무시한다. 낙뢰의 무기 강화 효과가 서로 겹칠 수 있게 된다. 폭풍 해방의 첫 단계 효과이며, 후속 단계의 피해 증가나 자동 공격 속도 증가와 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133446,7 +133450,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -133521,14 +133525,14 @@
       "icon": "spell_druid_astralstorm",
       "iconName": "spell_druid_astralstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 해방 (Storm Unleashed)",
+      "description": "폭풍 해방의 중간 단계다. 1등급 툴팁에서 소용돌이치는 무기를 소비하는 능력의 피해가 8%, 무기 강화 효과의 피해가 10% 증가한다. 고정 12.1 특성 데이터상 최대 2등급이다. 1등급 표시를 완성 빌드의 고정 수치로 사용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133547,7 +133551,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {

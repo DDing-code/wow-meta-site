@@ -23,6 +23,11 @@ for (const [id, pattern] of Object.entries({
   1218047: /15초.*한 번.*특성.*1218047.*1218090/,
   1218090: /15초.*한 번.*0.8%.*100%.*150%.*추가 검증/,
   382888: /다음 3회.*15%.*Flurry.*382888.*Tempest.*454009/,
+  1262635: /20%.*20%.*반환.*35%.*2중첩.*다른 효과/,
+  1262713: /중첩 하나당 2%.*낙뢰.*무시.*겹칠/,
+  1262761: /1등급.*8%.*10%.*최대 2등급/,
+  1252373: /2초.*50%.*2회.*자동 공격 속도.*15%.*전체 가속.*아니다/,
+  115356: /승천.*30미터.*물리 피해.*7.5초.*1회.*60%.*3초/,
 })) {
   assert.equal(skills[id].patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
@@ -64,6 +69,11 @@ for (const [id, pattern] of Object.entries({
   assert.equal(skills[id].castTime, id === '444995' ? '즉시' : '지속 효과', id);
 }
 assert.match(skills[444995].cooldown, /고양 1분.*25초/);
+assert.equal(skills[470057].patch, '12.1');
+assert.deepEqual(skills[470057].specs, ['Elemental', 'Enhancement']);
+assert.equal(skills[470057].castTime, '즉시');
+assert.match(skills[470057].description, /추가 적 5명.*항상 치명타.*고양.*1중첩.*정기.*6.*10초/);
+assert.equal(skills[115356].castTime, '즉시');
 for (const id of ['shaman_enhancement_stormbringer_tempest', 'shaman_enhancement_totemic_surging_window']) {
   const relation = synergies[id];
   assert.equal(relation.patch, '12.1', id);
@@ -96,4 +106,4 @@ assert.match(manuscript, /skillIds: \['454009'/);
 assert.match(manuscript, /skillId: ['"]1218090['"]/);
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
-console.log('Enhancement: 27 reviewed records, active spell IDs, shared hero effects, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
+console.log('Enhancement: 33 reviewed records, active spell IDs, shared hero effects, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
