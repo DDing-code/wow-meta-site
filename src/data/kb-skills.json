@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:03:52.837Z",
+    "generatedAt": "2026-09-21T05:07:12.143Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2979,
-    "rawTotalSkills": 2979,
+    "totalSkills": 2980,
+    "rawTotalSkills": 2980,
     "duplicateIds": [],
     "totalSynergies": 572,
     "stats": {
-      "total": 2979,
+      "total": 2980,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
         "atomic-skill": 552,
         "proc": 29,
         "skill": 131,
-        "talent": 996,
+        "talent": 997,
         "spec-talent": 392,
         "passive": 75,
         "hero-tree": 2,
@@ -40,7 +40,7 @@
         "Paladin": 250,
         "Priest": 258,
         "Rogue": 296,
-        "Shaman": 273,
+        "Shaman": 274,
         "Warlock": 296,
         "Warrior": 265
       },
@@ -86,7 +86,7 @@
         "Rogue-무법": 55,
         "Rogue-암살": 52,
         "Rogue-잠행": 60,
-        "Shaman-고양": 44,
+        "Shaman-고양": 45,
         "Shaman-공용": 126,
         "Shaman-복원": 46,
         "Shaman-정기": 57,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2904,
-        "withSynergies": 1990,
+        "withWikilinks": 2905,
+        "withSynergies": 1991,
         "avgLinkDensity": "0.039"
       }
     }
@@ -29743,14 +29743,14 @@
       "icon": "ability_rhyolith_lavapool",
       "iconName": "ability_rhyolith_lavapool",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 세계의 분리 (Sundering)",
+      "cooldown": "기본 30초",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 1.2%",
+      "range": "전방",
+      "description": "주무기로 전방의 대지를 일자로 갈라 적중한 적에게 불길충격 피해를 주는 사용 기술이다. 기본 쿨다운은 30초이며 기본 마나의 1.2%를 사용한다. 현재 기본 툴팁에는 기절·행동 불가나 주문 차단 효과가 없다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29769,7 +29769,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.054,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -31495,14 +31495,14 @@
       "icon": "spell_fire_playingwithfire",
       "iconName": "spell_fire_playingwithfire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 뜨거운 손 (Hot Hand)",
+      "description": "불꽃혓바닥 무기 활성 상태의 근접 자동 공격이 기본 5% 확률로 발동하는 지속 특성이다. 1등급 툴팁은 8초 동안 용암 채찍 쿨다운 25% 감소와 피해 20% 증가를 표시한다. 이미 뜨거운 손이 활성화된 동안에는 다시 발동하지 않는다. 고정 12.1 특성 데이터의 최대 등급은 2이므로 1등급 값을 완성 빌드의 최종값으로 고정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31521,7 +31521,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -45635,14 +45635,14 @@
       "icon": "spell_fire_ragnaros_lavabolt",
       "iconName": "spell_fire_ragnaros_lavabolt",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 용암 공세 (Molten Assault)",
+      "description": "용암 채찍의 쿨다운을 6초 줄이고, 자신의 화염 충격이 걸린 대상에게 용암 채찍을 사용하면 주변 최대 5명의 적에게 화염 충격을 전이한다. 기본 용암 채찍 쿨다운 18초는 이 특성만 적용하면 12초가 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45661,7 +45661,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -45683,14 +45683,14 @@
       "icon": "spell_shaman_shockinglava",
       "iconName": "spell_shaman_shockinglava",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 채찍 화염 (Lashing Flames)",
+      "range": "대상",
+      "description": "용암 채찍과 세계의 분리가 적중한 대상의 화염 충격 피해를 20초 동안 100% 증가시키는 지속 특성이다. 용암 채찍만 발동 조건이라고 제한하지 않으며, 시전자의 모든 화염 피해를 100% 높이는 효과도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45709,7 +45709,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -52810,7 +52810,8 @@
       "class": "Shaman",
       "spec": "고양",
       "specs": [
-        "Enhancement"
+        "Enhancement",
+        "Restoration"
       ],
       "name": "깊이 뿌리내린 정기",
       "koreanName": "깊이 뿌리내린 정기",
@@ -52818,14 +52819,14 @@
       "icon": "inv_misc_herb_liferoot_stem",
       "iconName": "inv_misc_herb_liferoot_stem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깊이 뿌리내린 정기 (Deeply Rooted Elements)",
+      "description": "고양은 소비한 소용돌이치는 무기 중첩당 0.6% 확률로 기본 6초의 승천을 발동한다. 직접 누르는 승천 버튼이 아니다. 토림의 기원을 선택하면 이 발동 지속 시간이 2초 늘어난다. 복원은 별도로 성난 해일 시전 시 7% 확률로 6초의 승천을 얻는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52844,7 +52845,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -114912,7 +114913,7 @@
     },
     "1218047": {
       "id": "1218047",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "Shaman",
       "spec": "고양",
       "specs": [
@@ -114924,14 +114925,14 @@
       "icon": "ability_shaman_ascendance",
       "iconName": "ability_shaman_ascendance",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 태고의 폭풍 (Primordial Storm)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "세계의 분리를 사용한 뒤 그 버튼을 15초 동안 한 번 사용할 수 있는 태고의 폭풍으로 바꾸는 특성이다. 이 특성의 ID는 1218047이며 실제 사용 기술은 1218090이다. 공격은 소용돌이치는 무기를 소비해 강화되고 5대상 초과 시 피해가 감소한다.",
+      "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114950,11 +114951,63 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Skills\\태고의폭풍.md",
+        "lastUpdate": ""
+      }
+    },
+    "1218090": {
+      "id": "1218090",
+      "type": "atomic-skill",
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "name": "태고의 폭풍",
+      "koreanName": "태고의 폭풍",
+      "englishName": "Primordial Storm",
+      "icon": "ability_shaman_ascendance",
+      "iconName": "ability_shaman_ascendance",
+      "school": "",
+      "cooldown": "세계의 분리 후 15초 내 1회",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나의 0.8%, 소용돌이치는 무기",
+      "range": "근접",
+      "description": "태고의 폭풍 특성을 선택하고 세계의 분리를 사용한 뒤 15초 내 한 번 사용할 수 있는 근접 기술이다. 기본 마나의 0.8%와 소용돌이치는 무기를 소비해 주변에 불길충격·냉기충격·폭풍충격 피해를 주고 번개 화살 또는 연쇄 번개를 방출한다. 5대상 초과 시 피해가 감소한다. 사용 기술 툴팁의 번개 방출 효율은 100%지만 특성 툴팁은 150%로 표시하므로 최종 효율은 추가 검증 대상이다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_shaman_ascendance.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_shaman_ascendance.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_shaman_ascendance.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_shaman_ascendance.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_shaman_ascendance.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/고양/Skills/세계의분리",
+          "08-직업별-Knowledge-Base/11-주술사/고양/Skills/태고의폭풍",
+          "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.026,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Skills\\태고의폭풍-시전.md",
         "lastUpdate": ""
       }
     },

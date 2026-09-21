@@ -16,6 +16,12 @@ for (const [id, pattern] of Object.entries({
   384352: /8초.*매초.*50%.*20%.*1분/,
   384444: /2초.*60초.*최대 10중첩.*100%.*최근/,
   1250364: /10%.*중첩 하나당.*0.3초.*10중첩.*3초/,
+  197214: /전방.*30초.*1.2%.*기절.*효과가 없다/,
+  201900: /5%.*1등급.*8초.*25%.*20%.*최대 등급은 2/,
+  334033: /6초.*자신의 화염 충격.*최대 5명.*18초.*12초/,
+  334046: /용암 채찍과 세계의 분리.*화염 충격.*20초.*100%/,
+  1218047: /15초.*한 번.*특성.*1218047.*1218090/,
+  1218090: /15초.*한 번.*0.8%.*100%.*150%.*추가 검증/,
 })) {
   assert.equal(skills[id].patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
@@ -27,10 +33,17 @@ assert.equal(skills[60103].castTime, '즉시');
 assert.equal(skills[114051].castTime, '즉시');
 assert.equal(skills[114051].icon, '8026696');
 assert.equal(skills[469314].castTime, '지속 효과');
+assert.equal(skills[1218047].castTime, '지속 효과');
+assert.equal(skills[1218090].castTime, '즉시');
+assert.deepEqual(skills[378270].specs, ['Enhancement', 'Restoration']);
+assert.match(skills[378270].description, /0.6%.*6초.*2초.*복원.*7%/);
+assert.equal(skills[378270].patch, '12.1');
 assert.equal(skills[51533], undefined);
 for (const relation of Object.values(synergies)) assert.ok(!relation.participants.includes('51533'), relation.id);
 const manuscript = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8');
 assert.doesNotMatch(manuscript, /skillId: ['"](?:51533|469314)['"]/);
+assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
+assert.match(manuscript, /skillId: ['"]1218090['"]/);
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
-console.log('Enhancement: 11 reviewed records, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
+console.log('Enhancement: 18 reviewed records, active spell IDs, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
