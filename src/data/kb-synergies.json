@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:27:31.856Z",
+    "generatedAt": "2026-09-21T19:33:38.488Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 596,
-    "rawTotalSynergies": 596,
+    "totalSynergies": 597,
+    "rawTotalSynergies": 597,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -213,6 +213,7 @@
       "shared_raid_utility": 1,
       "shared_personal_survival": 1,
       "shared_aoe_pressure": 1,
+      "proc-conditions": 1,
       "slayer-hero-package": 1,
       "talent-mechanic": 3,
       "burst-window-core": 1,
@@ -269,7 +270,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 59
+      "Warrior": 60
     }
   },
   "synergies": {
@@ -19578,6 +19579,36 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\전사공용-천둥의포효-칼날폭풍-광역압박.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_slayer_reap_trigger_paths": {
+      "id": "warrior_slayer_reap_trigger_paths",
+      "name": "학살자-폭풍을거두는자-발동조건",
+      "type": "synergy",
+      "synergyType": "proc-conditions",
+      "participants": [
+        "444775",
+        "444769",
+        "845",
+        "184367",
+        "12950",
+        "163201"
+      ],
+      "class": "Warrior",
+      "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\학살자-폭풍을거두는자-발동조건.md",
         "lastUpdate": ""
       }
     },

@@ -233,4 +233,18 @@ assert.ok(guide.includes('치명상은 별도로 눌러 갱신하는 기술이 �
 assert.ok(!guide.includes('출혈 기준선이며 12.0.5부터 광역 적용 가치'));
 assert.ok(!guide.includes('레이드는 학살자가 로그 사용률에서 앞서므로'));
 assert.ok(!guide.includes('그래서 그래프 중심을 거인의 강타로 두면'));
+for (const id of [7384, 12294, 1273062, 385571, 444775, 444769]) assert.equal(skills[id].patch, '12.1');
+assert.equal(skills[12294].resourceCost, '분노 30');
+assert.equal(skills[12294].cooldown, '6초');
+assert.equal(skills[7384].resourceCost, '없음');
+assert.equal(skills[7384].cooldown, '12초');
+assert.match(skills[385571].description, /2회.*15%/);
+assert.match(skills[1273062].description, /제압 및 격돌.*필사의 일격.*5%.*3중첩/);
+assert.equal(skills[316440], undefined, 'Use the current learned Martial Prowess talent ID');
+assert.ok(!JSON.stringify(synergies).includes('316440'));
+assert.match(skills[444775].description, /회전베기.*3명.*20%/);
+assert.match(skills[444775].description, /소용돌이 연마.*광란/);
+assert.match(skills[444769].description, /학살자의 일격.*3회.*급살/);
+assert.deepEqual(synergies.warrior_slayer_reap_trigger_paths.participants, ['444775', '444769', '845', '184367', '12950', '163201']);
+assert.ok(!guide.includes('제압이 폭풍을 거두는 자와 학살자 흐름을 여는'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

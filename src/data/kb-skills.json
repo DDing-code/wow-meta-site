@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:27:31.855Z",
+    "generatedAt": "2026-09-21T19:33:38.486Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2979,
     "rawTotalSkills": 2979,
     "duplicateIds": [],
-    "totalSynergies": 596,
+    "totalSynergies": 597,
     "stats": {
       "total": 2979,
       "byType": {
@@ -6200,18 +6200,18 @@
       ],
       "name": "제압",
       "koreanName": "제압",
-      "englishName": "",
+      "englishName": "Overpower",
       "icon": "ability_meleedamage",
       "iconName": "ability_meleedamage",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "12초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 제압은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 제압 특성 근접 사정거리 즉시 12 초 재사용 대기시간 1회 사용 가능 전사 필요 근접 무기 필요 적을 제압하여 (전투력의 385.614%)의 물리 피해를 입힙니다. 방패로 막거나, 회피하거나, 무기로 막을 수 없습니다. [ 무예 기량 : 다음 필사의 일격 또는 회전베기의 공격력이 (전투력의 385.614%)%만큼 증가합니다. 최대 1번까",
+      "description": "제압은 분노 소모 없이 사용하는 근접 물리 공격이며 방패 막기, 회피, 무기 막기의 영향을 받지 않는다. 기본 재충전 시간은 12초이고 제압 연마를 선택하면 2회 충전과 공격력 15% 증가를 얻는다.  무예 기량을 선택하면 제압과 격돌이 다음 필사의 일격을 중첩당 5%, 최대 3중첩 강화한다. 제압 툴팁의 잘못 펼쳐진 전투력 수치를 후속 공격 강화율로 사용하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6230,7 +6230,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 0,
-        "linkDensity": 0.037,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -6874,18 +6874,18 @@
       ],
       "name": "필사의 일격",
       "koreanName": "필사의 일격",
-      "englishName": "",
+      "englishName": "Mortal Strike",
       "icon": "ability_warrior_savageblow",
       "iconName": "ability_warrior_savageblow",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "6초",
+      "castTime": "즉시",
+      "resourceCost": "분노 30",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 필사의 일격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 필사의 일격 특성 분노 30 근접 사정거리 즉시 6 초 재사용 대기시간 전사 필요 잔혹하게 적을 공격하여 (전투력의 520.121%)의 물리 피해를 입히고 10초 동안 대상이 받는 치유 효과를 50%만큼 감소시킵니다.",
+      "description": "필사의 일격은 기본 분노 30을 소모하는 근접 즉시 공격이며 기본 쿨다운은 6초다. 물리 피해를 주고 10초 동안 대상이 받는 치유를 50% 줄인다.  무예 기량과 집행자의 정밀함은 다음 필사의 일격을 강화하고 사용 시 소비된다. 전투군주의 초기화와 비용 감소는 별도로 확인한다. 치유 감소를 자신의 공격력 50% 증가로 계산하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6904,7 +6904,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 0,
-        "linkDensity": 0.055,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -43319,54 +43319,6 @@
         "lastUpdate": ""
       }
     },
-    "316440": {
-      "id": "316440",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "무예 기량",
-      "koreanName": "무예 기량",
-      "englishName": "",
-      "icon": "warrior_talent_icon_igniteweapon",
-      "iconName": "warrior_talent_icon_igniteweapon",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무예 기량은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 무예 기량 즉시 전사 필요 제압 및 격돌 사용 시 다음 필사의 일격의 공격력이 5%만큼 증가합니다. 최대 3번까지 중첩됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_igniteweapon.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_igniteweapon.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_igniteweapon.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\무예-기량.md",
-        "lastUpdate": ""
-      }
-    },
     "317138": {
       "id": "317138",
       "type": "class-talent",
@@ -63428,18 +63380,18 @@
       ],
       "name": "제압 연마",
       "koreanName": "제압 연마",
-      "englishName": "",
+      "englishName": "Improved Overpower",
       "icon": "ability_meleedamage",
       "iconName": "ability_meleedamage",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "제압 연마은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 제압 연마 특성 전사 필요 제압이 2회 충전되고 15%의 추가 피해를 입힙니다.",
+      "description": "제압의 최대 충전 수가 2회가 되고 공격력이 15% 증가한다. 모든 무기 전사에게 기본 2충전이 주어지는 것은 아니다.  자연 재충전, 전술가의 충전 반환, 기회주의자의 다음 제압 강화는 서로 다른 효과다. 충전 수와 강화 중첩을 같은 것으로 세지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63458,7 +63410,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -95128,18 +95080,18 @@
       ],
       "name": "임박한 파멸",
       "koreanName": "임박한 파멸",
-      "englishName": "",
+      "englishName": "Imminent Demise",
       "icon": "ability_warrior_improveddisciplines",
       "iconName": "ability_warrior_improveddisciplines",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "임박한 파멸은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 임박한 파멸 특성 전사 필요 학살자의 일격을 3회 사용할 때마다 급살이 부여됩니다. 급살 사용 시 다음 칼날폭풍이 가속화되어 추가로 1회 공격을 가합니다. 최대 3회의 공격을 가합니다. 칼날폭풍의 전체 지속시간은 변경되지 않습니다. 급살이 100%의 확률로 폭풍을 거두는 자를 100%의 효율로 발동시킵니다.",
+      "description": "학살자의 일격이 3회 발생할 때마다 급살을 얻는다. 급살을 소비하면 다음 칼날폭풍에 추가 공격 1회를 준비하며 최대 3회까지 추가한다. 칼날폭풍 전체 지속시간은 늘어나지 않는다.  급살 소비는 폭풍을 거두는 자를 100% 확률과 100% 효율로 발동시키는 경로도 제공한다. 급살을 획득하는 것과 실제 마무리 일격으로 소비하는 것을 구분한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95158,9 +95110,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -95424,18 +95376,18 @@
       ],
       "name": "폭풍을 거두는 자",
       "koreanName": "폭풍을 거두는 자",
-      "englishName": "",
+      "englishName": "Reap the Storm",
       "icon": "ability_arakkoa_spinning_blade",
       "iconName": "ability_arakkoa_spinning_blade",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "폭풍을 거두는 자는 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭풍을 거두는 자 특성 전사 필요 분노 광란|1이;가; 소용돌이 연마를 통해 3명 이상의 대상에게 적중 시 20%의 확률로 강철의 질풍을 방출하여 주위의 모든 적을 공격해 (전투력의 771.909%)의 물리 피해를 입히고 압도당함 효과를 부여합니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다. 무기 회전베기|1이;가; 3명",
+      "description": "무기는 회전베기가 3명 이상에게 적중하면 20% 확률로 주변에 물리 피해를 주고 압도당함을 부여한다. 분노는 소용돌이 연마를 통해 광란이 3명 이상에게 적중해야 같은 발동 조건을 충족한다. 8명을 초과하면 발동 공격의 피해가 감소한다.  임박한 파멸은 급살 소비로 이 효과를 발동시키는 별도 경로다. 제압을 누르면 무조건 폭풍을 거두는 자가 발생한다는 뜻이 아니다. 500밀리초는 내부 발동 제한이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95454,7 +95406,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.005,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -144406,6 +144358,54 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Talents\\자연의동맹-첫특성.md",
+        "lastUpdate": ""
+      }
+    },
+    "1273062": {
+      "id": "1273062",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "무예 기량",
+      "koreanName": "무예 기량",
+      "englishName": "Martial Prowess",
+      "icon": "warrior_talent_icon_igniteweapon",
+      "iconName": "warrior_talent_icon_igniteweapon",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "제압 및 격돌 사용 시 다음 필사의 일격의 공격력이 중첩당 5% 증가하며 최대 3중첩이다. 필사의 일격 사용 시 준비한 중첩을 소비한다. 회전베기 강화가 아니며 제압 자체의 기본 효과도 아니다.  전쟁의 지배자로 격돌을 대체한 영웅의 일격도 격돌의 수정치를 이어받는다. 시즌 2 4세트가 다음 격돌을 강화하는 것과 반대 방향의 연계이므로 서로 다른 중첩으로 구분한다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_igniteweapon.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_igniteweapon.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_igniteweapon.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.017,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\무예-기량.md",
         "lastUpdate": ""
       }
     },
