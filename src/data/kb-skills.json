@@ -1,26 +1,26 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:43:51.105Z",
+    "generatedAt": "2026-09-21T07:19:43.222Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2981,
-    "rawTotalSkills": 2981,
+    "totalSkills": 2976,
+    "rawTotalSkills": 2976,
     "duplicateIds": [],
-    "totalSynergies": 572,
+    "totalSynergies": 573,
     "stats": {
-      "total": 2981,
+      "total": 2976,
       "byType": {
         "buff": 137,
-        "hero-talent": 554,
+        "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 131,
+        "skill": 132,
         "talent": 997,
         "spec-talent": 392,
         "passive": 75,
         "hero-tree": 2,
-        "set-bonus": 7,
+        "set-bonus": 9,
         "tier-set": 2,
         "class-talent": 92,
         "debuff": 6,
@@ -40,7 +40,7 @@
         "Paladin": 250,
         "Priest": 258,
         "Rogue": 296,
-        "Shaman": 275,
+        "Shaman": 270,
         "Warlock": 296,
         "Warrior": 265
       },
@@ -86,9 +86,9 @@
         "Rogue-무법": 55,
         "Rogue-암살": 52,
         "Rogue-잠행": 60,
-        "Shaman-고양": 45,
-        "Shaman-공용": 127,
-        "Shaman-복원": 46,
+        "Shaman-고양": 47,
+        "Shaman-공용": 119,
+        "Shaman-복원": 47,
         "Shaman-정기": 57,
         "Warlock-고통": 10,
         "Warlock-Affliction": 42,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2906,
-        "withSynergies": 1993,
+        "withWikilinks": 2901,
+        "withSynergies": 2004,
         "avgLinkDensity": "0.039"
       }
     }
@@ -10275,14 +10275,14 @@
       "icon": "spell_shaman_unleashweapon_wind",
       "iconName": "spell_shaman_unleashweapon_wind",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 질풍의 무기 (Windfury Weapon)",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "주무기에 1시간 바람의 정기를 부여하는 즉시 시전 무기 강화다. 기본 툴팁 기준 주무기 공격은 15% 확률로 물리 추가 공격 2회를 발생시키며, 예측 불허의 바람을 선택하면 추가 공격이 3회가 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10301,7 +10301,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -13532,8 +13532,7 @@
       "spec": "공용",
       "specs": [
         "Elemental",
-        "Enhancement",
-        "Restoration"
+        "Enhancement"
       ],
       "name": "영혼 정화",
       "koreanName": "영혼 정화",
@@ -13541,14 +13540,14 @@
       "icon": "ability_shaman_cleansespirit",
       "iconName": "ability_shaman_cleansespirit",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 영혼 정화 (Cleanse Spirit)",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "10% (기본 마나)",
+      "range": "40야드",
+      "description": "아군 대상의 모든 저주 효과를 제거한다. 40야드, 즉시 시전, 기본 8초 재사용 대기시간이며 기본 마나 10%를 사용한다. 정기·고양의 선택 특성이다. 복원용 마법 해제 주문 77130과 같은 주문으로 취급하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13567,7 +13566,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -14510,14 +14509,14 @@
       "icon": "spell_nature_cyclone",
       "iconName": "spell_nature_cyclone",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "12초",
+      "castTime": "즉시",
       "resourceCost": "",
-      "range": "",
-      "description": "# 날카로운 바람 (Wind Shear)",
+      "range": "30야드",
+      "description": "30야드 원거리 차단으로 대상의 주문 시전을 방해하고 4초 동안 같은 계열 주문을 시전하지 못하게 한다. 기본 쿨다운 12초, 즉시 시전이다. 모든 기술을 막는 침묵이 아니며 차단 불가 주문에는 성공을 기대하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14536,7 +14535,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.083,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -15825,8 +15824,6 @@
       "class": "Shaman",
       "spec": "공용",
       "specs": [
-        "Elemental",
-        "Enhancement",
         "Restoration"
       ],
       "name": "영혼 정화",
@@ -15835,14 +15832,14 @@
       "icon": "ability_shaman_cleansespirit",
       "iconName": "ability_shaman_cleansespirit",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 영혼 정화 (Purify Spirit)",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "1.3% (기본 마나)",
+      "range": "40야드",
+      "description": "복원 주술사의 아군 마법 해제다. 기본 효과는 모든 마법 효과 제거이며 영혼 정화 연마(383016)를 선택해야 저주도 제거한다. 40야드, 즉시 시전, 기본 8초 재사용 대기시간, 기본 1충전이며 기본 마나 1.3%를 사용한다. 정기·고양의 저주 해제 51886과 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15861,7 +15858,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -18848,14 +18845,14 @@
       "icon": "ability_shaman_astralshift",
       "iconName": "ability_shaman_astralshift",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "2분",
+      "castTime": "즉시",
       "resourceCost": "",
-      "range": "",
-      "description": "# 영혼 이동 (Astral Shift)",
+      "range": "자신",
+      "description": "기본 2분 쿨다운의 즉시 시전 생존기다. 12초 동안 받는 피해를 40% 줄인다. 면역이나 치유 효과가 아니며 큰 피해가 들어오기 전에 사용한다. 관련 특성에 따른 쿨다운·감소량 보정은 기본 수치와 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18874,7 +18871,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.077,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -23279,14 +23276,14 @@
       "icon": "spell_nature_cyclone",
       "iconName": "spell_nature_cyclone",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 바람의 채찍 (Wind Lash)",
+      "cooldown": "없음",
+      "castTime": "자동 공격",
+      "resourceCost": "없음",
+      "range": "30미터",
+      "description": "승천 중 자동 공격에 쓰이는 바람의 채찍이다. 툴팁은 사거리 30미터, 무기 공격력 100%를 표시한다. 고정 SimulationCraft의 windlash_t는 반복 자동 공격으로 처리하며 방어도를 무시한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -23305,7 +23302,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -31450,14 +31447,14 @@
       "icon": "spell_nature_stormreach",
       "iconName": "spell_nature_stormreach",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 시전",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 폭풍쇄도 (Stormsurge)",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "폭풍의 일격 사용 시 기본 5% 확률로 폭풍의 일격 재사용 대기시간을 초기화하는 고양 지속 효과다. 전문화 기술 데이터에 201845가 등록되어 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31474,9 +31471,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -33338,54 +33335,6 @@
         "lastUpdate": ""
       }
     },
-    "204357": {
-      "id": "204357",
-      "type": "talent",
-      "class": "Shaman",
-      "spec": "고양",
-      "specs": [
-        "Enhancement"
-      ],
-      "name": "번개 기수",
-      "koreanName": "번개 기수",
-      "englishName": "Ride the Lightning",
-      "icon": "ability_thunderking_balllightning",
-      "iconName": "ability_thunderking_balllightning",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 번개 기수 (Ride the Lightning)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_thunderking_balllightning.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_thunderking_balllightning.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_thunderking_balllightning.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\번개기수.md",
-        "lastUpdate": ""
-      }
-    },
     "204596": {
       "id": "204596",
       "type": "skill",
@@ -35164,14 +35113,14 @@
       "icon": "spell_shaman_improvedstormstrike",
       "iconName": "spell_shaman_improvedstormstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정령의 맹공 (Elemental Assault)",
+      "description": "폭풍의 일격 피해가 20% 증가한다. 폭풍의 일격과 용암 채찍은 소용돌이치는 무기 1중첩을 100% 확률로 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35188,9 +35137,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -39781,14 +39730,14 @@
       "icon": "spell_shaman_unleashweapon_wind",
       "iconName": "spell_shaman_unleashweapon_wind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 거센 바람 (Forceful Winds)",
+      "description": "질풍의 무기에 추가 발동 확률 10%와 피해 50% 증가를 부여한다. 고정 12.1 특성 데이터에서 고양의 1등급 특성으로 확인했다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39807,7 +39756,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -43117,6 +43066,54 @@
         "lastUpdate": ""
       }
     },
+    "289874": {
+      "id": "289874",
+      "type": "talent",
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "name": "번개 기수",
+      "koreanName": "번개 기수",
+      "englishName": "Ride the Lightning",
+      "icon": "ability_thunderking_balllightning",
+      "iconName": "ability_thunderking_balllightning",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "폭풍의 일격과 용암 채찍이 100% 효율의 연쇄 번개를 방출하며, 전달될 때마다 피해가 20% 감소한다. 고정 12.1 특성 트리의 선택 ID는 289874다. 기존 204357의 폭풍의 일격 전용 설명을 현재 특성으로 사용하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_thunderking_balllightning.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_thunderking_balllightning.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_thunderking_balllightning.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.01,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\번개기수.md",
+        "lastUpdate": ""
+      }
+    },
     "315341": {
       "id": "315341",
       "type": "atomic-skill",
@@ -43671,6 +43668,7 @@
       "class": "Shaman",
       "spec": "고양",
       "specs": [
+        "Elemental",
         "Enhancement"
       ],
       "name": "불꽃혓바닥 무기",
@@ -43679,14 +43677,14 @@
       "icon": "spell_fire_flametounge",
       "iconName": "spell_fire_flametounge",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불꽃혓바닥 무기 (Flametongue Weapon)",
+      "description": "무기를 1시간 강화하는 즉시 시전 기술이다. 고양은 공격에 추가 화염 피해를 부여하고, 정기는 화염 주문 피해가 5% 증가한다. 두 전문화의 적용 효과는 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43705,7 +43703,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -43830,14 +43828,14 @@
       "icon": "spell_shaman_focusedstrikes",
       "iconName": "spell_shaman_focusedstrikes",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번개폭풍 (Stormblast)",
+      "description": "폭풍의 일격에 추가 충전 1회를 부여한다. 폭풍쇄도가 다음 폭풍의 일격에 25%의 추가 자연 피해를 부여하고 이 효과는 최대 2중첩이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43854,9 +43852,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -45784,14 +45782,14 @@
       "icon": "spell_nature_chainlightning",
       "iconName": "spell_nature_chainlightning",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 연쇄 폭풍 (Chaining Storms)",
+      "description": "연쇄 번개가 추가 대상 2명에게 튕기고 피해가 10% 증가한다. 대상 수 확대와 피해 증가가 함께 적용되는 고양 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45808,9 +45806,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -46827,14 +46825,14 @@
       "icon": "ability_shaman_stormstrike",
       "iconName": "ability_shaman_stormstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 세찬 폭풍 (Stormflurry)",
+      "description": "폭풍의 일격이 20% 확률로 일반 피해의 40%에 해당하는 추가 타격을 한다. 이 추가 타격에서도 같은 효과가 연쇄적으로 발동할 수 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46853,7 +46851,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -57172,14 +57170,14 @@
       "icon": "item_sparkofragnoros",
       "iconName": "item_sparkofragnoros",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 솟구치는 정기 (Surging Elements)",
+      "description": "세계의 분리를 시전하면 12초 동안 가속이 15% 증가하고 소용돌이치는 무기 5중첩을 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57196,9 +57194,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -59646,8 +59644,6 @@
       "class": "Shaman",
       "spec": "공용",
       "specs": [
-        "Elemental",
-        "Enhancement",
         "Restoration"
       ],
       "name": "영혼 정화 연마",
@@ -59660,10 +59656,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼 정화 연마 (Improved Purify Spirit)",
+      "description": "복원의 영혼 정화(77130)가 마법뿐 아니라 모든 저주 효과도 제거하게 한다. 직접 누르는 별도 해제 버튼이 아니라 기존 기술을 강화하는 1등급 특성이다. 정기·고양은 저주를 제거하는 별도의 영혼 정화(51886)를 사용하며 이 특성을 선택하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59682,7 +59678,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -62870,14 +62866,14 @@
       "icon": "inv_mace_2h_draenorraid_d_03",
       "iconName": "inv_mace_2h_draenorraid_d_03",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연의 무기 (Elemental Weapons)",
+      "description": "활성화된 무기 강화 하나당 화염·냉기·자연 피해가 5% 증가한다. 무기를 들고 있다는 사실만으로가 아니라 무기 강화가 실제로 적용되어 있는지가 조건이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62896,7 +62892,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -62966,14 +62962,14 @@
       "icon": "warrior_talent_icon_stormbolt",
       "iconName": "warrior_talent_icon_stormbolt",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍의 합일 (Converging Storms)",
+      "description": "낙뢰에 적중한 대상 하나당 다음 폭풍의 일격 피해가 25% 증가하고 최대 6중첩까지 쌓인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -62992,7 +62988,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -63064,14 +63060,14 @@
       "icon": "spell_nature_callstorm",
       "iconName": "spell_nature_callstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전하 축적 (Static Accumulation)",
+      "description": "파멸의 바람 또는 승천이 활성화된 동안 1초마다 소용돌이치는 무기 1중첩을 생성한다. 현재 기본 툴팁은 1등급 설명이며 고정 12.1 특성 데이터의 최대 등급은 2다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63088,9 +63084,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.038,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -63160,14 +63156,14 @@
       "icon": "ability_thunderclap",
       "iconName": "ability_thunderclap",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 벼락 (Lightning Strikes)",
+      "description": "소용돌이치는 무기 10중첩을 소비하면 다음 폭풍의 일격 또는 용암 채찍의 피해가 25% 증가하고 소용돌이치는 무기 1중첩을 생성한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63186,7 +63182,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -70120,14 +70116,14 @@
       "icon": "ability_skyreach_wind_wall",
       "iconName": "ability_skyreach_wind_wall",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 예측 불허의 바람 (Unruly Winds)",
+      "description": "질풍의 무기가 발동했을 때 세 번째 공격이 100% 확률로 발생한다. 질풍 자체가 모든 근접 공격에서 100% 발동한다는 뜻은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70146,7 +70142,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -70168,14 +70164,14 @@
       "icon": "spell_shaman_stormearthfire",
       "iconName": "spell_shaman_stormearthfire",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 잿빛 수정 (Ashen Catalyst)",
+      "description": "자신의 화염 충격이 적용된 대상에게 용암 채찍이 적중하면 용암 채찍의 재사용 대기시간이 2초 줄어든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70192,9 +70188,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -73204,14 +73200,14 @@
       "icon": "spell_nature_stormreach",
       "iconName": "spell_nature_stormreach",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍의 분노 (Storm's Wrath)",
+      "description": "특화: 원소 강화에 의한 질풍의 무기와 폭풍쇄도 발동 확률 증가 효과를 150% 높인다. 최종 발동 확률이 150%라는 의미가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73228,9 +73224,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -96731,7 +96727,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.006,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -96803,14 +96799,14 @@
       "icon": "ability_shaman_totemrelocation",
       "iconName": "ability_shaman_totemrelocation",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 심하게 큰 토템 (Oversized Totems)",
+      "description": "토템의 크기와 반경이 15%, 생명력이 30% 증가한다. 신속한 회수(445027)와 선택 노드 94859를 공유하는 양자택일이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96824,12 +96820,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -96852,14 +96850,14 @@
       "icon": "spell_nature_brilliance",
       "iconName": "spell_nature_brilliance",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신속한 회수 (Swift Recall)",
+      "description": "진동의 토템·독 정화 토템으로 해로운 효과를 실제로 제거하거나, 축전 토템·구속의 토템으로 적을 실제로 제어하면 해당 토템의 재사용 대기시간이 5초 줄어든다. 토템별로 20초에 한 번만 발동한다. 심하게 큰 토템(445026)과 선택 노드 94859를 공유한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96873,12 +96871,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -96901,14 +96901,14 @@
       "icon": "spell_shaman_unleashweapon_wind",
       "iconName": "spell_shaman_unleashweapon_wind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강화 특화 (Imbuement Mastery)",
+      "description": "고양: 질풍의 무기 발동 확률이 5%, 피해가 8% 증가한다. 질풍의 무기 공격에서 불꽃혓바닥 무기가 발동하면 일정 확률로 그 피해의 300%를 주변 모든 적에게 입히는 화염 효과가 생긴다. 복원: 대지생명 효과의 지속시간이 3초 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96922,12 +96922,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -96950,14 +96952,14 @@
       "icon": "ability_evoker_essenceburststacks",
       "iconName": "ability_evoker_essenceburststacks",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 증폭 핵 (Amplification Core)",
+      "description": "고양·복원: 쇄도하는 토템이 활성화된 동안 자신의 공격력과 치유량이 3% 증가한다. 특성 선택 ID는 445029이고, 456369는 이 특성으로 생기는 버프다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96971,16 +96973,18 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\증폭핵-445029.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\증폭핵.md",
         "lastUpdate": ""
       }
     },
@@ -96999,14 +97003,14 @@
       "icon": "spell_fire_elementaldevastation",
       "iconName": "spell_fire_elementaldevastation",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 과잉 쇄도 (Oversurge)",
+      "description": "승천 또는 치유의 해일 토템이 활성화된 동안 쇄도하는 토템의 피해가 50% 증가한다. 현재 한국어·영어 공개 툴팁은 모두 피해 증가로 표시하며 치유량 증가를 명시하지 않는다. 증폭 핵(445029)과 선택 노드 94874를 공유한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97020,12 +97024,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -97048,14 +97054,14 @@
       "icon": "spell_nature_eyeofthestorm",
       "iconName": "spell_nature_eyeofthestorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람 방벽 (Wind Barrier)",
+      "description": "토템이 활성화되어 있으면 30초마다 총 생명력의 6%를 흡수하는 보호막이 부여되며 보호막은 30초 지속된다. 공격력 증가나 받는 피해 6% 감소와는 다른 흡수 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97069,12 +97075,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -97097,14 +97105,14 @@
       "icon": "spell_nature_elementalprecision_1",
       "iconName": "spell_nature_elementalprecision_1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 파동 축전기 (Pulse Capacitor)",
+      "description": "고양: 쇄도하는 토템의 피해가 18% 증가한다. 복원: 쇄도하는 토템의 치유량이 10% 증가한다. 지원형 강화(445033)와 선택 노드 94866을 공유하는 양자택일이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97118,12 +97126,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -97146,14 +97156,14 @@
       "icon": "ability_shaman_fortifyingwaters",
       "iconName": "ability_shaman_fortifyingwaters",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 지원형 강화 (Supportive Imbuements)",
+      "description": "고양: 불꽃혓바닥 무기의 치명타 확률이 25%, 치명타 피해가 100% 증가한다. 복원: 파도소환사의 수호를 배워 방패를 1시간 강화한다. 이 강화는 자신의 치유량을 2%, 치유의 토템 지속시간을 3초 늘린다. 파동 축전기(445032)와 선택 노드 94866을 공유하는 양자택일이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97165,14 +97175,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_shaman_fortifyingwaters.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/복원/Skills/파도소환사의수호"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -97195,14 +97209,14 @@
       "icon": "spell_fire_searingtotem",
       "iconName": "spell_fire_searingtotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 활발한 토템 (Lively Totems)",
+      "description": "고양: 용암 채찍이 일정 확률로 8초 동안 불타는 토템을 소환한다. 용암 채찍과 전격의 불길은 불타는 토템이 최대 5명의 주변 적에게 불타는 세례를 방출하게 한다. 복원: 치유의 해일 토템·치유의 토템·정신의 고리 토템 소환 시 자원을 소모하지 않는 즉시 연쇄 치유가 100% 효율로 시전된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97216,10 +97230,12 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
         "linkDensity": 0.018,
         "hasWikilinks": true
@@ -97244,14 +97260,14 @@
       "icon": "ability_rhyolith_lavapool",
       "iconName": "ability_rhyolith_lavapool",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 갈라지는 지류 (Splitstream)",
+      "description": "고양: 뜨거운 손이 활성화된 동안 용암 채찍이 80% 효율의 세계의 분리를 발동시킨다. 복원: 치유의 토템이 추가 아군 한 명을 30% 효율로 치유하고 치유의 해일 토템의 치유량은 25% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97265,12 +97281,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/토템의기세"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -97293,14 +97311,14 @@
       "icon": "ability_shaman_echooftheelements",
       "iconName": "ability_shaman_echooftheelements",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 토템의 협응 (Totemic Coordination)",
+      "description": "고양: 불타는 토템 공격의 치명타 확률이 15%, 치명타 피해가 30% 증가한다. 복원: 활발한 토템과 토템의 반향으로 발생한 연쇄 치유의 효율이 25% 증가한다. 대지의 쇄도(455590)와 선택 노드 94881을 공유한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -97314,12 +97332,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -103737,202 +103757,6 @@
         "lastUpdate": ""
       }
     },
-    "453405": {
-      "id": "453405",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Enhancement",
-        "Restoration"
-      ],
-      "name": "소용돌이치는 불",
-      "koreanName": "소용돌이치는 불",
-      "englishName": "Whirling Fire",
-      "icon": "inv_10_elementalcombinedfoozles_fire",
-      "iconName": "inv_10_elementalcombinedfoozles_fire",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 소용돌이치는 불 (Whirling Fire)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_fire.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_elementalcombinedfoozles_fire.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_elementalcombinedfoozles_fire.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_elementalcombinedfoozles_fire.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_fire.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\소용돌이치는불.md",
-        "lastUpdate": ""
-      }
-    },
-    "453406": {
-      "id": "453406",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Enhancement",
-        "Restoration"
-      ],
-      "name": "소용돌이치는 대지",
-      "koreanName": "소용돌이치는 대지",
-      "englishName": "Whirling Earth",
-      "icon": "inv_10_elementalcombinedfoozles_earth",
-      "iconName": "inv_10_elementalcombinedfoozles_earth",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 소용돌이치는 대지 (Whirling Earth)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_earth.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_elementalcombinedfoozles_earth.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_elementalcombinedfoozles_earth.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_elementalcombinedfoozles_earth.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_earth.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\소용돌이치는대지.md",
-        "lastUpdate": ""
-      }
-    },
-    "453407": {
-      "id": "453407",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Enhancement",
-        "Restoration"
-      ],
-      "name": "소용돌이치는 물",
-      "koreanName": "소용돌이치는 물",
-      "englishName": "Whirling Water",
-      "icon": "inv_10_elementalcombinedfoozles_water",
-      "iconName": "inv_10_elementalcombinedfoozles_water",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 소용돌이치는 물 (Whirling Water)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_water.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_elementalcombinedfoozles_water.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_elementalcombinedfoozles_water.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_elementalcombinedfoozles_water.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_water.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\소용돌이치는물.md",
-        "lastUpdate": ""
-      }
-    },
-    "453409": {
-      "id": "453409",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Enhancement",
-        "Restoration"
-      ],
-      "name": "소용돌이치는 바람",
-      "koreanName": "소용돌이치는 바람",
-      "englishName": "Whirling Air",
-      "icon": "inv_10_elementalcombinedfoozles_air",
-      "iconName": "inv_10_elementalcombinedfoozles_air",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 소용돌이치는 바람 (Whirling Air)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_air.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_elementalcombinedfoozles_air.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_elementalcombinedfoozles_air.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_elementalcombinedfoozles_air.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_air.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\소용돌이치는바람.md",
-        "lastUpdate": ""
-      }
-    },
     "453428": {
       "id": "453428",
       "type": "hero-talent",
@@ -104897,14 +104721,14 @@
       "icon": "ability_vehicle_electrocharge",
       "iconName": "ability_vehicle_electrocharge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 돌풍몰이 (Stormcaller)",
+      "description": "고양은 자연 피해 주문의 치명타 확률이 5%, 치명타 피해가 10% 증가한다. 정기는 자연 피해 주문의 치명타 확률과 치명타 피해가 각각 5% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104916,14 +104740,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_vehicle_electrocharge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -104946,14 +104772,14 @@
       "icon": "ability_thunderking_overcharge",
       "iconName": "ability_thunderking_overcharge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전기 충격 (Electroshock)",
+      "description": "폭풍 시전 후 5초 동안 이동 속도가 20% 증가한다. 피해를 증가시키거나 적을 감전시키는 공격 특성이 아니다. 번개 도관(467778)과 같은 선택 노드 94863에 있으므로 둘을 동시에 선택하는 전제로 쓰지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104965,14 +104791,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_overcharge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -104995,14 +104823,14 @@
       "icon": "spell_lightning_lightningbolt01",
       "iconName": "spell_lightning_lightningbolt01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "해당 없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구르는 천둥 (Rolling Thunder)",
+      "description": "고양: 파멸의 바람이 자연의 야수 정령을 12초 소환한다. 이 정령은 소환사의 자연 공격력과 물리 공격력을 각각 5% 증가시킨다. 정기: 폭풍수호자의 재사용 대기시간을 15초 줄인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105014,14 +104842,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_lightning_lightningbolt01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -105044,14 +104876,14 @@
       "icon": "spell_nature_lightningshield",
       "iconName": "spell_nature_lightningshield",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연의 보호 (Nature's Protection)",
+      "description": "번개 보호막이 활성화되어 있을 때 받는 피해가 3% 감소한다. 쇄도하는 해류(454372)와 같은 선택 노드 94880에 있으므로 두 특성을 동시에 선택할 수 없다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105063,67 +104895,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_lightningshield.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\자연의보호.md",
-        "lastUpdate": ""
-      }
-    },
-    "454029": {
-      "id": "454029",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Elemental",
-        "Enhancement"
-      ],
-      "name": "자연의 보호",
-      "koreanName": "자연의 보호",
-      "englishName": "Nature's Protection",
-      "icon": "spell_nature_lightningshield",
-      "iconName": "spell_nature_lightningshield",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 자연의 보호 (Nature's Protection)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_lightningshield.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_lightningshield.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_lightningshield.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightningshield.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_lightningshield.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\자연의보호-454029.md",
         "lastUpdate": ""
       }
     },
@@ -105193,14 +104978,14 @@
       "icon": "ability_thunderking_thunderstruck",
       "iconName": "ability_thunderking_thunderstruck",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 쇄도하는 해류 (Surging Currents)",
+      "description": "폭풍을 시전하면 다음 연쇄 치유(1064) 또는 치유의 파도(8004)의 효과가 16% 증가하며 최대 80%까지 쌓인다. 자연의 보호(454027)와 같은 선택 노드 94880의 대안이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105212,13 +104997,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_thunderstruck.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
         "linkDensity": 0.019,
         "hasWikilinks": true
       },
@@ -105242,14 +105029,14 @@
       "icon": "spell_nature_purge",
       "iconName": "spell_nature_purge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무한한 힘 (Unlimited Power)",
+      "description": "정기는 소용돌이를, 고양은 소용돌이치는 무기 중첩을 소비하면 15초 동안 가속이 1% 증가한다. 여러 번 적용된 효과는 겹칠 수 있다. 고정 SimulationCraft 구현은 자원 소비 처리에서 버프를 한 번 발동하므로 소용돌이치는 무기 10중첩 소비를 즉시 가속 10%로 계산하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105266,9 +105053,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -105705,14 +105492,14 @@
       "icon": "spell_nature_callstorm",
       "iconName": "spell_nature_callstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고압 쇄도 (Voltaic Surge)",
+      "description": "고양은 낙뢰와 연쇄 번개의 피해가 20% 증가한다. 정기는 지진과 연쇄 번개의 피해가 5% 증가한다. 전문화별 대상 기술과 증가량이 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105729,9 +105516,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -105905,14 +105692,14 @@
       "icon": "spell_nature_unrelentingstorm",
       "iconName": "spell_nature_unrelentingstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 팽창하는 폭풍 (Storm Swell)",
+      "description": "폭풍 시전이 6초 동안 특화를 증가시킨다. 한국어·영어 툴팁 모두 증가량을 (5 * $mas)%라는 미해석 수식으로 표시한다. 전문화별 특화 환산을 확인하지 않은 채 특화 5% 또는 특화 수치 5로 확정하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105929,7 +105716,7 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
         "linkDensity": 0.019,
         "hasWikilinks": true
@@ -105954,14 +105741,14 @@
       "icon": "ability_thunderking_balllightning",
       "iconName": "ability_thunderking_balllightning",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "해당 없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전격 방전 (Arc Discharge)",
+      "description": "고양: 폭풍 시전 후 다음 연쇄 번개가 즉시 시전되고 피해가 40% 증가하며 한 번 더 시전된다. 효과는 최대 2회 충전된다. 정기: 폭풍 시전이 폭풍수호자 중첩을 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105973,67 +105760,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\전격방전.md",
-        "lastUpdate": ""
-      }
-    },
-    "455097": {
-      "id": "455097",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Elemental",
-        "Enhancement"
-      ],
-      "name": "전격 방전",
-      "koreanName": "전격 방전",
-      "englishName": "Arc Discharge",
-      "icon": "ability_thunderking_balllightning",
-      "iconName": "ability_thunderking_balllightning",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 전격 방전 (Arc Discharge)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_thunderking_balllightning.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_thunderking_balllightning.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_thunderking_balllightning.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_balllightning.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\전격방전-455097.md",
         "lastUpdate": ""
       }
     },
@@ -106106,14 +105848,14 @@
       "icon": "inv_rod_enchantedcobalt",
       "iconName": "inv_rod_enchantedcobalt",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전도성 마력 (Conductive Energy)",
+      "description": "고양은 피뢰침 효과를 얻는다. 피뢰침은 8초 동안 지정 번개 주문으로 입힌 피해의 8%를 추가로 전달하는 효과다. 정기는 폭풍이 피뢰침을 부여하고, 영문 툴팁은 피뢰침 대상이 폭풍 피해의 10%도 전달받는다고 설명한다. 한국어 툴팁은 이 부분을 폭풍으로 받는 피해 10% 증가처럼 표현하므로 두 설명의 차이를 남긴다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106130,9 +105872,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -106618,14 +106360,14 @@
       "icon": "inv_elementalearth2",
       "iconName": "inv_elementalearth2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대지의 쇄도 (Earthsurge)",
+      "description": "고양: 쇄도하는 토템의 40미터 이내에서 세계의 분리를 시전하면 대상 지역에 125% 효율의 진동이 발생한다. 복원: 자신의 대지생명 효과가 적용된 아군은 자신에게 받는 치유가 15% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106639,12 +106381,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -106913,55 +106657,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Hero-Talents\\일격-유도.md",
-        "lastUpdate": ""
-      }
-    },
-    "456369": {
-      "id": "456369",
-      "type": "hero-talent",
-      "class": "Shaman",
-      "spec": "공용",
-      "specs": [
-        "Enhancement",
-        "Restoration"
-      ],
-      "name": "증폭 핵",
-      "koreanName": "증폭 핵",
-      "englishName": "Amplification Core",
-      "icon": "ability_evoker_essenceburststacks",
-      "iconName": "ability_evoker_essenceburststacks",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 증폭 핵 (Amplification Core)",
-      "category": "hero-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_essenceburststacks.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_evoker_essenceburststacks.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_evoker_essenceburststacks.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_evoker_essenceburststacks.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_essenceburststacks.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\증폭핵.md",
         "lastUpdate": ""
       }
     },
@@ -107658,11 +107353,10 @@
     },
     "457481": {
       "id": "457481",
-      "type": "hero-talent",
+      "type": "skill",
       "class": "Shaman",
-      "spec": "공용",
+      "spec": "복원",
       "specs": [
-        "Enhancement",
         "Restoration"
       ],
       "name": "파도소환사의 수호",
@@ -107671,14 +107365,14 @@
       "icon": "inv_shield_1h_artifactstormfist_d_04",
       "iconName": "inv_shield_1h_artifactstormfist_d_04",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 파도소환사의 수호 (Tidecaller's Guard)",
-      "category": "hero-talent",
+      "description": "복원의 지원형 강화(445033)로 배우는 즉시 시전 방패 강화다. 방패를 1시간 강화하여 자신의 치유량을 2% 높이고 치유의 토템 지속시간을 3초 늘린다. 고양에 공통으로 적용되는 지속 효과나 별도 선택 특성이 아니다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107692,16 +107386,18 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/지원형강화"
+        ]
       },
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\파도소환사의수호.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Skills\\파도소환사의수호.md",
         "lastUpdate": ""
       }
     },
@@ -111353,14 +111049,14 @@
       "icon": "spell_shaman_staticshock",
       "iconName": "spell_shaman_staticshock",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번개 도관 (Lightning Conduit)",
+      "description": "일정 확률로 벼락 효과가 발동하면 5초 동안 이동 속도가 50% 증가한다. 야외에서는 이동 속도 증가 효과가 100%다. 윤회 시 천둥폭풍을 불러낸다. 전기 충격(454022)과 같은 선택 노드 94863의 대안이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111372,14 +111068,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_staticshock.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -124434,14 +124132,14 @@
       "icon": "spell_nature_unrelentingstorm",
       "iconName": "spell_nature_unrelentingstorm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 과충전 (Overcharge)",
+      "description": "자연 능력의 치명타 피해가 자신의 치명타 확률의 40%만큼 증가한다. 치명타 확률 자체를 40% 높이거나 모든 자연 피해를 고정 40% 높이는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124458,9 +124156,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -124482,14 +124180,14 @@
       "icon": "ability_siege_engineer_magnetic_lasso",
       "iconName": "ability_siege_engineer_magnetic_lasso",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍속박 (Stormbind)",
+      "description": "자연 능력이 치명타로 적중하면 대상의 이동 속도를 5초 동안 60% 감소시킨다. 직접 사용하는 속박 기술이나 이동 불가 효과가 아니라 조건부 감속이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -124506,9 +124204,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -131212,14 +130910,14 @@
       "icon": "spell_shaman_lavaflow",
       "iconName": "spell_shaman_lavaflow",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불꽃 회오리 (Fire Nova)",
+      "description": "전격의 불길이 소용돌이치는 무기 2중첩을 추가로 생성하고 30% 확률로 불꽃 회오리를 발동한다. 자신의 화염 충격 대상들에서 폭발이 일어나 각 화염 충격 대상의 8미터 내 최대 6명에게 화산 피해를 준다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131236,9 +130934,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -131369,14 +131067,14 @@
       "icon": "misc_legionfall_shaman",
       "iconName": "misc_legionfall_shaman",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 원시 촉매 (Primal Catalyst)",
+      "description": "고양: 쇄도하는 토템 시전 후 다음 용암 채찍이 150% 효율로 한 번 더 시전된다. 복원: 치유의 토템과 치유의 해일 토템의 치유가 8% 확률로 치유한 아군에게 대지생명을 부여한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131390,12 +131088,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -134171,14 +133871,14 @@
       "icon": "inv_10_elementalcombinedfoozles_primordial",
       "iconName": "inv_10_elementalcombinedfoozles_primordial",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정령의 조율 (Elemental Attunement)",
+      "description": "고양·복원: 특화가 2% 증가한다. 특화의 전문화별 효과는 다르므로 전체 공격력이나 전체 치유량이 단순히 2% 증가한다고 바꾸어 설명하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -134192,12 +133892,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/쇄도하는토템"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -135811,14 +135513,14 @@
       "icon": "spell_nature_wispheal",
       "iconName": "spell_nature_wispheal",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "해당 없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 하강하는 하늘 (Descending Skies)",
+      "description": "정기·고양: 승천이 다음 번개 화살을 폭풍으로 강화한다. 폭풍인도자의 일반 자원 소비 확률 발동과 별개의 획득 경로다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135830,14 +135532,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_wispheal.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -135913,14 +135619,14 @@
       "icon": "spell_shaman_maelstromweapon",
       "iconName": "spell_shaman_maelstromweapon",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "해당 없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연의 선물 (Natural Gift)",
+      "description": "정기: 자연 피해가 2% 증가한다. 고양: 자연 피해가 6% 증가한다. 두 전문화의 수치를 구분한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135932,14 +135638,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_maelstromweapon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -135962,14 +135672,14 @@
       "icon": "inv_112_raidtrinkets_etherealenergystoragesphere_purple",
       "iconName": "inv_112_raidtrinkets_etherealenergystoragesphere_purple",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "해당 없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 우물 (Stormwell)",
+      "description": "고양: 질풍의 무기 피해가 10% 증가한다. 낙뢰가 단일 적에게 적중하면 질풍의 무기가 활성화된다. 정기: 폭풍의 정령 지속시간이 2초 증가하고 폭풍수호자가 소용돌이 10을 생성한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -135981,14 +135691,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_112_raidtrinkets_etherealenergystoragesphere_purple.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -151026,6 +150740,102 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296627": {
+      "id": "1296627",
+      "type": "set-bonus",
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "name": "Shaman Enhancement 12.1 Class Set 2pc",
+      "koreanName": "Shaman Enhancement 12.1 Class Set 2pc",
+      "englishName": "Shaman Enhancement 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "전격의 불길의 주 대상에서 6초 동안 2초마다 불꽃 회오리가 발생한다. 불꽃 회오리가 전격의 불길의 주 대상에게 입히는 피해는 200% 증가한다. 이 증가를 주변 모든 대상의 피해에 적용하지 않는다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296628": {
+      "id": "1296628",
+      "type": "set-bonus",
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "name": "Shaman Enhancement 12.1 Class Set 4pc",
+      "koreanName": "Shaman Enhancement 12.1 Class Set 4pc",
+      "englishName": "Shaman Enhancement 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "불꽃 회오리가 낙뢰의 재사용 대기시간을 2초 줄이고 다음 낙뢰의 피해를 8% 증가시킨다. 피해 강화는 최대 5중첩이며 합계 40%다. 영구적인 낙뢰 피해 증가나 기본 쿨다운 2초 감소로 설명하지 않는다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.01,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },

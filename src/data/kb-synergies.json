@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:43:51.107Z",
+    "generatedAt": "2026-09-21T07:19:43.224Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 572,
-    "rawTotalSynergies": 572,
+    "totalSynergies": 573,
+    "rawTotalSynergies": 573,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -176,6 +176,7 @@
       "opener_alignment": 1,
       "maelstrom_spender_loop": 2,
       "hero_talent_totemic": 2,
+      "set_bonus": 1,
       "major_cooldown_window": 1,
       "defensive_mythic_utility": 2,
       "hero_talent_stormbringer": 2,
@@ -253,7 +254,7 @@
       "성기사": 10,
       "Priest": 52,
       "Rogue": 43,
-      "Shaman": 34,
+      "Shaman": 35,
       "Warlock": 60,
       "Warrior": 38
     }
@@ -15240,7 +15241,7 @@
         "197214",
         "1260666",
         "1218047",
-        "204357",
+        "289874",
         "334308",
         "319930",
         "384363",
@@ -15289,27 +15290,20 @@
     },
     "shaman_enhancement_hot_hand_lava_lash": {
       "id": "shaman_enhancement_hot_hand_lava_lash",
-      "name": "뜨거운손-용암채찍",
+      "name": "뜨거운 손: 시작·소비·연장",
+      "description": "휘몰아치는 정기의 불 티끌은 다음 용암 채찍으로 뜨거운 손을 8초 부여한다. 토템의 기세는 활성화된 뜨거운 손을 소용돌이치는 무기 소비 중첩당 0.20초 연장한다. 정기의 속도는 같은 소비로 타격기 쿨다운을 중첩당 0.3초 줄인다. 용암 채찍 자체가 버프를 계속 연장하는 구조로 설명하지 않는다.",
       "type": "synergy",
       "synergyType": "hot_hand_fire_window",
       "participants": [
         "201900",
         "60103",
-        "318038",
-        "334033",
-        "334046",
-        "390370",
-        "1260666",
-        "147051",
-        "1250364",
-        "384411",
-        "384143",
+        "445024",
         "1260644",
-        "453405",
-        "445035",
+        "187880",
+        "1250364",
         "1260874",
         "444995",
-        "384352"
+        "445035"
       ],
       "class": "Shaman",
       "spec": "고양",
@@ -15318,22 +15312,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/용암채찍",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/바람의채찍"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Talents/뜨거운손",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/채찍화염",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/용암공세",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/잿빛수정",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/불꽃회오리",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/불꽃혓바닥무기",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/정기의속도",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/전하축적",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/넘치는소용돌이"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/정기의속도"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\뜨거운손-용암채찍.md",
@@ -15343,27 +15330,14 @@
     "shaman_enhancement_sundering_primordial_opener": {
       "id": "shaman_enhancement_sundering_primordial_opener",
       "name": "세계의분리-태고의폭풍-오프닝",
+      "description": "태고의 폭풍 특성을 선택하면 세계의 분리 뒤 15초 안에 한 번 사용할 수 있는 태고의 폭풍으로 버튼이 바뀐다. 실제 시전은 1218090이며 1218047은 특성이다. 소용돌이치는 무기를 소비해 피해를 높이며, 낙뢰 버프나 쇄도하는 토템은 사용권의 필수 조건이 아니다.",
       "type": "synergy",
       "synergyType": "opener_alignment",
       "participants": [
         "197214",
         "1218047",
-        "187874",
-        "384352",
-        "114051",
-        "115356",
-        "17364",
-        "60103",
-        "187880",
-        "188196",
-        "188443",
-        "469314",
-        "382042",
-        "1250364",
-        "384444",
-        "378270",
-        "444995",
-        "1260644"
+        "1218090",
+        "187880"
       ],
       "class": "Shaman",
       "spec": "고양",
@@ -15372,26 +15346,13 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/세계의분리",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/태고의폭풍",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/파멸의바람",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/낙뢰",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/바람의일격",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/폭풍의일격",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/용암채찍",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/야수정령"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/태고의폭풍"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/승천",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/솟구치는정기",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/정기의속도"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\세계의분리-태고의폭풍-오프닝.md",
         "lastUpdate": ""
@@ -15400,7 +15361,7 @@
     "shaman_enhancement_maelstrom_spender_loop": {
       "id": "shaman_enhancement_maelstrom_spender_loop",
       "name": "소용돌이치는무기-폭풍의일격",
-      "description": "근접 공격으로 소용돌이치는 무기를 얻고 번개 화살·연쇄 번개로 소비한다. 기본 저장 상한은 5이며 넘치는 소용돌이가 저장 상한을 10으로, 분노의 소용돌이가 주문당 소비 한도를 10으로 만든다. 공격 중첩 소비로 얻는 치유용 넘치는 소용돌이는 최대 20 축적·한 번에 최대 10 적용의 별도 효과다. 추가 쿨다운·영웅 특성 연결은 검토 중이다.",
+      "description": "근접 공격으로 소용돌이치는 무기를 얻고 번개 화살·연쇄 번개로 소비한다. 기본 저장 상한은 5이며 넘치는 소용돌이가 저장 상한을 10으로, 분노의 소용돌이가 주문당 소비 한도를 10으로 만든다. 공격 중첩 소비로 얻는 치유용 넘치는 소용돌이는 최대 20 축적·한 번에 최대 10 적용의 별도 효과다. 정기의 속도는 소비 중첩당 폭풍의 일격·용암 채찍 쿨다운을 0.3초 줄인다. 토림의 기원을 선택한 승천·파멸의 바람 중에는 타격기가 자원을 자동 소비한다. 자원 상한만 보고 수동 번개를 무조건 끼워 넣지 않는다.",
       "type": "synergy",
       "synergyType": "maelstrom_spender_loop",
       "participants": [
@@ -15421,7 +15382,7 @@
         "392352",
         "344357",
         "334308",
-        "204357",
+        "289874",
         "319930",
         "1251069",
         "1262713",
@@ -15436,7 +15397,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/폭풍의일격",
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기",
@@ -15500,6 +15461,40 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\쇄도하는토템-진동.md",
+        "lastUpdate": ""
+      }
+    },
+    "shaman_enhancement_season2_blaze_crash": {
+      "id": "shaman_enhancement_season2_blaze_crash",
+      "name": "시즌 2: 전격의 불길에서 낙뢰까지",
+      "description": "2세트는 전격의 불길 주 대상에서 6초 동안 2초마다 불꽃 회오리를 발생시키고 그 주 대상에 대한 피해를 200% 높인다. 4세트는 불꽃 회오리로 낙뢰 쿨다운을 2초 줄이고 다음 낙뢰를 중첩당 8%, 최대 5중첩 강화한다. 전격의 불길을 쓴 뒤 낙뢰 재사용을 다시 확인한다. 세트 미보유자에게 이 연결을 적용하지 않는다.",
+      "type": "synergy",
+      "synergyType": "set_bonus",
+      "participants": [
+        "470057",
+        "1260666",
+        "1296627",
+        "1296628",
+        "187874"
+      ],
+      "class": "Shaman",
+      "spec": "고양",
+      "specs": [
+        "Enhancement"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/낙뢰"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\시즌2-전격의불길-낙뢰.md",
         "lastUpdate": ""
       }
     },
@@ -15579,7 +15574,6 @@
         "8143",
         "370",
         "51886",
-        "77130",
         "51514",
         "51485",
         "2484",
@@ -15623,7 +15617,6 @@
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/세계의분리",
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/낙뢰",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화-77130",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/바람질주토템",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/돌풍",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영웅심"
@@ -15651,7 +15644,10 @@
         "17364",
         "455110",
         "188196",
-        "188443"
+        "188443",
+        "1264688",
+        "114051",
+        "452201"
       ],
       "class": "Shaman",
       "spec": "고양",
@@ -15668,7 +15664,9 @@
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/승천"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\폭풍-폭풍인도자.md",
         "lastUpdate": ""
@@ -15717,34 +15715,17 @@
     },
     "shaman_hero_totemic_surging_totem_common_hub": {
       "id": "shaman_hero_totemic_surging_totem_common_hub",
-      "name": "영웅특성-토템술사-쇄도하는토템-공용허브",
+      "name": "토템술사: 토템 활성과 티끌 소비",
+      "description": "쇄도하는 토템 → 휘몰아치는 정기의 티끌 → 전문화별 지정 기술로 소비. 고양은 불 티끌을 용암 채찍으로 소비해 뜨거운 손을 시작하고, 토템의 기세로 활성 버프를 연장한다. 복원은 물·바람·대지의 치유 효과를 구분한다. 티끌 효과 ID는 별도 선택 특성이 아니며 복원의 물 티끌을 고양 기술로 제시하지 않는다.",
       "type": "synergy",
       "synergyType": "hero_talent_totemic",
       "participants": [
         "444995",
         "445024",
         "445025",
-        "445026",
-        "445027",
-        "445028",
-        "445029",
-        "445030",
-        "445031",
-        "445032",
-        "445033",
         "445034",
-        "445035",
-        "445036",
-        "453405",
-        "453406",
-        "453407",
-        "453409",
-        "455590",
-        "456369",
-        "457481",
         "1260644",
-        "1260874",
-        "1263288"
+        "1260874"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -15754,7 +15735,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -15765,29 +15746,21 @@
     },
     "shaman_hero_stormbringer_tempest_conductive_hub": {
       "id": "shaman_hero_stormbringer_tempest_conductive_hub",
-      "name": "영웅특성-폭풍인도자-폭풍-전도",
+      "name": "폭풍인도자: 폭풍 획득과 후속 효과",
+      "description": "폭풍 획득 특성 454009와 실제 시전 452201을 구분한다. 하강하는 하늘은 승천에서 폭풍을 준비한다. 폭풍 시전 뒤 전격 방전은 고양의 다음 연쇄 번개를 강화하고 정기의 폭풍수호자 중첩을 부여한다. 팽창하는 폭풍은 6초 특화 효과다. 전도성 마력의 정기 피해 전이 문구는 한·영 툴팁 차이가 있어 직접 피해 10% 증가로 단정하지 않는다.",
       "type": "synergy",
       "synergyType": "hero_talent_stormbringer",
       "participants": [
         "454009",
-        "454021",
-        "454022",
-        "454026",
-        "454027",
-        "454029",
-        "454372",
-        "454391",
-        "454919",
-        "455088",
-        "455096",
-        "455097",
-        "455110",
-        "455123",
+        "452201",
         "455129",
-        "467778",
         "1264688",
-        "1264691",
-        "1264762"
+        "455096",
+        "455088",
+        "455123",
+        "455110",
+        "188196",
+        "188443"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -15797,11 +15770,9 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개보호막"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -16024,6 +15995,7 @@
     "shaman_common_purge_interrupt_cleanse": {
       "id": "shaman_common_purge_interrupt_cleanse",
       "name": "주술사공용-정화-차단-해제",
+      "description": "정화는 적의 이로운 마법 제거, 날카로운 바람은 주문 차단이다. 영혼 정화는 정기·고양의 51886이 저주를 제거하고, 복원의 77130은 마법을 제거한다. 복원은 영혼 정화 연마를 선택해야 저주도 제거한다. 이름이 같아도 적용 전문화와 해제 종류는 다르다.",
       "type": "synergy",
       "synergyType": "purge_interrupt_cleanse",
       "participants": [
@@ -16054,10 +16026,10 @@
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/정화",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/날카로운바람",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/독정화토템",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/냉기충격",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화-77130",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/사술",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/독정화토템",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/축전토템",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/속박의토템"
       ],
@@ -16703,7 +16675,6 @@
         "8143",
         "370",
         "51886",
-        "77130",
         "51514",
         "51485",
         "2484",
@@ -16745,7 +16716,6 @@
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/피의욕망",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영웅심",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화-77130",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/바람질주토템",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/돌풍"
       ],
