@@ -311,6 +311,11 @@ for (const [id, effect] of Object.entries(utilityEffects)) {
   }
 }
 assert.doesNotMatch(JSON.stringify(guide.blocks), /차트 배치|차트는 마지막|본문 다음에.*차트/);
+assert.equal(guide.patch, '12.1');
+assert.equal(guide.researchedAt, '2026-09-21');
+assert.match(guide.status, /로그 검수 중/);
+assert.match(JSON.stringify(guide.caveats), /위기 감각.*공수 자극제.*충돌/);
+assert.match(JSON.stringify(guide.blocks), /위축의 독.*4%.*마취 독.*15%.*동시에 고를 수 없습니다/);
 const page = fs.readFileSync(path.join(__dirname, '../src/pages/GuideDetailPage.js'), 'utf8');
 assert.doesNotMatch(page, /'rogue-subtlety':\s*\{/);
 assert.match(page, /'rogue-subtlety'\]\.includes\(guide.id\)\) return plan/);
