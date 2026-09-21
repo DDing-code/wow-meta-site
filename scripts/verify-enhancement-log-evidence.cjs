@@ -26,6 +26,12 @@ for (const [key, count, duration] of [['raid', 5, 578550], ['dungeon', 12, 17684
   assert(casts.every(event => event.timestamp >= fight.startTime && event.timestamp <= fight.endTime));
 }
 const raid = events.raid.events.data.filter(event => event.type === 'cast');
+for (const [key, expected] of [['heroic', [100, 50, 65, 30, 52, 37]], ['keys', [89, 39, 38, 44, 41, 28]]]) {
+  const known = rankings[key].characterRankings.rankings.filter(row => row.gear.some(item => item.id));
+  const count = id => known.filter(row => row.gear.some(item => item.id === id)).length;
+  const paired = known.filter(row => [270173, 268209].every(id => row.gear.some(item => item.id === id))).length;
+  assert.deepEqual([known.length, ...[270175, 270173, 273796, 268209].map(count), paired], expected);
+}
 assert.deepEqual(raid.slice(0, 5).map(event => event.abilityGameID), [470057, 17364, 187874, 17364, 114051]);
 assert.deepEqual(raid.slice(0, 5).map(event => event.timestamp - metadata.raid.fights[0].startTime), [1645, 2888, 4185, 5422, 6768]);
 assert(raid.some(event => event.abilityGameID === 452201 && raid.some(other => other.abilityGameID === 115356 && other.timestamp === event.timestamp)));
