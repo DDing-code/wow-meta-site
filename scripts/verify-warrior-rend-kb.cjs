@@ -484,4 +484,8 @@ for (const id of [206315, 316402]) {
 assert.match(skills[206315].description, /대상 생명력 35% 미만.*1.5초.*전역/);
 assert.match(skills[316402].description, /기본 분노 20.*환급.*소비한 분노가 아니/);
 assert.ok(guide.includes('무기 전사의 환급 규칙을 가져오면 안 됩니다'));
+assert.equal(skills[280721], undefined);
+assert.deepEqual(skills[29725].specs, ['Arms', 'Fury', 'Protection']);
+assert.match(skills[29725].description, /무기 전문화.*무료.*40.*분노·방어.*별도 효과/);
+assert.ok(guide.includes('급살은 생명력 제한 밖에서도'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

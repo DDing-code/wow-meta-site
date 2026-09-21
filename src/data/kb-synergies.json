@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:10:31.203Z",
+    "generatedAt": "2026-09-21T22:14:38.822Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -19607,7 +19607,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살"
       ],
       "source": {
@@ -19642,7 +19642,7 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술적-우위",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/광범위한-타격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살"
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의-강타-전술적우위-광범위한타격.md",
@@ -19813,7 +19813,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살"
       ],
       "source": {
@@ -19878,7 +19878,7 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/집행자의-정밀함",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/치명적-감각",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/격렬한-원동력"
@@ -20350,7 +20350,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마"
       ],
@@ -21304,7 +21304,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/급살",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/대학살",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/마무리-일격-연마",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/치명적-감각"

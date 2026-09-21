@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:10:31.202Z",
+    "generatedAt": "2026-09-21T22:14:38.821Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2954,
-    "rawTotalSkills": 2954,
+    "totalSkills": 2953,
+    "rawTotalSkills": 2953,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2954,
+      "total": 2953,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 126,
         "talent": 996,
-        "spec-talent": 380,
+        "spec-talent": 379,
         "passive": 78,
         "hero-tree": 2,
         "set-bonus": 15,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 242
+        "Warrior": 241
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,15 +96,16 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 114,
-        "Warrior-Arms": 40,
+        "Warrior-Arms": 39,
+        "Warrior-Common": 1,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
-        "Warrior-Fury": 43,
+        "Warrior-Fury": 42,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2871,
-        "withSynergies": 2019,
+        "withWikilinks": 2870,
+        "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
     }
@@ -9187,9 +9188,11 @@
       "id": "29725",
       "type": "spec-talent",
       "class": "Warrior",
-      "spec": "Arms",
+      "spec": "Common",
       "specs": [
-        "Arms"
+        "Arms",
+        "Fury",
+        "Protection"
       ],
       "name": "급살",
       "koreanName": "급살",
@@ -9201,7 +9204,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "무기 전사의 급살은 공격 시 확률적으로 다음 마무리 일격을 대상 생명력에 관계없이 무료로 사용할 수 있게 한다. 이 공격은 분노 40을 소모한 것과 같은 피해를 준다. 분노 40을 자원으로 지급하거나 모든 이후 마무리 일격을 무료로 만드는 효과가 아니다.  기본 툴팁의 약 1.7회/분과 내부 재사용 제한 3초는 주기적으로 반드시 발동한다는 뜻이 아니다. 다른 특성에서 얻는 추가 급살과 기본 발동을 구분한다. 이 노트의 무료 사용·40분노 상당 피해는 무기 전문화 분기의 설명이다.",
+      "description": "공격 시 일정 확률로 다음 마무리 일격을 대상 생명력에 관계없이 사용할 수 있게 하는 지속 효과입니다. 무기 전문화에서는 무료로 사용하며 분노 40을 소모한 것과 같은 피해를 줍니다. 분노·방어 전문화에 이 무료 사용·40분노 상당 피해 설명을 그대로 적용하지 않습니다. 분노의 비용 제거와 기본 분노 20 생성은 마무리 일격 연마의 별도 효과입니다.  기본 툴팁의 약 1.7회/분과 내부 발동 제한 3초는 정해진 간격마다 반드시 발동한다는 뜻이 아닙니다. 특성 ID는 29725이고 실제 급살 버프는 52437입니다. 방어 특성 자료의",
       "category": "spec-talent",
       "tags": [],
       "patch": "12.1",
@@ -9223,11 +9226,11 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\급살.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\급살.md",
         "lastUpdate": ""
       }
     },
@@ -42461,56 +42464,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Skills\\은밀한기술.md",
-        "lastUpdate": ""
-      }
-    },
-    "280721": {
-      "id": "280721",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "급살",
-      "koreanName": "급살",
-      "englishName": "",
-      "icon": "ability_warrior_improveddisciplines",
-      "iconName": "ability_warrior_improveddisciplines",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "을 실제 처형 구간 밖에서도 우선순위에 올리는 발동 노드다. 에서 처형형 판단의 시작점으로 본다.  공식 툴팁 요약: 급살 특성 전사 필요 요구 레벨 15 매 분마다 약 1.7 번 효과 발동됨 공격 시 일정 확률로 마무리 일격 의 재사용 대기시간을 초기화시키며, 대상의 남은 생명력에 관계없이 사용할 수 있게 됩니다. (3초 재사용 대기시간)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_improveddisciplines.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_improveddisciplines.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_improveddisciplines.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_improveddisciplines.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_improveddisciplines.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 1,
-        "linkDensity": 0.014,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\급살.md",
         "lastUpdate": ""
       }
     },
