@@ -36,3 +36,11 @@ console.log('Restoration core spells and talent migration verified; full guide a
 assert.equal(skills[443450].patch,'12.1');
 assert.deepEqual(skills[443450].specs,['Elemental','Restoration']);
 assert.match(skills[443450].description,/복원.*생명 폭발.*12초.*정기.*폭풍수호자.*8초/);
+for (const id of [1267016,1267093,1267120]) {
+  assert.equal(skills[id].patch,'12.1');
+  assert.equal(skills[id].castTime,'지속 효과');
+  assert(!skills[id].description.startsWith('#'));
+}
+assert.match(skills[1267016].description,/6%.*10%.*1명.*2명/);
+assert.match(skills[1267120].description,/신속함.*사용 횟수.*충전을 소모하지/);
+assert.match(skills[1267093].description,/랭크.*단정하지/);

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:48:51.036Z",
+    "generatedAt": "2026-09-21T16:52:44.315Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -138242,14 +138242,14 @@
       "icon": "inv12_apextalent_shaman_stormstreamtotem",
       "iconName": "inv12_apextalent_shaman_stormstreamtotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍의 흐름 토템 (Stormstream Totem)",
+      "description": "성난 해일이 6% 확률로 다음 치유의 토템을 폭풍의 흐름 토템으로 강화한다. 강화 토템은 치유량이 10% 증가하고 추가 아군 1명을 100% 효율로 치유하며, 사용 시 다친 아군 2명에게 즉시 치유를 제공한다. 특성 1267016은 지속 효과이며 발동만으로 토템이 자동 설치되는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138268,7 +138268,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -138290,14 +138290,14 @@
       "icon": "inv12_apextalent_shaman_stormstreamtotem",
       "iconName": "inv12_apextalent_shaman_stormstreamtotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍의 흐름 토템 (Stormstream Totem)",
+      "description": "치유의 토템과 폭풍의 흐름 토템의 치유량을 높이는 지속 효과다. 기본 주문 툴팁은 30%를 표시하지만 특성 랭크 보정 표에는 다른 값이 있으므로, 기본 툴팁 수치를 실제 선택 랭크의 최종 증가량으로 단정하지 않는다. 추가 사용권이나 확률 발동을 주는 단계가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138316,7 +138316,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -138338,14 +138338,14 @@
       "icon": "inv12_apextalent_shaman_stormstreamtotem",
       "iconName": "inv12_apextalent_shaman_stormstreamtotem",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍의 흐름 토템 (Stormstream Totem)",
+      "description": "자연의 신속함 또는 이를 대체하는 선조의 신속함 시전 시 폭풍의 흐름 토템 사용 횟수를 부여한다. 이 특성이 있으면 폭풍의 흐름 토템을 사용해도 치유의 토템 충전을 소모하지 않는다. 신속함이 토템을 자동 설치하거나 모든 토템의 충전을 보존하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138364,7 +138364,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
