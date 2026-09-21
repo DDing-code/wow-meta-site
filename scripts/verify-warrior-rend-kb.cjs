@@ -97,4 +97,18 @@ assert.deepEqual(synergies['warrior-arms-colossus-demolish'].participants, ['122
 assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE'].participants, ['23922', '6572', '429634', '436358', '429636']);
 assert(!guide.includes('거신의 지배가 최대 중첩에서 쇄파 쿨다운을 더 크게 줄인다'));
 assert(!guide.includes('회전베기와 필사의 일격이 쇄파 흐름을 제대로 줄였는지'));
+for (const id of [444767, 444774, 429641, 429644]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[444767].description, /무기 25%, 분노 15%/);
+assert.match(skills[444774].description, /무기.*20%.*분노.*10%/);
+assert.match(skills[429641].description, /무기는 제압과 마무리 일격, 방어는 복수와 마무리 일격/);
+assert.match(skills[429644].description, /피해량을 30% 증가/);
+assert.deepEqual(synergies.warrior_arms_opportunist.participants, ['184783', '444774', '7384']);
+assert.deepEqual(synergies.warrior_fury_opportunist.participants, ['444774', '85288']);
+assert.deepEqual(synergies.warrior_arms_tide_of_battle.specs, ['Arms']);
+assert.deepEqual(synergies.warrior_protection_tide_of_battle.specs, ['Protection']);
+assert(guide.includes('무기의 학살자의 지배는 주 대상 공격 시 25%'));
+assert(guide.includes('분노의 학살자의 지배는 주 대상 공격 시 15%'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

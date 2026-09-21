@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:00:22.389Z",
+    "generatedAt": "2026-09-21T18:08:50.315Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 582,
-    "rawTotalSynergies": 582,
+    "totalSynergies": 586,
+    "rawTotalSynergies": 586,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -216,6 +216,7 @@
       "slayer-hero-package": 1,
       "burst-window-core": 1,
       "execute-availability": 1,
+      "hero-talent-damage": 4,
       "execute-window": 1,
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
@@ -261,7 +262,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 45
+      "Warrior": 49
     }
   },
   "synergies": {
@@ -19687,6 +19688,36 @@
         "lastUpdate": ""
       }
     },
+    "warrior_arms_opportunist": {
+      "id": "warrior_arms_opportunist",
+      "name": "기회주의자-전술가-제압",
+      "type": "synergy",
+      "synergyType": "hero-talent-damage",
+      "participants": [
+        "184783",
+        "444774",
+        "7384"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\기회주의자-전술가-제압.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-execute-precision": {
       "id": "warrior-arms-execute-precision",
       "name": "마무리-일격-집행자의-정밀함-비판적-사고",
@@ -19914,6 +19945,35 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전쟁파괴자-회전베기-부수적인-피해.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_tide_of_battle": {
+      "id": "warrior_arms_tide_of_battle",
+      "name": "전투의-해일-제압-마무리",
+      "type": "synergy",
+      "synergyType": "hero-talent-damage",
+      "participants": [
+        "429634",
+        "429641",
+        "7384",
+        "163201"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전투의-해일-제압-마무리.md",
         "lastUpdate": ""
       }
     },
@@ -20401,6 +20461,35 @@
         "lastUpdate": ""
       }
     },
+    "warrior_protection_tide_of_battle": {
+      "id": "warrior_protection_tide_of_battle",
+      "name": "전투의-해일-복수-마무리",
+      "type": "synergy",
+      "synergyType": "hero-talent-damage",
+      "participants": [
+        "429634",
+        "429641",
+        "6572",
+        "163201"
+      ],
+      "class": "Warrior",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\전투의-해일-복수-마무리.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-WARRIOR-PROTECTION-THUNDER-REVENGE-TACTICIAN": {
       "id": "SY-WARRIOR-PROTECTION-THUNDER-REVENGE-TACTICIAN",
       "name": "천둥벼락-복수-전략가",
@@ -20568,6 +20657,33 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\광란-자르고-베기-충전.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_fury_opportunist": {
+      "id": "warrior_fury_opportunist",
+      "name": "기회주의자-분노의-강타",
+      "type": "synergy",
+      "synergyType": "hero-talent-damage",
+      "participants": [
+        "444774",
+        "85288"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\기회주의자-분노의-강타.md",
         "lastUpdate": ""
       }
     },
