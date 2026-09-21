@@ -202,4 +202,7 @@ assert.equal(skills[202316].patch, '12.1');
 assert.match(skills[202316].description, /3명 이상.*주 대상.*격돌.*50%/);
 assert.match(skills[202316].description, /수동 시전 횟수로 세지 않는다/);
 assert.deepEqual(synergies.warrior_arms_fervor_triggered_slam.participants, ['202316', '845', '1680', '1464']);
+assert.ok(!guide.includes('21,740') && !guide.includes('90,965') && !guide.includes('4,657'), 'Historical Arms counts must not drive current recommendations');
+assert.ok(guide.includes('12.1에서 단일과 다중 대상 모두 먼저 비교할 기본 선택'));
+assert.ok(guide.includes('최신 로그를 직접 재수집한 통계로 제시하지 않습니다'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
