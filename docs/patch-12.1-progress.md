@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue control casts and conflict cross-check, 2026-09-21
+
+- Rewrote Cheap Shot, Kidney Shot and Gouge from Korean/English tooltips: real instant-cast fields, Energy costs, cooldowns, stun/incapacitate durations, combo-point behavior and positional/stealth requirements. Removed unsupported generic hero-package links.
+- Fixed 12.1 sc_spell_data rows for Airborne Irritant contain -50/-70 modifiers, agreeing with the served tooltip rather than launch notes. This improves numeric evidence but does not independently verify live target scope or later server hotfixes; the disagreement remains documented.
+
 ### Rogue retired-talent correction, 2026-09-21
 
 - Blizzard's Midnight pre-expansion notes explicitly remove Shadowheart 455131 and Rushed Setup 378803. Neither exists in fixed 12.1 trait_data. Removed both canonical notes, sync-state entries and the Shadowheart incoming relation; regenerated DB excludes both.

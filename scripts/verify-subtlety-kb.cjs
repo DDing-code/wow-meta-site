@@ -185,6 +185,9 @@ assert.match(synergies.rogue_subtlety_season2_lingering_shadow.description, /60%
 assert.match(skills['441146'].description, /잠행.*그림자 일격/);
 assert.match(synergies.rogue_subtlety_shuriken_blackpowder.description, /2대상.*강력한 가루.*절개.*3대상.*검은 화약/);
 const utilityEffects = {
+  '1833': /은신.*40.*6초.*1점.*12초.*1회/,
+  '408': /25.*30초.*1점 4초.*5점 8초.*최대.*8초/,
+  '1776': /25.*4초.*1점.*25초.*앞.*해제/,
   '31224': /5초.*해로운 주문.*모든 물리 피해.*무조건/,
   '5277': /10초.*회피율.*100%.*회피 판정/,
   '31230': /7%.*3초.*85%.*6분/,

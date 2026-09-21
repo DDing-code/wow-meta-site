@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:28:31.258Z",
+    "generatedAt": "2026-09-21T04:30:35.377Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -854,14 +854,14 @@
       "icon": "ability_rogue_kidneyshot",
       "iconName": "ability_rogue_kidneyshot",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 급소 가격 (Kidney Shot)",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기력 25 + 연계 점수",
+      "range": "근접",
+      "description": "기력 25와 연계 점수를 쓰는 근접 기절 마무리 일격이다. 기본 쿨다운은 30초다. 툴팁 기준 1점 4초, 2점 5초, 3점 6초, 4점 7초, 5점 8초이며 최대 기절 시간은 8초다. 점수 상한이 높다고 기절 시간이 무제한 늘어나지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -878,9 +878,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.037,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -3427,14 +3427,14 @@
       "icon": "ability_gouge",
       "iconName": "ability_gouge",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 후려치기 (Gouge)",
+      "cooldown": "25초",
+      "castTime": "즉시",
+      "resourceCost": "기력 25",
+      "range": "근접",
+      "description": "기력 25를 써서 근접 적을 4초 동안 행동 불가로 만들고 연계 점수 1점을 생성하는 사용 기술이다. 기본 쿨다운은 25초이며 대상의 앞에 있어야 한다. 피해를 받으면 효과가 해제될 수 있어 기절이나 주문 계열 차단과 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3451,9 +3451,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.038,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -3632,14 +3632,14 @@
       "icon": "ability_cheapshot",
       "iconName": "ability_cheapshot",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 비열한 습격 (Cheap Shot)",
+      "cooldown": "12초",
+      "castTime": "즉시",
+      "resourceCost": "기력 40",
+      "range": "근접",
+      "description": "은신이 필요한 근접 기절 기술이다. 기력 40을 사용해 적을 6초 동안 기절시키고 연계 점수 1점을 생성한다. 기본 쿨다운은 12초, 기본 충전은 1회다. 은신 중이라고 쿨다운 없이 연속 사용할 수 있는 기술이 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3656,9 +3656,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.052,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -31252,7 +31252,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.012,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
