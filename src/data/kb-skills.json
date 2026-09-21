@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:52:23.128Z",
+    "generatedAt": "2026-09-21T20:57:04.668Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2964,
-    "rawTotalSkills": 2964,
+    "totalSkills": 2965,
+    "rawTotalSkills": 2965,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2964,
+      "total": 2965,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 129,
+        "skill": 130,
         "talent": 996,
         "spec-talent": 389,
         "passive": 76,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 252
+        "Warrior": 253
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,15 +96,15 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 115,
-        "Warrior-Arms": 39,
+        "Warrior-Arms": 40,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2881,
-        "withSynergies": 2018,
+        "withWikilinks": 2882,
+        "withSynergies": 2019,
         "avgLinkDensity": "0.039"
       }
     }
@@ -3111,6 +3111,56 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Skills\\혼돈의낙인.md",
         "lastUpdate": "2026-09-13"
+      }
+    },
+    "1680": {
+      "id": "1680",
+      "type": "skill",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "소용돌이",
+      "koreanName": "소용돌이",
+      "englishName": "Whirlwind",
+      "icon": "ability_whirlwind",
+      "iconName": "ability_whirlwind",
+      "school": "",
+      "cooldown": "",
+      "castTime": "즉시",
+      "resourceCost": "분노 20",
+      "range": "",
+      "description": "분노 20을 소모해 주변 적에게 물리 피해를 주는 무기 전사의 광역 공격입니다. 5명을 초과하면 피해가 감소합니다. 분노 전문화의 소용돌이처럼 분노를 생성하거나 소용돌이 연마의 단일 대상 공격 확산을 부여하지 않습니다. 전투의 열정을 선택하고 3명 이상에게 적중하면 주 대상에게 강화된 격돌을 발동시킵니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_whirlwind.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_whirlwind.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_whirlwind.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_whirlwind.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_whirlwind.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.008,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\소용돌이.md",
+        "lastUpdate": ""
       }
     },
     "1706": {
@@ -26229,23 +26279,22 @@
       "class": "Warrior",
       "spec": "공용",
       "specs": [
-        "Arms",
         "Fury"
       ],
       "name": "소용돌이",
       "koreanName": "소용돌이",
-      "englishName": "",
+      "englishName": "Whirlwind",
       "icon": "ability_whirlwind",
       "iconName": "ability_whirlwind",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "즉시",
+      "resourceCost": "소모 없음",
       "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 소용돌이은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 소용돌이 즉시 전사 필요 요구 레벨 10 근접 무기 필요 강철의 소용돌이를 내뿜어 주위 모든 적을 강타하고 [(전투력의 50.3989%) + (전투력의 50.3989%) + (2 * ((전투력의 50.3989%) + (전투력의 50.3989%)))]의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다. [ 소용돌",
+      "description": "주변 적에게 물리 피해를 주고 분노 3을 생성하는 분노 전사의 광역 공격입니다. 5명을 초과하면 피해가 감소합니다. 소용돌이 연마를 선택하면 다음 4회의 단일 대상 근접 공격이 최대 4명의 추가 대상에게 65% 피해로 적중하며, 소용돌이 적중 대상에 따른 추가 분노 생성도 얻습니다. 피의 폭풍을 선택하면 적중 대상에게 분쇄를 적용합니다. 무기용 분노 20 소비 기술과는 다른 주문입니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -26264,7 +26313,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
