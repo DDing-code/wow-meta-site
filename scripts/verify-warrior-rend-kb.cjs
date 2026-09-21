@@ -398,4 +398,11 @@ for (const id of [383459, 383922, 388004, 388049, 389603, 391683, 392536, 394329
   assert.equal(skills[id], undefined, 'Inactive Fury talents must not be selectable');
   assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive Fury talents must not survive graph links');
 }
+assert.equal(skills[184362].patch, '12.1');
+assert.equal(skills[184362].castTime, '지속 효과');
+assert.match(skills[184362].description, /4초.*11%.*광란.*30%/);
+assert.equal(skills[23881].patch, '12.1');
+assert.equal(skills[23881].cooldown, '4.5초');
+assert.match(skills[23881].description, /3%.*분노 8.*30%/);
+assert.ok(guide.includes('치명타 한 번이 격노를 무조건 보장'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
