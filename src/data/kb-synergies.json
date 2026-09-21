@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:57:04.669Z",
+    "generatedAt": "2026-09-21T21:00:48.653Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -210,9 +210,9 @@
       "mountain_thane_thunder_router": 1,
       "slayer_execute_router": 1,
       "shared_interrupt_control": 1,
+      "shared_aoe_pressure": 1,
       "shared_raid_utility": 1,
       "shared_personal_survival": 1,
-      "shared_aoe_pressure": 1,
       "proc-conditions": 1,
       "slayer-hero-package": 1,
       "talent-mechanic": 3,
@@ -19218,7 +19218,6 @@
         "1270724",
         "456270",
         "6343",
-        "384318",
         "23922",
         "184367",
         "23881",
@@ -19235,16 +19234,13 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\MountainThane-벼락-우레작렬.md",
         "lastUpdate": ""
@@ -19402,6 +19398,57 @@
         "lastUpdate": ""
       }
     },
+    "warrior_common_thunderous_roar_bladestorm_aoe": {
+      "id": "warrior_common_thunderous_roar_bladestorm_aoe",
+      "name": "전사공용-전문화별-광역공격",
+      "type": "synergy",
+      "synergyType": "shared_aoe_pressure",
+      "participants": [
+        "1464",
+        "190411",
+        "163201",
+        "227847",
+        "107574",
+        "152278",
+        "382946",
+        "382767",
+        "383082",
+        "392777",
+        "392792",
+        "382764",
+        "6343"
+      ],
+      "class": "Warrior",
+      "spec": "공용",
+      "specs": [
+        "Arms",
+        "Fury",
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.0.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/격돌",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/야생의-강타",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/압도적인-격노",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/야만적인-훈련",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/잔혹한-일격",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/거품-무는-광전사"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\전사공용-전문화별-광역공격.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior_common_battle_shout_rallying_raid_utility": {
       "id": "warrior_common_battle_shout_rallying_raid_utility",
       "name": "전사공용-전투의외침-재집결의함성-공격대유틸",
@@ -19412,7 +19459,6 @@
         "97462",
         "384100",
         "376079",
-        "384318",
         "107574",
         "227847",
         "1243660",
@@ -19432,10 +19478,9 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/전투의-외침",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/재집결의-함성",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/광전사의-외침",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/용사의-창",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/광전사의-외침",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어"
       ],
@@ -19504,60 +19549,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\전사공용-주문반사-연전연승-생존.md",
-        "lastUpdate": ""
-      }
-    },
-    "warrior_common_thunderous_roar_bladestorm_aoe": {
-      "id": "warrior_common_thunderous_roar_bladestorm_aoe",
-      "name": "전사공용-천둥의포효-칼날폭풍-광역압박",
-      "type": "synergy",
-      "synergyType": "shared_aoe_pressure",
-      "participants": [
-        "1464",
-        "190411",
-        "163201",
-        "227847",
-        "384318",
-        "107574",
-        "152278",
-        "382946",
-        "382767",
-        "383082",
-        "392777",
-        "392792",
-        "382764",
-        "6343"
-      ],
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/격돌",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/야생의-강타",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/압도적인-격노",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/야만적인-훈련",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/잔혹한-일격",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/거품-무는-광전사"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Synergies\\전사공용-천둥의포효-칼날폭풍-광역압박.md",
         "lastUpdate": ""
       }
     },
@@ -19729,8 +19720,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -19927,13 +19917,12 @@
     },
     "warrior-arms-rend-bleed-package": {
       "id": "warrior-arms-rend-bleed-package",
-      "name": "분쇄-유혈-천둥의-포효",
+      "name": "분쇄-유혈-치명상",
       "type": "synergy",
       "synergyType": "bleed-maintenance",
       "participants": [
         "772",
         "383154",
-        "384318",
         "1261060"
       ],
       "class": "Warrior",
@@ -19946,7 +19935,6 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
@@ -19959,7 +19947,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\분쇄-유혈-천둥의-포효.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\분쇄-유혈-치명상.md",
         "lastUpdate": ""
       }
     },
@@ -20323,8 +20311,7 @@
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파"
       ],
       "linkedBuffs": [],
       "linkedTalents": [

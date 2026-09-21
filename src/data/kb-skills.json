@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:57:04.668Z",
+    "generatedAt": "2026-09-21T21:00:48.652Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2965,
-    "rawTotalSkills": 2965,
+    "totalSkills": 2964,
+    "rawTotalSkills": 2964,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2965,
+      "total": 2964,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 130,
+        "skill": 129,
         "talent": 996,
         "spec-talent": 389,
         "passive": 76,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 253
+        "Warrior": 252
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -95,7 +95,7 @@
         "Warlock-공용": 113,
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
-        "Warrior-공용": 115,
+        "Warrior-공용": 114,
         "Warrior-Arms": 40,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
@@ -103,7 +103,7 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2882,
+        "withWikilinks": 2881,
         "withSynergies": 2019,
         "avgLinkDensity": "0.039"
       }
@@ -781,7 +781,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -3053,7 +3053,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -3307,7 +3307,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -5198,7 +5198,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -7005,7 +7005,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -14490,7 +14490,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -15352,7 +15352,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -24343,7 +24343,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -42094,7 +42094,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -61766,7 +61766,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -61816,7 +61816,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -62071,56 +62071,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Talents\\피와-번개.md",
-        "lastUpdate": ""
-      }
-    },
-    "384318": {
-      "id": "384318",
-      "type": "skill",
-      "class": "Warrior",
-      "spec": "공용",
-      "specs": [
-        "Arms",
-        "Fury",
-        "Protection"
-      ],
-      "name": "천둥의 포효",
-      "koreanName": "천둥의 포효",
-      "englishName": "",
-      "icon": "ability_warrior_dragonroar",
-      "iconName": "ability_warrior_dragonroar",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 천둥의 포효은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 천둥의 포효 즉시 1.5 분 재사용 대기시간 전사 필요 요구 레벨 1 폭발적인 포효를 내질러 12미터 내의 적에게 (전투력의 250.56%)의 물리 피해를 입히고 출혈을 일으켜 8초에 걸쳐 (전투력의 250.56%)의 물리 피해를 입힙니다. 5명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_dragonroar.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_dragonroar.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_dragonroar.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_dragonroar.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_dragonroar.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 0,
-        "linkDensity": 0.039,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Skills\\천둥의-포효.md",
         "lastUpdate": ""
       }
     },
