@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:08:50.313Z",
+    "generatedAt": "2026-09-21T18:13:57.449Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2980,
-    "rawTotalSkills": 2980,
+    "totalSkills": 2982,
+    "rawTotalSkills": 2982,
     "duplicateIds": [],
-    "totalSynergies": 586,
+    "totalSynergies": 589,
     "stats": {
-      "total": 2980,
+      "total": 2982,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 132,
         "talent": 996,
-        "spec-talent": 392,
+        "spec-talent": 394,
         "passive": 75,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 268
+        "Warrior": 270
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,7 +96,7 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 45,
+        "Warrior-Arms": 47,
         "Warrior-무기": 1,
         "Warrior-Protection": 42,
         "Warrior-Fury": 53
@@ -39583,18 +39583,18 @@
       ],
       "name": "일격무쌍",
       "koreanName": "일격무쌍",
-      "englishName": "",
+      "englishName": "Dreadnaught",
       "icon": "inv_sword_05",
       "iconName": "inv_sword_05",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "일격무쌍은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 일격무쌍 특성 전사 필요 요구 레벨 50 제압 사용 시 지진파를 일으켜 10미터 선상에 있는 모든 적에게 (전투력의 70%)의 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다.",
+      "description": "일격무쌍은 제압의 충격으로 지진파를 발생시키는 무기 전문화 지속 특성이다. 대상 주변 10미터 직선상의 추가 적에게 전투력의 140% 피해를 주며 5명을 초과하면 감소된 피해를 준다. 12.1의 지진파는 제압의 주 대상에게 피해를 주지 않는다.  일격무쌍은 제압의 공격력을 바꾸는 효과를 받는다. 제압 본체 피해와 지진파 피해를 분리해서 집계해야 하며, 추가 대상이 없는 단일 전투에서 지진파 피해를 더하면 안 된다. 적이 실제 지진파 범위에 있는지도 확인한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -39613,7 +39613,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -59802,18 +59802,18 @@
       ],
       "name": "유혈",
       "koreanName": "유혈",
-      "englishName": "",
+      "englishName": "Bloodletting",
       "icon": "ability_skeer_bloodletting",
       "iconName": "ability_skeer_bloodletting",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "유혈은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 유혈 특성 전사 필요 분쇄와 치명상의 출혈 효과 지속시간이 33%만큼, 치명타 및 극대화율이 5%만큼 증가합니다. 분쇄를 배웠을 경우, 필사의 일격 사용 시 생명력이 35% 미만인 대상에게 분쇄를 겁니다.",
+      "description": "유혈은 분쇄에 걸린 대상을 능력으로 공격할 때 치명타 확률을 5% 높인다. 분쇄를 배웠다면 필사의 일격이 생명력 35% 미만인 대상에게 분쇄를 적용한다. 치명상 지속시간은 33% 늘어난다.  12.1의 지속시간 증가는 치명상에 적용되며 분쇄 지속시간도 함께 33% 늘어난다는 옛 설명과 다르다. 치명타 보너스도 출혈만의 보너스가 아니라 분쇄가 걸린 대상에 대한 능력의 치명타 확률 증가다. 분쇄를 배우지 않았다면 필사의 일격의 분쇄 적용 조건도 충족되지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59832,7 +59832,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -130915,6 +130915,102 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\원시촉매.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261049": {
+      "id": "1261049",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "광범위한 타격",
+      "koreanName": "광범위한 타격",
+      "englishName": "Broad Strokes",
+      "icon": "inv_ability_rogue_echoingreprimand",
+      "iconName": "inv_ability_rogue_echoingreprimand",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "광범위한 타격은 거인의 강타 사용 시 휩쓸기 일격 6중첩을 부여하는 무기 전문화 지속 특성이다. 6초 동안 지속되는 효과라는 뜻이 아니다.  휩쓸기 일격의 남은 중첩과 실제로 함께 맞힐 추가 대상을 확인한다. 광역 스킬 자체에 일괄 피해 증가를 주거나 적이 없는 상황에서도 복제 피해를 보장하는 특성이 아니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_rogue_echoingreprimand.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_rogue_echoingreprimand.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_rogue_echoingreprimand.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_rogue_echoingreprimand.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_rogue_echoingreprimand.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\광범위한-타격.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261051": {
+      "id": "1261051",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "전술적 우위",
+      "koreanName": "전술적 우위",
+      "englishName": "Tactical Edge",
+      "icon": "inv12_ability_warrior_arms",
+      "iconName": "inv12_ability_warrior_arms",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "전술적 우위는 거인의 강타 사용 시 급살 1회를 즉시 부여하는 무기 전문화 지속 특성이다. 별도 시전 스킬이나 일정 확률의 제압 초기화 보너스가 아니다.  급살은 다음 마무리 일격을 대상 생명력과 관계없이 무료로 사용할 수 있게 한다. 거인의 강타 사용 뒤 급살 상태를 확인하고 다른 강한 기술과 함께 피해 증가 구간에 활용한다. 급살이 이미 있을 때 무조건 추가 사용량이 보존된다고 가정하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_warrior_arms.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_warrior_arms.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_warrior_arms.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_warrior_arms.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_warrior_arms.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\전술적-우위.md",
         "lastUpdate": ""
       }
     },

@@ -111,4 +111,17 @@ assert.deepEqual(synergies.warrior_arms_tide_of_battle.specs, ['Arms']);
 assert.deepEqual(synergies.warrior_protection_tide_of_battle.specs, ['Protection']);
 assert(guide.includes('무기의 학살자의 지배는 주 대상 공격 시 25%'));
 assert(guide.includes('분노의 학살자의 지배는 주 대상 공격 시 15%'));
+for (const id of [1261051, 1261049, 262150, 383154]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.equal(skills[1261051].koreanName, '전술적 우위');
+assert.match(skills[1261051].description, /거인의 강타.*급살 1회/);
+assert.match(skills[1261049].description, /휩쓸기 일격 6중첩/);
+assert.match(skills[262150].description, /140%.*주 대상에게 피해를 주지 않는다/);
+assert.match(skills[383154].description, /치명타 확률을 5%.*35% 미만.*33%/);
+assert.deepEqual(synergies.warrior_arms_smash_grants.participants, ['167105', '1261051', '29725', '1261049', '260708']);
+assert.deepEqual(synergies.warrior_arms_dreadnaught.participants, ['7384', '262150']);
+assert.deepEqual(synergies.warrior_arms_bloodletting.participants, ['383154', '772', '12294']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

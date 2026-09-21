@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:08:50.315Z",
+    "generatedAt": "2026-09-21T18:13:57.450Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 586,
-    "rawTotalSynergies": 586,
+    "totalSynergies": 589,
+    "rawTotalSynergies": 589,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -214,6 +214,7 @@
       "shared_personal_survival": 1,
       "shared_aoe_pressure": 1,
       "slayer-hero-package": 1,
+      "talent-mechanic": 3,
       "burst-window-core": 1,
       "execute-availability": 1,
       "hero-talent-damage": 4,
@@ -262,7 +263,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 49
+      "Warrior": 52
     }
   },
   "synergies": {
@@ -19607,6 +19608,40 @@
         "lastUpdate": ""
       }
     },
+    "warrior_arms_smash_grants": {
+      "id": "warrior_arms_smash_grants",
+      "name": "거인의-강타-전술적우위-광범위한타격",
+      "type": "synergy",
+      "synergyType": "talent-mechanic",
+      "participants": [
+        "167105",
+        "1261051",
+        "29725",
+        "1261049",
+        "260708"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술적-우위",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/광범위한-타격",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의-강타-전술적우위-광범위한타격.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-colossus-smash-mortal-strike": {
       "id": "warrior-arms-colossus-smash-mortal-strike",
       "name": "거인의-강타-필사의-일격-제압",
@@ -19903,6 +19938,37 @@
         "lastUpdate": ""
       }
     },
+    "warrior_arms_bloodletting": {
+      "id": "warrior_arms_bloodletting",
+      "name": "유혈-분쇄-필사의일격",
+      "type": "synergy",
+      "synergyType": "talent-mechanic",
+      "participants": [
+        "383154",
+        "772",
+        "12294"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\유혈-분쇄-필사의일격.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-warbreaker-sweeping-strikes": {
       "id": "warrior-arms-warbreaker-sweeping-strikes",
       "name": "전쟁파괴자-회전베기-부수적인-피해",
@@ -19974,6 +20040,35 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전투의-해일-제압-마무리.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_dreadnaught": {
+      "id": "warrior_arms_dreadnaught",
+      "name": "제압-일격무쌍-추가대상",
+      "type": "synergy",
+      "synergyType": "talent-mechanic",
+      "participants": [
+        "7384",
+        "262150"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\제압-일격무쌍-추가대상.md",
         "lastUpdate": ""
       }
     },
