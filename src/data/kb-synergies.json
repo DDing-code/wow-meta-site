@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:27:57.588Z",
+    "generatedAt": "2026-09-21T01:37:08.065Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13903,7 +13903,11 @@
         "381846",
         "2098",
         "315341",
-        "79096"
+        "79096",
+        "381845",
+        "383281",
+        "1259457",
+        "1259492"
       ],
       "class": "Rogue",
       "spec": "Outlaw",
@@ -13922,6 +13926,10 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/배포",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/숨겨진기회",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/틈새찾기",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/번뜩이는칼날",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/기회",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/속전속결",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/빠른사격"
@@ -14027,7 +14035,12 @@
         "13877",
         "271877",
         "51690",
-        "79096"
+        "79096",
+        "381989",
+        "256170",
+        "381839",
+        "1259481",
+        "395422"
       ],
       "class": "Rogue",
       "spec": "Outlaw",
@@ -14048,6 +14061,11 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/납주사위",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/날렵한손재주",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/용뼈주사위",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/도박의연속",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/아드레날린촉진연마",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/준비"
       ],
       "source": {

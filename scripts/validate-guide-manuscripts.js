@@ -91,8 +91,6 @@ const NON_ACTION_CHART_KEYS = new Set([
   'monk-brewmaster:115069',
   'monk-brewmaster:450508',
   'monk-brewmaster:450615',
-  'rogue-outlaw:381989',
-  'rogue-outlaw:1277933',
   'rogue-subtlety:1268932',
   'priest-holy:114255',
   'priest-holy:390992',

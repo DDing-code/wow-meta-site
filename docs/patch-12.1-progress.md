@@ -1,5 +1,13 @@
 # 12.1 update status
 
+### Outlaw remaining local talent effects, 2026-09-21
+
+- Manually reviewed 30 more local records against Korean/English tooltips and fixed 12.1 SimulationCraft trait rows. Coverage is now 52 records and four relationships; shared skills, heroes, tier sets and the full manuscript still require work.
+- Keep It Rolling is an active six-minute cooldown extending the current Roll the Bones result by 30 seconds. Removed it and Preparation from the manuscript validator's incorrect passive-node blacklist.
+- Distinguished Loaded Dice's next-roll upgrade from Sleight of Hand's probability modifier and Dragon-Bone Dice's stronger bonuses. Added Improved Adrenaline Rush's immediate combo-point refill to the cooldown relationship.
+- Added Audacity/Hidden Opportunity's return from Pistol Shot to Ambush, and rank-aware Ace Up Your Sleeve, Heavy Hitter and Summarily Dispatched descriptions. Hidden Opportunity's 100% refers to Sinister Strike's proc chance, not a guaranteed proc.
+- Recorded mutually exclusive utility/generator choices. Mastery tooltip damage coefficient remains unverified and is not used as a damage formula. This batch does not claim fresh log/build validation or a production guide deployment.
+
 ### Outlaw generator and cleave audit, 2026-09-21
 
 - Added ten manually reviewed records and two rewritten relationships. Reviewed coverage is now 22 records and four relationships, not the whole specialization.

@@ -4,7 +4,11 @@ const { synergies } = require('../src/data/kb-synergies.json');
 
 const reviewed = ['315508', '315341', '51690', '13750', '2098', '79096',
   '1259480', '1277933', '1265861', '1265862', '1265863', '1256630',
-  '193315', '185763', '13877', '271877', '279876', '381846', '196938', '381878', '272026', '1259469'];
+  '193315', '185763', '13877', '271877', '279876', '381846', '196938', '381878', '272026', '1259469',
+  '381989', '256170', '1259481', '14161', '235484', '381828', '381839', '381845',
+  '381885', '381990', '383281', '394321', '395422', '428377', '1259457', '1259485',
+  '1259492', '1259498', '1259499', '1259612', '35551', '61329', '76806', '195457',
+  '196922', '256165', '256188', '381619', '381877', '1259465'];
 for (const id of reviewed) {
   assert.equal(skills[id]?.patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Outlaw'], id);
@@ -37,6 +41,22 @@ assert.match(skills['381846'].description, /1등급.*최대 2등급/);
 assert.match(skills['381878'].description, /최초.*기본 비용 15가 45/);
 assert.match(skills['272026'].description, /10초.*13초/);
 assert.match(skills['1259469'].description, /28%.*36%/);
+assert.equal(skills['381989'].castTime, '즉시');
+assert.equal(skills['381989'].cooldown, '기본 6분');
+assert.match(skills['381989'].description, /남은 지속시간을 30초.*직접 사용/);
+assert.match(skills['256170'].description, /다음 뼈주사위.*1단계/);
+assert.match(skills['381828'].description, /4점.*1등급.*3%.*2등급/);
+assert.match(skills['381990'].description, /1등급.*15%.*3.*2등급.*50%/);
+assert.match(skills['383281'].description, /100%.*같다는 뜻.*확정 발동.*아니다/);
+assert.match(skills['395422'].description, /얻을 때.*최대치/);
+assert.match(skills['1259612'].description, /15점.*4초.*200%.*5초.*다시 연계 점수를 소비/);
+assert.equal(skills['76806'].type, 'passive');
+assert.equal(skills['195457'].range, '40미터');
+assert.equal(skills['195457'].cooldown, '기본 45초');
+assert.match(skills['256188'].description, /45초.*30초/);
+assert.match(skills['1259465'].description, /15초.*19초/);
+const manuscriptValidator = require('node:fs').readFileSync(require('node:path').join(__dirname, 'validate-guide-manuscripts.js'), 'utf8');
+for (const id of ['381989', '1277933']) assert.ok(!manuscriptValidator.includes(`'rogue-outlaw:${id}'`), `Active talent ${id} must not be blacklisted as a passive chart node`);
 assert.match(synergies.rogue_outlaw_generator_proc_loop.description, /권총 사격 자체가 아니라.*마무리 일격/);
 for (const id of ['rogue_outlaw_adrenaline_finishers', 'rogue_outlaw_roll_preparation_reset',
   'rogue_outlaw_generator_proc_loop', 'rogue_outlaw_blade_flurry_cleave']) {
@@ -45,4 +65,4 @@ for (const id of ['rogue_outlaw_adrenaline_finishers', 'rogue_outlaw_roll_prepar
   assert.ok(synergies[id].description.length > 60, id);
   for (const spell of synergies[id].participants) assert.ok(skills[spell]?.specs.includes('Outlaw'), spell);
 }
-console.log('Outlaw reviewed subset: 22 records and 4 relationships passed; full guide audit remains pending');
+console.log(`Outlaw reviewed subset: ${reviewed.length} records and 4 relationships passed; full guide audit remains pending`);

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:27:57.586Z",
+    "generatedAt": "2026-09-21T01:37:08.064Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,12 +13,12 @@
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 560,
+        "atomic-skill": 559,
         "proc": 29,
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 65,
+        "passive": 66,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2903,
-        "withSynergies": 1882,
+        "withSynergies": 1912,
         "avgLinkDensity": "0.040"
       }
     }
@@ -7272,14 +7272,14 @@
       "icon": "ability_druid_disembowel",
       "iconName": "ability_druid_disembowel",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무정함 (Ruthlessness)",
+      "description": "마무리 일격에서 소비한 연계 점수 1점당 20%의 확률로 연계 점수 1점을 얻는 지속 특성이다. 소비 점수가 높으면 발동 확률이 높아지는 것이지 소비한 점수를 그대로 모두 돌려받는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7291,14 +7291,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_disembowel.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -10901,14 +10904,14 @@
       "icon": "ability_rogue_unfairadvantage",
       "iconName": "ability_rogue_unfairadvantage",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치명적인 장식 (Fatal Flourish)",
+      "description": "보조 무기 공격과 권총 사격이 25%의 확률로 기력 8을 생성하는 지속 특성이다. 매번 기력을 돌려주는 것이 아니며 주무기의 모든 공격이 동일한 조건으로 직접 발동시킨다는 뜻도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10920,13 +10923,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_unfairadvantage.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/특화양손잡이",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/권총사격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
+        "synergyCount": 2,
         "linkDensity": 0.028,
         "hasWikilinks": true
       },
@@ -14991,14 +14997,14 @@
       "icon": "inv_weapon_shortblade_38",
       "iconName": "inv_weapon_shortblade_38",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전투 능력 (Combat Potency)",
+      "description": "기력의 지속 회복 속도를 16% 높이는 특성이다. 별도 버튼을 눌러 즉시 기력을 채우거나 최대 기력을 16 늘리는 효과가 아니며 공격 속도를 직접 16% 올리는 효과와도 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15010,13 +15016,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_shortblade_38.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/치명적인장식"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
+        "synergyCount": 2,
         "linkDensity": 0.028,
         "hasWikilinks": true
       },
@@ -15699,7 +15709,7 @@
     },
     "76806": {
       "id": "76806",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Rogue",
       "spec": "무법",
       "specs": [
@@ -15711,14 +15721,14 @@
       "icon": "inv_weapon_shortblade_15",
       "iconName": "inv_weapon_shortblade_15",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 특화: 양손잡이 (Mastery: Main Gauche)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "주무기 공격이 확률적으로 보조 무기 추가 공격을 일으켜 물리 피해를 주는 지속 특화다. 기본 툴팁은 발동 확률 30%를 표시하지만 장비의 특화가 반영된 캐릭터의 최종 수치로 고정하지 않는다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15731,13 +15741,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/치명적인장식",
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/전투능력"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.033,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -28502,14 +28515,14 @@
       "icon": "ability_rogue_grapplinghook",
       "iconName": "ability_rogue_grapplinghook",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 갈고리 던지기 (Grappling Hook)",
+      "cooldown": "기본 45초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "40미터",
+      "description": "최대 40미터 안의 지정 위치로 갈고리를 던져 이동하는 즉시 사용 기술이다. 기본 쿨다운은 45초이며 적에게 피해를 주거나 연계 점수를 생성하는 공격 버튼으로 분류하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28521,14 +28534,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_grapplinghook.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/신축성갈고리"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -29490,14 +29507,14 @@
       "icon": "ability_rogue_fleetfooted",
       "iconName": "ability_rogue_fleetfooted",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치고 빠지기 (Hit and Run)",
+      "description": "이동 속도를 15% 높이는 지속 특성이다. 별도 질주 버튼이나 순간 이동 효과가 아니며 공격 속도나 기력 회복 속도를 직접 15% 올리는 효과로 해석하면 안 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29509,14 +29526,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_fleetfooted.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/갈고리던지기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/전투체력"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -37161,14 +37182,14 @@
       "icon": "ability_rogue_rollthebones01",
       "iconName": "ability_rogue_rollthebones01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 미간 적중 연마 (Improved Between the Eyes)",
+      "description": "미간 적중의 치명타 피해를 일반 적중 피해의 2.5배로 만드는 지속 특성이다. 미간 적중의 치명타 확률을 2.5배로 높이거나 모든 공격의 치명타 피해를 바꾸는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37180,14 +37201,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_rollthebones01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/영점조정"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -38061,14 +38086,14 @@
       "icon": "inv_misc_ammo_gunpowder_06",
       "iconName": "inv_misc_ammo_gunpowder_06",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 실명 가루 (Blinding Powder)",
+      "description": "실명의 쿨다운을 25% 줄이고 사거리를 5미터 늘리는 지속 특성이다. 범위라는 한국어 표현을 광역 반경 증가로 단정하지 않으며 영어 툴팁의 range에 따라 사거리 증가로 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38081,13 +38106,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/신축성갈고리"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -38109,14 +38136,14 @@
       "icon": "ability_rogue_rollthebones",
       "iconName": "ability_rogue_rollthebones",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 납 주사위 (Loaded Dice)",
+      "description": "아드레날린 촉진을 활성화하면 다음 뼈주사위 결과가 1단계 높아진다. 지금 유지 중인 뼈주사위를 즉시 승급시키는 효과가 아니라 다음 사용에 적용되는 지속 특성이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38128,14 +38155,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_rollthebones.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -38157,14 +38187,14 @@
       "icon": "ability_rogue_grapplinghook",
       "iconName": "ability_rogue_grapplinghook",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신축성 갈고리 (Retractable Hook)",
+      "description": "갈고리 던지기의 쿨다운을 15초 줄이는 지속 특성이다. 기본 45초에 이 특성만 적용하면 30초이며, 이동 거리나 사용 횟수를 늘리는 효과로 설명하면 안 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38176,14 +38206,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_grapplinghook.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/갈고리던지기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/실명가루"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -54610,14 +54644,14 @@
       "icon": "ability_rogue_versatility",
       "iconName": "ability_rogue_versatility",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 도둑의 유연성 (Thief's Versatility)",
+      "description": "유연성을 3% 높이는 지속 특성이다. 즉시 사용하는 피해 감소 기술이 아니며 최대 생명력이나 기력 상한을 3% 높이는 효과와 구분한다. 별도 발동을 기다리는 조건도 툴팁에 없다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54630,13 +54664,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/번뜩이는칼날"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -56042,14 +56078,14 @@
       "icon": "inv_inscription_darkmooncard_putrescence",
       "iconName": "inv_inscription_darkmooncard_putrescence",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비장의 일격 (Ace Up Your Sleeve)",
+      "description": "미간 적중에서 소비한 연계 점수당 확률로 연계 점수 4점을 얻고 미간 적중의 쿨다운을 초기화한다. 1등급 툴팁의 확률은 점수당 3%이며 최대 2등급 특성이므로 이 수치를 모든 빌드의 최종 확률로 고정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56061,14 +56097,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_inscription_darkmooncard_putrescence.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/도굴꾼-1265863"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -56090,14 +56130,14 @@
       "icon": "inv_misc_dice_02",
       "iconName": "inv_misc_dice_02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날렵한 손재주 (Sleight of Hand)",
+      "description": "뼈주사위에서 더 강한 결과를 얻을 확률을 20% 높이는 지속 특성이다. 다음 결과의 단계를 확정적으로 1단계 올리거나, 매번 최고 단계를 보장하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56109,14 +56149,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_dice_02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/납주사위"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -56138,14 +56182,14 @@
       "icon": "ability_rogue_ambush",
       "iconName": "ability_rogue_ambush",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 배포 (Audacity)",
+      "description": "기회가 부여된 권총 사격을 사용하면 확률적으로 다음 매복을 은신 없이 사용할 수 있다. 발동 확률은 사악한 일격의 기회 부여 확률과 같으며 기본 툴팁은 30%를 표시한다. 매복 피해도 80% 증가한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56157,14 +56201,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ambush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/권총사격",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/숨겨진기회"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -56284,14 +56333,14 @@
       "icon": "ability_rogue_imrovedrecuperate",
       "iconName": "ability_rogue_imrovedrecuperate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전투 체력 (Combat Stamina)",
+      "description": "체력을 5% 높이는 지속 특성이다. 한·영 툴팁의 5 곱하기 1 표기를 1등급 수치로 풀어 썼으며 고정 12.1 특성 데이터의 최대 등급도 1이다. 피해를 직접 5% 줄이는 생존기는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56304,13 +56353,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/치고빠지기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -56380,14 +56431,14 @@
       "icon": "spell_shadow_ritualofsacrifice",
       "iconName": "spell_shadow_ritualofsacrifice",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 묵직한 강타 (Heavy Hitter)",
+      "description": "연계 점수를 생성하는 공격의 피해를 높이는 지속 특성이다. 1등급 툴팁은 15% 증가를 표시하며 최대 2등급 특성이다. 연계 점수 생성량 자체를 늘리거나 모든 마무리 일격을 강화하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56399,14 +56450,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_ritualofsacrifice.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/권총사격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -56672,14 +56726,14 @@
       "icon": "ability_rogue_keepitrolling",
       "iconName": "ability_rogue_keepitrolling",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "기본 6분",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 도박의 연속 (Keep It Rolling)",
+      "description": "활성화된 뼈주사위 강화 효과의 남은 지속시간을 30초 늘리는 직접 사용 특성이다. 기본 재사용 대기시간은 6분이며, 새로운 결과를 굴리거나 현재 단계를 올리는 기술은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56691,14 +56745,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_keepitrolling.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -56720,14 +56777,14 @@
       "icon": "ability_rogue_waylay",
       "iconName": "ability_rogue_waylay",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 간략한 속결 (Summarily Dispatched)",
+      "description": "속결 피해를 높이고 기력 비용을 줄인다. 1등급은 피해 15% 증가와 비용 3 감소이며 최대 2등급이다. 미간 적중의 피해 강화 효과가 유지되는 동안 이 특성의 피해 보너스가 50% 더 커진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56739,14 +56796,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_waylay.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "synergyCount": 2,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -60005,14 +60065,14 @@
       "icon": "ability_rogue_ambush",
       "iconName": "ability_rogue_ambush",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 숨겨진 기회 (Hidden Opportunity)",
+      "description": "매복이 사악한 일격과 같은 확률로 기회를 부여하도록 하고 매복의 기력 비용을 5 줄이는 지속 특성이다. 툴팁의 100%는 사악한 일격의 발동 확률과 같다는 뜻이지 매복마다 기회가 확정 발동한다는 뜻이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -60024,14 +60084,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ambush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/기회",
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/배포"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -74947,14 +75012,14 @@
       "icon": "archaeology_5_0_changkiboard",
       "iconName": "archaeology_5_0_changkiboard",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 사악한 책략 (Devious Stratagem)",
+      "description": "최대 연계 점수를 1 늘리고 마무리 일격 피해를 5% 높인다. 5점을 초과해 소비하는 마무리 일격은 추가 점수에 따른 효과를 받는다. 이 특성 하나가 모든 빌드의 최대 연계 점수를 7점으로 고정하는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74966,14 +75031,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/archaeology_5_0_changkiboard.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -75313,14 +75381,14 @@
       "icon": "spell_shadow_shadowworddominate",
       "iconName": "spell_shadow_shadowworddominate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 아드레날린 촉진 연마 (Improved Adrenaline Rush)",
+      "description": "아드레날린 촉진을 얻을 때 연계 점수를 최대치까지 채우는 지속 특성이다. 기력을 최대치까지 채우는 효과와 다르며, 이미 가진 점수 위에 최대 점수만큼 더 쌓아 상한을 넘기는 효과도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75332,14 +75400,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowworddominate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/광기의학살자"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -82115,14 +82186,14 @@
       "icon": "inv_legendary_gun",
       "iconName": "inv_legendary_gun",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정밀 사격 (Precision Shot)",
+      "description": "미간 적중과 권총 사격의 사거리를 10미터 늘리고 피해를 20% 높이는 지속 특성이다. 두 기술의 기본 사거리 20미터에 이 특성만 더하면 30미터이며 모든 근접 기술의 사거리가 늘어나는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82134,14 +82205,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_legendary_gun.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/권총사격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -129466,14 +129540,14 @@
       "icon": "ability_rogue_pistolshot",
       "iconName": "ability_rogue_pistolshot",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 틈새 찾기 (Find an Opening)",
+      "description": "사악한 일격이 두 번 공격하고 기회를 부여할 확률을 10% 높이는 지속 특성이다. 권총 사격 자체의 피해나 기회 한 중첩이 주는 피해 보너스를 10% 높이는 효과와는 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129485,14 +129559,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_pistolshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/기회",
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/배포"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -129514,14 +129593,14 @@
       "icon": "spell_shadow_unholyfrenzy",
       "iconName": "spell_shadow_unholyfrenzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고양된 질주 (Heightened Rush)",
+      "description": "아드레날린 촉진의 지속시간을 4초 늘리는 지속 특성이다. 기본 15초에 이 특성만 적용하면 19초이며, 기력 회복 속도나 최대 연계 점수를 추가로 높이는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129533,14 +129612,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_unholyfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/위협적인돌진"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -129706,14 +129789,14 @@
       "icon": "ability_rogue_rollthebones",
       "iconName": "ability_rogue_rollthebones",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 용뼈 주사위 (Dragon-Bone Dice)",
+      "description": "뼈주사위가 주는 보너스를 강화한다. 사악한 일격 추가 공격 확률 보너스는 5%, 사악한 일격·매복 피해 보너스는 5%, 잠들지 않는 칼날 쿨다운 감소 보너스는 10%, 횡재의 치명타 확률 보너스는 5% 더 강해진다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129725,14 +129808,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_rollthebones.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -129754,14 +129840,14 @@
       "icon": "ability_hisek_aim",
       "iconName": "ability_hisek_aim",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영점 조정 (Zero In)",
+      "description": "자동 공격이 치명타로 적중하면 다음 미간 적중의 피해와 치명타 확률이 각각 2% 증가하며 최대 20중첩까지 쌓인다. 모든 기술의 치명타가 중첩을 주거나 강화가 모든 공격에 적용되는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129773,14 +129859,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hisek_aim.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/미간적중연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -129802,14 +129892,14 @@
       "icon": "inv_1115_warrior_fastermeleeattacks",
       "iconName": "inv_1115_warrior_fastermeleeattacks",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번뜩이는 칼날 (Flickering Steel)",
+      "description": "사악한 일격과 매복의 피해를 20% 높이고, 두 기술이 기회를 부여할 때 기력 5를 생성한다. 기회 발동 없이 단순히 버튼을 사용할 때마다 기력을 돌려주는 지속 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129821,14 +129911,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fastermeleeattacks.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Talents/기회"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -129850,14 +129945,14 @@
       "icon": "inv_weapon_rifle_01",
       "iconName": "inv_weapon_rifle_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전문 결투사 (Expert Duelist)",
+      "description": "미간 적중이 부여하는 피해 증가 보너스를 추가로 2% 높이는 지속 특성이다. 미간 적중 한 발의 직접 피해만 2% 높이거나 치명타 확률을 2% 높이는 효과로 설명하면 안 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129869,13 +129964,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
+        "synergyCount": 2,
         "linkDensity": 0.028,
         "hasWikilinks": true
       },
@@ -129898,14 +129996,14 @@
       "icon": "ability_rogue_dirtydeeds",
       "iconName": "ability_rogue_dirtydeeds",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고조되는 폭력 (Crescendo of Violence)",
+      "description": "마무리 일격의 피해를 10% 높이는 지속 특성이다. 생성기의 연계 점수 생산량, 기력 회복량이나 잠들지 않는 칼날의 점수당 쿨다운 감소량을 10% 높이는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129917,14 +130015,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_dirtydeeds.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/광기의학살자"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -129946,14 +130048,14 @@
       "icon": "ability_rogue_murderspree",
       "iconName": "ability_rogue_murderspree",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 살수의 추격 (Deadly Pursuit)",
+      "description": "연계 점수 15점을 소비한 뒤 4초 동안 연계 점수를 쓰지 않으면, 잠들지 않는 칼날의 영향을 받는 기술의 쿨다운 회복 속도가 200% 빨라진다. 효과는 5초 동안 또는 다시 연계 점수를 소비할 때까지 유지된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129965,14 +130067,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_murderspree.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
