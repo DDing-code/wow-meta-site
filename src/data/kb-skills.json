@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:14:45.174Z",
+    "generatedAt": "2026-09-21T04:17:07.863Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1964,
+        "withSynergies": 1967,
         "avgLinkDensity": "0.039"
       }
     }
@@ -4696,14 +4696,14 @@
       "icon": "ability_rogue_sprint",
       "iconName": "ability_rogue_sprint",
       "school": "",
-      "cooldown": "1분",
+      "cooldown": "기본 2분",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 전력 질주 (Sprint)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "8초 동안 이동 속도가 70% 증가하는 즉시 사용 이동기다. 기본 쿨다운은 2분이며 은신 중에도 사용할 수 있다. 전력 질주 연마를 선택하면 쿨다운이 60초 줄고, 깃털발을 선택하면 추가 이동 속도 30%와 지속 시간 4초 증가가 적용된다. 기본값과 특성 보정을 분리한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4722,7 +4722,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.037,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -36595,14 +36595,14 @@
       "icon": "ability_rogue_sprint",
       "iconName": "ability_rogue_sprint",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전력 질주 연마 (Improved Sprint)",
+      "description": "전력 질주의 쿨다운을 60초 줄이는 지속 특성이다. 기본 2분인 전력 질주는 이 특성만 적용하면 1분이 된다. 기본 기술을 처음부터 1분으로 기록한 뒤 다시 60초를 빼면 안 된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36614,14 +36614,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/전력질주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -76372,14 +76374,14 @@
       "icon": "ability_rogue_trip",
       "iconName": "ability_rogue_trip",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불굴의 걸음 (Unbreakable Stride)",
+      "description": "이동 속도 감소 효과의 지속 시간을 30% 줄이는 지속 특성이다. 감속의 강도를 30% 줄이거나 감속을 즉시 해제하는 효과가 아니다. 이동 불가·기절 등 모든 제어 효과의 지속 시간을 줄인다고 확대하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76391,14 +76393,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_trip.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/전력질주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -81376,14 +81380,14 @@
       "icon": "spell_magic_featherfall",
       "iconName": "spell_magic_featherfall",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깃털발 (Featherfoot)",
+      "description": "전력 질주의 이동 속도 증가량을 추가로 30% 높이고 지속 시간을 4초 늘리는 지속 특성이다. 기본 전력 질주의 8초에 적용하면 지속 시간은 12초가 된다. 이름과 달리 낙하 속도나 낙하 피해를 줄이는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81395,14 +81399,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_magic_featherfall.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/전력질주"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {

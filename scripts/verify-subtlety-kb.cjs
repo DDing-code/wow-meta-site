@@ -204,12 +204,17 @@ for (const [id, effect] of Object.entries({
   '108208': /잠행 2초.*암살 3초.*무법.*표시되지/,
   '423662': /은폐의 장막.*50%.*그림자 망토.*소멸.*아니다/,
   '423647': /교란.*충전.*1회.*2회.*은신.*아니다/,
+  '400804': /지속 시간.*30%.*감속의 강도.*아니다/,
+  '423683': /전력 질주.*30%.*4초.*12초.*낙하.*아니다/,
+  '231691': /60초.*기본 2분.*1분/,
 })) {
   assert.match(skills[id]?.description || '', effect, id);
   assert.equal(skills[id].patch, '12.1', id);
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+assert.equal(skills['2983'].cooldown, '기본 2분');
+assert.match(skills['2983'].description, /8초.*70%.*은신.*60초.*4초/);
 assert.match(skills['108208'].description, /최대 2등급.*최종 지속 시간.*단정하지/);
 assert.ok(skills['108208'].specs.includes('Outlaw'));
 assert.equal(commonDefense.patch, '12.1');

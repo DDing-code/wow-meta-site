@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue movement base versus talent modifiers, 2026-09-21
+
+- Live Korean/English tooltips confirm Sprint's base cooldown is two minutes, not the previously stored one-minute talented value. Improved Sprint subtracts 60 seconds; Featherfoot adds 30% movement speed and four seconds of duration. Unbreakable Stride reduces slow duration by 30%, not slow strength or all control effects.
+- Rewrote four canonical notes and synced their real descriptions to DB. Conditional water-walking text is not presented as a baseline guarantee. Added focused base/modifier assertions; this does not complete the remaining class-wide audit.
+
 ### Subterfuge scope and rank follow-up, 2026-09-21
 
 - Fixed SimC commit 774babde5ddc7c5fc9f1abb129b473f8a076df70 lists Subterfuge as a class-tree node with no specialization restriction and two maximum ranks; the field order was checked against trait_data.hpp. Its implementation selects effect 4 for Subtlety and effect 2 otherwise. Retained Outlaw scope and documented that basic tooltip durations are not a verified maximum-rank duration.
