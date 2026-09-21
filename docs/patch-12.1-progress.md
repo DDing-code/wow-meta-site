@@ -1,5 +1,13 @@
 # 12.1 update status
 
+### Subtlety remaining local talents, 2026-09-21
+
+- Manually rewrote 27 remaining local talents from Korean/English tooltips and fixed-SHA trait data. Corrected active Gloomblade, current Finality/Danse Macabre/Shadow Focus/The Rotten effects, two-rank Death Perception/Finality/Dark Shadow and five mutually exclusive choice pairs.
+- Resolved Improved Backstab's Gloomblade condition using the actual Gloomblade tooltip plus SimC impact implementation. Clarified Fade to Nothing's movement increase against ambiguous Korean wording. Replaced unrelated generic backlinks with actual effect links.
+- Rebuilt the Dance/builder relationship and added clone-damage and defensive-choice relationships. Focused checks cover 58 local records/nine relationships; the 58-note official name/icon online check passed without errors or warnings.
+- Cross-checked all 48 Subtlety specialization-tree records at SimC SHA 774babde5ddc7c5fc9f1abb129b473f8a076df70 against generated IDs/spec membership: zero missing. Prebuild passed; general offline validation still has 23 warnings.
+- Shared Deathstalker, Season 2 data, remaining common utility, subsequent live changes, build/log evidence and full manuscript remain unfinished. This is not a production rollout or a claim of complete Subtlety validation.
+
 ### Subtlety builders, finishers and support effects, 2026-09-21
 
 - Manually checked 17 additional Korean/English tooltips, bringing local reviewed records to 31. Separated active Shuriken Storm 197835 from passive rank-2 1279401; corrected passive Shuriken Tornado, Premeditation and gradual Master of Shadows Energy.

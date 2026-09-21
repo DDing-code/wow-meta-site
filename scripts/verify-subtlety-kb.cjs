@@ -9,6 +9,43 @@ const reviewed = ['185313', '121471', '280719', '196912', '58423', '426594', '42
   '53', '185438', '196819', '319175', '76808', '197835', '1279401',
   '91023', '319949', '319951', '382511', '382512', '1265952', '1264764',
   '343160', '196976', '394320'];
+const supportEffects = {
+  '426555': /공격 속도를 25%.*모든 능력/,
+  '385722': /다음 표창 폭풍.*100%.*다음 한 번/,
+  '428387': /3명 이상.*3초.*30%/,
+  '382517': /암흑 피해를 8%.*옛 강화 버프.*0.5초/,
+  '193537': /15% 확률.*50%.*암흑/,
+  '382514': /8초.*이동 속도가 20% 증가.*피해가 10% 감소/,
+  '277953': /이동 속도를 8초.*50%.*기절.*아니다/,
+  '382506': /피해를 15%.*발동 확률.*5%/,
+  '382015': /다음 2회.*35%/,
+  '382503': /그림자 밟기.*20%.*사거리를 20%/,
+  '1281468': /그림자.*15%.*비열한 습격.*급소 가격.*50%/,
+  '382507': /아군 이동 속도를 100%.*벗어나도/,
+  '394930': /충전 횟수를 1회.*2회.*두 배.*아니다/,
+  '257505': /다음 비열한 습격.*자원을 소모하지.*재사용 대기시간을 무시/,
+  '382515': /소멸.*6초.*18%/,
+  '108209': /피해를 10%.*옛 기력 비용 감소.*설명하지/,
+  '200758': /기습을 대체.*기력 40.*암흑.*1점.*치명타.*10초/,
+  '382504': /확률을 10%.*자연에서 암흑.*암흑 피해를 10%/,
+  '382017': /마법 피해를 5%.*물리.*아니다/,
+  '382525': /1등급.*치명타 피해.*15%.*최대 2등급/,
+  '382528': /서로 다른 공격.*추가 암흑.*반복.*아니다.*0.5초/,
+  '469642': /1등급.*약점 포착.*어둠의 춤.*어둠의 칼날.*5%.*최대 2등급/,
+  '245687': /1등급.*5%.*추가 5%.*최대 2등급/,
+  '426563': /받는 치유.*8%.*피해 감소.*다른/,
+  '382508': /치명타 피해 증가량을 10%.*확률.*아니다/,
+  '382518': /약점 포착.*표창 폭풍.*그림자 일격.*10%/,
+  '428486': /피해의 5%.*가득.*최대 생명력의 10%/,
+};
+reviewed.push(...Object.keys(supportEffects));
+for (const [id, effect] of Object.entries(supportEffects)) {
+  assert.match(skills[id]?.description || '', effect, id);
+  assert.equal(skills[id].castTime, id === '200758' ? '즉시' : '지속 효과', id);
+  assert.equal(skills[id].type, 'talent', id);
+}
+assert.equal(skills['200758'].resourceCost, '기력 40');
+assert.equal(skills['200758'].range, '근접');
 for (const id of reviewed) {
   assert.equal(skills[id]?.patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Subtlety'], id);
@@ -75,7 +112,8 @@ assert.doesNotMatch(manuscript, /skillId:\s*['"]1279401['"]/);
 for (const id of ['rogue_subtlety_secret_technique_ancient_arts',
   'rogue_subtlety_shadowblades_dance', 'rogue_subtlety_goremaw_finishers',
   'rogue_subtlety_shuriken_blackpowder', 'rogue_subtlety_slice_shadowblades_resource',
-  'rogue_subtlety_eviscerate_mastery_finisher']) {
+  'rogue_subtlety_eviscerate_mastery_finisher', 'rogue_subtlety_shadowdance_shadowstrike',
+  'rogue_subtlety_shadow_clones', 'rogue_subtlety_defensive_choices']) {
   const relation = synergies[id];
   assert.equal(relation?.patch, '12.1', id);
   assert.equal(relation.spec, 'Subtlety', id);
@@ -87,4 +125,4 @@ assert.ok(synergies.rogue_subtlety_slice_shadowblades_resource.participants.incl
 for (const relation of Object.values(synergies)) {
   assert.ok(!relation.participants.includes('5171'), relation.id);
 }
-console.log('Subtlety core: 31 records and six relationships passed; obsolete Slice and Dice excluded. Remaining talents, hero/season data and full manuscript review are not covered.');
+console.log('Subtlety local data: 58 records and nine relationships passed; obsolete Slice and Dice excluded. Shared hero/season data, common utility and full manuscript review are not covered.');

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:01:33.359Z",
+    "generatedAt": "2026-09-21T03:12:05.353Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 568,
-    "rawTotalSynergies": 568,
+    "totalSynergies": 570,
+    "rawTotalSynergies": 570,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -163,8 +163,10 @@
       "aoe_bleed_spread": 1,
       "mplus_survival_utility": 1,
       "resource_cooldown_router": 1,
+      "proc_damage": 1,
       "stealth_window_builder": 1,
       "apex_finisher_setup": 1,
+      "defensive_layering": 1,
       "finisher_mastery_router": 1,
       "aoe_builder_finisher": 1,
       "damage_amplification": 1,
@@ -249,7 +251,7 @@
       "Paladin": 45,
       "성기사": 10,
       "Priest": 52,
-      "Rogue": 39,
+      "Rogue": 41,
       "Shaman": 34,
       "Warlock": 60,
       "Warrior": 38
@@ -14786,41 +14788,86 @@
         "lastUpdate": ""
       }
     },
+    "rogue_subtlety_shadow_clones": {
+      "id": "rogue_subtlety_shadow_clones",
+      "name": "생성기·제어 기술과 복제된 그림자",
+      "description": "무기의 달인은 기습·어둠칼날·그림자 일격에서, 표창 회오리는 표창 폭풍에서 확률로 암흑 복제 공격을 만든다. 복제의 그림자는 복제 피해와 확률 발동을 보강한다. 암영의 칼날은 복제 피해를 높이면서 비열한 습격·급소 가격을 그림자 공격과 연결한다. 복제 피해가 플레이어의 두 번째 자원 소비를 의미하지는 않는다.",
+      "type": "synergy",
+      "synergyType": "proc_damage",
+      "participants": [
+        "193537",
+        "1264764",
+        "382506",
+        "1281468",
+        "53",
+        "200758",
+        "185438",
+        "197835",
+        "1833",
+        "408"
+      ],
+      "class": "Rogue",
+      "spec": "Subtlety",
+      "specs": [
+        "Subtlety"
+      ],
+      "heroTalent": null,
+      "importance": 85,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/비열한습격",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/급소가격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/무기의달인",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/표창회오리",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/복제의그림자",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/암영의칼날"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\복제된그림자-생성기-제어연결.md",
+        "lastUpdate": ""
+      }
+    },
     "rogue_subtlety_shadowdance_shadowstrike": {
       "id": "rogue_subtlety_shadowdance_shadowstrike",
-      "name": "어둠의춤-그림자일격",
+      "name": "어둠의 춤과 생성기 강화",
+      "description": "어둠의 춤은 은신 능력을 전투 중 사용할 수 있게 하고 선택한 특성의 피해 보정을 활성화한다. 부패자는 다음 생성기 두 번을, 고요한 폭풍은 다음 표창 폭풍의 치명타를 보강한다. 죽음의 무도는 한 춤에서 서로 다른 점수 생성·소비 공격에 추가 암흑 피해를 주며 반복 사용마다 새 보상을 주지는 않는다.",
       "type": "synergy",
       "synergyType": "stealth_window_builder",
       "participants": [
         "185313",
         "185438",
-        "280719",
-        "196819",
-        "91023",
+        "197835",
         "108209",
-        "196976",
-        "185314",
-        "382505"
+        "245687",
+        "382015",
+        "385722",
+        "382528",
+        "394930",
+        "196976"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
       "importance": 96,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠의집중"
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠의집중",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/짙은어둠",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/부패자",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/고요한폭풍",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/죽음의무도",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/양면의춤"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\어둠의춤-그림자일격.md",
@@ -14902,6 +14949,50 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\은밀한기술-고대의기술.md",
+        "lastUpdate": ""
+      }
+    },
+    "rogue_subtlety_defensive_choices": {
+      "id": "rogue_subtlety_defensive_choices",
+      "name": "은신·춤과 생존 특성의 선택",
+      "description": "어둠의 은신은 소멸에 보호막을, 무로의 소실은 은신·소멸·춤 뒤 이동 증가와 피해 감소를 제공하는 선택 관계다. 환희에 찬 처형은 마무리 일격의 자가 치유·흡수이며 어둠 속 습격과 선택한다. 찰나의 유대와 신속한 판단력, 밤의 공포와 공포를 부르는 쾌속도 각각 같은 선택 노드이므로 모두 동시에 가진 것으로 계산하지 않는다.",
+      "type": "synergy",
+      "synergyType": "defensive_layering",
+      "participants": [
+        "1856",
+        "185313",
+        "382515",
+        "382514",
+        "428486",
+        "257505",
+        "426563",
+        "382503",
+        "277953",
+        "428387",
+        "197835"
+      ],
+      "class": "Rogue",
+      "spec": "Subtlety",
+      "specs": [
+        "Subtlety"
+      ],
+      "heroTalent": null,
+      "importance": 72,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠의은신",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/무로의소실",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/환희에찬처형",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠속습격",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/찰나의유대",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/신속한판단력",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/밤의공포",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/공포를부르는쾌속"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\은신-춤-자가생존-선택특성.md",
         "lastUpdate": ""
       }
     },

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:01:33.358Z",
+    "generatedAt": "2026-09-21T03:12:05.352Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2979,
     "rawTotalSkills": 2979,
     "duplicateIds": [],
-    "totalSynergies": 568,
+    "totalSynergies": 570,
     "stats": {
       "total": 2979,
       "byType": {
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2904,
-        "withSynergies": 1929,
+        "withSynergies": 1956,
         "avgLinkDensity": "0.040"
       }
     }
@@ -18833,14 +18833,14 @@
       "icon": "rogue_shadowfocus",
       "iconName": "rogue_shadowfocus",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 집중 (Shadow Focus)",
+      "description": "은신 또는 어둠의 춤이 활성화된 동안 능력 피해를 10% 높이는 지속 특성이다. 현재 효과를 옛 기력 비용 감소 특성으로 설명하지 않는다. 활성화된 강화 구간에서 실제로 공격해야 피해 증가를 활용할 수 있으며, 종료 뒤에도 계속 유지되는 상시 보정은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18852,14 +18852,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/rogue_shadowfocus.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/치밀한처형"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -27693,14 +27698,14 @@
       "icon": "ability_ironmaidens_bladerush",
       "iconName": "ability_ironmaidens_bladerush",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무기의 달인 (Weaponmaster)",
+      "description": "기습 또는 어둠칼날, 그림자 일격이 15% 확률로 복제된 그림자를 생성하는 지속 특성이다. 그림자는 해당 공격을 원래 피해의 50%에 해당하는 암흑 피해로 반복한다. 모든 공격을 무조건 두 번 적중시키는 효과나 표창 폭풍의 복제 발동 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -27712,14 +27717,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_bladerush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/복제의그림자",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/표창회오리"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -31258,14 +31270,14 @@
       "icon": "ability_ironmaidens_convulsiveshadows",
       "iconName": "ability_ironmaidens_convulsiveshadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 어둠칼날 (Gloomblade)",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "기력 40",
+      "range": "근접",
+      "description": "기습을 대체하는 기력 40의 즉시 사용 생성기다. 방어도를 우회하는 암흑 피해를 주고 기본 연계 점수 1점을 얻는다. 기습 연마를 선택하면 치명타 적중 시 약점 포착을 10초 동안 부여한다. 지속 특성으로만 분류하거나 기습과 별개의 추가 필수 버튼으로 놓지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31277,14 +31289,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_convulsiveshadows.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/기습연마",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/혈관관통"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -37696,14 +37714,14 @@
       "icon": "spell_warlock_demonsoul",
       "iconName": "spell_warlock_demonsoul",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 짙은 어둠 (Dark Shadow)",
+      "description": "1등급 기준 어둠의 춤이 모든 능력 피해를 5% 높이고, 그림자 일격과 표창 폭풍에는 추가 5% 피해 보정을 주는 지속 특성이다. 최대 2등급이므로 기본 툴팁 수치를 완성 빌드 수치로 고정하지 않는다. 춤의 지속시간을 늘리는 효과와도 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37715,14 +37733,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warlock_demonsoul.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/깊어지는어둠"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.051,
+        "synergyCount": 4,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -38308,14 +38332,14 @@
       "icon": "ability_cheapshot",
       "iconName": "ability_cheapshot",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠 속 습격 (Shot in the Dark)",
+      "description": "소멸 또는 어둠의 춤을 사용한 뒤 다음 비열한 습격이 자원을 소모하지 않고 재사용 대기시간을 무시하게 하는 지속 특성이다. 다음 한 번의 제어 기술을 보조하는 효과이며 모든 비열한 습격이 계속 무료가 되는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38327,14 +38351,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_cheapshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/비열한습격",
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/암영의칼날"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -42151,14 +42181,14 @@
       "icon": "spell_shadow_shadesofdarkness",
       "iconName": "spell_shadow_shadesofdarkness",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 밤의 공포 (Night Terrors)",
+      "description": "표창 폭풍이 적의 이동 속도를 8초 동안 50% 감소시키는 지속 특성이다. 적을 기절시키거나 주문 시전을 차단하는 효과는 아니다. 이동 속도 감소에 면역인 적에게도 똑같이 제어가 적용된다고 가정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42170,14 +42200,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/공포를부르는쾌속"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -43895,14 +43929,15 @@
           "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습"
         ],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날",
           "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 2,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -56804,14 +56839,14 @@
       "icon": "spell_shadow_nightofthedead",
       "iconName": "spell_shadow_nightofthedead",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 부패자 (The Rotten)",
+      "description": "어둠의 춤을 활성화한 뒤 연계 점수를 생성하는 다음 2회의 공격 피해를 35% 높이는 지속 특성이다. 이후 모든 생성기를 강화하는 것이 아니며, 점수를 소모하는 마무리 일격의 강화 횟수도 아니다. 추가 점수나 기력을 직접 준다고 해석하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56823,14 +56858,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_nightofthedead.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -56852,14 +56891,14 @@
       "icon": "spell_arcane_prismaticcloak",
       "iconName": "spell_arcane_prismaticcloak",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 장막에 물듦 (Veiltouched)",
+      "description": "능력으로 입히는 마법 피해를 5% 높이는 지속 특성이다. 모든 물리 피해까지 증가시키거나 마법 피해를 받는 양을 줄이는 효과는 아니다. 암흑 피해 생성기와 추가 암흑 피해 효과 등 실제 피해 속성을 확인해 적용 범위를 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -56872,13 +56911,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠혼합물",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠에물든마무리일격"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -57826,14 +57869,14 @@
       "icon": "inv_misc_hook_01",
       "iconName": "inv_misc_hook_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신속한 판단력 (Quick Decisions)",
+      "description": "그림자 밟기의 재사용 대기시간을 20% 줄이고 최대 사거리를 20% 늘리는 지속 특성이다. 그림자 일격의 공격 사거리나 어둠의 춤 쿨다운을 바꾸는 효과가 아니다. 근접 공격을 다시 시작할 위치를 잡는 이동 기술을 보강한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57845,14 +57888,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_hook_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자밟기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/찰나의유대"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.051,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -57874,14 +57921,14 @@
       "icon": "spell_nature_slowpoison",
       "iconName": "spell_nature_slowpoison",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠 혼합물 (Dark Brew)",
+      "description": "무기 독을 적용할 확률을 10% 높이고, 해당 독의 피해 속성을 자연에서 암흑으로 바꾸며, 암흑 피해를 10% 높이는 지속 특성이다. 모든 물리 공격을 암흑으로 바꾸거나 독 자체를 바르지 않아도 자동으로 무기에 독을 부여하는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57894,13 +57941,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/깊은단검",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/장막에물듦"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -57974,14 +58024,14 @@
       "icon": "spell_deathknight_strangulate",
       "iconName": "spell_deathknight_strangulate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 복제의 그림자 (Replicating Shadows)",
+      "description": "복제된 그림자의 피해를 15% 높이고, 확률로 그림자를 생성하는 효과의 발동 확률을 추가로 5% 높이는 지속 특성이다. 그림자를 만드는 모든 기술에 무조건 한 기를 추가하는 효과는 아니다. 발동 확률 보강과 복제 피해 증가를 따로 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57994,13 +58044,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/무기의달인",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/표창회오리",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/암영의칼날",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/고대의기술"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -58022,14 +58077,14 @@
       "icon": "ability_rogue_envelopingshadows",
       "iconName": "ability_rogue_envelopingshadows",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암흑의 장막 (Shrouded in Darkness)",
+      "description": "은폐의 장막이 아군 이동 속도를 100% 높이고, 아군이 장막 범위에서 벗어나도 효과가 취소되지 않게 하는 지속 특성이다. 자신의 공격 쿨다운이나 기력 공급을 강화하는 특성이 아니다. 범위 이탈로 취소되지 않는 것과 어떤 행동을 해도 은신이 유지되는 것은 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58041,14 +58096,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_envelopingshadows.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/은폐의장막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -58070,14 +58127,14 @@
       "icon": "ability_creature_cursed_02",
       "iconName": "ability_creature_cursed_02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치밀한 처형 (Planned Execution)",
+      "description": "어둠의 춤이 활성화된 동안 능력의 치명타 피해 증가량을 10% 높이는 지속 특성이다. 치명타가 발생할 확률을 10% 높이거나 모든 일반 적중의 피해를 일괄 10% 높이는 효과가 아니다. 춤 안에서 실제로 적중시킨 공격과 치명타 여부를 함께 봐야 한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58089,14 +58146,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_creature_cursed_02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/경고표지"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -58275,14 +58337,14 @@
       "icon": "ability_warlock_everlastingaffliction",
       "iconName": "ability_warlock_everlastingaffliction",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무로의 소실 (Fade to Nothing)",
+      "description": "은신, 소멸 또는 어둠의 춤 효과를 얻은 뒤 8초 동안 이동 속도가 20% 증가하고 받는 피해가 10% 감소하는 지속 특성이다. 한국어 툴팁의 이동 속도 감소로 읽힐 수 있는 문장은 영어의 increased와 대조해 증가로 설명한다. 두 수치를 모두 피해 감소로 합산하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58294,14 +58356,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_everlastingaffliction.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠의은신"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -58323,14 +58390,14 @@
       "icon": "inv_helm_cloth_shadowmoonclan_b_01",
       "iconName": "inv_helm_cloth_shadowmoonclan_b_01",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠의 은신 (Cloaked in Shadows)",
+      "description": "소멸 사용 시 6초 동안 최대 생명력의 18%에 해당하는 피해 흡수 보호막을 주는 지속 특성이다. 모든 은신 진입이나 어둠의 춤마다 같은 보호막이 생기는 것으로 확대하지 않는다. 피해 흡수는 면역이 아니며 보호막 한도를 넘는 피해에는 다른 대응이 필요하다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58342,14 +58409,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_cloth_shadowmoonclan_b_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/소멸"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/무로의소실"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.029,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -58371,14 +58442,14 @@
       "icon": "inv_weapon_shortblade_15",
       "iconName": "inv_weapon_shortblade_15",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "내부 재사용 대기시간 0.5초",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깊은 단검 (Deeper Daggers)",
+      "description": "암흑 피해를 8% 높이는 지속 특성이다. 특정 마무리 일격 뒤에만 짧게 적용되는 옛 강화 버프로 설명하지 않는다. 공개 툴팁에는 0.5초 내부 재사용 대기시간이 표시되지만, 플레이어가 반복해서 누르는 0.5초 사용 기술은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58391,13 +58462,17 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠에물든마무리일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠혼합물"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -58419,14 +58494,14 @@
       "icon": "ability_warrior_bloodfrenzy",
       "iconName": "ability_warrior_bloodfrenzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 혈관 관통 (Perforated Veins)",
+      "description": "약점 포착이 활성화된 동안 기습 또는 어둠칼날, 표창 폭풍, 그림자 일격의 피해가 10% 증가하는 지속 특성이다. 점수 생성기에 적용되는 피해 보정이며, 절개나 검은 화약의 추가 암흑 피해 효과와는 다르다. 연계 점수를 추가 생성하는 효과도 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58438,14 +58513,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodfrenzy.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -58519,14 +58600,14 @@
       "icon": "ability_rogue_eviscerate",
       "iconName": "ability_rogue_eviscerate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 종극 (Finality)",
+      "description": "1등급 기준 절개와 검은 화약의 치명타 피해 증가량을 15% 높이는 지속 특성이다. 다음 마무리 일격을 번갈아 강화하는 옛 효과가 아니며 치명타 확률 증가도 아니다. 최대 2등급 특성이므로 공개 기본 툴팁의 15%를 모든 빌드의 최종 수치로 고정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58538,14 +58619,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_eviscerate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/치밀한처형"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.067,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -58567,14 +58653,14 @@
       "icon": "ability_deathwing_bloodcorruption_death",
       "iconName": "ability_deathwing_bloodcorruption_death",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "내부 재사용 대기시간 0.5초",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음의 무도 (Danse Macabre)",
+      "description": "어둠의 춤 중 연계 점수를 생성하거나 소비하는 서로 다른 공격을 사용하면 추가 암흑 피해를 주는 지속 특성이다. 같은 춤에서 이미 사용한 공격을 반복할 때마다 새 보상을 받는 구조는 아니다. 옛 춤 피해 증가 중첩으로 설명하지 않으며, 공개 툴팁에는 0.5초 내부 재사용 대기시간이 표시된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58586,14 +58672,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathwing_bloodcorruption_death.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.058,
+        "synergyCount": 5,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -64062,14 +64154,14 @@
       "icon": "ability_rogue_shuriken-storm",
       "iconName": "ability_rogue_shuriken-storm",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고요한 폭풍 (Silent Storm)",
+      "description": "은신, 소멸 또는 어둠의 춤 효과를 얻으면 다음 표창 폭풍의 치명타 확률이 100% 증가하는 지속 특성이다. 모든 표창 폭풍을 계속 강화하는 것이 아니라 다음 한 번을 준비하는 효과다. 표창 폭풍 자체의 은신 피해 보너스와는 별도의 치명타 조건이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64081,14 +64173,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_shuriken-storm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/표창폭풍연마",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/사전계획"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -75110,14 +75207,14 @@
       "icon": "warrior_doubletime",
       "iconName": "warrior_doubletime",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 양면의 춤 (Double Dance)",
+      "description": "어둠의 춤의 최대 충전 횟수를 1회 늘리는 지속 특성이다. 기본 춤 1회에 이 특성을 선택하면 2회를 저장할 수 있다. 춤 하나의 지속시간을 두 배로 만들거나 한 번 누를 때 두 번의 춤이 자동으로 이어지는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75129,14 +75226,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_doubletime.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "synergyCount": 3,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -81729,14 +81830,14 @@
       "icon": "achievement_bg_kill_flag_carrier",
       "iconName": "achievement_bg_kill_flag_carrier",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 경고 표지 (Warning Signs)",
+      "description": "어둠의 춤이 활성화된 동안 공격 속도를 25% 높이는 지속 특성이다. 모든 능력의 시전 속도나 피해를 25% 높이는 효과로 확대하지 않는다. 자동 공격을 계속 이어갈 때 공격 빈도를 높이며 그림자 기술의 자동 공격 발동 기회와도 연결된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81748,14 +81849,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_bg_kill_flag_carrier.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자기술"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/치밀한처형"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -81777,14 +81883,14 @@
       "icon": "ability_warlock_soullink",
       "iconName": "ability_warlock_soullink",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찰나의 유대 (Ephemeral Bond)",
+      "description": "자신이 받는 치유 효과를 8% 높이는 지속 특성이다. 자신이 다른 사람에게 하는 치유나 피해량을 증가시키는 효과가 아니다. 최대 생명력 증가, 피해 감소, 흡수 보호막과도 다른 생존 보정이므로 각각을 구분해 이해한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81797,13 +81903,16 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/신속한판단력",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/환희에찬처형"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -82242,14 +82351,14 @@
       "icon": "ability_druid_typhoon",
       "iconName": "ability_druid_typhoon",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공포를 부르는 쾌속 (Terrifying Pace)",
+      "description": "표창 폭풍이 적 3명 이상에게 적중하면 3초 동안 자신의 이동 속도가 30% 증가하는 지속 특성이다. 두 대상 적중이나 시전만으로 항상 발동한다고 가정하지 않는다. 적의 이동 속도를 줄이는 밤의 공포와는 대상과 효과가 다르다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82261,14 +82370,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_typhoon.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/밤의공포"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -82342,14 +82455,14 @@
       "icon": "inv_weapon_hand_04",
       "iconName": "inv_weapon_hand_04",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 환희에 찬 처형 (Exhilarating Execution)",
+      "description": "마무리 일격으로 입힌 피해의 5%만큼 자신의 생명력을 회복하는 지속 특성이다. 생명력이 가득 차 있으면 대신 보호막을 얻으며, 흡수량은 최대 생명력의 10%까지다. 모든 마무리 일격마다 최대 생명력 10% 보호막이 새로 보장되는 효과로 해석하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -82361,13 +82474,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_hand_04.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠속습격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/찰나의유대"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
         "linkDensity": 0.041,
         "hasWikilinks": true
       },
@@ -111824,14 +111943,14 @@
       "icon": "spell_nzinsanity_shortsighted",
       "iconName": "spell_nzinsanity_shortsighted",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음 인식 (Death Perception)",
+      "description": "1등급 기준 약점 포착, 어둠의 춤, 어둠의 칼날이 각각 마무리 일격 피해를 5% 높이게 하는 지속 특성이다. 세 조건은 별도로 확인하며 하나만 활성화되어도 항상 세 효과가 모두 적용되는 것은 아니다. 최대 2등급 특성이므로 기본 5%를 완성 빌드 수치로 단정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111843,14 +111962,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_shortsighted.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/약점포착"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.041,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -148296,14 +148422,14 @@
       "icon": "ability_rogue_nightblade",
       "iconName": "ability_rogue_nightblade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암영의 칼날 (Umbral Edge)",
+      "description": "복제된 그림자의 피해를 15% 높이는 지속 특성이다. 비열한 습격은 그림자를 만들어 그림자 일격을, 급소 가격은 그림자를 만들어 절개를 사용하게 하며, 각 복제 공격은 원래 피해의 50%에 해당하는 암흑 피해를 준다. 플레이어가 해당 마무리 일격을 직접 한 번 더 시전하는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -148315,14 +148441,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_nightblade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/비열한습격",
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/급소가격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/복제의그림자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
