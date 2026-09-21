@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:48:31.416Z",
+    "generatedAt": "2026-09-21T18:51:59.476Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 592,
-    "rawTotalSynergies": 592,
+    "totalSynergies": 591,
+    "rawTotalSynergies": 591,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -221,7 +221,6 @@
       "execute-availability": 1,
       "hero-talent-damage": 4,
       "execute-window": 1,
-      "passive-stat-support": 1,
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
       "proc-charge-engine": 1,
@@ -266,7 +265,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 55
+      "Warrior": 54
     }
   },
   "synergies": {
@@ -19850,57 +19849,12 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/비판적-사고",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/살상의-기회",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/원한의-평화"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\마무리-일격-집행자의-정밀함-비판적-사고.md",
-        "lastUpdate": ""
-      }
-    },
-    "warrior-arms-passive-mastery-rage": {
-      "id": "warrior-arms-passive-mastery-rage",
-      "name": "무기전사-패시브-숙련-분노-보정",
-      "type": "synergy",
-      "synergyType": "passive-stat-support",
-      "participants": [
-        "279423",
-        "118038",
-        "400803",
-        "383442"
-      ],
-      "class": "Warrior",
-      "spec": "무기",
-      "specs": [
-        "Arms"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/강력한-무기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/둔기류-활용법",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/숙련된-경험",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/무예-기량",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/치명적-공격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/꿰뚫기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/날카로운-날",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/전투-태세"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\무기전사-패시브-숙련-분노-보정.md",
         "lastUpdate": ""
       }
     },
@@ -19933,11 +19887,9 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\분쇄-유혈-천둥의-포효.md",

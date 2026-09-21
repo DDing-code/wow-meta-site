@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:48:31.414Z",
+    "generatedAt": "2026-09-21T18:51:59.475Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2979,
-    "rawTotalSkills": 2979,
+    "totalSkills": 2974,
+    "rawTotalSkills": 2974,
     "duplicateIds": [],
-    "totalSynergies": 592,
+    "totalSynergies": 591,
     "stats": {
-      "total": 2979,
+      "total": 2974,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 130,
         "talent": 996,
-        "spec-talent": 392,
+        "spec-talent": 387,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 267
+        "Warrior": 262
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,13 +96,13 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 45,
+        "Warrior-Arms": 40,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2897,
+        "withWikilinks": 2891,
         "withSynergies": 2014,
         "avgLinkDensity": "0.039"
       }
@@ -21790,9 +21790,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -37831,54 +37831,6 @@
         "lastUpdate": ""
       }
     },
-    "248621": {
-      "id": "248621",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "살상의 기회",
-      "koreanName": "살상의 기회",
-      "englishName": "",
-      "icon": "ability_blackhand_marked4death",
-      "iconName": "ability_blackhand_marked4death",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "살상의 기회은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 살상의 기회 특성 전사 필요 요구 레벨 45 [ 거인의 강타 / 거인의 강타] 사용 시 가속이 10%만큼 증가합니다. 생명력이 35% 미만으로 떨어진 대상이 있다면 가속이 20%만큼 증가합니다. [ 거인의 강타 / 거인의 강타]의 지속시간 동안 유지됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_blackhand_marked4death.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_blackhand_marked4death.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_blackhand_marked4death.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_blackhand_marked4death.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_blackhand_marked4death.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\살상의-기회.md",
-        "lastUpdate": ""
-      }
-    },
     "255544": {
       "id": "255544",
       "type": "talent",
@@ -42137,9 +42089,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -43402,9 +43354,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -59035,9 +58987,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -59581,9 +59533,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -59686,54 +59638,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\유혈.md",
-        "lastUpdate": ""
-      }
-    },
-    "383219": {
-      "id": "383219",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "전율의 강타",
-      "koreanName": "전율의 강타",
-      "englishName": "",
-      "icon": "warrior_talent_icon_igniteweapon",
-      "iconName": "warrior_talent_icon_igniteweapon",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "전율의 강타은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전율의 강타 전사 필요 필사의 일격과 회전베기 사용 시 20%의 확률로 재사용 대기시간이 즉시 초기화됩니다. (효과 발동 확률: 20%)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_igniteweapon.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_igniteweapon.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_igniteweapon.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\전율의-강타.md",
         "lastUpdate": ""
       }
     },
@@ -60037,54 +59941,6 @@
         "lastUpdate": ""
       }
     },
-    "383317": {
-      "id": "383317",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "무자비한 해골분쇄자",
-      "koreanName": "무자비한 해골분쇄자",
-      "englishName": "",
-      "icon": "ability_ironmaidens_whirlofblood",
-      "iconName": "ability_ironmaidens_whirlofblood",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무자비한 해골분쇄자은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 무자비한 해골분쇄자 전사 필요 칼날폭풍의 효과가 끝난 후 9초 동안 소용돌이 및 회전베기의 공격력이 50%만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_whirlofblood.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_whirlofblood.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_whirlofblood.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\무자비한-해골분쇄자.md",
-        "lastUpdate": ""
-      }
-    },
     "383328": {
       "id": "383328",
       "type": "atomic-skill",
@@ -60179,9 +60035,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.024,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -60227,9 +60083,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -60590,61 +60446,13 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\꿰뚫기.md",
-        "lastUpdate": ""
-      }
-    },
-    "383442": {
-      "id": "383442",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "둔기류 활용법",
-      "koreanName": "둔기류 활용법",
-      "englishName": "",
-      "icon": "inv_mace_01",
-      "iconName": "inv_mace_01",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "둔기류 활용법은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 둔기류 활용법 전사 필요 거인의 강타의 지속시간이 20%만큼 감소하지만 공격력 증가량은 20%만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_01.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_mace_01.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_mace_01.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_mace_01.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_01.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\둔기류-활용법.md",
         "lastUpdate": ""
       }
     },
@@ -61193,9 +61001,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -62750,9 +62558,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -64440,9 +64248,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -68829,10 +68637,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 0,
         "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\숙련된-경험.md",
@@ -75553,54 +75361,6 @@
         "lastUpdate": ""
       }
     },
-    "400314": {
-      "id": "400314",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "원한의 평화",
-      "koreanName": "원한의 평화",
-      "englishName": "",
-      "icon": "inv_helmet_08",
-      "iconName": "inv_helmet_08",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "원한의 평화은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 원한의 평화 전사 필요 거인의 강타의 지속시간이 100%만큼 증가하지만 공격력 증가량은 40%만큼 감소합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_08.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_helmet_08.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_helmet_08.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_helmet_08.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_08.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\원한의-평화.md",
-        "lastUpdate": ""
-      }
-    },
     "400320": {
       "id": "400320",
       "type": "talent",
@@ -75853,9 +75613,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {

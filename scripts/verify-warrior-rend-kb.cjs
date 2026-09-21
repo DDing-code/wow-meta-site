@@ -176,4 +176,9 @@ for (const id of [260643, 385512, 388807, 385008]) {
 assert.equal(synergies['warrior-arms-deep-wounds-skullsplitter'], undefined);
 assert.ok(!/해골 쪼개기|도검의 폭풍|폭풍의 벽|힘의 시험/.test(guide));
 assert.ok(!skills[1464].description.includes('분노를10만큼 생성'));
+for (const id of [383317, 383219, 248621, 383442, 400314]) {
+  assert.equal(skills[id], undefined, 'Retired Arms talent ' + id);
+  assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Retired Arms graph edge ' + id);
+}
+assert.equal(synergies['warrior-arms-passive-mastery-rage'], undefined);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
