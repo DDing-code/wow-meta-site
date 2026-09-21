@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Shared Deathstalker effects, 2026-09-21
+
+- Manually replaced 12 generic shared hero descriptions using live Korean/English tooltips. Split Assassination/Subtlety conditions for Mass Casualty, Follow the Blood, Corrupt the Blood, Symbolic Victory and Lingering Darkness; corrected defensive/utility effects and critical-damage versus critical-chance wording.
+- Rebuilt the shared and Subtlety mark relationships. Removed unsupported old meta rankings and incorrect defensive classification of Unshakeable Drive. Its unresolved blank tooltip spell remains explicitly unknown rather than guessed.
+- Generated-data diff is limited to those 12 skills and two relationships. Focused checks now cover 58 local skills, 18 shared Deathstalker skills and 11 relationships; Assassination regression checks and prebuild passed. General offline validation still reports 23 warnings.
+- Canonical KB and generated DB updated together. Season 2 sets, remaining common utility, fresh build/log evidence and the full Subtlety manuscript are still pending. No production deployment or whole-guide completion is claimed.
+
 ### Subtlety remaining local talents, 2026-09-21
 
 - Manually rewrote 27 remaining local talents from Korean/English tooltips and fixed-SHA trait data. Corrected active Gloomblade, current Finality/Danse Macabre/Shadow Focus/The Rotten effects, two-rank Death Perception/Finality/Dark Shadow and five mutually exclusive choice pairs.

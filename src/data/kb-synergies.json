@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:12:05.353Z",
+    "generatedAt": "2026-09-21T03:23:52.840Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13778,20 +13778,29 @@
     },
     "SY-ROGUE-HERO-DEATHSTALKER-MARK": {
       "id": "SY-ROGUE-HERO-DEATHSTALKER-MARK",
-      "name": "영웅특성-Deathstalker-죽음추적자의징표",
+      "name": "죽음추적자: 징표 소비와 전문화별 보상",
+      "description": "암살은 목조르기, 잠행은 그림자 일격으로 징표를 붙인다. 마지막 중첩 소비나 대상 사망 뒤 다음 5점 이상 독살·절개가 강화되지만 기존 징표 중첩은 소비하지 않는다. 하나 된 집중력은 주변 피해를 징표 대상으로 모으고, 대규모 사상자는 전문화별 조건에 따라 징표 피해를 주변으로 퍼뜨린다. 강화 조건과 기술은 전문화마다 구분한다.",
       "type": "synergy",
       "synergyType": "hero-talent-package",
       "participants": [
         "457052",
         "457054",
         "457055",
-        "457058"
+        "457058",
+        "1273035",
+        "1248785",
+        "457068",
+        "457062"
       ],
       "class": "Rogue",
       "spec": "Common",
+      "specs": [
+        "Assassination",
+        "Subtlety"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -15038,7 +15047,8 @@
     },
     "rogue_subtlety_deathstalker_mark_darkest_night": {
       "id": "rogue_subtlety_deathstalker_mark_darkest_night",
-      "name": "죽음추적자의징표-어둡고어두운밤",
+      "name": "죽음추적자의 징표와 강화 절개",
+      "description": "그림자 일격으로 징표를 붙이고 5점 이상 공격으로 중첩을 소비한다. 마지막 중첩 소비나 대상 사망으로 기력 30과 어둡고 어두운 밤을 얻고, 다음 5점 이상 절개가 확정 치명타와 피해 50% 증가를 얻는다. 강화 절개는 기존 중첩을 소비하지 않는다. 대규모 사상자는 검은 화약으로 중첩을 소비할 때 주변 추가 피해를 준다.",
       "type": "synergy",
       "synergyType": "deathstalker_mark_cycle",
       "participants": [
@@ -15046,23 +15056,23 @@
         "457058",
         "185438",
         "196819",
-        "280719",
         "319175",
-        "382511",
-        "469642"
+        "1273035",
+        "1273017",
+        "1293340"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
       "importance": 72,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/죽음의표시",
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술",
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
       ],
       "linkedBuffs": [],

@@ -125,4 +125,36 @@ assert.ok(synergies.rogue_subtlety_slice_shadowblades_resource.participants.incl
 for (const relation of Object.values(synergies)) {
   assert.ok(!relation.participants.includes('5171'), relation.id);
 }
-console.log('Subtlety local data: 58 records and nine relationships passed; obsolete Slice and Dice excluded. Shared hero/season data, common utility and full manuscript review are not covered.');
+const deathstalkerEffects = {
+  '457057': /중첩.*소비.*그림자 밟기.*3초/,
+  '1273035': /암살.*파열.*40%.*잠행.*검은 화약.*75%/,
+  '457056': /죽음표식이 끝난 뒤.*자연.*30%.*어둠의 칼날이 끝난 뒤.*암흑.*30%/,
+  '457034': /회피.*마법.*15%.*그림자 망토.*물리.*20%/,
+  '457063': /은폐의 장막.*5초.*그림자 망토.*아닙니다/,
+  '457054': /자동 공격.*역병.*전투력의 10%.*복사.*아닙니다/,
+  '457062': /독살 2회.*18%.*절개 또는 검은 화약 1회.*15%/,
+  '457022': /그림자 망토.*2초.*은폐의 장막.*아니며/,
+  '1273017': /적용할 때 30%.*즉시 소비.*모든 마무리.*아닙니다/,
+  '1272989': /치명타 피해 증가량.*20%.*치명타 확률.*아닙니다/,
+  '1248785': /암살.*파열.*20%.*잠행.*징표.*25%/,
+  '457068': /파열.*2명.*30%.*잠행.*약점 포착.*15%/,
+};
+for (const [id, effect] of Object.entries(deathstalkerEffects)) {
+  assert.match(skills[id]?.description || '', effect, id);
+  assert.equal(skills[id].cooldown, '없음', id);
+}
+for (const id of [...Object.keys(deathstalkerEffects), '457052', '457058',
+  '457055', '1248793', '457067', '1248774']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].castTime, '지속 효과', id);
+  assert.deepEqual(skills[id].specs, ['Assassination', 'Subtlety'], id);
+  assert.ok(skills[id].description.length > 60, id);
+}
+for (const id of ['rogue_subtlety_deathstalker_mark_darkest_night',
+  'SY-ROGUE-HERO-DEATHSTALKER-MARK']) {
+  const relation = synergies[id];
+  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(relation.description.length > 70, id);
+  for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Subtlety'), spell);
+}
+console.log('Subtlety: 58 local records, 18 shared Deathstalker records and 11 relationships passed. Season data, remaining common utility and full manuscript review are not covered.');
