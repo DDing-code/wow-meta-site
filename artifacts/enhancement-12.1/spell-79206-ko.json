@@ -1,0 +1,19 @@
+{
+  "name": "영혼나그네의 은총",
+  "icon": "spell_shaman_spiritwalkersgrace",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=79206/영혼나그네의-은총\"><b class=\"whtt-name\">영혼나그네의 은총</b></a><div class=\"q0\">특성</div>2.82% (기본 마나 중)<table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->2 분 재사용 대기시간<!--cooldownText--><!--baseCooldown:2 분 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">15초 동안 영혼의 인도를 받아 이동 중에도 주술사 주문을 시전할 수 있습니다. 이 주문은 다른 주문 시전 중에도 시전할 수 있습니다.<!--sp192088:0--><!--sp192088--><!--cooldown:192088:1.5분 후 재사용 가능--></div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "<table><tr><td><table width=\"100%\"><tr><td><b class=\"q\">영혼나그네의 은총</b></td><th class=\"q\"><b class=\"q\">마법</b></th></tr></table></td></tr></table><table><tr><td>이동 중에 주술사 주문 시전 가능<br><span class=\"q\">15 초 남음</span></td></tr></table>",
+  "quality": -1,
+  "spells": {
+    "192088": [
+      [
+        "",
+        " 이동 속도가 20%만큼 증가합니다.",
+        ""
+      ]
+    ]
+  },
+  "buffspells": {},
+  "completion_category": -2
+}

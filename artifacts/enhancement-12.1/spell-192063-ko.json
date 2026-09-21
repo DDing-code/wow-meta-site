@@ -1,0 +1,11 @@
+{
+  "name": "돌풍",
+  "icon": "inv_misc_volatileair",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=192063/돌풍\"><b class=\"whtt-name\">돌풍</b></a><div class=\"q0\">특성</div><table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->20 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:20 초 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">돌풍이 주술사를 앞으로 떠밉니다.</div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": -2
+}

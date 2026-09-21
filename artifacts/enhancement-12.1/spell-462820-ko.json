@@ -1,0 +1,11 @@
+{
+  "name": "제트 기류",
+  "icon": "inv_elemental_primal_air",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=462820/제트-기류\"><b class=\"whtt-name\">제트 기류</b></a><br />100 야드 사정거리<br />즉시<div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\"><a href=\"/ko/spell=462817/제트-기류\" target=\"_blank\">바람 질주 토템의 이동 속도 증가량이 10%만큼 증가하며 이동 속도 감소 효과를 제거합니다.</a></div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": 0
+}

@@ -329,4 +329,15 @@ assert.match(skills['370'].description, /1개.*상급 정화.*같은 선택/);
 assert.match(skills['8143'].description, /10초.*30미터.*공포·현혹·수면.*독 정화 토템.*같은 선택/);
 assert.match(skills['383013'].description, /6초.*1.5초.*30미터.*독 효과.*진동의 토템.*같은 선택/);
 assert.match(skills['192058'].description, /2초.*8미터.*3초/);
+for (const id of ['58875', '79206', '192063', '192077', '108287', '192088', '378077', '381647', '462817']) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.ok(skills[id].description.length > 60);
+}
+for (const id of ['58875', '79206', '192063', '192077', '108287']) assert.equal(skills[id].castTime, '즉시');
+assert.match(skills['58875'].description, /8초.*60%.*돌풍.*같은 선택/);
+assert.match(skills['192077'].description, /15초.*10미터.*5초.*40%/);
+assert.match(skills['192088'].description, /30초.*20%.*90초.*영혼나그네의 보호.*같은 선택/);
+assert.match(skills['378077'].description, /5초.*침묵.*15초.*아니며.*자비로운 영혼.*같은 선택/);
+assert.ok(!skills['462820'], 'Jet Stream internal effect must not appear as a duplicate selectable talent');
+assert.ok(Object.values(synergies).every(row => !row.participants.includes('462820')));
 console.log('Enhancement mechanics and shared utility regression checks passed; full manuscript, equipment and logs are not covered.');

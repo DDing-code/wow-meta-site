@@ -1,0 +1,11 @@
+{
+  "name": "토템 재배치",
+  "icon": "ability_shaman_totemrelocation",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=108287/토템-재배치\"><b class=\"whtt-name\">토템 재배치</b></a><div class=\"q0\">특성</div>40 야드 사정거리<table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->10 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:10 초 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">활성화된 토템을 지정된 위치로 재배치합니다.</div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": -2
+}

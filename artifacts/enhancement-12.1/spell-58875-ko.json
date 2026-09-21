@@ -1,0 +1,11 @@
+{
+  "name": "정령의 걸음",
+  "icon": "ability_tracking",
+  "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=58875/정령의-걸음\"><b class=\"whtt-name\">정령의 걸음</b></a><div class=\"q0\">특성</div><table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->1 분 재사용 대기시간<!--cooldownText--><!--baseCooldown:1 분 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">모든 이동 방해 효과를 제거하고, 8초 동안 주술사의 이동 속도를 60%만큼 증가시킵니다.</div></td></tr></table>",
+  "tooltip2": "",
+  "buff": "<table><tr><td><b class=\"q\">정령의 걸음</b></td></tr></table><table><tr><td>이동 속도 60%만큼 증가<br><span class=\"q\">8 초 남음</span></td></tr></table>",
+  "quality": -1,
+  "spells": {},
+  "buffspells": {},
+  "completion_category": -2
+}
