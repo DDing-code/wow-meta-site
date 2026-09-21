@@ -199,7 +199,6 @@ for (const [id, effect] of Object.entries({
   '193546': /진홍색 약병.*치유 물약.*생명석.*25%.*모든 아군 치유.*아니다/,
   '393970': /소멸.*6초.*30%.*일반 은신.*어둠의 춤.*아니다/,
   '1267220': /20% 확률.*20%.*한국어.*마법 피해.*영어.*모든 피해.*추가 확인/,
-  '378803': /급소 가격.*비열한 습격.*혼절시키기.*혼란.*기력.*20%.*소멸.*바꾸지도/,
   '382513': /소멸.*충전.*1회.*2회.*절반.*아니다/,
   '108208': /잠행 2초.*암살 3초.*무법.*표시되지/,
   '423662': /은폐의 장막.*50%.*그림자 망토.*소멸.*아니다/,
@@ -207,7 +206,7 @@ for (const [id, effect] of Object.entries({
   '400804': /지속 시간.*30%.*감속의 강도.*아니다/,
   '423683': /전력 질주.*30%.*4초.*12초.*낙하.*아니다/,
   '231691': /60초.*기본 2분.*1분/,
-  '200733': /실명.*50%.*70%.*모든 적.*18초/,
+  '200733': /실명.*50%.*70%.*모든 적.*18초.*80%.*충돌.*확정 효과로 사용하지/,
   '231719': /물리 피해.*5%.*마법 피해.*아니며/,
   '378427': /교란.*진홍색 약병.*10.*10%.*아니라/,
   '378807': /은신 또는 어둠의 춤.*20%/,
@@ -230,6 +229,10 @@ for (const [id, effect] of Object.entries({
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+for (const id of ['378803', '455131']) {
+  assert.equal(skills[id], undefined, 'Retired Rogue talent ' + id);
+  for (const relation of Object.values(synergies)) assert.ok(!relation.participants.includes(id), relation.id + id);
+}
 assert.deepEqual(skills['455143'].specs, ['Outlaw']);
 assert.match(skills['455143'].description, /자동 공격.*3초.*3%.*1%.*10중첩.*무법/);
 const commonMovement = synergies['SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT'];

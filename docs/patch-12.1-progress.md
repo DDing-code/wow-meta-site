@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue retired-talent correction, 2026-09-21
+
+- Blizzard's Midnight pre-expansion notes explicitly remove Shadowheart 455131 and Rushed Setup 378803. Neither exists in fixed 12.1 trait_data. Removed both canonical notes, sync-state entries and the Shadowheart incoming relation; regenerated DB excludes both.
+- This corrects the earlier Rushed Setup refresh: an accessible tooltip was insufficient availability evidence. Replaced its positive effect assertion with absence/relationship regression checks. The same official page also disagrees with the currently served Airborne Irritant tooltip (80%/80%, no extra targets versus 50%/70%, nearby targets); its current mechanics require a separate source-resolution pass.
+
 ### Rogue movement scope correction, 2026-09-21
 
 - Restricted Acrobatic Strikes 455143 to Outlaw using its fixed 12.1 spec-tree row (spec 260); authored its three-second, ten-stack auto-attack/movement effect from Korean/English tooltips. Storage remains in the existing common directory; explicit specialization scope is authoritative.

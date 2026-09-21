@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:25:09.587Z",
+    "generatedAt": "2026-09-21T04:28:31.258Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2981,
-    "rawTotalSkills": 2981,
+    "totalSkills": 2979,
+    "rawTotalSkills": 2979,
     "duplicateIds": [],
     "totalSynergies": 572,
     "stats": {
-      "total": 2981,
+      "total": 2979,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
         "atomic-skill": 554,
         "proc": 29,
         "skill": 131,
-        "talent": 997,
+        "talent": 995,
         "spec-talent": 392,
         "passive": 74,
         "hero-tree": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 298,
+        "Rogue": 296,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -82,7 +82,7 @@
         "Priest-Discipline": 62,
         "Priest-신성": 46,
         "Priest-Shadow": 68,
-        "Rogue-공용": 131,
+        "Rogue-공용": 129,
         "Rogue-무법": 55,
         "Rogue-암살": 52,
         "Rogue-잠행": 60,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2906,
-        "withSynergies": 1985,
+        "withWikilinks": 2904,
+        "withSynergies": 1984,
         "avgLinkDensity": "0.039"
       }
     }
@@ -31228,7 +31228,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "실명의 쿨다운을 50%, 지속 시간을 70% 줄이고 주위 모든 적에게 적용하게 하는 지속 특성이다. 기본 2분·1분인 실명에 이 효과만 적용하면 쿨다운 1분, 지속 시간 18초다. 이동 속도나 전력 질주를 강화하는 효과가 아니다.",
+      "description": "현재 제공되는 툴팁은 실명 쿨다운 50% 감소, 지속 시간 70% 감소와 주위 모든 적 적용을 표시한다. 이 수치라면 기본 1분 지속이 18초가 되지만, 공식 Midnight 사전 패치 기록은 80%·80% 감소와 추가 대상 효과 제거를 명시한다. 출처가 충돌하므로 18초나 광역화를 현재 확정 효과로 사용하지 않는다. 이동 속도나 전력 질주 강화는 아니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -31252,7 +31252,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.015,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -53672,58 +53672,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Talents\\상급정화.md",
-        "lastUpdate": ""
-      }
-    },
-    "378803": {
-      "id": "378803",
-      "type": "talent",
-      "class": "Rogue",
-      "spec": "공용",
-      "specs": [
-        "Assassination",
-        "Outlaw",
-        "Subtlety"
-      ],
-      "name": "황급한 준비",
-      "koreanName": "황급한 준비",
-      "englishName": "Rushed Setup",
-      "icon": "ability_skyreach_piercing_rush",
-      "iconName": "ability_skyreach_piercing_rush",
-      "school": "",
-      "cooldown": "없음",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "급소 가격, 비열한 습격, 혼절시키기, 혼란의 기력 소모량을 20% 줄이는 지속 특성이다. 모든 제어 기술의 비용이나 쿨다운을 줄이는 효과가 아니며, 소멸의 충전이나 재사용 시간을 바꾸지도 않는다.",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.1",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_piercing_rush.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_skyreach_piercing_rush.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_skyreach_piercing_rush.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_skyreach_piercing_rush.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_skyreach_piercing_rush.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.015,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Talents\\황급한준비.md",
         "lastUpdate": ""
       }
     },
@@ -106214,56 +106162,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\깨어나는폭풍.md",
-        "lastUpdate": ""
-      }
-    },
-    "455131": {
-      "id": "455131",
-      "type": "talent",
-      "class": "Rogue",
-      "spec": "공용",
-      "specs": [
-        "Assassination",
-        "Outlaw",
-        "Subtlety"
-      ],
-      "name": "암흑심장",
-      "koreanName": "암흑심장",
-      "englishName": "Shadowheart",
-      "icon": "inv_heart_of_the_thunder-king_icon",
-      "iconName": "inv_heart_of_the_thunder-king_icon",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 암흑심장 (Shadowheart)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_heart_of_the_thunder-king_icon.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_heart_of_the_thunder-king_icon.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_heart_of_the_thunder-king_icon.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_heart_of_the_thunder-king_icon.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_heart_of_the_thunder-king_icon.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.046,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Talents\\암흑심장.md",
         "lastUpdate": ""
       }
     },
