@@ -205,4 +205,16 @@ assert.deepEqual(synergies.warrior_arms_fervor_triggered_slam.participants, ['20
 assert.ok(!guide.includes('21,740') && !guide.includes('90,965') && !guide.includes('4,657'), 'Historical Arms counts must not drive current recommendations');
 assert.ok(guide.includes('12.1에서 단일과 다중 대상 모두 먼저 비교할 기본 선택'));
 assert.ok(guide.includes('최신 로그를 직접 재수집한 통계로 제시하지 않습니다'));
+for (const id of [1269314, 1269383, 1269306, 1269307]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+}
+assert.equal(skills[1269383].icon, 'ability_rogue_ambush');
+assert.equal(skills[1269383].resourceCost, '분노 20');
+assert.equal(skills[1269383].cooldown, '없음');
+assert.match(skills[1269314].description, /각 중첩의 지속시간은 독립적/);
+assert.match(skills[1269306].description, /치명타 피해.*1포인트.*2.5%.*2포인트/s);
+assert.match(skills[1269307].description, /다음 거인의 강타.*3%.*5중첩/s);
+assert.deepEqual(synergies.warrior_arms_heroic_strike_stack_layers.participants, ['1269314', '1269383', '1269306', '1269307', '167105']);
+assert.ok(guide.includes('방어도 관통 중첩과 다음 거인의 강타 준비 중첩을 구분'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
