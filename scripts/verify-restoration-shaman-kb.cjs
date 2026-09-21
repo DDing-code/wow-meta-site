@@ -33,3 +33,6 @@ for (const id of ['shaman_restoration_sustain_shields','shaman_restoration_spiri
   assert(!synergies.synergies[id].participants.includes('1271104'), 'Unrelated defensive hub must not claim Earthen Accord');
 }
 console.log('Restoration core spells and talent migration verified; full guide audit remains open.');
+assert.equal(skills[443450].patch,'12.1');
+assert.deepEqual(skills[443450].specs,['Elemental','Restoration']);
+assert.match(skills[443450].description,/복원.*생명 폭발.*12초.*정기.*폭풍수호자.*8초/);

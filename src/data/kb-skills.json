@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:45:14.238Z",
+    "generatedAt": "2026-09-21T16:48:51.036Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -94711,14 +94711,14 @@
       "icon": "ability_racial_ancestralcall",
       "iconName": "ability_racial_ancestralcall",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선조의 부름 (Call of the Ancestors)",
+      "description": "복원은 생명 폭발 시전 시 12초, 정기는 폭풍수호자 사용 시 8초 동안 선조를 소환한다. 본체가 치유 또는 공격 주문을 시전하면 선조가 비슷한 주문을 사용한다. 두 전문화의 소환 조건과 기본 지속시간을 서로 바꾸어 적용하지 않는다. 선조의 주문은 본체 주문을 그대로 복사한 별도 시전 횟수가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94737,7 +94737,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
