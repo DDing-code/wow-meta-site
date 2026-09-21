@@ -59,6 +59,18 @@ for (const [id, pattern] of Object.entries({
   assert.equal(skills[id].castTime, id === '444995' ? '즉시' : '지속 효과', id);
 }
 assert.match(skills[444995].cooldown, /고양 1분.*25초/);
+for (const id of ['shaman_enhancement_stormbringer_tempest', 'shaman_enhancement_totemic_surging_window']) {
+  const relation = synergies[id];
+  assert.equal(relation.patch, '12.1', id);
+  assert.deepEqual(relation.specs, ['Enhancement'], id);
+  for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Enhancement'), id + ': ' + spell);
+  assert.doesNotMatch(relation.description, /차트|Archon|76.1%|53.6%|정기의 박자/, id);
+}
+const stormbringer = synergies.shaman_enhancement_stormbringer_tempest;
+assert.ok(stormbringer.participants.includes('455129'));
+assert.ok(!stormbringer.participants.includes('382888'), 'Flurry is not a Tempest proc talent');
+assert.match(stormbringer.description, /2.00%.*별도 경로.*35%.*2중첩.*확정 순서가 아니/);
+assert.match(synergies.shaman_enhancement_totemic_surging_window.description, /용암 채찍.*8초.*활성화된.*0.20초.*정기의 속도.*0.3초/);
 assert.deepEqual(skills[378270].specs, ['Enhancement', 'Restoration']);
 assert.match(skills[378270].description, /0.6%.*6초.*2초.*복원.*7%/);
 assert.equal(skills[378270].patch, '12.1');

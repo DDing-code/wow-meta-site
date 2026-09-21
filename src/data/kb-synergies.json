@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:21:32.174Z",
+    "generatedAt": "2026-09-21T05:26:12.748Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15465,37 +15465,20 @@
     },
     "shaman_enhancement_totemic_surging_window": {
       "id": "shaman_enhancement_totemic_surging_window",
-      "name": "쇄도하는토템-진동",
+      "name": "토템술사: 뜨거운 손 부여와 연장",
+      "description": "쇄도하는 토템 → 휘몰아치는 정기의 불 티끌 → 용암 채찍으로 뜨거운 손 8초 부여. 이후 소용돌이치는 무기 소비는 토템의 기세로 활성화된 뜨거운 손을 중첩당 0.20초 연장하고, 정기의 속도로 용암 채찍과 폭풍의 일격의 남은 재사용 대기시간을 중첩당 0.3초 줄인다. 부여·연장·재사용 감소는 서로 다른 효과다.",
       "type": "synergy",
       "synergyType": "hero_talent_totemic",
       "participants": [
         "444995",
-        "1260644",
         "445024",
-        "453405",
-        "453406",
-        "453409",
-        "445035",
-        "1260874",
-        "445025",
-        "445026",
-        "445028",
-        "445029",
-        "456369",
-        "445032",
-        "445034",
-        "445036",
-        "187880",
         "60103",
         "201900",
-        "384352",
-        "187874",
-        "17364",
-        "197214",
-        "1218047",
-        "384444",
+        "1260644",
+        "187880",
         "1250364",
-        "390370"
+        "197214",
+        "445025"
       ],
       "class": "Shaman",
       "spec": "고양",
@@ -15504,16 +15487,16 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/용암채찍",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/파멸의바람",
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/세계의분리",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/태고의폭풍"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/뜨거운손"
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/뜨거운손",
+        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/정기의속도"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\쇄도하는토템-진동.md",
@@ -15657,39 +15640,18 @@
     },
     "shaman_enhancement_stormbringer_tempest": {
       "id": "shaman_enhancement_stormbringer_tempest",
-      "name": "폭풍-폭풍인도자",
+      "name": "폭풍인도자: 자원 소비와 폭풍 발동",
+      "description": "소용돌이치는 무기 소비 → 중첩당 2.00% 확률로 다음 번개 화살이 폭풍으로 변환. 깨어나는 폭풍의 폭풍의 일격 발동은 별도 경로다. 초자력 충전은 번개 화살·연쇄 번개·폭풍에서 35% 확률로 2중첩을 반환한다. 발동과 반환 모두 확정 순서가 아니므로 실제 버프와 자원을 확인한다.",
       "type": "synergy",
       "synergyType": "hero_talent_stormbringer",
       "participants": [
-        "454009",
-        "454021",
-        "455088",
-        "455096",
-        "455097",
-        "455110",
-        "455123",
-        "454026",
-        "454027",
-        "454029",
-        "454391",
-        "454919",
-        "455590",
-        "467778",
-        "1264762",
         "187880",
-        "188196",
-        "188443",
+        "454009",
+        "455129",
         "17364",
-        "187874",
-        "115356",
-        "201845",
-        "1262635",
-        "1251026",
-        "1262713",
-        "1252373",
-        "1262761",
-        "382888",
-        "384450"
+        "455110",
+        "188196",
+        "188443"
       ],
       "class": "Shaman",
       "spec": "고양",
@@ -15698,24 +15660,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/소용돌이치는무기",
         "08-직업별-Knowledge-Base/11-주술사/고양/Skills/폭풍의일격",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/낙뢰",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/폭풍쇄도",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Skills/바람의일격"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/폭풍해방",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/천둥축전기",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/과충전",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/벼락",
-        "08-직업별-Knowledge-Base/11-주술사/고양/Talents/승천"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Synergies\\폭풍-폭풍인도자.md",
         "lastUpdate": ""
