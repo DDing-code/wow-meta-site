@@ -1,0 +1,15 @@
+{
+  "retrievedAt": "2026-09-21T16:33:58.013Z",
+  "url": "https://nether.wowhead.com/tooltip/spell/1253093?dataEnv=1&locale=1",
+  "tooltip": {
+    "name": "해일 제어",
+    "icon": "inv_misc_volatilewater",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=1253093/해일-제어\"><b class=\"whtt-name\">해일 제어</b></a><div class=\"q0\">특성</div><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">치유의 물결의 마나 소모량이 15%만큼, 연쇄 치유의 마나 소모량이 15%만큼 감소합니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": -2
+  }
+}

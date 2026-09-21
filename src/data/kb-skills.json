@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:31:42.624Z",
+    "generatedAt": "2026-09-21T16:40:05.871Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2900,
-        "withSynergies": 2004,
+        "withSynergies": 2005,
         "avgLinkDensity": "0.039"
       }
     }
@@ -124889,54 +124889,6 @@
         "lastUpdate": ""
       }
     },
-    "1252841": {
-      "id": "1252841",
-      "type": "talent",
-      "class": "Shaman",
-      "spec": "복원",
-      "specs": [
-        "Restoration"
-      ],
-      "name": "평온한 물",
-      "koreanName": "평온한 물",
-      "englishName": "Calm Waters",
-      "icon": "inv_10_elementalshardfoozles_water",
-      "iconName": "inv_10_elementalshardfoozles_water",
-      "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 평온한 물 (Calm Waters)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalshardfoozles_water.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_10_elementalshardfoozles_water.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_10_elementalshardfoozles_water.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_elementalshardfoozles_water.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalshardfoozles_water.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Talents\\평온한물.md",
-        "lastUpdate": ""
-      }
-    },
     "1252871": {
       "id": "1252871",
       "type": "atomic-skill",
@@ -125505,14 +125457,14 @@
       "icon": "inv_misc_volatilewater",
       "iconName": "inv_misc_volatilewater",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 해일 제어 (Current Control)",
+      "description": "치유의 물결과 연쇄 치유의 마나 소모량이 각각 15% 감소한다. 12.1에서 삭제된 평온한 물의 효과가 통합된 지속 효과다. 치유량 증가나 토템 강화가 아니며, 두 주문 이외의 마나 소모량을 줄이지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -125531,7 +125483,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -154087,6 +154039,59 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Talents\\쾌락에-물든-폭식.md",
+        "lastUpdate": ""
+      }
+    },
+    "1312843": {
+      "id": "1312843",
+      "type": "talent",
+      "class": "Shaman",
+      "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "너울대는 물결",
+      "koreanName": "너울대는 물결",
+      "englishName": "Swelling Tides",
+      "icon": "ability_shaman_manatidetotem",
+      "iconName": "ability_shaman_manatidetotem",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "치유의 토템 사용 시 활성화된 성난 해일의 지속시간을 3초 연장한다. 폭풍의 흐름 토템 특성(1267016)을 선택하면 폭풍의 흐름 토템도 연장 효과를 발동시킨다. 새 대상에게 성난 해일을 걸거나 만료된 효과를 되살리는 특성이 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_shaman_manatidetotem.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_shaman_manatidetotem.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_shaman_manatidetotem.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_shaman_manatidetotem.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_shaman_manatidetotem.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/치유의토템",
+          "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Talents\\너울대는물결.md",
         "lastUpdate": ""
       }
     },
