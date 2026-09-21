@@ -52,4 +52,17 @@ assert.match(skills[1300463].description, /1명.*50%.*고기칼.*하나만/);
 assert.match(skills[280392].description, /3명.*50%/);
 assert.deepEqual(synergies.warrior_fury_rampaging_ruin.participants, ['12950', '184367', '1265357']);
 assert.deepEqual(synergies.warrior_fury_hack_and_slash.participants, ['184367', '383877', '85288']);
+for (const id of [1296645, 1296646]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].type, 'set-bonus');
+  assert.deepEqual(skills[id].specs, ['Fury']);
+  assert.equal(skills[id].icon, 'trade_engineering');
+}
+assert.match(skills[1296645].description, /15%.*2초.*6초/);
+assert.match(skills[1296646].description, /10%.*3%.*6%/);
+assert.equal(skills[1719].patch, '12.1');
+assert.equal(skills[1719].cooldown, '1.5분');
+assert.equal(skills[1719].castTime, '즉시');
+assert.match(skills[1719].description, /12초.*50%.*20%/);
+assert.deepEqual(synergies.warrior_fury_season2_recklessness.participants, ['1719', '85288', '1296645', '23881', '1296646']);
 console.log('Warrior Rend/Cleave/Improved Whirlwind corrections verified; full warrior migration remains open.');

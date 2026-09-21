@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:32:02.329Z",
+    "generatedAt": "2026-09-21T17:38:25.374Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 579,
-    "rawTotalSynergies": 579,
+    "totalSynergies": 580,
+    "rawTotalSynergies": 580,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -244,6 +244,7 @@
       "generator-reset-priority": 1,
       "whirlwind-cleave-window": 1,
       "conditional_rampage_aoe": 1,
+      "recklessness_tier_extension": 1,
       "bloodthirst-bleed-survival": 1,
       "slayer-execute-window": 1
     },
@@ -261,7 +262,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 42
+      "Warrior": 43
     }
   },
   "synergies": {
@@ -20781,6 +20782,41 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\소용돌이-연마-빗발치는-광란.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_fury_season2_recklessness": {
+      "id": "warrior_fury_season2_recklessness",
+      "name": "시즌2-무모한-희생-강화",
+      "type": "synergy",
+      "synergyType": "recklessness_tier_extension",
+      "participants": [
+        "1719",
+        "85288",
+        "1296645",
+        "23881",
+        "1296646"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\시즌2-무모한-희생-강화.md",
         "lastUpdate": ""
       }
     },

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:32:02.328Z",
+    "generatedAt": "2026-09-21T17:38:25.372Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2980,
-    "rawTotalSkills": 2980,
+    "totalSkills": 2982,
+    "rawTotalSkills": 2982,
     "duplicateIds": [],
-    "totalSynergies": 579,
+    "totalSynergies": 580,
     "stats": {
-      "total": 2980,
+      "total": 2982,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -20,7 +20,7 @@
         "spec-talent": 394,
         "passive": 75,
         "hero-tree": 2,
-        "set-bonus": 11,
+        "set-bonus": 13,
         "tier-set": 2,
         "class-talent": 93,
         "debuff": 6,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 268
+        "Warrior": 270
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -99,11 +99,11 @@
         "Warrior-Arms": 46,
         "Warrior-무기": 1,
         "Warrior-Protection": 42,
-        "Warrior-Fury": 52
+        "Warrior-Fury": 54
       },
       "quality": {
-        "withWikilinks": 2905,
-        "withSynergies": 2012,
+        "withWikilinks": 2907,
+        "withSynergies": 2014,
         "avgLinkDensity": "0.039"
       }
     }
@@ -3274,18 +3274,18 @@
       ],
       "name": "무모한 희생",
       "koreanName": "무모한 희생",
-      "englishName": "",
+      "englishName": "Recklessness",
       "icon": "warrior_talent_icon_innerrage",
       "iconName": "warrior_talent_icon_innerrage",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "분노 전사의 주요 극딜 버튼이다.  구간에서는  반복과 를 밀집시키고, 에서는 다음 구간 정렬을 본다.  공식 툴팁 요약: 무모한 희생 특성 즉시 1.5 분 재사용 대기시간 전사 필요 광폭화 상태가 되어 12초 동안 모든 분노 생성량이 50%만큼, 능력의 치명타율이 20%만큼 증가합니다. 분노 Generates 0 Rage.",
+      "description": "무모한 희생은 기본 재사용 대기시간 1.5분의 즉시 시전 강화 기술이다. 12초 동안 모든 분노 생성량을 50%, 능력의 치명타율을 20% 높인다. 기본 효과 자체가 고정 분노를 즉시 지급하는 것과 분노 생성량을 늘리는 것은 다르다. 기본 지속시간·재사용 대기시간은 특성이나 세트 적용 후 실전 값과 구분한다.  시즌 2 2세트는 활성 중 분노의 강타로 2초씩 최대 6초를 연장한다. 4세트는 활성 중 피의 갈증으로 치명타 증가 효과를 3%씩 최대 6% 높인다. 두 효과 모두 무모한 희생이 켜진 동안의 기술 사용을 요구하므로 시작 전에",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3305,9 +3305,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 6,
         "synergyCount": 2,
-        "linkDensity": 0.031,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -151526,6 +151526,108 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Buffs\\12.1-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296645": {
+      "id": "1296645",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "Warrior Fury 12.1 Class Set 2pc",
+      "koreanName": "Warrior Fury 12.1 Class Set 2pc",
+      "englishName": "Warrior Fury 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "분노의 강타 공격력이 15% 증가한다. 무모한 희생이 활성화된 동안 분노의 강타를 사용하면 무모한 희생의 지속시간이 2초씩, 최대 6초 연장된다. 최대 연장을 얻으려면 해당 구간 안에서 세 번의 연장 기회를 확보해야 한다. 무모한 희생 밖에서 사용한 횟수를 다음 구간의 연장으로 적립하지 않는다.  연장 상한에 도달한 뒤에는 분노의 강타를 계속 사용해도 이 세트 효과로 시간을 무한히 늘리지 못한다. 한글 툴팁에도 효과 이름 자체는 영문이므로 임의의 공식 한글 세트명을 만들지 않았다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296646": {
+      "id": "1296646",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "Warrior Fury 12.1 Class Set 4pc",
+      "koreanName": "Warrior Fury 12.1 Class Set 4pc",
+      "englishName": "Warrior Fury 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "피의 갈증 공격력이 10% 증가한다. 무모한 희생이 활성화된 동안 피의 갈증을 사용하면 무모한 희생의 치명타 증가 효과가 3%씩, 최대 6% 증가한다. 두 번으로 이 추가 증가량의 상한에 도달한다. 무모한 희생이 없는 상태에서 영구 치명타를 쌓는 효과가 아니다.  2026-09-22 현재 한글 툴팁과 Blizzard 핫픽스의 수치는 3%/6%다. 2026-08-18 Wowhead 시즌 소개의 5%/10%는 이전 수치이므로 현재 계산에 쓰지 않는다. 효과 이름은 한글 API에서도 영문으로 제공된다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
