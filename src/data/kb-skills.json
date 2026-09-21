@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:38:05.396Z",
+    "generatedAt": "2026-09-21T18:44:23.535Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2984,
-    "rawTotalSkills": 2984,
+    "totalSkills": 2983,
+    "rawTotalSkills": 2983,
     "duplicateIds": [],
     "totalSynergies": 593,
     "stats": {
-      "total": 2984,
+      "total": 2983,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 132,
+        "skill": 131,
         "talent": 996,
         "spec-talent": 395,
         "passive": 76,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 272
+        "Warrior": 271
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,14 +96,14 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 50,
+        "Warrior-Arms": 49,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2902,
-        "withSynergies": 2013,
+        "withWikilinks": 2901,
+        "withSynergies": 2014,
         "avgLinkDensity": "0.039"
       }
     }
@@ -2021,7 +2021,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.027,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -2174,7 +2174,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.022,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -6208,7 +6208,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 제압은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 제압 특성 근접 사정거리 즉시 12 초 재사용 대기시간 1회 사용 가능 전사 필요 근접 무기 필요 적을 제압하여 (전투력의 385.614%)의 물리 피해를 입힙니다. 방패로 막거나, 회피하거나, 무기로 막을 수 없습니다. [ 무예 기량 : 다음 필사의 일격 또는 회전베기의 공격력이 (전투력의 385.614%)%만큼 증가합니",
+      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 제압은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 제압 특성 근접 사정거리 즉시 12 초 재사용 대기시간 1회 사용 가능 전사 필요 근접 무기 필요 적을 제압하여 (전투력의 385.614%)의 물리 피해를 입힙니다. 방패로 막거나, 회피하거나, 무기로 막을 수 없습니다. [ 무예 기량 : 다음 필사의 일격 또는 회전베기의 공격력이 (전투력의 385.614%)%만큼 증가합니다. 최대 1번까",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -6882,7 +6882,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 필사의 일격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 필사의 일격 특성 분노 30 근접 사정거리 즉시 6 초 재사용 대기시간 전사 필요 잔혹하게 적을 공격하여 (전투력의 520.121%)의 물리 피해를 입히고 10초 동안 대상이 받는 치유 효과를 50%만큼 감소시킵니다.",
+      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 필사의 일격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 필사의 일격 특성 분노 30 근접 사정거리 즉시 6 초 재사용 대기시간 전사 필요 잔혹하게 적을 공격하여 (전투력의 520.121%)의 물리 피해를 입히고 10초 동안 대상이 받는 치유 효과를 50%만큼 감소시킵니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -21770,7 +21770,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 투사의 혼은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 투사의 혼 특성 즉시 2 분 재사용 대기시간 전사 필요 근접 무기 필요 8초 동안 무기 막기 확률이 100%만큼 증가하고 받는 피해가 30%만큼 감소합니다.",
+      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 투사의 혼은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 투사의 혼 특성 즉시 2 분 재사용 대기시간 전사 필요 근접 무기 필요 8초 동안 무기 막기 확률이 100%만큼 증가하고 받는 피해가 30%만큼 감소합니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -24310,18 +24310,18 @@
       ],
       "name": "거인의 강타",
       "koreanName": "거인의 강타",
-      "englishName": "",
+      "englishName": "Colossus Smash",
       "icon": "inv_warbreaker",
       "iconName": "inv_warbreaker",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "45초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 거인의 강타은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 거인의 강타 특성 즉시 45 초 재사용 대기시간 전사 필요 근접 무기 필요 지면을 강타하여 10미터 내의 모든 적의 방어구를 조각내고 (전투력의 306.263%)의 물리 피해를 입힙니다. 적중당한 적에게 입히는 피해가 10초 동안 30%만큼 증가합니다. 8명을 초과하는 대상에게는 감소된 피해를 입힙니다. 무기 Gen",
+      "description": "자신 주변 10미터 내의 적에게 물리 피해를 입히고, 적중한 적에게 자신이 입히는 피해를 10초 동안 30% 증가시킨다. 8명을 초과하면 직접 타격 피해가 감소한다. 기본 쿨다운은 45초이며 근접 무기가 필요하다.  12.1에서는 단일과 광역 모두 이 스킬을 사용한다. 삭제된 전쟁파괴자를 별도 광역 선택지로 세지 않는다. 피해 증가 효과는 처음 타격에 맞은 적에게 적용되므로 뒤늦게 합류하거나 처음부터 범위 밖에 있던 적과 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36080,7 +36080,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 0,
-        "linkDensity": 0.041,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -37849,7 +37849,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "살상의 기회은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 살상의 기회 특성 전사 필요 요구 레벨 45 [ 전쟁파괴자 / 거인의 강타] 사용 시 가속이 10%만큼 증가합니다. 생명력이 35% 미만으로 떨어진 대상이 있다면 가속이 20%만큼 증가합니다. [ 전쟁파괴자 / 거인의 강타]의 지속시간 동안 유지됩니다.",
+      "description": "살상의 기회은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 살상의 기회 특성 전사 필요 요구 레벨 45 [ 거인의 강타 / 거인의 강타] 사용 시 가속이 10%만큼 증가합니다. 생명력이 35% 미만으로 떨어진 대상이 있다면 가속이 20%만큼 증가합니다. [ 거인의 강타 / 거인의 강타]의 지속시간 동안 유지됩니다.",
       "category": "spec-talent",
       "tags": [],
       "patch": "12.0.5",
@@ -39286,7 +39286,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 해골 쪼개기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 해골 쪼개기 특성 근접 사정거리 즉시 21 초 재사용 대기시간 전사 필요 요구 레벨 15 근접 무기 필요 적의 해골을 강타하여 (전투력의 202.488%)의 물리 피해를 입힙니다. 해골 쪼개기 사용 시 10초 동안 대상에게 부여된 분쇄 및 치명상이 100%만큼 더 빨리 피해를 입히게 합니다. ( 150 / 10)의 ",
+      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 해골 쪼개기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 해골 쪼개기 특성 근접 사정거리 즉시 21 초 재사용 대기시간 전사 필요 요구 레벨 15 근접 무기 필요 적의 해골을 강타하여 (전투력의 202.488%)의 물리 피해를 입힙니다. 해골 쪼개기 사용 시 10초 동안 대상에게 부여된 분쇄 및 치명상이 100%만큼 더 빨리 피해를 입히게 합니다. ( 150 / 10)의 분노를 생성합니다",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -39356,7 +39356,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -39563,54 +39563,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\일격무쌍.md",
-        "lastUpdate": ""
-      }
-    },
-    "262161": {
-      "id": "262161",
-      "type": "skill",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "전쟁파괴자",
-      "koreanName": "전쟁파괴자",
-      "englishName": "",
-      "icon": "inv_warbreaker",
-      "iconName": "inv_warbreaker",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 전쟁파괴자은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 전쟁파괴자 특성 즉시 45 초 재사용 대기시간 전사 필요 요구 레벨 40 지면을 강타하여 10미터 내의 모든 적의 방어구를 조각내고 (전투력의 306.263%)의 물리 피해를 입힙니다. 적중당한 적에게 입히는 피해가 10초 동안 30%만큼 증가합니다.",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_warbreaker.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_warbreaker.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_warbreaker.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_warbreaker.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_warbreaker.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.027,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\전쟁파괴자.md",
         "lastUpdate": ""
       }
     },
@@ -41870,7 +41822,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -42213,7 +42165,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 노련한 병사은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 노련한 병사 전사 필요 요구 레벨 11 자동 공격이 치명타로 적중할 경우 생성하는 분노가 10%만큼 증가하고, 광역 공격으로 받는 피해가 5%만큼 감소합니다.",
+      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 구간에 필사의 일격과 마무리 일격을 집중한다. 노련한 병사은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 노련한 병사 전사 필요 요구 레벨 11 자동 공격이 치명타로 적중할 경우 생성하는 분노가 10%만큼 증가하고, 광역 공격으로 받는 피해가 5%만큼 감소합니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.0.5",
@@ -42235,7 +42187,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -45862,7 +45814,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -59777,7 +59729,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -62704,7 +62656,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -63519,7 +63471,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "힘의 시험은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 힘의 시험 전사 필요 [ 전쟁파괴자 / 거인의 강타] 만료 시 [ 전쟁파괴자 / 거인의 강타] 지속시간 동안 공격에 소모한 10의 분노마다 힘이 1%만큼 증가합니다. 12초 동안 지속됩니다.",
+      "description": "힘의 시험은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 힘의 시험 전사 필요 [ 거인의 강타 / 거인의 강타] 만료 시 [ 거인의 강타 / 거인의 강타] 지속시간 동안 공격에 소모한 10의 분노마다 힘이 1%만큼 증가합니다. 12초 동안 지속됩니다.",
       "category": "spec-talent",
       "tags": [],
       "patch": "12.0.5",
@@ -68396,7 +68348,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -139984,14 +139936,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ambush.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {

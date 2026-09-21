@@ -162,4 +162,11 @@ assert.deepEqual(synergies.warrior_arms_ignore_pain_colossus.participants, ['127
 assert.deepEqual(synergies.warrior_protection_ignore_pain_colossus.participants, ['190456', '429644', '2565']);
 assert.equal(skills[383292], undefined, 'Retired Juggernaut must not return to the live DB');
 assert.ok(!JSON.stringify(synergies).includes('383292'), 'Retired Juggernaut must not remain in synergy edges');
+assert.equal(skills[262161], undefined, 'Retired Warbreaker must not return');
+assert.equal(skills[167105].patch, '12.1');
+assert.equal(skills[167105].cooldown, '45초');
+assert.match(skills[167105].description, /10미터.*10초.*30%/);
+assert.ok(!JSON.stringify(synergies).includes('262161'));
+assert.ok(!guide.includes('262161') && !guide.includes('전쟁파괴자'));
+assert.deepEqual(synergies['warrior-arms-warbreaker-sweeping-strikes'].participants, ['167105', '845', '334779', '227847']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

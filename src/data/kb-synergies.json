@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:38:05.397Z",
+    "generatedAt": "2026-09-21T18:44:23.536Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -216,6 +216,7 @@
       "slayer-hero-package": 1,
       "talent-mechanic": 3,
       "burst-window-core": 1,
+      "multi-target-core": 1,
       "absorb-strength": 1,
       "execute-availability": 1,
       "hero-talent-damage": 4,
@@ -223,12 +224,11 @@
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
-      "multi-target-core": 1,
       "proc-charge-engine": 1,
       "bleed-application": 1,
       "bleed-rage-sustain": 1,
-      "slayer-cooldown-link": 1,
       "aoe-cooldown-planning": 1,
+      "slayer-cooldown-link": 1,
       "two-target-followup": 1,
       "absorb-budget": 1,
       "damage-rage-sequence": 1,
@@ -19671,7 +19671,6 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가",
@@ -19693,6 +19692,50 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의-강타-필사의-일격-제압.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior-arms-warbreaker-sweeping-strikes": {
+      "id": "warrior-arms-warbreaker-sweeping-strikes",
+      "name": "거인의-강타-회전베기-부수적인-피해",
+      "type": "synergy",
+      "synergyType": "multi-target-core",
+      "participants": [
+        "167105",
+        "845",
+        "334779",
+        "227847"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.0.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\거인의-강타-회전베기-부수적인-피해.md",
         "lastUpdate": ""
       }
     },
@@ -20000,50 +20043,6 @@
         "lastUpdate": ""
       }
     },
-    "warrior-arms-warbreaker-sweeping-strikes": {
-      "id": "warrior-arms-warbreaker-sweeping-strikes",
-      "name": "전쟁파괴자-회전베기-부수적인-피해",
-      "type": "synergy",
-      "synergyType": "multi-target-core",
-      "participants": [
-        "262161",
-        "845",
-        "334779",
-        "227847"
-      ],
-      "class": "Warrior",
-      "spec": "무기",
-      "specs": [
-        "Arms"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전쟁파괴자-회전베기-부수적인-피해.md",
-        "lastUpdate": ""
-      }
-    },
     "warrior_arms_tide_of_battle": {
       "id": "warrior_arms_tide_of_battle",
       "name": "전투의-해일-제압-마무리",
@@ -20221,6 +20220,46 @@
         "lastUpdate": ""
       }
     },
+    "warrior-arms-bladestorm-warbreaker-aoe": {
+      "id": "warrior-arms-bladestorm-warbreaker-aoe",
+      "name": "칼날폭풍-거인의-강타-광역-쿨기",
+      "type": "synergy",
+      "synergyType": "aoe-cooldown-planning",
+      "participants": [
+        "227847",
+        "167105",
+        "385512",
+        "845"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.0.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-거인의-강타-광역-쿨기.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-bladestorm-slayer": {
       "id": "warrior-arms-bladestorm-slayer",
       "name": "칼날폭풍-불안정한-정신-학살자의-지배",
@@ -20253,46 +20292,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-불안정한-정신-학살자의-지배.md",
-        "lastUpdate": ""
-      }
-    },
-    "warrior-arms-bladestorm-warbreaker-aoe": {
-      "id": "warrior-arms-bladestorm-warbreaker-aoe",
-      "name": "칼날폭풍-전쟁파괴자-광역-쿨기",
-      "type": "synergy",
-      "synergyType": "aoe-cooldown-planning",
-      "participants": [
-        "227847",
-        "262161",
-        "385512",
-        "845"
-      ],
-      "class": "Warrior",
-      "spec": "무기",
-      "specs": [
-        "Arms"
-      ],
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-전쟁파괴자-광역-쿨기.md",
         "lastUpdate": ""
       }
     },
