@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:33:00.443Z",
+    "generatedAt": "2026-09-21T04:42:15.695Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2904,
-        "withSynergies": 1989,
+        "withSynergies": 1990,
         "avgLinkDensity": "0.039"
       }
     }
@@ -4750,14 +4750,14 @@
       "icon": "ability_poisonsting",
       "iconName": "ability_poisonsting",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 신경 마취 독 (Crippling Poison)",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "1.5초에 걸쳐 무기에 비치명독을 바르며, 무기 강화는 1시간 유지된다. 공격 시 기본 30% 확률로 대상의 이동 속도를 12초 동안 50% 감소시킨다. 공격 속도나 주문 시전 속도를 낮추는 마취 독과는 다른 효과다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4776,7 +4776,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -5480,14 +5480,14 @@
       "icon": "spell_nature_nullifydisease",
       "iconName": "spell_nature_nullifydisease",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "없음",
+      "castTime": "1.5초",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마취 독 (Numbing Poison)",
+      "description": "특성을 선택하면 사용할 수 있는 비치명독 도포 기술이다. 1.5초에 걸쳐 바르며 무기 강화는 1시간 유지된다. 공격 시 기본 30% 확률로 대상의 공격 및 시전 속도를 10초 동안 15% 감소시킨다. 독의 대가 조건부 툴팁은 18%이며, 이를 기본 수치로 사용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5506,7 +5506,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -6508,14 +6508,14 @@
       "icon": "inv_misc_herb_16",
       "iconName": "inv_misc_herb_16",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 상처 감염 독 (Wound Poison)",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "1.5초에 걸쳐 무기에 치명독을 바르며, 무기 강화는 1시간 유지된다. 공격 시 기본 30% 확률로 자연 피해를 주고 대상이 받는 치유 효과를 12초 동안 중첩당 8% 감소시킨다. 기본 최대 3중첩으로 치유 감소는 24%이며, 독 피해량 증가 효과와는 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6534,7 +6534,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -25227,9 +25227,7 @@
       "class": "Rogue",
       "spec": "공용",
       "specs": [
-        "Assassination",
-        "Outlaw",
-        "Subtlety"
+        "Assassination"
       ],
       "name": "독 칼",
       "koreanName": "독 칼",
@@ -25237,14 +25235,14 @@
       "icon": "ability_rogue_poisonedknife",
       "iconName": "ability_rogue_poisonedknife",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 독 칼 (Poisoned Knife)",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "기력 40",
+      "range": "30야드",
+      "description": "암살 전용 원거리 공격이다. 기력 40을 소모해 30야드 내 대상에게 독을 바른 칼을 던지고, 현재 활성화한 치명독과 비치명독을 적용하며 연계 점수 1점을 얻는다. 독칼(5938, Shiv)과 이름이 비슷하지만 다른 기술이며, 그 기술의 독 피해 증폭 효과를 독 칼에 붙이지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -25256,14 +25254,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_poisonedknife.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/순간효과독"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.036,
+        "synergyCount": 2,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -43323,14 +43324,14 @@
       "icon": "ability_poisons",
       "iconName": "ability_poisons",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 순간 효과 독 (Instant Poison)",
+      "cooldown": "없음",
+      "castTime": "1.5초",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "1.5초에 걸쳐 무기에 치명독을 바르며, 무기 강화는 1시간 유지된다. 공격 시 기본 30% 확률로 즉시 자연 피해를 준다. 이름의 순간 효과는 적에게 피해가 들어가는 방식으로, 무기에 독을 바르는 시전 시간이 즉시라는 뜻은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43349,7 +43350,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -112473,14 +112474,14 @@
       "icon": "inv_ability_rogue_echoingreprimand",
       "iconName": "inv_ability_rogue_echoingreprimand",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 울려퍼지는 문책 (Echoing Reprimand)",
+      "description": "과충전된 연계 점수를 소모하면 다음 생성 기술에 물리 추가 공격이 붙는 지속 효과다. 툴팁에 명시된 후속 기술은 잠행의 기습, 무법의 사악한 일격, 암살의 절단이다. 현재 툴팁의 추가 공격 계수는 전투력의 118%이며, 과거의 별도 액티브 울려퍼지는 문책을 직접 시전하는 방식이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112499,7 +112500,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {

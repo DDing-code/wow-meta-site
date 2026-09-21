@@ -519,6 +519,12 @@ function main() {
   const matchesGuideScope = new Function('record', 'guide', 'includeCommon', 'commonSpecs', extractFunctionBody(guideDetailSource, 'recordMatchesGuide'));
   const blur = skills.find(skill => skill.id === '212800');
   const acrobatic = skills.find(skill => skill.id === '455143');
+  for (const [spellId, owner] of [['185565', 'rogue-assassination'], ['114014', 'rogue-subtlety']]) {
+    const spell = skills.find(skill => skill.id === spellId);
+    for (const id of ['rogue-assassination', 'rogue-outlaw', 'rogue-subtlety']) {
+      assert(matchesGuideScope(spell, guideRecordMap.get(id), true, COMMON_SPECS) === (id === owner), 'Common storage must respect ranged builder scope: ' + spellId + ' / ' + id);
+    }
+  }
   assert(matchesGuideScope(acrobatic, guideRecordMap.get('rogue-outlaw'), true, COMMON_SPECS), 'Acrobatic Strikes must remain available to Outlaw');
   for (const id of ['rogue-assassination', 'rogue-subtlety']) {
     assert(!matchesGuideScope(acrobatic, guideRecordMap.get(id), true, COMMON_SPECS), 'Common storage must not leak Acrobatic Strikes into ' + id);
