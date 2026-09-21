@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:59:14.737Z",
+    "generatedAt": "2026-09-21T19:02:17.239Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2977,
     "rawTotalSkills": 2977,
     "duplicateIds": [],
-    "totalSynergies": 593,
+    "totalSynergies": 594,
     "stats": {
       "total": 2977,
       "byType": {
@@ -31849,18 +31849,18 @@
       ],
       "name": "전투의 열정",
       "koreanName": "전투의 열정",
-      "englishName": "",
+      "englishName": "Fervor of Battle",
       "icon": "ability_rogue_waylay",
       "iconName": "ability_rogue_waylay",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "전투의 열정은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전투의 열정 특성 전사 필요 요구 레벨 30 회전베기 또는 소용돌이가 3명 이상의 대상에게 적중하면 주 대상에게 격돌을 시전합니다. 이 격돌은 50%의 추가 피해를 입힙니다.",
+      "description": "회전베기 또는 소용돌이가 3명 이상의 대상에게 적중하면 주 대상에게 격돌을 추가로 시전한다. 이 격돌은 50%의 추가 피해를 입힌다. 주변에 적이 3명 있다는 사실만으로 발동하지 않으며 해당 광역 공격이 실제로 3명 이상에게 맞아야 한다.  50% 보너스는 이 특성으로 발생한 격돌에 적용된다. 직접 누른 모든 격돌이나 회전베기 전체 피해가 일괄 50% 증가한다고 해석하지 않는다. 로그의 격돌 피해에 자동 발동이 섞일 수 있으므로 피해 횟수를 그대로 수동 시전 횟수로 세지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31879,7 +31879,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {

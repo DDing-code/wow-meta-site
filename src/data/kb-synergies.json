@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:59:14.738Z",
+    "generatedAt": "2026-09-21T19:02:17.240Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 593,
-    "rawTotalSynergies": 593,
+    "totalSynergies": 594,
+    "rawTotalSynergies": 594,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -225,6 +225,7 @@
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
       "charge-reset-chain": 1,
+      "triggered-attack": 1,
       "proc-charge-engine": 1,
       "bleed-application": 1,
       "aoe-cooldown-planning": 1,
@@ -267,7 +268,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 56
+      "Warrior": 57
     }
   },
   "synergies": {
@@ -20071,6 +20072,33 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전투의-해일-제압-마무리.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_fervor_triggered_slam": {
+      "id": "warrior_arms_fervor_triggered_slam",
+      "name": "전투의열정-광역적중-자동격돌",
+      "type": "synergy",
+      "synergyType": "triggered-attack",
+      "participants": [
+        "202316",
+        "845",
+        "1680",
+        "1464"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전투의열정-광역적중-자동격돌.md",
         "lastUpdate": ""
       }
     },
