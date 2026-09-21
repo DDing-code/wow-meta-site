@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Assassination resource audit, 2026-09-21
+
+- Reviewed Shiv 5938, Toxic Stiletto 1267182 and automatic Thistle Tea effect 381623 against current Korean tooltips. Added separate automatic talent 469779 and manual talent 1298826; the fixed 12.1 SimulationCraft trait table places both talents in choice node 90756.
+- Corrected Shiv to baseline 30 energy/30 seconds, reduced to 10 energy/15 seconds by Toxic Stiletto. Replaced the old poison-dispel and mandatory 7-point trigger wording in its relationship.
+- Regression scope is now 63 reviewed records and seven relationships. The complete Assassination manuscript, rotation charts and production deployment are still pending.
+
 Checked against the runtime manuscript map on 2026-09-21. The objective remains all 40 specializations, including canonical KB notes, generated spell/synergy data, authored guide text and charts. A patch label or a passing structural test alone is not completion evidence. There are 32 manuscripts labeled 12.1 and 8 still labeled 12.0.5; the older 12.1 manuscripts still require the re-audit below.
 
 ## Updated in this rollout

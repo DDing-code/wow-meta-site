@@ -180,4 +180,21 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 58 atomic notes, 6 relationships, 7 retired talents passed');
+for (const id of ['5938', '1267182', '381623', '469779', '1298826']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(skills[id].specs.includes('Assassination'), id);
+}
+assert.equal(skills['5938'].resourceCost, '기력 30');
+assert.equal(skills['5938'].cooldown, '기본 30초');
+assert.match(skills['1267182'].description, /기력 소모량을 20.*15초.*3미터/);
+assert.equal(skills['381623'].type, 'atomic-skill');
+assert.match(skills['381623'].description, /자동.*30 미만.*기력 100/);
+assert.equal(skills['469779'].type, 'talent');
+assert.equal(skills['1298826'].type, 'talent');
+assert.match(skills['469779'].description, /자동.*381623.*1298826/);
+assert.match(skills['1298826'].description, /직접 사용.*기력 100.*최대 3회/);
+const shiv = synergies.rogue_assassination_shiv_darkest_night_combo;
+assert.equal(shiv.patch, '12.1');
+assert.deepEqual(shiv.participants, ['5938', '1267182', '457058', '32645']);
+assert.match(shiv.description, /최소 발동 조건은 5점 이상/);
+console.log('Assassination reviewed subset: 63 atomic notes, 7 relationships, 7 retired talents passed');

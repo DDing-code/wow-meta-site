@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:18:36.131Z",
+    "generatedAt": "2026-09-21T00:27:11.705Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14276,38 +14276,31 @@
     },
     "rogue_assassination_shiv_darkest_night_combo": {
       "id": "rogue_assassination_shiv_darkest_night_combo",
-      "name": "독칼-부식성분사-독창",
+      "name": "독칼과 연계 점수 보충",
+      "description": "독 묻은 스틸레토를 선택한 독칼은 기력 10으로 연계 점수 1점을 채운다. 어둡고 어두운 밤의 최소 발동 조건은 5점 이상이며 최대 점수 운용과 구분한다.",
       "type": "synergy",
       "synergyType": "combo_point_correction",
       "participants": [
         "5938",
         "1267182",
         "457058",
-        "32645",
-        "457052",
-        "385627",
-        "360194"
+        "32645"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼-185565",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독묻은스틸레토",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독묻은스틸레토"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\독칼-부식성분사-독창.md",

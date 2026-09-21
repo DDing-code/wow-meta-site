@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:18:36.130Z",
+    "generatedAt": "2026-09-21T00:27:11.703Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2974,
-    "rawTotalSkills": 2974,
+    "totalSkills": 2976,
+    "rawTotalSkills": 2976,
     "duplicateIds": [],
     "totalSynergies": 565,
     "stats": {
-      "total": 2974,
+      "total": 2976,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 560,
+        "atomic-skill": 561,
         "proc": 29,
         "skill": 131,
-        "talent": 996,
+        "talent": 997,
         "spec-talent": 392,
         "passive": 62,
         "hero-tree": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 291,
+        "Rogue": 293,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -82,7 +82,7 @@
         "Priest-Discipline": 62,
         "Priest-신성": 46,
         "Priest-Shadow": 68,
-        "Rogue-공용": 129,
+        "Rogue-공용": 131,
         "Rogue-무법": 53,
         "Rogue-암살": 50,
         "Rogue-잠행": 59,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2899,
-        "withSynergies": 1877,
+        "withWikilinks": 2901,
+        "withSynergies": 1879,
         "avgLinkDensity": "0.040"
       }
     }
@@ -5626,14 +5626,14 @@
       "icon": "inv_throwingknife_04",
       "iconName": "inv_throwingknife_04",
       "school": "",
-      "cooldown": "25초",
+      "cooldown": "기본 30초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "기력 30",
       "range": "근접",
-      "description": "# 독칼 (Shiv)",
+      "description": "기력 30을 소모하는 보조 무기 공격으로 물리 피해를 입히고 연계 점수 1점을 생성한다. 대상의 모든 격노 효과를 무효화하고, 활성화된 비치명독을 농축된 형태로 적용한다. 기본 재사용 대기시간은 30초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5652,7 +5652,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.068,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -54746,7 +54746,7 @@
     },
     "381623": {
       "id": "381623",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "Rogue",
       "spec": "공용",
       "specs": [
@@ -54760,14 +54760,14 @@
       "icon": "inv_drink_milk_05",
       "iconName": "inv_drink_milk_05",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "충전당 1분, 최대 3회",
+      "castTime": "자동 발동",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 엉겅퀴 차 (Thistle Tea)",
-      "category": "talent",
+      "description": "자동 선택 특성(469779)을 배웠고 사용 가능한 충전이 있을 때, 기력이 30 미만으로 떨어지면 자동으로 기력 100을 회복한다. 381623은 이 자동 발동 효과의 주문 ID다. 충전당 재사용 대기시간은 1분이며 최대 3회 충전된다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -54786,7 +54786,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -111775,6 +111775,59 @@
         "lastUpdate": ""
       }
     },
+    "469779": {
+      "id": "469779",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "공용",
+      "specs": [
+        "Assassination",
+        "Outlaw",
+        "Subtlety"
+      ],
+      "name": "엉겅퀴 차",
+      "koreanName": "엉겅퀴 차",
+      "englishName": "Thistle Tea",
+      "icon": "inv_drink_milk_05",
+      "iconName": "inv_drink_milk_05",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "기력이 30 미만으로 떨어지면 엉겅퀴 차를 자동으로 마셔 기력 100을 회복하도록 하는 특성이다. 실제 자동 회복 효과는 381623이며, 충전이 있을 때만 발동한다. 수동 사용 특성 1298826과 같은 선택 노드에 있어 둘을 동시에 선택하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_05.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_drink_milk_05.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_drink_milk_05.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_drink_milk_05.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_05.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/엉겅퀴차",
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/엉겅퀴차-수동"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Talents\\엉겅퀴차-자동.md",
+        "lastUpdate": ""
+      }
+    },
     "469883": {
       "id": "469883",
       "type": "talent",
@@ -138325,14 +138378,14 @@
       "icon": "ability_rogue_poisonedknife",
       "iconName": "ability_rogue_poisonedknife",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 독 묻은 스틸레토 (Toxic Stiletto)",
+      "description": "독칼의 기력 소모량을 20, 재사용 대기시간을 15초 줄이고 사정거리를 3미터 늘린다. 다른 보정이 없다면 독칼은 기력 10을 쓰며 15초마다 사용할 수 있다. 연계 점수 생성량이나 독 피해를 직접 늘리는 효과는 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138351,7 +138404,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -151818,6 +151871,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\불안정한독소.md",
+        "lastUpdate": ""
+      }
+    },
+    "1298826": {
+      "id": "1298826",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "공용",
+      "specs": [
+        "Assassination",
+        "Outlaw",
+        "Subtlety"
+      ],
+      "name": "엉겅퀴 차",
+      "koreanName": "엉겅퀴 차",
+      "englishName": "Thistle Tea",
+      "icon": "inv_drink_milk_05",
+      "iconName": "inv_drink_milk_05",
+      "school": "",
+      "cooldown": "충전당 1분, 최대 3회",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "직접 사용해 기력 100을 회복한다. 충전당 재사용 대기시간은 1분이며 최대 3회 충전된다. 자동 사용 특성 469779과 같은 선택 노드에 있는 별도 선택지로, 기력 30 미만 자동 발동 조건은 없다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_05.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_drink_milk_05.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_drink_milk_05.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_drink_milk_05.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_05.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/엉겅퀴차-자동"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.012,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Talents\\엉겅퀴차-수동.md",
         "lastUpdate": ""
       }
     },
