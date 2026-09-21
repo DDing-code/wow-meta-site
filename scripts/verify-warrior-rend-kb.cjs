@@ -477,4 +477,11 @@ for (const id of [46917, 81099, 76856]) {
 assert.match(skills[81099].description, /형상변환.*선택 특성이 아닙니다/);
 assert.match(skills[76856].description, /특화에 따라.*중복 계산/);
 assert.ok(guide.includes('실제 장착 무기를 확인하세요'));
+for (const id of [206315, 316402]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[206315].description, /대상 생명력 35% 미만.*1.5초.*전역/);
+assert.match(skills[316402].description, /기본 분노 20.*환급.*소비한 분노가 아니/);
+assert.ok(guide.includes('무기 전사의 환급 규칙을 가져오면 안 됩니다'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
