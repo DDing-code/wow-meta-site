@@ -217,4 +217,14 @@ assert.match(skills[1269306].description, /치명타 피해.*1포인트.*2.5%.*2
 assert.match(skills[1269307].description, /다음 거인의 강타.*3%.*5중첩/s);
 assert.deepEqual(synergies.warrior_arms_heroic_strike_stack_layers.participants, ['1269314', '1269383', '1269306', '1269307', '167105']);
 assert.ok(guide.includes('방어도 관통 중첩과 다음 거인의 강타 준비 중첩을 구분'));
+for (const id of [1296643, 1296644]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+  assert.equal(skills[id].icon, 'trade_engineering');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[1296643].description, /10%.*8미터.*100%.*5명/s);
+assert.match(skills[1296644].description, /15%.*20%.*5중첩/s);
+assert.deepEqual(synergies.warrior_arms_season2_slam_consumption.participants, ['1296643', '1296644', '12294', '7384', '1464', '1269383', '202316']);
+assert.ok(guide.includes('시즌 2 세트는 격돌의 강화와 소비를 연결한다'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

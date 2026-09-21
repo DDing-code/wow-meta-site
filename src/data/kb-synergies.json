@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:15:57.695Z",
+    "generatedAt": "2026-09-21T19:21:11.016Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 595,
-    "rawTotalSynergies": 595,
+    "totalSynergies": 596,
+    "rawTotalSynergies": 596,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -224,7 +224,7 @@
       "execute-window": 1,
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
-      "stack-consumption": 1,
+      "stack-consumption": 2,
       "charge-reset-chain": 1,
       "triggered-attack": 1,
       "proc-charge-engine": 1,
@@ -269,7 +269,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 58
+      "Warrior": 59
     }
   },
   "synergies": {
@@ -19985,6 +19985,36 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\쇠날발톱-분쇄-출혈강화.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_season2_slam_consumption": {
+      "id": "warrior_arms_season2_slam_consumption",
+      "name": "시즌2-격돌-강화소비",
+      "type": "synergy",
+      "synergyType": "stack-consumption",
+      "participants": [
+        "1296643",
+        "1296644",
+        "12294",
+        "7384",
+        "1464",
+        "1269383",
+        "202316"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\시즌2-격돌-강화소비.md",
         "lastUpdate": ""
       }
     },

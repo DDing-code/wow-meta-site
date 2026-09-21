@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:15:57.694Z",
+    "generatedAt": "2026-09-21T19:21:11.014Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2977,
-    "rawTotalSkills": 2977,
+    "totalSkills": 2979,
+    "rawTotalSkills": 2979,
     "duplicateIds": [],
-    "totalSynergies": 595,
+    "totalSynergies": 596,
     "stats": {
-      "total": 2977,
+      "total": 2979,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -20,7 +20,7 @@
         "spec-talent": 390,
         "passive": 76,
         "hero-tree": 2,
-        "set-bonus": 13,
+        "set-bonus": 15,
         "tier-set": 2,
         "class-talent": 93,
         "debuff": 6,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 265
+        "Warrior": 267
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -97,12 +97,12 @@
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
         "Warrior-Arms": 43,
-        "Warrior-무기": 1,
+        "Warrior-무기": 3,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2894,
+        "withWikilinks": 2896,
         "withSynergies": 2018,
         "avgLinkDensity": "0.039"
       }
@@ -151295,6 +151295,102 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Buffs\\12.1-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296643": {
+      "id": "1296643",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "name": "Warrior Arms 12.1 Class Set 2pc",
+      "koreanName": "Warrior Arms 12.1 Class Set 2pc",
+      "englishName": "Warrior Arms 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "필사의 일격과 마무리 일격의 공격력이 10% 증가한다. 격돌 사용 시 대상 주변 8미터의 적에게 전투력의 100%에 해당하는 추가 피해가 발생한다. 이 주변 피해는 5명을 초과하면 감소한다. 모든 격돌 피해가 100% 증가하거나 모든 적에게 주 대상과 동일한 피해를 주는 효과가 아니다.  영웅의 일격은 격돌의 수정치를 이어받는다. SimulationCraft 12.1 구현에서도 격돌과 영웅의 일격이 공통으로 세트의 추가 공격을 실행한다. 한국어 툴팁에 효과 이름은 영문으로 남아 있어 공식 한글명으로 임의 번역하지 않았다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.012,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296644": {
+      "id": "1296644",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "name": "Warrior Arms 12.1 Class Set 4pc",
+      "koreanName": "Warrior Arms 12.1 Class Set 4pc",
+      "englishName": "Warrior Arms 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "제압의 공격력이 15% 증가한다. 필사의 일격과 제압이 다음 격돌의 공격력을 20%씩 강화하며 최대 5중첩까지 쌓인다. 상시 모든 격돌을 강화하는 효과가 아니라 생성한 중첩을 다음 공격에 소비하는 효과다. 툴팁의 500밀리초는 이 지속 효과의 내부 제한이며 플레이어가 누르는 별도 쿨다운 기술이 아니다.  SimulationCraft 12.1 구현에서 필사의 일격과 제압은 winding_up을 생성하고, 격돌과 영웅의 일격의 공통 실행부가 이를 소비한다. 전투의 열정으로 발생하는 격돌도 같은 실행부를 쓰므로 수동 격돌 시전만으로 세트",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.011,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
