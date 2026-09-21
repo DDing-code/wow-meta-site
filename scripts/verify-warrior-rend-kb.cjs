@@ -394,4 +394,8 @@ for (const id of [315720, 388933]) {
 assert.equal(synergies['warrior-fury-raging-blow-onslaught-generation'].name, '분노의-강타-피의-갈증-분노-생성');
 assert.ok(!guide.includes('피의 갈증/분노의 강타/맹공'));
 assert.ok(!guide.includes('맹공: 비는 구간'));
+for (const id of [383459, 383922, 388004, 388049, 389603, 391683, 392536, 394329]) {
+  assert.equal(skills[id], undefined, 'Inactive Fury talents must not be selectable');
+  assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive Fury talents must not survive graph links');
+}
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

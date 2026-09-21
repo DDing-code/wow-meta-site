@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T21:05:16.793Z",
+    "generatedAt": "2026-09-21T21:08:27.828Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2962,
-    "rawTotalSkills": 2962,
+    "totalSkills": 2954,
+    "rawTotalSkills": 2954,
     "duplicateIds": [],
     "totalSynergies": 598,
     "stats": {
-      "total": 2962,
+      "total": 2954,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 128,
         "talent": 996,
-        "spec-talent": 388,
+        "spec-talent": 380,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 15,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 250
+        "Warrior": 242
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -99,12 +99,12 @@
         "Warrior-Arms": 40,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
-        "Warrior-Fury": 51,
+        "Warrior-Fury": 43,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2879,
-        "withSynergies": 2018,
+        "withWikilinks": 2871,
+        "withSynergies": 2017,
         "avgLinkDensity": "0.039"
       }
     }
@@ -60154,54 +60154,6 @@
         "lastUpdate": ""
       }
     },
-    "383459": {
-      "id": "383459",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "신속한 일격",
-      "koreanName": "신속한 일격",
-      "englishName": "",
-      "icon": "ability_rogue_sprint",
-      "iconName": "ability_rogue_sprint",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "신속한 일격은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 신속한 일격 전사 필요 가속이 1%만큼 증가하고 분노의 강타 및 피의 갈증이 1의 분노를 추가로 생성합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_sprint.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_sprint.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_sprint.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\신속한-일격.md",
-        "lastUpdate": ""
-      }
-    },
     "383468": {
       "id": "383468",
       "type": "spec-talent",
@@ -61222,54 +61174,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\흉포한-멸시.md",
-        "lastUpdate": ""
-      }
-    },
-    "383922": {
-      "id": "383922",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "광기의 심연",
-      "koreanName": "광기의 심연",
-      "englishName": "",
-      "icon": "racial_troll_berserk",
-      "iconName": "racial_troll_berserk",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "광기의 심연은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 광기의 심연 전사 필요 무모한 희생의 지속시간이 4.0초만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/racial_troll_berserk.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/racial_troll_berserk.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/racial_troll_berserk.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/racial_troll_berserk.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/racial_troll_berserk.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\광기의-심연.md",
         "lastUpdate": ""
       }
     },
@@ -66176,57 +66080,6 @@
         "lastUpdate": ""
       }
     },
-    "388004": {
-      "id": "388004",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "학살의 일격",
-      "koreanName": "학살의 일격",
-      "englishName": "",
-      "icon": "inv_axe_2h_orcwarrior_c_01",
-      "iconName": "inv_axe_2h_orcwarrior_c_01",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "가 다음  가치를 끌어올리는 연결 특성이다. 과  사이를 이어 준다.  공식 툴팁 요약: 학살의 일격 전사 필요 분노의 강타 시전 시 다음 광란의 모든 공격이 20%의 추가 피해를 입힙니다. 최대 5번까지 중첩됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_2h_orcwarrior_c_01.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_axe_2h_orcwarrior_c_01.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_axe_2h_orcwarrior_c_01.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_2h_orcwarrior_c_01.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_2h_orcwarrior_c_01.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
-          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.032,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\학살의-일격.md",
-        "lastUpdate": ""
-      }
-    },
     "388020": {
       "id": "388020",
       "type": "talent",
@@ -66419,54 +66272,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\위론의속삭임.md",
-        "lastUpdate": ""
-      }
-    },
-    "388049": {
-      "id": "388049",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "분노의 무장",
-      "koreanName": "분노의 무장",
-      "englishName": "",
-      "icon": "achievement_arena_2v2_5",
-      "iconName": "achievement_arena_2v2_5",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "분노의 무장은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 분노의 무장 전사 필요 분노의 강타가 추가로 1회 충전됩니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/achievement_arena_2v2_5.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/achievement_arena_2v2_5.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/achievement_arena_2v2_5.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/achievement_arena_2v2_5.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_arena_2v2_5.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\분노의-무장.md",
         "lastUpdate": ""
       }
     },
@@ -68102,54 +67907,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Skills\\파수꾼-389539.md",
-        "lastUpdate": ""
-      }
-    },
-    "389603": {
-      "id": "389603",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "걷잡을 수 없는 야성",
-      "koreanName": "걷잡을 수 없는 야성",
-      "englishName": "",
-      "icon": "ability_warrior_endlessrage",
-      "iconName": "ability_warrior_endlessrage",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "걷잡을 수 없는 야성은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 걷잡을 수 없는 야성 전사 필요 광란 사용 시 6%의 확률로 4초 동안 무모한 희생 효과가 부여됩니다. (750밀리초 재사용 대기시간)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_endlessrage.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_endlessrage.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_endlessrage.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\걷잡을-수-없는-야성.md",
         "lastUpdate": ""
       }
     },
@@ -71035,54 +70792,6 @@
         "lastUpdate": ""
       }
     },
-    "391683": {
-      "id": "391683",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "춤추는 칼날",
-      "koreanName": "춤추는 칼날",
-      "englishName": "",
-      "icon": "inv_sword_1h_artifactvigfus_d_01dual",
-      "iconName": "inv_sword_1h_artifactvigfus_d_01dual",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "춤추는 칼날은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 춤추는 칼날 전사 필요 오딘의 격노 사용 시 10초 동안 자동 공격의 공격력과 공격 속도가 30%만큼 증가합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactvigfus_d_01dual.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_1h_artifactvigfus_d_01dual.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_1h_artifactvigfus_d_01dual.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_artifactvigfus_d_01dual.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactvigfus_d_01dual.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\춤추는-칼날.md",
-        "lastUpdate": ""
-      }
-    },
     "391700": {
       "id": "391700",
       "type": "talent",
@@ -71920,54 +71629,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Talents\\죽음예언자.md",
-        "lastUpdate": ""
-      }
-    },
-    "392536": {
-      "id": "392536",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "잿빛 돌격",
-      "koreanName": "잿빛 돌격",
-      "englishName": "",
-      "icon": "warrior_talent_icon_skirmisher",
-      "iconName": "warrior_talent_icon_skirmisher",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "잿빛 돌격은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 잿빛 돌격 전사 필요 마무리 일격 사용 시 15초 동안 마무리 일격 의 치명타 및 극대화율이 10%만큼 증가합니다. 최대 5번까지 중첩됩니다. (500밀리초 재사용 대기시간)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_skirmisher.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_skirmisher.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_skirmisher.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_skirmisher.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_skirmisher.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\잿빛-돌격.md",
         "lastUpdate": ""
       }
     },
@@ -73565,54 +73226,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Talents\\사악한책략.md",
-        "lastUpdate": ""
-      }
-    },
-    "394329": {
-      "id": "394329",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Fury",
-      "specs": [
-        "Fury"
-      ],
-      "name": "티탄의 분노",
-      "koreanName": "티탄의 분노",
-      "englishName": "",
-      "icon": "inv_sword_1h_artifactvigfus_d_02",
-      "iconName": "inv_sword_1h_artifactvigfus_d_02",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "티탄의 분노은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 티탄의 분노 전사 필요 오딘의 격노로 격노 상태가 되고, 대상이 입는 피해가 10%만큼 증가하며 소용돌이를 4번 부여합니다.",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactvigfus_d_02.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_1h_artifactvigfus_d_02.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_1h_artifactvigfus_d_02.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_artifactvigfus_d_02.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactvigfus_d_02.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\티탄의-분노.md",
         "lastUpdate": ""
       }
     },

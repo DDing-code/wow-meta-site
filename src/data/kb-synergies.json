@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T21:05:16.795Z",
+    "generatedAt": "2026-09-21T21:08:27.830Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -20896,8 +20896,6 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/강대한-격노",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/광포한-격노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/걷잡을-수-없는-야성",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/광기의-심연",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/무자비함",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/원한",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/흉포한-멸시",
@@ -20995,12 +20993,8 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/티탄의-분노",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/혼돈의-집중",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노의-무장",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/신속한-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/천벌과-분노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/광기의-심연",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/막무가내"
       ],
       "source": {
@@ -21092,16 +21086,14 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노의-강타-연마",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/신속한-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/흉포한-멸시",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/무자비함"
       ],
@@ -21142,11 +21134,8 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/고기칼",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/소용돌이-연마",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/자르고-베기",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/춤추는-칼날",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노의-강타-연마",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/신속한-일격"
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\소용돌이-고기칼-분노의-강타.md",
@@ -21313,16 +21302,14 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/대학살",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/마무리-일격-연마",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/잿빛-돌격",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/치명적-감각"
       ],
       "source": {
