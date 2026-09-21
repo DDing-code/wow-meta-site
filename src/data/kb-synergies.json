@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:37:08.065Z",
+    "generatedAt": "2026-09-21T01:46:01.699Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 566,
-    "rawTotalSynergies": 566,
+    "totalSynergies": 567,
+    "rawTotalSynergies": 567,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -142,12 +142,13 @@
       "dungeon-utility": 1,
       "stealth-control": 1,
       "movement-planning": 2,
-      "hero-talent-package": 6,
+      "hero-talent-package": 5,
+      "hero_talent_finisher": 4,
       "defensive_utility_matrix": 1,
       "builder_proc_priority": 1,
       "opener_state_alignment": 1,
-      "hero_talent_finisher": 2,
       "cooldown_finisher_feedback": 2,
+      "set_proc_finisher": 1,
       "cleave_gate": 1,
       "execute_priority": 1,
       "poison_finisher_engine": 1,
@@ -162,7 +163,6 @@
       "aoe_bleed_spread": 1,
       "mplus_survival_utility": 1,
       "resource_cooldown_router": 1,
-      "trickster_finisher_window": 1,
       "stealth_window_builder": 1,
       "apex_finisher_setup": 1,
       "finisher_mastery_router": 1,
@@ -248,7 +248,7 @@
       "Paladin": 45,
       "성기사": 10,
       "Priest": 52,
-      "Rogue": 37,
+      "Rogue": 38,
       "Shaman": 34,
       "Warlock": 60,
       "Warrior": 38
@@ -13823,20 +13823,29 @@
     },
     "SY-ROGUE-HERO-TRICKSTER-UNSEEN-BLADE-COUP": {
       "id": "SY-ROGUE-HERO-TRICKSTER-UNSEEN-BLADE-COUP",
-      "name": "영웅특성-Trickster-무형검-최후의일격",
+      "name": "무형검·당혹·강화 마무리 일격의 전문화 차이",
+      "description": "무형검은 당혹과 최후의 일격 준비를 연결한다. 무법은 속결·광기의 학살자, 잠행은 절개·은밀한 기술을 사용하며 무결한 형상의 수치와 광역 효과도 서로 다르다. 통제된 혼돈은 운명결속 동전 효과이므로 이 관계에 포함하지 않는다.",
       "type": "synergy",
-      "synergyType": "hero-talent-package",
+      "synergyType": "hero_talent_finisher",
       "participants": [
         "441146",
         "441321",
         "441423",
-        "441274"
+        "441274",
+        "441263",
+        "441367",
+        "441429",
+        "1276679"
       ],
       "class": "Rogue",
       "spec": "Common",
+      "specs": [
+        "Outlaw",
+        "Subtlety"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 96,
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -13984,36 +13993,34 @@
     },
     "rogue_outlaw_trickster_unseen_coup": {
       "id": "rogue_outlaw_trickster_unseen_coup",
-      "name": "무형검-최후의일격",
+      "name": "무형검에서 강화 속결로 이어지는 흐름",
+      "description": "사악한 일격·매복에서 무형검이 발동하며 영리한 전투원을 선택하면 권총 사격도 발동시킨다. 무형검 4회 후 다음 속결이 최후의 일격으로 강화되고, 무결한 형상 5중첩을 얻는다. 광기의 학살자는 선택 특성에 따라 당혹과 추가 무형검 기회를 연결한다.",
       "type": "synergy",
       "synergyType": "hero_talent_finisher",
       "participants": [
         "441146",
         "441423",
-        "441247",
-        "441403",
-        "441346",
+        "441321",
+        "441274",
+        "441263",
+        "441367",
         "441429",
+        "1276679",
         "193315",
-        "8676",
+        "185763",
         "2098",
+        "51690",
         "13750"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
       "importance": 96,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/난도질"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -14070,6 +14077,42 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\뼈주사위-준비.md",
+        "lastUpdate": ""
+      }
+    },
+    "rogue_outlaw_season2_dispatch": {
+      "id": "rogue_outlaw_season2_dispatch",
+      "name": "시즌 2 발동과 속결 소비",
+      "description": "2세트는 속결 피해를 15% 높인다. 4세트는 사악한 일격·매복에서 20% 확률로 다음 속결을 무료·최대 연계 점수 상당 피해로 강화한다. 피해 계산상 점수와 실제 소비 점수는 구분하며 모든 소비형 효과를 임의로 최대 점수 처리하지 않는다.",
+      "type": "synergy",
+      "synergyType": "set_proc_finisher",
+      "participants": [
+        "1296588",
+        "1296589",
+        "193315",
+        "2098",
+        "79096"
+      ],
+      "class": "Rogue",
+      "spec": "Outlaw",
+      "specs": [
+        "Outlaw"
+      ],
+      "heroTalent": null,
+      "importance": 90,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\시즌2-속결-발동.md",
         "lastUpdate": ""
       }
     },
@@ -14703,34 +14746,32 @@
     },
     "rogue_subtlety_trickster_unseen_coup": {
       "id": "rogue_subtlety_trickster_unseen_coup",
-      "name": "무형검-최후의일격",
+      "name": "무형검에서 강화 절개로 이어지는 흐름",
+      "description": "잠행은 무형검 4회 이후 다음 절개를 최후의 일격으로 강화한다. 무형검·은밀한 기술에서 얻는 무결한 형상은 중첩당 2%이며, 구름 덮개는 어둠의 칼날에서 발동한다. 무법의 속결이나 폭풍의 칼날을 사용하는 구조가 아니다.",
       "type": "synergy",
-      "synergyType": "trickster_finisher_window",
+      "synergyType": "hero_talent_finisher",
       "participants": [
         "441146",
         "441423",
+        "441321",
+        "441274",
+        "441263",
+        "441367",
+        "441429",
+        "1276679",
         "185438",
         "196819",
-        "441429",
-        "441224",
-        "441346",
-        "441247",
-        "441403",
         "121471"
       ],
       "class": "Rogue",
-      "spec": "잠행",
+      "spec": "Subtlety",
       "specs": [
         "Subtlety"
       ],
       "heroTalent": null,
-      "importance": 94,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/그림자일격",
-        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의칼날"
-      ],
+      "importance": 96,
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {

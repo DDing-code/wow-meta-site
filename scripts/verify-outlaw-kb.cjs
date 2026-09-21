@@ -8,7 +8,7 @@ const reviewed = ['315508', '315341', '51690', '13750', '2098', '79096',
   '381989', '256170', '1259481', '14161', '235484', '381828', '381839', '381845',
   '381885', '381990', '383281', '394321', '395422', '428377', '1259457', '1259485',
   '1259492', '1259498', '1259499', '1259612', '35551', '61329', '76806', '195457',
-  '196922', '256165', '256188', '381619', '381877', '1259465'];
+  '196922', '256165', '256188', '381619', '381877', '1259465', '1296588', '1296589'];
 for (const id of reviewed) {
   assert.equal(skills[id]?.patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Outlaw'], id);
@@ -65,4 +65,34 @@ for (const id of ['rogue_outlaw_adrenaline_finishers', 'rogue_outlaw_roll_prepar
   assert.ok(synergies[id].description.length > 60, id);
   for (const spell of synergies[id].participants) assert.ok(skills[spell]?.specs.includes('Outlaw'), spell);
 }
-console.log(`Outlaw reviewed subset: ${reviewed.length} records and 4 relationships passed; full guide audit remains pending`);
+const trickster = ['441146', '441247', '441250', '441263', '441273', '441274',
+  '441321', '441346', '441359', '441367', '441398', '441403', '441415', '441423',
+  '441429', '1276626', '1276630', '1276679'];
+for (const id of trickster) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.deepEqual(skills[id].specs, ['Outlaw', 'Subtlety'], id);
+  assert.ok(skills[id].description.length > 70, id);
+  assert.equal(skills[id].castTime, '지속 효과', id);
+}
+assert.match(skills['441321'].description, /무법.*4%.*잠행.*2%/);
+assert.match(skills['441367'].description, /무법.*25%.*잠행.*7명.*50%/);
+assert.match(skills['441429'].description, /무법은 추가 1중첩.*잠행은 추가 2중첩/);
+assert.match(skills['441423'].description, /4번.*속결.*절개.*5점.*별도 사용 버튼이 아니라/);
+assert.match(skills['1276679'].description, /권총 사격.*20%.*표창 폭풍.*10%/);
+assert.match(skills['1296588'].description, /속결 피해가 15%/);
+assert.match(skills['1296589'].description, /사악한 일격과 매복.*20%.*자원 소모 없이.*최대 연계 점수/);
+for (const id of ['1296588', '1296589']) assert.equal(skills[id].type, 'passive');
+const heroRelationships = ['rogue_outlaw_trickster_unseen_coup',
+  'rogue_subtlety_trickster_unseen_coup', 'SY-ROGUE-HERO-TRICKSTER-UNSEEN-BLADE-COUP',
+  'rogue_outlaw_season2_dispatch'];
+for (const id of heroRelationships) {
+  const relation = synergies[id];
+  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(relation.description.length > 70, id);
+  for (const spell of relation.participants) {
+    assert.ok(skills[spell], spell);
+    for (const spec of relation.specs) assert.ok(skills[spell].specs.includes(spec), `${id}:${spell}:${spec}`);
+  }
+  assert.ok(!relation.participants.includes('1276816'), 'Fatebound talent must not be attached to Trickster');
+}
+console.log(`Outlaw review: ${reviewed.length} local records, ${trickster.length} shared Trickster records and 8 relationships passed; full guide audit remains pending`);

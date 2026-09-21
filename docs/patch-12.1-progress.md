@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Shared Trickster and Outlaw Season 2 data, 2026-09-21
+
+- Replaced 18 shared Trickster placeholders using current Korean/English tooltips. Preserved Outlaw/Subtlety differences: Flawless Form 4%/2%, Nimble Flurry's distinct AoE effects, Cloud Cover's different cooldowns and additional stack limits, and Clever Combatant's Pistol Shot/Shuriken Storm split.
+- Rewrote common, Outlaw and Subtlety hero relationships. Removed stale popularity claims and the unrelated Fatebound Controlled Chaos node from Trickster. Coup de Grace is a transformation of Dispatch/Eviscerate after four Unseen Blade strikes, not a separate button.
+- Added Outlaw Season 2 2pc/4pc records 1296588/1296589 and a finisher relationship. Kept official internal names/icons and added Korean search aliases. Damage-equivalent combo points are not assumed to be actual resource spending.
+- Regression coverage: 54 local records, 18 shared Trickster records and eight relationships. Fatebound, remaining common skills, tier execution details, current build/log evidence and the complete Outlaw manuscript still need work. No production rollout is claimed.
+
 ### Outlaw remaining local talent effects, 2026-09-21
 
 - Manually reviewed 30 more local records against Korean/English tooltips and fixed 12.1 SimulationCraft trait rows. Coverage is now 52 records and four relationships; shared skills, heroes, tier sets and the full manuscript still require work.

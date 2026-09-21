@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:37:08.064Z",
+    "generatedAt": "2026-09-21T01:46:01.698Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2978,
-    "rawTotalSkills": 2978,
+    "totalSkills": 2980,
+    "rawTotalSkills": 2980,
     "duplicateIds": [],
-    "totalSynergies": 566,
+    "totalSynergies": 567,
     "stats": {
-      "total": 2978,
+      "total": 2980,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
@@ -18,7 +18,7 @@
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 66,
+        "passive": 68,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 295,
+        "Rogue": 297,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -83,7 +83,7 @@
         "Priest-신성": 46,
         "Priest-Shadow": 68,
         "Rogue-공용": 131,
-        "Rogue-무법": 53,
+        "Rogue-무법": 55,
         "Rogue-암살": 52,
         "Rogue-잠행": 59,
         "Shaman-고양": 44,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2903,
-        "withSynergies": 1912,
+        "withWikilinks": 2905,
+        "withSynergies": 1914,
         "avgLinkDensity": "0.040"
       }
     }
@@ -91326,14 +91326,14 @@
       "icon": "inv_weapon_shortblade_55",
       "iconName": "inv_weapon_shortblade_55",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "기본 발동 간격 20초",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무형검 (Unseen Blade)",
+      "description": "무법에서는 사악한 일격과 매복이 사용 가능 상태의 무형검을 추가로 발동시킨다. 대상에게 10초 동안 당혹을 부여해 자신에게 받는 피해를 5% 높이고 자신의 공격을 무기로 막지 못하게 한다. 기본 발동 간격은 20초다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91347,12 +91347,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무결한형상",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -91538,14 +91541,14 @@
       "icon": "rogue_dirtytricks",
       "iconName": "rogue_dirtytricks",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 연기 (Smoke)",
+      "description": "당혹 상태인 대상에게 받는 피해를 5% 줄이는 지속 영웅 특성이다. 당혹이 없는 다른 적의 공격이나 모든 환경 피해에 항상 같은 감소가 적용된다고 해석하면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91559,12 +91562,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -91587,14 +91592,14 @@
       "icon": "trade_archaeology_highbornesoulmirror",
       "iconName": "trade_archaeology_highbornesoulmirror",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 거울 (Mirrors)",
+      "description": "교란이 활성화되어 있을 때 광역 피해 감소 효과를 추가로 10% 높이는 지속 영웅 특성이다. 교란 없이 상시 모든 피해를 줄이거나 교란의 지속시간을 늘리는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91608,12 +91613,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/명멸타격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -91636,14 +91643,14 @@
       "icon": "ability_rogue_ghostpirate",
       "iconName": "ability_rogue_ghostpirate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 음험한 주의 분산 (Devious Distractions)",
+      "description": "무법의 광기의 학살자는 적중한 대상에게 당혹을 부여하고, 잠행에서는 은밀한 기술이 같은 역할을 한다. 피해를 받은 모든 적에게 당혹을 퍼뜨릴 수 있는 조건부 영웅 특성이며 두 기술을 한 전문화의 버튼처럼 합치지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91657,12 +91664,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/기습의일격",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무양심"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -91685,14 +91696,14 @@
       "icon": "ability_rogue_surpriseattack2",
       "iconName": "ability_rogue_surpriseattack2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기습의 일격 (Surprising Strikes)",
+      "description": "당혹 상태의 대상에게 연계 점수 생성 공격이 치명타로 적중하면 치명타 피해가 50% 증가한다. 치명타 확률을 50% 높이는 효과나 일반 적중 피해까지 똑같이 강화하는 효과와는 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91706,12 +91717,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무양심"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -91734,14 +91748,14 @@
       "icon": "petbattle_speed",
       "iconName": "petbattle_speed",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 혼란을 부르는 일격 (Disorienting Strikes)",
+      "description": "무법에서는 광기의 학살자, 잠행에서는 은밀한 기술의 쿨다운을 10% 줄이고 해당 기술 사용 후 다음 무형검 2회가 재발동 대기시간을 무시하게 한다. 이 효과 자체를 누르는 것이 아니라 해당 공격 기술에 연결되는 영웅 특성이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91755,12 +91769,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무결한형상",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -91783,14 +91801,14 @@
       "icon": "inv_qiraj_jewelblessed",
       "iconName": "inv_qiraj_jewelblessed",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무결한 형상 (Flawless Form)",
+      "description": "무법은 무형검과 광기의 학살자로 마무리 일격 피해가 12초 동안 중첩당 4% 증가한다. 잠행은 무형검과 은밀한 기술로 중첩당 2% 증가한다. 두 전문화 모두 최대 5중첩이며 생성기 피해 전체를 강화하는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91804,12 +91822,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/날렵한질풍"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -91832,14 +91854,14 @@
       "icon": "inv_10_specialization_blacksmithing_blades_color1",
       "iconName": "inv_10_specialization_blacksmithing_blades_color1",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천참만륙 (Thousand Cuts)",
+      "description": "난도질의 공격 속도 보너스를 추가로 10% 높이고 자동 공격이 확률적으로 무형검을 다시 발동할 수 있게 한다. 툴팁은 분당 약 4.5회 발동을 표시하지만 고정 간격이나 매분 보장 횟수를 뜻하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91853,12 +91875,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -91881,14 +91906,14 @@
       "icon": "spell_nature_invisibilty",
       "iconName": "spell_nature_invisibilty",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "내부 발동 제한 5초",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 명멸타격 (Flickerstrike)",
+      "description": "교란 중 광역 피해를 받거나 회피 중 공격 회피에 성공하면 무형검을 다시 발동할 기회가 열린다. 내부 제한은 5초다. 교란이나 회피를 눌렀다는 사실만으로 무조건 추가 무형검이 발생하는 것은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91902,12 +91927,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/거울"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.037,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -91930,14 +91958,14 @@
       "icon": "ability_rogue_bladetwisting",
       "iconName": "ability_rogue_bladetwisting",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 날렵한 질풍 (Nimble Flurry)",
+      "description": "무결한 형상이 활성화된 동안 무법은 폭풍의 칼날 피해가 25% 증가한다. 잠행은 자동 공격·무형검·최후의 일격이 주변 추가 적 최대 7명에게 일반 피해의 50%로 적중한다. 두 전문화의 광역 효과는 서로 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -91951,12 +91979,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무결한형상",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격"
+        ]
       },
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -92035,14 +92067,14 @@
       "icon": "ability_rogue_surpriseattack",
       "iconName": "ability_rogue_surpriseattack",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 무양심 (No Scruples)",
+      "description": "당혹 상태의 대상에게 사용하는 마무리 일격의 치명타 확률이 12% 증가한다. 생성기 치명타 피해를 올리는 기습의 일격과 다르며 당혹이 없는 대상에게도 상시 적용되는 특성은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92056,12 +92088,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/기습의일격"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -92084,14 +92119,14 @@
       "icon": "ability_rogue_tricksofthetrade",
       "iconName": "ability_rogue_tricksofthetrade",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 교활함의 극치 (So Tricky)",
+      "description": "속임수 거래의 위협 전환 지속시간을 1시간으로 늘리는 지속 영웅 특성이다. 아군의 공격력을 높이는 공격 버프나 자신이 만드는 위협을 모든 상황에서 삭제하는 효과로 설명하면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92105,12 +92140,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/수상한사람아닙니다"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -92133,14 +92170,14 @@
       "icon": "ability_rogue_disguise",
       "iconName": "ability_rogue_disguise",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 수상한 사람 아닙니다 (Don't Be Suspicious)",
+      "description": "실명과 은폐의 장막의 쿨다운을 10% 줄이고 훔치기와 혼절시키기의 사거리를 10미터 늘린다. 네 기술의 쿨다운과 사거리를 모두 같은 방식으로 바꾸는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92154,12 +92191,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/교활함의극치"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -92182,14 +92221,14 @@
       "icon": "inv_ability_tricksterrogue_coupdegrace",
       "iconName": "inv_ability_tricksterrogue_coupdegrace",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 최후의 일격 (Coup de Grace)",
+      "description": "무형검이 4번 적중한 뒤 무법의 다음 속결 또는 잠행의 다음 절개가 최후의 일격으로 강화된다. 연계 점수 5점을 추가 소비한 것과 같은 효과를 내며 무결한 형상 5중첩을 부여한다. 별도 사용 버튼이 아니라 기존 마무리 일격의 강화다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92203,12 +92242,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무결한형상"
+        ]
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.073,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -92231,14 +92273,14 @@
       "icon": "ability_rogue_smoke",
       "iconName": "ability_rogue_smoke",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 구름 덮개 (Cloud Cover)",
+      "description": "무법은 아드레날린 촉진, 잠행은 어둠의 칼날 사용으로 6초 연막을 만든다. 연막 안에서 공격하면 당혹을 부여하며 무법은 추가 1중첩, 잠행은 추가 2중첩까지 가능하다. 연막을 벗어난 뒤에도 효과가 6초 지속된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92252,12 +92294,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/농락"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.048,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -145561,14 +145606,14 @@
       "icon": "spell_holy_dizzy",
       "iconName": "spell_holy_dizzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 농락 (Hoodwink)",
+      "description": "당혹이 대상에게 부여하는 자신에게 받는 피해 증가 효과를 추가로 3% 높이는 지속 영웅 특성이다. 대상이 파티 전체에게 받는 모든 피해가 추가로 3% 증가한다고 일반화하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145582,12 +145627,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/구름덮개"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -145610,14 +145658,14 @@
       "icon": "inv_1115_warrior_fastermeleeattacks",
       "iconName": "inv_1115_warrior_fastermeleeattacks",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번쩍이는 강철 (Flashing Steel)",
+      "description": "무형검의 기본 재발동 간격을 15초로 바꾸고 25% 확률로 두 번 적중하게 하는 영웅 특성이다. 15초마다 아무 행동 없이 자동으로 공격하는 효과나 매번 두 번 적중하는 보장은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145631,12 +145679,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/최후의일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -145763,14 +145814,14 @@
       "icon": "ability_rogue_versatility",
       "iconName": "ability_rogue_versatility",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영리한 전투원 (Clever Combatant)",
+      "description": "무법은 권총 사격의 치명타 확률이 20% 증가하고 발동 가능한 무형검을 권총 사격으로도 발동시킨다. 잠행은 표창 폭풍의 치명타 확률이 10% 증가하며 같은 추가 발동 기능을 얻는다. 재발동 제한을 매번 무시하는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -145784,12 +145835,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/무형검",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/번쩍이는강철"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -149553,6 +149607,114 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296588": {
+      "id": "1296588",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
+      "name": "Rogue Outlaw 12.1 Class Set 2pc",
+      "koreanName": "Rogue Outlaw 12.1 Class Set 2pc",
+      "englishName": "Rogue Outlaw 12.1 Class Set 2pc",
+      "aliases": [
+        "무법 시즌 2 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "속결 피해가 15% 증가하는 시즌 2 장비 2세트 지속 효과다. 별도의 시전 버튼이나 특성 포인트로 배우는 노드가 아니며, 모든 마무리 일격의 피해를 일괄적으로 15% 높이는 효과로 확대 해석하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296589": {
+      "id": "1296589",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "무법",
+      "specs": [
+        "Outlaw"
+      ],
+      "name": "Rogue Outlaw 12.1 Class Set 4pc",
+      "koreanName": "Rogue Outlaw 12.1 Class Set 4pc",
+      "englishName": "Rogue Outlaw 12.1 Class Set 4pc",
+      "aliases": [
+        "무법 시즌 2 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사악한 일격과 매복이 20% 확률로 다음 속결을 자원 소모 없이 최대 연계 점수를 소비한 것과 같은 피해를 주도록 강화한다. 시즌 2 장비 4세트 지속 효과이며 툴팁의 100밀리초는 내부 발동 제한이지 누르는 기술의 쿨다운이 아니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
