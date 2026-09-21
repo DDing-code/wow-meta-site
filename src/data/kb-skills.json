@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:31:05.044Z",
+    "generatedAt": "2026-09-21T05:34:58.972Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2980,
-    "rawTotalSkills": 2980,
+    "totalSkills": 2981,
+    "rawTotalSkills": 2981,
     "duplicateIds": [],
     "totalSynergies": 572,
     "stats": {
-      "total": 2980,
+      "total": 2981,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 552,
+        "atomic-skill": 553,
         "proc": 29,
         "skill": 131,
         "talent": 997,
@@ -40,7 +40,7 @@
         "Paladin": 250,
         "Priest": 258,
         "Rogue": 296,
-        "Shaman": 274,
+        "Shaman": 275,
         "Warlock": 296,
         "Warrior": 265
       },
@@ -87,7 +87,7 @@
         "Rogue-암살": 52,
         "Rogue-잠행": 60,
         "Shaman-고양": 45,
-        "Shaman-공용": 126,
+        "Shaman-공용": 127,
         "Shaman-복원": 46,
         "Shaman-정기": 57,
         "Warlock-고통": 10,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2905,
-        "withSynergies": 1991,
+        "withWikilinks": 2906,
+        "withSynergies": 1992,
         "avgLinkDensity": "0.039"
       }
     }
@@ -102751,6 +102751,59 @@
         "lastUpdate": ""
       }
     },
+    "452201": {
+      "id": "452201",
+      "type": "atomic-skill",
+      "class": "Shaman",
+      "spec": "공용",
+      "specs": [
+        "Elemental",
+        "Enhancement"
+      ],
+      "name": "폭풍",
+      "koreanName": "폭풍",
+      "englishName": "Tempest",
+      "icon": "inv_ability_stormcallershaman_tempest",
+      "iconName": "inv_ability_stormcallershaman_tempest",
+      "school": "Nature",
+      "cooldown": "발동 시 다음 번개 화살을 대체",
+      "castTime": "2초 (고양: 소용돌이치는 무기로 단축)",
+      "resourceCost": "기본 마나의 0.2%; 고양은 소용돌이치는 무기 소비",
+      "range": "40미터",
+      "description": "폭풍인도자의 발동으로 다음 번개 화살을 대체하는 실제 시전 기술이다. 주문 ID는 452201이며, 변환 효과를 제공하는 특성 454009와 구분한다. 주 대상에게 자연 피해를 주고 주변 8미터의 적에게 주 대상 계수의 65%에 해당하는 피해를 준다. 5명을 초과하면 피해가 감소한다. 기본 시전 시간은 2초, 비용은 기본 마나의 0.2%, 사거리는 40미터다. 고양은 소용돌이치는 무기를 소비해 시전 시간을 줄인다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_stormcallershaman_tempest.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_stormcallershaman_tempest.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_stormcallershaman_tempest.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_stormcallershaman_tempest.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_stormcallershaman_tempest.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍",
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/깨어나는폭풍",
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/초자력충전"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 0,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Skills\\폭풍-시전.md",
+        "lastUpdate": ""
+      }
+    },
     "452402": {
       "id": "452402",
       "type": "hero-talent",
@@ -104807,16 +104860,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_stormcallershaman_tempest.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/폭풍-시전"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/초자력충전"
         ]
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {

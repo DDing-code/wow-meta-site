@@ -47,6 +47,11 @@ for (const [id, pattern] of Object.entries({
   assert.match(skills[id].description, pattern, id);
 }
 assert.notEqual(skills[382888].icon, skills[454009].icon);
+assert.equal(skills[452201].patch, '12.1');
+assert.deepEqual(skills[452201].specs, ['Elemental', 'Enhancement']);
+assert.equal(skills[452201].icon, skills[454009].icon);
+assert.match(skills[452201].castTime, /2초.*소용돌이치는 무기/);
+assert.match(skills[452201].description, /실제 시전.*452201.*454009.*8미터.*65%.*5명/);
 for (const [id, pattern] of Object.entries({
   444995: /고양.*25초.*6초.*5명.*복원.*10%.*즉시 시전.*1분.*25초.*적용하지/,
   1260644: /용암 채찍.*10%.*활성화된 뜨거운 손.*0.20초.*10중첩.*2초.*복원.*치유의 토템.*3초/,
@@ -85,7 +90,10 @@ assert.match(enhancement, /토림의 기원이 없는데도 같은 소비가 생
 assert.match(enhancement, /최신 채택률이나 현재 최적 빌드의 근거로 사용하지/);
 assert.doesNotMatch(manuscript, /skillId: ['"](?:51533|469314)['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
+assert.doesNotMatch(manuscript, /skillId: ['"]454009['"]/);
+assert.equal((manuscript.match(/skillId: ['"]452201['"]/g) || []).length, 6);
+assert.match(manuscript, /skillIds: \['454009'/);
 assert.match(manuscript, /skillId: ['"]1218090['"]/);
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
-console.log('Enhancement: 26 reviewed records, active spell IDs, shared hero effects, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
+console.log('Enhancement: 27 reviewed records, active spell IDs, shared hero effects, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
