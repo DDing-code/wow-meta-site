@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:51:59.475Z",
+    "generatedAt": "2026-09-21T18:55:52.013Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2974,
-    "rawTotalSkills": 2974,
+    "totalSkills": 2975,
+    "rawTotalSkills": 2975,
     "duplicateIds": [],
-    "totalSynergies": 591,
+    "totalSynergies": 592,
     "stats": {
-      "total": 2974,
+      "total": 2975,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 130,
         "talent": 996,
-        "spec-talent": 387,
+        "spec-talent": 388,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 262
+        "Warrior": 263
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,14 +96,14 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 40,
+        "Warrior-Arms": 41,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2891,
-        "withSynergies": 2014,
+        "withWikilinks": 2892,
+        "withSynergies": 2015,
         "avgLinkDensity": "0.039"
       }
     }
@@ -24825,18 +24825,18 @@
       ],
       "name": "전술가",
       "koreanName": "전술가",
-      "englishName": "",
+      "englishName": "Tactician",
       "icon": "ability_warrior_unrelentingassault",
       "iconName": "ability_warrior_unrelentingassault",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "전술가은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전술가 특성 전사 필요 분노를 소모하는 공격 사용 시 30 %의 확률로 제압이 충전됩니다. 사용 능력의 분노 소모량이 0으로 감소한 경우에도 이 효과는 적용됩니다. (500밀리초 재사용 대기시간)",
+      "description": "분노 소모가 있는 공격을 사용하면 기본 30% 확률로 제압 1회가 충전된다. 해당 공격의 분노 소모량이 감소하여 0이 된 경우에도 발동할 수 있다. 사용한 분노 1당 확률을 더하는 방식이 아니다.  전술의 대가를 선택하면 발동 확률은 35%가 된다. 외부 툴팁의 500밀리초는 내부 발동 제한이며 사용자가 0.5초마다 누르는 스킬 쿨다운이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64668,18 +64668,18 @@
       ],
       "name": "전투군주",
       "koreanName": "전투군주",
-      "englishName": "",
+      "englishName": "Battlelord",
       "icon": "ability_pvp_hardiness",
       "iconName": "ability_pvp_hardiness",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "전투군주은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전투군주 특성 전사 필요 제압 사용 시 35%의 확률로 필사의 일격의 재사용 대기시간이 초기화됩니다. 또한 다음 필사의 일격의 자원 소모량이 33%만큼 감소합니다. (효과 발동 확률: 35%, 500밀리초 재사용 대기시간)",
+      "description": "제압 사용 시 35% 확률로 필사의 일격의 재사용 대기시간을 초기화하며 다음 필사의 일격의 자원 소모량을 33% 감소시킨다.  초기화와 비용 감소를 함께 확인한다. 무료 필사의 일격이나 필사의 일격 피해 33% 증가가 아니며, 제압을 쓸 때마다 반드시 초기화되는 것도 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64698,7 +64698,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -64716,18 +64716,18 @@
       ],
       "name": "집행자의 정밀함",
       "koreanName": "집행자의 정밀함",
-      "englishName": "",
+      "englishName": "Executioner's Precision",
       "icon": "ability_revendreth_warrior",
       "iconName": "ability_revendreth_warrior",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "집행자의 정밀함은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 집행자의 정밀함 특성 전사 필요 마무리 일격 사용 시 다음 필사의 일격의 공격력이 35%만큼 증가합니다. 최대 2번까지 중첩됩니다. (1초 재사용 대기시간)",
+      "description": "마무리 일격 사용 시 다음 필사의 일격의 공격력이 35% 증가하며 최대 2중첩까지 쌓인다.  다음 필사의 일격을 강화하는 효과다. 마무리 일격 자체의 피해 증가와 구분하고, 최대 중첩에서 마무리 일격을 반복해 추가 강화가 계속 쌓인다고 계산하지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64746,7 +64746,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -130524,6 +130524,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\전술적-우위.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261057": {
+      "id": "1261057",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "전술의 대가",
+      "koreanName": "전술의 대가",
+      "englishName": "Master Tactician",
+      "icon": "ability_warrior_revenge",
+      "iconName": "ability_warrior_revenge",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "전술가의 발동 확률이 5%포인트 증가한다. 전술가 툴팁은 이 특성을 선택하면 기본 30%에서 35%로 바뀐다. 30%에 1.05를 곱한 31.5%가 아니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_revenge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_revenge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_revenge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_revenge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_revenge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\전술의-대가.md",
         "lastUpdate": ""
       }
     },

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:51:59.476Z",
+    "generatedAt": "2026-09-21T18:55:52.014Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 591,
-    "rawTotalSynergies": 591,
+    "totalSynergies": 592,
+    "rawTotalSynergies": 592,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -223,6 +223,7 @@
       "execute-window": 1,
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
+      "charge-reset-chain": 1,
       "proc-charge-engine": 1,
       "bleed-application": 1,
       "aoe-cooldown-planning": 1,
@@ -265,7 +266,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 54
+      "Warrior": 55
     }
   },
   "synergies": {
@@ -19985,6 +19986,34 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\유혈-분쇄-필사의일격.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_charge_reset_chain": {
+      "id": "warrior_arms_charge_reset_chain",
+      "name": "전술가-전술의대가-전투군주",
+      "type": "synergy",
+      "synergyType": "charge-reset-chain",
+      "participants": [
+        "184783",
+        "1261057",
+        "7384",
+        "386630",
+        "12294"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\전술가-전술의대가-전투군주.md",
         "lastUpdate": ""
       }
     },

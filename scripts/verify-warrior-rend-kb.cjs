@@ -181,4 +181,14 @@ for (const id of [383317, 383219, 248621, 383442, 400314]) {
   assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Retired Arms graph edge ' + id);
 }
 assert.equal(synergies['warrior-arms-passive-mastery-rage'], undefined);
+for (const id of [184783, 1261057, 386630, 386634]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[184783].description, /30%.*제압.*0/);
+assert.match(skills[1261057].description, /30%.*35%/);
+assert.match(skills[386630].description, /35%.*필사의 일격.*33%/);
+assert.match(skills[386634].description, /다음 필사의 일격.*35%.*2중첩/);
+assert.deepEqual(synergies.warrior_arms_charge_reset_chain.participants, ['184783', '1261057', '7384', '386630', '12294']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
