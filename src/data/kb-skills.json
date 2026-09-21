@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:12:27.388Z",
+    "generatedAt": "2026-09-21T00:18:36.130Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2973,
-    "rawTotalSkills": 2973,
+    "totalSkills": 2974,
+    "rawTotalSkills": 2974,
     "duplicateIds": [],
     "totalSynergies": 565,
     "stats": {
-      "total": 2973,
+      "total": 2974,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 559,
+        "atomic-skill": 560,
         "proc": 29,
         "skill": 131,
         "talent": 996,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 290,
+        "Rogue": 291,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -82,7 +82,7 @@
         "Priest-Discipline": 62,
         "Priest-신성": 46,
         "Priest-Shadow": 68,
-        "Rogue-공용": 128,
+        "Rogue-공용": 129,
         "Rogue-무법": 53,
         "Rogue-암살": 50,
         "Rogue-잠행": 59,
@@ -102,7 +102,7 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2898,
+        "withWikilinks": 2899,
         "withSynergies": 1877,
         "avgLinkDensity": "0.040"
       }
@@ -102918,14 +102918,14 @@
       "icon": "inv_ability_fateboundrogue_handoffateheads",
       "iconName": "inv_ability_fateboundrogue_handoffateheads",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 운명의 손 (Hand of Fate)",
+      "description": "마무리 일격으로 연계 점수를 5점 이상 소비하면 동전을 던진다. 앞면은 15초 또는 뒷면이 나올 때까지 공격 피해를 10% 증가시키고, 뒷면은 대상에게 우주 피해를 준다. 같은 면이 연속으로 나올 때마다 앞면은 추가 2%, 뒷면은 해당 피해가 10% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102944,7 +102944,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -105024,14 +105024,14 @@
       "icon": "ability_rogue_preparation",
       "iconName": "ability_rogue_preparation",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 운명과의 타협 (Deal Fate)",
+      "description": "암살에서는 절단·매복·칼날 부채가 운명의 낙인을 발동시키면 60% 확률로 연계 점수 1점을 추가 생성한다. 무법에서는 사악한 일격으로 기회가 부여될 때 연계 점수 1점을 추가 생성한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105050,7 +105050,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -106956,14 +106956,14 @@
       "icon": "inv_ability_deathstalkerrogue_deathstalkersmark",
       "iconName": "inv_ability_deathstalkerrogue_deathstalkersmark",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음추적자의 징표 (Deathstalker's Mark)",
+      "description": "징표가 이미 활성화돼 있지 않을 때 암살은 목조르기, 잠행은 그림자 일격으로 죽음추적자의 징표 3중첩을 부여한다. 징표 대상에게 연계 점수 5점 이상을 소비하는 공격을 하면 중첩 하나를 소모해 역병 피해를 준다. 징표 이전 기술인 죽음의 표시를 배운다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106982,7 +106982,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -107054,14 +107054,14 @@
       "icon": "spell_hunter_focusingshot",
       "iconName": "spell_hunter_focusingshot",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 하나 된 집중력 (Singular Focus)",
+      "description": "죽음추적자의 징표 대상이 아닌 적에게 피해를 입히면 그 피해의 5%에 해당하는 역병 피해를 징표 대상에게 준다. 주변 대상의 피해를 징표 대상으로 모으는 자동 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107080,7 +107080,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.041,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -107201,14 +107201,14 @@
       "icon": "spell_shadow_twilight",
       "iconName": "spell_shadow_twilight",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둡고 어두운 밤 (Darkest Night)",
+      "description": "마지막 죽음추적자의 징표를 소모하거나 징표 대상이 죽으면 기력 30과 어둡고 어두운 밤을 얻는다. 다음 5점 이상 독살은 확정 치명타와 35% 추가 피해를, 잠행의 다음 5점 이상 절개는 확정 치명타와 50% 추가 피해를 얻는다. 다른 활성 징표가 없으면 대상에게 징표 3중첩을 부여하며, 이 강화 공격은 활성 징표 중첩을 소모하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107227,7 +107227,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.066,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -122338,14 +122338,14 @@
       "icon": "inv_misc_markoftheworldtree",
       "iconName": "inv_misc_markoftheworldtree",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "자동 발동",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 행운 주화 (Lucky Coin)",
+      "description": "동전을 7번 던질 때마다 12초 동안 행운 주화를 얻는다. 민첩성 4%, 운명결속 동전의 피해와 추가 효과 50%, 이전 던지기와 같은 면이 나올 확률 15%가 증가한다. 행운 주화가 있는 동안 던진 동전은 다음 행운 주화의 횟수에 포함되지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122364,7 +122364,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -148529,6 +148529,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\협상의여지.md",
+        "lastUpdate": ""
+      }
+    },
+    "1293340": {
+      "id": "1293340",
+      "type": "atomic-skill",
+      "class": "Rogue",
+      "spec": "공용",
+      "specs": [
+        "Assassination",
+        "Subtlety"
+      ],
+      "name": "죽음의 표시",
+      "koreanName": "죽음의 표시",
+      "englishName": "Mark for Death",
+      "icon": "inv_ability_deathstalkerrogue_deathstalkersmark",
+      "iconName": "inv_ability_deathstalkerrogue_deathstalkersmark",
+      "school": "",
+      "cooldown": "20초",
+      "castTime": "즉시",
+      "resourceCost": "기력 25",
+      "range": "10미터",
+      "description": "기력 25를 소비해 활성화된 죽음추적자의 징표를 현재 대상으로 이전하는 즉시 시전 기술이다. 사정거리 10미터, 재사용 대기시간 20초이며 죽음추적자의 징표 특성으로 배운다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_deathstalkerrogue_deathstalkersmark.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_deathstalkerrogue_deathstalkersmark.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_deathstalkerrogue_deathstalkersmark.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_deathstalkerrogue_deathstalkersmark.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_deathstalkerrogue_deathstalkersmark.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/죽음추적자의징표",
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/어둡고어두운밤"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Skills\\죽음의표시.md",
         "lastUpdate": ""
       }
     },

@@ -43,6 +43,36 @@ assert.match(skills['255544'].description, /2초/);
 assert.match(skills['423054'].description, /최대 기력이 50 증가/);
 assert.match(skills['381673'].description, /절단이 8초에 걸쳐 25%의 추가 출혈/);
 const cooldown = synergies.rogue_assassination_deathmark_kingsbane;
+const heroEffects = {
+  '452536': /5점 이상.*앞면.*10%.*뒷면.*우주/,
+  '1248970': /7번.*12초.*4%.*50%.*15%/,
+  '454419': /암살.*60%.*무법.*기회/,
+  '457052': /암살은 목조르기.*잠행은 그림자 일격.*3중첩.*5점/,
+  '457058': /기력 30.*5점 이상 독살.*35%.*절개.*50%/,
+  '457055': /징표 대상이 아닌 적.*5%.*역병/,
+};
+for (const [id, effect] of Object.entries(heroEffects)) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'hero-talent', id);
+  assert.match(skills[id].description, effect, id);
+}
+assert.deepEqual(skills['457058'].specs, ['Assassination', 'Subtlety']);
+assert.deepEqual(skills['454419'].specs, ['Assassination', 'Outlaw']);
+assert.equal(skills['1293340'].type, 'atomic-skill');
+assert.equal(skills['1293340'].patch, '12.1');
+assert.equal(skills['1293340'].resourceCost, '기력 25');
+assert.equal(skills['1293340'].cooldown, '20초');
+assert.equal(skills['1293340'].range, '10미터');
+const deathstalker = synergies.rogue_assassination_deathstalker_mark;
+const fatebound = synergies.rogue_assassination_fatebound_envenom;
+assert.deepEqual(deathstalker.participants, ['457052', '457058', '457055', '1293340', '703', '32645']);
+assert.deepEqual(fatebound.participants, ['452536', '1248970', '454419', '14190', '1329', '8676', '51723', '32645']);
+for (const relation of [deathstalker, fatebound]) {
+  assert.equal(relation.patch, '12.1');
+  assert.equal(relation.spec, 'Assassination');
+  assert.ok(relation.description.length > 30);
+  for (const id of relation.participants) assert.ok(skills[id]?.specs.includes('Assassination'), id);
+}
 const addedTalents = {
   '1247993': ['의욕 충만한 학살자', /회복 속도가 20%/],
   '1250359': ['약삭빠른 공격', /치명타 확률이 2%/],
@@ -150,4 +180,4 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 51 atomic notes, 4 relationships, 7 retired talents passed');
+console.log('Assassination reviewed subset: 58 atomic notes, 6 relationships, 7 retired talents passed');

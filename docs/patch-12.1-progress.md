@@ -279,6 +279,8 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 
 - Sixth pass: added eleven missing current spec talents with verified Korean names/icons and individually authored effects. Fixed-tree Assassination spec rows (45) now all resolve in the generated DB; this is coverage evidence, not proof of complete build/hero review. Rewrote Envenom's relationship to separate poison stacks, active-buff refresh rewards, mutually exclusive choices and Implacable energy. Current Motivated Murderer tooltips say 20%, not the launch summary's 30%. Scoped review covers 51 atomic records and four relationships. Common/hero nodes, full manuscript, flows and production rollout remain unfinished.
 
+- Seventh pass: reviewed six shared hero effects and added Mark for Death 1293340 from the parent tooltip's direct link. Distinguished Darkest Night's five-point activation minimum from maximum-point recommendations, its Assassination/Subtlety modifiers, and Deal Fate's spec-specific triggers. Rewrote both Assassination hero relationships, removed the Fatebound-only Delivered Doom node from Deathstalker and stopped using June popularity as current advice. Scoped checks cover 58 atomic records and six relationships; remaining shared/hero notes and the full manuscript/production rollout are still open.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

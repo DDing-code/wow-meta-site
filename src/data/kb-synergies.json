@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:12:27.389Z",
+    "generatedAt": "2026-09-21T00:18:36.131Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14400,46 +14400,37 @@
     },
     "rogue_assassination_fatebound_envenom": {
       "id": "rogue_assassination_fatebound_envenom",
-      "name": "운명의손-독살",
+      "name": "운명결속: 점수 소비와 동전 보상",
+      "description": "5점 이상 마무리 일격이 운명의 손 동전을 발생시킨다. 행운 주화는 동전 횟수 보상이며, 운명과의 타협은 운명의 낙인 발동에 따른 확률적 추가 점수다.",
       "type": "synergy",
       "synergyType": "fatebound_finisher_loop",
       "participants": [
         "452536",
         "1248970",
-        "454286",
         "454419",
-        "1249215",
-        "1277030",
-        "32645",
         "14190",
         "1329",
-        "328085",
-        "255544",
-        "381797",
-        "381652"
+        "8676",
+        "51723",
+        "32645"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸"
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/칼날부채",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\운명의손-독살.md",
@@ -14488,46 +14479,33 @@
     },
     "rogue_assassination_deathstalker_mark": {
       "id": "rogue_assassination_deathstalker_mark",
-      "name": "죽음추적자의징표-어둡고어두운밤",
+      "name": "죽음추적자: 징표 소비와 다음 독살",
+      "description": "목조르기로 징표를 부여하고 5점 이상 마무리 일격으로 소비한다. 마지막 중첩 이후 어둡고 어두운 밤 독살이 강화되며, 활성 징표를 옮길 때는 죽음의 표시를 쓴다.",
       "type": "synergy",
       "synergyType": "deathstalker_mark_cycle",
       "participants": [
         "457052",
         "457058",
-        "1248785",
-        "457068",
         "457055",
-        "1249194",
-        "32645",
-        "360194",
-        "385627",
+        "1293340",
         "703",
-        "1943",
-        "381640",
-        "423136",
-        "381798"
+        "32645"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸",
         "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/죽음의표시"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/갑작스러운최후",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/졸디크의비전",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/치사량"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\죽음추적자의징표-어둡고어두운밤.md",
         "lastUpdate": ""
