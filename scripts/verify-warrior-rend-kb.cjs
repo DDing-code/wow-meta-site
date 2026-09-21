@@ -160,4 +160,6 @@ assert.match(skills[231847].description, /최대 충전 수를 2회/);
 for (const id of [1277297, 190456, 2565, 231847]) assert.equal(skills[id].patch, '12.1');
 assert.deepEqual(synergies.warrior_arms_ignore_pain_colossus.participants, ['1277297', '429644']);
 assert.deepEqual(synergies.warrior_protection_ignore_pain_colossus.participants, ['190456', '429644', '2565']);
+assert.equal(skills[383292], undefined, 'Retired Juggernaut must not return to the live DB');
+assert.ok(!JSON.stringify(synergies).includes('383292'), 'Retired Juggernaut must not remain in synergy edges');
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:34:54.698Z",
+    "generatedAt": "2026-09-21T18:38:05.397Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -20031,10 +20031,9 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/돌격전차",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/도검의-폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
@@ -20289,7 +20288,6 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/부수적인-피해",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/일격무쌍",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/위협",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/돌격전차",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽"
       ],

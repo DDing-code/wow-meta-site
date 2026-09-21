@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:34:54.697Z",
+    "generatedAt": "2026-09-21T18:38:05.396Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2985,
-    "rawTotalSkills": 2985,
+    "totalSkills": 2984,
+    "rawTotalSkills": 2984,
     "duplicateIds": [],
     "totalSynergies": 593,
     "stats": {
-      "total": 2985,
+      "total": 2984,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 132,
         "talent": 996,
-        "spec-talent": 396,
+        "spec-talent": 395,
         "passive": 76,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 273
+        "Warrior": 272
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -96,13 +96,13 @@
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
         "Warrior-공용": 127,
-        "Warrior-Arms": 51,
+        "Warrior-Arms": 50,
         "Warrior-무기": 1,
         "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2903,
+        "withWikilinks": 2902,
         "withSynergies": 2013,
         "avgLinkDensity": "0.039"
       }
@@ -60082,54 +60082,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\혈행성-전이.md",
-        "lastUpdate": ""
-      }
-    },
-    "383292": {
-      "id": "383292",
-      "type": "spec-talent",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "돌격전차",
-      "koreanName": "돌격전차",
-      "englishName": "",
-      "icon": "warrior_talent_icon_skirmisher",
-      "iconName": "warrior_talent_icon_skirmisher",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "돌격전차은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 돌격전차 100 야드 사정거리 전사 필요 마무리 일격 사용 시 12초 동안 마무리 일격의 공격력이 3%만큼 증가합니다. 최대 15번까지 중첩됩니다. (500밀리초 재사용 대기시간)",
-      "category": "spec-talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_skirmisher.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_skirmisher.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_skirmisher.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_skirmisher.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_skirmisher.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\돌격전차.md",
         "lastUpdate": ""
       }
     },
