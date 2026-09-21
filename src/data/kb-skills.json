@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:10:52.505Z",
+    "generatedAt": "2026-09-21T04:12:48.768Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,8 +103,8 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1961,
-        "avgLinkDensity": "0.040"
+        "withSynergies": 1964,
+        "avgLinkDensity": "0.039"
       }
     }
   },
@@ -18785,14 +18785,14 @@
       "icon": "rogue_subterfuge",
       "iconName": "rogue_subterfuge",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기만 (Subterfuge)",
+      "description": "은신 해제 뒤에도 은신 전용 능력과 은신이 요구되는 전투 효과를 잠시 사용할 수 있게 하는 지속 특성이다. 현재 한·영 툴팁은 잠행 2초, 암살 3초를 표시한다. 무법 항목은 표시되지 않아 같은 지속 시간을 임의로 적용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18804,14 +18804,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/rogue_subterfuge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/은신"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.064,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -81270,14 +81272,14 @@
       "icon": "ability_rogue_ghostpirate",
       "iconName": "ability_rogue_ghostpirate",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 우아한 기만 (Graceful Guile)",
+      "description": "교란의 최대 충전 횟수를 1회 늘리는 지속 특성이다. 기본 1회에서 2회 충전을 보유할 수 있게 한다. 기만의 은신 후 사용 허용 시간을 늘리거나 교란의 피해 감소율을 높이는 효과가 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81289,14 +81291,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ghostpirate.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/교란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -81320,14 +81324,14 @@
       "icon": "ability_rogue_shroudofconcealment",
       "iconName": "ability_rogue_shroudofconcealment",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고요한 장막 (Stillshroud)",
+      "description": "은폐의 장막의 쿨다운을 50% 줄이는 지속 특성이다. 그림자 망토나 개인 소멸의 쿨다운을 줄이는 효과가 아니다. 은폐의 장막의 지속 시간을 50% 늘리는 효과와도 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81339,14 +81343,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_shroudofconcealment.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/은폐의장막"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.032,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {

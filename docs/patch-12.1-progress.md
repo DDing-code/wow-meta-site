@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue stealth versus defensive-charge effects, 2026-09-21
+
+- Rechecked live Korean/English tooltips and replaced generic Subterfuge, Stillshroud and Graceful Guile notes. Subterfuge explicitly distinguishes Subtlety's two seconds and Assassination's three; the tooltip omits Outlaw, whose current selection scope is not established by this check.
+- Stillshroud reduces Shroud of Concealment's cooldown by 50%; Graceful Guile adds one Feint charge. Removed misleading stealth-package links and linked each note to its actual affected cast. KB/DB checks preserve these distinctions; remaining class-tree availability and older relationship audits are still open.
+
 ### Rogue control costs and conflicting defensive tooltip, 2026-09-21
 
 - Replaced generic Rushed Setup and Without a Trace notes with verified energy-cost and Vanish-charge effects. Changed their links to the actual affected skills instead of generic defensive relationships.
