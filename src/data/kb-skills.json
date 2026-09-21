@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:12:48.768Z",
+    "generatedAt": "2026-09-21T04:14:45.174Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -18789,7 +18789,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "은신 해제 뒤에도 은신 전용 능력과 은신이 요구되는 전투 효과를 잠시 사용할 수 있게 하는 지속 특성이다. 현재 한·영 툴팁은 잠행 2초, 암살 3초를 표시한다. 무법 항목은 표시되지 않아 같은 지속 시간을 임의로 적용하지 않는다.",
+      "description": "은신 해제 뒤에도 은신 전용 능력과 은신이 요구되는 전투 효과를 잠시 사용할 수 있게 하는 지속 특성이다. 현재 한·영 기본 툴팁은 잠행 2초, 암살 3초를 표시한다. 무법 항목은 표시되지 않는다. 고정 12.1 특성 데이터에서는 전문화 제한 없는 공용 특성이며 최대 2등급이다. 기본 툴팁 수치를 모든 투자 등급의 최종 지속 시간으로 단정하지 않는다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -18813,7 +18813,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.013,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -139046,7 +139046,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.013,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {

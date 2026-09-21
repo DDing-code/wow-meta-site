@@ -210,6 +210,8 @@ for (const [id, effect] of Object.entries({
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+assert.match(skills['108208'].description, /최대 2등급.*최종 지속 시간.*단정하지/);
+assert.ok(skills['108208'].specs.includes('Outlaw'));
 assert.equal(commonDefense.patch, '12.1');
 for (const id of ['79008', '193546', '393970', '1856']) assert.ok(commonDefense.participants.includes(id), id);
 for (const id of ['14983', '193539']) assert.ok(!commonDefense.participants.includes(id), id);

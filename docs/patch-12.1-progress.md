@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Subterfuge scope and rank follow-up, 2026-09-21
+
+- Fixed SimC commit 774babde5ddc7c5fc9f1abb129b473f8a076df70 lists Subterfuge as a class-tree node with no specialization restriction and two maximum ranks; the field order was checked against trait_data.hpp. Its implementation selects effect 4 for Subtlety and effect 2 otherwise. Retained Outlaw scope and documented that basic tooltip durations are not a verified maximum-rank duration.
+- Danger Sense is explicitly unimplemented in that simulator, so it cannot settle the Korean/English damage-scope disagreement. No new live-game verification is claimed.
+
 ### Rogue stealth versus defensive-charge effects, 2026-09-21
 
 - Rechecked live Korean/English tooltips and replaced generic Subterfuge, Stillshroud and Graceful Guile notes. Subterfuge explicitly distinguishes Subtlety's two seconds and Assassination's three; the tooltip omits Outlaw, whose current selection scope is not established by this check.
