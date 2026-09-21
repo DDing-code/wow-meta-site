@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:13:57.449Z",
+    "generatedAt": "2026-09-21T18:20:52.340Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2982,
-    "rawTotalSkills": 2982,
+    "totalSkills": 2983,
+    "rawTotalSkills": 2983,
     "duplicateIds": [],
-    "totalSynergies": 589,
+    "totalSynergies": 590,
     "stats": {
-      "total": 2982,
+      "total": 2983,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 132,
         "talent": 996,
-        "spec-talent": 394,
+        "spec-talent": 395,
         "passive": 75,
         "hero-tree": 2,
         "set-bonus": 13,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 270
+        "Warrior": 271
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -95,14 +95,14 @@
         "Warlock-공용": 113,
         "Warlock-Demonology": 65,
         "Warlock-Destruction": 66,
-        "Warrior-공용": 127,
-        "Warrior-Arms": 47,
+        "Warrior-공용": 128,
+        "Warrior-Arms": 48,
         "Warrior-무기": 1,
-        "Warrior-Protection": 42,
+        "Warrior-Protection": 41,
         "Warrior-Fury": 53
       },
       "quality": {
-        "withWikilinks": 2905,
+        "withWikilinks": 2903,
         "withSynergies": 2014,
         "avgLinkDensity": "0.039"
       }
@@ -39522,54 +39522,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\날카로운반사신경.md",
-        "lastUpdate": ""
-      }
-    },
-    "262111": {
-      "id": "262111",
-      "type": "passive",
-      "class": "Warrior",
-      "spec": "Arms",
-      "specs": [
-        "Arms"
-      ],
-      "name": "특화: 치명상",
-      "koreanName": "특화: 치명상",
-      "englishName": "",
-      "icon": "ability_backstab",
-      "iconName": "ability_backstab",
-      "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 특화: 치명상은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 특화: 치명상 전사 필요 요구 레벨 10 필사의 일격, [ 전쟁파괴자 / 거인의 강타], [ 회전베기 : 회전베기 ]및 칼날폭풍 사용 시 치명상을 부여해 6초에 걸쳐 (전투력의 145.48%)의 출혈 피해를 입히고, 적에 대한 자신의 공격력을 9.0%만큼 증가시킵니다.",
-      "category": "passive",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_backstab.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_backstab.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_backstab.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_backstab.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_backstab.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.031,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\특화-치명상.md",
         "lastUpdate": ""
       }
     },
@@ -128620,6 +128572,54 @@
         "lastUpdate": ""
       }
     },
+    "1258398": {
+      "id": "1258398",
+      "type": "passive",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "특화: 무기 전문가",
+      "koreanName": "특화: 무기 전문가",
+      "englishName": "Mastery: Master of Arms",
+      "icon": "warrior_talent_icon_igniteweapon",
+      "iconName": "warrior_talent_icon_igniteweapon",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "특화: 무기 전문가는 양손 무기를 사용하는 동안 공격력을 높이는 무기 전사의 특화다. 기본 툴팁에는 9.0%로 표시되며 실제 증가량은 캐릭터의 특화 수치에 따라 달라진다. 모든 장비 상태에서 고정 9%인 효과가 아니다.  대상에게 치명상을 먼저 걸어야 특화가 적용되는 구조가 아니다. 출혈의 유지·적용은 치명상과 죽음의 상처 등 별도 특성으로 확인한다. 옛 특화: 치명상 주문을 현재 특화로 사용하지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/warrior_talent_icon_igniteweapon.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/warrior_talent_icon_igniteweapon.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/warrior_talent_icon_igniteweapon.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_igniteweapon.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Skills\\특화-무기-전문가.md",
+        "lastUpdate": ""
+      }
+    },
     "1258843": {
       "id": "1258843",
       "type": "talent",
@@ -131018,24 +131018,26 @@
       "id": "1261060",
       "type": "spec-talent",
       "class": "Warrior",
-      "spec": "Protection",
+      "spec": "공용",
       "specs": [
+        "Arms",
+        "Fury",
         "Protection"
       ],
       "name": "치명상",
       "koreanName": "치명상",
-      "englishName": "",
+      "englishName": "Deep Wounds",
       "icon": "ability_backstab",
       "iconName": "ability_backstab",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "치명상은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 치명상 특성 전사 필요 마무리 일격이 대상에게 치명상을 부여합니다. 치명상 대상에게 6초에 걸쳐 (전투력의 145.48%)의 출혈 피해를 입힙니다. 이 효과가 다시 부여되면 남은 피해량을 새로운 치명상에 합산합니다.",
+      "description": "치명상은 무기·분노·방어 전문화 트리에서 선택할 수 있는 지속 특성이다. 선택하면 마무리 일격이 대상에게 치명상 출혈을 부여한다. 출혈은 기본 6초에 걸쳐 피해를 주며 다시 적용될 때 남은 피해량을 새 치명상에 합산한다.  선택 특성과 실제 마무리 일격 시전을 함께 확인한다. 필사의 일격·격돌·회전베기·거인의 강타가 모두 기본적으로 이 출혈을 적용하는 것은 아니다. 무기의 죽음의 상처는 별도의 추가 적용 경로이며 특화: 무기 전문가와도 다른 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131052,13 +131054,61 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 0,
         "synergyCount": 0,
-        "linkDensity": 0.016,
-        "hasWikilinks": true
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Talents\\치명상.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\공용\\Talents\\치명상.md",
+        "lastUpdate": ""
+      }
+    },
+    "1261062": {
+      "id": "1261062",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Arms",
+      "specs": [
+        "Arms"
+      ],
+      "name": "죽음의 상처",
+      "koreanName": "죽음의 상처",
+      "englishName": "Mortal Wounds",
+      "icon": "ability_warrior_bloodbath",
+      "iconName": "ability_warrior_bloodbath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "죽음의 상처는 필사의 일격과 격돌이 치명타로 적중하면 100% 효율의 치명상 출혈을 부여하는 무기 전문화 지속 특성이다. 일반 적중이 아니라 치명타 적중이 조건이다.  치명상 출혈은 기본 6초 동안 피해를 주며 재적용 시 남은 피해량을 합산한다. 100% 효율은 해당 타격 피해 전부를 복사한다는 뜻이 아니라 치명상 효과를 온전히 적용한다는 뜻이다. 회전베기가 이 특성의 적용 기술이라는 옛 설명은 사용하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodbath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_bloodbath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_bloodbath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_bloodbath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodbath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\죽음의-상처.md",
         "lastUpdate": ""
       }
     },

@@ -124,4 +124,15 @@ assert.match(skills[383154].description, /치명타 확률을 5%.*35% 미만.*33
 assert.deepEqual(synergies.warrior_arms_smash_grants.participants, ['167105', '1261051', '29725', '1261049', '260708']);
 assert.deepEqual(synergies.warrior_arms_dreadnaught.participants, ['7384', '262150']);
 assert.deepEqual(synergies.warrior_arms_bloodletting.participants, ['383154', '772', '12294']);
+assert.equal(skills[262111], undefined, 'Old Mastery: Deep Wounds must not return');
+assert(!JSON.stringify(synergies).includes('262111'));
+assert.equal(skills[1258398].koreanName, '특화: 무기 전문가');
+assert.equal(skills[1258398].icon, 'warrior_talent_icon_igniteweapon');
+assert.deepEqual(skills[1261060].specs, ['Arms', 'Fury', 'Protection']);
+assert.deepEqual(skills[1261062].specs, ['Arms']);
+for (const id of [1258398, 1261060, 1261062]) assert.equal(skills[id].patch, '12.1');
+assert.match(skills[1261060].description, /마무리 일격.*6초.*남은 피해량/);
+assert.match(skills[1261062].description, /필사의 일격과 격돌이 치명타/);
+assert.deepEqual(synergies.warrior_arms_deep_wounds_sources.participants, ['1261060', '163201', '1261062', '12294', '1464']);
+assert(!guide.includes('특화: 치명상'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

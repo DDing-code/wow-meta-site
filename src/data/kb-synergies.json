@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T18:13:57.450Z",
+    "generatedAt": "2026-09-21T18:20:52.341Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 589,
-    "rawTotalSynergies": 589,
+    "totalSynergies": 590,
+    "rawTotalSynergies": 590,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -224,6 +224,7 @@
       "ravager_bleed_amp": 2,
       "multi-target-core": 1,
       "proc-charge-engine": 1,
+      "bleed-application": 1,
       "bleed-rage-sustain": 1,
       "slayer-cooldown-link": 1,
       "aoe-cooldown-planning": 1,
@@ -263,7 +264,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 52
+      "Warrior": 53
     }
   },
   "synergies": {
@@ -19670,7 +19671,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사"
       ],
       "linkedBuffs": [],
@@ -19815,7 +19816,7 @@
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상"
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -19845,7 +19846,7 @@
         "772",
         "383154",
         "384318",
-        "262111"
+        "1261060"
       ],
       "class": "Warrior",
       "spec": "무기",
@@ -19857,7 +19858,6 @@
       "patch": "12.0.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
@@ -19865,6 +19865,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
@@ -19993,7 +19994,6 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/천둥의-포효"
@@ -20007,6 +20007,7 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투의-열정",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈"
       ],
       "source": {
@@ -20117,13 +20118,44 @@
         "lastUpdate": ""
       }
     },
+    "warrior_arms_deep_wounds_sources": {
+      "id": "warrior_arms_deep_wounds_sources",
+      "name": "치명상-죽음의상처-적용조건",
+      "type": "synergy",
+      "synergyType": "bleed-application",
+      "participants": [
+        "1261060",
+        "163201",
+        "1261062",
+        "12294",
+        "1464"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-상처"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\치명상-죽음의상처-적용조건.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-arms-deep-wounds-skullsplitter": {
       "id": "warrior-arms-deep-wounds-skullsplitter",
       "name": "치명상-해골-쪼개기-피의-쇄도",
       "type": "synergy",
       "synergyType": "bleed-rage-sustain",
       "participants": [
-        "262111",
+        "1261060",
         "260643",
         "384361",
         "772"
@@ -20137,20 +20169,21 @@
       "importance": 3,
       "patch": "12.0.5",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-치명상",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/특화-무기-전문가",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/해골-쪼개기",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무자비한-해골분쇄자",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전율의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/폭풍의-벽",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/피의-쇄도",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력"
       ],
@@ -20642,7 +20675,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/치명상",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/혈행성-전이",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
