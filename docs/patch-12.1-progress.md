@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Assassination common skills and Season 2, 2026-09-21
+
+- Rechecked Feint and Vanish against Korean/English tooltips and fixed title-only generated descriptions. Feint is baseline 35 energy, 6 seconds and 40% AoE reduction; Vanish's first 3 seconds prevent damage from breaking stealth, not damage itself.
+- Added passive Season 2 set records 1296590/1296591 with exact source names/icons and descriptive Korean aliases. Authored the set/poison/bleed relationship and a guide section distinguishing set damage modifiers from rotation changes.
+- Reviewed-subset regression coverage is now 70 records and 11 relationships. Shared/hero coverage, latest build/log evidence and the seven remaining 12.0.5 manuscripts are still unfinished. This is not a completion claim for all classes.
+
 ### Assassination core guide rollout, 2026-09-21
 
 - Reviewed Shiv 5938, Toxic Stiletto 1267182 and automatic Thistle Tea effect 381623 against current Korean tooltips. Added separate automatic talent 469779 and manual talent 1298826; the fixed 12.1 SimulationCraft trait table places both talents in choice node 90756.

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:58:15.980Z",
+    "generatedAt": "2026-09-21T01:03:30.694Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2976,
-    "rawTotalSkills": 2976,
+    "totalSkills": 2978,
+    "rawTotalSkills": 2978,
     "duplicateIds": [],
-    "totalSynergies": 565,
+    "totalSynergies": 566,
     "stats": {
-      "total": 2976,
+      "total": 2978,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
@@ -18,7 +18,7 @@
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 62,
+        "passive": 64,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 293,
+        "Rogue": 295,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -84,7 +84,7 @@
         "Priest-Shadow": 68,
         "Rogue-공용": 131,
         "Rogue-무법": 53,
-        "Rogue-암살": 50,
+        "Rogue-암살": 52,
         "Rogue-잠행": 59,
         "Shaman-고양": 44,
         "Shaman-공용": 126,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2901,
-        "withSynergies": 1879,
+        "withWikilinks": 2903,
+        "withSynergies": 1881,
         "avgLinkDensity": "0.040"
       }
     }
@@ -149437,6 +149437,115 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296590": {
+      "id": "1296590",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "Rogue Assassination 12.1 Class Set 2pc",
+      "koreanName": "Rogue Assassination 12.1 Class Set 2pc",
+      "englishName": "Rogue Assassination 12.1 Class Set 2pc",
+      "aliases": [
+        "암살 시즌 2 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "독살의 공격력이 10% 증가하고 독살이 자신의 공격력을 3% 증가시킨다. 시즌 2 장비 2세트 착용으로 얻는 지속 효과이며, 독립적으로 시전하는 기술이나 특성 포인트로 배우는 노드가 아니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.009,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296591": {
+      "id": "1296591",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "Rogue Assassination 12.1 Class Set 4pc",
+      "koreanName": "Rogue Assassination 12.1 Class Set 4pc",
+      "englishName": "Rogue Assassination 12.1 Class Set 4pc",
+      "aliases": [
+        "암살 시즌 2 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "맹독이 걸린 대상에게 입히는 출혈 피해가 10% 증가한다. 대상의 증폭의 독 중첩 하나당 자동 공격 피해가 3% 증가하며, 상처 감염 독은 한 번 더 적중한다. 시즌 2 장비 4세트의 지속 효과다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독",
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/증폭의독"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },

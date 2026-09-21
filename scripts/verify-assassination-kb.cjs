@@ -219,4 +219,13 @@ for (const id of ['1966', '1856']) {
 assert.equal(skills['1966'].resourceCost, '기력 35');
 assert.match(skills['1966'].description, /6초.*광역.*40%/);
 assert.match(skills['1856'].description, /3초.*피해 면역 시간이 아니/);
-console.log('Assassination reviewed subset: 68 atomic notes, 10 relationships, 7 retired talents passed');
+for (const id of ['1296590', '1296591']) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.equal(skills[id].type, 'passive', id);
+  assert.deepEqual(skills[id].specs, ['Assassination'], id);
+}
+assert.match(skills['1296590'].description, /독살.*10%.*3%/);
+assert.match(skills['1296591'].description, /출혈.*10%.*중첩.*자동 공격.*3%.*한 번 더/);
+assert.deepEqual(synergies.rogue_assassination_season2_poison_bleed.participants,
+  ['1296590', '1296591', '32645', '2823', '381664', '703', '1943']);
+console.log('Assassination reviewed subset: 70 atomic notes, 11 relationships, 7 retired talents passed');

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:58:15.981Z",
+    "generatedAt": "2026-09-21T01:03:30.695Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 565,
-    "rawTotalSynergies": 565,
+    "totalSynergies": 566,
+    "rawTotalSynergies": 566,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -155,6 +155,7 @@
       "combo_point_correction": 1,
       "bleed_maintenance": 1,
       "priority_aoe": 1,
+      "tier_set": 1,
       "fatebound_finisher_loop": 1,
       "builder_combo_point_engine": 1,
       "deathstalker_mark_cycle": 2,
@@ -248,7 +249,7 @@
       "Paladin": 45,
       "성기사": 10,
       "Priest": 52,
-      "Rogue": 36,
+      "Rogue": 37,
       "Shaman": 34,
       "Warlock": 60,
       "Warrior": 38
@@ -14369,6 +14370,46 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\부식성분사-왕의파멸.md",
+        "lastUpdate": ""
+      }
+    },
+    "rogue_assassination_season2_poison_bleed": {
+      "id": "rogue_assassination_season2_poison_bleed",
+      "name": "시즌 2 세트의 독살·독·출혈 강화",
+      "description": "2세트는 독살 피해와 공격력 보너스를 강화한다. 4세트는 맹독 대상의 출혈 피해를 10%, 증폭의 독 중첩당 자동 공격 피해를 3% 높인다. 장비 지속 효과이며 추가 시전 버튼이나 별도 오프닝은 없다.",
+      "type": "synergy",
+      "synergyType": "tier_set",
+      "participants": [
+        "1296590",
+        "1296591",
+        "32645",
+        "2823",
+        "381664",
+        "703",
+        "1943"
+      ],
+      "class": "Rogue",
+      "spec": "Assassination",
+      "specs": [
+        "Assassination"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기",
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/시즌2-4세트",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/증폭의독"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\시즌2-독살-독-출혈.md",
         "lastUpdate": ""
       }
     },
