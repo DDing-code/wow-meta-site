@@ -43,6 +43,32 @@ assert.match(skills['255544'].description, /2초/);
 assert.match(skills['423054'].description, /최대 기력이 50 증가/);
 assert.match(skills['381673'].description, /절단이 8초에 걸쳐 25%의 추가 출혈/);
 const cooldown = synergies.rogue_assassination_deathmark_kingsbane;
+const addedTalents = {
+  '1247993': ['의욕 충만한 학살자', /회복 속도가 20%/],
+  '1250359': ['약삭빠른 공격', /치명타 확률이 2%/],
+  '1249809': ['끝맺음', /죽음표식.*모든 피해가 10%/],
+  '1292996': ['협상의 여지', /대상이 죽으면 남은 지속시간/],
+  '1250036': ['경외의 일격', /이미 활성화.*모든 피해를 5%/],
+  '1250318': ['독술사의 결심', /이미 활성화.*연계 점수 1점/],
+  '1250358': ['박리', /파열의 피해가 25%/],
+  '1249802': ['서슬 교살줄', /목조르기의 지속시간이 6초/],
+  '1298812': ['불안정한 독소', /18%.*2초 감소/],
+  '1250325': ['시해의 보상', /끝나면.*중첩 5개당.*2%.*2초마다/],
+  '1250141': ['보조 독', /단일 대상 공격.*50%.*같은 무기 독/],
+};
+for (const [id, [name, effect]] of Object.entries(addedTalents)) {
+  assert.equal(skills[id]?.name, name, id);
+  assert.equal(skills[id].patch, '12.1', id);
+  assert.equal(skills[id].type, 'talent', id);
+  assert.ok(skills[id].specs.includes('Assassination'), id);
+  assert.match(skills[id].description, effect, id);
+}
+const poison = synergies.rogue_assassination_envenom_poison_finisher;
+assert.equal(poison.patch, '12.1');
+assert.equal(poison.spec, 'Assassination');
+assert.deepEqual(poison.participants, ['32645', '2823', '381664', '455072', '1250036', '1250318', '1298812', '1265385']);
+assert.match(poison.description, /선택한 갱신 특성/);
+assert.match(poison.description, /만료를 기다리는 보상이 아니다/);
 for (const id of ['2823', '381664']) {
   assert.equal(skills[id]?.patch, '12.1', id);
   assert.equal(skills[id].type, 'atomic-skill', id);
@@ -124,4 +150,4 @@ if (fs.existsSync(vault)) {
   assert.match(note('1265387'), /각 공격은 무기의 치명독을 적용하고 연계 점수 1점/);
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
-console.log('Assassination reviewed subset: 40 atomic notes, 3 relationships, 7 retired talents passed');
+console.log('Assassination reviewed subset: 51 atomic notes, 4 relationships, 7 retired talents passed');

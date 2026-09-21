@@ -277,6 +277,8 @@ Checked against the runtime manuscript map on 2026-09-21. The objective remains 
 
 - Fifth pass: fixed SimC commit 774babde5ddc7c5fc9f1abb129b473f8a076df70 identifies game build 12.1.0.69875. Removed seven absent legacy talents and their relationship references. Reviewed nine further existing effects, corrected Deadly/Amplifying Poison to 1.5-second coating casts, distinguished rank-one values and resolved Improved Garrote's conditional damage and Dragon-Tempered Blades' multiplicative application reduction. The existing reviewed set is now 39 local notes plus shared Ambush; eleven newly identified spec-tree nodes and common/hero coverage still need authoring. Removed the obsolete Indiscriminate Carnage instruction from the old manuscript without falsely relabeling the rest as 12.1.
 
+- Sixth pass: added eleven missing current spec talents with verified Korean names/icons and individually authored effects. Fixed-tree Assassination spec rows (45) now all resolve in the generated DB; this is coverage evidence, not proof of complete build/hero review. Rewrote Envenom's relationship to separate poison stacks, active-buff refresh rewards, mutually exclusive choices and Implacable energy. Current Motivated Murderer tooltips say 20%, not the launch summary's 30%. Scoped review covers 51 atomic records and four relationships. Common/hero nodes, full manuscript, flows and production rollout remain unfinished.
+
 ## Previously labeled 12.1, not yet re-audited in this rollout
 
 Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweaver Monk, Elemental Shaman, Holy Priest, Restoration Druid, Holy Paladin, Preservation Evoker.

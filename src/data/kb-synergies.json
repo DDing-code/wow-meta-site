@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:08:23.714Z",
+    "generatedAt": "2026-09-21T00:12:27.389Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -14234,51 +14234,40 @@
     },
     "rogue_assassination_envenom_poison_finisher": {
       "id": "rogue_assassination_envenom_poison_finisher",
-      "name": "독살-맹독-마무리일격",
+      "name": "독살: 독 적용·중첩 소비·효과 갱신",
+      "description": "독살은 독 적용 확률을 높이고 증폭의 독 중첩을 소비한다. 독살 효과가 남아 있을 때 다시 사용하면 신속한 주입과 선택한 갱신 특성의 보상을 받는다. 불구대천의 기력 회복은 만료를 기다리는 보상이 아니다.",
       "type": "synergy",
       "synergyType": "poison_finisher_engine",
       "participants": [
         "32645",
         "2823",
-        "381624",
         "381664",
-        "381801",
-        "255544",
-        "392384",
-        "381640",
-        "381797",
-        "14190",
-        "1329",
-        "328085",
         "455072",
-        "381652"
+        "1250036",
+        "1250318",
+        "1298812",
+        "1265385"
       ],
       "class": "Rogue",
-      "spec": "암살",
+      "spec": "Assassination",
       "specs": [
         "Assassination"
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살",
-        "08-직업별-Knowledge-Base/10-도적/암살/Skills/절단"
+        "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/맹독",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독연구",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/증폭의독",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/용단련칼날",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/사각지대",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독폭탄",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/치명적인혼합물",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/치사량",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/늠름한불한당",
         "08-직업별-Knowledge-Base/10-도적/암살/Talents/신속한주입",
-        "08-직업별-Knowledge-Base/10-도적/암살/Talents/구조적실패"
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/경외의일격",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/독술사의결심",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불구대천",
+        "08-직업별-Knowledge-Base/10-도적/암살/Talents/불안정한독소"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Synergies\\독살-맹독-마무리일격.md",

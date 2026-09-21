@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T00:08:23.713Z",
+    "generatedAt": "2026-09-21T00:12:27.388Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2962,
-    "rawTotalSkills": 2962,
+    "totalSkills": 2973,
+    "rawTotalSkills": 2973,
     "duplicateIds": [],
     "totalSynergies": 565,
     "stats": {
-      "total": 2962,
+      "total": 2973,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
         "atomic-skill": 559,
         "proc": 29,
         "skill": 131,
-        "talent": 985,
+        "talent": 996,
         "spec-talent": 392,
         "passive": 62,
         "hero-tree": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 279,
+        "Rogue": 290,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -84,7 +84,7 @@
         "Priest-Shadow": 68,
         "Rogue-공용": 128,
         "Rogue-무법": 53,
-        "Rogue-암살": 39,
+        "Rogue-암살": 50,
         "Rogue-잠행": 59,
         "Shaman-고양": 44,
         "Shaman-공용": 126,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2887,
-        "withSynergies": 1866,
+        "withWikilinks": 2898,
+        "withSynergies": 1877,
         "avgLinkDensity": "0.040"
       }
     }
@@ -121754,6 +121754,56 @@
         "lastUpdate": ""
       }
     },
+    "1247993": {
+      "id": "1247993",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "의욕 충만한 학살자",
+      "koreanName": "의욕 충만한 학살자",
+      "englishName": "Motivated Murderer",
+      "icon": "ability_rogue_deadliness",
+      "iconName": "ability_rogue_deadliness",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "기력 회복 속도가 20% 증가한다. 최대 기력을 늘리거나 사용 순간 일정량의 기력을 지급하는 효과가 아니라 지속적인 회복 속도를 높이는 특성이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_deadliness.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_deadliness.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_deadliness.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_deadliness.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_deadliness.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/피의길"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\의욕충만한학살자.md",
+        "lastUpdate": ""
+      }
+    },
     "1248002": {
       "id": "1248002",
       "type": "hero-talent",
@@ -122779,6 +122829,110 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "1249802": {
+      "id": "1249802",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "서슬 교살줄",
+      "koreanName": "서슬 교살줄",
+      "englishName": "Razor Wire",
+      "icon": "ability_hunter_razorwire",
+      "iconName": "ability_hunter_razorwire",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "목조르기의 지속시간이 6초 증가한다. 기본 18초 목조르기는 이 특성을 선택하면 24초가 된다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_razorwire.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_razorwire.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_razorwire.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_razorwire.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_razorwire.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/목조르기연마"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\서슬교살줄.md",
+        "lastUpdate": ""
+      }
+    },
+    "1249809": {
+      "id": "1249809",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "끝맺음",
+      "koreanName": "끝맺음",
+      "englishName": "Finish the Job",
+      "icon": "ability_revendreth_demonhunter",
+      "iconName": "ability_revendreth_demonhunter",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "죽음표식이 활성화된 동안 자신이 입히는 모든 피해가 10% 증가한다. 협상의 여지와 같은 선택 위치의 특성이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_demonhunter.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_revendreth_demonhunter.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_revendreth_demonhunter.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_revendreth_demonhunter.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_demonhunter.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/협상의여지"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\끝맺음.md",
+        "lastUpdate": ""
+      }
+    },
     "1249832": {
       "id": "1249832",
       "type": "talent",
@@ -122831,6 +122985,58 @@
         "lastUpdate": ""
       }
     },
+    "1250036": {
+      "id": "1250036",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "경외의 일격",
+      "koreanName": "경외의 일격",
+      "englishName": "Inspiring Strike",
+      "icon": "ability_rogue_disembowel",
+      "iconName": "ability_rogue_disembowel",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "독살 효과가 이미 활성화된 상태에서 독살을 다시 부여하면, 독 적용 확률 증가에 더해 입히는 모든 피해를 5% 증가시키는 효과가 붙는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_disembowel.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_disembowel.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_disembowel.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_disembowel.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_disembowel.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/독술사의결심"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.031,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\경외의일격.md",
+        "lastUpdate": ""
+      }
+    },
     "1250041": {
       "id": "1250041",
       "type": "talent",
@@ -122879,6 +123085,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\조화로운연계.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250141": {
+      "id": "1250141",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "보조 독",
+      "koreanName": "보조 독",
+      "englishName": "Secondary Poisoning",
+      "icon": "ability_poisons",
+      "iconName": "ability_poisons",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "단일 대상 공격으로 무기 독을 적용하면 50% 확률로 주변 적에게 추가 물리 피해를 주고 같은 무기 독을 적용한다. 날아가는 단검과 같은 선택 위치의 특성이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_poisons.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_poisons.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_poisons.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_poisons.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_poisons.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/날아가는단검",
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/부식성분사"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\보조독.md",
         "lastUpdate": ""
       }
     },
@@ -122983,6 +123240,211 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\사술사.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250318": {
+      "id": "1250318",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "독술사의 결심",
+      "koreanName": "독술사의 결심",
+      "englishName": "Poisoner's Drive",
+      "icon": "inv_ability_rogue_sepsis",
+      "iconName": "inv_ability_rogue_sepsis",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "독살 효과가 이미 활성화된 상태에서 독살을 다시 부여하면 연계 점수 1점을 얻는다. 독살의 기력 소모를 없애거나 소모한 점수를 전부 돌려주는 효과는 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_rogue_sepsis.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_rogue_sepsis.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_rogue_sepsis.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_rogue_sepsis.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_rogue_sepsis.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/경외의일격"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\독술사의결심.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250325": {
+      "id": "1250325",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "시해의 보상",
+      "koreanName": "시해의 보상",
+      "englishName": "Regicide's Reward",
+      "icon": "inv_knife_1h_artifactfangs_d_02",
+      "iconName": "inv_knife_1h_artifactfangs_d_02",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "왕의 파멸이 끝나면 당시 왕의 파멸 피해 증가 중첩 5개당 가속이 2% 증가하고, 이 가속은 2초마다 2%씩 감소한다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_artifactfangs_d_02.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_knife_1h_artifactfangs_d_02.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_knife_1h_artifactfangs_d_02.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_artifactfangs_d_02.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_artifactfangs_d_02.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/왕의파멸"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\시해의보상.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250358": {
+      "id": "1250358",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "박리",
+      "koreanName": "박리",
+      "englishName": "Avulsion",
+      "icon": "inv_artifact_corruptedbloodofzakajz",
+      "iconName": "inv_artifact_corruptedbloodofzakajz",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "파열의 피해가 25% 증가한다. 모든 출혈이나 목조르기의 피해를 함께 올리는 특성이 아니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_corruptedbloodofzakajz.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_artifact_corruptedbloodofzakajz.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_artifact_corruptedbloodofzakajz.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_artifact_corruptedbloodofzakajz.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_corruptedbloodofzakajz.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/파열"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/피바다"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\박리.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250359": {
+      "id": "1250359",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "약삭빠른 공격",
+      "koreanName": "약삭빠른 공격",
+      "englishName": "Canny Strikes",
+      "icon": "ability_rogue_combatexpertise",
+      "iconName": "ability_rogue_combatexpertise",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "치명타 확률이 2% 증가한다. 내출혈과 같은 선택 위치의 특성이므로 두 효과를 동시에 선택한 것으로 설명하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_combatexpertise.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_rogue_combatexpertise.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_rogue_combatexpertise.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_combatexpertise.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_combatexpertise.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/운명의낙인",
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/내출혈"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.035,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\약삭빠른공격.md",
         "lastUpdate": ""
       }
     },
@@ -148018,6 +148480,58 @@
         "lastUpdate": ""
       }
     },
+    "1292996": {
+      "id": "1292996",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "협상의 여지",
+      "koreanName": "협상의 여지",
+      "englishName": "Negotiable Contract",
+      "icon": "ability_revendreth_rogue",
+      "iconName": "ability_revendreth_rogue",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "죽음표식 대상이 죽으면 남은 지속시간만큼 주위의 적 전투원에게 죽음표식이 옮겨간다. 새 대상에서 기본 지속시간 전체로 다시 시작하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_rogue.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_revendreth_rogue.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_revendreth_rogue.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_revendreth_rogue.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_rogue.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/죽음표식"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/끝맺음"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.033,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\협상의여지.md",
+        "lastUpdate": ""
+      }
+    },
     "1295924": {
       "id": "1295924",
       "type": "skill",
@@ -151200,6 +151714,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\수양\\Talents\\음울한구원.md",
+        "lastUpdate": ""
+      }
+    },
+    "1298812": {
+      "id": "1298812",
+      "type": "talent",
+      "class": "Rogue",
+      "spec": "암살",
+      "specs": [
+        "Assassination"
+      ],
+      "name": "불안정한 독소",
+      "koreanName": "불안정한 독소",
+      "englishName": "Unstable Toxin",
+      "icon": "rogue_venomzest",
+      "iconName": "rogue_venomzest",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "독살의 피해가 18% 증가하지만 독살 효과의 지속시간이 2초 감소한다. 피해 증가와 효과 유지시간 감소를 함께 가진 선택 특성이다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/rogue_venomzest.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/rogue_venomzest.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/rogue_venomzest.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/rogue_venomzest.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/rogue_venomzest.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Skills/독살"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/암살/Talents/신속한주입"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.029,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\불안정한독소.md",
         "lastUpdate": ""
       }
     },
