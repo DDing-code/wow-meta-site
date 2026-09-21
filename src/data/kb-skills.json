@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:48:56.806Z",
+    "generatedAt": "2026-09-21T20:52:23.128Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -36054,18 +36054,18 @@
       ],
       "name": "칼날폭풍",
       "koreanName": "칼날폭풍",
-      "englishName": "",
+      "englishName": "Bladestorm",
       "icon": "ability_warrior_bladestorm",
       "iconName": "ability_warrior_bladestorm",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
       "resourceCost": "",
       "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 칼날폭풍은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 칼날폭풍 특성 즉시 1.5 분 재사용 대기시간 1회 사용 가능 전사 필요 근접 무기 필요 무기 멈출 수 없는 파괴의 소용돌이가 되어 6초 동안 주위 모든 적에게 [7 * (전투력의 271.635%)%]의 물리 피해를 입힙니다. 대상이 8명을 초과하면 감소된 피해를 입힙니다. 이동 방해 효과나 군중 제어 효과에 면역이 되며, 방어 능",
+      "description": "무기·분노 전문화의 광역 공격 특성입니다. 기본 재사용 대기시간은 1.5분이며, 가속 적용 전 지속시간은 무기 6초·분노 4초입니다. 주변 적에게 반복해서 물리 피해를 주며 8명을 초과하면 피해가 감소합니다. 이동 방해와 군중 제어에 면역이고 사용 중 방어 능력을 쓸 수 있지만 피해 면역은 아닙니다. 분노 전문화는 공격 주기마다 분노 5를 생성하고, 무기는 이 분노 생성 효과가 없습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36084,7 +36084,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 0,
-        "linkDensity": 0.04,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {

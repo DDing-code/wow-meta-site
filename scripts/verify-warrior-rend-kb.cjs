@@ -369,4 +369,10 @@ assert.match(skills[152278].description, /무기는.*투신과 거인의 강타.
 assert.deepEqual(synergies['warrior-fury-anger-management'].participants, ['184367', '152278', '1719', '107574']);
 assert.equal(synergies['warrior-fury-anger-management'].patch, '12.1');
 assert.ok(guide.includes('공격에 실제로 쓴 분노 20마다'));
+assert.equal(skills[227847].patch, '12.1');
+assert.equal(skills[227847].cooldown, '1.5분');
+assert.deepEqual(skills[227847].specs, ['Arms', 'Fury']);
+assert.match(skills[227847].description, /가속 적용 전.*무기 6초·분노 4초/);
+assert.match(skills[227847].description, /분노 전문화.*분노 5.*무기는.*없습니다/);
+assert.ok(guide.includes('분노의 칼날폭풍은 가속 적용 전 4초'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
