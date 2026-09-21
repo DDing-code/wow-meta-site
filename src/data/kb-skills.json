@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:38:25.372Z",
+    "generatedAt": "2026-09-21T17:44:05.402Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2982,
     "rawTotalSkills": 2982,
     "duplicateIds": [],
-    "totalSynergies": 580,
+    "totalSynergies": 582,
     "stats": {
       "total": 2982,
       "byType": {
@@ -36204,23 +36204,22 @@
       "spec": "공용",
       "specs": [
         "Arms",
-        "Fury",
         "Protection"
       ],
       "name": "쇠날발톱",
       "koreanName": "쇠날발톱",
-      "englishName": "",
+      "englishName": "Ravager",
       "icon": "warrior_talent_icon_ravager",
       "iconName": "warrior_talent_icon_ravager",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 쇠날발톱은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 쇠날발톱 특성 40 야드 사정거리 즉시 1.5 분 재사용 대기시간 1회 사용 가능 전사 필요 요구 레벨 45 근접 무기 필요 방어 대상에게 주위 적을 추적하는 소용돌이치는 무기를 던져 모든 적에게 12초에 걸쳐 [6 * (전투력의 119.517%)]의 물리 피해를 입힙니다. 대상이 8명을 초과하면 감소된 피해를 입힙니다. 쇠날발톱이",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "40야드",
+      "description": "쇠날발톱은 무기·방어 전사가 선택하는 공격 기술이며 분노 전사의 선택 기술이 아니다. 기본 사정거리 40야드, 즉시 시전, 재사용 대기시간 1.5분, 1충전이다. 주위 적을 추적하는 무기를 던져 12초 동안 물리 피해를 주며 8명을 초과하면 피해가 감소한다.  12.1에서는 적중한 적이 12초 동안 시전자 자신의 출혈 효과로 받는 피해가 기본 50% 증가한다. 복수·천둥벼락이나 회전베기의 직접 피해를 올리는 이전 효과와 다르다. 방어에는 피해를 입힐 때마다 분노 10을 생성하는 효과가 있다. 무기의 기본 설명에 이 분노 생성을 복사",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36237,9 +36236,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.005,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {

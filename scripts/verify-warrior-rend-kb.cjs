@@ -65,4 +65,14 @@ assert.equal(skills[1719].cooldown, '1.5분');
 assert.equal(skills[1719].castTime, '즉시');
 assert.match(skills[1719].description, /12초.*50%.*20%/);
 assert.deepEqual(synergies.warrior_fury_season2_recklessness.participants, ['1719', '85288', '1296645', '23881', '1296646']);
+assert.equal(skills[228920].patch, '12.1');
+assert.deepEqual(skills[228920].specs, ['Arms', 'Protection']);
+assert.equal(skills[228920].cooldown, '1.5분');
+assert.match(skills[228920].description, /자신의 출혈.*50%.*방어.*분노 10/);
+assert(!skills[228920].description.includes('복수와 천둥벼락의 공격력이 50%만큼 증가'));
+assert.deepEqual(synergies.warrior_arms_ravager_rend.specs, ['Arms']);
+assert.deepEqual(synergies.warrior_protection_ravager_bleeds.specs, ['Protection']);
+for (const synergy of Object.values(synergies)) {
+  if (synergy.specs?.includes('Fury')) assert(!synergy.participants?.includes('228920'), 'Fury must not inherit selectable Ravager');
+}
 console.log('Warrior Rend/Cleave/Improved Whirlwind corrections verified; full warrior migration remains open.');

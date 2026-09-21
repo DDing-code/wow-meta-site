@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:38:25.374Z",
+    "generatedAt": "2026-09-21T17:44:05.403Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 580,
-    "rawTotalSynergies": 580,
+    "totalSynergies": 582,
+    "rawTotalSynergies": 582,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -220,6 +220,7 @@
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
       "colossus-damage-window": 1,
+      "ravager_bleed_amp": 2,
       "multi-target-core": 1,
       "proc-charge-engine": 1,
       "bleed-rage-sustain": 1,
@@ -262,7 +263,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 43
+      "Warrior": 45
     }
   },
   "synergies": {
@@ -19553,7 +19554,6 @@
         "384318",
         "107574",
         "152278",
-        "228920",
         "382946",
         "382767",
         "383082",
@@ -19584,8 +19584,7 @@
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/격돌",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/분노-제어"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -19879,6 +19878,36 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\쇄파-거신의-지배-거인의-힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_ravager_rend": {
+      "id": "warrior_arms_ravager_rend",
+      "name": "쇠날발톱-분쇄-출혈강화",
+      "type": "synergy",
+      "synergyType": "ravager_bleed_amp",
+      "participants": [
+        "228920",
+        "772",
+        "845"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\쇠날발톱-분쇄-출혈강화.md",
         "lastUpdate": ""
       }
     },
@@ -20308,6 +20337,37 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\쇄파-거신의-지배-복수.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_protection_ravager_bleeds": {
+      "id": "warrior_protection_ravager_bleeds",
+      "name": "쇠날발톱-피와번개-출혈강화",
+      "type": "synergy",
+      "synergyType": "ravager_bleed_amp",
+      "participants": [
+        "228920",
+        "384277",
+        "6343"
+      ],
+      "class": "Warrior",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/피와-번개",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\쇠날발톱-피와번개-출혈강화.md",
         "lastUpdate": ""
       }
     },
