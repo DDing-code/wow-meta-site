@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T21:44:27.492Z",
+    "generatedAt": "2026-09-21T21:54:30.763Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -21211,13 +21211,15 @@
     "warrior-fury-bloodthirst-bleed-survival": {
       "id": "warrior-fury-bloodthirst-bleed-survival",
       "name": "피의-갈증-혈기-생존-출혈",
+      "description": "혈기 어린 칼날은 피의 갈증 치명타로 6초 출혈과 출혈 피해만큼의 회복을 만듭니다. 혈행성 전이는 피의 갈증 사용 후 8초 동안 자신의 출혈 피해를 20% 높이지만 출혈을 직접 걸지는 않습니다. 격노의 재생력은 별도로 8초 동안 피해를 30% 줄이고 피의 갈증에 최대 생명력의 20% 추가 회복을 붙입니다. 활기의 격노를 선택하면 11초로 늘고 사용 즉시 10%를 회복합니다. 출혈 회복, 피의 갈증 추가 회복, 생존기 즉시 회복은 서로 다른 효과입니다.",
       "type": "synergy",
       "synergyType": "bloodthirst-bleed-survival",
       "participants": [
         "23881",
+        "383959",
+        "385703",
         "184364",
-        "184367",
-        "85288"
+        "383468"
       ],
       "class": "Warrior",
       "spec": "분노",
@@ -21226,20 +21228,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/격노의-재생력",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
-        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/격노의-재생력"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/신선한-고기",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/혈기-어린-칼날",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/혈행성-전이",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/전쟁-물감",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/활기의-격노"
       ],
       "source": {

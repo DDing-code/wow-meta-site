@@ -447,4 +447,9 @@ assert.match(skills[385703].description, /8초.*출혈 피해.*20%.*새 출혈/)
 assert.match(skills[383486].description, /격노 상태.*자동 공격.*모든 기술/);
 assert.match(skills[383852].description, /1포인트.*2.5%.*2포인트.*5%.*치명타 확률/);
 assert.ok(guide.includes('로그의 빗나감과 근접 이탈을 구분'));
+const bloodthirstSurvival = synergies['warrior-fury-bloodthirst-bleed-survival'];
+assert.equal(bloodthirstSurvival.patch, '12.1');
+assert.deepEqual(bloodthirstSurvival.participants, ['23881', '383959', '385703', '184364', '383468']);
+assert.match(bloodthirstSurvival.description, /치명타.*6초.*8초.*20%.*11초.*서로 다른 효과/);
+assert.ok(guide.includes('공격할 수 없는 위험 구간: 피의 갈증을 기다리지 말고'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
