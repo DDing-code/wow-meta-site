@@ -284,4 +284,12 @@ assert.deepEqual(skills[392792].specs, ['Arms', 'Fury', 'Protection']);
 assert.match(skills[392792].description, /20%.*실제 소모.*무기.*10%.*분노.*10%.*방어.*50%/);
 assert.match(skills[392792].description, /무료 사용.*지불한 분노가 없/);
 assert.ok(guide.includes('예상 환급이 아니라 현재 분노를 확인'));
+for (const id of [262231, 382767]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms', 'Fury', 'Protection']);
+}
+assert.match(skills[262231].description, /무기 10%.*분노 20%.*방어 50%/);
+assert.match(skills[262231].description, /불일치.*실측/);
+assert.match(skills[382767].description, /최대 분노가 30.*100.*130/);
+assert.ok(guide.includes('주요 공격을 미루며 130까지 기다리지'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
