@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T20:30:25.981Z",
+    "generatedAt": "2026-09-21T20:44:18.712Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -5681,18 +5681,18 @@
       ],
       "name": "천둥벼락",
       "koreanName": "천둥벼락",
-      "englishName": "",
+      "englishName": "Thunder Clap",
       "icon": "spell_nature_thunderclap",
       "iconName": "spell_nature_thunderclap",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "cooldown": "6초",
+      "castTime": "즉시",
+      "resourceCost": "무기·분노 기본 20; 분노 몰아치는 천둥 선택 시 소모 없음",
       "range": "",
-      "description": "천둥벼락은 공용 직업 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 천둥벼락 특성 분노 20 즉시 6 초 재사용 대기시간 전사 필요 8미터 반경 내의 모든 적을 강타하여 (전투력의 235.68%)의 물리 피해를 입 [ 천둥충격 : 히고 4초 동안 이동 불가 상태로 만듭니다 / 힙니다.] 또한 10초 동안 이동 속도를 20%만큼 감소시킵니다. 5 / 무모한 희생 : 8 / 몰아치는 천둥 : 85 명을 넘는 대상에게",
+      "description": "8미터 안의 적에게 물리 피해를 주고 10초 동안 이동 속도를 20% 낮춥니다. 기본 재사용 대기시간은 6초입니다. 무기·분노의 기본 비용은 분노 20이며, 분노가 몰아치는 천둥을 선택하면 비용 없이 분노 8을 생성합니다. 분쇄 적용은 방어의 피와 번개, 분노의 피의 폭풍과 몰아치는 천둥 조합에 달려 있습니다. 무기의 분쇄를 자동으로 퍼뜨리지 않습니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5711,7 +5711,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
