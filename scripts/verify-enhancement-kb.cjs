@@ -101,8 +101,13 @@ assert.match(enhancement, /최신 채택률이나 현재 최적 빌드의 근거
 assert.doesNotMatch(manuscript, /skillId: ['"](?:51533|469314)['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]454009['"]/);
-assert.equal((manuscript.match(/skillId: ['"]452201['"]/g) || []).length, 6);
+assert.ok((manuscript.match(/(?:skillId|"skillId"): ['"]452201['"]/g) || []).length >= 8);
 assert.match(manuscript, /skillIds: \['454009'/);
+const heroFlows = enhancement.slice(enhancement.indexOf('heroBranches:'), enhancement.indexOf('    blocks:'));
+for (const mode of ['opener', 'singleTarget', 'aoe']) assert.equal((heroFlows.match(new RegExp('"' + mode + '":', 'g')) || []).length, 2, mode);
+assert.doesNotMatch(heroFlows, /76.1%|53.6%|92.6%/);
+assert.match(heroFlows, /수동 승천.*토림의 기원/);
+assert.match(heroFlows, /파멸의 바람.*휘몰아치는 정기.*토템의 기세/);
 assert.match(manuscript, /skillId: ['"]1218090['"]/);
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
