@@ -18,10 +18,10 @@ import {
   Zap,
 } from 'lucide-react';
 import {
-  CURRENT_PATCH_LABEL,
   getAllGuideSpecs,
 } from '../data/guideRegistry.js';
 import guideManuscripts from '../data/guideManuscripts.js';
+import { getGuidePublication } from '../data/guideUpdates.js';
 import { getLogReportsByGuideId } from '../data/logReportRegistry.js';
 import kbSkills from '../data/kb-skills.json';
 import kbSynergies from '../data/kb-synergies.json';
@@ -2095,7 +2095,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           <p>{renderGuideText(manuscript.playstyle?.[0]?.text || manuscript.summary, inlineTerms)}</p>
         </div>
         <ManuscriptMeta>
-          <span>패치 {manuscript.patch}</span>
+          <span>{getGuidePublication(guide.id, manuscript).label}</span>
           <span>조사 {manuscript.researchedAt}</span>
         </ManuscriptMeta>
       </PaperLead>
@@ -2470,6 +2470,7 @@ function GuideDetailPage() {
 
   const data = useMemo(() => (guide ? buildGuideData(guide) : null), [guide]);
   const manuscript = guide ? guideManuscripts[guide.id] : null;
+  const publication = getGuidePublication(guide?.id, manuscript);
   const logReports = guide ? getLogReportsByGuideId(guide.id) : [];
   const inlineTerms = useMemo(() => buildInlineTerms(data, manuscript), [data, manuscript]);
 
@@ -2542,7 +2543,7 @@ function GuideDetailPage() {
                 <span>로그 분석 {logReports.length}건</span>
               </LogReportLink>
             )}
-            <PatchBadge>{manuscript ? `${manuscript.patch} · ${manuscript.status}` : CURRENT_PATCH_LABEL}</PatchBadge>
+            <PatchBadge>{publication.detail}</PatchBadge>
           </HeroTopActions>
         </HeroTop>
         <HeroGrid>
@@ -2562,15 +2563,15 @@ function GuideDetailPage() {
           <HeroStats>
             <HeroStat>
               <span>패치</span>
-              <strong>{manuscript?.patch || CURRENT_PATCH_LABEL}</strong>
+              <strong>{publication.label}</strong>
             </HeroStat>
             <HeroStat>
               <span>포지션</span>
               <strong>{profile.label}</strong>
             </HeroStat>
             <HeroStat>
-              <span>업데이트</span>
-              <strong>{manuscript?.researchedAt || '확인 중'}</strong>
+              <span>Git 반영</span>
+              <strong>{publication.date ? <Link to="/news">{publication.date}</Link> : '확인 중'}</strong>
             </HeroStat>
             <HeroStat>
               <span>출처</span>
@@ -4205,7 +4206,8 @@ const BackLink = styled(Link)`
 `;
 
 const PatchBadge = styled.div`
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  overflow-wrap: anywhere;
   color: #d6dde2;
   font-size: 0.78rem;
   font-weight: 700;
@@ -4213,6 +4215,7 @@ const PatchBadge = styled.div`
 
 const HeroTopActions = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   gap: 14px;

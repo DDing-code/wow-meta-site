@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { guideUpdates } from '../data/guideUpdates.js';
+import { getAllGuideSpecs } from '../data/guideRegistry.js';
 
 const Page = styled.div`
   width: min(880px, calc(100% - 40px));
@@ -20,7 +23,7 @@ const Header = styled.header`
 
 const Title = styled.h1`
   color: #eef1f3;
-  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-size: 2rem;
 `;
 
 const Description = styled.p`
@@ -70,38 +73,42 @@ const Body = styled.p`
   line-height: 1.7;
 `;
 
-const entries = [
-  {
-    date: '2026-08-25',
-    title: '12.1 신성 사제 가이드 갱신',
-    body: '축도와 빛의 권능: 평온의 변경, 공격대 집정관과 쐐기 예언자 운용, 최근 로그 비교를 반영했습니다.',
-  },
-  {
-    date: '2026-05-22',
-    title: '12.0.5 KB 재작성 완료',
-    body: '13개 직업, 40개 전문화 스코프, 공용 스코프를 새 KB 구조로 정리했습니다.',
-  },
-  {
-    date: '2026-05-22',
-    title: '사이트 클린업 시작',
-    body: '구버전 가이드 구현과 실험용 코드 연결을 제거하고 새 디자인 목업을 준비합니다.',
-  },
-];
+const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  a { color: #b9c9d3; text-underline-offset: 3px; }
+  a:hover, a:focus-visible { color: #efc477; }
+`;
+
+const guides = getAllGuideSpecs();
 
 function NewsPage() {
   return (
     <Page>
       <Header>
         <Title>업데이트</Title>
-        <Description>패치 데이터와 가이드 변경 내역을 기록합니다.</Description>
+        <Description>Git에 반영된 가이드·KB·사이트 변경 내역입니다. 날짜는 커밋 기준이며, 부분 반영은 전체 검수 완료와 구분합니다.</Description>
       </Header>
       <Timeline>
-        {entries.map(item => (
+        {guideUpdates.map(item => (
           <Item key={`${item.date}-${item.title}`}>
             <Date as="time" dateTime={item.date}>{item.date}</Date>
             <div>
               <ItemTitle>{item.title}</ItemTitle>
               <Body>{item.body}</Body>
+              <Links aria-label="관련 페이지">
+                {item.guideIds.map(id => {
+                  const guide = guides.find(entry => entry.id === id);
+                  return <Link key={id} to={guide.path}>{guide.spec} {guide.className}</Link>;
+                })}
+                {item.path && <Link to={item.path}>분석 보고서</Link>}
+              </Links>
+              <Links aria-label="Git 변경 근거">
+                {item.commits.map(commit => <a key={commit} href={`https://github.com/DDing-code/wow-meta-site/commit/${commit}`} target="_blank" rel="noreferrer">커밋 {commit}</a>)}
+              </Links>
             </div>
           </Item>
         ))}

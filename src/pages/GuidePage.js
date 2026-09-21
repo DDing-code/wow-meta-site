@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowUpRight } from 'lucide-react';
 import { guideManuscripts } from '../data/guideManuscripts.js';
+import { getGuidePublication } from '../data/guideUpdates.js';
 import SpecializationIcon from '../components/SpecializationIcon.js';
 import {
-  CURRENT_PATCH_LABEL,
   guideRoles,
   guideSpecsByRole,
   getAllGuideSpecs,
@@ -287,7 +287,7 @@ function GuidePage() {
                 </SpecTop>
                 <Meta>
                   <span>{item.roleLabel}</span>
-                  <span>{guideManuscripts[item.id]?.patch || CURRENT_PATCH_LABEL}</span>
+                  <span title={getGuidePublication(item.id, guideManuscripts[item.id]).detail}>{getGuidePublication(item.id, guideManuscripts[item.id]).label}</span>
                 </Meta>
               </SpecCard>
             ))}

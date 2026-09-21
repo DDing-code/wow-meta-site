@@ -1,0 +1,65 @@
+// Publication dates are Git dates, not source-research dates.
+export const guideUpdates = [
+  { date: '2026-09-22', title: '전사 12.1 데이터 교정', partial: true,
+    guideIds: ['warrior-arms', 'warrior-fury', 'warrior-protection'],
+    commits: ['c1438b36', '3fcf2f89', '6fd0dcc5', '434f64b0'],
+    body: '무기·분노의 특성, 시즌 2 세트와 공용 이동·생존 기술을 교정했습니다. 분노 누락 특성 5개를 추가하고 삭제된 특성과 시너지 연결을 정리했습니다. 전사 3개 가이드의 전체 운용 검수는 진행 중입니다.' },
+  { date: '2026-09-22', title: '고양·복원 주술사 12.1 보완', partial: true,
+    guideIds: ['shaman-enhancement', 'shaman-restoration'],
+    commits: ['330e18e8', '12e78005', 'd297d13d', 'dd985204'],
+    body: '복원 시즌 2 세트, 선견자·토템술사와 핵심 치유 효과를 교정했습니다. 고양은 자동 소모를 실제 버프 이벤트와 대조했습니다. 공용 유틸도 보완했으며 전체 전환 검수는 진행 중입니다.' },
+  { date: '2026-09-21', title: '페알 신화 로그 분석 추가', guideIds: [], commits: ['16fa7066'],
+    path: '/guide/deathknight/unholy/log-analysis/peal-mythic',
+    body: '부정 죽음의 기사 최근 5보스와 상위 기록을 비교했습니다. 후반 시전 중단, 소환 시점, 부패의 낫 유지와 광역 소비기 선택을 나눠 분석했습니다.' },
+  { date: '2026-09-21', title: '도적 3개 전문화 12.1 가이드 개편',
+    guideIds: ['rogue-assassination', 'rogue-outlaw', 'rogue-subtlety'], commits: ['77591aea', '574ec24d', '6ce1048f'],
+    body: '암살·무법·잠행의 영웅 특성별 전투 흐름과 시즌 2 효과를 반영하고, 독·기력·연계 점수 및 공용 특성 설명을 수정했습니다. 잠행의 로그 검수는 별도로 진행 중입니다.' },
+  { date: '2026-09-21', title: '수양·암흑 사제, 보호·징벌 성기사 갱신',
+    guideIds: ['priest-discipline', 'priest-shadow', 'paladin-protection', 'paladin-retribution'],
+    commits: ['a0b50efb', '2eedc562', '2d05c484', '32e23461'],
+    body: '12.1 가이드와 정본 KB를 갱신하고 스펠 DB, 영웅 특성별 운용과 연결 정보를 함께 반영했습니다.' },
+  { date: '2026-09-21', title: '흑마법사 3개 전문화·양조 수도사 갱신',
+    guideIds: ['warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'monk-brewmaster'],
+    commits: ['ab52a3cb', 'a4694df3', '36f29d45', 'e7258a35'],
+    body: '고통·악마·파괴와 양조의 12.1 가이드, 정본 스킬 데이터와 전문화별 운용 설명을 갱신했습니다.' },
+  { date: '2026-09-21', title: '가이드 목록·전문화 아이콘 개선', guideIds: [], commits: ['d7c947f9', '9fc63228', '24e59de9'],
+    body: '한 직업의 전문화를 간결한 행으로 묶고 제목에도 아이콘을 추가했습니다. 모바일 WebKit에서 아이콘이 네모로 보이던 문제를 수정했습니다.' },
+  { date: '2026-09-20', title: '풍운 수도사 12.1 운용 갱신', guideIds: ['monk-windwalker'], commits: ['54603c63'],
+    body: '풍운 가이드와 KB 기반 스킬, 영웅 특성별 딜사이클을 갱신했습니다.' },
+  { date: '2026-09-20', title: '페이지 이동 시 스크롤 초기화', guideIds: [], commits: ['ba6d34b8'],
+    body: '새 페이지를 열었을 때 이전 페이지의 스크롤 위치가 남아 중간부터 보이던 문제를 수정했습니다.' },
+  { date: '2026-09-13', title: '사냥꾼·화염·냉기 마법사·증강 가이드 갱신',
+    guideIds: ['hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'mage-fire', 'mage-frost', 'evoker-augmentation'],
+    commits: ['c1b53f3c', 'dc574964', '8f292a70', 'd5bdc1e0', 'd60bcdbc', 'fceb3abf'],
+    body: '12.1 KB와 가이드를 갱신하고 영웅 특성별 오프닝·단일·광역 흐름을 정리했습니다.' },
+  { date: '2026-09-13', title: '야성·수호, 파멸·복수, 부정 가이드 갱신',
+    guideIds: ['druid-feral', 'druid-guardian', 'demonhunter-havoc', 'demonhunter-vengeance', 'deathknight-unholy'],
+    commits: ['32f3cb2c', '3e8ebe91', '3fc2136a', '44efcca9', 'd1a546d2'],
+    body: '12.1 가이드와 KB·스펠 DB를 갱신했습니다. 전투 흐름은 아이콘 간격을 줄이고 줄바꿈이 가능한 형태로 정리했습니다.' },
+  { date: '2026-09-12', title: '혈기·냉기 죽음의 기사 가이드 갱신',
+    guideIds: ['deathknight-blood', 'deathknight-frost'], commits: ['03ca0b12', '3d8b9b9e'],
+    body: '12.1 기준 가이드와 정본 데이터를 갱신했습니다.' },
+  { date: '2026-09-09', title: '비전 마법사 12.1 갱신', guideIds: ['mage-arcane'], commits: ['697d6636'],
+    body: '비전 가이드와 KB에 12.1 운용 및 영웅 특성별 연계를 반영했습니다.' },
+  { date: '2026-09-08', title: '포식 악마사냥꾼 12.1 갱신', guideIds: ['demonhunter-devourer'], commits: ['c35af905'],
+    body: '포식 가이드와 KB에 탈태 전후 운용과 단일·광역 분기를 반영했습니다.' },
+  { date: '2026-09-05', title: '조화 드루이드 12.1 갱신', guideIds: ['druid-balance'], commits: ['ba7ce184', '79238e92'],
+    body: '조화 가이드를 갱신하고 사이트 변경을 KB에도 동기화했습니다.' },
+  { date: '2026-08-30', title: '힐러·정기·황폐 12.1 가이드 반영',
+    guideIds: ['priest-holy', 'paladin-holy', 'druid-restoration', 'monk-mistweaver', 'evoker-preservation', 'shaman-elemental', 'evoker-devastation'],
+    commits: ['d3eecf40'],
+    body: '신성 사제·성기사, 회복 드루이드, 운무, 보존, 정기와 황폐의 12.1 원고를 Git에 반영했습니다. 여기의 날짜는 자료 조사일이 아닌 커밋 날짜입니다.' },
+];
+
+export function getGuidePublication(id, manuscript) {
+  const update = guideUpdates.find(entry => entry.guideIds.includes(id));
+  const patch = manuscript?.patch || '확인 중';
+  const status = (manuscript?.status || '').replace(/^12\.1\s*/, '');
+  const partial = update?.partial && patch !== '12.1';
+  return {
+    label: partial ? '12.1 전환 중' : patch,
+    detail: partial ? `12.1 부분 반영 · 기존 원고 ${patch}` : `${patch}${status ? ` · ${status}` : ''}`,
+    date: update?.date || null,
+    commit: update?.commits[0] || null,
+  };
+}
