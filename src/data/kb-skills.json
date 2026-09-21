@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:30:35.377Z",
+    "generatedAt": "2026-09-21T04:33:00.443Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,12 +13,12 @@
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 554,
+        "atomic-skill": 553,
         "proc": 29,
         "skill": 131,
         "talent": 995,
         "spec-talent": 392,
-        "passive": 74,
+        "passive": 75,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2904,
-        "withSynergies": 1984,
+        "withSynergies": 1989,
         "avgLinkDensity": "0.039"
       }
     }
@@ -3327,14 +3327,14 @@
       "icon": "ability_rogue_distract",
       "iconName": "ability_rogue_distract",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 혼란 (Distract)",
+      "cooldown": "30초",
+      "castTime": "즉시",
+      "resourceCost": "기력 30",
+      "range": "30야드",
+      "description": "기력 30을 사용해 30야드 내 선택 지역의 적 주의를 10초 동안 끄는 즉시 사용 기술이다. 기본 쿨다운은 30초이며 은신 중에도 사용할 수 있다. 기절이나 모든 주문 시전을 차단하는 효과가 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3346,14 +3346,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_distract.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/은신"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.038,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -3477,14 +3479,14 @@
       "icon": "ability_stealth",
       "iconName": "ability_stealth",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "2초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 은신 (Stealth)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "취소할 때까지 은신 상태로 몸을 숨기는 즉시 사용 기술이며 기본 쿨다운은 2초다. 툴팁에 함께 표시되는 특성 조건부 문구는 은신 자체의 기본 효과가 아니다. 은신 사용만으로 모든 공격 피해 증가나 자원 비용 감소를 보장하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3496,16 +3498,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_stealth.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/10-도적/암살/Skills/목조르기"
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/기만"
         ],
-        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 8,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.121,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -3720,7 +3722,7 @@
     },
     "1860": {
       "id": "1860",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Rogue",
       "spec": "공용",
       "specs": [
@@ -3734,14 +3736,14 @@
       "icon": "inv_feather_01",
       "iconName": "inv_feather_01",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 낙법 (Safe Fall)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "낙하 피해를 줄이는 지속 효과다. 직접 누르는 생존기나 느린 낙하 주문이 아니며, 모든 높이에서 낙하 피해가 완전히 사라진다는 뜻도 아니다. 현재 툴팁은 정확한 감소율을 제시하지 않는다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3754,13 +3756,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/불굴의걸음"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "synergyCount": 1,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -10963,12 +10967,12 @@
       "school": "",
       "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "",
+      "resourceCost": "없음",
       "range": "25야드",
-      "description": "# 그림자 밟기 (Shadowstep)",
+      "description": "대상의 배후로 이동하고 2초 동안 이동 속도가 70% 증가하는 즉시 사용 기술이다. 기본 사거리는 25야드, 쿨다운은 30초다. 이미 배운 그림자 밟기에 충전을 추가하는 조건부 문구와 기본 기술을 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -10981,13 +10985,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/전율의추구자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.053,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -19825,8 +19831,6 @@
       "class": "Rogue",
       "spec": "공용",
       "specs": [
-        "Assassination",
-        "Outlaw",
         "Subtlety"
       ],
       "name": "표창 투척",
@@ -19835,14 +19839,14 @@
       "icon": "inv_throwingknife_07",
       "iconName": "inv_throwingknife_07",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 표창 투척 (Shuriken Toss)",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "기력 40",
+      "range": "30야드",
+      "description": "기력 40을 사용해 30야드 내 적에게 물리 피해를 주고 연계 점수 1점을 생성하는 잠행 전용 원거리 기술이다. 대상에게 접근하거나 이동 속도를 높이는 이동기가 아니다. 고정 12.1 전문화 기술 목록에서 잠행 261에만 속한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19854,14 +19858,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_throwingknife_07.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자밟기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.037,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -19885,14 +19891,14 @@
       "icon": "ability_rogue_shroudofconcealment",
       "iconName": "ability_rogue_shroudofconcealment",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 은폐의 장막 (Shroud of Concealment)",
+      "cooldown": "기본 6분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "은신 중 사용해 30야드 내 파티원과 공격대원을 최대 15초 동안 은신시키는 기술이다. 기본 쿨다운은 6분이다. 고요한 장막의 쿨다운 감소나 다른 특성의 지속 시간 증가는 선택 여부를 확인해 별도로 적용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19905,13 +19911,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/고요한장막"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {

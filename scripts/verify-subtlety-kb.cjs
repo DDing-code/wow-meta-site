@@ -232,6 +232,15 @@ for (const [id, effect] of Object.entries({
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+assert.deepEqual(skills['114014'].specs, ['Subtlety']);
+assert.match(skills['114014'].description, /40.*30야드.*1점.*잠행 전용/);
+assert.equal(skills['1784'].cooldown, '2초');
+assert.match(skills['36554'].description, /배후.*2초.*70%.*25야드.*30초/);
+assert.equal(skills['114018'].cooldown, '기본 6분');
+assert.match(skills['114018'].description, /은신.*30야드.*15초.*6분/);
+assert.match(skills['1725'].description, /30.*30야드.*10초.*30초.*은신/);
+assert.equal(skills['1860'].castTime, '지속 효과');
+assert.match(skills['1860'].description, /낙하 피해.*정확한 감소율.*제시하지/);
 for (const id of ['378803', '455131']) {
   assert.equal(skills[id], undefined, 'Retired Rogue talent ' + id);
   for (const relation of Object.values(synergies)) assert.ok(!relation.participants.includes(id), relation.id + id);

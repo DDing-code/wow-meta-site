@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue baseline utility and ranged-skill scope, 2026-09-21
+
+- Replaced six title-only descriptions: Stealth, Shadowstep, Shuriken Toss, Shroud of Concealment, Distract and Safe Fall. Separated conditional tooltip additions from baseline effects, corrected Stealth's two-second cooldown, Shroud's six-minute cooldown and passive Safe Fall.
+- Fixed SimC class/specialization spell rows restrict Shuriken Toss 114014 to Subtlety 261; its KB/DB scope now matches. It is a 40-Energy, 30-yard, one-point ranged attack, not a movement skill. Shadowstep specialization availability still requires further tree/spell replacement review; no broader availability claim is made from the tooltip alone.
+
 ### Rogue control casts and conflict cross-check, 2026-09-21
 
 - Rewrote Cheap Shot, Kidney Shot and Gouge from Korean/English tooltips: real instant-cast fields, Energy costs, cooldowns, stun/incapacitate durations, combo-point behavior and positional/stealth requirements. Removed unsupported generic hero-package links.
