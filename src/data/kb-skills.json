@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:05:00.074Z",
+    "generatedAt": "2026-09-21T17:17:52.262Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2902,
-        "withSynergies": 2005,
+        "withSynergies": 2007,
         "avgLinkDensity": "0.039"
       }
     }
@@ -1989,18 +1989,18 @@
       ],
       "name": "분쇄",
       "koreanName": "분쇄",
-      "englishName": "",
+      "englishName": "Rend",
       "icon": "ability_gouge",
       "iconName": "ability_gouge",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 분쇄은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 분쇄 특성 분노 20 즉시 6 초 재사용 대기시간 전사 필요 요구 레벨 30 근접 무기 필요 무기를 힘껏 내질러 10미터 내 모든 대상을 가격해 즉시 (전투력의 259.248%)의 물리 피해를 입히고, 상처를 남겨 15초에 걸쳐 (전투력의 190.465%)의 추가 출혈 피해를 입힙니다.",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "분노 10",
+      "range": "근접",
+      "description": "분쇄는 무기 전사의 단일 대상 출혈 기술이다. 분노 10을 소모하는 근접 즉시 시전으로, 전투력의 124.581% 물리 피해와 15초 동안 전투력의 190.465% 출혈 피해를 준다. 수치는 2026-09-22 기본 툴팁 기준이며 캐릭터 강화가 적용된 실전 피해량은 아니다.  12.1에서는 직접 사용하는 분쇄가 무기 전용이며, 과거의 10미터 광역 공격이나 재사용 대기시간 6초 기술이 아니다. 분쇄를 배웠다면 회전베기로 적중 대상 모두에게 적용할 수 있다. 천둥벼락이 분쇄를 기본 적용한다고 생각해서는 안 된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2012,14 +2012,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_gouge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.02,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -2140,18 +2142,18 @@
       ],
       "name": "회전베기",
       "koreanName": "회전베기",
-      "englishName": "",
+      "englishName": "Cleave",
       "icon": "ability_warrior_cleave",
       "iconName": "ability_warrior_cleave",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "무기 전사는 치명상 유지, 제압 강화, 거인의 강타 또는 전쟁파괴자 구간에 필사의 일격과 마무리 일격을 집중한다. 회전베기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 회전베기 특성 분노 20 근접 사정거리 즉시 4.5 초 재사용 대기시간 전사 필요 요구 레벨 40 전방에 있는 모든 적을 공격해 (전투력의 258.682%)의 물리 피해를 입힙니다. 대상이 5명을 초과하면 감소된 피해를 입힙니다.",
+      "cooldown": "4.5초",
+      "castTime": "즉시",
+      "resourceCost": "분노 20",
+      "range": "근접",
+      "description": "회전베기는 분노 20을 소모해 전방의 모든 적을 공격하는 무기 전사의 광역 기술이다. 기본 재사용 대기시간은 4.5초이며 즉시 시전한다. 전투력의 232.814% 물리 피해를 주고 대상이 5명을 초과하면 피해가 감소한다. 5명을 넘는 적을 아예 공격하지 못한다는 뜻은 아니다.  12.1에서는 분쇄를 배웠을 경우 적중 대상 모두에게 분쇄를 적용한다. 회전베기를 찍었다는 이유만으로 분쇄를 배우지 않은 빌드에서도 출혈이 적용되는 것은 아니다. 피해 계수는 2026-09-22 기본 툴팁 기준이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2163,14 +2165,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_cleave.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -7023,18 +7027,18 @@
       ],
       "name": "소용돌이 연마",
       "koreanName": "소용돌이 연마",
-      "englishName": "",
+      "englishName": "Improved Whirlwind",
       "icon": "ability_whirlwind",
       "iconName": "ability_whirlwind",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "소용돌이 연마은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 소용돌이 연마 특성 전사 필요 소용돌이 [ 몰아치는 천둥 : 및 천둥벼락 ] 사용 시 다음 4번의 단일 대상 공격이 최대 4명의 대상에게 추가로 적중하여 65%의 피해를 입힙니다. 소용돌이가 3의 분노를 생성하고 적중한 대상 하나당 1의 분노를 추가로 생성합니다. 최대 8의 분노를 생성합니다. 분쇄를 배웠다면 소용돌이가 모든 대상에게 분쇄",
+      "description": "소용돌이 연마는 소용돌이 사용 후 다음 4번의 단일 대상 공격을 최대 4명의 추가 대상에게 65% 피해로 적중시키는 지속 효과다. 몰아치는 천둥을 선택한 산왕은 천둥벼락으로도 이 효과를 활성화한다.  12.1에서 소용돌이 자체는 기본으로 분노 3을 생성한다. 소용돌이 연마는 적중 대상당 분노 1을 추가하며 기본 생성량과 합쳐 최대 8이다. 분쇄 적용은 이 특성의 효과가 아니다. 별도 특성 Storm of Blood의 효과와 광역 복제 공격을 구분해야 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
