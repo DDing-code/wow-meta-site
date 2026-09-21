@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:44:05.403Z",
+    "generatedAt": "2026-09-21T17:50:13.966Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -215,7 +215,7 @@
       "shared_aoe_pressure": 1,
       "slayer-hero-package": 1,
       "burst-window-core": 1,
-      "execute-proc-extension": 1,
+      "execute-availability": 1,
       "execute-window": 1,
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
@@ -19627,8 +19627,7 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-무도"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\Slayer-마무리-일격-칼날폭풍.md",
@@ -19687,13 +19686,12 @@
     },
     "warrior-arms-sudden-death-massacre-dance": {
       "id": "warrior-arms-sudden-death-massacre-dance",
-      "name": "급살-대학살-죽음의-무도",
+      "name": "급살-대학살-마무리-조건",
       "type": "synergy",
-      "synergyType": "execute-proc-extension",
+      "synergyType": "execute-availability",
       "participants": [
         "29725",
         "281001",
-        "390713",
         "163201"
       ],
       "class": "Warrior",
@@ -19703,25 +19701,17 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-무도",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/집행자의-정밀함",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/비판적-사고",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/살상의-기회",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/원한의-평화",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기"
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\급살-대학살-죽음의-무도.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\급살-대학살-마무리-조건.md",
         "lastUpdate": ""
       }
     },
@@ -19754,11 +19744,10 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/비판적-사고",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-무도",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/격렬한-원동력",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/살상의-기회",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/원한의-평화"
       ],
       "source": {
@@ -20071,7 +20060,6 @@
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-무도",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마"
       ],
       "source": {
@@ -20683,8 +20671,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/천벌과-분노",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/폭풍-강철"
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/천벌과-분노"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\벼락-우레-작렬-폭풍의-화신.md",
@@ -20803,7 +20790,6 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/소용돌이-연마",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/자르고-베기",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/춤추는-칼날",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/폭풍-강철",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노의-강타-연마",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-광기",

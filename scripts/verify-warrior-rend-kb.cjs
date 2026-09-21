@@ -75,4 +75,13 @@ assert.deepEqual(synergies.warrior_protection_ravager_bleeds.specs, ['Protection
 for (const synergy of Object.values(synergies)) {
   if (synergy.specs?.includes('Fury')) assert(!synergy.participants?.includes('228920'), 'Fury must not inherit selectable Ravager');
 }
+for (const id of [390713, 382953]) {
+  assert.equal(skills[id], undefined, 'Retired talent must not return');
+  assert(!JSON.stringify(synergies).includes(String(id)), 'Retired talent graph reference must not return');
+}
+assert.deepEqual(synergies['warrior-arms-sudden-death-massacre-dance'].participants, ['29725', '281001', '163201']);
+assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살-대학살-마무리-조건');
+for (const id of [29725, 281001]) assert.equal(skills[id].patch, '12.1');
+assert.match(skills[29725].description, /무료.*40/);
+assert.match(skills[281001].description, /35% 미만/);
 console.log('Warrior Rend/Cleave/Improved Whirlwind corrections verified; full warrior migration remains open.');
