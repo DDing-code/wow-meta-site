@@ -1,5 +1,16 @@
 export const logReports = [
   {
+    id: 'deathknight-unholy-peal-mythic-2026-09-21',
+    guideId: 'deathknight-unholy',
+    date: '2026-09-21',
+    title: '페알 부정 죽음의 기사 신화 로그 분석',
+    subject: '페알-아즈샤라',
+    encounter: '맹독 심연 신화 5보스',
+    fights: '최근 5킬 · 상위 5개 · 본인 이전 2개',
+    summary: '후반 시전 중단, 소환 쿨기 지연, 낫 유지와 광역 소비기 선택을 12전투에서 비교했습니다.',
+    path: '/guide/deathknight/unholy/log-analysis/peal-mythic',
+  },
+  {
     id: 'evoker-preservation-chaeyong-mythic-2026-09-12',
     guideId: 'evoker-preservation',
     date: '2026-09-12',
