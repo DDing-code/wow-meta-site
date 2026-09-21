@@ -340,4 +340,23 @@ assert.match(skills['192088'].description, /30초.*20%.*90초.*영혼나그네�
 assert.match(skills['378077'].description, /5초.*침묵.*15초.*아니며.*자비로운 영혼.*같은 선택/);
 assert.ok(!skills['462820'], 'Jet Stream internal effect must not appear as a duplicate selectable talent');
 assert.ok(Object.values(synergies).every(row => !row.participants.includes('462820')));
-console.log('Enhancement mechanics and shared utility regression checks passed; full manuscript, equipment and logs are not covered.');
+const buffSnapshot = JSON.parse(require('node:zlib').gunzipSync(fs.readFileSync(path.join(__dirname, '../artifacts/enhancement-12.1/wcl-representative-buffs.json.gz'))));
+const castSnapshot = JSON.parse(fs.readFileSync(path.join(__dirname, '../artifacts/enhancement-12.1/wcl-representative-casts.json'), 'utf8'));
+for (const [key, actor, expectedPairs, expectedRemovals] of [['raid',19,61,59],['dungeon',3,112,109]]) {
+  const raw = buffSnapshot.response.data.reportData[key];
+  const castPage = castSnapshot.response.data.reportData[key].events;
+  assert.equal(raw.buffs.nextPageTimestamp, null);
+  assert.equal(castPage.nextPageTimestamp, null);
+  const casts = castPage.data.filter(e => e.sourceID === actor && e.type === 'cast' && !e.fake);
+  const bands = raw.table.data.auras.filter(a => [114051,466772].includes(a.guid)).flatMap(a => a.bands);
+  const pairs = casts.filter(e => [188196,188443,452201].includes(e.abilityGameID) && casts.some(s => s.timestamp === e.timestamp && [17364,115356,187874].includes(s.abilityGameID)));
+  assert.equal(pairs.length, expectedPairs);
+  assert(pairs.every(e => bands.some(b => e.timestamp >= b.startTime && e.timestamp < b.endTime)));
+  const stacks = raw.buffs.data.filter(e => e.targetID === actor && e.abilityGameID === 344179);
+  assert.equal(Math.max(...stacks.map(e => e.stack || 0)), 10);
+  assert.equal(pairs.filter(e => stacks.some(s => s.type === 'removebuff' && s.timestamp === e.timestamp)).length, expectedRemovals);
+}
+assert.match(enhancement, /레이드 61건, 쐐기 112건/);
+assert.match(enhancement, /각각 59건과 109건/);
+assert.match(enhancement, /나머지 번개 주문은 모두 수동이었다는 뜻은 아닙니다/);
+console.log('Enhancement mechanics, utilities and representative buff/cast evidence passed; exact resource loss and full guide audit remain open.');
