@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Rogue movement scope correction, 2026-09-21
+
+- Restricted Acrobatic Strikes 455143 to Outlaw using its fixed 12.1 spec-tree row (spec 260); authored its three-second, ten-stack auto-attack/movement effect from Korean/English tooltips. Storage remains in the existing common directory; explicit specialization scope is authoritative.
+- Rebuilt the common movement relationship with six actual movement participants. Removed Outlaw-only Acrobatic Strikes and unrelated Blind, defensive-cost, Agility, attack-speed and ranged-attack nodes. Shadowheart retirement and the older common overview/control relationships remain pending.
+
 ### Rogue offensive modifiers and scope findings, 2026-09-21
 
 - Compared live Korean/English effects and fixed trait rows for seven common talents: Deadly Precision, Lethality, Cold Blooded Killer, Thrill Seeking, Forced Induction, Quick Fingers and Deep Cuts. Replaced generic text, separated crit chance from crit damage, clarified Lethality's two ranks and spec-specific mobility charges, and linked actual conditions instead of poison/stealth placeholders.

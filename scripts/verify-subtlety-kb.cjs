@@ -230,6 +230,13 @@ for (const [id, effect] of Object.entries({
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
+assert.deepEqual(skills['455143'].specs, ['Outlaw']);
+assert.match(skills['455143'].description, /자동 공격.*3초.*3%.*1%.*10중첩.*무법/);
+const commonMovement = synergies['SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT'];
+assert.equal(commonMovement.patch, '12.1');
+for (const id of ['455143', '200733', '378427', '1267210', '381988', '114014']) {
+  assert.ok(!commonMovement.participants.includes(id), id);
+}
 assert.equal(skills['2983'].cooldown, '기본 2분');
 assert.match(skills['2983'].description, /8초.*70%.*은신.*60초.*4초/);
 assert.match(skills['108208'].description, /최대 2등급.*최종 지속 시간.*단정하지/);

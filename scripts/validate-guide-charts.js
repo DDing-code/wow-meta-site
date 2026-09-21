@@ -518,6 +518,11 @@ function main() {
   assert(!guardianChart.events.some(event => ['1269619', '1278886', '135288'].includes(event.skillId)), 'Guardian passive effects must not appear as defensive cast buttons');
   const matchesGuideScope = new Function('record', 'guide', 'includeCommon', 'commonSpecs', extractFunctionBody(guideDetailSource, 'recordMatchesGuide'));
   const blur = skills.find(skill => skill.id === '212800');
+  const acrobatic = skills.find(skill => skill.id === '455143');
+  assert(matchesGuideScope(acrobatic, guideRecordMap.get('rogue-outlaw'), true, COMMON_SPECS), 'Acrobatic Strikes must remain available to Outlaw');
+  for (const id of ['rogue-assassination', 'rogue-subtlety']) {
+    assert(!matchesGuideScope(acrobatic, guideRecordMap.get(id), true, COMMON_SPECS), 'Common storage must not leak Acrobatic Strikes into ' + id);
+  }
   assert(!matchesGuideScope(blur, guideRecordMap.get('demonhunter-vengeance'), true, COMMON_SPECS) && matchesGuideScope(blur, guideRecordMap.get('demonhunter-havoc'), true, COMMON_SPECS), 'Shared storage must not bypass the verified Blur specialization scope');
   assert(vengeanceChart.events?.length === 5 && vengeanceChart.events.every(event => skillIds.has(event.skillId)), 'Vengeance must use five authored defensive choices from the KB');
   assert(vengeanceChart.events.some(event => event.skillId === '204021' && event.action === '개인 피해 감소'), 'Vengeance chart must not retain the old target-only Fiery Brand behavior');

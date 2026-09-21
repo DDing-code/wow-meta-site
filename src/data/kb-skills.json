@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:22:51.525Z",
+    "generatedAt": "2026-09-21T04:25:09.587Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2906,
-        "withSynergies": 1984,
+        "withSynergies": 1985,
         "avgLinkDensity": "0.039"
       }
     }
@@ -106376,9 +106376,7 @@
       "class": "Rogue",
       "spec": "공용",
       "specs": [
-        "Assassination",
-        "Outlaw",
-        "Subtlety"
+        "Outlaw"
       ],
       "name": "곡예의 일격",
       "koreanName": "곡예의 일격",
@@ -106386,14 +106384,14 @@
       "icon": "spell_warrior_wildstrike",
       "iconName": "spell_warrior_wildstrike",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 곡예의 일격 (Acrobatic Strikes)",
+      "description": "자동 공격 시 3초 동안 자동 공격 피해가 3%, 이동 속도가 1% 증가하며 최대 10중첩까지 쌓이는 무법 전문화 특성이다. 고정 12.1 특성 목록에서 전문화 260에만 속한다. 모든 도적의 공용 특성이나 근접 사거리 증가 효과로 사용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106406,13 +106404,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Talents/신속의베기"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
