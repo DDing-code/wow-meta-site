@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:14:38.821Z",
+    "generatedAt": "2026-09-21T22:26:28.125Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2953,
-    "rawTotalSkills": 2953,
+    "totalSkills": 2958,
+    "rawTotalSkills": 2958,
     "duplicateIds": [],
-    "totalSynergies": 598,
+    "totalSynergies": 599,
     "stats": {
-      "total": 2953,
+      "total": 2958,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 126,
         "talent": 996,
-        "spec-talent": 379,
+        "spec-talent": 384,
         "passive": 78,
         "hero-tree": 2,
         "set-bonus": 15,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 241
+        "Warrior": 246
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -100,12 +100,12 @@
         "Warrior-Common": 1,
         "Warrior-무기": 3,
         "Warrior-Protection": 41,
-        "Warrior-Fury": 42,
+        "Warrior-Fury": 47,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2870,
-        "withSynergies": 2018,
+        "withWikilinks": 2875,
+        "withSynergies": 2023,
         "avgLinkDensity": "0.039"
       }
     }
@@ -134872,6 +134872,106 @@
         "lastUpdate": ""
       }
     },
+    "1265355": {
+      "id": "1265355",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "피의 향기",
+      "koreanName": "피의 향기",
+      "englishName": "Scent of Blood",
+      "icon": "ability_hunter_harass",
+      "iconName": "ability_hunter_harass",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "광란이 다음 피의 갈증의 피해를 10% 증가시키며 최대 2중첩입니다. 2중첩이면 20%이며, 치명타 확률 증가가 아닌 피해 증가입니다. 발동 내부 재사용 대기시간은 0.5초입니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_hunter_harass.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_hunter_harass.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_harass.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.016,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\피의-향기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265356": {
+      "id": "1265356",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "분노를 마시는 자",
+      "koreanName": "분노를 마시는 자",
+      "englishName": "Ragedrinker",
+      "icon": "spell_nzinsanity_bloodthirst",
+      "iconName": "spell_nzinsanity_bloodthirst",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "피의 갈증이 치명타로 적중하면 최대 생명력의 3%를 추가 회복하고 4초 동안 분노의 강타의 피해를 10% 높입니다. 발동 내부 재사용 대기시간은 0.5초입니다. 모든 피의 갈증 적중이 이 추가 회복과 강화를 보장하지는 않습니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_bloodthirst.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nzinsanity_bloodthirst.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nzinsanity_bloodthirst.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nzinsanity_bloodthirst.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_bloodthirst.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\분노를-마시는-자.md",
+        "lastUpdate": ""
+      }
+    },
     "1265357": {
       "id": "1265357",
       "type": "spec-talent",
@@ -134921,6 +135021,106 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\빗발치는-광란.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265359": {
+      "id": "1265359",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "아드레날린의 쇄도",
+      "koreanName": "아드레날린의 쇄도",
+      "englishName": "Surge of Adrenaline",
+      "icon": "inv_1115_warrior_fasterreflexes",
+      "iconName": "inv_1115_warrior_fasterreflexes",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "분노의 강타 사용으로 자체 재사용 대기시간이 초기화되면 6초 동안 자동 공격 피해와 자동 공격 속도가 30% 증가합니다. 모든 기술의 피해나 이동 속도가 증가하는 효과가 아닙니다. 한글 특성 툴팁의 이동 속도 표기와 달리 실제 버프 설명 및 12.1 주문 데이터는 자동 공격 속도를 가리킵니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fasterreflexes.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_1115_warrior_fasterreflexes.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_1115_warrior_fasterreflexes.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_1115_warrior_fasterreflexes.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fasterreflexes.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.011,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\아드레날린의-쇄도.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265361": {
+      "id": "1265361",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "죽거나 죽이거나",
+      "koreanName": "죽거나 죽이거나",
+      "englishName": "Kill or Be Killed",
+      "icon": "inv12_ability_warrior_fury",
+      "iconName": "inv12_ability_warrior_fury",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자신에게 치명적인 피해를 준 적이 살아 있으면 8초 동안 죽지 않는 상태가 되고 이동 방해 효과에 면역이 됩니다. 그 안에 해당 적을 처치하면 최대 생명력의 최소 20%를 보존한 채 살아남지만 실패하면 사망합니다. 5분에 한 번 발동하는 조건부 지속 효과이며 무조건 살아남는 면역기가 아닙니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_warrior_fury.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv12_ability_warrior_fury.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv12_ability_warrior_fury.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv12_ability_warrior_fury.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_warrior_fury.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/격노의-재생력"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.011,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\죽거나-죽이거나.md",
         "lastUpdate": ""
       }
     },
@@ -135065,6 +135265,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\불구대천-1265387.md",
+        "lastUpdate": ""
+      }
+    },
+    "1265570": {
+      "id": "1265570",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "집행인의 격노",
+      "koreanName": "집행인의 격노",
+      "englishName": "Executioner's Wrath",
+      "icon": "inv_12_nonmasculinecharacter_human",
+      "iconName": "inv_12_nonmasculinecharacter_human",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "마무리 일격이 분노 5를 추가 생성하고 4초 동안 광란의 피해를 10% 높입니다. 마무리 일격 연마의 기본 생성량 20과 별도이며, 다른 보정이 없다면 둘을 선택한 기본 생성량은 25입니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_nonmasculinecharacter_human.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_12_nonmasculinecharacter_human.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_12_nonmasculinecharacter_human.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_nonmasculinecharacter_human.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_nonmasculinecharacter_human.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\집행인의-격노.md",
         "lastUpdate": ""
       }
     },

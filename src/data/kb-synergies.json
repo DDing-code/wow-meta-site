@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:14:38.822Z",
+    "generatedAt": "2026-09-21T22:26:28.127Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 598,
-    "rawTotalSynergies": 598,
+    "totalSynergies": 599,
+    "rawTotalSynergies": 599,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -255,6 +255,7 @@
       "conditional_rampage_aoe": 1,
       "recklessness_tier_extension": 1,
       "bloodthirst-bleed-survival": 1,
+      "generator-damage-chain": 1,
       "slayer-execute-window": 1
     },
     "byClass": {
@@ -271,7 +272,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 61
+      "Warrior": 62
     }
   },
   "synergies": {
@@ -21273,6 +21274,42 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\피의-폭풍-출혈-적용.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior-fury-scent-ragedrinker": {
+      "id": "warrior-fury-scent-ragedrinker",
+      "name": "피의-향기-분노를-마시는-자",
+      "description": "피의 향기는 광란으로 다음 피의 갈증 피해를 10%씩 최대 2중첩 강화합니다. 분노를 마시는 자는 피의 갈증이 치명타로 적중했을 때만 추가 회복과 4초 동안 분노의 강타 피해 10% 증가를 제공합니다. 앞의 피해 강화가 치명타를 보장하지 않으므로, 광란을 썼다고 마지막 강화까지 자동으로 이어지는 것은 아닙니다.",
+      "type": "synergy",
+      "synergyType": "generator-damage-chain",
+      "participants": [
+        "184367",
+        "1265355",
+        "23881",
+        "1265356",
+        "85288"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/피의-향기",
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/분노를-마시는-자"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\피의-향기-분노를-마시는-자.md",
         "lastUpdate": ""
       }
     },

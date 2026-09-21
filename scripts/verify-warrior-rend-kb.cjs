@@ -488,4 +488,18 @@ assert.equal(skills[280721], undefined);
 assert.deepEqual(skills[29725].specs, ['Arms', 'Fury', 'Protection']);
 assert.match(skills[29725].description, /무기 전문화.*무료.*40.*분노·방어.*별도 효과/);
 assert.ok(guide.includes('급살은 생명력 제한 밖에서도'));
+for (const id of [1265355, 1265356, 1265359, 1265361, 1265570]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].type, 'spec-talent');
+  assert.equal(skills[id].castTime, '지속 효과');
+  assert.deepEqual(skills[id].specs, ['Fury']);
+}
+assert.match(skills[1265355].description, /10%.*2중첩.*20%/);
+assert.match(skills[1265356].description, /치명타.*3%.*4초.*10%/);
+assert.match(skills[1265359].description, /자동 공격 피해와 자동 공격 속도가 30%/);
+assert.match(skills[1265361].description, /해당 적.*최소 20%.*실패하면 사망.*5분/);
+assert.match(skills[1265570].description, /분노 5.*4초.*10%.*25/);
+assert.deepEqual(synergies['warrior-fury-scent-ragedrinker'].participants, ['184367', '1265355', '23881', '1265356', '85288']);
+assert.match(synergies['warrior-fury-scent-ragedrinker'].description, /치명타를 보장하지/);
+assert.doesNotMatch(guide, /강한 면역기나 죽음 방지 장치를 가진 전문화가 아닙니다/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
