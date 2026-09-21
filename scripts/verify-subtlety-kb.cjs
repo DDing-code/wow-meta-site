@@ -248,7 +248,23 @@ assert.equal(skills['470669'].castTime, '지속 효과');
 const poisonChoice = synergies['SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS'];
 assert.equal(poisonChoice.patch, '12.1');
 assert.match(poisonChoice.description, /치유 감소.*이동 속도 감소.*공격 및 시전 속도 감소.*선택 관계/);
-assert.deepEqual([...poisonChoice.participants].sort(), ['315584', '3408', '5761', '8679'].sort());
+assert.deepEqual([...poisonChoice.participants].sort(), ['315584', '3408', '5761', '8679', '381637', '280716', '319066', '378436', '381543', '423701'].sort());
+for (const [id, pattern] of Object.entries({
+  '280716': /치명독.*생기흡수.*3%.*비치명독이 아니며/,
+  '319066': /2회.*3중첩.*5중첩.*8%.*40%/,
+  '378436': /비피해.*20%.*15%.*18%/,
+  '381543': /무기에 바르는 독.*10%.*출혈.*아니며/,
+  '381637': /1.5초.*1시간.*30%.*1분.*4%.*선택 노드/,
+  '423701': /신경 마취 독.*10%.*50%.*60%/,
+  '441224': /기만자.*무형검.*10초.*5%.*전체.*아니며/,
+  '921': /은신.*10야드.*0.5초.*딜사이클 기술이 아니다/,
+  '1804': /5야드.*1.5초.*요구 숙련도/,
+})) {
+  assert.match(skills[id].description, pattern, id);
+  assert.equal(skills[id].patch, '12.1', id);
+}
+assert.equal(skills['381637'].castTime, '1.5초');
+assert.deepEqual(skills['441224'].specs, ['Outlaw', 'Subtlety']);
 assert.deepEqual(skills['114014'].specs, ['Subtlety']);
 assert.match(skills['114014'].description, /40.*30야드.*1점.*잠행 전용/);
 assert.equal(skills['1784'].cooldown, '2초');

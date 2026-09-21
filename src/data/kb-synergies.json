@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:42:15.697Z",
+    "generatedAt": "2026-09-21T04:46:09.496Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13613,14 +13613,20 @@
     "SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS": {
       "id": "SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS",
       "name": "도적공용-독-독칼-대상약화",
-      "description": "순간 효과 독은 즉시 자연 피해, 상처 감염 독은 피해와 받는 치유 감소, 신경 마취 독은 이동 속도 감소, 마취 독은 공격 및 시전 속도 감소를 맡는다. 네 독은 도포 1.5초, 무기 강화 1시간, 기본 발동 확률 30%를 구분해 읽는다. 서로 직접 피해를 증폭하는 관계가 아니라 전투에서 필요한 효과에 따른 선택 관계다.",
+      "description": "순간 효과 독은 즉시 자연 피해, 상처 감염 독은 피해와 받는 치유 감소, 신경 마취 독은 이동 속도 감소, 마취 독은 공격 및 시전 속도 감소, 위축의 독은 대상이 주는 피해 감소를 맡는다. 마취 독과 위축의 독은 같은 특성 칸의 선택 관계다. 치명적인 독은 무기 독 피해, 독의 대가는 비피해 효과를 강화하며 착취 독은 치명독에 생기흡수를 더한다.",
       "type": "synergy",
       "synergyType": "poison-debuff",
       "participants": [
         "315584",
         "8679",
         "3408",
-        "5761"
+        "5761",
+        "381637",
+        "280716",
+        "319066",
+        "378436",
+        "381543",
+        "423701"
       ],
       "class": "Rogue",
       "spec": "Common",
@@ -13634,7 +13640,13 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/공용/Talents/마취독"
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/마취독",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/위축의독",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/치명적인독",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/독의대가",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/상처감염독연마",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/우수한혼합물",
+        "08-직업별-Knowledge-Base/10-도적/공용/Talents/착취독"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Synergies\\도적공용-독-독칼-대상약화.md",
