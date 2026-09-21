@@ -8,7 +8,7 @@ const reviewed = ['185313', '121471', '280719', '196912', '58423', '426594', '42
   '382505', '382524', '1268932', '1268936', '1268939', '185314', '1279444',
   '53', '185438', '196819', '319175', '76808', '197835', '1279401',
   '91023', '319949', '319951', '382511', '382512', '1265952', '1264764',
-  '343160', '196976', '394320'];
+  '343160', '196976', '394320', '1296592', '1296593'];
 const supportEffects = {
   '426555': /공격 속도를 25%.*모든 능력/,
   '385722': /다음 표창 폭풍.*100%.*다음 한 번/,
@@ -62,6 +62,13 @@ assert.match(skills['58423'].description, /1점당 기력 4.*점수당 5를 사�
 assert.match(skills['426594'].description, /25%.*1점.*25%p.*아니다/);
 assert.match(skills['382505'].description, /비전투.*6초.*4초/);
 assert.match(skills['382524'].description, /표창 폭풍.*50%.*2.8%/);
+assert.match(skills['1296592'].description, /기습.*10.*100%.*표창 폭풍.*5.*60%.*어둠칼날/);
+assert.match(skills['1296593'].description, /머무는 그림자.*절개와 검은 화약.*60%.*상시 60%.*아니며/);
+for (const id of ['1296592', '1296593']) {
+  assert.equal(skills[id].type, 'passive', id);
+  assert.equal(skills[id].castTime, '지속 효과', id);
+  assert.equal(skills[id].icon, 'trade_engineering', id);
+}
 assert.match(skills['1268932'].description, /중첩 하나당 15%.*50%/);
 assert.match(skills['1268936'].description, /1등급.*5%.*50%.*2등급/);
 assert.match(skills['1268939'].description, /공격을 사용한 뒤에도.*5개 이상.*다음 공격 마무리/);
@@ -109,11 +116,15 @@ assert.ok(skills['51667'].specs.includes('Subtlety'));
 const manuscript = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8');
 assert.doesNotMatch(manuscript, /skillId:\s*['"]5171['"]/);
 assert.doesNotMatch(manuscript, /skillId:\s*['"]1279401['"]/);
+const subtletyManuscript = manuscript.split("'rogue-subtlety': {")[1].split("'shaman-enhancement': {")[0];
+assert.match(subtletyManuscript, /4세트는 머무는 그림자를 절개와 검은 화약에도 60% 효율/);
+assert.match(subtletyManuscript, /https:\/\/www.wowhead.com\/spell=1296593/);
 for (const id of ['rogue_subtlety_secret_technique_ancient_arts',
   'rogue_subtlety_shadowblades_dance', 'rogue_subtlety_goremaw_finishers',
   'rogue_subtlety_shuriken_blackpowder', 'rogue_subtlety_slice_shadowblades_resource',
   'rogue_subtlety_eviscerate_mastery_finisher', 'rogue_subtlety_shadowdance_shadowstrike',
-  'rogue_subtlety_shadow_clones', 'rogue_subtlety_defensive_choices']) {
+  'rogue_subtlety_shadow_clones', 'rogue_subtlety_defensive_choices',
+  'rogue_subtlety_season2_lingering_shadow']) {
   const relation = synergies[id];
   assert.equal(relation?.patch, '12.1', id);
   assert.equal(relation.spec, 'Subtlety', id);
@@ -157,4 +168,5 @@ for (const id of ['rogue_subtlety_deathstalker_mark_darkest_night',
   assert.ok(relation.description.length > 70, id);
   for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Subtlety'), spell);
 }
-console.log('Subtlety: 58 local records, 18 shared Deathstalker records and 11 relationships passed. Season data, remaining common utility and full manuscript review are not covered.');
+assert.match(synergies.rogue_subtlety_season2_lingering_shadow.description, /60%/);
+console.log('Subtlety: 60 local records, 18 shared Deathstalker records and 12 relationships passed. Remaining common utility, current build/log evidence and full manuscript review are not covered.');

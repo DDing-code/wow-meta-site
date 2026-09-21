@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:23:52.839Z",
+    "generatedAt": "2026-09-21T03:29:28.283Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2979,
-    "rawTotalSkills": 2979,
+    "totalSkills": 2981,
+    "rawTotalSkills": 2981,
     "duplicateIds": [],
-    "totalSynergies": 570,
+    "totalSynergies": 571,
     "stats": {
-      "total": 2979,
+      "total": 2981,
       "byType": {
         "buff": 137,
         "hero-talent": 554,
@@ -18,7 +18,7 @@
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 72,
+        "passive": 74,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -39,7 +39,7 @@
         "Monk": 274,
         "Paladin": 250,
         "Priest": 258,
-        "Rogue": 296,
+        "Rogue": 298,
         "Shaman": 273,
         "Warlock": 296,
         "Warrior": 265
@@ -85,7 +85,7 @@
         "Rogue-공용": 131,
         "Rogue-무법": 55,
         "Rogue-암살": 52,
-        "Rogue-잠행": 58,
+        "Rogue-잠행": 60,
         "Shaman-고양": 44,
         "Shaman-공용": 126,
         "Shaman-복원": 46,
@@ -102,8 +102,8 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2904,
-        "withSynergies": 1956,
+        "withWikilinks": 2906,
+        "withSynergies": 1958,
         "avgLinkDensity": "0.040"
       }
     }
@@ -58572,13 +58572,15 @@
           "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습",
           "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/시즌2-4세트"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.034,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.039,
         "hasWikilinks": true
       },
       "source": {
@@ -150005,6 +150007,118 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\암살\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296592": {
+      "id": "1296592",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
+      "name": "Rogue Subtlety 12.1 Class Set 2pc",
+      "koreanName": "Rogue Subtlety 12.1 Class Set 2pc",
+      "englishName": "Rogue Subtlety 12.1 Class Set 2pc",
+      "aliases": [
+        "잠행 시즌 2 2세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "기습의 기력 소모량을 10 줄이고 피해를 100% 증가시킨다. 표창 폭풍의 기력 소모량은 5 줄이고 피해를 60% 증가시킨다. 주문 상세의 적용 대상에는 기습을 대체하는 어둠칼날도 포함된다. 시즌 2 장비 2세트 효과이며, 별도로 누르거나 특성 포인트로 배우는 기술이 아니다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296593": {
+      "id": "1296593",
+      "type": "passive",
+      "class": "Rogue",
+      "spec": "잠행",
+      "specs": [
+        "Subtlety"
+      ],
+      "name": "Rogue Subtlety 12.1 Class Set 4pc",
+      "koreanName": "Rogue Subtlety 12.1 Class Set 4pc",
+      "englishName": "Rogue Subtlety 12.1 Class Set 4pc",
+      "aliases": [
+        "잠행 시즌 2 4세트"
+      ],
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "머무는 그림자가 절개와 검은 화약에도 60% 효율로 적용된다. 어둠의 춤 종료 후 줄어드는 머무는 그림자 효과를 두 마무리 일격까지 확장하는 시즌 2 장비 4세트 효과다. 절개·검은 화약 피해가 상시 60% 증가한다는 뜻이 아니며, 은밀한 기술은 툴팁의 확장 대상에 포함되지 않는다.",
+      "category": "passive",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
+          "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/10-도적/잠행/Talents/머무는그림자"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.018,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },

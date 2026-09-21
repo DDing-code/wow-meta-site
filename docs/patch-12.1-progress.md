@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Subtlety Season 2 set data, 2026-09-21
+
+- Added manually researched 2pc/4pc canonical notes and their Lingering Shadow relationship, updated the base talent's set exception, synced generated DB, and replaced the public guide's repetitive final section with set-dependent gameplay.
+- Current Korean/English 1296593 tooltips and spell detail say 60% effectiveness; the September 2 Wowhead gearing article still says 100%. Used the direct spell data and documented the conflict without inventing a hotfix date. Verified Gloomblade inclusion in the 2pc effect target lists.
+- Focused checks passed for 60 local records, 18 shared Deathstalker records and 12 relationships. Online name/icon validation passed for 60 Subtlety notes. Prebuild passed (23 pre-existing general offline warnings); sanitized production compilation passed with bundle main.e03be110.js.
+- Full manuscript, remaining common utility and current build/log review are pending. Kept the whole-guide patch label unchanged; no production deployment is claimed for this partial update.
+
 ### Shared Deathstalker effects, 2026-09-21
 
 - Manually replaced 12 generic shared hero descriptions using live Korean/English tooltips. Split Assassination/Subtlety conditions for Mass Casualty, Follow the Blood, Corrupt the Blood, Symbolic Victory and Lingering Darkness; corrected defensive/utility effects and critical-damage versus critical-chance wording.

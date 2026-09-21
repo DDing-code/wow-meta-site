@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:23:52.840Z",
+    "generatedAt": "2026-09-21T03:29:28.285Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 570,
-    "rawTotalSynergies": 570,
+    "totalSynergies": 571,
+    "rawTotalSynergies": 571,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -155,7 +155,7 @@
       "combo_point_correction": 1,
       "bleed_maintenance": 1,
       "priority_aoe": 1,
-      "tier_set": 1,
+      "tier_set": 2,
       "fatebound_finisher_loop": 1,
       "builder_combo_point_engine": 1,
       "deathstalker_mark_cycle": 2,
@@ -251,7 +251,7 @@
       "Paladin": 45,
       "성기사": 10,
       "Priest": 52,
-      "Rogue": 41,
+      "Rogue": 42,
       "Shaman": 34,
       "Warlock": 60,
       "Warrior": 38
@@ -14836,6 +14836,50 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\복제된그림자-생성기-제어연결.md",
+        "lastUpdate": ""
+      }
+    },
+    "rogue_subtlety_season2_lingering_shadow": {
+      "id": "rogue_subtlety_season2_lingering_shadow",
+      "name": "시즌 2 세트: 춤 종료 후 생성·소비 연결",
+      "description": "2세트는 기습·어둠칼날과 표창 폭풍의 비용을 줄이고 피해를 높인다. 4세트는 춤 종료 후 머무는 그림자의 추가 암흑 피해를 절개·검은 화약에도 60% 효율로 적용한다. 종료 뒤 생성기만 강화된다고 생각해 마무리 일격을 미루지 않는다. 머무는 그림자 미선택 상태나 춤이 아직 끝나지 않은 상황에 종료 보상을 적용하지 않는다.",
+      "type": "synergy",
+      "synergyType": "tier_set",
+      "participants": [
+        "1296592",
+        "1296593",
+        "382524",
+        "185313",
+        "53",
+        "200758",
+        "197835",
+        "196819",
+        "319175"
+      ],
+      "class": "Rogue",
+      "spec": "Subtlety",
+      "specs": [
+        "Subtlety"
+      ],
+      "heroTalent": null,
+      "importance": 85,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/어둠의춤",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/기습",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/절개",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/표창폭풍",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Skills/검은화약"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/시즌2-4세트",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/머무는그림자",
+        "08-직업별-Knowledge-Base/10-도적/잠행/Talents/어둠칼날"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Synergies\\시즌2세트-머무는그림자.md",
         "lastUpdate": ""
       }
     },
