@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T04:02:24.013Z",
+    "generatedAt": "2026-09-21T04:05:55.996Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15168,7 +15168,7 @@
     "rogue_subtlety_shuriken_blackpowder": {
       "id": "rogue_subtlety_shuriken_blackpowder",
       "name": "표창 폭풍과 대상 수별 마무리 일격",
-      "description": "표창 폭풍은 적중 인원에 따라 점수를 생성하고 검은 화약은 그 점수를 주변 피해로 바꾼다. 표창 폭풍 연마의 치명타로 약점 포착을 부여하면 어둠에 물든 마무리 일격의 추가 암흑 피해까지 연결된다. 두 대상에서는 강력한 가루 유무를 따로 판단하고, 다수 대상에서도 영웅 특성의 강화 절개 예외를 남긴다.",
+      "description": "표창 폭풍은 적중 인원에 따라 점수를 생성하고 검은 화약은 그 점수를 주변 피해로 바꾼다. 정확히 2대상이며 강력한 가루가 없으면 절개가 기본 소비이고, 3대상 이상에서는 검은 화약이 기본이다. 표창 폭풍 연마의 치명타로 약점 포착을 부여하면 추가 암흑 피해까지 연결된다. 다수 대상에서도 영웅 특성의 강화 절개 예외를 남긴다.",
       "type": "synergy",
       "synergyType": "aoe_builder_finisher",
       "participants": [

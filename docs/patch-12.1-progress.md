@@ -1,5 +1,10 @@
 # 12.1 update status
 
+### Subtlety canonical build and graph correction, 2026-09-21
+
+- Rechecked Eleem's Icy Veins talent recommendations and fuu1's Wowhead rotation page. Replaced the May current-build note with scoped 12.1 author recommendations, not current usage statistics. Removed the stale graph's fixed center/degree claims and Deathstalker-only-single-target framing.
+- Made the generated AoE relationship explicit: two targets without Potent Powder use Eviscerate by default; three or more use Black Powder, with empowered-finisher exceptions. Current log aggregates, import-code validation and remaining common talents are still outstanding.
+
 ### Subtlety manuscript and unsupported chart cleanup, 2026-09-21
 
 - Rewrote the remaining eight manuscript subjects and eight shared Rogue utility records, synced the generated DB and pushed 3af7a5e4. All three Rogue focused checks and full prebuild passed; local 1440/390px checks loaded the updated text without page overflow or runtime errors.

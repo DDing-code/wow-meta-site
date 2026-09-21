@@ -183,6 +183,7 @@ for (const id of ['rogue_subtlety_deathstalker_mark_darkest_night',
 }
 assert.match(synergies.rogue_subtlety_season2_lingering_shadow.description, /60%/);
 assert.match(skills['441146'].description, /잠행.*그림자 일격/);
+assert.match(synergies.rogue_subtlety_shuriken_blackpowder.description, /2대상.*강력한 가루.*절개.*3대상.*검은 화약/);
 const utilityEffects = {
   '31224': /5초.*해로운 주문.*모든 물리 피해.*무조건/,
   '5277': /10초.*회피율.*100%.*회피 판정/,
