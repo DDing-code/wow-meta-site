@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Subtlety core data audit, 2026-09-21
+
+- Manually rechecked 14 Korean/English tooltip records. Fixed active Goremaw's Bite, Shadow Techniques storage/Energy, Relentless Strikes Energy, Shadowcraft frequency, conditional First Dance duration, Lingering Shadow AoE coverage and the three Ancient Arts nodes.
+- Replaced generic/title-only descriptions, rebuilt two relationships and added Goremaw's finisher relationship. The middle Ancient Arts node has two ranks in fixed 12.1 trait data; the default tooltip is not the complete-build value.
+- Added a focused generated-data check. Remaining local records, Deathstalker, Season 2 sets, live build/log evidence and full Subtlety manuscript remain pending. The public guide still carries its old patch label; this is not a completed guide rollout.
+
 ### Outlaw manuscript rewrite, 2026-09-21
 
 - Rebuilt 14 gameplay sections and both heroes' opener/single-target/AoE flows; canonical manuscript and site data match. Removed the unmeasured Outlaw uptime timeline.
