@@ -45,3 +45,12 @@ assert.match(skills[1267016].description,/6%.*10%.*1명.*2명/);
 assert.match(skills[1267120].description,/신속함.*사용 횟수.*충전을 소모하지/);
 assert.match(skills[1267093].description,/1포인트.*20%.*2포인트.*40%/);
 assert.match(skills[1267093].description,/60%도 아니다/);
+for (const id of [114052,108280,98008]) {
+  assert.equal(skills[id].patch,'12.1');
+  assert.equal(skills[id].cooldown,'3분');
+  assert.equal(skills[id].castTime,'즉시');
+}
+assert.equal(skills[114052].icon,'8026698');
+assert.match(skills[114052].description,/15초.*3명.*10%.*50%.*25%/);
+assert.match(skills[108280].description,/10초.*2초.*40야드.*5명/);
+assert.match(skills[98008].description,/40야드.*6초.*10야드.*10%/);
