@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:03:30.695Z",
+    "generatedAt": "2026-09-21T01:16:53.744Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -147,8 +147,7 @@
       "builder_proc_priority": 1,
       "opener_state_alignment": 1,
       "hero_talent_finisher": 2,
-      "state_reset_cooldown": 1,
-      "cooldown_finisher_feedback": 1,
+      "cooldown_finisher_feedback": 2,
       "cleave_gate": 1,
       "execute_priority": 1,
       "poison_finisher_engine": 1,
@@ -14019,15 +14018,13 @@
     },
     "rogue_outlaw_roll_preparation_reset": {
       "id": "rogue_outlaw_roll_preparation_reset",
-      "name": "뼈주사위-준비",
+      "name": "뼈주사위 회전과 마음가짐 초기화",
+      "description": "잠들지 않는 칼날은 뼈주사위를 포함한 지정 기술의 남은 쿨다운을 줄이지만 마음가짐 자체에는 적용되지 않는다. 마음가짐은 이미 사용한 공격 기술 다섯 개를 초기화하며 뼈주사위나 도박의 연속을 초기화하지 않는다.",
       "type": "synergy",
-      "synergyType": "state_reset_cooldown",
+      "synergyType": "cooldown_finisher_feedback",
       "participants": [
         "315508",
         "1277933",
-        "381989",
-        "256170",
-        "1259481",
         "13750",
         "315341",
         "13877",
@@ -14036,13 +14033,13 @@
         "79096"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
-      "importance": 88,
-      "patch": "12.0.5",
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/뼈주사위",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날",
@@ -14054,9 +14051,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/준비",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/도박의연속",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/용뼈주사위"
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/준비"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\뼈주사위-준비.md",
@@ -14065,7 +14060,8 @@
     },
     "rogue_outlaw_adrenaline_finishers": {
       "id": "rogue_outlaw_adrenaline_finishers",
-      "name": "아드레날린촉진-미간적중",
+      "name": "마무리 일격과 다음 쿨다운",
+      "description": "미간 적중·속결·광기의 학살자에 쓴 점수는 잠들지 않는 칼날의 쿨다운 감소로 이어진다. 신속 대응은 미간 적중 기본 쿨다운을 8초 줄이고, 도굴꾼은 피해 중첩·후속 공격·탄환 보상을 서로 다른 노드로 제공한다.",
       "type": "synergy",
       "synergyType": "cooldown_finisher_feedback",
       "participants": [
@@ -14074,33 +14070,32 @@
         "2098",
         "51690",
         "79096",
-        "381828",
-        "235484",
-        "1259485",
         "1259480",
-        "1259498",
-        "1277933"
+        "1265861",
+        "1265862",
+        "1265863"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
-      "importance": 94,
-      "patch": "12.0.5",
+      "importance": 3,
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/광기의학살자",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/비장의일격",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/신속대응",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/도굴꾼",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/영점조정",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/전문결투사"
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/도굴꾼-1265862",
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/도굴꾼-1265863"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\아드레날린촉진-미간적중.md",

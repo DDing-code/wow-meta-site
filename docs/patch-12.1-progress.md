@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Outlaw core-data audit started, 2026-09-21
+
+- Manually replaced 12 generic skill/talent descriptions with current effects; checked Fast Action, Preparation and three Gravedigger nodes against fixed 12.1 trait data. Online checks also caught Menacing Rush's Korean name: 위협적인 촉진, with its 20% generator/finisher modifier during Adrenaline Rush.
+- Corrected Preparation's Korean name to 마음가짐 and its active four-minute cooldown; Restless Blades is passive and does not reduce Preparation. Rewrote two cooldown relationships with explicit reset inclusions/exclusions.
+- The Outlaw manuscript remains 12.0.5 until generator/hero/tier coverage and a full authored rewrite are complete. June usage rates and conflicting public rotation examples are not current build proof. Canonical audit details are in Outlaw Meta/review-12.1.md.
+
 ### Assassination common skills and Season 2, 2026-09-21
 
 - Rechecked Feint and Vanish against Korean/English tooltips and fixed title-only generated descriptions. Feint is baseline 35 energy, 6 seconds and 40% AoE reduction; Vanish's first 3 seconds prevent damage from breaking stealth, not damage itself.

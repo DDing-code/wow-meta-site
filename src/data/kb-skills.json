@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:03:30.694Z",
+    "generatedAt": "2026-09-21T01:16:53.743Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,12 +13,12 @@
       "byType": {
         "buff": 137,
         "hero-talent": 554,
-        "atomic-skill": 561,
+        "atomic-skill": 560,
         "proc": 29,
         "skill": 131,
         "talent": 997,
         "spec-talent": 392,
-        "passive": 64,
+        "passive": 65,
         "hero-tree": 2,
         "set-bonus": 7,
         "tier-set": 2,
@@ -103,7 +103,7 @@
       },
       "quality": {
         "withWikilinks": 2903,
-        "withSynergies": 1881,
+        "withSynergies": 1882,
         "avgLinkDensity": "0.040"
       }
     }
@@ -4139,12 +4139,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "연계 점수",
+      "resourceCost": "기력 35 + 연계 점수",
       "range": "근접",
-      "description": "# 속결 (Dispatch)",
+      "description": "기력 35와 연계 점수를 소모해 물리 피해를 주는 기본 마무리 일격이다. 사용한 점수가 많을수록 피해가 증가한다. 별도의 기본 쿨다운은 없으며, 사용 가능한 최대 점수는 실제 선택 특성에 따라 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4163,7 +4163,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.074,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -7174,14 +7174,14 @@
       "icon": "spell_shadow_shadowworddominate",
       "iconName": "spell_shadow_shadowworddominate",
       "school": "",
-      "cooldown": "3분",
+      "cooldown": "기본 3분",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 아드레날린 촉진 (Adrenaline Rush)",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "15초 동안 기력 회복 속도를 75%, 최대 기력을 50, 공격 속도를 20% 높인다. 기본 쿨다운은 3분이다. 기력 회복 속도 증가와 즉시 기력 충전은 같은 효과가 아니며, 공격 속도를 일반 가속 수치로 바꾸어 표기하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7202,7 +7202,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.073,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -13474,14 +13474,14 @@
       "icon": "inv_112_rogue_betweentheeyes",
       "iconName": "inv_112_rogue_betweentheeyes",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 광기의 학살자 (Killing Spree)",
+      "cooldown": "기본 3분",
+      "castTime": "정신 집중",
+      "resourceCost": "기력 45 + 연계 점수",
+      "range": "8미터",
+      "description": "기력 45와 연계 점수를 쓰는 정신 집중 마무리 일격이다. 8미터 내 무작위 적에게 물리 피해를 주며 점수에 따라 공격 횟수가 증가한다. 기본 툴팁은 0.5초마다 연계 점수 1점 회복을 표시한다. 기본 쿨다운은 3분이다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13500,7 +13500,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.046,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -16354,7 +16354,7 @@
     },
     "79096": {
       "id": "79096",
-      "type": "atomic-skill",
+      "type": "passive",
       "class": "Rogue",
       "spec": "무법",
       "specs": [
@@ -16366,14 +16366,14 @@
       "icon": "ability_rogue_restlessblades",
       "iconName": "ability_rogue_restlessblades",
       "school": "",
-      "cooldown": "기술별 상이",
-      "castTime": "즉시 또는 지속 효과",
-      "resourceCost": "기술별 상이",
-      "range": "기술별 상이",
-      "description": "# 잠들지 않는 칼날 (Restless Blades)",
-      "category": "ability",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "마무리 일격에 소모한 연계 점수 1점당 지정된 기술의 남은 쿨다운을 기본 1초 줄이는 지속 효과다. 대상은 아드레날린 촉진, 미간 적중, 폭풍의 칼날, 질풍 칼날, 갈고리 던지기, 도박의 연속, 광기의 학살자, 뼈주사위, 전력 질주다. 마음가짐은 이 목록에 없다.",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16392,7 +16392,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -43131,14 +43131,14 @@
       "icon": "inv_weapon_rifle_01",
       "iconName": "inv_weapon_rifle_01",
       "school": "",
-      "cooldown": "짧은 재사용 대기시간",
+      "cooldown": "기본 45초",
       "castTime": "즉시",
-      "resourceCost": "연계 점수",
-      "range": "근접",
-      "description": "# 미간 적중 (Between the Eyes)",
+      "resourceCost": "기력 25 + 연계 점수",
+      "range": "20미터",
+      "description": "기력 25와 연계 점수를 소모하는 원거리 물리 마무리 일격이다. 기본 쿨다운 45초, 사정거리 20미터이며 자신이 입히는 피해를 4% 높인다. 이 보너스는 여러 번 겹칠 수 있다. 지속시간은 1점 4초에서 점수당 2초씩 늘어나며 5점은 12초, 6점은 14초, 7점은 16초다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43157,7 +43157,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.08,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -43229,14 +43229,14 @@
       "icon": "ability_rogue_rollthebones",
       "iconName": "ability_rogue_rollthebones",
       "school": "",
-      "cooldown": "45초",
+      "cooldown": "기본 45초",
       "castTime": "즉시",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 뼈주사위 (Roll the Bones)",
+      "resourceCost": "기력 25",
+      "range": "자신",
+      "description": "기력 25를 소모해 30초 동안 무작위 전투 강화 효과를 얻는다. 기본 쿨다운은 45초다. 현재 운용 자료는 1~4단계이며 높은 단계가 이전 단계의 효과도 포함하는 구조로 설명한다. 과거의 여섯 개 독립 버프 조합과 구분한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43255,7 +43255,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.05,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -128248,20 +128248,20 @@
       "specs": [
         "Outlaw"
       ],
-      "name": "위협적인 돌진",
-      "koreanName": "위협적인 돌진",
+      "name": "위협적인 촉진",
+      "koreanName": "위협적인 촉진",
       "englishName": "Menacing Rush",
       "icon": "inv_1115_warrior_fasterreflexes",
       "iconName": "inv_1115_warrior_fasterreflexes",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위협적인 돌진 (Menacing Rush)",
+      "description": "아드레날린 촉진 중 연계 점수를 생성하는 능력과 마무리 일격의 피해를 20% 높인다. 기력 회복이나 공격 속도 20% 증가와는 별도의 선택 특성 효과다. 아드레날린 촉진을 사용했다는 이유만으로 이 특성의 보너스까지 항상 적용되는 것은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -128273,14 +128273,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fasterreflexes.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/10-도적/무법/Skills/아드레날린촉진"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -129656,14 +129658,14 @@
       "icon": "inv_musket_02",
       "iconName": "inv_musket_02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신속 대응 (Fast Action)",
+      "description": "미간 적중의 쿨다운을 8초 줄이고, 미간 적중이 자신의 피해를 높이는 효과를 추가로 1%p 강화한다. 쿨다운 감소와 피해 보너스가 서로 다른 두 효과이며, 미간 적중 직접 피해만 1% 높인다는 뜻이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -129682,7 +129684,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -137260,17 +137262,20 @@
       "name": "도굴꾼",
       "koreanName": "도굴꾼",
       "englishName": "Gravedigger",
+      "aliases": [
+        "도굴꾼 첫 노드"
+      ],
       "icon": "inv12_apextalent_rogue_gravedigger",
       "iconName": "inv12_apextalent_rogue_gravedigger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 도굴꾼 (Gravedigger)",
+      "description": "미간 적중이 45% 확률로 자신의 피해 증가 보너스를 2중첩 부여한다. 첫 도굴꾼 노드의 확률 효과이며, 미간 적중을 2번 직접 시전하거나 연계 점수 2점을 돌려준다는 뜻이 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137289,7 +137294,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -137308,17 +137313,20 @@
       "name": "도굴꾼",
       "koreanName": "도굴꾼",
       "englishName": "Gravedigger",
+      "aliases": [
+        "도굴꾼 중간 노드"
+      ],
       "icon": "inv12_apextalent_rogue_gravedigger",
       "iconName": "inv12_apextalent_rogue_gravedigger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 도굴꾼 (Gravedigger)",
+      "description": "속결에 연계 점수를 5점 이상 사용하면 불한당의 일격이 즉시 추가 물리 피해를 준다. 현재 기본 툴팁 계수는 전투력의 160%이며, 중간 노드는 최대 2등급이므로 기본 툴팁 계수를 최종 2등급 값이라고 단정하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137337,7 +137345,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -137356,17 +137364,20 @@
       "name": "도굴꾼",
       "koreanName": "도굴꾼",
       "englishName": "Gravedigger",
+      "aliases": [
+        "도굴꾼 마지막 노드"
+      ],
       "icon": "inv12_apextalent_rogue_gravedigger",
       "iconName": "inv12_apextalent_rogue_gravedigger",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 도굴꾼 (Gravedigger)",
+      "description": "속결에 소모한 연계 점수 1점당 12% 확률로 탄환을 숨긴다. 탄환 6발을 모으면 다음 미간 적중이 탄환을 소비하며 기력 비용 없이 연계 점수 6점을 생성하고 자신의 쿨다운을 즉시 초기화한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137385,7 +137396,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -146631,20 +146642,20 @@
       "specs": [
         "Outlaw"
       ],
-      "name": "준비",
-      "koreanName": "준비",
+      "name": "마음가짐",
+      "koreanName": "마음가짐",
       "englishName": "Preparation",
       "icon": "ability_rogue_preparation",
       "iconName": "ability_rogue_preparation",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "4분",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 준비 (Preparation)",
+      "description": "즉시 아드레날린 촉진, 미간 적중, 폭풍의 칼날, 질풍 칼날, 광기의 학살자의 쿨다운을 초기화하는 직접 사용 특성이다. 자체 쿨다운은 4분이며 뼈주사위와 도박의 연속은 초기화 목록에 없다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146663,7 +146674,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
