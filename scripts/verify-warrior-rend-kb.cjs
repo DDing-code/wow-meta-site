@@ -84,4 +84,17 @@ assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살
 for (const id of [29725, 281001]) assert.equal(skills[id].patch, '12.1');
 assert.match(skills[29725].description, /무료.*40/);
 assert.match(skills[281001].description, /35% 미만/);
-console.log('Warrior Rend/Cleave/Improved Whirlwind corrections verified; full warrior migration remains open.');
+for (const id of [436358, 429634, 429636]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms', 'Protection']);
+}
+assert.equal(skills[436358].cooldown, '30초');
+assert.equal(skills[436358].castTime, '집중 2초');
+assert.match(skills[429636].description, /10초.*10%.*20%/);
+assert.match(skills[429636].description, /재사용 대기시간이 감소하지 않는다/);
+assert.match(skills[429634].description, /회전베기가 3명.*복수가 3명/);
+assert.deepEqual(synergies['warrior-arms-colossus-demolish'].participants, ['12294', '845', '429634', '436358', '429636']);
+assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE'].participants, ['23922', '6572', '429634', '436358', '429636']);
+assert(!guide.includes('거신의 지배가 최대 중첩에서 쇄파 쿨다운을 더 크게 줄인다'));
+assert(!guide.includes('회전베기와 필사의 일격이 쇄파 흐름을 제대로 줄였는지'));
+console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

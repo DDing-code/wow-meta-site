@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:50:13.966Z",
+    "generatedAt": "2026-09-21T18:00:22.389Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -206,7 +206,7 @@
       "pet-utility": 1,
       "resource-utility": 1,
       "control-utility": 1,
-      "colossus_demolish_router": 1,
+      "colossus-damage-window": 3,
       "mountain_thane_thunder_router": 1,
       "slayer_execute_router": 1,
       "shared_interrupt_control": 1,
@@ -219,7 +219,6 @@
       "execute-window": 1,
       "passive-stat-support": 1,
       "bleed-maintenance": 1,
-      "colossus-damage-window": 1,
       "ravager_bleed_amp": 2,
       "multi-target-core": 1,
       "proc-charge-engine": 1,
@@ -231,7 +230,6 @@
       "mountain-thane-thunder": 1,
       "major-defensive": 1,
       "passive-mitigation": 1,
-      "colossus-damage-sequence": 1,
       "baseline-attack-engine": 1,
       "utility-magic-control": 1,
       "aoe-rage-loop": 1,
@@ -19161,31 +19159,11 @@
       "id": "warrior_common_colossus_demolish_dominance",
       "name": "Colossus-쇄파-거신의지배",
       "type": "synergy",
-      "synergyType": "colossus_demolish_router",
+      "synergyType": "colossus-damage-window",
       "participants": [
         "436358",
         "429636",
-        "429634",
-        "429637",
-        "429638",
-        "429639",
-        "429641",
-        "429642",
-        "429644",
-        "429647",
-        "431548",
-        "440992",
-        "440993",
-        "440995",
-        "1270704",
-        "1270709",
-        "1270710",
-        "12294",
-        "167105",
-        "7384",
-        "23922",
-        "6572",
-        "385952"
+        "429634"
       ],
       "class": "Warrior",
       "spec": "공용",
@@ -19195,14 +19173,8 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
-      ],
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {
@@ -19845,11 +19817,11 @@
       "type": "synergy",
       "synergyType": "colossus-damage-window",
       "participants": [
-        "436358",
-        "429636",
+        "12294",
+        "845",
         "429634",
-        "429637",
-        "431548"
+        "436358",
+        "429636"
       ],
       "class": "Warrior",
       "spec": "무기",
@@ -19858,10 +19830,10 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/전쟁파괴자"
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -20297,32 +20269,28 @@
       "id": "SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE",
       "name": "쇄파-거신의-지배-복수",
       "type": "synergy",
-      "synergyType": "colossus-damage-sequence",
+      "synergyType": "colossus-damage-window",
       "participants": [
+        "23922",
+        "6572",
+        "429634",
         "436358",
-        "429636",
-        "6572"
+        "429636"
       ],
       "class": "Warrior",
-      "spec": "Protection",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도"
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/압도자",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/치명상",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/혈행성-전이"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\쇄파-거신의-지배-복수.md",
         "lastUpdate": ""
