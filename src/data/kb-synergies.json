@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:25:58.673Z",
+    "generatedAt": "2026-09-21T17:32:02.329Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 577,
-    "rawTotalSynergies": 577,
+    "totalSynergies": 579,
+    "rawTotalSynergies": 579,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -237,11 +237,13 @@
       "bleed-damage-context": 1,
       "rend_application": 2,
       "rage-spend-enrage-engine": 1,
+      "rage_generator_refund": 1,
       "major-cooldown-rage-window": 1,
       "mountain-thane-thunder-window": 1,
       "cooldown-reduction-alignment": 1,
       "generator-reset-priority": 1,
       "whirlwind-cleave-window": 1,
+      "conditional_rampage_aoe": 1,
       "bloodthirst-bleed-survival": 1,
       "slayer-execute-window": 1
     },
@@ -259,7 +261,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 40
+      "Warrior": 42
     }
   },
   "synergies": {
@@ -20521,6 +20523,37 @@
         "lastUpdate": ""
       }
     },
+    "warrior_fury_hack_and_slash": {
+      "id": "warrior_fury_hack_and_slash",
+      "name": "광란-자르고-베기-충전",
+      "type": "synergy",
+      "synergyType": "rage_generator_refund",
+      "participants": [
+        "184367",
+        "383877",
+        "85288"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/자르고-베기"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\광란-자르고-베기-충전.md",
+        "lastUpdate": ""
+      }
+    },
     "warrior-fury-recklessness-window": {
       "id": "warrior-fury-recklessness-window",
       "name": "무모한-희생-광란-오딘의-격노",
@@ -20717,6 +20750,37 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\소용돌이-고기칼-분노의-강타.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_fury_rampaging_ruin": {
+      "id": "warrior_fury_rampaging_ruin",
+      "name": "소용돌이-연마-빗발치는-광란",
+      "type": "synergy",
+      "synergyType": "conditional_rampage_aoe",
+      "participants": [
+        "12950",
+        "184367",
+        "1265357"
+      ],
+      "class": "Warrior",
+      "spec": "분노",
+      "specs": [
+        "Fury"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/소용돌이-연마",
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/빗발치는-광란"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\소용돌이-연마-빗발치는-광란.md",
         "lastUpdate": ""
       }
     },

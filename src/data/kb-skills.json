@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:25:58.672Z",
+    "generatedAt": "2026-09-21T17:32:02.328Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2978,
-    "rawTotalSkills": 2978,
+    "totalSkills": 2980,
+    "rawTotalSkills": 2980,
     "duplicateIds": [],
-    "totalSynergies": 577,
+    "totalSynergies": 579,
     "stats": {
-      "total": 2978,
+      "total": 2980,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 132,
         "talent": 996,
-        "spec-talent": 392,
+        "spec-talent": 394,
         "passive": 75,
         "hero-tree": 2,
         "set-bonus": 11,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 266
+        "Warrior": 268
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -99,11 +99,11 @@
         "Warrior-Arms": 46,
         "Warrior-무기": 1,
         "Warrior-Protection": 42,
-        "Warrior-Fury": 50
+        "Warrior-Fury": 52
       },
       "quality": {
-        "withWikilinks": 2903,
-        "withSynergies": 2009,
+        "withWikilinks": 2905,
+        "withSynergies": 2012,
         "avgLinkDensity": "0.039"
       }
     }
@@ -42463,18 +42463,18 @@
       ],
       "name": "고기칼",
       "koreanName": "고기칼",
-      "englishName": "",
+      "englishName": "Meat Cleaver",
       "icon": "warrior_talent_icon_mastercleaver",
       "iconName": "warrior_talent_icon_mastercleaver",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "의 중심 특성이다.  조건을 통해 과 의 광역 가치를 만든다.  공식 툴팁 요약: 고기칼 특성 전사 필요 요구 레벨 45 소용돌이 [ 몰아치는 천둥 : 및 천둥벼락 ]|1이;가; 3명 이상의 대상에게 적중하면 50%의 추가 피해를 입힙니다.",
+      "description": "고기칼은 소용돌이가 3명 이상에게 적중할 때 해당 기술의 피해를 50% 높이는 지속 효과다. 몰아치는 천둥을 선택한 산왕은 천둥벼락에도 이 조건이 적용된다. 소용돌이 연마가 담당하는 후속 단일 공격 복제와는 다른 효과다.  12.1에서는 새기는 칼날과 같은 선택 노드에 있어 둘을 동시에 선택하지 않는다. 고기칼은 3명 이상, 새기는 칼날은 정확히 1명 적중이 조건이다. 적중 대상이 2명이면 어느 쪽의 50% 조건도 충족하지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42491,13 +42491,16 @@
           "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
           "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/새기는-칼날",
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/소용돌이-연마"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.03,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -61925,18 +61928,18 @@
       ],
       "name": "자르고 베기",
       "koreanName": "자르고 베기",
-      "englishName": "",
+      "englishName": "Hack and Slash",
       "icon": "ability_rogue_rollthebones02",
       "iconName": "ability_rogue_rollthebones02",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "자르고 베기는 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 자르고 베기 특성 전사 필요 광란 사용 시 100%의 확률로 분노의 강타 충전 횟수를 반환합니다. (500밀리초 재사용 대기시간)",
+      "description": "자르고 베기는 광란 사용 시 75% 확률로 분노의 강타 충전 1회를 돌려주고 다음 분노의 강타 공격력을 20% 높이는 지속 효과다. 12.1에서는 확정 반환이 아니다. 툴팁의 500밀리초는 효과의 내부 재사용 제한이지 직접 누를 수 있는 기술의 재사용 대기시간이 아니다.  광란을 쓴 뒤에는 충전이 실제로 생겼는지 확인한다. 발동하지 않았는데 분노의 강타가 반드시 준비됐다고 생각하고 기다리면 다른 생성기를 쓸 시간을 잃는다. 네 번 중 세 번은 평균 확률의 표현일 뿐 네 번째마다 실패한다는 고정 순서가 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -61948,14 +61951,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_rollthebones02.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -136484,6 +136490,58 @@
         "lastUpdate": ""
       }
     },
+    "1265357": {
+      "id": "1265357",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "빗발치는 광란",
+      "koreanName": "빗발치는 광란",
+      "englishName": "Rampaging Ruin",
+      "icon": "ability_warrior_trauma",
+      "iconName": "ability_warrior_trauma",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "빗발치는 광란은 소용돌이 연마가 활성화된 동안 광란의 마지막 공격이 대상 주위 8미터의 모든 적에게 추가 물리 피해를 주는 분노 특성이다. 기본 툴팁 계수는 전투력의 372.289%이며 5명을 초과하면 피해가 감소한다. 추가 피해가 아예 5명에게만 적중하는 하드캡은 아니다.  피해 중심은 전사의 위치가 아니라 광란 대상의 위치다. 소용돌이 연마가 없는 광란이나 그 이전의 모든 타격이 같은 추가 공격을 발생시키는 것으로 계산하지 않는다. 별도로 누르는 기술도 아니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_trauma.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_trauma.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_trauma.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_trauma.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_trauma.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/소용돌이-연마"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.024,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\빗발치는-광란.md",
+        "lastUpdate": ""
+      }
+    },
     "1265385": {
       "id": "1265385",
       "type": "talent",
@@ -152714,6 +152772,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\생기소모.md",
+        "lastUpdate": ""
+      }
+    },
+    "1300463": {
+      "id": "1300463",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "새기는 칼날",
+      "koreanName": "새기는 칼날",
+      "englishName": "Carving Blades",
+      "icon": "inv_knife_1h_goblinrogue_c_01",
+      "iconName": "inv_knife_1h_goblinrogue_c_01",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "새기는 칼날은 소용돌이가 정확히 1명에게 적중할 때 피해를 50% 높이는 분노 특성이다. 고기칼과 같은 선택 노드이므로 둘 중 하나만 선택한다. 두 명 이상에게 맞으면 이 추가 피해 조건은 사라진다.  단일 대상 소용돌이의 직접 피해를 올리는 효과이며 모든 공격을 50% 강화하지 않는다. 광란 우선순위나 격노·분노 관리를 무시하고 소용돌이만 반복하라는 뜻도 아니다. 현재 몰아치는 천둥 툴팁의 소용돌이 특성 적용 목록에는 새기는 칼날이 없으므로 천둥벼락에도 50%가 붙는다고 확장하지 않는다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_goblinrogue_c_01.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_knife_1h_goblinrogue_c_01.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_knife_1h_goblinrogue_c_01.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_goblinrogue_c_01.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_goblinrogue_c_01.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/고기칼"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.016,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\새기는-칼날.md",
         "lastUpdate": ""
       }
     },
