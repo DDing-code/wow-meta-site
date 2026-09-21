@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:33:38.488Z",
+    "generatedAt": "2026-09-21T19:38:00.211Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 597,
-    "rawTotalSynergies": 597,
+    "totalSynergies": 598,
+    "rawTotalSynergies": 598,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -223,6 +223,7 @@
       "execute-availability": 1,
       "hero-talent-damage": 4,
       "execute-window": 1,
+      "resource-refund": 1,
       "bleed-maintenance": 1,
       "ravager_bleed_amp": 2,
       "stack-consumption": 2,
@@ -270,7 +271,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 60
+      "Warrior": 61
     }
   },
   "synergies": {
@@ -19884,7 +19885,7 @@
     },
     "warrior-arms-execute-precision": {
       "id": "warrior-arms-execute-precision",
-      "name": "마무리-일격-집행자의-정밀함-비판적-사고",
+      "name": "마무리-일격-집행자의-정밀함-치명적-감각",
       "type": "synergy",
       "synergyType": "execute-window",
       "participants": [
@@ -19908,7 +19909,7 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/집행자의-정밀함",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/비판적-사고",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/치명적-감각",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/급살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마",
@@ -19916,7 +19917,34 @@
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/승리의-용기"
       ],
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\마무리-일격-집행자의-정밀함-비판적-사고.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\마무리-일격-집행자의-정밀함-치명적-감각.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_arms_execute_actual_rage_refund": {
+      "id": "warrior_arms_execute_actual_rage_refund",
+      "name": "마무리일격-실제소모-분노반환",
+      "type": "synergy",
+      "synergyType": "resource-refund",
+      "participants": [
+        "163201",
+        "316405",
+        "389306",
+        "29725"
+      ],
+      "class": "Warrior",
+      "spec": "무기",
+      "specs": [
+        "Arms"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\마무리일격-실제소모-분노반환.md",
         "lastUpdate": ""
       }
     },
@@ -21345,7 +21373,7 @@
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/마무리-일격-연마",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/잿빛-돌격",
         "08-직업별-Knowledge-Base/13-전사/분노/Talents/학살의-일격",
-        "08-직업별-Knowledge-Base/13-전사/분노/Talents/비판적-사고"
+        "08-직업별-Knowledge-Base/13-전사/분노/Talents/치명적-감각"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Synergies\\학살자의-지배-마무리-일격-칼날폭풍.md",

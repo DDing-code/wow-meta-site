@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T19:33:38.486Z",
+    "generatedAt": "2026-09-21T19:38:00.210Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2979,
     "rawTotalSkills": 2979,
     "duplicateIds": [],
-    "totalSynergies": 597,
+    "totalSynergies": 598,
     "stats": {
       "total": 2979,
       "byType": {
@@ -43281,18 +43281,18 @@
       ],
       "name": "마무리 일격 연마",
       "koreanName": "마무리 일격 연마",
-      "englishName": "",
+      "englishName": "Improved Execute",
       "icon": "inv_sword_48",
       "iconName": "inv_sword_48",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "마무리 일격 연마은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 마무리 일격 연마 특성 전사 필요 적이 살아남으면 마무리 일격의 재사용 대기시간이 발생하지 않고 소모한 분노의 10%를 돌려받습니다.",
+      "description": "마무리 일격을 맞은 적이 살아남으면 마무리 일격의 자체 재사용 대기시간이 발생하지 않고 실제 소모한 분노의 10%를 돌려받는다. 글쿨이나 다음 공격에 필요한 분노까지 없어지는 효과는 아니다.  급살로 무료 사용한 공격의 분노 40 상당 피해와 실제 분노 소모를 구분한다. 소모량이 0이면 이 반환 효과로 분노 4를 새로 얻는 것이 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43311,7 +43311,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -59856,8 +59856,8 @@
       "specs": [
         "Fury"
       ],
-      "name": "비판적 사고",
-      "koreanName": "비판적 사고",
+      "name": "치명적 감각",
+      "koreanName": "치명적 감각",
       "englishName": "",
       "icon": "ability_criticalstrike",
       "iconName": "ability_criticalstrike",
@@ -59866,7 +59866,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "비판적 사고은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 비판적 사고 특성 전사 필요 분노의 강타의 치명타 및 극대화율이 5%만큼, 치명타 및 극대화 피해가 5%만큼 증가합니다.",
+      "description": "치명적 감각은 분노 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 치명적 감각 특성 전사 필요 분노의 강타의 치명타 및 극대화율이 5%만큼, 치명타 및 극대화 피해가 5%만큼 증가합니다.",
       "category": "spec-talent",
       "tags": [],
       "patch": "12.0.5",
@@ -59892,7 +59892,7 @@
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\비판적-사고.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\치명적-감각.md",
         "lastUpdate": ""
       }
     },
@@ -60928,18 +60928,18 @@
       ],
       "name": "치명적 공격",
       "koreanName": "치명적 공격",
-      "englishName": "",
+      "englishName": "Fatality",
       "icon": "achievement_bg_killingblow_berserker",
       "iconName": "achievement_bg_killingblow_berserker",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "치명적 공격은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 치명적 공격 특성 전사 필요 필사의 일격이 50%의 확률로 대상에게 척살의 징표를 부여하며, 최대 5번까지 중첩됩니다. 척살의 징표가 부여된 적에게 다음 마무리 일격 사용 시 척살의 징표가 중첩 하나당 (전투력의 276%)의 추가 물리 피해를 입힙니다.",
+      "description": "필사의 일격이 50% 확률로 대상에게 척살의 징표를 부여하며 최대 5중첩이다. 그 대상에게 다음 마무리 일격을 사용하면 징표 중첩에 따른 추가 물리 피해를 준다. 기본 툴팁 계수는 중첩당 전투력의 276%다.  징표는 대상에게 쌓이는 효과다. 다른 적에게 마무리 일격을 사용했다고 원래 대상의 징표를 소비한 것으로 계산하지 않는다. 집행자의 정밀함이 다음 필사의 일격을 강화하는 효과와 방향이 다르다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -60958,7 +60958,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.014,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -68514,20 +68514,20 @@
       "specs": [
         "Arms"
       ],
-      "name": "비판적 사고",
-      "koreanName": "비판적 사고",
-      "englishName": "",
+      "name": "치명적 감각",
+      "koreanName": "치명적 감각",
+      "englishName": "Critical Thinking",
       "icon": "ability_criticalstrike",
       "iconName": "ability_criticalstrike",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "비판적 사고은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 비판적 사고 특성 전사 필요 마무리 일격의 치명타 및 극대화율이 5%만큼 증가합니다. 또한 마무리 일격이 즉시 소모한 분노의 10%만큼 추가로 반환합니다.",
+      "description": "치명적 감각은 1포인트 기준 마무리 일격의 치명타 확률을 5% 높이고 실제 소모한 분노의 10%를 추가 반환한다. 최대 2포인트를 투자할 수 있다. 치명타 피해 증가와는 다른 효과다.  마무리 일격 연마의 생존 대상 반환과 별도 보너스다. 급살의 무료 공격은 실제 소모가 없으므로 분노 40을 쓴 것으로 간주해 반환량을 만들지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68546,11 +68546,11 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\비판적-사고.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Talents\\치명적-감각.md",
         "lastUpdate": ""
       }
     },
@@ -75223,18 +75223,18 @@
       ],
       "name": "압도적인 제압",
       "koreanName": "압도적인 제압",
-      "englishName": "",
+      "englishName": "Overpowering Finish",
       "icon": "ability_warrior_punishingblow",
       "iconName": "ability_warrior_punishingblow",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
       "range": "",
-      "description": "압도적인 제압은 무기 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 압도적인 제압 특성 전사 필요 제압이 생명력이 35% 미만인 대상에게 15%의 추가 피해를 입힙니다.",
+      "description": "제압이 생명력 35% 미만인 대상에게 15%의 추가 피해를 입힌다. 이 조건은 대상의 현재 생명력을 본다.  급살 덕분에 생명력이 높은 적에게 마무리 일격을 쓸 수 있더라도 이 제압 강화 조건이 충족되는 것은 아니다. 대학살의 마무리 일격 사용 조건과 별도로 판단한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75253,7 +75253,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {

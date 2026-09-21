@@ -247,4 +247,15 @@ assert.match(skills[444775].description, /소용돌이 연마.*광란/);
 assert.match(skills[444769].description, /학살자의 일격.*3회.*급살/);
 assert.deepEqual(synergies.warrior_slayer_reap_trigger_paths.participants, ['444775', '444769', '845', '184367', '12950', '163201']);
 assert.ok(!guide.includes('제압이 폭풍을 거두는 자와 학살자 흐름을 여는'));
+for (const id of [316405, 389306, 383703, 400205]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Arms']);
+}
+assert.equal(skills[389306].koreanName, '치명적 감각');
+assert.match(skills[389306].description, /1포인트.*5%.*10%.*2포인트/);
+assert.match(skills[316405].description, /살아남으면.*10%/);
+assert.match(skills[383703].description, /50%.*5중첩/);
+assert.match(skills[400205].description, /35% 미만.*15%/);
+assert.deepEqual(synergies.warrior_arms_execute_actual_rage_refund.participants, ['163201', '316405', '389306', '29725']);
+assert.ok(guide.includes('실제로 40을 지불한 것은 아니므로'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
