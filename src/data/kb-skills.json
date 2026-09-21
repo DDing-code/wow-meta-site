@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T05:07:12.143Z",
+    "generatedAt": "2026-09-21T05:16:10.124Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -59055,14 +59055,14 @@
       "icon": "ability_ghoulfrenzy",
       "iconName": "ability_ghoulfrenzy",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 (Flurry)",
+      "description": "주문 또는 능력이 치명타 및 극대화로 적중하면 다음 3회의 근접 공격 동안 공격 속도가 15% 증가한다. 고양 일반 특성 폭풍(Flurry, 382888)의 지속 효과이며, 번개 화살을 바꾸는 폭풍인도자 영웅 특성 폭풍(Tempest, 454009)과는 다른 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -59081,7 +59081,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.063,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -104786,14 +104786,14 @@
       "icon": "inv_ability_stormcallershaman_tempest",
       "iconName": "inv_ability_stormcallershaman_tempest",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 폭풍 (Tempest)",
+      "description": "고양은 소모한 소용돌이치는 무기 중첩 하나당 2.00%, 정기는 소모한 소용돌이 하나당 0.30%의 확률로 다음 번개 화살이 폭풍으로 바뀐다. 일정 중첩을 채우면 반드시 발동하는 방식이 아니다. 이 항목의 454009는 변환 효과를 제공하는 지속 효과 특성 ID이며, 실제 시전 기술과 구분한다.  변환된 폭풍은 주 대상에게 자연 피해를 주고, 대상 주변 8미터의 적에게 주 대상 계수의 65%에 해당하는 피해를 준다. 5명을 초과하면 피해가 감소한다. 고양은 소용돌이치는 무기를 소비해 시전 시간을 줄인다. 기본 시전 시간 2초, 사거",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104807,12 +104807,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/초자력충전"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.035,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -105990,11 +105992,11 @@
       "icon": "inv_misc_stormlordsfavor",
       "iconName": "inv_misc_stormlordsfavor",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 초자력 충전 (Supercharge)",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "정기는 번개 화살, 폭풍, 연쇄 번개의 정기 과부하 피해가 10% 증가한다. 고양은 번개 화살, 폭풍, 연쇄 번개가 35% 확률로 소용돌이치는 무기 2중첩을 반환한다. 정기의 과부하 피해 증가와 고양의 자원 반환은 전문화별로 다른 효과다. 모든 소용돌이치는 무기 소비 기술이 반환 대상인 것은 아니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -106021,7 +106023,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.048,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -106093,14 +106095,14 @@
       "icon": "spell_nature_stormreach",
       "iconName": "spell_nature_stormreach",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깨어나는 폭풍 (Awakening Storms)",
+      "description": "고양은 폭풍의 일격 사용 시 낮은 확률로 다음 번개 화살이 폭풍으로 바뀐다. 정기는 소모한 소용돌이 하나당 추가 0.30%의 변환 기회를 얻는다. 영문 툴팁은 정기 효과를 추가 확률로 명시한다. 고양의 자원 소비당 2.00% 효과는 기본 폭풍 특성이며, 이 특성의 폭풍의 일격 발동 조건과 구분한다.  툴팁에 표시된 매분 약 1.1회는 발동 빈도 표기다. 이를 폭풍의 일격 한 번당 1.1% 또는 일정 시간마다 보장되는 발동으로 해석하지 않는다. 현재 툴팁은 고양의 정확한 시전당 확률을 제공하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -106114,12 +106116,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/폭풍"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {

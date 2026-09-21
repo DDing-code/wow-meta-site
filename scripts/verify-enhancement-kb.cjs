@@ -22,6 +22,7 @@ for (const [id, pattern] of Object.entries({
   334046: /용암 채찍과 세계의 분리.*화염 충격.*20초.*100%/,
   1218047: /15초.*한 번.*특성.*1218047.*1218090/,
   1218090: /15초.*한 번.*0.8%.*100%.*150%.*추가 검증/,
+  382888: /다음 3회.*15%.*Flurry.*382888.*Tempest.*454009/,
 })) {
   assert.equal(skills[id].patch, '12.1', id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
@@ -35,6 +36,17 @@ assert.equal(skills[114051].icon, '8026696');
 assert.equal(skills[469314].castTime, '지속 효과');
 assert.equal(skills[1218047].castTime, '지속 효과');
 assert.equal(skills[1218090].castTime, '즉시');
+for (const [id, pattern] of Object.entries({
+  454009: /고양.*중첩 하나당 2.00%.*정기.*0.30%.*반드시 발동하는 방식이 아니다/,
+  455110: /정기.*과부하 피해가 10%.*고양.*35%.*2중첩.*모든.*소비 기술.*아니다/,
+  455129: /고양.*폭풍의 일격.*정기.*추가 0.30%.*약 1.1회.*보장되는 발동.*해석하지/,
+})) {
+  assert.equal(skills[id].patch, '12.1', id);
+  assert.deepEqual(skills[id].specs, ['Elemental', 'Enhancement'], id);
+  assert.equal(skills[id].castTime, '지속 효과', id);
+  assert.match(skills[id].description, pattern, id);
+}
+assert.notEqual(skills[382888].icon, skills[454009].icon);
 assert.deepEqual(skills[378270].specs, ['Enhancement', 'Restoration']);
 assert.match(skills[378270].description, /0.6%.*6초.*2초.*복원.*7%/);
 assert.equal(skills[378270].patch, '12.1');
@@ -46,4 +58,4 @@ assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
 assert.match(manuscript, /skillId: ['"]1218090['"]/);
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
-console.log('Enhancement: 18 reviewed records, active spell IDs, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
+console.log('Enhancement: 22 reviewed records, active spell IDs, shared hero effects, retired Feral Spirit exclusion and resource conditions passed; remaining talents, manuscript and logs are not covered.');
