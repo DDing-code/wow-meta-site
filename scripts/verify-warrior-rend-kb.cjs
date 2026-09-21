@@ -437,4 +437,6 @@ assert.match(skills[1269308].description, /10%.*8초.*3%.*개별적으로 만료
 assert.match(skills[1269309].description, /2포인트.*무모한 희생 중에만.*15.*5%.*30.*10%.*65·50/);
 assert.match(skills[1269310].description, /3중첩.*50%.*12초.*18초/);
 assert.ok(guide.includes('중첩마다 따로 시간이 지나므로'));
+assert.doesNotMatch(guide, /28,065|84,766|4,371|현재 고단 로그는 학살자가/);
+assert.ok(guide.includes('Icy Veins 분노 전사 12.1 특성 선택'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
