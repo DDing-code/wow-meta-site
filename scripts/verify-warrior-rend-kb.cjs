@@ -420,4 +420,13 @@ assert.match(skills[208154].description, /격노 상태.*10%.*격노가 끝나�
 assert.match(skills[383468].description, /3초.*11초.*10%.*즉시/);
 for (const id of [383848, 440277]) assert.match(skills[id].description, /같은 선택 노드.*하나만/);
 assert.ok(guide.includes('광포한 격노와 강대한 격노는 둘 중 하나만 선택'));
+for (const id of [385059, 215568, 393950, 383959, 383885]) assert.equal(skills[id].patch, '12.1');
+assert.equal(skills[385059].cooldown, '45초');
+assert.match(skills[385059].description, /12미터.*4초.*격노.*분노 20.*8명/);
+for (const id of [215568, 393950, 383959, 383885]) assert.equal(skills[id].castTime, '지속 효과');
+assert.match(skills[215568].description, /처음.*적중.*15%.*대상별/);
+assert.match(skills[393950].description, /5%.*5중첩.*25%.*소비/);
+assert.match(skills[383959].description, /치명타.*분노 4.*6초.*0.5초/);
+assert.match(skills[383885].description, /35% 미만.*25%.*대상의 현재 생명력/);
+assert.ok(guide.includes('광역 치명타 적중 수에 무조건 4를 곱하면 안 됩니다'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
