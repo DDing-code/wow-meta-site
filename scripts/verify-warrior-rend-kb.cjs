@@ -429,4 +429,12 @@ assert.match(skills[393950].description, /5%.*5중첩.*25%.*소비/);
 assert.match(skills[383959].description, /치명타.*분노 4.*6초.*0.5초/);
 assert.match(skills[383885].description, /35% 미만.*25%.*대상의 현재 생명력/);
 assert.ok(guide.includes('광역 치명타 적중 수에 무조건 4를 곱하면 안 됩니다'));
+for (const id of [1269308, 1269309, 1269310]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.equal(skills[id].castTime, '지속 효과');
+}
+assert.match(skills[1269308].description, /10%.*8초.*3%.*개별적으로 만료/);
+assert.match(skills[1269309].description, /2포인트.*무모한 희생 중에만.*15.*5%.*30.*10%.*65·50/);
+assert.match(skills[1269310].description, /3중첩.*50%.*12초.*18초/);
+assert.ok(guide.includes('중첩마다 따로 시간이 지나므로'));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
