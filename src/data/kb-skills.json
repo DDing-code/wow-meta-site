@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T03:29:28.283Z",
+    "generatedAt": "2026-09-21T03:46:46.924Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2981,
     "rawTotalSkills": 2981,
     "duplicateIds": [],
-    "totalSynergies": 571,
+    "totalSynergies": 572,
     "stats": {
       "total": 2981,
       "byType": {
@@ -25018,7 +25018,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "기본 6초 동안 은신이 필요한 기술과 은신의 전투 효과를 사용할 수 있게 하고 위협 수준을 크게 낮춘다. 공격하거나 피해를 받아도 해제되지 않는다. 공개 기본값은 20초 재사용 대기시간과 1회 충전이며, 지속시간과 충전 수는 선택 특성에 따라 달라진다.",
+      "description": "기본 6초 동안 은신이 필요한 기술과 은신의 전투 효과를 사용할 수 있게 하고 위협 수준을 크게 낮춘다. 공격하거나 피해를 받아도 해제되지 않는다. 공개 기본값은 20초 재사용 대기시간과 1회 충전이며, 지속시간과 충전 수는 선택 특성에 따라 달라진다. 12.1 핫픽스 이후 수동으로 취소할 수 없고 특성을 바꾸면 해제된다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -25045,7 +25045,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.036,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -91456,7 +91456,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "무법에서는 사악한 일격과 매복이 사용 가능 상태의 무형검을 추가로 발동시킨다. 대상에게 10초 동안 당혹을 부여해 자신에게 받는 피해를 5% 높이고 자신의 공격을 무기로 막지 못하게 한다. 기본 발동 간격은 20초다.",
+      "description": "무법에서는 사악한 일격과 매복, 잠행에서는 그림자 일격이 사용 가능 상태의 무형검을 추가로 발동시킨다. 대상에게 10초 동안 당혹을 부여해 자신에게 받는 피해를 5% 높이고 자신의 공격을 무기로 막지 못하게 한다. 기본 발동 간격은 20초다. 잠행의 다른 기본 발동 기술은 툴팁에서 이름이 누락되어 있어 운용 절에 확인 범위를 구분했다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -91481,7 +91481,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -107364,7 +107364,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "암살은 죽음표식이 끝난 뒤 30초 동안 자연 피해가 30% 증가합니다. 잠행은 어둠의 칼날이 끝난 뒤 30초 동안 암흑 피해가 30% 증가합니다. 큰 공격 강화 효과가 끝난 뒤 이어지는 강화 구간이며, 죽음표식·어둠의 칼날이 켜져 있는 동안의 보너스로 계산하지 않습니다.",
+      "description": "암살은 죽음표식이 끝난 뒤 30초 동안 자연 피해가 30% 증가합니다. 잠행은 어둠의 칼날이 끝난 뒤 30초 동안 암흑 피해가 30% 증가합니다. 주력 효과가 켜져 있는 동안의 보너스가 아닙니다. 잠행 관련 12.1 핫픽스는 특성 변경·레이드 전투 시작·쐐기 시작 시 머무는 암흑이 해제됨을 명시합니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -107386,7 +107386,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -150114,7 +150114,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.018,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {

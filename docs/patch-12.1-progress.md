@@ -1,5 +1,13 @@
 # 12.1 update status
 
+### Subtlety hero-specific rotation rewrite, 2026-09-21
+
+- Replaced outdated June hero rankings with current public guide recommendations, explicitly not fresh usage statistics. Manually authored separate opener/single-target/AoE views for Deathstalker and Trickster using the existing UI; rewrote the hero and opener sections and practical tips.
+- Added a canonical hero-entry relationship, corrected Unseen Blade's missing Subtlety description, and synced DB. Blizzard's official indexed hotfix text confirms the 4pc 60% change, manual Dance cancellation restriction, and Lingering Darkness resets; exact individual hotfix dates remain unverified because the full article was blocked.
+- Archon raid and Mythic+ access failed; the browser presented a human-verification gate. Links are explicitly marked unverified and excluded from quantitative recommendations. A passing structural source validator does not establish current log coverage.
+- Focused checks cover 60 local/18 Deathstalker records, 13 relationships and six hero views; Outlaw regression and prebuild passed. Browser checks exercised both heroes and all three modes at 1440/390px without horizontal overflow or page errors; inspected the mobile screenshot. Sanitized compilation passed before the final tooltip/backlink sync.
+- Whole-guide 12.1 labeling and production rollout remain pending: common utility, remaining body/editorial prose, advanced cases and live log evidence still need review.
+
 ### Subtlety Season 2 set data, 2026-09-21
 
 - Added manually researched 2pc/4pc canonical notes and their Lingering Shadow relationship, updated the base talent's set exception, synced generated DB, and replaced the public guide's repetitive final section with set-dependent gameplay.
