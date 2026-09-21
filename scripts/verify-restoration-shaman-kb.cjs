@@ -54,3 +54,12 @@ assert.equal(skills[114052].icon,'8026698');
 assert.match(skills[114052].description,/15초.*3명.*10%.*50%.*25%/);
 assert.match(skills[108280].description,/10초.*2초.*40야드.*5명/);
 assert.match(skills[98008].description,/40야드.*6초.*10야드.*10%/);
+for (const id of [1296629,1296630]) {
+  assert.equal(skills[id].patch,'12.1');
+  assert.equal(skills[id].type,'set-bonus');
+  assert.deepEqual(skills[id].specs,['Restoration']);
+}
+assert.match(skills[1296629].description,/8초.*3회.*고정 쿨다운이 아니다/);
+assert.match(skills[1296630].description,/1초.*1명.*10초/);
+assert.deepEqual(synergies.synergies.shaman_restoration_season2_rain_shields.participants,
+  ['77472','1064','1296629','73920','1296630']);

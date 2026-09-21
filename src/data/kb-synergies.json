@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T16:45:14.239Z",
+    "generatedAt": "2026-09-21T17:05:00.075Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 574,
-    "rawTotalSynergies": 574,
+    "totalSynergies": 575,
+    "rawTotalSynergies": 575,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -193,6 +193,7 @@
       "farseer_ancestor_healing": 1,
       "riptide_chain_heal": 1,
       "totemic_area_healing": 1,
+      "healing_rain_absorb": 1,
       "raid_stabilization_cooldown": 1,
       "direct_heal_mana_management": 1,
       "ground_effect_healing_damage": 1,
@@ -255,7 +256,7 @@
       "성기사": 10,
       "Priest": 52,
       "Rogue": 43,
-      "Shaman": 36,
+      "Shaman": 37,
       "Warlock": 60,
       "Warrior": 38
     }
@@ -16383,6 +16384,41 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\쇄도하는토템-활발한토템.md",
+        "lastUpdate": ""
+      }
+    },
+    "shaman_restoration_season2_rain_shields": {
+      "id": "shaman_restoration_season2_rain_shields",
+      "name": "시즌2-치유의비-보호막",
+      "type": "synergy",
+      "synergyType": "healing_rain_absorb",
+      "participants": [
+        "77472",
+        "1064",
+        "1296629",
+        "73920",
+        "1296630"
+      ],
+      "class": "Shaman",
+      "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\시즌2-치유의비-보호막.md",
         "lastUpdate": ""
       }
     },

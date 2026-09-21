@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T17:01:10.035Z",
+    "generatedAt": "2026-09-21T17:05:00.074Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2975,
-    "rawTotalSkills": 2975,
+    "totalSkills": 2977,
+    "rawTotalSkills": 2977,
     "duplicateIds": [],
-    "totalSynergies": 574,
+    "totalSynergies": 575,
     "stats": {
-      "total": 2975,
+      "total": 2977,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -20,7 +20,7 @@
         "spec-talent": 392,
         "passive": 75,
         "hero-tree": 2,
-        "set-bonus": 9,
+        "set-bonus": 11,
         "tier-set": 2,
         "class-talent": 92,
         "debuff": 6,
@@ -40,7 +40,7 @@
         "Paladin": 250,
         "Priest": 258,
         "Rogue": 296,
-        "Shaman": 269,
+        "Shaman": 271,
         "Warlock": 296,
         "Warrior": 265
       },
@@ -88,7 +88,7 @@
         "Rogue-잠행": 60,
         "Shaman-고양": 47,
         "Shaman-공용": 118,
-        "Shaman-복원": 47,
+        "Shaman-복원": 49,
         "Shaman-정기": 57,
         "Warlock-고통": 10,
         "Warlock-Affliction": 42,
@@ -102,7 +102,7 @@
         "Warrior-Fury": 49
       },
       "quality": {
-        "withWikilinks": 2900,
+        "withWikilinks": 2902,
         "withSynergies": 2005,
         "avgLinkDensity": "0.039"
       }
@@ -15556,7 +15556,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -150738,6 +150738,102 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296629": {
+      "id": "1296629",
+      "type": "set-bonus",
+      "class": "Shaman",
+      "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "Shaman Restoration 12.1 Class Set 2pc",
+      "koreanName": "Shaman Restoration 12.1 Class Set 2pc",
+      "englishName": "Shaman Restoration 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "치유의 물결과 연쇄 치유 시전 시 일정 확률로 대상 위치에 8초 동안 치유의 비를 생성한다. 기본 발동 정보는 분당 약 3회이며 매 20초마다 반드시 발생하는 고정 쿨다운이 아니다. 직접 설치한 치유의 비와 세트가 생성한 추가 영역을 구분한다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.01,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296630": {
+      "id": "1296630",
+      "type": "set-bonus",
+      "class": "Shaman",
+      "spec": "복원",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "Shaman Restoration 12.1 Class Set 4pc",
+      "koreanName": "Shaman Restoration 12.1 Class Set 4pc",
+      "englishName": "Shaman Restoration 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "1초마다 치유의 비 안에 있는 아군 1명에게 10초 동안 지속되는 피해 흡수 보호막을 부여한다. 영역 내 모든 아군에게 매초 동시에 부여되는 효과가 아니다. 동적 흡수량이 툴팁에 0으로 표시되므로 이를 실제 흡수량 0으로 단정하거나 임의의 고정 수치를 넣지 않는다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.011,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },
