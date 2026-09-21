@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:46:01.699Z",
+    "generatedAt": "2026-09-21T01:50:56.308Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -142,8 +142,8 @@
       "dungeon-utility": 1,
       "stealth-control": 1,
       "movement-planning": 2,
-      "hero-talent-package": 5,
-      "hero_talent_finisher": 4,
+      "hero-talent-package": 4,
+      "hero_talent_finisher": 5,
       "defensive_utility_matrix": 1,
       "builder_proc_priority": 1,
       "opener_state_alignment": 1,
@@ -13799,20 +13799,28 @@
     },
     "SY-ROGUE-HERO-FATEBOUND-HAND-COIN": {
       "id": "SY-ROGUE-HERO-FATEBOUND-HAND-COIN",
-      "name": "영웅특성-Fatebound-운명의손-행운주화",
+      "name": "운명결속 동전의 전문화별 발동과 보상",
+      "description": "운명의 손은 5점 이상 실제 소비에서 동전을 만들고 행운 주화는 활성 중이 아닌 동전 7회를 센다. 넘치는 돈주머니·곧게 선 동전·필연으로의 질주는 무법과 암살의 발동 기술·확률·기력 수치가 다르다. 이동과 생존 특성은 별도의 역할로 구분한다.",
       "type": "synergy",
-      "synergyType": "hero-talent-package",
+      "synergyType": "hero_talent_finisher",
       "participants": [
         "452536",
         "1248970",
+        "453428",
+        "453457",
         "1249190",
-        "454435"
+        "1249204",
+        "1276816"
       ],
       "class": "Rogue",
       "spec": "Common",
+      "specs": [
+        "Assassination",
+        "Outlaw"
+      ],
       "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
+      "importance": 90,
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -14162,31 +14170,31 @@
     },
     "rogue_outlaw_fatebound_dispatch": {
       "id": "rogue_outlaw_fatebound_dispatch",
-      "name": "운명의손-속결",
+      "name": "무법 마무리 일격과 동전 보상",
+      "description": "무법은 실제로 5점 이상 소비한 마무리 일격에서 동전을 던진다. 속결은 선택 특성에 따라 같은 면 연속 확률과 추가 동전으로 연결되고, 아드레날린 촉진은 곧게 선 동전으로 수직 동전을 만든다. 행운 주화 활성 중 동전은 다음 주화 준비 횟수에 포함되지 않는다.",
       "type": "synergy",
       "synergyType": "hero_talent_finisher",
       "participants": [
         "452536",
         "1248970",
+        "453428",
+        "453457",
+        "1249190",
+        "1249204",
+        "1276816",
         "2098",
         "315341",
-        "51690",
-        "79096",
-        "14161"
+        "13750"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
-      "importance": 74,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
-      ],
+      "importance": 90,
+      "patch": "12.1",
+      "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
       "source": {

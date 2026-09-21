@@ -95,4 +95,24 @@ for (const id of heroRelationships) {
   }
   assert.ok(!relation.participants.includes('1276816'), 'Fatebound talent must not be attached to Trickster');
 }
-console.log(`Outlaw review: ${reviewed.length} local records, ${trickster.length} shared Trickster records and 8 relationships passed; full guide audit remains pending`);
+const fatebound = ['452536', '453428', '453457', '454286', '454419', '454432', '454433',
+  '454435', '1248970', '1249190', '1249194', '1249201', '1249204', '1249215', '1276809', '1276816', '1277030'];
+for (const id of fatebound) {
+  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.deepEqual([...skills[id].specs].sort(), ['Assassination', 'Outlaw'], id);
+  assert.ok(skills[id].description.length > 70, id);
+}
+assert.match(skills['1249190'].description, /무법.*4%.*암살.*15%/);
+assert.match(skills['1249204'].description, /무법.*기력 2.*기력 10.*암살.*5와 15/);
+assert.match(skills['453457'].description, /무법.*아드레날린 촉진.*암살.*죽음표식/);
+assert.match(skills['1276816'].description, /4회.*끝나면.*방금 나온 면/);
+assert.match(skills['1248970'].description, /7번.*12초.*포함되지 않는다/);
+for (const id of ['rogue_outlaw_fatebound_dispatch', 'SY-ROGUE-HERO-FATEBOUND-HAND-COIN']) {
+  const relation = synergies[id];
+  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(relation.participants.includes('1276816'), id);
+  for (const spell of relation.participants) for (const spec of relation.specs) {
+    assert.ok(skills[spell]?.specs.includes(spec), `${id}:${spell}:${spec}`);
+  }
+}
+console.log(`Outlaw review: ${reviewed.length} local, ${trickster.length} shared Trickster, ${fatebound.length} shared Fatebound records and 10 relationships passed; manuscript remains pending`);

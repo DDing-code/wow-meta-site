@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:46:01.698Z",
+    "generatedAt": "2026-09-21T01:50:56.307Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -103810,14 +103810,14 @@
       "icon": "inv_sigil_thorim",
       "iconName": "inv_sigil_thorim",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 놀라운 연속 기록 (Mean Streak)",
+      "description": "무법은 속결, 암살은 독살로 던진 동전이 직전과 같은 면이 될 확률을 33% 높인다. 두 전문화의 지정 마무리 일격에 연결되는 특성이지 모든 기술의 치명타 확률을 33% 올리는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103831,12 +103831,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -103859,14 +103861,14 @@
       "icon": "item_icecrownnecklacea",
       "iconName": "item_icecrownnecklacea",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 곧게 선 동전 (Edge Case)",
+      "description": "무법에서는 아드레날린 촉진, 암살에서는 죽음표식 사용 시 동전을 던져 수직으로 세운다. 이 동전은 앞면과 뒷면으로 동시에 판정된다. 두 전문화가 모두 같은 쿨기로 발동시키는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -103880,12 +103882,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -104996,14 +105000,14 @@
       "icon": "ability_rogue_sabreslash",
       "iconName": "ability_rogue_sabreslash",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 운명의 농간 (Tempted Fate)",
+      "description": "피해를 받을 때 30%의 확률로 해당 피해의 10%를 흡수하는 지속 영웅 특성이다. 상시 모든 피해를 10% 줄이거나 매번 30%를 흡수하는 생존기로 안내하면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105017,12 +105021,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -105192,14 +105198,14 @@
       "icon": "ability_monk_ridethewind",
       "iconName": "ability_monk_ridethewind",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 거침없는 행진 (Inexorable March)",
+      "description": "동전에서 같은 면이 2회 이상 연속으로 나온 상태라면 이동 속도가 평상시의 70% 아래로 내려가지 않는다. 상시 이동 속도 70% 증가나 모든 이동 불가 효과에 대한 면역을 뜻하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105213,12 +105219,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -105241,14 +105249,14 @@
       "icon": "achievement_guildperk_havegroup-willtravel",
       "iconName": "achievement_guildperk_havegroup-willtravel",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 죽음의 도래 (Death's Arrival)",
+      "description": "무법은 갈고리 던지기, 암살은 그림자 밟기를 사용한 뒤 3초 안에 쿨다운 없이 한 번 더 사용할 수 있다. 대신 해당 기술의 총 쿨다운은 5초 늘어난다. 상시 두 충전을 추가하는 효과와는 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105262,12 +105270,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -105290,14 +105300,14 @@
       "icon": "ability_boss_fatescribe_rune6",
       "iconName": "ability_boss_fatescribe_rune6",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 결정된 운명 (Destiny Defined)",
+      "description": "무법은 사악한 일격이 추가 적중하고 기회를 주는 확률을 5% 높인다. 암살은 무기 독의 적용 확률을 5% 높인다. 두 전문화 모두 동전이 직전과 같은 면으로 나올 확률도 5% 높아진다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -105311,12 +105321,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -122666,14 +122678,14 @@
       "icon": "inv_misc_coinbag_special",
       "iconName": "inv_misc_coinbag_special",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 넘치는 돈주머니 (Overflowing Purse)",
+      "description": "무법은 속결이 4% 확률로 동전 3개를 던지고, 암살은 독살이 15% 확률로 동전 3개를 던진다. 같은 공용 특성이지만 발동 기술과 확률이 다르며, 세 번 별도로 시전한 마무리 일격으로 세면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122687,12 +122699,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -122715,14 +122729,14 @@
       "icon": "ability_bossgorefiend_touchofdoom",
       "iconName": "ability_bossgorefiend_touchofdoom",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 실현된 파멸 (Delivered Doom)",
+      "description": "연계 점수를 5점 이상 소비하면 무법의 속결·미간 적중, 암살의 독살 피해가 5% 증가한다. 모든 마무리 일격을 무조건 강화하는 효과가 아니며, 두 전문화의 대상 기술을 구분해야 한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122736,12 +122750,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -122764,14 +122780,14 @@
       "icon": "ability_priest_heavanlyvoice",
       "iconName": "ability_priest_heavanlyvoice",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선택받은 자의 유흥 (Chosen's Revelry)",
+      "description": "운명결속 동전을 던질 때 전투력의 30%에 해당하는 생명력을 회복하는 지속 영웅 특성이다. 최대 생명력 30%를 회복하는 버튼이나 파티 전체를 치유하는 효과로 설명하면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122785,12 +122801,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -122813,14 +122831,14 @@
       "icon": "ability_rogue_vigor",
       "iconName": "ability_rogue_vigor",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 필연으로의 질주 (Rush to the Inevitable)",
+      "description": "무법은 일반 동전마다 기력 2, 수직으로 선 동전에서는 기력 10을 회복한다. 암살은 각각 기력 5와 15다. 앞면과 뒷면의 피해 효과와는 별도의 자원 보상이며 전문화별 수치를 섞지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122834,12 +122852,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -122862,14 +122882,14 @@
       "icon": "inv_cosmicvoid_beam",
       "iconName": "inv_cosmicvoid_beam",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 얽힌 운명 (Fate Intertwined)",
+      "description": "무법은 폭풍의 칼날에 영향받는 적에게 공격 피해의 5%를 추가로 전달하고, 암살은 부식성 분사에 영향받는 적에게 자연 피해의 5%를 추가로 전달한다. 주 대상의 모든 피해가 상시 5% 증가하는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -122883,12 +122903,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -146082,14 +146104,14 @@
       "icon": "inv_misc_coin_02",
       "iconName": "inv_misc_coin_02",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 라벤홀트 박하 (Ravenholdt Mint)",
+      "description": "앞면이 주는 공격 피해 보너스를 추가로 4% 높이고 뒷면 동전이 주는 피해를 12% 높인다. 앞면·뒷면의 보상을 각각 강화하는 지속 특성이며 모든 공격을 무조건 16% 강화하는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146103,12 +146125,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -146131,14 +146155,14 @@
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
       "iconName": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 통제된 혼돈 (Controlled Chaos)",
+      "description": "동전 던지기로 4회 이상 이어진 같은 면 연속 기록이 끝나면, 방금 나온 면과 같은 동전을 한 번 더 던진다. 끊기기 전 면을 다시 뽑아 옛 연속 기록을 그대로 복구하는 효과로 설명하면 안 된다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146152,12 +146176,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -146438,14 +146464,14 @@
       "icon": "inv_misc_celestialmap",
       "iconName": "inv_misc_celestialmap",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 의외의 행운 (Sometimes Lucky)",
+      "description": "치명타 확률을 3% 높이는 지속 영웅 특성이다. 동전에서 직전과 같은 면이 나올 확률을 3% 높이거나 치명타 피해를 3% 올리는 효과가 아니며 별도 발동을 기다리는 조건도 없다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146459,12 +146485,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/10-도적/공용/Hero-Talents/운명의손"
+        ]
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {

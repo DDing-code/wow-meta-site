@@ -1,5 +1,11 @@
 # 12.1 update status
 
+### Shared Fatebound effect audit, 2026-09-21
+
+- Rechecked 17 Fatebound effects in Korean/English tooltips; preserved three already-reviewed notes and manually replaced 14 generic descriptions. Outlaw/Assassination differ in Overflowing Purse (4%/15%), Rush to the Inevitable (2/10 vs 5/15 Energy), Edge Case triggers and generator modifiers.
+- Rewrote common and Outlaw coin relationships, including Lucky Coin's count exclusion while active. Removed Controlled Chaos's reverse link to Trickster and Delivered Doom's unrelated Deathstalker link.
+- Regression scope is now 54 local Outlaw records, 18 shared Trickster records, 17 shared Fatebound records and ten relationships. This does not prove the complete manuscript, current build popularity, fresh log evidence or all common skills. Those remain unfinished; no production rollout in this batch.
+
 ### Shared Trickster and Outlaw Season 2 data, 2026-09-21
 
 - Replaced 18 shared Trickster placeholders using current Korean/English tooltips. Preserved Outlaw/Subtlety differences: Flawless Form 4%/2%, Nimble Flurry's distinct AoE effects, Cloud Cover's different cooldowns and additional stack limits, and Clever Combatant's Pistol Shot/Shuriken Storm split.
