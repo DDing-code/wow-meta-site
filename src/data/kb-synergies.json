@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T01:16:53.744Z",
+    "generatedAt": "2026-09-21T01:27:57.588Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13891,7 +13891,8 @@
     },
     "rogue_outlaw_generator_proc_loop": {
       "id": "rogue_outlaw_generator_proc_loop",
-      "name": "권총사격-사악한일격",
+      "name": "생성기와 기회 소비의 연결",
+      "description": "사악한 일격의 추가 공격으로 기회를 얻고, 강화된 권총 사격으로 연계 점수를 만든다. 잠들지 않는 칼날의 쿨다운 감소는 권총 사격 자체가 아니라 이후 마무리 일격에서 소비한 연계 점수로 발생한다.",
       "type": "synergy",
       "synergyType": "builder_proc_priority",
       "participants": [
@@ -13900,34 +13901,30 @@
         "279876",
         "196938",
         "381846",
-        "383281",
-        "8676",
-        "381845",
-        "14161",
-        "76806"
+        "2098",
+        "315341",
+        "79096"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
       "importance": 92,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/사악한일격",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/권총사격",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/매복",
+        "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/기회",
         "08-직업별-Knowledge-Base/10-도적/무법/Talents/속전속결",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/숨겨진기회",
-        "08-직업별-Knowledge-Base/10-도적/무법/Talents/배포"
+        "08-직업별-Knowledge-Base/10-도적/무법/Talents/빠른사격"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\무법\\Synergies\\권총사격-사악한일격.md",
@@ -14138,7 +14135,8 @@
     },
     "rogue_outlaw_blade_flurry_cleave": {
       "id": "rogue_outlaw_blade_flurry_cleave",
-      "name": "폭풍의칼날-속결",
+      "name": "폭풍의 칼날의 최초 피해와 복제 피해",
+      "description": "폭풍의 칼날은 최초 광역 피해와 지속 중 단일 공격 복제를 구분한다. 날렵한 몸놀림은 최초 피해·자원에, 춤추는 강철은 대상 수·지속 시간에, 대난투는 복제 비율에 작용한다. 질풍 칼날의 비주 대상 강화는 별도 효과다.",
       "type": "synergy",
       "synergyType": "cleave_gate",
       "participants": [
@@ -14146,26 +14144,24 @@
         "2098",
         "315341",
         "271877",
-        "51690",
         "381878",
         "272026",
         "1259469",
         "79096"
       ],
       "class": "Rogue",
-      "spec": "무법",
+      "spec": "Outlaw",
       "specs": [
         "Outlaw"
       ],
       "heroTalent": null,
       "importance": 90,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/폭풍의칼날",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/미간적중",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/질풍칼날",
-        "08-직업별-Knowledge-Base/10-도적/무법/Skills/광기의학살자",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/잠들지않는칼날"
       ],
       "linkedBuffs": [],

@@ -1,5 +1,12 @@
 # 12.1 update status
 
+### Outlaw generator and cleave audit, 2026-09-21
+
+- Added ten manually reviewed records and two rewritten relationships. Reviewed coverage is now 22 records and four relationships, not the whole specialization.
+- Resolved Sinister Strike's embedded 30%/30% Opportunity text against the dedicated talent and actual buff 195627: 50% cost reduction and 100% damage increase. Fan the Hammer's rank-one tooltip is not treated as the full two-rank build.
+- Separated Blade Flurry's initial damage and replication, Deft Maneuvers' 45-energy total, Dancing Steel's 13-second duration, Grand Melee's 36% replication and Blade Rush's separate non-primary-target modifier. Blade Rush is baseline one minute and restores 25 energy over five seconds.
+- Generator relationships now route cooldown reduction through combo points spent on finishers, not directly from Pistol Shot. The manuscript remains 12.0.5 pending remaining talent, hero and tier research; this batch is not a production guide rollout.
+
 ### Outlaw core-data audit started, 2026-09-21
 
 - Manually replaced 12 generic skill/talent descriptions with current effects; checked Fast Action, Preparation and three Gravedigger nodes against fixed 12.1 trait data. Online checks also caught Menacing Rush's Korean name: 위협적인 촉진, with its 20% generator/finisher modifier during Adrenaline Rush.
