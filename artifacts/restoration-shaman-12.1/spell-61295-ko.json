@@ -1,0 +1,51 @@
+{
+  "retrievedAt": "2026-09-21T16:31:38.192Z",
+  "url": "https://nether.wowhead.com/tooltip/spell/61295?dataEnv=1&locale=1",
+  "tooltip": {
+    "name": "성난 해일",
+    "icon": "spell_nature_riptide",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=61295/성난-해일\"><b class=\"whtt-name\">성난 해일</b></a><div class=\"q0\">특성</div><table width=\"100%\"><tr><td>1.52% (기본 마나 중)</td><th>40 야드 사정거리</th></tr></table><table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->6 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:6 초 재사용 대기시간--></th></tr></table><!--chargesText-->1회 사용 가능<!--chargesText--><!--baseCharges:1회 사용 가능--><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">복원의 힘이 담긴 물로 아군 대상을 씻어 생명력을 (주문력의 600%)만큼 회복시키고, 추가로 <!--sp381946:0-->18초<!--sp381946-->에 걸쳐 (주문력의 478.2%)만큼 회복시킵니다.<!--charges:108283:2회 사용 가능--><!--charges:333919:2회 사용 가능--><!--charges:443418:2회 사용 가능--><!--cooldown:1254251:5초 후 재사용 가능--></div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "<table><tr><td><table width=\"100%\"><tr><td><b class=\"q\">성난 해일</b></td><th class=\"q\"><b class=\"q\">마법</b></th></tr></table></td></tr></table><table><tr><td>3초마다 (주문력의 79.7%)의 생명력 회복<br><span class=\"q\">18 초 남음</span></td></tr></table>",
+    "quality": -1,
+    "spells": {
+      "108283": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "333919": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "381946": [
+        [
+          "18초",
+          "24초",
+          ""
+        ]
+      ],
+      "443418": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "1254251": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    "buffspells": {},
+    "completion_category": -2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "retrievedAt": "2026-09-21T16:31:38.202Z",
+  "url": "https://nether.wowhead.com/tooltip/spell/77472?dataEnv=1&locale=1",
+  "tooltip": {
+    "name": "치유의 물결",
+    "icon": "spell_nature_healingwavelesser",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=77472/치유의-물결\"><b class=\"whtt-name\">치유의 물결</b></a><table width=\"100%\"><tr><td>2.38% (기본 마나 중)</td><th>40 야드 사정거리</th></tr></table>2 초 주문 시전 시간<div class=\"wowhead-tooltip-requirements\">주술사 필요</div><span class=\"wowhead-tooltip-requirements\">요구 레벨 10</span><br /></td></tr></table><table><tr><td><div class=\"q\">효율적인 치유의 물결로 아군 대상의 생명력을 (주문력의 1501%)만큼 회복시킵니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": -12
+  }
+}

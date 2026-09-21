@@ -1,0 +1,15 @@
+{
+  "retrievedAt": "2026-09-21T16:31:38.172Z",
+  "url": "https://nether.wowhead.com/tooltip/spell/73920?dataEnv=1&locale=1",
+  "tooltip": {
+    "name": "치유의 비",
+    "icon": "spell_nature_giftofthewaterspirit",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=73920/치유의-비\"><b class=\"whtt-name\">치유의 비</b></a><div class=\"q0\">특성</div><table width=\"100%\"><tr><td>4.32% (기본 마나 중)</td><th>40 야드 사정거리</th></tr></table><table width=\"100%\"><tr><td>2 초 주문 시전 시간</td><th><!--cooldownText-->12 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:12 초 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">주술사 필요</div></td></tr></table><table><tr><td><div class=\"q\">대상 지역에 치유의 비를 내려 18초에 걸쳐 최대 6명의 아군 생명력을 [(주문력의 108%) * 6 * 2 / 5.19999981]만큼 회복시킵니다.<br /><br />치유의 비는 한 번에 하나만 활성화할 수 있습니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "<table><tr><td><b class=\"q\">치유의 비</b></td></tr></table><table><tr><td>치유의 비가 내리는 중<br />[받는 마법 피해 0%만큼 감소]<br><span class=\"q\">18 초 남음</span></td></tr></table>",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": -2
+  }
+}

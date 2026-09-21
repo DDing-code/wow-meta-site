@@ -1,0 +1,15 @@
+{
+  "retrievedAt": "2026-09-21T16:31:38.183Z",
+  "url": "https://nether.wowhead.com/tooltip/spell/73685?dataEnv=1&locale=1",
+  "tooltip": {
+    "name": "생명 폭발",
+    "icon": "spell_shaman_unleashweapon_life",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=73685/생명-폭발\"><b class=\"whtt-name\">생명 폭발</b></a><table width=\"100%\"><tr><td>0.8% (기본 마나 중)</td><th>40 야드 사정거리</th></tr></table><table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->20 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:20 초 재사용 대기시간--></th></tr></table><!--chargesText-->1회 사용 가능<!--chargesText--><!--baseCharges:1회 사용 가능--><div class=\"wowhead-tooltip-requirements\">주술사 필요</div><span class=\"wowhead-tooltip-requirements\">요구 레벨 15</span><br /></td></tr></table><table><tr><td><div class=\"q\">생명의 정기를 방출해 아군 대상을 (주문력의 1220%)만큼 치유합니다.<br /><br />다음 성난 해일, 연쇄 치유 또는 치유의 물결의 치유량이 25%만큼 증가하며, 시전 시간은 30%만큼 감소합니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "<table><tr><td><b class=\"q\">생명 폭발</b></td></tr></table><table><tr><td>다음 성난 해일, 연쇄 치유 또는 치유의 물결의 치유량 25%만큼 증가<br />시전 시간 30%만큼 감소<br><span class=\"q\">10 초 남음</span></td></tr></table>",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": 0
+  }
+}
