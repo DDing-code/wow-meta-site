@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Construction } from 'lucide-react';
 import { guideManuscripts } from '../data/guideManuscripts.js';
 import { getGuidePublication } from '../data/guideUpdates.js';
 import SpecializationIcon from '../components/SpecializationIcon.js';
@@ -148,6 +148,7 @@ const Grid = styled.div`
 `;
 
 const SpecCard = styled(Link)`
+  position: relative;
   min-width: 0;
   min-height: 80px;
   display: grid;
@@ -156,7 +157,18 @@ const SpecCard = styled(Link)`
   padding: 12px 10px;
   border-bottom: 1px solid rgba(168, 178, 188, 0.11);
   border-left: 2px solid transparent;
-  background: transparent;
+  background: ${props => props.$partial ? 'rgba(226, 180, 91, 0.045)' : 'transparent'};
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 3px;
+    pointer-events: none;
+    background: ${props => props.$partial
+      ? 'repeating-linear-gradient(135deg, #b99550 0 5px, transparent 5px 10px)'
+      : 'none'};
+  }
 
   &:hover {
     border-left-color: ${props => props.$color};
@@ -214,6 +226,16 @@ const Meta = styled.div`
   span {
     white-space: nowrap;
   }
+`;
+
+const WorkStatus = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #e6c583;
+  font-size: 0.72rem;
+  font-weight: 650;
+  svg { flex-shrink: 0; }
 `;
 
 function GuidePage() {
@@ -274,8 +296,10 @@ function GuidePage() {
             {group.name}
           </ClassTitle>
           <Grid>
-            {group.specs.map(item => (
-              <SpecCard key={item.id} to={item.path} $color={item.color} $tone={`${item.color}18`}>
+            {group.specs.map(item => {
+              const publication = getGuidePublication(item.id, guideManuscripts[item.id]);
+              return (
+              <SpecCard key={item.id} to={item.path} $color={item.color} $tone={`${item.color}18`} $partial={publication.partial}>
                 <SpecTop>
                   <SpecName>
                     <SpecializationIcon $specId={item.id} />
@@ -287,10 +311,15 @@ function GuidePage() {
                 </SpecTop>
                 <Meta>
                   <span>{item.roleLabel}</span>
-                  <span title={getGuidePublication(item.id, guideManuscripts[item.id]).detail}>{getGuidePublication(item.id, guideManuscripts[item.id]).label}</span>
+                  {publication.partial ? (
+                    <WorkStatus title={publication.detail}>
+                      <Construction size={13} aria-hidden="true" />12.1 공사 중
+                    </WorkStatus>
+                  ) : <span title={publication.detail}>{publication.label}</span>}
                 </Meta>
               </SpecCard>
-            ))}
+              );
+            })}
           </Grid>
         </ClassSection>
       ))}

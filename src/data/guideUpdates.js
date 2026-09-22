@@ -57,6 +57,7 @@ export function getGuidePublication(id, manuscript) {
   const status = (manuscript?.status || '').replace(/^12\.1\s*/, '');
   const partial = update?.partial && patch !== '12.1';
   return {
+    partial: Boolean(partial),
     label: partial ? '12.1 전환 중' : patch,
     detail: partial ? `12.1 부분 반영 · 기존 원고 ${patch}` : `${patch}${status ? ` · ${status}` : ''}`,
     date: update?.date || null,

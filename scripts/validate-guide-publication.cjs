@@ -26,8 +26,12 @@ for (const id of ids) {
   const manuscript = guideManuscripts[id];
   const publication = getGuidePublication(id, manuscript);
   assert.ok(publication.date && publication.commit, `Missing Git publication for ${id}`);
-  if (manuscript.patch === '12.1') assert.equal(publication.label, '12.1');
+  if (manuscript.patch === '12.1') {
+    assert.equal(publication.label, '12.1');
+    assert.equal(publication.partial, false);
+  }
   else {
+    assert.equal(publication.partial, true);
     assert.equal(publication.label, '12.1 전환 중');
     assert.ok(publication.detail.includes(manuscript.patch));
   }
