@@ -102,6 +102,21 @@ const Tabs = styled.div`
   border-bottom: 1px solid rgba(168, 178, 188, 0.14);
 `;
 
+const TransitionNotice = styled.p`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -18px 0 30px;
+  padding: 9px 12px;
+  border-left: 3px solid #d2b373;
+  background: rgba(210, 179, 115, 0.08);
+  color: #c9c3b5;
+  font-size: 0.78rem;
+  line-height: 1.5;
+
+  svg { flex: 0 0 auto; color: #e6c583; }
+`;
+
 const Tab = styled.button`
   min-height: 44px;
   padding: 2px 0 0;
@@ -156,17 +171,17 @@ const SpecCard = styled(Link)`
   gap: 6px;
   padding: 12px 10px;
   border-bottom: 1px solid rgba(168, 178, 188, 0.11);
-  border-left: 2px solid transparent;
-  background: ${props => props.$partial ? 'rgba(226, 180, 91, 0.045)' : 'transparent'};
+  border-left: ${props => props.$partial ? '3px solid #d2b373' : '3px solid transparent'};
+  background: ${props => props.$partial ? 'rgba(226, 180, 91, 0.075)' : 'transparent'};
 
   &::after {
     content: '';
     position: absolute;
     inset: auto 0 0;
-    height: 3px;
+    height: 4px;
     pointer-events: none;
     background: ${props => props.$partial
-      ? 'repeating-linear-gradient(135deg, #b99550 0 5px, transparent 5px 10px)'
+      ? 'repeating-linear-gradient(135deg, #b99550 0 7px, transparent 7px 14px)'
       : 'none'};
   }
 
@@ -231,10 +246,15 @@ const Meta = styled.div`
 const WorkStatus = styled.span`
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  color: #e6c583;
+  gap: 5px;
+  padding: 3px 6px;
+  border: 1px solid rgba(230, 197, 131, 0.5);
+  border-radius: 2px;
+  background: rgba(210, 179, 115, 0.12);
+  color: #f0d7a1;
   font-size: 0.72rem;
-  font-weight: 650;
+  font-weight: 700;
+  white-space: nowrap;
   svg { flex-shrink: 0; }
 `;
 
@@ -247,6 +267,9 @@ function GuidePage() {
 
   const grouped = useMemo(() => getGroupedGuideSpecs(visibleSpecs), [visibleSpecs]);
   const allSpecs = useMemo(() => getAllGuideSpecs(), []);
+  const transitioningCount = allSpecs.filter(item =>
+    getGuidePublication(item.id, guideManuscripts[item.id]).partial
+  ).length;
 
   return (
     <Page>
@@ -289,6 +312,13 @@ function GuidePage() {
         ))}
       </Tabs>
 
+      {transitioningCount > 0 && (
+        <TransitionNotice>
+          <Construction size={15} aria-hidden="true" />
+          공사 중 표시가 있는 {transitioningCount}개 가이드는 12.1 전환 중이며, 이전 패치 내용이 남아 있습니다.
+        </TransitionNotice>
+      )}
+
       {grouped.map(group => (
         <ClassSection key={group.name} aria-label={`${group.name} 가이드`}>
           <ClassTitle $color={group.color}>
@@ -312,7 +342,7 @@ function GuidePage() {
                 <Meta>
                   <span>{item.roleLabel}</span>
                   {publication.partial ? (
-                    <WorkStatus title={publication.detail}>
+                    <WorkStatus title={publication.detail} aria-label={publication.detail}>
                       <Construction size={13} aria-hidden="true" />12.1 공사 중
                     </WorkStatus>
                   ) : <span title={publication.detail}>{publication.label}</span>}

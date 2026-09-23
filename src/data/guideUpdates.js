@@ -59,7 +59,7 @@ export function getGuidePublication(id, manuscript) {
   return {
     partial: Boolean(partial),
     label: partial ? '12.1 전환 중' : patch,
-    detail: partial ? `12.1 부분 반영 · 기존 원고 ${patch}` : `${patch}${status ? ` · ${status}` : ''}`,
+    detail: partial ? `12.1 전환 중 · ${patch} 내용 포함` : `${patch}${status ? ` · ${status}` : ''}`,
     date: update?.date || null,
     commit: update?.commits[0] || null,
   };
