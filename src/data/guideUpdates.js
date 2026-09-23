@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 가이드·시즌 2 세트 검수', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['9734fba9'],
+    body: '복원 가이드의 12.1 패치 표기와 KB 동기화 범위를 맞췄습니다. 치유의 비·성난 해일 등 공식 변경폭과 시즌 2 2·4세트의 한국어 툴팁 효과를 대조하고, 추가 치유의 비 위치와 보호막 대상을 구분했습니다. 최신 로그의 영웅 특성 선택률과 보스별 유효 치유·흡수량은 아직 검수 중입니다.' },
   { date: '2026-09-23', title: '혈기 죽음의 기사 12.1 생존 특성·산레인 후속 조정', partial: true,
     guideIds: ['deathknight-blood'], commits: ['1302c2ab'],
     body: '피의 희열·탐식·신속한 부패·흡혈의 구를 현재 한국어 툴팁으로 KB와 스펠 DB에 추가하고 발동·치유·보호막 조건을 가이드와 연결했습니다. 산레인 원초적 본능의 힘은 Blizzard의 후속 조정에 맞춰 혈기 힘 6%로 교정했습니다. 수혈의 공식 조정 수치와 툴팁 불일치, 나머지 특성·최신 로그는 계속 검수 중입니다.' },
