@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T02:56:21.773Z",
+    "generatedAt": "2026-09-23T03:13:26.442Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2960,
-    "rawTotalSkills": 2960,
+    "totalSkills": 2961,
+    "rawTotalSkills": 2961,
     "duplicateIds": [],
     "totalSynergies": 600,
     "stats": {
-      "total": 2960,
+      "total": 2961,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
         "skill": 126,
-        "talent": 996,
+        "talent": 997,
         "spec-talent": 384,
         "passive": 78,
         "hero-tree": 2,
@@ -32,7 +32,7 @@
       "byClass": {
         "DeathKnight": 111,
         "DemonHunter": 148,
-        "Druid": 214,
+        "Druid": 215,
         "Evoker": 140,
         "Hunter": 225,
         "Mage": 229,
@@ -57,7 +57,7 @@
         "Druid-수호": 41,
         "Druid-야성": 51,
         "Druid-조화": 37,
-        "Druid-회복": 31,
+        "Druid-회복": 32,
         "Evoker-공용": 42,
         "Evoker-보존": 28,
         "Evoker-증강": 42,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2877,
-        "withSynergies": 2023,
+        "withWikilinks": 2878,
+        "withSynergies": 2024,
         "avgLinkDensity": "0.039"
       }
     }
@@ -10406,15 +10406,16 @@
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/상록숲",
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/광합성",
           "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/생명의바느질",
           "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/싹틔우기"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 5,
-        "linkDensity": 0.047,
+        "wikilinkCount": 8,
+        "synergyCount": 6,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -21051,10 +21052,10 @@
       "castTime": "1.5초",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 생기 충전 (Vivify)",
+      "description": "운무의 핵심 직접 치유 주문이다. 2026-09-22 PvE 핫픽스로 운무 전체 치유량이 5% 증가했고 생기 충전 치유량은 별도로 15% 증가했다. 두 수치를 하나의 20% 가산 효과로 계산하지 않는다. 소생의 안개가 퍼진 대상 수가 많을수록 광역 회복 가치가 커지며, 단일 대상에는 포용의 안개와 함께 사용한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21076,7 +21077,7 @@
       "quality": {
         "wikilinkCount": 9,
         "synergyCount": 2,
-        "linkDensity": 0.102,
+        "linkDensity": 0.08,
         "hasWikilinks": true
       },
       "source": {
@@ -41640,6 +41641,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Skills\\야성의광기.md",
+        "lastUpdate": ""
+      }
+    },
+    "274902": {
+      "id": "274902",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "광합성",
+      "koreanName": "광합성",
+      "englishName": "Photosynthesis",
+      "icon": "spell_lifegivingseed",
+      "iconName": "spell_lifegivingseed",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "자신의 피어나는 생명이 부여된 대상에게 주기적인 치유가 발동하면 8% 확률로 피어나는 생명의 치유 효과가 추가로 발동하는 지속 효과다. 2026-09-22 핫픽스는 다른 플레이어의 지속 치유 효과로 광합성이 발동하던 오류를 수정했다. 다른 치유사의 HoT를 자신의 광합성 발동원으로 계산하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_lifegivingseed.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_lifegivingseed.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_lifegivingseed.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_lifegivingseed.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_lifegivingseed.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/피어나는생명"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Talents/싹틔우기"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Talents\\광합성.md",
         "lastUpdate": ""
       }
     },
@@ -73839,10 +73892,10 @@
       "castTime": "시전",
       "resourceCost": "기본 마나",
       "range": "40야드",
-      "description": "# 셰이룬의 선물 (Sheilun's Gift)",
+      "description": "셰이룬의 선물은 운무 수도사의 저장형 회복 주문이다. 전투 중 쌓인 구름을 큰 피해 파동에 맞춰 방출해 단일 또는 광역 복구를 보강한다. 2026-09-22 PvE 핫픽스에서 운무 전체 치유량이 5%, 셰이룬의 선물 치유량이 별도로 15% 증가했다. 두 수치를 단순히 더하지 않는다. 시전 횟수만큼 실제로 다친 대상과 방출 시점도 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73869,7 +73922,7 @@
       "quality": {
         "wikilinkCount": 8,
         "synergyCount": 4,
-        "linkDensity": 0.071,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
