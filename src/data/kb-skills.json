@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2879,
-        "withSynergies": 2047,
+        "withSynergies": 2055,
         "avgLinkDensity": "0.039"
       }
     }
@@ -64062,10 +64062,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "불안정한 정신은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 불안정한 정신 특성 전사 필요 분노 칼날폭풍으로 피해를 2회 입힐 때마다 자동으로 대상 또는 주위의 무작위 적에게 피의 갈증|1을;를; 시전해 일반 공격력의 100%에 해당하는 피해를 입힙니다. 무기 칼날폭풍으로 피해를 2회 입힐 때마다 자동으로 대상 또는 주위의 무작위 적에게 필사의 일격|1을;를; 시전해 일반 공격력의 100%에 ",
+      "description": "학살자 칼날폭풍의 피해 적중 2회마다 후속 기술을 자동 시전한다. 분노 전사는 대상 또는 주변 무작위 적에게 피의 갈증을, 무기 전사는 필사의 일격을 사용하며 각각 일반 공격력의 100% 피해를 준다. 플레이어가 칼날폭풍 도중 별도 행동으로 해당 기술을 누른 횟수와 이 자동 시전을 합쳐 세지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64077,14 +64077,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_spectralsight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 6,
+        "synergyCount": 2,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -86801,10 +86804,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "태산부동은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 태산부동 특성 전사 필요 체력이 5%만큼 증가합니다. [ 예견된 승리 / 연전연승]|1이;가; 5초 동안 최대 생명력을 10%만큼 증가시킵니다. 이 생명력 증가 효과가 만료되면 앞서 [ 예견된 승리 / 연전연승]|1을;를; 사용했을 때 최대 생명력을 초과한 치유량만큼 생명력을 회복합니다.",
+      "description": "산왕의 생존 특성이다. 최대 생명력이 상시 5% 증가한다. 예견된 승리 또는 연전연승을 사용하면 5초 동안 최대 생명력이 추가로 10% 증가하고, 이 효과가 끝날 때 해당 기술 사용으로 최대 생명력을 초과했던 치유량만큼 회복한다. 일시적인 최대 생명력 증가와 효과 종료 시 회복을 한 번의 즉시 치유로 합쳐 계산하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86823,7 +86826,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -87059,10 +87062,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "토림의 힘은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 토림의 힘 특성 전사 필요 방어 벼락이 3의 분노를 생성합니다. 복수 및 마무리 일격의 공격력이 25%만큼 증가합니다. 분노 벼락이 3의 분노를 생성합니다. 분노의 강타 및 마무리 일격의 공격력이 25%만큼 증가합니다.",
+      "description": "벼락이 분노 3을 생성한다. 분노 전사에서는 분노의 강타와 마무리 일격 피해가 각각 25% 증가하며, 방어 전사에서는 복수와 마무리 일격 피해가 각각 25% 증가한다. 같은 이름의 마무리 일격이라도 분노의 주문 ID는 `5308`, 방어의 주문 ID는 `163201`이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87074,14 +87077,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_mountainthanewarrior_thorimsmight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/마무리-일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -87108,10 +87114,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "폭풍망치은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭풍망치 특성 전사 필요 폭풍망치가 추가로 2명의 주위 대상에게 적중하고 2초 동안 기절시키지만 재사용 대기시간이 10초만큼 증가합니다.",
+      "description": "산왕 영웅 특성 `436162`로, 같은 이름의 전사 제어 기술 폭풍망치를 강화한다. 폭풍망치가 주변 대상 2명에게 추가로 적중해 2초 동안 기절시키는 대신 기본 기술의 쿨다운이 10초 늘어난다. 새 공격 버튼이나 벼락 발동 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87130,7 +87136,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -87157,10 +87163,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "모여드는 구름은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 모여드는 구름 특성 전사 필요 공격 시 벼락이 30%만큼 더 자주 발동됩니다.",
+      "description": "공격으로 인한 벼락 발동 빈도를 30% 높인다. 벼락의 기본 발동 확률이 30%가 된다는 뜻이 아니며, 우레 작렬 중첩을 직접 지급하는 특성도 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87179,7 +87185,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -87413,10 +87419,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "태산의 힘은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 태산의 힘 특성 전사 필요 방어 방패 밀쳐내기의 공격력이 15%만큼 증가합니다. 사기의 외침이 적에게 받는 피해를 추가로 5%만큼 감소시킵니다. 분노 방패 밀쳐내기의 공격력이 15%만큼 증가합니다. 피의 갈증 및 광란의 공격력이 25%만큼 증가합니다.",
+      "description": "전문화별 효과를 나누어 읽는다. 분노 전사에서는 피의 갈증과 광란 피해가 각각 25% 증가한다. 방어 전사에서는 방패 밀쳐내기 피해가 15% 증가하고, 사기의 외침이 해당 적에게 받는 피해를 추가로 5% 줄인다. 분노 전사의 광란 강화와 방어 전사의 사기의 외침 피해 감소를 서로 바꿔 적용하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87428,14 +87434,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_titansgrip.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -87462,10 +87471,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "번뜩이는 하늘은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 번뜩이는 하늘 특성 전사 필요 우레 작렬이 적중당한 적에게 벼락을 떨어뜨립니다.",
+      "description": "우레 작렬에 적중한 적에게 벼락을 떨어뜨리는 산왕 특성이다. 우레 작렬이 적중했는지가 조건이며, 우레 작렬 중첩만 보유한 채 사용하지 않았으면 이 경로의 벼락이 발생하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87479,12 +87488,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/우레-작렬"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -87511,10 +87522,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "폭발적인 힘은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭발적인 힘 특성 전사 필요 방어 벼락이 15%의 확률로 다음 2회의 방패 밀쳐내기|1이;가; 재사용 대기시간을 발동시키지 않게 합니다. 분노 벼락이 15%의 확률로 다음 2회의 피의 갈증|1이;가; 재사용 대기시간을 발동시키지 않게 합니다. 또한 35%의 추가 피해를 입히고 2의 분노를 추가로 생성합니다. (효과 발동 ",
+      "description": "벼락이 15% 확률로 다음 2회의 주요 기술을 쿨다운 없이 사용하게 한다. 분노 전사에서는 피의 갈증 2회에 적용되며, 툴팁은 35% 추가 피해와 분노 2 추가 생성도 명시한다. 방어 전사에서는 다음 방패 밀쳐내기 2회에 적용된다. 상시 피의 갈증 또는 방패 밀쳐내기 강화가 아니라 벼락 발동 조건부다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87526,14 +87537,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/shaman_pvp_thundercharge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -87714,10 +87728,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "굳건한 자세은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 굳건한 자세 특성 전사 필요 받는 물리 피해가 2%만큼 감소합니다. 우레 작렬이 5초 동안 받는 피해를 8%만큼 감소시킵니다. (100밀리초 재사용 대기시간)",
+      "description": "받는 물리 피해가 상시 2% 감소한다. 우레 작렬을 사용하면 5초 동안 받는 피해가 추가로 8% 감소한다. 상시 물리 피해 감소와 우레 작렬 후 짧은 피해 감소를 구분해야 한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87731,12 +87745,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/우레-작렬"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -87763,10 +87779,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "폭풍 방패은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭풍 방패 특성 전사 필요 가로막기 사용 시 대상에게 5초 동안 피해 흡수 보호막을 부여합니다. 피해 흡수 보호막은 자신의 방어도의 3배에 해당하는 마법 피해를 흡수합니다.",
+      "description": "가로막기를 사용하면 대상에게 5초 동안 마법 피해 흡수 보호막을 부여한다. 흡수량은 자신의 방어도의 3배다. 물리 피해에도 적용되는 범용 보호막이나 전투원 모두에게 적용되는 공격대 보호막이 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87785,7 +87801,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -94155,10 +94171,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "용맹한 후속타은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 용맹한 후속타 특성 전사 필요 분노 피의 갈증|1이;가; 치명타 및 극대화로 적중하면 다음 피의 갈증의 공격력이 20%만큼 증가합니다. 무기 필사의 일격|1이;가; 치명타 및 극대화로 적중하면 다음 필사의 일격의 공격력이 20%만큼 증가합니다.",
+      "description": "분노 전사는 피의 갈증이 치명타로 적중하면 다음 피의 갈증 피해가 20% 증가한다. 무기 전사는 필사의 일격이 치명타로 적중하면 다음 필사의 일격 피해가 20% 증가한다. 모든 공격의 치명타 확률을 높이는 효과가 아니라, 해당 기술의 치명타 뒤 이어지는 같은 기술 1회의 보상이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94170,14 +94186,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_butcher2.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -94353,10 +94372,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흉포한 민첩성은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 흉포한 민첩성 특성 전사 필요 영웅의 도약 사용 시 돌진의 재사용 대기시간이 5초만큼 감소하고, 돌진 사용 시 영웅의 도약의 재사용 대기시간이 2초만큼 감소합니다.",
+      "description": "영웅의 도약을 사용하면 돌진의 쿨다운이 5초 줄고, 돌진을 사용하면 영웅의 도약의 쿨다운이 2초 줄어든다. 이동기 두 개의 쿨다운을 서로 줄이는 효과이며, 한 기술 사용만으로 둘 다 즉시 재사용 가능해지는 것은 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94368,14 +94387,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_paladin_speedoflight.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/돌진"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -95810,10 +95831,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "잔혹한 마무리은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 잔혹한 마무리 특성 전사 필요 분노 칼날폭풍이 끝난 후에 사용하는 다음 광란의 공격력이 50%만큼 증가합니다. 무기 칼날폭풍이 끝난 후에 사용하는 다음 필사의 일격의 공격력이 50%만큼 증가합니다.",
+      "description": "칼날폭풍이 끝난 뒤 다음 핵심 기술 한 번의 피해가 50% 증가한다. 분노 전사는 다음 광란, 무기 전사는 다음 필사의 일격에 적용된다. 칼날폭풍 자체가 50% 강해지는 효과나 모든 후속 기술에 계속 남는 상시 강화가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95825,14 +95846,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_warrior.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 7,
+        "synergyCount": 3,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -104796,10 +104821,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "일격 유도은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 일격 유도 특성 전사 필요 분노 무모한 희생 활성화 시 우레 작렬이 1회 충전됩니다. 방어 사기의 외침 활성화 시 우레 작렬이 1회 충전됩니다. (100밀리초 재사용 대기시간)",
+      "description": "주요 쿨기 활성화와 우레 작렬을 연결한다. 분노 전사는 무모한 희생이 활성화될 때, 방어 전사는 사기의 외침이 활성화될 때 우레 작렬 1중첩을 얻는다. 두 쿨기를 모두 사용할 수 있다는 뜻이 아니며, 전문화별 방아쇠가 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -104811,14 +104836,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_thunderking_thunderstruck.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -140285,10 +140312,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "전도력은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전도력 특성 전사 필요 벼락의 공격력이 10%만큼, 치명타 및 극대화 피해가 10%만큼 증가합니다.",
+      "description": "벼락의 일반 피해와 치명타 및 극대화 피해를 각각 10% 늘린다. 벼락의 발동률이나 치명타 확률이 10% 증가하는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140307,7 +140334,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -140334,10 +140361,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "전기 축적은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 전기 축적 특성 전사 필요 투신의 지속시간 동안 우레 작렬이 투신의 지속시간을 2.0초만큼 증가시킵니다.",
+      "description": "투신이 활성화된 동안 우레 작렬을 사용하면 투신 지속시간이 2초 늘어난다. 투신을 시작할 때 자동으로 2초 연장되는 효과가 아니며, 우레 작렬 중첩을 보유만 해도 연장되는 효과도 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140351,12 +140378,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/폭풍의-화신",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/우레-작렬"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
