@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '방어 전사 12.1 시즌 2 교정', partial: true,
+    guideIds: ['warrior-protection'], commits: ['8891a8be'],
+    body: '무료 복수 발동과 2·4세트 효과를 정본 KB·스펠 DB·가이드에 연결했습니다. 단일 대상 거신, 광역 산왕의 조건을 구분하고 6월 선택률은 과거 로그로 표시했습니다. 전체 원고 검수는 계속 진행 중입니다.' },
   { date: '2026-09-22', title: '전사 12.1 데이터 교정', partial: true,
     guideIds: ['warrior-arms', 'warrior-fury', 'warrior-protection'],
     commits: ['c1438b36', '3fcf2f89', '6fd0dcc5', '434f64b0'],
