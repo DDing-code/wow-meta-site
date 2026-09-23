@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '혈기 죽음의 기사 한밤의 춤 12.1 단계별 검수', partial: true,
+    guideIds: ['deathknight-blood'], commits: ['39da86fb'],
+    body: '한밤의 춤 첫 단계 무료 심장 강타, 중간 단계 활성 룬 무기당 공격·방어 강화, 마지막 단계 룬 소비 시 추가 무기를 각각 KB·스펠 DB·시너지 그래프로 분리했습니다. 공식 12.1 변경의 무기당 피해 감소 6%와 한국어 툴팁의 동적 0% 표시를 구분하고, 본문 툴팁은 기본 단계 ID에 연결했습니다. 나머지 특성·최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '혈기 죽음의 기사 12.1 기본 기술·특성 교정', partial: true,
     guideIds: ['deathknight-blood'], commits: ['a22c2d5d'],
     body: '혈기 기술·특성 11개와 시너지 연결을 현행 한국어 툴팁으로 대조했습니다. 치명적인 접촉을 죽음의 마수 원거리 효과로 잘못 연결하던 노트를 분리하고, 핏빛 안개·유혈의 폭발의 실제 발동 조건과 12.1 회복 수치를 KB·DB·가이드에 반영했습니다. 나머지 영웅 특성·최신 로그 검수는 진행 중입니다.' },
