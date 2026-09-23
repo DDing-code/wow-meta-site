@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '방어 전사 12.1 방어기·빌드 근거 교정', partial: true,
+    guideIds: ['warrior-protection'], commits: ['4dadbce2'],
+    body: '방패의 벽과 수호자의 아이기스의 기본·선택 효과를 KB·스펠 DB·가이드에서 분리했습니다. 정본 현재 빌드와 연결 그래프에는 시즌 2 무료 복수와 9월 산왕 핫픽스를 반영하고, 6월 선택률을 현행 추천 근거에서 제외했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 치유 쿨기 선택·연계 교정', partial: true,
     guideIds: ['shaman-restoration'], commits: ['4f64fb12'],
     body: '치유의 해일 토템과 승천의 선택 기준을 직접 시전 가능 여부와 이동 구간으로 나눴습니다. 갈라지는 지류·활발한 토템·원시 촉매의 조건부 효과를 정본 KB, 스펠·연결 DB, 가이드에 반영했습니다. 전체 세트·로그 검수는 진행 중입니다.' },
