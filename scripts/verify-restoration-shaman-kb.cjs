@@ -146,3 +146,23 @@ for (const id of ['1279819', '355630']) {
   assert(synergies.synergies.shaman_common_astral_shift_earth_elemental_defense.participants.includes(id));
 }
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
+for (const id of [443418,443423,443425,443441,443442,443444,443445,443446,
+  443447,443448,443449,443451,443454,1270446,1270447,1270450]) {
+  assert.equal(skills[id].patch, '12.1', `Farseer talent ${id} must be current`);
+  assert.doesNotMatch(skills[id].description, /선견자 영웅 특성은 선조를 소환해/);
+}
+assert.equal(skills[443454].castTime, '즉시');
+assert.equal(skills[443454].cooldown, '30초');
+assert.match(skills[443454].description, /자연의 신속함.*대체.*8초/);
+assert.match(skills[443445].description, /정기.*8%.*복원.*15%/);
+assert.match(skills[443447].description, /정기.*25%.*복원.*25%/);
+assert.match(skills[443451].description, /복원.*2초.*정기.*3초/);
+assert.match(skills[443441].description, /대지의 보호막.*3회.*25%/);
+assert.match(skills[443449].description, /선조.*25%/);
+assert.match(skills[443446].description, /떠날 때.*수력방울.*15초.*정기 작렬/);
+const farseer = synergies.synergies.shaman_hero_farseer_ancestor_common_hub;
+assert.equal(farseer.patch, '12.1');
+assert(farseer.participants.includes('443454'));
+assert(farseer.participants.includes('443441'));
+assert(!farseer.participants.includes('2008'), 'Resurrection must not be a Farseer synergy node');
+console.log('Shared Farseer 12.1 effects and active ability verified.');

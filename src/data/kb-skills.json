@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:22:49.184Z",
+    "generatedAt": "2026-09-23T04:37:49.092Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -92182,14 +92182,14 @@
       "icon": "ability_shaman_echooftheelements",
       "iconName": "ability_shaman_echooftheelements",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정기의 반향 (Elemental Reverb)",
+      "description": "정기는 용암 폭발 충전이 1회 늘고 피해가 10% 증가한다. 복원도 용암 폭발 충전과 피해가 각각 1회·10% 늘며, 추가로 성난 해일 충전이 1회 늘고 치유량이 20% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92208,7 +92208,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -92284,14 +92284,14 @@
       "icon": "spell_shaman_astralshift",
       "iconName": "spell_shaman_astralshift",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고대의 결속 (Ancient Fellowship)",
+      "description": "선조가 떠날 때 20% 확률로 새 선조를 8초 동안 소환한다. 기존 선조의 지속시간을 늘리는 효과가 아니라, 만료 시 추가 소환을 시도하는 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92305,12 +92305,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/잔류하는지혜"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -92333,14 +92335,14 @@
       "icon": "spell_shaman_spiritwalkersgrace",
       "iconName": "spell_shaman_spiritwalkersgrace",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼나그네의 여세 (Spiritwalker's Momentum)",
+      "description": "시전 시간이 있는 주문을 사용할 때 영혼나그네의 은총과 영혼나그네의 보호 지속시간이 1초씩, 최대 4초 연장된다. 선조의 지속시간을 늘리는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92359,7 +92361,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -92382,14 +92384,14 @@
       "icon": "spell_nature_skinofearth",
       "iconName": "spell_nature_skinofearth",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 토석인의 교감 (Earthen Communion)",
+      "description": "대지의 보호막 충전이 3회 늘고 보호막의 치유량이 25% 증가한다. 선조의 지속시간이나 선조 주문을 강화하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92403,12 +92405,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/자연친화"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -92431,14 +92435,14 @@
       "icon": "spell_nature_natureguardian",
       "iconName": "spell_nature_natureguardian",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연 친화 (Natural Harmony)",
+      "description": "자연의 수호자의 재사용 대기시간이 15초 줄고, 발동 시 최대 생명력의 10%를 추가로 회복한다. 선조 소환이 아니라 자신의 자동 생존기 보강이다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92452,12 +92456,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/토석인의교감"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -92480,14 +92486,14 @@
       "icon": "spell_unused2",
       "iconName": "spell_unused2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내 부름에 응하라 (Heed My Call)",
+      "description": "소환된 선조의 지속시간이 4초 증가한다. 선조를 새로 소환하거나 선조 주문의 위력을 직접 높이지는 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92501,12 +92507,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/일상적인교감"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -92529,14 +92537,14 @@
       "icon": "spell_nature_undyingstrength",
       "iconName": "spell_nature_undyingstrength",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 일상적인 교감 (Routine Communication)",
+      "description": "정기는 번개 화살·용암 폭발·화염 충격·전격의 불길·연쇄 번개 시전 시 8% 확률로, 복원은 성난 해일 시전 시 15% 확률로 선조를 8초 동안 소환한다. 모든 주문이 같은 확률로 발동하는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92550,12 +92558,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/내부름에응하라"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -92578,14 +92588,14 @@
       "icon": "spell_shaman_ancestralawakening",
       "iconName": "spell_shaman_ancestralawakening",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 최후의 부름 (Final Calling)",
+      "description": "선조가 떠날 때 복원은 근처 부상당한 아군에게 수력방울을 시전한다. 수력방울의 피해 흡수 보호막은 15초 동안 유지되며 시간이 흐르면서 흡수량이 감소한다. 정기는 선조가 떠날 때 근처 적에게 정기 작렬을 시전한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92604,7 +92614,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -92627,14 +92637,14 @@
       "icon": "spell_shadow_soulleech_2",
       "iconName": "spell_shadow_soulleech_2",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 소용돌이의 우월성 (Maelstrom Supremacy)",
+      "description": "정기는 대지 충격·정기 작렬·지진의 피해와 치유의 파도·연쇄 치유의 치유량이 각각 25% 증가한다. 복원은 치유의 물결·폭우·연쇄 치유의 치유량이 25% 증가한다. 모든 주문이나 선조 주문에 적용되는 일괄 25% 보너스가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92653,7 +92663,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -92676,14 +92686,14 @@
       "icon": "ability_monk_chiswirl",
       "iconName": "ability_monk_chiswirl",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태고의 역량 (Primordial Capacity)",
+      "description": "복원은 최대 마나가 10% 증가하고 굽이치는 물결 중첩 상한이 3으로 늘어난다. 정기는 최대 소용돌이 보유량이 25 증가한다. 정기의 최대 마나나 복원의 소용돌이 상한을 올리는 특성이 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92702,7 +92712,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -92725,14 +92735,14 @@
       "icon": "spell_holy_spiritualguidence",
       "iconName": "spell_holy_spiritualguidence",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 잔류하는 지혜 (Latent Wisdom)",
+      "description": "선조가 시전하는 주문의 효과가 25% 증가한다. 본체의 주문 공격력이나 치유량에 적용되는 25% 증가가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92746,12 +92756,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/고대의결속"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -92823,14 +92835,14 @@
       "icon": "spell_shaman_blessingoftheeternals",
       "iconName": "spell_shaman_blessingoftheeternals",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 저 너머의 공물 (Offering from Beyond)",
+      "description": "선조를 소환할 때 복원은 성난 해일의 재사용 대기시간이 2초, 정기는 폭풍수호자의 재사용 대기시간이 3초 줄어든다. 선조가 떠날 때 발동하는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92849,7 +92861,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -92872,14 +92884,14 @@
       "icon": "inv_ability_farseershaman_ancestralswiftness",
       "iconName": "inv_ability_farseershaman_ancestralswiftness",
       "school": "",
-      "cooldown": "관련 기술 연계",
-      "castTime": "지속 효과",
+      "cooldown": "30초",
+      "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선조의 신속함 (Ancestral Swiftness)",
+      "description": "즉시 시전, 재사용 대기시간 30초인 사용 기술이다. 다음 치유 또는 공격 주문을 즉시·마나 소모 없이 시전하고 그 주문의 피해와 치유를 10% 높인다. 자연의 신속함을 배웠다면 이를 대체하며, 사용 시 선조도 8초 동안 소환한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -92898,7 +92910,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -139263,14 +139275,14 @@
       "icon": "shaman_pvp_leaderclan",
       "iconName": "shaman_pvp_leaderclan",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선조의 영향력 (Ancestral Influence)",
+      "description": "활성화된 선조 한 명당 지능이 1% 증가한다. 소환된 선조 수에 따라 달라지는 본체 능력치 효과이며, 선조의 주문 자체를 직접 강화하는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139289,7 +139301,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -139312,14 +139324,14 @@
       "icon": "achievement_raidprimalist_windelemental",
       "iconName": "achievement_raidprimalist_windelemental",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람예언자 (Windspeaker)",
+      "description": "복원은 치유의 물결·연쇄 치유·용암 폭발, 정기는 치유의 파도·연쇄 치유·용암 폭발의 시전 시간이 각각 10% 줄어든다. 전문화별 치유 주문 이름을 혼동하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139338,7 +139350,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -139473,14 +139485,14 @@
       "icon": "achievement_raidprimalist_council",
       "iconName": "achievement_raidprimalist_council",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비술사의 지식 (Mystic Knowledge)",
+      "description": "정기는 용암 쇄도 발동 확률이 20% 증가한다. 복원은 자연의 신속함 또는 선조의 신속함을 시전한 뒤 8초 동안 성난 해일의 재충전 속도가 10% 증가하고, 용암 쇄도 발동 확률도 20% 증가한다. 확률 20% 증가를 20%포인트 추가로 읽지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139499,7 +139511,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
