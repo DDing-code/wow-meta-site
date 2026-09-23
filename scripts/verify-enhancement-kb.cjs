@@ -249,7 +249,7 @@ assert.deepEqual(skills[470057].specs, ['Elemental', 'Enhancement']);
 assert.equal(skills[470057].castTime, '즉시');
 assert.match(skills[470057].description, /추가 적 5명.*항상 치명타.*고양.*1중첩.*정기.*6.*10초/);
 assert.equal(skills[115356].castTime, '즉시');
-for (const id of ['shaman_enhancement_stormbringer_tempest', 'shaman_enhancement_totemic_surging_window']) {
+for (const id of ['shaman_enhancement_stormbringer_tempest', 'shaman_enhancement_totemic_surging_window', 'shaman_enhancement_crash_lightning_aoe', 'shaman_enhancement_doom_winds_ascendance_window']) {
   const relation = synergies[id];
   assert.equal(relation.patch, '12.1', id);
   assert.deepEqual(relation.specs, ['Enhancement'], id);
@@ -261,6 +261,8 @@ assert.ok(stormbringer.participants.includes('455129'));
 assert.ok(!stormbringer.participants.includes('382888'), 'Flurry is not a Tempest proc talent');
 assert.match(stormbringer.description, /2.00%.*별도 경로.*35%.*2중첩.*확정 순서가 아니/);
 assert.match(synergies.shaman_enhancement_totemic_surging_window.description, /용암 채찍.*8초.*활성화된.*0.20초.*정기의 속도.*0.3초/);
+assert.match(synergies.shaman_enhancement_crash_lightning_aoe.description, /타격 전체를 복제하지 않으며 연쇄 번개의 사용 선행 조건도 아니다/);
+assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /승천 또는 깊이 뿌리내린 정기를 선택하면 파멸의 바람 버튼이 대체된다/);
 assert.deepEqual(skills[378270].specs, ['Enhancement', 'Restoration']);
 assert.match(skills[378270].description, /0.6%.*6초.*2초.*복원.*7%/);
 assert.equal(skills[378270].patch, '12.1');
