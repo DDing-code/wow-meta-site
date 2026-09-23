@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 주문·특성 검수', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['764379e5'],
+    body: '복원 고유 스킬·특성 50개를 현재 한국어 툴팁과 대조하고, 폭우 특성·시전 주문을 분리했습니다. 고대의 환영을 비전투 파티 부활로 바로잡았습니다. 영웅 특성·세트·최신 로그 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '회복 드루이드·운무 수도사 12.1 핫픽스 반영',
     guideIds: ['druid-restoration', 'monk-mistweaver'], commits: ['4b6ba0ae'],
     body: '9월 22일 회복 드루이드·운무 치유 상향과 광합성 오류 수정을 KB·스펠 DB·가이드에 반영했습니다. 8월 로그 선택률은 핫픽스 전 자료로 구분했습니다.' },
