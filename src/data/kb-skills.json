@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:09:31.132Z",
+    "generatedAt": "2026-09-23T04:22:49.184Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2877,
-        "withSynergies": 2033,
+        "withWikilinks": 2878,
+        "withSynergies": 2035,
         "avgLinkDensity": "0.039"
       }
     }
@@ -33318,10 +33318,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 부두 숙련 (Voodoo Mastery)",
+      "description": "사술 대상의 이동 속도를 효과 중 70% 낮추고 효과가 끝난 뒤에도 감속을 6초 유지한다. 사술 자체의 재사용 대기시간도 15초 줄인다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33340,7 +33340,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -40352,10 +40352,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 전하 충전 (Static Charge)",
+      "description": "축전 토템의 재사용 대기시간을 1점에서 8초, 2점에서 15초 줄인다. 실시간 툴팁에는 최대 점수의 15초 감소가 표시되고, 공식 특성 변경 내역에는 두 점수 단계가 따로 명시돼 있다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -40374,7 +40374,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -46702,10 +46702,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 바람 장막 (Windveil)",
+      "description": "날카로운 바람으로 적 주문 시전을 방해하면 12초 동안 자신이 받는 모든 주문 피해가 15% 감소한다. 차단이 성공해야 발동하는 조건부 생존 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46722,9 +46722,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -51998,10 +51998,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼의 보루 (Astral Bulwark)",
+      "description": "영혼 이동의 받는 피해 감소 효과를 추가로 20% 강화하는 공용 특성. 재사용 대기시간을 줄이는 차원 여행자와 같은 선택 노드이며, 둘을 동시에 적용할 수 없다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52020,7 +52020,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -52348,10 +52348,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신선한 물 (Refreshing Waters)",
+      "description": "복원은 자신에게 시전한 치유의 물결이 25% 강해지고, 고양은 자신에게 시전한 치유의 파도가 25%, 정기는 치유의 파도가 30% 강해진다. 다른 아군을 치유할 때는 이 자가 치유 보너스를 적용하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -52370,7 +52370,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -55020,10 +55020,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 정기의 수호 (Elemental Warding)",
+      "description": "받는 모든 마법 피해를 8% 줄이는 공용 지속 효과. 한국어 실시간 툴팁과 2026년 2월 공식 상향 내역이 모두 8%를 가리킨다. 물리 피해는 줄이지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55042,7 +55042,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -55121,10 +55121,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연의 격노 (Nature's Fury)",
+      "description": "자연 주문·능력의 치명타 및 극대화율을 1/2점에 따라 2%/4% 높인다. 모든 주문의 치명타 확률이나 자연 피해량 자체를 같은 비율로 높이는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55143,7 +55143,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -55269,10 +55269,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 넘쳐나는 생명 (Brimming with Life)",
+      "description": "체력을 1/2점에 따라 8%/15% 늘리고, 생명력이 최대인 동안 윤회의 남은 재사용 대기시간이 50%/100% 빠르게 감소한다. 체력 증가 효과는 윤회가 재사용 대기 중이어도 유지된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -55289,9 +55289,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -57043,10 +57043,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선조의 늑대 친화 (Ancestral Wolf Affinity)",
+      "description": "늑대 정령 형태에서 영혼 정화, 날카로운 바람, 정화와 토템 기술을 사용해도 형태가 해제되지 않는다. 모든 공격·치유 주문을 늑대 정령 상태로 시전할 수 있게 하는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57065,7 +57065,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -57143,10 +57143,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 알아키르의 바람 (Winds of Al'Akir)",
+      "description": "상시 이동 속도를 1/2점에 따라 3%/6% 높이고, 늑대 정령 형태의 이동 속도 증가량을 추가로 5%/10% 높인다. 실시간 툴팁은 단일 수치를 표시하지만 공식 특성 변경 내역과 12.1 고양 가이드는 두 점수 단계를 구분한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -57165,7 +57165,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -58735,10 +58735,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불과 얼음 (Fire and Ice)",
+      "description": "화염 및 냉기 공격력을 3% 늘리는 공용 지속 효과다. 용암 폭발·화염 충격처럼 화염 성격의 기술과 냉기 충격 등의 냉기 기술에 연결되며, 자연 피해 전부를 3% 올리는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -58750,14 +58750,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_firefrost-orb.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Skills/냉기충격",
+          "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -59097,9 +59100,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -107573,10 +107576,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 원소 저항 (Elemental Resistance)",
+      "description": "치유의 토템으로 치유받은 대상이 3초 동안 받는 화염·냉기·자연 피해를 6% 줄인다. 토템을 설치한 순간 모든 아군에게 걸리는 광역 피해 감소가 아니라 실제 치유 대상에게 적용되는 효과다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107595,7 +107598,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -108107,10 +108110,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 냉기의 감옥 (Encasing Cold)",
+      "description": "냉기 충격의 재사용 대기시간을 15초 늘리는 대신, 맞은 대상을 4초 동안 제자리에 묶는다. 극지의 눈폭풍과 같은 선택 노드다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108127,9 +108130,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -108157,10 +108160,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 극지의 눈폭풍 (Arctic Snowstorm)",
+      "description": "냉기 충격 대상의 10미터 내 다른 적에게 이동 속도 30% 감소를 적용한다. 냉기의 감옥과 같은 선택 노드이며, 대상을 4초간 묶는 효과는 이 특성에 없다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108179,7 +108182,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -108207,10 +108210,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 승천의 바람 (Ascending Air)",
+      "description": "바람 질주 토템의 재사용 대기시간을 30초 줄이고 토템이 부여하는 이동 속도 증가 효과의 지속시간을 2초 늘린다. 제트 기류와 같은 선택 노드이므로 두 효과를 동시에 가진 것으로 계산하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108229,7 +108232,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -108257,10 +108260,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 강화된 주입 (Enhanced Imbues)",
+      "description": "고양은 무기 강화 효과를 15%, 복원은 무기·방패 강화 효과를 20%, 정기는 무기·방패 강화 효과를 30% 높인다. 전문화마다 적용 대상과 수치가 다르므로 동일한 공용 공격력 증가율로 합산하지 않는다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108272,14 +108275,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_rockbiter.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/11-주술사/고양/Skills/질풍의무기",
+          "08-직업별-Knowledge-Base/11-주술사/복원/Skills/대지생명의무기",
+          "08-직업별-Knowledge-Base/11-주술사/복원/Skills/파도소환사의수호"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -108401,14 +108408,14 @@
       "icon": "achievement_raidprimalist_windelemental",
       "iconName": "achievement_raidprimalist_windelemental",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "# 하늘의 격노 (Skyfury)",
+      "cooldown": "없음",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 1%",
+      "range": "40야드",
+      "description": "즉시 시전하는 주술사 공용 공격대 버프다. 시전하면 1시간 동안 대상 아군의 특화를 2% 높이고, 자동 공격이 20% 확률로 즉시 한 번 더 적중하게 한다. 대상이 같은 파티나 공격대에 있으면 구성원 전원이 효과를 받는다. 개인 딜사이클에 반복해 누르는 기술은 아니지만, 전투 전 시전해야 하는 버튼이다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -108425,10 +108432,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.009,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Talents\\하늘의격노.md",
@@ -139128,9 +139135,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.019,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -139158,10 +139165,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영적 각성 (Spiritual Awakening)",
+      "description": "특화를 3% 늘리는 공용 지속 효과. 구체적으로 강해지는 피해·치유·기타 효과는 전문화의 특화 작동 방식에 따르며, 이동 속도나 보호막의 고정 치유량을 직접 올리는 특성은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139178,9 +139185,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -146368,10 +146375,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태고의 유대 (Primordial Bond)",
+      "description": "대지의 정령이 활성화된 동안 시전자의 최대 생명력을 15% 늘리는 대신, 정령의 도발과 위협 수준 생성을 없앤다. 대지의 정령 자체의 기본 효과가 아니라 이 특성을 선택했을 때만 적용된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146390,7 +146397,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:09:31.133Z",
+    "generatedAt": "2026-09-23T04:22:49.185Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15914,13 +15914,7 @@
         "188196",
         "188443",
         "192106",
-        "196840",
-        "382886",
         "381655",
-        "383010",
-        "462796",
-        "1270350",
-        "1279819",
         "378081"
       ],
       "class": "Shaman",
@@ -15932,22 +15926,16 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개보호막",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/냉기충격",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/불과얼음",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/자연의격노",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정령의궤도",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/강화된주입",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/본능적인강화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/태고의유대"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/자연의격노"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Synergies\\주술사공용-번개보호막-자연피해-공통딜.md",
@@ -15971,7 +15959,9 @@
         "462454",
         "1217622",
         "974",
-        "378077"
+        "378077",
+        "1279819",
+        "355630"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -15982,7 +15972,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼이동",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/대지의정령",
@@ -15992,6 +15982,7 @@
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/태고의유대",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/자연의수호자",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼의보루",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정기의수호",
@@ -15999,6 +15990,7 @@
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/테라제인의탄력",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/반응성수호물",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/넘쳐나는생명",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/바람장막",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/차원여행자",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼나그네의보호"
       ],

@@ -124,4 +124,25 @@ for (const [id, pattern] of [
   assert.match(skills[id].description, pattern);
 }
 assert.equal(synergies.synergies.shaman_common_totem_control_mythic_utility.patch, '12.1');
+for (const [id, pattern] of [
+  [462791, /30초.*2초.*제트 기류/], [382215, /3%\/6%.*5%\/10%/],
+  [382197, /영혼 정화.*날카로운 바람.*정화.*토템/],
+  [377933, /20%.*차원 여행자/], [1279819, /15%.*도발/],
+  [355630, /12초.*주문 피해.*15%/], [462368, /3초.*화염.*냉기.*자연.*6%/],
+  [462764, /10미터.*30%.*냉기의 감옥/], [462762, /15초.*4초.*극지의 눈폭풍/],
+  [204268, /70%.*6초.*15초/], [265046, /8초.*15초/],
+  [382886, /화염.*냉기.*3%/], [462796, /고양.*15%.*복원.*20%.*정기.*30%/],
+  [381689, /8%\/15%.*50%\/100%/], [378211, /복원.*25%.*고양.*25%.*정기는.*30%/],
+  [1270375, /특화.*3%/], [381650, /마법 피해.*8%/],
+  [381655, /2%\/4%/], [462854, /1시간.*2%.*20%/],
+]) {
+  assert.equal(skills[id].patch, '12.1', `Shared talent ${id} must be current`);
+  assert.match(skills[id].description, pattern);
+}
+assert.equal(skills[462854].castTime, '즉시');
+assert.deepEqual(synergies.synergies.shaman_common_lightning_shield_nature_damage.participants,
+  ['188196', '188443', '192106', '381655', '378081']);
+for (const id of ['1279819', '355630']) {
+  assert(synergies.synergies.shaman_common_astral_shift_earth_elemental_defense.participants.includes(id));
+}
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
