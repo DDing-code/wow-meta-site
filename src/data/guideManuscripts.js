@@ -2692,6 +2692,7 @@ export const guideManuscripts = {
     "patch": "12.1",
     "researchedAt": "2026-09-23",
     "status": "심화 가이드",
+    "defaultHeroBranchIndex": 1,
     "graphCenterSkillId": "51271",
     "sourceStatus": "Blizzard 12.1 한국어 원문·9월 22일 영어 긴급 수정, Wowhead·Icy Veins·Method 12.1 공개 가이드와 한국어 툴팁 대조. 최신 레이드 전체 집계와 한국 서버의 9월 22일 직업 조정 적용 시각은 미확인.",
     "summary": "12.1 냉기는 얼음 기둥뿐 아니라 평소의 발동 순환과 근접 유지도 중요합니다. 레이드와 쐐기 모두 쌍수·죽음의 인도자·신드라고사의 숨결을 먼저 비교하고, 종말의 기수와 냉기파멸은 장비·전투 유형에 따른 대안으로 보세요. 숨결은 처음 룬 마력 60을 쓰고 도살기·단단한 얼음 소비로 늘어나므로, 숨결 중에도 냉기의 일격과 빙하 진군을 정상적으로 사용합니다.",

@@ -1694,6 +1694,7 @@ function main() {
   assert(kbSkills['377253']?.description.includes('얼음 기둥'), 'Frozen Dominion must explain automatic Winter');
   assert(kbSkills['281238']?.description.includes('무료'), 'Obliteration must include the free-spender interaction');
   assert(!collectActiveSkillRefs(frost).some(([, id]) => String(id) === '152279'), 'Current Frost guide must not link the obsolete Breath ID');
+  assert(frost.heroBranches[frost.defaultHeroBranchIndex]?.label === '죽음의 인도자', 'Frost default hero tab must match the recommended Deathbringer build');
   assert(frost.heroBranches[0].flowSkillIds.every(id => kbSkills[id]?.castTime === '즉시'), 'Rider flow icons must show actual cast buttons, not its passive defining talents');
   for (const flow of [frost.opener, ...frost.heroBranches.map(branch => branch.opener).filter(Boolean)]) {
     for (const step of flow.steps) {

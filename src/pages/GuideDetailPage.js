@@ -2033,12 +2033,12 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
 
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   const [tipsExpanded, setTipsExpanded] = useState(false);
-  const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(0);
+  const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(manuscript?.defaultHeroBranchIndex || 0);
 
   useEffect(() => {
     setTipsExpanded(false);
-    setActiveHeroBranchIndex(0);
-  }, [guide?.id]);
+    setActiveHeroBranchIndex(manuscript?.defaultHeroBranchIndex || 0);
+  }, [guide?.id, manuscript?.defaultHeroBranchIndex]);
 
   if (!manuscript) return null;
 
