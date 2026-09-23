@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '방어 전사 12.1 연결 그래프 검수', partial: true,
+    guideIds: ['warrior-protection'], commits: ['fc6a5d85'],
+    body: '방패 올리기·고통 감내·방패 밀쳐내기, 산왕 벼락·우레 작렬, 사기의 외침·방패의 벽 연결을 정본 KB와 사이트 시너지 DB에서 다시 구분했습니다. 폭풍 방패를 피해 루프에서 빼고, 방패의 벽 선택 특성의 효과를 한 빌드에 합산하지 않도록 정리했습니다. 다른 전문화와 최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '방어 전사 생존·공격 특성 12.1 검수', partial: true,
     guideIds: ['warrior-protection'], commits: ['a27b4539'],
     body: '방어 전사 특성·기술 22개를 현행 한국어 툴팁과 대조했습니다. 혈행성 전이의 모든 출혈, 파멸적인 집중의 복수·마무리 일격, 결사단원의 적중 대상 피해 감소를 KB·스펠 DB·연결 그래프에 반영하고, 불길을 지나 8% 상향과 핫픽스 날짜를 가이드에서 교정했습니다. 나머지 연결과 최신 로그 검수는 진행 중입니다.' },
