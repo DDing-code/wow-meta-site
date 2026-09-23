@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2878,
-        "withSynergies": 2035,
+        "withSynergies": 2036,
         "avgLinkDensity": "0.039"
       }
     }
@@ -2247,18 +2247,18 @@
       ],
       "name": "방패의 벽",
       "koreanName": "방패의 벽",
-      "englishName": "",
+      "englishName": "Shield Wall",
       "icon": "ability_warrior_shieldwall",
       "iconName": "ability_warrior_shieldwall",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 방패의 벽은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 방패의 벽 특성 즉시 3 분 재사용 대기시간 1회 사용 가능 전사 필요 8초 동안 받는 모든 피해가 40%만큼 감소합니다.",
+      "cooldown": "3분 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "즉시 사용하며 기본 3분 재사용 대기시간, 기본 1회 충전이다. 8초 동안 받는 모든 피해를 40% 줄인다. 방패 올리기처럼 막을 수 있는 물리 공격에만 한정된 효과가 아니다. 수호자의 아이기스를 선택하면 1회 추가 충전되고 재사용 대기시간이 60초 짧아진다. 이 특성 효과를 기본 주문의 충전 수로 적지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2271,13 +2271,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/수호자의-아이기스"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -73751,7 +73753,7 @@
       ],
       "name": "수호자의 아이기스",
       "koreanName": "수호자의 아이기스",
-      "englishName": "",
+      "englishName": "Defender's Aegis",
       "icon": "ability_warrior_stalwartprotector",
       "iconName": "ability_warrior_stalwartprotector",
       "school": "",
@@ -73759,10 +73761,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "수호자의 아이기스은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 수호자의 아이기스 특성 전사 필요 방패의 벽이 1회 추가로 충전됩니다. 또한 재사용 대기시간이 60초만큼 감소합니다.",
+      "description": "방패의 벽에 1회 추가 충전을 주고 재사용 대기시간을 60초 줄이는 선택 특성이다. 방패의 벽의 피해 감소량이나 지속시간을 바꾸는 효과로 쓰지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73781,9 +73783,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.038,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {

@@ -569,4 +569,10 @@ assert.deepEqual(synergies['warrior-fury-whirlwind-multi-target'].participants, 
 assert.match(furyGuide, /고기칼은 소용돌이 또는 천둥벼락이 3명 이상에게 맞았을 때 해당 기술의 직접 피해를 높이는 별도 특성/);
 assert.doesNotMatch(furyGuide, /고기칼.*확산 조건/);
 assert.match(skills[444767].description, /집행자는 대상에게 붙는 약화 효과가 아니라 자신에게 생기는 강화 효과/);
+assert.equal(skills[871].patch, '12.1');
+assert.equal(skills[397103].patch, '12.1');
+assert.match(skills[871].description, /방패의 벽.*40%|8초.*40%/);
+assert.match(skills[871].description, /수호자의 아이기스를 선택하면 1회 추가 충전/);
+assert.match(skills[397103].description, /60초 줄이는 선택 특성/);
+assert(skills[871].synergies.relatedTalents.some(id => id.endsWith('/수호자의-아이기스')));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
