@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '분노 전사 12.1 공식 변경·스펠 DB 검수', partial: true,
+    guideIds: ['warrior-fury'], commits: ['f5fa4365'],
+    body: 'Blizzard 12.1 라이브 노트와 9월 22일 산왕 핫픽스를 가이드·KB에 반영했습니다. 자르고 베기 한국어 설명을 스펠 DB와 동기화했고, 최신 영웅 특성별 로그 비교와 전체 세부 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '고양 주술사 12.1 공식 변경·시즌 2 세트 검수', partial: true,
     guideIds: ['shaman-enhancement'], commits: ['2ee7d9e0'],
     body: 'Blizzard 라이브 12.1 조정과 한국어 세트·파멸의 바람 툴팁을 가이드·KB·스펠 DB에 맞췄습니다. 12.0.5 Archon 점유율은 현행 추천 근거에서 제외했습니다. 로그 표본의 한계를 명시했고, 정확한 자원 손실량·장신구별 최적화는 계속 검수 중입니다.' },
