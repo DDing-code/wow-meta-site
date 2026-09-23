@@ -27,6 +27,19 @@ assert.match(skills[76857].description, /방패 막기 확률 4\.0%.*결정적 �
 assert.match(skills[161798].description, /장비에서 얻는 치명타.*100%.*무기 막기/);
 assert(!guide.includes('방패의 벽이나 최후의 저항'));
 assert(!guide.includes('방패의 벽과 항상 겹칠 필요가 없습니다'));
+for (const id of [1160, 20243, 202603, 202743, 203177, 236279, 384041]) {
+  assert.equal(skills[id].patch, '12.1');
+}
+assert.equal(skills[202603].type, 'spec-talent');
+assert.match(skills[202603].description, /10미터.*2%.*8%/);
+assert.match(skills[20243].description, /압도자.*대체/);
+assert.match(skills[236279].description, /압도.*대체.*25%/);
+assert.match(skills[202743].description, /분노 20.*피해를 20%/);
+assert(!skills[202743].description.includes('분노 30'));
+assert.match(skills[203177].description, /분노 2.*1초/);
+assert.match(skills[384041].description, /25%.*방패 밀쳐내기/);
+assert.match(guide, /묵직한 반격을 선택했다면 방패 밀쳐내기마다 분노가 2 더 생기고 방패 올리기가 1초 늘어납니다/);
+assert(!guide.includes('방패 올리기 지속과 방패 밀쳐내기 피해를 연결'));
 assert(!guide.includes('소용돌이 연마가 분쇄 확산까지 연결'));
 assert(!guide.includes('풀 시작에서 분쇄가 여러 대상에 닿는지'));
 assert.equal(skills[394062], undefined, 'Retired shared Rend must not return');
@@ -45,6 +58,8 @@ assert.equal(skills[384277].icon, 'warrior_talent_icon_bloodandthunder');
 assert.match(skills[436707].description, /분노와 방어.*5%.*10%/);
 assert.match(skills[436707].description, /분노에만.*8.*피의 폭풍/);
 const { synergies } = require('../src/data/kb-synergies.json');
+assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-DEVASTATE-DEVASTATOR-STRATEGIST'].participants, ['20243', '236279', '384041', '23922']);
+assert.equal(synergies['SY-WARRIOR-PROTECTION-DEVASTATE-RIPOSTE-TACTICIAN'], undefined);
 assert.equal(synergies['SY-WARRIOR-PROTECTION-VANGUARD-ARMOR-MASTERY'].patch, '12.1');
 assert(!JSON.stringify(synergies).includes('394062'));
 assert.deepEqual(synergies.warrior_fury_storm_of_blood.participants, ['190411', '1299025', '436707', '6343']);

@@ -20544,14 +20544,14 @@
         "lastUpdate": ""
       }
     },
-    "SY-WARRIOR-PROTECTION-DEVASTATE-RIPOSTE-TACTICIAN": {
-      "id": "SY-WARRIOR-PROTECTION-DEVASTATE-RIPOSTE-TACTICIAN",
-      "name": "압도-반격-전략가",
+    "SY-WARRIOR-PROTECTION-DEVASTATE-DEVASTATOR-STRATEGIST": {
+      "id": "SY-WARRIOR-PROTECTION-DEVASTATE-DEVASTATOR-STRATEGIST",
+      "name": "압도-압도자-전략가",
       "type": "synergy",
       "synergyType": "baseline-attack-engine",
       "participants": [
         "20243",
-        "161798",
+        "236279",
         "384041",
         "23922"
       ],
@@ -20559,23 +20559,20 @@
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/반격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/참전"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/압도자",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/선동",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/묵직한-반격",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/격렬한-울분",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/소용돌이-칼날",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/격렬한-울분"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\압도-반격-전략가.md",
