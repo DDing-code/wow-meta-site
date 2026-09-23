@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '주술사 삭제 기술 정리',
+    guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['525c9634'],
+    body: '블리자드 공식 변경 내역을 대조해 11.1에서 삭제된 고대의 인도를 정본 KB·스펠 DB에서 제거하고 정기 주술사 가이드의 사용 권장 문구를 고쳤습니다. 고양·복원의 전체 12.1 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '주술사 공용 기술 12.1 검수',
     guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['c0e9a76a'],
     body: '구속·속박 토템, 보호막, 자연의 신속함, 치유의 토템, 진영별 가속 주문 등 공용 기술 15개를 한국어 라이브 툴팁에 맞춰 교정했습니다. 고양·복원 원고의 전체 전환 검수는 계속 진행 중입니다.' },
