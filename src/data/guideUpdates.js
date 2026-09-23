@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 쿨기 선택·시너지 교정', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['3f882c93'],
+    body: '승천과 치유의 해일 토템이 양자택일인 점을 KB·스펠 DB·가이드·차트에 반영했습니다. 보호막 유지, 정신의 고리 토템, 직접 치유와 마나 관리 시너지도 교정해 복원 시너지 10개를 12.1로 정리했습니다. 전체 빌드·최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 지역 치유·폭우 교정', partial: true,
     guideIds: ['shaman-restoration'], commits: ['1dd43e58'],
     body: '치유의 비·산성 비와 폭우·치유의 해일 토템 관계를 현재 발동 조건에 맞춰 분리했습니다. 토템술사 쇄도하는 토템의 폭우 사용권과 추가 치유량, 위안의 비의 실제 한국어 툴팁을 KB·스펠 DB·가이드에 반영했습니다. 나머지 복원 시너지와 전체 빌드·최신 로그 검수는 진행 중입니다.' },
