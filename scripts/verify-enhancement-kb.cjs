@@ -24,6 +24,7 @@ for (const id of [1296627, 1296628]) {
 assert.match(skills[1296627].description, /6초.*2초.*200%.*모든 대상.*적용하지/);
 assert.match(skills[1296628].description, /2초.*8%.*5중첩.*40%/);
 assert.match(skills[1296628].description, /9월 5일.*낙뢰의 초반 피해/);
+assert.match(skills[384352].description, /Blizzard 12\.1.*기존 100%.*50%.*실제 발동 확률/);
 assert.deepEqual(synergies.shaman_enhancement_season2_blaze_crash.participants, ['470057', '1260666', '1296627', '1296628', '187874']);
 
 for (const [id, pattern] of Object.entries({
