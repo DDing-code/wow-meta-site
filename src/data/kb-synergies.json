@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T02:45:42.569Z",
+    "generatedAt": "2026-09-23T02:56:21.774Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13311,7 +13311,7 @@
     "priest_shadow_psychic_link_multi": {
       "id": "priest_shadow_psychic_link_multi",
       "name": "광역: 손길 대상 확보와 주 대상 집중",
-      "description": "촉수 격돌은 흡혈의 손길을 최대 6대상에게 적용한다. 불행을 선택했다면 고통도 함께 적용된다. 영혼의 연결은 주요 직접 피해의 25%를 다른 손길 대상에게 전달한다.",
+      "description": "촉수 격돌은 흡혈의 손길을 최대 6대상에게 적용한다. 불행을 선택했다면 고통도 함께 적용된다. 2026-09-22 PvE 기준 영혼의 연결은 주요 직접 피해의 20%를 다른 손길 대상에게 전달한다.",
       "type": "synergy",
       "synergyType": "multi-target-link",
       "participants": [
@@ -13349,7 +13349,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Synergies\\영혼의연결-다중대상.md",
-        "lastUpdate": "2026-09-21"
+        "lastUpdate": "2026-09-23"
       }
     },
     "priest_shadow_mind_blast_insight_generation": {

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T02:45:42.567Z",
+    "generatedAt": "2026-09-23T02:56:21.773Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -6357,7 +6357,7 @@
       "castTime": "1.5초 · 특성별 보정",
       "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "적에게 암흑 피해를 입히는 실제 시전 기술이다. 수양은 마지막 어둠 지배 선택 시 공허의 보호막 사용권을 확정 얻고, 공허술사는 혼돈의 균열도 연다. 암흑은 광기를 생성한다.",
+      "description": "적에게 암흑 피해를 입히는 실제 시전 기술이다. 2026-09-22 핫픽스로 암흑 전문화의 피해가 15% 증가했다. 이 변경을 수양의 정신 분열 피해 상향으로 옮기지 않는다. 수양은 마지막 어둠 지배 선택 시 공허의 보호막 사용권을 확정 얻고, 공허술사는 혼돈의 균열도 연다. 암흑은 광기를 생성한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -6385,7 +6385,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.05,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -7493,7 +7493,7 @@
       "castTime": "정신 집중 4.5초",
       "resourceCost": "없음 · 기본 광기 18 생성",
       "range": "40야드",
-      "description": "기본 4.5초 동안 정신 집중해 암흑 피해를 주고 적의 이동 속도를 50% 낮춘다. 전체 정신 집중으로 기본 광기 18을 생성한다.",
+      "description": "기본 4.5초 동안 정신 집중해 암흑 피해를 주고 적의 이동 속도를 50% 낮춘다. 전체 정신 집중으로 기본 광기 18을 생성한다. 2026-09-22 PvE 핫픽스로 피해가 15% 증가했다(PvP 제외).",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -7521,7 +7521,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.054,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -10131,7 +10131,7 @@
       "castTime": "즉시",
       "resourceCost": "마나 · 전문화별 보정",
       "range": "40야드",
-      "description": "적을 즉시 공격하며 생명력 20% 미만에서 피해가 증가한다. 적을 처치하지 못하면 최대 생명력의 5% 반발 피해를 받는다. 암흑은 광기를 생성한다.",
+      "description": "적을 즉시 공격하며 생명력 20% 미만에서 피해가 증가한다. 적을 처치하지 못하면 최대 생명력의 5% 반발 피해를 받는다. 암흑은 광기를 생성한다. 2026-09-22 핫픽스로 암흑 전문화의 피해가 15% 증가했다. 수양의 동명 기술에 이 상향을 적용하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -10159,7 +10159,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.043,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -11640,7 +11640,7 @@
       "castTime": "2초 정신 집중 · 이동 가능",
       "resourceCost": "기본 마나 1.6%",
       "range": "40야드",
-      "description": "기본적으로 2초 동안 화살 3발을 보내 적을 공격하거나 아군을 치유하는 이동 가능한 정신 집중 주문이다. 12.1에서는 아군 회개가 속죄를 새로 부여하지 않는다.",
+      "description": "기본적으로 2초 동안 화살 3발을 보내 적을 공격하거나 아군을 치유하는 이동 가능한 정신 집중 주문이다. 2026-09-22 수양 회개의 마나 비용이 20% 감소했다. 이는 회개 피해·치유량 증가가 아니다. 아군 회개는 속죄를 새로 부여하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -11669,7 +11669,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.053,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -15491,7 +15491,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "주 대상으로 향하는 그림자 원혼이 폭발해 8야드 안의 적에게 암흑 피해를 준다. 5대상을 넘으면 피해가 감소한다.",
+      "description": "주 대상으로 향하는 그림자 원혼이 폭발해 8야드 안의 적에게 암흑 피해를 준다. 5대상을 넘으면 피해가 감소한다. 2026-09-22 PvE 핫픽스에서 그늘폭발 피해가 5% 감소했다(PvP 제외).",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -15518,7 +15518,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.052,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -16709,7 +16709,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "신의 권능: 보호막, 순간 치유, 어둠의 치유, 간청, 신의 권능: 광휘로 부여하는 치유 전환 효과다. 기본 지속시간은 15초이며 주문 피해의 46%를 치유로 전환한다. 5명을 넘으면 대상별 치유량이 감소한다. 12.1에서 아군에게 시전한 회개는 속죄를 부여하지 않는다.",
+      "description": "신의 권능: 보호막, 순간 치유, 어둠의 치유, 간청, 신의 권능: 광휘로 부여하는 치유 전환 효과다. 기본 지속시간은 15초이며 주문 피해의 46%를 치유로 전환한다. 2026-09-22부터 공격대·전장 밖의 속죄 치유량이 40% 증가한다. PvP 전투에는 이 보너스가 적용되지 않는다. 5명을 넘으면 대상별 치유량이 감소한다. 아군에게 시전한 회개는 새 속죄를 부여하지 않는다.",
       "category": "passive",
       "tags": [],
       "patch": "12.1",
@@ -16735,7 +16735,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.045,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -30630,7 +30630,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "직접 피해 주문의 피해 25%를 40야드 안에서 자신의 흡혈의 손길이 걸린 다른 적에게 전달한다. 그림자 원혼·어둠의 권능: 고통·흡혈의 손길 자체 피해는 전달 대상에서 제외된다.",
+      "description": "2026-09-22 PvE 조정으로 직접 피해 주문의 피해 20%(기존 25%)를 40야드 안에서 자신의 흡혈의 손길이 걸린 다른 적에게 전달한다. PvP에는 이 수치 변경이 적용되지 않는다. 그림자 원혼·어둠의 권능: 고통·흡혈의 손길 자체 피해는 전달 대상에서 제외된다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -30658,7 +30658,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.052,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -45760,7 +45760,7 @@
       "castTime": "즉시",
       "resourceCost": "기본 광기 50",
       "range": "40야드",
-      "description": "기본 광기 50을 소비하는 즉시 시전 주문이다. 즉시 피해와 6초 지속 피해를 주고 피해의 30%만큼 자신을 회복한다. 같은 대상에게 다시 적용하면 남은 피해가 새 효과로 합쳐진다.",
+      "description": "기본 광기 50을 소비하는 즉시 시전 주문이다. 즉시 피해와 6초 지속 피해를 주고 피해의 30%만큼 자신을 회복한다. 2026-09-22 PvE 핫픽스로 피해가 15% 증가했다(PvP 제외). 같은 대상에게 다시 적용하면 남은 피해가 새 효과로 합쳐진다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -45788,7 +45788,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.056,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -70546,7 +70546,7 @@
       "castTime": "정신 집중 1.5초",
       "resourceCost": "없음 · 광기 8 생성",
       "range": "40야드",
-      "description": "정신의 채찍을 대체하는 1.5초 정신 집중 기술이다. 광기 8을 생성하고 대상의 이동 속도를 70% 감소시킨다.",
+      "description": "정신의 채찍을 대체하는 1.5초 정신 집중 기술이다. 광기 8을 생성하고 대상의 이동 속도를 70% 감소시킨다. 2026-09-22 PvE 핫픽스로 피해가 15% 증가했다(PvP 제외).",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -70574,7 +70574,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 1,
-        "linkDensity": 0.069,
+        "linkDensity": 0.063,
         "hasWikilinks": true
       },
       "source": {
@@ -99001,7 +99001,7 @@
       "castTime": "정신 분열 대체",
       "resourceCost": "없음 · 광기 생성",
       "range": "40야드",
-      "description": "공허술사의 혼돈의 균열이 활성화된 동안 정신 분열을 대체하는 암흑 전문화의 공허의 폭발이다.",
+      "description": "공허술사의 혼돈의 균열이 활성화된 동안 정신 분열을 대체하는 암흑 전문화의 공허의 폭발이다. 2026-09-22 핫픽스로 피해가 15% 증가했다. 수양의 동명 주문과는 별개다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -99031,7 +99031,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 3,
-        "linkDensity": 0.077,
+        "linkDensity": 0.069,
         "hasWikilinks": true
       },
       "source": {
