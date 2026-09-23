@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2879,
-        "withSynergies": 2038,
+        "withSynergies": 2041,
         "avgLinkDensity": "0.039"
       }
     }
@@ -86956,10 +86956,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "우레 작렬은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 우레 작렬 특성 전사 필요 방패 밀쳐내기 및 피의 갈증 사용 시 35%의 확률로 우레 작렬이 부여됩니다. 최대 2번까지 중첩됩니다. 우레 작렬 다음 천둥벼락이 우레 작렬로 변화하여 (전투력의 152.139%)의 폭풍충격 피해를 입히고 2의 분노를 생성합니다.",
+      "description": "산왕 영웅 특성이다. 방어 전사의 방패 밀쳐내기, 분노 전사의 피의 갈증 사용 시 35% 확률로 우레 작렬 사용권을 얻는다. 최대 2중첩이며 다음 천둥벼락이 우레 작렬로 바뀌어 폭풍충격 피해를 입히고 분노 2를 생성한다. 별도 행동 단축키를 반복해서 누르는 액티브 스킬이 아니라 천둥벼락의 강화 상태다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -86971,14 +86971,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_bloodandthunder.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/피의-갈증",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/폭풍의-화신"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.027,
+        "wikilinkCount": 7,
+        "synergyCount": 2,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -87555,10 +87560,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "폭풍의 화신은 Mountain Thane 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 폭풍의 화신 특성 전사 필요 투신 시전 시 우레 작렬이 2중첩 부여되고 천둥벼락의 재사용 대기시간이 초기화됩니다. 투신이 활성화되지 않은 동안에는 벼락이 10%의 확률로 4초 동안 투신을 활성화시킵니다. 우레 작렬 다음 천둥벼락이 우레 작렬로 변화하여 폭풍충격 피해를 입힙니다.",
+      "description": "산왕의 투신 연계 특성이다. 직접 투신을 시전하면 우레 작렬 2중첩을 얻고 천둥벼락 재사용 대기시간이 초기화된다. 투신이 비활성일 때 벼락이 적중하면 10% 확률로 4초 동안 투신이 활성화된다. 이 짧은 발동을 투신의 정규 재사용 대기시간이 초기화된 것으로 오해하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -87570,14 +87575,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/achievement_dungeon_blackrockcaverns_ascendantlordobsidius.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -94436,10 +94443,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "학살자의 악의은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 학살자의 악의 특성 전사 필요 분노 분노의 강타 및 마무리 일격의 공격력이 15%만큼 증가합니다. 무기 제압 및 마무리 일격의 공격력이 15%만큼 증가합니다.",
+      "description": "학살자 영웅 특성이다. 분노 전사는 분노의 강타와 마무리 일격의 피해가 각각 15% 증가하고, 무기 전사는 제압과 마무리 일격의 피해가 각각 15% 증가한다. 동일한 특성이라도 강화되는 생성기가 다르다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94451,14 +94458,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_revenge.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/마무리-일격",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 0,
-        "linkDensity": 0.034,
+        "wikilinkCount": 9,
+        "synergyCount": 4,
+        "linkDensity": 0.085,
         "hasWikilinks": true
       },
       "source": {
@@ -95730,10 +95742,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "학살자의 일격은 가 발동시키는 Slayer 피해 이벤트다. 버튼으로 직접 관리하는 기술이라기보다, 주 대상 공격과 처형 구간이  강화 중첩으로 이어지는 연결 노드로 본다.  공식 툴팁 요약: 주 대상에게 공격 시 15%의 확률로 대상의 방어를 압도하고 학살자의 일격을 발동시켜 물리 피해를 입히고 집행자 중첩을 얻어 12초 동안 마무리 일격의 공격력이 증가한다.",
+      "description": "가 주 대상 공격에서 발동시키는 피해 이벤트다. 공식 한국어 툴팁의 발동 확률은 무기 25%, 분노 15%로 전문화마다 다르다. 발동하면 자신에게 집행자 중첩을 얻으며, 각 중첩은 12초 동안 마무리 일격 피해를 3% 높인다. 직접 누르는 기술이나 대상에게 남는 약화 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -95748,6 +95760,7 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
           "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/마무리-일격",
           "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
         ],
         "relatedTalents": [],
@@ -95756,9 +95769,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 3,
-        "linkDensity": 0.048,
+        "wikilinkCount": 7,
+        "synergyCount": 4,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {

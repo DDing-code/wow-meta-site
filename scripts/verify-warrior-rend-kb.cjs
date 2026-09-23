@@ -541,6 +541,12 @@ for (const id of [434969, 436148]) {
   assert.match(skills[id].description, /2026-09-22.*50%.*PvP/);
 }
 assert.equal(synergies.warrior_common_mountain_thane_lightning_thunder_blast.patch, '12.1');
+for (const id of [435607, 437134, 445579, 444779]) assert.equal(skills[id].patch, '12.1');
+assert.match(skills[435607].description, /35%.*2중첩.*분노 2/);
+assert.doesNotMatch(skills[435607].description, /152\.139%/);
+assert.match(skills[437134].description, /2중첩.*10%.*4초/);
+assert.match(skills[445579].description, /무기 25%.*분노 15%.*12초.*3%/);
+assert.match(skills[444779].description, /분노의 강타.*15%.*제압.*15%/);
 assert.match(protectionGuide, /9월 22일.*벼락과 지면 전류 피해가 각각 50% 증가/);
 const furyStart = guide.indexOf("'warrior-fury': {");
 const furyGuide = guide.slice(furyStart, guide.indexOf("\n  '", furyStart + 1));
