@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '수양·암흑 사제 12.1 핫픽스 반영',
+    guideIds: ['priest-discipline', 'priest-shadow'], commits: ['75f533a4'],
+    body: '수양의 던전 속죄 보너스와 회개 마나 조정, 암흑의 단일 피해 상향과 영혼의 연결·그늘폭발 광역 조정을 정본 KB·스펠 DB·가이드에 반영했습니다. 핫픽스 후 영웅 특성 우열은 아직 검증되지 않았습니다.' },
   { date: '2026-09-23', title: '전사 산왕 12.1 핫픽스 반영', partial: true,
     guideIds: ['warrior-fury', 'warrior-protection'], commits: ['d7481e26'],
     body: '분노·방어 산왕의 벼락과 지면 전류 PvE 피해 상향을 KB·스펠 DB·가이드에 반영했습니다. 상향 전 자료의 영웅 특성 우열 단정은 정리했으며 전체 전환 검수는 계속 진행 중입니다.' },
