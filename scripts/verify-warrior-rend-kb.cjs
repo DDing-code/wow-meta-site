@@ -83,6 +83,12 @@ for (const id of [390713, 382953]) {
 assert.deepEqual(synergies['warrior-arms-sudden-death-massacre-dance'].participants, ['29725', '281001', '163201']);
 assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살-대학살-마무리-조건');
 for (const id of [29725, 281001]) assert.equal(skills[id].patch, '12.1');
+assert.equal(skills[163201].patch, '12.1');
+assert.equal(skills[163201].englishName, 'Execute');
+assert.match(skills[163201].description, /20%.*35%.*급살.*무료.*분노 40/);
+assert(skills[163201].synergies.relatedTalents.some(id => id.endsWith('/대학살')));
+assert(skills[163201].synergies.relatedTalents.some(id => id.endsWith('/급살')));
+assert.match(guide, /기본은 대상 생명력 20% 미만이고, 대학살을 선택했다면 35% 미만/);
 assert.match(skills[29725].description, /무료.*40/);
 assert.match(skills[281001].description, /35% 미만/);
 for (const id of [436358, 429634, 429636]) {

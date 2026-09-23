@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2878,
-        "withSynergies": 2036,
+        "withSynergies": 2037,
         "avgLinkDensity": "0.039"
       }
     }
@@ -24278,18 +24278,18 @@
       ],
       "name": "마무리 일격",
       "koreanName": "마무리 일격",
-      "englishName": "",
+      "englishName": "Execute",
       "icon": "inv_sword_48",
       "iconName": "inv_sword_48",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "전사 공용 도구상자는 이동, 차단, 외침, 방어 보조, 광역 제어와 주요 공격 강화 구간을 담당한다. 마무리 일격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 마무리 일격 분노 20의 40 근접 사정거리 즉시 6 초 재사용 대기시간 전사 필요 요구 레벨 10 근접 무기 필요 적에게 마무리 일격을 시도하여 소모한 분노에 따라 최대 [2.0 * (전투력의 242.125%)]의 물리 피해를 입힙니다. 생명력이 20% 미만인 적에게만 사용할 수 있습니다. [ 마무리 일격 연마 : 적이 살아남",
+      "cooldown": "6초 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "분노 20~40 (기본)",
+      "range": "근접",
+      "description": "기본적으로 대상 생명력이 20% 미만일 때 사용하는 근접 공격이다. 기본 6초 재사용 대기시간이 있고 분노를 20~40 소모하며, 실제 소모량에 따라 피해가 달라진다. 대학살을 선택하면 일반 사용 가능 체력 기준이 35% 미만으로 바뀐다. 급살이 발동하면 대상 생명력과 무관하게 사용할 수 있다. 무기 전문화의 급살은 이 공격을 무료로 사용하되 분노 40을 소모한 것과 같은 피해를 준다. 이 무료 공격이 분노 40을 지급하거나 실제로 소모했다는 뜻은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24301,14 +24301,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_48.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 0,
-        "linkDensity": 0.04,
+        "wikilinkCount": 10,
+        "synergyCount": 4,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
