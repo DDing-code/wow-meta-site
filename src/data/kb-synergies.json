@@ -4,8 +4,8 @@
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 603,
-    "rawTotalSynergies": 603,
+    "totalSynergies": 605,
+    "rawTotalSynergies": 605,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -22,9 +22,11 @@
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "ranged-bone-shield-maintenance": 1,
+      "blood-crimson-scourge-spend": 1,
       "death-strike-cleave": 1,
       "blood-debt-marrowrend": 1,
       "blood-shield-bloodshot": 1,
+      "blood-plague-vampiric-blood-shield": 1,
       "apex-rune-proc": 1,
       "apex-defensive-window": 2,
       "damage": 4,
@@ -262,7 +264,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 31,
+      "DeathKnight": 33,
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
@@ -1064,6 +1066,37 @@
         "lastUpdate": ""
       }
     },
+    "진홍빛스컬지_피의희열_원초적본능의힘": {
+      "id": "진홍빛스컬지_피의희열_원초적본능의힘",
+      "name": "진홍빛 스컬지 소비와 피의 희열·원초적 본능의 힘",
+      "description": "진홍빛 스컬지 발동 중 죽음과 부패를 사용하면 선택한 피의 희열의 회복·룬 마력과 산레인 원초적 본능의 힘의 12초 힘 6% 증가가 각각 발동합니다. 발동만 기다리고 소비하지 않으면 얻지 못합니다.",
+      "type": "synergy",
+      "synergyType": "blood-crimson-scourge-spend",
+      "participants": [
+        "81136",
+        "43265",
+        "317614",
+        "434157"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../../공용/Skills/죽음과부패"
+      ],
+      "linkedBuffs": [
+        "../Buffs/진홍빛스컬지"
+      ],
+      "linkedTalents": [
+        "../Talents/피의희열"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\진홍빛스컬지-피의희열-원초적본능의힘.md",
+        "lastUpdate": "2026-09-23"
+      }
+    },
     "deathknight_blood_deadly_reach_death_strike": {
       "id": "deathknight_blood_deadly_reach_death_strike",
       "name": "치명적인접촉-죽음의일격-추가대상",
@@ -1151,6 +1184,37 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\피의보호막-혈안.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "피의역병_흡혈의구": {
+      "id": "피의역병_흡혈의구",
+      "name": "피의 역병 피해와 흡혈의 구",
+      "description": "흡혈의 구를 선택하면 흡혈이 끝날 때 지속시간 동안 피의 역병이 입힌 피해의 6배를 흡수막으로 얻습니다. 신속한 부패의 피의 역병 치유량 85% 증가는 별개이며, 85%를 보호막에 곱하지 않습니다.",
+      "type": "synergy",
+      "synergyType": "blood-plague-vampiric-blood-shield",
+      "participants": [
+        "55078",
+        "55233",
+        "194662",
+        "391517"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../Skills/피의역병",
+        "../Skills/흡혈"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "../Talents/신속한부패",
+        "../Talents/흡혈의구"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\피의역병-흡혈의구.md",
+        "lastUpdate": "2026-09-23"
       }
     },
     "deathknight_blood_dance_rune_proc": {

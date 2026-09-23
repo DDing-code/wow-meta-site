@@ -4,16 +4,16 @@
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2965,
-    "rawTotalSkills": 2965,
+    "totalSkills": 2969,
+    "rawTotalSkills": 2969,
     "duplicateIds": [],
-    "totalSynergies": 603,
+    "totalSynergies": 605,
     "stats": {
-      "total": 2965,
+      "total": 2969,
       "byType": {
         "buff": 137,
         "hero-talent": 548,
-        "atomic-skill": 553,
+        "atomic-skill": 557,
         "proc": 29,
         "skill": 125,
         "talent": 1000,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 114,
+        "DeathKnight": 118,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -48,7 +48,7 @@
         "DeathKnight-공용": 17,
         "DeathKnight-냉기": 32,
         "DeathKnight-부정": 40,
-        "DeathKnight-혈기": 25,
+        "DeathKnight-혈기": 29,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2883,
-        "withSynergies": 2088,
+        "withWikilinks": 2887,
+        "withSynergies": 2092,
         "avgLinkDensity": "0.039"
       }
     }
@@ -28219,6 +28219,58 @@
         "lastUpdate": ""
       }
     },
+    "194662": {
+      "id": "194662",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "신속한 부패",
+      "koreanName": "신속한 부패",
+      "englishName": "Rapid Decomposition",
+      "icon": "ability_deathknight_deathsiphon2",
+      "iconName": "ability_deathknight_deathsiphon2",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "선택 시 피의 역병과 죽음과 부패의 피해 발생 빈도가 15% 증가하고, 피의 역병으로 흡수하는 생명력이 85% 증가합니다. 12.1에서 생명력 흡수 증가율이 50%에서 85%로 상향되었습니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_deathsiphon2.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_deathknight_deathsiphon2.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_deathknight_deathsiphon2.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_deathknight_deathsiphon2.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_deathsiphon2.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/피의소용돌이",
+          "../Skills/피의역병",
+          "../../공용/Skills/죽음과부패"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\신속한부패.md",
+        "lastUpdate": ""
+      }
+    },
     "194913": {
       "id": "194913",
       "type": "atomic-skill",
@@ -41414,6 +41466,57 @@
         "lastUpdate": ""
       }
     },
+    "273953": {
+      "id": "273953",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "탐식",
+      "koreanName": "탐식",
+      "englishName": "Voracious",
+      "icon": "ability_ironmaidens_whirlofblood",
+      "iconName": "ability_ironmaidens_whirlofblood",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "선택하면 죽음의 일격 치유량이 5% 증가하고, 죽음의 일격 후 8초 동안 생기흡수 15%를 얻습니다. 12.1에서 생기흡수 효과가 12%에서 15%로 상향되었습니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_ironmaidens_whirlofblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_ironmaidens_whirlofblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_ironmaidens_whirlofblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/죽음의일격",
+          "../Skills/피의보호막"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.028,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\탐식.md",
+        "lastUpdate": ""
+      }
+    },
     "274281": {
       "id": "274281",
       "type": "atomic-skill",
@@ -43367,6 +43470,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\결의의-힘.md",
+        "lastUpdate": ""
+      }
+    },
+    "317614": {
+      "id": "317614",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "피의 희열",
+      "koreanName": "피의 희열",
+      "englishName": "Relish in Blood",
+      "icon": "ability_deathknight_roilingblood",
+      "iconName": "ability_deathknight_roilingblood",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "진홍빛 스컬지가 활성화된 동안 다음 죽음과 부패가 뼈의 보호막 충전당 전투력 37.5%만큼 생명력을 회복시키고 룬 마력 10을 생성합니다. 12.1 출시 노트의 치유량 25% 상향이 반영된 한국어 툴팁 수치입니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_roilingblood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_deathknight_roilingblood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_deathknight_roilingblood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_deathknight_roilingblood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_roilingblood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../../공용/Skills/죽음과부패",
+          "../Skills/뼈의보호막",
+          "../Skills/죽음의일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.04,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\피의희열.md",
         "lastUpdate": ""
       }
     },
@@ -70710,6 +70865,57 @@
         "lastUpdate": ""
       }
     },
+    "391517": {
+      "id": "391517",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "흡혈의 구",
+      "koreanName": "흡혈의 구",
+      "englishName": "Umbilicus Eternus",
+      "icon": "artifactability_blooddeathknight_umbilicuseternus",
+      "iconName": "artifactability_blooddeathknight_umbilicuseternus",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "선택하면 흡혈이 끝날 때, 흡혈 중 피의 역병으로 입힌 피해의 6배만큼 피해를 흡수합니다. 12.1에서 계수가 5배에서 6배로 상향되었습니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/artifactability_blooddeathknight_umbilicuseternus.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/artifactability_blooddeathknight_umbilicuseternus.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/artifactability_blooddeathknight_umbilicuseternus.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/artifactability_blooddeathknight_umbilicuseternus.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/artifactability_blooddeathknight_umbilicuseternus.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/흡혈",
+          "../Skills/피의역병"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\흡혈의구.md",
+        "lastUpdate": ""
+      }
+    },
     "391528": {
       "id": "391528",
       "type": "atomic-skill",
@@ -86335,6 +86541,7 @@
       "class": "DeathKnight",
       "spec": "부정",
       "specs": [
+        "Blood",
         "Unholy"
       ],
       "name": "원초적 본능의 힘",
@@ -86347,12 +86554,12 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "부정 산레인에서 불시의 파멸을 소비하면 5초 동안 힘이 4% 증가합니다. 혈기의 진홍빛 스컬지 소비 조건과 지속시간은 다릅니다. 발동을 얻기만 한 상태와 실제로 소비한 상태를 구분합니다.",
+      "description": "혈기 산레인에서는 진홍빛 스컬지를 소비하면 12초 동안 힘이 6% 증가합니다. 부정 산레인에서는 불시의 파멸을 소비하면 5초 동안 힘이 4% 증가합니다. 12.1 출시 노트의 혈기 10% 표기는 시즌 2 개시 전 Blizzard의 8월 18일 조정으로 6%가 되었습니다. 발동을 얻기만 한 상태와 실제 소비를 구분합니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-12",
+      "updated": "2026-09-23",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ragnaros_heart.jpg",
       "iconUrls": {
@@ -86364,22 +86571,24 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병",
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/불시의파멸",
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/피의희열"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 3,
-        "linkDensity": 0.052,
+        "wikilinkCount": 6,
+        "synergyCount": 5,
+        "linkDensity": 0.053,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Hero-Talents\\원초적본능의힘.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-23"
       }
     },
     "434249": {

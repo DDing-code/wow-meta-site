@@ -1537,12 +1537,19 @@ function main() {
     assert(kbSkills[id]?.name === '한밤의 춤' && kbSkills[id]?.patch === '12.1', `Blood apex rank ${id} must keep the official Korean name and current patch`);
   }
   assert(kbSkills['1264405']?.description.includes('6%') && kbSkills['1264351']?.description.includes('8초'), 'Blood apex defense and proc duration must be documented separately');
+  for (const [id, name, fact] of [['317614', '피의 희열', '37.5%'], ['273953', '탐식', '15%'], ['194662', '신속한 부패', '85%'], ['391517', '흡혈의 구', '6배']]) {
+    assert(kbSkills[id]?.name === name && kbSkills[id]?.specs.includes('Blood') && kbSkills[id]?.description.includes(fact), `Blood 12.1 talent must have its current tooltip effect: ${name}`);
+  }
+  assert(kbSkills['434157']?.specs.includes('Blood') && kbSkills['434157']?.specs.includes('Unholy') && kbSkills['434157']?.description.includes('6%'), 'Visceral Strength must retain the later Blood hotfix and distinct Unholy effect');
   const bloodSynergies = JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies;
   assert(bloodSynergies['피로치를빚_골수분쇄']?.description?.includes('10중첩'), 'Blood Debt synergy must retain its authored KB mechanism through sync');
   assert(!bloodSynergies.deathknight_blood_deaths_caress_fatal_touch, 'Death\'s Caress must not link to Deadly Reach');
   assert(bloodSynergies.deathknight_blood_deadly_reach_death_strike?.participants.join(',') === '1264235,49998', 'Deadly Reach must link to Death Strike cleave');
   assert(bloodSynergies.deathknight_blood_dance_active_weapons?.participants.includes('1264405'), 'Blood apex defensive rank must connect to active weapons');
   assert(bloodSynergies.deathknight_blood_dance_rune_proc?.participants.includes('1264351'), 'Blood apex rune proc must connect to rune spenders');
+  assert(bloodSynergies['진홍빛스컬지_피의희열_원초적본능의힘']?.participants.includes('434157'), 'Blood Crimson Scourge spend must connect to Visceral Strength');
+  assert(bloodSynergies['피의역병_흡혈의구']?.description.includes('85%를 보호막에 곱하지'), 'Blood disease healing and Umbilicus shield must stay separate');
+  assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('흡혈의 구') && text.includes('6배'))), 'Blood guide must explain the actual Blood Plague shield condition');
   assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('활성 룬 무기 하나당') && text.includes('받는 피해를 6%'))), 'Blood guide must explain the current apex defensive value');
   assert(blood.inlineTermSpellIds?.['한밤의 춤'] === '1264506', 'Blood inline tooltip must choose the base apex rank rather than a same-name later rank');
   assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('핏빛 안개') && text.includes('18%'))), 'Blood guide must explain conditional Blood Mist and Sanguinary Burst');
