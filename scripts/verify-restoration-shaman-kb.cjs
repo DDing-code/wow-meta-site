@@ -187,3 +187,21 @@ for (const id of ['2008', '1270375', '355630']) assert(!support.includes(id));
 assert.deepEqual(synergies.synergies.shaman_common_purge_interrupt_cleanse.participants,
   ['370', '378773', '51886', '77130', '383016', '57994', '383013']);
 console.log('Shared Shaman 12.1 mobility, support, dispel and raid-buff graphs verified.');
+for (const [id, participants] of [
+  ['shaman_restoration_farseer_ancestor',
+    ['443450','443454','443423','443449','443444','443445','443451','443446','443418','443448','1270450','61295','1064','77472','51564','73685']],
+  ['shaman_restoration_riptide_chainheal',
+    ['61295','1064','51564','200072','382045','200076','1254251','381946','382039','470076','77472']],
+  ['shaman_restoration_totemic_surging',
+    ['444995','445034','445025','445029','445035','445036','5394','382030','1064','108280','98008','73920']],
+]) {
+  assert.equal(synergies.synergies[id].patch, '12.1');
+  assert.deepEqual(synergies.synergies[id].participants, participants);
+}
+for (const id of ['shaman_restoration_totemic_surging', 'shaman_restoration_farseer_ancestor']) {
+  assert(!synergies.synergies[id].participants.includes('2008'), `${id} must not include resurrection`);
+}
+const manuscript = require('node:fs').readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
+assert.match(manuscript, /label: '치유의 비 \(선견자\)'/);
+assert.match(manuscript, /label: '또는 쇄도하는 토템 \(토템술사\)'/);
+console.log('Restoration Farseer, Totemic and Riptide 12.1 graph branches verified.');

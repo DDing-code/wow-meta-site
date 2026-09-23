@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:46:50.198Z",
+    "generatedAt": "2026-09-23T05:03:00.536Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -16204,17 +16204,18 @@
         "443450",
         "443454",
         "443423",
-        "443444",
         "443449",
+        "443444",
+        "443445",
         "443451",
-        "382309",
-        "382732",
-        "207401",
+        "443446",
+        "443418",
+        "443448",
+        "1270450",
         "61295",
         "1064",
         "77472",
         "51564",
-        "114052",
         "73685"
       ],
       "class": "Shaman",
@@ -16224,20 +16225,16 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/승천",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/굽이치는물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/고대의각성",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/고대의손길",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/선조의활력"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/굽이치는물결"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\선조의부름-성난해일.md",
@@ -16257,14 +16254,9 @@
         "382045",
         "200076",
         "1254251",
-        "383222",
-        "1253090",
-        "1253093",
-        "1253099",
         "381946",
-        "462424",
-        "462587",
         "382039",
+        "470076",
         "77472"
       ],
       "class": "Shaman",
@@ -16274,27 +16266,22 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/격류",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/격류"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/굽이치는물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/원시해일의핵",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물길",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/범람의파도",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/해일의흐름",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/해일제어",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/날카로운물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/밀어닥치는파도",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/쾌속의물줄기",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물길",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/원시해일의핵",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/응축되는물",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/파도예언자의축복",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/조석수",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/하얀물"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/날카로운물결"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\성난해일-연쇄치유.md",
@@ -16309,25 +16296,16 @@
       "participants": [
         "444995",
         "445034",
-        "5394",
         "445025",
-        "445026",
-        "445027",
-        "445028",
-        "445030",
-        "445033",
+        "445029",
         "445035",
         "445036",
+        "5394",
         "382030",
-        "1267016",
-        "1267093",
-        "1267120",
-        "1252874",
-        "1252882",
-        "1253014",
-        "470076",
-        "73920",
-        "462486"
+        "1064",
+        "108280",
+        "98008",
+        "73920"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16336,21 +16314,17 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/폭우",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/치유의토템"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/치유의토템",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의해일토템",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/정신의고리토템",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물의토템특화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템-1267093",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/위안의비",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물배출",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/응축되는물",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/이중가산",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물의토템특화"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\쇄도하는토템-활발한토템.md",
