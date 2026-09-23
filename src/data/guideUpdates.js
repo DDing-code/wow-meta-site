@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '방어 전사 방패 밀쳐내기 순환·외침 12.1 검수', partial: true,
+    guideIds: ['warrior-protection'], commits: ['785f7778'],
+    body: '압도·압도자·전략가의 방패 밀쳐내기 초기화 경로와 참전·묵직한 반격 선택 관계를 KB·스펠 DB·가이드에서 분리했습니다. 사기의 외침은 대상 디버프로, 우렁찬 음성의 분노 생성은 현행 툴팁의 20으로 교정했습니다. 관련 연결 그래프에서 반격의 잘못된 발동 연결도 제거했으며 나머지 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '방어 전사 최후의 저항·기본 지속 효과 12.1 교정', partial: true,
     guideIds: ['warrior-protection'], commits: ['27d7dcc7'],
     body: '별도 사용 기술이었던 구 최후의 저항 ID 12975를 제거하고 방패의 벽에 연동되는 현행 특성 ID 1243659로 KB·스펠 DB·가이드를 교정했습니다. 선봉대·특화: 결정적 방어·반격의 효과와 기본 방어 연결도 검수했습니다. 방어 전문화의 나머지 특성·로그 검수는 진행 중입니다.' },
