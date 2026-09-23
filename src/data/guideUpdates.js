@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '회복 드루이드·운무 수도사 12.1 핫픽스 반영',
+    guideIds: ['druid-restoration', 'monk-mistweaver'], commits: ['4b6ba0ae'],
+    body: '9월 22일 회복 드루이드·운무 치유 상향과 광합성 오류 수정을 KB·스펠 DB·가이드에 반영했습니다. 8월 로그 선택률은 핫픽스 전 자료로 구분했습니다.' },
   { date: '2026-09-23', title: '수양·암흑 사제 12.1 핫픽스 반영',
     guideIds: ['priest-discipline', 'priest-shadow'], commits: ['75f533a4'],
     body: '수양의 던전 속죄 보너스와 회개 마나 조정, 암흑의 단일 피해 상향과 영혼의 연결·그늘폭발 광역 조정을 정본 KB·스펠 DB·가이드에 반영했습니다. 핫픽스 후 영웅 특성 우열은 아직 검증되지 않았습니다.' },
