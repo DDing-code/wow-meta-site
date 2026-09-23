@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '분노 전사 12.1 영웅 특성별 전투 흐름 분리', partial: true,
+    guideIds: ['warrior-fury'], commits: ['614ed80b'],
+    body: '학살자와 산왕의 오프닝·단일·광역 우선순위를 12.1 공개 딜사이클과 대조해 분리했습니다. 공통 오프닝에서 칼날폭풍과 우레 작렬을 함께 나열하지 않고, 선택 특성·시즌 2 세트 조건을 명시했습니다. 정본 KB도 갱신했으며 최신 로그와 전문화 전체 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '무기 전사 12.1 영웅 특성별 전투 흐름 교정', partial: true,
     guideIds: ['warrior-arms'], commits: ['3ee698bf'],
     body: '공개 12.1 딜사이클의 영웅·선택 특성별 조건을 분리했습니다. 한 오프닝에 칼날폭풍과 쇄파를 섞지 않고 학살자·거신 각각의 오프닝, 단일·광역 우선순위를 작성했습니다. 정본 KB도 갱신했으며 최신 로그 검수는 계속 진행 중입니다.' },
