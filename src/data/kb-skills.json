@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2880,
-        "withSynergies": 2083,
+        "withSynergies": 2084,
         "avgLinkDensity": "0.039"
       }
     }
@@ -11145,11 +11145,11 @@
       "cooldown": "30초",
       "castTime": "즉시",
       "resourceCost": "룬 1",
-      "range": "30미터",
+      "range": "30야드",
       "description": "# 죽음과 부패 (Death and Decay)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11163,15 +11163,17 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/죽음의순환"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 5,
-        "synergyCount": 2,
-        "linkDensity": 0.05,
+        "synergyCount": 3,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -11602,11 +11604,11 @@
       "cooldown": "15초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "근접",
+      "range": "15야드",
       "description": "# 정신 얼리기 (Mind Freeze)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11625,9 +11627,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.034,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -12136,7 +12138,7 @@
       "description": "# 죽음의 진군 (Death's Advance)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12153,9 +12155,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.023,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -12397,7 +12399,7 @@
       "description": "# 대마법 보호막 (Anti-Magic Shell)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12414,9 +12416,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -12447,7 +12449,7 @@
       "description": "# 얼음같은 인내력 (Icebound Fortitude)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12469,7 +12471,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -12605,7 +12607,7 @@
       "description": "# 리치의 혼 (Lichborne)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12617,14 +12619,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_raisedead.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/얼음같은인내력"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -12808,11 +12812,11 @@
       "cooldown": "25초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "30미터",
+      "range": "30야드",
       "description": "# 죽음의 손아귀 (Death Grip)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12829,9 +12833,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -13009,14 +13013,14 @@
       "icon": "spell_deathknight_antimagiczone",
       "iconName": "spell_deathknight_antimagiczone",
       "school": "",
-      "cooldown": "2분",
+      "cooldown": "4분",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "지정 위치",
+      "range": "30야드",
       "description": "# 대마법 지대 (Anti-Magic Zone)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -13033,9 +13037,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -86725,7 +86729,7 @@
       "description": "# 공포의 사신 (Grim Reaper)",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88016,7 +88020,7 @@
       "description": "# 사신의 징표",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88047,7 +88051,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 7,
-        "linkDensity": 0.039,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -88971,7 +88975,7 @@
       "description": "# 룬새김 판금 (Runic Carapace)",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88994,7 +88998,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.018,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -93432,7 +93436,7 @@
       "description": "# 기수의 용사 (Rider's Champion)",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -93448,7 +93452,7 @@
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
           "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
-          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/부패"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -93456,7 +93460,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.018,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {

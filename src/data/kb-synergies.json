@@ -284,8 +284,7 @@
       "synergyType": "shared_magic_survival",
       "participants": [
         "48707",
-        "51052",
-        "49039"
+        "51052"
       ],
       "class": "DeathKnight",
       "spec": "공용",
@@ -296,14 +295,11 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/대마법보호막",
         "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/대마법지대",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/리치의혼",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의진군",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의손아귀",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/정신얼리기"
+        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/얼음같은인내력"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -320,8 +316,7 @@
       "participants": [
         "49576",
         "48265",
-        "47528",
-        "43265"
+        "47528"
       ],
       "class": "DeathKnight",
       "spec": "공용",
@@ -332,15 +327,11 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의손아귀",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의진군",
         "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/정신얼리기",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/대마법보호막",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/대마법지대",
-        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/리치의혼"
+        "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음의진군"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
