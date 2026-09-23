@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2879,
-        "withSynergies": 2041,
+        "withSynergies": 2047,
         "avgLinkDensity": "0.039"
       }
     }
@@ -94002,10 +94002,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "죽음의 추진력은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 죽음의 추진력 특성 전사 필요 급살로 입힌 피해의 15%만큼 생명력을 회복합니다.",
+      "description": "학살자의 급살 관련 회복 특성이다. 공식 한국어 툴팁은 급살로 입힌 피해의 15%만큼 생명력을 회복한다고 설명한다. 모든 피해에 적용되는 상시 생명력 흡수나 마무리 일격의 피해 증가 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94018,13 +94018,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 0,
-        "linkDensity": 0.043,
+        "wikilinkCount": 7,
+        "synergyCount": 1,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -94051,10 +94053,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무자비은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 무자비 특성 전사 필요 집행자가 추가로 중첩 하나당 마무리 일격의 치명타 및 극대화율과 치명타 및 극대화 피해를 3%만큼 증가시킵니다.",
+      "description": "학살자의 집행자 강화 특성이다. 집행자 중첩 하나당 마무리 일격의 치명타 및 극대화율과 치명타 및 극대화 피해가 각각 3% 증가한다. 기본 집행자의 마무리 일격 피해 증가와는 별도 효과이며, 모든 기술에 적용되는 치명타 증가가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94068,12 +94070,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/학살자의-일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 4,
+        "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -94100,10 +94104,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "압도적인 칼날은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 압도적인 칼날 특성 전사 필요 칼날폭풍으로 공격할 때마다 영향을 받는 모든 적에게 압도당함 효과를 부여해 20초 동안 1 %의 추가 피해를 입힙니다. 최대 5번까지 중첩됩니다.",
+      "description": "칼날폭풍이 적중할 때마다 영향을 받는 각 적에게 압도당함을 부여한다. 대상은 중첩 하나당 20초 동안 1%의 추가 피해를 받으며 최대 5중첩이다. 집행자는 자신에게 쌓이는 강화 효과인 반면 압도당함은 맞은 대상에게 쌓인다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94115,14 +94119,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_10_specialization_blacksmithing_blades_color1.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 0,
-        "linkDensity": 0.028,
+        "wikilinkCount": 5,
+        "synergyCount": 1,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -94296,10 +94302,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "가혹한 추적은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 가혹한 추적 특성 전사 필요 돌진 사용 시 3초 동안 이동 속도가 70%만큼 증가합니다. 돌진 사용 시 모든 이동 방해 효과를 제거합니다. 이 효과는 30초에 한 번씩만 발동합니다.",
+      "description": "돌진 사용 시 이동 방해 효과를 제거하고 3초 동안 이동 속도가 70% 증가한다. 이 특성의 효과에는 30초 내부 재발동 제한이 있다. 돌진 자체의 재사용 대기시간이나 이동 거리를 바꾸는 효과가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94311,14 +94317,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/돌진"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -94394,10 +94402,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "말살의 회오리바람은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 말살의 회오리바람 특성 전사 필요 칼날폭풍으로 공격할 때마다 모든 대상에게 20%의 추가 피해를 나누어 입힙니다.",
+      "description": "칼날폭풍의 매 공격마다 모든 대상에 20%의 추가 피해를 나누어 입힌다. 모든 대상이 각각 20%씩 추가로 받는다는 뜻이 아니라 총 추가 피해가 나뉘는 효과다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94409,14 +94417,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bladestorm.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -94497,10 +94507,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "붉은돌격대의 무자비함은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 붉은돌격대의 무자비함 특성 전사 필요 급살 사용 시 칼날폭풍의 재사용 대기시간이 5초만큼 감소하고, 자신의 집행자 중첩 하나당 주 대상에게 압도당함 중첩 1개를 부여합니다. 칼날폭풍의 지속시간 동안 들이치기와 폭풍망치를 사용할 수 있습니다. 칼날폭풍의 공격력이 20%만큼 증가합니다.",
+      "description": "학살자 칼날폭풍의 사용 간격과 실행 중 행동을 바꾸는 특성이다. 급살을 사용하면 칼날폭풍 재사용 대기시간이 5초 줄고, 자신의 집행자 중첩 하나당 주 대상에게 압도당함 1중첩을 부여한다. 칼날폭풍 중 들이치기와 폭풍망치를 사용할 수 있으며 칼날폭풍 피해가 20% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -94513,13 +94523,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -140171,10 +140183,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "격렬한 희열은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 격렬한 희열 특성 전사 필요 칼날폭풍 사용 시 전투 몰입 상태가 되어, 칼날폭풍이 끝난 후 8초 동안 가속이 15%만큼 증가합니다.",
+      "description": "칼날폭풍을 사용하면 전투 몰입 상태가 되며, 칼날폭풍이 끝난 뒤 8초 동안 가속이 15% 증가한다. 가속 구간은 시전 시작 직후가 아니라 칼날폭풍 종료 후에 열린다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140186,14 +140198,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_butcher_exsanguination.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -140220,10 +140234,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "치명적인 집중은 Slayer 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 치명적인 집중 특성 전사 필요 집행자의 지속시간이 6초만큼 증가합니다.",
+      "description": "집행자의 지속시간을 6초 늘리는 학살자 특성이다. 기본 12초 집행자는 이 특성을 선택하면 18초 동안 유지된다. 발동 확률이나 중첩당 피해 증가량을 높이는 효과는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140237,12 +140251,14 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/학살자의-일격"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
