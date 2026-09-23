@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '혈기 죽음의 기사 12.1 기본 기술·특성 교정', partial: true,
+    guideIds: ['deathknight-blood'], commits: ['a22c2d5d'],
+    body: '혈기 기술·특성 11개와 시너지 연결을 현행 한국어 툴팁으로 대조했습니다. 치명적인 접촉을 죽음의 마수 원거리 효과로 잘못 연결하던 노트를 분리하고, 핏빛 안개·유혈의 폭발의 실제 발동 조건과 12.1 회복 수치를 KB·DB·가이드에 반영했습니다. 나머지 영웅 특성·최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '죽음의 기사 공용 기술·영웅 특성 12.1 검수', partial: true,
     guideIds: ['deathknight-blood', 'deathknight-frost', 'deathknight-unholy'], commits: ['c297fe6c'],
     body: '공용 기술 8개, 공유 영웅 특성 4개와 시너지 2개를 현행 한국어 툴팁 및 Blizzard 12.1 변경 내역에 맞춰 교정했습니다. 대마법 지대와 정신 얼리기의 구버전 수치, 부정 죽음과 부패의 잘못된 광역 연결, 사신의 징표 사망 시 전이 조건을 바로잡았습니다. 혈기·냉기·부정 전체 특성 및 최신 로그 검수는 진행 중입니다.' },
