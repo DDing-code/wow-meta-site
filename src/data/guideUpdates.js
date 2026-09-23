@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '학살자 영웅 특성 12.1 효과 검수', partial: true,
+    guideIds: ['warrior-fury', 'warrior-arms'], commits: ['dee9e614'],
+    body: '급살 회복, 집행자 강화·지속시간, 압도당함, 돌진 이동 보상, 칼날폭풍 추가 피해·쿨다운·종료 후 가속을 한국어 Wowhead 툴팁에 맞춰 KB·DB·분노 가이드에 반영했습니다. 전체 전환 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '전사 영웅 특성 12.1 툴팁 교정', partial: true,
     guideIds: ['warrior-fury', 'warrior-protection', 'warrior-arms'], commits: ['ee323619'],
     body: '분노·방어 산왕의 우레 작렬·폭풍의 화신과 무기·분노 학살자의 일격·학살자의 악의를 현재 한국어 툴팁으로 다시 작성했습니다. 우레 작렬의 중첩과 학살자의 전문화별 발동률을 분리했으며 전체 전환 검수는 진행 중입니다.' },
