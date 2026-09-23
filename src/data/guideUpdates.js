@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '주술사 공용 기술 12.1 검수',
+    guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['c0e9a76a'],
+    body: '구속·속박 토템, 보호막, 자연의 신속함, 치유의 토템, 진영별 가속 주문 등 공용 기술 15개를 한국어 라이브 툴팁에 맞춰 교정했습니다. 고양·복원 원고의 전체 전환 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 주문·특성 검수', partial: true,
     guideIds: ['shaman-restoration'], commits: ['764379e5'],
     body: '복원 고유 스킬·특성 50개를 현재 한국어 툴팁과 대조하고, 폭우 특성·시전 주문을 분리했습니다. 고대의 환영을 비전투 파티 부활로 바로잡았습니다. 영웅 특성·세트·최신 로그 검수는 계속 진행 중입니다.' },
