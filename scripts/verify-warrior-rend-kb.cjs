@@ -701,4 +701,17 @@ assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-BLEED-WOUND'].participants, ['
 assert(!synergies['SY-WARRIOR-PROTECTION-BLEED-WOUND'].participants.includes('6572'));
 assert(!guide.includes('Blizzard 2026-06-02 핫픽스는 방어 전사의 마법 피해'));
 assert.match(guide, /2026-08-25 긴급 수정에서 마법 피해 감소가 8%/);
+const shieldMitigation = synergies['SY-WARRIOR-PROTECTION-SHIELD-BLOCK-IGNORE-PAIN'];
+assert.equal(shieldMitigation.patch, '12.1');
+assert.deepEqual(shieldMitigation.participants, ['2565', '190456', '23922']);
+assert(!shieldMitigation.linkedTalents.some(path => /철통-철벽-방패|수호자의-아이기스/.test(path)));
+const mountainThane = synergies['SY-WARRIOR-PROTECTION-MOUNTAIN-THANE-SHIELD-SLAM'];
+assert.equal(mountainThane.patch, '12.1');
+assert.deepEqual(mountainThane.participants, ['23922', '435607', '6343', '434969', '6572', '163201']);
+assert(!JSON.stringify(mountainThane).includes('폭풍-방패'));
+assert(!mountainThane.linkedSkills.some(path => path.endsWith('/방패-돌격')));
+const majorDefensive = synergies['SY-WARRIOR-PROTECTION-DEMO-SHOUT-WALL'];
+assert.equal(majorDefensive.patch, '12.1');
+assert.deepEqual(majorDefensive.participants, ['1160', '871']);
+assert(!majorDefensive.linkedTalents.some(path => path.endsWith('/훼방의-외침')));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

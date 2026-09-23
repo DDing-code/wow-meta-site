@@ -20306,7 +20306,6 @@
       "synergyType": "active-mitigation",
       "participants": [
         "2565",
-        "231847",
         "190456",
         "23922"
       ],
@@ -20314,26 +20313,19 @@
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/특화-결정적-방어",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/반격",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기-231847"
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/충격-대비",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/인내하는-방어",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/충격-대비",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/난공불락",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/백절불굴",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/불굴의-태세",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔혹한-활력",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/철통-철벽-방패",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/수호자의-아이기스",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/방어구-전문화"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/백절불굴"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\방패-올리기-고통-감내-방패-밀쳐내기.md",
@@ -20346,26 +20338,27 @@
       "type": "synergy",
       "synergyType": "mountain-thane-thunder",
       "participants": [
-        "434969",
+        "23922",
         "435607",
-        "23922"
+        "6343",
+        "434969",
+        "6572",
+        "163201"
       ],
       "class": "Warrior",
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/차디찬-복수",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/격렬한-울분"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/차디찬-복수"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\벼락-우레-작렬-방패-밀쳐내기.md",
@@ -20379,30 +20372,22 @@
       "synergyType": "major-defensive",
       "participants": [
         "1160",
-        "871",
-        "397103"
+        "871"
       ],
       "class": "Warrior",
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/사기의-외침",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패의-벽"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/수호자의-아이기스",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/우렁찬-음성",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/훼방의-외침",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/불길을-지나",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/주문파괴자",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/쪼그리기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/인내하는-방어",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/철통-철벽-방패",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔혹한-활력",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/백절불굴"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/수호자의-아이기스",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/철통-철벽-방패"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\사기의-외침-방패의-벽-수호자의-아이기스.md",
