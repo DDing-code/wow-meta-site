@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 추천 빌드·폭우 분기 교정', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['3d838036'],
+    body: '12.1 Wowhead·Icy Veins·Method 특성 가이드에 맞춰 토템술사를 레이드·쐐기 기본 추천으로, 선견자를 상황별 대안으로 정리했습니다. 폭우는 기본 빌드의 필수 버튼이 아닌 선택 특성으로 오프닝·우선순위·차트를 고쳤습니다. 최신 로그 선택률은 검증되지 않아 인용하지 않았고 전체 세트·로그 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 쿨기 선택·시너지 교정', partial: true,
     guideIds: ['shaman-restoration'], commits: ['3f882c93'],
     body: '승천과 치유의 해일 토템이 양자택일인 점을 KB·스펠 DB·가이드·차트에 반영했습니다. 보호막 유지, 정신의 고리 토템, 직접 치유와 마나 관리 시너지도 교정해 복원 시너지 10개를 12.1로 정리했습니다. 전체 빌드·최신 로그 검수는 진행 중입니다.' },
