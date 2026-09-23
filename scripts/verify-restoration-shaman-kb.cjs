@@ -217,7 +217,9 @@ assert.match(skills[1252874].description, /치유의 비.*10%.*0\.5초/);
 assert(!skills[462486].description.includes('최대 생명력'));
 assert(skills[462486].synergies.relatedSkills.some(link => link.endsWith('/폭우시전')));
 assert(skills[207778].synergies.relatedSkills.some(link => link.endsWith('/폭우')));
-assert.match(manuscript, /치유의 비\/쇄도하는 토템 뒤 16초/);
+assert.match(manuscript, /폭우 특성 \+ 지역 치유 뒤 16초/);
+assert.match(manuscript, /12\.1 레이드·쐐기 기본 추천입니다/);
+assert.match(manuscript, /폭우 \(특성 선택 시\)/);
 console.log('Restoration Healing Rain and Downpour 12.1 branch effects verified.');
 for (const [id, participants] of [
   ['shaman_restoration_sustain_shields',
@@ -241,4 +243,6 @@ const detailPage = require('node:fs').readFileSync(require.resolve('../src/pages
 assert.match(detailPage, /label: '해일 토템 선택'/);
 assert.match(detailPage, /label: '승천 선택'/);
 assert.match(detailPage, /두 행은 한 빌드의 연속 사용이 아닌 대안/);
+assert.match(detailPage, /label: '폭우 선택'/);
+assert.match(detailPage, /폭우 행은 특성을 선택한 빌드에만 해당합니다/);
 console.log('Restoration 12.1 shield, mana, cooldown-choice graphs verified.');
