@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '주술사 선견자 영웅 특성 12.1 교정',
+    guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['69d7c19a'],
+    body: '선견자 영웅 특성 16개를 현재 한국어 툴팁과 정기·복원 가이드로 다시 확인했습니다. 선조 소환·활성·퇴장과 양자택일 특성을 분리하고, 선조의 신속함을 30초 사용 기술로 교정했습니다. KB·스펠 DB·연결 그래프를 동기화했으며 고양·복원 가이드 원고의 전체 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '주술사 공용 특성 38개 12.1 교정',
     guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['82be6d55'],
     body: '남아 있던 공용 특성 19개를 한국어 툴팁·블리자드 변경 내역·전문화별 가이드와 대조해 공용 특성 38개 문서를 12.1로 갱신했습니다. 하늘의 격노를 실제 시전하는 공대 버프로 바로잡고, 체력·마법 방어·이동·토템·속성 피해 시너지의 잘못된 연결을 정리했습니다. 영웅 특성 및 고양·복원 가이드 전체 검수는 진행 중입니다.' },
