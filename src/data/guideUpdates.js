@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 치유 쿨기 선택·연계 교정', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['4f64fb12'],
+    body: '치유의 해일 토템과 승천의 선택 기준을 직접 시전 가능 여부와 이동 구간으로 나눴습니다. 갈라지는 지류·활발한 토템·원시 촉매의 조건부 효과를 정본 KB, 스펠·연결 DB, 가이드에 반영했습니다. 전체 세트·로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '고양 주술사 12.1 광역·쿨기 연결 교정', partial: true,
     guideIds: ['shaman-enhancement'], commits: ['e771c349'],
     body: '낙뢰와 연쇄 번개의 독립적인 역할, 야수 정령 패시브와 승천·파멸의 바람 선택 관계를 정본 KB·시너지 DB에 반영했습니다. 연결 그래프의 6월 점유율은 현재 수치처럼 쓰지 않도록 정리했습니다. 전체 세트·로그 검수는 진행 중입니다.' },
