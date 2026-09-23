@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '황폐 기원사 12.1 운용·KB 검수', partial: true,
+    guideIds: ['evoker-devastation'], commits: ['6c0516a9'],
+    body: '황폐 주문·특성 14개와 시너지 5개, 화염 흡수의 황폐 전용 효과를 현행 한국어 툴팁으로 교정했습니다. 시즌 2 비늘사령관 기본 추천, 영웅 특성별 파열·기염 분기, 산산이 부서지는 별의 자동 발동, 분노 상승 1·3등급의 해방된 불길 차이를 가이드에 반영했습니다. 최신 상위 로그와 전체 세트 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '방어 전사 12.1 연결 그래프 검수', partial: true,
     guideIds: ['warrior-protection'], commits: ['fc6a5d85'],
     body: '방패 올리기·고통 감내·방패 밀쳐내기, 산왕 벼락·우레 작렬, 사기의 외침·방패의 벽 연결을 정본 KB와 사이트 시너지 DB에서 다시 구분했습니다. 폭풍 방패를 피해 루프에서 빼고, 방패의 벽 선택 특성의 효과를 한 빌드에 합산하지 않도록 정리했습니다. 다른 전문화와 최신 로그 검수는 진행 중입니다.' },
