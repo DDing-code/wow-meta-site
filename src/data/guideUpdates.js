@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '혈기 죽음의 기사 12.1 생존 특성·산레인 후속 조정', partial: true,
+    guideIds: ['deathknight-blood'], commits: ['1302c2ab'],
+    body: '피의 희열·탐식·신속한 부패·흡혈의 구를 현재 한국어 툴팁으로 KB와 스펠 DB에 추가하고 발동·치유·보호막 조건을 가이드와 연결했습니다. 산레인 원초적 본능의 힘은 Blizzard의 후속 조정에 맞춰 혈기 힘 6%로 교정했습니다. 수혈의 공식 조정 수치와 툴팁 불일치, 나머지 특성·최신 로그는 계속 검수 중입니다.' },
   { date: '2026-09-23', title: '혈기 죽음의 기사 한밤의 춤 12.1 단계별 검수', partial: true,
     guideIds: ['deathknight-blood'], commits: ['39da86fb'],
     body: '한밤의 춤 첫 단계 무료 심장 강타, 중간 단계 활성 룬 무기당 공격·방어 강화, 마지막 단계 룬 소비 시 추가 무기를 각각 KB·스펠 DB·시너지 그래프로 분리했습니다. 공식 12.1 변경의 무기당 피해 감소 6%와 한국어 툴팁의 동적 0% 표시를 구분하고, 본문 툴팁은 기본 단계 ID에 연결했습니다. 나머지 특성·최신 로그 검수는 진행 중입니다.' },
