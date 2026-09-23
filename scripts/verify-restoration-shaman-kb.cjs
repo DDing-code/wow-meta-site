@@ -166,3 +166,24 @@ assert(farseer.participants.includes('443454'));
 assert(farseer.participants.includes('443441'));
 assert(!farseer.participants.includes('2008'), 'Resurrection must not be a Farseer synergy node');
 console.log('Shared Farseer 12.1 effects and active ability verified.');
+assert.equal(skills[2825].patch, '12.1');
+assert.equal(skills[2825].castTime, '즉시');
+assert.equal(skills[2825].cooldown, '5분');
+assert.equal(skills[2825].resourceCost, '기본 마나 0.4%');
+assert.deepEqual(synergies.synergies.shaman_common_bloodlust_heroism_party_cooldown.participants,
+  ['2825', '32182']);
+for (const id of ['shaman_common_ghost_wolf_spiritwalker_mobility',
+  'shaman_common_earth_shield_healing_stream_support',
+  'shaman_common_purge_interrupt_cleanse',
+  'shaman_common_bloodlust_heroism_party_cooldown']) {
+  assert.equal(synergies.synergies[id].patch, '12.1', `${id} must be current`);
+}
+const mobility = synergies.synergies.shaman_common_ghost_wolf_spiritwalker_mobility.participants;
+assert(mobility.includes('378077'), 'Spiritwalker Aegis must be in the mobility hub');
+assert(!mobility.includes('1270375') && !mobility.includes('355630'));
+const support = synergies.synergies.shaman_common_earth_shield_healing_stream_support.participants;
+for (const id of ['383010', '462454', '1217622']) assert(support.includes(id));
+for (const id of ['2008', '1270375', '355630']) assert(!support.includes(id));
+assert.deepEqual(synergies.synergies.shaman_common_purge_interrupt_cleanse.participants,
+  ['370', '378773', '51886', '77130', '383016', '57994', '383013']);
+console.log('Shared Shaman 12.1 mobility, support, dispel and raid-buff graphs verified.');

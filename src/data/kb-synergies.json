@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:37:49.093Z",
+    "generatedAt": "2026-09-23T04:46:50.198Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -15811,13 +15811,12 @@
         "58875",
         "79206",
         "192088",
+        "378077",
         "192077",
         "378075",
         "462817",
         "462791",
-        "192063",
-        "1270375",
-        "355630"
+        "192063"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -15828,7 +15827,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/늑대정령",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/돌풍",
@@ -15837,15 +15836,14 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼나그네의은총",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/늑대정령",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/선조의늑대친화",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/알아키르의바람",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/늑대정령",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/천둥발",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/제트기류",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼나그네의보호",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/자비로운영혼",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영적각성",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정령의걸음",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/자비로운영혼",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼나그네의보호",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/제트기류",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/승천의바람"
       ],
       "source": {
@@ -15863,13 +15861,10 @@
         "5394",
         "378081",
         "378211",
-        "381930",
-        "2008",
-        "381689",
-        "1270375",
-        "355630",
-        "1270350",
-        "192106"
+        "383010",
+        "462454",
+        "1217622",
+        "1270350"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -15880,25 +15875,19 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/대지의보호막",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/치유의토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/고대의영혼",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개보호막",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼이동"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/신선한물",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/마나샘",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영적각성",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/바람장막",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/본능적인강화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/넘쳐나는생명",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정령의궤도",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/반응성수호물",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정령의궤도"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/테라제인의탄력",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/본능적인강화",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/신선한물"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Synergies\\주술사공용-대지의보호막-치유토템-지원.md",
@@ -16012,11 +16001,6 @@
         "77130",
         "383016",
         "57994",
-        "51514",
-        "196840",
-        "462762",
-        "462764",
-        "204268",
         "383013"
       ],
       "class": "Shaman",
@@ -16028,25 +16012,19 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/정화",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/날카로운바람",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/냉기충격",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼정화-77130",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/사술",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/독정화토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/축전토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/속박의토템"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/독정화토템"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/상급정화",
         "08-직업별-Knowledge-Base/11-주술사/공용/Talents/영혼정화연마",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/냉기의감옥",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/극지의눈폭풍",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/부두숙련"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/바람장막"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Synergies\\주술사공용-정화-차단-해제.md",
@@ -16112,12 +16090,7 @@
       "synergyType": "party_cooldown",
       "participants": [
         "2825",
-        "32182",
-        "192077",
-        "5394",
-        "8143",
-        "383013",
-        "192058"
+        "32182"
       ],
       "class": "Shaman",
       "spec": "공용",
@@ -16128,21 +16101,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/피의욕망",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영웅심",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/바람질주토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/진동의토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/독정화토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/치유의토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/축전토템",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영혼이동",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/정화",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/날카로운바람"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/영웅심"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/하늘의격노"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Synergies\\주술사공용-피의욕망-파티쿨기.md",
         "lastUpdate": ""

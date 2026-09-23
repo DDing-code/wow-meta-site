@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:37:49.092Z",
+    "generatedAt": "2026-09-23T04:46:50.197Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -4601,10 +4601,10 @@
       "icon": "spell_nature_bloodlust",
       "iconName": "spell_nature_bloodlust",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
+      "cooldown": "5분",
+      "castTime": "즉시",
+      "resourceCost": "기본 마나 0.4%",
+      "range": "파티 및 공격대",
       "description": "호드 주술사의 파티·공격대 가속 주문이다. 40초 동안 가속을 30% 높이고, 효과를 받은 대상은 10분 동안 같은 계열의 가속 효과를 다시 받지 못한다. 얼라이언스의 영웅심과 역할이 같다. 즉시 시전, 재사용 대기시간 5분이다.",
       "category": "ability",
       "tags": [],
