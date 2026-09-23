@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '전사 공용 기술·시너지 12.1 검수', partial: true,
+    guideIds: ['warrior-arms', 'warrior-fury', 'warrior-protection'], commits: ['6b856f59'],
+    body: '공용 기술 11개와 공용 시너지의 효과·전문화 범위를 KB·스펠 DB에서 교정했습니다. 방어 전용 용솟음치는 폭풍을 분리하고 삭제된 천둥의 포효를 현행 그래프에서 제외했습니다. 거신 및 무기·방어 전문화 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '전사 산왕·학살자 영웅 특성 12.1 추가 검수', partial: true,
     guideIds: ['warrior-fury', 'warrior-protection', 'warrior-arms'], commits: ['0f74fbfc'],
     body: '산왕 12개와 학살자 4개 특성의 발동 조건·전문화별 효과를 현재 한국어 툴팁에 맞춰 정본 KB와 스펠 DB에 반영했습니다. 분노·방어 가이드의 우레 작렬 충전 조건과 분노 학살자의 칼날폭풍 후 광란 강화도 교정했습니다. 전사 전체 전환 검수는 진행 중입니다.' },
