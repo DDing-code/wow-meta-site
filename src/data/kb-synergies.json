@@ -4,8 +4,8 @@
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 601,
-    "rawTotalSynergies": 601,
+    "totalSynergies": 603,
+    "rawTotalSynergies": 603,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -25,7 +25,8 @@
       "death-strike-cleave": 1,
       "blood-debt-marrowrend": 1,
       "blood-shield-bloodshot": 1,
-      "apex-defensive-window": 1,
+      "apex-rune-proc": 1,
+      "apex-defensive-window": 2,
       "damage": 4,
       "survival-mobility": 1,
       "dispels-enrage-control": 1,
@@ -261,7 +262,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 29,
+      "DeathKnight": 31,
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
@@ -1152,6 +1153,36 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "deathknight_blood_dance_rune_proc": {
+      "id": "deathknight_blood_dance_rune_proc",
+      "name": "룬 소비와 한밤의 춤 추가 무기",
+      "description": "한밤의 춤 마지막 단계는 룬 소비 시 확률로 8초짜리 추가 룬 무기를 부릅니다. 심장 강타·골수분쇄의 실제 룬 소비와 연결되며 무료 심장 강타나 죽음의 일격의 룬 마력 소비를 같은 조건으로 세지 않습니다.",
+      "type": "synergy",
+      "synergyType": "apex-rune-proc",
+      "participants": [
+        "1264351",
+        "206930",
+        "195182",
+        "49028"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../Skills/심장강타",
+        "../Skills/골수분쇄",
+        "../Skills/죽음의일격",
+        "../Skills/춤추는룬무기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\한밤의춤-룬소모-추가무기.md",
+        "lastUpdate": "2026-09-23"
+      }
+    },
     "한밤의춤_춤추는룬무기": {
       "id": "한밤의춤_춤추는룬무기",
       "name": "룬 무기와 한밤의 춤",
@@ -1179,6 +1210,32 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\한밤의춤-춤추는룬무기.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "deathknight_blood_dance_active_weapons": {
+      "id": "deathknight_blood_dance_active_weapons",
+      "name": "한밤의 춤과 활성 룬 무기 수",
+      "description": "한밤의 춤 강화 단계는 활성 춤추는 룬 무기 하나당 공격력과 피해 감소를 부여합니다. 12.1 피해 감소는 무기당 6%이며, 직접 시전과 추가 소환을 구분해 봅니다.",
+      "type": "synergy",
+      "synergyType": "apex-defensive-window",
+      "participants": [
+        "1264405",
+        "49028",
+        "1264351"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "../Skills/춤추는룬무기"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\한밤의춤-활성무기-방어.md",
+        "lastUpdate": "2026-09-23"
       }
     },
     "demon-hunter-common-disrupt-consume-chaos-nova": {

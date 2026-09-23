@@ -4,15 +4,15 @@
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2963,
-    "rawTotalSkills": 2963,
+    "totalSkills": 2965,
+    "rawTotalSkills": 2965,
     "duplicateIds": [],
-    "totalSynergies": 601,
+    "totalSynergies": 603,
     "stats": {
-      "total": 2963,
+      "total": 2965,
       "byType": {
         "buff": 137,
-        "hero-talent": 546,
+        "hero-talent": 548,
         "atomic-skill": 553,
         "proc": 29,
         "skill": 125,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 112,
+        "DeathKnight": 114,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -48,7 +48,7 @@
         "DeathKnight-공용": 17,
         "DeathKnight-냉기": 32,
         "DeathKnight-부정": 40,
-        "DeathKnight-혈기": 23,
+        "DeathKnight-혈기": 25,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2881,
-        "withSynergies": 2086,
+        "withWikilinks": 2883,
+        "withSynergies": 2088,
         "avgLinkDensity": "0.039"
       }
     }
@@ -133999,6 +133999,57 @@
         "lastUpdate": ""
       }
     },
+    "1264351": {
+      "id": "1264351",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "한밤의 춤",
+      "koreanName": "한밤의 춤",
+      "englishName": "Dance of Midnight",
+      "icon": "ability_demonhunter_bladedance",
+      "iconName": "ability_demonhunter_bladedance",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "룬을 소모할 때 일정 확률로 춤추는 룬 무기가 8초 동안 추가로 소환됩니다. 직접 누르는 새 버튼이나 룬 마력을 소모하는 죽음의 일격 발동이 아닙니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-23",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_bladedance.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_bladedance.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_bladedance.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/심장강타",
+          "../Skills/골수분쇄"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Hero-Talents\\한밤의춤-추가무기.md",
+        "lastUpdate": "2026-09-23"
+      }
+    },
     "1264359": {
       "id": "1264359",
       "type": "atomic-skill",
@@ -134052,6 +134103,56 @@
         "lastUpdate": ""
       }
     },
+    "1264405": {
+      "id": "1264405",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "한밤의 춤",
+      "koreanName": "한밤의 춤",
+      "englishName": "Dance of Midnight",
+      "icon": "ability_demonhunter_bladedance",
+      "iconName": "ability_demonhunter_bladedance",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "활성화된 춤추는 룬 무기 하나당 공격력이 증가하고 받는 피해가 감소하는 지속 효과입니다. 강화 단계의 첫 포인트는 무기당 공격력 3%, 다음 포인트는 6%이며, 12.1에서는 무기당 받는 피해 감소가 4%에서 6%로 상향됐습니다. 한국어 Wowhead 툴팁 본문은 특성 포인트에 따라 바뀌는 값을 0%로 표시하므로 그 숫자를 실제 효과로 읽지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-23",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_bladedance.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_bladedance.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_bladedance.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_bladedance.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "../Skills/춤추는룬무기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Hero-Talents\\한밤의춤-강화.md",
+        "lastUpdate": "2026-09-23"
+      }
+    },
     "1264506": {
       "id": "1264506",
       "type": "hero-talent",
@@ -134070,7 +134171,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "기본 노드 1264506: 춤추는 룬 무기 중 무기 막기에 성공하면 다음 심장 강타가 룬을 소모하지 않고 추가 피해 150%를 입힙니다. 내부 쿨다운은 3초입니다. 다른 단계의 추가 무기 소환과 피해 감소 수치를 이 노드의 툴팁에 합치지 않습니다.",
+      "description": "기본 노드 1264506: 춤추는 룬 무기 중 무기 막기에 성공하면 다음 심장 강타가 룬을 소모하지 않고 추가 피해 150%를 입힙니다. 내부 쿨다운은 3초입니다. 무기 수에 따른 공격·방어 강화와 룬 소비에 따른 추가 소환은 별도 단계입니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -134094,9 +134195,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.014,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {

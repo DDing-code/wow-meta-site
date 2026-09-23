@@ -1533,10 +1533,18 @@ function main() {
   assert(kbSkills['195181']?.castTime === '지속 효과', 'Bone Shield is a buff, not an independently cast defensive');
   assert(kbSkills['195292']?.cooldown === '6초' && kbSkills['195292']?.patch === '12.1', 'Death\'s Caress must retain its current cooldown');
   assert(kbSkills['1263774']?.name === '핏빛 안개' && kbSkills['1264235']?.patch === '12.1', 'Blood Mist and Deadly Reach must use current talent IDs');
+  for (const id of ['1264506', '1264405', '1264351']) {
+    assert(kbSkills[id]?.name === '한밤의 춤' && kbSkills[id]?.patch === '12.1', `Blood apex rank ${id} must keep the official Korean name and current patch`);
+  }
+  assert(kbSkills['1264405']?.description.includes('6%') && kbSkills['1264351']?.description.includes('8초'), 'Blood apex defense and proc duration must be documented separately');
   const bloodSynergies = JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies;
   assert(bloodSynergies['피로치를빚_골수분쇄']?.description?.includes('10중첩'), 'Blood Debt synergy must retain its authored KB mechanism through sync');
   assert(!bloodSynergies.deathknight_blood_deaths_caress_fatal_touch, 'Death\'s Caress must not link to Deadly Reach');
   assert(bloodSynergies.deathknight_blood_deadly_reach_death_strike?.participants.join(',') === '1264235,49998', 'Deadly Reach must link to Death Strike cleave');
+  assert(bloodSynergies.deathknight_blood_dance_active_weapons?.participants.includes('1264405'), 'Blood apex defensive rank must connect to active weapons');
+  assert(bloodSynergies.deathknight_blood_dance_rune_proc?.participants.includes('1264351'), 'Blood apex rune proc must connect to rune spenders');
+  assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('활성 룬 무기 하나당') && text.includes('받는 피해를 6%'))), 'Blood guide must explain the current apex defensive value');
+  assert(blood.inlineTermSpellIds?.['한밤의 춤'] === '1264506', 'Blood inline tooltip must choose the base apex rank rather than a same-name later rank');
   assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('핏빛 안개') && text.includes('18%'))), 'Blood guide must explain conditional Blood Mist and Sanguinary Burst');
   assert(blood.opener.steps.some(step => step.skillId === '195182' && step.trigger.includes('10중첩')), 'Blood combat flow must include the tier-set Marrowrend condition');
   assert(!blood.opener.steps.some(step => ['1310372', '1296651', '441378'].includes(step.skillId)), 'Blood passive tier/proc effects must not be cast nodes');

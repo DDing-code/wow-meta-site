@@ -576,6 +576,11 @@ function buildInlineTerms(data, manuscript) {
     ...(data?.specSkills || []),
     ...(data?.commonSkills || []),
   ].sort((a, b) => {
+    const overrideIdA = manuscript?.inlineTermSpellIds?.[skillName(a)];
+    const overrideIdB = manuscript?.inlineTermSpellIds?.[skillName(b)];
+    const aOverride = overrideIdA && String(a?.id) === String(overrideIdA) ? 0 : 1;
+    const bOverride = overrideIdB && String(b?.id) === String(overrideIdB) ? 0 : 1;
+    if (aOverride !== bOverride) return aOverride - bOverride;
     const aPreferred = preferredSkillIds.has(String(a?.id)) ? 0 : 1;
     const bPreferred = preferredSkillIds.has(String(b?.id)) ? 0 : 1;
     return aPreferred - bPreferred;
