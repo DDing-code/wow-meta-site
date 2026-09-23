@@ -15,8 +15,8 @@
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 127,
-        "talent": 998,
+        "skill": 126,
+        "talent": 999,
         "spec-talent": 384,
         "passive": 78,
         "hero-tree": 2,
@@ -277,7 +277,7 @@
       ],
       "name": "선봉대",
       "koreanName": "선봉대",
-      "englishName": "",
+      "englishName": "Vanguard",
       "icon": "ability_warrior_defensivestance",
       "iconName": "ability_warrior_defensivestance",
       "school": "",
@@ -285,10 +285,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 선봉대은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 선봉대 전사 필요 요구 레벨 10 전투로 단련되어 체력이 40%만큼 증가하며, 방어도가 힘의 70%만큼 증가합니다. (500밀리초 재사용 대기시간)",
+      "description": "방어 전문화의 기본 지속 효과다. 체력이 40% 증가하고, 힘의 70%에 해당하는 방어도를 추가로 얻는다. 체력 증가와 방어도 추가는 서로 다른 효과다. 툴팁에 보이는 내부 재사용 대기시간은 플레이어가 누르는 생존기 쿨다운이 아니다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -7179,59 +7179,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\소용돌이-연마.md",
-        "lastUpdate": ""
-      }
-    },
-    "12975": {
-      "id": "12975",
-      "type": "skill",
-      "class": "Warrior",
-      "spec": "Protection",
-      "specs": [
-        "Protection"
-      ],
-      "name": "최후의 저항",
-      "koreanName": "최후의 저항",
-      "englishName": "Last Stand",
-      "icon": "spell_holy_ashestoashes",
-      "iconName": "spell_holy_ashestoashes",
-      "school": "",
-      "cooldown": "3분",
-      "castTime": "즉시",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 최후의 저항 (Last Stand)",
-      "category": "ability",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_ashestoashes.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_ashestoashes.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_ashestoashes.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_ashestoashes.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_ashestoashes.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패의-벽",
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/사기의-외침",
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내",
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
-        ],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.039,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Skills\\최후의-저항.md",
         "lastUpdate": ""
       }
     },
@@ -15912,7 +15859,7 @@
       ],
       "name": "특화: 결정적 방어",
       "koreanName": "특화: 결정적 방어",
-      "englishName": "",
+      "englishName": "Mastery: Critical Block",
       "icon": "ability_warrior_criticalblock",
       "iconName": "ability_warrior_criticalblock",
       "school": "",
@@ -15920,10 +15867,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 특화: 결정적 방어은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 특화: 결정적 방어 전사 필요 요구 레벨 10 방패 막기 확률이 4.0%만큼 증가하고 결정적 방어(방패 막기량 두 배 증가)가 발동할 확률이 12.0%만큼 증가합니다. 전투력이 8.0%만큼 증가합니다.",
+      "description": "방패 막기 확률, 막기에 성공했을 때 막는 양을 두 배로 만드는 결정적 방어 확률, 전투력을 높이는 기본 특화 효과다. 현재 한국어 툴팁에는 방패 막기 확률 4.0%, 결정적 방어 확률 12.0%, 전투력 8.0%가 표시된다. 이 값은 툴팁의 기준값이며 캐릭터의 장비·특화 수치에서 실제 표시값을 확인해야 한다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -15942,7 +15889,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -24243,7 +24190,7 @@
       ],
       "name": "반격",
       "koreanName": "반격",
-      "englishName": "",
+      "englishName": "Riposte",
       "icon": "inv_sword_30",
       "iconName": "inv_sword_30",
       "school": "",
@@ -24251,10 +24198,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 반격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 반격 전사 필요 요구 레벨 10 장비 착용으로 증가하는 치명타 및 극대화의 100%만큼 무기 막기가 증가합니다.",
+      "description": "장비에서 얻는 치명타 및 극대화 수치의 100%만큼 무기 막기 수치가 증가하는 방어 전문화 지속 효과다. 치명타 확률 자체를 그대로 무기 막기 확률에 더한다는 뜻은 아니다. 장비 보조 능력치가 회피 계열 방어에도 기여하는 연결이다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116819,6 +116766,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\정신확장.md",
+        "lastUpdate": ""
+      }
+    },
+    "1243659": {
+      "id": "1243659",
+      "type": "talent",
+      "class": "Warrior",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "최후의 저항",
+      "koreanName": "최후의 저항",
+      "englishName": "Last Stand",
+      "icon": "spell_holy_ashestoashes",
+      "iconName": "spell_holy_ashestoashes",
+      "school": "",
+      "cooldown": "없음 (방패의 벽에 연동)",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "12.1에서는 별도 사용 버튼이 아닌 방어 특성이다. 선택한 상태에서 `방패의 벽`을 활성화하면 8초 동안 최대 생명력이 30% 증가하고, 증가한 만큼 즉시 회복한다. 피해 감소는 `방패의 벽` 자체의 효과이며, 이 특성을 고르지 않으면 추가 생명력·회복 효과가 붙지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_ashestoashes.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_ashestoashes.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_holy_ashestoashes.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_ashestoashes.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_ashestoashes.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패의-벽"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/수호자의-아이기스"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Skills\\최후의-저항.md",
         "lastUpdate": ""
       }
     },
