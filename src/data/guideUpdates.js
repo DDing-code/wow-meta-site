@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '고양 주술사 12.1 광역·쿨기 연결 교정', partial: true,
+    guideIds: ['shaman-enhancement'], commits: ['e771c349'],
+    body: '낙뢰와 연쇄 번개의 독립적인 역할, 야수 정령 패시브와 승천·파멸의 바람 선택 관계를 정본 KB·시너지 DB에 반영했습니다. 연결 그래프의 6월 점유율은 현재 수치처럼 쓰지 않도록 정리했습니다. 전체 세트·로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '분노 전사 12.1 시너지 조건 교정', partial: true,
     guideIds: ['warrior-fury'], commits: ['e1929354'],
     body: '광역 복제는 소용돌이 연마, 고기칼은 3대상 이상 직접 피해 증가로 분리했습니다. 광란·생성기, 산왕 우레 작렬, 학살자 집행자 연결을 정본 KB와 스펠·시너지 DB, 가이드에서 교정했습니다. 전체 로그 검수는 진행 중입니다.' },
