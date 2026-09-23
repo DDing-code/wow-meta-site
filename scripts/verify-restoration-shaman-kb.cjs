@@ -219,3 +219,26 @@ assert(skills[462486].synergies.relatedSkills.some(link => link.endsWith('/폭�
 assert(skills[207778].synergies.relatedSkills.some(link => link.endsWith('/폭우')));
 assert.match(manuscript, /치유의 비\/쇄도하는 토템 뒤 16초/);
 console.log('Restoration Healing Rain and Downpour 12.1 branch effects verified.');
+for (const [id, participants] of [
+  ['shaman_restoration_sustain_shields',
+    ['52127','974','382021','1270350','1217622','383010','382315','382020','1254210']],
+  ['shaman_restoration_spiritlink_raid',
+    ['98008','462383','445034','114052','108280']],
+  ['shaman_restoration_direct_heal_mana',
+    ['77472','1064','61295','51564','378081','73685','1253093','16196','114052']],
+]) {
+  assert.equal(synergies.synergies[id].patch, '12.1');
+  assert.deepEqual(synergies.synergies[id].participants, participants);
+}
+for (const [id, synergy] of Object.entries(synergies.synergies)) {
+  if (id.startsWith('shaman_restoration_')) assert.equal(synergy.patch, '12.1', `${id} is still stale`);
+}
+assert.match(skills[108280].description, /승천과 양자택일/);
+assert.match(skills[114052].description, /치유의 해일 토템과 양자택일/);
+assert.match(manuscript, /label: '치유의 해일 토템 \(선택 시\)'/);
+assert.match(manuscript, /label: '또는 승천 \(선택 시\)'/);
+const detailPage = require('node:fs').readFileSync(require.resolve('../src/pages/GuideDetailPage.js'), 'utf8');
+assert.match(detailPage, /label: '해일 토템 선택'/);
+assert.match(detailPage, /label: '승천 선택'/);
+assert.match(detailPage, /두 행은 한 빌드의 연속 사용이 아닌 대안/);
+console.log('Restoration 12.1 shield, mana, cooldown-choice graphs verified.');

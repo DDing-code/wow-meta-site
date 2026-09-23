@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T05:13:12.777Z",
+    "generatedAt": "2026-09-23T05:26:52.171Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -16121,16 +16121,15 @@
       "type": "synergy",
       "synergyType": "sustain_maintenance",
       "participants": [
-        "382021",
-        "382315",
         "52127",
-        "16196",
+        "974",
+        "382021",
+        "1270350",
+        "1217622",
+        "383010",
+        "382315",
         "382020",
-        "382482",
-        "207401",
-        "462383",
-        "1254210",
-        "77472"
+        "1254210"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16139,21 +16138,20 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/대지생명의무기",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/물의보호막",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/대지의보호막",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/대지생명의무기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/본능적인강화",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/정령의궤도",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Talents/테라제인의탄력",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지생명의무기연마",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의조화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지술사",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/생명의흐름",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/선조의활력",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/용솟음치는영혼"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지술사"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\대지생명의무기-물의보호막-지속유지.md",
@@ -16373,19 +16371,10 @@
       "synergyType": "raid_stabilization_cooldown",
       "participants": [
         "98008",
-        "114052",
-        "108280",
-        "462486",
-        "73685",
-        "378081",
-        "382020",
-        "382482",
         "462383",
-        "16196",
-        "52127",
-        "382021",
-        "382315",
-        "77472"
+        "445034",
+        "114052",
+        "108280"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16394,24 +16383,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/정신의고리토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/승천",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의해일토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/폭우",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/물의보호막",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/대지생명의무기"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/승천"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지의조화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/생명의흐름",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/용솟음치는영혼",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/대지생명의무기연마"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/용솟음치는영혼"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\정신의고리토템-공격대안정화.md",
@@ -16425,19 +16405,14 @@
       "synergyType": "direct_heal_mana_management",
       "participants": [
         "77472",
+        "1064",
+        "61295",
         "51564",
-        "52127",
-        "16196",
-        "200072",
-        "382732",
-        "382309",
-        "207401",
-        "1253093",
-        "382020",
-        "382021",
-        "382315",
         "378081",
-        "73685"
+        "73685",
+        "1253093",
+        "16196",
+        "114052"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16446,25 +16421,20 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/물의보호막",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/대지생명의무기",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/격류"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/성난해일",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/승천"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/굽이치는물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/고대의손길",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/고대의각성",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/선조의활력"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/해일제어",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/회생"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\치유의물결-마나관리.md",
