@@ -48,6 +48,8 @@ const GUIDE_PATCH_OVERRIDES = new Map([
   ['druid-balance', '12.1'],
   ['shaman-restoration', '12.1'],
   ['warrior-fury', '12.1'],
+  ['warrior-arms', '12.1'],
+  ['warrior-protection', '12.1'],
 ]);
 
 const MINIMUMS = {
