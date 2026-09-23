@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '분노 전사 12.1 마무리 일격 주문 ID 교정', partial: true,
+    guideIds: ['warrior-fury'], commits: ['0aefa482'],
+    body: '분노 전사의 마무리 일격을 주문 ID 5308로 분리하고 무기·방어 전사의 163201과 혼용하던 차트·툴팁·시너지 연결을 교정했습니다. 전체 전문화와 최신 로그 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '무기 전사 12.1 마무리 일격·세트 연결 교정', partial: true,
     guideIds: ['warrior-arms'], commits: ['96add29b'],
     body: '마무리 일격의 기본 20%·대학살 35%·급살 무료 사용을 KB·스펠 DB·가이드에서 분리했습니다. 정본 현재 빌드와 그래프에 시즌 2 세트 연결을 보강하고 6월 선택률을 현행 추천 근거에서 제외했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },
