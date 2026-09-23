@@ -682,4 +682,23 @@ assert.match(skills[871].description, /방패의 벽.*40%|8초.*40%/);
 assert.match(skills[871].description, /수호자의 아이기스를 선택하면 1회 추가 충전/);
 assert.match(skills[397103].description, /60초 줄이는 선택 특성/);
 assert(skills[871].synergies.relatedTalents.some(id => id.endsWith('/수호자의-아이기스')));
+for (const id of [
+  202095, 202560, 384036, 384072, 385704, 385888, 385952, 386027, 386030,
+  386071, 386394, 386477, 394311, 452494, 1234769, 1235022, 1235023,
+  1235047, 1235088, 1235113, 1264330, 1269313,
+]) {
+  assert.equal(skills[id].patch, '12.1', `Protection Warrior node ${id} must be current`);
+  assert(!skills[id].description.includes('방어 전문화 특성 노트다'), `Protection Warrior node ${id} has placeholder copy`);
+}
+assert.match(skills[385704].description, /출혈 효과의 피해를 25%/);
+assert.match(skills[202560].description, /자동 공격.*20%.*다음 천둥벼락.*8%/);
+assert.match(skills[1264330].description, /복수와 마무리 일격.*30%/);
+assert.match(skills[452494].description, /8%/);
+assert.match(skills[1235047].description, /6%/);
+assert.equal(skills[385952].range, '25야드');
+assert.match(skills[385952].description, /분노 20.*10미터 안의 모든 적.*주 대상 기절/);
+assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-BLEED-WOUND'].participants, ['1261060', '385704', '228920', '1235113']);
+assert(!synergies['SY-WARRIOR-PROTECTION-BLEED-WOUND'].participants.includes('6572'));
+assert(!guide.includes('Blizzard 2026-06-02 핫픽스는 방어 전사의 마법 피해'));
+assert.match(guide, /2026-08-25 긴급 수정에서 마법 피해 감소가 8%/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

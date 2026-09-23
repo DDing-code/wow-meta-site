@@ -297,7 +297,7 @@ const REQUIRED_HOTFIXES = new Map([
     keywords: [/악마의 눈|Diabolic Oculi/i],
   }],
   ['warrior-protection', {
-    date: '2026-06-02',
+    date: '2026-05-12',
     keywords: [/고통 감내|Ignore Pain/i, /불길을 지나|Fight Through Flames/i],
   }],
 ]);

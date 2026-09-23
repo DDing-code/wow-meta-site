@@ -20275,7 +20275,7 @@
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
@@ -20292,7 +20292,6 @@
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/묵직한-반격",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/격렬한-울분",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/소용돌이-칼날",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
       ],
       "source": {
@@ -20593,7 +20592,7 @@
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/사기의-외침",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패의-벽"
@@ -20658,7 +20657,7 @@
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
         "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
@@ -20669,7 +20668,6 @@
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/전략가",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/차디찬-복수",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/소용돌이-칼날",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
       ],
       "source": {
@@ -20685,25 +20683,22 @@
       "participants": [
         "1261060",
         "385704",
-        "6572"
+        "228920",
+        "1235113"
       ],
       "class": "Warrior",
       "spec": "Protection",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-돌격",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
-        "08-직업별-Knowledge-Base/13-전사/방어/Skills/압도"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/방어/Talents/혈행성-전이",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도",
-        "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/소용돌이-칼날"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\치명상-혈행성전이-출혈.md",

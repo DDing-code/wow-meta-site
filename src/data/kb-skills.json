@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2879,
-        "withSynergies": 2076,
+        "withSynergies": 2083,
         "avgLinkDensity": "0.039"
       }
     }
@@ -31631,7 +31631,7 @@
       ],
       "name": "백절불굴",
       "koreanName": "백절불굴",
-      "englishName": "",
+      "englishName": "Indomitable",
       "icon": "ability_warrior_intensifyrage",
       "iconName": "ability_warrior_intensifyrage",
       "school": "",
@@ -31639,10 +31639,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "백절불굴은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 백절불굴 특성 전사 필요 요구 레벨 40 최대 생명력이 10%만큼 증가합니다. 또한 15의 분노를 소모할 때마다 최대 생명력의 1%만큼 회복합니다.",
+      "description": "최대 생명력을 10% 높이고, 분노를 15 소모할 때마다 최대 생명력의 1%를 회복한다. 생명력 상한 증가와 분노 소비에 따른 자가 회복은 별개 효과다. 분노를 쌓아 두기만 해서는 회복이 일어나지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31661,7 +31661,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -32144,10 +32144,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "차디찬 복수은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 차디찬 복수 특성 전사 필요 요구 레벨 30 회피 및 무기 막기에 성공하면 복수가 20%만큼 더 자주 분노를 소모하지 않으며, 자원을 소모하지 않는 복수의 공격력이 15%만큼 증가합니다. 복수는 다음 천둥벼락의 공격력을 8%만큼 증가시킵니다. (500밀리초 재사용 대기시간)",
+      "description": "회피·무기 막기·자동 공격으로 무료 복수가 발동할 확률을 20% 높이고, 무료 복수의 피해를 15% 늘린다. 복수를 쓰면 다음 천둥벼락의 피해가 8% 증가한다. 무료 복수는 단순한 분노 할인만이 아니라 공격력 보너스와 다음 천둥벼락 준비까지 연결되는 기회다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32160,15 +32160,18 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.027,
+        "wikilinkCount": 6,
+        "synergyCount": 3,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
@@ -61439,7 +61442,7 @@
       ],
       "name": "잔혹한 활력",
       "koreanName": "잔혹한 활력",
-      "englishName": "",
+      "englishName": "Brutal Vitality",
       "icon": "ability_warrior_renewedvigor",
       "iconName": "ability_warrior_renewedvigor",
       "school": "",
@@ -61447,10 +61450,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "잔혹한 활력은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 잔혹한 활력 특성 전사 필요 입힌 피해의 8%만큼 활성화되어 있거나 다음에 활성화하는 고통 감내의 피해 방지량이 증가합니다. 다음 고통 감내의 피해 방지량은 최대 [총 생명력 * (0.3) * (0.5)]만큼 증가합니다.",
+      "description": "입힌 피해의 10%만큼 현재 활성화된 또는 다음에 활성화할 `고통 감내`의 피해 방지량을 늘린다. 다음 고통 감내에 쌓이는 추가 방지량에는 툴팁의 상한이 있다. 구버전 KB의 8%를 현행 수치로 사용하지 않는다. 이것은 생명력을 직접 회복하는 효과가 아니라 흡수막을 보강하는 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -61469,7 +61472,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -61583,7 +61586,7 @@
       ],
       "name": "철통 철벽 방패",
       "koreanName": "철통 철벽 방패",
-      "englishName": "",
+      "englishName": "Impenetrable Wall",
       "icon": "ability_warrior_shieldguard",
       "iconName": "ability_warrior_shieldguard",
       "school": "",
@@ -61591,10 +61594,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "철통 철벽 방패은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 철통 철벽 방패 특성 전사 필요 방패 밀쳐내기가 방패의 벽의 남은 재사용 대기시간을 6초만큼 감소시킵니다.",
+      "description": "`방패 밀쳐내기`를 사용할 때마다 `방패의 벽`의 남은 재사용 대기시간이 6초 감소하는 선택 특성이다. 쿨다운 감소는 방패의 벽의 기본 지속시간이나 피해 감소율을 올리는 효과가 아니다. 같은 선택 노드의 `수호자의 아이기스`처럼 추가 충전을 주지도 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63036,10 +63039,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "혈행성 전이은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 혈행성 전이 특성 전사 필요 치명상과 분쇄의 공격력이 25%만큼 증가합니다.",
+      "description": "출혈 효과의 피해를 25% 증가시키는 지속 특성이다. 예전 설명처럼 치명상과 분쇄 두 효과에만 한정하지 않는다. 효과를 받으려면 대상에게 실제 출혈이 걸려 있고 그 피해가 들어가야 한다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63051,14 +63054,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_bloodoftheassassinated.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -63229,7 +63235,7 @@
       ],
       "name": "난공불락",
       "koreanName": "난공불락",
-      "englishName": "",
+      "englishName": "Tough as Nails",
       "icon": "inv_titanium_shield_spike",
       "iconName": "inv_titanium_shield_spike",
       "school": "",
@@ -63237,10 +63243,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "난공불락은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 난공불락 특성 전사 필요 공격을 방패로 막으면 공격자에게 (전투력의 120%)의 물리 피해를 입힙니다. 결정적 방어 발동 시에는 입히는 피해가 두 배로 증가합니다. 위협 수준이 크게 증가합니다.",
+      "description": "적의 공격을 방패로 막으면 공격자에게 전투력의 120% 물리 피해를 되돌리고 위협 수준을 크게 높인다. `결정적 방어`가 발동한 막기라면 이 반격 피해가 두 배다. 방패로 막지 못하는 마법·지속 피해에 동일한 반격이 발생한다고 보지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63259,7 +63265,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -63327,18 +63333,18 @@
       ],
       "name": "방패 돌격",
       "koreanName": "방패 돌격",
-      "englishName": "",
+      "englishName": "Shield Charge",
       "icon": "ability_warrior_shieldcharge",
       "iconName": "ability_warrior_shieldcharge",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 방패 돌격은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 방패 돌격 특성 25 야드 사정거리 즉시 45 초 재사용 대기시간 전사 필요 방패를 앞세워 적에게 돌진합니다. 방패 올리기가 부여되며 (전투력의 840%)의 물리 피해를 입히고 10미터 내의 모든 적에게 (전투력의 268.4%)의 물리 피해를 입힙니다. 또한 주 대상을 4초 동안 기절시킵니다. 20의 분노를 생",
+      "cooldown": "45초",
+      "castTime": "즉시",
+      "resourceCost": "없음 (분노 20 생성)",
+      "range": "25야드",
+      "description": "25야드 이내 적에게 돌진하는 45초 재사용 대기시간의 선택 기술이다. 사용 시 `방패 올리기`가 부여되고 분노 20을 생성한다. 주 대상에게 전투력의 840% 물리 피해와 4초 기절을 주며, 10미터 안의 모든 적에게도 전투력의 268.4% 물리 피해를 입힌다. 주 대상 기절을 광역 기절로 오해하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63357,7 +63363,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.037,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -63375,7 +63381,7 @@
       ],
       "name": "인내하는 방어",
       "koreanName": "인내하는 방어",
-      "englishName": "",
+      "englishName": "Enduring Defenses",
       "icon": "ability_defend",
       "iconName": "ability_defend",
       "school": "",
@@ -63383,10 +63389,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "인내하는 방어은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 인내하는 방어 특성 전사 필요 방패 올리기의 지속시간이 1초만큼 증가합니다.",
+      "description": "`방패 올리기`의 지속시간을 1초 늘리는 지속 효과다. 방패 올리기 버튼의 충전 횟수나 분노 비용을 바꾸는 특성이 아니다. 지속시간이 길어져도 막을 수 없는 마법·지속 피해에 방패 막기 효과가 생기지는 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63405,7 +63411,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.026,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -63423,7 +63429,7 @@
       ],
       "name": "충격 대비",
       "koreanName": "충격 대비",
-      "englishName": "",
+      "englishName": "Brace for Impact",
       "icon": "ability_warrior_shieldguard",
       "iconName": "ability_warrior_shieldguard",
       "school": "",
@@ -63431,10 +63437,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "충격 대비은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 충격 대비 특성 전사 필요 방패 밀쳐내기 사용 시 16초 동안 방패 밀쳐내기의 공격력이 10%만큼, 방패 막기의 피해 방어량이 5%만큼 증가합니다. 최대 3번까지 중첩됩니다.",
+      "description": "`방패 밀쳐내기`를 사용하면 16초 동안 방패 밀쳐내기 공격력 10%와 방패 막기로 막는 피해량 5%가 증가한다. 최대 3중첩이다. 방패 밀쳐내기 사용을 이어 가야 효과를 쌓고 유지할 수 있으며, 막지 못하는 마법 피해에 방패 막기 보너스가 그대로 적용되지는 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63453,7 +63459,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -63471,18 +63477,18 @@
       ],
       "name": "훼방의 외침",
       "koreanName": "훼방의 외침",
-      "englishName": "",
+      "englishName": "Disrupting Shout",
       "icon": "ability_bullrush",
       "iconName": "ability_bullrush",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "훼방의 외침은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 훼방의 외침 특성 즉시 1.5 분 재사용 대기시간 전사 필요 14미터 내의 모든 적을 도발해 6초 동안 자신을 공격하게 합니다. 또한 14미터 내의 모든 주문 시전을 방해하고 6초 동안 같은 계열 주문을 사용하지 못하게 합니다. 대상에게 생성하는 위협 수준이 800%만큼 증가합니다.",
+      "cooldown": "1.5분",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "주위 14미터",
+      "description": "14미터 안의 적을 광역 도발하고 진행 중인 주문 시전을 방해하는 1.5분 재사용 대기시간의 선택 기술이다. 도발된 적은 6초 동안 자신을 공격하며, 실제 주문을 차단한 적은 같은 계열 주문을 6초 동안 쓰지 못한다. 대상에게 생성하는 위협 수준은 800% 증가한다. 주문을 시전하지 않던 적에게도 차단 봉쇄가 생긴다고 보지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63929,7 +63935,7 @@
       ],
       "name": "역전의 용사",
       "koreanName": "역전의 용사",
-      "englishName": "",
+      "englishName": "Battle-Scarred Veteran",
       "icon": "ability_warrior_endlessrage",
       "iconName": "ability_warrior_endlessrage",
       "school": "",
@@ -63937,10 +63943,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "역전의 용사은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 역전의 용사 특성 전사 필요 생명력이 30% 미만으로 떨어지면 8초 동안 받는 피해가 80%만큼 감소하고 받는 치유 효과는 100%만큼 증가합니다. 3분에 한 번씩만 발동합니다.",
+      "description": "생명력이 30% 미만으로 떨어질 때 자동 발동하는 생존 특성이다. 발동하면 8초 동안 받는 피해가 80% 감소하고 받는 치유가 100% 증가한다. 3분에 한 번만 발동한다. 별도로 눌러 전투 타임라인에 배치하는 기술이나 모든 피해를 막는 무적 효과가 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63985,10 +63991,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "격렬한 울분은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 격렬한 울분 특성 전사 필요 250의 분노를 소모할 때마다 격렬한 울분이 발동해 다음 방패 밀쳐내기가 200%의 추가 피해를 입히고, 분노와 고통 감내를 50%만큼 더 부여하게 합니다.",
+      "description": "누적 분노 250을 소모할 때마다 발동한다. 다음 방패 밀쳐내기가 추가 피해 200%를 주고 분노 및 고통 감내를 50% 더 부여한다. 별도 시전 기술이 아니라 분노 소비를 통해 다음 방패 밀쳐내기를 강화하는 지속 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64000,14 +64006,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_furiousresolve.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.023,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -73153,10 +73162,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "선동은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 선동 특성 전사 필요 압도의 공격력이 20%만큼 증가하고 2의 분노를 생성합니다. 압도자의 공격력이 10%만큼 증가하고 2의 분노를 생성합니다.",
+      "description": "압도의 피해를 20% 높이고 분노 2를 생성하게 한다. 압도자를 선택한 경우에는 압도자의 피해가 10% 증가하고 분노 2를 생성한다. 두 공격 형태의 피해 보너스는 서로 다르며, 동시에 두 번의 분노 생성이 일어나는 효과가 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73169,13 +73178,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/압도자"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -101297,7 +101308,7 @@
       ],
       "name": "불길을 지나",
       "koreanName": "불길을 지나",
-      "englishName": "",
+      "englishName": "Fight Through the Flames",
       "icon": "ability_racial_foregedinflames",
       "iconName": "ability_racial_foregedinflames",
       "school": "",
@@ -101305,10 +101316,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "불길을 지나는 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  Wowhead 한국어 툴팁 API로 공식 한국어명을 확인했다. 최신 수치는 Blizzard 2026-05-12 핫픽스의 \"받는 마법 피해 6% 감소\"를 기준으로 기록한다.",
+      "description": "`방어 태세`를 사용하는 동안 받는 마법 피해를 추가로 8% 줄이는 특성이다. 이는 현재 한국어 주문 툴팁의 수치이며, 이전 KB에 남아 있던 6%보다 높다. 물리 피해에 같은 8%를 더하는 효과가 아니고, 방어 태세를 풀면 이 추가 마법 피해 감소를 기대할 수 없다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -101327,7 +101338,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -114011,10 +114022,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "방어구 전문화은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 방어구 전문화 특성 전사 필요 방어도가 6%만큼 증가합니다.",
+      "description": "방어도가 6% 증가하는 지속 효과다. 방패 올리기나 고통 감내처럼 직접 눌러서 위험한 한 타격을 처리하는 기술은 아니며, 장비 방어도를 바탕으로 물리 피해 방어의 기본층을 높인다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114026,14 +114037,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_plate05.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.019,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -114110,10 +114123,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "쪼그리기은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 쪼그리기 특성 전사 필요 광역 공격으로 받는 피해가 2%만큼 감소합니다. 주문 반사가 받는 마법 피해를 추가로 10%만큼 감소시킵니다.",
+      "description": "광역 공격으로 받는 피해를 2% 줄이고, 주문 반사가 제공하는 마법 피해 감소 효과에 10%를 더하는 지속 특성이다. 두 효과는 서로 다른 조건이므로 광역 피해 감소와 주문 반사 강화분을 하나의 상시 마법 피해 감소 수치로 합치지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114125,14 +114138,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldreflection.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/주문-반사"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.025,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -114158,10 +114173,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "주문파괴자은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 주문파괴자 특성 전사 필요 마법 피해를 받을 때 8%의 확률로 분산시켜 받는 피해를 50%만큼 감소시킵니다.",
+      "description": "마법 피해를 받을 때 8% 확률로 해당 피해를 50% 줄이는 지속 특성이다. 항상 마법 피해를 50% 줄이는 효과도, 원하는 타격에 맞춰 누를 수 있는 생존기도 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114173,14 +114188,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_armor_bloodelf_d_01.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/주문-반사",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.018,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.049,
         "hasWikilinks": true
       },
       "source": {
@@ -114198,7 +114216,7 @@
       ],
       "name": "불굴의 태세",
       "koreanName": "불굴의 태세",
-      "englishName": "",
+      "englishName": "Unyielding Stance",
       "icon": "ability_warrior_defensivestance",
       "iconName": "ability_warrior_defensivestance",
       "school": "",
@@ -114206,10 +114224,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "불굴의 태세은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 불굴의 태세 특성 전사 필요 방어 태세 사용 시 받는 피해가 4%만큼 추가로 감소합니다.",
+      "description": "`방어 태세`를 사용하는 동안 받는 피해를 추가로 6% 줄이는 특성이다. 이전 KB의 4%는 12.1 현재 툴팁과 맞지 않는다. 이 효과는 물리와 마법을 구분하지 않는 추가 피해 감소지만, 태세 밖에서는 적용되지 않는다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114230,7 +114248,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.031,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -114256,10 +114274,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "잔인무도은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 잔인무도 특성 전사 필요 마무리 일격이 최대 2명의 부가 대상에게 70%의 피해를 입힙니다.",
+      "description": "마무리 일격이 주 대상 외 최대 두 명에게 70%의 피해를 준다. 마무리 일격을 광역에서 활용하도록 넓히는 특성이지, 처형 가능 체력 조건이나 단일 대상 마무리 일격의 기본 피해를 바꾸는 효과는 아니다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114274,13 +114292,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/파멸적인-집중"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 1,
-        "linkDensity": 0.045,
+        "wikilinkCount": 7,
+        "synergyCount": 2,
+        "linkDensity": 0.06,
         "hasWikilinks": true
       },
       "source": {
@@ -114306,10 +114326,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "소용돌이 칼날은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 소용돌이 칼날 특성 전사 필요 매 분마다 약 5 번 효과 발동됨 공격 시 일정 확률로 주위의 적을 4초 동안 칼날발톱의 대상으로 지정합니다.",
+      "description": "공격 시 일정 확률로 주변 적을 4초 동안 쇠날발톱 효과의 대상으로 지정한다. 툴팁은 평균 분당 약 5회 발동을 제시하지만, 실제 발동 간격과 대상은 전투마다 달라진다. 직접 누르는 쇠날발톱과 달리 확률적으로 생기는 짧은 자동 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114321,14 +114341,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/warrior_talent_icon_ravager.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 0,
-        "linkDensity": 0.024,
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -133878,10 +133900,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "파멸적인 집중은 방어 전문화 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 파멸적인 집중 특성 전사 필요 압도자에게 적중당한 대상에게 집중하여, 복수가 30%의 추가 피해를 입힙니다. 한 번에 하나의 대상에게만 집중할 수 있습니다.",
+      "description": "압도자에 맞은 대상 한 명에게 집중하여 그 대상에게 들어가는 복수와 마무리 일격 피해를 30% 증가시킨다. 구 KB에서 빠졌던 마무리 일격도 강화 대상이다. 집중 대상은 동시에 하나뿐이다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133897,14 +133919,15 @@
           "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/13-전사/방어/Talents/압도자"
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/압도자",
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/잔인무도"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 9,
-        "synergyCount": 2,
-        "linkDensity": 0.059,
+        "wikilinkCount": 10,
+        "synergyCount": 3,
+        "linkDensity": 0.083,
         "hasWikilinks": true
       },
       "source": {
@@ -138637,10 +138660,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "결사단원은 방어 전사의 Apex 특성 계열 노드다. Wowhead 한국어 툴팁 기준 Phalanx의 공식 한국어명은 결사단원이며, 방패 올리기가 활성화된 동안 방패 밀쳐내기를 강화하고 결사단원의 충격의 파장에 맞은 적이 시전자에게 주는 피해를 줄이는 구조다.  Blizzard 2026-05-12 핫픽스는 방어 전사의 마법 피해와 지속 피해 대응을 보강하기 위해 결사단원의 적 피해 감소 효과를 8%로 상향했다고 명시했다. Wowhead 한국어 툴팁 API는 공식 한국어명과 아이콘 확인에 사용하고, 최신 수치 판단은 Blizzard 핫",
+      "description": "방패 올리기가 활성화된 동안 방패 밀쳐내기 피해가 10%, 치명타 및 극대화율이 20% 증가한다. 결사단원의 충격의 파장에 맞은 적은 8초 동안 시전자에게 주는 피해가 8% 감소한다. 마지막 피해 감소는 전역 상시 효과가 아니라 파장에 맞은 적에게 적용되는 조건부 효과다.",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -138659,15 +138682,14 @@
           "08-직업별-Knowledge-Base/13-전사/공용/Skills/주문-반사"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락",
           "08-직업별-Knowledge-Base/13-전사/방어/Talents/불길을-지나"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 6,
-        "linkDensity": 0.03,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
