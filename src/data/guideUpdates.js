@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '무기·방어 전사 12.1 공식 변경 검수', partial: true,
+    guideIds: ['warrior-arms', 'warrior-protection'], commits: ['12da26fb'],
+    body: 'Blizzard 12.1 라이브 노트와 한국어 툴팁을 대조해 무기의 분쇄·일격무쌍, 방어의 무료 복수·능동 방어 변경을 가이드·KB·스펠 DB에 반영했습니다. 영웅 특성별 최신 로그와 전체 특성의 세부 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '분노 전사 12.1 공식 변경·스펠 DB 검수', partial: true,
     guideIds: ['warrior-fury'], commits: ['f5fa4365'],
     body: 'Blizzard 12.1 라이브 노트와 9월 22일 산왕 핫픽스를 가이드·KB에 반영했습니다. 자르고 베기 한국어 설명을 스펠 DB와 동기화했고, 최신 영웅 특성별 로그 비교와 전체 세부 검수는 계속 진행 중입니다.' },
