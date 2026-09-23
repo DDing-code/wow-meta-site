@@ -63,3 +63,36 @@ assert.match(skills[1296629].description,/8초.*3회.*고정 쿨다운이 아니
 assert.match(skills[1296630].description,/1초.*1명.*10초/);
 assert.deepEqual(synergies.synergies.shaman_restoration_season2_rain_shields.participants,
   ['77472','1064','1296629','73920','1296630']);
+for (const [id, pattern] of [
+  [1064, /3명.*30%/], [200072, /20%.*10%/], [1252874, /10%.*0\.5초/],
+  [51564, /2중첩.*20%|20%.*2중첩/], [200076, /15%/], [382039, /30%/],
+  [1253099, /15%/], [470076, /30%.*2중첩/], [52127, /3초/],
+  [16196, /0\.80%.*0\.48%.*0\.20%/], [207401, /10초.*5%/],
+  [378443, /5명.*2초/], [381946, /6초.*15%/], [382020, /3%.*150%/],
+  [382021, /1시간.*20%.*6초/], [382030, /5초/],
+]) {
+  assert.equal(skills[id].patch, '12.1', `Spell ${id} must be current`);
+  assert.match(skills[id].description, pattern);
+}
+assert.equal(skills[212048].patch, '12.1');
+assert.equal(skills[212048].castTime, '10초');
+assert.match(skills[212048].description, /전투 중에는 사용할 수 없/);
+assert.equal(skills[2008].patch, '12.1');
+assert.match(skills[2008].description, /전투 중에는 사용할 수 없/);
+for (const id of ['shaman_restoration_farseer_ancestor', 'shaman_restoration_sustain_shields']) {
+  assert(!synergies.synergies[id].participants.includes('212048'), `${id} must not include a resurrection spell`);
+}
+for (const [id, pattern] of [
+  [382045, /4번.*추가/], [382194, /0\.5%/], [382309, /30%.*15%.*60%/],
+  [382315, /150%/], [382482, /100%.*감소/], [382732, /8%.*1회/],
+  [383222, /2미터.*5명/], [462383, /5%.*1초/], [462424, /성난 해일.*즉시/],
+  [462587, /200%.*215%/], [1252882, /두 번/], [1253014, /20%/],
+  [1253090, /12%/], [1254210, /40%/], [1254251, /1초/],
+]) {
+  assert.equal(skills[id].patch, '12.1', `Spell ${id} must be current`);
+  assert.match(skills[id].description, pattern);
+}
+assert.match(skills[462486].description, /특성.*207778/);
+assert.match(skills[207778].description, /시전 주문.*12미터.*5명/);
+assert(synergies.synergies.shaman_restoration_downpour_tide.participants.includes('207778'));
+console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
