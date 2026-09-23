@@ -20,6 +20,7 @@ assert.equal(skills[1252841], undefined, 'Removed Calm Waters must not return');
 for (const id of [1253093,1312843]) assert.equal(skills[id].patch,'12.1');
 assert.match(skills[1253093].description,/15%/);
 assert.match(skills[1312843].description,/3초.*1267016/);
+assert.match(skills[445030].description,/쇄도하는 토템과 범람의 파도의 치유량.*증가/);
 assert.equal(skills[1312843].icon,'ability_shaman_manatidetotem');
 const synergies = require('../src/data/kb-synergies.json');
 assert(!JSON.stringify(synergies).includes('1252841'), 'Removed talent must have no graph edges');

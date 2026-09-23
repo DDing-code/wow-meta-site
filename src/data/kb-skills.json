@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T05:26:52.170Z",
+    "generatedAt": "2026-09-23T05:48:51.835Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -95082,7 +95082,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "승천 또는 치유의 해일 토템이 활성화된 동안 쇄도하는 토템의 피해가 50% 증가한다. 현재 한국어·영어 공개 툴팁은 모두 피해 증가로 표시하며 치유량 증가를 명시하지 않는다. 증폭 핵(445029)과 선택 노드 94874를 공유한다.",
+      "description": "승천 또는 치유의 해일 토템이 활성화된 동안 쇄도하는 토템의 피해가 50% 증가한다. 공개 툴팁에는 피해 증가만 표시되지만, Blizzard의 2026년 9월 4일 긴급 수정은 복원에서 쇄도하는 토템과 범람의 파도의 치유량도 이 특성으로 증가한다고 명시한다. 치유량 증가 수치는 공지에 없으므로 50%라고 단정하지 않는다. 증폭 핵(445029)과 선택 노드 94874를 공유한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -95106,7 +95106,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.02,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -149594,7 +149594,7 @@
       "castTime": "지속 효과",
       "resourceCost": "",
       "range": "",
-      "description": "불꽃 회오리가 낙뢰의 재사용 대기시간을 2초 줄이고 다음 낙뢰의 피해를 8% 증가시킨다. 피해 강화는 최대 5중첩이며 합계 40%다. 영구적인 낙뢰 피해 증가나 기본 쿨다운 2초 감소로 설명하지 않는다.",
+      "description": "불꽃 회오리가 낙뢰의 재사용 대기시간을 2초 줄이고 다음 낙뢰의 피해를 8% 증가시킨다. 피해 강화는 최대 5중첩이며 합계 40%다. 영구적인 낙뢰 피해 증가나 기본 쿨다운 2초 감소로 설명하지 않는다. Blizzard는 2026년 9월 5일 이 4세트 효과가 낙뢰의 초반 피해를 정상적으로 증가시키지 않던 오류를 수정했다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -149616,7 +149616,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.01,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {

@@ -23,6 +23,7 @@ for (const id of [1296627, 1296628]) {
 }
 assert.match(skills[1296627].description, /6초.*2초.*200%.*모든 대상.*적용하지/);
 assert.match(skills[1296628].description, /2초.*8%.*5중첩.*40%/);
+assert.match(skills[1296628].description, /9월 5일.*낙뢰의 초반 피해/);
 assert.deepEqual(synergies.shaman_enhancement_season2_blaze_crash.participants, ['470057', '1260666', '1296627', '1296628', '187874']);
 
 for (const [id, pattern] of Object.entries({
@@ -156,7 +157,7 @@ assert.match(synergies.shaman_hero_totemic_surging_totem_common_hub.description,
 for (const [id, pattern] of Object.entries({
   445028: /고양.*5%.*8%.*일정 확률.*300%.*복원.*3초/,
   1263288: /고양·복원.*특화.*2%.*단순히 2%.*설명하지/,
-  445030: /승천.*치유의 해일 토템.*피해.*50%.*치유량 증가를 명시하지.*445029.*94874/,
+  445030: /승천.*치유의 해일 토템.*피해.*50%.*쇄도하는 토템과 범람의 파도의 치유량.*수치는.*50%라고 단정하지.*445029.*94874/,
   445031: /30초마다.*6%.*30초 지속.*피해 6% 감소.*다른/,
 })) {
   assert.equal(skills[id].patch, '12.1', id);
