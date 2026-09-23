@@ -513,9 +513,20 @@ assert.match(skills[1296647].description, /자원을 소모하지 않는 복수.
 assert.match(skills[1296648].description, /쇠날발톱.*자원을 소모하지 않는 복수.*12초.*30초/);
 assert.deepEqual(synergies.warrior_protection_season2_free_revenge.participants, ['6572', '1296647', '23922', '1296648', '228920']);
 const protectionGuide = guide.slice(guide.indexOf("'warrior-protection': {"), guide.indexOf("'warrior-arms': {"));
-assert.match(protectionGuide, /산왕은 광역에서 앞선다/);
-assert.match(protectionGuide, /거신은 단일 대상에서 앞선다/);
+assert.match(protectionGuide, /산왕: 광역과 번개 피해를 살릴 때/);
+assert.match(protectionGuide, /거신: 단일 대상과 쇄파 집중 운용/);
 assert.match(protectionGuide, /12\.0\.5 과거 로그/);
 const protectionBlocks = protectionGuide.slice(protectionGuide.indexOf('    blocks: ['), protectionGuide.indexOf('    opener: {'));
 assert.doesNotMatch(protectionBlocks, /산왕은 현재 기본값|현재 선택률만 보면 거신|98\.8%|97\.1%/);
+for (const id of [434969, 436148]) {
+  assert.equal(skills[id].patch, '12.1');
+  assert.deepEqual(skills[id].specs, ['Fury', 'Protection']);
+  assert.match(skills[id].description, /2026-09-22.*50%.*PvP/);
+}
+assert.equal(synergies.warrior_common_mountain_thane_lightning_thunder_blast.patch, '12.1');
+assert.match(protectionGuide, /9월 22일.*벼락과 지면 전류 피해가 각각 50% 증가/);
+const furyStart = guide.indexOf("'warrior-fury': {");
+const furyGuide = guide.slice(furyStart, guide.indexOf("\n  '", furyStart + 1));
+assert.match(furyGuide, /9월 22일.*벼락과 지면 전류.*각각 50%/);
+assert.match(furyGuide, /피의 갈증은 벼락의 직접 발동 조건이 아닙니다/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
