@@ -18961,7 +18961,7 @@
       "castTime": "즉시",
       "resourceCost": "기본 마나 1.12%",
       "range": "자신 (토템 반경 40야드)",
-      "description": "시전자 위치에 기본 10초 동안 토템을 소환한다. 기본 2초마다 40야드 내 파티원과 공격대원을 치유하며 대상이 5명을 초과하면 치유량이 감소한다. 5명만 치유한다는 뜻은 아니다. 기본 재사용 대기시간은 3분, 비용은 기본 마나 1.12%이며 즉시 시전한다. 복원 특성에서 승천과 양자택일이므로 두 기술을 동시에 보유한다고 계획하지 않는다.",
+      "description": "시전자 위치에 기본 10초 동안 토템을 소환한다. 기본 2초마다 40야드 내 파티원과 공격대원을 치유하며 대상이 5명을 초과하면 치유량이 감소한다. 5명만 치유한다는 뜻은 아니다. 기본 재사용 대기시간은 3분, 비용은 기본 마나 1.12%이며 즉시 시전한다. 복원 특성에서 승천과 양자택일이다. 토템술사에서 갈라지는 지류를 선택하면 이 토템의 치유량이 25% 증가한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -18978,12 +18978,16 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/갈라지는지류",
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/활발한토템",
+          "08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/원시촉매"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {

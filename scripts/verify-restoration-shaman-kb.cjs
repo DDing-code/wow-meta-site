@@ -237,7 +237,15 @@ for (const [id, synergy] of Object.entries(synergies.synergies)) {
   if (id.startsWith('shaman_restoration_')) assert.equal(synergy.patch, '12.1', `${id} is still stale`);
 }
 assert.match(skills[108280].description, /승천과 양자택일/);
+assert.match(skills[108280].description, /갈라지는 지류.*25%/);
+assert.deepEqual(skills[108280].synergies.relatedHeroTalents, [
+  '08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/갈라지는지류',
+  '08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/활발한토템',
+  '08-직업별-Knowledge-Base/11-주술사/공용/Hero-Talents/원시촉매',
+]);
 assert.match(skills[114052].description, /치유의 해일 토템과 양자택일/);
+assert.match(manuscript, /치유의 해일 토템 선택: 토템술사에서 갈라지는 지류는 토템 치유량을 25% 높이고/);
+assert.match(manuscript, /승천 선택: 연쇄 치유와 치유의 물결을 실제로 여러 번 시전할 수 있는 큰 피해/);
 assert.match(manuscript, /label: '치유의 해일 토템 \(선택 시\)'/);
 assert.match(manuscript, /label: '또는 승천 \(선택 시\)'/);
 const detailPage = require('node:fs').readFileSync(require.resolve('../src/pages/GuideDetailPage.js'), 'utf8');
