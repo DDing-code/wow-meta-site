@@ -22,7 +22,7 @@
     "validate:translations:verbose": "node scripts/validate-translations.js --verbose",
     "validate:generated-data": "npm run sync-kb && node scripts/validate-generated-data.js",
     "validate:pipeline": "node scripts/validate-pipeline-structure.js",
-    "validate:guide-registry": "node scripts/validate-guide-registry.js && node scripts/validate-guide-publication.cjs && node scripts/verify-healer-september-hotfix.cjs && node scripts/verify-restoration-shaman-kb.cjs && node scripts/validate-retribution-log-report.js && node scripts/validate-ragereaver-report.js && node scripts/validate-chaeyong-report.js && node scripts/validate-peal-report.js",
+    "validate:guide-registry": "node scripts/validate-guide-registry.js && node scripts/validate-guide-publication.cjs && node scripts/verify-healer-september-hotfix.cjs && node scripts/verify-restoration-shaman-kb.cjs && node scripts/verify-devastation-12-1.cjs && node scripts/validate-retribution-log-report.js && node scripts/validate-ragereaver-report.js && node scripts/validate-chaeyong-report.js && node scripts/validate-peal-report.js",
     "validate:guide-copy": "node scripts/validate-guide-copy.js",
     "validate:guide-manuscripts": "node scripts/validate-guide-manuscripts.js",
     "validate:guide-charts": "node scripts/validate-guide-charts.js",

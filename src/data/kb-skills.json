@@ -104,7 +104,7 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2879,
+        "withWikilinks": 2880,
         "withSynergies": 2083,
         "avgLinkDensity": "0.039"
       }
@@ -46887,13 +46887,13 @@
       "iconName": "ability_evoker_disintegrate",
       "school": "",
       "cooldown": "없음",
-      "castTime": "채널",
-      "resourceCost": "정수",
+      "castTime": "집중 3초",
+      "resourceCost": "정수 3",
       "range": "25야드",
       "description": "# 파열 (Disintegrate)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46918,7 +46918,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 3,
-        "linkDensity": 0.088,
+        "linkDensity": 0.064,
         "hasWikilinks": true
       },
       "source": {
@@ -47102,12 +47102,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "정수",
+      "resourceCost": "정수 3",
       "range": "25야드",
       "description": "# 기염 (Pyre)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -47131,7 +47131,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.053,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -48097,7 +48097,7 @@
       "description": "# 불안정성 (Volatility)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48118,7 +48118,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.04,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -48302,7 +48302,7 @@
       "description": "# 충전 폭발 (Charged Blast)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48323,7 +48323,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.016,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -48564,7 +48564,7 @@
       "description": "# 임박한 파괴 (Imminent Destruction)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48587,7 +48587,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.057,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -48616,7 +48616,7 @@
       "description": "# 이글거리는 잿불 (Scorching Embers)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48637,7 +48637,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.027,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -48666,7 +48666,7 @@
       "description": "# 불꽃 섬광 (Scintillation)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48680,6 +48680,7 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도",
           "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
@@ -48688,9 +48689,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.051,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -48773,7 +48774,7 @@
       "description": "# 초토화 (Lay Waste)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48796,7 +48797,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.035,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -50658,7 +50659,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 4,
-        "linkDensity": 0.063,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -50744,7 +50745,7 @@
       "description": "# 하늘빛 정수 폭발 (Azure Essence Burst)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50757,15 +50758,16 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발"
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.034,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -50847,7 +50849,7 @@
       "description": "# 영원의 전역 (Eternity's Span)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -50862,13 +50864,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/불꽃섬광"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.042,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -51054,7 +51058,7 @@
       "description": "# 적개심 (Animosity)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51077,7 +51081,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.055,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
@@ -51513,7 +51517,7 @@
       "description": "# 루비 정수 폭발 (Ruby Essence Burst)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51526,18 +51530,19 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/공용/Skills/살아있는불꽃",
           "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 4,
-        "linkDensity": 0.046,
+        "wikilinkCount": 5,
+        "synergyCount": 5,
+        "linkDensity": 0.052,
         "hasWikilinks": true
       },
       "source": {
@@ -51566,7 +51571,7 @@
       "description": "# 폭정 (Tyranny)",
       "category": "spec-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -51579,15 +51584,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노",
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/해방된불길"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.034,
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -63895,7 +63902,7 @@
       "description": "# 촉진화 (Catalyze)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63908,6 +63915,7 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
           "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
           "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노"
         ],
@@ -63915,9 +63923,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.037,
+        "wikilinkCount": 4,
+        "synergyCount": 3,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -93549,10 +93557,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 0,
+        "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0,
-        "hasWikilinks": false
+        "linkDensity": 0.011,
+        "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\공용\\Hero-Talents\\화염흡수.md",
@@ -147694,7 +147702,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.018,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {

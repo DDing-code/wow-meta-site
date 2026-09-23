@@ -4767,15 +4767,14 @@
       "participants": [
         "436335",
         "356995",
-        "357210",
-        "434300",
-        "375087"
+        "441206",
+        "357210"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 7,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염"
@@ -4836,13 +4835,16 @@
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/영원의쇄도"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/적개심",
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/촉진화"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Synergies\\불의숨결-영원의쇄도.md",
         "lastUpdate": ""
@@ -4920,18 +4922,20 @@
         "359618",
         "356995",
         "357211",
-        "375722",
-        "375721",
+        "1292321",
         "376888"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 9,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/용의분노",
-        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발"
+        "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/파열",
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/기염",
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/해방된불길"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -4957,7 +4961,7 @@
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 7,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/황폐/Skills/깊은숨결"
       ],
@@ -4978,20 +4982,22 @@
       "participants": [
         "444088",
         "357208",
-        "361469",
-        "1264269",
-        "375087"
+        "356995",
+        "357211",
+        "386283"
       ],
       "class": "Evoker",
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 7,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/04-기원사/황폐/Talents/촉진화"
+      ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Synergies\\화염흡수-불의숨결.md",
         "lastUpdate": ""
