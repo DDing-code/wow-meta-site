@@ -95,4 +95,18 @@ for (const [id, pattern] of [
 assert.match(skills[462486].description, /특성.*207778/);
 assert.match(skills[207778].description, /시전 주문.*12미터.*5명/);
 assert(synergies.synergies.shaman_restoration_downpour_tide.participants.includes('207778'));
+for (const [id, pattern] of [
+  [51485, /8초.*2초.*50%/], [196840, /6초.*50%.*소용돌이 10/],
+  [2645, /30%.*100%/], [974, /자신이.*20%.*3초.*9회/],
+  [198103, /30초.*3분/], [192106, /1시간.*50%/],
+  [188196, /40야드.*2\.5초/], [51514, /1분.*30초/],
+  [2484, /20초.*10미터.*50%/], [188443, /3명.*2초.*소용돌이 2/],
+  [32182, /40초.*30%.*10분/], [378081, /자연 주문.*즉시.*1분/],
+  [51490, /10미터.*5초.*40%.*30초/], [5394, /15초.*2초.*40미터/],
+  [2825, /40초.*30%.*10분/],
+]) {
+  assert.equal(skills[id].patch, '12.1', `Shared spell ${id} must be current`);
+  assert.match(skills[id].description, pattern);
+}
+assert.deepEqual(skills[51490].specs, ['Elemental']);
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
