@@ -4,12 +4,12 @@
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2969,
-    "rawTotalSkills": 2969,
+    "totalSkills": 2970,
+    "rawTotalSkills": 2970,
     "duplicateIds": [],
     "totalSynergies": 605,
     "stats": {
-      "total": 2969,
+      "total": 2970,
       "byType": {
         "buff": 137,
         "hero-talent": 548,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 125,
         "talent": 1000,
-        "spec-talent": 385,
+        "spec-talent": 386,
         "passive": 78,
         "hero-tree": 2,
         "set-bonus": 17,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 118,
+        "DeathKnight": 119,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -46,7 +46,7 @@
       },
       "bySpec": {
         "DeathKnight-공용": 17,
-        "DeathKnight-냉기": 32,
+        "DeathKnight-냉기": 33,
         "DeathKnight-부정": 40,
         "DeathKnight-혈기": 29,
         "DemonHunter-공용": 16,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2887,
-        "withSynergies": 2092,
+        "withWikilinks": 2888,
+        "withSynergies": 2093,
         "avgLinkDensity": "0.039"
       }
     }
@@ -34507,15 +34507,17 @@
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/빙하진군"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리수확자"
+        ],
         "relatedHeroTalents": [
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Hero-Talents/몰살"
         ]
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 3,
-        "linkDensity": 0.063,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.076,
         "hasWikilinks": true
       },
       "source": {
@@ -113912,6 +113914,58 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Talents\\살상의연쇄.md",
         "lastUpdate": "2026-09-12"
+      }
+    },
+    "1230301": {
+      "id": "1230301",
+      "type": "spec-talent",
+      "class": "DeathKnight",
+      "spec": "냉기",
+      "specs": [
+        "Frost"
+      ],
+      "name": "서리수확자",
+      "koreanName": "서리수확자",
+      "englishName": "Frostreaper",
+      "icon": "inv_axe_1h_pvpdraenors2_d_02",
+      "iconName": "inv_axe_1h_pvpdraenors2_d_02",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "절멸의 공격력을 10% 높입니다. 절멸 사용 시 일정 확률로 대상과 근처 적 한 명을 사슬로 연결하고, 서리낫으로 사슬을 끊으면 두 대상에게 암흑냉기 피해를 입힙니다. 직접 누르는 기술이 아닌 지속 효과입니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-23",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_pvpdraenors2_d_02.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_axe_1h_pvpdraenors2_d_02.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_axe_1h_pvpdraenors2_d_02.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_1h_pvpdraenors2_d_02.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_pvpdraenors2_d_02.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리낫"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.02,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Talents\\서리수확자.md",
+        "lastUpdate": "2026-09-23"
       }
     },
     "1230339": {

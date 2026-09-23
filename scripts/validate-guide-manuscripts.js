@@ -1702,7 +1702,8 @@ function main() {
       assert(step.phase && step.trigger && step.note, 'Frost hero flow must retain its authored conditions');
     }
   }
-  assert(!frost.opener.steps.some(step => step.skillId === '439843'), 'Rider opener must not cast a Deathbringer talent');
+  assert(frost.opener.steps.some(step => step.skillId === '439843') && frost.opener.steps.findIndex(step => step.skillId === '439843') < frost.opener.steps.findIndex(step => step.skillId === '51271'), 'Default Frost Deathbringer opener must apply Reaper\'s Mark before Pillar');
+  assert(kbSkills['1230301']?.name === '서리수확자' && kbSkills['1230301']?.castTime === '지속 효과', 'Frostreaper must be synced as a passive talent with its Korean name');
   assert(frost.heroBranches[1].opener.steps.some(step => step.skillId === '439843'), 'Deathbringer requires its own authored Mark flow');
   if (fs.existsSync(arcaneSource)) {
     assert(JSON.stringify(JSON.parse(read(arcaneSource))) === JSON.stringify(manuscripts['mage-arcane']), 'Arcane guide must match its canonical KB manuscript');
