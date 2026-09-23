@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '고양 주술사 12.1 공식 변경·시즌 2 세트 검수', partial: true,
+    guideIds: ['shaman-enhancement'], commits: ['2ee7d9e0'],
+    body: 'Blizzard 라이브 12.1 조정과 한국어 세트·파멸의 바람 툴팁을 가이드·KB·스펠 DB에 맞췄습니다. 12.0.5 Archon 점유율은 현행 추천 근거에서 제외했습니다. 로그 표본의 한계를 명시했고, 정확한 자원 손실량·장신구별 최적화는 계속 검수 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 가이드·시즌 2 세트 검수', partial: true,
     guideIds: ['shaman-restoration'], commits: ['9734fba9'],
     body: '복원 가이드의 12.1 패치 표기와 KB 동기화 범위를 맞췄습니다. 치유의 비·성난 해일 등 공식 변경폭과 시즌 2 2·4세트의 한국어 툴팁 효과를 대조하고, 추가 치유의 비 위치와 보호막 대상을 구분했습니다. 최신 로그의 영웅 특성 선택률과 보스별 유효 치유·흡수량은 아직 검수 중입니다.' },
