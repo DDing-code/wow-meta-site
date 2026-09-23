@@ -26,14 +26,14 @@ for (const id of ids) {
   const manuscript = guideManuscripts[id];
   const publication = getGuidePublication(id, manuscript);
   assert.ok(publication.date && publication.commit, `Missing Git publication for ${id}`);
-  if (manuscript.patch === '12.1') {
-    assert.equal(publication.label, '12.1');
-    assert.equal(publication.partial, false);
-  }
-  else {
+  const latest = guideUpdates.find(entry => entry.guideIds.includes(id));
+  if (manuscript.patch !== '12.1' || latest.partial) {
     assert.equal(publication.partial, true);
     assert.equal(publication.label, '12.1 전환 중');
-    assert.ok(publication.detail.includes(manuscript.patch));
+    assert.ok(publication.detail.includes(manuscript.patch === '12.1' ? '전체 검수' : manuscript.patch));
+  } else {
+    assert.equal(publication.label, '12.1');
+    assert.equal(publication.partial, false);
   }
   assert.doesNotMatch(publication.detail, /12\.1.*12\.1/, 'Duplicate patch in badge');
 }

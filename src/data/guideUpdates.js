@@ -64,11 +64,13 @@ export function getGuidePublication(id, manuscript) {
   const update = guideUpdates.find(entry => entry.guideIds.includes(id));
   const patch = manuscript?.patch || '확인 중';
   const status = (manuscript?.status || '').replace(/^12\.1\s*/, '');
-  const partial = update?.partial && patch !== '12.1';
+  const partial = Boolean(manuscript) && (patch !== '12.1' || Boolean(update?.partial));
   return {
-    partial: Boolean(partial),
+    partial,
     label: partial ? '12.1 전환 중' : patch,
-    detail: partial ? `12.1 전환 중 · ${patch} 내용 포함` : `${patch}${status ? ` · ${status}` : ''}`,
+    detail: partial
+      ? patch === '12.1' ? '12.1 전환 중 · 전체 검수 진행 중' : `12.1 전환 중 · ${patch} 내용 포함`
+      : `${patch}${status ? ` · ${status}` : ''}`,
     date: update?.date || null,
     commit: update?.commits[0] || null,
   };
