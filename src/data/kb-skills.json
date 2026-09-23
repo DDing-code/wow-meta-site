@@ -4,19 +4,19 @@
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2962,
-    "rawTotalSkills": 2962,
+    "totalSkills": 2963,
+    "rawTotalSkills": 2963,
     "duplicateIds": [],
-    "totalSynergies": 600,
+    "totalSynergies": 601,
     "stats": {
-      "total": 2962,
+      "total": 2963,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
         "skill": 125,
-        "talent": 999,
+        "talent": 1000,
         "spec-talent": 385,
         "passive": 78,
         "hero-tree": 2,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 111,
+        "DeathKnight": 112,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -48,7 +48,7 @@
         "DeathKnight-공용": 17,
         "DeathKnight-냉기": 32,
         "DeathKnight-부정": 40,
-        "DeathKnight-혈기": 22,
+        "DeathKnight-혈기": 23,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2880,
-        "withSynergies": 2084,
+        "withWikilinks": 2881,
+        "withSynergies": 2086,
         "avgLinkDensity": "0.039"
       }
     }
@@ -12866,7 +12866,7 @@
       "description": "# 죽음의 일격 (Death Strike)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12885,7 +12885,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.051,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -12960,14 +12960,14 @@
       "icon": "spell_deathknight_bloodboil",
       "iconName": "spell_deathknight_bloodboil",
       "school": "",
-      "cooldown": "충전식",
+      "cooldown": "7.5초, 2회 충전",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "근접 광역",
+      "range": "자신 주위 10미터",
       "description": "# 피의 소용돌이 (Blood Boil)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12989,7 +12989,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.038,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -14130,7 +14130,7 @@
       "description": "# 피의 역병 (Blood Plague)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14144,7 +14144,7 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의소용돌이",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기"
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -14152,7 +14152,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -14231,7 +14231,7 @@
       "description": "# 흡혈 (Vampiric Blood)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14253,7 +14253,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.043,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -28440,14 +28440,14 @@
       "icon": "ability_deathknight_deathscaress",
       "iconName": "ability_deathknight_deathscaress",
       "school": "",
-      "cooldown": "없음",
+      "cooldown": "6초",
       "castTime": "즉시",
       "resourceCost": "룬 1",
-      "range": "30미터",
+      "range": "30야드",
       "description": "# 죽음의 마수 (Death's Caress)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28469,7 +28469,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.035,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -28550,7 +28550,7 @@
       "description": "# 피구더기 (Bloodworms)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -28569,9 +28569,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.027,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -34333,7 +34333,7 @@
       "description": "# 심장 강타 (Heart Strike)",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -34354,9 +34354,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
+        "wikilinkCount": 5,
         "synergyCount": 3,
-        "linkDensity": 0.057,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -132894,6 +132894,59 @@
         "lastUpdate": ""
       }
     },
+    "1263774": {
+      "id": "1263774",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "혈기",
+      "specs": [
+        "Blood"
+      ],
+      "name": "핏빛 안개",
+      "koreanName": "핏빛 안개",
+      "englishName": "Blood Mist",
+      "icon": "ability_revendreth_deathknight",
+      "iconName": "ability_revendreth_deathknight",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "# 핏빛 안개 (Blood Mist)",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_deathknight.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_revendreth_deathknight.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_revendreth_deathknight.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_revendreth_deathknight.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_deathknight.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기",
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/유혈의폭발"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\핏빛안개.md",
+        "lastUpdate": ""
+      }
+    },
     "1263781": {
       "id": "1263781",
       "type": "talent",
@@ -132915,7 +132968,7 @@
       "description": "# 유혈의 폭발 (Sanguinary Burst)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -132928,21 +132981,17 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의소용돌이",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/피투성이반영",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/피구더기",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/치명적인접촉"
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/핏빛안개"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 6,
-        "linkDensity": 0.064,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -133708,7 +133757,7 @@
       "description": "# 치명적인 접촉 (Deadly Reach)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133720,14 +133769,17 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_cleavingdeathstrikes.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -146587,7 +146639,7 @@
       "description": "# 피투성이 반영 (Bloody Reflection)",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -146599,16 +146651,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodbath.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/섭취"
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의보호막"
         ],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.026,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {

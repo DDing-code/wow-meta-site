@@ -4,8 +4,8 @@
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 600,
-    "rawTotalSynergies": 600,
+    "totalSynergies": 601,
+    "rawTotalSynergies": 601,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -21,10 +21,11 @@
       "unknown": 203,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
+      "ranged-bone-shield-maintenance": 1,
+      "death-strike-cleave": 1,
       "blood-debt-marrowrend": 1,
       "blood-shield-bloodshot": 1,
       "apex-defensive-window": 1,
-      "ranged-bone-shield-maintenance": 1,
       "damage": 4,
       "survival-mobility": 1,
       "dispels-enrage-control": 1,
@@ -260,7 +261,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 28,
+      "DeathKnight": 29,
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
@@ -968,7 +969,7 @@
       "spec": "Blood",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄",
         "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
@@ -1023,7 +1024,7 @@
       "spec": "Blood",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/01-죽음의기사/공용/Skills/죽음과부패",
         "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
@@ -1033,6 +1034,59 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\죽음과부패-심장강타.md",
+        "lastUpdate": ""
+      }
+    },
+    "deathknight_blood_caress_bone_shield": {
+      "id": "deathknight_blood_caress_bone_shield",
+      "name": "죽음의마수-골수분쇄-원거리보호막",
+      "type": "synergy",
+      "synergyType": "ranged-bone-shield-maintenance",
+      "participants": [
+        "195292",
+        "195182"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수",
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄",
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의역병"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\죽음의마수-골수분쇄-원거리보호막.md",
+        "lastUpdate": ""
+      }
+    },
+    "deathknight_blood_deadly_reach_death_strike": {
+      "id": "deathknight_blood_deadly_reach_death_strike",
+      "name": "치명적인접촉-죽음의일격-추가대상",
+      "type": "synergy",
+      "synergyType": "death-strike-cleave",
+      "participants": [
+        "1264235",
+        "49998"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/치명적인접촉"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\치명적인접촉-죽음의일격-추가대상.md",
         "lastUpdate": ""
       }
     },
@@ -1125,38 +1179,6 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\한밤의춤-춤추는룬무기.md",
         "lastUpdate": "2026-09-12"
-      }
-    },
-    "deathknight_blood_deaths_caress_fatal_touch": {
-      "id": "deathknight_blood_deaths_caress_fatal_touch",
-      "name": "혈기-죽음의마수-치명적인접촉-원거리유지",
-      "type": "synergy",
-      "synergyType": "ranged-bone-shield-maintenance",
-      "participants": [
-        "195292",
-        "1264235",
-        "195182",
-        "49998"
-      ],
-      "class": "DeathKnight",
-      "spec": "Blood",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/심장강타",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Talents/치명적인접촉"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\혈기-죽음의마수-치명적인접촉-원거리유지.md",
-        "lastUpdate": ""
       }
     },
     "demon-hunter-common-disrupt-consume-chaos-nova": {
