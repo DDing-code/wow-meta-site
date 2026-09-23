@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '무기·방어 거신 12.1 특성 검수', partial: true,
+    guideIds: ['warrior-arms', 'warrior-protection'], commits: ['bb727318'],
+    body: '거신 영웅 특성 12개의 현행 효과를 KB·스펠 DB에 반영하고 숙련된 공격의 피해·분노 수치를 교정했습니다. 거신의 학살을 학살자 칼날폭풍에 잘못 연결한 무기 시너지 2개를 고쳤으며, 무기·방어 가이드의 쇄파 이후 치명타 흐름을 보완했습니다. 방어 전문화의 나머지 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '전사 공용 기술·시너지 12.1 검수', partial: true,
     guideIds: ['warrior-arms', 'warrior-fury', 'warrior-protection'], commits: ['6b856f59'],
     body: '공용 기술 11개와 공용 시너지의 효과·전문화 범위를 KB·스펠 DB에서 교정했습니다. 방어 전용 용솟음치는 폭풍을 분리하고 삭제된 천둥의 포효를 현행 그래프에서 제외했습니다. 거신 및 무기·방어 전문화 검수는 계속 진행 중입니다.' },
