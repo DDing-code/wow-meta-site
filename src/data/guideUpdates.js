@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 연계·오프닝 교정', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['56084aa7'],
+    body: '성난 해일-연쇄 치유, 선견자 선조, 토템술사 무료 연쇄 치유의 실제 발동 조건과 그래프 노드를 KB·사이트 DB에 반영했습니다. 오프닝에서는 치유의 비와 이를 대체하는 쇄도하는 토템을 영웅 특성별 선택지로 분리했습니다. 나머지 복원 시너지와 전체 빌드·최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '주술사 공용 시너지 12.1 검수 완료',
     guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['2859a929'],
     body: '남아 있던 공용 시너지 4개를 현행 스킬 효과와 선택 노드에 맞춰 교정해 공용 시너지 10개를 12.1로 정리했습니다. 기동·치유 지원·정화/차단·공대 가속의 직접 관계를 분리하고 비전투 부활 같은 잘못된 연결을 제거했습니다. 피의 욕망의 시전·쿨다운·마나 정보도 스펠 DB에 보완했습니다. 고양·복원 전문화 가이드 원고 검수는 계속 진행 중입니다.' },
