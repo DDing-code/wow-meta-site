@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '무기 전사 12.1 마무리 일격·세트 연결 교정', partial: true,
+    guideIds: ['warrior-arms'], commits: ['96add29b'],
+    body: '마무리 일격의 기본 20%·대학살 35%·급살 무료 사용을 KB·스펠 DB·가이드에서 분리했습니다. 정본 현재 빌드와 그래프에 시즌 2 세트 연결을 보강하고 6월 선택률을 현행 추천 근거에서 제외했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '방어 전사 12.1 방어기·빌드 근거 교정', partial: true,
     guideIds: ['warrior-protection'], commits: ['4dadbce2'],
     body: '방패의 벽과 수호자의 아이기스의 기본·선택 효과를 KB·스펠 DB·가이드에서 분리했습니다. 정본 현재 빌드와 연결 그래프에는 시즌 2 무료 복수와 9월 산왕 핫픽스를 반영하고, 6월 선택률을 현행 추천 근거에서 제외했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },
