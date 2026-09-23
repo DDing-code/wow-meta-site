@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '전사 산왕 12.1 핫픽스 반영', partial: true,
+    guideIds: ['warrior-fury', 'warrior-protection'], commits: ['d7481e26'],
+    body: '분노·방어 산왕의 벼락과 지면 전류 PvE 피해 상향을 KB·스펠 DB·가이드에 반영했습니다. 상향 전 자료의 영웅 특성 우열 단정은 정리했으며 전체 전환 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '방어 전사 12.1 시즌 2 교정', partial: true,
     guideIds: ['warrior-protection'], commits: ['8891a8be'],
     body: '무료 복수 발동과 2·4세트 효과를 정본 KB·스펠 DB·가이드에 연결했습니다. 단일 대상 거신, 광역 산왕의 조건을 구분하고 6월 선택률은 과거 로그로 표시했습니다. 전체 원고 검수는 계속 진행 중입니다.' },
