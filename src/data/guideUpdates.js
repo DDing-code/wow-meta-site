@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '냉기 죽음의 기사 12.1 빌드·공식 조정 재검토', partial: true,
+    guideIds: ['deathknight-frost'], commits: ['8a341576'],
+    body: '9월 갱신된 Wowhead·Icy Veins·Method 자료와 Blizzard 12.1 노트를 대조해 레이드·쐐기 기본 비교를 죽음의 인도자·숨결로 고쳤습니다. 종말의 기수와 냉기파멸은 조건부 대안으로 분리하고, 누락된 서리수확자를 한국어 툴팁·아이콘으로 KB와 스펠 DB에 추가했습니다. 9월 22일 영어 긴급 수정의 한국 서버 적용 시각과 최신 레이드 로그는 계속 확인 중입니다.' },
   { date: '2026-09-23', title: '무기·방어 전사 12.1 공식 변경 검수', partial: true,
     guideIds: ['warrior-arms', 'warrior-protection'], commits: ['12da26fb'],
     body: 'Blizzard 12.1 라이브 노트와 한국어 툴팁을 대조해 무기의 분쇄·일격무쌍, 방어의 무료 복수·능동 방어 변경을 가이드·KB·스펠 DB에 반영했습니다. 영웅 특성별 최신 로그와 전체 특성의 세부 검수는 계속 진행 중입니다.' },
