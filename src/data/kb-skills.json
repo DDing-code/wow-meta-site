@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:26:28.125Z",
+    "generatedAt": "2026-09-23T02:33:53.664Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2958,
-    "rawTotalSkills": 2958,
+    "totalSkills": 2960,
+    "rawTotalSkills": 2960,
     "duplicateIds": [],
-    "totalSynergies": 599,
+    "totalSynergies": 600,
     "stats": {
-      "total": 2958,
+      "total": 2960,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
@@ -20,7 +20,7 @@
         "spec-talent": 384,
         "passive": 78,
         "hero-tree": 2,
-        "set-bonus": 15,
+        "set-bonus": 17,
         "tier-set": 2,
         "class-talent": 80,
         "debuff": 6,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 246
+        "Warrior": 248
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -99,12 +99,12 @@
         "Warrior-Arms": 39,
         "Warrior-Common": 1,
         "Warrior-무기": 3,
-        "Warrior-Protection": 41,
+        "Warrior-Protection": 43,
         "Warrior-Fury": 47,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2875,
+        "withWikilinks": 2877,
         "withSynergies": 2023,
         "avgLinkDensity": "0.039"
       }
@@ -5940,13 +5940,13 @@
       "iconName": "ability_warrior_revenge",
       "school": "",
       "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "복수는 방어 전사의 광역 분노 소비기다. 단일 생존의 중심은 이고, 복수는 로 만든 분노를 광역 위협과 피해로 바꾸는 기술로 본다.",
+      "castTime": "즉시",
+      "resourceCost": "분노 20",
+      "range": "근접",
+      "description": "복수는 분노 20을 쓰는 전방 광역 기술이다. 회피·무기 막기·자동 공격 시 다음 복수가 무료가 될 수 있다. 12.1 시즌 2 세트는 무료 복수에만 추가 피해와 출혈을 붙이므로 유료 복수와 구분한다. 단일 생존의 중심은 방패 올리기이고, 복수는 방패 밀쳐내기로 만든 분노를 광역 위협과 피해로 바꾸는 기술로 본다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5959,11 +5959,11 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기",
-          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
           "08-직업별-Knowledge-Base/13-전사/방어/Skills/고통-감내"
         ],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/시즌2-2세트",
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/시즌2-4세트",
           "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
         ],
         "relatedHeroTalents": [
@@ -5972,9 +5972,9 @@
         ]
       },
       "quality": {
-        "wikilinkCount": 9,
+        "wikilinkCount": 10,
         "synergyCount": 4,
-        "linkDensity": 0.08,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -8878,18 +8878,18 @@
       ],
       "name": "방패 밀쳐내기",
       "koreanName": "방패 밀쳐내기",
-      "englishName": "",
+      "englishName": "Shield Slam",
       "icon": "inv_shield_05",
       "iconName": "inv_shield_05",
       "school": "",
-      "cooldown": "",
-      "castTime": "",
-      "resourceCost": "",
-      "range": "",
-      "description": "방어 전사는 방패 올리기와 고통 감내로 피해를 평탄화하고 방패 밀쳐내기, 복수, 천둥벼락으로 분노와 위협 수준을 만든다. 방패 밀쳐내기은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 방패 밀쳐내기 근접 사정거리 즉시 9 초 재사용 대기시간 전사 필요 요구 레벨 3 적을 방패로 가격하여 (전투력의 230.594%)의 물리 피해를 입힙니다. [ 방패 밀쳐내기 : 압도, 천둥벼락, 복수, 마무리 일격이 30%의 확률로 방패 밀쳐내기의 재사용 대기시간을 초기화합니다 ] 15의 분노를 생성합니다",
+      "cooldown": "9초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "근접",
+      "description": "방패 밀쳐내기는 근접 단일 공격으로 분노 15를 생성한다. 기본 재사용 대기시간은 9초이며 압도, 천둥벼락, 복수, 마무리 일격으로 초기화될 수 있다. 준비됐을 때 지연하지 않아야 다음 방패 올리기와 고통 감내에 쓸 분노가 이어진다. 12.1 시즌 2 2세트에서는 무료 복수 뒤 다음 방패 밀쳐내기의 피해가 20% 증가한다. 피해 보너스가 분노 생성량을 늘리지는 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8906,9 +8906,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 9,
+        "wikilinkCount": 10,
         "synergyCount": 0,
-        "linkDensity": 0.051,
+        "linkDensity": 0.058,
         "hasWikilinks": true
       },
       "source": {
@@ -150455,6 +150455,102 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Talents\\시즌2-4세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296647": {
+      "id": "1296647",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "Warrior Protection 12.1 Class Set 2pc",
+      "koreanName": "Warrior Protection 12.1 Class Set 2pc",
+      "englishName": "Warrior Protection 12.1 Class Set 2pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "자원을 소모하지 않는 복수의 피해가 15% 증가하고, 그 복수를 사용하면 다음 방패 밀쳐내기의 피해가 20% 증가한다. 모든 복수에 적용되는 효과가 아니며, 방패 밀쳐내기 자체의 분노 생성량을 늘리는 효과도 아니다. 공식 한글 툴팁에도 효과 이름은 영문으로 표시되어 임의의 세트명을 만들지 않았다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 0,
+        "linkDensity": 0.011,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Talents\\시즌2-2세트.md",
+        "lastUpdate": ""
+      }
+    },
+    "1296648": {
+      "id": "1296648",
+      "type": "set-bonus",
+      "class": "Warrior",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "Warrior Protection 12.1 Class Set 4pc",
+      "koreanName": "Warrior Protection 12.1 Class Set 4pc",
+      "englishName": "Warrior Protection 12.1 Class Set 4pc",
+      "icon": "trade_engineering",
+      "iconName": "trade_engineering",
+      "school": "",
+      "cooldown": "",
+      "castTime": "지속 효과",
+      "resourceCost": "",
+      "range": "",
+      "description": "쇠날발톱과 자원을 소모하지 않는 복수가 맞힌 모든 대상에게 12초 출혈을 적용한다. 쇠날발톱의 재사용 대기시간도 30초 감소한다. 유료 복수나 모든 출혈을 자동으로 강화하는 효과가 아니다. 한국어 툴팁의 세트 효과 이름은 영문이므로 별도 공식 한글 이름을 만들지 않았다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/trade_engineering.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/trade_engineering.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.022,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Talents\\시즌2-4세트.md",
         "lastUpdate": ""
       }
     },

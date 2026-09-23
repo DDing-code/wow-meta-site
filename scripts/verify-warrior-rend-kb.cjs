@@ -502,4 +502,20 @@ assert.match(skills[1265570].description, /분노 5.*4초.*10%.*25/);
 assert.deepEqual(synergies['warrior-fury-scent-ragedrinker'].participants, ['184367', '1265355', '23881', '1265356', '85288']);
 assert.match(synergies['warrior-fury-scent-ragedrinker'].description, /치명타를 보장하지/);
 assert.doesNotMatch(guide, /강한 면역기나 죽음 방지 장치를 가진 전문화가 아닙니다/);
+for (const id of [6572, 23922, 1296647, 1296648]) {
+  assert.equal(skills[id].patch, '12.1');
+}
+assert.equal(skills[6572].resourceCost, '분노 20');
+assert.equal(skills[23922].cooldown, '9초');
+assert.match(skills[23922].description, /분노 15.*무료 복수.*20%/);
+assert.match(skills[6572].description, /자동 공격.*무료.*방패 올리기/);
+assert.match(skills[1296647].description, /자원을 소모하지 않는 복수.*15%.*다음 방패 밀쳐내기.*20%/);
+assert.match(skills[1296648].description, /쇠날발톱.*자원을 소모하지 않는 복수.*12초.*30초/);
+assert.deepEqual(synergies.warrior_protection_season2_free_revenge.participants, ['6572', '1296647', '23922', '1296648', '228920']);
+const protectionGuide = guide.slice(guide.indexOf("'warrior-protection': {"), guide.indexOf("'warrior-arms': {"));
+assert.match(protectionGuide, /산왕은 광역에서 앞선다/);
+assert.match(protectionGuide, /거신은 단일 대상에서 앞선다/);
+assert.match(protectionGuide, /12\.0\.5 과거 로그/);
+const protectionBlocks = protectionGuide.slice(protectionGuide.indexOf('    blocks: ['), protectionGuide.indexOf('    opener: {'));
+assert.doesNotMatch(protectionBlocks, /산왕은 현재 기본값|현재 선택률만 보면 거신|98\.8%|97\.1%/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

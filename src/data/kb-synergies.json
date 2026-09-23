@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-21T22:26:28.127Z",
+    "generatedAt": "2026-09-23T02:33:53.666Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 599,
-    "rawTotalSynergies": 599,
+    "totalSynergies": 600,
+    "rawTotalSynergies": 600,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -240,6 +240,7 @@
       "mountain-thane-thunder": 1,
       "major-defensive": 1,
       "passive-mitigation": 1,
+      "free_revenge_tier_bleed": 1,
       "baseline-attack-engine": 1,
       "utility-magic-control": 1,
       "aoe-rage-loop": 1,
@@ -272,7 +273,7 @@
       "Rogue": 43,
       "Shaman": 37,
       "Warlock": 60,
-      "Warrior": 62
+      "Warrior": 63
     }
   },
   "synergies": {
@@ -20666,6 +20667,42 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\쇠날발톱-피와번개-출혈강화.md",
+        "lastUpdate": ""
+      }
+    },
+    "warrior_protection_season2_free_revenge": {
+      "id": "warrior_protection_season2_free_revenge",
+      "name": "시즌2-무료복수-방패밀쳐내기-출혈",
+      "description": "시즌 2 2세트는 무료 복수 피해를 15% 높이고 다음 방패 밀쳐내기 피해를 20% 강화한다. 4세트는 무료 복수와 쇠날발톱이 적중한 모든 대상에게 12초 출혈을 적용하고 쇠날발톱 쿨다운을 30초 줄인다. 유료 복수는 이 추가 출혈의 조건이 아니다.",
+      "type": "synergy",
+      "synergyType": "free_revenge_tier_bleed",
+      "participants": [
+        "6572",
+        "1296647",
+        "23922",
+        "1296648",
+        "228920"
+      ],
+      "class": "Warrior",
+      "spec": "방어",
+      "specs": [
+        "Protection"
+      ],
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
+        "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/쇠날발톱"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/시즌2-2세트",
+        "08-직업별-Knowledge-Base/13-전사/방어/Talents/시즌2-4세트"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Synergies\\시즌2-무료복수-방패밀쳐내기-출혈.md",
         "lastUpdate": ""
       }
     },
