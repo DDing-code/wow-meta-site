@@ -251,7 +251,7 @@ assert.ok(!JSON.stringify(synergies).includes('316440'));
 assert.match(skills[444775].description, /회전베기.*3명.*20%/);
 assert.match(skills[444775].description, /소용돌이 연마.*광란/);
 assert.match(skills[444769].description, /학살자의 일격.*3회.*급살/);
-assert.deepEqual(synergies.warrior_slayer_reap_trigger_paths.participants, ['444775', '444769', '845', '184367', '12950', '163201']);
+assert.deepEqual(synergies.warrior_slayer_reap_trigger_paths.participants, ['444775', '444769', '845', '184367', '12950', '163201', '5308']);
 assert.ok(!guide.includes('제압이 폭풍을 거두는 자와 학살자 흐름을 여는'));
 for (const id of [316405, 389306, 383703, 400205]) {
   assert.equal(skills[id].patch, '12.1');
@@ -544,6 +544,15 @@ assert.equal(synergies.warrior_common_mountain_thane_lightning_thunder_blast.pat
 assert.match(protectionGuide, /9월 22일.*벼락과 지면 전류 피해가 각각 50% 증가/);
 const furyStart = guide.indexOf("'warrior-fury': {");
 const furyGuide = guide.slice(furyStart, guide.indexOf("\n  '", furyStart + 1));
+assert.equal(skills[5308].patch, '12.1');
+assert.deepEqual(skills[5308].specs, ['Fury']);
+assert.equal(skills[5308].koreanName, '마무리 일격');
+assert.equal(skills[5308].icon, 'inv_sword_48');
+assert.deepEqual(skills[163201].specs, ['Arms', 'Protection']);
+assert.match(furyGuide, /skillId: '5308'/);
+assert.doesNotMatch(furyGuide, /skillId: '163201'/);
+assert.deepEqual(synergies['warrior-fury-slayer-execute'].participants, ['444767', '5308', '227847', '184367', '85288']);
+assert(synergies.warrior_common_slayer_execute_blade_storm.participants.includes('5308'));
 assert.match(furyGuide, /9월 22일.*벼락과 지면 전류.*각각 50%/);
 assert.match(furyGuide, /피의 갈증은 벼락의 직접 발동 조건이 아닙니다/);
 for (const [label, required, excluded] of [

@@ -4,18 +4,18 @@
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2961,
-    "rawTotalSkills": 2961,
+    "totalSkills": 2962,
+    "rawTotalSkills": 2962,
     "duplicateIds": [],
     "totalSynergies": 600,
     "stats": {
-      "total": 2961,
+      "total": 2962,
       "byType": {
         "buff": 137,
         "hero-talent": 546,
         "atomic-skill": 553,
         "proc": 29,
-        "skill": 126,
+        "skill": 127,
         "talent": 998,
         "spec-talent": 384,
         "passive": 78,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 248
+        "Warrior": 249
       },
       "bySpec": {
         "DeathKnight-공용": 17,
@@ -100,12 +100,12 @@
         "Warrior-Common": 1,
         "Warrior-무기": 3,
         "Warrior-Protection": 43,
-        "Warrior-Fury": 47,
+        "Warrior-Fury": 48,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2878,
-        "withSynergies": 2037,
+        "withWikilinks": 2879,
+        "withSynergies": 2038,
         "avgLinkDensity": "0.039"
       }
     }
@@ -5256,6 +5256,60 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Skills\\회피.md",
+        "lastUpdate": ""
+      }
+    },
+    "5308": {
+      "id": "5308",
+      "type": "skill",
+      "class": "Warrior",
+      "spec": "Fury",
+      "specs": [
+        "Fury"
+      ],
+      "name": "마무리 일격",
+      "koreanName": "마무리 일격",
+      "englishName": "Execute",
+      "icon": "inv_sword_48",
+      "iconName": "inv_sword_48",
+      "school": "",
+      "cooldown": "6초 (기본)",
+      "castTime": "즉시",
+      "resourceCost": "분노 20~40 (기본)",
+      "range": "근접",
+      "description": "분노 전사의 마무리 일격은 주문 ID `5308`이다. 기본적으로 대상 생명력이 20% 미만일 때 사용하는 근접 공격이며, 기본 재사용 대기시간은 6초다. 무기·방어 전사가 사용하는 같은 이름의 `163201`과 주문 ID 및 피해 계산이 다르다. 대학살을 선택하면 사용 가능한 대상 생명력 기준이 35% 미만으로 넓어지고 재사용 대기시간이 1.5초 줄어든다. 급살이 발동하면 대상 생명력과 관계없이 사용할 수 있다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_48.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_48.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_48.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_48.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_48.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/대학살",
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
+          "08-직업별-Knowledge-Base/13-전사/분노/Talents/마무리-일격-연마"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.03,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\분노\\Skills\\마무리-일격.md",
         "lastUpdate": ""
       }
     },
@@ -24312,9 +24366,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 10,
+        "wikilinkCount": 9,
         "synergyCount": 4,
-        "linkDensity": 0.05,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -34169,7 +34223,7 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
+          "08-직업별-Knowledge-Base/13-전사/분노/Skills/마무리-일격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
