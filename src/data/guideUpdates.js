@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '주술사 공용 특성 38개 12.1 교정',
+    guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['82be6d55'],
+    body: '남아 있던 공용 특성 19개를 한국어 툴팁·블리자드 변경 내역·전문화별 가이드와 대조해 공용 특성 38개 문서를 12.1로 갱신했습니다. 하늘의 격노를 실제 시전하는 공대 버프로 바로잡고, 체력·마법 방어·이동·토템·속성 피해 시너지의 잘못된 연결을 정리했습니다. 영웅 특성 및 고양·복원 가이드 전체 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '주술사 공용 특성 10개 12.1 검수',
     guideIds: ['shaman-elemental', 'shaman-enhancement', 'shaman-restoration'], commits: ['36eff27f'],
     body: '자연의 수호자·정령의 궤도·늑대 정령·천둥발·마나샘과 보호막·토템 특성 5개를 한국어 실시간 툴팁과 전문화별 가이드로 교정했습니다. 토템의 위력이 쇄도하는 토템에는 적용되지 않는 예외를 KB·스펠 DB에 기록했습니다. 고양·복원 전체 검수는 계속 진행 중입니다.' },
