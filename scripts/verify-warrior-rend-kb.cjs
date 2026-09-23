@@ -581,6 +581,21 @@ assert.match(skills[444773].description, /피의 갈증.*치명타.*20%.*필사�
 assert.match(skills[444777].description, /영웅의 도약.*돌진.*5초.*돌진.*영웅의 도약.*2초/);
 assert.match(skills[446085].description, /칼날폭풍.*다음 광란.*필사의 일격.*50%/);
 assert.match(furyGuide, /칼날폭풍 뒤 첫 광란의 50% 강화도 확인/);
+for (const id of [355, 1464, 1715, 5246, 12323, 57755, 64382, 275336, 376079, 384100, 384110]) {
+  assert.equal(skills[id].patch, '12.1', `Warrior shared skill ${id} must be current`);
+  assert(!skills[id].description.includes('전사 공용 도구상자'), `Warrior shared skill ${id} still has placeholder copy`);
+}
+assert.deepEqual(skills[275336].specs, ['Protection']);
+assert.match(skills[275336].description, /방어 전사.*투신.*천둥벼락.*50%/);
+assert.match(skills[1464].description, /분노 20.*303\.485%/);
+assert.match(skills[384110].description, /면역 효과 제거가 없다/);
+for (const [id, synergy] of Object.entries(synergies).filter(([id]) => id.startsWith('warrior_common_'))) {
+  assert.equal(synergy.patch, '12.1', `Warrior shared synergy ${id} must be current`);
+}
+assert.deepEqual(synergies.warrior_common_charge_leap_intervene_mobility.participants, ['100', '6544', '3411', '12323', '1715', '202163', '103827', '382260']);
+assert.deepEqual(synergies.warrior_common_pummel_storm_bolt_shockwave_control.participants, ['6552', '107570', '46968', '5246', '275339']);
+assert(synergies.warrior_common_spec_aoe.participants.includes('384277'));
+assert(!synergies.warrior_common_battle_shout_rallying_raid_utility.participants.includes('107574'));
 assert.equal(skills[5308].patch, '12.1');
 assert.deepEqual(skills[5308].specs, ['Fury']);
 assert.equal(skills[5308].koreanName, '마무리 일격');
