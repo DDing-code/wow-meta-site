@@ -513,6 +513,17 @@ assert.match(skills[1296647].description, /자원을 소모하지 않는 복수.
 assert.match(skills[1296648].description, /쇠날발톱.*자원을 소모하지 않는 복수.*12초.*30초/);
 assert.deepEqual(synergies.warrior_protection_season2_free_revenge.participants, ['6572', '1296647', '23922', '1296648', '228920']);
 const protectionGuide = guide.slice(guide.indexOf("'warrior-protection': {"), guide.indexOf("'warrior-arms': {"));
+const armsGuide = guide.slice(guide.indexOf("'warrior-arms': {"), guide.indexOf("'warrior-fury': {"));
+for (const [label, required, excluded] of [
+  ['학살자', '227847', '436358'],
+  ['거신', '436358', '227847'],
+]) {
+  const branch = armsGuide.split(`label: '${label}',`)[1];
+  const opener = branch?.split('        opener: {')[1]?.split('        singleTarget: {')[0];
+  assert(opener?.includes(`skillId: '${required}'`), `${label} opener missing its cooldown`);
+  assert(!opener.includes(`skillId: '${excluded}'`), `${label} opener includes the other hero tree`);
+  assert(branch.includes('singleTarget: {') && branch.includes('aoe: {'), `${label} needs single and AoE priorities`);
+}
 assert.match(protectionGuide, /산왕: 광역과 번개 피해를 살릴 때/);
 assert.match(protectionGuide, /거신: 단일 대상과 쇄파 집중 운용/);
 assert.match(protectionGuide, /12\.0\.5 과거 로그/);
