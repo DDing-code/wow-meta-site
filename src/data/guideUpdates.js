@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '전사 산왕·학살자 영웅 특성 12.1 추가 검수', partial: true,
+    guideIds: ['warrior-fury', 'warrior-protection', 'warrior-arms'], commits: ['0f74fbfc'],
+    body: '산왕 12개와 학살자 4개 특성의 발동 조건·전문화별 효과를 현재 한국어 툴팁에 맞춰 정본 KB와 스펠 DB에 반영했습니다. 분노·방어 가이드의 우레 작렬 충전 조건과 분노 학살자의 칼날폭풍 후 광란 강화도 교정했습니다. 전사 전체 전환 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '학살자 영웅 특성 12.1 효과 검수', partial: true,
     guideIds: ['warrior-fury', 'warrior-arms'], commits: ['dee9e614'],
     body: '급살 회복, 집행자 강화·지속시간, 압도당함, 돌진 이동 보상, 칼날폭풍 추가 피해·쿨다운·종료 후 가속을 한국어 Wowhead 툴팁에 맞춰 KB·DB·분노 가이드에 반영했습니다. 전체 전환 검수는 진행 중입니다.' },
