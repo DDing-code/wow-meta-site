@@ -558,4 +558,15 @@ assert.match(skills[107574].description, /분노 전문화에서는 칼날폭풍
 assert.match(skills[227847].description, /분노 전문화에서는 투신과 택일/);
 assert.equal(synergies['warrior-fury-recklessness-window'].patch, '12.1');
 assert.deepEqual(synergies['warrior-fury-recklessness-window'].participants, ['1719', '184367', '385059', '85288']);
+for (const id of [
+  'warrior-fury-rampage-enrage',
+  'warrior-fury-raging-blow-onslaught-generation',
+  'warrior-fury-whirlwind-multi-target',
+  'warrior-fury-mountain-thane-thunder',
+  'warrior-fury-slayer-execute',
+]) assert.equal(synergies[id].patch, '12.1', `${id} must be reviewed for 12.1`);
+assert.deepEqual(synergies['warrior-fury-whirlwind-multi-target'].participants, ['190411', '280392', '12950', '85288', '184367']);
+assert.match(furyGuide, /고기칼은 소용돌이 또는 천둥벼락이 3명 이상에게 맞았을 때 해당 기술의 직접 피해를 높이는 별도 특성/);
+assert.doesNotMatch(furyGuide, /고기칼.*확산 조건/);
+assert.match(skills[444767].description, /집행자는 대상에게 붙는 약화 효과가 아니라 자신에게 생기는 강화 효과/);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
