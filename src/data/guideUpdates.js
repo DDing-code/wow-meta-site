@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '고양·복원 주술사 12.1 핫픽스 교정', partial: true,
+    guideIds: ['shaman-enhancement', 'shaman-restoration'], commits: ['40b03b09'],
+    body: '공식 9월 5일 고양 4세트 낙뢰 초반 피해 오류 수정과 9월 4일 복원 과잉 쇄도의 치유 효과 수정을 KB·스펠 DB·가이드에 반영했습니다. 수정 전후 로그를 같은 조건으로 직접 비교하지 않으며, 두 전문화의 전체 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 추천 빌드·폭우 분기 교정', partial: true,
     guideIds: ['shaman-restoration'], commits: ['3d838036'],
     body: '12.1 Wowhead·Icy Veins·Method 특성 가이드에 맞춰 토템술사를 레이드·쐐기 기본 추천으로, 선견자를 상황별 대안으로 정리했습니다. 폭우는 기본 빌드의 필수 버튼이 아닌 선택 특성으로 오프닝·우선순위·차트를 고쳤습니다. 최신 로그 선택률은 검증되지 않아 인용하지 않았고 전체 세트·로그 검수는 계속 진행 중입니다.' },
