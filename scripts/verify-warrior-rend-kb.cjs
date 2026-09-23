@@ -540,4 +540,16 @@ const furyStart = guide.indexOf("'warrior-fury': {");
 const furyGuide = guide.slice(furyStart, guide.indexOf("\n  '", furyStart + 1));
 assert.match(furyGuide, /9월 22일.*벼락과 지면 전류.*각각 50%/);
 assert.match(furyGuide, /피의 갈증은 벼락의 직접 발동 조건이 아닙니다/);
+for (const [label, required, excluded] of [
+  ['학살자', '227847', '435607'],
+  ['산왕', '435607', '227847'],
+]) {
+  const branch = furyGuide.split(`label: '${label}',`)[1];
+  const opener = branch?.split('        opener: {')[1]?.split('        singleTarget: {')[0];
+  assert(opener?.includes(`skillId: '${required}'`), `${label} Fury opener missing its hero skill`);
+  assert(!opener.includes(`skillId: '${excluded}'`), `${label} Fury opener includes the other hero skill`);
+  assert(branch.includes('singleTarget: {') && branch.includes('aoe: {'), `${label} Fury needs single and AoE priorities`);
+}
+const furyCommonOpener = furyGuide.split('    opener: {').at(-1).split('    tips: [')[0];
+assert(!/skillId: '(227847|435607)'/.test(furyCommonOpener), 'Fury common opener mixes hero-only skills');
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
