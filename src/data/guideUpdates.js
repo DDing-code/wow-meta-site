@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '죽음의 기사 공용 기술·영웅 특성 12.1 검수', partial: true,
+    guideIds: ['deathknight-blood', 'deathknight-frost', 'deathknight-unholy'], commits: ['c297fe6c'],
+    body: '공용 기술 8개, 공유 영웅 특성 4개와 시너지 2개를 현행 한국어 툴팁 및 Blizzard 12.1 변경 내역에 맞춰 교정했습니다. 대마법 지대와 정신 얼리기의 구버전 수치, 부정 죽음과 부패의 잘못된 광역 연결, 사신의 징표 사망 시 전이 조건을 바로잡았습니다. 혈기·냉기·부정 전체 특성 및 최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '황폐 기원사 12.1 운용·KB 검수', partial: true,
     guideIds: ['evoker-devastation'], commits: ['6c0516a9'],
     body: '황폐 주문·특성 14개와 시너지 5개, 화염 흡수의 황폐 전용 효과를 현행 한국어 툴팁으로 교정했습니다. 시즌 2 비늘사령관 기본 추천, 영웅 특성별 파열·기염 분기, 산산이 부서지는 별의 자동 발동, 분노 상승 1·3등급의 해방된 불길 차이를 가이드에 반영했습니다. 최신 상위 로그와 전체 세트 검수는 진행 중입니다.' },
