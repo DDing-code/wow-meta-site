@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '무기 전사 12.1 영웅 특성별 전투 흐름 교정', partial: true,
+    guideIds: ['warrior-arms'], commits: ['3ee698bf'],
+    body: '공개 12.1 딜사이클의 영웅·선택 특성별 조건을 분리했습니다. 한 오프닝에 칼날폭풍과 쇄파를 섞지 않고 학살자·거신 각각의 오프닝, 단일·광역 우선순위를 작성했습니다. 정본 KB도 갱신했으며 최신 로그 검수는 계속 진행 중입니다.' },
   { date: '2026-09-23', title: '고양·복원 주술사 12.1 핫픽스 교정', partial: true,
     guideIds: ['shaman-enhancement', 'shaman-restoration'], commits: ['40b03b09'],
     body: '공식 9월 5일 고양 4세트 낙뢰 초반 피해 오류 수정과 9월 4일 복원 과잉 쇄도의 치유 효과 수정을 KB·스펠 DB·가이드에 반영했습니다. 수정 전후 로그를 같은 조건으로 직접 비교하지 않으며, 두 전문화의 전체 검수는 진행 중입니다.' },
