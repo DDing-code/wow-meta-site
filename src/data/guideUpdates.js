@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '분노 전사 12.1 시너지 조건 교정', partial: true,
+    guideIds: ['warrior-fury'], commits: ['e1929354'],
+    body: '광역 복제는 소용돌이 연마, 고기칼은 3대상 이상 직접 피해 증가로 분리했습니다. 광란·생성기, 산왕 우레 작렬, 학살자 집행자 연결을 정본 KB와 스펠·시너지 DB, 가이드에서 교정했습니다. 전체 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '분노 전사 투신·칼날폭풍 선택 관계 교정', partial: true,
     guideIds: ['warrior-fury'], commits: ['4b88170b'],
     body: '분노 전문화의 투신과 칼날폭풍이 같은 선택 노드임을 12.1 운용 가이드와 대조했습니다. 학살자 칼날폭풍 오프닝에서 투신을 제거하고 산왕 투신 운용과 로그 체크를 분리했습니다. 정본 KB와 사이트 스펠·시너지 DB를 동기화했으며 전체 로그 검수는 진행 중입니다.' },
