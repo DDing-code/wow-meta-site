@@ -20886,8 +20886,7 @@
         "1719",
         "184367",
         "385059",
-        "85288",
-        "107574"
+        "85288"
       ],
       "class": "Warrior",
       "spec": "분노",
@@ -20896,12 +20895,11 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/무모한-희생",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/광란",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/오딘의-격노",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/투신",
         "08-직업별-Knowledge-Base/13-전사/분노/Skills/분노의-강타"
       ],
       "linkedBuffs": [],

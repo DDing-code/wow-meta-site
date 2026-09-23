@@ -548,8 +548,14 @@ for (const [label, required, excluded] of [
   const opener = branch?.split('        opener: {')[1]?.split('        singleTarget: {')[0];
   assert(opener?.includes(`skillId: '${required}'`), `${label} Fury opener missing its hero skill`);
   assert(!opener.includes(`skillId: '${excluded}'`), `${label} Fury opener includes the other hero skill`);
+  if (label === '학살자') assert(!opener.includes("skillId: '107574'"), 'Slayer Bladestorm opener cannot also use Avatar');
   assert(branch.includes('singleTarget: {') && branch.includes('aoe: {'), `${label} Fury needs single and AoE priorities`);
 }
 const furyCommonOpener = furyGuide.split('    opener: {').at(-1).split('    tips: [')[0];
 assert(!/skillId: '(227847|435607)'/.test(furyCommonOpener), 'Fury common opener mixes hero-only skills');
+assert.match(furyGuide, /분노의 투신·칼날폭풍은 같은 선택 노드/);
+assert.match(skills[107574].description, /분노 전문화에서는 칼날폭풍과 택일/);
+assert.match(skills[227847].description, /분노 전문화에서는 투신과 택일/);
+assert.equal(synergies['warrior-fury-recklessness-window'].patch, '12.1');
+assert.deepEqual(synergies['warrior-fury-recklessness-window'].participants, ['1719', '184367', '385059', '85288']);
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');
