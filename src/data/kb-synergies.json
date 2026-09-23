@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T05:03:00.536Z",
+    "generatedAt": "2026-09-23T05:13:12.777Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -16480,15 +16480,9 @@
         "73920",
         "378443",
         "1252874",
-        "470076",
-        "1252882",
-        "382030",
-        "1267016",
-        "1267093",
-        "1267120",
-        "462486",
-        "444995",
-        "445034"
+        "383222",
+        "462424",
+        "444995"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16497,21 +16491,16 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/폭우"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/산성비",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/위안의비",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/응축되는물",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/이중가산",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템-1267093",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물의토템특화",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/폭풍의흐름토템-1267120"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/범람의파도",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/조석수"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\치유의비-산성비.md",
@@ -16524,22 +16513,13 @@
       "type": "synergy",
       "synergyType": "predictive_aoe_healing_window",
       "participants": [
+        "73920",
+        "444995",
         "462486",
         "207778",
-        "108280",
-        "114052",
-        "98008",
-        "73685",
-        "378081",
-        "382194",
-        "462383",
-        "382482",
-        "52127",
-        "382021",
-        "77472",
-        "1064",
-        "470076",
-        "1253014"
+        "1252882",
+        "1253014",
+        "108280"
       ],
       "class": "Shaman",
       "spec": "복원",
@@ -16548,22 +16528,17 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/폭우",
         "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의해일토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/승천",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/연쇄치유",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의물결",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/정신의고리토템",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/생명폭발",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/자연의신속함"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/치유의비",
+        "08-직업별-Knowledge-Base/11-주술사/복원/Skills/폭우시전"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/응축되는물",
         "08-직업별-Knowledge-Base/11-주술사/복원/Talents/물배출",
-        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/생명의흐름"
+        "08-직업별-Knowledge-Base/11-주술사/복원/Talents/이중가산"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Synergies\\폭우-치유의해일토템.md",

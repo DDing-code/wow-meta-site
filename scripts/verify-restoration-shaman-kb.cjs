@@ -205,3 +205,17 @@ const manuscript = require('node:fs').readFileSync(require.resolve('../src/data/
 assert.match(manuscript, /label: '치유의 비 \(선견자\)'/);
 assert.match(manuscript, /label: '또는 쇄도하는 토템 \(토템술사\)'/);
 console.log('Restoration Farseer, Totemic and Riptide 12.1 graph branches verified.');
+assert.equal(synergies.synergies.shaman_restoration_healingrain_acidrain.patch, '12.1');
+assert.deepEqual(synergies.synergies.shaman_restoration_healingrain_acidrain.participants,
+  ['73920','378443','1252874','383222','462424','444995']);
+assert.equal(synergies.synergies.shaman_restoration_downpour_tide.patch, '12.1');
+assert.deepEqual(synergies.synergies.shaman_restoration_downpour_tide.participants,
+  ['73920','444995','462486','207778','1252882','1253014','108280']);
+assert.match(skills[462486].description, /쇄도하는 토템.*16초.*207778/);
+assert.match(skills[207778].description, /455630.*100%/);
+assert.match(skills[1252874].description, /치유의 비.*10%.*0\.5초/);
+assert(!skills[462486].description.includes('최대 생명력'));
+assert(skills[462486].synergies.relatedSkills.some(link => link.endsWith('/폭우시전')));
+assert(skills[207778].synergies.relatedSkills.some(link => link.endsWith('/폭우')));
+assert.match(manuscript, /치유의 비\/쇄도하는 토템 뒤 16초/);
+console.log('Restoration Healing Rain and Downpour 12.1 branch effects verified.');

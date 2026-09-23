@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T04:46:50.197Z",
+    "generatedAt": "2026-09-23T05:13:12.776Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -34821,7 +34821,7 @@
       "castTime": "즉시",
       "resourceCost": "툴팁에 별도 비용 표기 없음",
       "range": "100 야드",
-      "description": "폭우 특성(462486)으로 열리는 실제 시전 주문(207778)이다. 와 구분한다. 치유의 비 목표 지점 반경 12미터에 있는 다친 아군 최대 5명을 즉시 치유한다.",
+      "description": "폭우 특성(462486)으로 열리는 실제 시전 주문(207778)이다. 치유의 비 목표 지점 반경 12미터에 있는 다친 아군 최대 5명을 즉시 치유한다. 토템술사에서는 쇄도하는 토템이 치유의 비를 설치하며, 내부 효과 455630이 폭우 치유량을 100% 추가로 보정한다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -34845,7 +34845,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.021,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -107878,7 +107878,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "이 ID(462486)는 폭우를 사용할 수 있게 하는 특성이다. 치유의 비를 시전하면 16초 동안 실제 폭우 시전 주문(207778)이 열린다. 를 따로 참고한다. 특성 자체를 전투 중 따로 누르는 것이 아니다.",
+      "description": "이 ID(462486)는 폭우를 사용할 수 있게 하는 특성이다. 치유의 비를 직접 시전하거나 토템술사의 쇄도하는 토템으로 치유의 비를 설치하면 16초 동안 실제 폭우 시전 주문(207778)이 열린다. 특성 자체를 전투 중 따로 누르는 것이 아니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -107900,9 +107900,9 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
+        "wikilinkCount": 2,
         "synergyCount": 1,
-        "linkDensity": 0.053,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -123044,7 +123044,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "치유의 비를 사용하는 분기에서는 치유량이 10% 증가하고 시전 시간이 0.5초 감소한다. 라이브 툴팁에는 쇄도하는 토템을 사용하는 분기의 치유량 10% 증가 문구도 별도로 표시된다. 두 분기를 동시에 받는 효과로 합치지 않는다.",
+      "description": "현재 한국어 툴팁은 치유의 비 치유량 10% 증가와 직접 시전 시간 0.5초 감소를 명시한다. 쇄도하는 토템은 직접 시전하는 치유의 비를 대체하므로 시전시간 감소를 토템에 적용한다고 설명하지 않는다. 쇄도하는 토템 자체의 치유의 비 효과 10% 증가는 별도의 영웅 특성 효과다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -123066,7 +123066,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.022,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
