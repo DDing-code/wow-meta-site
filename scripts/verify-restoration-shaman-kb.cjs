@@ -109,4 +109,5 @@ for (const [id, pattern] of [
   assert.match(skills[id].description, pattern);
 }
 assert.deepEqual(skills[51490].specs, ['Elemental']);
+assert.equal(skills[108281], undefined, 'Removed Ancestral Guidance must not return');
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
