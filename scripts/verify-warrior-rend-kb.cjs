@@ -596,6 +596,19 @@ assert.deepEqual(synergies.warrior_common_charge_leap_intervene_mobility.partici
 assert.deepEqual(synergies.warrior_common_pummel_storm_bolt_shockwave_control.participants, ['6552', '107570', '46968', '5246', '275339']);
 assert(synergies.warrior_common_spec_aoe.participants.includes('384277'));
 assert(!synergies.warrior_common_battle_shout_rallying_raid_utility.participants.includes('107574'));
+for (const id of [429637, 429638, 429639, 429642, 429647, 431548, 440992, 440993, 440995, 1270704, 1270709, 1270710]) {
+  assert.equal(skills[id].patch, '12.1', `Colossus talent ${id} must be current`);
+  assert(!skills[id].description.includes('Colossus 영웅 특성 노트다'), `Colossus talent ${id} still has placeholder copy`);
+}
+assert.match(skills[429647].description, /방패 밀쳐내기 피해가 25%.*복수.*15%.*분노 4/);
+assert.match(skills[1270704].description, /거신.*쇄파.*치명상/);
+assert.match(skills[1270710].description, /10초.*10%.*치명타율을 100%/);
+assert(synergies.warrior_common_colossus_demolish_dominance.participants.includes('1270704'));
+for (const id of ['warrior-arms-slayer-execute-bladestorm', 'warrior-arms-bladestorm-slayer']) {
+  assert.equal(synergies[id].patch, '12.1');
+  assert(!synergies[id].participants.includes('1270704'), `${id} connects Colossus Decimator to Slayer`);
+  assert(!synergies[id].linkedSkills.some(path => path.endsWith('/Hero-Talents/학살')), `${id} links Colossus Decimator to Slayer`);
+}
 assert.equal(skills[5308].patch, '12.1');
 assert.deepEqual(skills[5308].specs, ['Fury']);
 assert.equal(skills[5308].koreanName, '마무리 일격');

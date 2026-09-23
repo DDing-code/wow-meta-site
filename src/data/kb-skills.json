@@ -105,7 +105,7 @@
       },
       "quality": {
         "withWikilinks": 2879,
-        "withSynergies": 2065,
+        "withSynergies": 2076,
         "avgLinkDensity": "0.039"
       }
     }
@@ -81689,10 +81689,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "일기당천은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 일기당천 특성 전사 필요 방어 충격파 복수|1이;가; 영향을 받는 대상 하나당 5%의 추가 피해를 입힙니다. 최대 5명의 대상에게 유효합니다. 무기 충격파, 회전베기, 소용돌이|1이;가; 영향을 받는 대상 하나당 5%의 추가 피해를 입힙니다. 최대 5명의 대상에게 유효합니다.",
+      "description": "일기당천은 한 번에 맞힌 적 수에 따라 특정 광역 기술의 피해를 올리는 거신 특성이다. 방어는 충격파와 복수, 무기는 충격파·회전베기·소용돌이가 대상이다. 적중 대상 한 명당 피해가 5% 증가하며 최대 다섯 명까지만 계산한다. 다섯 명을 맞혀도 보너스는 25%이지, 대상 수 제한 없이 계속 커지지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81704,14 +81704,19 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_incite.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.033,
         "hasWikilinks": true
       },
       "source": {
@@ -81738,10 +81743,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "무예의 고수은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 무예의 고수 특성 전사 필요 능력의 치명타 및 극대화 피해가 10%만큼, 결정적 방어로 막는 피해가 20%만큼 증가합니다.",
+      "description": "무예의 고수는 기술의 치명타 피해를 10% 높이고, 결정적 방어로 막는 피해량을 20% 늘리는 거신 특성이다. 치명타 확률을 올리는 효과가 아니며 일반 방패 막기의 확률을 높이지도 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81753,14 +81758,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_stalwartprotector.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/빠르게-찾아오는-결말"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.017,
+        "synergyCount": 1,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -81787,10 +81796,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "해골전율자은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 해골전율자 특성 전사 필요 충격파의 기절 지속시간이 1초만큼 증가합니다. 또한 기절 효과가 끝나면 3초 동안 영향을 받은 적의 이동 속도가 40%만큼 감소합니다.",
+      "description": "해골전율자는 충격파의 기절을 1초 늘린다. 기절이 끝난 뒤에는 영향을 받은 적의 이동 속도를 3초 동안 40% 낮춘다. 공격력을 높이는 노드가 아니라 제어가 풀린 직후의 적 이동을 늦추는 선택지다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81802,14 +81811,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_brittlebones.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/대지전율자"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.016,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -81885,10 +81898,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "근육과 상흔의 산은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 근육과 상흔의 산 특성 전사 필요 공격력이 5%만큼 증가하고 받는 피해는 5%만큼 감소합니다. 크기가 5%만큼 증가합니다.",
+      "description": "근육과 상흔의 산은 거신 전사의 공격력을 5% 높이고 받는 피해를 5% 낮추는 상시 효과다. 캐릭터 크기도 5% 커지지만, 이를 사거리나 적중 판정 확대 효과로 계산하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81902,12 +81915,15 @@
       "synergies": {
         "relatedSkills": [],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/쇄파",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/거신의-지배"
+        ]
       },
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -81983,10 +81999,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "숙련된 공격은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 숙련된 공격 특성 전사 필요 방어 방패 밀쳐내기의 공격력이 15%만큼 증가합니다. 복수와 천둥벼락의 공격력이 15%만큼 증가합니다. 방패 밀쳐내기가 추가로 3의 분노를 생성합니다. 무기 필사의 일격과 격돌의 공격력이 15%만큼 증가합니다. 회전베기와 소용돌이의 공격력이 15%만큼 증가합니다.",
+      "description": "숙련된 공격의 피해 보너스는 전문화와 기술별로 다르다. 방어는 방패 밀쳐내기 피해가 25%, 복수·천둥벼락 피해가 각각 15% 증가하고 방패 밀쳐내기가 분노 4를 추가로 만든다. 무기는 필사의 일격·격돌 피해가 각각 25%, 회전베기·소용돌이 피해가 각각 15% 증가한다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81998,14 +82014,23 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_warrior_sharpenblade.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/복수",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/격돌",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/소용돌이"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.014,
+        "wikilinkCount": 7,
+        "synergyCount": 7,
+        "linkDensity": 0.051,
         "hasWikilinks": true
       },
       "source": {
@@ -83815,10 +83840,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "정밀한 힘은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 정밀한 힘 특성 전사 필요 방어 방패 밀쳐내기|1이;가; 치명타 및 극대화로 적중하면 거인의 힘 중첩이 추가로 부여됩니다. 무기 필사의 일격|1이;가; 치명타 및 극대화로 적중하면 거인의 힘 중첩이 추가로 부여됩니다.",
+      "description": "정밀한 힘은 방어의 방패 밀쳐내기 또는 무기의 필사의 일격이 치명타로 적중했을 때 거인의 힘 중첩을 하나 더 부여한다. 공격의 기본 중첩 생성에 추가되는 효과이며 치명타 확률 자체를 높이지는 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -83830,14 +83855,20 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_hunter_focusingshot.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/거인의-힘",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/빠르게-찾아오는-결말"
+        ]
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.015,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -89439,10 +89470,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "대지전율자은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 대지전율자 특성 전사 필요 충격파 사용 시 추가로 적을 공중으로 날려 보내고 재사용 대기시간이 5초만큼 감소합니다.",
+      "description": "대지전율자는 충격파에 적을 공중으로 띄우는 효과를 더하고 재사용 대기시간을 5초 줄인다. 쇄파의 재사용 대기시간을 줄이는 특성이 아니며, 전투 중 제어가 필요한 적에게 충격파를 더 자주 쓰는 선택지다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89454,14 +89485,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_earthquake.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/해골전율자"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -89488,10 +89523,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "역전의 용사의 활력은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 역전의 용사의 활력 특성 전사 필요 생명력이 35% 미만으로 떨어지면 재기의 바람이 부여되어 2초에 걸쳐 최대 생명력의 12%를 회복합니다. 이 효과는 60초에 한 번씩만 발동합니다. (1분 재사용 대기시간)",
+      "description": "역전의 용사의 활력은 생명력이 35% 미만으로 내려갔을 때 재기의 바람을 부여해 2초 동안 최대 생명력의 12%를 회복한다. 이 자동 회복은 60초에 한 번만 발동한다. 평상시 계속 유지되는 재기의 바람 회복이나 사용 버튼과 혼동하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89503,14 +89538,18 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-올리기"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/재기의-바람"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.008,
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -89537,10 +89576,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "동맥 출혈은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 동맥 출혈 특성 전사 필요 거인의 힘이 중첩 하나당 분쇄와 치명상의 공격력을 3%만큼 증가시킵니다.",
+      "description": "동맥 출혈은 현재 거인의 힘 중첩 하나당 분쇄와 치명상의 피해를 3% 높인다. 기본 최대 5중첩이면 15%, 거신의 지배로 최대 10중첩을 확보하면 30%까지 계산된다. 효과의 기준은 거인의 힘 중첩이지 쇄파의 시전 횟수가 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -89552,14 +89591,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_butcher_gushingwounds.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/거인의-힘",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/거신의-지배"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.009,
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -140088,10 +140134,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "학살은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 학살 특성 전사 필요 쇄파의 마지막 공격이 모든 대상에게 100%의 효율로 치명상을 부여합니다.",
+      "description": "이 `학살`은 주문 ID `1270704`인 거신 영웅 특성이다. 쇄파의 마지막 공격이 적중한 모든 대상에게 치명상을 100% 효율로 부여한다. 학살자 영웅 특성 계열의 공격이나 마무리 일격 발동과는 이름만 비슷하며 다른 노드다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140104,13 +140150,18 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/쇄파",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/동맥-출혈"
+        ]
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 0,
-        "linkDensity": 0.049,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -140137,10 +140188,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "뼈 가르기은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 뼈 가르기 특성 전사 필요 방어 방패 밀쳐내기|1이;가; 치명타 및 극대화로 적중하면 8초 동안 분쇄와 치명상의 공격력이 15%만큼 증가합니다. 무기 필사의 일격|1이;가; 치명타 및 극대화로 적중하면 8초 동안 분쇄와 치명상의 공격력이 15%만큼 증가합니다. (500밀리초 재사용 대기시간)",
+      "description": "뼈 가르기는 방어의 방패 밀쳐내기, 무기의 필사의 일격이 치명타로 적중하면 8초 동안 분쇄와 치명상 피해를 15% 높인다. 효과에는 0.5초 내부 재사용 대기시간이 있다. 치명타 확률을 높이는 효과나 쇄파 자체의 피해 보너스는 아니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140152,14 +140203,22 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_deepcuts.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/빠르게-찾아오는-결말"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 5,
+        "synergyCount": 4,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -140186,10 +140245,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "빠르게 찾아오는 결말은 Colossus 영웅 특성 노트다. 12.0.5 전사 빌드에서는 분노 생성, 방어 구간, 출혈 유지, 마무리 일격, 광역 피해, 또는 이동/유틸리티 우선순위를 조정한다.  공식 툴팁 요약: 빠르게 찾아오는 결말 특성 전사 필요 방어 쇄파의 마지막 공격이 10초 동안 가속을 10%만큼 증가시키고 다음 방패 밀쳐내기의 치명타 및 극대화율을 100%만큼 증가시킵니다. 무기 쇄파의 마지막 공격이 10초 동안 가속을 10%만큼 증가시키고 다음 필사의 일격의 치명타 및 극대화율을 100%만큼 증가시킵니다.",
+      "description": "빠르게 찾아오는 결말은 쇄파의 마지막 공격이 적중한 뒤 10초 동안 가속을 10% 높이고 다음 핵심 생성기의 치명타율을 100% 높인다. 방어에서는 다음 방패 밀쳐내기, 무기에서는 다음 필사의 일격이 대상이다. 쇄파를 채널 중단해 마지막 공격을 놓치면 이 보상을 얻었다고 계산하지 않는다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -140201,14 +140260,21 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fasterreflexes.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/방패-밀쳐내기",
+          "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
+        ],
         "relatedTalents": [],
-        "relatedHeroTalents": []
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/쇄파",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/정밀한-힘",
+          "08-직업별-Knowledge-Base/13-전사/공용/Hero-Talents/뼈-가르기"
+        ]
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.007,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {

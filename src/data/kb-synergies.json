@@ -19051,7 +19051,13 @@
       "participants": [
         "436358",
         "429636",
-        "429634"
+        "429634",
+        "429647",
+        "431548",
+        "1270710",
+        "1270709",
+        "440995",
+        "1270704"
       ],
       "class": "Warrior",
       "spec": "공용",
@@ -19421,9 +19427,12 @@
       "synergyType": "slayer-hero-package",
       "participants": [
         "444767",
-        "1270704",
+        "444769",
         "163201",
-        "227847"
+        "227847",
+        "386628",
+        "446085",
+        "12294"
       ],
       "class": "Warrior",
       "spec": "무기",
@@ -19432,10 +19441,11 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
@@ -20165,7 +20175,8 @@
         "227847",
         "386628",
         "444767",
-        "1270704",
+        "446085",
+        "12294",
         "163201"
       ],
       "class": "Warrior",
@@ -20175,17 +20186,14 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격"
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
       ],
       "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/급살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/대학살",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/마무리-일격-연마"
-      ],
+      "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\무기\\Synergies\\칼날폭풍-불안정한-정신-학살자의-지배.md",
         "lastUpdate": ""
