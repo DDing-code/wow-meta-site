@@ -110,4 +110,18 @@ for (const [id, pattern] of [
 }
 assert.deepEqual(skills[51490].specs, ['Elemental']);
 assert.equal(skills[108281], undefined, 'Removed Ancestral Guidance must not return');
+for (const [id, pattern] of [
+  [30884, /35%.*40%.*45초/], [383010, /자신.*아군 한 명/],
+  [260878, /1초.*5%.*최대 4중첩/], [378075, /3초.*25%.*20초/],
+  [381930, /40야드.*정기.*150.*복원.*225.*고양.*225/],
+  [1217622, /충전.*115%.*복원.*물의 보호막/],
+  [462454, /273\.33%.*429.*1초/],
+  [1270350, /정기.*지능 3%.*고양.*민첩성 3%.*복원.*지능 3%/],
+  [381867, /5초.*쇄도하는 토템.*적용되지 않/],
+  [382201, /15%.*10초.*3초/],
+]) {
+  assert.equal(skills[id].patch, '12.1', `Shared talent ${id} must be current`);
+  assert.match(skills[id].description, pattern);
+}
+assert.equal(synergies.synergies.shaman_common_totem_control_mythic_utility.patch, '12.1');
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
