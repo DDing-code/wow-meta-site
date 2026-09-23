@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '복원 주술사 12.1 지역 치유·폭우 교정', partial: true,
+    guideIds: ['shaman-restoration'], commits: ['1dd43e58'],
+    body: '치유의 비·산성 비와 폭우·치유의 해일 토템 관계를 현재 발동 조건에 맞춰 분리했습니다. 토템술사 쇄도하는 토템의 폭우 사용권과 추가 치유량, 위안의 비의 실제 한국어 툴팁을 KB·스펠 DB·가이드에 반영했습니다. 나머지 복원 시너지와 전체 빌드·최신 로그 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '복원 주술사 12.1 연계·오프닝 교정', partial: true,
     guideIds: ['shaman-restoration'], commits: ['56084aa7'],
     body: '성난 해일-연쇄 치유, 선견자 선조, 토템술사 무료 연쇄 치유의 실제 발동 조건과 그래프 노드를 KB·사이트 DB에 반영했습니다. 오프닝에서는 치유의 비와 이를 대체하는 쇄도하는 토템을 영웅 특성별 선택지로 분리했습니다. 나머지 복원 시너지와 전체 빌드·최신 로그 검수는 진행 중입니다.' },
