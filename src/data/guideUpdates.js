@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-23', title: '전사 영웅 특성 12.1 툴팁 교정', partial: true,
+    guideIds: ['warrior-fury', 'warrior-protection', 'warrior-arms'], commits: ['ee323619'],
+    body: '분노·방어 산왕의 우레 작렬·폭풍의 화신과 무기·분노 학살자의 일격·학살자의 악의를 현재 한국어 툴팁으로 다시 작성했습니다. 우레 작렬의 중첩과 학살자의 전문화별 발동률을 분리했으며 전체 전환 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '분노 전사 12.1 마무리 일격 주문 ID 교정', partial: true,
     guideIds: ['warrior-fury'], commits: ['0aefa482'],
     body: '분노 전사의 마무리 일격을 주문 ID 5308로 분리하고 무기·방어 전사의 163201과 혼용하던 차트·툴팁·시너지 연결을 교정했습니다. 전체 전문화와 최신 로그 검수는 계속 진행 중입니다.' },
