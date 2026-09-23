@@ -171,17 +171,17 @@ const SpecCard = styled(Link)`
   gap: 6px;
   padding: 12px 10px;
   border-bottom: 1px solid rgba(168, 178, 188, 0.11);
-  border-left: ${props => props.$partial ? '3px solid #d2b373' : '3px solid transparent'};
+  border-left: 3px solid transparent;
   background: ${props => props.$partial ? 'rgba(226, 180, 91, 0.075)' : 'transparent'};
 
   &::after {
     content: '';
     position: absolute;
-    inset: auto 0 0;
-    height: 4px;
+    inset: 0 auto 0 0;
+    width: 5px;
     pointer-events: none;
     background: ${props => props.$partial
-      ? 'repeating-linear-gradient(135deg, #b99550 0 7px, transparent 7px 14px)'
+      ? 'repeating-linear-gradient(180deg, #d2b373 0 7px, #5d4c30 7px 14px)'
       : 'none'};
   }
 
@@ -197,6 +197,11 @@ const SpecCard = styled(Link)`
 
   &:hover [data-spec-icon], &:focus-visible [data-spec-icon] {
     opacity: 0.86;
+  }
+
+  @media (max-width: 360px) {
+    gap: 3px;
+    padding: 6px 8px;
   }
 `;
 
@@ -224,7 +229,7 @@ const OpenIcon = styled.span`
   place-items: center;
   width: 20px;
   height: 20px;
-  color: #9aa5ad;
+  color: ${props => props.$partial ? '#e6c583' : '#9aa5ad'};
   border: 0;
   background: transparent;
 `;
@@ -233,7 +238,7 @@ const Meta = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 2px 10px;
+  gap: 2px 4px;
   color: #9aa5ad;
   font-size: 0.76rem;
   font-weight: 470;
@@ -246,7 +251,6 @@ const Meta = styled.div`
 const WorkStatus = styled.span`
   display: inline-flex;
   align-items: center;
-  gap: 5px;
   padding: 3px 6px;
   border: 1px solid rgba(230, 197, 131, 0.5);
   border-radius: 2px;
@@ -255,7 +259,6 @@ const WorkStatus = styled.span`
   font-size: 0.72rem;
   font-weight: 700;
   white-space: nowrap;
-  svg { flex-shrink: 0; }
 `;
 
 function GuidePage() {
@@ -335,15 +338,15 @@ function GuidePage() {
                     <SpecializationIcon $specId={item.id} />
                     {item.spec}
                   </SpecName>
-                  <OpenIcon aria-hidden="true">
-                    <ArrowUpRight size={16} />
+                  <OpenIcon $partial={publication.partial} aria-hidden="true">
+                    {publication.partial ? <Construction size={16} /> : <ArrowUpRight size={16} />}
                   </OpenIcon>
                 </SpecTop>
                 <Meta>
                   <span>{item.roleLabel}</span>
                   {publication.partial ? (
                     <WorkStatus title={publication.detail} aria-label={publication.detail}>
-                      <Construction size={13} aria-hidden="true" />12.1 공사 중
+                      공사 중
                     </WorkStatus>
                   ) : <span title={publication.detail}>{publication.label}</span>}
                 </Meta>
