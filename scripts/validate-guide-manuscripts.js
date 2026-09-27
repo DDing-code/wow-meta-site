@@ -1185,6 +1185,9 @@ function main() {
   }
   assert(JSON.stringify(assassination.opener) === JSON.stringify(assassination.heroBranches[0].opener), 'Default Assassination opener must match Fatebound');
   assert(assassination.sourceNote.includes('403') && !JSON.stringify(assassination).includes('99.2%'), 'Assassination must disclose missing current log evidence instead of recycling June usage');
+  const subtletyUtility = JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies.rogue_subtlety_feint_cloak_mplus_utility;
+  assert(subtletyUtility?.patch === '12.1' && subtletyUtility.description?.includes('비전투 대상'), 'Subtlety utility must retain the Sap out-of-combat restriction');
+  assert(subtletyUtility.participants.includes('2094') && !subtletyUtility.participants.includes('185565'), 'Subtlety utility must use Blind for combat control, not Poisoned Knife as enrage removal');
 
   const shadow = manuscripts['priest-shadow'];
   const shadowSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '09-사제', '암흑', 'Meta', 'guide-12.1.json');

@@ -14896,7 +14896,8 @@
     },
     "rogue_subtlety_feint_cloak_mplus_utility": {
       "id": "rogue_subtlety_feint_cloak_mplus_utility",
-      "name": "교란-그림자 망토-쐐기 유틸",
+      "name": "잠행의 피해 유형별 생존과 제어",
+      "description": "교란은 광역 피해, 그림자 망토는 해로운 주문 효과, 회피는 회피 가능한 공격에 대응한다. 발차기는 전투 중 시전을 끊지만 혼절시키기는 은신 중 비전투 대상에게만 쓴다. 독칼의 격노 해제와 속임수 거래의 위협 이전도 별도 상황 판단이다.",
       "type": "synergy",
       "synergyType": "mplus_survival_utility",
       "participants": [
@@ -14905,9 +14906,9 @@
         "5277",
         "1766",
         "6770",
+        "2094",
         "5938",
         "57934",
-        "185565",
         "185313",
         "280719"
       ],
@@ -14918,14 +14919,17 @@
       ],
       "heroTalent": null,
       "importance": 76,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/잠행/Skills/은밀한기술",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/교란",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/그림자망토",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/회피",
         "08-직업별-Knowledge-Base/10-도적/공용/Skills/발차기",
-        "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기"
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/실명",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/혼절시키기",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/독칼",
+        "08-직업별-Knowledge-Base/10-도적/공용/Skills/속임수거래"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
