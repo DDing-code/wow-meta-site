@@ -1537,7 +1537,11 @@ function main() {
   assert(kbSkills['77513']?.aliases?.includes('피의 보호막'), 'Blood Shield shorthand must resolve to the official mastery entry');
   assert(kbSkills['195181']?.castTime === '지속 효과', 'Bone Shield is a buff, not an independently cast defensive');
   assert(kbSkills['195292']?.cooldown === '6초' && kbSkills['195292']?.patch === '12.1', 'Death\'s Caress must retain its current cooldown');
-  assert(kbSkills['1263774']?.name === '핏빛 안개' && kbSkills['1264235']?.patch === '12.1', 'Blood Mist and Deadly Reach must use current talent IDs');
+  assert(kbSkills['1263774']?.name === '핏빛 안개' && kbSkills['1264235']?.description.includes('60%') && !kbSkills['1264235']?.description.startsWith('이 추가'), 'Blood Mist and Deadly Reach must retain current talent IDs and cleave text');
+  for (const [id, name, fact] of [['443532', '어둠의 구속', '50%'], ['1265932', '죽음을 부르는 일격', '20%'], ['443560', '신속하고 고통스럽게', '15%'], ['455857', '영혼의 파도', '20%']]) {
+    assert(kbSkills[id]?.name === name && kbSkills[id]?.type === 'hero-talent' && kbSkills[id]?.specs.includes('Blood') && kbSkills[id]?.description.includes(fact), `Blood Deathbringer hotfix entry missing: ${name}`);
+  }
+  assert(kbSkills['455857']?.castTime === '발동 효과' && kbSkills['443532']?.castTime === '지속 효과', 'Blood Deathbringer triggered/passive effects must not become cast buttons');
   for (const id of ['1264506', '1264405', '1264351']) {
     assert(kbSkills[id]?.name === '한밤의 춤' && kbSkills[id]?.patch === '12.1', `Blood apex rank ${id} must keep the official Korean name and current patch`);
   }
@@ -1550,6 +1554,7 @@ function main() {
   assert(bloodSynergies['피로치를빚_골수분쇄']?.description?.includes('10중첩'), 'Blood Debt synergy must retain its authored KB mechanism through sync');
   assert(!bloodSynergies.deathknight_blood_deaths_caress_fatal_touch, 'Death\'s Caress must not link to Deadly Reach');
   assert(bloodSynergies.deathknight_blood_deadly_reach_death_strike?.participants.join(',') === '1264235,49998', 'Deadly Reach must link to Death Strike cleave');
+  assert(bloodSynergies.deathknight_blood_deathbringer_september_tuning?.participants.includes('455857'), 'Blood Deathbringer September hotfix must connect its trigger effects');
   assert(bloodSynergies.deathknight_blood_dance_active_weapons?.participants.includes('1264405'), 'Blood apex defensive rank must connect to active weapons');
   assert(bloodSynergies.deathknight_blood_dance_rune_proc?.participants.includes('1264351'), 'Blood apex rune proc must connect to rune spenders');
   assert(bloodSynergies['진홍빛스컬지_피의희열_원초적본능의힘']?.participants.includes('434157'), 'Blood Crimson Scourge spend must connect to Visceral Strength');
@@ -1560,7 +1565,8 @@ function main() {
   assert(blood.blocks.some(section => section.paragraphs.some(text => text.includes('핏빛 안개') && text.includes('18%'))), 'Blood guide must explain conditional Blood Mist and Sanguinary Burst');
   assert(blood.opener.steps.some(step => step.skillId === '195182' && step.trigger.includes('10중첩')), 'Blood combat flow must include the tier-set Marrowrend condition');
   assert(!blood.opener.steps.some(step => ['1310372', '1296651', '441378'].includes(step.skillId)), 'Blood passive tier/proc effects must not be cast nodes');
-  assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('쐐기'), 'Blood default hero branch must reflect Season 2 Sanlayn guidance');
+  assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('조정 전') && blood.heroBranches[1].summary.includes('9월 23일'), 'Blood hero branches must distinguish pre-hotfix advice from current tuning');
+  assert(blood.sources.some(source => source.url.endsWith('/2026-9-23') && source.label.includes('긴급 수정')) && blood.summary.includes('9월 23일'), 'Blood guide must cite the official September hotfix');
 
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
   const havoc = manuscripts['demonhunter-havoc'];

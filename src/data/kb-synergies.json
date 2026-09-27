@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:03:23.243Z",
+    "generatedAt": "2026-09-27T00:30:49.438Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 605,
-    "rawTotalSynergies": 605,
+    "totalSynergies": 606,
+    "rawTotalSynergies": 606,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -22,6 +22,7 @@
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "ranged-bone-shield-maintenance": 1,
+      "hero-talent-tuning": 1,
       "blood-crimson-scourge-spend": 1,
       "death-strike-cleave": 1,
       "blood-debt-marrowrend": 1,
@@ -264,7 +265,7 @@
       "slayer-execute-window": 1
     },
     "byClass": {
-      "DeathKnight": 33,
+      "DeathKnight": 34,
       "DemonHunter": 35,
       "Druid": 54,
       "Evoker": 34,
@@ -1066,6 +1067,37 @@
         "lastUpdate": ""
       }
     },
+    "deathknight_blood_deathbringer_september_tuning": {
+      "id": "deathknight_blood_deathbringer_september_tuning",
+      "name": "죽음의인도자-9월조정",
+      "description": "9월 23일 혈기 전체 피해 6% 감소와 죽음의 일격 15% 상향을 전제로, 죽음의 인도자의 징표·몰살·영혼의 파도 및 조건부 특성 상향을 별도로 비교합니다. 수치를 단순 합산해 현재 영웅 특성 순위를 확정하지 않습니다.",
+      "type": "synergy",
+      "synergyType": "hero-talent-tuning",
+      "participants": [
+        "439843",
+        "441378",
+        "455857",
+        "443532",
+        "1265932",
+        "443560",
+        "49998"
+      ],
+      "class": "DeathKnight",
+      "spec": "Blood",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
+        "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/골수분쇄"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\죽음의인도자-9월조정.md",
+        "lastUpdate": "2026-09-27"
+      }
+    },
     "진홍빛스컬지_피의희열_원초적본능의힘": {
       "id": "진홍빛스컬지_피의희열_원초적본능의힘",
       "name": "진홍빛 스컬지 소비와 피의 희열·원초적 본능의 힘",
@@ -1100,6 +1132,7 @@
     "deathknight_blood_deadly_reach_death_strike": {
       "id": "deathknight_blood_deadly_reach_death_strike",
       "name": "치명적인접촉-죽음의일격-추가대상",
+      "description": "치명적인 접촉을 선택하면 죽음의 일격이 추가 적 2명에게 각각 주 대상 피해의 60%로 적중합니다. 9월 23일 공식 조정으로 기존 75%가 내려갔지만 주 대상 죽음의 일격 공격력은 별도로 15% 상향됐습니다. 회복 타이밍보다 추가 대상 피해만 우선하지 않습니다.",
       "type": "synergy",
       "synergyType": "death-strike-cleave",
       "participants": [
@@ -1121,7 +1154,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\치명적인접촉-죽음의일격-추가대상.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-27"
       }
     },
     "피로치를빚_골수분쇄": {

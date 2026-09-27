@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:03:23.242Z",
+    "generatedAt": "2026-09-27T00:30:49.437Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2974,
-    "rawTotalSkills": 2974,
+    "totalSkills": 2978,
+    "rawTotalSkills": 2978,
     "duplicateIds": [],
-    "totalSynergies": 605,
+    "totalSynergies": 606,
     "stats": {
-      "total": 2974,
+      "total": 2978,
       "byType": {
         "buff": 137,
-        "hero-talent": 548,
+        "hero-talent": 552,
         "atomic-skill": 557,
         "proc": 29,
         "skill": 125,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 123,
+        "DeathKnight": 127,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -45,7 +45,7 @@
         "Warrior": 249
       },
       "bySpec": {
-        "DeathKnight-공용": 17,
+        "DeathKnight-공용": 21,
         "DeathKnight-냉기": 33,
         "DeathKnight-부정": 44,
         "DeathKnight-혈기": 29,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2892,
-        "withSynergies": 2096,
+        "withWikilinks": 2896,
+        "withSynergies": 2098,
         "avgLinkDensity": "0.039"
       }
     }
@@ -12863,12 +12863,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 마력 45",
       "range": "근접",
-      "description": "# 죽음의 일격 (Death Strike)",
+      "description": "룬 마력 45를 써서 공격하고 지난 5초 동안 받은 피해의 20%만큼 회복합니다. 최소 회복량은 최대 생명력의 7%입니다. 탐식이나 죽음의 일격 연마를 선택하면 회복 계수가 달라집니다. 9월 23일 공식 조정은 혈기 공격력을 15% 높였으며, 이를 회복량 15% 증가로 읽지 않습니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_butcher2.jpg",
       "iconUrls": {
@@ -12885,12 +12885,12 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Skills\\죽음의일격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-27"
       }
     },
     "50334": {
@@ -88335,12 +88335,12 @@
       "castTime": "즉시",
       "resourceCost": "룬 2",
       "range": "",
-      "description": "# 사신의 징표",
+      "description": "룬 2개를 쓰는 45초 기술입니다. 암흑·냉기 피해로 징표 중첩을 쌓고 12초가 지나거나 40중첩에 도달하면 폭발합니다. 대상이 먼저 죽으면 주위의 징표가 없는 적에게 전이됩니다. 9월 23일 공식 조정에서 혈기 사신의 징표 공격력이 20% 증가했습니다. 냉기 쪽 변경으로 확대하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_deathbringerdeathknight_reapersmark.jpg",
       "iconUrls": {
@@ -88351,10 +88351,10 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
           "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/춤추는룬무기",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/룬무기강화",
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/얼음기둥",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/절멸",
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Skills/신드라고사의숨결"
         ],
@@ -88362,19 +88362,19 @@
           "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Talents/서리낫"
         ],
         "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Hero-Talents/몰살",
-          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/룬새김판금"
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/룬새김판금",
+          "08-직업별-Knowledge-Base/01-죽음의기사/냉기/Hero-Talents/몰살"
         ]
       },
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 7,
-        "linkDensity": 0.034,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\사신의징표.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-27"
       }
     },
     "439882": {
@@ -90605,12 +90605,12 @@
       "castTime": "발동 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "죽음의 인도자의 사신의 징표 폭발 후 다음 두 번의 공격을 강화합니다. 혈기는 골수분쇄, 냉기는 절멸 또는 서리낫으로 소비합니다. 직접 사용하는 스킬이 아니며 두 전문화의 소비 버튼을 혼동하지 않습니다.",
+      "description": "죽음의 인도자의 사신의 징표 폭발 후 다음 두 번의 공격을 강화합니다. 혈기는 골수분쇄, 냉기는 절멸 또는 서리낫으로 소비합니다. 직접 사용하는 스킬이 아니며 두 전문화의 소비 버튼을 혼동하지 않습니다. 9월 23일 공식 조정의 혈기 몰살 공격력 25% 증가는 냉기 값으로 확대하지 않습니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-12",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_titanargus_d_01.jpg",
       "iconUrls": {
@@ -90634,12 +90634,12 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 3,
-        "linkDensity": 0.045,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Hero-Talents\\몰살.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-27"
       }
     },
     "441398": {
@@ -93364,6 +93364,111 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\공용\\Hero-Talents\\선조의신속함.md",
         "lastUpdate": ""
+      }
+    },
+    "443532": {
+      "id": "443532",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost"
+      ],
+      "name": "어둠의 구속",
+      "koreanName": "어둠의 구속",
+      "englishName": "Bind in Darkness",
+      "icon": "ability_argus_soulbombdebuffsmall",
+      "iconName": "ability_argus_soulbombdebuffsmall",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "죽음의 인도자 지속 효과입니다. 암흑냉기 피해로 사신의 징표 중첩을 더 쌓는 동시에 전문화별 기술을 강화합니다. 혈기의 피의 소용돌이 공격력 증가는 9월 23일 공식 조정 이후 50%입니다(기존 30%). 냉기의 울부짖는 한파 강화와 혈기 수치를 혼동하지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_argus_soulbombdebuffsmall.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_argus_soulbombdebuffsmall.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_argus_soulbombdebuffsmall.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_argus_soulbombdebuffsmall.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_argus_soulbombdebuffsmall.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/피의소용돌이"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/사신의징표"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.023,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\어둠의구속.md",
+        "lastUpdate": "2026-09-27"
+      }
+    },
+    "443560": {
+      "id": "443560",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost"
+      ],
+      "name": "신속하고 고통스럽게",
+      "koreanName": "신속하고 고통스럽게",
+      "englishName": "Swift and Painful",
+      "icon": "ability_domination_rune02",
+      "iconName": "ability_domination_rune02",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "죽음의 인도자 지속 효과입니다. 영혼의 파도가 주 징표 대상에게 더 강하게 작용합니다. 혈기는 영혼 파열이 아무 대상도 맞히지 않았을 때 8초 동안 힘을 15% 얻습니다. 9월 23일 공식 조정 전의 혈기 10%를 현재 수치로 쓰지 않습니다. 냉기의 별도 힘 수치와 섞지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_domination_rune02.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_domination_rune02.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_domination_rune02.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_domination_rune02.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_domination_rune02.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/사신의징표",
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/영혼의파도"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.02,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\신속하고고통스럽게.md",
+        "lastUpdate": "2026-09-27"
       }
     },
     "443566": {
@@ -105001,6 +105106,58 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Hero-Talents\\세나리우스의권능.md",
         "lastUpdate": ""
+      }
+    },
+    "455857": {
+      "id": "455857",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost"
+      ],
+      "name": "영혼의 파도",
+      "koreanName": "영혼의 파도",
+      "englishName": "Wave of Souls",
+      "icon": "spell_animamaw_wave",
+      "iconName": "spell_animamaw_wave",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "발동 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "죽음의 인도자의 사신의 징표에 연결되어 발동하는 암흑냉기 피해입니다. 직접 시전하는 버튼이 아닙니다. 9월 23일 공식 조정에서 혈기 영혼의 파도 공격력이 20% 증가했습니다. 냉기에 같은 보정을 적용하지 않습니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_animamaw_wave.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_animamaw_wave.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_animamaw_wave.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_animamaw_wave.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_animamaw_wave.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/신속하고고통스럽게",
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/사신의징표"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.025,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\영혼의파도.md",
+        "lastUpdate": "2026-09-27"
       }
     },
     "455993": {
@@ -134176,12 +134333,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 치명적인 접촉 (Deadly Reach)",
+      "description": "죽음의 일격이 추가 적 2명에게 60% 효율로 적중하게 합니다. 9월 23일 긴급 수정 전의 75%를 현재 수치로 쓰지 않습니다. 죽음의 마수의 사거리·충전·쿨다운을 바꾸는 특성이 아닙니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv12_ability_deathknight_cleavingdeathstrikes.jpg",
       "iconUrls": {
@@ -134192,21 +134349,20 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격",
-          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의마수"
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 3,
-        "synergyCount": 2,
-        "linkDensity": 0.037,
+        "wikilinkCount": 2,
+        "synergyCount": 1,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Talents\\치명적인접촉.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-09-27"
       }
     },
     "1264269": {
@@ -137131,6 +137287,57 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Procs\\살게라스의-메아리-1265884.md",
         "lastUpdate": ""
+      }
+    },
+    "1265932": {
+      "id": "1265932",
+      "type": "hero-talent",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost"
+      ],
+      "name": "죽음을 부르는 일격",
+      "koreanName": "죽음을 부르는 일격",
+      "englishName": "Deathly Blows",
+      "icon": "inv_sword_1h_mawraid_d_02",
+      "iconName": "inv_sword_1h_mawraid_d_02",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "죽음의 인도자 지속 효과입니다. 혈기에서는 죽음의 일격 공격력을 20% 높입니다. 9월 23일 조정 이전의 12%를 현행 값으로 쓰지 않습니다. 이 수치는 공격력 보정이며 죽음의 일격 자가 치유량을 20% 늘린다는 뜻이 아닙니다. 냉기의 냉기의 일격·빙하 진군 강화는 별도 전문화 효과입니다.",
+      "category": "hero-talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_mawraid_d_02.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sword_1h_mawraid_d_02.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sword_1h_mawraid_d_02.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_mawraid_d_02.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_mawraid_d_02.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/혈기/Skills/죽음의일격"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.009,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Hero-Talents\\죽음을부르는일격.md",
+        "lastUpdate": "2026-09-27"
       }
     },
     "1265939": {
