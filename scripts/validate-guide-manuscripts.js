@@ -1665,10 +1665,11 @@ function main() {
   assert(!unholy.extraSkills?.length, 'Unholy spells must come from the canonical KB');
   assert(kbSkills['444040']?.specs.includes('Unholy') && kbSkills['444040']?.specs.includes('Frost'), 'Apocalypse Now must be available to both Rider specializations for inline spell rendering');
   assert(unholy.graphCenterSkillId === '1247378', 'Unholy graph must use the connected Putrefy cast as its center');
-  assert(unholy.heroBranches[0].label === '종말의 기수' && unholy.heroBranches[0].summary.includes('레이드'), 'Unholy must explain the current Rider raid baseline');
-  assert(unholy.heroBranches[1].label === '산레인' && unholy.heroBranches[1].summary.includes('쐐기'), 'Unholy must explain the current Sanlayn M+ baseline');
+  assert(unholy.defaultHeroBranchIndex === 1 && unholy.heroBranches[1].label === '산레인' && unholy.heroBranches[1].summary.includes('레이드·쐐기'), 'Unholy must start with the current Sanlayn comparison build');
+  assert(unholy.heroBranches[0].label === '종말의 기수' && unholy.heroBranches[0].summary.includes('대안'), 'Unholy must preserve the Rider alternative');
   assert(unholy.heroBranches[1].opener.steps.some(step => step.skillId === '433895'), 'Sanlayn needs an authored Vampiric Strike flow');
-  assert(!unholy.opener.steps.some(step => step.skillId === '433895'), 'Rider opener must not borrow the Sanlayn-only strike');
+  assert(unholy.opener.steps.some(step => step.skillId === '433895') && unholy.opener.steps.some(step => step.skillId === '1271967'), 'Sanlayn Blightfall opener must show both player-cast buttons');
+  assert(!unholy.heroBranches[0].opener.steps.some(step => step.skillId === '433895'), 'Rider alternative must not borrow the Sanlayn-only strike');
   for (const flow of [unholy.opener, ...unholy.heroBranches.map(branch => branch.opener)]) {
     for (const step of flow.steps) {
       assert(kbSkills[step.skillId]?.castTime === '즉시', 'Unholy opener nodes must be actual player cast buttons');
@@ -1677,6 +1678,9 @@ function main() {
     }
   }
   assert(kbSkills['1241567']?.patch === '12.1' && kbSkills['1241567']?.description.includes('10%'), 'Unholy cleave must use the current passive and live chain reduction');
+  for (const [id, name, fact] of [['1271967', '역병내림', '200%'], ['1242604', '고초', '65%'], ['434143', '슬픔의 고통', '75%'], ['1265547', '핏빛 전율', '20%'], ['434075', '광적인 피의 갈증', '5%']]) {
+    assert(kbSkills[id]?.name === name && kbSkills[id]?.specs.includes('Unholy') && kbSkills[id]?.description.includes(fact), `Unholy 12.1 hotfix must survive canonical sync: ${name}`);
+  }
   assert(kbSkills['276023']?.description.includes('2.5초'), 'Harbinger must explain the summon-based Putrefy cooldown reduction');
   assert(unholy.priority.some(item => item.skillId === '207317' && item.note.includes('3대상') && item.note.includes('4대상')), 'Unholy spender thresholds must distinguish normal and apex states');
   assert(!JSON.stringify(unholy).includes('97.6%') && !JSON.stringify(unholy).includes('99.8%'), 'Old June usage percentages must not return as current Unholy evidence');

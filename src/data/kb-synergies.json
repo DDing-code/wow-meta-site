@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T05:26:52.171Z",
+    "generatedAt": "2026-09-27T00:03:23.243Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -903,7 +903,7 @@
     "질병_부패_역병내림": {
       "id": "질병_부패_역병내림",
       "name": "질병-부패-역병내림",
-      "description": "역병내림을 선택한 빌드는 영혼 수확자의 증폭이 끝나기 전에 남은 질병 피해를 소비하고, 반환된 부패와 파멸의 역병 폭발로 질병을 다시 적용합니다.",
+      "description": "역병내림을 선택한 빌드는 영혼 수확자의 증폭이 끝나기 전에 현재 남은 질병 피해의 200%를 소비하고, 반환된 부패와 파멸의 역병 폭발로 질병을 다시 적용합니다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -928,7 +928,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\질병-부패-역병내림.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-27"
       }
     },
     "바닥_방어조건": {

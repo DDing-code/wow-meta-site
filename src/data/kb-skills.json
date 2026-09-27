@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-23T05:48:51.835Z",
+    "generatedAt": "2026-09-27T00:03:23.242Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2970,
-    "rawTotalSkills": 2970,
+    "totalSkills": 2974,
+    "rawTotalSkills": 2974,
     "duplicateIds": [],
     "totalSynergies": 605,
     "stats": {
-      "total": 2970,
+      "total": 2974,
       "byType": {
         "buff": 137,
         "hero-talent": 548,
         "atomic-skill": 557,
         "proc": 29,
         "skill": 125,
-        "talent": 1000,
+        "talent": 1004,
         "spec-talent": 386,
         "passive": 78,
         "hero-tree": 2,
@@ -30,7 +30,7 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 119,
+        "DeathKnight": 123,
         "DemonHunter": 148,
         "Druid": 215,
         "Evoker": 140,
@@ -47,7 +47,7 @@
       "bySpec": {
         "DeathKnight-공용": 17,
         "DeathKnight-냉기": 33,
-        "DeathKnight-부정": 40,
+        "DeathKnight-부정": 44,
         "DeathKnight-혈기": 29,
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2888,
-        "withSynergies": 2093,
+        "withWikilinks": 2892,
+        "withSynergies": 2096,
         "avgLinkDensity": "0.039"
       }
     }
@@ -86370,6 +86370,60 @@
         "lastUpdate": "2026-09-12"
       }
     },
+    "434075": {
+      "id": "434075",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Blood",
+        "Unholy"
+      ],
+      "name": "광적인 피의 갈증",
+      "koreanName": "광적인 피의 갈증",
+      "englishName": "Frenzied Bloodthirst",
+      "icon": "inv_sulfurelemental_blood",
+      "iconName": "inv_sulfurelemental_blood",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "피의 여왕의 정수가 2중첩 더 쌓입니다. 부정에서는 중첩당 죽음의 고리와 죽음의 일격 피해가 5%, 전염병 피해가 5% 증가합니다. 9월 23일 공식 긴급 수정의 죽음의 고리·죽음의 일격 보너스가 현재 한국어 툴팁에 반영됐습니다. 혈기에는 전염병 보너스를 적용하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_sulfurelemental_blood.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_sulfurelemental_blood.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_sulfurelemental_blood.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_sulfurelemental_blood.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_sulfurelemental_blood.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/죽음의고리",
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/전염병"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 2,
+        "linkDensity": 0.042,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\광적인피의갈증.md",
+        "lastUpdate": "2026-09-27"
+      }
+    },
     "434100": {
       "id": "434100",
       "type": "hero-talent",
@@ -86478,6 +86532,59 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\08-성기사\\공용\\Hero-Talents\\가열로의축복-434132.md",
         "lastUpdate": ""
+      }
+    },
+    "434143": {
+      "id": "434143",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Blood",
+        "Unholy"
+      ],
+      "name": "슬픔의 고통",
+      "koreanName": "슬픔의 고통",
+      "englishName": "Infliction of Sorrow",
+      "icon": "ability_warrior_bloodbath",
+      "iconName": "ability_warrior_bloodbath",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "부정에서는 으로 이미 역병에 걸린 적을 때리면 역병 지속시간을 3초 늘리고 역병을 75% 증가한 효율로 분출시킵니다. [Blizzard 9월 23일 긴급 수정](https://news.blizzard.com/ko-kr/article/24296142/2026-9-25)의 이전 30%에서 75% 상향이 현재 한국어 툴팁에도 반영됐습니다. 혈기에서는 피의 역병에 대한 별도 20% 남은 피해 효과이므로 부정 수치를 혈기에 적용하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodbath.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_warrior_bloodbath.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_warrior_bloodbath.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_bloodbath.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_bloodbath.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림"
+        ],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 1,
+        "linkDensity": 0.056,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\슬픔의고통.md",
+        "lastUpdate": "2026-09-27"
       }
     },
     "434152": {
@@ -116611,6 +116718,58 @@
         "lastUpdate": ""
       }
     },
+    "1242604": {
+      "id": "1242604",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Unholy"
+      ],
+      "name": "고초",
+      "koreanName": "고초",
+      "englishName": "Scourging",
+      "icon": "spell_deathknight_deathstrike",
+      "iconName": "spell_deathknight_deathstrike",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "이 역병 분출을 일으키게 하는 지속 효과입니다. 현재 1점 한국어 툴팁은 65% 효율과 할퀴는 어둠 1중첩 추가를 표시합니다. [Blizzard 9월 23일 긴급 수정](https://news.blizzard.com/ko-kr/article/24296142/2026-9-25)은 1/2점 분출 효율을 65%/100%로 상향했다고 명시합니다. 1점 툴팁의 65%를 2점 값으로 복사하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_deathstrike.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_deathknight_deathstrike.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_deathstrike.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_deathknight_deathstrike.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_deathstrike.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/스컬지의일격"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 2,
+        "linkDensity": 0.063,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\고초.md",
+        "lastUpdate": "2026-09-27"
+      }
+    },
     "1242666": {
       "id": "1242666",
       "type": "talent",
@@ -135997,6 +136156,57 @@
         "lastUpdate": ""
       }
     },
+    "1265547": {
+      "id": "1265547",
+      "type": "talent",
+      "class": "DeathKnight",
+      "spec": "부정",
+      "specs": [
+        "Blood",
+        "Unholy"
+      ],
+      "name": "핏빛 전율",
+      "koreanName": "핏빛 전율",
+      "englishName": "Thrill of Blood",
+      "icon": "spell_nzinsanity_bloodthirst",
+      "iconName": "spell_nzinsanity_bloodthirst",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "부정에서는 피의 여왕의 정수 중첩당 특화를 0.2% 올리고, 공포의 역병 피해를 20%, 악성 역병 피해를 10% 올립니다. [Blizzard 9월 23일 긴급 수정](https://news.blizzard.com/ko-kr/article/24296142/2026-9-25)은 공포의 역병 보너스만 10%에서 20%로 올렸습니다. 혈기의 특화·피의 역병 수치는 다르므로 두 전문화를 합산하지 않습니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "2026-09-27",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_bloodthirst.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nzinsanity_bloodthirst.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nzinsanity_bloodthirst.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nzinsanity_bloodthirst.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nzinsanity_bloodthirst.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": [
+          "08-직업별-Knowledge-Base/01-죽음의기사/공용/Hero-Talents/흡혈의일격"
+        ]
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 0,
+        "linkDensity": 0.05,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\핏빛전율.md",
+        "lastUpdate": "2026-09-27"
+      }
+    },
     "1265570": {
       "id": "1265570",
       "type": "spec-talent",
@@ -142412,12 +142622,12 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "30야드",
-      "description": "주변의 남은 역병 피해를 100% 소비해 즉시 입히고 부패 1충전을 돌려주는 실제 시전 기술입니다. 역병내림 특성을 선택한 상태에서 어둠의 변신으로 사용 기회를 얻습니다. 0.75초는 내부 시전 제한이며 지속적으로 아무 때나 반복할 수 있다는 뜻이 아닙니다.",
+      "description": "주변의 역병을 소비해 남은 피해의 200%를 즉시 입히고 부패 1충전을 돌려주는 실제 시전 기술입니다. 9월 23일 상향과 24일 시간 경과에 따른 피해 감소 버그 수정을 반영했습니다. 역병내림 특성을 선택한 상태에서 어둠의 변신으로 사용 기회를 얻습니다. 0.75초는 내부 시전 제한이며 지속적으로 아무 때나 반복할 수 있다는 뜻이 아닙니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-12",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_shadow.jpg",
       "iconUrls": {
@@ -142440,12 +142650,12 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.043,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Skills\\역병내림.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-27"
       }
     },
     "1271974": {
@@ -142466,12 +142676,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "어둠의 변신으로 역병내림을 사용할 수 있게 하는 선택 특성입니다. 실제 사용 기술은 1271967이며 주변의 남은 질병 피해를 100% 소비해 즉시 입히고 부패 1충전을 돌려줍니다. 모든 산레인 빌드에 자동 포함되는 효과가 아닙니다.",
+      "description": "어둠의 변신으로 역병내림을 사용할 수 있게 하는 선택 특성입니다. 실제 사용 기술은 1271967이며 주변 역병을 소비해 남은 피해의 200%를 즉시 입히고 부패 1충전을 돌려줍니다. 9월 23일 상향과 24일 시간 경과에 따른 피해 감소 버그 수정을 반영했습니다. 모든 산레인 빌드에 자동 포함되는 효과가 아닙니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-12",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_nullstone_shadow.jpg",
       "iconUrls": {
@@ -142493,12 +142703,12 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.048,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Talents\\역병내림.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-09-27"
       }
     },
     "1272099": {
