@@ -7004,7 +7004,8 @@
     },
     "mage_common_defensive_mobility_matrix": {
       "id": "mage_common_defensive_mobility_matrix",
-      "name": "마법사 공용 시간 돌리기-얼음 방패 생존",
+      "name": "피해 유형별 마법사 생존과 위치 선택",
+      "description": "얼음 방패는 공격을 중단하는 면역, 시간 돌리기는 사전 위치·생명력으로 복귀, 전문화별 방벽은 사전 보호막이다. 환영 복제는 기본 피해 감소가 아니라 위협 감소이며 점멸과 일렁임은 양자택일 이동기다.",
       "type": "synergy",
       "synergyType": "defensive_mobility_matrix",
       "participants": [
@@ -7016,16 +7017,7 @@
         "212653",
         "235450",
         "235313",
-        "11426",
-        "431066",
-        "444827",
-        "449330",
-        "1255166",
-        "431131",
-        "444752",
-        "444784",
-        "444756",
-        "1246030"
+        "11426"
       ],
       "class": "Mage",
       "spec": "공용",
@@ -7036,17 +7028,17 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/얼음방패",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간돌리기",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/환영복제",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/투명화",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임",
         "08-직업별-Knowledge-Base/06-마법사/비전/Skills/오색방벽",
         "08-직업별-Knowledge-Base/06-마법사/화염/Skills/이글거리는방벽",
-        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막"
+        "08-직업별-Knowledge-Base/06-마법사/냉기/Skills/얼음보호막",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -7057,7 +7049,8 @@
     },
     "mage_common_raid_mplus_utility": {
       "id": "mage_common_raid_mplus_utility",
-      "name": "마법사 공용 시간 왜곡-마법 차단 유틸",
+      "name": "마법사의 파티 버프와 던전 대응",
+      "description": "신비한 지능은 지능 3%, 시간 왜곡은 40초 동안 가속 30%를 제공한다. 마법 차단은 25초 재사용에 같은 계열 7초 봉쇄, 마법 훔치기와 저주 해제는 대상 효과를 확인해 쓴다. 점멸·일렁임은 동시 사용이 아닌 선택 관계다.",
       "type": "synergy",
       "synergyType": "raid_mythic_plus_utility",
       "participants": [
@@ -7081,16 +7074,17 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/신비한지능",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/시간왜곡",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/마법차단",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/마법훔치기",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/저주해제",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임",
         "08-직업별-Knowledge-Base/06-마법사/공용/Skills/점멸",
-        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/투명화"
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/일렁임",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/투명화",
+        "08-직업별-Knowledge-Base/06-마법사/공용/Skills/환영복제"
       ],
       "linkedBuffs": [],
       "linkedTalents": [],

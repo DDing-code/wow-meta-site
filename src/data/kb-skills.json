@@ -235,12 +235,12 @@
       "school": "",
       "cooldown": "5분",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 3%",
       "range": "자신",
-      "description": "# 투명화 (Invisibility)",
+      "description": "3초에 걸쳐 투명해지며 그동안 1초마다 위협 수준이 줄어든다. 완전히 투명해진 뒤에는 적의 대상이 되지 않고 최대 20초 지속된다. 어떤 행동이든 하면 투명 효과가 취소되므로 피해를 막는 즉시 면역기로 쓰지 않는다.  던전 스킵이나 위협 해제는 적의 감지 조건과 전투 상황에 좌우된다. 은신이 필요한 경로에서 공격하거나 해제 동작을 계획했다면 지속시간과 취소 조건을 먼저 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -259,7 +259,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -960,12 +960,12 @@
       "school": "",
       "cooldown": "8초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 1.3%",
       "range": "40야드",
-      "description": "# 저주 해제 (Remove Curse)",
+      "description": "40야드 안 아군 대상에게 걸린 저주를 모두 해제한다. 기본 재사용 대기시간은 8초다. 마법·질병·독 해제까지 되는 범용 해제기로 표기하지 않는다. 같은 전투에서 여러 대상이 저주에 걸린다면 8초 간격과 위험도에 따라 우선 대상을 정한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -984,7 +984,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -2982,12 +2982,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 1%",
       "range": "40야드",
-      "description": "# 신비한 지능 (Arcane Intellect)",
+      "description": "대상의 지능을 1시간 동안 3% 높인다. 파티원이나 공격대원에게 시전하면 파티·공격대 전체가 효과를 받는다. 전투 시작 전과 전멸 후 적용 여부를 확인한다. 한 명에게 건 강화가 파티에 퍼지는 효과이지, 각 대상에게 반복 시전해야 하는 주문은 아니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3006,7 +3006,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -3899,14 +3899,14 @@
       "icon": "spell_arcane_blink",
       "iconName": "spell_arcane_blink",
       "school": "",
-      "cooldown": "15초",
+      "cooldown": "20초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 2%",
       "range": "자신",
-      "description": "# 점멸 (Blink)",
+      "description": "전방으로 20미터 순간이동하고 모든 기절·구속 효과에서 벗어난다. 경로에 장애물이 있으면 이동이 중단된다. 기본 재사용 대기시간은 20초, 사용 가능 횟수는 1회다.  일렁임 특성을 선택하면 점멸이 대체된다. 두 기술을 같은 빌드의 연속 이동 버튼으로 그리지 않는다. 점멸의 제어 효과 해제가 필요한 전투와 일렁임의 시전 중 이동이 유리한 전투를 나눠 판단한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3925,7 +3925,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.067,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -4311,14 +4311,14 @@
       "icon": "spell_frost_iceshock",
       "iconName": "spell_frost_iceshock",
       "school": "",
-      "cooldown": "24초",
+      "cooldown": "25초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 2%",
       "range": "40야드",
-      "description": "# 마법 차단 (Counterspell)",
+      "description": "40야드에서 차단 가능한 적 주문 시전을 끊고 같은 계열 주문을 7초 동안 봉쇄한다. 기본 재사용 대기시간은 25초다. 대상이 시전하지 않거나 차단할 수 없는 기술에 쓰면 시전 봉쇄 효과를 기대하지 않는다. 쐐기 차단 순서에는 25초 회복과 적 주문 계열을 함께 기록한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4337,7 +4337,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.056,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -9466,12 +9466,12 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나의 21%",
       "range": "40야드",
-      "description": "# 마법 훔치기 (Spellsteal)",
+      "description": "적의 훔칠 수 있는 유익한 마법 효과 하나를 자신에게 옮기며, 효과는 최대 2분 동안 지속된다. 도벽 특성을 선택하면 한 번에 모든 해당 마법 효과를 훔치는 분기로 바뀐다. 기본 주문에 도벽 효과를 합치지 않는다.  기본 마나의 21%를 쓰므로 빈번한 해제가 필요한 전투에서는 마나도 고려한다. 훔칠 수 없는 효과나 제거만 가능하고 자신에게 적용되지 않는 효과는 던전·보스별로 따로 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9490,7 +9490,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.027,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -11355,10 +11355,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 얼음 방패 (Ice Block)",
+      "description": "10초 동안 얼음에 갇혀 공격과 피해로부터 보호받지만, 그동안 공격·이동·주문 사용은 할 수 없다. 기본 재사용 대기시간은 4분이다. 사용 후에는 30초간 저체온증이 남아 얼음 방패를 다시 시전할 수 없다.  피해가 들어오기 직전의 면역 선택지로 쓰되, 전투별로 면역을 무시하는 기믹과 지속 효과 해제 여부는 따로 확인한다. 공격을 중단하는 대가가 있으므로 단순 이동이나 작은 광역 피해에 자동 배정하지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -11377,7 +11377,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.049,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -14279,12 +14279,12 @@
       "school": "",
       "cooldown": "2분",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 2%",
       "range": "자신",
-      "description": "# 환영 복제 (Mirror Image)",
+      "description": "15초 동안 적을 공격하는 복제 3개를 소환한다. 복제가 활성화된 동안 자신이 생성하는 위협 수준이 크게 줄어든다. 복제는 직접 피해를 받으면 하나씩 사라진다. 기본 주문에는 받는 피해 감소가 없으므로 12.1 가이드에서 방벽·시간 돌리기와 같은 피해 감소기로 합산하지 않는다.  비전 전문화에서 환영 복제 사용에 반응하는 별도 피해 지연 특성을 선택했다면 그 효과를 따로 계산한다. 그 조건부 보상을 환영 복제의 공용 기본 효과로 적지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -14303,7 +14303,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -16578,12 +16578,12 @@
       "school": "",
       "cooldown": "5분",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 4%",
       "range": "100야드",
-      "description": "# 시간 왜곡 (Time Warp)",
+      "description": "모든 파티원과 공격대원의 가속을 40초 동안 30% 높인다. 기본 재사용 대기시간은 5분이지만 효과를 받은 아군은 10분 동안 피의 욕망·영웅심·시간 왜곡의 같은 계열 효과를 다시 받지 못한다. 자기 쿨기만 보고 누르지 말고 파티·공격대가 정한 피해 구간에 맞춘다.  보스가 곧 사라지거나 공격할 수 없는 단계에 들어가면 40초를 온전히 활용하기 어렵다. 재사용 대기시간 5분과 아군의 10분 제한을 혼동해 두 번째 사용 계획을 세우지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16602,7 +16602,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.028,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -35473,14 +35473,14 @@
       "icon": "spell_arcane_massdispel",
       "iconName": "spell_arcane_massdispel",
       "school": "",
-      "cooldown": "27초",
+      "cooldown": "30초",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 2%",
       "range": "자신",
-      "description": "# 일렁임 (Shimmer)",
+      "description": "점멸을 대체하는 선택 기술이다. 장애물이 없으면 전방 20미터로 이동하며, 다른 주문 시전 중에도 사용할 수 있고 전역 재사용 대기시간의 영향을 받지 않는다. 현재 기본 툴팁은 30초 재사용과 1회 사용을 명시한다. 과거의 27초·2회 수치를 현재 기본 효과로 쓰지 않는다.  점멸의 기절·구속 해제 효과를 일렁임에 그대로 옮기지 않는다. 시전을 유지하며 위치를 바꿔야 할 때와 제어 효과에서 빠져나와야 할 때의 선택 기준이 다르다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -35499,7 +35499,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.056,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -46225,12 +46225,12 @@
       "school": "",
       "cooldown": "1분",
       "castTime": "즉시",
-      "resourceCost": "없음",
+      "resourceCost": "기본 마나의 1%",
       "range": "자신",
-      "description": "# 시간 돌리기 (Alter Time)",
+      "description": "처음 사용한 위치와 생명력 상태를 저장하고 다시 누르거나 10초가 지나면 그 상태로 돌아간다. 큰 피해 직전에 쓰면 손실한 생명력을 되돌릴 수 있고, 이동 전에 쓰면 원래 위치로 복귀할 수 있다. 너무 멀리 이동하거나 사망하면 효과가 취소되므로 무조건 살려 주는 면역기로 취급하지 않는다.  기본 재사용 대기시간은 1분이다. 시간 돌리기와 점멸·일렁임의 연계는 선택 특성의 효과를 따로 확인하며, 기본 주문이 이동기 재사용 대기시간을 자동 초기화한다고 적지 않는다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46249,7 +46249,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.06,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -95067,7 +95067,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.02,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {

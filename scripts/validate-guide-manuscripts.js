@@ -1756,6 +1756,14 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(arcaneSource))) === JSON.stringify(manuscripts['mage-arcane']), 'Arcane guide must match its canonical KB manuscript');
   }
   assert(kbSkills['1295924']?.name === '오색 화살' && kbSkills['1295924']?.patch === '12.1', 'Arcane Prismatic Bolt must be synced from the 12.1 KB');
+  for (const id of ['342245', '30449', '1459', '80353', '2139', '212653', '45438', '475', '1953', '66', '55342']) {
+    assert(kbSkills[id]?.patch === '12.1' && kbSkills[id]?.description?.length > 70 && !kbSkills[id].description.startsWith('#'), `Mage common spell must retain its reviewed 12.1 effect: ${id}`);
+  }
+  assert(kbSkills['2139'].cooldown === '25초' && kbSkills['2139'].description.includes('7초'), 'Counterspell must retain its current cooldown and school lockout');
+  assert(kbSkills['1953'].cooldown === '20초' && kbSkills['212653'].cooldown === '30초' && kbSkills['212653'].description.includes('1회'), 'Blink and Shimmer must not inherit old cooldowns or charges');
+  assert(kbSkills['55342'].description.includes('기본 주문에는 받는 피해 감소가 없'), 'Mirror Image must not become a baseline damage reduction cooldown');
+  assert(bloodSynergies.mage_common_defensive_mobility_matrix?.description.includes('기본 피해 감소가 아니라 위협 감소') && bloodSynergies.mage_common_raid_mplus_utility?.patch === '12.1', 'Mage shared utility graph must preserve the 12.1 threat and party roles');
+  assert(!JSON.stringify(manuscripts['mage-arcane']).includes('주문 훔치기'), 'Arcane guide must use the official Korean Spellsteal name');
   assert(kbSkills['1296930']?.description.includes('24%'), 'Arcane tier set must use the post-tuning 24% cap');
   assert(isInactiveGuideSkill(kbSkills['1257942']), 'Touch of the Archmage must not return as an active talent');
 
