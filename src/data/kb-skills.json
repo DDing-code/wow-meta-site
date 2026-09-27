@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:49:54.742Z",
+    "generatedAt": "2026-09-27T01:07:49.539Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -13,10 +13,10 @@
       "byType": {
         "buff": 137,
         "hero-talent": 552,
-        "atomic-skill": 557,
+        "atomic-skill": 558,
         "proc": 29,
         "skill": 125,
-        "talent": 1004,
+        "talent": 1003,
         "spec-talent": 386,
         "passive": 78,
         "hero-tree": 2,
@@ -113190,7 +113190,7 @@
     },
     "1217610": {
       "id": "1217610",
-      "type": "talent",
+      "type": "atomic-skill",
       "class": "DemonHunter",
       "spec": "포식",
       "specs": [
@@ -113203,13 +113203,13 @@
       "iconName": "inv_12_dh_void_ability_feast",
       "school": "",
       "cooldown": "없음",
-      "castTime": "즉시",
-      "resourceCost": "공허 탈태 중",
-      "range": "25미터",
-      "description": "# 집어삼키기 (Devour)",
-      "category": "talent",
+      "castTime": "1.5초",
+      "resourceCost": "없음",
+      "range": "25야드",
+      "description": "집어삼키기는 공허 탈태 중 흡수를 대체하는 시전 기술이다. 1.5초 동안 시전해 우주 피해를 주고 격노 16을 생성하며, 수확의 재사용 대기시간을 1초 줄인다. 이동하면서 시전할 수 있다. 즉시 시전 소비기나 별도 특성 포인트가 아니다.",
+      "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113223,7 +113223,8 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
@@ -113232,13 +113233,13 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 4,
-        "linkDensity": 0.051,
+        "wikilinkCount": 7,
+        "synergyCount": 5,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\집어삼키기.md",
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\집어삼키기.md",
         "lastUpdate": ""
       }
     },
@@ -113580,18 +113581,18 @@
       },
       "synergies": {
         "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.045,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -118815,10 +118816,10 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
         ],
@@ -118827,7 +118828,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 6,
-        "linkDensity": 0.058,
+        "linkDensity": 0.056,
         "hasWikilinks": true
       },
       "source": {
@@ -120118,14 +120119,14 @@
       "icon": "ability_bossgorefiend_gorefiendscorruption",
       "iconName": "ability_bossgorefiend_gorefiendscorruption",
       "school": "",
-      "cooldown": "공허 탈태 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
-      "resourceCost": "영혼 파편 35",
+      "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼 탐식 (Soul Glutton)",
+      "description": "공허 탈태에 필요한 영혼 파편을 50개에서 35개로 낮추는 선택 특성이다. 대신 공허 탈태 중 격노가 25% 더 빨리 소모된다. 특성 자체가 영혼 파편 35개를 소비하는 별도 버튼은 아니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -120149,7 +120150,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.039,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -152580,10 +152581,10 @@
       "synergies": {
         "relatedSkills": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기"
         ],
         "relatedTalents": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
         ],
         "relatedHeroTalents": []

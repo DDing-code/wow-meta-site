@@ -1568,6 +1568,10 @@ function main() {
   assert(blood.heroBranches[0].label === '산레인' && blood.heroBranches[0].summary.includes('조정 전') && blood.heroBranches[1].summary.includes('9월 23일'), 'Blood hero branches must distinguish pre-hotfix advice from current tuning');
   assert(blood.sources.some(source => source.url.endsWith('/2026-9-23') && source.label.includes('긴급 수정')) && blood.summary.includes('9월 23일'), 'Blood guide must cite the official September hotfix');
 
+  const devourer = manuscripts['demonhunter-devourer'];
+  assert(kbSkills['1217610']?.patch === '12.1' && kbSkills['1217610']?.type === 'atomic-skill' && kbSkills['1217610']?.castTime === '1.5초' && kbSkills['1217610']?.resourceCost === '없음' && kbSkills['1217610']?.description.includes('격노 16') && kbSkills['1217610']?.description.includes('1초'), 'Devour must remain a casted Fury generator and Reap cooldown reducer');
+  assert(kbSkills['1217610']?.source.kbPath.includes('Skills\\집어삼키기.md') && kbSkills['1247534']?.description.includes('25%') && kbSkills['1247534']?.resourceCost === '없음', 'Devour and Soul Glutton must retain their current KB classification and cost');
+  assert(devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('집어삼키기는 격노 16을 생성') && paragraph.includes('종료가 늦어질'))) && devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('격노가 25% 더 빨리 소모'))), 'Devourer must explain the single-target generator and AoE exit tradeoff');
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
   const havoc = manuscripts['demonhunter-havoc'];
   const havocSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '02-악마사냥꾼', '파멸', 'Meta', 'guide-12.1.json');

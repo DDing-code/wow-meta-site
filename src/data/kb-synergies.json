@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:49:54.743Z",
+    "generatedAt": "2026-09-27T01:07:49.540Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -2313,12 +2313,12 @@
       "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\공허탈태-붕괴하는별.md",
@@ -2344,13 +2344,13 @@
       "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/집어삼키기"
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/영혼분출"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\수확-영혼분출.md",
