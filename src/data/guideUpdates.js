@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '무기 전사 12.1 시너지·출혈 조건 검수', partial: true,
+    guideIds: ['warrior-arms'], commits: ['33bdd62f'],
+    body: '거인의 강타, 회전베기, 마무리 일격, 전쟁의 지배자, 칼날폭풍의 연결 문서 6개를 현재 툴팁과 운용에 맞춰 갱신했습니다. 분쇄와 치명상의 적용 조건을 분리하고 시너지 그래프에 설명과 공식 한국어 이름을 연결했습니다. 상위 로그 비교와 전체 가이드 검수는 계속 진행합니다.' },
   { date: '2026-09-27', title: '포식 악마사냥꾼 12.1 특성·연계 교정', partial: true,
     guideIds: ['demonhunter-devourer'], commits: ['8f5476c3', 'f42d8a64'],
     body: '집어삼키기·영혼 탐식의 현재 효과를 교정하고, 포식 특성 노트의 구버전 표기를 라이브 한국어 툴팁과 대조했습니다. 한밤은 단계별 주문 ID로 분리하고 공허내림의 생성·소비 조건을 바로잡았습니다. 공허내림은 공개 가이드와 툴팁의 발동 설명이 달라 실제 로그 비교를 계속 진행합니다.' },
