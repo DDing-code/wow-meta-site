@@ -39,4 +39,7 @@ for (const id of ids) {
 }
 assert.equal(getGuidePublication('unknown', null).label, '확인 중');
 assert.equal(getGuidePublication('unknown', null).date, null);
+assert.equal(getGuidePublication('rogue-assassination', guideManuscripts['rogue-assassination']).partial, true);
+assert.equal(getGuidePublication('rogue-subtlety', guideManuscripts['rogue-subtlety']).partial, true);
+assert.equal(getGuidePublication('rogue-outlaw', guideManuscripts['rogue-outlaw']).partial, false);
 console.log(`Guide publication metadata verified for ${ids.size} specializations.`);

@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '암살·잠행 도적 12.1 KB·유틸 연결 재검토', partial: true,
+    guideIds: ['rogue-assassination', 'rogue-subtlety'], commits: ['98d98664'],
+    body: '암살 KB의 6월 로그 비율을 현행 추천 근거에서 제외하고 영웅 특성별 판단을 12.1 공개 가이드와 대조했습니다. 잠행은 혼절시키기의 비전투 조건, 독칼과 독 칼의 역할을 교정해 사이트 시너지 DB에 반영했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },
   { date: '2026-09-27', title: '무기 전사 12.1 시너지·출혈 조건 검수', partial: true,
     guideIds: ['warrior-arms'], commits: ['33bdd62f'],
     body: '거인의 강타, 회전베기, 마무리 일격, 전쟁의 지배자, 칼날폭풍의 연결 문서 6개를 현재 툴팁과 운용에 맞춰 갱신했습니다. 분쇄와 치명상의 적용 조건을 분리하고 시너지 그래프에 설명과 공식 한국어 이름을 연결했습니다. 상위 로그 비교와 전체 가이드 검수는 계속 진행합니다.' },
