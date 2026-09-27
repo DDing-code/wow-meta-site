@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:30:49.438Z",
+    "generatedAt": "2026-09-27T00:49:54.743Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSynergies": 606,
-    "rawTotalSynergies": 606,
+    "totalSynergies": 607,
+    "rawTotalSynergies": 607,
     "duplicateIds": [],
     "byType": {
       "shared_magic_survival": 1,
@@ -18,7 +18,7 @@
       "tier-set-proc": 1,
       "hero-cooldown": 1,
       "hero-summon": 1,
-      "unknown": 203,
+      "unknown": 204,
       "blood-ground-defenses": 1,
       "sanlayn-recovery": 1,
       "ranged-bone-shield-maintenance": 1,
@@ -266,7 +266,7 @@
     },
     "byClass": {
       "DeathKnight": 34,
-      "DemonHunter": 35,
+      "DemonHunter": 36,
       "Druid": 54,
       "Evoker": 34,
       "Hunter": 50,
@@ -1578,7 +1578,7 @@
     "dh-vengeance-알드라치-강화순서": {
       "id": "dh-vengeance-알드라치-강화순서",
       "name": "글레이브 뒤 균열과 영혼 베어내기",
-      "description": "현재 공개 가이드의 기본 순서는 파괴자의 글레이브 뒤 균열, 영혼 베어내기다. 칼날의 기예가 두 번째 소비의 베기를 12회로 만들고 두 강화를 모두 쓰면 전투의 전율을 얻는다. 패시브 이름을 시전 버튼으로 놓지 않는다.",
+      "description": "기본 순서는 파괴자의 글레이브 뒤 균열, 영혼 베어내기다. 9월 23일 조정 후 첫·둘째 강화는 15%·30% 추가 피해다. 칼날의 기예가 두 번째 소비의 베기를 12회로 만들고 두 강화를 모두 쓰면 전투의 전율을 얻는다. 패시브 이름을 시전 버튼으로 놓지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -1821,6 +1821,40 @@
         "lastUpdate": ""
       }
     },
+    "dh-havoc-무너진영혼-글레이브준비": {
+      "id": "dh-havoc-무너진영혼-글레이브준비",
+      "name": "파편 생성과 글레이브 준비",
+      "description": "무너진 영혼은 사냥 시 파편 1개, 칼춤·혼돈의 일격 사용 시 20% 확률로 파편을 만든다. 생성만으로 전투검술의 6개 흡수 조건을 채우는 것은 아니다. 실제 흡수를 확인한 뒤 파괴자의 글레이브를 사용하고 두 강화를 소비한다.",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [
+        "1272143",
+        "442290",
+        "442294",
+        "370965",
+        "188499",
+        "162794"
+      ],
+      "class": "DemonHunter",
+      "spec": "Havoc",
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/파괴자의글레이브",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/사냥",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/칼춤",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Skills/혼돈의일격"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/파멸/Talents/무너진영혼"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Synergies\\무너진영혼-글레이브준비.md",
+        "lastUpdate": ""
+      }
+    },
     "dh-havoc-시즌2-정수파쇄-증오의순환": {
       "id": "dh-havoc-시즌2-정수파쇄-증오의순환",
       "name": "세트로 바뀌는 두 쿨다운 주기",
@@ -1946,7 +1980,7 @@
     "dh-havoc-알드라치-파괴자의글레이브": {
       "id": "dh-havoc-알드라치-파괴자의글레이브",
       "name": "강화 소비 순서에 따른 다른 보상",
-      "description": "파괴자의 글레이브 뒤 혼돈의 일격 계열을 먼저 쓰면 두 번째 칼춤 계열에 칼날의 기예의 12회 베기를 붙인다. 칼춤을 먼저 쓰고 혼돈의 일격을 쓰면 징표 중첩을 강화한다. 새 글레이브는 남은 강화 효과를 소비한 후에 사용한다.",
+      "description": "파괴자의 글레이브 뒤 첫 강화는 15%, 두 번째는 30% 추가 피해다. 혼돈의 일격 계열을 먼저 쓰면 두 번째 칼춤 계열에 칼날의 기예의 12회 베기를 붙인다. 칼춤을 먼저 쓰고 혼돈의 일격을 쓰면 징표 중첩을 강화한다. 새 글레이브는 남은 강화 효과를 소비한 후에 사용한다.",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [

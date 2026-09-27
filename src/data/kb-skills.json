@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T00:30:49.437Z",
+    "generatedAt": "2026-09-27T00:49:54.742Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
     "totalSkills": 2978,
     "rawTotalSkills": 2978,
     "duplicateIds": [],
-    "totalSynergies": 606,
+    "totalSynergies": 607,
     "stats": {
       "total": 2978,
       "byType": {
@@ -91562,12 +91562,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "파멸은 영혼 파편 6개를 흡수하거나 사냥을 사용하면 다음 글레이브 투척을 파괴자의 글레이브로 바꾼다. 이후 혼돈의 일격과 칼춤이 한 번씩 강화되며 먼저 쓴 능력은 10%, 두 번째는 20% 추가 피해를 얻는다. 파편 생성만으로 흡수 조건을 채웠다고 계산하지 않는다.  복수는 영혼 파편 20개 흡수 또는 원한의 인장이 조건이다. 강화 대상도 균열 계열과 영혼 베어내기이므로 파멸의 소비 순서를 복사하지 않는다.",
+      "description": "파멸은 영혼 파편 6개를 흡수하거나 사냥을 사용하면 다음 글레이브 투척을 파괴자의 글레이브로 바꾼다. 이후 혼돈의 일격과 칼춤이 한 번씩 강화되며 먼저 쓴 능력은 15%, 두 번째는 30% 추가 피해를 얻는다. 9월 23일 공식 조정과 현재 한국어 툴팁이 이 두 수치에 일치한다. 파편 생성만으로 흡수 조건을 채웠다고 계산하지 않는다.  복수는 영혼 파편 20개 흡수 또는 원한의 인장이 조건이다. 강화 대상도 균열 계열과 영혼 베어내기이며 첫 소비 15%, 둘째 소비 30%로 상향됐다. 파멸의 소비 순서를 복사하지 않는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-13",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
       "iconUrls": {
@@ -91589,7 +91589,7 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Hero-Talents\\전투검술.md",
-        "lastUpdate": "2026-09-13"
+        "lastUpdate": "2026-09-27"
       }
     },
     "442294": {
@@ -91611,12 +91611,12 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40미터",
-      "description": "복수는 파편 20개 흡수 또는 원한의 인장으로 준비하고 균열·영혼 베어내기를 강화한다. 아래 6개·사냥·혼돈의 일격·칼춤 조건은 파멸에만 적용한다.  전투검술이 준비되면 글레이브 투척을 대체하는 실제 공격이다. 영혼 파편 6개 흡수 또는 사냥이 준비 조건이며, 그 뒤 혼돈의 일격과 칼춤을 한 번씩 강화한다. 처음 쓴 강화 능력은 10%, 두 번째는 20% 추가 피해를 얻는다. 단일의 징표 중첩과 광역의 칼날의 기예가 원하는 소비 순서는 다를 수 있다. 분쇄 일격과 몰아치는 전투검이 남았는데 새 글레이브로 덮거나, 글레이브를 보유한 ",
+      "description": "복수는 파편 20개 흡수 또는 원한의 인장으로 준비하고 균열·영혼 베어내기를 강화한다. 9월 23일 공식 조정으로 글레이브 자체의 공격력도 25% 증가했다. 아래 6개·사냥·혼돈의 일격·칼춤 조건은 파멸에만 적용한다.  전투검술이 준비되면 글레이브 투척을 대체하는 실제 공격이다. 영혼 파편 6개 흡수 또는 사냥이 준비 조건이며, 그 뒤 혼돈의 일격과 칼춤을 한 번씩 강화한다. 9월 23일 조정으로 글레이브 자체의 공격력은 25% 증가했고 처음 쓴 강화 능력은 15%, 두 번째는 30% 추가 피해를 얻는다. 단일의 징표 중첩과 광역의",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-13",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_aldrachireaverdemonhunter_reaversglaive.jpg",
       "iconUrls": {
@@ -91640,12 +91640,12 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.052,
+        "linkDensity": 0.044,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Skills\\파괴자의글레이브.md",
-        "lastUpdate": "2026-09-13"
+        "lastUpdate": "2026-09-27"
       }
     },
     "442435": {
@@ -91777,12 +91777,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상",
-      "description": "복수는 강화 균열로 부여하며 영혼 베어내기 뒤 균열이면 추가 중첩을 얻는다. 다음 혼돈의 일격·칼춤 설명은 파멸 전용이다.  파괴자의 징표의 대상 약화 효과 ID다. 특성 노드는 442679이며, 플레이어가 별도로 시전하는 주문이 아니다. 강화된 혼돈의 일격 계열로 부여하며 칼춤 뒤에 소비하면 추가 중첩을 얻는다. 현재 특성 설명은 20초, 중첩당 7%, 최대 2중첩이다. 부상당한 사냥감의 피해 대상과 연결되므로 징표가 사라지는 시각과 대상의 생존 시간을 함께 확인한다. 모든 적에게 독립적으로 유지하는 광역 지속 피해로 설명하지 않",
+      "description": "복수는 강화 균열로 부여하며 영혼 베어내기 뒤 균열이면 추가 중첩을 얻는다. 다음 혼돈의 일격·칼춤 설명은 파멸 전용이다.  파괴자의 징표의 대상 약화 효과 ID다. 특성 노드는 442679이며, 플레이어가 별도로 시전하는 주문이 아니다. 파멸은 강화된 혼돈의 일격 계열로 부여하며 칼춤 뒤에 소비하면 추가 중첩을 얻는다. 20초 지속·최대 2중첩이다. 9월 23일 공식 조정은 파멸 중첩당 7%, 복수 중첩당 8%이나 현재 공유 한국어 툴팁은 둘 다 8%로 표시한다. 파멸의 실제 적용값은 로그로 별도 확인해야 한다. 부상당한 사냥감의",
       "category": "buff",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-13",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg",
       "iconUrls": {
@@ -91804,12 +91804,12 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.034,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Skills\\파괴자의징표.md",
-        "lastUpdate": "2026-09-13"
+        "lastUpdate": "2026-09-27"
       }
     },
     "442679": {
@@ -91831,12 +91831,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상",
-      "description": "복수에서는 강화 균열로 부여하며 영혼 베어내기 뒤 균열을 쓰면 추가 중첩을 얻는다. 아래 혼돈의 일격·칼춤 조건은 파멸 전용이다.  파괴자의 글레이브로 강화된 혼돈의 일격이 대상에게 20초간 중첩당 7%의 받는 피해 증가를 남긴다. 기본 최대 2중첩이며 칼춤 후 혼돈의 일격을 쓰면 추가 중첩을 얻는다. 현재 대상 약화 효과는 442624다. 칼날의 기예가 만드는 순서 보상과 함께 읽는다.",
+      "description": "복수에서는 강화 균열로 부여하며 영혼 베어내기 뒤 균열을 쓰면 추가 중첩을 얻는다. 아래 혼돈의 일격·칼춤 조건은 파멸 전용이다.  파괴자의 글레이브로 강화된 혼돈의 일격이 대상에게 20초간 받는 피해 증가를 남긴다. 9월 23일 공식 조정은 파멸 7%, 복수 8%로 구분한다. 현재 Wowhead 한국어 공유 툴팁 442679는 두 전문화 모두 8%로 표시하므로 파멸의 적용값은 실제 전투에서 별도 확인이 필요하다. 기본 최대 2중첩이며 칼춤 후 혼돈의 일격을 쓰면 추가 중첩을 얻는다. 대상 약화 효과는 442624다. 칼날의 기예가",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-13",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_harass.jpg",
       "iconUrls": {
@@ -91858,12 +91858,12 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.043,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Talents\\파괴자의징표-특성.md",
-        "lastUpdate": "2026-09-13"
+        "lastUpdate": "2026-09-27"
       }
     },
     "442686": {
@@ -143143,12 +143143,12 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "파멸에서는 사냥 사용 시 영혼 파편 1개를 만들고 칼춤 및 혼돈의 일격 사용 시 15% 확률로 영혼 파편을 만든다. 생성과 흡수는 별개다. 바닥에 남긴 파편은 전투검술의 6개 흡수 조건을 아직 채우지 않았을 수 있다. 파편을 줍기 위해 위험 바닥으로 들어가는 손실까지 고려한다.",
+      "description": "파멸에서는 사냥 사용 시 영혼 파편 1개를 만들고 칼춤 및 혼돈의 일격 사용 시 20% 확률로 영혼 파편을 만든다. 9월 23일 공식 조정 전에는 15%였다. 생성과 흡수는 별개다. 바닥에 남긴 파편은 전투검술의 6개 흡수 조건을 아직 채우지 않았을 수 있다. 파편을 줍기 위해 위험 바닥으로 들어가는 손실까지 고려한다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
-      "updated": "2026-09-13",
+      "updated": "2026-09-27",
       "nonAtomic": false,
       "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_argus_soulbombdebufflarge.jpg",
       "iconUrls": {
@@ -143170,12 +143170,12 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.068,
+        "linkDensity": 0.062,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Talents\\무너진영혼.md",
-        "lastUpdate": "2026-09-13"
+        "lastUpdate": "2026-09-27"
       }
     },
     "1272153": {

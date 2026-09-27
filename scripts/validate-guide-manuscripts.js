@@ -1581,6 +1581,10 @@ function main() {
   assert(kbSkills['258860']?.resourceCost === '없음', 'Essence Break must not inherit a spender Fury cost');
   assert(kbSkills['1270901']?.description.includes('다음 칼춤 사용 시') && kbSkills['1270901']?.description.includes('초기화'), 'Apex must explain the next-cast reset, not immediate cooldown removal');
   assert(kbSkills['1296612']?.description.includes('35%') && kbSkills['1296612']?.description.includes('4초에서 6초'), 'Havoc tier set must retain its current effects through sync');
+  assert(kbSkills['442290']?.description.includes('15%') && kbSkills['442290']?.description.includes('30%') && !kbSkills['442290']?.description.includes('먼저 쓴 능력은 10%'), 'Shared Aldrachi Art of the Glaive must retain September tuning');
+  assert(kbSkills['442294']?.description.includes('25% 증가') && kbSkills['1272143']?.description.includes('20% 확률'), 'Havoc Glaive and Broken Spirit must retain September tuning');
+  assert(havoc.sources.some(source => source.url.includes('news.blizzard.com/ko-kr/article/24296142')) && havoc.sourceNote.includes('공식 변경표는 파멸 7%·복수 8%'), 'Havoc must cite the hotfix and preserve the shared-tooltip discrepancy');
+  assert(bloodSynergies['dh-havoc-무너진영혼-글레이브준비']?.description.includes('실제 흡수'), 'Havoc graph must connect proc generation to actual fragment absorption');
   const havocNotes = Object.values(kbSkills).filter(skill => /[\\/]02-악마사냥꾼[\\/]파멸[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
   assert(havocNotes.length === 54, 'Havoc must retain all 54 reviewed atomic notes');
   for (const skill of havocNotes) {
@@ -1616,6 +1620,8 @@ function main() {
   assert(kbSkills['1270444']?.description.includes('직접 시전') && kbSkills['1270444']?.castTime === '지속 효과', 'Untethered Rage grants a manual Meta use, not an automatic transformation');
   assert(kbSkills['263648']?.description.includes('8%') && kbSkills['263648']?.description.includes('2%') && kbSkills['263648']?.castTime === '지속 효과', 'Soul Barrier must keep its current passive shield effect');
   assert(kbSkills['1296613']?.description.includes('주 대상') && kbSkills['1296614']?.description.includes('100%'), 'Vengeance tier effects must retain target conditions');
+  assert(vengeance.sources.some(source => source.url.includes('news.blizzard.com/ko-kr/article/24296142')) && vengeance.blocks.some(section => section.paragraphs.some(text => text.includes('첫 강화는 15%') && text.includes('둘째 강화는 30%'))), 'Vengeance must explain the September Aldrachi tuning');
+  assert(bloodSynergies['dh-vengeance-알드라치-강화순서']?.description.includes('15%·30%'), 'Vengeance graph must retain the current Aldrachi sequence values');
   assert(kbSkills['1253391']?.description.includes('3중첩') && kbSkills['1253391']?.description.includes('모든 중첩') && kbSkills['218612']?.description.includes('격노를 20'), 'Meteoric Fall and Feed the Demon must keep their actual consumption rules');
   for (const id of ['442294', '442624', '442679', '442806', '442718', '1272153', '232893']) {
     assert(kbSkills[id]?.specs.includes('Vengeance') && kbSkills[id]?.specs.includes('Havoc'), 'Shared DH spell must retain both verified spec scopes: ' + id);
