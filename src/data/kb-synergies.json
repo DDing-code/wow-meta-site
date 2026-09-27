@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T01:39:03.476Z",
+    "generatedAt": "2026-09-27T02:01:58.109Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -284,7 +284,7 @@
   "synergies": {
     "deathknight_common_anti_magic_survival": {
       "id": "deathknight_common_anti_magic_survival",
-      "name": "죽음의기사공용-대마법보호막-대마법지대-마법생존",
+      "name": "죽음의 기사 공용-대마법 보호막-대마법 지대-마법 생존",
       "type": "synergy",
       "synergyType": "shared_magic_survival",
       "participants": [
@@ -315,7 +315,7 @@
     },
     "deathknight_common_grip_advance_control": {
       "id": "deathknight_common_grip_advance_control",
-      "name": "죽음의기사공용-죽음의손아귀-죽음의진군-제어",
+      "name": "죽음의 기사 공용-죽음의 손아귀-죽음의 진군-제어",
       "type": "synergy",
       "synergyType": "shared_grip_mobility_control",
       "participants": [
@@ -1043,7 +1043,7 @@
     },
     "deathknight_blood_caress_bone_shield": {
       "id": "deathknight_blood_caress_bone_shield",
-      "name": "죽음의마수-골수분쇄-원거리보호막",
+      "name": "죽음의 마수-골수분쇄-원거리 뼈의 보호막",
       "type": "synergy",
       "synergyType": "ranged-bone-shield-maintenance",
       "participants": [
@@ -1069,7 +1069,7 @@
     },
     "deathknight_blood_deathbringer_september_tuning": {
       "id": "deathknight_blood_deathbringer_september_tuning",
-      "name": "죽음의인도자-9월조정",
+      "name": "죽음의 인도자-9월 조정",
       "description": "9월 23일 혈기 전체 피해 6% 감소와 죽음의 일격 15% 상향을 전제로, 죽음의 인도자의 징표·몰살·영혼의 파도 및 조건부 특성 상향을 별도로 비교합니다. 수치를 단순 합산해 현재 영웅 특성 순위를 확정하지 않습니다.",
       "type": "synergy",
       "synergyType": "hero-talent-tuning",
@@ -1131,7 +1131,7 @@
     },
     "deathknight_blood_deadly_reach_death_strike": {
       "id": "deathknight_blood_deadly_reach_death_strike",
-      "name": "치명적인접촉-죽음의일격-추가대상",
+      "name": "치명적인 접촉-죽음의 일격-추가 대상",
       "description": "치명적인 접촉을 선택하면 죽음의 일격이 추가 적 2명에게 각각 주 대상 피해의 60%로 적중합니다. 9월 23일 공식 조정으로 기존 75%가 내려갔지만 주 대상 죽음의 일격 공격력은 별도로 15% 상향됐습니다. 회복 타이밍보다 추가 대상 피해만 우선하지 않습니다.",
       "type": "synergy",
       "synergyType": "death-strike-cleave",
@@ -2172,7 +2172,7 @@
     },
     "SY-DH-Devourer-MomentOfCraving-Eradicate": {
       "id": "SY-DH-Devourer-MomentOfCraving-Eradicate",
-      "name": "갈망의순간-박멸",
+      "name": "갈망의 순간-박멸",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2200,7 +2200,7 @@
     },
     "SY-DH-Devourer-Emptiness-SoulGlutton": {
       "id": "SY-DH-Devourer-Emptiness-SoulGlutton",
-      "name": "공백-영혼탐식",
+      "name": "공백-영혼 탐식",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -2385,7 +2385,7 @@
     },
     "SY-DH-Devourer-DevourersBite-Voidsurge": {
       "id": "SY-DH-Devourer-DevourersBite-Voidsurge",
-      "name": "포식자의이빨-공허쇄도",
+      "name": "포식자의 이빨-공허쇄도",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2412,7 +2412,7 @@
     },
     "SY-DH-Devourer-Midnight-VoidMetamorphosis": {
       "id": "SY-DH-Devourer-Midnight-VoidMetamorphosis",
-      "name": "한밤-공허탈태",
+      "name": "한밤-공허 탈태",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -2443,7 +2443,7 @@
     },
     "druid-common-barkskin-regrowth-wild-charge": {
       "id": "druid-common-barkskin-regrowth-wild-charge",
-      "name": "드루이드공용-나무껍질-재생-야생의돌진-생존기동",
+      "name": "나무 껍질-재생-야생의 돌진 생존기동",
       "type": "synergy",
       "synergyType": "survival-mobility",
       "participants": [
@@ -2483,7 +2483,7 @@
     },
     "druid-common-soothe-remove-corruption": {
       "id": "druid-common-soothe-remove-corruption",
-      "name": "드루이드공용-달래기-해제-전투유틸",
+      "name": "달래기-해제 전투 유틸",
       "type": "synergy",
       "synergyType": "dispels-enrage-control",
       "participants": [
@@ -2520,7 +2520,7 @@
     },
     "druid-common-moonfire-sunfire": {
       "id": "druid-common-moonfire-sunfire",
-      "name": "드루이드공용-달빛섬광-태양섬광-공용도트",
+      "name": "달빛섬광-태양섬광 공용 DoT",
       "type": "synergy",
       "synergyType": "shared-dot",
       "participants": [
@@ -2557,7 +2557,7 @@
     },
     "druid-common-mark-rebirth-roar": {
       "id": "druid-common-mark-rebirth-roar",
-      "name": "드루이드공용-야생의징표-환생-쇄도의포효-공격대유틸",
+      "name": "야생의 징표-환생-쇄도의 포효 공격대 유틸",
       "type": "synergy",
       "synergyType": "raid-utility",
       "participants": [
@@ -3116,7 +3116,7 @@
     },
     "SY-Druid-Feral-Berserk-Convoke-Frenzy": {
       "id": "SY-Druid-Feral-Berserk-Convoke-Frenzy",
-      "name": "광폭화-영혼소집-야성의광기",
+      "name": "광폭화와 영혼 소집의 자원 연결",
       "description": "광폭화로 생성과 소비를 빠르게 돌리면서 도려내기가 남아 있는 대상에게 영혼 소집을 쓴다. 낮은 연계 점수가 유리하지만 완벽한 0점을 기다리며 쿨다운 사용을 계속 미루지는 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3153,7 +3153,7 @@
     },
     "feral-덩굴-흉포한이빨-폭발": {
       "id": "feral-덩굴-흉포한이빨-폭발",
-      "name": "덩굴-흉포한이빨-폭발",
+      "name": "덩굴 대상의 이빨과 광역 폭발",
       "description": "야생추적자는 덩굴이 붙은 대상의 이빨로 폭발하는 성장물을 활용한다. 식재로 덩굴을 붙일 기회와 광분증의 자동 폭발은 별도 조건이며, 폭발 횟수를 전부 수동 이빨 성공 횟수로 세지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3187,7 +3187,7 @@
     },
     "SY-Druid-Feral-ThrivingGrowth-Bleeds": {
       "id": "SY-Druid-Feral-ThrivingGrowth-Bleeds",
-      "name": "번성하는성장물-출혈",
+      "name": "출혈에서 자라는 피바라미 덩굴",
       "description": "야생추적자는 갈퀴 발톱과 도려내기의 주기 피해로 피바라미 덩굴을 만든다. 이중 발톱 갈퀴는 적용 대상을 넓히고, 활력의 덩굴은 덩굴이 붙은 대상에 대한 피해를 강화한다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3224,7 +3224,7 @@
     },
     "SY-Druid-Feral-UnseenPredator-FerociousBite": {
       "id": "SY-Druid-Feral-UnseenPredator-FerociousBite",
-      "name": "보이지않는포식자-흉포한이빨",
+      "name": "보이지 않는 포식자-흉포한 이빨",
       "description": "흉포한 이빨의 연계 점수에 따라 보이지 않는 공격이 자동 발동한다. 단일의 보이지 않는 서슬은 남은 출혈 피해를 합산하고, 광역의 보이지 않는 휘둘러치기는 별도 자동 공격이다. 두 효과는 직접 시전 버튼이 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3259,7 +3259,7 @@
     },
     "feral-시즌2-광폭화-할라지의격노": {
       "id": "feral-시즌2-광폭화-할라지의격노",
-      "name": "시즌2-광폭화-할라지의격노",
+      "name": "광폭화의 마무리가 남기는 할라지의 격노",
       "description": "시즌 2 4세트는 광폭화·화신을 10초 늘리고, 그 안에서 사용한 마무리 공격의 유효 점수는 종료 후 할라지의 격노 시간으로 이어진다. 극딜이 끝난 뒤에도 공격할 수 있는 구간에 쿨다운을 배정한다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3296,7 +3296,7 @@
     },
     "feral-원시분노-광역출혈": {
       "id": "feral-원시분노-광역출혈",
-      "name": "원시분노-광역출혈",
+      "name": "원시 분노가 여는 광역 마무리",
       "description": "원시 분노로 여러 적에게 도려내기를 걸면 무료 흉포한 이빨 발동 기회와 흩뿌려진 선혈 보상을 함께 얻는다. 다음 출혈 갱신에 필요한 점수를 남길 수 있을 때 일반 이빨로 넘어간다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3332,7 +3332,7 @@
     },
     "feral-정점-호랑이의분노-생성기": {
       "id": "feral-정점-호랑이의분노-생성기",
-      "name": "정점-호랑이의분노-생성기",
+      "name": "호랑이의 분노 뒤 두 생성기",
       "description": "마지막 보이지 않는 포식자 노드는 호랑이의 분노 뒤 두 생성기에 최대 강도의 보이지 않는 공격을 붙인다. 단일 빠른 시작에서 호랑이의 분노를 전투 전에 쓰는 이유가 생기며, 자동 후속 공격을 따로 누르지는 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3371,7 +3371,7 @@
     },
     "feral-찢어발기기-섬뜩한상처": {
       "id": "feral-찢어발기기-섬뜩한상처",
-      "name": "찢어발기기-섬뜩한상처",
+      "name": "찢어발기기의 전방 공격과 상처",
       "description": "발톱의 드루이드는 자동 공격, 첫 전투 중 호랑이의 분노, 광폭화 중 생성기 발동으로 이빨을 찢어발기기로 바꾼다. 실제 전방 공격을 적에게 맞혀 섬뜩한 상처를 붙이며 자동 변환과 실제 시전을 구분한다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3404,7 +3404,7 @@
     },
     "feral-출혈-흉포한이빨": {
       "id": "feral-출혈-흉포한이빨",
-      "name": "출혈-흉포한이빨",
+      "name": "도려내기와 무료·일반 이빨",
       "description": "도려내기는 무료 이빨 발동 기반이며 이빨은 칼날이빨로 대상의 지속 피해를 강화한다. 무료 발동은 5점·기력 50을 기다리지 않고, 일반 이빨은 필요한 출혈 갱신과 자원을 확보한 뒤 쓴다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3442,7 +3442,7 @@
     },
     "feral-표범의기만-연계점수": {
       "id": "feral-표범의기만-연계점수",
-      "name": "표범의기만-연계점수",
+      "name": "표범의 기만 이후 즉시 마무리 판단",
       "description": "생성 도중 표범의 기만이 점수를 채우면 다음 입력을 마무리 공격으로 바꾼다. 광폭화의 초과 점수 보관과 터져 나오는 탄력은 일부 낭비를 보상할 뿐, 생성기를 무조건 두 번 예약할 이유가 아니다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3480,7 +3480,7 @@
     },
     "SY-Druid-Feral-TigersTenacity-Bleeds": {
       "id": "SY-Druid-Feral-TigersTenacity-Bleeds",
-      "name": "호랑이의끈기-출혈",
+      "name": "호랑이의 끈기와 마무리 후 1점",
       "description": "호랑이의 끈기는 호랑이의 분노를 강화하고 다음 세 마무리 공격 뒤 연계 점수를 한 점씩 돌려준다. 출혈 강화와 다음 생성 횟수 변화가 함께 일어나므로 마무리 후 점수를 다시 확인한다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3516,7 +3516,7 @@
     },
     "SY-Druid-Feral-TigersFury-BleedSnapshot": {
       "id": "SY-Druid-Feral-TigersFury-BleedSnapshot",
-      "name": "호랑이의분노-출혈스냅샷",
+      "name": "호랑이의 분노-출혈 스냅샷",
       "description": "호랑이의 분노 중 새 출혈은 강화 상태를 보존한다. 은신 갈퀴 발톱의 암습의 일격 보정도 출혈에 남지만, 기습 공격의 직접 피해 강화와는 다르다. 도려내기는 강화만을 이유로 팬데믹 전에 덮어쓰지 않는다.",
       "type": "synergy",
       "synergyType": "unknown",
@@ -3550,7 +3550,7 @@
     },
     "SY-Druid-Balance-BoundlessMoonlight-FuryOfElune": {
       "id": "SY-Druid-Balance-BoundlessMoonlight-FuryOfElune",
-      "name": "끝없는달빛-엘룬의분노",
+      "name": "끝없는 달빛-엘룬의 분노",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -3643,7 +3643,7 @@
     },
     "SY-Druid-Balance-AscendantEclipses-Spenders": {
       "id": "SY-Druid-Balance-AscendantEclipses-Spenders",
-      "name": "승천자의일월식-소비기",
+      "name": "승천자의 일월식-천공의 힘 소비기",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3683,7 +3683,7 @@
     },
     "SY-Druid-Balance-AetherialKindling-Starfall": {
       "id": "SY-Druid-Balance-AetherialKindling-Starfall",
-      "name": "에테르덧불-별똥별",
+      "name": "에테르 덧불-별똥별",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [],
@@ -3896,7 +3896,7 @@
     },
     "SY-restoration-overgrowth-natures-swiftness-regrowth": {
       "id": "SY-restoration-overgrowth-natures-swiftness-regrowth",
-      "name": "과성장-자연의신속함-재생",
+      "name": "과성장 - 자연의 신속함 - 재생",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3930,7 +3930,7 @@
     },
     "SY-restoration-dream-surge-grove-guardians": {
       "id": "SY-restoration-dream-surge-grove-guardians",
-      "name": "꿈의쇄도-숲수호자",
+      "name": "꿈의 쇄도 - 숲 수호자",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3964,7 +3964,7 @@
     },
     "SY-restoration-thriving-growth-sustain": {
       "id": "SY-restoration-thriving-growth-sustain",
-      "name": "번성하는성장물-지속치유",
+      "name": "번성하는 성장물 - 지속 치유",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -3999,7 +3999,7 @@
     },
     "SY-restoration-everbloom-lifebloom": {
       "id": "SY-restoration-everbloom-lifebloom",
-      "name": "상록숲-피어나는생명",
+      "name": "상록숲 - 피어나는 생명",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4034,7 +4034,7 @@
     },
     "SY-restoration-verdant-infusion-swiftmend": {
       "id": "SY-restoration-verdant-infusion-swiftmend",
-      "name": "신록주입-신속한치유",
+      "name": "신록 주입 - 신속한 치유",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4069,7 +4069,7 @@
     },
     "SY-restoration-convoke-grove-wild-growth": {
       "id": "SY-restoration-convoke-grove-wild-growth",
-      "name": "영혼소집-숲수호자-급속성장",
+      "name": "영혼 소집 - 숲 수호자 - 급속 성장",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4105,7 +4105,7 @@
     },
     "SY-restoration-flash-of-clarity-clearcasting-regrowth": {
       "id": "SY-restoration-flash-of-clarity-clearcasting-regrowth",
-      "name": "청명의섬광-번뜩임-재생",
+      "name": "청명의 섬광 - 번뜩임 - 재생",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4138,7 +4138,7 @@
     },
     "SY-restoration-abundance-rejuvenation-regrowth": {
       "id": "SY-restoration-abundance-rejuvenation-regrowth",
-      "name": "풍요-회복-재생",
+      "name": "풍요 - 회복 - 재생",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4173,7 +4173,7 @@
     },
     "SY-restoration-lifebloom-swiftmend": {
       "id": "SY-restoration-lifebloom-swiftmend",
-      "name": "피어나는생명-신속한치유",
+      "name": "피어나는 생명 - 신속한 치유",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -4209,7 +4209,7 @@
     },
     "SY-restoration-rejuvenation-wild-growth-flourish": {
       "id": "SY-restoration-rejuvenation-wild-growth-flourish",
-      "name": "회복-급속성장-번성",
+      "name": "회복 - 급속 성장 - 번성",
       "type": "synergy",
       "synergyType": "unknown",
       "participants": [
@@ -5344,7 +5344,7 @@
     },
     "hunter_hero_sentinel_moonstorm_lunar": {
       "id": "hunter_hero_sentinel_moonstorm_lunar",
-      "name": "영웅특성-파수꾼-달의폭풍",
+      "name": "파수꾼 표식 적용과 소비",
       "description": "파수꾼은 사격의 정밀 사격 소비 또는 생존의 창끝 소비에서 확률적으로 표식을 준비한다. 표식 적용은 달의 축복에 의한 전문화별 재사용 대기시간 회복, 표식 소비는 달의 폭풍과 비전의 갈퀴발톱에 의한 추가 피해로 이어진다. 두 사건을 구분하며 무리의 지도자의 치명적인 가시는 이 관계에 속하지 않는다.",
       "type": "synergy",
       "synergyType": "hero_talent_sentinel",
@@ -6903,7 +6903,7 @@
     },
     "mage_common_frostfire_dual_school": {
       "id": "mage_common_frostfire_dual_school",
-      "name": "Frostfire-얼음불꽃화살-이중속성",
+      "name": "서리불꽃: 기본 주문과 반대 속성 후속",
       "description": "얼음불꽃 화살이 전문화의 기본 주문을 대체한다. 등온 핵은 유성과 혜성 폭풍을 연결하고 급속 냉동화상은 서리불꽃 강화를 제공한다.",
       "type": "synergy",
       "synergyType": "frostfire_hero_tree",
@@ -6936,7 +6936,7 @@
     },
     "mage_common_spellslinger_splinter_orb_chain": {
       "id": "mage_common_spellslinger_splinter_orb_chain",
-      "name": "Spellslinger-쇄편-구슬-연쇄",
+      "name": "주문술사 쇄편 생성과 구슬 회복",
       "description": "쇄편 생성·소비·직접 적중이 전문화별 구슬 재사용과 자원 생성으로 연결된다. 비전과 냉기의 실제 주문은 각 전문화 관계에서 따로 연결한다.",
       "type": "synergy",
       "synergyType": "spellslinger_hero_tree",
@@ -6967,7 +6967,7 @@
     },
     "mage_common_sunfury_spellfire_phoenix": {
       "id": "mage_common_sunfury_spellfire_phoenix",
-      "name": "Sunfury-비전화염구슬-비전불사조",
+      "name": "성난태양: 구슬 준비와 불사조 후속",
       "description": "비전화염 구슬을 준비한 뒤 비전 쇄도 또는 발화로 불사조를 부른다. 종료 후 알라르의 기억은 전문화마다 다른 후속 버프를 제공한다.",
       "type": "synergy",
       "synergyType": "sunfury_hero_tree",
@@ -7004,7 +7004,7 @@
     },
     "mage_common_defensive_mobility_matrix": {
       "id": "mage_common_defensive_mobility_matrix",
-      "name": "마법사공용-시간돌리기-얼음방패-생존",
+      "name": "마법사 공용 시간 돌리기-얼음 방패 생존",
       "type": "synergy",
       "synergyType": "defensive_mobility_matrix",
       "participants": [
@@ -7057,7 +7057,7 @@
     },
     "mage_common_raid_mplus_utility": {
       "id": "mage_common_raid_mplus_utility",
-      "name": "마법사공용-시간왜곡-마법차단-유틸",
+      "name": "마법사 공용 시간 왜곡-마법 차단 유틸",
       "type": "synergy",
       "synergyType": "raid_mythic_plus_utility",
       "participants": [
@@ -7907,7 +7907,7 @@
     },
     "SY-MAGE-FIRE-FIRED-UP-COMBUSTION": {
       "id": "SY-MAGE-FIRE-FIRED-UP-COMBUSTION",
-      "name": "광열-발화",
+      "name": "소비 → 광열 → 화염 작렬 회복·발화 연장",
       "description": "몰아치는 열기! 소비가 광열을 만들고 중간 정점 특성은 화염 작렬을 회복시킨다. 마지막 정점 특성은 발화 중 광열 획득마다 발화를 1초 연장한다. 12.1의 기본 광열은 2%·8초이며 발화 중 발동 확률은 반복할수록 감소한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -7945,7 +7945,7 @@
     },
     "SY-MAGE-FIRE-SPHERE-METEORITE": {
       "id": "SY-MAGE-FIRE-SPHERE-METEORITE",
-      "name": "구슬-광채-화염작렬회복",
+      "name": "구슬 생성 → 화염 작렬 파편 → 충전 회복",
       "description": "구슬을 생성하면 다음 화염 작렬이 영광스러운 광채의 파편을 부른다. 화염계 선택 시 파편 착탄은 화염 작렬 재사용을 줄이며 비전화염 연사는 파편 피해와 기본 재사용을 보조한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -7976,7 +7976,7 @@
     },
     "SY-MAGE-FIRE-COMBUSTION-HOT-STREAK": {
       "id": "SY-MAGE-FIRE-COMBUSTION-HOT-STREAK",
-      "name": "발화-몰아치는열기",
+      "name": "발화 치명타 → 열기 전환 → 즉시 소비",
       "description": "발화의 치명타 보장은 열기 생성과 몰아치는 열기! 전환을 빠르게 만든다. 화염 작렬은 시전 중에도 사용할 수 있고 소비기는 대상 목적에 따라 불덩이 작렬 또는 불기둥으로 나뉜다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8013,7 +8013,7 @@
     },
     "SY-MAGE-FIRE-FLAMESTRIKE-IGNITE-AOE": {
       "id": "SY-MAGE-FIRE-FLAMESTRIKE-IGNITE-AOE",
-      "name": "불기둥-점화-작열광역",
+      "name": "불기둥 소비 → 작열 누적·다음 열기",
       "description": "불꽃의 연료를 배워야 불기둥이 열기 연쇄에 참여한다. 몰아치는 열기! 소비와 점화는 불기둥의 작열 기여를 높인다. 광역 전환은 총 피해뿐 아니라 우선 대상의 생존 시간까지 포함해 결정한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8049,7 +8049,7 @@
     },
     "SY-MAGE-FIRE-PHOENIX-MANA-CASCADE": {
       "id": "SY-MAGE-FIRE-PHOENIX-MANA-CASCADE",
-      "name": "불사조-영감의재-가속",
+      "name": "구슬 강화 주문 → 영감의 재 → 가속 중첩",
       "description": "태양길잡이 전서로 늘린 불사조 강화 주문은 영감의 재를 통해 쏟아지는 마나를 더 제공한다. 일반 주문은 1중첩, 강화 주문은 추가 1중첩이다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8077,7 +8077,7 @@
     },
     "SY-MAGE-FIRE-SCORCH-EXECUTE": {
       "id": "SY-MAGE-FIRE-SCORCH-EXECUTE",
-      "name": "불태우기-가열-마무리",
+      "name": "35% 피해 증가와 30% 불태우기 조건 분리",
       "description": "타오르는 격노는 35% 미만 피해 증가, 가열은 30% 미만 화염구·불태우기 강화다. 일렁이는 열기는 다음 불태우기를 30% 미만 대상처럼 취급하게 한다. 세 효과는 같은 경계나 같은 버프가 아니다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8111,7 +8111,7 @@
     },
     "SY-MAGE-FIRE-SUNFURY-ORB-PHOENIX": {
       "id": "SY-MAGE-FIRE-SUNFURY-ORB-PHOENIX",
-      "name": "비전화염구슬-비전불사조",
+      "name": "구슬 준비 → 발화 소환 → 후속 이상 고열",
       "description": "몰아치는 열기! 소비와 비전투 대기로 구슬을 준비한다. 발화가 불사조를 소환하면 태양길잡이 전서가 구슬을 소비해 강화 주문을 더한다. 불사조가 끝나면 알라르의 기억의 이상 고열로 즉시 소비를 이어간다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8145,7 +8145,7 @@
     },
     "SY-MAGE-FIRE-FROSTFIRE-DUALITY": {
       "id": "SY-MAGE-FIRE-FROSTFIRE-DUALITY",
-      "name": "서리불꽃-양면성-소비",
+      "name": "불덩이 작렬 → 자동 혹한의 쐐기 → 작열",
       "description": "양면성은 불덩이 작렬에 확률적 혹한의 쐐기를 더하고 원소 출현은 그 피해를 작열에 연결한다. 불기둥으로 바꿀 때는 이 단일 대상 연계가 같은 방식으로 발생하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8177,7 +8177,7 @@
     },
     "SY-MAGE-FIRE-FROSTFIRE-METEOR": {
       "id": "SY-MAGE-FIRE-FROSTFIRE-METEOR",
-      "name": "서리불꽃-유성-자동공격",
+      "name": "유성 → 혜성 폭풍·강화 화살 → 작열",
       "description": "등온 핵은 유성에 혜성 폭풍을 더하고 급속 냉동화상은 서리불꽃 강화를 제공한다. 원소 출현이 있으면 혜성 폭풍도 작열을 적용한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8208,7 +8208,7 @@
     },
     "SY-MAGE-FIRE-SUNFURY-PYROCLASM": {
       "id": "SY-MAGE-FIRE-SUNFURY-PYROCLASM",
-      "name": "성난태양-유성-화염파열",
+      "name": "유성 → 화염 파열 확보 → 직접 불덩이 작렬",
       "description": "성난태양 처형자를 선택하면 유성이 배운 화염 파열 버프를 제공하고 그 피해 보너스를 강화한다. 시즌 2의 직접 시전 강화와 자연스럽게 연결된다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8241,7 +8241,7 @@
     },
     "SY-MAGE-FIRE-HEATING-UP-FIRE-BLAST": {
       "id": "SY-MAGE-FIRE-HEATING-UP-FIRE-BLAST",
-      "name": "열기-화염작렬",
+      "name": "화염구 시전 중 전환 → 종료에 불덩이 작렬",
       "description": "화염구를 시전하는 중 열기를 화염 작렬로 바꾸고 시전 종료에 즉시 불덩이 작렬을 연결한다. 두 공격이 함께 치명타가 되면 다음 몰아치는 열기!가 바로 생길 수 있다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8276,7 +8276,7 @@
     },
     "SY-MAGE-FIRE-METEOR-COMBUSTION": {
       "id": "SY-MAGE-FIRE-METEOR-COMBUSTION",
-      "name": "유성-발화-폭발지대",
+      "name": "30초 유성과 1분 발화의 착탄 정렬",
       "description": "폭발 지대가 있으면 유성은 30초, 덧불이 있으면 발화는 1분이다. 발화 중 유성과 중간 유성을 계획하되 유성을 오래 미뤄 다음 발화의 착탄을 잃지 않는다. 완전 연소는 종료 시 남은 작열을 폭발시킨다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8312,7 +8312,7 @@
     },
     "SY-MAGE-FIRE-BLAZING-BARRIER-SURVIVAL": {
       "id": "SY-MAGE-FIRE-BLAZING-BARRIER-SURVIVAL",
-      "name": "이글거리는방벽-화염생존",
+      "name": "방벽 추가 충전 → 흡수 후 회복",
       "description": "이글거리는 방벽 연마는 추가 충전과 흡수량 비례 회복을 제공한다. 강화된 수호는 광역 피해를 줄이며, 영웅 특성의 주입된 수호물 또는 순간의 장애물일 뿐은 서로 다른 방어 보조다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8346,7 +8346,7 @@
     },
     "SY-MAGE-FIRE-HYPERTHERMIA-PYROMANIAC": {
       "id": "SY-MAGE-FIRE-HYPERTHERMIA-PYROMANIAC",
-      "name": "이상고열-광기의화염술사",
+      "name": "즉시 시전과 실제 몰아치는 열기 소비 구분",
       "description": "이상 고열은 소비기를 즉시 시전·확정 치명타로 만들지만 몰아치는 열기! 소비 자체를 항상 보장하지는 않는다. 실제 소비는 격앙의 작열 강화와 광기의 화염술사 자동 반복 판정으로 연결된다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8385,7 +8385,7 @@
     },
     "SY-MAGE-FIRE-SPONTANEOUS-COMBUSTION": {
       "id": "SY-MAGE-FIRE-SPONTANEOUS-COMBUSTION",
-      "name": "자연발화-발화",
+      "name": "발화 진입 → 화염 작렬 충전 회복",
       "description": "자연 발화는 발화를 사용했을 때 화염 작렬 충전을 회복한다. 충전 최대치를 늘리는 꺼지지 않는 불꽃·열성적인 깜빡임과 역할이 다르다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8421,7 +8421,7 @@
     },
     "SY-MAGE-FIRE-FROM-ASHES-FIRE-BLAST": {
       "id": "SY-MAGE-FIRE-FROM-ASHES-FIRE-BLAST",
-      "name": "잿불의생명-화염작렬",
+      "name": "평시 직접 피해 → 다음 화염 작렬 회복",
       "description": "잿불의 생명은 직접 피해로 화염 작렬 재사용을 줄인다. 성난태양의 화염계는 화염구가 만든 파편 착탄에서 추가 회복을 제공한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8456,7 +8456,7 @@
     },
     "SY-MAGE-FIRE-FIREFALL-HOT-STREAK": {
       "id": "SY-MAGE-FIRE-FIREFALL-HOT-STREAK",
-      "name": "화염파열-몰아치는열기",
+      "name": "즉시 소비로 화염 파열 생성 → 비즉시 공격 강화",
       "description": "몰아치는 열기! 소비로 화염 파열을 얻고 비즉시 불덩이 작렬 또는 불기둥으로 소모한다. 버프는 20초·최대 2중첩이며 시즌 2 세트는 이 직접 시전을 강화한다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8495,7 +8495,7 @@
     },
     "SY-MAGE-FIRE-PASSIVE-CRIT-DAMAGE": {
       "id": "SY-MAGE-FIRE-PASSIVE-CRIT-DAMAGE",
-      "name": "화염패시브-치명타-피해보정",
+      "name": "발화의 치명타와 두 선택 노드의 보상",
       "description": "발화는 확정 치명타를 제공하고 격앙된 주문은 연속 치명타 피해를 강화한다. 끓어오르는 노여움은 특화·작열, 모두 불사르리는 주문 피해로 보상하지만 둘은 같은 선택 노드다.",
       "type": "synergy",
       "synergyType": "conditional-rotation",
@@ -8531,7 +8531,7 @@
     },
     "monk_common_mobility_interrupt_control_cleanse": {
       "id": "monk_common_mobility_interrupt_control_cleanse",
-      "name": "수도사공용-기동-차단-제어-해제",
+      "name": "수도사 공용: 이동과 적 시전 제어",
       "description": "이동과 제어는 적의 공격을 피하거나 끊는 대응입니다. 자기 방어기와 같은 피해 감소로 합산하지 않고 대상의 차단·제어 가능 여부를 확인합니다.",
       "type": "synergy",
       "synergyType": "mobility-control-utility",
@@ -8572,7 +8572,7 @@
     },
     "monk_common_conduit_celestial_cycle": {
       "id": "monk_common_conduit_celestial_cycle",
-      "name": "영웅특성-Conduit-천신합일-천신순환",
+      "name": "영웅 특성-Conduit-천신합일-천신 순환",
       "type": "synergy",
       "synergyType": "conduit-of-the-celestials-shared",
       "participants": [
@@ -8611,7 +8611,7 @@
     },
     "monk_common_master_harmony_store_release": {
       "id": "monk_common_master_harmony_store_release",
-      "name": "영웅특성-MasterOfHarmony-조화저장-방출",
+      "name": "조화의 형: 활력과 잠재된 기운 구분",
       "description": "활력 저장·소비와 잠재된 기운 중첩은 별개입니다. 양조는 천신주 계열, 운무는 집중의 천둥 차가 활력 소비를 열고 후속 공격·치유가 실제 보상을 만듭니다.",
       "type": "synergy",
       "synergyType": "master-of-harmony-shared",
@@ -8642,7 +8642,7 @@
     },
     "monk_common_shado_pan_flurry_climax": {
       "id": "monk_common_shado_pan_flurry_climax",
-      "name": "영웅특성-ShadoPan-질풍격-정점",
+      "name": "음영파: 자동 공격 충전과 질풍격 방출",
       "description": "자동 공격으로 모은 질풍격은 양조의 맥주통 휘두르기 또는 풍운의 분노의 주먹으로 방출합니다. 주요 소환·등선 중에는 장벽의 지혜의 추가 발동을 확인합니다.",
       "type": "synergy",
       "synergyType": "shado-pan-shared-flurry",
@@ -9284,7 +9284,7 @@
     },
     "monk_mistweaver_life_cocoon_external": {
       "id": "monk_mistweaver_life_cocoon_external",
-      "name": "기의고치-번데기-외부생존기",
+      "name": "기의 고치-원기 회복-마나 차",
       "type": "synergy",
       "synergyType": "external_defensive_and_mana",
       "participants": [
@@ -9320,7 +9320,7 @@
     },
     "monk_mistweaver_mana_tea_serenity": {
       "id": "monk_mistweaver_mana_tea_serenity",
-      "name": "마나차-평안의차",
+      "name": "마나 차-평안의 차",
       "type": "synergy",
       "synergyType": "mana_recovery_window",
       "participants": [
@@ -9373,7 +9373,7 @@
     },
     "monk_mistweaver_renewing_mist_vivify": {
       "id": "monk_mistweaver_renewing_mist_vivify",
-      "name": "소생의안개-생기충전확산",
+      "name": "소생의 안개-생기 충전 확산",
       "type": "synergy",
       "synergyType": "renewing_mist_vivify_spread",
       "participants": [
@@ -9430,7 +9430,7 @@
     },
     "monk_mistweaver_conduit_jade_heart": {
       "id": "monk_mistweaver_conduit_jade_heart",
-      "name": "옥룡의마음-질풍차기",
+      "name": "옥룡의 마음-질풍차기",
       "type": "synergy",
       "synergyType": "conduit_of_celestials_window",
       "participants": [
@@ -9470,7 +9470,7 @@
     },
     "monk_mistweaver_master_of_harmony_stored_healing": {
       "id": "monk_mistweaver_master_of_harmony_stored_healing",
-      "name": "조화의형-현신-저장치유",
+      "name": "조화의 형-현신-저장 치유",
       "type": "synergy",
       "synergyType": "master_of_harmony_stored_healing",
       "participants": [
@@ -9521,7 +9521,7 @@
     },
     "monk_mistweaver_rushing_wind_kick_melee_healing": {
       "id": "monk_mistweaver_rushing_wind_kick_melee_healing",
-      "name": "질풍차기-고대의가르침",
+      "name": "질풍차기-고대의 가르침",
       "type": "synergy",
       "synergyType": "raid_mythic_plus_choice",
       "participants": [
@@ -9617,7 +9617,7 @@
     },
     "monk_mistweaver_enveloping_single_target_recovery": {
       "id": "monk_mistweaver_enveloping_single_target_recovery",
-      "name": "포용의안개-단일대상복구",
+      "name": "포용의 안개-단일 대상 복구",
       "type": "synergy",
       "synergyType": "single_target_recovery",
       "participants": [
@@ -10152,7 +10152,7 @@
     },
     "paladin_common_herald_sun_dawnlight": {
       "id": "paladin_common_herald_sun_dawnlight",
-      "name": "영웅특성-Herald-태양의사자-새벽빛",
+      "name": "영웅 특성-Herald-태양의 사자-새벽빛",
       "type": "synergy",
       "synergyType": "herald-of-the-sun-shared",
       "participants": [
@@ -11090,7 +11090,7 @@
     },
     "paladin_retribution_templar_hammer_of_light": {
       "id": "paladin_retribution_templar_hammer_of_light",
-      "name": "기사단-빛의망치",
+      "name": "기사단: 파멸의 재에서 빛의 망치",
       "description": "파멸의 재가 빛의 망치를 20초 동안 열고, 현재 비용 3개로 시전하면 격동하는 천상의 자동 망치가 시작된다. 보호의 천상의 종 해금 조건을 징벌에 적용하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11119,7 +11119,7 @@
     },
     "paladin_retribution_기사단-생성기-천상연장": {
       "id": "paladin_retribution_기사단-생성기-천상연장",
-      "name": "기사단-생성기-천상연장",
+      "name": "기사단의 연장 생성기",
       "description": "격동하는 천상 중 징벌의 심판의 칼날과 천벌의 망치는 지속시간을 1초 연장한다. 일반 심판은 해당하지 않는다. 연장을 위해 자원을 계속 넘기기보다 필요한 소비와 생성기를 이어 간다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11150,7 +11150,7 @@
     },
     "paladin_retribution_spender_selection": {
       "id": "paladin_retribution_spender_selection",
-      "name": "기사단의선고-천상의폭풍",
+      "name": "기본 소비기와 대체 기술",
       "description": "최후의 선고는 기사단의 선고를 대체하는 실제 단일 버튼이다. 기본 2대상 이상에서는 천상의 폭풍을 사용하되 현재 시즌 2 교차 소비와 최고천의 유산 예외를 함께 확인한다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11181,7 +11181,7 @@
     },
     "paladin_retribution_빛을향하여-망치-자동검": {
       "id": "paladin_retribution_빛을향하여-망치-자동검",
-      "name": "빛을향하여-망치-자동검",
+      "name": "날개 중 망치가 검과 자원을 함께 생성",
       "description": "태양의 사자의 천벌의 망치가 날개 중 심판의 칼날을 100% 효율로 자동 시전한다. 신성한 검의 추가 자원과 전쟁의 기술 강화 회수도 함께 보며 수동 검 횟수만 비교하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11214,7 +11214,7 @@
     },
     "paladin_retribution_execution_sentence_wings_burst": {
       "id": "paladin_retribution_execution_sentence_wings_burst",
-      "name": "사형선고-응징의격노-극딜창",
+      "name": "사형 선고: 처음 적중한 적의 광역 피해",
       "description": "날개 안 사형 선고가 처음 적중한 주위 10야드 적에게 입힌 신성 피해를 10초 동안 누적한다. 처음 맞은 여러 적의 광역 피해도 주 대상 결산에 포함되므로 표식 후 광역을 중단하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11245,7 +11245,7 @@
     },
     "paladin_retribution_새벽빛-연장-광선": {
       "id": "paladin_retribution_새벽빛-연장-광선",
-      "name": "새벽빛-연장-광선",
+      "name": "새벽빛 연장과 실제 광선 적중",
       "description": "무한한 광채는 새벽빛 대상에 소비기를 맞혀 시간을 늘리고 두 새벽빛에 폭풍을 함께 맞히면 추가 연장을 준다. 태양의 화신은 자신과 대상 사이 선 통과가 필요하므로 유지시간과 실제 광선 적중을 따로 본다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11277,7 +11277,7 @@
     },
     "paladin_retribution_성전-응징의격노": {
       "id": "paladin_retribution_성전-응징의격노",
-      "name": "성전-응징의격노",
+      "name": "성전: 날개 중 자원 소비와 가속",
       "description": "성전은 날개의 별도 버튼이 아니라 신성한 힘 소비로 가속을 올리는 특성이다. 현재 2%에서 시작해 소비량당 2%, 최대 20%이며 중첩을 위해 큰 쿨기 사용을 과도하게 늦추지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11311,7 +11311,7 @@
     },
     "paladin_retribution_crusader_strike_builder": {
       "id": "paladin_retribution_crusader_strike_builder",
-      "name": "성전사의일격-기본생성기",
+      "name": "성전의 강타: 자동 공격과 발동",
       "description": "성전의 강타 선택 시 수동 성전사의 일격은 자동 공격으로 대체된다. 근접 공격이 끊기면 자원과 전쟁의 기술 기회가 함께 줄며, 긴 사정거리 소비기가 닿는다고 자동 공격도 적중하는 것은 아니다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11343,7 +11343,7 @@
     },
     "paladin_retribution_시즌2-광역-교차소비": {
       "id": "paladin_retribution_시즌2-광역-교차소비",
-      "name": "시즌2-광역-교차소비",
+      "name": "시즌 2: 폭풍에서 선고로",
       "description": "무료 천상의 폭풍에서 만든 심판관은 최후의 선고 또는 현재 사용 가능한 빛의 망치로 회수한다. 광역에서도 생기는 단일 소비 조건이며 준비 효과 자체가 다음 공격을 무료로 만드는 것은 아니다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11378,7 +11378,7 @@
     },
     "paladin_retribution_시즌2-단일-교차소비": {
       "id": "paladin_retribution_시즌2-단일-교차소비",
-      "name": "시즌2-단일-교차소비",
+      "name": "시즌 2: 선고에서 폭풍으로",
       "description": "신성한 목적을 최후의 선고로 소비하면 다른 소비기인 천상의 폭풍이 심판관을 회수한다. 단일에서도 적용되며 최고천의 유산의 자동 폭풍이 이미 소비했다면 다시 수동 폭풍을 강제하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11412,7 +11412,7 @@
     },
     "paladin_retribution_consecration_aoe_support": {
       "id": "paladin_retribution_consecration_aoe_support",
-      "name": "신성화-광역-보강",
+      "name": "검에서 자동으로 생기는 신성화",
       "description": "신성화의 칼날은 심판의 칼날로 대상 아래 지면을 생성하며 10초 내부 재사용 대기시간이 있다. 동명 신성화 특성은 천상의 폭풍 적중 후 지면 피해를 강화하는 효과이지 직접 누르는 지면 버튼이 아니다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11444,7 +11444,7 @@
     },
     "paladin_retribution_judgment_spender_target": {
       "id": "paladin_retribution_judgment_spender_target",
-      "name": "심판-소모기-우선대상",
+      "name": "심판과 단일 소비의 대상",
       "description": "심판과 대영주의 진노는 대상의 상급 심판 및 특화 관련 효과로 이어진다. 현재 최후의 선고는 15% 확률로 심판을 초기화하므로 구형 천벌의 망치 초기화 설명을 쓰지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11478,7 +11478,7 @@
     },
     "paladin_retribution_blade_holy_power_engine": {
       "id": "paladin_retribution_blade_holy_power_engine",
-      "name": "심판의칼날-신성한힘",
+      "name": "검의 자원을 소비할 공간",
       "description": "신성한 검으로 심판의 칼날 자원 생성은 1개에서 2개가 된다. 현재 자원과 다음 자동 생성까지 확인해 최후의 선고·천상의 폭풍으로 소비하며 항상 5개까지 모으지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11512,7 +11512,7 @@
     },
     "paladin_retribution_art_of_war_blade_proc": {
       "id": "paladin_retribution_art_of_war_blade_proc",
-      "name": "전쟁의기술-심판의칼날-발동관리",
+      "name": "내면의 빛: 강화 두 중첩 회수",
       "description": "현재 전쟁의 기술은 406064이며 내면의 빛이 다음 검을 80% 강화하고 최대 두 중첩 저장을 허용한다. 마지막 노드는 검에 직선 피해를 추가하므로 강화 소실과 실제 경로 적중을 함께 본다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11546,7 +11546,7 @@
     },
     "paladin_retribution_burst_amp_wings_execution": {
       "id": "paladin_retribution_burst_amp_wings_execution",
-      "name": "징벌-극딜증폭-응징의격노-사형선고",
+      "name": "사형 선고 뒤 자원 반환",
       "description": "응징의 심판은 사형 선고 뒤 다음 소비기가 쓴 신성한 힘을 반환한다. 무료 시전과 달리 필요한 자원을 먼저 보유해야 하며, 소비 직후 돌아온 자원을 무시하고 생성기를 누르면 낭비한다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11581,7 +11581,7 @@
     },
     "paladin_retribution_shield_of_vengeance_survival_return": {
       "id": "paladin_retribution_shield_of_vengeance_survival_return",
-      "name": "징벌-복수의방패-생존-반격피해",
+      "name": "신의 가호에서 자동 흡수",
       "description": "실제 생존기 신의 가호에 복수의 방패 특성을 연결하면 피해 감소가 추가로 10%p 높아지고 흡수 효과가 자동으로 붙는다. 반격은 실제 흡수한 양을 나누며 정화나 검 생성과 억지로 직접 연결하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11613,7 +11613,7 @@
     },
     "paladin_retribution_consecration_flame_aoe_storm": {
       "id": "paladin_retribution_consecration_flame_aoe_storm",
-      "name": "징벌-신성화-불길-광역폭풍",
+      "name": "폭풍이 강화하는 자동 광역",
       "description": "천상의 폭풍의 신성화 특성은 해당 적이 받는 지면·천상의 망치 피해를 12초 강화한다. 빛의 수호자의 폭풍우는 별도 자동 파동이며 직접 소비기 횟수나 신성한 목적 기회를 한 번 더 만드는 것으로 세지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11646,7 +11646,7 @@
     },
     "paladin_retribution_judgment_highlord_priority": {
       "id": "paladin_retribution_judgment_highlord_priority",
-      "name": "징벌-심판-대영주-우선대상",
+      "name": "특화와 무궁한 심판 확률",
       "description": "특화에 따른 심판 추가 피해 확률을 무궁한 심판이 상대적으로 50% 높인다. 고정 50%p 증가가 아니며 실제 특화 평점에 따라 값이 달라진다. 추가 피해 이벤트를 직접 심판 시전으로 합산하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11678,7 +11678,7 @@
     },
     "paladin_retribution_blade_inner_light_sword_cluster": {
       "id": "paladin_retribution_blade_inner_light_sword_cluster",
-      "name": "징벌-심판의칼날-내면의빛-검축",
+      "name": "검의 직접 피해·정화·신성 증폭",
       "description": "강화 검의 직접·직선 피해와 정화 지속 피해는 별개다. 정화는 갱신 때 남은 피해를 이월하며 신성한 불길은 정화 대상의 신성 피해를 5% 높이므로 도트 만료만 기다리며 검을 늦추지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11712,7 +11712,7 @@
     },
     "paladin_retribution_hammer_of_wrath_wings_execute": {
       "id": "paladin_retribution_hammer_of_wrath_wings_execute",
-      "name": "천벌의망치-응징의격노-처형창",
+      "name": "날개 중 심판의 강화",
       "description": "천벌의 망치 특성은 응징의 격노 동안 심판을 24275의 천벌의 망치로 강화한다. 예전 처형 생명력 조건이 아니라 날개 상태와 충전이 기준이며 보호의 1241413을 사용하지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11744,7 +11744,7 @@
     },
     "paladin_retribution_최고천의유산-자동폭풍": {
       "id": "paladin_retribution_최고천의유산-자동폭풍",
-      "name": "최고천의유산-자동폭풍",
+      "name": "최고천의 유산: 선고 한 번과 자동 폭풍",
       "description": "날개가 다음 단일 소비기에 최고천의 유산을 준비한다. 최후의 선고가 125% 효율 폭풍을 자동으로 사용해 광역과 세트 교차 소비에 관여하므로 실제 버튼 한 번과 두 피해 효과를 구분한다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11778,7 +11778,7 @@
     },
     "paladin_retribution_태양의사자-새벽빛": {
       "id": "paladin_retribution_태양의사자-새벽빛",
-      "name": "태양의사자-새벽빛",
+      "name": "태양의 사자: 두 소비기로 새벽빛 배치",
       "description": "파멸의 재가 다음 두 신성한 힘 소비기에 새벽빛을 준비한다. 단일·광역 소비와 세트 조건을 지키면서 오래 살 대상에 적중시킨다. 신성의 천상의 종 준비 조건을 징벌에 가져오지 않는다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11810,7 +11810,7 @@
     },
     "paladin_retribution_wake_wings": {
       "id": "paladin_retribution_wake_wings",
-      "name": "파멸의재-응징의격노",
+      "name": "찬란한 영광: 수동 날개를 바꾸는 선택",
       "description": "찬란한 영광은 파멸의 재로 8초 날개를 부여하고 수동 날개를 없앤다. 공개 간소화 빌드에서 사형 선고 투자 대신 고르지만 같은 선택 노드인 것은 아니다. 사형 선고도 따로 골랐다면 표식 뒤 파멸의 재를 사용한다.",
       "type": "synergy",
       "synergyType": "conditional-mechanic",
@@ -11842,7 +11842,7 @@
     },
     "priest_common_archon_halo_power_cycle": {
       "id": "priest_common_archon_halo_power_cycle",
-      "name": "Archon-후광-마력순환",
+      "name": "Archon-후광-마력 순환",
       "type": "synergy",
       "synergyType": "archon_halo_power_window_router",
       "participants": [
@@ -11905,7 +11905,7 @@
     },
     "priest_common_voidweaver_rift_void_blast": {
       "id": "priest_common_voidweaver_rift_void_blast",
-      "name": "Voidweaver-혼돈의균열-공허폭발",
+      "name": "공허술사의 균열과 종료 효과",
       "description": "정신 분열로 균열을 열고 전문화별로 교체되는 공허의 폭발을 사용한다. 공허의 손길은 공허의 심장만 연장하며 망령은 균열 종료에 자동 소환된다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -11938,7 +11938,7 @@
     },
     "priest_common_desperate_prayer_fade_survival": {
       "id": "priest_common_desperate_prayer_fade_survival",
-      "name": "사제공용-구원의기도-소실-생존",
+      "name": "자기 회복과 조건부 피해 감소",
       "description": "구원의 기도는 일시적 최대 생명력과 회복, 반투명 형상을 선택한 소실은 피해 감소다. 보호의 빛은 자신에게 직접 치유한 조건을 확인한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -11971,7 +11971,7 @@
     },
     "priest_common_power_infusion_raid_utility": {
       "id": "priest_common_power_infusion_raid_utility",
-      "name": "사제공용-마력주입-공격대유틸",
+      "name": "아군 마력 주입과 자기 가속",
       "description": "태양 여사제의 쌍둥이를 선택하면 아군에게 마력 주입을 주면서 자신도 같은 가속을 받는다. 기본 마력 주입만으로 두 대상에게 항상 적용되는 것은 아니다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12001,7 +12001,7 @@
     },
     "priest_common_purify_mass_dispel_mythic_utility": {
       "id": "priest_common_purify_mass_dispel_mythic_utility",
-      "name": "사제공용-정화-대규모무효화-쐐기유틸",
+      "name": "대상 방향과 해제 유형",
       "description": "정화는 아군 해로운 마법, 정화 연마는 추가 질병, 마법 무효화는 적의 이로운 마법을 지운다. 대규모 무효화는 인원·범위·쿨다운·마나 조건을 따로 본다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12034,7 +12034,7 @@
     },
     "priest_common_oracle_predictive_safety": {
       "id": "priest_common_oracle_predictive_safety",
-      "name": "예언자-예측치유-안전망",
+      "name": "예언자의 전문화별 보호 연계",
       "description": "수양은 회개와 보호막, 신성은 회복의 기원을 중심으로 적용된다. 같은 영웅 특성이어도 발동 방향·추가 충전·자동 부여 기술을 전문화별로 구분한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12064,7 +12064,7 @@
     },
     "priest_discipline_pain_suppression_barrier": {
       "id": "priest_discipline_pain_suppression_barrier",
-      "name": "고통억제-방벽",
+      "name": "피해 유형과 선택 생존기",
       "description": "고통 억제는 기본 40%, 예견된 상황 선택 시 50% 감소다. 약자의 보호자/고통 변형, 방벽/궁극의 참회는 각각 선택 관계라 동시에 보유했다고 가정하지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12101,7 +12101,7 @@
     },
     "priest_discipline_rift_end": {
       "id": "priest_discipline_rift_end",
-      "name": "공허술사-종료후효과",
+      "name": "균열 종료 후 남는 효과",
       "description": "공허의 손길은 균열 종료 뒤 공허의 심장만 8초 남긴다. 공허의 망령은 자동 소환되지만 공허의 폭발 사용권이나 공허 주입이 같이 연장되는 것은 아니다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12132,7 +12132,7 @@
     },
     "priest_discipline_voidweaver_rift": {
       "id": "priest_discipline_voidweaver_rift",
-      "name": "공허술사-혼돈의균열",
+      "name": "균열 중 공허의 폭발",
       "description": "정신 분열로 균열을 연 뒤 성스러운 일격 대신 공허의 폭발을 사용한다. 수양의 실제 시전은 450215이며 암흑의 광기 생성 기술과 다르다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12165,7 +12165,7 @@
     },
     "priest_discipline_rift_penance": {
       "id": "priest_discipline_rift_penance",
-      "name": "공허술사-회개-폭발",
+      "name": "강화 회개와 후속 폭발",
       "description": "회개 화살은 공허 붕괴를 강화하고 공허 주입은 균열 중 회개·공허의 폭발의 속죄 전환을 높인다. 상급 성스러운 일격은 성스러운 일격 계열 시전으로 쌓는 별도 강화다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12204,7 +12204,7 @@
     },
     "priest_discipline_shield_reflect": {
       "id": "priest_discipline_shield_reflect",
-      "name": "공허의보호막-반사속죄",
+      "name": "흡수한 피해를 속죄로",
       "description": "마지막 정점이 있으면 공허의 보호막의 실제 흡수량 10%가 반사 피해와 속죄에 연결된다. 맞은 전체 피해나 사용 시점에 보인 보호막 최대량을 그대로 환산하지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12239,7 +12239,7 @@
     },
     "priest_discipline_radiance_bolts": {
       "id": "priest_discipline_radiance_bolts",
-      "name": "광휘-엄격한규율-회개",
+      "name": "광휘 뒤 강화 회개",
       "description": "광휘가 회개 추가 화살 사용권을 제공한다. 두 개의 사용권을 한 번의 회개에 합산하지 않고, 뒤 화살을 강화하는 신성 광선까지 고려해 채널을 사용한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12278,7 +12278,7 @@
     },
     "priest_discipline_ultimate": {
       "id": "priest_discipline_ultimate",
-      "name": "궁극의참회-대형속죄복구",
+      "name": "속죄 준비 후 궁극의 참회",
       "description": "공격 궁극의 참회 전에 속죄를 적용한다. 공허술사는 정신 분열로 균열을 열어 연계한다. 상승 중 보호막 예약은 타이밍을 익힌 뒤 사용하며 채널 중 아무 때나 다른 기술을 누르지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12315,7 +12315,7 @@
     },
     "priest_discipline_surge_heal": {
       "id": "priest_discipline_surge_heal",
-      "name": "빛의쇄도-단일치유",
+      "name": "즉시 치유와 속죄 빈자리",
       "description": "빛의 쇄도는 마나 50% 감소이며 무료가 아니다. 이동 중 직접 치유와 속죄가 필요한 대상에게 소비하고, 생명력이 충분할 때 발동 소모만을 위해 과치유하지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12348,7 +12348,7 @@
     },
     "priest_discipline_evangelism_choice": {
       "id": "priest_discipline_evangelism_choice",
-      "name": "사도-마귀선택",
+      "name": "사도 후 대천사 또는 마귀",
       "description": "대천사의 18초 치유·흡수 강화와 환각의 마귀의 12초 소환은 선택 관계다. 마귀 빌드에서는 실제 소환 중 회개·정신 분열의 피할 수 없는 고통 연계를 확인한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12386,7 +12386,7 @@
     },
     "priest_discipline_evangelism_ramp": {
       "id": "priest_discipline_evangelism_ramp",
-      "name": "사도-속죄확장",
+      "name": "사도와 즉시 광휘",
       "description": "사도는 광휘를 즉시 시전하고 다음 두 광휘를 즉시·저비용으로 만든다. 과거 속죄 연장이 아니며, 대천사 선택 시 후속 치유·흡수가 강화된다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12420,7 +12420,7 @@
     },
     "priest_discipline_pain_spread": {
       "id": "priest_discipline_pain_spread",
-      "name": "사악의정화-고통과고뇌-지속피해",
+      "name": "공격 회개로 고통 전이",
       "description": "잠식하는 어둠과 어둠의 환희를 선택한 공격 회개는 고통을 전이하고 고통의 처벌은 지속시간을 늘린다. 사악의 정화는 독립 도트 버튼이 아니다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12456,7 +12456,7 @@
     },
     "priest_discipline_atonement_radiance": {
       "id": "priest_discipline_atonement_radiance",
-      "name": "속죄-신의권능광휘",
+      "name": "피해 직전에 속죄 준비",
       "description": "광휘의 속죄는 짧다. 피해 전에 보호막·직접 치유로 필요한 대상을 준비하고 광휘를 실제 피해 시점에 가깝게 사용한다. 회개는 새 속죄를 붙이지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12493,7 +12493,7 @@
     },
     "priest_discipline_s2_shield": {
       "id": "priest_discipline_s2_shield",
-      "name": "시즌2-정신분열-보호막",
+      "name": "다음 보호막 25% 강화",
       "description": "4세트의 어둠의 전이는 다음 일반 보호막 또는 공허의 보호막 하나를 강화한다. 정점의 사용권과 흡수량 강화는 서로 다른 효과다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12530,7 +12530,7 @@
     },
     "priest_discipline_s2_penance": {
       "id": "priest_discipline_s2_penance",
-      "name": "시즌2-회개-정신분열",
+      "name": "회개로 정신 분열 당기기",
       "description": "시즌 2 2세트는 회개 시전마다 정신 분열을 2초 당긴다. 공허술사는 그만큼 균열을 다시 열 기회가 늘지만 화살마다 2초 감소하는 것은 아니다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12563,7 +12563,7 @@
     },
     "priest_discipline_shadow_mend": {
       "id": "priest_discipline_shadow_mend",
-      "name": "어둠의치유-약자보호-응급복구",
+      "name": "발동을 기다리지 않는 직접 치유",
       "description": "어둠의 치유는 선택하면 상시 사용 가능하다. 음울한 구원의 큰 치유·긴 속죄와 느려진 시전 시간을 고려해 급한 대상은 보호막·생존기부터 연결한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12599,7 +12599,7 @@
     },
     "priest_discipline_oracle_piety": {
       "id": "priest_discipline_oracle_piety",
-      "name": "예언자-경건보호",
+      "name": "예언자의 양방향 회개",
       "description": "인도의 빛으로 회개를 더 저장하고 두 개의 시야로 반대 방향 화살을 보낸다. 아군 직접 치유와 적 피해를 함께 활용하지만 새 속죄는 별도로 붙여야 한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12632,7 +12632,7 @@
     },
     "priest_discipline_guaranteed_shield": {
       "id": "priest_discipline_guaranteed_shield",
-      "name": "정신분열-공허의보호막",
+      "name": "정신 분열로 보호막 확보",
       "description": "마지막 어둠 지배가 있으면 정신 분열 뒤 공허의 보호막 사용권을 확정 얻는다. 시즌 2 세트가 없어도 동작하는 정점 효과다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12667,7 +12667,7 @@
     },
     "priest_discipline_execute_pet": {
       "id": "priest_discipline_execute_pet",
-      "name": "죽음-어둠의마귀",
+      "name": "처형 대상과 자동 소환",
       "description": "어둠의 마귀를 선택한 수양은 20% 미만 대상의 죽음으로 자동 소환한다. 피할 수 없는 고통은 마귀가 실제로 있을 때만 가치를 얻는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12702,7 +12702,7 @@
     },
     "priest_discipline_weal_shield": {
       "id": "priest_discipline_weal_shield",
-      "name": "회개-번영과역경-보호막",
+      "name": "화살에서 보호막 흡수로",
       "description": "회개 화살이 쌓는 번영과 역경은 중첩당 3%, 최대 10중첩이다. 다음 보호막으로 소비하되 최대 중첩만 기다리다가 위험한 아군을 놓치지 않는다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12739,7 +12739,7 @@
     },
     "priest_discipline_shield_deck": {
       "id": "priest_discipline_shield_deck",
-      "name": "회개-어둠지배-사용권",
+      "name": "회개 발동과 사용권 2개",
       "description": "회개 발동과 정신 분열 확정 부여는 같은 강화 사용권에 합쳐진다. 최대 2개를 넘기거나 만료시키지 않되 보호막의 공유 쿨다운도 확인한다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12774,7 +12774,7 @@
     },
     "priest_discipline_penance_atonement": {
       "id": "priest_discipline_penance_atonement",
-      "name": "회개-정신분열-속죄전환",
+      "name": "정신 분열로 회개 강화",
       "description": "어둠의 방종이 정신 분열 뒤 어두운 면의 힘을 확정 부여한다. 속죄를 먼저 준비해야 강화 회개의 피해가 필요한 아군 치유로 이어진다.",
       "type": "synergy",
       "synergyType": "mechanic",
@@ -12813,7 +12813,7 @@
     },
     "priest_holy_words_cooldown_cycle": {
       "id": "priest_holy_words_cooldown_cycle",
-      "name": "빛의권능-재사용대기시간순환",
+      "name": "빛의 권능-재사용 대기시간 순환",
       "type": "synergy",
       "synergyType": "holy_word_cycle",
       "participants": [
@@ -12856,7 +12856,7 @@
     },
     "priest_holy_word_charge_cycle_talents": {
       "id": "priest_holy_word_charge_cycle_talents",
-      "name": "빛의권능-충전-순환특성",
+      "name": "빛의 권능 충전-순환 특성",
       "type": "synergy",
       "synergyType": "holy_word_charge_cycle",
       "participants": [
@@ -12907,7 +12907,7 @@
     },
     "priest_holy_smite_surge_filler": {
       "id": "priest_holy_smite_surge_filler",
-      "name": "성스러운일격-빛의쇄도-공백관리",
+      "name": "성스러운 일격-빛의 쇄도 공백 관리",
       "type": "synergy",
       "synergyType": "filler_proc",
       "participants": [
@@ -12942,7 +12942,7 @@
     },
     "priest_holy_guardian_spirit_serenity_danger": {
       "id": "priest_holy_guardian_spirit_serenity_danger",
-      "name": "수호영혼-평온-위험대상",
+      "name": "수호 영혼-평온 위험 대상",
       "type": "synergy",
       "synergyType": "external_single_target_save",
       "participants": [
@@ -12979,7 +12979,7 @@
     },
     "priest_holy_flash_serenity_lightweaver": {
       "id": "priest_holy_flash_serenity_lightweaver",
-      "name": "순간치유-평온-빛술사",
+      "name": "순간 치유-평온-빛술사",
       "type": "synergy",
       "synergyType": "single_target_cycle",
       "participants": [
@@ -13011,7 +13011,7 @@
     },
     "priest_holy_oracle_prayer_of_mending": {
       "id": "priest_holy_oracle_prayer_of_mending",
-      "name": "예언자-회복의기원",
+      "name": "예언자-회복의 기원",
       "type": "synergy",
       "synergyType": "oracle_preheal",
       "participants": [],
@@ -13037,7 +13037,7 @@
     },
     "priest_holy_emergency_serenity_guardian": {
       "id": "priest_holy_emergency_serenity_guardian",
-      "name": "응급단일-평온-수호영혼",
+      "name": "응급 단일 복구-평온-수호 영혼",
       "type": "synergy",
       "synergyType": "emergency_single_target",
       "participants": [
@@ -13071,7 +13071,7 @@
     },
     "priest_holy_chastise_holy_damage_utility": {
       "id": "priest_holy_chastise_holy_damage_utility",
-      "name": "응징-신성공격-던전유틸",
+      "name": "응징-신성 공격-던전 유틸",
       "type": "synergy",
       "synergyType": "holy_damage_utility",
       "participants": [
@@ -13111,7 +13111,7 @@
     },
     "priest_holy_apotheosis_hymn": {
       "id": "priest_holy_apotheosis_hymn",
-      "name": "절정-천상의찬가",
+      "name": "절정-천상의 찬가",
       "type": "synergy",
       "synergyType": "major_healing_window",
       "participants": [
@@ -13185,7 +13185,7 @@
     },
     "priest_holy_celestial_cooldown_windows": {
       "id": "priest_holy_celestial_cooldown_windows",
-      "name": "천상쿨기-절정-찬가-구원",
+      "name": "천상 쿨기-절정-찬가",
       "type": "synergy",
       "synergyType": "major_cooldown_windows",
       "participants": [
@@ -13232,7 +13232,7 @@
     },
     "priest_holy_prayer_sanctify_circle": {
       "id": "priest_holy_prayer_sanctify_circle",
-      "name": "치유의기원-신성화-마법진",
+      "name": "치유의 기원-신성화-마법진",
       "type": "synergy",
       "synergyType": "aoe_recovery_cycle",
       "participants": [
@@ -13297,7 +13297,7 @@
     },
     "priest_holy_prayer_of_mending_aoe": {
       "id": "priest_holy_prayer_of_mending_aoe",
-      "name": "회복의기원-광역피해",
+      "name": "회복의 기원-광역 피해",
       "type": "synergy",
       "synergyType": "mending_aoe",
       "participants": [
@@ -13334,7 +13334,7 @@
     },
     "priest_holy_prayer_of_mending_talent_web": {
       "id": "priest_holy_prayer_of_mending_talent_web",
-      "name": "회복의기원-기도특성-반복피해",
+      "name": "회복의 기원-기도 특성-반복 피해",
       "type": "synergy",
       "synergyType": "prayer_of_mending_sustain",
       "participants": [
@@ -13759,7 +13759,7 @@
     },
     "SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE": {
       "id": "SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE",
-      "name": "도적공용-교란-회피-그림자망토-생존",
+      "name": "도적 공용 생존기와 조건부 보강",
       "description": "교란은 광역 피해, 회피는 회피 가능한 공격, 그림자 망토는 해로운 주문에 대응한다. 교묘함을 선택하면 회피에 20% 피해 감소, 교란에 비광역 20% 감소가 추가된다. 강철 위장은 약병·치유 물약·생명석의 회복만 25% 높이고, 위안의 어둠은 소멸 뒤 6초간 생명력 30%를 회복한다. 회복과 피해 감소, 특성 선택 전후를 구분한다.",
       "type": "synergy",
       "synergyType": "defensive-layering",
@@ -13840,7 +13840,7 @@
     },
     "SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS": {
       "id": "SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS",
-      "name": "도적공용-독-독칼-대상약화",
+      "name": "도적 독 선택: 피해, 치유 감소, 이동 및 시전 방해",
       "description": "순간 효과 독은 즉시 자연 피해, 상처 감염 독은 피해와 받는 치유 감소, 신경 마취 독은 이동 속도 감소, 마취 독은 공격 및 시전 속도 감소, 위축의 독은 대상이 주는 피해 감소를 맡는다. 마취 독과 위축의 독은 같은 특성 칸의 선택 관계다. 치명적인 독은 무기 독 피해, 독의 대가는 비피해 효과를 강화하며 착취 독은 치명독에 생기흡수를 더한다.",
       "type": "synergy",
       "synergyType": "poison-debuff",
@@ -13883,7 +13883,7 @@
     },
     "SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY": {
       "id": "SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY",
-      "name": "도적공용-속임수거래-은폐의장막-던전유틸",
+      "name": "던전 지원: 위협 이전, 은폐 이동, 주문 차단",
       "description": "속임수 거래는 다음 공격부터 6초간 위협을 이전하고, 은폐의 장막은 은신 상태에서 주변 파티원의 이동을 지원한다. 고요한 장막은 장막의 기본 6분 쿨다운을 3분으로 줄인다. 발차기는 15초 쿨다운의 차단과 같은 계열 6초 봉쇄이며, 혼란은 주의를 끄는 기술이지 주문 차단이 아니다.",
       "type": "synergy",
       "synergyType": "dungeon-utility",
@@ -13916,7 +13916,7 @@
     },
     "SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL": {
       "id": "SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL",
-      "name": "도적공용-은신-비열한습격-제어",
+      "name": "은신 진입과 제어: 기절, 행동 불가, 종료 후 약화",
       "description": "은신과 소멸은 은신 전용 기술을 사용할 조건을 만들고 기만은 은신 종료 뒤의 사용 가능 시간을 늘린다. 비열한 습격과 급소 가격은 기절, 혼절시키기와 후려치기는 피해로 풀릴 수 있는 제어다. 가죽곤봉은 실명이나 혼절시키기가 끝난 뒤 6초 동안 적의 공격력·치유량을 30% 낮춘다.",
       "type": "synergy",
       "synergyType": "stealth-control",
@@ -13957,7 +13957,7 @@
     },
     "SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT": {
       "id": "SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT",
-      "name": "도적공용-전력질주-그림자밟기-이동",
+      "name": "도적 이동 속도와 전력 질주 보강",
       "description": "전력 질주는 기본 2분 쿨다운에 8초 동안 이동 속도 70%를 제공한다. 전력 질주 연마는 쿨다운을 60초 줄이고 깃털발은 추가 이동 속도 30%와 지속 시간 4초를 더한다. 빠른 발의 상시 이동, 어둠질주의 은신·춤 조건, 불굴의 걸음의 감속 지속 시간 감소를 구분한다. 무법 전용 곡예의 일격은 공용 참여 기술에서 제외한다.",
       "type": "synergy",
       "synergyType": "movement-planning",
@@ -14896,7 +14896,7 @@
     },
     "rogue_subtlety_feint_cloak_mplus_utility": {
       "id": "rogue_subtlety_feint_cloak_mplus_utility",
-      "name": "교란-그림자망토-쐐기유틸",
+      "name": "교란-그림자 망토-쐐기 유틸",
       "type": "synergy",
       "synergyType": "mplus_survival_utility",
       "participants": [
@@ -15455,7 +15455,7 @@
     },
     "shaman_enhancement_crash_lightning_aoe": {
       "id": "shaman_enhancement_crash_lightning_aoe",
-      "name": "낙뢰-연쇄번개",
+      "name": "낙뢰-연쇄 번개 광역 전환",
       "description": "낙뢰는 12초간 근접 타격기에 추가 자연 피해를 붙이고, 연쇄 번개는 소용돌이치는 무기를 광역으로 소비한다. 낙뢰는 타격 전체를 복제하지 않으며 연쇄 번개의 사용 선행 조건도 아니다. 두 효과와 자원 상한을 각각 확인한다.",
       "type": "synergy",
       "synergyType": "aoe_conversion",
@@ -15557,7 +15557,7 @@
     },
     "shaman_enhancement_sundering_primordial_opener": {
       "id": "shaman_enhancement_sundering_primordial_opener",
-      "name": "세계의분리-태고의폭풍-오프닝",
+      "name": "세계의 분리 이후 15초 사용권",
       "description": "태고의 폭풍 특성을 선택하면 세계의 분리 뒤 15초 안에 한 번 사용할 수 있는 태고의 폭풍으로 버튼이 바뀐다. 실제 시전은 1218090이며 1218047은 특성이다. 소용돌이치는 무기를 소비해 피해를 높이며, 낙뢰 버프나 쇄도하는 토템은 사용권의 필수 조건이 아니다.",
       "type": "synergy",
       "synergyType": "opener_alignment",
@@ -15588,7 +15588,7 @@
     },
     "shaman_enhancement_maelstrom_spender_loop": {
       "id": "shaman_enhancement_maelstrom_spender_loop",
-      "name": "소용돌이치는무기-폭풍의일격",
+      "name": "소용돌이치는 무기-폭풍의 일격 소비 루프",
       "description": "근접 공격으로 소용돌이치는 무기를 얻고 번개 화살·연쇄 번개로 소비한다. 기본 저장 상한은 5이며 넘치는 소용돌이가 저장 상한을 10으로, 분노의 소용돌이가 주문당 소비 한도를 10으로 만든다. 공격 중첩 소비로 얻는 치유용 넘치는 소용돌이는 최대 20 축적·한 번에 최대 10 적용의 별도 효과다. 정기의 속도는 소비 중첩당 폭풍의 일격·용암 채찍 쿨다운을 0.3초 줄인다. 토림의 기원을 선택한 승천·파멸의 바람 중에는 타격기가 자원을 자동 소비한다. 자원 상한만 보고 수동 번개를 무조건 끼워 넣지 않는다.",
       "type": "synergy",
       "synergyType": "maelstrom_spender_loop",
@@ -15728,7 +15728,7 @@
     },
     "shaman_enhancement_doom_winds_ascendance_window": {
       "id": "shaman_enhancement_doom_winds_ascendance_window",
-      "name": "야수정령-파멸의바람",
+      "name": "야수 정령-파멸의 바람 피해 구간",
       "description": "야수 정령은 직접 시전하지 않는 패시브다. 세계의 분리는 불의 정령, 파멸의 바람은 자연의 정령을 8초 소환한다. 승천 또는 깊이 뿌리내린 정기를 선택하면 파멸의 바람 버튼이 대체된다. 토림의 기원을 선택한 쿨기 중에는 타격기의 소용돌이치는 무기 자동 소비를 확인한다.",
       "type": "synergy",
       "synergyType": "major_cooldown_window",
@@ -15791,7 +15791,7 @@
     },
     "shaman_enhancement_defensive_mythic_utility": {
       "id": "shaman_enhancement_defensive_mythic_utility",
-      "name": "영혼이동-날카로운바람-쐐기유틸",
+      "name": "영혼 이동-날카로운 바람 쐐기 유틸",
       "type": "synergy",
       "synergyType": "defensive_mythic_utility",
       "participants": [
@@ -15902,7 +15902,7 @@
     },
     "shaman_hero_farseer_ancestor_common_hub": {
       "id": "shaman_hero_farseer_ancestor_common_hub",
-      "name": "영웅특성-선견자-선조-공용허브",
+      "name": "선견자-선조 공용 허브",
       "type": "synergy",
       "synergyType": "hero_talent_farseer",
       "participants": [
@@ -16011,7 +16011,7 @@
     },
     "shaman_common_ghost_wolf_spiritwalker_mobility": {
       "id": "shaman_common_ghost_wolf_spiritwalker_mobility",
-      "name": "주술사공용-늑대정령-영혼나그네-기동",
+      "name": "늑대 정령-영혼나그네 기동",
       "type": "synergy",
       "synergyType": "shared_mobility",
       "participants": [
@@ -16064,7 +16064,7 @@
     },
     "shaman_common_earth_shield_healing_stream_support": {
       "id": "shaman_common_earth_shield_healing_stream_support",
-      "name": "주술사공용-대지의보호막-치유토템-지원",
+      "name": "대지의 보호막-치유 토템 지원",
       "type": "synergy",
       "synergyType": "shared_healing_support",
       "participants": [
@@ -16107,7 +16107,7 @@
     },
     "shaman_common_lightning_shield_nature_damage": {
       "id": "shaman_common_lightning_shield_nature_damage",
-      "name": "주술사공용-번개보호막-자연피해-공통딜",
+      "name": "번개 보호막-자연 피해 공통딜",
       "type": "synergy",
       "synergyType": "shared_nature_damage",
       "participants": [
@@ -16144,7 +16144,7 @@
     },
     "shaman_common_astral_shift_earth_elemental_defense": {
       "id": "shaman_common_astral_shift_earth_elemental_defense",
-      "name": "주술사공용-영혼이동-대지정령-생존",
+      "name": "영혼 이동-대지 정령 생존",
       "type": "synergy",
       "synergyType": "shared_defensive",
       "participants": [
@@ -16201,7 +16201,7 @@
     },
     "shaman_common_purge_interrupt_cleanse": {
       "id": "shaman_common_purge_interrupt_cleanse",
-      "name": "주술사공용-정화-차단-해제",
+      "name": "정화-차단-해제",
       "description": "정화는 적의 이로운 마법 제거, 날카로운 바람은 주문 차단이다. 영혼 정화는 정기·고양의 51886이 저주를 제거하고, 복원의 77130은 마법을 제거한다. 복원은 영혼 정화 연마를 선택해야 저주도 제거한다. 이름이 같아도 적용 전문화와 해제 종류는 다르다.",
       "type": "synergy",
       "synergyType": "purge_interrupt_cleanse",
@@ -16244,7 +16244,7 @@
     },
     "shaman_common_totem_control_mythic_utility": {
       "id": "shaman_common_totem_control_mythic_utility",
-      "name": "주술사공용-토템-제어-던전유틸",
+      "name": "토템-제어 던전 유틸",
       "type": "synergy",
       "synergyType": "totem_control_utility",
       "participants": [
@@ -16296,7 +16296,7 @@
     },
     "shaman_common_bloodlust_heroism_party_cooldown": {
       "id": "shaman_common_bloodlust_heroism_party_cooldown",
-      "name": "주술사공용-피의욕망-파티쿨기",
+      "name": "피의 욕망-영웅심 파티 쿨기",
       "type": "synergy",
       "synergyType": "party_cooldown",
       "participants": [
@@ -16328,7 +16328,7 @@
     },
     "shaman_restoration_sustain_shields": {
       "id": "shaman_restoration_sustain_shields",
-      "name": "대지생명의무기-물의보호막-지속유지",
+      "name": "대지생명의 무기-물의 보호막-지속 유지",
       "type": "synergy",
       "synergyType": "sustain_maintenance",
       "participants": [
@@ -16371,7 +16371,7 @@
     },
     "shaman_restoration_unleash_earthen_accord": {
       "id": "shaman_restoration_unleash_earthen_accord",
-      "name": "생명폭발-대지의합의",
+      "name": "생명 폭발-대지의 합의",
       "type": "synergy",
       "synergyType": "next_heal_amplification",
       "participants": [
@@ -16406,7 +16406,7 @@
     },
     "shaman_restoration_farseer_ancestor": {
       "id": "shaman_restoration_farseer_ancestor",
-      "name": "선조의부름-성난해일",
+      "name": "선조의 부름-성난 해일",
       "type": "synergy",
       "synergyType": "farseer_ancestor_healing",
       "participants": [
@@ -16452,7 +16452,7 @@
     },
     "shaman_restoration_riptide_chainheal": {
       "id": "shaman_restoration_riptide_chainheal",
-      "name": "성난해일-연쇄치유",
+      "name": "성난 해일-연쇄 치유",
       "type": "synergy",
       "synergyType": "riptide_chain_heal",
       "participants": [
@@ -16499,7 +16499,7 @@
     },
     "shaman_restoration_totemic_surging": {
       "id": "shaman_restoration_totemic_surging",
-      "name": "쇄도하는토템-활발한토템",
+      "name": "쇄도하는 토템-활발한 토템",
       "type": "synergy",
       "synergyType": "totemic_area_healing",
       "participants": [
@@ -16542,7 +16542,7 @@
     },
     "shaman_restoration_season2_rain_shields": {
       "id": "shaman_restoration_season2_rain_shields",
-      "name": "시즌2-치유의비-보호막",
+      "name": "시즌 2 치유의 비-보호막",
       "type": "synergy",
       "synergyType": "healing_rain_absorb",
       "participants": [
@@ -16577,7 +16577,7 @@
     },
     "shaman_restoration_spiritlink_raid": {
       "id": "shaman_restoration_spiritlink_raid",
-      "name": "정신의고리토템-공격대안정화",
+      "name": "정신의 고리 토템-공격대 안정화",
       "type": "synergy",
       "synergyType": "raid_stabilization_cooldown",
       "participants": [
@@ -16611,7 +16611,7 @@
     },
     "shaman_restoration_direct_heal_mana": {
       "id": "shaman_restoration_direct_heal_mana",
-      "name": "치유의물결-마나관리",
+      "name": "치유의 물결-마나 관리",
       "type": "synergy",
       "synergyType": "direct_heal_mana_management",
       "participants": [
@@ -16654,7 +16654,7 @@
     },
     "shaman_restoration_healingrain_acidrain": {
       "id": "shaman_restoration_healingrain_acidrain",
-      "name": "치유의비-산성비",
+      "name": "치유의 비-산성 비",
       "type": "synergy",
       "synergyType": "ground_effect_healing_damage",
       "participants": [
@@ -16690,7 +16690,7 @@
     },
     "shaman_restoration_downpour_tide": {
       "id": "shaman_restoration_downpour_tide",
-      "name": "폭우-치유의해일토템",
+      "name": "폭우-치유의 해일 토템",
       "type": "synergy",
       "synergyType": "predictive_aoe_healing_window",
       "participants": [
@@ -16728,7 +16728,7 @@
     },
     "shaman_elemental_farseer_ancestor_lava": {
       "id": "shaman_elemental_farseer_ancestor_lava",
-      "name": "선조의부름-용암폭발",
+      "name": "선조의 부름-용암 폭발",
       "type": "synergy",
       "synergyType": "hero_talent_farseer",
       "participants": [
@@ -16767,7 +16767,7 @@
     },
     "shaman_elemental_chain_lightning_earthquake_aoe": {
       "id": "shaman_elemental_chain_lightning_earthquake_aoe",
-      "name": "연쇄번개-지진-광역전환",
+      "name": "연쇄 번개-지진 광역 전환",
       "type": "synergy",
       "synergyType": "aoe_conversion",
       "participants": [
@@ -16827,7 +16827,7 @@
     },
     "shaman_elemental_defensive_mythic_utility": {
       "id": "shaman_elemental_defensive_mythic_utility",
-      "name": "영혼이동-날카로운바람-쐐기유틸",
+      "name": "영혼 이동-날카로운 바람 쐐기 유틸",
       "type": "synergy",
       "synergyType": "defensive_mythic_utility",
       "participants": [
@@ -16894,7 +16894,7 @@
     },
     "shaman_elemental_voltaic_blaze_fire_bridge": {
       "id": "shaman_elemental_voltaic_blaze_fire_bridge",
-      "name": "전격의불길-정화의불길",
+      "name": "전격의 불길-정화의 불길 화염/자연 브리지",
       "type": "synergy",
       "synergyType": "fire_nature_bridge",
       "participants": [
@@ -16950,7 +16950,7 @@
     },
     "shaman_elemental_maelstrom_spender_loop": {
       "id": "shaman_elemental_maelstrom_spender_loop",
-      "name": "정기의메아리-정기과부하",
+      "name": "소용돌이 소비-정기 과부하 순환",
       "type": "synergy",
       "synergyType": "maelstrom_spender_loop",
       "participants": [
@@ -17012,7 +17012,7 @@
     },
     "shaman_elemental_stormbringer_tempest_loop": {
       "id": "shaman_elemental_stormbringer_tempest_loop",
-      "name": "폭풍-폭풍인도자",
+      "name": "폭풍-폭풍인도자 대안 루프",
       "type": "synergy",
       "synergyType": "hero_talent_stormbringer_alternative",
       "participants": [
@@ -17048,7 +17048,7 @@
     },
     "shaman_elemental_stormkeeper_ascendance_window": {
       "id": "shaman_elemental_stormkeeper_ascendance_window",
-      "name": "폭풍수호자-승천",
+      "name": "폭풍수호자-승천 극딜 구간",
       "type": "synergy",
       "synergyType": "major_damage_window",
       "participants": [
@@ -17088,7 +17088,7 @@
     },
     "shaman_elemental_flame_lava_core": {
       "id": "shaman_elemental_flame_lava_core",
-      "name": "화염충격-용암폭발",
+      "name": "화염 충격-용암 폭발 화염 코어",
       "type": "synergy",
       "synergyType": "flame_shock_lava_burst_core",
       "participants": [
@@ -19255,7 +19255,7 @@
     },
     "warrior_common_colossus_demolish_dominance": {
       "id": "warrior_common_colossus_demolish_dominance",
-      "name": "Colossus-쇄파-거신의지배",
+      "name": "거신-쇄파-거신의 지배",
       "type": "synergy",
       "synergyType": "colossus-damage-window",
       "participants": [
@@ -19288,7 +19288,7 @@
     },
     "warrior_common_mountain_thane_lightning_thunder_blast": {
       "id": "warrior_common_mountain_thane_lightning_thunder_blast",
-      "name": "MountainThane-벼락-우레작렬",
+      "name": "산왕-벼락-우레 작렬",
       "type": "synergy",
       "synergyType": "mountain_thane_thunder_router",
       "participants": [
@@ -19342,7 +19342,7 @@
     },
     "warrior_common_slayer_execute_blade_storm": {
       "id": "warrior_common_slayer_execute_blade_storm",
-      "name": "Slayer-학살자의지배-마무리일격",
+      "name": "학살자-학살자의 지배-마무리 일격",
       "type": "synergy",
       "synergyType": "slayer_execute_router",
       "participants": [
@@ -19386,7 +19386,7 @@
     },
     "warrior_common_charge_leap_intervene_mobility": {
       "id": "warrior_common_charge_leap_intervene_mobility",
-      "name": "전사공용-돌진-영웅의도약-가로막기-기동",
+      "name": "전사 공용-돌진-영웅의 도약-가로막기-기동",
       "type": "synergy",
       "synergyType": "shared_mobility",
       "participants": [
@@ -19429,7 +19429,7 @@
     },
     "warrior_common_pummel_storm_bolt_shockwave_control": {
       "id": "warrior_common_pummel_storm_bolt_shockwave_control",
-      "name": "전사공용-들이치기-폭풍망치-충격파-차단제어",
+      "name": "전사 공용-들이치기-폭풍망치-충격파-차단 제어",
       "type": "synergy",
       "synergyType": "shared_interrupt_control",
       "participants": [
@@ -19468,7 +19468,7 @@
     },
     "warrior_common_spec_aoe": {
       "id": "warrior_common_spec_aoe",
-      "name": "전사공용-전문화별-광역공격",
+      "name": "전사 공용-전문화별 광역 공격",
       "type": "synergy",
       "synergyType": "shared_aoe_pressure",
       "participants": [
@@ -19515,7 +19515,7 @@
     },
     "warrior_common_battle_shout_rallying_raid_utility": {
       "id": "warrior_common_battle_shout_rallying_raid_utility",
-      "name": "전사공용-전투의외침-재집결의함성-공격대유틸",
+      "name": "전사 공용-전투의 외침-재집결의 함성-공격대 유틸",
       "type": "synergy",
       "synergyType": "shared_raid_utility",
       "participants": [
@@ -19554,7 +19554,7 @@
     },
     "warrior_common_spell_reflection_victory_survival": {
       "id": "warrior_common_spell_reflection_victory_survival",
-      "name": "전사공용-주문반사-연전연승-생존",
+      "name": "전사 공용-주문 반사-연전연승-생존",
       "type": "synergy",
       "synergyType": "shared_personal_survival",
       "participants": [
@@ -19632,7 +19632,7 @@
     },
     "warrior-arms-slayer-execute-bladestorm": {
       "id": "warrior-arms-slayer-execute-bladestorm",
-      "name": "Slayer-마무리-일격-칼날폭풍",
+      "name": "학살자-마무리 일격-칼날폭풍",
       "type": "synergy",
       "synergyType": "slayer-hero-package",
       "participants": [
@@ -19703,7 +19703,8 @@
     },
     "warrior-arms-colossus-smash-mortal-strike": {
       "id": "warrior-arms-colossus-smash-mortal-strike",
-      "name": "거인의-강타-필사의-일격-제압",
+      "name": "거인의 강타-필사의 일격-제압",
+      "description": "거인의 강타에 맞은 적에게 10초 동안 피해 증가가 적용된다. 필사의 일격을 우선하고 제압은 충전 관리와 다음 필사의 일격 강화에 사용한다.",
       "type": "synergy",
       "synergyType": "burst-window-core",
       "participants": [
@@ -19722,7 +19723,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
@@ -19733,11 +19734,11 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269306",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269307",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투군주",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무예-기량",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/날카로운-날"
@@ -19749,7 +19750,8 @@
     },
     "warrior-arms-warbreaker-sweeping-strikes": {
       "id": "warrior-arms-warbreaker-sweeping-strikes",
-      "name": "거인의-강타-회전베기-부수적인-피해",
+      "name": "거인의 강타-회전베기-부수적인 피해",
+      "description": "거인의 강타로 광역 피해 구간을 열고, 회전베기로 분쇄를 적용한다. 부수적인 피해는 휩쓸기 일격의 두 번째 대상 적중으로만 쌓인다.",
       "type": "synergy",
       "synergyType": "multi-target-core",
       "participants": [
@@ -19765,12 +19767,10 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄"
       ],
@@ -19790,7 +19790,7 @@
     },
     "warrior_arms_smash_cleave_resources": {
       "id": "warrior_arms_smash_cleave_resources",
-      "name": "거인의강타-분노생성-회전베기연계",
+      "name": "거인의 강타-분노 생성-회전베기 연계",
       "type": "synergy",
       "synergyType": "resource-cooldown",
       "participants": [
@@ -19844,7 +19844,7 @@
     },
     "warrior-arms-sudden-death-massacre-dance": {
       "id": "warrior-arms-sudden-death-massacre-dance",
-      "name": "급살-대학살-마무리-조건",
+      "name": "급살-대학살-마무리 조건",
       "type": "synergy",
       "synergyType": "execute-availability",
       "participants": [
@@ -19905,7 +19905,8 @@
     },
     "warrior-arms-execute-precision": {
       "id": "warrior-arms-execute-precision",
-      "name": "마무리-일격-집행자의-정밀함-치명적-감각",
+      "name": "마무리 일격-집행자의 정밀함-치명적 감각",
+      "description": "마무리 일격이 집행자의 정밀함을 쌓아 다음 필사의 일격을 강화한다. 치명적 감각의 분노 반환은 실제로 소모한 분노를 기준으로 한다.",
       "type": "synergy",
       "synergyType": "execute-window",
       "participants": [
@@ -19921,7 +19922,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/마무리-일격",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
@@ -19970,6 +19971,7 @@
     "warrior-arms-rend-bleed-package": {
       "id": "warrior-arms-rend-bleed-package",
       "name": "분쇄-유혈-치명상",
+      "description": "분쇄는 유혈의 치명타 보너스 조건이고, 치명상은 별개 출혈이다. 치명상은 마무리 일격 또는 죽음의 상처를 배운 상태의 조건부 치명타로 적용한다.",
       "type": "synergy",
       "synergyType": "bleed-maintenance",
       "participants": [
@@ -19984,18 +19986,19 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/투사의-혼",
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/분쇄",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/노련한-병사",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
         "08-직업별-Knowledge-Base/13-전사/공용/Talents/피의-쇄도",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/유혈",
+        "08-직업별-Knowledge-Base/13-전사/공용/Talents/치명상",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/죽음의-상처",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/혈행성-전이"
       ],
       "source": {
@@ -20005,7 +20008,7 @@
     },
     "warrior-arms-colossus-demolish": {
       "id": "warrior-arms-colossus-demolish",
-      "name": "쇄파-거신의-지배-거인의-힘",
+      "name": "쇄파-거신의 지배-거인의 힘",
       "type": "synergy",
       "synergyType": "colossus-damage-window",
       "participants": [
@@ -20036,7 +20039,7 @@
     },
     "warrior_arms_ravager_rend": {
       "id": "warrior_arms_ravager_rend",
-      "name": "쇠날발톱-분쇄-출혈강화",
+      "name": "쇠날발톱-분쇄 출혈 강화",
       "type": "synergy",
       "synergyType": "ravager_bleed_amp",
       "participants": [
@@ -20066,7 +20069,7 @@
     },
     "warrior_arms_season2_slam_consumption": {
       "id": "warrior_arms_season2_slam_consumption",
-      "name": "시즌2-격돌-강화소비",
+      "name": "시즌 2 격돌 강화 소비",
       "type": "synergy",
       "synergyType": "stack-consumption",
       "participants": [
@@ -20096,7 +20099,7 @@
     },
     "warrior_arms_heroic_strike_stack_layers": {
       "id": "warrior_arms_heroic_strike_stack_layers",
-      "name": "영웅의일격-독립중첩-거인의강타강화",
+      "name": "영웅의 일격-독립 중첩-거인의 강타 강화",
       "type": "synergy",
       "synergyType": "stack-consumption",
       "participants": [
@@ -20155,7 +20158,7 @@
     },
     "warrior_arms_charge_reset_chain": {
       "id": "warrior_arms_charge_reset_chain",
-      "name": "전술가-전술의대가-전투군주",
+      "name": "전술가-전술의 대가-전투군주",
       "type": "synergy",
       "synergyType": "charge-reset-chain",
       "participants": [
@@ -20212,7 +20215,7 @@
     },
     "warrior_arms_fervor_triggered_slam": {
       "id": "warrior_arms_fervor_triggered_slam",
-      "name": "전투의열정-광역적중-자동격돌",
+      "name": "전투의 열정-광역 적중-자동 격돌",
       "type": "synergy",
       "synergyType": "triggered-attack",
       "participants": [
@@ -20268,7 +20271,8 @@
     },
     "warrior-arms-overpower-tactician-warlord": {
       "id": "warrior-arms-overpower-tactician-warlord",
-      "name": "제압-전술가-전쟁의-지배자",
+      "name": "제압-전술가-전쟁의 지배자",
+      "description": "전술가는 분노 소모 공격 후 제압을 충전하고, 전쟁의 지배자는 별도 발동으로 격돌을 영웅의 일격으로 강화한다. 두 발동을 같은 효과로 세지 않는다.",
       "type": "synergy",
       "synergyType": "proc-charge-engine",
       "participants": [
@@ -20285,22 +20289,21 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/제압",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격",
-        "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타"
+        "08-직업별-Knowledge-Base/13-전사/무기/Skills/필사의-일격"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전술가",
-        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/꿰뚫기",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/날카로운-날",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/치명적-공격",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269306",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전쟁의-지배자-1269307",
+        "08-직업별-Knowledge-Base/13-전사/무기/Talents/제압-연마",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/압도적인-제압",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/전투군주",
         "08-직업별-Knowledge-Base/13-전사/무기/Talents/무예-기량"
@@ -20343,7 +20346,8 @@
     },
     "warrior-arms-bladestorm-warbreaker-aoe": {
       "id": "warrior-arms-bladestorm-warbreaker-aoe",
-      "name": "칼날폭풍-거인의-강타-광역-쿨기",
+      "name": "칼날폭풍-거인의 강타-광역 쿨기",
+      "description": "거인의 강타에 적중한 적의 10초 피해 증가 구간에 칼날폭풍을 맞춘다. 이미 사라질 무리를 위해 쿨기를 오래 지연하지 않는다.",
       "type": "synergy",
       "synergyType": "aoe-cooldown-planning",
       "participants": [
@@ -20358,10 +20362,10 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/거인의-강타",
+        "08-직업별-Knowledge-Base/13-전사/공용/Skills/칼날폭풍",
         "08-직업별-Knowledge-Base/13-전사/무기/Skills/회전베기",
         "08-직업별-Knowledge-Base/13-전사/공용/Skills/충격파"
       ],
@@ -20378,7 +20382,7 @@
     },
     "warrior-arms-bladestorm-slayer": {
       "id": "warrior-arms-bladestorm-slayer",
-      "name": "칼날폭풍-불안정한-정신-학살자의-지배",
+      "name": "칼날폭풍-불안정한 정신-학살자의 지배",
       "type": "synergy",
       "synergyType": "slayer-cooldown-link",
       "participants": [
@@ -20642,7 +20646,7 @@
     },
     "SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE": {
       "id": "SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE",
-      "name": "쇄파-거신의-지배-복수",
+      "name": "쇄파-거신의 지배-복수",
       "type": "synergy",
       "synergyType": "colossus-damage-window",
       "participants": [
@@ -20673,7 +20677,7 @@
     },
     "warrior_protection_ravager_bleeds": {
       "id": "warrior_protection_ravager_bleeds",
-      "name": "쇠날발톱-피와번개-출혈강화",
+      "name": "쇠날발톱-피와 번개 출혈 강화",
       "type": "synergy",
       "synergyType": "ravager_bleed_amp",
       "participants": [
@@ -20704,7 +20708,7 @@
     },
     "warrior_protection_season2_free_revenge": {
       "id": "warrior_protection_season2_free_revenge",
-      "name": "시즌2-무료복수-방패밀쳐내기-출혈",
+      "name": "시즌 2 무료 복수와 방패 밀쳐내기",
       "description": "시즌 2 2세트는 무료 복수 피해를 15% 높이고 다음 방패 밀쳐내기 피해를 20% 강화한다. 4세트는 무료 복수와 쇠날발톱이 적중한 모든 대상에게 12초 출혈을 적용하고 쇠날발톱 쿨다운을 30초 줄인다. 유료 복수는 이 추가 출혈의 조건이 아니다.",
       "type": "synergy",
       "synergyType": "free_revenge_tier_bleed",
@@ -20902,7 +20906,7 @@
     },
     "warrior_protection_blood_and_thunder": {
       "id": "warrior_protection_blood_and_thunder",
-      "name": "피와-번개-출혈-적용",
+      "name": "피와 번개-천둥벼락 출혈 적용",
       "type": "synergy",
       "synergyType": "rend_application",
       "participants": [
@@ -20930,7 +20934,7 @@
     },
     "warrior-fury-rampage-enrage": {
       "id": "warrior-fury-rampage-enrage",
-      "name": "광란-격노-피의-갈증",
+      "name": "광란-격노-피의 갈증",
       "type": "synergy",
       "synergyType": "rage-spend-enrage-engine",
       "participants": [
@@ -20971,7 +20975,7 @@
     },
     "warrior_fury_hack_and_slash": {
       "id": "warrior_fury_hack_and_slash",
-      "name": "광란-자르고-베기-충전",
+      "name": "광란-자르고 베기-충전 반환",
       "type": "synergy",
       "synergyType": "rage_generator_refund",
       "participants": [
@@ -21029,7 +21033,7 @@
     },
     "warrior-fury-recklessness-window": {
       "id": "warrior-fury-recklessness-window",
-      "name": "무모한-희생-광란-오딘의-격노",
+      "name": "무모한 희생-광란-오딘의 격노",
       "type": "synergy",
       "synergyType": "major-cooldown-rage-window",
       "participants": [
@@ -21065,7 +21069,7 @@
     },
     "warrior-fury-mountain-thane-thunder": {
       "id": "warrior-fury-mountain-thane-thunder",
-      "name": "벼락-우레-작렬-폭풍의-화신",
+      "name": "벼락-우레 작렬-폭풍의 화신",
       "type": "synergy",
       "synergyType": "mountain-thane-thunder-window",
       "participants": [
@@ -21098,7 +21102,7 @@
     },
     "warrior-fury-anger-management": {
       "id": "warrior-fury-anger-management",
-      "name": "분노-제어-무모한-희생-투신",
+      "name": "분노 제어-무모한 희생-투신",
       "type": "synergy",
       "synergyType": "cooldown-reduction-alignment",
       "participants": [
@@ -21130,7 +21134,7 @@
     },
     "warrior-fury-raging-blow-onslaught-generation": {
       "id": "warrior-fury-raging-blow-onslaught-generation",
-      "name": "분노의-강타-피의-갈증-분노-생성",
+      "name": "분노의 강타-피의 갈증 분노 생성",
       "type": "synergy",
       "synergyType": "generator-reset-priority",
       "participants": [
@@ -21165,7 +21169,7 @@
     },
     "warrior-fury-whirlwind-multi-target": {
       "id": "warrior-fury-whirlwind-multi-target",
-      "name": "소용돌이-고기칼-분노의-강타",
+      "name": "소용돌이-고기칼-광역 확산",
       "type": "synergy",
       "synergyType": "whirlwind-cleave-window",
       "participants": [
@@ -21206,7 +21210,7 @@
     },
     "warrior_fury_rampaging_ruin": {
       "id": "warrior_fury_rampaging_ruin",
-      "name": "소용돌이-연마-빗발치는-광란",
+      "name": "소용돌이 연마-빗발치는 광란",
       "type": "synergy",
       "synergyType": "conditional_rampage_aoe",
       "participants": [
@@ -21237,7 +21241,7 @@
     },
     "warrior_fury_season2_recklessness": {
       "id": "warrior_fury_season2_recklessness",
-      "name": "시즌2-무모한-희생-강화",
+      "name": "시즌 2 무모한 희생 강화",
       "type": "synergy",
       "synergyType": "recklessness_tier_extension",
       "participants": [
@@ -21272,7 +21276,7 @@
     },
     "warrior-fury-bloodthirst-bleed-survival": {
       "id": "warrior-fury-bloodthirst-bleed-survival",
-      "name": "피의-갈증-혈기-생존-출혈",
+      "name": "피의 갈증-혈기 생존 출혈",
       "description": "혈기 어린 칼날은 피의 갈증 치명타로 6초 출혈과 출혈 피해만큼의 회복을 만듭니다. 혈행성 전이는 피의 갈증 사용 후 8초 동안 자신의 출혈 피해를 20% 높이지만 출혈을 직접 걸지는 않습니다. 격노의 재생력은 별도로 8초 동안 피해를 30% 줄이고 피의 갈증에 최대 생명력의 20% 추가 회복을 붙입니다. 활기의 격노를 선택하면 11초로 늘고 사용 즉시 10%를 회복합니다. 출혈 회복, 피의 갈증 추가 회복, 생존기 즉시 회복은 서로 다른 효과입니다.",
       "type": "synergy",
       "synergyType": "bloodthirst-bleed-survival",
@@ -21308,7 +21312,7 @@
     },
     "warrior_fury_storm_of_blood": {
       "id": "warrior_fury_storm_of_blood",
-      "name": "피의-폭풍-출혈-적용",
+      "name": "피의 폭풍-소용돌이 출혈 적용",
       "type": "synergy",
       "synergyType": "rend_application",
       "participants": [
@@ -21376,7 +21380,7 @@
     },
     "warrior-fury-slayer-execute": {
       "id": "warrior-fury-slayer-execute",
-      "name": "학살자의-지배-마무리-일격-칼날폭풍",
+      "name": "학살자의 지배-마무리 일격-칼날폭풍",
       "type": "synergy",
       "synergyType": "slayer-execute-window",
       "participants": [

@@ -108,7 +108,7 @@ for (const id of [390713, 382953]) {
   assert(!JSON.stringify(synergies).includes(String(id)), 'Retired talent graph reference must not return');
 }
 assert.deepEqual(synergies['warrior-arms-sudden-death-massacre-dance'].participants, ['29725', '281001', '163201']);
-assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살-대학살-마무리-조건');
+assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살-대학살-마무리 조건');
 for (const id of [29725, 281001]) assert.equal(skills[id].patch, '12.1');
 assert.equal(skills[163201].patch, '12.1');
 assert.equal(skills[163201].englishName, 'Execute');
@@ -153,7 +153,7 @@ for (const id of [1261051, 1261049, 262150, 383154]) {
 assert.equal(skills[1261051].koreanName, '전술적 우위');
 assert.match(skills[1261051].description, /거인의 강타.*급살 1회/);
 assert.match(skills[1261049].description, /휩쓸기 일격 6중첩/);
-assert.match(skills[262150].description, /140%.*주 대상에게 피해를 주지 않는다/);
+assert.match(skills[262150].description, /140%.*주 대상.*(피해를 주지 않는다|맞지 않는다)/);
 assert.match(skills[383154].description, /치명타 확률을 5%.*35% 미만.*33%/);
 assert.deepEqual(synergies.warrior_arms_smash_grants.participants, ['167105', '1261051', '29725', '1261049', '260708']);
 assert.deepEqual(synergies.warrior_arms_dreadnaught.participants, ['7384', '262150']);
@@ -424,7 +424,7 @@ for (const id of [315720, 388933]) {
   assert.equal(skills[id], undefined);
   assert.ok(!JSON.stringify(synergies).includes(String(id)));
 }
-assert.equal(synergies['warrior-fury-raging-blow-onslaught-generation'].name, '분노의-강타-피의-갈증-분노-생성');
+assert.equal(synergies['warrior-fury-raging-blow-onslaught-generation'].name, '분노의 강타-피의 갈증 분노 생성');
 assert.ok(!guide.includes('피의 갈증/분노의 강타/맹공'));
 assert.ok(!guide.includes('맹공: 비는 구간'));
 for (const id of [383459, 383922, 388004, 388049, 389603, 391683, 392536, 394329]) {

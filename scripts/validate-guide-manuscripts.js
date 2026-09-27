@@ -1444,6 +1444,14 @@ function main() {
   }
   assert(!JSON.stringify(beastMastery.heroBranches[0]).includes('"skillId":"466930"') && beastMastery.heroBranches[1].singleTarget.priority.some(row => row.skillId === '392060'), 'Pack Leader must not borrow Dark Ranger casts');
   const scopedSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies);
+  const armsSynergyIds = ['warrior-arms-colossus-smash-mortal-strike', 'warrior-arms-warbreaker-sweeping-strikes', 'warrior-arms-execute-precision', 'warrior-arms-rend-bleed-package', 'warrior-arms-overpower-tactician-warlord', 'warrior-arms-bladestorm-warbreaker-aoe'];
+  for (const id of armsSynergyIds) {
+    const note = scopedSynergies.find(row => row.id === id);
+    assert(note?.patch === '12.1' && note.description?.length > 60, `Arms relationship ${id} must retain reviewed 12.1 explanation`);
+  }
+  assert(scopedSynergies.find(row => row.id === 'warrior-arms-overpower-tactician-warlord')?.name === '제압-전술가-전쟁의 지배자', 'Synergy display names must use authored Korean names rather than filenames');
+  assert(scopedSynergies.find(row => row.id === 'SY-DH-Devourer-Midnight-VoidMetamorphosis')?.name === '한밤-공허 탈태', 'Name fallback must preserve authored Korean spacing across classes');
+  assert(scopedSynergies.find(row => row.id === 'warrior-arms-rend-bleed-package')?.description.includes('죽음의 상처'), 'Arms bleed graph must keep Deep Wounds application distinct from Rend');
   const mageFrostSynergies = scopedSynergies.filter(row => row.class === 'Mage' && row.spec === 'Frost');
   assert(mageFrostSynergies.length === 18 && mageFrostSynergies.every(row => row.description?.length > 30 && row.participants.every(id => kbSkills[id])), 'All 18 Frost relationships need real participants and authored explanations');
   assert(mageFrostSynergies.every(row => row.participants.every(id => !['1296585', '1296586'].includes(id))), 'Frost graph must show actual stack/proc effects instead of internal set icons');
