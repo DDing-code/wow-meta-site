@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '혈기 죽음의 기사 12.1 9월 23일 긴급 수정 반영', partial: true,
+    guideIds: ['deathknight-blood'], commits: ['5383c6b9'],
+    body: '혈기 전체 피해 -6%, 죽음의 일격 공격력 +15%, 치명적인 접촉 60%와 죽음의 인도자 여섯 항목 상향을 공식 한국어 변경 내역·툴팁으로 가이드와 KB·스펠 DB에 반영했습니다. 조정 전 산레인 추천·사용률은 현행 순위의 근거에서 제외했습니다. 조정 후 동조건 로그 비교와 전체 특성 검수는 진행 중입니다.' },
   { date: '2026-09-27', title: '부정 죽음의 기사 12.1 산레인·역병내림 긴급 수정 반영', partial: true,
     guideIds: ['deathknight-unholy'], commits: ['7238ce4d'],
     body: '9월 23~24일 공식 조정과 한국어 툴팁을 대조해 산레인·역병내림을 레이드·쐐기의 첫 비교 빌드로, 종말의 기수를 대안으로 분리했습니다. 고초·슬픔의 고통·핏빛 전율·광적인 피의 갈증을 KB와 스펠 DB에 추가하고 조건부 오프닝을 고쳤습니다. 최신 상위 로그와 전체 특성 검수는 진행 중입니다.' },
