@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '부정 죽음의 기사 12.1 산레인·역병내림 긴급 수정 반영', partial: true,
+    guideIds: ['deathknight-unholy'], commits: ['7238ce4d'],
+    body: '9월 23~24일 공식 조정과 한국어 툴팁을 대조해 산레인·역병내림을 레이드·쐐기의 첫 비교 빌드로, 종말의 기수를 대안으로 분리했습니다. 고초·슬픔의 고통·핏빛 전율·광적인 피의 갈증을 KB와 스펠 DB에 추가하고 조건부 오프닝을 고쳤습니다. 최신 상위 로그와 전체 특성 검수는 진행 중입니다.' },
   { date: '2026-09-23', title: '냉기 죽음의 기사 12.1 빌드·공식 조정 재검토', partial: true,
     guideIds: ['deathknight-frost'], commits: ['8a341576'],
     body: '9월 갱신된 Wowhead·Icy Veins·Method 자료와 Blizzard 12.1 노트를 대조해 레이드·쐐기 기본 비교를 죽음의 인도자·숨결로 고쳤습니다. 종말의 기수와 냉기파멸은 조건부 대안으로 분리하고, 누락된 서리수확자를 한국어 툴팁·아이콘으로 KB와 스펠 DB에 추가했습니다. 9월 22일 영어 긴급 수정의 한국 서버 적용 시각과 최신 레이드 로그는 계속 확인 중입니다.' },
