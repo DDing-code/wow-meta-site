@@ -1578,6 +1578,15 @@ function main() {
   assert(devourer.heroBranches[0].skillIds.includes('1239123') && !devourer.heroBranches[0].skillIds.includes('1239519') && devourer.inlineTermSpellIds?.['굶주린 베기'] === '1239123' && devourer.opener.steps.filter(step => ['1245412', '1246167'].includes(step.skillId)).length === 1, 'Devourer guide must show the cast tooltip and a single pre-Meta proc builder');
   assert(devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('6초만 지속') && paragraph.includes('사신의 대가'))), 'Devourer must explain carrying the Hungering Slash proc into Meta');
   assert(devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('집어삼키기는 격노 16을 생성') && paragraph.includes('종료가 늦어질'))) && devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('격노가 25% 더 빨리 소모'))), 'Devourer must explain the single-target generator and AoE exit tradeoff');
+  for (const id of ['1238488', '1242492', '1256301', '1244220', '1223918', '1239537', '1272842', '1238739', '1237270', '1242486', '1250088', '1250094', '1240201']) {
+    assert(kbSkills[id]?.patch === '12.1' && kbSkills[id]?.description?.length > 40 && !kbSkills[id].description.startsWith('#'), `Devourer talent ${id} must retain reviewed 12.1 text`);
+  }
+  assert(kbSkills['1242492'].description.includes('소모한 영혼') && kbSkills['1242492'].description.includes('0.25%'), 'Emptiness must scale with souls spent, not souls collected');
+  assert(kbSkills['1256301'].description.includes('집어삼키기') && kbSkills['1256301'].description.includes('35%') && !kbSkills['1256301'].description.includes('흡수'), 'Voidfall tooltip must identify Devour as its generation condition');
+  assert(kbSkills['1242486'].description.includes('항상 치명타') && kbSkills['1250088'].description.includes('3%') && kbSkills['1250094'].description.includes('영혼 파편 5개'), 'Midnight apex ranks must stay separate');
+  assert(kbSkills['1240201'].description.includes('12%') && devourer.heroBranches[1].bullets.some(line => line.includes('포식자의 이빨')), 'Devourer\'s Bite must not be treated as Void-Scarred exclusive');
+  const devourerSynergies = JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies;
+  assert(devourerSynergies['집어삼키기_공허내림_수확']?.patch === '12.1' && !devourerSynergies['흡수_공허내림_수확'], 'Voidfall synergy must link Devour rather than the obsolete Consume chain');
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
   const havoc = manuscripts['demonhunter-havoc'];
   const havocSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '02-악마사냥꾼', '파멸', 'Meta', 'guide-12.1.json');

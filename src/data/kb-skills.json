@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T01:25:00.153Z",
+    "generatedAt": "2026-09-27T01:39:03.475Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2979,
-    "rawTotalSkills": 2979,
+    "totalSkills": 2981,
+    "rawTotalSkills": 2981,
     "duplicateIds": [],
     "totalSynergies": 607,
     "stats": {
-      "total": 2979,
+      "total": 2981,
       "byType": {
         "buff": 137,
         "hero-talent": 552,
         "atomic-skill": 558,
         "proc": 29,
         "skill": 125,
-        "talent": 1004,
+        "talent": 1006,
         "spec-talent": 386,
         "passive": 78,
         "hero-tree": 2,
@@ -31,7 +31,7 @@
       },
       "byClass": {
         "DeathKnight": 127,
-        "DemonHunter": 149,
+        "DemonHunter": 151,
         "Druid": 215,
         "Evoker": 140,
         "Hunter": 225,
@@ -52,7 +52,7 @@
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
-        "DemonHunter-포식": 35,
+        "DemonHunter-포식": 37,
         "Druid-공용": 54,
         "Druid-수호": 41,
         "Druid-야성": 51,
@@ -104,8 +104,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2896,
-        "withSynergies": 2098,
+        "withWikilinks": 2898,
+        "withSynergies": 2101,
         "avgLinkDensity": "0.039"
       }
     }
@@ -112450,14 +112450,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_consume.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 1,
-        "synergyCount": 0,
-        "linkDensity": 0.013,
+        "synergyCount": 1,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -113228,14 +113230,15 @@
         ],
         "relatedTalents": [
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 7,
-        "synergyCount": 5,
-        "linkDensity": 0.05,
+        "wikilinkCount": 9,
+        "synergyCount": 6,
+        "linkDensity": 0.054,
         "hasWikilinks": true
       },
       "source": {
@@ -113817,14 +113820,14 @@
       "icon": "inv_12_dh_void_ability_wastenot",
       "iconName": "inv_12_dh_void_ability_wastenot",
       "school": "",
-      "cooldown": "공허 광선 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 낭비는 금지 (Waste Not)",
+      "description": "공허 광선으로 피해를 입힐 때 영혼 파편 생성 확률이 200% 증가한다. 공허 광선은 격노 소비와 다음 공허 탈태를 위한 영혼 확보를 함께 담당한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113849,7 +113852,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.044,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -115067,14 +115070,14 @@
       "icon": "inv_12_dh_void_ability_firstofsouls",
       "iconName": "inv_12_dh_void_ability_firstofsouls",
       "school": "",
-      "cooldown": "영혼 파편 획득 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼의 향연 (Feast of Souls)",
+      "description": "영혼 파편이 6초 동안 공격력을 1% 증가시킨다. 여러 번 적용하면 중첩된다. 파편은 공허 탈태 진입 자원일 뿐 아니라 피해 증가 효과도 유지한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115087,8 +115090,8 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
         ],
         "relatedTalents": [],
         "relatedHeroTalents": []
@@ -115118,14 +115121,14 @@
       "icon": "inv_12_dh_void_ability_momentofcraving",
       "iconName": "inv_12_dh_void_ability_momentofcraving",
       "school": "",
-      "cooldown": "공허 광선 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 갈망의 순간 (Moment of Craving)",
+      "description": "공허 광선 정신 집중을 끝까지 마치면 수확의 재사용 대기시간이 초기화되고, 다음 수확이 최대 6개의 영혼 파편을 추가로 수집한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115149,7 +115152,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.041,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -115171,14 +115174,14 @@
       "icon": "inv_12_dh_void_ability_sunder",
       "iconName": "inv_12_dh_void_ability_sunder",
       "school": "",
-      "cooldown": "수확 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 영혼구체자 (Soulshaper)",
+      "description": "수확이 수집한 영혼 파편 하나당 수확의 공격력이 8% 증가한다. 갈망의 순간으로 추가 파편을 수집하는 수확과 맞물린다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115202,7 +115205,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.039,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -115380,14 +115383,14 @@
       "icon": "inv_polearm_2h_voidscythe_d_01",
       "iconName": "inv_polearm_2h_voidscythe_d_01",
       "school": "",
-      "cooldown": "수확 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 두 번째 포식 (Second Helping)",
+      "description": "수확의 최대 충전 횟수가 1회 증가한다. 충전을 넘치게 두지 않으면서 파편 회수에 사용할 시점을 고를 여유가 생긴다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115410,7 +115413,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.024,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -115483,14 +115486,14 @@
       "icon": "inv_12_dh_void_ability_devourerbite",
       "iconName": "inv_12_dh_void_ability_devourerbite",
       "school": "",
-      "cooldown": "공허칼날 / 사냥 피해 후 10초",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
-      "range": "100 야드",
-      "description": "# 포식자의 이빨 (Devourer's Bite)",
+      "range": "대상",
+      "description": "공허칼날과 사냥으로 피해를 입힌 대상이 10초 동안 자신에게 받는 피해가 12% 증가한다. 여러 번 적용하면 중첩된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115516,7 +115519,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 3,
-        "linkDensity": 0.042,
+        "linkDensity": 0.048,
         "hasWikilinks": true
       },
       "source": {
@@ -116831,14 +116834,14 @@
       "icon": "inv12_apextalent_demonhunter_midnight",
       "iconName": "inv12_apextalent_demonhunter_midnight",
       "school": "",
-      "cooldown": "공허 탈태 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
-      "resourceCost": "영혼 파편",
+      "resourceCost": "없음",
       "range": "자신",
-      "description": "# 한밤 (Midnight)",
+      "description": "한밤 첫 단계는 붕괴하는 별이 항상 치명타 및 극대화 효과를 발휘하게 한다. 공허 탈태 진입 시 파편 5개와 즉시 붕괴하는 별을 제공하는 효과는 첫 단계가 아니라 마지막 단계다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116856,15 +116859,17 @@
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선"
         ],
         "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-중간",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-최종",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/박멸"
         ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 6,
-        "synergyCount": 5,
-        "linkDensity": 0.055,
+        "wikilinkCount": 8,
+        "synergyCount": 7,
+        "linkDensity": 0.067,
         "hasWikilinks": true
       },
       "source": {
@@ -116886,14 +116891,14 @@
       "icon": "inv_cosmicvoid_buff",
       "iconName": "inv_cosmicvoid_buff",
       "school": "",
-      "cooldown": "공허 탈태 내부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
-      "resourceCost": "영혼 파편 획득",
+      "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공백 (Emptiness)",
+      "description": "공허 탈태 중 소모한 영혼 하나당 가속이 0.25%씩 증가하며 최대 25%까지 중첩된다. 영혼 파편을 단순히 획득하는 것과는 다른 조건이다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116916,7 +116921,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.033,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -117858,14 +117863,14 @@
       "icon": "inv_12_dh_void_ability_voidray",
       "iconName": "inv_12_dh_void_ability_voidray",
       "school": "",
-      "cooldown": "공허 탈태 내부",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허정화 (Voidpurge)",
+      "description": "공허 탈태 중 공허 광선의 재사용 대기시간이 2초 감소한다.  광선을 더 자주 사용할 수 있으므로 파편 생성과 격노 소모 정지에 연결된다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117889,7 +117894,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.035,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -122071,6 +122076,113 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Talents\\조화로운연계.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250088": {
+      "id": "1250088",
+      "type": "talent",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "한밤",
+      "koreanName": "한밤",
+      "englishName": "Midnight",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "iconName": "inv_ability_voidweaverpriest_entropicrift",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "한밤 2~3단계는 포인트마다 모든 우주 공격력을 3% 높이고, 붕괴하는 별의 치명타 및 극대화 피해를 자신의 치명타 및 극대화율의 50%만큼 높인다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_voidweaverpriest_entropicrift.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_ability_voidweaverpriest_entropicrift.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_ability_voidweaverpriest_entropicrift.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_ability_voidweaverpriest_entropicrift.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_ability_voidweaverpriest_entropicrift.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-최종"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 3,
+        "synergyCount": 3,
+        "linkDensity": 0.034,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\한밤-중간.md",
+        "lastUpdate": ""
+      }
+    },
+    "1250094": {
+      "id": "1250094",
+      "type": "talent",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "한밤",
+      "koreanName": "한밤",
+      "englishName": "Midnight",
+      "icon": "ability_argus_edgeofobliteration",
+      "iconName": "ability_argus_edgeofobliteration",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "한밤 4단계를 찍으면 공허 탈태에 들어갈 때 영혼 파편 5개가 생성되고 즉시 붕괴하는 별을 시전할 수 있다. 이 효과는 한밤 첫 단계만으로는 발동하지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_argus_edgeofobliteration.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_argus_edgeofobliteration.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_argus_edgeofobliteration.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_argus_edgeofobliteration.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_argus_edgeofobliteration.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-중간",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 4,
+        "synergyCount": 4,
+        "linkDensity": 0.043,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\한밤-최종.md",
         "lastUpdate": ""
       }
     },
@@ -126780,10 +126892,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공허내림",
+      "description": "현재 한국어 툴팁에서 포식은 집어삼키기를 사용할 때 35% 확률로 공허내림 중첩을 얻는다. 3중첩이 되면 수확이 중첩 하나를 소모해 대상 위치에 유성을 부른다. 유성은 8미터 안에 우주 피해를 주며 8명을 초과하면 피해가 감소한다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -126796,7 +126908,7 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기",
           "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
         ],
         "relatedTalents": [],
@@ -126805,7 +126917,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.041,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -144201,14 +144313,14 @@
       "icon": "inv_12_dh_void_ability_reap",
       "iconName": "inv_12_dh_void_ability_reap",
       "school": "",
-      "cooldown": "수확 연계",
+      "cooldown": "없음",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 암영 칼날 (Umbral Blade)",
+      "description": "수확의 재사용 대기시간이 가속에 따라 감소한다.  공백으로 공허 탈태 중 가속을 높이는 빌드에서는 수확 사용 간격도 함께 줄어든다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -144231,7 +144343,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.027,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {

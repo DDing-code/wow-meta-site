@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T01:25:00.155Z",
+    "generatedAt": "2026-09-27T01:39:03.476Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -2183,7 +2183,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
@@ -2213,7 +2213,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/영혼제물",
@@ -2358,6 +2358,31 @@
         "lastUpdate": "2026-09-08"
       }
     },
+    "집어삼키기_공허내림_수확": {
+      "id": "집어삼키기_공허내림_수확",
+      "name": "집어삼키기-공허내림-수확",
+      "type": "synergy",
+      "synergyType": "unknown",
+      "participants": [],
+      "class": "DemonHunter",
+      "spec": "Devourer",
+      "heroTalent": null,
+      "importance": 3,
+      "patch": "12.1",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/집어삼키기",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
+      ],
+      "linkedBuffs": [],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/세계학살자"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\집어삼키기-공허내림-수확.md",
+        "lastUpdate": ""
+      }
+    },
     "SY-DH-Devourer-DevourersBite-Voidsurge": {
       "id": "SY-DH-Devourer-DevourersBite-Voidsurge",
       "name": "포식자의이빨-공허쇄도",
@@ -2371,7 +2396,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허탈태"
@@ -2398,7 +2423,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/붕괴하는별",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허광선",
@@ -2407,35 +2432,12 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-중간",
+        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/한밤-최종",
         "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/도태"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\한밤-공허탈태.md",
-        "lastUpdate": ""
-      }
-    },
-    "흡수_공허내림_수확": {
-      "id": "흡수_공허내림_수확",
-      "name": "흡수-공허내림-수확",
-      "type": "synergy",
-      "synergyType": "unknown",
-      "participants": [],
-      "class": "DemonHunter",
-      "spec": "Devourer",
-      "heroTalent": null,
-      "importance": 3,
-      "patch": "12.0.5",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/흡수",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/수확"
-      ],
-      "linkedBuffs": [],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/공허내림",
-        "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/세계학살자"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\흡수-공허내림-수확.md",
         "lastUpdate": ""
       }
     },
