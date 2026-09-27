@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '파멸·복수 악마사냥꾼 12.1 알드라치 긴급 수정 반영', partial: true,
+    guideIds: ['demonhunter-havoc', 'demonhunter-vengeance'], commits: ['0633eea5'],
+    body: '9월 23일 공식 상향을 전투검술·파괴자의 글레이브·파괴자의 징표·무너진 영혼의 KB와 스펠 DB, 두 가이드에 반영했습니다. 파멸 징표는 공식 변경표와 공유 툴팁이 불일치해 확정 수치로 사용하지 않았습니다. 조정 후 영웅 특성별 상위 로그 비교는 진행 중입니다.' },
   { date: '2026-09-27', title: '혈기 죽음의 기사 12.1 9월 23일 긴급 수정 반영', partial: true,
     guideIds: ['deathknight-blood'], commits: ['5383c6b9'],
     body: '혈기 전체 피해 -6%, 죽음의 일격 공격력 +15%, 치명적인 접촉 60%와 죽음의 인도자 여섯 항목 상향을 공식 한국어 변경 내역·툴팁으로 가이드와 KB·스펠 DB에 반영했습니다. 조정 전 산레인 추천·사용률은 현행 순위의 근거에서 제외했습니다. 조정 후 동조건 로그 비교와 전체 특성 검수는 진행 중입니다.' },
