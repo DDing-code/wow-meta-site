@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '포식 악마사냥꾼 12.1 생성기·특성 교정', partial: true,
+    guideIds: ['demonhunter-devourer'], commits: ['f42d8a64'],
+    body: '집어삼키기를 즉시 시전 소비기/특성으로 잘못 분류한 KB·스펠 DB를 1.5초 시전 격노 생성기로 교정했습니다. 영혼 탐식의 요구 영혼 35개와 내부 격노 소모 속도 +25%를 가이드에 반영했습니다. 나머지 구버전 노트와 최신 상위 로그 비교는 검수 중입니다.' },
   { date: '2026-09-27', title: '파멸·복수 악마사냥꾼 12.1 알드라치 긴급 수정 반영', partial: true,
     guideIds: ['demonhunter-havoc', 'demonhunter-vengeance'], commits: ['0633eea5'],
     body: '9월 23일 공식 상향을 전투검술·파괴자의 글레이브·파괴자의 징표·무너진 영혼의 KB와 스펠 DB, 두 가이드에 반영했습니다. 파멸 징표는 공식 변경표와 공유 툴팁이 불일치해 확정 수치로 사용하지 않았습니다. 조정 후 영웅 특성별 상위 로그 비교는 진행 중입니다.' },
