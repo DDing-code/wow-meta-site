@@ -1,5 +1,8 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  { date: '2026-09-27', title: '마법사 공용 기술·시너지 12.1 검수', partial: true,
+    guideIds: ['mage-arcane', 'mage-fire', 'mage-frost'], commits: ['034991f5'],
+    body: '마법사 공용 기술 11개와 시너지 2개를 현재 한국어 툴팁에 맞춰 KB·스펠 DB에 반영했습니다. 점멸·일렁임의 재사용 대기시간과 환영 복제의 기본 위협 감소 효과를 교정하고 비전 가이드의 유틸 설명을 보완했습니다. 각 전문화 특성과 최신 로그의 전체 검수는 진행 중입니다.' },
   { date: '2026-09-27', title: '암살·잠행 도적 12.1 KB·유틸 연결 재검토', partial: true,
     guideIds: ['rogue-assassination', 'rogue-subtlety'], commits: ['98d98664'],
     body: '암살 KB의 6월 로그 비율을 현행 추천 근거에서 제외하고 영웅 특성별 판단을 12.1 공개 가이드와 대조했습니다. 잠행은 혼절시키기의 비전투 조건, 독칼과 독 칼의 역할을 교정해 사이트 시너지 DB에 반영했습니다. 최신 로그와 나머지 특성 검수는 진행 중입니다.' },

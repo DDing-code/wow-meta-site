@@ -174,6 +174,16 @@ const SpecCard = styled(Link)`
   border-left: 3px solid transparent;
   background: ${props => props.$partial ? 'rgba(226, 180, 91, 0.075)' : 'transparent'};
 
+  &::before {
+    content: '';
+    display: ${props => props.$partial ? 'block' : 'none'};
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 4px;
+    pointer-events: none;
+    background: repeating-linear-gradient(125deg, #d2b373 0 8px, #463a27 8px 16px);
+  }
+
   &::after {
     content: '';
     position: absolute;
