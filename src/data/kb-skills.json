@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T01:07:49.539Z",
+    "generatedAt": "2026-09-27T01:18:46.817Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
-    "totalSkills": 2978,
-    "rawTotalSkills": 2978,
+    "totalSkills": 2979,
+    "rawTotalSkills": 2979,
     "duplicateIds": [],
     "totalSynergies": 607,
     "stats": {
-      "total": 2978,
+      "total": 2979,
       "byType": {
         "buff": 137,
         "hero-talent": 552,
         "atomic-skill": 558,
         "proc": 29,
         "skill": 125,
-        "talent": 1003,
+        "talent": 1004,
         "spec-talent": 386,
         "passive": 78,
         "hero-tree": 2,
@@ -31,7 +31,7 @@
       },
       "byClass": {
         "DeathKnight": 127,
-        "DemonHunter": 148,
+        "DemonHunter": 149,
         "Druid": 215,
         "Evoker": 140,
         "Hunter": 225,
@@ -52,7 +52,7 @@
         "DemonHunter-공용": 16,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
-        "DemonHunter-포식": 34,
+        "DemonHunter-포식": 35,
         "Druid-공용": 54,
         "Druid-수호": 41,
         "Druid-야성": 51,
@@ -112435,10 +112435,10 @@
       "castTime": "2초",
       "resourceCost": "",
       "range": "25야드",
-      "description": "# 흡수 (Consume)",
+      "description": "포식의 2초 시전 기본 생성기다. 대상에게 우주 피해를 주고 격노 8을 생성하며, 이동하면서 시전할 수 있다. 공허 탈태 중에는 집어삼키기로 대체된다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -112457,7 +112457,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.014,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {
@@ -114511,11 +114511,11 @@
       "cooldown": "45초",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "30미터",
-      "description": "# 공허 회오리 (Void Nova)",
+      "range": "30야드",
+      "description": "30야드 안의 대상과 주위 적에게 우주 피해를 주고 2초 동안 기절시키는 45초 재사용 대기시간의 원거리 광역 제어기다. 근접 범위의 혼돈의 회오리와 다른 위치에서 사용할 수 있다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -114527,17 +114527,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_voiddh_ability_voidnova.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Skills/혼돈의회오리"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
-        "synergyCount": 1,
-        "linkDensity": 0.016,
-        "hasWikilinks": true
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\공허회오리.md",
@@ -115264,8 +115262,8 @@
         "lastUpdate": ""
       }
     },
-    "1239519": {
-      "id": "1239519",
+    "1239123": {
+      "id": "1239123",
       "type": "atomic-skill",
       "class": "DemonHunter",
       "spec": "포식",
@@ -115281,11 +115279,11 @@
       "cooldown": "조건부",
       "castTime": "즉시",
       "resourceCost": "없음",
-      "range": "근접 광역",
-      "description": "# 굶주린 베기 (Hungering Slash)",
+      "range": "주위 8야드",
+      "description": "굶주린 베기 특성을 선택하면 사냥 또는 공허칼날이 적중한 뒤 6초 동안 공허칼날 자리에 나타나는 실제 시전 스킬이다. 주위 적에게 우주 피해를 주고 격노 10과 영혼 파편 최대 2개를 만든다. 사용하면 복수의 퇴각에 일시적인 추가 충전을 주며, 다음 6초 안에 사용하는 복수의 퇴각에 추가 우주 피해를 붙인다. 특성 노드 ID 1239519가 아니라 시전 스킬 ID 1239123으로 로그와 딜사이클을 확인한다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115298,23 +115296,73 @@
       },
       "synergies": {
         "relatedSkills": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날"
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사신의대가",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/공허칼날",
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/사냥"
         ],
-        "relatedTalents": [],
-        "relatedHeroTalents": [
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Hero-Talents/공허쇄도",
-          "08-직업별-Knowledge-Base/02-악마사냥꾼/공용/Hero-Talents/불타는칼날"
-        ]
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Talents/굶주린베기"
+        ],
+        "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.046,
+        "synergyCount": 4,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Skills\\굶주린베기.md",
+        "lastUpdate": ""
+      }
+    },
+    "1239519": {
+      "id": "1239519",
+      "type": "talent",
+      "class": "DemonHunter",
+      "spec": "포식",
+      "specs": [
+        "Devourer"
+      ],
+      "name": "굶주린 베기",
+      "koreanName": "굶주린 베기",
+      "englishName": "Hungering Slash",
+      "icon": "inv_12_dh_void_ability_reapersslice",
+      "iconName": "inv_12_dh_void_ability_reapersslice",
+      "school": "",
+      "cooldown": "없음",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "",
+      "description": "사냥 또는 공허칼날이 적중한 뒤 6초 동안 공허칼날을 굶주린 베기로 바꾸는 지속 효과 특성이다. 실제 베기 시전은 별도의 주문 ID 1239123이며, 격노 10과 영혼 파편 최대 2개를 만든다. 베기를 사용하면 복수의 퇴각에 일시적인 추가 충전이 생기고, 6초 안의 다음 복수의 퇴각에 추가 피해가 붙는다. 특성 노드 자체를 딜사이클의 시전 버튼으로 넣지 않는다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_reapersslice.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_12_dh_void_ability_reapersslice.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_12_dh_void_ability_reapersslice.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_dh_void_ability_reapersslice.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_12_dh_void_ability_reapersslice.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/02-악마사냥꾼/포식/Skills/굶주린베기"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.013,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Talents\\굶주린베기.md",
         "lastUpdate": ""
       }
     },
@@ -118750,10 +118798,10 @@
       "castTime": "즉시",
       "resourceCost": "",
       "range": "15야드",
-      "description": "# 공허칼날 (Voidblade)",
+      "description": "15야드 안의 대상에게 돌진해 우주 피해를 주는 30초 재사용 대기시간 스킬이다. 굶주린 베기 특성을 선택했다면 적중 후 6초 동안 공허칼날이 실제 시전 스킬인 굶주린 베기로 바뀐다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -118772,7 +118820,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
