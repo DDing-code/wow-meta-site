@@ -1,11 +1,11 @@
 export const guideManuscripts = {
   'demonhunter-havoc': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '실전 심화 공략',
     graphCenterSkillId: '198013',
     summary: '파멸은 안광으로 여는 짧은 악마 형상과 직접 탈태의 초기화를 이어 가는 근접 딜러입니다. 12.1에서는 시즌 2의 4세트가 정수 파쇄를 6초로 늘리고 증오의 순환까지 연결합니다. 지옥상흔은 첫 강화 소비와 심연의 응시를, 알드라치 파괴자는 글레이브 뒤 두 소비기의 순서와 징표 대상을 관리하는 것이 핵심입니다.',
-    sourceStatus: '2026-10-03 공식 10월 2일 목록·Method 9월 17일·Icy Veins 8월 30일 운용 재대조. 9월 23일 이후 악마사냥꾼 PvE 추가 조정 없음; 조정 후 로그·트리 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '9월 23일 알드라치 파괴자 상향은 Blizzard 한국어 긴급 수정과 Wowhead 한국어 툴팁으로 대조했습니다. 전투검술 15%·30%, 글레이브 공격력 +25%, 무너진 영혼 20%는 일치합니다. 파괴자의 징표만 공식 변경표는 파멸 7%·복수 8%, 9월 27일 공유 한국어 툴팁은 두 전문화 모두 8%로 불일치해 파멸의 실제 적용값을 확정하지 않습니다. 9월 24일 Wowhead는 레이드에 알드라치 파괴자, 일반 쐐기에 지옥상흔을 추천합니다. Icy Veins 8월·Method 9월 17일 추천은 이번 상향 전 자료입니다. 12.1 콘텐츠 업데이트 원문과 Archon 집계는 접근 제한으로 직접 확인하지 못했고, 비공개 The Fel Hammer 메시지도 인용하지 않았습니다. 10월 3일 공식 목록을 10월 2일 항목까지 다시 확인했고, 9월 23일 이후 파멸의 추가 PvE 변경은 찾지 못했습니다. Method 운용은 8월 고정본이 아니라 9월 17일 갱신본이지만 알드라치 상향 전입니다. 공유 한국어 툴팁의 8%는 9월 27일의 이전 확인 기록이며 이번에 새로 확인했다고 쓰지 않습니다.',
     sources: [
       {
@@ -148,6 +148,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 커밋 / 2026-10-03 확인',
         note: '파일 헤더 12.1.0.69933 확인. 파괴자의 징표·전투검술·영원한 사냥 마지막 노드·고삐 풀린 분노·공허의 절단기·붕괴하는 별·굶주린 베기·한밤 마지막 노드·영혼 탐식의 존재와 적용 범위를 선택 검사했습니다. 전체 트리 연결·포인트 또는 최적 운용 검증이 아닙니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/havoc/demon-hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 15,584건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/havoc/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 94,562건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=23',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T02:12:33.328Z · 장비 구간 328 · 333.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=151',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:30:31.008Z · 장비 구간 328 · 332.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '현재 사냥은 전문화 주문 370965이며 혼돈 피해입니다. 성약의 단 주문 323639의 자연 피해·흡혈 설명을 사용하지 않습니다.',
@@ -156,13 +184,16 @@ export const guideManuscripts = {
       '강화 소비 순서는 단일의 징표와 광역의 칼날의 기예 보상을 나눠 봅니다. 10월 3일 읽은 Method 9월 17일 원문도 단일과 쐐기의 소비 순서를 구분합니다. 과거 고정 SHA는 최신 트리나 최적해의 근거가 아닙니다.',
       '현재 타성 툴팁의 지속시간과 변경 안내가 일치하지 않으므로 마지막 글쿨까지 확정하는 타이밍 지시를 피했습니다.',
       '9월 23일 알드라치 강화 15%·30%, 글레이브 피해 +25%, 무너진 영혼 20%는 공식 조정과 한국어 툴팁으로 대조했습니다. 파멸 징표는 공식 7%와 공유 툴팁 8%가 달라 실제 적용값을 확정하지 않습니다.',
-      '최신 레이드·쐐기 사용률은 미확인입니다. 9월 24일 Wowhead의 레이드 알드라치·쐐기 지옥상흔 추천은 조정 후 공개 작성자 의견이지 동일 조건 로그 순위표가 아닙니다.',
+      '10월 8일 레이드·쐐기 집계는 공개 원본에서 확인했습니다. 실제 집계 범위는 최근 14일이며 조정 이후 기록만 제한한 사용률은 아닙니다. 9월 24일 Wowhead의 레이드 알드라치·쐐기 지옥상흔 추천은 조정 후 공개 작성자 의견이지 동일 조건 로그 순위표가 아닙니다.',
+      '10월 8일 악마사냥꾼 파멸의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '모든 흐름은 선택 특성이 있는 경우에만 적용합니다. 영원한 사냥 마지막 노드, 혼돈의 변신, 악마의 격화, 시즌 2의 4세트 유무를 먼저 확인하세요.',
       '타성 지속시간과 오라의 최종 격노 생성량은 실제 캐릭터의 툴팁·버프로 확인하세요. 출처 사이에 차이가 남아 있어, 이 가이드에서는 마지막 글쿨까지 확정한 순서를 제시하지 않습니다.',
       '개인 전투 로그나 장비를 받아 심크한 결과가 아닙니다. 특정 사용 횟수, DPS, 영웅 특성 우위를 모든 보스에 보장하지 않습니다.',
-      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트와 조정 후 동일 조건 로그 전수 대조는 남아 있으므로 검수 중 상태를 유지합니다.',
+      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트는 10월 8일 확인했으나 조정 후 동일 조건 로그 전수 대조가 남아 검수 중 상태를 유지합니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     playstyle: [
       {
@@ -1116,15 +1147,399 @@ export const guideManuscripts = {
         },
       ],
     },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 577,
+          heroTreeId: 35,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b45a5a56d30852c7563c63b70a726884e976468351f3d63ae704978036e28f6a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '알드라치 파괴자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 577,
+          heroTreeId: 34,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '2ab3269c2014e7dcaf5b881a8c3c6873fa0bfd7401293d23bd43dc0167d5c36b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '지옥상흔',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 577,
+          heroTreeId: 35,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b45a5a56d30852c7563c63b70a726884e976468351f3d63ae704978036e28f6a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '알드라치 파괴자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 15584,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/havoc/demon-hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/vmNMAkRdxJypQ6BW#fight=14',
+          recommendedCode: 'CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmwYmxwCAAAAAAAYmBYAAAAYA',
+          validation: {
+            specId: 577,
+            heroTreeId: 35,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 94562,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/havoc/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/Rx9rvW72ZhDKYc1G#fight=13',
+          recommendedCode: 'CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLMNmZGzYDAAAYAAAAMzgBAAAgB',
+          validation: {
+            specId: 577,
+            heroTreeId: 34,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0029776541003466435,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=23',
+            startedAt: '2026-10-07T02:12:33.328Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 333484,
+            itemLevelBracket: 328,
+            heroTree: 34,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '200166',
+                count: 3,
+              },
+              {
+                spellId: '131347',
+                count: 6,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '198793',
+                count: 11,
+              },
+              {
+                spellId: '188499',
+                count: 14,
+              },
+              {
+                spellId: '202719',
+                count: 1,
+              },
+              {
+                spellId: '258860',
+                count: 8,
+              },
+              {
+                spellId: '452497',
+                count: 4,
+              },
+              {
+                spellId: '210152',
+                count: 37,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '196718',
+                count: 1,
+              },
+              {
+                spellId: '232893',
+                count: 17,
+              },
+              {
+                spellId: '198013',
+                count: 11,
+              },
+              {
+                spellId: '370965',
+                count: 5,
+              },
+              {
+                spellId: '185123',
+                count: 2,
+              },
+              {
+                spellId: '258920',
+                count: 8,
+              },
+              {
+                spellId: '195072',
+                count: 12,
+              },
+              {
+                spellId: '201427',
+                count: 62,
+              },
+              {
+                spellId: '162794',
+                count: 65,
+              },
+              {
+                spellId: '198589',
+                count: 6,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 25214,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 319241,
+                uses: 31,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=151',
+            startedAt: '2026-10-07T01:30:31.008Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 332491,
+            itemLevelBracket: 328,
+            heroTree: 35,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '198793',
+                count: 13,
+              },
+              {
+                spellId: '258860',
+                count: 11,
+              },
+              {
+                spellId: '131347',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '370965',
+                count: 6,
+              },
+              {
+                spellId: '232893',
+                count: 19,
+              },
+              {
+                spellId: '196718',
+                count: 1,
+              },
+              {
+                spellId: '258920',
+                count: 12,
+              },
+              {
+                spellId: '198589',
+                count: 5,
+              },
+              {
+                spellId: '210152',
+                count: 46,
+              },
+              {
+                spellId: '200166',
+                count: 3,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '201427',
+                count: 91,
+              },
+              {
+                spellId: '442294',
+                count: 26,
+              },
+              {
+                spellId: '198013',
+                count: 17,
+              },
+              {
+                spellId: '195072',
+                count: 2,
+              },
+              {
+                spellId: '188499',
+                count: 13,
+              },
+              {
+                spellId: '185123',
+                count: 51,
+              },
+              {
+                spellId: '162794',
+                count: 37,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 313055,
+                uses: 32,
+              },
+              {
+                spellId: '413984',
+                activeMs: 36807,
+                uses: 3,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'demonhunter-vengeance': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '실전 심화 공략',
     graphCenterSkillId: '247454',
     summary: '복수는 영혼 파편을 모아 회복하고 들어올 피해에 방어기를 먼저 배정하는 탱커입니다. 시즌 2 세트의 불꽃의 인장 대상 관리에 더해, 9월 23일 알드라치 파괴자의 글레이브와 두 강화·징표가 상향됐습니다. 궤멸자는 탈태로 초기화한 첫 영혼 폭탄, 알드라치는 글레이브 뒤 균열·영혼 베어내기와 징표 대상을 중심으로 연습하세요.',
-    sourceStatus: '2026-10-03 공식 10월 2일 목록·Method 8월 27일·Icy Veins 8월 10일 재대조. 방어 조정 날짜와 조건 확인; 조정 후 영웅 특성 우위·트리 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Blizzard 공식 9월 23일 복수 알드라치 조정에서 전투검술 첫·둘째 강화 15%·30%, 글레이브 피해 +25%, 파괴자의 징표 중첩당 8%를 확인했고 한국어 툴팁과 대조했습니다. 이 조정 이전 공개 가이드의 궤멸자 추천을 현재 우위의 증거로 재사용하지 않습니다. 기본 방어·자원 순서는 기존 라이브 툴팁과 Wowhead·Icy Veins·Method 공개 가이드를 대조했습니다. 최신 WCL·Archon 동일 조건 비교와 개인 심크는 미확인입니다. SimulationCraft 복수 APL은 4월 수정본이며 비공개 The Fel Hammer 대화는 인용하지 않았습니다. 10월 3일 공식 목록에서 한국어 9월 2일 항목의 악마의 수호 15%, 공허의 절단기 6%, 지옥 황폐 치유 +25%를 확인했습니다. 따라서 공허의 절단기의 과거 5%와 현재 6% 차이는 공식 변경 이력이 설명하며, 해소되지 않은 동일 버전 수치 충돌로 취급하지 않습니다. 9월 23일 이후 복수의 추가 PvE 변경은 10월 2일까지 찾지 못했습니다.',
     playstyle: [
       {
@@ -2076,6 +2491,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 커밋 / 2026-10-03 확인',
         note: '파일 헤더 12.1.0.69933 확인. 파괴자의 징표·전투검술·영원한 사냥 마지막 노드·고삐 풀린 분노·공허의 절단기·붕괴하는 별·굶주린 베기·한밤 마지막 노드·영혼 탐식의 존재와 적용 범위를 선택 검사했습니다. 전체 트리 연결·포인트 또는 최적 운용 검증이 아닙니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 4,874건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 86,736건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/tHQFknmNhJxDwdgL#fight=4&source=63',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T09:31:35.020Z · 장비 구간 324 · 394.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FVdRW7pAwCaZTPJB#fight=1&source=19',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:05:32.421Z · 장비 구간 324 · 397.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '한국어 영혼 폭탄은 기본 25초 쿨다운·격노 40이며, 영혼 베어내기는 격노 35입니다. 둘의 연속 사용에 격노 75를 준비한다는 설명은 이 비용 합계에 근거합니다.',
@@ -2088,13 +2531,16 @@ export const guideManuscripts = {
       '9월 23일 복수 알드라치의 전투검술은 첫·둘째 강화 15%·30%, 글레이브 피해 +25%, 파괴자의 징표는 중첩당 8%로 조정됐습니다. 공식 변경표와 한국어 툴팁을 대조했습니다.',
       '현재 Archon 레이드·쐐기 최신 사용률과 개인 상위 로그는 확보하지 못했습니다. 궤멸자 기본 추천은 조정 전 공개 가이드에 근거하므로 지금의 피해 우위를 보장하지 않습니다.',
       '공허의 절단기의 6%는 한국어 9월 2일 공식 상향 이력과 일치합니다. 5%로 남은 과거 작성본을 같은 패치의 미해결 충돌로 일반화하지 않습니다.',
+      '10월 8일 악마사냥꾼 복수의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       'Blizzard 9월 23일 긴급 수정은 확인했습니다. 별도의 12.1 콘텐츠 업데이트 원문과 조정 후 동일 조건 Archon·WCL 집계는 확인하지 못했습니다.',
       'Wowhead 툴팁에는 다른 전문화 분기와 미해결 문자열이 함께 표시될 수 있습니다. 복수의 실제 사용 주문과 선택 특성을 확인하고, 파멸·포식의 자원 조건을 복사하지 않습니다.',
       '운석 낙하 미선택 목록, 정점 미완성 상태, 영혼 저미기 미선택 구성에는 같은 오프닝을 무조건 적용하지 않습니다. 차트에 적힌 파편·격노 조건이 충족되지 않으면 생성기를 먼저 사용합니다.',
       '최적 장비·영웅 특성의 실제 차이는 개인 장비, 대상 수, 전투 길이, 외부 지원에 따라 달라집니다. 개인 심크나 최신 동일 조건 로그 없이 가이드 수치를 확정 점수로 읽지 않습니다.',
-      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트와 조정 후 동일 조건 로그 전수 대조는 남아 있으므로 검수 중 상태를 유지합니다.',
+      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트는 10월 8일 확인했으나 조정 후 동일 조건 로그 전수 대조가 남아 검수 중 상태를 유지합니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     opener: {
       title: '궤멸자 첫 전투 흐름',
@@ -2510,6 +2956,360 @@ export const guideManuscripts = {
         ],
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZY2MzMjhZMzYGzYmZYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZY2MzMjhZMzYGzYmZYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank',
+        sourceLabel: 'Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 581,
+          heroTreeId: 124,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '17ed1789353820a3148429bbe428cd7e8dba5f4e876e29da9b4375c1c4f9eddc',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '궤멸자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmZmx2YGjxMAAAAAAACYmZsBAAAgBmZmZml2mZmBAzAAAAYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmZmx2YGjxMAAAAAAACYmZsBAAAgBmZmZml2mZmBAzAAAAYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+/AoE  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 581,
+          heroTreeId: 124,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '16f39bd4f360bc941d5ea402bc77a676373b0a95318064cbc478b4b6f2a667f4',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '궤멸자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMzMMjZGzYGzYYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMzMMjZGzYGzYYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank',
+        sourceLabel: 'Raid Cleave  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 581,
+          heroTreeId: 124,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a3938f4b9d076e8de4f40f9181b84e7232ee9946bc58403b50e23c602a4d7277',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '궤멸자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 4874,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/b4jTp13RfXPVm7cB#fight=14',
+          recommendedCode: 'CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjMzMYWMzMDMjZGzYmZGDzMzM2MzsNGAAAAAAAAwMzYDAAAADMzMzMbtNzMDAMAAAAG',
+          validation: {
+            specId: 581,
+            heroTreeId: 124,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 86736,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/v8FBV9awcJLXnkmW#fight=6',
+          recommendedCode: 'CUkAAAAAAAAAAAAAAAAAAAAAAAA2mxMzMGGyMzALmxMYmxMjZegZmZMMzMzYzMz2YMDAAAAAAAAzMjNAAAAMwMzMzs02MzMAwAAAAYA',
+          validation: {
+            specId: 581,
+            heroTreeId: 124,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.008499438147167734,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/tHQFknmNhJxDwdgL#fight=4&source=63',
+            startedAt: '2026-10-07T09:31:35.020Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 394410,
+            itemLevelBracket: 324,
+            heroTree: 124,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '204021',
+                count: 9,
+              },
+              {
+                spellId: '228477',
+                count: 108,
+              },
+              {
+                spellId: '232893',
+                count: 16,
+              },
+              {
+                spellId: '131347',
+                count: 4,
+              },
+              {
+                spellId: '263642',
+                count: 124,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '202138',
+                count: 1,
+              },
+              {
+                spellId: '198793',
+                count: 2,
+              },
+              {
+                spellId: '212084',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '258920',
+                count: 33,
+              },
+              {
+                spellId: '247454',
+                count: 21,
+              },
+              {
+                spellId: '187827',
+                count: 15,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '185245',
+                count: 7,
+              },
+              {
+                spellId: '204157',
+                count: 3,
+              },
+              {
+                spellId: '204596',
+                count: 10,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '390163',
+                count: 6,
+              },
+              {
+                spellId: '203720',
+                count: 42,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/FVdRW7pAwCaZTPJB#fight=1&source=19',
+            startedAt: '2026-10-07T00:05:32.421Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 397791,
+            itemLevelBracket: 324,
+            heroTree: 124,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '204021',
+                count: 8,
+              },
+              {
+                spellId: '258920',
+                count: 33,
+              },
+              {
+                spellId: '212084',
+                count: 8,
+              },
+              {
+                spellId: '204157',
+                count: 2,
+              },
+              {
+                spellId: '196718',
+                count: 1,
+              },
+              {
+                spellId: '202138',
+                count: 1,
+              },
+              {
+                spellId: '232893',
+                count: 10,
+              },
+              {
+                spellId: '185245',
+                count: 17,
+              },
+              {
+                spellId: '187827',
+                count: 16,
+              },
+              {
+                spellId: '228477',
+                count: 116,
+              },
+              {
+                spellId: '204596',
+                count: 4,
+              },
+              {
+                spellId: '390163',
+                count: 7,
+              },
+              {
+                spellId: '263642',
+                count: 124,
+              },
+              {
+                spellId: '179057',
+                count: 1,
+              },
+              {
+                spellId: '203720',
+                count: 31,
+              },
+              {
+                spellId: '131347',
+                count: 1,
+              },
+              {
+                spellId: '247454',
+                count: 22,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'demonhunter-devourer': {
@@ -2520,7 +3320,7 @@ export const guideManuscripts = {
     inlineTermSpellIds: {
       '굶주린 베기': '1239123',
     },
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 포식은 공허상흔을 기본으로 시작하세요. 단일에서는 수확과 도태를 자주 회수하고, 광역에서는 박멸을 준비해 공허 탈태에 들어갔다가 종료 후 들끓는 고통까지 연결합니다. 같은 공허상흔이어도 보스 한 마리와 쫄 무리는 탈태를 끝내는 판단이 다릅니다. 궤멸자는 붕괴하는 별을 사용하는 별도 빌드입니다.',
     sourceNote: '운용은 Wowhead VooDooSaurus의 2026-09-02 갱신본에서 영웅 특성과 대상 수를 구분해 확인했습니다. 2026-09-27 한국어 라이브 툴팁으로 집어삼키기·영혼 탐식·공허내림·한밤 단계별 효과와 굶주린 베기의 특성/시전 주문 ID를 다시 대조했습니다. 공허내림 생성 조건은 한국어 툴팁의 집어삼키기와 Wowhead 공개 가이드의 흡수 설명이 엇갈리므로 로그 발동 원인 확인 전까지 흡수 발동을 확정하지 않습니다. Icy Veins Wordup/Voodoo의 추천 및 스탯 설명과 대조하고, 8월 18일 당시 조정은 해당 Blizzard 공지로 확인했으며, 이번에는 9월 23일 추가 조정을 함께 반영했습니다. 6월 Archon 사용률과 DPS는 12.1 추천 근거로 사용하지 않습니다. 이번 확인에서 현재 레이드 집계는 가져오지 못했고, 검색에 노출된 특정 쐐기 페이지의 14개 로그 역시 전체 메타를 대표하지 않습니다. The Fel Hammer는 공개 서버 안내 경로만 확인했으며 가입 후 게시물이나 비공개 고정글을 읽었다고 주장하지 않습니다. 아래 연습 방법과 로그 점검 순서는 확인된 작동 방식을 실제 플레이에 적용하기 위한 제안이며, 특정 상위 플레이어의 실측 결과가 아닙니다. 9월 23일 한국어 공식 조정은 붕괴하는 별의 주 대상 피해 +25%, 흡수·집어삼키기 피해 +8%이며 두 항목은 PvP 제외입니다. Method 9월 18일 원문에는 공허상흔 근접과 원거리 구성이 따로 있으므로 별을 쓰지 않는 조건을 공허상흔 전체로 확대하지 않습니다. 별의 기본 비용 30영혼과 작성자 단일 우선순위의 35영혼 보류는 별개입니다. 9월 27일 툴팁 확인 기록은 이번에 다시 확인한 값이 아닙니다. 미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
     playstyle: [
@@ -3140,6 +3940,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 10,513건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 71,863건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/cg6LYwBDXaZmpPCd#fight=1&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T09:01:18.752Z · 장비 구간 326 · 412.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=16',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:16:46.914Z · 장비 구간 326 · 413.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '공허상흔 근접 연습 흐름은 이전 공개 가이드 추천에서 출발합니다. 9월 23일 이후 전 콘텐츠의 순위가 확인된 추천이 아닙니다. 레이드 현재 사용률은 확인하지 못했으며 6월의 궤멸자 채택률을 재사용하지 않았습니다.',
@@ -3151,16 +3979,18 @@ export const guideManuscripts = {
       '영혼분출과 근접 강화 스킬 세 개는 한국어 툴팁 ID·아이콘을 확인해 KB에 등록했습니다. 대체 아이콘이나 다른 전문화 주문으로 연결하지 않습니다.',
       '9월 23일 공식 조정에서 붕괴하는 별의 주 대상 피해와 흡수·집어삼키기 피해가 상향됐습니다. 모든 대상·모든 기술에 같은 비율을 적용하지 않습니다.',
       '미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
+      '10월 8일 악마사냥꾼 포식의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '이 가이드는 12.1 PvE 기준입니다. PvP 전용 수치와 효과는 섞지 않았습니다.',
       '시즌 2 세트 발동 설명은 해당 세트 효과가 있는 경우에만 적용합니다. 미착용 상태에서 영혼분출을 기다리며 기본 회전을 멈추지 마세요.',
       '단일 우선순위와 광역 박멸 회전은 서로 다릅니다. 레이드에서도 실제 공격 대상 수와 선택한 특성을 먼저 확인하세요.',
       '현재 상위권의 전체 로그 집계와 특성 사용률을 직접 확보한 것은 아닙니다. 아래 점검법을 특정 플레이어의 잘못이나 확정 손실률로 받아들이지 마세요.',
-      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트와 조정 후 동일 조건 로그 전수 대조는 남아 있으므로 검수 중 상태를 유지합니다.',
+      '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트는 10월 8일 확인했으나 조정 후 동일 조건 로그 전수 대조가 남아 검수 중 상태를 유지합니다.',
       '별의 30영혼 기본 비용과 Method 단일 목록의 35영혼 보류 조건은 별개입니다. 공허상흔 근접 견본의 별 미사용을 원거리 견본에 복사하지 않습니다.',
       '미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -3478,17 +4308,351 @@ export const guideManuscripts = {
         note: '빈 시간을 채우고 도태 사용 기회를 이어갑니다. 광역 종료 준비와는 다릅니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps',
+        sourceLabel: 'Raid ST (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 1480,
+          heroTreeId: 126,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'db3a505aa87e232abaf26157653cac557bd7d6ac1dfd2136d5685231d06fe05a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '공허상흔',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 1480,
+          heroTreeId: 124,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '8f495ac99430ded2d3e6586d4f4b2938c57dd61ff8172138b462c321f4d88cc6',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '궤멸자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 1480,
+          heroTreeId: 126,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '9b93c96d0ce27e6f37bc92acce5f0d197c964c087e2ac0673457698a7f138b98',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '공허상흔',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 10513,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/X9Vd7vcWzFN2pqk1#fight=39',
+          recommendedCode: 'CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB',
+          validation: {
+            specId: 1480,
+            heroTreeId: 124,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 71863,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/BJqt6zNFcWKQP8Hy#fight=7',
+          recommendedCode: 'CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxYmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMzYmFzYsolFmZmZ2abmZGADDAAGDGzA',
+          validation: {
+            specId: 1480,
+            heroTreeId: 124,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.004126407801255569,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/cg6LYwBDXaZmpPCd#fight=1&source=1',
+            startedAt: '2026-10-07T09:01:18.752Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 411970,
+            itemLevelBracket: 326,
+            heroTree: 124,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '1226019',
+                count: 4,
+              },
+              {
+                spellId: '1245453',
+                count: 6,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '131347',
+                count: 4,
+              },
+              {
+                spellId: '196718',
+                count: 2,
+              },
+              {
+                spellId: '473662',
+                count: 70,
+              },
+              {
+                spellId: '473728',
+                count: 41,
+              },
+              {
+                spellId: '1217610',
+                count: 89,
+              },
+              {
+                spellId: '198589',
+                count: 5,
+              },
+              {
+                spellId: '1221150',
+                count: 19,
+              },
+              {
+                spellId: '198793',
+                count: 1,
+              },
+              {
+                spellId: '1234195',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1241937',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=16',
+            startedAt: '2026-10-08T01:16:46.914Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 413677,
+            itemLevelBracket: 326,
+            heroTree: 126,
+            augmentationCount: 0,
+            healerCount: 6,
+            casts: [
+              {
+                spellId: '1245470',
+                count: 24,
+              },
+              {
+                spellId: '1259431',
+                count: 8,
+              },
+              {
+                spellId: '1217610',
+                count: 55,
+              },
+              {
+                spellId: '1245414',
+                count: 16,
+              },
+              {
+                spellId: '473728',
+                count: 36,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '198589',
+                count: 2,
+              },
+              {
+                spellId: '1226019',
+                count: 5,
+              },
+              {
+                spellId: '1245412',
+                count: 8,
+              },
+              {
+                spellId: '131347',
+                count: 3,
+              },
+              {
+                spellId: '1245483',
+                count: 8,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1245453',
+                count: 20,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '473662',
+                count: 62,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1246167',
+                count: 4,
+              },
+              {
+                spellId: '198793',
+                count: 20,
+              },
+              {
+                spellId: '1241937',
+                count: 12,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'deathknight-blood': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '49998',
     inlineTermSpellIds: {
       '한밤의 춤': '1264506',
     },
-    sourceStatus: '2026-10-03: 10월 2일까지 공식 한국어 긴급 수정과 영웅 특성별 실제 시전·회복 우선순위 재대조. 공개 운용 가이드의 갱신일은 조정 전이며 최신 영웅 특성 순위·실제 특성 견본 전체 검수는 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 혈기는 뼈의 보호막과 룬 마력을 유지하고, 위험 피해에 맞춰 죽음의 일격과 생존기를 배정하는 것이 먼저입니다. 9월 23일 조정으로 전체 피해와 치명적인 접촉 광역 효율은 내려간 반면 죽음의 일격 및 죽음의 인도자 여러 효과는 상향됐습니다. 조정 전 산레인 사용률만으로 지금의 영웅 특성 우열을 확정하지 마세요. 시즌 2 세트가 있다면 피로 치를 빚 10중첩을 골수분쇄로 소비합니다.',
     sourceNote: '2026-09-27에 Blizzard 한국어 9월 23일 긴급 수정과 현행 한국어 툴팁을 확인했습니다. 혈기 전체 피해 -6%, 죽음의 일격 공격력 +15%, 치명적인 접촉 60%, 죽음의 인도자 여섯 항목의 변경은 공식 원문을 우선합니다. 기존 Wowhead·Icy Veins·Method 공개 가이드와 9월 12일 Archon 검색 색인은 조정 전 자료입니다. Archon의 산레인 89.3%는 그 시점의 사용률이지 현재 빌드 우열이 아닙니다. Wowhead와 Icy Veins 작성자 중복을 독립 검증으로 세지 않고, 비공개 직업 디스코드를 읽었다고 주장하지 않습니다. 조정 후 같은 조건의 레이드·쐐기 로그를 확보하지 못했으므로 두 영웅 특성의 순위는 보류합니다. 아래 연습·로그 점검은 확인된 효과를 실전에 적용하는 방법이며 개인 실측 결과가 아닙니다. 2026-10-03 재조회에서 공식 한국어 본문은 10월 2일까지 갱신되어 있습니다. Method 운용은 9월 4일, Icy Veins 운용은 8월 10일 작성분입니다. 오늘 읽었다는 사실을 조정 후 새 추천으로 바꾸지 않습니다. 아래 영웅 특성별 세 모드는 기존 기본 흐름의 혼합 단계를 분리한 조건부 실전 예시입니다.',
     playstyle: [
@@ -4026,6 +5190,34 @@ export const guideManuscripts = {
         updated: '2026-09-04 작성 / 2026-10-03 확인',
         note: '산레인과 죽음의 인도자의 서로 다른 실제 시전 흐름을 대조했습니다. 산레인 전 콘텐츠 추천은 9월 23일 조정 이전 작성자의 권장이라 현재 순위 증명으로 사용하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/blood/death-knight/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 25,980건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/blood/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 300,149건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=10',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:38:13.848Z · 장비 구간 329 · 319.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/w7p86hFMkaQY4ZXH#fight=9&source=15',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:48:19.515Z · 장비 구간 329 · 318.8초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '혈안, 칠흑의 기사단의 인내, 피에 젖은 땅은 발동 조건과 피해 유형이 다른 방어 효과입니다. 숫자만 더해 하나의 피해 감소율로 표시하지 않습니다.',
@@ -4034,13 +5226,16 @@ export const guideManuscripts = {
       '섭취는 강화 단계에 따라 질병 흡수량뿐 아니라 피해 감소 강도와 종료 후 지속시간이 달라집니다. 상위 단계가 모든 상황에서 우월한 것은 아닙니다.',
       '흡혈의 오라는 리치의 혼에 반응합니다. 흡혈은 개인 최대 생명력과 회복을 돕는 별도 기술로, 이름의 유사성만으로 시너지 연결을 만들지 않습니다.',
       '실전 검토는 사망 직전의 자원과 버프부터 시작합니다. 딜이 높다는 사실만으로 방어 선택이 맞았다고, 죽음의 일격 횟수가 낮다는 사실만으로 플레이가 틀렸다고 단정하지 않습니다.',
+      '10월 8일 죽음의 기사 혈기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
-      'Archon 쐐기 값은 9월 12일 검색 색인의 조정 전 집계입니다. 최신 원시 전투를 직접 모은 자료가 아니며 조정 후 레이드·쐐기 영웅 특성 사용률은 확인하지 못했습니다.',
+      '9월 12일 Archon 검색 색인의 조정 전 집계는 현행 추천 근거에서 제외합니다. 10월 8일 레이드·쐐기 공개 집계를 확인했지만, 최근 14일 자료에는 조정 이전 전투가 섞일 수 있습니다.',
       '섭취 강화 단계는 공개 가이드끼리 차이가 있습니다. 질병 잔여 시간, 룬 무기 활성 여부와 당장 필요한 피해 감소를 보고 결정하며 본문에서 차이를 설명합니다.',
       '일부 개요에 남은 버그 피해 수치나 이전 특성 수치를 영구 효과로 저장하지 않습니다. 현재 툴팁과 맞지 않는 항목은 확정 추천의 근거에서 제외합니다.',
       '능력치·장신구는 현재 장비와 콘텐츠에 맞춰 비교합니다. 피해 시뮬레이션 결과만으로 탱커 급사 위험까지 검증됐다고 볼 수 없습니다.',
-      '영웅 특성별 세 모드는 생존·자원 상태에 따른 조건부 흐름입니다. 최신 로그·특성 가져오기 견본·공용 노트 전체 검수 미완료로 부분 완료를 유지합니다.',
+      '영웅 특성별 세 모드는 생존·자원 상태에 따른 조건부 흐름입니다. 특성 견본의 포인트·연결과 최신 공개 집계는 확인했으며, 공용 노트의 모든 효과와 조정 후 동일 조건 이벤트 비교가 남아 부분 완료를 유지합니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -4388,15 +5583,387 @@ export const guideManuscripts = {
         note: '차단은 딜 우선순위와 독립적으로 처리합니다. 파티 차단 순서를 확인하고 개인 피해보다 위험 시전을 먼저 막습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 250,
+          heroTreeId: 31,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f994b5ea8f41629c48c889ecfbc8a2390a59298cae5638d5edec09a18176aef9',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산레인',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAgxsNwAWCWGmADLAmxMAAMzAYYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAgxsNwAWCWGmADLAmxMAAMzAYYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 250,
+          heroTreeId: 33,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '6dd54d47ee0e0faf7cd39354799fefbed3ca76616a16b07cd2306ef3949e0390',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음의 인도자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 250,
+          heroTreeId: 31,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f994b5ea8f41629c48c889ecfbc8a2390a59298cae5638d5edec09a18176aef9',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산레인',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 25980,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/blood/death-knight/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/7gk9aV6W3BY4bFLT#fight=1',
+          recommendedCode: 'CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDw2A2AMjZAAAzMwwA',
+          validation: {
+            specId: 250,
+            heroTreeId: 31,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 300149,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/blood/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/WdZYHBnRMc23hkbA#fight=24',
+          recommendedCode: 'CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbA2GwGgZMAAAzMAGA',
+          validation: {
+            specId: 250,
+            heroTreeId: 31,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0025094259922714686,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=10',
+            startedAt: '2026-10-07T00:38:13.848Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319595,
+            itemLevelBracket: 329,
+            heroTree: 33,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '48265',
+                count: 8,
+              },
+              {
+                spellId: '1263566',
+                count: 4,
+              },
+              {
+                spellId: '1263569',
+                count: 1,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '49998',
+                count: 74,
+              },
+              {
+                spellId: '49039',
+                count: 4,
+              },
+              {
+                spellId: '49576',
+                count: 3,
+              },
+              {
+                spellId: '55233',
+                count: 4,
+              },
+              {
+                spellId: '43265',
+                count: 19,
+              },
+              {
+                spellId: '49028',
+                count: 4,
+              },
+              {
+                spellId: '257040',
+                count: 1,
+              },
+              {
+                spellId: '195292',
+                count: 8,
+              },
+              {
+                spellId: '195182',
+                count: 28,
+              },
+              {
+                spellId: '439843',
+                count: 7,
+              },
+              {
+                spellId: '56222',
+                count: 5,
+              },
+              {
+                spellId: '46585',
+                count: 4,
+              },
+              {
+                spellId: '206930',
+                count: 67,
+              },
+              {
+                spellId: '48707',
+                count: 6,
+              },
+              {
+                spellId: '50842',
+                count: 44,
+              },
+              {
+                spellId: '256948',
+                count: 1,
+              },
+              {
+                spellId: '48792',
+                count: 1,
+              },
+              {
+                spellId: '441424',
+                count: 18,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/w7p86hFMkaQY4ZXH#fight=9&source=15',
+            startedAt: '2026-10-07T01:48:19.515Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 318793,
+            itemLevelBracket: 329,
+            heroTree: 31,
+            augmentationCount: 2,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '48792',
+                count: 1,
+              },
+              {
+                spellId: '195292',
+                count: 6,
+              },
+              {
+                spellId: '49028',
+                count: 4,
+              },
+              {
+                spellId: '49576',
+                count: 10,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '43265',
+                count: 28,
+              },
+              {
+                spellId: '56222',
+                count: 6,
+              },
+              {
+                spellId: '50842',
+                count: 61,
+              },
+              {
+                spellId: '195182',
+                count: 13,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '46585',
+                count: 2,
+              },
+              {
+                spellId: '206930',
+                count: 65,
+              },
+              {
+                spellId: '48707',
+                count: 5,
+              },
+              {
+                spellId: '49998',
+                count: 87,
+              },
+              {
+                spellId: '55233',
+                count: 6,
+              },
+              {
+                spellId: '433895',
+                count: 45,
+              },
+              {
+                spellId: '108199',
+                count: 1,
+              },
+              {
+                spellId: '48265',
+                count: 9,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12935,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'deathknight-frost': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     defaultHeroBranchIndex: 1,
     graphCenterSkillId: '51271',
-    sourceStatus: '2026-10-03: 10월 2일까지 공식 한국어 긴급 수정, Icy Veins 9월 25일·Method 9월 27일 냉기 운용, SimC 12.1.0.69933 지정 조건 대조. 현재 로그 순위·특성 견본 전체 검수는 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 냉기는 얼음 기둥뿐 아니라 평소의 발동 순환과 근접 유지도 중요합니다. 레이드와 쐐기 모두 쌍수·죽음의 인도자·신드라고사의 숨결을 먼저 비교하고, 종말의 기수와 냉기파멸은 장비·전투 유형에 따른 대안으로 보세요. 숨결은 처음 룬 마력 60을 쓰고 도살기·단단한 얼음 소비로 늘어나므로, 숨결 중에도 냉기의 일격과 빙하 진군을 정상적으로 사용합니다.',
     sourceNote: '2026-09-23에 Blizzard 12.1 한국어 패치 노트와 9월 22일 영어 긴급 수정 사항, Wowhead Khazak 9월 5일 특성, Icy Veins Bicepspump 9월 14일 특성, Method Taeznak 9월 20일 공개 가이드를 대조했습니다. Icy Veins는 같은 특성 페이지 안에서 죽음의 인도자와 종말의 기수의 단일 우열을 서로 반대로 설명하므로 근소한 순위 차이를 확정하지 않습니다. 공식 한국어 9월 23일 공지에도 PvE 서리수확자 피해 100%·절멸 피해 10% 상향이 현재 명시되어 있습니다. 영어 공지 9월 22일과 날짜 표기를 구분하며 한국 서버의 정확한 적용 시각과 개인 실측은 확인하지 못했습니다. 현재 한국어 툴팁은 서리수확자 1230301, 숨결 1249658, 세트 버프 1297365를 기준으로 합니다. Method의 세트 2%/4%와 기나긴 겨울 6초 설명은 현행 일반 서버 한국어 툴팁의 1%/2%, 최대 4초와 달라 그대로 쓰지 않았습니다. 회수 타이밍에는 저자별 권장이 달라 상황별로 설명합니다. 9월 12일 Mythicstats +17~20 상위 800개 로그의 죽음의 인도자 표시는 당시 고단 로그 결과이며 현재 레이드 사용률이 아닙니다. Archon 최신 레이드 원문은 접근 제한으로 수치를 확보하지 못했습니다. Acherus 공개 안내만 사용했고 비공개 대화나 개별 로그 실측을 인용하지 않았습니다. 10월 3일 재대조에서 Icy Veins 냉기 작성자는 Taeznak이며 운용은 9월 25일, Method 운용은 9월 27일 갱신분입니다. Icy Veins는 같은 기둥의 첫 가속 종료 뒤 약 12초 회수를 기본 권장하고 Method는 죽음의 인도자 징표·몰살 소비와 광역 다음 기둥 전략을 구분합니다. 두 권장을 하나의 고정 시점으로 합치지 않습니다.',
     playstyle: [
@@ -4931,6 +6498,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 / midnight 최신 커밋 확인',
         note: '게임 빌드 12.1.0.69933의 trait_data와 같은 커밋입니다. 선택 노드와 모델 조건을 확인한 자료이며 실측 로그나 영웅 특성 사용률은 아닙니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/frost/death-knight/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 9,685건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/frost/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 63,743건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=13',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:32:09.837Z · 장비 구간 328 · 319.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/HB6fNynjMCrw1GXJ#fight=4&source=24',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:28:06.118Z · 장비 구간 328 · 319.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '신드라고사의 숨결은 현행 주문 1249658로 연결하며, 시작 비용과 발동 연장을 기준으로 운용합니다.',
@@ -4940,13 +6535,16 @@ export const guideManuscripts = {
       '9월 갱신된 Wowhead·Icy Veins의 레이드·쐐기 죽음의 인도자 추천과 종말의 기수 대안을 구분합니다. Icy Veins 내부의 상충하는 우열 수치는 확정하지 않습니다.',
       '서리수확자는 절멸 강화·사슬·서리낫 연계의 지속 효과입니다. 영어 9월 22일 피해 상향 공지를 한국어 툴팁의 절멸 10% 보너스로 환산하지 않습니다.',
       '서리고룡의 격노 첫 사용, 회수, 평타 치명타에 의한 기둥 연장은 서로 다른 효과입니다.',
+      '10월 8일 죽음의 기사 냉기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
-      '최신 레이드 전체 집계와 개별 상위 로그의 전체 이벤트는 확보하지 못했습니다. 이 가이드는 특정 캐릭터의 점수 상승량을 약속하지 않습니다.',
+      '10월 8일 레이드·쐐기 공개 집계를 확인했습니다. 개별 상위 로그의 전체 이벤트를 비교한 결과는 아니므로 특정 캐릭터의 점수 상승량을 약속하지 않습니다.',
       '아래 기준은 12.1과 현재 추천 특성 조합에 대한 설명입니다. 특성을 빼거나 무기·세트·장신구가 달라졌다면 같은 시전 순서를 강제로 적용하지 마세요.',
       '세트 수치와 기나긴 겨울의 연장 상한은 현재 툴팁을 우선합니다. 서리고룡 회수 타이밍은 저자별 의견 차이를 숨기지 않고 조건부로 남깁니다.',
       '숨결 최대 30초는 Icy Veins 설명입니다. 기본 툴팁에는 8초와 소비당 0.8초만 표시되므로 모든 캐릭터가 매번 30초를 채워야 한다는 검사 기준으로 쓰지 않습니다.',
-      '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 모든 공용·영웅 특성의 효과와 실제 특성 견본 가져오기, 조정 후 동일 조건 로그 검수가 끝난 것은 아닙니다.',
+      '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 특성 견본의 가져오기·포인트·연결은 10월 8일 확인했습니다. 모든 공용·영웅 특성의 효과와 조정 후 동일 조건 로그 검수는 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -5298,6 +6896,379 @@ export const guideManuscripts = {
         note: '약한 절멸을 반복하기 전에 남은 충전을 검토합니다. 말살이 있는 기둥 중에는 다음 공격이 무료입니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 251,
+          heroTreeId: 33,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음의 인도자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 251,
+          heroTreeId: 33,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '266ddede9410dc5eef3c8b089c01e089120c0b214a907221d18b7c21735c3205',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음의 인도자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 251,
+          heroTreeId: 33,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음의 인도자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 9685,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/frost/death-knight/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/wyV9kBb2NYCza1Kh#fight=5',
+          recommendedCode: 'CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEYsgZGzMDMAMMzAMzgB',
+          validation: {
+            specId: 251,
+            heroTreeId: 33,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 63743,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/frost/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/PgaHCqNncQjLJbV2#fight=10',
+          recommendedCode: 'CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEYsgZGzMDMAMMzAwgB',
+          validation: {
+            specId: 251,
+            heroTreeId: 33,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.000748095330507891,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=13',
+            startedAt: '2026-10-07T01:32:09.837Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319478,
+            itemLevelBracket: 328,
+            heroTree: 33,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '194913',
+                count: 2,
+              },
+              {
+                spellId: '212552',
+                count: 2,
+              },
+              {
+                spellId: '48707',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '46585',
+                count: 4,
+              },
+              {
+                spellId: '207230',
+                count: 1,
+              },
+              {
+                spellId: '48265',
+                count: 8,
+              },
+              {
+                spellId: '49020',
+                count: 98,
+              },
+              {
+                spellId: '1249658',
+                count: 4,
+              },
+              {
+                spellId: '49039',
+                count: 2,
+              },
+              {
+                spellId: '441424',
+                count: 21,
+              },
+              {
+                spellId: '49576',
+                count: 6,
+              },
+              {
+                spellId: '47568',
+                count: 23,
+              },
+              {
+                spellId: '51271',
+                count: 7,
+              },
+              {
+                spellId: '48743',
+                count: 1,
+              },
+              {
+                spellId: '279302',
+                count: 4,
+              },
+              {
+                spellId: '439843',
+                count: 7,
+              },
+              {
+                spellId: '48792',
+                count: 1,
+              },
+              {
+                spellId: '49184',
+                count: 47,
+              },
+              {
+                spellId: '49143',
+                count: 89,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1265384',
+                count: 4,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 16532,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 246076,
+                uses: 33,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/HB6fNynjMCrw1GXJ#fight=4&source=24',
+            startedAt: '2026-10-07T01:28:06.118Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319239,
+            itemLevelBracket: 328,
+            heroTree: 33,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '47568',
+                count: 24,
+              },
+              {
+                spellId: '439843',
+                count: 7,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '49020',
+                count: 125,
+              },
+              {
+                spellId: '279302',
+                count: 4,
+              },
+              {
+                spellId: '46585',
+                count: 4,
+              },
+              {
+                spellId: '49184',
+                count: 51,
+              },
+              {
+                spellId: '1265384',
+                count: 4,
+              },
+              {
+                spellId: '441424',
+                count: 21,
+              },
+              {
+                spellId: '49576',
+                count: 6,
+              },
+              {
+                spellId: '51271',
+                count: 7,
+              },
+              {
+                spellId: '1249658',
+                count: 4,
+              },
+              {
+                spellId: '49143',
+                count: 86,
+              },
+              {
+                spellId: '274738',
+                count: 3,
+              },
+              {
+                spellId: '48265',
+                count: 6,
+              },
+              {
+                spellId: '48707',
+                count: 6,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '51052',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'deathknight-unholy': {
@@ -5307,7 +7278,7 @@ export const guideManuscripts = {
     defaultHeroBranchIndex: 1,
     graphCenterSkillId: '1247378',
     summary: '부정 죽음의 기사는 질병을 유지하면서 룬으로 구울을 준비하고, 부패로 학자와 군주를 불러 피해를 몰아넣습니다. 12.1에서는 사자의 군대가 90초, 어둠의 변신이 45초 주기로 돌아가며 영혼 수확자는 하급 구울 준비 중첩을 씁니다. 9월 23~24일 역병내림·산레인 상향과 버그 수정 뒤 레이드·쐐기 모두 산레인·역병내림 빌드를 먼저 비교합니다. 종말의 기수 하수인 빌드도 유효한 대안입니다. 산레인은 흡혈의 일격으로 역병을 연장·분출하고, 역병내림을 골랐다면 남은 질병을 소비한 뒤 부패로 다시 적용합니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '2026-09-27에 Blizzard 12.1 한국어 원문과 9월 23~24일 긴급 수정, Wowhead 한국어 실시간 툴팁, 9월 24일 Method·9월 23일 Icy Veins 변경 기록을 대조했습니다. Icy Veins 특성 페이지에는 예전 종말의 기수 레이드 추천 문장과 산레인 추천 선택기·변경 기록이 함께 남아 있어 전자를 현행 확정 추천으로 쓰지 않습니다. Wowhead·Icy Veins·Method의 현재 부정 저자는 Taeznak으로 같아 독립 검증 세 건으로 세지 않습니다. Method의 사자의 군대 설명처럼 현재 한국어 툴팁과 충돌하는 세부 수치는 채택하지 않았습니다. 9월 23일 공식 조정은 고초 65%/100%, 역병내림 200%, 산레인 슬픔의 고통 75%·핏빛 전율 공포의 역병 20%·광적인 피의 갈증 죽음의 고리와 죽음의 일격 중첩당 5%이며, 24일 역병내림 시간 경과 피해 감소 버그 수정이 뒤따랐습니다. 최신 Archon/WCL 레이드·쐐기 집계와 Acherus 비공개 대화는 확보하지 않았으므로 빌드 선택은 공개 운용 가이드의 첫 비교이며 상위 로그 전수 검증이 아닙니다. 2026-10-03에 최신 SimC midnight SHA 6c50c3c7b96c81bbb8e7abefbd817ecf31519592의 12.1.0.69933 트리와 APL을 다시 읽었습니다. 일반 3대상·금단의 지식 중 4대상 광역 소비 조건은 이 버전에도 유지됩니다. 9월 24일 Method의 영혼 수확자·부패 충전 설명에는 정본 툴팁과 다른 문장이 남아 있으므로 충전 소비 설명을 복사하지 않습니다. 오늘 조회한 Icy Veins 특성 페이지에도 기수 추천 본문과 산레인 선택기가 같이 있어 저자 추천을 확정 사용률로 바꾸지 않습니다. 미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
     sources: [
       {
@@ -5464,6 +7435,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/unholy/death-knight/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 15,350건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/unholy/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 142,078건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=19',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:06:11.649Z · 장비 구간 333 · 287.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:54:08.933Z · 장비 구간 328 · 331.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '사자의 군대 90초와 어둠의 변신 45초는 현재 기본 쿨다운입니다. 군대를 매 변신마다 누르는 것이 아니라 군대 사이에 변신 한 번을 더 쓰는 리듬으로 시작합니다.',
@@ -5473,14 +7472,16 @@ export const guideManuscripts = {
       '할퀴는 어둠은 현재 패시브 연쇄 효과입니다. 죽음과 부패가 스컬지의 일격이나 전염병을 광역으로 바꾸는 필수 바닥이라는 설명은 현재 부정에 맞지 않습니다.',
       '시즌 2 세트는 소환수 주문 교체와 해당 주문의 마격 피해를 봅니다. 모든 공격에 130%를 더하거나 세트 주문을 플레이어 버튼처럼 넣지 않습니다.',
       '미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
+      '10월 8일 죽음의 기사 부정의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간·전투 길이가 일치하는 비교는 확보하지 못했습니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '추천 특성은 2026-09-27에 확인한 공개 자료 범위입니다. 최신 WCL 비교와 개인 장비 시뮬레이션을 완료한 빌드별 DPS 순위가 아닙니다.',
       '산레인의 흡혈의 일격은 액티브와 발동 특성의 한국어 회복 수치가 서로 다릅니다. 회복량을 근거로 생존 가능 여부를 계산하지 않고 실제 전투 기록을 확인합니다.',
       '대상 수 기준은 균등하게 맞는 적이 살아 있는 상황의 출발점입니다. 우선 처치 대상, 적의 간격, 곧 사라질 몬스터가 있으면 총 피해 기준과 선택이 달라집니다.',
-      '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 모든 공용·영웅 특성의 효과와 실제 특성 견본 가져오기, 조정 후 동일 조건 로그 검수가 끝난 것은 아닙니다.',
+      '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 특성 견본의 가져오기·포인트·연결은 10월 8일 확인했습니다. 모든 공용·영웅 특성의 효과와 조정 후 동일 조건 로그 검수는 남아 있습니다.',
       '미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     playstyle: [
       {
@@ -6208,955 +8209,1886 @@ export const guideManuscripts = {
         ],
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps',
+        sourceLabel: 'Single Target',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 252,
+          heroTreeId: 32,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'fdf73023bd7c446a2e7e508b7aa40b398a1668e7e55108702deca892d8701796',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '종말의 기수',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxwAglZwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDGzYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxwAglZwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDGzYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps',
+        sourceLabel: 'M+/Delves  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 252,
+          heroTreeId: 31,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '8f4962cc07ce1900a54cf2a97b965b9ba4897c1fdab86c07a1edf0d7505c5b0a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산레인',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps',
+        sourceLabel: 'Single Target',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 252,
+          heroTreeId: 32,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'fdf73023bd7c446a2e7e508b7aa40b398a1668e7e55108702deca892d8701796',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '종말의 기수',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 15350,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/unholy/death-knight/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/XFxAbjQ8g17maYPZ#fight=4',
+          recommendedCode: 'CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYeghxAglZYmNzMmZGDMwM20YZBw2gNAMDgZmZmxMYmBjZMA',
+          validation: {
+            specId: 252,
+            heroTreeId: 31,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 142078,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/unholy/death-knight/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/RTcdNxWrmP98MZ3n#fight=2',
+          recommendedCode: 'CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2YmZa2mZGzMjBAAAAAAAg5BGDDAWmBzmZGzMjBGYGbassAYbwGGwMAmZmZGzgZGMmxA',
+          validation: {
+            specId: 252,
+            heroTreeId: 31,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: false,
+        durationDifference: null,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=19',
+            startedAt: '2026-10-08T02:06:11.649Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 286970,
+            itemLevelBracket: 333,
+            heroTree: null,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '55090',
+                count: 39,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '48265',
+                count: 1,
+              },
+              {
+                spellId: '48707',
+                count: 4,
+              },
+              {
+                spellId: '1247378',
+                count: 19,
+              },
+              {
+                spellId: '433895',
+                count: 58,
+              },
+              {
+                spellId: '458128',
+                count: 16,
+              },
+              {
+                spellId: '47541',
+                count: 52,
+              },
+              {
+                spellId: '77575',
+                count: 1,
+              },
+              {
+                spellId: '207317',
+                count: 5,
+              },
+              {
+                spellId: '1233448',
+                count: 7,
+              },
+              {
+                spellId: '343294',
+                count: 11,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '85948',
+                count: 16,
+              },
+              {
+                spellId: '42650',
+                count: 4,
+              },
+              {
+                spellId: '1271967',
+                count: 7,
+              },
+              {
+                spellId: '1242174',
+                count: 41,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41',
+            startedAt: '2026-10-07T01:54:08.933Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 331555,
+            itemLevelBracket: 328,
+            heroTree: null,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '47541',
+                count: 47,
+              },
+              {
+                spellId: '42650',
+                count: 4,
+              },
+              {
+                spellId: '48707',
+                count: 7,
+              },
+              {
+                spellId: '1233448',
+                count: 8,
+              },
+              {
+                spellId: '55090',
+                count: 46,
+              },
+              {
+                spellId: '458128',
+                count: 18,
+              },
+              {
+                spellId: '1271967',
+                count: 8,
+              },
+              {
+                spellId: '1247378',
+                count: 23,
+              },
+              {
+                spellId: '207317',
+                count: 18,
+              },
+              {
+                spellId: '1242174',
+                count: 39,
+              },
+              {
+                spellId: '343294',
+                count: 13,
+              },
+              {
+                spellId: '49039',
+                count: 2,
+              },
+              {
+                spellId: '85948',
+                count: 18,
+              },
+              {
+                spellId: '48792',
+                count: 2,
+              },
+              {
+                spellId: '383269',
+                count: 7,
+              },
+              {
+                spellId: '48265',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '48743',
+                count: 1,
+              },
+              {
+                spellId: '433895',
+                count: 75,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
 
   'druid-guardian': {
-    "patch": "12.1",
-    "researchedAt": "2026-09-13",
-    "status": "12.1 심화 가이드",
-    "graphCenterSkillId": "77758",
-    "summary": "12.1 수호는 난타와 짓이기기를 쉬지 않고 돌려 방어에 쓸 분노를 만드는 것이 출발점입니다. 엘룬의 대행자라고 달빛섬광만 반복하지 마세요. 삭망월은 이제 달 광선을 고정 20초 줄이며, 정점과 시즌 2 세트는 생성기를 제때 사용하는 보상을 크게 늘립니다. 무쇠가죽으로 다음 평타를 준비하면서 무료 공격 발동을 활용하고, 영혼이 나타나면 초기화된 생성기로 다시 분노를 받습니다. 발톱의 드루이드는 찢어발기기의 피해 감소와 방어도 보정을 살리는 별도 운용으로 설명합니다.",
-    "sourceStatus": "Blizzard 12.1 업데이트·9월 9일 핫픽스, 라이브 한국어 주문 정보, Wowhead·Icy Veins·Method 및 9월 10일 SimulationCraft를 대조했습니다. 최신 WCL·Archon 채택률과 개인 캐릭터 실측은 확보하지 않았습니다.",
-    "sourceNote": "Blizzard 12.1 수호 개편과 9월 9일 정점 조건 수정까지 확인했습니다. 스킬명과 아이콘은 라이브 Wowhead 한국어 주문 ID로 확인했습니다. 운용은 Pumps의 Wowhead·Icy Veins와 Tactyks의 Method를 교차 검토했습니다. Wowhead와 Icy Veins는 같은 작성자의 자료가 포함되므로 완전히 독립적인 두 근거로 세지 않습니다. 일부 가이드의 옛 삭망월 설명, 다른 전문화로 연결되는 세나리우스의 꿈 링크, 야생 수호자 특성 ID를 실제 버튼처럼 쓴 예시는 라이브 효과와 대조해 제외했습니다. 분노를 다스리는 자는 한국어와 영문 트리거가 다르며, 현재 SimulationCraft의 maul_base_t 구현도 후려갈기기 계열에서 증가 확률을 적용합니다. 이를 게임 서버를 직접 실측한 결과로 주장하지는 않습니다. 6월 Archon 채택률은 현재 추천의 근거에서 제거했습니다.",
-    "playstyle": [
+    patch: '12.1',
+    researchedAt: '2026-10-08',
+    status: '12.1 심화 가이드',
+    graphCenterSkillId: '77758',
+    summary: '12.1 수호는 난타와 짓이기기를 쉬지 않고 돌려 방어에 쓸 분노를 만드는 것이 출발점입니다. 엘룬의 대행자라고 달빛섬광만 반복하지 마세요. 삭망월은 이제 달 광선을 고정 20초 줄이며, 정점과 시즌 2 세트는 생성기를 제때 사용하는 보상을 크게 늘립니다. 무쇠가죽으로 다음 평타를 준비하면서 무료 공격 발동을 활용하고, 영혼이 나타나면 초기화된 생성기로 다시 분노를 받습니다. 발톱의 드루이드는 찢어발기기의 피해 감소와 방어도 보정을 살리는 별도 운용으로 설명합니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceNote: 'Blizzard 12.1 수호 개편과 9월 9일 정점 조건 수정까지 확인했습니다. 스킬명과 아이콘은 라이브 Wowhead 한국어 주문 ID로 확인했습니다. 운용은 Pumps의 Wowhead·Icy Veins와 Tactyks의 Method를 교차 검토했습니다. Wowhead와 Icy Veins는 같은 작성자의 자료가 포함되므로 완전히 독립적인 두 근거로 세지 않습니다. 일부 가이드의 옛 삭망월 설명, 다른 전문화로 연결되는 세나리우스의 꿈 링크, 야생 수호자 특성 ID를 실제 버튼처럼 쓴 예시는 라이브 효과와 대조해 제외했습니다. 분노를 다스리는 자는 한국어와 영문 트리거가 다르며, 현재 SimulationCraft의 maul_base_t 구현도 후려갈기기 계열에서 증가 확률을 적용합니다. 이를 게임 서버를 직접 실측한 결과로 주장하지는 않습니다. 6월 Archon 채택률은 현재 추천의 근거에서 제거했습니다.',
+    playstyle: [
       {
-        "label": "생성기부터",
-        "text": "난타 중첩과 짓이기기 충전을 먼저 봅니다. 정점·세트 발동을 받은 생성기를 달빛섬광 때문에 미루지 않습니다."
+        label: '생성기부터',
+        text: '난타 중첩과 짓이기기 충전을 먼저 봅니다. 정점·세트 발동을 받은 생성기를 달빛섬광 때문에 미루지 않습니다.',
       },
       {
-        "label": "분노 배분",
-        "text": "평타 전에 무쇠가죽을 확보하고 무료 후려갈기기·말살 발동을 살립니다. 공격과 방어를 서로 완전히 별개로 보지 않습니다."
+        label: '분노 배분',
+        text: '평타 전에 무쇠가죽을 확보하고 무료 후려갈기기·말살 발동을 살립니다. 공격과 방어를 서로 완전히 별개로 보지 않습니다.',
       },
       {
-        "label": "영혼 등장",
-        "text": "야생 수호자가 나오면 초기화된 난타·짓이기기로 추가 공격과 분노를 받습니다. 화신 직후의 확정 발동도 놓치지 않습니다."
+        label: '영혼 등장',
+        text: '야생 수호자가 나오면 초기화된 난타·짓이기기로 추가 공격과 분노를 받습니다. 화신 직후의 확정 발동도 놓치지 않습니다.',
       },
       {
-        "label": "회복 판단",
-        "text": "광포한 재생력은 선택 특성에 따라 피해 전 보호막·최대 생명력 확보에도 씁니다. 자동 재생과 직접 누르는 재생은 구분합니다."
-      }
+        label: '회복 판단',
+        text: '광포한 재생력은 선택 특성에 따라 피해 전 보호막·최대 생명력 확보에도 씁니다. 자동 재생과 직접 누르는 재생은 구분합니다.',
+      },
     ],
-    "heroBranches": [
+    heroBranches: [
       {
-        "label": "엘룬의 대행자",
-        "skillIds": [
-          "204066",
-          "429539",
-          "429523",
-          "370586",
-          "1271206"
+        label: '엘룬의 대행자',
+        skillIds: [
+          '204066',
+          '429539',
+          '429523',
+          '370586',
+          '1271206',
         ],
-        "flowSkillIds": [
-          "77758",
-          "33917",
-          "192081",
-          "204066",
-          "1269658",
-          "6807"
+        flowSkillIds: [
+          '77758',
+          '33917',
+          '192081',
+          '204066',
+          '1269658',
+          '6807',
         ],
-        "summary": "달 광선과 비전 난타의 공격·회복을 활용하는 분기입니다. 현재 공개 가이드가 추천하는 레이드·쐐기 출발점으로 쓰되, 이번에 최신 로그 채택률을 직접 검증한 것은 아닙니다. 12.1에서는 달빛섬광 연타로 광선 쿨을 더 줄일 수 없으므로 난타·짓이기기와 정점·세트 흐름을 먼저 살립니다.",
-        "bullets": [
-          "오프닝은 일반 광역에서 달빛섬광과 난타를 먼저 적용하고, 광선이 적중하는 동안 실제 생성기 공격을 계속 이어 갑니다. 붉은 달 빌드는 대상과 순서를 바꿉니다.",
-          "붉은 달을 선택한 단일 전투는 대상에게 짓이기기를 맞혀 지속시간과 분노를 더 얻는 별도 운용입니다.",
-          "엘룬의 총애는 곰 상태 비전 피해에서 회복하며 쏟아지는 별은 자동 공격입니다. 수동 별빛쇄도 버튼을 찾지 않습니다.",
-          "달 광선의 적중 시간과 총 사용 횟수를 함께 확인합니다. 다음 풀만 기다리느라 반복해서 기회를 놓치지 않습니다."
+        summary: '달 광선과 비전 난타의 공격·회복을 활용하는 분기입니다. 현재 공개 가이드가 추천하는 레이드·쐐기 출발점으로 쓰되, 이번에 최신 로그 채택률을 직접 검증한 것은 아닙니다. 12.1에서는 달빛섬광 연타로 광선 쿨을 더 줄일 수 없으므로 난타·짓이기기와 정점·세트 흐름을 먼저 살립니다.',
+        bullets: [
+          '오프닝은 일반 광역에서 달빛섬광과 난타를 먼저 적용하고, 광선이 적중하는 동안 실제 생성기 공격을 계속 이어 갑니다. 붉은 달 빌드는 대상과 순서를 바꿉니다.',
+          '붉은 달을 선택한 단일 전투는 대상에게 짓이기기를 맞혀 지속시간과 분노를 더 얻는 별도 운용입니다.',
+          '엘룬의 총애는 곰 상태 비전 피해에서 회복하며 쏟아지는 별은 자동 공격입니다. 수동 별빛쇄도 버튼을 찾지 않습니다.',
+          '달 광선의 적중 시간과 총 사용 횟수를 함께 확인합니다. 다음 풀만 기다리느라 반복해서 기회를 놓치지 않습니다.',
         ],
-        "opener": {
-          "title": "엘룬의 대행자 첫 풀 전투 흐름",
-          "summary": "일반 달빛섬광과 화신·정점 마지막 노드를 선택한 예시입니다. 분노가 충분하지 않으면 공격 소비를 서두르지 않습니다. 나무 껍질·무쇠가죽과 야생 수호자는 준비된 시점에 끼워 쓰는 입력이며, 모든 단계를 별도 글쿨처럼 기다리는 순서가 아닙니다.",
-          "steps": [
+        opener: {
+          title: '엘룬의 대행자 첫 풀 전투 흐름',
+          summary: '일반 달빛섬광과 화신·정점 마지막 노드를 선택한 예시입니다. 분노가 충분하지 않으면 공격 소비를 서두르지 않습니다. 나무 껍질·무쇠가죽과 야생 수호자는 준비된 시점에 끼워 쓰는 입력이며, 모든 단계를 별도 글쿨처럼 기다리는 순서가 아닙니다.',
+          steps: [
             {
-              "skillId": "5487",
-              "label": "곰 변신",
-              "phase": "전투 전",
-              "trigger": "현재 형상 확인",
-              "note": "곰 상태에서 시작합니다. 표범 공격 오프닝을 기본값으로 강제하지 않습니다."
+              skillId: '5487',
+              label: '곰 변신',
+              phase: '전투 전',
+              trigger: '현재 형상 확인',
+              note: '곰 상태에서 시작합니다. 표범 공격 오프닝을 기본값으로 강제하지 않습니다.',
             },
             {
-              "skillId": "22812",
-              "label": "나무 껍질",
-              "phase": "접촉 직전",
-              "trigger": "낮은 분노 / 위험 진입",
-              "note": "첫 방어 분노가 부족한 진입을 덮습니다. 풀 위험이 낮으면 이후 필요한 시점에 배정할 수 있습니다."
+              skillId: '22812',
+              label: '나무 껍질',
+              phase: '접촉 직전',
+              trigger: '낮은 분노 / 위험 진입',
+              note: '첫 방어 분노가 부족한 진입을 덮습니다. 풀 위험이 낮으면 이후 필요한 시점에 배정할 수 있습니다.',
             },
             {
-              "skillId": "8921",
-              "label": "달빛섬광",
-              "phase": "첫 대상",
-              "trigger": "오래 사는 적 / 원거리 접촉",
-              "note": "붉은 달을 선택하지 않은 일반 다중 대상 예시입니다. 풀을 모으느라 생성기를 계속 미루지는 않습니다."
+              skillId: '8921',
+              label: '달빛섬광',
+              phase: '첫 대상',
+              trigger: '오래 사는 적 / 원거리 접촉',
+              note: '붉은 달을 선택하지 않은 일반 다중 대상 예시입니다. 풀을 모으느라 생성기를 계속 미루지는 않습니다.',
             },
             {
-              "skillId": "204066",
-              "label": "달 광선",
-              "phase": "교전 위치 확보",
-              "trigger": "적이 실제로 맞을 때",
-              "note": "광선이 적중할 구간에 사용합니다. 곧 끝날 무리나 즉시 이동하는 대상에게 낭비하지 않습니다."
+              skillId: '204066',
+              label: '달 광선',
+              phase: '교전 위치 확보',
+              trigger: '적이 실제로 맞을 때',
+              note: '광선이 적중할 구간에 사용합니다. 곧 끝날 무리나 즉시 이동하는 대상에게 낭비하지 않습니다.',
             },
             {
-              "skillId": "102558",
-              "label": "화신: 우르속의 수호자",
-              "phase": "공격·방어 시작",
-              "trigger": "이번 풀에 배정",
-              "note": "생성기 쿨다운과 체력 보정을 활용합니다. 정점 마지막 노드가 있으면 야생 수호자 사용 기회를 받습니다."
+              skillId: '102558',
+              label: '화신: 우르속의 수호자',
+              phase: '공격·방어 시작',
+              trigger: '이번 풀에 배정',
+              note: '생성기 쿨다운과 체력 보정을 활용합니다. 정점 마지막 노드가 있으면 야생 수호자 사용 기회를 받습니다.',
             },
             {
-              "skillId": "77758",
-              "label": "난타",
-              "phase": "광역 위협",
-              "trigger": "적이 근접에 모임",
-              "note": "지속 피해와 분노를 만들고 세트 발동 기회를 엽니다. 다음 생성기를 쓸 준비를 합니다."
+              skillId: '77758',
+              label: '난타',
+              phase: '광역 위협',
+              trigger: '적이 근접에 모임',
+              note: '지속 피해와 분노를 만들고 세트 발동 기회를 엽니다. 다음 생성기를 쓸 준비를 합니다.',
             },
             {
-              "skillId": "33917",
-              "label": "짓이기기",
-              "phase": "첫 분노 확보",
-              "trigger": "사용 가능",
-              "note": "분노를 만들고 충전을 비웁니다. 세트 강화나 초기화가 생기면 계속 확인합니다."
+              skillId: '33917',
+              label: '짓이기기',
+              phase: '첫 분노 확보',
+              trigger: '사용 가능',
+              note: '분노를 만들고 충전을 비웁니다. 세트 강화나 초기화가 생기면 계속 확인합니다.',
             },
             {
-              "skillId": "192081",
-              "label": "무쇠가죽",
-              "phase": "평타 완화",
-              "trigger": "분노 확보 / 필요한 중첩",
-              "note": "필요한 자원이 모이는 즉시 공격 사이에 사용합니다. 이 단계까지 기다리라는 뜻이 아닙니다."
+              skillId: '192081',
+              label: '무쇠가죽',
+              phase: '평타 완화',
+              trigger: '분노 확보 / 필요한 중첩',
+              note: '필요한 자원이 모이는 즉시 공격 사이에 사용합니다. 이 단계까지 기다리라는 뜻이 아닙니다.',
             },
             {
-              "skillId": "1269658",
-              "label": "야생 수호자",
-              "phase": "확정 발동 준비",
-              "trigger": "정점 마지막 노드 / 사용 기회 보유",
-              "note": "실제 사용 버튼으로 다음 공격 소비를 준비합니다. 없는 사용 기회를 8초마다 반복할 수는 없습니다."
+              skillId: '1269658',
+              label: '야생 수호자',
+              phase: '확정 발동 준비',
+              trigger: '정점 마지막 노드 / 사용 기회 보유',
+              note: '실제 사용 버튼으로 다음 공격 소비를 준비합니다. 없는 사용 기회를 8초마다 반복할 수는 없습니다.',
             },
             {
-              "skillId": "6807",
-              "label": "후려갈기기",
-              "phase": "영혼 깨우기",
-              "trigger": "방어 확보 / 소비 가능",
-              "note": "준비된 야생 수호자를 소비합니다. 말살 빌드는 말살을 사용하며, 분노가 부족하면 생성기를 먼저 추가합니다."
+              skillId: '6807',
+              label: '후려갈기기',
+              phase: '영혼 깨우기',
+              trigger: '방어 확보 / 소비 가능',
+              note: '준비된 야생 수호자를 소비합니다. 말살 빌드는 말살을 사용하며, 분노가 부족하면 생성기를 먼저 추가합니다.',
             },
             {
-              "skillId": "77758",
-              "label": "난타",
-              "phase": "영혼 등장",
-              "trigger": "초기화 확인",
-              "note": "영혼이 나왔으면 돌아온 난타로 후속 공격을 만듭니다. 무조건 정해진 초 단위로 누르는 단계는 아닙니다."
+              skillId: '77758',
+              label: '난타',
+              phase: '영혼 등장',
+              trigger: '초기화 확인',
+              note: '영혼이 나왔으면 돌아온 난타로 후속 공격을 만듭니다. 무조건 정해진 초 단위로 누르는 단계는 아닙니다.',
             },
             {
-              "skillId": "33917",
-              "label": "짓이기기",
-              "phase": "분노 회수",
-              "trigger": "초기화 / 추가 충전",
-              "note": "다시 분노와 영혼 공격을 얻고 유지 우선순위로 넘어갑니다. 다음 무쇠가죽과 자원 상한을 함께 봅니다."
-            }
-          ]
+              skillId: '33917',
+              label: '짓이기기',
+              phase: '분노 회수',
+              trigger: '초기화 / 추가 충전',
+              note: '다시 분노와 영혼 공격을 얻고 유지 우선순위로 넘어갑니다. 다음 무쇠가죽과 자원 상한을 함께 봅니다.',
+            },
+          ],
         },
-        "priority": [
+        priority: [
           {
-            "skillId": "192081",
-            "label": "필요한 물리 방어",
-            "note": "현재 맞고 있거나 곧 맞을 평타·물리 강타에 필요한 중첩을 확보합니다. 차단·즉시 생존과 함께 공격보다 먼저 판단합니다."
+            skillId: '192081',
+            label: '필요한 물리 방어',
+            note: '현재 맞고 있거나 곧 맞을 평타·물리 강타에 필요한 중첩을 확보합니다. 차단·즉시 생존과 함께 공격보다 먼저 판단합니다.',
           },
           {
-            "skillId": "22842",
-            "label": "위험한 체력 / 선사용 조건",
-            "note": "실제 체력 복구가 필요하면 사용합니다. 자연의 탄력·샘솟는 힘 등 선택 조건이 있으면 예측 피해 직전의 준비도 검토합니다."
+            skillId: '22842',
+            label: '위험한 체력 / 선사용 조건',
+            note: '실제 체력 복구가 필요하면 사용합니다. 자연의 탄력·샘솟는 힘 등 선택 조건이 있으면 예측 피해 직전의 준비도 검토합니다.',
           },
           {
-            "skillId": "8921",
-            "label": "필요한 지속 피해",
-            "note": "일반 달빛섬광 빌드에서 위험 대상과 오래 사는 적에게 유지합니다. 여러 적을 수동으로 갱신하다 생성기를 계속 놓치지 않습니다."
+            skillId: '8921',
+            label: '필요한 지속 피해',
+            note: '일반 달빛섬광 빌드에서 위험 대상과 오래 사는 적에게 유지합니다. 여러 적을 수동으로 갱신하다 생성기를 계속 놓치지 않습니다.',
           },
           {
-            "skillId": "77758",
-            "label": "난타 중첩 복구",
-            "note": "실제로 탱킹하는 적의 필요한 중첩이 없거나 곧 끝나면 우선 적용합니다. 기본 3중첩과 섬광의 발톱 추가 상한을 구분합니다."
+            skillId: '77758',
+            label: '난타 중첩 복구',
+            note: '실제로 탱킹하는 적의 필요한 중첩이 없거나 곧 끝나면 우선 적용합니다. 기본 3중첩과 섬광의 발톱 추가 상한을 구분합니다.',
           },
           {
-            "skillId": "204066",
-            "label": "달 광선",
-            "note": "대상이 남아 있고 적중할 수 있는 구간에 사용합니다. 삭망월의 고정 감소를 적용하며 달빛섬광으로 추가 쿨다운 감소를 기대하지 않습니다."
+            skillId: '204066',
+            label: '달 광선',
+            note: '대상이 남아 있고 적중할 수 있는 구간에 사용합니다. 삭망월의 고정 감소를 적용하며 달빛섬광으로 추가 쿨다운 감소를 기대하지 않습니다.',
           },
           {
-            "skillId": "102558",
-            "label": "계획한 화신",
-            "note": "배정한 위험·공격 구간에 사용합니다. 별도 타이밍을 기다릴 이유가 없다면 불필요한 지연으로 사용 횟수를 잃지 않습니다."
+            skillId: '102558',
+            label: '계획한 화신',
+            note: '배정한 위험·공격 구간에 사용합니다. 별도 타이밍을 기다릴 이유가 없다면 불필요한 지연으로 사용 횟수를 잃지 않습니다.',
           },
           {
-            "skillId": "1269658",
-            "label": "준비된 야생 수호자",
-            "note": "사용 기회가 있고 후속 공격 소비를 연결할 수 있을 때 준비합니다. 영혼을 깨운 뒤 생성기 초기화까지 활용할 수 있는지 확인합니다."
+            skillId: '1269658',
+            label: '준비된 야생 수호자',
+            note: '사용 기회가 있고 후속 공격 소비를 연결할 수 있을 때 준비합니다. 영혼을 깨운 뒤 생성기 초기화까지 활용할 수 있는지 확인합니다.',
           },
           {
-            "skillId": "1252871",
-            "label": "붉은 달 선택 시",
-            "note": "일반 달빛섬광을 대체한 빌드에만 적용합니다. 오래 사는 대상에 사용하고 다음 짓이기기를 같은 대상에 맞춥니다."
+            skillId: '1252871',
+            label: '붉은 달 선택 시',
+            note: '일반 달빛섬광을 대체한 빌드에만 적용합니다. 오래 사는 대상에 사용하고 다음 짓이기기를 같은 대상에 맞춥니다.',
           },
           {
-            "skillId": "33917",
-            "label": "붉은 달 중 생성",
-            "note": "붉은 달이 걸린 대상에서 지속시간 연장과 추가 분노를 얻습니다. 필요한 난타 중첩과 방어를 확보한 뒤 생성기 순서를 조정합니다."
+            skillId: '33917',
+            label: '붉은 달 중 생성',
+            note: '붉은 달이 걸린 대상에서 지속시간 연장과 추가 분노를 얻습니다. 필요한 난타 중첩과 방어를 확보한 뒤 생성기 순서를 조정합니다.',
           },
           {
-            "skillId": "77758",
-            "label": "난타 재사용",
-            "note": "기본 광역 생성기로 사용합니다. 영혼이 있으면 후속 공격, 세트가 있으면 강화 짓이기기·가시 기회가 함께 생깁니다."
+            skillId: '77758',
+            label: '난타 재사용',
+            note: '기본 광역 생성기로 사용합니다. 영혼이 있으면 후속 공격, 세트가 있으면 강화 짓이기기·가시 기회가 함께 생깁니다.',
           },
           {
-            "skillId": "33917",
-            "label": "짓이기기 재사용",
-            "note": "충전 상한과 초기화 방치를 줄입니다. 일반 달빛섬광 보조 입력보다 앞에 두고 세트·정점의 이득을 놓치지 않습니다."
+            skillId: '33917',
+            label: '짓이기기 재사용',
+            note: '충전 상한과 초기화 방치를 줄입니다. 일반 달빛섬광 보조 입력보다 앞에 두고 세트·정점의 이득을 놓치지 않습니다.',
           },
           {
-            "skillId": "6807",
-            "label": "단일 공격 소비",
-            "note": "무료 발동이나 남는 분노를 활용합니다. 다음 무쇠가죽과 회복 자원이 충분한지, 결정타로 비용이 늘어나는지 확인합니다."
+            skillId: '6807',
+            label: '단일 공격 소비',
+            note: '무료 발동이나 남는 분노를 활용합니다. 다음 무쇠가죽과 회복 자원이 충분한지, 결정타로 비용이 늘어나는지 확인합니다.',
           },
           {
-            "skillId": "400254",
-            "label": "말살 선택 시 광역 소비",
-            "note": "후려갈기기를 대체한 빌드에만 적용합니다. 무료 발동·방어 여유를 보고 전방의 적에게 사용합니다."
+            skillId: '400254',
+            label: '말살 선택 시 광역 소비',
+            note: '후려갈기기를 대체한 빌드에만 적용합니다. 무료 발동·방어 여유를 보고 전방의 적에게 사용합니다.',
           },
           {
-            "skillId": "8921",
-            "label": "여유 글쿨",
-            "note": "일반 달빛섬광 빌드에서 생성기가 비어 있을 때 사용합니다. 돌아온 짓이기기보다 계속 앞세우지 않습니다."
-          }
-        ]
+            skillId: '8921',
+            label: '여유 글쿨',
+            note: '일반 달빛섬광 빌드에서 생성기가 비어 있을 때 사용합니다. 돌아온 짓이기기보다 계속 앞세우지 않습니다.',
+          },
+        ],
+        singleTarget: {
+          title: '엘룬의 대행자 단일 우선순위',
+          summary: '필요한 방어 뒤 지속 피해와 달 광선을 유지합니다. 달빛섬광은 짓이기기보다 앞서는 무조건 필러가 아닙니다.',
+          priority: [
+            {
+              skillId: '192081',
+              label: '무쇠가죽',
+              note: '현재 탱킹 중인 물리 피해에 필요한 중첩을 확보합니다. 남는 분노를 공격에 쓰기 전에 다음 평타와 강타를 확인합니다.',
+            },
+            {
+              skillId: '22842',
+              label: '광포한 재생력',
+              note: '실제 체력 복구가 필요하면 사용합니다. 선택 특성의 선사용 보호막과 생명력 증가는 해당 특성이 있을 때만 적용합니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '일반 달빛섬광 빌드에서 지속 피해를 유지합니다. 붉은 달을 골랐다면 대체 주문과 대상의 짓이기기 연장 조건을 봅니다.',
+            },
+            {
+              skillId: '77758',
+              label: '난타',
+              note: '필요한 난타 중첩을 복구합니다. 기본 3중첩과 섬광의 발톱으로 늘어나는 상한을 선택에 맞춰 구분합니다.',
+            },
+            {
+              skillId: '204066',
+              label: '달 광선',
+              note: '대상이 실제로 광선에 남는 구간에 사용합니다. 달빛섬광을 반복해 추가 쿨다운 감소를 얻는 옛 규칙을 적용하지 않습니다.',
+            },
+            {
+              skillId: '33917',
+              label: '짓이기기',
+              note: '충전과 초기화를 회수합니다. 붉은 달이 있다면 지속시간 연장과 추가 분노 때문에 난타와의 순서를 별도로 조정합니다.',
+            },
+            {
+              skillId: '1269658',
+              label: '야생 수호자',
+              note: '정점 마지막 노드의 사용 기회가 있고 다음 공격 소비를 연결할 수 있으면 준비합니다. 없는 사용 기회를 매번 만들 수는 없습니다.',
+            },
+            {
+              skillId: '6807',
+              label: '후려갈기기',
+              note: '무료 발동이나 방어 뒤 남는 분노를 단일 공격에 씁니다. 말살을 선택한 빌드에는 후려갈기기를 별도 버튼으로 추가하지 않습니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '일반 빌드에서 앞선 생성기가 없을 때 채웁니다. 돌아온 짓이기기와 난타를 늦추면서 반복하지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '엘룬의 대행자 광역 우선순위',
+          summary: '무리의 물리 피해를 먼저 감당하고 난타·광선·짓이기기를 회수합니다. 말살은 선택한 경우에만 소비기로 사용합니다.',
+          priority: [
+            {
+              skillId: '192081',
+              label: '무쇠가죽',
+              note: '현재 맞는 무리의 물리 피해에 필요한 중첩을 먼저 확보합니다. 다음 무리까지 고려해 공격 소비로 방어 자원을 모두 비우지 않습니다.',
+            },
+            {
+              skillId: '22842',
+              label: '광포한 재생력',
+              note: '급한 체력 복구와 선택 특성의 선사용 조건을 봅니다. 큰 마법 피해는 물리 방어 중첩만으로 해결한다고 가정하지 않습니다.',
+            },
+            {
+              skillId: '77758',
+              label: '난타',
+              note: '실제로 모인 적에게 필요한 난타 중첩과 위협을 확보합니다. 적을 계속 모으느라 생성기를 오래 놀리지 않습니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '오래 사는 위험 대상에 일반 지속 피해를 유지합니다. 모든 적을 수동 갱신하느라 생성기와 광선을 계속 놓치지 않습니다.',
+            },
+            {
+              skillId: '204066',
+              label: '달 광선',
+              note: '적이 머무는 위치에 사용합니다. 이동이 예정된 풀과 곧 죽는 무리에는 전체 적중 시간을 먼저 확인합니다.',
+            },
+            {
+              skillId: '33917',
+              label: '짓이기기',
+              note: '추가 충전과 초기화를 소비합니다. 여러 대상이라고 달빛섬광을 항상 앞세워 세트와 정점의 생성기 연계를 놓치지 않습니다.',
+            },
+            {
+              skillId: '1269658',
+              label: '야생 수호자',
+              note: '사용 기회가 있고 소비와 후속 생성기를 연결할 수 있으면 준비합니다. 영혼을 깨운 뒤 돌아온 공격을 활용할 시간이 남아 있어야 합니다.',
+            },
+            {
+              skillId: '400254',
+              label: '말살',
+              note: '말살을 골랐고 필요한 방어를 확보한 뒤 무료 발동이나 남는 분노로 씁니다. 미선택 빌드는 실제 소비기로 바꿔 읽습니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '앞선 생성기가 없는 여유 글쿨에 사용합니다. 무리가 줄거나 위협 대상이 바뀌면 단일 유지 판단으로 돌아갑니다.',
+            },
+          ],
+        },
       },
       {
-        "label": "발톱의 드루이드",
-        "skillIds": [
-          "441583",
-          "441824",
-          "441835",
-          "441809",
-          "441675"
+        label: '발톱의 드루이드',
+        skillIds: [
+          '441583',
+          '441824',
+          '441835',
+          '441809',
+          '441675',
         ],
-        "flowSkillIds": [
-          "33917",
-          "441605",
-          "192081",
-          "77758",
-          "1269658"
+        flowSkillIds: [
+          '33917',
+          '441605',
+          '192081',
+          '77758',
+          '1269658',
         ],
-        "summary": "찢어발기기 변환을 공격과 방어 보정으로 연결하는 분기입니다. 첫 짓이기기, 화신 중 발톱 광란, 섬뜩한 상처 적용을 함께 봅니다. 곰 상태를 유지하는 기본 운용만으로도 설명할 수 있으며 표범 공격을 반드시 섞어야 하는 영웅 특성으로 강제하지 않습니다. 레이드 단일과 쐐기 광역 모두에서 현재 탱킹 대상에 상처가 적용되는지를 먼저 봅니다.",
-        "bullets": [
-          "오프닝에서는 목숨을 끊는 일격의 첫 짓이기기 변환을 확인하고, 평타 전에 필요한 분노와 무쇠가죽을 확보한 뒤 찢어발기기를 사용합니다.",
-          "찢어발기기는 섬뜩한 상처의 대상 피해 감소와 무쇠가죽 보정도 제공합니다. 순수 딜 스킬로만 평가하지 않습니다.",
-          "광폭화·화신 중에는 생성기에서 새 변환이 생깁니다. 발동을 오래 들고 있다가 다음 기회를 잃지 않습니다.",
-          "로그에서는 찢어발기기가 실제 탱킹 대상에 들어갔는지, 상처와 무쇠가죽 보정이 필요한 피해를 덮었는지 확인합니다. 표범 공격은 복귀가 안전한 별도 선택입니다."
+        summary: '찢어발기기 변환을 공격과 방어 보정으로 연결하는 분기입니다. 첫 짓이기기, 화신 중 발톱 광란, 섬뜩한 상처 적용을 함께 봅니다. 곰 상태를 유지하는 기본 운용만으로도 설명할 수 있으며 표범 공격을 반드시 섞어야 하는 영웅 특성으로 강제하지 않습니다. 레이드 단일과 쐐기 광역 모두에서 현재 탱킹 대상에 상처가 적용되는지를 먼저 봅니다.',
+        bullets: [
+          '오프닝에서는 목숨을 끊는 일격의 첫 짓이기기 변환을 확인하고, 평타 전에 필요한 분노와 무쇠가죽을 확보한 뒤 찢어발기기를 사용합니다.',
+          '찢어발기기는 섬뜩한 상처의 대상 피해 감소와 무쇠가죽 보정도 제공합니다. 순수 딜 스킬로만 평가하지 않습니다.',
+          '광폭화·화신 중에는 생성기에서 새 변환이 생깁니다. 발동을 오래 들고 있다가 다음 기회를 잃지 않습니다.',
+          '로그에서는 찢어발기기가 실제 탱킹 대상에 들어갔는지, 상처와 무쇠가죽 보정이 필요한 피해를 덮었는지 확인합니다. 표범 공격은 복귀가 안전한 별도 선택입니다.',
         ],
-        "opener": {
-          "title": "발톱의 드루이드 첫 풀 전투 흐름",
-          "summary": "곰 상태를 유지하는 기본 오프닝입니다. 목숨을 끊는 일격, 화신, 정점 마지막 노드를 선택한 조건을 붙였습니다. 표범 변신 공격은 별도 선택이며 차단·즉시 필요한 방어는 아래 공격 순서보다 먼저입니다.",
-          "steps": [
+        opener: {
+          title: '발톱의 드루이드 오프닝 전투 흐름',
+          summary: '곰 상태의 안전한 진입 예시입니다. 찢어발기기는 실제 발동이 있을 때만 쓰며 표범 전환을 기본 오프닝에 강제하지 않습니다.',
+          steps: [
             {
-              "skillId": "5487",
-              "label": "곰 변신",
-              "phase": "전투 전",
-              "trigger": "현재 형상 확인",
-              "note": "곰으로 시작합니다. 끈기나 액체 형상 선택이 곰 상태 확인을 대신하지 않습니다."
+              skillId: '5487',
+              label: '곰 변신',
+              note: '곰 상태에서 시작합니다. 탱킹해야 하는 첫 평타를 받기 위해 형상과 위치, 위험한 적의 방향을 먼저 확인합니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "22812",
-              "label": "나무 껍질",
-              "phase": "접촉 직전",
-              "trigger": "이번 진입이 위험",
-              "note": "첫 무쇠가죽 자원이 부족하면 특히 중요합니다. 다음 강타에 따로 배정했다면 그 계획을 따릅니다."
+              skillId: '22812',
+              label: '나무 껍질',
+              note: '낮은 분노의 위험 진입을 덮습니다. 쉬운 풀에서는 이후 큰 피해에 배정할 수 있으며 모든 풀의 고정 첫 버튼은 아닙니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "8921",
-              "label": "달빛섬광",
-              "phase": "원거리 접촉",
-              "trigger": "일반 달빛섬광 선택",
-              "note": "오래 사는 적에게 적용합니다. 붉은 달 빌드는 별도 붉은 달 사용 시점과 짓이기기 대상을 맞춥니다."
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '일반 달빛섬광 빌드에서 오래 사는 대상에 적용합니다. 붉은 달 선택과 지속 피해 대체를 별도로 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "102558",
-              "label": "화신: 우르속의 수호자",
-              "phase": "주요 쿨기",
-              "trigger": "이번 전투에 배정",
-              "note": "생성기와 발톱 광란의 강화 구간을 엽니다. 야생 수호자 사용 기회도 확인합니다."
+              skillId: '102558',
+              label: '화신: 우르속의 수호자',
+              note: '계획한 위험·공격 구간에 사용합니다. 정점 마지막 노드를 선택했다면 야생 수호자 사용 기회를 함께 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "77758",
-              "label": "난타",
-              "phase": "첫 광역 적용",
-              "trigger": "근접 적이 모임",
-              "note": "필요한 중첩을 먼저 만들고 새 적에게 위협을 잡습니다."
+              skillId: '77758',
+              label: '난타',
+              note: '근접에 모인 적에게 난타를 적용해 위협과 분노를 만듭니다. 필요한 중첩과 추가 중첩 상한을 선택에 맞춰 봅니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "33917",
-              "label": "짓이기기",
-              "phase": "첫 변환 준비",
-              "trigger": "목숨을 끊는 일격 선택",
-              "note": "전투 첫 짓이기기로 찢어발기기를 준비하고 분노를 얻습니다. 변환이 사용 비용을 무조건 없애지는 않습니다."
+              skillId: '33917',
+              label: '짓이기기',
+              note: '충전과 첫 분노를 확보합니다. 이후 생성기 초기화와 다음 방어 소비를 확인하고 형상 전환으로 자원을 버리지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "192081",
-              "label": "무쇠가죽",
-              "phase": "첫 방어",
-              "trigger": "물리 피해 전 / 분노 확보",
-              "note": "공격 사이에 필요한 중첩을 확보합니다. 분노가 없으면 생성기를 더 쓰며 이미 배정한 생존기로 진입을 덮습니다."
+              skillId: '192081',
+              label: '무쇠가죽',
+              note: '필요한 자원이 확보되는 즉시 물리 피해를 덮습니다. 이 흐름도의 위치까지 무쇠가죽 사용을 기다리라는 뜻은 아닙니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "1269658",
-              "label": "야생 수호자",
-              "phase": "확정 영혼 준비",
-              "trigger": "사용 기회가 있음",
-              "note": "다음 공격 소비에서 영혼이 나타나게 준비합니다. 특성 1269619를 직접 누르는 것은 아닙니다."
+              skillId: '1269658',
+              label: '야생 수호자',
+              note: '사용 기회가 있고 다음 공격 소비를 연결할 수 있을 때 준비합니다. 정점 마지막 노드가 없는 빌드에 강제하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "441605",
-              "label": "찢어발기기",
-              "phase": "변환 소비",
-              "trigger": "발동 / 사용 자원 / 방어 확보",
-              "note": "전방의 위험 대상에게 사용해 영혼을 깨우고 상처·방어 보정을 살립니다. 변환이 없으면 현재 가능한 소비기로 판단합니다."
+              skillId: '441605',
+              label: '찢어발기기',
+              note: '찢어발기기 발동이 준비됐을 때 실제 시전 주문으로 소비합니다. 발동이 없으면 후려갈기기나 선택한 말살로 읽습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "77758",
-              "label": "난타",
-              "phase": "초기화 활용",
-              "trigger": "영혼 등장 후 사용 가능",
-              "note": "돌아온 난타에서 영혼 공격과 세트 효과를 이어 갑니다. 새 적의 중첩도 확인합니다."
+              skillId: '77758',
+              label: '난타',
+              note: '영혼과 초기화가 발생했다면 돌아온 난타를 회수합니다. 발동이 없으면 정상 쿨다운과 유지 순서로 돌아갑니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
             {
-              "skillId": "33917",
-              "label": "짓이기기",
-              "phase": "분노 회수",
-              "trigger": "초기화 / 충전 보유",
-              "note": "분노를 받고 다음 찢어발기기 기회와 방어를 준비합니다. 붉은 달 중이면 대상 일치를 확인합니다."
+              skillId: '33917',
+              label: '짓이기기',
+              note: '추가 충전과 초기화를 회수해 다음 방어를 준비합니다. 첫 공격이 끝났다고 분노 상한과 물리 피해 판단을 멈추지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
             },
-            {
-              "skillId": "441605",
-              "label": "찢어발기기",
-              "phase": "추가 발동",
-              "trigger": "새 변환이 생겼을 때만",
-              "note": "발톱 광란 등에서 다음 기회가 생기면 소비합니다. 매번 이 순서에서 확정으로 다시 뜨는 것은 아닙니다."
-            }
-          ]
+          ],
         },
-        "priority": [
+        priority: [
           {
-            "skillId": "192081",
-            "label": "필요한 물리 방어",
-            "note": "평타와 물리 강타에 필요한 중첩부터 확보합니다. 찢어발기기의 방어 보정이 있어도 무쇠가죽 자체를 대신하지 않습니다."
+            skillId: '192081',
+            label: '필요한 물리 방어',
+            note: '평타와 물리 강타에 필요한 중첩부터 확보합니다. 찢어발기기의 방어 보정이 있어도 무쇠가죽 자체를 대신하지 않습니다.',
           },
           {
-            "skillId": "22842",
-            "label": "체력 복구 / 선사용",
-            "note": "위험한 체력을 회복합니다. 샘솟는 힘·자연의 탄력이 있으면 큰 피해 전 준비도 가능하며 이후 충전 계획을 함께 봅니다."
+            skillId: '22842',
+            label: '체력 복구 / 선사용',
+            note: '위험한 체력을 회복합니다. 샘솟는 힘·자연의 탄력이 있으면 큰 피해 전 준비도 가능하며 이후 충전 계획을 함께 봅니다.',
           },
           {
-            "skillId": "8921",
-            "label": "기본 지속 피해",
-            "note": "일반 달빛섬광을 선택한 빌드에서 오래 사는 대상에 유지합니다. 붉은 달 선택과 동시에 적용할 수 있는 목록으로 읽지 않습니다."
+            skillId: '8921',
+            label: '기본 지속 피해',
+            note: '일반 달빛섬광을 선택한 빌드에서 오래 사는 대상에 유지합니다. 붉은 달 선택과 동시에 적용할 수 있는 목록으로 읽지 않습니다.',
           },
           {
-            "skillId": "77758",
-            "label": "필요한 난타 중첩",
-            "note": "현재 탱킹하는 적의 난타가 빠지지 않게 합니다. 상처 찢기의 피해 감소와 광역 위협을 먼저 확보합니다."
+            skillId: '77758',
+            label: '필요한 난타 중첩',
+            note: '현재 탱킹하는 적의 난타가 빠지지 않게 합니다. 상처 찢기의 피해 감소와 광역 위협을 먼저 확보합니다.',
           },
           {
-            "skillId": "102558",
-            "label": "배정한 화신",
-            "note": "발톱 광란, 생성기와 정점 사용 기회를 활용할 구간에 사용합니다. 다음 치명적인 피해에 필요한 쿨기 계획을 우선합니다."
+            skillId: '102558',
+            label: '배정한 화신',
+            note: '발톱 광란, 생성기와 정점 사용 기회를 활용할 구간에 사용합니다. 다음 치명적인 피해에 필요한 쿨기 계획을 우선합니다.',
           },
           {
-            "skillId": "1269658",
-            "label": "야생 수호자 준비",
-            "note": "사용 기회가 있고 다음 공격 소비가 가능할 때 사용합니다. 화신이 끝나기를 기다리지 않습니다."
+            skillId: '1269658',
+            label: '야생 수호자 준비',
+            note: '사용 기회가 있고 다음 공격 소비가 가능할 때 사용합니다. 화신이 끝나기를 기다리지 않습니다.',
           },
           {
-            "skillId": "1252871",
-            "label": "붉은 달 선택 시",
-            "note": "해당 빌드의 지속 피해 쿨기입니다. 같은 대상에 짓이기기를 이어 갈 수 있는지 확인합니다."
+            skillId: '1252871',
+            label: '붉은 달 선택 시',
+            note: '해당 빌드의 지속 피해 쿨기입니다. 같은 대상에 짓이기기를 이어 갈 수 있는지 확인합니다.',
           },
           {
-            "skillId": "441605",
-            "label": "방어 여유가 있는 찢어발기기",
-            "note": "변환이 있고 분노가 충분하면 발동을 오래 쌓아 두지 않고 사용합니다. 상처를 위험 대상에 맞히고 다음 무쇠가죽 비용을 남깁니다."
+            skillId: '441605',
+            label: '방어 여유가 있는 찢어발기기',
+            note: '변환이 있고 분노가 충분하면 발동을 오래 쌓아 두지 않고 사용합니다. 상처를 위험 대상에 맞히고 다음 무쇠가죽 비용을 남깁니다.',
           },
           {
-            "skillId": "33917",
-            "label": "붉은 달 중 짓이기기",
-            "note": "붉은 달 지속시간과 분노를 더 얻는 조건부 우선순위입니다. 필요한 난타 중첩은 먼저 유지합니다."
+            skillId: '33917',
+            label: '붉은 달 중 짓이기기',
+            note: '붉은 달 지속시간과 분노를 더 얻는 조건부 우선순위입니다. 필요한 난타 중첩은 먼저 유지합니다.',
           },
           {
-            "skillId": "77758",
-            "label": "난타 재사용",
-            "note": "영혼 공격, 세트 보상과 발톱 광란 기회를 이어 갑니다. 광폭화 중 새로운 변환이 생겼는지도 확인합니다."
+            skillId: '77758',
+            label: '난타 재사용',
+            note: '영혼 공격, 세트 보상과 발톱 광란 기회를 이어 갑니다. 광폭화 중 새로운 변환이 생겼는지도 확인합니다.',
           },
           {
-            "skillId": "33917",
-            "label": "짓이기기 재사용",
-            "note": "초기화와 충전을 방치하지 않습니다. 심장을 향해·정점·세트 선택에 따라 추가 피해와 회복도 함께 얻습니다."
+            skillId: '33917',
+            label: '짓이기기 재사용',
+            note: '초기화와 충전을 방치하지 않습니다. 심장을 향해·정점·세트 선택에 따라 추가 피해와 회복도 함께 얻습니다.',
           },
           {
-            "skillId": "8921",
-            "label": "은하의 수호자 수동 강화",
-            "note": "일반 달빛섬광 빌드의 강화 시전을 소비합니다. 자동 발사와 수동 강화를 구분하며 붉은 달에서는 같은 방식으로 동작하지 않습니다."
+            skillId: '8921',
+            label: '은하의 수호자 수동 강화',
+            note: '일반 달빛섬광 빌드의 강화 시전을 소비합니다. 자동 발사와 수동 강화를 구분하며 붉은 달에서는 같은 방식으로 동작하지 않습니다.',
           },
           {
-            "skillId": "6807",
-            "label": "후려갈기기",
-            "note": "현재 변환이 없고 방어가 충분할 때 무료 발동이나 공격용 분노를 소비합니다. 결정타의 추가 비용까지 확인합니다."
+            skillId: '6807',
+            label: '후려갈기기',
+            note: '현재 변환이 없고 방어가 충분할 때 무료 발동이나 공격용 분노를 소비합니다. 결정타의 추가 비용까지 확인합니다.',
           },
           {
-            "skillId": "400254",
-            "label": "말살 선택 시",
-            "note": "광역 소비기로 대체한 빌드에만 적용합니다. 전방 적에게 맞히고 무료 발동과 보호막을 활용합니다."
+            skillId: '400254',
+            label: '말살 선택 시',
+            note: '광역 소비기로 대체한 빌드에만 적용합니다. 전방 적에게 맞히고 무료 발동과 보호막을 활용합니다.',
           },
           {
-            "skillId": "213764",
-            "label": "다른 입력이 없을 때",
-            "note": "곰 상태의 보조 공격입니다. 중요한 생성기와 발동 소비를 밀어내지 않으며 기본 분노 생성기로 계산하지 않습니다."
-          }
-        ]
-      }
+            skillId: '213764',
+            label: '다른 입력이 없을 때',
+            note: '곰 상태의 보조 공격입니다. 중요한 생성기와 발동 소비를 밀어내지 않으며 기본 분노 생성기로 계산하지 않습니다.',
+          },
+        ],
+        singleTarget: {
+          title: '발톱의 드루이드 단일 우선순위',
+          summary: '방어가 먼저이며 발동 찢어발기기와 분노를 연결합니다. 표범 공격은 선택 특성과 안전한 탱킹 공백이 있을 때의 별도 운용입니다.',
+          priority: [
+            {
+              skillId: '192081',
+              label: '무쇠가죽',
+              note: '다음 평타와 물리 강타에 필요한 중첩을 먼저 확보합니다. 분노가 높아도 방어 자원이 필요한 순간에는 공격 소비가 우선되지 않습니다.',
+            },
+            {
+              skillId: '22842',
+              label: '광포한 재생력',
+              note: '실제 체력 복구와 선택 특성의 선사용 조건을 확인합니다. 곰에서 벗어나는 순간의 피해를 회복 한 번으로 모두 상쇄한다고 가정하지 않습니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '일반 달빛섬광 빌드에서 지속 피해를 유지합니다. 붉은 달을 선택했다면 대체 주문과 짓이기기 연장 조건으로 읽습니다.',
+            },
+            {
+              skillId: '77758',
+              label: '난타',
+              note: '필요한 난타 중첩을 유지합니다. 중첩이 이미 안전하면 발동과 분노, 생성기 초기화를 함께 확인합니다.',
+            },
+            {
+              skillId: '441605',
+              label: '찢어발기기',
+              note: '찢어발기기가 발동했고 방어가 확보된 높은 분노 구간이면 우선 소비를 검토합니다. 다음 발동을 덮어쓰지 않도록 확인합니다.',
+            },
+            {
+              skillId: '33917',
+              label: '짓이기기',
+              note: '충전과 초기화를 회수합니다. 붉은 달 선택 시에는 지속시간 연장과 추가 분노 때문에 생성기 순서를 조정합니다.',
+            },
+            {
+              skillId: '1269658',
+              label: '야생 수호자',
+              note: '사용 기회가 있고 후속 공격 소비를 연결할 수 있으면 준비합니다. 생성기 초기화까지 실제로 활용할 시간을 확보합니다.',
+            },
+            {
+              skillId: '6807',
+              label: '후려갈기기',
+              note: '무료 발동 또는 방어 뒤 남는 분노로 사용합니다. 말살 대체 빌드에서는 후려갈기기를 별도 소비기로 합산하지 않습니다.',
+            },
+            {
+              skillId: '77758',
+              label: '난타',
+              note: '앞선 발동과 유지 조건이 없으면 돌아온 난타를 사용합니다. 표범 공격을 넣기 위해 기본 생성기를 장시간 비우지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '발톱의 드루이드 광역 우선순위',
+          summary: '무리의 물리 피해를 감당한 뒤 광역 찢어발기기와 말살을 봅니다. 분노를 공격에 쓰는 것과 안전한 형상 전환을 구별합니다.',
+          priority: [
+            {
+              skillId: '192081',
+              label: '무쇠가죽',
+              note: '무리가 주는 물리 피해에 필요한 중첩부터 확보합니다. 추가 적이 합류하는 순간과 방어기 종료 뒤의 분노를 함께 계산합니다.',
+            },
+            {
+              skillId: '22842',
+              label: '광포한 재생력',
+              note: '실제 체력 복구가 필요하면 사용합니다. 큰 마법 피해와 물리 평타의 대응을 구분하고 나무 껍질 등 별도 방어 배정을 확인합니다.',
+            },
+            {
+              skillId: '77758',
+              label: '난타',
+              note: '실제로 모인 적에게 필요한 지속 피해 중첩과 위협을 확보합니다. 섬광의 발톱 선택에 따른 추가 상한을 구별합니다.',
+            },
+            {
+              skillId: '441605',
+              label: '찢어발기기',
+              note: '발동이 있고 필요한 방어가 확보됐다면 무리에 사용합니다. 높은 분노에서 먼저 소비해 다음 생성기의 자원 낭비를 줄입니다.',
+            },
+            {
+              skillId: '33917',
+              label: '짓이기기',
+              note: '충전과 초기화를 회수합니다. 달빛섬광 수동 다중 갱신 때문에 돌아온 생성기를 장시간 미루지 않습니다.',
+            },
+            {
+              skillId: '1269658',
+              label: '야생 수호자',
+              note: '준비된 사용 기회를 소비와 후속 생성기에 연결합니다. 무리가 곧 끝나면 영혼과 초기화의 적중 시간을 확인합니다.',
+            },
+            {
+              skillId: '400254',
+              label: '말살',
+              note: '말살을 선택했고 방어 뒤 남는 분노나 무료 발동이 있으면 사용합니다. 미선택 빌드에 광역 소비 버튼을 만들어 넣지 않습니다.',
+            },
+            {
+              skillId: '8921',
+              label: '달빛섬광',
+              note: '일반 달빛섬광 빌드에서 오래 사는 위험 대상에 유지합니다. 형상 전환을 강제하거나 광역 위협 생성보다 모든 적의 도트를 앞세우지 않습니다.',
+            },
+          ],
+        },
+      },
     ],
-    "sources": [
+    sources: [
       {
-        "tier": "S",
-        "label": "Blizzard 12.1 울라텍의 저주 업데이트 노트",
-        "url": "https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes",
-        "updated": "2026-08-06 / 12.1",
-        "note": "수호의 삭망월·피투성이 모피·야생 수호자 개편과 공격·방어 균형 조정 의도를 확인했습니다. 현재 한국어 툴팁과 맞춰 적용했습니다."
+        tier: 'S',
+        label: 'Blizzard 12.1 울라텍의 저주 업데이트 노트',
+        url: 'https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes',
+        updated: '2026-08-06 / 12.1',
+        note: '수호의 삭망월·피투성이 모피·야생 수호자 개편과 공격·방어 균형 조정 의도를 확인했습니다. 현재 한국어 툴팁과 맞춰 적용했습니다.',
       },
       {
-        "tier": "S",
-        "label": "Blizzard 9월 9일 수호 핫픽스",
-        "url": "https://news.blizzard.com/en-us/article/24296142/hotfixes-september-10-2026",
-        "updated": "2026-09-09 항목",
-        "note": "마지막 정점 노드를 선택하지 않아도 야생 수호자가 난타·짓이기기를 강화하던 오류가 수정됐습니다. 발동 자체와 마지막 노드 보상을 분리했습니다."
+        tier: 'S',
+        label: 'Blizzard 9월 9일 수호 핫픽스',
+        url: 'https://news.blizzard.com/en-us/article/24296142/hotfixes-september-10-2026',
+        updated: '2026-09-09 항목',
+        note: '마지막 정점 노드를 선택하지 않아도 야생 수호자가 난타·짓이기기를 강화하던 오류가 수정됐습니다. 발동 자체와 마지막 노드 보상을 분리했습니다.',
       },
       {
-        "tier": "A",
-        "label": "Wowhead 수호 딜사이클 - Pumps",
-        "url": "https://www.wowhead.com/ko/guide/classes/druid/guardian/rotation-cooldowns-pve-tank",
-        "updated": "12.1 / 2026-09-13 확인",
-        "note": "영웅 특성과 선택 주문별 생성·소비 판단을 대조했습니다. 조건이 숨겨진 여러 목록을 하나의 고정 시전 순서로 합치지 않았습니다."
+        tier: 'A',
+        label: 'Wowhead 수호 딜사이클 - Pumps',
+        url: 'https://www.wowhead.com/ko/guide/classes/druid/guardian/rotation-cooldowns-pve-tank',
+        updated: '12.1 / 2026-09-13 확인',
+        note: '영웅 특성과 선택 주문별 생성·소비 판단을 대조했습니다. 조건이 숨겨진 여러 목록을 하나의 고정 시전 순서로 합치지 않았습니다.',
       },
       {
-        "tier": "A",
-        "label": "Wowhead 수호 능력과 특성",
-        "url": "https://www.wowhead.com/ko/guide/classes/druid/guardian/abilities-talents-pve-tank",
-        "updated": "2026-08-12 표기",
-        "note": "현재 능력과 변경 맥락을 확인했습니다. 삭망월과 일부 옛 영웅 특성 설명은 라이브 툴팁보다 오래되어 현재값으로 사용하지 않았습니다."
+        tier: 'A',
+        label: 'Wowhead 수호 능력과 특성',
+        url: 'https://www.wowhead.com/ko/guide/classes/druid/guardian/abilities-talents-pve-tank',
+        updated: '2026-08-12 표기',
+        note: '현재 능력과 변경 맥락을 확인했습니다. 삭망월과 일부 옛 영웅 특성 설명은 라이브 툴팁보다 오래되어 현재값으로 사용하지 않았습니다.',
       },
       {
-        "tier": "A",
-        "label": "Icy Veins 수호 딜사이클 - Pumps",
-        "url": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-rotation-cooldowns-abilities",
-        "updated": "2026-08-10 표기 / 12.1",
-        "note": "분노, 생성기, 재생력, 쿨기와 영웅 특성별 운용을 확인했습니다. 기본 방어도 계수와 현재 선택 등급의 값을 구분했습니다."
+        tier: 'A',
+        label: 'Icy Veins 수호 딜사이클 - Pumps',
+        url: 'https://www.icy-veins.com/wow/guardian-druid-pve-tank-rotation-cooldowns-abilities',
+        updated: '2026-08-10 표기 / 12.1',
+        note: '분노, 생성기, 재생력, 쿨기와 영웅 특성별 운용을 확인했습니다. 기본 방어도 계수와 현재 선택 등급의 값을 구분했습니다.',
       },
       {
-        "tier": "A",
-        "label": "Icy Veins 수호 특성",
-        "url": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-spec-builds-talents",
-        "updated": "12.1 / 2026-09-13 확인",
-        "note": "단일·광역과 영웅 특성 선택을 대조했습니다. 특정 로그의 채택률을 대신하는 통계로 사용하지 않습니다."
+        tier: 'A',
+        label: 'Icy Veins 수호 특성',
+        url: 'https://www.icy-veins.com/wow/guardian-druid-pve-tank-spec-builds-talents',
+        updated: '12.1 / 2026-09-13 확인',
+        note: '단일·광역과 영웅 특성 선택을 대조했습니다. 특정 로그의 채택률을 대신하는 통계로 사용하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Icy Veins 수호 능력 목록",
-        "url": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-spell-summary",
-        "updated": "12.1 / 2026-09-13 확인",
-        "note": "현재 배우는 주문과 지속 효과를 대조했습니다. 수호 실제 시전과 다른 전문화의 동명 주문은 별도 ID로 확인했습니다."
+        tier: 'A',
+        label: 'Icy Veins 수호 능력 목록',
+        url: 'https://www.icy-veins.com/wow/guardian-druid-pve-tank-spell-summary',
+        updated: '12.1 / 2026-09-13 확인',
+        note: '현재 배우는 주문과 지속 효과를 대조했습니다. 수호 실제 시전과 다른 전문화의 동명 주문은 별도 ID로 확인했습니다.',
       },
       {
-        "tier": "B",
-        "label": "Method 수호 특성 - Tactyks",
-        "url": "https://www.method.gg/guides/guardian-druid/talents",
-        "updated": "2026-09-03",
-        "note": "레이드·쐐기 엘룬 추천, 붉은 달과 다중 대상 선택, 정점 및 변신 공격의 선택 조건을 확인했습니다. 실제 로그 채택률 주장은 하지 않습니다."
+        tier: 'B',
+        label: 'Method 수호 특성 - Tactyks',
+        url: 'https://www.method.gg/guides/guardian-druid/talents',
+        updated: '2026-09-03',
+        note: '레이드·쐐기 엘룬 추천, 붉은 달과 다중 대상 선택, 정점 및 변신 공격의 선택 조건을 확인했습니다. 실제 로그 채택률 주장은 하지 않습니다.',
       },
       {
-        "tier": "B",
-        "label": "Method 수호 운용 - Tactyks",
-        "url": "https://www.method.gg/guides/guardian-druid/playstyle-and-rotation",
-        "updated": "2026-09-03",
-        "note": "12.1 달빛섬광 과사용 주의, 붉은 달의 짓이기기 우선순위, 재생력 선사용과 표범 공격을 생략할 수 있다는 설명을 대조했습니다."
+        tier: 'B',
+        label: 'Method 수호 운용 - Tactyks',
+        url: 'https://www.method.gg/guides/guardian-druid/playstyle-and-rotation',
+        updated: '2026-09-03',
+        note: '12.1 달빛섬광 과사용 주의, 붉은 달의 짓이기기 우선순위, 재생력 선사용과 표범 공격을 생략할 수 있다는 설명을 대조했습니다.',
       },
       {
-        "tier": "B",
-        "label": "Method 수호 장비",
-        "url": "https://www.method.gg/guides/guardian-druid/gearing",
-        "updated": "2026-09-03",
-        "note": "시즌 2 세트와 장비 선택 맥락을 확인했습니다. 개인 장비의 최적 조합이나 딜 증가율을 측정한 것은 아닙니다."
+        tier: 'B',
+        label: 'Method 수호 장비',
+        url: 'https://www.method.gg/guides/guardian-druid/gearing',
+        updated: '2026-09-03',
+        note: '시즌 2 세트와 장비 선택 맥락을 확인했습니다. 개인 장비의 최적 조합이나 딜 증가율을 측정한 것은 아닙니다.',
       },
       {
-        "tier": "S",
-        "label": "한국어 라이브 삭망월",
-        "url": "https://nether.wowhead.com/tooltip/spell/429539?locale=1",
-        "updated": "2026-09-13",
-        "note": "수호의 고정 20초 쿨다운 감소와 조화의 비전 사용형 감소를 분리했습니다."
+        tier: 'S',
+        label: '한국어 라이브 삭망월',
+        url: 'https://nether.wowhead.com/tooltip/spell/429539?locale=1',
+        updated: '2026-09-13',
+        note: '수호의 고정 20초 쿨다운 감소와 조화의 비전 사용형 감소를 분리했습니다.',
       },
       {
-        "tier": "S",
-        "label": "한국어 라이브 야생 수호자 마지막 노드",
-        "url": "https://nether.wowhead.com/tooltip/spell/1269619?locale=1",
-        "updated": "2026-09-13",
-        "note": "영혼 등장 시 생성기 초기화, 공격 강화, 추가 분노와 화신 시전 시 사용 기회 획득을 확인했습니다."
+        tier: 'S',
+        label: '한국어 라이브 야생 수호자 마지막 노드',
+        url: 'https://nether.wowhead.com/tooltip/spell/1269619?locale=1',
+        updated: '2026-09-13',
+        note: '영혼 등장 시 생성기 초기화, 공격 강화, 추가 분노와 화신 시전 시 사용 기회 획득을 확인했습니다.',
       },
       {
-        "tier": "S",
-        "label": "한국어 라이브 맹위",
-        "url": "https://nether.wowhead.com/tooltip/spell/135288?locale=1",
-        "updated": "2026-09-13",
-        "note": "짓이기기가 아닌 후려갈기기·말살 소비, 무료 발동과 대상 피해 감소를 확인했습니다."
+        tier: 'S',
+        label: '한국어 라이브 맹위',
+        url: 'https://nether.wowhead.com/tooltip/spell/135288?locale=1',
+        updated: '2026-09-13',
+        note: '짓이기기가 아닌 후려갈기기·말살 소비, 무료 발동과 대상 피해 감소를 확인했습니다.',
       },
       {
-        "tier": "S",
-        "label": "한국어 라이브 시즌 2 4세트",
-        "url": "https://nether.wowhead.com/tooltip/spell/1296608?locale=1",
-        "updated": "2026-09-13",
-        "note": "난타의 가시 공격과 광폭화·화신 연장 상한을 확인했습니다. 효과명은 API에서도 영어입니다."
+        tier: 'S',
+        label: '한국어 라이브 시즌 2 4세트',
+        url: 'https://nether.wowhead.com/tooltip/spell/1296608?locale=1',
+        updated: '2026-09-13',
+        note: '난타의 가시 공격과 광폭화·화신 연장 상한을 확인했습니다. 효과명은 API에서도 영어입니다.',
       },
       {
-        "tier": "B",
-        "label": "SimulationCraft 수호 구현",
-        "url": "https://github.com/simulationcraft/simc/blob/c8352dd12b9d57a9f510f29860969160e83653cc/engine/class_modules/sc_druid.cpp#L5600",
-        "updated": "2026-09-10 변경 / 2026-09-13 확인",
-        "note": "분노를 다스리는 자가 공격 소비기 계열의 꿰뚫기 확률을 보정하는 구현을 확인했습니다. 라이브 서버 실측과는 구분합니다."
+        tier: 'B',
+        label: 'SimulationCraft 수호 구현',
+        url: 'https://github.com/simulationcraft/simc/blob/c8352dd12b9d57a9f510f29860969160e83653cc/engine/class_modules/sc_druid.cpp#L5600',
+        updated: '2026-09-10 변경 / 2026-09-13 확인',
+        note: '분노를 다스리는 자가 공격 소비기 계열의 꿰뚫기 확률을 보정하는 구현을 확인했습니다. 라이브 서버 실측과는 구분합니다.',
       },
       {
-        "tier": "B",
-        "label": "Dreamgrove 공개 수호 자료",
-        "url": "https://www.dreamgrove.gg/blog/guardian/compendium",
-        "updated": "2026-09-13 접근 시도",
-        "note": "이번 조회에서 최신 본문을 확보하지 못했습니다. 비공개 디스코드의 메시지나 핀을 읽었다고 주장하지 않습니다."
+        tier: 'B',
+        label: 'Dreamgrove 공개 수호 자료',
+        url: 'https://www.dreamgrove.gg/blog/guardian/compendium',
+        updated: '2026-09-13 접근 시도',
+        note: '이번 조회에서 최신 본문을 확보하지 못했습니다. 비공개 디스코드의 메시지나 핀을 읽었다고 주장하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Archon 수호 신화 레이드 집계",
-        "url": "https://www.archon.gg/wow/builds/guardian/druid/raid/talents/mythic/all-bosses",
-        "updated": "2026-09-13 접근 시도",
-        "note": "현재 집계 본문을 확보하지 못해 12.1 채택률·로그 수를 제시하지 않습니다. 이전 6월 수치를 현재값으로 쓰지 않습니다."
+        tier: 'A',
+        label: 'Archon 수호 신화 레이드 집계',
+        url: 'https://www.archon.gg/wow/builds/guardian/druid/raid/talents/mythic/all-bosses',
+        updated: '2026-09-13 접근 시도',
+        note: '현재 집계 본문을 확보하지 못해 12.1 채택률·로그 수를 제시하지 않습니다. 이전 6월 수치를 현재값으로 쓰지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Archon 수호 쐐기 고단 집계",
-        "url": "https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/talents/high-keys/all-dungeons/this-week",
-        "updated": "2026-09-13 접근 시도",
-        "note": "최신 쐐기 집계 본문을 확보하지 못했습니다. 상위 로그의 특성 비율을 현재 숫자로 제시하지 않습니다."
-      }
+        tier: 'A',
+        label: 'Archon 수호 쐐기 고단 집계',
+        url: 'https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/talents/high-keys/all-dungeons/this-week',
+        updated: '2026-09-13 접근 시도',
+        note: '최신 쐐기 집계 본문을 확보하지 못했습니다. 상위 로그의 특성 비율을 현재 숫자로 제시하지 않습니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/guardian/druid/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 5,578건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 215,600건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=106',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:03:46.235Z · 장비 구간 328 · 415.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=19',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T10:33:24.413Z · 장비 구간 328 · 415.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
-    "evidence": [
-      "라이브 삭망월은 수호의 달 광선 쿨다운을 고정 20초 줄입니다. 달빛섬광을 추가로 누른 횟수로 다음 사용을 계속 앞당기지는 않습니다.",
-      "야생 수호자는 분노 소비에서 영혼을 깨우고, 난타와 짓이기기 시전에서 후속 공격을 만듭니다. 마지막 노드는 생성기 초기화와 분노 회수를 추가합니다.",
-      "맹위는 자동 공격으로 발동해 후려갈기기·말살을 강화합니다. 짓이기기로 소비하는 꿰뚫기와는 다른 발동입니다.",
-      "시즌 2의 2세트는 난타에서 다음 짓이기기를 강화하고, 4세트는 가시 피해와 제한된 화신 연장을 추가합니다. 세트 착용 여부에 따라 비교할 피해 구성이 달라집니다.",
-      "자연의 탄력은 광포한 재생력의 초과 치유를 보호막으로 바꾸며 샘솟는 힘은 최대 생명력을 늘립니다. 피해 전 재생력 사용을 일괄 실수로 분류할 수 없습니다.",
-      "수호의 찢어발기기 실제 시전은 441605입니다. 공유 특성 441583과 야성의 시전 주문을 같은 버튼으로 취급하지 않습니다.",
-      "엘룬의 대행자는 달 광선과 비전 피해 운용, 발톱의 드루이드는 찢어발기기의 발동 소비와 대상 피해 감소로 구분합니다. 두 영웅 특성의 채택률은 이번에 확보한 통계가 아닙니다.",
-      "Blizzard 9월 9일 핫픽스는 야생 수호자의 생성기 피해 증가에 마지막 정점 노드가 필요하다는 조건을 바로잡았습니다. 이전 로그와 현재의 정점 투자량을 같게 취급하지 않습니다."
+    evidence: [
+      '라이브 삭망월은 수호의 달 광선 쿨다운을 고정 20초 줄입니다. 달빛섬광을 추가로 누른 횟수로 다음 사용을 계속 앞당기지는 않습니다.',
+      '야생 수호자는 분노 소비에서 영혼을 깨우고, 난타와 짓이기기 시전에서 후속 공격을 만듭니다. 마지막 노드는 생성기 초기화와 분노 회수를 추가합니다.',
+      '맹위는 자동 공격으로 발동해 후려갈기기·말살을 강화합니다. 짓이기기로 소비하는 꿰뚫기와는 다른 발동입니다.',
+      '시즌 2의 2세트는 난타에서 다음 짓이기기를 강화하고, 4세트는 가시 피해와 제한된 화신 연장을 추가합니다. 세트 착용 여부에 따라 비교할 피해 구성이 달라집니다.',
+      '자연의 탄력은 광포한 재생력의 초과 치유를 보호막으로 바꾸며 샘솟는 힘은 최대 생명력을 늘립니다. 피해 전 재생력 사용을 일괄 실수로 분류할 수 없습니다.',
+      '수호의 찢어발기기 실제 시전은 441605입니다. 공유 특성 441583과 야성의 시전 주문을 같은 버튼으로 취급하지 않습니다.',
+      '엘룬의 대행자는 달 광선과 비전 피해 운용, 발톱의 드루이드는 찢어발기기의 발동 소비와 대상 피해 감소로 구분합니다. 두 영웅 특성의 채택률은 이번에 확보한 통계가 아닙니다.',
+      'Blizzard 9월 9일 핫픽스는 야생 수호자의 생성기 피해 증가에 마지막 정점 노드가 필요하다는 조건을 바로잡았습니다. 이전 로그와 현재의 정점 투자량을 같게 취급하지 않습니다.',
+      '10월 8일 드루이드 수호의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
-    "caveats": [
-      "추천은 현재 공개 가이드와 주문 효과에 근거합니다. 최신 상위 100명 로그, 장비별 심크, 특정 보스의 생존 한계를 검증했다는 뜻은 아닙니다.",
-      "분노를 다스리는 자의 한국어는 짓이기기, 영문과 현재 SimC 구현은 공격 소비기를 가리킵니다. 방어를 미루며 짓이기기를 80분노까지 기다리는 규칙은 사용하지 않습니다.",
-      "반짝이는 달빛의 기본 툴팁과 Trait 등급값이 다릅니다. 선택 등급의 감소율과 달 광선의 미해결 특화 수식을 고정 숫자로 단정하지 않습니다.",
-      "아래 오프닝은 선택 조건을 붙인 실제 버튼 흐름입니다. 생존·차단은 순서표를 끝낼 때까지 기다리지 않으며, 없는 특성과 발동을 억지로 시전하지 않습니다."
+    caveats: [
+      '추천은 현재 공개 가이드와 주문 효과에 근거합니다. 최신 상위 100명 로그, 장비별 심크, 특정 보스의 생존 한계를 검증했다는 뜻은 아닙니다.',
+      '분노를 다스리는 자의 한국어는 짓이기기, 영문과 현재 SimC 구현은 공격 소비기를 가리킵니다. 방어를 미루며 짓이기기를 80분노까지 기다리는 규칙은 사용하지 않습니다.',
+      '반짝이는 달빛의 기본 툴팁과 Trait 등급값이 다릅니다. 선택 등급의 감소율과 달 광선의 미해결 특화 수식을 고정 숫자로 단정하지 않습니다.',
+      '아래 오프닝은 선택 조건을 붙인 실제 버튼 흐름입니다. 생존·차단은 순서표를 끝낼 때까지 기다리지 않으며, 없는 특성과 발동을 억지로 시전하지 않습니다.',
+      '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
-    "blocks": [
+    blocks: [
       {
-        "title": "1. 12.1에서는 무엇부터 바꿔야 하나",
-        "paragraphs": [
-          "예전 엘룬 운용에서 가장 먼저 버릴 습관은 달 광선을 빨리 돌리려고 달빛섬광만 반복하는 것입니다. 지금 삭망월은 달 광선의 기본 쿨다운을 20초 줄이는 특성입니다. 일반 달빛섬광을 한 번 더 쓴다고 다음 광선이 또 빨라지지 않습니다. 난타와 짓이기기가 돌아왔는데도 달빛섬광을 누르고 있다면, 생성기에서 얻을 분노와 정점의 후속 공격을 놓칠 수 있습니다.",
-          "반대로 공격 소비기를 전부 위험한 낭비라고 보는 것도 맞지 않습니다. 맹위는 무료 후려갈기기·말살에 피해 감소를 붙이고, 피투성이 모피는 방어와 공격 사이에 무료 사용 기회를 만듭니다. 우르속의 격노까지 선택하면 실제 공격 피해가 보호막으로 이어집니다. 필요한 무쇠가죽을 확보한 뒤 이런 발동을 쓰는 것이지, 분노를 전부 공격에 쓰거나 전부 방어에만 쓰는 양자택일이 아닙니다.",
-          "야생 수호자 정점은 영혼의 추가 공격과 생성기 강화를 연결합니다. 시즌 2 세트도 난타와 짓이기기를 연결합니다. 먼저 생성기를 제때 누르는 습관을 잡고, 영혼이 등장해 쿨다운이 초기화된 순간에 다시 사용할 준비를 하세요. 바뀐 특성 이름을 외우는 것보다 이 흐름을 손에 익히는 편이 실제 전투에서 도움이 됩니다.",
-          "공식 12.1 조정은 수호의 전체 피해를 8% 올리고, 우르속의 격노 보호막과 엘룬의 총애 치유도 강화했습니다. 중요한 방향은 한 버튼만 반복하는 압박을 줄이고 생성과 소비를 함께 살리는 것입니다. 이후 9월 9일에는 마지막 정점 노드를 찍지 않아도 영혼 중 생성기 피해가 증가하던 오류가 수정됐습니다. 예전 로그를 따라 일부 정점만 찍어도 같은 보상을 얻을 것으로 기대하지 마세요."
+        title: '1. 12.1에서는 무엇부터 바꿔야 하나',
+        paragraphs: [
+          '예전 엘룬 운용에서 가장 먼저 버릴 습관은 달 광선을 빨리 돌리려고 달빛섬광만 반복하는 것입니다. 지금 삭망월은 달 광선의 기본 쿨다운을 20초 줄이는 특성입니다. 일반 달빛섬광을 한 번 더 쓴다고 다음 광선이 또 빨라지지 않습니다. 난타와 짓이기기가 돌아왔는데도 달빛섬광을 누르고 있다면, 생성기에서 얻을 분노와 정점의 후속 공격을 놓칠 수 있습니다.',
+          '반대로 공격 소비기를 전부 위험한 낭비라고 보는 것도 맞지 않습니다. 맹위는 무료 후려갈기기·말살에 피해 감소를 붙이고, 피투성이 모피는 방어와 공격 사이에 무료 사용 기회를 만듭니다. 우르속의 격노까지 선택하면 실제 공격 피해가 보호막으로 이어집니다. 필요한 무쇠가죽을 확보한 뒤 이런 발동을 쓰는 것이지, 분노를 전부 공격에 쓰거나 전부 방어에만 쓰는 양자택일이 아닙니다.',
+          '야생 수호자 정점은 영혼의 추가 공격과 생성기 강화를 연결합니다. 시즌 2 세트도 난타와 짓이기기를 연결합니다. 먼저 생성기를 제때 누르는 습관을 잡고, 영혼이 등장해 쿨다운이 초기화된 순간에 다시 사용할 준비를 하세요. 바뀐 특성 이름을 외우는 것보다 이 흐름을 손에 익히는 편이 실제 전투에서 도움이 됩니다.',
+          '공식 12.1 조정은 수호의 전체 피해를 8% 올리고, 우르속의 격노 보호막과 엘룬의 총애 치유도 강화했습니다. 중요한 방향은 한 버튼만 반복하는 압박을 줄이고 생성과 소비를 함께 살리는 것입니다. 이후 9월 9일에는 마지막 정점 노드를 찍지 않아도 영혼 중 생성기 피해가 증가하던 오류가 수정됐습니다. 예전 로그를 따라 일부 정점만 찍어도 같은 보상을 얻을 것으로 기대하지 마세요.',
         ],
-        "bullets": [
-          "달빛섬광 때문에 돌아온 난타·짓이기기를 계속 미루지 않습니다.",
-          "야생 수호자가 나타나면 두 생성기의 초기화와 분노 상한을 확인합니다.",
-          "광포한 재생력의 선사용은 자연의 탄력·샘솟는 힘 선택 여부부터 봅니다."
-        ]
+        bullets: [
+          '달빛섬광 때문에 돌아온 난타·짓이기기를 계속 미루지 않습니다.',
+          '야생 수호자가 나타나면 두 생성기의 초기화와 분노 상한을 확인합니다.',
+          '광포한 재생력의 선사용은 자연의 탄력·샘솟는 힘 선택 여부부터 봅니다.',
+        ],
       },
       {
-        "title": "2. 첫 평타를 맞을 준비",
-        "paragraphs": [
-          "풀링 전에 곰 변신, 현재 분노, 나무 껍질과 화신의 사용 가능 여부부터 확인합니다. 원거리에서 달빛섬광을 걸었다고 바로 무쇠가죽을 사용할 분노가 충분한 것은 아닙니다. 분노가 적은 첫 진입이라면 나무 껍질 같은 생존기를 접촉 전에 배정하고, 적이 모이는 동안 난타·짓이기기로 분노를 만듭니다. 자원이 없는 상태에서 무쇠가죽을 여러 번 누르는 것은 준비가 아닙니다.",
-          "첫 위협도 한 대상과 전체 무리를 나눠 봅니다. 멀리 있는 시전자에게 달빛섬광을 걸어 전투에 참여시킨 뒤, 근접 적은 난타가 닿는 범위로 모읍니다. 아직 흩어진 무리를 향해 전방 공격인 말살부터 누르면 일부 적에게는 위협이 잡히지 않습니다. 돌아오는 적을 따라 몸을 계속 돌리기보다 캐스터 위치와 차단 순서를 먼저 정하는 편이 안정적입니다.",
-          "화신을 첫 풀에 쓸 계획이면 분노가 넘칠 때까지 기다릴 이유가 없습니다. 생성기를 자주 돌리는 이득을 진입부터 받을 수 있습니다. 다만 다음에 더 위험한 풀이나 정해진 보스 강타가 있다면 그 타이밍과 비교합니다. 중요한 것은 매번 아무 생각 없이 쓰거나 끝까지 아끼는 것이 아니라, 이번 사용 뒤 다음 위험을 무엇으로 받을지 아는 것입니다."
+        title: '2. 첫 평타를 맞을 준비',
+        paragraphs: [
+          '풀링 전에 곰 변신, 현재 분노, 나무 껍질과 화신의 사용 가능 여부부터 확인합니다. 원거리에서 달빛섬광을 걸었다고 바로 무쇠가죽을 사용할 분노가 충분한 것은 아닙니다. 분노가 적은 첫 진입이라면 나무 껍질 같은 생존기를 접촉 전에 배정하고, 적이 모이는 동안 난타·짓이기기로 분노를 만듭니다. 자원이 없는 상태에서 무쇠가죽을 여러 번 누르는 것은 준비가 아닙니다.',
+          '첫 위협도 한 대상과 전체 무리를 나눠 봅니다. 멀리 있는 시전자에게 달빛섬광을 걸어 전투에 참여시킨 뒤, 근접 적은 난타가 닿는 범위로 모읍니다. 아직 흩어진 무리를 향해 전방 공격인 말살부터 누르면 일부 적에게는 위협이 잡히지 않습니다. 돌아오는 적을 따라 몸을 계속 돌리기보다 캐스터 위치와 차단 순서를 먼저 정하는 편이 안정적입니다.',
+          '화신을 첫 풀에 쓸 계획이면 분노가 넘칠 때까지 기다릴 이유가 없습니다. 생성기를 자주 돌리는 이득을 진입부터 받을 수 있습니다. 다만 다음에 더 위험한 풀이나 정해진 보스 강타가 있다면 그 타이밍과 비교합니다. 중요한 것은 매번 아무 생각 없이 쓰거나 끝까지 아끼는 것이 아니라, 이번 사용 뒤 다음 위험을 무엇으로 받을지 아는 것입니다.',
         ],
-        "bullets": [
-          "분노 부족 진입: 접촉 전에 개인 생존기를 쓰고 생성기로 첫 방어 자원을 만듭니다.",
-          "위협이 없는 원거리 적을 먼저 확인하고, 전방 소비기는 적이 모인 뒤 사용합니다.",
-          "차단과 생존기는 오프닝 차트의 마지막 단계까지 기다리지 않습니다."
-        ]
+        bullets: [
+          '분노 부족 진입: 접촉 전에 개인 생존기를 쓰고 생성기로 첫 방어 자원을 만듭니다.',
+          '위협이 없는 원거리 적을 먼저 확인하고, 전방 소비기는 적이 모인 뒤 사용합니다.',
+          '차단과 생존기는 오프닝 차트의 마지막 단계까지 기다리지 않습니다.',
+        ],
       },
       {
-        "title": "3. 난타와 짓이기기는 비는 시간을 줄인다",
-        "paragraphs": [
-          "난타는 기본 6초 쿨다운과 15초 지속 피해를 가지며 기본 3중첩까지 쌓입니다. 섬광의 발톱을 선택하면 최대 중첩과 추가 공격 기회가 늘어납니다. 상처 찢기는 이 중첩을 해당 적의 피해 감소와 자신의 피해 증가로 연결합니다. 자신을 때리는 적에게 난타가 빠졌다면 다른 적에 최대 중첩이 있어도 같은 보호를 받는 것이 아닙니다.",
-          "짓이기기는 기본 분노 12를 만들고, 꿰뚫기 발동을 받으면 초기화와 추가 분노를 얻습니다. 분노를 다스리는 자가 있으면 추가 충전도 생깁니다. 두 충전을 모두 들고 오래 기다리거나 발동 후에도 다른 보조 주문만 쓰면 다시 돌아올 시간을 잃습니다. 다음 기술을 고민할 때 먼저 충전이 차 있는지, 새로 초기화됐는지, 지금 눌러도 분노가 넘치지 않는지를 확인합니다.",
-          "두 생성기가 모두 돌아왔다면 필요한 지속 피해와 선택한 빌드를 봅니다. 기본 중첩이 빠진 적에는 난타가 급하지만, 붉은 달이 활성화된 대상에서는 짓이기기가 지속시간과 분노를 더해 줍니다. 영혼이나 세트 발동도 함께 확인합니다. 항상 난타 다음 짓이기기라는 두 버튼 매크로처럼 생각하면 이런 조건이 달라진 순간의 손실을 놓치기 쉽습니다."
+        title: '3. 난타와 짓이기기는 비는 시간을 줄인다',
+        paragraphs: [
+          '난타는 기본 6초 쿨다운과 15초 지속 피해를 가지며 기본 3중첩까지 쌓입니다. 섬광의 발톱을 선택하면 최대 중첩과 추가 공격 기회가 늘어납니다. 상처 찢기는 이 중첩을 해당 적의 피해 감소와 자신의 피해 증가로 연결합니다. 자신을 때리는 적에게 난타가 빠졌다면 다른 적에 최대 중첩이 있어도 같은 보호를 받는 것이 아닙니다.',
+          '짓이기기는 기본 분노 12를 만들고, 꿰뚫기 발동을 받으면 초기화와 추가 분노를 얻습니다. 분노를 다스리는 자가 있으면 추가 충전도 생깁니다. 두 충전을 모두 들고 오래 기다리거나 발동 후에도 다른 보조 주문만 쓰면 다시 돌아올 시간을 잃습니다. 다음 기술을 고민할 때 먼저 충전이 차 있는지, 새로 초기화됐는지, 지금 눌러도 분노가 넘치지 않는지를 확인합니다.',
+          '두 생성기가 모두 돌아왔다면 필요한 지속 피해와 선택한 빌드를 봅니다. 기본 중첩이 빠진 적에는 난타가 급하지만, 붉은 달이 활성화된 대상에서는 짓이기기가 지속시간과 분노를 더해 줍니다. 영혼이나 세트 발동도 함께 확인합니다. 항상 난타 다음 짓이기기라는 두 버튼 매크로처럼 생각하면 이런 조건이 달라진 순간의 손실을 놓치기 쉽습니다.',
         ],
-        "bullets": [
-          "난타는 쿨다운 없는 휘둘러치기와 다릅니다. 기본 중첩부터 유지합니다.",
-          "짓이기기 충전과 꿰뚫기 초기화가 겹칠 때 방치 시간을 줄입니다.",
-          "붉은 달이 걸린 대상과 실제 짓이기기 대상이 같은지 확인합니다."
-        ]
+        bullets: [
+          '난타는 쿨다운 없는 휘둘러치기와 다릅니다. 기본 중첩부터 유지합니다.',
+          '짓이기기 충전과 꿰뚫기 초기화가 겹칠 때 방치 시간을 줄입니다.',
+          '붉은 달이 걸린 대상과 실제 짓이기기 대상이 같은지 확인합니다.',
+        ],
       },
       {
-        "title": "4. 무쇠가죽을 유지하면서 공격하는 법",
-        "paragraphs": [
-          "무쇠가죽은 분노 40으로 7초 동안 방어도를 높입니다. 핵심은 중첩 숫자가 아니라 필요한 피해 시점에 중첩이 남아 있는가입니다. 예를 들어 이전 중첩이 1초 남았을 때 새로 한 번 썼다면, 1초 뒤에는 새 중첩만 남습니다. 화면에 한때 2중첩이 보였다는 사실만으로 다음 몇 초도 계속 2중첩이라고 생각하면 강타 직전에 방어가 예상보다 낮아집니다.",
-          "평타를 계속 맞는 동안은 필요한 무쇠가죽을 먼저 확보합니다. 이미 유지가 충분하고 다음 공격 소비 후에도 방어할 자원이 남는다면 후려갈기기나 말살을 사용할 수 있습니다. 특히 무료 발동은 같은 분노를 두고 경쟁하지 않습니다. 다만 글쿨을 쓰는 공격이므로 급한 차단이나 치유 대처, 돌아온 생성기를 무조건 밀어내는 최우선 버튼이라는 뜻도 아닙니다.",
-          "무쇠가죽은 글쿨 밖에서 사용합니다. 따라서 난타와 짓이기기를 멈춘 채 방어기만 연속으로 누를 필요가 없습니다. 생성하는 동안 필요한 중첩을 끼워 넣고, 분노 상한에 오래 붙지 않게 유지하세요. 우르속의 인도와 들불이 지나간 자리도 실제 소비를 바탕으로 작동하므로, 넘친 분노는 공격뿐 아니라 다음 쿨기와 보조 치유 기회도 잃게 합니다."
+        title: '4. 무쇠가죽을 유지하면서 공격하는 법',
+        paragraphs: [
+          '무쇠가죽은 분노 40으로 7초 동안 방어도를 높입니다. 핵심은 중첩 숫자가 아니라 필요한 피해 시점에 중첩이 남아 있는가입니다. 예를 들어 이전 중첩이 1초 남았을 때 새로 한 번 썼다면, 1초 뒤에는 새 중첩만 남습니다. 화면에 한때 2중첩이 보였다는 사실만으로 다음 몇 초도 계속 2중첩이라고 생각하면 강타 직전에 방어가 예상보다 낮아집니다.',
+          '평타를 계속 맞는 동안은 필요한 무쇠가죽을 먼저 확보합니다. 이미 유지가 충분하고 다음 공격 소비 후에도 방어할 자원이 남는다면 후려갈기기나 말살을 사용할 수 있습니다. 특히 무료 발동은 같은 분노를 두고 경쟁하지 않습니다. 다만 글쿨을 쓰는 공격이므로 급한 차단이나 치유 대처, 돌아온 생성기를 무조건 밀어내는 최우선 버튼이라는 뜻도 아닙니다.',
+          '무쇠가죽은 글쿨 밖에서 사용합니다. 따라서 난타와 짓이기기를 멈춘 채 방어기만 연속으로 누를 필요가 없습니다. 생성하는 동안 필요한 중첩을 끼워 넣고, 분노 상한에 오래 붙지 않게 유지하세요. 우르속의 인도와 들불이 지나간 자리도 실제 소비를 바탕으로 작동하므로, 넘친 분노는 공격뿐 아니라 다음 쿨기와 보조 치유 기회도 잃게 합니다.',
         ],
-        "bullets": [
-          "중첩마다 종료 시간이 따로 있습니다. 새 사용은 기존 중첩 전체를 갱신하지 않습니다.",
-          "무료 소비 여부와 결정타의 추가 분노 비용을 확인합니다.",
-          "마법 강타·출혈에 무쇠가죽만 배정하지 말고 별도 생존기를 준비합니다."
-        ]
+        bullets: [
+          '중첩마다 종료 시간이 따로 있습니다. 새 사용은 기존 중첩 전체를 갱신하지 않습니다.',
+          '무료 소비 여부와 결정타의 추가 분노 비용을 확인합니다.',
+          '마법 강타·출혈에 무쇠가죽만 배정하지 말고 별도 생존기를 준비합니다.',
+        ],
       },
       {
-        "title": "5. 맹위, 꿰뚫기, 무료 소비를 구분한다",
-        "paragraphs": [
-          "맹위와 꿰뚫기는 이름이 익숙해도 소비하는 버튼이 다릅니다. 맹위는 자동 공격에서 최대 2중첩까지 쌓이고 다음 후려갈기기·말살을 무료로 강화합니다. 맞힌 적이 자신에게 주는 피해를 줄이므로 위험 대상에게 소비하는 의미도 있습니다. 반면 꿰뚫기는 짓이기기를 초기화하고 다음 짓이기기의 분노를 늘립니다. 맹위가 떴는데 짓이기기만 반복하는 것은 그 발동을 직접 소비하는 행동이 아닙니다.",
-          "피투성이 모피는 이 둘과 또 다릅니다. 무쇠가죽을 사용하면 일정 확률로 다음 공격 소비기가 무료가 되고, 공격 소비기에서는 다음 무쇠가죽 무료 사용이 생길 수 있습니다. 확률은 서로 다르며 반드시 번갈아 발동하지 않습니다. 현재 어느 쪽이 무료인지 확인하지 않고 똑같은 교대 순서를 외우면 자원이 없는 공격을 누르거나, 이미 준비된 무료 방어를 놓칠 수 있습니다.",
-          "분노를 다스리는 자는 추가 짓이기기 충전을 주고 높은 분노에서 공격 소비기의 꿰뚫기 발동을 강화하는 쪽으로 영문 자료와 현재 SimC 구현이 일치합니다. 한글 툴팁은 짓이기기라고 적혀 있어 충돌이 남습니다. 실전에서 확실히 피할 행동은 이 한글 한 줄 때문에 생성기를 80분노까지 일부러 묵히는 것입니다. 필요한 방어가 먼저이며, 발동 확률 증가도 매번 확정 초기화를 뜻하지 않습니다."
+        title: '5. 맹위, 꿰뚫기, 무료 소비를 구분한다',
+        paragraphs: [
+          '맹위와 꿰뚫기는 이름이 익숙해도 소비하는 버튼이 다릅니다. 맹위는 자동 공격에서 최대 2중첩까지 쌓이고 다음 후려갈기기·말살을 무료로 강화합니다. 맞힌 적이 자신에게 주는 피해를 줄이므로 위험 대상에게 소비하는 의미도 있습니다. 반면 꿰뚫기는 짓이기기를 초기화하고 다음 짓이기기의 분노를 늘립니다. 맹위가 떴는데 짓이기기만 반복하는 것은 그 발동을 직접 소비하는 행동이 아닙니다.',
+          '피투성이 모피는 이 둘과 또 다릅니다. 무쇠가죽을 사용하면 일정 확률로 다음 공격 소비기가 무료가 되고, 공격 소비기에서는 다음 무쇠가죽 무료 사용이 생길 수 있습니다. 확률은 서로 다르며 반드시 번갈아 발동하지 않습니다. 현재 어느 쪽이 무료인지 확인하지 않고 똑같은 교대 순서를 외우면 자원이 없는 공격을 누르거나, 이미 준비된 무료 방어를 놓칠 수 있습니다.',
+          '분노를 다스리는 자는 추가 짓이기기 충전을 주고 높은 분노에서 공격 소비기의 꿰뚫기 발동을 강화하는 쪽으로 영문 자료와 현재 SimC 구현이 일치합니다. 한글 툴팁은 짓이기기라고 적혀 있어 충돌이 남습니다. 실전에서 확실히 피할 행동은 이 한글 한 줄 때문에 생성기를 80분노까지 일부러 묵히는 것입니다. 필요한 방어가 먼저이며, 발동 확률 증가도 매번 확정 초기화를 뜻하지 않습니다.',
         ],
-        "bullets": [
-          "맹위: 무료 후려갈기기·말살과 대상 피해 감소.",
-          "꿰뚫기: 짓이기기 초기화와 추가 분노.",
-          "피투성이 모피: 현재 준비된 무료 공격 또는 무료 무쇠가죽을 확인합니다."
-        ]
+        bullets: [
+          '맹위: 무료 후려갈기기·말살과 대상 피해 감소.',
+          '꿰뚫기: 짓이기기 초기화와 추가 분노.',
+          '피투성이 모피: 현재 준비된 무료 공격 또는 무료 무쇠가죽을 확인합니다.',
+        ],
       },
       {
-        "title": "6. 야생 수호자는 등장한 뒤가 중요하다",
-        "paragraphs": [
-          "야생 수호자 첫 노드의 출발은 분노 소비입니다. 일정 확률로 8초 동안 수호자의 영혼이 나타나고, 그 안에서 난타나 짓이기기를 시전할 때 영혼이 주변을 공격합니다. 영혼이 떠 있는데 공격할 수 없는 거리에서 움직이거나 보조 버튼만 쓰면 후속 공격을 제대로 얻지 못합니다. 발동 횟수만 많은 로그와 발동 뒤 생성기를 잘 넣은 로그는 결과가 다를 수 있습니다.",
-          "야생 수호자 마지막 노드까지 선택하면 영혼 등장 시 난타와 짓이기기가 초기화되고, 영혼이 있는 동안 두 기술의 피해가 증가하며 영혼 공격에서 분노를 추가로 받습니다. 그래서 영혼이 나타나는 순간은 단순히 작은 자동 피해가 추가되는 때가 아닙니다. 돌아온 생성기로 공격과 분노를 받고, 다시 방어와 공격 소비로 넘길 수 있는 짧은 기회입니다. 생성기를 눌러도 자원이 넘치지 않도록 분노도 같이 확인합니다.",
-          "야생 수호자 마지막 노드를 배운 상태에서 화신 또는 광폭화를 시전하면 별도로 야생 수호자 사용 기회를 한 번 얻습니다. 실제 야생 수호자 버튼을 사용한 뒤 후려갈기기·말살·찢어발기기 중 현재 소비기로 영혼을 확정 등장시키는 순서입니다. 화신이 끝날 때까지 기다리지 않으며, 야생 수호자에 적힌 8초 쿨다운을 보고 무제한 반복하는 것도 아닙니다. 사용 기회와 다음 소비기를 함께 확인해야 합니다."
+        title: '6. 야생 수호자는 등장한 뒤가 중요하다',
+        paragraphs: [
+          '야생 수호자 첫 노드의 출발은 분노 소비입니다. 일정 확률로 8초 동안 수호자의 영혼이 나타나고, 그 안에서 난타나 짓이기기를 시전할 때 영혼이 주변을 공격합니다. 영혼이 떠 있는데 공격할 수 없는 거리에서 움직이거나 보조 버튼만 쓰면 후속 공격을 제대로 얻지 못합니다. 발동 횟수만 많은 로그와 발동 뒤 생성기를 잘 넣은 로그는 결과가 다를 수 있습니다.',
+          '야생 수호자 마지막 노드까지 선택하면 영혼 등장 시 난타와 짓이기기가 초기화되고, 영혼이 있는 동안 두 기술의 피해가 증가하며 영혼 공격에서 분노를 추가로 받습니다. 그래서 영혼이 나타나는 순간은 단순히 작은 자동 피해가 추가되는 때가 아닙니다. 돌아온 생성기로 공격과 분노를 받고, 다시 방어와 공격 소비로 넘길 수 있는 짧은 기회입니다. 생성기를 눌러도 자원이 넘치지 않도록 분노도 같이 확인합니다.',
+          '야생 수호자 마지막 노드를 배운 상태에서 화신 또는 광폭화를 시전하면 별도로 야생 수호자 사용 기회를 한 번 얻습니다. 실제 야생 수호자 버튼을 사용한 뒤 후려갈기기·말살·찢어발기기 중 현재 소비기로 영혼을 확정 등장시키는 순서입니다. 화신이 끝날 때까지 기다리지 않으며, 야생 수호자에 적힌 8초 쿨다운을 보고 무제한 반복하는 것도 아닙니다. 사용 기회와 다음 소비기를 함께 확인해야 합니다.',
         ],
-        "bullets": [
-          "영혼 등장: 초기화된 난타·짓이기기를 확인합니다.",
-          "화신 직후: 야생 수호자 사용 기회를 받은 뒤 후속 공격 소비까지 연결합니다.",
-          "야생 수호자 중간 노드의 추가 자연 지속 피해와 영혼 공격은 서로 다른 피해 경로입니다."
-        ]
+        bullets: [
+          '영혼 등장: 초기화된 난타·짓이기기를 확인합니다.',
+          '화신 직후: 야생 수호자 사용 기회를 받은 뒤 후속 공격 소비까지 연결합니다.',
+          '야생 수호자 중간 노드의 추가 자연 지속 피해와 영혼 공격은 서로 다른 피해 경로입니다.',
+        ],
       },
       {
-        "title": "7. 시즌 2 세트가 바꾸는 생성기 가치",
-        "paragraphs": [
-          "2세트는 난타에서 확률적으로 다음 짓이기기를 크게 강화합니다. 이 때문에 같은 난타·짓이기기 횟수라도 강화된 짓이기기를 얼마나 제대로 사용했는지가 달라질 수 있습니다. 돌아온 짓이기기를 달빛섬광 때문에 계속 미루는 습관은 기본 분노뿐 아니라 이 세트 보상에도 영향을 줍니다. 세트가 없는 캐릭터는 같은 평균 피해를 기대하면 안 됩니다.",
-          "4세트는 난타에서 가시 공격을 더하고 광폭화·화신 지속시간을 제한적으로 늘립니다. 연장은 0.5초씩 최대 5초입니다. 화신을 켠 순간부터 무조건 35초로 끝난다고 고정하거나, 난타를 많이 쓰면 무한히 유지된다고 설명할 수 없습니다. 실제 가시 공격과 버프 종료 시점을 함께 봐야 합니다. 세트의 가시 피해는 플레이어가 새 버튼을 더 누른 횟수가 아닙니다.",
-          "장비를 바꿀 때는 단순 아이템 레벨뿐 아니라 세트가 2개 또는 4개 유지되는지 먼저 확인합니다. 세트 유무가 다른 두 로그의 난타와 짓이기기 피해 비율을 비교해 곧바로 사용 실수라고 판정하지 마세요. 본인 장비에서 세트 효과가 활성화돼 있는지, 선택한 정점과 생성기 흐름이 함께 작동하는지부터 보는 편이 정확합니다."
+        title: '7. 시즌 2 세트가 바꾸는 생성기 가치',
+        paragraphs: [
+          '2세트는 난타에서 확률적으로 다음 짓이기기를 크게 강화합니다. 이 때문에 같은 난타·짓이기기 횟수라도 강화된 짓이기기를 얼마나 제대로 사용했는지가 달라질 수 있습니다. 돌아온 짓이기기를 달빛섬광 때문에 계속 미루는 습관은 기본 분노뿐 아니라 이 세트 보상에도 영향을 줍니다. 세트가 없는 캐릭터는 같은 평균 피해를 기대하면 안 됩니다.',
+          '4세트는 난타에서 가시 공격을 더하고 광폭화·화신 지속시간을 제한적으로 늘립니다. 연장은 0.5초씩 최대 5초입니다. 화신을 켠 순간부터 무조건 35초로 끝난다고 고정하거나, 난타를 많이 쓰면 무한히 유지된다고 설명할 수 없습니다. 실제 가시 공격과 버프 종료 시점을 함께 봐야 합니다. 세트의 가시 피해는 플레이어가 새 버튼을 더 누른 횟수가 아닙니다.',
+          '장비를 바꿀 때는 단순 아이템 레벨뿐 아니라 세트가 2개 또는 4개 유지되는지 먼저 확인합니다. 세트 유무가 다른 두 로그의 난타와 짓이기기 피해 비율을 비교해 곧바로 사용 실수라고 판정하지 마세요. 본인 장비에서 세트 효과가 활성화돼 있는지, 선택한 정점과 생성기 흐름이 함께 작동하는지부터 보는 편이 정확합니다.',
         ],
-        "bullets": [
-          "2세트 발동 뒤 강화 짓이기기를 놓치지 않습니다.",
-          "4세트 연장에는 상한이 있으며 실제 가시·버프 이벤트로 확인합니다.",
-          "자동 가시 피해를 별도 수동 캐스팅 수로 더하지 않습니다."
-        ]
+        bullets: [
+          '2세트 발동 뒤 강화 짓이기기를 놓치지 않습니다.',
+          '4세트 연장에는 상한이 있으며 실제 가시·버프 이벤트로 확인합니다.',
+          '자동 가시 피해를 별도 수동 캐스팅 수로 더하지 않습니다.',
+        ],
       },
       {
-        "title": "8. 엘룬의 대행자: 광선 안에서 생성기를 돌린다",
-        "paragraphs": [
-          "엘룬의 대행자는 달 광선과 비전 피해를 이용해 공격과 회복을 이어 갑니다. 달의 부름은 난타를 비전으로 바꾸고, 곰 상태의 엘룬의 총애는 비전 피해 일부를 자기 치유로 돌려줍니다. 쏟아지는 별은 난타에서 자동 별빛쇄도를 발사합니다. 화면이나 로그에 별빛쇄도가 보여도 수호가 조화처럼 그 버튼을 직접 눌러야 하는 것은 아닙니다.",
-          "달 광선의 기본 60초 쿨다운은 삭망월로 40초가 되고, 기본 8초 지속은 영원한 달로 11초가 됩니다. 끝없는 달빛은 광선 범위 안의 적에게 입힌 피해를 흡혈로 돌리고, 반그늘의 팽창은 광선이 켜진 동안 비전 피해를 강화합니다. 이 구간에서는 몬스터가 실제로 남아 있어야 하며, 난타와 짓이기기를 포함한 정상적인 공격 흐름도 이어져야 합니다. 광선만 켜고 생성기를 쉬는 운용이 아닙니다.",
-          "일반 달빛섬광은 주요 대상 유지와 여유 글쿨에 사용합니다. 광역에서는 쌍둥이 달빛섬광을 통한 추가 적용도 고려합니다. 그렇다고 모든 적의 지속 피해를 손으로 완벽하게 맞추느라 돌아온 난타를 놓쳐서는 안 됩니다. 위험 대상과 오래 사는 적에 먼저 적용하고, 광선 사용을 불필요하게 늦춰 총 사용 횟수를 잃지 않는지를 같이 확인합니다."
+        title: '8. 엘룬의 대행자: 광선 안에서 생성기를 돌린다',
+        paragraphs: [
+          '엘룬의 대행자는 달 광선과 비전 피해를 이용해 공격과 회복을 이어 갑니다. 달의 부름은 난타를 비전으로 바꾸고, 곰 상태의 엘룬의 총애는 비전 피해 일부를 자기 치유로 돌려줍니다. 쏟아지는 별은 난타에서 자동 별빛쇄도를 발사합니다. 화면이나 로그에 별빛쇄도가 보여도 수호가 조화처럼 그 버튼을 직접 눌러야 하는 것은 아닙니다.',
+          '달 광선의 기본 60초 쿨다운은 삭망월로 40초가 되고, 기본 8초 지속은 영원한 달로 11초가 됩니다. 끝없는 달빛은 광선 범위 안의 적에게 입힌 피해를 흡혈로 돌리고, 반그늘의 팽창은 광선이 켜진 동안 비전 피해를 강화합니다. 이 구간에서는 몬스터가 실제로 남아 있어야 하며, 난타와 짓이기기를 포함한 정상적인 공격 흐름도 이어져야 합니다. 광선만 켜고 생성기를 쉬는 운용이 아닙니다.',
+          '일반 달빛섬광은 주요 대상 유지와 여유 글쿨에 사용합니다. 광역에서는 쌍둥이 달빛섬광을 통한 추가 적용도 고려합니다. 그렇다고 모든 적의 지속 피해를 손으로 완벽하게 맞추느라 돌아온 난타를 놓쳐서는 안 됩니다. 위험 대상과 오래 사는 적에 먼저 적용하고, 광선 사용을 불필요하게 늦춰 총 사용 횟수를 잃지 않는지를 같이 확인합니다.',
         ],
-        "bullets": [
-          "광선 쿨다운은 고정 감소입니다. 달빛섬광 횟수로 계속 당기지 않습니다.",
-          "엘룬의 총애의 현재 툴팁은 비전 피해의 18% 치유이며 곰 상태가 필요합니다.",
-          "자동 별빛쇄도와 짧은 엘룬의 분노 발동을 수동 시전으로 세지 않습니다."
-        ]
+        bullets: [
+          '광선 쿨다운은 고정 감소입니다. 달빛섬광 횟수로 계속 당기지 않습니다.',
+          '엘룬의 총애의 현재 툴팁은 비전 피해의 18% 치유이며 곰 상태가 필요합니다.',
+          '자동 별빛쇄도와 짧은 엘룬의 분노 발동을 수동 시전으로 세지 않습니다.',
+        ],
       },
       {
-        "title": "9. 붉은 달을 선택하면 대상과 순서가 달라진다",
-        "paragraphs": [
-          "붉은 달은 일반 달빛섬광을 대체하는 선택입니다. 기본 30초 쿨다운과 8초 지속을 가지며, 걸린 대상에 짓이기기를 쓰면 지속시간을 1초 늘리고 분노를 더 얻습니다. 따라서 단일 보스에서는 생성기를 그 대상에 제대로 맞추는 것이 중요해집니다. 난타의 필요한 중첩이 유지된 상황이라면 붉은 달 중 짓이기기를 우선할 이유가 있습니다.",
-          "일반 달빛섬광 빌드의 은하의 수호자는 자동 달빛섬광 뒤 다음 수동 시전을 강화합니다. 붉은 달에서는 이 보상이 달의 천벌 중첩과 분노 소비형 효과로 바뀝니다. 기존과 똑같이 강화 달빛섬광을 찾으며 입력하면 실제로 가진 효과와 맞지 않습니다. 붉은 달이 켜져 있는지, 중첩이 있는지, 소비할 분노가 있는지 세 가지를 함께 확인합니다.",
-          "대상이 여러 마리라고 무조건 붉은 달이 틀린 선택은 아니지만, 여러 적에게 일반 달빛섬광을 유지하는 운용과는 분명히 다릅니다. 오래 사는 보스와 짧게 등장하는 적이 섞이면 주 대상에 짓이기기를 유지할 수 있는지가 중요합니다. 반대로 여러 대상이 계속 살아남는 전투라면 일반 달빛섬광과 쌍둥이 달빛섬광 분기를 비교하는 편이 자연스럽습니다."
+        title: '9. 붉은 달을 선택하면 대상과 순서가 달라진다',
+        paragraphs: [
+          '붉은 달은 일반 달빛섬광을 대체하는 선택입니다. 기본 30초 쿨다운과 8초 지속을 가지며, 걸린 대상에 짓이기기를 쓰면 지속시간을 1초 늘리고 분노를 더 얻습니다. 따라서 단일 보스에서는 생성기를 그 대상에 제대로 맞추는 것이 중요해집니다. 난타의 필요한 중첩이 유지된 상황이라면 붉은 달 중 짓이기기를 우선할 이유가 있습니다.',
+          '일반 달빛섬광 빌드의 은하의 수호자는 자동 달빛섬광 뒤 다음 수동 시전을 강화합니다. 붉은 달에서는 이 보상이 달의 천벌 중첩과 분노 소비형 효과로 바뀝니다. 기존과 똑같이 강화 달빛섬광을 찾으며 입력하면 실제로 가진 효과와 맞지 않습니다. 붉은 달이 켜져 있는지, 중첩이 있는지, 소비할 분노가 있는지 세 가지를 함께 확인합니다.',
+          '대상이 여러 마리라고 무조건 붉은 달이 틀린 선택은 아니지만, 여러 적에게 일반 달빛섬광을 유지하는 운용과는 분명히 다릅니다. 오래 사는 보스와 짧게 등장하는 적이 섞이면 주 대상에 짓이기기를 유지할 수 있는지가 중요합니다. 반대로 여러 대상이 계속 살아남는 전투라면 일반 달빛섬광과 쌍둥이 달빛섬광 분기를 비교하는 편이 자연스럽습니다.',
         ],
-        "bullets": [
-          "붉은 달 대상과 짓이기기 대상이 어긋나지 않게 합니다.",
-          "지속시간 연장을 위해 무쇠가죽이나 즉시 필요한 생존기를 포기하지 않습니다.",
-          "일반 달빛섬광 차트와 붉은 달 차트를 동시에 그대로 실행하지 않습니다."
-        ]
+        bullets: [
+          '붉은 달 대상과 짓이기기 대상이 어긋나지 않게 합니다.',
+          '지속시간 연장을 위해 무쇠가죽이나 즉시 필요한 생존기를 포기하지 않습니다.',
+          '일반 달빛섬광 차트와 붉은 달 차트를 동시에 그대로 실행하지 않습니다.',
+        ],
       },
       {
-        "title": "10. 발톱의 드루이드: 찢어발기기도 방어에 관여한다",
-        "paragraphs": [
-          "발톱의 드루이드는 후려갈기기가 찢어발기기로 바뀌는 기회를 활용합니다. 목숨을 끊는 일격을 선택하면 전투 시작 후 첫 짓이기기에서 변환을 준비할 수 있고, 광폭화·화신 중에는 발톱 광란으로 추가 기회가 생깁니다. 발동을 길게 들고 있어 다음 변환을 잃지 않되, 기본 비용과 다음 방어 분노를 함께 봅니다. 변환됐다는 이유만으로 항상 무료는 아닙니다.",
-          "찢어발기기의 가치는 직접 피해로 끝나지 않습니다. 섬뜩한 상처가 해당 적의 자신에 대한 피해를 줄이고, 목숨을 끊는 일격은 민첩성과 무쇠가죽의 방어도 보정을 제공합니다. 따라서 찢어발기기는 방어와 무관한 순수 공격 스킬이라는 설명도 맞지 않습니다. 자신을 실제로 때리는 적을 전방에 넣고, 강화가 남아 있는 동안 필요한 무쇠가죽을 유지하는 것이 중요합니다.",
-          "그렇다고 찢어발기기 한 번으로 모든 적에게 필요한 방어를 끝낸 것은 아닙니다. 상처가 안 묻은 적, 새로 합류한 적, 바깥에서 들어오는 마법 피해는 따로 남습니다. 상처 악화의 피해 증가와 지속시간 연장도 각각 조건과 상한이 있습니다. 한 번 적용했다고 영구적으로 모든 위험이 줄었다고 생각하지 말고, 현재 탱킹 대상의 효과를 확인하세요."
+        title: '10. 발톱의 드루이드: 찢어발기기도 방어에 관여한다',
+        paragraphs: [
+          '발톱의 드루이드는 후려갈기기가 찢어발기기로 바뀌는 기회를 활용합니다. 목숨을 끊는 일격을 선택하면 전투 시작 후 첫 짓이기기에서 변환을 준비할 수 있고, 광폭화·화신 중에는 발톱 광란으로 추가 기회가 생깁니다. 발동을 길게 들고 있어 다음 변환을 잃지 않되, 기본 비용과 다음 방어 분노를 함께 봅니다. 변환됐다는 이유만으로 항상 무료는 아닙니다.',
+          '찢어발기기의 가치는 직접 피해로 끝나지 않습니다. 섬뜩한 상처가 해당 적의 자신에 대한 피해를 줄이고, 목숨을 끊는 일격은 민첩성과 무쇠가죽의 방어도 보정을 제공합니다. 따라서 찢어발기기는 방어와 무관한 순수 공격 스킬이라는 설명도 맞지 않습니다. 자신을 실제로 때리는 적을 전방에 넣고, 강화가 남아 있는 동안 필요한 무쇠가죽을 유지하는 것이 중요합니다.',
+          '그렇다고 찢어발기기 한 번으로 모든 적에게 필요한 방어를 끝낸 것은 아닙니다. 상처가 안 묻은 적, 새로 합류한 적, 바깥에서 들어오는 마법 피해는 따로 남습니다. 상처 악화의 피해 증가와 지속시간 연장도 각각 조건과 상한이 있습니다. 한 번 적용했다고 영구적으로 모든 위험이 줄었다고 생각하지 말고, 현재 탱킹 대상의 효과를 확인하세요.',
         ],
-        "bullets": [
-          "실제 수호 시전은 찢어발기기 441605이며 공유 특성 441583과 구분합니다.",
-          "첫 짓이기기 변환과 화신 중 추가 발동을 오래 방치하지 않습니다.",
-          "적의 방향과 상처 적용 여부를 확인한 뒤 공격·방어 이득을 함께 봅니다."
-        ]
+        bullets: [
+          '실제 수호 시전은 찢어발기기 441605이며 공유 특성 441583과 구분합니다.',
+          '첫 짓이기기 변환과 화신 중 추가 발동을 오래 방치하지 않습니다.',
+          '적의 방향과 상처 적용 여부를 확인한 뒤 공격·방어 이득을 함께 봅니다.',
+        ],
       },
       {
-        "title": "11. 광포한 재생력은 무조건 맞은 뒤에만 쓰지 않는다",
-        "paragraphs": [
-          "기본 광포한 재생력은 분노 10으로 3초 동안 최대 생명력의 24%를 회복합니다. 타고난 결의를 선택하면 충전이 늘고 잃은 생명력에 따라 회복량도 증가합니다. 체력이 내려갔을 때 빠르게 복구하는 기본 사용은 여전히 중요합니다. 다만 최대 회복 보정을 받겠다고 체력을 지나치게 낮게 방치하다 다음 평타에 죽는 것은 이득이 아닙니다.",
-          "자연의 탄력이 있으면 초과 치유 일부가 보호막이 되고, 발톱의 드루이드의 샘솟는 힘은 재생력 사용에 최대 생명력 증가를 더합니다. 이 경우 예측 가능한 피해 직전에 재생력을 켜면 보호막과 체력 여유를 준비하거나 첫 피해 직후부터 회복을 받을 수 있습니다. 재생력을 만피 근처에 썼다는 한 가지 사실만으로 낭비라고 판정해서는 안 되는 이유입니다.",
-          "반드시 나눠 볼 것은 한 방을 버티는 문제와 여러 번 맞으며 복구하는 문제입니다. 강타 자체가 현재 생명력보다 크다면 재생력의 후속 틱을 기다릴 수 없습니다. 먼저 나무 껍질·생존 본능·외부 생존기 등으로 들어올 피해를 줄이고 재생력을 연결합니다. 반대로 살아남을 수 있는 연속 피해라면 회복이 실제로 들어갈 시간을 확보하는 것이 중요합니다."
+        title: '11. 광포한 재생력은 무조건 맞은 뒤에만 쓰지 않는다',
+        paragraphs: [
+          '기본 광포한 재생력은 분노 10으로 3초 동안 최대 생명력의 24%를 회복합니다. 타고난 결의를 선택하면 충전이 늘고 잃은 생명력에 따라 회복량도 증가합니다. 체력이 내려갔을 때 빠르게 복구하는 기본 사용은 여전히 중요합니다. 다만 최대 회복 보정을 받겠다고 체력을 지나치게 낮게 방치하다 다음 평타에 죽는 것은 이득이 아닙니다.',
+          '자연의 탄력이 있으면 초과 치유 일부가 보호막이 되고, 발톱의 드루이드의 샘솟는 힘은 재생력 사용에 최대 생명력 증가를 더합니다. 이 경우 예측 가능한 피해 직전에 재생력을 켜면 보호막과 체력 여유를 준비하거나 첫 피해 직후부터 회복을 받을 수 있습니다. 재생력을 만피 근처에 썼다는 한 가지 사실만으로 낭비라고 판정해서는 안 되는 이유입니다.',
+          '반드시 나눠 볼 것은 한 방을 버티는 문제와 여러 번 맞으며 복구하는 문제입니다. 강타 자체가 현재 생명력보다 크다면 재생력의 후속 틱을 기다릴 수 없습니다. 먼저 나무 껍질·생존 본능·외부 생존기 등으로 들어올 피해를 줄이고 재생력을 연결합니다. 반대로 살아남을 수 있는 연속 피해라면 회복이 실제로 들어갈 시간을 확보하는 것이 중요합니다.',
         ],
-        "bullets": [
-          "특성 없이 만피에 습관적으로 쓰는 것과 보호막을 준비하는 선사용을 구분합니다.",
-          "타고난 결의가 있어도 최대 보정을 위해 급사 직전까지 기다리지 않습니다.",
-          "사망 분석은 충전 유무뿐 아니라 첫 치유가 들어오기 전에 죽었는지도 봅니다."
-        ]
+        bullets: [
+          '특성 없이 만피에 습관적으로 쓰는 것과 보호막을 준비하는 선사용을 구분합니다.',
+          '타고난 결의가 있어도 최대 보정을 위해 급사 직전까지 기다리지 않습니다.',
+          '사망 분석은 충전 유무뿐 아니라 첫 치유가 들어오기 전에 죽었는지도 봅니다.',
+        ],
       },
       {
-        "title": "12. 직접 재생과 자동 치유를 나눠 쓴다",
-        "paragraphs": [
-          "세나리우스의 꿈은 피격에서 얻는 발동으로 다음 재생을 즉시·무료로, 곰을 유지한 채 사용할 수 있게 합니다. 자신이 아프면 자기 회복에 쓰고, 힐러가 이동 중이거나 특정 아군이 위험하면 그 아군을 도울 수 있습니다. 다만 발동이 없는 평범한 재생까지 똑같은 조건으로 쓸 수 있는 것은 아닙니다. 강화 표시를 확인하지 않고 누르는 것은 형상과 시전 시간 문제를 만들 수 있습니다.",
-          "꿈의 안내자는 별도의 자동 치유 선택입니다. 피격으로 준비된 효과가 있다가 자신이나 주변 아군의 체력이 낮아지면 자동 재생을 사용합니다. 따라서 치유량 표에 재생이 많아도 전부 플레이어가 직접 누른 것은 아닐 수 있습니다. 두 로그의 재생 횟수를 비교하기 전에 어떤 특성을 골랐는지와 수동 시전 이벤트가 있는지를 확인해야 합니다.",
-          "들불이 지나간 자리 역시 직접 누르는 파티 힐 버튼이 아닙니다. 누적 분노 300 소비에서 주변 아군 치유가 발생합니다. 필요한 무쇠가죽과 공격 소비를 정상적으로 이어 가면서 생기는 지원으로 보는 편이 좋습니다. 치유 한 번을 만들겠다고 방어를 늦추거나, 다들 만피인 상황에서 필요 없는 소비를 반복하는 것은 목적과 결과가 어긋납니다."
+        title: '12. 직접 재생과 자동 치유를 나눠 쓴다',
+        paragraphs: [
+          '세나리우스의 꿈은 피격에서 얻는 발동으로 다음 재생을 즉시·무료로, 곰을 유지한 채 사용할 수 있게 합니다. 자신이 아프면 자기 회복에 쓰고, 힐러가 이동 중이거나 특정 아군이 위험하면 그 아군을 도울 수 있습니다. 다만 발동이 없는 평범한 재생까지 똑같은 조건으로 쓸 수 있는 것은 아닙니다. 강화 표시를 확인하지 않고 누르는 것은 형상과 시전 시간 문제를 만들 수 있습니다.',
+          '꿈의 안내자는 별도의 자동 치유 선택입니다. 피격으로 준비된 효과가 있다가 자신이나 주변 아군의 체력이 낮아지면 자동 재생을 사용합니다. 따라서 치유량 표에 재생이 많아도 전부 플레이어가 직접 누른 것은 아닐 수 있습니다. 두 로그의 재생 횟수를 비교하기 전에 어떤 특성을 골랐는지와 수동 시전 이벤트가 있는지를 확인해야 합니다.',
+          '들불이 지나간 자리 역시 직접 누르는 파티 힐 버튼이 아닙니다. 누적 분노 300 소비에서 주변 아군 치유가 발생합니다. 필요한 무쇠가죽과 공격 소비를 정상적으로 이어 가면서 생기는 지원으로 보는 편이 좋습니다. 치유 한 번을 만들겠다고 방어를 늦추거나, 다들 만피인 상황에서 필요 없는 소비를 반복하는 것은 목적과 결과가 어긋납니다.',
         ],
-        "bullets": [
-          "세나리우스의 꿈: 발동 뒤 직접 재생 대상을 고릅니다.",
-          "꿈의 안내자: 낮은 체력 조건의 자동 재생이며 수동 시전이 아닙니다.",
-          "들불이 지나간 자리: 누적 분노 기준이므로 매 방어기마다 치유하지 않습니다."
-        ]
+        bullets: [
+          '세나리우스의 꿈: 발동 뒤 직접 재생 대상을 고릅니다.',
+          '꿈의 안내자: 낮은 체력 조건의 자동 재생이며 수동 시전이 아닙니다.',
+          '들불이 지나간 자리: 누적 분노 기준이므로 매 방어기마다 치유하지 않습니다.',
+        ],
       },
       {
-        "title": "13. 변신 공격은 선택 사항이고 복귀가 먼저다",
-        "paragraphs": [
-          "발톱의 드루이드에서 솟구치는 자연력을 선택하면 짓이기기로 표범의 잠재력을 쌓을 수 있습니다. 6중첩에서 표범으로 바꾸면 연계 점수 5와 강화된 마무리 공격 기회를 얻습니다. 강화된 도려내기는 긴 지속 피해를, 흉포한 이빨은 더 즉각적인 피해를 노리는 선택입니다. 이것은 수호가 늘 표범으로 싸워야 한다는 뜻이 아니라, 준비된 짧은 공격 기회를 쓰는 별도 운용입니다.",
-          "먼저 확인할 것은 다음에 자신을 때릴 기술입니다. 보스가 다른 탱커를 보는 구간인지, 근접 적에게 계속 맞는 중인지, 곧 강타가 오는지에 따라 안전한 시간이 달라집니다. 끈기는 곰을 벗어난 뒤 방어와 생명력 보정이 8초에 걸쳐 줄어들게 할 뿐, 8초 동안 최대 방어가 그대로 유지되는 효과가 아닙니다. 준비가 됐어도 위험하면 곰 상태를 유지하는 것이 맞습니다.",
-          "액체 형상은 관련 공격에서 자동으로 형상을 바꾸므로 불필요한 전환 입력을 줄일 수 있습니다. 하지만 차단인 두개골 강타도 전환 조건에 포함되는 점을 알아야 합니다. 표범 공격 뒤 곰으로 돌아왔는지 확인하고, 짓이기기로 복귀할 계획이면 해당 기술이 준비돼 있어야 합니다. 변신 중 잃을 수 있는 분노까지 생각해야 하므로 기본 탱킹이 흔들리는 단계에서는 이 운용을 생략해도 됩니다."
+        title: '13. 변신 공격은 선택 사항이고 복귀가 먼저다',
+        paragraphs: [
+          '발톱의 드루이드에서 솟구치는 자연력을 선택하면 짓이기기로 표범의 잠재력을 쌓을 수 있습니다. 6중첩에서 표범으로 바꾸면 연계 점수 5와 강화된 마무리 공격 기회를 얻습니다. 강화된 도려내기는 긴 지속 피해를, 흉포한 이빨은 더 즉각적인 피해를 노리는 선택입니다. 이것은 수호가 늘 표범으로 싸워야 한다는 뜻이 아니라, 준비된 짧은 공격 기회를 쓰는 별도 운용입니다.',
+          '먼저 확인할 것은 다음에 자신을 때릴 기술입니다. 보스가 다른 탱커를 보는 구간인지, 근접 적에게 계속 맞는 중인지, 곧 강타가 오는지에 따라 안전한 시간이 달라집니다. 끈기는 곰을 벗어난 뒤 방어와 생명력 보정이 8초에 걸쳐 줄어들게 할 뿐, 8초 동안 최대 방어가 그대로 유지되는 효과가 아닙니다. 준비가 됐어도 위험하면 곰 상태를 유지하는 것이 맞습니다.',
+          '액체 형상은 관련 공격에서 자동으로 형상을 바꾸므로 불필요한 전환 입력을 줄일 수 있습니다. 하지만 차단인 두개골 강타도 전환 조건에 포함되는 점을 알아야 합니다. 표범 공격 뒤 곰으로 돌아왔는지 확인하고, 짓이기기로 복귀할 계획이면 해당 기술이 준비돼 있어야 합니다. 변신 중 잃을 수 있는 분노까지 생각해야 하므로 기본 탱킹이 흔들리는 단계에서는 이 운용을 생략해도 됩니다.',
         ],
-        "bullets": [
-          "솟구치는 자연력을 배우지 않았다면 짓이기기 6회로 같은 보상을 받지 않습니다.",
-          "끈기는 수호 전문화 특성이며 방어 보정이 서서히 감소합니다.",
-          "곰 복귀와 다음 방어 분노가 불확실하면 강화 표범 공격을 미룹니다."
-        ]
+        bullets: [
+          '솟구치는 자연력을 배우지 않았다면 짓이기기 6회로 같은 보상을 받지 않습니다.',
+          '끈기는 수호 전문화 특성이며 방어 보정이 서서히 감소합니다.',
+          '곰 복귀와 다음 방어 분노가 불확실하면 강화 표범 공격을 미룹니다.',
+        ],
       },
       {
-        "title": "14. 레이드와 쐐기에서 쿨기를 배정하는 법",
-        "paragraphs": [
-          "레이드에서는 탱커 교대와 강타 시간을 먼저 적습니다. 자신이 맞기 시작할 때 무쇠가죽이 남는지, 방어도로 줄일 수 없는 피해에 개인 또는 외부 생존기가 있는지, 화신을 어느 구간에 쓰면 공격과 생존을 같이 얻는지를 정합니다. 다른 탱커가 맞는 동안은 현재 받은 피해량이 낮다고 분노와 생성기를 모두 쉬지 말고 다음 인계 준비를 합니다.",
-          "쐐기는 풀 크기, 적의 생존 시간, 차단 배정이 더 크게 작용합니다. 달 광선을 쓰기 직전에 무리가 거의 끝나거나 멀리 이동해야 한다면 실제 적중 시간이 짧습니다. 반대로 다음 풀만 기다리다 여러 번 쓸 수 있었던 광선을 계속 놓치는 것도 손실입니다. 이번 풀에서 사용할 가치와 다음 위험을 비교하고, 보스 전투와 일반 몬스터 구간의 평균 사용 간격을 한 기준으로 섞지 않습니다.",
-          "나무 껍질과 생존 본능은 둘 다 큰 피해 전에 사용하는 피해 감소입니다. 하나로 버틸 수 있는데 항상 동시에 켜면 이후 대응 시간이 비게 됩니다. 정말 큰 강타에는 함께 쓸 수 있지만, 동시에 눌렀다는 이유만으로 항상 실수이거나 항상 정답인 것은 아닙니다. 외부 생존기와 힐러의 이동·군중 제어 상황까지 고려해 다음 몇 초를 계획합니다."
+        title: '14. 레이드와 쐐기에서 쿨기를 배정하는 법',
+        paragraphs: [
+          '레이드에서는 탱커 교대와 강타 시간을 먼저 적습니다. 자신이 맞기 시작할 때 무쇠가죽이 남는지, 방어도로 줄일 수 없는 피해에 개인 또는 외부 생존기가 있는지, 화신을 어느 구간에 쓰면 공격과 생존을 같이 얻는지를 정합니다. 다른 탱커가 맞는 동안은 현재 받은 피해량이 낮다고 분노와 생성기를 모두 쉬지 말고 다음 인계 준비를 합니다.',
+          '쐐기는 풀 크기, 적의 생존 시간, 차단 배정이 더 크게 작용합니다. 달 광선을 쓰기 직전에 무리가 거의 끝나거나 멀리 이동해야 한다면 실제 적중 시간이 짧습니다. 반대로 다음 풀만 기다리다 여러 번 쓸 수 있었던 광선을 계속 놓치는 것도 손실입니다. 이번 풀에서 사용할 가치와 다음 위험을 비교하고, 보스 전투와 일반 몬스터 구간의 평균 사용 간격을 한 기준으로 섞지 않습니다.',
+          '나무 껍질과 생존 본능은 둘 다 큰 피해 전에 사용하는 피해 감소입니다. 하나로 버틸 수 있는데 항상 동시에 켜면 이후 대응 시간이 비게 됩니다. 정말 큰 강타에는 함께 쓸 수 있지만, 동시에 눌렀다는 이유만으로 항상 실수이거나 항상 정답인 것은 아닙니다. 외부 생존기와 힐러의 이동·군중 제어 상황까지 고려해 다음 몇 초를 계획합니다.',
         ],
-        "bullets": [
-          "레이드: 탱커 인계 시점과 실제 탱킹 시간으로 방어 공백을 평가합니다.",
-          "쐐기: 풀 사이 이동 시간을 포함한 평균 CPM만으로 느린 플레이를 단정하지 않습니다.",
-          "달 광선·화신의 총 사용 횟수와 필요한 위험 타이밍을 함께 봅니다."
-        ]
+        bullets: [
+          '레이드: 탱커 인계 시점과 실제 탱킹 시간으로 방어 공백을 평가합니다.',
+          '쐐기: 풀 사이 이동 시간을 포함한 평균 CPM만으로 느린 플레이를 단정하지 않습니다.',
+          '달 광선·화신의 총 사용 횟수와 필요한 위험 타이밍을 함께 봅니다.',
+        ],
       },
       {
-        "title": "15. 장비와 특성을 비교할 때 먼저 맞출 조건",
-        "paragraphs": [
-          "같은 수호 드루이드라도 영웅 특성, 붉은 달 여부, 맹위·피투성이 모피·결정타 선택, 정점 투자와 세트 수에 따라 자원과 피해 구성이 달라집니다. 상위 로그에서 말살이 많다는 이유만으로 본인 빌드의 필수 소비기라고 생각하지 마세요. 먼저 두 사람이 같은 공격 소비기와 무료 발동을 갖고 있는지 확인해야 버튼 수 비교가 의미를 가집니다.",
-          "공개 가이드의 기본 추천은 출발점이지 모든 던전에서 바꿀 수 없는 정답은 아닙니다. 현재 Method는 엘룬의 대행자를 레이드와 쐐기 모두 추천하지만, 이는 이번에 직접 재집계한 상위 로그 비율을 뜻하지 않습니다. 생존이 불안하면 자연의 탄력이나 방어 보정을 유지하고, 파티에 필요한 차단·해제·이동 지원을 빼면서까지 작은 공격 이득을 좇지 않는 편이 좋습니다.",
-          "장비도 같은 순서로 봅니다. 세트가 깨지는지, 필요한 체력과 방어가 줄어드는지, 실제 전투에서 자주 쓰는 스킬을 어떻게 바꾸는지부터 확인합니다. 특정 보조 능력치를 조금 바꾸는 것만으로 생성기 공백이나 생존기 누락이 해결되지는 않습니다. 딜 최적화는 본인 장비와 선택 특성으로 심크를 비교하고, 생존은 실제 받은 피해와 사망 전 상태로 따로 검토하세요."
+        title: '15. 장비와 특성을 비교할 때 먼저 맞출 조건',
+        paragraphs: [
+          '같은 수호 드루이드라도 영웅 특성, 붉은 달 여부, 맹위·피투성이 모피·결정타 선택, 정점 투자와 세트 수에 따라 자원과 피해 구성이 달라집니다. 상위 로그에서 말살이 많다는 이유만으로 본인 빌드의 필수 소비기라고 생각하지 마세요. 먼저 두 사람이 같은 공격 소비기와 무료 발동을 갖고 있는지 확인해야 버튼 수 비교가 의미를 가집니다.',
+          '공개 가이드의 기본 추천은 출발점이지 모든 던전에서 바꿀 수 없는 정답은 아닙니다. 현재 Method는 엘룬의 대행자를 레이드와 쐐기 모두 추천하지만, 이는 이번에 직접 재집계한 상위 로그 비율을 뜻하지 않습니다. 생존이 불안하면 자연의 탄력이나 방어 보정을 유지하고, 파티에 필요한 차단·해제·이동 지원을 빼면서까지 작은 공격 이득을 좇지 않는 편이 좋습니다.',
+          '장비도 같은 순서로 봅니다. 세트가 깨지는지, 필요한 체력과 방어가 줄어드는지, 실제 전투에서 자주 쓰는 스킬을 어떻게 바꾸는지부터 확인합니다. 특정 보조 능력치를 조금 바꾸는 것만으로 생성기 공백이나 생존기 누락이 해결되지는 않습니다. 딜 최적화는 본인 장비와 선택 특성으로 심크를 비교하고, 생존은 실제 받은 피해와 사망 전 상태로 따로 검토하세요.',
         ],
-        "bullets": [
-          "비교 전 영웅 특성·정점·세트·공격 소비기 선택을 맞춥니다.",
-          "캐릭터를 직접 계산하지 않은 고정 능력치 비율이나 딜 상승률을 제시하지 않습니다.",
-          "실제 필요한 유틸과 생존기를 확보한 뒤 공격 선택을 조정합니다."
-        ]
+        bullets: [
+          '비교 전 영웅 특성·정점·세트·공격 소비기 선택을 맞춥니다.',
+          '캐릭터를 직접 계산하지 않은 고정 능력치 비율이나 딜 상승률을 제시하지 않습니다.',
+          '실제 필요한 유틸과 생존기를 확보한 뒤 공격 선택을 조정합니다.',
+        ],
       },
       {
-        "title": "16. 로그에서 실수를 찾는 순서",
-        "paragraphs": [
-          "먼저 사망 전 몇 초를 봅니다. 마지막 피해의 종류와 크기, 당시 생명력, 무쇠가죽의 남은 중첩, 사용 가능한 생존기, 분노 잔량을 나란히 확인합니다. 분노가 남았는데 무쇠가죽이 비었는지, 방어도가 도움이 안 되는 기술을 방어도로 받으려 했는지, 재생력의 첫 회복 전에 죽었는지에 따라 고칠 행동이 달라집니다. 전체 전투의 평균 유지율 하나로 이 차이를 설명하기 어렵습니다.",
-          "그다음 실제 공격 가능한 시간 안에서 난타와 짓이기기를 봅니다. 영혼 등장 또는 꿰뚫기 초기화 뒤 얼마나 빨리 생성기로 복귀했는지, 시즌 2의 강화 짓이기기를 사용했는지, 분노 상한에서 얼마를 버렸는지 확인합니다. 난타 피해 이벤트에는 추가 공격과 세트 효과가 섞일 수 있으므로 시전 수·적중 수·자동 피해를 나눠야 합니다. 자동 공격이 적은 전투는 맹위와 찢어발기기 발동 기회도 적습니다.",
-          "마지막으로 무료 공격 발동, 붉은 달 대상, 달 광선의 실제 적중 구간과 재생력 보호막 소비를 봅니다. 같은 힐량 차이라도 과잉 회복, 외부 치유, 받는 피해량이 달라 원인이 다를 수 있습니다. 공격대가 강해서 맞은 시간이 짧은 로그와 대부분을 직접 탱킹한 로그를 총 피해·총 치유만으로 비교하지 마세요. 조건을 맞춘 뒤 다음 전투에서 바꿀 행동을 하나씩 정하는 편이 효과적입니다."
+        title: '16. 로그에서 실수를 찾는 순서',
+        paragraphs: [
+          '먼저 사망 전 몇 초를 봅니다. 마지막 피해의 종류와 크기, 당시 생명력, 무쇠가죽의 남은 중첩, 사용 가능한 생존기, 분노 잔량을 나란히 확인합니다. 분노가 남았는데 무쇠가죽이 비었는지, 방어도가 도움이 안 되는 기술을 방어도로 받으려 했는지, 재생력의 첫 회복 전에 죽었는지에 따라 고칠 행동이 달라집니다. 전체 전투의 평균 유지율 하나로 이 차이를 설명하기 어렵습니다.',
+          '그다음 실제 공격 가능한 시간 안에서 난타와 짓이기기를 봅니다. 영혼 등장 또는 꿰뚫기 초기화 뒤 얼마나 빨리 생성기로 복귀했는지, 시즌 2의 강화 짓이기기를 사용했는지, 분노 상한에서 얼마를 버렸는지 확인합니다. 난타 피해 이벤트에는 추가 공격과 세트 효과가 섞일 수 있으므로 시전 수·적중 수·자동 피해를 나눠야 합니다. 자동 공격이 적은 전투는 맹위와 찢어발기기 발동 기회도 적습니다.',
+          '마지막으로 무료 공격 발동, 붉은 달 대상, 달 광선의 실제 적중 구간과 재생력 보호막 소비를 봅니다. 같은 힐량 차이라도 과잉 회복, 외부 치유, 받는 피해량이 달라 원인이 다를 수 있습니다. 공격대가 강해서 맞은 시간이 짧은 로그와 대부분을 직접 탱킹한 로그를 총 피해·총 치유만으로 비교하지 마세요. 조건을 맞춘 뒤 다음 전투에서 바꿀 행동을 하나씩 정하는 편이 효과적입니다.',
         ],
-        "bullets": [
-          "1차: 사망 직전의 실제 피해와 방어 상태.",
-          "2차: 공격 가능한 구간의 생성기 공백, 초기화, 자원 낭비.",
-          "3차: 특성별 발동 소비, 대상 선택, 쿨기 적중과 유효 회복."
-        ]
-      }
+        bullets: [
+          '1차: 사망 직전의 실제 피해와 방어 상태.',
+          '2차: 공격 가능한 구간의 생성기 공백, 초기화, 자원 낭비.',
+          '3차: 특성별 발동 소비, 대상 선택, 쿨기 적중과 유효 회복.',
+        ],
+      },
     ],
-    "tips": [
-      "달빛섬광을 누르기 전에 난타와 짓이기기가 돌아왔는지 한 번 더 봅니다. 12.1에서는 달 광선 추가 쿨다운 감소를 위해 생성기를 미룰 이유가 없습니다.",
-      "화신을 켠 직후 야생 수호자 사용 기회를 확인하세요. 준비 버튼만 누르지 말고 가능한 공격 소비기로 영혼을 깨운 뒤 초기화된 생성기까지 이어 갑니다.",
-      "무쇠가죽은 모든 중첩이 한꺼번에 갱신되지 않습니다. 잠깐 2중첩이 보인 뒤 곧 1중첩으로 줄 수 있으므로 강타 시점에 남을 시간을 봅니다.",
-      "맹위 2중첩을 오래 보관하면 새로운 발동을 잃을 수 있습니다. 위험 대상에게 무료 공격을 맞혀 피해 감소를 얻되 긴급 생존과 차단을 늦추지 않습니다.",
-      "결정타를 찍었다면 후려갈기기와 말살이 기본 40보다 분노를 더 쓸 수 있습니다. 사용 뒤 다음 무쇠가죽이 가능한지를 계산하고 소비합니다.",
-      "자연의 탄력이 있는 재생력의 초과 치유는 보호막으로 남을 수 있습니다. 치유량 표의 초과 치유만 보고 낭비라고 결론 내리지 말고 실제 흡수도 확인합니다.",
-      "붉은 달이 있는 보스에서 다른 적에게 짓이기기를 계속 쓰면 연장과 추가 분노를 놓칠 수 있습니다. 주 대상 유지와 필요한 새 적 위협을 나눠 판단합니다.",
-      "찢어발기기는 전방 공격입니다. 이동 중 몸을 돌린 뒤 위험 몹이 실제로 맞았는지 확인해야 섬뜩한 상처의 피해 감소까지 기대할 수 있습니다.",
-      "액체 형상을 선택했다면 두개골 강타 이후 현재 형상을 확인합니다. 차단이 성공했어도 다음 강타를 원치 않는 형상으로 받으면 생존 문제가 생깁니다.",
-      "난타 피해 이벤트가 많은 로그가 반드시 버튼도 더 많이 누른 것은 아닙니다. 추가 난타, 자동 별빛쇄도, 세트 가시와 플레이어 시전을 분리합니다.",
-      "영혼 발동을 봤는데 생성기가 비어 있었다면 초기화 확인부터 고칩니다. 단순 발동 운보다 짧은 영혼 시간 안에 실제 공격을 이어 갔는지가 중요합니다.",
-      "한 생존기로 버틸 구간이면 나무 껍질과 생존 본능을 나눠 쓰는 편이 다음 대응에 유리합니다. 겹쳐야 할 큰 강타는 미리 정하고 외부 생존기까지 확인합니다."
+    tips: [
+      '달빛섬광을 누르기 전에 난타와 짓이기기가 돌아왔는지 한 번 더 봅니다. 12.1에서는 달 광선 추가 쿨다운 감소를 위해 생성기를 미룰 이유가 없습니다.',
+      '화신을 켠 직후 야생 수호자 사용 기회를 확인하세요. 준비 버튼만 누르지 말고 가능한 공격 소비기로 영혼을 깨운 뒤 초기화된 생성기까지 이어 갑니다.',
+      '무쇠가죽은 모든 중첩이 한꺼번에 갱신되지 않습니다. 잠깐 2중첩이 보인 뒤 곧 1중첩으로 줄 수 있으므로 강타 시점에 남을 시간을 봅니다.',
+      '맹위 2중첩을 오래 보관하면 새로운 발동을 잃을 수 있습니다. 위험 대상에게 무료 공격을 맞혀 피해 감소를 얻되 긴급 생존과 차단을 늦추지 않습니다.',
+      '결정타를 찍었다면 후려갈기기와 말살이 기본 40보다 분노를 더 쓸 수 있습니다. 사용 뒤 다음 무쇠가죽이 가능한지를 계산하고 소비합니다.',
+      '자연의 탄력이 있는 재생력의 초과 치유는 보호막으로 남을 수 있습니다. 치유량 표의 초과 치유만 보고 낭비라고 결론 내리지 말고 실제 흡수도 확인합니다.',
+      '붉은 달이 있는 보스에서 다른 적에게 짓이기기를 계속 쓰면 연장과 추가 분노를 놓칠 수 있습니다. 주 대상 유지와 필요한 새 적 위협을 나눠 판단합니다.',
+      '찢어발기기는 전방 공격입니다. 이동 중 몸을 돌린 뒤 위험 몹이 실제로 맞았는지 확인해야 섬뜩한 상처의 피해 감소까지 기대할 수 있습니다.',
+      '액체 형상을 선택했다면 두개골 강타 이후 현재 형상을 확인합니다. 차단이 성공했어도 다음 강타를 원치 않는 형상으로 받으면 생존 문제가 생깁니다.',
+      '난타 피해 이벤트가 많은 로그가 반드시 버튼도 더 많이 누른 것은 아닙니다. 추가 난타, 자동 별빛쇄도, 세트 가시와 플레이어 시전을 분리합니다.',
+      '영혼 발동을 봤는데 생성기가 비어 있었다면 초기화 확인부터 고칩니다. 단순 발동 운보다 짧은 영혼 시간 안에 실제 공격을 이어 갔는지가 중요합니다.',
+      '한 생존기로 버틸 구간이면 나무 껍질과 생존 본능을 나눠 쓰는 편이 다음 대응에 유리합니다. 겹쳐야 할 큰 강타는 미리 정하고 외부 생존기까지 확인합니다.',
     ],
-    "priority": [
+    priority: [
       {
-        "skillId": "192081",
-        "label": "필요한 물리 방어",
-        "note": "현재 맞고 있거나 곧 맞을 평타·물리 강타에 필요한 중첩을 확보합니다. 차단·즉시 생존과 함께 공격보다 먼저 판단합니다."
+        skillId: '192081',
+        label: '무쇠가죽',
+        note: '현재 탱킹 중인 물리 피해에 필요한 중첩을 확보합니다. 남는 분노를 공격에 쓰기 전에 다음 평타와 강타를 확인합니다.',
       },
       {
-        "skillId": "22842",
-        "label": "위험한 체력 / 선사용 조건",
-        "note": "실제 체력 복구가 필요하면 사용합니다. 자연의 탄력·샘솟는 힘 등 선택 조건이 있으면 예측 피해 직전의 준비도 검토합니다."
+        skillId: '22842',
+        label: '광포한 재생력',
+        note: '실제 체력 복구가 필요하면 사용합니다. 선택 특성의 선사용 보호막과 생명력 증가는 해당 특성이 있을 때만 적용합니다.',
       },
       {
-        "skillId": "8921",
-        "label": "필요한 지속 피해",
-        "note": "일반 달빛섬광 빌드에서 위험 대상과 오래 사는 적에게 유지합니다. 여러 적을 수동으로 갱신하다 생성기를 계속 놓치지 않습니다."
+        skillId: '8921',
+        label: '달빛섬광',
+        note: '일반 달빛섬광 빌드에서 지속 피해를 유지합니다. 붉은 달을 골랐다면 대체 주문과 대상의 짓이기기 연장 조건을 봅니다.',
       },
       {
-        "skillId": "77758",
-        "label": "난타 중첩 복구",
-        "note": "실제로 탱킹하는 적의 필요한 중첩이 없거나 곧 끝나면 우선 적용합니다. 기본 3중첩과 섬광의 발톱 추가 상한을 구분합니다."
+        skillId: '77758',
+        label: '난타',
+        note: '필요한 난타 중첩을 복구합니다. 기본 3중첩과 섬광의 발톱으로 늘어나는 상한을 선택에 맞춰 구분합니다.',
       },
       {
-        "skillId": "204066",
-        "label": "달 광선",
-        "note": "대상이 남아 있고 적중할 수 있는 구간에 사용합니다. 삭망월의 고정 감소를 적용하며 달빛섬광으로 추가 쿨다운 감소를 기대하지 않습니다."
+        skillId: '204066',
+        label: '달 광선',
+        note: '대상이 실제로 광선에 남는 구간에 사용합니다. 달빛섬광을 반복해 추가 쿨다운 감소를 얻는 옛 규칙을 적용하지 않습니다.',
       },
       {
-        "skillId": "102558",
-        "label": "계획한 화신",
-        "note": "배정한 위험·공격 구간에 사용합니다. 별도 타이밍을 기다릴 이유가 없다면 불필요한 지연으로 사용 횟수를 잃지 않습니다."
+        skillId: '33917',
+        label: '짓이기기',
+        note: '충전과 초기화를 회수합니다. 붉은 달이 있다면 지속시간 연장과 추가 분노 때문에 난타와의 순서를 별도로 조정합니다.',
       },
       {
-        "skillId": "1269658",
-        "label": "준비된 야생 수호자",
-        "note": "사용 기회가 있고 후속 공격 소비를 연결할 수 있을 때 준비합니다. 영혼을 깨운 뒤 생성기 초기화까지 활용할 수 있는지 확인합니다."
+        skillId: '1269658',
+        label: '야생 수호자',
+        note: '정점 마지막 노드의 사용 기회가 있고 다음 공격 소비를 연결할 수 있으면 준비합니다. 없는 사용 기회를 매번 만들 수는 없습니다.',
       },
       {
-        "skillId": "1252871",
-        "label": "붉은 달 선택 시",
-        "note": "일반 달빛섬광을 대체한 빌드에만 적용합니다. 오래 사는 대상에 사용하고 다음 짓이기기를 같은 대상에 맞춥니다."
+        skillId: '6807',
+        label: '후려갈기기',
+        note: '무료 발동이나 방어 뒤 남는 분노를 단일 공격에 씁니다. 말살을 선택한 빌드에는 후려갈기기를 별도 버튼으로 추가하지 않습니다.',
       },
       {
-        "skillId": "33917",
-        "label": "붉은 달 중 생성",
-        "note": "붉은 달이 걸린 대상에서 지속시간 연장과 추가 분노를 얻습니다. 필요한 난타 중첩과 방어를 확보한 뒤 생성기 순서를 조정합니다."
+        skillId: '8921',
+        label: '달빛섬광',
+        note: '일반 빌드에서 앞선 생성기가 없을 때 채웁니다. 돌아온 짓이기기와 난타를 늦추면서 반복하지 않습니다.',
       },
-      {
-        "skillId": "77758",
-        "label": "난타 재사용",
-        "note": "기본 광역 생성기로 사용합니다. 영혼이 있으면 후속 공격, 세트가 있으면 강화 짓이기기·가시 기회가 함께 생깁니다."
-      },
-      {
-        "skillId": "33917",
-        "label": "짓이기기 재사용",
-        "note": "충전 상한과 초기화 방치를 줄입니다. 일반 달빛섬광 보조 입력보다 앞에 두고 세트·정점의 이득을 놓치지 않습니다."
-      },
-      {
-        "skillId": "6807",
-        "label": "단일 공격 소비",
-        "note": "무료 발동이나 남는 분노를 활용합니다. 다음 무쇠가죽과 회복 자원이 충분한지, 결정타로 비용이 늘어나는지 확인합니다."
-      },
-      {
-        "skillId": "400254",
-        "label": "말살 선택 시 광역 소비",
-        "note": "후려갈기기를 대체한 빌드에만 적용합니다. 무료 발동·방어 여유를 보고 전방의 적에게 사용합니다."
-      },
-      {
-        "skillId": "8921",
-        "label": "여유 글쿨",
-        "note": "일반 달빛섬광 빌드에서 생성기가 비어 있을 때 사용합니다. 돌아온 짓이기기보다 계속 앞세우지 않습니다."
-      }
     ],
-    "opener": {
-      "title": "엘룬의 대행자 첫 풀 전투 흐름",
-      "summary": "일반 달빛섬광과 화신·정점 마지막 노드를 선택한 예시입니다. 분노가 충분하지 않으면 공격 소비를 서두르지 않습니다. 나무 껍질·무쇠가죽과 야생 수호자는 준비된 시점에 끼워 쓰는 입력이며, 모든 단계를 별도 글쿨처럼 기다리는 순서가 아닙니다.",
-      "steps": [
+    opener: {
+      title: '엘룬의 대행자 첫 풀 전투 흐름',
+      summary: '일반 달빛섬광과 화신·정점 마지막 노드를 선택한 예시입니다. 분노가 충분하지 않으면 공격 소비를 서두르지 않습니다. 나무 껍질·무쇠가죽과 야생 수호자는 준비된 시점에 끼워 쓰는 입력이며, 모든 단계를 별도 글쿨처럼 기다리는 순서가 아닙니다.',
+      steps: [
         {
-          "skillId": "5487",
-          "label": "곰 변신",
-          "phase": "전투 전",
-          "trigger": "현재 형상 확인",
-          "note": "곰 상태에서 시작합니다. 표범 공격 오프닝을 기본값으로 강제하지 않습니다."
+          skillId: '5487',
+          label: '곰 변신',
+          phase: '전투 전',
+          trigger: '현재 형상 확인',
+          note: '곰 상태에서 시작합니다. 표범 공격 오프닝을 기본값으로 강제하지 않습니다.',
         },
         {
-          "skillId": "22812",
-          "label": "나무 껍질",
-          "phase": "접촉 직전",
-          "trigger": "낮은 분노 / 위험 진입",
-          "note": "첫 방어 분노가 부족한 진입을 덮습니다. 풀 위험이 낮으면 이후 필요한 시점에 배정할 수 있습니다."
+          skillId: '22812',
+          label: '나무 껍질',
+          phase: '접촉 직전',
+          trigger: '낮은 분노 / 위험 진입',
+          note: '첫 방어 분노가 부족한 진입을 덮습니다. 풀 위험이 낮으면 이후 필요한 시점에 배정할 수 있습니다.',
         },
         {
-          "skillId": "8921",
-          "label": "달빛섬광",
-          "phase": "첫 대상",
-          "trigger": "오래 사는 적 / 원거리 접촉",
-          "note": "붉은 달을 선택하지 않은 일반 다중 대상 예시입니다. 풀을 모으느라 생성기를 계속 미루지는 않습니다."
+          skillId: '8921',
+          label: '달빛섬광',
+          phase: '첫 대상',
+          trigger: '오래 사는 적 / 원거리 접촉',
+          note: '붉은 달을 선택하지 않은 일반 다중 대상 예시입니다. 풀을 모으느라 생성기를 계속 미루지는 않습니다.',
         },
         {
-          "skillId": "204066",
-          "label": "달 광선",
-          "phase": "교전 위치 확보",
-          "trigger": "적이 실제로 맞을 때",
-          "note": "광선이 적중할 구간에 사용합니다. 곧 끝날 무리나 즉시 이동하는 대상에게 낭비하지 않습니다."
+          skillId: '204066',
+          label: '달 광선',
+          phase: '교전 위치 확보',
+          trigger: '적이 실제로 맞을 때',
+          note: '광선이 적중할 구간에 사용합니다. 곧 끝날 무리나 즉시 이동하는 대상에게 낭비하지 않습니다.',
         },
         {
-          "skillId": "102558",
-          "label": "화신: 우르속의 수호자",
-          "phase": "공격·방어 시작",
-          "trigger": "이번 풀에 배정",
-          "note": "생성기 쿨다운과 체력 보정을 활용합니다. 정점 마지막 노드가 있으면 야생 수호자 사용 기회를 받습니다."
+          skillId: '102558',
+          label: '화신: 우르속의 수호자',
+          phase: '공격·방어 시작',
+          trigger: '이번 풀에 배정',
+          note: '생성기 쿨다운과 체력 보정을 활용합니다. 정점 마지막 노드가 있으면 야생 수호자 사용 기회를 받습니다.',
         },
         {
-          "skillId": "77758",
-          "label": "난타",
-          "phase": "광역 위협",
-          "trigger": "적이 근접에 모임",
-          "note": "지속 피해와 분노를 만들고 세트 발동 기회를 엽니다. 다음 생성기를 쓸 준비를 합니다."
+          skillId: '77758',
+          label: '난타',
+          phase: '광역 위협',
+          trigger: '적이 근접에 모임',
+          note: '지속 피해와 분노를 만들고 세트 발동 기회를 엽니다. 다음 생성기를 쓸 준비를 합니다.',
         },
         {
-          "skillId": "33917",
-          "label": "짓이기기",
-          "phase": "첫 분노 확보",
-          "trigger": "사용 가능",
-          "note": "분노를 만들고 충전을 비웁니다. 세트 강화나 초기화가 생기면 계속 확인합니다."
+          skillId: '33917',
+          label: '짓이기기',
+          phase: '첫 분노 확보',
+          trigger: '사용 가능',
+          note: '분노를 만들고 충전을 비웁니다. 세트 강화나 초기화가 생기면 계속 확인합니다.',
         },
         {
-          "skillId": "192081",
-          "label": "무쇠가죽",
-          "phase": "평타 완화",
-          "trigger": "분노 확보 / 필요한 중첩",
-          "note": "필요한 자원이 모이는 즉시 공격 사이에 사용합니다. 이 단계까지 기다리라는 뜻이 아닙니다."
+          skillId: '192081',
+          label: '무쇠가죽',
+          phase: '평타 완화',
+          trigger: '분노 확보 / 필요한 중첩',
+          note: '필요한 자원이 모이는 즉시 공격 사이에 사용합니다. 이 단계까지 기다리라는 뜻이 아닙니다.',
         },
         {
-          "skillId": "1269658",
-          "label": "야생 수호자",
-          "phase": "확정 발동 준비",
-          "trigger": "정점 마지막 노드 / 사용 기회 보유",
-          "note": "실제 사용 버튼으로 다음 공격 소비를 준비합니다. 없는 사용 기회를 8초마다 반복할 수는 없습니다."
+          skillId: '1269658',
+          label: '야생 수호자',
+          phase: '확정 발동 준비',
+          trigger: '정점 마지막 노드 / 사용 기회 보유',
+          note: '실제 사용 버튼으로 다음 공격 소비를 준비합니다. 없는 사용 기회를 8초마다 반복할 수는 없습니다.',
         },
         {
-          "skillId": "6807",
-          "label": "후려갈기기",
-          "phase": "영혼 깨우기",
-          "trigger": "방어 확보 / 소비 가능",
-          "note": "준비된 야생 수호자를 소비합니다. 말살 빌드는 말살을 사용하며, 분노가 부족하면 생성기를 먼저 추가합니다."
+          skillId: '6807',
+          label: '후려갈기기',
+          phase: '영혼 깨우기',
+          trigger: '방어 확보 / 소비 가능',
+          note: '준비된 야생 수호자를 소비합니다. 말살 빌드는 말살을 사용하며, 분노가 부족하면 생성기를 먼저 추가합니다.',
         },
         {
-          "skillId": "77758",
-          "label": "난타",
-          "phase": "영혼 등장",
-          "trigger": "초기화 확인",
-          "note": "영혼이 나왔으면 돌아온 난타로 후속 공격을 만듭니다. 무조건 정해진 초 단위로 누르는 단계는 아닙니다."
+          skillId: '77758',
+          label: '난타',
+          phase: '영혼 등장',
+          trigger: '초기화 확인',
+          note: '영혼이 나왔으면 돌아온 난타로 후속 공격을 만듭니다. 무조건 정해진 초 단위로 누르는 단계는 아닙니다.',
         },
         {
-          "skillId": "33917",
-          "label": "짓이기기",
-          "phase": "분노 회수",
-          "trigger": "초기화 / 추가 충전",
-          "note": "다시 분노와 영혼 공격을 얻고 유지 우선순위로 넘어갑니다. 다음 무쇠가죽과 자원 상한을 함께 봅니다."
-        }
-      ]
-    }
+          skillId: '33917',
+          label: '짓이기기',
+          phase: '분노 회수',
+          trigger: '초기화 / 추가 충전',
+          note: '다시 분노와 영혼 공격을 얻고 유지 우선순위로 넘어갑니다. 다음 무쇠가죽과 자원 상한을 함께 봅니다.',
+        },
+      ],
+    },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 104,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '3bab64721ef5f60f1ea1820bbfe0b4f437c7631d2b51c38bf039dd9e589f4ea9',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMziZxwMLLDMbGGNRzMzyMzMzsMmBAAAAAgZsYAbbzMYMLDgpAAAAbYmBYxMYAbWAYmBwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMziZxwMLLDMbGGNRzMzyMzMzsMmBAAAAAgZsYAbbzMYMLDgpAAAAbYmBYxMYAbWAYmBwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 104,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '193228d9419b7300897be4a3eab7c6ad476c6c4c27f65f96f297de8e18431a35',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 104,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '3bab64721ef5f60f1ea1820bbfe0b4f437c7631d2b51c38bf039dd9e589f4ea9',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 5578,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/guardian/druid/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/aL8TKxvzktq4XYR2#fight=10',
+          recommendedCode: 'CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGbzAW2mZwY2GATAAAAbYmBYxMYAbW2GgZGAD',
+          validation: {
+            specId: 104,
+            heroTreeId: 24,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 215600,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/agMpfqNzBrZHJKGm#fight=15',
+          recommendedCode: 'CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZbmBjZZAMBAAAshZGgFjhBsYBgZGAD',
+          validation: {
+            specId: 104,
+            heroTreeId: 24,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0004809044851556808,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=106',
+            startedAt: '2026-10-08T01:03:46.235Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 415683,
+            itemLevelBracket: 328,
+            heroTree: 24,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '29166',
+                count: 2,
+              },
+              {
+                spellId: '33917',
+                count: 124,
+              },
+              {
+                spellId: '22842',
+                count: 14,
+              },
+              {
+                spellId: '77761',
+                count: 2,
+              },
+              {
+                spellId: '61336',
+                count: 2,
+              },
+              {
+                spellId: '16979',
+                count: 6,
+              },
+              {
+                spellId: '20484',
+                count: 1,
+              },
+              {
+                spellId: '768',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '22812',
+                count: 3,
+              },
+              {
+                spellId: '204066',
+                count: 9,
+              },
+              {
+                spellId: '192081',
+                count: 105,
+              },
+              {
+                spellId: '6795',
+                count: 10,
+              },
+              {
+                spellId: '77758',
+                count: 82,
+              },
+              {
+                spellId: '6807',
+                count: 5,
+              },
+              {
+                spellId: '5225',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1252871',
+                count: 11,
+              },
+              {
+                spellId: '102558',
+                count: 4,
+              },
+              {
+                spellId: '1269658',
+                count: 4,
+              },
+              {
+                spellId: '1126',
+                count: 1,
+              },
+              {
+                spellId: '213771',
+                count: 57,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=19',
+            startedAt: '2026-10-07T10:33:24.413Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 415883,
+            itemLevelBracket: 328,
+            heroTree: 24,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '49376',
+                count: 1,
+              },
+              {
+                spellId: '192081',
+                count: 112,
+              },
+              {
+                spellId: '61336',
+                count: 3,
+              },
+              {
+                spellId: '33917',
+                count: 46,
+              },
+              {
+                spellId: '6795',
+                count: 8,
+              },
+              {
+                spellId: '20484',
+                count: 1,
+              },
+              {
+                spellId: '1822',
+                count: 1,
+              },
+              {
+                spellId: '8921',
+                count: 124,
+              },
+              {
+                spellId: '22568',
+                count: 1,
+              },
+              {
+                spellId: '204066',
+                count: 10,
+              },
+              {
+                spellId: '1269658',
+                count: 4,
+              },
+              {
+                spellId: '77761',
+                count: 3,
+              },
+              {
+                spellId: '5487',
+                count: 1,
+              },
+              {
+                spellId: '22812',
+                count: 6,
+              },
+              {
+                spellId: '22842',
+                count: 5,
+              },
+              {
+                spellId: '61391',
+                count: 5,
+              },
+              {
+                spellId: '102793',
+                count: 3,
+              },
+              {
+                spellId: '77758',
+                count: 113,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '6807',
+                count: 5,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '102558',
+                count: 4,
+              },
+              {
+                spellId: '16979',
+                count: 5,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'druid-feral': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 운용 가이드',
     graphCenterSkillId: '22568',
     summary: '야성은 생성기를 계속 연타하는 직업이 아닙니다. 출혈이 끊기기 전에 필요한 점수를 남기고, 무료 흉포한 이빨과 갑자기 채워진 연계 점수에 반응하는 것이 먼저입니다. 12.1에서는 정점의 호랑이의 분노 연계와 시즌 2의 광폭화 종료 후 강화까지 함께 봅니다. 발톱의 드루이드는 찢어발기기의 전방 적중과 생성기 발동, 야생추적자는 덩굴 대상의 이빨과 출혈 유지가 추가 판단입니다.',
-    sourceStatus: '2026-10-03 기준 공식 패치와 9월 1·2·22일, 10월 1일 긴급 수정, 한국어 툴팁 브라우저 대조, Dreamgrove 공개 가이드와 작성자별 설명 대조. 현재 WCL 레이드·쐐기 채택률과 개인 장비 시뮬레이션은 미확보.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '12.1 PvE와 시즌 2를 기준으로 설명합니다. 9월 8일 Dreamgrove 및 9월 9일 Method 설명을 현재 툴팁·SimC 구현과 대조했습니다. 그 뒤 9월 22일 긴급 수정으로 야생추적자의 폭발하는 성장물 공격력이 15% 늘었고 침착한 관리인의 출혈 피해 증가가 10%(기존 8%)가 됐습니다(모두 PvP 제외). 10월 1일에는 날뛰는 야성이 단일 대상에게 잘못 발동될 수 있던 문제가 수정됐습니다. 세 항목의 한국어 이름과 수치는 2026-10-03 ko.wowhead 주문 페이지와 한국어 긴급 수정 공지로 다시 확인했습니다. 10월 6일 예정 조정의 야성 항목은 PvP뿐이라 넣지 않았습니다. Wowhead와 Icy Veins의 일부 시작 순서나 특성 설명은 작성 시점이 달라 그대로 합치지 않았습니다. 6월의 영웅 특성 사용률은 현재 추천의 근거로 쓰지 않으며, 최신 로그 집계를 얻지 못한 부분은 채택률이나 예상 DPS를 제시하지 않습니다.',
     playstyle: [
       {
@@ -7282,6 +10214,34 @@ export const guideManuscripts = {
         updated: '2026-09-13 접근 제한 / 2026-10-03 재조회 접근 거부',
         note: '2026-09-13과 2026-10-03 모두 쐐기 집계·단수·채택률을 확보하지 못했습니다. 빌드 선택은 공개 작성자 설명과 실제 던전 구성에 따른 조건으로 제시합니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/feral/druid/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 3,817건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/feral/druid/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 37,804건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:25:01.807Z · 장비 구간 328 · 437.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/AQ469cVGvhx7pkgy#fight=20&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:13:54.020Z · 장비 구간 328 · 437.9초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 및 9월 조정은 피해량뿐 아니라 빌드 비교의 기준 시점도 바꿉니다. 지금 읽는 특성 설명과 비교 로그의 패치가 같은지 먼저 확인해야 합니다.',
@@ -7292,6 +10252,7 @@ export const guideManuscripts = {
       '최신 레이드·쐐기 로그 집계는 이번에 확보하지 못했습니다. 영웅별 실제 사용률과 특정 장비 조합의 예상 DPS를 계산한 분석은 아닙니다.',
       '9월 22일 긴급 수정은 폭발하는 성장물 공격력 15% 증가와 침착한 관리인 출혈 피해 10%(기존 8%)를 적용했습니다. 둘 다 야생추적자 노드이며 발톱의 드루이드에는 해당하지 않습니다.',
       '10월 1일 긴급 수정은 날뛰는 야성이 단일 대상에게 잘못 발동될 수 있던 문제를 고쳤습니다. 현재 툴팁 문구는 흉포한 이빨 사용 시 주위의 모든 적에게 피해를 준다는 내용 그대로입니다.',
+      '10월 8일 드루이드 야성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '도려내기 API의 점수별 지속시간은 조건식이 잘못 펼쳐져 짧게 표시되는 경우가 있습니다. 그 숫자를 실제 5점 출혈 시간으로 쓰지 말고 특성과 전투 중 표시 시간을 함께 확인하세요.',
@@ -7300,6 +10261,8 @@ export const guideManuscripts = {
       '화신과 영혼 소집은 선택 경로입니다. 두 버튼을 모두 기본으로 넣거나 물어뜯기를 발톱의 드루이드 필수 발동으로 취급하지 않습니다.',
       '아래 로그 점검 기준은 비교 방법입니다. 실제 전투 링크와 이벤트를 새로 분석하지 않은 상태에서 특정 사용자의 손실량이나 점수 원인을 수치로 단정하지 않습니다.',
       '9월 22일 이전 야생추적자 로그와 10월 1일 이전 단일 대상 로그는 현재 수치와 바로 비교하지 않습니다. 앞쪽은 덩굴 폭발·출혈 보정이 낮았고, 뒤쪽은 날뛰는 야성 오발동 피해가 섞였을 수 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -8173,14 +11136,395 @@ export const guideManuscripts = {
         note: '다른 조건이 없고 점수가 필요하면 사용합니다. 한 번 사용한 뒤 표범의 기만과 환급 점수를 보고 다음 입력을 바꿉니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 103,
+          heroTreeId: 21,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '발톱의 드루이드',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 103,
+          heroTreeId: 22,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f5ef3996ae35bb59d294fdf845a715e66c5245bb4889f954e027520424094cae',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '야생추적자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 103,
+          heroTreeId: 21,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '발톱의 드루이드',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 3817,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '16 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/feral/druid/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/xCDQPJd8v2LNVFAb#fight=21',
+          recommendedCode: 'CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZWYmZmxY2WmBbzMzYmZAAAAYJY2MMmZUzYWmZmZGjZMDAAAAAAwAAAAAAMbzs0sMzyGYmHAYxMYAAMzAgB',
+          validation: {
+            specId: 103,
+            heroTreeId: 22,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 37804,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/feral/druid/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/dVXbQW1vfz4MCNHn#fight=3',
+          recommendedCode: 'CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBAsAzMDwCDGAAAzshB',
+          validation: {
+            specId: 103,
+            heroTreeId: 21,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0017744992806083997,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=4',
+            startedAt: '2026-10-08T02:25:01.807Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 437093,
+            itemLevelBracket: 328,
+            heroTree: 21,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1079',
+                count: 20,
+              },
+              {
+                spellId: '391528',
+                count: 4,
+              },
+              {
+                spellId: '22842',
+                count: 3,
+              },
+              {
+                spellId: '5217',
+                count: 13,
+              },
+              {
+                spellId: '441591',
+                count: 35,
+              },
+              {
+                spellId: '22812',
+                count: 5,
+              },
+              {
+                spellId: '29166',
+                count: 2,
+              },
+              {
+                spellId: '49376',
+                count: 5,
+              },
+              {
+                spellId: '106785',
+                count: 27,
+              },
+              {
+                spellId: '274837',
+                count: 13,
+              },
+              {
+                spellId: '1126',
+                count: 1,
+              },
+              {
+                spellId: '61336',
+                count: 1,
+              },
+              {
+                spellId: '106951',
+                count: 4,
+              },
+              {
+                spellId: '22568',
+                count: 43,
+              },
+              {
+                spellId: '285381',
+                count: 15,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '5221',
+                count: 107,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '768',
+                count: 1,
+              },
+              {
+                spellId: '1822',
+                count: 46,
+              },
+              {
+                spellId: '8936',
+                count: 17,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '77764',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/AQ469cVGvhx7pkgy#fight=20&source=7',
+            startedAt: '2026-10-08T02:13:54.020Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 437870,
+            itemLevelBracket: 328,
+            heroTree: 22,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '61391',
+                count: 3,
+              },
+              {
+                spellId: '22812',
+                count: 5,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '61336',
+                count: 2,
+              },
+              {
+                spellId: '1822',
+                count: 38,
+              },
+              {
+                spellId: '22568',
+                count: 98,
+              },
+              {
+                spellId: '1079',
+                count: 19,
+              },
+              {
+                spellId: '5217',
+                count: 14,
+              },
+              {
+                spellId: '106785',
+                count: 60,
+              },
+              {
+                spellId: '1850',
+                count: 2,
+              },
+              {
+                spellId: '5221',
+                count: 100,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '102543',
+                count: 5,
+              },
+              {
+                spellId: '285381',
+                count: 14,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '26297',
+                count: 3,
+              },
+              {
+                spellId: '1234768',
+                count: 2,
+              },
+              {
+                spellId: '274837',
+                count: 13,
+              },
+              {
+                spellId: '49376',
+                count: 5,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 34864,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 399078,
+                uses: 46,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'druid-balance': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '48518',
-    sourceStatus: '2026-10-03 재검토: Blizzard 12.1 노트와 9월 1·2·4일 긴급 수정(10월 1일 누적판), Wowhead 한국어 주문 페이지 브라우저 대조, Dreamgrove 한국어 컴펜디엄, Icy Veins 12.1 운용을 대조했습니다. Archon 영웅 특성 수치는 2026-09-05 확인 시점의 과거 집계이며 10월 3일 재조회는 접근이 거부됐습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 조화 드루이드는 엘룬의 대행자를 기본으로 달빛섬광과 태양섬광을 미리 정리하고, 천공의 힘을 모은 뒤 일월식 구간에 별빛쇄도 또는 별똥별을 몰아넣는 원거리 딜러입니다. 달의 부름을 쓰면 전투 중 천벌 대신 별빛섬광으로 자원을 만들며, 숲의 수호자는 짧은 광역이나 특정 우선 대상 구간이 필요한 전투에서 선택합니다.',
     sourceNote: '12.1 라이브 PvE 기준입니다. 9월 1일 조화 모든 능력 피해 4% 증가(PvP 제외), 9월 4일 쌍둥이 달 범위의 대상 전투 사정거리 반영과 항성 증폭 쿨다운 관리자 추적을 반영했습니다. 9월 2일 요정 무리 표시 수정은 PvP 항목이고, 10월 6일 예정 조정의 조화 항목(별과 달)도 PvP뿐이라 PvE 설명에 넣지 않았습니다. 한국어 이름·아이콘·툴팁은 2026-10-03 ko.wowhead 주문 페이지에서 일월식 (태양) 48517, 일월식 (달) 48518, 별빛섬광 194153, 별빛쇄도 78674, 별똥별 191034, 엘룬의 분노 202770, 자연의 군대 205636, 쌍둥이 달 279620, 항성 증폭 450212, 꿈의 쇄도 433831, 꿈의 통제 434249, 아킬존의 명료함 1301768을 다시 확인했습니다. 엘룬의 대행자 95.9%(영웅 레이드 78,436개 로그)와 99.8%(고단 쐐기 9,445개 로그)는 2026-09-05 확인 시점 최근 14일 과거 집계입니다. 10월 3일 Archon 재조회는 접근 거부로 실패해 현재 사용률은 확인하지 못했습니다. 기본값은 Wowhead·Icy Veins 12.1 빌드와 이 과거 집계가 같은 방향이라는 근거로만 둡니다.',
     playstyle: [
@@ -8709,6 +12053,34 @@ export const guideManuscripts = {
         updated: '2026-09-05 확인 / 최근 14일 과거 집계',
         note: '2026-09-05 확인 시점 상위 5% 9,445 parses에서 엘룬의 대행자 99.8%였던 과거 집계입니다. 2026-10-03 재조회는 접근 거부(403)로 현재 쐐기 사용률을 확인하지 못했습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/balance/druid/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 22,239건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/balance/druid/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 82,056건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=59',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T04:07:59.861Z · 장비 구간 329 · 319.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FhQMm8d9wjNZRBpr#fight=5&source=44',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:34:32.142Z · 장비 구간 329 · 316.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1에는 전체 공격력과 달빛섬광·태양섬광·천벌·별빛섬광·별빛쇄도·별똥별이 상향됐지만 우주의 손길과 일부 무료 소비기 발생은 줄었습니다.',
@@ -8723,6 +12095,7 @@ export const guideManuscripts = {
       '9월 4일 긴급 수정으로 쌍둥이 달의 범위가 대상의 전투 사정거리만큼 늘었고, 항성 증폭을 쿨다운 관리자에서 추적할 수 있게 됐습니다.',
       '숲의 수호자의 꿈의 쇄도는 자연의 군대 시전 시 꿈의 폭발 3중첩을 주고, 숲의 조화는 나무정령 하나당 주문 공격력을 4% 올립니다(2026-10-03 한국어 툴팁).',
       '10월 6일 정기 점검 예정 조정에서 조화 항목은 PvP의 별과 달뿐입니다. 적용 전이고 PvE와 무관해 수치를 넣지 않았습니다.',
+      '10월 8일 드루이드 조화의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       'Archon 사용률은 2026-09-05 확인 시점의 과거 집계입니다. 그때의 유행과 성공한 선택을 보여 줄 뿐 현재 사용률이나 특정 보스의 짧은 쫄, 임무, 킬 타임에 대한 정답이 아닙니다.',
@@ -8733,6 +12106,8 @@ export const guideManuscripts = {
       '공개 Dreamgrove 백과사전만 직업 커뮤니티 근거로 사용했으며 비공개 디스코드 대화는 인용하지 않았습니다.',
       '숲의 수호자 오프닝의 단일 태양·광역 달 구분은 일월식 툴팁의 강화 대상(태양: 천벌, 달: 별빛섬광)을 따른 것입니다. 정확한 대상 수 기준은 선택 특성에 따라 달라지므로 같은 조건의 로그로 다시 비교합니다.',
       '2026-10-03 기준 Wowhead 화면에는 PTR 12.1.5가 함께 열려 있습니다. 이 공략의 수치와 문구는 라이브 12.1.0만 사용했습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -9122,15 +12497,387 @@ export const guideManuscripts = {
         note: '사망 직전이 아니라 예고 피해 전에 사용해 시전과 쿨기 구간을 지킵니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 102,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd99687a0a91ed8c717a085c1cae25147bf95a2d97716b57113d20b7f1efbf8a1',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWYmxGLzsMGzM2wAgx22MDGz2IwEAAAgFmZmZwmxMGDAAzMYZA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWYmxGLzsMGzM2wAgx22MDGz2IwEAAAgFmZmZwmxMGDAAzMYZA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 102,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'dbc3fee88169317d63efe6a7124ed9768e3e64dc57ef1f6e375a314c3e1c8c64',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 102,
+          heroTreeId: 24,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd99687a0a91ed8c717a085c1cae25147bf95a2d97716b57113d20b7f1efbf8a1',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '엘룬의 대행자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 22239,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/balance/druid/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/7ZtXxbgN4QP2vMRV#fight=17',
+          recommendedCode: 'CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmFzMzMYYGjZWmZxMzYjlZWGjZGLYYAGbbzMYMbDgJAAAALmZmZGsZgxMAAmZgBA',
+          validation: {
+            specId: 102,
+            heroTreeId: 24,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 82056,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/balance/druid/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/DpYav4KP9x7LHdmc#fight=22',
+          recommendedCode: 'CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMLMYMLzsMzCzM2YZmlxMjxGGGgx22MDGz2AYCAAAwCzMzMYzwYMAAMzglBA',
+          validation: {
+            specId: 102,
+            heroTreeId: 24,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.00867004026382992,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=59',
+            startedAt: '2026-10-07T04:07:59.861Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319145,
+            itemLevelBracket: 329,
+            heroTree: 23,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '24858',
+                count: 1,
+              },
+              {
+                spellId: '1293316',
+                count: 2,
+              },
+              {
+                spellId: '61391',
+                count: 1,
+              },
+              {
+                spellId: '102560',
+                count: 4,
+              },
+              {
+                spellId: '78674',
+                count: 34,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '194153',
+                count: 25,
+              },
+              {
+                spellId: '205636',
+                count: 7,
+              },
+              {
+                spellId: '22812',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '191034',
+                count: 50,
+              },
+              {
+                spellId: '1850',
+                count: 1,
+              },
+              {
+                spellId: '1233272',
+                count: 1,
+              },
+              {
+                spellId: '1233346',
+                count: 10,
+              },
+              {
+                spellId: '102383',
+                count: 5,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '93402',
+                count: 32,
+              },
+              {
+                spellId: '339',
+                count: 1,
+              },
+              {
+                spellId: '8921',
+                count: 16,
+              },
+              {
+                spellId: '190984',
+                count: 89,
+              },
+              {
+                spellId: '88747',
+                count: 12,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 283631,
+                uses: 47,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/FhQMm8d9wjNZRBpr#fight=5&source=44',
+            startedAt: '2026-10-07T00:34:32.142Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 316378,
+            itemLevelBracket: 329,
+            heroTree: 24,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '29166',
+                count: 2,
+              },
+              {
+                spellId: '191034',
+                count: 55,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '102560',
+                count: 4,
+              },
+              {
+                spellId: '22812',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '8921',
+                count: 49,
+              },
+              {
+                spellId: '194153',
+                count: 65,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '93402',
+                count: 30,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '1233272',
+                count: 10,
+              },
+              {
+                spellId: '202770',
+                count: 14,
+              },
+              {
+                spellId: '26297',
+                count: 2,
+              },
+              {
+                spellId: '78674',
+                count: 59,
+              },
+              {
+                spellId: '102793',
+                count: 2,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 37747,
+                uses: 4,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45029,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 302827,
+                uses: 39,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
 
   'evoker-devastation': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '375087',
-    sourceStatus: 'Blizzard 12.1 콘텐츠 업데이트 노트, 2026-10-01 영문·2026-10-02 한국어 긴급 수정 누적 공지(9월 21일 해체 수정, 9월 22일 황폐 PvE 조정), 2026-10-03 Wowhead 한국어 주문 페이지, Icy Veins 2026-09-21 개요·2026-09-23 특성 조정 기록, Murlok 2026-10-03 쐐기 상위 50명 장비·특성 집계를 대조했습니다. Archon 수치는 2026-08-30 확인 시점의 과거 집계이며 9월 22일 조정 전 자료입니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 황폐 기원사는 비늘사령관을 기본으로 깊은 숨결과 용의 분노를 자주 쓰고, 강화 주문으로 용의 분노를 늘리며 정수 폭발을 파열·기염으로 비우는 25야드 원거리 딜러입니다. 9월 22일 긴급 수정으로 기염, 해방된 불길, 불의 숨결, 하늘빛 일격·하늘빛 휩쓸기, 산산이 부서지는 별 피해가 올랐습니다. 분노 상승 3등급을 고른 경우에만 용의 분노 뒤 해방된 불길 4회가 추가되고, 기본 추천 빌드인 1등급에는 이 단계가 없습니다.',
     sourceNote: '한국어 이름·아이콘·효과는 2026-10-03 ko.wowhead.com 주문 페이지로 용의 분노 375087, 깊은 숨결 357210, 영원의 쇄도 359073, 불의 숨결 357208, 파열 356995, 기염 357211, 하늘빛 일격 362969, 하늘빛 휩쓸기 1265872, 해방된 불길 1292321, 분노 상승 1271687·1271796·1271788, 날개지도자 441206, 대규모 파열 436335, 산산이 부서지는 별 1265802, 시즌 2 세트 1296639·1296640, 화염 흡수 444088, 폭격 434300, 폭정 376888, 적개심 375797, 전세역전 370553, 해체 1264378을 다시 열어 확인했습니다. Unravel의 공식 한국어 이름은 해체입니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게(9월 22일 조정은 9월 23일) 표기됩니다. 비늘사령관 기본 추천은 Icy Veins 2026-09-21 본문과 9월 23일 조정 기록, Blizzard 9월 22일 개발자 노트의 관찰, Murlok 2026-10-03 쐐기 상위 50명 47명 비늘사령관을 함께 본 판단입니다. Archon 2026-08-30 수치는 조정 전 과거 집계로만 남겼고, 9월 22일 이후 레이드 로그는 이번에 새로 확보하지 못했습니다.',
     playstyle: [
@@ -9694,6 +13441,34 @@ export const guideManuscripts = {
         updated: '2026-08-30 확인',
         note: 'Wyrmrest Temple 공개 안내 링크 확인용이며 비공개 채널은 공개로 확인되는 내용만 반영했습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/devastation/evoker/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 7,197건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/devastation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 30,921건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NRMHc9jWQbT7x1r2#fight=7&source=6',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:09:45.388Z · 장비 구간 327 · 373.0초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/P1fqCmXYATbdtc8v#fight=11&source=166',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:56:43.990Z · 장비 구간 327 · 368.3초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 9월 22일 긴급 수정은 황폐 PvE에서 기염 10%, 해방된 불길 25%, 불의 숨결 5%, 하늘빛 일격·하늘빛 휩쓸기 50%, 산산이 부서지는 별 10% 피해를 올렸습니다. 모두 플레이어 간 전투에는 적용되지 않습니다.',
@@ -9706,6 +13481,7 @@ export const guideManuscripts = {
       'Icy Veins 딜사이클은 비늘사령관이 5대상 이상에서 기염, 4대상 이하에서 파열을 쓰고, 불꽃형성자는 3대상 이상에서 기염을 쓴다고 구분합니다.',
       '시즌 2 2세트는 산산이 부서지는 별 피해를 50% 올리고 항상 최대 강화 단계 효과를 주며, 4세트는 사상자 발동마다 강화 주문 쿨다운 감소를 0.1초 더하고 영원의 쇄도 피해를 10% 올립니다. 산산이 부서지는 별은 영원의 쇄도가 자동으로 방출하는 효과입니다.',
       'Murlok 2026-10-03 쐐기 상위 50명 집계에서 비늘사령관은 47명, 불꽃형성자는 3명입니다. Archon 2026-08-30 과거 집계(영웅 레이드 97.5%, +7~19 쐐기 96.8%)와 방향은 같지만 9월 22일 조정 뒤 피해 로그 비교는 아닙니다.',
+      '10월 8일 기원사 황폐의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '9월 22일 조정 뒤의 Archon·Warcraft Logs 집계는 이번 검토에서 열지 못했습니다. 영웅 특성 사용률은 2026-08-30 과거 집계와 Murlok 상위 50명 선택만 근거로 쓰고 현재 피해 우열을 수치로 단정하지 않습니다.',
@@ -9714,6 +13490,8 @@ export const guideManuscripts = {
       '깊은 숨결은 비행 중 바닥 피해를 피하게 해 주지 않습니다. 경로가 위험하거나 대상이 흩어지면 쿨다운이 돌아왔어도 안전한 적중 시점까지 짧게 기다립니다.',
       'Wowhead 가이드 본문은 이번에 다시 열지 않았습니다. 오프닝의 전세역전 위치는 2026-08-30에 확인한 Wowhead 순서이고, Icy Veins 단일 오프닝은 전세역전을 넣지 않으므로 전세역전은 영원의 쇄도 지연을 막는 선택으로 읽습니다.',
       '10월 6일 정기 점검 예정 기원사 조정은 플레이어 간 전투 항목뿐이라 이 PvE 가이드에 넣지 않았습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -10092,15 +13870,407 @@ export const guideManuscripts = {
         note: '쐐기에서 파열 채널보다 위험 주문 차단을 먼저 처리하고 파티 차단 순서에 맞춰 사용합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 1467,
+          heroTreeId: 36,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'af3b35814b7a8dbca9c380990986476fb5e01298bf2c48881b03060a6ebbc257',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '비늘사령관',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZZmZgBGD2glxox2AyMIYDzgZGM8AA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZZmZgBGD2glxox2AyMIYDzgZGM8AA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 1467,
+          heroTreeId: 36,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '34b76e0c6b13ef0d727a39302cae3814e6f00c129f38476e90aae4e6014fc6f4',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '비늘사령관',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 1467,
+          heroTreeId: 36,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'af3b35814b7a8dbca9c380990986476fb5e01298bf2c48881b03060a6ebbc257',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '비늘사령관',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 7197,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/devastation/evoker/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/7nQWM93ytxXwGgJ4#fight=3',
+          recommendedCode: 'CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GAzAwGGYmBz4BA',
+          validation: {
+            specId: 1467,
+            heroTreeId: 36,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 30921,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/devastation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/WQ9zPnNBhJx2LAjT#fight=3',
+          recommendedCode: 'CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AYGA2wMYmBDPA',
+          validation: {
+            specId: 1467,
+            heroTreeId: 36,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.012623100703279379,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/NRMHc9jWQbT7x1r2#fight=7&source=6',
+            startedAt: '2026-10-07T01:09:45.388Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 372967,
+            itemLevelBracket: 327,
+            heroTree: 36,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '358733',
+                count: 4,
+              },
+              {
+                spellId: '382266',
+                count: 38,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '374227',
+                count: 1,
+              },
+              {
+                spellId: '370553',
+                count: 3,
+              },
+              {
+                spellId: '362969',
+                count: 6,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '357211',
+                count: 4,
+              },
+              {
+                spellId: '375087',
+                count: 3,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '433874',
+                count: 14,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '406732',
+                count: 2,
+              },
+              {
+                spellId: '363916',
+                count: 4,
+              },
+              {
+                spellId: '355913',
+                count: 1,
+              },
+              {
+                spellId: '358267',
+                count: 27,
+              },
+              {
+                spellId: '361469',
+                count: 46,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '356995',
+                count: 88,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 26100,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 360942,
+                uses: 48,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/P1fqCmXYATbdtc8v#fight=11&source=166',
+            startedAt: '2026-10-08T02:56:43.990Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 368259,
+            itemLevelBracket: 327,
+            heroTree: 36,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '433874',
+                count: 16,
+              },
+              {
+                spellId: '382266',
+                count: 32,
+              },
+              {
+                spellId: '355913',
+                count: 1,
+              },
+              {
+                spellId: '362969',
+                count: 3,
+              },
+              {
+                spellId: '357214',
+                count: 2,
+              },
+              {
+                spellId: '370665',
+                count: 3,
+              },
+              {
+                spellId: '370553',
+                count: 2,
+              },
+              {
+                spellId: '374227',
+                count: 2,
+              },
+              {
+                spellId: '357211',
+                count: 1,
+              },
+              {
+                spellId: '374968',
+                count: 2,
+              },
+              {
+                spellId: '375087',
+                count: 3,
+              },
+              {
+                spellId: '390386',
+                count: 1,
+              },
+              {
+                spellId: '363916',
+                count: 3,
+              },
+              {
+                spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '361469',
+                count: 32,
+              },
+              {
+                spellId: '356995',
+                count: 69,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '368970',
+                count: 1,
+              },
+              {
+                spellId: '358267',
+                count: 21,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 310840,
+                uses: 44,
+              },
+              {
+                spellId: '413984',
+                activeMs: 24340,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'evoker-augmentation': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 운용 가이드',
     graphCenterSkillId: '395152',
     summary: '증강은 버프를 걸고 쉬는 직업이 아닙니다. 칠흑의 힘이 살아 있는 동안 강화 주문과 분출을 이어가고, 예지 대상이 실제로 공격하는 시간에 영겁의 숨결과 시즌 2의 운명의 거울 강화를 겹칩니다. 9월 22일 긴급 수정으로 분출 15%, 불의 숨결 60%, 지각 변동 40%, 끓어오르는 비늘 100% 개인 피해가 올라 자신의 직접 피해 비중도 커졌습니다. 시간 감시자는 시시각각의 별도 지속시간과 시간의 폭발, 비늘사령관은 대규모 분출의 실제 적중 대상 수를 봐야 합니다. 두 영웅 특성의 필러와 칠흑의 힘 재사용 조건까지 같은 순서로 외우지 마세요.',
-    sourceStatus: '2026-10-03 기준 Blizzard 12.1 변경, 2026-10-01 영문·2026-10-02 한국어 긴급 수정 누적 공지(9월 21일 해체 수정, 9월 22일 증강 개인 피해 상향), 2026-10-03 ko.wowhead 주문 페이지, 공개 작성자 가이드, Murlok 2026-10-03 쐐기 상위 50명 선택 집계 대조. 최신 WCL/Archon 피해 집계와 개인 장비 시뮬레이션은 미확보.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '공식 패치·긴급 수정과 현재 한국어 주문 설명을 우선하고, Wowhead·Icy Veins·Method의 서로 다른 권장 순서는 빌드 조건을 나누어 설명합니다. 시간 감시자 시작은 Wowhead의 영겁의 숨결 후 칠흑의 힘 예시, 비늘사령관은 칠흑의 힘 선적용 예시를 사용합니다. 9월 22일 분출·불의 숨결·지각 변동·끓어오르는 비늘 상향은 개인 피해 조정이며 칠흑의 힘·예지·영겁의 숨결의 지원 수치는 바뀌지 않았습니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게 표기됩니다. Archon은 2026-10-03에도 사람 확인 화면 때문에 열지 못했고, 영웅 특성 방향은 Murlok 쐐기 상위 50명 선택 집계(시간 감시자 47명)로만 보조 확인했습니다. Wyrmrest Temple의 비공개 디스코드 대화나 이번에 수집하지 않은 상위 로그를 읽었다고 주장하지 않습니다.',
     playstyle: [
       {
@@ -10233,6 +14403,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 확인 / 8시간 주기 갱신',
         note: 'Battle.net API 기반 쐐기 평점 3269~3806 상위 50명에서 시간 감시자 47명·비늘사령관 3명, 복제 50명, 시간 건너뛰기 50명, 엮인 실타래 24명 선택을 확인했습니다. 피해 로그가 아니라 상위 캐릭터의 선택 집계입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/augmentation/evoker/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 6,969건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/augmentation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 11,638건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/avJR9tfdX6p1ML8j#fight=26&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T03:52:23.703Z · 장비 구간 329 · 319.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:06:22.068Z · 장비 구간 329 · 319.2초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '칠흑의 힘은 현재 공격 담당들에게 배분되는 버프입니다. 예지 두 대상만 강화한다거나 공격대 모든 딜러가 각각 기본 8%를 그대로 받는 것으로 계산하지 않습니다.',
@@ -10245,6 +14443,7 @@ export const guideManuscripts = {
       'Blizzard 9월 22일 긴급 수정은 증강 분출 15%, 불의 숨결 60%, 지각 변동 40%, 끓어오르는 비늘 100% 피해를 올렸습니다. 개발자 설명은 의도한 위력이나 시전에 쓰는 시간에 비해 피해 분석에서 비중이 낮은 능력을 조정했다는 내용이며, 지원 버프 수치 변경은 없습니다.',
       '9월 21일 긴급 수정으로 전세역전 불의 숨결에서 해체가 발동하지 않던 문제와 불의 숨결이 맞힌 모든 대상에 해체가 적중하지 않던 문제가 고쳐졌습니다. 해체는 보호막 흡수용 선택 특성이며 Murlok 쐐기 상위 50명 중 8명만 골랐습니다.',
       'Murlok 2026-10-03 쐐기 상위 50명 선택 집계는 시간 감시자 47명, 비늘사령관 3명입니다. 공개 작성자들이 고단 쐐기에서 시간 감시자를 우선 다루는 방향과 같지만 기여 피해 로그를 비교한 결과는 아닙니다.',
+      '10월 8일 기원사 증강의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '정수·강화 단계·쿨다운 수치는 기본과 선택 특성 적용 후를 나누어 읽어야 합니다. 지각 변동 기본 40초를 시즌 2 보유자의 실제 사용 간격으로 고정하지 마세요.',
@@ -10254,6 +14453,8 @@ export const guideManuscripts = {
       '공식 한국어 세트 툴팁의 내부 이름이 영어로 남은 항목은 임의 이름이나 다른 스킬 아이콘으로 바꾸지 않았습니다. 운용 설명에서는 시즌 2 두 부위·네 부위로 구분합니다.',
       '9월 22일 상향 뒤 증강 기여 피해를 비교한 WCL·Archon 로그는 이번에도 확보하지 못했습니다. 불의 숨결 60% 상향으로 강화 단계 선택의 체감이 달라질 수 있지만 단계 기준은 공식 효과 변경이 없어 유지했습니다.',
       '10월 6일 정기 점검 예정 항목 중 증강 관련 PvE 내용은 증강 재귀속 피해 중 죽음의 기사 역병 분출 효과에서 나온 몫이 죽음의 기사 피해로 기록되던 문제의 수정뿐이며 아직 적용 전입니다. 증강 자체 조정은 플레이어 간 전투 항목뿐입니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -11125,6 +15326,370 @@ export const guideManuscripts = {
         },
       ],
     },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 1473,
+          heroTreeId: 38,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a5a3554c6650573cb6f498485f277d6fe97dc7159fd5ef4e0f9bc96a23991e05',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '시간 감시자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhZGYM1YmZGAAAAMzMjxMz2YmBmZzYwCsMGGbDgZiYDjZwMDgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhZGYM1YmZGAAAAMzMjxMz2YmBmZzYwCsMGGbDgZiYDjZwMDgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 1473,
+          heroTreeId: 36,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '08e951c1cc9a4db76e594bbfd19729d15441474626fcbd1ebc3bb89efff03b9e',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '비늘사령관',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 1473,
+          heroTreeId: 38,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a5a3554c6650573cb6f498485f277d6fe97dc7159fd5ef4e0f9bc96a23991e05',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '시간 감시자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 6969,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/augmentation/evoker/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/LxWkRYcNPJndA4jF#fight=4',
+          recommendedCode: 'CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAAAAzMMmBjpGzMzAAAAgZMjxMzyYmBmhBGzYhFYgZYoBWwMjZGAYA',
+          validation: {
+            specId: 1473,
+            heroTreeId: 38,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 11638,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/augmentation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/KjByvHgatW1LM2dC#fight=12',
+          recommendedCode: 'CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAwMMmHAjpGzMzAAAAgZmZmxMzyYmBmhBGzYhFYgZYoBWwYMzAAD',
+          validation: {
+            specId: 1473,
+            heroTreeId: 38,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0003320427520705685,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/avJR9tfdX6p1ML8j#fight=26&source=2',
+            startedAt: '2026-10-07T03:52:23.703Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319130,
+            itemLevelBracket: 329,
+            heroTree: 38,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '403631',
+                count: 4,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '357208',
+                count: 27,
+              },
+              {
+                spellId: '396286',
+                count: 31,
+              },
+              {
+                spellId: '358733',
+                count: 4,
+              },
+              {
+                spellId: '395152',
+                count: 12,
+              },
+              {
+                spellId: '363916',
+                count: 5,
+              },
+              {
+                spellId: '357214',
+                count: 1,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '404977',
+                count: 3,
+              },
+              {
+                spellId: '362969',
+                count: 1,
+              },
+              {
+                spellId: '431443',
+                count: 23,
+              },
+              {
+                spellId: '395160',
+                count: 91,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '409311',
+                count: 36,
+              },
+              {
+                spellId: '370553',
+                count: 5,
+              },
+              {
+                spellId: '364342',
+                count: 1,
+              },
+              {
+                spellId: '374968',
+                count: 3,
+              },
+              {
+                spellId: '358267',
+                count: 22,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 14098,
+                uses: 1,
+              },
+              {
+                spellId: '390386',
+                activeMs: 45013,
+                uses: 7,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=7',
+            startedAt: '2026-10-07T01:06:22.068Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319236,
+            itemLevelBracket: 329,
+            heroTree: 38,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '357208',
+                count: 26,
+              },
+              {
+                spellId: '396286',
+                count: 31,
+              },
+              {
+                spellId: '363916',
+                count: 5,
+              },
+              {
+                spellId: '358267',
+                count: 8,
+              },
+              {
+                spellId: '404977',
+                count: 3,
+              },
+              {
+                spellId: '370553',
+                count: 5,
+              },
+              {
+                spellId: '409311',
+                count: 36,
+              },
+              {
+                spellId: '395152',
+                count: 12,
+              },
+              {
+                spellId: '395160',
+                count: 85,
+              },
+              {
+                spellId: '370665',
+                count: 1,
+              },
+              {
+                spellId: '431443',
+                count: 46,
+              },
+              {
+                spellId: '403631',
+                count: 4,
+              },
+              {
+                spellId: '358733',
+                count: 2,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 45023,
+                uses: 9,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12795,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'hunter-beastmastery': {
@@ -11133,7 +15698,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '19574',
     summary: '야수는 야수의 격노만 잘 누르면 끝나는 전문화가 아닙니다. 그 사이에도 살상 명령을 회수하고, 날카로운 사격의 충전과 코브라 송곳니 소비를 이어가야 합니다. 광역에서는 기존 야수에게 걸린 야수의 회전베기와 새로 소환된 정점 야수의 상태까지 확인하세요. 무리의 지도자는 첫 살상 명령의 쇄도! 위치, 어둠 순찰자는 부패의 사격 10초와 울부짖는 화살 기회를 따로 관리합니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '공식 변경과 현재 주문 효과를 우선하고 Wowhead, Icy Veins Azortharion, Method Qenjua, 9월 7일 SimC 현행 구현을 대조했습니다. Icy Veins의 무리의 지도자 3중첩 설명과 우선순위 표의 4중첩이 서로 달라 현행 APL의 최대 중첩 기준을 채택합니다. 공개된 Trueshot Lodge 운영진의 작성자 가이드를 참고했으며 비공개 디스코드 대화나 수집하지 않은 상위 로그를 읽었다고 주장하지 않습니다. 예전 6월 채택률과 DPS는 현재 추천 근거에서 제외했습니다.',
     playstyle: [
       {
@@ -11273,6 +15838,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 이 구간에 야수 PvE의 새로운 수치 조정은 확인되지 않았습니다. 10월 6일 광포한 야수: 매 상향은 PvP 전용이므로 PvE 추천에 합산하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/beast-mastery/hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 21,259건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/beast-mastery/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 283,053건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=17',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:06:22.068Z · 장비 구간 328 · 319.2초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=39',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:38:13.848Z · 장비 구간 328 · 319.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '야수의 격노는 기본 90초이며 내면의 야수를 선택하면 30초가 됩니다. 날카로운 사격이 이 쿨다운을 줄이는 과거 구조와 다릅니다.',
@@ -11282,14 +15875,16 @@ export const guideManuscripts = {
       '코브라 송곳니는 직접 시전뿐 아니라 자동 코브라 결과와도 연결됩니다. 버프가 사라졌다는 정보만으로 소비 실패를 판단하지 않습니다.',
       '유혈·광포한 야수·발구르기·쇄도!는 현재 오프닝에서 별도로 누르는 스킬이 아닙니다. 실제 입력 스킬과 자동 결과를 나누었습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 이 구간에 야수 PvE의 새로운 수치 조정은 확인되지 않았습니다. 10월 6일 광포한 야수: 매 상향은 PvP 전용이므로 PvE 추천에 합산하지 않습니다.',
+      '10월 8일 사냥꾼 야수의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
-      '최신 WCL/Archon 집계와 개인 시뮬레이션은 확보하지 않았습니다. 과거 6월 채택률을 현재 시즌의 추천 근거로 사용하지 않습니다.',
+      '10월 8일 Archon 레이드·쐐기 공개 집계를 확인했습니다. 개인 시뮬레이션과 조정 후 동일 조건 이벤트 비교는 남아 있으며, 과거 6월 채택률을 현재 시즌의 추천 근거로 사용하지 않습니다.',
       '마구잡이 난타의 추가 피해 경계는 현재 한영 툴팁의 2명 이상과 8월 25일 핫픽스 문장의 2명 초과가 다릅니다. 2대상 계수의 확정적인 실측 결론은 보류합니다.',
       '코브라 송곳니 소비는 현행 APL의 최대 4중첩 기준을 사용합니다. 무리 3중첩 설명은 일부 가이드 문장과 PTR 파일에 남아 있으므로 동일한 현재 규칙으로 합치지 않습니다.',
       '자연의 동맹 마지막 특성의 사격 증가량은 현재 툴팁 15%를 따릅니다. Method의 30% 문장과 차이가 있음을 남기며 다음 살상 명령의 30% 강화와 혼동하지 않습니다.',
       '자동 발동·야수 경로·기믹 면역은 전투별로 확인해야 합니다. 특정 버프 유지율 하나나 상위 로그의 시전 수만으로 최적 운용을 단정하지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -12040,6 +16635,337 @@ export const guideManuscripts = {
         },
       ],
     },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 253,
+          heroTreeId: 43,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b8ccd5504c86c50087d4733810a237c9091f07d645daa4ef684ff195112c238a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '무리의 지도자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsBzwQDbAAYGPwMzsMzwMzMjZGMzYmhZGzMzYbmZYMDLDNDAAAAAAAAmHYMzAmZjAmFw2AwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsBzwQDbAAYGPwMzsMzwMzMjZGMzYmhZGzMzYbmZYMDLDNDAAAAAAAAmHYMzAmZjAmFw2AwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 253,
+          heroTreeId: 43,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '2db19b7ae5df080aa65856c46acf8f15d7f892f20d324b26b690630e90270537',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '무리의 지도자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 253,
+          heroTreeId: 43,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b8ccd5504c86c50087d4733810a237c9091f07d645daa4ef684ff195112c238a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '무리의 지도자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 21259,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/beast-mastery/hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/nQK7BXZ1yTfAHb6Y#fight=5',
+          recommendedCode: 'C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZMDzMGzMMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsBMMLgtBgB',
+          validation: {
+            specId: 253,
+            heroTreeId: 43,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 283053,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/beast-mastery/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/kcDyNG714rLnpz3W#fight=2',
+          recommendedCode: 'C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGzMzsMzwMzMjZGMzYmhZGzMzgZGzYGMmmBAAAAAAAAzMmZAzsBgZBsNAA',
+          validation: {
+            specId: 253,
+            heroTreeId: 43,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0011232966723509442,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=17',
+            startedAt: '2026-10-07T01:06:22.068Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319236,
+            itemLevelBracket: 328,
+            heroTree: 43,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '217200',
+                count: 53,
+              },
+              {
+                spellId: '19574',
+                count: 11,
+              },
+              {
+                spellId: '264735',
+                count: 4,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '109248',
+                count: 1,
+              },
+              {
+                spellId: '193455',
+                count: 65,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '109304',
+                count: 3,
+              },
+              {
+                spellId: '34026',
+                count: 90,
+              },
+              {
+                spellId: '781',
+                count: 2,
+              },
+              {
+                spellId: '186257',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1264359',
+                count: 18,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 26555,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 299349,
+                uses: 32,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=39',
+            startedAt: '2026-10-07T00:38:13.848Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319595,
+            itemLevelBracket: 328,
+            heroTree: 43,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '193455',
+                count: 63,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '19574',
+                count: 11,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+              {
+                spellId: '1264359',
+                count: 13,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '264735',
+                count: 3,
+              },
+              {
+                spellId: '34026',
+                count: 84,
+              },
+              {
+                spellId: '217200',
+                count: 50,
+              },
+              {
+                spellId: '186257',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '109304',
+                count: 2,
+              },
+              {
+                spellId: '781',
+                count: 4,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 15009,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   "hunter-marksmanship": {
@@ -12048,7 +16974,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '19434',
     summary: '사격은 조준 사격을 많이 누르는 것만으로 끝나지 않습니다. 속사로 다음 조준 사격을 앞당기고, 정밀 사격을 소비하며, 표식과 총알 세례가 있는 조준 사격을 회수해야 합니다. 12.1에서는 폭발 사격과 시즌 2 세트의 쿨다운 회복, 두 번 쏘는 선택 특성, 영웅 특성별 발동 순서를 함께 익히세요.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Wowhead와 Icy Veins의 사격 가이드는 같은 작성자 Azortharion의 자료입니다. 독립된 두 집계으로 세지 않고 Qenjua의 Method, 현행 주문 효과와 라이브 SimC 구현을 함께 비교했습니다. 아래 추천은 공개 작성자 가이드와 작동 원리에 따른 기준이지, 확보하지 않은 상위 로그 채택률이나 측정 DPS가 아닙니다.',
     playstyle: [
       {
@@ -12209,6 +17135,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '9월 23일 교묘한 사격의 튕김 피해가 기본 공격력의 60%에서 75%로, 연발 공격 피해가 10% 증가했습니다. 교묘한 사격의 현재 한국어 툴팁도 75%입니다. 기본 일제 사격 3대상 조건과 영웅 특성별 광역 진입을 그대로 구별합니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/marksmanship/hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 18,076건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 26,487건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/kgwBNGPKynHQZ1f8#fight=4&source=17',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:06:14.780Z · 장비 구간 331 · 331.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/1QrWYzZqLnxjTb8g#fight=9&source=243',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:48:57.556Z · 장비 구간 331 · 327.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 공식 변경점은 연타 공격 삭제, 폭발 사격의 지속 피해화, 사격 죽음의 강타 준비 순서 변경을 다룹니다. 옛 오프닝에서 삭제된 버튼만 빼는 것으로 회전이 같아지지 않습니다.',
@@ -12219,13 +17173,15 @@ export const guideManuscripts = {
       '공개 라이브 APL은 두 영웅 특성의 단일·광역을 나누고, 쐐기에서는 폭발 사격으로 회복할 속사 쿨다운을 먼저 만들되 유동성 제동장치의 추가 사용 기회를 잃지 않게 합니다. 이는 구현 기준이지 모든 실제 전투에 대한 측정 결과는 아닙니다.',
       '최신 레이드·쐐기 집계을 확보하지 않았으므로 영웅 특성 사용률, DPS 격차, 특정 장비가 몇 퍼센트 우세하다는 수치를 제시하지 않습니다.',
       '9월 23일 교묘한 사격의 튕김 피해가 기본 공격력의 60%에서 75%로, 연발 공격 피해가 10% 증가했습니다. 교묘한 사격의 현재 한국어 툴팁도 75%입니다. 기본 일제 사격 3대상 조건과 영웅 특성별 광역 진입을 그대로 구별합니다.',
+      '10월 8일 사냥꾼 사격의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '기본 오프닝은 시즌 2 세트·유동성 제동장치·연발 공격을 사용하는 예시입니다. 전술 재장전이나 다른 선택 특성이라면 조건이 달라집니다.',
       '히드라의 상과 교묘한 사격은 다른 광역 방식입니다. 두 대상에서 일제 사격을 눌렀다고 교묘한 사격이 켜지는 것은 아닙니다.',
       '8월 20일 이전 영상의 정밀 사격 중복 적용을 따라 하지 마세요. 종료 직전 일제 사격은 자동 사격이 쓸 버프를 가져오는 판단이지 같은 버프를 두 번 쓰는 방법이 아닙니다.',
       '이번 내용은 PvE 기준입니다. PvP 전용 증감과 내부 주문 툴팁의 오래된 조건은 현재 PvE 피해 수치로 합치지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -13095,6 +18051,352 @@ export const guideManuscripts = {
         },
       ],
     },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD',
+        sourceUrl: 'https://www.archon.gg/wow/builds/marksmanship/hunter/raid/talents/mythic/all-bosses',
+        sourceLabel: '현재 로그 견본',
+        checkedAt: '2026-10-08',
+        note: 'Wowhead 원문 견본은 영웅 포인트가 14/13으로 표시되어 제공을 보류했습니다. 현재 로그의 파수꾼 견본을 한국어 계산기에서 확인해 제공합니다. 레이드 견본은 전체 우두머리 집계이며 단일 전투에만 제한된 결과는 아닙니다.',
+        validation: {
+          specId: 254,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '8557a888cc186df6ba143eca0339c1faa122cdc7316bab9d03dfc13f7cdefc1e',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGAzgNAAAAAAAAwMmZmx2MmZGzwyYaGDmltlZmZmZmZmZhZWGmBAAwDMGDAzYDMAbMz2MG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGAzgNAAAAAAAAwMmZmx2MmZGzwyYaGDmltlZmZmZmZmZhZWGmBAAwDMGDAzYDMAbMz2MG',
+        sourceUrl: 'https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        sourceLabel: '현재 로그 견본',
+        checkedAt: '2026-10-08',
+        note: 'Wowhead 원문 견본은 영웅 포인트가 14/13으로 표시되어 제공을 보류했습니다. 현재 로그의 파수꾼 견본을 한국어 계산기에서 확인해 제공합니다. 레이드 견본은 전체 우두머리 집계이며 단일 전투에만 제한된 결과는 아닙니다.',
+        validation: {
+          specId: 254,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '94b8ee2ad3df891622e0d85c4a7a93b7f36bff6ca23b107a6c8aff3d92f9d5f5',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD',
+        sourceUrl: 'https://www.archon.gg/wow/builds/marksmanship/hunter/raid/talents/mythic/all-bosses',
+        sourceLabel: '현재 로그 견본',
+        checkedAt: '2026-10-08',
+        note: 'Wowhead 원문 견본은 영웅 포인트가 14/13으로 표시되어 제공을 보류했습니다. 현재 로그의 파수꾼 견본을 한국어 계산기에서 확인해 제공합니다. 레이드 견본은 전체 우두머리 집계이며 단일 전투에만 제한된 결과는 아닙니다.',
+        validation: {
+          specId: 254,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '8557a888cc186df6ba143eca0339c1faa122cdc7316bab9d03dfc13f7cdefc1e',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 18076,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/marksmanship/hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/y7z4vVfqpmhJnKRY#fight=7',
+          recommendedCode: 'C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD',
+          validation: {
+            specId: 254,
+            heroTreeId: 42,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 26487,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/7KFYXvtynGQjgdWc#fight=9',
+          recommendedCode: 'C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGAzgNAAAAAAAAwMmZmx2MmZGzwyYaGDmltlZmZmZmZmZhZWGmBAAwDMGDAzYDMAbMz2MG',
+          validation: {
+            specId: 254,
+            heroTreeId: 42,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.010367042826694683,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/kgwBNGPKynHQZ1f8#fight=4&source=17',
+            startedAt: '2026-10-07T01:06:14.780Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 331242,
+            itemLevelBracket: 331,
+            heroTree: 42,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '288613',
+                count: 3,
+              },
+              {
+                spellId: '260243',
+                count: 6,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '19434',
+                count: 58,
+              },
+              {
+                spellId: '781',
+                count: 2,
+              },
+              {
+                spellId: '53351',
+                count: 6,
+              },
+              {
+                spellId: '185358',
+                count: 32,
+              },
+              {
+                spellId: '56641',
+                count: 31,
+              },
+              {
+                spellId: '257044',
+                count: 23,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '212431',
+                count: 20,
+              },
+              {
+                spellId: '1264949',
+                count: 3,
+              },
+              {
+                spellId: '264735',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/1QrWYzZqLnxjTb8g#fight=9&source=243',
+            startedAt: '2026-10-08T01:48:57.556Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 327808,
+            itemLevelBracket: 331,
+            heroTree: 42,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '56641',
+                count: 9,
+              },
+              {
+                spellId: '53351',
+                count: 7,
+              },
+              {
+                spellId: '19434',
+                count: 57,
+              },
+              {
+                spellId: '1264949',
+                count: 3,
+              },
+              {
+                spellId: '257620',
+                count: 16,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '186265',
+                count: 1,
+              },
+              {
+                spellId: '109304',
+                count: 1,
+              },
+              {
+                spellId: '1297908',
+                count: 1,
+              },
+              {
+                spellId: '260243',
+                count: 7,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '288613',
+                count: 3,
+              },
+              {
+                spellId: '109248',
+                count: 1,
+              },
+              {
+                spellId: '781',
+                count: 4,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '257044',
+                count: 28,
+              },
+              {
+                spellId: '212431',
+                count: 22,
+              },
+              {
+                spellId: '185358',
+                count: 27,
+              },
+              {
+                spellId: '264735',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   "hunter-survival": {
@@ -13103,7 +18405,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '259495',
     summary: '생존은 살상 명령으로 집중과 창끝을 준비하고, 폭탄·붐스틱·강화된 랩터 공격으로 회수하는 전문화입니다. 파수꾼은 표식 대상과 폭탄 충전을, 무리의 지도자는 제압 다음 명령과 소환을 더 봅니다. 12.1에서는 시즌 2의 살쾡이의 격노 연계까지 함께 익히세요.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Wowhead DoolB, Icy Veins Azortharion, Method Symex와 라이브 SimC 구현을 비교했습니다. Method에는 12.1 표기와 달리 삭제된 불꽃송곳니 찌끼가 남아 있어 해당 단계를 제외했습니다. 기본 추천은 공개 가이드와 실제 작동 조건을 기준으로 하며 확보하지 않은 상위 로그의 채택률이나 DPS를 주장하지 않습니다.',
     playstyle: [
       {
@@ -13257,6 +18559,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '9월 23일 야생불 폭탄 피해 20% 상향과 주 대상 추가 피해 80%→50% 변경, 10월 2일 미선택 변형의 주기 피해 상향 누락 수정을 반영했습니다. 마지막 수정은 앞선 20%를 정상 적용한 것이며 두 번 상향한 것으로 계산하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/survival/hunter/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 2,187건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/survival/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 16,648건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=21',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:17:08.498Z · 장비 구간 327 · 384.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/7AywBm3Yqt6KJQzT#fight=6&source=12',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:40:44.110Z · 장비 구간 327 · 365.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '최종 12.1 노트에서 불꽃송곳니 찌끼 삭제를 확인했습니다. Wowhead에 주문 툴팁이 남아 있다는 사실은 현재 배울 수 있다는 뜻이 아닙니다.',
@@ -13266,13 +18596,15 @@ export const guideManuscripts = {
       '시즌 2 세트는 격노 중첩의 폭탄 강화와 붐스틱에 의한 시간 연장을 연결합니다. 내부 효과 이름만 보고 2세트와 4세트를 뒤집지 않았습니다.',
       '최신 신화·쐐기 로그 집계는 확보하지 못했습니다. 아래는 공개 가이드와 작동 원리를 대조한 운용 기준이며 개인 캐릭터의 측정 결과가 아닙니다.',
       '9월 23일 야생불 폭탄 피해 20% 상향과 주 대상 추가 피해 80%→50% 변경, 10월 2일 미선택 변형의 주기 피해 상향 누락 수정을 반영했습니다. 마지막 수정은 앞선 20%를 정상 적용한 것이며 두 번 상향한 것으로 계산하지 않습니다.',
+      '10월 8일 사냥꾼 생존의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '오프닝 예시는 두 영웅 특성 모두 마지막 정점 특성, 원시의 쇄도와 주요 붐스틱 연계를 전제로 합니다. 파수꾼은 쌍둥이 송곳니, 무리의 지도자 기본 예시는 해당 특성 없이 시작하므로 제압 전 창끝 준비가 다릅니다.',
       '이 가이드는 PvE 기준입니다. PvP 전용 표창·랩터 피해 조정은 적용하지 않습니다. 현재 개별 캐릭터의 보스별 최적 빌드와 장비 우열은 별도 비교가 필요합니다.',
       '파수꾼 단일에서 붐스틱을 먼저 쏘는 간단한 시작과 랩터로 격노를 더 준비하는 심화 시작은 별개입니다. 심화 순서를 사용하려면 세트와 자원, 실제 첫 휩쓸기 상태를 확인하세요.',
       '스킬 이름이 같아도 야수의 살상 명령·포악성이나 사격의 표식 소비 조건을 생존에 그대로 적용하지 않습니다. 이름보다 전문화와 실제 주문 효과를 함께 보세요.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -14013,11 +19345,337 @@ export const guideManuscripts = {
         note: '앞의 표식·완충 우선 조건 밖에서도 더 높은 유효한 공격이 없으면 사용합니다. 표식이 없다는 이유로 공격을 중단하는 규칙이 아닙니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 255,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '36a527841753afbfe52cfba5ad61a5329ea0e7739a51c33f81105cfb0222ac10',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz28AAAAAAAmxMzMMjxMmBjpZAAAAGAgltZGLzYmZGjZGAmxGWMGmZxAA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz28AAAAAAAmxMzMMjxMmBjpZAAAAGAgltZGLzYmZGjZGAmxGWMGmZxAA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 255,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'c0301d3218d9d937720e7f696df959fd2071e598138efe35005612e4bd207ff3',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 255,
+          heroTreeId: 42,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '36a527841753afbfe52cfba5ad61a5329ea0e7739a51c33f81105cfb0222ac10',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '파수꾼',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 2187,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/survival/hunter/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/6FmnMLZaHW7dtbcv#fight=4',
+          recommendedCode: 'C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYGwmxMzYYZAAAAAAYGzYGMGzYGMmmBAAAYAwMWWmZmFmZmZmZGAYGLMLGjZmNDA',
+          validation: {
+            specId: 255,
+            heroTreeId: 42,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 16648,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/survival/hunter/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/AqFy49gR2VxLvDwc#fight=10',
+          recommendedCode: 'C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYGw2MzMzYmZbGAAAAAAzYmZGbzYMjZwYaGAAAgBAYZbmxyMmZMGjBgZshFjhZ2MAA',
+          validation: {
+            specId: 255,
+            heroTreeId: 42,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.047614957561939265,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=21',
+            startedAt: '2026-10-08T00:17:08.498Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 384207,
+            itemLevelBracket: 327,
+            heroTree: 43,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '186270',
+                count: 52,
+              },
+              {
+                spellId: '190925',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '781',
+                count: 6,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+              {
+                spellId: '259489',
+                count: 77,
+              },
+              {
+                spellId: '1250646',
+                count: 6,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '109304',
+                count: 2,
+              },
+              {
+                spellId: '1261193',
+                count: 10,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '259495',
+                count: 36,
+              },
+              {
+                spellId: '264735',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/7AywBm3Yqt6KJQzT#fight=6&source=12',
+            startedAt: '2026-10-07T01:40:44.110Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 365913,
+            itemLevelBracket: 327,
+            heroTree: 42,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '259489',
+                count: 75,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '781',
+                count: 1,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+              {
+                spellId: '186270',
+                count: 52,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1250646',
+                count: 6,
+              },
+              {
+                spellId: '264735',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '186289',
+                count: 1,
+              },
+              {
+                spellId: '190925',
+                count: 4,
+              },
+              {
+                spellId: '1261193',
+                count: 8,
+              },
+              {
+                spellId: '1264949',
+                count: 6,
+              },
+              {
+                spellId: '259495',
+                count: 46,
+              },
+              {
+                spellId: '187707',
+                count: 1,
+              },
+              {
+                spellId: '109304',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'mage-arcane': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '384452',
     playstyle: [
@@ -14038,7 +19696,7 @@ export const guideManuscripts = {
         text: '비전의 여파 사용 횟수, 오색 화살 발동 손실, 축적된 힘 중첩, 비전의 영혼 중 비전 탄막 사용을 순서대로 확인합니다. 전투 길이와 특성·세트가 다른 로그의 시전 횟수를 그대로 따라가지는 마세요.',
       },
     ],
-    sourceStatus: '2026-10-03 재확인. Wowhead Porom·Icy Veins Dutchmagoz·Method Khaelt의 12.1 자료와 Blizzard 8월 18일 조정, 한국어 누적 긴급 수정, 한국어 주문 툴팁을 교차 근거로 썼습니다. 8월 19일(한국 공지) 이후 비전 PvE 수치 변경은 없습니다. Archon은 원본을 열지 못해 사용률 수치를 근거에서 제외했습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '신비한 화살로 비전 연사를 쌓고 비전 탄막으로 소비한 뒤, 발동한 오색 화살로 충전물과 번뜩임을 이어 갑니다. 12.1 기본 추천은 성난태양입니다. 45초마다 비전의 여파를 돌리고, 90초마다 비전 쇄도와 종료 후 비전의 영혼까지 챙기는 것이 핵심입니다.',
     sourceNote: '기본 우선순위는 Wowhead 9월 4일과 Method 9월 5일 자료를 맞춰 정리했습니다. Icy Veins의 특성·딜사이클 설명은 교차 근거로 사용합니다. 세트 수치는 날짜가 최신인 글에도 오래된 문장이 남아 있어 Blizzard 8월 18일 조정과 한국어 축적된 힘 툴팁을 우선했습니다. 아래 실전 예시는 이 규칙을 적용하는 방법이지 실제 플레이어의 로그를 재현한 것이 아닙니다. 이번 작업에서 개별 WCL 전투 이벤트나 개인 심 결과를 새로 분석했다고 주장하지 않습니다.',
     sources: [
@@ -14140,6 +19798,34 @@ export const guideManuscripts = {
         updated: '공개 경로 / 2026-09-09 작성자 관계 확인',
         note: 'Icy Veins 작성자 Dutchmagoz는 Altered Time 운영자이자 마법사 이론공식 작성자입니다. 가입이 필요한 핀 글을 읽었다고 인용하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/arcane/mage/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 46,370건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 424,078건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=17',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:04:17.097Z · 장비 구간 330 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=22',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:32:09.837Z · 장비 구간 330 · 319.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 공식 8월 18일 조정에 따라 시즌 2의 2세트 화살 피해 보너스는 5%입니다. 아직 20%로 적힌 장비 설명보다 공식 조정을 우선합니다.',
@@ -14149,6 +19835,7 @@ export const guideManuscripts = {
       'Archon 원본 로그 집계는 9월 9일과 10월 3일 모두 직접 열지 못했습니다. 검색 색인에 보인 사용률은 로그 범위와 시점을 검증할 수 없어 이 가이드의 추천 근거에서 제외했습니다.',
       'Dutchmagoz의 공개 작성자 소개로 Altered Time 운영자 및 장기 이론공식 작성 이력을 확인했습니다. 커뮤니티 접근 권한과 공개 가이드 근거는 구분합니다.',
       '비전 파동의 실제 시전 주문은 1241462(2초 시전, 15초 재사용, 기본 마나 10%)입니다. 이전 가이드가 쓰던 1243460은 잔향의 반복 폭발 효과라 툴팁에 반복 문구만 보였습니다. SimulationCraft 12.1.0.69933 특성 데이터와 구현으로 확인해 차트 ID를 교정했습니다.',
+      '10월 8일 마법사 비전의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '2026-10-03까지 확인한 12.1 PvE 기준입니다. 8월 19일(한국 공지) 이후 비전 PvE 수치 변경은 없고, 9월 25일 시간 전환 조정은 플레이어 간 전투 전용입니다. 9월 11일에는 주문술사 만발하는 점술의 쇄편이 군중 제어 대상을 맞히던 문제가 고쳐졌습니다.',
@@ -14157,6 +19844,9 @@ export const guideManuscripts = {
       'Method 딜사이클의 서술 중 12 미만 탄막 문장은 같은 페이지 우선순위 및 Wowhead와 충돌합니다. 본문은 번뜩임 보유 + 12 이상 탄막 조건을 따릅니다.',
       '기본 툴팁과 특성이 적용된 실제 주문은 구분합니다. 비전 파동은 실제 시전 주문 1241462의 한국어 툴팁으로 2초 시전·15초 재사용·기본 마나 10%를 확인했습니다. 1243460은 잔향의 반복 폭발 효과입니다.',
       '오프닝은 공대의 시간 왜곡 배정과 장신구 지속시간에 따라 달라집니다. 특정 캐릭터 장비나 전투 이벤트를 받지 않았으므로 개인 최적화 수치와 빌드 코드를 임의로 만들지 않습니다.',
+      '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -14180,6 +19870,150 @@ export const guideManuscripts = {
           '로그 체크: 12 미만 화살 누락, 오색 화살 보유 중 반복 탄막, 영혼 진입 직전 연사 소모, 불필요한 여파 지연을 버프와 시전 이벤트로 확인합니다.',
           '세트 활용: 축적된 힘 8중첩 오색 화살을 목표로 하지만 다음 발동을 덮어쓰거나 아무 주문도 못 누르는 상황까지 기다리지는 않습니다.',
         ],
+        opener: {
+          title: '성난태양 오프닝 전투 흐름',
+          summary: '비전 충전물 4개를 준비한 예시입니다. 탄막 투사체가 도착하기 전에 여파를 적용하고, 쇄도 뒤의 비전의 영혼까지 한 구간으로 봅니다.',
+          steps: [
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '비전 충전물이 모자랄 때만 사전 준비합니다. 이미 4개면 충전물 때문에 보주를 낭비하지 않고 다음 입력으로 넘어갑니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '365350',
+              label: '비전 쇄도',
+              note: '배정한 피해 구간에 사용합니다. 비전의 여파를 쇄도 종료 직전까지 의무적으로 기다리는 옛 순서를 적용하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 비전 연사 12 미만일 때 사용합니다. 실제 발동이 없으면 화살을 강제로 시전할 수 없습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '충전물 4개와 소비 조건을 확인합니다. 다음 여파를 투사체 비행 중 적용할 수 있는 거리와 남은 글쿨을 봅니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '321507',
+              label: '비전의 여파',
+              note: '앞선 탄막이 도착하기 전에 적용합니다. 기믹과 우선 대상의 생존 시간이 짧으면 예정한 공격 구간을 다시 계산합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '발동했다면 축적된 힘 강화와 덮어쓰기 위험을 함께 봅니다. 8중첩을 기다리다가 다음 발동이나 공격 시간을 잃지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임과 12 미만 조건을 다시 확인합니다. 쇄도 종료 후 비전의 영혼이 시작돼도 이 화살 조건이 앞섭니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '비전의 영혼 중에는 앞선 화살 조건을 먼저 확인한 뒤 사용합니다. 다음 중첩과 오색 화살 발동에 맞춰 유지 판단으로 돌아갑니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '성난태양 단일 우선순위',
+          summary: '충전물 4개가 기본입니다. 12 미만 화살, 비전의 영혼, 오색 화살과 25중첩을 따로 판단합니다.',
+          priority: [
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 비전 연사 12 미만이면 먼저 사용합니다. 쇄도 후 비전의 영혼 중에도 이 조건을 생략하지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '비전의 영혼이 활성화됐다면 앞선 화살 조건 다음에 사용합니다. 영혼 진입 직전의 불필요한 연사 소비와 구별합니다.',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '발동을 보유했다면 사용합니다. 세트 축적된 힘 8중첩을 노리되 덮어쓰기와 시전 공백을 만들면서 기다리지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '번뜩임이 있고 비전 연사 12 이상이거나, 번뜩임과 별개로 25중첩에 도달하면 소비합니다. 주문술사의 20 기준을 섞지 않습니다.',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '충전물이 없을 때 복구합니다. 성난태양은 보주 숙련 광역 분기를 전제로 한 보주 반복 빌드가 아닙니다.',
+            },
+            {
+              skillId: '30451',
+              label: '비전 작렬',
+              note: '앞선 발동과 소비 조건이 없을 때 사용합니다. 오색 화살이 작렬 자리를 대체했는지도 사용 전에 확인합니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '마나가 실제로 부족해 다른 시전이 막힌 예외에만 복구합니다. 평소 낮은 중첩 탄막의 일반적인 근거로 쓰지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '성난태양 광역 우선순위',
+          summary: '단일의 발동 순서를 유지하되 적 5명 이상과 보주 준비 여부를 추가합니다. 우선 대상이 먼저 죽는 전투에서는 총피해만 보지 않습니다.',
+          priority: [
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 비전 연사 12 미만이면 먼저 사용합니다. 대상 수가 많다는 이유로 연사 생성과 세트 준비를 건너뛰지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '비전의 영혼 중에는 앞선 화살 조건 다음에 소비합니다. 충전물과 후속 오색 화살을 함께 확인합니다.',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '발동했다면 실제로 살아 있는 무리에 사용합니다. 축적된 힘 8중첩을 목표로 하되 덮어쓰기 위험이 있으면 기다리지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '번뜩임과 12 이상 또는 연사 25에서 소비합니다. 5명 이상이고 보주가 준비됐으면 12 이상 탄막 뒤 복구도 검토합니다.',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '충전물이 없을 때 복구합니다. 주문술사 보주 숙련의 2대상 우선순위를 성난태양에 그대로 복사하지 않습니다.',
+            },
+            {
+              skillId: '30451',
+              label: '비전 작렬',
+              note: '발동과 소비 조건이 모두 없을 때 이어 갑니다. 신비한 폭발 반복으로 바꿔 12.1의 연사·오색 화살 흐름을 잃지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '마나 고갈로 시전이 막힌 예외에만 복구합니다. 가까운 대상이 줄어들면 곧바로 단일 판단으로 돌아갑니다.',
+            },
+          ],
+        },
       },
       {
         label: '주문술사',
@@ -14202,6 +20036,150 @@ export const guideManuscripts = {
           '로그 체크: 보주 충전 방치, 실제 적중, 20연사 탄막, 화살 누락을 확인합니다. 비전냉기의 가르침으로 보주 재사용이 빨라지는 흐름도 같이 봅니다.',
           '오색 화살: 단일에서는 축적된 힘 6중첩 이상 등 별도 조건을 씁니다. 번뜩임이 없거나 4세트가 없는 경우에도 성난태양의 8중첩을 강제하지 않습니다.',
         ],
+        opener: {
+          title: '주문술사 오프닝 전투 흐름',
+          summary: '현재 견본의 번뜩임과 충전물을 기준으로 시작합니다. 비전의 영혼은 성난태양 효과이며 이 분기의 직접 사용 순서에 넣지 않습니다.',
+          steps: [
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '충전물이 없거나 부족할 때 준비합니다. 이후 광역 보주 활용은 보주 숙련 선택과 실제 적 수를 확인합니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '365350',
+              label: '비전 쇄도',
+              note: '계획한 첫 공격 구간에 사용합니다. 쇄편 생성 구간과 여파가 실제 우선 대상에게 들어가는지 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 비전 연사 15 미만이면 사용합니다. 성난태양의 12중첩 기준으로 발동을 묵히지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '충전물 4개에서 여파 투사체 연계를 준비합니다. 이후 정상 소비는 연사 20 조건과 별도로 판단합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '321507',
+              label: '비전의 여파',
+              note: '탄막 투사체가 맞기 전에 적용합니다. 시전 거리와 대상의 생존 시간을 확인하고 예정한 첫 구간을 구성합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '발동했다면 사용합니다. 단일은 연사 13 초과와 축적된 힘 6 이상·번뜩임 없음·4세트 없음 조건을 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '2대상 이상이고 보주 숙련을 골랐다면 충전물 상한까지 채우는 보주를 우선 검토합니다. 해당 선택이 없으면 일반 복구만 합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '연사 20에 도달했으면 소비합니다. 25까지 기다리지 않고 화살·보주·오색 화살의 우선순위로 돌아갑니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '주문술사 단일 우선순위',
+          summary: '오색 화살 강화, 연사 20 소비와 15 미만 화살을 구별합니다. 선택하지 않은 비전 파동을 기본 버튼으로 강제하지 않습니다.',
+          priority: [
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '연사 13 초과이며 축적된 힘 6 이상, 번뜩임 없음 또는 4세트 없음 중 하나면 우선합니다. 조건을 충족하지 않으면 다음 판단을 봅니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '충전물 4개와 연사 20에서 소비합니다. 성난태양의 최대 25를 목표로 기다리는 행동은 이 분기와 맞지 않습니다.',
+            },
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 연사 15 미만이면 사용합니다. 이미 소비 시점에 가까운 발동을 무조건 연속 사용하지 않습니다.',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '앞선 강화 조건을 못 맞췄어도 발동이 남아 있다면 처리합니다. 다음 발동을 덮어쓰지 않고 실제 피해에 남깁니다.',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '충전물이 없을 때 복구합니다. 단일에서 충전물이 가득 찬 보주를 무조건 화살과 소비보다 앞세우지 않습니다.',
+            },
+            {
+              skillId: '30451',
+              label: '비전 작렬',
+              note: '앞선 발동과 소비 조건이 없을 때 사용합니다. 오색 화살로 대체된 버튼과 기본 작렬을 혼동하지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '마나가 실제로 부족해 시전이 막힌 예외에 사용합니다. 평소 낮은 중첩 소비의 기본 규칙으로 확대하지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '주문술사 광역 우선순위',
+          summary: '2대상부터 오색 화살과 보주 조건이 달라집니다. 보주 숙련 선택과 충전물 상한 도달 여부를 먼저 확인합니다.',
+          priority: [
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '2대상 이상이고 발동이 있으면 우선 사용합니다. 단일의 축적된 힘 6 조건 때문에 광역 발동을 계속 보관하지 않습니다.',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '2대상 이상이며 보주 숙련을 선택했고 충전물을 상한까지 채우는 사용이면 우선 검토합니다. 영웅 특성 이름만으로 이 조건이 생기지 않습니다.',
+            },
+            {
+              skillId: '44425',
+              label: '비전 탄막',
+              note: '충전물 4개와 연사 20에서 소비합니다. 우선 대상이 곧 죽으면 여러 적의 총피해보다 실제 소비할 대상을 먼저 봅니다.',
+            },
+            {
+              skillId: '5143',
+              label: '신비한 화살',
+              note: '번뜩임이 있고 연사 15 미만이면 사용합니다. 대상 수가 많아도 25중첩을 전제로 한 성난태양 순서를 섞지 않습니다.',
+            },
+            {
+              skillId: '1295924',
+              label: '오색 화살',
+              note: '남아 있는 발동을 처리합니다. 강화 조건을 기다리느라 다음 발동이나 이동 전에 가능한 시전을 잃지 않습니다.',
+            },
+            {
+              skillId: '153626',
+              label: '비전 보주',
+              note: '충전물이 없거나 2대상 이상에서 사용할 수 있으면 검토합니다. 보주가 바닥 구멍과 높이 차로 적을 놓치지 않는 경로인지 확인합니다.',
+            },
+            {
+              skillId: '30451',
+              label: '비전 작렬',
+              note: '앞선 조건이 없을 때 이어 갑니다. 적이 한 명으로 줄어들면 광역 보주 우선순위를 종료하고 단일 기준으로 돌아갑니다.',
+            },
+          ],
+        },
       },
     ],
     blocks: [
@@ -14405,71 +20383,64 @@ export const guideManuscripts = {
       },
     ],
     opener: {
-      title: '성난태양 첫 극딜 전투 흐름',
-      summary: '비전 쇄도 선시전 뒤 화살과 탄막을 이어 첫 투사체가 여파에 포함되게 합니다. 시간 왜곡·장신구는 배정에 따라 사용하고, 이후 단계는 현재 발동을 보고 반복합니다.',
+      title: '성난태양 오프닝 전투 흐름',
+      summary: '비전 충전물 4개를 준비한 예시입니다. 탄막 투사체가 도착하기 전에 여파를 적용하고, 쇄도 뒤의 비전의 영혼까지 한 구간으로 봅니다.',
       steps: [
+        {
+          skillId: '153626',
+          label: '비전 보주',
+          note: '비전 충전물이 모자랄 때만 사전 준비합니다. 이미 4개면 충전물 때문에 보주를 낭비하지 않고 다음 입력으로 넘어갑니다.',
+          phase: '준비',
+          trigger: '사용 조건 충족 시',
+        },
         {
           skillId: '365350',
           label: '비전 쇄도',
-          phase: '선시전',
-          trigger: '풀 카운트에 적중',
-          note: '현재 시전 시간을 보고 전투 시작에 맞춥니다. 최대 연사와 4충전물을 만들겠다며 첫 쿨기를 지연하지 않습니다.',
-        },
-        {
-          skillId: '80353',
-          label: '시간 왜곡',
-          phase: '공대 배정',
-          trigger: '사용 담당일 때만',
-          note: '파티 계획에 따라 사용합니다. 긴 버프 장신구와 짧은 버프 장신구의 사용 위치는 별도로 조정합니다.',
+          note: '배정한 피해 구간에 사용합니다. 비전의 여파를 쇄도 종료 직전까지 의무적으로 기다리는 옛 순서를 적용하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '5143',
           label: '신비한 화살',
-          phase: '첫 준비',
-          trigger: '번뜩임 확인',
-          note: '화살을 한 번 사용해 연사와, 4세트가 있다면 축적된 힘을 준비합니다.',
+          note: '번뜩임이 있고 비전 연사 12 미만일 때 사용합니다. 실제 발동이 없으면 화살을 강제로 시전할 수 없습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '44425',
           label: '비전 탄막',
-          phase: '투사체 발사',
-          trigger: '첫 화살 이후',
-          note: '오프닝 탄막은 평시 최대 중첩 조건과 구분합니다. 도착 전에 다음 여파를 붙일 수 있게 연결합니다.',
+          note: '충전물 4개와 소비 조건을 확인합니다. 다음 여파를 투사체 비행 중 적용할 수 있는 거리와 남은 글쿨을 봅니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '321507',
           label: '비전의 여파',
-          phase: '첫 피해 저장',
-          trigger: '탄막이 비행 중',
-          note: '곧 죽지 않을 적에게 적용합니다. 투사체 조건을 기다리며 쇄도 마지막까지 미루지 않습니다.',
+          note: '앞선 탄막이 도착하기 전에 적용합니다. 기믹과 우선 대상의 생존 시간이 짧으면 예정한 공격 구간을 다시 계산합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '1295924',
           label: '오색 화살',
-          phase: '발동 분기',
-          trigger: '발동 + 세트 조건 확인',
-          note: '발동했다면 축적된 힘과 현재 우선순위에 따라 사용합니다. 발동하지 않았다면 이 단계를 건너뜁니다.',
+          note: '발동했다면 축적된 힘 강화와 덮어쓰기 위험을 함께 봅니다. 8중첩을 기다리다가 다음 발동이나 공격 시간을 잃지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '5143',
           label: '신비한 화살',
-          phase: '다시 준비',
-          trigger: '번뜩임 + 연사 12 미만',
-          note: '그 순간의 중첩을 보고 판단합니다. 연사가 이미 높으면 다시 화살을 누르기 전에 탄막 조건을 봅니다.',
+          note: '번뜩임과 12 미만 조건을 다시 확인합니다. 쇄도 종료 후 비전의 영혼이 시작돼도 이 화살 조건이 앞섭니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '44425',
           label: '비전 탄막',
-          phase: '상태별 소비',
-          trigger: '번뜩임 + 연사 12 이상 / 연사 25',
-          note: '상위 오색 화살 조건을 확인한 뒤 소비합니다. 쇄도 종료 직전에는 영혼 진입 전에 연사를 비우지 않도록 주의합니다.',
-        },
-        {
-          skillId: '44425',
-          label: '비전 탄막',
-          phase: '비전의 영혼',
-          trigger: '영혼 활성, 화살 우선 조건 제외',
-          note: '번뜩임과 연사 12 미만 화살 조건을 먼저 본 뒤 탄막을 연결합니다. 영혼은 직접 누르는 주문이 아닙니다.',
+          note: '비전의 영혼 중에는 앞선 화살 조건을 먼저 확인한 뒤 사용합니다. 다음 중첩과 오색 화살 발동에 맞춰 유지 판단으로 돌아갑니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
       ],
     },
@@ -14477,42 +20448,37 @@ export const guideManuscripts = {
       {
         skillId: '5143',
         label: '신비한 화살',
-        note: '성난태양 평시 1순위: 번뜩임 보유 + 현재 연사 12 미만. 비전의 영혼 중에도 먼저 확인.',
+        note: '번뜩임이 있고 비전 연사 12 미만이면 먼저 사용합니다. 쇄도 후 비전의 영혼 중에도 이 조건을 생략하지 않습니다.',
       },
       {
         skillId: '44425',
         label: '비전 탄막',
-        note: '비전의 영혼 활성 중. 위 화살 조건을 만족하지 않을 때 사용.',
+        note: '비전의 영혼이 활성화됐다면 앞선 화살 조건 다음에 사용합니다. 영혼 진입 직전의 불필요한 연사 소비와 구별합니다.',
       },
       {
         skillId: '1295924',
         label: '오색 화살',
-        note: '발동한 상태. 4세트는 가능하면 축적된 힘 8중첩, 미보유 시 중첩 대기 제외.',
+        note: '발동을 보유했다면 사용합니다. 세트 축적된 힘 8중첩을 노리되 덮어쓰기와 시전 공백을 만들면서 기다리지 않습니다.',
       },
       {
         skillId: '44425',
         label: '비전 탄막',
-        note: '번뜩임 보유 + 연사 12 이상, 또는 연사 25. 광역 5대상 이상은 복구 수단 보유 조건도 적용.',
+        note: '번뜩임이 있고 비전 연사 12 이상이거나, 번뜩임과 별개로 25중첩에 도달하면 소비합니다. 주문술사의 20 기준을 섞지 않습니다.',
       },
       {
         skillId: '153626',
         label: '비전 보주',
-        note: '비전 충전물이 0일 때 복구. 주문술사 다수 대상 보주 우선순위는 별도 분기.',
-      },
-      {
-        skillId: '1241462',
-        label: '비전 파동',
-        note: '특성 선택 시에만: 충전물 3 미만 또는 5대상 이상 분기. 현재 기본 추천에는 없어 미선택 시 건너뜀.',
+        note: '충전물이 없을 때 복구합니다. 성난태양은 보주 숙련 광역 분기를 전제로 한 보주 반복 빌드가 아닙니다.',
       },
       {
         skillId: '30451',
         label: '비전 작렬',
-        note: '앞선 조건이 없을 때 이어 가는 기본 시전. 작렬 자리가 오색 화살로 바뀌었는지 확인.',
+        note: '앞선 발동과 소비 조건이 없을 때 사용합니다. 오색 화살이 작렬 자리를 대체했는지도 사용 전에 확인합니다.',
       },
       {
         skillId: '44425',
         label: '비전 탄막',
-        note: '마나가 실제로 고갈된 예외의 복구. 평소 낮은 연사 탄막을 정당화하는 일반 조건이 아님.',
+        note: '마나가 실제로 부족해 다른 시전이 막힌 예외에만 복구합니다. 평소 낮은 중첩 탄막의 일반적인 근거로 쓰지 않습니다.',
       },
     ],
     tips: [
@@ -14529,15 +20495,359 @@ export const guideManuscripts = {
       '쿨기 중 차단이나 해제가 필요하면 먼저 처리합니다. 파티 전멸을 막는 한 번의 유틸이 중요한 시전 하나보다 우선이며, 역할 분담으로 미리 충돌을 줄이는 편이 좋습니다.',
       '로그에서 화살 시전 횟수가 같아도 실제 방출과 적중은 다를 수 있습니다. 발동·채널 취소·대상 사망을 나눠 본 뒤에야 누락 원인과 개선점을 말할 수 있습니다.',
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 62,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'c5281a7f2ac84f4088f55faa80496f720bdaa990b120e5f9d82277fff3295068',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 62,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '49eb52a22fa4b026de22b4fd4dc0b732f0a19e728ef8f6b2c55b17dcf6ee3276',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 62,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'c5281a7f2ac84f4088f55faa80496f720bdaa990b120e5f9d82277fff3295068',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 46370,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/arcane/mage/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/1pMjRQJV6HFNCwX7#fight=14',
+          recommendedCode: 'C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAgNAAAzMDbWmxMLzYMzMzMswMmZmBAYAAAGgZGwMAYYmZA',
+          validation: {
+            specId: 62,
+            heroTreeId: 39,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 424078,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/WdZYHBnRMc23hkbA#fight=24',
+          recommendedCode: 'C4DAAAAAAAAAAAAAAAAAAAAAAYGmZZmxsgZGamZGAAAGAwMz0sssMDAgNAA2gZmhNLzYmlZMmZmZGWYmZmZGAgBAAYAmZAzAghZmB',
+          validation: {
+            specId: 62,
+            heroTreeId: 39,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.011277474142893396,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=17',
+            startedAt: '2026-10-08T00:04:17.097Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 323122,
+            itemLevelBracket: 330,
+            heroTree: 39,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1449',
+                count: 2,
+              },
+              {
+                spellId: '321507',
+                count: 7,
+              },
+              {
+                spellId: '235450',
+                count: 6,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '30451',
+                count: 29,
+              },
+              {
+                spellId: '365350',
+                count: 3,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '153626',
+                count: 1,
+              },
+              {
+                spellId: '44425',
+                count: 76,
+              },
+              {
+                spellId: '1295924',
+                count: 26,
+              },
+              {
+                spellId: '80353',
+                count: 1,
+              },
+              {
+                spellId: '212653',
+                count: 10,
+              },
+              {
+                spellId: '414658',
+                count: 2,
+              },
+              {
+                spellId: '5143',
+                count: 85,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12602,
+                uses: 1,
+              },
+              {
+                spellId: '395152',
+                activeMs: 298800,
+                uses: 42,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=22',
+            startedAt: '2026-10-07T01:32:09.837Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 319478,
+            itemLevelBracket: 330,
+            heroTree: 39,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '235450',
+                count: 9,
+              },
+              {
+                spellId: '153626',
+                count: 4,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '342247',
+                count: 1,
+              },
+              {
+                spellId: '342245',
+                count: 1,
+              },
+              {
+                spellId: '44425',
+                count: 71,
+              },
+              {
+                spellId: '321507',
+                count: 7,
+              },
+              {
+                spellId: '365350',
+                count: 4,
+              },
+              {
+                spellId: '30451',
+                count: 37,
+              },
+              {
+                spellId: '5143',
+                count: 80,
+              },
+              {
+                spellId: '80353',
+                count: 1,
+              },
+              {
+                spellId: '1295924',
+                count: 24,
+              },
+              {
+                spellId: '212653',
+                count: 8,
+              },
+              {
+                spellId: '31661',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 246085,
+                uses: 33,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12834,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   "mage-fire": {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '심화 가이드',
     graphCenterSkillId: '190319',
     summary: '열기를 화염 작렬로 바꾸고 불덩이 작렬·불기둥으로 소비하는 기본은 같습니다. 12.1에서는 발화 밖의 피해와 화염 파열 직접 시전까지 챙겨야 합니다. 성난태양은 유성으로 화염 파열을 확보하고 발화 뒤 이상 고열을 이어 가며, 서리불꽃은 얼음불꽃 화살과 유성의 자동 후속 공격을 활용합니다.',
-    sourceStatus: 'Blizzard 12.1과 한국어 누적 긴급 수정(9월 2일·9월 23일 화염 항목), Wowhead Preheat, Icy Veins Dutchmagoz, Method Tamir, SimulationCraft 빌드 12.1.0.69933과 영문·한국어 주문 툴팁을 대조했습니다. 9월 23일 상향 이후 갱신된 공개 가이드와 최신 Archon 집계는 확인하지 못했으며 이전 시즌 사용률은 현재 추천 근거에서 제외했습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '공개 가이드의 공통 원칙과 서로 다른 조건을 구분했습니다. 불기둥은 Wowhead 순수 광역 3대상, 우선 대상 절충 4대상, Icy Veins 4대상 기준을 병기합니다. Method 본문의 5대상과 예시의 4대상 차이는 단일 정답으로 합치지 않습니다. 시즌 2 4세트는 현재 Wowhead 툴팁의 피해 보너스 25%를 사용하고, 8월 가이드의 20% 표기와 차이가 있음을 남겼습니다. 직접 로그 집계나 개인 시뮬레이션을 수행한 보고서는 아닙니다.',
     playstyle: [
       {
@@ -14677,6 +20987,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 확인',
         note: '이중 시전 숙련은 불덩이 작렬 15%·불기둥 15%, 힘의 무게(451035)는 화염 불덩이 작렬 3%·불기둥 6%를 표시합니다. 9월 23일 긴급 수정 수치와 일치합니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/fire/mage/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 677건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/fire/mage/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 9,799건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/jnNFJKcP6B198G2X#fight=5&source=18',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:09:03.948Z · 장비 구간 327 · 413.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/1Gh98wJzkbadT7Fy#fight=22&source=184',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T02:21:43.688Z · 장비 구간 327 · 419.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 공식 노트는 발화 밖 피해 비중을 높이는 방향을 명시합니다. 평시를 다음 발화 전 대기 시간으로만 설명하지 않습니다.',
@@ -14687,14 +21025,17 @@ export const guideManuscripts = {
       '시즌 2 4세트의 최신 툴팁과 8월 공개 가이드의 수치가 다릅니다. 현재 툴팁을 우선하며 직접 확인하지 않은 변경 날짜나 실측 상승률은 만들지 않습니다.',
       '2026-09-01 화염 PvE 피해 조정은 3%입니다. 별도의 PvP 화염 파열·완전 연소·타오르는 격노 감소를 PvE에 적용하지 않습니다.',
       '9월 23일(한국 공지) 긴급 수정으로 유성의 지속 피해가 100% 증가했고, 불기둥 보너스는 서리불꽃 이중 시전 숙련 15%, 성난태양 힘의 무게 6%로 올랐습니다. 개발자 노트는 쐐기 성능 개선이 주목적이고 공격대 영향은 더 작다고 밝혔습니다.',
+      '10월 8일 마법사 화염의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
-      'Archon 레이드와 쐐기 페이지는 이번 확인에서 접근 제한으로 최신 집계가 열리지 않았습니다. 6월 사용률을 현재 수치로 재사용하지 않으며 성난태양 기본 추천은 공개 운용 가이드의 선택입니다.',
+      '10월 8일 Archon 레이드·쐐기 공개 집계에 직접 접근해 현재 견본과 로그 기간을 확인했습니다. 6월 사용률을 재사용하지 않으며, 성난태양 기본 추천은 공개 운용 가이드와 현재 집계를 대조한 학습 출발점입니다.',
       '불기둥 총 광역 3대상과 절충 4대상은 서로 다른 목적입니다. Method의 4·5대상 혼재까지 세 사이트가 같은 기준이라고 주장하지 않습니다.',
       '세트 4효과의 피해 보너스는 현재 툴팁 25%, 8월 가이드 20%로 다릅니다. 실제 적용 계수의 자체 실험은 하지 않았으므로 둘을 곱해 실측 상승률처럼 제시하지 않습니다.',
       '8월 31일 불기둥의 세트 관련 발동 수정이 확인됐습니다. 8월 가이드의 시전 대기열 문제 전체가 해결됐다고도, 현재 반드시 재현된다고도 단정하지 않습니다.',
       '발화 연장은 광열 발동과 선택 특성에 따라 달라집니다. 차트는 누르는 순서의 예시와 우선순위이며 초 단위 고정 DPS 타임라인이 아닙니다.',
       '9월 23일 상향 뒤 두 영웅 특성의 우열이나 불기둥 전환 대상 수를 다시 계산한 공개 자료와 로그는 확인하지 못했습니다. 아래 3·4대상 기준과 성난태양 기본 예시는 상향 전 공개 가이드 기준이며, 상향만으로 순위가 바뀌었다고 단정하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -15466,15 +21807,351 @@ export const guideManuscripts = {
         note: '상위 조건이 없는 평시에 시전해 열기를 만듭니다. 발화 밖을 대기 시간으로 비우지 말고 즉시 불덩이 작렬과 연결합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 63,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd9c4692461036521f35ef12559a4487394627fbfeaa94bff531ab0e489d22baf',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsMAMzQYMgZYMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsMAMzQYMgZYMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 63,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'ca2c3b50af6e216043525785bbcde26e50b8fee49cbe0f3e88b62597955d8753',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 63,
+          heroTreeId: 39,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd9c4692461036521f35ef12559a4487394627fbfeaa94bff531ab0e489d22baf',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '성난태양',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 677,
+          window: 'Based on the top 1000 kills in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/fire/mage/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/ZhqQ9VzPXm4L732r#fight=21',
+          recommendedCode: 'C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzAjxAmhxA',
+          validation: {
+            specId: 63,
+            heroTreeId: 39,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 9799,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/fire/mage/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/Dgxr3NFjdPYTnHmc#fight=39',
+          recommendedCode: 'C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsNAMzAMGwMMGA',
+          validation: {
+            specId: 63,
+            heroTreeId: 39,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.01440055741014267,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/jnNFJKcP6B198G2X#fight=5&source=18',
+            startedAt: '2026-10-07T00:09:03.948Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 413046,
+            itemLevelBracket: 327,
+            heroTree: 39,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '235313',
+                count: 8,
+              },
+              {
+                spellId: '414658',
+                count: 1,
+              },
+              {
+                spellId: '108853',
+                count: 144,
+              },
+              {
+                spellId: '342247',
+                count: 2,
+              },
+              {
+                spellId: '133',
+                count: 51,
+              },
+              {
+                spellId: '2120',
+                count: 63,
+              },
+              {
+                spellId: '11366',
+                count: 138,
+              },
+              {
+                spellId: '212653',
+                count: 11,
+              },
+              {
+                spellId: '2948',
+                count: 55,
+              },
+              {
+                spellId: '157980',
+                count: 1,
+              },
+              {
+                spellId: '342245',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1293316',
+                count: 4,
+              },
+              {
+                spellId: '190319',
+                count: 7,
+              },
+              {
+                spellId: '153561',
+                count: 11,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 60004,
+                uses: 4,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/1Gh98wJzkbadT7Fy#fight=22&source=184',
+            startedAt: '2026-10-07T02:21:43.688Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 419081,
+            itemLevelBracket: 327,
+            heroTree: 39,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '133',
+                count: 61,
+              },
+              {
+                spellId: '342245',
+                count: 4,
+              },
+              {
+                spellId: '235313',
+                count: 8,
+              },
+              {
+                spellId: '190319',
+                count: 7,
+              },
+              {
+                spellId: '153561',
+                count: 13,
+              },
+              {
+                spellId: '2948',
+                count: 42,
+              },
+              {
+                spellId: '1234768',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '1459',
+                count: 1,
+              },
+              {
+                spellId: '342247',
+                count: 4,
+              },
+              {
+                spellId: '11366',
+                count: 225,
+              },
+              {
+                spellId: '414658',
+                count: 2,
+              },
+              {
+                spellId: '108853',
+                count: 136,
+              },
+              {
+                spellId: '212653',
+                count: 7,
+              },
+              {
+                spellId: '110960',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   "mage-frost": {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '심화 가이드',
     graphCenterSkillId: '30455',
     summary: '냉기는 빙결을 쌓고 얼음창으로 산산조각 내는 기본 위에, 두뇌 빙결과 고드름 준비를 처리하는 딜러입니다. 12.1 시즌 2에서는 쐐기 재생성이 중요해졌고, 주문술사 단일과 정점을 생략한 서리불꽃 광역의 운용이 갈립니다. 예전처럼 모든 상황에서 광선을 끝까지 쓰거나 두 영웅 특성에 같은 얼음창 기준을 적용하면 안 됩니다.',
-    sourceStatus: 'Blizzard 12.1과 한국어 누적 긴급 수정(8월 26일·9월 2일·9월 23일 냉기 항목), Wowhead Dorovon, Icy Veins Kuni, Method Khaelt와 현재 한국어·영문 툴팁을 대조했습니다. 9월 23일 상향 이후의 영웅 특성 우열과 최신 Archon 집계는 확보하지 못했습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '추천과 실제 주문 효과를 분리했습니다. Wowhead 8월 21일 특성·8월 29일 우선순위를 기본으로 삼고 Icy Veins와 Method의 다른 기준을 함께 검토했습니다. 서리불꽃 얼음창은 최신 Wowhead 예시의 12중첩을 사용하며 Icy Veins FAQ의 10중첩과 혼합하지 않습니다. 정점 미선택 다중 대상에서 광선을 GCD 뒤 끊는 각주와 단일 완주 설명을 분리했습니다. 현재 WCL 사용률·개인 시뮬레이션·비공개 Altered Time 대화는 확보하지 않았습니다.',
     playstyle: [
       {
@@ -15600,6 +22277,34 @@ export const guideManuscripts = {
         updated: '공개 커뮤니티 경로',
         note: '마법사 직업 커뮤니티의 학습 경로입니다. 비공개 채널의 현재 핀·대화·추천을 직접 읽었다고 주장하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/frost/mage/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 6,150건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/frost/mage/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 27,962건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/1GyDWzCBR79YrnJ3#fight=30&source=52',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:35:24.966Z · 장비 구간 328 · 402.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/7TkrpfVjA4yP6b1h#fight=2&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:05:27.684Z · 장비 구간 328 · 406.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 공식 노트는 냉기 주문·소환수 피해 7% 증가와 갈라지는 얼음·조각난 서리의 추가 대상 위력 50%를 명시합니다. 이후 9월 2일 긴급 수정으로 모든 능력 공격력이 6% 더 올랐습니다. 전체 피해 증가와 특정 갈래 피해 감소를 함께 봐야 합니다.',
@@ -15611,13 +22316,16 @@ export const guideManuscripts = {
       'Wowhead 옛 영웅 특성 전용 페이지는 제목이 11.2.7이고 과잉·혹한의 추위를 다룹니다. 상단 12.1 라벨만 보고 현재 작동 방식 근거로 쓰지 않습니다.',
       '구 Archon 비율은 현재 추천에서 제거했습니다. 최신 집계·전투 이벤트·개인 시뮬레이션을 확보하지 않았으므로 수치 우열을 새로 만들지 않았습니다.',
       '9월 23일(한국 공지) 긴급 수정은 얼어붙은 구슬 15%, 혜성 폭풍 50%, 냉증 주변 산산조각 10%, 빙하 공격의 얼음 혜성 50%를 올렸습니다. 개발자 노트는 쐐기 성능 개선이 주목적이고 공격대 영향은 더 작다고 밝혔습니다. 현재 한국어 툴팁 계수(구슬 77.7%, 혜성 129%, 빙하 공격 225%, 냉증 27.3%)는 SimulationCraft 빌드 12.1.0.69933의 핫픽스 값과 일치합니다.',
+      '10월 8일 마법사 냉기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '서리불꽃 기준은 정점 미선택·혜성 폭풍·시즌 2 세트 중심 예시입니다. 정점을 찍은 별도 빌드의 광선은 충전과 채널 가치를 다시 평가해야 합니다.',
       'Icy Veins FAQ는 서리불꽃 10중첩, 최신 Wowhead 우선순위는 12중첩을 제시하며, Method 8월 11일 본문에는 10중첩과 12중첩이 함께 나옵니다. 아래는 후자를 사용하며 모든 빌드에 적용되는 물리적 최소 소비량은 아닙니다.',
       '시즌 2 4세트 발동률과 개인 장비의 손익분기는 직접 측정하지 않았습니다. 허수아비·로그에서 나온 실제 준비 상태와 대상 생존 시간을 우선하세요.',
-      '최신 WCL 집계와 비공개 Altered Time 자료는 미확보입니다. 과거 사용률, 예전 영웅 특성 페이지와 현재 가이드의 날짜를 섞지 않았습니다.',
+      '10월 8일 레이드·쐐기 공개 집계를 확인했습니다. 개별 WCL 이벤트 전수 비교와 비공개 Altered Time 자료는 확인하지 않았으며, 과거 사용률과 현재 가이드의 날짜를 섞지 않습니다.',
       '9월 23일 상향은 혜성 폭풍·구슬·주변 산산조각 비중이 큰 광역 운용에 더 직접적입니다. 상향 이후 같은 조건의 로그나 시뮬레이션을 확보하지 못했으므로 서리불꽃·주문술사의 순위가 바뀌었다고 단정하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -16333,6 +23041,344 @@ export const guideManuscripts = {
         note: '상위 주문이나 발동 조건이 없을 때 기본 생성을 이어 갑니다. 다음 쐐기 준비와 발동을 확인하며 공격 공백을 줄입니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps',
+        sourceLabel: 'Raid ST  (Best ST)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 64,
+          heroTreeId: 40,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '077760b8177714be1143a6ccfeb5344374ff59da80ca61e944ee5670dc2851e3',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '주문술사',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAAWAAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAAWAAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 64,
+          heroTreeId: 41,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '3fef46d7639f8abce123be5c2ffe31e21cf76f43d10f42f89b79765bbf81cc8d',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '서리불꽃',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzEGwMYYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzEGwMYYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave  (Best Spread Cleave)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 64,
+          heroTreeId: 40,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd3b6edaced96631a51f51c968642973445ba86dc7cb8b811458db79914f9a870',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '주문술사',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 6150,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/frost/mage/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/vmNMAkRdxJypQ6BW#fight=9',
+          recommendedCode: 'CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzADYGMMA',
+          validation: {
+            specId: 64,
+            heroTreeId: 40,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 27962,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/frost/mage/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/Nr2hxGWwK8F3gVtC#fight=10',
+          recommendedCode: 'CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmlxMzEzwYmZmZWMzMMjZAAAgZmZWWmZaDAA2AAAALAstNmZmBz2wYmxGAAAzsBMDMgZwwA',
+          validation: {
+            specId: 64,
+            heroTreeId: 40,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.009670243230952644,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/1GyDWzCBR79YrnJ3#fight=30&source=52',
+            startedAt: '2026-10-08T03:35:24.966Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 402881,
+            itemLevelBracket: 328,
+            heroTree: 40,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '414658',
+                count: 4,
+              },
+              {
+                spellId: '84714',
+                count: 10,
+              },
+              {
+                spellId: '205021',
+                count: 10,
+              },
+              {
+                spellId: '199786',
+                count: 25,
+              },
+              {
+                spellId: '11426',
+                count: 12,
+              },
+              {
+                spellId: '44614',
+                count: 45,
+              },
+              {
+                spellId: '157980',
+                count: 3,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '116',
+                count: 37,
+              },
+              {
+                spellId: '2139',
+                count: 1,
+              },
+              {
+                spellId: '80353',
+                count: 1,
+              },
+              {
+                spellId: '30455',
+                count: 147,
+              },
+              {
+                spellId: '212653',
+                count: 10,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/7TkrpfVjA4yP6b1h#fight=2&source=5',
+            startedAt: '2026-10-08T02:05:27.684Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 406815,
+            itemLevelBracket: 328,
+            heroTree: 41,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '80353',
+                count: 1,
+              },
+              {
+                spellId: '30455',
+                count: 79,
+              },
+              {
+                spellId: '358733',
+                count: 8,
+              },
+              {
+                spellId: '431044',
+                count: 84,
+              },
+              {
+                spellId: '122',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '414658',
+                count: 4,
+              },
+              {
+                spellId: '199786',
+                count: 30,
+              },
+              {
+                spellId: '212653',
+                count: 6,
+              },
+              {
+                spellId: '44614',
+                count: 45,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '84714',
+                count: 6,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '357214',
+                count: 1,
+              },
+              {
+                spellId: '205021',
+                count: 8,
+              },
+              {
+                spellId: '2139',
+                count: 2,
+              },
+              {
+                spellId: '153595',
+                count: 8,
+              },
+              {
+                spellId: '11426',
+                count: 16,
+              },
+              {
+                spellId: '120',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
   'warlock-affliction': {
     patch: '12.1',
@@ -16340,7 +23386,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '1259790',
     summary: '고통은 고통·부패를 유지하면서 영혼의 조각을 불안정한 고통에 쓰고, 암흑시선 중 재앙의 손아귀로 겹친 지속 피해를 회수하는 전문화입니다. 영혼 수확자는 암흑의 수확으로 받는 조각과 일몰 소비가 중요하고, 지옥소환사는 쇠퇴가 걸린 우선 대상에 소비를 모읍니다. 12.1의 새 특성과 시즌 2 세트까지 적용하면 단일·광역에서 확인할 조건이 달라지므로 오프닝 이후에는 고정 순서 대신 아래 우선순위를 따릅니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '기술 이름과 아이콘은 현재 Wowhead 한국어 주문 자료를 기준으로 했습니다. 같은 이름의 특성 노드·시전 기술·자동 피해는 ID를 나눴습니다. Wowhead의 9월 7일 오프닝과 Icy Veins의 8월 31일 설명은 수확·암흑시선 순서가 다릅니다. 여기서는 현재 SimC의 조건을 함께 읽어 영혼 수확자의 수확 전 가속·세트 준비와 지옥소환사의 적개심 조건을 별도로 제시합니다. SimC는 공개 구현과 행동 우선순위를 읽은 자료이지 이 캐릭터로 돌린 개인 심크나 실측 로그가 아닙니다. Motoko는 흑마법사 디스코드 공동 관리자이자 LockOneStopShop 기여자로 소개되어 있지만 비공개 메시지는 확보하지 않았습니다. 현재 로그 집계를 읽지 못한 상태에서 과거 6월 사용률을 최신 메타 수치로 재사용하지 않습니다.',
     playstyle: [
       {
@@ -16494,6 +23540,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 1일 검게 물든 영혼의 치명적인 메아리 적용 오류 수정은 운용 근거와 구별합니다. 10월 6일 지옥의 결속·혈석 변경은 PvP 전용입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/affliction/warlock/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 4,816건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/affliction/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 19,819건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=25',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T10:33:24.413Z · 장비 구간 327 · 415.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/98j1A2xKMtzJD6yH#fight=6&source=210',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:09:56.553Z · 장비 구간 327 · 415.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1에서는 밤의 수혜와 최초 감염자가 삭제되고 쾌락에 물든 폭식·성급한 분노가 들어왔습니다. 무료 씨앗은 조각의 불안정성으로 설명해야 합니다.',
@@ -16503,13 +23577,15 @@ export const guideManuscripts = {
       '영혼 수확자 수확의 기본 완주는 세 조각을 공급합니다. 지옥소환사에는 죽음의 그림자가 없으므로 수확 전 조각 비우기를 같은 이유로 강제하지 않습니다.',
       '9월 19일 SimC는 영혼 수확자 단일에서 세트·가속 준비와 조건부 무료 씨앗 사용을 구분합니다. 공개 가이드의 단순 설명과 달라 조건을 명시했으며 실제 로그 결과라고 제시하지 않습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 1일 검게 물든 영혼의 치명적인 메아리 적용 오류 수정은 운용 근거와 구별합니다. 10월 6일 지옥의 결속·혈석 변경은 PvP 전용입니다.',
+      '10월 8일 흑마법사 고통의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '영혼 수확자가 기본 학습 예시지만 최신 집계 비율을 확인한 것은 아닙니다. 장비와 영웅 특성, 단일·광역 특성의 선택이 같은지부터 비교하세요.',
       '오프닝은 준비된 첫 전투의 예시입니다. 쐐기의 연속 풀, 조각이 적은 재전투, 선택하지 않은 특성에서는 없는 조건을 생략합니다.',
       '현재 툴팁과 패치 노트가 다른 확률·시간은 하나로 숨기지 않았습니다. 실제 캐릭터 표시와 최신 핫픽스를 우선하며 고정된 발동 횟수를 보장하지 않습니다.',
       '아래 전투 흐름은 실제 WCL 이벤트 타임라인이 아닙니다. 자동 효과는 버튼으로 표시하지 않으며 필요한 차단·생존·기믹 이동은 공격표보다 먼저 처리합니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -17280,6 +24356,362 @@ export const guideManuscripts = {
         note: '다른 조건이 없으면 기본 필러를 사용합니다. 영혼 흡수 빌드는 해당 기술로 바꾸며 고통의 필러가 매번 조각 하나를 준다고 가정하지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZZ2mZmlxAAjllBGwEMDbBG2GAAAmBAAwMDzMjBzwMzMzMGMzMzAAmBG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZZ2mZmlxAAjllBGwEMDbBG2GAAAmBAAwMDzMjBzwMzMzMGMzMzAAmBG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 265,
+          heroTreeId: 57,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '09d45d5d5d0a9e052691b96920b052fd7db788b721f127c2e69a4f4de6119494',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '영혼 수확자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 265,
+          heroTreeId: 57,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '968dfd8bbc8a0d9f4de456cfa1e063d24b0702b254fcb886c54133735b0c4a2c',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '영혼 수확자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAmZmlZxMzyYAgx2yADYCmhtADbDAAAzAAAYmZMjZmtxwYmZmZYYmZGAgZgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAmZmlZxMzyYAgx2yADYCmhtADbDAAAzAAAYmZMjZmtxwYmZmZYYmZGAgZgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 265,
+          heroTreeId: 57,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '387346aba455f5374b6ae5fe602faea675778687dac1a46526cae35a8b3e6b69',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '영혼 수확자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 4816,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/affliction/warlock/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/zrnJRG1MvCPjk4Y3#fight=28',
+          recommendedCode: 'CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGAzCYZAAAYGAAYmBzMjxsZmhZGzMjBzMzAAMDMA',
+          validation: {
+            specId: 265,
+            heroTreeId: 58,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 19819,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/affliction/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/WMcGt9Tr8DqPwKLd#fight=6',
+          recommendedCode: 'CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbmZ2mZGzyAAAmZmlZxMz2YAgx2yADYAzwWghtBAAgZAAAMzMmxMMGzYMzMzYYmZGAgBMA',
+          validation: {
+            specId: 265,
+            heroTreeId: 57,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0014018365742288095,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=25',
+            startedAt: '2026-10-07T10:33:24.413Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 415883,
+            itemLevelBracket: 327,
+            heroTree: 57,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '48020',
+                count: 3,
+              },
+              {
+                spellId: '452930',
+                count: 3,
+              },
+              {
+                spellId: '111771',
+                count: 2,
+              },
+              {
+                spellId: '385899',
+                count: 7,
+              },
+              {
+                spellId: '27243',
+                count: 76,
+              },
+              {
+                spellId: '48018',
+                count: 3,
+              },
+              {
+                spellId: '108416',
+                count: 1,
+              },
+              {
+                spellId: '48181',
+                count: 23,
+              },
+              {
+                spellId: '172',
+                count: 3,
+              },
+              {
+                spellId: '1259790',
+                count: 49,
+              },
+              {
+                spellId: '6789',
+                count: 4,
+              },
+              {
+                spellId: '686',
+                count: 40,
+              },
+              {
+                spellId: '980',
+                count: 41,
+              },
+              {
+                spellId: '1293316',
+                count: 4,
+              },
+              {
+                spellId: '205180',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '6201',
+                count: 1,
+              },
+              {
+                spellId: '1257052',
+                count: 9,
+              },
+              {
+                spellId: '111400',
+                count: 14,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/98j1A2xKMtzJD6yH#fight=6&source=210',
+            startedAt: '2026-10-08T01:09:56.553Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 415300,
+            itemLevelBracket: 327,
+            heroTree: 57,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '30283',
+                count: 2,
+              },
+              {
+                spellId: '48018',
+                count: 3,
+              },
+              {
+                spellId: '980',
+                count: 47,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '172',
+                count: 3,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+              {
+                spellId: '385899',
+                count: 1,
+              },
+              {
+                spellId: '108416',
+                count: 3,
+              },
+              {
+                spellId: '6789',
+                count: 2,
+              },
+              {
+                spellId: '48181',
+                count: 20,
+              },
+              {
+                spellId: '205180',
+                count: 4,
+              },
+              {
+                spellId: '48020',
+                count: 3,
+              },
+              {
+                spellId: '33702',
+                count: 4,
+              },
+              {
+                spellId: '1257052',
+                count: 8,
+              },
+              {
+                spellId: '111400',
+                count: 10,
+              },
+              {
+                spellId: '1259790',
+                count: 65,
+              },
+              {
+                spellId: '686',
+                count: 82,
+              },
+              {
+                spellId: '27243',
+                count: 47,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 45017,
+                uses: 3,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'warlock-demonology': {
@@ -17288,7 +24720,7 @@ export const guideManuscripts = {
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '105174',
     summary: '악마 흑마법사는 조각을 굴단의 손으로 바꿔 임프를 만들고, 악마 폭군 소환 뒤에도 그 흐름을 계속 이어가는 전문화입니다. 영혼 수확자는 폭군으로 받을 3조각의 자리를 비우고, 악마학자는 의식과 강화 주문을 놓치지 않는 것이 중요합니다. 파열은 광역 전용이라고 외우기보다 지옥으로부터의 귀환을 선택했는지부터 확인하세요.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '기준일은 2026-09-21입니다. 공개 가이드의 업데이트 날짜는 8월이고 그 이후 수치 조정이 있어, 추천과 실제 주문 효과를 분리했습니다. Motoko는 순수 단일 영혼 수확자와 쐐기 악마학자를 추천하지만 Sjeletyven의 8월 설명은 악마학자에 더 무게를 둡니다. 여기서는 어느 쪽이 무조건 몇 % 강하다고 보장하지 않습니다. 현재 Archon 레이드·고단 쐐기 집계는 접근하지 못했으며 과거 6월 사용률을 최신 근거로 재사용하지 않습니다. Warcraft Logs 개인 비교나 본인 캐릭터 시뮬레이션을 새로 실행한 결과는 아닙니다. Council of the Black Harvest 관련 근거는 Motoko의 공개 저자 소개와 LockOneStopShop 연결에 한정하며 비공개 디스코드 대화는 인용하지 않습니다.',
     playstyle: [
       {
@@ -17421,6 +24853,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 10월 6일 지옥 군주 부르기의 지옥 베기 150% 상향은 PvP 전용이며 PvE 악마 조각 소비나 영웅 특성 우선순위에 합산하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/demonology/warlock/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 27,616건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/demonology/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 258,852건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:07:28.707Z · 장비 구간 328 · 327.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FQzDgnjTtX4Z9qHC#fight=4&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:47:50.742Z · 장비 구간 328 · 326.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1은 화살과 어스름사냥개 강화, 악마학자의 일부 자동 피해 조정이 함께 있습니다. 화살을 전부 의미 없는 필러로 취급하거나 12.0.5 사용률을 그대로 적용하면 현재 선택을 설명하지 못합니다.',
@@ -17432,6 +24892,7 @@ export const guideManuscripts = {
       '현재 SimC 우선순위는 파열을 임프 6마리와 3대상 이상 또는 지옥으로부터의 귀환 조건에서 사용합니다. Icy Veins는 핵 1개 이하 조건도 설명하므로 핵 과충전 위험을 함께 보는 실전 조건으로 남깁니다.',
       '흑마법서: 지옥 유린자의 현재 기능은 적 마법 효과 해제입니다. 오래된 추가 차단 설명을 반영하지 않으며 도끼 던지기와 별도로 표시합니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 10월 6일 지옥 군주 부르기의 지옥 베기 150% 상향은 PvP 전용이며 PvE 악마 조각 소비나 영웅 특성 우선순위에 합산하지 않습니다.',
+      '10월 8일 흑마법사 악마의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '공개 가이드 업데이트 이후 핫픽스가 있습니다. 빌드 추천의 순위를 절대값으로 단정하지 않고 자신이 하는 전투의 대상 수·이동·세트에 맞춰 비교합니다.',
@@ -17440,7 +24901,8 @@ export const guideManuscripts = {
       'Blizzard 핫픽스의 자동 파열 항목은 2세트로 쓰였지만 현재 효과 ID와 Icy Veins는 4세트로 설명합니다. 숫자와 발동 조건은 현재 1296574를 기준으로 표기합니다.',
       'SimC 버그 모드에는 폭군 소환 순간 썩은마귀·지옥수호병을 추가 계산하는 메모가 있습니다. 이 미확정 동작을 모든 소환수가 폭군을 강화하거나 수명이 연장된다는 보편 규칙으로 쓰지 않습니다.',
       '차트는 선택한 특성과 실제 자원에 따라 단계를 건너뛰거나 생성 주문을 반복하는 예시입니다. 모든 가속·전투 전 임프·조각 상태에서 같은 초 단위 순서가 보장되지는 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -18193,6 +25655,388 @@ export const guideManuscripts = {
         note: '더 높은 조건이 없을 때 조각을 생성합니다. 죽음의 그림자 직전 상한을 다시 채우지 않도록 다음 폭군 시점을 보며 사용합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CoQAAAAAAAAAAAAAAAAAAAAAAYmZMzoZjhZmxsMAAAAAAAgxMGWgB2GtQDLGjxysMzMjZAgZGzMzMzAMzMmZAAAGzMzMDDLzYAD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmZMzoZjhZmxsMAAAAAAAgxMGWgB2GtQDLGjxysMzMjZAgZGzMzMzAMzMmZAAAGzMzMDDLzYAD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 266,
+          heroTreeId: 59,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a3ff9fac4e80dc85a0dcea449fd9386f7282b3f5554a3162c192b7c7f87cba9c',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '악마학자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 266,
+          heroTreeId: 59,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a0ddb39c2950aefe78db2bab86f24823964b956a8a8f4e5c3194dc785e361467',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '악마학자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 266,
+          heroTreeId: 59,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a0ddb39c2950aefe78db2bab86f24823964b956a8a8f4e5c3194dc785e361467',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '악마학자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 27616,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/demonology/warlock/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/FNB6W9gZj8w3rfna#fight=10',
+          recommendedCode: 'CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAAAAAgxMGWgB2GWohFjZGLzyMzMmBAmZMzMmZAmZGzMAAAjZmZMMsMjBMA',
+          validation: {
+            specId: 266,
+            heroTreeId: 59,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 258852,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/demonology/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/C39FrJTB1wqkDzNX#fight=8',
+          recommendedCode: 'CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzYWGAAAAAAAwYGDLwAbDL0wixMjlZbmZGzAAzMmZGzMAjZMjNAAwYmZGDDLzYAD',
+          validation: {
+            specId: 266,
+            heroTreeId: 59,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0016190522740047412,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=5',
+            startedAt: '2026-10-08T00:07:28.707Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 327352,
+            itemLevelBracket: 328,
+            heroTree: 59,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '264178',
+                count: 58,
+              },
+              {
+                spellId: '111771',
+                count: 1,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '1276452',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '686',
+                count: 59,
+              },
+              {
+                spellId: '48018',
+                count: 2,
+              },
+              {
+                spellId: '105174',
+                count: 82,
+              },
+              {
+                spellId: '196277',
+                count: 17,
+              },
+              {
+                spellId: '48020',
+                count: 2,
+              },
+              {
+                spellId: '452930',
+                count: 2,
+              },
+              {
+                spellId: '385899',
+                count: 1,
+              },
+              {
+                spellId: '434635',
+                count: 8,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+              {
+                spellId: '265187',
+                count: 6,
+              },
+              {
+                spellId: '111400',
+                count: 5,
+              },
+              {
+                spellId: '104316',
+                count: 16,
+              },
+              {
+                spellId: '108416',
+                count: 7,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 305858,
+                uses: 40,
+              },
+              {
+                spellId: '390386',
+                activeMs: 40016,
+                uses: 2,
+              },
+              {
+                spellId: '413984',
+                activeMs: 37014,
+                uses: 3,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45026,
+                uses: 3,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/FQzDgnjTtX4Z9qHC#fight=4&source=7',
+            startedAt: '2026-10-07T00:47:50.742Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 326822,
+            itemLevelBracket: 328,
+            heroTree: 59,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '264178',
+                count: 54,
+              },
+              {
+                spellId: '686',
+                count: 57,
+              },
+              {
+                spellId: '104316',
+                count: 16,
+              },
+              {
+                spellId: '111400',
+                count: 3,
+              },
+              {
+                spellId: '111771',
+                count: 1,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '196277',
+                count: 18,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '434635',
+                count: 8,
+              },
+              {
+                spellId: '452930',
+                count: 2,
+              },
+              {
+                spellId: '265187',
+                count: 6,
+              },
+              {
+                spellId: '105174',
+                count: 76,
+              },
+              {
+                spellId: '108416',
+                count: 6,
+              },
+              {
+                spellId: '1276452',
+                count: 3,
+              },
+              {
+                spellId: '385899',
+                count: 3,
+              },
+              {
+                spellId: '6789',
+                count: 1,
+              },
+              {
+                spellId: '104773',
+                count: 2,
+              },
+              {
+                spellId: '358733',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 304282,
+                uses: 46,
+              },
+              {
+                spellId: '413984',
+                activeMs: 24215,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'warlock-destruction': {
@@ -18201,7 +26045,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '116858',
     summary: '파괴는 지속 피해로 조각을 만들고, 긴 시전을 확보해 혼돈의 화살을 꽂는 원거리 딜러입니다. 12.1에서는 점화·어둠의 연소의 확정 치명타와 상향된 불의 비를 반영해야 합니다. 지옥소환사는 쇠퇴와 적개심, 악마학자는 의식 완료 뒤 강화 소비와 황폐를 중심으로 단일·두 대상·광역의 선택을 나눕니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Icy Veins의 실제 영웅·대상 수 선택 화면에서 오프닝·단일·광역을 각각 확인했습니다. 현재 특성 페이지와 선택 화면은 단일 지옥소환사·밀집 광역 악마학자를 추천하지만, 같은 사이트의 일부 소개 문장 및 8월 25일 이전 다른 가이드의 광역 기준과 차이가 있습니다. 뒤의 상향과 현재 주문 효과를 우선하며 오래된 6월 로그 비율을 최신 근거로 재사용하지 않습니다. 공개 자료를 작성하는 Motoko의 직업 디스코드 활동은 확인했지만 비공개 메시지를 열람한 것은 아닙니다.',
     playstyle: [
       {
@@ -18341,6 +26185,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 3일 대격변 뒤 주문 대기열로 장신구 집중이 취소되던 수정과 PvE 공격력 변경을 구별합니다. 10월 6일 흑마법사 변경은 PvP 전용입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/destruction/warlock/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 7,296건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/destruction/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 17,064건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=13',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:25:01.807Z · 장비 구간 326 · 437.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Jtmpv4kMF9jBQTPG#fight=14&source=224',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T03:21:26.942Z · 장비 구간 326 · 429.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 대혼란은 기본 50% 복제입니다. 기존 60%를 기본으로 두고 특성 보너스를 더하면 현재 피해를 과대 계산합니다.',
@@ -18352,14 +26224,16 @@ export const guideManuscripts = {
       '일반 검게 물든 영혼은 쇠퇴가 있는 대상에 혼돈의 화살·어둠의 연소를 맞혀 중첩을 올립니다. 모든 소비가 모든 적에게 적용되는 효과가 아닙니다.',
       '니힐람의 불씨 첫·중간·마지막 노드, 실제 메아리와 니힐람의 환영, 시즌 2의 암흑 티탄의 징표를 서로 다른 ID로 저장했습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 3일 대격변 뒤 주문 대기열로 장신구 집중이 취소되던 수정과 PvE 공격력 변경을 구별합니다. 10월 6일 흑마법사 변경은 PvP 전용입니다.',
+      '10월 8일 흑마법사 파괴의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
-      '최신 WCL 이벤트와 Archon 로그를 확보하지 못했습니다. 특정 빌드의 사용률·점수 상승·개인 예상 DPS를 지어내지 않습니다.',
+      '10월 8일 Archon 레이드·쐐기 공개 집계와 대표 WCL 링크를 확인했습니다. 개별 이벤트 전수 비교와 개인 시뮬레이션을 수행한 결과는 아니므로 특정 빌드의 점수 상승이나 개인 예상 DPS를 제시하지 않습니다.',
       '이 가이드의 대상 수 기준은 현재 공개 가이드와 고정 APL의 출발점입니다. 적 수만으로 모든 장비·세트·생존 시간의 최적 소비기를 보장하지 않습니다.',
       '기본 툴팁은 전문화·특성 등급 보정을 생략할 수 있습니다. 점화 충전, 불지옥의 쿨 감소, 역류와 시즌 2 조건을 별도로 표시합니다.',
       '메아리의 소비기별 효과 비율은 툴팁과 확인한 SimC bugs 동작이 다릅니다. 실제 이벤트 검증 전에는 특정 비율을 실측 사실로 주장하지 않습니다.',
       '부모 흑마법사 공용 노트는 두 전문화의 효과를 함께 담습니다. 고통 전용 핫픽스나 악마의 조각당 의식 감소를 파괴에 적용하지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -19151,6 +27025,376 @@ export const guideManuscripts = {
         note: '다른 조건이 없을 때 생성합니다. 시즌 2가 소각을 강화하더라도 중요한 소비·쿨다운을 뒤로 미루고 상한에서 반복하지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmFzMzsYMWMDAAmZGzMziNYgZxoxMAmtYjBAAGDM2AAmZwYGzYDAAwMzMAAMGG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmFzMzsYMWMDAAmZGzMziNYgZxoxMAmtYjBAAGDM2AAmZwYGzYDAAwMzMAAMGG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps',
+        sourceLabel: 'Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 267,
+          heroTreeId: 58,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'e308f33716d6c68a4447f421c68898f4d09295c154e1ebe3f6af7456f1f49d96',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '지옥소환사',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzysZmZmFzMLLzDMAAYGjZmZBMmxwCZgthFaswAAAjZYAAmZAGzYMbAAAmZmBAAGG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzysZmZmFzMLLzDMAAYGjZmZBMmxwCZgthFaswAAAjZYAAmZAGzYMbAAAmZmBAAGG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+/AoE (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 267,
+          heroTreeId: 59,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '7cc6f96071334c38eeb0fbe6eae03f2eb2bdef169168d52f326e170fd39f6969',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '악마학자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmlZmZmFjZbxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYMjZsBAAYmZGAAGDD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmlZmZmFjZbxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYMjZsBAAYmZGAAGDD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 267,
+          heroTreeId: 58,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '290acff8b0838df298508c7a6dd46d3c40a54748f5c83f46f041532151e14a62',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '지옥소환사',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 7296,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/destruction/warlock/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/v2MmwpkTxtjfC97Z#fight=40',
+          recommendedCode: 'CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMLzMzMLGz2iZAAwMGzMziFYgZxoxMAmNsxAAAjBYDAYmBzMjxsBAAYmZGAAGDD',
+          validation: {
+            specId: 267,
+            heroTreeId: 58,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 17064,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/destruction/warlock/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/gPKBZfydYxMHq94F#fight=5',
+          recommendedCode: 'CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLmx2MzYWmNzMzsYmZZZMAAYGjZmZBMmxwCMw2wCNWYAAgxgBAYmBYMjZGAAAmZmBAAzwA',
+          validation: {
+            specId: 267,
+            heroTreeId: 59,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.01809225954201966,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=13',
+            startedAt: '2026-10-08T02:25:01.807Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 437093,
+            itemLevelBracket: 326,
+            heroTree: 59,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '452930',
+                count: 3,
+              },
+              {
+                spellId: '80240',
+                count: 6,
+              },
+              {
+                spellId: '434635',
+                count: 8,
+              },
+              {
+                spellId: '111400',
+                count: 7,
+              },
+              {
+                spellId: '108416',
+                count: 6,
+              },
+              {
+                spellId: '29722',
+                count: 85,
+              },
+              {
+                spellId: '1122',
+                count: 5,
+              },
+              {
+                spellId: '334275',
+                count: 5,
+              },
+              {
+                spellId: '30283',
+                count: 2,
+              },
+              {
+                spellId: '17877',
+                count: 56,
+              },
+              {
+                spellId: '6353',
+                count: 9,
+              },
+              {
+                spellId: '17962',
+                count: 56,
+              },
+              {
+                spellId: '1250533',
+                count: 5,
+              },
+              {
+                spellId: '348',
+                count: 26,
+              },
+              {
+                spellId: '357214',
+                count: 2,
+              },
+              {
+                spellId: '358733',
+                count: 3,
+              },
+              {
+                spellId: '116858',
+                count: 44,
+              },
+              {
+                spellId: '5740',
+                count: 10,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+              {
+                spellId: '385899',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Jtmpv4kMF9jBQTPG#fight=14&source=224',
+            startedAt: '2026-10-07T03:21:26.942Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 429185,
+            itemLevelBracket: 326,
+            heroTree: 58,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1122',
+                count: 5,
+              },
+              {
+                spellId: '30283',
+                count: 3,
+              },
+              {
+                spellId: '80240',
+                count: 7,
+              },
+              {
+                spellId: '111400',
+                count: 8,
+              },
+              {
+                spellId: '29722',
+                count: 72,
+              },
+              {
+                spellId: '6353',
+                count: 5,
+              },
+              {
+                spellId: '442726',
+                count: 6,
+              },
+              {
+                spellId: '442804',
+                count: 1,
+              },
+              {
+                spellId: '152108',
+                count: 6,
+              },
+              {
+                spellId: '116858',
+                count: 71,
+              },
+              {
+                spellId: '48018',
+                count: 3,
+              },
+              {
+                spellId: '17962',
+                count: 62,
+              },
+              {
+                spellId: '5740',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '108416',
+                count: 6,
+              },
+              {
+                spellId: '48020',
+                count: 4,
+              },
+              {
+                spellId: '6789',
+                count: 3,
+              },
+              {
+                spellId: '20707',
+                count: 2,
+              },
+              {
+                spellId: '17877',
+                count: 37,
+              },
+              {
+                spellId: '445468',
+                count: 29,
+              },
+              {
+                spellId: '119905',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
   "monk-brewmaster": {
     patch: '12.1',
@@ -19158,7 +27402,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '121253',
     summary: '양조는 공격을 이어 가며 건들건들을 유지하고, 이미 쌓인 시간차는 정화주로 줄이는 탱커입니다. 12.1에서는 천신주 계열이 더 강해진 대신 기본 쿨다운이 90초로 늘었습니다. 음영파는 니우짜오 중 불의 숨결과 맥주통 반복, 조화의 형은 활력과 잠재된 기운을 나눠 관리하는 것이 핵심입니다. 오프닝을 마친 뒤에는 고정 순서가 아니라 상황별 우선순위를 따릅니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Wowhead, Icy Veins, Peak of Serenity의 양조 설명은 모두 Sinzhu의 작업이므로 독립된 세 작성자의 합의로 세지 않았습니다. Icy Veins에서는 방어 레이드와 표준 쐐기 선택을 실제로 바꾸어 표시되는 우선순위를 확인했습니다. Method Nate와 다른 오프닝도 있지만 선택 특성·방어 목적이 다른 예시를 하나로 합치지 않았습니다. 일부 공개 가이드에 남은 정화된 기 중첩, 1분 천신주, 빈 통 뒤 즉시 음료 치유라는 설명보다 현재 주문 효과를 우선합니다. 흡수량 0처럼 캐릭터 수치가 풀리지 않은 툴팁은 실전 수치가 아닙니다. SimC는 고정 커밋의 구현·특성 단계 값을 읽었으며 개인 심크를 돌린 결과나 실측 로그로 제시하지 않습니다.',
     playstyle: [
       {
@@ -19291,6 +27535,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '미국 10월 6일 빠른 한 모금의 시간차 정화는 누적 건들건들 3초마다 8%, 허초는 맥주 사용 후 10% 회피를 8초 부여합니다. 한국어 툴팁에는 각각 5%·5초가 남아 있어 공식 공지와 충돌을 표시합니다. 방어를 위한 맥주 사용을 회피 유지 때문에 미루지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/brewmaster/monk/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 6,677건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/brewmaster/monk/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 49,771건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/zNrYkfZ6VatbHG4J#fight=21&source=16',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T10:14:16.252Z · 장비 구간 327 · 412.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/LhVpFTtamrynZJ2M#fight=2&source=6',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:12:01.376Z · 장비 구간 327 · 412.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 패치 노트와 현재 천신주 계열 툴팁의 90초 기본 재사용을 함께 확인했습니다. 바닥 없는 잔, 간편 양조, 공격의 재사용 감소를 적용한 실제 간격은 별도로 계산해야 합니다.',
@@ -19300,13 +27572,15 @@ export const guideManuscripts = {
       '음영파의 장벽의 지혜는 니우짜오 중 불의 숨결에서 추가 질풍격을 방출합니다. 후려차기 기본 리듬만 지켜도 자동으로 최대 활용된다고 설명하지 않습니다.',
       'Sinzhu의 세 사이트는 같은 작성자 계열로 묶어 읽었고 Method Nate의 다른 오프닝은 선택 특성 차이와 함께 봤습니다. 최신 레이드·쐐기 로그 집계, 개인 심크, 비공개 디스코드 자료는 확보하지 못했습니다.',
       '미국 10월 6일 빠른 한 모금의 시간차 정화는 누적 건들건들 3초마다 8%, 허초는 맥주 사용 후 10% 회피를 8초 부여합니다. 한국어 툴팁에는 각각 5%·5초가 남아 있어 공식 공지와 충돌을 표시합니다. 방어를 위한 맥주 사용을 회피 유지 때문에 미루지 않습니다.',
+      '10월 8일 수도사 양조의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '이 운용 예시는 의식 상실 연계와 한 잔 더를 선택한 빌드입니다. 여세 몰이, 비취의 섬광, 폭발하는 맥주통 미선택 변형에는 각 조건을 적용해야 합니다.',
       '흡수기 두 개를 동시에 선택하거나 범의 장풍 대체 특성과 수동 범의 장풍 연계를 동시에 쓰는 빌드는 만들지 않습니다.',
       '세트 보너스가 없는 캐릭터는 뜨거운 감자 사전 준비를 생략합니다. 세트 유무와 영웅 특성이 다른 로그의 시전 횟수를 그대로 목표로 삼지 마세요.',
       '방어기 배정은 실제 탱킹 시간과 피해 종류에 따라 바뀝니다. 아래 공격 우선순위가 급한 정화·해제·차단보다 먼저라는 뜻은 아닙니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -20153,6 +28427,386 @@ export const guideManuscripts = {
         note: '다른 조건이 없고 기력이 충분하면 범의 장풍으로 이어 갑니다. 다음 맥주통 비용을 남기고 새 잠재된 기운을 소비할 기회를 챙깁니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Standard) (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 268,
+          heroTreeId: 66,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f07f56ca0d07d7f2a336f7e5bde2e53cdca3a0341090674208aea484b97bc1f7',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '조화의 종사',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGDzwyM2MmZMAAAAAAALLgYmBmhBzgZmZGzsNMjZWGW2stNbzYWAAgNEAAgZbWamZmNG2AYmhpxAGAwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGDzwyM2MmZMAAAAAAALLgYmBmhBzgZmZGzsNMjZWGW2stNbzYWAAgNEAAgZbWamZmNG2AYmhpxAGAwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 268,
+          heroTreeId: 65,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '77f6066094b79298ef61f0ab9be8db8c617fa0c977215582aa1712fb9d9af5bd',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '음영파',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Standard) (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 268,
+          heroTreeId: 66,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f07f56ca0d07d7f2a336f7e5bde2e53cdca3a0341090674208aea484b97bc1f7',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '조화의 종사',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 6677,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/brewmaster/monk/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/wxGXygNcdmY178La#fight=15',
+          recommendedCode: 'CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMYmhZ2YwMzMDz2wMGLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA',
+          validation: {
+            specId: 268,
+            heroTreeId: 65,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 49771,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/brewmaster/monk/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/29ydAKYxf3BmQTLH#fight=11',
+          recommendedCode: 'CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMjZ2YmxYZYZ7B22mNMLAAwysMtMbzsMAAAAG2AzMgpxAAAG',
+          validation: {
+            specId: 268,
+            heroTreeId: 66,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0010619031340689073,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/zNrYkfZ6VatbHG4J#fight=21&source=16',
+            startedAt: '2026-10-07T10:14:16.252Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 412029,
+            itemLevelBracket: 327,
+            heroTree: 65,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '115399',
+                count: 2,
+              },
+              {
+                spellId: '322109',
+                count: 1,
+              },
+              {
+                spellId: '115181',
+                count: 73,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '116841',
+                count: 2,
+              },
+              {
+                spellId: '205523',
+                count: 85,
+              },
+              {
+                spellId: '119582',
+                count: 25,
+              },
+              {
+                spellId: '121253',
+                count: 82,
+              },
+              {
+                spellId: '100780',
+                count: 76,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '322101',
+                count: 4,
+              },
+              {
+                spellId: '115546',
+                count: 11,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '325153',
+                count: 5,
+              },
+              {
+                spellId: '123986',
+                count: 6,
+              },
+              {
+                spellId: '109132',
+                count: 10,
+              },
+              {
+                spellId: '1241059',
+                count: 9,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '132578',
+                count: 5,
+              },
+              {
+                spellId: '115203',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/LhVpFTtamrynZJ2M#fight=2&source=6',
+            startedAt: '2026-10-08T01:12:01.376Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 412467,
+            itemLevelBracket: 327,
+            heroTree: 65,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '121253',
+                count: 78,
+              },
+              {
+                spellId: '101643',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '119582',
+                count: 42,
+              },
+              {
+                spellId: '119381',
+                count: 2,
+              },
+              {
+                spellId: '115399',
+                count: 6,
+              },
+              {
+                spellId: '123986',
+                count: 12,
+              },
+              {
+                spellId: '100780',
+                count: 45,
+              },
+              {
+                spellId: '115203',
+                count: 2,
+              },
+              {
+                spellId: '116841',
+                count: 4,
+              },
+              {
+                spellId: '116844',
+                count: 5,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '115546',
+                count: 9,
+              },
+              {
+                spellId: '322109',
+                count: 3,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '325153',
+                count: 7,
+              },
+              {
+                spellId: '109132',
+                count: 6,
+              },
+              {
+                spellId: '119996',
+                count: 3,
+              },
+              {
+                spellId: '115181',
+                count: 73,
+              },
+              {
+                spellId: '132578',
+                count: 5,
+              },
+              {
+                spellId: '205523',
+                count: 58,
+              },
+              {
+                spellId: '1241059',
+                count: 12,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 24845,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'monk-windwalker': {
@@ -20161,7 +28815,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '113656',
     summary: '풍운은 같은 공격을 연달아 쓰지 않으면서 분노의 주먹을 제때 완주하는 근접 딜러입니다. 12.1에서는 시즌 2 끊임없는 박자를 해오름차기와 회전 학다리차기 중 어디에 쓸지가 중요해졌습니다. 음영파는 질풍격과 기본 연계를, 천신합일은 서로 다른 옥룡의 마음을 이어 쓰는 극딜을 중심으로 익히세요.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Wowhead·Icy Veins·Peak of Serenity는 풍운 작성자가 Babylonius로 겹치므로 독립된 세 작성자의 합의로 세지 않습니다. 9월 14일 갱신된 Peak 공개 가이드를 운용의 주된 기준으로 삼고, Method J-Funk와 Blizzard 원문 및 현재 주문 효과를 대조했습니다. 12.1 초기 자료들의 회전 학다리차기 증감 수치는 비교 기준이 달라 하나의 합산 너프로 계산하지 않습니다. 공식 출시 노트의 감소와 현재 세트 조건을 구분합니다. Archon은 접근이 제한되어 예전 6월 사용률을 재사용하지 않았고, 비공개 디스코드 메시지나 상위 로그를 새로 분석한 것으로 표시하지 않습니다. 툴팁에서 전문화 보정이 빠진 비용·기본 지속시간은 실제 효과 데이터와 구분했습니다.',
     playstyle: [
       {
@@ -20301,6 +28955,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '9월 23일 PvE 자동 공격 25%·이중 위협 20%·해오름차기 8% 상향을 반영했습니다. 9월 24일에는 천신합일·질풍격의 PvP 보정이 PvE에 잘못 적용되던 오류가 수정됐습니다. 10월 6일 마비 계열 변경은 PvP 전용입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/windwalker/monk/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 11,821건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/windwalker/monk/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 75,016건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/KCBYH9LDnJMRxdav#fight=4&source=10',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:11:00.756Z · 장비 구간 331 · 299.7초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/7tkpDvxFg8rCcjJ3#fight=4&source=48',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:57:56.186Z · 장비 구간 331 · 308.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '시즌 2 2세트는 분노의 주먹 시작에 50% 효율의 타격 하나를 더합니다. 전체 분노의 주먹 피해 50% 증가와 다릅니다.',
@@ -20310,12 +28992,14 @@ export const guideManuscripts = {
       '분노의 주먹은 이동 가능한 채널입니다. 일반 이동을 취소 사유로 보지 않고 사거리·방향·다른 기술로 끊긴 시점을 확인합니다. 천신합일의 권장 조기 종료와 같은 기준으로 판단하지 않습니다.',
       '최신 Peak는 음영파의 단순함과 천신합일의 높은 숙련도 요구를 함께 설명합니다. 예전 음영파 99%대 집계를 현재 추천의 근거로 재사용하지 않았습니다.',
       '9월 23일 PvE 자동 공격 25%·이중 위협 20%·해오름차기 8% 상향을 반영했습니다. 9월 24일에는 천신합일·질풍격의 PvP 보정이 PvE에 잘못 적용되던 오류가 수정됐습니다. 10월 6일 마비 계열 변경은 PvP 전용입니다.',
+      '10월 8일 수도사 풍운의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '아래 차트는 소용돌이 용의 주먹·정점의 발구르기·호안주 마지막 노드 선택 예시입니다. 바람의 군주의 일격을 선택했다면 두 기술을 동시에 넣지 말고 본문의 대안 순서를 따르세요.',
       '세트 미보유자는 끊임없는 박자 조건을 건너뜁니다. 단일과 광역을 가르는 기준은 보이는 적 수뿐 아니라 실제로 함께 맞힐 수 있고 살아 있는 대상 수입니다.',
       '현재 상위 로그 사용률·평균 DPS는 확보하지 못했습니다. 영웅 특성 선택과 장비 비교는 가이드 추천이며 특정 점수나 상승률을 보장하지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -21098,6 +29782,363 @@ export const guideManuscripts = {
         note: '나머지 기 소비 · 핵심 쿨기 대기: 자원이 남을 때 연계를 유지하고 쿨다운을 당깁니다. 다음 분노의 주먹 비용까지 쓰면서 모든 글쿨을 억지로 채우지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMMLzEAwiZ2mZYmZmBAwGAMLzSzMzsAgBmZAglBiB8B',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMMLzEAwiZ2mZYmZmBAwGAMLzSzMzsAgBmZAglBiB8B',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps',
+        sourceLabel: 'Raid - Single Target  (Recommended)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 269,
+          heroTreeId: 65,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '810da3985be1c404c3382f9418a0eb15a64203b9af15712b7e3e5a690604cb39',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '음영파',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswQMgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswQMgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Weekly Keys)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 269,
+          heroTreeId: 65,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '829a177b84d105d5800f6afea9ebd2be5fb4c039692510cbff72cd299d239280',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '음영파',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2wMsNzYbGAAAAAAAAAAAglhRzYGGGwMGmZmZY2YmhZZmAAWMz2MzYMzMAA2AgZZWamZmFAMwMDAsMQMgB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2wMsNzYbGAAAAAAAAAAAglhRzYGGGwMGmZmZY2YmhZZmAAWMz2MzYMzMAA2AgZZWamZmFAMwMDAsMQMgB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps',
+        sourceLabel: 'Raid - Cleave  (Recommended)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 269,
+          heroTreeId: 65,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'd06252727b198fbdab25e4b152d27c6069041a1158a4f8f2dfdaab352d3b4363',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '음영파',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 11821,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/windwalker/monk/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/VaJgmnHXyTktRGpr#fight=33',
+          recommendedCode: 'C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZWGTAAAjBwMAjlBwMzs5CA',
+          validation: {
+            specId: 269,
+            heroTreeId: 64,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 75016,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/windwalker/monk/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/fYGF1VbLjXmNgKB8#fight=2',
+          recommendedCode: 'C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswAGwA',
+          validation: {
+            specId: 269,
+            heroTreeId: 65,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.028096573865386797,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/KCBYH9LDnJMRxdav#fight=4&source=10',
+            startedAt: '2026-10-08T01:11:00.756Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 299701,
+            itemLevelBracket: 331,
+            heroTree: 64,
+            augmentationCount: 2,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '101545',
+                count: 1,
+              },
+              {
+                spellId: '101546',
+                count: 42,
+              },
+              {
+                spellId: '123904',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '152175',
+                count: 12,
+              },
+              {
+                spellId: '122470',
+                count: 2,
+              },
+              {
+                spellId: '101643',
+                count: 2,
+              },
+              {
+                spellId: '467307',
+                count: 11,
+              },
+              {
+                spellId: '107428',
+                count: 36,
+              },
+              {
+                spellId: '443591',
+                count: 2,
+              },
+              {
+                spellId: '100780',
+                count: 55,
+              },
+              {
+                spellId: '100784',
+                count: 35,
+              },
+              {
+                spellId: '443028',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '322109',
+                count: 1,
+              },
+              {
+                spellId: '113656',
+                count: 31,
+              },
+              {
+                spellId: '109132',
+                count: 9,
+              },
+              {
+                spellId: '1249625',
+                count: 5,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 25007,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 298142,
+                uses: 75,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/7tkpDvxFg8rCcjJ3#fight=4&source=48',
+            startedAt: '2026-10-07T00:57:56.186Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 308365,
+            itemLevelBracket: 331,
+            heroTree: 65,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '113656',
+                count: 31,
+              },
+              {
+                spellId: '101546',
+                count: 23,
+              },
+              {
+                spellId: '100780',
+                count: 71,
+              },
+              {
+                spellId: '1249625',
+                count: 5,
+              },
+              {
+                spellId: '107428',
+                count: 40,
+              },
+              {
+                spellId: '101643',
+                count: 2,
+              },
+              {
+                spellId: '467307',
+                count: 14,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '122470',
+                count: 2,
+              },
+              {
+                spellId: '152175',
+                count: 8,
+              },
+              {
+                spellId: '109132',
+                count: 5,
+              },
+              {
+                spellId: '116841',
+                count: 1,
+              },
+              {
+                spellId: '119996',
+                count: 2,
+              },
+              {
+                spellId: '100784',
+                count: 39,
+              },
+              {
+                spellId: '115203',
+                count: 2,
+              },
+              {
+                spellId: '322109',
+                count: 1,
+              },
+              {
+                spellId: '116844',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'monk-mistweaver': {
@@ -21106,7 +30147,7 @@ export const guideManuscripts = {
     status: '12.1 로그 기반 실전 심화 가이드',
     graphCenterSkillId: '467307',
     extraSkills: [],
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 운무 수도사는 소생의 안개를 미리 퍼뜨리고, 시즌 2 세트가 강화한 질풍차기 또는 해오름차기를 놓치지 않으면서, 실제 광역 피해에 천신합일과 옥룡의 마음 구간을 맞추는 근접 힐러입니다. 띵진아잘좀하자-아즈샤라의 공개 휘감긴 제단 로그는 큰 쿨기 횟수보다 생기 충전과 질풍차기 분당 사용 횟수, 기의 고치 회전, 천신합일 타이밍에서 손실이 컸습니다. 특히 천신합일 과치유 54.5%는 비교 로그의 16.7~18.0%보다 높았고, 생기 충전은 분당 14.67회로 비교 로그의 19.44~22.42회보다 적었습니다. 이 가이드는 그 차이를 단순 HPS 평가가 아니라 실제로 어떤 버튼과 타이밍을 고쳐야 하는지까지 연결합니다.',
     sourceNote: 'Blizzard 12.1 노트의 운무 전체 치유량 3% 감소와 특화: 안개 돌풍 50% 증가, 회전 학다리차기·주학의 길 변경을 기준으로 운용을 작성했습니다. 2026-09-22 PvE 핫픽스는 운무 전체 치유량을 5% 높이고 생기 충전·셰이룬의 선물 치유량을 각각 별도로 15% 높였습니다. 새 수치가 주문 사용 순서를 자동으로 뒤집거나 이전 로그의 절대 HPS를 현재 값으로 바꾸지는 않습니다. 8월 29일 Archon 14일 집계는 당시 천신의 대변자가 영웅 공격대 97.7%, 쐐기 +7~19 96.3%였다는 과거 자료입니다. 휘감긴 제단 일반 로그 세 건의 분당 시전과 과치유 비교도 핫픽스 전 운용 복기에만 사용합니다.',
     playstyle: [
@@ -21261,6 +30302,34 @@ export const guideManuscripts = {
         updated: '2026-08-27 원문 / 2026-10-08 확인',
         note: '두 영웅의 천신합일과 집중의 천둥 차 분기, 단일 구조와 소생의 안개 확산, 천신·재활 분산을 확인했습니다. 10월 상향 뒤 비교 로그는 아닙니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/mistweaver/monk/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 7,337건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/mistweaver/monk/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 66,526건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T02:04:31.211Z · 장비 구간 329 · 408.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Na9cWA3f1M7zLRHY#fight=1&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:35:26.414Z · 장비 구간 329 · 408.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '9월 22일 PvE 핫픽스에서 운무 전체 치유량이 5% 증가하고 생기 충전·셰이룬의 선물 치유량이 각각 15% 더 증가했습니다. 개별 주문 증가를 전체 치유 증가와 단순히 더해 적용하지 않습니다.',
@@ -21274,6 +30343,7 @@ export const guideManuscripts = {
       '검수 로그는 423.3초에 생명석과 치유 물약을 거의 동시에 사용했고, 마지막 강화주는 453.0초였습니다. 494.8초 사망 직전에는 남은 개인 생존 카드가 없었습니다.',
       'Warcraft Logs 개인 HPS는 공대가 받은 피해, 다른 힐러 수와 장비 차이에 흔들리므로 절대 점수보다 같은 전투의 분당 시전, 과치유, 쿨기 시점과 사망 원인을 비교 기준으로 사용했습니다.',
       '미국 10월 6일 활기의 안개와 포용의 안개 치유량이 각각 15% 증가했습니다. 포용의 안개 상향은 PvP 제외이며, 9월 23일 전체 치유 5%·생기 충전과 셰이룬의 선물 15% 상향에 더하는 별도 변경입니다. 전체 치유량이 추가 15% 오른 변경으로 해석하지 않습니다.',
+      '10월 8일 수도사 운무의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '8월 29일 Archon 선택률과 휘감긴 제단 로그 비교는 9월 22일 상향 이전 자료입니다. 분당 시전·과치유·방어기 타이밍은 복기하되 절대 HPS와 현재 영웅 특성 점유율로 재사용하지 않습니다.',
@@ -21285,7 +30355,8 @@ export const guideManuscripts = {
       '내면의 단결은 천신합일이 끝날 때 자동 발동합니다. 빠른 회수가 필요한 경우에만 채널 중 재시전하며, 자동 발동을 놓쳤다고 잘못 판정하지 않습니다.',
       '재활은 광역 마법 해제가 위험한 전투에서는 해제 때문에 오히려 사고를 낼 수 있습니다. 보스별로 평온 선택 여부를 먼저 확인합니다.',
       '12.1 스탯 경향은 지능-가속-치명타-특화-유연성이지만 장비 획득 편향이 있습니다. 특화 50% 상향만 보고 아이템 레벨을 버리면서 특화로 몰지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -21895,6 +30966,350 @@ export const guideManuscripts = {
       singleTarget: '단일 구조',
       aoe: '파티·공대 회복',
     },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+        validation: {
+          specId: 270,
+          heroTreeId: 64,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '9c3849884d5e9074ead0a63e308489e7e1d7ac75342ae1fc7adb1794ab569d57',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '천신의 대변자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZsZZGzs9AzstsMzYhhmxMgBDYWmZmZY2wMMLzEAAAAABYx2Mbz2MDAAMAAzAGDsIjZA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZsZZGzs9AzstsMzYhhmxMgBDYWmZmZY2wMMLzEAAAAABYx2Mbz2MDAAMAAzAGDsIjZA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 270,
+          heroTreeId: 64,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'bc45ce2af6c66b727f118e02b83d5b9ec48122aceb2709c151e4671681149229',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '천신의 대변자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 270,
+          heroTreeId: 64,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '9c3849884d5e9074ead0a63e308489e7e1d7ac75342ae1fc7adb1794ab569d57',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '천신의 대변자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 7337,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/mistweaver/monk/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/zq2gbMcxCXmnVvrK#fight=1',
+          recommendedCode: 'C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAAAWsMzysNzAAADYAmBMGGLyYGA',
+          validation: {
+            specId: 270,
+            heroTreeId: 64,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 66526,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/mistweaver/monk/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/8Cmw2VPYy7XWtAfg#fight=11',
+          recommendedCode: 'C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYmpZMDYwAYmZmhZDzglZCAAAAAAWsNz2sNzAAADGDwMgxALyYGA',
+          validation: {
+            specId: 270,
+            heroTreeId: 64,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0004997048312148951,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2',
+            startedAt: '2026-10-07T02:04:31.211Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 408241,
+            itemLevelBracket: 329,
+            heroTree: 64,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '101643',
+                count: 2,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '124682',
+                count: 51,
+              },
+              {
+                spellId: '115151',
+                count: 83,
+              },
+              {
+                spellId: '115203',
+                count: 3,
+              },
+              {
+                spellId: '116670',
+                count: 135,
+              },
+              {
+                spellId: '443028',
+                count: 5,
+              },
+              {
+                spellId: '116680',
+                count: 19,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '116849',
+                count: 5,
+              },
+              {
+                spellId: '322118',
+                count: 3,
+              },
+              {
+                spellId: '109132',
+                count: 3,
+              },
+              {
+                spellId: '115294',
+                count: 15,
+              },
+              {
+                spellId: '115310',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '119996',
+                count: 1,
+              },
+              {
+                spellId: '1291894',
+                count: 5,
+              },
+              {
+                spellId: '467307',
+                count: 90,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 40010,
+                uses: 1,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Na9cWA3f1M7zLRHY#fight=1&source=7',
+            startedAt: '2026-10-07T01:35:26.414Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 408037,
+            itemLevelBracket: 329,
+            heroTree: 64,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '115151',
+                count: 73,
+              },
+              {
+                spellId: '116849',
+                count: 4,
+              },
+              {
+                spellId: '443028',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '109132',
+                count: 4,
+              },
+              {
+                spellId: '115203',
+                count: 1,
+              },
+              {
+                spellId: '115175',
+                count: 37,
+              },
+              {
+                spellId: '1291894',
+                count: 5,
+              },
+              {
+                spellId: '322118',
+                count: 2,
+              },
+              {
+                spellId: '467307',
+                count: 82,
+              },
+              {
+                spellId: '124682',
+                count: 56,
+              },
+              {
+                spellId: '116670',
+                count: 84,
+              },
+              {
+                spellId: '115310',
+                count: 2,
+              },
+              {
+                spellId: '115294',
+                count: 33,
+              },
+              {
+                spellId: '116680',
+                count: 17,
+              },
+              {
+                spellId: '322109',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   "paladin-protection": {
@@ -21903,7 +31318,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '53600',
     summary: '정의의 방패를 끊지 않으면서 선봉대 방패의 자원을 소비하고, 큰 타격에는 생존기를 따로 배정하세요. 기사단은 빛의 망치 뒤 생성기로 자동 망치를 이어 가고, 빛대장장이는 무장 충전과 무료 영광의 서약을 연결합니다. 광역에서도 기본 방어와 실제 적중이 먼저입니다.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Pumps의 Wowhead, Panthea의 Icy Veins, Tactyks의 Method를 비교했습니다. Icy Veins는 두 영웅 특성의 단일·광역 선택과 표시되는 오프닝을 직접 확인했습니다. Hammer of Wrath 운영진인 Panthea의 공개 글을 참고했으며 비공개 디스코드 내용을 읽었다고 주장하지 않습니다. 최신 로그 사용률과 개인 심크 결과는 확보하지 못했습니다. 일부 가이드에 남은 옛 생존기 수치, 빛의 망치 비용, 광신도의 용장 연장량은 현재 시전 툴팁과 공식 패치 노트를 우선했습니다. 시즌 2 효과는 고정된 SimC 구현과 대조했지만 구현을 실측 피해 결과로 취급하지 않습니다.',
     playstyle: [
       {
@@ -22036,6 +31451,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '9월 23일 보호의 모든 능력 공격력 6% 상향은 PvP에 적용되지 않습니다. 9월 16일 신성화 첫 틱의 시즌 2 치명타 보정 수정도 포함했습니다. 10월 6일 PvP 집행의 손길 계열 조정은 PvE 방어 효과에 합산하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/protection/paladin/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 9,095건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/protection/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 208,992건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=10',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:04:17.097Z · 장비 구간 328 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/8mDJhCrFjfbP2T9g#fight=12&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:34:13.338Z · 장비 구간 328 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '보호 심판 275779, 천벌의 망치 1241413, 파수꾼 시전 389539를 구분했습니다. 파수꾼 385438은 버프이며 일반 응징의 방패에는 기본 신성한 힘 생성이 없습니다.',
@@ -22046,13 +31489,15 @@ export const guideManuscripts = {
       '기사단의 빛의 망치는 현재 실제 시전 비용이 3개이고, 자동 최고천의 망치는 직접 쓰는 스킬이 아닙니다. 빛대장장이의 무장이 신성한 힘 3개를 주는 효과는 신성의 조건입니다.',
       '공개 작성자들의 단일·광역 차이는 선택 특성과 방어 우선 조건까지 비교했습니다. 최신 WCL·Archon 통계와 비공개 디스코드 자료는 확보하지 못했습니다.',
       '9월 23일 보호의 모든 능력 공격력 6% 상향은 PvP에 적용되지 않습니다. 9월 16일 신성화 첫 틱의 시즌 2 치명타 보정 수정도 포함했습니다. 10월 6일 PvP 집행의 손길 계열 조정은 PvE 방어 효과에 합산하지 않습니다.',
+      '10월 8일 성기사 보호의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '아래 흐름은 선봉대의 영광을 마지막까지 선택하고 축복받은 망치를 사용하는 예시입니다. 정의의 망치를 골랐다면 대응 생성기를 바꾸되 전투 전 허공에서 자원을 만드는 단계를 그대로 따라 하지 마세요.',
       '파수꾼을 선택한 흐름입니다. 미선택 시 해당 자리는 응징의 격노로 바꾸며 두 기술을 동시에 누르지 않습니다. 정의로운 수호자의 지속시간 감소도 적용됩니다.',
       '단일·광역 표는 공격 선택을 돕습니다. 즉시 필요한 생존·해제·차단을 표 아래까지 기다리지 않습니다. 급한 방어에 필요한 신성한 힘은 공격 최적화보다 먼저 배정합니다.',
       '정점 중간 노드의 툴팁 계급과 최종 배분 값, 천상의 강권의 툴팁과 패치 수치에는 차이가 남아 있습니다. 실제 특성 배분과 자원 표시를 확인하며 확인되지 않은 확률·증가량을 고정하지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -22871,6 +32316,376 @@ export const guideManuscripts = {
         note: '무료 효과와 치유·흡수 필요가 맞으면 사용합니다. 격동하는 천상 중 망치 낙하를 활용할 수 있지만 글쿨·마나와 다음 방어가 우선입니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 66,
+          heroTreeId: 49,
+          points: {
+            '1': 35,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a1f5ace966981c303b200bf086b3ec92028d08222d0fb856e03ac77649053f3d',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '빛의 대장장이',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMjZmZZbMmlZZWmxAAMAAAAAAopZGmxMDjZrNAMwAmBbDAAgAMzstt0yMjFLLYAAzwYAwMDAzMDyYB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMjZmZZbMmlZZWmxAAMAAAAAAopZGmxMDjZrNAMwAmBbDAAgAMzstt0yMjFLLYAAzwYAwMDAzMDyYB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 66,
+          heroTreeId: 49,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '2899c5a9178d9347939dba68f8aa634d35486a6bec108b4508b1273760e34673',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '빛의 대장장이',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 66,
+          heroTreeId: 49,
+          points: {
+            '1': 35,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a1f5ace966981c303b200bf086b3ec92028d08222d0fb856e03ac77649053f3d',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '빛의 대장장이',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 9095,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/protection/paladin/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/XxgRcqJA3YzpnmaD#fight=9',
+          recommendedCode: 'CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmZmZmx2yYYZMLzYAAGAAAAAAkmZWmZMzwY2aDADMgZw2AAAAgZmltlWmZsYZDDgxYGGDAmZAgBYsA',
+          validation: {
+            specId: 66,
+            heroTreeId: 49,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 208992,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/protection/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/QWxz9Yd7GJVcmBAN#fight=12',
+          recommendedCode: 'CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAAAmZW2WaZmxilFmBwgZ2wAgZGAMzAGL',
+          validation: {
+            specId: 66,
+            heroTreeId: 49,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.000027853256664665357,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=10',
+            startedAt: '2026-10-08T00:04:17.097Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 323122,
+            itemLevelBracket: 328,
+            heroTree: 48,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '26573',
+                count: 23,
+              },
+              {
+                spellId: '53600',
+                count: 102,
+              },
+              {
+                spellId: '1241413',
+                count: 34,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '86659',
+                count: 3,
+              },
+              {
+                spellId: '642',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '204019',
+                count: 92,
+              },
+              {
+                spellId: '62124',
+                count: 5,
+              },
+              {
+                spellId: '275779',
+                count: 65,
+              },
+              {
+                spellId: '853',
+                count: 1,
+              },
+              {
+                spellId: '6940',
+                count: 2,
+              },
+              {
+                spellId: '190784',
+                count: 4,
+              },
+              {
+                spellId: '31850',
+                count: 5,
+              },
+              {
+                spellId: '375576',
+                count: 6,
+              },
+              {
+                spellId: '427453',
+                count: 12,
+              },
+              {
+                spellId: '389539',
+                count: 6,
+              },
+              {
+                spellId: '31935',
+                count: 33,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/8mDJhCrFjfbP2T9g#fight=12&source=4',
+            startedAt: '2026-10-07T00:34:13.338Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 323113,
+            itemLevelBracket: 328,
+            heroTree: 49,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '204079',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '1241413',
+                count: 35,
+              },
+              {
+                spellId: '190784',
+                count: 7,
+              },
+              {
+                spellId: '85673',
+                count: 20,
+              },
+              {
+                spellId: '432459',
+                count: 2,
+              },
+              {
+                spellId: '26573',
+                count: 15,
+              },
+              {
+                spellId: '853',
+                count: 3,
+              },
+              {
+                spellId: '391054',
+                count: 1,
+              },
+              {
+                spellId: '86659',
+                count: 3,
+              },
+              {
+                spellId: '275779',
+                count: 67,
+              },
+              {
+                spellId: '389539',
+                count: 6,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '642',
+                count: 1,
+              },
+              {
+                spellId: '53600',
+                count: 77,
+              },
+              {
+                spellId: '204019',
+                count: 83,
+              },
+              {
+                spellId: '31935',
+                count: 30,
+              },
+              {
+                spellId: '62124',
+                count: 4,
+              },
+              {
+                spellId: '432472',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '31850',
+                count: 3,
+              },
+              {
+                spellId: '375576',
+                count: 6,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1044',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'paladin-retribution': {
@@ -22879,7 +32694,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '383328',
     summary: '신성한 힘을 넘기지 않으면서 무료 소비기와 시즌 2의 다음 소비기 조건을 이어 갑니다. 태양의 사자는 날개 중 천벌의 망치와 새벽빛을, 기사단은 파멸의 재 뒤 빛의 망치와 자동 망치 연장을 챙기세요.',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: '2026-09-21에 12.1 공식 변경과 현재 한·영 툴팁을 확인했습니다. Bolas의 Wowhead와 Icy Veins는 같은 작성자의 설명이며, Seqq의 Method와 구분해 비교했습니다. 최신 WCL·Archon 사용률과 개인 장비 심크는 확보하지 못했으므로 과거 기사단 사용률을 현재 추천 근거로 쓰지 않습니다.',
     playstyle: [
       {
@@ -22998,6 +32813,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '9월 23일 기사단 빛의 망치 피해 50%·최고천의 망치 피해 12% 상향을 반영했습니다. 태양의 사자와 기사단의 상향 후 우열은 같은 조건의 로그로 재확인해야 합니다. 10월 6일 궁극의 응징 변경은 PvP 전용입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/retribution/paladin/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 21,961건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/retribution/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 251,360건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/m1WQ8RdZJD9c6Bkt#fight=2&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:06:06.695Z · 장비 구간 329 · 394.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/n7wkfTh4Pat63mAD#fight=5&source=9',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:24:59.175Z · 장비 구간 329 · 394.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '내면의 빛 첫 노드가 선택한 전쟁의 기술 또는 정의로운 이유를 한 번 더 저장해 최대 2중첩으로 만듭니다. 강화량은 현재 80%이며 전쟁의 기술의 실제 특성 ID는 406064입니다.',
@@ -23008,13 +32851,15 @@ export const guideManuscripts = {
       '복수의 방패는 신의 가호에서 자동으로 발동하는 흡수 효과입니다. 실제 버튼 403876, 특성 1261562, 흡수 효과 184662를 따로 확인했습니다.',
       '성전의 강타의 15% 공격 속도 방향은 공식 패치 노트와 현재 한·영 툴팁이 충돌합니다. 수치가 일치했다고 주장하지 않으며 실제 클라이언트와 로그에서 재확인해야 합니다.',
       '9월 23일 기사단 빛의 망치 피해 50%·최고천의 망치 피해 12% 상향을 반영했습니다. 태양의 사자와 기사단의 상향 후 우열은 같은 조건의 로그로 재확인해야 합니다. 10월 6일 궁극의 응징 변경은 PvP 전용입니다.',
+      '10월 8일 성기사 징벌의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '기본 흐름은 성전의 강타·전쟁의 기술·내면의 빛 마지막 노드·사형 선고를 선택한 예시입니다. 수동 기사단의 공세나 정의로운 이유를 고른 빌드는 해당 생성·발동 조건으로 바꿉니다.',
       '천상의 심판관을 이용한 단일·광역 교차 소비는 시즌 2 4세트가 있을 때만 적용합니다. 미착용이면 관련 행을 건너뛰며 최고천의 유산과 창공의 힘 같은 별도 조건은 그대로 확인합니다.',
       '찬란한 영광은 수동 날개를 없애는 대안입니다. 추천 간소화 빌드에서 사형 선고 대신 투자하지만 둘이 같은 선택 노드는 아닙니다. 함께 투자한 경우에는 사형 선고 후 파멸의 재를 사용합니다.',
       '일부 작성자 간 세부 우선순위와 구세의 빛 중첩, 기본 툴팁의 날개 재사용 표시는 서로 다릅니다. 실제 선택한 특성의 사용 가능 상태를 우선하고 확인하지 못한 차이를 개인 DPS 손실 수치로 만들지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -23780,14 +33625,364 @@ export const guideManuscripts = {
         note: '날개 밖의 나머지 생성은 심판을 사용합니다. 성전의 강타 빌드에서 수동 성전사의 일격을 추가하지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 70,
+          heroTreeId: 48,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b90e849f22c7df27630587052925323e4c40edc80a00251f7d9b7aca79443b09',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기사단',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxGbAAAZmptZmtZAAbAGAMmhBmxMzGWmBDjZMYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxGbAAAZmptZmtZAAbAGAMmhBmxMzGWmBDjZMYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 70,
+          heroTreeId: 48,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'fbde3b9c8fb636e9cdc12d1d8480fdbeb3d1fc06407a4c4b47c9631b74ba10d2',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기사단',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 70,
+          heroTreeId: 48,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'b90e849f22c7df27630587052925323e4c40edc80a00251f7d9b7aca79443b09',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기사단',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 21961,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/retribution/paladin/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/h9J4TzfyvQmNDB3X#fight=1',
+          recommendedCode: 'CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBAAAWAMAYMDDMjZmNgZmhxMGMA',
+          validation: {
+            specId: 70,
+            heroTreeId: 50,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 251360,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/retribution/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/abjvzGdJ3nFKLQ7x#fight=4',
+          recommendedCode: 'CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBAAAWAMAYMDDMjZmNgZmhxMGMA',
+          validation: {
+            specId: 70,
+            heroTreeId: 50,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0012209177147054725,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/m1WQ8RdZJD9c6Bkt#fight=2&source=1',
+            startedAt: '2026-10-08T00:06:06.695Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 394785,
+            itemLevelBracket: 329,
+            heroTree: 48,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '190784',
+                count: 5,
+              },
+              {
+                spellId: '642',
+                count: 1,
+              },
+              {
+                spellId: '85673',
+                count: 2,
+              },
+              {
+                spellId: '454351',
+                count: 11,
+              },
+              {
+                spellId: '408385',
+                count: 203,
+              },
+              {
+                spellId: '403876',
+                count: 6,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '853',
+                count: 1,
+              },
+              {
+                spellId: '1044',
+                count: 1,
+              },
+              {
+                spellId: '383328',
+                count: 81,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '19750',
+                count: 1,
+              },
+              {
+                spellId: '20271',
+                count: 42,
+              },
+              {
+                spellId: '375576',
+                count: 11,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '255937',
+                count: 11,
+              },
+              {
+                spellId: '427453',
+                count: 22,
+              },
+              {
+                spellId: '184575',
+                count: 57,
+              },
+              {
+                spellId: '24275',
+                count: 25,
+              },
+              {
+                spellId: '53385',
+                count: 53,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/n7wkfTh4Pat63mAD#fight=5&source=9',
+            startedAt: '2026-10-08T00:24:59.175Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 394303,
+            itemLevelBracket: 329,
+            heroTree: 50,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '53385',
+                count: 77,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '20271',
+                count: 37,
+              },
+              {
+                spellId: '343527',
+                count: 7,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '383328',
+                count: 121,
+              },
+              {
+                spellId: '184575',
+                count: 49,
+              },
+              {
+                spellId: '375576',
+                count: 7,
+              },
+              {
+                spellId: '24275',
+                count: 41,
+              },
+              {
+                spellId: '403876',
+                count: 4,
+              },
+              {
+                spellId: '190784',
+                count: 3,
+              },
+              {
+                spellId: '408385',
+                count: 257,
+              },
+              {
+                spellId: '633',
+                count: 1,
+              },
+              {
+                spellId: '255937',
+                count: 13,
+              },
+              {
+                spellId: '391054',
+                count: 1,
+              },
+              {
+                spellId: '31884',
+                count: 6,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'warrior-protection': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '2565',
-    sourceStatus: '12.1 완화·흡수 예산을 재대조하고 산왕·거신의 오프닝·단일·광역을 각각 작성했습니다. 최신 로그와 전체 특성 견본은 검수 중입니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '방어 전사는 큰 피해가 온 뒤 생존기를 누르는 탱커가 아니라, 방패 올리기의 유효 유지율로 물리 피해를 평탄화하고, 방패 밀쳐내기와 천둥벼락으로 분노를 만들며, 고통 감내와 주요 생존기를 다음 피해 전에 배치하는 능동 방어 탱커입니다. 이 가이드는 방패 올리기를 중심 노드로 두고, 방패 밀쳐내기 분노 엔진, 고통 감내 흡수막, 산왕 천둥벼락 루프, 거신 쇄파 분기, 주문 반사와 사기의 외침 생존기 판단을 하나의 탱킹 시간표로 읽게 합니다.',
     sourceNote: 'Blizzard 12.1 공식 노트는 복수의 자동 공격 무료 발동과 기본 피해 20% 증가, 고통 감내 흡수량 25% 증가, 잔혹한 활력 10%, 불굴의 태세 6%를 명시합니다. 피와 번개를 선택해야 천둥벼락으로 분쇄를 적용합니다. Icy Veins 8월 특성 가이드는 단일 대상에 거신, 광역에 산왕을 제시했지만 9월 22일 산왕 상향 뒤의 우열은 새 로그 없이 확정하지 않습니다. 시즌 2 세트 효과와 방패 올리기의 실제 탱킹 중 유지, 고통 감내 분노 예산은 별도로 봅니다. 6월 Archon 선택률은 12.0.5 과거 자료입니다. 영어 9월 22일과 한국어 9월 23일은 같은 산왕 PvE 상향 공지의 날짜입니다. 방패 올리기 분노 30은 막을 수 있는 피해가 오는 순간에 확보하고, 막을 수 없는 주문만 들어오는 구간은 고통 감내·주문 반사를 먼저 계획합니다. 풀링 전 분노가 없다면 방패 올리기를 시전한 것으로 가정하지 않습니다.',
     sources: [
@@ -23910,6 +34105,34 @@ export const guideManuscripts = {
         updated: '2026-06-06 확인',
         note: '전사 직업 디스코드 공개 경로가 Skyhold로 등재됨. 비공개 원문은 공개 확인 내용만 반영',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/protection/warrior/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 5,606건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/protection/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 87,413건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=152',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:48:53.536Z · 장비 구간 327 · 327.9초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:07:28.707Z · 장비 구간 327 · 327.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 12.1 라이브 노트에서 복수는 회피·무기 막기 외에 자동 공격으로도 무료 발동할 수 있고 기본 피해가 20% 증가했습니다. 무료 복수의 시즌 2 보너스와 유료 복수를 구분합니다.',
@@ -23927,13 +34150,16 @@ export const guideManuscripts = {
       'Icy Veins 방어 전사 가이드는 Skyhold Warrior 디스코드 이론공식/운영진 Mwahi 작성 자료로 표시됩니다. 비공개 디스코드 채널 원문은 인용하지 않고, 공개 작성자 정보와 공개 디스코드 경로만 교차 확인했습니다.',
       'Wowhead 공개 디스코드 목록은 전사 직업 디스코드를 Skyhold로 등재합니다. 비공개 채널 원문은 공개로 확인되는 내용만 반영합니다.',
       '공식 영어 8월 18일·한국어 8월 19일 긴급 수정은 몰아치는 천둥의 천둥벼락 추가 피해가 간혹 꺼지던 오류를 수정했습니다. 9월 22일·23일 벼락과 지면 전류 각각 50% PvE 상향과 구분합니다.',
+      '10월 8일 전사 방어의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '방어 전사 로그는 받은 피해 유형, 실제 탱킹 시간, 외부 생존기, 탱 교대 타이밍에 크게 흔들립니다. 2026-06-06 Archon 선택률은 12.0.5 자료이며 현재 경향으로 사용할 수 없습니다.',
       '12.1에도 물리 피해 기본 판단은 방패 올리기입니다. 마법 피해와 지속 피해가 강한 구간에서는 고통 감내, 주문 반사, 사기의 외침, 방패의 벽 배정을 별도로 봅니다.',
       '방패 올리기는 강력하지만 모든 피해를 막지 않습니다. 불길을 지나의 8%는 방어 태세 마법 피해 감소이고, 결사단원의 8%는 충격의 파장에 맞은 적에게만 적용됩니다.',
       'Skyhold 디스코드는 공개 경로만 확인했습니다. 비공개 핀 글, 채널 대화, 개인 로그 조언은 공개 출처로 공개로 확인되는 내용만 반영합니다.',
-      '2026-10-03에도 영웅 특성별 최신 로그를 직접 집계하지 않았습니다. 과거 가이드 권고와 피해 상향만으로 현재 사용률이나 우열을 확정하지 않습니다. 단일·쐐기·레이드 전체 특성 견본의 현재 트리 내보내기 문자열과 전수 검수는 남아 있습니다.',
+      '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -24613,14 +34839,372 @@ export const guideManuscripts = {
         note: '개인 생존기보다 파티/공대 위험 구간의 체력 완충 카드로 분리합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 73,
+          heroTreeId: 61,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '92ce4e536248e983ce4ae42208ed7c2d664bc07f5858ee9c718965de469b0b0b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산왕',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxImxwyMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxImxwyMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 73,
+          heroTreeId: 61,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '2a4412e52600682656d1169605e0531b1f3cb5d8c0eb136da5d68890233736aa',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산왕',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 73,
+          heroTreeId: 61,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '92ce4e536248e983ce4ae42208ed7c2d664bc07f5858ee9c718965de469b0b0b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '산왕',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 5606,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/protection/warrior/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/BGrqwMQhn6X13TfZ#fight=12',
+          recommendedCode: 'CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MmlZMGjGmZYZmZmZwYmBAAAALjBYGDwAbwyiRjZAMbYmNYGzMY2AgZGAAmBGD',
+          validation: {
+            specId: 73,
+            heroTreeId: 61,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 87413,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/protection/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/k3Xbxz1nPBLRgKNd#fight=6',
+          recommendedCode: 'CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxoxMGWMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWwMbAzMDmNAYmBAgZgxA',
+          validation: {
+            specId: 73,
+            heroTreeId: 61,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0015403056820504062,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=152',
+            startedAt: '2026-10-07T00:48:53.536Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 327857,
+            itemLevelBracket: 327,
+            heroTree: 61,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '6343',
+                count: 49,
+              },
+              {
+                spellId: '52174',
+                count: 2,
+              },
+              {
+                spellId: '1160',
+                count: 11,
+              },
+              {
+                spellId: '190456',
+                count: 97,
+              },
+              {
+                spellId: '6572',
+                count: 55,
+              },
+              {
+                spellId: '97462',
+                count: 2,
+              },
+              {
+                spellId: '107574',
+                count: 7,
+              },
+              {
+                spellId: '57755',
+                count: 1,
+              },
+              {
+                spellId: '385954',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '871',
+                count: 3,
+              },
+              {
+                spellId: '384110',
+                count: 1,
+              },
+              {
+                spellId: '100',
+                count: 8,
+              },
+              {
+                spellId: '2565',
+                count: 28,
+              },
+              {
+                spellId: '23920',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '23922',
+                count: 90,
+              },
+              {
+                spellId: '355',
+                count: 6,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12452,
+                uses: 1,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=7',
+            startedAt: '2026-10-08T00:07:28.707Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 327352,
+            itemLevelBracket: 327,
+            heroTree: 62,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '100',
+                count: 4,
+              },
+              {
+                spellId: '1160',
+                count: 9,
+              },
+              {
+                spellId: '355',
+                count: 6,
+              },
+              {
+                spellId: '23922',
+                count: 81,
+              },
+              {
+                spellId: '436358',
+                count: 9,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '385954',
+                count: 0,
+              },
+              {
+                spellId: '6343',
+                count: 62,
+              },
+              {
+                spellId: '6572',
+                count: 101,
+              },
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '871',
+                count: 4,
+              },
+              {
+                spellId: '52174',
+                count: 2,
+              },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '2565',
+                count: 32,
+              },
+              {
+                spellId: '202168',
+                count: 4,
+              },
+              {
+                spellId: '23920',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '190456',
+                count: 61,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 39995,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'warrior-arms': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '12294',
-    sourceStatus: '12.1 출혈·세트 운용과 학살자 오류 수정 이력을 재확인하고, 최신 SimC 빌드 69933에서 격돌·영웅의 일격의 세트 소비 경로를 대조했습니다. 최신 로그와 전체 특성 견본은 검수 중입니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '무기 전사는 분노와 제압 충전을 관리하면서 거인의 강타에 강한 공격을 맞추는 근접 딜러입니다. 단일 대상에서는 필사의 일격과 발동 효과를, 세 대상 이상에서는 회전베기를 중심으로 판단합니다. 분쇄는 직접 갱신하거나 다른 기술로 적용하는 출혈이고, 치명상은 선택한 특성의 조건을 충족하면 붙는 별도 출혈입니다. 치명상이 없다고 특화 효과가 꺼지는 것은 아닙니다.',
     sourceNote: 'Blizzard 12.1 공식 노트에서 분쇄 단일 대상·분노 10, 회전베기의 분쇄 적용, 쇠날발톱의 출혈 강화, 일격무쌍의 주 대상 제외, 전술적 우위의 급살 부여를 확인하고 한국어 툴팁으로 이름과 현재 효과를 대조했습니다. 영웅 특성 선택과 전투 흐름은 2026-09-23 확인한 Wowhead·Icy Veins 자료를 교차 확인했습니다. 칼날폭풍과 쇄파를 한 빌드의 고정 순서로 합치지 않습니다. 6월 Archon 사용률과 최신 로그 미집계 범위를 구분합니다. 8월 14일 영어 공지(한국어 8월 15일)는 집행자 효과가 의도한 값의 두 배로 적용되던 오류를 수정했습니다. 오류 수정 전 피해를 현재 학살자 성능으로 취급하지 않습니다. 2026-10-03 SimC midnight의 실제 최신 커밋 6c50c3c7b96c81bbb8e7abefbd817ecf31519592(라이브 빌드 69933)에서 격돌과 영웅의 일격의 시즌 2 강화 소비를 대조했습니다.',
     sources: [
@@ -24750,6 +35334,34 @@ export const guideManuscripts = {
         updated: '2026-10-03 02:59 UTC 데이터 갱신 / 2026-10-03 확인',
         note: 'MID2 4세트 winding_up은 slam_base_t 실행부에서 소비되고 heroic_strike_t도 그 실행부를 사용합니다. 게임 내 로그 실측을 대신하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/arms/warrior/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 29,539건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/arms/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 265,638건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/7GybAYxvPCqaVc2n#fight=13&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:39:00.825Z · 장비 구간 329 · 341.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/cmhLNK846WRTaZvw#fight=36&source=927',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:05:11.454Z · 장비 구간 329 · 341.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 12.1 라이브 노트는 분쇄를 무기 전용 분노 10 단일 대상 기술로 바꾸고, 회전베기가 분쇄를 배웠을 때 적중 대상 모두에게 적용하도록 명시합니다. 천둥벼락을 기본 분쇄 적용 수단으로 세지 않습니다.',
@@ -24767,6 +35379,7 @@ export const guideManuscripts = {
       '특화: 무기 전문가는 양손 무기 사용 시 피해를 높이는 지속 효과입니다. 치명상 출혈을 적에게 걸어야 활성화되는 특화가 아닙니다.',
       '영어 2026-08-14·한국어 2026-08-15 긴급 수정은 무기와 분노 학살자의 집행자 효과가 의도한 값의 2배였던 오류를 수정했습니다. 현행 효과에 과거 오류 배율을 더하지 않습니다.',
       'SimC 2026-10-03 라이브 빌드 69933의 격돌 공통 실행부는 시즌 2 winding_up을 소비하며 영웅의 일격도 이를 공유합니다. Icy Veins는 세트의 5중첩을 기다리기 위해 핵심 기술을 지연할 필요가 없다고 설명합니다.',
+      '10월 8일 전사 무기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       'Skyhold 디스코드의 비공개 채널 원문은 페이지에 공개로 확인되는 내용만 반영합니다. 공개 안내 링크와 Wowhead/Icy Veins/Archon 로그가 같은 방향을 가리키는 항목만 보조 근거로 사용합니다.',
@@ -24774,7 +35387,9 @@ export const guideManuscripts = {
       '오프닝 차트는 선택 특성이 맞는 경우의 예시입니다. 분쇄를 적용하는 회전베기와 직접 분쇄를 매번 연속 사용하거나, 급살이 없는 상태에서 마무리 일격을 강제하지 않습니다.',
       '장신구, 2차 스탯, 제작 장비는 캐릭터 장비와 전투 길이에 따라 바뀌므로 Raidbots/SimC와 개인 로그 검토 없이 확정 문장으로 적지 않습니다.',
       '전투의 열정, 격돌, 죽음의 상처 관련 문장은 2026-04-29 버그 수정 이후 기준이고, 피해량 평가는 2026-05-05 전사 피해 보정 이후 기준입니다. 2026-05-26 PvP 하향은 PvE 우선순위에 섞지 않습니다.',
-      '2026-10-03에도 영웅 특성별 최신 로그를 직접 집계하지 않았습니다. 과거 가이드 권고와 피해 상향만으로 현재 사용률이나 우열을 확정하지 않습니다. 단일·쐐기·레이드 전체 특성 견본의 현재 트리 내보내기 문자열과 전수 검수는 남아 있습니다.',
+      '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -25446,14 +36061,380 @@ export const guideManuscripts = {
         note: '파티/공대 위험 구간의 체력 완충 카드입니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps',
+        sourceLabel: 'Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 71,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'c6e15b6909c98f0b874a7da14c900faea4d23361660676c5ec46a070ec84239b',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMDDDmlZ2GgZGAMDDA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMDDDmlZ2GgZGAMDDA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ Dungeons  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 71,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'eeb63a2af22fdc28451f20906a443ab1931638468e81ce5b48ffa1c0fdba7a8e',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZgJMW2GYBMgZYCZGsBmZsN2GYZmtBYmBAzwA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZgJMW2GYBMgZYCZGsBmZsN2GYZmtBYmBAzwA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps',
+        sourceLabel: 'Raid Multitarget  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 71,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '28b74ad771ddb0e410479c254b1ef57ee98bec2a538e7ae193994e940ab230ce',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 29539,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/arms/warrior/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/TCQgpL21fVq3GAdc#fight=1',
+          recommendedCode: 'CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphZGzMWmZmZGMmZAAAAAMzyMDMhxy2ALgBMDTgZwGYmhx2ALzsNAzMAYGGA',
+          validation: {
+            specId: 71,
+            heroTreeId: 60,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 265638,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/arms/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/GzBmvc7dFPLYMnKa#fight=15',
+          recommendedCode: 'CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMBmBbgZGGGMLzsNAzMAYGGA',
+          validation: {
+            specId: 71,
+            heroTreeId: 60,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.00021062423758414,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/7GybAYxvPCqaVc2n#fight=13&source=2',
+            startedAt: '2026-10-07T01:39:00.825Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 341769,
+            itemLevelBracket: 329,
+            heroTree: 60,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '118038',
+                count: 2,
+              },
+              {
+                spellId: '1464',
+                count: 15,
+              },
+              {
+                spellId: '100',
+                count: 4,
+              },
+              {
+                spellId: '23920',
+                count: 8,
+              },
+              {
+                spellId: '107570',
+                count: 1,
+              },
+              {
+                spellId: '7384',
+                count: 57,
+              },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '167105',
+                count: 12,
+              },
+              {
+                spellId: '281000',
+                count: 86,
+              },
+              {
+                spellId: '845',
+                count: 25,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '12294',
+                count: 112,
+              },
+              {
+                spellId: '1269383',
+                count: 34,
+              },
+              {
+                spellId: '446035',
+                count: 11,
+              },
+              {
+                spellId: '202168',
+                count: 2,
+              },
+              {
+                spellId: '260708',
+                count: 5,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 26224,
+                uses: 2,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45096,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 300493,
+                uses: 29,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/cmhLNK846WRTaZvw#fight=36&source=927',
+            startedAt: '2026-10-07T01:05:11.454Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 341841,
+            itemLevelBracket: 329,
+            heroTree: 60,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '281000',
+                count: 74,
+              },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '57755',
+                count: 2,
+              },
+              {
+                spellId: '260708',
+                count: 2,
+              },
+              {
+                spellId: '52174',
+                count: 2,
+              },
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '446035',
+                count: 13,
+              },
+              {
+                spellId: '12294',
+                count: 116,
+              },
+              {
+                spellId: '118038',
+                count: 2,
+              },
+              {
+                spellId: '107570',
+                count: 8,
+              },
+              {
+                spellId: '1269383',
+                count: 33,
+              },
+              {
+                spellId: '845',
+                count: 19,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1464',
+                count: 19,
+              },
+              {
+                spellId: '23920',
+                count: 7,
+              },
+              {
+                spellId: '100',
+                count: 4,
+              },
+              {
+                spellId: '1234969',
+                count: 5,
+              },
+              {
+                spellId: '7384',
+                count: 46,
+              },
+              {
+                spellId: '167105',
+                count: 12,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'warrior-fury': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '184367',
-    sourceStatus: '12.1 자원·세트 조건을 유지하고 8월 학살자 오류 수정과 분노 기본 피해 보정, 9월 산왕 상향의 날짜를 재대조했습니다. 최신 로그와 전체 특성 견본은 검수 중입니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '분노 전사는 피의 갈증과 분노의 강타 등으로 분노를 모아 광란으로 소모하고 격노를 이어가는 근접 딜러입니다. 광역에서는 소용돌이 연마로 다음 단일 대상 공격을 복제합니다. 12.1에서는 이 복제 효과와 분쇄 적용 특성이 분리되어 있으므로, 출혈이 남아 있더라도 복제 공격 횟수가 소진됐다면 다시 준비해야 합니다. 숙련된 경험을 선택하면 격노 중 피의 갈증으로 지속시간을 연장할 수 있습니다.',
     sourceNote: 'Blizzard 12.1 라이브 노트와 한국어 툴팁으로 피의 폭풍, 몰아치는 천둥, 자르고 베기, 빗발치는 광란, 새기는 칼날·고기칼과 시즌 2 세트를 대조했습니다. 분노의 투신·칼날폭풍은 같은 선택 노드이므로 학살자 칼날폭풍과 산왕 투신의 오프닝을 합치지 않습니다. 4세트는 8월 18일 소개에 남은 5%/10%가 아니라 현재 툴팁의 3%/6%를 사용합니다. 2026-09-22 Blizzard PvE 핫픽스로 산왕의 벼락과 지면 전류 피해가 각각 50% 증가했습니다. 이 상향 전의 8월 빌드 순위나 6월 로그 집계만으로 현재의 영웅 특성 우열을 확정하지 않습니다. 최신 로그 비교와 전체 세부 검수는 진행 중입니다. 분노 기본 피해 6% 증가와 4세트 3%/6% 변경의 영어 공지 날짜는 8월 18일, 한국어 공지 날짜는 8월 19일입니다. 집행자의 의도한 효과 2배 오류는 영어 8월 14일·한국어 8월 15일 수정됐습니다. 9월 22일·23일 산왕 상향과 다른 조정이므로 하나의 피해 배율로 합산하지 않습니다.',
     sources: [
@@ -25569,6 +36550,34 @@ export const guideManuscripts = {
         updated: '2026-06-06 확인',
         note: '전사 직업 디스코드 공개 경로와 Archimtiros의 Skyhold 관리자/SimC 개발자 공개 작성자 근거 확인. 비공개 핀 글은 공개로 확인되는 내용만 반영하고 공개 출처와 교차 확인용으로만 취급',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/fury/warrior/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 3,278건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/fury/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 31,700건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/VTf8dr4mkJHatwCN#fight=6&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:10:47.018Z · 장비 구간 329 · 421.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/cbH86r2YnRvFLaxj#fight=3&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:08:26.952Z · 장비 구간 329 · 429.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 라이브 12.1 노트는 소용돌이 기본 분노 3과 소용돌이 연마의 적중 대상당 추가 1분노, 빗발치는 광란의 광란 마지막 타격 추가 피해, 자르고 베기의 광란 후 75% 충전 반환을 명시합니다. 이전 12.0.5 기술 효과를 덧씌우지 않습니다.',
@@ -25583,12 +36592,15 @@ export const guideManuscripts = {
       '12.1 한국어 툴팁 기준 우레 작렬은 피의 갈증으로 최대 2중첩까지 발동하며, 투신을 시전하면 폭풍의 화신으로 2중첩을 얻습니다. 학살자의 일격 발동률은 분노 15%와 무기 25%로 다릅니다. 9월 22일의 50% 상향 대상은 우레 작렬이 아니라 벼락·지면 전류입니다.',
       '영어 2026-08-18·한국어 2026-08-19 공식 긴급 수정은 분노 기본 피해 6% 증가와 4세트의 추가 치명타 보너스 3%씩 최대 6%를 함께 공지했습니다. 현재 수치에 상향률을 다시 적용하지 않습니다.',
       '영어 2026-08-14·한국어 2026-08-15의 학살자 집행자 오류 수정은 효과가 의도한 값의 두 배였던 문제를 바로잡은 것입니다. 오류 수정 전의 학살자 결과나 9월 산왕 상향 전 순위를 현재 우열로 쓰지 않습니다.',
+      '10월 8일 전사 분노의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       'Skyhold의 공개 안내 링크는 확인했지만 비공개 디스코드 핀 글 전문은 인용하지 않습니다. 공개 로그, Wowhead, Icy Veins와 충돌하지 않는 보조 판단으로만 둡니다.',
       '6월 Archon 집계는 현재 추천 근거에서 제외했습니다. 최신 로그의 사용률이나 DPS 우위를 수치로 단정하지 않습니다.',
       '광란과 격노는 너무 자주 등장하므로 모든 문장을 아이콘으로 과밀하게 만들지 않고, 핵심 판단 문장과 차트/우선순위에서 반복적으로 보여줍니다.',
-      '2026-10-03에도 영웅 특성별 최신 로그를 직접 집계하지 않았습니다. 과거 가이드 권고와 피해 상향만으로 현재 사용률이나 우열을 확정하지 않습니다. 단일·쐐기·레이드 전체 특성 견본의 현재 트리 내보내기 문자열과 전수 검수는 남아 있습니다.',
+      '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -26269,14 +37281,352 @@ export const guideManuscripts = {
         note: '파티 위험 패턴에 맞춰 개인 딜사이클 밖에서 따로 예약',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps',
+        sourceLabel: 'Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 72,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '060615942ca179a17cae9382627d9dfc81f874694f0d726f020830a69e6bacab',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ Dungeons  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 72,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '04e64c39d337a50513635d82fc2eed96459548b3848983457fd40de097535501',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmxGAAMzwYWGGDGD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmxGAAMzwYWGGDGD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps',
+        sourceLabel: 'Raid Multitarget  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 72,
+          heroTreeId: 60,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '948837aabb0900de2367402349fef2184344c46231921f36c6ae12129b81b9d4',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '학살자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 3278,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/fury/warrior/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/Fp3rgbH64G2jXD98#fight=7',
+          recommendedCode: 'CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgBMDTgZYDYmZzYDAAmZYMLDjBjB',
+          validation: {
+            specId: 72,
+            heroTreeId: 60,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 31700,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/fury/warrior/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/W8NgqmfrTYAb3xVZ#fight=4',
+          recommendedCode: 'CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMgZYCMDbAzMMAAAzMMmlhxgxA',
+          validation: {
+            specId: 72,
+            heroTreeId: 60,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.020252958356119753,
+        matchedAugmentation: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/VTf8dr4mkJHatwCN#fight=6&source=4',
+            startedAt: '2026-10-08T02:10:47.018Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 421012,
+            itemLevelBracket: 329,
+            heroTree: 60,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '23920',
+                count: 5,
+              },
+              {
+                spellId: '5308',
+                count: 43,
+              },
+              {
+                spellId: '385060',
+                count: 8,
+              },
+              {
+                spellId: '23881',
+                count: 26,
+              },
+              {
+                spellId: '184367',
+                count: 154,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '335097',
+                count: 69,
+              },
+              {
+                spellId: '52174',
+                count: 7,
+              },
+              {
+                spellId: '446035',
+                count: 10,
+              },
+              {
+                spellId: '85288',
+                count: 71,
+              },
+              {
+                spellId: '46968',
+                count: 2,
+              },
+              {
+                spellId: '1719',
+                count: 10,
+              },
+              {
+                spellId: '190411',
+                count: 43,
+              },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '100',
+                count: 14,
+              },
+              {
+                spellId: '335096',
+                count: 34,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '202168',
+                count: 6,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/cbH86r2YnRvFLaxj#fight=3&source=4',
+            startedAt: '2026-10-08T01:08:26.952Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 429715,
+            itemLevelBracket: 329,
+            heroTree: 61,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '6343',
+                count: 14,
+              },
+              {
+                spellId: '85288',
+                count: 58,
+              },
+              {
+                spellId: '23881',
+                count: 50,
+              },
+              {
+                spellId: '52174',
+                count: 2,
+              },
+              {
+                spellId: '1719',
+                count: 10,
+              },
+              {
+                spellId: '335096',
+                count: 42,
+              },
+              {
+                spellId: '100',
+                count: 5,
+              },
+              {
+                spellId: '107574',
+                count: 10,
+              },
+              {
+                spellId: '23920',
+                count: 7,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '184367',
+                count: 159,
+              },
+              {
+                spellId: '5308',
+                count: 33,
+              },
+              {
+                spellId: '335097',
+                count: 39,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '97462',
+                count: 2,
+              },
+              {
+                spellId: '202168',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'rogue-assassination': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 운용 가이드',
     graphCenterSkillId: '32645',
-    sourceStatus: '현재 주문 효과와 특성 노드를 KB에서 재검토하고, Wowhead 9월 6일·Icy Veins·Method 운용 자료를 대조했습니다. 2026-10-03에 12.1 공식 노트 도적 절과 한국어 누적 긴급 수정을 직접 확인했으며 9월 2일 이후 암살 PvE 수치 변경은 없습니다. 최신 로그 집계는 접근 제한으로 확인하지 못해 영웅 특성 사용률과 순위를 단정하지 않습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '목조르기와 파열을 준비하고, 연계 점수를 모아 독살로 소비합니다. 큰 피해는 죽음표식과 왕의 파멸을 함께 쓰는 구간에서 나옵니다. 광역에서는 혈폭풍으로 출혈을 퍼뜨린 뒤 칼날 부채로 생성합니다. 운명결속은 추가 연계 점수와 동전 효과를, 죽음추적자는 징표와 강화 독살을 따로 관리하세요.',
     sourceNote: '12.1 현재 툴팁은 죽음표식의 출혈·치명독 피해 증가 75%와 치명독 이중 적용을 구분합니다. 불구대천 첫 노드는 독살에 쓴 연계 점수 1점당 기력 2를 돌려주며 버프 만료를 기다리는 효과가 아닙니다. 엉겅퀴 차는 자동 선택과 수동 선택을 구분했습니다. Wowhead 2026-09-06 운용은 죽음추적자 단일에서 독 묻은 스틸레토를 선택한 독칼의 자원 효율을 설명하고, 운명결속에는 같은 규칙을 일괄 적용하지 않습니다. Icy Veins의 영웅 특성 추천 문구는 페이지 안에서도 서로 달라 최신 로그 합의로 포장하지 않았습니다. Method Whispyr의 공개 소개에서 Ravenholdt 활동과 SimulationCraft 기여를 확인했지만 비공개 디스코드 메시지를 읽은 것은 아닙니다. Archon 레이드·쐐기 페이지는 이번 재조회에서 403으로 막혀 샘플 수·사용률을 확보하지 못했습니다. 과거 6월 집계를 현재 추천 근거로 재사용하지 않습니다.',
     sources: [
@@ -26385,6 +37735,34 @@ export const guideManuscripts = {
         updated: '8월 19일·9월 2일 적용 / 2026-10-03 확인',
         note: '한국 공지 8월 19일 암살 모든 공격력 4% 증가, 9월 2일 장신구 등 직업과 무관한 자연 피해로 부식성 분사가 발동되던 문제 수정을 확인했습니다. 9월 23일 암살 항목은 플레이어 간 전투 전용입니다. 미국 공지는 하루 빠릅니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/assassination/rogue/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 13,589건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 157,348건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/PkCR1q4MvcJTBg6Z#fight=24&source=7',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T02:56:27.906Z · 장비 구간 329 · 382.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=14',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T16:57:34.730Z · 장비 구간 329 · 382.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '현재 불구대천은 독살에 쓴 연계 점수에 따라 기력을 돌려줍니다. 독살 버프를 일부러 끝내야 회복된다는 구식 설명을 적용하지 않습니다.',
@@ -26395,12 +37773,15 @@ export const guideManuscripts = {
       '엉겅퀴 차 자동 특성은 기력 30 미만에 실제 효과를 발동합니다. 수동 선택은 별도 주문 1298826이며 자동 효과를 직접 누르는 차트 노드로 쓰지 않습니다.',
       '독 묻은 스틸레토가 있는 독칼과 없는 독칼은 비용·쿨다운이 다릅니다. 최신 가이드도 죽음추적자 단일과 운명결속에 동일한 독칼 규칙을 적용하지 않습니다.',
       'Method Whispyr(8월 12일)는 모든 상황에서 죽음추적자가 2~5% 앞서 기본 선택이라고 적고, Icy Veins(8월 10일)는 같은 페이지 안에서 죽음추적자와 운명결속 추천이 엇갈립니다. 두 자료 모두 최신 로그 집계가 아니므로 이 가이드는 두 영웅 특성을 순위 없이 나란히 다룹니다.',
+      '10월 8일 도적 암살의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '아래는 재검토한 핵심 특성과 동작을 바탕으로 한 12.1 운용입니다. 시즌 2 세트의 기본 효과와 운용 원칙은 확인했지만 장비별 최적 특성 코드, 최신 로그 사용률, 세트의 모든 세부 상호작용까지 검증 완료했다는 의미는 아닙니다.',
       '숫자는 2026-09-21 툴팁 기준입니다. 2026-10-03까지 9월 2일 이후 암살 PvE 수치를 바꾼 공식 긴급 수정은 없고, 10월 6일 예고와 12.1.5 노트의 암살 항목도 시각 효과뿐입니다. 등급이 있는 특성은 1등급 설명과 최대 등급 값을 구분하며 장비·핫픽스·실제 선택 노드가 다르면 다시 확인해야 합니다.',
       '일반 독살의 5점 이상 기준과 어둡고 어두운 밤의 최대 점수 소비를 구분하세요. 최대 연계 점수는 자신의 특성에 따라 달라집니다.',
       '쐐기 빌드를 그대로 들고 단일 보스를 치는 경우에는 순수 단일 빌드와 생성기 우선순위가 달라질 수 있습니다. 영웅 특성 이름만 같다고 모든 선택 노드가 같지는 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -27094,15 +38475,390 @@ export const guideManuscripts = {
         text: '쿨기·대상 생존 시간, 출혈·독살, 자원 초과를 확인합니다. 자동 엉겅퀴 차와 불구대천 후속 공격을 직접 시전과 구분합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps',
+        sourceLabel: 'Raid Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 259,
+          heroTreeId: 52,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '954c4e33d808745d7e67aa5f4fad0a7e21cf50a192f27577f6c8774dff56efbe',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '운명결속',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxMmZMGADsAzY0YWAZbAbGAMzMDfA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxMmZMGADsAzY0YWAZbAbGAMzMDfA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 259,
+          heroTreeId: 52,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '2b7779f275a438c9c7c10ff86640f156688004cd9283b1ccfb2031c7d68e75b2',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '운명결속',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps',
+        sourceLabel: 'Raid Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 259,
+          heroTreeId: 52,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '954c4e33d808745d7e67aa5f4fad0a7e21cf50a192f27577f6c8774dff56efbe',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '운명결속',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 13589,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/assassination/rogue/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/wmT1RcNDVj3yYAJG#fight=64',
+          recommendedCode: 'CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAzygtZAAAAAAZbmZmZmZMWmZmZbmlZmZGjZGjxMzYMAGYBmxoxsBYbAbGAMzMGD',
+          validation: {
+            specId: 259,
+            heroTreeId: 52,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 157348,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/MHbvN1VdD3mayLJC#fight=4',
+          recommendedCode: 'CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlxMzMzMGbzMzsNzyMz8AmxMjxwMjxAYgFYGjGzGgtBsZAwMzYMA',
+          validation: {
+            specId: 259,
+            heroTreeId: 52,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0006485050389887506,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/PkCR1q4MvcJTBg6Z#fight=24&source=7',
+            startedAt: '2026-10-07T02:56:27.906Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 382418,
+            itemLevelBracket: 329,
+            heroTree: 52,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1943',
+                count: 15,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '703',
+                count: 18,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '185311',
+                count: 4,
+              },
+              {
+                spellId: '360194',
+                count: 4,
+              },
+              {
+                spellId: '1297908',
+                count: 1,
+              },
+              {
+                spellId: '385627',
+                count: 7,
+              },
+              {
+                spellId: '51723',
+                count: 20,
+              },
+              {
+                spellId: '1856',
+                count: 3,
+              },
+              {
+                spellId: '1329',
+                count: 122,
+              },
+              {
+                spellId: '1247227',
+                count: 12,
+              },
+              {
+                spellId: '452536',
+                count: 0,
+              },
+              {
+                spellId: '32645',
+                count: 85,
+              },
+              {
+                spellId: '36554',
+                count: 5,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '5938',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 267230,
+                uses: 34,
+              },
+              {
+                spellId: '413984',
+                activeMs: 61794,
+                uses: 5,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=14',
+            startedAt: '2026-10-07T16:57:34.730Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 382170,
+            itemLevelBracket: 329,
+            heroTree: 52,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '36554',
+                count: 9,
+              },
+              {
+                spellId: '452536',
+                count: 0,
+              },
+              {
+                spellId: '185565',
+                count: 5,
+              },
+              {
+                spellId: '385627',
+                count: 7,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '703',
+                count: 23,
+              },
+              {
+                spellId: '1943',
+                count: 23,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '360194',
+                count: 4,
+              },
+              {
+                spellId: '1247227',
+                count: 13,
+              },
+              {
+                spellId: '32645',
+                count: 72,
+              },
+              {
+                spellId: '2983',
+                count: 3,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '31224',
+                count: 2,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1329',
+                count: 85,
+              },
+              {
+                spellId: '51723',
+                count: 59,
+              },
+              {
+                spellId: '1856',
+                count: 4,
+              },
+              {
+                spellId: '185311',
+                count: 5,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 50291,
+                uses: 4,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'rogue-outlaw': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 운용 가이드',
     graphCenterSkillId: '79096',
     summary: '미간 적중·광기의 학살자를 제때 쓰고, 속결로 소비해 다음 쿨다운을 당깁니다. 기회와 시즌 2 무료 속결이 뜨면 미리 정한 다음 버튼 대신 실제 자원을 다시 보세요. 광역은 폭풍의 칼날을 켠 뒤 같은 생성·소비를 이어가되, 첫 적중으로 얻는 점수와 실제 복제 범위를 따로 챙깁니다.',
-    sourceStatus: '무법 핵심 기술·특성, 두 영웅 특성과 시즌 2 세트를 현재 한국어·영어 툴팁으로 대조했습니다. 2026-10-03에 12.1 공식 노트 도적 절과 한국어 누적 긴급 수정을 직접 확인. 공개 가이드의 우선순위 차이는 따로 표시하며 최신 로그 사용률은 확보하지 못했습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     sourceNote: 'Wowhead JustGuy 8월 27일, Icy Veins Seliathan 8월 10일, Method Guy 8월 12일 운용 자료를 비교했습니다. 신속 대응과 광기의 학살자 변경은 현재 주문 데이터와 시즌 2 설명으로 대조했습니다. Wowhead는 무료 속결을 미간 적중 뒤에, Method는 질풍 칼날·미간 적중보다 앞에 둡니다. 도박의 연속도 영웅 특성 및 안정성 기준에 따라 2단계와 3단계로 달라 하나의 절대 규칙으로 합치지 않았습니다. 아래 기본형은 Method의 세트 발동 우선 처리와 Icy Veins의 첫 미간 적중 뒤 광기의 학살자 진입을 참고한 조건부 연습 예시입니다. 상위 로그에서 검증한 최적 고정 순서라는 뜻은 아닙니다. Archon 레이드·쐐기 집계는 이번 접근에서 열리지 않아 현재 샘플 수·DPS·사용률을 제시하지 않습니다. Ravenholdt는 공개 안내 경로를 확인했으며 비공개 메시지를 인용하지 않습니다.',
     sources: [
       {
@@ -27224,6 +38980,34 @@ export const guideManuscripts = {
         updated: '2026-10-02 게시 / 2026-10-03 확인 · 미적용',
         note: '날렵한 몸놀림이 폭풍의 칼날 기력 비용을 30 고정 대신 적중 대상당 5, 최대 30 올리도록 바뀝니다. 12.1.5 적용 전이므로 본문의 현재 비용 설명은 바꾸지 않았습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/outlaw/rogue/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 3,165건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/outlaw/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 18,677건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/BrbG3qLXgRyVHDz9#fight=11&source=15',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:46:16.656Z · 장비 구간 326 · 418.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NFgAhH26nMTyfjJ4#fight=2&source=18',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:40:06.152Z · 장비 구간 326 · 412.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     playstyle: [
       {
@@ -27250,6 +39034,7 @@ export const guideManuscripts = {
       '4세트 발동은 다음 속결을 무료·최대 점수 상당 피해로 바꿉니다. 현재 점수를 채우기 위해 생성기를 더 누르는 습관을 바꿔야 합니다.',
       '기만자는 무법 전용 무결한 형상 4%와 날렵한 질풍을, 운명결속은 무법 전용 동전 기력 회복과 속결 추가 동전을 적용합니다. 다른 도적 전문화 수치를 섞지 않았습니다.',
       '공개 가이드는 기만자를 우선 추천하지만 최신 로그 점유율은 확보하지 못했습니다. 추천과 검증된 현재 순위는 다른 정보입니다.',
+      '10월 8일 도적 무법의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '6점 이상 차트는 최대 점수를 늘리는 특성과 아드레날린 촉진 연마·과충전기 등을 선택한 만렙 빌드 예시입니다. 해당 노드가 없거나 아직 최대 5점이라면 6점을 기다리지 말고 자기 최대 점수에서 소비하세요.',
@@ -27257,6 +39042,8 @@ export const guideManuscripts = {
       '무료 속결과 광기의 학살자 세부 순서는 공개 자료 사이에 차이가 있습니다. 아래에는 사용 조건과 채택한 기본형을 밝혔습니다. 도굴꾼의 기력 무료 미간 적중은 점수까지 무료인 시즌 2 속결과 구분합니다.',
       '현재 로그 집계·특성 코드의 상위 로그 일치율은 미검증입니다. 기본 툴팁, 최대 특성 등급, 실제 선택 노드, 실전 발동을 같은 값으로 혼동하지 마세요.',
       '2026-10-03까지 9월 이후 무법 PvE 수치를 바꾼 공식 긴급 수정은 없습니다. 12.1.5에서는 날렵한 몸놀림의 기력 비용이 적중 대상당 5, 최대 30으로 바뀌므로 패치 적용 뒤 폭풍의 칼날 유지 조건과 광역 비용 설명을 다시 확인해야 합니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -28056,6 +39843,392 @@ export const guideManuscripts = {
         note: '점수가 부족하고 처리할 강한 발동이 없으면 생성합니다. 배포·숨겨진 기회 빌드는 실제 사용 가능한 매복을 별도로 고려합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 260,
+          heroTreeId: 51,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '5deb7f7c096ae36c62809c16b8aae37ef38a25741d00aa60bc8207d03f10250f',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기만자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 260,
+          heroTreeId: 51,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '33e39eb4a723d2bbf46f4092e6dd3a296c93946eefdc9768addbfed21bb95aae',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기만자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 260,
+          heroTreeId: 51,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '5deb7f7c096ae36c62809c16b8aae37ef38a25741d00aa60bc8207d03f10250f',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '기만자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 3165,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/outlaw/rogue/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/n7cpd3JhxHz2arQ9#fight=5',
+          recommendedCode: 'CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwADMLsQLsxAMzgBG',
+          validation: {
+            specId: 260,
+            heroTreeId: 51,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 18677,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/outlaw/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/dVXbQW1vfz4MCNHn#fight=3',
+          recommendedCode: 'CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAALLzMzwMzMziZmZbAAAAMzMAYMLGGYgZhFahNAMzgBG',
+          validation: {
+            specId: 260,
+            heroTreeId: 51,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.015126564580081882,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/BrbG3qLXgRyVHDz9#fight=11&source=15',
+            startedAt: '2026-10-08T01:46:16.656Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 418403,
+            itemLevelBracket: 326,
+            heroTree: 51,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '1277933',
+                count: 2,
+              },
+              {
+                spellId: '193315',
+                count: 99,
+              },
+              {
+                spellId: '13877',
+                count: 19,
+              },
+              {
+                spellId: '13750',
+                count: 12,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '441776',
+                count: 19,
+              },
+              {
+                spellId: '185763',
+                count: 168,
+              },
+              {
+                spellId: '2983',
+                count: 9,
+              },
+              {
+                spellId: '381989',
+                count: 2,
+              },
+              {
+                spellId: '1214909',
+                count: 13,
+              },
+              {
+                spellId: '2098',
+                count: 60,
+              },
+              {
+                spellId: '185311',
+                count: 1,
+              },
+              {
+                spellId: '51690',
+                count: 12,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '315496',
+                count: 1,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '315341',
+                count: 78,
+              },
+              {
+                spellId: '1856',
+                count: 1,
+              },
+              {
+                spellId: '195457',
+                count: 11,
+              },
+              {
+                spellId: '1966',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/NFgAhH26nMTyfjJ4#fight=2&source=18',
+            startedAt: '2026-10-07T00:40:06.152Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 412074,
+            itemLevelBracket: 326,
+            heroTree: 51,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '1214909',
+                count: 12,
+              },
+              {
+                spellId: '31224',
+                count: 2,
+              },
+              {
+                spellId: '315341',
+                count: 82,
+              },
+              {
+                spellId: '193315',
+                count: 93,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '13750',
+                count: 13,
+              },
+              {
+                spellId: '185311',
+                count: 8,
+              },
+              {
+                spellId: '13877',
+                count: 18,
+              },
+              {
+                spellId: '381989',
+                count: 5,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '2098',
+                count: 53,
+              },
+              {
+                spellId: '51690',
+                count: 13,
+              },
+              {
+                spellId: '195457',
+                count: 21,
+              },
+              {
+                spellId: '1966',
+                count: 1,
+              },
+              {
+                spellId: '1277933',
+                count: 2,
+              },
+              {
+                spellId: '441776',
+                count: 18,
+              },
+              {
+                spellId: '185763',
+                count: 138,
+              },
+              {
+                spellId: '2983',
+                count: 8,
+              },
+              {
+                spellId: '271877',
+                count: 9,
+              },
+              {
+                spellId: '358733',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 338205,
+                uses: 36,
+              },
+              {
+                spellId: '413984',
+                activeMs: 24803,
+                uses: 2,
+              },
+              {
+                spellId: '10060',
+                activeMs: 15004,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'rogue-subtlety': {
@@ -28063,7 +40236,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '심화 가이드 · 로그 검수 중',
     graphCenterSkillId: '280719',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '잠행은 어둠의 춤과 어둠의 칼날에 강한 마무리 일격을 집중하는 근접 딜러입니다. 죽음추적자는 징표 소비 뒤 어둡고 어두운 밤 절개를, 기만자는 은밀한 기술과 최후의 일격을 챙깁니다. 시즌 2 세트는 춤 밖 생성기와 춤 종료 후 마무리 일격도 보강하므로, 첫 오프닝뿐 아니라 다음 강화 구간까지의 자원 흐름을 함께 봐야 합니다.',
     sourceNote: '영웅 특성별 운용은 Wowhead fuu1의 2026-08-24 딜사이클과 Icy Veins Eleem의 12.1 가이드를 대조했습니다. 2026년 6월 Archon 점유율은 현재 추천 근거에서 제외했습니다. Icy Veins(8월 10일)와 Method(8월 19일)의 죽음추적자 추천은 9월 23일 기만자 상향 전에 쓰인 판단입니다. 공식 한국어 명칭과 개별 효과는 KB에 기록한 주문 ID별 한·영 툴팁을 우선하며, 시즌 2의 4세트는 장비 가이드 본문과 달리 현재 주문 데이터의 60% 효율을 적용합니다. Ravenholdt 관련 근거는 Eleem의 공개 저자 소개이며 비공개 디스코드 메시지를 읽었다고 주장하지 않습니다. 미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
     sources: [
@@ -28165,6 +40338,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/subtlety/rogue/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 8,872건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/subtlety/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 34,304건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=99',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:00:57.478Z · 장비 구간 327 · 315.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/6fptbRw1ZvraWmd4#fight=14&source=83',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:20:52.629Z · 장비 구간 327 · 318.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 8월 19일(한국 공지) 긴급 수정은 잠행 4세트 효율 100%에서 60%로 조정, 전체 피해 6% 증가와 어둠의 춤 수동 취소 제한을 명시합니다. 예전 춤 취소 준비법은 사용하지 않습니다.',
@@ -28174,6 +40375,7 @@ export const guideManuscripts = {
       '현재 로그 점유율과 개인 캐릭터의 최적 빌드 성능은 이 자료에서 새로 측정하지 않았습니다. 과거 사용률을 현재 사용률로 표시하지 않습니다.',
       '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
       '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
+      '10월 8일 도적 잠행의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '오프닝은 해당 특성과 새 전투를 전제로 한 조건부 예시입니다. 종지부의 신속함·그림자 기술 발동과 연속 풀의 남은 상태에 따라 생략할 단계가 생깁니다.',
@@ -28183,7 +40385,8 @@ export const guideManuscripts = {
       '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
       '기만자 춤 진입 조건은 출처마다 다릅니다. Method는 6점 이상, Icy Veins는 7점과 그림자 기술 5중첩 이상, 고대의 기술 활성을 함께 적습니다. 아래 예시는 6점 기준이므로 자신의 최대 점수와 그림자 기술 중첩을 함께 확인하세요.',
       '12.1.5 노트는 잠행 암흑 피해 보정의 중복 적용을 바로잡는다고 밝혔습니다. 어둠의 칼날, 피아귀의 이빨, 머무는 그림자의 기여도는 패치 적용 뒤 다시 확인해야 합니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -28776,6 +40979,368 @@ export const guideManuscripts = {
         note: '춤 밖의 기본 생성기입니다. 자동 공격 사거리를 유지해야 그림자 기술 저장 점수도 쌓입니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 261,
+          heroTreeId: 53,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a1b390ee0ff469b77681cf18f8d1a7d8f5957759ad1c558283025580d44ec332',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음추적자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 261,
+          heroTreeId: 53,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '618b76ef63a5dd9cea5fec3cc6d16f9f64288996d12a704dc19f1e26ae1a9a0e',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음추적자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 261,
+          heroTreeId: 53,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'a1b390ee0ff469b77681cf18f8d1a7d8f5957759ad1c558283025580d44ec332',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '죽음추적자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 8872,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/subtlety/rogue/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/W1rYvGZmqbtP97a3#fight=40',
+          recommendedCode: 'CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMBmFMDzMAzYA',
+          validation: {
+            specId: 261,
+            heroTreeId: 53,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 34304,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/subtlety/rogue/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/hKJCnjVDt3YWgk2G#fight=2',
+          recommendedCode: 'CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYmZbZmZmZmZMYMz2AAAAwgxsYWGYALglhJwsgZYmBYYA',
+          validation: {
+            specId: 261,
+            heroTreeId: 53,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.009364548494983277,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=99',
+            startedAt: '2026-10-07T01:00:57.478Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 315453,
+            itemLevelBracket: 327,
+            heroTree: 51,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '121471',
+                count: 4,
+              },
+              {
+                spellId: '319175',
+                count: 15,
+              },
+              {
+                spellId: '196819',
+                count: 85,
+              },
+              {
+                spellId: '2983',
+                count: 3,
+              },
+              {
+                spellId: '31224',
+                count: 1,
+              },
+              {
+                spellId: '185438',
+                count: 43,
+              },
+              {
+                spellId: '426591',
+                count: 7,
+              },
+              {
+                spellId: '441776',
+                count: 17,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1966',
+                count: 8,
+              },
+              {
+                spellId: '197835',
+                count: 16,
+              },
+              {
+                spellId: '1856',
+                count: 2,
+              },
+              {
+                spellId: '280720',
+                count: 0,
+              },
+              {
+                spellId: '282449',
+                count: 0,
+              },
+              {
+                spellId: '36554',
+                count: 4,
+              },
+              {
+                spellId: '53',
+                count: 71,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '185313',
+                count: 17,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 13139,
+                uses: 1,
+              },
+              {
+                spellId: '395152',
+                activeMs: 305580,
+                uses: 37,
+              },
+              {
+                spellId: '10060',
+                activeMs: 30013,
+                uses: 2,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/6fptbRw1ZvraWmd4#fight=14&source=83',
+            startedAt: '2026-10-07T00:20:52.629Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 318435,
+            itemLevelBracket: 327,
+            heroTree: 53,
+            augmentationCount: 0,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '185313',
+                count: 17,
+              },
+              {
+                spellId: '36554',
+                count: 5,
+              },
+              {
+                spellId: '1856',
+                count: 2,
+              },
+              {
+                spellId: '282449',
+                count: 0,
+              },
+              {
+                spellId: '185311',
+                count: 1,
+              },
+              {
+                spellId: '197835',
+                count: 37,
+              },
+              {
+                spellId: '280720',
+                count: 0,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '31224',
+                count: 1,
+              },
+              {
+                spellId: '121471',
+                count: 4,
+              },
+              {
+                spellId: '319175',
+                count: 20,
+              },
+              {
+                spellId: '2983',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '196819',
+                count: 111,
+              },
+              {
+                spellId: '53',
+                count: 52,
+              },
+              {
+                spellId: '1966',
+                count: 12,
+              },
+              {
+                spellId: '185438',
+                count: 43,
+              },
+              {
+                spellId: '426591',
+                count: 7,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'shaman-enhancement': {
@@ -28783,7 +41348,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '187880',
-    sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '고양은 근접 타격으로 소용돌이치는 무기를 만들고 번개 주문으로 소비합니다. 소비는 피해뿐 아니라 정기의 속도를 통해 다음 타격기를 앞당깁니다. 폭풍인도자는 폭풍 발동과 승천 중 타격기 연결을, 토템술사는 토템 설치 후 뜨거운 손 부여와 연장을 중심으로 봅니다. 영웅 특성을 고른 뒤 오프닝·단일·광역을 따로 확인하세요.',
     sourceNote: '12.1 라이브 조정은 Blizzard 공식 패치 노트를 기준으로 하고, 기술·세트 효과는 한국어·영어 Wowhead 툴팁을 대조했습니다. 주문 ID·전문화·특성 등급은 고정 12.1 SimulationCraft 데이터로 확인했습니다. 운용은 Wowhead, Icy Veins와 Method를 대조했습니다. 9월 21일 Warcraft Logs에서 영웅 울라텍과 Altar of Fangs 18~19단 DPS 상위 기록을 각각 100건 조회했습니다. 특성이 확인되는 레이드 100건·쐐기 89건은 모두 폭풍인도자였습니다. 쐐기 11건은 특성·장비 정보가 없어 제외했습니다. 이는 특정 보스·던전 상위 기록이며 전체 채택률이나 빌드 성능 차이가 아닙니다. 대표 2건의 전체 시전·버프 이벤트를 교차 확인했지만 정확한 자원 손실량은 산출하지 않았습니다. 조회 기간에는 9월 5일 고양 4세트 낙뢰 피해와 9월 10일 폭풍인도자 적중 대상 수정 전 기록이 포함됩니다. 과거 Archon 통계는 추천 근거에서 제외했으며, 디스코드 핀 글은 검증 근거에 포함하지 않았습니다. 미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
     sources: [
@@ -29004,6 +41569,34 @@ export const guideManuscripts = {
         updated: '2026-10-06 미국 적용 공지 / 2026-10-08 확인',
         note: '미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/enhancement/shaman/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 5,508건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 47,172건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/1aRFvCm3bXr82nMD#fight=3&source=24',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:41:44.204Z · 장비 구간 328 · 369.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/p1YDGknPKBj7vy9F#fight=4&source=14',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T03:02:48.980Z · 장비 구간 328 · 368.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '12.1 공식 패치 노트는 고양의 근접 공격 15%, 번개 화살·연쇄 번개 20%, 용암 채찍·폭풍의 일격 15% 증가를 기록합니다. 이는 이전 버전 대비 변경률이지 현행 툴팁에 추가로 적용할 배율이 아닙니다.',
@@ -29027,6 +41620,7 @@ export const guideManuscripts = {
       '한국 공지 기준 8월 19일 고양 모든 공격력이 5% 올랐고, 9월 10일에는 파멸의 바람 피해가 맹독의 분노 샘 같은 장신구 집중 효과를 끊던 문제와 폭풍인도자 낙뢰가 의도하지 않은 대상에게 질풍의 무기를 적중시키던 문제가 고쳐졌습니다. 9월 23일 고양 항목은 플레이어 간 전투 전용입니다.',
       'Icy Veins Wordup(8월 23일)는 폭풍인도자를 모든 콘텐츠의 추천으로 두고, 시즌 2 4세트를 갖춘 순수 단일 전투에서는 초자력 충전 대신 팽창하는 폭풍을 고르라고 적습니다. 4세트의 추가 글쿨 부담 때문에 초자력 충전의 자원 낭비가 커진다는 이유이며, 광역이 섞이면 다시 초자력 충전을 씁니다.',
       '미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
+      '10월 8일 주술사 고양의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '핵심 기술과 기본 흐름을 먼저 정정했습니다. 남은 본문·세트 효과·장신구·최신 로그 검수가 끝나기 전에는 전문화 전체를 검수 완료로 표시하지 않습니다.',
@@ -29038,7 +41632,8 @@ export const guideManuscripts = {
       '팽창하는 폭풍은 폭풍 후 6초 특화 효과지만, 공개 툴팁의 수식이 완전히 해석되지 않아 고정 특화 증가량을 단정하지 않습니다. 전도성 마력의 정기 효과도 한·영 문구 차이를 별도로 기록했습니다.',
       '미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
       '12.1.5 노트는 승천이나 파멸의 바람 중 특정 시점에 전하 축적을 발동하면 소용돌이치는 무기 자동 생성이 멈추던 문제를 고친다고 밝혔습니다. 12.1.5 적용 전 로그와 적용 후 로그를 같은 조건으로 비교하지 않습니다.',
-      '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -29831,14 +42426,392 @@ export const guideManuscripts = {
         note: '위 조건이 없고 5중첩 이상일 때. 시전 시간이 생기는 저중첩 사용은 피합니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps',
+        sourceLabel: 'Single Target  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 263,
+          heroTreeId: 55,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '87a06c4cbd0f1a8bb2052e6a97fff69f6d82c3b69035ffe8a4264031f0e2b0b2',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '폭풍인도자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+/AoE  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 263,
+          heroTreeId: 55,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'c4c698a3fc8598b05da96b08e6b35489e6fd2af20fd8f23be967d6d4e3e8dfbd',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '폭풍인도자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps',
+        sourceLabel: 'Raid Cleave  (Best)',
+        checkedAt: '2026-10-08',
+        note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+        validation: {
+          specId: 263,
+          heroTreeId: 55,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '309970fc539759a05cf7511d0e68afaeaeca101c7e2af6580cc5ec16f6db209a',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '폭풍인도자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 5508,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/enhancement/shaman/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/yax2Z9pFLD4V7qbn#fight=4',
+          recommendedCode: 'CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbwCMDDNYBgZZGzYssYsxMz2YZmZmZwCzAAMDjZGmJwMDGMGA',
+          validation: {
+            specId: 263,
+            heroTreeId: 55,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 47172,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/aPjzCYKpf28L1ADx#fight=15',
+          recommendedCode: 'CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbwCMDDNYBgZZGzYssYsxMz2YZmZmZYWYGAgZYMzwIwMDGMGA',
+          validation: {
+            specId: 263,
+            heroTreeId: 55,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0026550350843921864,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/1aRFvCm3bXr82nMD#fight=3&source=24',
+            startedAt: '2026-10-07T00:41:44.204Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 369110,
+            itemLevelBracket: 328,
+            heroTree: 55,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '470057',
+                count: 33,
+              },
+              {
+                spellId: '108271',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '452201',
+                count: 26,
+              },
+              {
+                spellId: '33697',
+                count: 3,
+              },
+              {
+                spellId: '60103',
+                count: 16,
+              },
+              {
+                spellId: '2645',
+                count: 6,
+              },
+              {
+                spellId: '187874',
+                count: 59,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '17364',
+                count: 95,
+              },
+              {
+                spellId: '462854',
+                count: 1,
+              },
+              {
+                spellId: '115356',
+                count: 30,
+              },
+              {
+                spellId: '469270',
+                count: 59,
+              },
+              {
+                spellId: '192063',
+                count: 4,
+              },
+              {
+                spellId: '188443',
+                count: 48,
+              },
+              {
+                spellId: '192077',
+                count: 2,
+              },
+              {
+                spellId: '108287',
+                count: 2,
+              },
+              {
+                spellId: '188196',
+                count: 39,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '114051',
+                count: 3,
+              },
+              {
+                spellId: '198103',
+                count: 1,
+              },
+              {
+                spellId: '196884',
+                count: 7,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 345260,
+                uses: 36,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/p1YDGknPKBj7vy9F#fight=4&source=14',
+            startedAt: '2026-10-07T03:02:48.980Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 368130,
+            itemLevelBracket: 328,
+            heroTree: 55,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '187874',
+                count: 64,
+              },
+              {
+                spellId: '452201',
+                count: 29,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '469270',
+                count: 70,
+              },
+              {
+                spellId: '108287',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '60103',
+                count: 12,
+              },
+              {
+                spellId: '17364',
+                count: 114,
+              },
+              {
+                spellId: '108271',
+                count: 2,
+              },
+              {
+                spellId: '188443',
+                count: 31,
+              },
+              {
+                spellId: '58875',
+                count: 4,
+              },
+              {
+                spellId: '196884',
+                count: 5,
+              },
+              {
+                spellId: '470057',
+                count: 34,
+              },
+              {
+                spellId: '114051',
+                count: 3,
+              },
+              {
+                spellId: '115356',
+                count: 30,
+              },
+              {
+                spellId: '192077',
+                count: 2,
+              },
+              {
+                spellId: '188196',
+                count: 64,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 15002,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'shaman-elemental': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '51505',
-    sourceStatus: 'Blizzard 12.1 변경 내역과 한국어 누적 긴급 수정, Wowhead 한국어 툴팁, Icy Veins Stormy(8월 10일)·Method Celz(9월 1일) 12.1 운용, SimulationCraft 12.1.0.69933 특성 데이터를 대조했습니다. 2026-08-30 Archon 최근 14일 기록은 당시 자료로만 남기고, 10월 3일 재접근이 막혀 현재 사용률은 확인하지 못했습니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '12.1 정기 주술사는 선견자를 기본으로 화염 충격과 용암 폭발을 굴리고, 폭풍수호자와 선조의 신속함이 부른 선조에게 단일 또는 광역 주문을 정확히 보여 주는 원거리 딜러입니다. 소용돌이를 대지 충격·정기 작렬·지진으로 비우고, 시즌 2의 무료 소비기를 놓치지 않는 것이 기본입니다.',
     sourceNote: '한국어 이름과 아이콘은 Wowhead 한국어 툴팁에서 용암 폭발 51505, 화염 충격 188389, 폭풍수호자 191634, 승천 114050, 소용돌이의 힘 191861, 초자력 충전 455110을 다시 대조했습니다. 12.1 운용은 Wowhead·Icy Veins의 8월 갱신 내용과 Method Celz의 9월 1일 운용을 기준으로 삼았습니다. 2026-08-30에 확인한 Archon 최근 14일 사용률은 당시 기록으로만 남기고, 10월 3일 재접근은 사람 확인 화면으로 막혀 현재 추천 근거에서 제외했습니다. 공개 커뮤니티 자료는 Earthshrine과 Storm, Earth and Lava의 공개 경로만 보조로 사용했으며 비공개 대화는 근거로 삼지 않았습니다.',
     playstyle: [
@@ -29889,6 +42862,160 @@ export const guideManuscripts = {
           '주의할 점: 선조가 보인다고 소용돌이 소비를 멈추지 않습니다. 소용돌이의 우월성과 태고의 역량이 있더라도 자원 초과와 용암 폭발 충전 손실이 먼저 생기면 전체 흐름이 무너집니다.',
           '로그 점검: 폭풍수호자와 선조의 신속함 사용 횟수, 선조 활성 중 실제 주문 수, 선조 용암 폭발·연쇄 번개 비중, 소용돌이 초과 시간을 함께 봅니다.',
         ],
+        opener: {
+          title: '선견자 오프닝 전투 흐름',
+          summary: '폭풍수호자로 선조와 강화 주문을 준비합니다. 선조의 신속함은 실제 시전 시간이 있는 주문에 소비해야 쿨다운이 시작됩니다.',
+          steps: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '전투 약 3초 전 준비한 예시입니다. 첫 피해 구간이 늦으면 사용 시점을 조정하고 강화 주문 두 번을 실제로 소비합니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '전투 시작에 도착하도록 사전 시전할 수 있습니다. 화염 충격이 아직 없는 첫 시전에는 확정 치명타 조건을 가정하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조를 부르고 다음 시전 주문을 준비합니다. 대지 충격이나 이미 즉시시전인 강화 번개 화살로 소비됐다고 착각하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '시전 시간이 있는 용암 폭발을 신속함으로 소비해 쿨다운을 시작합니다. 원소의 대가를 골랐다면 다음 강한 주문을 준비합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '전격의 불길 선택 시 화염 충격을 준비합니다. 선택하지 않았다면 화염 충격을 사용하고 광역 예시를 그대로 복사하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '폭풍수호자 뒤 계획한 공격 구간에 사용합니다. 선조 구간과 강화 주문을 겹치되 전투 전체 사용 횟수를 잃지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '188196',
+              label: '번개 화살',
+              note: '단일에서 폭풍수호자 강화를 소비합니다. 여러 적이면 연쇄 번개로 바꾸고 소용돌이 상한과 무료 소비 발동을 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '정기 작렬을 선택했고 자원 또는 무료 소비 기회가 있으면 사용합니다. 대지 충격 선택과 한 빌드에 동시에 강제하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '선견자 단일 우선순위',
+          summary: '선조의 실제 복제 시전, 원소의 대가와 무료 소비 발동을 함께 봅니다. 정기 작렬과 대지 충격은 선택한 소비기로 읽습니다.',
+          priority: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '계획한 구간에 사용합니다. 승천 직전에 맞추되 사용 횟수를 잃는 장시간 보관은 피하고 강화 주문을 끝까지 회수합니다.',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조를 부르고 실제 시전 주문에 즉시시전 효과를 소비합니다. 소비 전에는 쿨다운이 시작되지 않는 점을 확인합니다.',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '폭풍수호자 뒤 사용합니다. 선조와 함께 공격할 시간이 남아 있는 대상인지, 기믹으로 시전이 끊길지를 먼저 봅니다.',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '시즌 2 무료 소비 발동 또는 소용돌이 상한 15 이내에서 우선 사용합니다. 정기 작렬을 선택하지 않았다면 대지 충격으로 판단합니다.',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '원소의 대가가 없고 충전이 준비됐으면 사용합니다. 해당 특성이 없는 빌드에는 강화 교대의 이득을 가정하지 않습니다.',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '원소의 대가를 강한 소비기에 사용합니다. 무료 소비와 자원 상한을 놓치지 않고 용암 폭발을 연속으로 중복 강화하지 않습니다.',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '전격의 불길 선택 시 화염 충격의 갱신 구간을 확인합니다. 일반 화염 충격 빌드는 실제 지속시간과 이동 글쿨을 기준으로 유지합니다.',
+            },
+            {
+              skillId: '188196',
+              label: '번개 화살',
+              note: '다른 조건이 없으면 소용돌이를 생성합니다. 선조는 실제 시전에 반응하므로 과부하 횟수를 선조의 별도 복제 횟수로 세지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '선견자 광역 우선순위',
+          summary: '2대상부터 생성기를 연쇄 번개로 바꾸고 소비기는 실제 견본의 손익 기준을 적용합니다. 선조와 전격의 불길의 순서를 맞춥니다.',
+          priority: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '추가 적이 실제로 모인 구간에 사용합니다. 승천 앞에 두되 다음 사용을 잃는 지연은 피하고 강화 연쇄 번개를 회수합니다.',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조를 부르고 시전 주문에 효과를 소비합니다. 즉시시전 대지 충격만 눌러 신속함을 오래 남겨 두지 않습니다.',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '선견자 광역 견본에 선택했다면 선조 뒤, 승천 전에 사용해 화염 충격을 적용합니다. 해당 특성이 없으면 일반 화염 충격 조건을 봅니다.',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '선조와 폭풍수호자를 준비한 뒤 사용합니다. 짧게 사라지는 추가 적 때문에 보스의 다음 큰 피해 구간을 놓치지 않습니다.',
+            },
+            {
+              skillId: '61882',
+              label: '지진',
+              note: '기본 정기 작렬 견본은 4대상 이상에서 지진을 봅니다. 다른 선택의 소비 손익과 우선 대상 피해는 별도로 확인합니다.',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '2~3대상에서는 선택한 단일 소비기를 검토합니다. 시즌 2 무료 소비를 덮어쓰지 않고 지진을 누르는 고정 대상 수 규칙과 구별합니다.',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '정화의 불꽃 같은 선택 조건이 있을 때만 광역 용암 폭발을 넣습니다. 조건이 없는 3대상 구간에 단일 교대 규칙을 강제하지 않습니다.',
+            },
+            {
+              skillId: '188443',
+              label: '연쇄 번개',
+              note: '2대상 이상에서 번개 화살 대신 사용합니다. 선조의 광역 복제와 소용돌이 생성을 확인하고 적 수가 줄면 단일로 전환합니다.',
+            },
+          ],
+        },
       },
       {
         label: '폭풍인도자',
@@ -29907,6 +43034,148 @@ export const guideManuscripts = {
           '주의할 점: 초자력 충전의 12.1 효과는 과부하 피해 10% 증가입니다. 이전 시즌의 자원 반환 설명이나 폭풍수호자 번개 화살 확정 과부하를 현재 규칙으로 착각하면 안 됩니다.',
           '로그 점검: 폭풍 사용 지연, 강화 번개 화살·연쇄 번개 두 번의 완료 여부, 초자력 충전 대상 주문 비중, 선견자 대비 실제 전투 DPS를 따로 비교합니다.',
         ],
+        opener: {
+          title: '폭풍인도자 오프닝 전투 흐름',
+          summary: '폭풍수호자와 승천을 먼저 맞춥니다. 폭풍은 발동했을 때만 사용하며 선견자의 선조의 신속함을 넣지 않습니다.',
+          steps: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '전투 전 시전으로 첫 강화 주문을 준비합니다. 선견자의 선조 소환 효과를 이 분기의 이득으로 합산하지 않습니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '선택한 견본에 전격의 불길이 있으면 화염 충격을 준비합니다. 없는 견본은 일반 화염 충격으로 바꾸어 읽습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '폭풍수호자 뒤 계획한 공격 구간에 사용합니다. 첫 풀에 발동 폭풍이 반드시 있다고 전제하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '원소의 대가를 선택했고 강화가 없으면 준비합니다. 이미 강화가 있거나 자원이 넘칠 상황이면 앞선 소비 판단을 봅니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '454009',
+              label: '폭풍',
+              note: '발동이 있을 때만 사용합니다. 원소의 대가 강화와 다음 폭풍 발동을 덮어쓰는 위험을 확인하고 없으면 생성기로 넘어갑니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '188196',
+              label: '번개 화살',
+              note: '강화 단일 주문을 소비합니다. 여러 대상에서는 연쇄 번개로 바꾸고 폭풍을 단일 버튼으로 오인하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '선택한 소비기로 소용돌이와 세트 무료 발동을 정리합니다. 생성기만 반복해 상한을 넘기지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '폭풍인도자 단일 우선순위',
+          summary: '원소의 대가를 폭풍 또는 강화 번개 화살에 소비합니다. 선견자의 선조 입력은 이 분기에 없습니다.',
+          priority: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '계획한 피해 구간에 사용합니다. 승천 앞에 맞추고 강화 주문을 끝까지 소비하되 전체 사용 횟수를 잃는 지연은 피합니다.',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '폭풍수호자 뒤 사용합니다. 이동이나 대상 변경으로 강화 주문을 버리지 않도록 실제 시전 가능 시간을 봅니다.',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '선택했다면 갱신 구간의 화염 충격을 유지합니다. 원소의 대가를 다른 강한 주문에 쓰는 순간과 겹치지 않게 조정합니다.',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '원소의 대가가 없고 자원을 넘치게 하지 않으면 사용합니다. 해당 선택이 없는 빌드의 필수 강화 준비로 강제하지 않습니다.',
+            },
+            {
+              skillId: '454009',
+              label: '폭풍',
+              note: '발동을 보유했다면 원소의 대가와 함께 우선 소비합니다. 다음 발동을 덮어쓸 위험이 있으면 불필요하게 보관하지 않습니다.',
+            },
+            {
+              skillId: '188196',
+              label: '번개 화살',
+              note: '폭풍수호자 강화가 있고 원소의 대가를 소비할 차례면 사용합니다. 일반 번개 화살과 강화 두 번을 구별해 회수합니다.',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '선택한 소비기로 소용돌이를 비우며 무료 소비 발동을 관리합니다. 대지 충격 선택과 동시에 기본 버튼으로 강제하지 않습니다.',
+            },
+            {
+              skillId: '188196',
+              label: '번개 화살',
+              note: '다른 조건이 없으면 생성합니다. 폭풍 발동이 나타나면 강한 소비 조건으로 돌아가고 선조 시전 규칙을 섞지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '폭풍인도자 광역 우선순위',
+          summary: '2대상부터 연쇄 번개를 쓰고, 발동 폭풍과 적 수별 소비기를 구별합니다. 선조의 신속함은 사용하지 않습니다.',
+          priority: [
+            {
+              skillId: '191634',
+              label: '폭풍수호자',
+              note: '추가 적이 모인 구간에 사용합니다. 강화 연쇄 번개 적중을 회수하고 승천과 맞추되 다음 사용 횟수를 잃지 않습니다.',
+            },
+            {
+              skillId: '114050',
+              label: '승천',
+              note: '폭풍수호자 뒤 실제 광역 피해 구간에 사용합니다. 전투가 곧 끝나거나 이동이 예정됐다면 시전 가능 시간을 확인합니다.',
+            },
+            {
+              skillId: '61882',
+              label: '지진',
+              note: '기본 정기 작렬 견본은 4대상 이상에서 지진을 우선 검토합니다. 우선 대상 피해와 다른 선택의 손익을 별도로 봅니다.',
+            },
+            {
+              skillId: '117014',
+              label: '정기 작렬',
+              note: '3대상 이하에서는 선택한 단일 소비기를 봅니다. 무료 소비와 자원 상한을 이유 없이 광역 생성기 뒤로 미루지 않습니다.',
+            },
+            {
+              skillId: '470057',
+              label: '전격의 불길',
+              note: '선택했다면 화염 충격을 갱신합니다. 선견자의 선조 소환 뒤 순서를 그대로 요구하지 않고 이 분기의 실제 강화 상태를 봅니다.',
+            },
+            {
+              skillId: '454009',
+              label: '폭풍',
+              note: '폭풍 발동이 있으면 실제 적들에게 사용합니다. 발동이 없는 첫 풀에서 필수 시전 단계처럼 기다리지 않습니다.',
+            },
+            {
+              skillId: '188443',
+              label: '연쇄 번개',
+              note: '2대상 이상에서 번개 화살 대신 사용합니다. 강화 충전과 다음 폭풍 발동, 소용돌이 상한을 계속 확인합니다.',
+            },
+          ],
+        },
       },
     ],
     sources: [
@@ -30029,6 +43298,34 @@ export const guideManuscripts = {
         updated: '8월 19일·8월 21일·9월 2일 적용 / 2026-10-03 확인',
         note: '정기 모든 공격력 5% 증가와 4세트 과충전! 미소모 수정(8월 19일), 원소의 대가 지진 적용 수정(8월 21일), 선견자 자연 친화 10% 교정(9월 2일)을 확인했습니다. 미국 공지는 하루 빠릅니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/elemental/shaman/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 22,506건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 274,270건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/DmWw3abc8tFfnJZA#fight=16&source=21',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:57:24.006Z · 장비 구간 329 · 413.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:16:46.914Z · 장비 구간 329 · 413.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       'Blizzard 12.1 기준과 Wowhead 변경 내역에서 소용돌이의 힘은 번개 화살·연쇄 번개가 다음 용암 폭발을 강화하는 2중첩 발동으로 바뀌었습니다.',
@@ -30040,6 +43337,7 @@ export const guideManuscripts = {
       'Wowhead와 Icy Veins 모두 폭풍수호자와 선조의 신속함을 자주 사용하고, 승천이 임박했을 때만 짧게 맞추며 폭풍수호자를 지나치게 지연하지 않는 방향을 제시합니다.',
       'Icy Veins(8월 10일)는 지능 다음 특화, 가속, 치명타, 유연성 순서를, Method(9월 1일)는 선견자 기준 특화, 가속(치명타와 비슷), 치명타, 유연성 순서를 제시합니다. 개인 장비는 Raidbots로 다시 계산해야 합니다.',
       '한국 공지 기준 8월 19일 정기 모든 공격력 5% 증가와 시즌 2 4세트 과충전! 미소모 수정, 8월 21일 원소의 대가가 지진을 강화하지 않던 문제 수정, 9월 2일 선견자 자연 친화가 자연의 수호자 치유를 20% 올리던 오류의 10% 교정이 있었습니다. 9월 23일 정기 항목은 플레이어 간 전투 전용입니다.',
+      '10월 8일 주술사 정기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '2026-08-30 Archon 사용률은 당시 플레이어가 고른 빌드를 보여 줄 뿐이며, 현재 비율이나 특정 보스의 짧은 페이즈·특수 임무에서 유일한 정답을 보장하지 않습니다.',
@@ -30049,6 +43347,9 @@ export const guideManuscripts = {
       '능력치 순서는 고정 수치 제한이 아닙니다. 새 무기·장신구·세트 교체 뒤에는 Top Gear와 단일·쐐기 상황을 각각 시뮬레이션합니다.',
       '원소의 대가는 작열하는 분노와 같은 노드의 선택 특성입니다. Method(9월 1일) 쐐기 선견자 빌드는 원소의 대가 대신 작열하는 분노를 고르므로, 원소의 대가 버프를 만드는 순서는 그 특성을 고른 빌드에만 적용됩니다.',
       '이 가이드는 선견자 기본 흐름 하나만 차트로 제공합니다. 폭풍인도자 전용 오프닝·단일·광역 차트는 아직 근거를 갖춰 작성하지 않았습니다.',
+      '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     blocks: [
       {
@@ -30235,64 +43536,64 @@ export const guideManuscripts = {
       },
     ],
     opener: {
-      title: '선견자 단일 오프닝 전투 흐름',
-      summary: '폭풍수호자를 전투 3초 전에 쓰고 용암 폭발이 풀 직후 도착하게 시전합니다. 선조의 신속함 뒤 승천을 열어 선조와 큰 쿨기를 겹치고, 강화 번개 화살과 용암 폭발로 이어 갑니다. 폭풍은 폭풍인도자 전용 기술이라 이 선견자 오프닝에 넣지 않습니다. 여러 대상이면 선조의 신속함 다음에 전격의 불길을 넣고 승천을 사용합니다. 폭풍수호자 강화 주문과 소용돌이 소비를 놓치지 않는 것이 목표입니다.',
+      title: '선견자 오프닝 전투 흐름',
+      summary: '폭풍수호자로 선조와 강화 주문을 준비합니다. 선조의 신속함은 실제 시전 시간이 있는 주문에 소비해야 쿨다운이 시작됩니다.',
       steps: [
         {
           skillId: '191634',
           label: '폭풍수호자',
-          phase: '전투 전 준비',
-          trigger: '풀링 약 3초 전',
-          note: '다음 두 번개 주문과 선조를 준비합니다. 풀링 뒤 이동 때문에 강화 주문을 잃지 않을 위치에서 시작합니다.',
+          note: '전투 약 3초 전 준비한 예시입니다. 첫 피해 구간이 늦으면 사용 시점을 조정하고 강화 주문 두 번을 실제로 소비합니다.',
+          phase: '준비',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '51505',
           label: '용암 폭발',
-          phase: '첫 적중',
-          trigger: '풀링 약 1.5초 전',
-          note: '주문이 풀 직후 도착하게 맞춰 화염 충격 대상의 확정 치명타와 원소의 대가를 준비합니다.',
+          note: '전투 시작에 도착하도록 사전 시전할 수 있습니다. 화염 충격이 아직 없는 첫 시전에는 확정 치명타 조건을 가정하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '443454',
           label: '선조의 신속함',
-          phase: '선조 추가 소환',
-          trigger: '첫 글쿨',
-          note: '폭풍수호자 선조와 겹치게 사용하고 다음 실제 주문이 10% 강화되도록 합니다.',
-        },
-        {
-          skillId: '470057',
-          label: '전격의 불길',
-          phase: '광역 분기',
-          trigger: '여러 대상이 모였을 때',
-          note: '광역이면 승천 전에 사용해 화염 충격을 퍼뜨립니다. 단일 전투라면 이 단계를 건너뜁니다.',
-        },
-        {
-          skillId: '114050',
-          label: '승천',
-          phase: '주요 극딜 구간',
-          trigger: '선조 준비 직후',
-          note: '사용 장신구와 피의 욕망이 있다면 맞추고, 15초 동안 추가 정기 과부하와 강화된 과부하를 활용합니다.',
-        },
-        {
-          skillId: '188196',
-          label: '번개 화살',
-          phase: '폭풍수호자 소비 1',
-          trigger: '단일 대상',
-          note: '첫 강화 번개 화살을 즉시 사용합니다. 여러 대상이면 연쇄 번개로 바꿉니다.',
+          note: '선조를 부르고 다음 시전 주문을 준비합니다. 대지 충격이나 이미 즉시시전인 강화 번개 화살로 소비됐다고 착각하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '51505',
           label: '용암 폭발',
-          phase: '화염 리듬 복귀',
-          trigger: '원소의 대가 없음/충전 임박',
-          note: '화염 충격 대상에 사용해 원소의 대가를 다시 만들고 다음 강한 주문을 준비합니다.',
+          note: '시전 시간이 있는 용암 폭발을 신속함으로 소비해 쿨다운을 시작합니다. 원소의 대가를 골랐다면 다음 강한 주문을 준비합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
+        },
+        {
+          skillId: '470057',
+          label: '전격의 불길',
+          note: '전격의 불길 선택 시 화염 충격을 준비합니다. 선택하지 않았다면 화염 충격을 사용하고 광역 예시를 그대로 복사하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
+        },
+        {
+          skillId: '114050',
+          label: '승천',
+          note: '폭풍수호자 뒤 계획한 공격 구간에 사용합니다. 선조 구간과 강화 주문을 겹치되 전투 전체 사용 횟수를 잃지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
+        },
+        {
+          skillId: '188196',
+          label: '번개 화살',
+          note: '단일에서 폭풍수호자 강화를 소비합니다. 여러 적이면 연쇄 번개로 바꾸고 소용돌이 상한과 무료 소비 발동을 확인합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '117014',
           label: '정기 작렬',
-          phase: '소용돌이 소비',
-          trigger: '소용돌이 상한 접근',
-          note: '단일에서 자원을 비우고 능력치 강화를 일찍 확보합니다. 무료 소비기 버프가 있으면 덮이기 전에 사용합니다.',
+          note: '정기 작렬을 선택했고 자원 또는 무료 소비 기회가 있으면 사용합니다. 대지 충격 선택과 한 빌드에 동시에 강제하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
       ],
     },
@@ -30312,69 +43613,419 @@ export const guideManuscripts = {
     ],
     priority: [
       {
-        skillId: '188389',
-        label: '화염 충격 유지',
-        note: '주요 대상에 공백을 만들지 않고 남은 6초 안팎의 갱신을 이동 글쿨과 함께 처리합니다.',
-      },
-      {
         skillId: '191634',
-        label: '폭풍수호자 쿨기 사용',
-        note: '승천이 바로 오면 짧게 맞추되 10초 넘게 미루지 않고 강화 주문 두 번을 끝까지 사용합니다.',
+        label: '폭풍수호자',
+        note: '계획한 구간에 사용합니다. 승천 직전에 맞추되 사용 횟수를 잃는 장시간 보관은 피하고 강화 주문을 끝까지 회수합니다.',
       },
       {
         skillId: '443454',
-        label: '선조의 신속함과 선조 시전',
-        note: '쿨다운마다 사용하고 선조가 남은 동안 대상 수에 맞는 실제 단일·광역 주문을 계속 시전합니다.',
+        label: '선조의 신속함',
+        note: '선조를 부르고 실제 시전 주문에 즉시시전 효과를 소비합니다. 소비 전에는 쿨다운이 시작되지 않는 점을 확인합니다.',
       },
       {
         skillId: '114050',
-        label: '승천 극딜 구간',
-        note: '폭풍수호자 뒤에 사용하고 장신구·피의 욕망과 맞추되 전투 전체 사용 횟수를 잃지 않습니다.',
-      },
-      {
-        skillId: '51505',
-        label: '용암 폭발과 원소의 대가',
-        note: '화염 충격 대상에 사용하고 충전 손실을 막습니다. 원소의 대가를 골랐다면 다음 강한 주문을 위한 버프를 만듭니다.',
+        label: '승천',
+        note: '폭풍수호자 뒤 사용합니다. 선조와 함께 공격할 시간이 남아 있는 대상인지, 기믹으로 시전이 끊길지를 먼저 봅니다.',
       },
       {
         skillId: '117014',
-        label: '단일 정기 작렬 소비',
-        note: '소용돌이가 넘치기 전에 비우고 능력치 강화를 유지하며 시즌 2 무료 소비기를 덮이기 전에 씁니다.',
+        label: '정기 작렬',
+        note: '시즌 2 무료 소비 발동 또는 소용돌이 상한 15 이내에서 우선 사용합니다. 정기 작렬을 선택하지 않았다면 대지 충격으로 판단합니다.',
       },
       {
-        skillId: '8042',
-        label: '단일 대지 충격 소비',
-        note: '정기 작렬보다 현재 조건에 맞거나 빠른 자원 정리가 필요할 때 사용해 소용돌이 초과를 막습니다.',
+        skillId: '51505',
+        label: '용암 폭발',
+        note: '원소의 대가가 없고 충전이 준비됐으면 사용합니다. 해당 특성이 없는 빌드에는 강화 교대의 이득을 가정하지 않습니다.',
+      },
+      {
+        skillId: '117014',
+        label: '정기 작렬',
+        note: '원소의 대가를 강한 소비기에 사용합니다. 무료 소비와 자원 상한을 놓치지 않고 용암 폭발을 연속으로 중복 강화하지 않습니다.',
+      },
+      {
+        skillId: '470057',
+        label: '전격의 불길',
+        note: '전격의 불길 선택 시 화염 충격의 갱신 구간을 확인합니다. 일반 화염 충격 빌드는 실제 지속시간과 이동 글쿨을 기준으로 유지합니다.',
       },
       {
         skillId: '188196',
-        label: '단일 번개 화살 생성',
-        note: '다른 우선 주문이 없을 때 소용돌이를 만들고 폭풍수호자 강화 단일 주문을 소비합니다.',
-      },
-      {
-        skillId: '188443',
-        label: '광역 연쇄 번개 생성',
-        note: '여러 대상에서 소용돌이를 만들고 선조에게 광역 주문 반응을 일으키며 강화 주문을 소비합니다.',
-      },
-      {
-        skillId: '61882',
-        label: '광역 지진 소비',
-        note: '적이 전체 지속시간 동안 머무를 위치에 사용하고 짧은 풀이나 우선 대상 전투에서는 단일 소비기와 비교합니다.',
-      },
-      {
-        skillId: '79206',
-        label: '이동 중 영혼나그네의 은총',
-        note: '긴 이동 전에 사용해 폭풍수호자·승천·선조 활성 중 실제 시전이 끊기지 않게 합니다.',
+        label: '번개 화살',
+        note: '다른 조건이 없으면 소용돌이를 생성합니다. 선조는 실제 시전에 반응하므로 과부하 횟수를 선조의 별도 복제 횟수로 세지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 견본입니다.',
+        validation: {
+          specId: 262,
+          heroTreeId: 56,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'e936c85a43816dc63300a946b3e234fd500e627b45472216c97521cca4dfc380',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '선견자',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWMWmZGzMLAAzAgZGDDD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWMWmZGzMLAAzAgZGDDD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 262,
+          heroTreeId: 56,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '07a12614f2dd6d9edbbd9573174d3ef910bb8cd7bc58eeb25884d5c596fef0c3',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '선견자',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 262,
+          heroTreeId: 56,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'e936c85a43816dc63300a946b3e234fd500e627b45472216c97521cca4dfc380',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '선견자',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 22506,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/elemental/shaman/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/8dzJj1BrtTnZGLpC#fight=2',
+          recommendedCode: 'CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTgZBAmlZmZM2WmpNmZ2YZmZmxMYZmZZYMzsAAMAwMjhhB',
+          validation: {
+            specId: 262,
+            heroTreeId: 56,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 274270,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/1zhB4N3gbm2df96G#fight=22',
+          recommendedCode: 'CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTgZBAmtZmZM2WMthZMWmZmZmhFLzMLDjZmFAgBAmZMMMA',
+          validation: {
+            specId: 262,
+            heroTreeId: 56,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.0015035885485535816,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/DmWw3abc8tFfnJZA#fight=16&source=21',
+            startedAt: '2026-10-07T01:57:24.006Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 413055,
+            itemLevelBracket: 329,
+            heroTree: 56,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '108271',
+                count: 4,
+              },
+              {
+                spellId: '192063',
+                count: 5,
+              },
+              {
+                spellId: '443454',
+                count: 13,
+              },
+              {
+                spellId: '198103',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '188443',
+                count: 44,
+              },
+              {
+                spellId: '191634',
+                count: 9,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '470057',
+                count: 39,
+              },
+              {
+                spellId: '1293316',
+                count: 4,
+              },
+              {
+                spellId: '188196',
+                count: 51,
+              },
+              {
+                spellId: '117014',
+                count: 29,
+              },
+              {
+                spellId: '192058',
+                count: 2,
+              },
+              {
+                spellId: '51505',
+                count: 82,
+              },
+              {
+                spellId: '79206',
+                count: 7,
+              },
+              {
+                spellId: '61882',
+                count: 37,
+              },
+              {
+                spellId: '114050',
+                count: 4,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 36416,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 312138,
+                uses: 48,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=1',
+            startedAt: '2026-10-08T01:16:46.914Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 413677,
+            itemLevelBracket: 329,
+            heroTree: 56,
+            augmentationCount: 0,
+            healerCount: 6,
+            casts: [
+              {
+                spellId: '79206',
+                count: 4,
+              },
+              {
+                spellId: '108271',
+                count: 1,
+              },
+              {
+                spellId: '33697',
+                count: 4,
+              },
+              {
+                spellId: '191634',
+                count: 8,
+              },
+              {
+                spellId: '192058',
+                count: 2,
+              },
+              {
+                spellId: '114050',
+                count: 4,
+              },
+              {
+                spellId: '192077',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '51485',
+                count: 6,
+              },
+              {
+                spellId: '51490',
+                count: 3,
+              },
+              {
+                spellId: '188196',
+                count: 76,
+              },
+              {
+                spellId: '192063',
+                count: 2,
+              },
+              {
+                spellId: '51505',
+                count: 74,
+              },
+              {
+                spellId: '443454',
+                count: 13,
+              },
+              {
+                spellId: '2645',
+                count: 2,
+              },
+              {
+                spellId: '470057',
+                count: 33,
+              },
+              {
+                spellId: '61882',
+                count: 40,
+              },
+              {
+                spellId: '188443',
+                count: 31,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '117014',
+                count: 29,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'shaman-restoration': {
     patch: '12.1',
-    researchedAt: '2026-10-03',
+    researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '61295',
-    sourceStatus: '12.1 주문·시너지·시즌 2 세트 툴팁과 토템술사/선견자 추천은 9월 23일 대조, Icy Veins·Method 페이지 갱신일과 한국어 누적 긴급 수정은 10월 3일 재확인. 폭우는 선택 특성이며 출처 간 판단이 다릅니다. 세트의 전투별 효율과 최신 로그는 검수 중입니다.',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
     summary: '복원 주술사는 피해가 올 위치에 치유를 준비하고, 다친 대상과 피해 규모에 맞춰 직접 치유와 큰 쿨기를 배분합니다. 12.1 레이드와 쐐기 기본 추천은 토템술사이며, 선견자는 대상 선택과 선조 구간을 살리는 별도 분기입니다. 성난 해일 대상, 쇄도하는 토템 또는 치유의 비 위치, 치유의 물결과 연쇄 치유의 대상 수를 먼저 익히세요. 폭우는 특성을 선택한 경우에만 추가하는 광역 회복입니다.',
     sourceNote: '2026-09-23 확인한 12.1 Wowhead·Icy Veins·Method 특성 가이드는 토템술사를 레이드와 쐐기의 기본 추천으로 두고, 선견자를 대상 선택과 선조 운용의 대안으로 설명합니다. Wowhead와 Icy Veins는 폭우를 기본 빌드에서 빼고 시즌 2 세트 장판의 발동·위치와 피해 타이밍이 맞을 때만 고려합니다. 반면 Method Radio(8월 11일) 운용 우선순위에는 "현재 쇄도하는 토템이 끝나기 전에 폭우를 사용"하는 단계가 있어 출처 간 이견으로 남깁니다. 주문 효과와 한국어 명칭은 Wowhead 라이브 툴팁으로 대조했습니다. 최신 로그 선택률은 확인하지 못했으며, 아래 12.0.5 자료와 6월 선택률은 과거 기록입니다.',
     sources: [
@@ -30546,6 +44197,34 @@ export const guideManuscripts = {
         updated: '2026-10-02 게시 / 2026-10-03 확인 · 미적용',
         note: '복원 성난 해일 연장 방식 변경과 자연의 신속함·선조의 신속함의 치유의 비 즉시 시전 수정을 확인했습니다. 적용 전 자료입니다.',
       },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/restoration/shaman/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 21,824건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 226,248건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/yRhv6gbNmBxV9FTC#fight=49&source=474',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:30:54.019Z · 장비 구간 328 · 330.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=21',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:06:25.770Z · 장비 구간 328 · 328.0초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
     evidence: [
       '2026-09-23 Wowhead 한국어 라이브 툴팁에서 연쇄 치유는 기본 3명에게 추가 전달되고 전달마다 치유량이 30% 감소함을 확인했습니다. 물길은 자신의 치유의 비 또는 성난 해일 대상에 대한 치유의 물결·연쇄 치유를 15% 강화합니다.',
@@ -30564,6 +44243,7 @@ export const guideManuscripts = {
       '2026-06-06 Archon의 토템술사 레이드 99.6%, 쐐기 93.9%, 고단 99.7%는 12.0.5 당시 선택률입니다. 12.1 두 영웅 특성의 현재 우열이나 채택률을 증명하지 않으므로, 토템술사 지역 치유와 선견자 대상 선택을 별도 운용으로 설명합니다.',
       'Wowhead 한국어 툴팁에서 성난 해일, 연쇄 치유, 치유의 물결, 치유의 비, 치유의 토템, 쇄도하는 토템, 폭우, 치유의 해일 토템, 정신의 고리 토템, 승천, 생명 폭발, 자연의 신속함, 선조의 신속함, 폭풍의 흐름 토템 표기와 아이콘을 재확인했습니다.',
       'Method Radio(8월 11일)는 선견자가 이번 시즌 훨씬 나은 대안이 됐지만 쉽고 강한 토템술사를 모든 콘텐츠에 추천한다고 적습니다. 한국 공지 8월 20일 긴급 수정으로 토템술사 소용돌이치는 물 효과가 정상 작동하게 됐고, 9월 4일 과잉 쇄도, 9월 11일 위안의 비 수정이 이어졌습니다.',
+      '10월 8일 주술사 복원의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
     caveats: [
       '과잉 쇄도의 복원 치유량 증가 자체는 9월 4일 공식 수정으로 확인됐습니다. 공개 툴팁의 피해 증가 50%를 치유 증가 수치로 옮기거나 수정 전후 로그를 같은 조건으로 비교하지 않습니다.',
@@ -30574,6 +44254,9 @@ export const guideManuscripts = {
       '힐러 전문화는 고정 순서표보다 피해 타임라인, 공대 위치, 다른 힐러 쿨다운 배정에 크게 의존합니다. 따라서 이 가이드는 스킬 나열보다 “피해 전 준비, 피해 중 회수, 피해 후 안정화” 순서로 읽어야 합니다.',
       '장신구, 2차 능력치, 세부 보석은 캐릭터 장비와 힐러 조합의 영향이 크므로 이 가이드는 운용 구조, 시너지, 확인 차트를 우선합니다.',
       '12.1.5 노트는 너울대는 물결로 성난 해일을 연장할 때 지속시간을 초기화하지 않고 늘리도록 바꾸고, 자연의 신속함·선조의 신속함이 치유의 비를 즉시 시전으로 만들지 못하던 문제를 고친다고 밝혔습니다. 적용 전이므로 본문에 반영하지 않았고, 10월 6일 예고의 복원 항목은 플레이어 간 전투 전용입니다.',
+      '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
     heroBranches: [
       {
@@ -30595,6 +44278,155 @@ export const guideManuscripts = {
           '주의할 실수: 토템술사는 위치가 틀리면 강점이 바로 사라집니다. 탱커가 이동할 풀, 원거리 산개가 강제되는 보스에서 쇄도하는 토템을 현재 위치에만 깔면 다음 피해 때 실제 회복 대상이 비어 버립니다.',
           '로그 체크: 쇄도하는 토템이 실제 피해 위치에 있었는지, 폭풍의 흐름 토템 발동을 2중첩으로 낭비했는지, 연쇄 치유 첫 대상이 성난 해일 대상이었는지를 봅니다. 폭우를 선택했다면 열린 사용권과 유효 치유도 따로 확인합니다.',
         ],
+        opener: {
+          title: '토템술사 피해 대응 전투 흐름',
+          summary: '봉쇄할 피해와 파티 위치를 보고 준비합니다. 쇄도하는 토템은 치유의 비를 대체하며 승천과 치유의 해일 토템은 선택한 하나만 사용합니다.',
+          steps: [
+            {
+              skillId: '52127',
+              label: '물의 보호막',
+              note: '전투 전 자신의 물의 보호막을 확인합니다. 마나 회수를 준비하되 실제 피해 대응 중 중요한 치유를 늦추지 않습니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '974',
+              label: '대지의 보호막',
+              note: '대지의 보호막 대상을 확인합니다. 탱커 인계나 다음 위험 대상에 맞추어 유지하고 모든 아군에 동시에 적용된다고 가정하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '다음 피해를 받을 대상에 적용합니다. 이미 성난 해일이 남은 대상만 반복하지 않고 굽이치는 물결과 후속 치유를 준비합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '444995',
+              label: '쇄도하는 토템',
+              note: '파티가 실제로 머무는 위치에 사용합니다. 직접 시전 치유의 비를 같은 빌드의 다음 버튼으로 추가하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '378081',
+              label: '자연의 신속함',
+              note: '피해와 시전 계획에 맞춰 사용합니다. 즉시시전 효과와 실제 폭풍의 흐름 토템 발동 보유 상태를 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '발동이 준비돼 있고 부상자가 있으면 실제 시전 주문으로 소비합니다. 발동이 없는 상태에서 보유 충전을 만들어 넣지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '5394',
+              label: '치유의 토템',
+              note: '충전 상한과 실제 회복 필요를 확인합니다. 활발한 토템을 선택한 경우 무료 연쇄 치유와 연결되는 이득을 함께 회수합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '1064',
+              label: '연쇄 치유',
+              note: '여러 명이 다쳤고 마나가 허용하면 사용합니다. 한두 명만 위험한 상황은 치유의 물결로 바꾸어 과도한 마나 소모를 줄입니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '토템술사 단일 구조',
+          summary: '한 명을 살릴 때 치유의 물결과 성난 해일이 중심입니다. 단일 급락을 해결하려고 모든 광역 쿨다운을 동시에 쓰지 않습니다.',
+          priority: [
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '위험 대상에 남은 효과와 충전을 확인합니다. 즉시 회복이 필요한 대상을 선택하고 다음 굽이치는 물결 시전을 준비합니다.',
+            },
+            {
+              skillId: '378081',
+              label: '자연의 신속함',
+              note: '즉시시전이 필요한 급락이나 예정 피해에 맞춰 사용합니다. 폭풍의 흐름 토템 발동과 실제 소비 주문을 이어서 확인합니다.',
+            },
+            {
+              skillId: '77472',
+              label: '치유의 물결',
+              note: '한 명 또는 두 명의 실제 부상자를 회복합니다. 굽이치는 물결과 마나 상황을 보고 불필요한 연쇄 치유를 반복하지 않습니다.',
+            },
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '발동을 보유했고 실제 부상자가 있으면 소비합니다. 토템술사의 짧은 토템 회전과 무료 치유 기회를 회수하되 없는 발동을 강제하지 않습니다.',
+            },
+            {
+              skillId: '444995',
+              label: '쇄도하는 토템',
+              note: '회복할 아군이 실제로 머무는 위치를 유지합니다. 대상 한 명을 따라 계속 이동하는 상황에서는 적중과 재사용 시점을 따로 봅니다.',
+            },
+            {
+              skillId: '5394',
+              label: '치유의 토템',
+              note: '필요한 회복과 충전 상한을 확인합니다. 활발한 토템 선택과 연결된 무료 치유를 회수하고 무조건 충전을 오래 보관하지 않습니다.',
+            },
+            {
+              skillId: '974',
+              label: '대지의 보호막',
+              note: '대지의 보호막 대상과 남은 충전을 확인합니다. 급한 직접 치유가 필요한 순간에 보호막 유지 입력만 반복하지 않습니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '토템술사 다중 회복',
+          summary: '지역 치유와 짧은 토템을 회수하고 마나가 허용하는 만큼 연쇄 치유를 사용합니다. 큰 피해는 배정한 쿨다운 하나씩 대응합니다.',
+          priority: [
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '발동을 보유했고 여러 부상자가 있으면 소비합니다. 토템술사는 짧은 토템 회전을 회수하므로 불필요하게 발동을 오래 묵히지 않습니다.',
+            },
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '피해를 받을 아군에게 효과를 넓힙니다. 이미 남아 있는 효과와 굽이치는 물결을 확인하며 같은 대상 갱신만 반복하지 않습니다.',
+            },
+            {
+              skillId: '378081',
+              label: '자연의 신속함',
+              note: '예정한 회복 구간에 사용합니다. 실제 발동과 즉시시전 효과를 확인하고 단순히 버튼이 돌아왔다는 이유로 회복 공백에 낭비하지 않습니다.',
+            },
+            {
+              skillId: '444995',
+              label: '쇄도하는 토템',
+              note: '파티가 모이는 실제 위치에 유지합니다. 직접 시전 치유의 비와 두 지역 치유를 연속으로 배정하지 않습니다.',
+            },
+            {
+              skillId: '5394',
+              label: '치유의 토템',
+              note: '충전을 회수하고 선택한 활발한 토템의 무료 연쇄 치유와 연결합니다. 승천 중에도 실제 부상자와 충전 상태를 계속 확인합니다.',
+            },
+            {
+              skillId: '1064',
+              label: '연쇄 치유',
+              note: '여러 부상자가 있고 마나가 허용하면 사용합니다. 대상 수가 줄거나 과다 치유가 커지면 치유의 물결로 전환합니다.',
+            },
+            {
+              skillId: '98008',
+              label: '정신의 고리 토템',
+              note: '모인 아군에게 큰 피해가 올 때 배정한 위치에 사용합니다. 흩어진 아군의 체력을 무조건 평준화한다고 가정하지 않습니다.',
+            },
+            {
+              skillId: '207778',
+              label: '폭우',
+              note: '폭우 특성을 선택하고 치유의 비 또는 쇄도하는 토템 뒤 16초 동안 시전할 수 있을 때만 사용합니다. 폭우를 선택했을 때만 지역 치유와 위치를 연결합니다. 미선택 견본에는 필수 버튼으로 넣지 않고 실제 부상 시점에 회복합니다.',
+            },
+          ],
+        },
       },
       {
         label: '선견자',
@@ -30615,6 +44447,155 @@ export const guideManuscripts = {
           '주의할 실수: 선견자를 고른다고 성난 해일과 연쇄 치유 첫 대상 판단이 사라지지 않습니다. 선조의 신속함을 만피 대상이나 피해가 끝난 뒤에 쓰면 선조 구간이 과치유로 빠지고, 마나가 줄어드는 동안 실제 위험 대상은 그대로 남습니다.',
           '로그 체크: 선조의 신속함 직후 치유 주문 대상, 선조 치유가 단일 급락 대상에 닿은 비율, 성난 해일 대상 수, 연쇄 치유 첫 대상 체력, 생명 폭발 후속 치유의 과치유를 함께 봅니다.',
         ],
+        opener: {
+          title: '선견자 피해 대응 전투 흐름',
+          summary: '선조와 직접 시전 지역 치유를 준비합니다. 쇄도하는 토템과 토템술사 전용 회전을 넣지 않습니다.',
+          steps: [
+            {
+              skillId: '52127',
+              label: '물의 보호막',
+              note: '전투 전 자신의 물의 보호막을 확인합니다. 다음 긴 회복 구간의 마나 계획과 짧은 쿨다운 사용을 함께 준비합니다.',
+              phase: '준비',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '974',
+              label: '대지의 보호막',
+              note: '다음 피해 대상에 대지의 보호막을 유지합니다. 탱커 인계와 자신의 보호막 효과를 선택 특성에 맞춰 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '피해를 받을 대상에 성난 해일을 적용합니다. 이미 남아 있는 효과를 확인하고 선조 구간에서 사용할 굽이치는 물결을 준비합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '73920',
+              label: '치유의 비',
+              note: '부상자가 실제로 머물 위치에 직접 시전합니다. 토템술사의 쇄도하는 토템을 같은 분기의 추가 버튼으로 넣지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조와 후속 즉시시전을 준비합니다. 실제 치유가 필요한 구간에 사용하고 다음 시전 주문과 발동 상태를 확인합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '77472',
+              label: '치유의 물결',
+              note: '시전 시간이 있는 치유의 물결에 신속함을 소비하고 실제 부상자를 회복합니다. 대상 수가 많으면 선택한 연쇄 치유 시전도 검토합니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '73685',
+              label: '생명 폭발',
+              note: '후속 치유 강화와 선조 구간을 실제 피해에 연결합니다. 강화만 남기고 필요한 직접 치유를 늦추지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '실제 발동을 보유했고 회복할 부상자가 있으면 소비합니다. 아직 준비되지 않은 폭풍의 흐름 토템을 고정 첫 버튼으로 요구하지 않습니다.',
+              phase: '조건 확인',
+              trigger: '사용 조건 충족 시',
+            },
+          ],
+        },
+        singleTarget: {
+          title: '선견자 단일 구조',
+          summary: '선조의 신속함과 생명 폭발 뒤 치유의 물결을 연결합니다. 선조 구간에 실제 부상자를 치유하고 마나를 관리합니다.',
+          priority: [
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '위험 대상의 즉시 회복과 굽이치는 물결을 준비합니다. 이미 효과가 남은 대상과 실제로 급락한 대상을 함께 확인합니다.',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조와 즉시시전 효과를 필요한 회복 구간에 사용합니다. 이후 실제 시전 주문에 소비하고 발동이 준비됐는지 확인합니다.',
+            },
+            {
+              skillId: '73685',
+              label: '생명 폭발',
+              note: '후속 직접 치유를 강화합니다. 이미 강화가 있는 상태에서 효과만 덮어쓰거나 실제 회복을 계속 미루지 않습니다.',
+            },
+            {
+              skillId: '77472',
+              label: '치유의 물결',
+              note: '한 명 또는 두 명의 실제 부상자를 회복합니다. 선조와 강화 상태를 활용하고 과도한 연쇄 치유로 마나를 낭비하지 않습니다.',
+            },
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '발동을 보유했고 실제 부상자가 있으면 사용합니다. 선견자는 다음 큰 피해에 저장할 수 있지만 최대 2중첩을 넘겨 발동을 버리지 않습니다.',
+            },
+            {
+              skillId: '73920',
+              label: '치유의 비',
+              note: '회복 대상이 머물 지역을 유지합니다. 토템술사의 지역 치유 대체 주문과 한 분기의 연속 시전으로 묶지 않습니다.',
+            },
+            {
+              skillId: '5394',
+              label: '치유의 토템',
+              note: '짧은 회복과 충전 상한을 확인합니다. 더 큰 피해를 위해 폭풍의 흐름 토템을 저장하는 경우에는 이 충전 회전의 손익도 함께 봅니다.',
+            },
+          ],
+        },
+        aoe: {
+          title: '선견자 다중 회복',
+          summary: '선조와 생명 폭발을 회복 시점에 맞추고 연쇄 치유로 여러 부상자를 회복합니다. 토템술사의 무료 토템 회전을 그대로 복사하지 않습니다.',
+          priority: [
+            {
+              skillId: '61295',
+              label: '성난 해일',
+              note: '피해 대상에게 효과를 넓혀 굽이치는 물결과 후속 연쇄 치유를 준비합니다. 이미 효과가 남은 대상만 반복 갱신하지 않습니다.',
+            },
+            {
+              skillId: '443454',
+              label: '선조의 신속함',
+              note: '선조와 즉시시전을 피해 구간에 맞춥니다. 실제 시전 주문에 효과를 소비하고 짧은 쿨다운 횟수를 불필요하게 잃지 않습니다.',
+            },
+            {
+              skillId: '73685',
+              label: '생명 폭발',
+              note: '후속 치유 강화와 선조를 준비합니다. 강화가 남아 있는데 같은 입력만 반복하지 않고 실제 부상자에게 회복을 이어 갑니다.',
+            },
+            {
+              skillId: '73920',
+              label: '치유의 비',
+              note: '아군이 실제로 머무는 위치에 직접 시전합니다. 쇄도하는 토템이 함께 필요하다고 읽지 않으며 곧 이동하면 적중 시간을 봅니다.',
+            },
+            {
+              skillId: '1267016',
+              label: '폭풍의 흐름 토템',
+              note: '저장한 발동을 실제 큰 피해에 회수합니다. 최대 2중첩과 다음 신속함 발동을 확인하고 준비되지 않은 사용권을 요구하지 않습니다.',
+            },
+            {
+              skillId: '1064',
+              label: '연쇄 치유',
+              note: '여러 부상자가 있고 마나가 허용하면 사용합니다. 대상 수가 적거나 회복이 넘치면 치유의 물결로 바꾸어 전투 후반 마나를 보존합니다.',
+            },
+            {
+              skillId: '98008',
+              label: '정신의 고리 토템',
+              note: '배정한 큰 피해에 모인 아군을 보호합니다. 위치와 인원, 다른 공격대 생존기와의 배정을 확인하고 자동으로 모든 아군에게 닿는다고 가정하지 않습니다.',
+            },
+            {
+              skillId: '207778',
+              label: '폭우',
+              note: '폭우 특성을 선택하고 치유의 비 또는 쇄도하는 토템 뒤 16초 동안 시전할 수 있을 때만 사용합니다. 폭우를 선택한 경우에만 지역 치유와 피해 시점을 연결합니다. 미선택 견본에는 필수 단계를 추가하지 않습니다.',
+            },
+          ],
+        },
       },
     ],
     blocks: [
@@ -30804,92 +44785,64 @@ export const guideManuscripts = {
       },
     ],
     opener: {
-      title: '복원 피해 예고-회수 전투 흐름',
-      summary: '전투 전 물의 보호막과 대지의 보호막을 확인하고, 피해가 예고되면 성난 해일과 치유의 비 또는 쇄도하는 토템으로 대상과 치유 위치를 먼저 잡습니다. 피해가 들어온 뒤에는 연쇄 치유 또는 치유의 물결로 회수합니다. 폭우는 특성을 찍은 경우에만 추가하고, 큰 피해에는 정신의 고리 토템과 특성에서 선택한 치유의 해일 토템 또는 승천을 배정합니다.',
+      title: '토템술사 피해 대응 전투 흐름',
+      summary: '봉쇄할 피해와 파티 위치를 보고 준비합니다. 쇄도하는 토템은 치유의 비를 대체하며 승천과 치유의 해일 토템은 선택한 하나만 사용합니다.',
       steps: [
         {
           skillId: '52127',
           label: '물의 보호막',
-          phase: '사전 배치',
-          trigger: '전투 전',
-          note: '본인 유지와 마나 흐름을 먼저 확보합니다.',
+          note: '전투 전 자신의 물의 보호막을 확인합니다. 마나 회수를 준비하되 실제 피해 대응 중 중요한 치유를 늦추지 않습니다.',
+          phase: '준비',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '974',
           label: '대지의 보호막',
-          phase: '사전 배치',
-          trigger: '전투 전',
-          note: '탱커 또는 반복 피해 대상에게 사전 유지합니다.',
-        },
-        {
-          skillId: '382021',
-          label: '대지생명의 무기',
-          phase: '사전 배치',
-          trigger: '전투 전',
-          note: '지속 회복과 토템술사 보정의 바닥을 만듭니다.',
+          note: '대지의 보호막 대상을 확인합니다. 탱커 인계나 다음 위험 대상에 맞추어 유지하고 모든 아군에 동시에 적용된다고 가정하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '61295',
           label: '성난 해일',
-          phase: '피해 직전',
-          trigger: '피해 6초 전',
-          note: '성난 해일 대상과 연쇄 치유 첫 대상을 미리 표시합니다.',
-        },
-        {
-          skillId: '73920',
-          label: '치유의 비 (선견자)',
-          phase: '피해 직전',
-          trigger: '선견자 선택 시',
-          note: '토템술사의 쇄도하는 토템과 택일입니다. 파티가 머무를 위치에 설치합니다.',
+          note: '다음 피해를 받을 대상에 적용합니다. 이미 성난 해일이 남은 대상만 반복하지 않고 굽이치는 물결과 후속 치유를 준비합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '444995',
-          label: '또는 쇄도하는 토템 (토템술사)',
-          phase: '피해 직전',
-          trigger: '토템술사 선택 시',
-          note: '직접 시전하는 치유의 비를 대체합니다. 앞 단계를 이어서 시전하는 것이 아닙니다.',
+          label: '쇄도하는 토템',
+          note: '파티가 실제로 머무는 위치에 사용합니다. 직접 시전 치유의 비를 같은 빌드의 다음 버튼으로 추가하지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
-          skillId: '207778',
-          label: '폭우 (특성 선택 시)',
-          phase: '힐업 구간',
-          trigger: '폭우 특성 + 지역 치유 뒤 16초',
-          note: '기본 빌드에는 없는 선택 기술입니다. 치유의 비 위치에서 실제로 다친 최대 5명을 회복합니다.',
+          skillId: '378081',
+          label: '자연의 신속함',
+          note: '피해와 시전 계획에 맞춰 사용합니다. 즉시시전 효과와 실제 폭풍의 흐름 토템 발동 보유 상태를 확인합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
+        },
+        {
+          skillId: '1267016',
+          label: '폭풍의 흐름 토템',
+          note: '발동이 준비돼 있고 부상자가 있으면 실제 시전 주문으로 소비합니다. 발동이 없는 상태에서 보유 충전을 만들어 넣지 않습니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
+        },
+        {
+          skillId: '5394',
+          label: '치유의 토템',
+          note: '충전 상한과 실제 회복 필요를 확인합니다. 활발한 토템을 선택한 경우 무료 연쇄 치유와 연결되는 이득을 함께 회수합니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
         {
           skillId: '1064',
           label: '연쇄 치유',
-          phase: '힐업 구간',
-          trigger: '피해 발생 직후',
-          note: '성난 해일이 묻은 대상을 첫 대상으로 잡아 다수 피해를 회수합니다.',
-        },
-        {
-          skillId: '108280',
-          label: '치유의 해일 토템 (선택 시)',
-          phase: '힐업 구간',
-          trigger: '장기 광역 피해',
-          note: '승천과 양자택일입니다. 다른 힐러 쿨다운과 겹치지 않게 배정합니다.',
-        },
-        {
-          skillId: '114052',
-          label: '또는 승천 (선택 시)',
-          phase: '복구/안정화',
-          trigger: '직접 시전 가능 구간',
-          note: '치유의 해일 토템과 양자택일입니다. 연쇄 치유와 치유의 물결을 강화합니다.',
-        },
-        {
-          skillId: '98008',
-          label: '정신의 고리 토템',
-          phase: '복구/안정화',
-          trigger: '치명적 피해 직전',
-          note: '피해 감소와 체력 평준화를 동시에 살립니다.',
-        },
-        {
-          skillId: '57994',
-          label: '날카로운 바람',
-          phase: '복구/안정화',
-          trigger: '위험 주문 전',
-          note: '쐐기에서는 회복보다 차단이 먼저인 피해 패턴이 있습니다.',
+          note: '여러 명이 다쳤고 마나가 허용하면 사용합니다. 한두 명만 위험한 상황은 치유의 물결로 바꾸어 과도한 마나 소모를 줄입니다.',
+          phase: '조건 확인',
+          trigger: '사용 조건 충족 시',
         },
       ],
     },
@@ -30911,958 +44864,1695 @@ export const guideManuscripts = {
       {
         skillId: '61295',
         label: '성난 해일',
-        note: '성난 해일 대상, 굽이치는 물결, 연쇄 치유 연결의 중심',
-      },
-      {
-        skillId: '5394',
-        label: '치유의 토템',
-        note: '충전 낭비와 폭풍의 흐름 토템 가능 상태 관리',
-      },
-      {
-        skillId: '444995',
-        label: '쇄도하는 토템',
-        note: '토템술사 전용. 직접 시전하는 치유의 비를 대체하는 지역 치유',
-      },
-      {
-        skillId: '73920',
-        label: '치유의 비',
-        note: '선견자의 직접 시전 지역 치유. 토템술사의 쇄도하는 토템과 택일',
-      },
-      {
-        skillId: '1064',
-        label: '연쇄 치유',
-        note: '성난 해일이 묻은 대상을 회수하는 다수 대상 주문',
-      },
-      {
-        skillId: '207778',
-        label: '폭우 (특성 선택 시)',
-        note: '기본 빌드에서는 생략. 찍었다면 지역 치유 뒤 16초 안에 해당 위치의 부상자를 회복',
-      },
-      {
-        skillId: '77472',
-        label: '치유의 물결',
-        note: '효율적인 단일 대상 회복과 선조/승천 구간의 기본 시전',
-      },
-      {
-        skillId: '73685',
-        label: '생명 폭발',
-        note: '후속 치유 강화와 선조 구간을 여는 선견자 핵심 버튼',
+        note: '위험 대상에 남은 효과와 충전을 확인합니다. 즉시 회복이 필요한 대상을 선택하고 다음 굽이치는 물결 시전을 준비합니다.',
       },
       {
         skillId: '378081',
         label: '자연의 신속함',
-        note: '무료 즉시시전과 폭풍의 흐름 토템 발동 관리',
+        note: '즉시시전이 필요한 급락이나 예정 피해에 맞춰 사용합니다. 폭풍의 흐름 토템 발동과 실제 소비 주문을 이어서 확인합니다.',
       },
       {
-        skillId: '108280',
-        label: '치유의 해일 토템',
-        note: '승천과 양자택일. 장기 광역 피해 또는 피해 직후 안정화',
+        skillId: '77472',
+        label: '치유의 물결',
+        note: '한 명 또는 두 명의 실제 부상자를 회복합니다. 굽이치는 물결과 마나 상황을 보고 불필요한 연쇄 치유를 반복하지 않습니다.',
       },
       {
-        skillId: '114052',
-        label: '승천',
-        note: '치유의 해일 토템과 양자택일. 연쇄 치유와 치유의 물결 강화',
+        skillId: '1267016',
+        label: '폭풍의 흐름 토템',
+        note: '발동을 보유했고 실제 부상자가 있으면 소비합니다. 토템술사의 짧은 토템 회전과 무료 치유 기회를 회수하되 없는 발동을 강제하지 않습니다.',
       },
       {
-        skillId: '98008',
-        label: '정신의 고리 토템',
-        note: '피해 감소와 체력 평준화를 동시에 제공하는 생존 쿨다운',
+        skillId: '444995',
+        label: '쇄도하는 토템',
+        note: '회복할 아군이 실제로 머무는 위치를 유지합니다. 대상 한 명을 따라 계속 이동하는 상황에서는 적중과 재사용 시점을 따로 봅니다.',
       },
       {
-        skillId: '57994',
-        label: '날카로운 바람',
-        note: '쐐기에서 피해를 발생시키지 않게 하는 원거리 차단',
+        skillId: '5394',
+        label: '치유의 토템',
+        note: '필요한 회복과 충전 상한을 확인합니다. 활발한 토템 선택과 연결된 무료 치유를 회수하고 무조건 충전을 오래 보관하지 않습니다.',
       },
       {
-        skillId: '77130',
-        label: '영혼 정화',
-        note: '복원용 마법 해제입니다. 영혼 정화 연마를 선택해야 저주도 제거하며, 정기·고양의 저주 전용 주문과 구분합니다.',
+        skillId: '974',
+        label: '대지의 보호막',
+        note: '대지의 보호막 대상과 남은 충전을 확인합니다. 급한 직접 치유가 필요한 순간에 보호막 유지 입력만 반복하지 않습니다.',
       },
     ],
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+        validation: {
+          specId: 264,
+          heroTreeId: 54,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '524baac30515bcd218c8d6973075d9a65a7c07df50e23ccb033f18cb5161dfc4',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '토템술사',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer',
+        sourceLabel: 'Mythic+  (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 264,
+          heroTreeId: 54,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: 'f224389ec4851b2d3d2c132a9e044289956bbccab26cf56b1868105e06797e6f',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '토템술사',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer',
+        sourceLabel: 'Raid  (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 264,
+          heroTreeId: 54,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '524baac30515bcd218c8d6973075d9a65a7c07df50e23ccb033f18cb5161dfc4',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '토템술사',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 21824,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/restoration/shaman/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/18RN7GtfpTnhYLdD#fight=58',
+          recommendedCode: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxiGbDgZgNzwMYbMmpZbZmZzMmFWMPwMjZYWGAAAYmZwMDAMYG',
+          validation: {
+            specId: 264,
+            heroTreeId: 54,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 226248,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '13 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/YAVPk283qxKmG4a7#fight=7',
+          recommendedCode: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxiGbDgZgNmZGMbzMGNLLzMbmxswixMjhlZZAAAgZmBzMAwgZA',
+          validation: {
+            specId: 264,
+            heroTreeId: 54,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.006628893983120395,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/yRhv6gbNmBxV9FTC#fight=49&source=474',
+            startedAt: '2026-10-08T03:30:54.019Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 330221,
+            itemLevelBracket: 328,
+            heroTree: 54,
+            augmentationCount: 0,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '114052',
+                count: 2,
+              },
+              {
+                spellId: '61295',
+                count: 63,
+              },
+              {
+                spellId: '188389',
+                count: 6,
+              },
+              {
+                spellId: '98008',
+                count: 2,
+              },
+              {
+                spellId: '192063',
+                count: 3,
+              },
+              {
+                spellId: '108271',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '192077',
+                count: 2,
+              },
+              {
+                spellId: '79206',
+                count: 1,
+              },
+              {
+                spellId: '2645',
+                count: 4,
+              },
+              {
+                spellId: '1064',
+                count: 100,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '51505',
+                count: 5,
+              },
+              {
+                spellId: '108287',
+                count: 5,
+              },
+              {
+                spellId: '2484',
+                count: 2,
+              },
+              {
+                spellId: '378081',
+                count: 5,
+              },
+              {
+                spellId: '198103',
+                count: 2,
+              },
+              {
+                spellId: '444995',
+                count: 11,
+              },
+              {
+                spellId: '1267068',
+                count: 9,
+              },
+              {
+                spellId: '77472',
+                count: 5,
+              },
+              {
+                spellId: '5394',
+                count: 19,
+              },
+              {
+                spellId: '1291894',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=21',
+            startedAt: '2026-10-07T00:06:25.770Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 328032,
+            itemLevelBracket: 328,
+            heroTree: 54,
+            augmentationCount: 1,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '2484',
+                count: 1,
+              },
+              {
+                spellId: '51505',
+                count: 11,
+              },
+              {
+                spellId: '98008',
+                count: 2,
+              },
+              {
+                spellId: '114052',
+                count: 2,
+              },
+              {
+                spellId: '1291894',
+                count: 2,
+              },
+              {
+                spellId: '188196',
+                count: 2,
+              },
+              {
+                spellId: '5394',
+                count: 21,
+              },
+              {
+                spellId: '444995',
+                count: 13,
+              },
+              {
+                spellId: '1267068',
+                count: 9,
+              },
+              {
+                spellId: '108271',
+                count: 1,
+              },
+              {
+                spellId: '79206',
+                count: 5,
+              },
+              {
+                spellId: '108287',
+                count: 5,
+              },
+              {
+                spellId: '61295',
+                count: 63,
+              },
+              {
+                spellId: '378081',
+                count: 5,
+              },
+              {
+                spellId: '188443',
+                count: 3,
+              },
+              {
+                spellId: '58875',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '188389',
+                count: 12,
+              },
+              {
+                spellId: '59547',
+                count: 2,
+              },
+              {
+                spellId: '462854',
+                count: 2,
+              },
+              {
+                spellId: '1064',
+                count: 106,
+              },
+              {
+                spellId: '2645',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
   'priest-discipline': {
-    "patch": "12.1",
-    "researchedAt": "2026-09-23",
-    "status": "실전 심화 공략",
-    "graphCenterSkillId": "81749",
-    "sourceStatus": "12.1 공식 변경과 9월 22일 던전 속죄·회개 핫픽스를 반영했습니다. 공허술사 레이드·예언자 쐐기는 공개 가이드의 기존 추천이며, 상향 후 로그 우위는 검증하지 못했습니다.",
-    "summary": "피해가 들어올 사람에게 속죄를 먼저 준비하고, 다친 순간에 정신 분열과 회개를 연결하세요. 12.1에서는 이 공격이 공허의 보호막과 시즌 2 세트까지 이어집니다. 한 명이 위험하면 고정 순서를 멈추고 직접 치유·고통 억제로 살리는 판단이 먼저입니다.",
-    "sourceNote": "Blizzard 12.1 노트와 8월·9월 핫픽스, Wowhead AutomaticJak, Icy Veins의 Warcraft Priests 관리자 Clandon, Method Grafe의 공개 가이드를 대조했습니다. 2026-09-22부터 공격대·전장 밖에서 속죄 치유가 40% 증가하고 회개 마나 비용은 20% 감소합니다. 이 효과를 레이드 속죄나 직접 치유 전체에 적용하지 않습니다. 예언자·공허술사의 추천은 자료 날짜와 콘텐츠에 따라 다르며, 상향 후 로그 우열을 확인한 결과는 아닙니다. 한국어 명칭은 Wowhead를 따릅니다.",
-    "playstyle": [
+    patch: '12.1',
+    researchedAt: '2026-10-08',
+    status: '실전 심화 공략',
+    graphCenterSkillId: '81749',
+    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    summary: '피해가 들어올 사람에게 속죄를 먼저 준비하고, 다친 순간에 정신 분열과 회개를 연결하세요. 12.1에서는 이 공격이 공허의 보호막과 시즌 2 세트까지 이어집니다. 한 명이 위험하면 고정 순서를 멈추고 직접 치유·고통 억제로 살리는 판단이 먼저입니다.',
+    sourceNote: 'Blizzard 12.1 노트와 8월·9월 핫픽스, Wowhead AutomaticJak, Icy Veins의 Warcraft Priests 관리자 Clandon, Method Grafe의 공개 가이드를 대조했습니다. 2026-09-22부터 공격대·전장 밖에서 속죄 치유가 40% 증가하고 회개 마나 비용은 20% 감소합니다. 이 효과를 레이드 속죄나 직접 치유 전체에 적용하지 않습니다. 예언자·공허술사의 추천은 자료 날짜와 콘텐츠에 따라 다르며, 상향 후 로그 우열을 확인한 결과는 아닙니다. 한국어 명칭은 Wowhead를 따릅니다.',
+    playstyle: [
       {
-        "label": "먼저 익힐 것",
-        "text": "속죄를 무조건 많이 붙이기보다 곧 다칠 대상에게 남겨 두세요. 피해가 시작됐을 때 광휘 준비만 계속하면 가장 강한 회개·공허의 폭발을 늦게 쓰게 됩니다."
+        label: '먼저 익힐 것',
+        text: '속죄를 무조건 많이 붙이기보다 곧 다칠 대상에게 남겨 두세요. 피해가 시작됐을 때 광휘 준비만 계속하면 가장 강한 회개·공허의 폭발을 늦게 쓰게 됩니다.',
       },
       {
-        "label": "시즌 2 세트",
-        "text": "2세트는 회개를 강화하고 시전마다 정신 분열 쿨다운을 2초 줄입니다. 4세트는 정신 분열 뒤 다음 보호막 한 번을 강화합니다. 공허의 보호막 사용권 자체는 어둠 지배에서 얻습니다."
+        label: '시즌 2 세트',
+        text: '2세트는 회개를 강화하고 시전마다 정신 분열 쿨다운을 2초 줄입니다. 4세트는 정신 분열 뒤 다음 보호막 한 번을 강화합니다. 공허의 보호막 사용권 자체는 어둠 지배에서 얻습니다.',
       },
       {
-        "label": "공허술사",
-        "text": "레이드의 예측 가능한 피해에 맞춰 정신 분열로 혼돈의 균열을 열고 회개·공허의 폭발을 연결합니다. 균열이 끝난 뒤 남는 공허의 심장과 실제 균열 지속시간은 다릅니다."
+        label: '공허술사',
+        text: '레이드의 예측 가능한 피해에 맞춰 정신 분열로 혼돈의 균열을 열고 회개·공허의 폭발을 연결합니다. 균열이 끝난 뒤 남는 공허의 심장과 실제 균열 지속시간은 다릅니다.',
       },
       {
-        "label": "예언자",
-        "text": "쐐기에서는 회개 충전과 공허의 보호막을 자주 돌리며 한 명의 급락에도 대응합니다. 두 개의 시야가 있어도 회개만으로 새 속죄가 붙지는 않습니다."
-      }
+        label: '예언자',
+        text: '쐐기에서는 회개 충전과 공허의 보호막을 자주 돌리며 한 명의 급락에도 대응합니다. 두 개의 시야가 있어도 회개만으로 새 속죄가 붙지는 않습니다.',
+      },
     ],
-    "sources": [
+    sources: [
       {
-        "tier": "S",
-        "label": "Blizzard 2026-09-22 수양 핫픽스",
-        "url": "https://news.blizzard.com/en-us/article/24296142/hotfixes-september-22-2026",
-        "updated": "2026-09-22 / 2026-09-23 확인",
-        "note": "공격대·전장 밖 속죄 치유 40% 증가, 회개 마나 비용 20% 감소. PvP 속죄 보너스 제외"
+        tier: 'S',
+        label: 'Blizzard 2026-09-22 수양 핫픽스',
+        url: 'https://news.blizzard.com/en-us/article/24296142/hotfixes-september-22-2026',
+        updated: '2026-09-22 / 2026-09-23 확인',
+        note: '공격대·전장 밖 속죄 치유 40% 증가, 회개 마나 비용 20% 감소. PvP 속죄 보너스 제외',
       },
       {
-        "tier": "S",
-        "label": "Blizzard 12.1 콘텐츠 업데이트 노트",
-        "url": "https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes",
-        "updated": "12.1 / 2026-09-21 확인",
-        "note": "시즌 전환과 수양·예언자·공허술사 변경의 출발점입니다. 출시 이후 핫픽스와 현재 툴팁을 함께 적용합니다."
+        tier: 'S',
+        label: 'Blizzard 12.1 콘텐츠 업데이트 노트',
+        url: 'https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes',
+        updated: '12.1 / 2026-09-21 확인',
+        note: '시즌 전환과 수양·예언자·공허술사 변경의 출발점입니다. 출시 이후 핫픽스와 현재 툴팁을 함께 적용합니다.',
       },
       {
-        "tier": "S",
-        "label": "Blizzard 핫픽스: 8월 18일·9월 1일 수양 변경",
-        "url": "https://news.blizzard.com/en-us/article/24296142/hotfixes-september-17-2026",
-        "updated": "2026-08-18·2026-09-01 변경 / 2026-09-21 확인",
-        "note": "속죄 46%, 공허의 보호막 반사 10%, 어둠의 치유 마나 감소를 구분합니다. 혼돈의 균열 항목에 붙은 예언자 표기는 실제 영웅 특성 소속과 충돌합니다."
+        tier: 'S',
+        label: 'Blizzard 핫픽스: 8월 18일·9월 1일 수양 변경',
+        url: 'https://news.blizzard.com/en-us/article/24296142/hotfixes-september-17-2026',
+        updated: '2026-08-18·2026-09-01 변경 / 2026-09-21 확인',
+        note: '속죄 46%, 공허의 보호막 반사 10%, 어둠의 치유 마나 감소를 구분합니다. 혼돈의 균열 항목에 붙은 예언자 표기는 실제 영웅 특성 소속과 충돌합니다.',
       },
       {
-        "tier": "A",
-        "label": "Wowhead AutomaticJak 수양 운용",
-        "url": "https://www.wowhead.com/ko/guide/classes/priest/discipline/rotation-cooldowns-pve-healer",
-        "updated": "2026-08-12 / 2026-09-21 확인",
-        "note": "속죄 준비와 공격 치유 전환, 직접 치유와 쿨다운 사용을 비교했습니다. 일부 중복된 예언자 제목과 공허의 폭발 포함 예시는 영웅 특성을 따로 확인해야 합니다."
+        tier: 'A',
+        label: 'Wowhead AutomaticJak 수양 운용',
+        url: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/rotation-cooldowns-pve-healer',
+        updated: '2026-08-12 / 2026-09-21 확인',
+        note: '속죄 준비와 공격 치유 전환, 직접 치유와 쿨다운 사용을 비교했습니다. 일부 중복된 예언자 제목과 공허의 폭발 포함 예시는 영웅 특성을 따로 확인해야 합니다.',
       },
       {
-        "tier": "A",
-        "label": "Wowhead 수양 개요",
-        "url": "https://www.wowhead.com/ko/guide/classes/priest/discipline/overview-pve-healer",
-        "updated": "12.1 / 2026-09-21 확인",
-        "note": "예언자 중심의 기존 추천과 이후 공허술사 레이드 추천을 날짜별로 구분합니다. 서로 다른 시점의 설명을 동시에 현행 최상위 선택이라고 단정하지 않습니다."
+        tier: 'A',
+        label: 'Wowhead 수양 개요',
+        url: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/overview-pve-healer',
+        updated: '12.1 / 2026-09-21 확인',
+        note: '예언자 중심의 기존 추천과 이후 공허술사 레이드 추천을 날짜별로 구분합니다. 서로 다른 시점의 설명을 동시에 현행 최상위 선택이라고 단정하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Icy Veins Clandon 수양 운용 · Warcraft Priests",
-        "url": "https://www.icy-veins.com/wow/discipline-priest-pve-healing-rotation-cooldowns-abilities",
-        "updated": "2026-08-17 / 2026-09-21 확인",
-        "note": "Warcraft Priests 직업 디스코드 관리자의 공개 가이드입니다. 공허술사 레이드와 예언자 쐐기, 회개 채널 예외와 보호막 연계를 비교했으며 비공개 대화는 인용하지 않습니다."
+        tier: 'A',
+        label: 'Icy Veins Clandon 수양 운용 · Warcraft Priests',
+        url: 'https://www.icy-veins.com/wow/discipline-priest-pve-healing-rotation-cooldowns-abilities',
+        updated: '2026-08-17 / 2026-09-21 확인',
+        note: 'Warcraft Priests 직업 디스코드 관리자의 공개 가이드입니다. 공허술사 레이드와 예언자 쐐기, 회개 채널 예외와 보호막 연계를 비교했으며 비공개 대화는 인용하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Icy Veins 수양 특성",
-        "url": "https://www.icy-veins.com/wow/discipline-priest-pve-healing-spec-builds-talents",
-        "updated": "2026-08-18 / 2026-09-21 확인",
-        "note": "공허술사·예언자 콘텐츠별 추천, 대천사와 환각의 마귀 등 실제 선택 노드를 구분하는 참고입니다. 추천과 실측 로그 점유율은 다릅니다."
+        tier: 'A',
+        label: 'Icy Veins 수양 특성',
+        url: 'https://www.icy-veins.com/wow/discipline-priest-pve-healing-spec-builds-talents',
+        updated: '2026-08-18 / 2026-09-21 확인',
+        note: '공허술사·예언자 콘텐츠별 추천, 대천사와 환각의 마귀 등 실제 선택 노드를 구분하는 참고입니다. 추천과 실측 로그 점유율은 다릅니다.',
       },
       {
-        "tier": "B",
-        "label": "Method Grafe 수양 운용",
-        "url": "https://www.method.gg/guides/discipline-priest/playstyle-and-rotation",
-        "updated": "2026-09-17 / 2026-09-21 확인",
-        "note": "공허술사의 균열 중 공격과 예언자의 회개·보호막 운용을 비교했습니다. 마귀 선택 여부와 예견된 상황에 따른 고통 억제 50%를 기본값과 구분합니다."
+        tier: 'B',
+        label: 'Method Grafe 수양 운용',
+        url: 'https://www.method.gg/guides/discipline-priest/playstyle-and-rotation',
+        updated: '2026-09-17 / 2026-09-21 확인',
+        note: '공허술사의 균열 중 공격과 예언자의 회개·보호막 운용을 비교했습니다. 마귀 선택 여부와 예견된 상황에 따른 고통 억제 50%를 기본값과 구분합니다.',
       },
       {
-        "tier": "B",
-        "label": "Method Grafe 수양 특성",
-        "url": "https://www.method.gg/guides/discipline-priest/talents",
-        "updated": "2026-09-17 / 2026-09-21 확인",
-        "note": "레이드와 쐐기의 선택 차이를 확인하는 공개 작성자 자료입니다. 서로 다른 추천의 마귀·대천사와 방벽·궁극의 참회를 한 빌드로 합치지 않습니다."
+        tier: 'B',
+        label: 'Method Grafe 수양 특성',
+        url: 'https://www.method.gg/guides/discipline-priest/talents',
+        updated: '2026-09-17 / 2026-09-21 확인',
+        note: '레이드와 쐐기의 선택 차이를 확인하는 공개 작성자 자료입니다. 서로 다른 추천의 마귀·대천사와 방벽·궁극의 참회를 한 빌드로 합치지 않습니다.',
       },
       {
-        "tier": "B",
-        "label": "Method 수양 장비와 시즌 2 세트",
-        "url": "https://www.method.gg/guides/discipline-priest/gearing",
-        "updated": "12.1 / 2026-09-21 확인",
-        "note": "시즌 2 장비를 실제 세트 주문과 함께 대조합니다. 능력치와 장신구 선택은 개인 장비·피해 일정에 따라 달라지며 고정 HPS 상승률을 제시하지 않습니다."
+        tier: 'B',
+        label: 'Method 수양 장비와 시즌 2 세트',
+        url: 'https://www.method.gg/guides/discipline-priest/gearing',
+        updated: '12.1 / 2026-09-21 확인',
+        note: '시즌 2 장비를 실제 세트 주문과 함께 대조합니다. 능력치와 장신구 선택은 개인 장비·피해 일정에 따라 달라지며 고정 HPS 상승률을 제시하지 않습니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 속죄 현행 한글 툴팁",
-        "url": "https://www.wowhead.com/ko/spell=81749",
-        "updated": "2026-09-21 확인",
-        "note": "기본 46%, 15초와 5명 초과 시 감소, 속죄를 부여하는 기술 목록을 확인했습니다. 회개는 이 적용 목록에 없습니다."
+        tier: 'S',
+        label: 'Wowhead 속죄 현행 한글 툴팁',
+        url: 'https://www.wowhead.com/ko/spell=81749',
+        updated: '2026-09-21 확인',
+        note: '기본 46%, 15초와 5명 초과 시 감소, 속죄를 부여하는 기술 목록을 확인했습니다. 회개는 이 적용 목록에 없습니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 어둠 지배 마지막 노드",
-        "url": "https://www.wowhead.com/ko/spell=1253827",
-        "updated": "2026-09-21 확인",
-        "note": "정신 분열의 공허의 보호막 확정 강화와 흡수 피해 10% 반사를 확인했습니다. 실제 시전 1253593과 반사 1253828을 구분합니다."
+        tier: 'S',
+        label: 'Wowhead 어둠 지배 마지막 노드',
+        url: 'https://www.wowhead.com/ko/spell=1253827',
+        updated: '2026-09-21 확인',
+        note: '정신 분열의 공허의 보호막 확정 강화와 흡수 피해 10% 반사를 확인했습니다. 실제 시전 1253593과 반사 1253828을 구분합니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 음울한 구원과 어둠의 치유",
-        "url": "https://www.wowhead.com/ko/spell=1298779",
-        "updated": "2026-09-21 확인",
-        "note": "현재 추가 치유 40%, 속죄 4초 연장, 시전 시간 0.3초 증가입니다. 출시 초기 수치와 제거된 특성 ID를 쓰지 않습니다."
+        tier: 'S',
+        label: 'Wowhead 음울한 구원과 어둠의 치유',
+        url: 'https://www.wowhead.com/ko/spell=1298779',
+        updated: '2026-09-21 확인',
+        note: '현재 추가 치유 40%, 속죄 4초 연장, 시전 시간 0.3초 증가입니다. 출시 초기 수치와 제거된 특성 ID를 쓰지 않습니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 시즌 2 수양 2세트",
-        "url": "https://www.wowhead.com/ko/spell=1296577",
-        "updated": "2026-09-21 확인",
-        "note": "회개 20% 강화와 회개 시전당 정신 분열 쿨다운 2초 감소입니다. 회개의 화살 하나마다 2초씩 줄어드는 효과가 아닙니다."
+        tier: 'S',
+        label: 'Wowhead 시즌 2 수양 2세트',
+        url: 'https://www.wowhead.com/ko/spell=1296577',
+        updated: '2026-09-21 확인',
+        note: '회개 20% 강화와 회개 시전당 정신 분열 쿨다운 2초 감소입니다. 회개의 화살 하나마다 2초씩 줄어드는 효과가 아닙니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 시즌 2 수양 4세트",
-        "url": "https://www.wowhead.com/ko/spell=1296578",
-        "updated": "2026-09-21 확인",
-        "note": "정신 분열 뒤 다음 신의 권능: 보호막 또는 공허의 보호막을 25% 강화합니다. 영구 증가나 두 기술 각각에 남는 버프가 아닙니다."
+        tier: 'S',
+        label: 'Wowhead 시즌 2 수양 4세트',
+        url: 'https://www.wowhead.com/ko/spell=1296578',
+        updated: '2026-09-21 확인',
+        note: '정신 분열 뒤 다음 신의 권능: 보호막 또는 공허의 보호막을 25% 강화합니다. 영구 증가나 두 기술 각각에 남는 버프가 아닙니다.',
       },
       {
-        "tier": "S",
-        "label": "Wowhead 두 개의 시야 영어 원문",
-        "url": "https://www.wowhead.com/spell=440742",
-        "updated": "2026-09-21 확인",
-        "note": "한국어 첫 문장의 아군·적 대상 충돌은 영어로 대조했습니다. 아군 회개에는 적 공격 화살, 적 회개에는 아군 치유 화살이 추가됩니다."
+        tier: 'S',
+        label: 'Wowhead 두 개의 시야 영어 원문',
+        url: 'https://www.wowhead.com/spell=440742',
+        updated: '2026-09-21 확인',
+        note: '한국어 첫 문장의 아군·적 대상 충돌은 영어로 대조했습니다. 아군 회개에는 적 공격 화살, 적 회개에는 아군 치유 화살이 추가됩니다.',
       },
       {
-        "tier": "B",
-        "label": "SimulationCraft 12.1 사제 주문·특성 데이터",
-        "url": "https://github.com/simulationcraft/simc/blob/e9a81d3415d317e1fadb961dfdcb0decd34c525f/engine/class_modules/priest/sc_priest.cpp",
-        "updated": "12.1.0.69814 / 2026-09-21 확인",
-        "note": "주문 ID, 버프와 선택 노드 및 구현된 발동 처리를 확인하는 보조 자료입니다. 수양 치유 구현은 불완전하므로 개인 심크나 HPS 검증으로 제시하지 않습니다."
+        tier: 'B',
+        label: 'SimulationCraft 12.1 사제 주문·특성 데이터',
+        url: 'https://github.com/simulationcraft/simc/blob/e9a81d3415d317e1fadb961dfdcb0decd34c525f/engine/class_modules/priest/sc_priest.cpp',
+        updated: '12.1.0.69814 / 2026-09-21 확인',
+        note: '주문 ID, 버프와 선택 노드 및 구현된 발동 처리를 확인하는 보조 자료입니다. 수양 치유 구현은 불완전하므로 개인 심크나 HPS 검증으로 제시하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Archon 수양 신화 레이드 집계 · 접근 제한",
-        "url": "https://www.archon.gg/wow/builds/discipline/priest/raid/talents/mythic/all-bosses",
-        "updated": "2026-09-21 접근 시도",
-        "note": "403 응답으로 현재 로그 수·영웅 특성 사용률·HPS를 확보하지 못했습니다. 6월 레이드 집계를 12.1 수치로 재사용하지 않습니다."
+        tier: 'A',
+        label: 'Archon 수양 신화 레이드 집계 · 접근 제한',
+        url: 'https://www.archon.gg/wow/builds/discipline/priest/raid/talents/mythic/all-bosses',
+        updated: '2026-09-21 접근 시도',
+        note: '403 응답으로 현재 로그 수·영웅 특성 사용률·HPS를 확보하지 못했습니다. 6월 레이드 집계를 12.1 수치로 재사용하지 않습니다.',
       },
       {
-        "tier": "A",
-        "label": "Archon 수양 쐐기 집계 · 접근 제한",
-        "url": "https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/talents/10/all-dungeons/this-week",
-        "updated": "2026-09-21 접근 시도",
-        "note": "403 응답으로 현재 쐐기 로그 수와 단수별 사용률·HPS를 확보하지 못했습니다. 예언자 쐐기 추천은 공개 가이드의 판단이지 최신 집계 결과가 아닙니다."
-      }
+        tier: 'A',
+        label: 'Archon 수양 쐐기 집계 · 접근 제한',
+        url: 'https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-09-21 접근 시도',
+        note: '403 응답으로 현재 쐐기 로그 수와 단수별 사용률·HPS를 확보하지 못했습니다. 예언자 쐐기 추천은 공개 가이드의 판단이지 최신 집계 결과가 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 레이드 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/discipline/priest/raid/talents/mythic/all-bosses',
+        updated: '2026-10-08 확인',
+        note: '신화 레이드 전체 우두머리, 로그 2,867건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        tier: 'A',
+        label: 'Archon 10월 8일 쐐기 집계 확인',
+        url: 'https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/talents/10/all-dungeons/this-week',
+        updated: '2026-10-08 확인',
+        note: '쐐기 7단 이상 전체 던전, 로그 48,358건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/wHcY7W2VQk9nbCfN#fight=3&source=197',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:01:10.918Z · 장비 구간 326 · 396.9초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
+      {
+        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=24',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:16:38.458Z · 장비 구간 326 · 406.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      },
     ],
-    "evidence": [
-      "속죄의 기본 전환율은 46%이며 5명 초과 시 치유량이 감소합니다. 9월 22일부터 공격대·전장 밖의 속죄 치유가 40% 증가하지만 PvP에는 적용되지 않습니다. 기본 46%에 40%포인트를 더하지 않습니다.",
-      "어둠 지배는 회개에서 25%의 사용권 획득 기회를 주며 마지막 노드에서는 정신 분열로 확정 획득합니다. 시즌 2 4세트가 없어도 이 사용권은 생깁니다.",
-      "시즌 2 2세트의 정신 분열 쿨다운 감소는 회개 시전당 한 번입니다. 엄격한 규율로 화살이 많아져도 감소 횟수를 화살 수만큼 곱하지 않습니다.",
-      "음울한 구원은 현재 어둠의 치유를 40% 강화하고 속죄를 4초 늘리는 대신 시전을 0.3초 늘립니다. 9월 1일 마나 감소 뒤 기본 어둠의 치유 비용은 기본 마나 4%입니다.",
-      "공허의 손길은 균열 종료 뒤 공허의 심장을 8초 남깁니다. 그동안 공허의 폭발 버튼과 공허 주입까지 계속 유지된다는 뜻은 아닙니다.",
-      "예언자의 고통 억제 50%는 예견된 상황 선택으로 기본 40%에 10%포인트를 더한 값입니다. 공허술사에 같은 값을 적용하지 않습니다.",
-      "핫픽스 전 Icy Veins·Method 공개 가이드는 레이드 공허술사와 쐐기 예언자를 출발점으로 제시했습니다. 9월 22일 던전 속죄 상향 뒤 영웅 특성 간 우열과 최신 WCL 사용률은 확인하지 못했습니다."
+    evidence: [
+      '속죄의 기본 전환율은 46%이며 5명 초과 시 치유량이 감소합니다. 9월 22일부터 공격대·전장 밖의 속죄 치유가 40% 증가하지만 PvP에는 적용되지 않습니다. 기본 46%에 40%포인트를 더하지 않습니다.',
+      '어둠 지배는 회개에서 25%의 사용권 획득 기회를 주며 마지막 노드에서는 정신 분열로 확정 획득합니다. 시즌 2 4세트가 없어도 이 사용권은 생깁니다.',
+      '시즌 2 2세트의 정신 분열 쿨다운 감소는 회개 시전당 한 번입니다. 엄격한 규율로 화살이 많아져도 감소 횟수를 화살 수만큼 곱하지 않습니다.',
+      '음울한 구원은 현재 어둠의 치유를 40% 강화하고 속죄를 4초 늘리는 대신 시전을 0.3초 늘립니다. 9월 1일 마나 감소 뒤 기본 어둠의 치유 비용은 기본 마나 4%입니다.',
+      '공허의 손길은 균열 종료 뒤 공허의 심장을 8초 남깁니다. 그동안 공허의 폭발 버튼과 공허 주입까지 계속 유지된다는 뜻은 아닙니다.',
+      '예언자의 고통 억제 50%는 예견된 상황 선택으로 기본 40%에 10%포인트를 더한 값입니다. 공허술사에 같은 값을 적용하지 않습니다.',
+      '핫픽스 전 Icy Veins·Method 공개 가이드는 레이드 공허술사와 쐐기 예언자를 출발점으로 제시했습니다. 9월 22일 던전 속죄 상향 뒤 영웅 특성 간 우열과 최신 WCL 사용률은 확인하지 못했습니다.',
+      '10월 8일 사제 수양의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
     ],
-    "caveats": [
-      "아래 전투 흐름은 시작 준비와 상황별 판단 예시입니다. 위험한 한 명이 있거나 해제가 필요하면 공격 순서보다 생존 대응이 먼저이며 모든 기술을 위에서부터 한 번씩 누르는 매크로가 아닙니다.",
-      "대천사와 수양 환각의 마귀, 약자의 보호자와 고통 변형, 신의 권능: 방벽과 궁극의 참회는 각각 선택 관계를 확인해야 합니다. 차트에 대안으로 등장한다고 동시에 배울 수 있는 것은 아닙니다.",
-      "두 개의 시야 한국어 툴팁 일부는 대상 표기가 영어와 다릅니다. 공식 한글 이름은 유지하되 기전은 양쪽 원문을 대조합니다. 공허의 보호막의 미계산 흡수량 0도 실제 흡수량으로 인용하지 않습니다.",
-      "회개 조기 종료는 공허술사 균열 중 추가 공격 기회를 만드는 고급 조건입니다. 예언자, 직접 회복이 필요한 상황, 엄격한 규율과 어두운 면의 힘이 함께 있는 채널에 일괄 적용하지 않습니다."
+    caveats: [
+      '아래 전투 흐름은 시작 준비와 상황별 판단 예시입니다. 위험한 한 명이 있거나 해제가 필요하면 공격 순서보다 생존 대응이 먼저이며 모든 기술을 위에서부터 한 번씩 누르는 매크로가 아닙니다.',
+      '대천사와 수양 환각의 마귀, 약자의 보호자와 고통 변형, 신의 권능: 방벽과 궁극의 참회는 각각 선택 관계를 확인해야 합니다. 차트에 대안으로 등장한다고 동시에 배울 수 있는 것은 아닙니다.',
+      '두 개의 시야 한국어 툴팁 일부는 대상 표기가 영어와 다릅니다. 공식 한글 이름은 유지하되 기전은 양쪽 원문을 대조합니다. 공허의 보호막의 미계산 흡수량 0도 실제 흡수량으로 인용하지 않습니다.',
+      '회개 조기 종료는 공허술사 균열 중 추가 공격 기회를 만드는 고급 조건입니다. 예언자, 직접 회복이 필요한 상황, 엄격한 규율과 어두운 면의 힘이 함께 있는 채널에 일괄 적용하지 않습니다.',
+      '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
     ],
-    "heroBranches": [
+    heroBranches: [
       {
-        "label": "공허술사",
-        "skillIds": [
-          "447444",
-          "450215",
-          "450612",
-          "449880",
-          "1266856",
-          "47540",
-          "1253593"
+        label: '공허술사',
+        skillIds: [
+          '447444',
+          '450215',
+          '450612',
+          '449880',
+          '1266856',
+          '47540',
+          '1253593',
         ],
-        "summary": "공대 피해 시각을 알고 미리 속죄를 준비할 수 있는 레이드에 잘 맞습니다. 정신 분열은 단순한 공격이 아니라 혼돈의 균열을 여는 시작점입니다. 그 안에서 회개와 공허의 폭발을 이어야 공허 주입을 활용합니다. 쐐기에서도 가능하지만 균열 밖의 한 명 급락은 별도 직접 치유로 해결해야 하며, 예언자의 추가 회개 충전을 기대하면 안 됩니다.",
-        "bullets": [
-          "오프닝/운용 차이: 피해 전에 속죄와 광휘 준비를 마치고 정신 분열로 균열을 엽니다. 균열 중에는 회개·공허의 폭발을 연결하고, 궁극의 참회는 선택한 큰 피해 구간에만 넣습니다.",
-          "추천 콘텐츠: 공허술사는 예측 가능한 공대 피해에 맞춘 레이드 추천입니다. 쐐기에서는 적의 생존 시간과 이동을 고려해야 하며 현재 상위 로그 점유율로 우열을 확정한 추천은 아닙니다.",
-          "주의할 실수: 정신 분열부터 쓰고 뒤늦게 광휘를 여러 번 누르면 균열 시간이 준비에 소모됩니다. 공허의 손길이 남아 있다는 이유로 종료된 균열의 공허 주입까지 계속 적용하지 않습니다.",
-          "로그 체크: 정신 분열 직전 속죄 대상, 균열 중 회개와 공허의 폭발, 공허의 보호막 사용권 소비를 함께 봅니다. 사용 횟수가 같아도 실제 피해와 겹치지 않으면 유효 치유가 달라집니다."
+        summary: '공대 피해 시각을 알고 미리 속죄를 준비할 수 있는 레이드에 잘 맞습니다. 정신 분열은 단순한 공격이 아니라 혼돈의 균열을 여는 시작점입니다. 그 안에서 회개와 공허의 폭발을 이어야 공허 주입을 활용합니다. 쐐기에서도 가능하지만 균열 밖의 한 명 급락은 별도 직접 치유로 해결해야 하며, 예언자의 추가 회개 충전을 기대하면 안 됩니다.',
+        bullets: [
+          '오프닝/운용 차이: 피해 전에 속죄와 광휘 준비를 마치고 정신 분열로 균열을 엽니다. 균열 중에는 회개·공허의 폭발을 연결하고, 궁극의 참회는 선택한 큰 피해 구간에만 넣습니다.',
+          '추천 콘텐츠: 공허술사는 예측 가능한 공대 피해에 맞춘 레이드 추천입니다. 쐐기에서는 적의 생존 시간과 이동을 고려해야 하며 현재 상위 로그 점유율로 우열을 확정한 추천은 아닙니다.',
+          '주의할 실수: 정신 분열부터 쓰고 뒤늦게 광휘를 여러 번 누르면 균열 시간이 준비에 소모됩니다. 공허의 손길이 남아 있다는 이유로 종료된 균열의 공허 주입까지 계속 적용하지 않습니다.',
+          '로그 체크: 정신 분열 직전 속죄 대상, 균열 중 회개와 공허의 폭발, 공허의 보호막 사용권 소비를 함께 봅니다. 사용 횟수가 같아도 실제 피해와 겹치지 않으면 유효 치유가 달라집니다.',
         ],
-        "opener": {
-          "tabLabel": "피해 준비",
-          "title": "공허술사 피해 준비 전투 흐름",
-          "summary": "사도·어둠 지배 마지막 노드를 선택한 레이드 예시입니다. 광휘는 필요한 범위만 1~2회 사용하고, 실제 피해가 시작될 때 정신 분열 이후 공격 치유가 들어가도록 맞춥니다. 마귀 빌드의 어둠의 권능: 죽음은 본문 조건에 따라 별도로 추가합니다.",
-          "steps": [
+        opener: {
+          tabLabel: '피해 준비',
+          title: '공허술사 피해 준비 전투 흐름',
+          summary: '사도·어둠 지배 마지막 노드를 선택한 레이드 예시입니다. 광휘는 필요한 범위만 1~2회 사용하고, 실제 피해가 시작될 때 정신 분열 이후 공격 치유가 들어가도록 맞춥니다. 마귀 빌드의 어둠의 권능: 죽음은 본문 조건에 따라 별도로 추가합니다.',
+          steps: [
             {
-              "skillId": "589",
-              "label": "고통 유지",
-              "phase": "사전 준비",
-              "trigger": "공격 구간 끝까지 유지",
-              "note": "어둠의 권능: 고통이 도중에 끝날 예정일 때 미리 갱신합니다. 큰 피해 직후 이 작업부터 시작하지 않습니다."
+              skillId: '589',
+              label: '고통 유지',
+              phase: '사전 준비',
+              trigger: '공격 구간 끝까지 유지',
+              note: '어둠의 권능: 고통이 도중에 끝날 예정일 때 미리 갱신합니다. 큰 피해 직후 이 작업부터 시작하지 않습니다.',
             },
             {
-              "skillId": "17",
-              "label": "보호막",
-              "phase": "피해 전",
-              "trigger": "다음 피해 대상 지정",
-              "note": "신의 권능: 보호막으로 속죄와 흡수를 준비합니다. 공허의 보호막 사용권이 있으면 강화된 버튼을 씁니다."
+              skillId: '17',
+              label: '보호막',
+              phase: '피해 전',
+              trigger: '다음 피해 대상 지정',
+              note: '신의 권능: 보호막으로 속죄와 흡수를 준비합니다. 공허의 보호막 사용권이 있으면 강화된 버튼을 씁니다.',
             },
             {
-              "skillId": "2061",
-              "label": "단일 준비",
-              "phase": "피해 전",
-              "trigger": "속죄 없는 대상",
-              "note": "순간 치유로 필요한 대상의 속죄를 준비합니다. 어둠의 치유를 선택한 빌드라면 실제 대체 버튼을 사용합니다."
+              skillId: '2061',
+              label: '단일 준비',
+              phase: '피해 전',
+              trigger: '속죄 없는 대상',
+              note: '순간 치유로 필요한 대상의 속죄를 준비합니다. 어둠의 치유를 선택한 빌드라면 실제 대체 버튼을 사용합니다.',
             },
             {
-              "skillId": "472433",
-              "label": "사도",
-              "phase": "광역 준비",
-              "trigger": "배정한 피해가 임박",
-              "note": "사도 자체 광휘와 다음 광휘 2회 즉시 시전을 활용합니다. 기존 속죄 연장기로 계산하지 않습니다."
+              skillId: '472433',
+              label: '사도',
+              phase: '광역 준비',
+              trigger: '배정한 피해가 임박',
+              note: '사도 자체 광휘와 다음 광휘 2회 즉시 시전을 활용합니다. 기존 속죄 연장기로 계산하지 않습니다.',
             },
             {
-              "skillId": "194509",
-              "label": "광휘 1~2회",
-              "phase": "광역 준비",
-              "trigger": "추가 속죄가 필요할 때",
-              "note": "기존 속죄와 위치를 보고 대상을 고릅니다. 파티나 적은 피해라면 무조건 두 충전을 모두 쓰지 않습니다."
+              skillId: '194509',
+              label: '광휘 1~2회',
+              phase: '광역 준비',
+              trigger: '추가 속죄가 필요할 때',
+              note: '기존 속죄와 위치를 보고 대상을 고릅니다. 파티나 적은 피해라면 무조건 두 충전을 모두 쓰지 않습니다.',
             },
             {
-              "skillId": "8092",
-              "label": "균열 시작",
-              "phase": "피해 대응",
-              "trigger": "속죄 준비 뒤 피해 시점",
-              "note": "정신 분열로 혼돈의 균열과 공허의 보호막 사용권을 얻습니다. 면역이거나 곧 사라질 적은 피합니다."
+              skillId: '8092',
+              label: '균열 시작',
+              phase: '피해 대응',
+              trigger: '속죄 준비 뒤 피해 시점',
+              note: '정신 분열로 혼돈의 균열과 공허의 보호막 사용권을 얻습니다. 면역이거나 곧 사라질 적은 피합니다.',
             },
             {
-              "skillId": "47540",
-              "label": "공격 회개",
-              "phase": "회복 전환",
-              "trigger": "속죄 대상이 다쳤을 때",
-              "note": "적에게 회개를 사용해 속죄 치유와 번영과 역경을 연결합니다. 한 명이 죽기 직전이면 직접 대응으로 전환합니다."
+              skillId: '47540',
+              label: '공격 회개',
+              phase: '회복 전환',
+              trigger: '속죄 대상이 다쳤을 때',
+              note: '적에게 회개를 사용해 속죄 치유와 번영과 역경을 연결합니다. 한 명이 죽기 직전이면 직접 대응으로 전환합니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "공허의 보호막",
-              "phase": "후속 피해",
-              "trigger": "사용권·공유 쿨다운 확인",
-              "note": "실제 피해를 받을 아군에게 흡수를 배치합니다. 시즌 2 4세트가 있으면 정신 분열의 다음 보호막 강화도 소비합니다."
+              skillId: '1253593',
+              label: '공허의 보호막',
+              phase: '후속 피해',
+              trigger: '사용권·공유 쿨다운 확인',
+              note: '실제 피해를 받을 아군에게 흡수를 배치합니다. 시즌 2 4세트가 있으면 정신 분열의 다음 보호막 강화도 소비합니다.',
             },
             {
-              "skillId": "450215",
-              "label": "공허의 폭발",
-              "phase": "균열 중",
-              "trigger": "균열 활성·회개 대기",
-              "note": "균열이 열려 있는 동안 사용합니다. 회개가 다시 준비되거나 직접 구조가 필요하면 그 조건을 먼저 봅니다."
-            }
-          ]
+              skillId: '450215',
+              label: '공허의 폭발',
+              phase: '균열 중',
+              trigger: '균열 활성·회개 대기',
+              note: '균열이 열려 있는 동안 사용합니다. 회개가 다시 준비되거나 직접 구조가 필요하면 그 조건을 먼저 봅니다.',
+            },
+          ],
         },
-        "singleTarget": {
-          "tabLabel": "한 명 급락",
-          "title": "공허술사: 한 명이 위험할 때",
-          "summary": "한 명이 다음 공격을 버틸 수 있는지가 기준입니다. 균열을 끝까지 활용하려다 직접 치유를 미루지 않습니다. 어둠의 치유는 해당 특성을 선택한 경우이며 미선택 시 순간 치유를 씁니다.",
-          "priority": [
+        singleTarget: {
+          tabLabel: '한 명 급락',
+          title: '공허술사: 한 명이 위험할 때',
+          summary: '한 명이 다음 공격을 버틸 수 있는지가 기준입니다. 균열을 끝까지 활용하려다 직접 치유를 미루지 않습니다. 어둠의 치유는 해당 특성을 선택한 경우이며 미선택 시 순간 치유를 씁니다.',
+          priority: [
             {
-              "skillId": "33206",
-              "label": "다음 공격이 치명적이면 고통 억제",
-              "note": "큰 타격 전에 피해 감소를 먼저 줍니다. 고통 변형을 선택하지 않았다면 이 버튼 자체로 속죄나 즉시 치유가 생긴다고 기대하지 않습니다."
+              skillId: '33206',
+              label: '다음 공격이 치명적이면 고통 억제',
+              note: '큰 타격 전에 피해 감소를 먼저 줍니다. 고통 변형을 선택하지 않았다면 이 버튼 자체로 속죄나 즉시 치유가 생긴다고 기대하지 않습니다.',
             },
             {
-              "skillId": "527",
-              "label": "치명적인 해제 가능 효과부터 정화",
-              "note": "해제로 후속 피해를 멈출 수 있는지 확인합니다. 해제 시 폭발이나 위치 제약이 있으면 파티 계획을 따릅니다."
+              skillId: '527',
+              label: '치명적인 해제 가능 효과부터 정화',
+              note: '해제로 후속 피해를 멈출 수 있는지 확인합니다. 해제 시 폭발이나 위치 제약이 있으면 파티 계획을 따릅니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "사용 가능한 공허의 보호막",
-              "note": "즉시 흡수가 필요한 대상에게 사용합니다. 사용권이 없다면 기본 신의 권능: 보호막 상태와 공유 쿨다운을 확인합니다."
+              skillId: '1253593',
+              label: '사용 가능한 공허의 보호막',
+              note: '즉시 흡수가 필요한 대상에게 사용합니다. 사용권이 없다면 기본 신의 권능: 보호막 상태와 공유 쿨다운을 확인합니다.',
             },
             {
-              "skillId": "186263",
-              "label": "속죄로 못 버티면 직접 치유",
-              "note": "어둠의 치유를 선택한 빌드의 응급 회복입니다. 채널이나 공격을 계속해서 기다리게 만들지 말고 필요한 치유량을 먼저 채웁니다."
+              skillId: '186263',
+              label: '속죄로 못 버티면 직접 치유',
+              note: '어둠의 치유를 선택한 빌드의 응급 회복입니다. 채널이나 공격을 계속해서 기다리게 만들지 말고 필요한 치유량을 먼저 채웁니다.',
             },
             {
-              "skillId": "47540",
-              "label": "상황에 맞는 회개 대상",
-              "note": "한 명의 직접 회복이 더 급하면 아군에게 씁니다. 여러 속죄 대상도 함께 다쳤고 급사가 아니면 적 회개로 함께 회복합니다."
+              skillId: '47540',
+              label: '상황에 맞는 회개 대상',
+              note: '한 명의 직접 회복이 더 급하면 아군에게 씁니다. 여러 속죄 대상도 함께 다쳤고 급사가 아니면 적 회개로 함께 회복합니다.',
             },
             {
-              "skillId": "8092",
-              "label": "위험이 지나가면 정신 분열",
-              "note": "대상이 다음 공격을 버티는 것을 확인한 뒤 균열과 다음 보호막 사용권을 준비합니다. 아직 위험한데 균열 준비를 우선하지 않습니다."
+              skillId: '8092',
+              label: '위험이 지나가면 정신 분열',
+              note: '대상이 다음 공격을 버티는 것을 확인한 뒤 균열과 다음 보호막 사용권을 준비합니다. 아직 위험한데 균열 준비를 우선하지 않습니다.',
             },
             {
-              "skillId": "450215",
-              "label": "균열 중 공허의 폭발",
-              "note": "속죄가 유지되고 직접 회복이 충분한 동안 공격 치유를 이어갑니다. 균열이 끝나면 성스러운 일격으로 돌아갑니다."
-            }
-          ]
+              skillId: '450215',
+              label: '균열 중 공허의 폭발',
+              note: '속죄가 유지되고 직접 회복이 충분한 동안 공격 치유를 이어갑니다. 균열이 끝나면 성스러운 일격으로 돌아갑니다.',
+            },
+          ],
         },
-        "aoe": {
-          "tabLabel": "파티·공대 피해",
-          "title": "공허술사: 여러 명이 다칠 때",
-          "summary": "피해 전 속죄 준비와 피해 후 공격 치유를 나눕니다. 방벽과 궁극의 참회는 대안이며, 모든 쿨기를 같은 피해에 겹치라는 뜻이 아닙니다.",
-          "priority": [
+        aoe: {
+          tabLabel: '파티·공대 피해',
+          title: '공허술사: 여러 명이 다칠 때',
+          summary: '피해 전 속죄 준비와 피해 후 공격 치유를 나눕니다. 방벽과 궁극의 참회는 대안이며, 모든 쿨기를 같은 피해에 겹치라는 뜻이 아닙니다.',
+          priority: [
             {
-              "skillId": "62618",
-              "label": "모여 맞는 큰 피해에 방벽",
-              "note": "선택한 경우 피해 전에 배치하고 실제로 파티가 안에 머무르는지 확인합니다. 궁극의 참회 선택 빌드에는 이 버튼이 없습니다."
+              skillId: '62618',
+              label: '모여 맞는 큰 피해에 방벽',
+              note: '선택한 경우 피해 전에 배치하고 실제로 파티가 안에 머무르는지 확인합니다. 궁극의 참회 선택 빌드에는 이 버튼이 없습니다.',
             },
             {
-              "skillId": "472433",
-              "label": "배정한 큰 피해에 사도",
-              "note": "즉시 속죄 적용과 뒤이은 광휘를 준비합니다. 마귀 또는 대천사의 실제 선택에 따라 후속 공격·흡수 계획을 달리합니다."
+              skillId: '472433',
+              label: '배정한 큰 피해에 사도',
+              note: '즉시 속죄 적용과 뒤이은 광휘를 준비합니다. 마귀 또는 대천사의 실제 선택에 따라 후속 공격·흡수 계획을 달리합니다.',
             },
             {
-              "skillId": "194509",
-              "label": "빠진 속죄를 광휘로 준비",
-              "note": "부상자와 곧 다칠 사람의 속죄가 충분하면 공격 치유로 넘어갑니다. 두 충전 모두 소비를 고정 규칙으로 삼지 않습니다."
+              skillId: '194509',
+              label: '빠진 속죄를 광휘로 준비',
+              note: '부상자와 곧 다칠 사람의 속죄가 충분하면 공격 치유로 넘어갑니다. 두 충전 모두 소비를 고정 규칙으로 삼지 않습니다.',
             },
             {
-              "skillId": "8092",
-              "label": "준비 완료 뒤 정신 분열",
-              "note": "혼돈의 균열을 열어 회개·공허의 폭발의 치유 구간을 시작합니다. 이미 많은 사람이 위험하면 새 준비보다 즉시 회복을 먼저 판단합니다."
+              skillId: '8092',
+              label: '준비 완료 뒤 정신 분열',
+              note: '혼돈의 균열을 열어 회개·공허의 폭발의 치유 구간을 시작합니다. 이미 많은 사람이 위험하면 새 준비보다 즉시 회복을 먼저 판단합니다.',
             },
             {
-              "skillId": "421453",
-              "label": "배정한 궁극의 참회",
-              "note": "선택했고 속죄·균열이 준비된 큰 피해에 적 대상으로 사용합니다. 긴 채널 중 이동을 강요받는 패턴은 피합니다."
+              skillId: '421453',
+              label: '배정한 궁극의 참회',
+              note: '선택했고 속죄·균열이 준비된 큰 피해에 적 대상으로 사용합니다. 긴 채널 중 이동을 강요받는 패턴은 피합니다.',
             },
             {
-              "skillId": "47540",
-              "label": "균열 안 회개",
-              "note": "속죄 대상들의 실제 피해와 겹치게 사용합니다. 강화된 채널의 완주 여부를 보며 무조건 한 발 뒤 끊지는 않습니다."
+              skillId: '47540',
+              label: '균열 안 회개',
+              note: '속죄 대상들의 실제 피해와 겹치게 사용합니다. 강화된 채널의 완주 여부를 보며 무조건 한 발 뒤 끊지는 않습니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "다음 피해를 공허의 보호막으로",
-              "note": "사용권이 남아 있고 공유 쿨다운이 끝났다면 실제 피해 대상에게 사용합니다. 피해가 없는 대상의 보호막 수치만 키우지 않습니다."
+              skillId: '1253593',
+              label: '다음 피해를 공허의 보호막으로',
+              note: '사용권이 남아 있고 공유 쿨다운이 끝났다면 실제 피해 대상에게 사용합니다. 피해가 없는 대상의 보호막 수치만 키우지 않습니다.',
             },
             {
-              "skillId": "450215",
-              "label": "빈 공격 시간을 공허의 폭발로",
-              "note": "균열 중 남은 공격 시간을 활용합니다. 필요한 속죄가 만료되면 재적용하고, 급락 대상이나 해제는 별도로 처리합니다."
-            }
-          ]
-        }
+              skillId: '450215',
+              label: '빈 공격 시간을 공허의 폭발로',
+              note: '균열 중 남은 공격 시간을 활용합니다. 필요한 속죄가 만료되면 재적용하고, 급락 대상이나 해제는 별도로 처리합니다.',
+            },
+          ],
+        },
       },
       {
-        "label": "예언자",
-        "skillIds": [
-          "1248423",
-          "440742",
-          "1246802",
-          "440766",
-          "440738",
-          "47540",
-          "1253593"
+        label: '예언자',
+        skillIds: [
+          '1248423',
+          '440742',
+          '1246802',
+          '440766',
+          '440738',
+          '47540',
+          '1253593',
         ],
-        "summary": "파티의 지속 피해와 한 명의 급락이 섞이는 쐐기에 익히기 좋은 선택입니다. 인도의 빛으로 늘어난 회개 충전, 두 개의 시야의 반대편 추가 화살, 강한 보호막을 함께 활용합니다. 공허의 폭발을 기다리는 방식이 아니라 정신 분열·회개를 돌려 보호막을 자주 얻는 방식이며, 직접 치유가 필요할 때도 회개 대상을 유연하게 바꿉니다.",
-        "bullets": [
-          "오프닝/운용 차이: 탱커가 진입하기 전 속죄와 보호막을 준비하고 정신 분열·회개로 다음 공허의 보호막을 만듭니다. 혼돈의 균열이나 공허의 폭발은 예언자의 공격 순서에 없습니다.",
-          "추천 콘텐츠: 예언자는 쐐기의 분산 피해, 예측하기 어려운 단일 급락, 이동 대응을 중심으로 추천됩니다. 레이드도 가능하지만 공대 피해 일정에 맞춘 사도·광휘 준비는 여전히 필요합니다.",
-          "주의할 실수: 회개 2충전과 엄격한 규율 2회 강화는 다른 자원입니다. 아군 회개가 새 속죄를 붙인다고 생각하거나 공허의 보호막 강화를 두 개 가진 채 계속 발동시키지 마세요.",
-          "로그 체크: 최대 회개 충전으로 쉬는 시간, 공허의 보호막 발동과 실제 소비, 직접 치유 대상, 예견된 상황을 선택한 고통 억제 사용 시점을 각각 확인합니다."
+        summary: '파티의 지속 피해와 한 명의 급락이 섞이는 쐐기에 익히기 좋은 선택입니다. 인도의 빛으로 늘어난 회개 충전, 두 개의 시야의 반대편 추가 화살, 강한 보호막을 함께 활용합니다. 공허의 폭발을 기다리는 방식이 아니라 정신 분열·회개를 돌려 보호막을 자주 얻는 방식이며, 직접 치유가 필요할 때도 회개 대상을 유연하게 바꿉니다.',
+        bullets: [
+          '오프닝/운용 차이: 탱커가 진입하기 전 속죄와 보호막을 준비하고 정신 분열·회개로 다음 공허의 보호막을 만듭니다. 혼돈의 균열이나 공허의 폭발은 예언자의 공격 순서에 없습니다.',
+          '추천 콘텐츠: 예언자는 쐐기의 분산 피해, 예측하기 어려운 단일 급락, 이동 대응을 중심으로 추천됩니다. 레이드도 가능하지만 공대 피해 일정에 맞춘 사도·광휘 준비는 여전히 필요합니다.',
+          '주의할 실수: 회개 2충전과 엄격한 규율 2회 강화는 다른 자원입니다. 아군 회개가 새 속죄를 붙인다고 생각하거나 공허의 보호막 강화를 두 개 가진 채 계속 발동시키지 마세요.',
+          '로그 체크: 최대 회개 충전으로 쉬는 시간, 공허의 보호막 발동과 실제 소비, 직접 치유 대상, 예견된 상황을 선택한 고통 억제 사용 시점을 각각 확인합니다.',
         ],
-        "opener": {
-          "tabLabel": "피해 준비",
-          "title": "예언자 진입과 피해 대응 전투 흐름",
-          "summary": "어둠의 치유·어둠 지배를 선택한 쐐기 예시입니다. 다섯 명에게 레이드처럼 긴 사전 작업을 반복하지 않습니다. 즉시 보호가 필요한 진입이면 정신 분열·회개 순서보다 보호막이나 고통 억제가 먼저입니다.",
-          "steps": [
+        opener: {
+          tabLabel: '피해 준비',
+          title: '예언자 진입과 피해 대응 전투 흐름',
+          summary: '어둠의 치유·어둠 지배를 선택한 쐐기 예시입니다. 다섯 명에게 레이드처럼 긴 사전 작업을 반복하지 않습니다. 즉시 보호가 필요한 진입이면 정신 분열·회개 순서보다 보호막이나 고통 억제가 먼저입니다.',
+          steps: [
             {
-              "skillId": "17",
-              "label": "진입 보호막",
-              "phase": "진입 전",
-              "trigger": "탱커 첫 피해 예상",
-              "note": "기본 보호막으로 초기 흡수와 속죄를 준비합니다. 공허의 보호막 사용권이 남아 있으면 강화된 기술을 씁니다."
+              skillId: '17',
+              label: '진입 보호막',
+              phase: '진입 전',
+              trigger: '탱커 첫 피해 예상',
+              note: '기본 보호막으로 초기 흡수와 속죄를 준비합니다. 공허의 보호막 사용권이 남아 있으면 강화된 기술을 씁니다.',
             },
             {
-              "skillId": "589",
-              "label": "고통 적용",
-              "phase": "접촉 직후",
-              "trigger": "안전한 공격 대상 확보",
-              "note": "오래 살아 있는 적에게 어둠의 권능: 고통을 유지합니다. 첫 타격에 파티원이 죽을 위험이 있으면 생존 대응이 먼저입니다."
+              skillId: '589',
+              label: '고통 적용',
+              phase: '접촉 직후',
+              trigger: '안전한 공격 대상 확보',
+              note: '오래 살아 있는 적에게 어둠의 권능: 고통을 유지합니다. 첫 타격에 파티원이 죽을 위험이 있으면 생존 대응이 먼저입니다.',
             },
             {
-              "skillId": "8092",
-              "label": "정신 분열",
-              "phase": "연결 시작",
-              "trigger": "어둠 지배 마지막 노드",
-              "note": "다음 공허의 보호막 사용권을 얻습니다. 이미 사용권 두 개를 가진 경우 소비와 남은 공유 쿨다운을 먼저 확인합니다."
+              skillId: '8092',
+              label: '정신 분열',
+              phase: '연결 시작',
+              trigger: '어둠 지배 마지막 노드',
+              note: '다음 공허의 보호막 사용권을 얻습니다. 이미 사용권 두 개를 가진 경우 소비와 남은 공유 쿨다운을 먼저 확인합니다.',
             },
             {
-              "skillId": "47540",
-              "label": "회개",
-              "phase": "치유 연결",
-              "trigger": "실제 피해와 대상 확인",
-              "note": "기본은 적 회개로 속죄를 회복하고 한 명 급락이면 아군 회개를 고려합니다. 두 개의 시야는 반대편 추가 화살을 제공합니다."
+              skillId: '47540',
+              label: '회개',
+              phase: '치유 연결',
+              trigger: '실제 피해와 대상 확인',
+              note: '기본은 적 회개로 속죄를 회복하고 한 명 급락이면 아군 회개를 고려합니다. 두 개의 시야는 반대편 추가 화살을 제공합니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "공허의 보호막",
-              "phase": "후속 피해 전",
-              "trigger": "흡수가 필요한 대상",
-              "note": "번영과 역경과 세트 효과가 있다면 함께 활용합니다. 부상이 급하면 최대 중첩을 기다리는 것이 아니라 지금 보호합니다."
+              skillId: '1253593',
+              label: '공허의 보호막',
+              phase: '후속 피해 전',
+              trigger: '흡수가 필요한 대상',
+              note: '번영과 역경과 세트 효과가 있다면 함께 활용합니다. 부상이 급하면 최대 중첩을 기다리는 것이 아니라 지금 보호합니다.',
             },
             {
-              "skillId": "186263",
-              "label": "단일 보강",
-              "phase": "필요한 경우",
-              "trigger": "속죄만으로 부족한 한 명",
-              "note": "어둠의 치유로 직접 회복합니다. 불필요한 추가 치유 대신 공격할 여유가 있으면 이 단계는 건너뜁니다."
+              skillId: '186263',
+              label: '단일 보강',
+              phase: '필요한 경우',
+              trigger: '속죄만으로 부족한 한 명',
+              note: '어둠의 치유로 직접 회복합니다. 불필요한 추가 치유 대신 공격할 여유가 있으면 이 단계는 건너뜁니다.',
             },
             {
-              "skillId": "585",
-              "label": "성스러운 일격",
-              "phase": "안정 구간",
-              "trigger": "다음 핵심기까지 여유",
-              "note": "파티가 안전한 동안 공격 치유를 잇고 회개·정신 분열이 준비되면 돌아갑니다. 광역 피해가 오면 사도·광휘를 별도로 배정합니다."
-            }
-          ]
+              skillId: '585',
+              label: '성스러운 일격',
+              phase: '안정 구간',
+              trigger: '다음 핵심기까지 여유',
+              note: '파티가 안전한 동안 공격 치유를 잇고 회개·정신 분열이 준비되면 돌아갑니다. 광역 피해가 오면 사도·광휘를 별도로 배정합니다.',
+            },
+          ],
         },
-        "singleTarget": {
-          "tabLabel": "한 명 급락",
-          "title": "예언자: 급락 대상을 직접 살리기",
-          "summary": "추가 회개 충전이 있어도 모든 문제를 회개로 해결하지 않습니다. 피해 감소, 즉시 흡수, 필요한 직접 치유, 공격 복귀 순서로 판단합니다.",
-          "priority": [
+        singleTarget: {
+          tabLabel: '한 명 급락',
+          title: '예언자: 급락 대상을 직접 살리기',
+          summary: '추가 회개 충전이 있어도 모든 문제를 회개로 해결하지 않습니다. 피해 감소, 즉시 흡수, 필요한 직접 치유, 공격 복귀 순서로 판단합니다.',
+          priority: [
             {
-              "skillId": "33206",
-              "label": "다음 큰 타격 전 고통 억제",
-              "note": "예견된 상황 선택 시 피해 감소는 50%입니다. 기본 40%와 구분하고, 탱커뿐 아니라 위험한 자신이나 딜러에게도 배정합니다."
+              skillId: '33206',
+              label: '다음 큰 타격 전 고통 억제',
+              note: '예견된 상황 선택 시 피해 감소는 50%입니다. 기본 40%와 구분하고, 탱커뿐 아니라 위험한 자신이나 딜러에게도 배정합니다.',
             },
             {
-              "skillId": "527",
-              "label": "피해 원인을 정화로 제거",
-              "note": "정화 가능한 마법 또는 정화 연마로 해제 가능한 질병인지 먼저 확인합니다. 독·저주는 이 버튼으로 해제하지 못합니다."
+              skillId: '527',
+              label: '피해 원인을 정화로 제거',
+              note: '정화 가능한 마법 또는 정화 연마로 해제 가능한 질병인지 먼저 확인합니다. 독·저주는 이 버튼으로 해제하지 못합니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "즉시 공허의 보호막",
-              "note": "사용권과 공유 쿨다운이 허락하면 급락 대상에게 흡수를 줍니다. 예언자의 의지 때문에 반드시 자신에게만 쓰지는 않습니다."
+              skillId: '1253593',
+              label: '즉시 공허의 보호막',
+              note: '사용권과 공유 쿨다운이 허락하면 급락 대상에게 흡수를 줍니다. 예언자의 의지 때문에 반드시 자신에게만 쓰지는 않습니다.',
             },
             {
-              "skillId": "47540",
-              "label": "급한 대상에게 직접 회개",
-              "note": "아군을 직접 치유하면서 두 개의 시야로 적에게 추가 화살을 보냅니다. 필요한 속죄는 다른 적용 기술로 따로 준비해야 합니다."
+              skillId: '47540',
+              label: '급한 대상에게 직접 회개',
+              note: '아군을 직접 치유하면서 두 개의 시야로 적에게 추가 화살을 보냅니다. 필요한 속죄는 다른 적용 기술로 따로 준비해야 합니다.',
             },
             {
-              "skillId": "186263",
-              "label": "부족분은 어둠의 치유",
-              "note": "선택 빌드의 단일 회복입니다. 음울한 구원의 늘어난 시전 시간을 고려하고 빛의 쇄도가 있으면 즉시 시전과 마나 절약을 활용합니다."
+              skillId: '186263',
+              label: '부족분은 어둠의 치유',
+              note: '선택 빌드의 단일 회복입니다. 음울한 구원의 늘어난 시전 시간을 고려하고 빛의 쇄도가 있으면 즉시 시전과 마나 절약을 활용합니다.',
             },
             {
-              "skillId": "8092",
-              "label": "안정되면 정신 분열로 복귀",
-              "note": "다음 보호막을 준비하고 세트 강화를 얻습니다. 직접 치유가 계속 필요한 상황에서 충전 관리만 보고 공격을 강행하지 않습니다."
+              skillId: '8092',
+              label: '안정되면 정신 분열로 복귀',
+              note: '다음 보호막을 준비하고 세트 강화를 얻습니다. 직접 치유가 계속 필요한 상황에서 충전 관리만 보고 공격을 강행하지 않습니다.',
             },
             {
-              "skillId": "585",
-              "label": "여유가 있을 때 성스러운 일격",
-              "note": "현재 속죄로 피해를 감당할 수 있을 때 사용합니다. 큰 단일 피해가 이어지면 다시 직접 회개·치유와 외생기부터 확인합니다."
-            }
-          ]
+              skillId: '585',
+              label: '여유가 있을 때 성스러운 일격',
+              note: '현재 속죄로 피해를 감당할 수 있을 때 사용합니다. 큰 단일 피해가 이어지면 다시 직접 회개·치유와 외생기부터 확인합니다.',
+            },
+          ],
         },
-        "aoe": {
-          "tabLabel": "파티·공대 피해",
-          "title": "예언자: 파티 피해를 끊김 없이 복구",
-          "summary": "사도·대천사 선택 예시입니다. 사도 자체의 즉시 광휘로 충분할 수 있으므로, 쐐기에서 뒤의 광휘 두 번을 무조건 연속 소비하지 않습니다.",
-          "priority": [
+        aoe: {
+          tabLabel: '파티·공대 피해',
+          title: '예언자: 파티 피해를 끊김 없이 복구',
+          summary: '사도·대천사 선택 예시입니다. 사도 자체의 즉시 광휘로 충분할 수 있으므로, 쐐기에서 뒤의 광휘 두 번을 무조건 연속 소비하지 않습니다.',
+          priority: [
             {
-              "skillId": "472433",
-              "label": "여러 명이 다칠 구간에 사도",
-              "note": "즉시 광휘와 대천사의 치유·흡수 강화를 활용합니다. 환각의 마귀를 골랐다면 대천사 15%가 동시에 있다고 계산하지 않습니다."
+              skillId: '472433',
+              label: '여러 명이 다칠 구간에 사도',
+              note: '즉시 광휘와 대천사의 치유·흡수 강화를 활용합니다. 환각의 마귀를 골랐다면 대천사 15%가 동시에 있다고 계산하지 않습니다.',
             },
             {
-              "skillId": "194509",
-              "label": "부족한 속죄·직접 회복에 광휘",
-              "note": "실제로 다친 대상과 곧 맞을 대상을 연결합니다. 충분한 속죄가 남아 있으면 불필요한 재적용 대신 공격 회개로 넘어갑니다."
+              skillId: '194509',
+              label: '부족한 속죄·직접 회복에 광휘',
+              note: '실제로 다친 대상과 곧 맞을 대상을 연결합니다. 충분한 속죄가 남아 있으면 불필요한 재적용 대신 공격 회개로 넘어갑니다.',
             },
             {
-              "skillId": "8092",
-              "label": "정신 분열로 보호막 준비",
-              "note": "어둠 지배의 사용권과 시즌 2 4세트 강화를 준비합니다. 이미 큰 피해가 들어온 상황에서는 즉시 구조부터 합니다."
+              skillId: '8092',
+              label: '정신 분열로 보호막 준비',
+              note: '어둠 지배의 사용권과 시즌 2 4세트 강화를 준비합니다. 이미 큰 피해가 들어온 상황에서는 즉시 구조부터 합니다.',
             },
             {
-              "skillId": "47540",
-              "label": "회개 충전을 돌려 치유",
-              "note": "여럿이 다치면 적 회개와 속죄를 기본으로, 한 명만 위험하면 직접 회개로 전환합니다. 두 충전과 강화 사용분을 따로 확인합니다."
+              skillId: '47540',
+              label: '회개 충전을 돌려 치유',
+              note: '여럿이 다치면 적 회개와 속죄를 기본으로, 한 명만 위험하면 직접 회개로 전환합니다. 두 충전과 강화 사용분을 따로 확인합니다.',
             },
             {
-              "skillId": "1253593",
-              "label": "공허의 보호막으로 후속 타격 대비",
-              "note": "계속 맞을 대상에게 유효 흡수를 배치합니다. 경건이 있다는 이유로 건강한 대상을 계속 과치유하는 운용은 피합니다."
+              skillId: '1253593',
+              label: '공허의 보호막으로 후속 타격 대비',
+              note: '계속 맞을 대상에게 유효 흡수를 배치합니다. 경건이 있다는 이유로 건강한 대상을 계속 과치유하는 운용은 피합니다.',
             },
             {
-              "skillId": "62618",
-              "label": "모여 맞는 피해에 선택한 방벽",
-              "note": "파티가 안에 머물 수 있는 큰 피해를 사전에 줄입니다. 궁극의 참회를 선택했다면 같은 상황의 대안 쿨기 배정으로 봅니다."
+              skillId: '62618',
+              label: '모여 맞는 피해에 선택한 방벽',
+              note: '파티가 안에 머물 수 있는 큰 피해를 사전에 줄입니다. 궁극의 참회를 선택했다면 같은 상황의 대안 쿨기 배정으로 봅니다.',
             },
             {
-              "skillId": "585",
-              "label": "안정된 동안 공격 치유 유지",
-              "note": "성스러운 일격으로 빈 시간을 채우고 준비된 회개·정신 분열로 돌아갑니다. 핵심기 횟수를 줄이며 일격만 반복하지 않습니다."
-            }
-          ]
-        }
-      }
+              skillId: '585',
+              label: '안정된 동안 공격 치유 유지',
+              note: '성스러운 일격으로 빈 시간을 채우고 준비된 회개·정신 분열로 돌아갑니다. 핵심기 횟수를 줄이며 일격만 반복하지 않습니다.',
+            },
+          ],
+        },
+      },
     ],
-    "blocks": [
+    blocks: [
       {
-        "title": "12.1에서 먼저 바꿀 습관",
-        "paragraphs": [
-          "수양은 피해를 보고 치유 주문을 많이 누르는 것만으로는 강점을 살리기 어렵습니다. 먼저 누구에게 속죄가 남아 있어야 하는지 정하고, 그 사람들이 다친 순간에 공격 주문을 맞혀야 합니다. 그렇다고 전투 내내 공대 전체의 속죄를 유지하는 직업도 아닙니다. 준비에 쓴 마나와 글쿨이 실제 회복으로 돌아오는 순간을 만드는 것이 핵심입니다.",
-          "12.1 시즌 2에서는 회개와 정신 분열, 공허의 보호막이 더 촘촘하게 연결됩니다. 2세트가 있으면 회개를 사용할 때 정신 분열이 빨리 돌아오고, 정신 분열은 어둠 지배 마지막 노드로 다음 공허의 보호막을 준비합니다. 4세트는 그 다음 보호막의 흡수량을 추가로 높입니다. 공격을 잠깐 멈추는 손실이 피해량에서 끝나지 않고 후속 보호막 횟수까지 줄일 수 있다는 뜻입니다.",
-          "다만 공격 스킬을 쿨마다 누르는 목표가 생존 판단을 대신하지는 않습니다. 한 명이 다음 타격에 죽을 상황이라면 고통 억제, 즉시 보호막, 직접 회개나 어둠의 치유가 먼저입니다. 반대로 큰 위험이 없는데 순간 치유만 계속하면 속죄가 붙은 사람들을 함께 회복할 공격 기회를 버립니다. 급한 한 명과 파티 전체의 피해를 나누어 보는 연습부터 시작하세요."
+        title: '12.1에서 먼저 바꿀 습관',
+        paragraphs: [
+          '수양은 피해를 보고 치유 주문을 많이 누르는 것만으로는 강점을 살리기 어렵습니다. 먼저 누구에게 속죄가 남아 있어야 하는지 정하고, 그 사람들이 다친 순간에 공격 주문을 맞혀야 합니다. 그렇다고 전투 내내 공대 전체의 속죄를 유지하는 직업도 아닙니다. 준비에 쓴 마나와 글쿨이 실제 회복으로 돌아오는 순간을 만드는 것이 핵심입니다.',
+          '12.1 시즌 2에서는 회개와 정신 분열, 공허의 보호막이 더 촘촘하게 연결됩니다. 2세트가 있으면 회개를 사용할 때 정신 분열이 빨리 돌아오고, 정신 분열은 어둠 지배 마지막 노드로 다음 공허의 보호막을 준비합니다. 4세트는 그 다음 보호막의 흡수량을 추가로 높입니다. 공격을 잠깐 멈추는 손실이 피해량에서 끝나지 않고 후속 보호막 횟수까지 줄일 수 있다는 뜻입니다.',
+          '다만 공격 스킬을 쿨마다 누르는 목표가 생존 판단을 대신하지는 않습니다. 한 명이 다음 타격에 죽을 상황이라면 고통 억제, 즉시 보호막, 직접 회개나 어둠의 치유가 먼저입니다. 반대로 큰 위험이 없는데 순간 치유만 계속하면 속죄가 붙은 사람들을 함께 회복할 공격 기회를 버립니다. 급한 한 명과 파티 전체의 피해를 나누어 보는 연습부터 시작하세요.',
         ],
-        "bullets": [
-          "사악의 정화는 지금 지속 피해를 거는 별도 버튼이 아니라 신성 피해를 강화하는 지속 효과입니다. 예전 지속 피해 기술의 순서를 그대로 가져오지 않습니다.",
-          "출시 노트와 핫픽스를 구분합니다. 속죄는 기본 46%, 던전에서는 별도 치유량 40% 보너스이며 레이드·PvP에는 이 보너스가 없습니다. 공허의 보호막 반사는 실제 흡수 피해의 10%입니다."
-        ]
+        bullets: [
+          '사악의 정화는 지금 지속 피해를 거는 별도 버튼이 아니라 신성 피해를 강화하는 지속 효과입니다. 예전 지속 피해 기술의 순서를 그대로 가져오지 않습니다.',
+          '출시 노트와 핫픽스를 구분합니다. 속죄는 기본 46%, 던전에서는 별도 치유량 40% 보너스이며 레이드·PvP에는 이 보너스가 없습니다. 공허의 보호막 반사는 실제 흡수 피해의 10%입니다.',
+        ],
       },
       {
-        "title": "속죄는 대상 수보다 필요한 순간이 중요하다",
-        "paragraphs": [
-          "속죄는 신의 권능: 보호막, 순간 치유, 어둠의 치유, 간청, 신의 권능: 광휘로 적용합니다. 회개는 이미 준비한 속죄를 통해 치유하거나 아군을 직접 치유하는 기술이지, 새 속죄를 거는 기술이 아닙니다. 예언자의 두 개의 시야도 이 규칙을 바꾸지 않습니다. 적에게 회개를 잘 맞혔는데 특정 파티원만 계속 낮다면 그 사람에게 속죄가 실제로 있었는지 먼저 보세요.",
-          "기본 속죄는 15초이며 주문 피해의 46%를 바탕으로 치유합니다. 다섯 명을 넘어서면 치유량이 감소하므로 열 명에게 붙였다고 다섯 명일 때의 두 배가 그대로 보장되지 않습니다. 9월 22일 이후 던전에서는 속죄 치유량에 별도 40% 보너스가 붙지만 공격대·전장과 PvP 전투에는 적용되지 않습니다. 직접 치유 전체 상향으로 보거나 기본 전환율에 40%포인트를 더하지 마세요. 레이드에서는 다음 피해를 받을 범위와 자신의 배정에 맞춰 준비합니다.",
-          "같은 속죄라도 어떻게 붙였는지에 따라 시간이 다릅니다. 광휘는 기본적으로 정상 지속시간의 60%를 적용하므로 다른 보정 전에는 9초입니다. 인내의 광채는 여기에 정상 지속시간의 10%포인트를 추가합니다. 예언자의 선제적 조처와 어둠의 치유의 음울한 구원도 조건이 다르므로, 모든 속죄를 하나의 고정된 긴 버프로 계산하지 마세요. 실제 파티 프레임의 남은 시간을 보는 것이 안전합니다.",
-          "전투 기록에서는 전투 전체 속죄 유지율보다 큰 피해 앞뒤를 확대해 보세요. 피해가 시작되기 전에 적용됐는지, 가장 강한 회개와 공허의 폭발이 끝나기 전에 만료되지는 않았는지, 건강한 사람만 반복 갱신하지 않았는지가 더 직접적인 개선점입니다."
+        title: '속죄는 대상 수보다 필요한 순간이 중요하다',
+        paragraphs: [
+          '속죄는 신의 권능: 보호막, 순간 치유, 어둠의 치유, 간청, 신의 권능: 광휘로 적용합니다. 회개는 이미 준비한 속죄를 통해 치유하거나 아군을 직접 치유하는 기술이지, 새 속죄를 거는 기술이 아닙니다. 예언자의 두 개의 시야도 이 규칙을 바꾸지 않습니다. 적에게 회개를 잘 맞혔는데 특정 파티원만 계속 낮다면 그 사람에게 속죄가 실제로 있었는지 먼저 보세요.',
+          '기본 속죄는 15초이며 주문 피해의 46%를 바탕으로 치유합니다. 다섯 명을 넘어서면 치유량이 감소하므로 열 명에게 붙였다고 다섯 명일 때의 두 배가 그대로 보장되지 않습니다. 9월 22일 이후 던전에서는 속죄 치유량에 별도 40% 보너스가 붙지만 공격대·전장과 PvP 전투에는 적용되지 않습니다. 직접 치유 전체 상향으로 보거나 기본 전환율에 40%포인트를 더하지 마세요. 레이드에서는 다음 피해를 받을 범위와 자신의 배정에 맞춰 준비합니다.',
+          '같은 속죄라도 어떻게 붙였는지에 따라 시간이 다릅니다. 광휘는 기본적으로 정상 지속시간의 60%를 적용하므로 다른 보정 전에는 9초입니다. 인내의 광채는 여기에 정상 지속시간의 10%포인트를 추가합니다. 예언자의 선제적 조처와 어둠의 치유의 음울한 구원도 조건이 다르므로, 모든 속죄를 하나의 고정된 긴 버프로 계산하지 마세요. 실제 파티 프레임의 남은 시간을 보는 것이 안전합니다.',
+          '전투 기록에서는 전투 전체 속죄 유지율보다 큰 피해 앞뒤를 확대해 보세요. 피해가 시작되기 전에 적용됐는지, 가장 강한 회개와 공허의 폭발이 끝나기 전에 만료되지는 않았는지, 건강한 사람만 반복 갱신하지 않았는지가 더 직접적인 개선점입니다.',
         ],
-        "bullets": [
-          "다친 사람이 속죄 없이 남았다면 필요한 적용을 먼저 합니다. 반대로 충분히 준비돼 있다면 추가 적용만 반복하지 말고 공격 치유로 넘어갑니다.",
-          "장신구·종족 능력 피해와 모든 광역 적중이 똑같이 속죄로 바뀌는 것은 아닙니다. 보스 피해 증가 구간의 총 피해량을 곧바로 같은 비율의 치유 증가로 환산하지 않습니다."
-        ]
+        bullets: [
+          '다친 사람이 속죄 없이 남았다면 필요한 적용을 먼저 합니다. 반대로 충분히 준비돼 있다면 추가 적용만 반복하지 말고 공격 치유로 넘어갑니다.',
+          '장신구·종족 능력 피해와 모든 광역 적중이 똑같이 속죄로 바뀌는 것은 아닙니다. 보스 피해 증가 구간의 총 피해량을 곧바로 같은 비율의 치유 증가로 환산하지 않습니다.',
+        ],
       },
       {
-        "title": "영웅 특성과 선택 노드를 한 묶음으로 읽기",
-        "paragraphs": [
-          "9월 22일 핫픽스 전 Icy Veins와 Method의 출발점은 레이드 공허술사, 쐐기 예언자였습니다. 공허술사는 예측 가능한 피해에 공격 치유를 맞추기 쉽고, 예언자는 회개 충전과 보호막으로 변화하는 파티 상황에 대응하기 편합니다. 던전 속죄 치유가 40% 오른 뒤의 상위 로그 사용률은 확인하지 못했으므로 특정 선택의 우위를 단정하지 않습니다.",
-          "영웅 특성만 같아도 세부 빌드는 달라질 수 있습니다. 사도 뒤 치유와 흡수를 높이는 대천사와, 사도에 자동 소환을 붙이는 환각의 마귀는 다른 선택입니다. 마귀를 쓰는 가이드의 어둠의 권능: 죽음 위치를 대천사 빌드에 이유 없이 가져오지 마세요. 반대로 마귀를 골랐는데 그 지속시간 중 피할 수 없는 고통을 발동시키는 공격을 빠뜨리면 선택한 이유가 약해집니다.",
-          "신의 권능: 방벽과 궁극의 참회도 둘을 모두 가져오는 형태가 아닙니다. 모여서 맞는 피해를 먼저 줄일 것인지, 속죄를 준비한 뒤 긴 공격 치유를 사용할 것인지 공대 배정과 맞춥니다. 약자의 보호자와 고통 변형은 고통 억제의 더 많은 사용 기회와 즉시 회복·속죄 적용 중 무엇을 얻는지 달라집니다. 남의 툴팁 수치나 버튼 순서를 보기 전에 자기 특성창부터 확인해야 하는 이유입니다."
+        title: '영웅 특성과 선택 노드를 한 묶음으로 읽기',
+        paragraphs: [
+          '9월 22일 핫픽스 전 Icy Veins와 Method의 출발점은 레이드 공허술사, 쐐기 예언자였습니다. 공허술사는 예측 가능한 피해에 공격 치유를 맞추기 쉽고, 예언자는 회개 충전과 보호막으로 변화하는 파티 상황에 대응하기 편합니다. 던전 속죄 치유가 40% 오른 뒤의 상위 로그 사용률은 확인하지 못했으므로 특정 선택의 우위를 단정하지 않습니다.',
+          '영웅 특성만 같아도 세부 빌드는 달라질 수 있습니다. 사도 뒤 치유와 흡수를 높이는 대천사와, 사도에 자동 소환을 붙이는 환각의 마귀는 다른 선택입니다. 마귀를 쓰는 가이드의 어둠의 권능: 죽음 위치를 대천사 빌드에 이유 없이 가져오지 마세요. 반대로 마귀를 골랐는데 그 지속시간 중 피할 수 없는 고통을 발동시키는 공격을 빠뜨리면 선택한 이유가 약해집니다.',
+          '신의 권능: 방벽과 궁극의 참회도 둘을 모두 가져오는 형태가 아닙니다. 모여서 맞는 피해를 먼저 줄일 것인지, 속죄를 준비한 뒤 긴 공격 치유를 사용할 것인지 공대 배정과 맞춥니다. 약자의 보호자와 고통 변형은 고통 억제의 더 많은 사용 기회와 즉시 회복·속죄 적용 중 무엇을 얻는지 달라집니다. 남의 툴팁 수치나 버튼 순서를 보기 전에 자기 특성창부터 확인해야 하는 이유입니다.',
         ],
-        "bullets": [
-          "실제로 가져온 빌드에서 어둠의 치유가 순간 치유를 대체하는지 확인하세요. 두 기술을 별도 응급기처럼 번갈아 쓰는 순서를 만들지 않습니다.",
-          "특성 코드는 출처의 현행 레이드·쐐기 선택에서 가져오되, 선택한 쿨기와 마귀 여부를 읽고 시작합니다. 서로 다른 빌드의 장점만 합친 가상 빌드는 쓰지 않습니다."
-        ]
+        bullets: [
+          '실제로 가져온 빌드에서 어둠의 치유가 순간 치유를 대체하는지 확인하세요. 두 기술을 별도 응급기처럼 번갈아 쓰는 순서를 만들지 않습니다.',
+          '특성 코드는 출처의 현행 레이드·쐐기 선택에서 가져오되, 선택한 쿨기와 마귀 여부를 읽고 시작합니다. 서로 다른 빌드의 장점만 합친 가상 빌드는 쓰지 않습니다.',
+        ],
       },
       {
-        "title": "공허의 보호막: 발동과 사용을 따로 관리하기",
-        "paragraphs": [
-          "어둠 지배의 첫 노드는 회개 시전으로 공허의 보호막 사용권을 얻을 기회를 줍니다. 현재 기본 확률은 25%이며 발동 처리는 네 장 중 한 장을 뽑는 방식입니다. 이를 임의의 연속 네 번마다 반드시 한 번 나온다는 뜻으로 외우면 안 됩니다. 묶음 경계를 가로지르면 체감 공백이 생길 수 있으므로, 급한 흡수를 다음 회개의 확률 발동에 맡기지 않는 것이 좋습니다.",
-          "마지막 어둠 지배 노드까지 있으면 정신 분열로 다음 공허의 보호막을 확정 준비합니다. 사용권은 최대 두 개를 보유할 수 있지만 실제 보호막 버튼은 신의 권능: 보호막과 쿨다운을 공유합니다. 사용권이 두 개라는 사실이 즉시 두 번 연속 시전할 수 있다는 뜻은 아닙니다. 지금 사용할 수 있는지, 이미 적용한 보호막이 유효한지, 다음 피해가 언제인지 함께 봅니다.",
-          "공허의 보호막은 아군 세 명에게 흡수를 제공합니다. 실제 시전과 사용권 버프, 피해 반사 이벤트는 서로 다른 기록입니다. 로그에서 반사가 많이 찍혔다고 보호막을 그만큼 직접 누른 것은 아닙니다. 반대로 보호막 시전 수만 같아도 실제로 받아낸 피해가 다르면 흡수와 반사 속죄 치유가 달라집니다. 보호막을 누구에게 언제 줬는지가 횟수만큼 중요합니다.",
-          "사용권이 가득 찼는데 정신 분열을 다시 누르거나 회개에서 새 발동을 얻으면 일부 기회를 잃을 수 있습니다. 그렇다고 피해가 전혀 없는 건강한 대상에게 마나를 써 가며 모든 사용권을 즉시 비울 필요는 없습니다. 다음 유효 피해에 흡수가 남도록 쓰는 것이 우선이며, 위험한 상황에서는 번영과 역경 최대 중첩을 기다리지 않습니다."
+        title: '공허의 보호막: 발동과 사용을 따로 관리하기',
+        paragraphs: [
+          '어둠 지배의 첫 노드는 회개 시전으로 공허의 보호막 사용권을 얻을 기회를 줍니다. 현재 기본 확률은 25%이며 발동 처리는 네 장 중 한 장을 뽑는 방식입니다. 이를 임의의 연속 네 번마다 반드시 한 번 나온다는 뜻으로 외우면 안 됩니다. 묶음 경계를 가로지르면 체감 공백이 생길 수 있으므로, 급한 흡수를 다음 회개의 확률 발동에 맡기지 않는 것이 좋습니다.',
+          '마지막 어둠 지배 노드까지 있으면 정신 분열로 다음 공허의 보호막을 확정 준비합니다. 사용권은 최대 두 개를 보유할 수 있지만 실제 보호막 버튼은 신의 권능: 보호막과 쿨다운을 공유합니다. 사용권이 두 개라는 사실이 즉시 두 번 연속 시전할 수 있다는 뜻은 아닙니다. 지금 사용할 수 있는지, 이미 적용한 보호막이 유효한지, 다음 피해가 언제인지 함께 봅니다.',
+          '공허의 보호막은 아군 세 명에게 흡수를 제공합니다. 실제 시전과 사용권 버프, 피해 반사 이벤트는 서로 다른 기록입니다. 로그에서 반사가 많이 찍혔다고 보호막을 그만큼 직접 누른 것은 아닙니다. 반대로 보호막 시전 수만 같아도 실제로 받아낸 피해가 다르면 흡수와 반사 속죄 치유가 달라집니다. 보호막을 누구에게 언제 줬는지가 횟수만큼 중요합니다.',
+          '사용권이 가득 찼는데 정신 분열을 다시 누르거나 회개에서 새 발동을 얻으면 일부 기회를 잃을 수 있습니다. 그렇다고 피해가 전혀 없는 건강한 대상에게 마나를 써 가며 모든 사용권을 즉시 비울 필요는 없습니다. 다음 유효 피해에 흡수가 남도록 쓰는 것이 우선이며, 위험한 상황에서는 번영과 역경 최대 중첩을 기다리지 않습니다.',
         ],
-        "bullets": [
-          "어둠 지배 마지막 노드의 반사 10%는 실제 흡수 피해를 바탕으로 봅니다. 보호막 최대 수치의 10%가 사용 즉시 공격으로 나가는 기술이 아닙니다.",
-          "공식 웹 툴팁에 흡수량이 0으로 표시돼도 실제 보호막이 0인 것은 아닙니다. 장비·특성 계산이 빠진 표시를 전투 수치로 인용하지 않습니다."
-        ]
+        bullets: [
+          '어둠 지배 마지막 노드의 반사 10%는 실제 흡수 피해를 바탕으로 봅니다. 보호막 최대 수치의 10%가 사용 즉시 공격으로 나가는 기술이 아닙니다.',
+          '공식 웹 툴팁에 흡수량이 0으로 표시돼도 실제 보호막이 0인 것은 아닙니다. 장비·특성 계산이 빠진 표시를 전투 수치로 인용하지 않습니다.',
+        ],
       },
       {
-        "title": "시즌 2 세트는 회개 다음 버튼을 바꾼다",
-        "paragraphs": [
-          "2세트는 회개의 피해와 직접 치유를 20% 높이고, 회개를 시전할 때 정신 분열 쿨다운을 2초 줄입니다. 이 감소는 화살 한 발마다 반복되지 않습니다. 책망이나 엄격한 규율로 화살이 늘어나도 매 화살에 2초를 곱하면 실제보다 훨씬 많은 정신 분열을 기대하게 됩니다. 회개 한 번을 사용한 뒤 정신 분열이 준비됐는지 다시 확인하는 습관이면 충분합니다.",
-          "4세트는 정신 분열 다음 신의 권능: 보호막 또는 공허의 보호막 한 번의 흡수량을 25% 높입니다. 두 버튼에 각각 별도 강화가 남는 효과가 아닙니다. 어둠 지배 마지막 노드가 있는 빌드에서는 정신 분열로 사용권과 세트 강화를 함께 얻어 후속 공허의 보호막으로 연결하기 쉽습니다. 하지만 사용권의 출처는 특성, 흡수량 보너스의 출처는 세트라는 구분은 유지해야 합니다.",
-          "번영과 역경은 회개의 화살로 다음 보호막을 추가 강화하므로 정신 분열, 회개, 보호막이 자연스럽게 이어집니다. 이것이 항상 세 버튼을 고정 순서로 누르라는 뜻은 아닙니다. 급한 피해 전에 보호막이 필요하면 회개 완주를 기다리지 않고 먼저 흡수해야 합니다. 또 정신 분열 쿨다운이 돌아왔어도 이전 보호막 강화를 못 쓴 이유가 이동인지, 공유 쿨다운인지, 실제로 피해가 없어서인지 구분해야 합니다."
+        title: '시즌 2 세트는 회개 다음 버튼을 바꾼다',
+        paragraphs: [
+          '2세트는 회개의 피해와 직접 치유를 20% 높이고, 회개를 시전할 때 정신 분열 쿨다운을 2초 줄입니다. 이 감소는 화살 한 발마다 반복되지 않습니다. 책망이나 엄격한 규율로 화살이 늘어나도 매 화살에 2초를 곱하면 실제보다 훨씬 많은 정신 분열을 기대하게 됩니다. 회개 한 번을 사용한 뒤 정신 분열이 준비됐는지 다시 확인하는 습관이면 충분합니다.',
+          '4세트는 정신 분열 다음 신의 권능: 보호막 또는 공허의 보호막 한 번의 흡수량을 25% 높입니다. 두 버튼에 각각 별도 강화가 남는 효과가 아닙니다. 어둠 지배 마지막 노드가 있는 빌드에서는 정신 분열로 사용권과 세트 강화를 함께 얻어 후속 공허의 보호막으로 연결하기 쉽습니다. 하지만 사용권의 출처는 특성, 흡수량 보너스의 출처는 세트라는 구분은 유지해야 합니다.',
+          '번영과 역경은 회개의 화살로 다음 보호막을 추가 강화하므로 정신 분열, 회개, 보호막이 자연스럽게 이어집니다. 이것이 항상 세 버튼을 고정 순서로 누르라는 뜻은 아닙니다. 급한 피해 전에 보호막이 필요하면 회개 완주를 기다리지 않고 먼저 흡수해야 합니다. 또 정신 분열 쿨다운이 돌아왔어도 이전 보호막 강화를 못 쓴 이유가 이동인지, 공유 쿨다운인지, 실제로 피해가 없어서인지 구분해야 합니다.',
         ],
-        "bullets": [
-          "세트 미보유자는 회개 자체의 기본 쿨다운과 특성 발동으로 운용합니다. 2세트의 빠른 정신 분열이나 4세트의 흡수 증가를 이미 가진 것처럼 판단하지 않습니다.",
-          "같은 시전 횟수끼리도 비교 조건이 다릅니다. 로그에서 세트 보유, 영웅 특성, 가속과 전투 길이를 먼저 맞춰 봅니다."
-        ]
+        bullets: [
+          '세트 미보유자는 회개 자체의 기본 쿨다운과 특성 발동으로 운용합니다. 2세트의 빠른 정신 분열이나 4세트의 흡수 증가를 이미 가진 것처럼 판단하지 않습니다.',
+          '같은 시전 횟수끼리도 비교 조건이 다릅니다. 로그에서 세트 보유, 영웅 특성, 가속과 전투 길이를 먼저 맞춰 봅니다.',
+        ],
       },
       {
-        "title": "회개 강화는 화살 수와 사용권이 다르다",
-        "paragraphs": [
-          "9월 22일 이후 수양 회개의 마나 비용은 이전보다 20% 낮습니다. 이는 회개 한 번의 시전 비용 변화이지 화살당 마나가 따로 할인되는 효과가 아닙니다. Wowhead 기본 툴팁에는 아직 기본 마나 1.6%가 표시되므로 그 수치를 핫픽스 반영 후 실전 비용이라고 단정하지 않습니다.",
-          "회개의 기본 채널은 세 발이며 책망은 한 발을 더합니다. 엄격한 규율은 광휘 뒤 다음 회개의 화살을 추가하고, 강화 사용분을 최대 두 번 보유하게 합니다. 두 중첩을 한 번에 더해 한 회개에 추가 여섯 발이 나오는 것으로 읽지 마세요. 예언자 인도의 빛의 실제 회개 추가 충전도 또 다른 요소입니다. 버튼의 충전 수와 다음 회개를 강화하는 횟수를 별도로 봐야 합니다.",
-          "어두운 면의 힘은 다음 회개의 공격력·치유량을 강화합니다. 어둠의 방종을 선택하면 정신 분열이 그 준비에도 관여하므로, 정신 분열 뒤 회개를 사용하는 이유가 공허의 보호막만은 아닙니다. 여기에 신성 광선의 후속 화살 강화와 번영과 역경의 보호막 보강이 더해집니다. 채널 첫 발만 맞히고 끊는 행동은 뒤의 직접 피해·치유와 보호막 준비도 포기하는 판단입니다.",
-          "대부분의 입문 상황에서는 안전하게 채널을 마치는 것을 먼저 익히세요. 회개는 이동 가능하므로 바닥을 피한다는 이유만으로 끊을 필요는 없습니다. 대상과의 거리나 시야가 끊기는 이동인지, 다른 주문을 눌러 직접 취소했는지를 나누어 보세요. 특히 급한 아군을 직접 치유하는 회개를 공격 최적화 규칙 때문에 일찍 끊으면 목적 자체를 잃습니다.",
-          "공허술사는 균열 중 약한 회개 채널 일부를 줄여 공허의 폭발을 더 넣는 고급 운용이 있습니다. 공개 가이드도 엄격한 규율과 어두운 면의 힘이 함께 있는 채널 등은 구분합니다. 모든 회개를 한 발 뒤 자동 취소하는 매크로부터 넣지 말고, 정상 완주와 강화 상태를 안정적으로 읽은 뒤에만 해당 조건을 연습하세요. 예언자에게 그대로 가져올 규칙도 아닙니다."
+        title: '회개 강화는 화살 수와 사용권이 다르다',
+        paragraphs: [
+          '9월 22일 이후 수양 회개의 마나 비용은 이전보다 20% 낮습니다. 이는 회개 한 번의 시전 비용 변화이지 화살당 마나가 따로 할인되는 효과가 아닙니다. Wowhead 기본 툴팁에는 아직 기본 마나 1.6%가 표시되므로 그 수치를 핫픽스 반영 후 실전 비용이라고 단정하지 않습니다.',
+          '회개의 기본 채널은 세 발이며 책망은 한 발을 더합니다. 엄격한 규율은 광휘 뒤 다음 회개의 화살을 추가하고, 강화 사용분을 최대 두 번 보유하게 합니다. 두 중첩을 한 번에 더해 한 회개에 추가 여섯 발이 나오는 것으로 읽지 마세요. 예언자 인도의 빛의 실제 회개 추가 충전도 또 다른 요소입니다. 버튼의 충전 수와 다음 회개를 강화하는 횟수를 별도로 봐야 합니다.',
+          '어두운 면의 힘은 다음 회개의 공격력·치유량을 강화합니다. 어둠의 방종을 선택하면 정신 분열이 그 준비에도 관여하므로, 정신 분열 뒤 회개를 사용하는 이유가 공허의 보호막만은 아닙니다. 여기에 신성 광선의 후속 화살 강화와 번영과 역경의 보호막 보강이 더해집니다. 채널 첫 발만 맞히고 끊는 행동은 뒤의 직접 피해·치유와 보호막 준비도 포기하는 판단입니다.',
+          '대부분의 입문 상황에서는 안전하게 채널을 마치는 것을 먼저 익히세요. 회개는 이동 가능하므로 바닥을 피한다는 이유만으로 끊을 필요는 없습니다. 대상과의 거리나 시야가 끊기는 이동인지, 다른 주문을 눌러 직접 취소했는지를 나누어 보세요. 특히 급한 아군을 직접 치유하는 회개를 공격 최적화 규칙 때문에 일찍 끊으면 목적 자체를 잃습니다.',
+          '공허술사는 균열 중 약한 회개 채널 일부를 줄여 공허의 폭발을 더 넣는 고급 운용이 있습니다. 공개 가이드도 엄격한 규율과 어두운 면의 힘이 함께 있는 채널 등은 구분합니다. 모든 회개를 한 발 뒤 자동 취소하는 매크로부터 넣지 말고, 정상 완주와 강화 상태를 안정적으로 읽은 뒤에만 해당 조건을 연습하세요. 예언자에게 그대로 가져올 규칙도 아닙니다.',
         ],
-        "bullets": [
-          "광휘를 추가로 누르기 전 이미 엄격한 규율 사용분이 가득한지도 확인합니다. 다만 지금 필요한 직접 광역 치유가 있다면 발동 절약보다 생존이 먼저입니다.",
-          "로그의 짧은 채널을 모두 실수로 판정하지 않습니다. 영웅 특성, 강화 상태, 실제 화살과 다음 행동을 함께 봅니다."
-        ]
+        bullets: [
+          '광휘를 추가로 누르기 전 이미 엄격한 규율 사용분이 가득한지도 확인합니다. 다만 지금 필요한 직접 광역 치유가 있다면 발동 절약보다 생존이 먼저입니다.',
+          '로그의 짧은 채널을 모두 실수로 판정하지 않습니다. 영웅 특성, 강화 상태, 실제 화살과 다음 행동을 함께 봅니다.',
+        ],
       },
       {
-        "title": "공허술사: 균열을 열기 전에 준비를 끝내기",
-        "paragraphs": [
-          "정신 분열로 혼돈의 균열을 여는 순간부터 공격 치유를 활용할 시간이 흐릅니다. 균열이 켜진 뒤 광휘 두 번과 여러 명의 직접 속죄 적용을 시작하면, 가장 강하게 공격할 구간의 일부를 준비로 써 버립니다. 레이드에서는 다칠 대상의 속죄를 먼저 확보하고, 실제 피해 시점에 정신 분열과 회개가 이어지도록 맞추세요. 피해가 이미 늦어진 상황이라면 준비를 무조건 늘리기보다 현재 부상자를 살리는 대응이 먼저입니다.",
-          "균열 중 성스러운 일격은 공허의 폭발로 바뀝니다. 수양의 실제 공허의 폭발은 450215이며 암흑 사제의 대체 주문과 다릅니다. 공허 주입은 균열이 활성화된 동안 회개·공허의 폭발로 발생하는 속죄를 강화하고, 공허의 심장은 별도의 속죄 강화입니다. 따라서 균열 중 강한 공격을 넣는 이유는 총 피해를 높이기 위해서만이 아니라 필요한 순간의 치유를 높이기 위해서입니다.",
-          "균열은 기본 8초이며 선택 특성에 따라 운용이 달라집니다. 어둠에 물드는 지평선은 공허의 폭발로 균열을 늘리는 쪽이고 공허의 강화는 속죄 지속시간을 보강하는 쪽입니다. 둘을 동시에 가진 긴 균열·긴 속죄로 계획하지 마세요. 공허 붕괴는 회개 화살과 균열의 마지막 폭발을 연결하지만, 그 마지막 피해 하나만 기다리며 중간 회개·공허의 폭발을 놓쳐서는 안 됩니다.",
-          "공허의 손길은 균열이 끝난 뒤 공허의 심장 효과를 8초 더 남깁니다. 균열 자체가 8초 더 남는 효과는 아닙니다. 공허의 폭발 사용 가능 상태와 공허 주입 조건은 실제 균열을 기준으로 보세요. 공허의 망령도 균열 종료 뒤 자동으로 이어지는 소환이지 따로 눌러야 하는 버튼이 아닙니다."
+        title: '공허술사: 균열을 열기 전에 준비를 끝내기',
+        paragraphs: [
+          '정신 분열로 혼돈의 균열을 여는 순간부터 공격 치유를 활용할 시간이 흐릅니다. 균열이 켜진 뒤 광휘 두 번과 여러 명의 직접 속죄 적용을 시작하면, 가장 강하게 공격할 구간의 일부를 준비로 써 버립니다. 레이드에서는 다칠 대상의 속죄를 먼저 확보하고, 실제 피해 시점에 정신 분열과 회개가 이어지도록 맞추세요. 피해가 이미 늦어진 상황이라면 준비를 무조건 늘리기보다 현재 부상자를 살리는 대응이 먼저입니다.',
+          '균열 중 성스러운 일격은 공허의 폭발로 바뀝니다. 수양의 실제 공허의 폭발은 450215이며 암흑 사제의 대체 주문과 다릅니다. 공허 주입은 균열이 활성화된 동안 회개·공허의 폭발로 발생하는 속죄를 강화하고, 공허의 심장은 별도의 속죄 강화입니다. 따라서 균열 중 강한 공격을 넣는 이유는 총 피해를 높이기 위해서만이 아니라 필요한 순간의 치유를 높이기 위해서입니다.',
+          '균열은 기본 8초이며 선택 특성에 따라 운용이 달라집니다. 어둠에 물드는 지평선은 공허의 폭발로 균열을 늘리는 쪽이고 공허의 강화는 속죄 지속시간을 보강하는 쪽입니다. 둘을 동시에 가진 긴 균열·긴 속죄로 계획하지 마세요. 공허 붕괴는 회개 화살과 균열의 마지막 폭발을 연결하지만, 그 마지막 피해 하나만 기다리며 중간 회개·공허의 폭발을 놓쳐서는 안 됩니다.',
+          '공허의 손길은 균열이 끝난 뒤 공허의 심장 효과를 8초 더 남깁니다. 균열 자체가 8초 더 남는 효과는 아닙니다. 공허의 폭발 사용 가능 상태와 공허 주입 조건은 실제 균열을 기준으로 보세요. 공허의 망령도 균열 종료 뒤 자동으로 이어지는 소환이지 따로 눌러야 하는 버튼이 아닙니다.',
         ],
-        "bullets": [
-          "정신 분열을 쿨마다 무조건 누르기보다 공대 배정 피해와 속죄 준비를 먼저 봅니다. 쐐기에서는 짧은 반복 피해에 맞춰 자주 쓰는 가치가 커집니다.",
-          "곧 죽거나 면역이 될 적을 균열의 중심 대상으로 잡으면 후속 공격 기회를 잃을 수 있습니다. 오래 공격 가능한 적과 파티의 실제 위험을 함께 확인합니다."
-        ]
+        bullets: [
+          '정신 분열을 쿨마다 무조건 누르기보다 공대 배정 피해와 속죄 준비를 먼저 봅니다. 쐐기에서는 짧은 반복 피해에 맞춰 자주 쓰는 가치가 커집니다.',
+          '곧 죽거나 면역이 될 적을 균열의 중심 대상으로 잡으면 후속 공격 기회를 잃을 수 있습니다. 오래 공격 가능한 적과 파티의 실제 위험을 함께 확인합니다.',
+        ],
       },
       {
-        "title": "공허술사 레이드: 사도와 큰 회복을 나누기",
-        "paragraphs": [
-          "사도는 현재 즉시 강화 광휘를 사용하고 다음 광휘 두 번을 즉시·적은 마나로 쓰게 하는 기술입니다. 예전처럼 이미 깔아 둔 속죄를 일괄 연장하는 버튼이 아닙니다. 그래서 준비의 목적도 달라집니다. 필요 없는 사람에게 속죄를 길게 깔아 둔 뒤 연장을 기대하기보다, 피해 직전 필요한 범위를 빠르게 준비하고 공격으로 돌아가는 데 사용합니다.",
-          "기본 예시는 어둠의 권능: 고통 유지, 필요한 단일 속죄, 사도, 필요한 광휘, 정신 분열, 회개, 공허의 보호막, 공허의 폭발입니다. 실제로는 광휘가 한 번으로 충분할 수도 있고, 직접 피해를 받을 대상의 위치 때문에 적용 대상을 바꿔야 할 수도 있습니다. 이 흐름은 부상자와 피해 시각을 보며 조정하는 출발점이지, 카운트다운마다 같은 초에 눌러야 하는 고정 대본이 아닙니다.",
-          "궁극의 참회를 가져왔다면 보통 사도와 별도의 큰 피해에 배정할 여지가 있습니다. 속죄를 준비하고 정신 분열로 균열을 연 뒤 적 대상으로 채널하면 공허술사 연계를 활용할 수 있습니다. 한 번의 큰 피해에 사도와 궁극의 참회를 모두 써야 하는 전투도 있을 수 있지만, 그 때문에 다음 피해에 답이 없어지는지 먼저 확인하세요. 공대 배정이 있으면 개인 치유량보다 배정된 시점이 우선입니다.",
-          "준비가 늦었다면 광휘를 끝없이 추가하며 따라잡으려 하지 않습니다. 살아 있는 속죄 대상, 즉시 사용 가능한 보호막, 위험한 한 명의 직접 치유를 확인하고 공격 치유를 시작할 수 있는 순간을 찾습니다. 실패한 준비를 다음 시도에서 바로잡을 때도 총 HPS보다 첫 피해에 회개가 얼마나 늦게 도착했는지를 보는 편이 유용합니다."
+        title: '공허술사 레이드: 사도와 큰 회복을 나누기',
+        paragraphs: [
+          '사도는 현재 즉시 강화 광휘를 사용하고 다음 광휘 두 번을 즉시·적은 마나로 쓰게 하는 기술입니다. 예전처럼 이미 깔아 둔 속죄를 일괄 연장하는 버튼이 아닙니다. 그래서 준비의 목적도 달라집니다. 필요 없는 사람에게 속죄를 길게 깔아 둔 뒤 연장을 기대하기보다, 피해 직전 필요한 범위를 빠르게 준비하고 공격으로 돌아가는 데 사용합니다.',
+          '기본 예시는 어둠의 권능: 고통 유지, 필요한 단일 속죄, 사도, 필요한 광휘, 정신 분열, 회개, 공허의 보호막, 공허의 폭발입니다. 실제로는 광휘가 한 번으로 충분할 수도 있고, 직접 피해를 받을 대상의 위치 때문에 적용 대상을 바꿔야 할 수도 있습니다. 이 흐름은 부상자와 피해 시각을 보며 조정하는 출발점이지, 카운트다운마다 같은 초에 눌러야 하는 고정 대본이 아닙니다.',
+          '궁극의 참회를 가져왔다면 보통 사도와 별도의 큰 피해에 배정할 여지가 있습니다. 속죄를 준비하고 정신 분열로 균열을 연 뒤 적 대상으로 채널하면 공허술사 연계를 활용할 수 있습니다. 한 번의 큰 피해에 사도와 궁극의 참회를 모두 써야 하는 전투도 있을 수 있지만, 그 때문에 다음 피해에 답이 없어지는지 먼저 확인하세요. 공대 배정이 있으면 개인 치유량보다 배정된 시점이 우선입니다.',
+          '준비가 늦었다면 광휘를 끝없이 추가하며 따라잡으려 하지 않습니다. 살아 있는 속죄 대상, 즉시 사용 가능한 보호막, 위험한 한 명의 직접 치유를 확인하고 공격 치유를 시작할 수 있는 순간을 찾습니다. 실패한 준비를 다음 시도에서 바로잡을 때도 총 HPS보다 첫 피해에 회개가 얼마나 늦게 도착했는지를 보는 편이 유용합니다.',
         ],
-        "bullets": [
-          "사도 자체의 광휘와 직접 누른 광휘를 구분해 충전·시전 수를 읽습니다. 자동 효과까지 모두 수동 광휘 횟수로 세지 않습니다.",
-          "피해가 일찍 끝났다면 남은 모든 쿨기를 억지로 소비하지 않습니다. 다음 피해까지 쓸 수 있는 충전과 마나를 남깁니다."
-        ]
+        bullets: [
+          '사도 자체의 광휘와 직접 누른 광휘를 구분해 충전·시전 수를 읽습니다. 자동 효과까지 모두 수동 광휘 횟수로 세지 않습니다.',
+          '피해가 일찍 끝났다면 남은 모든 쿨기를 억지로 소비하지 않습니다. 다음 피해까지 쓸 수 있는 충전과 마나를 남깁니다.',
+        ],
       },
       {
-        "title": "예언자: 두 회개 충전과 반대편 추가 화살",
-        "paragraphs": [
-          "예언자는 인도의 빛으로 회개 충전이 하나 늘어납니다. 이는 한 명이 갑자기 위험해졌을 때 직접 회개를 쓰고도 후속 공격 회개를 준비하기 쉽게 만듭니다. 두 개가 가득한 채 오래 쉬면 충전 회복이 멈추지만, 반드시 큰 피해 직전까지 모두 비워야 한다는 뜻은 아닙니다. 다음 피해에 필요한 사용분은 남기면서 지금 유효한 회개를 사용하는 것이 기준입니다.",
-          "두 개의 시야는 적에게 회개를 쓸 때 아군에게 추가 치유 화살을, 아군에게 회개를 쓸 때 적에게 추가 공격 화살을 제공합니다. 한국어 툴팁 첫 문장의 대상 표기가 영어와 다른 부분이 있어 특히 주의해야 합니다. 핵심은 직접 치유를 선택해도 반대편 효과가 남는다는 것입니다. 그렇다고 아군 회개와 적 회개의 치유 분배가 완전히 같거나, 속죄 적용 없이도 모든 파티원이 같은 양을 받는 것은 아닙니다.",
-          "경건은 수양에서 초과 치유 일부를 근처 부상자 최대 네 명에게 나누며 현재 비율은 15%입니다. 신성 사제의 20%를 가져오지 않습니다. 이 효과가 있다고 건강한 대상만 계속 과치유하는 것이 기본 운용이 되지는 않습니다. 먼저 실제로 위험한 대상을 살리고, 자연스럽게 발생한 초과 치유가 주변 회복을 돕는다고 이해하세요.",
-          "보장된 안전으로 보호막에서 회복의 기원이 생기는 경우도 수양이 회복의 기원 버튼을 따로 누른 것은 아닙니다. 공용 영웅 특성 설명에는 신성과 수양 효과가 같이 나오므로 자신에게 적용되는 줄을 읽어야 합니다. 같은 이유로 예언자에서 회복의 기원 충전이 늘어난다고 설명하면 신성 효과와 혼동한 것입니다."
+        title: '예언자: 두 회개 충전과 반대편 추가 화살',
+        paragraphs: [
+          '예언자는 인도의 빛으로 회개 충전이 하나 늘어납니다. 이는 한 명이 갑자기 위험해졌을 때 직접 회개를 쓰고도 후속 공격 회개를 준비하기 쉽게 만듭니다. 두 개가 가득한 채 오래 쉬면 충전 회복이 멈추지만, 반드시 큰 피해 직전까지 모두 비워야 한다는 뜻은 아닙니다. 다음 피해에 필요한 사용분은 남기면서 지금 유효한 회개를 사용하는 것이 기준입니다.',
+          '두 개의 시야는 적에게 회개를 쓸 때 아군에게 추가 치유 화살을, 아군에게 회개를 쓸 때 적에게 추가 공격 화살을 제공합니다. 한국어 툴팁 첫 문장의 대상 표기가 영어와 다른 부분이 있어 특히 주의해야 합니다. 핵심은 직접 치유를 선택해도 반대편 효과가 남는다는 것입니다. 그렇다고 아군 회개와 적 회개의 치유 분배가 완전히 같거나, 속죄 적용 없이도 모든 파티원이 같은 양을 받는 것은 아닙니다.',
+          '경건은 수양에서 초과 치유 일부를 근처 부상자 최대 네 명에게 나누며 현재 비율은 15%입니다. 신성 사제의 20%를 가져오지 않습니다. 이 효과가 있다고 건강한 대상만 계속 과치유하는 것이 기본 운용이 되지는 않습니다. 먼저 실제로 위험한 대상을 살리고, 자연스럽게 발생한 초과 치유가 주변 회복을 돕는다고 이해하세요.',
+          '보장된 안전으로 보호막에서 회복의 기원이 생기는 경우도 수양이 회복의 기원 버튼을 따로 누른 것은 아닙니다. 공용 영웅 특성 설명에는 신성과 수양 효과가 같이 나오므로 자신에게 적용되는 줄을 읽어야 합니다. 같은 이유로 예언자에서 회복의 기원 충전이 늘어난다고 설명하면 신성 효과와 혼동한 것입니다.',
         ],
-        "bullets": [
-          "아군 회개로 급한 한 명을 살릴 때 다른 속죄 대상이 실제로 회복되는지도 보세요. 속죄 없는 대상에게 자동 화살만 믿고 다음 공격을 받게 하지 않습니다.",
-          "공허술사의 공허의 폭발·균열 종료 규칙은 예언자에 없습니다. 예언자는 회개와 보호막이 돌아오는 흐름을 안정시키는 것이 먼저입니다."
-        ]
+        bullets: [
+          '아군 회개로 급한 한 명을 살릴 때 다른 속죄 대상이 실제로 회복되는지도 보세요. 속죄 없는 대상에게 자동 화살만 믿고 다음 공격을 받게 하지 않습니다.',
+          '공허술사의 공허의 폭발·균열 종료 규칙은 예언자에 없습니다. 예언자는 회개와 보호막이 돌아오는 흐름을 안정시키는 것이 먼저입니다.',
+        ],
       },
       {
-        "title": "예언자 보호막과 외생기: 자신만 보지 않기",
-        "paragraphs": [
-          "예언자는 예방의 기술, 예언자의 의지, 보장된 안전 등으로 보호막의 가치를 더합니다. 예언자의 의지는 자신에게 쓰는 관련 치유·보호막을 강화하므로 자신에게 보호막이 없고 피해가 예상되는 상황에서 활용할 여지가 있습니다. 그러나 모든 공허의 보호막을 자신에게만 고정하는 규칙으로 만들지는 마세요. 지금 탱커나 딜러가 다음 타격을 못 버티면 그 사람의 생존이 먼저입니다.",
-          "천금 같은 시간은 신의 권능: 보호막 쿨다운을 줄여 공허의 보호막 사용 기회를 돕습니다. 사용권이 쌓이는 속도와 실제 버튼을 쓸 수 있는 속도가 다르므로, 정신 분열과 회개를 열심히 눌렀어도 보호막을 오래 방치하면 이득이 이어지지 않습니다. 반대로 모든 발동을 즉시 소진하려고 피해 없는 대상을 고르면 흡수 대부분이 남은 채 끝날 수 있습니다.",
-          "펼쳐지는 시야는 사용되지 않은 보호막의 만료 뒤 다른 부상자에게 이어지는 조건을 갖습니다. 이것은 보호막 낭비를 일부 줄이는 보완이지, 의도적으로 보호막을 안 쓰게 만들어야 한다는 목표가 아닙니다. 보호막이 실제 피해를 막는 것과 만료·이동 효과를 구분해서 읽어야 수양 보호막의 마나 반환도 오해하지 않습니다. 마나 반환은 흡수량을 전부 소모한 조건이지 단순 만료가 아닙니다.",
-          "예견된 상황을 선택한 고통 억제는 기본 40% 피해 감소에 10%포인트가 추가됩니다. 그래서 예언자 설명의 50%와 공통 툴팁의 40%는 반드시 모순은 아닙니다. 특성이 있는지 확인하면 됩니다. 같은 이름의 쿨기를 다른 영웅 특성에서 비교할 때는 이 차이를 빼먹지 마세요."
+        title: '예언자 보호막과 외생기: 자신만 보지 않기',
+        paragraphs: [
+          '예언자는 예방의 기술, 예언자의 의지, 보장된 안전 등으로 보호막의 가치를 더합니다. 예언자의 의지는 자신에게 쓰는 관련 치유·보호막을 강화하므로 자신에게 보호막이 없고 피해가 예상되는 상황에서 활용할 여지가 있습니다. 그러나 모든 공허의 보호막을 자신에게만 고정하는 규칙으로 만들지는 마세요. 지금 탱커나 딜러가 다음 타격을 못 버티면 그 사람의 생존이 먼저입니다.',
+          '천금 같은 시간은 신의 권능: 보호막 쿨다운을 줄여 공허의 보호막 사용 기회를 돕습니다. 사용권이 쌓이는 속도와 실제 버튼을 쓸 수 있는 속도가 다르므로, 정신 분열과 회개를 열심히 눌렀어도 보호막을 오래 방치하면 이득이 이어지지 않습니다. 반대로 모든 발동을 즉시 소진하려고 피해 없는 대상을 고르면 흡수 대부분이 남은 채 끝날 수 있습니다.',
+          '펼쳐지는 시야는 사용되지 않은 보호막의 만료 뒤 다른 부상자에게 이어지는 조건을 갖습니다. 이것은 보호막 낭비를 일부 줄이는 보완이지, 의도적으로 보호막을 안 쓰게 만들어야 한다는 목표가 아닙니다. 보호막이 실제 피해를 막는 것과 만료·이동 효과를 구분해서 읽어야 수양 보호막의 마나 반환도 오해하지 않습니다. 마나 반환은 흡수량을 전부 소모한 조건이지 단순 만료가 아닙니다.',
+          '예견된 상황을 선택한 고통 억제는 기본 40% 피해 감소에 10%포인트가 추가됩니다. 그래서 예언자 설명의 50%와 공통 툴팁의 40%는 반드시 모순은 아닙니다. 특성이 있는지 확인하면 됩니다. 같은 이름의 쿨기를 다른 영웅 특성에서 비교할 때는 이 차이를 빼먹지 마세요.',
         ],
-        "bullets": [
-          "고통 억제는 낮아진 체력을 보고만 누르는 회복기가 아닙니다. 큰 타격 전에 줄이면 뒤에 해야 할 직접 치유 부담도 줄어듭니다.",
-          "약자의 보호자를 선택했다면 추가 충전과 보호막의 쿨다운 감소를 활용합니다. 고통 변형의 즉시 치유·속죄 효과까지 동시에 있다고 계산하지 않습니다."
-        ]
+        bullets: [
+          '고통 억제는 낮아진 체력을 보고만 누르는 회복기가 아닙니다. 큰 타격 전에 줄이면 뒤에 해야 할 직접 치유 부담도 줄어듭니다.',
+          '약자의 보호자를 선택했다면 추가 충전과 보호막의 쿨다운 감소를 활용합니다. 고통 변형의 즉시 치유·속죄 효과까지 동시에 있다고 계산하지 않습니다.',
+        ],
       },
       {
-        "title": "어둠의 치유와 빛의 쇄도: 필요한 만큼 직접 회복",
-        "paragraphs": [
-          "어둠의 치유를 선택하면 순간 치유가 더 강하고 비싼 주문으로 바뀝니다. 특정 어둠의 권능: 고통 발동 때만 잠깐 바뀌는 방식이 아닙니다. 9월 1일 마나 감소를 반영한 기본 비용은 기본 마나 4%이며 기본 시전은 1.5초입니다. 음울한 구원을 추가하면 치유량이 40% 늘고 속죄가 4초 더 남지만 시전 시간이 0.3초 늘어납니다. 피해가 급한 상황에서는 이 더 긴 시전 시간도 판단에 포함해야 합니다.",
-          "어둠의 치유에는 후속 피해 조건이 있습니다. 치유량 일부를 시간에 걸쳐 되돌리는 형태지만, 대상이 모든 원인으로 받은 피해와 전투 종료가 종료 조건에 관여합니다. 매번 치유량 절반을 무조건 손해 본다고 단순 계산해도 안 되고, 아무 대가 없는 큰 순간 치유라고 설명해도 안 됩니다. 지금 죽을 사람을 살리는 즉각적인 회복 가치와 이후 받을 피해를 함께 보세요.",
-          "빛의 쇄도가 있으면 관련 단일 치유를 즉시 시전하고 마나 비용을 50% 줄일 수 있습니다. 현재는 무료가 아닙니다. 두 개까지 보유할 수 있어 이동 중 필요한 속죄 적용이나 급한 직접 회복에 유용합니다. 이미 두 개가 있는 채 계속 새 발동을 얻는 낭비는 줄이되, 건강한 대상에게 무조건 써서 마나를 버리는 식으로 해결하지 않습니다.",
-          "공허술사에서 직접 치유를 썼다는 것만으로 운용 실패라고 볼 수는 없습니다. 균열 중에도 한 명의 급락은 공격 치유만으로 늦을 수 있습니다. 반대로 파티가 안정적인데 어둠의 치유만 반복했다면 회개·정신 분열·보호막으로 이어질 기회를 잃었을 수 있습니다. 직접 치유의 횟수보다 그 시점에 누가 얼마나 위험했는지를 먼저 봅니다."
+        title: '어둠의 치유와 빛의 쇄도: 필요한 만큼 직접 회복',
+        paragraphs: [
+          '어둠의 치유를 선택하면 순간 치유가 더 강하고 비싼 주문으로 바뀝니다. 특정 어둠의 권능: 고통 발동 때만 잠깐 바뀌는 방식이 아닙니다. 9월 1일 마나 감소를 반영한 기본 비용은 기본 마나 4%이며 기본 시전은 1.5초입니다. 음울한 구원을 추가하면 치유량이 40% 늘고 속죄가 4초 더 남지만 시전 시간이 0.3초 늘어납니다. 피해가 급한 상황에서는 이 더 긴 시전 시간도 판단에 포함해야 합니다.',
+          '어둠의 치유에는 후속 피해 조건이 있습니다. 치유량 일부를 시간에 걸쳐 되돌리는 형태지만, 대상이 모든 원인으로 받은 피해와 전투 종료가 종료 조건에 관여합니다. 매번 치유량 절반을 무조건 손해 본다고 단순 계산해도 안 되고, 아무 대가 없는 큰 순간 치유라고 설명해도 안 됩니다. 지금 죽을 사람을 살리는 즉각적인 회복 가치와 이후 받을 피해를 함께 보세요.',
+          '빛의 쇄도가 있으면 관련 단일 치유를 즉시 시전하고 마나 비용을 50% 줄일 수 있습니다. 현재는 무료가 아닙니다. 두 개까지 보유할 수 있어 이동 중 필요한 속죄 적용이나 급한 직접 회복에 유용합니다. 이미 두 개가 있는 채 계속 새 발동을 얻는 낭비는 줄이되, 건강한 대상에게 무조건 써서 마나를 버리는 식으로 해결하지 않습니다.',
+          '공허술사에서 직접 치유를 썼다는 것만으로 운용 실패라고 볼 수는 없습니다. 균열 중에도 한 명의 급락은 공격 치유만으로 늦을 수 있습니다. 반대로 파티가 안정적인데 어둠의 치유만 반복했다면 회개·정신 분열·보호막으로 이어질 기회를 잃었을 수 있습니다. 직접 치유의 횟수보다 그 시점에 누가 얼마나 위험했는지를 먼저 봅니다.',
         ],
-        "bullets": [
-          "어둠의 치유를 선택하지 않은 레이드 빌드는 순간 치유를 사용합니다. 차트의 대안 설명을 두 주문이 동시에 있는 버튼 목록으로 읽지 않습니다.",
-          "음울한 구원의 예전 30%·0.5초 수치 대신 현재 40%·0.3초를 기준으로 판단합니다. 가속을 반영한 실제 시전 시간은 캐릭터마다 다릅니다."
-        ]
+        bullets: [
+          '어둠의 치유를 선택하지 않은 레이드 빌드는 순간 치유를 사용합니다. 차트의 대안 설명을 두 주문이 동시에 있는 버튼 목록으로 읽지 않습니다.',
+          '음울한 구원의 예전 30%·0.5초 수치 대신 현재 40%·0.3초를 기준으로 판단합니다. 가속을 반영한 실제 시전 시간은 캐릭터마다 다릅니다.',
+        ],
       },
       {
-        "title": "마귀를 선택했다면 소환 버튼보다 발동 조건",
-        "paragraphs": [
-          "수양의 환각의 마귀는 사도를 사용했을 때 자동으로 12초 동안 나옵니다. 예전의 독립 소환 버튼을 오프닝에 끼우지 않습니다. 같은 이름의 암흑 사제 특성은 공허 방출과 연결되므로 효과를 혼합하면 안 됩니다. 수양에서는 사도 배정 시점이 마귀의 공격 가능 시간과도 연결된다는 점을 먼저 봅니다.",
-          "어둠의 마귀도 현재 조건부 자동 소환 특성입니다. 수양에서는 어둠의 권능: 죽음을 체력 20% 미만의 적에게 사용하는 조건을 확인해야 합니다. 적 체력이 높을 때도 무조건 마귀가 나온다고 생각하거나, 20% 미만 적이 없는데 다른 가이드의 마귀 준비 순서를 그대로 복사하지 마세요. 마귀를 활용하는 빌드와 그렇지 않은 빌드는 죽음의 우선순위가 달라질 수 있습니다.",
-          "피할 수 없는 고통은 활성화된 마귀와 특정 공격 주문을 연결합니다. 수양에서는 회개·정신 분열·어둠의 권능: 죽음의 사용 시점이 중요하지만, 암흑 사제와 발동 기술 목록이 똑같지는 않습니다. 짧은 마귀 구간에 공격을 넣는 것이 좋더라도, 죽을 아군을 방치하고 마귀 시간만 끝까지 쓰는 것이 정답은 아닙니다.",
-          "대속을 선택하면 정신 분열과 어둠의 권능: 죽음이 어둠의 권능: 고통의 남은 시간을 소비해 추가 피해를 냅니다. 그 때문에 표면상 지속시간이 남아 있던 고통도 생각보다 빨리 끝날 수 있습니다. 강한 공격 구간 전에 고통을 정리하는 이유가 여기에도 있습니다. 다만 모든 적에게 고통을 새로 거느라 치유 전환을 늦추지는 마세요."
+        title: '마귀를 선택했다면 소환 버튼보다 발동 조건',
+        paragraphs: [
+          '수양의 환각의 마귀는 사도를 사용했을 때 자동으로 12초 동안 나옵니다. 예전의 독립 소환 버튼을 오프닝에 끼우지 않습니다. 같은 이름의 암흑 사제 특성은 공허 방출과 연결되므로 효과를 혼합하면 안 됩니다. 수양에서는 사도 배정 시점이 마귀의 공격 가능 시간과도 연결된다는 점을 먼저 봅니다.',
+          '어둠의 마귀도 현재 조건부 자동 소환 특성입니다. 수양에서는 어둠의 권능: 죽음을 체력 20% 미만의 적에게 사용하는 조건을 확인해야 합니다. 적 체력이 높을 때도 무조건 마귀가 나온다고 생각하거나, 20% 미만 적이 없는데 다른 가이드의 마귀 준비 순서를 그대로 복사하지 마세요. 마귀를 활용하는 빌드와 그렇지 않은 빌드는 죽음의 우선순위가 달라질 수 있습니다.',
+          '피할 수 없는 고통은 활성화된 마귀와 특정 공격 주문을 연결합니다. 수양에서는 회개·정신 분열·어둠의 권능: 죽음의 사용 시점이 중요하지만, 암흑 사제와 발동 기술 목록이 똑같지는 않습니다. 짧은 마귀 구간에 공격을 넣는 것이 좋더라도, 죽을 아군을 방치하고 마귀 시간만 끝까지 쓰는 것이 정답은 아닙니다.',
+          '대속을 선택하면 정신 분열과 어둠의 권능: 죽음이 어둠의 권능: 고통의 남은 시간을 소비해 추가 피해를 냅니다. 그 때문에 표면상 지속시간이 남아 있던 고통도 생각보다 빨리 끝날 수 있습니다. 강한 공격 구간 전에 고통을 정리하는 이유가 여기에도 있습니다. 다만 모든 적에게 고통을 새로 거느라 치유 전환을 늦추지는 마세요.',
         ],
-        "bullets": [
-          "사도와 대천사를 고른 빌드에 환각의 마귀의 마나·추가 피해를 동시에 넣지 않습니다. 실제 선택을 확인해야 로그 비교도 성립합니다.",
-          "어둠의 권능: 죽음의 위험과 목표 체력을 확인합니다. 공허의 폭발보다 언제나 먼저 누르는 고정 버튼이 아니라 빌드·적 체력·생존 상황에 따른 기술입니다."
-        ]
+        bullets: [
+          '사도와 대천사를 고른 빌드에 환각의 마귀의 마나·추가 피해를 동시에 넣지 않습니다. 실제 선택을 확인해야 로그 비교도 성립합니다.',
+          '어둠의 권능: 죽음의 위험과 목표 체력을 확인합니다. 공허의 폭발보다 언제나 먼저 누르는 고정 버튼이 아니라 빌드·적 체력·생존 상황에 따른 기술입니다.',
+        ],
       },
       {
-        "title": "궁극의 참회와 방벽은 쓰기 전부터 결정된다",
-        "paragraphs": [
-          "신의 권능: 방벽은 지정 위치 안의 아군이 받는 피해를 줄입니다. 피해가 들어온 뒤가 아니라 들어오기 전에 배치해야 하며, 파티가 안에 머물 수 있어야 합니다. 큰 숫자의 공격이라도 흩어져야 하는 패턴이면 방벽 위치 하나로 모두를 보호할 수 없습니다. 공대 배정을 알고 파티의 위치와 다음 이동까지 고려하세요.",
-          "궁극의 참회는 긴 쿨다운과 준비·채널 시간이 있는 다른 선택입니다. 적을 대상으로 시작하면 공격을 통한 속죄 회복을, 아군을 대상으로 시작하면 직접 치유를 우선하는 흐름이 달라집니다. 레이드의 계획된 공격 속죄 회복에서는 대상 선택을 반드시 확인하세요. 이미 속죄가 만료된 공대에 공격 채널만 오래 유지하면 기대한 회복이 나오지 않습니다.",
-          "공허술사는 정신 분열로 균열을 열고 궁극의 참회를 연결하는 가치를 봅니다. 예언자에게는 같은 균열 보너스가 없으므로 다른 쿨다운이 비는 구간의 복구나 큰 개인 보호막 등 상황에 맞춰 봅니다. 두 영웅 특성에 같은 기대 치유량과 우선순위를 적용하지 않습니다. 사도와 어느 피해에 나누어 쓸지도 전투 전에 정합니다.",
-          "상승 중 보호막을 사용할 수 있는 고급 조작이 있지만, 처음부터 여러 버튼을 자동으로 묶어 안전 확인을 건너뛰지 마세요. 자신의 큰 보호막과 군중 제어·밀쳐내기 면역이 생겨도 모든 피해에 무적이 되는 것은 아닙니다. 착지 위치가 위험하거나 강제 이동이 예정돼 있으면 긴 채널의 이득보다 생존 문제가 먼저입니다."
+        title: '궁극의 참회와 방벽은 쓰기 전부터 결정된다',
+        paragraphs: [
+          '신의 권능: 방벽은 지정 위치 안의 아군이 받는 피해를 줄입니다. 피해가 들어온 뒤가 아니라 들어오기 전에 배치해야 하며, 파티가 안에 머물 수 있어야 합니다. 큰 숫자의 공격이라도 흩어져야 하는 패턴이면 방벽 위치 하나로 모두를 보호할 수 없습니다. 공대 배정을 알고 파티의 위치와 다음 이동까지 고려하세요.',
+          '궁극의 참회는 긴 쿨다운과 준비·채널 시간이 있는 다른 선택입니다. 적을 대상으로 시작하면 공격을 통한 속죄 회복을, 아군을 대상으로 시작하면 직접 치유를 우선하는 흐름이 달라집니다. 레이드의 계획된 공격 속죄 회복에서는 대상 선택을 반드시 확인하세요. 이미 속죄가 만료된 공대에 공격 채널만 오래 유지하면 기대한 회복이 나오지 않습니다.',
+          '공허술사는 정신 분열로 균열을 열고 궁극의 참회를 연결하는 가치를 봅니다. 예언자에게는 같은 균열 보너스가 없으므로 다른 쿨다운이 비는 구간의 복구나 큰 개인 보호막 등 상황에 맞춰 봅니다. 두 영웅 특성에 같은 기대 치유량과 우선순위를 적용하지 않습니다. 사도와 어느 피해에 나누어 쓸지도 전투 전에 정합니다.',
+          '상승 중 보호막을 사용할 수 있는 고급 조작이 있지만, 처음부터 여러 버튼을 자동으로 묶어 안전 확인을 건너뛰지 마세요. 자신의 큰 보호막과 군중 제어·밀쳐내기 면역이 생겨도 모든 피해에 무적이 되는 것은 아닙니다. 착지 위치가 위험하거나 강제 이동이 예정돼 있으면 긴 채널의 이득보다 생존 문제가 먼저입니다.',
         ],
-        "bullets": [
-          "방벽과 궁극의 참회를 둘 다 보유한 계획표를 만들지 않습니다. 가져온 쪽을 공대·파티 배정에 맞춥니다.",
-          "궁극의 참회의 개인 보호막 수치와 실제로 무시할 수 있는 기믹은 다릅니다. 면역기처럼 아무 공격이나 맞는 용도로 사용하지 않습니다."
-        ]
+        bullets: [
+          '방벽과 궁극의 참회를 둘 다 보유한 계획표를 만들지 않습니다. 가져온 쪽을 공대·파티 배정에 맞춥니다.',
+          '궁극의 참회의 개인 보호막 수치와 실제로 무시할 수 있는 기믹은 다릅니다. 면역기처럼 아무 공격이나 맞는 용도로 사용하지 않습니다.',
+        ],
       },
       {
-        "title": "쐐기: 한 명 급락과 전체 피해를 분리하기",
-        "paragraphs": [
-          "파티원 한 명만 크게 다쳤다면 먼저 다음 타격까지 버틸 수 있는지 봅니다. 못 버티면 고통 억제나 즉시 보호막을 주고 직접 회개·어둠의 치유로 회복합니다. 파티 전체가 조금씩 다친 상황이라면 속죄가 준비된 적 회개가 더 자연스러울 수 있습니다. 전체 피해와 한 명의 급락을 같은 광휘 연타로 해결하려 하면 마나와 충전을 모두 잃기 쉽습니다.",
-          "다섯 명짜리 파티에서는 사도 자체로 속죄 범위가 충분해지는 경우가 있습니다. 사도 뒤 광휘 두 번이 즉시라고 해서 항상 연속 사용하지 마세요. 이미 충분히 남은 속죄를 다시 적용하는 동안 회개와 정신 분열, 공허의 보호막이 밀릴 수 있습니다. 다음 피해가 연달아 오는지, 지금 직접 광휘 치유가 필요한지에 따라 나누어 씁니다.",
-          "전투 시작에는 탱커가 처음 적을 모으는 순간이 위험할 수 있습니다. 고정 공격 시작 순서를 지키려고 첫 보호막을 늦추지 마세요. 반대로 탱커가 안전하고 다음 피해까지 여유가 있다면 공격을 시작해 후속 공허의 보호막을 준비합니다. 공허술사는 적의 생존 시간과 이동에 따라 균열 활용이 달라지고, 예언자는 회개 충전과 짧은 보호막 반복에 더 집중합니다.",
-          "무리가 거의 끝났을 때 큰 회복기를 쓸지는 다음 무리까지 함께 봅니다. 현재 파티가 죽을 위험이면 당연히 사용해야 하지만, 이미 회복 가능한 가벼운 피해에 모든 쿨기를 소비하면 다음 진입이 어려워집니다. 탱커의 진행 속도, 자신의 마나와 사도 복귀 시간을 간단히 공유하는 것이 복잡한 개인 순서보다 도움이 됩니다."
+        title: '쐐기: 한 명 급락과 전체 피해를 분리하기',
+        paragraphs: [
+          '파티원 한 명만 크게 다쳤다면 먼저 다음 타격까지 버틸 수 있는지 봅니다. 못 버티면 고통 억제나 즉시 보호막을 주고 직접 회개·어둠의 치유로 회복합니다. 파티 전체가 조금씩 다친 상황이라면 속죄가 준비된 적 회개가 더 자연스러울 수 있습니다. 전체 피해와 한 명의 급락을 같은 광휘 연타로 해결하려 하면 마나와 충전을 모두 잃기 쉽습니다.',
+          '다섯 명짜리 파티에서는 사도 자체로 속죄 범위가 충분해지는 경우가 있습니다. 사도 뒤 광휘 두 번이 즉시라고 해서 항상 연속 사용하지 마세요. 이미 충분히 남은 속죄를 다시 적용하는 동안 회개와 정신 분열, 공허의 보호막이 밀릴 수 있습니다. 다음 피해가 연달아 오는지, 지금 직접 광휘 치유가 필요한지에 따라 나누어 씁니다.',
+          '전투 시작에는 탱커가 처음 적을 모으는 순간이 위험할 수 있습니다. 고정 공격 시작 순서를 지키려고 첫 보호막을 늦추지 마세요. 반대로 탱커가 안전하고 다음 피해까지 여유가 있다면 공격을 시작해 후속 공허의 보호막을 준비합니다. 공허술사는 적의 생존 시간과 이동에 따라 균열 활용이 달라지고, 예언자는 회개 충전과 짧은 보호막 반복에 더 집중합니다.',
+          '무리가 거의 끝났을 때 큰 회복기를 쓸지는 다음 무리까지 함께 봅니다. 현재 파티가 죽을 위험이면 당연히 사용해야 하지만, 이미 회복 가능한 가벼운 피해에 모든 쿨기를 소비하면 다음 진입이 어려워집니다. 탱커의 진행 속도, 자신의 마나와 사도 복귀 시간을 간단히 공유하는 것이 복잡한 개인 순서보다 도움이 됩니다.',
         ],
-        "bullets": [
-          "파티 전체를 계속 만피로 고정하는 것보다 다음 피해를 버틸 체력과 속죄·흡수를 확보하는 것이 우선인 구간도 있습니다.",
-          "딜을 위해 회복을 포기하는 것과 공격으로 회복하는 것은 다릅니다. 공격 직전 속죄가 누구에게 남아 있는지를 확인하세요."
-        ]
+        bullets: [
+          '파티 전체를 계속 만피로 고정하는 것보다 다음 피해를 버틸 체력과 속죄·흡수를 확보하는 것이 우선인 구간도 있습니다.',
+          '딜을 위해 회복을 포기하는 것과 공격으로 회복하는 것은 다릅니다. 공격 직전 속죄가 누구에게 남아 있는지를 확인하세요.',
+        ],
       },
       {
-        "title": "이동·해제·생존은 치유를 멈추지 않게 한다",
-        "paragraphs": [
-          "회개는 이동하면서 사용할 수 있으므로 예측 가능한 바닥에 맞춰 이동 계획을 잡기 좋습니다. 다만 대상 사거리나 시야를 벗어나면 남은 효과를 잃습니다. 이동 중 사용할 수 있는 보호막, 사도 이후 광휘, 빛의 쇄도 단일 치유도 각각 조건이 있습니다. 아무 발동도 없는 상황까지 즉시 주문만으로 해결하려 하지 말고 위험 패턴 전에 위치를 잡으세요.",
-          "정화는 기본적으로 마법 효과를 해제하고 정화 연마를 선택하면 질병도 다룹니다. 독과 저주까지 모두 지우는 기술은 아닙니다. 마법 무효화는 적의 해제 가능한 이로운 효과를 제거하는 용도로 따로 보고, 대규모 무효화는 비용과 시전·쿨다운을 고려해 배정합니다. 해제가 폭발이나 다른 위험을 발생시키는 패턴에서는 무조건 빠른 해제가 정답이 아닙니다.",
-          "자기 생존에서는 구원의 기도의 최대 생명력 증가와 회복, 소실의 위협 수준 감소, 반투명 형상 선택 시 피해 감소를 구분하세요. 기본 소실만으로 피해 감소가 항상 있다고 설명하면 틀립니다. 보호의 빛도 자신에게 특정 단일 치유를 사용한 조건이 있습니다. 어떤 효과가 실제 선택 특성으로 켜지는지 알아야 위험한 타격 전에 올바르게 준비할 수 있습니다.",
-          "천사의 깃털과 육체와 영혼, 신의의 도약은 사거리와 이동을 돕지만 동료의 위치를 바꾸는 행동에는 파티 기믹이 걸려 있습니다. 특히 신의의 도약은 좋은 의도라도 디버프를 잘못 옮기거나 안전한 사람을 위험하게 만들 수 있으므로 배정과 위치를 먼저 봅니다. 마력 주입도 대상의 실제 극딜과 자신의 회복 구간을 함께 고려하되 필요한 순간의 생존을 지연시키지 않습니다."
+        title: '이동·해제·생존은 치유를 멈추지 않게 한다',
+        paragraphs: [
+          '회개는 이동하면서 사용할 수 있으므로 예측 가능한 바닥에 맞춰 이동 계획을 잡기 좋습니다. 다만 대상 사거리나 시야를 벗어나면 남은 효과를 잃습니다. 이동 중 사용할 수 있는 보호막, 사도 이후 광휘, 빛의 쇄도 단일 치유도 각각 조건이 있습니다. 아무 발동도 없는 상황까지 즉시 주문만으로 해결하려 하지 말고 위험 패턴 전에 위치를 잡으세요.',
+          '정화는 기본적으로 마법 효과를 해제하고 정화 연마를 선택하면 질병도 다룹니다. 독과 저주까지 모두 지우는 기술은 아닙니다. 마법 무효화는 적의 해제 가능한 이로운 효과를 제거하는 용도로 따로 보고, 대규모 무효화는 비용과 시전·쿨다운을 고려해 배정합니다. 해제가 폭발이나 다른 위험을 발생시키는 패턴에서는 무조건 빠른 해제가 정답이 아닙니다.',
+          '자기 생존에서는 구원의 기도의 최대 생명력 증가와 회복, 소실의 위협 수준 감소, 반투명 형상 선택 시 피해 감소를 구분하세요. 기본 소실만으로 피해 감소가 항상 있다고 설명하면 틀립니다. 보호의 빛도 자신에게 특정 단일 치유를 사용한 조건이 있습니다. 어떤 효과가 실제 선택 특성으로 켜지는지 알아야 위험한 타격 전에 올바르게 준비할 수 있습니다.',
+          '천사의 깃털과 육체와 영혼, 신의의 도약은 사거리와 이동을 돕지만 동료의 위치를 바꾸는 행동에는 파티 기믹이 걸려 있습니다. 특히 신의의 도약은 좋은 의도라도 디버프를 잘못 옮기거나 안전한 사람을 위험하게 만들 수 있으므로 배정과 위치를 먼저 봅니다. 마력 주입도 대상의 실제 극딜과 자신의 회복 구간을 함께 고려하되 필요한 순간의 생존을 지연시키지 않습니다.',
         ],
-        "bullets": [
-          "고통 억제를 자신에게 써야 하는 순간도 있습니다. 자신의 죽음으로 남은 파티 회복 전체가 사라지는 상황을 먼저 막습니다.",
-          "내면의 집중력은 관련 치유의 극대화 확률을 높이는 지속 효과입니다. 옛 활성 버튼이나 시전 방해 면역기로 생각하지 말고, 이동과 위험한 공격은 별도로 대응합니다."
-        ]
+        bullets: [
+          '고통 억제를 자신에게 써야 하는 순간도 있습니다. 자신의 죽음으로 남은 파티 회복 전체가 사라지는 상황을 먼저 막습니다.',
+          '내면의 집중력은 관련 치유의 극대화 확률을 높이는 지속 효과입니다. 옛 활성 버튼이나 시전 방해 면역기로 생각하지 말고, 이동과 위험한 공격은 별도로 대응합니다.',
+        ],
       },
       {
-        "title": "마나와 장비: 세트 유무부터 맞춰 비교",
-        "paragraphs": [
-          "수양의 마나 문제를 볼 때는 전투 길이와 불필요한 재적용부터 확인합니다. 속죄가 충분한 파티에 광휘를 연속으로 쓰거나, 실제 피해가 없는 대상에게 비싼 직접 치유를 반복하거나, 사도 효과를 활용하지 못한 경우가 먼저 보일 수 있습니다. 단순히 더 적게 누르라는 뜻은 아닙니다. 필요한 피해에 회복을 충분히 쓰되 목적 없는 준비를 줄이는 방향입니다.",
-          "빛의 쇄도는 절반의 마나 절약, 사도는 다음 광휘의 비용 절약, 수양 보호막은 흡수 완전 소모 시 반환이라는 서로 다른 조건입니다. 마귀의 마나도 실제로 선택한 소환과 공격 가능 시간에 달립니다. 같은 이름의 마나 항목이 있다고 모두 상시 적용하거나, 흡수가 남아 만료됐는데도 반환된 것으로 계산하지 않습니다.",
-          "장비를 비교할 때 시즌 2 2세트·4세트가 유지되는지 먼저 봅니다. 회개와 정신 분열 횟수 차이는 단순 능력치 차이만이 아닐 수 있습니다. 또 보호막이 강화됐어도 실제 피해를 받지 않고 끝나면 유효 흡수 이득은 작습니다. 세트의 잠재량과 로그에 남은 유효량을 분리해야 장비 효과를 과대평가하지 않습니다.",
-          "가속·치명타·특화·유연성의 가치는 현재 장비와 콘텐츠, 생존 요구에 따라 달라집니다. 특정 비율을 모든 사람에게 목표로 주거나 불완전한 치유 시뮬레이션을 실제 HPS 보장으로 제시하지 않습니다. 새 장비가 좋은지 볼 때는 세트 유지, 아이템 수준, 사용 효과의 피해 일정 적합성, 실제 전투에서 마나와 생존을 먼저 함께 확인하세요."
+        title: '마나와 장비: 세트 유무부터 맞춰 비교',
+        paragraphs: [
+          '수양의 마나 문제를 볼 때는 전투 길이와 불필요한 재적용부터 확인합니다. 속죄가 충분한 파티에 광휘를 연속으로 쓰거나, 실제 피해가 없는 대상에게 비싼 직접 치유를 반복하거나, 사도 효과를 활용하지 못한 경우가 먼저 보일 수 있습니다. 단순히 더 적게 누르라는 뜻은 아닙니다. 필요한 피해에 회복을 충분히 쓰되 목적 없는 준비를 줄이는 방향입니다.',
+          '빛의 쇄도는 절반의 마나 절약, 사도는 다음 광휘의 비용 절약, 수양 보호막은 흡수 완전 소모 시 반환이라는 서로 다른 조건입니다. 마귀의 마나도 실제로 선택한 소환과 공격 가능 시간에 달립니다. 같은 이름의 마나 항목이 있다고 모두 상시 적용하거나, 흡수가 남아 만료됐는데도 반환된 것으로 계산하지 않습니다.',
+          '장비를 비교할 때 시즌 2 2세트·4세트가 유지되는지 먼저 봅니다. 회개와 정신 분열 횟수 차이는 단순 능력치 차이만이 아닐 수 있습니다. 또 보호막이 강화됐어도 실제 피해를 받지 않고 끝나면 유효 흡수 이득은 작습니다. 세트의 잠재량과 로그에 남은 유효량을 분리해야 장비 효과를 과대평가하지 않습니다.',
+          '가속·치명타·특화·유연성의 가치는 현재 장비와 콘텐츠, 생존 요구에 따라 달라집니다. 특정 비율을 모든 사람에게 목표로 주거나 불완전한 치유 시뮬레이션을 실제 HPS 보장으로 제시하지 않습니다. 새 장비가 좋은지 볼 때는 세트 유지, 아이템 수준, 사용 효과의 피해 일정 적합성, 실제 전투에서 마나와 생존을 먼저 함께 확인하세요.',
         ],
-        "bullets": [
-          "공대가 빨리 잡은 로그와 긴 진행 로그의 마나 여유를 그대로 비교하지 않습니다. 치유 인원과 배정 차이도 큽니다.",
-          "장신구·종족 능력의 피해를 모두 속죄 원천으로 합산하지 않습니다. 해당 효과가 실제로 어떤 치유를 만들었는지 이벤트를 확인합니다."
-        ]
+        bullets: [
+          '공대가 빨리 잡은 로그와 긴 진행 로그의 마나 여유를 그대로 비교하지 않습니다. 치유 인원과 배정 차이도 큽니다.',
+          '장신구·종족 능력의 피해를 모두 속죄 원천으로 합산하지 않습니다. 해당 효과가 실제로 어떤 치유를 만들었는지 이벤트를 확인합니다.',
+        ],
       },
       {
-        "title": "로그에서 확인할 순서: 결과보다 연결을 보기",
-        "paragraphs": [
-          "먼저 같은 보스·난이도·패치, 비슷한 전투 길이와 치유 인원을 맞춥니다. 공대 피해가 적거나 다른 힐러가 먼저 회복한 로그는 같은 운용을 해도 HPS가 다를 수 있습니다. 외생기 배정과 기믹 담당, 사망, 장비와 세트도 비교 조건입니다. 총 치유 비율 하나로 특정 주문을 더 누르라고 결론내리기 전에 실제로 회복할 피해가 얼마나 있었는지 봅니다.",
-          "다음으로 큰 피해 한 구간을 골라 시간 순서대로 읽습니다. 속죄가 피해 전에 필요한 사람에게 적용됐는지, 사도·광휘 뒤 공격 치유가 얼마나 늦었는지, 정신 분열과 회개가 부상 시점에 맞았는지 확인합니다. 공허술사는 균열 안에서 쓸 수 있었던 공허의 폭발과 회개를, 예언자는 최대 회개 충전으로 정지한 시간을 추가로 봅니다.",
-          "그다음 보호막 연결을 봅니다. 어둠 지배 사용권 획득과 실제 공허의 보호막 시전을 짝지어 보고, 두 개를 보유한 채 새 사용권을 버렸는지 확인합니다. 정신 분열의 4세트 강화와 회개의 번영과 역경을 어떤 보호막이 소비했는지, 그 보호막이 실제 피해를 흡수했는지도 함께 봅니다. 사용 횟수만 늘리는 것보다 이 연결이 개선될 때 실전 체감이 좋아질 수 있습니다.",
-          "마지막으로 예외 행동을 읽습니다. 직접 어둠의 치유나 아군 회개는 그 시점에 급락한 대상이 있었는지 확인하고, 고통 억제는 사망 전에 들어갔는지 봅니다. 짧은 회개 채널은 강화 상태와 다음 행동을 확인한 뒤 판단합니다. 자동 마귀·반사·추가 화살을 플레이어의 직접 시전과 분리하면 같은 버튼 이름 때문에 생기는 잘못된 비교를 줄일 수 있습니다."
+        title: '로그에서 확인할 순서: 결과보다 연결을 보기',
+        paragraphs: [
+          '먼저 같은 보스·난이도·패치, 비슷한 전투 길이와 치유 인원을 맞춥니다. 공대 피해가 적거나 다른 힐러가 먼저 회복한 로그는 같은 운용을 해도 HPS가 다를 수 있습니다. 외생기 배정과 기믹 담당, 사망, 장비와 세트도 비교 조건입니다. 총 치유 비율 하나로 특정 주문을 더 누르라고 결론내리기 전에 실제로 회복할 피해가 얼마나 있었는지 봅니다.',
+          '다음으로 큰 피해 한 구간을 골라 시간 순서대로 읽습니다. 속죄가 피해 전에 필요한 사람에게 적용됐는지, 사도·광휘 뒤 공격 치유가 얼마나 늦었는지, 정신 분열과 회개가 부상 시점에 맞았는지 확인합니다. 공허술사는 균열 안에서 쓸 수 있었던 공허의 폭발과 회개를, 예언자는 최대 회개 충전으로 정지한 시간을 추가로 봅니다.',
+          '그다음 보호막 연결을 봅니다. 어둠 지배 사용권 획득과 실제 공허의 보호막 시전을 짝지어 보고, 두 개를 보유한 채 새 사용권을 버렸는지 확인합니다. 정신 분열의 4세트 강화와 회개의 번영과 역경을 어떤 보호막이 소비했는지, 그 보호막이 실제 피해를 흡수했는지도 함께 봅니다. 사용 횟수만 늘리는 것보다 이 연결이 개선될 때 실전 체감이 좋아질 수 있습니다.',
+          '마지막으로 예외 행동을 읽습니다. 직접 어둠의 치유나 아군 회개는 그 시점에 급락한 대상이 있었는지 확인하고, 고통 억제는 사망 전에 들어갔는지 봅니다. 짧은 회개 채널은 강화 상태와 다음 행동을 확인한 뒤 판단합니다. 자동 마귀·반사·추가 화살을 플레이어의 직접 시전과 분리하면 같은 버튼 이름 때문에 생기는 잘못된 비교를 줄일 수 있습니다.',
         ],
-        "bullets": [
-          "첫 연습 목표는 하나로 잡으세요. 속죄 준비가 늦으면 그 시각부터 고치고, 그다음 회개·정신 분열 지연, 보호막 낭비 순서로 확인합니다.",
-          "현재 상위권 로그나 개인 로그가 없는 상태에서는 손실 HPS와 개선 퍼센트를 만들지 않습니다. 여기의 체크 항목은 실제 기록을 확보한 뒤 적용할 기준입니다."
-        ]
-      }
+        bullets: [
+          '첫 연습 목표는 하나로 잡으세요. 속죄 준비가 늦으면 그 시각부터 고치고, 그다음 회개·정신 분열 지연, 보호막 낭비 순서로 확인합니다.',
+          '현재 상위권 로그나 개인 로그가 없는 상태에서는 손실 HPS와 개선 퍼센트를 만들지 않습니다. 여기의 체크 항목은 실제 기록을 확보한 뒤 적용할 기준입니다.',
+        ],
+      },
     ],
-    "tips": [
-      "레이드에서 정신 분열을 먼저 눌렀다면 그 뒤 광휘를 몇 번 썼는지 확인하세요. 균열 시간을 준비에 쓰고 있다면 광휘 완료 시점을 앞당기고 피해 시각에 공격 치유를 맞춥니다.",
-      "회개를 누른 뒤 정신 분열의 남은 쿨다운을 다시 보세요. 시즌 2 2세트로 2초가 줄어 이미 준비됐을 수 있습니다. 머릿속의 예전 순서대로 성스러운 일격을 계속 누르지 않습니다.",
-      "공허의 보호막 사용권을 두 개 가진 채 정신 분열을 또 쓰기 전에 공유 쿨다운과 실제 흡수 대상을 확인하세요. 다만 보호할 사람이 없는데 횟수만 늘리려고 마나를 쓰지는 않습니다.",
-      "쐐기에서는 사도 자체로 다섯 명의 속죄 준비가 될 수 있습니다. 뒤의 광휘 2회를 습관적으로 연속 사용하지 말고 다음 피해와 남은 속죄를 보고 나누어 씁니다.",
-      "엄격한 규율 2중첩은 강화 회개를 두 번 쓸 수 있다는 뜻입니다. 한 번에 추가 화살 여섯 발로 생각하지 말고, 예언자의 실제 회개 충전과 강화 사용분을 따로 표시하세요.",
-      "회개는 이동하면서 사용할 수 있습니다. 바닥을 피할 때 채널부터 끊기보다 안전한 위치로 움직이며 대상 사거리·시야를 지키세요. 공허술사 조기 종료 조건과 일반 이동은 별개입니다.",
-      "예언자의 의지가 있어도 공허의 보호막을 매번 자신에게만 쓰지는 마세요. 자신에게 보호막이 없고 피해를 받을 상황이면 유리하지만, 죽기 직전인 파티원의 흡수가 우선입니다.",
-      "빛의 쇄도는 현재 즉시 시전과 마나 50% 절약입니다. 무료라고 생각해 건강한 대상을 계속 치유하지 말고, 이동 중 속죄 적용이나 실제 단일 회복에 맞춰 쓰세요.",
-      "궁극의 참회는 버튼을 누르기 직전의 대상을 확인하세요. 공격 속죄 치유를 계획했는데 아군을 선택해 둔 상태라면 다른 결과가 나옵니다. 긴 채널을 방해하는 이동 패턴도 먼저 확인합니다.",
-      "공허술사에서 공허의 심장 버프가 남아도 공허의 폭발 버튼이 돌아왔다고 가정하지 마세요. 공허의 손길의 종료 후 효과와 실제 균열 활성 구간을 구분합니다.",
-      "고통 억제를 탱커 전용으로 묶어 두지 마세요. 쐐기에서 생존기가 없는 딜러나 자신이 다음 공격에 죽을 상황이면 먼저 배정합니다. 사망 뒤 사용 횟수를 아낀 것은 이득이 아닙니다.",
-      "로그에서 회개 화살 수를 볼 때 책망·엄격한 규율·두 개의 시야를 확인하세요. 자동 추가 화살을 별도 직접 시전으로 세거나, 서로 다른 영웅 특성의 채널 수를 그대로 비교하면 원인을 놓칩니다."
+    tips: [
+      '레이드에서 정신 분열을 먼저 눌렀다면 그 뒤 광휘를 몇 번 썼는지 확인하세요. 균열 시간을 준비에 쓰고 있다면 광휘 완료 시점을 앞당기고 피해 시각에 공격 치유를 맞춥니다.',
+      '회개를 누른 뒤 정신 분열의 남은 쿨다운을 다시 보세요. 시즌 2 2세트로 2초가 줄어 이미 준비됐을 수 있습니다. 머릿속의 예전 순서대로 성스러운 일격을 계속 누르지 않습니다.',
+      '공허의 보호막 사용권을 두 개 가진 채 정신 분열을 또 쓰기 전에 공유 쿨다운과 실제 흡수 대상을 확인하세요. 다만 보호할 사람이 없는데 횟수만 늘리려고 마나를 쓰지는 않습니다.',
+      '쐐기에서는 사도 자체로 다섯 명의 속죄 준비가 될 수 있습니다. 뒤의 광휘 2회를 습관적으로 연속 사용하지 말고 다음 피해와 남은 속죄를 보고 나누어 씁니다.',
+      '엄격한 규율 2중첩은 강화 회개를 두 번 쓸 수 있다는 뜻입니다. 한 번에 추가 화살 여섯 발로 생각하지 말고, 예언자의 실제 회개 충전과 강화 사용분을 따로 표시하세요.',
+      '회개는 이동하면서 사용할 수 있습니다. 바닥을 피할 때 채널부터 끊기보다 안전한 위치로 움직이며 대상 사거리·시야를 지키세요. 공허술사 조기 종료 조건과 일반 이동은 별개입니다.',
+      '예언자의 의지가 있어도 공허의 보호막을 매번 자신에게만 쓰지는 마세요. 자신에게 보호막이 없고 피해를 받을 상황이면 유리하지만, 죽기 직전인 파티원의 흡수가 우선입니다.',
+      '빛의 쇄도는 현재 즉시 시전과 마나 50% 절약입니다. 무료라고 생각해 건강한 대상을 계속 치유하지 말고, 이동 중 속죄 적용이나 실제 단일 회복에 맞춰 쓰세요.',
+      '궁극의 참회는 버튼을 누르기 직전의 대상을 확인하세요. 공격 속죄 치유를 계획했는데 아군을 선택해 둔 상태라면 다른 결과가 나옵니다. 긴 채널을 방해하는 이동 패턴도 먼저 확인합니다.',
+      '공허술사에서 공허의 심장 버프가 남아도 공허의 폭발 버튼이 돌아왔다고 가정하지 마세요. 공허의 손길의 종료 후 효과와 실제 균열 활성 구간을 구분합니다.',
+      '고통 억제를 탱커 전용으로 묶어 두지 마세요. 쐐기에서 생존기가 없는 딜러나 자신이 다음 공격에 죽을 상황이면 먼저 배정합니다. 사망 뒤 사용 횟수를 아낀 것은 이득이 아닙니다.',
+      '로그에서 회개 화살 수를 볼 때 책망·엄격한 규율·두 개의 시야를 확인하세요. 자동 추가 화살을 별도 직접 시전으로 세거나, 서로 다른 영웅 특성의 채널 수를 그대로 비교하면 원인을 놓칩니다.',
     ],
-    "priority": [
+    priority: [
       {
-        "skillId": "33206",
-        "label": "급사할 대상부터 보호",
-        "note": "다음 공격을 버티지 못할 아군에게 고통 억제를 미리 줍니다. 공격 치유나 광휘 준비보다 즉시 생존 대응이 먼저입니다."
+        skillId: '33206',
+        label: '급사할 대상부터 보호',
+        note: '다음 공격을 버티지 못할 아군에게 고통 억제를 미리 줍니다. 공격 치유나 광휘 준비보다 즉시 생존 대응이 먼저입니다.',
       },
       {
-        "skillId": "527",
-        "label": "필요한 해제",
-        "note": "해제로 멈출 수 있는 큰 피해는 정화로 처리합니다. 해제 시 피해와 위치 조건을 알고 사용합니다."
+        skillId: '527',
+        label: '필요한 해제',
+        note: '해제로 멈출 수 있는 큰 피해는 정화로 처리합니다. 해제 시 피해와 위치 조건을 알고 사용합니다.',
       },
       {
-        "skillId": "186263",
-        "label": "한 명 급락은 직접 치유",
-        "note": "어둠의 치유 선택 시 해당 버튼, 미선택 시 순간 치유를 사용합니다. 아군 회개와 현재 속죄 상태도 함께 판단합니다."
+        skillId: '186263',
+        label: '한 명 급락은 직접 치유',
+        note: '어둠의 치유 선택 시 해당 버튼, 미선택 시 순간 치유를 사용합니다. 아군 회개와 현재 속죄 상태도 함께 판단합니다.',
       },
       {
-        "skillId": "472433",
-        "label": "큰 피해에 배정한 사도",
-        "note": "90초 쿨다운을 피해 일정에 맞추고 즉시 광휘·다음 광휘를 활용합니다. 속죄 연장기로 생각하지 않습니다."
+        skillId: '472433',
+        label: '큰 피해에 배정한 사도',
+        note: '90초 쿨다운을 피해 일정에 맞추고 즉시 광휘·다음 광휘를 활용합니다. 속죄 연장기로 생각하지 않습니다.',
       },
       {
-        "skillId": "194509",
-        "label": "필요한 대상에게 속죄 준비",
-        "note": "피해 직전에 신의 권능: 광휘를 사용하고 이미 충분한 범위라면 공격 치유로 전환합니다."
+        skillId: '194509',
+        label: '필요한 대상에게 속죄 준비',
+        note: '피해 직전에 신의 권능: 광휘를 사용하고 이미 충분한 범위라면 공격 치유로 전환합니다.',
       },
       {
-        "skillId": "8092",
-        "label": "정신 분열로 다음 연결",
-        "note": "공허술사는 균열, 두 영웅 특성 모두 어둠 지배 사용권을 준비합니다. 남은 사용권과 세트 강화 낭비를 확인합니다."
+        skillId: '8092',
+        label: '정신 분열로 다음 연결',
+        note: '공허술사는 균열, 두 영웅 특성 모두 어둠 지배 사용권을 준비합니다. 남은 사용권과 세트 강화 낭비를 확인합니다.',
       },
       {
-        "skillId": "47540",
-        "label": "상황에 맞는 회개",
-        "note": "속죄 대상이 다치면 적 회개, 한 명 직접 구조가 필요하면 아군 회개입니다. 예언자 충전과 강화 채널을 구분합니다."
+        skillId: '47540',
+        label: '상황에 맞는 회개',
+        note: '속죄 대상이 다치면 적 회개, 한 명 직접 구조가 필요하면 아군 회개입니다. 예언자 충전과 강화 채널을 구분합니다.',
       },
       {
-        "skillId": "1253593",
-        "label": "피해에 맞춘 공허의 보호막",
-        "note": "사용권과 공유 쿨다운을 확인해 실제 피해를 흡수합니다. 회개 강화나 세트 최대 이득을 기다리다 죽게 만들지 않습니다."
+        skillId: '1253593',
+        label: '피해에 맞춘 공허의 보호막',
+        note: '사용권과 공유 쿨다운을 확인해 실제 피해를 흡수합니다. 회개 강화나 세트 최대 이득을 기다리다 죽게 만들지 않습니다.',
       },
       {
-        "skillId": "450215",
-        "label": "균열 중 공허의 폭발",
-        "note": "공허술사 전용입니다. 균열 중 빈 공격 시간을 활용하며 예언자는 성스러운 일격을 사용합니다."
+        skillId: '450215',
+        label: '균열 중 공허의 폭발',
+        note: '공허술사 전용입니다. 균열 중 빈 공격 시간을 활용하며 예언자는 성스러운 일격을 사용합니다.',
       },
       {
-        "skillId": "585",
-        "label": "안정 구간의 성스러운 일격",
-        "note": "핵심기 대기 중 공격 치유를 유지합니다. 이동·위험 바닥·해제와 생존 대응을 무시하고 고정 시전하지 않습니다."
-      }
+        skillId: '585',
+        label: '안정 구간의 성스러운 일격',
+        note: '핵심기 대기 중 공격 치유를 유지합니다. 이동·위험 바닥·해제와 생존 대응을 무시하고 고정 시전하지 않습니다.',
+      },
     ],
-    "opener": {
-      "tabLabel": "피해 준비",
-      "title": "공허술사 피해 준비 전투 흐름",
-      "summary": "사도·어둠 지배 마지막 노드를 선택한 레이드 예시입니다. 광휘는 필요한 범위만 1~2회 사용하고, 실제 피해가 시작될 때 정신 분열 이후 공격 치유가 들어가도록 맞춥니다. 마귀 빌드의 어둠의 권능: 죽음은 본문 조건에 따라 별도로 추가합니다.",
-      "steps": [
+    opener: {
+      tabLabel: '피해 준비',
+      title: '공허술사 피해 준비 전투 흐름',
+      summary: '사도·어둠 지배 마지막 노드를 선택한 레이드 예시입니다. 광휘는 필요한 범위만 1~2회 사용하고, 실제 피해가 시작될 때 정신 분열 이후 공격 치유가 들어가도록 맞춥니다. 마귀 빌드의 어둠의 권능: 죽음은 본문 조건에 따라 별도로 추가합니다.',
+      steps: [
         {
-          "skillId": "589",
-          "label": "고통 유지",
-          "phase": "사전 준비",
-          "trigger": "공격 구간 끝까지 유지",
-          "note": "어둠의 권능: 고통이 도중에 끝날 예정일 때 미리 갱신합니다. 큰 피해 직후 이 작업부터 시작하지 않습니다."
+          skillId: '589',
+          label: '고통 유지',
+          phase: '사전 준비',
+          trigger: '공격 구간 끝까지 유지',
+          note: '어둠의 권능: 고통이 도중에 끝날 예정일 때 미리 갱신합니다. 큰 피해 직후 이 작업부터 시작하지 않습니다.',
         },
         {
-          "skillId": "17",
-          "label": "보호막",
-          "phase": "피해 전",
-          "trigger": "다음 피해 대상 지정",
-          "note": "신의 권능: 보호막으로 속죄와 흡수를 준비합니다. 공허의 보호막 사용권이 있으면 강화된 버튼을 씁니다."
+          skillId: '17',
+          label: '보호막',
+          phase: '피해 전',
+          trigger: '다음 피해 대상 지정',
+          note: '신의 권능: 보호막으로 속죄와 흡수를 준비합니다. 공허의 보호막 사용권이 있으면 강화된 버튼을 씁니다.',
         },
         {
-          "skillId": "2061",
-          "label": "단일 준비",
-          "phase": "피해 전",
-          "trigger": "속죄 없는 대상",
-          "note": "순간 치유로 필요한 대상의 속죄를 준비합니다. 어둠의 치유를 선택한 빌드라면 실제 대체 버튼을 사용합니다."
+          skillId: '2061',
+          label: '단일 준비',
+          phase: '피해 전',
+          trigger: '속죄 없는 대상',
+          note: '순간 치유로 필요한 대상의 속죄를 준비합니다. 어둠의 치유를 선택한 빌드라면 실제 대체 버튼을 사용합니다.',
         },
         {
-          "skillId": "472433",
-          "label": "사도",
-          "phase": "광역 준비",
-          "trigger": "배정한 피해가 임박",
-          "note": "사도 자체 광휘와 다음 광휘 2회 즉시 시전을 활용합니다. 기존 속죄 연장기로 계산하지 않습니다."
+          skillId: '472433',
+          label: '사도',
+          phase: '광역 준비',
+          trigger: '배정한 피해가 임박',
+          note: '사도 자체 광휘와 다음 광휘 2회 즉시 시전을 활용합니다. 기존 속죄 연장기로 계산하지 않습니다.',
         },
         {
-          "skillId": "194509",
-          "label": "광휘 1~2회",
-          "phase": "광역 준비",
-          "trigger": "추가 속죄가 필요할 때",
-          "note": "기존 속죄와 위치를 보고 대상을 고릅니다. 파티나 적은 피해라면 무조건 두 충전을 모두 쓰지 않습니다."
+          skillId: '194509',
+          label: '광휘 1~2회',
+          phase: '광역 준비',
+          trigger: '추가 속죄가 필요할 때',
+          note: '기존 속죄와 위치를 보고 대상을 고릅니다. 파티나 적은 피해라면 무조건 두 충전을 모두 쓰지 않습니다.',
         },
         {
-          "skillId": "8092",
-          "label": "균열 시작",
-          "phase": "피해 대응",
-          "trigger": "속죄 준비 뒤 피해 시점",
-          "note": "정신 분열로 혼돈의 균열과 공허의 보호막 사용권을 얻습니다. 면역이거나 곧 사라질 적은 피합니다."
+          skillId: '8092',
+          label: '균열 시작',
+          phase: '피해 대응',
+          trigger: '속죄 준비 뒤 피해 시점',
+          note: '정신 분열로 혼돈의 균열과 공허의 보호막 사용권을 얻습니다. 면역이거나 곧 사라질 적은 피합니다.',
         },
         {
-          "skillId": "47540",
-          "label": "공격 회개",
-          "phase": "회복 전환",
-          "trigger": "속죄 대상이 다쳤을 때",
-          "note": "적에게 회개를 사용해 속죄 치유와 번영과 역경을 연결합니다. 한 명이 죽기 직전이면 직접 대응으로 전환합니다."
+          skillId: '47540',
+          label: '공격 회개',
+          phase: '회복 전환',
+          trigger: '속죄 대상이 다쳤을 때',
+          note: '적에게 회개를 사용해 속죄 치유와 번영과 역경을 연결합니다. 한 명이 죽기 직전이면 직접 대응으로 전환합니다.',
         },
         {
-          "skillId": "1253593",
-          "label": "공허의 보호막",
-          "phase": "후속 피해",
-          "trigger": "사용권·공유 쿨다운 확인",
-          "note": "실제 피해를 받을 아군에게 흡수를 배치합니다. 시즌 2 4세트가 있으면 정신 분열의 다음 보호막 강화도 소비합니다."
+          skillId: '1253593',
+          label: '공허의 보호막',
+          phase: '후속 피해',
+          trigger: '사용권·공유 쿨다운 확인',
+          note: '실제 피해를 받을 아군에게 흡수를 배치합니다. 시즌 2 4세트가 있으면 정신 분열의 다음 보호막 강화도 소비합니다.',
         },
         {
-          "skillId": "450215",
-          "label": "공허의 폭발",
-          "phase": "균열 중",
-          "trigger": "균열 활성·회개 대기",
-          "note": "균열이 열려 있는 동안 사용합니다. 회개가 다시 준비되거나 직접 구조가 필요하면 그 조건을 먼저 봅니다."
-        }
-      ]
-    }
+          skillId: '450215',
+          label: '공허의 폭발',
+          phase: '균열 중',
+          trigger: '균열 활성·회개 대기',
+          note: '균열이 열려 있는 동안 사용합니다. 회개가 다시 준비되거나 직접 구조가 필요하면 그 조건을 먼저 봅니다.',
+        },
+      ],
+    },
+    talentBuilds: [
+      {
+        id: 'single-target',
+        label: '단일',
+        code: 'CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+        validation: {
+          specId: 256,
+          heroTreeId: 18,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '5ade60454e5f6f515439b2237b9955278f4645c6268db9e3e5c79001648679d6',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '공허술사',
+      },
+      {
+        id: 'mythic-plus',
+        label: '쐐기',
+        code: 'CAQAAAAAAAAAAAAAAAAAAAAAAADsMzMWYMGzgZzsNzMzMzMDAAAAAAAAAgxYZGMzMjNjZGsZamYwMDACgZb2WAjNDAAjZmZMYGMzgRwM',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMzMWYMGzgZzsNzMzMzMDAAAAAAAAAgxYZGMzMjNjZGsZamYwMDACgZb2WAjNDAAjZmZMYGMzgRwM',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer',
+        sourceLabel: 'Mythic+ (Best)',
+        checkedAt: '2026-10-08',
+        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        validation: {
+          specId: 256,
+          heroTreeId: 18,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '95bb390e3abf5b4cf776882a83456cd79352ec620bdcc4dc59d83d1686d3fc94',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '공허술사',
+      },
+      {
+        id: 'raid',
+        label: '레이드',
+        code: 'CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD',
+        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer',
+        sourceLabel: 'Raid (Best)',
+        checkedAt: '2026-10-08',
+        note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+        validation: {
+          specId: 256,
+          heroTreeId: 18,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+          browser: {
+            checkedAt: '2026-10-08',
+            points: [
+              34,
+              34,
+              13,
+            ],
+            parentConnections: true,
+            available: true,
+            sha256: '5ade60454e5f6f515439b2237b9955278f4645c6268db9e3e5c79001648679d6',
+          },
+          scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+        },
+        heroLabel: '공허술사',
+      },
+    ],
+    logReview: {
+      checkedAt: '2026-10-08',
+      samples: [
+        {
+          context: '신화 레이드 전체 우두머리',
+          parseCount: 2867,
+          window: 'Based on the top 50% of data in the last 14 days.',
+          refreshed: '15 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/discipline/priest/raid/talents/mythic/all-bosses',
+          representativeLog: 'https://www.warcraftlogs.com/reports/aJMp7GKmzwC64yRD#fight=26',
+          recommendedCode: 'CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzYmBMNTzMYmBAAY2mtFwYzAAwYMzYwMYmBjgB',
+          validation: {
+            specId: 256,
+            heroTreeId: 18,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+        {
+          context: '쐐기 7단 이상 전체 던전',
+          parseCount: 48358,
+          window: 'Based on all keys 7 and above in the last 14 days.',
+          refreshed: '14 hours ago',
+          aggregateUrl: 'https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/talents/10/all-dungeons/this-week',
+          representativeLog: 'https://www.warcraftlogs.com/reports/NWwhpLfr6KqgYHP9#fight=18',
+          recommendedCode: 'CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmBmZbmtZmZmxMDAAAAAAAAAghZZGMzMDzYmBMNTMAzsghwYWGgxgFAAYMzMjBzAMzMDYG',
+          validation: {
+            specId: 256,
+            heroTreeId: 20,
+            points: {
+              '1': 34,
+              '2': 34,
+              '3': 13,
+              '4': 1,
+            },
+            checkedAt: '2026-10-08',
+            traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+            gameBuild: '12.1.0.69933',
+          },
+        },
+      ],
+      scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+      individual: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        durationDifference: 0.022622551132235783,
+        matchedAugmentation: false,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/wHcY7W2VQk9nbCfN#fight=3&source=197',
+            startedAt: '2026-10-07T01:01:10.918Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 396869,
+            itemLevelBracket: 326,
+            heroTree: 18,
+            augmentationCount: 2,
+            healerCount: 4,
+            casts: [
+              {
+                spellId: '421453',
+                count: 2,
+              },
+              {
+                spellId: '589',
+                count: 3,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '472433',
+                count: 5,
+              },
+              {
+                spellId: '586',
+                count: 7,
+              },
+              {
+                spellId: '1295885',
+                count: 3,
+              },
+              {
+                spellId: '8092',
+                count: 27,
+              },
+              {
+                spellId: '585',
+                count: 195,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '121536',
+                count: 9,
+              },
+              {
+                spellId: '1291894',
+                count: 4,
+              },
+              {
+                spellId: '10060',
+                count: 8,
+              },
+              {
+                spellId: '19236',
+                count: 2,
+              },
+              {
+                spellId: '47540',
+                count: 54,
+              },
+              {
+                spellId: '194509',
+                count: 27,
+              },
+              {
+                spellId: '17',
+                count: 1,
+              },
+              {
+                spellId: '1253593',
+                count: 40,
+              },
+              {
+                spellId: '2061',
+                count: 6,
+              },
+              {
+                spellId: '358733',
+                count: 2,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 60038,
+                uses: 4,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12310,
+                uses: 1,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=24',
+            startedAt: '2026-10-08T02:16:38.458Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 406055,
+            itemLevelBracket: 326,
+            heroTree: 18,
+            augmentationCount: 1,
+            healerCount: 5,
+            casts: [
+              {
+                spellId: '589',
+                count: 3,
+              },
+              {
+                spellId: '121536',
+                count: 2,
+              },
+              {
+                spellId: '1253593',
+                count: 39,
+              },
+              {
+                spellId: '10060',
+                count: 8,
+              },
+              {
+                spellId: '472433',
+                count: 5,
+              },
+              {
+                spellId: '8092',
+                count: 26,
+              },
+              {
+                spellId: '194509',
+                count: 29,
+              },
+              {
+                spellId: '585',
+                count: 155,
+              },
+              {
+                spellId: '421453',
+                count: 2,
+              },
+              {
+                spellId: '586',
+                count: 6,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '17',
+                count: 15,
+              },
+              {
+                spellId: '47540',
+                count: 51,
+              },
+              {
+                spellId: '2061',
+                count: 14,
+              },
+              {
+                spellId: '19236',
+                count: 3,
+              },
+              {
+                spellId: '200829',
+                count: 5,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 60052,
+                uses: 4,
+              },
+            ],
+          },
+        ],
+        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      },
+    },
   },
 
 };
 
 guideManuscripts['priest-holy'] = {
   patch: '12.1',
-  researchedAt: '2026-10-03',
+  researchedAt: '2026-10-08',
   status: '실전 심화 가이드',
   graphCenterSkillId: '2050',
-  sourceStatus: '12.1 공식 노트, 2026-10-01 누적 긴급 수정(8월 18일 예언자 상향, 8월 26일·31일 수호 영혼 버그, 9월 3일·15일 세트 버그), 2026-10-03 한국어 툴팁 재확인 반영. Wowhead·Icy Veins·Method는 8월 판, Archon과 로그 수치는 2026-08-25 확인 시점의 과거 집계입니다.',
+  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
   summary: '12.1 신성 사제는 빛의 권능: 평온으로 가장 위험한 대상을 살리고, 평온이 확정 생성한 축도를 직접 시전한 뒤, 빛술사가 강화한 치유의 기원으로 남은 파티 피해를 정리하는 힐러입니다. 축도는 회복의 기원에서 가끔 생기는 수동 효과가 아니라 직접 누르는 주문이며, 평온 뒤 축도를 빼먹으면 우주의 파장과 빛술사까지 한꺼번에 잃습니다. 공개 가이드의 기본 추천은 공격대 집정관(후광·절정·영혼 우물), 쐐기 예언자(회복의 기원 2충전·궁극의 평온)입니다. 8월 말 이후 수호 영혼과 세트 버그가 고쳐졌으니, 수호 천사를 선택했다면 수호 영혼을 피해 전에 미리 거는 쪽으로 운용을 바꿉니다.',
   sourceNote: 'Blizzard 12.1 공식 노트는 신성 사제 전체 치유량 16% 증가, 순간 치유와 치유의 기원 마나 소모량 10% 감소, 축도 치유량 15% 증가와 마나 소모량 30% 감소, 절정의 빛의 권능 마나 소모 감소 70%, 빛의 권능: 평온의 다음 순간 치유 100% 축도 전환, 천상의 찬가 정신 집중 중 수호 영혼 부여를 명시합니다. 2026-10-01 영문 누적 긴급 수정(한국어 2026-10-02 판, 한국어 기사 날짜는 미국보다 하루 늦음)에서 PvE에 영향이 있는 신성 항목은 8월 18일 예언자 상향(즉발적인 예측 치유량 55% 증가, 현자의 말 40%, 예방의 기술 40%, 깨달음 25%), 8월 20일 축도 발동 소모 버그, 8월 26일 수호 천사 선택 시 천상의 찬가가 수호 영혼을 60초 쿨다운에 묶던 버그, 8월 31일 아군 대상 수호 영혼에 수호 천사가 적용되지 않던 버그, 9월 3일 소생이 소생의 활력을 안정적으로 주지 않던 버그, 9월 15일 소생의 활력이 3중첩을 넘던 버그입니다. 8월 25일과 9월 22일 신성 수치 조정은 플레이어 간 전투 전용이며 10월 6일 예정 조정도 사제는 PvP 항목뿐이라 반영하지 않았습니다. 한국어 이름과 툴팁은 2026-10-03 ko.wowhead 화면으로 다시 확인했고, 주문 471504의 공식 이름은 작별의 한마디가 아니라 치유의 잔향입니다. Archon 수치(공격대 영웅 8,254개 로그 집정관 73.2%, 쐐기 +7~19 44,696개 로그 예언자 86.1%, 고단 2,715개 로그 예언자 96.8%)는 2026-08-25 확인 시점의 최근 14일 과거 집계로, 이후 버그 수정과 세트 수정 전 기록이 섞여 있습니다. 2026-10-03 Archon과 Icy Veins 재접속은 차단되어 최신 사용률과 가이드 갱신일은 확인하지 못했으므로 영웅 특성 우열을 현재 메타로 단정하지 않습니다.',
   playstyle: [
@@ -32024,6 +46714,34 @@ guideManuscripts['priest-holy'] = {
       updated: '2026-08-22 전투 / 2026-08-25 분석',
       note: '같은 길이의 전투에서 평온 86회, 축도 90회, 치유의 기원 110회와 우주의 파장 16.37M을 비교 기준으로 확인',
     },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 레이드 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/holy/priest/raid/talents/mythic/all-bosses',
+      updated: '2026-10-08 확인',
+      note: '신화 레이드 전체 우두머리, 로그 26,672건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 쐐기 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/holy/priest/mythic-plus/talents/10/all-dungeons/this-week',
+      updated: '2026-10-08 확인',
+      note: '쐐기 7단 이상 전체 던전, 로그 189,667건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/1g9MDZR7XvBd6YWr#fight=5&source=5',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T00:09:45.912Z · 장비 구간 330 · 405.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/njhpZT63wXPK8cgM#fight=5&source=10',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T03:08:49.890Z · 장비 구간 330 · 410.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
   ],
   evidence: [
     'Blizzard 12.1 공식 노트는 축도 치유량을 15% 높이고 마나 소모량을 30% 낮췄으며, 절정 대신 빛의 권능: 평온이 다음 순간 치유를 확정 축도로 바꾸도록 변경했습니다.',
@@ -32042,6 +46760,7 @@ guideManuscripts['priest-holy'] = {
     'Icy Veins는 집정관 영혼 우물 빌드의 빛의 쇄도를 치유의 기원에 쓰고, 축도로 빛술사를 만든 뒤 치유의 기원을 강화하라고 구분합니다. 영혼 우물 툴팁도 신성은 치유의 기원 시전 시 빛의 쇄도를 소모한다고 적습니다.',
     '12.1 천상의 찬가는 정신 집중 중 수호 영혼을 부여하고, 축도 정점 특성으로 각 틱마다 우주의 파장을 일으켜 긴 광역 피해에서 더 안정적으로 작동합니다.',
     'Warcraft Priests 공개 자료와 Niphyr 작성자 이력은 신성 사제 이론공식의 공개 확인 경로로만 사용하고, 비공개 대화나 날짜를 확인할 수 없는 조언은 근거로 쓰지 않았습니다.',
+    '10월 8일 사제 신성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
   ],
   caveats: [
     'Archon 사용률은 2026-08-25 확인 시점의 과거 집계입니다. 이후 수호 영혼·세트 버그 수정과 시즌 진행으로 바뀌었을 수 있으므로 영웅 특성 우열을 현재 메타로 단정하지 않습니다.',
@@ -32055,6 +46774,8 @@ guideManuscripts['priest-holy'] = {
     '8월 25일·9월 22일 신성 조정과 10월 6일 예정된 사제 조정은 플레이어 간 전투 전용입니다. PvE 수치에 섞지 않습니다.',
     '정화, 마법 무효화, 대규모 무효화는 지울 수 있는 효과가 있을 때만 강합니다. 던전별 디버프와 적 강화 효과를 먼저 확인합니다.',
     '스탯 우선순위는 8월 공개 가이드 기준의 일반 지침입니다. 아이템 레벨이 크게 오르는 장비와 장신구 특수 효과는 개별 비교가 필요합니다.',
+    '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
   ],
   heroBranches: [
     {
@@ -32880,887 +47601,1663 @@ guideManuscripts['priest-holy'] = {
       note: '위협 감소와 선택한 피해 감소 효과를 큰 피해 전에 사용합니다.',
     },
   ],
+  talentBuilds: [
+    {
+      id: 'single-target',
+      label: '단일',
+      code: 'CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer',
+      sourceLabel: 'Raid (Best)',
+      checkedAt: '2026-10-08',
+      note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+      validation: {
+        specId: 257,
+        heroTreeId: 20,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '88c697019faf0936752e704c9f17937ca8fb1f84c8384afe1a5004c6a8a68bfb',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '예언자',
+    },
+    {
+      id: 'mythic-plus',
+      label: '쐐기',
+      code: 'CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmxmxMD2wMFAzshhwYWGgxALGzsAoZMzYMYGgZmBMA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmxmxMD2wMFAzshhwYWGgxALGzsAoZMzYMYGgZmBMA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer',
+      sourceLabel: 'Mythic+ (Best)',
+      checkedAt: '2026-10-08',
+      note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+      validation: {
+        specId: 257,
+        heroTreeId: 20,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'a0e9d1c2cf03f395f613df5d7056db4e1be98e5bff80e75484b63c7a99763e1a',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '예언자',
+    },
+    {
+      id: 'raid',
+      label: '레이드',
+      code: 'CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer',
+      sourceLabel: 'Raid (Best)',
+      checkedAt: '2026-10-08',
+      note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+      validation: {
+        specId: 257,
+        heroTreeId: 20,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '88c697019faf0936752e704c9f17937ca8fb1f84c8384afe1a5004c6a8a68bfb',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '예언자',
+    },
+  ],
+  logReview: {
+    checkedAt: '2026-10-08',
+    samples: [
+      {
+        context: '신화 레이드 전체 우두머리',
+        parseCount: 26672,
+        window: 'Based on the top 50% of data in the last 14 days.',
+        refreshed: '13 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/holy/priest/raid/talents/mythic/all-bosses',
+        representativeLog: 'https://www.warcraftlogs.com/reports/4wpMDqTnVkAPZ3dX#fight=4',
+        recommendedCode: 'CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMLYIMmlBYMwiZmZBgZMGjhZGgZmZgB',
+        validation: {
+          specId: 257,
+          heroTreeId: 20,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+      {
+        context: '쐐기 7단 이상 전체 던전',
+        parseCount: 189667,
+        window: 'Based on all keys 7 and above in the last 14 days.',
+        refreshed: '13 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/holy/priest/mythic-plus/talents/10/all-dungeons/this-week',
+        representativeLog: 'https://www.warcraftlogs.com/reports/YXq2Njg7FLwkVfP9#fight=6',
+        recommendedCode: 'CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmx2MmZAMTBwMLYIMmtBYMwiZmBAzYmxYwMAzMDYA',
+        validation: {
+          specId: 257,
+          heroTreeId: 20,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+    ],
+    scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+    individual: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      durationDifference: 0.011794439764111205,
+      matchedAugmentation: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/1g9MDZR7XvBd6YWr#fight=5&source=5',
+          startedAt: '2026-10-07T00:09:45.912Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 405858,
+          itemLevelBracket: 330,
+          heroTree: 20,
+          augmentationCount: 0,
+          healerCount: 4,
+          casts: [
+            {
+              spellId: '33076',
+              count: 47,
+            },
+            {
+              spellId: '2050',
+              count: 53,
+            },
+            {
+              spellId: '10060',
+              count: 8,
+            },
+            {
+              spellId: '47788',
+              count: 2,
+            },
+            {
+              spellId: '88625',
+              count: 3,
+            },
+            {
+              spellId: '1262763',
+              count: 81,
+            },
+            {
+              spellId: '200183',
+              count: 3,
+            },
+            {
+              spellId: '64843',
+              count: 3,
+            },
+            {
+              spellId: '21562',
+              count: 1,
+            },
+            {
+              spellId: '586',
+              count: 8,
+            },
+            {
+              spellId: '256948',
+              count: 2,
+            },
+            {
+              spellId: '121536',
+              count: 3,
+            },
+            {
+              spellId: '257040',
+              count: 2,
+            },
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '14914',
+              count: 9,
+            },
+            {
+              spellId: '585',
+              count: 22,
+            },
+            {
+              spellId: '2061',
+              count: 73,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 60042,
+              uses: 4,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/njhpZT63wXPK8cgM#fight=5&source=10',
+          startedAt: '2026-10-08T03:08:49.890Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 410702,
+          itemLevelBracket: 330,
+          heroTree: 20,
+          augmentationCount: 0,
+          healerCount: 4,
+          casts: [
+            {
+              spellId: '10060',
+              count: 8,
+            },
+            {
+              spellId: '1295885',
+              count: 3,
+            },
+            {
+              spellId: '33076',
+              count: 46,
+            },
+            {
+              spellId: '2050',
+              count: 51,
+            },
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '64843',
+              count: 3,
+            },
+            {
+              spellId: '1236648',
+              count: 1,
+            },
+            {
+              spellId: '6262',
+              count: 1,
+            },
+            {
+              spellId: '121536',
+              count: 6,
+            },
+            {
+              spellId: '200183',
+              count: 4,
+            },
+            {
+              spellId: '19236',
+              count: 4,
+            },
+            {
+              spellId: '1234768',
+              count: 1,
+            },
+            {
+              spellId: '132157',
+              count: 1,
+            },
+            {
+              spellId: '2061',
+              count: 74,
+            },
+            {
+              spellId: '1262763',
+              count: 80,
+            },
+            {
+              spellId: '586',
+              count: 8,
+            },
+            {
+              spellId: '47788',
+              count: 2,
+            },
+            {
+              spellId: '21562',
+              count: 1,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 60007,
+              uses: 4,
+            },
+          ],
+        },
+      ],
+      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    },
+  },
 };
 
 guideManuscripts['priest-shadow'] = {
-  "patch": "12.1",
-  "researchedAt": "2026-09-23",
-  "status": "실전 심화 공략",
-  "graphCenterSkillId": "335467",
-  "sourceStatus": "12.1 공식 변경과 9월 22일 암흑 단일 피해 상향·광역 전달 조정을 반영했습니다. 집정관 레이드·공허술사 쐐기는 핫픽스 전 공개 가이드 추천이며, 상향 후 로그 채택률은 검증하지 못했습니다.",
-  "summary": "오래 살 적에게 지속 피해를 유지하고, 광기가 넘치거나 주 대상의 어둠의 권능: 광기가 끝나기 전에 소비하세요. 집정관은 후광으로 얻는 강화 채찍을, 공허술사는 격류로 여는 균열을 활용합니다. 12.1에서 공허 연사는 쿨마다 누르는 기술이 아니라 사용권을 소모하는 기술로 바뀌었으며 시즌 2 세트가 있으면 형상 밖에서도 사용합니다.",
-  "sourceNote": "Blizzard 12.1 노트와 2026-09-22 핫픽스, Wowhead 한국어·영어 주문 툴팁, Icy Veins Publik과 Method Jaerv의 공개 운용 글을 대조했습니다. 정신 분열·공허의 폭발·죽음·광기·두 채찍의 피해는 각각 15% 상향됐고, PvE 영혼의 연결 전달률은 25%에서 20%로 줄었으며 그늘폭발 피해는 5% 감소했습니다. 이 조정은 단일 대상 보강과 광역 균형 조정이지 영웅 특성의 현재 우열을 증명하지 않습니다. 6월 로그 비율은 재사용하지 않습니다.",
-  "playstyle": [
+  patch: '12.1',
+  researchedAt: '2026-10-08',
+  status: '실전 심화 공략',
+  graphCenterSkillId: '335467',
+  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  summary: '오래 살 적에게 지속 피해를 유지하고, 광기가 넘치거나 주 대상의 어둠의 권능: 광기가 끝나기 전에 소비하세요. 집정관은 후광으로 얻는 강화 채찍을, 공허술사는 격류로 여는 균열을 활용합니다. 12.1에서 공허 연사는 쿨마다 누르는 기술이 아니라 사용권을 소모하는 기술로 바뀌었으며 시즌 2 세트가 있으면 형상 밖에서도 사용합니다.',
+  sourceNote: 'Blizzard 12.1 노트와 2026-09-22 핫픽스, Wowhead 한국어·영어 주문 툴팁, Icy Veins Publik과 Method Jaerv의 공개 운용 글을 대조했습니다. 정신 분열·공허의 폭발·죽음·광기·두 채찍의 피해는 각각 15% 상향됐고, PvE 영혼의 연결 전달률은 25%에서 20%로 줄었으며 그늘폭발 피해는 5% 감소했습니다. 이 조정은 단일 대상 보강과 광역 균형 조정이지 영웅 특성의 현재 우열을 증명하지 않습니다. 6월 로그 비율은 재사용하지 않습니다.',
+  playstyle: [
     {
-      "label": "지속 피해",
-      "text": "흡혈의 손길·고통을 유지하고 주 공격 대상에 광기를 남깁니다. 불행이면 손길이 고통도 적용하지만 깨어난 악몽이면 고통을 직접 써야 합니다."
+      label: '지속 피해',
+      text: '흡혈의 손길·고통을 유지하고 주 공격 대상에 광기를 남깁니다. 불행이면 손길이 고통도 적용하지만 깨어난 악몽이면 고통을 직접 써야 합니다.',
     },
     {
-      "label": "자원과 사용권",
-      "text": "광기 상한과 비용은 특성에 따라 달라집니다. 세트로 얻은 공허 연사와 형상 안의 기본 사용권을 같은 쿨다운처럼 관리하지 마세요."
+      label: '자원과 사용권',
+      text: '광기 상한과 비용은 특성에 따라 달라집니다. 세트로 얻은 공허 연사와 형상 안의 기본 사용권을 같은 쿨다운처럼 관리하지 마세요.',
     },
     {
-      "label": "집정관",
-      "text": "후광 생성으로 강화 채찍을 얻고, 이를 소비해 원혼을 만듭니다. 형상 안의 광기 직접 시전은 집중된 폭발의 자동 연사로 이어집니다."
+      label: '집정관',
+      text: '후광 생성으로 강화 채찍을 얻고, 이를 소비해 원혼을 만듭니다. 형상 안의 광기 직접 시전은 집중된 폭발의 자동 연사로 이어집니다.',
     },
     {
-      "label": "공허술사",
-      "text": "공허의 격류로 균열을 열고 공허의 폭발과 광기를 연결합니다. 암흑 마력을 선택했다면 이동하면서 격류를 시전할 수 있습니다."
-    }
+      label: '공허술사',
+      text: '공허의 격류로 균열을 열고 공허의 폭발과 광기를 연결합니다. 암흑 마력을 선택했다면 이동하면서 격류를 시전할 수 있습니다.',
+    },
   ],
-  "sources": [
+  sources: [
     {
-      "tier": "S",
-      "label": "Blizzard 2026-09-22 암흑 핫픽스",
-      "url": "https://news.blizzard.com/en-us/article/24296142/hotfixes-september-22-2026",
-      "updated": "2026-09-22 / 2026-09-23 확인",
-      "note": "단일 핵심 기술 15% 상향, 영혼의 연결 PvE 25%→20%, 그늘폭발 PvE 5% 감소"
+      tier: 'S',
+      label: 'Blizzard 2026-09-22 암흑 핫픽스',
+      url: 'https://news.blizzard.com/en-us/article/24296142/hotfixes-september-22-2026',
+      updated: '2026-09-22 / 2026-09-23 확인',
+      note: '단일 핵심 기술 15% 상향, 영혼의 연결 PvE 25%→20%, 그늘폭발 PvE 5% 감소',
     },
     {
-      "tier": "S",
-      "label": "Blizzard 12.1 콘텐츠 업데이트",
-      "url": "https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes",
-      "updated": "12.1 / 2026-09-21 확인",
-      "note": "형상 연사 사용권, 태고의 광기·공허의 형상 연마, 그늘폭발, 느조스 광기 감소와 집정관 변경을 확인했습니다."
+      tier: 'S',
+      label: 'Blizzard 12.1 콘텐츠 업데이트',
+      url: 'https://news.blizzard.com/en-us/article/24293281/curse-of-ula-tek-content-update-notes',
+      updated: '12.1 / 2026-09-21 확인',
+      note: '형상 연사 사용권, 태고의 광기·공허의 형상 연마, 그늘폭발, 느조스 광기 감소와 집정관 변경을 확인했습니다.',
     },
     {
-      "tier": "A",
-      "label": "Wowhead 암흑 사제 운용",
-      "url": "https://www.wowhead.com/ko/guide/classes/priest/shadow/rotation-cooldowns-pve-dps",
-      "updated": "12.1 / 2026-09-21 확인",
-      "note": "영웅 특성별 운용을 대조했습니다. 숨겨진 선택 조건이 빠진 텍스트와 오래된 댓글을 현재 우선순위로 합치지 않습니다."
+      tier: 'A',
+      label: 'Wowhead 암흑 사제 운용',
+      url: 'https://www.wowhead.com/ko/guide/classes/priest/shadow/rotation-cooldowns-pve-dps',
+      updated: '12.1 / 2026-09-21 확인',
+      note: '영웅 특성별 운용을 대조했습니다. 숨겨진 선택 조건이 빠진 텍스트와 오래된 댓글을 현재 우선순위로 합치지 않습니다.',
     },
     {
-      "tier": "A",
-      "label": "Icy Veins Publik 운용 · Warcraft Priests",
-      "url": "https://www.icy-veins.com/wow/shadow-priest-pve-dps-rotation-cooldowns-abilities",
-      "updated": "2026-08-11 / 2026-09-21 확인",
-      "note": "집정관 단일·광역과 공허술사 단일·광역을 실제 선택해서 확인했습니다. 시즌 2 세트 유무, 일반 연사와 추가 연사 설명을 분리했습니다."
+      tier: 'A',
+      label: 'Icy Veins Publik 운용 · Warcraft Priests',
+      url: 'https://www.icy-veins.com/wow/shadow-priest-pve-dps-rotation-cooldowns-abilities',
+      updated: '2026-08-11 / 2026-09-21 확인',
+      note: '집정관 단일·광역과 공허술사 단일·광역을 실제 선택해서 확인했습니다. 시즌 2 세트 유무, 일반 연사와 추가 연사 설명을 분리했습니다.',
     },
     {
-      "tier": "A",
-      "label": "Icy Veins 암흑 특성",
-      "url": "https://www.icy-veins.com/wow/shadow-priest-pve-dps-spec-builds-talents",
-      "updated": "12.1 / 2026-09-21 확인",
-      "note": "집정관 레이드와 공허술사 쐐기 시작점을 참고합니다. 개인 장비나 현재 로그 점유율을 측정한 추천은 아닙니다."
+      tier: 'A',
+      label: 'Icy Veins 암흑 특성',
+      url: 'https://www.icy-veins.com/wow/shadow-priest-pve-dps-spec-builds-talents',
+      updated: '12.1 / 2026-09-21 확인',
+      note: '집정관 레이드와 공허술사 쐐기 시작점을 참고합니다. 개인 장비나 현재 로그 점유율을 측정한 추천은 아닙니다.',
     },
     {
-      "tier": "B",
-      "label": "Method Jaerv 암흑 운용",
-      "url": "https://www.method.gg/guides/shadow-priest/playstyle-and-rotation",
-      "updated": "2026-08-27 / 2026-09-21 확인",
-      "note": "단일·광역 운용과 영웅 특성별 우선순위를 비교했습니다. 공허 연사 위치가 다른 설명을 세트 사용권 조건과 함께 읽습니다."
+      tier: 'B',
+      label: 'Method Jaerv 암흑 운용',
+      url: 'https://www.method.gg/guides/shadow-priest/playstyle-and-rotation',
+      updated: '2026-08-27 / 2026-09-21 확인',
+      note: '단일·광역 운용과 영웅 특성별 우선순위를 비교했습니다. 공허 연사 위치가 다른 설명을 세트 사용권 조건과 함께 읽습니다.',
     },
     {
-      "tier": "S",
-      "label": "공허의 형상 · 실제 시전",
-      "url": "https://www.wowhead.com/ko/spell=228260",
-      "updated": "2026-09-21 확인",
-      "note": "진입 기술 228260, 강화 상태 194249, 실제 연사 1242173을 구분했습니다. 모두 별도 공격 스킬 세 개라는 뜻이 아닙니다."
+      tier: 'S',
+      label: '공허의 형상 · 실제 시전',
+      url: 'https://www.wowhead.com/ko/spell=228260',
+      updated: '2026-09-21 확인',
+      note: '진입 기술 228260, 강화 상태 194249, 실제 연사 1242173을 구분했습니다. 모두 별도 공격 스킬 세 개라는 뜻이 아닙니다.',
     },
     {
-      "tier": "S",
-      "label": "공허의 형상 연마",
-      "url": "https://www.wowhead.com/ko/spell=341240",
-      "updated": "2026-09-21 확인",
-      "note": "추가 피해 5%와 연사 2회입니다. 태고의 광기와 선택 관계이며 형상 진입 시 광기를 추가로 얻는 효과가 아닙니다."
+      tier: 'S',
+      label: '공허의 형상 연마',
+      url: 'https://www.wowhead.com/ko/spell=341240',
+      updated: '2026-09-21 확인',
+      note: '추가 피해 5%와 연사 2회입니다. 태고의 광기와 선택 관계이며 형상 진입 시 광기를 추가로 얻는 효과가 아닙니다.',
     },
     {
-      "tier": "S",
-      "label": "태고의 광기",
-      "url": "https://www.wowhead.com/ko/spell=1231346",
-      "updated": "2026-09-21 확인",
-      "note": "형상 중 광기 시전마다 가속 2%와 지속시간 1.5초, 최대 5회입니다. 종료 뒤 가속만 10초에 걸쳐 감소합니다."
+      tier: 'S',
+      label: '태고의 광기',
+      url: 'https://www.wowhead.com/ko/spell=1231346',
+      updated: '2026-09-21 확인',
+      note: '형상 중 광기 시전마다 가속 2%와 지속시간 1.5초, 최대 5회입니다. 종료 뒤 가속만 10초에 걸쳐 감소합니다.',
     },
     {
-      "tier": "S",
-      "label": "시즌 2 암흑 2세트",
-      "url": "https://www.wowhead.com/ko/spell=1296579",
-      "updated": "2026-09-21 확인",
-      "note": "촉수 격돌 피해 100% 증가와 충전 시간 3초 감소를 확인했습니다. 미착용자의 기본 충전 시간은 15초입니다."
+      tier: 'S',
+      label: '시즌 2 암흑 2세트',
+      url: 'https://www.wowhead.com/ko/spell=1296579',
+      updated: '2026-09-21 확인',
+      note: '촉수 격돌 피해 100% 증가와 충전 시간 3초 감소를 확인했습니다. 미착용자의 기본 충전 시간은 15초입니다.',
     },
     {
-      "tier": "S",
-      "label": "시즌 2 암흑 4세트",
-      "url": "https://www.wowhead.com/ko/spell=1296580",
-      "updated": "2026-09-21 확인",
-      "note": "촉수 격돌로 얻는 추가 연사는 현행 툴팁에서 100% 효과입니다. 오래된 구현의 125%를 현재 수치로 가져오지 않습니다."
+      tier: 'S',
+      label: '시즌 2 암흑 4세트',
+      url: 'https://www.wowhead.com/ko/spell=1296580',
+      updated: '2026-09-21 확인',
+      note: '촉수 격돌로 얻는 추가 연사는 현행 툴팁에서 100% 효과입니다. 오래된 구현의 125%를 현재 수치로 가져오지 않습니다.',
     },
     {
-      "tier": "S",
-      "label": "암흑 마력 · 이동 중 격류",
-      "url": "https://www.wowhead.com/ko/spell=451018",
-      "updated": "2026-09-21 확인",
-      "note": "암흑은 이동 중 공허의 격류를 사용할 수 있습니다. 균열 중 이동 속도 20% 증가는 수양과 공통이지만 격류는 암흑 기술입니다."
+      tier: 'S',
+      label: '암흑 마력 · 이동 중 격류',
+      url: 'https://www.wowhead.com/ko/spell=451018',
+      updated: '2026-09-21 확인',
+      note: '암흑은 이동 중 공허의 격류를 사용할 수 있습니다. 균열 중 이동 속도 20% 증가는 수양과 공통이지만 격류는 암흑 기술입니다.',
     },
     {
-      "tier": "S",
-      "label": "현신하는 권능",
-      "url": "https://www.wowhead.com/ko/spell=453783",
-      "updated": "2026-09-21 확인",
-      "note": "집정관의 후광 생성과 강화 채찍 연결입니다. 광기의 쇄도를 예전 강화 채찍 발동 특성으로 설명하지 않습니다."
+      tier: 'S',
+      label: '현신하는 권능',
+      url: 'https://www.wowhead.com/ko/spell=453783',
+      updated: '2026-09-21 확인',
+      note: '집정관의 후광 생성과 강화 채찍 연결입니다. 광기의 쇄도를 예전 강화 채찍 발동 특성으로 설명하지 않습니다.',
     },
     {
-      "tier": "S",
-      "label": "그늘폭발",
-      "url": "https://www.wowhead.com/ko/spell=73510",
-      "updated": "2026-09-21 확인",
-      "note": "주 대상에 접근하는 원혼의 8야드 폭발, 5대상 초과 감소를 확인했습니다. 신규 직접 시전 기술이 아닙니다."
+      tier: 'S',
+      label: '그늘폭발',
+      url: 'https://www.wowhead.com/ko/spell=73510',
+      updated: '2026-09-21 확인',
+      note: '주 대상에 접근하는 원혼의 8야드 폭발, 5대상 초과 감소를 확인했습니다. 신규 직접 시전 기술이 아닙니다.',
     },
     {
-      "tier": "B",
-      "label": "SimulationCraft 사제 12.1 구현",
-      "url": "https://github.com/simulationcraft/simc/blob/e9a81d3415d317e1fadb961dfdcb0decd34c525f/engine/class_modules/priest/sc_priest_shadow.cpp",
-      "updated": "12.1.0.69814 / 2026-09-21 확인",
-      "note": "현재 특성 노드와 시전·자동 피해·버프 ID를 구분하는 보조 자료입니다. 개인 심크 결과가 아니며 공식 패치와 다른 잔존 코드 값을 우선하지 않습니다."
+      tier: 'B',
+      label: 'SimulationCraft 사제 12.1 구현',
+      url: 'https://github.com/simulationcraft/simc/blob/e9a81d3415d317e1fadb961dfdcb0decd34c525f/engine/class_modules/priest/sc_priest_shadow.cpp',
+      updated: '12.1.0.69814 / 2026-09-21 확인',
+      note: '현재 특성 노드와 시전·자동 피해·버프 ID를 구분하는 보조 자료입니다. 개인 심크 결과가 아니며 공식 패치와 다른 잔존 코드 값을 우선하지 않습니다.',
     },
     {
-      "tier": "A",
-      "label": "Archon 암흑 레이드 집계 · 접근 제한",
-      "url": "https://www.archon.gg/wow/builds/shadow/priest/raid/overview/mythic/all-bosses",
-      "updated": "2026-09-21 접근 시도",
-      "note": "현재 레이드 로그 수·영웅 특성 사용률·DPS를 확보하지 못했습니다. 집정관 추천을 최신 집계로 증명했다고 주장하지 않으며 6월 값을 재사용하지 않습니다."
+      tier: 'A',
+      label: 'Archon 암흑 레이드 집계 · 접근 제한',
+      url: 'https://www.archon.gg/wow/builds/shadow/priest/raid/overview/mythic/all-bosses',
+      updated: '2026-09-21 접근 시도',
+      note: '현재 레이드 로그 수·영웅 특성 사용률·DPS를 확보하지 못했습니다. 집정관 추천을 최신 집계로 증명했다고 주장하지 않으며 6월 값을 재사용하지 않습니다.',
     },
     {
-      "tier": "A",
-      "label": "Archon 암흑 쐐기 집계 · 접근 제한",
-      "url": "https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/overview/10/all-dungeons",
-      "updated": "2026-09-21 접근 시도",
-      "note": "현재 쐐기 로그 수와 단수별 공허술사·집정관 채택률을 확보하지 못했습니다. 공개 가이드의 추천과 실측 로그 점유율을 구분합니다."
-    }
+      tier: 'A',
+      label: 'Archon 암흑 쐐기 집계 · 접근 제한',
+      url: 'https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/overview/10/all-dungeons',
+      updated: '2026-09-21 접근 시도',
+      note: '현재 쐐기 로그 수와 단수별 공허술사·집정관 채택률을 확보하지 못했습니다. 공개 가이드의 추천과 실측 로그 점유율을 구분합니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 레이드 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/shadow/priest/raid/talents/mythic/all-bosses',
+      updated: '2026-10-08 확인',
+      note: '신화 레이드 전체 우두머리, 로그 13,261건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 쐐기 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/talents/10/all-dungeons/this-week',
+      updated: '2026-10-08 확인',
+      note: '쐐기 7단 이상 전체 던전, 로그 64,702건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/Yydv42cmtMnDX69q#fight=4&source=170',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T01:03:49.262Z · 장비 구간 329 · 383.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=22',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T00:17:08.498Z · 장비 구간 329 · 384.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
   ],
-  "evidence": [
-    "형상 기본 연사 3회와 연마의 추가 2회는 직접 사용권입니다. 형상 진입 자동 연사와 집중된 폭발의 약한 자동 연사를 따로 셉니다.",
-    "공허의 격류는 기본 30초 쿨다운·3초 정신 집중·광기 24 생성입니다. 공허술사만 사용하며 광기 소비기가 아닙니다.",
-    "광기 상한은 공허에 물듦 선택 시 150입니다. 마음의 눈과 현실 왜곡은 비용 45와 55의 선택 관계입니다.",
-    "집정관의 현신하는 권능은 후광 생성에서 강화 채찍을 제공합니다. 마력 순환은 이를 소비할 때 원혼 생성으로 연결합니다.",
-    "공허술사는 격류로 균열을 열며 공허의 폭발 450983이 정신 분열을 대체합니다. 수양의 공허의 폭발 450215와 별개의 주문입니다.",
-    "영혼의 연결은 9월 22일 이후 PvE에서 직접 피해의 20%(기존 25%)를 다른 손길 대상에게 전달합니다. 원혼·고통·손길 피해를 다시 복제하지 않습니다.",
-    "현재 상위 로그를 확보하지 못했습니다. 영웅 특성 추천은 공개 가이드의 콘텐츠별 판단이지 최신 사용률이나 개인 DPS 우위의 증명이 아닙니다."
+  evidence: [
+    '형상 기본 연사 3회와 연마의 추가 2회는 직접 사용권입니다. 형상 진입 자동 연사와 집중된 폭발의 약한 자동 연사를 따로 셉니다.',
+    '공허의 격류는 기본 30초 쿨다운·3초 정신 집중·광기 24 생성입니다. 공허술사만 사용하며 광기 소비기가 아닙니다.',
+    '광기 상한은 공허에 물듦 선택 시 150입니다. 마음의 눈과 현실 왜곡은 비용 45와 55의 선택 관계입니다.',
+    '집정관의 현신하는 권능은 후광 생성에서 강화 채찍을 제공합니다. 마력 순환은 이를 소비할 때 원혼 생성으로 연결합니다.',
+    '공허술사는 격류로 균열을 열며 공허의 폭발 450983이 정신 분열을 대체합니다. 수양의 공허의 폭발 450215와 별개의 주문입니다.',
+    '영혼의 연결은 9월 22일 이후 PvE에서 직접 피해의 20%(기존 25%)를 다른 손길 대상에게 전달합니다. 원혼·고통·손길 피해를 다시 복제하지 않습니다.',
+    '현재 상위 로그를 확보하지 못했습니다. 영웅 특성 추천은 공개 가이드의 콘텐츠별 판단이지 최신 사용률이나 개인 DPS 우위의 증명이 아닙니다.',
+    '10월 8일 사제 암흑의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
   ],
-  "caveats": [
-    "차트의 오프닝은 시즌 2 4세트·깨어난 악몽 단일 예시입니다. 불행이면 고통 직접 시전을 생략하고, 4세트가 없으면 형상 전 추가 연사 단계를 생략합니다. 광역 시작 준비는 광역 탭과 본문에 따로 설명합니다.",
-    "유지 탭은 모든 버튼을 순서대로 한 번씩 누르는 반복 매크로가 아닙니다. 위에서부터 조건을 확인하고 맞는 기술 하나를 사용한 뒤 다시 판단합니다. 시전 불가능한 기술을 기다리며 멈추지 않습니다.",
-    "일반 형상 연사는 다른 중요한 기술 사이에 배치하지만 세트 추가 연사는 다음 촉수 격돌이나 형상 진입을 막지 않게 처리합니다. 가이드 간 연사 우선순위 차이를 조건 없이 한 줄로 합치지 않습니다.",
-    "공식 주문 수치는 캐릭터의 가속·특화·특성·세트 적용 전후를 구분합니다. 피해 계수를 개인 DPS 증가율로 바꾸거나 두 선택 특성의 보상을 동시에 적용하지 않습니다."
+  caveats: [
+    '차트의 오프닝은 시즌 2 4세트·깨어난 악몽 단일 예시입니다. 불행이면 고통 직접 시전을 생략하고, 4세트가 없으면 형상 전 추가 연사 단계를 생략합니다. 광역 시작 준비는 광역 탭과 본문에 따로 설명합니다.',
+    '유지 탭은 모든 버튼을 순서대로 한 번씩 누르는 반복 매크로가 아닙니다. 위에서부터 조건을 확인하고 맞는 기술 하나를 사용한 뒤 다시 판단합니다. 시전 불가능한 기술을 기다리며 멈추지 않습니다.',
+    '일반 형상 연사는 다른 중요한 기술 사이에 배치하지만 세트 추가 연사는 다음 촉수 격돌이나 형상 진입을 막지 않게 처리합니다. 가이드 간 연사 우선순위 차이를 조건 없이 한 줄로 합치지 않습니다.',
+    '공식 주문 수치는 캐릭터의 가속·특화·특성·세트 적용 전후를 구분합니다. 피해 계수를 개인 DPS 증가율로 바꾸거나 두 선택 특성의 보상을 동시에 적용하지 않습니다.',
+    '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
   ],
-  "tips": [
-    "형상 버튼이 눌리지 않으면 남아 있는 공허 연사 사용권부터 확인하세요. 특히 4세트 오프닝에서 촉수 격돌 뒤 추가 연사를 건너뛰면 첫 형상 진입이 꼬일 수 있습니다.",
-    "집정관은 후광 뒤 강화 채찍이 생겼는지 확인하세요. 후광 피해만 비교하면 강화 채찍 미소비와 마력 순환으로 만들지 못한 원혼 손실을 놓칩니다.",
-    "공허술사에서 암흑 마력을 찍었다면 바닥을 피하면서 공허의 격류를 이어갈 수 있습니다. 이동 때문에 무조건 끊는 습관부터 고치되, 차단·군중 제어로 끊기는 상황은 따로 보세요.",
-    "광기 100을 고정 경고 기준으로 쓰지 마세요. 공허에 물듦의 상한 150과 실제 소비 비용을 확인하고, 다음 생성기로 넘치는지를 기준으로 소비하세요.",
-    "정신 포식자의 무료 광기는 자원을 줄이지 않습니다. 무료로 한 번 썼으니 광기 여유가 생겼다고 생각하고 생성기를 연달아 누르면 오히려 자원이 넘칠 수 있습니다.",
-    "쐐기에서는 촉수 격돌 한 번이 손길을 최대 6대상에게 적용한다는 점을 확인하세요. 모두 적용된 적에게 두 충전을 연달아 쓰기 전에 다음 합류 무리를 볼 여유가 있는지 판단하세요.",
-    "깨어난 악몽을 선택했다면 촉수 격돌만으로 고통까지 모두 적용됐다고 생각하면 안 됩니다. 불행을 쓰던 습관이 남으면 단일 오프닝부터 고통이 비게 됩니다.",
-    "태고의 광기는 형상 안의 광기 직접 시전으로 연장합니다. 광기 어린 촉수의 자동 적용이나 무료 발동 획득만 세어 연장 횟수를 추정하지 말고 실제 시전을 확인하세요.",
-    "공허술사의 공허의 손길은 균열 종료 뒤 공허의 심장 효과를 남깁니다. 버프가 보인다고 공허의 폭발 버튼이나 균열 자체도 계속 남아 있다고 판단하지 마세요.",
-    "짧게 죽을 쐐기 몹에게 큰 쿨기를 쓰기 전에 주 대상을 다시 확인하세요. 남은 몹이 더 오래 살아도 이미 죽은 대상에게 낭비한 준비 시간을 되돌릴 수는 없습니다.",
-    "분산은 공격을 중단하는 생존기입니다. 위험이 끝난 뒤에도 습관적으로 끝까지 유지해 딜이 끊기는지 보되, 피해가 남아 있는데 해제해 죽는 것부터 피하세요.",
-    "로그는 같은 영웅 특성·세트·전투 길이·대상 수끼리 비교하세요. 연사 피해 이벤트가 많다는 이유만으로 직접 연사 횟수가 많다고 결론 내리면 집정관 자동 연사를 잘못 셉니다."
+  tips: [
+    '형상 버튼이 눌리지 않으면 남아 있는 공허 연사 사용권부터 확인하세요. 특히 4세트 오프닝에서 촉수 격돌 뒤 추가 연사를 건너뛰면 첫 형상 진입이 꼬일 수 있습니다.',
+    '집정관은 후광 뒤 강화 채찍이 생겼는지 확인하세요. 후광 피해만 비교하면 강화 채찍 미소비와 마력 순환으로 만들지 못한 원혼 손실을 놓칩니다.',
+    '공허술사에서 암흑 마력을 찍었다면 바닥을 피하면서 공허의 격류를 이어갈 수 있습니다. 이동 때문에 무조건 끊는 습관부터 고치되, 차단·군중 제어로 끊기는 상황은 따로 보세요.',
+    '광기 100을 고정 경고 기준으로 쓰지 마세요. 공허에 물듦의 상한 150과 실제 소비 비용을 확인하고, 다음 생성기로 넘치는지를 기준으로 소비하세요.',
+    '정신 포식자의 무료 광기는 자원을 줄이지 않습니다. 무료로 한 번 썼으니 광기 여유가 생겼다고 생각하고 생성기를 연달아 누르면 오히려 자원이 넘칠 수 있습니다.',
+    '쐐기에서는 촉수 격돌 한 번이 손길을 최대 6대상에게 적용한다는 점을 확인하세요. 모두 적용된 적에게 두 충전을 연달아 쓰기 전에 다음 합류 무리를 볼 여유가 있는지 판단하세요.',
+    '깨어난 악몽을 선택했다면 촉수 격돌만으로 고통까지 모두 적용됐다고 생각하면 안 됩니다. 불행을 쓰던 습관이 남으면 단일 오프닝부터 고통이 비게 됩니다.',
+    '태고의 광기는 형상 안의 광기 직접 시전으로 연장합니다. 광기 어린 촉수의 자동 적용이나 무료 발동 획득만 세어 연장 횟수를 추정하지 말고 실제 시전을 확인하세요.',
+    '공허술사의 공허의 손길은 균열 종료 뒤 공허의 심장 효과를 남깁니다. 버프가 보인다고 공허의 폭발 버튼이나 균열 자체도 계속 남아 있다고 판단하지 마세요.',
+    '짧게 죽을 쐐기 몹에게 큰 쿨기를 쓰기 전에 주 대상을 다시 확인하세요. 남은 몹이 더 오래 살아도 이미 죽은 대상에게 낭비한 준비 시간을 되돌릴 수는 없습니다.',
+    '분산은 공격을 중단하는 생존기입니다. 위험이 끝난 뒤에도 습관적으로 끝까지 유지해 딜이 끊기는지 보되, 피해가 남아 있는데 해제해 죽는 것부터 피하세요.',
+    '로그는 같은 영웅 특성·세트·전투 길이·대상 수끼리 비교하세요. 연사 피해 이벤트가 많다는 이유만으로 직접 연사 횟수가 많다고 결론 내리면 집정관 자동 연사를 잘못 셉니다.',
   ],
-  "heroBranches": [
+  heroBranches: [
     {
-      "label": "집정관",
-      "skillIds": [
-        "120644",
-        "453783",
-        "453828",
-        "453845",
-        "1272320",
-        "391403",
-        "335467"
+      label: '집정관',
+      skillIds: [
+        '120644',
+        '453783',
+        '453828',
+        '453845',
+        '1272320',
+        '391403',
+        '335467',
       ],
-      "summary": "후광 생성에서 얻는 정신의 채찍: 광기와 마력 순환의 원혼을 꾸준히 활용하는 분기입니다. 레이드의 오래 공격할 수 있는 구간에 익히기 좋고, 쐐기도 적이 오래 살아 있으면 지속 피해와 추가 후광을 회수할 수 있습니다. 후광 한 번의 피해보다 강화 채찍 소비와 형상 안 광기 사용이 함께 이어지는지가 중요합니다.",
-      "bullets": [
-        "오프닝 차이: 지속 피해를 준비한 뒤 후광을 사용합니다. 시즌 2 4세트면 형상 전 추가 연사를 처리하고 형상·마력 주입으로 넘어갑니다. 격류를 이 순서에 넣지 않습니다.",
-        "콘텐츠 선택: 레이드는 집정관을 시작점으로 삼을 수 있지만 짧은 딜 가능 구간에서는 마력 압축과 형상 선택 노드를 다시 봅니다. 현재 사용률을 확보한 추천은 아닙니다.",
-        "우선순위와 실수: 현신하는 권능의 강화 채찍을 놓치면 마력 순환의 원혼도 놓칩니다. 광기 초과와 생성기 충전 낭비를 막으면서 후광으로 얻는 강화 효과를 소비합니다.",
-        "로그 체크: 후광 생성, 강화 채찍 획득과 실제 시전, 광기 직접 시전, 자동 연사를 구분합니다. 후광이 돌아와 적중한 사건을 새로운 후광 생성으로 중복 계산하지 않습니다."
+      summary: '후광 생성에서 얻는 정신의 채찍: 광기와 마력 순환의 원혼을 꾸준히 활용하는 분기입니다. 레이드의 오래 공격할 수 있는 구간에 익히기 좋고, 쐐기도 적이 오래 살아 있으면 지속 피해와 추가 후광을 회수할 수 있습니다. 후광 한 번의 피해보다 강화 채찍 소비와 형상 안 광기 사용이 함께 이어지는지가 중요합니다.',
+      bullets: [
+        '오프닝 차이: 지속 피해를 준비한 뒤 후광을 사용합니다. 시즌 2 4세트면 형상 전 추가 연사를 처리하고 형상·마력 주입으로 넘어갑니다. 격류를 이 순서에 넣지 않습니다.',
+        '콘텐츠 선택: 레이드는 집정관을 시작점으로 삼을 수 있지만 짧은 딜 가능 구간에서는 마력 압축과 형상 선택 노드를 다시 봅니다. 현재 사용률을 확보한 추천은 아닙니다.',
+        '우선순위와 실수: 현신하는 권능의 강화 채찍을 놓치면 마력 순환의 원혼도 놓칩니다. 광기 초과와 생성기 충전 낭비를 막으면서 후광으로 얻는 강화 효과를 소비합니다.',
+        '로그 체크: 후광 생성, 강화 채찍 획득과 실제 시전, 광기 직접 시전, 자동 연사를 구분합니다. 후광이 돌아와 적중한 사건을 새로운 후광 생성으로 중복 계산하지 않습니다.',
       ],
-      "opener": {
-        "title": "집정관 단일 오프닝 전투 흐름 · 시즌 2 4세트",
-        "summary": "깨어난 악몽을 선택한 단일 예시입니다. 불행이면 고통 단계를 생략합니다. 4세트가 없으면 형상 전 연사를 생략하며, 차트 끝에서는 단일 우선순위로 전환합니다. 전투 전에 어둠의 형상과 인내를 확인하세요.",
-        "steps": [
+      opener: {
+        title: '집정관 단일 오프닝 전투 흐름 · 시즌 2 4세트',
+        summary: '깨어난 악몽을 선택한 단일 예시입니다. 불행이면 고통 단계를 생략합니다. 4세트가 없으면 형상 전 연사를 생략하며, 차트 끝에서는 단일 우선순위로 전환합니다. 전투 전에 어둠의 형상과 인내를 확인하세요.',
+        steps: [
           {
-            "skillId": "8092",
-            "label": "정신 분열",
-            "phase": "전투 직전",
-            "trigger": "풀 시각에 적중",
-            "note": "풀 타이머에 맞춰 미리 시전을 시작합니다. 세트 사용권을 전투 전에 만든다는 뜻이 아닙니다. 예정에 없는 선공을 하지 마세요."
+            skillId: '8092',
+            label: '정신 분열',
+            phase: '전투 직전',
+            trigger: '풀 시각에 적중',
+            note: '풀 타이머에 맞춰 미리 시전을 시작합니다. 세트 사용권을 전투 전에 만든다는 뜻이 아닙니다. 예정에 없는 선공을 하지 마세요.',
           },
           {
-            "skillId": "1227280",
-            "label": "촉수 격돌",
-            "phase": "전투 시작",
-            "trigger": "교전 후 사용",
-            "note": "손길 적용과 4세트 추가 연사를 준비합니다. 사용권이 전투 시작에 초기화될 수 있으므로 교전 전에 확보해 둔다고 가정하지 않습니다."
+            skillId: '1227280',
+            label: '촉수 격돌',
+            phase: '전투 시작',
+            trigger: '교전 후 사용',
+            note: '손길 적용과 4세트 추가 연사를 준비합니다. 사용권이 전투 시작에 초기화될 수 있으므로 교전 전에 확보해 둔다고 가정하지 않습니다.',
           },
           {
-            "skillId": "589",
-            "label": "고통",
-            "phase": "지속 피해",
-            "trigger": "깨어난 악몽 선택",
-            "note": "불행 빌드라면 손길로 함께 적용됐는지 확인하고 이 직접 시전을 생략합니다. 두 선택 노드를 동시에 적용하지 않습니다."
+            skillId: '589',
+            label: '고통',
+            phase: '지속 피해',
+            trigger: '깨어난 악몽 선택',
+            note: '불행 빌드라면 손길로 함께 적용됐는지 확인하고 이 직접 시전을 생략합니다. 두 선택 노드를 동시에 적용하지 않습니다.',
           },
           {
-            "skillId": "120644",
-            "label": "후광",
-            "phase": "집정관 시작",
-            "trigger": "교전·범위 확인",
-            "note": "후광과 이어지는 추가 생성으로 강화 채찍을 얻기 시작합니다. 주변 비전투 몹을 끌어오지 않을 위치인지 확인합니다."
+            skillId: '120644',
+            label: '후광',
+            phase: '집정관 시작',
+            trigger: '교전·범위 확인',
+            note: '후광과 이어지는 추가 생성으로 강화 채찍을 얻기 시작합니다. 주변 비전투 몹을 끌어오지 않을 위치인지 확인합니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "세트 연사",
-            "phase": "형상 전",
-            "trigger": "4세트 사용권 있음",
-            "note": "촉수 격돌로 받은 연사를 먼저 처리해 형상 버튼을 비웁니다. 세트가 없으면 아직 이 단계의 연사가 없으므로 생략합니다."
+            skillId: '1242173',
+            label: '세트 연사',
+            phase: '형상 전',
+            trigger: '4세트 사용권 있음',
+            note: '촉수 격돌로 받은 연사를 먼저 처리해 형상 버튼을 비웁니다. 세트가 없으면 아직 이 단계의 연사가 없으므로 생략합니다.',
           },
           {
-            "skillId": "228260",
-            "label": "공허의 형상",
-            "phase": "극딜 진입",
-            "trigger": "대상 공격 가능",
-            "note": "형상 진입 자동 연사가 발생하고 기본 직접 사용권이 열립니다. 연마 또는 태고의 광기 중 실제 선택한 효과를 따릅니다."
+            skillId: '228260',
+            label: '공허의 형상',
+            phase: '극딜 진입',
+            trigger: '대상 공격 가능',
+            note: '형상 진입 자동 연사가 발생하고 기본 직접 사용권이 열립니다. 연마 또는 태고의 광기 중 실제 선택한 효과를 따릅니다.',
           },
           {
-            "skillId": "10060",
-            "label": "마력 주입",
-            "phase": "극딜 정렬",
-            "trigger": "형상과 맞추기",
-            "note": "물약과 사용 장신구도 전투 계획에 맞춥니다. 파티의 마력 주입 대상은 전투 전에 정하고 본인 가속 적용 조건을 확인합니다."
+            skillId: '10060',
+            label: '마력 주입',
+            phase: '극딜 정렬',
+            trigger: '형상과 맞추기',
+            note: '물약과 사용 장신구도 전투 계획에 맞춥니다. 파티의 마력 주입 대상은 전투 전에 정하고 본인 가속 적용 조건을 확인합니다.',
           },
           {
-            "skillId": "335467",
-            "label": "광기",
-            "phase": "유지 시작",
-            "trigger": "사용 가능 자원",
-            "note": "광기를 적용한 뒤 단일 우선순위로 넘어갑니다. 자원이 부족하면 사용 가능한 생성기를 쓰며 기다리는 공백을 만들지 않습니다."
-          }
-        ]
+            skillId: '335467',
+            label: '광기',
+            phase: '유지 시작',
+            trigger: '사용 가능 자원',
+            note: '광기를 적용한 뒤 단일 우선순위로 넘어갑니다. 자원이 부족하면 사용 가능한 생성기를 쓰며 기다리는 공백을 만들지 않습니다.',
+          },
+        ],
       },
-      "singleTarget": {
-        "title": "집정관 단일 · 매 시전 후 다시 판단",
-        "summary": "지속 피해, 광기 초과, 충전 낭비가 먼저입니다. 형상 일반 연사는 사용 가능하다고 무조건 최우선이 아니지만, 형상 종료 전에 쓸 시간을 남겨야 합니다. 세트 추가 사용권은 다음 격돌·형상보다 먼저 처리할 필요가 있습니다.",
-        "priority": [
+      singleTarget: {
+        title: '집정관 단일 · 매 시전 후 다시 판단',
+        summary: '지속 피해, 광기 초과, 충전 낭비가 먼저입니다. 형상 일반 연사는 사용 가능하다고 무조건 최우선이 아니지만, 형상 종료 전에 쓸 시간을 남겨야 합니다. 세트 추가 사용권은 다음 격돌·형상보다 먼저 처리할 필요가 있습니다.',
+        priority: [
           {
-            "skillId": "34914",
-            "label": "손길 유지",
-            "note": "대상이 충분히 오래 살고 손길이 끝나기 전에 갱신합니다. 불행이면 고통도 함께 유지되며, 촉수 격돌로 적용할 수 있으면 중복 수동 시전을 줄입니다."
+            skillId: '34914',
+            label: '손길 유지',
+            note: '대상이 충분히 오래 살고 손길이 끝나기 전에 갱신합니다. 불행이면 고통도 함께 유지되며, 촉수 격돌로 적용할 수 있으면 중복 수동 시전을 줄입니다.',
           },
           {
-            "skillId": "589",
-            "label": "고통 확인",
-            "note": "깨어난 악몽 빌드에서는 직접 유지합니다. 불행으로 이미 붙어 있다면 이 항목 때문에 따로 누르지 않습니다."
+            skillId: '589',
+            label: '고통 확인',
+            note: '깨어난 악몽 빌드에서는 직접 유지합니다. 불행으로 이미 붙어 있다면 이 항목 때문에 따로 누르지 않습니다.',
           },
           {
-            "skillId": "120644",
-            "label": "후광",
-            "note": "대상을 계속 공격할 수 있고 불필요한 선공 위험이 없을 때 사용합니다. 추가 후광과 강화 채찍을 회수할 시간을 함께 봅니다."
+            skillId: '120644',
+            label: '후광',
+            note: '대상을 계속 공격할 수 있고 불필요한 선공 위험이 없을 때 사용합니다. 추가 후광과 강화 채찍을 회수할 시간을 함께 봅니다.',
           },
           {
-            "skillId": "228260",
-            "label": "형상·주입",
-            "note": "배정한 극딜 구간에 사용합니다. 이미 형상이거나 연사 사용권이 버튼을 차지했다면 형상을 다시 누르려 기다리지 않습니다."
+            skillId: '228260',
+            label: '형상·주입',
+            note: '배정한 극딜 구간에 사용합니다. 이미 형상이거나 연사 사용권이 버튼을 차지했다면 형상을 다시 누르려 기다리지 않습니다.',
           },
           {
-            "skillId": "335467",
-            "label": "만료·초과 전에 광기",
-            "note": "주 대상의 광기가 끝나거나 다음 생성으로 상한을 넘기기 전에 소비합니다. 태고의 광기를 선택했다면 형상 안 연장 조건도 함께 확인합니다."
+            skillId: '335467',
+            label: '만료·초과 전에 광기',
+            note: '주 대상의 광기가 끝나거나 다음 생성으로 상한을 넘기기 전에 소비합니다. 태고의 광기를 선택했다면 형상 안 연장 조건도 함께 확인합니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "추가 연사 정리",
-            "note": "세트로 얻었거나 형상 종료가 임박한 사용권은 미루지 않습니다. 여유 있는 일반 형상 연사는 아래 핵심 생성기와 강화 채찍 사이에 배치할 수 있습니다."
+            skillId: '1242173',
+            label: '추가 연사 정리',
+            note: '세트로 얻었거나 형상 종료가 임박한 사용권은 미루지 않습니다. 여유 있는 일반 형상 연사는 아래 핵심 생성기와 강화 채찍 사이에 배치할 수 있습니다.',
           },
           {
-            "skillId": "1227280",
-            "label": "격돌 충전 낭비 방지",
-            "note": "충전이 가득 차거나 손길 적용이 필요하면 사용합니다. 새 적 합류가 임박했다면 충전 하나를 남길 필요와 지금의 손실을 비교합니다."
+            skillId: '1227280',
+            label: '격돌 충전 낭비 방지',
+            note: '충전이 가득 차거나 손길 적용이 필요하면 사용합니다. 새 적 합류가 임박했다면 충전 하나를 남길 필요와 지금의 손실을 비교합니다.',
           },
           {
-            "skillId": "8092",
-            "label": "정신 분열",
-            "note": "충전과 통찰을 오래 묵히지 않습니다. 현재 특성에 없는 추가 충전을 가정하지 말고 광기 여유를 확인한 뒤 사용합니다."
+            skillId: '8092',
+            label: '정신 분열',
+            note: '충전과 통찰을 오래 묵히지 않습니다. 현재 특성에 없는 추가 충전을 가정하지 말고 광기 여유를 확인한 뒤 사용합니다.',
           },
           {
-            "skillId": "391403",
-            "label": "강화 채찍",
-            "note": "현신하는 권능으로 얻은 정신의 채찍: 광기를 소비합니다. 광기가 붙은 주 대상에 사용하고 다음 후광 생성으로 사용 기회를 잃지 않는지 봅니다."
+            skillId: '391403',
+            label: '강화 채찍',
+            note: '현신하는 권능으로 얻은 정신의 채찍: 광기를 소비합니다. 광기가 붙은 주 대상에 사용하고 다음 후광 생성으로 사용 기회를 잃지 않는지 봅니다.',
           },
           {
-            "skillId": "32379",
-            "label": "조건 맞는 죽음",
-            "note": "처형 체력 조건과 죽음예언자 선택 여부를 확인합니다. 남은 사용권과 핵심 생성기를 무조건 미루는 만능 최우선 기술은 아닙니다."
+            skillId: '32379',
+            label: '조건 맞는 죽음',
+            note: '처형 체력 조건과 죽음예언자 선택 여부를 확인합니다. 남은 사용권과 핵심 생성기를 무조건 미루는 만능 최우선 기술은 아닙니다.',
           },
           {
-            "skillId": "15407",
-            "label": "빈 시간 채찍",
-            "note": "상위 조건이 없는 동안 사용합니다. 일반 채찍을 완주하느라 새로 준비된 중요한 기술을 장시간 미루지 않습니다."
-          }
-        ]
+            skillId: '15407',
+            label: '빈 시간 채찍',
+            note: '상위 조건이 없는 동안 사용합니다. 일반 채찍을 완주하느라 새로 준비된 중요한 기술을 장시간 미루지 않습니다.',
+          },
+        ],
       },
-      "aoe": {
-        "title": "집정관 광역 · 손길을 펼친 뒤 주 대상에 집중",
-        "summary": "불행 빌드 기준으로 몹이 모일 때 손길과 소실을 준비하고 촉수 격돌을 사용합니다. 이후 후광 → 세트 연사(4세트) → 형상·주입 → 광기로 시작합니다. 유지 단계는 아래 조건을 반복 판단합니다.",
-        "priority": [
+      aoe: {
+        title: '집정관 광역 · 손길을 펼친 뒤 주 대상에 집중',
+        summary: '불행 빌드 기준으로 몹이 모일 때 손길과 소실을 준비하고 촉수 격돌을 사용합니다. 이후 후광 → 세트 연사(4세트) → 형상·주입 → 광기로 시작합니다. 유지 단계는 아래 조건을 반복 판단합니다.',
+        priority: [
           {
-            "skillId": "1227280",
-            "label": "모인 적에게 격돌",
-            "note": "한 번에 최대 6대상에게 손길을 적용합니다. 두 번째 무리나 미적용 대상이 남으면 다음 충전을 판단하며, 같은 적용을 의미 없이 반복하지 않습니다."
+            skillId: '1227280',
+            label: '모인 적에게 격돌',
+            note: '한 번에 최대 6대상에게 손길을 적용합니다. 두 번째 무리나 미적용 대상이 남으면 다음 충전을 판단하며, 같은 적용을 의미 없이 반복하지 않습니다.',
           },
           {
-            "skillId": "34914",
-            "label": "살아남을 적에 손길",
-            "note": "격돌로 덮지 못한 장수명 적에게 수동 적용합니다. 짧게 죽을 적마다 긴 준비를 하느라 주 대상 피해와 후광을 놓치지 마세요."
+            skillId: '34914',
+            label: '살아남을 적에 손길',
+            note: '격돌로 덮지 못한 장수명 적에게 수동 적용합니다. 짧게 죽을 적마다 긴 준비를 하느라 주 대상 피해와 후광을 놓치지 마세요.',
           },
           {
-            "skillId": "120644",
-            "label": "교전 뒤 후광",
-            "note": "몹이 모이고 교전이 시작된 뒤 사용합니다. 추가 후광이 다른 무리까지 닿을 수 있으므로 당장의 한 번뿐 아니라 뒤의 위치도 고려합니다."
+            skillId: '120644',
+            label: '교전 뒤 후광',
+            note: '몹이 모이고 교전이 시작된 뒤 사용합니다. 추가 후광이 다른 무리까지 닿을 수 있으므로 당장의 한 번뿐 아니라 뒤의 위치도 고려합니다.',
           },
           {
-            "skillId": "228260",
-            "label": "살아 있는 무리에 형상",
-            "note": "모든 적이 곧 죽을 때 시작하지 않습니다. 다음 풀까지 무조건 아끼지도 말고 전투 시간과 다음 사용 기회를 함께 봅니다."
+            skillId: '228260',
+            label: '살아 있는 무리에 형상',
+            note: '모든 적이 곧 죽을 때 시작하지 않습니다. 다음 풀까지 무조건 아끼지도 말고 전투 시간과 다음 사용 기회를 함께 봅니다.',
           },
           {
-            "skillId": "335467",
-            "label": "주 대상 광기",
-            "note": "오래 살 우선 처치 대상에 유지합니다. 여러 적에게 광기를 하나씩 돌리는 것을 기본 광역 규칙으로 삼지 않습니다."
+            skillId: '335467',
+            label: '주 대상 광기',
+            note: '오래 살 우선 처치 대상에 유지합니다. 여러 적에게 광기를 하나씩 돌리는 것을 기본 광역 규칙으로 삼지 않습니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "추가·만료 연사",
-            "note": "세트 사용권과 형상 종료 시각을 확인합니다. 적이 충분히 모여 있는 동안 실제 광역 적중을 회수하고 다음 격돌의 사용권과 겹치지 않게 합니다."
+            skillId: '1242173',
+            label: '추가·만료 연사',
+            note: '세트 사용권과 형상 종료 시각을 확인합니다. 적이 충분히 모여 있는 동안 실제 광역 적중을 회수하고 다음 격돌의 사용권과 겹치지 않게 합니다.',
           },
           {
-            "skillId": "8092",
-            "label": "광기 대상에 분열",
-            "note": "손길 대상에게 영혼의 연결로 전달할 직접 피해를 넣습니다. 주 대상의 광기와 실제 선택한 특화·퍼지는 분노 조건을 확인합니다."
+            skillId: '8092',
+            label: '광기 대상에 분열',
+            note: '손길 대상에게 영혼의 연결로 전달할 직접 피해를 넣습니다. 주 대상의 광기와 실제 선택한 특화·퍼지는 분노 조건을 확인합니다.',
           },
           {
-            "skillId": "391403",
-            "label": "강화 채찍 소비",
-            "note": "후광에서 얻은 강화 채찍과 마력 순환을 활용합니다. 원혼이 향할 손길 대상이 확보돼 있는지와 적이 도착 때까지 살아 있는지를 함께 봅니다."
+            skillId: '391403',
+            label: '강화 채찍 소비',
+            note: '후광에서 얻은 강화 채찍과 마력 순환을 활용합니다. 원혼이 향할 손길 대상이 확보돼 있는지와 적이 도착 때까지 살아 있는지를 함께 봅니다.',
           },
           {
-            "skillId": "15407",
-            "label": "빈 시간 채찍",
-            "note": "충전·자원·추가 연사를 먼저 처리한 뒤 사용합니다. 새 무리가 합류하면 다시 지속 피해 적용 단계부터 판단합니다."
-          }
-        ]
-      }
+            skillId: '15407',
+            label: '빈 시간 채찍',
+            note: '충전·자원·추가 연사를 먼저 처리한 뒤 사용합니다. 새 무리가 합류하면 다시 지속 피해 적용 단계부터 판단합니다.',
+          },
+        ],
+      },
     },
     {
-      "label": "공허술사",
-      "skillIds": [
-        "447444",
-        "450983",
-        "448403",
-        "449912",
-        "451018",
-        "263165",
-        "335467"
+      label: '공허술사',
+      skillIds: [
+        '447444',
+        '450983',
+        '448403',
+        '449912',
+        '451018',
+        '263165',
+        '335467',
       ],
-      "summary": "공허의 격류로 여는 짧은 혼돈의 균열 안에 공허의 폭발과 광기 소비를 넣는 분기입니다. 쐐기의 묶음 전투에서 시작점을 잡기 쉽지만 대상 수명과 탱커 이동에 따라 균열 회수량이 달라집니다. 암흑 마력이 있다면 이동 중 격류가 가능하므로 무조건 제자리에서만 쓸 수 있는 기술로 오해하지 마세요.",
-      "bullets": [
-        "오프닝 차이: 지속 피해와 첫 광기를 준비한 뒤 공허의 격류로 혼돈의 균열을 엽니다. 형상은 공허술사도 사용하지만 후광과 집정관 강화 채찍은 사용하지 않습니다.",
-        "콘텐츠 선택: 쐐기의 모인 적과 우선 처치 대상을 함께 공격하기 좋습니다. 공개 가이드 추천이며 현재 상위 로그 채택률이나 모든 풀에서의 우위를 확보했다는 뜻은 아닙니다.",
-        "우선순위와 실수: 균열 중 공허의 폭발은 정신 분열을 대체합니다. 두 버튼을 독립된 충전 기술로 연달아 쓰는 차트는 잘못이며, 균열 종료와 광기 초과를 함께 확인합니다.",
-        "로그 체크: 격류 시전과 실제 정신 집중 시간, 균열 중 공허의 폭발, 광기 직접 시전과 종료 폭발을 연결해서 봅니다. 공허의 손길로 남은 강화 효과와 실제 균열 지속시간을 구분합니다."
+      summary: '공허의 격류로 여는 짧은 혼돈의 균열 안에 공허의 폭발과 광기 소비를 넣는 분기입니다. 쐐기의 묶음 전투에서 시작점을 잡기 쉽지만 대상 수명과 탱커 이동에 따라 균열 회수량이 달라집니다. 암흑 마력이 있다면 이동 중 격류가 가능하므로 무조건 제자리에서만 쓸 수 있는 기술로 오해하지 마세요.',
+      bullets: [
+        '오프닝 차이: 지속 피해와 첫 광기를 준비한 뒤 공허의 격류로 혼돈의 균열을 엽니다. 형상은 공허술사도 사용하지만 후광과 집정관 강화 채찍은 사용하지 않습니다.',
+        '콘텐츠 선택: 쐐기의 모인 적과 우선 처치 대상을 함께 공격하기 좋습니다. 공개 가이드 추천이며 현재 상위 로그 채택률이나 모든 풀에서의 우위를 확보했다는 뜻은 아닙니다.',
+        '우선순위와 실수: 균열 중 공허의 폭발은 정신 분열을 대체합니다. 두 버튼을 독립된 충전 기술로 연달아 쓰는 차트는 잘못이며, 균열 종료와 광기 초과를 함께 확인합니다.',
+        '로그 체크: 격류 시전과 실제 정신 집중 시간, 균열 중 공허의 폭발, 광기 직접 시전과 종료 폭발을 연결해서 봅니다. 공허의 손길로 남은 강화 효과와 실제 균열 지속시간을 구분합니다.',
       ],
-      "opener": {
-        "title": "공허술사 단일 오프닝 전투 흐름 · 시즌 2 4세트",
-        "summary": "깨어난 악몽 단일 예시입니다. 불행이면 고통 직접 시전을 생략하고 4세트가 없으면 형상 전 연사를 생략합니다. 집정관의 후광 대신 첫 광기 뒤 격류로 균열을 여는 것이 핵심입니다.",
-        "steps": [
+      opener: {
+        title: '공허술사 단일 오프닝 전투 흐름 · 시즌 2 4세트',
+        summary: '깨어난 악몽 단일 예시입니다. 불행이면 고통 직접 시전을 생략하고 4세트가 없으면 형상 전 연사를 생략합니다. 집정관의 후광 대신 첫 광기 뒤 격류로 균열을 여는 것이 핵심입니다.',
+        steps: [
           {
-            "skillId": "8092",
-            "label": "정신 분열",
-            "phase": "전투 직전",
-            "trigger": "풀 시각에 적중",
-            "note": "예정된 전투 시작에 맞춥니다. 이 정신 분열이 균열을 연다는 수양 설명을 가져오지 않습니다. 암흑 균열의 시작은 격류입니다."
+            skillId: '8092',
+            label: '정신 분열',
+            phase: '전투 직전',
+            trigger: '풀 시각에 적중',
+            note: '예정된 전투 시작에 맞춥니다. 이 정신 분열이 균열을 연다는 수양 설명을 가져오지 않습니다. 암흑 균열의 시작은 격류입니다.',
           },
           {
-            "skillId": "1227280",
-            "label": "촉수 격돌",
-            "phase": "전투 시작",
-            "trigger": "교전 후 사용",
-            "note": "손길과 세트 연사를 준비합니다. 전투 전에 세트 연사를 만들어 보관한다고 가정하지 않습니다."
+            skillId: '1227280',
+            label: '촉수 격돌',
+            phase: '전투 시작',
+            trigger: '교전 후 사용',
+            note: '손길과 세트 연사를 준비합니다. 전투 전에 세트 연사를 만들어 보관한다고 가정하지 않습니다.',
           },
           {
-            "skillId": "589",
-            "label": "고통",
-            "phase": "지속 피해",
-            "trigger": "깨어난 악몽 선택",
-            "note": "고통이 아직 없다면 적용합니다. 불행을 선택해 이미 적용됐다면 다음 단계로 넘어갑니다."
+            skillId: '589',
+            label: '고통',
+            phase: '지속 피해',
+            trigger: '깨어난 악몽 선택',
+            note: '고통이 아직 없다면 적용합니다. 불행을 선택해 이미 적용됐다면 다음 단계로 넘어갑니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "세트 연사",
-            "phase": "형상 전",
-            "trigger": "4세트 사용권 있음",
-            "note": "형상 진입을 막는 추가 사용권을 먼저 처리합니다. 일반 형상 연사 사용권은 아직 진입 전이므로 이 단계의 전제가 아닙니다."
+            skillId: '1242173',
+            label: '세트 연사',
+            phase: '형상 전',
+            trigger: '4세트 사용권 있음',
+            note: '형상 진입을 막는 추가 사용권을 먼저 처리합니다. 일반 형상 연사 사용권은 아직 진입 전이므로 이 단계의 전제가 아닙니다.',
           },
           {
-            "skillId": "228260",
-            "label": "공허의 형상",
-            "phase": "극딜 진입",
-            "trigger": "연사 처리 후",
-            "note": "공허술사도 형상을 사용합니다. 형상에 들어간다고 혼돈의 균열이 자동 생성되는 것은 아닙니다."
+            skillId: '228260',
+            label: '공허의 형상',
+            phase: '극딜 진입',
+            trigger: '연사 처리 후',
+            note: '공허술사도 형상을 사용합니다. 형상에 들어간다고 혼돈의 균열이 자동 생성되는 것은 아닙니다.',
           },
           {
-            "skillId": "10060",
-            "label": "마력 주입",
-            "phase": "극딜 정렬",
-            "trigger": "형상 구간",
-            "note": "배정한 장신구·물약과 맞춥니다. 보스가 곧 사라질 때 고정 오프닝만 따라 긴 강화 시간을 낭비하지 않습니다."
+            skillId: '10060',
+            label: '마력 주입',
+            phase: '극딜 정렬',
+            trigger: '형상 구간',
+            note: '배정한 장신구·물약과 맞춥니다. 보스가 곧 사라질 때 고정 오프닝만 따라 긴 강화 시간을 낭비하지 않습니다.',
           },
           {
-            "skillId": "335467",
-            "label": "광기",
-            "phase": "균열 준비",
-            "trigger": "사용 가능 자원",
-            "note": "주 대상에 광기를 적용하고 격류로 얻을 자원 여유를 만듭니다. 광기가 부족하면 생성기로 확보하며 무작정 기다리지 않습니다."
+            skillId: '335467',
+            label: '광기',
+            phase: '균열 준비',
+            trigger: '사용 가능 자원',
+            note: '주 대상에 광기를 적용하고 격류로 얻을 자원 여유를 만듭니다. 광기가 부족하면 생성기로 확보하며 무작정 기다리지 않습니다.',
           },
           {
-            "skillId": "263165",
-            "label": "공허의 격류",
-            "phase": "균열 시작",
-            "trigger": "대상 생존·수급 여유",
-            "note": "격류로 혼돈의 균열을 엽니다. 암흑 마력 선택 시 움직이며 이어갈 수 있습니다. 이후 단일 우선순위로 전환합니다."
-          }
-        ]
+            skillId: '263165',
+            label: '공허의 격류',
+            phase: '균열 시작',
+            trigger: '대상 생존·수급 여유',
+            note: '격류로 혼돈의 균열을 엽니다. 암흑 마력 선택 시 움직이며 이어갈 수 있습니다. 이후 단일 우선순위로 전환합니다.',
+          },
+        ],
       },
-      "singleTarget": {
-        "title": "공허술사 단일 · 균열 안팎 구분",
-        "summary": "공허의 폭발은 균열 중 정신 분열을 바꾸는 기술입니다. 광기 초과·지속 피해 만료와 균열 종료를 함께 보세요. 일반 연사 순위와 4세트 추가 연사 처리 조건은 따로 적용합니다.",
-        "priority": [
+      singleTarget: {
+        title: '공허술사 단일 · 균열 안팎 구분',
+        summary: '공허의 폭발은 균열 중 정신 분열을 바꾸는 기술입니다. 광기 초과·지속 피해 만료와 균열 종료를 함께 보세요. 일반 연사 순위와 4세트 추가 연사 처리 조건은 따로 적용합니다.',
+        priority: [
           {
-            "skillId": "34914",
-            "label": "손길 유지",
-            "note": "균열을 연 뒤 손길부터 새로 준비하지 않도록 미리 갱신합니다. 불행이면 고통도 함께 적용됩니다."
+            skillId: '34914',
+            label: '손길 유지',
+            note: '균열을 연 뒤 손길부터 새로 준비하지 않도록 미리 갱신합니다. 불행이면 고통도 함께 적용됩니다.',
           },
           {
-            "skillId": "589",
-            "label": "고통 확인",
-            "note": "깨어난 악몽 선택 시 수동 유지합니다. 이미 지속시간이 충분하면 불필요하게 다시 누르지 않습니다."
+            skillId: '589',
+            label: '고통 확인',
+            note: '깨어난 악몽 선택 시 수동 유지합니다. 이미 지속시간이 충분하면 불필요하게 다시 누르지 않습니다.',
           },
           {
-            "skillId": "228260",
-            "label": "형상·주입",
-            "note": "계획한 극딜에 사용하되 남은 연사 사용권을 먼저 처리합니다. 격류가 따로 있다는 이유로 형상 전체를 빠뜨리지 않습니다."
+            skillId: '228260',
+            label: '형상·주입',
+            note: '계획한 극딜에 사용하되 남은 연사 사용권을 먼저 처리합니다. 격류가 따로 있다는 이유로 형상 전체를 빠뜨리지 않습니다.',
           },
           {
-            "skillId": "32379",
-            "label": "보호막 조건의 죽음",
-            "note": "물질 포식을 선택했고 적에게 흡수 보호막이 있는 경우의 별도 우선 처리입니다. 평상시 모든 죽음 시전의 수급 보너스가 아닙니다."
+            skillId: '32379',
+            label: '보호막 조건의 죽음',
+            note: '물질 포식을 선택했고 적에게 흡수 보호막이 있는 경우의 별도 우선 처리입니다. 평상시 모든 죽음 시전의 수급 보너스가 아닙니다.',
           },
           {
-            "skillId": "335467",
-            "label": "만료·초과 전에 광기",
-            "note": "광기가 끊기거나 격류·생성기로 상한을 넘기기 전에 소비합니다. 균열 중 직접 광기 시전은 공허 붕괴 강화에도 연결됩니다."
+            skillId: '335467',
+            label: '만료·초과 전에 광기',
+            note: '광기가 끊기거나 격류·생성기로 상한을 넘기기 전에 소비합니다. 균열 중 직접 광기 시전은 공허 붕괴 강화에도 연결됩니다.',
           },
           {
-            "skillId": "450983",
-            "label": "균열 중 공허의 폭발",
-            "note": "광기가 붙은 대상에 사용하고 균열이 끝나기 전 남은 기회를 확인합니다. 어둠에 물드는 지평선을 선택했다면 최대 3초의 연장에 관여합니다."
+            skillId: '450983',
+            label: '균열 중 공허의 폭발',
+            note: '광기가 붙은 대상에 사용하고 균열이 끝나기 전 남은 기회를 확인합니다. 어둠에 물드는 지평선을 선택했다면 최대 3초의 연장에 관여합니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "추가·만료 연사",
-            "note": "세트 사용권이 다음 격돌과 겹치거나 형상 종료가 임박하면 처리합니다. 일반 연사와 균열 중 중요한 폭발의 기회를 비교합니다."
+            skillId: '1242173',
+            label: '추가·만료 연사',
+            note: '세트 사용권이 다음 격돌과 겹치거나 형상 종료가 임박하면 처리합니다. 일반 연사와 균열 중 중요한 폭발의 기회를 비교합니다.',
           },
           {
-            "skillId": "1227280",
-            "label": "격돌 충전 관리",
-            "note": "충전이 가득 차거나 손길 재적용이 필요할 때 사용합니다. 세트 착용 시 뒤따르는 연사 사용권까지 처리할 여유를 봅니다."
+            skillId: '1227280',
+            label: '격돌 충전 관리',
+            note: '충전이 가득 차거나 손길 재적용이 필요할 때 사용합니다. 세트 착용 시 뒤따르는 연사 사용권까지 처리할 여유를 봅니다.',
           },
           {
-            "skillId": "263165",
-            "label": "다음 격류",
-            "note": "기본 30초마다 돌아오는 균열 시작 기술입니다. 대상 생존과 광기 여유를 확인하고, 암흑 마력이 없다면 이동으로 끊길 상황을 피합니다."
+            skillId: '263165',
+            label: '다음 격류',
+            note: '기본 30초마다 돌아오는 균열 시작 기술입니다. 대상 생존과 광기 여유를 확인하고, 암흑 마력이 없다면 이동으로 끊길 상황을 피합니다.',
           },
           {
-            "skillId": "8092",
-            "label": "균열 밖 정신 분열",
-            "note": "균열이 끝났을 때 원래 버튼으로 돌아옵니다. 공허의 폭발과 별도 기술 두 개의 사용 횟수를 동시에 극대화하려 하지 않습니다."
+            skillId: '8092',
+            label: '균열 밖 정신 분열',
+            note: '균열이 끝났을 때 원래 버튼으로 돌아옵니다. 공허의 폭발과 별도 기술 두 개의 사용 횟수를 동시에 극대화하려 하지 않습니다.',
           },
           {
-            "skillId": "15407",
-            "label": "빈 시간 채찍",
-            "note": "상위 조건을 처리하고 남은 시간에 사용합니다. 집정관의 정신의 채찍: 광기를 기다리거나 대신 넣지 않습니다."
-          }
-        ]
+            skillId: '15407',
+            label: '빈 시간 채찍',
+            note: '상위 조건을 처리하고 남은 시간에 사용합니다. 집정관의 정신의 채찍: 광기를 기다리거나 대신 넣지 않습니다.',
+          },
+        ],
       },
-      "aoe": {
-        "title": "공허술사 광역 · 모인 적과 오래 살 주 대상",
-        "summary": "불행 빌드에서 손길 사전 적용 → 교전 후 촉수 격돌 → 세트 연사(4세트) → 형상·주입 → 광기 → 격류로 시작합니다. 아래는 그 뒤의 유지 판단입니다. 탱커가 이동하거나 몹이 교체되면 주 대상을 다시 정하세요.",
-        "priority": [
+      aoe: {
+        title: '공허술사 광역 · 모인 적과 오래 살 주 대상',
+        summary: '불행 빌드에서 손길 사전 적용 → 교전 후 촉수 격돌 → 세트 연사(4세트) → 형상·주입 → 광기 → 격류로 시작합니다. 아래는 그 뒤의 유지 판단입니다. 탱커가 이동하거나 몹이 교체되면 주 대상을 다시 정하세요.',
+        priority: [
           {
-            "skillId": "1227280",
-            "label": "손길 대상 확보",
-            "note": "적이 모인 뒤 최대 6대상에 손길을 적용합니다. 다음 충전은 추가 대상과 충전 초과 위험을 보고 사용합니다."
+            skillId: '1227280',
+            label: '손길 대상 확보',
+            note: '적이 모인 뒤 최대 6대상에 손길을 적용합니다. 다음 충전은 추가 대상과 충전 초과 위험을 보고 사용합니다.',
           },
           {
-            "skillId": "34914",
-            "label": "빠진 장수명 대상",
-            "note": "격돌이 닿지 않은 오래 살 적만 수동으로 보강합니다. 풀 전체를 다시 도트하는 동안 균열 공격 기회를 잃지 않도록 합니다."
+            skillId: '34914',
+            label: '빠진 장수명 대상',
+            note: '격돌이 닿지 않은 오래 살 적만 수동으로 보강합니다. 풀 전체를 다시 도트하는 동안 균열 공격 기회를 잃지 않도록 합니다.',
           },
           {
-            "skillId": "335467",
-            "label": "우선 처치 대상 광기",
-            "note": "광기를 유지할 주 대상을 정합니다. 곧 죽을 적에게 억지로 고정하지 말고 생존시간·처치 우선순위·무리 위치를 함께 봅니다."
+            skillId: '335467',
+            label: '우선 처치 대상 광기',
+            note: '광기를 유지할 주 대상을 정합니다. 곧 죽을 적에게 억지로 고정하지 말고 생존시간·처치 우선순위·무리 위치를 함께 봅니다.',
           },
           {
-            "skillId": "228260",
-            "label": "모인 무리에 형상",
-            "note": "적의 생존시간이 충분한 구간에 사용합니다. 세트 연사가 버튼을 막고 있으면 먼저 사용한 뒤 진입합니다."
+            skillId: '228260',
+            label: '모인 무리에 형상',
+            note: '적의 생존시간이 충분한 구간에 사용합니다. 세트 연사가 버튼을 막고 있으면 먼저 사용한 뒤 진입합니다.',
           },
           {
-            "skillId": "263165",
-            "label": "격류로 균열",
-            "note": "적이 충분히 모이고 광기 여유가 있을 때 엽니다. 암흑 마력 선택 시 이동할 수 있지만 대상 사망·시야 단절·강제 제어 문제까지 사라지는 것은 아닙니다."
+            skillId: '263165',
+            label: '격류로 균열',
+            note: '적이 충분히 모이고 광기 여유가 있을 때 엽니다. 암흑 마력 선택 시 이동할 수 있지만 대상 사망·시야 단절·강제 제어 문제까지 사라지는 것은 아닙니다.',
           },
           {
-            "skillId": "450983",
-            "label": "균열 안 폭발",
-            "note": "광기가 붙은 주 대상에 사용합니다. 다른 손길 대상에 전달될 피해와 균열 연장 기회를 함께 활용합니다."
+            skillId: '450983',
+            label: '균열 안 폭발',
+            note: '광기가 붙은 주 대상에 사용합니다. 다른 손길 대상에 전달될 피해와 균열 연장 기회를 함께 활용합니다.',
           },
           {
-            "skillId": "335467",
-            "label": "균열 중 광기 소비",
-            "note": "상한을 넘기지 않으며 직접 시전으로 공허 붕괴를 강화합니다. 약한 자동 광기 적용을 같은 소비 횟수로 계산하지 않습니다."
+            skillId: '335467',
+            label: '균열 중 광기 소비',
+            note: '상한을 넘기지 않으며 직접 시전으로 공허 붕괴를 강화합니다. 약한 자동 광기 적용을 같은 소비 횟수로 계산하지 않습니다.',
           },
           {
-            "skillId": "1242173",
-            "label": "추가 연사 회수",
-            "note": "추가 사용권을 소모하고 실제 적이 모여 있을 때 광역 피해를 넣습니다. 다음 격돌로 얻을 사용권을 계속 밀어내지 않게 합니다."
+            skillId: '1242173',
+            label: '추가 연사 회수',
+            note: '추가 사용권을 소모하고 실제 적이 모여 있을 때 광역 피해를 넣습니다. 다음 격돌로 얻을 사용권을 계속 밀어내지 않게 합니다.',
           },
           {
-            "skillId": "8092",
-            "label": "균열 밖 생성기",
-            "note": "균열이 끝나면 정신 분열과 남은 격돌 충전을 활용합니다. 재적용할 손길이 생기면 맨 위 조건부터 다시 확인합니다."
+            skillId: '8092',
+            label: '균열 밖 생성기',
+            note: '균열이 끝나면 정신 분열과 남은 격돌 충전을 활용합니다. 재적용할 손길이 생기면 맨 위 조건부터 다시 확인합니다.',
           },
           {
-            "skillId": "15407",
-            "label": "빈 시간 채찍",
-            "note": "새 적 합류·자원 초과·생성기 준비가 없는 동안 사용합니다. 차단이나 생존 대응이 필요하면 이 고정 흐름을 중단합니다."
-          }
-        ]
-      }
-    }
+            skillId: '15407',
+            label: '빈 시간 채찍',
+            note: '새 적 합류·자원 초과·생성기 준비가 없는 동안 사용합니다. 차단이나 생존 대응이 필요하면 이 고정 흐름을 중단합니다.',
+          },
+        ],
+      },
+    },
   ],
-  "blocks": [
+  blocks: [
     {
-      "title": "1. 처음 익힐 때는 세 가지만 보세요",
-      "paragraphs": [
-        "9월 22일 핫픽스로 정신 분열, 공허의 폭발, 어둠의 권능: 죽음·광기, 정신의 채찍과 강화 채찍의 피해가 각각 15% 올랐습니다. 영혼의 연결은 직접 피해 전달률이 25%에서 20%로 낮아지고 그늘폭발도 5% 줄었습니다. 주 대상에 맞히는 기술의 가치는 올라갔지만, 손길을 깔고 광기를 소비하는 기본 순서는 그대로입니다. 여러 대상 전체 피해나 영웅 특성 순위가 같은 비율로 움직인다고 단정하지 마세요.",
-        "처음에는 모든 발동을 한꺼번에 보려 하지 마세요. 오래 살 대상에게 흡혈의 손길과 어둠의 권능: 고통이 있는지, 주 대상의 어둠의 권능: 광기가 끊기려는지, 다음 생성기를 쓰면 광기가 넘치는지를 먼저 봅니다. 이 세 가지가 안정된 뒤에 형상 사용권과 영웅 특성의 강화 기술을 더하면 됩니다. 광기는 남는 자원을 버리는 용도가 아니라 주 대상 피해와 여러 특성의 조건을 유지하는 소비기입니다.",
-        "다만 지속 피해 유지가 중요하다고 해서 모든 적에게 세 종류를 전부 바르는 것은 아닙니다. 손길과 고통을 여러 적에게 확보한 뒤 광기는 오래 살 주 대상에 유지하는 것이 기본입니다. 짧게 죽을 적에 준비 시간을 과하게 쓰지 말고, 현재 대상이 죽거나 공격 불가능해지면 다음 주 대상을 빠르게 고르세요. 정신의 채찍은 그 사이 빈 시간을 메우는 기술이지 다른 모든 버튼을 기다리게 만드는 완주 의무 기술이 아닙니다."
+      title: '1. 처음 익힐 때는 세 가지만 보세요',
+      paragraphs: [
+        '9월 22일 핫픽스로 정신 분열, 공허의 폭발, 어둠의 권능: 죽음·광기, 정신의 채찍과 강화 채찍의 피해가 각각 15% 올랐습니다. 영혼의 연결은 직접 피해 전달률이 25%에서 20%로 낮아지고 그늘폭발도 5% 줄었습니다. 주 대상에 맞히는 기술의 가치는 올라갔지만, 손길을 깔고 광기를 소비하는 기본 순서는 그대로입니다. 여러 대상 전체 피해나 영웅 특성 순위가 같은 비율로 움직인다고 단정하지 마세요.',
+        '처음에는 모든 발동을 한꺼번에 보려 하지 마세요. 오래 살 대상에게 흡혈의 손길과 어둠의 권능: 고통이 있는지, 주 대상의 어둠의 권능: 광기가 끊기려는지, 다음 생성기를 쓰면 광기가 넘치는지를 먼저 봅니다. 이 세 가지가 안정된 뒤에 형상 사용권과 영웅 특성의 강화 기술을 더하면 됩니다. 광기는 남는 자원을 버리는 용도가 아니라 주 대상 피해와 여러 특성의 조건을 유지하는 소비기입니다.',
+        '다만 지속 피해 유지가 중요하다고 해서 모든 적에게 세 종류를 전부 바르는 것은 아닙니다. 손길과 고통을 여러 적에게 확보한 뒤 광기는 오래 살 주 대상에 유지하는 것이 기본입니다. 짧게 죽을 적에 준비 시간을 과하게 쓰지 말고, 현재 대상이 죽거나 공격 불가능해지면 다음 주 대상을 빠르게 고르세요. 정신의 채찍은 그 사이 빈 시간을 메우는 기술이지 다른 모든 버튼을 기다리게 만드는 완주 의무 기술이 아닙니다.',
       ],
-      "bullets": [
-        "대상: 오래 살 적의 손길·고통, 주 대상의 광기부터 확인합니다.",
-        "자원: 고정 100이 아니라 자신의 실제 광기 상한과 다음 생성량을 봅니다.",
-        "시전: 조건에 맞는 기술 하나를 쓴 뒤 우선순위를 다시 확인합니다."
-      ]
+      bullets: [
+        '대상: 오래 살 적의 손길·고통, 주 대상의 광기부터 확인합니다.',
+        '자원: 고정 100이 아니라 자신의 실제 광기 상한과 다음 생성량을 봅니다.',
+        '시전: 조건에 맞는 기술 하나를 쓴 뒤 우선순위를 다시 확인합니다.',
+      ],
     },
     {
-      "title": "2. 12.1에서 바뀐 핵심은 연사 사용권입니다",
-      "paragraphs": [
-        "공허의 형상에 들어가면 진입 자동 연사가 발생하고, 그 뒤 직접 쓸 수 있는 공허 연사 기본 사용권 3회가 열립니다. 예전처럼 일정 쿨다운마다 누르는 기술이라고 생각하면 사용 시점을 잘못 잡습니다. 형상 안의 중요한 생성기와 광기 소비를 처리하면서 연사를 배치하되, 종료 직전에 여러 회를 남겨 놓고 한꺼번에 처리하려 하면 사용권을 놓칠 수 있습니다. 형상이 몇 초 남았는지와 남은 연사 수를 함께 보세요.",
-        "공허의 형상 연마와 태고의 광기는 선택 관계입니다. 연마는 형상의 주문 피해 증가를 추가로 5% 높이고 연사 사용권을 2회 더 줍니다. 태고의 광기는 형상 중 광기 직접 시전마다 가속 2%와 지속시간 1.5초를 최대 5회 얻는 방식입니다. 두 효과를 모두 가진 것으로 오프닝을 만들면 안 됩니다. 태고의 광기로 형상이 끝난 뒤 남는 가속은 10초에 걸쳐 줄어들며, 형상 자체가 10초 더 남는다는 뜻은 아닙니다.",
-        "그늘폭발은 주 대상으로 날아오는 그림자 원혼이 도착할 때 주변 8야드에 피해를 주는 광역 경로입니다. 9월 22일 PvE 피해가 5% 감소했고 5대상을 넘으면 추가로 감소합니다. 이 효과를 별도로 누르는 광역 버튼으로 추가하지 마세요. 느조스의 우상 광기 수급도 줄었으므로 이전 수급량을 전제로 소비 타이밍을 그대로 외우지 않는 편이 좋습니다."
+      title: '2. 12.1에서 바뀐 핵심은 연사 사용권입니다',
+      paragraphs: [
+        '공허의 형상에 들어가면 진입 자동 연사가 발생하고, 그 뒤 직접 쓸 수 있는 공허 연사 기본 사용권 3회가 열립니다. 예전처럼 일정 쿨다운마다 누르는 기술이라고 생각하면 사용 시점을 잘못 잡습니다. 형상 안의 중요한 생성기와 광기 소비를 처리하면서 연사를 배치하되, 종료 직전에 여러 회를 남겨 놓고 한꺼번에 처리하려 하면 사용권을 놓칠 수 있습니다. 형상이 몇 초 남았는지와 남은 연사 수를 함께 보세요.',
+        '공허의 형상 연마와 태고의 광기는 선택 관계입니다. 연마는 형상의 주문 피해 증가를 추가로 5% 높이고 연사 사용권을 2회 더 줍니다. 태고의 광기는 형상 중 광기 직접 시전마다 가속 2%와 지속시간 1.5초를 최대 5회 얻는 방식입니다. 두 효과를 모두 가진 것으로 오프닝을 만들면 안 됩니다. 태고의 광기로 형상이 끝난 뒤 남는 가속은 10초에 걸쳐 줄어들며, 형상 자체가 10초 더 남는다는 뜻은 아닙니다.',
+        '그늘폭발은 주 대상으로 날아오는 그림자 원혼이 도착할 때 주변 8야드에 피해를 주는 광역 경로입니다. 9월 22일 PvE 피해가 5% 감소했고 5대상을 넘으면 추가로 감소합니다. 이 효과를 별도로 누르는 광역 버튼으로 추가하지 마세요. 느조스의 우상 광기 수급도 줄었으므로 이전 수급량을 전제로 소비 타이밍을 그대로 외우지 않는 편이 좋습니다.',
       ],
-      "bullets": [
-        "형상 진입 자동 연사, 직접 연사, 집정관 자동 연사를 따로 셉니다.",
-        "연마는 추가 사용권, 태고의 광기는 직접 광기 소비에 따른 연장입니다.",
-        "그늘폭발은 자동 원혼 피해이며 새 단축키가 아닙니다."
-      ]
+      bullets: [
+        '형상 진입 자동 연사, 직접 연사, 집정관 자동 연사를 따로 셉니다.',
+        '연마는 추가 사용권, 태고의 광기는 직접 광기 소비에 따른 연장입니다.',
+        '그늘폭발은 자동 원혼 피해이며 새 단축키가 아닙니다.',
+      ],
     },
     {
-      "title": "3. 세트가 있으면 오프닝부터 달라집니다",
-      "paragraphs": [
-        "시즌 2 2세트는 촉수 격돌 피해를 100% 높이고 기본 충전 시간을 15초에서 12초로 줄입니다. 4세트는 촉수 격돌로 추가 공허 연사를 사용할 기회를 줍니다. 따라서 형상 밖에서도 연사를 쓰며, 촉수 격돌의 사용 횟수뿐 아니라 그 뒤에 받은 사용권을 제대로 소비했는지가 중요해집니다. 현재 툴팁 기준 추가 연사는 100% 효과입니다. 오래된 코드의 계수를 현재 효과로 덧붙이지 않습니다.",
-        "4세트 단일 오프닝에서는 정신 분열을 풀 시각에 맞추고 교전 뒤 촉수 격돌을 씁니다. 깨어난 악몽이면 고통을 직접 적용합니다. 집정관은 후광을 사용한 뒤, 세트 연사를 처리하고 형상으로 들어갑니다. 공허술사는 후광 없이 세트 연사와 형상으로 넘어가 첫 광기 뒤 격류를 사용합니다. 연사 사용권이 형상 버튼을 차지하는 상황을 피하는 것이 이 순서의 중요한 이유입니다.",
-        "4세트가 없다면 형상 진입 전의 세트 연사 단계는 없습니다. 사용 불가능한 연사를 기다리거나 이를 대신할 의미 없는 기술을 추가하지 마세요. 전투 전에 촉수 격돌을 써 사용권을 보관하는 방식도 전투 시작 초기화 때문에 같은 오프닝으로 취급할 수 없습니다. 전투 중에는 새 적 합류와 충전 낭비를 보되, 추가 연사를 계속 남긴 채 다음 촉수 격돌만 반복하지 않는지 확인합니다."
+      title: '3. 세트가 있으면 오프닝부터 달라집니다',
+      paragraphs: [
+        '시즌 2 2세트는 촉수 격돌 피해를 100% 높이고 기본 충전 시간을 15초에서 12초로 줄입니다. 4세트는 촉수 격돌로 추가 공허 연사를 사용할 기회를 줍니다. 따라서 형상 밖에서도 연사를 쓰며, 촉수 격돌의 사용 횟수뿐 아니라 그 뒤에 받은 사용권을 제대로 소비했는지가 중요해집니다. 현재 툴팁 기준 추가 연사는 100% 효과입니다. 오래된 코드의 계수를 현재 효과로 덧붙이지 않습니다.',
+        '4세트 단일 오프닝에서는 정신 분열을 풀 시각에 맞추고 교전 뒤 촉수 격돌을 씁니다. 깨어난 악몽이면 고통을 직접 적용합니다. 집정관은 후광을 사용한 뒤, 세트 연사를 처리하고 형상으로 들어갑니다. 공허술사는 후광 없이 세트 연사와 형상으로 넘어가 첫 광기 뒤 격류를 사용합니다. 연사 사용권이 형상 버튼을 차지하는 상황을 피하는 것이 이 순서의 중요한 이유입니다.',
+        '4세트가 없다면 형상 진입 전의 세트 연사 단계는 없습니다. 사용 불가능한 연사를 기다리거나 이를 대신할 의미 없는 기술을 추가하지 마세요. 전투 전에 촉수 격돌을 써 사용권을 보관하는 방식도 전투 시작 초기화 때문에 같은 오프닝으로 취급할 수 없습니다. 전투 중에는 새 적 합류와 충전 낭비를 보되, 추가 연사를 계속 남긴 채 다음 촉수 격돌만 반복하지 않는지 확인합니다.',
       ],
-      "bullets": [
-        "2세트만 있으면 격돌 강화·충전 감소, 4세트까지 있으면 추가 연사입니다.",
-        "교전 전 사용권 보관과 교전 후 사용권 획득은 다릅니다.",
-        "장비를 바꾼 뒤에는 세트 착용 여부에 맞춰 차트의 조건을 다시 읽으세요."
-      ]
+      bullets: [
+        '2세트만 있으면 격돌 강화·충전 감소, 4세트까지 있으면 추가 연사입니다.',
+        '교전 전 사용권 보관과 교전 후 사용권 획득은 다릅니다.',
+        '장비를 바꾼 뒤에는 세트 착용 여부에 맞춰 차트의 조건을 다시 읽으세요.',
+      ],
     },
     {
-      "title": "4. 광기 상한·비용·무료 사용권을 구분하세요",
-      "paragraphs": [
-        "기본 광기 상한은 100이지만 공허에 물듦을 선택하면 150이 됩니다. 어둠의 권능: 광기의 기본 비용은 50이며 마음의 눈은 45로 줄이고 현실 왜곡은 55로 늘리는 대신 피해와 지속시간을 바꿉니다. 마음의 눈과 현실 왜곡은 동시에 적용할 수 없습니다. 그래서 '광기가 90이면 항상 소비' 같은 숫자 하나보다, 현재 상한에서 다음 생성량을 뺀 여유와 주 대상의 광기 남은 시간을 보는 것이 정확합니다.",
-        "현실 왜곡은 광기 지속시간을 12초로 늘립니다. 기본 6초와 같은 속도로 재시전해야 한다고 외우지 마세요. 기존 광기의 남은 피해가 새 적용에 이어지는 성질이 있어도, 그 사실이 모든 생성기를 무시하고 광기만 연타하라는 뜻은 아닙니다. 필요한 광기 유지, 자원 초과 방지, 충전이 가득 찬 생성기 처리 중 무엇이 지금 손실을 막는지를 판단합니다.",
-        "정신 포식자가 발동하면 다음 광기는 무료이며 강화됩니다. 무료 소비는 광기 자원을 줄이지 않는다는 점이 핵심입니다. 상한 근처에서 무료 광기를 쓴 뒤 정신 분열·촉수 격돌·격류를 연속으로 사용하면 여전히 넘칠 수 있습니다. 무료 사용권의 만료와 재발동 손실을 보면서 다음 유료 소비까지 계획하세요. 광기 어린 촉수의 약한 자동 적용도 직접 광기를 지불해 시전한 이벤트와 구분합니다."
+      title: '4. 광기 상한·비용·무료 사용권을 구분하세요',
+      paragraphs: [
+        '기본 광기 상한은 100이지만 공허에 물듦을 선택하면 150이 됩니다. 어둠의 권능: 광기의 기본 비용은 50이며 마음의 눈은 45로 줄이고 현실 왜곡은 55로 늘리는 대신 피해와 지속시간을 바꿉니다. 마음의 눈과 현실 왜곡은 동시에 적용할 수 없습니다. 그래서 \'광기가 90이면 항상 소비\' 같은 숫자 하나보다, 현재 상한에서 다음 생성량을 뺀 여유와 주 대상의 광기 남은 시간을 보는 것이 정확합니다.',
+        '현실 왜곡은 광기 지속시간을 12초로 늘립니다. 기본 6초와 같은 속도로 재시전해야 한다고 외우지 마세요. 기존 광기의 남은 피해가 새 적용에 이어지는 성질이 있어도, 그 사실이 모든 생성기를 무시하고 광기만 연타하라는 뜻은 아닙니다. 필요한 광기 유지, 자원 초과 방지, 충전이 가득 찬 생성기 처리 중 무엇이 지금 손실을 막는지를 판단합니다.',
+        '정신 포식자가 발동하면 다음 광기는 무료이며 강화됩니다. 무료 소비는 광기 자원을 줄이지 않는다는 점이 핵심입니다. 상한 근처에서 무료 광기를 쓴 뒤 정신 분열·촉수 격돌·격류를 연속으로 사용하면 여전히 넘칠 수 있습니다. 무료 사용권의 만료와 재발동 손실을 보면서 다음 유료 소비까지 계획하세요. 광기 어린 촉수의 약한 자동 적용도 직접 광기를 지불해 시전한 이벤트와 구분합니다.',
       ],
-      "bullets": [
-        "현재 상한·현재 비용·다음 생성량을 함께 봅니다.",
-        "무료 광기를 썼다고 자원이 줄어든 것은 아닙니다.",
-        "약한 자동 적용을 모든 직접 시전 특성의 발동으로 계산하지 않습니다."
-      ]
+      bullets: [
+        '현재 상한·현재 비용·다음 생성량을 함께 봅니다.',
+        '무료 광기를 썼다고 자원이 줄어든 것은 아닙니다.',
+        '약한 자동 적용을 모든 직접 시전 특성의 발동으로 계산하지 않습니다.',
+      ],
     },
     {
-      "title": "5. 집정관은 후광 다음 행동이 중요합니다",
-      "paragraphs": [
-        "집정관은 후광 하나의 피해만 보고 운용을 평가하기 어렵습니다. 후광 생성으로 현신하는 권능이 정신의 채찍: 광기를 준비하고, 이를 사용하면 마력 순환이 그림자 원혼으로 연결합니다. 공명하는 마력은 후광 생성마다 주문 피해 2% 증가를 10초 동안 최대 4중첩 제공합니다. 따라서 후광을 쓴 뒤 어떤 강화 효과를 얻었고 실제로 무엇을 소비했는지를 같이 봐야 합니다. 이름이 비슷한 광기의 쇄도는 현재 일반 채찍의 피해·광기 수급 강화이지 예전의 소비기 기반 강화 채찍 발동으로 설명하면 안 됩니다.",
-        "마력의 쇄도는 추가 후광을 생성하며 마력 보존이 그 구간을 늘립니다. 천상의 후광은 돌아오는 경로에도 피해를 주지만 귀환 적중이 새로운 후광 생성은 아닙니다. 피해 이벤트 수만큼 공명하는 마력이나 지속되는 잠재력이 새로 발동했다고 세지 마세요. 후광은 시전자 주위로 퍼지므로 조준 각도보다 적이 범위 안에 있는지, 비전투 몹이 닿지 않는지, 뒤따르는 후광 때 자신이 어디에 있을지가 더 실용적인 확인 사항입니다.",
-        "형상 안에서 어둠의 권능: 광기를 직접 사용하면 집중된 폭발의 25% 자동 연사가 추가됩니다. 이 자동 피해는 형상 직접 사용권을 누른 횟수가 아닙니다. 태고의 광기라면 광기 소비가 형상 연장까지 이어지지만, 자원이 부족한데 광기 버튼만 기다리며 멈춰서는 안 됩니다. 생성기와 강화 채찍으로 다음 소비를 이어가고, 남은 직접 연사 사용권은 형상 종료 전에 처리합니다."
+      title: '5. 집정관은 후광 다음 행동이 중요합니다',
+      paragraphs: [
+        '집정관은 후광 하나의 피해만 보고 운용을 평가하기 어렵습니다. 후광 생성으로 현신하는 권능이 정신의 채찍: 광기를 준비하고, 이를 사용하면 마력 순환이 그림자 원혼으로 연결합니다. 공명하는 마력은 후광 생성마다 주문 피해 2% 증가를 10초 동안 최대 4중첩 제공합니다. 따라서 후광을 쓴 뒤 어떤 강화 효과를 얻었고 실제로 무엇을 소비했는지를 같이 봐야 합니다. 이름이 비슷한 광기의 쇄도는 현재 일반 채찍의 피해·광기 수급 강화이지 예전의 소비기 기반 강화 채찍 발동으로 설명하면 안 됩니다.',
+        '마력의 쇄도는 추가 후광을 생성하며 마력 보존이 그 구간을 늘립니다. 천상의 후광은 돌아오는 경로에도 피해를 주지만 귀환 적중이 새로운 후광 생성은 아닙니다. 피해 이벤트 수만큼 공명하는 마력이나 지속되는 잠재력이 새로 발동했다고 세지 마세요. 후광은 시전자 주위로 퍼지므로 조준 각도보다 적이 범위 안에 있는지, 비전투 몹이 닿지 않는지, 뒤따르는 후광 때 자신이 어디에 있을지가 더 실용적인 확인 사항입니다.',
+        '형상 안에서 어둠의 권능: 광기를 직접 사용하면 집중된 폭발의 25% 자동 연사가 추가됩니다. 이 자동 피해는 형상 직접 사용권을 누른 횟수가 아닙니다. 태고의 광기라면 광기 소비가 형상 연장까지 이어지지만, 자원이 부족한데 광기 버튼만 기다리며 멈춰서는 안 됩니다. 생성기와 강화 채찍으로 다음 소비를 이어가고, 남은 직접 연사 사용권은 형상 종료 전에 처리합니다.',
       ],
-      "bullets": [
-        "후광 생성 → 강화 채찍 → 원혼 생성의 실제 소비를 확인합니다.",
-        "집정관에 격류·혼돈의 균열을 끼워 넣지 않습니다.",
-        "자동 연사와 직접 사용권 소비를 분리하면 로그 해석이 쉬워집니다."
-      ]
+      bullets: [
+        '후광 생성 → 강화 채찍 → 원혼 생성의 실제 소비를 확인합니다.',
+        '집정관에 격류·혼돈의 균열을 끼워 넣지 않습니다.',
+        '자동 연사와 직접 사용권 소비를 분리하면 로그 해석이 쉬워집니다.',
+      ],
     },
     {
-      "title": "6. 집정관 단일과 광역 시작은 이렇게 나눕니다",
-      "paragraphs": [
-        "단일은 예정된 풀 시각에 정신 분열을 맞추고 촉수 격돌로 손길을 확보한 뒤, 실제 선택한 고통 적용 방식과 세트 사용권을 처리합니다. 후광과 형상·마력 주입을 연결한 다음에는 차트 한 줄을 다시 반복하는 것이 아니라 단일 우선순위로 전환합니다. 형상·후광이 돌아올 때마다 똑같은 오프닝 전체를 재현하려 하면 이미 유지되는 지속 피해를 다시 준비하느라 시간을 쓰게 됩니다.",
-        "광역에서는 탱커가 몹을 모으는 동안 오래 살 적에 손길을 준비하고 필요하면 소실로 위협을 관리합니다. 몹이 모이면 촉수 격돌로 적용 범위를 넓히고 교전 뒤 후광을 씁니다. 불행 빌드라면 고통도 같이 적용되므로 각 대상에게 고통을 따로 누르지 않습니다. 4세트 연사를 처리하고 형상·주입, 주 대상 광기로 연결한 뒤 광역 우선순위를 반복 판단합니다.",
-        "광역에서도 강화 채찍을 아무 대상에나 던지는 것이 기본은 아닙니다. 광기가 붙어 있고 오래 살아남을 주 대상을 유지해 특화와 실제 선택한 퍼지는 분노 조건을 활용하세요. 손길이 없는 적이 추가되면 적용을 보강하지만, 이미 죽어가는 작은 몹을 도트하느라 후광·형상 공격 시간이 비는지 함께 봅니다. 쐐기의 짧은 풀과 레이드의 오래 사는 다중 대상은 같은 준비 시간을 허용하지 않습니다."
+      title: '6. 집정관 단일과 광역 시작은 이렇게 나눕니다',
+      paragraphs: [
+        '단일은 예정된 풀 시각에 정신 분열을 맞추고 촉수 격돌로 손길을 확보한 뒤, 실제 선택한 고통 적용 방식과 세트 사용권을 처리합니다. 후광과 형상·마력 주입을 연결한 다음에는 차트 한 줄을 다시 반복하는 것이 아니라 단일 우선순위로 전환합니다. 형상·후광이 돌아올 때마다 똑같은 오프닝 전체를 재현하려 하면 이미 유지되는 지속 피해를 다시 준비하느라 시간을 쓰게 됩니다.',
+        '광역에서는 탱커가 몹을 모으는 동안 오래 살 적에 손길을 준비하고 필요하면 소실로 위협을 관리합니다. 몹이 모이면 촉수 격돌로 적용 범위를 넓히고 교전 뒤 후광을 씁니다. 불행 빌드라면 고통도 같이 적용되므로 각 대상에게 고통을 따로 누르지 않습니다. 4세트 연사를 처리하고 형상·주입, 주 대상 광기로 연결한 뒤 광역 우선순위를 반복 판단합니다.',
+        '광역에서도 강화 채찍을 아무 대상에나 던지는 것이 기본은 아닙니다. 광기가 붙어 있고 오래 살아남을 주 대상을 유지해 특화와 실제 선택한 퍼지는 분노 조건을 활용하세요. 손길이 없는 적이 추가되면 적용을 보강하지만, 이미 죽어가는 작은 몹을 도트하느라 후광·형상 공격 시간이 비는지 함께 봅니다. 쐐기의 짧은 풀과 레이드의 오래 사는 다중 대상은 같은 준비 시간을 허용하지 않습니다.',
       ],
-      "bullets": [
-        "단일 오프닝은 시작 예시이며 반복 매크로가 아닙니다.",
-        "광역 후광은 교전·몹 집결·주변 선공 위험을 확인한 뒤 사용합니다.",
-        "주 대상 광기와 다른 적의 손길 적용을 구분합니다."
-      ]
+      bullets: [
+        '단일 오프닝은 시작 예시이며 반복 매크로가 아닙니다.',
+        '광역 후광은 교전·몹 집결·주변 선공 위험을 확인한 뒤 사용합니다.',
+        '주 대상 광기와 다른 적의 손길 적용을 구분합니다.',
+      ],
     },
     {
-      "title": "7. 공허술사는 균열을 열기 전에 준비합니다",
-      "paragraphs": [
-        "공허술사의 시작 기술은 공허의 격류입니다. 기본 30초 쿨다운의 3초 정신 집중으로 광기 24를 생성하고 혼돈의 균열을 엽니다. 격류는 광기를 소모하는 기술이 아니므로 이미 상한에 가까운데 시작하면 수급을 버릴 수 있습니다. 주 대상 지속 피해와 광기를 먼저 준비하고, 다음 생성량을 받을 여유를 만들어 두세요. 준비 없이 격류부터 연 뒤 도트만 다시 바르면 짧은 균열 시간을 공격에 쓰지 못합니다.",
-        "균열 중 정신 분열은 공허의 폭발로 대체됩니다. 암흑의 실제 공허의 폭발 ID는 450983이며 수양의 450215와 다릅니다. 형상과 격류, 공허의 폭발은 역할이 다릅니다. 형상은 큰 강화 구간이고 격류는 균열의 시작이며 폭발은 균열 중 바뀐 정신 분열입니다. 정신 분열과 공허의 폭발을 서로 독립된 두 충전 기술로 동시에 운용한다고 설명하면 잘못입니다.",
-        "어둠에 물드는 지평선을 선택했다면 공허의 폭발이 균열을 1초씩 최대 3초 늘립니다. 공허 붕괴를 선택한 암흑은 균열 중 광기 직접 시전으로 종료 폭발의 크기와 피해를 강화합니다. 광기 어린 촉수의 자동 적용이나 피해 주기를 직접 시전 횟수로 합치지 마세요. 공허의 손길로 종료 뒤 공허의 심장이 남아도 균열 자체와 공허의 폭발 버튼이 그대로 유지되는 것은 아닙니다."
+      title: '7. 공허술사는 균열을 열기 전에 준비합니다',
+      paragraphs: [
+        '공허술사의 시작 기술은 공허의 격류입니다. 기본 30초 쿨다운의 3초 정신 집중으로 광기 24를 생성하고 혼돈의 균열을 엽니다. 격류는 광기를 소모하는 기술이 아니므로 이미 상한에 가까운데 시작하면 수급을 버릴 수 있습니다. 주 대상 지속 피해와 광기를 먼저 준비하고, 다음 생성량을 받을 여유를 만들어 두세요. 준비 없이 격류부터 연 뒤 도트만 다시 바르면 짧은 균열 시간을 공격에 쓰지 못합니다.',
+        '균열 중 정신 분열은 공허의 폭발로 대체됩니다. 암흑의 실제 공허의 폭발 ID는 450983이며 수양의 450215와 다릅니다. 형상과 격류, 공허의 폭발은 역할이 다릅니다. 형상은 큰 강화 구간이고 격류는 균열의 시작이며 폭발은 균열 중 바뀐 정신 분열입니다. 정신 분열과 공허의 폭발을 서로 독립된 두 충전 기술로 동시에 운용한다고 설명하면 잘못입니다.',
+        '어둠에 물드는 지평선을 선택했다면 공허의 폭발이 균열을 1초씩 최대 3초 늘립니다. 공허 붕괴를 선택한 암흑은 균열 중 광기 직접 시전으로 종료 폭발의 크기와 피해를 강화합니다. 광기 어린 촉수의 자동 적용이나 피해 주기를 직접 시전 횟수로 합치지 마세요. 공허의 손길로 종료 뒤 공허의 심장이 남아도 균열 자체와 공허의 폭발 버튼이 그대로 유지되는 것은 아닙니다.',
       ],
-      "bullets": [
-        "격류 전: 대상 생존, 도트, 광기 여유를 확인합니다.",
-        "균열 중: 바뀐 정신 분열과 광기 직접 소비를 봅니다.",
-        "균열 종료 후: 남은 강화 효과와 종료된 공격 기술을 구분합니다."
-      ]
+      bullets: [
+        '격류 전: 대상 생존, 도트, 광기 여유를 확인합니다.',
+        '균열 중: 바뀐 정신 분열과 광기 직접 소비를 봅니다.',
+        '균열 종료 후: 남은 강화 효과와 종료된 공격 기술을 구분합니다.',
+      ],
     },
     {
-      "title": "8. 이동 중 격류가 가능한 빌드인지 확인하세요",
-      "paragraphs": [
-        "암흑 마력을 선택한 암흑 사제는 공허의 격류를 이동하면서 사용할 수 있습니다. 기존 가이드의 '이동하면 무조건 격류를 취소한다'는 설명을 그대로 따르면 불필요한 손실이 생깁니다. 바닥이 생겼다면 이동으로 피하면서 정신 집중을 이어갈 수 있는지 먼저 보세요. 다만 암흑 마력과 다른 선택지를 골랐다면 같은 행동이 가능한 것은 아닙니다. 자신의 실제 영웅 특성 선택을 확인해야 합니다.",
-        "이동 시전이 된다고 모든 방해가 사라지는 것은 아닙니다. 대상이 죽거나 시야에서 벗어나거나 강제 제어·차단을 당하는 경우, 자신이 즉시 유틸리티를 써야 하는 경우는 여전히 따로 판단해야 합니다. 쐐기에서는 탱커가 몹을 멀리 끌고 갈 계획인지와 위험 주문 담당이 누구인지 확인하세요. 아직 아무도 죽지 않는다는 이유로 담당 차단을 미루면서 격류만 끝내는 것은 좋은 딜사이클이 아닙니다.",
-        "일반 정신의 채찍을 쓰는 동안 이동이 필요해지면 즉시 사용 가능한 광기·격돌·연사·조건 맞는 죽음 등을 연결할 수 있는지 봅니다. 이동 전에 무조건 자원을 전부 비우는 것이 정답은 아닙니다. 이동 중 사용할 소비기를 남길 필요와 자원이 넘칠 위험을 함께 판단하세요. 중요한 것은 빈 시간을 줄이는 준비이지 정지 상태의 버튼 순서를 이동 중에도 억지로 재현하는 것이 아닙니다."
+      title: '8. 이동 중 격류가 가능한 빌드인지 확인하세요',
+      paragraphs: [
+        '암흑 마력을 선택한 암흑 사제는 공허의 격류를 이동하면서 사용할 수 있습니다. 기존 가이드의 \'이동하면 무조건 격류를 취소한다\'는 설명을 그대로 따르면 불필요한 손실이 생깁니다. 바닥이 생겼다면 이동으로 피하면서 정신 집중을 이어갈 수 있는지 먼저 보세요. 다만 암흑 마력과 다른 선택지를 골랐다면 같은 행동이 가능한 것은 아닙니다. 자신의 실제 영웅 특성 선택을 확인해야 합니다.',
+        '이동 시전이 된다고 모든 방해가 사라지는 것은 아닙니다. 대상이 죽거나 시야에서 벗어나거나 강제 제어·차단을 당하는 경우, 자신이 즉시 유틸리티를 써야 하는 경우는 여전히 따로 판단해야 합니다. 쐐기에서는 탱커가 몹을 멀리 끌고 갈 계획인지와 위험 주문 담당이 누구인지 확인하세요. 아직 아무도 죽지 않는다는 이유로 담당 차단을 미루면서 격류만 끝내는 것은 좋은 딜사이클이 아닙니다.',
+        '일반 정신의 채찍을 쓰는 동안 이동이 필요해지면 즉시 사용 가능한 광기·격돌·연사·조건 맞는 죽음 등을 연결할 수 있는지 봅니다. 이동 전에 무조건 자원을 전부 비우는 것이 정답은 아닙니다. 이동 중 사용할 소비기를 남길 필요와 자원이 넘칠 위험을 함께 판단하세요. 중요한 것은 빈 시간을 줄이는 준비이지 정지 상태의 버튼 순서를 이동 중에도 억지로 재현하는 것이 아닙니다.',
       ],
-      "bullets": [
-        "암흑 마력 선택 시 격류 이동 시전이 가능합니다.",
-        "이동 가능과 차단·시야·대상 사망 대응은 별개입니다.",
-        "이동 전 자원을 무조건 비우거나 무조건 모으는 고정 규칙을 쓰지 않습니다."
-      ]
+      bullets: [
+        '암흑 마력 선택 시 격류 이동 시전이 가능합니다.',
+        '이동 가능과 차단·시야·대상 사망 대응은 별개입니다.',
+        '이동 전 자원을 무조건 비우거나 무조건 모으는 고정 규칙을 쓰지 않습니다.',
+      ],
     },
     {
-      "title": "9. 광역은 손길 분배와 주 대상 선택입니다",
-      "paragraphs": [
-        "촉수 격돌은 최대 6대상에게 손길을 적용하며, 불행을 선택하면 손길을 통해 고통도 적용됩니다. 충전 두 개를 연속으로 쓰는 이유는 더 많은 대상 적용, 충전 낭비 방지, 세트 피해 회수처럼 실제 필요가 있을 때입니다. '몹이 많으니 무조건 두 번'만 외우면 다음 합류 무리에 쓸 충전을 잃을 수 있습니다. 반대로 먼 미래의 풀을 위해 두 충전을 가득 들고 현재 전투 내내 쓰지 않는 것도 손실입니다.",
-        "영혼의 연결은 주 대상에 넣은 주요 직접 피해 일부를 다른 손길 대상에게 전달합니다. 원혼과 고통·손길의 피해 자체를 다시 전달하는 무한 복제 효과는 아닙니다. 적 수가 많아도 손길이 빠진 대상은 기대한 전달을 받지 못하고, 원혼이 도착하기 전에 대상이 죽으면 준비한 피해가 줄어듭니다. 그늘폭발은 별도의 주 대상 주변 폭발이므로 흩어진 적에게 같은 효율을 보장하지 않습니다.",
-        "주 대상은 오래 사는 적 중 우선 처치할 대상을 고르는 것이 출발점입니다. 특정 적을 빠르게 잡아야 하는 전투라면 그 대상 피해를 우선하고, 의미 없는 잔여 몹 피해로 전체 숫자만 키우지 마세요. 전투 중 대상이 교체되면 새 주 대상에 필요한 광기와 도트를 다시 확인합니다. 다음 풀 자원을 미리 준비할 때도 곧 죽는 적에게 지속 피해를 과투자하는 행동은 피하는 편이 좋습니다."
+      title: '9. 광역은 손길 분배와 주 대상 선택입니다',
+      paragraphs: [
+        '촉수 격돌은 최대 6대상에게 손길을 적용하며, 불행을 선택하면 손길을 통해 고통도 적용됩니다. 충전 두 개를 연속으로 쓰는 이유는 더 많은 대상 적용, 충전 낭비 방지, 세트 피해 회수처럼 실제 필요가 있을 때입니다. \'몹이 많으니 무조건 두 번\'만 외우면 다음 합류 무리에 쓸 충전을 잃을 수 있습니다. 반대로 먼 미래의 풀을 위해 두 충전을 가득 들고 현재 전투 내내 쓰지 않는 것도 손실입니다.',
+        '영혼의 연결은 주 대상에 넣은 주요 직접 피해 일부를 다른 손길 대상에게 전달합니다. 원혼과 고통·손길의 피해 자체를 다시 전달하는 무한 복제 효과는 아닙니다. 적 수가 많아도 손길이 빠진 대상은 기대한 전달을 받지 못하고, 원혼이 도착하기 전에 대상이 죽으면 준비한 피해가 줄어듭니다. 그늘폭발은 별도의 주 대상 주변 폭발이므로 흩어진 적에게 같은 효율을 보장하지 않습니다.',
+        '주 대상은 오래 사는 적 중 우선 처치할 대상을 고르는 것이 출발점입니다. 특정 적을 빠르게 잡아야 하는 전투라면 그 대상 피해를 우선하고, 의미 없는 잔여 몹 피해로 전체 숫자만 키우지 마세요. 전투 중 대상이 교체되면 새 주 대상에 필요한 광기와 도트를 다시 확인합니다. 다음 풀 자원을 미리 준비할 때도 곧 죽는 적에게 지속 피해를 과투자하는 행동은 피하는 편이 좋습니다.',
       ],
-      "bullets": [
-        "6대상 적용 한도와 미적용 대상을 실제로 확인합니다.",
-        "원혼 폭발과 영혼의 연결을 같은 광역 경로로 세지 않습니다.",
-        "전체 DPS뿐 아니라 우선 처치 대상 피해도 봅니다."
-      ]
+      bullets: [
+        '6대상 적용 한도와 미적용 대상을 실제로 확인합니다.',
+        '원혼 폭발과 영혼의 연결을 같은 광역 경로로 세지 않습니다.',
+        '전체 DPS뿐 아니라 우선 처치 대상 피해도 봅니다.',
+      ],
     },
     {
-      "title": "10. 특성 한 줄을 바꾸면 함께 바뀌는 것들",
-      "paragraphs": [
-        "불행과 깨어난 악몽은 오프닝과 광역 준비 시간을 바꿉니다. 불행은 손길이 고통도 적용하고 고통 지속시간을 늘립니다. 깨어난 악몽은 고통 피해를 강화하는 대신 그 자동 적용을 제공하지 않습니다. 단일에서는 직접 고통을 추가하는 비용이 작아 보일 수 있지만, 쐐기의 많은 대상에서는 적용할 적과 적 생존시간을 따져야 합니다. 기존 불행 습관으로 격돌만 누르고 고통이 전부 있다고 생각하지 마세요.",
-        "공허의 형상 연마와 태고의 광기는 형상 안의 행동 계획이 달라집니다. 공격 가능한 시간이 짧다면 추가 연사를 빠르게 회수하는 선택과 장시간 연장 효과를 비교할 수 있지만, 특정 보스의 짧은 증폭 구간에 유리하다는 말이 전투 전체에서 무조건 높은 DPS라는 뜻은 아닙니다. 마력 압축과 지속되는 잠재력도 후광의 즉시 가치와 형상·절정 지속시간 쪽의 선택을 나누는 관계입니다.",
-        "정신 수확자는 정신 분열 충전을 추가하는 특성입니다. 모든 빌드에 두 충전이 있다고 가정하지 마세요. 죽음예언자와 죽음과 광기는 처형 조건과 사망 시 수급을 나누는 선택이며, 무형성과 강인한 정신도 분산 강화와 최대 체력일 때의 보호막 중 선택입니다. 가이드나 상위 로그의 기술 이름만 보고 복사하지 말고 선택한 노드와 세트까지 맞춰 비교해야 합니다."
+      title: '10. 특성 한 줄을 바꾸면 함께 바뀌는 것들',
+      paragraphs: [
+        '불행과 깨어난 악몽은 오프닝과 광역 준비 시간을 바꿉니다. 불행은 손길이 고통도 적용하고 고통 지속시간을 늘립니다. 깨어난 악몽은 고통 피해를 강화하는 대신 그 자동 적용을 제공하지 않습니다. 단일에서는 직접 고통을 추가하는 비용이 작아 보일 수 있지만, 쐐기의 많은 대상에서는 적용할 적과 적 생존시간을 따져야 합니다. 기존 불행 습관으로 격돌만 누르고 고통이 전부 있다고 생각하지 마세요.',
+        '공허의 형상 연마와 태고의 광기는 형상 안의 행동 계획이 달라집니다. 공격 가능한 시간이 짧다면 추가 연사를 빠르게 회수하는 선택과 장시간 연장 효과를 비교할 수 있지만, 특정 보스의 짧은 증폭 구간에 유리하다는 말이 전투 전체에서 무조건 높은 DPS라는 뜻은 아닙니다. 마력 압축과 지속되는 잠재력도 후광의 즉시 가치와 형상·절정 지속시간 쪽의 선택을 나누는 관계입니다.',
+        '정신 수확자는 정신 분열 충전을 추가하는 특성입니다. 모든 빌드에 두 충전이 있다고 가정하지 마세요. 죽음예언자와 죽음과 광기는 처형 조건과 사망 시 수급을 나누는 선택이며, 무형성과 강인한 정신도 분산 강화와 최대 체력일 때의 보호막 중 선택입니다. 가이드나 상위 로그의 기술 이름만 보고 복사하지 말고 선택한 노드와 세트까지 맞춰 비교해야 합니다.',
       ],
-      "bullets": [
-        "빌드 변경 뒤 고통 적용 방식과 정신 분열 충전을 확인합니다.",
-        "공격 가능 시간과 전투 전체 이득을 구분합니다.",
-        "서로 배타적인 효과를 동시에 기본값으로 넣지 않습니다."
-      ]
+      bullets: [
+        '빌드 변경 뒤 고통 적용 방식과 정신 분열 충전을 확인합니다.',
+        '공격 가능 시간과 전투 전체 이득을 구분합니다.',
+        '서로 배타적인 효과를 동시에 기본값으로 넣지 않습니다.',
+      ],
     },
     {
-      "title": "11. 처형과 자동 소환을 직접 버튼으로 세지 마세요",
-      "paragraphs": [
-        "어둠의 권능: 죽음은 대상 체력 조건에서 가치가 달라집니다. 죽음예언자는 현재 지속 효과로 피해와 처형 체력 기준을 바꾸는 특성이지, 예전처럼 무작위 발동이 떠야 쓰는 기술로 설명하면 안 됩니다. 죽음과 광기를 골랐다면 추가 광기는 대상이 7초 안에 죽는 조건을 봐야 하며 버튼을 누르는 즉시 확정 수급으로 계산하지 않습니다. 대상이 죽지 않았을 때의 반동도 생존 상황에 포함합니다.",
-        "현재 암흑 환각의 마귀는 공허의 형상에 연결된 자동 소환입니다. 별도 환각의 마귀 단축키를 형상 앞에 넣지 마세요. 어둠의 마귀 역시 선택한 효과와 처형 조건을 확인해야 합니다. 피할 수 없는 고통이나 죽음의 고통에서 발생한 자동 피해 이벤트는 직접 누른 죽음·정신 분열 횟수와 다릅니다. 로그에서는 플레이어 시전 탭과 피해 이벤트 탭을 같이 봐야 하는 이유입니다.",
-        "공허의 원혼 정점도 같은 원칙입니다. 우상 발동에서 원혼이 생기고, 강화 원혼이 자동 공허의 화살을 발사할 수 있습니다. 촉수 격돌이 선택한 우상 중 하나를 발동시키는 효과를 모든 우상이 한 번씩 동시에 발동하는 효과로 해석하지 마세요. 현재 자동 공허의 화살을 과거 확장팩의 직접 시전 버튼으로 되살려 오프닝에 넣는 것도 잘못입니다."
+      title: '11. 처형과 자동 소환을 직접 버튼으로 세지 마세요',
+      paragraphs: [
+        '어둠의 권능: 죽음은 대상 체력 조건에서 가치가 달라집니다. 죽음예언자는 현재 지속 효과로 피해와 처형 체력 기준을 바꾸는 특성이지, 예전처럼 무작위 발동이 떠야 쓰는 기술로 설명하면 안 됩니다. 죽음과 광기를 골랐다면 추가 광기는 대상이 7초 안에 죽는 조건을 봐야 하며 버튼을 누르는 즉시 확정 수급으로 계산하지 않습니다. 대상이 죽지 않았을 때의 반동도 생존 상황에 포함합니다.',
+        '현재 암흑 환각의 마귀는 공허의 형상에 연결된 자동 소환입니다. 별도 환각의 마귀 단축키를 형상 앞에 넣지 마세요. 어둠의 마귀 역시 선택한 효과와 처형 조건을 확인해야 합니다. 피할 수 없는 고통이나 죽음의 고통에서 발생한 자동 피해 이벤트는 직접 누른 죽음·정신 분열 횟수와 다릅니다. 로그에서는 플레이어 시전 탭과 피해 이벤트 탭을 같이 봐야 하는 이유입니다.',
+        '공허의 원혼 정점도 같은 원칙입니다. 우상 발동에서 원혼이 생기고, 강화 원혼이 자동 공허의 화살을 발사할 수 있습니다. 촉수 격돌이 선택한 우상 중 하나를 발동시키는 효과를 모든 우상이 한 번씩 동시에 발동하는 효과로 해석하지 마세요. 현재 자동 공허의 화살을 과거 확장팩의 직접 시전 버튼으로 되살려 오프닝에 넣는 것도 잘못입니다.',
       ],
-      "bullets": [
-        "처형 기준과 사망 시 수급은 다른 조건입니다.",
-        "형상 자동 소환은 추가 단축키가 아닙니다.",
-        "원혼·소환수·자동 연사의 피해를 플레이어 시전 횟수와 분리합니다."
-      ]
+      bullets: [
+        '처형 기준과 사망 시 수급은 다른 조건입니다.',
+        '형상 자동 소환은 추가 단축키가 아닙니다.',
+        '원혼·소환수·자동 연사의 피해를 플레이어 시전 횟수와 분리합니다.',
+      ],
     },
     {
-      "title": "12. 생존과 유틸리티는 딜사이클보다 먼저입니다",
-      "paragraphs": [
-        "분산은 강한 피해 감소와 회복을 주지만 공격과 주문 시전을 막습니다. 위험한 피해에 맞춰 사용하고 살아남는 것이 먼저입니다. 위험이 끝난 뒤까지 습관적으로 유지해 공격이 비는지는 이후에 점검하세요. 무형성을 고르면 쿨다운이 줄어들지만 그 값을 모든 빌드에 적용하면 다음 위험 때 기술이 없을 수 있습니다. 강인한 정신은 최대 생명력에서 발생하는 자기 회복을 제한된 보호막으로 바꾸는 별도 선택입니다.",
-        "침묵은 차단 담당과 맞춰 사용합니다. 영혼의 절규와 이동 속도 감소는 같은 기능이 아니며, 적이 해당 제어에 영향을 받는지도 확인해야 합니다. 대규모 무효화가 필요한 패턴이면 사용 시각과 마나, 시전 가능 시간을 미리 정해 두세요. 광역 공격 중인 대상과 차단 대상이 다를 수 있으므로 대상 전환 때문에 주 대상의 광기나 균열을 놓치지 않는 조작 방법이 도움이 됩니다.",
-        "마력 주입은 자신만의 숫자뿐 아니라 파티 계획을 고려합니다. 실제 특성에 따른 본인 가속 적용과 외부 대상 배정을 전투 전에 확인하고, 매번 전투 중 급하게 대상을 찾느라 형상 시간이 비지 않게 하세요. 소실·구원의 기도·신의의 도약처럼 피해 순위에 직접 드러나지 않는 대응도 성공 여부를 바꿉니다. 피해 감소 구간을 지나도 계속 살아서 공격한 시간이 단순한 시전 횟수보다 중요할 수 있습니다."
+      title: '12. 생존과 유틸리티는 딜사이클보다 먼저입니다',
+      paragraphs: [
+        '분산은 강한 피해 감소와 회복을 주지만 공격과 주문 시전을 막습니다. 위험한 피해에 맞춰 사용하고 살아남는 것이 먼저입니다. 위험이 끝난 뒤까지 습관적으로 유지해 공격이 비는지는 이후에 점검하세요. 무형성을 고르면 쿨다운이 줄어들지만 그 값을 모든 빌드에 적용하면 다음 위험 때 기술이 없을 수 있습니다. 강인한 정신은 최대 생명력에서 발생하는 자기 회복을 제한된 보호막으로 바꾸는 별도 선택입니다.',
+        '침묵은 차단 담당과 맞춰 사용합니다. 영혼의 절규와 이동 속도 감소는 같은 기능이 아니며, 적이 해당 제어에 영향을 받는지도 확인해야 합니다. 대규모 무효화가 필요한 패턴이면 사용 시각과 마나, 시전 가능 시간을 미리 정해 두세요. 광역 공격 중인 대상과 차단 대상이 다를 수 있으므로 대상 전환 때문에 주 대상의 광기나 균열을 놓치지 않는 조작 방법이 도움이 됩니다.',
+        '마력 주입은 자신만의 숫자뿐 아니라 파티 계획을 고려합니다. 실제 특성에 따른 본인 가속 적용과 외부 대상 배정을 전투 전에 확인하고, 매번 전투 중 급하게 대상을 찾느라 형상 시간이 비지 않게 하세요. 소실·구원의 기도·신의의 도약처럼 피해 순위에 직접 드러나지 않는 대응도 성공 여부를 바꿉니다. 피해 감소 구간을 지나도 계속 살아서 공격한 시간이 단순한 시전 횟수보다 중요할 수 있습니다.',
       ],
-      "bullets": [
-        "분산 중 공격 불가와 위험 종료 시점을 같이 봅니다.",
-        "차단·공포·감속·해제를 서로 바꿔 쓸 수 있다고 가정하지 않습니다.",
-        "파티 배정은 전투 전에 정하고 공격 중 조작 손실을 줄입니다."
-      ]
+      bullets: [
+        '분산 중 공격 불가와 위험 종료 시점을 같이 봅니다.',
+        '차단·공포·감속·해제를 서로 바꿔 쓸 수 있다고 가정하지 않습니다.',
+        '파티 배정은 전투 전에 정하고 공격 중 조작 손실을 줄입니다.',
+      ],
     },
     {
-      "title": "13. 로그에서 먼저 볼 것은 잃은 사용 기회입니다",
-      "paragraphs": [
-        "비교 대상은 같은 패치·영웅 특성·세트와 비슷한 전투 길이부터 맞춥니다. 보스가 훨씬 빨리 죽은 로그는 극딜 비중이 높고, 광역 대상 수나 처치 순서가 다르면 같은 기술의 피해 비율도 달라집니다. 총 DPS와 시전 수만으로 '이 기술을 몇 번 더 누르면 같은 점수'라고 결론 내리지 마세요. 현재 가이드는 개인 로그의 개선량을 측정한 보고서가 아니라 확인할 순서를 설명합니다.",
-        "먼저 실제 공격 가능한 시간, 사망·강제 이동, 형상·마력 주입 사용 횟수를 봅니다. 그다음 손길·고통이 필요한 대상에 남았는지와 주 대상 광기의 공백을 확인합니다. 전투 전체 시간으로 계산한 유지율은 무적이나 대상 교체 시간을 포함할 수 있으므로, 해당 적을 공격할 수 있었던 시간만 따로 보는 것이 유용합니다. 새 대상 적용이 늦어진 이유와 자원이 넘친 시점을 함께 찾으세요.",
-        "집정관은 후광 생성 뒤 강화 채찍을 사용했는지와 형상 안의 광기 직접 시전을 봅니다. 공허술사는 격류 채널, 균열 중 공허의 폭발, 종료 폭발이 실제 살아 있는 적에게 들어갔는지를 봅니다. 4세트라면 촉수 격돌 횟수와 추가 연사 소비를 연결합니다. 연사 피해는 자동 진입·집정관 자동 효과·직접 시전이 섞이므로 피해 이벤트 총수에서 직접 시전 수를 역산하지 않습니다."
+      title: '13. 로그에서 먼저 볼 것은 잃은 사용 기회입니다',
+      paragraphs: [
+        '비교 대상은 같은 패치·영웅 특성·세트와 비슷한 전투 길이부터 맞춥니다. 보스가 훨씬 빨리 죽은 로그는 극딜 비중이 높고, 광역 대상 수나 처치 순서가 다르면 같은 기술의 피해 비율도 달라집니다. 총 DPS와 시전 수만으로 \'이 기술을 몇 번 더 누르면 같은 점수\'라고 결론 내리지 마세요. 현재 가이드는 개인 로그의 개선량을 측정한 보고서가 아니라 확인할 순서를 설명합니다.',
+        '먼저 실제 공격 가능한 시간, 사망·강제 이동, 형상·마력 주입 사용 횟수를 봅니다. 그다음 손길·고통이 필요한 대상에 남았는지와 주 대상 광기의 공백을 확인합니다. 전투 전체 시간으로 계산한 유지율은 무적이나 대상 교체 시간을 포함할 수 있으므로, 해당 적을 공격할 수 있었던 시간만 따로 보는 것이 유용합니다. 새 대상 적용이 늦어진 이유와 자원이 넘친 시점을 함께 찾으세요.',
+        '집정관은 후광 생성 뒤 강화 채찍을 사용했는지와 형상 안의 광기 직접 시전을 봅니다. 공허술사는 격류 채널, 균열 중 공허의 폭발, 종료 폭발이 실제 살아 있는 적에게 들어갔는지를 봅니다. 4세트라면 촉수 격돌 횟수와 추가 연사 소비를 연결합니다. 연사 피해는 자동 진입·집정관 자동 효과·직접 시전이 섞이므로 피해 이벤트 총수에서 직접 시전 수를 역산하지 않습니다.',
       ],
-      "bullets": [
-        "비슷한 조건의 로그를 고른 뒤 공격 가능 시간과 쿨기 횟수부터 봅니다.",
-        "유지율은 무적·대상 교체를 제외한 실제 공격 시간과 함께 읽습니다.",
-        "영웅 특성별 발동 획득과 소비를 같은 시간축에서 비교합니다."
-      ]
+      bullets: [
+        '비슷한 조건의 로그를 고른 뒤 공격 가능 시간과 쿨기 횟수부터 봅니다.',
+        '유지율은 무적·대상 교체를 제외한 실제 공격 시간과 함께 읽습니다.',
+        '영웅 특성별 발동 획득과 소비를 같은 시간축에서 비교합니다.',
+      ],
     },
     {
-      "title": "14. 연사 우선순위가 가이드마다 다른 이유",
-      "paragraphs": [
-        "공개 가이드에는 일반 형상 연사를 생성기와 강화 채찍 뒤에 놓는 설명과, 시즌 2 추가 연사를 높게 처리하는 설명이 함께 있습니다. 이를 읽고 둘 중 하나가 무조건 틀렸다고 판단하기보다 어떤 사용권과 장비를 전제로 하는지 확인해야 합니다. 일반 형상 사용권은 남은 형상 시간 안에서 배치할 여지가 있지만, 세트 사용권은 다음 촉수 격돌이나 형상 버튼과의 관계가 있어 별도 처리가 필요합니다.",
-        "실전에서는 자원 초과와 중요한 지속 피해 만료를 먼저 막고, 지금 연사를 미루면 무엇을 잃는지 판단하세요. 다음 격돌에서 추가 사용권을 얻을 예정인지, 형상이 곧 끝나는지, 주 대상이 사라지는지를 봅니다. 반대로 사용권과 시간에 여유가 있는데 무조건 연사부터 눌러 충전이 가득 찬 생성기나 집정관 강화 채찍의 기회를 잃는 것도 피해야 합니다. 그래서 차트는 세트·종료 임박 연사와 여유 있는 일반 연사를 설명에서 분리합니다.",
-        "시뮬레이션 코드는 효과를 이해하는 보조 자료지만 공식 변경보다 항상 최신인 것은 아닙니다. 이번 대조에서는 형상 진입 광기나 추가 연사 계수에 오래된 값이 남은 경우를 확인했습니다. 현재 패치 노트와 툴팁을 우선하고 구현을 개인 심크 결과처럼 제시하지 않습니다. 최신 실제 로그가 확보되지 않은 부분은 사용률·DPS 증가율을 임의로 채우지 않습니다."
+      title: '14. 연사 우선순위가 가이드마다 다른 이유',
+      paragraphs: [
+        '공개 가이드에는 일반 형상 연사를 생성기와 강화 채찍 뒤에 놓는 설명과, 시즌 2 추가 연사를 높게 처리하는 설명이 함께 있습니다. 이를 읽고 둘 중 하나가 무조건 틀렸다고 판단하기보다 어떤 사용권과 장비를 전제로 하는지 확인해야 합니다. 일반 형상 사용권은 남은 형상 시간 안에서 배치할 여지가 있지만, 세트 사용권은 다음 촉수 격돌이나 형상 버튼과의 관계가 있어 별도 처리가 필요합니다.',
+        '실전에서는 자원 초과와 중요한 지속 피해 만료를 먼저 막고, 지금 연사를 미루면 무엇을 잃는지 판단하세요. 다음 격돌에서 추가 사용권을 얻을 예정인지, 형상이 곧 끝나는지, 주 대상이 사라지는지를 봅니다. 반대로 사용권과 시간에 여유가 있는데 무조건 연사부터 눌러 충전이 가득 찬 생성기나 집정관 강화 채찍의 기회를 잃는 것도 피해야 합니다. 그래서 차트는 세트·종료 임박 연사와 여유 있는 일반 연사를 설명에서 분리합니다.',
+        '시뮬레이션 코드는 효과를 이해하는 보조 자료지만 공식 변경보다 항상 최신인 것은 아닙니다. 이번 대조에서는 형상 진입 광기나 추가 연사 계수에 오래된 값이 남은 경우를 확인했습니다. 현재 패치 노트와 툴팁을 우선하고 구현을 개인 심크 결과처럼 제시하지 않습니다. 최신 실제 로그가 확보되지 않은 부분은 사용률·DPS 증가율을 임의로 채우지 않습니다.',
       ],
-      "bullets": [
-        "일반 형상 연사와 세트 추가 연사의 조건을 구분합니다.",
-        "형상 종료·다음 격돌·대상 사망 전에 회수할 사용권을 확인합니다.",
-        "수치가 충돌하면 날짜와 전제를 밝히고 확인되지 않은 증가율을 만들지 않습니다."
-      ]
-    }
+      bullets: [
+        '일반 형상 연사와 세트 추가 연사의 조건을 구분합니다.',
+        '형상 종료·다음 격돌·대상 사망 전에 회수할 사용권을 확인합니다.',
+        '수치가 충돌하면 날짜와 전제를 밝히고 확인되지 않은 증가율을 만들지 않습니다.',
+      ],
+    },
   ],
-  "opener": {
-    "title": "집정관 단일 오프닝 전투 흐름 · 시즌 2 4세트",
-    "summary": "깨어난 악몽을 선택한 단일 예시입니다. 불행이면 고통 단계를 생략합니다. 4세트가 없으면 형상 전 연사를 생략하며, 차트 끝에서는 단일 우선순위로 전환합니다. 전투 전에 어둠의 형상과 인내를 확인하세요.",
-    "steps": [
+  opener: {
+    title: '집정관 단일 오프닝 전투 흐름 · 시즌 2 4세트',
+    summary: '깨어난 악몽을 선택한 단일 예시입니다. 불행이면 고통 단계를 생략합니다. 4세트가 없으면 형상 전 연사를 생략하며, 차트 끝에서는 단일 우선순위로 전환합니다. 전투 전에 어둠의 형상과 인내를 확인하세요.',
+    steps: [
       {
-        "skillId": "8092",
-        "label": "정신 분열",
-        "phase": "전투 직전",
-        "trigger": "풀 시각에 적중",
-        "note": "풀 타이머에 맞춰 미리 시전을 시작합니다. 세트 사용권을 전투 전에 만든다는 뜻이 아닙니다. 예정에 없는 선공을 하지 마세요."
+        skillId: '8092',
+        label: '정신 분열',
+        phase: '전투 직전',
+        trigger: '풀 시각에 적중',
+        note: '풀 타이머에 맞춰 미리 시전을 시작합니다. 세트 사용권을 전투 전에 만든다는 뜻이 아닙니다. 예정에 없는 선공을 하지 마세요.',
       },
       {
-        "skillId": "1227280",
-        "label": "촉수 격돌",
-        "phase": "전투 시작",
-        "trigger": "교전 후 사용",
-        "note": "손길 적용과 4세트 추가 연사를 준비합니다. 사용권이 전투 시작에 초기화될 수 있으므로 교전 전에 확보해 둔다고 가정하지 않습니다."
+        skillId: '1227280',
+        label: '촉수 격돌',
+        phase: '전투 시작',
+        trigger: '교전 후 사용',
+        note: '손길 적용과 4세트 추가 연사를 준비합니다. 사용권이 전투 시작에 초기화될 수 있으므로 교전 전에 확보해 둔다고 가정하지 않습니다.',
       },
       {
-        "skillId": "589",
-        "label": "고통",
-        "phase": "지속 피해",
-        "trigger": "깨어난 악몽 선택",
-        "note": "불행 빌드라면 손길로 함께 적용됐는지 확인하고 이 직접 시전을 생략합니다. 두 선택 노드를 동시에 적용하지 않습니다."
+        skillId: '589',
+        label: '고통',
+        phase: '지속 피해',
+        trigger: '깨어난 악몽 선택',
+        note: '불행 빌드라면 손길로 함께 적용됐는지 확인하고 이 직접 시전을 생략합니다. 두 선택 노드를 동시에 적용하지 않습니다.',
       },
       {
-        "skillId": "120644",
-        "label": "후광",
-        "phase": "집정관 시작",
-        "trigger": "교전·범위 확인",
-        "note": "후광과 이어지는 추가 생성으로 강화 채찍을 얻기 시작합니다. 주변 비전투 몹을 끌어오지 않을 위치인지 확인합니다."
+        skillId: '120644',
+        label: '후광',
+        phase: '집정관 시작',
+        trigger: '교전·범위 확인',
+        note: '후광과 이어지는 추가 생성으로 강화 채찍을 얻기 시작합니다. 주변 비전투 몹을 끌어오지 않을 위치인지 확인합니다.',
       },
       {
-        "skillId": "1242173",
-        "label": "세트 연사",
-        "phase": "형상 전",
-        "trigger": "4세트 사용권 있음",
-        "note": "촉수 격돌로 받은 연사를 먼저 처리해 형상 버튼을 비웁니다. 세트가 없으면 아직 이 단계의 연사가 없으므로 생략합니다."
+        skillId: '1242173',
+        label: '세트 연사',
+        phase: '형상 전',
+        trigger: '4세트 사용권 있음',
+        note: '촉수 격돌로 받은 연사를 먼저 처리해 형상 버튼을 비웁니다. 세트가 없으면 아직 이 단계의 연사가 없으므로 생략합니다.',
       },
       {
-        "skillId": "228260",
-        "label": "공허의 형상",
-        "phase": "극딜 진입",
-        "trigger": "대상 공격 가능",
-        "note": "형상 진입 자동 연사가 발생하고 기본 직접 사용권이 열립니다. 연마 또는 태고의 광기 중 실제 선택한 효과를 따릅니다."
+        skillId: '228260',
+        label: '공허의 형상',
+        phase: '극딜 진입',
+        trigger: '대상 공격 가능',
+        note: '형상 진입 자동 연사가 발생하고 기본 직접 사용권이 열립니다. 연마 또는 태고의 광기 중 실제 선택한 효과를 따릅니다.',
       },
       {
-        "skillId": "10060",
-        "label": "마력 주입",
-        "phase": "극딜 정렬",
-        "trigger": "형상과 맞추기",
-        "note": "물약과 사용 장신구도 전투 계획에 맞춥니다. 파티의 마력 주입 대상은 전투 전에 정하고 본인 가속 적용 조건을 확인합니다."
+        skillId: '10060',
+        label: '마력 주입',
+        phase: '극딜 정렬',
+        trigger: '형상과 맞추기',
+        note: '물약과 사용 장신구도 전투 계획에 맞춥니다. 파티의 마력 주입 대상은 전투 전에 정하고 본인 가속 적용 조건을 확인합니다.',
       },
       {
-        "skillId": "335467",
-        "label": "광기",
-        "phase": "유지 시작",
-        "trigger": "사용 가능 자원",
-        "note": "광기를 적용한 뒤 단일 우선순위로 넘어갑니다. 자원이 부족하면 사용 가능한 생성기를 쓰며 기다리는 공백을 만들지 않습니다."
-      }
-    ]
+        skillId: '335467',
+        label: '광기',
+        phase: '유지 시작',
+        trigger: '사용 가능 자원',
+        note: '광기를 적용한 뒤 단일 우선순위로 넘어갑니다. 자원이 부족하면 사용 가능한 생성기를 쓰며 기다리는 공백을 만들지 않습니다.',
+      },
+    ],
   },
-  "priority": [
+  priority: [
     {
-      "skillId": "34914",
-      "label": "손길 유지",
-      "note": "대상이 충분히 오래 살고 손길이 끝나기 전에 갱신합니다. 불행이면 고통도 함께 유지되며, 촉수 격돌로 적용할 수 있으면 중복 수동 시전을 줄입니다."
+      skillId: '34914',
+      label: '손길 유지',
+      note: '대상이 충분히 오래 살고 손길이 끝나기 전에 갱신합니다. 불행이면 고통도 함께 유지되며, 촉수 격돌로 적용할 수 있으면 중복 수동 시전을 줄입니다.',
     },
     {
-      "skillId": "589",
-      "label": "고통 확인",
-      "note": "깨어난 악몽 빌드에서는 직접 유지합니다. 불행으로 이미 붙어 있다면 이 항목 때문에 따로 누르지 않습니다."
+      skillId: '589',
+      label: '고통 확인',
+      note: '깨어난 악몽 빌드에서는 직접 유지합니다. 불행으로 이미 붙어 있다면 이 항목 때문에 따로 누르지 않습니다.',
     },
     {
-      "skillId": "120644",
-      "label": "후광",
-      "note": "대상을 계속 공격할 수 있고 불필요한 선공 위험이 없을 때 사용합니다. 추가 후광과 강화 채찍을 회수할 시간을 함께 봅니다."
+      skillId: '120644',
+      label: '후광',
+      note: '대상을 계속 공격할 수 있고 불필요한 선공 위험이 없을 때 사용합니다. 추가 후광과 강화 채찍을 회수할 시간을 함께 봅니다.',
     },
     {
-      "skillId": "228260",
-      "label": "형상·주입",
-      "note": "배정한 극딜 구간에 사용합니다. 이미 형상이거나 연사 사용권이 버튼을 차지했다면 형상을 다시 누르려 기다리지 않습니다."
+      skillId: '228260',
+      label: '형상·주입',
+      note: '배정한 극딜 구간에 사용합니다. 이미 형상이거나 연사 사용권이 버튼을 차지했다면 형상을 다시 누르려 기다리지 않습니다.',
     },
     {
-      "skillId": "335467",
-      "label": "만료·초과 전에 광기",
-      "note": "주 대상의 광기가 끝나거나 다음 생성으로 상한을 넘기기 전에 소비합니다. 태고의 광기를 선택했다면 형상 안 연장 조건도 함께 확인합니다."
+      skillId: '335467',
+      label: '만료·초과 전에 광기',
+      note: '주 대상의 광기가 끝나거나 다음 생성으로 상한을 넘기기 전에 소비합니다. 태고의 광기를 선택했다면 형상 안 연장 조건도 함께 확인합니다.',
     },
     {
-      "skillId": "1242173",
-      "label": "추가 연사 정리",
-      "note": "세트로 얻었거나 형상 종료가 임박한 사용권은 미루지 않습니다. 여유 있는 일반 형상 연사는 아래 핵심 생성기와 강화 채찍 사이에 배치할 수 있습니다."
+      skillId: '1242173',
+      label: '추가 연사 정리',
+      note: '세트로 얻었거나 형상 종료가 임박한 사용권은 미루지 않습니다. 여유 있는 일반 형상 연사는 아래 핵심 생성기와 강화 채찍 사이에 배치할 수 있습니다.',
     },
     {
-      "skillId": "1227280",
-      "label": "격돌 충전 낭비 방지",
-      "note": "충전이 가득 차거나 손길 적용이 필요하면 사용합니다. 새 적 합류가 임박했다면 충전 하나를 남길 필요와 지금의 손실을 비교합니다."
+      skillId: '1227280',
+      label: '격돌 충전 낭비 방지',
+      note: '충전이 가득 차거나 손길 적용이 필요하면 사용합니다. 새 적 합류가 임박했다면 충전 하나를 남길 필요와 지금의 손실을 비교합니다.',
     },
     {
-      "skillId": "8092",
-      "label": "정신 분열",
-      "note": "충전과 통찰을 오래 묵히지 않습니다. 현재 특성에 없는 추가 충전을 가정하지 말고 광기 여유를 확인한 뒤 사용합니다."
+      skillId: '8092',
+      label: '정신 분열',
+      note: '충전과 통찰을 오래 묵히지 않습니다. 현재 특성에 없는 추가 충전을 가정하지 말고 광기 여유를 확인한 뒤 사용합니다.',
     },
     {
-      "skillId": "391403",
-      "label": "강화 채찍",
-      "note": "현신하는 권능으로 얻은 정신의 채찍: 광기를 소비합니다. 광기가 붙은 주 대상에 사용하고 다음 후광 생성으로 사용 기회를 잃지 않는지 봅니다."
+      skillId: '391403',
+      label: '강화 채찍',
+      note: '현신하는 권능으로 얻은 정신의 채찍: 광기를 소비합니다. 광기가 붙은 주 대상에 사용하고 다음 후광 생성으로 사용 기회를 잃지 않는지 봅니다.',
     },
     {
-      "skillId": "32379",
-      "label": "조건 맞는 죽음",
-      "note": "처형 체력 조건과 죽음예언자 선택 여부를 확인합니다. 남은 사용권과 핵심 생성기를 무조건 미루는 만능 최우선 기술은 아닙니다."
+      skillId: '32379',
+      label: '조건 맞는 죽음',
+      note: '처형 체력 조건과 죽음예언자 선택 여부를 확인합니다. 남은 사용권과 핵심 생성기를 무조건 미루는 만능 최우선 기술은 아닙니다.',
     },
     {
-      "skillId": "15407",
-      "label": "빈 시간 채찍",
-      "note": "상위 조건이 없는 동안 사용합니다. 일반 채찍을 완주하느라 새로 준비된 중요한 기술을 장시간 미루지 않습니다."
-    }
-  ]
+      skillId: '15407',
+      label: '빈 시간 채찍',
+      note: '상위 조건이 없는 동안 사용합니다. 일반 채찍을 완주하느라 새로 준비된 중요한 기술을 장시간 미루지 않습니다.',
+    },
+  ],
+  talentBuilds: [
+    {
+      id: 'single-target',
+      label: '단일',
+      code: 'CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMGz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMGz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps',
+      sourceLabel: 'Single Target',
+      checkedAt: '2026-10-08',
+      note: '단일 우두머리 전투용 견본입니다.',
+      validation: {
+        specId: 258,
+        heroTreeId: 19,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '83285b30823bce2eb38957e49c5514289eff789df65eeaead17ede1399e1daa9',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '집정관',
+    },
+    {
+      id: 'mythic-plus',
+      label: '쐐기',
+      code: 'CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGD2mZGzMzYDZGLbz0AMDwMbmhZzAQGjFAMzgMmZmxsxMbLDwMxA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGD2mZGzMzYDZGLbz0AMDwMbmhZzAQGjFAMzgMmZmxsxMbLDwMxA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps',
+      sourceLabel: 'Mythic+',
+      checkedAt: '2026-10-08',
+      note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+      validation: {
+        specId: 258,
+        heroTreeId: 19,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '9e0f469bebef0f6cc97cd91555238a7a2a4c906b283bc2a228542ea572b59092',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '집정관',
+    },
+    {
+      id: 'raid',
+      label: '레이드',
+      code: 'CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps',
+      sourceLabel: 'Raid Cleave',
+      checkedAt: '2026-10-08',
+      note: '추가 대상이 있는 레이드 전투용 견본입니다. 우두머리의 대상 수와 지속 시간을 확인하세요.',
+      validation: {
+        specId: 258,
+        heroTreeId: 19,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'ed9a68079788f3d264cf01b1fe0d4b5018800a6c72a22a77241266404200c0ec',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '집정관',
+    },
+  ],
+  logReview: {
+    checkedAt: '2026-10-08',
+    samples: [
+      {
+        context: '신화 레이드 전체 우두머리',
+        parseCount: 13261,
+        window: 'Based on the top 50% of data in the last 14 days.',
+        refreshed: '14 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/shadow/priest/raid/talents/mythic/all-bosses',
+        representativeLog: 'https://www.warcraftlogs.com/reports/GNRCXMnd3kh1DTP9#fight=2',
+        recommendedCode: 'CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMgxMzMmNmZbZAmBDA',
+        validation: {
+          specId: 258,
+          heroTreeId: 19,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+      {
+        context: '쐐기 7단 이상 전체 던전',
+        parseCount: 64702,
+        window: 'Based on all keys 7 and above in the last 14 days.',
+        refreshed: '13 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/talents/10/all-dungeons/this-week',
+        representativeLog: 'https://www.warcraftlogs.com/reports/YKGvdxPny8Lm6fH9#fight=15',
+        recommendedCode: 'CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbID2mpBYGgZ2MDzmBgMGLAYmBMzMzMmNmZbZAmBDA',
+        validation: {
+          specId: 258,
+          heroTreeId: 19,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+    ],
+    scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+    individual: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      durationDifference: 0.0009812418826309775,
+      matchedAugmentation: false,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/Yydv42cmtMnDX69q#fight=4&source=170',
+          startedAt: '2026-10-07T01:03:49.262Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 383830,
+          itemLevelBracket: 329,
+          heroTree: 19,
+          augmentationCount: 1,
+          healerCount: 5,
+          casts: [
+            {
+              spellId: '1236994',
+              count: 2,
+            },
+            {
+              spellId: '1242173',
+              count: 40,
+            },
+            {
+              spellId: '589',
+              count: 7,
+            },
+            {
+              spellId: '21562',
+              count: 1,
+            },
+            {
+              spellId: '19236',
+              count: 2,
+            },
+            {
+              spellId: '228260',
+              count: 3,
+            },
+            {
+              spellId: '121536',
+              count: 2,
+            },
+            {
+              spellId: '586',
+              count: 9,
+            },
+            {
+              spellId: '1227280',
+              count: 29,
+            },
+            {
+              spellId: '15407',
+              count: 64,
+            },
+            {
+              spellId: '17',
+              count: 9,
+            },
+            {
+              spellId: '32379',
+              count: 16,
+            },
+            {
+              spellId: '8092',
+              count: 44,
+            },
+            {
+              spellId: '10060',
+              count: 3,
+            },
+            {
+              spellId: '15286',
+              count: 3,
+            },
+            {
+              spellId: '34914',
+              count: 6,
+            },
+            {
+              spellId: '335467',
+              count: 57,
+            },
+            {
+              spellId: '391403',
+              count: 24,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '1295885',
+              count: 3,
+            },
+            {
+              spellId: '120644',
+              count: 6,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '395152',
+              activeMs: 215076,
+              uses: 25,
+            },
+            {
+              spellId: '10060',
+              activeMs: 45010,
+              uses: 3,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=22',
+          startedAt: '2026-10-08T00:17:08.498Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 384207,
+          itemLevelBracket: 329,
+          heroTree: 19,
+          augmentationCount: 0,
+          healerCount: 5,
+          casts: [
+            {
+              spellId: '228260',
+              count: 4,
+            },
+            {
+              spellId: '335467',
+              count: 57,
+            },
+            {
+              spellId: '586',
+              count: 9,
+            },
+            {
+              spellId: '121536',
+              count: 1,
+            },
+            {
+              spellId: '391403',
+              count: 24,
+            },
+            {
+              spellId: '357214',
+              count: 1,
+            },
+            {
+              spellId: '589',
+              count: 2,
+            },
+            {
+              spellId: '8092',
+              count: 43,
+            },
+            {
+              spellId: '17',
+              count: 12,
+            },
+            {
+              spellId: '10060',
+              count: 8,
+            },
+            {
+              spellId: '1242173',
+              count: 47,
+            },
+            {
+              spellId: '120644',
+              count: 7,
+            },
+            {
+              spellId: '1236616',
+              count: 1,
+            },
+            {
+              spellId: '1236994',
+              count: 1,
+            },
+            {
+              spellId: '73325',
+              count: 1,
+            },
+            {
+              spellId: '15407',
+              count: 57,
+            },
+            {
+              spellId: '1227280',
+              count: 32,
+            },
+            {
+              spellId: '19236',
+              count: 4,
+            },
+            {
+              spellId: '32379',
+              count: 5,
+            },
+            {
+              spellId: '15286',
+              count: 2,
+            },
+            {
+              spellId: '358733',
+              count: 7,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 52675,
+              uses: 4,
+            },
+          ],
+        },
+      ],
+      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    },
+  },
 };
 
 guideManuscripts['druid-restoration'] = {
   patch: '12.1',
-  researchedAt: '2026-10-03',
+  researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: '2026-10-03 재검토: Blizzard 12.1 노트와 8월 18·19·25·31일, 9월 22일 긴급 수정, 시즌 2 세트와 주요 주문의 ko.wowhead 브라우저 대조를 반영했습니다. Dreamgrove 공개 자료와 2026-08-25 확인 시점 Archon 과거 집계는 운용 참고이며 현재 선택률은 재집계하지 못했습니다.',
+  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
   graphCenterSkillId: '18562',
   summary: '12.1 회복 드루이드는 회복을 많이 뿌리는 방식에서 회복 5개로 풍요를 켜고 재생을 반복하는 방식으로 무게가 옮겨갔습니다. 피어나는 생명 대상에는 여러 지속 치유를 겹친 뒤 신속한 치유로 상록숲의 3연속 만개를 일으킵니다. 과성장은 자연의 신속함 뒤 재생에 지속 치유를 붙이는 특성이고, 신록 주입은 신속한 치유의 지속 치유 소모를 막습니다. 시즌 2 세트의 발생력은 회복과 큰 치유 기술 사용에 맞춰 지속 치유를 15% 올립니다. 9월 22일 전체 PvE 치유량이 4% 더 올랐고 광합성이 다른 플레이어의 지속 치유에서 발동하던 오류는 수정됐습니다. 8월 25일 확인 시점 로그 집계에서는 야생추적자가 많이 쓰였지만 현재 선택률은 다시 확인하지 못했습니다.',
   sourceNote: 'Blizzard 12.1 노트는 과성장·청명의 섬광 추가와 풍요·신속한 치유·상록숲·신록 주입 변경을 명시합니다. 8월 18일 PvE 전체 치유량 4% 상향에 이어 8월 25일에는 회복·싹틔우기 치유량 15%, 급속 성장 10% 증가, 자연의 선물 10%(기존 20%), 상록숲 5명·피어나는 생명 최종 치유량의 48%(기존 6명·40%), 4세트 발생력 지속시간 8초 증가(기존 4초)가 적용됐습니다. 8월 31일에는 숲 수호자 대상 우선순위와 상록숲 6명 치유 오류가 수정됐고, 9월 22일 전체 치유량이 별도로 4% 상향되며 광합성 오류가 수정됐습니다. 같은 날 야생추적자 폭발하는 성장물의 공격력 15% 상향은 피해에만 적용돼 치유 운용은 바뀌지 않습니다. 한국어 긴급 수정 공지는 이 날짜들을 하루 늦게 표기합니다. 10월 6일 예정 조정의 회복 항목(대규모 개화)은 PvP뿐이라 넣지 않았습니다. Wowhead 한국어 주문 페이지에서 시즌 2 2세트 1296609·4세트 1296610, 상록숲 392167, 숲 수호자 1226140, 세나리우스의 권능 455797 문구를 2026-10-03에 다시 확인했습니다. 8월 25일 조회한 Archon 14일 집계는 당시 야생추적자 선택률이 영웅 공격대 99.1%, 쐐기 +7~19 89.4%였다는 과거 자료이며, 10월 3일 재조회는 접근이 거부돼 그 뒤 선택률은 확인하지 못했습니다.',
@@ -34272,6 +49769,34 @@ guideManuscripts['druid-restoration'] = {
       updated: '패치 12.1 / 2026-08-17 갱신',
       note: 'nance 작성 공개 이론공식 자료에서 야생추적자 기본값, 공격대·쐐기 치유 흐름, 과성장과 회복 조기 종료 오류, 로그 점검 경로를 확인했습니다.',
     },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 레이드 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/restoration/druid/raid/talents/mythic/all-bosses',
+      updated: '2026-10-08 확인',
+      note: '신화 레이드 전체 우두머리, 로그 11,449건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 쐐기 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/restoration/druid/mythic-plus/talents/10/all-dungeons/this-week',
+      updated: '2026-10-08 확인',
+      note: '쐐기 7단 이상 전체 던전, 로그 76,044건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=21',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T02:16:38.458Z · 장비 구간 326 · 406.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/31AgZkCWYNf9cjKz#fight=16&source=191',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T01:03:07.097Z · 장비 구간 326 · 404.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
   ],
   evidence: [
     'Blizzard 12.1 공식 노트는 풍요를 여러 중첩이 조금씩 재생을 강화하는 특성에서 회복 5개 이상일 때 큰 보상을 주는 특성으로 바꿨습니다. 라이브 값은 재생 마나 소모량 60% 감소와 치명타 및 극대화율 60% 증가입니다.',
@@ -34290,6 +49815,7 @@ guideManuscripts['druid-restoration'] = {
     '시즌 2 2세트는 회복 사용 시 15% 확률로 발생력을 주고, 발생력은 8초 동안 자신의 모든 지속 치유를 15% 올리며 중첩됩니다. 4세트는 자연의 신속함·평온·화신 또는 영혼 소집 사용 시 발생력을 확정으로 줍니다(2026-10-03 한국어 툴팁).',
     '8월 31일 긴급 수정으로 숲 수호자가 신속한 치유·급속 성장 대상을 우선 치유하고, 상록숲이 6명을 치유하던 오류가 5명으로 수정됐습니다.',
     '9월 22일 폭발하는 성장물 공격력 15% 상향은 피바라미 덩굴 폭발 피해에만 적용됩니다. 공생체 꽃 치유와 침착한 관리인의 회복 지속 치유 6%는 바뀌지 않았습니다.',
+    '10월 8일 드루이드 회복의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
   ],
   caveats: [
     '힐러 HPS는 공대가 받은 피해량, 다른 힐러 수와 배정, 생존기 사용에 따라 크게 달라집니다. Archon HPS는 빌드 사용 현황을 보는 참고값이며 개인 주문 우선순위의 정답으로 쓰지 않습니다.',
@@ -34299,6 +49825,8 @@ guideManuscripts['druid-restoration'] = {
     'Dreamgrove가 기록한 과성장 오대상 문제는 8월 20일 공식 수정이 확인됐습니다. 8월 19일 긴급 수정에는 가속을 얻거나 잃을 때 회복이 일찍 사라지던 문제 수정이 있지만, Dreamgrove가 적은 육성의 휴면 관련 회복 조기 종료와 같은 현상인지는 확인하지 못해 수치 계산에서 제외합니다.',
     '영웅 특성 선택률이 낮다고 숲의 수호자가 사용할 수 없는 것은 아닙니다. 다만 급속 성장 마나 부담과 숲 수호자 발동 시점을 따로 익혀야 하므로 기본 가이드는 야생추적자를 먼저 다룹니다.',
     '세나리우스의 권능은 회복에서 신속한 치유 치유량 20% 증가입니다. 쿨다운을 줄이는 효과로 설명하던 이전 표현은 툴팁과 맞지 않아 고쳤습니다.',
+    '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
   ],
   blocks: [
     {
@@ -34671,13 +50199,373 @@ guideManuscripts['druid-restoration'] = {
       note: '다음 피해 준비와 유틸리티가 끝난 안전한 시간에 사용하는 기본 공격 주문입니다.',
     },
   ],
+  talentBuilds: [
+    {
+      id: 'single-target',
+      label: '단일',
+      code: 'CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer',
+      sourceLabel: 'Raid  (Best)',
+      checkedAt: '2026-10-08',
+      note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+      validation: {
+        specId: 105,
+        heroTreeId: 22,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'd44c72082683e273783ff1c150ec34121546b1999a1d2e5356fec27c552d8376',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '야생추적자',
+    },
+    {
+      id: 'mythic-plus',
+      label: '쐐기',
+      code: 'CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGGDAAAAAAAGAACAAYWmZrZbmFbMmZgZWANDAwMDADA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGGDAAAAAAAGAACAAYWmZrZbmFbMmZgZWANDAwMDADA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer',
+      sourceLabel: 'Mythic+  (Best)',
+      checkedAt: '2026-10-08',
+      note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+      validation: {
+        specId: 105,
+        heroTreeId: 22,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '6e71ab15f53e81023b59b1dbca095e44e8456a71b6693d8dc295b5c8c60f406c',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '야생추적자',
+    },
+    {
+      id: 'raid',
+      label: '레이드',
+      code: 'CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer',
+      sourceLabel: 'Raid  (Best)',
+      checkedAt: '2026-10-08',
+      note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+      validation: {
+        specId: 105,
+        heroTreeId: 22,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'd44c72082683e273783ff1c150ec34121546b1999a1d2e5356fec27c552d8376',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '야생추적자',
+    },
+  ],
+  logReview: {
+    checkedAt: '2026-10-08',
+    samples: [
+      {
+        context: '신화 레이드 전체 우두머리',
+        parseCount: 11449,
+        window: 'Based on the top 50% of data in the last 14 days.',
+        refreshed: '15 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/restoration/druid/raid/talents/mythic/all-bosses',
+        representativeLog: 'https://www.warcraftlogs.com/reports/dcL1Cx8BaGjvwpbN#fight=11',
+        recommendedCode: 'CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAAAAwsNzSz2Mb2YMzMYGY0MAAzMAMA',
+        validation: {
+          specId: 105,
+          heroTreeId: 22,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+      {
+        context: '쐐기 7단 이상 전체 던전',
+        parseCount: 76044,
+        window: 'Based on all keys 7 and above in the last 14 days.',
+        refreshed: '14 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/restoration/druid/mythic-plus/talents/10/all-dungeons/this-week',
+        representativeLog: 'https://www.warcraftlogs.com/reports/vaJcbxRt6HK9dNqV#fight=50',
+        recommendedCode: 'CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMzsMsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGegZAAAAAAAwAAAAAgZbmtmtZWsxYmBmZB0MAAzMAMA',
+        validation: {
+          specId: 105,
+          heroTreeId: 22,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+    ],
+    scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+    individual: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      durationDifference: 0.0030586989447242367,
+      matchedAugmentation: false,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=21',
+          startedAt: '2026-10-08T02:16:38.458Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 406055,
+          itemLevelBracket: 326,
+          heroTree: 22,
+          augmentationCount: 1,
+          healerCount: 5,
+          casts: [
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '33763',
+              count: 21,
+            },
+            {
+              spellId: '48438',
+              count: 23,
+            },
+            {
+              spellId: '774',
+              count: 193,
+            },
+            {
+              spellId: '740',
+              count: 2,
+            },
+            {
+              spellId: '391528',
+              count: 6,
+            },
+            {
+              spellId: '6262',
+              count: 1,
+            },
+            {
+              spellId: '197626',
+              count: 9,
+            },
+            {
+              spellId: '5176',
+              count: 10,
+            },
+            {
+              spellId: '8921',
+              count: 1,
+            },
+            {
+              spellId: '18562',
+              count: 34,
+            },
+            {
+              spellId: '132158',
+              count: 6,
+            },
+            {
+              spellId: '102401',
+              count: 3,
+            },
+            {
+              spellId: '29166',
+              count: 2,
+            },
+            {
+              spellId: '8936',
+              count: 83,
+            },
+            {
+              spellId: '22812',
+              count: 1,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '413984',
+              activeMs: 12274,
+              uses: 1,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/31AgZkCWYNf9cjKz#fight=16&source=191',
+          startedAt: '2026-10-07T01:03:07.097Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 404813,
+          itemLevelBracket: 326,
+          heroTree: 22,
+          augmentationCount: 0,
+          healerCount: 5,
+          casts: [
+            {
+              spellId: '18562',
+              count: 30,
+            },
+            {
+              spellId: '33763',
+              count: 23,
+            },
+            {
+              spellId: '768',
+              count: 5,
+            },
+            {
+              spellId: '391528',
+              count: 5,
+            },
+            {
+              spellId: '1291894',
+              count: 3,
+            },
+            {
+              spellId: '8936',
+              count: 117,
+            },
+            {
+              spellId: '22568',
+              count: 1,
+            },
+            {
+              spellId: '22812',
+              count: 3,
+            },
+            {
+              spellId: '48438',
+              count: 21,
+            },
+            {
+              spellId: '1822',
+              count: 4,
+            },
+            {
+              spellId: '29166',
+              count: 3,
+            },
+            {
+              spellId: '740',
+              count: 2,
+            },
+            {
+              spellId: '22842',
+              count: 2,
+            },
+            {
+              spellId: '252216',
+              count: 1,
+            },
+            {
+              spellId: '5176',
+              count: 5,
+            },
+            {
+              spellId: '774',
+              count: 147,
+            },
+            {
+              spellId: '5487',
+              count: 2,
+            },
+            {
+              spellId: '102342',
+              count: 4,
+            },
+            {
+              spellId: '1236994',
+              count: 2,
+            },
+            {
+              spellId: '1079',
+              count: 3,
+            },
+            {
+              spellId: '5221',
+              count: 3,
+            },
+            {
+              spellId: '132158',
+              count: 6,
+            },
+          ],
+          externalBuffs: [],
+        },
+      ],
+      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    },
+  },
 };
 
 guideManuscripts['paladin-holy'] = {
   patch: '12.1',
   researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: '2026-10-08 공식 긴급 수정·기존 운용 대조. 최신 로그, 특성 견본의 노드·연결·포인트 전수 검수 미완료.',
+  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
   graphCenterSkillId: '20473',
   extraSkills: [],
   summary: '12.1 신성 성기사는 신성 충격으로 신성한 힘을 만들고, 영광의 서약 또는 영원의 불꽃으로 한 명을 빠르게 살리는 즉시 회복형 힐러입니다. 공격대에서는 태양의 사자와 영구 봉화가 기본이고, 쐐기에서는 고결의 봉화 9초 안에 직접 치유를 몰아넣는 운용이 핵심입니다. 8월 집계에서 고단 비중이 더 높았던 빛대장장이는 신성한 보루와 신성한 무기를 피해 전에 배치하는 별도 운용이 필요합니다. 티르의 해방은 현재 직접 누르는 기술이 아니라 응징의 격노에 자동으로 붙는 효과이고, 순교자의 빛도 과거 액티브 주문이 아닌 패시브 특성입니다.',
@@ -35177,6 +51065,34 @@ guideManuscripts['paladin-holy'] = {
       updated: '2026-08-27 원문 / 2026-10-08 확인',
       note: '신성한 힘 5 소비, 빛 주입 빛의 섬광, 고결의 봉화와 천상의 종 연계, 목적이 있는 성스러운 빛 사용을 확인했습니다. 실시간 사용률 자료는 아닙니다.',
     },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 레이드 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/holy/paladin/raid/talents/mythic/all-bosses',
+      updated: '2026-10-08 확인',
+      note: '신화 레이드 전체 우두머리, 로그 20,909건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 쐐기 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/holy/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+      updated: '2026-10-08 확인',
+      note: '쐐기 7단 이상 전체 던전, 로그 299,552건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/J1FbyAjdmfckNg6M#fight=14&source=192',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T03:31:24.314Z · 장비 구간 328 · 446.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/MjfYDTCV4GcrnRN2#fight=10&source=25',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T00:49:15.157Z · 장비 구간 328 · 445.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
   ],
   evidence: [
     'Blizzard 최종 12.1 변경점은 모든 치유 19%와 영광의 서약·영원의 불꽃 20% 증가를 함께 적용했습니다. 단일 신성한 힘 소비기를 12.0.5 기준보다 낮게 평가하지 않습니다.',
@@ -35187,6 +51103,7 @@ guideManuscripts['paladin-holy'] = {
     '쐐기 +7~19에서 빛대장장이는 19.2%지만 고단에서는 36.0%입니다. 공격대 선택률만 보고 쐐기 빛대장장이를 부적절한 선택으로 단정하지 않습니다.',
     'Icy Veins와 Wowhead는 12.1에서 영광의 서약 또는 영원의 불꽃을 기본 소비기로 두고, 여명의 빛은 단일 소비기가 넘칠 정도의 다중 부상에 사용한다는 방향이 일치합니다.',
     '9월 11일 빛대장장이에서 적 대상 천상의 울림이 작동하지 않던 수정과 신성의 정화·헌신의 오라 정본을 확인했습니다. 10월 6일 공지의 성기사 변경은 PvP이며 PvE 치유량의 추가 상향으로 취급하지 않습니다.',
+    '10월 8일 성기사 신성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
   ],
   caveats: [
     '힐러 HPS는 파티가 받은 피해량, 다른 힐러 수와 배정, 생존기 겹침에 크게 좌우됩니다. Archon HPS는 현재 빌드 사용 현황을 보는 참고값이며 개인 실력의 단일 점수가 아닙니다.',
@@ -35195,7 +51112,8 @@ guideManuscripts['paladin-holy'] = {
     '순교자의 빛과 티르의 해방은 현재 패시브지만 이름은 과거 액티브 기술과 같습니다. 툴팁과 주문 ID 447985, 1241275를 기준으로 구분합니다.',
     '두 해방 특성은 한국어 공식 이름이 같지만 ID 461278은 낮은 생명력 대상의 소비기 치명타 증가, ID 461287은 치유 일부를 피해로 바꾸는 선택입니다.',
     'PvP 핫픽스의 치유 감소와 응징의 성전사 수치는 PvE 공격대·쐐기 설명에 적용하지 않습니다.',
-    '10월 6일 변경의 적용 근거는 미국 공식 공지입니다. 한국어 공지는 10월 2일판까지 확인됐고 한국 서버의 적용 시각·조정 후 로그는 별도 확인이 필요합니다. 특성 견본 세 종류의 내보내기 문자열과 현재 노드 연결·포인트 검증도 남아 있습니다.',
+    '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
   ],
   blocks: [
     {
@@ -35525,13 +51443,371 @@ guideManuscripts['paladin-holy'] = {
     singleTarget: '단일 구조',
     aoe: '파티·공대 회복',
   },
+  talentBuilds: [
+    {
+      id: 'single-target',
+      label: '단일',
+      code: 'CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer',
+      sourceLabel: 'Raid - Virtue  (Recommended)',
+      checkedAt: '2026-10-08',
+      note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+      validation: {
+        specId: 65,
+        heroTreeId: 50,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'b8c364d029d06046b26720a6724788c276dea610ba6cd5b61e49f5cadf9a44d1',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '태양의 사자',
+    },
+    {
+      id: 'mythic-plus',
+      label: '쐐기',
+      code: 'CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2GzMzMjZmZBmZYZsZmFjmYYMzMMmtMAMAsB2YZmZmlZbmZ2aAAAAWAmhNDMjZYGAAzMMjxoB',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2GzMzMjZmZBmZYZsZmFjmYYMzMMmtMAMAsB2YZmZmlZbmZ2aAAAAWAmhNDMjZYGAAzMMjxoB',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer',
+      sourceLabel: 'M+ - Virtue  (Recommended)',
+      checkedAt: '2026-10-08',
+      note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+      validation: {
+        specId: 65,
+        heroTreeId: 50,
+        points: {
+          '1': 35,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: '81aa2eb510179906e66f50fee0658eb0dd6346ab4b9ebd6b7dfa7f8a0fe24b09',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '태양의 사자',
+    },
+    {
+      id: 'raid',
+      label: '레이드',
+      code: 'CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer',
+      sourceLabel: 'Raid - Virtue  (Recommended)',
+      checkedAt: '2026-10-08',
+      note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+      validation: {
+        specId: 65,
+        heroTreeId: 50,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'b8c364d029d06046b26720a6724788c276dea610ba6cd5b61e49f5cadf9a44d1',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '태양의 사자',
+    },
+  ],
+  logReview: {
+    checkedAt: '2026-10-08',
+    samples: [
+      {
+        context: '신화 레이드 전체 우두머리',
+        parseCount: 20909,
+        window: 'Based on the top 50% of data in the last 14 days.',
+        refreshed: '14 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/holy/paladin/raid/talents/mythic/all-bosses',
+        representativeLog: 'https://www.warcraftlogs.com/reports/d8nk2wHPFWbJXAza#fight=9',
+        recommendedCode: 'CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjhB',
+        validation: {
+          specId: 65,
+          heroTreeId: 50,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+      {
+        context: '쐐기 7단 이상 전체 던전',
+        parseCount: 299552,
+        window: 'Based on all keys 7 and above in the last 14 days.',
+        refreshed: '15 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/holy/paladin/mythic-plus/talents/10/all-dungeons/this-week',
+        representativeLog: 'https://www.warcraftlogs.com/reports/agMpfqNzBrZHJKGm#fight=15',
+        recommendedCode: 'CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMmxMzMGzWGAGA2AbsZmBAAAmZWWWsMzwGbjZwGwMGAgZGAmxY0A',
+        validation: {
+          specId: 65,
+          heroTreeId: 49,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+    ],
+    scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+    individual: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      durationDifference: 0.0034309271336427807,
+      matchedAugmentation: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/J1FbyAjdmfckNg6M#fight=14&source=192',
+          startedAt: '2026-10-07T03:31:24.314Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 446818,
+          itemLevelBracket: 328,
+          heroTree: 50,
+          augmentationCount: 0,
+          healerCount: 4,
+          casts: [
+            {
+              spellId: '1291894',
+              count: 2,
+            },
+            {
+              spellId: '20473',
+              count: 96,
+            },
+            {
+              spellId: '642',
+              count: 2,
+            },
+            {
+              spellId: '156322',
+              count: 57,
+            },
+            {
+              spellId: '200025',
+              count: 23,
+            },
+            {
+              spellId: '375576',
+              count: 11,
+            },
+            {
+              spellId: '633',
+              count: 1,
+            },
+            {
+              spellId: '1236616',
+              count: 2,
+            },
+            {
+              spellId: '275773',
+              count: 30,
+            },
+            {
+              spellId: '31884',
+              count: 4,
+            },
+            {
+              spellId: '26573',
+              count: 5,
+            },
+            {
+              spellId: '1241413',
+              count: 14,
+            },
+            {
+              spellId: '31821',
+              count: 2,
+            },
+            {
+              spellId: '19750',
+              count: 60,
+            },
+            {
+              spellId: '498',
+              count: 3,
+            },
+            {
+              spellId: '115750',
+              count: 1,
+            },
+            {
+              spellId: '415091',
+              count: 13,
+            },
+            {
+              spellId: '190784',
+              count: 4,
+            },
+            {
+              spellId: '853',
+              count: 1,
+            },
+            {
+              spellId: '85222',
+              count: 37,
+            },
+          ],
+          externalBuffs: [],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/MjfYDTCV4GcrnRN2#fight=10&source=25',
+          startedAt: '2026-10-08T00:49:15.157Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 445285,
+          itemLevelBracket: 328,
+          heroTree: 50,
+          augmentationCount: 0,
+          healerCount: 4,
+          casts: [
+            {
+              spellId: '82326',
+              count: 1,
+            },
+            {
+              spellId: '391054',
+              count: 1,
+            },
+            {
+              spellId: '85222',
+              count: 7,
+            },
+            {
+              spellId: '19750',
+              count: 46,
+            },
+            {
+              spellId: '190784',
+              count: 2,
+            },
+            {
+              spellId: '633',
+              count: 1,
+            },
+            {
+              spellId: '1236616',
+              count: 2,
+            },
+            {
+              spellId: '200025',
+              count: 19,
+            },
+            {
+              spellId: '1241413',
+              count: 8,
+            },
+            {
+              spellId: '498',
+              count: 1,
+            },
+            {
+              spellId: '156322',
+              count: 78,
+            },
+            {
+              spellId: '375576',
+              count: 11,
+            },
+            {
+              spellId: '275773',
+              count: 31,
+            },
+            {
+              spellId: '642',
+              count: 1,
+            },
+            {
+              spellId: '20473',
+              count: 108,
+            },
+            {
+              spellId: '1291894',
+              count: 5,
+            },
+            {
+              spellId: '31821',
+              count: 3,
+            },
+            {
+              spellId: '6940',
+              count: 1,
+            },
+            {
+              spellId: '31884',
+              count: 4,
+            },
+          ],
+          externalBuffs: [],
+        },
+      ],
+      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    },
+  },
 };
 
 guideManuscripts['evoker-preservation'] = {
   patch: '12.1',
-  researchedAt: '2026-10-03',
+  researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: 'Blizzard 12.1 최종 변경점, 2026-10-01 영문·2026-10-02 한국어 긴급 수정 누적 공지(8월 25일 보존 PvE 상향, 8월 27일 생명불씨 툴팁 수정, 9월 21일 해체 수정, 9월 22일 PvP 전용 조정), 2026-10-03 Wowhead 한국어 주문 페이지, Icy Veins 2026-08-28 특성·2026-08-13 운용, Wyrmrest Temple 보존 담당자가 작성한 SpiritbloomPro 공개 자료(2026-10-03 재확인), Murlok 2026-10-03 쐐기 상위 50명 집계를 교차 검증했습니다. Archon 수치는 2026-08-26 확인 시점의 과거 집계입니다.',
+  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
   graphCenterSkillId: '364343',
   summary: '12.1 보존 기원사는 꿈의 숨결 1단계 지속 치유를 유지하고, 시간 변칙과 직접 메아리로 다음 피해 대상을 준비한 뒤, 꿈의 숨결이 확정한 메리스라의 축복으로 메아리를 회수하는 힐러입니다. 정수 폭발은 무료 에메랄드 꽃에 써서 시즌 2 살아있는 불꽃과 쌍둥이 메아리를 만들고, 자연 정수는 다시 메아리에 사용합니다. 8월 25일 긴급 수정으로 신록의 품 25%, 살아있는 불꽃 치유 20%, 꿈의 복제 증가량 40%가 적용됐습니다. 공격대와 쐐기 모두 불꽃형성자가 기본 추천이며, 시간 감시자는 더 잦은 시간 변칙과 강한 신록의 품이 필요한 전투의 선택지입니다.',
   sourceNote: '12.1 수치는 Blizzard 최종 노트와 긴급 수정 누적 공지, 2026-10-03 ko.wowhead 주문 페이지로 확인했습니다. 신록의 품 360995는 현재 주문력의 1719%, 살아있는 불꽃 361469 치유는 주문력의 780%, 꿈의 복제 1241669는 신록의 품 치유 40% 증가와 도약 제거입니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게 표기됩니다. 운용은 Wowhead 2026-08-12 자료(이번에 본문 미재확인), Icy Veins 2026-08-28 특성·2026-08-13 운용, Wyrmrest Temple 보존 담당자 Harrek·YouTee와 고단 검수자 Kig의 SpiritbloomPro 공격대·쐐기 설명(2026-10-03 재확인)을 대조했습니다. 영웅 특성 방향은 Archon 2026-08-26 확인 시점의 과거 집계와 Murlok 2026-10-03 쐐기 상위 50명(불꽃형성자 48명) 선택 집계로만 판단했고, 9월 이후 공격대 로그는 새로 확보하지 못했습니다. 보존의 해제 주문은 말소가 아니라 이를 대체하는 자연화입니다.',
@@ -36135,6 +52411,34 @@ guideManuscripts['evoker-preservation'] = {
       updated: '2026-08-28 갱신 / 2026-10-03 확인',
       note: '공격대·쐐기 불꽃형성자 추천, 시간 감시자의 5인 파티 출력과 마나 부담, 생명불씨 외생기 역할을 확인했습니다.',
     },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 레이드 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/preservation/evoker/raid/talents/mythic/all-bosses',
+      updated: '2026-10-08 확인',
+      note: '신화 레이드 전체 우두머리, 로그 15,025건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      tier: 'A',
+      label: 'Archon 10월 8일 쐐기 집계 확인',
+      url: 'https://www.archon.gg/wow/builds/preservation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+      updated: '2026-10-08 확인',
+      note: '쐐기 7단 이상 전체 던전, 로그 42,154건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/DvnAJTtg3kb67rjM#fight=1&source=6',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T00:39:40.746Z · 장비 구간 329 · 375.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
+    {
+      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/LcgNxzydnhvQ76Xa#fight=2&source=19',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T01:39:53.958Z · 장비 구간 329 · 388.5초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+    },
   ],
   evidence: [
     'Blizzard 12.1 최종 변경점은 꿈의 숨결 즉시 치유를 낮추고 지속 치유를 크게 높였으며, 메리스라의 축복 4등급이 모든 꿈의 숨결 치유를 60% 높이도록 바꿨습니다. 따라서 평소 1단계 유지와 필요한 순간의 3단계 선택을 분리했습니다.',
@@ -36148,6 +52452,7 @@ guideManuscripts['evoker-preservation'] = {
     'Blizzard 8월 25일 긴급 수정은 던전에서 다른 힐러를 따라잡도록 신록의 품 치유 25%, 살아있는 불꽃 치유 20%를 올리고 꿈의 복제의 신록의 품 증가량을 40%로 높였습니다. 앞의 두 항목은 플레이어 간 전투에 적용되지 않습니다.',
     '꿈의 복제와 자유의 날개는 같은 선택 노드입니다. 꿈의 복제는 신록의 품 도약을 없애고, 자유의 날개는 신록의 품을 2충전으로 만들지만 도약은 그대로입니다. SpiritbloomPro는 대부분의 공격대 빌드가 꿈의 복제를 쓰지 않는다고 설명하고, Murlok 쐐기 상위 50명은 32명이 꿈의 복제를 골랐습니다.',
     '9월 22일 화염 흡수 치유 30% 감소는 플레이어 간 전투 전용이고, 9월 2일 되돌리기 회오리바람 수정도 플레이어 간 전투 항목입니다. 8월 27일 생명불씨 수정은 툴팁 문구 수정입니다. PvE 운용 수치는 바뀌지 않았습니다.',
+    '10월 8일 기원사 보존의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
   ],
   caveats: [
     'Archon 사용률은 2026-08-26 확인 시점의 최근 14일 과거 집계입니다. 특히 영웅 공격대 로그는 430개로 적었고 이후 긴급 수정 전 자료이므로 현재 사용률이나 특성 간 절대 성능 차이로 읽지 않습니다. 2026-10-03 Murlok 집계는 쐐기 상위 50명 선택만 보여 줍니다.',
@@ -36157,6 +52462,8 @@ guideManuscripts['evoker-preservation'] = {
     '보존은 30야드 직접 치유와 전방형 꿈의 숨결 때문에 같은 빌드라도 공대 배치와 파티 산개 정도에 따라 결과 차이가 큽니다.',
     'Wowhead 보존 가이드 본문은 이번 검토에서 다시 열지 않았습니다. 9월 이후 공격대 치유 로그도 새로 확보하지 못했으므로 공격대 신록의 품 선택 노드는 SpiritbloomPro 설명을 근거로 두고 개인 빌드로 확인합니다.',
     '10월 6일 정기 점검 예정 기원사 조정은 플레이어 간 전투 항목뿐이라 반영하지 않았습니다.',
+    '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
+    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
   ],
   blocks: [
     {
@@ -36545,6 +52852,364 @@ guideManuscripts['evoker-preservation'] = {
       note: '부양으로 일반 시전 이동 손실을 줄이고 꿈의 숨결과 시간 변칙 방향을 먼저 잡습니다.',
     },
   ],
+  talentBuilds: [
+    {
+      id: 'single-target',
+      label: '단일',
+      code: 'CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer',
+      sourceLabel: 'Raid  (Best)',
+      checkedAt: '2026-10-08',
+      note: '단일 우두머리 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.',
+      validation: {
+        specId: 1468,
+        heroTreeId: 37,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'fbeb48ec2ff06fcbfd37d59919ef48e61bed746a3cc12b08110cdb3ed8f9a728',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '불꽃형성자',
+    },
+    {
+      id: 'mythic-plus',
+      label: '쐐기',
+      code: 'CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmQ2YsZYGgZGGA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmQ2YsZYGgZGGA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer',
+      sourceLabel: 'Mythic+  (Best)',
+      checkedAt: '2026-10-08',
+      note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+      validation: {
+        specId: 1468,
+        heroTreeId: 37,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'e69e4931e6edde51e118c592f2230a8d8795f4c56237a6e603608c4cc29accf4',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '불꽃형성자',
+    },
+    {
+      id: 'raid',
+      label: '레이드',
+      code: 'CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA',
+      url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA',
+      sourceUrl: 'https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer',
+      sourceLabel: 'Raid  (Best)',
+      checkedAt: '2026-10-08',
+      note: '현재 원문에서 단일 우두머리용과 일반 레이드용으로 같은 견본을 사용합니다.',
+      validation: {
+        specId: 1468,
+        heroTreeId: 37,
+        points: {
+          '1': 34,
+          '2': 34,
+          '3': 13,
+          '4': 1,
+        },
+        checkedAt: '2026-10-08',
+        traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+        gameBuild: '12.1.0.69933',
+        browser: {
+          checkedAt: '2026-10-08',
+          points: [
+            34,
+            34,
+            13,
+          ],
+          parentConnections: true,
+          available: true,
+          sha256: 'fbeb48ec2ff06fcbfd37d59919ef48e61bed746a3cc12b08110cdb3ed8f9a728',
+        },
+        scope: '현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+      },
+      heroLabel: '불꽃형성자',
+    },
+  ],
+  logReview: {
+    checkedAt: '2026-10-08',
+    samples: [
+      {
+        context: '신화 레이드 전체 우두머리',
+        parseCount: 15025,
+        window: 'Based on the top 50% of data in the last 14 days.',
+        refreshed: '13 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/preservation/evoker/raid/talents/mythic/all-bosses',
+        representativeLog: 'https://www.warcraftlogs.com/reports/1aRFvCm3bXr82nMD#fight=3',
+        recommendedCode: 'CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbAAAMjZMYGzIzMDAAAwMzMZmZmxsMzMAYGzALgFwMMB2MsZYAMzMGA',
+        validation: {
+          specId: 1468,
+          heroTreeId: 37,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+      {
+        context: '쐐기 7단 이상 전체 던전',
+        parseCount: 42154,
+        window: 'Based on all keys 7 and above in the last 14 days.',
+        refreshed: '13 hours ago',
+        aggregateUrl: 'https://www.archon.gg/wow/builds/preservation/evoker/mythic-plus/talents/10/all-dungeons/this-week',
+        representativeLog: 'https://www.warcraftlogs.com/reports/Q3gryJVZhXTPxkqb#fight=2',
+        recommendedCode: 'CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmAbM2MMDwMDD',
+        validation: {
+          specId: 1468,
+          heroTreeId: 37,
+          points: {
+            '1': 34,
+            '2': 34,
+            '3': 13,
+            '4': 1,
+          },
+          checkedAt: '2026-10-08',
+          traitDataCommit: 'db768b52b425db274e4ebd3ce3d5efc26c8882b5',
+          gameBuild: '12.1.0.69933',
+        },
+      },
+    ],
+    scope: '공개 집계·추천 특성·대표 로그 연결 검수. 개인 전투 이벤트를 새로 분석한 결과는 아닙니다.',
+    individual: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      durationDifference: 0.03242763183298367,
+      matchedAugmentation: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/DvnAJTtg3kb67rjM#fight=1&source=6',
+          startedAt: '2026-10-08T00:39:40.746Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 375868,
+          itemLevelBracket: 329,
+          heroTree: 37,
+          augmentationCount: 0,
+          healerCount: 4,
+          casts: [
+            {
+              spellId: '355913',
+              count: 79,
+            },
+            {
+              spellId: '361469',
+              count: 11,
+            },
+            {
+              spellId: '373861',
+              count: 27,
+            },
+            {
+              spellId: '358267',
+              count: 5,
+            },
+            {
+              spellId: '366155',
+              count: 5,
+            },
+            {
+              spellId: '374968',
+              count: 1,
+            },
+            {
+              spellId: '357170',
+              count: 1,
+            },
+            {
+              spellId: '364343',
+              count: 77,
+            },
+            {
+              spellId: '358733',
+              count: 10,
+            },
+            {
+              spellId: '363534',
+              count: 2,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '370553',
+              count: 3,
+            },
+            {
+              spellId: '370537',
+              count: 4,
+            },
+            {
+              spellId: '1236994',
+              count: 2,
+            },
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '357208',
+              count: 32,
+            },
+            {
+              spellId: '363916',
+              count: 4,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '368970',
+              count: 1,
+            },
+            {
+              spellId: '355936',
+              count: 30,
+            },
+            {
+              spellId: '1256581',
+              count: 22,
+            },
+          ],
+          externalBuffs: [],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/LcgNxzydnhvQ76Xa#fight=2&source=19',
+          startedAt: '2026-10-07T01:39:53.958Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 388465,
+          itemLevelBracket: 329,
+          heroTree: 37,
+          augmentationCount: 0,
+          healerCount: 5,
+          casts: [
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '355913',
+              count: 83,
+            },
+            {
+              spellId: '366155',
+              count: 4,
+            },
+            {
+              spellId: '357208',
+              count: 32,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '357170',
+              count: 1,
+            },
+            {
+              spellId: '373861',
+              count: 28,
+            },
+            {
+              spellId: '358267',
+              count: 6,
+            },
+            {
+              spellId: '361469',
+              count: 18,
+            },
+            {
+              spellId: '364343',
+              count: 70,
+            },
+            {
+              spellId: '1256581',
+              count: 23,
+            },
+            {
+              spellId: '363916',
+              count: 3,
+            },
+            {
+              spellId: '370537',
+              count: 4,
+            },
+            {
+              spellId: '370553',
+              count: 4,
+            },
+            {
+              spellId: '355936',
+              count: 36,
+            },
+            {
+              spellId: '370564',
+              count: 3,
+            },
+            {
+              spellId: '358733',
+              count: 4,
+            },
+            {
+              spellId: '363534',
+              count: 2,
+            },
+          ],
+          externalBuffs: [],
+        },
+      ],
+      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    },
+  },
 };
 
 

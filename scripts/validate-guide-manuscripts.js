@@ -7,7 +7,7 @@ const SITE_ROOT = path.resolve(__dirname, '..');
 const REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
 const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
-const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
+const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1';
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const GUIDE_PATCH_OVERRIDES = new Map([
   ['deathknight-blood', '12.1'],

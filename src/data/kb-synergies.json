@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T03:36:43.585Z",
+    "generatedAt": "2026-10-08T06:22:41.634Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
-    "patch": "12.0.5",
+    "patch": "12.1",
     "totalSynergies": 607,
     "rawTotalSynergies": 607,
     "duplicateIds": [],
@@ -2462,7 +2462,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/나무껍질",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/재생",
@@ -2501,7 +2501,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달래기",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/해제",
@@ -2538,7 +2538,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/태양섬광",
@@ -2576,7 +2576,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/야생의징표",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/환생",
@@ -3561,7 +3561,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/엘룬의분노",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천체의정렬"
@@ -3589,7 +3589,7 @@
       "spec": "Balance",
       "heroTalent": null,
       "importance": 7,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
@@ -3623,7 +3623,7 @@
       "spec": "조화",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별"
@@ -3661,7 +3661,7 @@
       ],
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식태양",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/일월식달",
@@ -3694,7 +3694,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별똥별",
         "08-직업별-Knowledge-Base/03-드루이드/공용/Skills/달빛섬광"
@@ -3791,7 +3791,7 @@
       "spec": "Balance",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천벌",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛섬광"
@@ -3850,7 +3850,7 @@
       "spec": "Balance",
       "heroTalent": null,
       "importance": 8,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/천체의정렬",
         "08-직업별-Knowledge-Base/03-드루이드/조화/Skills/별빛쇄도",
@@ -4256,7 +4256,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/부양",
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/구출",
@@ -4287,7 +4287,7 @@
       "spec": "Devastation",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/불의숨결",
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/정수폭발",
@@ -4317,7 +4317,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/흑요석비늘",
         "08-직업별-Knowledge-Base/04-기원사/공용/Skills/신록의품",
@@ -8594,7 +8594,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -9340,7 +9340,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개",
@@ -9495,7 +9495,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/셰이룬의선물",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개",
@@ -10179,7 +10179,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [],
       "linkedBuffs": [],
       "linkedTalents": [],
@@ -12825,7 +12825,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
@@ -12873,7 +12873,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
@@ -12917,7 +12917,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/성스러운일격",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
@@ -12953,7 +12953,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
@@ -12988,7 +12988,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온"
@@ -13016,7 +13016,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
@@ -13048,7 +13048,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/수호영혼",
@@ -13081,7 +13081,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능평온",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
@@ -13159,7 +13159,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
@@ -15829,7 +15829,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/날카로운바람",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/축전토템",
@@ -16855,7 +16855,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/날카로운바람",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/축전토템",
@@ -17731,7 +17731,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/생명석-창조",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼의-샘-창조",
@@ -17767,7 +17767,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/임프-소환",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/지옥사냥개-소환",
@@ -17806,7 +17806,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마의-관문",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/악마의-마법진",
@@ -17839,7 +17839,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영원한-결의",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼-갈취"
@@ -17876,7 +17876,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/영혼의-조각",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/생명석-창조",

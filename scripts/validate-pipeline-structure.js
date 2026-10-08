@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
-const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
+const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1';
 const REQUIRED_KB_SEGMENT = '08-\uC9C1\uC5C5\uBCC4-Knowledge-Base';
 
 const errors = [];

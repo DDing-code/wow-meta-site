@@ -203,8 +203,12 @@ for (const id of ['shaman_restoration_totemic_surging', 'shaman_restoration_fars
   assert(!synergies.synergies[id].participants.includes('2008'), `${id} must not include resurrection`);
 }
 const manuscript = require('node:fs').readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
-assert.match(manuscript, /label: '치유의 비 \(선견자\)'/);
-assert.match(manuscript, /label: '또는 쇄도하는 토템 \(토템술사\)'/);
+const guides = new Function(manuscript.replace(/export default \w+;?/, '').replace(/export (const|function)/g, '$1') + ';return guideManuscripts')();
+const branches = guides['shaman-restoration'].heroBranches;
+assert(branches[0].opener.steps.some(s => s.skillId === '444995'));
+assert(!branches[0].opener.steps.some(s => s.skillId === '73920'));
+assert(branches[1].opener.steps.some(s => s.skillId === '73920'));
+assert(!branches[1].opener.steps.some(s => s.skillId === '444995'));
 console.log('Restoration Farseer, Totemic and Riptide 12.1 graph branches verified.');
 assert.equal(synergies.synergies.shaman_restoration_healingrain_acidrain.patch, '12.1');
 assert.deepEqual(synergies.synergies.shaman_restoration_healingrain_acidrain.participants,
@@ -218,9 +222,9 @@ assert.match(skills[1252874].description, /치유의 비.*10%.*0\.5초/);
 assert(!skills[462486].description.includes('최대 생명력'));
 assert(skills[462486].synergies.relatedSkills.some(link => link.endsWith('/폭우시전')));
 assert(skills[207778].synergies.relatedSkills.some(link => link.endsWith('/폭우')));
-assert.match(manuscript, /폭우 특성 \+ 지역 치유 뒤 16초/);
+assert(branches.every(b => b.aoe.priority.find(s => s.skillId === '207778')?.note.includes('16초')));
 assert.match(manuscript, /12\.1 레이드·쐐기 기본 추천입니다/);
-assert.match(manuscript, /폭우 \(특성 선택 시\)/);
+assert(branches.every(b => /폭우 특성을 선택/.test(b.aoe.priority.find(s => s.skillId === '207778')?.note)));
 console.log('Restoration Healing Rain and Downpour 12.1 branch effects verified.');
 for (const [id, participants] of [
   ['shaman_restoration_sustain_shields',
@@ -246,8 +250,7 @@ assert.deepEqual(skills[108280].synergies.relatedHeroTalents, [
 assert.match(skills[114052].description, /치유의 해일 토템과 양자택일/);
 assert.match(manuscript, /치유의 해일 토템 선택: 토템술사에서 갈라지는 지류는 토템 치유량을 25% 높이고/);
 assert.match(manuscript, /승천 선택: 연쇄 치유와 치유의 물결을 실제로 여러 번 시전할 수 있는 큰 피해/);
-assert.match(manuscript, /label: '치유의 해일 토템 \(선택 시\)'/);
-assert.match(manuscript, /label: '또는 승천 \(선택 시\)'/);
+assert(branches.every(b => !b.opener.steps.some(s => s.skillId === '108280') || !b.opener.steps.some(s => s.skillId === '114052')));
 const detailPage = require('node:fs').readFileSync(require.resolve('../src/pages/GuideDetailPage.js'), 'utf8');
 assert.match(detailPage, /label: '해일 토템 선택'/);
 assert.match(detailPage, /label: '승천 선택'/);

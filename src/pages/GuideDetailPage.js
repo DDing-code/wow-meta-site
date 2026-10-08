@@ -2443,6 +2443,34 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
           </PaperSection>
         )}
 
+        {!!manuscript.talentBuilds?.length && (
+          <PaperSection id="guide-talents" $fullWidth data-guide-block="talent-builds">
+            <h3>특성 견본</h3>
+            <p>전투에 맞는 견본을 펼쳐 가져오기 코드를 선택하세요. 영웅 특성을 확인하고 해당 전투 흐름을 함께 읽으세요.</p>
+            {manuscript.talentBuilds.map(build => (
+              <OpenerFlowDetails key={build.id}>
+                <summary>{build.label} · {displayGuideText(build.heroLabel)}</summary>
+                <p>{renderGuideText(build.note, inlineTerms)}</p>
+                <p>
+                  <a href={build.url} target="_blank" rel="noreferrer">Wowhead에서 특성 보기</a>
+                  {' · '}
+                  <a href={build.sourceUrl} target="_blank" rel="noreferrer">선택 근거</a>
+                </p>
+                <label htmlFor={`${guide.id}-${build.id}-code`}>게임 내 가져오기 코드</label>
+                <textarea
+                  id={`${guide.id}-${build.id}-code`}
+                  readOnly
+                  rows={4}
+                  value={build.code}
+                  spellCheck={false}
+                  onFocus={event => event.currentTarget.select()}
+                />
+                <p>확인: {build.checkedAt}</p>
+              </OpenerFlowDetails>
+            ))}
+          </PaperSection>
+        )}
+
         <EvidenceGrid>
           <EvidencePanel>
             <h3>참고한 자료</h3>
@@ -2592,6 +2620,7 @@ function GuideDetailPage() {
           {[
             ['overview', '운용 요약'],
             ...(manuscript ? [['guide-core', '공략 핵심']] : []),
+            ...(manuscript?.talentBuilds?.length ? [['guide-talents', '특성 견본']] : []),
             ['skills', '핵심 스킬'],
             ['synergies', '시너지'],
             ['sources', '출처'],
@@ -4622,6 +4651,27 @@ const PaperSection = styled.section`
   padding: 38px 0;
   border-top: 1px solid rgba(168, 178, 188, 0.12);
   scroll-margin-top: clamp(96px, 14vh, 150px);
+
+  &[data-guide-block="talent-builds"] {
+    gap: 16px;
+
+    label { display: block; margin-top: 14px; }
+    a { color: #d9b97a; }
+    textarea {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid rgba(168, 178, 188, 0.3);
+      border-radius: 4px;
+      background: #101820;
+      color: #eef1f3;
+      font: 0.8rem/1.5 monospace;
+      resize: vertical;
+      overflow-wrap: anywhere;
+    }
+  }
 
   &:first-child {
     padding-top: 0;

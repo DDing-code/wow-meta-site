@@ -5,7 +5,7 @@ const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(SITE_ROOT, 'src', 'data');
-const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.0.5';
+const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1';
 const REQUIRED_KB_ROOT_SEGMENT = '08-\uC9C1\uC5C5\uBCC4-Knowledge-Base';
 const FORBIDDEN_KB_SEGMENTS = ['01-ATOMIC', '02-SYNERGY'];
 

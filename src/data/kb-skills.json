@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T03:36:43.584Z",
+    "generatedAt": "2026-10-08T06:22:41.632Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
-    "patch": "12.0.5",
+    "patch": "12.1",
     "totalSkills": 2996,
     "rawTotalSkills": 2996,
     "duplicateIds": [],
@@ -106,7 +106,7 @@
       },
       "quality": {
         "withWikilinks": 2910,
-        "withSynergies": 2117,
+        "withSynergies": 2118,
         "avgLinkDensity": "0.038"
       }
     }
@@ -337,10 +337,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "근접",
-      "description": "# 행동 불가의 포효 (Incapacitating Roar)",
+      "description": "곰으로 변신하여 우르솔의 혼을 일깨워 귀청이 터질 듯한 포효를 내지릅니다. 10미터 안에 있는 모든 적을 3초 동안 행동 불가 상태로 만듭니다. 대상이 피해를 받으면 효과가 사라질 수 있습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -359,7 +359,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -715,10 +715,10 @@
       "castTime": "시전",
       "resourceCost": "마나",
       "range": "35야드",
-      "description": "# 휘감는 뿌리 (Entangling Roots)",
+      "description": "30초 동안 대상을 제자리에 묶습니다. 대상이 피해를 입으면 효과가 해제될 수 있습니다. [화신: 생명의 나무: 생명의 나무: 즉시 시전됩니다.]",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -737,7 +737,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -1656,10 +1656,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 임프 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 임프 소환 영혼의 조각 1개 6 초 주문 시전 시간 흑마법사 필요 요구 레벨 3 원거리에서 적을 불화살로 공격하는 임프를 소환하여 부립니다.",
+      "description": "원거리에서 적을 불화살로 공격하는 임프를 소환하여 부립니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1678,7 +1678,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -1706,10 +1706,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 지옥사냥개 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 지옥사냥개 소환 영혼의 조각 1개 6 초 주문 시전 시간 흑마법사 필요 요구 레벨 23 지옥사냥개를 소환하여 부리며 적의 마법 시전을 방해합니다.",
+      "description": "지옥사냥개를 소환하여 부리며 적의 마법 시전을 방해합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1728,7 +1728,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -1756,10 +1756,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 공허방랑자 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 공허방랑자 소환 영혼의 조각 1개 6 초 주문 시전 시간 흑마법사 필요 요구 레벨 10 강한 공격을 견뎌낼 수 있는 공허방랑자를 소환하여 부립니다.",
+      "description": "강한 공격을 견뎌낼 수 있는 공허방랑자를 소환하여 부립니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1778,7 +1778,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -1806,10 +1806,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 소환 의식은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 소환 의식 5% (기본 마나 중) 30 야드 사정거리 집중 (2 분 주문 시전 시간) 2 분 재사용 대기시간 흑마법사 필요 요구 레벨 33 소환의 문을 만드는 의식을 시작합니다. 시전자 외에 2명의 아군이 있어야 의식을 완료할 수 있습니다. 이 차원문은 아군이 대상 파티원 혹은 공격대원을 소환하는 데 사용됩니다.",
+      "description": "소환의 문을 만드는 의식을 시작합니다. 시전자 외에 2명의 아군이 있어야 의식을 완료할 수 있습니다. 이 차원문은 아군이 대상 파티원 혹은 공격대원을 소환하는 데 사용됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1828,7 +1828,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -1856,10 +1856,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 무력화 저주은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 무력화 저주 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 요구 레벨 6 2분 동안 대상의 공격 간격을 20%만큼 증가시킵니다. 저주 주문: 한 대상에게 하나의 저주만 걸 수 있습니다.",
+      "description": "2분 동안 대상의 공격 간격을 20%만큼 증가시킵니다.  저주 주문: 한 대상에게 하나의 저주만 걸 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1878,7 +1878,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -1954,10 +1954,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "추방은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 추방 특성 1.5% (기본 마나 중) 30 야드 사정거리 1.5 초 주문 시전 시간 흑마법사 필요 적 악마, 돌연변이 [ 상급 추방 : 언데드 ] 또는 정령을 차원의 저편으로 추방합니다. 추방당한 대상은 30초 동안 어떠한 행동도 할 수 없습니다. 한 번에 하나의 대상으로 제한됩니다. 추방 주문을 대상에게 다시 시전하면 효과가 사라집니다.",
+      "description": "적 악마, 돌연변이 [상급 추방: 언데드] 또는 정령을 차원의 저편으로 추방합니다. 추방당한 대상은 30초 동안 어떠한 행동도 할 수 없습니다. 한 번에 하나의 대상으로 제한됩니다. 추방 주문을 대상에게 다시 시전하면 효과가 사라집니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -1976,7 +1976,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -2057,10 +2057,10 @@
       "castTime": "즉시",
       "resourceCost": "글로벌 재사용 대기시간",
       "range": "자신",
-      "description": "# 표범 변신 (Cat Form)",
+      "description": "표범으로 변신합니다. 자동 공격의 공격력이 40%만큼, 이동 속도가 30%만큼 증가하고 변이 효과에 면역이 되며, 낙하 피해가 감소합니다.  변신을 하면 이동 방해 효과에서 벗어납니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2083,7 +2083,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.033,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -2892,10 +2892,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "파티/공격대",
-      "description": "# 야생의 징표 (Mark of the Wild)",
+      "description": "아군 대상에게 야생의 힘을 주입하여 60분 동안 유연성을 3%만큼 증가시킵니다.  대상이 같은 파티나 공격대에 속해 있다면, 모든 파티원과 공격대원이 효과를 받습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -2914,7 +2914,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.045,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -3351,10 +3351,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 언어의 저주은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 언어의 저주 특성 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 악마어로 말하도록 대상을 강제하여 주문의 시전 시간을 30%만큼 지연시킵니다. 1분 동안 지속됩니다. 저주: 흑마법사마다 한 대상에 동시에 하나의 저주만 걸 수 있습니다.",
+      "description": "악마어로 말하도록 대상을 강제하여 주문의 시전 시간을 30%만큼 지연시킵니다. 1분 동안 지속됩니다.  저주: 흑마법사마다 한 대상에 동시에 하나의 저주만 걸 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -3373,7 +3373,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -3451,7 +3451,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "",
-      "description": "무모한 희생은 기본 재사용 대기시간 1.5분의 즉시 시전 강화 기술이다. 12초 동안 모든 분노 생성량을 50%, 능력의 치명타율을 20% 높인다. 기본 효과 자체가 고정 분노를 즉시 지급하는 것과 분노 생성량을 늘리는 것은 다르다. 기본 지속시간·재사용 대기시간은 특성이나 세트 적용 후 실전 값과 구분한다.  시즌 2 2세트는 활성 중 분노의 강타로 2초씩 최대 6초를 연장한다. 4세트는 활성 중 피의 갈증으로 치명타 증가 효과를 3%씩 최대 6% 높인다. 두 효과 모두 무모한 희생이 켜진 동안의 기술 사용을 요구하므로 시작 전에",
+      "description": "무모한 희생은 기본 재사용 대기시간 1.5분의 즉시 시전 강화 기술이다. 12초 동안 모든 분노 생성량을 50%, 능력의 치명타율을 20% 높인다. 기본 효과 자체가 고정 분노를 즉시 지급하는 것과 분노 생성량을 늘리는 것은 다르다. 기본 지속시간·재사용 대기시간은 특성이나 세트 적용 후 실전 값과 구분한다.  시즌 2 2세트는 활성 중 분노의 강타로 2초씩 최대 6초를 연장한다. 4세트는 활성 중 피의 갈증으로 치명타 증가 효과를 3%씩 최대 6% 높인다. 두 효과 모두 무모한 희생이 켜진 동안의 기술 사용을 요구하므로 시작 전에 쓴 횟수를 저장해 두었다고 계산하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -4624,10 +4624,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 해제 (Remove Corruption)",
+      "description": "아군 대상에 걸린 해로운 효과를 무력화하여, 모든 저주 및 독 효과를 해제합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4646,7 +4646,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.034,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -4773,10 +4773,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 달래기 (Soothe)",
+      "description": "대상을 달래 모든 격노 효과를 제거합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -4795,7 +4795,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.039,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -5601,10 +5601,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 공포의 울부짖음은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 공포의 울부짖음 특성 1.8% (기본 마나 중) 즉시 40 초 재사용 대기시간 흑마법사 필요 요구 레벨 40 끔찍하게 울부짖어 10미터 내의 적 5 명을 공포에 질려 도망가게 하고, 20초 동안 방향 감각을 상실하게 만듭니다. 피해를 받으면 효과가 해제될 수 있습니다.",
+      "description": "끔찍하게 울부짖어 10미터 내의 적 5명을 공포에 질려 도망가게 하고, 20초 동안 방향 감각을 상실하게 만듭니다. 피해를 받으면 효과가 해제될 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5623,7 +5623,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -5811,10 +5811,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 공포은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 공포 4% (기본 마나 중) 30 야드 사정거리 1.7 초 주문 시전 시간 흑마법사 필요 요구 레벨 5 적을 공포에 사로잡히게 하여 20초 동안 방향 감각을 상실하게 만듭니다. 피해를 입으면 효과가 해제될 수 있습니다. 대상은 하나로 제한됩니다.",
+      "description": "적을 공포에 사로잡히게 하여 20초 동안 방향 감각을 상실하게 만듭니다. 피해를 입으면 효과가 해제될 수 있습니다. 대상은 하나로 제한됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5833,7 +5833,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.021,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -5911,10 +5911,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 생명석 창조은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 생명석 창조 2% (기본 마나 중) 3 초 주문 시전 시간 흑마법사 필요 요구 레벨 7 생명석을 창조합니다. 생명석을 사용하면 25%의 생명력을 회복합니다.",
+      "description": "생명석을 창조합니다. 생명석을 사용하면 25%의 생명력을 회복합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -5933,7 +5933,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.025,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -6323,10 +6323,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "필멸의 고리은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 필멸의 고리 특성 2% (기본 마나 중) 20 야드 사정거리 즉시 45 초 재사용 대기시간 흑마법사 필요 요구 레벨 40 적이 두려움에 휩싸여 달아나게 만들어 3초 동안 행동 불가 상태로 만들고, 자신은 최대 생명력의 20%를 회복합니다.",
+      "description": "적을 3초 동안 두려움에 휩싸여 달아나게 만듭니다. 시전자는 최대 생명력의 15%를 회복합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6345,7 +6345,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {
@@ -6839,10 +6839,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 달빛섬광 (Moonfire)",
+      "description": "빠르게 달빛 광선을 비추며 적을 불태워 (주문력의 21.2%)의 비전 피해를 입히고 추가로 18초에 걸쳐 (주문력의 165.6%)의 비전 피해를 입힙니다. [반짝이는 달빛: 추가로 적이 자신에게 입히는 피해를 1%만큼 감소시킵니다] [천공의 힘: 0의 천공의 힘을 생성합니다.]",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -6864,7 +6864,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 2,
-        "linkDensity": 0.063,
+        "linkDensity": 0.037,
         "hasWikilinks": true
       },
       "source": {
@@ -8640,10 +8640,10 @@
       "castTime": "시전",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 환생 (Rebirth)",
+      "description": "죽은 자의 영혼을 육체로 불러들여 100%의 생명력과 최소 20%의 마나를 지니고 살아나게 합니다. 전투 중에도 사용할 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8662,7 +8662,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -8690,10 +8690,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 영혼석은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼석 1% (기본 마나 중) 40 야드 사정거리 3 초 주문 시전 시간 10 분 재사용 대기시간 흑마법사 필요 요구 레벨 14 대상 파티원 혹은 공격대원의 영혼이 보존되어 대상이 죽었을 때 부활할 수 있습니다. 대상은 60%의 생명력과 최소 20%의 마나를 지닌 채로 부활합니다.",
+      "description": "살아 있는 대상에게 시전하면 대상의 영혼이 보존되어 대상이 죽었을 때 부활할 수 있습니다.  죽은 대상에게 시전하면 대상이 즉시 부활합니다. 대상은 60%의 생명력과 20%의 마나를 지닌 채로 부활합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -8712,7 +8712,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -9376,7 +9376,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "공격 시 일정 확률로 다음 마무리 일격을 대상 생명력에 관계없이 사용할 수 있게 하는 지속 효과입니다. 무기 전문화에서는 무료로 사용하며 분노 40을 소모한 것과 같은 피해를 줍니다. 분노·방어 전문화에 이 무료 사용·40분노 상당 피해 설명을 그대로 적용하지 않습니다. 분노의 비용 제거와 기본 분노 20 생성은 마무리 일격 연마의 별도 효과입니다.  기본 툴팁의 약 1.7회/분과 내부 발동 제한 3초는 정해진 간격마다 반드시 발동한다는 뜻이 아닙니다. 특성 ID는 29725이고 실제 급살 버프는 52437입니다. 방어 특성 자료의",
+      "description": "공격 시 일정 확률로 다음 마무리 일격을 대상 생명력에 관계없이 사용할 수 있게 하는 지속 효과입니다. 무기 전문화에서는 무료로 사용하며 분노 40을 소모한 것과 같은 피해를 줍니다. 분노·방어 전문화에 이 무료 사용·40분노 상당 피해 설명을 그대로 적용하지 않습니다. 분노의 비용 제거와 기본 분노 20 생성은 마무리 일격 연마의 별도 효과입니다.  기본 툴팁의 약 1.7회/분과 내부 발동 제한 3초는 정해진 간격마다 반드시 발동한다는 뜻이 아닙니다. 특성 ID는 29725이고 실제 급살 버프는 52437입니다. 방어 특성 자료의 해당 항목은 영웅 특성 영역에 있으므로 모든 방어 빌드가 자동으로 가진다고 가정하지 않습니다.",
       "category": "spec-talent",
       "tags": [],
       "patch": "12.1",
@@ -9578,10 +9578,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 어둠의 격노은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 어둠의 격노 특성 1% (기본 마나 중) 35 야드 사정거리 1.5 초 주문 시전 시간 1 분 재사용 대기시간 흑마법사 필요 8미터 반경 내의 모든 적을 3초 동안 기절시킵니다.",
+      "description": "8미터 반경 내의 모든 적을 3초 동안 기절시킵니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -9600,7 +9600,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -12088,10 +12088,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 악마의 마법진: 순간이동은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 악마의 마법진: 순간이동 3% (기본 마나 중) 40 야드 사정거리 즉시 30 초 재사용 대기시간 흑마법사 필요 요구 레벨 41 악마의 마법진으로 순간이동하며 모든 이동 속도 감소 효과를 제거합니다.",
+      "description": "악마의 마법진으로 순간이동하며 모든 이동 속도 감소 효과를 제거합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -12110,7 +12110,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -14497,10 +14497,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "공포은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 공포 특성 흑마법사 필요 공포 사용 시 대상이 도망치지 않고 제자리에서 공포에 떱니다.",
+      "description": "공포 사용 시 대상이 도망치지 않고 제자리에서 공포에 떱니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16445,10 +16445,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 태양 광선 (Solar Beam)",
+      "description": "적 대상의 위치에 태양 광선을 소환하여 대상의 주문 시전을 방해하고, 태양 광선 안에 있는 모든 적을 침묵시킵니다. 8초 동안 지속됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -16467,7 +16467,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -17668,10 +17668,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40미터",
-      "description": "# 태양섬광 (Sunfire)",
+      "description": "야성,  수호,  회복 빠르게 태양 광선을 비추어 적을 불태워 (주문력의 21.2%)의 자연 피해를 입히고 추가로 18초에 걸쳐 (주문력의 165.6%)의 추가 자연 피해를 입힙니다.   조화 빠르게 태양 광선을 비추어 적을 불태워 (주문력의 21.2%)의 자연 피해를 입히고 추가로 18초에 걸쳐 (주문력의 165.6%)의 추가 자연 피해를 입힙니다.  0의 천공의 힘을 생성합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -17692,7 +17692,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.039,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -18147,10 +18147,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "변신별 상이",
-      "description": "# 야생의 돌진 (Wild Charge)",
+      "description": "가까운 아군에게 날아갑니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18169,7 +18169,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.035,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -18686,10 +18686,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "13야드",
-      "description": "# 두개골 강타 (Skull Bash)",
+      "description": "대상에게 돌진한 후 두개골을 강타하여 주문 시전을 방해하고, 4초 동안 같은 계열의 주문을 시전하지 못하게 합니다.  10초 동안 모든 주문에 소비되는 마나를 25%만큼 증가시킵니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18708,7 +18708,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.051,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -18737,10 +18737,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "주변 아군",
-      "description": "# 쇄도의 포효 (Stampeding Roar)",
+      "description": "우렁찬 함성을 내보내어 8초 동안 10미터 반경 내에 있는 주위 모든 아군 플레이어의 이동 속도를 60%만큼 증가시키고 모든 이동 불가 및 감속 효과를 제거합니다.  숨기 효과가 풀리지 않습니다.  곰 또는 표범 변신 상태가 아닐 때 이 능력을 사용하면 곰으로 변신합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -18759,7 +18759,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.036,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -19307,10 +19307,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "영혼의 고리은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영혼의 고리 특성 100 야드 사정거리 흑마법사 필요 악마 자신이 받는 모든 피해의 5%를 악마 소환수가 대신 받습니다. 고통, 파괴 자신이 받는 모든 피해의 5%를 악마 소환수가 대신 받습니다. 흑마법서: 희생이 활성화됐을 시 체력이 3%만큼 증가합니다.",
+      "description": "모든 피해의 20%를 악마와 나누어 받습니다. 또한, 흑마법사가 입히는 모든 피해의 3%만큼 흑마법사와 악마가 치유됩니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19329,7 +19329,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.008,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -19793,10 +19793,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "불타는 돌진은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 불타는 돌진 특성 즉시 흑마법사 필요 요구 레벨 30 이동 속도가 50 %만큼 증가하지만, 1초마다 최대 생명력의 4%에 해당하는 피해를 입습니다. 이동 방해 효과에 걸려도 이동 속도가 평상시의 100% 이하로 내려가지 않습니다. 활성화되어 있는 동안 지속됩니다.",
+      "description": "1초마다 최대 생명력의 4%를 소비하여 이동 속도를 50%만큼 증가시킵니다. 불타는 돌진 중에는 이동 방해 효과에 걸려도 이동 속도가 일반 이동 속도의 100% 아래로 내려가지 않습니다.  활성화되어 있는 동안 지속됩니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19843,10 +19843,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 악마의 관문은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 악마의 관문 특성 10% (기본 마나 중) 10 - 40 야드 사정거리 2 초 주문 시전 시간 10 초 재사용 대기시간 흑마법사 필요 두 지점을 연결하는 악마의 관문을 생성합니다. 관문이 작동하면 사용자는 즉시 반대쪽 관문으로 전송됩니다. 플레이어마다 90 초당 한 번씩만 악마의 관문을 사용할 수 있습니다.",
+      "description": "두 지점을 연결하는 악마의 관문을 생성합니다. 파티원이 한쪽 관문에 들어가면 즉시 반대쪽 관문으로 전송됩니다.  사용 횟수는 최대 5번으로 제한됩니다. 10초마다 사용 횟수가 1번씩 회복되며, 15분 동안 지속됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -19865,7 +19865,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -20462,10 +20462,10 @@
       "castTime": "즉시",
       "resourceCost": "기본 마나 1.8%",
       "range": "40야드",
-      "description": "# 소생의 안개 (Renewing Mist)",
+      "description": "치유의 안개로 대상을 감싸 18초 동안 2초마다 2266의 생명력을 회복시킵니다. 1의 기를 생성합니다.  소생의 안개는 대상을 치유할 때마다 20미터 안에 있는 [문양: 소생의 안개: 가장 먼 / 가장 가까운] 부상당한 아군 대상에게 최대 2회 옮겨갑니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20490,7 +20490,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 3,
-        "linkDensity": 0.075,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -20680,10 +20680,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 재활 (Revival)",
+      "description": "반경 100미터 내에 있는 모든 파티원과 공격대원의 생명력을 9579만큼 회복시키고 해로운 마법, 독, 질병 효과를 모두 제거합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -20702,7 +20702,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.078,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -21040,10 +21040,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 마나 차 (Mana Tea)",
+      "description": "0의 마나를 소모할 때마다 마나 차 중첩을 1개 얻습니다. 이때 치명타 및 극대화율에 해당하는 확률로 마나 차 중첩을 하나 더 얻습니다.  마나 차: 0.5초마다 마나 차 중첩을 하나 소모하여 6480의 마나를 회복합니다.  이동 중에도 시전할 수 있지만, 정신을 집중하는 동안 이동 속도가 40%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21062,7 +21062,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -21245,10 +21245,10 @@
       "castTime": "즉시",
       "resourceCost": "",
       "range": "",
-      "description": "# 집중의 천둥 차 (Thunder Focus Tea)",
+      "description": "기의 충격을 받아 다음 쇄도의 안개의 치유량이 2배로 증가하거나, 다음 고양감이 모든 대상에게 걸린 소생의 안개 지속시간을 초기화시킵니다. 30초 동안 지속됩니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21267,7 +21267,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -21508,10 +21508,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 기의 고치 (Life Cocoon)",
+      "description": "대상을 기 에너지가 충만한 고치 안에 가두어 [(((주문력 * 11) + 79916))]의 피해를 흡수하고 받는 모든 주기적인 치유 효과를 50%만큼 증가시킵니다. 12초 동안 지속됩니다. [문양: 기의 고치: 기절 상태에서도 사용할 수 있습니다]",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -21530,7 +21530,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.065,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -22655,10 +22655,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 치유의 비약 (Healing Elixir)",
+      "description": "생명력이 40% 미만으로 떨어졌거나 치유의 비약을 초과 생성하면 치유의 비약을 삼켜 즉시 최대 생명력의 15%를 회복합니다.  30초마다 치유의 비약 1개를 생성합니다. 최대 2번까지 중첩됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -22677,7 +22677,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -22936,7 +22936,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.047,
+        "linkDensity": 0.031,
         "hasWikilinks": true
       },
       "source": {
@@ -23124,10 +23124,10 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "전방",
-      "description": "# 태풍 (Typhoon)",
+      "description": "맹렬한 태풍으로 시전자 전방 30미터 내의 대상을 가격하여 뒤로 밀쳐내고 6초 동안 멍해지게 만듭니다. 모든 변신 상태에서 사용할 수 있습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -23146,7 +23146,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -24625,10 +24625,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 웅덩이 (Pool of Mists)",
+      "description": "소생의 안개가 3회 충전되고 해오름차기의 남은 재사용 대기시간을 1.0초만큼 감소시킵니다.  해오름차기가 소생의 안개의 남은 재사용 대기시간을 1.0초만큼 감소시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -24647,7 +24647,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -29146,10 +29146,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 내세 (Afterlife)",
+      "description": "구원의 영혼의 지속시간이 50%만큼, 주문의 사정거리가 50%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29168,7 +29168,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -29915,10 +29915,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 나루의 빛 (Light of the Naaru)",
+      "description": "빛의 권능 주문들의 재사용 대기시간을 감소시켜주는 주문을 시전했을 때 재사용 대기시간이 추가로 10%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -29941,7 +29941,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 3,
-        "linkDensity": 0.067,
+        "linkDensity": 0.046,
         "hasWikilinks": true
       },
       "source": {
@@ -30274,10 +30274,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 집중된 천둥 (Focused Thunder)",
+      "description": "집중의 천둥 차가 다음 2회의 주문을 강화합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30296,7 +30296,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -30322,10 +30322,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 감싸는 안개 (Mist Wrap)",
+      "description": "포용의 안개의 지속시간이 1초만큼, 추가 치유량이 10%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30344,7 +30344,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -30370,10 +30370,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 생명의 순환 (Lifecycles)",
+      "description": "[셰이룬의 선물 / 생기 충전] 시전 시 20%의 확률로 다음 해오름차기 또는 포용의 안개가 마나 차 1중첩을 생성합니다.  포용의 안개 및 해오름차기 사용 시 20%의 확률로 다음 [셰이룬의 선물 / 생기 충전]이 마나 차 1중첩을 생성합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -30392,7 +30392,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -31201,10 +31201,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 빛의 흔적 (Trail of Light)",
+      "description": "순간 치유의 치유량의 25%가 해당 주문으로 치유한 이전 대상에게 복제됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31226,7 +31226,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 2,
-        "linkDensity": 0.056,
+        "linkDensity": 0.04,
         "hasWikilinks": true
       },
       "source": {
@@ -31307,10 +31307,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 불신임 (Censure)",
+      "description": "빛의 권능: 응징이 대상을 행동 불가 상태로 만들지 않고 4초 동안 기절시킵니다. 피해를 입어도 효과가 해제되지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -31329,7 +31329,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.018,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -32172,10 +32172,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "# 유성 (Shooting Stars)",
+      "description": "달빛섬광과 태양섬광이 지속 피해를 입힐 때마다 일정 확률로 별똥별을 떨어뜨려 (주문력의 68%)의 천공 피해를 입히고 2의 천공의 힘을 생성합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32198,7 +32198,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.038,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -32279,10 +32279,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 번데기 (Chrysalis)",
+      "description": "기의 고치의 재사용 대기시간이 45초만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32301,7 +32301,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.02,
         "hasWikilinks": true
       },
       "source": {
@@ -32327,10 +32327,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 자연의 균형 (Nature's Balance)",
+      "description": "전투 중 2초마다 1의 천공의 힘이 생성됩니다.  비전투 상태에서는 천공의 힘이 사라지지 않고 50|1으로;로; 복구됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -32352,7 +32352,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.026,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -33684,10 +33684,10 @@
       "castTime": "즉시",
       "resourceCost": "마나",
       "range": "40야드",
-      "description": "# 치유의 마법진 (Circle of Healing)",
+      "description": "대상과 30미터 내에 있는 4명의 부상당한 아군의 생명력을 (주문력의 159.9%)만큼 회복시킵니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33711,7 +33711,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 3,
-        "linkDensity": 0.052,
+        "linkDensity": 0.036,
         "hasWikilinks": true
       },
       "source": {
@@ -36229,10 +36229,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 피부은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 피부 특성 흑마법사 필요 요구 레벨 30 영혼 갈취의 피해 흡수 효과가 이제 1초마다 최대 생명력의 0.2%만큼 지속적으로 재충전되고, 추가로 최대 생명력의 5%에 해당하는 피해를 흡수할 수 있습니다. 방어도가 45%만큼 증가합니다.",
+      "description": "영혼 갈취의 피해 흡수 효과가 이제 1초마다 최대 생명력의 0.2%만큼 지속적으로 재충전되고, 추가로 최대 생명력의 5%에 해당하는 피해를 흡수할 수 있습니다.  방어도가 45%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -36253,7 +36253,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.021,
+        "linkDensity": 0.022,
         "hasWikilinks": true
       },
       "source": {
@@ -36545,7 +36545,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40야드",
-      "description": "쇠날발톱은 무기·방어 전사가 선택하는 공격 기술이며 분노 전사의 선택 기술이 아니다. 기본 사정거리 40야드, 즉시 시전, 재사용 대기시간 1.5분, 1충전이다. 주위 적을 추적하는 무기를 던져 12초 동안 물리 피해를 주며 8명을 초과하면 피해가 감소한다.  12.1에서는 적중한 적이 12초 동안 시전자 자신의 출혈 효과로 받는 피해가 기본 50% 증가한다. 복수·천둥벼락이나 회전베기의 직접 피해를 올리는 이전 효과와 다르다. 방어에는 피해를 입힐 때마다 분노 10을 생성하는 효과가 있다. 무기의 기본 설명에 이 분노 생성을 복사",
+      "description": "쇠날발톱은 무기·방어 전사가 선택하는 공격 기술이며 분노 전사의 선택 기술이 아니다. 기본 사정거리 40야드, 즉시 시전, 재사용 대기시간 1.5분, 1충전이다. 주위 적을 추적하는 무기를 던져 12초 동안 물리 피해를 주며 8명을 초과하면 피해가 감소한다.  12.1에서는 적중한 적이 12초 동안 시전자 자신의 출혈 효과로 받는 피해가 기본 50% 증가한다. 복수·천둥벼락이나 회전베기의 직접 피해를 올리는 이전 효과와 다르다. 방어에는 피해를 입힐 때마다 분노 10을 생성하는 효과가 있다. 무기의 기본 설명에 이 분노 생성을 복사하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -37101,7 +37101,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "15미터",
-      "description": "복수에서도 기본 격노 15를 생성하는 12초 접근기다. 파편 생성기 균열을 대신하지 않는다. 아래 정수 파쇄·타성 운용은 파멸 전용이다.  대상에게 접근하며 화염 피해를 입히고 격노 15를 생성한다. 기본 쿨다운은 12초다. 복수의 퇴각 뒤 접근과 자원 보충을 함께 맡길 수 있으나 이동기의 짧은 공통 제한 때문에 같은 순간 입력이 바로 이어지지 않을 수 있다. 타성을 선택했다면 준비 효과를 소비하는 주문이지만, 타성 미선택 상태에서도 분노 생성량이 크게 늘어나는 기술처럼 취급하지 않는다. 정수 파쇄를 누르기 전에 자원 보충을 마쳐 ",
+      "description": "복수에서도 기본 격노 15를 생성하는 12초 접근기다. 파편 생성기 균열을 대신하지 않는다. 아래 정수 파쇄·타성 운용은 파멸 전용이다.  대상에게 접근하며 화염 피해를 입히고 격노 15를 생성한다. 기본 쿨다운은 12초다. 복수의 퇴각 뒤 접근과 자원 보충을 함께 맡길 수 있으나 이동기의 짧은 공통 제한 때문에 같은 순간 입력이 바로 이어지지 않을 수 있다. 타성을 선택했다면 준비 효과를 소비하는 주문이지만, 타성 미선택 상태에서도 분노 생성량이 크게 늘어나는 기술처럼 취급하지 않는다. 정수 파쇄를 누르기 전에 자원 보충을 마쳐 소비 구간을 지킨다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -37472,10 +37472,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기적을 행하는 자 (Miracle Worker)",
+      "description": "빛의 권능: 평온[][및 빛의 권능: 신성화]|1이;가; 추가로 1회 충전됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -37494,7 +37494,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.041,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -38032,10 +38032,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 영혼의 조각은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 영혼의 조각 흑마법사 필요 요구 레벨 3 [ 고통 : 고통의 지속 피해 효과로 영혼의 조각이 생성됩니다 ] [ 악마 : 어둠의 화살 시전 시 영혼의 조각이 생성됩니다 ] [ 파괴 : 여러 주문 시전 시 영혼의 조각 파편이 생성됩니다 ]영혼의 조각을 소모하여 더 강력한 주문을 시전하거나, 악마를 소환하여 전투를 돕게 합니다. 비전투 상태에서는 떠도는 영",
+      "description": "[ 고통: 고통의 지속 피해 효과로 영혼의 조각이 생성됩니다] [ 악마: 어둠의 화살 시전 시 영혼의 조각이 생성됩니다] [ 파괴: 여러 주문 시전 시 영혼의 조각 파편이 생성됩니다]영혼의 조각을 소모하여 더 강력한 주문을 시전하거나, 악마를 소환하여 전투를 돕게 합니다.  비전투 상태에서는 떠도는 영혼을 흡수하여 영혼의 조각이 최대 3개까지 충전됩니다.",
       "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -38054,7 +38054,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 0,
-        "linkDensity": 0.033,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -41210,10 +41210,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 악마의 마법진은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 악마의 마법진 특성 2% (기본 마나 중) 흑마법사 필요 15분 동안 악마의 마법진을 소환합니다. 악마의 마법진: 순간이동을 시전하면 해당 지역으로 순간이동하고 모든 이동 속도 감소 효과를 제거합니다. [ 킬로그의 간계 : 킬로그의 눈을 조종하는 동안 악마의 마법진: 소환을 시전하면 눈의 위치에 마법진이 소환됩니다 ] 추가로 다음을 습득합니다: 악마",
+      "description": "15분 동안 악마의 마법진을 소환합니다. 악마의 마법진: 순간이동을 시전하면 해당 지역으로 순간이동하고 모든 이동 속도 감소 효과를 제거합니다. [킬로그의 간계: 킬로그의 눈을 조종하는 동안 악마의 마법진: 소환을 시전하면 눈의 위치에 마법진이 소환됩니다]  추가로 다음을 습득합니다:   악마의 마법진: 순간이동 악마의 마법진으로 순간이동하며 모든 이동 속도 감소 효과를 제거합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41720,10 +41720,10 @@
       "castTime": "시전",
       "resourceCost": "없음",
       "range": "40미터",
-      "description": "# 초승달 (New Moon)",
+      "description": "대상에게 (주문력의 258.4%)의 천공 피해를 입히고 초승달을 강화하여 반달로 만듭니다.  10의 천공의 힘을 생성합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41750,7 +41750,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 4,
-        "linkDensity": 0.069,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -41776,10 +41776,10 @@
       "castTime": "시전",
       "resourceCost": "없음",
       "range": "40미터",
-      "description": "# 반달 (Half Moon)",
+      "description": "대상에게 (주문력의 364.8%)의 천공 피해를 입히고 반달을 강화하여 보름달로 만듭니다.  20의 천공의 힘을 생성합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41806,7 +41806,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 4,
-        "linkDensity": 0.064,
+        "linkDensity": 0.045,
         "hasWikilinks": true
       },
       "source": {
@@ -41832,10 +41832,10 @@
       "castTime": "시전",
       "resourceCost": "없음",
       "range": "40미터",
-      "description": "# 보름달 (Full Moon)",
+      "description": "대상과 그 주위의 적에게 (주문력의 422.94%)의 천공 피해를 입히고 보름달을 초기화하여 초승달로 만듭니다. 부가 대상에게는 감소된 피해를 입힙니다.  40의 천공의 힘을 생성합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -41862,7 +41862,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 4,
-        "linkDensity": 0.061,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -42042,10 +42042,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개오름 (Rising Mist)",
+      "description": "해오름차기가 소생의 안개와 포용의 안개 효과의 지속시간을 4초만큼 증가시키며, 최대 기본 지속시간의 100%까지 연장시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42064,7 +42064,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -43183,10 +43183,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 은총은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 은총 특성 흑마법사 필요 체력이 10%만큼 증가합니다.",
+      "description": "체력이 10%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -43626,10 +43626,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "결의의 힘은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 결의의 힘 특성 흑마법사 필요 영원한 결의 사용 시 받는 피해가 15%만큼 추가로 감소합니다.",
+      "description": "영원한 결의 사용 시 받는 피해가 15%만큼 추가로 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44349,7 +44349,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기도의 마법진 (Prayer Circle)",
+      "description": "빛의 권능: 신성화 사용 시 8초 동안 치유의 기원 주문의 시전 시간과 자원 소모량이 20%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -44374,7 +44374,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.049,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -44858,10 +44858,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "# 옥룡 위론의 원령 (Invoke Yu'lon, the Jade Serpent)",
+      "description": "25초 동안 머무르는 옥룡 위론의 원령을 소환합니다. 위론은 위안의 숨결로 부상당한 아군을 치유합니다. 4.5초에 걸쳐 대상과 아군 최대 2명의 생명력을 (주문력의 210%)만큼 회복시킵니다.  옥룡 위론의 원령이 활성화되어 있는 동안 포용의 안개의 자원 소모량이 50%만큼 감소합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -44880,7 +44880,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -45228,10 +45228,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "# 주학 츠지의 원령 (Invoke Chi-Ji, the Red Crane)",
+      "description": "25초 동안 주학 츠지의 원령을 소환합니다. 후려차기, 해오름차기, 회전 학다리차기를 사용하면 원령이 3번의 안개 돌풍을 일으켜 최대 2명의 아군을 [(주문력의 0.1%) * 50 / 100]만큼 치유합니다.  츠지의 원령은 시전자를 이동 방해 효과에 면역으로 만들며, 포용의 안개가 즉시 시전되고, 포용의 안개의 마나 소모량이 20%만큼 감소합니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45243,14 +45243,16 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
       },
       "synergies": {
-        "relatedSkills": [],
+        "relatedSkills": [
+          "../../공용/Skills/후려차기"
+        ],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
         "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.03,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -45539,10 +45541,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘",
       "range": "광역",
-      "description": "# 에테르 덧불 (Aetherial Kindling)",
+      "description": "별똥별 시전 시 활성화되어 있는 달빛섬광과 태양섬광의 지속시간이 최대 28초까지 3.0초만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45565,7 +45567,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 3,
-        "linkDensity": 0.044,
+        "linkDensity": 0.029,
         "hasWikilinks": true
       },
       "source": {
@@ -45645,10 +45647,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "지옥 지배은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥 지배 특성 즉시 3 분 재사용 대기시간 흑마법사 필요 다음 임프, 공허방랑자, 인큐버스, 서큐버스, 지옥사냥개 또는 지옥수호병 소환이 자원을 소모하지 않으며 주문의 시전 시간이 90%초만큼 감소합니다.",
+      "description": "다음 임프, 공허방랑자, 인큐버스, 서큐버스, 지옥사냥개 또는 지옥수호병 소환이 자원을 소모하지 않으며 주문의 시전 시간이 90%초만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45839,10 +45841,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 피로의 저주은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 피로의 저주 특성 1% (기본 마나 중) 40 야드 사정거리 즉시 흑마법사 필요 12초 동안 대상의 이동 속도를 50%만큼 감소시킵니다. 저주: 흑마법사는 한 대상에게 하나의 저주만 걸 수 있습니다.",
+      "description": "12초 동안 대상의 이동 속도를 50%만큼 감소시킵니다.  저주: 흑마법사는 한 대상에게 하나의 저주만 걸 수 있습니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -45861,7 +45863,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -46774,10 +46776,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천신의 조화 (Celestial Harmony)",
+      "description": "활성화 시 위론과 츠지가 40미터 내 5명의 대상에게 기 고치를 부여하여 10초 동안 [총 생명력 * 24 / 100 * (1 + 유연성)]의 피해를 흡수합니다.  츠지는 소환될 때 수도원의 가르침 4중첩을 부여합니다.  위론은 포용의 안개의 시전 속도를 30%만큼 감소시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46796,7 +46798,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.044,
+        "linkDensity": 0.021,
         "hasWikilinks": true
       },
       "source": {
@@ -46877,7 +46879,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위안의 숨결 (Soothing Breath)",
+      "description": "25초 동안 머무르는 옥룡 위론의 원령을 소환합니다. 위론은 위안의 숨결로 부상당한 아군을 치유합니다. 4.5초에 걸쳐 대상과 아군 최대 2명의 생명력을 (주문력의 210%)만큼 회복시킵니다.  옥룡 위론의 원령이 활성화되어 있는 동안 포용의 안개의 자원 소모량이 50%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -46899,7 +46901,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.007,
         "hasWikilinks": true
       },
       "source": {
@@ -48501,10 +48503,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "흑마법사 공용 도구상자에서 생존, 이동, 소환, 저주, 전투 부활을 담당한다. 세이야드 소환은 해당 구조에서 직접 운용 판단에 들어가는 핵심 주문 또는 지속 효과다.  공식 툴팁 요약: 세이야드 소환 영혼의 조각 1개 6 초 주문 시전 시간 흑마법사 필요 요구 레벨 19 인간형 적을 유혹하여 공격하지 못하게 하는 서큐버스나 인큐버스를 소환하여 부립니다.",
+      "description": "인간형 적을 유혹하여 공격하지 못하게 하는 서큐버스나 인큐버스를 소환하여 부립니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -48523,7 +48525,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.009,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -49582,10 +49584,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 타오르는 열의 (Burning Vehemence)",
+      "description": "신성한 불꽃의 공격력이 30%만큼 증가합니다.  신성한 불꽃이 대상의 주위 12미터 내에 있는 모든 적에게 최초 피해의 75%에 해당하는 피해를 입힙니다. 5명을 초과하는 대상에게는 감소된 피해를 입힙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49604,7 +49606,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -49630,7 +49632,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 공명의 권능 (Resonant Words)",
+      "description": "빛의 권능 주문 시전 시 다음 순간 치유, 치유, 치유의 기원, 신의 권능: 생명의 치유량이 40%만큼 증가합니다. 30초 동안 지속됩니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -49654,7 +49656,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 1,
-        "linkDensity": 0.057,
+        "linkDensity": 0.034,
         "hasWikilinks": true
       },
       "source": {
@@ -49680,10 +49682,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찬가의 돌풍 (Gales of Song)",
+      "description": "천상의 찬가에 정신을 집중하는 동안 사정거리 내 최대 3명의 아군에게 1.0초마다 회복의 기원 2중첩을 부여합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49704,7 +49706,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 1,
-        "linkDensity": 0.059,
+        "linkDensity": 0.038,
         "hasWikilinks": true
       },
       "source": {
@@ -49830,10 +49832,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 최고천의 불길 (Empyreal Blaze)",
+      "description": "빛의 권능: 응징 시전 시 다음 2회 동안 시전하는 신성한 불꽃이 즉시 시전되고 마나를 소모하지 않으며, 재사용 대기시간이 발동하지 않게 합니다.  대상에게 걸린 신성한 불꽃을 갱신하면 지속시간이 7초만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -49852,7 +49854,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -63762,10 +63764,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "암흑의 수확의 가르침은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 암흑의 수확의 가르침 특성 흑마법사 필요 고통, 파괴 주 소환수에게 추가 효과가 부여됩니다. 임프 : 마법 태우기를 성공적으로 시전하면 5초 동안 대상이 주는 피해가 4%만큼 감소합니다. 공허방랑자 : 어둠의 보루의 재사용 대기시간이 30초만큼 감소합니다. 지옥사냥개 : 마법 삼키기의 재사용 대기시간이 5초만큼 감소합니다. 세이야드 : 유혹의 재사용 대기",
+      "description": "고통,  파괴 주 소환수에게 추가 효과가 부여됩니다.  임프: 마법 태우기를 성공적으로 시전하면 5초 동안 대상이 주는 피해가 4%만큼 감소합니다.  공허방랑자: 어둠의 보루의 재사용 대기시간이 30초만큼 감소합니다.  지옥사냥개: 마법 삼키기의 재사용 대기시간이 5초만큼 감소합니다.  세이야드: 유혹의 재사용 대기시간이 10초만큼 감소하고 대상이 세이야드를 향해 걸어오는 속도가 빨라집니다.   악마 주 소환수에게 추가 효과가 부여됩니다.  임프: 마법 태우기를 성공적으로 시전하면 5초 동안 대상이 주는 피해가 4%만큼 감소합니다.  공허방랑자: 어둠의 보루의 재사용 대기시간이 30초만큼 감소합니다.  지옥사냥개: 마법 삼키기의 재사용 대기시간이 5초만큼 감소합니다.  세이야드: 유혹의 재사용 대기시간이 10초만큼 감소하고 대상이 세이야드를 향해 걸어오는 속도가 빨라집니다.  지옥수호병: 추격의 재사용 대기시간이 5초만큼 감소하고 최대 사정거리는 5미터만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63784,7 +63786,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.006,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -63860,10 +63862,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "영혼 불사르기은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 영혼 불사르기 특성 영혼의 조각 1개 즉시 6 초 재사용 대기시간 흑마법사 필요 영혼의 조각을 소모하여 주문의 잠재된 힘을 끌어냅니다. 악마의 마법진: 순간이동 : 이동 속도가 50%만큼 증가하고 6초 동안 감속 및 이동 불가 효과에 면역이 됩니다. 악마의 관문 : 즉시 시전됩니다. 생명력 흡수 : 30초 동안 치유량과 같은 양의 피해 흡수 보호막을 얻습니다. ",
+      "description": "영혼의 조각을 소모하여 주문의 잠재된 힘을 끌어냅니다.  악마의 마법진: 순간이동: 이동 속도가 50%만큼 증가하고 6초 동안 감속 및 이동 불가 효과에 면역이 됩니다.  악마의 관문: 즉시 시전됩니다.  생명력 흡수: 30초 동안 치유량과 같은 양의 피해 흡수 보호막을 얻습니다. 이 보호막은 최대 생명력의 30%를 초과할 수 없습니다.  생명석: 생명석의 치유량이 30%만큼 증가합니다. 또한 사용 시 12초 동안 최대 생명력이 20%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -63882,7 +63884,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.011,
+        "linkDensity": 0.012,
         "hasWikilinks": true
       },
       "source": {
@@ -64102,10 +64104,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악귀의 걸음은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악귀의 걸음 특성 흑마법사 필요 불타는 돌진으로 입는 피해가 10%만큼 감소합니다. 또한 불타는 돌진이 이동 속도를 추가로 20%만큼 증가시킵니다.",
+      "description": "불타는 돌진으로 입는 피해가 10%만큼 감소합니다. 또한 불타는 돌진이 이동 속도를 추가로 20%만큼 증가시킵니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64154,10 +64156,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "지옥 서약은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥 서약 특성 흑마법사 필요 지옥 지배의 재사용 대기시간이 60초만큼 감소합니다.",
+      "description": "지옥 지배의 재사용 대기시간이 60초만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64206,10 +64208,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "마의 갑옷은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 마의 갑옷 특성 흑마법사 필요 영혼 갈취로 피해를 흡수할 때, 받는 피해의 5%를 흡수해 5초에 걸쳐 받습니다. 받는 피해가 1.5%만큼 감소합니다.",
+      "description": "영혼 갈취로 피해를 흡수할 때, 받는 피해의 5%를 흡수해 5초에 걸쳐 받습니다.  받는 피해가 1.5%만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64760,10 +64762,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악몽은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악몽 특성 흑마법사 필요 공포 효과가 해제되기까지 필요한 피해량이 60%만큼 증가합니다.",
+      "description": "공포 효과가 해제되기까지 필요한 피해량이 60%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64916,10 +64918,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "어둠의 협의은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 어둠의 협의 특성 흑마법사 필요 영원한 결의의 재사용 대기시간이 45초만큼 감소합니다.",
+      "description": "영원한 결의의 재사용 대기시간이 45초만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -64968,10 +64970,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "악마의 영액은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 악마의 영액 특성 흑마법사 필요 어둠의 서약 시전 시 현재 생명력의 5%만을 희생하고 기존과 같은 양의 피해를 흡수하는 보호막을 얻습니다.",
+      "description": "어둠의 서약 시전 시 현재 생명력의 5%만을 희생하고 기존과 같은 양의 피해를 흡수하는 보호막을 얻습니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65020,10 +65022,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "단골 기부자은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 단골 기부자 특성 흑마법사 필요 어둠의 서약의 재사용 대기시간이 15초만큼 감소합니다.",
+      "description": "어둠의 서약의 재사용 대기시간이 15초만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -65072,10 +65074,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "탐식의 맹약은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 탐식의 맹약 특성 흑마법사 필요 직접 창조하는 생명석이 전투 중 여러 번 사용 가능한 악마의 생명석이 됩니다. 악마의 생명석은 거래가 불가능합니다. 악마의 생명석 즉시 25%의 생명력을 회복합니다. [ 강화된 생명석 : 추가로 6초에 걸쳐 30%의 생명력을 회복합니다 ] 60초의 재사용 대기시간이 적용됩니다.",
+      "description": "직접 창조하는 생명석이 전투 중 여러 번 사용 가능한 악마의 생명석이 됩니다. 악마의 생명석은 거래가 불가능합니다.   악마의 생명석 즉시 25%의 생명력을 회복합니다. [강화된 생명석: 추가로 6초에 걸쳐 30%의 생명력을 회복합니다] 60초의 재사용 대기시간이 적용됩니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66636,10 +66638,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 아침의 눈물 (Tear of Morning)",
+      "description": "[셰이룬의 선물 / 활기의 안개]의 치유량이 [셰이룬의 선물: 20% / 20%]만큼 증가하고, 포용의 안개가 소생의 안개가 부여된 아군을 치유량의 8%만큼 추가로 치유합니다.  천신이 소환되어 있는 동안에는 포용의 안개의 지속시간이 4초만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66658,7 +66660,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -66732,10 +66734,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 찬란한 안개 (Resplendent Mist)",
+      "description": "30%의 확률로 안개 돌풍의 치유량이 100%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66754,7 +66756,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -66831,10 +66833,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취 결속 (Jade Bond)",
+      "description": "기 고치가 만료되거나 소모될 때 4초 동안 포용의 안개를 부여하며, 츠지의 안개 돌풍의 치유량이 20%만큼, 위론의 위안의 숨결의 치유량이 500%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66853,7 +66855,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -66879,10 +66881,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위론의 속삭임 (Yu'lon's Whisper)",
+      "description": "마나 차에 정신을 집중하는 동안 위론의 숨결을 내뱉어 15미터 내 아군 최대 5명을 0.5초마다 (주문력의 91%)만큼 치유합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -66901,7 +66903,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -67243,7 +67245,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취불꽃 진각 (Jadefire Stomp)",
+      "description": "운무 매섭게 지면을 강타해 30초 동안 비취의 길을 노출시킵니다. 길의 30미터 내에 있는 최대 5명의 적에게 (전투력의 40%)의 자연 피해를 입힙니다.  비취의 길 위에서 싸우는 동안 능력 사용 시 6%의 확률로 비취불꽃 진각의 재사용 대기시간이 초기화됩니다.   양조 매섭게 지면을 강타해 30초 동안 비취의 길을 노출시킵니다. 길의 30미터 내에 있는 최대 5명의 적에게 (전투력의 40%)의 자연 피해를 입힙니다.효과 범위 내에 있는 적들에 대한 시간차의 효과가 8초 동안 5%만큼 증가합니다.   풍운 매섭게 지면을 강타해 30초 동안 비취의 길을 노출시킵니다. 이 지대 안에 있는 동안 이동 속도가 20%만큼 증가하며, 길의 30미터 내에 있는 최대 5명의 적에게 (전투력의 40%)의 자연 피해를 입힙니다. 효과 범위 내에 있는 최대 5명의 적이",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -67265,7 +67267,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -67291,10 +67293,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천신의 선물 (Gift of the Celestials)",
+      "description": "[주학 츠지의 원령 / 옥룡 위론의 원령]의 재사용 대기시간이 1분만큼 감소합니다. 하지만 지속시간도 12초로 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67313,7 +67315,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -67339,10 +67341,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 평온의 화합 (Calming Coalescence)",
+      "description": "기의 고치의 피해 흡수량이 80%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67361,7 +67363,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -67387,10 +67389,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비밀 혼합물 (Secret Infusion)",
+      "description": "집중의 천둥 차 사용 후 다음 주문이 능력치를 4%만큼 증가시킵니다. 한 번에 하나의 능력치만 증가합니다. 포용의 안개: 치명타 및 극대화 소생의 안개: 가속 해오름차기: 유연성",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67409,7 +67411,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -67489,10 +67491,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 넘치는 안개 (Overflowing Mists)",
+      "description": "포용의 안개의 대상이 직접 피해를 입을 때마다 대상의 생명력을 [(주문력의 300%) * 2]만큼 회복시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67511,7 +67513,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -67537,10 +67539,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 정수 (Mists of Life)",
+      "description": "기의 고치가 대상에게 소생의 안개와 포용의 안개를 적용합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67559,7 +67561,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -67585,10 +67587,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고양된 영혼 (Uplifted Spirits)",
+      "description": "[회복 / 재활]의 재사용 대기시간이 30초만큼 감소하고, [회복 / 재활]의 치유량은 15%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67607,7 +67609,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.043,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -67633,10 +67635,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 평화로운 치유 (Peaceful Mending)",
+      "description": "아군이 위안의 안개의 대상이 될 때마다 소생의 안개, 포용의 안개 효과로부터 치유 효과를 40%만큼 더 받습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67655,7 +67657,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -67733,10 +67735,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 정점 (Misty Peaks)",
+      "description": "소생의 안개의 지속 치유 효과가 5.0%의 확률로 포용의 안개를 2초 동안 부여합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67755,7 +67757,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -67781,10 +67783,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 춤 (Dancing Mists)",
+      "description": "소생의 안개가 처음 사용하거나 새로운 대상에게 옮겨갈 때 8%의 확률로 즉시 다른 대상에게 번집니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67803,7 +67805,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -67829,10 +67831,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 주학의 길 (Way of the Crane)",
+      "description": "범의 장풍이 2번 가격하고 후려차기는 2명의 추가 대상을 20%의 효율로 가격합니다. 또한 회전 학다리차기가 가한 피해의 280%만큼 주위 아군 1명을 치유합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -67851,7 +67853,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -67984,10 +67986,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 급속 확산 (Rapid Diffusion)",
+      "description": "해오름차기와 포용의 안개가 40미터 내의 아군에게 6동안 소생의 안개를 부여합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68006,7 +68008,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -68458,10 +68460,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "지옥의 결속력은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 지옥의 결속력 특성 100 야드 사정거리 흑마법사 필요 영혼 갈취로 부여되는 피해 흡수 효과의 8%만큼 자신이, 25%만큼 소환수가 치유됩니다.",
+      "description": "영혼 갈취로 부여되는 피해 흡수 효과의 8%만큼 자신이, 25%만큼 소환수가 치유됩니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -68482,7 +68484,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.023,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -68564,10 +68566,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "심연방랑자은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 심연방랑자 특성 흑마법사 필요 악마의 마법진: 순간이동 또는 악마의 관문을 사용하면 10초 동안 받는 모든 피해가 4%만큼 감소합니다.",
+      "description": "악마의 마법진: 순간이동 또는 악마의 관문을 사용하면 10초 동안 받는 모든 피해가 4%만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69863,10 +69865,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 위기 관리 (Crisis Management)",
+      "description": "순간 치유와 치유의 기원의 극대화율이 15%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69885,7 +69887,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -69911,10 +69913,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 오색 메아리 (Prismatic Echoes)",
+      "description": "특화: 빛의 반향의 치유량이 5%만큼, 소생의 치유량은 13%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69933,7 +69935,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.042,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -69959,10 +69961,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 고결한 자의 기도 (Prayers of the Virtuous)",
+      "description": "회복의 기원이 추가로 2번 전달됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -69981,7 +69983,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -70062,10 +70064,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 조화의 목소리 (Voice of Harmony)",
+      "description": "회복의 기원 [후광: 및 후광] 시전 시 빛의 권능: 평온의 재사용 대기시간이 4초만큼 감소합니다.  [후광 시전 시 빛의 권능: 신성화의 재사용 대기시간이 4초만큼 감소합니다. ] 신성한 불꽃이 빛의 권능: 응징의 재사용 대기시간을 4초만큼 감소시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70088,7 +70090,7 @@
       "quality": {
         "wikilinkCount": 9,
         "synergyCount": 3,
-        "linkDensity": 0.072,
+        "linkDensity": 0.047,
         "hasWikilinks": true
       },
       "source": {
@@ -70217,10 +70219,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 복원 (Restitution)",
+      "description": "구원의 영혼이 만료하면 구원의 영혼 상태에서 기여한 치유량에 기반하여 최대 100%의 생명력을 지닌 상태로 부활합니다. 부활한 후에는 10분 동안 다시 구원의 영혼 효과를 받을 수 없습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70239,7 +70241,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -70370,7 +70372,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 회복 (Holy Mending)",
+      "description": "소생 효과를 받고 있는 대상에게 회복의 기원이 전이되면 그 대상의 생명력이 즉시 (주문력의 59.9625%)만큼 회복됩니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -70392,7 +70394,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.015,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -70471,10 +70473,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 소리 내어 기원을 (Say Your Prayers)",
+      "description": "회복의 기원이 새 대상에게 전달될 때 15%의 확률로 중첩이 소모되지 않습니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70495,7 +70497,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 1,
-        "linkDensity": 0.039,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -70574,10 +70576,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신실한 기도 (Prayerful Litany)",
+      "description": "치유의 기원의 주 대상을 추가로 125%만큼 치유합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70596,7 +70598,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -70674,10 +70676,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 천상의 보은 (Divine Service)",
+      "description": "회복의 기원이 남은 전달 횟수 하나당 4%의 생명력을 추가로 회복시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70696,7 +70698,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -70927,10 +70929,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 절박한 시기 (Desperate Times)",
+      "description": "생명력이 50% 이하인 아군 대상에 대한 치유량이 10%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -70949,7 +70951,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -71026,7 +71028,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 이루어진 기원 (Answered Prayers)",
+      "description": "회복의 기원으로 50번 치유 시 8초 동안 절정 효과를 얻습니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -71048,7 +71050,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -73574,10 +73576,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘 소비기 보정",
       "range": "자신",
-      "description": "# 별의 동료 (Rattle the Stars)",
+      "description": "별빛쇄도와 별똥별의 공격력이 8%만큼 증가하고 자원 소모량은 10%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73602,7 +73604,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.073,
+        "linkDensity": 0.041,
         "hasWikilinks": true
       },
       "source": {
@@ -73678,10 +73680,10 @@
       "castTime": "지속 효과",
       "resourceCost": "치명타 보정",
       "range": "자신",
-      "description": "# 만물의 조화 (Balance of All Things)",
+      "description": "일월식 활성화 시 비전 또는 자연 주문의 극대화율이 20%만큼 증가한 후, 1초마다 2%만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -73707,7 +73709,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.074,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -74528,10 +74530,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 생명의 만개 (Burst of Life)",
+      "description": "기의 고치가 만료되면 안개를 내뿜어 총 (주문력의 806%)만큼의 생명력을 주위 아군 3명에게 고르게 나눠 회복시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74550,7 +74552,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 0,
-        "linkDensity": 0.041,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -74632,10 +74634,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 긍지의 장막 (Veil of Pride)",
+      "description": "셰이룬의 선물의 안개 구름이 4초마다 생성됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -74654,7 +74656,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -75937,10 +75939,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 지혜의 유산 (Legacy of Wisdom)",
+      "description": "셰이룬의 선물이 추가로 2명의 아군을 치유하고, 시전 시간이 0.5초만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -75959,7 +75961,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -76617,7 +76619,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기 고치 (Chi Cocoon)",
+      "description": "10초 동안 대상을 기 에너지가 충만한 고치 안에 가두어 [총 생명력 * 24 / 100 * (1 + 유연성)]의 피해를 흡수합니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.0.5",
@@ -76639,7 +76641,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.016,
         "hasWikilinks": true
       },
       "source": {
@@ -78862,10 +78864,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 현신 (Epiphany)",
+      "description": "빛의 권능 주문 시전 시 25%의 확률로 다음에 시전하는 회복의 기원이 재사용 대기시간을 무시합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -78884,7 +78886,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -79593,10 +79595,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 대천사의 점증 (Seraphic Crescendo)",
+      "description": "천상의 찬가의 재사용 대기시간이 60초만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79615,7 +79617,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -79799,10 +79801,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기력 회복주 (Energizing Brew)",
+      "description": "마나 차의 정신 집중이 50%만큼 빨라지고 마나를 20%만큼 추가로 생성합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -79821,7 +79823,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -81482,10 +81484,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "# 달의 나무정령 (Treants of the Moon)",
+      "description": "회복 숲 수호자|1이;가; 6초마다 한 번씩 주위의 대상에게 달빛섬광을 시전합니다.   조화 자연의 군대 나무정령|1이;가; 6초마다 한 번씩 주위의 대상에게 달빛섬광을 시전합니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -81506,7 +81508,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.008,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -87498,7 +87500,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "벼락은 분노·방어 전사의 산왕 영웅 특성 피해 효과다. 2026-09-22 PvE 핫픽스로 두 전문화의 피해가 각각 50% 증가했다(PvP 제외). 발동 기술은 전문화마다 다르므로 서로의 조건을 섞어 읽지 않는다.  공식 툴팁 요약: 벼락 특성 전사 필요 방어 천둥벼락, 복수, 또는 마무리 일격으로 적에게 피해를 입히면 25%의 확률로 적을 번개로 가격해 (전투력의 155.1%)의 자연 피해를 입힙니다. 투신의 지속시간 동안 벼락이 30%만큼 더 자주 발동합니다. 분노 천둥벼락, 분노의 강타, 또는 마무리 일격으로 적에게 피해를 입",
+      "description": "벼락은 분노·방어 전사의 산왕 영웅 특성 피해 효과다. 2026-09-22 PvE 핫픽스로 두 전문화의 피해가 각각 50% 증가했다(PvP 제외). 발동 기술은 전문화마다 다르므로 서로의 조건을 섞어 읽지 않는다.  공식 툴팁 요약: 벼락 특성 전사 필요 방어 천둥벼락, 복수, 또는 마무리 일격으로 적에게 피해를 입히면 25%의 확률로 적을 번개로 가격해 (전투력의 155.1%)의 자연 피해를 입힙니다. 투신의 지속시간 동안 벼락이 30%만큼 더 자주 발동합니다. 분노 천둥벼락, 분노의 강타, 또는 마무리 일격으로 적에게 피해를 입히면 25%의 확률로 적을 번개로 가격해 (전투력의 155.1%)의 자연 피해를 입힙니다. 투신의 지속시간 동안 벼락이 30%만큼 더 자주 발동합니다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -88367,10 +88369,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 츠지의 춤 (Dance of Chi-Ji)",
+      "description": "주문 및 능력 사용 시 일정 확률로 다음 회전 학다리차기가 400%의 추가 피해를 입힙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -88389,7 +88391,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -92010,7 +92012,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "40미터",
-      "description": "복수는 파편 20개 흡수 또는 원한의 인장으로 준비하고 균열·영혼 베어내기를 강화한다. 9월 23일 공식 조정으로 글레이브 자체의 공격력도 25% 증가했다. 아래 6개·사냥·혼돈의 일격·칼춤 조건은 파멸에만 적용한다.  전투검술이 준비되면 글레이브 투척을 대체하는 실제 공격이다. 영혼 파편 6개 흡수 또는 사냥이 준비 조건이며, 그 뒤 혼돈의 일격과 칼춤을 한 번씩 강화한다. 9월 23일 조정으로 글레이브 자체의 공격력은 25% 증가했고 처음 쓴 강화 능력은 15%, 두 번째는 30% 추가 피해를 얻는다. 단일의 징표 중첩과 광역의",
+      "description": "복수는 파편 20개 흡수 또는 원한의 인장으로 준비하고 균열·영혼 베어내기를 강화한다. 9월 23일 공식 조정으로 글레이브 자체의 공격력도 25% 증가했다. 아래 6개·사냥·혼돈의 일격·칼춤 조건은 파멸에만 적용한다.  전투검술이 준비되면 글레이브 투척을 대체하는 실제 공격이다. 영혼 파편 6개 흡수 또는 사냥이 준비 조건이며, 그 뒤 혼돈의 일격과 칼춤을 한 번씩 강화한다. 9월 23일 조정으로 글레이브 자체의 공격력은 25% 증가했고 처음 쓴 강화 능력은 15%, 두 번째는 30% 추가 피해를 얻는다. 단일의 징표 중첩과 광역의 칼날의 기예가 원하는 소비 순서는 다를 수 있다. 분쇄 일격과 몰아치는 전투검이 남았는데 새 글레이브로 덮거나, 글레이브를 보유한 채 사냥으로 또 만들지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -92176,7 +92178,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상",
-      "description": "복수는 강화 균열로 부여하며 영혼 베어내기 뒤 균열이면 추가 중첩을 얻는다. 다음 혼돈의 일격·칼춤 설명은 파멸 전용이다.  파괴자의 징표의 대상 약화 효과 ID다. 특성 노드는 442679이며, 플레이어가 별도로 시전하는 주문이 아니다. 파멸은 강화된 혼돈의 일격 계열로 부여하며 칼춤 뒤에 소비하면 추가 중첩을 얻는다. 20초 지속·최대 2중첩이다. 9월 23일 공식 조정은 파멸 중첩당 7%, 복수 중첩당 8%이나 현재 공유 한국어 툴팁은 둘 다 8%로 표시한다. 파멸의 실제 적용값은 로그로 별도 확인해야 한다. 부상당한 사냥감의",
+      "description": "복수는 강화 균열로 부여하며 영혼 베어내기 뒤 균열이면 추가 중첩을 얻는다. 다음 혼돈의 일격·칼춤 설명은 파멸 전용이다.  파괴자의 징표의 대상 약화 효과 ID다. 특성 노드는 442679이며, 플레이어가 별도로 시전하는 주문이 아니다. 파멸은 강화된 혼돈의 일격 계열로 부여하며 칼춤 뒤에 소비하면 추가 중첩을 얻는다. 20초 지속·최대 2중첩이다. 9월 23일 공식 조정은 파멸 중첩당 7%, 복수 중첩당 8%이나 현재 공유 한국어 툴팁은 둘 다 8%로 표시한다. 파멸의 실제 적용값은 로그로 별도 확인해야 한다. 부상당한 사냥감의 피해 대상과 연결되므로 징표가 사라지는 시각과 대상의 생존 시간을 함께 확인한다. 모든 적에게 독립적으로 유지하는 광역 지속 피해로 설명하지 않는다.",
       "category": "buff",
       "tags": [],
       "patch": "12.1",
@@ -92230,7 +92232,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "대상",
-      "description": "복수에서는 강화 균열로 부여하며 영혼 베어내기 뒤 균열을 쓰면 추가 중첩을 얻는다. 아래 혼돈의 일격·칼춤 조건은 파멸 전용이다.  파괴자의 글레이브로 강화된 혼돈의 일격이 대상에게 20초간 받는 피해 증가를 남긴다. 9월 23일 공식 조정은 파멸 7%, 복수 8%로 구분한다. 현재 Wowhead 한국어 공유 툴팁 442679는 두 전문화 모두 8%로 표시하므로 파멸의 적용값은 실제 전투에서 별도 확인이 필요하다. 기본 최대 2중첩이며 칼춤 후 혼돈의 일격을 쓰면 추가 중첩을 얻는다. 대상 약화 효과는 442624다. 칼날의 기예가",
+      "description": "복수에서는 강화 균열로 부여하며 영혼 베어내기 뒤 균열을 쓰면 추가 중첩을 얻는다. 아래 혼돈의 일격·칼춤 조건은 파멸 전용이다.  파괴자의 글레이브로 강화된 혼돈의 일격이 대상에게 20초간 받는 피해 증가를 남긴다. 9월 23일 공식 조정은 파멸 7%, 복수 8%로 구분한다. 현재 Wowhead 한국어 공유 툴팁 442679는 두 전문화 모두 8%로 표시하므로 파멸의 적용값은 실제 전투에서 별도 확인이 필요하다. 기본 최대 2중첩이며 칼춤 후 혼돈의 일격을 쓰면 추가 중첩을 얻는다. 대상 약화 효과는 442624다. 칼날의 기예가 만드는 순서 보상과 함께 읽는다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -92387,7 +92389,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신 주변",
-      "description": "복수에서는 강화 영혼 베어내기가 베기를 발동시킨다. 균열을 먼저 쓰면 6회, 칼날의 기예 선택 시 12회다. 다음 칼춤 설명은 파멸 전용이다.  현재 특성 설명은 442718로 연결한다. 파괴자의 글레이브로 강화된 칼춤은 추가 베기 3회를 일으키며, 혼돈의 일격을 먼저 소비했다면 기본적으로 6회가 된다. 칼날의 기예를 선택하면 그 두 번째 칼춤의 추가 베기는 12회가 된다. 444806은 관련 피해 효과로 관측될 수 있지만 특성 설명 대신 쓰지 않는다. 여러 대상을 칼춤으로 맞힐 때와 주 대상 징표 중첩을 우선할 때는 두 강화 소비",
+      "description": "복수에서는 강화 영혼 베어내기가 베기를 발동시킨다. 균열을 먼저 쓰면 6회, 칼날의 기예 선택 시 12회다. 다음 칼춤 설명은 파멸 전용이다.  현재 특성 설명은 442718로 연결한다. 파괴자의 글레이브로 강화된 칼춤은 추가 베기 3회를 일으키며, 혼돈의 일격을 먼저 소비했다면 기본적으로 6회가 된다. 칼날의 기예를 선택하면 그 두 번째 칼춤의 추가 베기는 12회가 된다. 444806은 관련 피해 효과로 관측될 수 있지만 특성 설명 대신 쓰지 않는다. 여러 대상을 칼춤으로 맞힐 때와 주 대상 징표 중첩을 우선할 때는 두 강화 소비기의 순서가 달라진다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -96748,10 +96750,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 태학파 (Crane Style)",
+      "description": "해오름차기 사용 시 안개 돌풍을 일으켜 40미터 내의 아군 2명을 (주문력의 0.1%)만큼 치유합니다.  회전 학다리차기와 후려차기가 일정 확률로 안개 돌풍을 일으켜 40미터 내의 아군 1명을 (주문력의 0.1%)만큼 치유합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96770,7 +96772,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -96796,10 +96798,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 선의 파동 (Zen Pulse)",
+      "description": "소생의 안개의 지속 치유 효과가 일정 확률로 다음 [셰이룬의 선물 / 생기 충전] 시전 시 추가로 대상과 소생의 안개가 부여된 모든 아군에게 선의 파동을 발동시키게 하여 (주문력의 160%)만큼 치유합니다. 활성화된 소생의 안개 효과 하나당 치유량이 6%만큼, 최대 30%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96818,7 +96820,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -96844,10 +96846,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 깊은 명료함 (Deep Clarity)",
+      "description": "집중의 천둥 차를 완전히 소모하면, 다음 생기 충전 시전 시 선의 파동이 발동합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -96866,7 +96868,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.032,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -99151,10 +99153,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 기의 물결 (Chi Wave)",
+      "description": "양조 15초마다 다음 맥주통 휘두르기 또는 생기 충전 사용 시 기의 물결을 방출해 아군과 적을 넘나들며 (전투력의 20%)의 자연 피해를 입히거나 (전투력의 60%)의 생명력을 회복시킵니다. 최대 7번까지 25미터 내의 대상에게 튕깁니다.   운무 15초마다 다음 해오름차기 또는 생기 충전 사용 시 기의 물결을 방출해 아군과 적을 넘나들며 (전투력의 20%)의 자연 피해를 입히거나 (전투력의 60%)의 생명력을 회복시킵니다. 최대 7번까지 25미터 내의 대상에게 튕깁니다.   풍운 15초마다 다음 해오름차기 또는 생기 충전 사용 시 기의 물결을 방출해 아군과 적을 넘나들며 (전투력의 20%)의 자연 피해를 입히거나 (전투력의 60%)의 생명력을 회복시킵니다. 최대 7번까지 25미터 내의 대상에게 튕깁니다.",
       "category": "hero-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -99173,7 +99175,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.005,
         "hasWikilinks": true
       },
       "source": {
@@ -102305,10 +102307,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "신속한 책략은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 신속한 책략 특성 흑마법사 필요 영혼석과 생명석 창조의 시전 시간이 50%만큼 감소합니다.",
+      "description": "영혼석과 생명석 창조의 시전 시간이 50%만큼 감소합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -102912,54 +102914,6 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\10-도적\\공용\\Hero-Talents\\곧게선동전.md",
-        "lastUpdate": ""
-      }
-    },
-    "453600": {
-      "id": "453600",
-      "type": "talent",
-      "class": "Mage",
-      "spec": "비전",
-      "specs": [
-        "Arcane"
-      ],
-      "name": "에테르 조율",
-      "koreanName": "에테르 조율",
-      "englishName": "Aether Attunement",
-      "icon": "inv_enchant_essencearcanelarge",
-      "iconName": "inv_enchant_essencearcanelarge",
-      "school": "",
-      "cooldown": "관련 주문 연계",
-      "castTime": "지속 효과",
-      "resourceCost": "없음",
-      "range": "자신",
-      "description": "# 에테르 조율 (Aether Attunement)",
-      "category": "talent",
-      "tags": [],
-      "patch": "12.0.5",
-      "created": "",
-      "updated": "",
-      "nonAtomic": false,
-      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essencearcanelarge.jpg",
-      "iconUrls": {
-        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_enchant_essencearcanelarge.jpg",
-        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_enchant_essencearcanelarge.jpg",
-        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_enchant_essencearcanelarge.jpg",
-        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essencearcanelarge.jpg"
-      },
-      "synergies": {
-        "relatedSkills": [],
-        "relatedTalents": [],
-        "relatedHeroTalents": []
-      },
-      "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.022,
-        "hasWikilinks": true
-      },
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\에테르조율.md",
         "lastUpdate": ""
       }
     },
@@ -103728,7 +103682,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "고양은 소모한 소용돌이치는 무기 중첩 하나당 2.00%, 정기는 소모한 소용돌이 하나당 0.30%의 확률로 다음 번개 화살이 폭풍으로 바뀐다. 일정 중첩을 채우면 반드시 발동하는 방식이 아니다. 이 항목의 454009는 변환 효과를 제공하는 지속 효과 특성 ID이며, 실제 시전 기술과 구분한다.  변환된 폭풍은 주 대상에게 자연 피해를 주고, 대상 주변 8미터의 적에게 주 대상 계수의 65%에 해당하는 피해를 준다. 5명을 초과하면 피해가 감소한다. 고양은 소용돌이치는 무기를 소비해 시전 시간을 줄인다. 기본 시전 시간 2초, 사거",
+      "description": "고양은 소모한 소용돌이치는 무기 중첩 하나당 2.00%, 정기는 소모한 소용돌이 하나당 0.30%의 확률로 다음 번개 화살이 폭풍으로 바뀐다. 일정 중첩을 채우면 반드시 발동하는 방식이 아니다. 이 항목의 454009는 변환 효과를 제공하는 지속 효과 특성 ID이며, 실제 시전 기술과 구분한다.  변환된 폭풍은 주 대상에게 자연 피해를 주고, 대상 주변 8미터의 적에게 주 대상 계수의 65%에 해당하는 피해를 준다. 5명을 초과하면 피해가 감소한다. 고양은 소용돌이치는 무기를 소비해 시전 시간을 줄인다. 기본 시전 시간 2초, 사거리 40미터, 비용은 기본 마나의 0.2%다.",
       "category": "hero-talent",
       "tags": [],
       "patch": "12.1",
@@ -106990,10 +106944,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 연꽃 주입 (Lotus Infusion)",
+      "description": "소생의 안개가 부여된 아군이 시전자에게 받는 치유 효과가 6%만큼 증가합니다. 또한 소생의 안개의 지속시간이 2초만큼 연장됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -107012,7 +106966,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -109916,10 +109870,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취불꽃의 가르침 (Jadefire Teachings)",
+      "description": "고대의 가르침이 추가로 320%의 피해를 치유량으로 전환합니다.  체력이 8%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -109938,7 +109892,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -110017,10 +109971,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 비취 강화 (Jade Empowerment)",
+      "description": "짜릿한 비취 번개의 공격력이 300%만큼 증가하고 추가로 25%의 효율로 4명의 적을 연쇄적으로 가격합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -110039,7 +109993,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -110573,10 +110527,10 @@
       "castTime": "지속 효과",
       "resourceCost": "버프 유지",
       "range": "자신",
-      "description": "# 빗발치는 별 (Hail of Stars)",
+      "description": "자원을 소모하지 않는 별빛쇄도 또는 별똥별 시전 시 3초 동안 지점이 부여됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -110600,7 +110554,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.056,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -111887,10 +111841,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 어둠 속의 빛 (Light in the Darkness)",
+      "description": "빛의 권능: 평온과 빛의 권능: 신성화의 치유량이 30%만큼 증가합니다.  빛의 권능: 신성화의 반경이 30%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -111909,7 +111863,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.029,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -113260,10 +113214,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신앙 (Divinity)",
+      "description": "절정이 활성화된 동안 치유량이 10%만큼 증가합니다.  절정 시전 시 다음 3회의 치유의 기원이 즉시 시전되고 치유량이 25%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113282,7 +113236,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.017,
         "hasWikilinks": true
       },
       "source": {
@@ -113361,10 +113315,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 흩어지는 빛 (Dispersing Light)",
+      "description": "순간 치유의 치유량의 5%가 40미터 내 부상당한 아군 4명에게 복제됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113383,7 +113337,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -113409,10 +113363,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 신성한 기민함 (Holy Celerity)",
+      "description": "빛의 권능 주문의 재사용 대기시간이 15초만큼 감소합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -113431,7 +113385,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -115950,10 +115904,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘",
       "range": "광역",
-      "description": "# 유성 폭풍 (Meteor Storm)",
+      "description": "별똥별이 피해를 입히는 속도가 100%만큼 빨라집니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -115974,7 +115928,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 1,
-        "linkDensity": 0.014,
+        "linkDensity": 0.009,
         "hasWikilinks": true
       },
       "source": {
@@ -116158,10 +116112,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 일월식 연마 (Improved Eclipse)",
+      "description": "월식과 일식이 추가로 1회 충전됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -116185,7 +116139,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.038,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -117721,10 +117675,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 운룡의 길 (Way of the Serpent)",
+      "description": "[셰이룬의 선물 / 생기 충전]의 치유량이 15%만큼, 소생의 안개의 치유량은 30%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -117743,11 +117697,59 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\운룡의길.md",
+        "lastUpdate": ""
+      }
+    },
+    "1243307": {
+      "id": "1243307",
+      "type": "talent",
+      "class": "Mage",
+      "spec": "비전",
+      "specs": [
+        "Arcane"
+      ],
+      "name": "에테르 조율",
+      "koreanName": "에테르 조율",
+      "englishName": "Aether Attunement",
+      "icon": "inv_enchant_essencearcanelarge",
+      "iconName": "inv_enchant_essencearcanelarge",
+      "school": "",
+      "cooldown": "관련 주문 연계",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "자신",
+      "description": "신비한 화살이 50%의 효율로 2명의 추가 대상을 공격합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essencearcanelarge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/inv_enchant_essencearcanelarge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/inv_enchant_essencearcanelarge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/inv_enchant_essencearcanelarge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/inv_enchant_essencearcanelarge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 0,
+        "linkDensity": 0.015,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Talents\\에테르조율.md",
         "lastUpdate": ""
       }
     },
@@ -131770,10 +131772,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘 소비기 연계",
       "range": "자신",
-      "description": "# 승천자의 일월식 (Ascendant Eclipses)",
+      "description": "일월식 활성화 시 다음 천벌 또는 별빛섬광이 즉시 시전됩니다. 일월식의 지속시간 동안 처음 3번 시전하는 별빛쇄도 또는 별똥별은 20%의 추가 피해를 입힙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -131798,7 +131800,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 5,
-        "linkDensity": 0.052,
+        "linkDensity": 0.035,
         "hasWikilinks": true
       },
       "source": {
@@ -133889,10 +133891,10 @@
       "castTime": "지속 효과",
       "resourceCost": "무료 즉시 시전",
       "range": "자신",
-      "description": "# 승천자의 불길 (Ascendant Fires)",
+      "description": "일월식 활성화 시 다음 천벌 또는 별빛섬광이 즉시 시전됩니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133918,7 +133920,7 @@
       "quality": {
         "wikilinkCount": 6,
         "synergyCount": 6,
-        "linkDensity": 0.088,
+        "linkDensity": 0.05,
         "hasWikilinks": true
       },
       "source": {
@@ -133944,10 +133946,10 @@
       "castTime": "지속 효과",
       "resourceCost": "천공의 힘 소비기 강화",
       "range": "자신",
-      "description": "# 승천의 별 (Ascendant Stars)",
+      "description": "일월식의 지속시간 동안 처음 3번 시전하는 별빛쇄도 또는 별똥별은 20%의 추가 피해를 입힙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -133973,7 +133975,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 5,
-        "linkDensity": 0.081,
+        "linkDensity": 0.043,
         "hasWikilinks": true
       },
       "source": {
@@ -137477,10 +137479,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "방랑 기질은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 방랑 기질 특성 흑마법사 필요 악마의 관문의 시전 시간이 0.5초만큼 감소합니다. 또한 재사용 대기시간이 발동할 때까지 악마의 관문을 2번 사용할 수 있습니다.",
+      "description": "악마의 관문의 시전 시간이 0.5초만큼 감소합니다. 또한 재사용 대기시간이 발동할 때까지 악마의 관문을 2번 사용할 수 있습니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137577,10 +137579,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "불지옥 수혜자은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 불지옥 수혜자 특성 흑마법사 필요 생명력 흡수로 치유 시 400%의 효율로 주 악마의 생명력을 회복시킵니다.",
+      "description": "생명력 흡수로 치유 시 400%의 효율로 주 악마의 생명력을 회복시킵니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137627,10 +137629,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "부정한 입은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 부정한 입 특성 흑마법사 필요 피로의 저주, 언어의 저주 또는 무력화 저주 시전 시 대상 10미터 내의 모든 적에게 저주를 겁니다.",
+      "description": "피로의 저주, 언어의 저주 또는 무력화 저주 시전 시 대상 10미터 내의 모든 적에게 저주를 겁니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -137677,10 +137679,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "필멸의 고리 연마은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 필멸의 고리 연마 특성 흑마법사 필요 필멸의 고리의 사정거리가 10미터만큼 증가하고, 시전 시 최대 생명력의 5%만큼 생명력을 추가로 회복시킵니다.",
+      "description": "필멸의 고리의 사정거리가 10미터만큼 증가하고, 시전 시 최대 생명력의 5%만큼 생명력을 추가로 회복시킵니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139477,10 +139479,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 황제의 총애 (Emperor's Elixir)",
+      "description": "집중의 천둥 차가 포용의 안개와 해오름차기를 추가로 강화합니다.   포용의 안개: 대상에게 위안의 안개를 집중합니다.   해오름차기: 전방에 비취불꽃 진각을 내질러 20%의 효율로 피해를 고대의 가르침으로 이전시킵니다.   비취불꽃 진각: 비취불꽃 진각을 내질러 전방의 적 5명에게 (전투력의 100%)의 피해를 입힙니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139499,7 +139501,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.008,
         "hasWikilinks": true
       },
       "source": {
@@ -139579,10 +139581,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 응결 (Misty Coalescence)",
+      "description": "소생의 안개를 자신과 아군에게 부여할수록 그에 비례하여 치유량이 최대 300%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -139601,7 +139603,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -140857,10 +140859,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "위압적인 어둠은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 위압적인 어둠 특성 흑마법사 필요 어둠의 격노의 재사용 대기시간이 15초만큼 감소하고 반경은 2미터만큼 증가합니다. 공포의 울부짖음의 재사용 대기시간이 5초만큼 감소하고, 추가 적 5명을 공포에 질리게 합니다.",
+      "description": "어둠의 격노의 재사용 대기시간이 15초만큼 감소하고 반경은 2미터만큼 증가합니다.  공포의 울부짖음의 재사용 대기시간이 5초만큼 감소하고, 추가 적 5명을 공포에 질리게 합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141526,10 +141528,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 평안의 차 (Tranquil Tea)",
+      "description": "마나 차를 소모하면 안개 구름 1개를 생성합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141548,7 +141550,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -141576,10 +141578,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "사티로스의 서약은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 사티로스의 서약 특성 흑마법사 필요 가속이 2%만큼 증가합니다.",
+      "description": "가속이 2%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141626,10 +141628,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "아나이힐란의 서약은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 아나이힐란의 서약 특성 흑마법사 필요 치명타 및 극대화율이 2%만큼 증가합니다.",
+      "description": "치명타 및 극대화율이 2%만큼 증가합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -141676,10 +141678,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "고어핀드의 탐욕은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 고어핀드의 탐욕 특성 흑마법사 필요 생명력 흡수가 100%만큼 더 빨리 피해를 입히고 생명력을 100% 더 빨리 회복시킵니다.",
+      "description": "생명력 흡수가 100%만큼 더 빨리 피해를 입히고 생명력을 100% 더 빨리 회복시킵니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142891,10 +142893,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 증폭된 질주 (Amplified Rush)",
+      "description": "소생의 안개로 발동하는 안개 돌풍의 치유량이 100%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -142913,7 +142915,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -143153,10 +143155,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "경화된 영혼은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 경화된 영혼 특성 흑마법사 필요 영혼 갈취가 최대 생명력의 5%를 추가로 흡수합니다.",
+      "description": "영혼 갈취가 최대 생명력의 5%를 추가로 흡수합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -143203,10 +143205,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "강화된 생명석은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 강화된 생명석 특성 흑마법사 필요 생명력 사용 시 5%의 생명력을 추가로 회복합니다.",
+      "description": "생명석 사용 시 5%의 생명력을 추가로 회복합니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -143253,7 +143255,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "약화의 역병은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 약화의 역병 특성 40 야드 사정거리 즉시 2 분 재사용 대기시간 흑마법사 필요 엉겨 붙는 어둠의 안개구름을 불러내 대상과 10미터 내 모든 적을 감쌉니다. 감싸인 대상은 12초 동안 공격 간격이 100%만큼 늘어나고 치명타 및 극대화율이 10%만큼 감소합니다. 저주: 흑마법사는 대상 하나당 단 하나의 저주 또는 역병을 걸 수 있습니다.",
+      "description": "엉겨 붙는 어둠의 안개구름을 불러내 대상과 10미터 내 모든 적을 감쌉니다. 감싸인 대상은 12초 동안 공격 간격이 100%만큼 늘어나고 치명타 및 극대화율이 10%만큼 감소합니다.  저주: 흑마법사는 대상 하나당 단 하나의 저주 또는 역병을 걸 수 있습니다.",
       "category": "class-talent",
       "tags": [],
       "patch": "12.0.5",
@@ -143303,10 +143305,10 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "언어의 역병은 공용 직업 특성 노트다. 12.0.5 흑마법사 빌드에서는 생존, 자원, 소환수, 지속 피해, 또는 조각 소비 구간의 우선순위를 조정한다.  공식 툴팁 요약: 언어의 역병 특성 40 야드 사정거리 즉시 2 분 재사용 대기시간 흑마법사 필요 엉겨 붙는 어둠의 안개구름을 불러내 대상과 10미터 내 모든 적을 감쌉니다. 감싸인 대상은 12초 동안 모든 주문의 시전 속도가 100%만큼 감소합니다. 저주: 흑마법사는 대상 하나당 단 하나의 저주 또는 역병을 걸 수 있습니다.",
+      "description": "엉겨 붙는 어둠의 안개구름을 불러내 대상과 10미터 내 모든 적을 감쌉니다. 감싸인 대상은 12초 동안 모든 주문의 시전 속도가 100%만큼 감소합니다.  저주: 흑마법사는 대상 하나당 단 하나의 저주 또는 역병을 걸 수 있습니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -143554,7 +143556,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "30야드",
-      "description": "주변의 역병을 소비해 남은 피해의 200%를 즉시 입히고 부패 1충전을 돌려주는 실제 시전 기술입니다. 9월 23일 상향과 24일 시간 경과에 따른 피해 감소 버그 수정을 반영했습니다. 역병내림 특성을 선택한 상태에서 어둠의 변신으로 사용 기회를 얻습니다. 0.75초는 내부 시전 제한이며 지속적으로 아무 때나 반복할 수 있다는 뜻이 아닙니다.",
+      "description": "주위 역병의 100%를 소모하여 남은 피해를 200%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -143582,7 +143584,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.027,
+        "linkDensity": 0.026,
         "hasWikilinks": true
       },
       "source": {
@@ -143608,7 +143610,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "어둠의 변신으로 역병내림을 사용할 수 있게 하는 선택 특성입니다. 실제 사용 기술은 1271967이며 주변 역병을 소비해 남은 피해의 200%를 즉시 입히고 부패 1충전을 돌려줍니다. 9월 23일 상향과 24일 시간 경과에 따른 피해 감소 버그 수정을 반영했습니다. 모든 산레인 빌드에 자동 포함되는 효과가 아닙니다.",
+      "description": "어둠의 변신이 역병내림을 사용할 수 있도록 합니다.  역병내림 주위 역병의 100%를 소모하여 남은 피해를 200%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -143635,7 +143637,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.034,
+        "linkDensity": 0.028,
         "hasWikilinks": true
       },
       "source": {
@@ -148399,10 +148401,10 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
-      "description": "# 안개의 경계선 (Mistline)",
+      "description": "소생의 안개가 생명력이 가장 낮은 아군의 생명력을 500%만큼 추가로 회복시킵니다.",
       "category": "talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -148421,7 +148423,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.017,
+        "linkDensity": 0.01,
         "hasWikilinks": true
       },
       "source": {
@@ -152453,7 +152455,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "제압의 공격력이 15% 증가한다. 필사의 일격과 제압이 다음 격돌의 공격력을 20%씩 강화하며 최대 5중첩까지 쌓인다. 상시 모든 격돌을 강화하는 효과가 아니라 생성한 중첩을 다음 공격에 소비하는 효과다. 툴팁의 500밀리초는 이 지속 효과의 내부 제한이며 플레이어가 누르는 별도 쿨다운 기술이 아니다.  2026-10-03 확인한 SimulationCraft 라이브 빌드 69933(커밋 `6c50c3c7b96c81bbb8e7abefbd817ecf31519592`) 구현에서 필사의 일격과 제압은 winding_up을 생성하고, 격돌과",
+      "description": "제압의 공격력이 15% 증가한다. 필사의 일격과 제압이 다음 격돌의 공격력을 20%씩 강화하며 최대 5중첩까지 쌓인다. 상시 모든 격돌을 강화하는 효과가 아니라 생성한 중첩을 다음 공격에 소비하는 효과다. 툴팁의 500밀리초는 이 지속 효과의 내부 제한이며 플레이어가 누르는 별도 쿨다운 기술이 아니다.  2026-10-03 확인한 SimulationCraft 라이브 빌드 69933(커밋 `6c50c3c7b96c81bbb8e7abefbd817ecf31519592`) 구현에서 필사의 일격과 제압은 winding_up을 생성하고, 격돌과 영웅의 일격의 공통 실행부가 이를 소비한다. 전투의 열정으로 발생하는 격돌도 같은 실행부를 쓰므로 수동 격돌 시전만으로 세트 소비 횟수를 판단하지 않는다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
