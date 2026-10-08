@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-27T02:01:58.109Z",
+    "generatedAt": "2026-10-08T03:19:41.379Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -583,7 +583,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\얼음기둥-룬무기강화-사신의징표.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-10-03"
       }
     },
     "종말의기수_서리고룡의격노_기동성": {
@@ -614,7 +614,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Synergies\\종말의기수-서리고룡의격노-기동성.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-10-03"
       }
     },
     "공포의역병_전염병": {
@@ -648,7 +648,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\공포의역병-전염병.md",
-        "lastUpdate": "2026-09-12"
+        "lastUpdate": "2026-10-03"
       }
     },
     "구울_부패쿨감_연쇄공격": {
@@ -929,7 +929,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Synergies\\질병-부패-역병내림.md",
-        "lastUpdate": "2026-09-27"
+        "lastUpdate": "2026-10-03"
       }
     },
     "바닥_방어조건": {
@@ -984,7 +984,7 @@
       "linkedTalents": [],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Synergies\\뼈의보호막-죽음의일격.md",
-        "lastUpdate": ""
+        "lastUpdate": "2026-10-03"
       }
     },
     "산레인_흡혈": {
@@ -2323,7 +2323,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Synergies\\공허탈태-붕괴하는별.md",
-        "lastUpdate": "2026-09-08"
+        "lastUpdate": "2026-10-03"
       }
     },
     "수확_영혼분출": {
@@ -7813,7 +7813,7 @@
       "participants": [
         "1243557",
         "30451",
-        "1243460",
+        "1241462",
         "153626",
         "1295924",
         "384452"
@@ -7836,7 +7836,7 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Synergies\\정신확장-연사생성.md",
-        "lastUpdate": "2026-09-09"
+        "lastUpdate": "2026-10-03"
       }
     },
     "화살_연사_탄막_오색화살": {
@@ -13216,7 +13216,7 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/대천사의점증",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/찬가의돌풍",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/내세",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/작별의한마디",
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/치유의잔향",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/흩어지는빛"
       ],
       "source": {
@@ -16773,22 +16773,14 @@
         "61882",
         "462620",
         "191634",
-        "454009",
-        "210689",
+        "470057",
+        "1259471",
         "381726",
         "468626",
         "1258899",
         "273221",
         "381707",
-        "191861",
-        "382032",
-        "1258895",
-        "462757",
-        "468625",
-        "1258889",
-        "468571",
-        "191717",
-        "462862"
+        "16166"
       ],
       "class": "Shaman",
       "spec": "정기",
@@ -16797,23 +16789,23 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/지진",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/대지충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/전격의불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/산은무너지리라",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/대지분쇄",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지층붕괴",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/피뢰침",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지진",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/여진",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/팽창하는소용돌이",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지층붕괴",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/여진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의대가",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/피뢰침",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/소용돌이의힘",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/메아리의방",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정령공명"
@@ -16892,7 +16884,7 @@
     },
     "shaman_elemental_voltaic_blaze_fire_bridge": {
       "id": "shaman_elemental_voltaic_blaze_fire_bridge",
-      "name": "전격의 불길-정화의 불길 화염/자연 브리지",
+      "name": "전격의 불길-정화의 불길 화염 확산",
       "type": "synergy",
       "synergyType": "fire_nature_bridge",
       "participants": [
@@ -16900,18 +16892,8 @@
         "1259471",
         "188389",
         "51505",
-        "188196",
-        "188443",
-        "462840",
-        "16166",
-        "1258895",
-        "462862",
-        "468625",
-        "1258889",
         "1269215",
-        "1258843",
-        "381782",
-        "381784"
+        "378266"
       ],
       "class": "Shaman",
       "spec": "정기",
@@ -16920,25 +16902,25 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/용암폭발",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격",
         "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
-        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자"
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/전격의불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정화의불길",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/전격의불길",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/타오르는분노",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/도가니의불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의융합",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의대가",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정령공명",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/번개축전기",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/충전된도관",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/폭풍주입",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/타오르는분노",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/작열하는분노"
       ],
       "source": {
@@ -16948,7 +16930,7 @@
     },
     "shaman_elemental_maelstrom_spender_loop": {
       "id": "shaman_elemental_maelstrom_spender_loop",
-      "name": "소용돌이 소비-정기 과부하 순환",
+      "name": "소용돌이 생성·소비 순환",
       "type": "synergy",
       "synergyType": "maelstrom_spender_loop",
       "participants": [
@@ -16956,24 +16938,17 @@
         "117014",
         "61882",
         "462620",
+        "188196",
+        "188443",
+        "1273485",
+        "381782",
         "273221",
+        "1258899",
         "381707",
+        "381708",
         "381726",
         "468626",
-        "1258899",
-        "191861",
-        "382032",
-        "333919",
-        "60188",
-        "1258895",
-        "170374",
-        "1270061",
-        "1270062",
-        "1270064",
-        "462840",
-        "16166",
-        "188196",
-        "188443"
+        "382032"
       ],
       "class": "Shaman",
       "spec": "정기",
@@ -16982,26 +16957,30 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/번개화살",
+        "08-직업별-Knowledge-Base/11-주술사/공용/Skills/연쇄번개",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/대지충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/정기작렬",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/지진"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의대가",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지진",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/여진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/용암의줄기",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/이글거리는불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/팽창하는소용돌이",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/폭풍의눈",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/여진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지층붕괴",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/산은무너지리라",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/메아리의방",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지진",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/대지분쇄",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/소용돌이의힘",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의메아리",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정령공명",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/메아리의방",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/산은무너지리라",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/대지분쇄",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/지층붕괴",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의격노"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의격노",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정령공명"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Synergies\\정기의메아리-정기과부하.md",
@@ -17092,20 +17071,15 @@
       "participants": [
         "188389",
         "51505",
-        "198067",
-        "378255",
         "381784",
         "378266",
         "381782",
         "1259047",
-        "1258843",
         "1273485",
+        "1258843",
         "16166",
-        "462840",
-        "382027",
-        "378193",
         "333919",
-        "60188"
+        "378255"
       ],
       "class": "Shaman",
       "spec": "정기",
@@ -17114,25 +17088,24 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/화염충격",
         "08-직업별-Knowledge-Base/11-주술사/정기/Skills/용암폭발",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/불의정령",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/폭풍수호자"
+        "08-직업별-Knowledge-Base/11-주술사/정기/Skills/불의정령"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의메아리",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의대가",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의융합",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/불의부름",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/불의군주의불꽃",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/도가니의불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/이글거리는불길",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/굽이치는지옥불",
-        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/작열하는분노",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/용암의줄기",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/작열하는분노",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의메아리",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/원소의대가",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/불의부름",
+        "08-직업별-Knowledge-Base/11-주술사/정기/Talents/정기의융합",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/불꽃혓바닥무기연마",
         "08-직업별-Knowledge-Base/11-주술사/정기/Talents/태고의분노"
       ],

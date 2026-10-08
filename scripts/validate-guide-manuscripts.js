@@ -1241,7 +1241,7 @@ function main() {
   assert(retributionNotes.length === 69 && retributionNotes.every(skill => skill.patch === '12.1' && skill.description?.trim()), 'All 69 Retribution notes must retain reviewed descriptions');
   assert(!retribution.extraSkills?.length && !kbSkills['267344'] && kbSkills['406064']?.type === 'talent', 'Retribution must use current Art of War without extraSkills');
   assert(kbSkills['403876']?.type === 'atomic-skill' && kbSkills['184662']?.type === 'buff' && kbSkills['1261562']?.type === 'talent', 'Shield of Vengeance must remain an effect of the actual Divine Protection cast');
-  assert(kbSkills['375576']?.specs.includes('Retribution') && kbSkills['375576']?.description.includes('50% 강화 심판'), 'Divine Toll must have canonical Retribution scope and mechanics');
+  assert(kbSkills['375576']?.specs.includes('Retribution') && /심판.*50%/.test(kbSkills['375576']?.description), 'Divine Toll must have canonical Retribution scope and mechanics');
   assert(kbSkills['1261113']?.description.includes('두 발동 특성') && kbSkills['1261113']?.description.includes('80%'), 'Light Within must retain current strength and mutually exclusive proc talents');
   assert(kbSkills['1296660']?.description.includes('10%p') && kbSkills['1296661']?.description.includes('다른 종류'), 'Retribution tier effects must retain chance and different-spender conditions');
   assert(['1306161', '1306162', '1310461'].every(id => kbSkills[id]?.type === 'buff') && kbSkills['1306923']?.type === 'proc', 'Divine Arbiter states and automatic damage must not become player casts');

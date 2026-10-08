@@ -371,13 +371,13 @@ function HolyPriestLogReportPage() {
           </Section>
 
           <Section id="talent">
-            <SectionHeading number="06 · 특성 판독" title="작별의 한마디는 액티브 기술이 아닙니다" icon={ListChecks} />
+            <SectionHeading number="06 · 특성 판독" title="해당 특성은 직접 사용하는 기술이 아닙니다" icon={ListChecks} />
             <SectionLead>
               12.1 현재 ‘천상의 권능’은 삭제된 기술입니다. 대상이 고른 것은 <SkillLink id="471504" />이며,
               평온 사용 시 12초 소생을 부여하는 패시브라 별도 시전 이벤트가 없는 것이 정상입니다.
             </SectionLead>
             <ChoiceGrid>
-              <Choice><strong>대상: 작별의 한마디</strong><p>소생 유효 치유는 7.82M이지만 다른 소생 발생원도 포함되므로 이 수치를 특성 기여량으로 단정할 수 없습니다. 평온을 자주 돌릴수록 간접 가치가 늘어납니다.</p></Choice>
+              <Choice><strong>대상: <SkillLink id="471504" /></strong><p>소생 유효 치유는 7.82M이지만 다른 소생 발생원도 포함되므로 이 수치를 특성 기여량으로 단정할 수 없습니다. 평온을 자주 돌릴수록 간접 가치가 늘어납니다.</p></Choice>
               <Choice><strong>같은 공대: 신성한 환영</strong><p><SkillLink id="392988" /> 치유는 2.95M이었습니다. 두 선택 모두 현재 특성이며, 이번 비교만으로 대상의 선택을 잘못됐다고 판정할 수 없습니다.</p></Choice>
             </ChoiceGrid>
             <Finding>

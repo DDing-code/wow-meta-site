@@ -477,3 +477,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - Replace any remaining placeholder chart content; inspect each specialization's rendered flow and graph rather than extrapolating from Blood.
 - Resolve existing global KB link warnings and mixed-patch metadata when the underlying records are genuinely updated. Do not bulk relabel them to suppress warnings.
 - Finish scoped visual checks, builds and commit/push for each verified batch. Production is now https://wowmeta.vercel.app; deployment uses sanitized static build output, not the source directory with local credentials. A Git push alone does not prove a new Vercel deployment, and wowmeta.xyz remains a separate domain.
+## 2026-10-08 재개: 준비 원고 통합과 후속 조정
+
+- 이전 t1~t3의 원고 25개를 사이트에 통합했다. 황폐·조화·정기 및 운무의 중복 정의를 제거해 최종 화면 내용과 검사 대상이 일치한다. 40개 가이드는 각각 한 번만 정의되고 정본 JSON 37개가 사이트와 일치한다.
+- 미착수였던 t4의 12개는 공식 후속 조정·PvE/PvP 구분을 부분 갱신했다. 사격의 교묘한 사격 75%, 생존 폭탄의 주 대상 50%와 주기 피해 상향 누락 수정, 보호·징벌·풍운의 9월 조정을 포함한다. 최신 로그·모든 효과를 다시 검수한 완료본으로 승격하지 않았다.
+- 미국 10월 6일 적용 공지를 반영했다. 부정 역병내림 100%, 포식·잠행·고양의 후속 상향과 양조·운무 조정을 구별한다. 한국어 공지는 10월 2일판까지 확인했으므로 한국 서버의 실제 적용 시각은 별도 확인 대상이다. 양조 빠른 한 모금·허초와 역병내림의 한국어 툴팁은 공식 적용값과 충돌하며 원문을 보존했다.
+- 신성 성기사·운무는 각각 두 영웅의 준비·단일 구조·다중 회복, 총 12개 상황을 작성했다. 두 가이드의 extraSkills를 제거하고 정화·헌신의 오라를 정본에 추가했다. 공용 주문의 신성 범위와 운무 두 치유 효과를 교정했으며 신성 사제 로그의 낡은 특성 이름도 공식 ID 링크로 바꿨다.
+- 전체 원고·차트·툴팁·번역 검사와 새 회귀 검사 통과. 온라인 가이드 아이콘 대조는 40개·721주문, 오류와 경고 모두 0. 기존 도적·암흑·고양·복원 검사에서 실제 평가 객체를 읽도록 취약한 형식·참조 동일성 검사를 고쳤다.
+- 남은 필수 기준: 수호 드루이드·정기·비전·복원 주술사 영웅별 세 상황, 모든 가이드의 단일·쐐기·레이드 특성 견본 문자열과 현재 연결·포인트 검증, 조정 후 최신 로그 비교, 나머지 원자 노트·출처 충돌과 KB 링크 경고의 실질 검수. 구조 검사를 전체 최신 메타 검수 완료율로 환산하지 않는다.
+- 검증 기록: `artifacts/goal-12.1-resume-20261008/`. 공식 근거: https://news.blizzard.com/en-gb/article/24296142/hotfixes-october-6-2026 , 현재 SimC `db768b52b425db274e4ebd3ce3d5efc26c8882b5` / 12.1.0.69933 / 핫픽스 2026-10-07.

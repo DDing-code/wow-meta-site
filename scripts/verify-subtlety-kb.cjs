@@ -116,8 +116,8 @@ assert.ok(skills['51667'].specs.includes('Subtlety'));
 const manuscript = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8');
 assert.doesNotMatch(manuscript, /skillId:\s*['"]5171['"]/);
 assert.doesNotMatch(manuscript, /skillId:\s*['"]1279401['"]/);
-const subtletyManuscript = manuscript.split("'rogue-subtlety': {")[1].split("'shaman-enhancement': {")[0];
-const guide = JSON.parse(('{' + subtletyManuscript).trim().replace(/,$/, ''));
+const guide = new Function(manuscript.replace(/export default guideManuscripts;?/, '').replace(/export const/g, 'const') + ';return guideManuscripts["rogue-subtlety"];')();
+const subtletyManuscript = JSON.stringify(guide);
 assert.deepEqual(guide.heroBranches.map(branch => branch.label), ['죽음추적자', '기만자']);
 for (const branch of guide.heroBranches) {
   assert.ok(branch.opener.steps.length >= 6, branch.label);
@@ -312,7 +312,7 @@ for (const [id, effect] of Object.entries(utilityEffects)) {
 }
 assert.doesNotMatch(JSON.stringify(guide.blocks), /차트 배치|차트는 마지막|본문 다음에.*차트/);
 assert.equal(guide.patch, '12.1');
-assert.equal(guide.researchedAt, '2026-09-21');
+assert.equal(guide.researchedAt, '2026-10-08');
 assert.match(guide.status, /로그 검수 중/);
 assert.match(JSON.stringify(guide.caveats), /위기 감각.*공수 자극제.*충돌/);
 assert.match(JSON.stringify(guide.blocks), /위축의 독.*4%.*마취 독.*15%.*동시에 고를 수 없습니다/);

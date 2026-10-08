@@ -285,8 +285,8 @@ assert.doesNotMatch(manuscript, /skillId: ['"](?:51533|469314)['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]454009['"]/);
 const enhancementData = require('node:vm').runInNewContext('(' + enhancement.slice(enhancement.indexOf('{')).trim().replace(/,$/, '') + ')');
-assert.equal(enhancementData.opener, enhancementData.heroBranches[0].opener, 'Default opener must reuse the reviewed Stormbringer flow');
-assert.equal(enhancementData.priority, enhancementData.heroBranches[0].singleTarget.priority, 'Default priority must not retain the obsolete mixed-hero list');
+assert.deepEqual(enhancementData.opener, enhancementData.heroBranches[0].opener, 'Default opener must reuse the reviewed Stormbringer flow');
+assert.deepEqual(enhancementData.priority, enhancementData.heroBranches[0].singleTarget.priority, 'Default priority must not retain the obsolete mixed-hero list');
 assert.ok(!enhancementData.opener.steps.some(row => row.skillId === '187880'), 'Passive resource is not an opener button');
 assert.doesNotMatch(JSON.stringify(enhancementData.blocks), /인포그래픽|별도 표시해야|디스펠 매트릭스/);
 assert.equal(synergies.shaman_enhancement_sundering_primordial_opener.patch, '12.1');
@@ -297,8 +297,8 @@ assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /�
 for (const mode of ['singleTarget', 'aoe']) {
   assert.ok(enhancementData.heroBranches[0][mode].priority.some(row => row.skillId === '452201'), 'Tempest cast must be available in both Stormbringer modes');
 }
-assert.match(manuscript, /skillIds: \['454009'/);
-const heroFlows = enhancement.slice(enhancement.indexOf('heroBranches:'), enhancement.indexOf('    blocks:'));
+assert.ok(enhancementData.heroBranches.some(branch => branch.skillIds[0] === '454009'));
+const heroFlows = JSON.stringify(enhancementData.heroBranches);
 const branches = JSON.parse(heroFlows.slice(heroFlows.indexOf('[')).trim().replace(/,$/, ''));
 for (const branch of branches) {
   for (const mode of ['singleTarget', 'aoe']) {
