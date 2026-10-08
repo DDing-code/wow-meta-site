@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-08T08:58:55.589Z",
+  "checkedAt": "2026-10-08T09:07:29.667Z",
   "bundle": "/static/js/main.a221aab6.js",
   "bundleSha256": "1a6c6102a36eab5b6bc55834816cf77b0a251481dfe206d176d846914240b3af",
   "files": [
@@ -29,7 +29,7 @@
     },
     {
       "file": "C:/wowmeta/site/docs/patch-12.1-progress.md",
-      "sha256": "de6e1f0e742581a92e53d30b7d53603ad00b1ef55bb925f47a5a67aab1f45cb5"
+      "sha256": "c236225899443101ee0a754dc3d35be35080bddacf7cc2b91b2c2ca0512545b2"
     },
     {
       "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\기도의마법진.md",

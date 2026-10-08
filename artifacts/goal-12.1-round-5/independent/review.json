@@ -26,5 +26,7 @@
   "finalBundle": "/static/js/main.a221aab6.js",
   "finalLocalChecks": {"guides":40,"widths":[320,390,1440],"routes":120,"heroModes":720,"talentDisclosures":360,"matchedLogLinks":480},
   "independentReviewResult": "발견한 제거 주문 추천 오류 수정 후 통과. 전체 메타 완료 판정과는 별개",
+  "publicChecks": {"guides":7,"widths":[320,390,1440],"routes":21,"heroModes":126,"talentDisclosures":63,"matchedLogLinks":84},
+  "publicVisualReview": ["public-ui-priest-holy-390-flow.png","public-ui-priest-holy-1440-comparison.png","public-ui-monk-mistweaver-320-comparison.png","public-ui-monk-mistweaver-1440-flow.png","public-ui-evoker-devastation-390-talents.png","public-ui-evoker-devastation-1440-flow.png"],
   "releaseEvidence": "최종 갱신 기록 반영 후 final-local.json 및 public-deploy.json에서 확인"
 }

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-10-08T09:00:45.625Z",
+  "base": "https://wowmeta.vercel.app",
+  "deployment": "dpl_9uU2cXnXq3Xn4ceX6MkcYSG4rGhf",
+  "deploymentUrl": "https://wowmeta-8zffgjnvb-d2jks-projects.vercel.app",
+  "status": "Ready",
+  "gitCommit": "015b04f1",
+  "contentCommit": "a151222d",
+  "publicationCommit": "479cfd37",
+  "kbLocalCommit": "b3f42ec",
+  "bundle": "/static/js/main.a221aab6.js",
+  "files": 6,
+  "sourceMaps": false,
+  "envFiles": false,
+  "publicResponses": [
+    {
+      "path": "/asset-manifest.json",
+      "status": 200,
+      "bytes": 240,
+      "sha256": "426d5d5b2f275489296d2d3486ce8ad18796746b51382c1d8db7315ed09f76b9"
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "bytes": 1054,
+      "sha256": "bfd5804499a54c30f6cc44b6752d7efae610fc7690922494cb92207a7f5cf894"
+    },
+    {
+      "path": "/assets/spec-icons-white-v1.png",
+      "status": 200,
+      "bytes": 942168,
+      "sha256": "6966906fbc7651f7e83c3a754fa21d3be1fb3bec33adc3489e60f1597109cbe2"
+    },
+    {
+      "path": "/static/css/main.1aebb9d9.css",
+      "status": 200,
+      "bytes": 24,
+      "sha256": "15c2a0dee5f917cd06258438e0d278855e3e2ea04f57b3cf006dfa02a56d7f3d"
+    },
+    {
+      "path": "/static/js/main.a221aab6.js",
+      "status": 200,
+      "bytes": 13746866,
+      "sha256": "1a6c6102a36eab5b6bc55834816cf77b0a251481dfe206d176d846914240b3af"
+    },
+    {
+      "path": "/static/js/main.a221aab6.js.LICENSE.txt",
+      "status": 200,
+      "bytes": 1826,
+      "sha256": "e6ef74437c65056d075e949c510f52612350b83d7b09c4e6a4bcdad1a0e58ec7"
+    }
+  ],
+  "independentVisualReview": "passed-after-fix",
+  "publicGuideViews": 21,
+  "publicCheckedAt": "2026-10-08T09:07:29.623Z",
+  "publicGuides": 7,
+  "widths": [
+    320,
+    390,
+    1440
+  ],
+  "publicHeroModes": 126,
+  "publicTalentDisclosures": 63,
+  "publicMatchedLogLinks": 84,
+  "publicDevastation1440": true,
+  "publicScreenshots": [
+    "public-ui-priest-holy-390-flow.png",
+    "public-ui-priest-holy-1440-comparison.png",
+    "public-ui-monk-mistweaver-320-comparison.png",
+    "public-ui-monk-mistweaver-1440-flow.png",
+    "public-ui-evoker-devastation-390-talents.png",
+    "public-ui-evoker-devastation-1440-flow.png"
+  ]
+}
