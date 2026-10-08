@@ -66,5 +66,7 @@ for (const [id, pattern] of [
   ['375576', /신성.*신성 충격.*심판.*50%/], ['53600', /신성.*4.5초.*보호/],
   ['26573', /12초.*최대 1회/], ['4987', /정화 연마.*마법/],
   ['465', /40미터.*3%/], ['257621', /3명.*75%/], ['259495', /6초.*50%/],
+  ['1296656', /^빛 주입이 빛의 섬광의 치유량을 추가로 100%.*흡수량을 추가로 100%/],
+  ['1296657', /^심판이 20%.*100%.*마나 소모량이 50%/],
 ]) assert.match(skills[id].description, pattern, `Reviewed official tooltip must survive sync: ${id}`);
 console.log(JSON.stringify({guides:registry.length,definitions:'one per guide',canonicalCount,healerModes:12,missingHeroModes:missingModes}));

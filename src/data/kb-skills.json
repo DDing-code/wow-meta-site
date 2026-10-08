@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T03:19:41.378Z",
+    "generatedAt": "2026-10-08T03:36:43.584Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.0.5",
@@ -143582,7 +143582,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.038,
+        "linkDensity": 0.027,
         "hasWikilinks": true
       },
       "source": {
@@ -152894,9 +152894,9 @@
       "specs": [
         "Holy"
       ],
-      "name": "독성 심연 방어구 2세트",
-      "koreanName": "독성 심연 방어구 2세트",
-      "englishName": "Holy Paladin Season 2 2-Set",
+      "name": "Paladin Holy 12.1 Class Set 2pc",
+      "koreanName": "Paladin Holy 12.1 Class Set 2pc",
+      "englishName": "Paladin Holy 12.1 Class Set 2pc",
       "icon": "trade_engineering",
       "iconName": "trade_engineering",
       "school": "",
@@ -152904,7 +152904,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "# 독성 심연 방어구 2세트",
+      "description": "빛 주입이 빛의 섬광의 치유량을 추가로 100%만큼 증가시키고, 상급 심판의 피해 흡수량을 추가로 100%만큼 증가시킵니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -152942,9 +152942,9 @@
       "specs": [
         "Holy"
       ],
-      "name": "독성 심연 방어구 4세트",
-      "koreanName": "독성 심연 방어구 4세트",
-      "englishName": "Holy Paladin Season 2 4-Set",
+      "name": "Paladin Holy 12.1 Class Set 4pc",
+      "koreanName": "Paladin Holy 12.1 Class Set 4pc",
+      "englishName": "Paladin Holy 12.1 Class Set 4pc",
       "icon": "trade_engineering",
       "iconName": "trade_engineering",
       "school": "",
@@ -152952,7 +152952,7 @@
       "castTime": "",
       "resourceCost": "",
       "range": "",
-      "description": "# 독성 심연 방어구 4세트",
+      "description": "심판이 20%의 확률로 빛 주입을 부여합니다. 성스러운 빛이 100%의 확률로 빛 주입을 부여하지만 마나 소모량이 50%만큼 증가합니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",

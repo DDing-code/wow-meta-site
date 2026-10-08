@@ -99,7 +99,7 @@ const { chromium, webkit } = require('playwright');
         assert(group.heights.every(height => height <= 100), `${width}: ${group.name} excessive item height`);
       }
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
-      assert((await page.locator('a[href="/guide/monk/windwalker"]').innerText()).includes('12.1'));
+      assert(/공사 중|12\.1/.test(await page.locator('a[href="/guide/monk/windwalker"]').innerText()), 'A guide card must show its review or patch status');
       await page.screenshot({ path: path.join(output, `${width}.png`), fullPage: true });
       for (const [label, count] of [['탱커', 6], ['근접', 13], ['원거리', 14], ['힐러', 7], ['전체', 40]]) {
         const button = page.getByRole('group', { name: '포지션별 가이드 필터' }).getByRole('button', { name: label, exact: true });
