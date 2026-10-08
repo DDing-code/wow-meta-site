@@ -4,7 +4,7 @@
   "baselineBundle": "/static/js/main.2b1c8779.js",
   "baselineSourceHashesMatched": 64,
   "reviewedGuideCount": 40,
-  "visualScope": "320px 딜사이클·390px 특성·1440px 비교 설명: 40개씩, 화면 모음 15장 직접 확인",
+  "visualScope": "40개 가이드 × 320·390·1440px × 딜사이클·특성·비교 설명: 화면 모음 45장(360개 화면 영역) 직접 확인. 원본 화면에서 의심 부분과 신성·운무·황폐 변경 영향 추가 확인",
   "baselineLiveChecks": {"routes":21,"heroModes":126,"talentDisclosures":63},
   "finding": {
     "spellId": "204883",
@@ -23,5 +23,8 @@
   "layout": "검토 화면에서 배치 깨짐·겹침·가로 넘침·아이콘 누락 없음",
   "validation": "KB 동기화·전체 검증·수정 빌드 통과. 의도적인 과거 주문 경고 6개",
   "remainingGoalCriteria": ["한국 서버 공식 적용 시각","전체 40개 가이드의 영웅별 최신 메타 확정","툴팁 수치 차이 3건"],
+  "finalBundle": "/static/js/main.a221aab6.js",
+  "finalLocalChecks": {"guides":40,"widths":[320,390,1440],"routes":120,"heroModes":720,"talentDisclosures":360,"matchedLogLinks":480},
+  "independentReviewResult": "발견한 제거 주문 추천 오류 수정 후 통과. 전체 메타 완료 판정과는 별개",
   "releaseEvidence": "최종 갱신 기록 반영 후 final-local.json 및 public-deploy.json에서 확인"
 }

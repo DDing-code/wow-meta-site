@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-08T08:58:55.591Z",
+  "sourceFiles": 66,
+  "bundle": "/static/js/main.a221aab6.js",
+  "bundleSha256": "1a6c6102a36eab5b6bc55834816cf77b0a251481dfe206d176d846914240b3af",
+  "guides": 40,
+  "widths": [
+    320,
+    390,
+    1440
+  ],
+  "routeViews": 120,
+  "heroModeChecks": 720,
+  "talentViews": 360,
+  "matchedLogLinks": 480,
+  "archivedSkillsExcluded": 6,
+  "exactTooltipMatches": 162,
+  "validation": "passed",
+  "build": "passed-with-existing-warnings",
+  "independentVisualReview": "passed-after-fix",
+  "screenshots": "45 contact sheets plus individual final-bundle frames",
+  "fullResults": "final-local.json"
+}

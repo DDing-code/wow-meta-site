@@ -1,0 +1,271 @@
+{
+  "checkedAt": "2026-10-08T08:58:55.589Z",
+  "bundle": "/static/js/main.a221aab6.js",
+  "bundleSha256": "1a6c6102a36eab5b6bc55834816cf77b0a251481dfe206d176d846914240b3af",
+  "files": [
+    {
+      "file": "C:/wowmeta/site/src/data/guideManuscripts.js",
+      "sha256": "fabce9a81c74ec95cf0bb21f52a4d8219ceb47e2ba69b3cca9e46065e8147930"
+    },
+    {
+      "file": "C:/wowmeta/site/src/data/kb-skills.json",
+      "sha256": "41c54ca867d4e113003c8583edda72c248f521f947a885000ee38b173cde139c"
+    },
+    {
+      "file": "C:/wowmeta/site/src/data/kb-synergies.json",
+      "sha256": "fcf8571312cdd869f692461e75e3efecb0c09beaba3712139e29088b28d3b205"
+    },
+    {
+      "file": "C:/wowmeta/site/src/pages/GuideDetailPage.js",
+      "sha256": "9cc48b86dd837a487f8adbebfe1b898a1a9af37fecb973d5343c44973f6350c4"
+    },
+    {
+      "file": "C:/wowmeta/site/scripts/verify-guide-resume.cjs",
+      "sha256": "93dede26384f5e3c87e8a0075b4fb24fb1f28769b701888ae78766a753146e6b"
+    },
+    {
+      "file": "C:/wowmeta/site/scripts/validate-guide-charts.js",
+      "sha256": "f67a79155744ec61ef6467a8d3568a77712583b0871c809dd4cfdf0bc8b495d6"
+    },
+    {
+      "file": "C:/wowmeta/site/docs/patch-12.1-progress.md",
+      "sha256": "de6e1f0e742581a92e53d30b7d53603ad00b1ef55bb925f47a5a67aab1f45cb5"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\기도의마법진.md",
+      "sha256": "88c4643a403da421173c040485168219e67493656a233831fbbef7858b15e950"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\위안의숨결.md",
+      "sha256": "04dfb5d72253eb00450e6dbae1a3b3e31ec1c249a9cc698e8a89ac57b5b79ddf"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\공명의권능.md",
+      "sha256": "4a5e7645a4460536795f5d9005fe5297b929350b615018d8581598a72d72e20a"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\비취불꽃진각.md",
+      "sha256": "06f4007af54073b1b3b4e9b9be6b1a90340adf8f2728346431996e25771b3997"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\신성한회복.md",
+      "sha256": "d86200753e1a9da4d3ccef57d514e4f08fdb526462b0eaf5c40e9bc0e64f71af"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\이루어진기원.md",
+      "sha256": "eaebffa0b204f7751fdd861a52fd3ced26653be08e82a72e111949c4c405a10f"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\기고치.md",
+      "sha256": "13353ac2549ecdb56007aa059df6342cc69aa8e2ffd195c952dc5de0fee4710f"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\약화의-역병.md",
+      "sha256": "d31bd31a06f49c3909856652cdeb2938dfd86bdeb25d0e7a9f12df739a51e057"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\천신합일-재활.md",
+      "sha256": "e101fd8ad812ee9233c51cbaf8ca87cfaaccf57d946a4176596a69155cf85465"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\포용의안개-단일대상복구.md",
+      "sha256": "c7bc0d1f8cfe83af68104e74da4da2a890037516c67aa3558eb0e3388cbe7cbc"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\절정-천상의찬가.md",
+      "sha256": "b7d926123f69d2d62a93018fd0f73268ecadf15f1b850ad58385a12820402357"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\천상쿨기-절정-찬가-구원.md",
+      "sha256": "8a122c4bc52c6dfc74164dcbdffdd7ab0c4d8dfc95377330ac3f63afb793423f"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\치유의기원-신성화-마법진.md",
+      "sha256": "a0e21d076e0ca03d32eecc7d31d35dbcac3c0f24c2982c341b1a4a5d5bb5a490"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\회복의기원-광역피해.md",
+      "sha256": "0f8b4a3ca6dee308590851bb9855b04e426397ff271f247f3d9a90f49f400928"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\회복의기원-기도특성-반복피해.md",
+      "sha256": "a2cd47b0baa75ce7a235996acb41488e24a910a8611844b5e93cfda367f392c7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Synergies\\흑마법사공용-저주-공포-군중제어.md",
+      "sha256": "2450722112b02482a1b3d08a638c5abc4ff177b66f77b5cc7c37462fd85bb3be"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Skills\\포용의안개.md",
+      "sha256": "f3ef2feae5d949d4ff5e76621032d9be9995b4544aa17705f1746085e2df0aff"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\방어\\Meta\\guide-12.1.json",
+      "sha256": "c66ab6291b57cf4f6b2027010e5fb6add693d3cae466b1191ad86e8e651e5c1c"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Meta\\guide-12.1.json",
+      "sha256": "b89380bcc9ad3b3bcb4e38febcc9a3b6974dafb0a1c79ecb4941cad5ae0d1052"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+      "sha256": "a808938b56f4ff5d0f26fe3e9c8e8cfda5aeb64762653816491bc35a2fbab73b"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Meta\\guide-12.1.json",
+      "sha256": "85aabea1770f21e98ab39ce176bac673abd24da0cb3b3a3d2d1971e052cfd6f6"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Meta\\guide-12.1.json",
+      "sha256": "01a84e22c44c03d20248d1a5e1e0c730201865b623019cda38115e5b1cf650cd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+      "sha256": "ed313e3012c8f1a73ea5afa03f708fc18678e1dc957f928d50e2f5d17fa08ba3"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\무기\\Meta\\guide-12.1.json",
+      "sha256": "c96ad79fb159b738550d8d69acd401073785a8774f4c3c0e6edd927bb29b88c7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\분노\\Meta\\guide-12.1.json",
+      "sha256": "98740854e6bff895f27577abeab7291d14e0bf762d79643c6de879512ca31878"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Meta\\guide-12.1.json",
+      "sha256": "014d66ce2b151dc35b55134abb29d5626ab701325360c0e556df8ab5466c331e"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\암살\\Meta\\guide-12.1.json",
+      "sha256": "04bb7d21143696bcacaf939c983216d78e7e4d24f79f40dd942676546fec93b0"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\무법\\Meta\\guide-12.1.json",
+      "sha256": "df6c8fcf1650f8f1afd37575def34e668160171b27f34ea11e578d6621b044a3"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Meta\\guide-12.1.json",
+      "sha256": "3141fda590f69f46d79c2f263c1bf7db458dcef171ae9369c892410b8de3696e"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+      "sha256": "117d652a6cc3de08957ca72f5e18533b272ba392f57d99e141a6fbb82a91b1a7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+      "sha256": "effb7a005e3dd43a8569ec5715184124c53e0cba26d9ef15dc2e3d9f8cb80ed1"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Meta\\guide-12.1.json",
+      "sha256": "cbebe9143233252618600ca700f5b9f862ef398735c5a542a3407f4c0ec6d0ea"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Meta\\guide-12.1.json",
+      "sha256": "cfdd0067c910de3794af441ca403fc83c7f574ef068201cc4c04386764b2888b"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+      "sha256": "b9ccce448480747bc73716cf74a387ab568abbf47a45292c79c9513052ada21d"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Meta\\guide-12.1.json",
+      "sha256": "06548e574d1c4c48051f22cea3834cb124c7813ff20565f4887bee70a0f62963"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+      "sha256": "f3b9deef2fd4a93f388606928439c98e12cd73c0b353bcc04e0be75590c76309"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+      "sha256": "8379beb63a53230a15357de8eee816467fa19df7c9666844594720f05e5a82df"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+      "sha256": "ac5eedfcb18e548615b139a867f6cc4a1e24ba21dcd3193a8de7859d313c0809"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Meta\\guide-12.1.json",
+      "sha256": "2ac500b39fd0bd3c6c9fc6763afa903d28b3966c13abeb903f310fb3ce0d7456"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+      "sha256": "c5fd04a165cc177c48ecad85428296368763eb3e0393b9636704d2435e6bdded"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Meta\\guide-12.1.json",
+      "sha256": "81012bba748bf875384692c8ad23286c01b580b4ee09695a6efdb1ae25f726ad"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Meta\\guide-12.1.json",
+      "sha256": "10b73d7a343037adb071dcaff6164e9a9c63796dbf56dd4ed11531ee2fc7e43c"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Meta\\guide-12.1.json",
+      "sha256": "dc54c2597de4276f5281d31022dd7fb13a8b676597f4c56426b1481f45a58874"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Meta\\guide-12.1.json",
+      "sha256": "9a8e33a154fa5e3497c985fbd5a0c1b5eec18e0a45c96c6fd56edea62eba1b21"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Meta\\guide-12.1.json",
+      "sha256": "cf91b20ff84ce0921dfde34a8c7885e7171277470cc937adb3c5b59abf6fa69c"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Meta\\guide-12.1.json",
+      "sha256": "6319e15d2f7b53bcadf8f4d9956dd1c7e3958d5e38403d276fbf668532345b94"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+      "sha256": "474b4dd6c8a1a83437b395161adeb33ccccb650e1b9e1513865adc8fdac5e3b3"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Meta\\guide-12.1.json",
+      "sha256": "96157994a1dc8f85a41ede2401f17fea86d517c44127f51589d94f2ca9c193ab"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Meta\\guide-12.1.json",
+      "sha256": "596e1c6564d35ca0bad0b0d2cfd46a7235be1302ae5d2602835a008f90332b4a"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Meta\\guide-12.1.json",
+      "sha256": "1ad1c166b6444e3d71ce085c4693bcca2188e58f0f45ee24b01aa0bbcddb87d0"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Meta\\guide-12.1.json",
+      "sha256": "e833d10352be03574ef15f49e680accf1059dd5683d4713d1b6f33dcc7169cdc"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\수양\\Meta\\guide-12.1.json",
+      "sha256": "e3b120b202242494e3df2a456769d69f00fa6ed55b83e73ddda6f7a3c3ae2d78"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Meta\\guide-12.1.json",
+      "sha256": "8ddc4f6d4959a084c9f8b256d1b8f7f5aef39c2ac400e24e20de2bc778c6c0d1"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Meta\\guide-12.1.json",
+      "sha256": "274a7c4ffb64443b8657b8b09c6fc5e61dca8f2b7145935d8769f4afecb98242"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Meta\\guide-12.1.json",
+      "sha256": "a5e896b5996fd5ef3ee11792083d8b2bd8a692817d70c097894310c70eab0792"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Meta\\guide-12.1.json",
+      "sha256": "53c24c301c5e084b50ae66941d834d1e830083d9907a0ba19057f5f934475035"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Meta\\guide-12.1.json",
+      "sha256": "c26de6fbcdd919b9bd27021651439e47a3eeac064716493ad6d1f5eade560283"
+    },
+    {
+      "file": "C:/wowmeta/site/src/data/guideUpdates.js",
+      "sha256": "dc290fe0178652bda578c8a17c66a4ed6ae88c9460230b8b7e4be66ebb944883"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Skills\\치유의마법진.md",
+      "sha256": "62e806e47a70898c09749b1b153dadbb0d8a1267fa4e4bbdcdab13670f2a376c"
+    }
+  ]
+}
