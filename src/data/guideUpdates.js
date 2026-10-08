@@ -1,5 +1,7 @@
 // Publication dates are Git dates, not source-research dates.
 export const guideUpdates = [
+  {"date":"2026-10-08","title":"12.1 원고 통합·후속 조정과 치유 흐름 갱신","partial":true,"guideIds":["mage-arcane","mage-fire","mage-frost","rogue-assassination","rogue-subtlety","shaman-elemental","shaman-enhancement","shaman-restoration","druid-balance","druid-feral","druid-restoration","evoker-augmentation","evoker-devastation","evoker-preservation","priest-holy","deathknight-blood","deathknight-frost","deathknight-unholy","demonhunter-devourer","demonhunter-havoc","demonhunter-vengeance","warrior-arms","warrior-fury","warrior-protection","paladin-protection","monk-brewmaster","paladin-retribution","monk-windwalker","hunter-survival","hunter-beastmastery","hunter-marksmanship","warlock-affliction","warlock-demonology","warlock-destruction","paladin-holy","monk-mistweaver"],"commits":["f3a94ee6"],"body":"준비 원고 25개와 나머지 12개의 부분 수정, 공식 후속 조정과 신성·운무의 영웅별 치유 흐름을 반영했습니다. 중복 정의를 제거하고 정본 KB와 생성 DB를 함께 갱신했습니다. 최신 로그·특성 견본·나머지 효과의 전체 검수는 진행 중입니다."},
+  {"date":"2026-10-08","title":"무법 도적 12.1 공식 출처 갱신","partial":false,"guideIds":["rogue-outlaw"],"commits":["f3a94ee6"],"body":"기존 12.1 검수 상태를 유지하며 공식 출처와 미적용 12.1.5 주의 사항을 갱신했습니다. 최신 로그 비교 완료를 주장하지 않습니다."},
   { date: '2026-09-27', title: '마법사 공용 기술·시너지 12.1 검수', partial: true,
     guideIds: ['mage-arcane', 'mage-fire', 'mage-frost'], commits: ['034991f5'],
     body: '마법사 공용 기술 11개와 시너지 2개를 현재 한국어 툴팁에 맞춰 KB·스펠 DB에 반영했습니다. 점멸·일렁임의 재사용 대기시간과 환영 복제의 기본 위협 감소 효과를 교정하고 비전 가이드의 유틸 설명을 보완했습니다. 각 전문화 특성과 최신 로그의 전체 검수는 진행 중입니다.' },
