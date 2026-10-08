@@ -425,9 +425,11 @@ function main() {
   assert((guideDetailSource.match(/guideSectionTitle\(block\.title\)/g) || []).length === 2, 'Navigation and body must share section-title formatting');
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const guideSkillExpression = guideDetailSource.match(/const allSkills = ([^\n]+);/)[1];
-  const getGuideSkills = new Function('kbSkills', 'return ' + guideSkillExpression);
-  const numericSkills = getGuideSkills({ skills: { cast: { id: '198013' }, tree: { id: 'hero-fel-scarred' } } });
-  assert(numericSkills.length === 1 && numericSkills[0].id === '198013', 'Hero-tree record IDs must never become fake Wowhead spell links');
+  const currentPatch = loadSourceModule(GUIDE_REGISTRY_PATH, 'CURRENT_PATCH_LABEL');
+  const getGuideSkills = new Function('kbSkills', 'CURRENT_PATCH_LABEL', 'return ' + guideSkillExpression);
+  const numericSkills = getGuideSkills({ skills: { cast: { id: '198013', patch: currentPatch }, tree: { id: 'hero-fel-scarred', patch: currentPatch }, legacy: { id: '321377', patch: '12.0.5' } } }, currentPatch);
+  assert(numericSkills.length === 1 && numericSkills[0].id === '198013', 'Current guides must exclude old-patch spells and hero-tree record IDs');
+  assert(!getGuideSkills({ skills: { removed: skills.find(skill => skill.id === '204883') } }, currentPatch).length, 'Removed Circle of Healing must not reappear in current guide skills');
   const getAuthoredFlow = new Function('manuscript', 'profile', 'guide', `
     const skillFromManualStep = step => ({ id: step.skillId });
     const getFlowPhaseLabel = () => 'phase';

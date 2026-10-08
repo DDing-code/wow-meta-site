@@ -1,0 +1,27 @@
+{
+  "reviewer": "t1v · 독립 육안 검수",
+  "independent": true,
+  "baselineBundle": "/static/js/main.2b1c8779.js",
+  "baselineSourceHashesMatched": 64,
+  "reviewedGuideCount": 40,
+  "visualScope": "320px 딜사이클·390px 특성·1440px 비교 설명: 40개씩, 화면 모음 15장 직접 확인",
+  "baselineLiveChecks": {"routes":21,"heroModes":126,"talentDisclosures":63},
+  "finding": {
+    "spellId": "204883",
+    "name": "치유의 마법진",
+    "problem": "제거된 주문이 신성 사제 핵심 스킬에 표시됨",
+    "cause": "툴팁 조회 가능 여부만으로 KB를 현행 패치로 분류함",
+    "fix": "KB를 과거 주문으로 분류하고 기존 현행 패치 필터로 추천에서 제외. 설명 원문 보존. 재등장 방지 회귀 검사 추가",
+    "officialRemoval": "https://worldofwarcraft.blizzard.com/en-us/news/24179386/undermined-update-notes",
+    "currentTraitSource": "https://github.com/simulationcraft/simc/blob/db768b52b425db274e4ebd3ce3d5efc26c8882b5/engine/dbc/generated/trait_data.inc",
+    "traitColumns": "선택·대체·활성 주문 모두 부재",
+    "fixedBundle": "/static/js/main.cbb0028f.js",
+    "verifiedWidths": [320,390,1440],
+    "screenshots": ["fixed-priest-holy-320.png","fixed-priest-holy-390.png","fixed-priest-holy-1440.png","official-circle-removal.png"],
+    "status": "해결"
+  },
+  "layout": "검토 화면에서 배치 깨짐·겹침·가로 넘침·아이콘 누락 없음",
+  "validation": "KB 동기화·전체 검증·수정 빌드 통과. 의도적인 과거 주문 경고 6개",
+  "remainingGoalCriteria": ["한국 서버 공식 적용 시각","전체 40개 가이드의 영웅별 최신 메타 확정","툴팁 수치 차이 3건"],
+  "releaseEvidence": "최종 갱신 기록 반영 후 final-local.json 및 public-deploy.json에서 확인"
+}

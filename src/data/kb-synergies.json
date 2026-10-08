@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T06:48:42.812Z",
+    "generatedAt": "2026-10-08T08:30:10.586Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -9583,7 +9583,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/공용/Skills/천신합일",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/재활",
@@ -9639,7 +9639,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/포용의안개",
         "08-직업별-Knowledge-Base/07-수도사/운무/Skills/생기충전",
@@ -9648,7 +9648,6 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/감싸는안개",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/위안의숨결",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/넘치는안개",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/생명의순환",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/생명의만개",
@@ -9659,7 +9658,8 @@
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/원기회복",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/지혜의유산",
         "08-직업별-Knowledge-Base/07-수도사/운무/Talents/치유의비약",
-        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/긍지의장막"
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/긍지의장막",
+        "08-직업별-Knowledge-Base/07-수도사/운무/Talents/위안의숨결"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Synergies\\포용의안개-단일대상복구.md",
@@ -13122,7 +13122,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
@@ -13132,7 +13132,6 @@
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/찬가의돌풍",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/공명의권능",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/신성한환영",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/나루의빛"
       ],
@@ -13200,7 +13199,7 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/천상의찬가",
@@ -13212,7 +13211,6 @@
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/기적을행하는자",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/영원한존엄",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/현신",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/이루어진기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/대천사의점증",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/찬가의돌풍",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/내세",
@@ -13226,13 +13224,12 @@
     },
     "priest_holy_prayer_sanctify_circle": {
       "id": "priest_holy_prayer_sanctify_circle",
-      "name": "치유의 기원-신성화-마법진",
+      "name": "치유의 기원-신성화",
       "type": "synergy",
       "synergyType": "aoe_recovery_cycle",
       "participants": [
         "596",
-        "34861",
-        "204883"
+        "34861"
       ],
       "class": "Priest",
       "spec": "신성",
@@ -13241,18 +13238,15 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의마법진",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
         "08-직업별-Knowledge-Base/09-사제/공용/Skills/순간치유"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/기도의마법진",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/조화의목소리",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/공명의권능"
+        "08-직업별-Knowledge-Base/09-사제/신성/Talents/조화의목소리"
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Synergies\\치유의기원-신성화-마법진.md",
@@ -13298,7 +13292,6 @@
         "33076",
         "596",
         "34861",
-        "204883",
         "120517"
       ],
       "class": "Priest",
@@ -13308,16 +13301,14 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의마법진"
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/공명의권능",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/조화의목소리",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/복원"
       ],
@@ -13336,7 +13327,6 @@
         "390977",
         "391209",
         "391233",
-        "391387",
         "235587",
         "238136",
         "596",
@@ -13349,19 +13339,18 @@
       ],
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정",
-        "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원"
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원",
+        "08-직업별-Knowledge-Base/09-사제/신성/Skills/절정"
       ],
       "linkedBuffs": [],
       "linkedTalents": [
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/고결한자의기도",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/신실한기도",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/천상의보은",
-        "08-직업별-Knowledge-Base/09-사제/신성/Talents/이루어진기원",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/우주의파장",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/기적을행하는자",
         "08-직업별-Knowledge-Base/09-사제/신성/Talents/소리내어기원을",
@@ -17914,7 +17903,7 @@
       "spec": "Common",
       "heroTalent": null,
       "importance": 3,
-      "patch": "12.0.5",
+      "patch": "12.1",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/무력화-저주",
         "08-직업별-Knowledge-Base/12-흑마법사/공용/Skills/언어의-저주",

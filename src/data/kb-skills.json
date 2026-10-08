@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T06:48:42.810Z",
+    "generatedAt": "2026-10-08T08:30:10.585Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -11,14 +11,14 @@
     "stats": {
       "total": 2996,
       "byType": {
-        "buff": 139,
+        "buff": 140,
         "hero-talent": 552,
         "atomic-skill": 564,
         "proc": 29,
         "skill": 125,
-        "talent": 1008,
+        "talent": 1006,
         "spec-talent": 387,
-        "passive": 80,
+        "passive": 81,
         "hero-tree": 2,
         "set-bonus": 19,
         "tier-set": 2,
@@ -105,8 +105,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2910,
-        "withSynergies": 2118,
+        "withWikilinks": 2904,
+        "withSynergies": 2115,
         "avgLinkDensity": "0.038"
       }
     }
@@ -22936,7 +22936,7 @@
       "quality": {
         "wikilinkCount": 5,
         "synergyCount": 0,
-        "linkDensity": 0.031,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -33687,7 +33687,7 @@
       "description": "대상과 30미터 내에 있는 4명의 부상당한 아군의 생명력을 (주문력의 159.9%)만큼 회복시킵니다.",
       "category": "ability",
       "tags": [],
-      "patch": "12.1",
+      "patch": "11.0.2",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -33699,20 +33699,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_circleofrenewal.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/빛의권능신성화",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원"
-        ],
-        "relatedTalents": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Talents/기도의마법진"
-        ],
+        "relatedSkills": [],
+        "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 3,
-        "linkDensity": 0.036,
-        "hasWikilinks": true
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Skills\\치유의마법진.md",
@@ -44364,18 +44359,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_paladin_divinecircle.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의마법진",
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/치유의기원"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 2,
-        "linkDensity": 0.029,
-        "hasWikilinks": true
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\기도의마법진.md",
@@ -46863,7 +46855,7 @@
     },
     "343737": {
       "id": "343737",
-      "type": "talent",
+      "type": "passive",
       "class": "Monk",
       "spec": "운무",
       "specs": [
@@ -46875,14 +46867,14 @@
       "icon": "ability_monk_soothingmists",
       "iconName": "ability_monk_soothingmists",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "상위 소환 주문에 따름",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
       "description": "25초 동안 머무르는 옥룡 위론의 원령을 소환합니다. 위론은 위안의 숨결로 부상당한 아군을 치유합니다. 4.5초에 걸쳐 대상과 아군 최대 2명의 생명력을 (주문력의 210%)만큼 회복시킵니다.  옥룡 위론의 원령이 활성화되어 있는 동안 포용의 안개의 자원 소모량이 50%만큼 감소합니다.",
-      "category": "talent",
+      "category": "passive",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -46901,7 +46893,7 @@
       "quality": {
         "wikilinkCount": 1,
         "synergyCount": 0,
-        "linkDensity": 0.007,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -49647,17 +49639,15 @@
         "large": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_holybolt.jpg"
       },
       "synergies": {
-        "relatedSkills": [
-          "08-직업별-Knowledge-Base/09-사제/신성/Skills/회복의기원"
-        ],
+        "relatedSkills": [],
         "relatedTalents": [],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 5,
-        "synergyCount": 1,
-        "linkDensity": 0.034,
-        "hasWikilinks": true
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\공명의권능.md",
@@ -67265,10 +67255,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 0,
         "synergyCount": 0,
-        "linkDensity": 0.005,
-        "hasWikilinks": true
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Talents\\비취불꽃진각.md",
@@ -70392,10 +70382,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 1,
+        "wikilinkCount": 0,
         "synergyCount": 0,
-        "linkDensity": 0.008,
-        "hasWikilinks": true
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\신성한회복.md",
@@ -71048,10 +71038,10 @@
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
+        "wikilinkCount": 0,
         "synergyCount": 0,
-        "linkDensity": 0.017,
-        "hasWikilinks": true
+        "linkDensity": 0,
+        "hasWikilinks": false
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\09-사제\\신성\\Talents\\이루어진기원.md",
@@ -76603,7 +76593,7 @@
     },
     "406139": {
       "id": "406139",
-      "type": "talent",
+      "type": "buff",
       "class": "Monk",
       "spec": "운무",
       "specs": [
@@ -76615,14 +76605,14 @@
       "icon": "ability_monk_chiexplosion",
       "iconName": "ability_monk_chiexplosion",
       "school": "",
-      "cooldown": "관련 기술 연계",
+      "cooldown": "상위 소환 주문에 따름",
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신",
       "description": "10초 동안 대상을 기 에너지가 충만한 고치 안에 가두어 [총 생명력 * 24 / 100 * (1 + 유연성)]의 피해를 흡수합니다.",
-      "category": "talent",
+      "category": "buff",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -76641,7 +76631,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 0,
-        "linkDensity": 0.016,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -143258,7 +143248,7 @@
       "description": "엉겨 붙는 어둠의 안개구름을 불러내 대상과 10미터 내 모든 적을 감쌉니다. 감싸인 대상은 12초 동안 공격 간격이 100%만큼 늘어나고 치명타 및 극대화율이 10%만큼 감소합니다.  저주: 흑마법사는 대상 하나당 단 하나의 저주 또는 역병을 걸 수 있습니다.",
       "category": "class-talent",
       "tags": [],
-      "patch": "12.0.5",
+      "patch": "12.1",
       "created": "",
       "updated": "",
       "nonAtomic": false,

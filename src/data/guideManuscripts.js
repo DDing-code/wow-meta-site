@@ -5,7 +5,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '198013',
     summary: '파멸은 안광으로 여는 짧은 악마 형상과 직접 탈태의 초기화를 이어 가는 근접 딜러입니다. 12.1에서는 시즌 2의 4세트가 정수 파쇄를 6초로 늘리고 증오의 순환까지 연결합니다. 지옥상흔은 첫 강화 소비와 심연의 응시를, 알드라치 파괴자는 글레이브 뒤 두 소비기의 순서와 징표 대상을 관리하는 것이 핵심입니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '9월 23일 알드라치 파괴자 상향은 Blizzard 한국어 긴급 수정과 Wowhead 한국어 툴팁으로 대조했습니다. 전투검술 15%·30%, 글레이브 공격력 +25%, 무너진 영혼 20%는 일치합니다. 파괴자의 징표만 공식 변경표는 파멸 7%·복수 8%, 9월 27일 공유 한국어 툴팁은 두 전문화 모두 8%로 불일치해 파멸의 실제 적용값을 확정하지 않습니다. 9월 24일 Wowhead는 레이드에 알드라치 파괴자, 일반 쐐기에 지옥상흔을 추천합니다. Icy Veins 8월·Method 9월 17일 추천은 이번 상향 전 자료입니다. 12.1 콘텐츠 업데이트 원문과 Archon 집계는 접근 제한으로 직접 확인하지 못했고, 비공개 The Fel Hammer 메시지도 인용하지 않았습니다. 10월 3일 공식 목록을 10월 2일 항목까지 다시 확인했고, 9월 23일 이후 파멸의 추가 PvE 변경은 찾지 못했습니다. Method 운용은 8월 고정본이 아니라 9월 17일 갱신본이지만 알드라치 상향 전입니다. 공유 한국어 툴팁의 8%는 9월 27일의 이전 확인 기록이며 이번에 새로 확인했다고 쓰지 않습니다.',
     sources: [
       {
@@ -163,18 +163,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 94,562건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=23',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=16',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T02:12:33.328Z · 장비 구간 328 · 333.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T02:06:11.649Z · 장비 평균 333.50 · 실제 287.0초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=151',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Qnfcvd9jybam4WCL#fight=43&source=427',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:30:31.008Z · 장비 구간 328 · 332.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:26:40.726Z · 장비 평균 334.13 · 실제 283.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/XbgVwMN7vKjpdALt#fight=9&source=696',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:49:26.285Z · 장비 평균 328.56 · 실제 1775.2초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/MnNK1HqQkCxzfB2w#fight=1&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:35:15.941Z · 장비 평균 327.94 · 실제 1713.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -185,7 +199,7 @@ export const guideManuscripts = {
       '현재 타성 툴팁의 지속시간과 변경 안내가 일치하지 않으므로 마지막 글쿨까지 확정하는 타이밍 지시를 피했습니다.',
       '9월 23일 알드라치 강화 15%·30%, 글레이브 피해 +25%, 무너진 영혼 20%는 공식 조정과 한국어 툴팁으로 대조했습니다. 파멸 징표는 공식 7%와 공유 툴팁 8%가 달라 실제 적용값을 확정하지 않습니다.',
       '10월 8일 레이드·쐐기 집계는 공개 원본에서 확인했습니다. 실제 집계 범위는 최근 14일이며 조정 이후 기록만 제한한 사용률은 아닙니다. 9월 24일 Wowhead의 레이드 알드라치·쐐기 지옥상흔 추천은 조정 후 공개 작성자 의견이지 동일 조건 로그 순위표가 아닙니다.',
-      '10월 8일 악마사냥꾼 파멸의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 악마사냥꾼 파멸의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.63, 실제 전투 길이 차이는 1.11%/3.47%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '모든 흐름은 선택 특성이 있는 경우에만 적용합니다. 영원한 사냥 마지막 노드, 혼돈의 변신, 악마의 격화, 시즌 2의 4세트 유무를 먼저 확인하세요.',
@@ -193,7 +207,7 @@ export const guideManuscripts = {
       '개인 전투 로그나 장비를 받아 심크한 결과가 아닙니다. 특정 사용 횟수, DPS, 영웅 특성 우위를 모든 보스에 보장하지 않습니다.',
       '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트는 10월 8일 확인했으나 조정 후 동일 조건 로그 전수 대조가 남아 검수 중 상태를 유지합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     playstyle: [
       {
@@ -1309,227 +1323,459 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0029776541003466435,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.0110847823814336,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=23',
-            startedAt: '2026-10-07T02:12:33.328Z',
+            url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=16',
+            startedAt: '2026-10-08T02:06:11.649Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 333484,
-            itemLevelBracket: 328,
-            heroTree: 34,
-            augmentationCount: 1,
-            healerCount: 5,
+            durationMs: 286970,
+            itemLevelBracket: 333,
+            gearItemLevel: 333.5,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '200166',
-                count: 3,
+                spellId: '195072',
+                count: 5,
               },
               {
-                spellId: '131347',
-                count: 6,
-              },
-              {
-                spellId: '6262',
+                spellId: '198589',
                 count: 1,
-              },
-              {
-                spellId: '198793',
-                count: 11,
-              },
-              {
-                spellId: '188499',
-                count: 14,
-              },
-              {
-                spellId: '202719',
-                count: 1,
-              },
-              {
-                spellId: '258860',
-                count: 8,
-              },
-              {
-                spellId: '452497',
-                count: 4,
-              },
-              {
-                spellId: '210152',
-                count: 37,
-              },
-              {
-                spellId: '1297908',
-                count: 2,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '196718',
-                count: 1,
-              },
-              {
-                spellId: '232893',
-                count: 17,
-              },
-              {
-                spellId: '198013',
-                count: 11,
               },
               {
                 spellId: '370965',
                 count: 5,
               },
               {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '442294',
+                count: 25,
+              },
+              {
                 spellId: '185123',
-                count: 2,
+                count: 48,
               },
-              {
-                spellId: '258920',
-                count: 8,
-              },
-              {
-                spellId: '195072',
-                count: 12,
-              },
-              {
-                spellId: '201427',
-                count: 62,
-              },
-              {
-                spellId: '162794',
-                count: 65,
-              },
-              {
-                spellId: '198589',
-                count: 6,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 25214,
-                uses: 2,
-              },
-              {
-                spellId: '395152',
-                activeMs: 319241,
-                uses: 31,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=151',
-            startedAt: '2026-10-07T01:30:31.008Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 332491,
-            itemLevelBracket: 328,
-            heroTree: 35,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
               {
                 spellId: '198793',
                 count: 13,
               },
               {
-                spellId: '258860',
-                count: 11,
+                spellId: '198013',
+                count: 15,
               },
               {
-                spellId: '131347',
-                count: 2,
+                spellId: '258920',
+                count: 11,
               },
               {
                 spellId: '1297761',
                 count: 4,
               },
               {
-                spellId: '370965',
-                count: 6,
+                spellId: '131347',
+                count: 4,
+              },
+              {
+                spellId: '162794',
+                count: 31,
+              },
+              {
+                spellId: '188499',
+                count: 10,
               },
               {
                 spellId: '232893',
-                count: 19,
+                count: 27,
               },
               {
-                spellId: '196718',
-                count: 1,
+                spellId: '258860',
+                count: 8,
               },
               {
-                spellId: '258920',
-                count: 12,
-              },
-              {
-                spellId: '198589',
-                count: 5,
+                spellId: '201427',
+                count: 100,
               },
               {
                 spellId: '210152',
-                count: 46,
+                count: 43,
+              },
+              {
+                spellId: '200166',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Qnfcvd9jybam4WCL#fight=43&source=427',
+            startedAt: '2026-10-08T01:26:40.726Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 283789,
+            itemLevelBracket: 334,
+            gearItemLevel: 334.125,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '210152',
+                count: 42,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
               },
               {
                 spellId: '200166',
                 count: 3,
               },
               {
-                spellId: '1236994',
+                spellId: '131347',
                 count: 2,
               },
               {
-                spellId: '201427',
-                count: 91,
-              },
-              {
                 spellId: '442294',
-                count: 26,
+                count: 23,
               },
               {
-                spellId: '198013',
-                count: 17,
+                spellId: '198589',
+                count: 2,
+              },
+              {
+                spellId: '258860',
+                count: 9,
+              },
+              {
+                spellId: '258920',
+                count: 11,
+              },
+              {
+                spellId: '162794',
+                count: 38,
+              },
+              {
+                spellId: '188499',
+                count: 6,
+              },
+              {
+                spellId: '232893',
+                count: 23,
+              },
+              {
+                spellId: '370965',
+                count: 5,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '201427',
+                count: 90,
               },
               {
                 spellId: '195072',
                 count: 2,
               },
               {
-                spellId: '188499',
+                spellId: '198793',
                 count: 13,
               },
               {
+                spellId: '198013',
+                count: 15,
+              },
+              {
                 spellId: '185123',
-                count: 51,
+                count: 43,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.03469705282915558,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/XbgVwMN7vKjpdALt#fight=9&source=696',
+            startedAt: '2026-10-08T02:49:26.285Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1775194,
+            itemLevelBracket: 19,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '198589',
+                count: 23,
+              },
+              {
+                spellId: '258860',
+                count: 42,
+              },
+              {
+                spellId: '232893',
+                count: 95,
+              },
+              {
+                spellId: '201427',
+                count: 177,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '452497',
+                count: 15,
               },
               {
                 spellId: '162794',
-                count: 37,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 313055,
-                uses: 32,
+                count: 241,
               },
               {
-                spellId: '413984',
-                activeMs: 36807,
-                uses: 3,
+                spellId: '370965',
+                count: 23,
+              },
+              {
+                spellId: '207684',
+                count: 2,
+              },
+              {
+                spellId: '198793',
+                count: 65,
+              },
+              {
+                spellId: '131347',
+                count: 26,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '258920',
+                count: 50,
+              },
+              {
+                spellId: '196718',
+                count: 4,
+              },
+              {
+                spellId: '185123',
+                count: 115,
+              },
+              {
+                spellId: '179057',
+                count: 7,
+              },
+              {
+                spellId: '183752',
+                count: 33,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '198013',
+                count: 55,
+              },
+              {
+                spellId: '200166',
+                count: 12,
+              },
+              {
+                spellId: '195072',
+                count: 48,
+              },
+              {
+                spellId: '210152',
+                count: 161,
+              },
+              {
+                spellId: '217832',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '188499',
+                count: 68,
               },
             ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/MnNK1HqQkCxzfB2w#fight=1&source=5',
+            startedAt: '2026-10-07T23:35:15.941Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1713600,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '207684',
+                count: 2,
+              },
+              {
+                spellId: '198793',
+                count: 54,
+              },
+              {
+                spellId: '258920',
+                count: 70,
+              },
+              {
+                spellId: '258860',
+                count: 44,
+              },
+              {
+                spellId: '201427',
+                count: 301,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '195072',
+                count: 20,
+              },
+              {
+                spellId: '232893',
+                count: 71,
+              },
+              {
+                spellId: '370965',
+                count: 23,
+              },
+              {
+                spellId: '162794',
+                count: 220,
+              },
+              {
+                spellId: '131347',
+                count: 19,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '188499',
+                count: 65,
+              },
+              {
+                spellId: '198013',
+                count: 67,
+              },
+              {
+                spellId: '210152',
+                count: 159,
+              },
+              {
+                spellId: '442294',
+                count: 103,
+              },
+              {
+                spellId: '196718',
+                count: 5,
+              },
+              {
+                spellId: '179057',
+                count: 8,
+              },
+              {
+                spellId: '200166',
+                count: 11,
+              },
+              {
+                spellId: '1297908',
+                count: 7,
+              },
+              {
+                spellId: '198589',
+                count: 21,
+              },
+              {
+                spellId: '1236994',
+                count: 4,
+              },
+              {
+                spellId: '217832',
+                count: 1,
+              },
+              {
+                spellId: '183752',
+                count: 28,
+              },
+              {
+                spellId: '185123',
+                count: 211,
+              },
+            ],
+            externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -1539,7 +1785,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '247454',
     summary: '복수는 영혼 파편을 모아 회복하고 들어올 피해에 방어기를 먼저 배정하는 탱커입니다. 시즌 2 세트의 불꽃의 인장 대상 관리에 더해, 9월 23일 알드라치 파괴자의 글레이브와 두 강화·징표가 상향됐습니다. 궤멸자는 탈태로 초기화한 첫 영혼 폭탄, 알드라치는 글레이브 뒤 균열·영혼 베어내기와 징표 대상을 중심으로 연습하세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Blizzard 공식 9월 23일 복수 알드라치 조정에서 전투검술 첫·둘째 강화 15%·30%, 글레이브 피해 +25%, 파괴자의 징표 중첩당 8%를 확인했고 한국어 툴팁과 대조했습니다. 이 조정 이전 공개 가이드의 궤멸자 추천을 현재 우위의 증거로 재사용하지 않습니다. 기본 방어·자원 순서는 기존 라이브 툴팁과 Wowhead·Icy Veins·Method 공개 가이드를 대조했습니다. 최신 WCL·Archon 동일 조건 비교와 개인 심크는 미확인입니다. SimulationCraft 복수 APL은 4월 수정본이며 비공개 The Fel Hammer 대화는 인용하지 않았습니다. 10월 3일 공식 목록에서 한국어 9월 2일 항목의 악마의 수호 15%, 공허의 절단기 6%, 지옥 황폐 치유 +25%를 확인했습니다. 따라서 공허의 절단기의 과거 5%와 현재 6% 차이는 공식 변경 이력이 설명하며, 해소되지 않은 동일 버전 수치 충돌로 취급하지 않습니다. 9월 23일 이후 복수의 추가 PvE 변경은 10월 2일까지 찾지 못했습니다.',
     playstyle: [
       {
@@ -2506,18 +2752,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 86,736건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/tHQFknmNhJxDwdgL#fight=4&source=63',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/4RvC7jfVDnKkGpX9#fight=63&source=3821',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T09:31:35.020Z · 장비 구간 324 · 394.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T12:17:57.556Z · 장비 평균 329.19 · 실제 331.5초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/FVdRW7pAwCaZTPJB#fight=1&source=19',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/m4p1PRdDXVJFBkjz#fight=2&source=11',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:05:32.421Z · 장비 구간 324 · 397.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:42:56.246Z · 장비 평균 328.19 · 실제 316.1초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ymz42HpY7Fwf9qkb#fight=15&source=1022',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T04:17:54.553Z · 장비 평균 326.75 · 실제 1754.8초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/L9dApBT8jGCyxHY4#fight=4&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T21:43:07.085Z · 장비 평균 326.75 · 실제 1774.4초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -2531,7 +2791,7 @@ export const guideManuscripts = {
       '9월 23일 복수 알드라치의 전투검술은 첫·둘째 강화 15%·30%, 글레이브 피해 +25%, 파괴자의 징표는 중첩당 8%로 조정됐습니다. 공식 변경표와 한국어 툴팁을 대조했습니다.',
       '현재 Archon 레이드·쐐기 최신 사용률과 개인 상위 로그는 확보하지 못했습니다. 궤멸자 기본 추천은 조정 전 공개 가이드에 근거하므로 지금의 피해 우위를 보장하지 않습니다.',
       '공허의 절단기의 6%는 한국어 9월 2일 공식 상향 이력과 일치합니다. 5%로 남은 과거 작성본을 같은 패치의 미해결 충돌로 일반화하지 않습니다.',
-      '10월 8일 악마사냥꾼 복수의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 악마사냥꾼 복수의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.00, 실제 전투 길이 차이는 4.63%/1.11%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       'Blizzard 9월 23일 긴급 수정은 확인했습니다. 별도의 12.1 콘텐츠 업데이트 원문과 조정 후 동일 조건 Archon·WCL 집계는 확인하지 못했습니다.',
@@ -2540,7 +2800,7 @@ export const guideManuscripts = {
       '최적 장비·영웅 특성의 실제 차이는 개인 장비, 대상 수, 전투 길이, 외부 지원에 따라 달라집니다. 개인 심크나 최신 동일 조건 로그 없이 가이드 수치를 확정 점수로 읽지 않습니다.',
       '2026년 10월 3일 확인 범위는 공식 긴급 수정 목록과 공개 작성자 운용 자료입니다. 특성 견본의 현재 트리 경로·포인트는 10월 8일 확인했으나 조정 후 동일 조건 로그 전수 대조가 남아 검수 중 상태를 유지합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     opener: {
       title: '궤멸자 첫 전투 흐름',
@@ -3118,197 +3378,435 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.008499438147167734,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.046263194890684915,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/tHQFknmNhJxDwdgL#fight=4&source=63',
-            startedAt: '2026-10-07T09:31:35.020Z',
+            url: 'https://www.warcraftlogs.com/reports/4RvC7jfVDnKkGpX9#fight=63&source=3821',
+            startedAt: '2026-10-07T12:17:57.556Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 394410,
-            itemLevelBracket: 324,
-            heroTree: 124,
+            durationMs: 331473,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.1875,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '204021',
-                count: 9,
-              },
-              {
-                spellId: '228477',
-                count: 108,
-              },
-              {
-                spellId: '232893',
-                count: 16,
+                spellId: '198793',
+                count: 2,
               },
               {
                 spellId: '131347',
-                count: 4,
-              },
-              {
-                spellId: '263642',
-                count: 124,
-              },
-              {
-                spellId: '1236616',
                 count: 1,
+              },
+              {
+                spellId: '258920',
+                count: 24,
               },
               {
                 spellId: '202138',
                 count: 1,
               },
               {
-                spellId: '198793',
+                spellId: '390163',
+                count: 5,
+              },
+              {
+                spellId: '232893',
+                count: 5,
+              },
+              {
+                spellId: '1283344',
+                count: 26,
+              },
+              {
+                spellId: '247454',
+                count: 17,
+              },
+              {
+                spellId: '1236616',
                 count: 2,
               },
               {
-                spellId: '212084',
-                count: 2,
+                spellId: '187827',
+                count: 14,
               },
               {
                 spellId: '1295247',
                 count: 1,
               },
               {
-                spellId: '258920',
-                count: 33,
-              },
-              {
-                spellId: '247454',
-                count: 21,
-              },
-              {
-                spellId: '187827',
-                count: 15,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '185245',
-                count: 7,
-              },
-              {
-                spellId: '204157',
-                count: 3,
+                spellId: '204021',
+                count: 8,
               },
               {
                 spellId: '204596',
                 count: 10,
               },
               {
-                spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '390163',
+                spellId: '185245',
                 count: 6,
               },
               {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '263642',
+                count: 102,
+              },
+              {
                 spellId: '203720',
-                count: 42,
+                count: 44,
+              },
+              {
+                spellId: '228477',
+                count: 109,
               },
             ],
             externalBuffs: [],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/FVdRW7pAwCaZTPJB#fight=1&source=19',
-            startedAt: '2026-10-07T00:05:32.421Z',
+            url: 'https://www.warcraftlogs.com/reports/m4p1PRdDXVJFBkjz#fight=2&source=11',
+            startedAt: '2026-10-08T01:42:56.246Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 397791,
-            itemLevelBracket: 324,
-            heroTree: 124,
+            durationMs: 316138,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.1875,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
+              {
+                spellId: '131347',
+                count: 4,
+              },
+              {
+                spellId: '204596',
+                count: 5,
+              },
               {
                 spellId: '204021',
                 count: 8,
               },
               {
-                spellId: '258920',
-                count: 33,
+                spellId: '247454',
+                count: 23,
               },
               {
                 spellId: '212084',
-                count: 8,
-              },
-              {
-                spellId: '204157',
-                count: 2,
-              },
-              {
-                spellId: '196718',
-                count: 1,
-              },
-              {
-                spellId: '202138',
-                count: 1,
-              },
-              {
-                spellId: '232893',
-                count: 10,
-              },
-              {
-                spellId: '185245',
-                count: 17,
-              },
-              {
-                spellId: '187827',
-                count: 16,
-              },
-              {
-                spellId: '228477',
-                count: 116,
-              },
-              {
-                spellId: '204596',
-                count: 4,
-              },
-              {
-                spellId: '390163',
-                count: 7,
+                count: 3,
               },
               {
                 spellId: '263642',
-                count: 124,
+                count: 88,
+              },
+              {
+                spellId: '390163',
+                count: 5,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '228477',
+                count: 77,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
               },
               {
                 spellId: '179057',
                 count: 1,
               },
               {
-                spellId: '203720',
-                count: 31,
+                spellId: '258920',
+                count: 23,
               },
               {
-                spellId: '131347',
+                spellId: '204157',
                 count: 1,
               },
               {
-                spellId: '247454',
-                count: 22,
+                spellId: '187827',
+                count: 12,
               },
               {
-                spellId: '1297761',
-                count: 4,
+                spellId: '185245',
+                count: 7,
+              },
+              {
+                spellId: '232893',
+                count: 8,
+              },
+              {
+                spellId: '203720',
+                count: 23,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.011061297294555579,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/ymz42HpY7Fwf9qkb#fight=15&source=1022',
+            startedAt: '2026-10-07T04:17:54.553Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1754758,
+            itemLevelBracket: 19,
+            gearItemLevel: 326.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '228477',
+                count: 537,
+              },
+              {
+                spellId: '179057',
+                count: 11,
+              },
+              {
+                spellId: '203720',
+                count: 126,
+              },
+              {
+                spellId: '198793',
+                count: 6,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '212084',
+                count: 3,
+              },
+              {
+                spellId: '196718',
+                count: 5,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '183752',
+                count: 25,
+              },
+              {
+                spellId: '247454',
+                count: 118,
+              },
+              {
+                spellId: '185245',
+                count: 11,
+              },
+              {
+                spellId: '204021',
+                count: 36,
+              },
+              {
+                spellId: '1236616',
+                count: 4,
+              },
+              {
+                spellId: '204596',
+                count: 35,
+              },
+              {
+                spellId: '207684',
+                count: 2,
+              },
+              {
+                spellId: '204157',
+                count: 32,
+              },
+              {
+                spellId: '202138',
+                count: 7,
+              },
+              {
+                spellId: '390163',
+                count: 22,
+              },
+              {
+                spellId: '232893',
+                count: 49,
+              },
+              {
+                spellId: '263642',
+                count: 511,
+              },
+              {
+                spellId: '187827',
+                count: 62,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '131347',
+                count: 38,
+              },
+              {
+                spellId: '258920',
+                count: 148,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/L9dApBT8jGCyxHY4#fight=4&source=5',
+            startedAt: '2026-10-07T21:43:07.085Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1774385,
+            itemLevelBracket: 19,
+            gearItemLevel: 326.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '183752',
+                count: 33,
+              },
+              {
+                spellId: '217832',
+                count: 2,
+              },
+              {
+                spellId: '247454',
+                count: 120,
+              },
+              {
+                spellId: '1295132',
+                count: 4,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '390163',
+                count: 22,
+              },
+              {
+                spellId: '204021',
+                count: 34,
+              },
+              {
+                spellId: '228477',
+                count: 507,
+              },
+              {
+                spellId: '198793',
+                count: 14,
+              },
+              {
+                spellId: '185245',
+                count: 7,
+              },
+              {
+                spellId: '179057',
+                count: 13,
+              },
+              {
+                spellId: '131347',
+                count: 56,
+              },
+              {
+                spellId: '212084',
+                count: 3,
+              },
+              {
+                spellId: '263642',
+                count: 509,
+              },
+              {
+                spellId: '196718',
+                count: 2,
+              },
+              {
+                spellId: '203720',
+                count: 129,
+              },
+              {
+                spellId: '207684',
+                count: 4,
+              },
+              {
+                spellId: '187827',
+                count: 61,
+              },
+              {
+                spellId: '204157',
+                count: 50,
+              },
+              {
+                spellId: '204596',
+                count: 37,
+              },
+              {
+                spellId: '258920',
+                count: 146,
+              },
+              {
+                spellId: '232893',
+                count: 49,
+              },
+              {
+                spellId: '202138',
+                count: 10,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -3320,7 +3818,7 @@ export const guideManuscripts = {
     inlineTermSpellIds: {
       '굶주린 베기': '1239123',
     },
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 포식은 공허상흔을 기본으로 시작하세요. 단일에서는 수확과 도태를 자주 회수하고, 광역에서는 박멸을 준비해 공허 탈태에 들어갔다가 종료 후 들끓는 고통까지 연결합니다. 같은 공허상흔이어도 보스 한 마리와 쫄 무리는 탈태를 끝내는 판단이 다릅니다. 궤멸자는 붕괴하는 별을 사용하는 별도 빌드입니다.',
     sourceNote: '운용은 Wowhead VooDooSaurus의 2026-09-02 갱신본에서 영웅 특성과 대상 수를 구분해 확인했습니다. 2026-09-27 한국어 라이브 툴팁으로 집어삼키기·영혼 탐식·공허내림·한밤 단계별 효과와 굶주린 베기의 특성/시전 주문 ID를 다시 대조했습니다. 공허내림 생성 조건은 한국어 툴팁의 집어삼키기와 Wowhead 공개 가이드의 흡수 설명이 엇갈리므로 로그 발동 원인 확인 전까지 흡수 발동을 확정하지 않습니다. Icy Veins Wordup/Voodoo의 추천 및 스탯 설명과 대조하고, 8월 18일 당시 조정은 해당 Blizzard 공지로 확인했으며, 이번에는 9월 23일 추가 조정을 함께 반영했습니다. 6월 Archon 사용률과 DPS는 12.1 추천 근거로 사용하지 않습니다. 이번 확인에서 현재 레이드 집계는 가져오지 못했고, 검색에 노출된 특정 쐐기 페이지의 14개 로그 역시 전체 메타를 대표하지 않습니다. The Fel Hammer는 공개 서버 안내 경로만 확인했으며 가입 후 게시물이나 비공개 고정글을 읽었다고 주장하지 않습니다. 아래 연습 방법과 로그 점검 순서는 확인된 작동 방식을 실제 플레이에 적용하기 위한 제안이며, 특정 상위 플레이어의 실측 결과가 아닙니다. 9월 23일 한국어 공식 조정은 붕괴하는 별의 주 대상 피해 +25%, 흡수·집어삼키기 피해 +8%이며 두 항목은 PvP 제외입니다. Method 9월 18일 원문에는 공허상흔 근접과 원거리 구성이 따로 있으므로 별을 쓰지 않는 조건을 공허상흔 전체로 확대하지 않습니다. 별의 기본 비용 30영혼과 작성자 단일 우선순위의 35영혼 보류는 별개입니다. 9월 27일 툴팁 확인 기록은 이번에 다시 확인한 값이 아닙니다. 미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
     playstyle: [
@@ -3955,18 +4453,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 71,863건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/cg6LYwBDXaZmpPCd#fight=1&source=1',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/bxmjTnQ2kKFHrDYP#fight=37&source=556',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T09:01:18.752Z · 장비 구간 326 · 412.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:41:59.203Z · 장비 평균 328.38 · 실제 398.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=16',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/dQzVWh7yw1tMCY6D#fight=14&source=23',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:16:46.914Z · 장비 구간 326 · 413.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:40:03.511Z · 장비 평균 327.75 · 실제 403.3초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/769dy8kNFaCp2RZB#fight=7&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:16:41.729Z · 장비 평균 329.81 · 실제 1816.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/2FVyKgCBzrA3cLQW#fight=44&source=218',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:35:19.463Z · 장비 평균 328.81 · 실제 1758.9초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -3979,7 +4491,7 @@ export const guideManuscripts = {
       '영혼분출과 근접 강화 스킬 세 개는 한국어 툴팁 ID·아이콘을 확인해 KB에 등록했습니다. 대체 아이콘이나 다른 전문화 주문으로 연결하지 않습니다.',
       '9월 23일 공식 조정에서 붕괴하는 별의 주 대상 피해와 흡수·집어삼키기 피해가 상향됐습니다. 모든 대상·모든 기술에 같은 비율을 적용하지 않습니다.',
       '미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
-      '10월 8일 악마사냥꾼 포식의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 악마사냥꾼 포식의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/1.00, 실제 전투 길이 차이는 1.26%/3.18%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '이 가이드는 12.1 PvE 기준입니다. PvP 전용 수치와 효과는 섞지 않았습니다.',
@@ -3990,7 +4502,7 @@ export const guideManuscripts = {
       '별의 30영혼 기본 비용과 Method 단일 목록의 35영혼 보류 조건은 별개입니다. 공허상흔 근접 견본의 별 미사용을 원거리 견본에 복사하지 않습니다.',
       '미국 10월 6일 흡수·집어삼키기와 수확·도태 피해 8%, 박멸과 붕괴하는 별 주 대상 피해 8%, 사냥 최초 피해와 공허칼날 피해 10% 상향이 적용 공지에 들어갔습니다. 모두 PvP 제외이며 9월 23일 조정과 별개의 후속 변경입니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -4470,27 +4982,100 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.004126407801255569,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.012562801608911505,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/cg6LYwBDXaZmpPCd#fight=1&source=1',
-            startedAt: '2026-10-07T09:01:18.752Z',
+            url: 'https://www.warcraftlogs.com/reports/bxmjTnQ2kKFHrDYP#fight=37&source=556',
+            startedAt: '2026-10-07T00:41:59.203Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 411970,
-            itemLevelBracket: 326,
-            heroTree: 124,
+            durationMs: 398188,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.375,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
-                spellId: '1226019',
+                spellId: '196718',
+                count: 1,
+              },
+              {
+                spellId: '198589',
                 count: 4,
               },
+              {
+                spellId: '198793',
+                count: 2,
+              },
+              {
+                spellId: '1221150',
+                count: 23,
+              },
+              {
+                spellId: '1217610',
+                count: 117,
+              },
+              {
+                spellId: '183752',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1250533',
+                count: 5,
+              },
+              {
+                spellId: '473662',
+                count: 45,
+              },
+              {
+                spellId: '131347',
+                count: 5,
+              },
+              {
+                spellId: '473728',
+                count: 44,
+              },
+              {
+                spellId: '1241937',
+                count: 11,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 60077,
+                uses: 4,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/dQzVWh7yw1tMCY6D#fight=14&source=23',
+            startedAt: '2026-10-07T01:40:03.511Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 403254,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
               {
                 spellId: '1245453',
                 count: 6,
@@ -4500,147 +5085,266 @@ export const guideManuscripts = {
                 count: 4,
               },
               {
-                spellId: '131347',
-                count: 4,
-              },
-              {
-                spellId: '196718',
+                spellId: '1226019',
                 count: 2,
               },
               {
-                spellId: '473662',
-                count: 70,
-              },
-              {
-                spellId: '473728',
-                count: 41,
-              },
-              {
-                spellId: '1217610',
-                count: 89,
+                spellId: '1241937',
+                count: 11,
               },
               {
                 spellId: '198589',
-                count: 5,
+                count: 3,
               },
               {
-                spellId: '1221150',
-                count: 19,
-              },
-              {
-                spellId: '198793',
-                count: 1,
+                spellId: '473728',
+                count: 45,
               },
               {
                 spellId: '1234195',
                 count: 1,
               },
               {
-                spellId: '1236994',
+                spellId: '1236616',
                 count: 2,
               },
               {
-                spellId: '1241937',
-                count: 4,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=16',
-            startedAt: '2026-10-08T01:16:46.914Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 413677,
-            itemLevelBracket: 326,
-            heroTree: 126,
-            augmentationCount: 0,
-            healerCount: 6,
-            casts: [
-              {
-                spellId: '1245470',
-                count: 24,
-              },
-              {
-                spellId: '1259431',
-                count: 8,
+                spellId: '1221150',
+                count: 21,
               },
               {
                 spellId: '1217610',
-                count: 55,
-              },
-              {
-                spellId: '1245414',
-                count: 16,
-              },
-              {
-                spellId: '473728',
-                count: 36,
-              },
-              {
-                spellId: '1293316',
-                count: 3,
-              },
-              {
-                spellId: '198589',
-                count: 2,
-              },
-              {
-                spellId: '1226019',
-                count: 5,
-              },
-              {
-                spellId: '1245412',
-                count: 8,
+                count: 116,
               },
               {
                 spellId: '131347',
-                count: 3,
+                count: 5,
               },
               {
-                spellId: '1245483',
-                count: 8,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '1245453',
-                count: 20,
-              },
-              {
-                spellId: '1295247',
+                spellId: '196718',
                 count: 1,
               },
               {
                 spellId: '473662',
-                count: 62,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '1246167',
-                count: 4,
-              },
-              {
-                spellId: '198793',
-                count: 20,
-              },
-              {
-                spellId: '1241937',
-                count: 12,
+                count: 47,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.031765927276410415,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/769dy8kNFaCp2RZB#fight=7&source=1',
+            startedAt: '2026-10-07T23:16:41.729Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1816632,
+            itemLevelBracket: 20,
+            gearItemLevel: 329.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '473662',
+                count: 204,
+              },
+              {
+                spellId: '1217610',
+                count: 479,
+              },
+              {
+                spellId: '1234195',
+                count: 5,
+              },
+              {
+                spellId: '1226019',
+                count: 12,
+              },
+              {
+                spellId: '198589',
+                count: 23,
+              },
+              {
+                spellId: '131347',
+                count: 20,
+              },
+              {
+                spellId: '183752',
+                count: 37,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '58984',
+                count: 3,
+              },
+              {
+                spellId: '1250533',
+                count: 17,
+              },
+              {
+                spellId: '1221150',
+                count: 100,
+              },
+              {
+                spellId: '1241937',
+                count: 51,
+              },
+              {
+                spellId: '198793',
+                count: 5,
+              },
+              {
+                spellId: '207684',
+                count: 1,
+              },
+              {
+                spellId: '473728',
+                count: 191,
+              },
+              {
+                spellId: '196718',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '1245453',
+                count: 10,
+              },
+              {
+                spellId: '217832',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/2FVyKgCBzrA3cLQW#fight=44&source=218',
+            startedAt: '2026-10-08T03:35:19.463Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1758925,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1234195',
+                count: 3,
+              },
+              {
+                spellId: '1245453',
+                count: 38,
+              },
+              {
+                spellId: '1221150',
+                count: 102,
+              },
+              {
+                spellId: '217832',
+                count: 1,
+              },
+              {
+                spellId: '473728',
+                count: 189,
+              },
+              {
+                spellId: '58984',
+                count: 2,
+              },
+              {
+                spellId: '1226019',
+                count: 11,
+              },
+              {
+                spellId: '183752',
+                count: 25,
+              },
+              {
+                spellId: '131347',
+                count: 8,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '1217610',
+                count: 492,
+              },
+              {
+                spellId: '1250533',
+                count: 15,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '1241937',
+                count: 48,
+              },
+              {
+                spellId: '196718',
+                count: 3,
+              },
+              {
+                spellId: '473662',
+                count: 216,
+              },
+              {
+                spellId: '198589',
+                count: 23,
+              },
+              {
+                spellId: '198793',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -4652,7 +5356,7 @@ export const guideManuscripts = {
     inlineTermSpellIds: {
       '한밤의 춤': '1264506',
     },
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 혈기는 뼈의 보호막과 룬 마력을 유지하고, 위험 피해에 맞춰 죽음의 일격과 생존기를 배정하는 것이 먼저입니다. 9월 23일 조정으로 전체 피해와 치명적인 접촉 광역 효율은 내려간 반면 죽음의 일격 및 죽음의 인도자 여러 효과는 상향됐습니다. 조정 전 산레인 사용률만으로 지금의 영웅 특성 우열을 확정하지 마세요. 시즌 2 세트가 있다면 피로 치를 빚 10중첩을 골수분쇄로 소비합니다.',
     sourceNote: '2026-09-27에 Blizzard 한국어 9월 23일 긴급 수정과 현행 한국어 툴팁을 확인했습니다. 혈기 전체 피해 -6%, 죽음의 일격 공격력 +15%, 치명적인 접촉 60%, 죽음의 인도자 여섯 항목의 변경은 공식 원문을 우선합니다. 기존 Wowhead·Icy Veins·Method 공개 가이드와 9월 12일 Archon 검색 색인은 조정 전 자료입니다. Archon의 산레인 89.3%는 그 시점의 사용률이지 현재 빌드 우열이 아닙니다. Wowhead와 Icy Veins 작성자 중복을 독립 검증으로 세지 않고, 비공개 직업 디스코드를 읽었다고 주장하지 않습니다. 조정 후 같은 조건의 레이드·쐐기 로그를 확보하지 못했으므로 두 영웅 특성의 순위는 보류합니다. 아래 연습·로그 점검은 확인된 효과를 실전에 적용하는 방법이며 개인 실측 결과가 아닙니다. 2026-10-03 재조회에서 공식 한국어 본문은 10월 2일까지 갱신되어 있습니다. Method 운용은 9월 4일, Icy Veins 운용은 8월 10일 작성분입니다. 오늘 읽었다는 사실을 조정 후 새 추천으로 바꾸지 않습니다. 아래 영웅 특성별 세 모드는 기존 기본 흐름의 혼합 단계를 분리한 조건부 실전 예시입니다.',
     playstyle: [
@@ -5205,18 +5909,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 300,149건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=10',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/DtWcT2qPLbZkGKBm#fight=1&source=14',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:38:13.848Z · 장비 구간 329 · 319.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:03:58.624Z · 장비 평균 330.19 · 실제 375.5초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/w7p86hFMkaQY4ZXH#fight=9&source=15',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/TAyNzb4G6tCxqZL9#fight=117&source=2745',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:48:19.515Z · 장비 구간 329 · 318.8초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:38:13.607Z · 장비 평균 329.75 · 실제 381.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=69',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:08:32.274Z · 장비 평균 328.56 · 실제 1742.9초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/AhBWnJxYNC3kj8Hf#fight=42&source=697',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T20:24:01.293Z · 장비 평균 327.75 · 실제 1807.0초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -5226,7 +5944,7 @@ export const guideManuscripts = {
       '섭취는 강화 단계에 따라 질병 흡수량뿐 아니라 피해 감소 강도와 종료 후 지속시간이 달라집니다. 상위 단계가 모든 상황에서 우월한 것은 아닙니다.',
       '흡혈의 오라는 리치의 혼에 반응합니다. 흡혈은 개인 최대 생명력과 회복을 돕는 별도 기술로, 이름의 유사성만으로 시너지 연결을 만들지 않습니다.',
       '실전 검토는 사망 직전의 자원과 버프부터 시작합니다. 딜이 높다는 사실만으로 방어 선택이 맞았다고, 죽음의 일격 횟수가 낮다는 사실만으로 플레이가 틀렸다고 단정하지 않습니다.',
-      '10월 8일 죽음의 기사 혈기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 죽음의 기사 혈기의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.44/0.81, 실제 전투 길이 차이는 1.60%/3.55%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '9월 12일 Archon 검색 색인의 조정 전 집계는 현행 추천 근거에서 제외합니다. 10월 8일 레이드·쐐기 공개 집계를 확인했지만, 최근 14일 자료에는 조정 이전 전투가 섞일 수 있습니다.',
@@ -5235,7 +5953,7 @@ export const guideManuscripts = {
       '능력치·장신구는 현재 장비와 콘텐츠에 맞춰 비교합니다. 피해 시뮬레이션 결과만으로 탱커 급사 위험까지 검증됐다고 볼 수 없습니다.',
       '영웅 특성별 세 모드는 생존·자원 상태에 따른 조건부 흐름입니다. 특성 견본의 포인트·연결과 최신 공개 집계는 확인했으며, 공용 노트의 모든 효과와 조정 후 동일 조건 이벤트 비교가 남아 부분 완료를 유지합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -5745,59 +6463,26 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0025094259922714686,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
+        durationDifference: 0.01598498983249827,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=10',
-            startedAt: '2026-10-07T00:38:13.848Z',
+            url: 'https://www.warcraftlogs.com/reports/DtWcT2qPLbZkGKBm#fight=1&source=14',
+            startedAt: '2026-10-08T01:03:58.624Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 319595,
-            itemLevelBracket: 329,
-            heroTree: 33,
+            durationMs: 375508,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.1875,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '48265',
-                count: 8,
-              },
-              {
-                spellId: '1263566',
-                count: 4,
-              },
-              {
-                spellId: '1263569',
-                count: 1,
-              },
-              {
-                spellId: '1295132',
-                count: 2,
-              },
-              {
-                spellId: '49998',
-                count: 74,
-              },
-              {
-                spellId: '49039',
-                count: 4,
-              },
-              {
-                spellId: '49576',
-                count: 3,
-              },
-              {
-                spellId: '55233',
-                count: 4,
-              },
               {
                 spellId: '43265',
                 count: 19,
@@ -5807,153 +6492,422 @@ export const guideManuscripts = {
                 count: 4,
               },
               {
-                spellId: '257040',
-                count: 1,
-              },
-              {
-                spellId: '195292',
-                count: 8,
-              },
-              {
-                spellId: '195182',
-                count: 28,
-              },
-              {
-                spellId: '439843',
-                count: 7,
-              },
-              {
-                spellId: '56222',
-                count: 5,
-              },
-              {
-                spellId: '46585',
-                count: 4,
-              },
-              {
-                spellId: '206930',
-                count: 67,
+                spellId: '49998',
+                count: 106,
               },
               {
                 spellId: '48707',
-                count: 6,
-              },
-              {
-                spellId: '50842',
-                count: 44,
-              },
-              {
-                spellId: '256948',
-                count: 1,
-              },
-              {
-                spellId: '48792',
-                count: 1,
-              },
-              {
-                spellId: '441424',
-                count: 18,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/w7p86hFMkaQY4ZXH#fight=9&source=15',
-            startedAt: '2026-10-07T01:48:19.515Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 318793,
-            itemLevelBracket: 329,
-            heroTree: 31,
-            augmentationCount: 2,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '48792',
-                count: 1,
+                count: 3,
               },
               {
                 spellId: '195292',
-                count: 6,
+                count: 3,
               },
               {
-                spellId: '49028',
+                spellId: '206930',
+                count: 96,
+              },
+              {
+                spellId: '50842',
+                count: 56,
+              },
+              {
+                spellId: '48265',
+                count: 9,
+              },
+              {
+                spellId: '55233',
                 count: 4,
+              },
+              {
+                spellId: '195182',
+                count: 14,
+              },
+              {
+                spellId: '69070',
+                count: 1,
               },
               {
                 spellId: '49576',
                 count: 10,
               },
               {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '43265',
-                count: 28,
-              },
-              {
-                spellId: '56222',
-                count: 6,
-              },
-              {
-                spellId: '50842',
-                count: 61,
-              },
-              {
-                spellId: '195182',
-                count: 13,
-              },
-              {
-                spellId: '1293316',
-                count: 3,
-              },
-              {
-                spellId: '46585',
+                spellId: '1236994',
                 count: 2,
               },
               {
-                spellId: '206930',
-                count: 65,
+                spellId: '46585',
+                count: 4,
               },
               {
-                spellId: '48707',
-                count: 5,
-              },
-              {
-                spellId: '49998',
-                count: 87,
-              },
-              {
-                spellId: '55233',
-                count: 6,
+                spellId: '56222',
+                count: 7,
               },
               {
                 spellId: '433895',
-                count: 45,
+                count: 62,
               },
               {
                 spellId: '108199',
                 count: 1,
               },
               {
+                spellId: '1297761',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/TAyNzb4G6tCxqZL9#fight=117&source=2745',
+            startedAt: '2026-10-08T01:38:13.607Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 381608,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.75,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
                 spellId: '48265',
                 count: 9,
               },
-            ],
-            externalBuffs: [
               {
-                spellId: '413984',
-                activeMs: 12935,
-                uses: 1,
+                spellId: '49028',
+                count: 5,
+              },
+              {
+                spellId: '433895',
+                count: 59,
+              },
+              {
+                spellId: '255654',
+                count: 1,
+              },
+              {
+                spellId: '49576',
+                count: 6,
+              },
+              {
+                spellId: '195182',
+                count: 17,
+              },
+              {
+                spellId: '55233',
+                count: 4,
+              },
+              {
+                spellId: '49998',
+                count: 108,
+              },
+              {
+                spellId: '50842',
+                count: 59,
+              },
+              {
+                spellId: '56222',
+                count: 7,
+              },
+              {
+                spellId: '43265',
+                count: 20,
+              },
+              {
+                spellId: '108199',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '46585',
+                count: 4,
+              },
+              {
+                spellId: '206930',
+                count: 90,
+              },
+              {
+                spellId: '48707',
+                count: 7,
+              },
+              {
+                spellId: '51052',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '48792',
+                count: 1,
               },
             ],
+            externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.03547066773068524,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=69',
+            startedAt: '2026-10-08T01:08:32.274Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1742891,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '48265',
+                count: 24,
+              },
+              {
+                spellId: '49028',
+                count: 18,
+              },
+              {
+                spellId: '46585',
+                count: 1,
+              },
+              {
+                spellId: '48707',
+                count: 19,
+              },
+              {
+                spellId: '49039',
+                count: 3,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '195292',
+                count: 32,
+              },
+              {
+                spellId: '47528',
+                count: 24,
+              },
+              {
+                spellId: '195182',
+                count: 95,
+              },
+              {
+                spellId: '50842',
+                count: 200,
+              },
+              {
+                spellId: '48743',
+                count: 4,
+              },
+              {
+                spellId: '206930',
+                count: 337,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '56222',
+                count: 10,
+              },
+              {
+                spellId: '55233',
+                count: 43,
+              },
+              {
+                spellId: '207167',
+                count: 2,
+              },
+              {
+                spellId: '43265',
+                count: 108,
+              },
+              {
+                spellId: '1234768',
+                count: 1,
+              },
+              {
+                spellId: '61999',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '48792',
+                count: 9,
+              },
+              {
+                spellId: '49576',
+                count: 14,
+              },
+              {
+                spellId: '51052',
+                count: 2,
+              },
+              {
+                spellId: '433895',
+                count: 227,
+              },
+              {
+                spellId: '108199',
+                count: 5,
+              },
+              {
+                spellId: '49998',
+                count: 413,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/AhBWnJxYNC3kj8Hf#fight=42&source=697',
+            startedAt: '2026-10-07T20:24:01.293Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1806986,
+            itemLevelBracket: 20,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1295247',
+                count: 4,
+              },
+              {
+                spellId: '50842',
+                count: 309,
+              },
+              {
+                spellId: '195182',
+                count: 67,
+              },
+              {
+                spellId: '433895',
+                count: 211,
+              },
+              {
+                spellId: '49576',
+                count: 48,
+              },
+              {
+                spellId: '47528',
+                count: 31,
+              },
+              {
+                spellId: '195292',
+                count: 19,
+              },
+              {
+                spellId: '108199',
+                count: 10,
+              },
+              {
+                spellId: '206930',
+                count: 357,
+              },
+              {
+                spellId: '56222',
+                count: 17,
+              },
+              {
+                spellId: '51052',
+                count: 4,
+              },
+              {
+                spellId: '49028',
+                count: 19,
+              },
+              {
+                spellId: '55233',
+                count: 39,
+              },
+              {
+                spellId: '207167',
+                count: 4,
+              },
+              {
+                spellId: '48265',
+                count: 22,
+              },
+              {
+                spellId: '49039',
+                count: 1,
+              },
+              {
+                spellId: '48792',
+                count: 10,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '49998',
+                count: 449,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '43265',
+                count: 124,
+              },
+              {
+                spellId: '1293316',
+                count: 10,
+              },
+              {
+                spellId: '48707',
+                count: 24,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -5963,7 +6917,7 @@ export const guideManuscripts = {
     status: '12.1 전환 검수 중',
     defaultHeroBranchIndex: 1,
     graphCenterSkillId: '51271',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 냉기는 얼음 기둥뿐 아니라 평소의 발동 순환과 근접 유지도 중요합니다. 레이드와 쐐기 모두 쌍수·죽음의 인도자·신드라고사의 숨결을 먼저 비교하고, 종말의 기수와 냉기파멸은 장비·전투 유형에 따른 대안으로 보세요. 숨결은 처음 룬 마력 60을 쓰고 도살기·단단한 얼음 소비로 늘어나므로, 숨결 중에도 냉기의 일격과 빙하 진군을 정상적으로 사용합니다.',
     sourceNote: '2026-09-23에 Blizzard 12.1 한국어 패치 노트와 9월 22일 영어 긴급 수정 사항, Wowhead Khazak 9월 5일 특성, Icy Veins Bicepspump 9월 14일 특성, Method Taeznak 9월 20일 공개 가이드를 대조했습니다. Icy Veins는 같은 특성 페이지 안에서 죽음의 인도자와 종말의 기수의 단일 우열을 서로 반대로 설명하므로 근소한 순위 차이를 확정하지 않습니다. 공식 한국어 9월 23일 공지에도 PvE 서리수확자 피해 100%·절멸 피해 10% 상향이 현재 명시되어 있습니다. 영어 공지 9월 22일과 날짜 표기를 구분하며 한국 서버의 정확한 적용 시각과 개인 실측은 확인하지 못했습니다. 현재 한국어 툴팁은 서리수확자 1230301, 숨결 1249658, 세트 버프 1297365를 기준으로 합니다. Method의 세트 2%/4%와 기나긴 겨울 6초 설명은 현행 일반 서버 한국어 툴팁의 1%/2%, 최대 4초와 달라 그대로 쓰지 않았습니다. 회수 타이밍에는 저자별 권장이 달라 상황별로 설명합니다. 9월 12일 Mythicstats +17~20 상위 800개 로그의 죽음의 인도자 표시는 당시 고단 로그 결과이며 현재 레이드 사용률이 아닙니다. Archon 최신 레이드 원문은 접근 제한으로 수치를 확보하지 못했습니다. Acherus 공개 안내만 사용했고 비공개 대화나 개별 로그 실측을 인용하지 않았습니다. 10월 3일 재대조에서 Icy Veins 냉기 작성자는 Taeznak이며 운용은 9월 25일, Method 운용은 9월 27일 갱신분입니다. Icy Veins는 같은 기둥의 첫 가속 종료 뒤 약 12초 회수를 기본 권장하고 Method는 죽음의 인도자 징표·몰살 소비와 광역 다음 기둥 전략을 구분합니다. 두 권장을 하나의 고정 시점으로 합치지 않습니다.',
     playstyle: [
@@ -6513,18 +7467,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 63,743건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=42',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:30:31.008Z · 장비 평균 328.38 · 실제 332.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=13',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:32:09.837Z · 장비 구간 328 · 319.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:32:09.837Z · 장비 평균 328.94 · 실제 319.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/HB6fNynjMCrw1GXJ#fight=4&source=24',
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/14Rt8xzNM6CLgD7k#fight=6&source=31',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:28:06.118Z · 장비 구간 328 · 319.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:59:45.222Z · 장비 평균 326.94 · 실제 1776.4초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=152',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T21:49:22.135Z · 장비 평균 327.94 · 실제 1755.5초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -6535,7 +7503,7 @@ export const guideManuscripts = {
       '9월 갱신된 Wowhead·Icy Veins의 레이드·쐐기 죽음의 인도자 추천과 종말의 기수 대안을 구분합니다. Icy Veins 내부의 상충하는 우열 수치는 확정하지 않습니다.',
       '서리수확자는 절멸 강화·사슬·서리낫 연계의 지속 효과입니다. 영어 9월 22일 피해 상향 공지를 한국어 툴팁의 절멸 10% 보너스로 환산하지 않습니다.',
       '서리고룡의 격노 첫 사용, 회수, 평타 치명타에 의한 기둥 연장은 서로 다른 효과입니다.',
-      '10월 8일 죽음의 기사 냉기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 죽음의 기사 냉기의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.56/1.00, 실제 전투 길이 차이는 3.91%/1.18%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '10월 8일 레이드·쐐기 공개 집계를 확인했습니다. 개별 상위 로그의 전체 이벤트를 비교한 결과는 아니므로 특정 캐릭터의 점수 상승량을 약속하지 않습니다.',
@@ -6544,7 +7512,7 @@ export const guideManuscripts = {
       '숨결 최대 30초는 Icy Veins 설명입니다. 기본 툴팁에는 8초와 소비당 0.8초만 표시되므로 모든 캐릭터가 매번 30초를 채워야 한다는 검사 기준으로 쓰지 않습니다.',
       '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 특성 견본의 가져오기·포인트·연결은 10월 8일 확인했습니다. 모든 공용·영웅 특성의 효과와 조정 후 동일 조건 로그 검수는 남아 있습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -7059,9 +8027,127 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.000748095330507891,
-        matchedAugmentation: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.5625,
+        durationDifference: 0.03913790147703246,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=42',
+            startedAt: '2026-10-07T01:30:31.008Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 332491,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '49184',
+                count: 56,
+              },
+              {
+                spellId: '48743',
+                count: 2,
+              },
+              {
+                spellId: '47568',
+                count: 23,
+              },
+              {
+                spellId: '48707',
+                count: 1,
+              },
+              {
+                spellId: '49143',
+                count: 67,
+              },
+              {
+                spellId: '439843',
+                count: 8,
+              },
+              {
+                spellId: '49020',
+                count: 105,
+              },
+              {
+                spellId: '279302',
+                count: 4,
+              },
+              {
+                spellId: '47528',
+                count: 1,
+              },
+              {
+                spellId: '1249658',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1265384',
+                count: 4,
+              },
+              {
+                spellId: '49039',
+                count: 1,
+              },
+              {
+                spellId: '51052',
+                count: 1,
+              },
+              {
+                spellId: '207230',
+                count: 17,
+              },
+              {
+                spellId: '48265',
+                count: 7,
+              },
+              {
+                spellId: '194913',
+                count: 8,
+              },
+              {
+                spellId: '441424',
+                count: 23,
+              },
+              {
+                spellId: '49576',
+                count: 6,
+              },
+              {
+                spellId: '51271',
+                count: 8,
+              },
+              {
+                spellId: '46585',
+                count: 4,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 313055,
+                uses: 32,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12197,
+                uses: 1,
+              },
+            ],
+          },
           {
             url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=13',
             startedAt: '2026-10-07T01:32:09.837Z',
@@ -7071,45 +8157,41 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 319478,
             itemLevelBracket: 328,
-            heroTree: 33,
+            gearItemLevel: 328.9375,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '194913',
-                count: 2,
+                spellId: '49576',
+                count: 6,
               },
               {
-                spellId: '212552',
-                count: 2,
+                spellId: '439843',
+                count: 7,
               },
               {
-                spellId: '48707',
-                count: 3,
-              },
-              {
-                spellId: '1297761',
+                spellId: '279302',
                 count: 4,
               },
               {
-                spellId: '46585',
-                count: 4,
-              },
-              {
-                spellId: '207230',
+                spellId: '48792',
                 count: 1,
-              },
-              {
-                spellId: '48265',
-                count: 8,
               },
               {
                 spellId: '49020',
                 count: 98,
               },
               {
-                spellId: '1249658',
-                count: 4,
+                spellId: '49143',
+                count: 89,
+              },
+              {
+                spellId: '48265',
+                count: 8,
+              },
+              {
+                spellId: '51271',
+                count: 7,
               },
               {
                 spellId: '49039',
@@ -7120,48 +8202,52 @@ export const guideManuscripts = {
                 count: 21,
               },
               {
-                spellId: '49576',
-                count: 6,
+                spellId: '48743',
+                count: 1,
               },
               {
                 spellId: '47568',
                 count: 23,
               },
               {
-                spellId: '51271',
-                count: 7,
-              },
-              {
-                spellId: '48743',
-                count: 1,
-              },
-              {
-                spellId: '279302',
+                spellId: '1265384',
                 count: 4,
-              },
-              {
-                spellId: '439843',
-                count: 7,
-              },
-              {
-                spellId: '48792',
-                count: 1,
               },
               {
                 spellId: '49184',
                 count: 47,
               },
               {
-                spellId: '49143',
-                count: 89,
+                spellId: '46585',
+                count: 4,
+              },
+              {
+                spellId: '1249658',
+                count: 4,
+              },
+              {
+                spellId: '207230',
+                count: 1,
+              },
+              {
+                spellId: '194913',
+                count: 2,
+              },
+              {
+                spellId: '212552',
+                count: 2,
               },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
-                spellId: '1265384',
+                spellId: '1297761',
                 count: 4,
+              },
+              {
+                spellId: '48707',
+                count: 3,
               },
             ],
             externalBuffs: [
@@ -7177,97 +8263,284 @@ export const guideManuscripts = {
               },
             ],
           },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.011776805884800096,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/HB6fNynjMCrw1GXJ#fight=4&source=24',
-            startedAt: '2026-10-07T01:28:06.118Z',
+            url: 'https://www.warcraftlogs.com/reports/14Rt8xzNM6CLgD7k#fight=6&source=31',
+            startedAt: '2026-10-08T01:59:45.222Z',
             region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
+            encounterId: 12993,
+            difficulty: 10,
             kill: true,
-            durationMs: 319239,
-            itemLevelBracket: 328,
-            heroTree: 33,
+            durationMs: 1776373,
+            itemLevelBracket: 20,
+            gearItemLevel: 326.9375,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
             casts: [
               {
-                spellId: '47568',
-                count: 24,
-              },
-              {
-                spellId: '439843',
-                count: 7,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '49020',
-                count: 125,
-              },
-              {
-                spellId: '279302',
-                count: 4,
-              },
-              {
-                spellId: '46585',
-                count: 4,
-              },
-              {
-                spellId: '49184',
-                count: 51,
-              },
-              {
-                spellId: '1265384',
-                count: 4,
+                spellId: '48792',
+                count: 8,
               },
               {
                 spellId: '441424',
-                count: 21,
+                count: 106,
               },
               {
-                spellId: '49576',
+                spellId: '221562',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
                 count: 6,
               },
               {
-                spellId: '51271',
-                count: 7,
+                spellId: '49184',
+                count: 265,
               },
               {
-                spellId: '1249658',
-                count: 4,
+                spellId: '207230',
+                count: 291,
+              },
+              {
+                spellId: '194913',
+                count: 225,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '61999',
+                count: 1,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '49020',
+                count: 315,
+              },
+              {
+                spellId: '279302',
+                count: 18,
               },
               {
                 spellId: '49143',
-                count: 86,
+                count: 227,
               },
               {
-                spellId: '274738',
-                count: 3,
+                spellId: '439843',
+                count: 36,
               },
               {
-                spellId: '48265',
-                count: 6,
+                spellId: '48743',
+                count: 7,
               },
               {
-                spellId: '48707',
-                count: 6,
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '49576',
+                count: 12,
               },
               {
                 spellId: '1297761',
-                count: 4,
+                count: 18,
+              },
+              {
+                spellId: '51271',
+                count: 36,
+              },
+              {
+                spellId: '47568',
+                count: 116,
+              },
+              {
+                spellId: '1265384',
+                count: 18,
+              },
+              {
+                spellId: '207167',
+                count: 1,
+              },
+              {
+                spellId: '48707',
+                count: 26,
+              },
+              {
+                spellId: '47528',
+                count: 29,
               },
               {
                 spellId: '51052',
+                count: 2,
+              },
+              {
+                spellId: '1249658',
+                count: 18,
+              },
+              {
+                spellId: '48265',
+                count: 32,
+              },
+              {
+                spellId: '49998',
                 count: 1,
               },
             ],
             externalBuffs: [],
           },
+          {
+            url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=152',
+            startedAt: '2026-10-07T21:49:22.135Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1755453,
+            itemLevelBracket: 20,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '48265',
+                count: 19,
+              },
+              {
+                spellId: '49576',
+                count: 15,
+              },
+              {
+                spellId: '48743',
+                count: 5,
+              },
+              {
+                spellId: '441424',
+                count: 96,
+              },
+              {
+                spellId: '207167',
+                count: 3,
+              },
+              {
+                spellId: '51271',
+                count: 32,
+              },
+              {
+                spellId: '49039',
+                count: 6,
+              },
+              {
+                spellId: '49143',
+                count: 226,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '439843',
+                count: 32,
+              },
+              {
+                spellId: '48792',
+                count: 4,
+              },
+              {
+                spellId: '1249658',
+                count: 16,
+              },
+              {
+                spellId: '49998',
+                count: 2,
+              },
+              {
+                spellId: '51052',
+                count: 2,
+              },
+              {
+                spellId: '47568',
+                count: 111,
+              },
+              {
+                spellId: '48707',
+                count: 24,
+              },
+              {
+                spellId: '49020',
+                count: 273,
+              },
+              {
+                spellId: '47528',
+                count: 35,
+              },
+              {
+                spellId: '279302',
+                count: 16,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '207230',
+                count: 301,
+              },
+              {
+                spellId: '194913',
+                count: 170,
+              },
+              {
+                spellId: '1265384',
+                count: 16,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '49184',
+                count: 248,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+            ],
+            externalBuffs: [],
+          },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -7278,7 +8551,7 @@ export const guideManuscripts = {
     defaultHeroBranchIndex: 1,
     graphCenterSkillId: '1247378',
     summary: '부정 죽음의 기사는 질병을 유지하면서 룬으로 구울을 준비하고, 부패로 학자와 군주를 불러 피해를 몰아넣습니다. 12.1에서는 사자의 군대가 90초, 어둠의 변신이 45초 주기로 돌아가며 영혼 수확자는 하급 구울 준비 중첩을 씁니다. 9월 23~24일 역병내림·산레인 상향과 버그 수정 뒤 레이드·쐐기 모두 산레인·역병내림 빌드를 먼저 비교합니다. 종말의 기수 하수인 빌드도 유효한 대안입니다. 산레인은 흡혈의 일격으로 역병을 연장·분출하고, 역병내림을 골랐다면 남은 질병을 소비한 뒤 부패로 다시 적용합니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '2026-09-27에 Blizzard 12.1 한국어 원문과 9월 23~24일 긴급 수정, Wowhead 한국어 실시간 툴팁, 9월 24일 Method·9월 23일 Icy Veins 변경 기록을 대조했습니다. Icy Veins 특성 페이지에는 예전 종말의 기수 레이드 추천 문장과 산레인 추천 선택기·변경 기록이 함께 남아 있어 전자를 현행 확정 추천으로 쓰지 않습니다. Wowhead·Icy Veins·Method의 현재 부정 저자는 Taeznak으로 같아 독립 검증 세 건으로 세지 않습니다. Method의 사자의 군대 설명처럼 현재 한국어 툴팁과 충돌하는 세부 수치는 채택하지 않았습니다. 9월 23일 공식 조정은 고초 65%/100%, 역병내림 200%, 산레인 슬픔의 고통 75%·핏빛 전율 공포의 역병 20%·광적인 피의 갈증 죽음의 고리와 죽음의 일격 중첩당 5%이며, 24일 역병내림 시간 경과 피해 감소 버그 수정이 뒤따랐습니다. 최신 Archon/WCL 레이드·쐐기 집계와 Acherus 비공개 대화는 확보하지 않았으므로 빌드 선택은 공개 운용 가이드의 첫 비교이며 상위 로그 전수 검증이 아닙니다. 2026-10-03에 최신 SimC midnight SHA 6c50c3c7b96c81bbb8e7abefbd817ecf31519592의 12.1.0.69933 트리와 APL을 다시 읽었습니다. 일반 3대상·금단의 지식 중 4대상 광역 소비 조건은 이 버전에도 유지됩니다. 9월 24일 Method의 영혼 수확자·부패 충전 설명에는 정본 툴팁과 다른 문장이 남아 있으므로 충전 소비 설명을 복사하지 않습니다. 오늘 조회한 Icy Veins 특성 페이지에도 기수 추천 본문과 산레인 선택기가 같이 있어 저자 추천을 확정 사용률로 바꾸지 않습니다. 미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
     sources: [
       {
@@ -7450,18 +8723,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 142,078건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=19',
-        tier: 'S',
-        updated: '2026-10-08',
-        note: '2026-10-08T02:06:11.649Z · 장비 구간 333 · 287.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
-      },
-      {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:54:08.933Z · 장비 구간 328 · 331.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:54:08.933Z · 장비 평균 328.81 · 실제 331.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/8vQB7hKd3CAVJ9yp#fight=1&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:01:45.373Z · 장비 평균 329.56 · 실제 339.9초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Fn43q7BQXA1ghCWT#fight=16&source=486',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T08:16:11.684Z · 장비 평균 329.38 · 실제 1824.1초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/9KWD8VxTprhBZvJa#fight=1&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:22:01.199Z · 장비 평균 329.38 · 실제 1919.5초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -7472,7 +8759,7 @@ export const guideManuscripts = {
       '할퀴는 어둠은 현재 패시브 연쇄 효과입니다. 죽음과 부패가 스컬지의 일격이나 전염병을 광역으로 바꾸는 필수 바닥이라는 설명은 현재 부정에 맞지 않습니다.',
       '시즌 2 세트는 소환수 주문 교체와 해당 주문의 마격 피해를 봅니다. 모든 공격에 130%를 더하거나 세트 주문을 플레이어 버튼처럼 넣지 않습니다.',
       '미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
-      '10월 8일 죽음의 기사 부정의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간·전투 길이가 일치하는 비교는 확보하지 못했습니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 죽음의 기사 부정의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Den of Nalorakk 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.75/0.00, 실제 전투 길이 차이는 2.45%/4.97%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '추천 특성은 2026-09-27에 확인한 공개 자료 범위입니다. 최신 WCL 비교와 개인 장비 시뮬레이션을 완료한 빌드별 DPS 순위가 아닙니다.',
@@ -7481,7 +8768,7 @@ export const guideManuscripts = {
       '이번 확인은 10월 2일까지 공식 긴급 수정, 공개 작성자 운용과 12.1.0.69933 모델의 지정 조건을 대조한 부분 검수입니다. 특성 견본의 가져오기·포인트·연결은 10월 8일 확인했습니다. 모든 공용·영웅 특성의 효과와 조정 후 동일 조건 로그 검수는 남아 있습니다.',
       '미국 10월 6일 적용 공지에서 역병내림은 남은 역병 피해의 100%를 소비하도록 200%에서 변경됐습니다. 증강 동반 역병 분출 피해 귀속 오류도 수정됐습니다. 10월 8일 조회한 한국어 툴팁은 아직 200%이므로 설명 원문과 실제 조정 근거의 차이를 구별합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     playstyle: [
       {
@@ -8372,93 +9659,12 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: false,
-        durationDifference: null,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.75,
+        durationDifference: 0.02454846880985234,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
-          {
-            url: 'https://www.warcraftlogs.com/reports/WmzGyVPL2vgC4fZb#fight=10&source=19',
-            startedAt: '2026-10-08T02:06:11.649Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 286970,
-            itemLevelBracket: 333,
-            heroTree: null,
-            augmentationCount: 0,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '55090',
-                count: 39,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '48265',
-                count: 1,
-              },
-              {
-                spellId: '48707',
-                count: 4,
-              },
-              {
-                spellId: '1247378',
-                count: 19,
-              },
-              {
-                spellId: '433895',
-                count: 58,
-              },
-              {
-                spellId: '458128',
-                count: 16,
-              },
-              {
-                spellId: '47541',
-                count: 52,
-              },
-              {
-                spellId: '77575',
-                count: 1,
-              },
-              {
-                spellId: '207317',
-                count: 5,
-              },
-              {
-                spellId: '1233448',
-                count: 7,
-              },
-              {
-                spellId: '343294',
-                count: 11,
-              },
-              {
-                spellId: '1236994',
-                count: 1,
-              },
-              {
-                spellId: '85948',
-                count: 16,
-              },
-              {
-                spellId: '42650',
-                count: 4,
-              },
-              {
-                spellId: '1271967',
-                count: 7,
-              },
-              {
-                spellId: '1242174',
-                count: 41,
-              },
-            ],
-            externalBuffs: [],
-          },
           {
             url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41',
             startedAt: '2026-10-07T01:54:08.933Z',
@@ -8468,72 +9674,28 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 331555,
             itemLevelBracket: 328,
+            gearItemLevel: 328.8125,
             heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '47541',
-                count: 47,
-              },
-              {
-                spellId: '42650',
-                count: 4,
-              },
-              {
-                spellId: '48707',
-                count: 7,
-              },
-              {
-                spellId: '1233448',
-                count: 8,
-              },
-              {
-                spellId: '55090',
-                count: 46,
-              },
-              {
-                spellId: '458128',
-                count: 18,
-              },
-              {
-                spellId: '1271967',
-                count: 8,
-              },
-              {
-                spellId: '1247378',
-                count: 23,
+                spellId: '1236994',
+                count: 2,
               },
               {
                 spellId: '207317',
                 count: 18,
               },
               {
-                spellId: '1242174',
-                count: 39,
-              },
-              {
-                spellId: '343294',
-                count: 13,
-              },
-              {
-                spellId: '49039',
-                count: 2,
+                spellId: '1233448',
+                count: 8,
               },
               {
                 spellId: '85948',
                 count: 18,
               },
               {
-                spellId: '48792',
-                count: 2,
-              },
-              {
-                spellId: '383269',
+                spellId: '48707',
                 count: 7,
               },
               {
@@ -8541,23 +9703,518 @@ export const guideManuscripts = {
                 count: 4,
               },
               {
-                spellId: '1236994',
-                count: 2,
+                spellId: '343294',
+                count: 13,
+              },
+              {
+                spellId: '383269',
+                count: 7,
+              },
+              {
+                spellId: '47541',
+                count: 47,
+              },
+              {
+                spellId: '1271967',
+                count: 8,
+              },
+              {
+                spellId: '433895',
+                count: 75,
+              },
+              {
+                spellId: '42650',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
               },
               {
                 spellId: '48743',
                 count: 1,
               },
               {
+                spellId: '49039',
+                count: 2,
+              },
+              {
+                spellId: '1242174',
+                count: 39,
+              },
+              {
+                spellId: '458128',
+                count: 18,
+              },
+              {
+                spellId: '55090',
+                count: 46,
+              },
+              {
+                spellId: '1247378',
+                count: 23,
+              },
+              {
+                spellId: '48792',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/8vQB7hKd3CAVJ9yp#fight=1&source=2',
+            startedAt: '2026-10-08T02:01:45.373Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 339899,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '383269',
+                count: 1,
+              },
+              {
+                spellId: '1242174',
+                count: 36,
+              },
+              {
+                spellId: '1271967',
+                count: 8,
+              },
+              {
+                spellId: '77575',
+                count: 1,
+              },
+              {
+                spellId: '48707',
+                count: 3,
+              },
+              {
+                spellId: '49039',
+                count: 4,
+              },
+              {
                 spellId: '433895',
-                count: 75,
+                count: 80,
+              },
+              {
+                spellId: '207317',
+                count: 10,
+              },
+              {
+                spellId: '343294',
+                count: 13,
+              },
+              {
+                spellId: '49576',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '47541',
+                count: 52,
+              },
+              {
+                spellId: '1233448',
+                count: 8,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '55090',
+                count: 53,
+              },
+              {
+                spellId: '42650',
+                count: 4,
+              },
+              {
+                spellId: '1247378',
+                count: 25,
+              },
+              {
+                spellId: '48265',
+                count: 5,
+              },
+              {
+                spellId: '85948',
+                count: 19,
+              },
+              {
+                spellId: '48792',
+                count: 1,
+              },
+              {
+                spellId: '458128',
+                count: 16,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.04971086220369888,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/Fn43q7BQXA1ghCWT#fight=16&source=486',
+            startedAt: '2026-10-07T08:16:11.684Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1824080,
+            itemLevelBracket: 20,
+            gearItemLevel: 329.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1235841',
+                count: 5,
+              },
+              {
+                spellId: '1261781',
+                count: 6,
+              },
+              {
+                spellId: '45524',
+                count: 2,
+              },
+              {
+                spellId: '433895',
+                count: 315,
+              },
+              {
+                spellId: '55090',
+                count: 190,
+              },
+              {
+                spellId: '1271967',
+                count: 34,
+              },
+              {
+                spellId: '51052',
+                count: 4,
+              },
+              {
+                spellId: '1242174',
+                count: 98,
+              },
+              {
+                spellId: '61999',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '458128',
+                count: 82,
+              },
+              {
+                spellId: '77575',
+                count: 9,
+              },
+              {
+                spellId: '42650',
+                count: 18,
+              },
+              {
+                spellId: '85948',
+                count: 90,
+              },
+              {
+                spellId: '49039',
+                count: 18,
+              },
+              {
+                spellId: '1252825',
+                count: 3,
+              },
+              {
+                spellId: '49998',
+                count: 3,
+              },
+              {
+                spellId: '1266193',
+                count: 4,
+              },
+              {
+                spellId: '1247378',
+                count: 131,
+              },
+              {
+                spellId: '1233448',
+                count: 34,
+              },
+              {
+                spellId: '48792',
+                count: 6,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '47528',
+                count: 29,
+              },
+              {
+                spellId: '48707',
+                count: 19,
+              },
+              {
+                spellId: '207167',
+                count: 9,
+              },
+              {
+                spellId: '49576',
+                count: 16,
+              },
+              {
+                spellId: '343294',
+                count: 69,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '47541',
+                count: 222,
+              },
+              {
+                spellId: '43265',
+                count: 40,
+              },
+              {
+                spellId: '48265',
+                count: 21,
+              },
+              {
+                spellId: '1233904',
+                count: 6,
+              },
+              {
+                spellId: '383269',
+                count: 97,
+              },
+              {
+                spellId: '48743',
+                count: 4,
+              },
+              {
+                spellId: '207317',
+                count: 106,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/9KWD8VxTprhBZvJa#fight=1&source=5',
+            startedAt: '2026-10-08T00:22:01.199Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1919500,
+            itemLevelBracket: 20,
+            gearItemLevel: 329.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1271538',
+                count: 2,
+              },
+              {
+                spellId: '47541',
+                count: 194,
+              },
+              {
+                spellId: '212552',
+                count: 4,
+              },
+              {
+                spellId: '48792',
+                count: 9,
+              },
+              {
+                spellId: '77575',
+                count: 18,
+              },
+              {
+                spellId: '55090',
+                count: 183,
+              },
+              {
+                spellId: '1261781',
+                count: 7,
+              },
+              {
+                spellId: '49998',
+                count: 9,
+              },
+              {
+                spellId: '1235841',
+                count: 5,
+              },
+              {
+                spellId: '48265',
+                count: 17,
+              },
+              {
+                spellId: '47528',
+                count: 31,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '61999',
+                count: 1,
+              },
+              {
+                spellId: '49576',
+                count: 3,
+              },
+              {
+                spellId: '42650',
+                count: 18,
+              },
+              {
+                spellId: '207317',
+                count: 95,
+              },
+              {
+                spellId: '343294',
+                count: 58,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '1266193',
+                count: 5,
+              },
+              {
+                spellId: '458128',
+                count: 83,
+              },
+              {
+                spellId: '85948',
+                count: 90,
+              },
+              {
+                spellId: '48707',
+                count: 19,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '43265',
+                count: 34,
+              },
+              {
+                spellId: '1242174',
+                count: 107,
+              },
+              {
+                spellId: '383269',
+                count: 99,
+              },
+              {
+                spellId: '1252825',
+                count: 7,
+              },
+              {
+                spellId: '48743',
+                count: 13,
+              },
+              {
+                spellId: '160331',
+                count: 1,
+              },
+              {
+                spellId: '51052',
+                count: 2,
+              },
+              {
+                spellId: '221562',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '49039',
+                count: 3,
+              },
+              {
+                spellId: '1233448',
+                count: 36,
+              },
+              {
+                spellId: '1247378',
+                count: 89,
+              },
+              {
+                spellId: '433895',
+                count: 307,
+              },
+              {
+                spellId: '1233904',
+                count: 14,
+              },
+              {
+                spellId: '1239490',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -8568,7 +10225,7 @@ export const guideManuscripts = {
     status: '12.1 심화 가이드',
     graphCenterSkillId: '77758',
     summary: '12.1 수호는 난타와 짓이기기를 쉬지 않고 돌려 방어에 쓸 분노를 만드는 것이 출발점입니다. 엘룬의 대행자라고 달빛섬광만 반복하지 마세요. 삭망월은 이제 달 광선을 고정 20초 줄이며, 정점과 시즌 2 세트는 생성기를 제때 사용하는 보상을 크게 늘립니다. 무쇠가죽으로 다음 평타를 준비하면서 무료 공격 발동을 활용하고, 영혼이 나타나면 초기화된 생성기로 다시 분노를 받습니다. 발톱의 드루이드는 찢어발기기의 피해 감소와 방어도 보정을 살리는 별도 운용으로 설명합니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Blizzard 12.1 수호 개편과 9월 9일 정점 조건 수정까지 확인했습니다. 스킬명과 아이콘은 라이브 Wowhead 한국어 주문 ID로 확인했습니다. 운용은 Pumps의 Wowhead·Icy Veins와 Tactyks의 Method를 교차 검토했습니다. Wowhead와 Icy Veins는 같은 작성자의 자료가 포함되므로 완전히 독립적인 두 근거로 세지 않습니다. 일부 가이드의 옛 삭망월 설명, 다른 전문화로 연결되는 세나리우스의 꿈 링크, 야생 수호자 특성 ID를 실제 버튼처럼 쓴 예시는 라이브 효과와 대조해 제외했습니다. 분노를 다스리는 자는 한국어와 영문 트리거가 다르며, 현재 SimulationCraft의 maul_base_t 구현도 후려갈기기 계열에서 증가 확률을 적용합니다. 이를 게임 서버를 직접 실측한 결과로 주장하지는 않습니다. 6월 Archon 채택률은 현재 추천의 근거에서 제거했습니다.',
     playstyle: [
       {
@@ -9302,18 +10959,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 215,600건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=106',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=86',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:03:46.235Z · 장비 구간 328 · 415.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:38:13.848Z · 장비 평균 329.19 · 실제 319.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=19',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QTFhBr7GZqj89CMR#fight=3&source=55',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T10:33:24.413Z · 장비 구간 328 · 415.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:05:31.918Z · 장비 평균 328.75 · 실제 306.3초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RATFV98mH3GaWXrw#fight=8&source=50',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:13:07.635Z · 장비 평균 329.81 · 실제 1762.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NCXQkKxqPaf3wJ7F#fight=10&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T08:47:22.715Z · 장비 평균 330.19 · 실제 1758.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -9325,7 +10996,7 @@ export const guideManuscripts = {
       '수호의 찢어발기기 실제 시전은 441605입니다. 공유 특성 441583과 야성의 시전 주문을 같은 버튼으로 취급하지 않습니다.',
       '엘룬의 대행자는 달 광선과 비전 피해 운용, 발톱의 드루이드는 찢어발기기의 발동 소비와 대상 피해 감소로 구분합니다. 두 영웅 특성의 채택률은 이번에 확보한 통계가 아닙니다.',
       'Blizzard 9월 9일 핫픽스는 야생 수호자의 생성기 피해 증가에 마지막 정점 노드가 필요하다는 조건을 바로잡았습니다. 이전 로그와 현재의 정점 투자량을 같게 취급하지 않습니다.',
-      '10월 8일 드루이드 수호의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 드루이드 수호의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.44/0.38, 실제 전투 길이 차이는 4.16%/0.22%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '추천은 현재 공개 가이드와 주문 효과에 근거합니다. 최신 상위 100명 로그, 장비별 심크, 특정 보스의 생존 한계를 검증했다는 뜻은 아닙니다.',
@@ -9334,7 +11005,7 @@ export const guideManuscripts = {
       '아래 오프닝은 선택 조건을 붙인 실제 버튼 흐름입니다. 생존·차단은 순서표를 끝낼 때까지 기다리지 않으며, 없는 특성과 발동을 억지로 시전하지 않습니다.',
       '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -9860,225 +11531,507 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0004809044851556808,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
+        durationDifference: 0.041552589996714594,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=106',
-            startedAt: '2026-10-08T01:03:46.235Z',
+            url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=86',
+            startedAt: '2026-10-07T00:38:13.848Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 415683,
-            itemLevelBracket: 328,
-            heroTree: 24,
+            durationMs: 319595,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.1875,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
-                spellId: '29166',
-                count: 2,
-              },
-              {
-                spellId: '33917',
-                count: 124,
-              },
-              {
-                spellId: '22842',
-                count: 14,
-              },
-              {
-                spellId: '77761',
-                count: 2,
-              },
-              {
-                spellId: '61336',
-                count: 2,
-              },
-              {
-                spellId: '16979',
-                count: 6,
-              },
-              {
-                spellId: '20484',
-                count: 1,
-              },
-              {
-                spellId: '768',
-                count: 4,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '22812',
-                count: 3,
-              },
-              {
                 spellId: '204066',
-                count: 9,
-              },
-              {
-                spellId: '192081',
-                count: 105,
+                count: 8,
               },
               {
                 spellId: '6795',
-                count: 10,
+                count: 6,
               },
               {
                 spellId: '77758',
-                count: 82,
+                count: 72,
               },
               {
                 spellId: '6807',
-                count: 5,
+                count: 23,
               },
               {
-                spellId: '5225',
+                spellId: '33917',
+                count: 111,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '22842',
                 count: 4,
               },
               {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '1252871',
-                count: 11,
-              },
-              {
-                spellId: '102558',
-                count: 4,
+                spellId: '61336',
+                count: 3,
               },
               {
                 spellId: '1269658',
-                count: 4,
+                count: 3,
               },
               {
-                spellId: '1126',
+                spellId: '102558',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '1252871',
+                count: 10,
+              },
+              {
+                spellId: '192081',
+                count: 107,
+              },
+              {
+                spellId: '1822',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '77761',
+                count: 1,
+              },
+              {
+                spellId: '106839',
+                count: 2,
+              },
+              {
+                spellId: '29166',
                 count: 1,
               },
               {
                 spellId: '213771',
-                count: 57,
+                count: 23,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '22812',
+                count: 6,
               },
             ],
             externalBuffs: [],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=19',
-            startedAt: '2026-10-07T10:33:24.413Z',
+            url: 'https://www.warcraftlogs.com/reports/QTFhBr7GZqj89CMR#fight=3&source=55',
+            startedAt: '2026-10-07T02:05:31.918Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 415883,
+            durationMs: 306315,
             itemLevelBracket: 328,
-            heroTree: 24,
+            gearItemLevel: 328.75,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '49376',
+                spellId: '33917',
+                count: 92,
+              },
+              {
+                spellId: '22842',
+                count: 4,
+              },
+              {
+                spellId: '26297',
+                count: 2,
+              },
+              {
+                spellId: '102793',
                 count: 1,
               },
               {
-                spellId: '192081',
-                count: 112,
+                spellId: '1236616',
+                count: 1,
               },
               {
-                spellId: '61336',
+                spellId: '22812',
+                count: 4,
+              },
+              {
+                spellId: '1850',
+                count: 1,
+              },
+              {
+                spellId: '77758',
+                count: 91,
+              },
+              {
+                spellId: '192081',
+                count: 75,
+              },
+              {
+                spellId: '1822',
                 count: 3,
               },
               {
-                spellId: '33917',
-                count: 46,
+                spellId: '6807',
+                count: 11,
               },
               {
-                spellId: '6795',
-                count: 8,
+                spellId: '1252871',
+                count: 9,
+              },
+              {
+                spellId: '102558',
+                count: 3,
               },
               {
                 spellId: '20484',
                 count: 1,
               },
               {
-                spellId: '1822',
-                count: 1,
-              },
-              {
-                spellId: '8921',
-                count: 124,
-              },
-              {
-                spellId: '22568',
-                count: 1,
-              },
-              {
                 spellId: '204066',
-                count: 10,
+                count: 8,
               },
               {
-                spellId: '1269658',
-                count: 4,
-              },
-              {
-                spellId: '77761',
-                count: 3,
+                spellId: '6795',
+                count: 6,
               },
               {
                 spellId: '5487',
                 count: 1,
               },
               {
-                spellId: '22812',
-                count: 6,
-              },
-              {
-                spellId: '22842',
-                count: 5,
-              },
-              {
-                spellId: '61391',
-                count: 5,
-              },
-              {
-                spellId: '102793',
+                spellId: '1297761',
                 count: 3,
               },
               {
-                spellId: '77758',
-                count: 113,
+                spellId: '1269658',
+                count: 3,
               },
               {
-                spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '6807',
-                count: 5,
-              },
-              {
-                spellId: '1295132',
-                count: 1,
-              },
-              {
-                spellId: '102558',
-                count: 4,
-              },
-              {
-                spellId: '16979',
-                count: 5,
+                spellId: '213771',
+                count: 25,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.375,
+        durationDifference: 0.002227430528960852,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/RATFV98mH3GaWXrw#fight=8&source=50',
+            startedAt: '2026-10-07T23:13:07.635Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1762569,
+            itemLevelBracket: 20,
+            gearItemLevel: 329.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '768',
+                count: 7,
+              },
+              {
+                spellId: '204066',
+                count: 37,
+              },
+              {
+                spellId: '1295132',
+                count: 6,
+              },
+              {
+                spellId: '6807',
+                count: 17,
+              },
+              {
+                spellId: '1269658',
+                count: 16,
+              },
+              {
+                spellId: '8921',
+                count: 449,
+              },
+              {
+                spellId: '77758',
+                count: 477,
+              },
+              {
+                spellId: '192081',
+                count: 809,
+              },
+              {
+                spellId: '22812',
+                count: 30,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '106839',
+                count: 29,
+              },
+              {
+                spellId: '1309983',
+                count: 2,
+              },
+              {
+                spellId: '6795',
+                count: 15,
+              },
+              {
+                spellId: '16979',
+                count: 4,
+              },
+              {
+                spellId: '2782',
+                count: 7,
+              },
+              {
+                spellId: '5487',
+                count: 12,
+              },
+              {
+                spellId: '77761',
+                count: 15,
+              },
+              {
+                spellId: '102793',
+                count: 2,
+              },
+              {
+                spellId: '24858',
+                count: 5,
+              },
+              {
+                spellId: '783',
+                count: 1,
+              },
+              {
+                spellId: '22842',
+                count: 28,
+              },
+              {
+                spellId: '61391',
+                count: 3,
+              },
+              {
+                spellId: '61336',
+                count: 5,
+              },
+              {
+                spellId: '99',
+                count: 6,
+              },
+              {
+                spellId: '1850',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 14,
+              },
+              {
+                spellId: '102558',
+                count: 16,
+              },
+              {
+                spellId: '33917',
+                count: 408,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/NCXQkKxqPaf3wJ7F#fight=10&source=1',
+            startedAt: '2026-10-07T08:47:22.715Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1758643,
+            itemLevelBracket: 20,
+            gearItemLevel: 330.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '99',
+                count: 12,
+              },
+              {
+                spellId: '204066',
+                count: 33,
+              },
+              {
+                spellId: '61391',
+                count: 9,
+              },
+              {
+                spellId: '5487',
+                count: 9,
+              },
+              {
+                spellId: '6795',
+                count: 10,
+              },
+              {
+                spellId: '33917',
+                count: 362,
+              },
+              {
+                spellId: '192081',
+                count: 779,
+              },
+              {
+                spellId: '22842',
+                count: 104,
+              },
+              {
+                spellId: '16979',
+                count: 7,
+              },
+              {
+                spellId: '6807',
+                count: 16,
+              },
+              {
+                spellId: '106839',
+                count: 20,
+              },
+              {
+                spellId: '77761',
+                count: 14,
+              },
+              {
+                spellId: '1297761',
+                count: 17,
+              },
+              {
+                spellId: '2782',
+                count: 4,
+              },
+              {
+                spellId: '102558',
+                count: 16,
+              },
+              {
+                spellId: '77764',
+                count: 1,
+              },
+              {
+                spellId: '768',
+                count: 6,
+              },
+              {
+                spellId: '8921',
+                count: 424,
+              },
+              {
+                spellId: '783',
+                count: 1,
+              },
+              {
+                spellId: '77758',
+                count: 454,
+              },
+              {
+                spellId: '102417',
+                count: 1,
+              },
+              {
+                spellId: '2908',
+                count: 2,
+              },
+              {
+                spellId: '1269658',
+                count: 16,
+              },
+              {
+                spellId: '61336',
+                count: 7,
+              },
+              {
+                spellId: '102793',
+                count: 7,
+              },
+              {
+                spellId: '22812',
+                count: 38,
+              },
+              {
+                spellId: '1850',
+                count: 2,
+              },
+              {
+                spellId: '213771',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 3,
+              },
+              {
+                spellId: '1295132',
+                count: 6,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -10088,7 +12041,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '22568',
     summary: '야성은 생성기를 계속 연타하는 직업이 아닙니다. 출혈이 끊기기 전에 필요한 점수를 남기고, 무료 흉포한 이빨과 갑자기 채워진 연계 점수에 반응하는 것이 먼저입니다. 12.1에서는 정점의 호랑이의 분노 연계와 시즌 2의 광폭화 종료 후 강화까지 함께 봅니다. 발톱의 드루이드는 찢어발기기의 전방 적중과 생성기 발동, 야생추적자는 덩굴 대상의 이빨과 출혈 유지가 추가 판단입니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '12.1 PvE와 시즌 2를 기준으로 설명합니다. 9월 8일 Dreamgrove 및 9월 9일 Method 설명을 현재 툴팁·SimC 구현과 대조했습니다. 그 뒤 9월 22일 긴급 수정으로 야생추적자의 폭발하는 성장물 공격력이 15% 늘었고 침착한 관리인의 출혈 피해 증가가 10%(기존 8%)가 됐습니다(모두 PvP 제외). 10월 1일에는 날뛰는 야성이 단일 대상에게 잘못 발동될 수 있던 문제가 수정됐습니다. 세 항목의 한국어 이름과 수치는 2026-10-03 ko.wowhead 주문 페이지와 한국어 긴급 수정 공지로 다시 확인했습니다. 10월 6일 예정 조정의 야성 항목은 PvP뿐이라 넣지 않았습니다. Wowhead와 Icy Veins의 일부 시작 순서나 특성 설명은 작성 시점이 달라 그대로 합치지 않았습니다. 6월의 영웅 특성 사용률은 현재 추천의 근거로 쓰지 않으며, 최신 로그 집계를 얻지 못한 부분은 채택률이나 예상 DPS를 제시하지 않습니다.',
     playstyle: [
       {
@@ -10229,18 +12182,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 37,804건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=4',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/4FT8zHDNJwWXadCV#fight=2&source=223',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:25:01.807Z · 장비 구간 328 · 437.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T04:12:31.247Z · 장비 평균 328.75 · 실제 419.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/AQ469cVGvhx7pkgy#fight=20&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hR3FrL87AqpjQkBa#fight=17&source=5',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:13:54.020Z · 장비 구간 328 · 437.9초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:18:49.162Z · 장비 평균 328.75 · 실제 410.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FnmZCK9x2yHRWw3k#fight=1&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T00:39:00.794Z · 장비 평균 327.75 · 실제 1742.7초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/27TBKmJWRaZkDvwf#fight=22&source=787',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:12:53.411Z · 장비 평균 327.31 · 실제 1734.4초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -10252,7 +12219,7 @@ export const guideManuscripts = {
       '최신 레이드·쐐기 로그 집계는 이번에 확보하지 못했습니다. 영웅별 실제 사용률과 특정 장비 조합의 예상 DPS를 계산한 분석은 아닙니다.',
       '9월 22일 긴급 수정은 폭발하는 성장물 공격력 15% 증가와 침착한 관리인 출혈 피해 10%(기존 8%)를 적용했습니다. 둘 다 야생추적자 노드이며 발톱의 드루이드에는 해당하지 않습니다.',
       '10월 1일 긴급 수정은 날뛰는 야성이 단일 대상에게 잘못 발동될 수 있던 문제를 고쳤습니다. 현재 툴팁 문구는 흉포한 이빨 사용 시 주위의 모든 적에게 피해를 준다는 내용 그대로입니다.',
-      '10월 8일 드루이드 야성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 드루이드 야성의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Den of Nalorakk 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.00/0.44, 실제 전투 길이 차이는 2.15%/0.47%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '도려내기 API의 점수별 지속시간은 조건식이 잘못 펼쳐져 짧게 표시되는 경우가 있습니다. 그 숫자를 실제 5점 출혈 시간으로 쓰지 말고 특성과 전투 중 표시 시간을 함께 확인하세요.',
@@ -10262,7 +12229,7 @@ export const guideManuscripts = {
       '아래 로그 점검 기준은 비교 방법입니다. 실제 전투 링크와 이벤트를 새로 분석하지 않은 상태에서 특정 사용자의 손실량이나 점수 원인을 수치로 단정하지 않습니다.',
       '9월 22일 이전 야생추적자 로그와 10월 1일 이전 단일 대상 로그는 현재 수치와 바로 비교하지 않습니다. 앞쪽은 덩굴 폭발·출혈 보정이 낮았고, 뒤쪽은 날뛰는 야성 오발동 피해가 섞였을 수 있습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -11299,223 +13266,648 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.0017744992806083997,
-        matchedAugmentation: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.021501560155300956,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=4',
-            startedAt: '2026-10-08T02:25:01.807Z',
+            url: 'https://www.warcraftlogs.com/reports/4FT8zHDNJwWXadCV#fight=2&source=223',
+            startedAt: '2026-10-08T04:12:31.247Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 437093,
+            durationMs: 419830,
             itemLevelBracket: 328,
-            heroTree: 21,
+            gearItemLevel: 328.75,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1079',
-                count: 20,
-              },
-              {
-                spellId: '391528',
-                count: 4,
-              },
-              {
-                spellId: '22842',
-                count: 3,
-              },
-              {
-                spellId: '5217',
-                count: 13,
-              },
-              {
-                spellId: '441591',
-                count: 35,
-              },
-              {
-                spellId: '22812',
-                count: 5,
-              },
-              {
-                spellId: '29166',
-                count: 2,
-              },
-              {
-                spellId: '49376',
-                count: 5,
-              },
-              {
-                spellId: '106785',
-                count: 27,
-              },
-              {
-                spellId: '274837',
-                count: 13,
-              },
-              {
-                spellId: '1126',
-                count: 1,
-              },
-              {
-                spellId: '61336',
-                count: 1,
+                spellId: '1822',
+                count: 34,
               },
               {
                 spellId: '106951',
                 count: 4,
               },
               {
-                spellId: '22568',
-                count: 43,
-              },
-              {
-                spellId: '285381',
-                count: 15,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '5221',
-                count: 107,
-              },
-              {
-                spellId: '102793',
-                count: 1,
-              },
-              {
-                spellId: '768',
-                count: 1,
-              },
-              {
-                spellId: '1822',
-                count: 46,
-              },
-              {
-                spellId: '8936',
-                count: 17,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '77764',
-                count: 2,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/AQ469cVGvhx7pkgy#fight=20&source=7',
-            startedAt: '2026-10-08T02:13:54.020Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 437870,
-            itemLevelBracket: 328,
-            heroTree: 22,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '61391',
-                count: 3,
-              },
-              {
                 spellId: '22812',
                 count: 5,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '61336',
-                count: 2,
-              },
-              {
-                spellId: '1822',
-                count: 38,
-              },
-              {
-                spellId: '22568',
-                count: 98,
-              },
-              {
-                spellId: '1079',
-                count: 19,
               },
               {
                 spellId: '5217',
                 count: 14,
               },
               {
-                spellId: '106785',
-                count: 60,
+                spellId: '49376',
+                count: 4,
               },
               {
-                spellId: '1850',
-                count: 2,
-              },
-              {
-                spellId: '5221',
-                count: 100,
-              },
-              {
-                spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '102543',
-                count: 5,
-              },
-              {
-                spellId: '285381',
-                count: 14,
-              },
-              {
-                spellId: '102793',
+                spellId: '61336',
                 count: 1,
-              },
-              {
-                spellId: '26297',
-                count: 3,
-              },
-              {
-                spellId: '1234768',
-                count: 2,
               },
               {
                 spellId: '274837',
                 count: 13,
               },
               {
-                spellId: '49376',
-                count: 5,
+                spellId: '22568',
+                count: 87,
+              },
+              {
+                spellId: '106785',
+                count: 34,
+              },
+              {
+                spellId: '1850',
+                count: 3,
+              },
+              {
+                spellId: '58984',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1079',
+                count: 19,
+              },
+              {
+                spellId: '1126',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '106839',
+                count: 1,
+              },
+              {
+                spellId: '5221',
+                count: 132,
+              },
+              {
+                spellId: '391528',
+                count: 4,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '285381',
+                count: 15,
+              },
+              {
+                spellId: '8936',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/hR3FrL87AqpjQkBa#fight=17&source=5',
+            startedAt: '2026-10-07T01:18:49.162Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 410803,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '274837',
+                count: 12,
+              },
+              {
+                spellId: '106785',
+                count: 41,
+              },
+              {
+                spellId: '1822',
+                count: 48,
+              },
+              {
+                spellId: '61391',
+                count: 2,
+              },
+              {
+                spellId: '8936',
+                count: 28,
+              },
+              {
+                spellId: '106951',
+                count: 4,
+              },
+              {
+                spellId: '1079',
+                count: 16,
+              },
+              {
+                spellId: '22568',
+                count: 80,
+              },
+              {
+                spellId: '285381',
+                count: 22,
+              },
+              {
+                spellId: '22812',
+                count: 3,
+              },
+              {
+                spellId: '768',
+                count: 3,
+              },
+              {
+                spellId: '5221',
+                count: 86,
+              },
+              {
+                spellId: '5217',
+                count: 13,
+              },
+              {
+                spellId: '61336',
+                count: 2,
+              },
+              {
+                spellId: '68992',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '106839',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '391528',
+                count: 4,
+              },
+              {
+                spellId: '29166',
+                count: 2,
+              },
+              {
+                spellId: '252216',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '77764',
+                count: 1,
               },
             ],
             externalBuffs: [
               {
-                spellId: '413984',
-                activeMs: 34864,
+                spellId: '10060',
+                activeMs: 45002,
                 uses: 3,
-              },
-              {
-                spellId: '395152',
-                activeMs: 399078,
-                uses: 46,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
+        durationDifference: 0.004738710987979351,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/FnmZCK9x2yHRWw3k#fight=1&source=2',
+            startedAt: '2026-10-08T00:39:00.794Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1742668,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '768',
+                count: 6,
+              },
+              {
+                spellId: '2782',
+                count: 4,
+              },
+              {
+                spellId: '1079',
+                count: 45,
+              },
+              {
+                spellId: '1233904',
+                count: 15,
+              },
+              {
+                spellId: '33917',
+                count: 2,
+              },
+              {
+                spellId: '77764',
+                count: 7,
+              },
+              {
+                spellId: '61336',
+                count: 3,
+              },
+              {
+                spellId: '1126',
+                count: 12,
+              },
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '22812',
+                count: 16,
+              },
+              {
+                spellId: '1239490',
+                count: 4,
+              },
+              {
+                spellId: '213771',
+                count: 2,
+              },
+              {
+                spellId: '1235841',
+                count: 5,
+              },
+              {
+                spellId: '102417',
+                count: 10,
+              },
+              {
+                spellId: '49376',
+                count: 6,
+              },
+              {
+                spellId: '1243807',
+                count: 26,
+              },
+              {
+                spellId: '1261781',
+                count: 7,
+              },
+              {
+                spellId: '5221',
+                count: 209,
+              },
+              {
+                spellId: '22568',
+                count: 175,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '61391',
+                count: 4,
+              },
+              {
+                spellId: '1850',
+                count: 6,
+              },
+              {
+                spellId: '106898',
+                count: 1,
+              },
+              {
+                spellId: '5487',
+                count: 14,
+              },
+              {
+                spellId: '102547',
+                count: 16,
+              },
+              {
+                spellId: '102543',
+                count: 16,
+              },
+              {
+                spellId: '1822',
+                count: 143,
+              },
+              {
+                spellId: '1271538',
+                count: 1,
+              },
+              {
+                spellId: '1252825',
+                count: 8,
+              },
+              {
+                spellId: '2908',
+                count: 7,
+              },
+              {
+                spellId: '5215',
+                count: 23,
+              },
+              {
+                spellId: '783',
+                count: 18,
+              },
+              {
+                spellId: '285381',
+                count: 90,
+              },
+              {
+                spellId: '1263768',
+                count: 65,
+              },
+              {
+                spellId: '16979',
+                count: 2,
+              },
+              {
+                spellId: '22842',
+                count: 1,
+              },
+              {
+                spellId: '106839',
+                count: 41,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '441591',
+                count: 140,
+              },
+              {
+                spellId: '1266193',
+                count: 2,
+              },
+              {
+                spellId: '106785',
+                count: 296,
+              },
+              {
+                spellId: '5217',
+                count: 44,
+              },
+              {
+                spellId: '58984',
+                count: 2,
+              },
+              {
+                spellId: '8936',
+                count: 54,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/27TBKmJWRaZkDvwf#fight=22&source=787',
+            startedAt: '2026-10-07T01:12:53.411Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1734410,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.3125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1850',
+                count: 7,
+              },
+              {
+                spellId: '49376',
+                count: 16,
+              },
+              {
+                spellId: '441591',
+                count: 103,
+              },
+              {
+                spellId: '22812',
+                count: 21,
+              },
+              {
+                spellId: '1233904',
+                count: 4,
+              },
+              {
+                spellId: '1243807',
+                count: 22,
+              },
+              {
+                spellId: '22842',
+                count: 6,
+              },
+              {
+                spellId: '20484',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 11,
+              },
+              {
+                spellId: '106785',
+                count: 171,
+              },
+              {
+                spellId: '783',
+                count: 3,
+              },
+              {
+                spellId: '391528',
+                count: 11,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '77764',
+                count: 6,
+              },
+              {
+                spellId: '1822',
+                count: 205,
+              },
+              {
+                spellId: '1236616',
+                count: 4,
+              },
+              {
+                spellId: '1079',
+                count: 34,
+              },
+              {
+                spellId: '1235841',
+                count: 8,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '102417',
+                count: 1,
+              },
+              {
+                spellId: '5217',
+                count: 37,
+              },
+              {
+                spellId: '5487',
+                count: 21,
+              },
+              {
+                spellId: '1261781',
+                count: 7,
+              },
+              {
+                spellId: '22568',
+                count: 146,
+              },
+              {
+                spellId: '106839',
+                count: 26,
+              },
+              {
+                spellId: '2908',
+                count: 6,
+              },
+              {
+                spellId: '285381',
+                count: 90,
+              },
+              {
+                spellId: '2782',
+                count: 8,
+              },
+              {
+                spellId: '1271714',
+                count: 1,
+              },
+              {
+                spellId: '1126',
+                count: 18,
+              },
+              {
+                spellId: '5215',
+                count: 15,
+              },
+              {
+                spellId: '8936',
+                count: 90,
+              },
+              {
+                spellId: '1271538',
+                count: 1,
+              },
+              {
+                spellId: '1252825',
+                count: 2,
+              },
+              {
+                spellId: '99',
+                count: 4,
+              },
+              {
+                spellId: '106951',
+                count: 11,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '5221',
+                count: 259,
+              },
+              {
+                spellId: '1239490',
+                count: 3,
+              },
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '768',
+                count: 5,
+              },
+              {
+                spellId: '61336',
+                count: 6,
+              },
+              {
+                spellId: '1266193',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -11524,7 +13916,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '48518',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 조화 드루이드는 엘룬의 대행자를 기본으로 달빛섬광과 태양섬광을 미리 정리하고, 천공의 힘을 모은 뒤 일월식 구간에 별빛쇄도 또는 별똥별을 몰아넣는 원거리 딜러입니다. 달의 부름을 쓰면 전투 중 천벌 대신 별빛섬광으로 자원을 만들며, 숲의 수호자는 짧은 광역이나 특정 우선 대상 구간이 필요한 전투에서 선택합니다.',
     sourceNote: '12.1 라이브 PvE 기준입니다. 9월 1일 조화 모든 능력 피해 4% 증가(PvP 제외), 9월 4일 쌍둥이 달 범위의 대상 전투 사정거리 반영과 항성 증폭 쿨다운 관리자 추적을 반영했습니다. 9월 2일 요정 무리 표시 수정은 PvP 항목이고, 10월 6일 예정 조정의 조화 항목(별과 달)도 PvP뿐이라 PvE 설명에 넣지 않았습니다. 한국어 이름·아이콘·툴팁은 2026-10-03 ko.wowhead 주문 페이지에서 일월식 (태양) 48517, 일월식 (달) 48518, 별빛섬광 194153, 별빛쇄도 78674, 별똥별 191034, 엘룬의 분노 202770, 자연의 군대 205636, 쌍둥이 달 279620, 항성 증폭 450212, 꿈의 쇄도 433831, 꿈의 통제 434249, 아킬존의 명료함 1301768을 다시 확인했습니다. 엘룬의 대행자 95.9%(영웅 레이드 78,436개 로그)와 99.8%(고단 쐐기 9,445개 로그)는 2026-09-05 확인 시점 최근 14일 과거 집계입니다. 10월 3일 Archon 재조회는 접근 거부로 실패해 현재 사용률은 확인하지 못했습니다. 기본값은 Wowhead·Icy Veins 12.1 빌드와 이 과거 집계가 같은 방향이라는 근거로만 둡니다.',
     playstyle: [
@@ -12068,18 +14460,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 82,056건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=59',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=8',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T04:07:59.861Z · 장비 구간 329 · 319.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:06:25.770Z · 장비 평균 331.63 · 실제 328.0초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/FhQMm8d9wjNZRBpr#fight=5&source=44',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/DwMGfRVBj6n3Khz8#fight=2&source=39',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:34:32.142Z · 장비 구간 329 · 316.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:07:34.893Z · 장비 평균 331.44 · 실제 339.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/18fxvjtgy69XkFJz#fight=2&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T15:23:20.620Z · 장비 평균 327.13 · 실제 1657.7초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fJ9ZkLWXB2zpVFcN#fight=1&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T17:21:54.567Z · 장비 평균 326.94 · 실제 1667.7초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -12095,7 +14501,7 @@ export const guideManuscripts = {
       '9월 4일 긴급 수정으로 쌍둥이 달의 범위가 대상의 전투 사정거리만큼 늘었고, 항성 증폭을 쿨다운 관리자에서 추적할 수 있게 됐습니다.',
       '숲의 수호자의 꿈의 쇄도는 자연의 군대 시전 시 꿈의 폭발 3중첩을 주고, 숲의 조화는 나무정령 하나당 주문 공격력을 4% 올립니다(2026-10-03 한국어 툴팁).',
       '10월 6일 정기 점검 예정 조정에서 조화 항목은 PvP의 별과 달뿐입니다. 적용 전이고 PvE와 무관해 수치를 넣지 않았습니다.',
-      '10월 8일 드루이드 조화의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 드루이드 조화의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.19/0.19, 실제 전투 길이 차이는 3.25%/0.60%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       'Archon 사용률은 2026-09-05 확인 시점의 과거 집계입니다. 그때의 유행과 성공한 선택을 보여 줄 뿐 현재 사용률이나 특정 보스의 짧은 쫄, 임무, 킬 타임에 대한 정답이 아닙니다.',
@@ -12107,7 +14513,7 @@ export const guideManuscripts = {
       '숲의 수호자 오프닝의 단일 태양·광역 달 구분은 일월식 툴팁의 강화 대상(태양: 천벌, 달: 별빛섬광)을 따른 것입니다. 정확한 대상 수 기준은 선택 특성에 따라 달라지므로 같은 조건의 로그로 다시 비교합니다.',
       '2026-10-03 기준 Wowhead 화면에는 PTR 12.1.5가 함께 열려 있습니다. 이 공략의 수치와 문구는 라이브 12.1.0만 사용했습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -12660,60 +15066,175 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.00867004026382992,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
+        durationDifference: 0.03253948357984457,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=59',
-            startedAt: '2026-10-07T04:07:59.861Z',
+            url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=8',
+            startedAt: '2026-10-07T00:06:25.770Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 319145,
-            itemLevelBracket: 329,
-            heroTree: 23,
+            durationMs: 328032,
+            itemLevelBracket: 331,
+            gearItemLevel: 331.625,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
-              {
-                spellId: '24858',
-                count: 1,
-              },
-              {
-                spellId: '1293316',
-                count: 2,
-              },
-              {
-                spellId: '61391',
-                count: 1,
-              },
               {
                 spellId: '102560',
                 count: 4,
               },
               {
-                spellId: '78674',
-                count: 34,
+                spellId: '88747',
+                count: 11,
               },
               {
-                spellId: '1236616',
+                spellId: '61391',
+                count: 3,
+              },
+              {
+                spellId: '22812',
+                count: 2,
+              },
+              {
+                spellId: '205636',
+                count: 6,
+              },
+              {
+                spellId: '190984',
+                count: 72,
+              },
+              {
+                spellId: '194153',
+                count: 3,
+              },
+              {
+                spellId: '78674',
+                count: 9,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '29166',
+                count: 2,
+              },
+              {
+                spellId: '191034',
+                count: 61,
+              },
+              {
+                spellId: '1233346',
+                count: 9,
+              },
+              {
+                spellId: '24858',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
                 count: 1,
+              },
+              {
+                spellId: '93402',
+                count: 40,
+              },
+              {
+                spellId: '106898',
+                count: 2,
+              },
+              {
+                spellId: '102793',
+                count: 2,
+              },
+              {
+                spellId: '102383',
+                count: 2,
+              },
+              {
+                spellId: '8921',
+                count: 62,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12729,
+                uses: 1,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45002,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 300816,
+                uses: 44,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/DwMGfRVBj6n3Khz8#fight=2&source=39',
+            startedAt: '2026-10-07T02:07:34.893Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 339065,
+            itemLevelBracket: 331,
+            gearItemLevel: 331.4375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '1233272',
+                count: 3,
               },
               {
                 spellId: '194153',
                 count: 25,
               },
               {
-                spellId: '205636',
-                count: 7,
+                spellId: '102560',
+                count: 4,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1236998',
+                count: 1,
+              },
+              {
+                spellId: '24858',
+                count: 1,
+              },
+              {
+                spellId: '1126',
+                count: 2,
+              },
+              {
+                spellId: '78674',
+                count: 26,
+              },
+              {
+                spellId: '1850',
+                count: 1,
               },
               {
                 spellId: '22812',
                 count: 3,
               },
               {
-                spellId: '1295247',
+                spellId: '61391',
                 count: 1,
               },
               {
@@ -12721,153 +15242,374 @@ export const guideManuscripts = {
                 count: 50,
               },
               {
-                spellId: '1850',
-                count: 1,
+                spellId: '88747',
+                count: 13,
               },
               {
-                spellId: '1233272',
-                count: 1,
+                spellId: '8921',
+                count: 43,
+              },
+              {
+                spellId: '205636',
+                count: 7,
               },
               {
                 spellId: '1233346',
-                count: 10,
-              },
-              {
-                spellId: '102383',
-                count: 5,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '93402',
-                count: 32,
-              },
-              {
-                spellId: '339',
-                count: 1,
-              },
-              {
-                spellId: '8921',
-                count: 16,
+                count: 9,
               },
               {
                 spellId: '190984',
-                count: 89,
+                count: 85,
               },
               {
-                spellId: '88747',
-                count: 12,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 283631,
-                uses: 47,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/FhQMm8d9wjNZRBpr#fight=5&source=44',
-            startedAt: '2026-10-07T00:34:32.142Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 316378,
-            itemLevelBracket: 329,
-            heroTree: 24,
-            augmentationCount: 1,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '29166',
-                count: 2,
-              },
-              {
-                spellId: '191034',
-                count: 55,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '102560',
-                count: 4,
-              },
-              {
-                spellId: '22812',
-                count: 3,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '8921',
-                count: 49,
-              },
-              {
-                spellId: '194153',
-                count: 65,
+                spellId: '93402',
+                count: 33,
               },
               {
                 spellId: '6262',
                 count: 1,
-              },
-              {
-                spellId: '93402',
-                count: 30,
               },
               {
                 spellId: '1293316',
                 count: 3,
               },
               {
-                spellId: '1233272',
-                count: 10,
-              },
-              {
-                spellId: '202770',
-                count: 14,
-              },
-              {
-                spellId: '26297',
+                spellId: '1234969',
                 count: 2,
               },
               {
-                spellId: '78674',
-                count: 59,
-              },
-              {
-                spellId: '102793',
-                count: 2,
+                spellId: '102383',
+                count: 3,
               },
             ],
             externalBuffs: [
               {
-                spellId: '413984',
-                activeMs: 37747,
-                uses: 4,
-              },
-              {
                 spellId: '10060',
-                activeMs: 45029,
-                uses: 3,
+                activeMs: 15014,
+                uses: 1,
               },
               {
                 spellId: '395152',
-                activeMs: 302827,
-                uses: 39,
+                activeMs: 324308,
+                uses: 44,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12556,
+                uses: 1,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
+        durationDifference: 0.00598133105153299,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/18fxvjtgy69XkFJz#fight=2&source=1',
+            startedAt: '2026-10-07T15:23:20.620Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1657714,
+            itemLevelBracket: 18,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '61391',
+                count: 3,
+              },
+              {
+                spellId: '22812',
+                count: 17,
+              },
+              {
+                spellId: '78674',
+                count: 153,
+              },
+              {
+                spellId: '102383',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 7,
+              },
+              {
+                spellId: '202770',
+                count: 54,
+              },
+              {
+                spellId: '2908',
+                count: 5,
+              },
+              {
+                spellId: '24858',
+                count: 12,
+              },
+              {
+                spellId: '102793',
+                count: 3,
+              },
+              {
+                spellId: '1126',
+                count: 23,
+              },
+              {
+                spellId: '783',
+                count: 4,
+              },
+              {
+                spellId: '78675',
+                count: 9,
+              },
+              {
+                spellId: '768',
+                count: 1,
+              },
+              {
+                spellId: '5215',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '1233272',
+                count: 45,
+              },
+              {
+                spellId: '102560',
+                count: 15,
+              },
+              {
+                spellId: '191034',
+                count: 248,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '99',
+                count: 5,
+              },
+              {
+                spellId: '194153',
+                count: 446,
+              },
+              {
+                spellId: '1235108',
+                count: 1,
+              },
+              {
+                spellId: '22842',
+                count: 9,
+              },
+              {
+                spellId: '1850',
+                count: 1,
+              },
+              {
+                spellId: '1293316',
+                count: 11,
+              },
+              {
+                spellId: '8921',
+                count: 167,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '2782',
+                count: 4,
+              },
+              {
+                spellId: '5487',
+                count: 11,
+              },
+              {
+                spellId: '102417',
+                count: 2,
+              },
+              {
+                spellId: '5225',
+                count: 1,
+              },
+              {
+                spellId: '93402',
+                count: 64,
+              },
+              {
+                spellId: '106898',
+                count: 6,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/fJ9ZkLWXB2zpVFcN#fight=1&source=2',
+            startedAt: '2026-10-07T17:21:54.567Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1667689,
+            itemLevelBracket: 18,
+            gearItemLevel: 326.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1233272',
+                count: 49,
+              },
+              {
+                spellId: '22812',
+                count: 16,
+              },
+              {
+                spellId: '102793',
+                count: 1,
+              },
+              {
+                spellId: '106898',
+                count: 12,
+              },
+              {
+                spellId: '61391',
+                count: 6,
+              },
+              {
+                spellId: '1126',
+                count: 2,
+              },
+              {
+                spellId: '2782',
+                count: 4,
+              },
+              {
+                spellId: '102560',
+                count: 15,
+              },
+              {
+                spellId: '2908',
+                count: 2,
+              },
+              {
+                spellId: '202770',
+                count: 56,
+              },
+              {
+                spellId: '93402',
+                count: 70,
+              },
+              {
+                spellId: '1293316',
+                count: 11,
+              },
+              {
+                spellId: '194153',
+                count: 423,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '190984',
+                count: 2,
+              },
+              {
+                spellId: '78675',
+                count: 15,
+              },
+              {
+                spellId: '99',
+                count: 11,
+              },
+              {
+                spellId: '1850',
+                count: 1,
+              },
+              {
+                spellId: '24858',
+                count: 21,
+              },
+              {
+                spellId: '191034',
+                count: 242,
+              },
+              {
+                spellId: '78674',
+                count: 166,
+              },
+              {
+                spellId: '783',
+                count: 9,
+              },
+              {
+                spellId: '102383',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 4,
+              },
+              {
+                spellId: '5487',
+                count: 24,
+              },
+              {
+                spellId: '102417',
+                count: 6,
+              },
+              {
+                spellId: '22842',
+                count: 16,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '8921',
+                count: 114,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -12877,7 +15619,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '375087',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 황폐 기원사는 비늘사령관을 기본으로 깊은 숨결과 용의 분노를 자주 쓰고, 강화 주문으로 용의 분노를 늘리며 정수 폭발을 파열·기염으로 비우는 25야드 원거리 딜러입니다. 9월 22일 긴급 수정으로 기염, 해방된 불길, 불의 숨결, 하늘빛 일격·하늘빛 휩쓸기, 산산이 부서지는 별 피해가 올랐습니다. 분노 상승 3등급을 고른 경우에만 용의 분노 뒤 해방된 불길 4회가 추가되고, 기본 추천 빌드인 1등급에는 이 단계가 없습니다.',
     sourceNote: '한국어 이름·아이콘·효과는 2026-10-03 ko.wowhead.com 주문 페이지로 용의 분노 375087, 깊은 숨결 357210, 영원의 쇄도 359073, 불의 숨결 357208, 파열 356995, 기염 357211, 하늘빛 일격 362969, 하늘빛 휩쓸기 1265872, 해방된 불길 1292321, 분노 상승 1271687·1271796·1271788, 날개지도자 441206, 대규모 파열 436335, 산산이 부서지는 별 1265802, 시즌 2 세트 1296639·1296640, 화염 흡수 444088, 폭격 434300, 폭정 376888, 적개심 375797, 전세역전 370553, 해체 1264378을 다시 열어 확인했습니다. Unravel의 공식 한국어 이름은 해체입니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게(9월 22일 조정은 9월 23일) 표기됩니다. 비늘사령관 기본 추천은 Icy Veins 2026-09-21 본문과 9월 23일 조정 기록, Blizzard 9월 22일 개발자 노트의 관찰, Murlok 2026-10-03 쐐기 상위 50명 47명 비늘사령관을 함께 본 판단입니다. Archon 2026-08-30 수치는 조정 전 과거 집계로만 남겼고, 9월 22일 이후 레이드 로그는 이번에 새로 확보하지 못했습니다.',
     playstyle: [
@@ -13456,18 +16198,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 30,921건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/NRMHc9jWQbT7x1r2#fight=7&source=6',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:09:45.388Z · 장비 구간 327 · 373.0초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:09:45.388Z · 장비 평균 327.13 · 실제 373.0초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/P1fqCmXYATbdtc8v#fight=11&source=166',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:56:43.990Z · 장비 구간 327 · 368.3초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T02:56:43.990Z · 장비 평균 327.56 · 실제 368.3초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=3&source=6',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T17:12:17.984Z · 장비 평균 329.00 · 실제 1614.5초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RgNtfCbZTBQAKqPY#fight=1&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:27:16.812Z · 장비 평균 328.38 · 실제 1569.8초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -13481,7 +16237,7 @@ export const guideManuscripts = {
       'Icy Veins 딜사이클은 비늘사령관이 5대상 이상에서 기염, 4대상 이하에서 파열을 쓰고, 불꽃형성자는 3대상 이상에서 기염을 쓴다고 구분합니다.',
       '시즌 2 2세트는 산산이 부서지는 별 피해를 50% 올리고 항상 최대 강화 단계 효과를 주며, 4세트는 사상자 발동마다 강화 주문 쿨다운 감소를 0.1초 더하고 영원의 쇄도 피해를 10% 올립니다. 산산이 부서지는 별은 영원의 쇄도가 자동으로 방출하는 효과입니다.',
       'Murlok 2026-10-03 쐐기 상위 50명 집계에서 비늘사령관은 47명, 불꽃형성자는 3명입니다. Archon 2026-08-30 과거 집계(영웅 레이드 97.5%, +7~19 쐐기 96.8%)와 방향은 같지만 9월 22일 조정 뒤 피해 로그 비교는 아닙니다.',
-      '10월 8일 기원사 황폐의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 기원사 황폐의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 17단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.44/0.63, 실제 전투 길이 차이는 1.26%/2.77%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '9월 22일 조정 뒤의 Archon·Warcraft Logs 집계는 이번 검토에서 열지 못했습니다. 영웅 특성 사용률은 2026-08-30 과거 집계와 Murlok 상위 50명 선택만 근거로 쓰고 현재 피해 우열을 수치로 단정하지 않습니다.',
@@ -13491,7 +16247,7 @@ export const guideManuscripts = {
       'Wowhead 가이드 본문은 이번에 다시 열지 않았습니다. 오프닝의 전세역전 위치는 2026-08-30에 확인한 Wowhead 순서이고, Icy Veins 단일 오프닝은 전세역전을 넣지 않으므로 전세역전은 영원의 쇄도 지연을 막는 선택으로 읽습니다.',
       '10월 6일 정기 점검 예정 기원사 조정은 플레이어 간 전투 항목뿐이라 이 PvE 가이드에 넣지 않았습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -14033,7 +16789,10 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
         durationDifference: 0.012623100703279379,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
@@ -14045,28 +16804,40 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 372967,
             itemLevelBracket: 327,
-            heroTree: 36,
+            gearItemLevel: 327.125,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '358733',
-                count: 4,
+                spellId: '374227',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '406732',
+                count: 2,
+              },
+              {
+                spellId: '370553',
+                count: 3,
+              },
+              {
+                spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '375087',
+                count: 3,
               },
               {
                 spellId: '382266',
                 count: 38,
               },
               {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '374227',
-                count: 1,
-              },
-              {
-                spellId: '370553',
+                spellId: '1293316',
                 count: 3,
               },
               {
@@ -14074,31 +16845,35 @@ export const guideManuscripts = {
                 count: 6,
               },
               {
-                spellId: '1236616',
-                count: 2,
+                spellId: '361195',
+                count: 0,
               },
               {
-                spellId: '357211',
-                count: 4,
-              },
-              {
-                spellId: '375087',
-                count: 3,
-              },
-              {
-                spellId: '1293316',
-                count: 3,
+                spellId: '6262',
+                count: 1,
               },
               {
                 spellId: '433874',
                 count: 14,
               },
               {
-                spellId: '361195',
-                count: 0,
+                spellId: '358267',
+                count: 27,
               },
               {
-                spellId: '406732',
+                spellId: '355913',
+                count: 1,
+              },
+              {
+                spellId: '361469',
+                count: 46,
+              },
+              {
+                spellId: '358733',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
                 count: 2,
               },
               {
@@ -14106,24 +16881,8 @@ export const guideManuscripts = {
                 count: 4,
               },
               {
-                spellId: '355913',
-                count: 1,
-              },
-              {
-                spellId: '358267',
-                count: 27,
-              },
-              {
-                spellId: '361469',
-                count: 46,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '359073',
-                count: 0,
+                spellId: '357211',
+                count: 4,
               },
               {
                 spellId: '356995',
@@ -14152,45 +16911,17 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 368259,
             itemLevelBracket: 327,
-            heroTree: 36,
+            gearItemLevel: 327.5625,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 4,
             casts: [
               {
-                spellId: '433874',
-                count: 16,
+                spellId: '1236616',
+                count: 2,
               },
               {
-                spellId: '382266',
-                count: 32,
-              },
-              {
-                spellId: '355913',
-                count: 1,
-              },
-              {
-                spellId: '362969',
+                spellId: '363916',
                 count: 3,
-              },
-              {
-                spellId: '357214',
-                count: 2,
-              },
-              {
-                spellId: '370665',
-                count: 3,
-              },
-              {
-                spellId: '370553',
-                count: 2,
-              },
-              {
-                spellId: '374227',
-                count: 2,
-              },
-              {
-                spellId: '357211',
-                count: 1,
               },
               {
                 spellId: '374968',
@@ -14201,15 +16932,23 @@ export const guideManuscripts = {
                 count: 3,
               },
               {
-                spellId: '390386',
+                spellId: '355913',
                 count: 1,
               },
               {
-                spellId: '363916',
-                count: 3,
+                spellId: '433874',
+                count: 16,
+              },
+              {
+                spellId: '358267',
+                count: 21,
               },
               {
                 spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '361195',
                 count: 0,
               },
               {
@@ -14217,19 +16956,7 @@ export const guideManuscripts = {
                 count: 32,
               },
               {
-                spellId: '356995',
-                count: 69,
-              },
-              {
-                spellId: '361195',
-                count: 0,
-              },
-              {
-                spellId: '1293316',
-                count: 3,
-              },
-              {
-                spellId: '1236616',
+                spellId: '357214',
                 count: 2,
               },
               {
@@ -14237,30 +16964,335 @@ export const guideManuscripts = {
                 count: 1,
               },
               {
-                spellId: '358267',
-                count: 21,
+                spellId: '357211',
+                count: 1,
+              },
+              {
+                spellId: '370553',
+                count: 2,
               },
               {
                 spellId: '1295247',
                 count: 1,
               },
+              {
+                spellId: '356995',
+                count: 69,
+              },
+              {
+                spellId: '374227',
+                count: 2,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '382266',
+                count: 32,
+              },
+              {
+                spellId: '362969',
+                count: 3,
+              },
+              {
+                spellId: '370665',
+                count: 3,
+              },
+              {
+                spellId: '390386',
+                count: 1,
+              },
             ],
             externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 310840,
-                uses: 44,
-              },
               {
                 spellId: '413984',
                 activeMs: 24340,
                 uses: 2,
               },
+              {
+                spellId: '395152',
+                activeMs: 310840,
+                uses: 44,
+              },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.027656874143290988,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=3&source=6',
+            startedAt: '2026-10-07T17:12:17.984Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1614463,
+            itemLevelBracket: 17,
+            gearItemLevel: 329,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '363916',
+                count: 13,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '374251',
+                count: 2,
+              },
+              {
+                spellId: '375087',
+                count: 11,
+              },
+              {
+                spellId: '83958',
+                count: 1,
+              },
+              {
+                spellId: '364342',
+                count: 1,
+              },
+              {
+                spellId: '382266',
+                count: 167,
+              },
+              {
+                spellId: '362969',
+                count: 5,
+              },
+              {
+                spellId: '358733',
+                count: 64,
+              },
+              {
+                spellId: '356995',
+                count: 297,
+              },
+              {
+                spellId: '357211',
+                count: 113,
+              },
+              {
+                spellId: '361469',
+                count: 190,
+              },
+              {
+                spellId: '370553',
+                count: 11,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '374968',
+                count: 7,
+              },
+              {
+                spellId: '374227',
+                count: 3,
+              },
+              {
+                spellId: '365585',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '406971',
+                count: 2,
+              },
+              {
+                spellId: '358267',
+                count: 104,
+              },
+              {
+                spellId: '433874',
+                count: 55,
+              },
+              {
+                spellId: '368970',
+                count: 5,
+              },
+              {
+                spellId: '390386',
+                count: 3,
+              },
+              {
+                spellId: '351338',
+                count: 10,
+              },
+              {
+                spellId: '370665',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 120012,
+                uses: 4,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/RgNtfCbZTBQAKqPY#fight=1&source=5',
+            startedAt: '2026-10-08T03:27:16.812Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1569812,
+            itemLevelBracket: 17,
+            gearItemLevel: 328.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '370665',
+                count: 2,
+              },
+              {
+                spellId: '357211',
+                count: 74,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '1263768',
+                count: 34,
+              },
+              {
+                spellId: '358733',
+                count: 38,
+              },
+              {
+                spellId: '374227',
+                count: 5,
+              },
+              {
+                spellId: '370553',
+                count: 12,
+              },
+              {
+                spellId: '365585',
+                count: 6,
+              },
+              {
+                spellId: '364342',
+                count: 8,
+              },
+              {
+                spellId: '362969',
+                count: 8,
+              },
+              {
+                spellId: '433874',
+                count: 56,
+              },
+              {
+                spellId: '358267',
+                count: 80,
+              },
+              {
+                spellId: '363916',
+                count: 16,
+              },
+              {
+                spellId: '375087',
+                count: 12,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+              {
+                spellId: '357214',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '368970',
+                count: 2,
+              },
+              {
+                spellId: '356995',
+                count: 278,
+              },
+              {
+                spellId: '361469',
+                count: 133,
+              },
+              {
+                spellId: '351338',
+                count: 17,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '359073',
+                count: 0,
+              },
+              {
+                spellId: '382266',
+                count: 150,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -14270,7 +17302,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '395152',
     summary: '증강은 버프를 걸고 쉬는 직업이 아닙니다. 칠흑의 힘이 살아 있는 동안 강화 주문과 분출을 이어가고, 예지 대상이 실제로 공격하는 시간에 영겁의 숨결과 시즌 2의 운명의 거울 강화를 겹칩니다. 9월 22일 긴급 수정으로 분출 15%, 불의 숨결 60%, 지각 변동 40%, 끓어오르는 비늘 100% 개인 피해가 올라 자신의 직접 피해 비중도 커졌습니다. 시간 감시자는 시시각각의 별도 지속시간과 시간의 폭발, 비늘사령관은 대규모 분출의 실제 적중 대상 수를 봐야 합니다. 두 영웅 특성의 필러와 칠흑의 힘 재사용 조건까지 같은 순서로 외우지 마세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '공식 패치·긴급 수정과 현재 한국어 주문 설명을 우선하고, Wowhead·Icy Veins·Method의 서로 다른 권장 순서는 빌드 조건을 나누어 설명합니다. 시간 감시자 시작은 Wowhead의 영겁의 숨결 후 칠흑의 힘 예시, 비늘사령관은 칠흑의 힘 선적용 예시를 사용합니다. 9월 22일 분출·불의 숨결·지각 변동·끓어오르는 비늘 상향은 개인 피해 조정이며 칠흑의 힘·예지·영겁의 숨결의 지원 수치는 바뀌지 않았습니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게 표기됩니다. Archon은 2026-10-03에도 사람 확인 화면 때문에 열지 못했고, 영웅 특성 방향은 Murlok 쐐기 상위 50명 선택 집계(시간 감시자 47명)로만 보조 확인했습니다. Wyrmrest Temple의 비공개 디스코드 대화나 이번에 수집하지 않은 상위 로그를 읽었다고 주장하지 않습니다.',
     playstyle: [
       {
@@ -14418,18 +17450,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 11,638건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/avJR9tfdX6p1ML8j#fight=26&source=2',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=84',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T03:52:23.703Z · 장비 구간 329 · 319.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:00:57.478Z · 장비 평균 327.75 · 실제 315.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=59',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:06:22.068Z · 장비 구간 329 · 319.2초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:37:03.774Z · 장비 평균 328.75 · 실제 306.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Gkfgp9xaQBMTdhAn#fight=1&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:29:28.490Z · 장비 평균 325.94 · 실제 1089.5초 · 증강 1명 · 12단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/XHhqBLYxk7cp3n1P#fight=19&source=764',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:54:05.006Z · 장비 평균 326.50 · 실제 1107.8초 · 증강 1명 · 12단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -14443,7 +17489,7 @@ export const guideManuscripts = {
       'Blizzard 9월 22일 긴급 수정은 증강 분출 15%, 불의 숨결 60%, 지각 변동 40%, 끓어오르는 비늘 100% 피해를 올렸습니다. 개발자 설명은 의도한 위력이나 시전에 쓰는 시간에 비해 피해 분석에서 비중이 낮은 능력을 조정했다는 내용이며, 지원 버프 수치 변경은 없습니다.',
       '9월 21일 긴급 수정으로 전세역전 불의 숨결에서 해체가 발동하지 않던 문제와 불의 숨결이 맞힌 모든 대상에 해체가 적중하지 않던 문제가 고쳐졌습니다. 해체는 보호막 흡수용 선택 특성이며 Murlok 쐐기 상위 50명 중 8명만 골랐습니다.',
       'Murlok 2026-10-03 쐐기 상위 50명 선택 집계는 시간 감시자 47명, 비늘사령관 3명입니다. 공개 작성자들이 고단 쐐기에서 시간 감시자를 우선 다루는 방향과 같지만 기여 피해 로그를 비교한 결과는 아닙니다.',
-      '10월 8일 기원사 증강의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 기원사 증강의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 The Blinding Vale 12단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.56, 실제 전투 길이 차이는 2.96%/1.65%이며 증강 인원은 각각 1명/1명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '정수·강화 단계·쿨다운 수치는 기본과 선택 특성 적용 후를 나누어 읽어야 합니다. 지각 변동 기본 40초를 시즌 2 보유자의 실제 사용 간격으로 고정하지 마세요.',
@@ -14454,7 +17500,7 @@ export const guideManuscripts = {
       '9월 22일 상향 뒤 증강 기여 피해를 비교한 WCL·Archon 로그는 이번에도 확보하지 못했습니다. 불의 숨결 60% 상향으로 강화 단계 선택의 체감이 달라질 수 있지만 단계 기준은 공식 효과 변경이 없어 유지했습니다.',
       '10월 6일 정기 점검 예정 항목 중 증강 관련 PvE 내용은 증강 재귀속 피해 중 죽음의 기사 역병 분출 효과에서 나온 몫이 죽음의 기사 피해로 기록되던 문제의 수정뿐이며 아직 적용 전입니다. 증강 자체 조정은 플레이어 간 전투 항목뿐입니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -15488,180 +18534,178 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0003320427520705685,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.029627234485010444,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/avJR9tfdX6p1ML8j#fight=26&source=2',
-            startedAt: '2026-10-07T03:52:23.703Z',
+            url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=84',
+            startedAt: '2026-10-07T01:00:57.478Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 319130,
-            itemLevelBracket: 329,
-            heroTree: 38,
+            durationMs: 315453,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.75,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 4,
             casts: [
               {
-                spellId: '403631',
-                count: 4,
+                spellId: '358267',
+                count: 19,
               },
               {
-                spellId: '361195',
-                count: 0,
-              },
-              {
-                spellId: '357208',
-                count: 27,
-              },
-              {
-                spellId: '396286',
-                count: 31,
-              },
-              {
-                spellId: '358733',
-                count: 4,
+                spellId: '374227',
+                count: 1,
               },
               {
                 spellId: '395152',
                 count: 12,
               },
               {
-                spellId: '363916',
-                count: 5,
-              },
-              {
-                spellId: '357214',
-                count: 1,
-              },
-              {
-                spellId: '1297908',
+                spellId: '362969',
                 count: 2,
               },
               {
-                spellId: '404977',
+                spellId: '358733',
                 count: 3,
               },
               {
-                spellId: '362969',
-                count: 1,
-              },
-              {
                 spellId: '431443',
-                count: 23,
-              },
-              {
-                spellId: '395160',
-                count: 91,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
+                count: 48,
               },
               {
                 spellId: '409311',
-                count: 36,
+                count: 34,
+              },
+              {
+                spellId: '357208',
+                count: 25,
               },
               {
                 spellId: '370553',
                 count: 5,
-              },
-              {
-                spellId: '364342',
-                count: 1,
               },
               {
                 spellId: '374968',
                 count: 3,
               },
               {
-                spellId: '358267',
-                count: 22,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 14098,
-                uses: 1,
-              },
-              {
-                spellId: '390386',
-                activeMs: 45013,
-                uses: 7,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=7',
-            startedAt: '2026-10-07T01:06:22.068Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 319236,
-            itemLevelBracket: 329,
-            heroTree: 38,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '357208',
-                count: 26,
-              },
-              {
-                spellId: '396286',
-                count: 31,
-              },
-              {
-                spellId: '363916',
-                count: 5,
-              },
-              {
-                spellId: '358267',
-                count: 8,
-              },
-              {
-                spellId: '404977',
-                count: 3,
-              },
-              {
-                spellId: '370553',
-                count: 5,
-              },
-              {
-                spellId: '409311',
-                count: 36,
-              },
-              {
-                spellId: '395152',
-                count: 12,
-              },
-              {
-                spellId: '395160',
-                count: 85,
-              },
-              {
-                spellId: '370665',
+                spellId: '358385',
                 count: 1,
-              },
-              {
-                spellId: '431443',
-                count: 46,
               },
               {
                 spellId: '403631',
                 count: 4,
               },
               {
+                spellId: '396286',
+                count: 33,
+              },
+              {
+                spellId: '404977',
+                count: 3,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '363916',
+                count: 5,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '395160',
+                count: 92,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 44594,
+                uses: 8,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=59',
+            startedAt: '2026-10-07T00:37:03.774Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 306107,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '431443',
+                count: 46,
+              },
+              {
+                spellId: '395160',
+                count: 81,
+              },
+              {
+                spellId: '370665',
+                count: 1,
+              },
+              {
+                spellId: '390386',
+                count: 1,
+              },
+              {
+                spellId: '395152',
+                count: 12,
+              },
+              {
+                spellId: '363916',
+                count: 3,
+              },
+              {
+                spellId: '357214',
+                count: 3,
+              },
+              {
+                spellId: '370553',
+                count: 4,
+              },
+              {
+                spellId: '396286',
+                count: 30,
+              },
+              {
+                spellId: '358267',
+                count: 15,
+              },
+              {
                 spellId: '358733',
+                count: 7,
+              },
+              {
+                spellId: '404977',
+                count: 2,
+              },
+              {
+                spellId: '374227',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '362969',
                 count: 2,
               },
               {
@@ -15669,26 +18713,339 @@ export const guideManuscripts = {
                 count: 0,
               },
               {
+                spellId: '403631',
+                count: 3,
+              },
+              {
+                spellId: '409311',
+                count: 33,
+              },
+              {
                 spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '357208',
+                count: 20,
+              },
+              {
+                spellId: '374968',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 29991,
+                uses: 6,
+              },
+              {
+                spellId: '413984',
+                activeMs: 25438,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.5625,
+        durationDifference: 0.01648064965733392,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/Gkfgp9xaQBMTdhAn#fight=1&source=3',
+            startedAt: '2026-10-07T23:29:28.490Z',
+            region: 'US',
+            encounterId: 12859,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1089527,
+            itemLevelBracket: 12,
+            gearItemLevel: 325.9375,
+            heroTree: null,
+            augmentationCount: 1,
+            keystoneLevel: 12,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '431443',
+                count: 107,
+              },
+              {
+                spellId: '396286',
+                count: 87,
+              },
+              {
+                spellId: '404977',
+                count: 6,
+              },
+              {
+                spellId: '358267',
+                count: 34,
+              },
+              {
+                spellId: '374968',
+                count: 2,
+              },
+              {
+                spellId: '395152',
+                count: 31,
+              },
+              {
+                spellId: '403631',
+                count: 10,
+              },
+              {
+                spellId: '1236994',
+                count: 3,
+              },
+              {
+                spellId: '363916',
+                count: 7,
+              },
+              {
+                spellId: '1297908',
+                count: 4,
+              },
+              {
+                spellId: '395160',
+                count: 270,
+              },
+              {
+                spellId: '358733',
+                count: 17,
+              },
+              {
+                spellId: '368970',
+                count: 1,
+              },
+              {
+                spellId: '365585',
+                count: 2,
+              },
+              {
+                spellId: '357214',
+                count: 1,
+              },
+              {
+                spellId: '364342',
+                count: 2,
+              },
+              {
+                spellId: '374227',
+                count: 3,
+              },
+              {
+                spellId: '369459',
+                count: 1,
+              },
+              {
+                spellId: '370665',
+                count: 1,
+              },
+              {
+                spellId: '351338',
+                count: 11,
+              },
+              {
+                spellId: '409311',
+                count: 104,
+              },
+              {
+                spellId: '370553',
+                count: 12,
+              },
+              {
+                spellId: '357208',
+                count: 64,
+              },
+              {
+                spellId: '374251',
                 count: 2,
               },
             ],
             externalBuffs: [
               {
                 spellId: '390386',
-                activeMs: 45023,
-                uses: 9,
+                activeMs: 121663,
+                uses: 23,
               },
               {
                 spellId: '413984',
-                activeMs: 12795,
-                uses: 1,
+                activeMs: 77882,
+                uses: 9,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/XHhqBLYxk7cp3n1P#fight=19&source=764',
+            startedAt: '2026-10-08T01:54:05.006Z',
+            region: 'US',
+            encounterId: 12859,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1107784,
+            itemLevelBracket: 12,
+            gearItemLevel: 326.5,
+            heroTree: null,
+            augmentationCount: 1,
+            keystoneLevel: 12,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '403631',
+                count: 10,
+              },
+              {
+                spellId: '370665',
+                count: 3,
+              },
+              {
+                spellId: '370553',
+                count: 13,
+              },
+              {
+                spellId: '365585',
+                count: 1,
+              },
+              {
+                spellId: '351338',
+                count: 9,
+              },
+              {
+                spellId: '357208',
+                count: 62,
+              },
+              {
+                spellId: '360827',
+                count: 21,
+              },
+              {
+                spellId: '358733',
+                count: 33,
+              },
+              {
+                spellId: '395152',
+                count: 31,
+              },
+              {
+                spellId: '390386',
+                count: 2,
+              },
+              {
+                spellId: '362969',
+                count: 4,
+              },
+              {
+                spellId: '409311',
+                count: 101,
+              },
+              {
+                spellId: '374227',
+                count: 9,
+              },
+              {
+                spellId: '404977',
+                count: 7,
+              },
+              {
+                spellId: '355913',
+                count: 2,
+              },
+              {
+                spellId: '1263768',
+                count: 21,
+              },
+              {
+                spellId: '360806',
+                count: 2,
+              },
+              {
+                spellId: '358385',
+                count: 1,
+              },
+              {
+                spellId: '368970',
+                count: 5,
+              },
+              {
+                spellId: '396286',
+                count: 72,
+              },
+              {
+                spellId: '374251',
+                count: 3,
+              },
+              {
+                spellId: '358267',
+                count: 50,
+              },
+              {
+                spellId: '1236994',
+                count: 3,
+              },
+              {
+                spellId: '395160',
+                count: 231,
+              },
+              {
+                spellId: '361195',
+                count: 0,
+              },
+              {
+                spellId: '431443',
+                count: 75,
+              },
+              {
+                spellId: '357214',
+                count: 5,
+              },
+              {
+                spellId: '374968',
+                count: 4,
+              },
+              {
+                spellId: '363916',
+                count: 11,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 106902,
+                uses: 9,
+              },
+              {
+                spellId: '390386',
+                activeMs: 230021,
+                uses: 32,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -15698,7 +19055,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '19574',
     summary: '야수는 야수의 격노만 잘 누르면 끝나는 전문화가 아닙니다. 그 사이에도 살상 명령을 회수하고, 날카로운 사격의 충전과 코브라 송곳니 소비를 이어가야 합니다. 광역에서는 기존 야수에게 걸린 야수의 회전베기와 새로 소환된 정점 야수의 상태까지 확인하세요. 무리의 지도자는 첫 살상 명령의 쇄도! 위치, 어둠 순찰자는 부패의 사격 10초와 울부짖는 화살 기회를 따로 관리합니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '공식 변경과 현재 주문 효과를 우선하고 Wowhead, Icy Veins Azortharion, Method Qenjua, 9월 7일 SimC 현행 구현을 대조했습니다. Icy Veins의 무리의 지도자 3중첩 설명과 우선순위 표의 4중첩이 서로 달라 현행 APL의 최대 중첩 기준을 채택합니다. 공개된 Trueshot Lodge 운영진의 작성자 가이드를 참고했으며 비공개 디스코드 대화나 수집하지 않은 상위 로그를 읽었다고 주장하지 않습니다. 예전 6월 채택률과 DPS는 현재 추천 근거에서 제외했습니다.',
     playstyle: [
       {
@@ -15853,18 +19210,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 283,053건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=17',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:06:22.068Z · 장비 구간 328 · 319.2초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:06:22.068Z · 장비 평균 328.19 · 실제 319.2초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=39',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=164',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:38:13.848Z · 장비 구간 328 · 319.6초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:48:53.536Z · 장비 평균 327.94 · 실제 327.9초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/8jxXtkgCFcaQ6dHy#fight=26&source=781',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T06:43:50.541Z · 장비 평균 330.63 · 실제 1656.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/MANdv4W1pxXkHFQK#fight=8&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:18:55.631Z · 장비 평균 330.00 · 실제 1736.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -15875,7 +19246,7 @@ export const guideManuscripts = {
       '코브라 송곳니는 직접 시전뿐 아니라 자동 코브라 결과와도 연결됩니다. 버프가 사라졌다는 정보만으로 소비 실패를 판단하지 않습니다.',
       '유혈·광포한 야수·발구르기·쇄도!는 현재 오프닝에서 별도로 누르는 스킬이 아닙니다. 실제 입력 스킬과 자동 결과를 나누었습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 이 구간에 야수 PvE의 새로운 수치 조정은 확인되지 않았습니다. 10월 6일 광포한 야수: 매 상향은 PvP 전용이므로 PvE 추천에 합산하지 않습니다.',
-      '10월 8일 사냥꾼 야수의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 사냥꾼 야수의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.25/0.63, 실제 전투 길이 차이는 2.63%/4.61%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '10월 8일 Archon 레이드·쐐기 공개 집계를 확인했습니다. 개인 시뮬레이션과 조정 후 동일 조건 이벤트 비교는 남아 있으며, 과거 6월 채택률을 현재 시즌의 추천 근거로 사용하지 않습니다.',
@@ -15884,7 +19255,7 @@ export const guideManuscripts = {
       '자연의 동맹 마지막 특성의 사격 증가량은 현재 툴팁 15%를 따릅니다. Method의 30% 문장과 차이가 있음을 남기며 다음 살상 명령의 30% 강화와 혼동하지 않습니다.',
       '자동 발동·야수 경로·기믹 면역은 전투별로 확인해야 합니다. 특정 버프 유지율 하나나 상위 로그의 시전 수만으로 최적 운용을 단정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -16797,9 +20168,12 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0011232966723509442,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.25,
+        durationDifference: 0.026295000564270397,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
             url: 'https://www.warcraftlogs.com/reports/hvGNRBpYHgFJ874V#fight=1&source=17',
@@ -16810,10 +20184,46 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 319236,
             itemLevelBracket: 328,
-            heroTree: 43,
+            gearItemLevel: 328.1875,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
+              {
+                spellId: '193455',
+                count: 65,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '109304',
+                count: 3,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '264735',
+                count: 4,
+              },
+              {
+                spellId: '34026',
+                count: 90,
+              },
+              {
+                spellId: '1264359',
+                count: 18,
+              },
+              {
+                spellId: '109248',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
               {
                 spellId: '217200',
                 count: 53,
@@ -16823,48 +20233,87 @@ export const guideManuscripts = {
                 count: 11,
               },
               {
-                spellId: '264735',
-                count: 4,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '109248',
-                count: 1,
-              },
-              {
-                spellId: '193455',
-                count: 65,
+                spellId: '781',
+                count: 2,
               },
               {
                 spellId: '1297761',
                 count: 4,
               },
               {
+                spellId: '186257',
+                count: 2,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 299349,
+                uses: 32,
+              },
+              {
+                spellId: '413984',
+                activeMs: 26555,
+                uses: 2,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=164',
+            startedAt: '2026-10-07T00:48:53.536Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 327857,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '217200',
+                count: 54,
+              },
+              {
+                spellId: '193455',
+                count: 90,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '19574',
+                count: 9,
+              },
+              {
                 spellId: '109304',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '781',
                 count: 3,
               },
               {
                 spellId: '34026',
-                count: 90,
-              },
-              {
-                spellId: '781',
-                count: 2,
-              },
-              {
-                spellId: '186257',
-                count: 2,
+                count: 92,
               },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
+                spellId: '264735',
+                count: 1,
+              },
+              {
                 spellId: '1264359',
-                count: 18,
+                count: 10,
               },
               {
                 spellId: '1295247',
@@ -16873,98 +20322,254 @@ export const guideManuscripts = {
             ],
             externalBuffs: [
               {
-                spellId: '413984',
-                activeMs: 26555,
-                uses: 2,
-              },
-              {
                 spellId: '395152',
-                activeMs: 299349,
-                uses: 32,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/tAkwjTPyaKLr6q2D#fight=5&source=39',
-            startedAt: '2026-10-07T00:38:13.848Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 319595,
-            itemLevelBracket: 328,
-            heroTree: 43,
-            augmentationCount: 0,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '193455',
-                count: 63,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '19574',
-                count: 11,
-              },
-              {
-                spellId: '186265',
-                count: 2,
-              },
-              {
-                spellId: '1264359',
-                count: 13,
-              },
-              {
-                spellId: '1297908',
-                count: 2,
-              },
-              {
-                spellId: '264735',
-                count: 3,
-              },
-              {
-                spellId: '34026',
-                count: 84,
-              },
-              {
-                spellId: '217200',
-                count: 50,
-              },
-              {
-                spellId: '186257',
-                count: 2,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '109304',
-                count: 2,
-              },
-              {
-                spellId: '781',
-                count: 4,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '10060',
-                activeMs: 15009,
-                uses: 1,
+                activeMs: 305649,
+                uses: 45,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.04606928877231674,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/8jxXtkgCFcaQ6dHy#fight=26&source=781',
+            startedAt: '2026-10-08T06:43:50.541Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1656639,
+            itemLevelBracket: 19,
+            gearItemLevel: 330.625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '272678',
+                count: 3,
+              },
+              {
+                spellId: '264735',
+                count: 18,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '147362',
+                count: 21,
+              },
+              {
+                spellId: '193455',
+                count: 330,
+              },
+              {
+                spellId: '1264359',
+                count: 112,
+              },
+              {
+                spellId: '186265',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '34026',
+                count: 410,
+              },
+              {
+                spellId: '83244',
+                count: 2,
+              },
+              {
+                spellId: '217200',
+                count: 233,
+              },
+              {
+                spellId: '109304',
+                count: 8,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '1295132',
+                count: 4,
+              },
+              {
+                spellId: '781',
+                count: 14,
+              },
+              {
+                spellId: '19577',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1297908',
+                count: 6,
+              },
+              {
+                spellId: '187650',
+                count: 1,
+              },
+              {
+                spellId: '109248',
+                count: 1,
+              },
+              {
+                spellId: '1308188',
+                count: 74,
+              },
+              {
+                spellId: '186257',
+                count: 7,
+              },
+              {
+                spellId: '257284',
+                count: 9,
+              },
+              {
+                spellId: '19574',
+                count: 48,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/MANdv4W1pxXkHFQK#fight=8&source=2',
+            startedAt: '2026-10-08T03:18:55.631Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1736645,
+            itemLevelBracket: 19,
+            gearItemLevel: 330,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '109248',
+                count: 3,
+              },
+              {
+                spellId: '34026',
+                count: 401,
+              },
+              {
+                spellId: '34477',
+                count: 15,
+              },
+              {
+                spellId: '883',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 15,
+              },
+              {
+                spellId: '193455',
+                count: 353,
+              },
+              {
+                spellId: '186265',
+                count: 3,
+              },
+              {
+                spellId: '19574',
+                count: 45,
+              },
+              {
+                spellId: '257284',
+                count: 19,
+              },
+              {
+                spellId: '19801',
+                count: 1,
+              },
+              {
+                spellId: '264735',
+                count: 17,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1264359',
+                count: 98,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '109304',
+                count: 4,
+              },
+              {
+                spellId: '187650',
+                count: 3,
+              },
+              {
+                spellId: '147362',
+                count: 19,
+              },
+              {
+                spellId: '186257',
+                count: 1,
+              },
+              {
+                spellId: '217200',
+                count: 240,
+              },
+              {
+                spellId: '781',
+                count: 9,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -16974,7 +20579,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '19434',
     summary: '사격은 조준 사격을 많이 누르는 것만으로 끝나지 않습니다. 속사로 다음 조준 사격을 앞당기고, 정밀 사격을 소비하며, 표식과 총알 세례가 있는 조준 사격을 회수해야 합니다. 12.1에서는 폭발 사격과 시즌 2 세트의 쿨다운 회복, 두 번 쏘는 선택 특성, 영웅 특성별 발동 순서를 함께 익히세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Wowhead와 Icy Veins의 사격 가이드는 같은 작성자 Azortharion의 자료입니다. 독립된 두 집계으로 세지 않고 Qenjua의 Method, 현행 주문 효과와 라이브 SimC 구현을 함께 비교했습니다. 아래 추천은 공개 작성자 가이드와 작동 원리에 따른 기준이지, 확보하지 않은 상위 로그 채택률이나 측정 DPS가 아닙니다.',
     playstyle: [
       {
@@ -17150,18 +20755,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 26,487건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/kgwBNGPKynHQZ1f8#fight=4&source=17',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/WNhMA27TZ3dYDawJ#fight=1&source=20',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:06:14.780Z · 장비 구간 331 · 331.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:34:33.952Z · 장비 평균 329.38 · 실제 303.4초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/1QrWYzZqLnxjTb8g#fight=9&source=243',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Z2wBx9XWrLqg1ktT#fight=8&source=14',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:48:57.556Z · 장비 구간 331 · 327.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:32:12.848Z · 장비 평균 330.19 · 실제 293.9초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hcTVyJYXBQqM8vtw#fight=3&source=73',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T22:54:06.582Z · 장비 평균 327.13 · 실제 1702.9초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=1&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T16:17:19.410Z · 장비 평균 327.13 · 실제 1789.3초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -17173,7 +20792,7 @@ export const guideManuscripts = {
       '공개 라이브 APL은 두 영웅 특성의 단일·광역을 나누고, 쐐기에서는 폭발 사격으로 회복할 속사 쿨다운을 먼저 만들되 유동성 제동장치의 추가 사용 기회를 잃지 않게 합니다. 이는 구현 기준이지 모든 실제 전투에 대한 측정 결과는 아닙니다.',
       '최신 레이드·쐐기 집계을 확보하지 않았으므로 영웅 특성 사용률, DPS 격차, 특정 장비가 몇 퍼센트 우세하다는 수치를 제시하지 않습니다.',
       '9월 23일 교묘한 사격의 튕김 피해가 기본 공격력의 60%에서 75%로, 연발 공격 피해가 10% 증가했습니다. 교묘한 사격의 현재 한국어 툴팁도 75%입니다. 기본 일제 사격 3대상 조건과 영웅 특성별 광역 진입을 그대로 구별합니다.',
-      '10월 8일 사냥꾼 사격의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 사냥꾼 사격의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 17단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.00, 실제 전투 길이 차이는 3.13%/4.83%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '기본 오프닝은 시즌 2 세트·유동성 제동장치·연발 공격을 사용하는 예시입니다. 전술 재장전이나 다른 선택 특성이라면 조건이 달라집니다.',
@@ -17181,7 +20800,7 @@ export const guideManuscripts = {
       '8월 20일 이전 영상의 정밀 사격 중복 적용을 따라 하지 마세요. 종료 직전 일제 사격은 자동 사격이 쓸 버프를 가져오는 판단이지 같은 버프를 두 번 쓰는 방법이 아닙니다.',
       '이번 내용은 PvE 기준입니다. PvP 전용 증감과 내부 주문 툴팁의 오래된 조건은 현재 PvE 피해 수치로 합치지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -18213,29 +21832,32 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.010367042826694683,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.031256488423827965,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/kgwBNGPKynHQZ1f8#fight=4&source=17',
-            startedAt: '2026-10-07T01:06:14.780Z',
+            url: 'https://www.warcraftlogs.com/reports/WNhMA27TZ3dYDawJ#fight=1&source=20',
+            startedAt: '2026-10-07T01:34:33.952Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 331242,
-            itemLevelBracket: 331,
-            heroTree: 42,
-            augmentationCount: 0,
-            healerCount: 5,
+            durationMs: 303425,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.375,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '1297908',
-                count: 2,
+                spellId: '1236994',
+                count: 1,
               },
               {
-                spellId: '288613',
+                spellId: '1264949',
                 count: 3,
               },
               {
@@ -18243,159 +21865,448 @@ export const guideManuscripts = {
                 count: 6,
               },
               {
-                spellId: '186257',
-                count: 1,
-              },
-              {
-                spellId: '19434',
-                count: 58,
-              },
-              {
-                spellId: '781',
-                count: 2,
-              },
-              {
-                spellId: '53351',
-                count: 6,
+                spellId: '212431',
+                count: 19,
               },
               {
                 spellId: '185358',
-                count: 32,
+                count: 28,
               },
               {
                 spellId: '56641',
-                count: 31,
-              },
-              {
-                spellId: '257044',
-                count: 23,
-              },
-              {
-                spellId: '1297761',
-                count: 3,
-              },
-              {
-                spellId: '212431',
-                count: 20,
-              },
-              {
-                spellId: '1264949',
-                count: 3,
-              },
-              {
-                spellId: '264735',
-                count: 4,
-              },
-              {
-                spellId: '1236994',
-                count: 1,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/1QrWYzZqLnxjTb8g#fight=9&source=243',
-            startedAt: '2026-10-08T01:48:57.556Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 327808,
-            itemLevelBracket: 331,
-            heroTree: 42,
-            augmentationCount: 0,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '56641',
-                count: 9,
+                count: 18,
               },
               {
                 spellId: '53351',
-                count: 7,
+                count: 3,
               },
               {
                 spellId: '19434',
-                count: 57,
+                count: 51,
               },
               {
-                spellId: '1264949',
+                spellId: '288613',
                 count: 3,
               },
               {
                 spellId: '257620',
-                count: 16,
+                count: 7,
               },
               {
-                spellId: '6262',
-                count: 1,
+                spellId: '781',
+                count: 4,
               },
               {
-                spellId: '1297761',
-                count: 3,
-              },
-              {
-                spellId: '1236994',
+                spellId: '1297908',
                 count: 2,
-              },
-              {
-                spellId: '186265',
-                count: 1,
               },
               {
                 spellId: '109304',
                 count: 1,
               },
               {
-                spellId: '1297908',
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '257044',
+                count: 25,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 25683,
+                uses: 2,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45009,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 287401,
+                uses: 37,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Z2wBx9XWrLqg1ktT#fight=8&source=14',
+            startedAt: '2026-10-07T02:32:12.848Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 293941,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.1875,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '1295132',
                 count: 1,
               },
               {
-                spellId: '260243',
+                spellId: '56641',
+                count: 16,
+              },
+              {
+                spellId: '19434',
+                count: 55,
+              },
+              {
+                spellId: '212431',
+                count: 20,
+              },
+              {
+                spellId: '257044',
+                count: 24,
+              },
+              {
+                spellId: '1264949',
+                count: 3,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+              {
+                spellId: '53351',
+                count: 4,
+              },
+              {
+                spellId: '185358',
+                count: 34,
+              },
+              {
+                spellId: '257620',
                 count: 7,
               },
               {
-                spellId: '1295247',
-                count: 1,
+                spellId: '264735',
+                count: 3,
               },
               {
                 spellId: '288613',
                 count: 3,
               },
               {
-                spellId: '109248',
-                count: 1,
+                spellId: '260243',
+                count: 6,
               },
               {
-                spellId: '781',
-                count: 4,
+                spellId: '109304',
+                count: 2,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
               },
               {
                 spellId: '186257',
+                count: 2,
+              },
+              {
+                spellId: '109248',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 45010,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 272090,
+                uses: 37,
+              },
+              {
+                spellId: '413984',
+                activeMs: 26074,
+                uses: 2,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.04828949890765569,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/hcTVyJYXBQqM8vtw#fight=3&source=73',
+            startedAt: '2026-10-07T22:54:06.582Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1702868,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '186265',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '147362',
+                count: 13,
+              },
+              {
+                spellId: '212431',
+                count: 98,
+              },
+              {
+                spellId: '56641',
+                count: 108,
+              },
+              {
+                spellId: '19434',
+                count: 253,
+              },
+              {
+                spellId: '466904',
+                count: 3,
+              },
+              {
+                spellId: '257284',
+                count: 21,
+              },
+              {
+                spellId: '474421',
+                count: 7,
+              },
+              {
+                spellId: '264735',
+                count: 17,
+              },
+              {
+                spellId: '34477',
+                count: 19,
+              },
+              {
+                spellId: '288613',
+                count: 13,
+              },
+              {
+                spellId: '185358',
+                count: 160,
+              },
+              {
+                spellId: '260243',
+                count: 33,
+              },
+              {
+                spellId: '187650',
+                count: 3,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '1264949',
+                count: 13,
+              },
+              {
+                spellId: '186257',
+                count: 7,
+              },
+              {
+                spellId: '109304',
+                count: 6,
+              },
+              {
+                spellId: '257620',
+                count: 183,
+              },
+              {
+                spellId: '6262',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 13,
+              },
+              {
+                spellId: '781',
+                count: 13,
+              },
+              {
+                spellId: '1287798',
                 count: 1,
               },
               {
                 spellId: '257044',
-                count: 28,
+                count: 102,
               },
               {
-                spellId: '212431',
-                count: 22,
-              },
-              {
-                spellId: '185358',
-                count: 27,
-              },
-              {
-                spellId: '264735',
-                count: 2,
+                spellId: '19801',
+                count: 1,
               },
             ],
             externalBuffs: [],
           },
+          {
+            url: 'https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=1&source=4',
+            startedAt: '2026-10-07T16:17:19.410Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1789271,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '257620',
+                count: 187,
+              },
+              {
+                spellId: '264735',
+                count: 16,
+              },
+              {
+                spellId: '1236994',
+                count: 4,
+              },
+              {
+                spellId: '288613',
+                count: 14,
+              },
+              {
+                spellId: '185358',
+                count: 124,
+              },
+              {
+                spellId: '19801',
+                count: 8,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+              {
+                spellId: '186257',
+                count: 14,
+              },
+              {
+                spellId: '186265',
+                count: 2,
+              },
+              {
+                spellId: '212431',
+                count: 92,
+              },
+              {
+                spellId: '34477',
+                count: 12,
+              },
+              {
+                spellId: '257284',
+                count: 29,
+              },
+              {
+                spellId: '474421',
+                count: 15,
+              },
+              {
+                spellId: '260243',
+                count: 35,
+              },
+              {
+                spellId: '466904',
+                count: 3,
+              },
+              {
+                spellId: '1264949',
+                count: 14,
+              },
+              {
+                spellId: '56641',
+                count: 83,
+              },
+              {
+                spellId: '19434',
+                count: 266,
+              },
+              {
+                spellId: '781',
+                count: 13,
+              },
+              {
+                spellId: '257044',
+                count: 114,
+              },
+              {
+                spellId: '147362',
+                count: 11,
+              },
+              {
+                spellId: '1234768',
+                count: 4,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '109304',
+                count: 13,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 40002,
+                uses: 1,
+              },
+            ],
+          },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -18405,7 +22316,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '259495',
     summary: '생존은 살상 명령으로 집중과 창끝을 준비하고, 폭탄·붐스틱·강화된 랩터 공격으로 회수하는 전문화입니다. 파수꾼은 표식 대상과 폭탄 충전을, 무리의 지도자는 제압 다음 명령과 소환을 더 봅니다. 12.1에서는 시즌 2의 살쾡이의 격노 연계까지 함께 익히세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Wowhead DoolB, Icy Veins Azortharion, Method Symex와 라이브 SimC 구현을 비교했습니다. Method에는 12.1 표기와 달리 삭제된 불꽃송곳니 찌끼가 남아 있어 해당 단계를 제외했습니다. 기본 추천은 공개 가이드와 실제 작동 조건을 기준으로 하며 확보하지 않은 상위 로그의 채택률이나 DPS를 주장하지 않습니다.',
     playstyle: [
       {
@@ -18574,18 +22485,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 16,648건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=21',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=17',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:17:08.498Z · 장비 구간 327 · 384.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:30:31.008Z · 장비 평균 327.94 · 실제 332.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/7AywBm3Yqt6KJQzT#fight=6&source=12',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/BWPMCxNJTX6ZfnhK#fight=89&source=1266',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:40:44.110Z · 장비 구간 327 · 365.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T02:37:37.654Z · 장비 평균 327.13 · 실제 321.9초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/CQanqG1XFw8rgdhT#fight=6&source=784',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:55:17.170Z · 장비 평균 327.56 · 실제 1884.3초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/dJWfcxjLrRBb7z8n#fight=1&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T20:59:09.839Z · 장비 평균 326.94 · 실제 1908.3초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -18596,7 +22521,7 @@ export const guideManuscripts = {
       '시즌 2 세트는 격노 중첩의 폭탄 강화와 붐스틱에 의한 시간 연장을 연결합니다. 내부 효과 이름만 보고 2세트와 4세트를 뒤집지 않았습니다.',
       '최신 신화·쐐기 로그 집계는 확보하지 못했습니다. 아래는 공개 가이드와 작동 원리를 대조한 운용 기준이며 개인 캐릭터의 측정 결과가 아닙니다.',
       '9월 23일 야생불 폭탄 피해 20% 상향과 주 대상 추가 피해 80%→50% 변경, 10월 2일 미선택 변형의 주기 피해 상향 누락 수정을 반영했습니다. 마지막 수정은 앞선 20%를 정상 적용한 것이며 두 번 상향한 것으로 계산하지 않습니다.',
-      '10월 8일 사냥꾼 생존의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 사냥꾼 생존의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Den of Nalorakk 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.63, 실제 전투 길이 차이는 3.20%/1.25%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '오프닝 예시는 두 영웅 특성 모두 마지막 정점 특성, 원시의 쇄도와 주요 붐스틱 연계를 전제로 합니다. 파수꾼은 쌍둥이 송곳니, 무리의 지도자 기본 예시는 해당 특성 없이 시작하므로 제압 전 창끝 준비가 다릅니다.',
@@ -18604,7 +22529,7 @@ export const guideManuscripts = {
       '파수꾼 단일에서 붐스틱을 먼저 쏘는 간단한 시작과 랩터로 격노를 더 준비하는 심화 시작은 별개입니다. 심화 순서를 사용하려면 세트와 자원, 실제 첫 휩쓸기 상태를 확인하세요.',
       '스킬 이름이 같아도 야수의 살상 명령·포악성이나 사격의 표식 소비 조건을 생존에 그대로 적용하지 않습니다. 이름보다 전문화와 실제 주문 효과를 함께 보세요.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -19508,109 +23433,451 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.047614957561939265,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.03199184338824209,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=21',
-            startedAt: '2026-10-08T00:17:08.498Z',
+            url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=17',
+            startedAt: '2026-10-07T01:30:31.008Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 384207,
+            durationMs: 332491,
             itemLevelBracket: 327,
-            heroTree: 43,
-            augmentationCount: 0,
-            healerCount: 5,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '186270',
-                count: 52,
-              },
-              {
-                spellId: '190925',
-                count: 3,
-              },
-              {
-                spellId: '1297761',
-                count: 3,
-              },
-              {
-                spellId: '781',
+                spellId: '1264949',
                 count: 6,
-              },
-              {
-                spellId: '186265',
-                count: 2,
-              },
-              {
-                spellId: '259489',
-                count: 77,
-              },
-              {
-                spellId: '1250646',
-                count: 6,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '109304',
-                count: 2,
-              },
-              {
-                spellId: '1261193',
-                count: 10,
-              },
-              {
-                spellId: '186257',
-                count: 1,
-              },
-              {
-                spellId: '259495',
-                count: 36,
-              },
-              {
-                spellId: '264735',
-                count: 3,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/7AywBm3Yqt6KJQzT#fight=6&source=12',
-            startedAt: '2026-10-07T01:40:44.110Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 365913,
-            itemLevelBracket: 327,
-            heroTree: 42,
-            augmentationCount: 0,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '259489',
-                count: 75,
               },
               {
                 spellId: '6262',
                 count: 1,
               },
               {
-                spellId: '781',
-                count: 1,
+                spellId: '259495',
+                count: 43,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '264735',
+                count: 3,
               },
               {
                 spellId: '186257',
                 count: 1,
               },
               {
+                spellId: '1261193',
+                count: 8,
+              },
+              {
+                spellId: '1250646',
+                count: 6,
+              },
+              {
                 spellId: '1236994',
                 count: 2,
+              },
+              {
+                spellId: '259489',
+                count: 72,
+              },
+              {
+                spellId: '190925',
+                count: 2,
+              },
+              {
+                spellId: '186270',
+                count: 51,
+              },
+              {
+                spellId: '186289',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '109304',
+                count: 1,
+              },
+              {
+                spellId: '781',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 313054,
+                uses: 32,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/BWPMCxNJTX6ZfnhK#fight=89&source=1266',
+            startedAt: '2026-10-08T02:37:37.654Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 321854,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '1261193',
+                count: 7,
+              },
+              {
+                spellId: '259495',
+                count: 44,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '186270',
+                count: 55,
+              },
+              {
+                spellId: '1264949',
+                count: 5,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '264735',
+                count: 1,
+              },
+              {
+                spellId: '1250646',
+                count: 5,
+              },
+              {
+                spellId: '259489',
+                count: 76,
+              },
+              {
+                spellId: '781',
+                count: 3,
+              },
+              {
+                spellId: '186265',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 27051,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 309240,
+                uses: 37,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.012549966147738397,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/CQanqG1XFw8rgdhT#fight=6&source=784',
+            startedAt: '2026-10-07T23:55:17.170Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1884343,
+            itemLevelBracket: 18,
+            gearItemLevel: 327.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '257284',
+                count: 22,
+              },
+              {
+                spellId: '1261193',
+                count: 62,
+              },
+              {
+                spellId: '1235841',
+                count: 5,
+              },
+              {
+                spellId: '781',
+                count: 11,
+              },
+              {
+                spellId: '187707',
+                count: 24,
+              },
+              {
+                spellId: '34477',
+                count: 2,
+              },
+              {
+                spellId: '1264949',
+                count: 17,
+              },
+              {
+                spellId: '186257',
+                count: 8,
+              },
+              {
+                spellId: '1252825',
+                count: 3,
+              },
+              {
+                spellId: '1250646',
+                count: 17,
+              },
+              {
+                spellId: '190925',
+                count: 6,
+              },
+              {
+                spellId: '107079',
+                count: 2,
+              },
+              {
+                spellId: '187650',
+                count: 3,
+              },
+              {
+                spellId: '186270',
+                count: 160,
+              },
+              {
+                spellId: '19577',
+                count: 2,
+              },
+              {
+                spellId: '109304',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '1233904',
+                count: 7,
+              },
+              {
+                spellId: '19801',
+                count: 13,
+              },
+              {
+                spellId: '259489',
+                count: 372,
+              },
+              {
+                spellId: '1262857',
+                count: 2,
+              },
+              {
+                spellId: '259495',
+                count: 260,
+              },
+              {
+                spellId: '1266193',
+                count: 3,
+              },
+              {
+                spellId: '1261781',
+                count: 5,
+              },
+              {
+                spellId: '883',
+                count: 4,
+              },
+              {
+                spellId: '264735',
+                count: 14,
+              },
+              {
+                spellId: '186289',
+                count: 11,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/dJWfcxjLrRBb7z8n#fight=1&source=2',
+            startedAt: '2026-10-07T20:59:09.839Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1908292,
+            itemLevelBracket: 18,
+            gearItemLevel: 326.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1250646',
+                count: 16,
+              },
+              {
+                spellId: '109304',
+                count: 3,
+              },
+              {
+                spellId: '1250533',
+                count: 16,
+              },
+              {
+                spellId: '187650',
+                count: 4,
+              },
+              {
+                spellId: '1264949',
+                count: 16,
+              },
+              {
+                spellId: '136',
+                count: 2,
+              },
+              {
+                spellId: '1261781',
+                count: 6,
+              },
+              {
+                spellId: '259489',
+                count: 314,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '781',
+                count: 16,
+              },
+              {
+                spellId: '264735',
+                count: 10,
+              },
+              {
+                spellId: '883',
+                count: 1,
+              },
+              {
+                spellId: '19801',
+                count: 5,
+              },
+              {
+                spellId: '1250701',
+                count: 2,
+              },
+              {
+                spellId: '1252825',
+                count: 3,
+              },
+              {
+                spellId: '1271714',
+                count: 1,
+              },
+              {
+                spellId: '259495',
+                count: 197,
+              },
+              {
+                spellId: '1261193',
+                count: 49,
+              },
+              {
+                spellId: '1239001',
+                count: 1,
+              },
+              {
+                spellId: '257284',
+                count: 7,
+              },
+              {
+                spellId: '187707',
+                count: 24,
+              },
+              {
+                spellId: '1235841',
+                count: 7,
+              },
+              {
+                spellId: '19577',
+                count: 9,
+              },
+              {
+                spellId: '34477',
+                count: 9,
+              },
+              {
+                spellId: '186289',
+                count: 6,
+              },
+              {
+                spellId: '26297',
+                count: 8,
+              },
+              {
+                spellId: '1233904',
+                count: 8,
               },
               {
                 spellId: '186265',
@@ -19618,58 +23885,27 @@ export const guideManuscripts = {
               },
               {
                 spellId: '186270',
-                count: 52,
+                count: 194,
               },
               {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '1250646',
-                count: 6,
-              },
-              {
-                spellId: '264735',
-                count: 3,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '186289',
-                count: 1,
+                spellId: '186257',
+                count: 9,
               },
               {
                 spellId: '190925',
+                count: 11,
+              },
+              {
+                spellId: '1266193',
                 count: 4,
-              },
-              {
-                spellId: '1261193',
-                count: 8,
-              },
-              {
-                spellId: '1264949',
-                count: 6,
-              },
-              {
-                spellId: '259495',
-                count: 46,
-              },
-              {
-                spellId: '187707',
-                count: 1,
-              },
-              {
-                spellId: '109304',
-                count: 2,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -19696,7 +23932,7 @@ export const guideManuscripts = {
         text: '비전의 여파 사용 횟수, 오색 화살 발동 손실, 축적된 힘 중첩, 비전의 영혼 중 비전 탄막 사용을 순서대로 확인합니다. 전투 길이와 특성·세트가 다른 로그의 시전 횟수를 그대로 따라가지는 마세요.',
       },
     ],
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '신비한 화살로 비전 연사를 쌓고 비전 탄막으로 소비한 뒤, 발동한 오색 화살로 충전물과 번뜩임을 이어 갑니다. 12.1 기본 추천은 성난태양입니다. 45초마다 비전의 여파를 돌리고, 90초마다 비전 쇄도와 종료 후 비전의 영혼까지 챙기는 것이 핵심입니다.',
     sourceNote: '기본 우선순위는 Wowhead 9월 4일과 Method 9월 5일 자료를 맞춰 정리했습니다. Icy Veins의 특성·딜사이클 설명은 교차 근거로 사용합니다. 세트 수치는 날짜가 최신인 글에도 오래된 문장이 남아 있어 Blizzard 8월 18일 조정과 한국어 축적된 힘 툴팁을 우선했습니다. 아래 실전 예시는 이 규칙을 적용하는 방법이지 실제 플레이어의 로그를 재현한 것이 아닙니다. 이번 작업에서 개별 WCL 전투 이벤트나 개인 심 결과를 새로 분석했다고 주장하지 않습니다.',
     sources: [
@@ -19813,18 +24049,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 424,078건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T03:06:56.923Z · 장비 평균 329.38 · 실제 331.2초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=17',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:04:17.097Z · 장비 구간 330 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T00:04:17.097Z · 장비 평균 330.00 · 실제 323.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=22',
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=85',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:32:09.837Z · 장비 구간 330 · 319.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T21:49:22.135Z · 장비 평균 328.56 · 실제 1755.5초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/9f8JjCk6VDMFNH1T#fight=1&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T04:50:33.962Z · 장비 평균 327.75 · 실제 1746.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -19835,7 +24085,7 @@ export const guideManuscripts = {
       'Archon 원본 로그 집계는 9월 9일과 10월 3일 모두 직접 열지 못했습니다. 검색 색인에 보인 사용률은 로그 범위와 시점을 검증할 수 없어 이 가이드의 추천 근거에서 제외했습니다.',
       'Dutchmagoz의 공개 작성자 소개로 Altered Time 운영자 및 장기 이론공식 작성 이력을 확인했습니다. 커뮤니티 접근 권한과 공개 가이드 근거는 구분합니다.',
       '비전 파동의 실제 시전 주문은 1241462(2초 시전, 15초 재사용, 기본 마나 10%)입니다. 이전 가이드가 쓰던 1243460은 잔향의 반복 폭발 효과라 툴팁에 반복 문구만 보였습니다. SimulationCraft 12.1.0.69933 특성 데이터와 구현으로 확인해 차트 ID를 교정했습니다.',
-      '10월 8일 마법사 비전의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 마법사 비전의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.81, 실제 전투 길이 차이는 2.43%/0.51%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '2026-10-03까지 확인한 12.1 PvE 기준입니다. 8월 19일(한국 공지) 이후 비전 PvE 수치 변경은 없고, 9월 25일 시간 전환 조정은 플레이어 간 전투 전용입니다. 9월 11일에는 주문술사 만발하는 점술의 쇄편이 군중 제어 대상을 맞히던 문제가 고쳐졌습니다.',
@@ -19846,7 +24096,7 @@ export const guideManuscripts = {
       '오프닝은 공대의 시간 왜곡 배정과 장신구 지속시간에 따라 달라집니다. 특정 캐릭터 장비나 전투 이벤트를 받지 않았으므로 개인 최적화 수치와 빌드 코드를 임의로 만들지 않습니다.',
       '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -20657,10 +24907,109 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.011277474142893396,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.024340017452586637,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=3',
+            startedAt: '2026-10-07T03:06:56.923Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 331183,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '80353',
+                count: 1,
+              },
+              {
+                spellId: '1295924',
+                count: 36,
+              },
+              {
+                spellId: '212653',
+                count: 6,
+              },
+              {
+                spellId: '235450',
+                count: 4,
+              },
+              {
+                spellId: '30451',
+                count: 15,
+              },
+              {
+                spellId: '365350',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '44425',
+                count: 74,
+              },
+              {
+                spellId: '342247',
+                count: 2,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '414658',
+                count: 1,
+              },
+              {
+                spellId: '26297',
+                count: 2,
+              },
+              {
+                spellId: '153626',
+                count: 3,
+              },
+              {
+                spellId: '342245',
+                count: 2,
+              },
+              {
+                spellId: '5143',
+                count: 88,
+              },
+              {
+                spellId: '321507',
+                count: 8,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 45030,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 312794,
+                uses: 31,
+              },
+              {
+                spellId: '413984',
+                activeMs: 24898,
+                uses: 2,
+              },
+            ],
+          },
           {
             url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=17',
             startedAt: '2026-10-08T00:04:17.097Z',
@@ -20670,37 +25019,29 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 323122,
             itemLevelBracket: 330,
-            heroTree: 39,
+            gearItemLevel: 330,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1449',
-                count: 2,
+                spellId: '80353',
+                count: 1,
               },
               {
                 spellId: '321507',
                 count: 7,
               },
               {
-                spellId: '235450',
-                count: 6,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '30451',
-                count: 29,
+                spellId: '1250533',
+                count: 4,
               },
               {
                 spellId: '365350',
                 count: 3,
               },
               {
-                spellId: '1250533',
-                count: 4,
+                spellId: '5143',
+                count: 85,
               },
               {
                 spellId: '153626',
@@ -20715,7 +25056,15 @@ export const guideManuscripts = {
                 count: 26,
               },
               {
-                spellId: '80353',
+                spellId: '235450',
+                count: 6,
+              },
+              {
+                spellId: '414658',
+                count: 2,
+              },
+              {
+                spellId: '6262',
                 count: 1,
               },
               {
@@ -20723,121 +25072,297 @@ export const guideManuscripts = {
                 count: 10,
               },
               {
-                spellId: '414658',
+                spellId: '1449',
                 count: 2,
               },
               {
-                spellId: '5143',
-                count: 85,
+                spellId: '30451',
+                count: 29,
               },
               {
-                spellId: '6262',
-                count: 1,
+                spellId: '1236616',
+                count: 2,
               },
             ],
             externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 12602,
-                uses: 1,
-              },
               {
                 spellId: '395152',
                 activeMs: 298800,
                 uses: 42,
               },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=22',
-            startedAt: '2026-10-07T01:32:09.837Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 319478,
-            itemLevelBracket: 330,
-            heroTree: 39,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '235450',
-                count: 9,
-              },
-              {
-                spellId: '153626',
-                count: 4,
-              },
-              {
-                spellId: '1250533',
-                count: 4,
-              },
-              {
-                spellId: '1236616',
-                count: 1,
-              },
-              {
-                spellId: '342247',
-                count: 1,
-              },
-              {
-                spellId: '342245',
-                count: 1,
-              },
-              {
-                spellId: '44425',
-                count: 71,
-              },
-              {
-                spellId: '321507',
-                count: 7,
-              },
-              {
-                spellId: '365350',
-                count: 4,
-              },
-              {
-                spellId: '30451',
-                count: 37,
-              },
-              {
-                spellId: '5143',
-                count: 80,
-              },
-              {
-                spellId: '80353',
-                count: 1,
-              },
-              {
-                spellId: '1295924',
-                count: 24,
-              },
-              {
-                spellId: '212653',
-                count: 8,
-              },
-              {
-                spellId: '31661',
-                count: 1,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 246085,
-                uses: 33,
-              },
               {
                 spellId: '413984',
-                activeMs: 12834,
+                activeMs: 12602,
                 uses: 1,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.005055675087854816,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=85',
+            startedAt: '2026-10-07T21:49:22.135Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1755453,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '212653',
+                count: 36,
+              },
+              {
+                spellId: '55342',
+                count: 8,
+              },
+              {
+                spellId: '44425',
+                count: 357,
+              },
+              {
+                spellId: '342247',
+                count: 4,
+              },
+              {
+                spellId: '5143',
+                count: 372,
+              },
+              {
+                spellId: '1459',
+                count: 1,
+              },
+              {
+                spellId: '8219',
+                count: 1,
+              },
+              {
+                spellId: '235450',
+                count: 46,
+              },
+              {
+                spellId: '1250533',
+                count: 18,
+              },
+              {
+                spellId: '110960',
+                count: 6,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '80353',
+                count: 3,
+              },
+              {
+                spellId: '120',
+                count: 1,
+              },
+              {
+                spellId: '2139',
+                count: 25,
+              },
+              {
+                spellId: '342245',
+                count: 5,
+              },
+              {
+                spellId: '30451',
+                count: 116,
+              },
+              {
+                spellId: '1295924',
+                count: 137,
+              },
+              {
+                spellId: '414658',
+                count: 7,
+              },
+              {
+                spellId: '31661',
+                count: 5,
+              },
+              {
+                spellId: '1449',
+                count: 8,
+              },
+              {
+                spellId: '153626',
+                count: 17,
+              },
+              {
+                spellId: '321507',
+                count: 35,
+              },
+              {
+                spellId: '365350',
+                count: 18,
+              },
+              {
+                spellId: '414664',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/9f8JjCk6VDMFNH1T#fight=1&source=4',
+            startedAt: '2026-10-08T04:50:33.962Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1746578,
+            itemLevelBracket: 20,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '2139',
+                count: 24,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '342247',
+                count: 8,
+              },
+              {
+                spellId: '1250533',
+                count: 17,
+              },
+              {
+                spellId: '1295924',
+                count: 135,
+              },
+              {
+                spellId: '235450',
+                count: 45,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '110960',
+                count: 2,
+              },
+              {
+                spellId: '5143',
+                count: 400,
+              },
+              {
+                spellId: '1459',
+                count: 4,
+              },
+              {
+                spellId: '342245',
+                count: 9,
+              },
+              {
+                spellId: '80353',
+                count: 3,
+              },
+              {
+                spellId: '414658',
+                count: 6,
+              },
+              {
+                spellId: '153626',
+                count: 15,
+              },
+              {
+                spellId: '321507',
+                count: 32,
+              },
+              {
+                spellId: '212653',
+                count: 31,
+              },
+              {
+                spellId: '475',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '157980',
+                count: 4,
+              },
+              {
+                spellId: '44425',
+                count: 346,
+              },
+              {
+                spellId: '55342',
+                count: 5,
+              },
+              {
+                spellId: '30451',
+                count: 89,
+              },
+              {
+                spellId: '365350',
+                count: 17,
+              },
+              {
+                spellId: '1449',
+                count: 33,
+              },
+              {
+                spellId: '6262',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -20847,7 +25372,7 @@ export const guideManuscripts = {
     status: '심화 가이드',
     graphCenterSkillId: '190319',
     summary: '열기를 화염 작렬로 바꾸고 불덩이 작렬·불기둥으로 소비하는 기본은 같습니다. 12.1에서는 발화 밖의 피해와 화염 파열 직접 시전까지 챙겨야 합니다. 성난태양은 유성으로 화염 파열을 확보하고 발화 뒤 이상 고열을 이어 가며, 서리불꽃은 얼음불꽃 화살과 유성의 자동 후속 공격을 활용합니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '공개 가이드의 공통 원칙과 서로 다른 조건을 구분했습니다. 불기둥은 Wowhead 순수 광역 3대상, 우선 대상 절충 4대상, Icy Veins 4대상 기준을 병기합니다. Method 본문의 5대상과 예시의 4대상 차이는 단일 정답으로 합치지 않습니다. 시즌 2 4세트는 현재 Wowhead 툴팁의 피해 보너스 25%를 사용하고, 8월 가이드의 20% 표기와 차이가 있음을 남겼습니다. 직접 로그 집계나 개인 시뮬레이션을 수행한 보고서는 아닙니다.',
     playstyle: [
       {
@@ -21002,18 +25527,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 9,799건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/jnNFJKcP6B198G2X#fight=5&source=18',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:09:03.948Z · 장비 구간 327 · 413.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:09:03.948Z · 장비 평균 327.75 · 실제 413.0초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/1Gh98wJzkbadT7Fy#fight=22&source=184',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T02:21:43.688Z · 장비 구간 327 · 419.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:21:43.688Z · 장비 평균 327.94 · 실제 419.1초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Na2V4dL9h3TKMxvW#fight=7&source=255',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:04:41.648Z · 장비 평균 326.56 · 실제 1659.9초 · 증강 0명 · 15단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/27FDRQbTwBnyLdcm#fight=5&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T00:01:12.722Z · 장비 평균 326.56 · 실제 1637.0초 · 증강 0명 · 15단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -21025,7 +25564,7 @@ export const guideManuscripts = {
       '시즌 2 4세트의 최신 툴팁과 8월 공개 가이드의 수치가 다릅니다. 현재 툴팁을 우선하며 직접 확인하지 않은 변경 날짜나 실측 상승률은 만들지 않습니다.',
       '2026-09-01 화염 PvE 피해 조정은 3%입니다. 별도의 PvP 화염 파열·완전 연소·타오르는 격노 감소를 PvE에 적용하지 않습니다.',
       '9월 23일(한국 공지) 긴급 수정으로 유성의 지속 피해가 100% 증가했고, 불기둥 보너스는 서리불꽃 이중 시전 숙련 15%, 성난태양 힘의 무게 6%로 올랐습니다. 개발자 노트는 쐐기 성능 개선이 주목적이고 공격대 영향은 더 작다고 밝혔습니다.',
-      '10월 8일 마법사 화염의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 마법사 화염의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 15단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.19/0.00, 실제 전투 길이 차이는 1.44%/1.38%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '10월 8일 Archon 레이드·쐐기 공개 집계에 직접 접근해 현재 견본과 로그 기간을 확인했습니다. 6월 사용률을 재사용하지 않으며, 성난태양 기본 추천은 공개 운용 가이드와 현재 집계를 대조한 학습 출발점입니다.',
@@ -21035,7 +25574,7 @@ export const guideManuscripts = {
       '발화 연장은 광열 발동과 선택 특성에 따라 달라집니다. 차트는 누르는 순서의 예시와 우선순위이며 초 단위 고정 DPS 타임라인이 아닙니다.',
       '9월 23일 상향 뒤 두 영웅 특성의 우열이나 불기둥 전환 대상 수를 다시 계산한 공개 자료와 로그는 확인하지 못했습니다. 아래 3·4대상 기준과 성난태양 기본 예시는 상향 전 공개 가이드 기준이며, 상향만으로 순위가 바뀌었다고 단정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -21970,7 +26509,10 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
         durationDifference: 0.01440055741014267,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
@@ -21982,53 +26524,17 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 413046,
             itemLevelBracket: 327,
-            heroTree: 39,
+            gearItemLevel: 327.75,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '235313',
-                count: 8,
-              },
-              {
-                spellId: '414658',
-                count: 1,
-              },
-              {
-                spellId: '108853',
-                count: 144,
-              },
-              {
-                spellId: '342247',
-                count: 2,
-              },
-              {
-                spellId: '133',
-                count: 51,
-              },
-              {
-                spellId: '2120',
-                count: 63,
-              },
-              {
-                spellId: '11366',
-                count: 138,
+                spellId: '1293316',
+                count: 4,
               },
               {
                 spellId: '212653',
                 count: 11,
-              },
-              {
-                spellId: '2948',
-                count: 55,
-              },
-              {
-                spellId: '157980',
-                count: 1,
               },
               {
                 spellId: '342245',
@@ -22039,20 +26545,56 @@ export const guideManuscripts = {
                 count: 2,
               },
               {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '1293316',
-                count: 4,
-              },
-              {
                 spellId: '190319',
                 count: 7,
               },
               {
+                spellId: '414658',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '157980',
+                count: 1,
+              },
+              {
+                spellId: '342247',
+                count: 2,
+              },
+              {
+                spellId: '133',
+                count: 51,
+              },
+              {
+                spellId: '11366',
+                count: 138,
+              },
+              {
+                spellId: '235313',
+                count: 8,
+              },
+              {
+                spellId: '2948',
+                count: 55,
+              },
+              {
                 spellId: '153561',
                 count: 11,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '108853',
+                count: 144,
+              },
+              {
+                spellId: '2120',
+                count: 63,
               },
             ],
             externalBuffs: [
@@ -22072,44 +26614,16 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 419081,
             itemLevelBracket: 327,
-            heroTree: 39,
+            gearItemLevel: 327.9375,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
-              {
-                spellId: '133',
-                count: 61,
-              },
-              {
-                spellId: '342245',
-                count: 4,
-              },
-              {
-                spellId: '235313',
-                count: 8,
-              },
-              {
-                spellId: '190319',
-                count: 7,
-              },
-              {
-                spellId: '153561',
-                count: 13,
-              },
-              {
-                spellId: '2948',
-                count: 42,
-              },
-              {
-                spellId: '1234768',
-                count: 2,
-              },
               {
                 spellId: '1236616',
                 count: 1,
               },
               {
-                spellId: '1459',
+                spellId: '110960',
                 count: 1,
               },
               {
@@ -22117,8 +26631,16 @@ export const guideManuscripts = {
                 count: 4,
               },
               {
-                spellId: '11366',
-                count: 225,
+                spellId: '2948',
+                count: 42,
+              },
+              {
+                spellId: '1459',
+                count: 1,
+              },
+              {
+                spellId: '1234768',
+                count: 2,
               },
               {
                 spellId: '414658',
@@ -22129,19 +26651,288 @@ export const guideManuscripts = {
                 count: 136,
               },
               {
+                spellId: '190319',
+                count: 7,
+              },
+              {
                 spellId: '212653',
                 count: 7,
               },
               {
-                spellId: '110960',
-                count: 1,
+                spellId: '235313',
+                count: 8,
+              },
+              {
+                spellId: '133',
+                count: 61,
+              },
+              {
+                spellId: '153561',
+                count: 13,
+              },
+              {
+                spellId: '11366',
+                count: 225,
+              },
+              {
+                spellId: '342245',
+                count: 4,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.013790249171506699,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/Na2V4dL9h3TKMxvW#fight=7&source=255',
+            startedAt: '2026-10-08T02:04:41.648Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1659941,
+            itemLevelBracket: 15,
+            gearItemLevel: 326.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 15,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '80353',
+                count: 3,
+              },
+              {
+                spellId: '1287798',
+                count: 1,
+              },
+              {
+                spellId: '133',
+                count: 129,
+              },
+              {
+                spellId: '2120',
+                count: 372,
+              },
+              {
+                spellId: '110960',
+                count: 1,
+              },
+              {
+                spellId: '190319',
+                count: 22,
+              },
+              {
+                spellId: '58984',
+                count: 2,
+              },
+              {
+                spellId: '475',
+                count: 2,
+              },
+              {
+                spellId: '2948',
+                count: 157,
+              },
+              {
+                spellId: '414658',
+                count: 6,
+              },
+              {
+                spellId: '342247',
+                count: 9,
+              },
+              {
+                spellId: '342245',
+                count: 11,
+              },
+              {
+                spellId: '108853',
+                count: 461,
+              },
+              {
+                spellId: '153561',
+                count: 41,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '212653',
+                count: 36,
+              },
+              {
+                spellId: '2139',
+                count: 17,
+              },
+              {
+                spellId: '1459',
+                count: 15,
+              },
+              {
+                spellId: '11366',
+                count: 390,
+              },
+              {
+                spellId: '235313',
+                count: 43,
+              },
+              {
+                spellId: '6262',
+                count: 3,
+              },
+              {
+                spellId: '31661',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '55342',
+                count: 7,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/27FDRQbTwBnyLdcm#fight=5&source=1',
+            startedAt: '2026-10-07T00:01:12.722Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1637050,
+            itemLevelBracket: 15,
+            gearItemLevel: 326.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 15,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '190319',
+                count: 23,
+              },
+              {
+                spellId: '2139',
+                count: 18,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '212653',
+                count: 16,
+              },
+              {
+                spellId: '235313',
+                count: 44,
+              },
+              {
+                spellId: '2948',
+                count: 65,
+              },
+              {
+                spellId: '1459',
+                count: 7,
+              },
+              {
+                spellId: '108853',
+                count: 401,
+              },
+              {
+                spellId: '55342',
+                count: 13,
+              },
+              {
+                spellId: '80353',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '342245',
+                count: 2,
+              },
+              {
+                spellId: '157980',
+                count: 4,
+              },
+              {
+                spellId: '342247',
+                count: 2,
+              },
+              {
+                spellId: '133',
+                count: 203,
+              },
+              {
+                spellId: '1293316',
+                count: 11,
+              },
+              {
+                spellId: '414658',
+                count: 4,
+              },
+              {
+                spellId: '6262',
+                count: 2,
+              },
+              {
+                spellId: '2120',
+                count: 341,
+              },
+              {
+                spellId: '153561',
+                count: 35,
+              },
+              {
+                spellId: '11366',
+                count: 341,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 139835,
+                uses: 10,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -22151,7 +26942,7 @@ export const guideManuscripts = {
     status: '심화 가이드',
     graphCenterSkillId: '30455',
     summary: '냉기는 빙결을 쌓고 얼음창으로 산산조각 내는 기본 위에, 두뇌 빙결과 고드름 준비를 처리하는 딜러입니다. 12.1 시즌 2에서는 쐐기 재생성이 중요해졌고, 주문술사 단일과 정점을 생략한 서리불꽃 광역의 운용이 갈립니다. 예전처럼 모든 상황에서 광선을 끝까지 쓰거나 두 영웅 특성에 같은 얼음창 기준을 적용하면 안 됩니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '추천과 실제 주문 효과를 분리했습니다. Wowhead 8월 21일 특성·8월 29일 우선순위를 기본으로 삼고 Icy Veins와 Method의 다른 기준을 함께 검토했습니다. 서리불꽃 얼음창은 최신 Wowhead 예시의 12중첩을 사용하며 Icy Veins FAQ의 10중첩과 혼합하지 않습니다. 정점 미선택 다중 대상에서 광선을 GCD 뒤 끊는 각주와 단일 완주 설명을 분리했습니다. 현재 WCL 사용률·개인 시뮬레이션·비공개 Altered Time 대화는 확보하지 않았습니다.',
     playstyle: [
       {
@@ -22292,18 +27083,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 27,962건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/1GyDWzCBR79YrnJ3#fight=30&source=52',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=6',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T03:35:24.966Z · 장비 구간 328 · 402.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:32:09.837Z · 장비 평균 330.38 · 실제 319.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/7TkrpfVjA4yP6b1h#fight=2&source=5',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/7kwpxXJ2YNGrcDg4#fight=42&source=51',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:05:27.684Z · 장비 구간 328 · 406.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T02:37:40.195Z · 장비 평균 331.19 · 실제 321.9초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NmcQxhRtXVM4Dvw6#fight=62&source=3631',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T06:09:19.832Z · 장비 평균 326.13 · 실제 1866.0초 · 증강 0명 · 16단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Nb8WD3aKwFqxpzyL#fight=2&source=189',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T17:14:52.774Z · 장비 평균 326.31 · 실제 1886.9초 · 증강 0명 · 16단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -22316,7 +27121,7 @@ export const guideManuscripts = {
       'Wowhead 옛 영웅 특성 전용 페이지는 제목이 11.2.7이고 과잉·혹한의 추위를 다룹니다. 상단 12.1 라벨만 보고 현재 작동 방식 근거로 쓰지 않습니다.',
       '구 Archon 비율은 현재 추천에서 제거했습니다. 최신 집계·전투 이벤트·개인 시뮬레이션을 확보하지 않았으므로 수치 우열을 새로 만들지 않았습니다.',
       '9월 23일(한국 공지) 긴급 수정은 얼어붙은 구슬 15%, 혜성 폭풍 50%, 냉증 주변 산산조각 10%, 빙하 공격의 얼음 혜성 50%를 올렸습니다. 개발자 노트는 쐐기 성능 개선이 주목적이고 공격대 영향은 더 작다고 밝혔습니다. 현재 한국어 툴팁 계수(구슬 77.7%, 혜성 129%, 빙하 공격 225%, 냉증 27.3%)는 SimulationCraft 빌드 12.1.0.69933의 핫픽스 값과 일치합니다.',
-      '10월 8일 마법사 냉기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 마법사 냉기의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 16단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.19, 실제 전투 길이 차이는 0.75%/1.11%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '서리불꽃 기준은 정점 미선택·혜성 폭풍·시즌 2 세트 중심 예시입니다. 정점을 찍은 별도 빌드의 광선은 충전과 채널 가치를 다시 평가해야 합니다.',
@@ -22325,7 +27130,7 @@ export const guideManuscripts = {
       '10월 8일 레이드·쐐기 공개 집계를 확인했습니다. 개별 WCL 이벤트 전수 비교와 비공개 Altered Time 자료는 확인하지 않았으며, 과거 사용률과 현재 가이드의 날짜를 섞지 않습니다.',
       '9월 23일 상향은 혜성 폭풍·구슬·주변 산산조각 비중이 큰 광역 운용에 더 직접적입니다. 상향 이후 같은 조건의 로그나 시뮬레이션을 확보하지 못했으므로 서리불꽃·주문술사의 순위가 바뀌었다고 단정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -23203,181 +28008,430 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.009670243230952644,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.007459324777323155,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/1GyDWzCBR79YrnJ3#fight=30&source=52',
-            startedAt: '2026-10-08T03:35:24.966Z',
+            url: 'https://www.warcraftlogs.com/reports/rgaJmh8PAHkWZ936#fight=1&source=6',
+            startedAt: '2026-10-07T01:32:09.837Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 402881,
-            itemLevelBracket: 328,
-            heroTree: 40,
-            augmentationCount: 0,
-            healerCount: 4,
+            durationMs: 319478,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.375,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
+              {
+                spellId: '205021',
+                count: 9,
+              },
+              {
+                spellId: '212653',
+                count: 12,
+              },
+              {
+                spellId: '80353',
+                count: 1,
+              },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
+                spellId: '342245',
+                count: 3,
+              },
+              {
+                spellId: '199786',
+                count: 23,
+              },
+              {
+                spellId: '44614',
+                count: 39,
+              },
+              {
+                spellId: '116',
+                count: 38,
+              },
+              {
+                spellId: '30455',
+                count: 123,
+              },
+              {
                 spellId: '414658',
-                count: 4,
+                count: 2,
               },
               {
                 spellId: '84714',
-                count: 10,
+                count: 11,
               },
               {
-                spellId: '205021',
-                count: 10,
+                spellId: '342247',
+                count: 3,
+              },
+              {
+                spellId: '11426',
+                count: 4,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12205,
+                uses: 1,
+              },
+              {
+                spellId: '395152',
+                activeMs: 246070,
+                uses: 31,
+              },
+              {
+                spellId: '10060',
+                activeMs: 47851,
+                uses: 4,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/7kwpxXJ2YNGrcDg4#fight=42&source=51',
+            startedAt: '2026-10-08T02:37:40.195Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 321879,
+            itemLevelBracket: 331,
+            gearItemLevel: 331.1875,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '212653',
+                count: 11,
+              },
+              {
+                spellId: '414658',
+                count: 3,
+              },
+              {
+                spellId: '84714',
+                count: 6,
+              },
+              {
+                spellId: '44614',
+                count: 45,
+              },
+              {
+                spellId: '1234768',
+                count: 1,
               },
               {
                 spellId: '199786',
                 count: 25,
               },
               {
-                spellId: '11426',
-                count: 12,
-              },
-              {
-                spellId: '44614',
-                count: 45,
-              },
-              {
-                spellId: '157980',
+                spellId: '342245',
                 count: 3,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '116',
-                count: 37,
-              },
-              {
-                spellId: '2139',
-                count: 1,
-              },
-              {
-                spellId: '80353',
-                count: 1,
-              },
-              {
-                spellId: '30455',
-                count: 147,
-              },
-              {
-                spellId: '212653',
-                count: 10,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/7TkrpfVjA4yP6b1h#fight=2&source=5',
-            startedAt: '2026-10-08T02:05:27.684Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 406815,
-            itemLevelBracket: 328,
-            heroTree: 41,
-            augmentationCount: 0,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '80353',
-                count: 1,
-              },
-              {
-                spellId: '30455',
-                count: 79,
-              },
-              {
-                spellId: '358733',
-                count: 8,
-              },
-              {
-                spellId: '431044',
-                count: 84,
-              },
-              {
-                spellId: '122',
-                count: 3,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '414658',
-                count: 4,
-              },
-              {
-                spellId: '199786',
-                count: 30,
-              },
-              {
-                spellId: '212653',
-                count: 6,
-              },
-              {
-                spellId: '44614',
-                count: 45,
-              },
-              {
-                spellId: '1250533',
-                count: 4,
-              },
-              {
-                spellId: '84714',
-                count: 6,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '357214',
-                count: 1,
-              },
-              {
-                spellId: '205021',
-                count: 8,
-              },
-              {
-                spellId: '2139',
-                count: 2,
               },
               {
                 spellId: '153595',
                 count: 8,
               },
               {
-                spellId: '11426',
-                count: 16,
+                spellId: '80353',
+                count: 1,
               },
               {
-                spellId: '120',
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '11426',
+                count: 5,
+              },
+              {
+                spellId: '30455',
+                count: 99,
+              },
+              {
+                spellId: '431044',
+                count: 77,
+              },
+              {
+                spellId: '1250533',
+                count: 4,
+              },
+              {
+                spellId: '205021',
+                count: 8,
+              },
+              {
+                spellId: '342247',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 38702,
+                uses: 3,
+              },
+              {
+                spellId: '395152',
+                activeMs: 309299,
+                uses: 36,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
+        durationDifference: 0.011067241854450639,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/NmcQxhRtXVM4Dvw6#fight=62&source=3631',
+            startedAt: '2026-10-07T06:09:19.832Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1866037,
+            itemLevelBracket: 16,
+            gearItemLevel: 326.125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 16,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '11426',
+                count: 41,
+              },
+              {
+                spellId: '190356',
+                count: 32,
+              },
+              {
+                spellId: '44614',
+                count: 164,
+              },
+              {
+                spellId: '205021',
+                count: 41,
+              },
+              {
+                spellId: '6262',
+                count: 2,
+              },
+              {
+                spellId: '30455',
+                count: 596,
+              },
+              {
+                spellId: '212653',
+                count: 21,
+              },
+              {
+                spellId: '80353',
+                count: 3,
+              },
+              {
+                spellId: '199786',
+                count: 107,
+              },
+              {
+                spellId: '116',
+                count: 59,
+              },
+              {
+                spellId: '1293316',
+                count: 14,
+              },
+              {
+                spellId: '31661',
+                count: 9,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '55342',
                 count: 1,
+              },
+              {
+                spellId: '84714',
+                count: 49,
+              },
+              {
+                spellId: '2139',
+                count: 31,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1459',
+                count: 3,
+              },
+              {
+                spellId: '45438',
+                count: 1,
+              },
+              {
+                spellId: '110960',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Nb8WD3aKwFqxpzyL#fight=2&source=189',
+            startedAt: '2026-10-07T17:14:52.774Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1886920,
+            itemLevelBracket: 16,
+            gearItemLevel: 326.3125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 16,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '55342',
+                count: 5,
+              },
+              {
+                spellId: '393438',
+                count: 5,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1459',
+                count: 13,
+              },
+              {
+                spellId: '153595',
+                count: 30,
+              },
+              {
+                spellId: '11426',
+                count: 63,
+              },
+              {
+                spellId: '199786',
+                count: 121,
+              },
+              {
+                spellId: '414658',
+                count: 5,
+              },
+              {
+                spellId: '342247',
+                count: 3,
+              },
+              {
+                spellId: '2139',
+                count: 21,
+              },
+              {
+                spellId: '30455',
+                count: 339,
+              },
+              {
+                spellId: '31661',
+                count: 5,
+              },
+              {
+                spellId: '475',
+                count: 1,
+              },
+              {
+                spellId: '84714',
+                count: 27,
+              },
+              {
+                spellId: '431044',
+                count: 289,
+              },
+              {
+                spellId: '130',
+                count: 1,
+              },
+              {
+                spellId: '205021',
+                count: 30,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '190356',
+                count: 7,
+              },
+              {
+                spellId: '44614',
+                count: 206,
+              },
+              {
+                spellId: '212653',
+                count: 23,
+              },
+              {
+                spellId: '80353',
+                count: 3,
+              },
+              {
+                spellId: '342245',
+                count: 3,
+              },
+              {
+                spellId: '1250533',
+                count: 16,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
   'warlock-affliction': {
@@ -23386,7 +28440,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '1259790',
     summary: '고통은 고통·부패를 유지하면서 영혼의 조각을 불안정한 고통에 쓰고, 암흑시선 중 재앙의 손아귀로 겹친 지속 피해를 회수하는 전문화입니다. 영혼 수확자는 암흑의 수확으로 받는 조각과 일몰 소비가 중요하고, 지옥소환사는 쇠퇴가 걸린 우선 대상에 소비를 모읍니다. 12.1의 새 특성과 시즌 2 세트까지 적용하면 단일·광역에서 확인할 조건이 달라지므로 오프닝 이후에는 고정 순서 대신 아래 우선순위를 따릅니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '기술 이름과 아이콘은 현재 Wowhead 한국어 주문 자료를 기준으로 했습니다. 같은 이름의 특성 노드·시전 기술·자동 피해는 ID를 나눴습니다. Wowhead의 9월 7일 오프닝과 Icy Veins의 8월 31일 설명은 수확·암흑시선 순서가 다릅니다. 여기서는 현재 SimC의 조건을 함께 읽어 영혼 수확자의 수확 전 가속·세트 준비와 지옥소환사의 적개심 조건을 별도로 제시합니다. SimC는 공개 구현과 행동 우선순위를 읽은 자료이지 이 캐릭터로 돌린 개인 심크나 실측 로그가 아닙니다. Motoko는 흑마법사 디스코드 공동 관리자이자 LockOneStopShop 기여자로 소개되어 있지만 비공개 메시지는 확보하지 않았습니다. 현재 로그 집계를 읽지 못한 상태에서 과거 6월 사용률을 최신 메타 수치로 재사용하지 않습니다.',
     playstyle: [
       {
@@ -23555,18 +28609,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 19,819건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/PvYAgMmadR1jXxz8#fight=4&source=6',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:09:55.740Z · 장비 평균 328.75 · 실제 415.3초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=25',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T10:33:24.413Z · 장비 구간 327 · 415.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T10:33:24.413Z · 장비 평균 327.75 · 실제 415.9초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/98j1A2xKMtzJD6yH#fight=6&source=210',
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rFQtfnC2LpYGHDqN#fight=9&source=5',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:09:56.553Z · 장비 구간 327 · 415.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T04:06:28.878Z · 장비 평균 327.56 · 실제 1793.3초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/xzXGPK8a4YCRdcQy#fight=1&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T20:04:13.894Z · 장비 평균 328.19 · 실제 1774.8초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -23577,7 +28645,7 @@ export const guideManuscripts = {
       '영혼 수확자 수확의 기본 완주는 세 조각을 공급합니다. 지옥소환사에는 죽음의 그림자가 없으므로 수확 전 조각 비우기를 같은 이유로 강제하지 않습니다.',
       '9월 19일 SimC는 영혼 수확자 단일에서 세트·가속 준비와 조건부 무료 씨앗 사용을 구분합니다. 공개 가이드의 단순 설명과 달라 조건을 명시했으며 실제 로그 결과라고 제시하지 않습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 1일 검게 물든 영혼의 치명적인 메아리 적용 오류 수정은 운용 근거와 구별합니다. 10월 6일 지옥의 결속·혈석 변경은 PvP 전용입니다.',
-      '10월 8일 흑마법사 고통의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 흑마법사 고통의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 17단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.63, 실제 전투 길이 차이는 0.14%/1.03%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '영혼 수확자가 기본 학습 예시지만 최신 집계 비율을 확인한 것은 아닙니다. 장비와 영웅 특성, 단일·광역 특성의 선택이 같은지부터 비교하세요.',
@@ -23585,7 +28653,7 @@ export const guideManuscripts = {
       '현재 툴팁과 패치 노트가 다른 확률·시간은 하나로 숨기지 않았습니다. 실제 캐릭터 표시와 최신 핫픽스를 우선하며 고정된 발동 횟수를 보장하지 않습니다.',
       '아래 전투 흐름은 실제 WCL 이벤트 타임라인이 아닙니다. 자동 효과는 버튼으로 표시하지 않으며 필요한 차단·생존·기믹 이동은 공격표보다 먼저 처리합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -24518,10 +29586,103 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0014018365742288095,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.0013561506481390199,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/PvYAgMmadR1jXxz8#fight=4&source=6',
+            startedAt: '2026-10-08T01:09:55.740Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 415319,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '6789',
+                count: 2,
+              },
+              {
+                spellId: '48018',
+                count: 3,
+              },
+              {
+                spellId: '1257052',
+                count: 8,
+              },
+              {
+                spellId: '48181',
+                count: 18,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '452930',
+                count: 2,
+              },
+              {
+                spellId: '205180',
+                count: 4,
+              },
+              {
+                spellId: '1259790',
+                count: 30,
+              },
+              {
+                spellId: '27243',
+                count: 89,
+              },
+              {
+                spellId: '385899',
+                count: 1,
+              },
+              {
+                spellId: '980',
+                count: 61,
+              },
+              {
+                spellId: '686',
+                count: 57,
+              },
+              {
+                spellId: '48020',
+                count: 3,
+              },
+              {
+                spellId: '111400',
+                count: 11,
+              },
+              {
+                spellId: '108416',
+                count: 2,
+              },
+              {
+                spellId: '172',
+                count: 1,
+              },
+              {
+                spellId: '30283',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 9898,
+                uses: 1,
+              },
+            ],
+          },
           {
             url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=25',
             startedAt: '2026-10-07T10:33:24.413Z',
@@ -24531,25 +29692,65 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 415883,
             itemLevelBracket: 327,
-            heroTree: 57,
+            gearItemLevel: 327.75,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '48020',
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '6789',
+                count: 4,
+              },
+              {
+                spellId: '172',
                 count: 3,
               },
               {
-                spellId: '452930',
-                count: 3,
+                spellId: '1293316',
+                count: 4,
+              },
+              {
+                spellId: '980',
+                count: 41,
+              },
+              {
+                spellId: '686',
+                count: 40,
+              },
+              {
+                spellId: '385899',
+                count: 7,
+              },
+              {
+                spellId: '1257052',
+                count: 9,
+              },
+              {
+                spellId: '205180',
+                count: 4,
+              },
+              {
+                spellId: '1259790',
+                count: 49,
+              },
+              {
+                spellId: '48181',
+                count: 23,
+              },
+              {
+                spellId: '111400',
+                count: 14,
               },
               {
                 spellId: '111771',
                 count: 2,
               },
               {
-                spellId: '385899',
-                count: 7,
+                spellId: '6201',
+                count: 1,
               },
               {
                 spellId: '27243',
@@ -24560,157 +29761,322 @@ export const guideManuscripts = {
                 count: 3,
               },
               {
+                spellId: '48020',
+                count: 3,
+              },
+              {
                 spellId: '108416',
                 count: 1,
               },
               {
-                spellId: '48181',
-                count: 23,
-              },
-              {
-                spellId: '172',
+                spellId: '452930',
                 count: 3,
-              },
-              {
-                spellId: '1259790',
-                count: 49,
-              },
-              {
-                spellId: '6789',
-                count: 4,
-              },
-              {
-                spellId: '686',
-                count: 40,
-              },
-              {
-                spellId: '980',
-                count: 41,
-              },
-              {
-                spellId: '1293316',
-                count: 4,
-              },
-              {
-                spellId: '205180',
-                count: 4,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '6201',
-                count: 1,
-              },
-              {
-                spellId: '1257052',
-                count: 9,
-              },
-              {
-                spellId: '111400',
-                count: 14,
               },
             ],
             externalBuffs: [],
           },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.010314940827659966,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/98j1A2xKMtzJD6yH#fight=6&source=210',
-            startedAt: '2026-10-08T01:09:56.553Z',
+            url: 'https://www.warcraftlogs.com/reports/rFQtfnC2LpYGHDqN#fight=9&source=5',
+            startedAt: '2026-10-08T04:06:28.878Z',
             region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
+            encounterId: 12993,
+            difficulty: 10,
             kill: true,
-            durationMs: 415300,
-            itemLevelBracket: 327,
-            heroTree: 57,
+            durationMs: 1793321,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.5625,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
             casts: [
               {
-                spellId: '30283',
+                spellId: '1287798',
                 count: 2,
-              },
-              {
-                spellId: '48018',
-                count: 3,
-              },
-              {
-                spellId: '980',
-                count: 47,
-              },
-              {
-                spellId: '1295132',
-                count: 2,
-              },
-              {
-                spellId: '172',
-                count: 3,
-              },
-              {
-                spellId: '104773',
-                count: 1,
-              },
-              {
-                spellId: '385899',
-                count: 1,
-              },
-              {
-                spellId: '108416',
-                count: 3,
-              },
-              {
-                spellId: '6789',
-                count: 2,
-              },
-              {
-                spellId: '48181',
-                count: 20,
               },
               {
                 spellId: '205180',
+                count: 12,
+              },
+              {
+                spellId: '1236994',
                 count: 4,
+              },
+              {
+                spellId: '111400',
+                count: 9,
+              },
+              {
+                spellId: '20707',
+                count: 1,
               },
               {
                 spellId: '48020',
                 count: 3,
               },
               {
-                spellId: '33702',
+                spellId: '29893',
+                count: 3,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '48018',
+                count: 1,
+              },
+              {
+                spellId: '27243',
+                count: 285,
+              },
+              {
+                spellId: '1295275',
+                count: 12,
+              },
+              {
+                spellId: '5782',
+                count: 1,
+              },
+              {
+                spellId: '30283',
+                count: 8,
+              },
+              {
+                spellId: '1259790',
+                count: 139,
+              },
+              {
+                spellId: '6789',
+                count: 15,
+              },
+              {
+                spellId: '104773',
+                count: 4,
+              },
+              {
+                spellId: '234153',
+                count: 1,
+              },
+              {
+                spellId: '172',
+                count: 122,
+              },
+              {
+                spellId: '980',
+                count: 326,
+              },
+              {
+                spellId: '111771',
+                count: 5,
+              },
+              {
+                spellId: '691',
+                count: 3,
+              },
+              {
+                spellId: '1257052',
+                count: 31,
+              },
+              {
+                spellId: '686',
+                count: 231,
+              },
+              {
+                spellId: '385899',
+                count: 16,
+              },
+              {
+                spellId: '333889',
+                count: 2,
+              },
+              {
+                spellId: '108416',
+                count: 17,
+              },
+              {
+                spellId: '48181',
+                count: 78,
+              },
+              {
+                spellId: '452930',
+                count: 11,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/xzXGPK8a4YCRdcQy#fight=1&source=3',
+            startedAt: '2026-10-07T20:04:13.894Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1774823,
+            itemLevelBracket: 17,
+            gearItemLevel: 328.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '48018',
+                count: 2,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1259790',
+                count: 184,
+              },
+              {
+                spellId: '205180',
+                count: 12,
+              },
+              {
+                spellId: '1261153',
+                count: 47,
+              },
+              {
+                spellId: '691',
+                count: 2,
+              },
+              {
+                spellId: '27243',
+                count: 328,
+              },
+              {
+                spellId: '1234969',
+                count: 1,
+              },
+              {
+                spellId: '452930',
+                count: 1,
+              },
+              {
+                spellId: '1293316',
+                count: 11,
+              },
+              {
+                spellId: '48181',
+                count: 88,
+              },
+              {
+                spellId: '29893',
+                count: 1,
+              },
+              {
+                spellId: '111400',
+                count: 23,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '385899',
+                count: 4,
+              },
+              {
+                spellId: '172',
+                count: 21,
+              },
+              {
+                spellId: '30283',
+                count: 14,
+              },
+              {
+                spellId: '119910',
+                count: 21,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '6789',
+                count: 10,
+              },
+              {
+                spellId: '111771',
                 count: 4,
               },
               {
                 spellId: '1257052',
-                count: 8,
+                count: 36,
               },
               {
-                spellId: '111400',
-                count: 10,
+                spellId: '198590',
+                count: 236,
               },
               {
-                spellId: '1259790',
-                count: 65,
+                spellId: '1714',
+                count: 3,
               },
               {
-                spellId: '686',
-                count: 82,
+                spellId: '980',
+                count: 252,
               },
               {
-                spellId: '27243',
-                count: 47,
+                spellId: '48020',
+                count: 2,
+              },
+              {
+                spellId: '333889',
+                count: 1,
+              },
+              {
+                spellId: '702',
+                count: 4,
+              },
+              {
+                spellId: '1234768',
+                count: 1,
+              },
+              {
+                spellId: '1271802',
+                count: 5,
+              },
+              {
+                spellId: '108416',
+                count: 6,
+              },
+              {
+                spellId: '104773',
+                count: 6,
               },
             ],
-            externalBuffs: [
-              {
-                spellId: '10060',
-                activeMs: 45017,
-                uses: 3,
-              },
-            ],
+            externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -24720,7 +30086,7 @@ export const guideManuscripts = {
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '105174',
     summary: '악마 흑마법사는 조각을 굴단의 손으로 바꿔 임프를 만들고, 악마 폭군 소환 뒤에도 그 흐름을 계속 이어가는 전문화입니다. 영혼 수확자는 폭군으로 받을 3조각의 자리를 비우고, 악마학자는 의식과 강화 주문을 놓치지 않는 것이 중요합니다. 파열은 광역 전용이라고 외우기보다 지옥으로부터의 귀환을 선택했는지부터 확인하세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '기준일은 2026-09-21입니다. 공개 가이드의 업데이트 날짜는 8월이고 그 이후 수치 조정이 있어, 추천과 실제 주문 효과를 분리했습니다. Motoko는 순수 단일 영혼 수확자와 쐐기 악마학자를 추천하지만 Sjeletyven의 8월 설명은 악마학자에 더 무게를 둡니다. 여기서는 어느 쪽이 무조건 몇 % 강하다고 보장하지 않습니다. 현재 Archon 레이드·고단 쐐기 집계는 접근하지 못했으며 과거 6월 사용률을 최신 근거로 재사용하지 않습니다. Warcraft Logs 개인 비교나 본인 캐릭터 시뮬레이션을 새로 실행한 결과는 아닙니다. Council of the Black Harvest 관련 근거는 Motoko의 공개 저자 소개와 LockOneStopShop 연결에 한정하며 비공개 디스코드 대화는 인용하지 않습니다.',
     playstyle: [
       {
@@ -24868,18 +30234,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 258,852건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=5',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=72',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:07:28.707Z · 장비 구간 328 · 327.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:00:57.478Z · 장비 평균 328.94 · 실제 315.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/FQzDgnjTtX4Z9qHC#fight=4&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/YWcqHGh21MdrpRvz#fight=1&source=15',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:47:50.742Z · 장비 구간 328 · 326.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:05:34.450Z · 장비 평균 327.94 · 실제 306.8초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/phG1JDn639cC2ZPy#fight=45&source=623',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T05:42:40.668Z · 장비 평균 327.94 · 실제 1717.9초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Zm4hLWjRbaVFd23B#fight=56&source=22',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T04:38:52.492Z · 장비 평균 328.75 · 실제 1708.0초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -24892,7 +30272,7 @@ export const guideManuscripts = {
       '현재 SimC 우선순위는 파열을 임프 6마리와 3대상 이상 또는 지옥으로부터의 귀환 조건에서 사용합니다. Icy Veins는 핵 1개 이하 조건도 설명하므로 핵 과충전 위험을 함께 보는 실전 조건으로 남깁니다.',
       '흑마법서: 지옥 유린자의 현재 기능은 적 마법 효과 해제입니다. 오래된 추가 차단 설명을 반영하지 않으며 도끼 던지기와 별도로 표시합니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 10월 6일 지옥 군주 부르기의 지옥 베기 150% 상향은 PvP 전용이며 PvE 악마 조각 소비나 영웅 특성 우선순위에 합산하지 않습니다.',
-      '10월 8일 흑마법사 악마의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 흑마법사 악마의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.81, 실제 전투 길이 차이는 2.74%/0.58%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '공개 가이드 업데이트 이후 핫픽스가 있습니다. 빌드 추천의 순위를 절대값으로 단정하지 않고 자신이 하는 전투의 대상 수·이동·세트에 맞춰 비교합니다.',
@@ -24902,7 +30282,7 @@ export const guideManuscripts = {
       'SimC 버그 모드에는 폭군 소환 순간 썩은마귀·지옥수호병을 추가 계산하는 메모가 있습니다. 이 미확정 동작을 모든 소환수가 폭군을 강화하거나 수명이 연장된다는 보편 규칙으로 쓰지 않습니다.',
       '차트는 선택한 특성과 실제 자원에 따라 단계를 건너뛰거나 생성 주문을 반복하는 예시입니다. 모든 가속·전투 전 임프·조각 상태에서 같은 초 단위 순서가 보장되지는 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -25817,225 +31197,516 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0016190522740047412,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.0274335637955575,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=5',
-            startedAt: '2026-10-08T00:07:28.707Z',
+            url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=72',
+            startedAt: '2026-10-07T01:00:57.478Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 327352,
+            durationMs: 315453,
             itemLevelBracket: 328,
-            heroTree: 59,
+            gearItemLevel: 328.9375,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '264178',
-                count: 58,
-              },
-              {
-                spellId: '111771',
-                count: 1,
-              },
-              {
-                spellId: '1293316',
-                count: 3,
-              },
-              {
-                spellId: '1276452',
-                count: 3,
+                spellId: '196277',
+                count: 19,
               },
               {
                 spellId: '1236616',
                 count: 2,
               },
               {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '686',
-                count: 59,
-              },
-              {
-                spellId: '48018',
-                count: 2,
-              },
-              {
-                spellId: '105174',
-                count: 82,
-              },
-              {
-                spellId: '196277',
-                count: 17,
-              },
-              {
-                spellId: '48020',
-                count: 2,
-              },
-              {
-                spellId: '452930',
-                count: 2,
-              },
-              {
-                spellId: '385899',
-                count: 1,
-              },
-              {
-                spellId: '434635',
-                count: 8,
-              },
-              {
-                spellId: '104773',
-                count: 1,
-              },
-              {
                 spellId: '265187',
-                count: 6,
-              },
-              {
-                spellId: '111400',
                 count: 5,
               },
               {
-                spellId: '104316',
-                count: 16,
-              },
-              {
                 spellId: '108416',
-                count: 7,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 305858,
-                uses: 40,
-              },
-              {
-                spellId: '390386',
-                activeMs: 40016,
-                uses: 2,
-              },
-              {
-                spellId: '413984',
-                activeMs: 37014,
-                uses: 3,
-              },
-              {
-                spellId: '10060',
-                activeMs: 45026,
-                uses: 3,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/FQzDgnjTtX4Z9qHC#fight=4&source=7',
-            startedAt: '2026-10-07T00:47:50.742Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 326822,
-            itemLevelBracket: 328,
-            heroTree: 59,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '264178',
-                count: 54,
-              },
-              {
-                spellId: '686',
-                count: 57,
-              },
-              {
-                spellId: '104316',
-                count: 16,
-              },
-              {
-                spellId: '111400',
-                count: 3,
-              },
-              {
-                spellId: '111771',
-                count: 1,
-              },
-              {
-                spellId: '1295132',
-                count: 1,
-              },
-              {
-                spellId: '196277',
-                count: 18,
-              },
-              {
-                spellId: '1293316',
                 count: 3,
               },
               {
                 spellId: '434635',
                 count: 8,
-              },
-              {
-                spellId: '452930',
-                count: 2,
-              },
-              {
-                spellId: '265187',
-                count: 6,
-              },
-              {
-                spellId: '105174',
-                count: 76,
-              },
-              {
-                spellId: '108416',
-                count: 6,
               },
               {
                 spellId: '1276452',
                 count: 3,
               },
               {
-                spellId: '385899',
+                spellId: '1293316',
                 count: 3,
+              },
+              {
+                spellId: '264178',
+                count: 52,
+              },
+              {
+                spellId: '111400',
+                count: 6,
+              },
+              {
+                spellId: '48018',
+                count: 2,
+              },
+              {
+                spellId: '119914',
+                count: 1,
+              },
+              {
+                spellId: '48020',
+                count: 2,
+              },
+              {
+                spellId: '385899',
+                count: 2,
+              },
+              {
+                spellId: '104316',
+                count: 15,
+              },
+              {
+                spellId: '686',
+                count: 54,
+              },
+              {
+                spellId: '105174',
+                count: 74,
+              },
+              {
+                spellId: '452930',
+                count: 2,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 305569,
+                uses: 37,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/YWcqHGh21MdrpRvz#fight=1&source=15',
+            startedAt: '2026-10-07T00:05:34.450Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 306799,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '33702',
+                count: 3,
+              },
+              {
+                spellId: '452930',
+                count: 1,
+              },
+              {
+                spellId: '434635',
+                count: 7,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+              {
+                spellId: '1276452',
+                count: 3,
+              },
+              {
+                spellId: '265187',
+                count: 5,
+              },
+              {
+                spellId: '111400',
+                count: 4,
+              },
+              {
+                spellId: '48020',
+                count: 2,
+              },
+              {
+                spellId: '196277',
+                count: 17,
+              },
+              {
+                spellId: '48018',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
               },
               {
                 spellId: '6789',
                 count: 1,
               },
               {
-                spellId: '104773',
-                count: 2,
+                spellId: '104316',
+                count: 15,
               },
               {
-                spellId: '358733',
+                spellId: '108416',
+                count: 5,
+              },
+              {
+                spellId: '264178',
+                count: 53,
+              },
+              {
+                spellId: '105174',
+                count: 71,
+              },
+              {
+                spellId: '1293316',
                 count: 3,
+              },
+              {
+                spellId: '686',
+                count: 51,
               },
             ],
             externalBuffs: [
               {
                 spellId: '395152',
-                activeMs: 304282,
-                uses: 46,
+                activeMs: 301116,
+                uses: 39,
               },
               {
                 spellId: '413984',
-                activeMs: 24215,
-                uses: 2,
+                activeMs: 2697,
+                uses: 1,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.005790754002972215,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/phG1JDn639cC2ZPy#fight=45&source=623',
+            startedAt: '2026-10-07T05:42:40.668Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1717911,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1271802',
+                count: 4,
+              },
+              {
+                spellId: '6201',
+                count: 1,
+              },
+              {
+                spellId: '48018',
+                count: 5,
+              },
+              {
+                spellId: '1276452',
+                count: 12,
+              },
+              {
+                spellId: '108416',
+                count: 27,
+              },
+              {
+                spellId: '111400',
+                count: 17,
+              },
+              {
+                spellId: '119910',
+                count: 11,
+              },
+              {
+                spellId: '105174',
+                count: 335,
+              },
+              {
+                spellId: '6789',
+                count: 4,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
+              },
+              {
+                spellId: '29893',
+                count: 3,
+              },
+              {
+                spellId: '1714',
+                count: 1,
+              },
+              {
+                spellId: '48020',
+                count: 1,
+              },
+              {
+                spellId: '30283',
+                count: 3,
+              },
+              {
+                spellId: '686',
+                count: 201,
+              },
+              {
+                spellId: '104773',
+                count: 7,
+              },
+              {
+                spellId: '702',
+                count: 20,
+              },
+              {
+                spellId: '265187',
+                count: 24,
+              },
+              {
+                spellId: '20707',
+                count: 2,
+              },
+              {
+                spellId: '196277',
+                count: 85,
+              },
+              {
+                spellId: '385899',
+                count: 12,
+              },
+              {
+                spellId: '452930',
+                count: 9,
+              },
+              {
+                spellId: '132411',
+                count: 3,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '691',
+                count: 1,
+              },
+              {
+                spellId: '111771',
+                count: 2,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+              {
+                spellId: '434635',
+                count: 39,
+              },
+              {
+                spellId: '104316',
+                count: 77,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '264178',
+                count: 257,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Zm4hLWjRbaVFd23B#fight=56&source=22',
+            startedAt: '2026-10-07T04:38:52.492Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1707963,
+            itemLevelBracket: 19,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '111400',
+                count: 17,
+              },
+              {
+                spellId: '686',
+                count: 306,
+              },
+              {
+                spellId: '1295132',
+                count: 6,
+              },
+              {
+                spellId: '1714',
+                count: 3,
+              },
+              {
+                spellId: '265187',
+                count: 24,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '691',
+                count: 2,
+              },
+              {
+                spellId: '434635',
+                count: 37,
+              },
+              {
+                spellId: '48018',
+                count: 6,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '385899',
+                count: 22,
+              },
+              {
+                spellId: '452930',
+                count: 11,
+              },
+              {
+                spellId: '1271802',
+                count: 3,
+              },
+              {
+                spellId: '132411',
+                count: 1,
+              },
+              {
+                spellId: '104316',
+                count: 74,
+              },
+              {
+                spellId: '108416',
+                count: 22,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '333889',
+                count: 2,
+              },
+              {
+                spellId: '30283',
+                count: 4,
+              },
+              {
+                spellId: '1276452',
+                count: 14,
+              },
+              {
+                spellId: '6789',
+                count: 5,
+              },
+              {
+                spellId: '105174',
+                count: 364,
+              },
+              {
+                spellId: '1250533',
+                count: 13,
+              },
+              {
+                spellId: '6201',
+                count: 3,
+              },
+              {
+                spellId: '234153',
+                count: 1,
+              },
+              {
+                spellId: '48020',
+                count: 6,
+              },
+              {
+                spellId: '104773',
+                count: 6,
+              },
+              {
+                spellId: '264178',
+                count: 253,
+              },
+              {
+                spellId: '196277',
+                count: 67,
+              },
+              {
+                spellId: '111771',
+                count: 7,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -26045,7 +31716,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '116858',
     summary: '파괴는 지속 피해로 조각을 만들고, 긴 시전을 확보해 혼돈의 화살을 꽂는 원거리 딜러입니다. 12.1에서는 점화·어둠의 연소의 확정 치명타와 상향된 불의 비를 반영해야 합니다. 지옥소환사는 쇠퇴와 적개심, 악마학자는 의식 완료 뒤 강화 소비와 황폐를 중심으로 단일·두 대상·광역의 선택을 나눕니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Icy Veins의 실제 영웅·대상 수 선택 화면에서 오프닝·단일·광역을 각각 확인했습니다. 현재 특성 페이지와 선택 화면은 단일 지옥소환사·밀집 광역 악마학자를 추천하지만, 같은 사이트의 일부 소개 문장 및 8월 25일 이전 다른 가이드의 광역 기준과 차이가 있습니다. 뒤의 상향과 현재 주문 효과를 우선하며 오래된 6월 로그 비율을 최신 근거로 재사용하지 않습니다. 공개 자료를 작성하는 Motoko의 직업 디스코드 활동은 확인했지만 비공개 메시지를 열람한 것은 아닙니다.',
     playstyle: [
       {
@@ -26200,18 +31871,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 17,064건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=13',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/pda4TVR9tJ3GcLY2#fight=38&source=3',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:25:01.807Z · 장비 구간 326 · 437.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T03:49:49.521Z · 장비 평균 329.56 · 실제 392.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/Jtmpv4kMF9jBQTPG#fight=14&source=224',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/47DX2dnxNcqrVQmG#fight=2&source=15',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T03:21:26.942Z · 장비 구간 326 · 429.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:01:13.157Z · 장비 평균 329.56 · 실제 411.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/4Gxp96qK7NWm2APf#fight=36&source=418',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T01:55:36.084Z · 장비 평균 327.56 · 실제 1738.1초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/KP6W9An8krFbGmy2#fight=15&source=619',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T05:20:40.442Z · 장비 평균 327.75 · 실제 1825.0초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -26224,7 +31909,7 @@ export const guideManuscripts = {
       '일반 검게 물든 영혼은 쇠퇴가 있는 대상에 혼돈의 화살·어둠의 연소를 맞혀 중첩을 올립니다. 모든 소비가 모든 적에게 적용되는 효과가 아닙니다.',
       '니힐람의 불씨 첫·중간·마지막 노드, 실제 메아리와 니힐람의 환영, 시즌 2의 암흑 티탄의 징표를 서로 다른 ID로 저장했습니다.',
       '10월 2일까지 한국어 누적 긴급 수정과 미국 10월 6일 적용 공지를 대조했습니다. 9월 3일 대격변 뒤 주문 대기열로 장신구 집중이 취소되던 수정과 PvE 공격력 변경을 구별합니다. 10월 6일 흑마법사 변경은 PvP 전용입니다.',
-      '10월 8일 흑마법사 파괴의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 흑마법사 파괴의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Kings\' Rest 17단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.00/0.19, 실제 전투 길이 차이는 4.49%/4.76%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '10월 8일 Archon 레이드·쐐기 공개 집계와 대표 WCL 링크를 확인했습니다. 개별 이벤트 전수 비교와 개인 시뮬레이션을 수행한 결과는 아니므로 특정 빌드의 점수 상승이나 개인 예상 DPS를 제시하지 않습니다.',
@@ -26233,7 +31918,7 @@ export const guideManuscripts = {
       '메아리의 소비기별 효과 비율은 툴팁과 확인한 SimC bugs 동작이 다릅니다. 실제 이벤트 검증 전에는 특정 비율을 실측 사실로 주장하지 않습니다.',
       '부모 흑마법사 공용 노트는 두 전문화의 효과를 함께 담습니다. 고통 전용 핫픽스나 악마의 조각당 의식 감소를 파괴에 적용하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -27188,97 +32873,138 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.01809225954201966,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.04487400843348297,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/zdDZ8W126mhRcNyg#fight=9&source=13',
-            startedAt: '2026-10-08T02:25:01.807Z',
+            url: 'https://www.warcraftlogs.com/reports/pda4TVR9tJ3GcLY2#fight=38&source=3',
+            startedAt: '2026-10-07T03:49:49.521Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 437093,
-            itemLevelBracket: 326,
-            heroTree: 59,
+            durationMs: 392765,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.5625,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '452930',
-                count: 3,
-              },
-              {
-                spellId: '80240',
-                count: 6,
-              },
-              {
-                spellId: '434635',
+                spellId: '111400',
                 count: 8,
               },
               {
-                spellId: '111400',
-                count: 7,
+                spellId: '17962',
+                count: 55,
               },
               {
-                spellId: '108416',
-                count: 6,
+                spellId: '1214467',
+                count: 23,
               },
               {
-                spellId: '29722',
-                count: 85,
+                spellId: '48020',
+                count: 3,
+              },
+              {
+                spellId: '104773',
+                count: 1,
+              },
+              {
+                spellId: '48018',
+                count: 3,
               },
               {
                 spellId: '1122',
                 count: 5,
               },
               {
-                spellId: '334275',
-                count: 5,
-              },
-              {
-                spellId: '30283',
-                count: 2,
-              },
-              {
-                spellId: '17877',
-                count: 56,
-              },
-              {
-                spellId: '6353',
-                count: 9,
-              },
-              {
-                spellId: '17962',
-                count: 56,
-              },
-              {
                 spellId: '1250533',
                 count: 5,
               },
               {
-                spellId: '348',
-                count: 26,
-              },
-              {
-                spellId: '357214',
-                count: 2,
-              },
-              {
-                spellId: '358733',
-                count: 3,
+                spellId: '29722',
+                count: 74,
               },
               {
                 spellId: '116858',
-                count: 44,
+                count: 34,
               },
               {
-                spellId: '5740',
-                count: 10,
+                spellId: '6353',
+                count: 7,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '442726',
+                count: 5,
+              },
+              {
+                spellId: '80240',
+                count: 5,
+              },
+              {
+                spellId: '152108',
+                count: 7,
+              },
+              {
+                spellId: '6789',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '17877',
+                count: 69,
+              },
+              {
+                spellId: '445468',
+                count: 32,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 45002,
+                uses: 3,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/47DX2dnxNcqrVQmG#fight=2&source=15',
+            startedAt: '2026-10-07T01:01:13.157Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 411218,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '6353',
+                count: 8,
+              },
+              {
+                spellId: '1297908',
+                count: 2,
+              },
+              {
+                spellId: '29722',
+                count: 75,
+              },
+              {
+                spellId: '116858',
+                count: 61,
               },
               {
                 spellId: '104773',
@@ -27286,114 +33012,321 @@ export const guideManuscripts = {
               },
               {
                 spellId: '385899',
+                count: 1,
+              },
+              {
+                spellId: '1122',
+                count: 5,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '80240',
+                count: 6,
+              },
+              {
+                spellId: '108416',
+                count: 1,
+              },
+              {
+                spellId: '358733',
                 count: 3,
+              },
+              {
+                spellId: '111400',
+                count: 13,
+              },
+              {
+                spellId: '111771',
+                count: 1,
+              },
+              {
+                spellId: '17962',
+                count: 60,
+              },
+              {
+                spellId: '442726',
+                count: 7,
+              },
+              {
+                spellId: '445468',
+                count: 51,
+              },
+              {
+                spellId: '5740',
+                count: 4,
+              },
+              {
+                spellId: '17877',
+                count: 52,
               },
             ],
             externalBuffs: [],
           },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
+        durationDifference: 0.047571688226149635,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/Jtmpv4kMF9jBQTPG#fight=14&source=224',
-            startedAt: '2026-10-07T03:21:26.942Z',
+            url: 'https://www.warcraftlogs.com/reports/4Gxp96qK7NWm2APf#fight=36&source=418',
+            startedAt: '2026-10-07T01:55:36.084Z',
             region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
+            encounterId: 61762,
+            difficulty: 10,
             kill: true,
-            durationMs: 429185,
-            itemLevelBracket: 326,
-            heroTree: 58,
+            durationMs: 1738135,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.5625,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
             casts: [
               {
-                spellId: '1122',
+                spellId: '152108',
+                count: 45,
+              },
+              {
+                spellId: '1271802',
                 count: 5,
+              },
+              {
+                spellId: '1122',
+                count: 16,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1244918',
+                count: 147,
+              },
+              {
+                spellId: '29893',
+                count: 1,
               },
               {
                 spellId: '30283',
                 count: 3,
               },
               {
-                spellId: '80240',
-                count: 7,
-              },
-              {
-                spellId: '111400',
-                count: 8,
-              },
-              {
-                spellId: '29722',
-                count: 72,
-              },
-              {
-                spellId: '6353',
-                count: 5,
-              },
-              {
-                spellId: '442726',
-                count: 6,
-              },
-              {
-                spellId: '442804',
-                count: 1,
-              },
-              {
-                spellId: '152108',
-                count: 6,
-              },
-              {
-                spellId: '116858',
-                count: 71,
-              },
-              {
-                spellId: '48018',
-                count: 3,
-              },
-              {
-                spellId: '17962',
-                count: 62,
-              },
-              {
-                spellId: '5740',
-                count: 2,
+                spellId: '17877',
+                count: 215,
               },
               {
                 spellId: '1236616',
-                count: 2,
+                count: 5,
               },
               {
-                spellId: '108416',
-                count: 6,
+                spellId: '385899',
+                count: 1,
               },
               {
-                spellId: '48020',
-                count: 4,
+                spellId: '434635',
+                count: 36,
               },
               {
-                spellId: '6789',
+                spellId: '348',
+                count: 42,
+              },
+              {
+                spellId: '1214467',
+                count: 107,
+              },
+              {
+                spellId: '104773',
                 count: 3,
               },
               {
-                spellId: '20707',
+                spellId: '116858',
+                count: 189,
+              },
+              {
+                spellId: '111400',
+                count: 28,
+              },
+              {
+                spellId: '26297',
+                count: 9,
+              },
+              {
+                spellId: '119910',
+                count: 12,
+              },
+              {
+                spellId: '17962',
+                count: 227,
+              },
+              {
+                spellId: '702',
+                count: 1,
+              },
+              {
+                spellId: '29722',
+                count: 394,
+              },
+              {
+                spellId: '108416',
+                count: 15,
+              },
+              {
+                spellId: '111771',
+                count: 1,
+              },
+              {
+                spellId: '333889',
                 count: 2,
               },
               {
+                spellId: '1714',
+                count: 4,
+              },
+              {
+                spellId: '691',
+                count: 2,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/KP6W9An8krFbGmy2#fight=15&source=619',
+            startedAt: '2026-10-07T05:20:40.442Z',
+            region: 'US',
+            encounterId: 61762,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1824951,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '29722',
+                count: 184,
+              },
+              {
+                spellId: '116858',
+                count: 234,
+              },
+              {
+                spellId: '108416',
+                count: 22,
+              },
+              {
+                spellId: '17962',
+                count: 222,
+              },
+              {
+                spellId: '333889',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '119910',
+                count: 11,
+              },
+              {
                 spellId: '17877',
-                count: 37,
+                count: 172,
               },
               {
-                spellId: '445468',
-                count: 29,
+                spellId: '152108',
+                count: 38,
               },
               {
-                spellId: '119905',
+                spellId: '434635',
+                count: 36,
+              },
+              {
+                spellId: '1122',
+                count: 19,
+              },
+              {
+                spellId: '104773',
+                count: 8,
+              },
+              {
+                spellId: '1214467',
+                count: 49,
+              },
+              {
+                spellId: '1244918',
+                count: 140,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '111400',
+                count: 13,
+              },
+              {
+                spellId: '691',
+                count: 2,
+              },
+              {
+                spellId: '452930',
+                count: 5,
+              },
+              {
+                spellId: '348',
+                count: 42,
+              },
+              {
+                spellId: '6789',
+                count: 16,
+              },
+              {
+                spellId: '1234969',
+                count: 1,
+              },
+              {
+                spellId: '30283',
+                count: 2,
+              },
+              {
+                spellId: '29893',
                 count: 1,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
   "monk-brewmaster": {
@@ -27402,7 +33335,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '121253',
     summary: '양조는 공격을 이어 가며 건들건들을 유지하고, 이미 쌓인 시간차는 정화주로 줄이는 탱커입니다. 12.1에서는 천신주 계열이 더 강해진 대신 기본 쿨다운이 90초로 늘었습니다. 음영파는 니우짜오 중 불의 숨결과 맥주통 반복, 조화의 형은 활력과 잠재된 기운을 나눠 관리하는 것이 핵심입니다. 오프닝을 마친 뒤에는 고정 순서가 아니라 상황별 우선순위를 따릅니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Wowhead, Icy Veins, Peak of Serenity의 양조 설명은 모두 Sinzhu의 작업이므로 독립된 세 작성자의 합의로 세지 않았습니다. Icy Veins에서는 방어 레이드와 표준 쐐기 선택을 실제로 바꾸어 표시되는 우선순위를 확인했습니다. Method Nate와 다른 오프닝도 있지만 선택 특성·방어 목적이 다른 예시를 하나로 합치지 않았습니다. 일부 공개 가이드에 남은 정화된 기 중첩, 1분 천신주, 빈 통 뒤 즉시 음료 치유라는 설명보다 현재 주문 효과를 우선합니다. 흡수량 0처럼 캐릭터 수치가 풀리지 않은 툴팁은 실전 수치가 아닙니다. SimC는 고정 커밋의 구현·특성 단계 값을 읽었으며 개인 심크를 돌린 결과나 실측 로그로 제시하지 않습니다.',
     playstyle: [
       {
@@ -27550,18 +33483,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 49,771건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/zNrYkfZ6VatbHG4J#fight=21&source=16',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/N2DV6gFLKcp47d8v#fight=13&source=17',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T10:14:16.252Z · 장비 구간 327 · 412.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:01:20.662Z · 장비 평균 327.56 · 실제 386.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/LhVpFTtamrynZJ2M#fight=2&source=6',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=13',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:12:01.376Z · 장비 구간 327 · 412.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T16:57:34.730Z · 장비 평균 328.56 · 실제 382.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/LxcA4dDHP82JTpGr#fight=5&source=469',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:40:00.193Z · 장비 평균 328.38 · 실제 1657.7초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/kJ32TVjRp4xWMPAa#fight=5&source=21',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:24:46.516Z · 장비 평균 328.75 · 실제 1682.8초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -27572,7 +33519,7 @@ export const guideManuscripts = {
       '음영파의 장벽의 지혜는 니우짜오 중 불의 숨결에서 추가 질풍격을 방출합니다. 후려차기 기본 리듬만 지켜도 자동으로 최대 활용된다고 설명하지 않습니다.',
       'Sinzhu의 세 사이트는 같은 작성자 계열로 묶어 읽었고 Method Nate의 다른 오프닝은 선택 특성 차이와 함께 봤습니다. 최신 레이드·쐐기 로그 집계, 개인 심크, 비공개 디스코드 자료는 확보하지 못했습니다.',
       '미국 10월 6일 빠른 한 모금의 시간차 정화는 누적 건들건들 3초마다 8%, 허초는 맥주 사용 후 10% 회피를 8초 부여합니다. 한국어 툴팁에는 각각 5%·5초가 남아 있어 공식 공지와 충돌을 표시합니다. 방어를 위한 맥주 사용을 회피 유지 때문에 미루지 않습니다.',
-      '10월 8일 수도사 양조의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 수도사 양조의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.38, 실제 전투 길이 차이는 1.14%/1.49%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '이 운용 예시는 의식 상실 연계와 한 잔 더를 선택한 빌드입니다. 여세 몰이, 비취의 섬광, 폭발하는 맥주통 미선택 변형에는 각 조건을 적용해야 합니다.',
@@ -27580,7 +33527,7 @@ export const guideManuscripts = {
       '세트 보너스가 없는 캐릭터는 뜨거운 감자 사전 준비를 생략합니다. 세트 유무와 영웅 특성이 다른 로그의 시전 횟수를 그대로 목표로 삼지 마세요.',
       '방어기 배정은 실제 탱킹 시간과 피해 종류에 따라 바뀝니다. 아래 공격 우선순위가 급한 정화·해제·차단보다 먼저라는 뜻은 아닙니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -28589,223 +34536,483 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0010619031340689073,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.011433301430456039,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/zNrYkfZ6VatbHG4J#fight=21&source=16',
-            startedAt: '2026-10-07T10:14:16.252Z',
+            url: 'https://www.warcraftlogs.com/reports/N2DV6gFLKcp47d8v#fight=13&source=17',
+            startedAt: '2026-10-07T01:01:20.662Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 412029,
+            durationMs: 386590,
             itemLevelBracket: 327,
-            heroTree: 65,
+            gearItemLevel: 327.5625,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
-                spellId: '115399',
-                count: 2,
+                spellId: '132578',
+                count: 4,
               },
               {
-                spellId: '322109',
-                count: 1,
+                spellId: '101643',
+                count: 4,
               },
               {
-                spellId: '115181',
-                count: 73,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '116841',
-                count: 2,
-              },
-              {
-                spellId: '205523',
-                count: 85,
-              },
-              {
-                spellId: '119582',
-                count: 25,
-              },
-              {
-                spellId: '121253',
-                count: 82,
-              },
-              {
-                spellId: '100780',
-                count: 76,
-              },
-              {
-                spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '322101',
+                spellId: '116844',
                 count: 4,
               },
               {
                 spellId: '115546',
-                count: 11,
-              },
-              {
-                spellId: '116844',
-                count: 3,
-              },
-              {
-                spellId: '325153',
-                count: 5,
-              },
-              {
-                spellId: '123986',
-                count: 6,
-              },
-              {
-                spellId: '109132',
                 count: 10,
               },
               {
+                spellId: '322101',
+                count: 1,
+              },
+              {
+                spellId: '116670',
+                count: 1,
+              },
+              {
+                spellId: '205523',
+                count: 52,
+              },
+              {
+                spellId: '100780',
+                count: 50,
+              },
+              {
+                spellId: '109132',
+                count: 15,
+              },
+              {
+                spellId: '115399',
+                count: 5,
+              },
+              {
                 spellId: '1241059',
-                count: 9,
+                count: 11,
+              },
+              {
+                spellId: '119381',
+                count: 1,
+              },
+              {
+                spellId: '115203',
+                count: 3,
+              },
+              {
+                spellId: '119996',
+                count: 2,
+              },
+              {
+                spellId: '322109',
+                count: 3,
+              },
+              {
+                spellId: '115181',
+                count: 84,
               },
               {
                 spellId: '6262',
                 count: 1,
               },
               {
-                spellId: '132578',
+                spellId: '325153',
                 count: 5,
               },
               {
-                spellId: '115203',
+                spellId: '1236616',
                 count: 2,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/LhVpFTtamrynZJ2M#fight=2&source=6',
-            startedAt: '2026-10-08T01:12:01.376Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 412467,
-            itemLevelBracket: 327,
-            heroTree: 65,
-            augmentationCount: 1,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '121253',
-                count: 78,
-              },
-              {
-                spellId: '101643',
-                count: 3,
               },
               {
                 spellId: '1297761',
                 count: 5,
               },
               {
-                spellId: '119582',
-                count: 42,
-              },
-              {
-                spellId: '119381',
-                count: 2,
-              },
-              {
-                spellId: '115399',
-                count: 6,
+                spellId: '121253',
+                count: 83,
               },
               {
                 spellId: '123986',
-                count: 12,
-              },
-              {
-                spellId: '100780',
-                count: 45,
-              },
-              {
-                spellId: '115203',
-                count: 2,
-              },
-              {
-                spellId: '116841',
-                count: 4,
-              },
-              {
-                spellId: '116844',
-                count: 5,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '115546',
                 count: 9,
               },
               {
-                spellId: '322109',
-                count: 3,
+                spellId: '119582',
+                count: 39,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=13',
+            startedAt: '2026-10-07T16:57:34.730Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 382170,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '119582',
+                count: 50,
               },
               {
                 spellId: '1295132',
                 count: 2,
               },
               {
-                spellId: '325153',
-                count: 7,
+                spellId: '322101',
+                count: 8,
               },
               {
-                spellId: '109132',
-                count: 6,
+                spellId: '115203',
+                count: 3,
               },
               {
                 spellId: '119996',
                 count: 3,
               },
               {
-                spellId: '115181',
-                count: 73,
-              },
-              {
-                spellId: '132578',
-                count: 5,
+                spellId: '121253',
+                count: 77,
               },
               {
                 spellId: '205523',
-                count: 58,
+                count: 69,
+              },
+              {
+                spellId: '100780',
+                count: 72,
+              },
+              {
+                spellId: '325153',
+                count: 6,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '119381',
+                count: 1,
+              },
+              {
+                spellId: '101643',
+                count: 3,
+              },
+              {
+                spellId: '115399',
+                count: 5,
+              },
+              {
+                spellId: '115546',
+                count: 7,
+              },
+              {
+                spellId: '115181',
+                count: 65,
+              },
+              {
+                spellId: '132578',
+                count: 4,
               },
               {
                 spellId: '1241059',
-                count: 12,
+                count: 9,
               },
-            ],
-            externalBuffs: [
               {
-                spellId: '413984',
-                activeMs: 24845,
-                uses: 2,
+                spellId: '123986',
+                count: 11,
+              },
+              {
+                spellId: '109132',
+                count: 4,
+              },
+              {
+                spellId: '116844',
+                count: 2,
+              },
+              {
+                spellId: '322109',
+                count: 2,
               },
             ],
+            externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.375,
+        durationDifference: 0.0149466856186655,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/LxcA4dDHP82JTpGr#fight=5&source=469',
+            startedAt: '2026-10-08T03:40:00.193Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1657695,
+            itemLevelBracket: 18,
+            gearItemLevel: 328.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '116841',
+                count: 16,
+              },
+              {
+                spellId: '115078',
+                count: 4,
+              },
+              {
+                spellId: '115399',
+                count: 12,
+              },
+              {
+                spellId: '115546',
+                count: 17,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '123986',
+                count: 32,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '119582',
+                count: 210,
+              },
+              {
+                spellId: '1297761',
+                count: 15,
+              },
+              {
+                spellId: '119381',
+                count: 12,
+              },
+              {
+                spellId: '205523',
+                count: 269,
+              },
+              {
+                spellId: '109132',
+                count: 33,
+              },
+              {
+                spellId: '322109',
+                count: 12,
+              },
+              {
+                spellId: '121253',
+                count: 303,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '115203',
+                count: 8,
+              },
+              {
+                spellId: '1241059',
+                count: 49,
+              },
+              {
+                spellId: '218164',
+                count: 3,
+              },
+              {
+                spellId: '100780',
+                count: 322,
+              },
+              {
+                spellId: '322101',
+                count: 22,
+              },
+              {
+                spellId: '115181',
+                count: 287,
+              },
+              {
+                spellId: '116705',
+                count: 32,
+              },
+              {
+                spellId: '132578',
+                count: 11,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/kJ32TVjRp4xWMPAa#fight=5&source=21',
+            startedAt: '2026-10-08T03:24:46.516Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1682848,
+            itemLevelBracket: 18,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '116844',
+                count: 7,
+              },
+              {
+                spellId: '123986',
+                count: 23,
+              },
+              {
+                spellId: '117952',
+                count: 1,
+              },
+              {
+                spellId: '109132',
+                count: 55,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 3,
+              },
+              {
+                spellId: '132578',
+                count: 11,
+              },
+              {
+                spellId: '116670',
+                count: 2,
+              },
+              {
+                spellId: '121253',
+                count: 299,
+              },
+              {
+                spellId: '115181',
+                count: 293,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '322109',
+                count: 12,
+              },
+              {
+                spellId: '218164',
+                count: 6,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '115546',
+                count: 22,
+              },
+              {
+                spellId: '1293316',
+                count: 11,
+              },
+              {
+                spellId: '322729',
+                count: 25,
+              },
+              {
+                spellId: '119582',
+                count: 188,
+              },
+              {
+                spellId: '116841',
+                count: 12,
+              },
+              {
+                spellId: '1241059',
+                count: 45,
+              },
+              {
+                spellId: '322101',
+                count: 21,
+              },
+              {
+                spellId: '205523',
+                count: 288,
+              },
+              {
+                spellId: '115078',
+                count: 3,
+              },
+              {
+                spellId: '100780',
+                count: 281,
+              },
+              {
+                spellId: '119381',
+                count: 13,
+              },
+              {
+                spellId: '116705',
+                count: 21,
+              },
+              {
+                spellId: '115203',
+                count: 11,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -28815,7 +35022,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '113656',
     summary: '풍운은 같은 공격을 연달아 쓰지 않으면서 분노의 주먹을 제때 완주하는 근접 딜러입니다. 12.1에서는 시즌 2 끊임없는 박자를 해오름차기와 회전 학다리차기 중 어디에 쓸지가 중요해졌습니다. 음영파는 질풍격과 기본 연계를, 천신합일은 서로 다른 옥룡의 마음을 이어 쓰는 극딜을 중심으로 익히세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Wowhead·Icy Veins·Peak of Serenity는 풍운 작성자가 Babylonius로 겹치므로 독립된 세 작성자의 합의로 세지 않습니다. 9월 14일 갱신된 Peak 공개 가이드를 운용의 주된 기준으로 삼고, Method J-Funk와 Blizzard 원문 및 현재 주문 효과를 대조했습니다. 12.1 초기 자료들의 회전 학다리차기 증감 수치는 비교 기준이 달라 하나의 합산 너프로 계산하지 않습니다. 공식 출시 노트의 감소와 현재 세트 조건을 구분합니다. Archon은 접근이 제한되어 예전 6월 사용률을 재사용하지 않았고, 비공개 디스코드 메시지나 상위 로그를 새로 분석한 것으로 표시하지 않습니다. 툴팁에서 전문화 보정이 빠진 비용·기본 지속시간은 실제 효과 데이터와 구분했습니다.',
     playstyle: [
       {
@@ -28970,18 +35177,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 75,016건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/KCBYH9LDnJMRxdav#fight=4&source=10',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=15',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:11:00.756Z · 장비 구간 331 · 299.7초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T04:07:59.861Z · 장비 평균 330.81 · 실제 319.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/7tkpDvxFg8rCcjJ3#fight=4&source=48',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=227',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:57:56.186Z · 장비 구간 331 · 308.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:37:03.774Z · 장비 평균 330.19 · 실제 306.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=16',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T04:23:11.856Z · 장비 평균 331.00 · 실제 1728.1초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=95',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:08:32.274Z · 장비 평균 330.19 · 실제 1742.9초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -28992,14 +35213,14 @@ export const guideManuscripts = {
       '분노의 주먹은 이동 가능한 채널입니다. 일반 이동을 취소 사유로 보지 않고 사거리·방향·다른 기술로 끊긴 시점을 확인합니다. 천신합일의 권장 조기 종료와 같은 기준으로 판단하지 않습니다.',
       '최신 Peak는 음영파의 단순함과 천신합일의 높은 숙련도 요구를 함께 설명합니다. 예전 음영파 99%대 집계를 현재 추천의 근거로 재사용하지 않았습니다.',
       '9월 23일 PvE 자동 공격 25%·이중 위협 20%·해오름차기 8% 상향을 반영했습니다. 9월 24일에는 천신합일·질풍격의 PvP 보정이 PvE에 잘못 적용되던 오류가 수정됐습니다. 10월 6일 마비 계열 변경은 PvP 전용입니다.',
-      '10월 8일 수도사 풍운의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 수도사 풍운의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.81, 실제 전투 길이 차이는 4.09%/0.85%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '아래 차트는 소용돌이 용의 주먹·정점의 발구르기·호안주 마지막 노드 선택 예시입니다. 바람의 군주의 일격을 선택했다면 두 기술을 동시에 넣지 말고 본문의 대안 순서를 따르세요.',
       '세트 미보유자는 끊임없는 박자 조건을 건너뜁니다. 단일과 광역을 가르는 기준은 보이는 적 수뿐 아니라 실제로 함께 맞힐 수 있고 살아 있는 대상 수입니다.',
       '현재 상위 로그 사용률·평균 DPS는 확보하지 못했습니다. 영웅 특성 선택과 장비 비교는 가이드 추천이며 특정 점수나 상승률을 보장하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -29945,199 +36166,553 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.028096573865386797,
-        matchedAugmentation: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.040852903852480846,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/KCBYH9LDnJMRxdav#fight=4&source=10',
-            startedAt: '2026-10-08T01:11:00.756Z',
+            url: 'https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=15',
+            startedAt: '2026-10-07T04:07:59.861Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 299701,
-            itemLevelBracket: 331,
-            heroTree: 64,
-            augmentationCount: 2,
-            healerCount: 4,
+            durationMs: 319145,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.8125,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '101545',
-                count: 1,
+                spellId: '100784',
+                count: 41,
               },
               {
-                spellId: '101546',
-                count: 42,
+                spellId: '6262',
+                count: 1,
               },
               {
                 spellId: '123904',
                 count: 4,
               },
               {
-                spellId: '1236994',
-                count: 1,
-              },
-              {
-                spellId: '152175',
-                count: 12,
-              },
-              {
-                spellId: '122470',
-                count: 2,
-              },
-              {
-                spellId: '101643',
-                count: 2,
-              },
-              {
-                spellId: '467307',
-                count: 11,
-              },
-              {
-                spellId: '107428',
-                count: 36,
-              },
-              {
-                spellId: '443591',
-                count: 2,
-              },
-              {
-                spellId: '100780',
-                count: 55,
-              },
-              {
-                spellId: '100784',
-                count: 35,
-              },
-              {
-                spellId: '443028',
-                count: 4,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '322109',
-                count: 1,
-              },
-              {
                 spellId: '113656',
-                count: 31,
-              },
-              {
-                spellId: '109132',
-                count: 9,
-              },
-              {
-                spellId: '1249625',
-                count: 5,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 25007,
-                uses: 2,
-              },
-              {
-                spellId: '395152',
-                activeMs: 298142,
-                uses: 75,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/7tkpDvxFg8rCcjJ3#fight=4&source=48',
-            startedAt: '2026-10-07T00:57:56.186Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 308365,
-            itemLevelBracket: 331,
-            heroTree: 65,
-            augmentationCount: 0,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '1236994',
-                count: 1,
-              },
-              {
-                spellId: '113656',
-                count: 31,
+                count: 38,
               },
               {
                 spellId: '101546',
-                count: 23,
+                count: 37,
               },
               {
-                spellId: '100780',
-                count: 71,
+                spellId: '322109',
+                count: 3,
               },
               {
                 spellId: '1249625',
                 count: 5,
               },
               {
-                spellId: '107428',
-                count: 40,
-              },
-              {
-                spellId: '101643',
-                count: 2,
-              },
-              {
                 spellId: '467307',
-                count: 14,
-              },
-              {
-                spellId: '1297761',
-                count: 3,
-              },
-              {
-                spellId: '122470',
-                count: 2,
+                count: 12,
               },
               {
                 spellId: '152175',
-                count: 8,
-              },
-              {
-                spellId: '109132',
-                count: 5,
+                count: 13,
               },
               {
                 spellId: '116841',
                 count: 1,
               },
               {
-                spellId: '119996',
+                spellId: '101643',
                 count: 2,
               },
               {
-                spellId: '100784',
-                count: 39,
+                spellId: '122470',
+                count: 2,
+              },
+              {
+                spellId: '107428',
+                count: 44,
+              },
+              {
+                spellId: '107270',
+                count: 0,
+              },
+              {
+                spellId: '100780',
+                count: 53,
+              },
+              {
+                spellId: '109132',
+                count: 7,
+              },
+              {
+                spellId: '119996',
+                count: 2,
               },
               {
                 spellId: '115203',
                 count: 2,
               },
               {
-                spellId: '322109',
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1295247',
                 count: 1,
               },
               {
-                spellId: '116844',
+                spellId: '443028',
+                count: 4,
+              },
+              {
+                spellId: '1236994',
                 count: 1,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 283599,
+                uses: 47,
+              },
+              {
+                spellId: '413984',
+                activeMs: 12816,
+                uses: 1,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=227',
+            startedAt: '2026-10-07T00:37:03.774Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 306107,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.1875,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '113656',
+                count: 36,
+              },
+              {
+                spellId: '119996',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '107428',
+                count: 42,
+              },
+              {
+                spellId: '322109',
+                count: 3,
+              },
+              {
+                spellId: '101546',
+                count: 31,
+              },
+              {
+                spellId: '467307',
+                count: 15,
+              },
+              {
+                spellId: '115203',
+                count: 2,
+              },
+              {
+                spellId: '152175',
+                count: 11,
+              },
+              {
+                spellId: '107270',
+                count: 0,
+              },
+              {
+                spellId: '116844',
+                count: 2,
+              },
+              {
+                spellId: '123904',
+                count: 4,
+              },
+              {
+                spellId: '443028',
+                count: 4,
+              },
+              {
+                spellId: '101643',
+                count: 2,
+              },
+              {
+                spellId: '100780',
+                count: 50,
+              },
+              {
+                spellId: '1236994',
+                count: 1,
+              },
+              {
+                spellId: '122470',
+                count: 3,
+              },
+              {
+                spellId: '1249625',
+                count: 5,
+              },
+              {
+                spellId: '109132',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '100784',
+                count: 41,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 12440,
+                uses: 1,
+              },
+              {
+                spellId: '395152',
+                activeMs: 282550,
+                uses: 35,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45008,
+                uses: 3,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.008509424857894155,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=16',
+            startedAt: '2026-10-07T04:23:11.856Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1728060,
+            itemLevelBracket: 20,
+            gearItemLevel: 331,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1249625',
+                count: 20,
+              },
+              {
+                spellId: '58984',
+                count: 3,
+              },
+              {
+                spellId: '322109',
+                count: 13,
+              },
+              {
+                spellId: '218164',
+                count: 9,
+              },
+              {
+                spellId: '107428',
+                count: 155,
+              },
+              {
+                spellId: '152175',
+                count: 47,
+              },
+              {
+                spellId: '1272696',
+                count: 37,
+              },
+              {
+                spellId: '123904',
+                count: 17,
+              },
+              {
+                spellId: '116705',
+                count: 34,
+              },
+              {
+                spellId: '443591',
+                count: 17,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '101643',
+                count: 1,
+              },
+              {
+                spellId: '101546',
+                count: 286,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '467307',
+                count: 55,
+              },
+              {
+                spellId: '122470',
+                count: 10,
+              },
+              {
+                spellId: '115203',
+                count: 13,
+              },
+              {
+                spellId: '443028',
+                count: 17,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '100780',
+                count: 303,
+              },
+              {
+                spellId: '115078',
+                count: 4,
+              },
+              {
+                spellId: '119381',
+                count: 13,
+              },
+              {
+                spellId: '100784',
+                count: 129,
+              },
+              {
+                spellId: '101545',
+                count: 3,
+              },
+              {
+                spellId: '116670',
+                count: 6,
+              },
+              {
+                spellId: '107270',
+                count: 0,
+              },
+              {
+                spellId: '116844',
+                count: 8,
+              },
+              {
+                spellId: '116841',
+                count: 6,
+              },
+              {
+                spellId: '109132',
+                count: 36,
+              },
+              {
+                spellId: '1297761',
+                count: 17,
+              },
+              {
+                spellId: '113656',
+                count: 179,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=95',
+            startedAt: '2026-10-08T01:08:32.274Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1742891,
+            itemLevelBracket: 20,
+            gearItemLevel: 330.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '116841',
+                count: 9,
+              },
+              {
+                spellId: '322109',
+                count: 12,
+              },
+              {
+                spellId: '100780',
+                count: 296,
+              },
+              {
+                spellId: '119381',
+                count: 10,
+              },
+              {
+                spellId: '109132',
+                count: 28,
+              },
+              {
+                spellId: '1295247',
+                count: 4,
+              },
+              {
+                spellId: '113656',
+                count: 140,
+              },
+              {
+                spellId: '101545',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '467307',
+                count: 50,
+              },
+              {
+                spellId: '107428',
+                count: 144,
+              },
+              {
+                spellId: '100784',
+                count: 123,
+              },
+              {
+                spellId: '115203',
+                count: 12,
+              },
+              {
+                spellId: '101546',
+                count: 273,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '1272696',
+                count: 34,
+              },
+              {
+                spellId: '393438',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '218164',
+                count: 8,
+              },
+              {
+                spellId: '58984',
+                count: 5,
+              },
+              {
+                spellId: '443028',
+                count: 16,
+              },
+              {
+                spellId: '1249625',
+                count: 20,
+              },
+              {
+                spellId: '122470',
+                count: 14,
+              },
+              {
+                spellId: '107270',
+                count: 0,
+              },
+              {
+                spellId: '115078',
+                count: 6,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '152175',
+                count: 59,
+              },
+              {
+                spellId: '116705',
+                count: 23,
+              },
+              {
+                spellId: '123904',
+                count: 16,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -30147,7 +36722,7 @@ export const guideManuscripts = {
     status: '12.1 로그 기반 실전 심화 가이드',
     graphCenterSkillId: '467307',
     extraSkills: [],
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 운무 수도사는 소생의 안개를 미리 퍼뜨리고, 시즌 2 세트가 강화한 질풍차기 또는 해오름차기를 놓치지 않으면서, 실제 광역 피해에 천신합일과 옥룡의 마음 구간을 맞추는 근접 힐러입니다. 띵진아잘좀하자-아즈샤라의 공개 휘감긴 제단 로그는 큰 쿨기 횟수보다 생기 충전과 질풍차기 분당 사용 횟수, 기의 고치 회전, 천신합일 타이밍에서 손실이 컸습니다. 특히 천신합일 과치유 54.5%는 비교 로그의 16.7~18.0%보다 높았고, 생기 충전은 분당 14.67회로 비교 로그의 19.44~22.42회보다 적었습니다. 이 가이드는 그 차이를 단순 HPS 평가가 아니라 실제로 어떤 버튼과 타이밍을 고쳐야 하는지까지 연결합니다.',
     sourceNote: 'Blizzard 12.1 노트의 운무 전체 치유량 3% 감소와 특화: 안개 돌풍 50% 증가, 회전 학다리차기·주학의 길 변경을 기준으로 운용을 작성했습니다. 2026-09-22 PvE 핫픽스는 운무 전체 치유량을 5% 높이고 생기 충전·셰이룬의 선물 치유량을 각각 별도로 15% 높였습니다. 새 수치가 주문 사용 순서를 자동으로 뒤집거나 이전 로그의 절대 HPS를 현재 값으로 바꾸지는 않습니다. 8월 29일 Archon 14일 집계는 당시 천신의 대변자가 영웅 공격대 97.7%, 쐐기 +7~19 96.3%였다는 과거 자료입니다. 휘감긴 제단 일반 로그 세 건의 분당 시전과 과치유 비교도 핫픽스 전 운용 복기에만 사용합니다.',
     playstyle: [
@@ -30317,18 +36892,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 66,526건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T02:04:31.211Z · 장비 구간 329 · 408.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:04:31.211Z · 장비 평균 329.81 · 실제 408.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/Na9cWA3f1M7zLRHY#fight=1&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/mPA71pNLzxY8Za2d#fight=49&source=9',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:35:26.414Z · 장비 구간 329 · 408.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T03:52:12.630Z · 장비 평균 330.63 · 실제 415.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QBbk9P6z3m7rDdFf#fight=37&source=9',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T05:12:03.126Z · 장비 평균 329.56 · 실제 1590.7초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/mQYjcyVJTPAwFHhd#fight=45&source=430',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T04:58:24.632Z · 장비 평균 328.81 · 실제 1672.2초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -30343,7 +36932,7 @@ export const guideManuscripts = {
       '검수 로그는 423.3초에 생명석과 치유 물약을 거의 동시에 사용했고, 마지막 강화주는 453.0초였습니다. 494.8초 사망 직전에는 남은 개인 생존 카드가 없었습니다.',
       'Warcraft Logs 개인 HPS는 공대가 받은 피해, 다른 힐러 수와 장비 차이에 흔들리므로 절대 점수보다 같은 전투의 분당 시전, 과치유, 쿨기 시점과 사망 원인을 비교 기준으로 사용했습니다.',
       '미국 10월 6일 활기의 안개와 포용의 안개 치유량이 각각 15% 증가했습니다. 포용의 안개 상향은 PvP 제외이며, 9월 23일 전체 치유 5%·생기 충전과 셰이룬의 선물 15% 상향에 더하는 별도 변경입니다. 전체 치유량이 추가 15% 오른 변경으로 해석하지 않습니다.',
-      '10월 8일 수도사 운무의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 수도사 운무의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Den of Nalorakk 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.75, 실제 전투 길이 차이는 1.76%/4.88%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '8월 29일 Archon 선택률과 휘감긴 제단 로그 비교는 9월 22일 상향 이전 자료입니다. 분당 시전·과치유·방어기 타이밍은 복기하되 절대 HPS와 현재 영웅 특성 점유율로 재사용하지 않습니다.',
@@ -30356,7 +36945,7 @@ export const guideManuscripts = {
       '재활은 광역 마법 해제가 위험한 전투에서는 해제 때문에 오히려 사고를 낼 수 있습니다. 보스별로 평온 선택 여부를 먼저 확인합니다.',
       '12.1 스탯 경향은 지능-가속-치명타-특화-유연성이지만 장비 획득 편향이 있습니다. 특화 50% 상향만 보고 아이템 레벨을 버리면서 특화로 몰지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -31128,8 +37717,11 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0004997048312148951,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.017645473489679334,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
@@ -31141,34 +37733,10 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 408241,
             itemLevelBracket: 329,
-            heroTree: 64,
+            gearItemLevel: 329.8125,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
-              {
-                spellId: '101643',
-                count: 2,
-              },
-              {
-                spellId: '116844',
-                count: 3,
-              },
-              {
-                spellId: '124682',
-                count: 51,
-              },
-              {
-                spellId: '115151',
-                count: 83,
-              },
-              {
-                spellId: '115203',
-                count: 3,
-              },
-              {
-                spellId: '116670',
-                count: 135,
-              },
               {
                 spellId: '443028',
                 count: 5,
@@ -31178,7 +37746,23 @@ export const guideManuscripts = {
                 count: 19,
               },
               {
-                spellId: '1236994',
+                spellId: '116670',
+                count: 135,
+              },
+              {
+                spellId: '101643',
+                count: 2,
+              },
+              {
+                spellId: '115294',
+                count: 15,
+              },
+              {
+                spellId: '124682',
+                count: 51,
+              },
+              {
+                spellId: '119996',
                 count: 1,
               },
               {
@@ -31186,27 +37770,7 @@ export const guideManuscripts = {
                 count: 5,
               },
               {
-                spellId: '322118',
-                count: 3,
-              },
-              {
-                spellId: '109132',
-                count: 3,
-              },
-              {
-                spellId: '115294',
-                count: 15,
-              },
-              {
-                spellId: '115310',
-                count: 2,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '119996',
+                spellId: '1236994',
                 count: 1,
               },
               {
@@ -31214,8 +37778,36 @@ export const guideManuscripts = {
                 count: 5,
               },
               {
+                spellId: '109132',
+                count: 3,
+              },
+              {
+                spellId: '322118',
+                count: 3,
+              },
+              {
+                spellId: '115310',
+                count: 2,
+              },
+              {
                 spellId: '467307',
                 count: 90,
+              },
+              {
+                spellId: '115203',
+                count: 3,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '115151',
+                count: 83,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
               },
             ],
             externalBuffs: [
@@ -31227,88 +37819,399 @@ export const guideManuscripts = {
             ],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/Na9cWA3f1M7zLRHY#fight=1&source=7',
-            startedAt: '2026-10-07T01:35:26.414Z',
+            url: 'https://www.warcraftlogs.com/reports/mPA71pNLzxY8Za2d#fight=49&source=9',
+            startedAt: '2026-10-07T03:52:12.630Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 408037,
-            itemLevelBracket: 329,
-            heroTree: 64,
+            durationMs: 415574,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.625,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
-                spellId: '115151',
-                count: 73,
+                spellId: '443591',
+                count: 5,
               },
               {
-                spellId: '116849',
-                count: 4,
-              },
-              {
-                spellId: '443028',
+                spellId: '116844',
                 count: 3,
               },
               {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '109132',
-                count: 4,
-              },
-              {
-                spellId: '115203',
-                count: 1,
-              },
-              {
-                spellId: '115175',
-                count: 37,
+                spellId: '116849',
+                count: 8,
               },
               {
                 spellId: '1291894',
                 count: 5,
               },
               {
-                spellId: '322118',
-                count: 2,
-              },
-              {
-                spellId: '467307',
-                count: 82,
-              },
-              {
-                spellId: '124682',
-                count: 56,
-              },
-              {
-                spellId: '116670',
-                count: 84,
-              },
-              {
-                spellId: '115310',
-                count: 2,
-              },
-              {
-                spellId: '115294',
-                count: 33,
-              },
-              {
-                spellId: '116680',
-                count: 17,
+                spellId: '129597',
+                count: 3,
               },
               {
                 spellId: '322109',
                 count: 1,
               },
+              {
+                spellId: '116680',
+                count: 18,
+              },
+              {
+                spellId: '388615',
+                count: 2,
+              },
+              {
+                spellId: '116670',
+                count: 131,
+              },
+              {
+                spellId: '322118',
+                count: 3,
+              },
+              {
+                spellId: '115294',
+                count: 17,
+              },
+              {
+                spellId: '115203',
+                count: 4,
+              },
+              {
+                spellId: '115151',
+                count: 71,
+              },
+              {
+                spellId: '467307',
+                count: 91,
+              },
+              {
+                spellId: '115175',
+                count: 25,
+              },
+              {
+                spellId: '124682',
+                count: 46,
+              },
+              {
+                spellId: '443028',
+                count: 5,
+              },
+              {
+                spellId: '109132',
+                count: 5,
+              },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.75,
+        durationDifference: 0.04875967425377731,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/QBbk9P6z3m7rDdFf#fight=37&source=9',
+            startedAt: '2026-10-08T05:12:03.126Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1590685,
+            itemLevelBracket: 18,
+            gearItemLevel: 329.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '116841',
+                count: 2,
+              },
+              {
+                spellId: '115294',
+                count: 23,
+              },
+              {
+                spellId: '115175',
+                count: 23,
+              },
+              {
+                spellId: '115151',
+                count: 22,
+              },
+              {
+                spellId: '325197',
+                count: 18,
+              },
+              {
+                spellId: '1252825',
+                count: 2,
+              },
+              {
+                spellId: '1261781',
+                count: 5,
+              },
+              {
+                spellId: '100784',
+                count: 112,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
+              },
+              {
+                spellId: '1266193',
+                count: 6,
+              },
+              {
+                spellId: '100780',
+                count: 121,
+              },
+              {
+                spellId: '115078',
+                count: 2,
+              },
+              {
+                spellId: '443028',
+                count: 11,
+              },
+              {
+                spellId: '115203',
+                count: 7,
+              },
+              {
+                spellId: '1250701',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '119381',
+                count: 5,
+              },
+              {
+                spellId: '1235841',
+                count: 4,
+              },
+              {
+                spellId: '115450',
+                count: 16,
+              },
+              {
+                spellId: '1291894',
+                count: 10,
+              },
+              {
+                spellId: '322109',
+                count: 6,
+              },
+              {
+                spellId: '109132',
+                count: 45,
+              },
+              {
+                spellId: '116849',
+                count: 13,
+              },
+              {
+                spellId: '115310',
+                count: 5,
+              },
+              {
+                spellId: '399491',
+                count: 59,
+              },
+              {
+                spellId: '124682',
+                count: 117,
+              },
+              {
+                spellId: '101546',
+                count: 240,
+              },
+              {
+                spellId: '107428',
+                count: 351,
+              },
+              {
+                spellId: '116680',
+                count: 54,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '116844',
+                count: 3,
+              },
+              {
+                spellId: '1233904',
+                count: 7,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/mQYjcyVJTPAwFHhd#fight=45&source=430',
+            startedAt: '2026-10-08T04:58:24.632Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1672222,
+            itemLevelBracket: 18,
+            gearItemLevel: 328.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '101546',
+                count: 221,
+              },
+              {
+                spellId: '115294',
+                count: 29,
+              },
+              {
+                spellId: '1239490',
+                count: 2,
+              },
+              {
+                spellId: '116841',
+                count: 5,
+              },
+              {
+                spellId: '119381',
+                count: 1,
+              },
+              {
+                spellId: '109132',
+                count: 20,
+              },
+              {
+                spellId: '322109',
+                count: 6,
+              },
+              {
+                spellId: '325197',
+                count: 17,
+              },
+              {
+                spellId: '1266193',
+                count: 6,
+              },
+              {
+                spellId: '115175',
+                count: 60,
+              },
+              {
+                spellId: '1252825',
+                count: 4,
+              },
+              {
+                spellId: '1235841',
+                count: 7,
+              },
+              {
+                spellId: '116849',
+                count: 8,
+              },
+              {
+                spellId: '1233904',
+                count: 5,
+              },
+              {
+                spellId: '115203',
+                count: 4,
+              },
+              {
+                spellId: '115450',
+                count: 14,
+              },
+              {
+                spellId: '116680',
+                count: 57,
+              },
+              {
+                spellId: '399491',
+                count: 25,
+              },
+              {
+                spellId: '115310',
+                count: 6,
+              },
+              {
+                spellId: '443028',
+                count: 9,
+              },
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '115151',
+                count: 75,
+              },
+              {
+                spellId: '115078',
+                count: 7,
+              },
+              {
+                spellId: '100780',
+                count: 128,
+              },
+              {
+                spellId: '124682',
+                count: 95,
+              },
+              {
+                spellId: '1261781',
+                count: 6,
+              },
+              {
+                spellId: '1291894',
+                count: 11,
+              },
+              {
+                spellId: '100784',
+                count: 128,
+              },
+              {
+                spellId: '107428',
+                count: 341,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -31318,7 +38221,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '53600',
     summary: '정의의 방패를 끊지 않으면서 선봉대 방패의 자원을 소비하고, 큰 타격에는 생존기를 따로 배정하세요. 기사단은 빛의 망치 뒤 생성기로 자동 망치를 이어 가고, 빛대장장이는 무장 충전과 무료 영광의 서약을 연결합니다. 광역에서도 기본 방어와 실제 적중이 먼저입니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Pumps의 Wowhead, Panthea의 Icy Veins, Tactyks의 Method를 비교했습니다. Icy Veins는 두 영웅 특성의 단일·광역 선택과 표시되는 오프닝을 직접 확인했습니다. Hammer of Wrath 운영진인 Panthea의 공개 글을 참고했으며 비공개 디스코드 내용을 읽었다고 주장하지 않습니다. 최신 로그 사용률과 개인 심크 결과는 확보하지 못했습니다. 일부 가이드에 남은 옛 생존기 수치, 빛의 망치 비용, 광신도의 용장 연장량은 현재 시전 툴팁과 공식 패치 노트를 우선했습니다. 시즌 2 효과는 고정된 SimC 구현과 대조했지만 구현을 실측 피해 결과로 취급하지 않습니다.',
     playstyle: [
       {
@@ -31466,18 +38369,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 208,992건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=10',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=11',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:04:17.097Z · 장비 구간 328 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T03:06:56.923Z · 장비 평균 327.13 · 실제 331.2초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/8mDJhCrFjfbP2T9g#fight=12&source=4',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZkGbpHxBzga9LXFJ#fight=2&source=31',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:34:13.338Z · 장비 구간 328 · 323.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:05:00.628Z · 장비 평균 328.13 · 실제 318.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/xNcgGZ8WQdYrR3kL#fight=2&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:47:50.053Z · 장비 평균 324.50 · 실제 1778.3초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=484',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:00:13.450Z · 장비 평균 325.50 · 실제 1718.4초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -31489,7 +38406,7 @@ export const guideManuscripts = {
       '기사단의 빛의 망치는 현재 실제 시전 비용이 3개이고, 자동 최고천의 망치는 직접 쓰는 스킬이 아닙니다. 빛대장장이의 무장이 신성한 힘 3개를 주는 효과는 신성의 조건입니다.',
       '공개 작성자들의 단일·광역 차이는 선택 특성과 방어 우선 조건까지 비교했습니다. 최신 WCL·Archon 통계와 비공개 디스코드 자료는 확보하지 못했습니다.',
       '9월 23일 보호의 모든 능력 공격력 6% 상향은 PvP에 적용되지 않습니다. 9월 16일 신성화 첫 틱의 시즌 2 치명타 보정 수정도 포함했습니다. 10월 6일 PvP 집행의 손길 계열 조정은 PvE 방어 효과에 합산하지 않습니다.',
-      '10월 8일 성기사 보호의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 성기사 보호의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/1.00, 실제 전투 길이 차이는 3.84%/3.37%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '아래 흐름은 선봉대의 영광을 마지막까지 선택하고 축복받은 망치를 사용하는 예시입니다. 정의의 망치를 골랐다면 대응 생성기를 바꾸되 전투 전 허공에서 자원을 만드는 단계를 그대로 따라 하지 마세요.',
@@ -31497,7 +38414,7 @@ export const guideManuscripts = {
       '단일·광역 표는 공격 선택을 돕습니다. 즉시 필요한 생존·해제·차단을 표 아래까지 기다리지 않습니다. 급한 방어에 필요한 신성한 힘은 공격 최적화보다 먼저 배정합니다.',
       '정점 중간 노드의 툴팁 계급과 최종 배분 값, 천상의 강권의 툴팁과 패치 수치에는 차이가 남아 있습니다. 실제 특성 배분과 자원 표시를 확인하며 확인되지 않은 확률·증가량을 고정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -32478,213 +39395,489 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.000027853256664665357,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.03836851529214966,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=10',
-            startedAt: '2026-10-08T00:04:17.097Z',
+            url: 'https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=11',
+            startedAt: '2026-10-07T03:06:56.923Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 323122,
-            itemLevelBracket: 328,
-            heroTree: 48,
+            durationMs: 331183,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.125,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '26573',
-                count: 23,
-              },
-              {
-                spellId: '53600',
-                count: 102,
-              },
-              {
-                spellId: '1241413',
-                count: 34,
-              },
-              {
-                spellId: '1236616',
-                count: 1,
-              },
-              {
-                spellId: '86659',
-                count: 3,
-              },
-              {
-                spellId: '642',
-                count: 1,
-              },
-              {
-                spellId: '1297761',
-                count: 3,
-              },
-              {
-                spellId: '204019',
-                count: 92,
-              },
-              {
-                spellId: '62124',
-                count: 5,
-              },
-              {
                 spellId: '275779',
-                count: 65,
-              },
-              {
-                spellId: '853',
-                count: 1,
-              },
-              {
-                spellId: '6940',
-                count: 2,
-              },
-              {
-                spellId: '190784',
-                count: 4,
-              },
-              {
-                spellId: '31850',
-                count: 5,
+                count: 68,
               },
               {
                 spellId: '375576',
                 count: 6,
               },
               {
-                spellId: '427453',
-                count: 12,
+                spellId: '432459',
+                count: 3,
               },
               {
-                spellId: '389539',
-                count: 6,
+                spellId: '432472',
+                count: 3,
+              },
+              {
+                spellId: '85673',
+                count: 1,
+              },
+              {
+                spellId: '86659',
+                count: 2,
               },
               {
                 spellId: '31935',
-                count: 33,
+                count: 38,
               },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/8mDJhCrFjfbP2T9g#fight=12&source=4',
-            startedAt: '2026-10-07T00:34:13.338Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 323113,
-            itemLevelBracket: 328,
-            heroTree: 49,
-            augmentationCount: 1,
-            healerCount: 4,
-            casts: [
               {
-                spellId: '204079',
+                spellId: '73326',
                 count: 1,
+              },
+              {
+                spellId: '62124',
+                count: 7,
+              },
+              {
+                spellId: '1241413',
+                count: 46,
+              },
+              {
+                spellId: '31884',
+                count: 6,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+              {
+                spellId: '31850',
+                count: 4,
+              },
+              {
+                spellId: '190784',
+                count: 3,
               },
               {
                 spellId: '1297761',
                 count: 3,
               },
               {
-                spellId: '1241413',
-                count: 35,
+                spellId: '53600',
+                count: 85,
               },
               {
-                spellId: '190784',
-                count: 7,
-              },
-              {
-                spellId: '85673',
-                count: 20,
-              },
-              {
-                spellId: '432459',
-                count: 2,
+                spellId: '204019',
+                count: 87,
               },
               {
                 spellId: '26573',
-                count: 15,
+                count: 28,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/ZkGbpHxBzga9LXFJ#fight=2&source=31',
+            startedAt: '2026-10-07T02:05:00.628Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 318476,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.125,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '190784',
+                count: 9,
+              },
+              {
+                spellId: '432472',
+                count: 3,
+              },
+              {
+                spellId: '375576',
+                count: 5,
+              },
+              {
+                spellId: '204019',
+                count: 82,
+              },
+              {
+                spellId: '432459',
+                count: 3,
+              },
+              {
+                spellId: '26573',
+                count: 22,
+              },
+              {
+                spellId: '62124',
+                count: 6,
+              },
+              {
+                spellId: '31935',
+                count: 29,
+              },
+              {
+                spellId: '31850',
+                count: 3,
+              },
+              {
+                spellId: '275779',
+                count: 72,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '389539',
+                count: 5,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '1044',
+                count: 2,
+              },
+              {
+                spellId: '85673',
+                count: 5,
+              },
+              {
+                spellId: '1241413',
+                count: 32,
+              },
+              {
+                spellId: '53600',
+                count: 66,
+              },
+              {
+                spellId: '642',
+                count: 1,
+              },
+              {
+                spellId: '212641',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 40011,
+                uses: 1,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 1,
+        durationDifference: 0.03369568334683875,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/xNcgGZ8WQdYrR3kL#fight=2&source=2',
+            startedAt: '2026-10-08T02:47:50.053Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1778299,
+            itemLevelBracket: 18,
+            gearItemLevel: 324.5,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '204018',
+                count: 1,
+              },
+              {
+                spellId: '53600',
+                count: 657,
+              },
+              {
+                spellId: '62124',
+                count: 7,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '213644',
+                count: 4,
+              },
+              {
+                spellId: '375576',
+                count: 25,
+              },
+              {
+                spellId: '642',
+                count: 4,
+              },
+              {
+                spellId: '190784',
+                count: 17,
+              },
+              {
+                spellId: '96231',
+                count: 26,
+              },
+              {
+                spellId: '275779',
+                count: 412,
               },
               {
                 spellId: '853',
+                count: 9,
+              },
+              {
+                spellId: '432459',
+                count: 16,
+              },
+              {
+                spellId: '204019',
+                count: 450,
+              },
+              {
+                spellId: '6940',
+                count: 12,
+              },
+              {
+                spellId: '31850',
+                count: 19,
+              },
+              {
+                spellId: '20549',
+                count: 2,
+              },
+              {
+                spellId: '115750',
+                count: 2,
+              },
+              {
+                spellId: '1241413',
+                count: 205,
+              },
+              {
+                spellId: '31935',
+                count: 218,
+              },
+              {
+                spellId: '432472',
+                count: 16,
+              },
+              {
+                spellId: '389539',
+                count: 25,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '633',
+                count: 1,
+              },
+              {
+                spellId: '85673',
+                count: 76,
+              },
+              {
+                spellId: '204079',
+                count: 58,
+              },
+              {
+                spellId: '212641',
+                count: 8,
+              },
+              {
+                spellId: '26573',
+                count: 116,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=484',
+            startedAt: '2026-10-08T03:00:13.450Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1718378,
+            itemLevelBracket: 18,
+            gearItemLevel: 325.5,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1022',
+                count: 1,
+              },
+              {
+                spellId: '633',
+                count: 4,
+              },
+              {
+                spellId: '6940',
                 count: 3,
+              },
+              {
+                spellId: '86659',
+                count: 15,
+              },
+              {
+                spellId: '53600',
+                count: 516,
+              },
+              {
+                spellId: '96231',
+                count: 15,
+              },
+              {
+                spellId: '213644',
+                count: 3,
+              },
+              {
+                spellId: '389539',
+                count: 23,
+              },
+              {
+                spellId: '853',
+                count: 4,
+              },
+              {
+                spellId: '62124',
+                count: 6,
+              },
+              {
+                spellId: '204018',
+                count: 1,
+              },
+              {
+                spellId: '26573',
+                count: 214,
+              },
+              {
+                spellId: '375576',
+                count: 23,
+              },
+              {
+                spellId: '642',
+                count: 2,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '204019',
+                count: 299,
+              },
+              {
+                spellId: '1297761',
+                count: 12,
+              },
+              {
+                spellId: '204079',
+                count: 11,
+              },
+              {
+                spellId: '1044',
+                count: 11,
               },
               {
                 spellId: '391054',
                 count: 1,
               },
               {
-                spellId: '86659',
-                count: 3,
+                spellId: '1241413',
+                count: 178,
+              },
+              {
+                spellId: '85673',
+                count: 45,
+              },
+              {
+                spellId: '115750',
+                count: 2,
+              },
+              {
+                spellId: '190784',
+                count: 17,
+              },
+              {
+                spellId: '432459',
+                count: 16,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
               },
               {
                 spellId: '275779',
-                count: 67,
-              },
-              {
-                spellId: '389539',
-                count: 6,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '642',
-                count: 1,
-              },
-              {
-                spellId: '53600',
-                count: 77,
-              },
-              {
-                spellId: '204019',
-                count: 83,
+                count: 362,
               },
               {
                 spellId: '31935',
-                count: 30,
-              },
-              {
-                spellId: '62124',
-                count: 4,
+                count: 205,
               },
               {
                 spellId: '432472',
-                count: 2,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
+                count: 15,
               },
               {
                 spellId: '31850',
-                count: 3,
-              },
-              {
-                spellId: '375576',
-                count: 6,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '1044',
-                count: 3,
+                count: 13,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -32694,7 +39887,7 @@ export const guideManuscripts = {
     status: '실전 심화 공략',
     graphCenterSkillId: '383328',
     summary: '신성한 힘을 넘기지 않으면서 무료 소비기와 시즌 2의 다음 소비기 조건을 이어 갑니다. 태양의 사자는 날개 중 천벌의 망치와 새벽빛을, 기사단은 파멸의 재 뒤 빛의 망치와 자동 망치 연장을 챙기세요.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: '2026-09-21에 12.1 공식 변경과 현재 한·영 툴팁을 확인했습니다. Bolas의 Wowhead와 Icy Veins는 같은 작성자의 설명이며, Seqq의 Method와 구분해 비교했습니다. 최신 WCL·Archon 사용률과 개인 장비 심크는 확보하지 못했으므로 과거 기사단 사용률을 현재 추천 근거로 쓰지 않습니다.',
     playstyle: [
       {
@@ -32828,18 +40021,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 251,360건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/m1WQ8RdZJD9c6Bkt#fight=2&source=1',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=7',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:06:06.695Z · 장비 구간 329 · 394.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T00:04:17.097Z · 장비 평균 328.94 · 실제 323.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/n7wkfTh4Pat63mAD#fight=5&source=9',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=7',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:24:59.175Z · 장비 구간 329 · 394.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:12:33.328Z · 장비 평균 329.75 · 실제 333.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/LYTH8Xz4CvpP6WKj#fight=3&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T05:25:03.628Z · 장비 평균 328.75 · 실제 1686.7초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=86',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T21:49:22.135Z · 장비 평균 328.00 · 실제 1755.5초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -32851,7 +40058,7 @@ export const guideManuscripts = {
       '복수의 방패는 신의 가호에서 자동으로 발동하는 흡수 효과입니다. 실제 버튼 403876, 특성 1261562, 흡수 효과 184662를 따로 확인했습니다.',
       '성전의 강타의 15% 공격 속도 방향은 공식 패치 노트와 현재 한·영 툴팁이 충돌합니다. 수치가 일치했다고 주장하지 않으며 실제 클라이언트와 로그에서 재확인해야 합니다.',
       '9월 23일 기사단 빛의 망치 피해 50%·최고천의 망치 피해 12% 상향을 반영했습니다. 태양의 사자와 기사단의 상향 후 우열은 같은 조건의 로그로 재확인해야 합니다. 10월 6일 궁극의 응징 변경은 PvP 전용입니다.',
-      '10월 8일 성기사 징벌의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 성기사 징벌의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.75, 실제 전투 길이 차이는 3.11%/3.92%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '기본 흐름은 성전의 강타·전쟁의 기술·내면의 빛 마지막 노드·사형 선고를 선택한 예시입니다. 수동 기사단의 공세나 정의로운 이유를 고른 빌드는 해당 생성·발동 조건으로 바꿉니다.',
@@ -32859,7 +40066,7 @@ export const guideManuscripts = {
       '찬란한 영광은 수동 날개를 없애는 대안입니다. 추천 간소화 빌드에서 사형 선고 대신 투자하지만 둘이 같은 선택 노드는 아닙니다. 함께 투자한 경우에는 사형 선고 후 파멸의 재를 사용합니다.',
       '일부 작성자 간 세부 우선순위와 구세의 빛 중첩, 기본 툴팁의 날개 재사용 표시는 서로 다릅니다. 실제 선택한 특성의 사용 가능 상태를 우선하고 확인하지 못한 차이를 개인 DPS 손실 수치로 만들지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -33787,81 +40994,187 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0012209177147054725,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.03107195547612479,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/m1WQ8RdZJD9c6Bkt#fight=2&source=1',
-            startedAt: '2026-10-08T00:06:06.695Z',
+            url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=7',
+            startedAt: '2026-10-08T00:04:17.097Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 394785,
-            itemLevelBracket: 329,
-            heroTree: 48,
-            augmentationCount: 0,
-            healerCount: 5,
+            durationMs: 323122,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.9375,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '190784',
-                count: 5,
+                spellId: '53385',
+                count: 69,
               },
               {
-                spellId: '642',
-                count: 1,
-              },
-              {
-                spellId: '85673',
-                count: 2,
-              },
-              {
-                spellId: '454351',
-                count: 11,
-              },
-              {
-                spellId: '408385',
-                count: 203,
-              },
-              {
-                spellId: '403876',
+                spellId: '343527',
                 count: 6,
               },
               {
-                spellId: '1236994',
+                spellId: '190784',
+                count: 8,
+              },
+              {
+                spellId: '31884',
+                count: 6,
+              },
+              {
+                spellId: '195949',
                 count: 1,
               },
               {
-                spellId: '853',
+                spellId: '383328',
+                count: 92,
+              },
+              {
+                spellId: '408385',
+                count: 217,
+              },
+              {
+                spellId: '255937',
+                count: 11,
+              },
+              {
+                spellId: '24275',
+                count: 29,
+              },
+              {
+                spellId: '20271',
+                count: 32,
+              },
+              {
+                spellId: '447446',
                 count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '403876',
+                count: 4,
+              },
+              {
+                spellId: '184575',
+                count: 36,
+              },
+              {
+                spellId: '272071',
+                count: 3,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '462145',
+                count: 1,
+              },
+              {
+                spellId: '375576',
+                count: 6,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 298800,
+                uses: 42,
+              },
+              {
+                spellId: '413984',
+                activeMs: 26441,
+                uses: 2,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/jNk8xXA2rRPy7qDT#fight=3&source=7',
+            startedAt: '2026-10-07T02:12:33.328Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 333484,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.75,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '375576',
+                count: 6,
+              },
+              {
+                spellId: '53385',
+                count: 60,
+              },
+              {
+                spellId: '408385',
+                count: 251,
               },
               {
                 spellId: '1044',
                 count: 1,
               },
               {
+                spellId: '642',
+                count: 1,
+              },
+              {
+                spellId: '1236994',
+                count: 2,
+              },
+              {
+                spellId: '24275',
+                count: 36,
+              },
+              {
+                spellId: '31884',
+                count: 6,
+              },
+              {
+                spellId: '633',
+                count: 1,
+              },
+              {
                 spellId: '383328',
-                count: 81,
+                count: 116,
               },
               {
                 spellId: '6262',
                 count: 1,
               },
               {
-                spellId: '19750',
-                count: 1,
+                spellId: '343527',
+                count: 6,
               },
               {
-                spellId: '20271',
+                spellId: '184575',
                 count: 42,
               },
               {
-                spellId: '375576',
-                count: 11,
+                spellId: '20271',
+                count: 30,
               },
               {
-                spellId: '1297908',
+                spellId: '190784',
+                count: 5,
+              },
+              {
+                spellId: '403876',
                 count: 2,
               },
               {
@@ -33869,111 +41182,305 @@ export const guideManuscripts = {
                 count: 11,
               },
               {
-                spellId: '427453',
-                count: 22,
+                spellId: '1297761',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '413984',
+                activeMs: 26448,
+                uses: 2,
+              },
+              {
+                spellId: '395152',
+                activeMs: 319242,
+                uses: 31,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.75,
+        durationDifference: 0.03915798372272,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/LYTH8Xz4CvpP6WKj#fight=3&source=1',
+            startedAt: '2026-10-08T05:25:03.628Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1686713,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '31884',
+                count: 23,
+              },
+              {
+                spellId: '343527',
+                count: 23,
+              },
+              {
+                spellId: '190784',
+                count: 19,
+              },
+              {
+                spellId: '408385',
+                count: 1269,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '6940',
+                count: 7,
+              },
+              {
+                spellId: '1309983',
+                count: 2,
               },
               {
                 spellId: '184575',
-                count: 57,
+                count: 153,
+              },
+              {
+                spellId: '853',
+                count: 4,
+              },
+              {
+                spellId: '375576',
+                count: 23,
+              },
+              {
+                spellId: '199109',
+                count: 1,
+              },
+              {
+                spellId: '255937',
+                count: 44,
               },
               {
                 spellId: '24275',
-                count: 25,
+                count: 118,
+              },
+              {
+                spellId: '20271',
+                count: 130,
               },
               {
                 spellId: '53385',
-                count: 53,
+                count: 449,
+              },
+              {
+                spellId: '633',
+                count: 2,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 14,
+              },
+              {
+                spellId: '403876',
+                count: 17,
+              },
+              {
+                spellId: '96231',
+                count: 30,
               },
               {
                 spellId: '1295247',
-                count: 1,
+                count: 2,
+              },
+              {
+                spellId: '642',
+                count: 4,
+              },
+              {
+                spellId: '1044',
+                count: 11,
+              },
+              {
+                spellId: '383328',
+                count: 345,
+              },
+              {
+                spellId: '115750',
+                count: 2,
+              },
+              {
+                spellId: '156322',
+                count: 2,
+              },
+              {
+                spellId: '213644',
+                count: 6,
+              },
+              {
+                spellId: '1022',
+                count: 3,
               },
             ],
             externalBuffs: [],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/n7wkfTh4Pat63mAD#fight=5&source=9',
-            startedAt: '2026-10-08T00:24:59.175Z',
+            url: 'https://www.warcraftlogs.com/reports/MabPNkqWJnRD7hYx#fight=8&source=86',
+            startedAt: '2026-10-07T21:49:22.135Z',
             region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
+            encounterId: 12993,
+            difficulty: 10,
             kill: true,
-            durationMs: 394303,
-            itemLevelBracket: 329,
-            heroTree: 50,
+            durationMs: 1755453,
+            itemLevelBracket: 20,
+            gearItemLevel: 328,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
             casts: [
               {
-                spellId: '53385',
-                count: 77,
-              },
-              {
-                spellId: '1236994',
-                count: 1,
-              },
-              {
-                spellId: '20271',
-                count: 37,
-              },
-              {
-                spellId: '343527',
-                count: 7,
-              },
-              {
-                spellId: '1297761',
+                spellId: '156322',
                 count: 4,
               },
               {
-                spellId: '383328',
-                count: 121,
-              },
-              {
-                spellId: '184575',
-                count: 49,
-              },
-              {
-                spellId: '375576',
-                count: 7,
-              },
-              {
-                spellId: '24275',
-                count: 41,
-              },
-              {
-                spellId: '403876',
-                count: 4,
-              },
-              {
-                spellId: '190784',
-                count: 3,
-              },
-              {
-                spellId: '408385',
-                count: 257,
-              },
-              {
-                spellId: '633',
-                count: 1,
-              },
-              {
-                spellId: '255937',
+                spellId: '1044',
                 count: 13,
               },
               {
-                spellId: '391054',
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '375576',
+                count: 23,
+              },
+              {
+                spellId: '1022',
+                count: 1,
+              },
+              {
+                spellId: '1264426',
                 count: 1,
               },
               {
                 spellId: '31884',
+                count: 23,
+              },
+              {
+                spellId: '642',
+                count: 5,
+              },
+              {
+                spellId: '853',
+                count: 4,
+              },
+              {
+                spellId: '6940',
+                count: 1,
+              },
+              {
+                spellId: '20271',
+                count: 159,
+              },
+              {
+                spellId: '24275',
+                count: 124,
+              },
+              {
+                spellId: '408385',
+                count: 1313,
+              },
+              {
+                spellId: '53385',
+                count: 395,
+              },
+              {
+                spellId: '633',
+                count: 2,
+              },
+              {
+                spellId: '184575',
+                count: 172,
+              },
+              {
+                spellId: '213644',
                 count: 6,
+              },
+              {
+                spellId: '115750',
+                count: 2,
+              },
+              {
+                spellId: '343527',
+                count: 23,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '255937',
+                count: 50,
+              },
+              {
+                spellId: '383328',
+                count: 389,
+              },
+              {
+                spellId: '1297761',
+                count: 14,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '403876',
+                count: 15,
+              },
+              {
+                spellId: '96231',
+                count: 30,
+              },
+              {
+                spellId: '190784',
+                count: 22,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -33982,7 +41489,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '2565',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '방어 전사는 큰 피해가 온 뒤 생존기를 누르는 탱커가 아니라, 방패 올리기의 유효 유지율로 물리 피해를 평탄화하고, 방패 밀쳐내기와 천둥벼락으로 분노를 만들며, 고통 감내와 주요 생존기를 다음 피해 전에 배치하는 능동 방어 탱커입니다. 이 가이드는 방패 올리기를 중심 노드로 두고, 방패 밀쳐내기 분노 엔진, 고통 감내 흡수막, 산왕 천둥벼락 루프, 거신 쇄파 분기, 주문 반사와 사기의 외침 생존기 판단을 하나의 탱킹 시간표로 읽게 합니다.',
     sourceNote: 'Blizzard 12.1 공식 노트는 복수의 자동 공격 무료 발동과 기본 피해 20% 증가, 고통 감내 흡수량 25% 증가, 잔혹한 활력 10%, 불굴의 태세 6%를 명시합니다. 피와 번개를 선택해야 천둥벼락으로 분쇄를 적용합니다. Icy Veins 8월 특성 가이드는 단일 대상에 거신, 광역에 산왕을 제시했지만 9월 22일 산왕 상향 뒤의 우열은 새 로그 없이 확정하지 않습니다. 시즌 2 세트 효과와 방패 올리기의 실제 탱킹 중 유지, 고통 감내 분노 예산은 별도로 봅니다. 6월 Archon 선택률은 12.0.5 과거 자료입니다. 영어 9월 22일과 한국어 9월 23일은 같은 산왕 PvE 상향 공지의 날짜입니다. 방패 올리기 분노 30은 막을 수 있는 피해가 오는 순간에 확보하고, 막을 수 없는 주문만 들어오는 구간은 고통 감내·주문 반사를 먼저 계획합니다. 풀링 전 분노가 없다면 방패 올리기를 시전한 것으로 가정하지 않습니다.',
     sources: [
@@ -34120,18 +41627,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 87,413건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=152',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/pda4TVR9tJ3GcLY2#fight=38&source=18',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:48:53.536Z · 장비 구간 327 · 327.9초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T03:49:49.521Z · 장비 평균 326.31 · 실제 392.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Yx2zK9hctWk48DJA#fight=6&source=9',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T00:07:28.707Z · 장비 구간 327 · 327.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:31:47.499Z · 장비 평균 325.75 · 실제 399.9초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/wHz96yxpJfKd1NqM#fight=20&source=2395',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:36:50.294Z · 장비 평균 327.13 · 실제 1836.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RGKvtnHQ39Y8Nrdb#fight=1&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T06:03:38.400Z · 장비 평균 328.00 · 실제 1778.4초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -34150,7 +41671,7 @@ export const guideManuscripts = {
       'Icy Veins 방어 전사 가이드는 Skyhold Warrior 디스코드 이론공식/운영진 Mwahi 작성 자료로 표시됩니다. 비공개 디스코드 채널 원문은 인용하지 않고, 공개 작성자 정보와 공개 디스코드 경로만 교차 확인했습니다.',
       'Wowhead 공개 디스코드 목록은 전사 직업 디스코드를 Skyhold로 등재합니다. 비공개 채널 원문은 공개로 확인되는 내용만 반영합니다.',
       '공식 영어 8월 18일·한국어 8월 19일 긴급 수정은 몰아치는 천둥의 천둥벼락 추가 피해가 간혹 꺼지던 오류를 수정했습니다. 9월 22일·23일 벼락과 지면 전류 각각 50% PvE 상향과 구분합니다.',
-      '10월 8일 전사 방어의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 전사 방어의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.56/0.88, 실제 전투 길이 차이는 1.77%/3.16%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '방어 전사 로그는 받은 피해 유형, 실제 탱킹 시간, 외부 생존기, 탱 교대 타이밍에 크게 흔들립니다. 2026-06-06 Archon 선택률은 12.0.5 자료이며 현재 경향으로 사용할 수 없습니다.',
@@ -34159,7 +41680,7 @@ export const guideManuscripts = {
       'Skyhold 디스코드는 공개 경로만 확인했습니다. 비공개 핀 글, 채널 대화, 개인 로그 조언은 공개 출처로 공개로 확인되는 내용만 반영합니다.',
       '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -35001,201 +42522,521 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0015403056820504062,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.5625,
+        durationDifference: 0.017726514494076574,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/HLj7tKJGFVm1MgR3#fight=6&source=152',
-            startedAt: '2026-10-07T00:48:53.536Z',
+            url: 'https://www.warcraftlogs.com/reports/pda4TVR9tJ3GcLY2#fight=38&source=18',
+            startedAt: '2026-10-07T03:49:49.521Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 327857,
-            itemLevelBracket: 327,
-            heroTree: 61,
-            augmentationCount: 1,
-            healerCount: 4,
+            durationMs: 392765,
+            itemLevelBracket: 326,
+            gearItemLevel: 326.3125,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '6343',
-                count: 49,
+                spellId: '12323',
+                count: 1,
               },
               {
-                spellId: '52174',
-                count: 2,
+                spellId: '386164',
+                count: 1,
               },
               {
-                spellId: '1160',
-                count: 11,
+                spellId: '163201',
+                count: 14,
               },
               {
                 spellId: '190456',
-                count: 97,
-              },
-              {
-                spellId: '6572',
-                count: 55,
-              },
-              {
-                spellId: '97462',
-                count: 2,
-              },
-              {
-                spellId: '107574',
-                count: 7,
-              },
-              {
-                spellId: '57755',
-                count: 1,
-              },
-              {
-                spellId: '385954',
-                count: 2,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '871',
-                count: 3,
-              },
-              {
-                spellId: '384110',
-                count: 1,
-              },
-              {
-                spellId: '100',
-                count: 8,
-              },
-              {
-                spellId: '2565',
-                count: 28,
-              },
-              {
-                spellId: '23920',
-                count: 4,
-              },
-              {
-                spellId: '1236616',
-                count: 1,
-              },
-              {
-                spellId: '23922',
-                count: 90,
-              },
-              {
-                spellId: '355',
-                count: 6,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 12452,
-                uses: 1,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/8tc3fHpxDNnm4G2g#fight=3&source=7',
-            startedAt: '2026-10-08T00:07:28.707Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 327352,
-            itemLevelBracket: 327,
-            heroTree: 62,
-            augmentationCount: 1,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '100',
-                count: 4,
+                count: 92,
               },
               {
                 spellId: '1160',
-                count: 9,
+                count: 13,
               },
               {
-                spellId: '355',
+                spellId: '100',
                 count: 6,
               },
               {
+                spellId: '107574',
+                count: 8,
+              },
+              {
+                spellId: '6572',
+                count: 84,
+              },
+              {
+                spellId: '23920',
+                count: 8,
+              },
+              {
                 spellId: '23922',
-                count: 81,
+                count: 113,
               },
               {
-                spellId: '436358',
-                count: 9,
-              },
-              {
-                spellId: '1295132',
+                spellId: '386208',
                 count: 1,
-              },
-              {
-                spellId: '385954',
-                count: 0,
               },
               {
                 spellId: '6343',
                 count: 62,
               },
               {
-                spellId: '6572',
-                count: 101,
-              },
-              {
-                spellId: '107574',
-                count: 6,
-              },
-              {
-                spellId: '871',
-                count: 4,
+                spellId: '97462',
+                count: 1,
               },
               {
                 spellId: '52174',
                 count: 2,
               },
               {
-                spellId: '97462',
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '385954',
+                count: 3,
+              },
+              {
+                spellId: '1715',
                 count: 1,
               },
               {
                 spellId: '2565',
-                count: 32,
+                count: 37,
               },
               {
-                spellId: '202168',
-                count: 4,
+                spellId: '355',
+                count: 6,
               },
               {
-                spellId: '23920',
-                count: 4,
+                spellId: '871',
+                count: 6,
+              },
+              {
+                spellId: '1295132',
+                count: 1,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Yx2zK9hctWk48DJA#fight=6&source=9',
+            startedAt: '2026-10-07T00:31:47.499Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 399853,
+            itemLevelBracket: 325,
+            gearItemLevel: 325.75,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '1160',
+                count: 10,
+              },
+              {
+                spellId: '190456',
+                count: 43,
+              },
+              {
+                spellId: '871',
+                count: 5,
+              },
+              {
+                spellId: '355',
+                count: 8,
+              },
+              {
+                spellId: '97462',
+                count: 1,
               },
               {
                 spellId: '1297761',
                 count: 3,
               },
               {
-                spellId: '190456',
+                spellId: '163201',
+                count: 23,
+              },
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '6343',
+                count: 41,
+              },
+              {
+                spellId: '57755',
+                count: 5,
+              },
+              {
+                spellId: '6572',
                 count: 61,
+              },
+              {
+                spellId: '202168',
+                count: 3,
+              },
+              {
+                spellId: '100',
+                count: 10,
+              },
+              {
+                spellId: '52174',
+                count: 4,
+              },
+              {
+                spellId: '23922',
+                count: 117,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '385954',
+                count: 0,
+              },
+              {
+                spellId: '2565',
+                count: 19,
+              },
+              {
+                spellId: '23920',
+                count: 8,
               },
             ],
             externalBuffs: [
               {
                 spellId: '390386',
-                activeMs: 39995,
-                uses: 2,
+                activeMs: 40003,
+                uses: 5,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.875,
+        durationDifference: 0.031641885641198485,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/wHz96yxpJfKd1NqM#fight=20&source=2395',
+            startedAt: '2026-10-08T01:36:50.294Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1836553,
+            itemLevelBracket: 20,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '6673',
+                count: 22,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '202168',
+                count: 11,
+              },
+              {
+                spellId: '100',
+                count: 12,
+              },
+              {
+                spellId: '57755',
+                count: 37,
+              },
+              {
+                spellId: '190456',
+                count: 492,
+              },
+              {
+                spellId: '385954',
+                count: 4,
+              },
+              {
+                spellId: '386164',
+                count: 14,
+              },
+              {
+                spellId: '386208',
+                count: 13,
+              },
+              {
+                spellId: '871',
+                count: 20,
+              },
+              {
+                spellId: '52174',
+                count: 16,
+              },
+              {
+                spellId: '46968',
+                count: 11,
+              },
+              {
+                spellId: '23922',
+                count: 538,
+              },
+              {
+                spellId: '5246',
+                count: 2,
+              },
+              {
+                spellId: '6343',
+                count: 285,
+              },
+              {
+                spellId: '6572',
+                count: 221,
+              },
+              {
+                spellId: '1160',
+                count: 64,
+              },
+              {
+                spellId: '6262',
+                count: 2,
+              },
+              {
+                spellId: '107570',
+                count: 1,
+              },
+              {
+                spellId: '163201',
+                count: 78,
+              },
+              {
+                spellId: '107574',
+                count: 33,
+              },
+              {
+                spellId: '6552',
+                count: 31,
+              },
+              {
+                spellId: '97462',
+                count: 6,
+              },
+              {
+                spellId: '8221',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '23920',
+                count: 23,
+              },
+              {
+                spellId: '355',
+                count: 15,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '2565',
+                count: 161,
+              },
+              {
+                spellId: '1297761',
+                count: 19,
+              },
+              {
+                spellId: '386071',
+                count: 5,
+              },
+              {
+                spellId: '384110',
+                count: 8,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/RGKvtnHQ39Y8Nrdb#fight=1&source=1',
+            startedAt: '2026-10-08T06:03:38.400Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1778441,
+            itemLevelBracket: 20,
+            gearItemLevel: 328,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '107574',
+                count: 29,
+              },
+              {
+                spellId: '384110',
+                count: 16,
+              },
+              {
+                spellId: '57755',
+                count: 17,
+              },
+              {
+                spellId: '376079',
+                count: 9,
+              },
+              {
+                spellId: '6552',
+                count: 22,
+              },
+              {
+                spellId: '2565',
+                count: 157,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '52174',
+                count: 15,
+              },
+              {
+                spellId: '871',
+                count: 24,
+              },
+              {
+                spellId: '100',
+                count: 15,
+              },
+              {
+                spellId: '23920',
+                count: 38,
+              },
+              {
+                spellId: '107570',
+                count: 9,
+              },
+              {
+                spellId: '6572',
+                count: 299,
+              },
+              {
+                spellId: '355',
+                count: 19,
+              },
+              {
+                spellId: '163201',
+                count: 51,
+              },
+              {
+                spellId: '386208',
+                count: 1,
+              },
+              {
+                spellId: '385954',
+                count: 6,
+              },
+              {
+                spellId: '23922',
+                count: 483,
+              },
+              {
+                spellId: '202168',
+                count: 29,
+              },
+              {
+                spellId: '386071',
+                count: 8,
+              },
+              {
+                spellId: '97462',
+                count: 6,
+              },
+              {
+                spellId: '12323',
+                count: 8,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '386164',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '46968',
+                count: 18,
+              },
+              {
+                spellId: '6343',
+                count: 300,
+              },
+              {
+                spellId: '190456',
+                count: 439,
+              },
+              {
+                spellId: '1160',
+                count: 50,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -35204,7 +43045,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '12294',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '무기 전사는 분노와 제압 충전을 관리하면서 거인의 강타에 강한 공격을 맞추는 근접 딜러입니다. 단일 대상에서는 필사의 일격과 발동 효과를, 세 대상 이상에서는 회전베기를 중심으로 판단합니다. 분쇄는 직접 갱신하거나 다른 기술로 적용하는 출혈이고, 치명상은 선택한 특성의 조건을 충족하면 붙는 별도 출혈입니다. 치명상이 없다고 특화 효과가 꺼지는 것은 아닙니다.',
     sourceNote: 'Blizzard 12.1 공식 노트에서 분쇄 단일 대상·분노 10, 회전베기의 분쇄 적용, 쇠날발톱의 출혈 강화, 일격무쌍의 주 대상 제외, 전술적 우위의 급살 부여를 확인하고 한국어 툴팁으로 이름과 현재 효과를 대조했습니다. 영웅 특성 선택과 전투 흐름은 2026-09-23 확인한 Wowhead·Icy Veins 자료를 교차 확인했습니다. 칼날폭풍과 쇄파를 한 빌드의 고정 순서로 합치지 않습니다. 6월 Archon 사용률과 최신 로그 미집계 범위를 구분합니다. 8월 14일 영어 공지(한국어 8월 15일)는 집행자 효과가 의도한 값의 두 배로 적용되던 오류를 수정했습니다. 오류 수정 전 피해를 현재 학살자 성능으로 취급하지 않습니다. 2026-10-03 SimC midnight의 실제 최신 커밋 6c50c3c7b96c81bbb8e7abefbd817ecf31519592(라이브 빌드 69933)에서 격돌과 영웅의 일격의 시즌 2 강화 소비를 대조했습니다.',
     sources: [
@@ -35349,18 +43190,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 265,638건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/7GybAYxvPCqaVc2n#fight=13&source=2',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=13',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:39:00.825Z · 장비 구간 329 · 341.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T00:04:17.097Z · 장비 평균 329.56 · 실제 323.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/cmhLNK846WRTaZvw#fight=36&source=927',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=1',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:05:11.454Z · 장비 구간 329 · 341.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:30:31.008Z · 장비 평균 330.38 · 실제 332.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FnXbzQxWpDc3tV98#fight=45&source=475',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T05:36:16.116Z · 장비 평균 329.00 · 실제 1684.1초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fqCA14HPJFn3t7Yy#fight=19&source=4',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T22:00:16.492Z · 장비 평균 328.75 · 실제 1623.5초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -35379,7 +43234,7 @@ export const guideManuscripts = {
       '특화: 무기 전문가는 양손 무기 사용 시 피해를 높이는 지속 효과입니다. 치명상 출혈을 적에게 걸어야 활성화되는 특화가 아닙니다.',
       '영어 2026-08-14·한국어 2026-08-15 긴급 수정은 무기와 분노 학살자의 집행자 효과가 의도한 값의 2배였던 오류를 수정했습니다. 현행 효과에 과거 오류 배율을 더하지 않습니다.',
       'SimC 2026-10-03 라이브 빌드 69933의 격돌 공통 실행부는 시즌 2 winding_up을 소비하며 영웅의 일격도 이를 공유합니다. Icy Veins는 세트의 5중첩을 기다리기 위해 핵심 기술을 지연할 필요가 없다고 설명합니다.',
-      '10월 8일 전사 무기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 전사 무기의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.25, 실제 전투 길이 차이는 2.82%/3.60%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       'Skyhold 디스코드의 비공개 채널 원문은 페이지에 공개로 확인되는 내용만 반영합니다. 공개 안내 링크와 Wowhead/Icy Veins/Archon 로그가 같은 방향을 가리키는 항목만 보조 근거로 사용합니다.',
@@ -35389,7 +43244,7 @@ export const guideManuscripts = {
       '전투의 열정, 격돌, 죽음의 상처 관련 문장은 2026-04-29 버그 수정 이후 기준이고, 피해량 평가는 2026-05-05 전사 피해 보정 이후 기준입니다. 2026-05-26 PvP 하향은 PvE 우선순위에 섞지 않습니다.',
       '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -36223,209 +44078,498 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.00021062423758414,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.028178206327389314,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/7GybAYxvPCqaVc2n#fight=13&source=2',
-            startedAt: '2026-10-07T01:39:00.825Z',
+            url: 'https://www.warcraftlogs.com/reports/ZnxtzjrT2DNAyqcG#fight=1&source=13',
+            startedAt: '2026-10-08T00:04:17.097Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 341769,
+            durationMs: 323122,
             itemLevelBracket: 329,
-            heroTree: 60,
+            gearItemLevel: 329.5625,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
-              {
-                spellId: '107574',
-                count: 6,
-              },
-              {
-                spellId: '118038',
-                count: 2,
-              },
-              {
-                spellId: '1464',
-                count: 15,
-              },
-              {
-                spellId: '100',
-                count: 4,
-              },
-              {
-                spellId: '23920',
-                count: 8,
-              },
-              {
-                spellId: '107570',
-                count: 1,
-              },
-              {
-                spellId: '7384',
-                count: 57,
-              },
-              {
-                spellId: '97462',
-                count: 1,
-              },
               {
                 spellId: '167105',
                 count: 12,
               },
               {
-                spellId: '281000',
-                count: 86,
+                spellId: '23920',
+                count: 6,
               },
               {
-                spellId: '845',
-                count: 25,
+                spellId: '7384',
+                count: 43,
               },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
+                spellId: '1464',
+                count: 14,
+              },
+              {
+                spellId: '260708',
+                count: 6,
+              },
+              {
+                spellId: '20572',
+                count: 3,
+              },
+              {
+                spellId: '446035',
+                count: 12,
+              },
+              {
+                spellId: '100',
+                count: 3,
+              },
+              {
                 spellId: '12294',
-                count: 112,
+                count: 109,
+              },
+              {
+                spellId: '281000',
+                count: 80,
               },
               {
                 spellId: '1269383',
-                count: 34,
+                count: 35,
+              },
+              {
+                spellId: '107570',
+                count: 8,
+              },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '118038',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
+              },
+              {
+                spellId: '845',
+                count: 15,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 298800,
+                uses: 42,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45012,
+                uses: 3,
+              },
+              {
+                spellId: '413984',
+                activeMs: 13865,
+                uses: 1,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/y3WhPvRFTAMaw1GX#fight=10&source=1',
+            startedAt: '2026-10-07T01:30:31.008Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 332491,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.375,
+            heroTree: null,
+            augmentationCount: 1,
+            casts: [
+              {
+                spellId: '7384',
+                count: 47,
+              },
+              {
+                spellId: '202168',
+                count: 1,
+              },
+              {
+                spellId: '100',
+                count: 3,
+              },
+              {
+                spellId: '281000',
+                count: 77,
               },
               {
                 spellId: '446035',
                 count: 11,
               },
               {
-                spellId: '202168',
-                count: 2,
-              },
-              {
-                spellId: '260708',
-                count: 5,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 26224,
-                uses: 2,
-              },
-              {
-                spellId: '10060',
-                activeMs: 45096,
-                uses: 3,
-              },
-              {
-                spellId: '395152',
-                activeMs: 300493,
-                uses: 29,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/cmhLNK846WRTaZvw#fight=36&source=927',
-            startedAt: '2026-10-07T01:05:11.454Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 341841,
-            itemLevelBracket: 329,
-            heroTree: 60,
-            augmentationCount: 0,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '281000',
-                count: 74,
-              },
-              {
-                spellId: '97462',
-                count: 1,
-              },
-              {
-                spellId: '57755',
-                count: 2,
-              },
-              {
-                spellId: '260708',
-                count: 2,
-              },
-              {
-                spellId: '52174',
-                count: 2,
-              },
-              {
-                spellId: '107574',
-                count: 6,
-              },
-              {
-                spellId: '446035',
-                count: 13,
-              },
-              {
-                spellId: '12294',
-                count: 116,
+                spellId: '1464',
+                count: 19,
               },
               {
                 spellId: '118038',
                 count: 2,
               },
               {
-                spellId: '107570',
-                count: 8,
+                spellId: '6262',
+                count: 1,
               },
               {
                 spellId: '1269383',
-                count: 33,
+                count: 36,
               },
               {
-                spellId: '845',
-                count: 19,
+                spellId: '260708',
+                count: 4,
+              },
+              {
+                spellId: '23920',
+                count: 6,
               },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
-                spellId: '1464',
-                count: 19,
-              },
-              {
-                spellId: '23920',
-                count: 7,
-              },
-              {
-                spellId: '100',
-                count: 4,
-              },
-              {
-                spellId: '1234969',
-                count: 5,
-              },
-              {
-                spellId: '7384',
-                count: 46,
-              },
-              {
                 spellId: '167105',
                 count: 12,
               },
               {
-                spellId: '1297761',
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '107574',
+                count: 6,
+              },
+              {
+                spellId: '845',
+                count: 17,
+              },
+              {
+                spellId: '12294',
+                count: 103,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '395152',
+                activeMs: 313056,
+                uses: 32,
+              },
+              {
+                spellId: '413984',
+                activeMs: 49264,
+                uses: 4,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.25,
+        durationDifference: 0.03603161747416473,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/FnXbzQxWpDc3tV98#fight=45&source=475',
+            startedAt: '2026-10-07T05:36:16.116Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1684132,
+            itemLevelBracket: 20,
+            gearItemLevel: 329,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1464',
+                count: 18,
+              },
+              {
+                spellId: '386164',
+                count: 7,
+              },
+              {
+                spellId: '7384',
+                count: 214,
+              },
+              {
+                spellId: '167105',
+                count: 44,
+              },
+              {
+                spellId: '1231411',
+                count: 1,
+              },
+              {
+                spellId: '202168',
+                count: 9,
+              },
+              {
+                spellId: '1269383',
+                count: 56,
+              },
+              {
+                spellId: '107574',
+                count: 23,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '6673',
+                count: 15,
+              },
+              {
+                spellId: '97462',
+                count: 5,
+              },
+              {
+                spellId: '107570',
                 count: 4,
+              },
+              {
+                spellId: '46968',
+                count: 15,
+              },
+              {
+                spellId: '18499',
+                count: 1,
+              },
+              {
+                spellId: '845',
+                count: 251,
+              },
+              {
+                spellId: '100',
+                count: 19,
+              },
+              {
+                spellId: '446035',
+                count: 51,
+              },
+              {
+                spellId: '1295132',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '12294',
+                count: 388,
+              },
+              {
+                spellId: '386208',
+                count: 7,
+              },
+              {
+                spellId: '52174',
+                count: 11,
+              },
+              {
+                spellId: '1236994',
+                count: 3,
+              },
+              {
+                spellId: '6552',
+                count: 31,
+              },
+              {
+                spellId: '260708',
+                count: 38,
+              },
+              {
+                spellId: '281000',
+                count: 326,
+              },
+              {
+                spellId: '118038',
+                count: 8,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '23920',
+                count: 33,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/fqCA14HPJFn3t7Yy#fight=19&source=4',
+            startedAt: '2026-10-07T22:00:16.492Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1623450,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '1464',
+                count: 26,
+              },
+              {
+                spellId: '6552',
+                count: 26,
+              },
+              {
+                spellId: '845',
+                count: 255,
+              },
+              {
+                spellId: '167105',
+                count: 46,
+              },
+              {
+                spellId: '23920',
+                count: 29,
+              },
+              {
+                spellId: '20572',
+                count: 11,
+              },
+              {
+                spellId: '107574',
+                count: 24,
+              },
+              {
+                spellId: '52174',
+                count: 8,
+              },
+              {
+                spellId: '97462',
+                count: 2,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '386208',
+                count: 13,
+              },
+              {
+                spellId: '118038',
+                count: 10,
+              },
+              {
+                spellId: '18499',
+                count: 4,
+              },
+              {
+                spellId: '386164',
+                count: 13,
+              },
+              {
+                spellId: '46968',
+                count: 10,
+              },
+              {
+                spellId: '7384',
+                count: 189,
+              },
+              {
+                spellId: '446035',
+                count: 52,
+              },
+              {
+                spellId: '12294',
+                count: 416,
+              },
+              {
+                spellId: '202168',
+                count: 13,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '260708',
+                count: 38,
+              },
+              {
+                spellId: '6673',
+                count: 3,
+              },
+              {
+                spellId: '100',
+                count: 13,
+              },
+              {
+                spellId: '1269383',
+                count: 54,
+              },
+              {
+                spellId: '281000',
+                count: 342,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -36434,7 +44578,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '184367',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '분노 전사는 피의 갈증과 분노의 강타 등으로 분노를 모아 광란으로 소모하고 격노를 이어가는 근접 딜러입니다. 광역에서는 소용돌이 연마로 다음 단일 대상 공격을 복제합니다. 12.1에서는 이 복제 효과와 분쇄 적용 특성이 분리되어 있으므로, 출혈이 남아 있더라도 복제 공격 횟수가 소진됐다면 다시 준비해야 합니다. 숙련된 경험을 선택하면 격노 중 피의 갈증으로 지속시간을 연장할 수 있습니다.',
     sourceNote: 'Blizzard 12.1 라이브 노트와 한국어 툴팁으로 피의 폭풍, 몰아치는 천둥, 자르고 베기, 빗발치는 광란, 새기는 칼날·고기칼과 시즌 2 세트를 대조했습니다. 분노의 투신·칼날폭풍은 같은 선택 노드이므로 학살자 칼날폭풍과 산왕 투신의 오프닝을 합치지 않습니다. 4세트는 8월 18일 소개에 남은 5%/10%가 아니라 현재 툴팁의 3%/6%를 사용합니다. 2026-09-22 Blizzard PvE 핫픽스로 산왕의 벼락과 지면 전류 피해가 각각 50% 증가했습니다. 이 상향 전의 8월 빌드 순위나 6월 로그 집계만으로 현재의 영웅 특성 우열을 확정하지 않습니다. 최신 로그 비교와 전체 세부 검수는 진행 중입니다. 분노 기본 피해 6% 증가와 4세트 3%/6% 변경의 영어 공지 날짜는 8월 18일, 한국어 공지 날짜는 8월 19일입니다. 집행자의 의도한 효과 2배 오류는 영어 8월 14일·한국어 8월 15일 수정됐습니다. 9월 22일·23일 산왕 상향과 다른 조정이므로 하나의 피해 배율로 합산하지 않습니다.',
     sources: [
@@ -36565,18 +44709,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 31,700건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/VTf8dr4mkJHatwCN#fight=6&source=4',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/LWJNjZPpzVQTHxgF#fight=31&source=14',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:10:47.018Z · 장비 구간 329 · 421.0초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T03:18:24.837Z · 장비 평균 327.75 · 실제 430.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/cbH86r2YnRvFLaxj#fight=3&source=4',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/cKa9bkgRQGJLD78H#fight=16&source=20',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:08:26.952Z · 장비 구간 329 · 429.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:09:36.439Z · 장비 평균 327.13 · 실제 439.8초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QaCYGRdtV3j7wcpm#fight=60&source=307',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T05:37:15.984Z · 장비 평균 329.19 · 실제 1706.0초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/VX7WhNbxpMgPAjkK#fight=1&source=14',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:14:01.384Z · 장비 평균 329.19 · 실제 1670.1초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -36592,7 +44750,7 @@ export const guideManuscripts = {
       '12.1 한국어 툴팁 기준 우레 작렬은 피의 갈증으로 최대 2중첩까지 발동하며, 투신을 시전하면 폭풍의 화신으로 2중첩을 얻습니다. 학살자의 일격 발동률은 분노 15%와 무기 25%로 다릅니다. 9월 22일의 50% 상향 대상은 우레 작렬이 아니라 벼락·지면 전류입니다.',
       '영어 2026-08-18·한국어 2026-08-19 공식 긴급 수정은 분노 기본 피해 6% 증가와 4세트의 추가 치명타 보너스 3%씩 최대 6%를 함께 공지했습니다. 현재 수치에 상향률을 다시 적용하지 않습니다.',
       '영어 2026-08-14·한국어 2026-08-15의 학살자 집행자 오류 수정은 효과가 의도한 값의 두 배였던 문제를 바로잡은 것입니다. 오류 수정 전의 학살자 결과나 9월 산왕 상향 전 순위를 현재 우열로 쓰지 않습니다.',
-      '10월 8일 전사 분노의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 전사 분노의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.00, 실제 전투 길이 차이는 2.04%/2.11%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       'Skyhold의 공개 안내 링크는 확인했지만 비공개 디스코드 핀 글 전문은 인용하지 않습니다. 공개 로그, Wowhead, Icy Veins와 충돌하지 않는 보조 판단으로만 둡니다.',
@@ -36600,7 +44758,7 @@ export const guideManuscripts = {
       '광란과 격노는 너무 자주 등장하므로 모든 문장을 아이콘으로 과밀하게 만들지 않고, 핵심 판단 문장과 차트/우선순위에서 반복적으로 보여줍니다.',
       '10월 8일 단일·쐐기·레이드 특성 견본의 가져오기·포인트·연결과 최신 공개 로그 집계를 확인했습니다. 최근 14일 집계에는 조정 이전 전투가 섞일 수 있으므로 조정 후 영웅 특성의 우열을 확정하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -37444,180 +45602,478 @@ export const guideManuscripts = {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
         matchedItemLevelBracket: true,
-        durationDifference: 0.020252958356119753,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.02039261699945653,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
         matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/VTf8dr4mkJHatwCN#fight=6&source=4',
-            startedAt: '2026-10-08T02:10:47.018Z',
+            url: 'https://www.warcraftlogs.com/reports/LWJNjZPpzVQTHxgF#fight=31&source=14',
+            startedAt: '2026-10-08T03:18:24.837Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 421012,
-            itemLevelBracket: 329,
-            heroTree: 60,
+            durationMs: 430799,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.75,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
-                spellId: '23920',
-                count: 5,
+                spellId: '100',
+                count: 13,
               },
               {
-                spellId: '5308',
-                count: 43,
-              },
-              {
-                spellId: '385060',
-                count: 8,
-              },
-              {
-                spellId: '23881',
-                count: 26,
+                spellId: '1295247',
+                count: 1,
               },
               {
                 spellId: '184367',
-                count: 154,
-              },
-              {
-                spellId: '1295132',
-                count: 2,
-              },
-              {
-                spellId: '335097',
-                count: 69,
-              },
-              {
-                spellId: '52174',
-                count: 7,
-              },
-              {
-                spellId: '446035',
-                count: 10,
-              },
-              {
-                spellId: '85288',
-                count: 71,
+                count: 158,
               },
               {
                 spellId: '46968',
                 count: 2,
               },
               {
-                spellId: '1719',
-                count: 10,
-              },
-              {
-                spellId: '190411',
-                count: 43,
-              },
-              {
-                spellId: '97462',
-                count: 1,
-              },
-              {
-                spellId: '100',
-                count: 14,
-              },
-              {
-                spellId: '335096',
-                count: 34,
-              },
-              {
                 spellId: '6262',
                 count: 1,
               },
               {
-                spellId: '202168',
-                count: 6,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/cbH86r2YnRvFLaxj#fight=3&source=4',
-            startedAt: '2026-10-08T01:08:26.952Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 429715,
-            itemLevelBracket: 329,
-            heroTree: 61,
-            augmentationCount: 0,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '6343',
-                count: 14,
-              },
-              {
-                spellId: '85288',
-                count: 58,
-              },
-              {
-                spellId: '23881',
-                count: 50,
-              },
-              {
-                spellId: '52174',
-                count: 2,
-              },
-              {
                 spellId: '1719',
                 count: 10,
               },
               {
-                spellId: '335096',
-                count: 42,
+                spellId: '23881',
+                count: 40,
               },
               {
-                spellId: '100',
+                spellId: '52174',
                 count: 5,
               },
               {
-                spellId: '107574',
-                count: 10,
-              },
-              {
-                spellId: '23920',
-                count: 7,
-              },
-              {
-                spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '184367',
-                count: 159,
-              },
-              {
-                spellId: '5308',
-                count: 33,
-              },
-              {
-                spellId: '335097',
-                count: 39,
-              },
-              {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '97462',
+                spellId: '1295132',
                 count: 2,
               },
               {
                 spellId: '202168',
                 count: 4,
               },
+              {
+                spellId: '97462',
+                count: 1,
+              },
+              {
+                spellId: '23920',
+                count: 10,
+              },
+              {
+                spellId: '335097',
+                count: 64,
+              },
+              {
+                spellId: '85288',
+                count: 65,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '5308',
+                count: 53,
+              },
+              {
+                spellId: '385060',
+                count: 8,
+              },
+              {
+                spellId: '335096',
+                count: 30,
+              },
+              {
+                spellId: '190411',
+                count: 43,
+              },
+              {
+                spellId: '446035',
+                count: 10,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 40022,
+                uses: 5,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/cKa9bkgRQGJLD78H#fight=16&source=20',
+            startedAt: '2026-10-08T01:09:36.439Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 439767,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.125,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '184367',
+                count: 140,
+              },
+              {
+                spellId: '68992',
+                count: 2,
+              },
+              {
+                spellId: '5308',
+                count: 15,
+              },
+              {
+                spellId: '23920',
+                count: 6,
+              },
+              {
+                spellId: '6343',
+                count: 33,
+              },
+              {
+                spellId: '23881',
+                count: 67,
+              },
+              {
+                spellId: '107574',
+                count: 10,
+              },
+              {
+                spellId: '202168',
+                count: 3,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '85288',
+                count: 66,
+              },
+              {
+                spellId: '335096',
+                count: 50,
+              },
+              {
+                spellId: '100',
+                count: 12,
+              },
+              {
+                spellId: '1719',
+                count: 10,
+              },
+              {
+                spellId: '107570',
+                count: 1,
+              },
+              {
+                spellId: '335097',
+                count: 23,
+              },
+              {
+                spellId: '52174',
+                count: 3,
+              },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.02105848086559817,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/QaCYGRdtV3j7wcpm#fight=60&source=307',
+            startedAt: '2026-10-08T05:37:15.984Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1706011,
+            itemLevelBracket: 18,
+            gearItemLevel: 329.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '184364',
+                count: 8,
+              },
+              {
+                spellId: '46968',
+                count: 11,
+              },
+              {
+                spellId: '386196',
+                count: 1,
+              },
+              {
+                spellId: '100',
+                count: 18,
+              },
+              {
+                spellId: '52174',
+                count: 6,
+              },
+              {
+                spellId: '85288',
+                count: 272,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '97462',
+                count: 7,
+              },
+              {
+                spellId: '384110',
+                count: 5,
+              },
+              {
+                spellId: '335096',
+                count: 125,
+              },
+              {
+                spellId: '190411',
+                count: 253,
+              },
+              {
+                spellId: '1236994',
+                count: 6,
+              },
+              {
+                spellId: '107570',
+                count: 7,
+              },
+              {
+                spellId: '6552',
+                count: 23,
+              },
+              {
+                spellId: '184367',
+                count: 523,
+              },
+              {
+                spellId: '23920',
+                count: 33,
+              },
+              {
+                spellId: '386208',
+                count: 1,
+              },
+              {
+                spellId: '1231411',
+                count: 1,
+              },
+              {
+                spellId: '5308',
+                count: 193,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '202168',
+                count: 13,
+              },
+              {
+                spellId: '385060',
+                count: 28,
+              },
+              {
+                spellId: '446035',
+                count: 31,
+              },
+              {
+                spellId: '1719',
+                count: 30,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '23881',
+                count: 91,
+              },
+              {
+                spellId: '6262',
+                count: 5,
+              },
+              {
+                spellId: '335097',
+                count: 142,
+              },
+              {
+                spellId: '6673',
+                count: 3,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '390386',
+                activeMs: 120013,
+                uses: 9,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/VX7WhNbxpMgPAjkK#fight=1&source=14',
+            startedAt: '2026-10-07T23:14:01.384Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1670085,
+            itemLevelBracket: 18,
+            gearItemLevel: 329.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '23881',
+                count: 41,
+              },
+              {
+                spellId: '107570',
+                count: 3,
+              },
+              {
+                spellId: '184364',
+                count: 6,
+              },
+              {
+                spellId: '85288',
+                count: 282,
+              },
+              {
+                spellId: '335096',
+                count: 109,
+              },
+              {
+                spellId: '6552',
+                count: 19,
+              },
+              {
+                spellId: '100',
+                count: 25,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '184367',
+                count: 484,
+              },
+              {
+                spellId: '1719',
+                count: 30,
+              },
+              {
+                spellId: '6673',
+                count: 7,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '52174',
+                count: 10,
+              },
+              {
+                spellId: '446035',
+                count: 31,
+              },
+              {
+                spellId: '385060',
+                count: 29,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
+              },
+              {
+                spellId: '23920',
+                count: 16,
+              },
+              {
+                spellId: '46968',
+                count: 4,
+              },
+              {
+                spellId: '18499',
+                count: 4,
+              },
+              {
+                spellId: '335097',
+                count: 194,
+              },
+              {
+                spellId: '97462',
+                count: 3,
+              },
+              {
+                spellId: '190411',
+                count: 160,
+              },
+              {
+                spellId: '5308',
+                count: 154,
+              },
+              {
+                spellId: '202168',
+                count: 12,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -37626,7 +46082,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 운용 가이드',
     graphCenterSkillId: '32645',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '목조르기와 파열을 준비하고, 연계 점수를 모아 독살로 소비합니다. 큰 피해는 죽음표식과 왕의 파멸을 함께 쓰는 구간에서 나옵니다. 광역에서는 혈폭풍으로 출혈을 퍼뜨린 뒤 칼날 부채로 생성합니다. 운명결속은 추가 연계 점수와 동전 효과를, 죽음추적자는 징표와 강화 독살을 따로 관리하세요.',
     sourceNote: '12.1 현재 툴팁은 죽음표식의 출혈·치명독 피해 증가 75%와 치명독 이중 적용을 구분합니다. 불구대천 첫 노드는 독살에 쓴 연계 점수 1점당 기력 2를 돌려주며 버프 만료를 기다리는 효과가 아닙니다. 엉겅퀴 차는 자동 선택과 수동 선택을 구분했습니다. Wowhead 2026-09-06 운용은 죽음추적자 단일에서 독 묻은 스틸레토를 선택한 독칼의 자원 효율을 설명하고, 운명결속에는 같은 규칙을 일괄 적용하지 않습니다. Icy Veins의 영웅 특성 추천 문구는 페이지 안에서도 서로 달라 최신 로그 합의로 포장하지 않았습니다. Method Whispyr의 공개 소개에서 Ravenholdt 활동과 SimulationCraft 기여를 확인했지만 비공개 디스코드 메시지를 읽은 것은 아닙니다. Archon 레이드·쐐기 페이지는 이번 재조회에서 403으로 막혀 샘플 수·사용률을 확보하지 못했습니다. 과거 6월 집계를 현재 추천 근거로 재사용하지 않습니다.',
     sources: [
@@ -37750,18 +46206,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 157,348건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/PkCR1q4MvcJTBg6Z#fight=24&source=7',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NVaTtmM7XrYG1h3D#fight=39&source=26',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T02:56:27.906Z · 장비 구간 329 · 382.4초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:58:37.336Z · 장비 평균 333.31 · 실제 310.6초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=14',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ACmXHMFtaPLR9k8w#fight=2&source=66',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T16:57:34.730Z · 장비 구간 329 · 382.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:01:07.443Z · 장비 평균 332.88 · 실제 319.2초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/xrcBZfPKNFGJkT4L#fight=92&source=510',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T05:01:32.597Z · 장비 평균 329.38 · 실제 1801.8초 · 증강 0명 · 21단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/bwtAagQ6L9TqWr4c#fight=4&source=135',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T21:02:39.894Z · 장비 평균 329.81 · 실제 1738.1초 · 증강 0명 · 21단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -37773,7 +46243,7 @@ export const guideManuscripts = {
       '엉겅퀴 차 자동 특성은 기력 30 미만에 실제 효과를 발동합니다. 수동 선택은 별도 주문 1298826이며 자동 효과를 직접 누르는 차트 노드로 쓰지 않습니다.',
       '독 묻은 스틸레토가 있는 독칼과 없는 독칼은 비용·쿨다운이 다릅니다. 최신 가이드도 죽음추적자 단일과 운명결속에 동일한 독칼 규칙을 적용하지 않습니다.',
       'Method Whispyr(8월 12일)는 모든 상황에서 죽음추적자가 2~5% 앞서 기본 선택이라고 적고, Icy Veins(8월 10일)는 같은 페이지 안에서 죽음추적자와 운명결속 추천이 엇갈립니다. 두 자료 모두 최신 로그 집계가 아니므로 이 가이드는 두 영웅 특성을 순위 없이 나란히 다룹니다.',
-      '10월 8일 도적 암살의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 도적 암살의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 21단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.44/0.44, 실제 전투 길이 차이는 2.70%/3.54%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '아래는 재검토한 핵심 특성과 동작을 바탕으로 한 12.1 운용입니다. 시즌 2 세트의 기본 효과와 운용 원칙은 확인했지만 장비별 최적 특성 코드, 최신 로그 사용률, 세트의 모든 세부 상호작용까지 검증 완료했다는 의미는 아닙니다.',
@@ -37781,7 +46251,7 @@ export const guideManuscripts = {
       '일반 독살의 5점 이상 기준과 어둡고 어두운 밤의 최대 점수 소비를 구분하세요. 최대 연계 점수는 자신의 특성에 따라 달라집니다.',
       '쐐기 빌드를 그대로 들고 단일 보스를 치는 경우에는 순수 단일 빌드와 생성기 우선순위가 달라질 수 있습니다. 영웅 특성 이름만 같다고 모든 선택 노드가 같지는 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -38637,180 +47107,156 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0006485050389887506,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
+        durationDifference: 0.026952016389231722,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/PkCR1q4MvcJTBg6Z#fight=24&source=7',
-            startedAt: '2026-10-07T02:56:27.906Z',
+            url: 'https://www.warcraftlogs.com/reports/NVaTtmM7XrYG1h3D#fight=39&source=26',
+            startedAt: '2026-10-07T02:58:37.336Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 382418,
-            itemLevelBracket: 329,
-            heroTree: 52,
+            durationMs: 310630,
+            itemLevelBracket: 333,
+            gearItemLevel: 333.3125,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1943',
-                count: 15,
-              },
-              {
-                spellId: '1295132',
-                count: 1,
-              },
-              {
-                spellId: '703',
-                count: 18,
-              },
-              {
-                spellId: '6262',
-                count: 1,
+                spellId: '1856',
+                count: 3,
               },
               {
                 spellId: '1295247',
                 count: 1,
               },
               {
-                spellId: '185311',
-                count: 4,
-              },
-              {
-                spellId: '360194',
-                count: 4,
-              },
-              {
-                spellId: '1297908',
+                spellId: '31224',
                 count: 1,
               },
               {
-                spellId: '385627',
-                count: 7,
-              },
-              {
-                spellId: '51723',
-                count: 20,
-              },
-              {
-                spellId: '1856',
+                spellId: '36554',
                 count: 3,
               },
               {
-                spellId: '1329',
-                count: 122,
+                spellId: '1966',
+                count: 1,
               },
               {
-                spellId: '1247227',
-                count: 12,
+                spellId: '2983',
+                count: 2,
               },
               {
                 spellId: '452536',
                 count: 0,
               },
               {
-                spellId: '32645',
-                count: 85,
-              },
-              {
-                spellId: '36554',
-                count: 5,
+                spellId: '5938',
+                count: 10,
               },
               {
                 spellId: '1236616',
                 count: 1,
               },
               {
-                spellId: '5938',
-                count: 2,
+                spellId: '1943',
+                count: 11,
               },
               {
                 spellId: '1297761',
-                count: 4,
+                count: 3,
+              },
+              {
+                spellId: '51723',
+                count: 12,
+              },
+              {
+                spellId: '360194',
+                count: 3,
+              },
+              {
+                spellId: '703',
+                count: 16,
+              },
+              {
+                spellId: '32645',
+                count: 71,
+              },
+              {
+                spellId: '1247227',
+                count: 17,
+              },
+              {
+                spellId: '385627',
+                count: 5,
+              },
+              {
+                spellId: '1329',
+                count: 101,
               },
             ],
             externalBuffs: [
               {
                 spellId: '395152',
-                activeMs: 267230,
-                uses: 34,
+                activeMs: 294937,
+                uses: 39,
               },
               {
                 spellId: '413984',
-                activeMs: 61794,
-                uses: 5,
+                activeMs: 13535,
+                uses: 1,
+              },
+              {
+                spellId: '10060',
+                activeMs: 45012,
+                uses: 3,
               },
             ],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=14',
-            startedAt: '2026-10-07T16:57:34.730Z',
+            url: 'https://www.warcraftlogs.com/reports/ACmXHMFtaPLR9k8w#fight=2&source=66',
+            startedAt: '2026-10-07T02:01:07.443Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 382170,
-            itemLevelBracket: 329,
-            heroTree: 52,
-            augmentationCount: 0,
-            healerCount: 4,
+            durationMs: 319234,
+            itemLevelBracket: 332,
+            gearItemLevel: 332.875,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '36554',
-                count: 9,
+                spellId: '1329',
+                count: 102,
               },
               {
                 spellId: '452536',
                 count: 0,
               },
               {
-                spellId: '185565',
-                count: 5,
-              },
-              {
-                spellId: '385627',
-                count: 7,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '703',
-                count: 23,
-              },
-              {
-                spellId: '1943',
-                count: 23,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '360194',
-                count: 4,
-              },
-              {
-                spellId: '1247227',
-                count: 13,
-              },
-              {
-                spellId: '32645',
-                count: 72,
+                spellId: '1297761',
+                count: 3,
               },
               {
                 spellId: '2983',
                 count: 3,
               },
               {
-                spellId: '1297908',
-                count: 2,
+                spellId: '32645',
+                count: 67,
               },
               {
-                spellId: '31224',
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1297908',
                 count: 2,
               },
               {
@@ -38818,37 +47264,344 @@ export const guideManuscripts = {
                 count: 1,
               },
               {
-                spellId: '1297761',
-                count: 4,
+                spellId: '385627',
+                count: 6,
               },
               {
-                spellId: '1329',
-                count: 85,
-              },
-              {
-                spellId: '51723',
-                count: 59,
+                spellId: '1943',
+                count: 12,
               },
               {
                 spellId: '1856',
-                count: 4,
+                count: 3,
               },
               {
-                spellId: '185311',
+                spellId: '1247227',
+                count: 17,
+              },
+              {
+                spellId: '360194',
+                count: 3,
+              },
+              {
+                spellId: '36554',
+                count: 7,
+              },
+              {
+                spellId: '703',
+                count: 16,
+              },
+              {
+                spellId: '5938',
                 count: 5,
+              },
+              {
+                spellId: '31224',
+                count: 1,
+              },
+              {
+                spellId: '51723',
+                count: 6,
               },
             ],
             externalBuffs: [
               {
-                spellId: '10060',
-                activeMs: 50291,
-                uses: 4,
+                spellId: '395152',
+                activeMs: 291577,
+                uses: 34,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.4375,
+        durationDifference: 0.03535882472104052,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/xrcBZfPKNFGJkT4L#fight=92&source=510',
+            startedAt: '2026-10-08T05:01:32.597Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1801785,
+            itemLevelBracket: 21,
+            gearItemLevel: 329.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 21,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1766',
+                count: 28,
+              },
+              {
+                spellId: '1966',
+                count: 23,
+              },
+              {
+                spellId: '1293340',
+                count: 8,
+              },
+              {
+                spellId: '360194',
+                count: 12,
+              },
+              {
+                spellId: '1943',
+                count: 59,
+              },
+              {
+                spellId: '1329',
+                count: 217,
+              },
+              {
+                spellId: '31224',
+                count: 6,
+              },
+              {
+                spellId: '51723',
+                count: 200,
+              },
+              {
+                spellId: '5938',
+                count: 9,
+              },
+              {
+                spellId: '2983',
+                count: 9,
+              },
+              {
+                spellId: '32645',
+                count: 362,
+              },
+              {
+                spellId: '185311',
+                count: 13,
+              },
+              {
+                spellId: '1247227',
+                count: 274,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
+              },
+              {
+                spellId: '2094',
+                count: 2,
+              },
+              {
+                spellId: '6770',
+                count: 1,
+              },
+              {
+                spellId: '1298826',
+                count: 31,
+              },
+              {
+                spellId: '385627',
+                count: 23,
+              },
+              {
+                spellId: '1297761',
+                count: 12,
+              },
+              {
+                spellId: '36554',
+                count: 10,
+              },
+              {
+                spellId: '57934',
+                count: 11,
+              },
+              {
+                spellId: '703',
+                count: 79,
+              },
+              {
+                spellId: '1784',
+                count: 9,
+              },
+              {
+                spellId: '1856',
+                count: 13,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/bwtAagQ6L9TqWr4c#fight=4&source=135',
+            startedAt: '2026-10-07T21:02:39.894Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1738076,
+            itemLevelBracket: 21,
+            gearItemLevel: 329.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 21,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '703',
+                count: 81,
+              },
+              {
+                spellId: '1329',
+                count: 205,
+              },
+              {
+                spellId: '1295132',
+                count: 5,
+              },
+              {
+                spellId: '5938',
+                count: 26,
+              },
+              {
+                spellId: '8676',
+                count: 2,
+              },
+              {
+                spellId: '5277',
+                count: 9,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '6770',
+                count: 1,
+              },
+              {
+                spellId: '385627',
+                count: 23,
+              },
+              {
+                spellId: '1766',
+                count: 26,
+              },
+              {
+                spellId: '1943',
+                count: 56,
+              },
+              {
+                spellId: '31224',
+                count: 9,
+              },
+              {
+                spellId: '1784',
+                count: 17,
+              },
+              {
+                spellId: '1856',
+                count: 13,
+              },
+              {
+                spellId: '1247227',
+                count: 162,
+              },
+              {
+                spellId: '408',
+                count: 1,
+              },
+              {
+                spellId: '57934',
+                count: 7,
+              },
+              {
+                spellId: '1231411',
+                count: 1,
+              },
+              {
+                spellId: '51723',
+                count: 278,
+              },
+              {
+                spellId: '360194',
+                count: 13,
+              },
+              {
+                spellId: '2983',
+                count: 10,
+              },
+              {
+                spellId: '32645',
+                count: 377,
+              },
+              {
+                spellId: '58984',
+                count: 4,
+              },
+              {
+                spellId: '1298826',
+                count: 31,
+              },
+              {
+                spellId: '36554',
+                count: 13,
+              },
+              {
+                spellId: '2094',
+                count: 1,
+              },
+              {
+                spellId: '6262',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 14,
+              },
+              {
+                spellId: '1293340',
+                count: 3,
+              },
+              {
+                spellId: '1966',
+                count: 79,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -38858,7 +47611,7 @@ export const guideManuscripts = {
     status: '12.1 운용 가이드',
     graphCenterSkillId: '79096',
     summary: '미간 적중·광기의 학살자를 제때 쓰고, 속결로 소비해 다음 쿨다운을 당깁니다. 기회와 시즌 2 무료 속결이 뜨면 미리 정한 다음 버튼 대신 실제 자원을 다시 보세요. 광역은 폭풍의 칼날을 켠 뒤 같은 생성·소비를 이어가되, 첫 적중으로 얻는 점수와 실제 복제 범위를 따로 챙깁니다.',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     sourceNote: 'Wowhead JustGuy 8월 27일, Icy Veins Seliathan 8월 10일, Method Guy 8월 12일 운용 자료를 비교했습니다. 신속 대응과 광기의 학살자 변경은 현재 주문 데이터와 시즌 2 설명으로 대조했습니다. Wowhead는 무료 속결을 미간 적중 뒤에, Method는 질풍 칼날·미간 적중보다 앞에 둡니다. 도박의 연속도 영웅 특성 및 안정성 기준에 따라 2단계와 3단계로 달라 하나의 절대 규칙으로 합치지 않았습니다. 아래 기본형은 Method의 세트 발동 우선 처리와 Icy Veins의 첫 미간 적중 뒤 광기의 학살자 진입을 참고한 조건부 연습 예시입니다. 상위 로그에서 검증한 최적 고정 순서라는 뜻은 아닙니다. Archon 레이드·쐐기 집계는 이번 접근에서 열리지 않아 현재 샘플 수·DPS·사용률을 제시하지 않습니다. Ravenholdt는 공개 안내 경로를 확인했으며 비공개 메시지를 인용하지 않습니다.',
     sources: [
       {
@@ -38995,18 +47748,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 18,677건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/BrbG3qLXgRyVHDz9#fight=11&source=15',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=31',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:46:16.656Z · 장비 구간 326 · 418.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:54:08.933Z · 장비 평균 327.94 · 실제 331.6초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/NFgAhH26nMTyfjJ4#fight=2&source=18',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/FcQ84DygbJCXGWqn#fight=1&source=15',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:40:06.152Z · 장비 구간 326 · 412.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:01:31.014Z · 장비 평균 328.56 · 실제 322.1초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/ka826mGWLbHy3CN9#fight=30&source=1108',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T02:50:59.807Z · 장비 평균 327.56 · 실제 1870.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/32nXTKBWhbtdkV9F#fight=3&source=1',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:49:28.446Z · 장비 평균 327.75 · 실제 1823.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     playstyle: [
@@ -39034,7 +47801,7 @@ export const guideManuscripts = {
       '4세트 발동은 다음 속결을 무료·최대 점수 상당 피해로 바꿉니다. 현재 점수를 채우기 위해 생성기를 더 누르는 습관을 바꿔야 합니다.',
       '기만자는 무법 전용 무결한 형상 4%와 날렵한 질풍을, 운명결속은 무법 전용 동전 기력 회복과 속결 추가 동전을 적용합니다. 다른 도적 전문화 수치를 섞지 않았습니다.',
       '공개 가이드는 기만자를 우선 추천하지만 최신 로그 점유율은 확보하지 못했습니다. 추천과 검증된 현재 순위는 다른 정보입니다.',
-      '10월 8일 도적 무법의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 도적 무법의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Kings\' Rest 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.19, 실제 전투 길이 차이는 2.86%/2.51%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '6점 이상 차트는 최대 점수를 늘리는 특성과 아드레날린 촉진 연마·과충전기 등을 선택한 만렙 빌드 예시입니다. 해당 노드가 없거나 아직 최대 5점이라면 6점을 기다리지 말고 자기 최대 점수에서 소비하세요.',
@@ -39043,7 +47810,7 @@ export const guideManuscripts = {
       '현재 로그 집계·특성 코드의 상위 로그 일치율은 미검증입니다. 기본 툴팁, 최대 특성 등급, 실제 선택 노드, 실전 발동을 같은 값으로 혼동하지 마세요.',
       '2026-10-03까지 9월 이후 무법 PvE 수치를 바꾼 공식 긴급 수정은 없습니다. 12.1.5에서는 날렵한 몸놀림의 기력 비용이 적중 대상당 5, 최대 30으로 바뀌므로 패치 적용 뒤 폭풍의 칼날 유지 조건과 광역 비용 설명을 다시 확인해야 합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -40005,229 +48772,503 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.015126564580081882,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.028568412480583914,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/BrbG3qLXgRyVHDz9#fight=11&source=15',
-            startedAt: '2026-10-08T01:46:16.656Z',
+            url: 'https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=31',
+            startedAt: '2026-10-07T01:54:08.933Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 418403,
-            itemLevelBracket: 326,
-            heroTree: 51,
+            durationMs: 331555,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.9375,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 5,
             casts: [
               {
-                spellId: '1277933',
-                count: 2,
-              },
-              {
-                spellId: '193315',
-                count: 99,
-              },
-              {
-                spellId: '13877',
-                count: 19,
-              },
-              {
-                spellId: '13750',
-                count: 12,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '441776',
-                count: 19,
-              },
-              {
-                spellId: '185763',
-                count: 168,
-              },
-              {
-                spellId: '2983',
-                count: 9,
-              },
-              {
                 spellId: '381989',
-                count: 2,
-              },
-              {
-                spellId: '1214909',
-                count: 13,
-              },
-              {
-                spellId: '2098',
-                count: 60,
-              },
-              {
-                spellId: '185311',
-                count: 1,
-              },
-              {
-                spellId: '51690',
-                count: 12,
-              },
-              {
-                spellId: '1297761',
-                count: 5,
+                count: 6,
               },
               {
                 spellId: '315496',
                 count: 1,
               },
               {
-                spellId: '6262',
+                spellId: '185311',
                 count: 1,
               },
               {
                 spellId: '315341',
-                count: 78,
+                count: 69,
+              },
+              {
+                spellId: '13750',
+                count: 11,
+              },
+              {
+                spellId: '441776',
+                count: 19,
+              },
+              {
+                spellId: '185763',
+                count: 148,
+              },
+              {
+                spellId: '2983',
+                count: 1,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
               },
               {
                 spellId: '1856',
                 count: 1,
               },
               {
-                spellId: '195457',
-                count: 11,
-              },
-              {
-                spellId: '1966',
-                count: 1,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/NFgAhH26nMTyfjJ4#fight=2&source=18',
-            startedAt: '2026-10-07T00:40:06.152Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 412074,
-            itemLevelBracket: 326,
-            heroTree: 51,
-            augmentationCount: 1,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '1214909',
-                count: 12,
-              },
-              {
-                spellId: '31224',
-                count: 2,
-              },
-              {
-                spellId: '315341',
-                count: 82,
-              },
-              {
-                spellId: '193315',
-                count: 93,
-              },
-              {
                 spellId: '1297761',
-                count: 5,
-              },
-              {
-                spellId: '13750',
-                count: 13,
-              },
-              {
-                spellId: '185311',
-                count: 8,
-              },
-              {
-                spellId: '13877',
-                count: 18,
-              },
-              {
-                spellId: '381989',
-                count: 5,
-              },
-              {
-                spellId: '6262',
-                count: 1,
+                count: 2,
               },
               {
                 spellId: '2098',
-                count: 53,
-              },
-              {
-                spellId: '51690',
-                count: 13,
+                count: 54,
               },
               {
                 spellId: '195457',
-                count: 21,
+                count: 2,
+              },
+              {
+                spellId: '1214909',
+                count: 5,
               },
               {
                 spellId: '1966',
-                count: 1,
+                count: 11,
               },
               {
                 spellId: '1277933',
                 count: 2,
               },
               {
+                spellId: '13877',
+                count: 12,
+              },
+              {
+                spellId: '31224',
+                count: 1,
+              },
+              {
+                spellId: '51690',
+                count: 12,
+              },
+              {
+                spellId: '193315',
+                count: 95,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/FcQ84DygbJCXGWqn#fight=1&source=15',
+            startedAt: '2026-10-07T01:01:31.014Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 322083,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '195457',
+                count: 7,
+              },
+              {
+                spellId: '381989',
+                count: 5,
+              },
+              {
+                spellId: '1277933',
+                count: 2,
+              },
+              {
+                spellId: '13750',
+                count: 12,
+              },
+              {
                 spellId: '441776',
-                count: 18,
+                count: 15,
               },
               {
                 spellId: '185763',
-                count: 138,
+                count: 148,
+              },
+              {
+                spellId: '1966',
+                count: 4,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '1214909',
+                count: 6,
               },
               {
                 spellId: '2983',
-                count: 8,
+                count: 4,
               },
               {
-                spellId: '271877',
-                count: 9,
+                spellId: '315341',
+                count: 68,
               },
               {
-                spellId: '358733',
-                count: 3,
+                spellId: '51690',
+                count: 12,
+              },
+              {
+                spellId: '13877',
+                count: 11,
+              },
+              {
+                spellId: '315496',
+                count: 1,
+              },
+              {
+                spellId: '2098',
+                count: 62,
+              },
+              {
+                spellId: '31224',
+                count: 2,
+              },
+              {
+                spellId: '193315',
+                count: 96,
               },
               {
                 spellId: '1236616',
-                count: 1,
+                count: 2,
               },
             ],
-            externalBuffs: [
-              {
-                spellId: '395152',
-                activeMs: 338205,
-                uses: 36,
-              },
-              {
-                spellId: '413984',
-                activeMs: 24803,
-                uses: 2,
-              },
-              {
-                spellId: '10060',
-                activeMs: 15004,
-                uses: 1,
-              },
-            ],
+            externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.1875,
+        durationDifference: 0.025132295638721044,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/ka826mGWLbHy3CN9#fight=30&source=1108',
+            startedAt: '2026-10-07T02:50:59.807Z',
+            region: 'US',
+            encounterId: 61762,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1870621,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '31224',
+                count: 4,
+              },
+              {
+                spellId: '58984',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 20,
+              },
+              {
+                spellId: '51690',
+                count: 48,
+              },
+              {
+                spellId: '195457',
+                count: 14,
+              },
+              {
+                spellId: '5938',
+                count: 1,
+              },
+              {
+                spellId: '1224098',
+                count: 14,
+              },
+              {
+                spellId: '185763',
+                count: 641,
+              },
+              {
+                spellId: '13877',
+                count: 100,
+              },
+              {
+                spellId: '2983',
+                count: 33,
+              },
+              {
+                spellId: '8676',
+                count: 3,
+              },
+              {
+                spellId: '185311',
+                count: 18,
+              },
+              {
+                spellId: '1236616',
+                count: 7,
+              },
+              {
+                spellId: '13750',
+                count: 48,
+              },
+              {
+                spellId: '1784',
+                count: 11,
+              },
+              {
+                spellId: '2098',
+                count: 261,
+              },
+              {
+                spellId: '114018',
+                count: 1,
+              },
+              {
+                spellId: '2094',
+                count: 1,
+              },
+              {
+                spellId: '271877',
+                count: 109,
+              },
+              {
+                spellId: '193315',
+                count: 412,
+              },
+              {
+                spellId: '1214909',
+                count: 53,
+              },
+              {
+                spellId: '408',
+                count: 2,
+              },
+              {
+                spellId: '381989',
+                count: 17,
+              },
+              {
+                spellId: '5277',
+                count: 7,
+              },
+              {
+                spellId: '1966',
+                count: 79,
+              },
+              {
+                spellId: '1766',
+                count: 17,
+              },
+              {
+                spellId: '1277933',
+                count: 8,
+              },
+              {
+                spellId: '1833',
+                count: 2,
+              },
+              {
+                spellId: '441776',
+                count: 73,
+              },
+              {
+                spellId: '1856',
+                count: 2,
+              },
+              {
+                spellId: '315496',
+                count: 1,
+              },
+              {
+                spellId: '315341',
+                count: 288,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/32nXTKBWhbtdkV9F#fight=3&source=1',
+            startedAt: '2026-10-08T02:49:28.446Z',
+            region: 'US',
+            encounterId: 61762,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1823608,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '2094',
+                count: 2,
+              },
+              {
+                spellId: '381989',
+                count: 16,
+              },
+              {
+                spellId: '2983',
+                count: 47,
+              },
+              {
+                spellId: '1214909',
+                count: 45,
+              },
+              {
+                spellId: '1766',
+                count: 19,
+              },
+              {
+                spellId: '2098',
+                count: 258,
+              },
+              {
+                spellId: '185311',
+                count: 3,
+              },
+              {
+                spellId: '1856',
+                count: 2,
+              },
+              {
+                spellId: '5277',
+                count: 3,
+              },
+              {
+                spellId: '1966',
+                count: 61,
+              },
+              {
+                spellId: '1277933',
+                count: 7,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '1297761',
+                count: 18,
+              },
+              {
+                spellId: '13877',
+                count: 108,
+              },
+              {
+                spellId: '185763',
+                count: 590,
+              },
+              {
+                spellId: '193315',
+                count: 383,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '51690',
+                count: 45,
+              },
+              {
+                spellId: '195457',
+                count: 23,
+              },
+              {
+                spellId: '441776',
+                count: 71,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '31224',
+                count: 3,
+              },
+              {
+                spellId: '315341',
+                count: 274,
+              },
+              {
+                spellId: '271877',
+                count: 74,
+              },
+              {
+                spellId: '1784',
+                count: 12,
+              },
+              {
+                spellId: '315496',
+                count: 6,
+              },
+              {
+                spellId: '13750',
+                count: 45,
+              },
+              {
+                spellId: '1224098',
+                count: 4,
+              },
+              {
+                spellId: '5938',
+                count: 5,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -40236,7 +49277,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '심화 가이드 · 로그 검수 중',
     graphCenterSkillId: '280719',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '잠행은 어둠의 춤과 어둠의 칼날에 강한 마무리 일격을 집중하는 근접 딜러입니다. 죽음추적자는 징표 소비 뒤 어둡고 어두운 밤 절개를, 기만자는 은밀한 기술과 최후의 일격을 챙깁니다. 시즌 2 세트는 춤 밖 생성기와 춤 종료 후 마무리 일격도 보강하므로, 첫 오프닝뿐 아니라 다음 강화 구간까지의 자원 흐름을 함께 봐야 합니다.',
     sourceNote: '영웅 특성별 운용은 Wowhead fuu1의 2026-08-24 딜사이클과 Icy Veins Eleem의 12.1 가이드를 대조했습니다. 2026년 6월 Archon 점유율은 현재 추천 근거에서 제외했습니다. Icy Veins(8월 10일)와 Method(8월 19일)의 죽음추적자 추천은 9월 23일 기만자 상향 전에 쓰인 판단입니다. 공식 한국어 명칭과 개별 효과는 KB에 기록한 주문 ID별 한·영 툴팁을 우선하며, 시즌 2의 4세트는 장비 가이드 본문과 달리 현재 주문 데이터의 60% 효율을 적용합니다. Ravenholdt 관련 근거는 Eleem의 공개 저자 소개이며 비공개 디스코드 메시지를 읽었다고 주장하지 않습니다. 미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
     sources: [
@@ -40353,18 +49394,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 34,304건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=99',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/myKB2wWvnVFQa71t#fight=18&source=33',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:00:57.478Z · 장비 구간 327 · 315.5초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:26:42.040Z · 장비 평균 330.19 · 실제 409.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/6fptbRw1ZvraWmd4#fight=14&source=83',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/thmc18vpC9FdQkWM#fight=6&source=49',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:20:52.629Z · 장비 구간 327 · 318.4초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:36:31.412Z · 장비 평균 329.56 · 실제 416.1초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/9QJyfHMdYtBaDmNX#fight=9&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T03:09:16.658Z · 장비 평균 327.56 · 실제 1780.1초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/PhVgNXarZtnBAxdT#fight=11&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:31:33.971Z · 장비 평균 327.56 · 실제 1736.2초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -40375,7 +49430,7 @@ export const guideManuscripts = {
       '현재 로그 점유율과 개인 캐릭터의 최적 빌드 성능은 이 자료에서 새로 측정하지 않았습니다. 과거 사용률을 현재 사용률로 표시하지 않습니다.',
       '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
       '미국 10월 6일 잠행 기만자의 당혹 피해 보정이 5%에서 7%, 무형검 피해가 15%, 최후의 일격 피해가 10% 증가했습니다. 모두 PvP 제외입니다. 9월 23일 상향과 별개의 후속 변경이며 상향 후 영웅 특성 우열을 사용률 없이 단정하지 않습니다.',
-      '10월 8일 도적 잠행의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 도적 잠행의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Den of Nalorakk 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.00, 실제 전투 길이 차이는 1.66%/2.46%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '오프닝은 해당 특성과 새 전투를 전제로 한 조건부 예시입니다. 종지부의 신속함·그림자 기술 발동과 연속 풀의 남은 상태에 따라 생략할 단계가 생깁니다.',
@@ -40386,7 +49441,7 @@ export const guideManuscripts = {
       '기만자 춤 진입 조건은 출처마다 다릅니다. Method는 6점 이상, Icy Veins는 7점과 그림자 기술 5중첩 이상, 고대의 기술 활성을 함께 적습니다. 아래 예시는 6점 기준이므로 자신의 최대 점수와 그림자 기술 중첩을 함께 확인하세요.',
       '12.1.5 노트는 잠행 암흑 피해 보정의 중복 적용을 바로잡는다고 밝혔습니다. 어둠의 칼날, 피아귀의 이빨, 머무는 그림자의 기여도는 패치 적용 뒤 다시 확인해야 합니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -41141,205 +50196,563 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.009364548494983277,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.016588833902558026,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/nPqzK8QZmY74Xpwg#fight=3&source=99',
-            startedAt: '2026-10-07T01:00:57.478Z',
+            url: 'https://www.warcraftlogs.com/reports/myKB2wWvnVFQa71t#fight=18&source=33',
+            startedAt: '2026-10-07T01:26:42.040Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 315453,
-            itemLevelBracket: 327,
-            heroTree: 51,
-            augmentationCount: 1,
-            healerCount: 4,
+            durationMs: 409161,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.1875,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '121471',
-                count: 4,
+                spellId: '196819',
+                count: 104,
+              },
+              {
+                spellId: '1297761',
+                count: 3,
               },
               {
                 spellId: '319175',
-                count: 15,
+                count: 45,
               },
               {
-                spellId: '196819',
-                count: 85,
+                spellId: '282449',
+                count: 0,
               },
               {
-                spellId: '2983',
-                count: 3,
+                spellId: '197835',
+                count: 48,
               },
               {
                 spellId: '31224',
                 count: 1,
               },
               {
-                spellId: '185438',
-                count: 43,
-              },
-              {
                 spellId: '426591',
-                count: 7,
+                count: 9,
               },
               {
                 spellId: '441776',
-                count: 17,
+                count: 24,
               },
               {
-                spellId: '1297761',
-                count: 4,
+                spellId: '36554',
+                count: 9,
+              },
+              {
+                spellId: '280720',
+                count: 0,
               },
               {
                 spellId: '1966',
                 count: 8,
               },
               {
-                spellId: '197835',
-                count: 16,
-              },
-              {
                 spellId: '1856',
                 count: 2,
               },
               {
-                spellId: '280720',
-                count: 0,
-              },
-              {
-                spellId: '282449',
-                count: 0,
-              },
-              {
-                spellId: '36554',
-                count: 4,
-              },
-              {
-                spellId: '53',
-                count: 71,
-              },
-              {
-                spellId: '1295132',
-                count: 2,
-              },
-              {
                 spellId: '185313',
-                count: 17,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 13139,
-                uses: 1,
+                count: 21,
               },
               {
-                spellId: '395152',
-                activeMs: 305580,
-                uses: 37,
-              },
-              {
-                spellId: '10060',
-                activeMs: 30013,
-                uses: 2,
-              },
-            ],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/6fptbRw1ZvraWmd4#fight=14&source=83',
-            startedAt: '2026-10-07T00:20:52.629Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 318435,
-            itemLevelBracket: 327,
-            heroTree: 53,
-            augmentationCount: 0,
-            healerCount: 5,
-            casts: [
-              {
-                spellId: '185313',
-                count: 17,
-              },
-              {
-                spellId: '36554',
-                count: 5,
-              },
-              {
-                spellId: '1856',
-                count: 2,
-              },
-              {
-                spellId: '282449',
-                count: 0,
-              },
-              {
-                spellId: '185311',
-                count: 1,
-              },
-              {
-                spellId: '197835',
-                count: 37,
-              },
-              {
-                spellId: '280720',
-                count: 0,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
-              },
-              {
-                spellId: '31224',
-                count: 1,
+                spellId: '185438',
+                count: 49,
               },
               {
                 spellId: '121471',
-                count: 4,
-              },
-              {
-                spellId: '319175',
-                count: 20,
-              },
-              {
-                spellId: '2983',
-                count: 1,
+                count: 5,
               },
               {
                 spellId: '1236616',
                 count: 2,
               },
               {
-                spellId: '196819',
-                count: 111,
-              },
-              {
                 spellId: '53',
-                count: 52,
+                count: 59,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/thmc18vpC9FdQkWM#fight=6&source=49',
+            startedAt: '2026-10-07T00:36:31.412Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 416063,
+            itemLevelBracket: 329,
+            gearItemLevel: 329.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '426591',
+                count: 9,
               },
               {
-                spellId: '1966',
-                count: 12,
+                spellId: '282449',
+                count: 0,
               },
               {
                 spellId: '185438',
-                count: 43,
+                count: 37,
               },
               {
-                spellId: '426591',
+                spellId: '2983',
                 count: 7,
+              },
+              {
+                spellId: '196819',
+                count: 129,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '1856',
+                count: 1,
+              },
+              {
+                spellId: '1293340',
+                count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 2,
+              },
+              {
+                spellId: '1297761',
+                count: 5,
+              },
+              {
+                spellId: '53',
+                count: 65,
+              },
+              {
+                spellId: '319175',
+                count: 39,
+              },
+              {
+                spellId: '36554',
+                count: 11,
+              },
+              {
+                spellId: '1234768',
+                count: 1,
+              },
+              {
+                spellId: '280720',
+                count: 0,
+              },
+              {
+                spellId: '121471',
+                count: 5,
+              },
+              {
+                spellId: '5277',
+                count: 2,
+              },
+              {
+                spellId: '185313',
+                count: 22,
+              },
+              {
+                spellId: '1966',
+                count: 11,
+              },
+              {
+                spellId: '31224',
+                count: 2,
+              },
+              {
+                spellId: '197835',
+                count: 55,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.02464445338288927,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/9QJyfHMdYtBaDmNX#fight=9&source=2',
+            startedAt: '2026-10-08T03:09:16.658Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1780076,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '319175',
+                count: 298,
+              },
+              {
+                spellId: '1252825',
+                count: 4,
+              },
+              {
+                spellId: '426591',
+                count: 26,
+              },
+              {
+                spellId: '185313',
+                count: 79,
+              },
+              {
+                spellId: '1233904',
+                count: 7,
+              },
+              {
+                spellId: '1725',
+                count: 3,
+              },
+              {
+                spellId: '1784',
+                count: 13,
+              },
+              {
+                spellId: '441776',
+                count: 81,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '1297761',
+                count: 16,
+              },
+              {
+                spellId: '1224098',
+                count: 12,
+              },
+              {
+                spellId: '1266193',
+                count: 3,
+              },
+              {
+                spellId: '2094',
+                count: 3,
+              },
+              {
+                spellId: '31224',
+                count: 4,
+              },
+              {
+                spellId: '185438',
+                count: 84,
+              },
+              {
+                spellId: '1235841',
+                count: 8,
+              },
+              {
+                spellId: '36554',
+                count: 21,
+              },
+              {
+                spellId: '1833',
+                count: 3,
+              },
+              {
+                spellId: '1966',
+                count: 43,
+              },
+              {
+                spellId: '53',
+                count: 114,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '6770',
+                count: 1,
+              },
+              {
+                spellId: '197835',
+                count: 305,
+              },
+              {
+                spellId: '185311',
+                count: 2,
+              },
+              {
+                spellId: '1239001',
+                count: 1,
+              },
+              {
+                spellId: '2983',
+                count: 9,
+              },
+              {
+                spellId: '1261781',
+                count: 6,
+              },
+              {
+                spellId: '5277',
+                count: 6,
+              },
+              {
+                spellId: '121471',
+                count: 16,
+              },
+              {
+                spellId: '408',
+                count: 3,
+              },
+              {
+                spellId: '282449',
+                count: 0,
+              },
+              {
+                spellId: '1856',
+                count: 2,
+              },
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '280720',
+                count: 0,
+              },
+              {
+                spellId: '196819',
+                count: 276,
+              },
+              {
+                spellId: '1766',
+                count: 24,
+              },
+              {
+                spellId: '5938',
+                count: 4,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/PhVgNXarZtnBAxdT#fight=11&source=3',
+            startedAt: '2026-10-07T23:31:33.971Z',
+            region: 'US',
+            encounterId: 12825,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1736207,
+            itemLevelBracket: 19,
+            gearItemLevel: 327.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 19,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1293340',
+                count: 4,
+              },
+              {
+                spellId: '426591',
+                count: 31,
+              },
+              {
+                spellId: '53',
+                count: 201,
+              },
+              {
+                spellId: '319175',
+                count: 215,
+              },
+              {
+                spellId: '2094',
+                count: 1,
+              },
+              {
+                spellId: '280720',
+                count: 0,
+              },
+              {
+                spellId: '1271538',
+                count: 1,
+              },
+              {
+                spellId: '196819',
+                count: 322,
+              },
+              {
+                spellId: '1243972',
+                count: 1,
+              },
+              {
+                spellId: '57934',
+                count: 12,
+              },
+              {
+                spellId: '121471',
+                count: 17,
+              },
+              {
+                spellId: '1261781',
+                count: 6,
+              },
+              {
+                spellId: '2983',
+                count: 10,
+              },
+              {
+                spellId: '5938',
+                count: 1,
+              },
+              {
+                spellId: '1235841',
+                count: 4,
+              },
+              {
+                spellId: '1784',
+                count: 14,
+              },
+              {
+                spellId: '185311',
+                count: 6,
+              },
+              {
+                spellId: '1766',
+                count: 28,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '6770',
+                count: 2,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '36554',
+                count: 24,
+              },
+              {
+                spellId: '1250701',
+                count: 1,
+              },
+              {
+                spellId: '185438',
+                count: 117,
+              },
+              {
+                spellId: '185313',
+                count: 75,
+              },
+              {
+                spellId: '1271714',
+                count: 1,
+              },
+              {
+                spellId: '31224',
+                count: 4,
+              },
+              {
+                spellId: '408',
+                count: 2,
+              },
+              {
+                spellId: '282449',
+                count: 0,
+              },
+              {
+                spellId: '1252825',
+                count: 1,
+              },
+              {
+                spellId: '5277',
+                count: 6,
+              },
+              {
+                spellId: '1233904',
+                count: 6,
+              },
+              {
+                spellId: '114018',
+                count: 1,
+              },
+              {
+                spellId: '1239001',
+                count: 1,
+              },
+              {
+                spellId: '1966',
+                count: 37,
+              },
+              {
+                spellId: '1266193',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 17,
+              },
+              {
+                spellId: '1856',
+                count: 4,
+              },
+              {
+                spellId: '197835',
+                count: 191,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -41348,7 +50761,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '187880',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '고양은 근접 타격으로 소용돌이치는 무기를 만들고 번개 주문으로 소비합니다. 소비는 피해뿐 아니라 정기의 속도를 통해 다음 타격기를 앞당깁니다. 폭풍인도자는 폭풍 발동과 승천 중 타격기 연결을, 토템술사는 토템 설치 후 뜨거운 손 부여와 연장을 중심으로 봅니다. 영웅 특성을 고른 뒤 오프닝·단일·광역을 따로 확인하세요.',
     sourceNote: '12.1 라이브 조정은 Blizzard 공식 패치 노트를 기준으로 하고, 기술·세트 효과는 한국어·영어 Wowhead 툴팁을 대조했습니다. 주문 ID·전문화·특성 등급은 고정 12.1 SimulationCraft 데이터로 확인했습니다. 운용은 Wowhead, Icy Veins와 Method를 대조했습니다. 9월 21일 Warcraft Logs에서 영웅 울라텍과 Altar of Fangs 18~19단 DPS 상위 기록을 각각 100건 조회했습니다. 특성이 확인되는 레이드 100건·쐐기 89건은 모두 폭풍인도자였습니다. 쐐기 11건은 특성·장비 정보가 없어 제외했습니다. 이는 특정 보스·던전 상위 기록이며 전체 채택률이나 빌드 성능 차이가 아닙니다. 대표 2건의 전체 시전·버프 이벤트를 교차 확인했지만 정확한 자원 손실량은 산출하지 않았습니다. 조회 기간에는 9월 5일 고양 4세트 낙뢰 피해와 9월 10일 폭풍인도자 적중 대상 수정 전 기록이 포함됩니다. 과거 Archon 통계는 추천 근거에서 제외했으며, 디스코드 핀 글은 검증 근거에 포함하지 않았습니다. 미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
     sources: [
@@ -41584,18 +50997,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 47,172건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
         url: 'https://www.warcraftlogs.com/reports/1aRFvCm3bXr82nMD#fight=3&source=24',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:41:44.204Z · 장비 구간 328 · 369.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T00:41:44.204Z · 장비 평균 328.56 · 실제 369.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/p1YDGknPKBj7vy9F#fight=4&source=14',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RZ6qpL7fXJnvmg2K#fight=1&source=22',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T03:02:48.980Z · 장비 구간 328 · 368.1초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T03:33:59.270Z · 장비 평균 327.94 · 실제 385.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/VX7WhNbxpMgPAjkK#fight=1&source=6',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T23:14:01.384Z · 장비 평균 327.94 · 실제 1670.1초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/Vhcjq8fpZbFanCPx#fight=4&source=39',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T05:11:45.581Z · 장비 평균 327.94 · 실제 1728.2초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -41620,7 +51047,7 @@ export const guideManuscripts = {
       '한국 공지 기준 8월 19일 고양 모든 공격력이 5% 올랐고, 9월 10일에는 파멸의 바람 피해가 맹독의 분노 샘 같은 장신구 집중 효과를 끊던 문제와 폭풍인도자 낙뢰가 의도하지 않은 대상에게 질풍의 무기를 적중시키던 문제가 고쳐졌습니다. 9월 23일 고양 항목은 플레이어 간 전투 전용입니다.',
       'Icy Veins Wordup(8월 23일)는 폭풍인도자를 모든 콘텐츠의 추천으로 두고, 시즌 2 4세트를 갖춘 순수 단일 전투에서는 초자력 충전 대신 팽창하는 폭풍을 고르라고 적습니다. 4세트의 추가 글쿨 부담 때문에 초자력 충전의 자원 낭비가 커진다는 이유이며, 광역이 섞이면 다시 초자력 충전을 씁니다.',
       '미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
-      '10월 8일 주술사 고양의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 주술사 고양의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.00, 실제 전투 길이 차이는 4.26%/3.36%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '핵심 기술과 기본 흐름을 먼저 정정했습니다. 남은 본문·세트 효과·장신구·최신 로그 검수가 끝나기 전에는 전문화 전체를 검수 완료로 표시하지 않습니다.',
@@ -41633,7 +51060,7 @@ export const guideManuscripts = {
       '미국 10월 6일 모든 능력과 자동 공격 피해 4%, 용암 채찍 피해 35% 상향이 적용 공지에 들어갔습니다. PvP에는 적용되지 않습니다. 전체 보정과 개별 기술 보정을 단순 합산하지 않으며 용암 채찍 비중과 영웅 특성 우열은 같은 장비 조건에서 비교합니다.',
       '12.1.5 노트는 승천이나 파멸의 바람 중 특정 시점에 전하 축적을 발동하면 소용돌이치는 무기 자동 생성이 멈추던 문제를 고친다고 밝혔습니다. 12.1.5 적용 전 로그와 적용 후 로그를 같은 조건으로 비교하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -42588,9 +52015,12 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0026550350843921864,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.04258326913549505,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
             url: 'https://www.warcraftlogs.com/reports/1aRFvCm3bXr82nMD#fight=3&source=24',
@@ -42601,13 +52031,61 @@ export const guideManuscripts = {
             kill: true,
             durationMs: 369110,
             itemLevelBracket: 328,
-            heroTree: 55,
+            gearItemLevel: 328.5625,
+            heroTree: null,
             augmentationCount: 1,
-            healerCount: 4,
             casts: [
+              {
+                spellId: '192077',
+                count: 2,
+              },
+              {
+                spellId: '462854',
+                count: 1,
+              },
+              {
+                spellId: '452201',
+                count: 26,
+              },
+              {
+                spellId: '469270',
+                count: 59,
+              },
+              {
+                spellId: '188196',
+                count: 39,
+              },
+              {
+                spellId: '192063',
+                count: 4,
+              },
+              {
+                spellId: '60103',
+                count: 16,
+              },
               {
                 spellId: '470057',
                 count: 33,
+              },
+              {
+                spellId: '17364',
+                count: 95,
+              },
+              {
+                spellId: '196884',
+                count: 7,
+              },
+              {
+                spellId: '33697',
+                count: 3,
+              },
+              {
+                spellId: '114051',
+                count: 3,
+              },
+              {
+                spellId: '188443',
+                count: 48,
               },
               {
                 spellId: '108271',
@@ -42618,39 +52096,15 @@ export const guideManuscripts = {
                 count: 3,
               },
               {
-                spellId: '452201',
-                count: 26,
-              },
-              {
-                spellId: '33697',
-                count: 3,
-              },
-              {
-                spellId: '60103',
-                count: 16,
-              },
-              {
-                spellId: '2645',
-                count: 6,
+                spellId: '1236994',
+                count: 2,
               },
               {
                 spellId: '187874',
                 count: 59,
               },
               {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
-              },
-              {
-                spellId: '17364',
-                count: 95,
-              },
-              {
-                spellId: '462854',
+                spellId: '198103',
                 count: 1,
               },
               {
@@ -42658,44 +52112,20 @@ export const guideManuscripts = {
                 count: 30,
               },
               {
-                spellId: '469270',
-                count: 59,
+                spellId: '2645',
+                count: 6,
               },
               {
-                spellId: '192063',
-                count: 4,
-              },
-              {
-                spellId: '188443',
-                count: 48,
-              },
-              {
-                spellId: '192077',
-                count: 2,
+                spellId: '6262',
+                count: 1,
               },
               {
                 spellId: '108287',
                 count: 2,
               },
               {
-                spellId: '188196',
-                count: 39,
-              },
-              {
-                spellId: '1236994',
-                count: 2,
-              },
-              {
-                spellId: '114051',
-                count: 3,
-              },
-              {
-                spellId: '198103',
+                spellId: '1295247',
                 count: 1,
-              },
-              {
-                spellId: '196884',
-                count: 7,
               },
             ],
             externalBuffs: [
@@ -42707,102 +52137,407 @@ export const guideManuscripts = {
             ],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/p1YDGknPKBj7vy9F#fight=4&source=14',
-            startedAt: '2026-10-07T03:02:48.980Z',
+            url: 'https://www.warcraftlogs.com/reports/RZ6qpL7fXJnvmg2K#fight=1&source=22',
+            startedAt: '2026-10-07T03:33:59.270Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 368130,
-            itemLevelBracket: 328,
-            heroTree: 55,
-            augmentationCount: 0,
-            healerCount: 4,
+            durationMs: 385527,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 1,
             casts: [
               {
-                spellId: '187874',
-                count: 64,
+                spellId: '198103',
+                count: 1,
+              },
+              {
+                spellId: '470057',
+                count: 33,
+              },
+              {
+                spellId: '60103',
+                count: 9,
               },
               {
                 spellId: '452201',
-                count: 29,
+                count: 32,
               },
               {
-                spellId: '1295247',
-                count: 1,
+                spellId: '188443',
+                count: 24,
               },
               {
-                spellId: '469270',
-                count: 70,
-              },
-              {
-                spellId: '108287',
-                count: 1,
-              },
-              {
-                spellId: '1297761',
-                count: 4,
+                spellId: '26297',
+                count: 2,
               },
               {
                 spellId: '1236994',
                 count: 2,
               },
               {
-                spellId: '60103',
-                count: 12,
+                spellId: '469270',
+                count: 60,
               },
               {
-                spellId: '17364',
-                count: 114,
-              },
-              {
-                spellId: '108271',
-                count: 2,
-              },
-              {
-                spellId: '188443',
-                count: 31,
-              },
-              {
-                spellId: '58875',
-                count: 4,
+                spellId: '115356',
+                count: 28,
               },
               {
                 spellId: '196884',
-                count: 5,
+                count: 1,
               },
               {
-                spellId: '470057',
-                count: 34,
+                spellId: '2645',
+                count: 1,
+              },
+              {
+                spellId: '17364',
+                count: 119,
+              },
+              {
+                spellId: '192077',
+                count: 1,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '187874',
+                count: 58,
+              },
+              {
+                spellId: '1297761',
+                count: 4,
+              },
+              {
+                spellId: '188196',
+                count: 53,
+              },
+              {
+                spellId: '462854',
+                count: 2,
               },
               {
                 spellId: '114051',
                 count: 3,
               },
               {
-                spellId: '115356',
-                count: 30,
-              },
-              {
-                spellId: '192077',
+                spellId: '58875',
                 count: 2,
-              },
-              {
-                spellId: '188196',
-                count: 64,
               },
             ],
             externalBuffs: [
               {
+                spellId: '413984',
+                activeMs: 24078,
+                uses: 2,
+              },
+              {
                 spellId: '10060',
-                activeMs: 15002,
+                activeMs: 15014,
                 uses: 1,
+              },
+              {
+                spellId: '395152',
+                activeMs: 361953,
+                uses: 52,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0,
+        durationDifference: 0.033645926214810155,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/VX7WhNbxpMgPAjkK#fight=1&source=6',
+            startedAt: '2026-10-07T23:14:01.384Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1670085,
+            itemLevelBracket: 18,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '188443',
+                count: 201,
+              },
+              {
+                spellId: '198103',
+                count: 8,
+              },
+              {
+                spellId: '469270',
+                count: 256,
+              },
+              {
+                spellId: '108271',
+                count: 14,
+              },
+              {
+                spellId: '462854',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 3,
+              },
+              {
+                spellId: '2825',
+                count: 3,
+              },
+              {
+                spellId: '60103',
+                count: 65,
+              },
+              {
+                spellId: '57994',
+                count: 29,
+              },
+              {
+                spellId: '452201',
+                count: 115,
+              },
+              {
+                spellId: '188196',
+                count: 124,
+              },
+              {
+                spellId: '1236994',
+                count: 5,
+              },
+              {
+                spellId: '187874',
+                count: 224,
+              },
+              {
+                spellId: '470057',
+                count: 131,
+              },
+              {
+                spellId: '383013',
+                count: 2,
+              },
+              {
+                spellId: '1264426',
+                count: 1,
+              },
+              {
+                spellId: '192058',
+                count: 6,
+              },
+              {
+                spellId: '8004',
+                count: 23,
+              },
+              {
+                spellId: '115356',
+                count: 95,
+              },
+              {
+                spellId: '192077',
+                count: 8,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '274738',
+                count: 12,
+              },
+              {
+                spellId: '114051',
+                count: 12,
+              },
+              {
+                spellId: '5394',
+                count: 11,
+              },
+              {
+                spellId: '196884',
+                count: 3,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+              {
+                spellId: '2645',
+                count: 13,
+              },
+              {
+                spellId: '17364',
+                count: 369,
+              },
+              {
+                spellId: '58875',
+                count: 8,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/Vhcjq8fpZbFanCPx#fight=4&source=39',
+            startedAt: '2026-10-07T05:11:45.581Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1728233,
+            itemLevelBracket: 18,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 18,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '1064',
+                count: 12,
+              },
+              {
+                spellId: '2645',
+                count: 24,
+              },
+              {
+                spellId: '51886',
+                count: 3,
+              },
+              {
+                spellId: '462854',
+                count: 4,
+              },
+              {
+                spellId: '114051',
+                count: 11,
+              },
+              {
+                spellId: '1236994',
+                count: 3,
+              },
+              {
+                spellId: '60103',
+                count: 63,
+              },
+              {
+                spellId: '188443',
+                count: 238,
+              },
+              {
+                spellId: '57994',
+                count: 46,
+              },
+              {
+                spellId: '196884',
+                count: 5,
+              },
+              {
+                spellId: '198103',
+                count: 4,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1309983',
+                count: 3,
+              },
+              {
+                spellId: '8004',
+                count: 1,
+              },
+              {
+                spellId: '115356',
+                count: 96,
+              },
+              {
+                spellId: '188196',
+                count: 115,
+              },
+              {
+                spellId: '33697',
+                count: 11,
+              },
+              {
+                spellId: '469270',
+                count: 261,
+              },
+              {
+                spellId: '192058',
+                count: 17,
+              },
+              {
+                spellId: '470057',
+                count: 141,
+              },
+              {
+                spellId: '452201',
+                count: 128,
+              },
+              {
+                spellId: '108271',
+                count: 14,
+              },
+              {
+                spellId: '192077',
+                count: 9,
+              },
+              {
+                spellId: '187874',
+                count: 267,
+              },
+              {
+                spellId: '17364',
+                count: 368,
+              },
+              {
+                spellId: '2825',
+                count: 3,
+              },
+              {
+                spellId: '1297761',
+                count: 11,
+              },
+              {
+                spellId: '58875',
+                count: 11,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -42811,7 +52546,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 실전 심화 공략',
     graphCenterSkillId: '51505',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '12.1 정기 주술사는 선견자를 기본으로 화염 충격과 용암 폭발을 굴리고, 폭풍수호자와 선조의 신속함이 부른 선조에게 단일 또는 광역 주문을 정확히 보여 주는 원거리 딜러입니다. 소용돌이를 대지 충격·정기 작렬·지진으로 비우고, 시즌 2의 무료 소비기를 놓치지 않는 것이 기본입니다.',
     sourceNote: '한국어 이름과 아이콘은 Wowhead 한국어 툴팁에서 용암 폭발 51505, 화염 충격 188389, 폭풍수호자 191634, 승천 114050, 소용돌이의 힘 191861, 초자력 충전 455110을 다시 대조했습니다. 12.1 운용은 Wowhead·Icy Veins의 8월 갱신 내용과 Method Celz의 9월 1일 운용을 기준으로 삼았습니다. 2026-08-30에 확인한 Archon 최근 14일 사용률은 당시 기록으로만 남기고, 10월 3일 재접근은 사람 확인 화면으로 막혀 현재 추천 근거에서 제외했습니다. 공개 커뮤니티 자료는 Earthshrine과 Storm, Earth and Lava의 공개 경로만 보조로 사용했으며 비공개 대화는 근거로 삼지 않았습니다.',
     playstyle: [
@@ -43313,18 +53048,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 274,270건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/DmWw3abc8tFfnJZA#fight=16&source=21',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=17',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:57:24.006Z · 장비 구간 329 · 413.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T10:33:24.413Z · 장비 평균 327.56 · 실제 415.9초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=1',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/k8cMLhBbvxPjz37F#fight=3&source=76',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T01:16:46.914Z · 장비 구간 329 · 413.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T01:15:12.464Z · 장비 평균 326.94 · 실제 406.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/NCXQkKxqPaf3wJ7F#fight=10&source=2',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T08:47:22.715Z · 장비 평균 328.81 · 실제 1758.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/bqnxzk1LA32M4Pt9#fight=2&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T02:25:21.935Z · 장비 평균 328.56 · 실제 1702.8초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -43337,7 +53086,7 @@ export const guideManuscripts = {
       'Wowhead와 Icy Veins 모두 폭풍수호자와 선조의 신속함을 자주 사용하고, 승천이 임박했을 때만 짧게 맞추며 폭풍수호자를 지나치게 지연하지 않는 방향을 제시합니다.',
       'Icy Veins(8월 10일)는 지능 다음 특화, 가속, 치명타, 유연성 순서를, Method(9월 1일)는 선견자 기준 특화, 가속(치명타와 비슷), 치명타, 유연성 순서를 제시합니다. 개인 장비는 Raidbots로 다시 계산해야 합니다.',
       '한국 공지 기준 8월 19일 정기 모든 공격력 5% 증가와 시즌 2 4세트 과충전! 미소모 수정, 8월 21일 원소의 대가가 지진을 강화하지 않던 문제 수정, 9월 2일 선견자 자연 친화가 자연의 수호자 치유를 20% 올리던 오류의 10% 교정이 있었습니다. 9월 23일 정기 항목은 플레이어 간 전투 전용입니다.',
-      '10월 8일 주술사 정기의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 주술사 정기의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.25, 실제 전투 길이 차이는 2.33%/3.17%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '2026-08-30 Archon 사용률은 당시 플레이어가 고른 빌드를 보여 줄 뿐이며, 현재 비율이나 특정 보스의 짧은 페이즈·특수 임무에서 유일한 정답을 보장하지 않습니다.',
@@ -43349,7 +53098,7 @@ export const guideManuscripts = {
       '이 가이드는 선견자 기본 흐름 하나만 차트로 제공합니다. 폭풍인도자 전용 오프닝·단일·광역 차트는 아직 근거를 갖춰 작성하지 않았습니다.',
       '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     blocks: [
       {
@@ -43815,145 +53564,193 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.0015035885485535816,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.625,
+        durationDifference: 0.023287799693663843,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/DmWw3abc8tFfnJZA#fight=16&source=21',
-            startedAt: '2026-10-07T01:57:24.006Z',
+            url: 'https://www.warcraftlogs.com/reports/fZG2aqWXp1yMztRQ#fight=14&source=17',
+            startedAt: '2026-10-07T10:33:24.413Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 413055,
-            itemLevelBracket: 329,
-            heroTree: 56,
-            augmentationCount: 1,
-            healerCount: 5,
+            durationMs: 415883,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.5625,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '108271',
+                spellId: '79206',
                 count: 4,
+              },
+              {
+                spellId: '1236616',
+                count: 1,
+              },
+              {
+                spellId: '462620',
+                count: 36,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
+              },
+              {
+                spellId: '51505',
+                count: 78,
+              },
+              {
+                spellId: '2484',
+                count: 1,
               },
               {
                 spellId: '192063',
                 count: 5,
               },
               {
-                spellId: '443454',
-                count: 13,
+                spellId: '2645',
+                count: 2,
               },
               {
                 spellId: '198103',
+                count: 1,
+              },
+              {
+                spellId: '470057',
+                count: 33,
+              },
+              {
+                spellId: '108271',
                 count: 2,
+              },
+              {
+                spellId: '188196',
+                count: 59,
+              },
+              {
+                spellId: '117014',
+                count: 35,
+              },
+              {
+                spellId: '443454',
+                count: 12,
+              },
+              {
+                spellId: '192077',
+                count: 1,
               },
               {
                 spellId: '6262',
                 count: 1,
               },
               {
-                spellId: '188443',
-                count: 44,
-              },
-              {
                 spellId: '191634',
                 count: 9,
               },
               {
-                spellId: '1236616',
-                count: 2,
-              },
-              {
-                spellId: '470057',
-                count: 39,
-              },
-              {
-                spellId: '1293316',
-                count: 4,
-              },
-              {
-                spellId: '188196',
-                count: 51,
-              },
-              {
-                spellId: '117014',
-                count: 29,
-              },
-              {
-                spellId: '192058',
-                count: 2,
-              },
-              {
-                spellId: '51505',
-                count: 82,
-              },
-              {
-                spellId: '79206',
-                count: 7,
-              },
-              {
-                spellId: '61882',
-                count: 37,
-              },
-              {
                 spellId: '114050',
-                count: 4,
-              },
-            ],
-            externalBuffs: [
-              {
-                spellId: '413984',
-                activeMs: 36416,
-                uses: 3,
+                count: 3,
               },
               {
-                spellId: '395152',
-                activeMs: 312138,
-                uses: 48,
+                spellId: '188443',
+                count: 55,
               },
             ],
+            externalBuffs: [],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/6R71hGVPWTzmAH8r#fight=3&source=1',
-            startedAt: '2026-10-08T01:16:46.914Z',
+            url: 'https://www.warcraftlogs.com/reports/k8cMLhBbvxPjz37F#fight=3&source=76',
+            startedAt: '2026-10-07T01:15:12.464Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 413677,
-            itemLevelBracket: 329,
-            heroTree: 56,
+            durationMs: 406198,
+            itemLevelBracket: 326,
+            gearItemLevel: 326.9375,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 6,
             casts: [
               {
-                spellId: '79206',
-                count: 4,
-              },
-              {
-                spellId: '108271',
+                spellId: '198103',
                 count: 1,
               },
               {
-                spellId: '33697',
+                spellId: '192063',
                 count: 4,
+              },
+              {
+                spellId: '443454',
+                count: 11,
+              },
+              {
+                spellId: '6262',
+                count: 1,
+              },
+              {
+                spellId: '117014',
+                count: 23,
+              },
+              {
+                spellId: '1293316',
+                count: 3,
               },
               {
                 spellId: '191634',
                 count: 8,
               },
               {
+                spellId: '462620',
+                count: 37,
+              },
+              {
+                spellId: '51485',
+                count: 1,
+              },
+              {
+                spellId: '470057',
+                count: 41,
+              },
+              {
+                spellId: '108271',
+                count: 1,
+              },
+              {
                 spellId: '192058',
-                count: 2,
+                count: 1,
+              },
+              {
+                spellId: '2645',
+                count: 5,
               },
               {
                 spellId: '114050',
-                count: 4,
+                count: 3,
+              },
+              {
+                spellId: '79206',
+                count: 3,
+              },
+              {
+                spellId: '2825',
+                count: 1,
+              },
+              {
+                spellId: '188196',
+                count: 40,
+              },
+              {
+                spellId: '51505',
+                count: 88,
               },
               {
                 spellId: '192077',
-                count: 2,
+                count: 1,
               },
               {
                 spellId: '1236616',
@@ -43964,59 +53761,270 @@ export const guideManuscripts = {
                 count: 1,
               },
               {
-                spellId: '51485',
-                count: 6,
+                spellId: '188443',
+                count: 30,
               },
               {
-                spellId: '51490',
+                spellId: '33697',
                 count: 3,
               },
               {
-                spellId: '188196',
-                count: 76,
-              },
-              {
-                spellId: '192063',
-                count: 2,
-              },
-              {
-                spellId: '51505',
-                count: 74,
-              },
-              {
-                spellId: '443454',
-                count: 13,
-              },
-              {
-                spellId: '2645',
-                count: 2,
-              },
-              {
-                spellId: '470057',
-                count: 33,
-              },
-              {
-                spellId: '61882',
-                count: 40,
-              },
-              {
-                spellId: '188443',
-                count: 31,
-              },
-              {
-                spellId: '1250533',
-                count: 4,
-              },
-              {
-                spellId: '117014',
-                count: 29,
+                spellId: '51490',
+                count: 1,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.25,
+        durationDifference: 0.03173640130486972,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/NCXQkKxqPaf3wJ7F#fight=10&source=2',
+            startedAt: '2026-10-07T08:47:22.715Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1758643,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.8125,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '51505',
+                count: 236,
+              },
+              {
+                spellId: '470057',
+                count: 143,
+              },
+              {
+                spellId: '192058',
+                count: 11,
+              },
+              {
+                spellId: '188196',
+                count: 177,
+              },
+              {
+                spellId: '192077',
+                count: 7,
+              },
+              {
+                spellId: '198103',
+                count: 3,
+              },
+              {
+                spellId: '1287798',
+                count: 3,
+              },
+              {
+                spellId: '1293316',
+                count: 13,
+              },
+              {
+                spellId: '2645',
+                count: 32,
+              },
+              {
+                spellId: '191634',
+                count: 35,
+              },
+              {
+                spellId: '188443',
+                count: 243,
+              },
+              {
+                spellId: '57994',
+                count: 32,
+              },
+              {
+                spellId: '51490',
+                count: 2,
+              },
+              {
+                spellId: '108271',
+                count: 13,
+              },
+              {
+                spellId: '117014',
+                count: 102,
+              },
+              {
+                spellId: '58875',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '1236616',
+                count: 6,
+              },
+              {
+                spellId: '114050',
+                count: 13,
+              },
+              {
+                spellId: '462620',
+                count: 184,
+              },
+              {
+                spellId: '79206',
+                count: 12,
+              },
+              {
+                spellId: '32182',
+                count: 3,
+              },
+              {
+                spellId: '443454',
+                count: 46,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/bqnxzk1LA32M4Pt9#fight=2&source=3',
+            startedAt: '2026-10-08T02:25:21.935Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1702830,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '79206',
+                count: 11,
+              },
+              {
+                spellId: '443454',
+                count: 50,
+              },
+              {
+                spellId: '188196',
+                count: 134,
+              },
+              {
+                spellId: '32182',
+                count: 3,
+              },
+              {
+                spellId: '462620',
+                count: 194,
+              },
+              {
+                spellId: '196840',
+                count: 4,
+              },
+              {
+                spellId: '191634',
+                count: 35,
+              },
+              {
+                spellId: '1293316',
+                count: 12,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '57994',
+                count: 31,
+              },
+              {
+                spellId: '114050',
+                count: 12,
+              },
+              {
+                spellId: '470057',
+                count: 158,
+              },
+              {
+                spellId: '192077',
+                count: 7,
+              },
+              {
+                spellId: '2645',
+                count: 24,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '1295247',
+                count: 4,
+              },
+              {
+                spellId: '383013',
+                count: 2,
+              },
+              {
+                spellId: '192058',
+                count: 11,
+              },
+              {
+                spellId: '117014',
+                count: 101,
+              },
+              {
+                spellId: '51505',
+                count: 251,
+              },
+              {
+                spellId: '58875',
+                count: 12,
+              },
+              {
+                spellId: '198103',
+                count: 4,
+              },
+              {
+                spellId: '108271',
+                count: 13,
+              },
+              {
+                spellId: '188443',
+                count: 263,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -44025,7 +54033,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '12.1 전환 검수 중',
     graphCenterSkillId: '61295',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '복원 주술사는 피해가 올 위치에 치유를 준비하고, 다친 대상과 피해 규모에 맞춰 직접 치유와 큰 쿨기를 배분합니다. 12.1 레이드와 쐐기 기본 추천은 토템술사이며, 선견자는 대상 선택과 선조 구간을 살리는 별도 분기입니다. 성난 해일 대상, 쇄도하는 토템 또는 치유의 비 위치, 치유의 물결과 연쇄 치유의 대상 수를 먼저 익히세요. 폭우는 특성을 선택한 경우에만 추가하는 광역 회복입니다.',
     sourceNote: '2026-09-23 확인한 12.1 Wowhead·Icy Veins·Method 특성 가이드는 토템술사를 레이드와 쐐기의 기본 추천으로 두고, 선견자를 대상 선택과 선조 운용의 대안으로 설명합니다. Wowhead와 Icy Veins는 폭우를 기본 빌드에서 빼고 시즌 2 세트 장판의 발동·위치와 피해 타이밍이 맞을 때만 고려합니다. 반면 Method Radio(8월 11일) 운용 우선순위에는 "현재 쇄도하는 토템이 끝나기 전에 폭우를 사용"하는 단계가 있어 출처 간 이견으로 남깁니다. 주문 효과와 한국어 명칭은 Wowhead 라이브 툴팁으로 대조했습니다. 최신 로그 선택률은 확인하지 못했으며, 아래 12.0.5 자료와 6월 선택률은 과거 기록입니다.',
     sources: [
@@ -44212,18 +54220,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 226,248건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/yRhv6gbNmBxV9FTC#fight=49&source=474',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/fQLrMbjwGZKN3ndy#fight=5&source=31',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T03:30:54.019Z · 장비 구간 328 · 330.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T09:41:25.770Z · 장비 평균 330.19 · 실제 386.4초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=21',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/RY7r6Q1yjXGkFLBf#fight=4&source=189',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T00:06:25.770Z · 장비 구간 328 · 328.0초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:03:45.114Z · 장비 평균 331.00 · 실제 395.1초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=140',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T04:23:11.856Z · 장비 평균 328.38 · 실제 1728.1초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/JQLmDbvRAw2TFc4M#fight=4&source=53',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T21:36:24.184Z · 장비 평균 329.19 · 실제 1751.3초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -44243,7 +54265,7 @@ export const guideManuscripts = {
       '2026-06-06 Archon의 토템술사 레이드 99.6%, 쐐기 93.9%, 고단 99.7%는 12.0.5 당시 선택률입니다. 12.1 두 영웅 특성의 현재 우열이나 채택률을 증명하지 않으므로, 토템술사 지역 치유와 선견자 대상 선택을 별도 운용으로 설명합니다.',
       'Wowhead 한국어 툴팁에서 성난 해일, 연쇄 치유, 치유의 물결, 치유의 비, 치유의 토템, 쇄도하는 토템, 폭우, 치유의 해일 토템, 정신의 고리 토템, 승천, 생명 폭발, 자연의 신속함, 선조의 신속함, 폭풍의 흐름 토템 표기와 아이콘을 재확인했습니다.',
       'Method Radio(8월 11일)는 선견자가 이번 시즌 훨씬 나은 대안이 됐지만 쉽고 강한 토템술사를 모든 콘텐츠에 추천한다고 적습니다. 한국 공지 8월 20일 긴급 수정으로 토템술사 소용돌이치는 물 효과가 정상 작동하게 됐고, 9월 4일 과잉 쇄도, 9월 11일 위안의 비 수정이 이어졌습니다.',
-      '10월 8일 주술사 복원의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 주술사 복원의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.81, 실제 전투 길이 차이는 2.20%/1.32%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '과잉 쇄도의 복원 치유량 증가 자체는 9월 4일 공식 수정으로 확인됐습니다. 공개 툴팁의 피해 증가 50%를 치유 증가 수치로 옮기거나 수정 전후 로그를 같은 조건으로 비교하지 않습니다.',
@@ -44256,7 +54278,7 @@ export const guideManuscripts = {
       '12.1.5 노트는 너울대는 물결로 성난 해일을 연장할 때 지속시간을 초기화하지 않고 늘리도록 바꾸고, 자연의 신속함·선조의 신속함이 치유의 비를 즉시 시전으로 만들지 못하던 문제를 고친다고 밝혔습니다. 적용 전이므로 본문에 반영하지 않았고, 10월 6일 예고의 복원 항목은 플레이어 간 전투 전용입니다.',
       '영웅별 오프닝·단일·광역은 2026-10-08 한국어 Wowhead 운용과 기존 KB를 대조한 조건부 예시입니다. 선택 특성과 발동을 모두 보유한 고정 연속 시전으로 해석하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -45059,37 +55081,32 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.006628893983120395,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.022010119187731433,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/yRhv6gbNmBxV9FTC#fight=49&source=474',
-            startedAt: '2026-10-08T03:30:54.019Z',
+            url: 'https://www.warcraftlogs.com/reports/fQLrMbjwGZKN3ndy#fight=5&source=31',
+            startedAt: '2026-10-07T09:41:25.770Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 330221,
-            itemLevelBracket: 328,
-            heroTree: 54,
+            durationMs: 386395,
+            itemLevelBracket: 330,
+            gearItemLevel: 330.1875,
+            heroTree: null,
             augmentationCount: 0,
-            healerCount: 4,
             casts: [
               {
                 spellId: '114052',
                 count: 2,
               },
               {
-                spellId: '61295',
-                count: 63,
-              },
-              {
-                spellId: '188389',
-                count: 6,
-              },
-              {
-                spellId: '98008',
+                spellId: '1295132',
                 count: 2,
               },
               {
@@ -45097,164 +55114,228 @@ export const guideManuscripts = {
                 count: 3,
               },
               {
-                spellId: '108271',
+                spellId: '188196',
+                count: 5,
+              },
+              {
+                spellId: '5394',
+                count: 22,
+              },
+              {
+                spellId: '61295',
+                count: 75,
+              },
+              {
+                spellId: '393438',
+                count: 1,
+              },
+              {
+                spellId: '2645',
                 count: 2,
               },
               {
-                spellId: '6262',
-                count: 1,
+                spellId: '444995',
+                count: 14,
               },
               {
                 spellId: '192077',
                 count: 2,
               },
               {
-                spellId: '79206',
-                count: 1,
-              },
-              {
-                spellId: '2645',
-                count: 4,
-              },
-              {
-                spellId: '1064',
-                count: 100,
-              },
-              {
-                spellId: '1236616',
-                count: 1,
-              },
-              {
                 spellId: '51505',
-                count: 5,
+                count: 22,
               },
               {
-                spellId: '108287',
-                count: 5,
-              },
-              {
-                spellId: '2484',
-                count: 2,
-              },
-              {
-                spellId: '378081',
-                count: 5,
-              },
-              {
-                spellId: '198103',
-                count: 2,
-              },
-              {
-                spellId: '444995',
-                count: 11,
+                spellId: '59547',
+                count: 4,
               },
               {
                 spellId: '1267068',
-                count: 9,
+                count: 11,
               },
               {
                 spellId: '77472',
+                count: 20,
+              },
+              {
+                spellId: '108287',
+                count: 17,
+              },
+              {
+                spellId: '1064',
+                count: 97,
+              },
+              {
+                spellId: '188389',
+                count: 16,
+              },
+              {
+                spellId: '79206',
                 count: 5,
               },
               {
-                spellId: '5394',
-                count: 19,
+                spellId: '378081',
+                count: 6,
               },
               {
                 spellId: '1291894',
-                count: 4,
-              },
-            ],
-            externalBuffs: [],
-          },
-          {
-            url: 'https://www.warcraftlogs.com/reports/d6BFyRapgwz2m9j4#fight=1&source=21',
-            startedAt: '2026-10-07T00:06:25.770Z',
-            region: 'US',
-            encounterId: 3379,
-            difficulty: 5,
-            kill: true,
-            durationMs: 328032,
-            itemLevelBracket: 328,
-            heroTree: 54,
-            augmentationCount: 1,
-            healerCount: 4,
-            casts: [
-              {
-                spellId: '2484',
-                count: 1,
-              },
-              {
-                spellId: '51505',
-                count: 11,
+                count: 5,
               },
               {
                 spellId: '98008',
                 count: 2,
               },
               {
-                spellId: '114052',
+                spellId: '108271',
+                count: 2,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/RY7r6Q1yjXGkFLBf#fight=4&source=189',
+            startedAt: '2026-10-08T01:03:45.114Z',
+            region: 'US',
+            encounterId: 3379,
+            difficulty: 5,
+            kill: true,
+            durationMs: 395091,
+            itemLevelBracket: 331,
+            gearItemLevel: 331,
+            heroTree: null,
+            augmentationCount: 0,
+            casts: [
+              {
+                spellId: '974',
+                count: 4,
+              },
+              {
+                spellId: '98008',
                 count: 2,
               },
               {
-                spellId: '1291894',
-                count: 2,
+                spellId: '51505',
+                count: 22,
+              },
+              {
+                spellId: '2484',
+                count: 1,
+              },
+              {
+                spellId: '114052',
+                count: 3,
+              },
+              {
+                spellId: '1064',
+                count: 115,
+              },
+              {
+                spellId: '192058',
+                count: 1,
               },
               {
                 spellId: '188196',
-                count: 2,
+                count: 5,
+              },
+              {
+                spellId: '378081',
+                count: 6,
+              },
+              {
+                spellId: '61295',
+                count: 77,
+              },
+              {
+                spellId: '77472',
+                count: 4,
+              },
+              {
+                spellId: '188389',
+                count: 19,
               },
               {
                 spellId: '5394',
-                count: 21,
+                count: 24,
               },
               {
                 spellId: '444995',
-                count: 13,
-              },
-              {
-                spellId: '1267068',
-                count: 9,
+                count: 15,
               },
               {
                 spellId: '108271',
                 count: 1,
               },
               {
-                spellId: '79206',
-                count: 5,
+                spellId: '1236648',
+                count: 2,
               },
               {
-                spellId: '108287',
-                count: 5,
-              },
-              {
-                spellId: '61295',
-                count: 63,
-              },
-              {
-                spellId: '378081',
-                count: 5,
-              },
-              {
-                spellId: '188443',
+                spellId: '192063',
                 count: 3,
               },
               {
-                spellId: '58875',
-                count: 2,
+                spellId: '1267068',
+                count: 11,
               },
               {
-                spellId: '1236994',
+                spellId: '1291894',
+                count: 6,
+              },
+              {
+                spellId: '108287',
                 count: 1,
               },
               {
-                spellId: '188389',
-                count: 12,
+                spellId: '79206',
+                count: 4,
               },
               {
-                spellId: '59547',
-                count: 2,
+                spellId: '2645',
+                count: 5,
+              },
+            ],
+            externalBuffs: [],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.013242533480352045,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=140',
+            startedAt: '2026-10-07T04:23:11.856Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1728060,
+            itemLevelBracket: 20,
+            gearItemLevel: 328.375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '58875',
+                count: 9,
+              },
+              {
+                spellId: '2825',
+                count: 3,
               },
               {
                 spellId: '462854',
@@ -45262,18 +55343,301 @@ export const guideManuscripts = {
               },
               {
                 spellId: '1064',
-                count: 106,
+                count: 155,
+              },
+              {
+                spellId: '33697',
+                count: 5,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '192058',
+                count: 9,
+              },
+              {
+                spellId: '188389',
+                count: 47,
+              },
+              {
+                spellId: '108271',
+                count: 7,
+              },
+              {
+                spellId: '52127',
+                count: 1,
+              },
+              {
+                spellId: '77472',
+                count: 290,
+              },
+              {
+                spellId: '73685',
+                count: 62,
+              },
+              {
+                spellId: '444995',
+                count: 57,
+              },
+              {
+                spellId: '79206',
+                count: 2,
+              },
+              {
+                spellId: '383013',
+                count: 2,
+              },
+              {
+                spellId: '57994',
+                count: 11,
+              },
+              {
+                spellId: '51505',
+                count: 40,
+              },
+              {
+                spellId: '188196',
+                count: 5,
+              },
+              {
+                spellId: '188443',
+                count: 25,
+              },
+              {
+                spellId: '98008',
+                count: 6,
+              },
+              {
+                spellId: '5394',
+                count: 98,
+              },
+              {
+                spellId: '61295',
+                count: 273,
+              },
+              {
+                spellId: '1236616',
+                count: 3,
+              },
+              {
+                spellId: '974',
+                count: 5,
+              },
+              {
+                spellId: '77130',
+                count: 3,
+              },
+              {
+                spellId: '1309983',
+                count: 1,
+              },
+              {
+                spellId: '378081',
+                count: 20,
+              },
+              {
+                spellId: '1267068',
+                count: 37,
+              },
+              {
+                spellId: '192077',
+                count: 4,
+              },
+              {
+                spellId: '2484',
+                count: 3,
+              },
+              {
+                spellId: '108280',
+                count: 8,
               },
               {
                 spellId: '2645',
+                count: 30,
+              },
+              {
+                spellId: '1291791',
+                count: 2,
+              },
+              {
+                spellId: '1291894',
+                count: 12,
+              },
+              {
+                spellId: '108287',
+                count: 40,
+              },
+            ],
+            externalBuffs: [],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/JQLmDbvRAw2TFc4M#fight=4&source=53',
+            startedAt: '2026-10-07T21:36:24.184Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1751251,
+            itemLevelBracket: 20,
+            gearItemLevel: 329.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 20,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '188443',
+                count: 84,
+              },
+              {
+                spellId: '198103',
                 count: 4,
+              },
+              {
+                spellId: '51505',
+                count: 84,
+              },
+              {
+                spellId: '57994',
+                count: 18,
+              },
+              {
+                spellId: '108280',
+                count: 6,
+              },
+              {
+                spellId: '5394',
+                count: 94,
+              },
+              {
+                spellId: '188196',
+                count: 19,
+              },
+              {
+                spellId: '1267068',
+                count: 41,
+              },
+              {
+                spellId: '1291894',
+                count: 12,
+              },
+              {
+                spellId: '51485',
+                count: 4,
+              },
+              {
+                spellId: '462854',
+                count: 5,
+              },
+              {
+                spellId: '378081',
+                count: 27,
+              },
+              {
+                spellId: '383013',
+                count: 3,
+              },
+              {
+                spellId: '1295247',
+                count: 2,
+              },
+              {
+                spellId: '108271',
+                count: 12,
+              },
+              {
+                spellId: '1295132',
+                count: 6,
+              },
+              {
+                spellId: '58875',
+                count: 9,
+              },
+              {
+                spellId: '108287',
+                count: 40,
+              },
+              {
+                spellId: '192077',
+                count: 8,
+              },
+              {
+                spellId: '61295',
+                count: 239,
+              },
+              {
+                spellId: '77472',
+                count: 158,
+              },
+              {
+                spellId: '98008',
+                count: 6,
+              },
+              {
+                spellId: '32182',
+                count: 3,
+              },
+              {
+                spellId: '974',
+                count: 2,
+              },
+              {
+                spellId: '1064',
+                count: 211,
+              },
+              {
+                spellId: '188389',
+                count: 58,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '73685',
+                count: 72,
+              },
+              {
+                spellId: '1254339',
+                count: 15,
+              },
+              {
+                spellId: '444995',
+                count: 62,
+              },
+              {
+                spellId: '77130',
+                count: 8,
+              },
+              {
+                spellId: '2645',
+                count: 23,
+              },
+              {
+                spellId: '79206',
+                count: 17,
+              },
+              {
+                spellId: '192058',
+                count: 9,
               },
             ],
             externalBuffs: [],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -45282,7 +55646,7 @@ export const guideManuscripts = {
     researchedAt: '2026-10-08',
     status: '실전 심화 공략',
     graphCenterSkillId: '81749',
-    sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+    sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
     summary: '피해가 들어올 사람에게 속죄를 먼저 준비하고, 다친 순간에 정신 분열과 회개를 연결하세요. 12.1에서는 이 공격이 공허의 보호막과 시즌 2 세트까지 이어집니다. 한 명이 위험하면 고정 순서를 멈추고 직접 치유·고통 억제로 살리는 판단이 먼저입니다.',
     sourceNote: 'Blizzard 12.1 노트와 8월·9월 핫픽스, Wowhead AutomaticJak, Icy Veins의 Warcraft Priests 관리자 Clandon, Method Grafe의 공개 가이드를 대조했습니다. 2026-09-22부터 공격대·전장 밖에서 속죄 치유가 40% 증가하고 회개 마나 비용은 20% 감소합니다. 이 효과를 레이드 속죄나 직접 치유 전체에 적용하지 않습니다. 예언자·공허술사의 추천은 자료 날짜와 콘텐츠에 따라 다르며, 상향 후 로그 우열을 확인한 결과는 아닙니다. 한국어 명칭은 Wowhead를 따릅니다.',
     playstyle: [
@@ -45452,18 +55816,32 @@ export const guideManuscripts = {
         note: '쐐기 7단 이상 전체 던전, 로그 48,358건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/wHcY7W2VQk9nbCfN#fight=3&source=197',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/G1fXWjQTRcvtBmFN#fight=14&source=10',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-07T01:01:10.918Z · 장비 구간 326 · 396.9초 · 증강 2명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-07T02:46:05.570Z · 장비 평균 327.75 · 실제 405.3초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
       {
-        label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-        url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=24',
+        label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=143',
         tier: 'S',
         updated: '2026-10-08',
-        note: '2026-10-08T02:16:38.458Z · 장비 구간 326 · 406.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+        note: '2026-10-08T01:03:46.235Z · 장비 평균 328.56 · 실제 415.7초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/BpaJ7QTz8bjFA9tV#fight=3&source=3',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-08T01:27:34.832Z · 장비 평균 328.19 · 실제 1724.2초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+      },
+      {
+        label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+        url: 'https://www.warcraftlogs.com/reports/26BwCYWhqpXaJNzM#fight=2&source=5',
+        tier: 'S',
+        updated: '2026-10-08',
+        note: '2026-10-07T16:34:24.297Z · 장비 평균 327.94 · 실제 1716.0초 · 증강 0명 · 17단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
       },
     ],
     evidence: [
@@ -45474,7 +55852,7 @@ export const guideManuscripts = {
       '공허의 손길은 균열 종료 뒤 공허의 심장을 8초 남깁니다. 그동안 공허의 폭발 버튼과 공허 주입까지 계속 유지된다는 뜻은 아닙니다.',
       '예언자의 고통 억제 50%는 예견된 상황 선택으로 기본 40%에 10%포인트를 더한 값입니다. 공허술사에 같은 값을 적용하지 않습니다.',
       '핫픽스 전 Icy Veins·Method 공개 가이드는 레이드 공허술사와 쐐기 예언자를 출발점으로 제시했습니다. 9월 22일 던전 속죄 상향 뒤 영웅 특성 간 우열과 최신 WCL 사용률은 확인하지 못했습니다.',
-      '10월 8일 사제 수양의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+      '10월 8일 사제 수양의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 17단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.81/0.25, 실제 전투 길이 차이는 2.49%/0.47%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
     ],
     caveats: [
       '아래 전투 흐름은 시작 준비와 상황별 판단 예시입니다. 위험한 한 명이 있거나 해제가 필요하면 공격 순서보다 생존 대응이 먼저이며 모든 기술을 위에서부터 한 번씩 누르는 매크로가 아닙니다.',
@@ -45482,7 +55860,7 @@ export const guideManuscripts = {
       '두 개의 시야 한국어 툴팁 일부는 대상 표기가 영어와 다릅니다. 공식 한글 이름은 유지하되 기전은 양쪽 원문을 대조합니다. 공허의 보호막의 미계산 흡수량 0도 실제 흡수량으로 인용하지 않습니다.',
       '회개 조기 종료는 공허술사 균열 중 추가 공격 기회를 만드는 고급 조건입니다. 예언자, 직접 회복이 필요한 상황, 엄격한 규율과 어두운 면의 힘이 함께 있는 채널에 일괄 적용하지 않습니다.',
       '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-      '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     ],
     heroBranches: [
       {
@@ -46342,206 +56720,487 @@ export const guideManuscripts = {
       individual: {
         checkedAt: '2026-10-08',
         matchedBossDifficulty: true,
-        matchedItemLevelBracket: true,
-        durationDifference: 0.022622551132235783,
-        matchedAugmentation: false,
+        matchedItemLevelBracket: false,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.8125,
+        durationDifference: 0.024884346966318083,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
         combats: [
           {
-            url: 'https://www.warcraftlogs.com/reports/wHcY7W2VQk9nbCfN#fight=3&source=197',
-            startedAt: '2026-10-07T01:01:10.918Z',
+            url: 'https://www.warcraftlogs.com/reports/G1fXWjQTRcvtBmFN#fight=14&source=10',
+            startedAt: '2026-10-07T02:46:05.570Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 396869,
-            itemLevelBracket: 326,
-            heroTree: 18,
-            augmentationCount: 2,
-            healerCount: 4,
+            durationMs: 405339,
+            itemLevelBracket: 327,
+            gearItemLevel: 327.75,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '421453',
-                count: 2,
-              },
-              {
-                spellId: '589',
-                count: 3,
-              },
-              {
-                spellId: '6262',
-                count: 1,
-              },
-              {
-                spellId: '472433',
-                count: 5,
-              },
-              {
-                spellId: '586',
-                count: 7,
-              },
-              {
-                spellId: '1295885',
-                count: 3,
-              },
-              {
                 spellId: '8092',
-                count: 27,
+                count: 30,
               },
               {
-                spellId: '585',
-                count: 195,
-              },
-              {
-                spellId: '1295247',
-                count: 1,
+                spellId: '17',
+                count: 23,
               },
               {
                 spellId: '1236994',
                 count: 1,
               },
               {
-                spellId: '121536',
-                count: 9,
+                spellId: '2061',
+                count: 32,
               },
               {
-                spellId: '1291894',
+                spellId: '472433',
                 count: 4,
+              },
+              {
+                spellId: '589',
+                count: 8,
+              },
+              {
+                spellId: '21562',
+                count: 1,
+              },
+              {
+                spellId: '33206',
+                count: 4,
+              },
+              {
+                spellId: '1295885',
+                count: 13,
+              },
+              {
+                spellId: '421453',
+                count: 2,
+              },
+              {
+                spellId: '586',
+                count: 10,
               },
               {
                 spellId: '10060',
                 count: 8,
               },
               {
-                spellId: '19236',
-                count: 2,
-              },
-              {
-                spellId: '47540',
-                count: 54,
+                spellId: '121536',
+                count: 1,
               },
               {
                 spellId: '194509',
                 count: 27,
               },
               {
-                spellId: '17',
-                count: 1,
+                spellId: '585',
+                count: 151,
               },
               {
                 spellId: '1253593',
-                count: 40,
+                count: 45,
               },
               {
-                spellId: '2061',
-                count: 6,
+                spellId: '32379',
+                count: 1,
               },
               {
                 spellId: '358733',
-                count: 2,
+                count: 4,
+              },
+              {
+                spellId: '19236',
+                count: 3,
+              },
+              {
+                spellId: '47540',
+                count: 61,
               },
             ],
             externalBuffs: [
               {
                 spellId: '10060',
-                activeMs: 60038,
+                activeMs: 60035,
                 uses: 4,
-              },
-              {
-                spellId: '413984',
-                activeMs: 12310,
-                uses: 1,
               },
             ],
           },
           {
-            url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=24',
-            startedAt: '2026-10-08T02:16:38.458Z',
+            url: 'https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=143',
+            startedAt: '2026-10-08T01:03:46.235Z',
             region: 'US',
             encounterId: 3379,
             difficulty: 5,
             kill: true,
-            durationMs: 406055,
-            itemLevelBracket: 326,
-            heroTree: 18,
-            augmentationCount: 1,
-            healerCount: 5,
+            durationMs: 415683,
+            itemLevelBracket: 328,
+            gearItemLevel: 328.5625,
+            heroTree: null,
+            augmentationCount: 0,
             casts: [
               {
-                spellId: '589',
+                spellId: '19236',
+                count: 1,
+              },
+              {
+                spellId: '1291894',
                 count: 3,
               },
               {
-                spellId: '121536',
+                spellId: '586',
                 count: 2,
+              },
+              {
+                spellId: '21562',
+                count: 1,
+              },
+              {
+                spellId: '10060',
+                count: 8,
+              },
+              {
+                spellId: '472433',
+                count: 4,
               },
               {
                 spellId: '1253593',
                 count: 39,
               },
               {
-                spellId: '10060',
-                count: 8,
-              },
-              {
-                spellId: '472433',
-                count: 5,
-              },
-              {
-                spellId: '8092',
-                count: 26,
-              },
-              {
-                spellId: '194509',
-                count: 29,
-              },
-              {
-                spellId: '585',
-                count: 155,
+                spellId: '32379',
+                count: 2,
               },
               {
                 spellId: '421453',
                 count: 2,
               },
               {
-                spellId: '586',
-                count: 6,
+                spellId: '1236616',
+                count: 2,
               },
               {
-                spellId: '1236994',
-                count: 1,
-              },
-              {
-                spellId: '17',
-                count: 15,
+                spellId: '8092',
+                count: 26,
               },
               {
                 spellId: '47540',
-                count: 51,
+                count: 57,
               },
               {
-                spellId: '2061',
-                count: 14,
-              },
-              {
-                spellId: '19236',
+                spellId: '121536',
                 count: 3,
               },
               {
-                spellId: '200829',
-                count: 5,
+                spellId: '589',
+                count: 11,
+              },
+              {
+                spellId: '2061',
+                count: 26,
+              },
+              {
+                spellId: '194509',
+                count: 24,
+              },
+              {
+                spellId: '585',
+                count: 184,
               },
             ],
             externalBuffs: [
               {
                 spellId: '10060',
-                activeMs: 60052,
+                activeMs: 60004,
                 uses: 4,
               },
             ],
           },
         ],
-        scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
       },
+      mythicPlus: {
+        checkedAt: '2026-10-08',
+        matchedBossDifficulty: true,
+        matchedItemLevelBracket: true,
+        matchedGearItemLevel: true,
+        gearItemLevelDifference: 0.25,
+        durationDifference: 0.004732654328899757,
+        durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+        matchedAugmentation: true,
+        matchedKeystoneAffixes: true,
+        combats: [
+          {
+            url: 'https://www.warcraftlogs.com/reports/BpaJ7QTz8bjFA9tV#fight=3&source=3',
+            startedAt: '2026-10-08T01:27:34.832Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1724191,
+            itemLevelBracket: 17,
+            gearItemLevel: 328.1875,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '421453',
+                count: 4,
+              },
+              {
+                spellId: '32375',
+                count: 2,
+              },
+              {
+                spellId: '19236',
+                count: 11,
+              },
+              {
+                spellId: '472433',
+                count: 10,
+              },
+              {
+                spellId: '21562',
+                count: 1,
+              },
+              {
+                spellId: '33206',
+                count: 7,
+              },
+              {
+                spellId: '17',
+                count: 101,
+              },
+              {
+                spellId: '1295247',
+                count: 4,
+              },
+              {
+                spellId: '8092',
+                count: 95,
+              },
+              {
+                spellId: '586',
+                count: 29,
+              },
+              {
+                spellId: '32379',
+                count: 35,
+              },
+              {
+                spellId: '10060',
+                count: 24,
+              },
+              {
+                spellId: '1236616',
+                count: 5,
+              },
+              {
+                spellId: '47540',
+                count: 280,
+              },
+              {
+                spellId: '585',
+                count: 410,
+              },
+              {
+                spellId: '589',
+                count: 31,
+              },
+              {
+                spellId: '527',
+                count: 9,
+              },
+              {
+                spellId: '1291894',
+                count: 12,
+              },
+              {
+                spellId: '58984',
+                count: 1,
+              },
+              {
+                spellId: '1253593',
+                count: 164,
+              },
+              {
+                spellId: '121536',
+                count: 17,
+              },
+              {
+                spellId: '73325',
+                count: 1,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '194509',
+                count: 33,
+              },
+              {
+                spellId: '186263',
+                count: 128,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 169329,
+                uses: 12,
+              },
+            ],
+          },
+          {
+            url: 'https://www.warcraftlogs.com/reports/26BwCYWhqpXaJNzM#fight=2&source=5',
+            startedAt: '2026-10-07T16:34:24.297Z',
+            region: 'US',
+            encounterId: 12993,
+            difficulty: 10,
+            kill: true,
+            durationMs: 1716031,
+            itemLevelBracket: 17,
+            gearItemLevel: 327.9375,
+            heroTree: null,
+            augmentationCount: 0,
+            keystoneLevel: 17,
+            affixes: [
+              9,
+              10,
+              147,
+            ],
+            casts: [
+              {
+                spellId: '19236',
+                count: 7,
+              },
+              {
+                spellId: '8092',
+                count: 89,
+              },
+              {
+                spellId: '200829',
+                count: 1,
+              },
+              {
+                spellId: '589',
+                count: 54,
+              },
+              {
+                spellId: '186263',
+                count: 55,
+              },
+              {
+                spellId: '73325',
+                count: 2,
+              },
+              {
+                spellId: '33206',
+                count: 4,
+              },
+              {
+                spellId: '586',
+                count: 36,
+              },
+              {
+                spellId: '32379',
+                count: 40,
+              },
+              {
+                spellId: '21562',
+                count: 3,
+              },
+              {
+                spellId: '1706',
+                count: 1,
+              },
+              {
+                spellId: '8122',
+                count: 2,
+              },
+              {
+                spellId: '6262',
+                count: 2,
+              },
+              {
+                spellId: '585',
+                count: 538,
+              },
+              {
+                spellId: '47540',
+                count: 194,
+              },
+              {
+                spellId: '17',
+                count: 58,
+              },
+              {
+                spellId: '121536',
+                count: 33,
+              },
+              {
+                spellId: '32375',
+                count: 2,
+              },
+              {
+                spellId: '194509',
+                count: 51,
+              },
+              {
+                spellId: '10060',
+                count: 28,
+              },
+              {
+                spellId: '1291894',
+                count: 12,
+              },
+              {
+                spellId: '472433',
+                count: 13,
+              },
+              {
+                spellId: '1287798',
+                count: 2,
+              },
+              {
+                spellId: '421453',
+                count: 4,
+              },
+              {
+                spellId: '1295247',
+                count: 1,
+              },
+              {
+                spellId: '527',
+                count: 5,
+              },
+              {
+                spellId: '1253593',
+                count: 138,
+              },
+            ],
+            externalBuffs: [
+              {
+                spellId: '10060',
+                activeMs: 210087,
+                uses: 14,
+              },
+            ],
+          },
+        ],
+        scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+      },
+      KoreaAppliedAt: null,
     },
   },
 
@@ -46552,7 +57211,7 @@ guideManuscripts['priest-holy'] = {
   researchedAt: '2026-10-08',
   status: '실전 심화 가이드',
   graphCenterSkillId: '2050',
-  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
   summary: '12.1 신성 사제는 빛의 권능: 평온으로 가장 위험한 대상을 살리고, 평온이 확정 생성한 축도를 직접 시전한 뒤, 빛술사가 강화한 치유의 기원으로 남은 파티 피해를 정리하는 힐러입니다. 축도는 회복의 기원에서 가끔 생기는 수동 효과가 아니라 직접 누르는 주문이며, 평온 뒤 축도를 빼먹으면 우주의 파장과 빛술사까지 한꺼번에 잃습니다. 공개 가이드의 기본 추천은 공격대 집정관(후광·절정·영혼 우물), 쐐기 예언자(회복의 기원 2충전·궁극의 평온)입니다. 8월 말 이후 수호 영혼과 세트 버그가 고쳐졌으니, 수호 천사를 선택했다면 수호 영혼을 피해 전에 미리 거는 쪽으로 운용을 바꿉니다.',
   sourceNote: 'Blizzard 12.1 공식 노트는 신성 사제 전체 치유량 16% 증가, 순간 치유와 치유의 기원 마나 소모량 10% 감소, 축도 치유량 15% 증가와 마나 소모량 30% 감소, 절정의 빛의 권능 마나 소모 감소 70%, 빛의 권능: 평온의 다음 순간 치유 100% 축도 전환, 천상의 찬가 정신 집중 중 수호 영혼 부여를 명시합니다. 2026-10-01 영문 누적 긴급 수정(한국어 2026-10-02 판, 한국어 기사 날짜는 미국보다 하루 늦음)에서 PvE에 영향이 있는 신성 항목은 8월 18일 예언자 상향(즉발적인 예측 치유량 55% 증가, 현자의 말 40%, 예방의 기술 40%, 깨달음 25%), 8월 20일 축도 발동 소모 버그, 8월 26일 수호 천사 선택 시 천상의 찬가가 수호 영혼을 60초 쿨다운에 묶던 버그, 8월 31일 아군 대상 수호 영혼에 수호 천사가 적용되지 않던 버그, 9월 3일 소생이 소생의 활력을 안정적으로 주지 않던 버그, 9월 15일 소생의 활력이 3중첩을 넘던 버그입니다. 8월 25일과 9월 22일 신성 수치 조정은 플레이어 간 전투 전용이며 10월 6일 예정 조정도 사제는 PvP 항목뿐이라 반영하지 않았습니다. 한국어 이름과 툴팁은 2026-10-03 ko.wowhead 화면으로 다시 확인했고, 주문 471504의 공식 이름은 작별의 한마디가 아니라 치유의 잔향입니다. Archon 수치(공격대 영웅 8,254개 로그 집정관 73.2%, 쐐기 +7~19 44,696개 로그 예언자 86.1%, 고단 2,715개 로그 예언자 96.8%)는 2026-08-25 확인 시점의 최근 14일 과거 집계로, 이후 버그 수정과 세트 수정 전 기록이 섞여 있습니다. 2026-10-03 Archon과 Icy Veins 재접속은 차단되어 최신 사용률과 가이드 갱신일은 확인하지 못했으므로 영웅 특성 우열을 현재 메타로 단정하지 않습니다.',
   playstyle: [
@@ -46729,18 +57388,32 @@ guideManuscripts['priest-holy'] = {
       note: '쐐기 7단 이상 전체 던전, 로그 189,667건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/1g9MDZR7XvBd6YWr#fight=5&source=5',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/THMmZkj927xL34hy#fight=1&source=4',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-07T00:09:45.912Z · 장비 구간 330 · 405.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T01:11:37.468Z · 장비 평균 328.38 · 실제 380.0초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/njhpZT63wXPK8cgM#fight=5&source=10',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/7dPh2HWLykjxKf1p#fight=60&source=225',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-08T03:08:49.890Z · 장비 구간 330 · 410.7초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T03:14:45.725Z · 장비 평균 329.38 · 실제 391.4초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/vGZPAMF8W1acjyfN#fight=7&source=46',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T07:59:54.768Z · 장비 평균 324.31 · 실제 1735.8초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/NKr19PfkVxYZpaCg#fight=2&source=4',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T02:22:14.753Z · 장비 평균 324.69 · 실제 1667.4초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
   ],
   evidence: [
@@ -46760,7 +57433,7 @@ guideManuscripts['priest-holy'] = {
     'Icy Veins는 집정관 영혼 우물 빌드의 빛의 쇄도를 치유의 기원에 쓰고, 축도로 빛술사를 만든 뒤 치유의 기원을 강화하라고 구분합니다. 영혼 우물 툴팁도 신성은 치유의 기원 시전 시 빛의 쇄도를 소모한다고 적습니다.',
     '12.1 천상의 찬가는 정신 집중 중 수호 영혼을 부여하고, 축도 정점 특성으로 각 틱마다 우주의 파장을 일으켜 긴 광역 피해에서 더 안정적으로 작동합니다.',
     'Warcraft Priests 공개 자료와 Niphyr 작성자 이력은 신성 사제 이론공식의 공개 확인 경로로만 사용하고, 비공개 대화나 날짜를 확인할 수 없는 조언은 근거로 쓰지 않았습니다.',
-    '10월 8일 사제 신성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+    '10월 8일 사제 신성의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.38, 실제 전투 길이 차이는 2.93%/3.94%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
   ],
   caveats: [
     'Archon 사용률은 2026-08-25 확인 시점의 과거 집계입니다. 이후 수호 영혼·세트 버그 수정과 시즌 진행으로 바뀌었을 수 있으므로 영웅 특성 우열을 현재 메타로 단정하지 않습니다.',
@@ -46775,7 +57448,7 @@ guideManuscripts['priest-holy'] = {
     '정화, 마법 무효화, 대규모 무효화는 지울 수 있는 효과가 있을 때만 강합니다. 던전별 디버프와 적 강화 효과를 먼저 확인합니다.',
     '스탯 우선순위는 8월 공개 가이드 기준의 일반 지침입니다. 아이템 레벨이 크게 오르는 장비와 장신구 특수 효과는 개별 비교가 필요합니다.',
     '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
   ],
   heroBranches: [
     {
@@ -47763,33 +58436,32 @@ guideManuscripts['priest-holy'] = {
     individual: {
       checkedAt: '2026-10-08',
       matchedBossDifficulty: true,
-      matchedItemLevelBracket: true,
-      durationDifference: 0.011794439764111205,
+      matchedItemLevelBracket: false,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 1,
+      durationDifference: 0.029312432620236153,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
       matchedAugmentation: true,
       combats: [
         {
-          url: 'https://www.warcraftlogs.com/reports/1g9MDZR7XvBd6YWr#fight=5&source=5',
-          startedAt: '2026-10-07T00:09:45.912Z',
+          url: 'https://www.warcraftlogs.com/reports/THMmZkj927xL34hy#fight=1&source=4',
+          startedAt: '2026-10-07T01:11:37.468Z',
           region: 'US',
           encounterId: 3379,
           difficulty: 5,
           kill: true,
-          durationMs: 405858,
-          itemLevelBracket: 330,
-          heroTree: 20,
+          durationMs: 379964,
+          itemLevelBracket: 328,
+          gearItemLevel: 328.375,
+          heroTree: null,
           augmentationCount: 0,
-          healerCount: 4,
           casts: [
             {
-              spellId: '33076',
-              count: 47,
+              spellId: '121536',
+              count: 8,
             },
             {
-              spellId: '2050',
-              count: 53,
-            },
-            {
-              spellId: '10060',
+              spellId: '88625',
               count: 8,
             },
             {
@@ -47797,163 +58469,438 @@ guideManuscripts['priest-holy'] = {
               count: 2,
             },
             {
-              spellId: '88625',
-              count: 3,
-            },
-            {
-              spellId: '1262763',
-              count: 81,
+              spellId: '2061',
+              count: 55,
             },
             {
               spellId: '200183',
               count: 3,
             },
             {
-              spellId: '64843',
-              count: 3,
-            },
-            {
-              spellId: '21562',
-              count: 1,
-            },
-            {
-              spellId: '586',
-              count: 8,
-            },
-            {
-              spellId: '256948',
-              count: 2,
-            },
-            {
-              spellId: '121536',
-              count: 3,
-            },
-            {
-              spellId: '257040',
-              count: 2,
-            },
-            {
               spellId: '1291894',
               count: 4,
             },
             {
-              spellId: '14914',
-              count: 9,
-            },
-            {
-              spellId: '585',
-              count: 22,
-            },
-            {
-              spellId: '2061',
-              count: 73,
-            },
-          ],
-          externalBuffs: [
-            {
-              spellId: '10060',
-              activeMs: 60042,
-              uses: 4,
-            },
-          ],
-        },
-        {
-          url: 'https://www.warcraftlogs.com/reports/njhpZT63wXPK8cgM#fight=5&source=10',
-          startedAt: '2026-10-08T03:08:49.890Z',
-          region: 'US',
-          encounterId: 3379,
-          difficulty: 5,
-          kill: true,
-          durationMs: 410702,
-          itemLevelBracket: 330,
-          heroTree: 20,
-          augmentationCount: 0,
-          healerCount: 4,
-          casts: [
-            {
-              spellId: '10060',
-              count: 8,
-            },
-            {
-              spellId: '1295885',
-              count: 3,
+              spellId: '73325',
+              count: 2,
             },
             {
               spellId: '33076',
               count: 46,
             },
             {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '1236616',
+              count: 2,
+            },
+            {
+              spellId: '14914',
+              count: 5,
+            },
+            {
+              spellId: '527',
+              count: 1,
+            },
+            {
+              spellId: '585',
+              count: 25,
+            },
+            {
+              spellId: '586',
+              count: 14,
+            },
+            {
               spellId: '2050',
+              count: 50,
+            },
+            {
+              spellId: '64843',
+              count: 2,
+            },
+            {
+              spellId: '10060',
+              count: 3,
+            },
+            {
+              spellId: '19236',
+              count: 2,
+            },
+            {
+              spellId: '1262763',
+              count: 77,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 44995,
+              uses: 3,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/7dPh2HWLykjxKf1p#fight=60&source=225',
+          startedAt: '2026-10-07T03:14:45.725Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 391438,
+          itemLevelBracket: 329,
+          gearItemLevel: 329.375,
+          heroTree: null,
+          augmentationCount: 0,
+          casts: [
+            {
+              spellId: '585',
+              count: 5,
+            },
+            {
+              spellId: '14914',
+              count: 4,
+            },
+            {
+              spellId: '10060',
+              count: 6,
+            },
+            {
+              spellId: '200183',
+              count: 3,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '33076',
               count: 51,
             },
             {
               spellId: '1291894',
-              count: 4,
+              count: 5,
+            },
+            {
+              spellId: '586',
+              count: 12,
+            },
+            {
+              spellId: '21562',
+              count: 3,
+            },
+            {
+              spellId: '121536',
+              count: 10,
+            },
+            {
+              spellId: '2050',
+              count: 53,
+            },
+            {
+              spellId: '88625',
+              count: 2,
             },
             {
               spellId: '64843',
               count: 3,
             },
             {
-              spellId: '1236648',
-              count: 1,
-            },
-            {
-              spellId: '6262',
-              count: 1,
-            },
-            {
-              spellId: '121536',
-              count: 6,
-            },
-            {
-              spellId: '200183',
-              count: 4,
+              spellId: '47788',
+              count: 2,
             },
             {
               spellId: '19236',
               count: 4,
             },
             {
-              spellId: '1234768',
+              spellId: '6262',
               count: 1,
-            },
-            {
-              spellId: '132157',
-              count: 1,
-            },
-            {
-              spellId: '2061',
-              count: 74,
             },
             {
               spellId: '1262763',
-              count: 80,
+              count: 89,
             },
             {
-              spellId: '586',
-              count: 8,
-            },
-            {
-              spellId: '47788',
-              count: 2,
-            },
-            {
-              spellId: '21562',
-              count: 1,
+              spellId: '2061',
+              count: 79,
             },
           ],
           externalBuffs: [
             {
               spellId: '10060',
-              activeMs: 60007,
-              uses: 4,
+              activeMs: 45012,
+              uses: 3,
             },
           ],
         },
       ],
-      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     },
+    mythicPlus: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.375,
+      durationDifference: 0.03938791112370885,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
+      matchedKeystoneAffixes: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/vGZPAMF8W1acjyfN#fight=7&source=46',
+          startedAt: '2026-10-07T07:59:54.768Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1735761,
+          itemLevelBracket: 19,
+          gearItemLevel: 324.3125,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 19,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '21562',
+              count: 4,
+            },
+            {
+              spellId: '586',
+              count: 35,
+            },
+            {
+              spellId: '32375',
+              count: 3,
+            },
+            {
+              spellId: '8122',
+              count: 3,
+            },
+            {
+              spellId: '64843',
+              count: 9,
+            },
+            {
+              spellId: '33076',
+              count: 118,
+            },
+            {
+              spellId: '200183',
+              count: 11,
+            },
+            {
+              spellId: '2050',
+              count: 150,
+            },
+            {
+              spellId: '1236616',
+              count: 1,
+            },
+            {
+              spellId: '585',
+              count: 65,
+            },
+            {
+              spellId: '19236',
+              count: 12,
+            },
+            {
+              spellId: '527',
+              count: 9,
+            },
+            {
+              spellId: '88625',
+              count: 67,
+            },
+            {
+              spellId: '2061',
+              count: 243,
+            },
+            {
+              spellId: '47788',
+              count: 4,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '1291894',
+              count: 11,
+            },
+            {
+              spellId: '10060',
+              count: 24,
+            },
+            {
+              spellId: '1262763',
+              count: 275,
+            },
+            {
+              spellId: '121536',
+              count: 19,
+            },
+            {
+              spellId: '14914',
+              count: 194,
+            },
+            {
+              spellId: '58984',
+              count: 2,
+            },
+            {
+              spellId: '132157',
+              count: 52,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 180066,
+              uses: 12,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/NKr19PfkVxYZpaCg#fight=2&source=4',
+          startedAt: '2026-10-08T02:22:14.753Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1667393,
+          itemLevelBracket: 19,
+          gearItemLevel: 324.6875,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 19,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '33076',
+              count: 186,
+            },
+            {
+              spellId: '256948',
+              count: 1,
+            },
+            {
+              spellId: '1706',
+              count: 1,
+            },
+            {
+              spellId: '586',
+              count: 34,
+            },
+            {
+              spellId: '1236616',
+              count: 3,
+            },
+            {
+              spellId: '10060',
+              count: 24,
+            },
+            {
+              spellId: '527',
+              count: 8,
+            },
+            {
+              spellId: '88625',
+              count: 40,
+            },
+            {
+              spellId: '73325',
+              count: 3,
+            },
+            {
+              spellId: '14914',
+              count: 126,
+            },
+            {
+              spellId: '2050',
+              count: 103,
+            },
+            {
+              spellId: '453',
+              count: 2,
+            },
+            {
+              spellId: '257040',
+              count: 1,
+            },
+            {
+              spellId: '121536',
+              count: 13,
+            },
+            {
+              spellId: '2061',
+              count: 288,
+            },
+            {
+              spellId: '200183',
+              count: 5,
+            },
+            {
+              spellId: '19236',
+              count: 8,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '32375',
+              count: 1,
+            },
+            {
+              spellId: '64843',
+              count: 7,
+            },
+            {
+              spellId: '1262763',
+              count: 214,
+            },
+            {
+              spellId: '47788',
+              count: 5,
+            },
+            {
+              spellId: '21562',
+              count: 18,
+            },
+            {
+              spellId: '585',
+              count: 100,
+            },
+            {
+              spellId: '8122',
+              count: 6,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 180062,
+              uses: 12,
+            },
+          ],
+        },
+      ],
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+    },
+    KoreaAppliedAt: null,
   },
 };
 
@@ -47962,7 +58909,7 @@ guideManuscripts['priest-shadow'] = {
   researchedAt: '2026-10-08',
   status: '실전 심화 공략',
   graphCenterSkillId: '335467',
-  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
   summary: '오래 살 적에게 지속 피해를 유지하고, 광기가 넘치거나 주 대상의 어둠의 권능: 광기가 끝나기 전에 소비하세요. 집정관은 후광으로 얻는 강화 채찍을, 공허술사는 격류로 여는 균열을 활용합니다. 12.1에서 공허 연사는 쿨마다 누르는 기술이 아니라 사용권을 소모하는 기술로 바뀌었으며 시즌 2 세트가 있으면 형상 밖에서도 사용합니다.',
   sourceNote: 'Blizzard 12.1 노트와 2026-09-22 핫픽스, Wowhead 한국어·영어 주문 툴팁, Icy Veins Publik과 Method Jaerv의 공개 운용 글을 대조했습니다. 정신 분열·공허의 폭발·죽음·광기·두 채찍의 피해는 각각 15% 상향됐고, PvE 영혼의 연결 전달률은 25%에서 20%로 줄었으며 그늘폭발 피해는 5% 감소했습니다. 이 조정은 단일 대상 보강과 광역 균형 조정이지 영웅 특성의 현재 우열을 증명하지 않습니다. 6월 로그 비율은 재사용하지 않습니다.',
   playstyle: [
@@ -48118,18 +59065,32 @@ guideManuscripts['priest-shadow'] = {
       note: '쐐기 7단 이상 전체 던전, 로그 64,702건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/Yydv42cmtMnDX69q#fight=4&source=170',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/Af4Fjq9b1Y7pmNzJ#fight=43&source=1702',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-07T01:03:49.262Z · 장비 구간 329 · 383.8초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T03:18:48.972Z · 장비 평균 328.75 · 실제 431.5초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=22',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/2dMjprnXzPZD3fTF#fight=5&source=12',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-08T00:17:08.498Z · 장비 구간 329 · 384.2초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-08T01:16:25.036Z · 장비 평균 329.38 · 실제 423.2초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/XCjp26qwYADKNM8t#fight=26&source=952',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T05:43:49.470Z · 장비 평균 327.38 · 실제 1691.1초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/RLdCHT1nc2a9gy3x#fight=21&source=1179',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T21:24:54.053Z · 장비 평균 327.75 · 실제 1681.9초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
   ],
   evidence: [
@@ -48140,7 +59101,7 @@ guideManuscripts['priest-shadow'] = {
     '공허술사는 격류로 균열을 열며 공허의 폭발 450983이 정신 분열을 대체합니다. 수양의 공허의 폭발 450215와 별개의 주문입니다.',
     '영혼의 연결은 9월 22일 이후 PvE에서 직접 피해의 20%(기존 25%)를 다른 손길 대상에게 전달합니다. 원혼·고통·손길 피해를 다시 복제하지 않습니다.',
     '현재 상위 로그를 확보하지 못했습니다. 영웅 특성 추천은 공개 가이드의 콘텐츠별 판단이지 최신 사용률이나 개인 DPS 우위의 증명이 아닙니다.',
-    '10월 8일 사제 암흑의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+    '10월 8일 사제 암흑의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.63/0.38, 실제 전투 길이 차이는 1.93%/0.54%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
   ],
   caveats: [
     '차트의 오프닝은 시즌 2 4세트·깨어난 악몽 단일 예시입니다. 불행이면 고통 직접 시전을 생략하고, 4세트가 없으면 형상 전 추가 연사 단계를 생략합니다. 광역 시작 준비는 광역 탭과 본문에 따로 설명합니다.',
@@ -48148,7 +59109,7 @@ guideManuscripts['priest-shadow'] = {
     '일반 형상 연사는 다른 중요한 기술 사이에 배치하지만 세트 추가 연사는 다음 촉수 격돌이나 형상 진입을 막지 않게 처리합니다. 가이드 간 연사 우선순위 차이를 조건 없이 한 줄로 합치지 않습니다.',
     '공식 주문 수치는 캐릭터의 가속·특화·특성·세트 적용 전후를 구분합니다. 피해 계수를 개인 DPS 증가율로 바꾸거나 두 선택 특성의 보상을 동시에 적용하지 않습니다.',
     '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
   ],
   tips: [
     '형상 버튼이 눌리지 않으면 남아 있는 공허 연사 사용권부터 확인하세요. 특히 4세트 오프닝에서 촉수 격돌 뒤 추가 연사를 건너뛰면 첫 형상 진입이 꼬일 수 있습니다.',
@@ -49022,217 +59983,113 @@ guideManuscripts['priest-shadow'] = {
     individual: {
       checkedAt: '2026-10-08',
       matchedBossDifficulty: true,
-      matchedItemLevelBracket: true,
-      durationDifference: 0.0009812418826309775,
-      matchedAugmentation: false,
+      matchedItemLevelBracket: false,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.625,
+      durationDifference: 0.019289556569643342,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
       combats: [
         {
-          url: 'https://www.warcraftlogs.com/reports/Yydv42cmtMnDX69q#fight=4&source=170',
-          startedAt: '2026-10-07T01:03:49.262Z',
+          url: 'https://www.warcraftlogs.com/reports/Af4Fjq9b1Y7pmNzJ#fight=43&source=1702',
+          startedAt: '2026-10-07T03:18:48.972Z',
           region: 'US',
           encounterId: 3379,
           difficulty: 5,
           kill: true,
-          durationMs: 383830,
-          itemLevelBracket: 329,
-          heroTree: 19,
-          augmentationCount: 1,
-          healerCount: 5,
+          durationMs: 431477,
+          itemLevelBracket: 328,
+          gearItemLevel: 328.75,
+          heroTree: null,
+          augmentationCount: 0,
           casts: [
             {
-              spellId: '1236994',
-              count: 2,
-            },
-            {
-              spellId: '1242173',
-              count: 40,
-            },
-            {
-              spellId: '589',
-              count: 7,
-            },
-            {
-              spellId: '21562',
+              spellId: '1236616',
               count: 1,
+            },
+            {
+              spellId: '8092',
+              count: 45,
             },
             {
               spellId: '19236',
-              count: 2,
+              count: 5,
             },
             {
-              spellId: '228260',
-              count: 3,
-            },
-            {
-              spellId: '121536',
-              count: 2,
-            },
-            {
-              spellId: '586',
-              count: 9,
-            },
-            {
-              spellId: '1227280',
-              count: 29,
-            },
-            {
-              spellId: '15407',
-              count: 64,
-            },
-            {
-              spellId: '17',
-              count: 9,
-            },
-            {
-              spellId: '32379',
-              count: 16,
-            },
-            {
-              spellId: '8092',
-              count: 44,
-            },
-            {
-              spellId: '10060',
-              count: 3,
-            },
-            {
-              spellId: '15286',
-              count: 3,
-            },
-            {
-              spellId: '34914',
-              count: 6,
-            },
-            {
-              spellId: '335467',
-              count: 57,
-            },
-            {
-              spellId: '391403',
-              count: 24,
-            },
-            {
-              spellId: '1295247',
+              spellId: '6262',
               count: 1,
             },
             {
-              spellId: '1295885',
-              count: 3,
-            },
-            {
-              spellId: '120644',
-              count: 6,
-            },
-          ],
-          externalBuffs: [
-            {
-              spellId: '395152',
-              activeMs: 215076,
-              uses: 25,
-            },
-            {
-              spellId: '10060',
-              activeMs: 45010,
-              uses: 3,
-            },
-          ],
-        },
-        {
-          url: 'https://www.warcraftlogs.com/reports/QCv9mHzYXM2WJdcR#fight=3&source=22',
-          startedAt: '2026-10-08T00:17:08.498Z',
-          region: 'US',
-          encounterId: 3379,
-          difficulty: 5,
-          kill: true,
-          durationMs: 384207,
-          itemLevelBracket: 329,
-          heroTree: 19,
-          augmentationCount: 0,
-          healerCount: 5,
-          casts: [
-            {
-              spellId: '228260',
-              count: 4,
-            },
-            {
-              spellId: '335467',
-              count: 57,
-            },
-            {
-              spellId: '586',
-              count: 9,
-            },
-            {
-              spellId: '121536',
-              count: 1,
-            },
-            {
-              spellId: '391403',
-              count: 24,
-            },
-            {
-              spellId: '357214',
-              count: 1,
-            },
-            {
-              spellId: '589',
-              count: 2,
-            },
-            {
-              spellId: '8092',
-              count: 43,
-            },
-            {
-              spellId: '17',
-              count: 12,
+              spellId: '1242173',
+              count: 49,
             },
             {
               spellId: '10060',
               count: 8,
             },
             {
-              spellId: '1242173',
-              count: 47,
+              spellId: '17',
+              count: 1,
             },
             {
               spellId: '120644',
               count: 7,
             },
             {
-              spellId: '1236616',
+              spellId: '335467',
+              count: 59,
+            },
+            {
+              spellId: '586',
+              count: 12,
+            },
+            {
+              spellId: '47585',
               count: 1,
-            },
-            {
-              spellId: '1236994',
-              count: 1,
-            },
-            {
-              spellId: '73325',
-              count: 1,
-            },
-            {
-              spellId: '15407',
-              count: 57,
-            },
-            {
-              spellId: '1227280',
-              count: 32,
-            },
-            {
-              spellId: '19236',
-              count: 4,
             },
             {
               spellId: '32379',
-              count: 5,
+              count: 19,
+            },
+            {
+              spellId: '34914',
+              count: 15,
+            },
+            {
+              spellId: '1227280',
+              count: 34,
+            },
+            {
+              spellId: '15407',
+              count: 45,
+            },
+            {
+              spellId: '257040',
+              count: 1,
+            },
+            {
+              spellId: '1293316',
+              count: 3,
             },
             {
               spellId: '15286',
-              count: 2,
+              count: 4,
             },
             {
-              spellId: '358733',
-              count: 7,
+              spellId: '256948',
+              count: 1,
+            },
+            {
+              spellId: '228260',
+              count: 4,
+            },
+            {
+              spellId: '391403',
+              count: 28,
+            },
+            {
+              spellId: '8122',
+              count: 4,
             },
             {
               spellId: '1295247',
@@ -49242,14 +60099,435 @@ guideManuscripts['priest-shadow'] = {
           externalBuffs: [
             {
               spellId: '10060',
-              activeMs: 52675,
+              activeMs: 60065,
+              uses: 4,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/2dMjprnXzPZD3fTF#fight=5&source=12',
+          startedAt: '2026-10-08T01:16:25.036Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 423154,
+          itemLevelBracket: 329,
+          gearItemLevel: 329.375,
+          heroTree: null,
+          augmentationCount: 0,
+          casts: [
+            {
+              spellId: '6262',
+              count: 1,
+            },
+            {
+              spellId: '15286',
+              count: 4,
+            },
+            {
+              spellId: '8122',
+              count: 1,
+            },
+            {
+              spellId: '358733',
+              count: 4,
+            },
+            {
+              spellId: '391403',
+              count: 28,
+            },
+            {
+              spellId: '15407',
+              count: 51,
+            },
+            {
+              spellId: '1250533',
+              count: 4,
+            },
+            {
+              spellId: '589',
+              count: 1,
+            },
+            {
+              spellId: '335467',
+              count: 60,
+            },
+            {
+              spellId: '1236994',
+              count: 2,
+            },
+            {
+              spellId: '120644',
+              count: 7,
+            },
+            {
+              spellId: '32379',
+              count: 8,
+            },
+            {
+              spellId: '1242173',
+              count: 51,
+            },
+            {
+              spellId: '34914',
+              count: 12,
+            },
+            {
+              spellId: '21562',
+              count: 1,
+            },
+            {
+              spellId: '586',
+              count: 5,
+            },
+            {
+              spellId: '121536',
+              count: 14,
+            },
+            {
+              spellId: '8092',
+              count: 44,
+            },
+            {
+              spellId: '228260',
+              count: 4,
+            },
+            {
+              spellId: '17',
+              count: 5,
+            },
+            {
+              spellId: '1227280',
+              count: 36,
+            },
+            {
+              spellId: '10060',
+              count: 6,
+            },
+            {
+              spellId: '357214',
+              count: 1,
+            },
+            {
+              spellId: '19236',
+              count: 3,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 59966,
               uses: 4,
             },
           ],
         },
       ],
-      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     },
+    mythicPlus: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.375,
+      durationDifference: 0.005409042983175611,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
+      matchedKeystoneAffixes: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/XCjp26qwYADKNM8t#fight=26&source=952',
+          startedAt: '2026-10-08T05:43:49.470Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1691057,
+          itemLevelBracket: 18,
+          gearItemLevel: 327.375,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 18,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '8092',
+              count: 169,
+            },
+            {
+              spellId: '453',
+              count: 2,
+            },
+            {
+              spellId: '15286',
+              count: 10,
+            },
+            {
+              spellId: '335467',
+              count: 233,
+            },
+            {
+              spellId: '1295885',
+              count: 13,
+            },
+            {
+              spellId: '589',
+              count: 7,
+            },
+            {
+              spellId: '15407',
+              count: 210,
+            },
+            {
+              spellId: '10060',
+              count: 11,
+            },
+            {
+              spellId: '1295247',
+              count: 2,
+            },
+            {
+              spellId: '1236616',
+              count: 5,
+            },
+            {
+              spellId: '391403',
+              count: 92,
+            },
+            {
+              spellId: '8122',
+              count: 12,
+            },
+            {
+              spellId: '213634',
+              count: 2,
+            },
+            {
+              spellId: '58984',
+              count: 2,
+            },
+            {
+              spellId: '120644',
+              count: 23,
+            },
+            {
+              spellId: '19236',
+              count: 10,
+            },
+            {
+              spellId: '586',
+              count: 42,
+            },
+            {
+              spellId: '15487',
+              count: 19,
+            },
+            {
+              spellId: '32375',
+              count: 2,
+            },
+            {
+              spellId: '1242173',
+              count: 172,
+            },
+            {
+              spellId: '228260',
+              count: 11,
+            },
+            {
+              spellId: '47585',
+              count: 5,
+            },
+            {
+              spellId: '21562',
+              count: 5,
+            },
+            {
+              spellId: '34914',
+              count: 27,
+            },
+            {
+              spellId: '121536',
+              count: 19,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '1706',
+              count: 1,
+            },
+            {
+              spellId: '17',
+              count: 33,
+            },
+            {
+              spellId: '1227280',
+              count: 134,
+            },
+            {
+              spellId: '2061',
+              count: 36,
+            },
+            {
+              spellId: '73325',
+              count: 1,
+            },
+            {
+              spellId: '32379',
+              count: 41,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 165206,
+              uses: 11,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/RLdCHT1nc2a9gy3x#fight=21&source=1179',
+          startedAt: '2026-10-07T21:24:54.053Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1681910,
+          itemLevelBracket: 18,
+          gearItemLevel: 327.75,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 18,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '335467',
+              count: 228,
+            },
+            {
+              spellId: '586',
+              count: 44,
+            },
+            {
+              spellId: '1242173',
+              count: 164,
+            },
+            {
+              spellId: '17',
+              count: 23,
+            },
+            {
+              spellId: '1227280',
+              count: 132,
+            },
+            {
+              spellId: '1706',
+              count: 1,
+            },
+            {
+              spellId: '1234768',
+              count: 3,
+            },
+            {
+              spellId: '589',
+              count: 1,
+            },
+            {
+              spellId: '47585',
+              count: 3,
+            },
+            {
+              spellId: '15487',
+              count: 13,
+            },
+            {
+              spellId: '8122',
+              count: 4,
+            },
+            {
+              spellId: '19236',
+              count: 16,
+            },
+            {
+              spellId: '34914',
+              count: 28,
+            },
+            {
+              spellId: '21562',
+              count: 3,
+            },
+            {
+              spellId: '15286',
+              count: 12,
+            },
+            {
+              spellId: '10060',
+              count: 22,
+            },
+            {
+              spellId: '32379',
+              count: 46,
+            },
+            {
+              spellId: '1236616',
+              count: 5,
+            },
+            {
+              spellId: '15407',
+              count: 167,
+            },
+            {
+              spellId: '228260',
+              count: 11,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '2061',
+              count: 10,
+            },
+            {
+              spellId: '1250533',
+              count: 11,
+            },
+            {
+              spellId: '8092',
+              count: 128,
+            },
+            {
+              spellId: '121536',
+              count: 10,
+            },
+            {
+              spellId: '263165',
+              count: 45,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '10060',
+              activeMs: 165058,
+              uses: 11,
+            },
+          ],
+        },
+      ],
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+    },
+    KoreaAppliedAt: null,
   },
 };
 
@@ -49257,7 +60535,7 @@ guideManuscripts['druid-restoration'] = {
   patch: '12.1',
   researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
   graphCenterSkillId: '18562',
   summary: '12.1 회복 드루이드는 회복을 많이 뿌리는 방식에서 회복 5개로 풍요를 켜고 재생을 반복하는 방식으로 무게가 옮겨갔습니다. 피어나는 생명 대상에는 여러 지속 치유를 겹친 뒤 신속한 치유로 상록숲의 3연속 만개를 일으킵니다. 과성장은 자연의 신속함 뒤 재생에 지속 치유를 붙이는 특성이고, 신록 주입은 신속한 치유의 지속 치유 소모를 막습니다. 시즌 2 세트의 발생력은 회복과 큰 치유 기술 사용에 맞춰 지속 치유를 15% 올립니다. 9월 22일 전체 PvE 치유량이 4% 더 올랐고 광합성이 다른 플레이어의 지속 치유에서 발동하던 오류는 수정됐습니다. 8월 25일 확인 시점 로그 집계에서는 야생추적자가 많이 쓰였지만 현재 선택률은 다시 확인하지 못했습니다.',
   sourceNote: 'Blizzard 12.1 노트는 과성장·청명의 섬광 추가와 풍요·신속한 치유·상록숲·신록 주입 변경을 명시합니다. 8월 18일 PvE 전체 치유량 4% 상향에 이어 8월 25일에는 회복·싹틔우기 치유량 15%, 급속 성장 10% 증가, 자연의 선물 10%(기존 20%), 상록숲 5명·피어나는 생명 최종 치유량의 48%(기존 6명·40%), 4세트 발생력 지속시간 8초 증가(기존 4초)가 적용됐습니다. 8월 31일에는 숲 수호자 대상 우선순위와 상록숲 6명 치유 오류가 수정됐고, 9월 22일 전체 치유량이 별도로 4% 상향되며 광합성 오류가 수정됐습니다. 같은 날 야생추적자 폭발하는 성장물의 공격력 15% 상향은 피해에만 적용돼 치유 운용은 바뀌지 않습니다. 한국어 긴급 수정 공지는 이 날짜들을 하루 늦게 표기합니다. 10월 6일 예정 조정의 회복 항목(대규모 개화)은 PvP뿐이라 넣지 않았습니다. Wowhead 한국어 주문 페이지에서 시즌 2 2세트 1296609·4세트 1296610, 상록숲 392167, 숲 수호자 1226140, 세나리우스의 권능 455797 문구를 2026-10-03에 다시 확인했습니다. 8월 25일 조회한 Archon 14일 집계는 당시 야생추적자 선택률이 영웅 공격대 99.1%, 쐐기 +7~19 89.4%였다는 과거 자료이며, 10월 3일 재조회는 접근이 거부돼 그 뒤 선택률은 확인하지 못했습니다.',
@@ -49784,18 +61062,32 @@ guideManuscripts['druid-restoration'] = {
       note: '쐐기 7단 이상 전체 던전, 로그 76,044건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/624zGLbcD8hVJTAd#fight=4&source=4',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T00:45:25.411Z · 장비 평균 327.75 · 실제 393.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
       url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=21',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-08T02:16:38.458Z · 장비 구간 326 · 406.1초 · 증강 1명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-08T02:16:38.458Z · 장비 평균 326.75 · 실제 406.1초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/31AgZkCWYNf9cjKz#fight=16&source=191',
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=483',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-07T01:03:07.097Z · 장비 구간 326 · 404.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-08T03:00:13.450Z · 장비 평균 327.94 · 실제 1718.4초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/9cQjC7v1TXHwKVAp#fight=3&source=4',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T19:50:54.816Z · 장비 평균 328.81 · 실제 1780.0초 · 증강 0명 · 18단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
   ],
   evidence: [
@@ -49815,7 +61107,7 @@ guideManuscripts['druid-restoration'] = {
     '시즌 2 2세트는 회복 사용 시 15% 확률로 발생력을 주고, 발생력은 8초 동안 자신의 모든 지속 치유를 15% 올리며 중첩됩니다. 4세트는 자연의 신속함·평온·화신 또는 영혼 소집 사용 시 발생력을 확정으로 줍니다(2026-10-03 한국어 툴팁).',
     '8월 31일 긴급 수정으로 숲 수호자가 신속한 치유·급속 성장 대상을 우선 치유하고, 상록숲이 6명을 치유하던 오류가 5명으로 수정됐습니다.',
     '9월 22일 폭발하는 성장물 공격력 15% 상향은 피바라미 덩굴 폭발 피해에만 적용됩니다. 공생체 꽃 치유와 침착한 관리인의 회복 지속 치유 6%는 바뀌지 않았습니다.',
-    '10월 8일 드루이드 회복의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+    '10월 8일 드루이드 회복의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 18단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 1.00/0.88, 실제 전투 길이 차이는 3.10%/3.46%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
   ],
   caveats: [
     '힐러 HPS는 공대가 받은 피해량, 다른 힐러 수와 배정, 생존기 사용에 따라 크게 달라집니다. Archon HPS는 빌드 사용 현황을 보는 참고값이며 개인 주문 우선순위의 정답으로 쓰지 않습니다.',
@@ -49826,7 +61118,7 @@ guideManuscripts['druid-restoration'] = {
     '영웅 특성 선택률이 낮다고 숲의 수호자가 사용할 수 없는 것은 아닙니다. 다만 급속 성장 마나 부담과 숲 수호자 발동 시점을 따로 익혀야 하므로 기본 가이드는 야생추적자를 먼저 다룹니다.',
     '세나리우스의 권능은 회복에서 신속한 치유 치유량 20% 증가입니다. 쿨다운을 줄이는 효과로 설명하던 이전 표현은 툴팁과 맞지 않아 고쳤습니다.',
     '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
   ],
   blocks: [
     {
@@ -50361,10 +61653,93 @@ guideManuscripts['druid-restoration'] = {
     individual: {
       checkedAt: '2026-10-08',
       matchedBossDifficulty: true,
-      matchedItemLevelBracket: true,
-      durationDifference: 0.0030586989447242367,
-      matchedAugmentation: false,
+      matchedItemLevelBracket: false,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 1,
+      durationDifference: 0.031022890987674082,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
       combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/624zGLbcD8hVJTAd#fight=4&source=4',
+          startedAt: '2026-10-07T00:45:25.411Z',
+          region: 'US',
+          encounterId: 3379,
+          difficulty: 5,
+          kill: true,
+          durationMs: 393458,
+          itemLevelBracket: 327,
+          gearItemLevel: 327.75,
+          heroTree: null,
+          augmentationCount: 1,
+          casts: [
+            {
+              spellId: '22812',
+              count: 4,
+            },
+            {
+              spellId: '740',
+              count: 2,
+            },
+            {
+              spellId: '33763',
+              count: 20,
+            },
+            {
+              spellId: '29166',
+              count: 2,
+            },
+            {
+              spellId: '391528',
+              count: 6,
+            },
+            {
+              spellId: '1291894',
+              count: 5,
+            },
+            {
+              spellId: '197626',
+              count: 1,
+            },
+            {
+              spellId: '48438',
+              count: 26,
+            },
+            {
+              spellId: '132158',
+              count: 6,
+            },
+            {
+              spellId: '102793',
+              count: 1,
+            },
+            {
+              spellId: '8936',
+              count: 120,
+            },
+            {
+              spellId: '102342',
+              count: 2,
+            },
+            {
+              spellId: '774',
+              count: 138,
+            },
+            {
+              spellId: '106898',
+              count: 1,
+            },
+            {
+              spellId: '18562',
+              count: 34,
+            },
+            {
+              spellId: '1236648',
+              count: 2,
+            },
+          ],
+          externalBuffs: [],
+        },
         {
           url: 'https://www.warcraftlogs.com/reports/RjTC1JNbGzHM8kmr#fight=3&source=21',
           startedAt: '2026-10-08T02:16:38.458Z',
@@ -50374,25 +61749,25 @@ guideManuscripts['druid-restoration'] = {
           kill: true,
           durationMs: 406055,
           itemLevelBracket: 326,
-          heroTree: 22,
+          gearItemLevel: 326.75,
+          heroTree: null,
           augmentationCount: 1,
-          healerCount: 5,
           casts: [
             {
-              spellId: '1291894',
-              count: 4,
+              spellId: '102401',
+              count: 3,
             },
             {
-              spellId: '33763',
-              count: 21,
+              spellId: '132158',
+              count: 6,
+            },
+            {
+              spellId: '22812',
+              count: 1,
             },
             {
               spellId: '48438',
               count: 23,
-            },
-            {
-              spellId: '774',
-              count: 193,
             },
             {
               spellId: '740',
@@ -50407,40 +61782,40 @@ guideManuscripts['druid-restoration'] = {
               count: 1,
             },
             {
-              spellId: '197626',
-              count: 9,
+              spellId: '774',
+              count: 193,
             },
             {
-              spellId: '5176',
-              count: 10,
-            },
-            {
-              spellId: '8921',
-              count: 1,
-            },
-            {
-              spellId: '18562',
-              count: 34,
-            },
-            {
-              spellId: '132158',
-              count: 6,
-            },
-            {
-              spellId: '102401',
-              count: 3,
+              spellId: '33763',
+              count: 21,
             },
             {
               spellId: '29166',
               count: 2,
             },
             {
+              spellId: '197626',
+              count: 9,
+            },
+            {
+              spellId: '1291894',
+              count: 4,
+            },
+            {
               spellId: '8936',
               count: 83,
             },
             {
-              spellId: '22812',
+              spellId: '8921',
               count: 1,
+            },
+            {
+              spellId: '5176',
+              count: 10,
+            },
+            {
+              spellId: '18562',
+              count: 34,
             },
           ],
           externalBuffs: [
@@ -50451,113 +61826,324 @@ guideManuscripts['druid-restoration'] = {
             },
           ],
         },
+      ],
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+    },
+    mythicPlus: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.875,
+      durationDifference: 0.034639167612808046,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
+      matchedKeystoneAffixes: true,
+      combats: [
         {
-          url: 'https://www.warcraftlogs.com/reports/31AgZkCWYNf9cjKz#fight=16&source=191',
-          startedAt: '2026-10-07T01:03:07.097Z',
+          url: 'https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=483',
+          startedAt: '2026-10-08T03:00:13.450Z',
           region: 'US',
-          encounterId: 3379,
-          difficulty: 5,
+          encounterId: 12993,
+          difficulty: 10,
           kill: true,
-          durationMs: 404813,
-          itemLevelBracket: 326,
-          heroTree: 22,
+          durationMs: 1718378,
+          itemLevelBracket: 18,
+          gearItemLevel: 327.9375,
+          heroTree: null,
           augmentationCount: 0,
-          healerCount: 5,
+          keystoneLevel: 18,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
           casts: [
             {
               spellId: '18562',
-              count: 30,
+              count: 110,
             },
             {
               spellId: '33763',
-              count: 23,
+              count: 99,
+            },
+            {
+              spellId: '22812',
+              count: 19,
+            },
+            {
+              spellId: '391528',
+              count: 19,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '8936',
+              count: 220,
+            },
+            {
+              spellId: '197626',
+              count: 19,
+            },
+            {
+              spellId: '29166',
+              count: 9,
+            },
+            {
+              spellId: '24858',
+              count: 4,
+            },
+            {
+              spellId: '1291894',
+              count: 14,
+            },
+            {
+              spellId: '88423',
+              count: 22,
+            },
+            {
+              spellId: '1126',
+              count: 7,
+            },
+            {
+              spellId: '22842',
+              count: 1,
+            },
+            {
+              spellId: '106898',
+              count: 1,
+            },
+            {
+              spellId: '132158',
+              count: 21,
+            },
+            {
+              spellId: '252216',
+              count: 5,
+            },
+            {
+              spellId: '774',
+              count: 566,
+            },
+            {
+              spellId: '61391',
+              count: 1,
+            },
+            {
+              spellId: '102793',
+              count: 1,
+            },
+            {
+              spellId: '48438',
+              count: 86,
             },
             {
               spellId: '768',
               count: 5,
             },
             {
-              spellId: '391528',
+              spellId: '20484',
+              count: 1,
+            },
+            {
+              spellId: '8921',
+              count: 34,
+            },
+            {
+              spellId: '5176',
+              count: 121,
+            },
+            {
+              spellId: '197628',
               count: 5,
             },
             {
-              spellId: '1291894',
-              count: 3,
+              spellId: '740',
+              count: 7,
             },
             {
-              spellId: '8936',
-              count: 117,
+              spellId: '1264426',
+              count: 1,
             },
             {
-              spellId: '22568',
+              spellId: '93402',
+              count: 31,
+            },
+            {
+              spellId: '5487',
+              count: 7,
+            },
+            {
+              spellId: '1236648',
+              count: 4,
+            },
+            {
+              spellId: '102342',
+              count: 17,
+            },
+            {
+              spellId: '783',
+              count: 9,
+            },
+          ],
+          externalBuffs: [],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/9cQjC7v1TXHwKVAp#fight=3&source=4',
+          startedAt: '2026-10-07T19:50:54.816Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1780037,
+          itemLevelBracket: 18,
+          gearItemLevel: 328.8125,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 18,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '1850',
               count: 1,
             },
             {
               spellId: '22812',
-              count: 3,
+              count: 12,
             },
             {
-              spellId: '48438',
-              count: 21,
-            },
-            {
-              spellId: '1822',
+              spellId: '1126',
               count: 4,
             },
             {
-              spellId: '29166',
-              count: 3,
+              spellId: '33763',
+              count: 119,
             },
             {
-              spellId: '740',
-              count: 2,
+              spellId: '22568',
+              count: 10,
             },
             {
-              spellId: '22842',
-              count: 2,
-            },
-            {
-              spellId: '252216',
-              count: 1,
-            },
-            {
-              spellId: '5176',
-              count: 5,
-            },
-            {
-              spellId: '774',
-              count: 147,
-            },
-            {
-              spellId: '5487',
-              count: 2,
+              spellId: '8936',
+              count: 177,
             },
             {
               spellId: '102342',
-              count: 4,
-            },
-            {
-              spellId: '1236994',
-              count: 2,
+              count: 15,
             },
             {
               spellId: '1079',
+              count: 76,
+            },
+            {
+              spellId: '774',
+              count: 381,
+            },
+            {
+              spellId: '740',
               count: 3,
+            },
+            {
+              spellId: '1822',
+              count: 190,
+            },
+            {
+              spellId: '77758',
+              count: 3,
+            },
+            {
+              spellId: '2908',
+              count: 5,
             },
             {
               spellId: '5221',
+              count: 111,
+            },
+            {
+              spellId: '768',
+              count: 101,
+            },
+            {
+              spellId: '5487',
+              count: 13,
+            },
+            {
+              spellId: '77764',
               count: 3,
             },
             {
+              spellId: '22842',
+              count: 12,
+            },
+            {
+              spellId: '99',
+              count: 3,
+            },
+            {
+              spellId: '1236994',
+              count: 3,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '255654',
+              count: 1,
+            },
+            {
+              spellId: '391528',
+              count: 19,
+            },
+            {
+              spellId: '88423',
+              count: 19,
+            },
+            {
+              spellId: '18562',
+              count: 90,
+            },
+            {
+              spellId: '5215',
+              count: 1,
+            },
+            {
+              spellId: '106898',
+              count: 1,
+            },
+            {
+              spellId: '48438',
+              count: 87,
+            },
+            {
+              spellId: '1291894',
+              count: 14,
+            },
+            {
               spellId: '132158',
-              count: 6,
+              count: 23,
+            },
+            {
+              spellId: '783',
+              count: 2,
+            },
+            {
+              spellId: '29166',
+              count: 4,
             },
           ],
           externalBuffs: [],
         },
       ],
-      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     },
+    KoreaAppliedAt: null,
   },
 };
 
@@ -50565,7 +62151,7 @@ guideManuscripts['paladin-holy'] = {
   patch: '12.1',
   researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
   graphCenterSkillId: '20473',
   extraSkills: [],
   summary: '12.1 신성 성기사는 신성 충격으로 신성한 힘을 만들고, 영광의 서약 또는 영원의 불꽃으로 한 명을 빠르게 살리는 즉시 회복형 힐러입니다. 공격대에서는 태양의 사자와 영구 봉화가 기본이고, 쐐기에서는 고결의 봉화 9초 안에 직접 치유를 몰아넣는 운용이 핵심입니다. 8월 집계에서 고단 비중이 더 높았던 빛대장장이는 신성한 보루와 신성한 무기를 피해 전에 배치하는 별도 운용이 필요합니다. 티르의 해방은 현재 직접 누르는 기술이 아니라 응징의 격노에 자동으로 붙는 효과이고, 순교자의 빛도 과거 액티브 주문이 아닌 패시브 특성입니다.',
@@ -51080,18 +62666,32 @@ guideManuscripts['paladin-holy'] = {
       note: '쐐기 7단 이상 전체 던전, 로그 299,552건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/J1FbyAjdmfckNg6M#fight=14&source=192',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/624zGLbcD8hVJTAd#fight=4&source=20',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-07T03:31:24.314Z · 장비 구간 328 · 446.8초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T00:45:25.411Z · 장비 평균 331.19 · 실제 393.5초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
-      url: 'https://www.warcraftlogs.com/reports/MjfYDTCV4GcrnRN2#fight=10&source=25',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/mxXQh2g9HKyZ8Wvr#fight=1&source=9',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-08T00:49:15.157Z · 장비 구간 328 · 445.3초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T00:27:27.886Z · 장비 평균 331.00 · 실제 388.4초 · 증강 1명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/wHz96yxpJfKd1NqM#fight=20&source=2400',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T01:36:50.294Z · 장비 평균 328.38 · 실제 1836.6초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/76CgNjmc42xYBZTa#fight=1&source=2',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T06:37:09.129Z · 장비 평균 328.00 · 실제 1769.2초 · 증강 0명 · 20단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
   ],
   evidence: [
@@ -51103,7 +62703,7 @@ guideManuscripts['paladin-holy'] = {
     '쐐기 +7~19에서 빛대장장이는 19.2%지만 고단에서는 36.0%입니다. 공격대 선택률만 보고 쐐기 빛대장장이를 부적절한 선택으로 단정하지 않습니다.',
     'Icy Veins와 Wowhead는 12.1에서 영광의 서약 또는 영원의 불꽃을 기본 소비기로 두고, 여명의 빛은 단일 소비기가 넘칠 정도의 다중 부상에 사용한다는 방향이 일치합니다.',
     '9월 11일 빛대장장이에서 적 대상 천상의 울림이 작동하지 않던 수정과 신성의 정화·헌신의 오라 정본을 확인했습니다. 10월 6일 공지의 성기사 변경은 PvP이며 PvE 치유량의 추가 상향으로 취급하지 않습니다.',
-    '10월 8일 성기사 신성의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+    '10월 8일 성기사 신성의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 20단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.19/0.38, 실제 전투 길이 차이는 1.29%/3.67%이며 증강 인원은 각각 1명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
   ],
   caveats: [
     '힐러 HPS는 파티가 받은 피해량, 다른 힐러 수와 배정, 생존기 겹침에 크게 좌우됩니다. Archon HPS는 현재 빌드 사용 현황을 보는 참고값이며 개인 실력의 단일 점수가 아닙니다.',
@@ -51113,7 +62713,7 @@ guideManuscripts['paladin-holy'] = {
     '두 해방 특성은 한국어 공식 이름이 같지만 ID 461278은 낮은 생명력 대상의 소비기 치명타 증가, ID 461287은 치유 일부를 피해로 바꾸는 선택입니다.',
     'PvP 핫픽스의 치유 감소와 응징의 성전사 수치는 PvE 공격대·쐐기 설명에 적용하지 않습니다.',
     '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
   ],
   blocks: [
     {
@@ -51606,185 +63206,170 @@ guideManuscripts['paladin-holy'] = {
       checkedAt: '2026-10-08',
       matchedBossDifficulty: true,
       matchedItemLevelBracket: true,
-      durationDifference: 0.0034309271336427807,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.1875,
+      durationDifference: 0.012903537353415104,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
       matchedAugmentation: true,
       combats: [
         {
-          url: 'https://www.warcraftlogs.com/reports/J1FbyAjdmfckNg6M#fight=14&source=192',
-          startedAt: '2026-10-07T03:31:24.314Z',
+          url: 'https://www.warcraftlogs.com/reports/624zGLbcD8hVJTAd#fight=4&source=20',
+          startedAt: '2026-10-07T00:45:25.411Z',
           region: 'US',
           encounterId: 3379,
           difficulty: 5,
           kill: true,
-          durationMs: 446818,
-          itemLevelBracket: 328,
-          heroTree: 50,
-          augmentationCount: 0,
-          healerCount: 4,
+          durationMs: 393458,
+          itemLevelBracket: 331,
+          gearItemLevel: 331.1875,
+          heroTree: null,
+          augmentationCount: 1,
           casts: [
             {
-              spellId: '1291894',
-              count: 2,
+              spellId: '190784',
+              count: 3,
             },
             {
-              spellId: '20473',
-              count: 96,
-            },
-            {
-              spellId: '642',
-              count: 2,
-            },
-            {
-              spellId: '156322',
-              count: 57,
-            },
-            {
-              spellId: '200025',
-              count: 23,
-            },
-            {
-              spellId: '375576',
-              count: 11,
-            },
-            {
-              spellId: '633',
+              spellId: '1295247',
               count: 1,
-            },
-            {
-              spellId: '1236616',
-              count: 2,
-            },
-            {
-              spellId: '275773',
-              count: 30,
-            },
-            {
-              spellId: '31884',
-              count: 4,
-            },
-            {
-              spellId: '26573',
-              count: 5,
-            },
-            {
-              spellId: '1241413',
-              count: 14,
             },
             {
               spellId: '31821',
               count: 2,
             },
             {
+              spellId: '415091',
+              count: 1,
+            },
+            {
               spellId: '19750',
-              count: 60,
+              count: 80,
+            },
+            {
+              spellId: '642',
+              count: 1,
+            },
+            {
+              spellId: '275773',
+              count: 11,
+            },
+            {
+              spellId: '156322',
+              count: 65,
+            },
+            {
+              spellId: '375576',
+              count: 11,
+            },
+            {
+              spellId: '1291894',
+              count: 5,
             },
             {
               spellId: '498',
-              count: 3,
-            },
-            {
-              spellId: '115750',
-              count: 1,
-            },
-            {
-              spellId: '415091',
-              count: 13,
-            },
-            {
-              spellId: '190784',
-              count: 4,
-            },
-            {
-              spellId: '853',
-              count: 1,
+              count: 5,
             },
             {
               spellId: '85222',
-              count: 37,
+              count: 21,
+            },
+            {
+              spellId: '82326',
+              count: 7,
+            },
+            {
+              spellId: '633',
+              count: 1,
+            },
+            {
+              spellId: '20473',
+              count: 85,
+            },
+            {
+              spellId: '1236648',
+              count: 1,
+            },
+            {
+              spellId: '200025',
+              count: 21,
+            },
+            {
+              spellId: '31884',
+              count: 3,
             },
           ],
-          externalBuffs: [],
+          externalBuffs: [
+            {
+              spellId: '413984',
+              activeMs: 38433,
+              uses: 3,
+            },
+          ],
         },
         {
-          url: 'https://www.warcraftlogs.com/reports/MjfYDTCV4GcrnRN2#fight=10&source=25',
-          startedAt: '2026-10-08T00:49:15.157Z',
+          url: 'https://www.warcraftlogs.com/reports/mxXQh2g9HKyZ8Wvr#fight=1&source=9',
+          startedAt: '2026-10-07T00:27:27.886Z',
           region: 'US',
           encounterId: 3379,
           difficulty: 5,
           kill: true,
-          durationMs: 445285,
-          itemLevelBracket: 328,
-          heroTree: 50,
-          augmentationCount: 0,
-          healerCount: 4,
+          durationMs: 388381,
+          itemLevelBracket: 331,
+          gearItemLevel: 331,
+          heroTree: null,
+          augmentationCount: 1,
           casts: [
             {
-              spellId: '82326',
-              count: 1,
+              spellId: '498',
+              count: 2,
             },
             {
-              spellId: '391054',
-              count: 1,
+              spellId: '375576',
+              count: 9,
             },
             {
-              spellId: '85222',
-              count: 7,
+              spellId: '200025',
+              count: 17,
+            },
+            {
+              spellId: '156322',
+              count: 56,
+            },
+            {
+              spellId: '20473',
+              count: 74,
             },
             {
               spellId: '19750',
               count: 46,
             },
             {
-              spellId: '190784',
-              count: 2,
+              spellId: '1291894',
+              count: 4,
             },
             {
-              spellId: '633',
+              spellId: '59752',
               count: 1,
-            },
-            {
-              spellId: '1236616',
-              count: 2,
-            },
-            {
-              spellId: '200025',
-              count: 19,
-            },
-            {
-              spellId: '1241413',
-              count: 8,
-            },
-            {
-              spellId: '498',
-              count: 1,
-            },
-            {
-              spellId: '156322',
-              count: 78,
-            },
-            {
-              spellId: '375576',
-              count: 11,
-            },
-            {
-              spellId: '275773',
-              count: 31,
             },
             {
               spellId: '642',
               count: 1,
             },
             {
-              spellId: '20473',
-              count: 108,
-            },
-            {
-              spellId: '1291894',
-              count: 5,
-            },
-            {
               spellId: '31821',
+              count: 2,
+            },
+            {
+              spellId: '275773',
               count: 3,
+            },
+            {
+              spellId: '633',
+              count: 1,
+            },
+            {
+              spellId: '85222',
+              count: 17,
             },
             {
               spellId: '6940',
@@ -51792,14 +63377,313 @@ guideManuscripts['paladin-holy'] = {
             },
             {
               spellId: '31884',
+              count: 3,
+            },
+            {
+              spellId: '82326',
+              count: 5,
+            },
+            {
+              spellId: '1236616',
+              count: 1,
+            },
+          ],
+          externalBuffs: [],
+        },
+      ],
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+    },
+    mythicPlus: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.375,
+      durationDifference: 0.03667196100520922,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
+      matchedKeystoneAffixes: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/wHz96yxpJfKd1NqM#fight=20&source=2400',
+          startedAt: '2026-10-08T01:36:50.294Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1836553,
+          itemLevelBracket: 20,
+          gearItemLevel: 328.375,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 20,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '1044',
+              count: 12,
+            },
+            {
+              spellId: '82326',
+              count: 111,
+            },
+            {
+              spellId: '1022',
+              count: 2,
+            },
+            {
+              spellId: '190784',
+              count: 15,
+            },
+            {
+              spellId: '498',
+              count: 23,
+            },
+            {
+              spellId: '415091',
+              count: 150,
+            },
+            {
+              spellId: '642',
+              count: 4,
+            },
+            {
+              spellId: '6262',
+              count: 2,
+            },
+            {
+              spellId: '20473',
+              count: 220,
+            },
+            {
+              spellId: '4987',
+              count: 23,
+            },
+            {
+              spellId: '432459',
+              count: 30,
+            },
+            {
+              spellId: '6940',
+              count: 8,
+            },
+            {
+              spellId: '1291791',
+              count: 3,
+            },
+            {
+              spellId: '633',
+              count: 7,
+            },
+            {
+              spellId: '275773',
+              count: 156,
+            },
+            {
+              spellId: '1241413',
+              count: 34,
+            },
+            {
+              spellId: '1295247',
+              count: 2,
+            },
+            {
+              spellId: '1236616',
+              count: 5,
+            },
+            {
+              spellId: '1287798',
+              count: 1,
+            },
+            {
+              spellId: '19750',
+              count: 277,
+            },
+            {
+              spellId: '853',
+              count: 6,
+            },
+            {
+              spellId: '85222',
+              count: 2,
+            },
+            {
+              spellId: '115750',
+              count: 4,
+            },
+            {
+              spellId: '1235057',
+              count: 1,
+            },
+            {
+              spellId: '31821',
+              count: 9,
+            },
+            {
+              spellId: '85673',
+              count: 213,
+            },
+            {
+              spellId: '31884',
+              count: 16,
+            },
+            {
+              spellId: '1291894',
+              count: 13,
+            },
+            {
+              spellId: '432472',
+              count: 29,
+            },
+          ],
+          externalBuffs: [],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/76CgNjmc42xYBZTa#fight=1&source=2',
+          startedAt: '2026-10-08T06:37:09.129Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1769203,
+          itemLevelBracket: 20,
+          gearItemLevel: 328,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 20,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '1241413',
+              count: 52,
+            },
+            {
+              spellId: '32223',
+              count: 1,
+            },
+            {
+              spellId: '853',
+              count: 6,
+            },
+            {
+              spellId: '1022',
+              count: 4,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '432472',
+              count: 33,
+            },
+            {
+              spellId: '20473',
+              count: 231,
+            },
+            {
+              spellId: '432459',
+              count: 34,
+            },
+            {
+              spellId: '275773',
+              count: 201,
+            },
+            {
+              spellId: '415091',
+              count: 291,
+            },
+            {
+              spellId: '82326',
+              count: 79,
+            },
+            {
+              spellId: '190784',
+              count: 19,
+            },
+            {
+              spellId: '85222',
+              count: 3,
+            },
+            {
+              spellId: '1291894',
+              count: 6,
+            },
+            {
+              spellId: '642',
+              count: 3,
+            },
+            {
+              spellId: '85673',
+              count: 161,
+            },
+            {
+              spellId: '53563',
+              count: 1,
+            },
+            {
+              spellId: '465',
+              count: 1,
+            },
+            {
+              spellId: '31884',
+              count: 17,
+            },
+            {
+              spellId: '498',
+              count: 20,
+            },
+            {
+              spellId: '633',
+              count: 9,
+            },
+            {
+              spellId: '1236616',
+              count: 2,
+            },
+            {
+              spellId: '1044',
+              count: 10,
+            },
+            {
+              spellId: '4987',
+              count: 18,
+            },
+            {
+              spellId: '19750',
+              count: 282,
+            },
+            {
+              spellId: '31821',
+              count: 2,
+            },
+            {
+              spellId: '115750',
+              count: 1,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '6940',
               count: 4,
             },
           ],
           externalBuffs: [],
         },
       ],
-      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     },
+    KoreaAppliedAt: null,
   },
 };
 
@@ -51807,7 +63691,7 @@ guideManuscripts['evoker-preservation'] = {
   patch: '12.1',
   researchedAt: '2026-10-08',
   status: '12.1 실전 심화 가이드',
-  sourceStatus: '2026-10-08 특성 견본 세 종류·공개 집계·조정 이후 미국 신화 개별 전투 2건 대조. 한국 적용 시각과 동일 장비·외부 강화 효과 및 쐐기 비교 검수는 남아 있습니다.',
+  sourceStatus: '2026-10-08 특성 견본 3종과 미국 조정 이후 레이드·쐐기 각 2건 대조. 장비 평균 차이 1 이내·실제 전투 길이 차이 5% 이내·증강 인원 일치. 한국 적용 시각과 영웅 특성 성능 우열은 확인 대기입니다.',
   graphCenterSkillId: '364343',
   summary: '12.1 보존 기원사는 꿈의 숨결 1단계 지속 치유를 유지하고, 시간 변칙과 직접 메아리로 다음 피해 대상을 준비한 뒤, 꿈의 숨결이 확정한 메리스라의 축복으로 메아리를 회수하는 힐러입니다. 정수 폭발은 무료 에메랄드 꽃에 써서 시즌 2 살아있는 불꽃과 쌍둥이 메아리를 만들고, 자연 정수는 다시 메아리에 사용합니다. 8월 25일 긴급 수정으로 신록의 품 25%, 살아있는 불꽃 치유 20%, 꿈의 복제 증가량 40%가 적용됐습니다. 공격대와 쐐기 모두 불꽃형성자가 기본 추천이며, 시간 감시자는 더 잦은 시간 변칙과 강한 신록의 품이 필요한 전투의 선택지입니다.',
   sourceNote: '12.1 수치는 Blizzard 최종 노트와 긴급 수정 누적 공지, 2026-10-03 ko.wowhead 주문 페이지로 확인했습니다. 신록의 품 360995는 현재 주문력의 1719%, 살아있는 불꽃 361469 치유는 주문력의 780%, 꿈의 복제 1241669는 신록의 품 치유 40% 증가와 도약 제거입니다. 긴급 수정 날짜는 미국 기사 기준이며 한국어 기사에는 하루 늦게 표기됩니다. 운용은 Wowhead 2026-08-12 자료(이번에 본문 미재확인), Icy Veins 2026-08-28 특성·2026-08-13 운용, Wyrmrest Temple 보존 담당자 Harrek·YouTee와 고단 검수자 Kig의 SpiritbloomPro 공격대·쐐기 설명(2026-10-03 재확인)을 대조했습니다. 영웅 특성 방향은 Archon 2026-08-26 확인 시점의 과거 집계와 Murlok 2026-10-03 쐐기 상위 50명(불꽃형성자 48명) 선택 집계로만 판단했고, 9월 이후 공격대 로그는 새로 확보하지 못했습니다. 보존의 해제 주문은 말소가 아니라 이를 대체하는 자연화입니다.',
@@ -52426,18 +64310,32 @@ guideManuscripts['evoker-preservation'] = {
       note: '쐐기 7단 이상 전체 던전, 로그 42,154건. 집계 기간과 추천 특성·대표 로그를 대조했습니다. 조정 이후 기록만으로 제한된 로그는 아닙니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
       url: 'https://www.warcraftlogs.com/reports/DvnAJTtg3kb67rjM#fight=1&source=6',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-08T00:39:40.746Z · 장비 구간 329 · 375.9초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-08T00:39:40.746Z · 장비 평균 329.38 · 실제 375.9초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
     {
-      label: 'WCL 10월 7~8일 미국 신화 개별 전투',
+      label: 'WCL 조건 대조 미국 신화 레이드 개별 전투',
       url: 'https://www.warcraftlogs.com/reports/LcgNxzydnhvQ76Xa#fight=2&source=19',
       tier: 'S',
       updated: '2026-10-08',
-      note: '2026-10-07T01:39:53.958Z · 장비 구간 329 · 388.5초 · 증강 0명. 시전·버프 확인. 한국 적용이나 영웅 특성 성능 우열을 확정하는 비교는 아닙니다.',
+      note: '2026-10-07T01:39:53.958Z · 장비 평균 329.81 · 실제 388.5초 · 증강 0명. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/Cqx9hRD74NPpfZmy#fight=20&source=33',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-08T05:01:13.708Z · 장비 평균 327.56 · 실제 1706.4초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
+    },
+    {
+      label: 'WCL 조건 대조 미국 쐐기 개별 전투',
+      url: 'https://www.warcraftlogs.com/reports/MnNK1HqQkCxzfB2w#fight=1&source=2',
+      tier: 'S',
+      updated: '2026-10-08',
+      note: '2026-10-07T23:35:15.941Z · 장비 평균 327.13 · 실제 1713.6초 · 증강 0명 · 19단. 전문화·시전·버프 확인. 한국 적용과 영웅 특성 성능 우열은 미확정입니다.',
     },
   ],
   evidence: [
@@ -52452,7 +64350,7 @@ guideManuscripts['evoker-preservation'] = {
     'Blizzard 8월 25일 긴급 수정은 던전에서 다른 힐러를 따라잡도록 신록의 품 치유 25%, 살아있는 불꽃 치유 20%를 올리고 꿈의 복제의 신록의 품 증가량을 40%로 높였습니다. 앞의 두 항목은 플레이어 간 전투에 적용되지 않습니다.',
     '꿈의 복제와 자유의 날개는 같은 선택 노드입니다. 꿈의 복제는 신록의 품 도약을 없애고, 자유의 날개는 신록의 품을 2충전으로 만들지만 도약은 그대로입니다. SpiritbloomPro는 대부분의 공격대 빌드가 꿈의 복제를 쓰지 않는다고 설명하고, Murlok 쐐기 상위 50명은 32명이 꿈의 복제를 골랐습니다.',
     '9월 22일 화염 흡수 치유 30% 감소는 플레이어 간 전투 전용이고, 9월 2일 되돌리기 회오리바람 수정도 플레이어 간 전투 항목입니다. 8월 27일 생명불씨 수정은 툴팁 문구 수정입니다. PvE 운용 수치는 바뀌지 않았습니다.',
-    '10월 8일 기원사 보존의 미국 신화 Nymrissa Wavecaller 개별 전투 2건에서 전문화·전투 시각·시전·버프를 확인했습니다. 장비 구간이 같고 전투 길이 차이는 5% 이내입니다. 서로 다른 외부 강화 효과나 치유 구성을 성능 차이로 단정하지 않습니다.',
+    '10월 8일 기원사 보존의 미국 신화 Nymrissa Wavecaller 2건과 쐐기 Altar of Fangs 19단 2건을 대조했습니다. 레이드·쐐기 모두 같은 전투 조건에서 장비 평균 차이는 0.44/0.44, 실제 전투 길이 차이는 3.24%/0.42%이며 증강 인원은 각각 0명/0명으로 일치합니다. 쐐기는 단수·어픽스도 같습니다. 시전·버프 사례는 현재 전투 흐름의 참고 근거로 반영하며, 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
   ],
   caveats: [
     'Archon 사용률은 2026-08-26 확인 시점의 최근 14일 과거 집계입니다. 특히 영웅 공격대 로그는 430개로 적었고 이후 긴급 수정 전 자료이므로 현재 사용률이나 특성 간 절대 성능 차이로 읽지 않습니다. 2026-10-03 Murlok 집계는 쐐기 상위 50명 선택만 보여 줍니다.',
@@ -52463,7 +64361,7 @@ guideManuscripts['evoker-preservation'] = {
     'Wowhead 보존 가이드 본문은 이번 검토에서 다시 열지 않았습니다. 9월 이후 공격대 치유 로그도 새로 확보하지 못했으므로 공격대 신록의 품 선택 노드는 SpiritbloomPro 설명을 근거로 두고 개인 빌드로 확인합니다.',
     '10월 6일 정기 점검 예정 기원사 조정은 플레이어 간 전투 항목뿐이라 반영하지 않았습니다.',
     '10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.',
-    '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+    '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
   ],
   blocks: [
     {
@@ -53015,7 +64913,10 @@ guideManuscripts['evoker-preservation'] = {
       checkedAt: '2026-10-08',
       matchedBossDifficulty: true,
       matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.4375,
       durationDifference: 0.03242763183298367,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
       matchedAugmentation: true,
       combats: [
         {
@@ -53027,10 +64928,38 @@ guideManuscripts['evoker-preservation'] = {
           kill: true,
           durationMs: 375868,
           itemLevelBracket: 329,
-          heroTree: 37,
+          gearItemLevel: 329.375,
+          heroTree: null,
           augmentationCount: 0,
-          healerCount: 4,
           casts: [
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '364343',
+              count: 77,
+            },
+            {
+              spellId: '370553',
+              count: 3,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '358267',
+              count: 5,
+            },
+            {
+              spellId: '1256581',
+              count: 22,
+            },
+            {
+              spellId: '355936',
+              count: 30,
+            },
             {
               spellId: '355913',
               count: 79,
@@ -53040,28 +64969,36 @@ guideManuscripts['evoker-preservation'] = {
               count: 11,
             },
             {
-              spellId: '373861',
-              count: 27,
+              spellId: '363916',
+              count: 4,
             },
             {
-              spellId: '358267',
-              count: 5,
-            },
-            {
-              spellId: '366155',
-              count: 5,
+              spellId: '1236994',
+              count: 2,
             },
             {
               spellId: '374968',
               count: 1,
             },
             {
-              spellId: '357170',
+              spellId: '357208',
+              count: 32,
+            },
+            {
+              spellId: '373861',
+              count: 27,
+            },
+            {
+              spellId: '368970',
               count: 1,
             },
             {
-              spellId: '364343',
-              count: 77,
+              spellId: '1291894',
+              count: 4,
+            },
+            {
+              spellId: '366155',
+              count: 5,
             },
             {
               spellId: '358733',
@@ -53072,48 +65009,12 @@ guideManuscripts['evoker-preservation'] = {
               count: 2,
             },
             {
-              spellId: '1295247',
+              spellId: '357170',
               count: 1,
-            },
-            {
-              spellId: '370553',
-              count: 3,
             },
             {
               spellId: '370537',
               count: 4,
-            },
-            {
-              spellId: '1236994',
-              count: 2,
-            },
-            {
-              spellId: '1291894',
-              count: 4,
-            },
-            {
-              spellId: '357208',
-              count: 32,
-            },
-            {
-              spellId: '363916',
-              count: 4,
-            },
-            {
-              spellId: '361195',
-              count: 0,
-            },
-            {
-              spellId: '368970',
-              count: 1,
-            },
-            {
-              spellId: '355936',
-              count: 30,
-            },
-            {
-              spellId: '1256581',
-              count: 22,
             },
           ],
           externalBuffs: [],
@@ -53127,20 +65028,32 @@ guideManuscripts['evoker-preservation'] = {
           kill: true,
           durationMs: 388465,
           itemLevelBracket: 329,
-          heroTree: 37,
+          gearItemLevel: 329.8125,
+          heroTree: null,
           augmentationCount: 0,
-          healerCount: 5,
           casts: [
             {
-              spellId: '1291894',
+              spellId: '363534',
+              count: 2,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '370564',
+              count: 3,
+            },
+            {
+              spellId: '373861',
+              count: 28,
+            },
+            {
+              spellId: '358733',
               count: 4,
             },
             {
-              spellId: '355913',
-              count: 83,
-            },
-            {
-              spellId: '366155',
+              spellId: '1291894',
               count: 4,
             },
             {
@@ -53148,16 +65061,12 @@ guideManuscripts['evoker-preservation'] = {
               count: 32,
             },
             {
-              spellId: '361195',
-              count: 0,
+              spellId: '355936',
+              count: 36,
             },
             {
-              spellId: '357170',
-              count: 1,
-            },
-            {
-              spellId: '373861',
-              count: 28,
+              spellId: '366155',
+              count: 4,
             },
             {
               spellId: '358267',
@@ -53172,43 +65081,364 @@ guideManuscripts['evoker-preservation'] = {
               count: 70,
             },
             {
-              spellId: '1256581',
-              count: 23,
+              spellId: '370537',
+              count: 4,
             },
             {
               spellId: '363916',
               count: 3,
             },
             {
-              spellId: '370537',
-              count: 4,
-            },
-            {
               spellId: '370553',
               count: 4,
             },
             {
-              spellId: '355936',
-              count: 36,
+              spellId: '355913',
+              count: 83,
             },
             {
-              spellId: '370564',
-              count: 3,
+              spellId: '1256581',
+              count: 23,
             },
             {
-              spellId: '358733',
-              count: 4,
-            },
-            {
-              spellId: '363534',
-              count: 2,
+              spellId: '357170',
+              count: 1,
             },
           ],
           externalBuffs: [],
         },
       ],
-      scope: '미국 지역 신화 동일 우두머리의 개별 시전·버프를 확인했습니다. 한국 적용 시각, 쐐기 개별 전투, 장비 세부 구성·외부 강화 효과까지 일치한 성능 비교는 아직 남아 있습니다.',
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
     },
+    mythicPlus: {
+      checkedAt: '2026-10-08',
+      matchedBossDifficulty: true,
+      matchedItemLevelBracket: true,
+      matchedGearItemLevel: true,
+      gearItemLevelDifference: 0.4375,
+      durationDifference: 0.0041783380018674135,
+      durationDifferenceDefinition: '절대 차이 / 두 전투 중 긴 실제 전투 시간',
+      matchedAugmentation: true,
+      matchedKeystoneAffixes: true,
+      combats: [
+        {
+          url: 'https://www.warcraftlogs.com/reports/Cqx9hRD74NPpfZmy#fight=20&source=33',
+          startedAt: '2026-10-08T05:01:13.708Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1706440,
+          itemLevelBracket: 19,
+          gearItemLevel: 327.5625,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 19,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '364342',
+              count: 2,
+            },
+            {
+              spellId: '390386',
+              count: 1,
+            },
+            {
+              spellId: '374227',
+              count: 5,
+            },
+            {
+              spellId: '363534',
+              count: 4,
+            },
+            {
+              spellId: '393438',
+              count: 2,
+            },
+            {
+              spellId: '366155',
+              count: 23,
+            },
+            {
+              spellId: '1263768',
+              count: 34,
+            },
+            {
+              spellId: '358733',
+              count: 37,
+            },
+            {
+              spellId: '1295247',
+              count: 2,
+            },
+            {
+              spellId: '1295132',
+              count: 3,
+            },
+            {
+              spellId: '1256581',
+              count: 102,
+            },
+            {
+              spellId: '363916',
+              count: 13,
+            },
+            {
+              spellId: '406971',
+              count: 1,
+            },
+            {
+              spellId: '373861',
+              count: 92,
+            },
+            {
+              spellId: '357210',
+              count: 4,
+            },
+            {
+              spellId: '370537',
+              count: 17,
+            },
+            {
+              spellId: '364343',
+              count: 71,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '361469',
+              count: 161,
+            },
+            {
+              spellId: '357208',
+              count: 156,
+            },
+            {
+              spellId: '357170',
+              count: 12,
+            },
+            {
+              spellId: '374251',
+              count: 2,
+            },
+            {
+              spellId: '357214',
+              count: 2,
+            },
+            {
+              spellId: '355913',
+              count: 242,
+            },
+            {
+              spellId: '355936',
+              count: 170,
+            },
+            {
+              spellId: '370553',
+              count: 14,
+            },
+            {
+              spellId: '370564',
+              count: 17,
+            },
+            {
+              spellId: '368970',
+              count: 5,
+            },
+            {
+              spellId: '358267',
+              count: 35,
+            },
+            {
+              spellId: '360823',
+              count: 18,
+            },
+            {
+              spellId: '406732',
+              count: 4,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '356995',
+              count: 145,
+            },
+            {
+              spellId: '1291894',
+              count: 8,
+            },
+            {
+              spellId: '370665',
+              count: 4,
+            },
+          ],
+          externalBuffs: [
+            {
+              spellId: '390386',
+              activeMs: 39998,
+              uses: 2,
+            },
+          ],
+        },
+        {
+          url: 'https://www.warcraftlogs.com/reports/MnNK1HqQkCxzfB2w#fight=1&source=2',
+          startedAt: '2026-10-07T23:35:15.941Z',
+          region: 'US',
+          encounterId: 12993,
+          difficulty: 10,
+          kill: true,
+          durationMs: 1713600,
+          itemLevelBracket: 19,
+          gearItemLevel: 327.125,
+          heroTree: null,
+          augmentationCount: 0,
+          keystoneLevel: 19,
+          affixes: [
+            9,
+            10,
+            147,
+          ],
+          casts: [
+            {
+              spellId: '366155',
+              count: 4,
+            },
+            {
+              spellId: '1236616',
+              count: 5,
+            },
+            {
+              spellId: '355936',
+              count: 0,
+            },
+            {
+              spellId: '357210',
+              count: 5,
+            },
+            {
+              spellId: '1291894',
+              count: 11,
+            },
+            {
+              spellId: '364343',
+              count: 7,
+            },
+            {
+              spellId: '370553',
+              count: 12,
+            },
+            {
+              spellId: '358267',
+              count: 37,
+            },
+            {
+              spellId: '406971',
+              count: 4,
+            },
+            {
+              spellId: '357170',
+              count: 7,
+            },
+            {
+              spellId: '1287798',
+              count: 2,
+            },
+            {
+              spellId: '370564',
+              count: 11,
+            },
+            {
+              spellId: '374227',
+              count: 5,
+            },
+            {
+              spellId: '363916',
+              count: 14,
+            },
+            {
+              spellId: '358733',
+              count: 44,
+            },
+            {
+              spellId: '356995',
+              count: 251,
+            },
+            {
+              spellId: '1256581',
+              count: 92,
+            },
+            {
+              spellId: '1295247',
+              count: 1,
+            },
+            {
+              spellId: '373861',
+              count: 114,
+            },
+            {
+              spellId: '382266',
+              count: 166,
+            },
+            {
+              spellId: '370537',
+              count: 16,
+            },
+            {
+              spellId: '357214',
+              count: 4,
+            },
+            {
+              spellId: '360823',
+              count: 26,
+            },
+            {
+              spellId: '370665',
+              count: 1,
+            },
+            {
+              spellId: '361469',
+              count: 127,
+            },
+            {
+              spellId: '1289789',
+              count: 1,
+            },
+            {
+              spellId: '361195',
+              count: 0,
+            },
+            {
+              spellId: '363534',
+              count: 2,
+            },
+            {
+              spellId: '355913',
+              count: 213,
+            },
+            {
+              spellId: '374968',
+              count: 3,
+            },
+            {
+              spellId: '364342',
+              count: 4,
+            },
+          ],
+          externalBuffs: [],
+        },
+      ],
+      scope: '미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.',
+    },
+    KoreaAppliedAt: null,
   },
 };
 

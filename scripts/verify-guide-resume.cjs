@@ -58,10 +58,40 @@ for (const spec of registry) {
     assert.equal(individual.combats[0].itemLevelBracket, individual.combats[1].itemLevelBracket);
     assert(individual.durationDifference <= 0.05);
   }
+  for (const [mode, pair] of [['raid', individual], ['mythicPlus', m.logReview.mythicPlus]]) {
+    assert(pair?.matchedGearItemLevel && pair.matchedAugmentation && pair.combats.length === 2, spec.id);
+    const [a,b] = pair.combats;
+    assert(a.encounterId === b.encounterId && a.difficulty === b.difficulty, spec.id);
+    assert(a.gearItemLevel > 0 && b.gearItemLevel > 0 && Math.abs(a.gearItemLevel-b.gearItemLevel) <= 1, spec.id);
+    assert.equal(a.augmentationCount, b.augmentationCount, spec.id);
+    const durationDifference = Math.abs(a.durationMs-b.durationMs)/Math.max(a.durationMs,b.durationMs);
+    assert.equal(pair.durationDifference, durationDifference, spec.id);
+    assert(durationDifference <= 0.05, spec.id);
+    for (const c of pair.combats) assert(c.region === 'US' && c.kill && Date.parse(c.startedAt) >= Date.parse('2026-10-07T00:00:00Z') && c.casts.length, spec.id);
+    if (mode === 'mythicPlus') {
+      assert(pair.matchedKeystoneAffixes && a.keystoneLevel > 0, spec.id);
+      assert.equal(a.keystoneLevel, b.keystoneLevel, spec.id);
+      assert.deepEqual(a.affixes, b.affixes, spec.id);
+    }
+  }
+  assert.equal(m.logReview.KoreaAppliedAt, null, '공식 한국 적용 시각이 확인되기 전에는 적용 완료로 기록하지 않음');
+  for (const id of ['321377','372309','388193','391154','391387','204883']) assert(!JSON.stringify(m.heroBranches).includes(`"skillId":"${id}"`), `${spec.id}: 과거 선택 노드를 현재 수동 순서에 넣지 않음`);
 }
 assert.equal(canonicalCount, 40);
 assert.deepEqual(missingModes, []);
 const {skills} = require('../src/data/kb-skills.json');
+assert.equal(skills['343737'].category, 'passive');
+assert.equal(skills['406139'].category, 'buff');
+assert.equal(skills['1271748'].patch, '12.1');
+assert.equal(skills['204883'].patch, '11.0.2', '제거된 치유의 마법진을 현행 핵심 스킬로 분류하지 않음');
+for (const id of ['321377','372309','388193','391154','391387']) assert.equal(skills[id].patch, '12.0.5', '미확인 과거 주문을 현재 패치로 일괄 변경하지 않음');
+const {synergies} = require('../src/data/kb-synergies.json');
+for (const id of ['monk_mistweaver_celestial_conduit_revival','monk_mistweaver_enveloping_single_target_recovery','priest_holy_apotheosis_hymn','priest_holy_celestial_cooldown_windows','priest_holy_prayer_sanctify_circle','priest_holy_prayer_of_mending_aoe','priest_holy_prayer_of_mending_talent_web','SY-WARLOCK-COMMON-CURSES-FEAR-CC']) {
+  const synergy = synergies[id];
+  assert.equal(synergy.patch, '12.1');
+  assert(synergy.participants.every(p => !['321377','372309','391154','391387','204883'].includes(p)), id);
+  assert(synergy.linkedTalents.every(p => !/(기도의마법진|공명의권능|신성한회복|이루어진기원)$/.test(p)), id);
+}
 assert(!skills['453600'], '현재 에테르 조율에 과거 주문 번호를 사용하지 않음');
 assert.match(skills['1243307'].description, /^신비한 화살이 50%의 효율로 2명의 추가 대상을 공격합니다\.$/);
 assert.equal(skills['6789'].name, '필멸의 고리');

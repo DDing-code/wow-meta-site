@@ -18,6 +18,7 @@ import {
   Zap,
 } from 'lucide-react';
 import {
+  CURRENT_PATCH_LABEL,
   getAllGuideSpecs,
 } from '../data/guideRegistry.js';
 import guideManuscripts from '../data/guideManuscripts.js';
@@ -27,7 +28,7 @@ import kbSkills from '../data/kb-skills.json';
 import kbSynergies from '../data/kb-synergies.json';
 
 const allGuides = getAllGuideSpecs();
-const allSkills = Object.values(kbSkills.skills || {}).filter(skill => /^\d+$/.test(String(skill.id)));
+const allSkills = Object.values(kbSkills.skills || {}).filter(skill => /^\d+$/.test(String(skill.id)) && skill.patch === CURRENT_PATCH_LABEL);
 const allSynergies = Object.values(kbSynergies.synergies || {});
 const skillById = new Map(allSkills.map(skill => [String(skill.id), skill]));
 const manualSkills = Object.values(guideManuscripts).flatMap(manuscript => manuscript.extraSkills || []);
@@ -2716,7 +2717,7 @@ function GuideDetailPage() {
             </SectionHead>
             <SourceGrid>
               {manuscript?.sources?.map(source => (
-                <SourceBox key={`${guide.id}-${source.label}`} as="a" href={source.url} target="_blank" rel="noreferrer">
+                <SourceBox key={`${guide.id}-${source.label}-${source.url}`} as="a" href={source.url} target="_blank" rel="noreferrer">
                   <SourceTier>{source.tier}</SourceTier>
                   <SourceBody>
                     <strong>{displayGuideText(source.label)}</strong>
