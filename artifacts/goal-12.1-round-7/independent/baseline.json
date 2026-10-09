@@ -1,0 +1,808 @@
+{
+  "checkedAt": "2026-10-09T18:58:50.342Z",
+  "reviewer": "t1v",
+  "bundle": "/static/js/main.5fa3fb51.js",
+  "matchedInputs": 200,
+  "inputs": [
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\src\\data\\guideManuscripts.js",
+      "sha256": "8911b51e771c0728605c7b1467043c2b09cead68b9766c06ee0b25d66fcb92c2"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\src\\data\\kb-skills.json",
+      "sha256": "f866185bb607cd6f99fd129990dd841336bf56658d47b5fea86d197bec205492"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\src\\data\\kb-synergies.json",
+      "sha256": "8cc62c45e9bbd8ecfb89302deeb0b4a2cc92fd7befbdb24f3f55f41f20471583"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\src\\pages\\GuideDetailPage.js",
+      "sha256": "20ed2b83ac834ec1aa21b6b6a99617405121f24c407edc47a54af65c8290bb67"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\scripts\\verify-guide-resume.cjs",
+      "sha256": "ad717691aebc3abe618158289f05f1dddd599d81a98f43914652c1531aef9fce"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\scripts\\validate-guide-manuscripts.js",
+      "sha256": "13fb977d5a9d7e75a5f6fe28091b850ed32c9e3df5210122a3d7bdc1c0a49e0b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\docs\\patch-12.1-progress.md",
+      "sha256": "354a4ef3f66aa9e747703ba39da4e1d84d1ec6dd0ea137e9f6cb578a168c8284"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/01-죽음의기사/부정/Skills/역병내림.md",
+      "sha256": "02316a7096ecabea0416b948e07d3b842eaa7726c4b2e9d99867eb6b611749c2"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/01-죽음의기사/부정/Talents/역병내림.md",
+      "sha256": "f8dccb93fc326a24ca382ed888ffe9fa95f81d3a2730b9bd09b48911512a7c63"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/01-죽음의기사/부정/Synergies/질병-부패-역병내림.md",
+      "sha256": "62eefcc94ef6179dc8d9d1f5502bb6e8e9ffda989be32e8cae1fb73c1d98f0ce"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/01-죽음의기사/부정/Meta/current-build.md",
+      "sha256": "44c234d88d50f35ea0ce30f3930f9f30fd88b17028547079b53393a68ae7a7d2"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/01-죽음의기사/부정/Meta/patch-changelog.md",
+      "sha256": "f75bb19c42942daa39d050d5c3fdb1e65bb13871e650eec7c14b7d0372856701"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/07-수도사/양조/Talents/빠른한모금.md",
+      "sha256": "fa4c10891628f7439fe643302c82200cdebf14463878679a0de151b9842357df"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/07-수도사/양조/Talents/허초.md",
+      "sha256": "c400259f7d5953272b4576ee43cb4162253d8f91ed0250f4918c0039ea488174"
+    },
+    {
+      "file": "C:/wowmeta/kb/08-직업별-Knowledge-Base/07-수도사/양조/Meta/patch-changelog.md",
+      "sha256": "215d2a6996fb8b56670f8dcf88c58e1777600fa6b215c7f202d017ca1eb13d87"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\방어\\Meta\\guide-12.1.json",
+      "sha256": "6988cf63e16fd8adaf3e6df6a0a866fbcc9e0212d6b6736c3dadeb50df31e465"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Meta\\guide-12.1.json",
+      "sha256": "d7e1f46af41eae57b0fe59668bdc357a0c21dc6236eccc9220063cd21b4c5a47"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+      "sha256": "726f73af1970cd0523928b432baf1be67a28df615c34bf7249f1f8bd421c627f"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Meta\\guide-12.1.json",
+      "sha256": "0ca937028b5efa99f60ec818266bd2b5508b8f1d711e03cbc83748853019a757"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Meta\\guide-12.1.json",
+      "sha256": "a35aa52043d564bc2f2a147ff1d2efb7d84e04731e64875bc5741b8161ec3f98"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+      "sha256": "5a7e0bcb9b4587f43a7cfa22e2b63e7e5df224a78a15462adc08b3cfed57cdbd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\무기\\Meta\\guide-12.1.json",
+      "sha256": "510b8cbdf0d48d5bb27001b11a0f8f2b3a22a40bb38a319657690b8e5db20fe7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\분노\\Meta\\guide-12.1.json",
+      "sha256": "d9210e38ee3c18d3ee2e70eb0664c794a0d9b4ce25c2777e1ef7253f0d4e39cd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Meta\\guide-12.1.json",
+      "sha256": "c313cb68f1253c3877c7b8c5ddcbd49dc21dcd6c9a5367bb1db478f63413aa0a"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\암살\\Meta\\guide-12.1.json",
+      "sha256": "9f0ff62e247988b4e235e0cbaf40f9b1af0a6540741d44b0ab80f22329d7d19d"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\무법\\Meta\\guide-12.1.json",
+      "sha256": "61d443e7adcea68889da641951fca45b494906548622ceda25213d31bd5b156b"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Meta\\guide-12.1.json",
+      "sha256": "3cb8af9aca4bbc0586fcdff0ce92dcf310160d0be89465c4f0a447bb1ceff461"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+      "sha256": "8667252403790696bd20ef585197a8b940e48e14f999033cc5f47b6e0751122d"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+      "sha256": "1a64d4b48f8b11f43280b684c6ebd7d0765b3d04c66fc761ac4a06d1384180fd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Meta\\guide-12.1.json",
+      "sha256": "d03490fef50fd366a1ebedd40841e0589b7bcbde9966b9bcba44da4581e2c486"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Meta\\guide-12.1.json",
+      "sha256": "fedbce3869b62e0af1c177d3556dfc35a5eb70856a9bbf84216928c518b6ce3c"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+      "sha256": "534b07ec41f9656f03afcfe0d20103e598e4a339e7e4dad5948e95a6fa83c93c"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Meta\\guide-12.1.json",
+      "sha256": "6d25ff66b2c7429b5d1ba310fcff174e39b12cb30b77182c2ef76160208454e6"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+      "sha256": "2880ee3320a8ff44b54aa742ce32926e41aec7735b1cc427d368c184f2d78b2d"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+      "sha256": "80ec30a2e12b04573cb700e745f1e918e79f6a027b9ccde3d773293e4816f788"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+      "sha256": "cdd730956a32aeaf42030146df20db53a5950cdab0574fabc5d9e386e9dd7321"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Meta\\guide-12.1.json",
+      "sha256": "018dc7b0606f3d32f3d3c657562992b8c593dd8b3fbc0da4aad60f8616731d06"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+      "sha256": "cdc66c79e7e51f5bfc01375e2e22b99f8416851d2e92cb93dfaa08f7caf4fd58"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Meta\\guide-12.1.json",
+      "sha256": "06372b8a957289715d520fbf5067464c950a5b888b1c4d2e130c2db9a9b58c2a"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Meta\\guide-12.1.json",
+      "sha256": "012bb9793540a8bcf3359661392c4d234a66d68554c6aad4f4120fd4c0c851f7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Meta\\guide-12.1.json",
+      "sha256": "3a6fe360dfe4e949a86de46ff9146b431d75cbda1f7e4a0f9cc0e0561724b8a5"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Meta\\guide-12.1.json",
+      "sha256": "e5cd111d948763e946d28d05e0e15447fc38f82153b8049963b147ec0ccb0732"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Meta\\guide-12.1.json",
+      "sha256": "b8a11a77851ff5fe83d7393707b8419746a20f6f6af4ab52b61446401edbdd02"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Meta\\guide-12.1.json",
+      "sha256": "996f6dcf96d7b0a98e3d842dea1d825b7659fdf99bacde992980208c4f77ecc7"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+      "sha256": "44aac293f9843fe2b7158219c5947520652c3e5af50445c35ee1d9b3fbe39044"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Meta\\guide-12.1.json",
+      "sha256": "41acc4fed85d2a706510f9dd94d22d4f1a0ea74e6a726f386dd31a40cca19bf3"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Meta\\guide-12.1.json",
+      "sha256": "8077344bd64cfc7b6f6fcb684ae9acdc6901d14571e9b07121e5db2a939bc0f5"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Meta\\guide-12.1.json",
+      "sha256": "ce5f30079cdc40ac631ae02fa7cc142687e386a04229b9bce1588ae508f344cd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Meta\\guide-12.1.json",
+      "sha256": "828509f93203fae53febe130af3bf7f29ab07d3b0c441653fe40dabe25309a56"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\수양\\Meta\\guide-12.1.json",
+      "sha256": "e05728de2da8fb60f4cc131635bb9e6727aa3c29870ad557bad0059b55638857"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Meta\\guide-12.1.json",
+      "sha256": "32f146fc8d301447f38c4f834773b655e02015140fbd0e050b9b290c2615d58e"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Meta\\guide-12.1.json",
+      "sha256": "c5ca1c3c8ed931667c9f94e1ff2fadf1daef1d716795890798c0c1720dba58dd"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Meta\\guide-12.1.json",
+      "sha256": "f7160f92d58fdd626ffd5221000a3db76e69a3ab728f92864078884316fac0db"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Meta\\guide-12.1.json",
+      "sha256": "c921c869aed7af35cd0c6a6f20e41b826dca2b423e1e8105b42b05d0d75fb2f2"
+    },
+    {
+      "file": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Meta\\guide-12.1.json",
+      "sha256": "385ca62f21ea996b7bb535a95f13817987c5367cde043a75cae002b18629dc95"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\author-source-review.json",
+      "sha256": "3e9ea1252d5724b4f207bad4f0c989284b967b8f3edb662dc0d2af8d2ca38b88"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\conflicting-source-review.json",
+      "sha256": "794f5dce6635d1b48f078e0f5e2cdb6f51f81d63f47855713008468d653ab967"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\hero-review.json",
+      "sha256": "88c6d40584bf3a52c4f8cd19f6ea431e57edb99d1bcf96298ee199eae9806c4c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats.json",
+      "sha256": "bc91d23c62dd30fad7d86a63c46cd01ca3fbd1352eeaac81365997747e2c2981"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-blood-mythicPlus-c18XNVhbYQZdA9zr-66.json",
+      "sha256": "d41553e2cefe2a818ce82a198cd478ac4070305bf1114e35ae8cf6724ffcda64"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-blood-raid-1HvDRa3bLCJX9kf8-30.json",
+      "sha256": "4f9b5751aa95358a20f4477594097b201d8cc1f942f7f49f1195532852b72d37"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-frost-mythicPlus-Krd839jCA17xMtbg-22.json",
+      "sha256": "5248ab810aece25722311eb49d35d2b5b458061515af53f42090ed6e4210986a"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-frost-raid-nT6BYNKQZDJgLqHk-1.json",
+      "sha256": "2cd55a51a05579d9d18828c1209befea8edc2ace96499a4240c520ff8d1b677e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-unholy-mythicPlus-KfGRMgdJCm4Fz6YW-4.json",
+      "sha256": "edf7bbcf83b5111440a848982ce6c8d71a1384f6870359b27936e87fffb5509c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\deathknight-unholy-raid-2MYfyHTxbcW3LtrG-2.json",
+      "sha256": "27da76a0833881361aceb0c8afde3cb2b6c9fbc6a9bc1cd60984cb63b00083e3"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-devourer-mythicPlus-VyzK3vjtCTbWkRG8-22.json",
+      "sha256": "c2f87964a26c92f994c59abba61ee26339c5e86ecf5009f4f3ee4fdbb7736bd1"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-devourer-raid-CbBkR1Mgr9TW8tNx-5.json",
+      "sha256": "735b0e63e521b3364147f6ca35ae1f63b848fd234d049e4b2425c11d5961e17c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-devourer-raid-P7rTCJ3jVpXxhqF9-15.json",
+      "sha256": "3f44284d15bd1560138da9e76b3626b2996b1db2c39a5a07f807092cfa32f16c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-havoc-mythicPlus-Jbaf7qyN4kRBTXtj-24.json",
+      "sha256": "f432bb81effe790b206f310b5d6414b373819bbea8f05ce812df6c7e65a121f1"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-havoc-mythicPlus-vtaGgfbVXFJ2pB8y-270.json",
+      "sha256": "619866e93a8debac6512b5a04b05c20de90548b45f7eb6e405e3be8be24dfed9"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-havoc-raid-KqdQv9RG2x6BgLmb-4.json",
+      "sha256": "205ec15be454400f9c70698c890a2ca0a2a638c33a8909a44ddab5741f256a05"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-vengeance-mythicPlus-Mc9HtgBywFq4jVQL-97.json",
+      "sha256": "a1dab23605055be96f62c040869595623fdac3a5c6ab49e3c977a9af69a847fe"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\demonhunter-vengeance-raid-AdNrjY1Hvzg7yP9f-107.json",
+      "sha256": "61c27273577888d629e022dd8a37de8265dddd1324dc4de794cafb3d16294f34"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-balance-mythicPlus-KhJ3tmCW61PrNwZM-32.json",
+      "sha256": "f0135ad7b531872cf52d274825cb6e1817b3064625bccf7bb7e06e8e0debd480"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-balance-raid-jmybgkna9hG261wC-4.json",
+      "sha256": "a5f4c681ed12fa83c372971e39f49e019b3558e118017995484ce609ba69e9d6"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-feral-mythicPlus-QvtP2jfDWGwyrqJC-3.json",
+      "sha256": "0c1f4d150198d147aa4ac40de2836ef605dccd64c46fbf7c9867147fb84beb17"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-feral-raid-9FjmpDAtQT3vM4qg-3.json",
+      "sha256": "abe83f88a11acbe7e8c1575ea4b497dfb27b213bef6f4ddf1043f59e111bb69e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-guardian-mythicPlus-fvnLwtKDZry7GHma-10.json",
+      "sha256": "fbeb06bc2fd2b5ce3393bb4bfcfbf43d60d7b035975e542e6bbe793db24c6cff"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-guardian-raid-W8YTNk2m6fwFya1q-3.json",
+      "sha256": "b2841dd51cf069adcb603975ecff572e455bfa88cd0457d7fbd741f4ca92f62c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-restoration-mythicPlus-kKFmcy69MfRphtwx-1.json",
+      "sha256": "0c1cfb5079068e2d02425a7829620f38cbb98de4b32001aef32bf930d43eb6c8"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\druid-restoration-raid-qZj1wWz7g9D2QyMP-68.json",
+      "sha256": "0d2fc556c38d4fc9ac2aab39e9b1a7f035c408d62c99fdcc5d7795f1e194d922"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-augmentation-mythicPlus-HKJ34fxhqGW2jNvt-7.json",
+      "sha256": "c80f0b52d345254c51bc5dbd3612a1938cffbe72df927583a1ff12e40dc29b71"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-augmentation-mythicPlus-x39gLdjF7NCXPnhK-1.json",
+      "sha256": "081ba6b3e4d238ef4b438d9813caa5ddb43728b4131b09cc47b72d7e5df293b9"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-augmentation-raid-jmybgkna9hG261wC-4.json",
+      "sha256": "9c28030f6ee482bf666e49584e8f1a69af71f594d73a9d2390560877e011afa7"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-devastation-mythicPlus-Cc7x8rDmGVqyQfdp-3.json",
+      "sha256": "eaea3e074442e74d6e48a516522bb81281844122cc9c76e9e16f8941edfb9f9d"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-devastation-raid-qMFYjXrnBb6C9tkc-5.json",
+      "sha256": "f4dc1d35f45abbf0e88015ddb72d7ce02c32ccff289108e696bd7ea680617dd8"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-preservation-mythicPlus-9W7avrbNqgc6Rf3D-68.json",
+      "sha256": "be89641ca7f8f3f8147ef8e508697e3e46bbc093cb23057d91fd345c79c635aa"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\evoker-preservation-raid-QABJjGZfHq8nb21h-5.json",
+      "sha256": "420abee9f377b67667f0adcda7664b259811411a4ce5cb8ac86195c3e5a14648"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-beastmastery-mythicPlus-2RhBNDpwK8rLk4YF-17.json",
+      "sha256": "f09d47d87863f98df35a41887bd2e4648accc0f83d510828fca059df1ecf910b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-beastmastery-raid-1HvDRa3bLCJX9kf8-30.json",
+      "sha256": "756b475fb1a4ebf32f7f8fa4136dff6863aadb222832ba024093013614d2088b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-marksmanship-mythicPlus-wdY8bP9CKmz1jR6q-23.json",
+      "sha256": "d8579517c8623729bed2ec98a8b082d9410a8bed69d51af92745a213698c4508"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-marksmanship-raid-NmM16vWQytaDbp48-76.json",
+      "sha256": "354f996c9a944471133b22eca7d84f060631222266a67ab17292a183293ac217"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-survival-mythicPlus-Cc7x8rDmGVqyQfdp-4.json",
+      "sha256": "cdb0fbc5b52500d519554f016d96be893d4f421404f3974d7ee9304cfe450417"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-survival-mythicPlus-xzmPjTYFf8rcqdBK-2.json",
+      "sha256": "c405a326e38f8a48ce9ef60c79039c7a7d7bc2fa93efcbe7a250d3de822a6755"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\hunter-survival-raid-9wXrvfCjtGPnhBTM-6.json",
+      "sha256": "cac84b019ceca311970eba4b5339c163f6a98f974d7592dcb682427134f9ee71"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-arcane-mythicPlus-Jbaf7qyN4kRBTXtj-24.json",
+      "sha256": "2600fd588f7ce15111a25a62bb4646e207c6f3b4f66e402d463e0307b741c43a"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-arcane-raid-JrC6a1WHZvfqGVMT-4.json",
+      "sha256": "dc459f50218d4dcb44048e4d7e48a5833ac3cd728ee46c327c592c49d624b001"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-fire-mythicPlus-qV3fBdaHTrkMpA19-2.json",
+      "sha256": "c2b41d51cc22cc068f5d9dc57e742550bcb33a30509193d9f788947f4d7bb79b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-fire-raid-7hDYCtfaK4mMqQcB-3.json",
+      "sha256": "1e4ad6a9d5239c848db2e4fc2cf36ad5963a161e00afcabd819556adff19e503"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-frost-mythicPlus-1HWXNjdrR8w6TZyY-2.json",
+      "sha256": "8873ca201efc90925e96c72a7458a790e0eca0491503e258f259144c3a2dd08b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-frost-mythicPlus-fqMXF1wRaZd6N8r4-1.json",
+      "sha256": "cb319e5f2a10a2bcfd7bfc008c622744eaeb3a85df942e497e49807a10d04121"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\mage-frost-raid-PNzCbgJ9amhdxwZH-42.json",
+      "sha256": "4a9fbe3874953eb013253b4bb7b3fe0d276d186588bbd0c8404eb30b2a10de63"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-brewmaster-mythicPlus-bYhg2GPtqBKFCwRx-9.json",
+      "sha256": "f89d97e03f09bc09cc5dcefa10841f37747571438bb76c3eb218f262b2aca0fd"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-brewmaster-mythicPlus-tPbZp8Md1qafgwFx-78.json",
+      "sha256": "e9f33429d416182286723d79ab279315c3314d2c243cfd4777edd43f21abe1bc"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-brewmaster-raid-JpvbDWkq3HyRwa7Q-1.json",
+      "sha256": "d2b02ae39d2a1ecda20bfa2b2922990ee6b230bb91819a59c1acdbf515bfab9c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-brewmaster-raid-qZj1wWz7g9D2QyMP-68.json",
+      "sha256": "0aa6c501e564f78ec22933297363d9bdee5bf8d6829c01ca078d0976aa0cb728"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-mistweaver-mythicPlus-qV3fBdaHTrkMpA19-2.json",
+      "sha256": "bb5463eb5f03bbe7c773da344f65d95915680cb4cb07ed4ae517c6de8b70f949"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-mistweaver-raid-9p37zYayxfrLknGj-4.json",
+      "sha256": "4ca8cbf8937b4f91a438d9ce74d596150043219c8b337710b0c45dff2aae172f"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-windwalker-mythicPlus-w3xkNCAYLXdhrTW8-2.json",
+      "sha256": "5f30e2ef3e73630b161350d554b3d21140377fcb781ee85a9a2b2895bc65b542"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-windwalker-raid-1HvDRa3bLCJX9kf8-30.json",
+      "sha256": "48bbad6b739e03e41ceb5b5617d9038e3f8d1ea997e87c0e28f7e9901a4daa8f"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\monk-windwalker-raid-L2pWTJwPmGM43rhz-5.json",
+      "sha256": "c246af4f6b55fa4e3cca24528c6398a2f3931530a29c9988ff8ec22f5f0f0555"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-holy-mythicPlus-Jbaf7qyN4kRBTXtj-24.json",
+      "sha256": "d4c7d1ba5c8345e321c02c413f0ec0cb0a271e058fc92367e345a80ab639094b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-holy-mythicPlus-Mc9HtgBywFq4jVQL-97.json",
+      "sha256": "3f98e0bf2cf8e55433320dfba10ee431fb0b476f0c0768dc86925600e3e0535a"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-holy-raid-apwfJmjbBA3qF9PQ-1.json",
+      "sha256": "bdb76e6b7529b0200473309ceb64dcbb4dcc56fdfb40f082d415f72c7dac0370"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-protection-mythicPlus-1K6CnGxgjy9Tvq3P-3.json",
+      "sha256": "6cd05e1b55ce6f156806f2accb34b3400e5712b321d37165fc174a4fe8851ed4"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-protection-mythicPlus-pWxFcKdByAHbh4D2-12.json",
+      "sha256": "c842060a32ea11aa8a79b1e24e922c0b62311232a8d028d50926871ac4ff3076"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-protection-raid-YCFva9PhGDT2kQjq-1.json",
+      "sha256": "38c8ee45c122cf81b65ad56d6d1790374be7f52363139017ea7ca97117d12121"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-retribution-mythicPlus-ya7kqb6DZCfYRLx2-16.json",
+      "sha256": "16bd3571ab8fbcfda2c0281c2f26d7b275beb031cb4a74e7a5a7bf50a9aa5ba3"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\paladin-retribution-raid-P7rTCJ3jVpXxhqF9-15.json",
+      "sha256": "75112ddee8039c203fed1ce24028d896551096752aeb4934854edbfe7babad99"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-discipline-mythicPlus-G8CQPz2hKVJpNcLb-2.json",
+      "sha256": "309cac02a4efdcf4480f62d34ef12646a45d96bd5da47cffc35be745b12a83f1"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-discipline-mythicPlus-nGfmkLXKjgZANvwp-68.json",
+      "sha256": "b4b761080e93b4b34202db44395f96a2a911e60138d17ae32ed02f3159c01a51"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-discipline-raid-FCzbJRBWADdPYgNf-1.json",
+      "sha256": "cf6909934e82a134ea72844525b74a8596d3855c36b95c88accca23b629d83db"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-discipline-raid-KcQpkBgyW2LrC4xX-12.json",
+      "sha256": "1707c654fb613df56a250140de82b8da606428db8ab675fd977abe5df639e50d"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-holy-mythicPlus-1ZNntR3aPMd6ycD8-12.json",
+      "sha256": "fa8595a621b0fe85fa55ea16c2fea689f6b26d0bd47e54fd2fe5742ae946c8e5"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-holy-raid-qMFYjXrnBb6C9tkc-5.json",
+      "sha256": "e92ec265551927b9041ac93c29822d069f9284a4e8ba8e37e838bb57f3b1aafa"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-shadow-mythicPlus-MCrjWFaxDtYpPGXv-54.json",
+      "sha256": "a2880e3245588ebac0169eeb31175b3d1d21c852c4132b5fc25674106509e158"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-shadow-mythicPlus-za7AQ8YrpRytf4wZ-2.json",
+      "sha256": "3fab6478d4621a635855ad5e83adfe0973ecdb53125d76e2112c014c456f82cf"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\priest-shadow-raid-29qWbfKdYvXZnw3p-4.json",
+      "sha256": "caefb0a137b1e8d01090c4218ddef44efcacff636093a6606ab38e7d4925099f"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-assassination-mythicPlus-c18XNVhbYQZdA9zr-66.json",
+      "sha256": "0ab23dbaa48717e0634e6c93b6eed992b10df000f1a7a65ef7435c6540d12385"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-assassination-mythicPlus-nmJTRrGhtWvbD9YC-12.json",
+      "sha256": "a0e27624cf8eebe1dc689f60790b202f7d6807e59218294eec7644ecae4a29ab"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-assassination-raid-1HvDRa3bLCJX9kf8-30.json",
+      "sha256": "3b8295d3bccadfc7bb34ecd66387081fab4d8665144557df05bbf718893c6bfa"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-outlaw-mythicPlus-czvg8jrHWTdakJ9q-41.json",
+      "sha256": "c3382884c2052925c4e932ded807f07bfed226798a9ea3326912cf5be6ce9faa"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-outlaw-raid-dHzMyVZXDTGJAbQv-3.json",
+      "sha256": "ecde092e90b8b9326a404ea349a361d13a35d96d7952664ec2e87ba047b22ca9"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-subtlety-mythicPlus-kNnfxwGHPcqzCYVR-85.json",
+      "sha256": "e80a07e19d077338e27e009e60f8224f9180e8fe4bbca8f949d68dde19a51d41"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-subtlety-mythicPlus-YHghXJ3A6aRLfmd4-53.json",
+      "sha256": "c6916f82e375732dd1f5c14e878772290d9f393e642ea3417b340d776fd2ec5a"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\rogue-subtlety-raid-KcQpkBgyW2LrC4xX-8.json",
+      "sha256": "edf3787d8636b3451364c8d09c5237fffa168920636958d0b96af877e81374b4"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-elemental-mythicPlus-c18XNVhbYQZdA9zr-66.json",
+      "sha256": "ef7ed0e9d199b49f89e146abd086ae6203629c2e40c5b768122ae86814649760"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-elemental-raid-NmM16vWQytaDbp48-76.json",
+      "sha256": "1c06d0475213c538f2b58415cd2da53a68eba0f1c90c8e29fff68085fd0b0f9e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-enhancement-mythicPlus-ZtFjBVLbymY97xrM-18.json",
+      "sha256": "f9cb72460db185df164ed901d842f9c9cc65aa2b1fdf697bb1794836869a3c13"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-enhancement-raid-HXqQKY6tjDvPGgTW-50.json",
+      "sha256": "4783934cfa2f374499c4de45da3c3fee0c5b40a569d0ab07b8aad56e1dcb51fb"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-restoration-mythicPlus-n7xTCqt1haDHZ8bG-58.json",
+      "sha256": "e949b3ce58b1cbfaf7c4d2fbfe94adb5aeff8223f1a6d26df31d7ae7ec137c69"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\shaman-restoration-raid-9wXrvfCjtGPnhBTM-6.json",
+      "sha256": "c16f23c97978bfeb311e7939e664bd409e72f4e6ebf261145fcca553974fccad"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-affliction-mythicPlus-w3aykH9gxBGqLnhK-1.json",
+      "sha256": "653e07783b605442f08531c0ed3f4ed04ecaf242560dab53f776517c43a43410"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-affliction-raid-PgWDGJBqQXz64w3H-36.json",
+      "sha256": "fa623b075bc47827fb943c20d4a61d6b7b73b0b7f6b449973b27752363f6faf6"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-demonology-mythicPlus-hjyGQqAd97wPWbvD-3.json",
+      "sha256": "df460072ebf7d6bcb20f32052c9ad338f76dcdb6d40faa8da1b370d1a854688d"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-demonology-raid-KqdQv9RG2x6BgLmb-4.json",
+      "sha256": "ad8df6290c3f1d4b3d47c79706fb3e6870c3a59b0e7bbe5d8506848950b471b6"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-destruction-mythicPlus-23ACKWbBNxqZMtXp-6.json",
+      "sha256": "96c1eb84d73f845e14eba55a758b3a1c8a48226f259201caf77d61881c2da716"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-destruction-mythicPlus-YqpF7xbXcTjVR2gz-1.json",
+      "sha256": "b419bec158d857e3dde7a0f879d5ad177239dbe3dad48a43173852cce9331381"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warlock-destruction-raid-d9BHAyqvkV2jcLNa-1.json",
+      "sha256": "639b4cb846faefb445da51920647607823c0ee1e84ac70ad339bf815e6095393"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-arms-mythicPlus-jMT4hFkA8cRbNnCY-16.json",
+      "sha256": "287bdfc52838644992c41d331a19cd6f6198f703a6f41f5ead34d1d978adb4cf"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-arms-raid-KqdQv9RG2x6BgLmb-4.json",
+      "sha256": "e6f1a098c7fac79a7c615c82ef4cc6163ac429694e94b417abafedab5b5e16ba"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-fury-mythicPlus-qV3fBdaHTrkMpA19-2.json",
+      "sha256": "07938fd99763591ac31332ea75801f7c3b83ba7e6f56477f482326012dd005d1"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-fury-raid-Lfg6VNy9aGP1JFQB-45.json",
+      "sha256": "33f65daf4b75c85edbc51c95f22f7f77fc001b4911926c4b4b611694b59439ad"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-protection-mythicPlus-VyzK3vjtCTbWkRG8-22.json",
+      "sha256": "6d1fcb8703f35d1264c8de10e0ee5d7e3f6d69680f72d3ef07a7f0fe03a40b12"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-combats\\warrior-protection-raid-NmM16vWQytaDbp48-76.json",
+      "sha256": "3891a3de032ca3f574508a0280d1a07bcb918060f4979b4bc52427316728b852"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\deathknight-blood.json",
+      "sha256": "8f8ea90e87842f1bdf908121e2ccf8af483249ac769dc25adf08de4d42dbf7b3"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\deathknight-frost.json",
+      "sha256": "af9d5c12185a6ea7f662f59e8e4df2e10fa5baad781c878201f1ce86a7426a0e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\deathknight-unholy.json",
+      "sha256": "75c1ce7c5b4ba8575c660bcff2b2aaa01e3c6bacb399b0dae0d5458cbb046b70"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\demonhunter-devourer.json",
+      "sha256": "681e205149fb3fa0fc644dd7eba61a9b925782a0980a4814c13d73042867fc81"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\demonhunter-havoc.json",
+      "sha256": "74cc7cef21db532dd00780ac2eae3c4689f489d54dcb8418d1da6057748fbc79"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\demonhunter-vengeance.json",
+      "sha256": "2a2826e497e462696b580d21cd9fc788f9b4be2b4d8a846129efb271b621a3c3"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\druid-balance.json",
+      "sha256": "a33fc7ed55faf84d6d949fe4ab47e5fa9382fc20f80582cce0ee48b4ac4c9086"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\druid-feral-raid-3470.json",
+      "sha256": "170aba0f487416d67192e8d98063f36170aae0ea161370624ad301c1f4f7629a"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\druid-feral.json",
+      "sha256": "5a4b29738c688816327cf1c532c374895b164a0a2a689780f0173ffcd2a64737"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\druid-guardian.json",
+      "sha256": "a33a745259a444f0391c963166551bf7815f907cb2d9826d96df007b2e349202"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\druid-restoration.json",
+      "sha256": "7158079515c4f54f59b4423b63fbf8419be81543907140a52b8f8b59e7bbf1a5"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\evoker-augmentation.json",
+      "sha256": "2faaaa4d3514b4dd5be96686c86ceab46deb7b62129221a34798eea980fb23ec"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\evoker-devastation.json",
+      "sha256": "a854d5274ee8bbb2e478411ad8a5b2ab3fbd600ddbb884b744b0d5412c2060f3"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\evoker-preservation.json",
+      "sha256": "7d927ecf8df5fbbfcd993008e67528f8a889f6f831311ff45f3fcbbc6b69c040"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\hunter-beastmastery.json",
+      "sha256": "62e61fd1b46fad4ff152125894fdf9a97c4f9d53282b52d672f7358a44314cd4"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\hunter-marksmanship.json",
+      "sha256": "e73ab5a182353a2c98027c3b6ad4a9433fc6c6813569348d409be947dd72e467"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\hunter-survival.json",
+      "sha256": "132fbf7a43e90dc0729bd5088b038624cf9b018d449556fb2c5fd4e3215dcdc9"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\mage-arcane.json",
+      "sha256": "806e2e653ce6cfaea40147a66324e74abb25b27893f7e2fa8455f0308b8432ec"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\mage-fire-raid-3470.json",
+      "sha256": "3b9401634d7c9497214a2cc0d6eb2e7d0563b232fc1a31e0a364bf9ea7c8341b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\mage-fire.json",
+      "sha256": "d47e41c9c36c578143e4a4b9295eb14d55d5de6d075462a8317b62bfadd79c3b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\mage-frost.json",
+      "sha256": "383ab55ffa8bad4e3bb39ac6beb27db8ec35a7bede56f4c0fdac35839db5fe9c"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\monk-brewmaster.json",
+      "sha256": "2c23b7134a6d57c88cae0908e335a9ff860843988fdef2292163902f32387944"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\monk-mistweaver-mythicPlus-12993.json",
+      "sha256": "6a68adf004ad140e435d94c414ea19f3b49280ec435f4ebc9046e95230fef658"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\monk-mistweaver.json",
+      "sha256": "09284b808221b9b625c31231a8c3d3b804a66929278b8418bb7ded3d49d0c582"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\monk-windwalker.json",
+      "sha256": "ba6381ccb9951ac302d4a137c84e8f715f0a1616f3632a2f4f5a284199df814b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\paladin-holy.json",
+      "sha256": "7c507a35ed729b7a2e57006d8f3002b91b92d08fb68ea2e04fb4b9667b18c89f"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\paladin-protection.json",
+      "sha256": "f72517e7b99eca7be2d06d6fe8eb61a361065ac99e72653eb360b35070360fca"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\paladin-retribution.json",
+      "sha256": "f3eed4a0c13622d370bff0b2e0f6409d9b5583c136003d67f494d9d97b0a7637"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\priest-discipline-raid-3470.json",
+      "sha256": "fedd1b50a1cb671c56a85e52791c1e0ce38117646674e9aeb6a0cf6654ae2463"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\priest-discipline.json",
+      "sha256": "de78e73911d20af24e0f72e05f75562ed63f60a223b07ce64868f634e82be97b"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\priest-holy.json",
+      "sha256": "83b3bc9cd5e2b265a90026e438393ec3ac595c97306edf4b9c26e130f174d68e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\priest-shadow.json",
+      "sha256": "4c8307cca1ca67f9b15a58be33f022834e4171e137ea413c524c3fe902df0943"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\rogue-assassination.json",
+      "sha256": "ee49bbf9aa4b101e668cbbc2bb200775c8adcf7d853599d3adac7b474c2d2bb8"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\rogue-outlaw.json",
+      "sha256": "dd34dfb34ff306071d228a7ead7e70c1e82296736ccbddca4bd21bfe761154f8"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\rogue-subtlety.json",
+      "sha256": "ee0bde6d898bcfdc643807e5ef19033c41fbb50c5048c060e44123a1bbf8dc82"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\shaman-elemental.json",
+      "sha256": "40045b2e2ad06028bdd3a9e02dc8dbb850a2210df5f107f3b0fca394d2e55ab5"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\shaman-enhancement.json",
+      "sha256": "1ec0fc1407d756474c5c81df7abef3f600ceeea9b59c5457360fc131546d3367"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\shaman-restoration.json",
+      "sha256": "368101556881e1b18e11555b03c593cfdd25a1b58846db0c56f77cc3ea0cd625"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warlock-affliction.json",
+      "sha256": "0a1f9a7de2bf4d4e238327089f3fda4ab2127db15ac191ef9e493f1b5cafacb2"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warlock-demonology.json",
+      "sha256": "980369f15ec949c6111b7cc7a5bd162507f1391fec2a7410916779f4f4d673cd"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warlock-destruction.json",
+      "sha256": "aaef483173f00449d9e3fcdbeb61514b5c4d101b439fcff9aeb9f4219421b36e"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warrior-arms.json",
+      "sha256": "17a245aa670bba270365c846ed67c8a134903d049e3ed82c0652780de7207928"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warrior-fury-raid-3470.json",
+      "sha256": "9f7cb5b0cc6d8fa59dbb6608a52708a91ba349a2e217cacff39b5f3b95431ae1"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warrior-fury.json",
+      "sha256": "d7c891426451a4c914dd1b53642bebea3562067f19a063e7d1c8df48e3894f52"
+    },
+    {
+      "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\korea-rankings\\warrior-protection.json",
+      "sha256": "3221fa0dfcbcc00a32b9f5f02ce48efe4c71d7d82845508d58effc48ab875056"
+    }
+  ]
+}

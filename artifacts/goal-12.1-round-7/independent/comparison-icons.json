@@ -1,0 +1,30 @@
+{
+  "images": [
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/inv12_apextalent_paladin_gloryofthevanguard.jpg",
+      "loaded": true
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/paladin_retribution.jpg",
+      "loaded": true
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_hammeroftherighteous.jpg",
+      "loaded": true
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holynova.jpg",
+      "loaded": true
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_avenginewrath.jpg",
+      "loaded": true
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_shieldofthetemplar.jpg",
+      "loaded": true
+    }
+  ],
+  "overflow": false,
+  "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\local-paladin-protection-390-comparison-icons.png"
+}

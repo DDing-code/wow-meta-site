@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-09T19:06:15.360Z",
+  "reviewer": "t1v",
+  "independent": true,
+  "baselineCommit": "a7702c01",
+  "contentCommit": "df833379",
+  "baselineSourceHashesMatched": 200,
+  "visualScope": {
+    "guides": 40,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "contactSheets": 45,
+    "regions": 360,
+    "baselineBundle": "/static/js/main.5fa3fb51.js"
+  },
+  "finding": {
+    "problem": "사이트의 Git 반영 날짜와 최신 업데이트 설명이 10월 8일 상태로 남아 있었다.",
+    "fix": "10월 10일 내용 커밋 df833379의 변경 기록 2개를 추가했다. 해결된 툴팁 3건과 남은 24개 분기를 구분하고 완료 4·부분 36을 유지했다.",
+    "layout": "추가 배치 결함을 발견하지 못했다. 비교 캡처의 빈 아이콘은 현재 화면에서 정상 로딩을 확인했다."
+  },
+  "changedFiles": [
+    {
+      "file": "src/data/guideUpdates.js",
+      "sha256": "0d86277c7a8d1198d83a19ee58ffc5abda0222c60497c84213312fb3bf41ee68"
+    },
+    {
+      "file": "src/data/kb-skills.json",
+      "sha256": "cbbc90fa7eca91bfba8ebc528ab0f93d49e300c7d8226545638207ddf2e677a2"
+    },
+    {
+      "file": "src/data/kb-synergies.json",
+      "sha256": "d849c73052d5a5e839ed3266e88dcc376839be78afde8d9dbcf1c9acc9b74ad1"
+    }
+  ],
+  "build": {
+    "checkedAt": "2026-10-09T19:00:10.902Z",
+    "bundle": "/static/js/main.a12e70e6.js",
+    "sha256": "f02f26ef206deba6910737301439a86e48d91f5a623d3f9c97fafef07d5f5090",
+    "contentCommit": "df833379",
+    "independent": true
+  },
+  "localChecks": {
+    "guides": 7,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "routes": 21,
+    "heroModes": 126,
+    "talentDisclosures": 63,
+    "metadataRoutes": 9,
+    "base": "http://127.0.0.1:4178"
+  },
+  "inspectedCurrentScreenshots": [
+    {
+      "file": "local-release-priest-holy-320-flow.png",
+      "sha256": "3c39764732badd38daac03f2cdb15d5a587df5349779bd81d5fa98d4340b386e"
+    },
+    {
+      "file": "local-release-deathknight-unholy-390-comparison.png",
+      "sha256": "50e339caf7b9d101ddf52134affa28b180f5503384c01ab09304ec1828447e33"
+    },
+    {
+      "file": "local-release-hunter-marksmanship-1440-talents.png",
+      "sha256": "b658e72251ecaac6db4506b1fa4c64275e1334f102748c7909b818eea98415e2"
+    },
+    {
+      "file": "local-news-320-metadata.png",
+      "sha256": "e5a6faa367aca0cb5b0352ad747ab44193dc43f8f7268e36b991c94a90a462e4"
+    },
+    {
+      "file": "local-news-1440-metadata.png",
+      "sha256": "ffe7b981af9102f6af1d39a5a84af971e70d940d8bdc7f4c8d8289e4bfc8cbee"
+    },
+    {
+      "file": "local-guide-deathknight-unholy-390-metadata.png",
+      "sha256": "e3b31acd52f9e2e2c46fbc9cb2de7ff377f6132fe4204f9e8d8f074e6b5e6845"
+    },
+    {
+      "file": "local-paladin-protection-390-comparison-icons.png",
+      "sha256": "f77726ec7fae11ac4b2b795d03b088af7d993ca12e8ef1ab8a29caf4cdbee36c"
+    },
+    {
+      "file": "local-guide-320-metadata.png",
+      "sha256": "1ca3f3434cc5ec4a64b30bfdf63d5d91ad8d06813576d5e28ace0a17d3647f3a"
+    },
+    {
+      "file": "local-guide-1440-metadata.png",
+      "sha256": "bb6d312889bdbeaf18674b4ad761b6dc52032e62a4d45694103fab16a81f379e"
+    }
+  ],
+  "validation": {
+    "full": "통과",
+    "build": "통과",
+    "publication": "40개 날짜·내용 커밋·완료 4/부분 36 일치",
+    "kbSync": "내용 동일, 생성 시각만 갱신",
+    "online": "t1의 같은 내용 검증 근거를 재사용했다. 온라인 재조회는 반복하지 않았다.",
+    "remainingWarnings": "의도적인 과거 주문 경고 6개·기존 린트·번들 크기 경고"
+  },
+  "goalCriteria": {
+    "complete": 4,
+    "partial": 36,
+    "tooltipConflicts": 0,
+    "unobservedHeroBranches": 24,
+    "actualKoreaAppliedAt": null,
+    "confirmedHeroRanking": false,
+    "independentVisualReview": true,
+    "allFortyComplete": false
+  },
+  "excluded": "기존 translation-validation-report.json 변경과 타 담당 산출물은 커밋하지 않는다."
+}
