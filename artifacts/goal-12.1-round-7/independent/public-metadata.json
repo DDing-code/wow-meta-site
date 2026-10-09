@@ -1,0 +1,101 @@
+[
+  {
+    "route": "/news",
+    "width": 320,
+    "overflow": false,
+    "commits": [
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379",
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379"
+    ],
+    "cards": 0,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-news-320-metadata.png"
+  },
+  {
+    "route": "/guide",
+    "width": 320,
+    "overflow": false,
+    "commits": [],
+    "cards": 40,
+    "partial": 36,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-320-metadata.png"
+  },
+  {
+    "route": "/guide/deathknight/unholy",
+    "width": 320,
+    "overflow": false,
+    "commits": [],
+    "cards": 382,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-deathknight-unholy-320-metadata.png"
+  },
+  {
+    "route": "/news",
+    "width": 390,
+    "overflow": false,
+    "commits": [
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379",
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379"
+    ],
+    "cards": 0,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-news-390-metadata.png"
+  },
+  {
+    "route": "/guide",
+    "width": 390,
+    "overflow": false,
+    "commits": [],
+    "cards": 40,
+    "partial": 36,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-390-metadata.png"
+  },
+  {
+    "route": "/guide/deathknight/unholy",
+    "width": 390,
+    "overflow": false,
+    "commits": [],
+    "cards": 382,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-deathknight-unholy-390-metadata.png"
+  },
+  {
+    "route": "/news",
+    "width": 1440,
+    "overflow": false,
+    "commits": [
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379",
+      "https://github.com/DDing-code/wow-meta-site/commit/df833379"
+    ],
+    "cards": 0,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-news-1440-metadata.png"
+  },
+  {
+    "route": "/guide",
+    "width": 1440,
+    "overflow": false,
+    "commits": [],
+    "cards": 40,
+    "partial": 36,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-1440-metadata.png"
+  },
+  {
+    "route": "/guide/deathknight/unholy",
+    "width": 1440,
+    "overflow": false,
+    "commits": [],
+    "cards": 382,
+    "partial": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.a12e70e6.js",
+    "screenshot": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\independent\\public-guide-deathknight-unholy-1440-metadata.png"
+  }
+]

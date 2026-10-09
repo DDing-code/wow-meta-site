@@ -34,7 +34,7 @@ async function images() {
    await viewport(width);
    await act('eval',{expression:'document.fonts.ready'});
    const title=(await act('eval',{expression:`document.querySelector('h1')?.innerText`})).value;
-   assert((await act('eval',{expression:"document.querySelector('main').innerText.includes('2026-10-10')"})).value, g.id+': ??');
+   assert((await act('eval',{expression:"document.querySelector('main').innerText.includes('2026-10-10')"})).value, g.id+': 최신 반영 날짜');
    assert(title.includes(g.spec),`${g.id}: title`);
    const legacy=(await act('eval',{expression:"[...document.querySelectorAll('#skills [data-wowhead],#synergies [data-wowhead]')].filter(a=>/spell=(321377|372309|388193|391154|391387|204883)(?:&|$)/.test(a.dataset.wowhead)).map(a=>a.dataset.wowhead)"})).value;
    assert.deepEqual(legacy,[],g.id+': 과거 주문은 현재 스킬·시너지 추천에서 제외');

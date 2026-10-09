@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T19:06:15.360Z",
+  "checkedAt": "2026-10-09T19:13:35.436Z",
   "reviewer": "t1v",
   "independent": true,
   "baselineCommit": "a7702c01",
@@ -40,7 +40,12 @@
     "bundle": "/static/js/main.a12e70e6.js",
     "sha256": "f02f26ef206deba6910737301439a86e48d91f5a623d3f9c97fafef07d5f5090",
     "contentCommit": "df833379",
-    "independent": true
+    "independent": true,
+    "deploymentId": "dpl_56Tr87jRJ3Tm8CoGHwMXpBNYyJXT",
+    "deploymentUrl": "https://wowmeta-fwpy8k13u-d2jks-projects.vercel.app",
+    "deploymentStatus": "Ready",
+    "newCommit": "6072ffdb",
+    "deployedAt": "2026-10-09T19:09:56.910Z"
   },
   "localChecks": {
     "guides": 7,
@@ -111,5 +116,57 @@
     "independentVisualReview": true,
     "allFortyComplete": false
   },
-  "excluded": "기존 translation-validation-report.json 변경과 타 담당 산출물은 커밋하지 않는다."
+  "excluded": "기존 translation-validation-report.json 변경과 타 담당 산출물은 커밋하지 않는다.",
+  "publication": {
+    "commit": "6072ffdb",
+    "deploymentId": "dpl_56Tr87jRJ3Tm8CoGHwMXpBNYyJXT",
+    "status": "Ready",
+    "bundle": "/static/js/main.a12e70e6.js",
+    "sha256": "f02f26ef206deba6910737301439a86e48d91f5a623d3f9c97fafef07d5f5090",
+    "filesMatched": 6,
+    "htmlRoutes": 40,
+    "browserGuides": 7,
+    "browserViews": 21,
+    "heroModes": 126,
+    "talentDisclosures": 63,
+    "metadataViews": 9,
+    "inspectedScreenshots": [
+      {
+        "file": "public-ui-priest-holy-320-flow.png",
+        "sha256": "3c39764732badd38daac03f2cdb15d5a587df5349779bd81d5fa98d4340b386e"
+      },
+      {
+        "file": "public-ui-hunter-marksmanship-320-talents.png",
+        "sha256": "378d1f2bf5b32a5f6095d5f15629ea18cf1db7d5712a2c68ccba22c9b7863460"
+      },
+      {
+        "file": "public-ui-deathknight-unholy-390-comparison.png",
+        "sha256": "50e339caf7b9d101ddf52134affa28b180f5503384c01ab09304ec1828447e33"
+      },
+      {
+        "file": "public-ui-monk-brewmaster-390-flow.png",
+        "sha256": "a35a9cc165e1a374de70388becd462edf675d04f22a6fbf4f71269c91179b634"
+      },
+      {
+        "file": "public-ui-warrior-protection-1440-flow.png",
+        "sha256": "4b23cf0134dd3c134ca40f9d303a66528f960ae924cce080e03dd0ecbaf210b6"
+      },
+      {
+        "file": "public-ui-hunter-marksmanship-1440-talents.png",
+        "sha256": "df0fbae8133c7e19a6f1534976afffd48908f90c9e969723b6afb52423470bc6"
+      },
+      {
+        "file": "public-news-320-metadata.png",
+        "sha256": "e5a6faa367aca0cb5b0352ad747ab44193dc43f8f7268e36b991c94a90a462e4"
+      },
+      {
+        "file": "public-news-1440-metadata.png",
+        "sha256": "ffe7b981af9102f6af1d39a5a84af971e70d940d8bdc7f4c8d8289e4bfc8cbee"
+      },
+      {
+        "file": "public-guide-deathknight-unholy-390-metadata.png",
+        "sha256": "e3b31acd52f9e2e2c46fbc9cb2de7ff377f6132fe4204f9e8d8f074e6b5e6845"
+      }
+    ]
+  }
 }
