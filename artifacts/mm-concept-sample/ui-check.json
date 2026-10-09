@@ -1,0 +1,98 @@
+{
+  "base": "http://127.0.0.1:4179",
+  "checkedAt": "2026-10-09T20:14:34.977Z",
+  "results": [
+    {
+      "width": 320,
+      "overflow": false,
+      "parts": [
+        "개념 잡기 — 사격은 무엇으로 굴러가나",
+        "손에 익히기 — 단일·광역·이동 따로 연습",
+        "현장 적용 — 레이드와 쐐기",
+        "복기와 심화 — 한 단계 위로"
+      ],
+      "chapters": 14,
+      "concept": 14,
+      "example": 4,
+      "fieldTips": 35,
+      "mistakes": 7,
+      "quiz": 8,
+      "voices": 16,
+      "tipLinksResolve": true,
+      "contents": 14,
+      "heroTabs": 2,
+      "wideBoxes": 0,
+      "quizOpens": true,
+      "errors": [],
+      "shots": {
+        "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-contents.png",
+        "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-chapter.png",
+        "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-quiz.png",
+        "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-voices.png"
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "parts": [
+        "개념 잡기 — 사격은 무엇으로 굴러가나",
+        "손에 익히기 — 단일·광역·이동 따로 연습",
+        "현장 적용 — 레이드와 쐐기",
+        "복기와 심화 — 한 단계 위로"
+      ],
+      "chapters": 14,
+      "concept": 14,
+      "example": 4,
+      "fieldTips": 35,
+      "mistakes": 7,
+      "quiz": 8,
+      "voices": 16,
+      "tipLinksResolve": true,
+      "contents": 14,
+      "heroTabs": 2,
+      "wideBoxes": 0,
+      "quizOpens": true,
+      "errors": [],
+      "shots": {
+        "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-contents.png",
+        "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-chapter.png",
+        "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-quiz.png",
+        "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-voices.png"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "parts": [
+        "개념 잡기 — 사격은 무엇으로 굴러가나",
+        "손에 익히기 — 단일·광역·이동 따로 연습",
+        "현장 적용 — 레이드와 쐐기",
+        "복기와 심화 — 한 단계 위로"
+      ],
+      "chapters": 14,
+      "concept": 14,
+      "example": 4,
+      "fieldTips": 35,
+      "mistakes": 7,
+      "quiz": 8,
+      "voices": 16,
+      "tipLinksResolve": true,
+      "contents": 14,
+      "heroTabs": 2,
+      "wideBoxes": 0,
+      "quizOpens": true,
+      "errors": [],
+      "shots": {
+        "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-contents.png",
+        "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-chapter.png",
+        "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-quiz.png",
+        "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-voices.png"
+      }
+    }
+  ],
+  "beastMastery390": {
+    "bookParts": 0,
+    "digest": true,
+    "overflow": false
+  }
+}

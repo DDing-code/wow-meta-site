@@ -943,6 +943,41 @@ function validateHeroBranches(spec, manuscript, kbSkills) {
   }
 }
 
+// 개념서형 가이드(book): 모든 장이 정의된 부에 속하고, 현장 팁은 실제 출처 카드와 연결되어야 한다.
+function validateBookLayout(spec, manuscript) {
+  const book = manuscript.book;
+  if (!book) return;
+  const prefix = `${spec.id}.book`;
+  const parts = book.parts || [];
+  const partIds = new Set(parts.map(part => part.id));
+  const voices = book.voices || [];
+  const voiceIds = new Set(voices.map(voice => voice.id));
+  const blocks = manuscript.blocks || [];
+
+  assert(parts.length >= 2 && partIds.size === parts.length, `${prefix}: needs at least two distinct parts`);
+  parts.forEach(part => {
+    assert(part.label && part.title && part.summary?.length >= 30, `${prefix}.parts.${part.id}: label/title/summary required`);
+    assert(blocks.some(block => block.part === part.id), `${prefix}.parts.${part.id}: part has no chapters`);
+  });
+  blocks.forEach((block, index) => {
+    const blockPrefix = `${spec.id}.blocks[${index}]`;
+    assert(partIds.has(block.part), `${blockPrefix}: chapter must belong to a defined book part`);
+    (block.fieldTips || []).forEach(tip => {
+      assert(tip.text?.length >= 30 && voiceIds.has(tip.voice), `${blockPrefix}: field tip needs text and a known voice`);
+    });
+    (block.quiz || []).forEach(item => {
+      assert(item.q?.length >= 10 && item.a?.length >= 20, `${blockPrefix}: quiz needs question and answer`);
+    });
+  });
+  const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
+  assert(partOrder.every((value, index) => index === 0 || value >= partOrder[index - 1]), `${prefix}: chapters must follow part order`);
+  voices.forEach(voice => {
+    assert(voice.id && voice.name && voice.channel && voice.title, `${prefix}.voices.${voice.id}: name/channel/title required`);
+    assert(/^https?:\/\//.test(voice.url || '') && voice.date && voice.access, `${prefix}.voices.${voice.id}: url/date/access required`);
+    assert(!/maxroll/i.test(voice.url || ''), `${prefix}.voices.${voice.id}: Maxroll must not be used as a guide source`);
+  });
+}
+
 function validateManuscript(spec, manuscript, kbSkills) {
   const prefix = spec.id;
   const sources = manuscript.sources || [];
@@ -1012,6 +1047,7 @@ function validateManuscript(spec, manuscript, kbSkills) {
   validateRoleSpecificChartLanguage(spec, manuscript);
   validatePracticalTips(spec, manuscript);
   validateHeroBranches(spec, manuscript, kbSkills);
+  validateBookLayout(spec, manuscript);
 }
 
 function validateManuscriptSourceShape() {
@@ -1417,6 +1453,9 @@ function main() {
     assert(branch.opener.steps.filter(row => row.skillId === '212431').length === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');
   }
   assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
+  assert(marksmanship.book?.parts?.length === 4 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep four parts, chapter concepts and collected voices');
+  assert(marksmanship.blocks.reduce((count, block) => count + (block.fieldTips || []).length, 0) >= 20 && marksmanship.blocks.some(block => block.quiz?.length), 'Marksmanship sample must keep sourced field tips and review questions');
+  assert(/파수꾼.*광역/.test(marksmanship.blocks.find(block => block.title.includes('속사 끝'))?.concept || ''), 'Rapid Fire clipping must stay limited to Sentinel AoE after the August 20 hotfix');
 
   const beastMastery = manuscripts['hunter-beastmastery'];
   const beastMasterySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '야수', 'Meta', 'guide-12.1.json');

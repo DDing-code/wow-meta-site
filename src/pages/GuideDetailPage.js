@@ -2032,6 +2032,126 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
   );
 }
 
+const BOOK_BOX_LABELS = {
+  concept: '개념 정리',
+  example: '예시 상황',
+  fieldTips: '현장 팁',
+  mistakes: '자주 하는 실수',
+  quiz: '확인 문제',
+  voices: '현장의 목소리',
+};
+
+// 개념서형 가이드: manuscript.book이 있으면 장을 부(part)로 묶고 장마다 보조 상자를 붙인다.
+// 부 이름·상자 이름은 가이드마다 book.parts·book.labels로 다르게 정할 수 있다.
+function getBookLayout(manuscript, blocks) {
+  const book = manuscript?.book;
+  if (!book?.parts?.length) return null;
+  const labels = { ...BOOK_BOX_LABELS, ...(book.labels || {}) };
+  const voices = new Map((book.voices || []).map(voice => [voice.id, voice]));
+  const firstIndexByPart = new Map();
+  blocks.forEach((block, index) => {
+    if (block.part && !firstIndexByPart.has(block.part)) firstIndexByPart.set(block.part, index);
+  });
+  const parts = book.parts.map(part => ({
+    ...part,
+    chapters: blocks
+      .map((block, index) => ({ block, index }))
+      .filter(item => item.block.part === part.id),
+  }));
+  return { book, labels, voices, parts, firstIndexByPart };
+}
+
+function BookChapterExtras({ block, layout, guide, inlineTerms }) {
+  if (!layout) return null;
+  const { labels, voices } = layout;
+  return (
+    <>
+      {!!block.example?.text && (
+        <BookBox $color={guide.color} data-book-box="example">
+          <BookBoxLabel>{labels.example}</BookBoxLabel>
+          {!!block.example.title && <strong>{renderGuideText(block.example.title, inlineTerms)}</strong>}
+          <p>{renderGuideText(block.example.text, inlineTerms)}</p>
+        </BookBox>
+      )}
+      {!!block.fieldTips?.length && (
+        <BookBox $color={guide.color} $tone="tip" data-book-box="field-tips">
+          <BookBoxLabel>{labels.fieldTips}</BookBoxLabel>
+          <BookTipList>
+            {block.fieldTips.map(tip => {
+              const voice = voices.get(tip.voice);
+              return (
+                <li key={tip.text}>
+                  <p>{renderGuideText(tip.text, inlineTerms)}</p>
+                  {!!voice && (
+                    <BookTipSource href={`#guide-voice-${voice.id}`}>
+                      {voice.name} · {voice.channel}
+                    </BookTipSource>
+                  )}
+                </li>
+              );
+            })}
+          </BookTipList>
+        </BookBox>
+      )}
+      {!!block.mistakes?.length && (
+        <BookBox $color={guide.color} $tone="warn" data-book-box="mistakes">
+          <BookBoxLabel>{labels.mistakes}</BookBoxLabel>
+          <BookMistakeList>
+            {block.mistakes.map(item => (
+              <li key={item}>{renderGuideText(item, inlineTerms)}</li>
+            ))}
+          </BookMistakeList>
+        </BookBox>
+      )}
+      {!!block.quiz?.length && (
+        <BookQuiz data-book-box="quiz">
+          <BookBoxLabel>{labels.quiz}</BookBoxLabel>
+          {block.quiz.map((item, quizIndex) => (
+            <details key={item.q}>
+              <summary>
+                <b>Q{quizIndex + 1}.</b> {displayGuideText(item.q)}
+              </summary>
+              <p>{renderGuideText(item.a, inlineTerms)}</p>
+            </details>
+          ))}
+        </BookQuiz>
+      )}
+    </>
+  );
+}
+
+function BookVoicesSection({ layout, guide, inlineTerms }) {
+  const voices = layout?.book?.voices || [];
+  if (!voices.length) return null;
+  return (
+    <PaperSection id="guide-voices" $fullWidth data-guide-block="book-voices">
+      <div>
+        <h3>{layout.labels.voices}</h3>
+        {!!layout.book.voicesIntro && <p>{renderGuideText(layout.book.voicesIntro, inlineTerms)}</p>}
+        <BookVoiceGrid>
+          {voices.map(voice => (
+            <BookVoiceCard key={voice.id} id={`guide-voice-${voice.id}`} $color={guide.color}>
+              <BookVoiceHead>
+                <span>{voice.channel}</span>
+                <strong>{voice.name}</strong>
+              </BookVoiceHead>
+              <a href={voice.url} target="_blank" rel="noreferrer">{voice.title}</a>
+              <small>{voice.date} · {voice.access}</small>
+              {!!voice.takeaways?.length && (
+                <ul>
+                  {voice.takeaways.map(item => (
+                    <li key={item}>{renderGuideText(item, inlineTerms)}</li>
+                  ))}
+                </ul>
+              )}
+            </BookVoiceCard>
+          ))}
+        </BookVoiceGrid>
+      </div>
+    </PaperSection>
+  );
+}
+
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   const [tipsExpanded, setTipsExpanded] = useState(false);
   const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(manuscript?.defaultHeroBranchIndex || 0);
@@ -2084,6 +2204,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
     .filter(row => row.cells.length);
   const hasOpenerGuide = !!openerFlowSteps.length || !!openerFallbackItems.length;
   const hasSupportCards = !!manuscript.playstyle?.length || !!tipItems?.length;
+  const bookLayout = getBookLayout(manuscript, bodyBlocks);
 
   return (
     <SectionBlock id="guide-core">
@@ -2309,7 +2430,36 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
         </HeroBranchSection>
       )}
 
-      {!!digestBlocks.length && (
+      {!!digestBlocks.length && bookLayout && (
+        <BookContents $color={guide.color} aria-label="세부 공략 목차">
+          <BookContentsHead>
+            <strong>{bookLayout.book.title}</strong>
+            {!!bookLayout.book.intro && <p>{renderGuideText(bookLayout.book.intro, inlineTerms)}</p>}
+          </BookContentsHead>
+          <BookContentsParts>
+            {bookLayout.parts.map(part => (
+              <BookContentsPart key={part.id}>
+                <a href={`#guide-part-${part.id}`}>
+                  <span>{part.label}</span>
+                  <strong>{part.title}</strong>
+                </a>
+                <ol>
+                  {part.chapters.map(({ block, index }) => (
+                    <li key={`${block.title}-${index}`}>
+                      <a href={`#guide-section-${index + 1}`}>
+                        <small>{String(index + 1).padStart(2, '0')}</small>
+                        <span>{guideSectionTitle(block.title)}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </BookContentsPart>
+            ))}
+          </BookContentsParts>
+        </BookContents>
+      )}
+
+      {!!digestBlocks.length && !bookLayout && (
         <GuideDigestGrid aria-label="세부 공략 목차">
           {digestBlocks.map((block, index) => {
             const digest = block.bullets?.[0] || block.paragraphs?.[0];
@@ -2375,12 +2525,29 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             );
           }
 
+          const bookPart = bookLayout && bookLayout.firstIndexByPart.get(block.part) === index
+            ? bookLayout.parts.find(part => part.id === block.part)
+            : null;
+
           return (
           <React.Fragment key={`${block.title}-${index}`}>
+            {!!bookPart && (
+              <BookPartHeader id={`guide-part-${bookPart.id}`} $color={guide.color} data-book-part={bookPart.id}>
+                <span>{bookPart.label}</span>
+                <h3>{bookPart.title}</h3>
+                {!!bookPart.summary && <p>{renderGuideText(bookPart.summary, inlineTerms)}</p>}
+              </BookPartHeader>
+            )}
             <PaperSection id={`guide-section-${index + 1}`} $fullWidth={practicalTipBlock}>
               <PaperSectionBody $wide={practicalTipBlock}>
                 <SectionNumber>{String(index + 1).padStart(2, '0')}</SectionNumber>
                 <h3>{renderGuideText(block.title, inlineTerms)}</h3>
+                {!!bookLayout && !!block.concept && (
+                  <BookConcept $color={guide.color} data-book-box="concept">
+                    <BookBoxLabel>{bookLayout.labels.concept}</BookBoxLabel>
+                    <p>{renderGuideText(block.concept, inlineTerms)}</p>
+                  </BookConcept>
+                )}
                 {block.paragraphs?.map(paragraph => (
                   <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
                 ))}
@@ -2391,6 +2558,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                     ))}
                   </ManuscriptList>
                 )}
+                <BookChapterExtras block={block} layout={bookLayout} guide={guide} inlineTerms={inlineTerms} />
               </PaperSectionBody>
 
               {!!primaryBullets.length && (
@@ -2471,6 +2639,8 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
             ))}
           </PaperSection>
         )}
+
+        <BookVoicesSection layout={bookLayout} guide={guide} inlineTerms={inlineTerms} />
 
         <EvidenceGrid>
           <EvidencePanel>
@@ -2622,6 +2792,7 @@ function GuideDetailPage() {
             ['overview', '운용 요약'],
             ...(manuscript ? [['guide-core', '공략 핵심']] : []),
             ...(manuscript?.talentBuilds?.length ? [['guide-talents', '특성 견본']] : []),
+            ...(manuscript?.book?.voices?.length ? [['guide-voices', manuscript.book.labels?.voices || BOOK_BOX_LABELS.voices]] : []),
             ['skills', '핵심 스킬'],
             ['synergies', '시너지'],
             ['sources', '출처'],
@@ -2630,7 +2801,18 @@ function GuideDetailPage() {
               <span>{label}</span>
             </GuideNavLink>
           ))}
-          {!!guideNavBlocks.length && (
+          {!!guideNavBlocks.length && manuscript?.book?.parts?.length && manuscript.book.parts.map(part => (
+            <GuideNavChapterGroup key={part.id}>
+              <GuideNavGroupLabel>{part.label} {part.title}</GuideNavGroupLabel>
+              {guideNavBlocks.map((block, index) => (block.part === part.id ? (
+                <GuideNavLink key={`${block.title}-${index}`} href={`#guide-section-${index + 1}`} $chapter>
+                  <small>{String(index + 1).padStart(2, '0')}</small>
+                  <span>{guideSectionTitle(block.title)}</span>
+                </GuideNavLink>
+              ) : null))}
+            </GuideNavChapterGroup>
+          ))}
+          {!!guideNavBlocks.length && !manuscript?.book?.parts?.length && (
             <GuideNavChapterGroup>
               <GuideNavGroupLabel>세부 공략</GuideNavGroupLabel>
               {guideNavBlocks.map((block, index) => (
@@ -5901,6 +6083,335 @@ const ManuscriptList = styled.ul`
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+`;
+
+const BookBoxLabel = styled.div`
+  color: #b8915b;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+`;
+
+const BookConcept = styled.div`
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid ${props => props.$color}55;
+  border-radius: 4px;
+  background: ${props => props.$color}14;
+
+  p {
+    margin-top: 6px;
+    color: #f2ece2;
+    font-size: 0.98rem;
+    font-weight: 680;
+    line-height: 1.7;
+  }
+`;
+
+const BookBox = styled.div`
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-left: 3px solid ${props => (props.$tone === 'warn' ? '#c8644f' : props.$tone === 'tip' ? '#6fae8a' : props.$color)};
+  background: rgba(11, 16, 20, 0.6);
+
+  strong {
+    display: block;
+    margin-top: 6px;
+    color: #eef1f3;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  p {
+    margin-top: 6px;
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+`;
+
+const BookTipList = styled.ul`
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    min-width: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(168, 178, 188, 0.1);
+  }
+
+  li:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+`;
+
+const BookTipSource = styled.a`
+  display: inline-block;
+  margin-top: 4px;
+  color: #8fb9a0;
+  font-size: 0.74rem;
+  font-weight: 650;
+  text-decoration: none;
+  word-break: keep-all;
+
+  &:hover,
+  &:focus-visible {
+    color: #c5e3cf;
+    text-decoration: underline;
+  }
+`;
+
+const BookMistakeList = styled.ul`
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: #d9c3bc;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  word-break: keep-all;
+
+  li {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const BookQuiz = styled.div`
+  margin-top: 18px;
+
+  details {
+    margin-top: 8px;
+    padding: 9px 12px;
+    border: 1px solid rgba(168, 178, 188, 0.16);
+    border-radius: 4px;
+    background: rgba(16, 24, 32, 0.6);
+  }
+
+  summary {
+    cursor: pointer;
+    color: #e3e8eb;
+    font-size: 0.9rem;
+    font-weight: 650;
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+
+  summary b {
+    color: #d9b97a;
+  }
+
+  summary:focus-visible {
+    outline: 2px solid #d9b97a;
+    outline-offset: 3px;
+  }
+
+  details p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+`;
+
+const BookPartHeader = styled.header`
+  margin-top: 30px;
+  padding: 22px 0 6px;
+  border-top: 2px solid ${props => props.$color};
+  scroll-margin-top: clamp(96px, 14vh, 150px);
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  span {
+    color: ${props => props.$color};
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+  }
+
+  h3 {
+    margin-top: 4px;
+    color: #f4efe5;
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    line-height: 1.3;
+    word-break: keep-all;
+  }
+
+  p {
+    margin-top: 8px;
+    max-width: 74ch;
+    color: #aeb8be;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    word-break: keep-all;
+  }
+`;
+
+const BookContents = styled.nav`
+  order: 5;
+  margin-top: 28px;
+  padding: 18px 0 4px;
+  border-top: 1px solid rgba(168, 178, 188, 0.13);
+`;
+
+const BookContentsHead = styled.div`
+  strong {
+    color: #eef1f3;
+    font-size: 1.05rem;
+  }
+
+  p {
+    margin-top: 6px;
+    max-width: 74ch;
+    color: #aeb8be;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+`;
+
+const BookContentsParts = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 26px;
+  margin-top: 14px;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const BookContentsPart = styled.section`
+  min-width: 0;
+
+  > a {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(168, 178, 188, 0.16);
+    color: #eef1f3;
+    text-decoration: none;
+  }
+
+  > a span {
+    color: #b8915b;
+    font-size: 0.72rem;
+    font-weight: 900;
+  }
+
+  > a strong {
+    font-size: 0.92rem;
+    word-break: keep-all;
+  }
+
+  ol {
+    margin: 6px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li a {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 4px;
+    padding: 5px 0;
+    color: #b7c0c6;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    text-decoration: none;
+    word-break: keep-all;
+  }
+
+  li a small {
+    color: #7d8991;
+    font-size: 0.66rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: #ffffff;
+  }
+`;
+
+const BookVoiceGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 14px;
+  margin-top: 16px;
+`;
+
+const BookVoiceCard = styled.article`
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(168, 178, 188, 0.14);
+  border-top: 2px solid ${props => props.$color};
+  background: rgba(11, 16, 20, 0.6);
+  scroll-margin-top: clamp(96px, 14vh, 150px);
+
+  > a {
+    display: block;
+    margin-top: 6px;
+    color: #d9b97a;
+    font-size: 0.86rem;
+    font-weight: 650;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+  }
+
+  small {
+    display: block;
+    margin-top: 4px;
+    color: #84909a;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  ul {
+    margin: 8px 0 0;
+    padding-left: 16px;
+    color: #c2cacf;
+    font-size: 0.84rem;
+    line-height: 1.65;
+    word-break: keep-all;
+  }
+
+  li + li {
+    margin-top: 4px;
+  }
+`;
+
+const BookVoiceHead = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+
+  span {
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: rgba(184, 145, 91, 0.16);
+    color: #d9b97a;
+    font-size: 0.68rem;
+    font-weight: 800;
+  }
+
+  strong {
+    color: #eef1f3;
+    font-size: 0.92rem;
   }
 `;
 

@@ -422,7 +422,7 @@ function main() {
   assert(sectionTitle('12.1에서 먼저 고칠 습관', text => text) === '12.1에서 먼저 고칠 습관', 'Section titles must preserve patch-version prefixes');
   assert(sectionTitle('1. 기본 운용', text => text) === '기본 운용', 'Section titles must still remove authored numbering');
   assert(sectionTitle('12. 12.1 변경점', text => text) === '12.1 변경점', 'Numbered patch headings must preserve their version');
-  assert((guideDetailSource.match(/guideSectionTitle\(block\.title\)/g) || []).length === 2, 'Navigation and body must share section-title formatting');
+  assert((guideDetailSource.match(/guideSectionTitle\(block\.title\)/g) || []).length >= 2, 'Navigation and body must share section-title formatting');
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const guideSkillExpression = guideDetailSource.match(/const allSkills = ([^\n]+);/)[1];
   const currentPatch = loadSourceModule(GUIDE_REGISTRY_PATH, 'CURRENT_PATCH_LABEL');
