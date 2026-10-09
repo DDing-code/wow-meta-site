@@ -1,6 +1,6 @@
 {
-  "base": "http://127.0.0.1:4179",
-  "checkedAt": "2026-10-09T20:50:36.675Z",
+  "base": "https://wowmeta.vercel.app",
+  "checkedAt": "2026-10-09T20:52:52.347Z",
   "results": [
     {
       "width": 320,
@@ -28,7 +28,7 @@
       "diagramIconsLoaded": 76,
       "diagramWide": 0,
       "quizOpens": true,
-      "diagramIconHoverColor": "rgb(241, 213, 145)",
+      "diagramIconHoverColor": "rgb(240, 212, 143)",
       "errors": [],
       "shots": {
         "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-contents.png",
@@ -65,7 +65,7 @@
       "diagramIconsLoaded": 81,
       "diagramWide": 0,
       "quizOpens": true,
-      "diagramIconHoverColor": "rgb(241, 213, 145)",
+      "diagramIconHoverColor": "rgb(240, 212, 143)",
       "errors": [],
       "shots": {
         "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-contents.png",

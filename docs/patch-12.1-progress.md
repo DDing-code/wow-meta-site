@@ -688,3 +688,5 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 데이터는 KB 정본 `guide-12.1.json`의 장별 `diagram` 키에 두고(`artifacts/mm-concept-sample/book-diagrams.cjs` → `apply.cjs`), `guideManuscripts.js`의 `hunter-marksmanship`에 같이 반영했다. 노드의 `skillId`는 기존 툴팁 검사가 KB와 대조하고, 원고 검사기에 흐름도 구조 검사(제목·층·연결 문구·노드 ID)와 사격 샘플 흐름도 7개 이상 유지 검사를 추가했다.
 - 전체 검증·빌드 통과. 320·390·1440px에서 가로 넘침 0, 노드 아이콘·이름 어느 쪽에 마우스를 올려도 같은 Wowhead 툴팁 링크가 반응한다. 야수 가이드는 기존 화면 그대로다. 캡처: `artifacts/mm-concept-sample/mm-book-*-diagram1.png`, `-diagram2.png`, 검사 결과 `ui-check.json`.
 - 다른 39개 가이드에는 적용하지 않았고, 커밋·운영 배포는 하지 않았다.
+- 디자인 다듬기(2026-10-10): 흐름도를 카드형으로 바꿨다. 노드마다 26px 아이콘 틀과 Wowhead 툴팁 링크, 중심 스킬은 직업 색 테두리·발광, 강화 상태는 푸른 상자, 선택 특성은 점선 상자, 상황 태그는 작은 칩으로 두고, 연결 칩에서 각 노드로 가지선을 그었다. 바탕은 점 격자와 직업 색 상단 빛으로 흐름도 느낌을 냈다. 320·390·1440px 재검사 통과.
+- 커밋·배포: 사이트 `e0e36aff`를 main에 푸시하고 KB 정본은 로컬 `9772de0`에 보존했다. `.env`·소스맵 없이 정리 빌드한 정적 파일 6개를 Vercel `dpl_4GBQkP7d6oTEqkshEML3MPxzzWzJ`로 운영 승격했고, https://wowmeta.vercel.app 의 `main.d7715ad7.js`가 로컬 빌드와 바이트 단위로 일치한다. 운영 사이트에서 사격 가이드 세 화면 크기의 흐름도 9개·노드 52개·가로 넘침 0을 재확인했다.
