@@ -2148,6 +2148,10 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
   );
 }
 
+function hasBookChapterExtras(block) {
+  return !!(block?.example?.text || block?.fieldTips?.length || block?.mistakes?.length || block?.quiz?.length);
+}
+
 function BookChapterExtras({ block, layout, guide, inlineTerms }) {
   if (!layout) return null;
   const { labels, voices } = layout;
@@ -2635,30 +2639,20 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                     <p>{renderGuideText(block.concept, inlineTerms)}</p>
                   </BookConcept>
                 )}
-                {!!bookLayout && getBlockDiagrams(block).map((diagram, diagramIndex) => (
-                  <BookSkillDiagram
-                    key={`${diagram.title}-${diagramIndex}`}
-                    diagram={diagram}
-                    guide={guide}
-                    inlineTerms={inlineTerms}
-                    label={bookLayout.labels.diagram}
-                  />
-                ))}
-                {block.paragraphs?.map(paragraph => (
+                {!bookLayout && block.paragraphs?.map(paragraph => (
                   <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
                 ))}
-                {!!detailBullets.length && (
+                {!bookLayout && !!detailBullets.length && (
                   <ManuscriptList $columns={practicalTipBlock}>
                     {detailBullets.map(item => (
                       <li key={item}>{renderGuideText(item, inlineTerms)}</li>
                     ))}
                   </ManuscriptList>
                 )}
-                <BookChapterExtras block={block} layout={bookLayout} guide={guide} inlineTerms={inlineTerms} />
               </PaperSectionBody>
 
               {!!primaryBullets.length && (
-                <TakeawayPanel $color={guide.color} $wide={practicalTipBlock}>
+                <TakeawayPanel $color={guide.color} $wide={practicalTipBlock} $late={!!bookLayout}>
                   <TakeawayLabel>핵심 체크</TakeawayLabel>
                   <TakeawayList $columns={practicalTipBlock}>
                     {primaryBullets.map(item => (
@@ -2666,6 +2660,41 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                     ))}
                   </TakeawayList>
                 </TakeawayPanel>
+              )}
+
+              {!!bookLayout && !!getBlockDiagrams(block).length && (
+                <BookDiagramStack>
+                  {getBlockDiagrams(block).map((diagram, diagramIndex) => (
+                    <BookSkillDiagram
+                      key={`${diagram.title}-${diagramIndex}`}
+                      diagram={diagram}
+                      guide={guide}
+                      inlineTerms={inlineTerms}
+                      label={bookLayout.labels.diagram}
+                    />
+                  ))}
+                </BookDiagramStack>
+              )}
+
+              {!!bookLayout && (!!block.paragraphs?.length || !!detailBullets.length) && (
+                <PaperSectionBody data-book-body="text">
+                  {block.paragraphs?.map(paragraph => (
+                    <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
+                  ))}
+                  {!!detailBullets.length && (
+                    <ManuscriptList>
+                      {detailBullets.map(item => (
+                        <li key={item}>{renderGuideText(item, inlineTerms)}</li>
+                      ))}
+                    </ManuscriptList>
+                  )}
+                </PaperSectionBody>
+              )}
+
+              {!!bookLayout && hasBookChapterExtras(block) && (
+                <BookExtrasGrid $single={!(block.example?.text && block.mistakes?.length)}>
+                  <BookChapterExtras block={block} layout={bookLayout} guide={guide} inlineTerms={inlineTerms} />
+                </BookExtrasGrid>
               )}
             </PaperSection>
 
@@ -5246,6 +5275,7 @@ const SectionNumber = styled.div`
 const TakeawayPanel = styled.aside`
   grid-column: ${props => props.$wide ? '1 / -1' : 'auto'};
   align-self: start;
+  order: 0;
   min-width: 0;
   padding: 13px;
   border: 1px solid rgba(244, 239, 229, 0.08);
@@ -5255,6 +5285,7 @@ const TakeawayPanel = styled.aside`
     rgba(11, 16, 20, 0.82);
 
   @media (max-width: 900px) {
+    order: ${props => (props.$late ? 10 : 0)};
     padding: 12px;
   }
 `;
@@ -6205,27 +6236,52 @@ const BookConcept = styled.div`
   }
 `;
 
-const BookDiagramFigure = styled.figure`
-  position: relative;
+const BookDiagramStack = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 14px;
   min-width: 0;
-  margin: 14px 0 0;
-  padding: 13px 16px 12px;
-  border: 1px solid rgba(244, 239, 229, 0.11);
-  border-radius: 6px;
+`;
+
+const BookExtrasGrid = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: ${props => (props.$single ? '1fr' : 'repeat(2, minmax(0, 1fr))')};
+  gap: 14px 18px;
+  min-width: 0;
+
+  > * {
+    margin-top: 0;
+    min-width: 0;
+  }
+
+  > [data-book-box='field-tips'],
+  > [data-book-box='quiz'] {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const BookDiagramFigure = styled.figure`
+  min-width: 0;
+  margin: 0;
+  padding: 12px 14px 12px;
+  border: 1px solid rgba(184, 145, 91, 0.24);
+  border-top: 3px solid ${props => props.$color};
   background:
-    radial-gradient(120% 60% at 50% 0%, ${props => props.$color}16 0%, transparent 62%),
-    radial-gradient(rgba(244, 239, 229, 0.06) 1px, transparent 1.3px) 0 0 / 14px 14px,
-    rgba(8, 13, 17, 0.72);
+    linear-gradient(180deg, rgba(244, 239, 229, 0.035), rgba(8, 13, 17, 0.18)),
+    #0d1216;
   container-type: inline-size;
-  overflow: hidden;
 
   > strong {
     display: block;
     margin-top: 4px;
-    color: #f4efe5;
-    font-size: 1rem;
-    font-weight: 800;
-    letter-spacing: -0.01em;
+    color: #eef1f3;
+    font-size: 0.98rem;
+    font-weight: 780;
     line-height: 1.45;
     word-break: keep-all;
   }
@@ -6264,7 +6320,7 @@ const BookDiagramLayers = styled.div`
   margin-top: 12px;
 `;
 
-/* 층 사이 연결: 위 층에서 내려오는 선 → 설명 칩 → 아래 층 가지로 이어지는 짧은 선 */
+/* 층 사이 연결: 위 층에서 내려오는 선 → 금색 작은 제목 → 아래 층 가지로 이어지는 선 */
 const BookDiagramLink = styled.div`
   display: flex;
   flex-direction: column;
@@ -6274,32 +6330,28 @@ const BookDiagramLink = styled.div`
   &::before {
     content: '';
     display: ${props => (props.$connected ? 'block' : 'none')};
-    width: 2px;
+    width: 1px;
     height: 16px;
-    background: linear-gradient(180deg, ${props => props.$color}22, ${props => props.$color}88);
+    background: ${props => props.$color}66;
   }
 
   &::after {
     content: '';
-    width: 2px;
+    width: 1px;
     height: 8px;
-    background: ${props => props.$color}88;
+    background: ${props => props.$color}66;
   }
 
   span {
-    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 5px;
     max-width: 100%;
-    padding: 3px 11px;
-    border: 1px solid ${props => props.$color}55;
-    border-radius: 999px;
-    background: linear-gradient(180deg, #16202a, #0f161c);
-    box-shadow: 0 0 0 3px rgba(8, 13, 17, 0.9), 0 4px 10px -6px rgba(0, 0, 0, 0.9);
-    color: #e6ebee;
-    font-size: 0.74rem;
+    padding: 2px 8px;
+    color: #d2b373;
+    font-size: 0.72rem;
     font-weight: 760;
+    letter-spacing: 0.02em;
     line-height: 1.5;
     text-align: center;
     word-break: keep-all;
@@ -6312,21 +6364,21 @@ const BookDiagramLink = styled.div`
   }
 `;
 
-/* 한 층의 노드는 같은 줄에 나란히 놓고, 노드마다 위쪽 가지선으로 연결 칩에 묶는다 */
+/* 한 층의 노드는 같은 줄에 나란히 놓고, 노드마다 위쪽 가지선으로 연결 제목에 묶는다 */
 const BookDiagramRow = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   li {
     position: relative;
-    flex: 1 1 132px;
+    flex: 1 1 150px;
     min-width: 0;
-    max-width: 268px;
+    max-width: 300px;
     padding-top: 10px;
   }
 
@@ -6335,10 +6387,9 @@ const BookDiagramRow = styled.ul`
     position: absolute;
     top: 0;
     left: 50%;
-    width: 2px;
+    width: 1px;
     height: 10px;
-    margin-left: -1px;
-    background: ${props => props.$color}88;
+    background: ${props => props.$color}66;
   }
 
   li::after {
@@ -6347,8 +6398,8 @@ const BookDiagramRow = styled.ul`
     top: 0;
     left: 0;
     right: 0;
-    height: 2px;
-    background: ${props => props.$color}55;
+    height: 1px;
+    background: ${props => props.$color}44;
   }
 
   li:first-child::after {
@@ -6369,85 +6420,65 @@ const BookDiagramNodeBox = styled.div`
   min-width: 0;
   padding: 9px 10px 10px;
   border: 1px ${props => (props.$kind === 'talent' ? 'dashed' : 'solid')}
-    ${props => (
-      props.$kind === 'core' ? props.$color
-        : props.$kind === 'buff' ? 'rgba(150, 182, 210, 0.38)'
-        : props.$kind === 'talent' ? 'rgba(244, 239, 229, 0.36)'
-        : 'rgba(244, 239, 229, 0.16)'
-    )};
-  border-radius: 6px;
-  background: ${props => (
-    props.$kind === 'core' ? `linear-gradient(180deg, ${props.$color}30, ${props.$color}10), #0f161b`
-      : props.$kind === 'buff' ? 'linear-gradient(180deg, rgba(120, 156, 190, 0.22), rgba(120, 156, 190, 0.08)), #0f161b'
-      : props.$kind === 'talent' ? 'linear-gradient(180deg, #141b21, #0f1519)'
-      : 'linear-gradient(180deg, #121920, #0d1317)'
+    ${props => (props.$kind === 'core' ? `${props.$color}55` : props.$kind === 'talent' ? 'rgba(244, 239, 229, 0.3)' : 'rgba(168, 178, 188, 0.16)')};
+  border-left: 3px solid ${props => (
+    props.$kind === 'core' ? props.$color
+      : props.$kind === 'buff' ? 'rgba(150, 182, 210, 0.75)'
+      : props.$kind === 'talent' ? 'rgba(244, 239, 229, 0.3)'
+      : 'rgba(168, 178, 188, 0.35)'
   )};
-  box-shadow: ${props => (
-    props.$kind === 'core'
-      ? `0 0 0 1px ${props.$color}44, 0 0 26px -8px ${props.$color}cc, 0 8px 18px -12px rgba(0, 0, 0, 0.9)`
-      : '0 8px 18px -12px rgba(0, 0, 0, 0.9)'
+  background: ${props => (
+    props.$kind === 'core' ? `${props.$color}12`
+      : props.$kind === 'buff' ? 'rgba(120, 156, 190, 0.08)'
+      : 'rgba(11, 16, 20, 0.6)'
   )};
 
   small {
     display: inline-block;
-    margin-bottom: 6px;
-    padding: 1px 6px;
-    border-radius: 3px;
-    background: ${props => props.$color}22;
-    color: ${props => props.$color};
-    font-size: 0.64rem;
-    font-weight: 900;
-    letter-spacing: 0.06em;
+    margin-bottom: 5px;
+    padding: 0 6px;
+    border-left: 2px solid ${props => props.$color};
+    color: #d5b97d;
+    font-size: 0.62rem;
+    font-weight: 950;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
     word-break: keep-all;
   }
 
   strong {
     display: block;
-    color: #f3eee4;
-    font-size: 0.88rem;
-    font-weight: 760;
-    line-height: 1.35;
+    color: #eef1f3;
+    font-size: 0.86rem;
+    font-weight: 740;
+    line-height: 1.4;
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
 
   strong > a,
   strong > span {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     max-width: 100%;
     margin: 0;
-    border-bottom: 0;
-    color: #f0d48f;
     white-space: normal;
-    vertical-align: baseline;
   }
 
   strong > a > em,
   strong > span > em {
-    display: block;
     min-width: 0;
     font-style: normal;
     white-space: normal;
     overflow-wrap: anywhere;
   }
 
-  strong > a:hover > em {
-    color: #f7dda0;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(247, 221, 160, 0.6);
-  }
-
   strong > a > img,
   strong > a > span {
     flex: 0 0 auto;
-    width: 26px;
-    height: 26px;
-    border-radius: 4px;
-    border: 1px solid ${props => (props.$kind === 'core' ? `${props.$color}aa` : 'rgba(255, 209, 102, 0.42)')};
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 0.55);
+    width: 18px;
+    height: 18px;
   }
 
   strong > span > em {
@@ -6455,7 +6486,7 @@ const BookDiagramNodeBox = styled.div`
   }
 
   p {
-    margin-top: 6px;
+    margin-top: 5px;
     color: #aeb8be;
     font-size: 0.76rem;
     line-height: 1.55;
@@ -6469,20 +6500,19 @@ const BookDiagramGlyph = styled.span`
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 18px;
   border: 1px dashed rgba(244, 239, 229, 0.3);
-  border-radius: 4px;
-  background: rgba(244, 239, 229, 0.05);
+  border-radius: 3px;
   color: #c9bd9c;
 `;
 
 const BookDiagramLoop = styled.div`
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 7px;
   margin-top: 12px;
-  padding: 9px 10px 2px;
+  padding: 9px 2px 2px;
   border-top: 1px dashed ${props => props.$color}55;
   color: #cdd4d9;
   font-size: 0.78rem;
@@ -6492,12 +6522,7 @@ const BookDiagramLoop = styled.div`
 
   svg {
     flex: 0 0 auto;
-    box-sizing: content-box;
-    margin-top: 1px;
-    padding: 3px;
-    border: 1px solid ${props => props.$color}66;
-    border-radius: 50%;
-    background: ${props => props.$color}1a;
+    margin-top: 3px;
     color: ${props => props.$color};
   }
 `;
@@ -6523,24 +6548,24 @@ const BookDiagramLegend = styled.ul`
     display: inline-block;
     width: 12px;
     height: 10px;
-    border: 1px solid rgba(244, 239, 229, 0.3);
-    border-radius: 2px;
-    background: #121920;
+    border: 1px solid rgba(168, 178, 188, 0.3);
+    border-left: 3px solid rgba(168, 178, 188, 0.35);
+    background: rgba(11, 16, 20, 0.6);
   }
 
   li[data-legend-kind='core'] i {
-    border-color: ${props => props.$color};
-    background: ${props => props.$color}33;
-    box-shadow: 0 0 6px -1px ${props => props.$color}99;
+    border-color: ${props => props.$color}55;
+    border-left-color: ${props => props.$color};
+    background: ${props => props.$color}22;
   }
 
   li[data-legend-kind='buff'] i {
-    border-color: rgba(150, 182, 210, 0.5);
-    background: rgba(120, 156, 190, 0.22);
+    border-left-color: rgba(150, 182, 210, 0.75);
+    background: rgba(120, 156, 190, 0.12);
   }
 
   li[data-legend-kind='talent'] i {
-    border-style: dashed;
+    border: 1px dashed rgba(244, 239, 229, 0.3);
   }
 `;
 
