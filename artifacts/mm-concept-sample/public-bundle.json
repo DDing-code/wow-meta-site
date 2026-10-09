@@ -1,8 +1,8 @@
 {
   "url": "https://wowmeta.vercel.app",
-  "bundle": "/static/js/main.1503db5e.js",
+  "bundle": "/static/js/main.9d3efbb8.js",
   "httpStatus": 200,
-  "bytes": 14278751,
-  "sha256": "9df2df4ca9800aff07f89db8fbd6a7422b88587d18926bbbea82e3ae3cce991b",
+  "bytes": 14291847,
+  "sha256": "a17fcc2e1d73a7c859431e77ab492937fda1b0685b1ab532cebcf0681b6146ea",
   "matchesBuild": true
 }
