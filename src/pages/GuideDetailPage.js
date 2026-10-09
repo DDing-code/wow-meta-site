@@ -6260,6 +6260,13 @@ const BookExtrasGrid = styled.div`
     grid-column: 1 / -1;
   }
 
+  @media (min-width: 901px) {
+    > [data-book-box='mistakes'] {
+      grid-column: ${props => (props.$single ? 'auto' : '2')};
+      grid-row: ${props => (props.$single ? 'auto' : '1')};
+    }
+  }
+
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
