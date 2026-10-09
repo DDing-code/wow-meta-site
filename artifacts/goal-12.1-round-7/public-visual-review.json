@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-09T18:53:28.268Z",
+  "reviewer": "t1",
+  "independent": false,
+  "base": "https://wowmeta.vercel.app",
+  "bundle": "/static/js/main.5fa3fb51.js",
+  "guides": 7,
+  "routeViews": 21,
+  "heroModeChecks": 126,
+  "talentViews": 63,
+  "primaryVisualImages": [
+    {
+      "file": "public-ui-deathknight-unholy-320-comparison.png",
+      "sha256": "c49e08d306ee28efc6da7ca99b76052bd65b3985c425d3bdd474a5840ec70c85"
+    },
+    {
+      "file": "public-ui-monk-brewmaster-320-flow.png",
+      "sha256": "241a25c0397ba7fcd4f87b90012c3bd0c89fe8eb09d084d3f136aa5d290b7224"
+    },
+    {
+      "file": "public-ui-paladin-protection-320-talents.png",
+      "sha256": "e77f42ccd4a5dcd954b350f5347c6da13ed3b3bd9b45b269591e9ad66c633573"
+    },
+    {
+      "file": "public-ui-deathknight-unholy-390-flow.png",
+      "sha256": "96743e6d08954405a512700593bfdc481b35b1288b4c375c547b4705d29995e1"
+    },
+    {
+      "file": "public-ui-monk-brewmaster-390-comparison.png",
+      "sha256": "15616e4da09058c44ea12a35ce13191fad316076c76c61c75c9ec314bf75856b"
+    },
+    {
+      "file": "public-ui-monk-mistweaver-320-flow.png",
+      "sha256": "b0759f5235c5b9dae5fd7671f13708b7d0464b99a2eefc44c9239cfac392f363"
+    },
+    {
+      "file": "public-ui-paladin-protection-1440-comparison.png",
+      "sha256": "87c2ec30b35153ed8011f31af1091ffe0e11f38145c9bcb2b3e11a0824309749"
+    },
+    {
+      "file": "public-ui-monk-brewmaster-1440-flow.png",
+      "sha256": "dbbf1cbbf32d6f33fda59b85812008d090f00cd42cfef8edac3cd790b135c639"
+    },
+    {
+      "file": "public-ui-deathknight-unholy-1440-talents.png",
+      "sha256": "460971b2a8c592e75b6f7f959d7d0aa5d29a557422420df18c276708ccc7eac9"
+    }
+  ],
+  "observations": [
+    "?? ??? 320?390px ? ? ???? ????? ????? ?? ??? ??? ?? ??????.",
+    "? ?? ??? 40? ??? ?? ?? ??? ????."
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "checkedAt": "2026-10-09T18:49:28.634Z",
+  "base": "https://wowmeta.vercel.app",
+  "bundle": "/static/js/main.5fa3fb51.js",
+  "bundleSha256": "6cdd44a85d1bb576ff96c9bd242dfcbd2c14f8bfea698776deb0a877a9f3540d",
+  "files": [
+    {
+      "file": "asset-manifest.json",
+      "status": 200,
+      "bytes": 240,
+      "sha256": "503e611d33aa145c242bec58c30100d326354fd4528975092c7351a421ed55ef"
+    },
+    {
+      "file": "assets/spec-icons-white-v1.png",
+      "status": 200,
+      "bytes": 942168,
+      "sha256": "6966906fbc7651f7e83c3a754fa21d3be1fb3bec33adc3489e60f1597109cbe2"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "bytes": 1054,
+      "sha256": "2ea35cd5ac492f2efe7f8769f510f9844417ede5b4f07f8e64a50b0a380195dd"
+    },
+    {
+      "file": "static/css/main.1aebb9d9.css",
+      "status": 200,
+      "bytes": 24,
+      "sha256": "15c2a0dee5f917cd06258438e0d278855e3e2ea04f57b3cf006dfa02a56d7f3d"
+    },
+    {
+      "file": "static/js/main.5fa3fb51.js",
+      "status": 200,
+      "bytes": 14194053,
+      "sha256": "6cdd44a85d1bb576ff96c9bd242dfcbd2c14f8bfea698776deb0a877a9f3540d"
+    },
+    {
+      "file": "static/js/main.5fa3fb51.js.LICENSE.txt",
+      "status": 200,
+      "bytes": 1826,
+      "sha256": "e6ef74437c65056d075e949c510f52612350b83d7b09c4e6a4bcdad1a0e58ec7"
+    }
+  ],
+  "routes": [
+    {
+      "id": "warrior-protection",
+      "url": "https://wowmeta.vercel.app/guide/warrior/protection",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "paladin-protection",
+      "url": "https://wowmeta.vercel.app/guide/paladin/protection",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "deathknight-blood",
+      "url": "https://wowmeta.vercel.app/guide/deathknight/blood",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "monk-brewmaster",
+      "url": "https://wowmeta.vercel.app/guide/monk/brewmaster",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "druid-guardian",
+      "url": "https://wowmeta.vercel.app/guide/druid/guardian",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "demonhunter-vengeance",
+      "url": "https://wowmeta.vercel.app/guide/demonhunter/vengeance",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "warrior-arms",
+      "url": "https://wowmeta.vercel.app/guide/warrior/arms",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "warrior-fury",
+      "url": "https://wowmeta.vercel.app/guide/warrior/fury",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "paladin-retribution",
+      "url": "https://wowmeta.vercel.app/guide/paladin/retribution",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "rogue-assassination",
+      "url": "https://wowmeta.vercel.app/guide/rogue/assassination",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "rogue-outlaw",
+      "url": "https://wowmeta.vercel.app/guide/rogue/outlaw",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "rogue-subtlety",
+      "url": "https://wowmeta.vercel.app/guide/rogue/subtlety",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "deathknight-frost",
+      "url": "https://wowmeta.vercel.app/guide/deathknight/frost",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "deathknight-unholy",
+      "url": "https://wowmeta.vercel.app/guide/deathknight/unholy",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "monk-windwalker",
+      "url": "https://wowmeta.vercel.app/guide/monk/windwalker",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "druid-feral",
+      "url": "https://wowmeta.vercel.app/guide/druid/feral",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "demonhunter-havoc",
+      "url": "https://wowmeta.vercel.app/guide/demonhunter/havoc",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "shaman-enhancement",
+      "url": "https://wowmeta.vercel.app/guide/shaman/enhancement",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "hunter-survival",
+      "url": "https://wowmeta.vercel.app/guide/hunter/survival",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "hunter-beastmastery",
+      "url": "https://wowmeta.vercel.app/guide/hunter/beast-mastery",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "hunter-marksmanship",
+      "url": "https://wowmeta.vercel.app/guide/hunter/marksmanship",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "priest-shadow",
+      "url": "https://wowmeta.vercel.app/guide/priest/shadow",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "demonhunter-devourer",
+      "url": "https://wowmeta.vercel.app/guide/demonhunter/devourer",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "shaman-elemental",
+      "url": "https://wowmeta.vercel.app/guide/shaman/elemental",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "mage-arcane",
+      "url": "https://wowmeta.vercel.app/guide/mage/arcane",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "mage-fire",
+      "url": "https://wowmeta.vercel.app/guide/mage/fire",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "mage-frost",
+      "url": "https://wowmeta.vercel.app/guide/mage/frost",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "warlock-affliction",
+      "url": "https://wowmeta.vercel.app/guide/warlock/affliction",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "warlock-demonology",
+      "url": "https://wowmeta.vercel.app/guide/warlock/demonology",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "warlock-destruction",
+      "url": "https://wowmeta.vercel.app/guide/warlock/destruction",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "druid-balance",
+      "url": "https://wowmeta.vercel.app/guide/druid/balance",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "evoker-devastation",
+      "url": "https://wowmeta.vercel.app/guide/evoker/devastation",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "evoker-augmentation",
+      "url": "https://wowmeta.vercel.app/guide/evoker/augmentation",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "paladin-holy",
+      "url": "https://wowmeta.vercel.app/guide/paladin/holy",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "priest-discipline",
+      "url": "https://wowmeta.vercel.app/guide/priest/discipline",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "priest-holy",
+      "url": "https://wowmeta.vercel.app/guide/priest/holy",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "shaman-restoration",
+      "url": "https://wowmeta.vercel.app/guide/shaman/restoration",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "monk-mistweaver",
+      "url": "https://wowmeta.vercel.app/guide/monk/mistweaver",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "druid-restoration",
+      "url": "https://wowmeta.vercel.app/guide/druid/restoration",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    },
+    {
+      "id": "evoker-preservation",
+      "url": "https://wowmeta.vercel.app/guide/evoker/preservation",
+      "status": 200,
+      "bundle": "/static/js/main.5fa3fb51.js"
+    }
+  ],
+  "publicUiScope": "별도 public-ui.json의 7개 가이드·21화면. 이 40개 경로 검사는 HTML과 공개 번들 일치 확인.",
+  "deploymentId": "dpl_JBfqBj3m2SHkYvXTwqCCadVCCPiK",
+  "deploymentUrl": "https://wowmeta-hc78rqp4k-d2jks-projects.vercel.app",
+  "deploymentStatus": "Ready",
+  "contentCommit": "df833379c9cc6a9b8208bb08255fdd55329fd3b0"
+}

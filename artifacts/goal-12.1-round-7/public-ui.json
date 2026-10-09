@@ -1,0 +1,1535 @@
+[
+  {
+    "id": "paladin-protection",
+    "title": "보호 성기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=11",
+      "https://www.warcraftlogs.com/reports/ZkGbpHxBzga9LXFJ#fight=2&source=31",
+      "https://www.warcraftlogs.com/reports/xNcgGZ8WQdYrR3kL#fight=2&source=2",
+      "https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=484"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 45,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 33,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-brewmaster",
+    "title": "양조 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/N2DV6gFLKcp47d8v#fight=13&source=17",
+      "https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=13",
+      "https://www.warcraftlogs.com/reports/LxcA4dDHP82JTpGr#fight=5&source=469",
+      "https://www.warcraftlogs.com/reports/kJ32TVjRp4xWMPAa#fight=5&source=21"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 32,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "deathknight-unholy",
+    "title": "부정 죽음의 기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41",
+      "https://www.warcraftlogs.com/reports/8vQB7hKd3CAVJ9yp#fight=1&source=2",
+      "https://www.warcraftlogs.com/reports/Fn43q7BQXA1ghCWT#fight=16&source=486",
+      "https://www.warcraftlogs.com/reports/9KWD8VxTprhBZvJa#fight=1&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 18,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 22,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 16,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-windwalker",
+    "title": "풍운 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=15",
+      "https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=227",
+      "https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=16",
+      "https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=95"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 43,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 46,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "hunter-marksmanship",
+    "title": "사격 사냥꾼 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/WNhMA27TZ3dYDawJ#fight=1&source=20",
+      "https://www.warcraftlogs.com/reports/Z2wBx9XWrLqg1ktT#fight=8&source=14",
+      "https://www.warcraftlogs.com/reports/hcTVyJYXBQqM8vtw#fight=3&source=73",
+      "https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=1&source=4"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 42,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 65,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 30,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 63,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "priest-discipline",
+    "title": "수양 사제 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/G1fXWjQTRcvtBmFN#fight=14&source=10",
+      "https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=143",
+      "https://www.warcraftlogs.com/reports/BpaJ7QTz8bjFA9tV#fight=3&source=3",
+      "https://www.warcraftlogs.com/reports/26BwCYWhqpXaJNzM#fight=2&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 24,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-mistweaver",
+    "title": "운무 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-320-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-320-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2",
+      "https://www.warcraftlogs.com/reports/mPA71pNLzxY8Za2d#fight=49&source=9",
+      "https://www.warcraftlogs.com/reports/QBbk9P6z3m7rDdFf#fight=37&source=9",
+      "https://www.warcraftlogs.com/reports/mQYjcyVJTPAwFHhd#fight=45&source=430"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "opener",
+        "icons": 35,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "opener",
+        "icons": 29,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "singleTarget",
+        "icons": 10,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 320,
+        "mode": "aoe",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 320,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "paladin-protection",
+    "title": "보호 성기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=11",
+      "https://www.warcraftlogs.com/reports/ZkGbpHxBzga9LXFJ#fight=2&source=31",
+      "https://www.warcraftlogs.com/reports/xNcgGZ8WQdYrR3kL#fight=2&source=2",
+      "https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=484"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 45,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 33,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-brewmaster",
+    "title": "양조 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/N2DV6gFLKcp47d8v#fight=13&source=17",
+      "https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=13",
+      "https://www.warcraftlogs.com/reports/LxcA4dDHP82JTpGr#fight=5&source=469",
+      "https://www.warcraftlogs.com/reports/kJ32TVjRp4xWMPAa#fight=5&source=21"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 32,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "deathknight-unholy",
+    "title": "부정 죽음의 기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41",
+      "https://www.warcraftlogs.com/reports/8vQB7hKd3CAVJ9yp#fight=1&source=2",
+      "https://www.warcraftlogs.com/reports/Fn43q7BQXA1ghCWT#fight=16&source=486",
+      "https://www.warcraftlogs.com/reports/9KWD8VxTprhBZvJa#fight=1&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 18,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 22,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 16,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-windwalker",
+    "title": "풍운 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=15",
+      "https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=227",
+      "https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=16",
+      "https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=95"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 43,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 46,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "hunter-marksmanship",
+    "title": "사격 사냥꾼 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/WNhMA27TZ3dYDawJ#fight=1&source=20",
+      "https://www.warcraftlogs.com/reports/Z2wBx9XWrLqg1ktT#fight=8&source=14",
+      "https://www.warcraftlogs.com/reports/hcTVyJYXBQqM8vtw#fight=3&source=73",
+      "https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=1&source=4"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 42,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 65,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 30,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 63,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "priest-discipline",
+    "title": "수양 사제 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/G1fXWjQTRcvtBmFN#fight=14&source=10",
+      "https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=143",
+      "https://www.warcraftlogs.com/reports/BpaJ7QTz8bjFA9tV#fight=3&source=3",
+      "https://www.warcraftlogs.com/reports/26BwCYWhqpXaJNzM#fight=2&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 24,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-mistweaver",
+    "title": "운무 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-390-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-390-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2",
+      "https://www.warcraftlogs.com/reports/mPA71pNLzxY8Za2d#fight=49&source=9",
+      "https://www.warcraftlogs.com/reports/QBbk9P6z3m7rDdFf#fight=37&source=9",
+      "https://www.warcraftlogs.com/reports/mQYjcyVJTPAwFHhd#fight=45&source=430"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "opener",
+        "icons": 35,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "opener",
+        "icons": 29,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "singleTarget",
+        "icons": 10,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 390,
+        "mode": "aoe",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 390,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "paladin-protection",
+    "title": "보호 성기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-paladin-protection-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/H6NaY7pGhtvrAqZR#fight=46&source=11",
+      "https://www.warcraftlogs.com/reports/ZkGbpHxBzga9LXFJ#fight=2&source=31",
+      "https://www.warcraftlogs.com/reports/xNcgGZ8WQdYrR3kL#fight=2&source=2",
+      "https://www.warcraftlogs.com/reports/P8zLgctCJ9D2h1WR#fight=10&source=484"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 45,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 33,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-brewmaster",
+    "title": "양조 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-brewmaster-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/N2DV6gFLKcp47d8v#fight=13&source=17",
+      "https://www.warcraftlogs.com/reports/ZFpKqyhx9GVDRHNQ#fight=1&source=13",
+      "https://www.warcraftlogs.com/reports/LxcA4dDHP82JTpGr#fight=5&source=469",
+      "https://www.warcraftlogs.com/reports/kJ32TVjRp4xWMPAa#fight=5&source=21"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 32,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "deathknight-unholy",
+    "title": "부정 죽음의 기사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-deathknight-unholy-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/K3gdZy8hAfwNmcGB#fight=11&source=41",
+      "https://www.warcraftlogs.com/reports/8vQB7hKd3CAVJ9yp#fight=1&source=2",
+      "https://www.warcraftlogs.com/reports/Fn43q7BQXA1ghCWT#fight=16&source=486",
+      "https://www.warcraftlogs.com/reports/9KWD8VxTprhBZvJa#fight=1&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 18,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 22,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 16,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-windwalker",
+    "title": "풍운 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-windwalker-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/trT1Qjn3KgY29NdG#fight=3&source=15",
+      "https://www.warcraftlogs.com/reports/rBRF8xQ9tCbXdP2y#fight=7&source=227",
+      "https://www.warcraftlogs.com/reports/pgrzXxK46FdA7PLC#fight=6&source=16",
+      "https://www.warcraftlogs.com/reports/hxBXZ2Aa3JgqVkmb#fight=9&source=95"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 34,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 43,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 48,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 46,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 38,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "hunter-marksmanship",
+    "title": "사격 사냥꾼 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-hunter-marksmanship-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/WNhMA27TZ3dYDawJ#fight=1&source=20",
+      "https://www.warcraftlogs.com/reports/Z2wBx9XWrLqg1ktT#fight=8&source=14",
+      "https://www.warcraftlogs.com/reports/hcTVyJYXBQqM8vtw#fight=3&source=73",
+      "https://www.warcraftlogs.com/reports/h3PANJGDb6wpgxHV#fight=1&source=4"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 42,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 26,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 65,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 36,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 30,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 63,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "priest-discipline",
+    "title": "수양 사제 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-priest-discipline-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/G1fXWjQTRcvtBmFN#fight=14&source=10",
+      "https://www.warcraftlogs.com/reports/QnGyvzwW1ACMg9Yt#fight=3&source=143",
+      "https://www.warcraftlogs.com/reports/BpaJ7QTz8bjFA9tV#fight=3&source=3",
+      "https://www.warcraftlogs.com/reports/26BwCYWhqpXaJNzM#fight=2&source=5"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 40,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 20,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 31,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 19,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 24,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  },
+  {
+    "id": "monk-mistweaver",
+    "title": "운무 수도사 가이드",
+    "talents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-1440-talents.png",
+    "comparison": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1-round-7\\public-ui-monk-mistweaver-1440-comparison.png",
+    "matchedSources": [
+      "https://www.warcraftlogs.com/reports/fgqLRDZQ2y8KvkYF#fight=5&source=2",
+      "https://www.warcraftlogs.com/reports/mPA71pNLzxY8Za2d#fight=49&source=9",
+      "https://www.warcraftlogs.com/reports/QBbk9P6z3m7rDdFf#fight=37&source=9",
+      "https://www.warcraftlogs.com/reports/mQYjcyVJTPAwFHhd#fight=45&source=430"
+    ],
+    "modeChecks": [
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 35,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 0,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 17,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "opener",
+        "icons": 29,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "singleTarget",
+        "icons": 10,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      },
+      {
+        "hero": 1,
+        "width": 1440,
+        "mode": "aoe",
+        "icons": 13,
+        "missing": [],
+        "overflow": false,
+        "fit": true
+      }
+    ],
+    "width": 1440,
+    "overflow": false,
+    "builds": 3,
+    "missingVisibleIcons": 0,
+    "bundle": "https://wowmeta.vercel.app/static/js/main.5fa3fb51.js"
+  }
+]

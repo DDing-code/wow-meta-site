@@ -10,6 +10,8 @@
 - 가이드 원고와 KB 정본 40개가 일치하며, 특성 견본 120개·영웅별 상황 240개·기존 미국 조건 비교 160건의 검수 근거를 유지합니다. 한국 사례와 공개 저자의 추천은 성능 비교와 구별해 표시합니다. 기존 완료 4개·부분 검수 36개 상태를 유지하며, 모든 가이드 최신 메타 확정·미검증 0이라는 최종 목표는 아직 충족하지 못했습니다.
 - 전체 검증과 최종 빌드가 통과했습니다. 온라인 KB 툴팁 2,988개·가이드 아이콘 711개는 오류·경고 0이며, 공식 설명 164개도 원문과 일치합니다. 의도적인 과거 주문 경고 6개와 기존 린트·번들 크기 경고는 남습니다. 최종 번들·화면 검사·커밋·배포 결과는 아래 완료 기록과 `artifacts/goal-12.1-round-7/`에 추가합니다.
 - 최종 빌드 `main.5fa3fb51.js`(SHA256 `6cdd44a85d1bb576ff96c9bd242dfcbd2c14f8bfea698776deb0a877a9f3540d`)에서 40개 가이드 × 320·390·1440px의 120화면, 영웅별 상황 선택 720건, 특성 펼침 360건이 통과했습니다. 본 담당이 딜사이클·특성·비교 근거 화면 모음 45장도 직접 열어 확인했습니다. 이 검사는 별도 독립 검수로 계산하지 않습니다. 관련 KB 원본 48개는 로컬 커밋 `82bf1ce`로 보존했습니다.
+- 사이트 내용과 생성 DB는 같은 커밋 `df833379`로 푸시했고, 정적 빌드 파일 6개만 운영에 배포했습니다. Vercel `dpl_JBfqBj3m2SHkYvXTwqCCadVCCPiK`가 Ready이며 `https://wowmeta.vercel.app`에서 공개 파일 6개의 해시와 40개 가이드 경로의 최종 번들이 일치합니다. 공개 보호 기사·양조·부정·풍운·사격·수양·운무 7개 가이드 × 세 화면 크기의 21화면, 영웅별 상황 선택 126건, 특성 펼침 63건도 통과했습니다. 이 공개 화면 검사는 40개 전수 검사로 해석하지 않습니다. 공개 화면 9장을 본 담당이 직접 열어 다시 확인했습니다. `.env`·소스맵은 배포물에 없습니다.
+- 별도 허브 t1v의 독립 검수와 소유 파일 `guideUpdates.js`의 Git 날짜·출처 갱신은 인계합니다. 원고 40개·영웅 80개별 결론을 기록했어도, 공식 실측 한국 적용 순간·추천 충돌·한국 미관측 분기 24개의 성능 우열이 확인되지 않았으므로 완료 4개·부분 검수 36개를 유지합니다.
 - 근거: `korean-official-review.json`, `korean-maintenance-review.json`, `korean-tooltip-review.json`, `hero-review.json`, `author-source-review.json`, `additional-author-check.json`, `completion-evidence.json`, `korea-combats.json`, `missing-mode-review.json`, `exact-tooltip-check.json`, `local-verification.json`, `primary-visual-review.json`, `validate.log`, `kb-online.log`, `icons-online.log`, `build.log`.
 
 ## 2026-10-08 5라운드 독립 육안 검수

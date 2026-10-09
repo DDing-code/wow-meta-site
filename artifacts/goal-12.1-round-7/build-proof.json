@@ -6,8 +6,12 @@
   "sourceMaps": false,
   "envFiles": false,
   "gitBase": "d0085fc1",
-  "newCommit": null,
-  "pushed": false,
-  "deployed": false,
-  "independentVisualReview": "허브 t1v 대기"
+  "newCommit": "df833379c9cc6a9b8208bb08255fdd55329fd3b0",
+  "pushed": true,
+  "deployed": true,
+  "independentVisualReview": "허브 t1v 대기",
+  "deploymentId": "dpl_JBfqBj3m2SHkYvXTwqCCadVCCPiK",
+  "deploymentUrl": "https://wowmeta-hc78rqp4k-d2jks-projects.vercel.app",
+  "deploymentStatus": "Ready",
+  "publicUrl": "https://wowmeta.vercel.app"
 }
