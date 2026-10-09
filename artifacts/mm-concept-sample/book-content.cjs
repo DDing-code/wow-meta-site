@@ -3,6 +3,27 @@
 // 현장 팁(fieldTips)과 현장의 목소리(voices)는 research-*.md에 정리한 공개 자료에서 가져온다.
 const { VOICES, FIELD_TIPS, EXTRA_SOURCES, VOICES_INTRO } = require('./book-voices.cjs');
 const { fixDeep } = require('./terms.cjs');
+const { DIAGRAMS } = require('./book-diagrams.cjs');
+
+// 장 제목으로 도식을 붙인다. 키 순서는 concept 바로 뒤에 diagram이 오게 한다.
+function withDiagrams(blocks) {
+  const used = new Set();
+  const next = blocks.map(block => {
+    const diagram = DIAGRAMS[block.title];
+    if (!diagram) return block;
+    used.add(block.title);
+    const out = {};
+    for (const [key, value] of Object.entries(block)) {
+      out[key] = value;
+      if (key === 'concept') out.diagram = diagram;
+    }
+    if (!out.diagram) out.diagram = diagram;
+    return out;
+  });
+  const missing = Object.keys(DIAGRAMS).filter(title => !used.has(title));
+  if (missing.length) throw new Error(`도식이 붙을 장을 찾지 못함: ${missing.join(', ')}`);
+  return next;
+}
 
 const tipsFor = key => FIELD_TIPS[key] || [];
 
@@ -388,6 +409,7 @@ const BOOK = {
     concept: '한 줄 원리',
     example: '이럴 땐 이렇게',
     fieldTips: '현장 팁',
+    diagram: '스킬 구조',
     mistakes: '자주 하는 실수',
     quiz: '확인 문제',
     voices: '현장의 목소리',
@@ -401,7 +423,7 @@ function transform(original) {
   next.researchedAt = '2026-10-10';
   next.summary = SUMMARY;
   next.playstyle = PLAYSTYLE;
-  next.blocks = BLOCKS;
+  next.blocks = withDiagrams(BLOCKS);
   next.book = BOOK;
   const tips = require('./book-voices.cjs').TIPS;
   if (tips?.length) next.tips = tips;

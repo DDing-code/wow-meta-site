@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import SpecializationIcon from '../components/SpecializationIcon.js';
 import {
   Activity,
+  ArrowDown,
   ArrowLeft,
   ArrowRight,
   BarChart3,
@@ -12,6 +13,7 @@ import {
   Gauge,
   Link2,
   Map as MapIcon,
+  RotateCcw,
   Shield,
   Sparkles,
   Target,
@@ -2034,6 +2036,7 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
 
 const BOOK_BOX_LABELS = {
   concept: '개념 정리',
+  diagram: '스킬 구조',
   example: '예시 상황',
   fieldTips: '현장 팁',
   mistakes: '자주 하는 실수',
@@ -2059,6 +2062,90 @@ function getBookLayout(manuscript, blocks) {
       .filter(item => item.block.part === part.id),
   }));
   return { book, labels, voices, parts, firstIndexByPart };
+}
+
+// 개념서 장의 스킬 구조 흐름도: 층(layers)을 위에서 아래로 읽는다. 층 사이 link는 앞 층이 뒤 층에 주는 것,
+// loop는 맨 아래에서 맨 위로 되돌아가는 설명이다. 노드는 skillId가 있으면 아이콘·툴팁·Wowhead 링크가 붙는다.
+function getBlockDiagrams(block) {
+  const diagram = block?.diagram;
+  if (!diagram) return [];
+  return (Array.isArray(diagram) ? diagram : [diagram]).filter(item => item?.layers?.length);
+}
+
+const BOOK_DIAGRAM_KIND_LEGEND = [
+  ['core', '이 장의 중심'],
+  ['buff', '발동·강화 상태'],
+  ['talent', '선택 특성'],
+];
+
+function BookDiagramNode({ node, guide, inlineTerms }) {
+  const skill = node.skillId ? skillFromBranchId(node.skillId) : null;
+  const kind = node.kind || (skill ? 'skill' : 'effect');
+  const label = displayGuideText(node.label || (skill ? skillName(skill) : ''));
+  return (
+    <BookDiagramNodeBox $color={guide.color} $kind={kind} data-diagram-node={kind}>
+      {!!node.tag && <small>{displayGuideText(node.tag)}</small>}
+      <strong>
+        {skill
+          ? <InlineSkillTerm skill={skill}>{label}</InlineSkillTerm>
+          : <span><BookDiagramGlyph aria-hidden="true"><Sparkles size={13} /></BookDiagramGlyph><em>{renderGuideText(label, inlineTerms)}</em></span>}
+      </strong>
+      {!!node.note && <p>{renderGuideText(node.note, inlineTerms)}</p>}
+    </BookDiagramNodeBox>
+  );
+}
+
+function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
+  const layers = diagram?.layers || [];
+  if (!layers.length) return null;
+  const usedKinds = new Set(layers.flatMap(layer => (layer.nodes || []).map(node => node.kind || (node.skillId ? 'skill' : 'effect'))));
+  const legend = BOOK_DIAGRAM_KIND_LEGEND.filter(([kind]) => usedKinds.has(kind));
+  const title = displayGuideText(diagram.title);
+
+  return (
+    <BookDiagramFigure $color={guide.color} data-book-box="diagram" aria-label={title}>
+      <BookDiagramHead>
+        <BookBoxLabel>{label}</BookBoxLabel>
+        <span>위에서 아래로 읽기</span>
+      </BookDiagramHead>
+      <strong>{renderGuideText(diagram.title, inlineTerms)}</strong>
+      <BookDiagramLayers>
+        {layers.map((layer, index) => (
+          <React.Fragment key={`${title}-${index}`}>
+            {(index > 0 || !!layer.link) && (
+              <BookDiagramLink $color={guide.color} $connected={index > 0}>
+                <span>
+                  {index > 0 && <ArrowDown size={12} aria-hidden="true" />}
+                  {!!layer.link && renderGuideText(layer.link, inlineTerms)}
+                </span>
+              </BookDiagramLink>
+            )}
+            <BookDiagramRow $color={guide.color} role="list" aria-label={layer.link ? displayGuideText(layer.link) : `${index + 1}단계`}>
+              {(layer.nodes || []).map((node, nodeIndex) => (
+                <li key={`${node.skillId || node.label}-${nodeIndex}`}>
+                  <BookDiagramNode node={node} guide={guide} inlineTerms={inlineTerms} />
+                </li>
+              ))}
+            </BookDiagramRow>
+          </React.Fragment>
+        ))}
+        {!!diagram.loop && (
+          <BookDiagramLoop $color={guide.color}>
+            <RotateCcw size={13} aria-hidden="true" />
+            <span>{renderGuideText(diagram.loop, inlineTerms)}</span>
+          </BookDiagramLoop>
+        )}
+      </BookDiagramLayers>
+      {!!diagram.note && <p>{renderGuideText(diagram.note, inlineTerms)}</p>}
+      {!!legend.length && (
+        <BookDiagramLegend $color={guide.color} aria-label="상자 종류">
+          {legend.map(([kind, text]) => (
+            <li key={kind} data-legend-kind={kind}><i aria-hidden="true" />{text}</li>
+          ))}
+        </BookDiagramLegend>
+      )}
+    </BookDiagramFigure>
+  );
 }
 
 function BookChapterExtras({ block, layout, guide, inlineTerms }) {
@@ -2548,6 +2635,15 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                     <p>{renderGuideText(block.concept, inlineTerms)}</p>
                   </BookConcept>
                 )}
+                {!!bookLayout && getBlockDiagrams(block).map((diagram, diagramIndex) => (
+                  <BookSkillDiagram
+                    key={`${diagram.title}-${diagramIndex}`}
+                    diagram={diagram}
+                    guide={guide}
+                    inlineTerms={inlineTerms}
+                    label={bookLayout.labels.diagram}
+                  />
+                ))}
                 {block.paragraphs?.map(paragraph => (
                   <p key={paragraph}>{renderGuideText(paragraph, inlineTerms)}</p>
                 ))}
@@ -6106,6 +6202,345 @@ const BookConcept = styled.div`
     font-size: 0.98rem;
     font-weight: 680;
     line-height: 1.7;
+  }
+`;
+
+const BookDiagramFigure = styled.figure`
+  position: relative;
+  min-width: 0;
+  margin: 14px 0 0;
+  padding: 13px 16px 12px;
+  border: 1px solid rgba(244, 239, 229, 0.11);
+  border-radius: 6px;
+  background:
+    radial-gradient(120% 60% at 50% 0%, ${props => props.$color}16 0%, transparent 62%),
+    radial-gradient(rgba(244, 239, 229, 0.06) 1px, transparent 1.3px) 0 0 / 14px 14px,
+    rgba(8, 13, 17, 0.72);
+  container-type: inline-size;
+  overflow: hidden;
+
+  > strong {
+    display: block;
+    margin-top: 4px;
+    color: #f4efe5;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.45;
+    word-break: keep-all;
+  }
+
+  > p {
+    margin-top: 12px;
+    padding: 8px 10px;
+    border-left: 2px solid ${props => props.$color}66;
+    background: rgba(11, 16, 20, 0.55);
+    color: #b4bdc3;
+    font-size: 0.8rem;
+    line-height: 1.65;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const BookDiagramHead = styled.div`
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+
+  > span {
+    color: #7f8a92;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+`;
+
+const BookDiagramLayers = styled.div`
+  display: grid;
+  gap: 0;
+  margin-top: 12px;
+`;
+
+/* 층 사이 연결: 위 층에서 내려오는 선 → 설명 칩 → 아래 층 가지로 이어지는 짧은 선 */
+const BookDiagramLink = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  &::before {
+    content: '';
+    display: ${props => (props.$connected ? 'block' : 'none')};
+    width: 2px;
+    height: 16px;
+    background: linear-gradient(180deg, ${props => props.$color}22, ${props => props.$color}88);
+  }
+
+  &::after {
+    content: '';
+    width: 2px;
+    height: 8px;
+    background: ${props => props.$color}88;
+  }
+
+  span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 100%;
+    padding: 3px 11px;
+    border: 1px solid ${props => props.$color}55;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #16202a, #0f161c);
+    box-shadow: 0 0 0 3px rgba(8, 13, 17, 0.9), 0 4px 10px -6px rgba(0, 0, 0, 0.9);
+    color: #e6ebee;
+    font-size: 0.74rem;
+    font-weight: 760;
+    line-height: 1.5;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  svg {
+    flex: 0 0 auto;
+    color: ${props => props.$color};
+  }
+`;
+
+/* 한 층의 노드는 같은 줄에 나란히 놓고, 노드마다 위쪽 가지선으로 연결 칩에 묶는다 */
+const BookDiagramRow = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    flex: 1 1 132px;
+    min-width: 0;
+    max-width: 268px;
+    padding-top: 10px;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    margin-left: -1px;
+    background: ${props => props.$color}88;
+  }
+
+  li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: ${props => props.$color}55;
+  }
+
+  li:first-child::after {
+    left: 50%;
+  }
+
+  li:last-child::after {
+    right: 50%;
+  }
+
+  li:only-child::after {
+    display: none;
+  }
+`;
+
+const BookDiagramNodeBox = styled.div`
+  height: 100%;
+  min-width: 0;
+  padding: 9px 10px 10px;
+  border: 1px ${props => (props.$kind === 'talent' ? 'dashed' : 'solid')}
+    ${props => (
+      props.$kind === 'core' ? props.$color
+        : props.$kind === 'buff' ? 'rgba(150, 182, 210, 0.38)'
+        : props.$kind === 'talent' ? 'rgba(244, 239, 229, 0.36)'
+        : 'rgba(244, 239, 229, 0.16)'
+    )};
+  border-radius: 6px;
+  background: ${props => (
+    props.$kind === 'core' ? `linear-gradient(180deg, ${props.$color}30, ${props.$color}10), #0f161b`
+      : props.$kind === 'buff' ? 'linear-gradient(180deg, rgba(120, 156, 190, 0.22), rgba(120, 156, 190, 0.08)), #0f161b'
+      : props.$kind === 'talent' ? 'linear-gradient(180deg, #141b21, #0f1519)'
+      : 'linear-gradient(180deg, #121920, #0d1317)'
+  )};
+  box-shadow: ${props => (
+    props.$kind === 'core'
+      ? `0 0 0 1px ${props.$color}44, 0 0 26px -8px ${props.$color}cc, 0 8px 18px -12px rgba(0, 0, 0, 0.9)`
+      : '0 8px 18px -12px rgba(0, 0, 0, 0.9)'
+  )};
+
+  small {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: ${props => props.$color}22;
+    color: ${props => props.$color};
+    font-size: 0.64rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    word-break: keep-all;
+  }
+
+  strong {
+    display: block;
+    color: #f3eee4;
+    font-size: 0.88rem;
+    font-weight: 760;
+    line-height: 1.35;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  strong > a,
+  strong > span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    margin: 0;
+    border-bottom: 0;
+    color: #f0d48f;
+    white-space: normal;
+    vertical-align: baseline;
+  }
+
+  strong > a > em,
+  strong > span > em {
+    display: block;
+    min-width: 0;
+    font-style: normal;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  strong > a:hover > em {
+    color: #f7dda0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(247, 221, 160, 0.6);
+  }
+
+  strong > a > img,
+  strong > a > span {
+    flex: 0 0 auto;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid ${props => (props.$kind === 'core' ? `${props.$color}aa` : 'rgba(255, 209, 102, 0.42)')};
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 0.55);
+  }
+
+  strong > span > em {
+    color: #e9edf0;
+  }
+
+  p {
+    margin-top: 6px;
+    color: #aeb8be;
+    font-size: 0.76rem;
+    line-height: 1.55;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const BookDiagramGlyph = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border: 1px dashed rgba(244, 239, 229, 0.3);
+  border-radius: 4px;
+  background: rgba(244, 239, 229, 0.05);
+  color: #c9bd9c;
+`;
+
+const BookDiagramLoop = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 9px 10px 2px;
+  border-top: 1px dashed ${props => props.$color}55;
+  color: #cdd4d9;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+
+  svg {
+    flex: 0 0 auto;
+    box-sizing: content-box;
+    margin-top: 1px;
+    padding: 3px;
+    border: 1px solid ${props => props.$color}66;
+    border-radius: 50%;
+    background: ${props => props.$color}1a;
+    color: ${props => props.$color};
+  }
+`;
+
+const BookDiagramLegend = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid rgba(244, 239, 229, 0.08);
+  list-style: none;
+  color: #8f9aa2;
+  font-size: 0.7rem;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  i {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    border: 1px solid rgba(244, 239, 229, 0.3);
+    border-radius: 2px;
+    background: #121920;
+  }
+
+  li[data-legend-kind='core'] i {
+    border-color: ${props => props.$color};
+    background: ${props => props.$color}33;
+    box-shadow: 0 0 6px -1px ${props => props.$color}99;
+  }
+
+  li[data-legend-kind='buff'] i {
+    border-color: rgba(150, 182, 210, 0.5);
+    background: rgba(120, 156, 190, 0.22);
+  }
+
+  li[data-legend-kind='talent'] i {
+    border-style: dashed;
   }
 `;
 

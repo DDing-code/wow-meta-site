@@ -968,6 +968,20 @@ function validateBookLayout(spec, manuscript) {
     (block.quiz || []).forEach(item => {
       assert(item.q?.length >= 10 && item.a?.length >= 20, `${blockPrefix}: quiz needs question and answer`);
     });
+    const diagrams = block.diagram ? (Array.isArray(block.diagram) ? block.diagram : [block.diagram]) : [];
+    diagrams.forEach((diagram, diagramIndex) => {
+      const diagramPrefix = `${blockPrefix}.diagram[${diagramIndex}]`;
+      assert(diagram.title?.length >= 4 && diagram.layers?.length >= 2, `${diagramPrefix}: diagram needs a title and at least two layers`);
+      diagram.layers.forEach((layer, layerIndex) => {
+        assert(layer.nodes?.length >= 1, `${diagramPrefix}.layers[${layerIndex}]: layer needs nodes`);
+        assert(layerIndex === 0 || layer.link?.length >= 2, `${diagramPrefix}.layers[${layerIndex}]: layers after the first need a link label`);
+        layer.nodes.forEach((node, nodeIndex) => {
+          assert(node.label?.length >= 2, `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: node needs a label`);
+          assert(!node.kind || ['core', 'skill', 'buff', 'talent', 'effect'].includes(node.kind), `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: unknown node kind ${node.kind}`);
+          assert(node.kind === 'effect' || /^\d+$/.test(String(node.skillId || '')), `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: skill nodes need a numeric skillId`);
+        });
+      });
+    });
   });
   assert(!/우두머리|졸개/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 우두머리/졸개)`);
   const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
@@ -1455,6 +1469,7 @@ function main() {
   }
   assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
   assert(marksmanship.book?.parts?.length === 4 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep four parts, chapter concepts and collected voices');
+  assert(marksmanship.blocks.filter(block => block.diagram).length >= 7, 'Marksmanship concept-book sample must keep skill structure diagrams on the concept and hero chapters');
   assert(marksmanship.blocks.reduce((count, block) => count + (block.fieldTips || []).length, 0) >= 20 && marksmanship.blocks.some(block => block.quiz?.length), 'Marksmanship sample must keep sourced field tips and review questions');
   assert(/파수꾼.*광역/.test(marksmanship.blocks.find(block => block.title.includes('속사 끝'))?.concept || ''), 'Rapid Fire clipping must stay limited to Sentinel AoE after the August 20 hotfix');
 

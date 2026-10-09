@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4179",
-  "checkedAt": "2026-10-09T20:14:34.977Z",
+  "checkedAt": "2026-10-09T20:50:36.675Z",
   "results": [
     {
       "width": 320,
@@ -22,11 +22,19 @@
       "contents": 14,
       "heroTabs": 2,
       "wideBoxes": 0,
+      "diagrams": 9,
+      "diagramNodes": 52,
+      "diagramSkillLinks": 98,
+      "diagramIconsLoaded": 76,
+      "diagramWide": 0,
       "quizOpens": true,
+      "diagramIconHoverColor": "rgb(241, 213, 145)",
       "errors": [],
       "shots": {
         "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-contents.png",
         "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-chapter.png",
+        "diagram1": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-diagram1.png",
+        "diagram2": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-diagram2.png",
         "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-quiz.png",
         "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-320-voices.png"
       }
@@ -51,11 +59,19 @@
       "contents": 14,
       "heroTabs": 2,
       "wideBoxes": 0,
+      "diagrams": 9,
+      "diagramNodes": 52,
+      "diagramSkillLinks": 98,
+      "diagramIconsLoaded": 81,
+      "diagramWide": 0,
       "quizOpens": true,
+      "diagramIconHoverColor": "rgb(241, 213, 145)",
       "errors": [],
       "shots": {
         "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-contents.png",
         "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-chapter.png",
+        "diagram1": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-diagram1.png",
+        "diagram2": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-diagram2.png",
         "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-quiz.png",
         "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-390-voices.png"
       }
@@ -80,11 +96,19 @@
       "contents": 14,
       "heroTabs": 2,
       "wideBoxes": 0,
+      "diagrams": 9,
+      "diagramNodes": 52,
+      "diagramSkillLinks": 98,
+      "diagramIconsLoaded": 83,
+      "diagramWide": 0,
       "quizOpens": true,
+      "diagramIconHoverColor": "rgb(240, 212, 143)",
       "errors": [],
       "shots": {
         "contents": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-contents.png",
         "chapter": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-chapter.png",
+        "diagram1": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-diagram1.png",
+        "diagram2": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-diagram2.png",
         "quiz": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-quiz.png",
         "voices": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\mm-concept-sample\\mm-book-1440-voices.png"
       }

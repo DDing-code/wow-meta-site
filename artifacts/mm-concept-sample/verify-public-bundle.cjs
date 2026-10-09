@@ -1,0 +1,24 @@
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
+const path = require('node:path');
+(async () => {
+  const origin = 'https://wowmeta.vercel.app';
+  const index = await fetch(origin + '/guide');
+  assert.equal(index.status, 200);
+  const html = await index.text();
+  const manifest = await fetch(origin + '/asset-manifest.json');
+  assert.equal(manifest.status, 200);
+  const asset = (await manifest.json()).files['main.js'];
+  const localManifest = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../build/asset-manifest.json'), 'utf8')); assert.equal(asset, localManifest.files['main.js']);
+  assert(html.includes(asset));
+  const response = await fetch(origin + asset);
+  assert.equal(response.status, 200);
+  const remote = Buffer.from(await response.arrayBuffer());
+  const local = fs.readFileSync(path.resolve(__dirname, '../../build' + asset));
+  const hash = x => crypto.createHash('sha256').update(x).digest('hex');
+  assert.equal(hash(remote), hash(local));
+  const proof = {url:origin,bundle:asset,httpStatus:response.status,bytes:remote.length,sha256:hash(remote),matchesBuild:true};
+  fs.writeFileSync(path.join(__dirname, 'public-bundle.json'), JSON.stringify(proof, null, 2));
+  console.log(JSON.stringify(proof));
+})().catch(error => { console.error(error); process.exitCode = 1; });
