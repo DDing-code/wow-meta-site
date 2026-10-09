@@ -969,6 +969,7 @@ function validateBookLayout(spec, manuscript) {
       assert(item.q?.length >= 10 && item.a?.length >= 20, `${blockPrefix}: quiz needs question and answer`);
     });
   });
+  assert(!/우두머리|졸개/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 우두머리/졸개)`);
   const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
   assert(partOrder.every((value, index) => index === 0 || value >= partOrder[index - 1]), `${prefix}: chapters must follow part order`);
   voices.forEach(voice => {
