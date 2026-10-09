@@ -2037,7 +2037,7 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
 const BOOK_BOX_LABELS = {
   concept: '개념 정리',
   diagram: '스킬 구조',
-  lanes: '딜사이클 한눈에',
+  timeline: '딜사이클 타임라인',
   example: '예시 상황',
   fieldTips: '현장 팁',
   mistakes: '자주 하는 실수',
@@ -2149,61 +2149,80 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
   );
 }
 
-// 딜사이클 가로줄: 상황(발동·조건)마다 한 줄씩, 왼쪽에서 오른쪽으로 읽는다. 전투 흐름 카드의 줄(OpenerFlowList)을 그대로 쓴다.
-function getBlockLanes(block) {
-  const lanes = block?.lanes;
-  if (!lanes) return [];
-  return (Array.isArray(lanes) ? lanes : [lanes]).filter(item => item?.groups?.length);
+// 딜사이클 타임라인: 굵은 가로줄 위에 스킬 아이콘을 순서대로 놓고, 조건이 됐을 때 끼워 넣는 스킬은 줄 위로 올린다.
+// 구간 설명은 아이콘 밑 짧은 말(caption)로 쓴다. 아이콘은 Wowhead 툴팁 링크(SkillIconLink)다.
+function getBlockTimelines(block) {
+  const timeline = block?.timeline;
+  if (!timeline) return [];
+  return (Array.isArray(timeline) ? timeline : [timeline]).filter(item => item?.rails?.length);
 }
 
-function BookRotationLanes({ lanes, guide, inlineTerms, label }) {
-  const groups = lanes?.groups || [];
-  if (!groups.length) return null;
-  const title = displayGuideText(lanes.title);
+function BookTimelineNode({ node, guide, hasAbove, line, inlineTerms }) {
+  const skill = skillFromBranchId(node.skillId);
+  const above = node.above && skillFromBranchId(node.above.skillId) ? node.above : null;
+  const aboveSkill = above ? skillFromBranchId(above.skillId) : null;
   return (
-    <BookDiagramFigure $color={guide.color} data-book-box="lanes" aria-label={title}>
+    <BookTimelineItem $hasAbove={hasAbove} $line={line} data-timeline-node>
+      {hasAbove && (
+        <BookTimelineAbove $color={guide.color} $filled={!!above} data-timeline-above={above ? 'true' : undefined}>
+          {!!above && (
+            <>
+              <small>{renderGuideText(above.when, inlineTerms)}</small>
+              <SkillIconLink skill={aboveSkill} size={28} />
+              <i aria-hidden="true" />
+            </>
+          )}
+        </BookTimelineAbove>
+      )}
+      <BookTimelineIcon>
+        <SkillIconLink skill={skill} size={40} />
+      </BookTimelineIcon>
+      {!!node.caption && <p>{renderGuideText(node.caption, inlineTerms)}</p>}
+    </BookTimelineItem>
+  );
+}
+
+function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
+  const rails = timeline?.rails || [];
+  if (!rails.length) return null;
+  const title = displayGuideText(timeline.title);
+  return (
+    <BookDiagramFigure $color={guide.color} data-book-box="timeline" aria-label={title}>
       <BookDiagramHead>
         <BookBoxLabel>{label}</BookBoxLabel>
         <span>왼쪽에서 오른쪽으로 읽기</span>
       </BookDiagramHead>
-      <strong>{renderGuideText(lanes.title, inlineTerms)}</strong>
-      {!!lanes.intro && <BookLaneIntro>{renderGuideText(lanes.intro, inlineTerms)}</BookLaneIntro>}
-      {groups.map(group => (
-        <BookLaneGroup key={group.label} $color={guide.color} data-lane-group>
-          <BookLaneGroupLabel $color={guide.color}>{renderGuideText(group.label, inlineTerms)}</BookLaneGroupLabel>
-          <BookLaneList>
-            {(group.lanes || []).map(lane => (
-              <BookLane key={lane.when} data-lane>
-                <BookLaneWhen>{renderGuideText(lane.when, inlineTerms)}</BookLaneWhen>
-                <BookLaneBody>
-                  <OpenerFlowList $color={guide.color} role="list" aria-label={displayGuideText(lane.when)} data-lane-rail>
-                    {(lane.steps || []).map((step, stepIndex) => {
-                      const skill = skillFromBranchId(step.skillId);
-                      return (
-                        <li key={`${step.skillId}-${stepIndex}`}>
-                          {skill
-                            ? <InlineSkillTerm skill={skill}>{displayGuideText(step.label || skillName(skill))}</InlineSkillTerm>
-                            : <span>{displayGuideText(step.label)}</span>}
-                          {!!step.tag && <BookLaneTag>{displayGuideText(step.tag)}</BookLaneTag>}
-                          {stepIndex < lane.steps.length - 1 && (step.orNext
-                            ? <BookLaneTag>또는</BookLaneTag>
-                            : <ArrowRight size={13} aria-hidden="true" />)}
-                        </li>
-                      );
-                    })}
-                  </OpenerFlowList>
-                  {!!lane.note && (
-                    <OpenerFlowDetails>
-                      <summary aria-label={`${displayGuideText(lane.when)}: 조건·예외`}>조건·예외</summary>
-                      <p>{renderGuideText(lane.note, inlineTerms)}</p>
-                    </OpenerFlowDetails>
-                  )}
-                </BookLaneBody>
-              </BookLane>
-            ))}
-          </BookLaneList>
-        </BookLaneGroup>
-      ))}
+      <strong>{renderGuideText(timeline.title, inlineTerms)}</strong>
+      {!!timeline.intro && <BookTimelineIntro>{renderGuideText(timeline.intro, inlineTerms)}</BookTimelineIntro>}
+      {rails.map(rail => {
+        const nodes = rail.nodes || [];
+        const line = rail.kind !== 'inserts';
+        const hasAbove = line && nodes.some(node => node.above);
+        return (
+          <BookTimelineRailBlock key={rail.label} data-timeline-rail={rail.kind || 'sequence'}>
+            <BookTimelineRailLabel $color={guide.color}>{renderGuideText(rail.label, inlineTerms)}</BookTimelineRailLabel>
+            <BookTimelineRail role="list" aria-label={displayGuideText(rail.label)} $line={line}>
+              {nodes.map((node, nodeIndex) => (
+                <li key={`${node.skillId}-${nodeIndex}`}>
+                  <BookTimelineNode node={node} guide={guide} hasAbove={hasAbove} line={line} inlineTerms={inlineTerms} />
+                </li>
+              ))}
+              {!!rail.loop && (
+                <li>
+                  <BookTimelineItem $hasAbove={hasAbove} $line={line} data-timeline-loop>
+                    {hasAbove && <BookTimelineAbove $color={guide.color} aria-hidden="true" />}
+                    <BookTimelineIcon>
+                      <BookTimelineLoopBadge $color={guide.color} aria-hidden="true"><RotateCcw size={16} /></BookTimelineLoopBadge>
+                    </BookTimelineIcon>
+                    <p>반복</p>
+                  </BookTimelineItem>
+                </li>
+              )}
+            </BookTimelineRail>
+            {!!rail.note && <BookTimelineNote>{renderGuideText(rail.note, inlineTerms)}</BookTimelineNote>}
+          </BookTimelineRailBlock>
+        );
+      })}
     </BookDiagramFigure>
   );
 }
@@ -2722,7 +2741,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                 </TakeawayPanel>
               )}
 
-              {!!bookLayout && (!!getBlockDiagrams(block).length || !!getBlockLanes(block).length) && (
+              {!!bookLayout && (!!getBlockDiagrams(block).length || !!getBlockTimelines(block).length) && (
                 <BookDiagramStack>
                   {getBlockDiagrams(block).map((diagram, diagramIndex) => (
                     <BookSkillDiagram
@@ -2733,13 +2752,13 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       label={bookLayout.labels.diagram}
                     />
                   ))}
-                  {getBlockLanes(block).map((lanes, lanesIndex) => (
-                    <BookRotationLanes
-                      key={`${lanes.title}-${lanesIndex}`}
-                      lanes={lanes}
+                  {getBlockTimelines(block).map((timeline, timelineIndex) => (
+                    <BookRotationTimeline
+                      key={`${timeline.title}-${timelineIndex}`}
+                      timeline={timeline}
                       guide={guide}
                       inlineTerms={inlineTerms}
-                      label={bookLayout.labels.lanes}
+                      label={bookLayout.labels.timeline}
                     />
                   ))}
                 </BookDiagramStack>
@@ -6645,19 +6664,21 @@ const BookDiagramLegend = styled.ul`
   }
 `;
 
-const BookLaneIntro = styled.p`
-  margin-top: 6px;
-  color: #aeb8be;
-  font-size: 0.82rem;
-  line-height: 1.65;
-  word-break: keep-all;
+const BookTimelineIntro = styled.p`
+  && {
+    margin-top: 6px;
+    color: #aeb8be;
+    font-size: 0.82rem;
+    line-height: 1.65;
+    word-break: keep-all;
+  }
 `;
 
-const BookLaneGroup = styled.div`
+const BookTimelineRailBlock = styled.div`
   margin-top: 14px;
 `;
 
-const BookLaneGroupLabel = styled.div`
+const BookTimelineRailLabel = styled.div`
   padding: 0 0 0 8px;
   border-left: 3px solid ${props => props.$color};
   color: #efe4d4;
@@ -6667,77 +6688,144 @@ const BookLaneGroupLabel = styled.div`
   word-break: keep-all;
 `;
 
-const BookLaneList = styled.div`
-  margin-top: 6px;
-  border-top: 1px solid rgba(168, 178, 188, 0.14);
+/* 굵은 가로줄: 노드마다 자기 칸 폭만큼 줄 조각을 그려 이어 붙인다. 줄이 넘치면 다음 행으로 이어진다 */
+const BookTimelineRail = styled.ol`
+  --timeline-icon: 40px;
+  --timeline-above: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 12px;
+  margin: 8px 0 0;
+  padding: 6px 0 0;
+  list-style: none;
+
+  li {
+    flex: 0 0 auto;
+    width: ${props => (props.$line ? '88px' : '128px')};
+    min-width: 0;
+  }
+
+  @container (max-width: 640px) {
+    --timeline-icon: 36px;
+    --timeline-above: 64px;
+
+    li {
+      width: ${props => (props.$line ? '72px' : '104px')};
+    }
+  }
 `;
 
-/* 한 줄 = 상황(왼쪽) + 스킬 순서와 짧은 설명(오른쪽). 좁은 화면에서는 상황이 위로 올라간다 */
-const BookLane = styled.div`
+const BookTimelineItem = styled.div`
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
-  gap: 4px 14px;
-  align-items: start;
-  padding: 5px 0;
-  border-bottom: 1px solid rgba(168, 178, 188, 0.1);
+  grid-template-rows: ${props => (props.$hasAbove ? 'var(--timeline-above) ' : '')}var(--timeline-icon) auto;
+  justify-items: center;
+  text-align: center;
 
-  @container (max-width: 640px) {
-    grid-template-columns: 1fr;
-    gap: 2px;
+  &::before {
+    content: '';
+    display: ${props => (props.$line ? 'block' : 'none')};
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(${props => (props.$hasAbove ? 'var(--timeline-above)' : '0px')} + var(--timeline-icon) / 2 - 2px);
+    height: 4px;
+    background: #414b55;
+  }
+
+  > p {
+    margin: 5px 2px 0;
+    color: #c7cfd4;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1.3;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 `;
 
-const BookLaneWhen = styled.div`
-  padding-top: 6px;
-  color: #d2b373;
-  font-size: 0.8rem;
-  font-weight: 760;
-  line-height: 1.45;
-  word-break: keep-all;
+/* 줄 위로 올라간 조건부 스킬: 조건 말 → 작은 아이콘 → 줄까지 내려오는 짧은 선 */
+const BookTimelineAbove = styled.div`
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
 
-  @container (max-width: 640px) {
-    padding-top: 0;
-  }
-`;
-
-const BookLaneBody = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0 12px;
-  align-items: start;
-  min-width: 0;
-
-  > ol {
-    padding: 3px 0;
-  }
-
-  > details {
-    border: 0;
-    padding: 4px 0;
-    color: #aeb8be;
-    font-size: 0.74rem;
-    line-height: 1.5;
-  }
-
-  > details[open] {
-    grid-column: 1 / -1;
-  }
-
-  > details p {
-    margin: 6px 0 0;
-  }
-
-  @container (max-width: 640px) {
+  small {
     display: block;
+    margin-bottom: 2px;
+    padding: 0 1px;
+    color: ${props => props.$color};
+    font-size: 0.6rem;
+    font-weight: 760;
+    line-height: 1.2;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  i {
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: ${props => props.$color}aa;
   }
 `;
 
-const BookLaneTag = styled.small`
-  margin-left: 2px;
-  color: #8f9aa2;
-  font-size: 0.7rem;
-  font-weight: 600;
-  white-space: nowrap;
+const BookTimelineIcon = styled.div`
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: var(--timeline-icon);
+  height: var(--timeline-icon);
+
+  > a,
+  > span {
+    width: var(--timeline-icon);
+    height: var(--timeline-icon);
+  }
+
+  > a {
+    border-color: rgba(244, 239, 229, 0.3);
+    box-shadow: 0 0 0 1px #080d11;
+  }
+
+  > a:hover {
+    border-color: #e7c46f;
+  }
+
+  > a:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 2px;
+  }
+`;
+
+const BookTimelineLoopBadge = styled.span`
+  display: grid;
+  place-items: center;
+  width: calc(var(--timeline-icon) - 6px);
+  height: calc(var(--timeline-icon) - 6px);
+  border: 1px solid ${props => props.$color}88;
+  border-radius: 50%;
+  background: #080d11;
+  color: ${props => props.$color};
+`;
+
+const BookTimelineNote = styled.p`
+  && {
+    margin: 8px 0 0;
+    color: #aeb8be;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
 `;
 
 const BookBox = styled.div`

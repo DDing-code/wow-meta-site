@@ -4,30 +4,30 @@
 const { VOICES, FIELD_TIPS, EXTRA_SOURCES, VOICES_INTRO } = require('./book-voices.cjs');
 const { fixDeep } = require('./terms.cjs');
 const { DIAGRAMS } = require('./book-diagrams.cjs');
-const { LANES } = require('./book-lanes.cjs');
+const { TIMELINES } = require('./book-timelines.cjs');
 
 // 장 제목으로 도식을 붙인다. 키 순서는 concept 바로 뒤에 diagram이 오게 한다.
 function withDiagrams(blocks) {
   const used = new Set();
   const next = blocks.map(block => {
     const diagram = DIAGRAMS[block.title];
-    const lanes = LANES[block.title];
-    if (!diagram && !lanes) return block;
+    const timeline = TIMELINES[block.title];
+    if (!diagram && !timeline) return block;
     used.add(block.title);
     const out = {};
     for (const [key, value] of Object.entries(block)) {
-      if (key === 'diagram' || key === 'lanes') continue;
+      if (key === 'diagram' || key === 'lanes' || key === 'timeline') continue;
       out[key] = value;
       if (key === 'concept') {
         if (diagram) out.diagram = diagram;
-        if (lanes) out.lanes = lanes;
+        if (timeline) out.timeline = timeline;
       }
     }
     if (diagram && !out.diagram) out.diagram = diagram;
-    if (lanes && !out.lanes) out.lanes = lanes;
+    if (timeline && !out.timeline) out.timeline = timeline;
     return out;
   });
-  const missing = [...Object.keys(DIAGRAMS), ...Object.keys(LANES)].filter(title => !used.has(title));
+  const missing = [...Object.keys(DIAGRAMS), ...Object.keys(TIMELINES)].filter(title => !used.has(title));
   if (missing.length) throw new Error(`도식이 붙을 장을 찾지 못함: ${missing.join(', ')}`);
   return next;
 }
@@ -417,7 +417,7 @@ const BOOK = {
     example: '이럴 땐 이렇게',
     fieldTips: '현장 팁',
     diagram: '스킬 구조',
-    lanes: '딜사이클 한눈에',
+    timeline: '딜사이클 타임라인',
     mistakes: '자주 하는 실수',
     quiz: '확인 문제',
     voices: '현장의 목소리',

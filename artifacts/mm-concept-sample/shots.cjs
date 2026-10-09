@@ -40,15 +40,14 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
       diagramWide: [...document.querySelectorAll('[data-book-box="diagram"], [data-diagram-node]')]
         .filter(el => el.getBoundingClientRect().right > window.innerWidth + 1 || el.scrollWidth > el.clientWidth + 1).length,
       // 딜사이클 가로줄: 묶음·줄·스킬 링크 수, 넘침, PC에서 줄 하나가 한 줄(줄바꿈 없음)인 비율
-      laneSets: document.querySelectorAll('[data-book-box="lanes"]').length,
-      lanes: document.querySelectorAll('[data-lane]').length,
-      laneSkillLinks: document.querySelectorAll('[data-lane-rail] a[data-wowhead]').length,
-      laneWide: [...document.querySelectorAll('[data-book-box="lanes"], [data-lane], [data-lane-rail]')]
+      // 딜사이클 타임라인: 상자·줄·노드·조건부 노드·아이콘 링크 수, 넘침
+      timelines: document.querySelectorAll('[data-book-box="timeline"]').length,
+      timelineRails: document.querySelectorAll('[data-timeline-rail]').length,
+      timelineNodes: document.querySelectorAll('[data-timeline-node]').length,
+      timelineAbove: document.querySelectorAll('[data-timeline-above]').length,
+      timelineIconLinks: document.querySelectorAll('[data-book-box="timeline"] a[data-wowhead]').length,
+      timelineWide: [...document.querySelectorAll('[data-book-box="timeline"], [data-timeline-rail]')]
         .filter(el => el.getBoundingClientRect().right > window.innerWidth + 1 || el.scrollWidth > el.clientWidth + 1).length,
-      laneSingleLine: [...document.querySelectorAll('[data-lane-rail]')].filter(rail => {
-        const items = [...rail.querySelectorAll(':scope > li')];
-        return items.length && Math.max(...items.map(li => li.getBoundingClientRect().top)) - Math.min(...items.map(li => li.getBoundingClientRect().top)) < 4;
-      }).length,
     }));
     // 확인 문제 하나를 펼쳐 답이 보이는지 확인
     const quiz = page.locator('[data-book-box="quiz"] details').first();
@@ -73,10 +72,10 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
       await page.evaluate(() => window.scrollBy(0, -70));
       await figure.screenshot({ path: shots[name] });
     }
-    const laneFigure = page.locator('[data-book-box="lanes"]').first();
-    shots.lanes = path.join(out, `mm-book-${width}-lanes.png`);
-    await laneFigure.scrollIntoViewIfNeeded();
-    await laneFigure.screenshot({ path: shots.lanes });
+    const timelineFigure = page.locator('[data-book-box="timeline"]').first();
+    shots.timeline = path.join(out, `mm-book-${width}-timeline.png`);
+    await timelineFigure.scrollIntoViewIfNeeded();
+    await timelineFigure.screenshot({ path: shots.timeline });
     const firstIcon = diagrams.first().locator('[data-diagram-node] a[data-wowhead] img').first();
     await firstIcon.hover();
     info.diagramIconHoverColor = await firstIcon.evaluate(img => getComputedStyle(img.closest('a')).color);

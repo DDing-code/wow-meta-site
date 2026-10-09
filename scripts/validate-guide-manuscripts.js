@@ -968,19 +968,17 @@ function validateBookLayout(spec, manuscript) {
     (block.quiz || []).forEach(item => {
       assert(item.q?.length >= 10 && item.a?.length >= 20, `${blockPrefix}: quiz needs question and answer`);
     });
-    const laneSets = block.lanes ? (Array.isArray(block.lanes) ? block.lanes : [block.lanes]) : [];
-    laneSets.forEach((lanes, lanesIndex) => {
-      const lanesPrefix = `${blockPrefix}.lanes[${lanesIndex}]`;
-      assert(lanes.title?.length >= 4 && lanes.groups?.length >= 1, `${lanesPrefix}: lanes need a title and groups`);
-      lanes.groups.forEach((group, groupIndex) => {
-        assert(group.label?.length >= 2 && group.lanes?.length >= 1, `${lanesPrefix}.groups[${groupIndex}]: group needs a label and lanes`);
-        group.lanes.forEach((lane, laneIndex) => {
-          const lanePrefix = `${lanesPrefix}.groups[${groupIndex}].lanes[${laneIndex}]`;
-          assert(lane.when?.length >= 2 && lane.steps?.length >= 1, `${lanePrefix}: lane needs a condition and steps`);
-          lane.steps.forEach((step, stepIndex) => {
-            assert(/^\d+$/.test(String(step.skillId || '')) && step.label?.length >= 2, `${lanePrefix}.steps[${stepIndex}]: step needs a numeric skillId and label`);
-            assert(step.orNext === undefined || (step.orNext === true && stepIndex < lane.steps.length - 1), `${lanePrefix}.steps[${stepIndex}]: alternative needs a following step`);
-          });
+    const timelines = block.timeline ? (Array.isArray(block.timeline) ? block.timeline : [block.timeline]) : [];
+    timelines.forEach((timeline, timelineIndex) => {
+      const timelinePrefix = `${blockPrefix}.timeline[${timelineIndex}]`;
+      assert(timeline.title?.length >= 4 && timeline.rails?.length >= 1, `${timelinePrefix}: timeline needs a title and rails`);
+      timeline.rails.forEach((rail, railIndex) => {
+        const railPrefix = `${timelinePrefix}.rails[${railIndex}]`;
+        assert(rail.label?.length >= 2 && rail.nodes?.length >= 1, `${railPrefix}: rail needs a label and nodes`);
+        assert(!rail.kind || rail.kind === 'inserts', `${railPrefix}: unknown rail kind ${rail.kind}`);
+        rail.nodes.forEach((node, nodeIndex) => {
+          assert(/^\d+$/.test(String(node.skillId || '')), `${railPrefix}.nodes[${nodeIndex}]: node needs a numeric skillId`);
+          assert(!node.above || (/^\d+$/.test(String(node.above.skillId || '')) && node.above.when?.length >= 2), `${railPrefix}.nodes[${nodeIndex}]: above needs a numeric skillId and condition`);
         });
       });
     });
@@ -1486,7 +1484,7 @@ function main() {
   assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
   assert(marksmanship.book?.parts?.length === 4 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep four parts, chapter concepts and collected voices');
   assert(marksmanship.blocks.filter(block => block.diagram).length >= 7, 'Marksmanship concept-book sample must keep skill structure diagrams on the concept and hero chapters');
-  assert(marksmanship.blocks.filter(block => block.lanes).length >= 2, 'Marksmanship concept-book sample must keep single-target and AoE rotation lanes');
+  assert(marksmanship.blocks.filter(block => block.timeline).length >= 2, 'Marksmanship concept-book sample must keep single-target and AoE rotation timelines');
   assert(marksmanship.blocks.reduce((count, block) => count + (block.fieldTips || []).length, 0) >= 20 && marksmanship.blocks.some(block => block.quiz?.length), 'Marksmanship sample must keep sourced field tips and review questions');
   assert(/파수꾼.*광역/.test(marksmanship.blocks.find(block => block.title.includes('속사 끝'))?.concept || ''), 'Rapid Fire clipping must stay limited to Sentinel AoE after the August 20 hotfix');
 
