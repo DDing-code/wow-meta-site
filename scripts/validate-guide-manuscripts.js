@@ -979,6 +979,7 @@ function validateBookLayout(spec, manuscript) {
           assert(lane.when?.length >= 2 && lane.steps?.length >= 1, `${lanePrefix}: lane needs a condition and steps`);
           lane.steps.forEach((step, stepIndex) => {
             assert(/^\d+$/.test(String(step.skillId || '')) && step.label?.length >= 2, `${lanePrefix}.steps[${stepIndex}]: step needs a numeric skillId and label`);
+            assert(step.orNext === undefined || (step.orNext === true && stepIndex < lane.steps.length - 1), `${lanePrefix}.steps[${stepIndex}]: alternative needs a following step`);
           });
         });
       });

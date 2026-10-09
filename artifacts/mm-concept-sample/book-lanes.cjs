@@ -1,6 +1,6 @@
 // 사격 개념서 딜사이클 가로줄(lanes): 상황(발동·조건)마다 한 줄씩, 왼쪽에서 오른쪽으로 읽는다.
 // 모든 줄은 같은 가이드의 영웅별 우선순위(heroBranches)와 해당 장 본문에서만 가져온다. 새 순서나 수치를 더하지 않는다.
-// 형식: { title, intro?, groups: [{ label, lanes: [{ when, steps: [{ skillId, label, tag? }], note? }] }] }
+// 형식: { title, intro?, groups: [{ label, lanes: [{ when, steps: [{ skillId, label, tag?, orNext? }], note? }] }] }
 
 const LANES = {
   '훈련용 허수아비로 하는 첫 연습: 단일 대상': {
@@ -31,7 +31,7 @@ const LANES = {
           {
             when: '정밀 사격이 떴을 때',
             steps: [
-              { skillId: '53351', label: '마무리 사격', tag: '쓸 수 있을 때' },
+              { skillId: '53351', label: '마무리 사격', tag: '쓸 수 있을 때', orNext: true },
               { skillId: '185358', label: '신비한 사격' },
               { skillId: '19434', label: '조준 사격' },
             ],

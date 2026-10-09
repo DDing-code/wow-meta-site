@@ -23321,6 +23321,7 @@ export const guideManuscripts = {
                       skillId: '53351',
                       label: '마무리 사격',
                       tag: '쓸 수 있을 때',
+                      orNext: true,
                     },
                     {
                       skillId: '185358',

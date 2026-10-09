@@ -2185,12 +2185,19 @@ function BookRotationLanes({ lanes, guide, inlineTerms, label }) {
                             ? <InlineSkillTerm skill={skill}>{displayGuideText(step.label || skillName(skill))}</InlineSkillTerm>
                             : <span>{displayGuideText(step.label)}</span>}
                           {!!step.tag && <BookLaneTag>{displayGuideText(step.tag)}</BookLaneTag>}
-                          {stepIndex < lane.steps.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
+                          {stepIndex < lane.steps.length - 1 && (step.orNext
+                            ? <BookLaneTag>또는</BookLaneTag>
+                            : <ArrowRight size={13} aria-hidden="true" />)}
                         </li>
                       );
                     })}
                   </OpenerFlowList>
-                  {!!lane.note && <p>{renderGuideText(lane.note, inlineTerms)}</p>}
+                  {!!lane.note && (
+                    <OpenerFlowDetails>
+                      <summary aria-label={`${displayGuideText(lane.when)}: 조건·예외`}>조건·예외</summary>
+                      <p>{renderGuideText(lane.note, inlineTerms)}</p>
+                    </OpenerFlowDetails>
+                  )}
                 </BookLaneBody>
               </BookLane>
             ))}
@@ -6694,19 +6701,34 @@ const BookLaneWhen = styled.div`
 `;
 
 const BookLaneBody = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 12px;
+  align-items: start;
   min-width: 0;
 
   > ol {
     padding: 3px 0;
   }
 
-  > p {
-    margin: 0;
+  > details {
+    border: 0;
+    padding: 4px 0;
     color: #aeb8be;
     font-size: 0.74rem;
     line-height: 1.5;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
+  }
+
+  > details[open] {
+    grid-column: 1 / -1;
+  }
+
+  > details p {
+    margin: 6px 0 0;
+  }
+
+  @container (max-width: 640px) {
+    display: block;
   }
 `;
 
