@@ -46,6 +46,9 @@ for (const spec of registry) {
     assert(proof.parentConnections && proof.available);
   }
   assert.equal(m.logReview.samples.length, 2);
+  const heroTrees = new Map(m.heroBranches.map(b => [b.heroTreeId, b.label]));
+  assert.equal(heroTrees.size, 2, `${spec.id}: 두 영웅 분기는 서로 다른 선택 노드여야 함`);
+  assert([...heroTrees.keys()].every(id => Number.isInteger(id) && id > 0), spec.id);
   assert(m.logReview.samples.every(s => s.parseCount > 0 && s.representativeLog.startsWith('https://www.warcraftlogs.com/reports/')));
   const individual = m.logReview.individual;
   assert(individual.matchedBossDifficulty && individual.combats.length === 2, spec.id);
@@ -67,7 +70,11 @@ for (const spec of registry) {
     const durationDifference = Math.abs(a.durationMs-b.durationMs)/Math.max(a.durationMs,b.durationMs);
     assert.equal(pair.durationDifference, durationDifference, spec.id);
     assert(durationDifference <= 0.05, spec.id);
-    for (const c of pair.combats) assert(c.region === 'US' && c.kill && Date.parse(c.startedAt) >= Date.parse('2026-10-07T00:00:00Z') && c.casts.length, spec.id);
+    for (const c of pair.combats) {
+      assert(c.region === 'US' && c.kill && Date.parse(c.startedAt) >= Date.parse('2026-10-07T00:00:00Z') && c.casts.length, spec.id);
+      assert.equal(c.heroLabel, heroTrees.get(c.heroTree), `${spec.id}: API에 없는 hero 필드 대신 선택 노드로 영웅 분기를 확인`);
+      assert(m.sources.find(s => s.url === c.url)?.note.includes(c.heroLabel), `${spec.id}: 영웅 선택의 개별 로그 출처`);
+    }
     if (mode === 'mythicPlus') {
       assert(pair.matchedKeystoneAffixes && a.keystoneLevel > 0, spec.id);
       assert.equal(a.keystoneLevel, b.keystoneLevel, spec.id);
@@ -75,6 +82,23 @@ for (const spec of registry) {
     }
   }
   assert.equal(m.logReview.KoreaAppliedAt, null, '공식 한국 적용 시각이 확인되기 전에는 적용 완료로 기록하지 않음');
+  assert.equal(m.logReview.KoreaScheduledEndsAt, '2026-10-08T06:00:00+09:00', '공식 한국 주간 점검 예정 종료를 실측 적용 시각과 구분');
+  assert.equal(m.logReview.heroConclusion.checkedAt, '2026-10-10', spec.id);
+  assert.equal(m.logReview.heroConclusion.confirmedRanking, false, '공개 추천과 관측 사례를 인과 성능 순위로 승격하지 않음');
+  const currentKorea = m.logReview.currentKorea;
+  assert(currentKorea.raid.length > 0 && currentKorea.mythicPlus.length > 0, spec.id);
+  for (const [mode, combats] of [['raid', currentKorea.raid], ['mythicPlus', currentKorea.mythicPlus]]) for (const c of combats) {
+    assert(c.region === 'KR' && c.durationMs > 0 && c.castCount > 0 && c.buffCount >= 0 && c.selectionEntries.length, spec.id);
+    assert(Date.parse(c.startedAt) >= Date.parse(currentKorea.observedSince), spec.id);
+    assert.equal(c.heroLabel, heroTrees.get(c.heroTree), spec.id);
+    assert(mode === 'raid' ? c.difficulty === 5 : c.keystoneLevel > 0, spec.id);
+    assert(m.sources.some(s => s.url === c.url && s.note.includes(c.heroLabel)), spec.id);
+  }
+  for (const c of m.logReview.koreaCases) {
+    assert(c.region === 'KR' && c.keystoneLevel > 0 && c.durationMs > 0 && c.casts.length, spec.id);
+    assert.equal(c.heroLabel, heroTrees.get(c.heroTree), spec.id);
+    assert(m.sources.some(s => s.url === c.url && s.note.includes('한국 공식 조정 적용 시각과 동일 조건 비교쌍은 미확정')), spec.id);
+  }
   for (const id of ['321377','372309','388193','391154','391387','204883']) assert(!JSON.stringify(m.heroBranches).includes(`"skillId":"${id}"`), `${spec.id}: 과거 선택 노드를 현재 수동 순서에 넣지 않음`);
 }
 assert.equal(canonicalCount, 40);
@@ -113,7 +137,7 @@ for (const id of ['paladin-holy','monk-mistweaver']) {
 assert(!JSON.stringify(guides['monk-mistweaver'].heroBranches[1]).includes('"skillId":"443028"'));
 assert(guides['deathknight-unholy'].opener.steps.some(s => /역병/.test(s.note) && /100%/.test(s.note)));
 assert(guides['deathknight-unholy'].priority.some(s => /역병/.test(s.note) && /100%/.test(s.note)));
-assert(guides['deathknight-unholy'].caveats.some(s => /툴팁.*200%/.test(s)));
+assert(guides['deathknight-unholy'].caveats.some(s => /한국어.*100%/.test(s)));
 assert(guides['monk-brewmaster'].evidence.some(s => /8%.*8초/.test(s)));
 assert(guides['monk-mistweaver'].evidence.some(s => /활기의 안개.*포용의 안개.*15%/.test(s)));
 assert(guides['hunter-survival'].evidence.some(s => /80%→50%.*20%/.test(s)));
@@ -121,7 +145,7 @@ assert(guides['hunter-marksmanship'].evidence.some(s => /60%.*75%/.test(s)));
 assert(['375576','53600','26573','4987','465'].every(id => skills[id].specs.includes('Holy')));
 assert.equal(skills['257621'].description.includes('75%'), true);
 for (const [id, pattern] of [
-  ['388505', /3초.*5%/], ['393516', /5초.*10%/],
+  ['1271967', /남은 피해를 100%만큼/], ['388505', /3초.*8%/], ['393516', /8초.*10%/],
   ['274586', /소생의 안개.*500%/], ['124682', /6초.*10%/],
   ['375576', /신성.*신성 충격.*심판.*50%/], ['53600', /신성.*4.5초.*보호/],
   ['26573', /12초.*최대 1회/], ['4987', /정화 연마.*마법/],
@@ -142,4 +166,4 @@ assert(arcane[0].singleTarget.priority.some(s => /12/.test(s.note)));
 assert(arcane[1].singleTarget.priority.some(s => /20/.test(s.note)));
 assert(!JSON.stringify(guides['shaman-restoration'].heroBranches[1].opener).includes('"skillId":"444995"'));
 assert(!JSON.stringify(guides['shaman-elemental'].heroBranches[1].opener).includes('"skillId":"443454"'));
-console.log(JSON.stringify({guides:registry.length,definitions:'one per guide',canonicalCount,talentSamples:120,logAggregates:80,completedHeroModes:registry.reduce((n,s)=>n+guides[s.id].heroBranches.length*3,0)}));
+console.log(JSON.stringify({guides:registry.length,definitions:'one per guide',canonicalCount,talentSamples:120,logAggregates:80,koreaCombats:registry.reduce((n,s)=>n+guides[s.id].logReview.currentKorea.raid.length+guides[s.id].logReview.currentKorea.mythicPlus.length,0),completedHeroModes:registry.reduce((n,s)=>n+guides[s.id].heroBranches.length*3,0)}));

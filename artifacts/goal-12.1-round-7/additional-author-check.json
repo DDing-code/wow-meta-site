@@ -1,0 +1,65 @@
+[
+  {
+    "id": "warrior-protection",
+    "url": "https://www.method.gg/guides/protection-warrior/talents",
+    "checkedAt": "2026-10-09T18:14:49.202Z",
+    "changedAt": "11th Aug, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "paladin-protection",
+    "url": "https://www.method.gg/guides/protection-paladin/talents",
+    "checkedAt": "2026-10-09T18:14:52.264Z",
+    "changedAt": "3rd Sep, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "druid-guardian",
+    "url": "https://www.method.gg/guides/guardian-druid/talents",
+    "checkedAt": "2026-10-09T18:14:54.142Z",
+    "changedAt": "3rd Sep, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "rogue-assassination",
+    "url": "https://www.method.gg/guides/assassination-rogue/talents",
+    "checkedAt": "2026-10-09T18:14:55.789Z",
+    "changedAt": "12th Aug, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "deathknight-unholy",
+    "url": "https://www.method.gg/guides/unholy-death-knight/talents",
+    "checkedAt": "2026-10-09T18:14:56.948Z",
+    "changedAt": "24th Sep, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "monk-windwalker",
+    "url": "https://www.method.gg/guides/windwalker-monk/talents",
+    "checkedAt": "2026-10-09T18:14:58.677Z",
+    "changedAt": "18th Aug, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "demonhunter-havoc",
+    "url": "https://www.method.gg/guides/havoc-demon-hunter/talents",
+    "checkedAt": "2026-10-09T18:15:00.342Z",
+    "changedAt": "17th Sep, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "demonhunter-devourer",
+    "url": "https://www.method.gg/guides/devourer-demon-hunter/talents",
+    "checkedAt": "2026-10-09T18:15:01.308Z",
+    "changedAt": "18th Sep, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  },
+  {
+    "id": "evoker-devastation",
+    "url": "https://www.method.gg/guides/devastation-evoker/talents",
+    "checkedAt": "2026-10-09T18:15:03.216Z",
+    "changedAt": "25th Aug, 2026",
+    "scope": "추가 저자 자료의 조정 전 갱신 날짜와 본문을 대조했습니다. 최신 순위 근거로 승격하지 않습니다."
+  }
+]

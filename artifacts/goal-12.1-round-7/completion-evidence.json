@@ -1,0 +1,3354 @@
+[
+  {
+    "id": "warrior-protection",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\방어\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/protection-warrior-pve-tank-spec-builds-talents",
+      "conclusion": "공개 저자는 단일에 거신, 광역에 산왕을 추천합니다. 이번 한국 사례는 산왕만 관측했습니다. 산왕 레이드 견본의 채택과 거신의 단일 추천을 성능 비교 결과로 합치지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "산왕",
+        "heroTreeId": 61,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "거신",
+        "heroTreeId": 62,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Oct 2, 2026 - 9:20 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/NmM16vWQytaDbp48#fight=76&source=5040",
+        "startedAt": "2026-10-09T10:58:33.437Z",
+        "region": "KR",
+        "heroTree": 61,
+        "heroLabel": "산왕",
+        "selectionEntries": [
+          123388
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 280418,
+        "augmentationCount": 0,
+        "castCount": 15,
+        "buffCount": 78,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/VyzK3vjtCTbWkRG8#fight=22&source=644",
+        "startedAt": "2026-10-08T16:16:52.285Z",
+        "region": "KR",
+        "heroTree": 61,
+        "heroLabel": "산왕",
+        "selectionEntries": [
+          123388
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1917851,
+        "augmentationCount": 0,
+        "castCount": 29,
+        "buffCount": 67,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "paladin-protection",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\보호\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/protection-paladin-pve-tank-spec-builds-talents",
+      "conclusion": "공개 저자의 현재 선택기·9월 21일 변경 기록은 빛의 대장장이를 추천하지만 본문 일부에는 기사단 추천이 남습니다. 한국 사례는 두 분기를 확인했으며, 기존 견본은 학습용으로 유지하고 절대 우열은 보류합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "기사단",
+        "heroTreeId": 48,
+        "raidCases": 0,
+        "mythicCases": 1
+      },
+      {
+        "label": "빛의 대장장이",
+        "heroTreeId": 49,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Sep 21, 2026 - 8:00 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/YCFva9PhGDT2kQjq#fight=1&source=2",
+        "startedAt": "2026-10-09T12:36:01.599Z",
+        "region": "KR",
+        "heroTree": 49,
+        "heroLabel": "빛의 대장장이",
+        "selectionEntries": [
+          123361
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 296259,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 80,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/pWxFcKdByAHbh4D2#fight=12&source=2",
+        "startedAt": "2026-10-09T15:59:55.231Z",
+        "region": "KR",
+        "heroTree": 48,
+        "heroLabel": "기사단",
+        "selectionEntries": [
+          123358
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1669397,
+        "augmentationCount": 0,
+        "castCount": 29,
+        "buffCount": 64,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/1K6CnGxgjy9Tvq3P#fight=3&source=1",
+        "startedAt": "2026-10-09T12:50:28.347Z",
+        "region": "KR",
+        "heroTree": 49,
+        "heroLabel": "빛의 대장장이",
+        "selectionEntries": [
+          123361
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1692335,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 61,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "deathknight-blood",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-spec-builds-talents",
+      "conclusion": "공개 추천과 이번 한국 사례의 첫 비교는 산레인입니다. 죽음의 인도자는 단일·방어 운용 대안이며, 9월 조정 전 격차 설명을 최신 확정 순위로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "산레인",
+        "heroTreeId": 31,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "죽음의 인도자",
+        "heroTreeId": 33,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/1HvDRa3bLCJX9kf8#fight=30&source=5",
+        "startedAt": "2026-10-08T13:55:08.791Z",
+        "region": "KR",
+        "heroTree": 31,
+        "heroLabel": "산레인",
+        "selectionEntries": [
+          123325
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 346554,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 110,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/c18XNVhbYQZdA9zr#fight=66&source=1150",
+        "startedAt": "2026-10-09T12:23:37.936Z",
+        "region": "KR",
+        "heroTree": 31,
+        "heroLabel": "산레인",
+        "selectionEntries": [
+          123325
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1600515,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 80,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "monk-brewmaster",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\양조\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/brewmaster-monk-pve-tank-spec-builds-talents",
+      "conclusion": "공개 저자는 방어 레이드에 조화의 종사, 일반 쐐기에 음영파를 제시하고 고단에서는 두 분기를 비교합니다. 한국 사례도 두 분기를 확인했습니다. 생존 배정과 공격 목표에 따라 선택합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "음영파",
+        "heroTreeId": 65,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "조화의 종사",
+        "heroTreeId": 66,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qZj1wWz7g9D2QyMP#fight=68&source=403",
+        "startedAt": "2026-10-09T12:01:52.732Z",
+        "region": "KR",
+        "heroTree": 65,
+        "heroLabel": "음영파",
+        "selectionEntries": [
+          125027
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 341547,
+        "augmentationCount": 1,
+        "castCount": 17,
+        "buffCount": 90,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/JpvbDWkq3HyRwa7Q#fight=1&source=1",
+        "startedAt": "2026-10-09T05:04:24.934Z",
+        "region": "KR",
+        "heroTree": 66,
+        "heroLabel": "조화의 종사",
+        "selectionEntries": [
+          125028
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 396874,
+        "augmentationCount": 1,
+        "castCount": 21,
+        "buffCount": 86,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/bYhg2GPtqBKFCwRx#fight=9&source=246",
+        "startedAt": "2026-10-09T12:58:00.378Z",
+        "region": "KR",
+        "heroTree": 65,
+        "heroLabel": "음영파",
+        "selectionEntries": [
+          125027
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1841459,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 61,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/tPbZp8Md1qafgwFx#fight=78&source=15",
+        "startedAt": "2026-10-09T15:15:34.077Z",
+        "region": "KR",
+        "heroTree": 66,
+        "heroLabel": "조화의 종사",
+        "selectionEntries": [
+          125028
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1549620,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 66,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "druid-guardian",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\수호\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-spec-builds-talents",
+      "conclusion": "공개 자료는 엘룬의 대행자와 발톱의 드루이드를 모두 제시하면서 단일·방어 우열의 문장이 일치하지 않습니다. 한국 사례는 엘룬의 대행자만 관측했습니다. 쉬운 운용과 짧은 집중 피해라는 역할 차이로 선택하고 순위는 보류합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "엘룬의 대행자",
+        "heroTreeId": 24,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "발톱의 드루이드",
+        "heroTreeId": 21,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/W8YTNk2m6fwFya1q#fight=3&source=80",
+        "startedAt": "2026-10-09T12:08:05.435Z",
+        "region": "KR",
+        "heroTree": 24,
+        "heroLabel": "엘룬의 대행자",
+        "selectionEntries": [
+          123295
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 354141,
+        "augmentationCount": 0,
+        "castCount": 19,
+        "buffCount": 88,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/fvnLwtKDZry7GHma#fight=10&source=566",
+        "startedAt": "2026-10-09T10:22:24.798Z",
+        "region": "KR",
+        "heroTree": 24,
+        "heroLabel": "엘룬의 대행자",
+        "selectionEntries": [
+          123295
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1782839,
+        "augmentationCount": 0,
+        "castCount": 33,
+        "buffCount": 68,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례의 첫 비교는 궤멸자입니다. 알드라치 파괴자는 적은 대상과 우선 대상 집중 피해의 대안입니다. 9월 상향 후 두 분기의 확정 격차는 이번 사례로 계산하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "궤멸자",
+        "heroTreeId": 124,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "알드라치 파괴자",
+        "heroTreeId": 35,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/AdNrjY1Hvzg7yP9f#fight=107&source=548",
+        "startedAt": "2026-10-09T15:50:45.009Z",
+        "region": "KR",
+        "heroTree": 124,
+        "heroLabel": "궤멸자",
+        "selectionEntries": [
+          134253
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 382819,
+        "augmentationCount": 1,
+        "castCount": 17,
+        "buffCount": 83,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Mc9HtgBywFq4jVQL#fight=97&source=683",
+        "startedAt": "2026-10-09T07:17:00.156Z",
+        "region": "KR",
+        "heroTree": 124,
+        "heroLabel": "궤멸자",
+        "selectionEntries": [
+          134253
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1628194,
+        "augmentationCount": 0,
+        "castCount": 29,
+        "buffCount": 55,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "warrior-arms",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\무기\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/arms-warrior-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 레이드·쐐기 모두 학살자를 첫 비교로 삼습니다. 거신은 별도 운용을 배우는 대안이며, 이번 한국 로그에 없다는 사실을 사용 불가능이나 사용률 0으로 바꾸지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "학살자",
+        "heroTreeId": 60,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "거신",
+        "heroTreeId": 62,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 25, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KqdQv9RG2x6BgLmb#fight=4&source=11",
+        "startedAt": "2026-10-09T11:03:50.450Z",
+        "region": "KR",
+        "heroTree": 60,
+        "heroLabel": "학살자",
+        "selectionEntries": [
+          123390
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249014,
+        "augmentationCount": 1,
+        "castCount": 20,
+        "buffCount": 80,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/jMT4hFkA8cRbNnCY#fight=16&source=2",
+        "startedAt": "2026-10-08T14:33:25.556Z",
+        "region": "KR",
+        "heroTree": 60,
+        "heroLabel": "학살자",
+        "selectionEntries": [
+          123390
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1690496,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 64,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "warrior-fury",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\13-전사\\분노\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/fury-warrior-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 단일·레이드에 학살자를, 쐐기에 학살자와 산왕을 모두 제시합니다. 산왕의 9월 광역 상향을 반영하되 이번 한국 학살자 사례만으로 산왕보다 강하다고 확정하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "학살자",
+        "heroTreeId": 60,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "산왕",
+        "heroTreeId": 61,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 25, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Lfg6VNy9aGP1JFQB#fight=45&source=24",
+        "startedAt": "2026-10-09T11:39:49.677Z",
+        "region": "KR",
+        "heroTree": 60,
+        "heroLabel": "학살자",
+        "selectionEntries": [
+          123389
+        ],
+        "encounterId": 3470,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 408217,
+        "augmentationCount": 0,
+        "castCount": 16,
+        "buffCount": 80,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qV3fBdaHTrkMpA19#fight=2&source=167",
+        "startedAt": "2026-10-09T11:06:47.047Z",
+        "region": "KR",
+        "heroTree": 60,
+        "heroLabel": "학살자",
+        "selectionEntries": [
+          123389
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1719195,
+        "augmentationCount": 0,
+        "castCount": 32,
+        "buffCount": 72,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "paladin-retribution",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\징벌\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/retribution-paladin-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 태양의 사자의 지속·낮은 대상 수 피해와 기사단의 즉시 집중 피해를 구분합니다. 기사단의 9월 상향은 반영했으며 한국 로그의 태양의 사자 채택을 기사단 열세의 증명으로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "태양의 사자",
+        "heroTreeId": 50,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "기사단",
+        "heroTreeId": 48,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 25, 2026 - 10:27 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/P7rTCJ3jVpXxhqF9#fight=15&source=12",
+        "startedAt": "2026-10-09T05:16:26.810Z",
+        "region": "KR",
+        "heroTree": 50,
+        "heroLabel": "태양의 사자",
+        "selectionEntries": [
+          123360
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 418421,
+        "augmentationCount": 0,
+        "castCount": 18,
+        "buffCount": 82,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/ya7kqb6DZCfYRLx2#fight=16&source=1",
+        "startedAt": "2026-10-08T14:09:58.353Z",
+        "region": "KR",
+        "heroTree": 50,
+        "heroLabel": "태양의 사자",
+        "selectionEntries": [
+          123360
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1579754,
+        "augmentationCount": 0,
+        "castCount": 25,
+        "buffCount": 66,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "rogue-assassination",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\암살\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-spec-builds-talents",
+      "conclusion": "공개 자료의 첫 설명은 죽음추적자, 뒤쪽 단일 설명은 운명결속을 권장해 서로 충돌합니다. 한국 사례에서 두 분기를 확인했습니다. 레이드의 운용 안정성과 쐐기의 우선 대상 피해를 구분하고 단일 절대 순위는 보류합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "운명결속",
+        "heroTreeId": 52,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "죽음추적자",
+        "heroTreeId": 53,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/1HvDRa3bLCJX9kf8#fight=30&source=33",
+        "startedAt": "2026-10-08T13:55:08.791Z",
+        "region": "KR",
+        "heroTree": 52,
+        "heroLabel": "운명결속",
+        "selectionEntries": [
+          123371
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 346554,
+        "augmentationCount": 0,
+        "castCount": 18,
+        "buffCount": 86,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/nmJTRrGhtWvbD9YC#fight=12&source=174",
+        "startedAt": "2026-10-08T15:06:02.218Z",
+        "region": "KR",
+        "heroTree": 52,
+        "heroLabel": "운명결속",
+        "selectionEntries": [
+          123371
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1696787,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 71,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/c18XNVhbYQZdA9zr#fight=66&source=1149",
+        "startedAt": "2026-10-09T12:23:37.936Z",
+        "region": "KR",
+        "heroTree": 53,
+        "heroLabel": "죽음추적자",
+        "selectionEntries": [
+          123375
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1600515,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 68,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "rogue-outlaw",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\무법\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/outlaw-rogue-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 기만자를 첫 비교로 삼습니다. 운명결속은 동전 효과와 플레이 선호를 비교하는 대안이며 공개 저자의 격차 수치를 한국 실측처럼 사용하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "기만자",
+        "heroTreeId": 51,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "운명결속",
+        "heroTreeId": 52,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/dHzMyVZXDTGJAbQv#fight=3&source=20",
+        "startedAt": "2026-10-08T14:22:14.408Z",
+        "region": "KR",
+        "heroTree": 51,
+        "heroLabel": "기만자",
+        "selectionEntries": [
+          123372
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 331814,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 76,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/czvg8jrHWTdakJ9q#fight=41&source=721",
+        "startedAt": "2026-10-08T15:40:09.301Z",
+        "region": "KR",
+        "heroTree": 51,
+        "heroLabel": "기만자",
+        "selectionEntries": [
+          123372
+        ],
+        "encounterId": 61762,
+        "difficulty": 10,
+        "keystoneLevel": 16,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1686994,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 59,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "rogue-subtlety",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\10-도적\\잠행\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 레이드·지속 피해에 죽음추적자, 짧은 광역 집중 피해와 입문에는 기만자를 제시합니다. 기만자의 10월 상향과 한국 두 분기 사례를 반영했으며 상향 전 격차를 현재 수치로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "죽음추적자",
+        "heroTreeId": 53,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "기만자",
+        "heroTreeId": 51,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KcQpkBgyW2LrC4xX#fight=8&source=229",
+        "startedAt": "2026-10-09T11:17:54.985Z",
+        "region": "KR",
+        "heroTree": 53,
+        "heroLabel": "죽음추적자",
+        "selectionEntries": [
+          123373
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 316331,
+        "augmentationCount": 1,
+        "castCount": 16,
+        "buffCount": 92,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/kNnfxwGHPcqzCYVR#fight=85&source=1043",
+        "startedAt": "2026-10-08T14:20:24.128Z",
+        "region": "KR",
+        "heroTree": 53,
+        "heroLabel": "죽음추적자",
+        "selectionEntries": [
+          123373
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1756195,
+        "augmentationCount": 0,
+        "castCount": 33,
+        "buffCount": 73,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/YHghXJ3A6aRLfmd4#fight=53&source=412",
+        "startedAt": "2026-10-08T16:12:33.126Z",
+        "region": "KR",
+        "heroTree": 51,
+        "heroLabel": "기만자",
+        "selectionEntries": [
+          123370
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 15,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1663145,
+        "augmentationCount": 0,
+        "castCount": 31,
+        "buffCount": 63,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "deathknight-frost",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/frost-death-knight-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자의 현재 견본·변경 기록은 레이드·쐐기에 죽음의 인도자를 제시하고 한국 사례도 이를 확인합니다. 종말의 기수는 이동·운용 대안이며 과거 본문의 반대 순위는 확정 추천으로 사용하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "종말의 기수",
+        "heroTreeId": 32,
+        "raidCases": 0,
+        "mythicCases": 0
+      },
+      {
+        "label": "죽음의 인도자",
+        "heroTreeId": 33,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Sep 14, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/nT6BYNKQZDJgLqHk#fight=1&source=20",
+        "startedAt": "2026-10-09T11:03:50.166Z",
+        "region": "KR",
+        "heroTree": 33,
+        "heroLabel": "죽음의 인도자",
+        "selectionEntries": [
+          123324
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249021,
+        "augmentationCount": 1,
+        "castCount": 20,
+        "buffCount": 91,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Krd839jCA17xMtbg#fight=22&source=435",
+        "startedAt": "2026-10-09T09:50:46.020Z",
+        "region": "KR",
+        "heroTree": 33,
+        "heroLabel": "죽음의 인도자",
+        "selectionEntries": [
+          123324
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1713623,
+        "augmentationCount": 0,
+        "castCount": 30,
+        "buffCount": 84,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "deathknight-unholy",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-spec-builds-talents",
+      "conclusion": "공개 자료는 옛 종말의 기수 추천 본문과 산레인 선택기·변경 기록이 충돌합니다. 이번 한국 사례는 산레인을 확인했습니다. 역병내림 100% 조정 후의 첫 비교는 산레인이며 종말의 기수 하수인 분기의 확정 열세는 주장하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "종말의 기수",
+        "heroTreeId": 32,
+        "raidCases": 0,
+        "mythicCases": 0
+      },
+      {
+        "label": "산레인",
+        "heroTreeId": 31,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Sep 8, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/2MYfyHTxbcW3LtrG#fight=2&source=20",
+        "startedAt": "2026-10-09T12:01:35.842Z",
+        "region": "KR",
+        "heroTree": 31,
+        "heroLabel": "산레인",
+        "selectionEntries": [
+          123321
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 312361,
+        "augmentationCount": 0,
+        "castCount": 18,
+        "buffCount": 83,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KfGRMgdJCm4Fz6YW#fight=4&source=63",
+        "startedAt": "2026-10-09T15:32:45.313Z",
+        "region": "KR",
+        "heroTree": 31,
+        "heroLabel": "산레인",
+        "selectionEntries": [
+          123321
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1813864,
+        "augmentationCount": 0,
+        "castCount": 35,
+        "buffCount": 75,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "monk-windwalker",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\풍운\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/windwalker-monk-pve-dps-spec-builds-talents",
+      "conclusion": "공개 자료는 본문에서 음영파를 추천하면서 쐐기 견본에는 천신의 대변자를 제시합니다. 한국 사례는 두 분기를 확인했습니다. 음영파의 단순한 반복과 천신의 대변자의 계획한 집중 피해를 비교하고 절대 우열은 보류합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "음영파",
+        "heroTreeId": 65,
+        "raidCases": 1,
+        "mythicCases": 0
+      },
+      {
+        "label": "천신의 대변자",
+        "heroTreeId": 64,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 11, 2026 - 10:20 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/L2pWTJwPmGM43rhz#fight=5&source=107",
+        "startedAt": "2026-10-09T12:07:27.382Z",
+        "region": "KR",
+        "heroTree": 65,
+        "heroLabel": "음영파",
+        "selectionEntries": [
+          125046
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 320195,
+        "augmentationCount": 1,
+        "castCount": 20,
+        "buffCount": 108,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/1HvDRa3bLCJX9kf8#fight=30&source=64",
+        "startedAt": "2026-10-08T13:55:08.791Z",
+        "region": "KR",
+        "heroTree": 64,
+        "heroLabel": "천신의 대변자",
+        "selectionEntries": [
+          125047
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 346554,
+        "augmentationCount": 0,
+        "castCount": 21,
+        "buffCount": 115,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/w3xkNCAYLXdhrTW8#fight=2&source=63",
+        "startedAt": "2026-10-09T08:33:43.258Z",
+        "region": "KR",
+        "heroTree": 64,
+        "heroLabel": "천신의 대변자",
+        "selectionEntries": [
+          125047
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1635762,
+        "augmentationCount": 0,
+        "castCount": 33,
+        "buffCount": 96,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "druid-feral",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\야성\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/feral-druid-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 레이드·적은 대상 수에 야생추적자, 쐐기에 발톱의 드루이드를 제시하며 두 분기를 근접한 선택으로 설명합니다. 이번 한국 쐐기 사례는 발톱의 드루이드이며 단일 순위의 증거로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "발톱의 드루이드",
+        "heroTreeId": 21,
+        "raidCases": 0,
+        "mythicCases": 1
+      },
+      {
+        "label": "야생추적자",
+        "heroTreeId": 22,
+        "raidCases": 1,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/9FjmpDAtQT3vM4qg#fight=3&source=12",
+        "startedAt": "2026-10-09T11:08:21.705Z",
+        "region": "KR",
+        "heroTree": 22,
+        "heroLabel": "야생추적자",
+        "selectionEntries": [
+          123296
+        ],
+        "encounterId": 3470,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 356903,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 71,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/QvtP2jfDWGwyrqJC#fight=3&source=708",
+        "startedAt": "2026-10-09T06:29:54.084Z",
+        "region": "KR",
+        "heroTree": 21,
+        "heroLabel": "발톱의 드루이드",
+        "selectionEntries": [
+          123297
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 21,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1911621,
+        "augmentationCount": 0,
+        "castCount": 43,
+        "buffCount": 69,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "demonhunter-havoc",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-spec-builds-talents",
+      "conclusion": "9월 상향 후 Wowhead 레이드 알드라치 파괴자 추천과 오래된 Icy Veins 지옥상흔 추천을 구분합니다. 이번 한국 레이드·쐐기에서 두 분기를 확인했습니다. 알드라치의 우선 대상 피해와 지옥상흔의 반복 광역을 비교하며 조정 전 격차는 채택하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "지옥상흔",
+        "heroTreeId": 34,
+        "raidCases": 0,
+        "mythicCases": 1
+      },
+      {
+        "label": "알드라치 파괴자",
+        "heroTreeId": 35,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 30, 2026 - 2:00 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KqdQv9RG2x6BgLmb#fight=4&source=9",
+        "startedAt": "2026-10-09T11:03:50.450Z",
+        "region": "KR",
+        "heroTree": 35,
+        "heroLabel": "알드라치 파괴자",
+        "selectionEntries": [
+          123330
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249014,
+        "augmentationCount": 1,
+        "castCount": 18,
+        "buffCount": 82,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/vtaGgfbVXFJ2pB8y#fight=270&source=4978",
+        "startedAt": "2026-10-09T04:33:39.161Z",
+        "region": "KR",
+        "heroTree": 34,
+        "heroLabel": "지옥상흔",
+        "selectionEntries": [
+          123329
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 17,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1674928,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 60,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/Jbaf7qyN4kRBTXtj#fight=24&source=353",
+        "startedAt": "2026-10-09T13:29:11.331Z",
+        "region": "KR",
+        "heroTree": 35,
+        "heroLabel": "알드라치 파괴자",
+        "selectionEntries": [
+          123330
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1787560,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 66,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "shaman-enhancement",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\고양\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 폭풍인도자를 첫 비교로 삼습니다. 토템술사는 토템 유지와 별도 피해 구간의 대안입니다. 10월 전체 공격력·용암 채찍 조정은 전문화 공통 변경이며 한 분기의 승리를 직접 증명하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "폭풍인도자",
+        "heroTreeId": 55,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "토템술사",
+        "heroTreeId": 54,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 23, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/HXqQKY6tjDvPGgTW#fight=50&source=384",
+        "startedAt": "2026-10-08T18:12:08.629Z",
+        "region": "KR",
+        "heroTree": 55,
+        "heroLabel": "폭풍인도자",
+        "selectionEntries": [
+          123381
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 416358,
+        "augmentationCount": 0,
+        "castCount": 21,
+        "buffCount": 88,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/ZtFjBVLbymY97xrM#fight=18&source=2334",
+        "startedAt": "2026-10-09T10:29:05.719Z",
+        "region": "KR",
+        "heroTree": 55,
+        "heroLabel": "폭풍인도자",
+        "selectionEntries": [
+          123381
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 16,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1583465,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 76,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "hunter-survival",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/survival-hunter-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 파수꾼을 기본으로, 무리의 지도자를 우선 대상 피해 대안으로 제시합니다. 이번 한국 쐐기에서 두 분기를 확인했습니다. 기본 광역과 우선 대상 목표를 구분해 선택합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "파수꾼",
+        "heroTreeId": 42,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "무리의 지도자",
+        "heroTreeId": 43,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Sep 30, 2026 - 8:07 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/9wXrvfCjtGPnhBTM#fight=6&source=9",
+        "startedAt": "2026-10-09T11:37:58.674Z",
+        "region": "KR",
+        "heroTree": 42,
+        "heroLabel": "파수꾼",
+        "selectionEntries": [
+          123349
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 398636,
+        "augmentationCount": 1,
+        "castCount": 16,
+        "buffCount": 86,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Cc7x8rDmGVqyQfdp#fight=4&source=621",
+        "startedAt": "2026-10-09T06:31:51.357Z",
+        "region": "KR",
+        "heroTree": 42,
+        "heroLabel": "파수꾼",
+        "selectionEntries": [
+          123349
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 14,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1550975,
+        "augmentationCount": 0,
+        "castCount": 32,
+        "buffCount": 49,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/xzmPjTYFf8rcqdBK#fight=2&source=185",
+        "startedAt": "2026-10-08T12:00:59.944Z",
+        "region": "KR",
+        "heroTree": 43,
+        "heroLabel": "무리의 지도자",
+        "selectionEntries": [
+          123350
+        ],
+        "encounterId": 12825,
+        "difficulty": 10,
+        "keystoneLevel": 14,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1384534,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 66,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "hunter-beastmastery",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/beast-mastery-hunter-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 무리의 지도자를 첫 비교로 삼습니다. 어둠 순찰자는 방어·플레이 선호 대안으로 다루며 공개 저자의 열세 설명을 이번 한국 비교의 측정 결과로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "무리의 지도자",
+        "heroTreeId": 43,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "어둠 순찰자",
+        "heroTreeId": 44,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 30, 2026 - 11:04 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/1HvDRa3bLCJX9kf8#fight=30&source=18",
+        "startedAt": "2026-10-08T13:55:08.791Z",
+        "region": "KR",
+        "heroTree": 43,
+        "heroLabel": "무리의 지도자",
+        "selectionEntries": [
+          123347
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 346554,
+        "augmentationCount": 0,
+        "castCount": 14,
+        "buffCount": 83,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/2RhBNDpwK8rLk4YF#fight=17&source=16",
+        "startedAt": "2026-10-09T14:01:19.744Z",
+        "region": "KR",
+        "heroTree": 43,
+        "heroLabel": "무리의 지도자",
+        "selectionEntries": [
+          123347
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1700241,
+        "augmentationCount": 0,
+        "castCount": 24,
+        "buffCount": 67,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "hunter-marksmanship",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 파수꾼을 첫 비교로 삼습니다. 어둠 순찰자는 별도 운용 대안이며 한국 로그에서 미관측인 점과 전문화의 9월 광역 상향을 구별합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "파수꾼",
+        "heroTreeId": 42,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "어둠 순찰자",
+        "heroTreeId": 44,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 22, 2026 - 4:31 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/NmM16vWQytaDbp48#fight=76&source=5004",
+        "startedAt": "2026-10-09T10:58:33.437Z",
+        "region": "KR",
+        "heroTree": 42,
+        "heroLabel": "파수꾼",
+        "selectionEntries": [
+          123345
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 280418,
+        "augmentationCount": 0,
+        "castCount": 16,
+        "buffCount": 78,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/wdY8bP9CKmz1jR6q#fight=23&source=630",
+        "startedAt": "2026-10-08T14:28:29.818Z",
+        "region": "KR",
+        "heroTree": 42,
+        "heroLabel": "파수꾼",
+        "selectionEntries": [
+          123345
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 17,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1678580,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 58,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "priest-shadow",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\암흑\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/shadow-priest-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자의 레이드 견본은 집정관, 쐐기 견본은 공허술사입니다. 한국 사례에서 두 분기를 확인했습니다. 지속 피해와 짧은 집중 피해의 목표를 구분하고 견본 채택을 확정 우열로 바꾸지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "집정관",
+        "heroTreeId": 19,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "공허술사",
+        "heroTreeId": 18,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Sep 1, 2026 - 8:15 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/29qWbfKdYvXZnw3p#fight=4&source=4",
+        "startedAt": "2026-10-09T12:07:27.206Z",
+        "region": "KR",
+        "heroTree": 19,
+        "heroLabel": "집정관",
+        "selectionEntries": [
+          123289
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 320215,
+        "augmentationCount": 1,
+        "castCount": 20,
+        "buffCount": 93,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/za7AQ8YrpRytf4wZ#fight=2&source=2",
+        "startedAt": "2026-10-09T11:12:43.399Z",
+        "region": "KR",
+        "heroTree": 19,
+        "heroLabel": "집정관",
+        "selectionEntries": [
+          123289
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1635111,
+        "augmentationCount": 0,
+        "castCount": 30,
+        "buffCount": 85,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/MCrjWFaxDtYpPGXv#fight=54&source=2546",
+        "startedAt": "2026-10-09T13:38:35.114Z",
+        "region": "KR",
+        "heroTree": 18,
+        "heroLabel": "공허술사",
+        "selectionEntries": [
+          123287
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 16,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1618112,
+        "augmentationCount": 0,
+        "castCount": 29,
+        "buffCount": 69,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "demonhunter-devourer",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-spec-builds-talents",
+      "conclusion": "오래된 공개 저자는 공허상흔을 추천하지만 9월·10월 궤멸자 관련 단일 상향 뒤 한국 사례는 두 분기를 확인합니다. 궤멸자의 단일 피해와 공허상흔의 반복 광역을 다시 비교하며 상향 전 공허상흔 우위 문장을 현재 확정 순위로 쓰지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "공허상흔",
+        "heroTreeId": 126,
+        "raidCases": 1,
+        "mythicCases": 0
+      },
+      {
+        "label": "궤멸자",
+        "heroTreeId": 124,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 17, 2026 - 6:47 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/CbBkR1Mgr9TW8tNx#fight=5&source=21",
+        "startedAt": "2026-10-09T12:20:41.757Z",
+        "region": "KR",
+        "heroTree": 126,
+        "heroLabel": "공허상흔",
+        "selectionEntries": [
+          136623
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 391425,
+        "augmentationCount": 0,
+        "castCount": 18,
+        "buffCount": 84,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/P7rTCJ3jVpXxhqF9#fight=15&source=10",
+        "startedAt": "2026-10-09T05:16:26.810Z",
+        "region": "KR",
+        "heroTree": 124,
+        "heroLabel": "궤멸자",
+        "selectionEntries": [
+          134251
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 418421,
+        "augmentationCount": 0,
+        "castCount": 13,
+        "buffCount": 88,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/VyzK3vjtCTbWkRG8#fight=22&source=642",
+        "startedAt": "2026-10-08T16:16:52.285Z",
+        "region": "KR",
+        "heroTree": 124,
+        "heroLabel": "궤멸자",
+        "selectionEntries": [
+          134251
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1917851,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 72,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "shaman-elemental",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\정기\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 선견자를 레이드·쐐기의 첫 비교로 삼습니다. 폭풍인도자는 별도 운용 대안이며 로그에 없다는 사실만으로 현재 성능 격차를 계산하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "선견자",
+        "heroTreeId": 56,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "폭풍인도자",
+        "heroTreeId": 55,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 11:10 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/NmM16vWQytaDbp48#fight=76&source=4855",
+        "startedAt": "2026-10-09T10:58:33.437Z",
+        "region": "KR",
+        "heroTree": 56,
+        "heroLabel": "선견자",
+        "selectionEntries": [
+          123377
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 280418,
+        "augmentationCount": 0,
+        "castCount": 15,
+        "buffCount": 77,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/c18XNVhbYQZdA9zr#fight=66&source=1148",
+        "startedAt": "2026-10-09T12:23:37.936Z",
+        "region": "KR",
+        "heroTree": 56,
+        "heroLabel": "선견자",
+        "selectionEntries": [
+          123377
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1600515,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 72,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "mage-arcane",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\비전\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/arcane-mage-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 성난태양을 레이드·쐐기의 첫 비교로 삼습니다. 주문술사는 별도 자원·발동 관리 대안이며 저자 추천을 한국 동일 조건 실측으로 표현하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "성난태양",
+        "heroTreeId": 39,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "주문술사",
+        "heroTreeId": 40,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 12, 2026 - 7:13 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/JrC6a1WHZvfqGVMT#fight=4&source=20",
+        "startedAt": "2026-10-09T11:05:32.496Z",
+        "region": "KR",
+        "heroTree": 39,
+        "heroLabel": "성난태양",
+        "selectionEntries": [
+          123341
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 321968,
+        "augmentationCount": 0,
+        "castCount": 15,
+        "buffCount": 89,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Jbaf7qyN4kRBTXtj#fight=24&source=460",
+        "startedAt": "2026-10-09T13:29:11.331Z",
+        "region": "KR",
+        "heroTree": 39,
+        "heroLabel": "성난태양",
+        "selectionEntries": [
+          123341
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1787560,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 77,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "mage-fire",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\화염\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/fire-mage-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 성난태양을 레이드·쐐기의 기본으로 제시하고 서리불꽃을 대안으로 둡니다. 두 분기의 9월 광역 상향을 반영하되 이번 한국 성난태양 사례만으로 격차를 확정하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "성난태양",
+        "heroTreeId": 39,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "서리불꽃",
+        "heroTreeId": 41,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/7hDYCtfaK4mMqQcB#fight=3&source=18",
+        "startedAt": "2026-10-09T11:21:17.303Z",
+        "region": "KR",
+        "heroTree": 39,
+        "heroLabel": "성난태양",
+        "selectionEntries": [
+          123340
+        ],
+        "encounterId": 3470,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 407037,
+        "augmentationCount": 1,
+        "castCount": 15,
+        "buffCount": 88,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qV3fBdaHTrkMpA19#fight=2&source=164",
+        "startedAt": "2026-10-09T11:06:47.047Z",
+        "region": "KR",
+        "heroTree": 39,
+        "heroLabel": "성난태양",
+        "selectionEntries": [
+          123340
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1719195,
+        "augmentationCount": 0,
+        "castCount": 22,
+        "buffCount": 74,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "mage-frost",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\06-마법사\\냉기\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/frost-mage-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 단일·가벼운 다중 대상에 주문술사, 던전 광역에 서리불꽃을 제시합니다. 이번 한국 쐐기에서 두 분기를 확인했습니다. 대상 수와 집중 피해 목표에 따라 비교합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "주문술사",
+        "heroTreeId": 40,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "서리불꽃",
+        "heroTreeId": 41,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/PNzCbgJ9amhdxwZH#fight=42&source=1775",
+        "startedAt": "2026-10-09T03:45:47.004Z",
+        "region": "KR",
+        "heroTree": 40,
+        "heroLabel": "주문술사",
+        "selectionEntries": [
+          123339
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 388967,
+        "augmentationCount": 0,
+        "castCount": 16,
+        "buffCount": 78,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/fqMXF1wRaZd6N8r4#fight=1&source=2",
+        "startedAt": "2026-10-09T07:35:16.757Z",
+        "region": "KR",
+        "heroTree": 40,
+        "heroLabel": "주문술사",
+        "selectionEntries": [
+          123339
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 14,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1557753,
+        "augmentationCount": 0,
+        "castCount": 22,
+        "buffCount": 52,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/1HWXNjdrR8w6TZyY#fight=2&source=194",
+        "startedAt": "2026-10-09T09:31:39.280Z",
+        "region": "KR",
+        "heroTree": 41,
+        "heroLabel": "서리불꽃",
+        "selectionEntries": [
+          123342
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 16,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1751545,
+        "augmentationCount": 0,
+        "castCount": 20,
+        "buffCount": 50,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "warlock-affliction",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\고통\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/affliction-warlock-pve-dps-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 영혼 수확자를 첫 비교로 삼습니다. 지옥소환사는 재설계된 별도 운용 대안이며 이번 로그의 미관측을 전체 사용률로 해석하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "영혼 수확자",
+        "heroTreeId": 57,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "지옥소환사",
+        "heroTreeId": 58,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 31, 2026 - 7:41 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/PgWDGJBqQXz64w3H#fight=36&source=3",
+        "startedAt": "2026-10-08T13:54:47.062Z",
+        "region": "KR",
+        "heroTree": 57,
+        "heroLabel": "영혼 수확자",
+        "selectionEntries": [
+          123384
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 346570,
+        "augmentationCount": 0,
+        "castCount": 17,
+        "buffCount": 90,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/w3aykH9gxBGqLnhK#fight=1&source=1",
+        "startedAt": "2026-10-09T09:28:11.623Z",
+        "region": "KR",
+        "heroTree": 57,
+        "heroLabel": "영혼 수확자",
+        "selectionEntries": [
+          123384
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 15,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1685353,
+        "augmentationCount": 0,
+        "castCount": 30,
+        "buffCount": 42,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "warlock-demonology",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\악마\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/demonology-warlock-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 순수 단일에 영혼 수확자, 쐐기·추가 대상에 악마학자를 제시합니다. 이번 한국 사례는 악마학자이며 추가 대상이 있는 전투의 채택을 순수 단일 우위로 바꾸지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "영혼 수확자",
+        "heroTreeId": 57,
+        "raidCases": 0,
+        "mythicCases": 0
+      },
+      {
+        "label": "악마학자",
+        "heroTreeId": 59,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 11, 2026 - 7:59 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KqdQv9RG2x6BgLmb#fight=4&source=3",
+        "startedAt": "2026-10-09T11:03:50.450Z",
+        "region": "KR",
+        "heroTree": 59,
+        "heroLabel": "악마학자",
+        "selectionEntries": [
+          123386
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249014,
+        "augmentationCount": 1,
+        "castCount": 15,
+        "buffCount": 93,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/hjyGQqAd97wPWbvD#fight=3&source=5",
+        "startedAt": "2026-10-08T14:52:02.467Z",
+        "region": "KR",
+        "heroTree": 59,
+        "heroLabel": "악마학자",
+        "selectionEntries": [
+          123386
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1600173,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 78,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "warlock-destruction",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/destruction-warlock-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 단일·분산 대상에 지옥소환사, 모인 광역에 악마학자를 제시합니다. 이번 한국 쐐기에서 두 분기를 확인했습니다. 적이 모인 정도에 따라 선택합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "지옥소환사",
+        "heroTreeId": 58,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "악마학자",
+        "heroTreeId": 59,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 21, 2026 - 7:59 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/d9BHAyqvkV2jcLNa#fight=1&source=18",
+        "startedAt": "2026-10-09T11:59:16.788Z",
+        "region": "KR",
+        "heroTree": 58,
+        "heroLabel": "지옥소환사",
+        "selectionEntries": [
+          123382
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 389469,
+        "augmentationCount": 0,
+        "castCount": 21,
+        "buffCount": 84,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/YqpF7xbXcTjVR2gz#fight=1&source=4",
+        "startedAt": "2026-10-08T22:39:37.323Z",
+        "region": "KR",
+        "heroTree": 58,
+        "heroLabel": "지옥소환사",
+        "selectionEntries": [
+          123382
+        ],
+        "encounterId": 61762,
+        "difficulty": 10,
+        "keystoneLevel": 12,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1283764,
+        "augmentationCount": 0,
+        "castCount": 23,
+        "buffCount": 56,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/23ACKWbBNxqZMtXp#fight=6&source=1",
+        "startedAt": "2026-10-08T13:48:30.271Z",
+        "region": "KR",
+        "heroTree": 59,
+        "heroLabel": "악마학자",
+        "selectionEntries": [
+          123385
+        ],
+        "encounterId": 61762,
+        "difficulty": 10,
+        "keystoneLevel": 12,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1237128,
+        "augmentationCount": 0,
+        "castCount": 22,
+        "buffCount": 63,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "druid-balance",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\조화\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/balance-druid-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 엘룬의 대행자를 기본으로 제시하지만 이번 한국 레이드에는 숲의 수호자, 쐐기에는 엘룬의 대행자 사례가 있습니다. 지속 피해와 집중 피해 배정을 구분하며 서로 다른 전투의 결과로 순위를 계산하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "엘룬의 대행자",
+        "heroTreeId": 24,
+        "raidCases": 0,
+        "mythicCases": 1
+      },
+      {
+        "label": "숲의 수호자",
+        "heroTreeId": 23,
+        "raidCases": 1,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/jmybgkna9hG261wC#fight=4&source=44",
+        "startedAt": "2026-10-09T11:03:50.364Z",
+        "region": "KR",
+        "heroTree": 23,
+        "heroLabel": "숲의 수호자",
+        "selectionEntries": [
+          123300
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249026,
+        "augmentationCount": 1,
+        "castCount": 17,
+        "buffCount": 92,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KhJ3tmCW61PrNwZM#fight=32&source=1007",
+        "startedAt": "2026-10-09T09:29:49.821Z",
+        "region": "KR",
+        "heroTree": 24,
+        "heroLabel": "엘룬의 대행자",
+        "selectionEntries": [
+          123302
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1737026,
+        "augmentationCount": 0,
+        "castCount": 31,
+        "buffCount": 84,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "evoker-devastation",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\황폐\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 비늘사령관을 기본으로, 불꽃형성자를 단일 대안으로 제시합니다. 9월 조정은 불꽃형성자에 더 큰 상향을 의도했으므로 이전 격차를 유지하지 않습니다. 이번 한국 비늘사령관 사례는 운용 참고입니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "비늘사령관",
+        "heroTreeId": 36,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "불꽃형성자",
+        "heroTreeId": 37,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Sep 21, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qMFYjXrnBb6C9tkc#fight=5&source=14",
+        "startedAt": "2026-10-09T11:08:48.596Z",
+        "region": "KR",
+        "heroTree": 36,
+        "heroLabel": "비늘사령관",
+        "selectionEntries": [
+          123333
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 379041,
+        "augmentationCount": 0,
+        "castCount": 16,
+        "buffCount": 91,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Cc7x8rDmGVqyQfdp#fight=3&source=414",
+        "startedAt": "2026-10-09T05:48:57.409Z",
+        "region": "KR",
+        "heroTree": 36,
+        "heroLabel": "비늘사령관",
+        "selectionEntries": [
+          123333
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 13,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1429760,
+        "augmentationCount": 0,
+        "castCount": 25,
+        "buffCount": 78,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "evoker-augmentation",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\증강\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-spec-builds-talents",
+      "conclusion": "공개 저자는 레이드·고단에 시간 감시자, 주간 쐐기에 비늘사령관을 제시합니다. 한국 쐐기에서 두 분기를 확인했습니다. 파티 피해 구간과 단수 목표를 함께 비교합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "시간 감시자",
+        "heroTreeId": 38,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "비늘사령관",
+        "heroTreeId": 36,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/jmybgkna9hG261wC#fight=4&source=2",
+        "startedAt": "2026-10-09T11:03:50.364Z",
+        "region": "KR",
+        "heroTree": 38,
+        "heroLabel": "시간 감시자",
+        "selectionEntries": [
+          123334
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 249026,
+        "augmentationCount": 1,
+        "castCount": 17,
+        "buffCount": 75,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/HKJ34fxhqGW2jNvt#fight=7&source=2",
+        "startedAt": "2026-10-09T13:22:12.211Z",
+        "region": "KR",
+        "heroTree": 38,
+        "heroLabel": "시간 감시자",
+        "selectionEntries": [
+          123334
+        ],
+        "encounterId": 12859,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1765223,
+        "augmentationCount": 1,
+        "castCount": 28,
+        "buffCount": 73,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/x39gLdjF7NCXPnhK#fight=1&source=1",
+        "startedAt": "2026-10-09T12:18:04.087Z",
+        "region": "KR",
+        "heroTree": 36,
+        "heroLabel": "비늘사령관",
+        "selectionEntries": [
+          123331
+        ],
+        "encounterId": 12859,
+        "difficulty": 10,
+        "keystoneLevel": 14,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1546648,
+        "augmentationCount": 1,
+        "castCount": 23,
+        "buffCount": 67,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "paladin-holy",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\08-성기사\\신성\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/holy-paladin-pve-healing-spec-builds-talents",
+      "conclusion": "공개 저자는 레이드·안정적인 치유에 태양의 사자, 쐐기 공격 기여 대안에 빛의 대장장이를 제시합니다. 한국 쐐기에서 두 분기를 확인했습니다. 피해량만으로 치유 선택의 우열을 판단하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "태양의 사자",
+        "heroTreeId": 50,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "빛의 대장장이",
+        "heroTreeId": 49,
+        "raidCases": 0,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/apwfJmjbBA3qF9PQ#fight=1&source=19",
+        "startedAt": "2026-10-08T13:00:31.009Z",
+        "region": "KR",
+        "heroTree": 50,
+        "heroLabel": "태양의 사자",
+        "selectionEntries": [
+          123362
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 309184,
+        "augmentationCount": 1,
+        "castCount": 19,
+        "buffCount": 74,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/Mc9HtgBywFq4jVQL#fight=97&source=685",
+        "startedAt": "2026-10-09T07:17:00.156Z",
+        "region": "KR",
+        "heroTree": 50,
+        "heroLabel": "태양의 사자",
+        "selectionEntries": [
+          123362
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1628194,
+        "augmentationCount": 0,
+        "castCount": 23,
+        "buffCount": 59,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/Jbaf7qyN4kRBTXtj#fight=24&source=1",
+        "startedAt": "2026-10-09T13:29:11.331Z",
+        "region": "KR",
+        "heroTree": 49,
+        "heroLabel": "빛의 대장장이",
+        "selectionEntries": [
+          123359
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1787560,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 59,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "priest-discipline",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\수양\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/discipline-priest-pve-healing-spec-builds-talents",
+      "conclusion": "공개 저자는 레이드에 공허술사, 단일 복구가 중요한 쐐기에 예언자를 제시합니다. 한국 쐐기에서 두 분기를 확인했습니다. 9월 비공격대 속죄 상향과 전투의 이동·복구 요구를 함께 반영합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "공허술사",
+        "heroTreeId": 18,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "예언자",
+        "heroTreeId": 20,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 18, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/KcQpkBgyW2LrC4xX#fight=12&source=207",
+        "startedAt": "2026-10-09T11:31:23.095Z",
+        "region": "KR",
+        "heroTree": 18,
+        "heroLabel": "공허술사",
+        "selectionEntries": [
+          123288
+        ],
+        "encounterId": 3470,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 338141,
+        "augmentationCount": 1,
+        "castCount": 18,
+        "buffCount": 72,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/FCzbJRBWADdPYgNf#fight=1&source=7",
+        "startedAt": "2026-10-09T17:25:15.975Z",
+        "region": "KR",
+        "heroTree": 20,
+        "heroLabel": "예언자",
+        "selectionEntries": [
+          123290
+        ],
+        "encounterId": 3470,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 404964,
+        "augmentationCount": 0,
+        "castCount": 21,
+        "buffCount": 71,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/G8CQPz2hKVJpNcLb#fight=2&source=240",
+        "startedAt": "2026-10-09T08:24:38.542Z",
+        "region": "KR",
+        "heroTree": 18,
+        "heroLabel": "공허술사",
+        "selectionEntries": [
+          123288
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 14,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1652377,
+        "augmentationCount": 0,
+        "castCount": 23,
+        "buffCount": 51,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      },
+      {
+        "url": "https://www.warcraftlogs.com/reports/nGfmkLXKjgZANvwp#fight=68&source=658",
+        "startedAt": "2026-10-09T15:03:57.773Z",
+        "region": "KR",
+        "heroTree": 20,
+        "heroLabel": "예언자",
+        "selectionEntries": [
+          123290
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1710254,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 63,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "priest-holy",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\09-사제\\신성\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/holy-priest-pve-healing-spec-builds-talents",
+      "conclusion": "공개 저자는 지속 치유·공격 기여에 예언자를 우선 제시하고 집정관을 집중 치유 대안으로 둡니다. 이번 한국 사례는 예언자이며 집정관의 과치유·마나 조건을 별도로 비교합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "집정관",
+        "heroTreeId": 19,
+        "raidCases": 0,
+        "mythicCases": 0
+      },
+      {
+        "label": "예언자",
+        "heroTreeId": 20,
+        "raidCases": 1,
+        "mythicCases": 1
+      }
+    ],
+    "authorChangedAt": "Aug 25, 2026 - 12:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qMFYjXrnBb6C9tkc#fight=5&source=5",
+        "startedAt": "2026-10-09T11:08:48.596Z",
+        "region": "KR",
+        "heroTree": 20,
+        "heroLabel": "예언자",
+        "selectionEntries": [
+          123292
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 379041,
+        "augmentationCount": 0,
+        "castCount": 17,
+        "buffCount": 68,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/1ZNntR3aPMd6ycD8#fight=12&source=31",
+        "startedAt": "2026-10-08T14:12:24.313Z",
+        "region": "KR",
+        "heroTree": 20,
+        "heroLabel": "예언자",
+        "selectionEntries": [
+          123292
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 19,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1776084,
+        "augmentationCount": 0,
+        "castCount": 26,
+        "buffCount": 71,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "shaman-restoration",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\11-주술사\\복원\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 토템술사를 레이드·쐐기의 첫 비교로 삼습니다. 선견자는 단일 복구와 이전 시즌 세트 운용을 비교하는 대안이며 현재 시즌 장비 조건과 혼합하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "토템술사",
+        "heroTreeId": 54,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "선견자",
+        "heroTreeId": 56,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/9wXrvfCjtGPnhBTM#fight=6&source=15",
+        "startedAt": "2026-10-09T11:37:58.674Z",
+        "region": "KR",
+        "heroTree": 54,
+        "heroLabel": "토템술사",
+        "selectionEntries": [
+          123378
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 398636,
+        "augmentationCount": 1,
+        "castCount": 23,
+        "buffCount": 83,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/n7xTCqt1haDHZ8bG#fight=58&source=814",
+        "startedAt": "2026-10-09T15:49:32.848Z",
+        "region": "KR",
+        "heroTree": 54,
+        "heroLabel": "토템술사",
+        "selectionEntries": [
+          123378
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 20,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1758119,
+        "augmentationCount": 0,
+        "castCount": 37,
+        "buffCount": 72,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "monk-mistweaver",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\07-수도사\\운무\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/mistweaver-monk-pve-healing-spec-builds-talents",
+      "conclusion": "공개 견본은 천신의 대변자를 레이드·쐐기에 제시하고 조화의 종사를 대안으로 둡니다. 이번 한국 레이드·쐐기 사례는 천신의 대변자입니다. 10월 치유 조정 후 두 분기의 확정 치유 격차는 주장하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "천신의 대변자",
+        "heroTreeId": 64,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "조화의 종사",
+        "heroTreeId": 66,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 18, 2026 - 6:30 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/9p37zYayxfrLknGj#fight=4&source=8",
+        "startedAt": "2026-10-09T17:24:25.172Z",
+        "region": "KR",
+        "heroTree": 64,
+        "heroLabel": "천신의 대변자",
+        "selectionEntries": [
+          125045
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 439772,
+        "augmentationCount": 0,
+        "castCount": 18,
+        "buffCount": 88,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qV3fBdaHTrkMpA19#fight=2&source=166",
+        "startedAt": "2026-10-09T11:06:47.047Z",
+        "region": "KR",
+        "heroTree": 64,
+        "heroLabel": "천신의 대변자",
+        "selectionEntries": [
+          125045
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1719195,
+        "augmentationCount": 0,
+        "castCount": 27,
+        "buffCount": 71,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "druid-restoration",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/restoration-druid-pve-healing-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 야생추적자를 레이드·쐐기의 첫 비교로 삼습니다. 숲의 수호자는 별도 소환·치유 배정 대안이며 야생추적자를 반드시 근접 공격 위주로 운용해야 한다고 설명하지 않습니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "야생추적자",
+        "heroTreeId": 22,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "숲의 수호자",
+        "heroTreeId": 23,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 10, 2026 - 7:20 PM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/qZj1wWz7g9D2QyMP#fight=68&source=425",
+        "startedAt": "2026-10-09T12:01:52.732Z",
+        "region": "KR",
+        "heroTree": 22,
+        "heroLabel": "야생추적자",
+        "selectionEntries": [
+          123298
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 341547,
+        "augmentationCount": 1,
+        "castCount": 19,
+        "buffCount": 73,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/kKFmcy69MfRphtwx#fight=1&source=7",
+        "startedAt": "2026-10-09T11:36:46.366Z",
+        "region": "KR",
+        "heroTree": 22,
+        "heroLabel": "야생추적자",
+        "selectionEntries": [
+          123298
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 18,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1803050,
+        "augmentationCount": 0,
+        "castCount": 37,
+        "buffCount": 64,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  },
+  {
+    "id": "evoker-preservation",
+    "canonical": "C:\\wowmeta\\kb\\08-직업별-Knowledge-Base\\04-기원사\\보존\\Meta\\guide-12.1.json",
+    "checkedAt": "2026-10-10",
+    "heroConclusion": {
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-spec-builds-talents",
+      "conclusion": "공개 추천과 한국 사례는 불꽃형성자를 레이드·쐐기의 첫 비교로 삼습니다. 시간 감시자는 마나와 치유 구간의 대안이며 공개 저자의 추천과 한국 동일 조건 성능 비교는 구분합니다.",
+      "confirmedRanking": false
+    },
+    "heroBranches": [
+      {
+        "label": "불꽃형성자",
+        "heroTreeId": 37,
+        "raidCases": 1,
+        "mythicCases": 1
+      },
+      {
+        "label": "시간 감시자",
+        "heroTreeId": 38,
+        "raidCases": 0,
+        "mythicCases": 0
+      }
+    ],
+    "authorChangedAt": "Aug 28, 2026 - 6:30 AM",
+    "scheduledMaintenanceEndsAt": "2026-10-08T06:00:00+09:00",
+    "actualAppliedAt": null,
+    "raid": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/QABJjGZfHq8nb21h#fight=5&source=58",
+        "startedAt": "2026-10-09T11:59:11.477Z",
+        "region": "KR",
+        "heroTree": 37,
+        "heroLabel": "불꽃형성자",
+        "selectionEntries": [
+          123332
+        ],
+        "encounterId": 3379,
+        "difficulty": 5,
+        "keystoneLevel": null,
+        "affixes": null,
+        "durationMs": 382292,
+        "augmentationCount": 1,
+        "castCount": 20,
+        "buffCount": 86,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "mythicPlus": [
+      {
+        "url": "https://www.warcraftlogs.com/reports/9W7avrbNqgc6Rf3D#fight=68&source=4",
+        "startedAt": "2026-10-09T16:09:45.494Z",
+        "region": "KR",
+        "heroTree": 37,
+        "heroLabel": "불꽃형성자",
+        "selectionEntries": [
+          123332
+        ],
+        "encounterId": 12993,
+        "difficulty": 10,
+        "keystoneLevel": 16,
+        "affixes": [
+          9,
+          10,
+          147
+        ],
+        "durationMs": 1713068,
+        "augmentationCount": 0,
+        "castCount": 28,
+        "buffCount": 63,
+        "scope": "공식 한국 주간 점검 예정 종료 뒤의 개별 전투. 시전·버프·영웅 선택 확인. 장비·외부 강화·전투 조건을 통제한 영웅 성능 비교가 아님."
+      }
+    ],
+    "confirmedRanking": false
+  }
+]

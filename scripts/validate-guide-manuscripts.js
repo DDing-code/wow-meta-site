@@ -1280,7 +1280,7 @@ function main() {
     assert(!rows.some(row => ['20271', '24275', '385438', '53595'].includes(row.skillId)), 'Selected Blessed Hammer flows must not borrow foreign IDs, buffs or the alternative hammer');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Protection single-target and AoE conditions must differ');
     if (branch.label === '기사단') assert(!rows.some(row => ['432459', '432472'].includes(row.skillId)), 'Templar must not borrow Lightsmith armaments');
-    if (branch.label === '빛대장장이') assert(!rows.some(row => row.skillId === '427453'), 'Lightsmith must not borrow Hammer of Light');
+    if (['빛대장장이', '빛의 대장장이'].includes(branch.label)) assert(!rows.some(row => row.skillId === '427453'), 'Lightsmith must not borrow Hammer of Light');
   }
   const protectionSynergies = Object.values(JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies).filter(note => note.class === 'Paladin' && note.spec === 'Protection');
   assert(protectionSynergies.length === 18 && protectionSynergies.every(note => note.participants.length >= 3 && note.participants.every(id => /^\d+$/.test(id) && kbSkills[id]?.specs.includes('Protection'))), 'Protection must retain eighteen correctly scoped numeric relationships');
@@ -1720,7 +1720,7 @@ function main() {
     }
   }
   assert(kbSkills['1241567']?.patch === '12.1' && kbSkills['1241567']?.description.includes('10%'), 'Unholy cleave must use the current passive and live chain reduction');
-  for (const [id, name, fact] of [['1271967', '역병내림', '200%'], ['1242604', '고초', '65%'], ['434143', '슬픔의 고통', '75%'], ['1265547', '핏빛 전율', '20%'], ['434075', '광적인 피의 갈증', '5%']]) {
+  for (const [id, name, fact] of [['1271967', '역병내림', '남은 피해를 100%만큼'], ['1242604', '고초', '65%'], ['434143', '슬픔의 고통', '75%'], ['1265547', '핏빛 전율', '20%'], ['434075', '광적인 피의 갈증', '5%']]) {
     assert(kbSkills[id]?.name === name && kbSkills[id]?.specs.includes('Unholy') && kbSkills[id]?.description.includes(fact), `Unholy 12.1 hotfix must survive canonical sync: ${name}`);
   }
   assert(kbSkills['276023']?.description.includes('2.5초'), 'Harbinger must explain the summon-based Putrefy cooldown reduction');

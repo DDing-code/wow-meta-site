@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-09T18:28:04.420Z",
+  "bundle": "/static/js/main.5fa3fb51.js",
+  "sha256": "6cdd44a85d1bb576ff96c9bd242dfcbd2c14f8bfea698776deb0a877a9f3540d",
+  "files": 6,
+  "sourceMaps": false,
+  "envFiles": false,
+  "gitBase": "d0085fc1",
+  "newCommit": null,
+  "pushed": false,
+  "deployed": false,
+  "independentVisualReview": "허브 t1v 대기"
+}

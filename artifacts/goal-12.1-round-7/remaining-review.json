@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-09T18:47:21.554Z",
+  "tooltipConflicts": [],
+  "resolvedTooltips": [
+    1271967,
+    1271974,
+    388505,
+    393516
+  ],
+  "koreaCombats": 96,
+  "guidesWithBothContentModes": 40,
+  "publication": {
+    "complete": 4,
+    "partial": 36
+  },
+  "actualKoreaAppliedAt": null,
+  "confirmedHeroRanking": false,
+  "koreaUnobservedBranches": [
+    {
+      "guide": "warrior-protection",
+      "hero": "거신"
+    },
+    {
+      "guide": "deathknight-blood",
+      "hero": "죽음의 인도자"
+    },
+    {
+      "guide": "druid-guardian",
+      "hero": "발톱의 드루이드"
+    },
+    {
+      "guide": "demonhunter-vengeance",
+      "hero": "알드라치 파괴자"
+    },
+    {
+      "guide": "warrior-arms",
+      "hero": "거신"
+    },
+    {
+      "guide": "warrior-fury",
+      "hero": "산왕"
+    },
+    {
+      "guide": "paladin-retribution",
+      "hero": "기사단"
+    },
+    {
+      "guide": "rogue-outlaw",
+      "hero": "운명결속"
+    },
+    {
+      "guide": "deathknight-frost",
+      "hero": "종말의 기수"
+    },
+    {
+      "guide": "deathknight-unholy",
+      "hero": "종말의 기수"
+    },
+    {
+      "guide": "shaman-enhancement",
+      "hero": "토템술사"
+    },
+    {
+      "guide": "hunter-beastmastery",
+      "hero": "어둠 순찰자"
+    },
+    {
+      "guide": "hunter-marksmanship",
+      "hero": "어둠 순찰자"
+    },
+    {
+      "guide": "shaman-elemental",
+      "hero": "폭풍인도자"
+    },
+    {
+      "guide": "mage-arcane",
+      "hero": "주문술사"
+    },
+    {
+      "guide": "mage-fire",
+      "hero": "서리불꽃"
+    },
+    {
+      "guide": "warlock-affliction",
+      "hero": "지옥소환사"
+    },
+    {
+      "guide": "warlock-demonology",
+      "hero": "영혼 수확자"
+    },
+    {
+      "guide": "evoker-devastation",
+      "hero": "불꽃형성자"
+    },
+    {
+      "guide": "priest-holy",
+      "hero": "집정관"
+    },
+    {
+      "guide": "shaman-restoration",
+      "hero": "선견자"
+    },
+    {
+      "guide": "monk-mistweaver",
+      "hero": "조화의 종사"
+    },
+    {
+      "guide": "druid-restoration",
+      "hero": "숲의 수호자"
+    },
+    {
+      "guide": "evoker-preservation",
+      "hero": "시간 감시자"
+    }
+  ],
+  "independentVisualReview": "허브 t1v 미완료"
+}

@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-09T18:47:21.441Z",
+  "bundle": "/static/js/main.5fa3fb51.js",
+  "sha256": "6cdd44a85d1bb576ff96c9bd242dfcbd2c14f8bfea698776deb0a877a9f3540d",
+  "guides": 40,
+  "routeViews": 120,
+  "heroModeChecks": 720,
+  "talentViews": 360,
+  "primaryVisualSheets": 45,
+  "independentVisualReview": false,
+  "validationExitCode": 0,
+  "buildExitCode": 0,
+  "kbOnline": {
+    "tooltips": 2988,
+    "errors": 0,
+    "warnings": 0
+  },
+  "iconsOnline": {
+    "tooltips": 711,
+    "errors": 0,
+    "warnings": 0
+  },
+  "exactDescriptions": 164
+}

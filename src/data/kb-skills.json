@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-08T08:36:29.324Z",
+    "generatedAt": "2026-10-09T18:27:39.831Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -67427,7 +67427,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신 또는 효과 대상",
-      "description": "건들건들의 지속 시간이 3초 증가할 때마다 누적된 시간차 피해의 5%를 정화합니다.",
+      "description": "건들건들의 지속 시간이 3초 증가할 때마다 누적된 시간차 피해의 8%를 정화합니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -67455,7 +67455,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.044,
+        "linkDensity": 0.019,
         "hasWikilinks": true
       },
       "source": {
@@ -73305,7 +73305,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "자신 또는 효과 대상",
-      "description": "맥주 능력을 사용하면 5초 동안 회피가 10%만큼 증가합니다.",
+      "description": "맥주 능력을 사용하면 8초 동안 회피가 10%만큼 증가합니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -73332,7 +73332,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.034,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -143546,7 +143546,7 @@
       "castTime": "즉시",
       "resourceCost": "없음",
       "range": "30야드",
-      "description": "주위 역병의 100%를 소모하여 남은 피해를 200%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
+      "description": "주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -143574,7 +143574,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 4,
-        "linkDensity": 0.026,
+        "linkDensity": 0.015,
         "hasWikilinks": true
       },
       "source": {
@@ -143600,7 +143600,7 @@
       "castTime": "지속 효과",
       "resourceCost": "없음",
       "range": "",
-      "description": "어둠의 변신이 역병내림을 사용할 수 있도록 합니다.  역병내림 주위 역병의 100%를 소모하여 남은 피해를 200%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
+      "description": "어둠의 변신이 역병내림을 사용할 수 있도록 합니다.  역병내림 주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.  부패가 1회 충전됩니다.",
       "category": "talent",
       "tags": [],
       "patch": "12.1",
@@ -143627,7 +143627,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 3,
-        "linkDensity": 0.028,
+        "linkDensity": 0.013,
         "hasWikilinks": true
       },
       "source": {

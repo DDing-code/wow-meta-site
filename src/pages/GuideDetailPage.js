@@ -3988,7 +3988,7 @@ function getUptimeRows(guide, data) {
         segments: [[22, 24], [68, 24]],
       },
       {
-        label: '빛대장장이',
+        label: '빛의 대장장이',
         skill: findSkillByNames(data, ['신성한 무기', '신성한 보루', '천상의 인도']),
         note: '무장을 피해 전에 배치하고 신성한 힘 소비 뒤 강화 신성화를 사용합니다.',
         segments: [[16, 12], [52, 12], [80, 12]],

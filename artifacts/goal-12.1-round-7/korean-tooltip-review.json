@@ -1,0 +1,59 @@
+[
+  {
+    "id": "388505",
+    "url": "https://nether.wowhead.com/tooltip/spell/388505?locale=1",
+    "checkedAt": "2026-10-09T17:55:41.360Z",
+    "name": "빠른 한 모금",
+    "icon": "achievement_faction_brewmaster",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=388505/빠른-한-모금\"><b class=\"whtt-name\">빠른 한 모금</b></a><div class=\"q0\">특성</div>100 야드 사정거리<div class=\"wowhead-tooltip-requirements\">수도사 필요</div></td></tr></table><table><tr><td><div class=\"q\">건들건들의 지속 시간이 3초 증가할 때마다 누적된 시간차 피해의 8%를 정화합니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": -2,
+    "text": "빠른 한 모금특성100 야드 사정거리수도사 필요건들건들의 지속 시간이 3초 증가할 때마다 누적된 시간차 피해의 8%를 정화합니다.",
+    "description": "건들건들의 지속 시간이 3초 증가할 때마다 누적된 시간차 피해의 8%를 정화합니다."
+  },
+  {
+    "id": "393516",
+    "url": "https://nether.wowhead.com/tooltip/spell/393516?locale=1",
+    "checkedAt": "2026-10-09T17:56:01.840Z",
+    "name": "허초",
+    "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=393516/허초\"><b class=\"whtt-name\">허초</b></a><div class=\"q0\">특성</div><div class=\"wowhead-tooltip-requirements\">수도사 필요</div></td></tr></table><table><tr><td><div class=\"q\">맥주 능력을 사용하면 8초 동안 회피가 10%만큼 증가합니다.</div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": -2,
+    "text": "허초특성수도사 필요맥주 능력을 사용하면 8초 동안 회피가 10%만큼 증가합니다.",
+    "description": "맥주 능력을 사용하면 8초 동안 회피가 10%만큼 증가합니다."
+  },
+  {
+    "id": "1271967",
+    "url": "https://nether.wowhead.com/tooltip/spell/1271967?locale=1",
+    "checkedAt": "2026-10-09T17:56:17.930Z",
+    "name": "역병내림",
+    "icon": "inv_nullstone_shadow",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=1271967/역병내림\"><b class=\"whtt-name\">역병내림</b></a><br />30 야드 사정거리<table width=\"100%\"><tr><td>즉시</td><th><!--cooldownText-->0.75 초 재사용 대기시간<!--cooldownText--><!--baseCooldown:0.75 초 재사용 대기시간--></th></tr></table><div class=\"wowhead-tooltip-requirements\">죽음의 기사 필요</div></td></tr></table><table><tr><td><div class=\"q\">주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.<br /><br /><span style=\"color: #FFFFFF\">부패가 1회 충전됩니다.</span></div></td></tr></table>",
+    "tooltip2": "",
+    "buff": "",
+    "quality": -1,
+    "spells": {},
+    "buffspells": {},
+    "completion_category": 0,
+    "text": "역병내림30 야드 사정거리즉시0.75 초 재사용 대기시간죽음의 기사 필요주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.부패가 1회 충전됩니다.",
+    "description": "주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.\n\n부패가 1회 충전됩니다."
+  },
+  {
+    "id": "1271974",
+    "checkedAt": "2026-10-09T18:03:25.487Z",
+    "description": "어둠의 변신이 역병내림을 사용할 수 있도록 합니다.\n\n역병내림\n주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.\n\n부패가 1회 충전됩니다.",
+    "icon": "inv_nullstone_shadow",
+    "name": "역병내림",
+    "tooltip": "<table><tr><td><a class=\"whtt-name\" href=\"/ko/spell=1271974/역병내림\"><b class=\"whtt-name\">역병내림</b></a><div class=\"q0\">특성</div><div class=\"wowhead-tooltip-requirements\">죽음의 기사 필요</div></td></tr></table><table><tr><td><div class=\"q\">어둠의 변신이 역병내림을 사용할 수 있도록 합니다.<br /><br /><span class=\"tooltip-inside-icon\" style=\"background-image: url(//wow.zamimg.com/images/wow/icons/small/inv_nullstone_shadow.jpg)\"></span><span style=\"color:#FFFFFF\">역병내림</span><br /><a href=\"/ko/spell=1271967/역병내림\" target=\"_blank\">주위 역병의 100%를 소모하여 남은 피해를 100%만큼 즉시 입힙니다.<br /><br /><span style=\"color: #FFFFFF\">부패가 1회 충전됩니다.</span></a></div></td></tr></table>",
+    "url": "https://nether.wowhead.com/tooltip/spell/1271974?locale=1"
+  }
+]
