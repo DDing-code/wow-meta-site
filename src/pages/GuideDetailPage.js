@@ -2037,6 +2037,7 @@ function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
 const BOOK_BOX_LABELS = {
   concept: '개념 정리',
   diagram: '스킬 구조',
+  lanes: '딜사이클 한눈에',
   example: '예시 상황',
   fieldTips: '현장 팁',
   mistakes: '자주 하는 실수',
@@ -2144,6 +2145,58 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
           ))}
         </BookDiagramLegend>
       )}
+    </BookDiagramFigure>
+  );
+}
+
+// 딜사이클 가로줄: 상황(발동·조건)마다 한 줄씩, 왼쪽에서 오른쪽으로 읽는다. 전투 흐름 카드의 줄(OpenerFlowList)을 그대로 쓴다.
+function getBlockLanes(block) {
+  const lanes = block?.lanes;
+  if (!lanes) return [];
+  return (Array.isArray(lanes) ? lanes : [lanes]).filter(item => item?.groups?.length);
+}
+
+function BookRotationLanes({ lanes, guide, inlineTerms, label }) {
+  const groups = lanes?.groups || [];
+  if (!groups.length) return null;
+  const title = displayGuideText(lanes.title);
+  return (
+    <BookDiagramFigure $color={guide.color} data-book-box="lanes" aria-label={title}>
+      <BookDiagramHead>
+        <BookBoxLabel>{label}</BookBoxLabel>
+        <span>왼쪽에서 오른쪽으로 읽기</span>
+      </BookDiagramHead>
+      <strong>{renderGuideText(lanes.title, inlineTerms)}</strong>
+      {!!lanes.intro && <BookLaneIntro>{renderGuideText(lanes.intro, inlineTerms)}</BookLaneIntro>}
+      {groups.map(group => (
+        <BookLaneGroup key={group.label} $color={guide.color} data-lane-group>
+          <BookLaneGroupLabel $color={guide.color}>{renderGuideText(group.label, inlineTerms)}</BookLaneGroupLabel>
+          <BookLaneList>
+            {(group.lanes || []).map(lane => (
+              <BookLane key={lane.when} data-lane>
+                <BookLaneWhen>{renderGuideText(lane.when, inlineTerms)}</BookLaneWhen>
+                <BookLaneBody>
+                  <OpenerFlowList $color={guide.color} role="list" aria-label={displayGuideText(lane.when)} data-lane-rail>
+                    {(lane.steps || []).map((step, stepIndex) => {
+                      const skill = skillFromBranchId(step.skillId);
+                      return (
+                        <li key={`${step.skillId}-${stepIndex}`}>
+                          {skill
+                            ? <InlineSkillTerm skill={skill}>{displayGuideText(step.label || skillName(skill))}</InlineSkillTerm>
+                            : <span>{displayGuideText(step.label)}</span>}
+                          {!!step.tag && <BookLaneTag>{displayGuideText(step.tag)}</BookLaneTag>}
+                          {stepIndex < lane.steps.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
+                        </li>
+                      );
+                    })}
+                  </OpenerFlowList>
+                  {!!lane.note && <p>{renderGuideText(lane.note, inlineTerms)}</p>}
+                </BookLaneBody>
+              </BookLane>
+            ))}
+          </BookLaneList>
+        </BookLaneGroup>
+      ))}
     </BookDiagramFigure>
   );
 }
@@ -2662,7 +2715,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                 </TakeawayPanel>
               )}
 
-              {!!bookLayout && !!getBlockDiagrams(block).length && (
+              {!!bookLayout && (!!getBlockDiagrams(block).length || !!getBlockLanes(block).length) && (
                 <BookDiagramStack>
                   {getBlockDiagrams(block).map((diagram, diagramIndex) => (
                     <BookSkillDiagram
@@ -2671,6 +2724,15 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       guide={guide}
                       inlineTerms={inlineTerms}
                       label={bookLayout.labels.diagram}
+                    />
+                  ))}
+                  {getBlockLanes(block).map((lanes, lanesIndex) => (
+                    <BookRotationLanes
+                      key={`${lanes.title}-${lanesIndex}`}
+                      lanes={lanes}
+                      guide={guide}
+                      inlineTerms={inlineTerms}
+                      label={bookLayout.labels.lanes}
                     />
                   ))}
                 </BookDiagramStack>
@@ -6574,6 +6636,86 @@ const BookDiagramLegend = styled.ul`
   li[data-legend-kind='talent'] i {
     border: 1px dashed rgba(244, 239, 229, 0.3);
   }
+`;
+
+const BookLaneIntro = styled.p`
+  margin-top: 6px;
+  color: #aeb8be;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  word-break: keep-all;
+`;
+
+const BookLaneGroup = styled.div`
+  margin-top: 14px;
+`;
+
+const BookLaneGroupLabel = styled.div`
+  padding: 0 0 0 8px;
+  border-left: 3px solid ${props => props.$color};
+  color: #efe4d4;
+  font-size: 0.78rem;
+  font-weight: 860;
+  line-height: 1.4;
+  word-break: keep-all;
+`;
+
+const BookLaneList = styled.div`
+  margin-top: 6px;
+  border-top: 1px solid rgba(168, 178, 188, 0.14);
+`;
+
+/* 한 줄 = 상황(왼쪽) + 스킬 순서와 짧은 설명(오른쪽). 좁은 화면에서는 상황이 위로 올라간다 */
+const BookLane = styled.div`
+  display: grid;
+  grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
+  gap: 4px 14px;
+  align-items: start;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.1);
+
+  @container (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+`;
+
+const BookLaneWhen = styled.div`
+  padding-top: 6px;
+  color: #d2b373;
+  font-size: 0.8rem;
+  font-weight: 760;
+  line-height: 1.45;
+  word-break: keep-all;
+
+  @container (max-width: 640px) {
+    padding-top: 0;
+  }
+`;
+
+const BookLaneBody = styled.div`
+  min-width: 0;
+
+  > ol {
+    padding: 3px 0;
+  }
+
+  > p {
+    margin: 0;
+    color: #aeb8be;
+    font-size: 0.74rem;
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+`;
+
+const BookLaneTag = styled.small`
+  margin-left: 2px;
+  color: #8f9aa2;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
 `;
 
 const BookBox = styled.div`
