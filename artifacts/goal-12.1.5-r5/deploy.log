@@ -1,0 +1,23 @@
+﻿node.exe : Vercel CLI 48.1.6
+At C:\Users\D2JK\AppData\Roaming\npm\vercel.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/vercel/dist/vc.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 48.1.6:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Retrieving project…
+Deploying d2jks-projects/wowmeta
+Uploading [--------------------] (0.0B/16.3MB)
+Uploading [=====---------------] (4.1MB/16.3MB)
+Uploading [==========----------] (8.2MB/16.3MB)
+Uploading [===============-----] (12.3MB/16.3MB)
+Uploading [====================] (16.3MB/16.3MB)
+Inspect: https://vercel.com/d2jks-projects/wowmeta/5VyMjYz2mzDjQ4ighZax8zoFgEwa [9s]
+Production: https://wowmeta-avl8skxul-d2jks-projects.vercel.app [9s]
+Building
+Completing
+
+Common next commands:
+- `vercel inspect wowmeta-avl8skxul-d2jks-projects.vercel.app --logs`
+- `vercel redeploy wowmeta-avl8skxul-d2jks-projects.vercel.app`
+https://wowmeta-avl8skxul-d2jks-projects.vercel.app
